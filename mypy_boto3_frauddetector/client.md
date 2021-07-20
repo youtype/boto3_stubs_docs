@@ -11,6 +11,7 @@ type annotations stubs module
   - [FraudDetectorClient](#frauddetectorclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_create_variable](#batch_create_variable)
     - [batch_get_variable](#batch_get_variable)
     - [can_paginate](#can_paginate)
@@ -111,6 +112,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+FraudDetectorClient exceptions.
+
+Type annotations for `boto3.client("frauddetector").exceptions` method.
+
+Boto3 documentation:
+[FraudDetector.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_create_variable
 
 Creates a batch of variables.
@@ -122,7 +134,7 @@ Boto3 documentation:
 [FraudDetector.Client.batch_create_variable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.batch_create_variable)
 
 Arguments mapping described in
-[BatchCreateVariableRequestTypeDef](./type_defs.md#batchcreatevariablerequesttypedef).
+[BatchCreateVariableRequestRequestTypeDef](./type_defs.md#batchcreatevariablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -132,7 +144,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[BatchCreateVariableResultResponseTypeDef](./type_defs.md#batchcreatevariableresultresponsetypedef).
+[BatchCreateVariableResultTypeDef](./type_defs.md#batchcreatevariableresulttypedef).
 
 ### batch_get_variable
 
@@ -144,14 +156,14 @@ Boto3 documentation:
 [FraudDetector.Client.batch_get_variable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.batch_get_variable)
 
 Arguments mapping described in
-[BatchGetVariableRequestTypeDef](./type_defs.md#batchgetvariablerequesttypedef).
+[BatchGetVariableRequestRequestTypeDef](./type_defs.md#batchgetvariablerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `names`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetVariableResultResponseTypeDef](./type_defs.md#batchgetvariableresultresponsetypedef).
+[BatchGetVariableResultTypeDef](./type_defs.md#batchgetvariableresulttypedef).
 
 ### can_paginate
 
@@ -179,7 +191,7 @@ Boto3 documentation:
 [FraudDetector.Client.cancel_batch_prediction_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.cancel_batch_prediction_job)
 
 Arguments mapping described in
-[CancelBatchPredictionJobRequestTypeDef](./type_defs.md#cancelbatchpredictionjobrequesttypedef).
+[CancelBatchPredictionJobRequestRequestTypeDef](./type_defs.md#cancelbatchpredictionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -198,7 +210,7 @@ Boto3 documentation:
 [FraudDetector.Client.create_batch_prediction_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_batch_prediction_job)
 
 Arguments mapping described in
-[CreateBatchPredictionJobRequestTypeDef](./type_defs.md#createbatchpredictionjobrequesttypedef).
+[CreateBatchPredictionJobRequestRequestTypeDef](./type_defs.md#createbatchpredictionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -224,7 +236,7 @@ Boto3 documentation:
 [FraudDetector.Client.create_detector_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_detector_version)
 
 Arguments mapping described in
-[CreateDetectorVersionRequestTypeDef](./type_defs.md#createdetectorversionrequesttypedef).
+[CreateDetectorVersionRequestRequestTypeDef](./type_defs.md#createdetectorversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -239,7 +251,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDetectorVersionResultResponseTypeDef](./type_defs.md#createdetectorversionresultresponsetypedef).
+[CreateDetectorVersionResultTypeDef](./type_defs.md#createdetectorversionresulttypedef).
 
 ### create_model
 
@@ -251,7 +263,7 @@ Boto3 documentation:
 [FraudDetector.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_model)
 
 Arguments mapping described in
-[CreateModelRequestTypeDef](./type_defs.md#createmodelrequesttypedef).
+[CreateModelRequestRequestTypeDef](./type_defs.md#createmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -275,7 +287,7 @@ Boto3 documentation:
 [FraudDetector.Client.create_model_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_model_version)
 
 Arguments mapping described in
-[CreateModelVersionRequestTypeDef](./type_defs.md#createmodelversionrequesttypedef).
+[CreateModelVersionRequestRequestTypeDef](./type_defs.md#createmodelversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -293,7 +305,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelVersionResultResponseTypeDef](./type_defs.md#createmodelversionresultresponsetypedef).
+[CreateModelVersionResultTypeDef](./type_defs.md#createmodelversionresulttypedef).
 
 ### create_rule
 
@@ -305,7 +317,7 @@ Boto3 documentation:
 [FraudDetector.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_rule)
 
 Arguments mapping described in
-[CreateRuleRequestTypeDef](./type_defs.md#createrulerequesttypedef).
+[CreateRuleRequestRequestTypeDef](./type_defs.md#createrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -318,8 +330,7 @@ Keyword-only arguments:
 - `description`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateRuleResultResponseTypeDef](./type_defs.md#createruleresultresponsetypedef).
+Returns [CreateRuleResultTypeDef](./type_defs.md#createruleresulttypedef).
 
 ### create_variable
 
@@ -331,7 +342,7 @@ Boto3 documentation:
 [FraudDetector.Client.create_variable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_variable)
 
 Arguments mapping described in
-[CreateVariableRequestTypeDef](./type_defs.md#createvariablerequesttypedef).
+[CreateVariableRequestRequestTypeDef](./type_defs.md#createvariablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -356,7 +367,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_batch_prediction_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_batch_prediction_job)
 
 Arguments mapping described in
-[DeleteBatchPredictionJobRequestTypeDef](./type_defs.md#deletebatchpredictionjobrequesttypedef).
+[DeleteBatchPredictionJobRequestRequestTypeDef](./type_defs.md#deletebatchpredictionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -374,7 +385,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_detector)
 
 Arguments mapping described in
-[DeleteDetectorRequestTypeDef](./type_defs.md#deletedetectorrequesttypedef).
+[DeleteDetectorRequestRequestTypeDef](./type_defs.md#deletedetectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -393,7 +404,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_detector_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_detector_version)
 
 Arguments mapping described in
-[DeleteDetectorVersionRequestTypeDef](./type_defs.md#deletedetectorversionrequesttypedef).
+[DeleteDetectorVersionRequestRequestTypeDef](./type_defs.md#deletedetectorversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -412,7 +423,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_entity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_entity_type)
 
 Arguments mapping described in
-[DeleteEntityTypeRequestTypeDef](./type_defs.md#deleteentitytyperequesttypedef).
+[DeleteEntityTypeRequestRequestTypeDef](./type_defs.md#deleteentitytyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -430,7 +441,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_event)
 
 Arguments mapping described in
-[DeleteEventRequestTypeDef](./type_defs.md#deleteeventrequesttypedef).
+[DeleteEventRequestRequestTypeDef](./type_defs.md#deleteeventrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,7 +460,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_event_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_event_type)
 
 Arguments mapping described in
-[DeleteEventTypeRequestTypeDef](./type_defs.md#deleteeventtyperequesttypedef).
+[DeleteEventTypeRequestRequestTypeDef](./type_defs.md#deleteeventtyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -468,7 +479,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_external_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_external_model)
 
 Arguments mapping described in
-[DeleteExternalModelRequestTypeDef](./type_defs.md#deleteexternalmodelrequesttypedef).
+[DeleteExternalModelRequestRequestTypeDef](./type_defs.md#deleteexternalmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -486,7 +497,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_label)
 
 Arguments mapping described in
-[DeleteLabelRequestTypeDef](./type_defs.md#deletelabelrequesttypedef).
+[DeleteLabelRequestRequestTypeDef](./type_defs.md#deletelabelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -504,7 +515,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_model)
 
 Arguments mapping described in
-[DeleteModelRequestTypeDef](./type_defs.md#deletemodelrequesttypedef).
+[DeleteModelRequestRequestTypeDef](./type_defs.md#deletemodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -525,7 +536,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_model_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_model_version)
 
 Arguments mapping described in
-[DeleteModelVersionRequestTypeDef](./type_defs.md#deletemodelversionrequesttypedef).
+[DeleteModelVersionRequestRequestTypeDef](./type_defs.md#deletemodelversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -546,7 +557,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_outcome](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_outcome)
 
 Arguments mapping described in
-[DeleteOutcomeRequestTypeDef](./type_defs.md#deleteoutcomerequesttypedef).
+[DeleteOutcomeRequestRequestTypeDef](./type_defs.md#deleteoutcomerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -564,7 +575,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_rule)
 
 Arguments mapping described in
-[DeleteRuleRequestTypeDef](./type_defs.md#deleterulerequesttypedef).
+[DeleteRuleRequestRequestTypeDef](./type_defs.md#deleterulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -582,7 +593,7 @@ Boto3 documentation:
 [FraudDetector.Client.delete_variable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_variable)
 
 Arguments mapping described in
-[DeleteVariableRequestTypeDef](./type_defs.md#deletevariablerequesttypedef).
+[DeleteVariableRequestRequestTypeDef](./type_defs.md#deletevariablerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -600,7 +611,7 @@ Boto3 documentation:
 [FraudDetector.Client.describe_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.describe_detector)
 
 Arguments mapping described in
-[DescribeDetectorRequestTypeDef](./type_defs.md#describedetectorrequesttypedef).
+[DescribeDetectorRequestRequestTypeDef](./type_defs.md#describedetectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -609,7 +620,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeDetectorResultResponseTypeDef](./type_defs.md#describedetectorresultresponsetypedef).
+[DescribeDetectorResultTypeDef](./type_defs.md#describedetectorresulttypedef).
 
 ### describe_model_versions
 
@@ -623,7 +634,7 @@ Boto3 documentation:
 [FraudDetector.Client.describe_model_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.describe_model_versions)
 
 Arguments mapping described in
-[DescribeModelVersionsRequestTypeDef](./type_defs.md#describemodelversionsrequesttypedef).
+[DescribeModelVersionsRequestRequestTypeDef](./type_defs.md#describemodelversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -635,7 +646,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeModelVersionsResultResponseTypeDef](./type_defs.md#describemodelversionsresultresponsetypedef).
+[DescribeModelVersionsResultTypeDef](./type_defs.md#describemodelversionsresulttypedef).
 
 ### generate_presigned_url
 
@@ -667,7 +678,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_batch_prediction_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_batch_prediction_jobs)
 
 Arguments mapping described in
-[GetBatchPredictionJobsRequestTypeDef](./type_defs.md#getbatchpredictionjobsrequesttypedef).
+[GetBatchPredictionJobsRequestRequestTypeDef](./type_defs.md#getbatchpredictionjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -676,7 +687,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[GetBatchPredictionJobsResultResponseTypeDef](./type_defs.md#getbatchpredictionjobsresultresponsetypedef).
+[GetBatchPredictionJobsResultTypeDef](./type_defs.md#getbatchpredictionjobsresulttypedef).
 
 ### get_detector_version
 
@@ -689,7 +700,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_detector_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_detector_version)
 
 Arguments mapping described in
-[GetDetectorVersionRequestTypeDef](./type_defs.md#getdetectorversionrequesttypedef).
+[GetDetectorVersionRequestRequestTypeDef](./type_defs.md#getdetectorversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -697,7 +708,7 @@ Keyword-only arguments:
 - `detectorVersionId`: `str` *(required)*
 
 Returns
-[GetDetectorVersionResultResponseTypeDef](./type_defs.md#getdetectorversionresultresponsetypedef).
+[GetDetectorVersionResultTypeDef](./type_defs.md#getdetectorversionresulttypedef).
 
 ### get_detectors
 
@@ -709,7 +720,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_detectors)
 
 Arguments mapping described in
-[GetDetectorsRequestTypeDef](./type_defs.md#getdetectorsrequesttypedef).
+[GetDetectorsRequestRequestTypeDef](./type_defs.md#getdetectorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -717,8 +728,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[GetDetectorsResultResponseTypeDef](./type_defs.md#getdetectorsresultresponsetypedef).
+Returns [GetDetectorsResultTypeDef](./type_defs.md#getdetectorsresulttypedef).
 
 ### get_entity_types
 
@@ -730,7 +740,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_entity_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_entity_types)
 
 Arguments mapping described in
-[GetEntityTypesRequestTypeDef](./type_defs.md#getentitytypesrequesttypedef).
+[GetEntityTypesRequestRequestTypeDef](./type_defs.md#getentitytypesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -739,7 +749,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetEntityTypesResultResponseTypeDef](./type_defs.md#getentitytypesresultresponsetypedef).
+[GetEntityTypesResultTypeDef](./type_defs.md#getentitytypesresulttypedef).
 
 ### get_event_prediction
 
@@ -752,7 +762,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_event_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_event_prediction)
 
 Arguments mapping described in
-[GetEventPredictionRequestTypeDef](./type_defs.md#geteventpredictionrequesttypedef).
+[GetEventPredictionRequestRequestTypeDef](./type_defs.md#geteventpredictionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -768,7 +778,7 @@ Keyword-only arguments:
   [ModelEndpointDataBlobTypeDef](./type_defs.md#modelendpointdatablobtypedef)\]
 
 Returns
-[GetEventPredictionResultResponseTypeDef](./type_defs.md#geteventpredictionresultresponsetypedef).
+[GetEventPredictionResultTypeDef](./type_defs.md#geteventpredictionresulttypedef).
 
 ### get_event_types
 
@@ -780,7 +790,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_event_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_event_types)
 
 Arguments mapping described in
-[GetEventTypesRequestTypeDef](./type_defs.md#geteventtypesrequesttypedef).
+[GetEventTypesRequestRequestTypeDef](./type_defs.md#geteventtypesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -789,7 +799,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetEventTypesResultResponseTypeDef](./type_defs.md#geteventtypesresultresponsetypedef).
+[GetEventTypesResultTypeDef](./type_defs.md#geteventtypesresulttypedef).
 
 ### get_external_models
 
@@ -803,7 +813,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_external_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_external_models)
 
 Arguments mapping described in
-[GetExternalModelsRequestTypeDef](./type_defs.md#getexternalmodelsrequesttypedef).
+[GetExternalModelsRequestRequestTypeDef](./type_defs.md#getexternalmodelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -812,7 +822,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetExternalModelsResultResponseTypeDef](./type_defs.md#getexternalmodelsresultresponsetypedef).
+[GetExternalModelsResultTypeDef](./type_defs.md#getexternalmodelsresulttypedef).
 
 ### get_kms_encryption_key
 
@@ -827,7 +837,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_kms_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_kms_encryption_key)
 
 Returns
-[GetKMSEncryptionKeyResultResponseTypeDef](./type_defs.md#getkmsencryptionkeyresultresponsetypedef).
+[GetKMSEncryptionKeyResultTypeDef](./type_defs.md#getkmsencryptionkeyresulttypedef).
 
 ### get_labels
 
@@ -839,7 +849,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_labels)
 
 Arguments mapping described in
-[GetLabelsRequestTypeDef](./type_defs.md#getlabelsrequesttypedef).
+[GetLabelsRequestRequestTypeDef](./type_defs.md#getlabelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -847,8 +857,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[GetLabelsResultResponseTypeDef](./type_defs.md#getlabelsresultresponsetypedef).
+Returns [GetLabelsResultTypeDef](./type_defs.md#getlabelsresulttypedef).
 
 ### get_model_version
 
@@ -860,7 +869,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_model_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_model_version)
 
 Arguments mapping described in
-[GetModelVersionRequestTypeDef](./type_defs.md#getmodelversionrequesttypedef).
+[GetModelVersionRequestRequestTypeDef](./type_defs.md#getmodelversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -870,7 +879,7 @@ Keyword-only arguments:
 - `modelVersionNumber`: `str` *(required)*
 
 Returns
-[GetModelVersionResultResponseTypeDef](./type_defs.md#getmodelversionresultresponsetypedef).
+[GetModelVersionResultTypeDef](./type_defs.md#getmodelversionresulttypedef).
 
 ### get_models
 
@@ -882,7 +891,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_models)
 
 Arguments mapping described in
-[GetModelsRequestTypeDef](./type_defs.md#getmodelsrequesttypedef).
+[GetModelsRequestRequestTypeDef](./type_defs.md#getmodelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -892,8 +901,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[GetModelsResultResponseTypeDef](./type_defs.md#getmodelsresultresponsetypedef).
+Returns [GetModelsResultTypeDef](./type_defs.md#getmodelsresulttypedef).
 
 ### get_outcomes
 
@@ -905,7 +913,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_outcomes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_outcomes)
 
 Arguments mapping described in
-[GetOutcomesRequestTypeDef](./type_defs.md#getoutcomesrequesttypedef).
+[GetOutcomesRequestRequestTypeDef](./type_defs.md#getoutcomesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -913,8 +921,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[GetOutcomesResultResponseTypeDef](./type_defs.md#getoutcomesresultresponsetypedef).
+Returns [GetOutcomesResultTypeDef](./type_defs.md#getoutcomesresulttypedef).
 
 ### get_rules
 
@@ -927,7 +934,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_rules)
 
 Arguments mapping described in
-[GetRulesRequestTypeDef](./type_defs.md#getrulesrequesttypedef).
+[GetRulesRequestRequestTypeDef](./type_defs.md#getrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -937,8 +944,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[GetRulesResultResponseTypeDef](./type_defs.md#getrulesresultresponsetypedef).
+Returns [GetRulesResultTypeDef](./type_defs.md#getrulesresulttypedef).
 
 ### get_variables
 
@@ -950,7 +956,7 @@ Boto3 documentation:
 [FraudDetector.Client.get_variables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_variables)
 
 Arguments mapping described in
-[GetVariablesRequestTypeDef](./type_defs.md#getvariablesrequesttypedef).
+[GetVariablesRequestRequestTypeDef](./type_defs.md#getvariablesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -958,8 +964,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[GetVariablesResultResponseTypeDef](./type_defs.md#getvariablesresultresponsetypedef).
+Returns [GetVariablesResultTypeDef](./type_defs.md#getvariablesresulttypedef).
 
 ### list_tags_for_resource
 
@@ -972,7 +977,7 @@ Boto3 documentation:
 [FraudDetector.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -981,7 +986,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTagsForResourceResultResponseTypeDef](./type_defs.md#listtagsforresourceresultresponsetypedef).
+[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
 ### put_detector
 
@@ -993,7 +998,7 @@ Boto3 documentation:
 [FraudDetector.Client.put_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_detector)
 
 Arguments mapping described in
-[PutDetectorRequestTypeDef](./type_defs.md#putdetectorrequesttypedef).
+[PutDetectorRequestRequestTypeDef](./type_defs.md#putdetectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1014,7 +1019,7 @@ Boto3 documentation:
 [FraudDetector.Client.put_entity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_entity_type)
 
 Arguments mapping described in
-[PutEntityTypeRequestTypeDef](./type_defs.md#putentitytyperequesttypedef).
+[PutEntityTypeRequestRequestTypeDef](./type_defs.md#putentitytyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1034,7 +1039,7 @@ Boto3 documentation:
 [FraudDetector.Client.put_event_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_event_type)
 
 Arguments mapping described in
-[PutEventTypeRequestTypeDef](./type_defs.md#puteventtyperequesttypedef).
+[PutEventTypeRequestRequestTypeDef](./type_defs.md#puteventtyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1057,7 +1062,7 @@ Boto3 documentation:
 [FraudDetector.Client.put_external_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_external_model)
 
 Arguments mapping described in
-[PutExternalModelRequestTypeDef](./type_defs.md#putexternalmodelrequesttypedef).
+[PutExternalModelRequestRequestTypeDef](./type_defs.md#putexternalmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1089,7 +1094,7 @@ Boto3 documentation:
 [FraudDetector.Client.put_kms_encryption_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_kms_encryption_key)
 
 Arguments mapping described in
-[PutKMSEncryptionKeyRequestTypeDef](./type_defs.md#putkmsencryptionkeyrequesttypedef).
+[PutKMSEncryptionKeyRequestRequestTypeDef](./type_defs.md#putkmsencryptionkeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1107,7 +1112,7 @@ Boto3 documentation:
 [FraudDetector.Client.put_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_label)
 
 Arguments mapping described in
-[PutLabelRequestTypeDef](./type_defs.md#putlabelrequesttypedef).
+[PutLabelRequestRequestTypeDef](./type_defs.md#putlabelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1127,7 +1132,7 @@ Boto3 documentation:
 [FraudDetector.Client.put_outcome](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.put_outcome)
 
 Arguments mapping described in
-[PutOutcomeRequestTypeDef](./type_defs.md#putoutcomerequesttypedef).
+[PutOutcomeRequestRequestTypeDef](./type_defs.md#putoutcomerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1147,7 +1152,7 @@ Boto3 documentation:
 [FraudDetector.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1166,7 +1171,7 @@ Boto3 documentation:
 [FraudDetector.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1186,7 +1191,7 @@ Boto3 documentation:
 [FraudDetector.Client.update_detector_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_detector_version)
 
 Arguments mapping described in
-[UpdateDetectorVersionRequestTypeDef](./type_defs.md#updatedetectorversionrequesttypedef).
+[UpdateDetectorVersionRequestRequestTypeDef](./type_defs.md#updatedetectorversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1213,7 +1218,7 @@ Boto3 documentation:
 [FraudDetector.Client.update_detector_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_detector_version_metadata)
 
 Arguments mapping described in
-[UpdateDetectorVersionMetadataRequestTypeDef](./type_defs.md#updatedetectorversionmetadatarequesttypedef).
+[UpdateDetectorVersionMetadataRequestRequestTypeDef](./type_defs.md#updatedetectorversionmetadatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1234,7 +1239,7 @@ Boto3 documentation:
 [FraudDetector.Client.update_detector_version_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_detector_version_status)
 
 Arguments mapping described in
-[UpdateDetectorVersionStatusRequestTypeDef](./type_defs.md#updatedetectorversionstatusrequesttypedef).
+[UpdateDetectorVersionStatusRequestRequestTypeDef](./type_defs.md#updatedetectorversionstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1256,7 +1261,7 @@ Boto3 documentation:
 [FraudDetector.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_model)
 
 Arguments mapping described in
-[UpdateModelRequestTypeDef](./type_defs.md#updatemodelrequesttypedef).
+[UpdateModelRequestRequestTypeDef](./type_defs.md#updatemodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1278,7 +1283,7 @@ Boto3 documentation:
 [FraudDetector.Client.update_model_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_model_version)
 
 Arguments mapping described in
-[UpdateModelVersionRequestTypeDef](./type_defs.md#updatemodelversionrequesttypedef).
+[UpdateModelVersionRequestRequestTypeDef](./type_defs.md#updatemodelversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1291,7 +1296,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[UpdateModelVersionResultResponseTypeDef](./type_defs.md#updatemodelversionresultresponsetypedef).
+[UpdateModelVersionResultTypeDef](./type_defs.md#updatemodelversionresulttypedef).
 
 ### update_model_version_status
 
@@ -1304,7 +1309,7 @@ Boto3 documentation:
 [FraudDetector.Client.update_model_version_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_model_version_status)
 
 Arguments mapping described in
-[UpdateModelVersionStatusRequestTypeDef](./type_defs.md#updatemodelversionstatusrequesttypedef).
+[UpdateModelVersionStatusRequestRequestTypeDef](./type_defs.md#updatemodelversionstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1328,7 +1333,7 @@ Boto3 documentation:
 [FraudDetector.Client.update_rule_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_rule_metadata)
 
 Arguments mapping described in
-[UpdateRuleMetadataRequestTypeDef](./type_defs.md#updaterulemetadatarequesttypedef).
+[UpdateRuleMetadataRequestRequestTypeDef](./type_defs.md#updaterulemetadatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1348,7 +1353,7 @@ Boto3 documentation:
 [FraudDetector.Client.update_rule_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_rule_version)
 
 Arguments mapping described in
-[UpdateRuleVersionRequestTypeDef](./type_defs.md#updateruleversionrequesttypedef).
+[UpdateRuleVersionRequestRequestTypeDef](./type_defs.md#updateruleversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1361,7 +1366,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[UpdateRuleVersionResultResponseTypeDef](./type_defs.md#updateruleversionresultresponsetypedef).
+[UpdateRuleVersionResultTypeDef](./type_defs.md#updateruleversionresulttypedef).
 
 ### update_variable
 
@@ -1373,7 +1378,7 @@ Boto3 documentation:
 [FraudDetector.Client.update_variable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_variable)
 
 Arguments mapping described in
-[UpdateVariableRequestTypeDef](./type_defs.md#updatevariablerequesttypedef).
+[UpdateVariableRequestRequestTypeDef](./type_defs.md#updatevariablerequestrequesttypedef).
 
 Keyword-only arguments:
 

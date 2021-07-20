@@ -11,6 +11,7 @@ type annotations stubs module
   - [IoTEventsDataClient](#ioteventsdataclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_acknowledge_alarm](#batch_acknowledge_alarm)
     - [batch_disable_alarm](#batch_disable_alarm)
     - [batch_enable_alarm](#batch_enable_alarm)
@@ -64,6 +65,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IoTEventsDataClient exceptions.
+
+Type annotations for `boto3.client("iotevents-data").exceptions` method.
+
+Boto3 documentation:
+[IoTEventsData.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_acknowledge_alarm
 
 Acknowledges one or more alarms.
@@ -75,7 +87,7 @@ Boto3 documentation:
 [IoTEventsData.Client.batch_acknowledge_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_acknowledge_alarm)
 
 Arguments mapping described in
-[BatchAcknowledgeAlarmRequestTypeDef](./type_defs.md#batchacknowledgealarmrequesttypedef).
+[BatchAcknowledgeAlarmRequestRequestTypeDef](./type_defs.md#batchacknowledgealarmrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -84,7 +96,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchAcknowledgeAlarmResponseResponseTypeDef](./type_defs.md#batchacknowledgealarmresponseresponsetypedef).
+[BatchAcknowledgeAlarmResponseTypeDef](./type_defs.md#batchacknowledgealarmresponsetypedef).
 
 ### batch_disable_alarm
 
@@ -97,7 +109,7 @@ Boto3 documentation:
 [IoTEventsData.Client.batch_disable_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_disable_alarm)
 
 Arguments mapping described in
-[BatchDisableAlarmRequestTypeDef](./type_defs.md#batchdisablealarmrequesttypedef).
+[BatchDisableAlarmRequestRequestTypeDef](./type_defs.md#batchdisablealarmrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -106,7 +118,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchDisableAlarmResponseResponseTypeDef](./type_defs.md#batchdisablealarmresponseresponsetypedef).
+[BatchDisableAlarmResponseTypeDef](./type_defs.md#batchdisablealarmresponsetypedef).
 
 ### batch_enable_alarm
 
@@ -119,7 +131,7 @@ Boto3 documentation:
 [IoTEventsData.Client.batch_enable_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_enable_alarm)
 
 Arguments mapping described in
-[BatchEnableAlarmRequestTypeDef](./type_defs.md#batchenablealarmrequesttypedef).
+[BatchEnableAlarmRequestRequestTypeDef](./type_defs.md#batchenablealarmrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -128,7 +140,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchEnableAlarmResponseResponseTypeDef](./type_defs.md#batchenablealarmresponseresponsetypedef).
+[BatchEnableAlarmResponseTypeDef](./type_defs.md#batchenablealarmresponsetypedef).
 
 ### batch_put_message
 
@@ -140,7 +152,7 @@ Boto3 documentation:
 [IoTEventsData.Client.batch_put_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_put_message)
 
 Arguments mapping described in
-[BatchPutMessageRequestTypeDef](./type_defs.md#batchputmessagerequesttypedef).
+[BatchPutMessageRequestRequestTypeDef](./type_defs.md#batchputmessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -148,7 +160,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchPutMessageResponseResponseTypeDef](./type_defs.md#batchputmessageresponseresponsetypedef).
+[BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef).
 
 ### batch_reset_alarm
 
@@ -160,7 +172,7 @@ Boto3 documentation:
 [IoTEventsData.Client.batch_reset_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_reset_alarm)
 
 Arguments mapping described in
-[BatchResetAlarmRequestTypeDef](./type_defs.md#batchresetalarmrequesttypedef).
+[BatchResetAlarmRequestRequestTypeDef](./type_defs.md#batchresetalarmrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -169,7 +181,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchResetAlarmResponseResponseTypeDef](./type_defs.md#batchresetalarmresponseresponsetypedef).
+[BatchResetAlarmResponseTypeDef](./type_defs.md#batchresetalarmresponsetypedef).
 
 ### batch_snooze_alarm
 
@@ -182,7 +194,7 @@ Boto3 documentation:
 [IoTEventsData.Client.batch_snooze_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_snooze_alarm)
 
 Arguments mapping described in
-[BatchSnoozeAlarmRequestTypeDef](./type_defs.md#batchsnoozealarmrequesttypedef).
+[BatchSnoozeAlarmRequestRequestTypeDef](./type_defs.md#batchsnoozealarmrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -191,7 +203,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchSnoozeAlarmResponseResponseTypeDef](./type_defs.md#batchsnoozealarmresponseresponsetypedef).
+[BatchSnoozeAlarmResponseTypeDef](./type_defs.md#batchsnoozealarmresponsetypedef).
 
 ### batch_update_detector
 
@@ -205,7 +217,7 @@ Boto3 documentation:
 [IoTEventsData.Client.batch_update_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_update_detector)
 
 Arguments mapping described in
-[BatchUpdateDetectorRequestTypeDef](./type_defs.md#batchupdatedetectorrequesttypedef).
+[BatchUpdateDetectorRequestRequestTypeDef](./type_defs.md#batchupdatedetectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -214,7 +226,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchUpdateDetectorResponseResponseTypeDef](./type_defs.md#batchupdatedetectorresponseresponsetypedef).
+[BatchUpdateDetectorResponseTypeDef](./type_defs.md#batchupdatedetectorresponsetypedef).
 
 ### can_paginate
 
@@ -241,7 +253,7 @@ Boto3 documentation:
 [IoTEventsData.Client.describe_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.describe_alarm)
 
 Arguments mapping described in
-[DescribeAlarmRequestTypeDef](./type_defs.md#describealarmrequesttypedef).
+[DescribeAlarmRequestRequestTypeDef](./type_defs.md#describealarmrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -249,7 +261,7 @@ Keyword-only arguments:
 - `keyValue`: `str`
 
 Returns
-[DescribeAlarmResponseResponseTypeDef](./type_defs.md#describealarmresponseresponsetypedef).
+[DescribeAlarmResponseTypeDef](./type_defs.md#describealarmresponsetypedef).
 
 ### describe_detector
 
@@ -261,7 +273,7 @@ Boto3 documentation:
 [IoTEventsData.Client.describe_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.describe_detector)
 
 Arguments mapping described in
-[DescribeDetectorRequestTypeDef](./type_defs.md#describedetectorrequesttypedef).
+[DescribeDetectorRequestRequestTypeDef](./type_defs.md#describedetectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -269,7 +281,7 @@ Keyword-only arguments:
 - `keyValue`: `str`
 
 Returns
-[DescribeDetectorResponseResponseTypeDef](./type_defs.md#describedetectorresponseresponsetypedef).
+[DescribeDetectorResponseTypeDef](./type_defs.md#describedetectorresponsetypedef).
 
 ### generate_presigned_url
 
@@ -300,7 +312,7 @@ Boto3 documentation:
 [IoTEventsData.Client.list_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.list_alarms)
 
 Arguments mapping described in
-[ListAlarmsRequestTypeDef](./type_defs.md#listalarmsrequesttypedef).
+[ListAlarmsRequestRequestTypeDef](./type_defs.md#listalarmsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,8 +320,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[ListAlarmsResponseResponseTypeDef](./type_defs.md#listalarmsresponseresponsetypedef).
+Returns [ListAlarmsResponseTypeDef](./type_defs.md#listalarmsresponsetypedef).
 
 ### list_detectors
 
@@ -321,7 +332,7 @@ Boto3 documentation:
 [IoTEventsData.Client.list_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.list_detectors)
 
 Arguments mapping described in
-[ListDetectorsRequestTypeDef](./type_defs.md#listdetectorsrequesttypedef).
+[ListDetectorsRequestRequestTypeDef](./type_defs.md#listdetectorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -331,4 +342,4 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDetectorsResponseResponseTypeDef](./type_defs.md#listdetectorsresponseresponsetypedef).
+[ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef).

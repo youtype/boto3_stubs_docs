@@ -80,7 +80,7 @@ Arguments for `DescribeActivationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeActivationsPaginator.paginate` returns
-`Iterator`\[[DescribeActivationsResultResponseTypeDef](./type_defs.md#describeactivationsresultresponsetypedef)\].
+`Iterator`\[[DescribeActivationsResultTypeDef](./type_defs.md#describeactivationsresulttypedef)\].
 
 ## DescribeAssociationExecutionTargetsPaginator
 
@@ -109,7 +109,7 @@ Arguments for `DescribeAssociationExecutionTargetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAssociationExecutionTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeAssociationExecutionTargetsResultResponseTypeDef](./type_defs.md#describeassociationexecutiontargetsresultresponsetypedef)\].
+`Iterator`\[[DescribeAssociationExecutionTargetsResultTypeDef](./type_defs.md#describeassociationexecutiontargetsresulttypedef)\].
 
 ## DescribeAssociationExecutionsPaginator
 
@@ -137,7 +137,7 @@ Arguments for `DescribeAssociationExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAssociationExecutionsPaginator.paginate` returns
-`Iterator`\[[DescribeAssociationExecutionsResultResponseTypeDef](./type_defs.md#describeassociationexecutionsresultresponsetypedef)\].
+`Iterator`\[[DescribeAssociationExecutionsResultTypeDef](./type_defs.md#describeassociationexecutionsresulttypedef)\].
 
 ## DescribeAutomationExecutionsPaginator
 
@@ -164,7 +164,7 @@ Arguments for `DescribeAutomationExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAutomationExecutionsPaginator.paginate` returns
-`Iterator`\[[DescribeAutomationExecutionsResultResponseTypeDef](./type_defs.md#describeautomationexecutionsresultresponsetypedef)\].
+`Iterator`\[[DescribeAutomationExecutionsResultTypeDef](./type_defs.md#describeautomationexecutionsresulttypedef)\].
 
 ## DescribeAutomationStepExecutionsPaginator
 
@@ -193,7 +193,7 @@ Arguments for `DescribeAutomationStepExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAutomationStepExecutionsPaginator.paginate` returns
-`Iterator`\[[DescribeAutomationStepExecutionsResultResponseTypeDef](./type_defs.md#describeautomationstepexecutionsresultresponsetypedef)\].
+`Iterator`\[[DescribeAutomationStepExecutionsResultTypeDef](./type_defs.md#describeautomationstepexecutionsresulttypedef)\].
 
 ## DescribeAvailablePatchesPaginator
 
@@ -220,7 +220,7 @@ Arguments for `DescribeAvailablePatchesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAvailablePatchesPaginator.paginate` returns
-`Iterator`\[[DescribeAvailablePatchesResultResponseTypeDef](./type_defs.md#describeavailablepatchesresultresponsetypedef)\].
+`Iterator`\[[DescribeAvailablePatchesResultTypeDef](./type_defs.md#describeavailablepatchesresulttypedef)\].
 
 ## DescribeEffectiveInstanceAssociationsPaginator
 
@@ -246,7 +246,7 @@ Arguments for `DescribeEffectiveInstanceAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEffectiveInstanceAssociationsPaginator.paginate` returns
-`Iterator`\[[DescribeEffectiveInstanceAssociationsResultResponseTypeDef](./type_defs.md#describeeffectiveinstanceassociationsresultresponsetypedef)\].
+`Iterator`\[[DescribeEffectiveInstanceAssociationsResultTypeDef](./type_defs.md#describeeffectiveinstanceassociationsresulttypedef)\].
 
 ## DescribeEffectivePatchesForPatchBaselinePaginator
 
@@ -273,7 +273,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEffectivePatchesForPatchBaselinePaginator.paginate` returns
-`Iterator`\[[DescribeEffectivePatchesForPatchBaselineResultResponseTypeDef](./type_defs.md#describeeffectivepatchesforpatchbaselineresultresponsetypedef)\].
+`Iterator`\[[DescribeEffectivePatchesForPatchBaselineResultTypeDef](./type_defs.md#describeeffectivepatchesforpatchbaselineresulttypedef)\].
 
 ## DescribeInstanceAssociationsStatusPaginator
 
@@ -299,7 +299,7 @@ Arguments for `DescribeInstanceAssociationsStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceAssociationsStatusPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceAssociationsStatusResultResponseTypeDef](./type_defs.md#describeinstanceassociationsstatusresultresponsetypedef)\].
+`Iterator`\[[DescribeInstanceAssociationsStatusResultTypeDef](./type_defs.md#describeinstanceassociationsstatusresulttypedef)\].
 
 ## DescribeInstanceInformationPaginator
 
@@ -328,7 +328,7 @@ Arguments for `DescribeInstanceInformationPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstanceInformationPaginator.paginate` returns
-`Iterator`\[[DescribeInstanceInformationResultResponseTypeDef](./type_defs.md#describeinstanceinformationresultresponsetypedef)\].
+`Iterator`\[[DescribeInstanceInformationResultTypeDef](./type_defs.md#describeinstanceinformationresulttypedef)\].
 
 ## DescribeInstancePatchStatesPaginator
 
@@ -354,7 +354,7 @@ Arguments for `DescribeInstancePatchStatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstancePatchStatesPaginator.paginate` returns
-`Iterator`\[[DescribeInstancePatchStatesResultResponseTypeDef](./type_defs.md#describeinstancepatchstatesresultresponsetypedef)\].
+`Iterator`\[[DescribeInstancePatchStatesResultTypeDef](./type_defs.md#describeinstancepatchstatesresulttypedef)\].
 
 ## DescribeInstancePatchStatesForPatchGroupPaginator
 
@@ -383,7 +383,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstancePatchStatesForPatchGroupPaginator.paginate` returns
-`Iterator`\[[DescribeInstancePatchStatesForPatchGroupResultResponseTypeDef](./type_defs.md#describeinstancepatchstatesforpatchgroupresultresponsetypedef)\].
+`Iterator`\[[DescribeInstancePatchStatesForPatchGroupResultTypeDef](./type_defs.md#describeinstancepatchstatesforpatchgroupresulttypedef)\].
 
 ## DescribeInstancePatchesPaginator
 
@@ -411,7 +411,7 @@ Arguments for `DescribeInstancePatchesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstancePatchesPaginator.paginate` returns
-`Iterator`\[[DescribeInstancePatchesResultResponseTypeDef](./type_defs.md#describeinstancepatchesresultresponsetypedef)\].
+`Iterator`\[[DescribeInstancePatchesResultTypeDef](./type_defs.md#describeinstancepatchesresulttypedef)\].
 
 ## DescribeInventoryDeletionsPaginator
 
@@ -437,7 +437,7 @@ Arguments for `DescribeInventoryDeletionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInventoryDeletionsPaginator.paginate` returns
-`Iterator`\[[DescribeInventoryDeletionsResultResponseTypeDef](./type_defs.md#describeinventorydeletionsresultresponsetypedef)\].
+`Iterator`\[[DescribeInventoryDeletionsResultTypeDef](./type_defs.md#describeinventorydeletionsresulttypedef)\].
 
 ## DescribeMaintenanceWindowExecutionTaskInvocationsPaginator
 
@@ -467,7 +467,7 @@ Arguments for
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowExecutionTaskInvocationsPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowExecutionTaskInvocationsResultResponseTypeDef](./type_defs.md#describemaintenancewindowexecutiontaskinvocationsresultresponsetypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontaskinvocationsresulttypedef)\].
 
 ## DescribeMaintenanceWindowExecutionTasksPaginator
 
@@ -496,7 +496,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowExecutionTasksPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowExecutionTasksResultResponseTypeDef](./type_defs.md#describemaintenancewindowexecutiontasksresultresponsetypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowExecutionTasksResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontasksresulttypedef)\].
 
 ## DescribeMaintenanceWindowExecutionsPaginator
 
@@ -524,7 +524,7 @@ Arguments for `DescribeMaintenanceWindowExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowExecutionsPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowExecutionsResultResponseTypeDef](./type_defs.md#describemaintenancewindowexecutionsresultresponsetypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowExecutionsResultTypeDef](./type_defs.md#describemaintenancewindowexecutionsresulttypedef)\].
 
 ## DescribeMaintenanceWindowSchedulePaginator
 
@@ -555,7 +555,7 @@ Arguments for `DescribeMaintenanceWindowSchedulePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowSchedulePaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowScheduleResultResponseTypeDef](./type_defs.md#describemaintenancewindowscheduleresultresponsetypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowScheduleResultTypeDef](./type_defs.md#describemaintenancewindowscheduleresulttypedef)\].
 
 ## DescribeMaintenanceWindowTargetsPaginator
 
@@ -583,7 +583,7 @@ Arguments for `DescribeMaintenanceWindowTargetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowTargetsResultResponseTypeDef](./type_defs.md#describemaintenancewindowtargetsresultresponsetypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowTargetsResultTypeDef](./type_defs.md#describemaintenancewindowtargetsresulttypedef)\].
 
 ## DescribeMaintenanceWindowTasksPaginator
 
@@ -611,7 +611,7 @@ Arguments for `DescribeMaintenanceWindowTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowTasksPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowTasksResultResponseTypeDef](./type_defs.md#describemaintenancewindowtasksresultresponsetypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowTasksResultTypeDef](./type_defs.md#describemaintenancewindowtasksresulttypedef)\].
 
 ## DescribeMaintenanceWindowsPaginator
 
@@ -638,7 +638,7 @@ Arguments for `DescribeMaintenanceWindowsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowsPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowsResultResponseTypeDef](./type_defs.md#describemaintenancewindowsresultresponsetypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowsResultTypeDef](./type_defs.md#describemaintenancewindowsresulttypedef)\].
 
 ## DescribeMaintenanceWindowsForTargetPaginator
 
@@ -668,7 +668,7 @@ Arguments for `DescribeMaintenanceWindowsForTargetPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMaintenanceWindowsForTargetPaginator.paginate` returns
-`Iterator`\[[DescribeMaintenanceWindowsForTargetResultResponseTypeDef](./type_defs.md#describemaintenancewindowsfortargetresultresponsetypedef)\].
+`Iterator`\[[DescribeMaintenanceWindowsForTargetResultTypeDef](./type_defs.md#describemaintenancewindowsfortargetresulttypedef)\].
 
 ## DescribeOpsItemsPaginator
 
@@ -694,7 +694,7 @@ Arguments for `DescribeOpsItemsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOpsItemsPaginator.paginate` returns
-`Iterator`\[[DescribeOpsItemsResponseResponseTypeDef](./type_defs.md#describeopsitemsresponseresponsetypedef)\].
+`Iterator`\[[DescribeOpsItemsResponseTypeDef](./type_defs.md#describeopsitemsresponsetypedef)\].
 
 ## DescribeParametersPaginator
 
@@ -723,7 +723,7 @@ Arguments for `DescribeParametersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeParametersPaginator.paginate` returns
-`Iterator`\[[DescribeParametersResultResponseTypeDef](./type_defs.md#describeparametersresultresponsetypedef)\].
+`Iterator`\[[DescribeParametersResultTypeDef](./type_defs.md#describeparametersresulttypedef)\].
 
 ## DescribePatchBaselinesPaginator
 
@@ -750,7 +750,7 @@ Arguments for `DescribePatchBaselinesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePatchBaselinesPaginator.paginate` returns
-`Iterator`\[[DescribePatchBaselinesResultResponseTypeDef](./type_defs.md#describepatchbaselinesresultresponsetypedef)\].
+`Iterator`\[[DescribePatchBaselinesResultTypeDef](./type_defs.md#describepatchbaselinesresulttypedef)\].
 
 ## DescribePatchGroupsPaginator
 
@@ -777,7 +777,7 @@ Arguments for `DescribePatchGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePatchGroupsPaginator.paginate` returns
-`Iterator`\[[DescribePatchGroupsResultResponseTypeDef](./type_defs.md#describepatchgroupsresultresponsetypedef)\].
+`Iterator`\[[DescribePatchGroupsResultTypeDef](./type_defs.md#describepatchgroupsresulttypedef)\].
 
 ## DescribePatchPropertiesPaginator
 
@@ -806,7 +806,7 @@ Arguments for `DescribePatchPropertiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePatchPropertiesPaginator.paginate` returns
-`Iterator`\[[DescribePatchPropertiesResultResponseTypeDef](./type_defs.md#describepatchpropertiesresultresponsetypedef)\].
+`Iterator`\[[DescribePatchPropertiesResultTypeDef](./type_defs.md#describepatchpropertiesresulttypedef)\].
 
 ## DescribeSessionsPaginator
 
@@ -833,7 +833,7 @@ Arguments for `DescribeSessionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSessionsPaginator.paginate` returns
-`Iterator`\[[DescribeSessionsResponseResponseTypeDef](./type_defs.md#describesessionsresponseresponsetypedef)\].
+`Iterator`\[[DescribeSessionsResponseTypeDef](./type_defs.md#describesessionsresponsetypedef)\].
 
 ## GetInventoryPaginator
 
@@ -863,7 +863,7 @@ Arguments for `GetInventoryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetInventoryPaginator.paginate` returns
-`Iterator`\[[GetInventoryResultResponseTypeDef](./type_defs.md#getinventoryresultresponsetypedef)\].
+`Iterator`\[[GetInventoryResultTypeDef](./type_defs.md#getinventoryresulttypedef)\].
 
 ## GetInventorySchemaPaginator
 
@@ -891,7 +891,7 @@ Arguments for `GetInventorySchemaPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetInventorySchemaPaginator.paginate` returns
-`Iterator`\[[GetInventorySchemaResultResponseTypeDef](./type_defs.md#getinventoryschemaresultresponsetypedef)\].
+`Iterator`\[[GetInventorySchemaResultTypeDef](./type_defs.md#getinventoryschemaresulttypedef)\].
 
 ## GetOpsSummaryPaginator
 
@@ -921,7 +921,7 @@ Arguments for `GetOpsSummaryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetOpsSummaryPaginator.paginate` returns
-`Iterator`\[[GetOpsSummaryResultResponseTypeDef](./type_defs.md#getopssummaryresultresponsetypedef)\].
+`Iterator`\[[GetOpsSummaryResultTypeDef](./type_defs.md#getopssummaryresulttypedef)\].
 
 ## GetParameterHistoryPaginator
 
@@ -948,7 +948,7 @@ Arguments for `GetParameterHistoryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetParameterHistoryPaginator.paginate` returns
-`Iterator`\[[GetParameterHistoryResultResponseTypeDef](./type_defs.md#getparameterhistoryresultresponsetypedef)\].
+`Iterator`\[[GetParameterHistoryResultTypeDef](./type_defs.md#getparameterhistoryresulttypedef)\].
 
 ## GetParametersByPathPaginator
 
@@ -978,7 +978,7 @@ Arguments for `GetParametersByPathPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetParametersByPathPaginator.paginate` returns
-`Iterator`\[[GetParametersByPathResultResponseTypeDef](./type_defs.md#getparametersbypathresultresponsetypedef)\].
+`Iterator`\[[GetParametersByPathResultTypeDef](./type_defs.md#getparametersbypathresulttypedef)\].
 
 ## ListAssociationVersionsPaginator
 
@@ -1004,7 +1004,7 @@ Arguments for `ListAssociationVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociationVersionsPaginator.paginate` returns
-`Iterator`\[[ListAssociationVersionsResultResponseTypeDef](./type_defs.md#listassociationversionsresultresponsetypedef)\].
+`Iterator`\[[ListAssociationVersionsResultTypeDef](./type_defs.md#listassociationversionsresulttypedef)\].
 
 ## ListAssociationsPaginator
 
@@ -1030,7 +1030,7 @@ Arguments for `ListAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociationsPaginator.paginate` returns
-`Iterator`\[[ListAssociationsResultResponseTypeDef](./type_defs.md#listassociationsresultresponsetypedef)\].
+`Iterator`\[[ListAssociationsResultTypeDef](./type_defs.md#listassociationsresulttypedef)\].
 
 ## ListCommandInvocationsPaginator
 
@@ -1060,7 +1060,7 @@ Arguments for `ListCommandInvocationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCommandInvocationsPaginator.paginate` returns
-`Iterator`\[[ListCommandInvocationsResultResponseTypeDef](./type_defs.md#listcommandinvocationsresultresponsetypedef)\].
+`Iterator`\[[ListCommandInvocationsResultTypeDef](./type_defs.md#listcommandinvocationsresulttypedef)\].
 
 ## ListCommandsPaginator
 
@@ -1088,7 +1088,7 @@ Arguments for `ListCommandsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCommandsPaginator.paginate` returns
-`Iterator`\[[ListCommandsResultResponseTypeDef](./type_defs.md#listcommandsresultresponsetypedef)\].
+`Iterator`\[[ListCommandsResultTypeDef](./type_defs.md#listcommandsresulttypedef)\].
 
 ## ListComplianceItemsPaginator
 
@@ -1117,7 +1117,7 @@ Arguments for `ListComplianceItemsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListComplianceItemsPaginator.paginate` returns
-`Iterator`\[[ListComplianceItemsResultResponseTypeDef](./type_defs.md#listcomplianceitemsresultresponsetypedef)\].
+`Iterator`\[[ListComplianceItemsResultTypeDef](./type_defs.md#listcomplianceitemsresulttypedef)\].
 
 ## ListComplianceSummariesPaginator
 
@@ -1144,7 +1144,7 @@ Arguments for `ListComplianceSummariesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListComplianceSummariesPaginator.paginate` returns
-`Iterator`\[[ListComplianceSummariesResultResponseTypeDef](./type_defs.md#listcompliancesummariesresultresponsetypedef)\].
+`Iterator`\[[ListComplianceSummariesResultTypeDef](./type_defs.md#listcompliancesummariesresulttypedef)\].
 
 ## ListDocumentVersionsPaginator
 
@@ -1170,7 +1170,7 @@ Arguments for `ListDocumentVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDocumentVersionsPaginator.paginate` returns
-`Iterator`\[[ListDocumentVersionsResultResponseTypeDef](./type_defs.md#listdocumentversionsresultresponsetypedef)\].
+`Iterator`\[[ListDocumentVersionsResultTypeDef](./type_defs.md#listdocumentversionsresulttypedef)\].
 
 ## ListDocumentsPaginator
 
@@ -1198,7 +1198,7 @@ Arguments for `ListDocumentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDocumentsPaginator.paginate` returns
-`Iterator`\[[ListDocumentsResultResponseTypeDef](./type_defs.md#listdocumentsresultresponsetypedef)\].
+`Iterator`\[[ListDocumentsResultTypeDef](./type_defs.md#listdocumentsresulttypedef)\].
 
 ## ListOpsItemEventsPaginator
 
@@ -1225,7 +1225,7 @@ Arguments for `ListOpsItemEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOpsItemEventsPaginator.paginate` returns
-`Iterator`\[[ListOpsItemEventsResponseResponseTypeDef](./type_defs.md#listopsitemeventsresponseresponsetypedef)\].
+`Iterator`\[[ListOpsItemEventsResponseTypeDef](./type_defs.md#listopsitemeventsresponsetypedef)\].
 
 ## ListOpsItemRelatedItemsPaginator
 
@@ -1253,7 +1253,7 @@ Arguments for `ListOpsItemRelatedItemsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOpsItemRelatedItemsPaginator.paginate` returns
-`Iterator`\[[ListOpsItemRelatedItemsResponseResponseTypeDef](./type_defs.md#listopsitemrelateditemsresponseresponsetypedef)\].
+`Iterator`\[[ListOpsItemRelatedItemsResponseTypeDef](./type_defs.md#listopsitemrelateditemsresponsetypedef)\].
 
 ## ListOpsMetadataPaginator
 
@@ -1279,7 +1279,7 @@ Arguments for `ListOpsMetadataPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOpsMetadataPaginator.paginate` returns
-`Iterator`\[[ListOpsMetadataResultResponseTypeDef](./type_defs.md#listopsmetadataresultresponsetypedef)\].
+`Iterator`\[[ListOpsMetadataResultTypeDef](./type_defs.md#listopsmetadataresulttypedef)\].
 
 ## ListResourceComplianceSummariesPaginator
 
@@ -1306,7 +1306,7 @@ Arguments for `ListResourceComplianceSummariesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceComplianceSummariesPaginator.paginate` returns
-`Iterator`\[[ListResourceComplianceSummariesResultResponseTypeDef](./type_defs.md#listresourcecompliancesummariesresultresponsetypedef)\].
+`Iterator`\[[ListResourceComplianceSummariesResultTypeDef](./type_defs.md#listresourcecompliancesummariesresulttypedef)\].
 
 ## ListResourceDataSyncPaginator
 
@@ -1332,4 +1332,4 @@ Arguments for `ListResourceDataSyncPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceDataSyncPaginator.paginate` returns
-`Iterator`\[[ListResourceDataSyncResultResponseTypeDef](./type_defs.md#listresourcedatasyncresultresponsetypedef)\].
+`Iterator`\[[ListResourceDataSyncResultTypeDef](./type_defs.md#listresourcedatasyncresulttypedef)\].

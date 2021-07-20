@@ -13,48 +13,48 @@ type annotations stubs module
   - [AnalysisSchemeStatusTypeDef](#analysisschemestatustypedef)
   - [AnalysisSchemeTypeDef](#analysisschemetypedef)
   - [AvailabilityOptionsStatusTypeDef](#availabilityoptionsstatustypedef)
-  - [BuildSuggestersRequestTypeDef](#buildsuggestersrequesttypedef)
-  - [BuildSuggestersResponseResponseTypeDef](#buildsuggestersresponseresponsetypedef)
-  - [CreateDomainRequestTypeDef](#createdomainrequesttypedef)
-  - [CreateDomainResponseResponseTypeDef](#createdomainresponseresponsetypedef)
+  - [BuildSuggestersRequestRequestTypeDef](#buildsuggestersrequestrequesttypedef)
+  - [BuildSuggestersResponseTypeDef](#buildsuggestersresponsetypedef)
+  - [CreateDomainRequestRequestTypeDef](#createdomainrequestrequesttypedef)
+  - [CreateDomainResponseTypeDef](#createdomainresponsetypedef)
   - [DateArrayOptionsTypeDef](#datearrayoptionstypedef)
   - [DateOptionsTypeDef](#dateoptionstypedef)
-  - [DefineAnalysisSchemeRequestTypeDef](#defineanalysisschemerequesttypedef)
-  - [DefineAnalysisSchemeResponseResponseTypeDef](#defineanalysisschemeresponseresponsetypedef)
-  - [DefineExpressionRequestTypeDef](#defineexpressionrequesttypedef)
-  - [DefineExpressionResponseResponseTypeDef](#defineexpressionresponseresponsetypedef)
-  - [DefineIndexFieldRequestTypeDef](#defineindexfieldrequesttypedef)
-  - [DefineIndexFieldResponseResponseTypeDef](#defineindexfieldresponseresponsetypedef)
-  - [DefineSuggesterRequestTypeDef](#definesuggesterrequesttypedef)
-  - [DefineSuggesterResponseResponseTypeDef](#definesuggesterresponseresponsetypedef)
-  - [DeleteAnalysisSchemeRequestTypeDef](#deleteanalysisschemerequesttypedef)
-  - [DeleteAnalysisSchemeResponseResponseTypeDef](#deleteanalysisschemeresponseresponsetypedef)
-  - [DeleteDomainRequestTypeDef](#deletedomainrequesttypedef)
-  - [DeleteDomainResponseResponseTypeDef](#deletedomainresponseresponsetypedef)
-  - [DeleteExpressionRequestTypeDef](#deleteexpressionrequesttypedef)
-  - [DeleteExpressionResponseResponseTypeDef](#deleteexpressionresponseresponsetypedef)
-  - [DeleteIndexFieldRequestTypeDef](#deleteindexfieldrequesttypedef)
-  - [DeleteIndexFieldResponseResponseTypeDef](#deleteindexfieldresponseresponsetypedef)
-  - [DeleteSuggesterRequestTypeDef](#deletesuggesterrequesttypedef)
-  - [DeleteSuggesterResponseResponseTypeDef](#deletesuggesterresponseresponsetypedef)
-  - [DescribeAnalysisSchemesRequestTypeDef](#describeanalysisschemesrequesttypedef)
-  - [DescribeAnalysisSchemesResponseResponseTypeDef](#describeanalysisschemesresponseresponsetypedef)
-  - [DescribeAvailabilityOptionsRequestTypeDef](#describeavailabilityoptionsrequesttypedef)
-  - [DescribeAvailabilityOptionsResponseResponseTypeDef](#describeavailabilityoptionsresponseresponsetypedef)
-  - [DescribeDomainEndpointOptionsRequestTypeDef](#describedomainendpointoptionsrequesttypedef)
-  - [DescribeDomainEndpointOptionsResponseResponseTypeDef](#describedomainendpointoptionsresponseresponsetypedef)
-  - [DescribeDomainsRequestTypeDef](#describedomainsrequesttypedef)
-  - [DescribeDomainsResponseResponseTypeDef](#describedomainsresponseresponsetypedef)
-  - [DescribeExpressionsRequestTypeDef](#describeexpressionsrequesttypedef)
-  - [DescribeExpressionsResponseResponseTypeDef](#describeexpressionsresponseresponsetypedef)
-  - [DescribeIndexFieldsRequestTypeDef](#describeindexfieldsrequesttypedef)
-  - [DescribeIndexFieldsResponseResponseTypeDef](#describeindexfieldsresponseresponsetypedef)
-  - [DescribeScalingParametersRequestTypeDef](#describescalingparametersrequesttypedef)
-  - [DescribeScalingParametersResponseResponseTypeDef](#describescalingparametersresponseresponsetypedef)
-  - [DescribeServiceAccessPoliciesRequestTypeDef](#describeserviceaccesspoliciesrequesttypedef)
-  - [DescribeServiceAccessPoliciesResponseResponseTypeDef](#describeserviceaccesspoliciesresponseresponsetypedef)
-  - [DescribeSuggestersRequestTypeDef](#describesuggestersrequesttypedef)
-  - [DescribeSuggestersResponseResponseTypeDef](#describesuggestersresponseresponsetypedef)
+  - [DefineAnalysisSchemeRequestRequestTypeDef](#defineanalysisschemerequestrequesttypedef)
+  - [DefineAnalysisSchemeResponseTypeDef](#defineanalysisschemeresponsetypedef)
+  - [DefineExpressionRequestRequestTypeDef](#defineexpressionrequestrequesttypedef)
+  - [DefineExpressionResponseTypeDef](#defineexpressionresponsetypedef)
+  - [DefineIndexFieldRequestRequestTypeDef](#defineindexfieldrequestrequesttypedef)
+  - [DefineIndexFieldResponseTypeDef](#defineindexfieldresponsetypedef)
+  - [DefineSuggesterRequestRequestTypeDef](#definesuggesterrequestrequesttypedef)
+  - [DefineSuggesterResponseTypeDef](#definesuggesterresponsetypedef)
+  - [DeleteAnalysisSchemeRequestRequestTypeDef](#deleteanalysisschemerequestrequesttypedef)
+  - [DeleteAnalysisSchemeResponseTypeDef](#deleteanalysisschemeresponsetypedef)
+  - [DeleteDomainRequestRequestTypeDef](#deletedomainrequestrequesttypedef)
+  - [DeleteDomainResponseTypeDef](#deletedomainresponsetypedef)
+  - [DeleteExpressionRequestRequestTypeDef](#deleteexpressionrequestrequesttypedef)
+  - [DeleteExpressionResponseTypeDef](#deleteexpressionresponsetypedef)
+  - [DeleteIndexFieldRequestRequestTypeDef](#deleteindexfieldrequestrequesttypedef)
+  - [DeleteIndexFieldResponseTypeDef](#deleteindexfieldresponsetypedef)
+  - [DeleteSuggesterRequestRequestTypeDef](#deletesuggesterrequestrequesttypedef)
+  - [DeleteSuggesterResponseTypeDef](#deletesuggesterresponsetypedef)
+  - [DescribeAnalysisSchemesRequestRequestTypeDef](#describeanalysisschemesrequestrequesttypedef)
+  - [DescribeAnalysisSchemesResponseTypeDef](#describeanalysisschemesresponsetypedef)
+  - [DescribeAvailabilityOptionsRequestRequestTypeDef](#describeavailabilityoptionsrequestrequesttypedef)
+  - [DescribeAvailabilityOptionsResponseTypeDef](#describeavailabilityoptionsresponsetypedef)
+  - [DescribeDomainEndpointOptionsRequestRequestTypeDef](#describedomainendpointoptionsrequestrequesttypedef)
+  - [DescribeDomainEndpointOptionsResponseTypeDef](#describedomainendpointoptionsresponsetypedef)
+  - [DescribeDomainsRequestRequestTypeDef](#describedomainsrequestrequesttypedef)
+  - [DescribeDomainsResponseTypeDef](#describedomainsresponsetypedef)
+  - [DescribeExpressionsRequestRequestTypeDef](#describeexpressionsrequestrequesttypedef)
+  - [DescribeExpressionsResponseTypeDef](#describeexpressionsresponsetypedef)
+  - [DescribeIndexFieldsRequestRequestTypeDef](#describeindexfieldsrequestrequesttypedef)
+  - [DescribeIndexFieldsResponseTypeDef](#describeindexfieldsresponsetypedef)
+  - [DescribeScalingParametersRequestRequestTypeDef](#describescalingparametersrequestrequesttypedef)
+  - [DescribeScalingParametersResponseTypeDef](#describescalingparametersresponsetypedef)
+  - [DescribeServiceAccessPoliciesRequestRequestTypeDef](#describeserviceaccesspoliciesrequestrequesttypedef)
+  - [DescribeServiceAccessPoliciesResponseTypeDef](#describeserviceaccesspoliciesresponsetypedef)
+  - [DescribeSuggestersRequestRequestTypeDef](#describesuggestersrequestrequesttypedef)
+  - [DescribeSuggestersResponseTypeDef](#describesuggestersresponsetypedef)
   - [DocumentSuggesterOptionsTypeDef](#documentsuggesteroptionstypedef)
   - [DomainEndpointOptionsStatusTypeDef](#domainendpointoptionsstatustypedef)
   - [DomainEndpointOptionsTypeDef](#domainendpointoptionstypedef)
@@ -63,15 +63,15 @@ type annotations stubs module
   - [DoubleOptionsTypeDef](#doubleoptionstypedef)
   - [ExpressionStatusTypeDef](#expressionstatustypedef)
   - [ExpressionTypeDef](#expressiontypedef)
-  - [IndexDocumentsRequestTypeDef](#indexdocumentsrequesttypedef)
-  - [IndexDocumentsResponseResponseTypeDef](#indexdocumentsresponseresponsetypedef)
+  - [IndexDocumentsRequestRequestTypeDef](#indexdocumentsrequestrequesttypedef)
+  - [IndexDocumentsResponseTypeDef](#indexdocumentsresponsetypedef)
   - [IndexFieldStatusTypeDef](#indexfieldstatustypedef)
   - [IndexFieldTypeDef](#indexfieldtypedef)
   - [IntArrayOptionsTypeDef](#intarrayoptionstypedef)
   - [IntOptionsTypeDef](#intoptionstypedef)
   - [LatLonOptionsTypeDef](#latlonoptionstypedef)
   - [LimitsTypeDef](#limitstypedef)
-  - [ListDomainNamesResponseResponseTypeDef](#listdomainnamesresponseresponsetypedef)
+  - [ListDomainNamesResponseTypeDef](#listdomainnamesresponsetypedef)
   - [LiteralArrayOptionsTypeDef](#literalarrayoptionstypedef)
   - [LiteralOptionsTypeDef](#literaloptionstypedef)
   - [OptionStatusTypeDef](#optionstatustypedef)
@@ -83,14 +83,14 @@ type annotations stubs module
   - [SuggesterTypeDef](#suggestertypedef)
   - [TextArrayOptionsTypeDef](#textarrayoptionstypedef)
   - [TextOptionsTypeDef](#textoptionstypedef)
-  - [UpdateAvailabilityOptionsRequestTypeDef](#updateavailabilityoptionsrequesttypedef)
-  - [UpdateAvailabilityOptionsResponseResponseTypeDef](#updateavailabilityoptionsresponseresponsetypedef)
-  - [UpdateDomainEndpointOptionsRequestTypeDef](#updatedomainendpointoptionsrequesttypedef)
-  - [UpdateDomainEndpointOptionsResponseResponseTypeDef](#updatedomainendpointoptionsresponseresponsetypedef)
-  - [UpdateScalingParametersRequestTypeDef](#updatescalingparametersrequesttypedef)
-  - [UpdateScalingParametersResponseResponseTypeDef](#updatescalingparametersresponseresponsetypedef)
-  - [UpdateServiceAccessPoliciesRequestTypeDef](#updateserviceaccesspoliciesrequesttypedef)
-  - [UpdateServiceAccessPoliciesResponseResponseTypeDef](#updateserviceaccesspoliciesresponseresponsetypedef)
+  - [UpdateAvailabilityOptionsRequestRequestTypeDef](#updateavailabilityoptionsrequestrequesttypedef)
+  - [UpdateAvailabilityOptionsResponseTypeDef](#updateavailabilityoptionsresponsetypedef)
+  - [UpdateDomainEndpointOptionsRequestRequestTypeDef](#updatedomainendpointoptionsrequestrequesttypedef)
+  - [UpdateDomainEndpointOptionsResponseTypeDef](#updatedomainendpointoptionsresponsetypedef)
+  - [UpdateScalingParametersRequestRequestTypeDef](#updatescalingparametersrequestrequesttypedef)
+  - [UpdateScalingParametersResponseTypeDef](#updatescalingparametersresponsetypedef)
+  - [UpdateServiceAccessPoliciesRequestRequestTypeDef](#updateserviceaccesspoliciesrequestrequesttypedef)
+  - [UpdateServiceAccessPoliciesResponseTypeDef](#updateserviceaccesspoliciesresponsetypedef)
 
 ## AccessPoliciesStatusTypeDef
 
@@ -157,20 +157,20 @@ Required fields:
 - `Options`: `bool`
 - `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
 
-## BuildSuggestersRequestTypeDef
+## BuildSuggestersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import BuildSuggestersRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import BuildSuggestersRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DomainName`: `str`
 
-## BuildSuggestersResponseResponseTypeDef
+## BuildSuggestersResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import BuildSuggestersResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import BuildSuggestersResponseTypeDef
 ```
 
 Required fields:
@@ -179,20 +179,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDomainRequestTypeDef
+## CreateDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import CreateDomainRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import CreateDomainRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DomainName`: `str`
 
-## CreateDomainResponseResponseTypeDef
+## CreateDomainResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import CreateDomainResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import CreateDomainResponseTypeDef
 ```
 
 Required fields:
@@ -230,10 +230,10 @@ Optional fields:
 - `ReturnEnabled`: `bool`
 - `SortEnabled`: `bool`
 
-## DefineAnalysisSchemeRequestTypeDef
+## DefineAnalysisSchemeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DefineAnalysisSchemeRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DefineAnalysisSchemeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -242,10 +242,10 @@ Required fields:
 - `AnalysisScheme`:
   [AnalysisSchemeTypeDef](./type_defs.md#analysisschemetypedef)
 
-## DefineAnalysisSchemeResponseResponseTypeDef
+## DefineAnalysisSchemeResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DefineAnalysisSchemeResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DefineAnalysisSchemeResponseTypeDef
 ```
 
 Required fields:
@@ -255,10 +255,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DefineExpressionRequestTypeDef
+## DefineExpressionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DefineExpressionRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DefineExpressionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -266,10 +266,10 @@ Required fields:
 - `DomainName`: `str`
 - `Expression`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 
-## DefineExpressionResponseResponseTypeDef
+## DefineExpressionResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DefineExpressionResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DefineExpressionResponseTypeDef
 ```
 
 Required fields:
@@ -279,10 +279,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DefineIndexFieldRequestTypeDef
+## DefineIndexFieldRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DefineIndexFieldRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DefineIndexFieldRequestRequestTypeDef
 ```
 
 Required fields:
@@ -290,10 +290,10 @@ Required fields:
 - `DomainName`: `str`
 - `IndexField`: [IndexFieldTypeDef](./type_defs.md#indexfieldtypedef)
 
-## DefineIndexFieldResponseResponseTypeDef
+## DefineIndexFieldResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DefineIndexFieldResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DefineIndexFieldResponseTypeDef
 ```
 
 Required fields:
@@ -303,10 +303,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DefineSuggesterRequestTypeDef
+## DefineSuggesterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DefineSuggesterRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DefineSuggesterRequestRequestTypeDef
 ```
 
 Required fields:
@@ -314,10 +314,10 @@ Required fields:
 - `DomainName`: `str`
 - `Suggester`: [SuggesterTypeDef](./type_defs.md#suggestertypedef)
 
-## DefineSuggesterResponseResponseTypeDef
+## DefineSuggesterResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DefineSuggesterResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DefineSuggesterResponseTypeDef
 ```
 
 Required fields:
@@ -326,10 +326,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAnalysisSchemeRequestTypeDef
+## DeleteAnalysisSchemeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DeleteAnalysisSchemeRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DeleteAnalysisSchemeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -337,10 +337,10 @@ Required fields:
 - `DomainName`: `str`
 - `AnalysisSchemeName`: `str`
 
-## DeleteAnalysisSchemeResponseResponseTypeDef
+## DeleteAnalysisSchemeResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DeleteAnalysisSchemeResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DeleteAnalysisSchemeResponseTypeDef
 ```
 
 Required fields:
@@ -350,20 +350,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDomainRequestTypeDef
+## DeleteDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DeleteDomainRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DeleteDomainRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DomainName`: `str`
 
-## DeleteDomainResponseResponseTypeDef
+## DeleteDomainResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DeleteDomainResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DeleteDomainResponseTypeDef
 ```
 
 Required fields:
@@ -372,10 +372,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteExpressionRequestTypeDef
+## DeleteExpressionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DeleteExpressionRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DeleteExpressionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -383,10 +383,10 @@ Required fields:
 - `DomainName`: `str`
 - `ExpressionName`: `str`
 
-## DeleteExpressionResponseResponseTypeDef
+## DeleteExpressionResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DeleteExpressionResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DeleteExpressionResponseTypeDef
 ```
 
 Required fields:
@@ -396,10 +396,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteIndexFieldRequestTypeDef
+## DeleteIndexFieldRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DeleteIndexFieldRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DeleteIndexFieldRequestRequestTypeDef
 ```
 
 Required fields:
@@ -407,10 +407,10 @@ Required fields:
 - `DomainName`: `str`
 - `IndexFieldName`: `str`
 
-## DeleteIndexFieldResponseResponseTypeDef
+## DeleteIndexFieldResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DeleteIndexFieldResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DeleteIndexFieldResponseTypeDef
 ```
 
 Required fields:
@@ -420,10 +420,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteSuggesterRequestTypeDef
+## DeleteSuggesterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DeleteSuggesterRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DeleteSuggesterRequestRequestTypeDef
 ```
 
 Required fields:
@@ -431,10 +431,10 @@ Required fields:
 - `DomainName`: `str`
 - `SuggesterName`: `str`
 
-## DeleteSuggesterResponseResponseTypeDef
+## DeleteSuggesterResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DeleteSuggesterResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DeleteSuggesterResponseTypeDef
 ```
 
 Required fields:
@@ -443,10 +443,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAnalysisSchemesRequestTypeDef
+## DescribeAnalysisSchemesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeAnalysisSchemesRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeAnalysisSchemesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -458,10 +458,10 @@ Optional fields:
 - `AnalysisSchemeNames`: `List`\[`str`\]
 - `Deployed`: `bool`
 
-## DescribeAnalysisSchemesResponseResponseTypeDef
+## DescribeAnalysisSchemesResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeAnalysisSchemesResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeAnalysisSchemesResponseTypeDef
 ```
 
 Required fields:
@@ -471,10 +471,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAvailabilityOptionsRequestTypeDef
+## DescribeAvailabilityOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeAvailabilityOptionsRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeAvailabilityOptionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -485,10 +485,10 @@ Optional fields:
 
 - `Deployed`: `bool`
 
-## DescribeAvailabilityOptionsResponseResponseTypeDef
+## DescribeAvailabilityOptionsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeAvailabilityOptionsResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeAvailabilityOptionsResponseTypeDef
 ```
 
 Required fields:
@@ -498,10 +498,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDomainEndpointOptionsRequestTypeDef
+## DescribeDomainEndpointOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeDomainEndpointOptionsRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeDomainEndpointOptionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -512,10 +512,10 @@ Optional fields:
 
 - `Deployed`: `bool`
 
-## DescribeDomainEndpointOptionsResponseResponseTypeDef
+## DescribeDomainEndpointOptionsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeDomainEndpointOptionsResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeDomainEndpointOptionsResponseTypeDef
 ```
 
 Required fields:
@@ -525,20 +525,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDomainsRequestTypeDef
+## DescribeDomainsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeDomainsRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeDomainsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `DomainNames`: `List`\[`str`\]
 
-## DescribeDomainsResponseResponseTypeDef
+## DescribeDomainsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeDomainsResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeDomainsResponseTypeDef
 ```
 
 Required fields:
@@ -548,10 +548,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeExpressionsRequestTypeDef
+## DescribeExpressionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeExpressionsRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeExpressionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -563,10 +563,10 @@ Optional fields:
 - `ExpressionNames`: `List`\[`str`\]
 - `Deployed`: `bool`
 
-## DescribeExpressionsResponseResponseTypeDef
+## DescribeExpressionsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeExpressionsResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeExpressionsResponseTypeDef
 ```
 
 Required fields:
@@ -576,10 +576,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIndexFieldsRequestTypeDef
+## DescribeIndexFieldsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeIndexFieldsRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeIndexFieldsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -591,10 +591,10 @@ Optional fields:
 - `FieldNames`: `List`\[`str`\]
 - `Deployed`: `bool`
 
-## DescribeIndexFieldsResponseResponseTypeDef
+## DescribeIndexFieldsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeIndexFieldsResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeIndexFieldsResponseTypeDef
 ```
 
 Required fields:
@@ -604,20 +604,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeScalingParametersRequestTypeDef
+## DescribeScalingParametersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeScalingParametersRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeScalingParametersRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DomainName`: `str`
 
-## DescribeScalingParametersResponseResponseTypeDef
+## DescribeScalingParametersResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeScalingParametersResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeScalingParametersResponseTypeDef
 ```
 
 Required fields:
@@ -627,10 +627,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeServiceAccessPoliciesRequestTypeDef
+## DescribeServiceAccessPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeServiceAccessPoliciesRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeServiceAccessPoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -641,10 +641,10 @@ Optional fields:
 
 - `Deployed`: `bool`
 
-## DescribeServiceAccessPoliciesResponseResponseTypeDef
+## DescribeServiceAccessPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeServiceAccessPoliciesResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeServiceAccessPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -654,10 +654,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSuggestersRequestTypeDef
+## DescribeSuggestersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeSuggestersRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeSuggestersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -669,10 +669,10 @@ Optional fields:
 - `SuggesterNames`: `List`\[`str`\]
 - `Deployed`: `bool`
 
-## DescribeSuggestersResponseResponseTypeDef
+## DescribeSuggestersResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import DescribeSuggestersResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import DescribeSuggestersResponseTypeDef
 ```
 
 Required fields:
@@ -799,20 +799,20 @@ Required fields:
 - `ExpressionName`: `str`
 - `ExpressionValue`: `str`
 
-## IndexDocumentsRequestTypeDef
+## IndexDocumentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import IndexDocumentsRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import IndexDocumentsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DomainName`: `str`
 
-## IndexDocumentsResponseResponseTypeDef
+## IndexDocumentsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import IndexDocumentsResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import IndexDocumentsResponseTypeDef
 ```
 
 Required fields:
@@ -918,10 +918,10 @@ Required fields:
 - `MaximumReplicationCount`: `int`
 - `MaximumPartitionCount`: `int`
 
-## ListDomainNamesResponseResponseTypeDef
+## ListDomainNamesResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import ListDomainNamesResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import ListDomainNamesResponseTypeDef
 ```
 
 Required fields:
@@ -1077,10 +1077,10 @@ Optional fields:
 - `HighlightEnabled`: `bool`
 - `AnalysisScheme`: `str`
 
-## UpdateAvailabilityOptionsRequestTypeDef
+## UpdateAvailabilityOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import UpdateAvailabilityOptionsRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import UpdateAvailabilityOptionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1088,10 +1088,10 @@ Required fields:
 - `DomainName`: `str`
 - `MultiAZ`: `bool`
 
-## UpdateAvailabilityOptionsResponseResponseTypeDef
+## UpdateAvailabilityOptionsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import UpdateAvailabilityOptionsResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import UpdateAvailabilityOptionsResponseTypeDef
 ```
 
 Required fields:
@@ -1101,10 +1101,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDomainEndpointOptionsRequestTypeDef
+## UpdateDomainEndpointOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import UpdateDomainEndpointOptionsRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import UpdateDomainEndpointOptionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1113,10 +1113,10 @@ Required fields:
 - `DomainEndpointOptions`:
   [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
 
-## UpdateDomainEndpointOptionsResponseResponseTypeDef
+## UpdateDomainEndpointOptionsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import UpdateDomainEndpointOptionsResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import UpdateDomainEndpointOptionsResponseTypeDef
 ```
 
 Required fields:
@@ -1126,10 +1126,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateScalingParametersRequestTypeDef
+## UpdateScalingParametersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import UpdateScalingParametersRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import UpdateScalingParametersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1138,10 +1138,10 @@ Required fields:
 - `ScalingParameters`:
   [ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef)
 
-## UpdateScalingParametersResponseResponseTypeDef
+## UpdateScalingParametersResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import UpdateScalingParametersResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import UpdateScalingParametersResponseTypeDef
 ```
 
 Required fields:
@@ -1151,10 +1151,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateServiceAccessPoliciesRequestTypeDef
+## UpdateServiceAccessPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import UpdateServiceAccessPoliciesRequestTypeDef
+from mypy_boto3_cloudsearch.type_defs import UpdateServiceAccessPoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1162,10 +1162,10 @@ Required fields:
 - `DomainName`: `str`
 - `AccessPolicies`: `str`
 
-## UpdateServiceAccessPoliciesResponseResponseTypeDef
+## UpdateServiceAccessPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_cloudsearch.type_defs import UpdateServiceAccessPoliciesResponseResponseTypeDef
+from mypy_boto3_cloudsearch.type_defs import UpdateServiceAccessPoliciesResponseTypeDef
 ```
 
 Required fields:

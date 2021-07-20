@@ -11,6 +11,7 @@ type annotations stubs module
   - [GreengrassV2Client](#greengrassv2client)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_associate_client_device_with_core_device](#batch_associate_client_device_with_core_device)
     - [batch_disassociate_client_device_from_core_device](#batch_disassociate_client_device_from_core_device)
     - [can_paginate](#can_paginate)
@@ -79,6 +80,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+GreengrassV2Client exceptions.
+
+Type annotations for `boto3.client("greengrassv2").exceptions` method.
+
+Boto3 documentation:
+[GreengrassV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_associate_client_device_with_core_device
 
 Associate a list of client devices with a core device.
@@ -91,7 +103,7 @@ Boto3 documentation:
 [GreengrassV2.Client.batch_associate_client_device_with_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.batch_associate_client_device_with_core_device)
 
 Arguments mapping described in
-[BatchAssociateClientDeviceWithCoreDeviceRequestTypeDef](./type_defs.md#batchassociateclientdevicewithcoredevicerequesttypedef).
+[BatchAssociateClientDeviceWithCoreDeviceRequestRequestTypeDef](./type_defs.md#batchassociateclientdevicewithcoredevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -100,7 +112,7 @@ Keyword-only arguments:
   `List`\[[AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)\]
 
 Returns
-[BatchAssociateClientDeviceWithCoreDeviceResponseResponseTypeDef](./type_defs.md#batchassociateclientdevicewithcoredeviceresponseresponsetypedef).
+[BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef](./type_defs.md#batchassociateclientdevicewithcoredeviceresponsetypedef).
 
 ### batch_disassociate_client_device_from_core_device
 
@@ -114,7 +126,7 @@ Boto3 documentation:
 [GreengrassV2.Client.batch_disassociate_client_device_from_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.batch_disassociate_client_device_from_core_device)
 
 Arguments mapping described in
-[BatchDisassociateClientDeviceFromCoreDeviceRequestTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredevicerequesttypedef).
+[BatchDisassociateClientDeviceFromCoreDeviceRequestRequestTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -123,7 +135,7 @@ Keyword-only arguments:
   `List`\[[DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef)\]
 
 Returns
-[BatchDisassociateClientDeviceFromCoreDeviceResponseResponseTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredeviceresponseresponsetypedef).
+[BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredeviceresponsetypedef).
 
 ### can_paginate
 
@@ -150,14 +162,14 @@ Boto3 documentation:
 [GreengrassV2.Client.cancel_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.cancel_deployment)
 
 Arguments mapping described in
-[CancelDeploymentRequestTypeDef](./type_defs.md#canceldeploymentrequesttypedef).
+[CancelDeploymentRequestRequestTypeDef](./type_defs.md#canceldeploymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
 
 Returns
-[CancelDeploymentResponseResponseTypeDef](./type_defs.md#canceldeploymentresponseresponsetypedef).
+[CancelDeploymentResponseTypeDef](./type_defs.md#canceldeploymentresponsetypedef).
 
 ### create_component_version
 
@@ -170,7 +182,7 @@ Boto3 documentation:
 [GreengrassV2.Client.create_component_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.create_component_version)
 
 Arguments mapping described in
-[CreateComponentVersionRequestTypeDef](./type_defs.md#createcomponentversionrequesttypedef).
+[CreateComponentVersionRequestRequestTypeDef](./type_defs.md#createcomponentversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -180,7 +192,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateComponentVersionResponseResponseTypeDef](./type_defs.md#createcomponentversionresponseresponsetypedef).
+[CreateComponentVersionResponseTypeDef](./type_defs.md#createcomponentversionresponsetypedef).
 
 ### create_deployment
 
@@ -193,7 +205,7 @@ Boto3 documentation:
 [GreengrassV2.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.create_deployment)
 
 Arguments mapping described in
-[CreateDeploymentRequestTypeDef](./type_defs.md#createdeploymentrequesttypedef).
+[CreateDeploymentRequestRequestTypeDef](./type_defs.md#createdeploymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,7 +220,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDeploymentResponseResponseTypeDef](./type_defs.md#createdeploymentresponseresponsetypedef).
+[CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef).
 
 ### delete_component
 
@@ -220,7 +232,7 @@ Boto3 documentation:
 [GreengrassV2.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.delete_component)
 
 Arguments mapping described in
-[DeleteComponentRequestTypeDef](./type_defs.md#deletecomponentrequesttypedef).
+[DeleteComponentRequestRequestTypeDef](./type_defs.md#deletecomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -236,7 +248,7 @@ Boto3 documentation:
 [GreengrassV2.Client.delete_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.delete_core_device)
 
 Arguments mapping described in
-[DeleteCoreDeviceRequestTypeDef](./type_defs.md#deletecoredevicerequesttypedef).
+[DeleteCoreDeviceRequestRequestTypeDef](./type_defs.md#deletecoredevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,14 +264,14 @@ Boto3 documentation:
 [GreengrassV2.Client.describe_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.describe_component)
 
 Arguments mapping described in
-[DescribeComponentRequestTypeDef](./type_defs.md#describecomponentrequesttypedef).
+[DescribeComponentRequestRequestTypeDef](./type_defs.md#describecomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[DescribeComponentResponseResponseTypeDef](./type_defs.md#describecomponentresponseresponsetypedef).
+[DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef).
 
 ### generate_presigned_url
 
@@ -290,7 +302,7 @@ Boto3 documentation:
 [GreengrassV2.Client.get_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_component)
 
 Arguments mapping described in
-[GetComponentRequestTypeDef](./type_defs.md#getcomponentrequesttypedef).
+[GetComponentRequestRequestTypeDef](./type_defs.md#getcomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -299,7 +311,7 @@ Keyword-only arguments:
   [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
 
 Returns
-[GetComponentResponseResponseTypeDef](./type_defs.md#getcomponentresponseresponsetypedef).
+[GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef).
 
 ### get_component_version_artifact
 
@@ -312,7 +324,7 @@ Boto3 documentation:
 [GreengrassV2.Client.get_component_version_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_component_version_artifact)
 
 Arguments mapping described in
-[GetComponentVersionArtifactRequestTypeDef](./type_defs.md#getcomponentversionartifactrequesttypedef).
+[GetComponentVersionArtifactRequestRequestTypeDef](./type_defs.md#getcomponentversionartifactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -320,7 +332,7 @@ Keyword-only arguments:
 - `artifactName`: `str` *(required)*
 
 Returns
-[GetComponentVersionArtifactResponseResponseTypeDef](./type_defs.md#getcomponentversionartifactresponseresponsetypedef).
+[GetComponentVersionArtifactResponseTypeDef](./type_defs.md#getcomponentversionartifactresponsetypedef).
 
 ### get_core_device
 
@@ -332,14 +344,14 @@ Boto3 documentation:
 [GreengrassV2.Client.get_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_core_device)
 
 Arguments mapping described in
-[GetCoreDeviceRequestTypeDef](./type_defs.md#getcoredevicerequesttypedef).
+[GetCoreDeviceRequestRequestTypeDef](./type_defs.md#getcoredevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
 
 Returns
-[GetCoreDeviceResponseResponseTypeDef](./type_defs.md#getcoredeviceresponseresponsetypedef).
+[GetCoreDeviceResponseTypeDef](./type_defs.md#getcoredeviceresponsetypedef).
 
 ### get_deployment
 
@@ -351,14 +363,14 @@ Boto3 documentation:
 [GreengrassV2.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_deployment)
 
 Arguments mapping described in
-[GetDeploymentRequestTypeDef](./type_defs.md#getdeploymentrequesttypedef).
+[GetDeploymentRequestRequestTypeDef](./type_defs.md#getdeploymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `deploymentId`: `str` *(required)*
 
 Returns
-[GetDeploymentResponseResponseTypeDef](./type_defs.md#getdeploymentresponseresponsetypedef).
+[GetDeploymentResponseTypeDef](./type_defs.md#getdeploymentresponsetypedef).
 
 ### list_client_devices_associated_with_core_device
 
@@ -373,7 +385,7 @@ Boto3 documentation:
 [GreengrassV2.Client.list_client_devices_associated_with_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_client_devices_associated_with_core_device)
 
 Arguments mapping described in
-[ListClientDevicesAssociatedWithCoreDeviceRequestTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredevicerequesttypedef).
+[ListClientDevicesAssociatedWithCoreDeviceRequestRequestTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -382,7 +394,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListClientDevicesAssociatedWithCoreDeviceResponseResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponseresponsetypedef).
+[ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponsetypedef).
 
 ### list_component_versions
 
@@ -395,7 +407,7 @@ Boto3 documentation:
 [GreengrassV2.Client.list_component_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_component_versions)
 
 Arguments mapping described in
-[ListComponentVersionsRequestTypeDef](./type_defs.md#listcomponentversionsrequesttypedef).
+[ListComponentVersionsRequestRequestTypeDef](./type_defs.md#listcomponentversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -404,7 +416,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListComponentVersionsResponseResponseTypeDef](./type_defs.md#listcomponentversionsresponseresponsetypedef).
+[ListComponentVersionsResponseTypeDef](./type_defs.md#listcomponentversionsresponsetypedef).
 
 ### list_components
 
@@ -416,7 +428,7 @@ Boto3 documentation:
 [GreengrassV2.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_components)
 
 Arguments mapping described in
-[ListComponentsRequestTypeDef](./type_defs.md#listcomponentsrequesttypedef).
+[ListComponentsRequestRequestTypeDef](./type_defs.md#listcomponentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -426,7 +438,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListComponentsResponseResponseTypeDef](./type_defs.md#listcomponentsresponseresponsetypedef).
+[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
 
 ### list_core_devices
 
@@ -438,7 +450,7 @@ Boto3 documentation:
 [GreengrassV2.Client.list_core_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_core_devices)
 
 Arguments mapping described in
-[ListCoreDevicesRequestTypeDef](./type_defs.md#listcoredevicesrequesttypedef).
+[ListCoreDevicesRequestRequestTypeDef](./type_defs.md#listcoredevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -448,7 +460,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListCoreDevicesResponseResponseTypeDef](./type_defs.md#listcoredevicesresponseresponsetypedef).
+[ListCoreDevicesResponseTypeDef](./type_defs.md#listcoredevicesresponsetypedef).
 
 ### list_deployments
 
@@ -460,7 +472,7 @@ Boto3 documentation:
 [GreengrassV2.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_deployments)
 
 Arguments mapping described in
-[ListDeploymentsRequestTypeDef](./type_defs.md#listdeploymentsrequesttypedef).
+[ListDeploymentsRequestRequestTypeDef](./type_defs.md#listdeploymentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,7 +483,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListDeploymentsResponseResponseTypeDef](./type_defs.md#listdeploymentsresponseresponsetypedef).
+[ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef).
 
 ### list_effective_deployments
 
@@ -485,7 +497,7 @@ Boto3 documentation:
 [GreengrassV2.Client.list_effective_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_effective_deployments)
 
 Arguments mapping described in
-[ListEffectiveDeploymentsRequestTypeDef](./type_defs.md#listeffectivedeploymentsrequesttypedef).
+[ListEffectiveDeploymentsRequestRequestTypeDef](./type_defs.md#listeffectivedeploymentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -494,7 +506,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListEffectiveDeploymentsResponseResponseTypeDef](./type_defs.md#listeffectivedeploymentsresponseresponsetypedef).
+[ListEffectiveDeploymentsResponseTypeDef](./type_defs.md#listeffectivedeploymentsresponsetypedef).
 
 ### list_installed_components
 
@@ -508,7 +520,7 @@ Boto3 documentation:
 [GreengrassV2.Client.list_installed_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_installed_components)
 
 Arguments mapping described in
-[ListInstalledComponentsRequestTypeDef](./type_defs.md#listinstalledcomponentsrequesttypedef).
+[ListInstalledComponentsRequestRequestTypeDef](./type_defs.md#listinstalledcomponentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -517,7 +529,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListInstalledComponentsResponseResponseTypeDef](./type_defs.md#listinstalledcomponentsresponseresponsetypedef).
+[ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -530,14 +542,14 @@ Boto3 documentation:
 [GreengrassV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### resolve_component_candidates
 
@@ -551,7 +563,7 @@ Boto3 documentation:
 [GreengrassV2.Client.resolve_component_candidates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.resolve_component_candidates)
 
 Arguments mapping described in
-[ResolveComponentCandidatesRequestTypeDef](./type_defs.md#resolvecomponentcandidatesrequesttypedef).
+[ResolveComponentCandidatesRequestRequestTypeDef](./type_defs.md#resolvecomponentcandidatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -563,7 +575,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ResolveComponentCandidatesResponseResponseTypeDef](./type_defs.md#resolvecomponentcandidatesresponseresponsetypedef).
+[ResolveComponentCandidatesResponseTypeDef](./type_defs.md#resolvecomponentcandidatesresponsetypedef).
 
 ### tag_resource
 
@@ -575,7 +587,7 @@ Boto3 documentation:
 [GreengrassV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -594,7 +606,7 @@ Boto3 documentation:
 [GreengrassV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

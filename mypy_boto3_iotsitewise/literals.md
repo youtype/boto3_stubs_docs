@@ -49,6 +49,7 @@ type annotations stubs module
   - [PropertyNotificationStateType](#propertynotificationstatetype)
   - [QualityType](#qualitytype)
   - [ResourceTypeType](#resourcetypetype)
+  - [StorageTypeType](#storagetypetype)
   - [TimeOrderingType](#timeorderingtype)
   - [TraversalDirectionType](#traversaldirectiontype)
   - [TraversalTypeType](#traversaltypetype)
@@ -511,6 +512,17 @@ Values:
 
 - `PORTAL`
 - `PROJECT`
+
+## StorageTypeType
+
+```python
+from mypy_boto3_iotsitewise.literals import StorageTypeType
+```
+
+Values:
+
+- `MULTI_LAYER_STORAGE`
+- `SITEWISE_DEFAULT_STORAGE`
 
 ## TimeOrderingType
 

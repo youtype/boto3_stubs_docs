@@ -31,6 +31,7 @@ from mypy_boto3_sso_oidc.client import SSOOIDCClient
 
 - [can_paginate](./client.md#can_paginate)
 - [create_token](./client.md#create_token)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [register_client](./client.md#register_client)
 - [start_device_authorization](./client.md#start_device_authorization)
@@ -61,13 +62,13 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sso_oidc.type_defs import CreateTokenRequestTypeDef, ...
+from mypy_boto3_sso_oidc.type_defs import CreateTokenRequestRequestTypeDef, ...
 ```
 
-- [CreateTokenRequestTypeDef](./type_defs.md#createtokenrequesttypedef)
-- [CreateTokenResponseResponseTypeDef](./type_defs.md#createtokenresponseresponsetypedef)
-- [RegisterClientRequestTypeDef](./type_defs.md#registerclientrequesttypedef)
-- [RegisterClientResponseResponseTypeDef](./type_defs.md#registerclientresponseresponsetypedef)
+- [CreateTokenRequestRequestTypeDef](./type_defs.md#createtokenrequestrequesttypedef)
+- [CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef)
+- [RegisterClientRequestRequestTypeDef](./type_defs.md#registerclientrequestrequesttypedef)
+- [RegisterClientResponseTypeDef](./type_defs.md#registerclientresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [StartDeviceAuthorizationRequestTypeDef](./type_defs.md#startdeviceauthorizationrequesttypedef)
-- [StartDeviceAuthorizationResponseResponseTypeDef](./type_defs.md#startdeviceauthorizationresponseresponsetypedef)
+- [StartDeviceAuthorizationRequestRequestTypeDef](./type_defs.md#startdeviceauthorizationrequestrequesttypedef)
+- [StartDeviceAuthorizationResponseTypeDef](./type_defs.md#startdeviceauthorizationresponsetypedef)

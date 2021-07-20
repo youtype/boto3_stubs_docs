@@ -104,8 +104,7 @@ Keyword-only arguments:
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
-Returns
-[BatchGetItemOutputResponseTypeDef](./type_defs.md#batchgetitemoutputresponsetypedef).
+Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
 
 ### DynamoDBServiceResource.batch_write_item method
 
@@ -131,7 +130,7 @@ Keyword-only arguments:
   [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 
 Returns
-[BatchWriteItemOutputResponseTypeDef](./type_defs.md#batchwriteitemoutputresponsetypedef).
+[BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef).
 
 ### DynamoDBServiceResource.create_table method
 
@@ -251,8 +250,7 @@ Type annotations for `boto3.resource("dynamodb").delete` method.
 Boto3 documentation:
 [DynamoDB.Table.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.delete)
 
-Returns
-[DeleteTableOutputResponseTypeDef](./type_defs.md#deletetableoutputresponsetypedef).
+Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
 
 #### Table.delete_item method
 
@@ -288,8 +286,7 @@ Keyword-only arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns
-[DeleteItemOutputResponseTypeDef](./type_defs.md#deleteitemoutputresponsetypedef).
+Returns [DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef).
 
 #### Table.get_available_subresources method
 
@@ -329,8 +326,7 @@ Keyword-only arguments:
 - `ProjectionExpression`: `str`
 - `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
 
-Returns
-[GetItemOutputResponseTypeDef](./type_defs.md#getitemoutputresponsetypedef).
+Returns [GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef).
 
 #### Table.load method
 
@@ -376,8 +372,7 @@ Keyword-only arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns
-[PutItemOutputResponseTypeDef](./type_defs.md#putitemoutputresponsetypedef).
+Returns [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef).
 
 #### Table.query method
 
@@ -420,8 +415,7 @@ Keyword-only arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns
-[QueryOutputResponseTypeDef](./type_defs.md#queryoutputresponsetypedef).
+Returns [QueryOutputTypeDef](./type_defs.md#queryoutputtypedef).
 
 #### Table.reload method
 
@@ -473,7 +467,7 @@ Keyword-only arguments:
   `Dict`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 
-Returns [ScanOutputResponseTypeDef](./type_defs.md#scanoutputresponsetypedef).
+Returns [ScanOutputTypeDef](./type_defs.md#scanoutputtypedef).
 
 #### Table.update method
 
@@ -544,8 +538,7 @@ Keyword-only arguments:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
   `Dict`\[`str`, `Any`\], `None`\]\]
 
-Returns
-[UpdateItemOutputResponseTypeDef](./type_defs.md#updateitemoutputresponsetypedef).
+Returns [UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef).
 
 #### Table.wait_until_exists method
 

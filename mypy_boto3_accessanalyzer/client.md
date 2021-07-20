@@ -11,6 +11,7 @@ type annotations stubs module
   - [AccessAnalyzerClient](#accessanalyzerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [apply_archive_rule](#apply_archive_rule)
     - [can_paginate](#can_paginate)
     - [cancel_policy_generation](#cancel_policy_generation)
@@ -84,6 +85,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AccessAnalyzerClient exceptions.
+
+Type annotations for `boto3.client("accessanalyzer").exceptions` method.
+
+Boto3 documentation:
+[AccessAnalyzer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### apply_archive_rule
 
 Retroactively applies the archive rule to existing findings that meet the
@@ -96,7 +108,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.apply_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.apply_archive_rule)
 
 Arguments mapping described in
-[ApplyArchiveRuleRequestTypeDef](./type_defs.md#applyarchiverulerequesttypedef).
+[ApplyArchiveRuleRequestRequestTypeDef](./type_defs.md#applyarchiverulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -130,7 +142,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.cancel_policy_generation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.cancel_policy_generation)
 
 Arguments mapping described in
-[CancelPolicyGenerationRequestTypeDef](./type_defs.md#cancelpolicygenerationrequesttypedef).
+[CancelPolicyGenerationRequestRequestTypeDef](./type_defs.md#cancelpolicygenerationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -150,7 +162,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.create_access_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_access_preview)
 
 Arguments mapping described in
-[CreateAccessPreviewRequestTypeDef](./type_defs.md#createaccesspreviewrequesttypedef).
+[CreateAccessPreviewRequestRequestTypeDef](./type_defs.md#createaccesspreviewrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -160,7 +172,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[CreateAccessPreviewResponseResponseTypeDef](./type_defs.md#createaccesspreviewresponseresponsetypedef).
+[CreateAccessPreviewResponseTypeDef](./type_defs.md#createaccesspreviewresponsetypedef).
 
 ### create_analyzer
 
@@ -172,7 +184,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.create_analyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_analyzer)
 
 Arguments mapping described in
-[CreateAnalyzerRequestTypeDef](./type_defs.md#createanalyzerrequesttypedef).
+[CreateAnalyzerRequestRequestTypeDef](./type_defs.md#createanalyzerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -184,7 +196,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAnalyzerResponseResponseTypeDef](./type_defs.md#createanalyzerresponseresponsetypedef).
+[CreateAnalyzerResponseTypeDef](./type_defs.md#createanalyzerresponsetypedef).
 
 ### create_archive_rule
 
@@ -197,7 +209,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.create_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.create_archive_rule)
 
 Arguments mapping described in
-[CreateArchiveRuleRequestTypeDef](./type_defs.md#createarchiverulerequesttypedef).
+[CreateArchiveRuleRequestRequestTypeDef](./type_defs.md#createarchiverulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -217,7 +229,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.delete_analyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_analyzer)
 
 Arguments mapping described in
-[DeleteAnalyzerRequestTypeDef](./type_defs.md#deleteanalyzerrequesttypedef).
+[DeleteAnalyzerRequestRequestTypeDef](./type_defs.md#deleteanalyzerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -235,7 +247,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.delete_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.delete_archive_rule)
 
 Arguments mapping described in
-[DeleteArchiveRuleRequestTypeDef](./type_defs.md#deletearchiverulerequesttypedef).
+[DeleteArchiveRuleRequestRequestTypeDef](./type_defs.md#deletearchiverulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,7 +285,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.get_access_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_access_preview)
 
 Arguments mapping described in
-[GetAccessPreviewRequestTypeDef](./type_defs.md#getaccesspreviewrequesttypedef).
+[GetAccessPreviewRequestRequestTypeDef](./type_defs.md#getaccesspreviewrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -281,7 +293,7 @@ Keyword-only arguments:
 - `analyzerArn`: `str` *(required)*
 
 Returns
-[GetAccessPreviewResponseResponseTypeDef](./type_defs.md#getaccesspreviewresponseresponsetypedef).
+[GetAccessPreviewResponseTypeDef](./type_defs.md#getaccesspreviewresponsetypedef).
 
 ### get_analyzed_resource
 
@@ -294,7 +306,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.get_analyzed_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzed_resource)
 
 Arguments mapping described in
-[GetAnalyzedResourceRequestTypeDef](./type_defs.md#getanalyzedresourcerequesttypedef).
+[GetAnalyzedResourceRequestRequestTypeDef](./type_defs.md#getanalyzedresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -302,7 +314,7 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns
-[GetAnalyzedResourceResponseResponseTypeDef](./type_defs.md#getanalyzedresourceresponseresponsetypedef).
+[GetAnalyzedResourceResponseTypeDef](./type_defs.md#getanalyzedresourceresponsetypedef).
 
 ### get_analyzer
 
@@ -314,14 +326,14 @@ Boto3 documentation:
 [AccessAnalyzer.Client.get_analyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_analyzer)
 
 Arguments mapping described in
-[GetAnalyzerRequestTypeDef](./type_defs.md#getanalyzerrequesttypedef).
+[GetAnalyzerRequestRequestTypeDef](./type_defs.md#getanalyzerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `analyzerName`: `str` *(required)*
 
 Returns
-[GetAnalyzerResponseResponseTypeDef](./type_defs.md#getanalyzerresponseresponsetypedef).
+[GetAnalyzerResponseTypeDef](./type_defs.md#getanalyzerresponsetypedef).
 
 ### get_archive_rule
 
@@ -333,7 +345,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.get_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_archive_rule)
 
 Arguments mapping described in
-[GetArchiveRuleRequestTypeDef](./type_defs.md#getarchiverulerequesttypedef).
+[GetArchiveRuleRequestRequestTypeDef](./type_defs.md#getarchiverulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -341,7 +353,7 @@ Keyword-only arguments:
 - `ruleName`: `str` *(required)*
 
 Returns
-[GetArchiveRuleResponseResponseTypeDef](./type_defs.md#getarchiveruleresponseresponsetypedef).
+[GetArchiveRuleResponseTypeDef](./type_defs.md#getarchiveruleresponsetypedef).
 
 ### get_finding
 
@@ -353,15 +365,14 @@ Boto3 documentation:
 [AccessAnalyzer.Client.get_finding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_finding)
 
 Arguments mapping described in
-[GetFindingRequestTypeDef](./type_defs.md#getfindingrequesttypedef).
+[GetFindingRequestRequestTypeDef](./type_defs.md#getfindingrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `analyzerArn`: `str` *(required)*
 - `id`: `str` *(required)*
 
-Returns
-[GetFindingResponseResponseTypeDef](./type_defs.md#getfindingresponseresponsetypedef).
+Returns [GetFindingResponseTypeDef](./type_defs.md#getfindingresponsetypedef).
 
 ### get_generated_policy
 
@@ -374,7 +385,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.get_generated_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.get_generated_policy)
 
 Arguments mapping described in
-[GetGeneratedPolicyRequestTypeDef](./type_defs.md#getgeneratedpolicyrequesttypedef).
+[GetGeneratedPolicyRequestRequestTypeDef](./type_defs.md#getgeneratedpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -383,7 +394,7 @@ Keyword-only arguments:
 - `includeServiceLevelTemplate`: `bool`
 
 Returns
-[GetGeneratedPolicyResponseResponseTypeDef](./type_defs.md#getgeneratedpolicyresponseresponsetypedef).
+[GetGeneratedPolicyResponseTypeDef](./type_defs.md#getgeneratedpolicyresponsetypedef).
 
 ### list_access_preview_findings
 
@@ -397,7 +408,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.list_access_preview_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_preview_findings)
 
 Arguments mapping described in
-[ListAccessPreviewFindingsRequestTypeDef](./type_defs.md#listaccesspreviewfindingsrequesttypedef).
+[ListAccessPreviewFindingsRequestRequestTypeDef](./type_defs.md#listaccesspreviewfindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,7 +420,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListAccessPreviewFindingsResponseResponseTypeDef](./type_defs.md#listaccesspreviewfindingsresponseresponsetypedef).
+[ListAccessPreviewFindingsResponseTypeDef](./type_defs.md#listaccesspreviewfindingsresponsetypedef).
 
 ### list_access_previews
 
@@ -422,7 +433,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.list_access_previews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_access_previews)
 
 Arguments mapping described in
-[ListAccessPreviewsRequestTypeDef](./type_defs.md#listaccesspreviewsrequesttypedef).
+[ListAccessPreviewsRequestRequestTypeDef](./type_defs.md#listaccesspreviewsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -431,7 +442,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListAccessPreviewsResponseResponseTypeDef](./type_defs.md#listaccesspreviewsresponseresponsetypedef).
+[ListAccessPreviewsResponseTypeDef](./type_defs.md#listaccesspreviewsresponsetypedef).
 
 ### list_analyzed_resources
 
@@ -445,7 +456,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.list_analyzed_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzed_resources)
 
 Arguments mapping described in
-[ListAnalyzedResourcesRequestTypeDef](./type_defs.md#listanalyzedresourcesrequesttypedef).
+[ListAnalyzedResourcesRequestRequestTypeDef](./type_defs.md#listanalyzedresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -455,7 +466,7 @@ Keyword-only arguments:
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 
 Returns
-[ListAnalyzedResourcesResponseResponseTypeDef](./type_defs.md#listanalyzedresourcesresponseresponsetypedef).
+[ListAnalyzedResourcesResponseTypeDef](./type_defs.md#listanalyzedresourcesresponsetypedef).
 
 ### list_analyzers
 
@@ -467,7 +478,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.list_analyzers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_analyzers)
 
 Arguments mapping described in
-[ListAnalyzersRequestTypeDef](./type_defs.md#listanalyzersrequesttypedef).
+[ListAnalyzersRequestRequestTypeDef](./type_defs.md#listanalyzersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -476,7 +487,7 @@ Keyword-only arguments:
 - `type`: [TypeType](./literals.md#typetype)
 
 Returns
-[ListAnalyzersResponseResponseTypeDef](./type_defs.md#listanalyzersresponseresponsetypedef).
+[ListAnalyzersResponseTypeDef](./type_defs.md#listanalyzersresponsetypedef).
 
 ### list_archive_rules
 
@@ -489,7 +500,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.list_archive_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_archive_rules)
 
 Arguments mapping described in
-[ListArchiveRulesRequestTypeDef](./type_defs.md#listarchiverulesrequesttypedef).
+[ListArchiveRulesRequestRequestTypeDef](./type_defs.md#listarchiverulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -498,7 +509,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListArchiveRulesResponseResponseTypeDef](./type_defs.md#listarchiverulesresponseresponsetypedef).
+[ListArchiveRulesResponseTypeDef](./type_defs.md#listarchiverulesresponsetypedef).
 
 ### list_findings
 
@@ -510,7 +521,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_findings)
 
 Arguments mapping described in
-[ListFindingsRequestTypeDef](./type_defs.md#listfindingsrequesttypedef).
+[ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -522,7 +533,7 @@ Keyword-only arguments:
 - `sort`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
 Returns
-[ListFindingsResponseResponseTypeDef](./type_defs.md#listfindingsresponseresponsetypedef).
+[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
 
 ### list_policy_generations
 
@@ -535,7 +546,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.list_policy_generations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_policy_generations)
 
 Arguments mapping described in
-[ListPolicyGenerationsRequestTypeDef](./type_defs.md#listpolicygenerationsrequesttypedef).
+[ListPolicyGenerationsRequestRequestTypeDef](./type_defs.md#listpolicygenerationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -544,7 +555,7 @@ Keyword-only arguments:
 - `principalArn`: `str`
 
 Returns
-[ListPolicyGenerationsResponseResponseTypeDef](./type_defs.md#listpolicygenerationsresponseresponsetypedef).
+[ListPolicyGenerationsResponseTypeDef](./type_defs.md#listpolicygenerationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -557,14 +568,14 @@ Boto3 documentation:
 [AccessAnalyzer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_policy_generation
 
@@ -577,7 +588,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.start_policy_generation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_policy_generation)
 
 Arguments mapping described in
-[StartPolicyGenerationRequestTypeDef](./type_defs.md#startpolicygenerationrequesttypedef).
+[StartPolicyGenerationRequestRequestTypeDef](./type_defs.md#startpolicygenerationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -589,7 +600,7 @@ Keyword-only arguments:
   [CloudTrailDetailsTypeDef](./type_defs.md#cloudtraildetailstypedef)
 
 Returns
-[StartPolicyGenerationResponseResponseTypeDef](./type_defs.md#startpolicygenerationresponseresponsetypedef).
+[StartPolicyGenerationResponseTypeDef](./type_defs.md#startpolicygenerationresponsetypedef).
 
 ### start_resource_scan
 
@@ -602,7 +613,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.start_resource_scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.start_resource_scan)
 
 Arguments mapping described in
-[StartResourceScanRequestTypeDef](./type_defs.md#startresourcescanrequesttypedef).
+[StartResourceScanRequestRequestTypeDef](./type_defs.md#startresourcescanrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -619,7 +630,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -638,7 +649,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -658,7 +669,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.update_archive_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_archive_rule)
 
 Arguments mapping described in
-[UpdateArchiveRuleRequestTypeDef](./type_defs.md#updatearchiverulerequesttypedef).
+[UpdateArchiveRuleRequestRequestTypeDef](./type_defs.md#updatearchiverulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -678,7 +689,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.update_findings)
 
 Arguments mapping described in
-[UpdateFindingsRequestTypeDef](./type_defs.md#updatefindingsrequesttypedef).
+[UpdateFindingsRequestRequestTypeDef](./type_defs.md#updatefindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -699,7 +710,7 @@ Boto3 documentation:
 [AccessAnalyzer.Client.validate_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client.validate_policy)
 
 Arguments mapping described in
-[ValidatePolicyRequestTypeDef](./type_defs.md#validatepolicyrequesttypedef).
+[ValidatePolicyRequestRequestTypeDef](./type_defs.md#validatepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -710,7 +721,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ValidatePolicyResponseResponseTypeDef](./type_defs.md#validatepolicyresponseresponsetypedef).
+[ValidatePolicyResponseTypeDef](./type_defs.md#validatepolicyresponsetypedef).
 
 ### get_paginator
 

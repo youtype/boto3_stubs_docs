@@ -36,6 +36,7 @@ from mypy_boto3_macie.client import MacieClient
 - [can_paginate](./client.md#can_paginate)
 - [disassociate_member_account](./client.md#disassociate_member_account)
 - [disassociate_s3_resources](./client.md#disassociate_s3_resources)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 - [list_member_accounts](./client.md#list_member_accounts)
@@ -89,27 +90,27 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_macie.type_defs import AssociateMemberAccountRequestTypeDef, ...
+from mypy_boto3_macie.type_defs import AssociateMemberAccountRequestRequestTypeDef, ...
 ```
 
-- [AssociateMemberAccountRequestTypeDef](./type_defs.md#associatememberaccountrequesttypedef)
-- [AssociateS3ResourcesRequestTypeDef](./type_defs.md#associates3resourcesrequesttypedef)
-- [AssociateS3ResourcesResultResponseTypeDef](./type_defs.md#associates3resourcesresultresponsetypedef)
+- [AssociateMemberAccountRequestRequestTypeDef](./type_defs.md#associatememberaccountrequestrequesttypedef)
+- [AssociateS3ResourcesRequestRequestTypeDef](./type_defs.md#associates3resourcesrequestrequesttypedef)
+- [AssociateS3ResourcesResultTypeDef](./type_defs.md#associates3resourcesresulttypedef)
 - [ClassificationTypeTypeDef](./type_defs.md#classificationtypetypedef)
 - [ClassificationTypeUpdateTypeDef](./type_defs.md#classificationtypeupdatetypedef)
-- [DisassociateMemberAccountRequestTypeDef](./type_defs.md#disassociatememberaccountrequesttypedef)
-- [DisassociateS3ResourcesRequestTypeDef](./type_defs.md#disassociates3resourcesrequesttypedef)
-- [DisassociateS3ResourcesResultResponseTypeDef](./type_defs.md#disassociates3resourcesresultresponsetypedef)
+- [DisassociateMemberAccountRequestRequestTypeDef](./type_defs.md#disassociatememberaccountrequestrequesttypedef)
+- [DisassociateS3ResourcesRequestRequestTypeDef](./type_defs.md#disassociates3resourcesrequestrequesttypedef)
+- [DisassociateS3ResourcesResultTypeDef](./type_defs.md#disassociates3resourcesresulttypedef)
 - [FailedS3ResourceTypeDef](./type_defs.md#faileds3resourcetypedef)
-- [ListMemberAccountsRequestTypeDef](./type_defs.md#listmemberaccountsrequesttypedef)
-- [ListMemberAccountsResultResponseTypeDef](./type_defs.md#listmemberaccountsresultresponsetypedef)
-- [ListS3ResourcesRequestTypeDef](./type_defs.md#lists3resourcesrequesttypedef)
-- [ListS3ResourcesResultResponseTypeDef](./type_defs.md#lists3resourcesresultresponsetypedef)
+- [ListMemberAccountsRequestRequestTypeDef](./type_defs.md#listmemberaccountsrequestrequesttypedef)
+- [ListMemberAccountsResultTypeDef](./type_defs.md#listmemberaccountsresulttypedef)
+- [ListS3ResourcesRequestRequestTypeDef](./type_defs.md#lists3resourcesrequestrequesttypedef)
+- [ListS3ResourcesResultTypeDef](./type_defs.md#lists3resourcesresulttypedef)
 - [MemberAccountTypeDef](./type_defs.md#memberaccounttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)
 - [S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef)
 - [S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)
-- [UpdateS3ResourcesRequestTypeDef](./type_defs.md#updates3resourcesrequesttypedef)
-- [UpdateS3ResourcesResultResponseTypeDef](./type_defs.md#updates3resourcesresultresponsetypedef)
+- [UpdateS3ResourcesRequestRequestTypeDef](./type_defs.md#updates3resourcesrequestrequesttypedef)
+- [UpdateS3ResourcesResultTypeDef](./type_defs.md#updates3resourcesresulttypedef)

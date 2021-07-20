@@ -11,6 +11,7 @@ type annotations stubs module
   - [DLMClient](#dlmclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_lifecycle_policy](#create_lifecycle_policy)
     - [delete_lifecycle_policy](#delete_lifecycle_policy)
@@ -60,6 +61,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DLMClient exceptions.
+
+Type annotations for `boto3.client("dlm").exceptions` method.
+
+Boto3 documentation:
+[DLM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -85,7 +97,7 @@ Boto3 documentation:
 [DLM.Client.create_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.create_lifecycle_policy)
 
 Arguments mapping described in
-[CreateLifecyclePolicyRequestTypeDef](./type_defs.md#createlifecyclepolicyrequesttypedef).
+[CreateLifecyclePolicyRequestRequestTypeDef](./type_defs.md#createlifecyclepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -99,7 +111,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateLifecyclePolicyResponseResponseTypeDef](./type_defs.md#createlifecyclepolicyresponseresponsetypedef).
+[CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef).
 
 ### delete_lifecycle_policy
 
@@ -112,7 +124,7 @@ Boto3 documentation:
 [DLM.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.delete_lifecycle_policy)
 
 Arguments mapping described in
-[DeleteLifecyclePolicyRequestTypeDef](./type_defs.md#deletelifecyclepolicyrequesttypedef).
+[DeleteLifecyclePolicyRequestRequestTypeDef](./type_defs.md#deletelifecyclepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -148,7 +160,7 @@ Boto3 documentation:
 [DLM.Client.get_lifecycle_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policies)
 
 Arguments mapping described in
-[GetLifecyclePoliciesRequestTypeDef](./type_defs.md#getlifecyclepoliciesrequesttypedef).
+[GetLifecyclePoliciesRequestRequestTypeDef](./type_defs.md#getlifecyclepoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -161,7 +173,7 @@ Keyword-only arguments:
 - `TagsToAdd`: `List`\[`str`\]
 
 Returns
-[GetLifecyclePoliciesResponseResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponseresponsetypedef).
+[GetLifecyclePoliciesResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponsetypedef).
 
 ### get_lifecycle_policy
 
@@ -173,14 +185,14 @@ Boto3 documentation:
 [DLM.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policy)
 
 Arguments mapping described in
-[GetLifecyclePolicyRequestTypeDef](./type_defs.md#getlifecyclepolicyrequesttypedef).
+[GetLifecyclePolicyRequestRequestTypeDef](./type_defs.md#getlifecyclepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 
 Returns
-[GetLifecyclePolicyResponseResponseTypeDef](./type_defs.md#getlifecyclepolicyresponseresponsetypedef).
+[GetLifecyclePolicyResponseTypeDef](./type_defs.md#getlifecyclepolicyresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -192,14 +204,14 @@ Boto3 documentation:
 [DLM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -211,7 +223,7 @@ Boto3 documentation:
 [DLM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -230,7 +242,7 @@ Boto3 documentation:
 [DLM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -249,7 +261,7 @@ Boto3 documentation:
 [DLM.Client.update_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.update_lifecycle_policy)
 
 Arguments mapping described in
-[UpdateLifecyclePolicyRequestTypeDef](./type_defs.md#updatelifecyclepolicyrequesttypedef).
+[UpdateLifecyclePolicyRequestRequestTypeDef](./type_defs.md#updatelifecyclepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 

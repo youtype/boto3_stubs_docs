@@ -8,79 +8,79 @@ type annotations stubs module
 [mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 - [Typed dictionaries for boto3 AutoScaling module](#typed-dictionaries-for-boto3-autoscaling-module)
-  - [ActivitiesTypeResponseTypeDef](#activitiestyperesponsetypedef)
+  - [ActivitiesTypeTypeDef](#activitiestypetypedef)
   - [ActivityTypeDef](#activitytypedef)
-  - [ActivityTypeResponseTypeDef](#activitytyperesponsetypedef)
+  - [ActivityTypeTypeDef](#activitytypetypedef)
   - [AdjustmentTypeTypeDef](#adjustmenttypetypedef)
   - [AlarmTypeDef](#alarmtypedef)
-  - [AttachInstancesQueryTypeDef](#attachinstancesquerytypedef)
-  - [AttachLoadBalancerTargetGroupsTypeTypeDef](#attachloadbalancertargetgroupstypetypedef)
-  - [AttachLoadBalancersTypeTypeDef](#attachloadbalancerstypetypedef)
-  - [AutoScalingGroupNamesTypeTypeDef](#autoscalinggroupnamestypetypedef)
+  - [AttachInstancesQueryRequestTypeDef](#attachinstancesqueryrequesttypedef)
+  - [AttachLoadBalancerTargetGroupsTypeRequestTypeDef](#attachloadbalancertargetgroupstyperequesttypedef)
+  - [AttachLoadBalancersTypeRequestTypeDef](#attachloadbalancerstyperequesttypedef)
+  - [AutoScalingGroupNamesTypeRequestTypeDef](#autoscalinggroupnamestyperequesttypedef)
   - [AutoScalingGroupTypeDef](#autoscalinggrouptypedef)
-  - [AutoScalingGroupsTypeResponseTypeDef](#autoscalinggroupstyperesponsetypedef)
+  - [AutoScalingGroupsTypeTypeDef](#autoscalinggroupstypetypedef)
   - [AutoScalingInstanceDetailsTypeDef](#autoscalinginstancedetailstypedef)
-  - [AutoScalingInstancesTypeResponseTypeDef](#autoscalinginstancestyperesponsetypedef)
-  - [BatchDeleteScheduledActionAnswerResponseTypeDef](#batchdeletescheduledactionanswerresponsetypedef)
-  - [BatchDeleteScheduledActionTypeTypeDef](#batchdeletescheduledactiontypetypedef)
-  - [BatchPutScheduledUpdateGroupActionAnswerResponseTypeDef](#batchputscheduledupdategroupactionanswerresponsetypedef)
-  - [BatchPutScheduledUpdateGroupActionTypeTypeDef](#batchputscheduledupdategroupactiontypetypedef)
+  - [AutoScalingInstancesTypeTypeDef](#autoscalinginstancestypetypedef)
+  - [BatchDeleteScheduledActionAnswerTypeDef](#batchdeletescheduledactionanswertypedef)
+  - [BatchDeleteScheduledActionTypeRequestTypeDef](#batchdeletescheduledactiontyperequesttypedef)
+  - [BatchPutScheduledUpdateGroupActionAnswerTypeDef](#batchputscheduledupdategroupactionanswertypedef)
+  - [BatchPutScheduledUpdateGroupActionTypeRequestTypeDef](#batchputscheduledupdategroupactiontyperequesttypedef)
   - [BlockDeviceMappingTypeDef](#blockdevicemappingtypedef)
-  - [CancelInstanceRefreshAnswerResponseTypeDef](#cancelinstancerefreshanswerresponsetypedef)
-  - [CancelInstanceRefreshTypeTypeDef](#cancelinstancerefreshtypetypedef)
+  - [CancelInstanceRefreshAnswerTypeDef](#cancelinstancerefreshanswertypedef)
+  - [CancelInstanceRefreshTypeRequestTypeDef](#cancelinstancerefreshtyperequesttypedef)
   - [CapacityForecastTypeDef](#capacityforecasttypedef)
-  - [CompleteLifecycleActionTypeTypeDef](#completelifecycleactiontypetypedef)
-  - [CreateAutoScalingGroupTypeTypeDef](#createautoscalinggrouptypetypedef)
-  - [CreateLaunchConfigurationTypeTypeDef](#createlaunchconfigurationtypetypedef)
-  - [CreateOrUpdateTagsTypeTypeDef](#createorupdatetagstypetypedef)
+  - [CompleteLifecycleActionTypeRequestTypeDef](#completelifecycleactiontyperequesttypedef)
+  - [CreateAutoScalingGroupTypeRequestTypeDef](#createautoscalinggrouptyperequesttypedef)
+  - [CreateLaunchConfigurationTypeRequestTypeDef](#createlaunchconfigurationtyperequesttypedef)
+  - [CreateOrUpdateTagsTypeRequestTypeDef](#createorupdatetagstyperequesttypedef)
   - [CustomizedMetricSpecificationTypeDef](#customizedmetricspecificationtypedef)
-  - [DeleteAutoScalingGroupTypeTypeDef](#deleteautoscalinggrouptypetypedef)
-  - [DeleteLifecycleHookTypeTypeDef](#deletelifecyclehooktypetypedef)
-  - [DeleteNotificationConfigurationTypeTypeDef](#deletenotificationconfigurationtypetypedef)
-  - [DeletePolicyTypeTypeDef](#deletepolicytypetypedef)
-  - [DeleteScheduledActionTypeTypeDef](#deletescheduledactiontypetypedef)
-  - [DeleteTagsTypeTypeDef](#deletetagstypetypedef)
-  - [DeleteWarmPoolTypeTypeDef](#deletewarmpooltypetypedef)
-  - [DescribeAccountLimitsAnswerResponseTypeDef](#describeaccountlimitsanswerresponsetypedef)
-  - [DescribeAdjustmentTypesAnswerResponseTypeDef](#describeadjustmenttypesanswerresponsetypedef)
-  - [DescribeAutoScalingInstancesTypeTypeDef](#describeautoscalinginstancestypetypedef)
-  - [DescribeAutoScalingNotificationTypesAnswerResponseTypeDef](#describeautoscalingnotificationtypesanswerresponsetypedef)
-  - [DescribeInstanceRefreshesAnswerResponseTypeDef](#describeinstancerefreshesanswerresponsetypedef)
-  - [DescribeInstanceRefreshesTypeTypeDef](#describeinstancerefreshestypetypedef)
-  - [DescribeLifecycleHookTypesAnswerResponseTypeDef](#describelifecyclehooktypesanswerresponsetypedef)
-  - [DescribeLifecycleHooksAnswerResponseTypeDef](#describelifecyclehooksanswerresponsetypedef)
-  - [DescribeLifecycleHooksTypeTypeDef](#describelifecyclehookstypetypedef)
-  - [DescribeLoadBalancerTargetGroupsRequestTypeDef](#describeloadbalancertargetgroupsrequesttypedef)
-  - [DescribeLoadBalancerTargetGroupsResponseResponseTypeDef](#describeloadbalancertargetgroupsresponseresponsetypedef)
-  - [DescribeLoadBalancersRequestTypeDef](#describeloadbalancersrequesttypedef)
-  - [DescribeLoadBalancersResponseResponseTypeDef](#describeloadbalancersresponseresponsetypedef)
-  - [DescribeMetricCollectionTypesAnswerResponseTypeDef](#describemetriccollectiontypesanswerresponsetypedef)
-  - [DescribeNotificationConfigurationsAnswerResponseTypeDef](#describenotificationconfigurationsanswerresponsetypedef)
-  - [DescribeNotificationConfigurationsTypeTypeDef](#describenotificationconfigurationstypetypedef)
-  - [DescribePoliciesTypeTypeDef](#describepoliciestypetypedef)
-  - [DescribeScalingActivitiesTypeTypeDef](#describescalingactivitiestypetypedef)
-  - [DescribeScheduledActionsTypeTypeDef](#describescheduledactionstypetypedef)
-  - [DescribeTagsTypeTypeDef](#describetagstypetypedef)
-  - [DescribeTerminationPolicyTypesAnswerResponseTypeDef](#describeterminationpolicytypesanswerresponsetypedef)
-  - [DescribeWarmPoolAnswerResponseTypeDef](#describewarmpoolanswerresponsetypedef)
-  - [DescribeWarmPoolTypeTypeDef](#describewarmpooltypetypedef)
-  - [DetachInstancesAnswerResponseTypeDef](#detachinstancesanswerresponsetypedef)
-  - [DetachInstancesQueryTypeDef](#detachinstancesquerytypedef)
-  - [DetachLoadBalancerTargetGroupsTypeTypeDef](#detachloadbalancertargetgroupstypetypedef)
-  - [DetachLoadBalancersTypeTypeDef](#detachloadbalancerstypetypedef)
-  - [DisableMetricsCollectionQueryTypeDef](#disablemetricscollectionquerytypedef)
+  - [DeleteAutoScalingGroupTypeRequestTypeDef](#deleteautoscalinggrouptyperequesttypedef)
+  - [DeleteLifecycleHookTypeRequestTypeDef](#deletelifecyclehooktyperequesttypedef)
+  - [DeleteNotificationConfigurationTypeRequestTypeDef](#deletenotificationconfigurationtyperequesttypedef)
+  - [DeletePolicyTypeRequestTypeDef](#deletepolicytyperequesttypedef)
+  - [DeleteScheduledActionTypeRequestTypeDef](#deletescheduledactiontyperequesttypedef)
+  - [DeleteTagsTypeRequestTypeDef](#deletetagstyperequesttypedef)
+  - [DeleteWarmPoolTypeRequestTypeDef](#deletewarmpooltyperequesttypedef)
+  - [DescribeAccountLimitsAnswerTypeDef](#describeaccountlimitsanswertypedef)
+  - [DescribeAdjustmentTypesAnswerTypeDef](#describeadjustmenttypesanswertypedef)
+  - [DescribeAutoScalingInstancesTypeRequestTypeDef](#describeautoscalinginstancestyperequesttypedef)
+  - [DescribeAutoScalingNotificationTypesAnswerTypeDef](#describeautoscalingnotificationtypesanswertypedef)
+  - [DescribeInstanceRefreshesAnswerTypeDef](#describeinstancerefreshesanswertypedef)
+  - [DescribeInstanceRefreshesTypeRequestTypeDef](#describeinstancerefreshestyperequesttypedef)
+  - [DescribeLifecycleHookTypesAnswerTypeDef](#describelifecyclehooktypesanswertypedef)
+  - [DescribeLifecycleHooksAnswerTypeDef](#describelifecyclehooksanswertypedef)
+  - [DescribeLifecycleHooksTypeRequestTypeDef](#describelifecyclehookstyperequesttypedef)
+  - [DescribeLoadBalancerTargetGroupsRequestRequestTypeDef](#describeloadbalancertargetgroupsrequestrequesttypedef)
+  - [DescribeLoadBalancerTargetGroupsResponseTypeDef](#describeloadbalancertargetgroupsresponsetypedef)
+  - [DescribeLoadBalancersRequestRequestTypeDef](#describeloadbalancersrequestrequesttypedef)
+  - [DescribeLoadBalancersResponseTypeDef](#describeloadbalancersresponsetypedef)
+  - [DescribeMetricCollectionTypesAnswerTypeDef](#describemetriccollectiontypesanswertypedef)
+  - [DescribeNotificationConfigurationsAnswerTypeDef](#describenotificationconfigurationsanswertypedef)
+  - [DescribeNotificationConfigurationsTypeRequestTypeDef](#describenotificationconfigurationstyperequesttypedef)
+  - [DescribePoliciesTypeRequestTypeDef](#describepoliciestyperequesttypedef)
+  - [DescribeScalingActivitiesTypeRequestTypeDef](#describescalingactivitiestyperequesttypedef)
+  - [DescribeScheduledActionsTypeRequestTypeDef](#describescheduledactionstyperequesttypedef)
+  - [DescribeTagsTypeRequestTypeDef](#describetagstyperequesttypedef)
+  - [DescribeTerminationPolicyTypesAnswerTypeDef](#describeterminationpolicytypesanswertypedef)
+  - [DescribeWarmPoolAnswerTypeDef](#describewarmpoolanswertypedef)
+  - [DescribeWarmPoolTypeRequestTypeDef](#describewarmpooltyperequesttypedef)
+  - [DetachInstancesAnswerTypeDef](#detachinstancesanswertypedef)
+  - [DetachInstancesQueryRequestTypeDef](#detachinstancesqueryrequesttypedef)
+  - [DetachLoadBalancerTargetGroupsTypeRequestTypeDef](#detachloadbalancertargetgroupstyperequesttypedef)
+  - [DetachLoadBalancersTypeRequestTypeDef](#detachloadbalancerstyperequesttypedef)
+  - [DisableMetricsCollectionQueryRequestTypeDef](#disablemetricscollectionqueryrequesttypedef)
   - [EbsTypeDef](#ebstypedef)
-  - [EnableMetricsCollectionQueryTypeDef](#enablemetricscollectionquerytypedef)
+  - [EnableMetricsCollectionQueryRequestTypeDef](#enablemetricscollectionqueryrequesttypedef)
   - [EnabledMetricTypeDef](#enabledmetrictypedef)
-  - [EnterStandbyAnswerResponseTypeDef](#enterstandbyanswerresponsetypedef)
-  - [EnterStandbyQueryTypeDef](#enterstandbyquerytypedef)
-  - [ExecutePolicyTypeTypeDef](#executepolicytypetypedef)
-  - [ExitStandbyAnswerResponseTypeDef](#exitstandbyanswerresponsetypedef)
-  - [ExitStandbyQueryTypeDef](#exitstandbyquerytypedef)
+  - [EnterStandbyAnswerTypeDef](#enterstandbyanswertypedef)
+  - [EnterStandbyQueryRequestTypeDef](#enterstandbyqueryrequesttypedef)
+  - [ExecutePolicyTypeRequestTypeDef](#executepolicytyperequesttypedef)
+  - [ExitStandbyAnswerTypeDef](#exitstandbyanswertypedef)
+  - [ExitStandbyQueryRequestTypeDef](#exitstandbyqueryrequesttypedef)
   - [FailedScheduledUpdateGroupActionRequestTypeDef](#failedscheduledupdategroupactionrequesttypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [GetPredictiveScalingForecastAnswerResponseTypeDef](#getpredictivescalingforecastanswerresponsetypedef)
-  - [GetPredictiveScalingForecastTypeTypeDef](#getpredictivescalingforecasttypetypedef)
+  - [GetPredictiveScalingForecastAnswerTypeDef](#getpredictivescalingforecastanswertypedef)
+  - [GetPredictiveScalingForecastTypeRequestTypeDef](#getpredictivescalingforecasttyperequesttypedef)
   - [InstanceMetadataOptionsTypeDef](#instancemetadataoptionstypedef)
   - [InstanceMonitoringTypeDef](#instancemonitoringtypedef)
   - [InstanceRefreshLivePoolProgressTypeDef](#instancerefreshlivepoolprogresstypedef)
@@ -89,10 +89,10 @@ type annotations stubs module
   - [InstanceRefreshWarmPoolProgressTypeDef](#instancerefreshwarmpoolprogresstypedef)
   - [InstanceTypeDef](#instancetypedef)
   - [InstancesDistributionTypeDef](#instancesdistributiontypedef)
-  - [LaunchConfigurationNameTypeTypeDef](#launchconfigurationnametypetypedef)
-  - [LaunchConfigurationNamesTypeTypeDef](#launchconfigurationnamestypetypedef)
+  - [LaunchConfigurationNameTypeRequestTypeDef](#launchconfigurationnametyperequesttypedef)
+  - [LaunchConfigurationNamesTypeRequestTypeDef](#launchconfigurationnamestyperequesttypedef)
   - [LaunchConfigurationTypeDef](#launchconfigurationtypedef)
-  - [LaunchConfigurationsTypeResponseTypeDef](#launchconfigurationstyperesponsetypedef)
+  - [LaunchConfigurationsTypeTypeDef](#launchconfigurationstypetypedef)
   - [LaunchTemplateOverridesTypeDef](#launchtemplateoverridestypedef)
   - [LaunchTemplateSpecificationTypeDef](#launchtemplatespecificationtypedef)
   - [LaunchTemplateTypeDef](#launchtemplatetypedef)
@@ -107,8 +107,8 @@ type annotations stubs module
   - [MixedInstancesPolicyTypeDef](#mixedinstancespolicytypedef)
   - [NotificationConfigurationTypeDef](#notificationconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PoliciesTypeResponseTypeDef](#policiestyperesponsetypedef)
-  - [PolicyARNTypeResponseTypeDef](#policyarntyperesponsetypedef)
+  - [PoliciesTypeTypeDef](#policiestypetypedef)
+  - [PolicyARNTypeTypeDef](#policyarntypetypedef)
   - [PredefinedMetricSpecificationTypeDef](#predefinedmetricspecificationtypedef)
   - [PredictiveScalingConfigurationTypeDef](#predictivescalingconfigurationtypedef)
   - [PredictiveScalingMetricSpecificationTypeDef](#predictivescalingmetricspecificationtypedef)
@@ -116,39 +116,39 @@ type annotations stubs module
   - [PredictiveScalingPredefinedMetricPairTypeDef](#predictivescalingpredefinedmetricpairtypedef)
   - [PredictiveScalingPredefinedScalingMetricTypeDef](#predictivescalingpredefinedscalingmetrictypedef)
   - [ProcessTypeTypeDef](#processtypetypedef)
-  - [ProcessesTypeResponseTypeDef](#processestyperesponsetypedef)
-  - [PutLifecycleHookTypeTypeDef](#putlifecyclehooktypetypedef)
-  - [PutNotificationConfigurationTypeTypeDef](#putnotificationconfigurationtypetypedef)
-  - [PutScalingPolicyTypeTypeDef](#putscalingpolicytypetypedef)
-  - [PutScheduledUpdateGroupActionTypeTypeDef](#putscheduledupdategroupactiontypetypedef)
-  - [PutWarmPoolTypeTypeDef](#putwarmpooltypetypedef)
-  - [RecordLifecycleActionHeartbeatTypeTypeDef](#recordlifecycleactionheartbeattypetypedef)
+  - [ProcessesTypeTypeDef](#processestypetypedef)
+  - [PutLifecycleHookTypeRequestTypeDef](#putlifecyclehooktyperequesttypedef)
+  - [PutNotificationConfigurationTypeRequestTypeDef](#putnotificationconfigurationtyperequesttypedef)
+  - [PutScalingPolicyTypeRequestTypeDef](#putscalingpolicytyperequesttypedef)
+  - [PutScheduledUpdateGroupActionTypeRequestTypeDef](#putscheduledupdategroupactiontyperequesttypedef)
+  - [PutWarmPoolTypeRequestTypeDef](#putwarmpooltyperequesttypedef)
+  - [RecordLifecycleActionHeartbeatTypeRequestTypeDef](#recordlifecycleactionheartbeattyperequesttypedef)
   - [RefreshPreferencesTypeDef](#refreshpreferencestypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ScalingPolicyTypeDef](#scalingpolicytypedef)
-  - [ScalingProcessQueryTypeDef](#scalingprocessquerytypedef)
-  - [ScheduledActionsTypeResponseTypeDef](#scheduledactionstyperesponsetypedef)
+  - [ScalingProcessQueryRequestTypeDef](#scalingprocessqueryrequesttypedef)
+  - [ScheduledActionsTypeTypeDef](#scheduledactionstypetypedef)
   - [ScheduledUpdateGroupActionRequestTypeDef](#scheduledupdategroupactionrequesttypedef)
   - [ScheduledUpdateGroupActionTypeDef](#scheduledupdategroupactiontypedef)
-  - [SetDesiredCapacityTypeTypeDef](#setdesiredcapacitytypetypedef)
-  - [SetInstanceHealthQueryTypeDef](#setinstancehealthquerytypedef)
-  - [SetInstanceProtectionQueryTypeDef](#setinstanceprotectionquerytypedef)
-  - [StartInstanceRefreshAnswerResponseTypeDef](#startinstancerefreshanswerresponsetypedef)
-  - [StartInstanceRefreshTypeTypeDef](#startinstancerefreshtypetypedef)
+  - [SetDesiredCapacityTypeRequestTypeDef](#setdesiredcapacitytyperequesttypedef)
+  - [SetInstanceHealthQueryRequestTypeDef](#setinstancehealthqueryrequesttypedef)
+  - [SetInstanceProtectionQueryRequestTypeDef](#setinstanceprotectionqueryrequesttypedef)
+  - [StartInstanceRefreshAnswerTypeDef](#startinstancerefreshanswertypedef)
+  - [StartInstanceRefreshTypeRequestTypeDef](#startinstancerefreshtyperequesttypedef)
   - [StepAdjustmentTypeDef](#stepadjustmenttypedef)
   - [SuspendedProcessTypeDef](#suspendedprocesstypedef)
   - [TagDescriptionTypeDef](#tagdescriptiontypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TagsTypeResponseTypeDef](#tagstyperesponsetypedef)
+  - [TagsTypeTypeDef](#tagstypetypedef)
   - [TargetTrackingConfigurationTypeDef](#targettrackingconfigurationtypedef)
-  - [TerminateInstanceInAutoScalingGroupTypeTypeDef](#terminateinstanceinautoscalinggrouptypetypedef)
-  - [UpdateAutoScalingGroupTypeTypeDef](#updateautoscalinggrouptypetypedef)
+  - [TerminateInstanceInAutoScalingGroupTypeRequestTypeDef](#terminateinstanceinautoscalinggrouptyperequesttypedef)
+  - [UpdateAutoScalingGroupTypeRequestTypeDef](#updateautoscalinggrouptyperequesttypedef)
   - [WarmPoolConfigurationTypeDef](#warmpoolconfigurationtypedef)
 
-## ActivitiesTypeResponseTypeDef
+## ActivitiesTypeTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import ActivitiesTypeResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import ActivitiesTypeTypeDef
 ```
 
 Required fields:
@@ -183,10 +183,10 @@ Optional fields:
 - `AutoScalingGroupState`: `str`
 - `AutoScalingGroupARN`: `str`
 
-## ActivityTypeResponseTypeDef
+## ActivityTypeTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import ActivityTypeResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import ActivityTypeTypeDef
 ```
 
 Required fields:
@@ -216,10 +216,10 @@ Optional fields:
 - `AlarmName`: `str`
 - `AlarmARN`: `str`
 
-## AttachInstancesQueryTypeDef
+## AttachInstancesQueryRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import AttachInstancesQueryTypeDef
+from mypy_boto3_autoscaling.type_defs import AttachInstancesQueryRequestTypeDef
 ```
 
 Required fields:
@@ -230,10 +230,10 @@ Optional fields:
 
 - `InstanceIds`: `List`\[`str`\]
 
-## AttachLoadBalancerTargetGroupsTypeTypeDef
+## AttachLoadBalancerTargetGroupsTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import AttachLoadBalancerTargetGroupsTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import AttachLoadBalancerTargetGroupsTypeRequestTypeDef
 ```
 
 Required fields:
@@ -241,10 +241,10 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `TargetGroupARNs`: `List`\[`str`\]
 
-## AttachLoadBalancersTypeTypeDef
+## AttachLoadBalancersTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import AttachLoadBalancersTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import AttachLoadBalancersTypeRequestTypeDef
 ```
 
 Required fields:
@@ -252,10 +252,10 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `LoadBalancerNames`: `List`\[`str`\]
 
-## AutoScalingGroupNamesTypeTypeDef
+## AutoScalingGroupNamesTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import AutoScalingGroupNamesTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import AutoScalingGroupNamesTypeRequestTypeDef
 ```
 
 Optional fields:
@@ -311,11 +311,12 @@ Optional fields:
 - `WarmPoolConfiguration`:
   [WarmPoolConfigurationTypeDef](./type_defs.md#warmpoolconfigurationtypedef)
 - `WarmPoolSize`: `int`
+- `Context`: `str`
 
-## AutoScalingGroupsTypeResponseTypeDef
+## AutoScalingGroupsTypeTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import AutoScalingGroupsTypeResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import AutoScalingGroupsTypeTypeDef
 ```
 
 Required fields:
@@ -349,10 +350,10 @@ Optional fields:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `WeightedCapacity`: `str`
 
-## AutoScalingInstancesTypeResponseTypeDef
+## AutoScalingInstancesTypeTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import AutoScalingInstancesTypeResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import AutoScalingInstancesTypeTypeDef
 ```
 
 Required fields:
@@ -363,10 +364,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchDeleteScheduledActionAnswerResponseTypeDef
+## BatchDeleteScheduledActionAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import BatchDeleteScheduledActionAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import BatchDeleteScheduledActionAnswerTypeDef
 ```
 
 Required fields:
@@ -376,10 +377,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchDeleteScheduledActionTypeTypeDef
+## BatchDeleteScheduledActionTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import BatchDeleteScheduledActionTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import BatchDeleteScheduledActionTypeRequestTypeDef
 ```
 
 Required fields:
@@ -387,10 +388,10 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `ScheduledActionNames`: `List`\[`str`\]
 
-## BatchPutScheduledUpdateGroupActionAnswerResponseTypeDef
+## BatchPutScheduledUpdateGroupActionAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import BatchPutScheduledUpdateGroupActionAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import BatchPutScheduledUpdateGroupActionAnswerTypeDef
 ```
 
 Required fields:
@@ -400,10 +401,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchPutScheduledUpdateGroupActionTypeTypeDef
+## BatchPutScheduledUpdateGroupActionTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import BatchPutScheduledUpdateGroupActionTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import BatchPutScheduledUpdateGroupActionTypeRequestTypeDef
 ```
 
 Required fields:
@@ -428,10 +429,10 @@ Optional fields:
 - `Ebs`: [EbsTypeDef](./type_defs.md#ebstypedef)
 - `NoDevice`: `bool`
 
-## CancelInstanceRefreshAnswerResponseTypeDef
+## CancelInstanceRefreshAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import CancelInstanceRefreshAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import CancelInstanceRefreshAnswerTypeDef
 ```
 
 Required fields:
@@ -440,10 +441,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CancelInstanceRefreshTypeTypeDef
+## CancelInstanceRefreshTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import CancelInstanceRefreshTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import CancelInstanceRefreshTypeRequestTypeDef
 ```
 
 Required fields:
@@ -461,10 +462,10 @@ Required fields:
 - `Timestamps`: `List`\[`datetime`\]
 - `Values`: `List`\[`float`\]
 
-## CompleteLifecycleActionTypeTypeDef
+## CompleteLifecycleActionTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import CompleteLifecycleActionTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import CompleteLifecycleActionTypeRequestTypeDef
 ```
 
 Required fields:
@@ -478,10 +479,10 @@ Optional fields:
 - `LifecycleActionToken`: `str`
 - `InstanceId`: `str`
 
-## CreateAutoScalingGroupTypeTypeDef
+## CreateAutoScalingGroupTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import CreateAutoScalingGroupTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import CreateAutoScalingGroupTypeRequestTypeDef
 ```
 
 Required fields:
@@ -515,11 +516,12 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ServiceLinkedRoleARN`: `str`
 - `MaxInstanceLifetime`: `int`
+- `Context`: `str`
 
-## CreateLaunchConfigurationTypeTypeDef
+## CreateLaunchConfigurationTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import CreateLaunchConfigurationTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import CreateLaunchConfigurationTypeRequestTypeDef
 ```
 
 Required fields:
@@ -550,10 +552,10 @@ Optional fields:
 - `MetadataOptions`:
   [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 
-## CreateOrUpdateTagsTypeTypeDef
+## CreateOrUpdateTagsTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import CreateOrUpdateTagsTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import CreateOrUpdateTagsTypeRequestTypeDef
 ```
 
 Required fields:
@@ -578,10 +580,10 @@ Optional fields:
   `List`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 - `Unit`: `str`
 
-## DeleteAutoScalingGroupTypeTypeDef
+## DeleteAutoScalingGroupTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DeleteAutoScalingGroupTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DeleteAutoScalingGroupTypeRequestTypeDef
 ```
 
 Required fields:
@@ -592,10 +594,10 @@ Optional fields:
 
 - `ForceDelete`: `bool`
 
-## DeleteLifecycleHookTypeTypeDef
+## DeleteLifecycleHookTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DeleteLifecycleHookTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DeleteLifecycleHookTypeRequestTypeDef
 ```
 
 Required fields:
@@ -603,10 +605,10 @@ Required fields:
 - `LifecycleHookName`: `str`
 - `AutoScalingGroupName`: `str`
 
-## DeleteNotificationConfigurationTypeTypeDef
+## DeleteNotificationConfigurationTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DeleteNotificationConfigurationTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DeleteNotificationConfigurationTypeRequestTypeDef
 ```
 
 Required fields:
@@ -614,10 +616,10 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `TopicARN`: `str`
 
-## DeletePolicyTypeTypeDef
+## DeletePolicyTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DeletePolicyTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DeletePolicyTypeRequestTypeDef
 ```
 
 Required fields:
@@ -628,10 +630,10 @@ Optional fields:
 
 - `AutoScalingGroupName`: `str`
 
-## DeleteScheduledActionTypeTypeDef
+## DeleteScheduledActionTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DeleteScheduledActionTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DeleteScheduledActionTypeRequestTypeDef
 ```
 
 Required fields:
@@ -639,20 +641,20 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `ScheduledActionName`: `str`
 
-## DeleteTagsTypeTypeDef
+## DeleteTagsTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DeleteTagsTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DeleteTagsTypeRequestTypeDef
 ```
 
 Required fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## DeleteWarmPoolTypeTypeDef
+## DeleteWarmPoolTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DeleteWarmPoolTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DeleteWarmPoolTypeRequestTypeDef
 ```
 
 Required fields:
@@ -663,10 +665,10 @@ Optional fields:
 
 - `ForceDelete`: `bool`
 
-## DescribeAccountLimitsAnswerResponseTypeDef
+## DescribeAccountLimitsAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeAccountLimitsAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeAccountLimitsAnswerTypeDef
 ```
 
 Required fields:
@@ -678,10 +680,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAdjustmentTypesAnswerResponseTypeDef
+## DescribeAdjustmentTypesAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeAdjustmentTypesAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeAdjustmentTypesAnswerTypeDef
 ```
 
 Required fields:
@@ -691,10 +693,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAutoScalingInstancesTypeTypeDef
+## DescribeAutoScalingInstancesTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeAutoScalingInstancesTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeAutoScalingInstancesTypeRequestTypeDef
 ```
 
 Optional fields:
@@ -703,10 +705,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
-## DescribeAutoScalingNotificationTypesAnswerResponseTypeDef
+## DescribeAutoScalingNotificationTypesAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeAutoScalingNotificationTypesAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeAutoScalingNotificationTypesAnswerTypeDef
 ```
 
 Required fields:
@@ -715,10 +717,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceRefreshesAnswerResponseTypeDef
+## DescribeInstanceRefreshesAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeInstanceRefreshesAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeInstanceRefreshesAnswerTypeDef
 ```
 
 Required fields:
@@ -729,10 +731,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstanceRefreshesTypeTypeDef
+## DescribeInstanceRefreshesTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeInstanceRefreshesTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeInstanceRefreshesTypeRequestTypeDef
 ```
 
 Required fields:
@@ -745,10 +747,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
-## DescribeLifecycleHookTypesAnswerResponseTypeDef
+## DescribeLifecycleHookTypesAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeLifecycleHookTypesAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeLifecycleHookTypesAnswerTypeDef
 ```
 
 Required fields:
@@ -757,10 +759,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLifecycleHooksAnswerResponseTypeDef
+## DescribeLifecycleHooksAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeLifecycleHooksAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeLifecycleHooksAnswerTypeDef
 ```
 
 Required fields:
@@ -770,10 +772,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLifecycleHooksTypeTypeDef
+## DescribeLifecycleHooksTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeLifecycleHooksTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeLifecycleHooksTypeRequestTypeDef
 ```
 
 Required fields:
@@ -784,10 +786,10 @@ Optional fields:
 
 - `LifecycleHookNames`: `List`\[`str`\]
 
-## DescribeLoadBalancerTargetGroupsRequestTypeDef
+## DescribeLoadBalancerTargetGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancerTargetGroupsRequestTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancerTargetGroupsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -799,10 +801,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
-## DescribeLoadBalancerTargetGroupsResponseResponseTypeDef
+## DescribeLoadBalancerTargetGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancerTargetGroupsResponseResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancerTargetGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -813,10 +815,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLoadBalancersRequestTypeDef
+## DescribeLoadBalancersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancersRequestTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -828,10 +830,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
-## DescribeLoadBalancersResponseResponseTypeDef
+## DescribeLoadBalancersResponseTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancersResponseResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeLoadBalancersResponseTypeDef
 ```
 
 Required fields:
@@ -842,10 +844,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMetricCollectionTypesAnswerResponseTypeDef
+## DescribeMetricCollectionTypesAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeMetricCollectionTypesAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeMetricCollectionTypesAnswerTypeDef
 ```
 
 Required fields:
@@ -857,10 +859,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNotificationConfigurationsAnswerResponseTypeDef
+## DescribeNotificationConfigurationsAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeNotificationConfigurationsAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeNotificationConfigurationsAnswerTypeDef
 ```
 
 Required fields:
@@ -871,10 +873,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNotificationConfigurationsTypeTypeDef
+## DescribeNotificationConfigurationsTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeNotificationConfigurationsTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeNotificationConfigurationsTypeRequestTypeDef
 ```
 
 Optional fields:
@@ -883,10 +885,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
-## DescribePoliciesTypeTypeDef
+## DescribePoliciesTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribePoliciesTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribePoliciesTypeRequestTypeDef
 ```
 
 Optional fields:
@@ -897,10 +899,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
-## DescribeScalingActivitiesTypeTypeDef
+## DescribeScalingActivitiesTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeScalingActivitiesTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeScalingActivitiesTypeRequestTypeDef
 ```
 
 Optional fields:
@@ -911,10 +913,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
-## DescribeScheduledActionsTypeTypeDef
+## DescribeScheduledActionsTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeScheduledActionsTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeScheduledActionsTypeRequestTypeDef
 ```
 
 Optional fields:
@@ -926,10 +928,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
-## DescribeTagsTypeTypeDef
+## DescribeTagsTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeTagsTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeTagsTypeRequestTypeDef
 ```
 
 Optional fields:
@@ -938,10 +940,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
-## DescribeTerminationPolicyTypesAnswerResponseTypeDef
+## DescribeTerminationPolicyTypesAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeTerminationPolicyTypesAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeTerminationPolicyTypesAnswerTypeDef
 ```
 
 Required fields:
@@ -950,10 +952,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeWarmPoolAnswerResponseTypeDef
+## DescribeWarmPoolAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeWarmPoolAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeWarmPoolAnswerTypeDef
 ```
 
 Required fields:
@@ -965,10 +967,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeWarmPoolTypeTypeDef
+## DescribeWarmPoolTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DescribeWarmPoolTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DescribeWarmPoolTypeRequestTypeDef
 ```
 
 Required fields:
@@ -980,10 +982,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
-## DetachInstancesAnswerResponseTypeDef
+## DetachInstancesAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DetachInstancesAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import DetachInstancesAnswerTypeDef
 ```
 
 Required fields:
@@ -992,10 +994,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetachInstancesQueryTypeDef
+## DetachInstancesQueryRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DetachInstancesQueryTypeDef
+from mypy_boto3_autoscaling.type_defs import DetachInstancesQueryRequestTypeDef
 ```
 
 Required fields:
@@ -1007,10 +1009,10 @@ Optional fields:
 
 - `InstanceIds`: `List`\[`str`\]
 
-## DetachLoadBalancerTargetGroupsTypeTypeDef
+## DetachLoadBalancerTargetGroupsTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DetachLoadBalancerTargetGroupsTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DetachLoadBalancerTargetGroupsTypeRequestTypeDef
 ```
 
 Required fields:
@@ -1018,10 +1020,10 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `TargetGroupARNs`: `List`\[`str`\]
 
-## DetachLoadBalancersTypeTypeDef
+## DetachLoadBalancersTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DetachLoadBalancersTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import DetachLoadBalancersTypeRequestTypeDef
 ```
 
 Required fields:
@@ -1029,10 +1031,10 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `LoadBalancerNames`: `List`\[`str`\]
 
-## DisableMetricsCollectionQueryTypeDef
+## DisableMetricsCollectionQueryRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import DisableMetricsCollectionQueryTypeDef
+from mypy_boto3_autoscaling.type_defs import DisableMetricsCollectionQueryRequestTypeDef
 ```
 
 Required fields:
@@ -1059,10 +1061,10 @@ Optional fields:
 - `Encrypted`: `bool`
 - `Throughput`: `int`
 
-## EnableMetricsCollectionQueryTypeDef
+## EnableMetricsCollectionQueryRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import EnableMetricsCollectionQueryTypeDef
+from mypy_boto3_autoscaling.type_defs import EnableMetricsCollectionQueryRequestTypeDef
 ```
 
 Required fields:
@@ -1085,10 +1087,10 @@ Optional fields:
 - `Metric`: `str`
 - `Granularity`: `str`
 
-## EnterStandbyAnswerResponseTypeDef
+## EnterStandbyAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import EnterStandbyAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import EnterStandbyAnswerTypeDef
 ```
 
 Required fields:
@@ -1097,10 +1099,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EnterStandbyQueryTypeDef
+## EnterStandbyQueryRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import EnterStandbyQueryTypeDef
+from mypy_boto3_autoscaling.type_defs import EnterStandbyQueryRequestTypeDef
 ```
 
 Required fields:
@@ -1112,10 +1114,10 @@ Optional fields:
 
 - `InstanceIds`: `List`\[`str`\]
 
-## ExecutePolicyTypeTypeDef
+## ExecutePolicyTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import ExecutePolicyTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import ExecutePolicyTypeRequestTypeDef
 ```
 
 Required fields:
@@ -1129,10 +1131,10 @@ Optional fields:
 - `MetricValue`: `float`
 - `BreachThreshold`: `float`
 
-## ExitStandbyAnswerResponseTypeDef
+## ExitStandbyAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import ExitStandbyAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import ExitStandbyAnswerTypeDef
 ```
 
 Required fields:
@@ -1141,10 +1143,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExitStandbyQueryTypeDef
+## ExitStandbyQueryRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import ExitStandbyQueryTypeDef
+from mypy_boto3_autoscaling.type_defs import ExitStandbyQueryRequestTypeDef
 ```
 
 Required fields:
@@ -1181,10 +1183,10 @@ Optional fields:
 - `Name`: `str`
 - `Values`: `List`\[`str`\]
 
-## GetPredictiveScalingForecastAnswerResponseTypeDef
+## GetPredictiveScalingForecastAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import GetPredictiveScalingForecastAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import GetPredictiveScalingForecastAnswerTypeDef
 ```
 
 Required fields:
@@ -1197,10 +1199,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPredictiveScalingForecastTypeTypeDef
+## GetPredictiveScalingForecastTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import GetPredictiveScalingForecastTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import GetPredictiveScalingForecastTypeRequestTypeDef
 ```
 
 Required fields:
@@ -1326,20 +1328,20 @@ Optional fields:
 - `SpotInstancePools`: `int`
 - `SpotMaxPrice`: `str`
 
-## LaunchConfigurationNameTypeTypeDef
+## LaunchConfigurationNameTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import LaunchConfigurationNameTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import LaunchConfigurationNameTypeRequestTypeDef
 ```
 
 Required fields:
 
 - `LaunchConfigurationName`: `str`
 
-## LaunchConfigurationNamesTypeTypeDef
+## LaunchConfigurationNamesTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import LaunchConfigurationNamesTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import LaunchConfigurationNamesTypeRequestTypeDef
 ```
 
 Optional fields:
@@ -1383,10 +1385,10 @@ Optional fields:
 - `MetadataOptions`:
   [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 
-## LaunchConfigurationsTypeResponseTypeDef
+## LaunchConfigurationsTypeTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import LaunchConfigurationsTypeResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import LaunchConfigurationsTypeTypeDef
 ```
 
 Required fields:
@@ -1575,10 +1577,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PoliciesTypeResponseTypeDef
+## PoliciesTypeTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import PoliciesTypeResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import PoliciesTypeTypeDef
 ```
 
 Required fields:
@@ -1589,10 +1591,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PolicyARNTypeResponseTypeDef
+## PolicyARNTypeTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import PolicyARNTypeResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import PolicyARNTypeTypeDef
 ```
 
 Required fields:
@@ -1709,10 +1711,10 @@ Required fields:
 
 - `ProcessName`: `str`
 
-## ProcessesTypeResponseTypeDef
+## ProcessesTypeTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import ProcessesTypeResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import ProcessesTypeTypeDef
 ```
 
 Required fields:
@@ -1722,10 +1724,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutLifecycleHookTypeTypeDef
+## PutLifecycleHookTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import PutLifecycleHookTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import PutLifecycleHookTypeRequestTypeDef
 ```
 
 Required fields:
@@ -1742,10 +1744,10 @@ Optional fields:
 - `HeartbeatTimeout`: `int`
 - `DefaultResult`: `str`
 
-## PutNotificationConfigurationTypeTypeDef
+## PutNotificationConfigurationTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import PutNotificationConfigurationTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import PutNotificationConfigurationTypeRequestTypeDef
 ```
 
 Required fields:
@@ -1754,10 +1756,10 @@ Required fields:
 - `TopicARN`: `str`
 - `NotificationTypes`: `List`\[`str`\]
 
-## PutScalingPolicyTypeTypeDef
+## PutScalingPolicyTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import PutScalingPolicyTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import PutScalingPolicyTypeRequestTypeDef
 ```
 
 Required fields:
@@ -1783,10 +1785,10 @@ Optional fields:
 - `PredictiveScalingConfiguration`:
   [PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef)
 
-## PutScheduledUpdateGroupActionTypeTypeDef
+## PutScheduledUpdateGroupActionTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import PutScheduledUpdateGroupActionTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import PutScheduledUpdateGroupActionTypeRequestTypeDef
 ```
 
 Required fields:
@@ -1805,10 +1807,10 @@ Optional fields:
 - `DesiredCapacity`: `int`
 - `TimeZone`: `str`
 
-## PutWarmPoolTypeTypeDef
+## PutWarmPoolTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import PutWarmPoolTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import PutWarmPoolTypeRequestTypeDef
 ```
 
 Required fields:
@@ -1821,10 +1823,10 @@ Optional fields:
 - `MinSize`: `int`
 - `PoolState`: [WarmPoolStateType](./literals.md#warmpoolstatetype)
 
-## RecordLifecycleActionHeartbeatTypeTypeDef
+## RecordLifecycleActionHeartbeatTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import RecordLifecycleActionHeartbeatTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import RecordLifecycleActionHeartbeatTypeRequestTypeDef
 ```
 
 Required fields:
@@ -1892,10 +1894,10 @@ Optional fields:
 - `PredictiveScalingConfiguration`:
   [PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef)
 
-## ScalingProcessQueryTypeDef
+## ScalingProcessQueryRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import ScalingProcessQueryTypeDef
+from mypy_boto3_autoscaling.type_defs import ScalingProcessQueryRequestTypeDef
 ```
 
 Required fields:
@@ -1906,10 +1908,10 @@ Optional fields:
 
 - `ScalingProcesses`: `List`\[`str`\]
 
-## ScheduledActionsTypeResponseTypeDef
+## ScheduledActionsTypeTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import ScheduledActionsTypeResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import ScheduledActionsTypeTypeDef
 ```
 
 Required fields:
@@ -1960,10 +1962,10 @@ Optional fields:
 - `DesiredCapacity`: `int`
 - `TimeZone`: `str`
 
-## SetDesiredCapacityTypeTypeDef
+## SetDesiredCapacityTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import SetDesiredCapacityTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import SetDesiredCapacityTypeRequestTypeDef
 ```
 
 Required fields:
@@ -1975,10 +1977,10 @@ Optional fields:
 
 - `HonorCooldown`: `bool`
 
-## SetInstanceHealthQueryTypeDef
+## SetInstanceHealthQueryRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import SetInstanceHealthQueryTypeDef
+from mypy_boto3_autoscaling.type_defs import SetInstanceHealthQueryRequestTypeDef
 ```
 
 Required fields:
@@ -1990,10 +1992,10 @@ Optional fields:
 
 - `ShouldRespectGracePeriod`: `bool`
 
-## SetInstanceProtectionQueryTypeDef
+## SetInstanceProtectionQueryRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import SetInstanceProtectionQueryTypeDef
+from mypy_boto3_autoscaling.type_defs import SetInstanceProtectionQueryRequestTypeDef
 ```
 
 Required fields:
@@ -2002,10 +2004,10 @@ Required fields:
 - `AutoScalingGroupName`: `str`
 - `ProtectedFromScaleIn`: `bool`
 
-## StartInstanceRefreshAnswerResponseTypeDef
+## StartInstanceRefreshAnswerTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import StartInstanceRefreshAnswerResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import StartInstanceRefreshAnswerTypeDef
 ```
 
 Required fields:
@@ -2014,10 +2016,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartInstanceRefreshTypeTypeDef
+## StartInstanceRefreshTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import StartInstanceRefreshTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import StartInstanceRefreshTypeRequestTypeDef
 ```
 
 Required fields:
@@ -2088,10 +2090,10 @@ Optional fields:
 - `Value`: `str`
 - `PropagateAtLaunch`: `bool`
 
-## TagsTypeResponseTypeDef
+## TagsTypeTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import TagsTypeResponseTypeDef
+from mypy_boto3_autoscaling.type_defs import TagsTypeTypeDef
 ```
 
 Required fields:
@@ -2120,10 +2122,10 @@ Optional fields:
   [CustomizedMetricSpecificationTypeDef](./type_defs.md#customizedmetricspecificationtypedef)
 - `DisableScaleIn`: `bool`
 
-## TerminateInstanceInAutoScalingGroupTypeTypeDef
+## TerminateInstanceInAutoScalingGroupTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import TerminateInstanceInAutoScalingGroupTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import TerminateInstanceInAutoScalingGroupTypeRequestTypeDef
 ```
 
 Required fields:
@@ -2131,10 +2133,10 @@ Required fields:
 - `InstanceId`: `str`
 - `ShouldDecrementDesiredCapacity`: `bool`
 
-## UpdateAutoScalingGroupTypeTypeDef
+## UpdateAutoScalingGroupTypeRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling.type_defs import UpdateAutoScalingGroupTypeTypeDef
+from mypy_boto3_autoscaling.type_defs import UpdateAutoScalingGroupTypeRequestTypeDef
 ```
 
 Required fields:
@@ -2162,6 +2164,7 @@ Optional fields:
 - `ServiceLinkedRoleARN`: `str`
 - `MaxInstanceLifetime`: `int`
 - `CapacityRebalance`: `bool`
+- `Context`: `str`
 
 ## WarmPoolConfigurationTypeDef
 

@@ -34,6 +34,7 @@ from mypy_boto3_textract.client import TextractClient
 - [analyze_document](./client.md#analyze_document)
 - [can_paginate](./client.md#can_paginate)
 - [detect_document_text](./client.md#detect_document_text)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_document_analysis](./client.md#get_document_analysis)
 - [get_document_text_detection](./client.md#get_document_text_detection)
@@ -87,23 +88,23 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestTypeDef, ...
+from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestRequestTypeDef, ...
 ```
 
-- [AnalyzeDocumentRequestTypeDef](./type_defs.md#analyzedocumentrequesttypedef)
-- [AnalyzeDocumentResponseResponseTypeDef](./type_defs.md#analyzedocumentresponseresponsetypedef)
+- [AnalyzeDocumentRequestRequestTypeDef](./type_defs.md#analyzedocumentrequestrequesttypedef)
+- [AnalyzeDocumentResponseTypeDef](./type_defs.md#analyzedocumentresponsetypedef)
 - [BlockTypeDef](./type_defs.md#blocktypedef)
 - [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- [DetectDocumentTextRequestTypeDef](./type_defs.md#detectdocumenttextrequesttypedef)
-- [DetectDocumentTextResponseResponseTypeDef](./type_defs.md#detectdocumenttextresponseresponsetypedef)
+- [DetectDocumentTextRequestRequestTypeDef](./type_defs.md#detectdocumenttextrequestrequesttypedef)
+- [DetectDocumentTextResponseTypeDef](./type_defs.md#detectdocumenttextresponsetypedef)
 - [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)
 - [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
 - [DocumentTypeDef](./type_defs.md#documenttypedef)
 - [GeometryTypeDef](./type_defs.md#geometrytypedef)
-- [GetDocumentAnalysisRequestTypeDef](./type_defs.md#getdocumentanalysisrequesttypedef)
-- [GetDocumentAnalysisResponseResponseTypeDef](./type_defs.md#getdocumentanalysisresponseresponsetypedef)
-- [GetDocumentTextDetectionRequestTypeDef](./type_defs.md#getdocumenttextdetectionrequesttypedef)
-- [GetDocumentTextDetectionResponseResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponseresponsetypedef)
+- [GetDocumentAnalysisRequestRequestTypeDef](./type_defs.md#getdocumentanalysisrequestrequesttypedef)
+- [GetDocumentAnalysisResponseTypeDef](./type_defs.md#getdocumentanalysisresponsetypedef)
+- [GetDocumentTextDetectionRequestRequestTypeDef](./type_defs.md#getdocumenttextdetectionrequestrequesttypedef)
+- [GetDocumentTextDetectionResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponsetypedef)
 - [HumanLoopActivationOutputTypeDef](./type_defs.md#humanloopactivationoutputtypedef)
 - [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
 - [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
@@ -113,8 +114,8 @@ from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestTypeDef, ...
 - [RelationshipTypeDef](./type_defs.md#relationshiptypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
-- [StartDocumentAnalysisRequestTypeDef](./type_defs.md#startdocumentanalysisrequesttypedef)
-- [StartDocumentAnalysisResponseResponseTypeDef](./type_defs.md#startdocumentanalysisresponseresponsetypedef)
-- [StartDocumentTextDetectionRequestTypeDef](./type_defs.md#startdocumenttextdetectionrequesttypedef)
-- [StartDocumentTextDetectionResponseResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponseresponsetypedef)
+- [StartDocumentAnalysisRequestRequestTypeDef](./type_defs.md#startdocumentanalysisrequestrequesttypedef)
+- [StartDocumentAnalysisResponseTypeDef](./type_defs.md#startdocumentanalysisresponsetypedef)
+- [StartDocumentTextDetectionRequestRequestTypeDef](./type_defs.md#startdocumenttextdetectionrequestrequesttypedef)
+- [StartDocumentTextDetectionResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponsetypedef)
 - [WarningTypeDef](./type_defs.md#warningtypedef)

@@ -49,7 +49,7 @@ Arguments for `GetRateBasedRuleManagedKeysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRateBasedRuleManagedKeysPaginator.paginate` returns
-`Iterator`\[[GetRateBasedRuleManagedKeysResponseResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponseresponsetypedef)\].
+`Iterator`\[[GetRateBasedRuleManagedKeysResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponsetypedef)\].
 
 ## ListActivatedRulesInRuleGroupPaginator
 
@@ -75,7 +75,7 @@ Arguments for `ListActivatedRulesInRuleGroupPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActivatedRulesInRuleGroupPaginator.paginate` returns
-`Iterator`\[[ListActivatedRulesInRuleGroupResponseResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponseresponsetypedef)\].
+`Iterator`\[[ListActivatedRulesInRuleGroupResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponsetypedef)\].
 
 ## ListByteMatchSetsPaginator
 
@@ -100,7 +100,7 @@ Arguments for `ListByteMatchSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListByteMatchSetsPaginator.paginate` returns
-`Iterator`\[[ListByteMatchSetsResponseResponseTypeDef](./type_defs.md#listbytematchsetsresponseresponsetypedef)\].
+`Iterator`\[[ListByteMatchSetsResponseTypeDef](./type_defs.md#listbytematchsetsresponsetypedef)\].
 
 ## ListGeoMatchSetsPaginator
 
@@ -125,7 +125,7 @@ Arguments for `ListGeoMatchSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGeoMatchSetsPaginator.paginate` returns
-`Iterator`\[[ListGeoMatchSetsResponseResponseTypeDef](./type_defs.md#listgeomatchsetsresponseresponsetypedef)\].
+`Iterator`\[[ListGeoMatchSetsResponseTypeDef](./type_defs.md#listgeomatchsetsresponsetypedef)\].
 
 ## ListIPSetsPaginator
 
@@ -149,7 +149,7 @@ Arguments for `ListIPSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIPSetsPaginator.paginate` returns
-`Iterator`\[[ListIPSetsResponseResponseTypeDef](./type_defs.md#listipsetsresponseresponsetypedef)\].
+`Iterator`\[[ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef)\].
 
 ## ListLoggingConfigurationsPaginator
 
@@ -174,7 +174,7 @@ Arguments for `ListLoggingConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLoggingConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListLoggingConfigurationsResponseResponseTypeDef](./type_defs.md#listloggingconfigurationsresponseresponsetypedef)\].
+`Iterator`\[[ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef)\].
 
 ## ListRateBasedRulesPaginator
 
@@ -199,7 +199,7 @@ Arguments for `ListRateBasedRulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRateBasedRulesPaginator.paginate` returns
-`Iterator`\[[ListRateBasedRulesResponseResponseTypeDef](./type_defs.md#listratebasedrulesresponseresponsetypedef)\].
+`Iterator`\[[ListRateBasedRulesResponseTypeDef](./type_defs.md#listratebasedrulesresponsetypedef)\].
 
 ## ListRegexMatchSetsPaginator
 
@@ -224,7 +224,7 @@ Arguments for `ListRegexMatchSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRegexMatchSetsPaginator.paginate` returns
-`Iterator`\[[ListRegexMatchSetsResponseResponseTypeDef](./type_defs.md#listregexmatchsetsresponseresponsetypedef)\].
+`Iterator`\[[ListRegexMatchSetsResponseTypeDef](./type_defs.md#listregexmatchsetsresponsetypedef)\].
 
 ## ListRegexPatternSetsPaginator
 
@@ -249,7 +249,7 @@ Arguments for `ListRegexPatternSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRegexPatternSetsPaginator.paginate` returns
-`Iterator`\[[ListRegexPatternSetsResponseResponseTypeDef](./type_defs.md#listregexpatternsetsresponseresponsetypedef)\].
+`Iterator`\[[ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef)\].
 
 ## ListRuleGroupsPaginator
 
@@ -273,7 +273,7 @@ Arguments for `ListRuleGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRuleGroupsPaginator.paginate` returns
-`Iterator`\[[ListRuleGroupsResponseResponseTypeDef](./type_defs.md#listrulegroupsresponseresponsetypedef)\].
+`Iterator`\[[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef)\].
 
 ## ListRulesPaginator
 
@@ -297,7 +297,7 @@ Arguments for `ListRulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRulesPaginator.paginate` returns
-`Iterator`\[[ListRulesResponseResponseTypeDef](./type_defs.md#listrulesresponseresponsetypedef)\].
+`Iterator`\[[ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)\].
 
 ## ListSizeConstraintSetsPaginator
 
@@ -322,7 +322,7 @@ Arguments for `ListSizeConstraintSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSizeConstraintSetsPaginator.paginate` returns
-`Iterator`\[[ListSizeConstraintSetsResponseResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponseresponsetypedef)\].
+`Iterator`\[[ListSizeConstraintSetsResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponsetypedef)\].
 
 ## ListSqlInjectionMatchSetsPaginator
 
@@ -347,7 +347,7 @@ Arguments for `ListSqlInjectionMatchSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSqlInjectionMatchSetsPaginator.paginate` returns
-`Iterator`\[[ListSqlInjectionMatchSetsResponseResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponseresponsetypedef)\].
+`Iterator`\[[ListSqlInjectionMatchSetsResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponsetypedef)\].
 
 ## ListSubscribedRuleGroupsPaginator
 
@@ -372,7 +372,7 @@ Arguments for `ListSubscribedRuleGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSubscribedRuleGroupsPaginator.paginate` returns
-`Iterator`\[[ListSubscribedRuleGroupsResponseResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponseresponsetypedef)\].
+`Iterator`\[[ListSubscribedRuleGroupsResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponsetypedef)\].
 
 ## ListWebACLsPaginator
 
@@ -396,7 +396,7 @@ Arguments for `ListWebACLsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWebACLsPaginator.paginate` returns
-`Iterator`\[[ListWebACLsResponseResponseTypeDef](./type_defs.md#listwebaclsresponseresponsetypedef)\].
+`Iterator`\[[ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef)\].
 
 ## ListXssMatchSetsPaginator
 
@@ -421,4 +421,4 @@ Arguments for `ListXssMatchSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListXssMatchSetsPaginator.paginate` returns
-`Iterator`\[[ListXssMatchSetsResponseResponseTypeDef](./type_defs.md#listxssmatchsetsresponseresponsetypedef)\].
+`Iterator`\[[ListXssMatchSetsResponseTypeDef](./type_defs.md#listxssmatchsetsresponsetypedef)\].

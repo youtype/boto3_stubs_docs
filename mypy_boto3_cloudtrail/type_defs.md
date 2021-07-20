@@ -8,57 +8,57 @@ type annotations stubs module
 [mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
 - [Typed dictionaries for boto3 CloudTrail module](#typed-dictionaries-for-boto3-cloudtrail-module)
-  - [AddTagsRequestTypeDef](#addtagsrequesttypedef)
+  - [AddTagsRequestRequestTypeDef](#addtagsrequestrequesttypedef)
   - [AdvancedEventSelectorTypeDef](#advancedeventselectortypedef)
   - [AdvancedFieldSelectorTypeDef](#advancedfieldselectortypedef)
-  - [CreateTrailRequestTypeDef](#createtrailrequesttypedef)
-  - [CreateTrailResponseResponseTypeDef](#createtrailresponseresponsetypedef)
+  - [CreateTrailRequestRequestTypeDef](#createtrailrequestrequesttypedef)
+  - [CreateTrailResponseTypeDef](#createtrailresponsetypedef)
   - [DataResourceTypeDef](#dataresourcetypedef)
-  - [DeleteTrailRequestTypeDef](#deletetrailrequesttypedef)
-  - [DescribeTrailsRequestTypeDef](#describetrailsrequesttypedef)
-  - [DescribeTrailsResponseResponseTypeDef](#describetrailsresponseresponsetypedef)
+  - [DeleteTrailRequestRequestTypeDef](#deletetrailrequestrequesttypedef)
+  - [DescribeTrailsRequestRequestTypeDef](#describetrailsrequestrequesttypedef)
+  - [DescribeTrailsResponseTypeDef](#describetrailsresponsetypedef)
   - [EventSelectorTypeDef](#eventselectortypedef)
   - [EventTypeDef](#eventtypedef)
-  - [GetEventSelectorsRequestTypeDef](#geteventselectorsrequesttypedef)
-  - [GetEventSelectorsResponseResponseTypeDef](#geteventselectorsresponseresponsetypedef)
-  - [GetInsightSelectorsRequestTypeDef](#getinsightselectorsrequesttypedef)
-  - [GetInsightSelectorsResponseResponseTypeDef](#getinsightselectorsresponseresponsetypedef)
-  - [GetTrailRequestTypeDef](#gettrailrequesttypedef)
-  - [GetTrailResponseResponseTypeDef](#gettrailresponseresponsetypedef)
-  - [GetTrailStatusRequestTypeDef](#gettrailstatusrequesttypedef)
-  - [GetTrailStatusResponseResponseTypeDef](#gettrailstatusresponseresponsetypedef)
+  - [GetEventSelectorsRequestRequestTypeDef](#geteventselectorsrequestrequesttypedef)
+  - [GetEventSelectorsResponseTypeDef](#geteventselectorsresponsetypedef)
+  - [GetInsightSelectorsRequestRequestTypeDef](#getinsightselectorsrequestrequesttypedef)
+  - [GetInsightSelectorsResponseTypeDef](#getinsightselectorsresponsetypedef)
+  - [GetTrailRequestRequestTypeDef](#gettrailrequestrequesttypedef)
+  - [GetTrailResponseTypeDef](#gettrailresponsetypedef)
+  - [GetTrailStatusRequestRequestTypeDef](#gettrailstatusrequestrequesttypedef)
+  - [GetTrailStatusResponseTypeDef](#gettrailstatusresponsetypedef)
   - [InsightSelectorTypeDef](#insightselectortypedef)
-  - [ListPublicKeysRequestTypeDef](#listpublickeysrequesttypedef)
-  - [ListPublicKeysResponseResponseTypeDef](#listpublickeysresponseresponsetypedef)
-  - [ListTagsRequestTypeDef](#listtagsrequesttypedef)
-  - [ListTagsResponseResponseTypeDef](#listtagsresponseresponsetypedef)
-  - [ListTrailsRequestTypeDef](#listtrailsrequesttypedef)
-  - [ListTrailsResponseResponseTypeDef](#listtrailsresponseresponsetypedef)
+  - [ListPublicKeysRequestRequestTypeDef](#listpublickeysrequestrequesttypedef)
+  - [ListPublicKeysResponseTypeDef](#listpublickeysresponsetypedef)
+  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
+  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
+  - [ListTrailsRequestRequestTypeDef](#listtrailsrequestrequesttypedef)
+  - [ListTrailsResponseTypeDef](#listtrailsresponsetypedef)
   - [LookupAttributeTypeDef](#lookupattributetypedef)
-  - [LookupEventsRequestTypeDef](#lookupeventsrequesttypedef)
-  - [LookupEventsResponseResponseTypeDef](#lookupeventsresponseresponsetypedef)
+  - [LookupEventsRequestRequestTypeDef](#lookupeventsrequestrequesttypedef)
+  - [LookupEventsResponseTypeDef](#lookupeventsresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PublicKeyTypeDef](#publickeytypedef)
-  - [PutEventSelectorsRequestTypeDef](#puteventselectorsrequesttypedef)
-  - [PutEventSelectorsResponseResponseTypeDef](#puteventselectorsresponseresponsetypedef)
-  - [PutInsightSelectorsRequestTypeDef](#putinsightselectorsrequesttypedef)
-  - [PutInsightSelectorsResponseResponseTypeDef](#putinsightselectorsresponseresponsetypedef)
-  - [RemoveTagsRequestTypeDef](#removetagsrequesttypedef)
+  - [PutEventSelectorsRequestRequestTypeDef](#puteventselectorsrequestrequesttypedef)
+  - [PutEventSelectorsResponseTypeDef](#puteventselectorsresponsetypedef)
+  - [PutInsightSelectorsRequestRequestTypeDef](#putinsightselectorsrequestrequesttypedef)
+  - [PutInsightSelectorsResponseTypeDef](#putinsightselectorsresponsetypedef)
+  - [RemoveTagsRequestRequestTypeDef](#removetagsrequestrequesttypedef)
   - [ResourceTagTypeDef](#resourcetagtypedef)
   - [ResourceTypeDef](#resourcetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartLoggingRequestTypeDef](#startloggingrequesttypedef)
-  - [StopLoggingRequestTypeDef](#stoploggingrequesttypedef)
+  - [StartLoggingRequestRequestTypeDef](#startloggingrequestrequesttypedef)
+  - [StopLoggingRequestRequestTypeDef](#stoploggingrequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TrailInfoTypeDef](#trailinfotypedef)
   - [TrailTypeDef](#trailtypedef)
-  - [UpdateTrailRequestTypeDef](#updatetrailrequesttypedef)
-  - [UpdateTrailResponseResponseTypeDef](#updatetrailresponseresponsetypedef)
+  - [UpdateTrailRequestRequestTypeDef](#updatetrailrequestrequesttypedef)
+  - [UpdateTrailResponseTypeDef](#updatetrailresponsetypedef)
 
-## AddTagsRequestTypeDef
+## AddTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import AddTagsRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import AddTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -103,10 +103,10 @@ Optional fields:
 - `NotStartsWith`: `List`\[`str`\]
 - `NotEndsWith`: `List`\[`str`\]
 
-## CreateTrailRequestTypeDef
+## CreateTrailRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import CreateTrailRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import CreateTrailRequestRequestTypeDef
 ```
 
 Required fields:
@@ -127,10 +127,10 @@ Optional fields:
 - `IsOrganizationTrail`: `bool`
 - `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateTrailResponseResponseTypeDef
+## CreateTrailResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import CreateTrailResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import CreateTrailResponseTypeDef
 ```
 
 Required fields:
@@ -162,20 +162,20 @@ Optional fields:
 - `Type`: `str`
 - `Values`: `List`\[`str`\]
 
-## DeleteTrailRequestTypeDef
+## DeleteTrailRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import DeleteTrailRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import DeleteTrailRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeTrailsRequestTypeDef
+## DescribeTrailsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import DescribeTrailsRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import DescribeTrailsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -183,10 +183,10 @@ Optional fields:
 - `trailNameList`: `List`\[`str`\]
 - `includeShadowTrails`: `bool`
 
-## DescribeTrailsResponseResponseTypeDef
+## DescribeTrailsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import DescribeTrailsResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import DescribeTrailsResponseTypeDef
 ```
 
 Required fields:
@@ -227,20 +227,20 @@ Optional fields:
 - `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `CloudTrailEvent`: `str`
 
-## GetEventSelectorsRequestTypeDef
+## GetEventSelectorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import GetEventSelectorsRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import GetEventSelectorsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TrailName`: `str`
 
-## GetEventSelectorsResponseResponseTypeDef
+## GetEventSelectorsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import GetEventSelectorsResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import GetEventSelectorsResponseTypeDef
 ```
 
 Required fields:
@@ -253,20 +253,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInsightSelectorsRequestTypeDef
+## GetInsightSelectorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import GetInsightSelectorsRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import GetInsightSelectorsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TrailName`: `str`
 
-## GetInsightSelectorsResponseResponseTypeDef
+## GetInsightSelectorsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import GetInsightSelectorsResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import GetInsightSelectorsResponseTypeDef
 ```
 
 Required fields:
@@ -277,20 +277,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTrailRequestTypeDef
+## GetTrailRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import GetTrailRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import GetTrailRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetTrailResponseResponseTypeDef
+## GetTrailResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import GetTrailResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import GetTrailResponseTypeDef
 ```
 
 Required fields:
@@ -299,20 +299,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTrailStatusRequestTypeDef
+## GetTrailStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import GetTrailStatusRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import GetTrailStatusRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetTrailStatusResponseResponseTypeDef
+## GetTrailStatusResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import GetTrailStatusResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import GetTrailStatusResponseTypeDef
 ```
 
 Required fields:
@@ -348,10 +348,10 @@ Optional fields:
 - `InsightType`: `Literal['ApiCallRateInsight']` (see
   [InsightTypeType](./literals.md#insighttypetype))
 
-## ListPublicKeysRequestTypeDef
+## ListPublicKeysRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import ListPublicKeysRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import ListPublicKeysRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -360,10 +360,10 @@ Optional fields:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `NextToken`: `str`
 
-## ListPublicKeysResponseResponseTypeDef
+## ListPublicKeysResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import ListPublicKeysResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import ListPublicKeysResponseTypeDef
 ```
 
 Required fields:
@@ -374,10 +374,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsRequestTypeDef
+## ListTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import ListTagsRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import ListTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -388,10 +388,10 @@ Optional fields:
 
 - `NextToken`: `str`
 
-## ListTagsResponseResponseTypeDef
+## ListTagsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import ListTagsResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import ListTagsResponseTypeDef
 ```
 
 Required fields:
@@ -402,20 +402,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTrailsRequestTypeDef
+## ListTrailsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import ListTrailsRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import ListTrailsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
 
-## ListTrailsResponseResponseTypeDef
+## ListTrailsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import ListTrailsResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import ListTrailsResponseTypeDef
 ```
 
 Required fields:
@@ -437,10 +437,10 @@ Required fields:
   [LookupAttributeKeyType](./literals.md#lookupattributekeytype)
 - `AttributeValue`: `str`
 
-## LookupEventsRequestTypeDef
+## LookupEventsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import LookupEventsRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import LookupEventsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -454,10 +454,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## LookupEventsResponseResponseTypeDef
+## LookupEventsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import LookupEventsResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import LookupEventsResponseTypeDef
 ```
 
 Required fields:
@@ -492,10 +492,10 @@ Optional fields:
 - `ValidityEndTime`: `datetime`
 - `Fingerprint`: `str`
 
-## PutEventSelectorsRequestTypeDef
+## PutEventSelectorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import PutEventSelectorsRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import PutEventSelectorsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -509,10 +509,10 @@ Optional fields:
 - `AdvancedEventSelectors`:
   `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
 
-## PutEventSelectorsResponseResponseTypeDef
+## PutEventSelectorsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import PutEventSelectorsResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import PutEventSelectorsResponseTypeDef
 ```
 
 Required fields:
@@ -525,10 +525,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutInsightSelectorsRequestTypeDef
+## PutInsightSelectorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import PutInsightSelectorsRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import PutInsightSelectorsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -537,10 +537,10 @@ Required fields:
 - `InsightSelectors`:
   `List`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
 
-## PutInsightSelectorsResponseResponseTypeDef
+## PutInsightSelectorsResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import PutInsightSelectorsResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import PutInsightSelectorsResponseTypeDef
 ```
 
 Required fields:
@@ -551,10 +551,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RemoveTagsRequestTypeDef
+## RemoveTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import RemoveTagsRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import RemoveTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -601,20 +601,20 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## StartLoggingRequestTypeDef
+## StartLoggingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import StartLoggingRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import StartLoggingRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## StopLoggingRequestTypeDef
+## StopLoggingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import StopLoggingRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import StopLoggingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -672,10 +672,10 @@ Optional fields:
 - `HasInsightSelectors`: `bool`
 - `IsOrganizationTrail`: `bool`
 
-## UpdateTrailRequestTypeDef
+## UpdateTrailRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import UpdateTrailRequestTypeDef
+from mypy_boto3_cloudtrail.type_defs import UpdateTrailRequestRequestTypeDef
 ```
 
 Required fields:
@@ -695,10 +695,10 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `IsOrganizationTrail`: `bool`
 
-## UpdateTrailResponseResponseTypeDef
+## UpdateTrailResponseTypeDef
 
 ```python
-from mypy_boto3_cloudtrail.type_defs import UpdateTrailResponseResponseTypeDef
+from mypy_boto3_cloudtrail.type_defs import UpdateTrailResponseTypeDef
 ```
 
 Required fields:

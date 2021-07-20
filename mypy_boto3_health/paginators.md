@@ -41,7 +41,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAffectedAccountsForOrganizationPaginator.paginate` returns
-`Iterator`\[[DescribeAffectedAccountsForOrganizationResponseResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponseresponsetypedef)\].
+`Iterator`\[[DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef)\].
 
 ## DescribeAffectedEntitiesPaginator
 
@@ -69,7 +69,7 @@ Arguments for `DescribeAffectedEntitiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAffectedEntitiesPaginator.paginate` returns
-`Iterator`\[[DescribeAffectedEntitiesResponseResponseTypeDef](./type_defs.md#describeaffectedentitiesresponseresponsetypedef)\].
+`Iterator`\[[DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef)\].
 
 ## DescribeAffectedEntitiesForOrganizationPaginator
 
@@ -99,7 +99,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAffectedEntitiesForOrganizationPaginator.paginate` returns
-`Iterator`\[[DescribeAffectedEntitiesForOrganizationResponseResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponseresponsetypedef)\].
+`Iterator`\[[DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef)\].
 
 ## DescribeEventAggregatesPaginator
 
@@ -128,7 +128,7 @@ Arguments for `DescribeEventAggregatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventAggregatesPaginator.paginate` returns
-`Iterator`\[[DescribeEventAggregatesResponseResponseTypeDef](./type_defs.md#describeeventaggregatesresponseresponsetypedef)\].
+`Iterator`\[[DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef)\].
 
 ## DescribeEventTypesPaginator
 
@@ -155,7 +155,7 @@ Arguments for `DescribeEventTypesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventTypesPaginator.paginate` returns
-`Iterator`\[[DescribeEventTypesResponseResponseTypeDef](./type_defs.md#describeeventtypesresponseresponsetypedef)\].
+`Iterator`\[[DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -181,7 +181,7 @@ Arguments for `DescribeEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[DescribeEventsResponseResponseTypeDef](./type_defs.md#describeeventsresponseresponsetypedef)\].
+`Iterator`\[[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)\].
 
 ## DescribeEventsForOrganizationPaginator
 
@@ -209,4 +209,4 @@ Arguments for `DescribeEventsForOrganizationPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsForOrganizationPaginator.paginate` returns
-`Iterator`\[[DescribeEventsForOrganizationResponseResponseTypeDef](./type_defs.md#describeeventsfororganizationresponseresponsetypedef)\].
+`Iterator`\[[DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef)\].

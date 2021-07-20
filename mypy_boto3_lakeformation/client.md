@@ -11,6 +11,7 @@ type annotations stubs module
   - [LakeFormationClient](#lakeformationclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_lf_tags_to_resource](#add_lf_tags_to_resource)
     - [batch_grant_permissions](#batch_grant_permissions)
     - [batch_revoke_permissions](#batch_revoke_permissions)
@@ -80,6 +81,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+LakeFormationClient exceptions.
+
+Type annotations for `boto3.client("lakeformation").exceptions` method.
+
+Boto3 documentation:
+[LakeFormation.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_lf_tags_to_resource
 
 Attaches one or more tags to an existing resource.
@@ -91,7 +103,7 @@ Boto3 documentation:
 [LakeFormation.Client.add_lf_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.add_lf_tags_to_resource)
 
 Arguments mapping described in
-[AddLFTagsToResourceRequestTypeDef](./type_defs.md#addlftagstoresourcerequesttypedef).
+[AddLFTagsToResourceRequestRequestTypeDef](./type_defs.md#addlftagstoresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -101,7 +113,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[AddLFTagsToResourceResponseResponseTypeDef](./type_defs.md#addlftagstoresourceresponseresponsetypedef).
+[AddLFTagsToResourceResponseTypeDef](./type_defs.md#addlftagstoresourceresponsetypedef).
 
 ### batch_grant_permissions
 
@@ -114,7 +126,7 @@ Boto3 documentation:
 [LakeFormation.Client.batch_grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_grant_permissions)
 
 Arguments mapping described in
-[BatchGrantPermissionsRequestTypeDef](./type_defs.md#batchgrantpermissionsrequesttypedef).
+[BatchGrantPermissionsRequestRequestTypeDef](./type_defs.md#batchgrantpermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -124,7 +136,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchGrantPermissionsResponseResponseTypeDef](./type_defs.md#batchgrantpermissionsresponseresponsetypedef).
+[BatchGrantPermissionsResponseTypeDef](./type_defs.md#batchgrantpermissionsresponsetypedef).
 
 ### batch_revoke_permissions
 
@@ -137,7 +149,7 @@ Boto3 documentation:
 [LakeFormation.Client.batch_revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_revoke_permissions)
 
 Arguments mapping described in
-[BatchRevokePermissionsRequestTypeDef](./type_defs.md#batchrevokepermissionsrequesttypedef).
+[BatchRevokePermissionsRequestRequestTypeDef](./type_defs.md#batchrevokepermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -147,7 +159,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[BatchRevokePermissionsResponseResponseTypeDef](./type_defs.md#batchrevokepermissionsresponseresponsetypedef).
+[BatchRevokePermissionsResponseTypeDef](./type_defs.md#batchrevokepermissionsresponsetypedef).
 
 ### can_paginate
 
@@ -174,7 +186,7 @@ Boto3 documentation:
 [LakeFormation.Client.create_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.create_lf_tag)
 
 Arguments mapping described in
-[CreateLFTagRequestTypeDef](./type_defs.md#createlftagrequesttypedef).
+[CreateLFTagRequestRequestTypeDef](./type_defs.md#createlftagrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -194,7 +206,7 @@ Boto3 documentation:
 [LakeFormation.Client.delete_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.delete_lf_tag)
 
 Arguments mapping described in
-[DeleteLFTagRequestTypeDef](./type_defs.md#deletelftagrequesttypedef).
+[DeleteLFTagRequestRequestTypeDef](./type_defs.md#deletelftagrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -214,7 +226,7 @@ Boto3 documentation:
 [LakeFormation.Client.deregister_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.deregister_resource)
 
 Arguments mapping described in
-[DeregisterResourceRequestTypeDef](./type_defs.md#deregisterresourcerequesttypedef).
+[DeregisterResourceRequestRequestTypeDef](./type_defs.md#deregisterresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -233,14 +245,14 @@ Boto3 documentation:
 [LakeFormation.Client.describe_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.describe_resource)
 
 Arguments mapping described in
-[DescribeResourceRequestTypeDef](./type_defs.md#describeresourcerequesttypedef).
+[DescribeResourceRequestRequestTypeDef](./type_defs.md#describeresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[DescribeResourceResponseResponseTypeDef](./type_defs.md#describeresourceresponseresponsetypedef).
+[DescribeResourceResponseTypeDef](./type_defs.md#describeresourceresponsetypedef).
 
 ### generate_presigned_url
 
@@ -273,14 +285,14 @@ Boto3 documentation:
 [LakeFormation.Client.get_data_lake_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_data_lake_settings)
 
 Arguments mapping described in
-[GetDataLakeSettingsRequestTypeDef](./type_defs.md#getdatalakesettingsrequesttypedef).
+[GetDataLakeSettingsRequestRequestTypeDef](./type_defs.md#getdatalakesettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CatalogId`: `str`
 
 Returns
-[GetDataLakeSettingsResponseResponseTypeDef](./type_defs.md#getdatalakesettingsresponseresponsetypedef).
+[GetDataLakeSettingsResponseTypeDef](./type_defs.md#getdatalakesettingsresponsetypedef).
 
 ### get_effective_permissions_for_path
 
@@ -294,7 +306,7 @@ Boto3 documentation:
 [LakeFormation.Client.get_effective_permissions_for_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_effective_permissions_for_path)
 
 Arguments mapping described in
-[GetEffectivePermissionsForPathRequestTypeDef](./type_defs.md#geteffectivepermissionsforpathrequesttypedef).
+[GetEffectivePermissionsForPathRequestRequestTypeDef](./type_defs.md#geteffectivepermissionsforpathrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,7 +316,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetEffectivePermissionsForPathResponseResponseTypeDef](./type_defs.md#geteffectivepermissionsforpathresponseresponsetypedef).
+[GetEffectivePermissionsForPathResponseTypeDef](./type_defs.md#geteffectivepermissionsforpathresponsetypedef).
 
 ### get_lf_tag
 
@@ -316,15 +328,14 @@ Boto3 documentation:
 [LakeFormation.Client.get_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_lf_tag)
 
 Arguments mapping described in
-[GetLFTagRequestTypeDef](./type_defs.md#getlftagrequesttypedef).
+[GetLFTagRequestRequestTypeDef](./type_defs.md#getlftagrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TagKey`: `str` *(required)*
 - `CatalogId`: `str`
 
-Returns
-[GetLFTagResponseResponseTypeDef](./type_defs.md#getlftagresponseresponsetypedef).
+Returns [GetLFTagResponseTypeDef](./type_defs.md#getlftagresponsetypedef).
 
 ### get_resource_lf_tags
 
@@ -337,7 +348,7 @@ Boto3 documentation:
 [LakeFormation.Client.get_resource_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_resource_lf_tags)
 
 Arguments mapping described in
-[GetResourceLFTagsRequestTypeDef](./type_defs.md#getresourcelftagsrequesttypedef).
+[GetResourceLFTagsRequestRequestTypeDef](./type_defs.md#getresourcelftagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -346,7 +357,7 @@ Keyword-only arguments:
 - `ShowAssignedLFTags`: `bool`
 
 Returns
-[GetResourceLFTagsResponseResponseTypeDef](./type_defs.md#getresourcelftagsresponseresponsetypedef).
+[GetResourceLFTagsResponseTypeDef](./type_defs.md#getresourcelftagsresponsetypedef).
 
 ### grant_permissions
 
@@ -359,7 +370,7 @@ Boto3 documentation:
 [LakeFormation.Client.grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.grant_permissions)
 
 Arguments mapping described in
-[GrantPermissionsRequestTypeDef](./type_defs.md#grantpermissionsrequesttypedef).
+[GrantPermissionsRequestRequestTypeDef](./type_defs.md#grantpermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -385,7 +396,7 @@ Boto3 documentation:
 [LakeFormation.Client.list_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_lf_tags)
 
 Arguments mapping described in
-[ListLFTagsRequestTypeDef](./type_defs.md#listlftagsrequesttypedef).
+[ListLFTagsRequestRequestTypeDef](./type_defs.md#listlftagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -395,8 +406,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListLFTagsResponseResponseTypeDef](./type_defs.md#listlftagsresponseresponsetypedef).
+Returns [ListLFTagsResponseTypeDef](./type_defs.md#listlftagsresponsetypedef).
 
 ### list_permissions
 
@@ -409,7 +419,7 @@ Boto3 documentation:
 [LakeFormation.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_permissions)
 
 Arguments mapping described in
-[ListPermissionsRequestTypeDef](./type_defs.md#listpermissionsrequesttypedef).
+[ListPermissionsRequestRequestTypeDef](./type_defs.md#listpermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -423,7 +433,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPermissionsResponseResponseTypeDef](./type_defs.md#listpermissionsresponseresponsetypedef).
+[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
 ### list_resources
 
@@ -435,7 +445,7 @@ Boto3 documentation:
 [LakeFormation.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_resources)
 
 Arguments mapping described in
-[ListResourcesRequestTypeDef](./type_defs.md#listresourcesrequesttypedef).
+[ListResourcesRequestRequestTypeDef](./type_defs.md#listresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,7 +455,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListResourcesResponseResponseTypeDef](./type_defs.md#listresourcesresponseresponsetypedef).
+[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
 
 ### put_data_lake_settings
 
@@ -459,7 +469,7 @@ Boto3 documentation:
 [LakeFormation.Client.put_data_lake_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.put_data_lake_settings)
 
 Arguments mapping described in
-[PutDataLakeSettingsRequestTypeDef](./type_defs.md#putdatalakesettingsrequesttypedef).
+[PutDataLakeSettingsRequestRequestTypeDef](./type_defs.md#putdatalakesettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,7 +490,7 @@ Boto3 documentation:
 [LakeFormation.Client.register_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.register_resource)
 
 Arguments mapping described in
-[RegisterResourceRequestTypeDef](./type_defs.md#registerresourcerequesttypedef).
+[RegisterResourceRequestRequestTypeDef](./type_defs.md#registerresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -501,7 +511,7 @@ Boto3 documentation:
 [LakeFormation.Client.remove_lf_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.remove_lf_tags_from_resource)
 
 Arguments mapping described in
-[RemoveLFTagsFromResourceRequestTypeDef](./type_defs.md#removelftagsfromresourcerequesttypedef).
+[RemoveLFTagsFromResourceRequestRequestTypeDef](./type_defs.md#removelftagsfromresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -511,7 +521,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[RemoveLFTagsFromResourceResponseResponseTypeDef](./type_defs.md#removelftagsfromresourceresponseresponsetypedef).
+[RemoveLFTagsFromResourceResponseTypeDef](./type_defs.md#removelftagsfromresourceresponsetypedef).
 
 ### revoke_permissions
 
@@ -524,7 +534,7 @@ Boto3 documentation:
 [LakeFormation.Client.revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.revoke_permissions)
 
 Arguments mapping described in
-[RevokePermissionsRequestTypeDef](./type_defs.md#revokepermissionsrequesttypedef).
+[RevokePermissionsRequestRequestTypeDef](./type_defs.md#revokepermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -551,7 +561,7 @@ Boto3 documentation:
 [LakeFormation.Client.search_databases_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_databases_by_lf_tags)
 
 Arguments mapping described in
-[SearchDatabasesByLFTagsRequestTypeDef](./type_defs.md#searchdatabasesbylftagsrequesttypedef).
+[SearchDatabasesByLFTagsRequestRequestTypeDef](./type_defs.md#searchdatabasesbylftagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -562,7 +572,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[SearchDatabasesByLFTagsResponseResponseTypeDef](./type_defs.md#searchdatabasesbylftagsresponseresponsetypedef).
+[SearchDatabasesByLFTagsResponseTypeDef](./type_defs.md#searchdatabasesbylftagsresponsetypedef).
 
 ### search_tables_by_lf_tags
 
@@ -575,7 +585,7 @@ Boto3 documentation:
 [LakeFormation.Client.search_tables_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_tables_by_lf_tags)
 
 Arguments mapping described in
-[SearchTablesByLFTagsRequestTypeDef](./type_defs.md#searchtablesbylftagsrequesttypedef).
+[SearchTablesByLFTagsRequestRequestTypeDef](./type_defs.md#searchtablesbylftagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -586,7 +596,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 
 Returns
-[SearchTablesByLFTagsResponseResponseTypeDef](./type_defs.md#searchtablesbylftagsresponseresponsetypedef).
+[SearchTablesByLFTagsResponseTypeDef](./type_defs.md#searchtablesbylftagsresponsetypedef).
 
 ### update_lf_tag
 
@@ -598,7 +608,7 @@ Boto3 documentation:
 [LakeFormation.Client.update_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_lf_tag)
 
 Arguments mapping described in
-[UpdateLFTagRequestTypeDef](./type_defs.md#updatelftagrequesttypedef).
+[UpdateLFTagRequestRequestTypeDef](./type_defs.md#updatelftagrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -620,7 +630,7 @@ Boto3 documentation:
 [LakeFormation.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_resource)
 
 Arguments mapping described in
-[UpdateResourceRequestTypeDef](./type_defs.md#updateresourcerequesttypedef).
+[UpdateResourceRequestRequestTypeDef](./type_defs.md#updateresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

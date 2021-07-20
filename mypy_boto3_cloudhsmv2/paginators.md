@@ -37,7 +37,7 @@ Arguments for `DescribeBackupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBackupsPaginator.paginate` returns
-`Iterator`\[[DescribeBackupsResponseResponseTypeDef](./type_defs.md#describebackupsresponseresponsetypedef)\].
+`Iterator`\[[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef)\].
 
 ## DescribeClustersPaginator
 
@@ -63,7 +63,7 @@ Arguments for `DescribeClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClustersPaginator.paginate` returns
-`Iterator`\[[DescribeClustersResponseResponseTypeDef](./type_defs.md#describeclustersresponseresponsetypedef)\].
+`Iterator`\[[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef)\].
 
 ## ListTagsPaginator
 
@@ -88,4 +88,4 @@ Arguments for `ListTagsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsPaginator.paginate` returns
-`Iterator`\[[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef)\].
+`Iterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].

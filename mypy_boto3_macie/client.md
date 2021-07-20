@@ -11,6 +11,7 @@ type annotations stubs module
   - [MacieClient](#macieclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_member_account](#associate_member_account)
     - [associate_s3_resources](#associate_s3_resources)
     - [can_paginate](#can_paginate)
@@ -60,6 +61,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MacieClient exceptions.
+
+Type annotations for `boto3.client("macie").exceptions` method.
+
+Boto3 documentation:
+[Macie.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_member_account
 
 Associates a specified AWS account with Amazon Macie Classic as a member
@@ -71,7 +83,7 @@ Boto3 documentation:
 [Macie.Client.associate_member_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_member_account)
 
 Arguments mapping described in
-[AssociateMemberAccountRequestTypeDef](./type_defs.md#associatememberaccountrequesttypedef).
+[AssociateMemberAccountRequestRequestTypeDef](./type_defs.md#associatememberaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -88,7 +100,7 @@ Boto3 documentation:
 [Macie.Client.associate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_s3_resources)
 
 Arguments mapping described in
-[AssociateS3ResourcesRequestTypeDef](./type_defs.md#associates3resourcesrequesttypedef).
+[AssociateS3ResourcesRequestRequestTypeDef](./type_defs.md#associates3resourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -98,7 +110,7 @@ Keyword-only arguments:
 - `memberAccountId`: `str`
 
 Returns
-[AssociateS3ResourcesResultResponseTypeDef](./type_defs.md#associates3resourcesresultresponsetypedef).
+[AssociateS3ResourcesResultTypeDef](./type_defs.md#associates3resourcesresulttypedef).
 
 ### can_paginate
 
@@ -126,7 +138,7 @@ Boto3 documentation:
 [Macie.Client.disassociate_member_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_member_account)
 
 Arguments mapping described in
-[DisassociateMemberAccountRequestTypeDef](./type_defs.md#disassociatememberaccountrequesttypedef).
+[DisassociateMemberAccountRequestRequestTypeDef](./type_defs.md#disassociatememberaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,7 +154,7 @@ Boto3 documentation:
 [Macie.Client.disassociate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_s3_resources)
 
 Arguments mapping described in
-[DisassociateS3ResourcesRequestTypeDef](./type_defs.md#disassociates3resourcesrequesttypedef).
+[DisassociateS3ResourcesRequestRequestTypeDef](./type_defs.md#disassociates3resourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -151,7 +163,7 @@ Keyword-only arguments:
 - `memberAccountId`: `str`
 
 Returns
-[DisassociateS3ResourcesResultResponseTypeDef](./type_defs.md#disassociates3resourcesresultresponsetypedef).
+[DisassociateS3ResourcesResultTypeDef](./type_defs.md#disassociates3resourcesresulttypedef).
 
 ### generate_presigned_url
 
@@ -182,7 +194,7 @@ Boto3 documentation:
 [Macie.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_member_accounts)
 
 Arguments mapping described in
-[ListMemberAccountsRequestTypeDef](./type_defs.md#listmemberaccountsrequesttypedef).
+[ListMemberAccountsRequestRequestTypeDef](./type_defs.md#listmemberaccountsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -190,7 +202,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListMemberAccountsResultResponseTypeDef](./type_defs.md#listmemberaccountsresultresponsetypedef).
+[ListMemberAccountsResultTypeDef](./type_defs.md#listmemberaccountsresulttypedef).
 
 ### list_s3_resources
 
@@ -202,7 +214,7 @@ Boto3 documentation:
 [Macie.Client.list_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_s3_resources)
 
 Arguments mapping described in
-[ListS3ResourcesRequestTypeDef](./type_defs.md#lists3resourcesrequesttypedef).
+[ListS3ResourcesRequestRequestTypeDef](./type_defs.md#lists3resourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -211,7 +223,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListS3ResourcesResultResponseTypeDef](./type_defs.md#lists3resourcesresultresponsetypedef).
+[ListS3ResourcesResultTypeDef](./type_defs.md#lists3resourcesresulttypedef).
 
 ### update_s3_resources
 
@@ -223,7 +235,7 @@ Boto3 documentation:
 [Macie.Client.update_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.update_s3_resources)
 
 Arguments mapping described in
-[UpdateS3ResourcesRequestTypeDef](./type_defs.md#updates3resourcesrequesttypedef).
+[UpdateS3ResourcesRequestRequestTypeDef](./type_defs.md#updates3resourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -233,7 +245,7 @@ Keyword-only arguments:
 - `memberAccountId`: `str`
 
 Returns
-[UpdateS3ResourcesResultResponseTypeDef](./type_defs.md#updates3resourcesresultresponsetypedef).
+[UpdateS3ResourcesResultTypeDef](./type_defs.md#updates3resourcesresulttypedef).
 
 ### get_paginator
 

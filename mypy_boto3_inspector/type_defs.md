@@ -8,8 +8,8 @@ type annotations stubs module
 [mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 - [Typed dictionaries for boto3 Inspector module](#typed-dictionaries-for-boto3-inspector-module)
-  - [AddAttributesToFindingsRequestTypeDef](#addattributestofindingsrequesttypedef)
-  - [AddAttributesToFindingsResponseResponseTypeDef](#addattributestofindingsresponseresponsetypedef)
+  - [AddAttributesToFindingsRequestRequestTypeDef](#addattributestofindingsrequestrequesttypedef)
+  - [AddAttributesToFindingsResponseTypeDef](#addattributestofindingsresponsetypedef)
   - [AgentFilterTypeDef](#agentfiltertypedef)
   - [AgentPreviewTypeDef](#agentpreviewtypedef)
   - [AssessmentRunAgentTypeDef](#assessmentrunagenttypedef)
@@ -23,32 +23,32 @@ type annotations stubs module
   - [AssessmentTemplateTypeDef](#assessmenttemplatetypedef)
   - [AssetAttributesTypeDef](#assetattributestypedef)
   - [AttributeTypeDef](#attributetypedef)
-  - [CreateAssessmentTargetRequestTypeDef](#createassessmenttargetrequesttypedef)
-  - [CreateAssessmentTargetResponseResponseTypeDef](#createassessmenttargetresponseresponsetypedef)
-  - [CreateAssessmentTemplateRequestTypeDef](#createassessmenttemplaterequesttypedef)
-  - [CreateAssessmentTemplateResponseResponseTypeDef](#createassessmenttemplateresponseresponsetypedef)
-  - [CreateExclusionsPreviewRequestTypeDef](#createexclusionspreviewrequesttypedef)
-  - [CreateExclusionsPreviewResponseResponseTypeDef](#createexclusionspreviewresponseresponsetypedef)
-  - [CreateResourceGroupRequestTypeDef](#createresourcegrouprequesttypedef)
-  - [CreateResourceGroupResponseResponseTypeDef](#createresourcegroupresponseresponsetypedef)
-  - [DeleteAssessmentRunRequestTypeDef](#deleteassessmentrunrequesttypedef)
-  - [DeleteAssessmentTargetRequestTypeDef](#deleteassessmenttargetrequesttypedef)
-  - [DeleteAssessmentTemplateRequestTypeDef](#deleteassessmenttemplaterequesttypedef)
-  - [DescribeAssessmentRunsRequestTypeDef](#describeassessmentrunsrequesttypedef)
-  - [DescribeAssessmentRunsResponseResponseTypeDef](#describeassessmentrunsresponseresponsetypedef)
-  - [DescribeAssessmentTargetsRequestTypeDef](#describeassessmenttargetsrequesttypedef)
-  - [DescribeAssessmentTargetsResponseResponseTypeDef](#describeassessmenttargetsresponseresponsetypedef)
-  - [DescribeAssessmentTemplatesRequestTypeDef](#describeassessmenttemplatesrequesttypedef)
-  - [DescribeAssessmentTemplatesResponseResponseTypeDef](#describeassessmenttemplatesresponseresponsetypedef)
-  - [DescribeCrossAccountAccessRoleResponseResponseTypeDef](#describecrossaccountaccessroleresponseresponsetypedef)
-  - [DescribeExclusionsRequestTypeDef](#describeexclusionsrequesttypedef)
-  - [DescribeExclusionsResponseResponseTypeDef](#describeexclusionsresponseresponsetypedef)
-  - [DescribeFindingsRequestTypeDef](#describefindingsrequesttypedef)
-  - [DescribeFindingsResponseResponseTypeDef](#describefindingsresponseresponsetypedef)
-  - [DescribeResourceGroupsRequestTypeDef](#describeresourcegroupsrequesttypedef)
-  - [DescribeResourceGroupsResponseResponseTypeDef](#describeresourcegroupsresponseresponsetypedef)
-  - [DescribeRulesPackagesRequestTypeDef](#describerulespackagesrequesttypedef)
-  - [DescribeRulesPackagesResponseResponseTypeDef](#describerulespackagesresponseresponsetypedef)
+  - [CreateAssessmentTargetRequestRequestTypeDef](#createassessmenttargetrequestrequesttypedef)
+  - [CreateAssessmentTargetResponseTypeDef](#createassessmenttargetresponsetypedef)
+  - [CreateAssessmentTemplateRequestRequestTypeDef](#createassessmenttemplaterequestrequesttypedef)
+  - [CreateAssessmentTemplateResponseTypeDef](#createassessmenttemplateresponsetypedef)
+  - [CreateExclusionsPreviewRequestRequestTypeDef](#createexclusionspreviewrequestrequesttypedef)
+  - [CreateExclusionsPreviewResponseTypeDef](#createexclusionspreviewresponsetypedef)
+  - [CreateResourceGroupRequestRequestTypeDef](#createresourcegrouprequestrequesttypedef)
+  - [CreateResourceGroupResponseTypeDef](#createresourcegroupresponsetypedef)
+  - [DeleteAssessmentRunRequestRequestTypeDef](#deleteassessmentrunrequestrequesttypedef)
+  - [DeleteAssessmentTargetRequestRequestTypeDef](#deleteassessmenttargetrequestrequesttypedef)
+  - [DeleteAssessmentTemplateRequestRequestTypeDef](#deleteassessmenttemplaterequestrequesttypedef)
+  - [DescribeAssessmentRunsRequestRequestTypeDef](#describeassessmentrunsrequestrequesttypedef)
+  - [DescribeAssessmentRunsResponseTypeDef](#describeassessmentrunsresponsetypedef)
+  - [DescribeAssessmentTargetsRequestRequestTypeDef](#describeassessmenttargetsrequestrequesttypedef)
+  - [DescribeAssessmentTargetsResponseTypeDef](#describeassessmenttargetsresponsetypedef)
+  - [DescribeAssessmentTemplatesRequestRequestTypeDef](#describeassessmenttemplatesrequestrequesttypedef)
+  - [DescribeAssessmentTemplatesResponseTypeDef](#describeassessmenttemplatesresponsetypedef)
+  - [DescribeCrossAccountAccessRoleResponseTypeDef](#describecrossaccountaccessroleresponsetypedef)
+  - [DescribeExclusionsRequestRequestTypeDef](#describeexclusionsrequestrequesttypedef)
+  - [DescribeExclusionsResponseTypeDef](#describeexclusionsresponsetypedef)
+  - [DescribeFindingsRequestRequestTypeDef](#describefindingsrequestrequesttypedef)
+  - [DescribeFindingsResponseTypeDef](#describefindingsresponsetypedef)
+  - [DescribeResourceGroupsRequestRequestTypeDef](#describeresourcegroupsrequestrequesttypedef)
+  - [DescribeResourceGroupsResponseTypeDef](#describeresourcegroupsresponsetypedef)
+  - [DescribeRulesPackagesRequestRequestTypeDef](#describerulespackagesrequestrequesttypedef)
+  - [DescribeRulesPackagesResponseTypeDef](#describerulespackagesresponsetypedef)
   - [DurationRangeTypeDef](#durationrangetypedef)
   - [EventSubscriptionTypeDef](#eventsubscriptiontypedef)
   - [ExclusionPreviewTypeDef](#exclusionpreviewtypedef)
@@ -56,61 +56,61 @@ type annotations stubs module
   - [FailedItemDetailsTypeDef](#faileditemdetailstypedef)
   - [FindingFilterTypeDef](#findingfiltertypedef)
   - [FindingTypeDef](#findingtypedef)
-  - [GetAssessmentReportRequestTypeDef](#getassessmentreportrequesttypedef)
-  - [GetAssessmentReportResponseResponseTypeDef](#getassessmentreportresponseresponsetypedef)
-  - [GetExclusionsPreviewRequestTypeDef](#getexclusionspreviewrequesttypedef)
-  - [GetExclusionsPreviewResponseResponseTypeDef](#getexclusionspreviewresponseresponsetypedef)
-  - [GetTelemetryMetadataRequestTypeDef](#gettelemetrymetadatarequesttypedef)
-  - [GetTelemetryMetadataResponseResponseTypeDef](#gettelemetrymetadataresponseresponsetypedef)
+  - [GetAssessmentReportRequestRequestTypeDef](#getassessmentreportrequestrequesttypedef)
+  - [GetAssessmentReportResponseTypeDef](#getassessmentreportresponsetypedef)
+  - [GetExclusionsPreviewRequestRequestTypeDef](#getexclusionspreviewrequestrequesttypedef)
+  - [GetExclusionsPreviewResponseTypeDef](#getexclusionspreviewresponsetypedef)
+  - [GetTelemetryMetadataRequestRequestTypeDef](#gettelemetrymetadatarequestrequesttypedef)
+  - [GetTelemetryMetadataResponseTypeDef](#gettelemetrymetadataresponsetypedef)
   - [InspectorServiceAttributesTypeDef](#inspectorserviceattributestypedef)
-  - [ListAssessmentRunAgentsRequestTypeDef](#listassessmentrunagentsrequesttypedef)
-  - [ListAssessmentRunAgentsResponseResponseTypeDef](#listassessmentrunagentsresponseresponsetypedef)
-  - [ListAssessmentRunsRequestTypeDef](#listassessmentrunsrequesttypedef)
-  - [ListAssessmentRunsResponseResponseTypeDef](#listassessmentrunsresponseresponsetypedef)
-  - [ListAssessmentTargetsRequestTypeDef](#listassessmenttargetsrequesttypedef)
-  - [ListAssessmentTargetsResponseResponseTypeDef](#listassessmenttargetsresponseresponsetypedef)
-  - [ListAssessmentTemplatesRequestTypeDef](#listassessmenttemplatesrequesttypedef)
-  - [ListAssessmentTemplatesResponseResponseTypeDef](#listassessmenttemplatesresponseresponsetypedef)
-  - [ListEventSubscriptionsRequestTypeDef](#listeventsubscriptionsrequesttypedef)
-  - [ListEventSubscriptionsResponseResponseTypeDef](#listeventsubscriptionsresponseresponsetypedef)
-  - [ListExclusionsRequestTypeDef](#listexclusionsrequesttypedef)
-  - [ListExclusionsResponseResponseTypeDef](#listexclusionsresponseresponsetypedef)
-  - [ListFindingsRequestTypeDef](#listfindingsrequesttypedef)
-  - [ListFindingsResponseResponseTypeDef](#listfindingsresponseresponsetypedef)
-  - [ListRulesPackagesRequestTypeDef](#listrulespackagesrequesttypedef)
-  - [ListRulesPackagesResponseResponseTypeDef](#listrulespackagesresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListAssessmentRunAgentsRequestRequestTypeDef](#listassessmentrunagentsrequestrequesttypedef)
+  - [ListAssessmentRunAgentsResponseTypeDef](#listassessmentrunagentsresponsetypedef)
+  - [ListAssessmentRunsRequestRequestTypeDef](#listassessmentrunsrequestrequesttypedef)
+  - [ListAssessmentRunsResponseTypeDef](#listassessmentrunsresponsetypedef)
+  - [ListAssessmentTargetsRequestRequestTypeDef](#listassessmenttargetsrequestrequesttypedef)
+  - [ListAssessmentTargetsResponseTypeDef](#listassessmenttargetsresponsetypedef)
+  - [ListAssessmentTemplatesRequestRequestTypeDef](#listassessmenttemplatesrequestrequesttypedef)
+  - [ListAssessmentTemplatesResponseTypeDef](#listassessmenttemplatesresponsetypedef)
+  - [ListEventSubscriptionsRequestRequestTypeDef](#listeventsubscriptionsrequestrequesttypedef)
+  - [ListEventSubscriptionsResponseTypeDef](#listeventsubscriptionsresponsetypedef)
+  - [ListExclusionsRequestRequestTypeDef](#listexclusionsrequestrequesttypedef)
+  - [ListExclusionsResponseTypeDef](#listexclusionsresponsetypedef)
+  - [ListFindingsRequestRequestTypeDef](#listfindingsrequestrequesttypedef)
+  - [ListFindingsResponseTypeDef](#listfindingsresponsetypedef)
+  - [ListRulesPackagesRequestRequestTypeDef](#listrulespackagesrequestrequesttypedef)
+  - [ListRulesPackagesResponseTypeDef](#listrulespackagesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PreviewAgentsRequestTypeDef](#previewagentsrequesttypedef)
-  - [PreviewAgentsResponseResponseTypeDef](#previewagentsresponseresponsetypedef)
+  - [PreviewAgentsRequestRequestTypeDef](#previewagentsrequestrequesttypedef)
+  - [PreviewAgentsResponseTypeDef](#previewagentsresponsetypedef)
   - [PrivateIpTypeDef](#privateiptypedef)
-  - [RegisterCrossAccountAccessRoleRequestTypeDef](#registercrossaccountaccessrolerequesttypedef)
-  - [RemoveAttributesFromFindingsRequestTypeDef](#removeattributesfromfindingsrequesttypedef)
-  - [RemoveAttributesFromFindingsResponseResponseTypeDef](#removeattributesfromfindingsresponseresponsetypedef)
+  - [RegisterCrossAccountAccessRoleRequestRequestTypeDef](#registercrossaccountaccessrolerequestrequesttypedef)
+  - [RemoveAttributesFromFindingsRequestRequestTypeDef](#removeattributesfromfindingsrequestrequesttypedef)
+  - [RemoveAttributesFromFindingsResponseTypeDef](#removeattributesfromfindingsresponsetypedef)
   - [ResourceGroupTagTypeDef](#resourcegrouptagtypedef)
   - [ResourceGroupTypeDef](#resourcegrouptypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RulesPackageTypeDef](#rulespackagetypedef)
   - [ScopeTypeDef](#scopetypedef)
   - [SecurityGroupTypeDef](#securitygrouptypedef)
-  - [SetTagsForResourceRequestTypeDef](#settagsforresourcerequesttypedef)
-  - [StartAssessmentRunRequestTypeDef](#startassessmentrunrequesttypedef)
-  - [StartAssessmentRunResponseResponseTypeDef](#startassessmentrunresponseresponsetypedef)
-  - [StopAssessmentRunRequestTypeDef](#stopassessmentrunrequesttypedef)
-  - [SubscribeToEventRequestTypeDef](#subscribetoeventrequesttypedef)
+  - [SetTagsForResourceRequestRequestTypeDef](#settagsforresourcerequestrequesttypedef)
+  - [StartAssessmentRunRequestRequestTypeDef](#startassessmentrunrequestrequesttypedef)
+  - [StartAssessmentRunResponseTypeDef](#startassessmentrunresponsetypedef)
+  - [StopAssessmentRunRequestRequestTypeDef](#stopassessmentrunrequestrequesttypedef)
+  - [SubscribeToEventRequestRequestTypeDef](#subscribetoeventrequestrequesttypedef)
   - [SubscriptionTypeDef](#subscriptiontypedef)
   - [TagTypeDef](#tagtypedef)
   - [TelemetryMetadataTypeDef](#telemetrymetadatatypedef)
   - [TimestampRangeTypeDef](#timestamprangetypedef)
-  - [UnsubscribeFromEventRequestTypeDef](#unsubscribefromeventrequesttypedef)
-  - [UpdateAssessmentTargetRequestTypeDef](#updateassessmenttargetrequesttypedef)
+  - [UnsubscribeFromEventRequestRequestTypeDef](#unsubscribefromeventrequestrequesttypedef)
+  - [UpdateAssessmentTargetRequestRequestTypeDef](#updateassessmenttargetrequestrequesttypedef)
 
-## AddAttributesToFindingsRequestTypeDef
+## AddAttributesToFindingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import AddAttributesToFindingsRequestTypeDef
+from mypy_boto3_inspector.type_defs import AddAttributesToFindingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -118,10 +118,10 @@ Required fields:
 - `findingArns`: `List`\[`str`\]
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
-## AddAttributesToFindingsResponseResponseTypeDef
+## AddAttributesToFindingsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import AddAttributesToFindingsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import AddAttributesToFindingsResponseTypeDef
 ```
 
 Required fields:
@@ -359,10 +359,10 @@ Optional fields:
 
 - `value`: `str`
 
-## CreateAssessmentTargetRequestTypeDef
+## CreateAssessmentTargetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import CreateAssessmentTargetRequestTypeDef
+from mypy_boto3_inspector.type_defs import CreateAssessmentTargetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -373,10 +373,10 @@ Optional fields:
 
 - `resourceGroupArn`: `str`
 
-## CreateAssessmentTargetResponseResponseTypeDef
+## CreateAssessmentTargetResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import CreateAssessmentTargetResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import CreateAssessmentTargetResponseTypeDef
 ```
 
 Required fields:
@@ -385,10 +385,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAssessmentTemplateRequestTypeDef
+## CreateAssessmentTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import CreateAssessmentTemplateRequestTypeDef
+from mypy_boto3_inspector.type_defs import CreateAssessmentTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -403,10 +403,10 @@ Optional fields:
 - `userAttributesForFindings`:
   `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
-## CreateAssessmentTemplateResponseResponseTypeDef
+## CreateAssessmentTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import CreateAssessmentTemplateResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import CreateAssessmentTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -415,20 +415,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateExclusionsPreviewRequestTypeDef
+## CreateExclusionsPreviewRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import CreateExclusionsPreviewRequestTypeDef
+from mypy_boto3_inspector.type_defs import CreateExclusionsPreviewRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `assessmentTemplateArn`: `str`
 
-## CreateExclusionsPreviewResponseResponseTypeDef
+## CreateExclusionsPreviewResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import CreateExclusionsPreviewResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import CreateExclusionsPreviewResponseTypeDef
 ```
 
 Required fields:
@@ -437,10 +437,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateResourceGroupRequestTypeDef
+## CreateResourceGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import CreateResourceGroupRequestTypeDef
+from mypy_boto3_inspector.type_defs import CreateResourceGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -448,10 +448,10 @@ Required fields:
 - `resourceGroupTags`:
   `List`\[[ResourceGroupTagTypeDef](./type_defs.md#resourcegrouptagtypedef)\]
 
-## CreateResourceGroupResponseResponseTypeDef
+## CreateResourceGroupResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import CreateResourceGroupResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import CreateResourceGroupResponseTypeDef
 ```
 
 Required fields:
@@ -460,50 +460,50 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAssessmentRunRequestTypeDef
+## DeleteAssessmentRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DeleteAssessmentRunRequestTypeDef
+from mypy_boto3_inspector.type_defs import DeleteAssessmentRunRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `assessmentRunArn`: `str`
 
-## DeleteAssessmentTargetRequestTypeDef
+## DeleteAssessmentTargetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DeleteAssessmentTargetRequestTypeDef
+from mypy_boto3_inspector.type_defs import DeleteAssessmentTargetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `assessmentTargetArn`: `str`
 
-## DeleteAssessmentTemplateRequestTypeDef
+## DeleteAssessmentTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DeleteAssessmentTemplateRequestTypeDef
+from mypy_boto3_inspector.type_defs import DeleteAssessmentTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `assessmentTemplateArn`: `str`
 
-## DescribeAssessmentRunsRequestTypeDef
+## DescribeAssessmentRunsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeAssessmentRunsRequestTypeDef
+from mypy_boto3_inspector.type_defs import DescribeAssessmentRunsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `assessmentRunArns`: `List`\[`str`\]
 
-## DescribeAssessmentRunsResponseResponseTypeDef
+## DescribeAssessmentRunsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeAssessmentRunsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import DescribeAssessmentRunsResponseTypeDef
 ```
 
 Required fields:
@@ -515,20 +515,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAssessmentTargetsRequestTypeDef
+## DescribeAssessmentTargetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeAssessmentTargetsRequestTypeDef
+from mypy_boto3_inspector.type_defs import DescribeAssessmentTargetsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `assessmentTargetArns`: `List`\[`str`\]
 
-## DescribeAssessmentTargetsResponseResponseTypeDef
+## DescribeAssessmentTargetsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeAssessmentTargetsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import DescribeAssessmentTargetsResponseTypeDef
 ```
 
 Required fields:
@@ -540,20 +540,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAssessmentTemplatesRequestTypeDef
+## DescribeAssessmentTemplatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeAssessmentTemplatesRequestTypeDef
+from mypy_boto3_inspector.type_defs import DescribeAssessmentTemplatesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `assessmentTemplateArns`: `List`\[`str`\]
 
-## DescribeAssessmentTemplatesResponseResponseTypeDef
+## DescribeAssessmentTemplatesResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeAssessmentTemplatesResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import DescribeAssessmentTemplatesResponseTypeDef
 ```
 
 Required fields:
@@ -565,10 +565,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCrossAccountAccessRoleResponseResponseTypeDef
+## DescribeCrossAccountAccessRoleResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeCrossAccountAccessRoleResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import DescribeCrossAccountAccessRoleResponseTypeDef
 ```
 
 Required fields:
@@ -579,10 +579,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeExclusionsRequestTypeDef
+## DescribeExclusionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeExclusionsRequestTypeDef
+from mypy_boto3_inspector.type_defs import DescribeExclusionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -593,10 +593,10 @@ Optional fields:
 
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
-## DescribeExclusionsResponseResponseTypeDef
+## DescribeExclusionsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeExclusionsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import DescribeExclusionsResponseTypeDef
 ```
 
 Required fields:
@@ -608,10 +608,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFindingsRequestTypeDef
+## DescribeFindingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeFindingsRequestTypeDef
+from mypy_boto3_inspector.type_defs import DescribeFindingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -622,10 +622,10 @@ Optional fields:
 
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
-## DescribeFindingsResponseResponseTypeDef
+## DescribeFindingsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeFindingsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import DescribeFindingsResponseTypeDef
 ```
 
 Required fields:
@@ -636,20 +636,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeResourceGroupsRequestTypeDef
+## DescribeResourceGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeResourceGroupsRequestTypeDef
+from mypy_boto3_inspector.type_defs import DescribeResourceGroupsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceGroupArns`: `List`\[`str`\]
 
-## DescribeResourceGroupsResponseResponseTypeDef
+## DescribeResourceGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeResourceGroupsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import DescribeResourceGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -661,10 +661,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRulesPackagesRequestTypeDef
+## DescribeRulesPackagesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeRulesPackagesRequestTypeDef
+from mypy_boto3_inspector.type_defs import DescribeRulesPackagesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -675,10 +675,10 @@ Optional fields:
 
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
-## DescribeRulesPackagesResponseResponseTypeDef
+## DescribeRulesPackagesResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import DescribeRulesPackagesResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import DescribeRulesPackagesResponseTypeDef
 ```
 
 Required fields:
@@ -812,10 +812,10 @@ Optional fields:
 - `confidence`: `int`
 - `indicatorOfCompromise`: `bool`
 
-## GetAssessmentReportRequestTypeDef
+## GetAssessmentReportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import GetAssessmentReportRequestTypeDef
+from mypy_boto3_inspector.type_defs import GetAssessmentReportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -825,10 +825,10 @@ Required fields:
   [ReportFileFormatType](./literals.md#reportfileformattype)
 - `reportType`: [ReportTypeType](./literals.md#reporttypetype)
 
-## GetAssessmentReportResponseResponseTypeDef
+## GetAssessmentReportResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import GetAssessmentReportResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import GetAssessmentReportResponseTypeDef
 ```
 
 Required fields:
@@ -838,10 +838,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetExclusionsPreviewRequestTypeDef
+## GetExclusionsPreviewRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import GetExclusionsPreviewRequestTypeDef
+from mypy_boto3_inspector.type_defs import GetExclusionsPreviewRequestRequestTypeDef
 ```
 
 Required fields:
@@ -855,10 +855,10 @@ Optional fields:
 - `maxResults`: `int`
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
-## GetExclusionsPreviewResponseResponseTypeDef
+## GetExclusionsPreviewResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import GetExclusionsPreviewResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import GetExclusionsPreviewResponseTypeDef
 ```
 
 Required fields:
@@ -870,20 +870,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTelemetryMetadataRequestTypeDef
+## GetTelemetryMetadataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import GetTelemetryMetadataRequestTypeDef
+from mypy_boto3_inspector.type_defs import GetTelemetryMetadataRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `assessmentRunArn`: `str`
 
-## GetTelemetryMetadataResponseResponseTypeDef
+## GetTelemetryMetadataResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import GetTelemetryMetadataResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import GetTelemetryMetadataResponseTypeDef
 ```
 
 Required fields:
@@ -908,10 +908,10 @@ Optional fields:
 - `assessmentRunArn`: `str`
 - `rulesPackageArn`: `str`
 
-## ListAssessmentRunAgentsRequestTypeDef
+## ListAssessmentRunAgentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListAssessmentRunAgentsRequestTypeDef
+from mypy_boto3_inspector.type_defs import ListAssessmentRunAgentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -924,10 +924,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAssessmentRunAgentsResponseResponseTypeDef
+## ListAssessmentRunAgentsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListAssessmentRunAgentsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import ListAssessmentRunAgentsResponseTypeDef
 ```
 
 Required fields:
@@ -938,10 +938,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAssessmentRunsRequestTypeDef
+## ListAssessmentRunsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListAssessmentRunsRequestTypeDef
+from mypy_boto3_inspector.type_defs import ListAssessmentRunsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -952,10 +952,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAssessmentRunsResponseResponseTypeDef
+## ListAssessmentRunsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListAssessmentRunsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import ListAssessmentRunsResponseTypeDef
 ```
 
 Required fields:
@@ -965,10 +965,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAssessmentTargetsRequestTypeDef
+## ListAssessmentTargetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListAssessmentTargetsRequestTypeDef
+from mypy_boto3_inspector.type_defs import ListAssessmentTargetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -978,10 +978,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAssessmentTargetsResponseResponseTypeDef
+## ListAssessmentTargetsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListAssessmentTargetsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import ListAssessmentTargetsResponseTypeDef
 ```
 
 Required fields:
@@ -991,10 +991,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAssessmentTemplatesRequestTypeDef
+## ListAssessmentTemplatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListAssessmentTemplatesRequestTypeDef
+from mypy_boto3_inspector.type_defs import ListAssessmentTemplatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1005,10 +1005,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAssessmentTemplatesResponseResponseTypeDef
+## ListAssessmentTemplatesResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListAssessmentTemplatesResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import ListAssessmentTemplatesResponseTypeDef
 ```
 
 Required fields:
@@ -1018,10 +1018,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEventSubscriptionsRequestTypeDef
+## ListEventSubscriptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListEventSubscriptionsRequestTypeDef
+from mypy_boto3_inspector.type_defs import ListEventSubscriptionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1030,10 +1030,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListEventSubscriptionsResponseResponseTypeDef
+## ListEventSubscriptionsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListEventSubscriptionsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import ListEventSubscriptionsResponseTypeDef
 ```
 
 Required fields:
@@ -1044,10 +1044,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListExclusionsRequestTypeDef
+## ListExclusionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListExclusionsRequestTypeDef
+from mypy_boto3_inspector.type_defs import ListExclusionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1059,10 +1059,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListExclusionsResponseResponseTypeDef
+## ListExclusionsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListExclusionsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import ListExclusionsResponseTypeDef
 ```
 
 Required fields:
@@ -1072,10 +1072,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFindingsRequestTypeDef
+## ListFindingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListFindingsRequestTypeDef
+from mypy_boto3_inspector.type_defs import ListFindingsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1085,10 +1085,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListFindingsResponseResponseTypeDef
+## ListFindingsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListFindingsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import ListFindingsResponseTypeDef
 ```
 
 Required fields:
@@ -1098,10 +1098,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRulesPackagesRequestTypeDef
+## ListRulesPackagesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListRulesPackagesRequestTypeDef
+from mypy_boto3_inspector.type_defs import ListRulesPackagesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1109,10 +1109,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListRulesPackagesResponseResponseTypeDef
+## ListRulesPackagesResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListRulesPackagesResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import ListRulesPackagesResponseTypeDef
 ```
 
 Required fields:
@@ -1122,20 +1122,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_inspector.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1177,10 +1177,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PreviewAgentsRequestTypeDef
+## PreviewAgentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import PreviewAgentsRequestTypeDef
+from mypy_boto3_inspector.type_defs import PreviewAgentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1192,10 +1192,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## PreviewAgentsResponseResponseTypeDef
+## PreviewAgentsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import PreviewAgentsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import PreviewAgentsResponseTypeDef
 ```
 
 Required fields:
@@ -1217,20 +1217,20 @@ Optional fields:
 - `privateDnsName`: `str`
 - `privateIpAddress`: `str`
 
-## RegisterCrossAccountAccessRoleRequestTypeDef
+## RegisterCrossAccountAccessRoleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import RegisterCrossAccountAccessRoleRequestTypeDef
+from mypy_boto3_inspector.type_defs import RegisterCrossAccountAccessRoleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `roleArn`: `str`
 
-## RemoveAttributesFromFindingsRequestTypeDef
+## RemoveAttributesFromFindingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import RemoveAttributesFromFindingsRequestTypeDef
+from mypy_boto3_inspector.type_defs import RemoveAttributesFromFindingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1238,10 +1238,10 @@ Required fields:
 - `findingArns`: `List`\[`str`\]
 - `attributeKeys`: `List`\[`str`\]
 
-## RemoveAttributesFromFindingsResponseResponseTypeDef
+## RemoveAttributesFromFindingsResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import RemoveAttributesFromFindingsResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import RemoveAttributesFromFindingsResponseTypeDef
 ```
 
 Required fields:
@@ -1331,10 +1331,10 @@ Optional fields:
 - `groupName`: `str`
 - `groupId`: `str`
 
-## SetTagsForResourceRequestTypeDef
+## SetTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import SetTagsForResourceRequestTypeDef
+from mypy_boto3_inspector.type_defs import SetTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1345,10 +1345,10 @@ Optional fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## StartAssessmentRunRequestTypeDef
+## StartAssessmentRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import StartAssessmentRunRequestTypeDef
+from mypy_boto3_inspector.type_defs import StartAssessmentRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1359,10 +1359,10 @@ Optional fields:
 
 - `assessmentRunName`: `str`
 
-## StartAssessmentRunResponseResponseTypeDef
+## StartAssessmentRunResponseTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import StartAssessmentRunResponseResponseTypeDef
+from mypy_boto3_inspector.type_defs import StartAssessmentRunResponseTypeDef
 ```
 
 Required fields:
@@ -1371,10 +1371,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopAssessmentRunRequestTypeDef
+## StopAssessmentRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import StopAssessmentRunRequestTypeDef
+from mypy_boto3_inspector.type_defs import StopAssessmentRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1385,10 +1385,10 @@ Optional fields:
 
 - `stopAction`: [StopActionType](./literals.md#stopactiontype)
 
-## SubscribeToEventRequestTypeDef
+## SubscribeToEventRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import SubscribeToEventRequestTypeDef
+from mypy_boto3_inspector.type_defs import SubscribeToEventRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1450,10 +1450,10 @@ Optional fields:
 - `beginDate`: `Union`\[`datetime`, `str`\]
 - `endDate`: `Union`\[`datetime`, `str`\]
 
-## UnsubscribeFromEventRequestTypeDef
+## UnsubscribeFromEventRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import UnsubscribeFromEventRequestTypeDef
+from mypy_boto3_inspector.type_defs import UnsubscribeFromEventRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1462,10 +1462,10 @@ Required fields:
 - `event`: [InspectorEventType](./literals.md#inspectoreventtype)
 - `topicArn`: `str`
 
-## UpdateAssessmentTargetRequestTypeDef
+## UpdateAssessmentTargetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_inspector.type_defs import UpdateAssessmentTargetRequestTypeDef
+from mypy_boto3_inspector.type_defs import UpdateAssessmentTargetRequestRequestTypeDef
 ```
 
 Required fields:

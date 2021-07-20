@@ -60,7 +60,7 @@ Arguments for `DescribeClusterDbRevisionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterDbRevisionsPaginator.paginate` returns
-`Iterator`\[[ClusterDbRevisionsMessageResponseTypeDef](./type_defs.md#clusterdbrevisionsmessageresponsetypedef)\].
+`Iterator`\[[ClusterDbRevisionsMessageTypeDef](./type_defs.md#clusterdbrevisionsmessagetypedef)\].
 
 ## DescribeClusterParameterGroupsPaginator
 
@@ -88,7 +88,7 @@ Arguments for `DescribeClusterParameterGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterParameterGroupsPaginator.paginate` returns
-`Iterator`\[[ClusterParameterGroupsMessageResponseTypeDef](./type_defs.md#clusterparametergroupsmessageresponsetypedef)\].
+`Iterator`\[[ClusterParameterGroupsMessageTypeDef](./type_defs.md#clusterparametergroupsmessagetypedef)\].
 
 ## DescribeClusterParametersPaginator
 
@@ -115,7 +115,7 @@ Arguments for `DescribeClusterParametersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterParametersPaginator.paginate` returns
-`Iterator`\[[ClusterParameterGroupDetailsResponseTypeDef](./type_defs.md#clusterparametergroupdetailsresponsetypedef)\].
+`Iterator`\[[ClusterParameterGroupDetailsTypeDef](./type_defs.md#clusterparametergroupdetailstypedef)\].
 
 ## DescribeClusterSecurityGroupsPaginator
 
@@ -143,7 +143,7 @@ Arguments for `DescribeClusterSecurityGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[ClusterSecurityGroupMessageResponseTypeDef](./type_defs.md#clustersecuritygroupmessageresponsetypedef)\].
+`Iterator`\[[ClusterSecurityGroupMessageTypeDef](./type_defs.md#clustersecuritygroupmessagetypedef)\].
 
 ## DescribeClusterSnapshotsPaginator
 
@@ -179,7 +179,7 @@ Arguments for `DescribeClusterSnapshotsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterSnapshotsPaginator.paginate` returns
-`Iterator`\[[SnapshotMessageResponseTypeDef](./type_defs.md#snapshotmessageresponsetypedef)\].
+`Iterator`\[[SnapshotMessageTypeDef](./type_defs.md#snapshotmessagetypedef)\].
 
 ## DescribeClusterSubnetGroupsPaginator
 
@@ -207,7 +207,7 @@ Arguments for `DescribeClusterSubnetGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterSubnetGroupsPaginator.paginate` returns
-`Iterator`\[[ClusterSubnetGroupMessageResponseTypeDef](./type_defs.md#clustersubnetgroupmessageresponsetypedef)\].
+`Iterator`\[[ClusterSubnetGroupMessageTypeDef](./type_defs.md#clustersubnetgroupmessagetypedef)\].
 
 ## DescribeClusterTracksPaginator
 
@@ -233,7 +233,7 @@ Arguments for `DescribeClusterTracksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterTracksPaginator.paginate` returns
-`Iterator`\[[TrackListMessageResponseTypeDef](./type_defs.md#tracklistmessageresponsetypedef)\].
+`Iterator`\[[TrackListMessageTypeDef](./type_defs.md#tracklistmessagetypedef)\].
 
 ## DescribeClusterVersionsPaginator
 
@@ -260,7 +260,7 @@ Arguments for `DescribeClusterVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClusterVersionsPaginator.paginate` returns
-`Iterator`\[[ClusterVersionsMessageResponseTypeDef](./type_defs.md#clusterversionsmessageresponsetypedef)\].
+`Iterator`\[[ClusterVersionsMessageTypeDef](./type_defs.md#clusterversionsmessagetypedef)\].
 
 ## DescribeClustersPaginator
 
@@ -288,7 +288,7 @@ Arguments for `DescribeClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClustersPaginator.paginate` returns
-`Iterator`\[[ClustersMessageResponseTypeDef](./type_defs.md#clustersmessageresponsetypedef)\].
+`Iterator`\[[ClustersMessageTypeDef](./type_defs.md#clustersmessagetypedef)\].
 
 ## DescribeDefaultClusterParametersPaginator
 
@@ -314,7 +314,7 @@ Arguments for `DescribeDefaultClusterParametersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDefaultClusterParametersPaginator.paginate` returns
-`Iterator`\[[DescribeDefaultClusterParametersResultResponseTypeDef](./type_defs.md#describedefaultclusterparametersresultresponsetypedef)\].
+`Iterator`\[[DescribeDefaultClusterParametersResultTypeDef](./type_defs.md#describedefaultclusterparametersresulttypedef)\].
 
 ## DescribeEndpointAccessPaginator
 
@@ -343,7 +343,7 @@ Arguments for `DescribeEndpointAccessPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEndpointAccessPaginator.paginate` returns
-`Iterator`\[[EndpointAccessListResponseTypeDef](./type_defs.md#endpointaccesslistresponsetypedef)\].
+`Iterator`\[[EndpointAccessListTypeDef](./type_defs.md#endpointaccesslisttypedef)\].
 
 ## DescribeEndpointAuthorizationPaginator
 
@@ -371,7 +371,7 @@ Arguments for `DescribeEndpointAuthorizationPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEndpointAuthorizationPaginator.paginate` returns
-`Iterator`\[[EndpointAuthorizationListResponseTypeDef](./type_defs.md#endpointauthorizationlistresponsetypedef)\].
+`Iterator`\[[EndpointAuthorizationListTypeDef](./type_defs.md#endpointauthorizationlisttypedef)\].
 
 ## DescribeEventSubscriptionsPaginator
 
@@ -399,7 +399,7 @@ Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventSubscriptionsPaginator.paginate` returns
-`Iterator`\[[EventSubscriptionsMessageResponseTypeDef](./type_defs.md#eventsubscriptionsmessageresponsetypedef)\].
+`Iterator`\[[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -429,7 +429,7 @@ Arguments for `DescribeEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[EventsMessageResponseTypeDef](./type_defs.md#eventsmessageresponsetypedef)\].
+`Iterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
 
 ## DescribeHsmClientCertificatesPaginator
 
@@ -457,7 +457,7 @@ Arguments for `DescribeHsmClientCertificatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHsmClientCertificatesPaginator.paginate` returns
-`Iterator`\[[HsmClientCertificateMessageResponseTypeDef](./type_defs.md#hsmclientcertificatemessageresponsetypedef)\].
+`Iterator`\[[HsmClientCertificateMessageTypeDef](./type_defs.md#hsmclientcertificatemessagetypedef)\].
 
 ## DescribeHsmConfigurationsPaginator
 
@@ -485,7 +485,7 @@ Arguments for `DescribeHsmConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeHsmConfigurationsPaginator.paginate` returns
-`Iterator`\[[HsmConfigurationMessageResponseTypeDef](./type_defs.md#hsmconfigurationmessageresponsetypedef)\].
+`Iterator`\[[HsmConfigurationMessageTypeDef](./type_defs.md#hsmconfigurationmessagetypedef)\].
 
 ## DescribeNodeConfigurationOptionsPaginator
 
@@ -516,7 +516,7 @@ Arguments for `DescribeNodeConfigurationOptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNodeConfigurationOptionsPaginator.paginate` returns
-`Iterator`\[[NodeConfigurationOptionsMessageResponseTypeDef](./type_defs.md#nodeconfigurationoptionsmessageresponsetypedef)\].
+`Iterator`\[[NodeConfigurationOptionsMessageTypeDef](./type_defs.md#nodeconfigurationoptionsmessagetypedef)\].
 
 ## DescribeOrderableClusterOptionsPaginator
 
@@ -543,7 +543,7 @@ Arguments for `DescribeOrderableClusterOptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOrderableClusterOptionsPaginator.paginate` returns
-`Iterator`\[[OrderableClusterOptionsMessageResponseTypeDef](./type_defs.md#orderableclusteroptionsmessageresponsetypedef)\].
+`Iterator`\[[OrderableClusterOptionsMessageTypeDef](./type_defs.md#orderableclusteroptionsmessagetypedef)\].
 
 ## DescribeReservedNodeOfferingsPaginator
 
@@ -569,7 +569,7 @@ Arguments for `DescribeReservedNodeOfferingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedNodeOfferingsPaginator.paginate` returns
-`Iterator`\[[ReservedNodeOfferingsMessageResponseTypeDef](./type_defs.md#reservednodeofferingsmessageresponsetypedef)\].
+`Iterator`\[[ReservedNodeOfferingsMessageTypeDef](./type_defs.md#reservednodeofferingsmessagetypedef)\].
 
 ## DescribeReservedNodesPaginator
 
@@ -595,7 +595,7 @@ Arguments for `DescribeReservedNodesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedNodesPaginator.paginate` returns
-`Iterator`\[[ReservedNodesMessageResponseTypeDef](./type_defs.md#reservednodesmessageresponsetypedef)\].
+`Iterator`\[[ReservedNodesMessageTypeDef](./type_defs.md#reservednodesmessagetypedef)\].
 
 ## DescribeScheduledActionsPaginator
 
@@ -628,7 +628,7 @@ Arguments for `DescribeScheduledActionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledActionsPaginator.paginate` returns
-`Iterator`\[[ScheduledActionsMessageResponseTypeDef](./type_defs.md#scheduledactionsmessageresponsetypedef)\].
+`Iterator`\[[ScheduledActionsMessageTypeDef](./type_defs.md#scheduledactionsmessagetypedef)\].
 
 ## DescribeSnapshotCopyGrantsPaginator
 
@@ -656,7 +656,7 @@ Arguments for `DescribeSnapshotCopyGrantsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSnapshotCopyGrantsPaginator.paginate` returns
-`Iterator`\[[SnapshotCopyGrantMessageResponseTypeDef](./type_defs.md#snapshotcopygrantmessageresponsetypedef)\].
+`Iterator`\[[SnapshotCopyGrantMessageTypeDef](./type_defs.md#snapshotcopygrantmessagetypedef)\].
 
 ## DescribeSnapshotSchedulesPaginator
 
@@ -685,7 +685,7 @@ Arguments for `DescribeSnapshotSchedulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSnapshotSchedulesPaginator.paginate` returns
-`Iterator`\[[DescribeSnapshotSchedulesOutputMessageResponseTypeDef](./type_defs.md#describesnapshotschedulesoutputmessageresponsetypedef)\].
+`Iterator`\[[DescribeSnapshotSchedulesOutputMessageTypeDef](./type_defs.md#describesnapshotschedulesoutputmessagetypedef)\].
 
 ## DescribeTableRestoreStatusPaginator
 
@@ -712,7 +712,7 @@ Arguments for `DescribeTableRestoreStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTableRestoreStatusPaginator.paginate` returns
-`Iterator`\[[TableRestoreStatusMessageResponseTypeDef](./type_defs.md#tablerestorestatusmessageresponsetypedef)\].
+`Iterator`\[[TableRestoreStatusMessageTypeDef](./type_defs.md#tablerestorestatusmessagetypedef)\].
 
 ## DescribeTagsPaginator
 
@@ -740,7 +740,7 @@ Arguments for `DescribeTagsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTagsPaginator.paginate` returns
-`Iterator`\[[TaggedResourceListMessageResponseTypeDef](./type_defs.md#taggedresourcelistmessageresponsetypedef)\].
+`Iterator`\[[TaggedResourceListMessageTypeDef](./type_defs.md#taggedresourcelistmessagetypedef)\].
 
 ## DescribeUsageLimitsPaginator
 
@@ -771,7 +771,7 @@ Arguments for `DescribeUsageLimitsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUsageLimitsPaginator.paginate` returns
-`Iterator`\[[UsageLimitListResponseTypeDef](./type_defs.md#usagelimitlistresponsetypedef)\].
+`Iterator`\[[UsageLimitListTypeDef](./type_defs.md#usagelimitlisttypedef)\].
 
 ## GetReservedNodeExchangeOfferingsPaginator
 
@@ -797,4 +797,4 @@ Arguments for `GetReservedNodeExchangeOfferingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetReservedNodeExchangeOfferingsPaginator.paginate` returns
-`Iterator`\[[GetReservedNodeExchangeOfferingsOutputMessageResponseTypeDef](./type_defs.md#getreservednodeexchangeofferingsoutputmessageresponsetypedef)\].
+`Iterator`\[[GetReservedNodeExchangeOfferingsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeofferingsoutputmessagetypedef)\].

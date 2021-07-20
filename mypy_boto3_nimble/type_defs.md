@@ -8,95 +8,95 @@ type annotations stubs module
 [mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 - [Typed dictionaries for boto3 NimbleStudio module](#typed-dictionaries-for-boto3-nimblestudio-module)
-  - [AcceptEulasRequestTypeDef](#accepteulasrequesttypedef)
-  - [AcceptEulasResponseResponseTypeDef](#accepteulasresponseresponsetypedef)
+  - [AcceptEulasRequestRequestTypeDef](#accepteulasrequestrequesttypedef)
+  - [AcceptEulasResponseTypeDef](#accepteulasresponsetypedef)
   - [ActiveDirectoryComputerAttributeTypeDef](#activedirectorycomputerattributetypedef)
   - [ActiveDirectoryConfigurationTypeDef](#activedirectoryconfigurationtypedef)
   - [ComputeFarmConfigurationTypeDef](#computefarmconfigurationtypedef)
-  - [CreateLaunchProfileRequestTypeDef](#createlaunchprofilerequesttypedef)
-  - [CreateLaunchProfileResponseResponseTypeDef](#createlaunchprofileresponseresponsetypedef)
-  - [CreateStreamingImageRequestTypeDef](#createstreamingimagerequesttypedef)
-  - [CreateStreamingImageResponseResponseTypeDef](#createstreamingimageresponseresponsetypedef)
-  - [CreateStreamingSessionRequestTypeDef](#createstreamingsessionrequesttypedef)
-  - [CreateStreamingSessionResponseResponseTypeDef](#createstreamingsessionresponseresponsetypedef)
-  - [CreateStreamingSessionStreamRequestTypeDef](#createstreamingsessionstreamrequesttypedef)
-  - [CreateStreamingSessionStreamResponseResponseTypeDef](#createstreamingsessionstreamresponseresponsetypedef)
-  - [CreateStudioComponentRequestTypeDef](#createstudiocomponentrequesttypedef)
-  - [CreateStudioComponentResponseResponseTypeDef](#createstudiocomponentresponseresponsetypedef)
-  - [CreateStudioRequestTypeDef](#createstudiorequesttypedef)
-  - [CreateStudioResponseResponseTypeDef](#createstudioresponseresponsetypedef)
-  - [DeleteLaunchProfileMemberRequestTypeDef](#deletelaunchprofilememberrequesttypedef)
-  - [DeleteLaunchProfileRequestTypeDef](#deletelaunchprofilerequesttypedef)
-  - [DeleteLaunchProfileResponseResponseTypeDef](#deletelaunchprofileresponseresponsetypedef)
-  - [DeleteStreamingImageRequestTypeDef](#deletestreamingimagerequesttypedef)
-  - [DeleteStreamingImageResponseResponseTypeDef](#deletestreamingimageresponseresponsetypedef)
-  - [DeleteStreamingSessionRequestTypeDef](#deletestreamingsessionrequesttypedef)
-  - [DeleteStreamingSessionResponseResponseTypeDef](#deletestreamingsessionresponseresponsetypedef)
-  - [DeleteStudioComponentRequestTypeDef](#deletestudiocomponentrequesttypedef)
-  - [DeleteStudioComponentResponseResponseTypeDef](#deletestudiocomponentresponseresponsetypedef)
-  - [DeleteStudioMemberRequestTypeDef](#deletestudiomemberrequesttypedef)
-  - [DeleteStudioRequestTypeDef](#deletestudiorequesttypedef)
-  - [DeleteStudioResponseResponseTypeDef](#deletestudioresponseresponsetypedef)
+  - [CreateLaunchProfileRequestRequestTypeDef](#createlaunchprofilerequestrequesttypedef)
+  - [CreateLaunchProfileResponseTypeDef](#createlaunchprofileresponsetypedef)
+  - [CreateStreamingImageRequestRequestTypeDef](#createstreamingimagerequestrequesttypedef)
+  - [CreateStreamingImageResponseTypeDef](#createstreamingimageresponsetypedef)
+  - [CreateStreamingSessionRequestRequestTypeDef](#createstreamingsessionrequestrequesttypedef)
+  - [CreateStreamingSessionResponseTypeDef](#createstreamingsessionresponsetypedef)
+  - [CreateStreamingSessionStreamRequestRequestTypeDef](#createstreamingsessionstreamrequestrequesttypedef)
+  - [CreateStreamingSessionStreamResponseTypeDef](#createstreamingsessionstreamresponsetypedef)
+  - [CreateStudioComponentRequestRequestTypeDef](#createstudiocomponentrequestrequesttypedef)
+  - [CreateStudioComponentResponseTypeDef](#createstudiocomponentresponsetypedef)
+  - [CreateStudioRequestRequestTypeDef](#createstudiorequestrequesttypedef)
+  - [CreateStudioResponseTypeDef](#createstudioresponsetypedef)
+  - [DeleteLaunchProfileMemberRequestRequestTypeDef](#deletelaunchprofilememberrequestrequesttypedef)
+  - [DeleteLaunchProfileRequestRequestTypeDef](#deletelaunchprofilerequestrequesttypedef)
+  - [DeleteLaunchProfileResponseTypeDef](#deletelaunchprofileresponsetypedef)
+  - [DeleteStreamingImageRequestRequestTypeDef](#deletestreamingimagerequestrequesttypedef)
+  - [DeleteStreamingImageResponseTypeDef](#deletestreamingimageresponsetypedef)
+  - [DeleteStreamingSessionRequestRequestTypeDef](#deletestreamingsessionrequestrequesttypedef)
+  - [DeleteStreamingSessionResponseTypeDef](#deletestreamingsessionresponsetypedef)
+  - [DeleteStudioComponentRequestRequestTypeDef](#deletestudiocomponentrequestrequesttypedef)
+  - [DeleteStudioComponentResponseTypeDef](#deletestudiocomponentresponsetypedef)
+  - [DeleteStudioMemberRequestRequestTypeDef](#deletestudiomemberrequestrequesttypedef)
+  - [DeleteStudioRequestRequestTypeDef](#deletestudiorequestrequesttypedef)
+  - [DeleteStudioResponseTypeDef](#deletestudioresponsetypedef)
   - [EulaAcceptanceTypeDef](#eulaacceptancetypedef)
   - [EulaTypeDef](#eulatypedef)
-  - [GetEulaRequestTypeDef](#geteularequesttypedef)
-  - [GetEulaResponseResponseTypeDef](#geteularesponseresponsetypedef)
-  - [GetLaunchProfileDetailsRequestTypeDef](#getlaunchprofiledetailsrequesttypedef)
-  - [GetLaunchProfileDetailsResponseResponseTypeDef](#getlaunchprofiledetailsresponseresponsetypedef)
-  - [GetLaunchProfileInitializationRequestTypeDef](#getlaunchprofileinitializationrequesttypedef)
-  - [GetLaunchProfileInitializationResponseResponseTypeDef](#getlaunchprofileinitializationresponseresponsetypedef)
-  - [GetLaunchProfileMemberRequestTypeDef](#getlaunchprofilememberrequesttypedef)
-  - [GetLaunchProfileMemberResponseResponseTypeDef](#getlaunchprofilememberresponseresponsetypedef)
-  - [GetLaunchProfileRequestTypeDef](#getlaunchprofilerequesttypedef)
-  - [GetLaunchProfileResponseResponseTypeDef](#getlaunchprofileresponseresponsetypedef)
-  - [GetStreamingImageRequestTypeDef](#getstreamingimagerequesttypedef)
-  - [GetStreamingImageResponseResponseTypeDef](#getstreamingimageresponseresponsetypedef)
-  - [GetStreamingSessionRequestTypeDef](#getstreamingsessionrequesttypedef)
-  - [GetStreamingSessionResponseResponseTypeDef](#getstreamingsessionresponseresponsetypedef)
-  - [GetStreamingSessionStreamRequestTypeDef](#getstreamingsessionstreamrequesttypedef)
-  - [GetStreamingSessionStreamResponseResponseTypeDef](#getstreamingsessionstreamresponseresponsetypedef)
-  - [GetStudioComponentRequestTypeDef](#getstudiocomponentrequesttypedef)
-  - [GetStudioComponentResponseResponseTypeDef](#getstudiocomponentresponseresponsetypedef)
-  - [GetStudioMemberRequestTypeDef](#getstudiomemberrequesttypedef)
-  - [GetStudioMemberResponseResponseTypeDef](#getstudiomemberresponseresponsetypedef)
-  - [GetStudioRequestTypeDef](#getstudiorequesttypedef)
-  - [GetStudioResponseResponseTypeDef](#getstudioresponseresponsetypedef)
+  - [GetEulaRequestRequestTypeDef](#geteularequestrequesttypedef)
+  - [GetEulaResponseTypeDef](#geteularesponsetypedef)
+  - [GetLaunchProfileDetailsRequestRequestTypeDef](#getlaunchprofiledetailsrequestrequesttypedef)
+  - [GetLaunchProfileDetailsResponseTypeDef](#getlaunchprofiledetailsresponsetypedef)
+  - [GetLaunchProfileInitializationRequestRequestTypeDef](#getlaunchprofileinitializationrequestrequesttypedef)
+  - [GetLaunchProfileInitializationResponseTypeDef](#getlaunchprofileinitializationresponsetypedef)
+  - [GetLaunchProfileMemberRequestRequestTypeDef](#getlaunchprofilememberrequestrequesttypedef)
+  - [GetLaunchProfileMemberResponseTypeDef](#getlaunchprofilememberresponsetypedef)
+  - [GetLaunchProfileRequestRequestTypeDef](#getlaunchprofilerequestrequesttypedef)
+  - [GetLaunchProfileResponseTypeDef](#getlaunchprofileresponsetypedef)
+  - [GetStreamingImageRequestRequestTypeDef](#getstreamingimagerequestrequesttypedef)
+  - [GetStreamingImageResponseTypeDef](#getstreamingimageresponsetypedef)
+  - [GetStreamingSessionRequestRequestTypeDef](#getstreamingsessionrequestrequesttypedef)
+  - [GetStreamingSessionResponseTypeDef](#getstreamingsessionresponsetypedef)
+  - [GetStreamingSessionStreamRequestRequestTypeDef](#getstreamingsessionstreamrequestrequesttypedef)
+  - [GetStreamingSessionStreamResponseTypeDef](#getstreamingsessionstreamresponsetypedef)
+  - [GetStudioComponentRequestRequestTypeDef](#getstudiocomponentrequestrequesttypedef)
+  - [GetStudioComponentResponseTypeDef](#getstudiocomponentresponsetypedef)
+  - [GetStudioMemberRequestRequestTypeDef](#getstudiomemberrequestrequesttypedef)
+  - [GetStudioMemberResponseTypeDef](#getstudiomemberresponsetypedef)
+  - [GetStudioRequestRequestTypeDef](#getstudiorequestrequesttypedef)
+  - [GetStudioResponseTypeDef](#getstudioresponsetypedef)
   - [LaunchProfileInitializationActiveDirectoryTypeDef](#launchprofileinitializationactivedirectorytypedef)
   - [LaunchProfileInitializationScriptTypeDef](#launchprofileinitializationscripttypedef)
   - [LaunchProfileInitializationTypeDef](#launchprofileinitializationtypedef)
   - [LaunchProfileMembershipTypeDef](#launchprofilemembershiptypedef)
   - [LaunchProfileTypeDef](#launchprofiletypedef)
   - [LicenseServiceConfigurationTypeDef](#licenseserviceconfigurationtypedef)
-  - [ListEulaAcceptancesRequestTypeDef](#listeulaacceptancesrequesttypedef)
-  - [ListEulaAcceptancesResponseResponseTypeDef](#listeulaacceptancesresponseresponsetypedef)
-  - [ListEulasRequestTypeDef](#listeulasrequesttypedef)
-  - [ListEulasResponseResponseTypeDef](#listeulasresponseresponsetypedef)
-  - [ListLaunchProfileMembersRequestTypeDef](#listlaunchprofilemembersrequesttypedef)
-  - [ListLaunchProfileMembersResponseResponseTypeDef](#listlaunchprofilemembersresponseresponsetypedef)
-  - [ListLaunchProfilesRequestTypeDef](#listlaunchprofilesrequesttypedef)
-  - [ListLaunchProfilesResponseResponseTypeDef](#listlaunchprofilesresponseresponsetypedef)
-  - [ListStreamingImagesRequestTypeDef](#liststreamingimagesrequesttypedef)
-  - [ListStreamingImagesResponseResponseTypeDef](#liststreamingimagesresponseresponsetypedef)
-  - [ListStreamingSessionsRequestTypeDef](#liststreamingsessionsrequesttypedef)
-  - [ListStreamingSessionsResponseResponseTypeDef](#liststreamingsessionsresponseresponsetypedef)
-  - [ListStudioComponentsRequestTypeDef](#liststudiocomponentsrequesttypedef)
-  - [ListStudioComponentsResponseResponseTypeDef](#liststudiocomponentsresponseresponsetypedef)
-  - [ListStudioMembersRequestTypeDef](#liststudiomembersrequesttypedef)
-  - [ListStudioMembersResponseResponseTypeDef](#liststudiomembersresponseresponsetypedef)
-  - [ListStudiosRequestTypeDef](#liststudiosrequesttypedef)
-  - [ListStudiosResponseResponseTypeDef](#liststudiosresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListEulaAcceptancesRequestRequestTypeDef](#listeulaacceptancesrequestrequesttypedef)
+  - [ListEulaAcceptancesResponseTypeDef](#listeulaacceptancesresponsetypedef)
+  - [ListEulasRequestRequestTypeDef](#listeulasrequestrequesttypedef)
+  - [ListEulasResponseTypeDef](#listeulasresponsetypedef)
+  - [ListLaunchProfileMembersRequestRequestTypeDef](#listlaunchprofilemembersrequestrequesttypedef)
+  - [ListLaunchProfileMembersResponseTypeDef](#listlaunchprofilemembersresponsetypedef)
+  - [ListLaunchProfilesRequestRequestTypeDef](#listlaunchprofilesrequestrequesttypedef)
+  - [ListLaunchProfilesResponseTypeDef](#listlaunchprofilesresponsetypedef)
+  - [ListStreamingImagesRequestRequestTypeDef](#liststreamingimagesrequestrequesttypedef)
+  - [ListStreamingImagesResponseTypeDef](#liststreamingimagesresponsetypedef)
+  - [ListStreamingSessionsRequestRequestTypeDef](#liststreamingsessionsrequestrequesttypedef)
+  - [ListStreamingSessionsResponseTypeDef](#liststreamingsessionsresponsetypedef)
+  - [ListStudioComponentsRequestRequestTypeDef](#liststudiocomponentsrequestrequesttypedef)
+  - [ListStudioComponentsResponseTypeDef](#liststudiocomponentsresponsetypedef)
+  - [ListStudioMembersRequestRequestTypeDef](#liststudiomembersrequestrequesttypedef)
+  - [ListStudioMembersResponseTypeDef](#liststudiomembersresponsetypedef)
+  - [ListStudiosRequestRequestTypeDef](#liststudiosrequestrequesttypedef)
+  - [ListStudiosResponseTypeDef](#liststudiosresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [NewLaunchProfileMemberTypeDef](#newlaunchprofilemembertypedef)
   - [NewStudioMemberTypeDef](#newstudiomembertypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutLaunchProfileMembersRequestTypeDef](#putlaunchprofilemembersrequesttypedef)
-  - [PutStudioMembersRequestTypeDef](#putstudiomembersrequesttypedef)
+  - [PutLaunchProfileMembersRequestRequestTypeDef](#putlaunchprofilemembersrequestrequesttypedef)
+  - [PutStudioMembersRequestRequestTypeDef](#putstudiomembersrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ScriptParameterKeyValueTypeDef](#scriptparameterkeyvaluetypedef)
   - [SharedFileSystemConfigurationTypeDef](#sharedfilesystemconfigurationtypedef)
-  - [StartStudioSSOConfigurationRepairRequestTypeDef](#startstudiossoconfigurationrepairrequesttypedef)
-  - [StartStudioSSOConfigurationRepairResponseResponseTypeDef](#startstudiossoconfigurationrepairresponseresponsetypedef)
+  - [StartStudioSSOConfigurationRepairRequestRequestTypeDef](#startstudiossoconfigurationrepairrequestrequesttypedef)
+  - [StartStudioSSOConfigurationRepairResponseTypeDef](#startstudiossoconfigurationrepairresponsetypedef)
   - [StreamConfigurationCreateTypeDef](#streamconfigurationcreatetypedef)
   - [StreamConfigurationTypeDef](#streamconfigurationtypedef)
   - [StreamingImageEncryptionConfigurationTypeDef](#streamingimageencryptionconfigurationtypedef)
@@ -110,23 +110,23 @@ type annotations stubs module
   - [StudioEncryptionConfigurationTypeDef](#studioencryptionconfigurationtypedef)
   - [StudioMembershipTypeDef](#studiomembershiptypedef)
   - [StudioTypeDef](#studiotypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateLaunchProfileMemberRequestTypeDef](#updatelaunchprofilememberrequesttypedef)
-  - [UpdateLaunchProfileMemberResponseResponseTypeDef](#updatelaunchprofilememberresponseresponsetypedef)
-  - [UpdateLaunchProfileRequestTypeDef](#updatelaunchprofilerequesttypedef)
-  - [UpdateLaunchProfileResponseResponseTypeDef](#updatelaunchprofileresponseresponsetypedef)
-  - [UpdateStreamingImageRequestTypeDef](#updatestreamingimagerequesttypedef)
-  - [UpdateStreamingImageResponseResponseTypeDef](#updatestreamingimageresponseresponsetypedef)
-  - [UpdateStudioComponentRequestTypeDef](#updatestudiocomponentrequesttypedef)
-  - [UpdateStudioComponentResponseResponseTypeDef](#updatestudiocomponentresponseresponsetypedef)
-  - [UpdateStudioRequestTypeDef](#updatestudiorequesttypedef)
-  - [UpdateStudioResponseResponseTypeDef](#updatestudioresponseresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateLaunchProfileMemberRequestRequestTypeDef](#updatelaunchprofilememberrequestrequesttypedef)
+  - [UpdateLaunchProfileMemberResponseTypeDef](#updatelaunchprofilememberresponsetypedef)
+  - [UpdateLaunchProfileRequestRequestTypeDef](#updatelaunchprofilerequestrequesttypedef)
+  - [UpdateLaunchProfileResponseTypeDef](#updatelaunchprofileresponsetypedef)
+  - [UpdateStreamingImageRequestRequestTypeDef](#updatestreamingimagerequestrequesttypedef)
+  - [UpdateStreamingImageResponseTypeDef](#updatestreamingimageresponsetypedef)
+  - [UpdateStudioComponentRequestRequestTypeDef](#updatestudiocomponentrequestrequesttypedef)
+  - [UpdateStudioComponentResponseTypeDef](#updatestudiocomponentresponsetypedef)
+  - [UpdateStudioRequestRequestTypeDef](#updatestudiorequestrequesttypedef)
+  - [UpdateStudioResponseTypeDef](#updatestudioresponsetypedef)
 
-## AcceptEulasRequestTypeDef
+## AcceptEulasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import AcceptEulasRequestTypeDef
+from mypy_boto3_nimble.type_defs import AcceptEulasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -138,10 +138,10 @@ Optional fields:
 - `clientToken`: `str`
 - `eulaIds`: `List`\[`str`\]
 
-## AcceptEulasResponseResponseTypeDef
+## AcceptEulasResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import AcceptEulasResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import AcceptEulasResponseTypeDef
 ```
 
 Required fields:
@@ -186,10 +186,10 @@ Optional fields:
 - `activeDirectoryUser`: `str`
 - `endpoint`: `str`
 
-## CreateLaunchProfileRequestTypeDef
+## CreateLaunchProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import CreateLaunchProfileRequestTypeDef
+from mypy_boto3_nimble.type_defs import CreateLaunchProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -208,10 +208,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateLaunchProfileResponseResponseTypeDef
+## CreateLaunchProfileResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import CreateLaunchProfileResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import CreateLaunchProfileResponseTypeDef
 ```
 
 Required fields:
@@ -220,10 +220,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStreamingImageRequestTypeDef
+## CreateStreamingImageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import CreateStreamingImageRequestTypeDef
+from mypy_boto3_nimble.type_defs import CreateStreamingImageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -238,10 +238,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateStreamingImageResponseResponseTypeDef
+## CreateStreamingImageResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import CreateStreamingImageResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import CreateStreamingImageResponseTypeDef
 ```
 
 Required fields:
@@ -251,10 +251,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStreamingSessionRequestTypeDef
+## CreateStreamingSessionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import CreateStreamingSessionRequestTypeDef
+from mypy_boto3_nimble.type_defs import CreateStreamingSessionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -270,10 +270,10 @@ Optional fields:
 - `streamingImageId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateStreamingSessionResponseResponseTypeDef
+## CreateStreamingSessionResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import CreateStreamingSessionResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import CreateStreamingSessionResponseTypeDef
 ```
 
 Required fields:
@@ -282,10 +282,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStreamingSessionStreamRequestTypeDef
+## CreateStreamingSessionStreamRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import CreateStreamingSessionStreamRequestTypeDef
+from mypy_boto3_nimble.type_defs import CreateStreamingSessionStreamRequestRequestTypeDef
 ```
 
 Required fields:
@@ -298,10 +298,10 @@ Optional fields:
 - `clientToken`: `str`
 - `expirationInSeconds`: `int`
 
-## CreateStreamingSessionStreamResponseResponseTypeDef
+## CreateStreamingSessionStreamResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import CreateStreamingSessionStreamResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import CreateStreamingSessionStreamResponseTypeDef
 ```
 
 Required fields:
@@ -311,10 +311,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStudioComponentRequestTypeDef
+## CreateStudioComponentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import CreateStudioComponentRequestTypeDef
+from mypy_boto3_nimble.type_defs import CreateStudioComponentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -338,10 +338,10 @@ Optional fields:
   [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateStudioComponentResponseResponseTypeDef
+## CreateStudioComponentResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import CreateStudioComponentResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import CreateStudioComponentResponseTypeDef
 ```
 
 Required fields:
@@ -351,10 +351,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStudioRequestTypeDef
+## CreateStudioRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import CreateStudioRequestTypeDef
+from mypy_boto3_nimble.type_defs import CreateStudioRequestRequestTypeDef
 ```
 
 Required fields:
@@ -371,10 +371,10 @@ Optional fields:
   [StudioEncryptionConfigurationTypeDef](./type_defs.md#studioencryptionconfigurationtypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateStudioResponseResponseTypeDef
+## CreateStudioResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import CreateStudioResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import CreateStudioResponseTypeDef
 ```
 
 Required fields:
@@ -383,10 +383,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteLaunchProfileMemberRequestTypeDef
+## DeleteLaunchProfileMemberRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import DeleteLaunchProfileMemberRequestTypeDef
+from mypy_boto3_nimble.type_defs import DeleteLaunchProfileMemberRequestRequestTypeDef
 ```
 
 Required fields:
@@ -399,10 +399,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## DeleteLaunchProfileRequestTypeDef
+## DeleteLaunchProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import DeleteLaunchProfileRequestTypeDef
+from mypy_boto3_nimble.type_defs import DeleteLaunchProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -414,10 +414,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## DeleteLaunchProfileResponseResponseTypeDef
+## DeleteLaunchProfileResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import DeleteLaunchProfileResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import DeleteLaunchProfileResponseTypeDef
 ```
 
 Required fields:
@@ -426,10 +426,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteStreamingImageRequestTypeDef
+## DeleteStreamingImageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import DeleteStreamingImageRequestTypeDef
+from mypy_boto3_nimble.type_defs import DeleteStreamingImageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -441,10 +441,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## DeleteStreamingImageResponseResponseTypeDef
+## DeleteStreamingImageResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import DeleteStreamingImageResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import DeleteStreamingImageResponseTypeDef
 ```
 
 Required fields:
@@ -454,10 +454,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteStreamingSessionRequestTypeDef
+## DeleteStreamingSessionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import DeleteStreamingSessionRequestTypeDef
+from mypy_boto3_nimble.type_defs import DeleteStreamingSessionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -469,10 +469,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## DeleteStreamingSessionResponseResponseTypeDef
+## DeleteStreamingSessionResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import DeleteStreamingSessionResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import DeleteStreamingSessionResponseTypeDef
 ```
 
 Required fields:
@@ -481,10 +481,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteStudioComponentRequestTypeDef
+## DeleteStudioComponentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import DeleteStudioComponentRequestTypeDef
+from mypy_boto3_nimble.type_defs import DeleteStudioComponentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -496,10 +496,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## DeleteStudioComponentResponseResponseTypeDef
+## DeleteStudioComponentResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import DeleteStudioComponentResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import DeleteStudioComponentResponseTypeDef
 ```
 
 Required fields:
@@ -509,10 +509,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteStudioMemberRequestTypeDef
+## DeleteStudioMemberRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import DeleteStudioMemberRequestTypeDef
+from mypy_boto3_nimble.type_defs import DeleteStudioMemberRequestRequestTypeDef
 ```
 
 Required fields:
@@ -524,10 +524,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## DeleteStudioRequestTypeDef
+## DeleteStudioRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import DeleteStudioRequestTypeDef
+from mypy_boto3_nimble.type_defs import DeleteStudioRequestRequestTypeDef
 ```
 
 Required fields:
@@ -538,10 +538,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## DeleteStudioResponseResponseTypeDef
+## DeleteStudioResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import DeleteStudioResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import DeleteStudioResponseTypeDef
 ```
 
 Required fields:
@@ -578,20 +578,20 @@ Optional fields:
 - `name`: `str`
 - `updatedAt`: `datetime`
 
-## GetEulaRequestTypeDef
+## GetEulaRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetEulaRequestTypeDef
+from mypy_boto3_nimble.type_defs import GetEulaRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `eulaId`: `str`
 
-## GetEulaResponseResponseTypeDef
+## GetEulaResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetEulaResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import GetEulaResponseTypeDef
 ```
 
 Required fields:
@@ -600,10 +600,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLaunchProfileDetailsRequestTypeDef
+## GetLaunchProfileDetailsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetLaunchProfileDetailsRequestTypeDef
+from mypy_boto3_nimble.type_defs import GetLaunchProfileDetailsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -611,10 +611,10 @@ Required fields:
 - `launchProfileId`: `str`
 - `studioId`: `str`
 
-## GetLaunchProfileDetailsResponseResponseTypeDef
+## GetLaunchProfileDetailsResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetLaunchProfileDetailsResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import GetLaunchProfileDetailsResponseTypeDef
 ```
 
 Required fields:
@@ -627,10 +627,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLaunchProfileInitializationRequestTypeDef
+## GetLaunchProfileInitializationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetLaunchProfileInitializationRequestTypeDef
+from mypy_boto3_nimble.type_defs import GetLaunchProfileInitializationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -641,10 +641,10 @@ Required fields:
 - `platform`: `str`
 - `studioId`: `str`
 
-## GetLaunchProfileInitializationResponseResponseTypeDef
+## GetLaunchProfileInitializationResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetLaunchProfileInitializationResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import GetLaunchProfileInitializationResponseTypeDef
 ```
 
 Required fields:
@@ -654,10 +654,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLaunchProfileMemberRequestTypeDef
+## GetLaunchProfileMemberRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetLaunchProfileMemberRequestTypeDef
+from mypy_boto3_nimble.type_defs import GetLaunchProfileMemberRequestRequestTypeDef
 ```
 
 Required fields:
@@ -666,10 +666,10 @@ Required fields:
 - `principalId`: `str`
 - `studioId`: `str`
 
-## GetLaunchProfileMemberResponseResponseTypeDef
+## GetLaunchProfileMemberResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetLaunchProfileMemberResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import GetLaunchProfileMemberResponseTypeDef
 ```
 
 Required fields:
@@ -679,10 +679,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLaunchProfileRequestTypeDef
+## GetLaunchProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetLaunchProfileRequestTypeDef
+from mypy_boto3_nimble.type_defs import GetLaunchProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -690,10 +690,10 @@ Required fields:
 - `launchProfileId`: `str`
 - `studioId`: `str`
 
-## GetLaunchProfileResponseResponseTypeDef
+## GetLaunchProfileResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetLaunchProfileResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import GetLaunchProfileResponseTypeDef
 ```
 
 Required fields:
@@ -702,10 +702,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStreamingImageRequestTypeDef
+## GetStreamingImageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetStreamingImageRequestTypeDef
+from mypy_boto3_nimble.type_defs import GetStreamingImageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -713,10 +713,10 @@ Required fields:
 - `streamingImageId`: `str`
 - `studioId`: `str`
 
-## GetStreamingImageResponseResponseTypeDef
+## GetStreamingImageResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetStreamingImageResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import GetStreamingImageResponseTypeDef
 ```
 
 Required fields:
@@ -726,10 +726,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStreamingSessionRequestTypeDef
+## GetStreamingSessionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetStreamingSessionRequestTypeDef
+from mypy_boto3_nimble.type_defs import GetStreamingSessionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -737,10 +737,10 @@ Required fields:
 - `sessionId`: `str`
 - `studioId`: `str`
 
-## GetStreamingSessionResponseResponseTypeDef
+## GetStreamingSessionResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetStreamingSessionResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import GetStreamingSessionResponseTypeDef
 ```
 
 Required fields:
@@ -749,10 +749,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStreamingSessionStreamRequestTypeDef
+## GetStreamingSessionStreamRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetStreamingSessionStreamRequestTypeDef
+from mypy_boto3_nimble.type_defs import GetStreamingSessionStreamRequestRequestTypeDef
 ```
 
 Required fields:
@@ -761,10 +761,10 @@ Required fields:
 - `streamId`: `str`
 - `studioId`: `str`
 
-## GetStreamingSessionStreamResponseResponseTypeDef
+## GetStreamingSessionStreamResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetStreamingSessionStreamResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import GetStreamingSessionStreamResponseTypeDef
 ```
 
 Required fields:
@@ -774,10 +774,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStudioComponentRequestTypeDef
+## GetStudioComponentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetStudioComponentRequestTypeDef
+from mypy_boto3_nimble.type_defs import GetStudioComponentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -785,10 +785,10 @@ Required fields:
 - `studioComponentId`: `str`
 - `studioId`: `str`
 
-## GetStudioComponentResponseResponseTypeDef
+## GetStudioComponentResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetStudioComponentResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import GetStudioComponentResponseTypeDef
 ```
 
 Required fields:
@@ -798,10 +798,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStudioMemberRequestTypeDef
+## GetStudioMemberRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetStudioMemberRequestTypeDef
+from mypy_boto3_nimble.type_defs import GetStudioMemberRequestRequestTypeDef
 ```
 
 Required fields:
@@ -809,10 +809,10 @@ Required fields:
 - `principalId`: `str`
 - `studioId`: `str`
 
-## GetStudioMemberResponseResponseTypeDef
+## GetStudioMemberResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetStudioMemberResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import GetStudioMemberResponseTypeDef
 ```
 
 Required fields:
@@ -821,20 +821,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStudioRequestTypeDef
+## GetStudioRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetStudioRequestTypeDef
+from mypy_boto3_nimble.type_defs import GetStudioRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `studioId`: `str`
 
-## GetStudioResponseResponseTypeDef
+## GetStudioResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import GetStudioResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import GetStudioResponseTypeDef
 ```
 
 Required fields:
@@ -944,10 +944,10 @@ Optional fields:
 
 - `endpoint`: `str`
 
-## ListEulaAcceptancesRequestTypeDef
+## ListEulaAcceptancesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListEulaAcceptancesRequestTypeDef
+from mypy_boto3_nimble.type_defs import ListEulaAcceptancesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -959,10 +959,10 @@ Optional fields:
 - `eulaIds`: `List`\[`str`\]
 - `nextToken`: `str`
 
-## ListEulaAcceptancesResponseResponseTypeDef
+## ListEulaAcceptancesResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListEulaAcceptancesResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import ListEulaAcceptancesResponseTypeDef
 ```
 
 Required fields:
@@ -973,10 +973,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEulasRequestTypeDef
+## ListEulasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListEulasRequestTypeDef
+from mypy_boto3_nimble.type_defs import ListEulasRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -984,10 +984,10 @@ Optional fields:
 - `eulaIds`: `List`\[`str`\]
 - `nextToken`: `str`
 
-## ListEulasResponseResponseTypeDef
+## ListEulasResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListEulasResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import ListEulasResponseTypeDef
 ```
 
 Required fields:
@@ -997,10 +997,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLaunchProfileMembersRequestTypeDef
+## ListLaunchProfileMembersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListLaunchProfileMembersRequestTypeDef
+from mypy_boto3_nimble.type_defs import ListLaunchProfileMembersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1013,10 +1013,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListLaunchProfileMembersResponseResponseTypeDef
+## ListLaunchProfileMembersResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListLaunchProfileMembersResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import ListLaunchProfileMembersResponseTypeDef
 ```
 
 Required fields:
@@ -1027,10 +1027,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLaunchProfilesRequestTypeDef
+## ListLaunchProfilesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListLaunchProfilesRequestTypeDef
+from mypy_boto3_nimble.type_defs import ListLaunchProfilesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1044,10 +1044,10 @@ Optional fields:
 - `principalId`: `str`
 - `states`: `List`\[`str`\]
 
-## ListLaunchProfilesResponseResponseTypeDef
+## ListLaunchProfilesResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListLaunchProfilesResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import ListLaunchProfilesResponseTypeDef
 ```
 
 Required fields:
@@ -1058,10 +1058,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStreamingImagesRequestTypeDef
+## ListStreamingImagesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListStreamingImagesRequestTypeDef
+from mypy_boto3_nimble.type_defs import ListStreamingImagesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1073,10 +1073,10 @@ Optional fields:
 - `nextToken`: `str`
 - `owner`: `str`
 
-## ListStreamingImagesResponseResponseTypeDef
+## ListStreamingImagesResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListStreamingImagesResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import ListStreamingImagesResponseTypeDef
 ```
 
 Required fields:
@@ -1087,10 +1087,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStreamingSessionsRequestTypeDef
+## ListStreamingSessionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListStreamingSessionsRequestTypeDef
+from mypy_boto3_nimble.type_defs import ListStreamingSessionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1103,10 +1103,10 @@ Optional fields:
 - `nextToken`: `str`
 - `sessionIds`: `str`
 
-## ListStreamingSessionsResponseResponseTypeDef
+## ListStreamingSessionsResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListStreamingSessionsResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import ListStreamingSessionsResponseTypeDef
 ```
 
 Required fields:
@@ -1117,10 +1117,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStudioComponentsRequestTypeDef
+## ListStudioComponentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListStudioComponentsRequestTypeDef
+from mypy_boto3_nimble.type_defs import ListStudioComponentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1134,10 +1134,10 @@ Optional fields:
 - `states`: `List`\[`str`\]
 - `types`: `List`\[`str`\]
 
-## ListStudioComponentsResponseResponseTypeDef
+## ListStudioComponentsResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListStudioComponentsResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import ListStudioComponentsResponseTypeDef
 ```
 
 Required fields:
@@ -1148,10 +1148,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStudioMembersRequestTypeDef
+## ListStudioMembersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListStudioMembersRequestTypeDef
+from mypy_boto3_nimble.type_defs import ListStudioMembersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1163,10 +1163,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListStudioMembersResponseResponseTypeDef
+## ListStudioMembersResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListStudioMembersResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import ListStudioMembersResponseTypeDef
 ```
 
 Required fields:
@@ -1177,20 +1177,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStudiosRequestTypeDef
+## ListStudiosRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListStudiosRequestTypeDef
+from mypy_boto3_nimble.type_defs import ListStudiosRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `nextToken`: `str`
 
-## ListStudiosResponseResponseTypeDef
+## ListStudiosResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListStudiosResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import ListStudiosResponseTypeDef
 ```
 
 Required fields:
@@ -1200,20 +1200,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_nimble.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1258,10 +1258,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutLaunchProfileMembersRequestTypeDef
+## PutLaunchProfileMembersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import PutLaunchProfileMembersRequestTypeDef
+from mypy_boto3_nimble.type_defs import PutLaunchProfileMembersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1276,10 +1276,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## PutStudioMembersRequestTypeDef
+## PutStudioMembersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import PutStudioMembersRequestTypeDef
+from mypy_boto3_nimble.type_defs import PutStudioMembersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1332,10 +1332,10 @@ Optional fields:
 - `shareName`: `str`
 - `windowsMountDrive`: `str`
 
-## StartStudioSSOConfigurationRepairRequestTypeDef
+## StartStudioSSOConfigurationRepairRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import StartStudioSSOConfigurationRepairRequestTypeDef
+from mypy_boto3_nimble.type_defs import StartStudioSSOConfigurationRepairRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1346,10 +1346,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## StartStudioSSOConfigurationRepairResponseResponseTypeDef
+## StartStudioSSOConfigurationRepairResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import StartStudioSSOConfigurationRepairResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import StartStudioSSOConfigurationRepairResponseTypeDef
 ```
 
 Required fields:
@@ -1609,10 +1609,10 @@ Optional fields:
 - `updatedAt`: `datetime`
 - `userRoleArn`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_nimble.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1623,10 +1623,10 @@ Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_nimble.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1634,10 +1634,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateLaunchProfileMemberRequestTypeDef
+## UpdateLaunchProfileMemberRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import UpdateLaunchProfileMemberRequestTypeDef
+from mypy_boto3_nimble.type_defs import UpdateLaunchProfileMemberRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1652,10 +1652,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## UpdateLaunchProfileMemberResponseResponseTypeDef
+## UpdateLaunchProfileMemberResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import UpdateLaunchProfileMemberResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import UpdateLaunchProfileMemberResponseTypeDef
 ```
 
 Required fields:
@@ -1665,10 +1665,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateLaunchProfileRequestTypeDef
+## UpdateLaunchProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import UpdateLaunchProfileRequestTypeDef
+from mypy_boto3_nimble.type_defs import UpdateLaunchProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1686,10 +1686,10 @@ Optional fields:
   [StreamConfigurationCreateTypeDef](./type_defs.md#streamconfigurationcreatetypedef)
 - `studioComponentIds`: `List`\[`str`\]
 
-## UpdateLaunchProfileResponseResponseTypeDef
+## UpdateLaunchProfileResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import UpdateLaunchProfileResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import UpdateLaunchProfileResponseTypeDef
 ```
 
 Required fields:
@@ -1698,10 +1698,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateStreamingImageRequestTypeDef
+## UpdateStreamingImageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import UpdateStreamingImageRequestTypeDef
+from mypy_boto3_nimble.type_defs import UpdateStreamingImageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1715,10 +1715,10 @@ Optional fields:
 - `description`: `str`
 - `name`: `str`
 
-## UpdateStreamingImageResponseResponseTypeDef
+## UpdateStreamingImageResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import UpdateStreamingImageResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import UpdateStreamingImageResponseTypeDef
 ```
 
 Required fields:
@@ -1728,10 +1728,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateStudioComponentRequestTypeDef
+## UpdateStudioComponentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import UpdateStudioComponentRequestTypeDef
+from mypy_boto3_nimble.type_defs import UpdateStudioComponentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1755,10 +1755,10 @@ Optional fields:
   [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
 - `type`: [StudioComponentTypeType](./literals.md#studiocomponenttypetype)
 
-## UpdateStudioComponentResponseResponseTypeDef
+## UpdateStudioComponentResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import UpdateStudioComponentResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import UpdateStudioComponentResponseTypeDef
 ```
 
 Required fields:
@@ -1768,10 +1768,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateStudioRequestTypeDef
+## UpdateStudioRequestRequestTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import UpdateStudioRequestTypeDef
+from mypy_boto3_nimble.type_defs import UpdateStudioRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1785,10 +1785,10 @@ Optional fields:
 - `displayName`: `str`
 - `userRoleArn`: `str`
 
-## UpdateStudioResponseResponseTypeDef
+## UpdateStudioResponseTypeDef
 
 ```python
-from mypy_boto3_nimble.type_defs import UpdateStudioResponseResponseTypeDef
+from mypy_boto3_nimble.type_defs import UpdateStudioResponseTypeDef
 ```
 
 Required fields:

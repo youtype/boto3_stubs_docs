@@ -11,6 +11,7 @@ type annotations stubs module
   - [S3Client](#s3client)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [abort_multipart_upload](#abort_multipart_upload)
     - [can_paginate](#can_paginate)
     - [complete_multipart_upload](#complete_multipart_upload)
@@ -160,6 +161,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+S3Client exceptions.
+
+Type annotations for `boto3.client("s3").exceptions` method.
+
+Boto3 documentation:
+[S3.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### abort_multipart_upload
 
 This action aborts a multipart upload.
@@ -170,7 +182,7 @@ Boto3 documentation:
 [S3.Client.abort_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.abort_multipart_upload)
 
 Arguments mapping described in
-[AbortMultipartUploadRequestTypeDef](./type_defs.md#abortmultipartuploadrequesttypedef).
+[AbortMultipartUploadRequestRequestTypeDef](./type_defs.md#abortmultipartuploadrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,7 +194,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[AbortMultipartUploadOutputResponseTypeDef](./type_defs.md#abortmultipartuploadoutputresponsetypedef).
+[AbortMultipartUploadOutputTypeDef](./type_defs.md#abortmultipartuploadoutputtypedef).
 
 ### can_paginate
 
@@ -209,7 +221,7 @@ Boto3 documentation:
 [S3.Client.complete_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.complete_multipart_upload)
 
 Arguments mapping described in
-[CompleteMultipartUploadRequestTypeDef](./type_defs.md#completemultipartuploadrequesttypedef).
+[CompleteMultipartUploadRequestRequestTypeDef](./type_defs.md#completemultipartuploadrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,7 +235,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[CompleteMultipartUploadOutputResponseTypeDef](./type_defs.md#completemultipartuploadoutputresponsetypedef).
+[CompleteMultipartUploadOutputTypeDef](./type_defs.md#completemultipartuploadoutputtypedef).
 
 ### copy
 
@@ -258,7 +270,7 @@ Boto3 documentation:
 [S3.Client.copy_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.copy_object)
 
 Arguments mapping described in
-[CopyObjectRequestTypeDef](./type_defs.md#copyobjectrequesttypedef).
+[CopyObjectRequestRequestTypeDef](./type_defs.md#copyobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,8 +321,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
-Returns
-[CopyObjectOutputResponseTypeDef](./type_defs.md#copyobjectoutputresponsetypedef).
+Returns [CopyObjectOutputTypeDef](./type_defs.md#copyobjectoutputtypedef).
 
 ### create_bucket
 
@@ -322,7 +333,7 @@ Boto3 documentation:
 [S3.Client.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.create_bucket)
 
 Arguments mapping described in
-[CreateBucketRequestTypeDef](./type_defs.md#createbucketrequesttypedef).
+[CreateBucketRequestRequestTypeDef](./type_defs.md#createbucketrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,8 +348,7 @@ Keyword-only arguments:
 - `GrantWriteACP`: `str`
 - `ObjectLockEnabledForBucket`: `bool`
 
-Returns
-[CreateBucketOutputResponseTypeDef](./type_defs.md#createbucketoutputresponsetypedef).
+Returns [CreateBucketOutputTypeDef](./type_defs.md#createbucketoutputtypedef).
 
 ### create_multipart_upload
 
@@ -350,7 +360,7 @@ Boto3 documentation:
 [S3.Client.create_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.create_multipart_upload)
 
 Arguments mapping described in
-[CreateMultipartUploadRequestTypeDef](./type_defs.md#createmultipartuploadrequesttypedef).
+[CreateMultipartUploadRequestRequestTypeDef](./type_defs.md#createmultipartuploadrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -388,7 +398,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[CreateMultipartUploadOutputResponseTypeDef](./type_defs.md#createmultipartuploadoutputresponsetypedef).
+[CreateMultipartUploadOutputTypeDef](./type_defs.md#createmultipartuploadoutputtypedef).
 
 ### delete_bucket
 
@@ -400,7 +410,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket)
 
 Arguments mapping described in
-[DeleteBucketRequestTypeDef](./type_defs.md#deletebucketrequesttypedef).
+[DeleteBucketRequestRequestTypeDef](./type_defs.md#deletebucketrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -419,7 +429,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_analytics_configuration)
 
 Arguments mapping described in
-[DeleteBucketAnalyticsConfigurationRequestTypeDef](./type_defs.md#deletebucketanalyticsconfigurationrequesttypedef).
+[DeleteBucketAnalyticsConfigurationRequestRequestTypeDef](./type_defs.md#deletebucketanalyticsconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -437,7 +447,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_cors)
 
 Arguments mapping described in
-[DeleteBucketCorsRequestTypeDef](./type_defs.md#deletebucketcorsrequesttypedef).
+[DeleteBucketCorsRequestRequestTypeDef](./type_defs.md#deletebucketcorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -455,7 +465,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_encryption)
 
 Arguments mapping described in
-[DeleteBucketEncryptionRequestTypeDef](./type_defs.md#deletebucketencryptionrequesttypedef).
+[DeleteBucketEncryptionRequestRequestTypeDef](./type_defs.md#deletebucketencryptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,7 +483,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_intelligent_tiering_configuration)
 
 Arguments mapping described in
-[DeleteBucketIntelligentTieringConfigurationRequestTypeDef](./type_defs.md#deletebucketintelligenttieringconfigurationrequesttypedef).
+[DeleteBucketIntelligentTieringConfigurationRequestRequestTypeDef](./type_defs.md#deletebucketintelligenttieringconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -492,7 +502,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_inventory_configuration)
 
 Arguments mapping described in
-[DeleteBucketInventoryConfigurationRequestTypeDef](./type_defs.md#deletebucketinventoryconfigurationrequesttypedef).
+[DeleteBucketInventoryConfigurationRequestRequestTypeDef](./type_defs.md#deletebucketinventoryconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -510,7 +520,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_lifecycle)
 
 Arguments mapping described in
-[DeleteBucketLifecycleRequestTypeDef](./type_defs.md#deletebucketlifecyclerequesttypedef).
+[DeleteBucketLifecycleRequestRequestTypeDef](./type_defs.md#deletebucketlifecyclerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -529,7 +539,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_metrics_configuration)
 
 Arguments mapping described in
-[DeleteBucketMetricsConfigurationRequestTypeDef](./type_defs.md#deletebucketmetricsconfigurationrequesttypedef).
+[DeleteBucketMetricsConfigurationRequestRequestTypeDef](./type_defs.md#deletebucketmetricsconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -548,7 +558,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_ownership_controls)
 
 Arguments mapping described in
-[DeleteBucketOwnershipControlsRequestTypeDef](./type_defs.md#deletebucketownershipcontrolsrequesttypedef).
+[DeleteBucketOwnershipControlsRequestRequestTypeDef](./type_defs.md#deletebucketownershipcontrolsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -566,7 +576,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_policy)
 
 Arguments mapping described in
-[DeleteBucketPolicyRequestTypeDef](./type_defs.md#deletebucketpolicyrequesttypedef).
+[DeleteBucketPolicyRequestRequestTypeDef](./type_defs.md#deletebucketpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -583,7 +593,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_replication)
 
 Arguments mapping described in
-[DeleteBucketReplicationRequestTypeDef](./type_defs.md#deletebucketreplicationrequesttypedef).
+[DeleteBucketReplicationRequestRequestTypeDef](./type_defs.md#deletebucketreplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -600,7 +610,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_tagging)
 
 Arguments mapping described in
-[DeleteBucketTaggingRequestTypeDef](./type_defs.md#deletebuckettaggingrequesttypedef).
+[DeleteBucketTaggingRequestRequestTypeDef](./type_defs.md#deletebuckettaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -617,7 +627,7 @@ Boto3 documentation:
 [S3.Client.delete_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_bucket_website)
 
 Arguments mapping described in
-[DeleteBucketWebsiteRequestTypeDef](./type_defs.md#deletebucketwebsiterequesttypedef).
+[DeleteBucketWebsiteRequestRequestTypeDef](./type_defs.md#deletebucketwebsiterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -635,7 +645,7 @@ Boto3 documentation:
 [S3.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_object)
 
 Arguments mapping described in
-[DeleteObjectRequestTypeDef](./type_defs.md#deleteobjectrequesttypedef).
+[DeleteObjectRequestRequestTypeDef](./type_defs.md#deleteobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -648,8 +658,7 @@ Keyword-only arguments:
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[DeleteObjectOutputResponseTypeDef](./type_defs.md#deleteobjectoutputresponsetypedef).
+Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
 
 ### delete_object_tagging
 
@@ -661,7 +670,7 @@ Boto3 documentation:
 [S3.Client.delete_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_object_tagging)
 
 Arguments mapping described in
-[DeleteObjectTaggingRequestTypeDef](./type_defs.md#deleteobjecttaggingrequesttypedef).
+[DeleteObjectTaggingRequestRequestTypeDef](./type_defs.md#deleteobjecttaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -671,7 +680,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[DeleteObjectTaggingOutputResponseTypeDef](./type_defs.md#deleteobjecttaggingoutputresponsetypedef).
+[DeleteObjectTaggingOutputTypeDef](./type_defs.md#deleteobjecttaggingoutputtypedef).
 
 ### delete_objects
 
@@ -684,7 +693,7 @@ Boto3 documentation:
 [S3.Client.delete_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_objects)
 
 Arguments mapping described in
-[DeleteObjectsRequestTypeDef](./type_defs.md#deleteobjectsrequesttypedef).
+[DeleteObjectsRequestRequestTypeDef](./type_defs.md#deleteobjectsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -697,7 +706,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[DeleteObjectsOutputResponseTypeDef](./type_defs.md#deleteobjectsoutputresponsetypedef).
+[DeleteObjectsOutputTypeDef](./type_defs.md#deleteobjectsoutputtypedef).
 
 ### delete_public_access_block
 
@@ -709,7 +718,7 @@ Boto3 documentation:
 [S3.Client.delete_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_public_access_block)
 
 Arguments mapping described in
-[DeletePublicAccessBlockRequestTypeDef](./type_defs.md#deletepublicaccessblockrequesttypedef).
+[DeletePublicAccessBlockRequestRequestTypeDef](./type_defs.md#deletepublicaccessblockrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -811,7 +820,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_accelerate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_accelerate_configuration)
 
 Arguments mapping described in
-[GetBucketAccelerateConfigurationRequestTypeDef](./type_defs.md#getbucketaccelerateconfigurationrequesttypedef).
+[GetBucketAccelerateConfigurationRequestRequestTypeDef](./type_defs.md#getbucketaccelerateconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -819,7 +828,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketAccelerateConfigurationOutputResponseTypeDef](./type_defs.md#getbucketaccelerateconfigurationoutputresponsetypedef).
+[GetBucketAccelerateConfigurationOutputTypeDef](./type_defs.md#getbucketaccelerateconfigurationoutputtypedef).
 
 ### get_bucket_acl
 
@@ -832,15 +841,14 @@ Boto3 documentation:
 [S3.Client.get_bucket_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_acl)
 
 Arguments mapping described in
-[GetBucketAclRequestTypeDef](./type_defs.md#getbucketaclrequesttypedef).
+[GetBucketAclRequestRequestTypeDef](./type_defs.md#getbucketaclrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[GetBucketAclOutputResponseTypeDef](./type_defs.md#getbucketacloutputresponsetypedef).
+Returns [GetBucketAclOutputTypeDef](./type_defs.md#getbucketacloutputtypedef).
 
 ### get_bucket_analytics_configuration
 
@@ -854,7 +862,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_analytics_configuration)
 
 Arguments mapping described in
-[GetBucketAnalyticsConfigurationRequestTypeDef](./type_defs.md#getbucketanalyticsconfigurationrequesttypedef).
+[GetBucketAnalyticsConfigurationRequestRequestTypeDef](./type_defs.md#getbucketanalyticsconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -863,7 +871,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketAnalyticsConfigurationOutputResponseTypeDef](./type_defs.md#getbucketanalyticsconfigurationoutputresponsetypedef).
+[GetBucketAnalyticsConfigurationOutputTypeDef](./type_defs.md#getbucketanalyticsconfigurationoutputtypedef).
 
 ### get_bucket_cors
 
@@ -875,7 +883,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_cors)
 
 Arguments mapping described in
-[GetBucketCorsRequestTypeDef](./type_defs.md#getbucketcorsrequesttypedef).
+[GetBucketCorsRequestRequestTypeDef](./type_defs.md#getbucketcorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -883,7 +891,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketCorsOutputResponseTypeDef](./type_defs.md#getbucketcorsoutputresponsetypedef).
+[GetBucketCorsOutputTypeDef](./type_defs.md#getbucketcorsoutputtypedef).
 
 ### get_bucket_encryption
 
@@ -895,7 +903,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_encryption)
 
 Arguments mapping described in
-[GetBucketEncryptionRequestTypeDef](./type_defs.md#getbucketencryptionrequesttypedef).
+[GetBucketEncryptionRequestRequestTypeDef](./type_defs.md#getbucketencryptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -903,7 +911,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketEncryptionOutputResponseTypeDef](./type_defs.md#getbucketencryptionoutputresponsetypedef).
+[GetBucketEncryptionOutputTypeDef](./type_defs.md#getbucketencryptionoutputtypedef).
 
 ### get_bucket_intelligent_tiering_configuration
 
@@ -916,7 +924,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_intelligent_tiering_configuration)
 
 Arguments mapping described in
-[GetBucketIntelligentTieringConfigurationRequestTypeDef](./type_defs.md#getbucketintelligenttieringconfigurationrequesttypedef).
+[GetBucketIntelligentTieringConfigurationRequestRequestTypeDef](./type_defs.md#getbucketintelligenttieringconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -924,7 +932,7 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[GetBucketIntelligentTieringConfigurationOutputResponseTypeDef](./type_defs.md#getbucketintelligenttieringconfigurationoutputresponsetypedef).
+[GetBucketIntelligentTieringConfigurationOutputTypeDef](./type_defs.md#getbucketintelligenttieringconfigurationoutputtypedef).
 
 ### get_bucket_inventory_configuration
 
@@ -938,7 +946,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_inventory_configuration)
 
 Arguments mapping described in
-[GetBucketInventoryConfigurationRequestTypeDef](./type_defs.md#getbucketinventoryconfigurationrequesttypedef).
+[GetBucketInventoryConfigurationRequestRequestTypeDef](./type_defs.md#getbucketinventoryconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -947,7 +955,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketInventoryConfigurationOutputResponseTypeDef](./type_defs.md#getbucketinventoryconfigurationoutputresponsetypedef).
+[GetBucketInventoryConfigurationOutputTypeDef](./type_defs.md#getbucketinventoryconfigurationoutputtypedef).
 
 ### get_bucket_lifecycle
 
@@ -959,7 +967,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_lifecycle)
 
 Arguments mapping described in
-[GetBucketLifecycleRequestTypeDef](./type_defs.md#getbucketlifecyclerequesttypedef).
+[GetBucketLifecycleRequestRequestTypeDef](./type_defs.md#getbucketlifecyclerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -967,7 +975,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketLifecycleOutputResponseTypeDef](./type_defs.md#getbucketlifecycleoutputresponsetypedef).
+[GetBucketLifecycleOutputTypeDef](./type_defs.md#getbucketlifecycleoutputtypedef).
 
 ### get_bucket_lifecycle_configuration
 
@@ -980,7 +988,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_lifecycle_configuration)
 
 Arguments mapping described in
-[GetBucketLifecycleConfigurationRequestTypeDef](./type_defs.md#getbucketlifecycleconfigurationrequesttypedef).
+[GetBucketLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#getbucketlifecycleconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -988,7 +996,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketLifecycleConfigurationOutputResponseTypeDef](./type_defs.md#getbucketlifecycleconfigurationoutputresponsetypedef).
+[GetBucketLifecycleConfigurationOutputTypeDef](./type_defs.md#getbucketlifecycleconfigurationoutputtypedef).
 
 ### get_bucket_location
 
@@ -1000,7 +1008,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_location)
 
 Arguments mapping described in
-[GetBucketLocationRequestTypeDef](./type_defs.md#getbucketlocationrequesttypedef).
+[GetBucketLocationRequestRequestTypeDef](./type_defs.md#getbucketlocationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1008,7 +1016,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketLocationOutputResponseTypeDef](./type_defs.md#getbucketlocationoutputresponsetypedef).
+[GetBucketLocationOutputTypeDef](./type_defs.md#getbucketlocationoutputtypedef).
 
 ### get_bucket_logging
 
@@ -1021,7 +1029,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_logging)
 
 Arguments mapping described in
-[GetBucketLoggingRequestTypeDef](./type_defs.md#getbucketloggingrequesttypedef).
+[GetBucketLoggingRequestRequestTypeDef](./type_defs.md#getbucketloggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1029,7 +1037,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketLoggingOutputResponseTypeDef](./type_defs.md#getbucketloggingoutputresponsetypedef).
+[GetBucketLoggingOutputTypeDef](./type_defs.md#getbucketloggingoutputtypedef).
 
 ### get_bucket_metrics_configuration
 
@@ -1043,7 +1051,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_metrics_configuration)
 
 Arguments mapping described in
-[GetBucketMetricsConfigurationRequestTypeDef](./type_defs.md#getbucketmetricsconfigurationrequesttypedef).
+[GetBucketMetricsConfigurationRequestRequestTypeDef](./type_defs.md#getbucketmetricsconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1052,7 +1060,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketMetricsConfigurationOutputResponseTypeDef](./type_defs.md#getbucketmetricsconfigurationoutputresponsetypedef).
+[GetBucketMetricsConfigurationOutputTypeDef](./type_defs.md#getbucketmetricsconfigurationoutputtypedef).
 
 ### get_bucket_notification
 
@@ -1066,7 +1074,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification)
 
 Arguments mapping described in
-[GetBucketNotificationConfigurationRequestTypeDef](./type_defs.md#getbucketnotificationconfigurationrequesttypedef).
+[GetBucketNotificationConfigurationRequestRequestTypeDef](./type_defs.md#getbucketnotificationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1074,7 +1082,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[NotificationConfigurationDeprecatedResponseTypeDef](./type_defs.md#notificationconfigurationdeprecatedresponsetypedef).
+[NotificationConfigurationDeprecatedResponseMetadataTypeDef](./type_defs.md#notificationconfigurationdeprecatedresponsemetadatatypedef).
 
 ### get_bucket_notification_configuration
 
@@ -1087,7 +1095,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_notification_configuration)
 
 Arguments mapping described in
-[GetBucketNotificationConfigurationRequestTypeDef](./type_defs.md#getbucketnotificationconfigurationrequesttypedef).
+[GetBucketNotificationConfigurationRequestRequestTypeDef](./type_defs.md#getbucketnotificationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1095,7 +1103,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[NotificationConfigurationResponseTypeDef](./type_defs.md#notificationconfigurationresponsetypedef).
+[NotificationConfigurationResponseMetadataTypeDef](./type_defs.md#notificationconfigurationresponsemetadatatypedef).
 
 ### get_bucket_ownership_controls
 
@@ -1107,7 +1115,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_ownership_controls)
 
 Arguments mapping described in
-[GetBucketOwnershipControlsRequestTypeDef](./type_defs.md#getbucketownershipcontrolsrequesttypedef).
+[GetBucketOwnershipControlsRequestRequestTypeDef](./type_defs.md#getbucketownershipcontrolsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1115,7 +1123,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketOwnershipControlsOutputResponseTypeDef](./type_defs.md#getbucketownershipcontrolsoutputresponsetypedef).
+[GetBucketOwnershipControlsOutputTypeDef](./type_defs.md#getbucketownershipcontrolsoutputtypedef).
 
 ### get_bucket_policy
 
@@ -1127,7 +1135,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_policy)
 
 Arguments mapping described in
-[GetBucketPolicyRequestTypeDef](./type_defs.md#getbucketpolicyrequesttypedef).
+[GetBucketPolicyRequestRequestTypeDef](./type_defs.md#getbucketpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1135,7 +1143,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketPolicyOutputResponseTypeDef](./type_defs.md#getbucketpolicyoutputresponsetypedef).
+[GetBucketPolicyOutputTypeDef](./type_defs.md#getbucketpolicyoutputtypedef).
 
 ### get_bucket_policy_status
 
@@ -1148,7 +1156,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_policy_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_policy_status)
 
 Arguments mapping described in
-[GetBucketPolicyStatusRequestTypeDef](./type_defs.md#getbucketpolicystatusrequesttypedef).
+[GetBucketPolicyStatusRequestRequestTypeDef](./type_defs.md#getbucketpolicystatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1156,7 +1164,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketPolicyStatusOutputResponseTypeDef](./type_defs.md#getbucketpolicystatusoutputresponsetypedef).
+[GetBucketPolicyStatusOutputTypeDef](./type_defs.md#getbucketpolicystatusoutputtypedef).
 
 ### get_bucket_replication
 
@@ -1168,7 +1176,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_replication)
 
 Arguments mapping described in
-[GetBucketReplicationRequestTypeDef](./type_defs.md#getbucketreplicationrequesttypedef).
+[GetBucketReplicationRequestRequestTypeDef](./type_defs.md#getbucketreplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1176,7 +1184,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketReplicationOutputResponseTypeDef](./type_defs.md#getbucketreplicationoutputresponsetypedef).
+[GetBucketReplicationOutputTypeDef](./type_defs.md#getbucketreplicationoutputtypedef).
 
 ### get_bucket_request_payment
 
@@ -1188,7 +1196,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_request_payment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_request_payment)
 
 Arguments mapping described in
-[GetBucketRequestPaymentRequestTypeDef](./type_defs.md#getbucketrequestpaymentrequesttypedef).
+[GetBucketRequestPaymentRequestRequestTypeDef](./type_defs.md#getbucketrequestpaymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1196,7 +1204,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketRequestPaymentOutputResponseTypeDef](./type_defs.md#getbucketrequestpaymentoutputresponsetypedef).
+[GetBucketRequestPaymentOutputTypeDef](./type_defs.md#getbucketrequestpaymentoutputtypedef).
 
 ### get_bucket_tagging
 
@@ -1208,7 +1216,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_tagging)
 
 Arguments mapping described in
-[GetBucketTaggingRequestTypeDef](./type_defs.md#getbuckettaggingrequesttypedef).
+[GetBucketTaggingRequestRequestTypeDef](./type_defs.md#getbuckettaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1216,7 +1224,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketTaggingOutputResponseTypeDef](./type_defs.md#getbuckettaggingoutputresponsetypedef).
+[GetBucketTaggingOutputTypeDef](./type_defs.md#getbuckettaggingoutputtypedef).
 
 ### get_bucket_versioning
 
@@ -1228,7 +1236,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_versioning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_versioning)
 
 Arguments mapping described in
-[GetBucketVersioningRequestTypeDef](./type_defs.md#getbucketversioningrequesttypedef).
+[GetBucketVersioningRequestRequestTypeDef](./type_defs.md#getbucketversioningrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1236,7 +1244,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketVersioningOutputResponseTypeDef](./type_defs.md#getbucketversioningoutputresponsetypedef).
+[GetBucketVersioningOutputTypeDef](./type_defs.md#getbucketversioningoutputtypedef).
 
 ### get_bucket_website
 
@@ -1248,7 +1256,7 @@ Boto3 documentation:
 [S3.Client.get_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_bucket_website)
 
 Arguments mapping described in
-[GetBucketWebsiteRequestTypeDef](./type_defs.md#getbucketwebsiterequesttypedef).
+[GetBucketWebsiteRequestRequestTypeDef](./type_defs.md#getbucketwebsiterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1256,7 +1264,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetBucketWebsiteOutputResponseTypeDef](./type_defs.md#getbucketwebsiteoutputresponsetypedef).
+[GetBucketWebsiteOutputTypeDef](./type_defs.md#getbucketwebsiteoutputtypedef).
 
 ### get_object
 
@@ -1268,7 +1276,7 @@ Boto3 documentation:
 [S3.Client.get_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object)
 
 Arguments mapping described in
-[GetObjectRequestTypeDef](./type_defs.md#getobjectrequesttypedef).
+[GetObjectRequestRequestTypeDef](./type_defs.md#getobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1294,8 +1302,7 @@ Keyword-only arguments:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[GetObjectOutputResponseTypeDef](./type_defs.md#getobjectoutputresponsetypedef).
+Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
 
 ### get_object_acl
 
@@ -1307,7 +1314,7 @@ Boto3 documentation:
 [S3.Client.get_object_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_acl)
 
 Arguments mapping described in
-[GetObjectAclRequestTypeDef](./type_defs.md#getobjectaclrequesttypedef).
+[GetObjectAclRequestRequestTypeDef](./type_defs.md#getobjectaclrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1318,8 +1325,7 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[GetObjectAclOutputResponseTypeDef](./type_defs.md#getobjectacloutputresponsetypedef).
+Returns [GetObjectAclOutputTypeDef](./type_defs.md#getobjectacloutputtypedef).
 
 ### get_object_legal_hold
 
@@ -1331,7 +1337,7 @@ Boto3 documentation:
 [S3.Client.get_object_legal_hold](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_legal_hold)
 
 Arguments mapping described in
-[GetObjectLegalHoldRequestTypeDef](./type_defs.md#getobjectlegalholdrequesttypedef).
+[GetObjectLegalHoldRequestRequestTypeDef](./type_defs.md#getobjectlegalholdrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1343,7 +1349,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetObjectLegalHoldOutputResponseTypeDef](./type_defs.md#getobjectlegalholdoutputresponsetypedef).
+[GetObjectLegalHoldOutputTypeDef](./type_defs.md#getobjectlegalholdoutputtypedef).
 
 ### get_object_lock_configuration
 
@@ -1355,7 +1361,7 @@ Boto3 documentation:
 [S3.Client.get_object_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_lock_configuration)
 
 Arguments mapping described in
-[GetObjectLockConfigurationRequestTypeDef](./type_defs.md#getobjectlockconfigurationrequesttypedef).
+[GetObjectLockConfigurationRequestRequestTypeDef](./type_defs.md#getobjectlockconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1363,7 +1369,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetObjectLockConfigurationOutputResponseTypeDef](./type_defs.md#getobjectlockconfigurationoutputresponsetypedef).
+[GetObjectLockConfigurationOutputTypeDef](./type_defs.md#getobjectlockconfigurationoutputtypedef).
 
 ### get_object_retention
 
@@ -1375,7 +1381,7 @@ Boto3 documentation:
 [S3.Client.get_object_retention](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_retention)
 
 Arguments mapping described in
-[GetObjectRetentionRequestTypeDef](./type_defs.md#getobjectretentionrequesttypedef).
+[GetObjectRetentionRequestRequestTypeDef](./type_defs.md#getobjectretentionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1387,7 +1393,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetObjectRetentionOutputResponseTypeDef](./type_defs.md#getobjectretentionoutputresponsetypedef).
+[GetObjectRetentionOutputTypeDef](./type_defs.md#getobjectretentionoutputtypedef).
 
 ### get_object_tagging
 
@@ -1399,7 +1405,7 @@ Boto3 documentation:
 [S3.Client.get_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_tagging)
 
 Arguments mapping described in
-[GetObjectTaggingRequestTypeDef](./type_defs.md#getobjecttaggingrequesttypedef).
+[GetObjectTaggingRequestRequestTypeDef](./type_defs.md#getobjecttaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1411,7 +1417,7 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 
 Returns
-[GetObjectTaggingOutputResponseTypeDef](./type_defs.md#getobjecttaggingoutputresponsetypedef).
+[GetObjectTaggingOutputTypeDef](./type_defs.md#getobjecttaggingoutputtypedef).
 
 ### get_object_torrent
 
@@ -1423,7 +1429,7 @@ Boto3 documentation:
 [S3.Client.get_object_torrent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_torrent)
 
 Arguments mapping described in
-[GetObjectTorrentRequestTypeDef](./type_defs.md#getobjecttorrentrequesttypedef).
+[GetObjectTorrentRequestRequestTypeDef](./type_defs.md#getobjecttorrentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1434,7 +1440,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetObjectTorrentOutputResponseTypeDef](./type_defs.md#getobjecttorrentoutputresponsetypedef).
+[GetObjectTorrentOutputTypeDef](./type_defs.md#getobjecttorrentoutputtypedef).
 
 ### get_public_access_block
 
@@ -1446,7 +1452,7 @@ Boto3 documentation:
 [S3.Client.get_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_public_access_block)
 
 Arguments mapping described in
-[GetPublicAccessBlockRequestTypeDef](./type_defs.md#getpublicaccessblockrequesttypedef).
+[GetPublicAccessBlockRequestRequestTypeDef](./type_defs.md#getpublicaccessblockrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1454,7 +1460,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[GetPublicAccessBlockOutputResponseTypeDef](./type_defs.md#getpublicaccessblockoutputresponsetypedef).
+[GetPublicAccessBlockOutputTypeDef](./type_defs.md#getpublicaccessblockoutputtypedef).
 
 ### head_bucket
 
@@ -1467,7 +1473,7 @@ Boto3 documentation:
 [S3.Client.head_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.head_bucket)
 
 Arguments mapping described in
-[HeadBucketRequestTypeDef](./type_defs.md#headbucketrequesttypedef).
+[HeadBucketRequestRequestTypeDef](./type_defs.md#headbucketrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1485,7 +1491,7 @@ Boto3 documentation:
 [S3.Client.head_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.head_object)
 
 Arguments mapping described in
-[HeadObjectRequestTypeDef](./type_defs.md#headobjectrequesttypedef).
+[HeadObjectRequestRequestTypeDef](./type_defs.md#headobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1505,8 +1511,7 @@ Keyword-only arguments:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[HeadObjectOutputResponseTypeDef](./type_defs.md#headobjectoutputresponsetypedef).
+Returns [HeadObjectOutputTypeDef](./type_defs.md#headobjectoutputtypedef).
 
 ### list_bucket_analytics_configurations
 
@@ -1519,7 +1524,7 @@ Boto3 documentation:
 [S3.Client.list_bucket_analytics_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_analytics_configurations)
 
 Arguments mapping described in
-[ListBucketAnalyticsConfigurationsRequestTypeDef](./type_defs.md#listbucketanalyticsconfigurationsrequesttypedef).
+[ListBucketAnalyticsConfigurationsRequestRequestTypeDef](./type_defs.md#listbucketanalyticsconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1528,7 +1533,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[ListBucketAnalyticsConfigurationsOutputResponseTypeDef](./type_defs.md#listbucketanalyticsconfigurationsoutputresponsetypedef).
+[ListBucketAnalyticsConfigurationsOutputTypeDef](./type_defs.md#listbucketanalyticsconfigurationsoutputtypedef).
 
 ### list_bucket_intelligent_tiering_configurations
 
@@ -1541,7 +1546,7 @@ Boto3 documentation:
 [S3.Client.list_bucket_intelligent_tiering_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_intelligent_tiering_configurations)
 
 Arguments mapping described in
-[ListBucketIntelligentTieringConfigurationsRequestTypeDef](./type_defs.md#listbucketintelligenttieringconfigurationsrequesttypedef).
+[ListBucketIntelligentTieringConfigurationsRequestRequestTypeDef](./type_defs.md#listbucketintelligenttieringconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1549,7 +1554,7 @@ Keyword-only arguments:
 - `ContinuationToken`: `str`
 
 Returns
-[ListBucketIntelligentTieringConfigurationsOutputResponseTypeDef](./type_defs.md#listbucketintelligenttieringconfigurationsoutputresponsetypedef).
+[ListBucketIntelligentTieringConfigurationsOutputTypeDef](./type_defs.md#listbucketintelligenttieringconfigurationsoutputtypedef).
 
 ### list_bucket_inventory_configurations
 
@@ -1562,7 +1567,7 @@ Boto3 documentation:
 [S3.Client.list_bucket_inventory_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_inventory_configurations)
 
 Arguments mapping described in
-[ListBucketInventoryConfigurationsRequestTypeDef](./type_defs.md#listbucketinventoryconfigurationsrequesttypedef).
+[ListBucketInventoryConfigurationsRequestRequestTypeDef](./type_defs.md#listbucketinventoryconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1571,7 +1576,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[ListBucketInventoryConfigurationsOutputResponseTypeDef](./type_defs.md#listbucketinventoryconfigurationsoutputresponsetypedef).
+[ListBucketInventoryConfigurationsOutputTypeDef](./type_defs.md#listbucketinventoryconfigurationsoutputtypedef).
 
 ### list_bucket_metrics_configurations
 
@@ -1584,7 +1589,7 @@ Boto3 documentation:
 [S3.Client.list_bucket_metrics_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_bucket_metrics_configurations)
 
 Arguments mapping described in
-[ListBucketMetricsConfigurationsRequestTypeDef](./type_defs.md#listbucketmetricsconfigurationsrequesttypedef).
+[ListBucketMetricsConfigurationsRequestRequestTypeDef](./type_defs.md#listbucketmetricsconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1593,7 +1598,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[ListBucketMetricsConfigurationsOutputResponseTypeDef](./type_defs.md#listbucketmetricsconfigurationsoutputresponsetypedef).
+[ListBucketMetricsConfigurationsOutputTypeDef](./type_defs.md#listbucketmetricsconfigurationsoutputtypedef).
 
 ### list_buckets
 
@@ -1604,8 +1609,7 @@ Type annotations for `boto3.client("s3").list_buckets` method.
 Boto3 documentation:
 [S3.Client.list_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_buckets)
 
-Returns
-[ListBucketsOutputResponseTypeDef](./type_defs.md#listbucketsoutputresponsetypedef).
+Returns [ListBucketsOutputTypeDef](./type_defs.md#listbucketsoutputtypedef).
 
 ### list_multipart_uploads
 
@@ -1617,7 +1621,7 @@ Boto3 documentation:
 [S3.Client.list_multipart_uploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_multipart_uploads)
 
 Arguments mapping described in
-[ListMultipartUploadsRequestTypeDef](./type_defs.md#listmultipartuploadsrequesttypedef).
+[ListMultipartUploadsRequestRequestTypeDef](./type_defs.md#listmultipartuploadsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1632,7 +1636,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[ListMultipartUploadsOutputResponseTypeDef](./type_defs.md#listmultipartuploadsoutputresponsetypedef).
+[ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef).
 
 ### list_object_versions
 
@@ -1644,7 +1648,7 @@ Boto3 documentation:
 [S3.Client.list_object_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_object_versions)
 
 Arguments mapping described in
-[ListObjectVersionsRequestTypeDef](./type_defs.md#listobjectversionsrequesttypedef).
+[ListObjectVersionsRequestRequestTypeDef](./type_defs.md#listobjectversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1659,7 +1663,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[ListObjectVersionsOutputResponseTypeDef](./type_defs.md#listobjectversionsoutputresponsetypedef).
+[ListObjectVersionsOutputTypeDef](./type_defs.md#listobjectversionsoutputtypedef).
 
 ### list_objects
 
@@ -1671,7 +1675,7 @@ Boto3 documentation:
 [S3.Client.list_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_objects)
 
 Arguments mapping described in
-[ListObjectsRequestTypeDef](./type_defs.md#listobjectsrequesttypedef).
+[ListObjectsRequestRequestTypeDef](./type_defs.md#listobjectsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1686,8 +1690,7 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[ListObjectsOutputResponseTypeDef](./type_defs.md#listobjectsoutputresponsetypedef).
+Returns [ListObjectsOutputTypeDef](./type_defs.md#listobjectsoutputtypedef).
 
 ### list_objects_v2
 
@@ -1699,7 +1702,7 @@ Boto3 documentation:
 [S3.Client.list_objects_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_objects_v2)
 
 Arguments mapping described in
-[ListObjectsV2RequestTypeDef](./type_defs.md#listobjectsv2requesttypedef).
+[ListObjectsV2RequestRequestTypeDef](./type_defs.md#listobjectsv2requestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1717,7 +1720,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[ListObjectsV2OutputResponseTypeDef](./type_defs.md#listobjectsv2outputresponsetypedef).
+[ListObjectsV2OutputTypeDef](./type_defs.md#listobjectsv2outputtypedef).
 
 ### list_parts
 
@@ -1729,7 +1732,7 @@ Boto3 documentation:
 [S3.Client.list_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_parts)
 
 Arguments mapping described in
-[ListPartsRequestTypeDef](./type_defs.md#listpartsrequesttypedef).
+[ListPartsRequestRequestTypeDef](./type_defs.md#listpartsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1742,8 +1745,7 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[ListPartsOutputResponseTypeDef](./type_defs.md#listpartsoutputresponsetypedef).
+Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
 
 ### put_bucket_accelerate_configuration
 
@@ -1756,7 +1758,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_accelerate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_accelerate_configuration)
 
 Arguments mapping described in
-[PutBucketAccelerateConfigurationRequestTypeDef](./type_defs.md#putbucketaccelerateconfigurationrequesttypedef).
+[PutBucketAccelerateConfigurationRequestRequestTypeDef](./type_defs.md#putbucketaccelerateconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1776,7 +1778,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_acl)
 
 Arguments mapping described in
-[PutBucketAclRequestTypeDef](./type_defs.md#putbucketaclrequesttypedef).
+[PutBucketAclRequestRequestTypeDef](./type_defs.md#putbucketaclrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1803,7 +1805,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_analytics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_analytics_configuration)
 
 Arguments mapping described in
-[PutBucketAnalyticsConfigurationRequestTypeDef](./type_defs.md#putbucketanalyticsconfigurationrequesttypedef).
+[PutBucketAnalyticsConfigurationRequestRequestTypeDef](./type_defs.md#putbucketanalyticsconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1824,7 +1826,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_cors)
 
 Arguments mapping described in
-[PutBucketCorsRequestTypeDef](./type_defs.md#putbucketcorsrequesttypedef).
+[PutBucketCorsRequestRequestTypeDef](./type_defs.md#putbucketcorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1845,7 +1847,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_encryption)
 
 Arguments mapping described in
-[PutBucketEncryptionRequestTypeDef](./type_defs.md#putbucketencryptionrequesttypedef).
+[PutBucketEncryptionRequestRequestTypeDef](./type_defs.md#putbucketencryptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1867,7 +1869,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_intelligent_tiering_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_intelligent_tiering_configuration)
 
 Arguments mapping described in
-[PutBucketIntelligentTieringConfigurationRequestTypeDef](./type_defs.md#putbucketintelligenttieringconfigurationrequesttypedef).
+[PutBucketIntelligentTieringConfigurationRequestRequestTypeDef](./type_defs.md#putbucketintelligenttieringconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1889,7 +1891,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_inventory_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_inventory_configuration)
 
 Arguments mapping described in
-[PutBucketInventoryConfigurationRequestTypeDef](./type_defs.md#putbucketinventoryconfigurationrequesttypedef).
+[PutBucketInventoryConfigurationRequestRequestTypeDef](./type_defs.md#putbucketinventoryconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1910,7 +1912,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_lifecycle)
 
 Arguments mapping described in
-[PutBucketLifecycleRequestTypeDef](./type_defs.md#putbucketlifecyclerequesttypedef).
+[PutBucketLifecycleRequestRequestTypeDef](./type_defs.md#putbucketlifecyclerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1931,7 +1933,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_lifecycle_configuration)
 
 Arguments mapping described in
-[PutBucketLifecycleConfigurationRequestTypeDef](./type_defs.md#putbucketlifecycleconfigurationrequesttypedef).
+[PutBucketLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#putbucketlifecycleconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1951,7 +1953,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_logging)
 
 Arguments mapping described in
-[PutBucketLoggingRequestTypeDef](./type_defs.md#putbucketloggingrequesttypedef).
+[PutBucketLoggingRequestRequestTypeDef](./type_defs.md#putbucketloggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1973,7 +1975,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_metrics_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_metrics_configuration)
 
 Arguments mapping described in
-[PutBucketMetricsConfigurationRequestTypeDef](./type_defs.md#putbucketmetricsconfigurationrequesttypedef).
+[PutBucketMetricsConfigurationRequestRequestTypeDef](./type_defs.md#putbucketmetricsconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1996,13 +1998,13 @@ Boto3 documentation:
 [S3.Client.put_bucket_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_notification)
 
 Arguments mapping described in
-[PutBucketNotificationRequestTypeDef](./type_defs.md#putbucketnotificationrequesttypedef).
+[PutBucketNotificationRequestRequestTypeDef](./type_defs.md#putbucketnotificationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `NotificationConfiguration`:
-  [NotificationConfigurationDeprecatedResponseTypeDef](./type_defs.md#notificationconfigurationdeprecatedresponsetypedef)
+  [NotificationConfigurationDeprecatedTypeDef](./type_defs.md#notificationconfigurationdeprecatedtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
@@ -2017,13 +2019,13 @@ Boto3 documentation:
 [S3.Client.put_bucket_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_notification_configuration)
 
 Arguments mapping described in
-[PutBucketNotificationConfigurationRequestTypeDef](./type_defs.md#putbucketnotificationconfigurationrequesttypedef).
+[PutBucketNotificationConfigurationRequestRequestTypeDef](./type_defs.md#putbucketnotificationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `NotificationConfiguration`:
-  [NotificationConfigurationResponseTypeDef](./type_defs.md#notificationconfigurationresponsetypedef)
+  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
@@ -2037,7 +2039,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_ownership_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_ownership_controls)
 
 Arguments mapping described in
-[PutBucketOwnershipControlsRequestTypeDef](./type_defs.md#putbucketownershipcontrolsrequesttypedef).
+[PutBucketOwnershipControlsRequestRequestTypeDef](./type_defs.md#putbucketownershipcontrolsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2058,7 +2060,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_policy)
 
 Arguments mapping described in
-[PutBucketPolicyRequestTypeDef](./type_defs.md#putbucketpolicyrequesttypedef).
+[PutBucketPolicyRequestRequestTypeDef](./type_defs.md#putbucketpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2077,7 +2079,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_replication)
 
 Arguments mapping described in
-[PutBucketReplicationRequestTypeDef](./type_defs.md#putbucketreplicationrequesttypedef).
+[PutBucketReplicationRequestRequestTypeDef](./type_defs.md#putbucketreplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2098,7 +2100,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_request_payment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_request_payment)
 
 Arguments mapping described in
-[PutBucketRequestPaymentRequestTypeDef](./type_defs.md#putbucketrequestpaymentrequesttypedef).
+[PutBucketRequestPaymentRequestRequestTypeDef](./type_defs.md#putbucketrequestpaymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2118,7 +2120,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_tagging)
 
 Arguments mapping described in
-[PutBucketTaggingRequestTypeDef](./type_defs.md#putbuckettaggingrequesttypedef).
+[PutBucketTaggingRequestRequestTypeDef](./type_defs.md#putbuckettaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2136,7 +2138,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_versioning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_versioning)
 
 Arguments mapping described in
-[PutBucketVersioningRequestTypeDef](./type_defs.md#putbucketversioningrequesttypedef).
+[PutBucketVersioningRequestRequestTypeDef](./type_defs.md#putbucketversioningrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2158,7 +2160,7 @@ Boto3 documentation:
 [S3.Client.put_bucket_website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_bucket_website)
 
 Arguments mapping described in
-[PutBucketWebsiteRequestTypeDef](./type_defs.md#putbucketwebsiterequesttypedef).
+[PutBucketWebsiteRequestRequestTypeDef](./type_defs.md#putbucketwebsiterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2178,7 +2180,7 @@ Boto3 documentation:
 [S3.Client.put_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object)
 
 Arguments mapping described in
-[PutObjectRequestTypeDef](./type_defs.md#putobjectrequesttypedef).
+[PutObjectRequestRequestTypeDef](./type_defs.md#putobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2218,8 +2220,7 @@ Keyword-only arguments:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[PutObjectOutputResponseTypeDef](./type_defs.md#putobjectoutputresponsetypedef).
+Returns [PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef).
 
 ### put_object_acl
 
@@ -2232,7 +2233,7 @@ Boto3 documentation:
 [S3.Client.put_object_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_acl)
 
 Arguments mapping described in
-[PutObjectAclRequestTypeDef](./type_defs.md#putobjectaclrequesttypedef).
+[PutObjectAclRequestRequestTypeDef](./type_defs.md#putobjectaclrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2251,8 +2252,7 @@ Keyword-only arguments:
 - `VersionId`: `str`
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[PutObjectAclOutputResponseTypeDef](./type_defs.md#putobjectacloutputresponsetypedef).
+Returns [PutObjectAclOutputTypeDef](./type_defs.md#putobjectacloutputtypedef).
 
 ### put_object_legal_hold
 
@@ -2264,7 +2264,7 @@ Boto3 documentation:
 [S3.Client.put_object_legal_hold](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_legal_hold)
 
 Arguments mapping described in
-[PutObjectLegalHoldRequestTypeDef](./type_defs.md#putobjectlegalholdrequesttypedef).
+[PutObjectLegalHoldRequestRequestTypeDef](./type_defs.md#putobjectlegalholdrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2279,7 +2279,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[PutObjectLegalHoldOutputResponseTypeDef](./type_defs.md#putobjectlegalholdoutputresponsetypedef).
+[PutObjectLegalHoldOutputTypeDef](./type_defs.md#putobjectlegalholdoutputtypedef).
 
 ### put_object_lock_configuration
 
@@ -2291,7 +2291,7 @@ Boto3 documentation:
 [S3.Client.put_object_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_lock_configuration)
 
 Arguments mapping described in
-[PutObjectLockConfigurationRequestTypeDef](./type_defs.md#putobjectlockconfigurationrequesttypedef).
+[PutObjectLockConfigurationRequestRequestTypeDef](./type_defs.md#putobjectlockconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2305,7 +2305,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[PutObjectLockConfigurationOutputResponseTypeDef](./type_defs.md#putobjectlockconfigurationoutputresponsetypedef).
+[PutObjectLockConfigurationOutputTypeDef](./type_defs.md#putobjectlockconfigurationoutputtypedef).
 
 ### put_object_retention
 
@@ -2317,7 +2317,7 @@ Boto3 documentation:
 [S3.Client.put_object_retention](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_retention)
 
 Arguments mapping described in
-[PutObjectRetentionRequestTypeDef](./type_defs.md#putobjectretentionrequesttypedef).
+[PutObjectRetentionRequestRequestTypeDef](./type_defs.md#putobjectretentionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2333,7 +2333,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[PutObjectRetentionOutputResponseTypeDef](./type_defs.md#putobjectretentionoutputresponsetypedef).
+[PutObjectRetentionOutputTypeDef](./type_defs.md#putobjectretentionoutputtypedef).
 
 ### put_object_tagging
 
@@ -2345,7 +2345,7 @@ Boto3 documentation:
 [S3.Client.put_object_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object_tagging)
 
 Arguments mapping described in
-[PutObjectTaggingRequestTypeDef](./type_defs.md#putobjecttaggingrequesttypedef).
+[PutObjectTaggingRequestRequestTypeDef](./type_defs.md#putobjecttaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2359,7 +2359,7 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 
 Returns
-[PutObjectTaggingOutputResponseTypeDef](./type_defs.md#putobjecttaggingoutputresponsetypedef).
+[PutObjectTaggingOutputTypeDef](./type_defs.md#putobjecttaggingoutputtypedef).
 
 ### put_public_access_block
 
@@ -2372,7 +2372,7 @@ Boto3 documentation:
 [S3.Client.put_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_public_access_block)
 
 Arguments mapping described in
-[PutPublicAccessBlockRequestTypeDef](./type_defs.md#putpublicaccessblockrequesttypedef).
+[PutPublicAccessBlockRequestRequestTypeDef](./type_defs.md#putpublicaccessblockrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2394,7 +2394,7 @@ Boto3 documentation:
 [S3.Client.restore_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.restore_object)
 
 Arguments mapping described in
-[RestoreObjectRequestTypeDef](./type_defs.md#restoreobjectrequesttypedef).
+[RestoreObjectRequestRequestTypeDef](./type_defs.md#restoreobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2408,7 +2408,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[RestoreObjectOutputResponseTypeDef](./type_defs.md#restoreobjectoutputresponsetypedef).
+[RestoreObjectOutputTypeDef](./type_defs.md#restoreobjectoutputtypedef).
 
 ### select_object_content
 
@@ -2421,7 +2421,7 @@ Boto3 documentation:
 [S3.Client.select_object_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.select_object_content)
 
 Arguments mapping described in
-[SelectObjectContentRequestTypeDef](./type_defs.md#selectobjectcontentrequesttypedef).
+[SelectObjectContentRequestRequestTypeDef](./type_defs.md#selectobjectcontentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2445,7 +2445,7 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns
-[SelectObjectContentOutputResponseTypeDef](./type_defs.md#selectobjectcontentoutputresponsetypedef).
+[SelectObjectContentOutputTypeDef](./type_defs.md#selectobjectcontentoutputtypedef).
 
 ### upload_file
 
@@ -2499,7 +2499,7 @@ Boto3 documentation:
 [S3.Client.upload_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_part)
 
 Arguments mapping described in
-[UploadPartRequestTypeDef](./type_defs.md#uploadpartrequesttypedef).
+[UploadPartRequestRequestTypeDef](./type_defs.md#uploadpartrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2517,8 +2517,7 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-Returns
-[UploadPartOutputResponseTypeDef](./type_defs.md#uploadpartoutputresponsetypedef).
+Returns [UploadPartOutputTypeDef](./type_defs.md#uploadpartoutputtypedef).
 
 ### upload_part_copy
 
@@ -2530,7 +2529,7 @@ Boto3 documentation:
 [S3.Client.upload_part_copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.upload_part_copy)
 
 Arguments mapping described in
-[UploadPartCopyRequestTypeDef](./type_defs.md#uploadpartcopyrequesttypedef).
+[UploadPartCopyRequestRequestTypeDef](./type_defs.md#uploadpartcopyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2557,7 +2556,7 @@ Keyword-only arguments:
 - `ExpectedSourceBucketOwner`: `str`
 
 Returns
-[UploadPartCopyOutputResponseTypeDef](./type_defs.md#uploadpartcopyoutputresponsetypedef).
+[UploadPartCopyOutputTypeDef](./type_defs.md#uploadpartcopyoutputtypedef).
 
 ### write_get_object_response
 
@@ -2570,7 +2569,7 @@ Boto3 documentation:
 [S3.Client.write_get_object_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.write_get_object_response)
 
 Arguments mapping described in
-[WriteGetObjectResponseRequestTypeDef](./type_defs.md#writegetobjectresponserequesttypedef).
+[WriteGetObjectResponseRequestRequestTypeDef](./type_defs.md#writegetobjectresponserequestrequesttypedef).
 
 Keyword-only arguments:
 

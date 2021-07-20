@@ -11,15 +11,15 @@ type annotations stubs module
   - [BufferingHintsTypeDef](#bufferinghintstypedef)
   - [CloudWatchLoggingOptionsTypeDef](#cloudwatchloggingoptionstypedef)
   - [CopyCommandTypeDef](#copycommandtypedef)
-  - [CreateDeliveryStreamInputTypeDef](#createdeliverystreaminputtypedef)
-  - [CreateDeliveryStreamOutputResponseTypeDef](#createdeliverystreamoutputresponsetypedef)
+  - [CreateDeliveryStreamInputRequestTypeDef](#createdeliverystreaminputrequesttypedef)
+  - [CreateDeliveryStreamOutputTypeDef](#createdeliverystreamoutputtypedef)
   - [DataFormatConversionConfigurationTypeDef](#dataformatconversionconfigurationtypedef)
-  - [DeleteDeliveryStreamInputTypeDef](#deletedeliverystreaminputtypedef)
+  - [DeleteDeliveryStreamInputRequestTypeDef](#deletedeliverystreaminputrequesttypedef)
   - [DeliveryStreamDescriptionTypeDef](#deliverystreamdescriptiontypedef)
   - [DeliveryStreamEncryptionConfigurationInputTypeDef](#deliverystreamencryptionconfigurationinputtypedef)
   - [DeliveryStreamEncryptionConfigurationTypeDef](#deliverystreamencryptionconfigurationtypedef)
-  - [DescribeDeliveryStreamInputTypeDef](#describedeliverystreaminputtypedef)
-  - [DescribeDeliveryStreamOutputResponseTypeDef](#describedeliverystreamoutputresponsetypedef)
+  - [DescribeDeliveryStreamInputRequestTypeDef](#describedeliverystreaminputrequesttypedef)
+  - [DescribeDeliveryStreamOutputTypeDef](#describedeliverystreamoutputtypedef)
   - [DeserializerTypeDef](#deserializertypedef)
   - [DestinationDescriptionTypeDef](#destinationdescriptiontypedef)
   - [ElasticsearchBufferingHintsTypeDef](#elasticsearchbufferinghintstypedef)
@@ -46,10 +46,10 @@ type annotations stubs module
   - [KMSEncryptionConfigTypeDef](#kmsencryptionconfigtypedef)
   - [KinesisStreamSourceConfigurationTypeDef](#kinesisstreamsourceconfigurationtypedef)
   - [KinesisStreamSourceDescriptionTypeDef](#kinesisstreamsourcedescriptiontypedef)
-  - [ListDeliveryStreamsInputTypeDef](#listdeliverystreamsinputtypedef)
-  - [ListDeliveryStreamsOutputResponseTypeDef](#listdeliverystreamsoutputresponsetypedef)
-  - [ListTagsForDeliveryStreamInputTypeDef](#listtagsfordeliverystreaminputtypedef)
-  - [ListTagsForDeliveryStreamOutputResponseTypeDef](#listtagsfordeliverystreamoutputresponsetypedef)
+  - [ListDeliveryStreamsInputRequestTypeDef](#listdeliverystreamsinputrequesttypedef)
+  - [ListDeliveryStreamsOutputTypeDef](#listdeliverystreamsoutputtypedef)
+  - [ListTagsForDeliveryStreamInputRequestTypeDef](#listtagsfordeliverystreaminputrequesttypedef)
+  - [ListTagsForDeliveryStreamOutputTypeDef](#listtagsfordeliverystreamoutputtypedef)
   - [OpenXJsonSerDeTypeDef](#openxjsonserdetypedef)
   - [OrcSerDeTypeDef](#orcserdetypedef)
   - [OutputFormatConfigurationTypeDef](#outputformatconfigurationtypedef)
@@ -57,11 +57,11 @@ type annotations stubs module
   - [ProcessingConfigurationTypeDef](#processingconfigurationtypedef)
   - [ProcessorParameterTypeDef](#processorparametertypedef)
   - [ProcessorTypeDef](#processortypedef)
-  - [PutRecordBatchInputTypeDef](#putrecordbatchinputtypedef)
-  - [PutRecordBatchOutputResponseTypeDef](#putrecordbatchoutputresponsetypedef)
+  - [PutRecordBatchInputRequestTypeDef](#putrecordbatchinputrequesttypedef)
+  - [PutRecordBatchOutputTypeDef](#putrecordbatchoutputtypedef)
   - [PutRecordBatchResponseEntryTypeDef](#putrecordbatchresponseentrytypedef)
-  - [PutRecordInputTypeDef](#putrecordinputtypedef)
-  - [PutRecordOutputResponseTypeDef](#putrecordoutputresponsetypedef)
+  - [PutRecordInputRequestTypeDef](#putrecordinputrequesttypedef)
+  - [PutRecordOutputTypeDef](#putrecordoutputtypedef)
   - [RecordTypeDef](#recordtypedef)
   - [RedshiftDestinationConfigurationTypeDef](#redshiftdestinationconfigurationtypedef)
   - [RedshiftDestinationDescriptionTypeDef](#redshiftdestinationdescriptiontypedef)
@@ -78,12 +78,12 @@ type annotations stubs module
   - [SplunkDestinationDescriptionTypeDef](#splunkdestinationdescriptiontypedef)
   - [SplunkDestinationUpdateTypeDef](#splunkdestinationupdatetypedef)
   - [SplunkRetryOptionsTypeDef](#splunkretryoptionstypedef)
-  - [StartDeliveryStreamEncryptionInputTypeDef](#startdeliverystreamencryptioninputtypedef)
-  - [StopDeliveryStreamEncryptionInputTypeDef](#stopdeliverystreamencryptioninputtypedef)
-  - [TagDeliveryStreamInputTypeDef](#tagdeliverystreaminputtypedef)
+  - [StartDeliveryStreamEncryptionInputRequestTypeDef](#startdeliverystreamencryptioninputrequesttypedef)
+  - [StopDeliveryStreamEncryptionInputRequestTypeDef](#stopdeliverystreamencryptioninputrequesttypedef)
+  - [TagDeliveryStreamInputRequestTypeDef](#tagdeliverystreaminputrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagDeliveryStreamInputTypeDef](#untagdeliverystreaminputtypedef)
-  - [UpdateDestinationInputTypeDef](#updatedestinationinputtypedef)
+  - [UntagDeliveryStreamInputRequestTypeDef](#untagdeliverystreaminputrequesttypedef)
+  - [UpdateDestinationInputRequestTypeDef](#updatedestinationinputrequesttypedef)
   - [VpcConfigurationDescriptionTypeDef](#vpcconfigurationdescriptiontypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
 
@@ -125,10 +125,10 @@ Optional fields:
 - `DataTableColumns`: `str`
 - `CopyOptions`: `str`
 
-## CreateDeliveryStreamInputTypeDef
+## CreateDeliveryStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import CreateDeliveryStreamInputTypeDef
+from mypy_boto3_firehose.type_defs import CreateDeliveryStreamInputRequestTypeDef
 ```
 
 Required fields:
@@ -157,10 +157,10 @@ Optional fields:
   [HttpEndpointDestinationConfigurationTypeDef](./type_defs.md#httpendpointdestinationconfigurationtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDeliveryStreamOutputResponseTypeDef
+## CreateDeliveryStreamOutputTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import CreateDeliveryStreamOutputResponseTypeDef
+from mypy_boto3_firehose.type_defs import CreateDeliveryStreamOutputTypeDef
 ```
 
 Required fields:
@@ -185,10 +185,10 @@ Optional fields:
   [OutputFormatConfigurationTypeDef](./type_defs.md#outputformatconfigurationtypedef)
 - `Enabled`: `bool`
 
-## DeleteDeliveryStreamInputTypeDef
+## DeleteDeliveryStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import DeleteDeliveryStreamInputTypeDef
+from mypy_boto3_firehose.type_defs import DeleteDeliveryStreamInputRequestTypeDef
 ```
 
 Required fields:
@@ -257,10 +257,10 @@ Optional fields:
 - `FailureDescription`:
   [FailureDescriptionTypeDef](./type_defs.md#failuredescriptiontypedef)
 
-## DescribeDeliveryStreamInputTypeDef
+## DescribeDeliveryStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import DescribeDeliveryStreamInputTypeDef
+from mypy_boto3_firehose.type_defs import DescribeDeliveryStreamInputRequestTypeDef
 ```
 
 Required fields:
@@ -272,10 +272,10 @@ Optional fields:
 - `Limit`: `int`
 - `ExclusiveStartDestinationId`: `str`
 
-## DescribeDeliveryStreamOutputResponseTypeDef
+## DescribeDeliveryStreamOutputTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import DescribeDeliveryStreamOutputResponseTypeDef
+from mypy_boto3_firehose.type_defs import DescribeDeliveryStreamOutputTypeDef
 ```
 
 Required fields:
@@ -751,10 +751,10 @@ Optional fields:
 - `RoleARN`: `str`
 - `DeliveryStartTimestamp`: `datetime`
 
-## ListDeliveryStreamsInputTypeDef
+## ListDeliveryStreamsInputRequestTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import ListDeliveryStreamsInputTypeDef
+from mypy_boto3_firehose.type_defs import ListDeliveryStreamsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -764,10 +764,10 @@ Optional fields:
   [DeliveryStreamTypeType](./literals.md#deliverystreamtypetype)
 - `ExclusiveStartDeliveryStreamName`: `str`
 
-## ListDeliveryStreamsOutputResponseTypeDef
+## ListDeliveryStreamsOutputTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import ListDeliveryStreamsOutputResponseTypeDef
+from mypy_boto3_firehose.type_defs import ListDeliveryStreamsOutputTypeDef
 ```
 
 Required fields:
@@ -777,10 +777,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForDeliveryStreamInputTypeDef
+## ListTagsForDeliveryStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import ListTagsForDeliveryStreamInputTypeDef
+from mypy_boto3_firehose.type_defs import ListTagsForDeliveryStreamInputRequestTypeDef
 ```
 
 Required fields:
@@ -792,10 +792,10 @@ Optional fields:
 - `ExclusiveStartTagKey`: `str`
 - `Limit`: `int`
 
-## ListTagsForDeliveryStreamOutputResponseTypeDef
+## ListTagsForDeliveryStreamOutputTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import ListTagsForDeliveryStreamOutputResponseTypeDef
+from mypy_boto3_firehose.type_defs import ListTagsForDeliveryStreamOutputTypeDef
 ```
 
 Required fields:
@@ -901,10 +901,10 @@ Optional fields:
 - `Parameters`:
   `List`\[[ProcessorParameterTypeDef](./type_defs.md#processorparametertypedef)\]
 
-## PutRecordBatchInputTypeDef
+## PutRecordBatchInputRequestTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import PutRecordBatchInputTypeDef
+from mypy_boto3_firehose.type_defs import PutRecordBatchInputRequestTypeDef
 ```
 
 Required fields:
@@ -912,10 +912,10 @@ Required fields:
 - `DeliveryStreamName`: `str`
 - `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
 
-## PutRecordBatchOutputResponseTypeDef
+## PutRecordBatchOutputTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import PutRecordBatchOutputResponseTypeDef
+from mypy_boto3_firehose.type_defs import PutRecordBatchOutputTypeDef
 ```
 
 Required fields:
@@ -939,10 +939,10 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
-## PutRecordInputTypeDef
+## PutRecordInputRequestTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import PutRecordInputTypeDef
+from mypy_boto3_firehose.type_defs import PutRecordInputRequestTypeDef
 ```
 
 Required fields:
@@ -950,10 +950,10 @@ Required fields:
 - `DeliveryStreamName`: `str`
 - `Record`: [RecordTypeDef](./type_defs.md#recordtypedef)
 
-## PutRecordOutputResponseTypeDef
+## PutRecordOutputTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import PutRecordOutputResponseTypeDef
+from mypy_boto3_firehose.type_defs import PutRecordOutputTypeDef
 ```
 
 Required fields:
@@ -1268,10 +1268,10 @@ Optional fields:
 
 - `DurationInSeconds`: `int`
 
-## StartDeliveryStreamEncryptionInputTypeDef
+## StartDeliveryStreamEncryptionInputRequestTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import StartDeliveryStreamEncryptionInputTypeDef
+from mypy_boto3_firehose.type_defs import StartDeliveryStreamEncryptionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1283,20 +1283,20 @@ Optional fields:
 - `DeliveryStreamEncryptionConfigurationInput`:
   [DeliveryStreamEncryptionConfigurationInputTypeDef](./type_defs.md#deliverystreamencryptionconfigurationinputtypedef)
 
-## StopDeliveryStreamEncryptionInputTypeDef
+## StopDeliveryStreamEncryptionInputRequestTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import StopDeliveryStreamEncryptionInputTypeDef
+from mypy_boto3_firehose.type_defs import StopDeliveryStreamEncryptionInputRequestTypeDef
 ```
 
 Required fields:
 
 - `DeliveryStreamName`: `str`
 
-## TagDeliveryStreamInputTypeDef
+## TagDeliveryStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import TagDeliveryStreamInputTypeDef
+from mypy_boto3_firehose.type_defs import TagDeliveryStreamInputRequestTypeDef
 ```
 
 Required fields:
@@ -1318,10 +1318,10 @@ Optional fields:
 
 - `Value`: `str`
 
-## UntagDeliveryStreamInputTypeDef
+## UntagDeliveryStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import UntagDeliveryStreamInputTypeDef
+from mypy_boto3_firehose.type_defs import UntagDeliveryStreamInputRequestTypeDef
 ```
 
 Required fields:
@@ -1329,10 +1329,10 @@ Required fields:
 - `DeliveryStreamName`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateDestinationInputTypeDef
+## UpdateDestinationInputRequestTypeDef
 
 ```python
-from mypy_boto3_firehose.type_defs import UpdateDestinationInputTypeDef
+from mypy_boto3_firehose.type_defs import UpdateDestinationInputRequestTypeDef
 ```
 
 Required fields:

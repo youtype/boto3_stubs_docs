@@ -12,6 +12,7 @@ type annotations stubs module
   - [MarketplaceCommerceAnalyticsClient](#marketplacecommerceanalyticsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_data_set](#generate_data_set)
     - [generate_presigned_url](#generate_presigned_url)
@@ -52,6 +53,18 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MarketplaceCommerceAnalyticsClient exceptions.
+
+Type annotations for `boto3.client("marketplacecommerceanalytics").exceptions`
+method.
+
+Boto3 documentation:
+[MarketplaceCommerceAnalytics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -81,7 +94,7 @@ Boto3 documentation:
 [MarketplaceCommerceAnalytics.Client.generate_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_data_set)
 
 Arguments mapping described in
-[GenerateDataSetRequestTypeDef](./type_defs.md#generatedatasetrequesttypedef).
+[GenerateDataSetRequestRequestTypeDef](./type_defs.md#generatedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -94,7 +107,7 @@ Keyword-only arguments:
 - `customerDefinedValues`: `Dict`\[`str`, `str`\]
 
 Returns
-[GenerateDataSetResultResponseTypeDef](./type_defs.md#generatedatasetresultresponsetypedef).
+[GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef).
 
 ### generate_presigned_url
 
@@ -129,7 +142,7 @@ Boto3 documentation:
 [MarketplaceCommerceAnalytics.Client.start_support_data_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.start_support_data_export)
 
 Arguments mapping described in
-[StartSupportDataExportRequestTypeDef](./type_defs.md#startsupportdataexportrequesttypedef).
+[StartSupportDataExportRequestRequestTypeDef](./type_defs.md#startsupportdataexportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -143,4 +156,4 @@ Keyword-only arguments:
 - `customerDefinedValues`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartSupportDataExportResultResponseTypeDef](./type_defs.md#startsupportdataexportresultresponsetypedef).
+[StartSupportDataExportResultTypeDef](./type_defs.md#startsupportdataexportresulttypedef).

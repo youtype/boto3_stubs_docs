@@ -11,6 +11,7 @@ type annotations stubs module
   - [XRayClient](#xrayclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_get_traces](#batch_get_traces)
     - [can_paginate](#can_paginate)
     - [create_group](#create_group)
@@ -81,6 +82,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+XRayClient exceptions.
+
+Type annotations for `boto3.client("xray").exceptions` method.
+
+Boto3 documentation:
+[XRay.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_get_traces
 
 Retrieves a list of traces specified by ID.
@@ -91,7 +103,7 @@ Boto3 documentation:
 [XRay.Client.batch_get_traces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.batch_get_traces)
 
 Arguments mapping described in
-[BatchGetTracesRequestTypeDef](./type_defs.md#batchgettracesrequesttypedef).
+[BatchGetTracesRequestRequestTypeDef](./type_defs.md#batchgettracesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -99,7 +111,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[BatchGetTracesResultResponseTypeDef](./type_defs.md#batchgettracesresultresponsetypedef).
+[BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef).
 
 ### can_paginate
 
@@ -126,7 +138,7 @@ Boto3 documentation:
 [XRay.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_group)
 
 Arguments mapping described in
-[CreateGroupRequestTypeDef](./type_defs.md#creategrouprequesttypedef).
+[CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,8 +148,7 @@ Keyword-only arguments:
   [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateGroupResultResponseTypeDef](./type_defs.md#creategroupresultresponsetypedef).
+Returns [CreateGroupResultTypeDef](./type_defs.md#creategroupresulttypedef).
 
 ### create_sampling_rule
 
@@ -149,7 +160,7 @@ Boto3 documentation:
 [XRay.Client.create_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_sampling_rule)
 
 Arguments mapping described in
-[CreateSamplingRuleRequestTypeDef](./type_defs.md#createsamplingrulerequesttypedef).
+[CreateSamplingRuleRequestRequestTypeDef](./type_defs.md#createsamplingrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -158,7 +169,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSamplingRuleResultResponseTypeDef](./type_defs.md#createsamplingruleresultresponsetypedef).
+[CreateSamplingRuleResultTypeDef](./type_defs.md#createsamplingruleresulttypedef).
 
 ### delete_group
 
@@ -170,7 +181,7 @@ Boto3 documentation:
 [XRay.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_group)
 
 Arguments mapping described in
-[DeleteGroupRequestTypeDef](./type_defs.md#deletegrouprequesttypedef).
+[DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -189,7 +200,7 @@ Boto3 documentation:
 [XRay.Client.delete_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_sampling_rule)
 
 Arguments mapping described in
-[DeleteSamplingRuleRequestTypeDef](./type_defs.md#deletesamplingrulerequesttypedef).
+[DeleteSamplingRuleRequestRequestTypeDef](./type_defs.md#deletesamplingrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -197,7 +208,7 @@ Keyword-only arguments:
 - `RuleARN`: `str`
 
 Returns
-[DeleteSamplingRuleResultResponseTypeDef](./type_defs.md#deletesamplingruleresultresponsetypedef).
+[DeleteSamplingRuleResultTypeDef](./type_defs.md#deletesamplingruleresulttypedef).
 
 ### generate_presigned_url
 
@@ -227,7 +238,7 @@ Boto3 documentation:
 [XRay.Client.get_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_encryption_config)
 
 Returns
-[GetEncryptionConfigResultResponseTypeDef](./type_defs.md#getencryptionconfigresultresponsetypedef).
+[GetEncryptionConfigResultTypeDef](./type_defs.md#getencryptionconfigresulttypedef).
 
 ### get_group
 
@@ -239,15 +250,14 @@ Boto3 documentation:
 [XRay.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_group)
 
 Arguments mapping described in
-[GetGroupRequestTypeDef](./type_defs.md#getgrouprequesttypedef).
+[GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GroupName`: `str`
 - `GroupARN`: `str`
 
-Returns
-[GetGroupResultResponseTypeDef](./type_defs.md#getgroupresultresponsetypedef).
+Returns [GetGroupResultTypeDef](./type_defs.md#getgroupresulttypedef).
 
 ### get_groups
 
@@ -259,14 +269,13 @@ Boto3 documentation:
 [XRay.Client.get_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_groups)
 
 Arguments mapping described in
-[GetGroupsRequestTypeDef](./type_defs.md#getgroupsrequesttypedef).
+[GetGroupsRequestRequestTypeDef](./type_defs.md#getgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
-Returns
-[GetGroupsResultResponseTypeDef](./type_defs.md#getgroupsresultresponsetypedef).
+Returns [GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef).
 
 ### get_insight
 
@@ -278,14 +287,13 @@ Boto3 documentation:
 [XRay.Client.get_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight)
 
 Arguments mapping described in
-[GetInsightRequestTypeDef](./type_defs.md#getinsightrequesttypedef).
+[GetInsightRequestRequestTypeDef](./type_defs.md#getinsightrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InsightId`: `str` *(required)*
 
-Returns
-[GetInsightResultResponseTypeDef](./type_defs.md#getinsightresultresponsetypedef).
+Returns [GetInsightResultTypeDef](./type_defs.md#getinsightresulttypedef).
 
 ### get_insight_events
 
@@ -298,7 +306,7 @@ Boto3 documentation:
 [XRay.Client.get_insight_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_events)
 
 Arguments mapping described in
-[GetInsightEventsRequestTypeDef](./type_defs.md#getinsighteventsrequesttypedef).
+[GetInsightEventsRequestRequestTypeDef](./type_defs.md#getinsighteventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,7 +315,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetInsightEventsResultResponseTypeDef](./type_defs.md#getinsighteventsresultresponsetypedef).
+[GetInsightEventsResultTypeDef](./type_defs.md#getinsighteventsresulttypedef).
 
 ### get_insight_impact_graph
 
@@ -319,7 +327,7 @@ Boto3 documentation:
 [XRay.Client.get_insight_impact_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_impact_graph)
 
 Arguments mapping described in
-[GetInsightImpactGraphRequestTypeDef](./type_defs.md#getinsightimpactgraphrequesttypedef).
+[GetInsightImpactGraphRequestRequestTypeDef](./type_defs.md#getinsightimpactgraphrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -329,7 +337,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetInsightImpactGraphResultResponseTypeDef](./type_defs.md#getinsightimpactgraphresultresponsetypedef).
+[GetInsightImpactGraphResultTypeDef](./type_defs.md#getinsightimpactgraphresulttypedef).
 
 ### get_insight_summaries
 
@@ -342,7 +350,7 @@ Boto3 documentation:
 [XRay.Client.get_insight_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_summaries)
 
 Arguments mapping described in
-[GetInsightSummariesRequestTypeDef](./type_defs.md#getinsightsummariesrequesttypedef).
+[GetInsightSummariesRequestRequestTypeDef](./type_defs.md#getinsightsummariesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -355,7 +363,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetInsightSummariesResultResponseTypeDef](./type_defs.md#getinsightsummariesresultresponsetypedef).
+[GetInsightSummariesResultTypeDef](./type_defs.md#getinsightsummariesresulttypedef).
 
 ### get_sampling_rules
 
@@ -367,14 +375,14 @@ Boto3 documentation:
 [XRay.Client.get_sampling_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_rules)
 
 Arguments mapping described in
-[GetSamplingRulesRequestTypeDef](./type_defs.md#getsamplingrulesrequesttypedef).
+[GetSamplingRulesRequestRequestTypeDef](./type_defs.md#getsamplingrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[GetSamplingRulesResultResponseTypeDef](./type_defs.md#getsamplingrulesresultresponsetypedef).
+[GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef).
 
 ### get_sampling_statistic_summaries
 
@@ -387,14 +395,14 @@ Boto3 documentation:
 [XRay.Client.get_sampling_statistic_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_statistic_summaries)
 
 Arguments mapping described in
-[GetSamplingStatisticSummariesRequestTypeDef](./type_defs.md#getsamplingstatisticsummariesrequesttypedef).
+[GetSamplingStatisticSummariesRequestRequestTypeDef](./type_defs.md#getsamplingstatisticsummariesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[GetSamplingStatisticSummariesResultResponseTypeDef](./type_defs.md#getsamplingstatisticsummariesresultresponsetypedef).
+[GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef).
 
 ### get_sampling_targets
 
@@ -407,7 +415,7 @@ Boto3 documentation:
 [XRay.Client.get_sampling_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_targets)
 
 Arguments mapping described in
-[GetSamplingTargetsRequestTypeDef](./type_defs.md#getsamplingtargetsrequesttypedef).
+[GetSamplingTargetsRequestRequestTypeDef](./type_defs.md#getsamplingtargetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -416,7 +424,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetSamplingTargetsResultResponseTypeDef](./type_defs.md#getsamplingtargetsresultresponsetypedef).
+[GetSamplingTargetsResultTypeDef](./type_defs.md#getsamplingtargetsresulttypedef).
 
 ### get_service_graph
 
@@ -429,7 +437,7 @@ Boto3 documentation:
 [XRay.Client.get_service_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_service_graph)
 
 Arguments mapping described in
-[GetServiceGraphRequestTypeDef](./type_defs.md#getservicegraphrequesttypedef).
+[GetServiceGraphRequestRequestTypeDef](./type_defs.md#getservicegraphrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -440,7 +448,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetServiceGraphResultResponseTypeDef](./type_defs.md#getservicegraphresultresponsetypedef).
+[GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef).
 
 ### get_time_series_service_statistics
 
@@ -453,7 +461,7 @@ Boto3 documentation:
 [XRay.Client.get_time_series_service_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_time_series_service_statistics)
 
 Arguments mapping described in
-[GetTimeSeriesServiceStatisticsRequestTypeDef](./type_defs.md#gettimeseriesservicestatisticsrequesttypedef).
+[GetTimeSeriesServiceStatisticsRequestRequestTypeDef](./type_defs.md#gettimeseriesservicestatisticsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -467,7 +475,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetTimeSeriesServiceStatisticsResultResponseTypeDef](./type_defs.md#gettimeseriesservicestatisticsresultresponsetypedef).
+[GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef).
 
 ### get_trace_graph
 
@@ -479,7 +487,7 @@ Boto3 documentation:
 [XRay.Client.get_trace_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_graph)
 
 Arguments mapping described in
-[GetTraceGraphRequestTypeDef](./type_defs.md#gettracegraphrequesttypedef).
+[GetTraceGraphRequestRequestTypeDef](./type_defs.md#gettracegraphrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -487,7 +495,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetTraceGraphResultResponseTypeDef](./type_defs.md#gettracegraphresultresponsetypedef).
+[GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef).
 
 ### get_trace_summaries
 
@@ -500,7 +508,7 @@ Boto3 documentation:
 [XRay.Client.get_trace_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_summaries)
 
 Arguments mapping described in
-[GetTraceSummariesRequestTypeDef](./type_defs.md#gettracesummariesrequesttypedef).
+[GetTraceSummariesRequestRequestTypeDef](./type_defs.md#gettracesummariesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -514,7 +522,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetTraceSummariesResultResponseTypeDef](./type_defs.md#gettracesummariesresultresponsetypedef).
+[GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef).
 
 ### list_tags_for_resource
 
@@ -527,7 +535,7 @@ Boto3 documentation:
 [XRay.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -535,7 +543,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_encryption_config
 
@@ -547,7 +555,7 @@ Boto3 documentation:
 [XRay.Client.put_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_encryption_config)
 
 Arguments mapping described in
-[PutEncryptionConfigRequestTypeDef](./type_defs.md#putencryptionconfigrequesttypedef).
+[PutEncryptionConfigRequestRequestTypeDef](./type_defs.md#putencryptionconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -555,7 +563,7 @@ Keyword-only arguments:
 - `KeyId`: `str`
 
 Returns
-[PutEncryptionConfigResultResponseTypeDef](./type_defs.md#putencryptionconfigresultresponsetypedef).
+[PutEncryptionConfigResultTypeDef](./type_defs.md#putencryptionconfigresulttypedef).
 
 ### put_telemetry_records
 
@@ -567,7 +575,7 @@ Boto3 documentation:
 [XRay.Client.put_telemetry_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_telemetry_records)
 
 Arguments mapping described in
-[PutTelemetryRecordsRequestTypeDef](./type_defs.md#puttelemetryrecordsrequesttypedef).
+[PutTelemetryRecordsRequestRequestTypeDef](./type_defs.md#puttelemetryrecordsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -590,14 +598,14 @@ Boto3 documentation:
 [XRay.Client.put_trace_segments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_trace_segments)
 
 Arguments mapping described in
-[PutTraceSegmentsRequestTypeDef](./type_defs.md#puttracesegmentsrequesttypedef).
+[PutTraceSegmentsRequestRequestTypeDef](./type_defs.md#puttracesegmentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TraceSegmentDocuments`: `List`\[`str`\] *(required)*
 
 Returns
-[PutTraceSegmentsResultResponseTypeDef](./type_defs.md#puttracesegmentsresultresponsetypedef).
+[PutTraceSegmentsResultTypeDef](./type_defs.md#puttracesegmentsresulttypedef).
 
 ### tag_resource
 
@@ -609,7 +617,7 @@ Boto3 documentation:
 [XRay.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -628,7 +636,7 @@ Boto3 documentation:
 [XRay.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -647,7 +655,7 @@ Boto3 documentation:
 [XRay.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_group)
 
 Arguments mapping described in
-[UpdateGroupRequestTypeDef](./type_defs.md#updategrouprequesttypedef).
+[UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -657,8 +665,7 @@ Keyword-only arguments:
 - `InsightsConfiguration`:
   [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
 
-Returns
-[UpdateGroupResultResponseTypeDef](./type_defs.md#updategroupresultresponsetypedef).
+Returns [UpdateGroupResultTypeDef](./type_defs.md#updategroupresulttypedef).
 
 ### update_sampling_rule
 
@@ -670,7 +677,7 @@ Boto3 documentation:
 [XRay.Client.update_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_sampling_rule)
 
 Arguments mapping described in
-[UpdateSamplingRuleRequestTypeDef](./type_defs.md#updatesamplingrulerequesttypedef).
+[UpdateSamplingRuleRequestRequestTypeDef](./type_defs.md#updatesamplingrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -679,7 +686,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateSamplingRuleResultResponseTypeDef](./type_defs.md#updatesamplingruleresultresponsetypedef).
+[UpdateSamplingRuleResultTypeDef](./type_defs.md#updatesamplingruleresulttypedef).
 
 ### get_paginator
 

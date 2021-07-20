@@ -8,14 +8,14 @@ type annotations stubs module
 [mypy_boto3_sagemaker_runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
 
 - [Typed dictionaries for boto3 SageMakerRuntime module](#typed-dictionaries-for-boto3-sagemakerruntime-module)
-  - [InvokeEndpointInputTypeDef](#invokeendpointinputtypedef)
-  - [InvokeEndpointOutputResponseTypeDef](#invokeendpointoutputresponsetypedef)
+  - [InvokeEndpointInputRequestTypeDef](#invokeendpointinputrequesttypedef)
+  - [InvokeEndpointOutputTypeDef](#invokeendpointoutputtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
-## InvokeEndpointInputTypeDef
+## InvokeEndpointInputRequestTypeDef
 
 ```python
-from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointInputTypeDef
+from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointInputRequestTypeDef
 ```
 
 Required fields:
@@ -33,10 +33,10 @@ Optional fields:
 - `TargetContainerHostname`: `str`
 - `InferenceId`: `str`
 
-## InvokeEndpointOutputResponseTypeDef
+## InvokeEndpointOutputTypeDef
 
 ```python
-from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointOutputResponseTypeDef
+from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointOutputTypeDef
 ```
 
 Required fields:

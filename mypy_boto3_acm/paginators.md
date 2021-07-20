@@ -35,4 +35,4 @@ Arguments for `ListCertificatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCertificatesPaginator.paginate` returns
-`Iterator`\[[ListCertificatesResponseResponseTypeDef](./type_defs.md#listcertificatesresponseresponsetypedef)\].
+`Iterator`\[[ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef)\].

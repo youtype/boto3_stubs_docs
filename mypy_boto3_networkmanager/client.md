@@ -11,6 +11,7 @@ type annotations stubs module
   - [NetworkManagerClient](#networkmanagerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_customer_gateway](#associate_customer_gateway)
     - [associate_link](#associate_link)
     - [associate_transit_gateway_connect_peer](#associate_transit_gateway_connect_peer)
@@ -91,6 +92,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+NetworkManagerClient exceptions.
+
+Type annotations for `boto3.client("networkmanager").exceptions` method.
+
+Boto3 documentation:
+[NetworkManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_customer_gateway
 
 Associates a customer gateway with a device and optionally, with a link.
@@ -102,7 +114,7 @@ Boto3 documentation:
 [NetworkManager.Client.associate_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_customer_gateway)
 
 Arguments mapping described in
-[AssociateCustomerGatewayRequestTypeDef](./type_defs.md#associatecustomergatewayrequesttypedef).
+[AssociateCustomerGatewayRequestRequestTypeDef](./type_defs.md#associatecustomergatewayrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -112,7 +124,7 @@ Keyword-only arguments:
 - `LinkId`: `str`
 
 Returns
-[AssociateCustomerGatewayResponseResponseTypeDef](./type_defs.md#associatecustomergatewayresponseresponsetypedef).
+[AssociateCustomerGatewayResponseTypeDef](./type_defs.md#associatecustomergatewayresponsetypedef).
 
 ### associate_link
 
@@ -124,7 +136,7 @@ Boto3 documentation:
 [NetworkManager.Client.associate_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_link)
 
 Arguments mapping described in
-[AssociateLinkRequestTypeDef](./type_defs.md#associatelinkrequesttypedef).
+[AssociateLinkRequestRequestTypeDef](./type_defs.md#associatelinkrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -133,7 +145,7 @@ Keyword-only arguments:
 - `LinkId`: `str` *(required)*
 
 Returns
-[AssociateLinkResponseResponseTypeDef](./type_defs.md#associatelinkresponseresponsetypedef).
+[AssociateLinkResponseTypeDef](./type_defs.md#associatelinkresponsetypedef).
 
 ### associate_transit_gateway_connect_peer
 
@@ -147,7 +159,7 @@ Boto3 documentation:
 [NetworkManager.Client.associate_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_transit_gateway_connect_peer)
 
 Arguments mapping described in
-[AssociateTransitGatewayConnectPeerRequestTypeDef](./type_defs.md#associatetransitgatewayconnectpeerrequesttypedef).
+[AssociateTransitGatewayConnectPeerRequestRequestTypeDef](./type_defs.md#associatetransitgatewayconnectpeerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,7 +169,7 @@ Keyword-only arguments:
 - `LinkId`: `str`
 
 Returns
-[AssociateTransitGatewayConnectPeerResponseResponseTypeDef](./type_defs.md#associatetransitgatewayconnectpeerresponseresponsetypedef).
+[AssociateTransitGatewayConnectPeerResponseTypeDef](./type_defs.md#associatetransitgatewayconnectpeerresponsetypedef).
 
 ### can_paginate
 
@@ -184,7 +196,7 @@ Boto3 documentation:
 [NetworkManager.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connection)
 
 Arguments mapping described in
-[CreateConnectionRequestTypeDef](./type_defs.md#createconnectionrequesttypedef).
+[CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -197,7 +209,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateConnectionResponseResponseTypeDef](./type_defs.md#createconnectionresponseresponsetypedef).
+[CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
 
 ### create_device
 
@@ -209,7 +221,7 @@ Boto3 documentation:
 [NetworkManager.Client.create_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_device)
 
 Arguments mapping described in
-[CreateDeviceRequestTypeDef](./type_defs.md#createdevicerequesttypedef).
+[CreateDeviceRequestRequestTypeDef](./type_defs.md#createdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,7 +237,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDeviceResponseResponseTypeDef](./type_defs.md#createdeviceresponseresponsetypedef).
+[CreateDeviceResponseTypeDef](./type_defs.md#createdeviceresponsetypedef).
 
 ### create_global_network
 
@@ -238,7 +250,7 @@ Boto3 documentation:
 [NetworkManager.Client.create_global_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_global_network)
 
 Arguments mapping described in
-[CreateGlobalNetworkRequestTypeDef](./type_defs.md#createglobalnetworkrequesttypedef).
+[CreateGlobalNetworkRequestRequestTypeDef](./type_defs.md#createglobalnetworkrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -246,7 +258,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateGlobalNetworkResponseResponseTypeDef](./type_defs.md#createglobalnetworkresponseresponsetypedef).
+[CreateGlobalNetworkResponseTypeDef](./type_defs.md#createglobalnetworkresponsetypedef).
 
 ### create_link
 
@@ -258,7 +270,7 @@ Boto3 documentation:
 [NetworkManager.Client.create_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_link)
 
 Arguments mapping described in
-[CreateLinkRequestTypeDef](./type_defs.md#createlinkrequesttypedef).
+[CreateLinkRequestRequestTypeDef](./type_defs.md#createlinkrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -270,8 +282,7 @@ Keyword-only arguments:
 - `Provider`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateLinkResponseResponseTypeDef](./type_defs.md#createlinkresponseresponsetypedef).
+Returns [CreateLinkResponseTypeDef](./type_defs.md#createlinkresponsetypedef).
 
 ### create_site
 
@@ -283,7 +294,7 @@ Boto3 documentation:
 [NetworkManager.Client.create_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_site)
 
 Arguments mapping described in
-[CreateSiteRequestTypeDef](./type_defs.md#createsiterequesttypedef).
+[CreateSiteRequestRequestTypeDef](./type_defs.md#createsiterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -292,8 +303,7 @@ Keyword-only arguments:
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateSiteResponseResponseTypeDef](./type_defs.md#createsiteresponseresponsetypedef).
+Returns [CreateSiteResponseTypeDef](./type_defs.md#createsiteresponsetypedef).
 
 ### delete_connection
 
@@ -305,7 +315,7 @@ Boto3 documentation:
 [NetworkManager.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_connection)
 
 Arguments mapping described in
-[DeleteConnectionRequestTypeDef](./type_defs.md#deleteconnectionrequesttypedef).
+[DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -313,7 +323,7 @@ Keyword-only arguments:
 - `ConnectionId`: `str` *(required)*
 
 Returns
-[DeleteConnectionResponseResponseTypeDef](./type_defs.md#deleteconnectionresponseresponsetypedef).
+[DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
 
 ### delete_device
 
@@ -325,7 +335,7 @@ Boto3 documentation:
 [NetworkManager.Client.delete_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_device)
 
 Arguments mapping described in
-[DeleteDeviceRequestTypeDef](./type_defs.md#deletedevicerequesttypedef).
+[DeleteDeviceRequestRequestTypeDef](./type_defs.md#deletedevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -333,7 +343,7 @@ Keyword-only arguments:
 - `DeviceId`: `str` *(required)*
 
 Returns
-[DeleteDeviceResponseResponseTypeDef](./type_defs.md#deletedeviceresponseresponsetypedef).
+[DeleteDeviceResponseTypeDef](./type_defs.md#deletedeviceresponsetypedef).
 
 ### delete_global_network
 
@@ -346,14 +356,14 @@ Boto3 documentation:
 [NetworkManager.Client.delete_global_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_global_network)
 
 Arguments mapping described in
-[DeleteGlobalNetworkRequestTypeDef](./type_defs.md#deleteglobalnetworkrequesttypedef).
+[DeleteGlobalNetworkRequestRequestTypeDef](./type_defs.md#deleteglobalnetworkrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 
 Returns
-[DeleteGlobalNetworkResponseResponseTypeDef](./type_defs.md#deleteglobalnetworkresponseresponsetypedef).
+[DeleteGlobalNetworkResponseTypeDef](./type_defs.md#deleteglobalnetworkresponsetypedef).
 
 ### delete_link
 
@@ -365,15 +375,14 @@ Boto3 documentation:
 [NetworkManager.Client.delete_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_link)
 
 Arguments mapping described in
-[DeleteLinkRequestTypeDef](./type_defs.md#deletelinkrequesttypedef).
+[DeleteLinkRequestRequestTypeDef](./type_defs.md#deletelinkrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `LinkId`: `str` *(required)*
 
-Returns
-[DeleteLinkResponseResponseTypeDef](./type_defs.md#deletelinkresponseresponsetypedef).
+Returns [DeleteLinkResponseTypeDef](./type_defs.md#deletelinkresponsetypedef).
 
 ### delete_site
 
@@ -385,15 +394,14 @@ Boto3 documentation:
 [NetworkManager.Client.delete_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_site)
 
 Arguments mapping described in
-[DeleteSiteRequestTypeDef](./type_defs.md#deletesiterequesttypedef).
+[DeleteSiteRequestRequestTypeDef](./type_defs.md#deletesiterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GlobalNetworkId`: `str` *(required)*
 - `SiteId`: `str` *(required)*
 
-Returns
-[DeleteSiteResponseResponseTypeDef](./type_defs.md#deletesiteresponseresponsetypedef).
+Returns [DeleteSiteResponseTypeDef](./type_defs.md#deletesiteresponsetypedef).
 
 ### deregister_transit_gateway
 
@@ -406,7 +414,7 @@ Boto3 documentation:
 [NetworkManager.Client.deregister_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.deregister_transit_gateway)
 
 Arguments mapping described in
-[DeregisterTransitGatewayRequestTypeDef](./type_defs.md#deregistertransitgatewayrequesttypedef).
+[DeregisterTransitGatewayRequestRequestTypeDef](./type_defs.md#deregistertransitgatewayrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -414,7 +422,7 @@ Keyword-only arguments:
 - `TransitGatewayArn`: `str` *(required)*
 
 Returns
-[DeregisterTransitGatewayResponseResponseTypeDef](./type_defs.md#deregistertransitgatewayresponseresponsetypedef).
+[DeregisterTransitGatewayResponseTypeDef](./type_defs.md#deregistertransitgatewayresponsetypedef).
 
 ### describe_global_networks
 
@@ -427,7 +435,7 @@ Boto3 documentation:
 [NetworkManager.Client.describe_global_networks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.describe_global_networks)
 
 Arguments mapping described in
-[DescribeGlobalNetworksRequestTypeDef](./type_defs.md#describeglobalnetworksrequesttypedef).
+[DescribeGlobalNetworksRequestRequestTypeDef](./type_defs.md#describeglobalnetworksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -436,7 +444,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeGlobalNetworksResponseResponseTypeDef](./type_defs.md#describeglobalnetworksresponseresponsetypedef).
+[DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef).
 
 ### disassociate_customer_gateway
 
@@ -449,7 +457,7 @@ Boto3 documentation:
 [NetworkManager.Client.disassociate_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_customer_gateway)
 
 Arguments mapping described in
-[DisassociateCustomerGatewayRequestTypeDef](./type_defs.md#disassociatecustomergatewayrequesttypedef).
+[DisassociateCustomerGatewayRequestRequestTypeDef](./type_defs.md#disassociatecustomergatewayrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -457,7 +465,7 @@ Keyword-only arguments:
 - `CustomerGatewayArn`: `str` *(required)*
 
 Returns
-[DisassociateCustomerGatewayResponseResponseTypeDef](./type_defs.md#disassociatecustomergatewayresponseresponsetypedef).
+[DisassociateCustomerGatewayResponseTypeDef](./type_defs.md#disassociatecustomergatewayresponsetypedef).
 
 ### disassociate_link
 
@@ -469,7 +477,7 @@ Boto3 documentation:
 [NetworkManager.Client.disassociate_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_link)
 
 Arguments mapping described in
-[DisassociateLinkRequestTypeDef](./type_defs.md#disassociatelinkrequesttypedef).
+[DisassociateLinkRequestRequestTypeDef](./type_defs.md#disassociatelinkrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -478,7 +486,7 @@ Keyword-only arguments:
 - `LinkId`: `str` *(required)*
 
 Returns
-[DisassociateLinkResponseResponseTypeDef](./type_defs.md#disassociatelinkresponseresponsetypedef).
+[DisassociateLinkResponseTypeDef](./type_defs.md#disassociatelinkresponsetypedef).
 
 ### disassociate_transit_gateway_connect_peer
 
@@ -492,7 +500,7 @@ Boto3 documentation:
 [NetworkManager.Client.disassociate_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_transit_gateway_connect_peer)
 
 Arguments mapping described in
-[DisassociateTransitGatewayConnectPeerRequestTypeDef](./type_defs.md#disassociatetransitgatewayconnectpeerrequesttypedef).
+[DisassociateTransitGatewayConnectPeerRequestRequestTypeDef](./type_defs.md#disassociatetransitgatewayconnectpeerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -500,7 +508,7 @@ Keyword-only arguments:
 - `TransitGatewayConnectPeerArn`: `str` *(required)*
 
 Returns
-[DisassociateTransitGatewayConnectPeerResponseResponseTypeDef](./type_defs.md#disassociatetransitgatewayconnectpeerresponseresponsetypedef).
+[DisassociateTransitGatewayConnectPeerResponseTypeDef](./type_defs.md#disassociatetransitgatewayconnectpeerresponsetypedef).
 
 ### generate_presigned_url
 
@@ -531,7 +539,7 @@ Boto3 documentation:
 [NetworkManager.Client.get_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connections)
 
 Arguments mapping described in
-[GetConnectionsRequestTypeDef](./type_defs.md#getconnectionsrequesttypedef).
+[GetConnectionsRequestRequestTypeDef](./type_defs.md#getconnectionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -542,7 +550,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetConnectionsResponseResponseTypeDef](./type_defs.md#getconnectionsresponseresponsetypedef).
+[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef).
 
 ### get_customer_gateway_associations
 
@@ -556,7 +564,7 @@ Boto3 documentation:
 [NetworkManager.Client.get_customer_gateway_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_customer_gateway_associations)
 
 Arguments mapping described in
-[GetCustomerGatewayAssociationsRequestTypeDef](./type_defs.md#getcustomergatewayassociationsrequesttypedef).
+[GetCustomerGatewayAssociationsRequestRequestTypeDef](./type_defs.md#getcustomergatewayassociationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -566,7 +574,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetCustomerGatewayAssociationsResponseResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponseresponsetypedef).
+[GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef).
 
 ### get_devices
 
@@ -578,7 +586,7 @@ Boto3 documentation:
 [NetworkManager.Client.get_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_devices)
 
 Arguments mapping described in
-[GetDevicesRequestTypeDef](./type_defs.md#getdevicesrequesttypedef).
+[GetDevicesRequestRequestTypeDef](./type_defs.md#getdevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -588,8 +596,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[GetDevicesResponseResponseTypeDef](./type_defs.md#getdevicesresponseresponsetypedef).
+Returns [GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef).
 
 ### get_link_associations
 
@@ -602,7 +609,7 @@ Boto3 documentation:
 [NetworkManager.Client.get_link_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_link_associations)
 
 Arguments mapping described in
-[GetLinkAssociationsRequestTypeDef](./type_defs.md#getlinkassociationsrequesttypedef).
+[GetLinkAssociationsRequestRequestTypeDef](./type_defs.md#getlinkassociationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -613,7 +620,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetLinkAssociationsResponseResponseTypeDef](./type_defs.md#getlinkassociationsresponseresponsetypedef).
+[GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef).
 
 ### get_links
 
@@ -625,7 +632,7 @@ Boto3 documentation:
 [NetworkManager.Client.get_links](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_links)
 
 Arguments mapping described in
-[GetLinksRequestTypeDef](./type_defs.md#getlinksrequesttypedef).
+[GetLinksRequestRequestTypeDef](./type_defs.md#getlinksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -637,8 +644,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[GetLinksResponseResponseTypeDef](./type_defs.md#getlinksresponseresponsetypedef).
+Returns [GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef).
 
 ### get_sites
 
@@ -650,7 +656,7 @@ Boto3 documentation:
 [NetworkManager.Client.get_sites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_sites)
 
 Arguments mapping described in
-[GetSitesRequestTypeDef](./type_defs.md#getsitesrequesttypedef).
+[GetSitesRequestRequestTypeDef](./type_defs.md#getsitesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -659,8 +665,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[GetSitesResponseResponseTypeDef](./type_defs.md#getsitesresponseresponsetypedef).
+Returns [GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef).
 
 ### get_transit_gateway_connect_peer_associations
 
@@ -675,7 +680,7 @@ Boto3 documentation:
 [NetworkManager.Client.get_transit_gateway_connect_peer_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_connect_peer_associations)
 
 Arguments mapping described in
-[GetTransitGatewayConnectPeerAssociationsRequestTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsrequesttypedef).
+[GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -685,7 +690,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetTransitGatewayConnectPeerAssociationsResponseResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponseresponsetypedef).
+[GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef).
 
 ### get_transit_gateway_registrations
 
@@ -699,7 +704,7 @@ Boto3 documentation:
 [NetworkManager.Client.get_transit_gateway_registrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_registrations)
 
 Arguments mapping described in
-[GetTransitGatewayRegistrationsRequestTypeDef](./type_defs.md#gettransitgatewayregistrationsrequesttypedef).
+[GetTransitGatewayRegistrationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayregistrationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -709,7 +714,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetTransitGatewayRegistrationsResponseResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponseresponsetypedef).
+[GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -722,14 +727,14 @@ Boto3 documentation:
 [NetworkManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### register_transit_gateway
 
@@ -742,7 +747,7 @@ Boto3 documentation:
 [NetworkManager.Client.register_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.register_transit_gateway)
 
 Arguments mapping described in
-[RegisterTransitGatewayRequestTypeDef](./type_defs.md#registertransitgatewayrequesttypedef).
+[RegisterTransitGatewayRequestRequestTypeDef](./type_defs.md#registertransitgatewayrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -750,7 +755,7 @@ Keyword-only arguments:
 - `TransitGatewayArn`: `str` *(required)*
 
 Returns
-[RegisterTransitGatewayResponseResponseTypeDef](./type_defs.md#registertransitgatewayresponseresponsetypedef).
+[RegisterTransitGatewayResponseTypeDef](./type_defs.md#registertransitgatewayresponsetypedef).
 
 ### tag_resource
 
@@ -762,7 +767,7 @@ Boto3 documentation:
 [NetworkManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -781,7 +786,7 @@ Boto3 documentation:
 [NetworkManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -800,7 +805,7 @@ Boto3 documentation:
 [NetworkManager.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_connection)
 
 Arguments mapping described in
-[UpdateConnectionRequestTypeDef](./type_defs.md#updateconnectionrequesttypedef).
+[UpdateConnectionRequestRequestTypeDef](./type_defs.md#updateconnectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -811,7 +816,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateConnectionResponseResponseTypeDef](./type_defs.md#updateconnectionresponseresponsetypedef).
+[UpdateConnectionResponseTypeDef](./type_defs.md#updateconnectionresponsetypedef).
 
 ### update_device
 
@@ -823,7 +828,7 @@ Boto3 documentation:
 [NetworkManager.Client.update_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_device)
 
 Arguments mapping described in
-[UpdateDeviceRequestTypeDef](./type_defs.md#updatedevicerequesttypedef).
+[UpdateDeviceRequestRequestTypeDef](./type_defs.md#updatedevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -839,7 +844,7 @@ Keyword-only arguments:
 - `SiteId`: `str`
 
 Returns
-[UpdateDeviceResponseResponseTypeDef](./type_defs.md#updatedeviceresponseresponsetypedef).
+[UpdateDeviceResponseTypeDef](./type_defs.md#updatedeviceresponsetypedef).
 
 ### update_global_network
 
@@ -852,7 +857,7 @@ Boto3 documentation:
 [NetworkManager.Client.update_global_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_global_network)
 
 Arguments mapping described in
-[UpdateGlobalNetworkRequestTypeDef](./type_defs.md#updateglobalnetworkrequesttypedef).
+[UpdateGlobalNetworkRequestRequestTypeDef](./type_defs.md#updateglobalnetworkrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -860,7 +865,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateGlobalNetworkResponseResponseTypeDef](./type_defs.md#updateglobalnetworkresponseresponsetypedef).
+[UpdateGlobalNetworkResponseTypeDef](./type_defs.md#updateglobalnetworkresponsetypedef).
 
 ### update_link
 
@@ -872,7 +877,7 @@ Boto3 documentation:
 [NetworkManager.Client.update_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_link)
 
 Arguments mapping described in
-[UpdateLinkRequestTypeDef](./type_defs.md#updatelinkrequesttypedef).
+[UpdateLinkRequestRequestTypeDef](./type_defs.md#updatelinkrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -883,8 +888,7 @@ Keyword-only arguments:
 - `Bandwidth`: [BandwidthTypeDef](./type_defs.md#bandwidthtypedef)
 - `Provider`: `str`
 
-Returns
-[UpdateLinkResponseResponseTypeDef](./type_defs.md#updatelinkresponseresponsetypedef).
+Returns [UpdateLinkResponseTypeDef](./type_defs.md#updatelinkresponsetypedef).
 
 ### update_site
 
@@ -896,7 +900,7 @@ Boto3 documentation:
 [NetworkManager.Client.update_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_site)
 
 Arguments mapping described in
-[UpdateSiteRequestTypeDef](./type_defs.md#updatesiterequesttypedef).
+[UpdateSiteRequestRequestTypeDef](./type_defs.md#updatesiterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -905,8 +909,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 
-Returns
-[UpdateSiteResponseResponseTypeDef](./type_defs.md#updatesiteresponseresponsetypedef).
+Returns [UpdateSiteResponseTypeDef](./type_defs.md#updatesiteresponsetypedef).
 
 ### get_paginator
 

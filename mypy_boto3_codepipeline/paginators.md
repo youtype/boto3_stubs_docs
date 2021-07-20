@@ -41,7 +41,7 @@ Arguments for `ListActionExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActionExecutionsPaginator.paginate` returns
-`Iterator`\[[ListActionExecutionsOutputResponseTypeDef](./type_defs.md#listactionexecutionsoutputresponsetypedef)\].
+`Iterator`\[[ListActionExecutionsOutputTypeDef](./type_defs.md#listactionexecutionsoutputtypedef)\].
 
 ## ListActionTypesPaginator
 
@@ -68,7 +68,7 @@ Arguments for `ListActionTypesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListActionTypesPaginator.paginate` returns
-`Iterator`\[[ListActionTypesOutputResponseTypeDef](./type_defs.md#listactiontypesoutputresponsetypedef)\].
+`Iterator`\[[ListActionTypesOutputTypeDef](./type_defs.md#listactiontypesoutputtypedef)\].
 
 ## ListPipelineExecutionsPaginator
 
@@ -94,7 +94,7 @@ Arguments for `ListPipelineExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelineExecutionsPaginator.paginate` returns
-`Iterator`\[[ListPipelineExecutionsOutputResponseTypeDef](./type_defs.md#listpipelineexecutionsoutputresponsetypedef)\].
+`Iterator`\[[ListPipelineExecutionsOutputTypeDef](./type_defs.md#listpipelineexecutionsoutputtypedef)\].
 
 ## ListPipelinesPaginator
 
@@ -119,7 +119,7 @@ Arguments for `ListPipelinesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPipelinesPaginator.paginate` returns
-`Iterator`\[[ListPipelinesOutputResponseTypeDef](./type_defs.md#listpipelinesoutputresponsetypedef)\].
+`Iterator`\[[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -145,7 +145,7 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
 
 ## ListWebhooksPaginator
 
@@ -170,4 +170,4 @@ Arguments for `ListWebhooksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListWebhooksPaginator.paginate` returns
-`Iterator`\[[ListWebhooksOutputResponseTypeDef](./type_defs.md#listwebhooksoutputresponsetypedef)\].
+`Iterator`\[[ListWebhooksOutputTypeDef](./type_defs.md#listwebhooksoutputtypedef)\].

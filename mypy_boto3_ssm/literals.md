@@ -1326,6 +1326,7 @@ Values:
 - `ChangeRequestByTemplate`
 - `CreatedBy`
 - `CreatedTime`
+- `InsightByType`
 - `LastModifiedTime`
 - `OperationalData`
 - `OperationalDataKey`
@@ -1389,6 +1390,7 @@ Values:
 - `Cancelling`
 - `ChangeCalendarOverrideApproved`
 - `ChangeCalendarOverrideRejected`
+- `Closed`
 - `CompletedWithFailure`
 - `CompletedWithSuccess`
 - `Failed`

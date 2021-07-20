@@ -11,6 +11,7 @@ type annotations stubs module
   - [IdentityStoreClient](#identitystoreclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [describe_group](#describe_group)
     - [describe_user](#describe_user)
@@ -57,6 +58,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IdentityStoreClient exceptions.
+
+Type annotations for `boto3.client("identitystore").exceptions` method.
+
+Boto3 documentation:
+[IdentityStore.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -83,7 +95,7 @@ Boto3 documentation:
 [IdentityStore.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_group)
 
 Arguments mapping described in
-[DescribeGroupRequestTypeDef](./type_defs.md#describegrouprequesttypedef).
+[DescribeGroupRequestRequestTypeDef](./type_defs.md#describegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -91,7 +103,7 @@ Keyword-only arguments:
 - `GroupId`: `str` *(required)*
 
 Returns
-[DescribeGroupResponseResponseTypeDef](./type_defs.md#describegroupresponseresponsetypedef).
+[DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
 
 ### describe_user
 
@@ -103,7 +115,7 @@ Boto3 documentation:
 [IdentityStore.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_user)
 
 Arguments mapping described in
-[DescribeUserRequestTypeDef](./type_defs.md#describeuserrequesttypedef).
+[DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -111,7 +123,7 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 
 Returns
-[DescribeUserResponseResponseTypeDef](./type_defs.md#describeuserresponseresponsetypedef).
+[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
 ### generate_presigned_url
 
@@ -143,7 +155,7 @@ Boto3 documentation:
 [IdentityStore.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_groups)
 
 Arguments mapping described in
-[ListGroupsRequestTypeDef](./type_defs.md#listgroupsrequesttypedef).
+[ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -152,8 +164,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[ListGroupsResponseResponseTypeDef](./type_defs.md#listgroupsresponseresponsetypedef).
+Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
 ### list_users
 
@@ -166,7 +177,7 @@ Boto3 documentation:
 [IdentityStore.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_users)
 
 Arguments mapping described in
-[ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef).
+[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -175,5 +186,4 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef).
+Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).

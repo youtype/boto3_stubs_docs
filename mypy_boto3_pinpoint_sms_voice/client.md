@@ -11,6 +11,7 @@ type annotations stubs module
   - [PinpointSMSVoiceClient](#pinpointsmsvoiceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_configuration_set](#create_configuration_set)
     - [create_configuration_set_event_destination](#create_configuration_set_event_destination)
@@ -61,6 +62,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+PinpointSMSVoiceClient exceptions.
+
+Type annotations for `boto3.client("pinpoint-sms-voice").exceptions` method.
+
+Boto3 documentation:
+[PinpointSMSVoice.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -87,7 +99,7 @@ Boto3 documentation:
 [PinpointSMSVoice.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.create_configuration_set)
 
 Arguments mapping described in
-[CreateConfigurationSetRequestTypeDef](./type_defs.md#createconfigurationsetrequesttypedef).
+[CreateConfigurationSetRequestRequestTypeDef](./type_defs.md#createconfigurationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -107,7 +119,7 @@ Boto3 documentation:
 [PinpointSMSVoice.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.create_configuration_set_event_destination)
 
 Arguments mapping described in
-[CreateConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequesttypedef).
+[CreateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -129,7 +141,7 @@ Boto3 documentation:
 [PinpointSMSVoice.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set)
 
 Arguments mapping described in
-[DeleteConfigurationSetRequestTypeDef](./type_defs.md#deleteconfigurationsetrequesttypedef).
+[DeleteConfigurationSetRequestRequestTypeDef](./type_defs.md#deleteconfigurationsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,7 +161,7 @@ Boto3 documentation:
 [PinpointSMSVoice.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set_event_destination)
 
 Arguments mapping described in
-[DeleteConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequesttypedef).
+[DeleteConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -191,14 +203,14 @@ Boto3 documentation:
 [PinpointSMSVoice.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.get_configuration_set_event_destinations)
 
 Arguments mapping described in
-[GetConfigurationSetEventDestinationsRequestTypeDef](./type_defs.md#getconfigurationseteventdestinationsrequesttypedef).
+[GetConfigurationSetEventDestinationsRequestRequestTypeDef](./type_defs.md#getconfigurationseteventdestinationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 
 Returns
-[GetConfigurationSetEventDestinationsResponseResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponseresponsetypedef).
+[GetConfigurationSetEventDestinationsResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponsetypedef).
 
 ### send_voice_message
 
@@ -211,7 +223,7 @@ Boto3 documentation:
 [PinpointSMSVoice.Client.send_voice_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.send_voice_message)
 
 Arguments mapping described in
-[SendVoiceMessageRequestTypeDef](./type_defs.md#sendvoicemessagerequesttypedef).
+[SendVoiceMessageRequestRequestTypeDef](./type_defs.md#sendvoicemessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,7 +235,7 @@ Keyword-only arguments:
 - `OriginationPhoneNumber`: `str`
 
 Returns
-[SendVoiceMessageResponseResponseTypeDef](./type_defs.md#sendvoicemessageresponseresponsetypedef).
+[SendVoiceMessageResponseTypeDef](./type_defs.md#sendvoicemessageresponsetypedef).
 
 ### update_configuration_set_event_destination
 
@@ -237,7 +249,7 @@ Boto3 documentation:
 [PinpointSMSVoice.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-sms-voice.html#PinpointSMSVoice.Client.update_configuration_set_event_destination)
 
 Arguments mapping described in
-[UpdateConfigurationSetEventDestinationRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequesttypedef).
+[UpdateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 

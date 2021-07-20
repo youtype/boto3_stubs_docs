@@ -12,63 +12,63 @@ type annotations stubs module
   - [AntennaDownlinkConfigTypeDef](#antennadownlinkconfigtypedef)
   - [AntennaDownlinkDemodDecodeConfigTypeDef](#antennadownlinkdemoddecodeconfigtypedef)
   - [AntennaUplinkConfigTypeDef](#antennauplinkconfigtypedef)
-  - [CancelContactRequestTypeDef](#cancelcontactrequesttypedef)
+  - [CancelContactRequestRequestTypeDef](#cancelcontactrequestrequesttypedef)
   - [ConfigDetailsTypeDef](#configdetailstypedef)
-  - [ConfigIdResponseResponseTypeDef](#configidresponseresponsetypedef)
+  - [ConfigIdResponseTypeDef](#configidresponsetypedef)
   - [ConfigListItemTypeDef](#configlistitemtypedef)
   - [ConfigTypeDataTypeDef](#configtypedatatypedef)
   - [ContactDataTypeDef](#contactdatatypedef)
-  - [ContactIdResponseResponseTypeDef](#contactidresponseresponsetypedef)
-  - [CreateConfigRequestTypeDef](#createconfigrequesttypedef)
-  - [CreateDataflowEndpointGroupRequestTypeDef](#createdataflowendpointgrouprequesttypedef)
-  - [CreateMissionProfileRequestTypeDef](#createmissionprofilerequesttypedef)
+  - [ContactIdResponseTypeDef](#contactidresponsetypedef)
+  - [CreateConfigRequestRequestTypeDef](#createconfigrequestrequesttypedef)
+  - [CreateDataflowEndpointGroupRequestRequestTypeDef](#createdataflowendpointgrouprequestrequesttypedef)
+  - [CreateMissionProfileRequestRequestTypeDef](#createmissionprofilerequestrequesttypedef)
   - [DataflowDetailTypeDef](#dataflowdetailtypedef)
   - [DataflowEndpointConfigTypeDef](#dataflowendpointconfigtypedef)
-  - [DataflowEndpointGroupIdResponseResponseTypeDef](#dataflowendpointgroupidresponseresponsetypedef)
+  - [DataflowEndpointGroupIdResponseTypeDef](#dataflowendpointgroupidresponsetypedef)
   - [DataflowEndpointListItemTypeDef](#dataflowendpointlistitemtypedef)
   - [DataflowEndpointTypeDef](#dataflowendpointtypedef)
   - [DecodeConfigTypeDef](#decodeconfigtypedef)
-  - [DeleteConfigRequestTypeDef](#deleteconfigrequesttypedef)
-  - [DeleteDataflowEndpointGroupRequestTypeDef](#deletedataflowendpointgrouprequesttypedef)
-  - [DeleteMissionProfileRequestTypeDef](#deletemissionprofilerequesttypedef)
+  - [DeleteConfigRequestRequestTypeDef](#deleteconfigrequestrequesttypedef)
+  - [DeleteDataflowEndpointGroupRequestRequestTypeDef](#deletedataflowendpointgrouprequestrequesttypedef)
+  - [DeleteMissionProfileRequestRequestTypeDef](#deletemissionprofilerequestrequesttypedef)
   - [DemodulationConfigTypeDef](#demodulationconfigtypedef)
-  - [DescribeContactRequestTypeDef](#describecontactrequesttypedef)
-  - [DescribeContactResponseResponseTypeDef](#describecontactresponseresponsetypedef)
+  - [DescribeContactRequestRequestTypeDef](#describecontactrequestrequesttypedef)
+  - [DescribeContactResponseTypeDef](#describecontactresponsetypedef)
   - [DestinationTypeDef](#destinationtypedef)
   - [EirpTypeDef](#eirptypedef)
   - [ElevationTypeDef](#elevationtypedef)
   - [EndpointDetailsTypeDef](#endpointdetailstypedef)
   - [FrequencyBandwidthTypeDef](#frequencybandwidthtypedef)
   - [FrequencyTypeDef](#frequencytypedef)
-  - [GetConfigRequestTypeDef](#getconfigrequesttypedef)
-  - [GetConfigResponseResponseTypeDef](#getconfigresponseresponsetypedef)
-  - [GetDataflowEndpointGroupRequestTypeDef](#getdataflowendpointgrouprequesttypedef)
-  - [GetDataflowEndpointGroupResponseResponseTypeDef](#getdataflowendpointgroupresponseresponsetypedef)
-  - [GetMinuteUsageRequestTypeDef](#getminuteusagerequesttypedef)
-  - [GetMinuteUsageResponseResponseTypeDef](#getminuteusageresponseresponsetypedef)
-  - [GetMissionProfileRequestTypeDef](#getmissionprofilerequesttypedef)
-  - [GetMissionProfileResponseResponseTypeDef](#getmissionprofileresponseresponsetypedef)
-  - [GetSatelliteRequestTypeDef](#getsatelliterequesttypedef)
-  - [GetSatelliteResponseResponseTypeDef](#getsatelliteresponseresponsetypedef)
+  - [GetConfigRequestRequestTypeDef](#getconfigrequestrequesttypedef)
+  - [GetConfigResponseTypeDef](#getconfigresponsetypedef)
+  - [GetDataflowEndpointGroupRequestRequestTypeDef](#getdataflowendpointgrouprequestrequesttypedef)
+  - [GetDataflowEndpointGroupResponseTypeDef](#getdataflowendpointgroupresponsetypedef)
+  - [GetMinuteUsageRequestRequestTypeDef](#getminuteusagerequestrequesttypedef)
+  - [GetMinuteUsageResponseTypeDef](#getminuteusageresponsetypedef)
+  - [GetMissionProfileRequestRequestTypeDef](#getmissionprofilerequestrequesttypedef)
+  - [GetMissionProfileResponseTypeDef](#getmissionprofileresponsetypedef)
+  - [GetSatelliteRequestRequestTypeDef](#getsatelliterequestrequesttypedef)
+  - [GetSatelliteResponseTypeDef](#getsatelliteresponsetypedef)
   - [GroundStationDataTypeDef](#groundstationdatatypedef)
-  - [ListConfigsRequestTypeDef](#listconfigsrequesttypedef)
-  - [ListConfigsResponseResponseTypeDef](#listconfigsresponseresponsetypedef)
-  - [ListContactsRequestTypeDef](#listcontactsrequesttypedef)
-  - [ListContactsResponseResponseTypeDef](#listcontactsresponseresponsetypedef)
-  - [ListDataflowEndpointGroupsRequestTypeDef](#listdataflowendpointgroupsrequesttypedef)
-  - [ListDataflowEndpointGroupsResponseResponseTypeDef](#listdataflowendpointgroupsresponseresponsetypedef)
-  - [ListGroundStationsRequestTypeDef](#listgroundstationsrequesttypedef)
-  - [ListGroundStationsResponseResponseTypeDef](#listgroundstationsresponseresponsetypedef)
-  - [ListMissionProfilesRequestTypeDef](#listmissionprofilesrequesttypedef)
-  - [ListMissionProfilesResponseResponseTypeDef](#listmissionprofilesresponseresponsetypedef)
-  - [ListSatellitesRequestTypeDef](#listsatellitesrequesttypedef)
-  - [ListSatellitesResponseResponseTypeDef](#listsatellitesresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [MissionProfileIdResponseResponseTypeDef](#missionprofileidresponseresponsetypedef)
+  - [ListConfigsRequestRequestTypeDef](#listconfigsrequestrequesttypedef)
+  - [ListConfigsResponseTypeDef](#listconfigsresponsetypedef)
+  - [ListContactsRequestRequestTypeDef](#listcontactsrequestrequesttypedef)
+  - [ListContactsResponseTypeDef](#listcontactsresponsetypedef)
+  - [ListDataflowEndpointGroupsRequestRequestTypeDef](#listdataflowendpointgroupsrequestrequesttypedef)
+  - [ListDataflowEndpointGroupsResponseTypeDef](#listdataflowendpointgroupsresponsetypedef)
+  - [ListGroundStationsRequestRequestTypeDef](#listgroundstationsrequestrequesttypedef)
+  - [ListGroundStationsResponseTypeDef](#listgroundstationsresponsetypedef)
+  - [ListMissionProfilesRequestRequestTypeDef](#listmissionprofilesrequestrequesttypedef)
+  - [ListMissionProfilesResponseTypeDef](#listmissionprofilesresponsetypedef)
+  - [ListSatellitesRequestRequestTypeDef](#listsatellitesrequestrequesttypedef)
+  - [ListSatellitesResponseTypeDef](#listsatellitesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [MissionProfileIdResponseTypeDef](#missionprofileidresponsetypedef)
   - [MissionProfileListItemTypeDef](#missionprofilelistitemtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ReserveContactRequestTypeDef](#reservecontactrequesttypedef)
+  - [ReserveContactRequestRequestTypeDef](#reservecontactrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3RecordingConfigTypeDef](#s3recordingconfigtypedef)
   - [S3RecordingDetailsTypeDef](#s3recordingdetailstypedef)
@@ -77,11 +77,11 @@ type annotations stubs module
   - [SocketAddressTypeDef](#socketaddresstypedef)
   - [SourceTypeDef](#sourcetypedef)
   - [SpectrumConfigTypeDef](#spectrumconfigtypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TrackingConfigTypeDef](#trackingconfigtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateConfigRequestTypeDef](#updateconfigrequesttypedef)
-  - [UpdateMissionProfileRequestTypeDef](#updatemissionprofilerequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateConfigRequestRequestTypeDef](#updateconfigrequestrequesttypedef)
+  - [UpdateMissionProfileRequestRequestTypeDef](#updatemissionprofilerequestrequesttypedef)
   - [UplinkEchoConfigTypeDef](#uplinkechoconfigtypedef)
   - [UplinkSpectrumConfigTypeDef](#uplinkspectrumconfigtypedef)
 
@@ -136,10 +136,10 @@ Optional fields:
 
 - `transmitDisabled`: `bool`
 
-## CancelContactRequestTypeDef
+## CancelContactRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import CancelContactRequestTypeDef
+from mypy_boto3_groundstation.type_defs import CancelContactRequestRequestTypeDef
 ```
 
 Required fields:
@@ -161,10 +161,10 @@ Optional fields:
 - `s3RecordingDetails`:
   [S3RecordingDetailsTypeDef](./type_defs.md#s3recordingdetailstypedef)
 
-## ConfigIdResponseResponseTypeDef
+## ConfigIdResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ConfigIdResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import ConfigIdResponseTypeDef
 ```
 
 Required fields:
@@ -235,10 +235,10 @@ Optional fields:
 - `startTime`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## ContactIdResponseResponseTypeDef
+## ContactIdResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ContactIdResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import ContactIdResponseTypeDef
 ```
 
 Required fields:
@@ -247,10 +247,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateConfigRequestTypeDef
+## CreateConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import CreateConfigRequestTypeDef
+from mypy_boto3_groundstation.type_defs import CreateConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -262,10 +262,10 @@ Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateDataflowEndpointGroupRequestTypeDef
+## CreateDataflowEndpointGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import CreateDataflowEndpointGroupRequestTypeDef
+from mypy_boto3_groundstation.type_defs import CreateDataflowEndpointGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -277,10 +277,10 @@ Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateMissionProfileRequestTypeDef
+## CreateMissionProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import CreateMissionProfileRequestTypeDef
+from mypy_boto3_groundstation.type_defs import CreateMissionProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -322,10 +322,10 @@ Optional fields:
 
 - `dataflowEndpointRegion`: `str`
 
-## DataflowEndpointGroupIdResponseResponseTypeDef
+## DataflowEndpointGroupIdResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import DataflowEndpointGroupIdResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import DataflowEndpointGroupIdResponseTypeDef
 ```
 
 Required fields:
@@ -368,10 +368,10 @@ Required fields:
 
 - `unvalidatedJSON`: `str`
 
-## DeleteConfigRequestTypeDef
+## DeleteConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import DeleteConfigRequestTypeDef
+from mypy_boto3_groundstation.type_defs import DeleteConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -380,20 +380,20 @@ Required fields:
 - `configType`:
   [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 
-## DeleteDataflowEndpointGroupRequestTypeDef
+## DeleteDataflowEndpointGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import DeleteDataflowEndpointGroupRequestTypeDef
+from mypy_boto3_groundstation.type_defs import DeleteDataflowEndpointGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `dataflowEndpointGroupId`: `str`
 
-## DeleteMissionProfileRequestTypeDef
+## DeleteMissionProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import DeleteMissionProfileRequestTypeDef
+from mypy_boto3_groundstation.type_defs import DeleteMissionProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -410,20 +410,20 @@ Required fields:
 
 - `unvalidatedJSON`: `str`
 
-## DescribeContactRequestTypeDef
+## DescribeContactRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import DescribeContactRequestTypeDef
+from mypy_boto3_groundstation.type_defs import DescribeContactRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `contactId`: `str`
 
-## DescribeContactResponseResponseTypeDef
+## DescribeContactResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import DescribeContactResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import DescribeContactResponseTypeDef
 ```
 
 Required fields:
@@ -516,10 +516,10 @@ Required fields:
 - `units`: [FrequencyUnitsType](./literals.md#frequencyunitstype)
 - `value`: `float`
 
-## GetConfigRequestTypeDef
+## GetConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import GetConfigRequestTypeDef
+from mypy_boto3_groundstation.type_defs import GetConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -528,10 +528,10 @@ Required fields:
 - `configType`:
   [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 
-## GetConfigResponseResponseTypeDef
+## GetConfigResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import GetConfigResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import GetConfigResponseTypeDef
 ```
 
 Required fields:
@@ -546,20 +546,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDataflowEndpointGroupRequestTypeDef
+## GetDataflowEndpointGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import GetDataflowEndpointGroupRequestTypeDef
+from mypy_boto3_groundstation.type_defs import GetDataflowEndpointGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `dataflowEndpointGroupId`: `str`
 
-## GetDataflowEndpointGroupResponseResponseTypeDef
+## GetDataflowEndpointGroupResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import GetDataflowEndpointGroupResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import GetDataflowEndpointGroupResponseTypeDef
 ```
 
 Required fields:
@@ -572,10 +572,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMinuteUsageRequestTypeDef
+## GetMinuteUsageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import GetMinuteUsageRequestTypeDef
+from mypy_boto3_groundstation.type_defs import GetMinuteUsageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -583,10 +583,10 @@ Required fields:
 - `month`: `int`
 - `year`: `int`
 
-## GetMinuteUsageResponseResponseTypeDef
+## GetMinuteUsageResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import GetMinuteUsageResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import GetMinuteUsageResponseTypeDef
 ```
 
 Required fields:
@@ -599,20 +599,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMissionProfileRequestTypeDef
+## GetMissionProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import GetMissionProfileRequestTypeDef
+from mypy_boto3_groundstation.type_defs import GetMissionProfileRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `missionProfileId`: `str`
 
-## GetMissionProfileResponseResponseTypeDef
+## GetMissionProfileResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import GetMissionProfileResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import GetMissionProfileResponseTypeDef
 ```
 
 Required fields:
@@ -630,20 +630,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSatelliteRequestTypeDef
+## GetSatelliteRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import GetSatelliteRequestTypeDef
+from mypy_boto3_groundstation.type_defs import GetSatelliteRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `satelliteId`: `str`
 
-## GetSatelliteResponseResponseTypeDef
+## GetSatelliteResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import GetSatelliteResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import GetSatelliteResponseTypeDef
 ```
 
 Required fields:
@@ -667,10 +667,10 @@ Optional fields:
 - `groundStationName`: `str`
 - `region`: `str`
 
-## ListConfigsRequestTypeDef
+## ListConfigsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListConfigsRequestTypeDef
+from mypy_boto3_groundstation.type_defs import ListConfigsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -678,10 +678,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListConfigsResponseResponseTypeDef
+## ListConfigsResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListConfigsResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import ListConfigsResponseTypeDef
 ```
 
 Required fields:
@@ -692,10 +692,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListContactsRequestTypeDef
+## ListContactsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListContactsRequestTypeDef
+from mypy_boto3_groundstation.type_defs import ListContactsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -712,10 +712,10 @@ Optional fields:
 - `nextToken`: `str`
 - `satelliteArn`: `str`
 
-## ListContactsResponseResponseTypeDef
+## ListContactsResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListContactsResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import ListContactsResponseTypeDef
 ```
 
 Required fields:
@@ -726,10 +726,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDataflowEndpointGroupsRequestTypeDef
+## ListDataflowEndpointGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListDataflowEndpointGroupsRequestTypeDef
+from mypy_boto3_groundstation.type_defs import ListDataflowEndpointGroupsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -737,10 +737,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListDataflowEndpointGroupsResponseResponseTypeDef
+## ListDataflowEndpointGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListDataflowEndpointGroupsResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import ListDataflowEndpointGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -751,10 +751,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGroundStationsRequestTypeDef
+## ListGroundStationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListGroundStationsRequestTypeDef
+from mypy_boto3_groundstation.type_defs import ListGroundStationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -763,10 +763,10 @@ Optional fields:
 - `nextToken`: `str`
 - `satelliteId`: `str`
 
-## ListGroundStationsResponseResponseTypeDef
+## ListGroundStationsResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListGroundStationsResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import ListGroundStationsResponseTypeDef
 ```
 
 Required fields:
@@ -777,10 +777,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMissionProfilesRequestTypeDef
+## ListMissionProfilesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListMissionProfilesRequestTypeDef
+from mypy_boto3_groundstation.type_defs import ListMissionProfilesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -788,10 +788,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListMissionProfilesResponseResponseTypeDef
+## ListMissionProfilesResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListMissionProfilesResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import ListMissionProfilesResponseTypeDef
 ```
 
 Required fields:
@@ -802,10 +802,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSatellitesRequestTypeDef
+## ListSatellitesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListSatellitesRequestTypeDef
+from mypy_boto3_groundstation.type_defs import ListSatellitesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -813,10 +813,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListSatellitesResponseResponseTypeDef
+## ListSatellitesResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListSatellitesResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import ListSatellitesResponseTypeDef
 ```
 
 Required fields:
@@ -827,20 +827,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_groundstation.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -849,10 +849,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## MissionProfileIdResponseResponseTypeDef
+## MissionProfileIdResponseTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import MissionProfileIdResponseResponseTypeDef
+from mypy_boto3_groundstation.type_defs import MissionProfileIdResponseTypeDef
 ```
 
 Required fields:
@@ -886,10 +886,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## ReserveContactRequestTypeDef
+## ReserveContactRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import ReserveContactRequestTypeDef
+from mypy_boto3_groundstation.type_defs import ReserveContactRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1010,10 +1010,10 @@ Optional fields:
 
 - `polarization`: [PolarizationType](./literals.md#polarizationtype)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_groundstation.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1031,10 +1031,10 @@ Required fields:
 
 - `autotrack`: [CriticalityType](./literals.md#criticalitytype)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_groundstation.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1042,10 +1042,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateConfigRequestTypeDef
+## UpdateConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import UpdateConfigRequestTypeDef
+from mypy_boto3_groundstation.type_defs import UpdateConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1056,10 +1056,10 @@ Required fields:
   [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 - `name`: `str`
 
-## UpdateMissionProfileRequestTypeDef
+## UpdateMissionProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_groundstation.type_defs import UpdateMissionProfileRequestTypeDef
+from mypy_boto3_groundstation.type_defs import UpdateMissionProfileRequestRequestTypeDef
 ```
 
 Required fields:

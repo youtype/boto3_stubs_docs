@@ -25,8 +25,8 @@ type annotations stubs module
   - [AwsIotAnalyticsParametersTypeDef](#awsiotanalyticsparameterstypedef)
   - [BorderStyleTypeDef](#borderstyletypedef)
   - [CalculatedColumnTypeDef](#calculatedcolumntypedef)
-  - [CancelIngestionRequestTypeDef](#cancelingestionrequesttypedef)
-  - [CancelIngestionResponseResponseTypeDef](#cancelingestionresponseresponsetypedef)
+  - [CancelIngestionRequestRequestTypeDef](#cancelingestionrequestrequesttypedef)
+  - [CancelIngestionResponseTypeDef](#cancelingestionresponsetypedef)
   - [CastColumnTypeOperationTypeDef](#castcolumntypeoperationtypedef)
   - [ColumnDescriptionTypeDef](#columndescriptiontypedef)
   - [ColumnGroupColumnSchemaTypeDef](#columngroupcolumnschematypedef)
@@ -35,39 +35,39 @@ type annotations stubs module
   - [ColumnLevelPermissionRuleTypeDef](#columnlevelpermissionruletypedef)
   - [ColumnSchemaTypeDef](#columnschematypedef)
   - [ColumnTagTypeDef](#columntagtypedef)
-  - [CreateAccountCustomizationRequestTypeDef](#createaccountcustomizationrequesttypedef)
-  - [CreateAccountCustomizationResponseResponseTypeDef](#createaccountcustomizationresponseresponsetypedef)
-  - [CreateAnalysisRequestTypeDef](#createanalysisrequesttypedef)
-  - [CreateAnalysisResponseResponseTypeDef](#createanalysisresponseresponsetypedef)
+  - [CreateAccountCustomizationRequestRequestTypeDef](#createaccountcustomizationrequestrequesttypedef)
+  - [CreateAccountCustomizationResponseTypeDef](#createaccountcustomizationresponsetypedef)
+  - [CreateAnalysisRequestRequestTypeDef](#createanalysisrequestrequesttypedef)
+  - [CreateAnalysisResponseTypeDef](#createanalysisresponsetypedef)
   - [CreateColumnsOperationTypeDef](#createcolumnsoperationtypedef)
-  - [CreateDashboardRequestTypeDef](#createdashboardrequesttypedef)
-  - [CreateDashboardResponseResponseTypeDef](#createdashboardresponseresponsetypedef)
-  - [CreateDataSetRequestTypeDef](#createdatasetrequesttypedef)
-  - [CreateDataSetResponseResponseTypeDef](#createdatasetresponseresponsetypedef)
-  - [CreateDataSourceRequestTypeDef](#createdatasourcerequesttypedef)
-  - [CreateDataSourceResponseResponseTypeDef](#createdatasourceresponseresponsetypedef)
-  - [CreateFolderMembershipRequestTypeDef](#createfoldermembershiprequesttypedef)
-  - [CreateFolderMembershipResponseResponseTypeDef](#createfoldermembershipresponseresponsetypedef)
-  - [CreateFolderRequestTypeDef](#createfolderrequesttypedef)
-  - [CreateFolderResponseResponseTypeDef](#createfolderresponseresponsetypedef)
-  - [CreateGroupMembershipRequestTypeDef](#creategroupmembershiprequesttypedef)
-  - [CreateGroupMembershipResponseResponseTypeDef](#creategroupmembershipresponseresponsetypedef)
-  - [CreateGroupRequestTypeDef](#creategrouprequesttypedef)
-  - [CreateGroupResponseResponseTypeDef](#creategroupresponseresponsetypedef)
-  - [CreateIAMPolicyAssignmentRequestTypeDef](#createiampolicyassignmentrequesttypedef)
-  - [CreateIAMPolicyAssignmentResponseResponseTypeDef](#createiampolicyassignmentresponseresponsetypedef)
-  - [CreateIngestionRequestTypeDef](#createingestionrequesttypedef)
-  - [CreateIngestionResponseResponseTypeDef](#createingestionresponseresponsetypedef)
-  - [CreateNamespaceRequestTypeDef](#createnamespacerequesttypedef)
-  - [CreateNamespaceResponseResponseTypeDef](#createnamespaceresponseresponsetypedef)
-  - [CreateTemplateAliasRequestTypeDef](#createtemplatealiasrequesttypedef)
-  - [CreateTemplateAliasResponseResponseTypeDef](#createtemplatealiasresponseresponsetypedef)
-  - [CreateTemplateRequestTypeDef](#createtemplaterequesttypedef)
-  - [CreateTemplateResponseResponseTypeDef](#createtemplateresponseresponsetypedef)
-  - [CreateThemeAliasRequestTypeDef](#createthemealiasrequesttypedef)
-  - [CreateThemeAliasResponseResponseTypeDef](#createthemealiasresponseresponsetypedef)
-  - [CreateThemeRequestTypeDef](#createthemerequesttypedef)
-  - [CreateThemeResponseResponseTypeDef](#createthemeresponseresponsetypedef)
+  - [CreateDashboardRequestRequestTypeDef](#createdashboardrequestrequesttypedef)
+  - [CreateDashboardResponseTypeDef](#createdashboardresponsetypedef)
+  - [CreateDataSetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
+  - [CreateDataSetResponseTypeDef](#createdatasetresponsetypedef)
+  - [CreateDataSourceRequestRequestTypeDef](#createdatasourcerequestrequesttypedef)
+  - [CreateDataSourceResponseTypeDef](#createdatasourceresponsetypedef)
+  - [CreateFolderMembershipRequestRequestTypeDef](#createfoldermembershiprequestrequesttypedef)
+  - [CreateFolderMembershipResponseTypeDef](#createfoldermembershipresponsetypedef)
+  - [CreateFolderRequestRequestTypeDef](#createfolderrequestrequesttypedef)
+  - [CreateFolderResponseTypeDef](#createfolderresponsetypedef)
+  - [CreateGroupMembershipRequestRequestTypeDef](#creategroupmembershiprequestrequesttypedef)
+  - [CreateGroupMembershipResponseTypeDef](#creategroupmembershipresponsetypedef)
+  - [CreateGroupRequestRequestTypeDef](#creategrouprequestrequesttypedef)
+  - [CreateGroupResponseTypeDef](#creategroupresponsetypedef)
+  - [CreateIAMPolicyAssignmentRequestRequestTypeDef](#createiampolicyassignmentrequestrequesttypedef)
+  - [CreateIAMPolicyAssignmentResponseTypeDef](#createiampolicyassignmentresponsetypedef)
+  - [CreateIngestionRequestRequestTypeDef](#createingestionrequestrequesttypedef)
+  - [CreateIngestionResponseTypeDef](#createingestionresponsetypedef)
+  - [CreateNamespaceRequestRequestTypeDef](#createnamespacerequestrequesttypedef)
+  - [CreateNamespaceResponseTypeDef](#createnamespaceresponsetypedef)
+  - [CreateTemplateAliasRequestRequestTypeDef](#createtemplatealiasrequestrequesttypedef)
+  - [CreateTemplateAliasResponseTypeDef](#createtemplatealiasresponsetypedef)
+  - [CreateTemplateRequestRequestTypeDef](#createtemplaterequestrequesttypedef)
+  - [CreateTemplateResponseTypeDef](#createtemplateresponsetypedef)
+  - [CreateThemeAliasRequestRequestTypeDef](#createthemealiasrequestrequesttypedef)
+  - [CreateThemeAliasResponseTypeDef](#createthemealiasresponsetypedef)
+  - [CreateThemeRequestRequestTypeDef](#createthemerequestrequesttypedef)
+  - [CreateThemeResponseTypeDef](#createthemeresponsetypedef)
   - [CredentialPairTypeDef](#credentialpairtypedef)
   - [CustomSqlTypeDef](#customsqltypedef)
   - [DashboardErrorTypeDef](#dashboarderrortypedef)
@@ -91,88 +91,88 @@ type annotations stubs module
   - [DataSourceTypeDef](#datasourcetypedef)
   - [DateTimeParameterTypeDef](#datetimeparametertypedef)
   - [DecimalParameterTypeDef](#decimalparametertypedef)
-  - [DeleteAccountCustomizationRequestTypeDef](#deleteaccountcustomizationrequesttypedef)
-  - [DeleteAccountCustomizationResponseResponseTypeDef](#deleteaccountcustomizationresponseresponsetypedef)
-  - [DeleteAnalysisRequestTypeDef](#deleteanalysisrequesttypedef)
-  - [DeleteAnalysisResponseResponseTypeDef](#deleteanalysisresponseresponsetypedef)
-  - [DeleteDashboardRequestTypeDef](#deletedashboardrequesttypedef)
-  - [DeleteDashboardResponseResponseTypeDef](#deletedashboardresponseresponsetypedef)
-  - [DeleteDataSetRequestTypeDef](#deletedatasetrequesttypedef)
-  - [DeleteDataSetResponseResponseTypeDef](#deletedatasetresponseresponsetypedef)
-  - [DeleteDataSourceRequestTypeDef](#deletedatasourcerequesttypedef)
-  - [DeleteDataSourceResponseResponseTypeDef](#deletedatasourceresponseresponsetypedef)
-  - [DeleteFolderMembershipRequestTypeDef](#deletefoldermembershiprequesttypedef)
-  - [DeleteFolderMembershipResponseResponseTypeDef](#deletefoldermembershipresponseresponsetypedef)
-  - [DeleteFolderRequestTypeDef](#deletefolderrequesttypedef)
-  - [DeleteFolderResponseResponseTypeDef](#deletefolderresponseresponsetypedef)
-  - [DeleteGroupMembershipRequestTypeDef](#deletegroupmembershiprequesttypedef)
-  - [DeleteGroupMembershipResponseResponseTypeDef](#deletegroupmembershipresponseresponsetypedef)
-  - [DeleteGroupRequestTypeDef](#deletegrouprequesttypedef)
-  - [DeleteGroupResponseResponseTypeDef](#deletegroupresponseresponsetypedef)
-  - [DeleteIAMPolicyAssignmentRequestTypeDef](#deleteiampolicyassignmentrequesttypedef)
-  - [DeleteIAMPolicyAssignmentResponseResponseTypeDef](#deleteiampolicyassignmentresponseresponsetypedef)
-  - [DeleteNamespaceRequestTypeDef](#deletenamespacerequesttypedef)
-  - [DeleteNamespaceResponseResponseTypeDef](#deletenamespaceresponseresponsetypedef)
-  - [DeleteTemplateAliasRequestTypeDef](#deletetemplatealiasrequesttypedef)
-  - [DeleteTemplateAliasResponseResponseTypeDef](#deletetemplatealiasresponseresponsetypedef)
-  - [DeleteTemplateRequestTypeDef](#deletetemplaterequesttypedef)
-  - [DeleteTemplateResponseResponseTypeDef](#deletetemplateresponseresponsetypedef)
-  - [DeleteThemeAliasRequestTypeDef](#deletethemealiasrequesttypedef)
-  - [DeleteThemeAliasResponseResponseTypeDef](#deletethemealiasresponseresponsetypedef)
-  - [DeleteThemeRequestTypeDef](#deletethemerequesttypedef)
-  - [DeleteThemeResponseResponseTypeDef](#deletethemeresponseresponsetypedef)
-  - [DeleteUserByPrincipalIdRequestTypeDef](#deleteuserbyprincipalidrequesttypedef)
-  - [DeleteUserByPrincipalIdResponseResponseTypeDef](#deleteuserbyprincipalidresponseresponsetypedef)
-  - [DeleteUserRequestTypeDef](#deleteuserrequesttypedef)
-  - [DeleteUserResponseResponseTypeDef](#deleteuserresponseresponsetypedef)
-  - [DescribeAccountCustomizationRequestTypeDef](#describeaccountcustomizationrequesttypedef)
-  - [DescribeAccountCustomizationResponseResponseTypeDef](#describeaccountcustomizationresponseresponsetypedef)
-  - [DescribeAccountSettingsRequestTypeDef](#describeaccountsettingsrequesttypedef)
-  - [DescribeAccountSettingsResponseResponseTypeDef](#describeaccountsettingsresponseresponsetypedef)
-  - [DescribeAnalysisPermissionsRequestTypeDef](#describeanalysispermissionsrequesttypedef)
-  - [DescribeAnalysisPermissionsResponseResponseTypeDef](#describeanalysispermissionsresponseresponsetypedef)
-  - [DescribeAnalysisRequestTypeDef](#describeanalysisrequesttypedef)
-  - [DescribeAnalysisResponseResponseTypeDef](#describeanalysisresponseresponsetypedef)
-  - [DescribeDashboardPermissionsRequestTypeDef](#describedashboardpermissionsrequesttypedef)
-  - [DescribeDashboardPermissionsResponseResponseTypeDef](#describedashboardpermissionsresponseresponsetypedef)
-  - [DescribeDashboardRequestTypeDef](#describedashboardrequesttypedef)
-  - [DescribeDashboardResponseResponseTypeDef](#describedashboardresponseresponsetypedef)
-  - [DescribeDataSetPermissionsRequestTypeDef](#describedatasetpermissionsrequesttypedef)
-  - [DescribeDataSetPermissionsResponseResponseTypeDef](#describedatasetpermissionsresponseresponsetypedef)
-  - [DescribeDataSetRequestTypeDef](#describedatasetrequesttypedef)
-  - [DescribeDataSetResponseResponseTypeDef](#describedatasetresponseresponsetypedef)
-  - [DescribeDataSourcePermissionsRequestTypeDef](#describedatasourcepermissionsrequesttypedef)
-  - [DescribeDataSourcePermissionsResponseResponseTypeDef](#describedatasourcepermissionsresponseresponsetypedef)
-  - [DescribeDataSourceRequestTypeDef](#describedatasourcerequesttypedef)
-  - [DescribeDataSourceResponseResponseTypeDef](#describedatasourceresponseresponsetypedef)
-  - [DescribeFolderPermissionsRequestTypeDef](#describefolderpermissionsrequesttypedef)
-  - [DescribeFolderPermissionsResponseResponseTypeDef](#describefolderpermissionsresponseresponsetypedef)
-  - [DescribeFolderRequestTypeDef](#describefolderrequesttypedef)
-  - [DescribeFolderResolvedPermissionsRequestTypeDef](#describefolderresolvedpermissionsrequesttypedef)
-  - [DescribeFolderResolvedPermissionsResponseResponseTypeDef](#describefolderresolvedpermissionsresponseresponsetypedef)
-  - [DescribeFolderResponseResponseTypeDef](#describefolderresponseresponsetypedef)
-  - [DescribeGroupRequestTypeDef](#describegrouprequesttypedef)
-  - [DescribeGroupResponseResponseTypeDef](#describegroupresponseresponsetypedef)
-  - [DescribeIAMPolicyAssignmentRequestTypeDef](#describeiampolicyassignmentrequesttypedef)
-  - [DescribeIAMPolicyAssignmentResponseResponseTypeDef](#describeiampolicyassignmentresponseresponsetypedef)
-  - [DescribeIngestionRequestTypeDef](#describeingestionrequesttypedef)
-  - [DescribeIngestionResponseResponseTypeDef](#describeingestionresponseresponsetypedef)
-  - [DescribeNamespaceRequestTypeDef](#describenamespacerequesttypedef)
-  - [DescribeNamespaceResponseResponseTypeDef](#describenamespaceresponseresponsetypedef)
-  - [DescribeTemplateAliasRequestTypeDef](#describetemplatealiasrequesttypedef)
-  - [DescribeTemplateAliasResponseResponseTypeDef](#describetemplatealiasresponseresponsetypedef)
-  - [DescribeTemplatePermissionsRequestTypeDef](#describetemplatepermissionsrequesttypedef)
-  - [DescribeTemplatePermissionsResponseResponseTypeDef](#describetemplatepermissionsresponseresponsetypedef)
-  - [DescribeTemplateRequestTypeDef](#describetemplaterequesttypedef)
-  - [DescribeTemplateResponseResponseTypeDef](#describetemplateresponseresponsetypedef)
-  - [DescribeThemeAliasRequestTypeDef](#describethemealiasrequesttypedef)
-  - [DescribeThemeAliasResponseResponseTypeDef](#describethemealiasresponseresponsetypedef)
-  - [DescribeThemePermissionsRequestTypeDef](#describethemepermissionsrequesttypedef)
-  - [DescribeThemePermissionsResponseResponseTypeDef](#describethemepermissionsresponseresponsetypedef)
-  - [DescribeThemeRequestTypeDef](#describethemerequesttypedef)
-  - [DescribeThemeResponseResponseTypeDef](#describethemeresponseresponsetypedef)
-  - [DescribeUserRequestTypeDef](#describeuserrequesttypedef)
-  - [DescribeUserResponseResponseTypeDef](#describeuserresponseresponsetypedef)
+  - [DeleteAccountCustomizationRequestRequestTypeDef](#deleteaccountcustomizationrequestrequesttypedef)
+  - [DeleteAccountCustomizationResponseTypeDef](#deleteaccountcustomizationresponsetypedef)
+  - [DeleteAnalysisRequestRequestTypeDef](#deleteanalysisrequestrequesttypedef)
+  - [DeleteAnalysisResponseTypeDef](#deleteanalysisresponsetypedef)
+  - [DeleteDashboardRequestRequestTypeDef](#deletedashboardrequestrequesttypedef)
+  - [DeleteDashboardResponseTypeDef](#deletedashboardresponsetypedef)
+  - [DeleteDataSetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
+  - [DeleteDataSetResponseTypeDef](#deletedatasetresponsetypedef)
+  - [DeleteDataSourceRequestRequestTypeDef](#deletedatasourcerequestrequesttypedef)
+  - [DeleteDataSourceResponseTypeDef](#deletedatasourceresponsetypedef)
+  - [DeleteFolderMembershipRequestRequestTypeDef](#deletefoldermembershiprequestrequesttypedef)
+  - [DeleteFolderMembershipResponseTypeDef](#deletefoldermembershipresponsetypedef)
+  - [DeleteFolderRequestRequestTypeDef](#deletefolderrequestrequesttypedef)
+  - [DeleteFolderResponseTypeDef](#deletefolderresponsetypedef)
+  - [DeleteGroupMembershipRequestRequestTypeDef](#deletegroupmembershiprequestrequesttypedef)
+  - [DeleteGroupMembershipResponseTypeDef](#deletegroupmembershipresponsetypedef)
+  - [DeleteGroupRequestRequestTypeDef](#deletegrouprequestrequesttypedef)
+  - [DeleteGroupResponseTypeDef](#deletegroupresponsetypedef)
+  - [DeleteIAMPolicyAssignmentRequestRequestTypeDef](#deleteiampolicyassignmentrequestrequesttypedef)
+  - [DeleteIAMPolicyAssignmentResponseTypeDef](#deleteiampolicyassignmentresponsetypedef)
+  - [DeleteNamespaceRequestRequestTypeDef](#deletenamespacerequestrequesttypedef)
+  - [DeleteNamespaceResponseTypeDef](#deletenamespaceresponsetypedef)
+  - [DeleteTemplateAliasRequestRequestTypeDef](#deletetemplatealiasrequestrequesttypedef)
+  - [DeleteTemplateAliasResponseTypeDef](#deletetemplatealiasresponsetypedef)
+  - [DeleteTemplateRequestRequestTypeDef](#deletetemplaterequestrequesttypedef)
+  - [DeleteTemplateResponseTypeDef](#deletetemplateresponsetypedef)
+  - [DeleteThemeAliasRequestRequestTypeDef](#deletethemealiasrequestrequesttypedef)
+  - [DeleteThemeAliasResponseTypeDef](#deletethemealiasresponsetypedef)
+  - [DeleteThemeRequestRequestTypeDef](#deletethemerequestrequesttypedef)
+  - [DeleteThemeResponseTypeDef](#deletethemeresponsetypedef)
+  - [DeleteUserByPrincipalIdRequestRequestTypeDef](#deleteuserbyprincipalidrequestrequesttypedef)
+  - [DeleteUserByPrincipalIdResponseTypeDef](#deleteuserbyprincipalidresponsetypedef)
+  - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
+  - [DeleteUserResponseTypeDef](#deleteuserresponsetypedef)
+  - [DescribeAccountCustomizationRequestRequestTypeDef](#describeaccountcustomizationrequestrequesttypedef)
+  - [DescribeAccountCustomizationResponseTypeDef](#describeaccountcustomizationresponsetypedef)
+  - [DescribeAccountSettingsRequestRequestTypeDef](#describeaccountsettingsrequestrequesttypedef)
+  - [DescribeAccountSettingsResponseTypeDef](#describeaccountsettingsresponsetypedef)
+  - [DescribeAnalysisPermissionsRequestRequestTypeDef](#describeanalysispermissionsrequestrequesttypedef)
+  - [DescribeAnalysisPermissionsResponseTypeDef](#describeanalysispermissionsresponsetypedef)
+  - [DescribeAnalysisRequestRequestTypeDef](#describeanalysisrequestrequesttypedef)
+  - [DescribeAnalysisResponseTypeDef](#describeanalysisresponsetypedef)
+  - [DescribeDashboardPermissionsRequestRequestTypeDef](#describedashboardpermissionsrequestrequesttypedef)
+  - [DescribeDashboardPermissionsResponseTypeDef](#describedashboardpermissionsresponsetypedef)
+  - [DescribeDashboardRequestRequestTypeDef](#describedashboardrequestrequesttypedef)
+  - [DescribeDashboardResponseTypeDef](#describedashboardresponsetypedef)
+  - [DescribeDataSetPermissionsRequestRequestTypeDef](#describedatasetpermissionsrequestrequesttypedef)
+  - [DescribeDataSetPermissionsResponseTypeDef](#describedatasetpermissionsresponsetypedef)
+  - [DescribeDataSetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
+  - [DescribeDataSetResponseTypeDef](#describedatasetresponsetypedef)
+  - [DescribeDataSourcePermissionsRequestRequestTypeDef](#describedatasourcepermissionsrequestrequesttypedef)
+  - [DescribeDataSourcePermissionsResponseTypeDef](#describedatasourcepermissionsresponsetypedef)
+  - [DescribeDataSourceRequestRequestTypeDef](#describedatasourcerequestrequesttypedef)
+  - [DescribeDataSourceResponseTypeDef](#describedatasourceresponsetypedef)
+  - [DescribeFolderPermissionsRequestRequestTypeDef](#describefolderpermissionsrequestrequesttypedef)
+  - [DescribeFolderPermissionsResponseTypeDef](#describefolderpermissionsresponsetypedef)
+  - [DescribeFolderRequestRequestTypeDef](#describefolderrequestrequesttypedef)
+  - [DescribeFolderResolvedPermissionsRequestRequestTypeDef](#describefolderresolvedpermissionsrequestrequesttypedef)
+  - [DescribeFolderResolvedPermissionsResponseTypeDef](#describefolderresolvedpermissionsresponsetypedef)
+  - [DescribeFolderResponseTypeDef](#describefolderresponsetypedef)
+  - [DescribeGroupRequestRequestTypeDef](#describegrouprequestrequesttypedef)
+  - [DescribeGroupResponseTypeDef](#describegroupresponsetypedef)
+  - [DescribeIAMPolicyAssignmentRequestRequestTypeDef](#describeiampolicyassignmentrequestrequesttypedef)
+  - [DescribeIAMPolicyAssignmentResponseTypeDef](#describeiampolicyassignmentresponsetypedef)
+  - [DescribeIngestionRequestRequestTypeDef](#describeingestionrequestrequesttypedef)
+  - [DescribeIngestionResponseTypeDef](#describeingestionresponsetypedef)
+  - [DescribeNamespaceRequestRequestTypeDef](#describenamespacerequestrequesttypedef)
+  - [DescribeNamespaceResponseTypeDef](#describenamespaceresponsetypedef)
+  - [DescribeTemplateAliasRequestRequestTypeDef](#describetemplatealiasrequestrequesttypedef)
+  - [DescribeTemplateAliasResponseTypeDef](#describetemplatealiasresponsetypedef)
+  - [DescribeTemplatePermissionsRequestRequestTypeDef](#describetemplatepermissionsrequestrequesttypedef)
+  - [DescribeTemplatePermissionsResponseTypeDef](#describetemplatepermissionsresponsetypedef)
+  - [DescribeTemplateRequestRequestTypeDef](#describetemplaterequestrequesttypedef)
+  - [DescribeTemplateResponseTypeDef](#describetemplateresponsetypedef)
+  - [DescribeThemeAliasRequestRequestTypeDef](#describethemealiasrequestrequesttypedef)
+  - [DescribeThemeAliasResponseTypeDef](#describethemealiasresponsetypedef)
+  - [DescribeThemePermissionsRequestRequestTypeDef](#describethemepermissionsrequestrequesttypedef)
+  - [DescribeThemePermissionsResponseTypeDef](#describethemepermissionsresponsetypedef)
+  - [DescribeThemeRequestRequestTypeDef](#describethemerequestrequesttypedef)
+  - [DescribeThemeResponseTypeDef](#describethemeresponsetypedef)
+  - [DescribeUserRequestRequestTypeDef](#describeuserrequestrequesttypedef)
+  - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
   - [ErrorInfoTypeDef](#errorinfotypedef)
   - [ExportToCSVOptionTypeDef](#exporttocsvoptiontypedef)
   - [FieldFolderTypeDef](#fieldfoldertypedef)
@@ -182,10 +182,10 @@ type annotations stubs module
   - [FolderSummaryTypeDef](#foldersummarytypedef)
   - [FolderTypeDef](#foldertypedef)
   - [GeoSpatialColumnGroupTypeDef](#geospatialcolumngrouptypedef)
-  - [GetDashboardEmbedUrlRequestTypeDef](#getdashboardembedurlrequesttypedef)
-  - [GetDashboardEmbedUrlResponseResponseTypeDef](#getdashboardembedurlresponseresponsetypedef)
-  - [GetSessionEmbedUrlRequestTypeDef](#getsessionembedurlrequesttypedef)
-  - [GetSessionEmbedUrlResponseResponseTypeDef](#getsessionembedurlresponseresponsetypedef)
+  - [GetDashboardEmbedUrlRequestRequestTypeDef](#getdashboardembedurlrequestrequesttypedef)
+  - [GetDashboardEmbedUrlResponseTypeDef](#getdashboardembedurlresponsetypedef)
+  - [GetSessionEmbedUrlRequestRequestTypeDef](#getsessionembedurlrequestrequesttypedef)
+  - [GetSessionEmbedUrlResponseTypeDef](#getsessionembedurlresponsetypedef)
   - [GroupMemberTypeDef](#groupmembertypedef)
   - [GroupTypeDef](#grouptypedef)
   - [GutterStyleTypeDef](#gutterstyletypedef)
@@ -197,50 +197,50 @@ type annotations stubs module
   - [JiraParametersTypeDef](#jiraparameterstypedef)
   - [JoinInstructionTypeDef](#joininstructiontypedef)
   - [JoinKeyPropertiesTypeDef](#joinkeypropertiestypedef)
-  - [ListAnalysesRequestTypeDef](#listanalysesrequesttypedef)
-  - [ListAnalysesResponseResponseTypeDef](#listanalysesresponseresponsetypedef)
-  - [ListDashboardVersionsRequestTypeDef](#listdashboardversionsrequesttypedef)
-  - [ListDashboardVersionsResponseResponseTypeDef](#listdashboardversionsresponseresponsetypedef)
-  - [ListDashboardsRequestTypeDef](#listdashboardsrequesttypedef)
-  - [ListDashboardsResponseResponseTypeDef](#listdashboardsresponseresponsetypedef)
-  - [ListDataSetsRequestTypeDef](#listdatasetsrequesttypedef)
-  - [ListDataSetsResponseResponseTypeDef](#listdatasetsresponseresponsetypedef)
-  - [ListDataSourcesRequestTypeDef](#listdatasourcesrequesttypedef)
-  - [ListDataSourcesResponseResponseTypeDef](#listdatasourcesresponseresponsetypedef)
-  - [ListFolderMembersRequestTypeDef](#listfoldermembersrequesttypedef)
-  - [ListFolderMembersResponseResponseTypeDef](#listfoldermembersresponseresponsetypedef)
-  - [ListFoldersRequestTypeDef](#listfoldersrequesttypedef)
-  - [ListFoldersResponseResponseTypeDef](#listfoldersresponseresponsetypedef)
-  - [ListGroupMembershipsRequestTypeDef](#listgroupmembershipsrequesttypedef)
-  - [ListGroupMembershipsResponseResponseTypeDef](#listgroupmembershipsresponseresponsetypedef)
-  - [ListGroupsRequestTypeDef](#listgroupsrequesttypedef)
-  - [ListGroupsResponseResponseTypeDef](#listgroupsresponseresponsetypedef)
-  - [ListIAMPolicyAssignmentsForUserRequestTypeDef](#listiampolicyassignmentsforuserrequesttypedef)
-  - [ListIAMPolicyAssignmentsForUserResponseResponseTypeDef](#listiampolicyassignmentsforuserresponseresponsetypedef)
-  - [ListIAMPolicyAssignmentsRequestTypeDef](#listiampolicyassignmentsrequesttypedef)
-  - [ListIAMPolicyAssignmentsResponseResponseTypeDef](#listiampolicyassignmentsresponseresponsetypedef)
-  - [ListIngestionsRequestTypeDef](#listingestionsrequesttypedef)
-  - [ListIngestionsResponseResponseTypeDef](#listingestionsresponseresponsetypedef)
-  - [ListNamespacesRequestTypeDef](#listnamespacesrequesttypedef)
-  - [ListNamespacesResponseResponseTypeDef](#listnamespacesresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ListTemplateAliasesRequestTypeDef](#listtemplatealiasesrequesttypedef)
-  - [ListTemplateAliasesResponseResponseTypeDef](#listtemplatealiasesresponseresponsetypedef)
-  - [ListTemplateVersionsRequestTypeDef](#listtemplateversionsrequesttypedef)
-  - [ListTemplateVersionsResponseResponseTypeDef](#listtemplateversionsresponseresponsetypedef)
-  - [ListTemplatesRequestTypeDef](#listtemplatesrequesttypedef)
-  - [ListTemplatesResponseResponseTypeDef](#listtemplatesresponseresponsetypedef)
-  - [ListThemeAliasesRequestTypeDef](#listthemealiasesrequesttypedef)
-  - [ListThemeAliasesResponseResponseTypeDef](#listthemealiasesresponseresponsetypedef)
-  - [ListThemeVersionsRequestTypeDef](#listthemeversionsrequesttypedef)
-  - [ListThemeVersionsResponseResponseTypeDef](#listthemeversionsresponseresponsetypedef)
-  - [ListThemesRequestTypeDef](#listthemesrequesttypedef)
-  - [ListThemesResponseResponseTypeDef](#listthemesresponseresponsetypedef)
-  - [ListUserGroupsRequestTypeDef](#listusergroupsrequesttypedef)
-  - [ListUserGroupsResponseResponseTypeDef](#listusergroupsresponseresponsetypedef)
-  - [ListUsersRequestTypeDef](#listusersrequesttypedef)
-  - [ListUsersResponseResponseTypeDef](#listusersresponseresponsetypedef)
+  - [ListAnalysesRequestRequestTypeDef](#listanalysesrequestrequesttypedef)
+  - [ListAnalysesResponseTypeDef](#listanalysesresponsetypedef)
+  - [ListDashboardVersionsRequestRequestTypeDef](#listdashboardversionsrequestrequesttypedef)
+  - [ListDashboardVersionsResponseTypeDef](#listdashboardversionsresponsetypedef)
+  - [ListDashboardsRequestRequestTypeDef](#listdashboardsrequestrequesttypedef)
+  - [ListDashboardsResponseTypeDef](#listdashboardsresponsetypedef)
+  - [ListDataSetsRequestRequestTypeDef](#listdatasetsrequestrequesttypedef)
+  - [ListDataSetsResponseTypeDef](#listdatasetsresponsetypedef)
+  - [ListDataSourcesRequestRequestTypeDef](#listdatasourcesrequestrequesttypedef)
+  - [ListDataSourcesResponseTypeDef](#listdatasourcesresponsetypedef)
+  - [ListFolderMembersRequestRequestTypeDef](#listfoldermembersrequestrequesttypedef)
+  - [ListFolderMembersResponseTypeDef](#listfoldermembersresponsetypedef)
+  - [ListFoldersRequestRequestTypeDef](#listfoldersrequestrequesttypedef)
+  - [ListFoldersResponseTypeDef](#listfoldersresponsetypedef)
+  - [ListGroupMembershipsRequestRequestTypeDef](#listgroupmembershipsrequestrequesttypedef)
+  - [ListGroupMembershipsResponseTypeDef](#listgroupmembershipsresponsetypedef)
+  - [ListGroupsRequestRequestTypeDef](#listgroupsrequestrequesttypedef)
+  - [ListGroupsResponseTypeDef](#listgroupsresponsetypedef)
+  - [ListIAMPolicyAssignmentsForUserRequestRequestTypeDef](#listiampolicyassignmentsforuserrequestrequesttypedef)
+  - [ListIAMPolicyAssignmentsForUserResponseTypeDef](#listiampolicyassignmentsforuserresponsetypedef)
+  - [ListIAMPolicyAssignmentsRequestRequestTypeDef](#listiampolicyassignmentsrequestrequesttypedef)
+  - [ListIAMPolicyAssignmentsResponseTypeDef](#listiampolicyassignmentsresponsetypedef)
+  - [ListIngestionsRequestRequestTypeDef](#listingestionsrequestrequesttypedef)
+  - [ListIngestionsResponseTypeDef](#listingestionsresponsetypedef)
+  - [ListNamespacesRequestRequestTypeDef](#listnamespacesrequestrequesttypedef)
+  - [ListNamespacesResponseTypeDef](#listnamespacesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTemplateAliasesRequestRequestTypeDef](#listtemplatealiasesrequestrequesttypedef)
+  - [ListTemplateAliasesResponseTypeDef](#listtemplatealiasesresponsetypedef)
+  - [ListTemplateVersionsRequestRequestTypeDef](#listtemplateversionsrequestrequesttypedef)
+  - [ListTemplateVersionsResponseTypeDef](#listtemplateversionsresponsetypedef)
+  - [ListTemplatesRequestRequestTypeDef](#listtemplatesrequestrequesttypedef)
+  - [ListTemplatesResponseTypeDef](#listtemplatesresponsetypedef)
+  - [ListThemeAliasesRequestRequestTypeDef](#listthemealiasesrequestrequesttypedef)
+  - [ListThemeAliasesResponseTypeDef](#listthemealiasesresponsetypedef)
+  - [ListThemeVersionsRequestRequestTypeDef](#listthemeversionsrequestrequesttypedef)
+  - [ListThemeVersionsResponseTypeDef](#listthemeversionsresponsetypedef)
+  - [ListThemesRequestRequestTypeDef](#listthemesrequestrequesttypedef)
+  - [ListThemesResponseTypeDef](#listthemesresponsetypedef)
+  - [ListUserGroupsRequestRequestTypeDef](#listusergroupsrequestrequesttypedef)
+  - [ListUserGroupsResponseTypeDef](#listusergroupsresponsetypedef)
+  - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
+  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
   - [LogicalTableSourceTypeDef](#logicaltablesourcetypedef)
   - [LogicalTableTypeDef](#logicaltabletypedef)
   - [ManifestFileLocationTypeDef](#manifestfilelocationtypedef)
@@ -261,24 +261,24 @@ type annotations stubs module
   - [QueueInfoTypeDef](#queueinfotypedef)
   - [RdsParametersTypeDef](#rdsparameterstypedef)
   - [RedshiftParametersTypeDef](#redshiftparameterstypedef)
-  - [RegisterUserRequestTypeDef](#registeruserrequesttypedef)
-  - [RegisterUserResponseResponseTypeDef](#registeruserresponseresponsetypedef)
+  - [RegisterUserRequestRequestTypeDef](#registeruserrequestrequesttypedef)
+  - [RegisterUserResponseTypeDef](#registeruserresponsetypedef)
   - [RelationalTableTypeDef](#relationaltabletypedef)
   - [RenameColumnOperationTypeDef](#renamecolumnoperationtypedef)
   - [ResourcePermissionTypeDef](#resourcepermissiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreAnalysisRequestTypeDef](#restoreanalysisrequesttypedef)
-  - [RestoreAnalysisResponseResponseTypeDef](#restoreanalysisresponseresponsetypedef)
+  - [RestoreAnalysisRequestRequestTypeDef](#restoreanalysisrequestrequesttypedef)
+  - [RestoreAnalysisResponseTypeDef](#restoreanalysisresponsetypedef)
   - [RowInfoTypeDef](#rowinfotypedef)
   - [RowLevelPermissionDataSetTypeDef](#rowlevelpermissiondatasettypedef)
   - [S3ParametersTypeDef](#s3parameterstypedef)
   - [S3SourceTypeDef](#s3sourcetypedef)
-  - [SearchAnalysesRequestTypeDef](#searchanalysesrequesttypedef)
-  - [SearchAnalysesResponseResponseTypeDef](#searchanalysesresponseresponsetypedef)
-  - [SearchDashboardsRequestTypeDef](#searchdashboardsrequesttypedef)
-  - [SearchDashboardsResponseResponseTypeDef](#searchdashboardsresponseresponsetypedef)
-  - [SearchFoldersRequestTypeDef](#searchfoldersrequesttypedef)
-  - [SearchFoldersResponseResponseTypeDef](#searchfoldersresponseresponsetypedef)
+  - [SearchAnalysesRequestRequestTypeDef](#searchanalysesrequestrequesttypedef)
+  - [SearchAnalysesResponseTypeDef](#searchanalysesresponsetypedef)
+  - [SearchDashboardsRequestRequestTypeDef](#searchdashboardsrequestrequesttypedef)
+  - [SearchDashboardsResponseTypeDef](#searchdashboardsresponsetypedef)
+  - [SearchFoldersRequestRequestTypeDef](#searchfoldersrequestrequesttypedef)
+  - [SearchFoldersResponseTypeDef](#searchfoldersresponsetypedef)
   - [ServiceNowParametersTypeDef](#servicenowparameterstypedef)
   - [SheetControlsOptionTypeDef](#sheetcontrolsoptiontypedef)
   - [SheetStyleTypeDef](#sheetstyletypedef)
@@ -289,8 +289,8 @@ type annotations stubs module
   - [SslPropertiesTypeDef](#sslpropertiestypedef)
   - [StringParameterTypeDef](#stringparametertypedef)
   - [TagColumnOperationTypeDef](#tagcolumnoperationtypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [TagResourceResponseResponseTypeDef](#tagresourceresponseresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [TagResourceResponseTypeDef](#tagresourceresponsetypedef)
   - [TagTypeDef](#tagtypedef)
   - [TemplateAliasTypeDef](#templatealiastypedef)
   - [TemplateErrorTypeDef](#templateerrortypedef)
@@ -314,52 +314,52 @@ type annotations stubs module
   - [TransformOperationTypeDef](#transformoperationtypedef)
   - [TwitterParametersTypeDef](#twitterparameterstypedef)
   - [UIColorPaletteTypeDef](#uicolorpalettetypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UntagResourceResponseResponseTypeDef](#untagresourceresponseresponsetypedef)
-  - [UpdateAccountCustomizationRequestTypeDef](#updateaccountcustomizationrequesttypedef)
-  - [UpdateAccountCustomizationResponseResponseTypeDef](#updateaccountcustomizationresponseresponsetypedef)
-  - [UpdateAccountSettingsRequestTypeDef](#updateaccountsettingsrequesttypedef)
-  - [UpdateAccountSettingsResponseResponseTypeDef](#updateaccountsettingsresponseresponsetypedef)
-  - [UpdateAnalysisPermissionsRequestTypeDef](#updateanalysispermissionsrequesttypedef)
-  - [UpdateAnalysisPermissionsResponseResponseTypeDef](#updateanalysispermissionsresponseresponsetypedef)
-  - [UpdateAnalysisRequestTypeDef](#updateanalysisrequesttypedef)
-  - [UpdateAnalysisResponseResponseTypeDef](#updateanalysisresponseresponsetypedef)
-  - [UpdateDashboardPermissionsRequestTypeDef](#updatedashboardpermissionsrequesttypedef)
-  - [UpdateDashboardPermissionsResponseResponseTypeDef](#updatedashboardpermissionsresponseresponsetypedef)
-  - [UpdateDashboardPublishedVersionRequestTypeDef](#updatedashboardpublishedversionrequesttypedef)
-  - [UpdateDashboardPublishedVersionResponseResponseTypeDef](#updatedashboardpublishedversionresponseresponsetypedef)
-  - [UpdateDashboardRequestTypeDef](#updatedashboardrequesttypedef)
-  - [UpdateDashboardResponseResponseTypeDef](#updatedashboardresponseresponsetypedef)
-  - [UpdateDataSetPermissionsRequestTypeDef](#updatedatasetpermissionsrequesttypedef)
-  - [UpdateDataSetPermissionsResponseResponseTypeDef](#updatedatasetpermissionsresponseresponsetypedef)
-  - [UpdateDataSetRequestTypeDef](#updatedatasetrequesttypedef)
-  - [UpdateDataSetResponseResponseTypeDef](#updatedatasetresponseresponsetypedef)
-  - [UpdateDataSourcePermissionsRequestTypeDef](#updatedatasourcepermissionsrequesttypedef)
-  - [UpdateDataSourcePermissionsResponseResponseTypeDef](#updatedatasourcepermissionsresponseresponsetypedef)
-  - [UpdateDataSourceRequestTypeDef](#updatedatasourcerequesttypedef)
-  - [UpdateDataSourceResponseResponseTypeDef](#updatedatasourceresponseresponsetypedef)
-  - [UpdateFolderPermissionsRequestTypeDef](#updatefolderpermissionsrequesttypedef)
-  - [UpdateFolderPermissionsResponseResponseTypeDef](#updatefolderpermissionsresponseresponsetypedef)
-  - [UpdateFolderRequestTypeDef](#updatefolderrequesttypedef)
-  - [UpdateFolderResponseResponseTypeDef](#updatefolderresponseresponsetypedef)
-  - [UpdateGroupRequestTypeDef](#updategrouprequesttypedef)
-  - [UpdateGroupResponseResponseTypeDef](#updategroupresponseresponsetypedef)
-  - [UpdateIAMPolicyAssignmentRequestTypeDef](#updateiampolicyassignmentrequesttypedef)
-  - [UpdateIAMPolicyAssignmentResponseResponseTypeDef](#updateiampolicyassignmentresponseresponsetypedef)
-  - [UpdateTemplateAliasRequestTypeDef](#updatetemplatealiasrequesttypedef)
-  - [UpdateTemplateAliasResponseResponseTypeDef](#updatetemplatealiasresponseresponsetypedef)
-  - [UpdateTemplatePermissionsRequestTypeDef](#updatetemplatepermissionsrequesttypedef)
-  - [UpdateTemplatePermissionsResponseResponseTypeDef](#updatetemplatepermissionsresponseresponsetypedef)
-  - [UpdateTemplateRequestTypeDef](#updatetemplaterequesttypedef)
-  - [UpdateTemplateResponseResponseTypeDef](#updatetemplateresponseresponsetypedef)
-  - [UpdateThemeAliasRequestTypeDef](#updatethemealiasrequesttypedef)
-  - [UpdateThemeAliasResponseResponseTypeDef](#updatethemealiasresponseresponsetypedef)
-  - [UpdateThemePermissionsRequestTypeDef](#updatethemepermissionsrequesttypedef)
-  - [UpdateThemePermissionsResponseResponseTypeDef](#updatethemepermissionsresponseresponsetypedef)
-  - [UpdateThemeRequestTypeDef](#updatethemerequesttypedef)
-  - [UpdateThemeResponseResponseTypeDef](#updatethemeresponseresponsetypedef)
-  - [UpdateUserRequestTypeDef](#updateuserrequesttypedef)
-  - [UpdateUserResponseResponseTypeDef](#updateuserresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UntagResourceResponseTypeDef](#untagresourceresponsetypedef)
+  - [UpdateAccountCustomizationRequestRequestTypeDef](#updateaccountcustomizationrequestrequesttypedef)
+  - [UpdateAccountCustomizationResponseTypeDef](#updateaccountcustomizationresponsetypedef)
+  - [UpdateAccountSettingsRequestRequestTypeDef](#updateaccountsettingsrequestrequesttypedef)
+  - [UpdateAccountSettingsResponseTypeDef](#updateaccountsettingsresponsetypedef)
+  - [UpdateAnalysisPermissionsRequestRequestTypeDef](#updateanalysispermissionsrequestrequesttypedef)
+  - [UpdateAnalysisPermissionsResponseTypeDef](#updateanalysispermissionsresponsetypedef)
+  - [UpdateAnalysisRequestRequestTypeDef](#updateanalysisrequestrequesttypedef)
+  - [UpdateAnalysisResponseTypeDef](#updateanalysisresponsetypedef)
+  - [UpdateDashboardPermissionsRequestRequestTypeDef](#updatedashboardpermissionsrequestrequesttypedef)
+  - [UpdateDashboardPermissionsResponseTypeDef](#updatedashboardpermissionsresponsetypedef)
+  - [UpdateDashboardPublishedVersionRequestRequestTypeDef](#updatedashboardpublishedversionrequestrequesttypedef)
+  - [UpdateDashboardPublishedVersionResponseTypeDef](#updatedashboardpublishedversionresponsetypedef)
+  - [UpdateDashboardRequestRequestTypeDef](#updatedashboardrequestrequesttypedef)
+  - [UpdateDashboardResponseTypeDef](#updatedashboardresponsetypedef)
+  - [UpdateDataSetPermissionsRequestRequestTypeDef](#updatedatasetpermissionsrequestrequesttypedef)
+  - [UpdateDataSetPermissionsResponseTypeDef](#updatedatasetpermissionsresponsetypedef)
+  - [UpdateDataSetRequestRequestTypeDef](#updatedatasetrequestrequesttypedef)
+  - [UpdateDataSetResponseTypeDef](#updatedatasetresponsetypedef)
+  - [UpdateDataSourcePermissionsRequestRequestTypeDef](#updatedatasourcepermissionsrequestrequesttypedef)
+  - [UpdateDataSourcePermissionsResponseTypeDef](#updatedatasourcepermissionsresponsetypedef)
+  - [UpdateDataSourceRequestRequestTypeDef](#updatedatasourcerequestrequesttypedef)
+  - [UpdateDataSourceResponseTypeDef](#updatedatasourceresponsetypedef)
+  - [UpdateFolderPermissionsRequestRequestTypeDef](#updatefolderpermissionsrequestrequesttypedef)
+  - [UpdateFolderPermissionsResponseTypeDef](#updatefolderpermissionsresponsetypedef)
+  - [UpdateFolderRequestRequestTypeDef](#updatefolderrequestrequesttypedef)
+  - [UpdateFolderResponseTypeDef](#updatefolderresponsetypedef)
+  - [UpdateGroupRequestRequestTypeDef](#updategrouprequestrequesttypedef)
+  - [UpdateGroupResponseTypeDef](#updategroupresponsetypedef)
+  - [UpdateIAMPolicyAssignmentRequestRequestTypeDef](#updateiampolicyassignmentrequestrequesttypedef)
+  - [UpdateIAMPolicyAssignmentResponseTypeDef](#updateiampolicyassignmentresponsetypedef)
+  - [UpdateTemplateAliasRequestRequestTypeDef](#updatetemplatealiasrequestrequesttypedef)
+  - [UpdateTemplateAliasResponseTypeDef](#updatetemplatealiasresponsetypedef)
+  - [UpdateTemplatePermissionsRequestRequestTypeDef](#updatetemplatepermissionsrequestrequesttypedef)
+  - [UpdateTemplatePermissionsResponseTypeDef](#updatetemplatepermissionsresponsetypedef)
+  - [UpdateTemplateRequestRequestTypeDef](#updatetemplaterequestrequesttypedef)
+  - [UpdateTemplateResponseTypeDef](#updatetemplateresponsetypedef)
+  - [UpdateThemeAliasRequestRequestTypeDef](#updatethemealiasrequestrequesttypedef)
+  - [UpdateThemeAliasResponseTypeDef](#updatethemealiasresponsetypedef)
+  - [UpdateThemePermissionsRequestRequestTypeDef](#updatethemepermissionsrequestrequesttypedef)
+  - [UpdateThemePermissionsResponseTypeDef](#updatethemepermissionsresponsetypedef)
+  - [UpdateThemeRequestRequestTypeDef](#updatethemerequestrequesttypedef)
+  - [UpdateThemeResponseTypeDef](#updatethemeresponsetypedef)
+  - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
+  - [UpdateUserResponseTypeDef](#updateuserresponsetypedef)
   - [UploadSettingsTypeDef](#uploadsettingstypedef)
   - [UserTypeDef](#usertypedef)
   - [VpcConnectionPropertiesTypeDef](#vpcconnectionpropertiestypedef)
@@ -568,10 +568,10 @@ Required fields:
 - `ColumnId`: `str`
 - `Expression`: `str`
 
-## CancelIngestionRequestTypeDef
+## CancelIngestionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CancelIngestionRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CancelIngestionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -580,10 +580,10 @@ Required fields:
 - `DataSetId`: `str`
 - `IngestionId`: `str`
 
-## CancelIngestionResponseResponseTypeDef
+## CancelIngestionResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CancelIngestionResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CancelIngestionResponseTypeDef
 ```
 
 Required fields:
@@ -689,10 +689,10 @@ Optional fields:
 - `ColumnDescription`:
   [ColumnDescriptionTypeDef](./type_defs.md#columndescriptiontypedef)
 
-## CreateAccountCustomizationRequestTypeDef
+## CreateAccountCustomizationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateAccountCustomizationRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateAccountCustomizationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -706,10 +706,10 @@ Optional fields:
 - `Namespace`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateAccountCustomizationResponseResponseTypeDef
+## CreateAccountCustomizationResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateAccountCustomizationResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateAccountCustomizationResponseTypeDef
 ```
 
 Required fields:
@@ -724,10 +724,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAnalysisRequestTypeDef
+## CreateAnalysisRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateAnalysisRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateAnalysisRequestRequestTypeDef
 ```
 
 Required fields:
@@ -746,10 +746,10 @@ Optional fields:
 - `ThemeArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateAnalysisResponseResponseTypeDef
+## CreateAnalysisResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateAnalysisResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateAnalysisResponseTypeDef
 ```
 
 Required fields:
@@ -773,10 +773,10 @@ Required fields:
 - `Columns`:
   `List`\[[CalculatedColumnTypeDef](./type_defs.md#calculatedcolumntypedef)\]
 
-## CreateDashboardRequestTypeDef
+## CreateDashboardRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateDashboardRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateDashboardRequestRequestTypeDef
 ```
 
 Required fields:
@@ -798,10 +798,10 @@ Optional fields:
   [DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef)
 - `ThemeArn`: `str`
 
-## CreateDashboardResponseResponseTypeDef
+## CreateDashboardResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateDashboardResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateDashboardResponseTypeDef
 ```
 
 Required fields:
@@ -815,10 +815,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDataSetRequestTypeDef
+## CreateDataSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateDataSetRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateDataSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -846,10 +846,10 @@ Optional fields:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDataSetResponseResponseTypeDef
+## CreateDataSetResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateDataSetResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateDataSetResponseTypeDef
 ```
 
 Required fields:
@@ -863,10 +863,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDataSourceRequestTypeDef
+## CreateDataSourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateDataSourceRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateDataSourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -889,10 +889,10 @@ Optional fields:
 - `SslProperties`: [SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDataSourceResponseResponseTypeDef
+## CreateDataSourceResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateDataSourceResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateDataSourceResponseTypeDef
 ```
 
 Required fields:
@@ -905,10 +905,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFolderMembershipRequestTypeDef
+## CreateFolderMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateFolderMembershipRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateFolderMembershipRequestRequestTypeDef
 ```
 
 Required fields:
@@ -918,10 +918,10 @@ Required fields:
 - `MemberId`: `str`
 - `MemberType`: [MemberTypeType](./literals.md#membertypetype)
 
-## CreateFolderMembershipResponseResponseTypeDef
+## CreateFolderMembershipResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateFolderMembershipResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateFolderMembershipResponseTypeDef
 ```
 
 Required fields:
@@ -932,10 +932,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFolderRequestTypeDef
+## CreateFolderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateFolderRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateFolderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -953,10 +953,10 @@ Optional fields:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateFolderResponseResponseTypeDef
+## CreateFolderResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateFolderResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateFolderResponseTypeDef
 ```
 
 Required fields:
@@ -968,10 +968,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGroupMembershipRequestTypeDef
+## CreateGroupMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateGroupMembershipRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateGroupMembershipRequestRequestTypeDef
 ```
 
 Required fields:
@@ -981,10 +981,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
 
-## CreateGroupMembershipResponseResponseTypeDef
+## CreateGroupMembershipResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateGroupMembershipResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateGroupMembershipResponseTypeDef
 ```
 
 Required fields:
@@ -995,10 +995,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateGroupRequestTypeDef
+## CreateGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateGroupRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1011,10 +1011,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## CreateGroupResponseResponseTypeDef
+## CreateGroupResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateGroupResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateGroupResponseTypeDef
 ```
 
 Required fields:
@@ -1025,10 +1025,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateIAMPolicyAssignmentRequestTypeDef
+## CreateIAMPolicyAssignmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateIAMPolicyAssignmentRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateIAMPolicyAssignmentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1044,10 +1044,10 @@ Optional fields:
 - `PolicyArn`: `str`
 - `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
 
-## CreateIAMPolicyAssignmentResponseResponseTypeDef
+## CreateIAMPolicyAssignmentResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateIAMPolicyAssignmentResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateIAMPolicyAssignmentResponseTypeDef
 ```
 
 Required fields:
@@ -1063,10 +1063,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateIngestionRequestTypeDef
+## CreateIngestionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateIngestionRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateIngestionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1075,10 +1075,10 @@ Required fields:
 - `IngestionId`: `str`
 - `AwsAccountId`: `str`
 
-## CreateIngestionResponseResponseTypeDef
+## CreateIngestionResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateIngestionResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateIngestionResponseTypeDef
 ```
 
 Required fields:
@@ -1091,10 +1091,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNamespaceRequestTypeDef
+## CreateNamespaceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateNamespaceRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateNamespaceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1108,10 +1108,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateNamespaceResponseResponseTypeDef
+## CreateNamespaceResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateNamespaceResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateNamespaceResponseTypeDef
 ```
 
 Required fields:
@@ -1127,10 +1127,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTemplateAliasRequestTypeDef
+## CreateTemplateAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateTemplateAliasRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateTemplateAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1140,10 +1140,10 @@ Required fields:
 - `AliasName`: `str`
 - `TemplateVersionNumber`: `int`
 
-## CreateTemplateAliasResponseResponseTypeDef
+## CreateTemplateAliasResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateTemplateAliasResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateTemplateAliasResponseTypeDef
 ```
 
 Required fields:
@@ -1154,10 +1154,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTemplateRequestTypeDef
+## CreateTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateTemplateRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1175,10 +1175,10 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VersionDescription`: `str`
 
-## CreateTemplateResponseResponseTypeDef
+## CreateTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateTemplateResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -1192,10 +1192,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateThemeAliasRequestTypeDef
+## CreateThemeAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateThemeAliasRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateThemeAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1205,10 +1205,10 @@ Required fields:
 - `AliasName`: `str`
 - `ThemeVersionNumber`: `int`
 
-## CreateThemeAliasResponseResponseTypeDef
+## CreateThemeAliasResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateThemeAliasResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateThemeAliasResponseTypeDef
 ```
 
 Required fields:
@@ -1219,10 +1219,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateThemeRequestTypeDef
+## CreateThemeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateThemeRequestTypeDef
+from mypy_boto3_quicksight.type_defs import CreateThemeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1241,10 +1241,10 @@ Optional fields:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateThemeResponseResponseTypeDef
+## CreateThemeResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import CreateThemeResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import CreateThemeResponseTypeDef
 ```
 
 Required fields:
@@ -1636,10 +1636,10 @@ Required fields:
 - `Name`: `str`
 - `Values`: `List`\[`float`\]
 
-## DeleteAccountCustomizationRequestTypeDef
+## DeleteAccountCustomizationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteAccountCustomizationRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteAccountCustomizationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1650,10 +1650,10 @@ Optional fields:
 
 - `Namespace`: `str`
 
-## DeleteAccountCustomizationResponseResponseTypeDef
+## DeleteAccountCustomizationResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteAccountCustomizationResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteAccountCustomizationResponseTypeDef
 ```
 
 Required fields:
@@ -1663,10 +1663,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAnalysisRequestTypeDef
+## DeleteAnalysisRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteAnalysisRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteAnalysisRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1679,10 +1679,10 @@ Optional fields:
 - `RecoveryWindowInDays`: `int`
 - `ForceDeleteWithoutRecovery`: `bool`
 
-## DeleteAnalysisResponseResponseTypeDef
+## DeleteAnalysisResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteAnalysisResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteAnalysisResponseTypeDef
 ```
 
 Required fields:
@@ -1695,10 +1695,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDashboardRequestTypeDef
+## DeleteDashboardRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteDashboardRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteDashboardRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1710,10 +1710,10 @@ Optional fields:
 
 - `VersionNumber`: `int`
 
-## DeleteDashboardResponseResponseTypeDef
+## DeleteDashboardResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteDashboardResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteDashboardResponseTypeDef
 ```
 
 Required fields:
@@ -1725,10 +1725,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDataSetRequestTypeDef
+## DeleteDataSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteDataSetRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteDataSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1736,10 +1736,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `DataSetId`: `str`
 
-## DeleteDataSetResponseResponseTypeDef
+## DeleteDataSetResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteDataSetResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteDataSetResponseTypeDef
 ```
 
 Required fields:
@@ -1751,10 +1751,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDataSourceRequestTypeDef
+## DeleteDataSourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteDataSourceRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteDataSourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1762,10 +1762,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `DataSourceId`: `str`
 
-## DeleteDataSourceResponseResponseTypeDef
+## DeleteDataSourceResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteDataSourceResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteDataSourceResponseTypeDef
 ```
 
 Required fields:
@@ -1777,10 +1777,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteFolderMembershipRequestTypeDef
+## DeleteFolderMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteFolderMembershipRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteFolderMembershipRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1790,10 +1790,10 @@ Required fields:
 - `MemberId`: `str`
 - `MemberType`: [MemberTypeType](./literals.md#membertypetype)
 
-## DeleteFolderMembershipResponseResponseTypeDef
+## DeleteFolderMembershipResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteFolderMembershipResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteFolderMembershipResponseTypeDef
 ```
 
 Required fields:
@@ -1803,10 +1803,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteFolderRequestTypeDef
+## DeleteFolderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteFolderRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteFolderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1814,10 +1814,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `FolderId`: `str`
 
-## DeleteFolderResponseResponseTypeDef
+## DeleteFolderResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteFolderResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteFolderResponseTypeDef
 ```
 
 Required fields:
@@ -1829,10 +1829,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteGroupMembershipRequestTypeDef
+## DeleteGroupMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteGroupMembershipRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteGroupMembershipRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1842,10 +1842,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
 
-## DeleteGroupMembershipResponseResponseTypeDef
+## DeleteGroupMembershipResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteGroupMembershipResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteGroupMembershipResponseTypeDef
 ```
 
 Required fields:
@@ -1855,10 +1855,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteGroupRequestTypeDef
+## DeleteGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteGroupRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1867,10 +1867,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
 
-## DeleteGroupResponseResponseTypeDef
+## DeleteGroupResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteGroupResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteGroupResponseTypeDef
 ```
 
 Required fields:
@@ -1880,10 +1880,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteIAMPolicyAssignmentRequestTypeDef
+## DeleteIAMPolicyAssignmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteIAMPolicyAssignmentRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteIAMPolicyAssignmentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1892,10 +1892,10 @@ Required fields:
 - `AssignmentName`: `str`
 - `Namespace`: `str`
 
-## DeleteIAMPolicyAssignmentResponseResponseTypeDef
+## DeleteIAMPolicyAssignmentResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteIAMPolicyAssignmentResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteIAMPolicyAssignmentResponseTypeDef
 ```
 
 Required fields:
@@ -1906,10 +1906,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteNamespaceRequestTypeDef
+## DeleteNamespaceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteNamespaceRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteNamespaceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1917,10 +1917,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
 
-## DeleteNamespaceResponseResponseTypeDef
+## DeleteNamespaceResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteNamespaceResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteNamespaceResponseTypeDef
 ```
 
 Required fields:
@@ -1930,10 +1930,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTemplateAliasRequestTypeDef
+## DeleteTemplateAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteTemplateAliasRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteTemplateAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1942,10 +1942,10 @@ Required fields:
 - `TemplateId`: `str`
 - `AliasName`: `str`
 
-## DeleteTemplateAliasResponseResponseTypeDef
+## DeleteTemplateAliasResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteTemplateAliasResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteTemplateAliasResponseTypeDef
 ```
 
 Required fields:
@@ -1958,10 +1958,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTemplateRequestTypeDef
+## DeleteTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteTemplateRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1973,10 +1973,10 @@ Optional fields:
 
 - `VersionNumber`: `int`
 
-## DeleteTemplateResponseResponseTypeDef
+## DeleteTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteTemplateResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -1988,10 +1988,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteThemeAliasRequestTypeDef
+## DeleteThemeAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteThemeAliasRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteThemeAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2000,10 +2000,10 @@ Required fields:
 - `ThemeId`: `str`
 - `AliasName`: `str`
 
-## DeleteThemeAliasResponseResponseTypeDef
+## DeleteThemeAliasResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteThemeAliasResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteThemeAliasResponseTypeDef
 ```
 
 Required fields:
@@ -2016,10 +2016,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteThemeRequestTypeDef
+## DeleteThemeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteThemeRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteThemeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2031,10 +2031,10 @@ Optional fields:
 
 - `VersionNumber`: `int`
 
-## DeleteThemeResponseResponseTypeDef
+## DeleteThemeResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteThemeResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteThemeResponseTypeDef
 ```
 
 Required fields:
@@ -2046,10 +2046,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteUserByPrincipalIdRequestTypeDef
+## DeleteUserByPrincipalIdRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteUserByPrincipalIdRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteUserByPrincipalIdRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2058,10 +2058,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
 
-## DeleteUserByPrincipalIdResponseResponseTypeDef
+## DeleteUserByPrincipalIdResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteUserByPrincipalIdResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteUserByPrincipalIdResponseTypeDef
 ```
 
 Required fields:
@@ -2071,10 +2071,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteUserRequestTypeDef
+## DeleteUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteUserRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2083,10 +2083,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
 
-## DeleteUserResponseResponseTypeDef
+## DeleteUserResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DeleteUserResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DeleteUserResponseTypeDef
 ```
 
 Required fields:
@@ -2096,10 +2096,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAccountCustomizationRequestTypeDef
+## DescribeAccountCustomizationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeAccountCustomizationRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeAccountCustomizationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2111,10 +2111,10 @@ Optional fields:
 - `Namespace`: `str`
 - `Resolved`: `bool`
 
-## DescribeAccountCustomizationResponseResponseTypeDef
+## DescribeAccountCustomizationResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeAccountCustomizationResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeAccountCustomizationResponseTypeDef
 ```
 
 Required fields:
@@ -2129,20 +2129,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAccountSettingsRequestTypeDef
+## DescribeAccountSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeAccountSettingsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeAccountSettingsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AwsAccountId`: `str`
 
-## DescribeAccountSettingsResponseResponseTypeDef
+## DescribeAccountSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeAccountSettingsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeAccountSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -2154,10 +2154,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAnalysisPermissionsRequestTypeDef
+## DescribeAnalysisPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeAnalysisPermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeAnalysisPermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2165,10 +2165,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `AnalysisId`: `str`
 
-## DescribeAnalysisPermissionsResponseResponseTypeDef
+## DescribeAnalysisPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeAnalysisPermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeAnalysisPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -2182,10 +2182,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAnalysisRequestTypeDef
+## DescribeAnalysisRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeAnalysisRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeAnalysisRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2193,10 +2193,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `AnalysisId`: `str`
 
-## DescribeAnalysisResponseResponseTypeDef
+## DescribeAnalysisResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeAnalysisResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeAnalysisResponseTypeDef
 ```
 
 Required fields:
@@ -2207,10 +2207,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDashboardPermissionsRequestTypeDef
+## DescribeDashboardPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeDashboardPermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeDashboardPermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2218,10 +2218,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `DashboardId`: `str`
 
-## DescribeDashboardPermissionsResponseResponseTypeDef
+## DescribeDashboardPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeDashboardPermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeDashboardPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -2235,10 +2235,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDashboardRequestTypeDef
+## DescribeDashboardRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeDashboardRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeDashboardRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2251,10 +2251,10 @@ Optional fields:
 - `VersionNumber`: `int`
 - `AliasName`: `str`
 
-## DescribeDashboardResponseResponseTypeDef
+## DescribeDashboardResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeDashboardResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeDashboardResponseTypeDef
 ```
 
 Required fields:
@@ -2265,10 +2265,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDataSetPermissionsRequestTypeDef
+## DescribeDataSetPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeDataSetPermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeDataSetPermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2276,10 +2276,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `DataSetId`: `str`
 
-## DescribeDataSetPermissionsResponseResponseTypeDef
+## DescribeDataSetPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeDataSetPermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeDataSetPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -2293,10 +2293,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDataSetRequestTypeDef
+## DescribeDataSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeDataSetRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeDataSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2304,10 +2304,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `DataSetId`: `str`
 
-## DescribeDataSetResponseResponseTypeDef
+## DescribeDataSetResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeDataSetResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeDataSetResponseTypeDef
 ```
 
 Required fields:
@@ -2318,10 +2318,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDataSourcePermissionsRequestTypeDef
+## DescribeDataSourcePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeDataSourcePermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeDataSourcePermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2329,10 +2329,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `DataSourceId`: `str`
 
-## DescribeDataSourcePermissionsResponseResponseTypeDef
+## DescribeDataSourcePermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeDataSourcePermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeDataSourcePermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -2346,10 +2346,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDataSourceRequestTypeDef
+## DescribeDataSourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeDataSourceRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeDataSourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2357,10 +2357,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `DataSourceId`: `str`
 
-## DescribeDataSourceResponseResponseTypeDef
+## DescribeDataSourceResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeDataSourceResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeDataSourceResponseTypeDef
 ```
 
 Required fields:
@@ -2371,10 +2371,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFolderPermissionsRequestTypeDef
+## DescribeFolderPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeFolderPermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeFolderPermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2382,10 +2382,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `FolderId`: `str`
 
-## DescribeFolderPermissionsResponseResponseTypeDef
+## DescribeFolderPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeFolderPermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeFolderPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -2399,10 +2399,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFolderRequestTypeDef
+## DescribeFolderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeFolderRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeFolderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2410,10 +2410,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `FolderId`: `str`
 
-## DescribeFolderResolvedPermissionsRequestTypeDef
+## DescribeFolderResolvedPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeFolderResolvedPermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeFolderResolvedPermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2421,10 +2421,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `FolderId`: `str`
 
-## DescribeFolderResolvedPermissionsResponseResponseTypeDef
+## DescribeFolderResolvedPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeFolderResolvedPermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeFolderResolvedPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -2438,10 +2438,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFolderResponseResponseTypeDef
+## DescribeFolderResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeFolderResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeFolderResponseTypeDef
 ```
 
 Required fields:
@@ -2452,10 +2452,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGroupRequestTypeDef
+## DescribeGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeGroupRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2464,10 +2464,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
 
-## DescribeGroupResponseResponseTypeDef
+## DescribeGroupResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeGroupResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeGroupResponseTypeDef
 ```
 
 Required fields:
@@ -2478,10 +2478,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIAMPolicyAssignmentRequestTypeDef
+## DescribeIAMPolicyAssignmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeIAMPolicyAssignmentRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeIAMPolicyAssignmentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2490,10 +2490,10 @@ Required fields:
 - `AssignmentName`: `str`
 - `Namespace`: `str`
 
-## DescribeIAMPolicyAssignmentResponseResponseTypeDef
+## DescribeIAMPolicyAssignmentResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeIAMPolicyAssignmentResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeIAMPolicyAssignmentResponseTypeDef
 ```
 
 Required fields:
@@ -2505,10 +2505,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIngestionRequestTypeDef
+## DescribeIngestionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeIngestionRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeIngestionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2517,10 +2517,10 @@ Required fields:
 - `DataSetId`: `str`
 - `IngestionId`: `str`
 
-## DescribeIngestionResponseResponseTypeDef
+## DescribeIngestionResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeIngestionResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeIngestionResponseTypeDef
 ```
 
 Required fields:
@@ -2531,10 +2531,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNamespaceRequestTypeDef
+## DescribeNamespaceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeNamespaceRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeNamespaceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2542,10 +2542,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
 
-## DescribeNamespaceResponseResponseTypeDef
+## DescribeNamespaceResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeNamespaceResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeNamespaceResponseTypeDef
 ```
 
 Required fields:
@@ -2556,10 +2556,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTemplateAliasRequestTypeDef
+## DescribeTemplateAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeTemplateAliasRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeTemplateAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2568,10 +2568,10 @@ Required fields:
 - `TemplateId`: `str`
 - `AliasName`: `str`
 
-## DescribeTemplateAliasResponseResponseTypeDef
+## DescribeTemplateAliasResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeTemplateAliasResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeTemplateAliasResponseTypeDef
 ```
 
 Required fields:
@@ -2582,10 +2582,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTemplatePermissionsRequestTypeDef
+## DescribeTemplatePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeTemplatePermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeTemplatePermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2593,10 +2593,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `TemplateId`: `str`
 
-## DescribeTemplatePermissionsResponseResponseTypeDef
+## DescribeTemplatePermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeTemplatePermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeTemplatePermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -2610,10 +2610,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTemplateRequestTypeDef
+## DescribeTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeTemplateRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2626,10 +2626,10 @@ Optional fields:
 - `VersionNumber`: `int`
 - `AliasName`: `str`
 
-## DescribeTemplateResponseResponseTypeDef
+## DescribeTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeTemplateResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -2640,10 +2640,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeThemeAliasRequestTypeDef
+## DescribeThemeAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeThemeAliasRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeThemeAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2652,10 +2652,10 @@ Required fields:
 - `ThemeId`: `str`
 - `AliasName`: `str`
 
-## DescribeThemeAliasResponseResponseTypeDef
+## DescribeThemeAliasResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeThemeAliasResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeThemeAliasResponseTypeDef
 ```
 
 Required fields:
@@ -2666,10 +2666,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeThemePermissionsRequestTypeDef
+## DescribeThemePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeThemePermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeThemePermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2677,10 +2677,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `ThemeId`: `str`
 
-## DescribeThemePermissionsResponseResponseTypeDef
+## DescribeThemePermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeThemePermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeThemePermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -2694,10 +2694,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeThemeRequestTypeDef
+## DescribeThemeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeThemeRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeThemeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2710,10 +2710,10 @@ Optional fields:
 - `VersionNumber`: `int`
 - `AliasName`: `str`
 
-## DescribeThemeResponseResponseTypeDef
+## DescribeThemeResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeThemeResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeThemeResponseTypeDef
 ```
 
 Required fields:
@@ -2724,10 +2724,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUserRequestTypeDef
+## DescribeUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeUserRequestTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2736,10 +2736,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
 
-## DescribeUserResponseResponseTypeDef
+## DescribeUserResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import DescribeUserResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import DescribeUserResponseTypeDef
 ```
 
 Required fields:
@@ -2864,10 +2864,10 @@ Required fields:
   [GeoSpatialCountryCodeType](./literals.md#geospatialcountrycodetype))
 - `Columns`: `List`\[`str`\]
 
-## GetDashboardEmbedUrlRequestTypeDef
+## GetDashboardEmbedUrlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import GetDashboardEmbedUrlRequestTypeDef
+from mypy_boto3_quicksight.type_defs import GetDashboardEmbedUrlRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2887,10 +2887,10 @@ Optional fields:
 - `Namespace`: `str`
 - `AdditionalDashboardIds`: `List`\[`str`\]
 
-## GetDashboardEmbedUrlResponseResponseTypeDef
+## GetDashboardEmbedUrlResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import GetDashboardEmbedUrlResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import GetDashboardEmbedUrlResponseTypeDef
 ```
 
 Required fields:
@@ -2901,10 +2901,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSessionEmbedUrlRequestTypeDef
+## GetSessionEmbedUrlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import GetSessionEmbedUrlRequestTypeDef
+from mypy_boto3_quicksight.type_defs import GetSessionEmbedUrlRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2917,10 +2917,10 @@ Optional fields:
 - `SessionLifetimeInMinutes`: `int`
 - `UserArn`: `str`
 
-## GetSessionEmbedUrlResponseResponseTypeDef
+## GetSessionEmbedUrlResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import GetSessionEmbedUrlResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import GetSessionEmbedUrlResponseTypeDef
 ```
 
 Required fields:
@@ -3080,10 +3080,10 @@ Optional fields:
 
 - `UniqueKey`: `bool`
 
-## ListAnalysesRequestTypeDef
+## ListAnalysesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListAnalysesRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListAnalysesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3095,10 +3095,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListAnalysesResponseResponseTypeDef
+## ListAnalysesResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListAnalysesResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListAnalysesResponseTypeDef
 ```
 
 Required fields:
@@ -3111,10 +3111,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDashboardVersionsRequestTypeDef
+## ListDashboardVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListDashboardVersionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListDashboardVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3127,10 +3127,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDashboardVersionsResponseResponseTypeDef
+## ListDashboardVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListDashboardVersionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListDashboardVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -3143,10 +3143,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDashboardsRequestTypeDef
+## ListDashboardsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListDashboardsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListDashboardsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3158,10 +3158,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDashboardsResponseResponseTypeDef
+## ListDashboardsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListDashboardsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListDashboardsResponseTypeDef
 ```
 
 Required fields:
@@ -3174,10 +3174,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDataSetsRequestTypeDef
+## ListDataSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListDataSetsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListDataSetsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3189,10 +3189,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDataSetsResponseResponseTypeDef
+## ListDataSetsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListDataSetsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListDataSetsResponseTypeDef
 ```
 
 Required fields:
@@ -3205,10 +3205,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDataSourcesRequestTypeDef
+## ListDataSourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListDataSourcesRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListDataSourcesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3220,10 +3220,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDataSourcesResponseResponseTypeDef
+## ListDataSourcesResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListDataSourcesResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListDataSourcesResponseTypeDef
 ```
 
 Required fields:
@@ -3236,10 +3236,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFolderMembersRequestTypeDef
+## ListFolderMembersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListFolderMembersRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListFolderMembersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3252,10 +3252,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListFolderMembersResponseResponseTypeDef
+## ListFolderMembersResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListFolderMembersResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListFolderMembersResponseTypeDef
 ```
 
 Required fields:
@@ -3268,10 +3268,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFoldersRequestTypeDef
+## ListFoldersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListFoldersRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListFoldersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3283,10 +3283,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListFoldersResponseResponseTypeDef
+## ListFoldersResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListFoldersResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListFoldersResponseTypeDef
 ```
 
 Required fields:
@@ -3299,10 +3299,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGroupMembershipsRequestTypeDef
+## ListGroupMembershipsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListGroupMembershipsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListGroupMembershipsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3316,10 +3316,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListGroupMembershipsResponseResponseTypeDef
+## ListGroupMembershipsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListGroupMembershipsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListGroupMembershipsResponseTypeDef
 ```
 
 Required fields:
@@ -3332,10 +3332,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListGroupsRequestTypeDef
+## ListGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListGroupsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListGroupsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3348,10 +3348,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListGroupsResponseResponseTypeDef
+## ListGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListGroupsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -3363,10 +3363,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIAMPolicyAssignmentsForUserRequestTypeDef
+## ListIAMPolicyAssignmentsForUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsForUserRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsForUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3380,10 +3380,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListIAMPolicyAssignmentsForUserResponseResponseTypeDef
+## ListIAMPolicyAssignmentsForUserResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsForUserResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsForUserResponseTypeDef
 ```
 
 Required fields:
@@ -3396,10 +3396,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIAMPolicyAssignmentsRequestTypeDef
+## ListIAMPolicyAssignmentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3414,10 +3414,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListIAMPolicyAssignmentsResponseResponseTypeDef
+## ListIAMPolicyAssignmentsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListIAMPolicyAssignmentsResponseTypeDef
 ```
 
 Required fields:
@@ -3430,10 +3430,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIngestionsRequestTypeDef
+## ListIngestionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListIngestionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListIngestionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3446,10 +3446,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListIngestionsResponseResponseTypeDef
+## ListIngestionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListIngestionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListIngestionsResponseTypeDef
 ```
 
 Required fields:
@@ -3461,10 +3461,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListNamespacesRequestTypeDef
+## ListNamespacesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListNamespacesRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListNamespacesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3476,10 +3476,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListNamespacesResponseResponseTypeDef
+## ListNamespacesResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListNamespacesResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListNamespacesResponseTypeDef
 ```
 
 Required fields:
@@ -3492,20 +3492,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -3516,10 +3516,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTemplateAliasesRequestTypeDef
+## ListTemplateAliasesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListTemplateAliasesRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListTemplateAliasesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3532,10 +3532,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListTemplateAliasesResponseResponseTypeDef
+## ListTemplateAliasesResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListTemplateAliasesResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListTemplateAliasesResponseTypeDef
 ```
 
 Required fields:
@@ -3548,10 +3548,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTemplateVersionsRequestTypeDef
+## ListTemplateVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListTemplateVersionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListTemplateVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3564,10 +3564,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListTemplateVersionsResponseResponseTypeDef
+## ListTemplateVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListTemplateVersionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListTemplateVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -3580,10 +3580,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTemplatesRequestTypeDef
+## ListTemplatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListTemplatesRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListTemplatesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3595,10 +3595,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListTemplatesResponseResponseTypeDef
+## ListTemplatesResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListTemplatesResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListTemplatesResponseTypeDef
 ```
 
 Required fields:
@@ -3611,10 +3611,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThemeAliasesRequestTypeDef
+## ListThemeAliasesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListThemeAliasesRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListThemeAliasesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3627,10 +3627,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListThemeAliasesResponseResponseTypeDef
+## ListThemeAliasesResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListThemeAliasesResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListThemeAliasesResponseTypeDef
 ```
 
 Required fields:
@@ -3643,10 +3643,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThemeVersionsRequestTypeDef
+## ListThemeVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListThemeVersionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListThemeVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3659,10 +3659,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListThemeVersionsResponseResponseTypeDef
+## ListThemeVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListThemeVersionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListThemeVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -3675,10 +3675,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListThemesRequestTypeDef
+## ListThemesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListThemesRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListThemesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3691,10 +3691,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `Type`: [ThemeTypeType](./literals.md#themetypetype)
 
-## ListThemesResponseResponseTypeDef
+## ListThemesResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListThemesResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListThemesResponseTypeDef
 ```
 
 Required fields:
@@ -3707,10 +3707,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUserGroupsRequestTypeDef
+## ListUserGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListUserGroupsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListUserGroupsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3724,10 +3724,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListUserGroupsResponseResponseTypeDef
+## ListUserGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListUserGroupsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListUserGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -3739,10 +3739,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUsersRequestTypeDef
+## ListUsersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListUsersRequestTypeDef
+from mypy_boto3_quicksight.type_defs import ListUsersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3755,10 +3755,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListUsersResponseResponseTypeDef
+## ListUsersResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import ListUsersResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import ListUsersResponseTypeDef
 ```
 
 Required fields:
@@ -4021,10 +4021,10 @@ Optional fields:
 - `Port`: `int`
 - `ClusterId`: `str`
 
-## RegisterUserRequestTypeDef
+## RegisterUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import RegisterUserRequestTypeDef
+from mypy_boto3_quicksight.type_defs import RegisterUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4045,10 +4045,10 @@ Optional fields:
 - `CustomFederationProviderUrl`: `str`
 - `ExternalLoginId`: `str`
 
-## RegisterUserResponseResponseTypeDef
+## RegisterUserResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import RegisterUserResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import RegisterUserResponseTypeDef
 ```
 
 Required fields:
@@ -4114,10 +4114,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RestoreAnalysisRequestTypeDef
+## RestoreAnalysisRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import RestoreAnalysisRequestTypeDef
+from mypy_boto3_quicksight.type_defs import RestoreAnalysisRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4125,10 +4125,10 @@ Required fields:
 - `AwsAccountId`: `str`
 - `AnalysisId`: `str`
 
-## RestoreAnalysisResponseResponseTypeDef
+## RestoreAnalysisResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import RestoreAnalysisResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import RestoreAnalysisResponseTypeDef
 ```
 
 Required fields:
@@ -4197,10 +4197,10 @@ Optional fields:
 - `UploadSettings`:
   [UploadSettingsTypeDef](./type_defs.md#uploadsettingstypedef)
 
-## SearchAnalysesRequestTypeDef
+## SearchAnalysesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import SearchAnalysesRequestTypeDef
+from mypy_boto3_quicksight.type_defs import SearchAnalysesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4214,10 +4214,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## SearchAnalysesResponseResponseTypeDef
+## SearchAnalysesResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import SearchAnalysesResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import SearchAnalysesResponseTypeDef
 ```
 
 Required fields:
@@ -4230,10 +4230,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchDashboardsRequestTypeDef
+## SearchDashboardsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import SearchDashboardsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import SearchDashboardsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4247,10 +4247,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## SearchDashboardsResponseResponseTypeDef
+## SearchDashboardsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import SearchDashboardsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import SearchDashboardsResponseTypeDef
 ```
 
 Required fields:
@@ -4263,10 +4263,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchFoldersRequestTypeDef
+## SearchFoldersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import SearchFoldersRequestTypeDef
+from mypy_boto3_quicksight.type_defs import SearchFoldersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4280,10 +4280,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## SearchFoldersResponseResponseTypeDef
+## SearchFoldersResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import SearchFoldersResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import SearchFoldersResponseTypeDef
 ```
 
 Required fields:
@@ -4405,10 +4405,10 @@ Required fields:
 - `ColumnName`: `str`
 - `Tags`: `List`\[[ColumnTagTypeDef](./type_defs.md#columntagtypedef)\]
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_quicksight.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4416,10 +4416,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TagResourceResponseResponseTypeDef
+## TagResourceResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import TagResourceResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import TagResourceResponseTypeDef
 ```
 
 Required fields:
@@ -4753,10 +4753,10 @@ Optional fields:
 - `Measure`: `str`
 - `MeasureForeground`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4764,10 +4764,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UntagResourceResponseResponseTypeDef
+## UntagResourceResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UntagResourceResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UntagResourceResponseTypeDef
 ```
 
 Required fields:
@@ -4777,10 +4777,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAccountCustomizationRequestTypeDef
+## UpdateAccountCustomizationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateAccountCustomizationRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateAccountCustomizationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4793,10 +4793,10 @@ Optional fields:
 
 - `Namespace`: `str`
 
-## UpdateAccountCustomizationResponseResponseTypeDef
+## UpdateAccountCustomizationResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateAccountCustomizationResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateAccountCustomizationResponseTypeDef
 ```
 
 Required fields:
@@ -4811,10 +4811,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAccountSettingsRequestTypeDef
+## UpdateAccountSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateAccountSettingsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateAccountSettingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4826,10 +4826,10 @@ Optional fields:
 
 - `NotificationEmail`: `str`
 
-## UpdateAccountSettingsResponseResponseTypeDef
+## UpdateAccountSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateAccountSettingsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateAccountSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -4839,10 +4839,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAnalysisPermissionsRequestTypeDef
+## UpdateAnalysisPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateAnalysisPermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateAnalysisPermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4857,10 +4857,10 @@ Optional fields:
 - `RevokePermissions`:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
-## UpdateAnalysisPermissionsResponseResponseTypeDef
+## UpdateAnalysisPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateAnalysisPermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateAnalysisPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -4874,10 +4874,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAnalysisRequestTypeDef
+## UpdateAnalysisRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateAnalysisRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateAnalysisRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4893,10 +4893,10 @@ Optional fields:
 - `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
 - `ThemeArn`: `str`
 
-## UpdateAnalysisResponseResponseTypeDef
+## UpdateAnalysisResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateAnalysisResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateAnalysisResponseTypeDef
 ```
 
 Required fields:
@@ -4909,10 +4909,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDashboardPermissionsRequestTypeDef
+## UpdateDashboardPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDashboardPermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDashboardPermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4927,10 +4927,10 @@ Optional fields:
 - `RevokePermissions`:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
-## UpdateDashboardPermissionsResponseResponseTypeDef
+## UpdateDashboardPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDashboardPermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDashboardPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -4944,10 +4944,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDashboardPublishedVersionRequestTypeDef
+## UpdateDashboardPublishedVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDashboardPublishedVersionRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDashboardPublishedVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4956,10 +4956,10 @@ Required fields:
 - `DashboardId`: `str`
 - `VersionNumber`: `int`
 
-## UpdateDashboardPublishedVersionResponseResponseTypeDef
+## UpdateDashboardPublishedVersionResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDashboardPublishedVersionResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDashboardPublishedVersionResponseTypeDef
 ```
 
 Required fields:
@@ -4971,10 +4971,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDashboardRequestTypeDef
+## UpdateDashboardRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDashboardRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDashboardRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4993,10 +4993,10 @@ Optional fields:
   [DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef)
 - `ThemeArn`: `str`
 
-## UpdateDashboardResponseResponseTypeDef
+## UpdateDashboardResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDashboardResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDashboardResponseTypeDef
 ```
 
 Required fields:
@@ -5010,10 +5010,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDataSetPermissionsRequestTypeDef
+## UpdateDataSetPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDataSetPermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDataSetPermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5028,10 +5028,10 @@ Optional fields:
 - `RevokePermissions`:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
-## UpdateDataSetPermissionsResponseResponseTypeDef
+## UpdateDataSetPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDataSetPermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDataSetPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -5043,10 +5043,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDataSetRequestTypeDef
+## UpdateDataSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDataSetRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDataSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5071,10 +5071,10 @@ Optional fields:
 - `ColumnLevelPermissionRules`:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 
-## UpdateDataSetResponseResponseTypeDef
+## UpdateDataSetResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDataSetResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDataSetResponseTypeDef
 ```
 
 Required fields:
@@ -5088,10 +5088,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDataSourcePermissionsRequestTypeDef
+## UpdateDataSourcePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDataSourcePermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDataSourcePermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5106,10 +5106,10 @@ Optional fields:
 - `RevokePermissions`:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
-## UpdateDataSourcePermissionsResponseResponseTypeDef
+## UpdateDataSourcePermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDataSourcePermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDataSourcePermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -5121,10 +5121,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDataSourceRequestTypeDef
+## UpdateDataSourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDataSourceRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDataSourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5143,10 +5143,10 @@ Optional fields:
   [VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef)
 - `SslProperties`: [SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef)
 
-## UpdateDataSourceResponseResponseTypeDef
+## UpdateDataSourceResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateDataSourceResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateDataSourceResponseTypeDef
 ```
 
 Required fields:
@@ -5159,10 +5159,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFolderPermissionsRequestTypeDef
+## UpdateFolderPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateFolderPermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateFolderPermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5177,10 +5177,10 @@ Optional fields:
 - `RevokePermissions`:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
-## UpdateFolderPermissionsResponseResponseTypeDef
+## UpdateFolderPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateFolderPermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateFolderPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -5194,10 +5194,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateFolderRequestTypeDef
+## UpdateFolderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateFolderRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateFolderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5206,10 +5206,10 @@ Required fields:
 - `FolderId`: `str`
 - `Name`: `str`
 
-## UpdateFolderResponseResponseTypeDef
+## UpdateFolderResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateFolderResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateFolderResponseTypeDef
 ```
 
 Required fields:
@@ -5221,10 +5221,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateGroupRequestTypeDef
+## UpdateGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateGroupRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5237,10 +5237,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## UpdateGroupResponseResponseTypeDef
+## UpdateGroupResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateGroupResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateGroupResponseTypeDef
 ```
 
 Required fields:
@@ -5251,10 +5251,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateIAMPolicyAssignmentRequestTypeDef
+## UpdateIAMPolicyAssignmentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateIAMPolicyAssignmentRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateIAMPolicyAssignmentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5270,10 +5270,10 @@ Optional fields:
 - `PolicyArn`: `str`
 - `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
 
-## UpdateIAMPolicyAssignmentResponseResponseTypeDef
+## UpdateIAMPolicyAssignmentResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateIAMPolicyAssignmentResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateIAMPolicyAssignmentResponseTypeDef
 ```
 
 Required fields:
@@ -5289,10 +5289,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTemplateAliasRequestTypeDef
+## UpdateTemplateAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateTemplateAliasRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateTemplateAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5302,10 +5302,10 @@ Required fields:
 - `AliasName`: `str`
 - `TemplateVersionNumber`: `int`
 
-## UpdateTemplateAliasResponseResponseTypeDef
+## UpdateTemplateAliasResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateTemplateAliasResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateTemplateAliasResponseTypeDef
 ```
 
 Required fields:
@@ -5316,10 +5316,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTemplatePermissionsRequestTypeDef
+## UpdateTemplatePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateTemplatePermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateTemplatePermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5334,10 +5334,10 @@ Optional fields:
 - `RevokePermissions`:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
-## UpdateTemplatePermissionsResponseResponseTypeDef
+## UpdateTemplatePermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateTemplatePermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateTemplatePermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -5351,10 +5351,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateTemplateRequestTypeDef
+## UpdateTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateTemplateRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5369,10 +5369,10 @@ Optional fields:
 - `VersionDescription`: `str`
 - `Name`: `str`
 
-## UpdateTemplateResponseResponseTypeDef
+## UpdateTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateTemplateResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -5386,10 +5386,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateThemeAliasRequestTypeDef
+## UpdateThemeAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateThemeAliasRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateThemeAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5399,10 +5399,10 @@ Required fields:
 - `AliasName`: `str`
 - `ThemeVersionNumber`: `int`
 
-## UpdateThemeAliasResponseResponseTypeDef
+## UpdateThemeAliasResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateThemeAliasResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateThemeAliasResponseTypeDef
 ```
 
 Required fields:
@@ -5413,10 +5413,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateThemePermissionsRequestTypeDef
+## UpdateThemePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateThemePermissionsRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateThemePermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5431,10 +5431,10 @@ Optional fields:
 - `RevokePermissions`:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
-## UpdateThemePermissionsResponseResponseTypeDef
+## UpdateThemePermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateThemePermissionsResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateThemePermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -5448,10 +5448,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateThemeRequestTypeDef
+## UpdateThemeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateThemeRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateThemeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5467,10 +5467,10 @@ Optional fields:
 - `Configuration`:
   [ThemeConfigurationTypeDef](./type_defs.md#themeconfigurationtypedef)
 
-## UpdateThemeResponseResponseTypeDef
+## UpdateThemeResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateThemeResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateThemeResponseTypeDef
 ```
 
 Required fields:
@@ -5484,10 +5484,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateUserRequestTypeDef
+## UpdateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateUserRequestTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5506,10 +5506,10 @@ Optional fields:
 - `CustomFederationProviderUrl`: `str`
 - `ExternalLoginId`: `str`
 
-## UpdateUserResponseResponseTypeDef
+## UpdateUserResponseTypeDef
 
 ```python
-from mypy_boto3_quicksight.type_defs import UpdateUserResponseResponseTypeDef
+from mypy_boto3_quicksight.type_defs import UpdateUserResponseTypeDef
 ```
 
 Required fields:

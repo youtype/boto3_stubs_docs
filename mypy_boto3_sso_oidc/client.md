@@ -11,6 +11,7 @@ type annotations stubs module
   - [SSOOIDCClient](#ssooidcclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_token](#create_token)
     - [generate_presigned_url](#generate_presigned_url)
@@ -63,6 +64,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SSOOIDCClient exceptions.
+
+Type annotations for `boto3.client("sso-oidc").exceptions` method.
+
+Boto3 documentation:
+[SSOOIDC.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -88,7 +100,7 @@ Boto3 documentation:
 [SSOOIDC.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.create_token)
 
 Arguments mapping described in
-[CreateTokenRequestTypeDef](./type_defs.md#createtokenrequesttypedef).
+[CreateTokenRequestRequestTypeDef](./type_defs.md#createtokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -102,7 +114,7 @@ Keyword-only arguments:
 - `redirectUri`: `str`
 
 Returns
-[CreateTokenResponseResponseTypeDef](./type_defs.md#createtokenresponseresponsetypedef).
+[CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
 
 ### generate_presigned_url
 
@@ -132,7 +144,7 @@ Boto3 documentation:
 [SSOOIDC.Client.register_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.register_client)
 
 Arguments mapping described in
-[RegisterClientRequestTypeDef](./type_defs.md#registerclientrequesttypedef).
+[RegisterClientRequestRequestTypeDef](./type_defs.md#registerclientrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -141,7 +153,7 @@ Keyword-only arguments:
 - `scopes`: `List`\[`str`\]
 
 Returns
-[RegisterClientResponseResponseTypeDef](./type_defs.md#registerclientresponseresponsetypedef).
+[RegisterClientResponseTypeDef](./type_defs.md#registerclientresponsetypedef).
 
 ### start_device_authorization
 
@@ -155,7 +167,7 @@ Boto3 documentation:
 [SSOOIDC.Client.start_device_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.start_device_authorization)
 
 Arguments mapping described in
-[StartDeviceAuthorizationRequestTypeDef](./type_defs.md#startdeviceauthorizationrequesttypedef).
+[StartDeviceAuthorizationRequestRequestTypeDef](./type_defs.md#startdeviceauthorizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -164,4 +176,4 @@ Keyword-only arguments:
 - `startUrl`: `str` *(required)*
 
 Returns
-[StartDeviceAuthorizationResponseResponseTypeDef](./type_defs.md#startdeviceauthorizationresponseresponsetypedef).
+[StartDeviceAuthorizationResponseTypeDef](./type_defs.md#startdeviceauthorizationresponsetypedef).

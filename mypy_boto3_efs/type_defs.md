@@ -8,62 +8,65 @@ type annotations stubs module
 [mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
 
 - [Typed dictionaries for boto3 EFS module](#typed-dictionaries-for-boto3-efs-module)
-  - [AccessPointDescriptionResponseTypeDef](#accesspointdescriptionresponsetypedef)
-  - [BackupPolicyDescriptionResponseTypeDef](#backuppolicydescriptionresponsetypedef)
+  - [AccessPointDescriptionResponseMetadataTypeDef](#accesspointdescriptionresponsemetadatatypedef)
+  - [AccessPointDescriptionTypeDef](#accesspointdescriptiontypedef)
+  - [BackupPolicyDescriptionTypeDef](#backuppolicydescriptiontypedef)
   - [BackupPolicyTypeDef](#backuppolicytypedef)
-  - [CreateAccessPointRequestTypeDef](#createaccesspointrequesttypedef)
-  - [CreateFileSystemRequestTypeDef](#createfilesystemrequesttypedef)
-  - [CreateMountTargetRequestTypeDef](#createmounttargetrequesttypedef)
-  - [CreateTagsRequestTypeDef](#createtagsrequesttypedef)
+  - [CreateAccessPointRequestRequestTypeDef](#createaccesspointrequestrequesttypedef)
+  - [CreateFileSystemRequestRequestTypeDef](#createfilesystemrequestrequesttypedef)
+  - [CreateMountTargetRequestRequestTypeDef](#createmounttargetrequestrequesttypedef)
+  - [CreateTagsRequestRequestTypeDef](#createtagsrequestrequesttypedef)
   - [CreationInfoTypeDef](#creationinfotypedef)
-  - [DeleteAccessPointRequestTypeDef](#deleteaccesspointrequesttypedef)
-  - [DeleteFileSystemPolicyRequestTypeDef](#deletefilesystempolicyrequesttypedef)
-  - [DeleteFileSystemRequestTypeDef](#deletefilesystemrequesttypedef)
-  - [DeleteMountTargetRequestTypeDef](#deletemounttargetrequesttypedef)
-  - [DeleteTagsRequestTypeDef](#deletetagsrequesttypedef)
-  - [DescribeAccessPointsRequestTypeDef](#describeaccesspointsrequesttypedef)
-  - [DescribeAccessPointsResponseResponseTypeDef](#describeaccesspointsresponseresponsetypedef)
-  - [DescribeAccountPreferencesRequestTypeDef](#describeaccountpreferencesrequesttypedef)
-  - [DescribeAccountPreferencesResponseResponseTypeDef](#describeaccountpreferencesresponseresponsetypedef)
-  - [DescribeBackupPolicyRequestTypeDef](#describebackuppolicyrequesttypedef)
-  - [DescribeFileSystemPolicyRequestTypeDef](#describefilesystempolicyrequesttypedef)
-  - [DescribeFileSystemsRequestTypeDef](#describefilesystemsrequesttypedef)
-  - [DescribeFileSystemsResponseResponseTypeDef](#describefilesystemsresponseresponsetypedef)
-  - [DescribeLifecycleConfigurationRequestTypeDef](#describelifecycleconfigurationrequesttypedef)
-  - [DescribeMountTargetSecurityGroupsRequestTypeDef](#describemounttargetsecuritygroupsrequesttypedef)
-  - [DescribeMountTargetSecurityGroupsResponseResponseTypeDef](#describemounttargetsecuritygroupsresponseresponsetypedef)
-  - [DescribeMountTargetsRequestTypeDef](#describemounttargetsrequesttypedef)
-  - [DescribeMountTargetsResponseResponseTypeDef](#describemounttargetsresponseresponsetypedef)
-  - [DescribeTagsRequestTypeDef](#describetagsrequesttypedef)
-  - [DescribeTagsResponseResponseTypeDef](#describetagsresponseresponsetypedef)
-  - [FileSystemDescriptionResponseTypeDef](#filesystemdescriptionresponsetypedef)
-  - [FileSystemPolicyDescriptionResponseTypeDef](#filesystempolicydescriptionresponsetypedef)
+  - [DeleteAccessPointRequestRequestTypeDef](#deleteaccesspointrequestrequesttypedef)
+  - [DeleteFileSystemPolicyRequestRequestTypeDef](#deletefilesystempolicyrequestrequesttypedef)
+  - [DeleteFileSystemRequestRequestTypeDef](#deletefilesystemrequestrequesttypedef)
+  - [DeleteMountTargetRequestRequestTypeDef](#deletemounttargetrequestrequesttypedef)
+  - [DeleteTagsRequestRequestTypeDef](#deletetagsrequestrequesttypedef)
+  - [DescribeAccessPointsRequestRequestTypeDef](#describeaccesspointsrequestrequesttypedef)
+  - [DescribeAccessPointsResponseTypeDef](#describeaccesspointsresponsetypedef)
+  - [DescribeAccountPreferencesRequestRequestTypeDef](#describeaccountpreferencesrequestrequesttypedef)
+  - [DescribeAccountPreferencesResponseTypeDef](#describeaccountpreferencesresponsetypedef)
+  - [DescribeBackupPolicyRequestRequestTypeDef](#describebackuppolicyrequestrequesttypedef)
+  - [DescribeFileSystemPolicyRequestRequestTypeDef](#describefilesystempolicyrequestrequesttypedef)
+  - [DescribeFileSystemsRequestRequestTypeDef](#describefilesystemsrequestrequesttypedef)
+  - [DescribeFileSystemsResponseTypeDef](#describefilesystemsresponsetypedef)
+  - [DescribeLifecycleConfigurationRequestRequestTypeDef](#describelifecycleconfigurationrequestrequesttypedef)
+  - [DescribeMountTargetSecurityGroupsRequestRequestTypeDef](#describemounttargetsecuritygroupsrequestrequesttypedef)
+  - [DescribeMountTargetSecurityGroupsResponseTypeDef](#describemounttargetsecuritygroupsresponsetypedef)
+  - [DescribeMountTargetsRequestRequestTypeDef](#describemounttargetsrequestrequesttypedef)
+  - [DescribeMountTargetsResponseTypeDef](#describemounttargetsresponsetypedef)
+  - [DescribeTagsRequestRequestTypeDef](#describetagsrequestrequesttypedef)
+  - [DescribeTagsResponseTypeDef](#describetagsresponsetypedef)
+  - [FileSystemDescriptionResponseMetadataTypeDef](#filesystemdescriptionresponsemetadatatypedef)
+  - [FileSystemDescriptionTypeDef](#filesystemdescriptiontypedef)
+  - [FileSystemPolicyDescriptionTypeDef](#filesystempolicydescriptiontypedef)
   - [FileSystemSizeTypeDef](#filesystemsizetypedef)
-  - [LifecycleConfigurationDescriptionResponseTypeDef](#lifecycleconfigurationdescriptionresponsetypedef)
+  - [LifecycleConfigurationDescriptionTypeDef](#lifecycleconfigurationdescriptiontypedef)
   - [LifecyclePolicyTypeDef](#lifecyclepolicytypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ModifyMountTargetSecurityGroupsRequestTypeDef](#modifymounttargetsecuritygroupsrequesttypedef)
-  - [MountTargetDescriptionResponseTypeDef](#mounttargetdescriptionresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ModifyMountTargetSecurityGroupsRequestRequestTypeDef](#modifymounttargetsecuritygroupsrequestrequesttypedef)
+  - [MountTargetDescriptionResponseMetadataTypeDef](#mounttargetdescriptionresponsemetadatatypedef)
+  - [MountTargetDescriptionTypeDef](#mounttargetdescriptiontypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PosixUserTypeDef](#posixusertypedef)
-  - [PutAccountPreferencesRequestTypeDef](#putaccountpreferencesrequesttypedef)
-  - [PutAccountPreferencesResponseResponseTypeDef](#putaccountpreferencesresponseresponsetypedef)
-  - [PutBackupPolicyRequestTypeDef](#putbackuppolicyrequesttypedef)
-  - [PutFileSystemPolicyRequestTypeDef](#putfilesystempolicyrequesttypedef)
-  - [PutLifecycleConfigurationRequestTypeDef](#putlifecycleconfigurationrequesttypedef)
+  - [PutAccountPreferencesRequestRequestTypeDef](#putaccountpreferencesrequestrequesttypedef)
+  - [PutAccountPreferencesResponseTypeDef](#putaccountpreferencesresponsetypedef)
+  - [PutBackupPolicyRequestRequestTypeDef](#putbackuppolicyrequestrequesttypedef)
+  - [PutFileSystemPolicyRequestRequestTypeDef](#putfilesystempolicyrequestrequesttypedef)
+  - [PutLifecycleConfigurationRequestRequestTypeDef](#putlifecycleconfigurationrequestrequesttypedef)
   - [ResourceIdPreferenceTypeDef](#resourceidpreferencetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RootDirectoryTypeDef](#rootdirectorytypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateFileSystemRequestTypeDef](#updatefilesystemrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateFileSystemRequestRequestTypeDef](#updatefilesystemrequestrequesttypedef)
 
-## AccessPointDescriptionResponseTypeDef
+## AccessPointDescriptionResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import AccessPointDescriptionResponseTypeDef
+from mypy_boto3_efs.type_defs import AccessPointDescriptionResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -81,10 +84,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BackupPolicyDescriptionResponseTypeDef
+## AccessPointDescriptionTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import BackupPolicyDescriptionResponseTypeDef
+from mypy_boto3_efs.type_defs import AccessPointDescriptionTypeDef
+```
+
+Optional fields:
+
+- `ClientToken`: `str`
+- `Name`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `AccessPointId`: `str`
+- `AccessPointArn`: `str`
+- `FileSystemId`: `str`
+- `PosixUser`: [PosixUserTypeDef](./type_defs.md#posixusertypedef)
+- `RootDirectory`: [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
+- `OwnerId`: `str`
+- `LifeCycleState`: [LifeCycleStateType](./literals.md#lifecyclestatetype)
+
+## BackupPolicyDescriptionTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import BackupPolicyDescriptionTypeDef
 ```
 
 Required fields:
@@ -103,10 +125,10 @@ Required fields:
 
 - `Status`: [StatusType](./literals.md#statustype)
 
-## CreateAccessPointRequestTypeDef
+## CreateAccessPointRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import CreateAccessPointRequestTypeDef
+from mypy_boto3_efs.type_defs import CreateAccessPointRequestRequestTypeDef
 ```
 
 Required fields:
@@ -120,10 +142,10 @@ Optional fields:
 - `PosixUser`: [PosixUserTypeDef](./type_defs.md#posixusertypedef)
 - `RootDirectory`: [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
 
-## CreateFileSystemRequestTypeDef
+## CreateFileSystemRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import CreateFileSystemRequestTypeDef
+from mypy_boto3_efs.type_defs import CreateFileSystemRequestRequestTypeDef
 ```
 
 Required fields:
@@ -141,10 +163,10 @@ Optional fields:
 - `Backup`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateMountTargetRequestTypeDef
+## CreateMountTargetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import CreateMountTargetRequestTypeDef
+from mypy_boto3_efs.type_defs import CreateMountTargetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -157,10 +179,10 @@ Optional fields:
 - `IpAddress`: `str`
 - `SecurityGroups`: `List`\[`str`\]
 
-## CreateTagsRequestTypeDef
+## CreateTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import CreateTagsRequestTypeDef
+from mypy_boto3_efs.type_defs import CreateTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -180,50 +202,50 @@ Required fields:
 - `OwnerGid`: `int`
 - `Permissions`: `str`
 
-## DeleteAccessPointRequestTypeDef
+## DeleteAccessPointRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DeleteAccessPointRequestTypeDef
+from mypy_boto3_efs.type_defs import DeleteAccessPointRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AccessPointId`: `str`
 
-## DeleteFileSystemPolicyRequestTypeDef
+## DeleteFileSystemPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DeleteFileSystemPolicyRequestTypeDef
+from mypy_boto3_efs.type_defs import DeleteFileSystemPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FileSystemId`: `str`
 
-## DeleteFileSystemRequestTypeDef
+## DeleteFileSystemRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DeleteFileSystemRequestTypeDef
+from mypy_boto3_efs.type_defs import DeleteFileSystemRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FileSystemId`: `str`
 
-## DeleteMountTargetRequestTypeDef
+## DeleteMountTargetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DeleteMountTargetRequestTypeDef
+from mypy_boto3_efs.type_defs import DeleteMountTargetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MountTargetId`: `str`
 
-## DeleteTagsRequestTypeDef
+## DeleteTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DeleteTagsRequestTypeDef
+from mypy_boto3_efs.type_defs import DeleteTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -231,10 +253,10 @@ Required fields:
 - `FileSystemId`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## DescribeAccessPointsRequestTypeDef
+## DescribeAccessPointsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeAccessPointsRequestTypeDef
+from mypy_boto3_efs.type_defs import DescribeAccessPointsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -244,24 +266,24 @@ Optional fields:
 - `AccessPointId`: `str`
 - `FileSystemId`: `str`
 
-## DescribeAccessPointsResponseResponseTypeDef
+## DescribeAccessPointsResponseTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeAccessPointsResponseResponseTypeDef
+from mypy_boto3_efs.type_defs import DescribeAccessPointsResponseTypeDef
 ```
 
 Required fields:
 
 - `AccessPoints`:
-  `List`\[[AccessPointDescriptionResponseTypeDef](./type_defs.md#accesspointdescriptionresponsetypedef)\]
+  `List`\[[AccessPointDescriptionTypeDef](./type_defs.md#accesspointdescriptiontypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAccountPreferencesRequestTypeDef
+## DescribeAccountPreferencesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeAccountPreferencesRequestTypeDef
+from mypy_boto3_efs.type_defs import DescribeAccountPreferencesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -269,10 +291,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## DescribeAccountPreferencesResponseResponseTypeDef
+## DescribeAccountPreferencesResponseTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeAccountPreferencesResponseResponseTypeDef
+from mypy_boto3_efs.type_defs import DescribeAccountPreferencesResponseTypeDef
 ```
 
 Required fields:
@@ -283,30 +305,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBackupPolicyRequestTypeDef
+## DescribeBackupPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeBackupPolicyRequestTypeDef
+from mypy_boto3_efs.type_defs import DescribeBackupPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FileSystemId`: `str`
 
-## DescribeFileSystemPolicyRequestTypeDef
+## DescribeFileSystemPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeFileSystemPolicyRequestTypeDef
+from mypy_boto3_efs.type_defs import DescribeFileSystemPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FileSystemId`: `str`
 
-## DescribeFileSystemsRequestTypeDef
+## DescribeFileSystemsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeFileSystemsRequestTypeDef
+from mypy_boto3_efs.type_defs import DescribeFileSystemsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -316,45 +338,45 @@ Optional fields:
 - `CreationToken`: `str`
 - `FileSystemId`: `str`
 
-## DescribeFileSystemsResponseResponseTypeDef
+## DescribeFileSystemsResponseTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeFileSystemsResponseResponseTypeDef
+from mypy_boto3_efs.type_defs import DescribeFileSystemsResponseTypeDef
 ```
 
 Required fields:
 
 - `Marker`: `str`
 - `FileSystems`:
-  `List`\[[FileSystemDescriptionResponseTypeDef](./type_defs.md#filesystemdescriptionresponsetypedef)\]
+  `List`\[[FileSystemDescriptionTypeDef](./type_defs.md#filesystemdescriptiontypedef)\]
 - `NextMarker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLifecycleConfigurationRequestTypeDef
+## DescribeLifecycleConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeLifecycleConfigurationRequestTypeDef
+from mypy_boto3_efs.type_defs import DescribeLifecycleConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FileSystemId`: `str`
 
-## DescribeMountTargetSecurityGroupsRequestTypeDef
+## DescribeMountTargetSecurityGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeMountTargetSecurityGroupsRequestTypeDef
+from mypy_boto3_efs.type_defs import DescribeMountTargetSecurityGroupsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `MountTargetId`: `str`
 
-## DescribeMountTargetSecurityGroupsResponseResponseTypeDef
+## DescribeMountTargetSecurityGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeMountTargetSecurityGroupsResponseResponseTypeDef
+from mypy_boto3_efs.type_defs import DescribeMountTargetSecurityGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -363,10 +385,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMountTargetsRequestTypeDef
+## DescribeMountTargetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeMountTargetsRequestTypeDef
+from mypy_boto3_efs.type_defs import DescribeMountTargetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -377,25 +399,25 @@ Optional fields:
 - `MountTargetId`: `str`
 - `AccessPointId`: `str`
 
-## DescribeMountTargetsResponseResponseTypeDef
+## DescribeMountTargetsResponseTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeMountTargetsResponseResponseTypeDef
+from mypy_boto3_efs.type_defs import DescribeMountTargetsResponseTypeDef
 ```
 
 Required fields:
 
 - `Marker`: `str`
 - `MountTargets`:
-  `List`\[[MountTargetDescriptionResponseTypeDef](./type_defs.md#mounttargetdescriptionresponsetypedef)\]
+  `List`\[[MountTargetDescriptionTypeDef](./type_defs.md#mounttargetdescriptiontypedef)\]
 - `NextMarker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTagsRequestTypeDef
+## DescribeTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeTagsRequestTypeDef
+from mypy_boto3_efs.type_defs import DescribeTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -407,10 +429,10 @@ Optional fields:
 - `MaxItems`: `int`
 - `Marker`: `str`
 
-## DescribeTagsResponseResponseTypeDef
+## DescribeTagsResponseTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import DescribeTagsResponseResponseTypeDef
+from mypy_boto3_efs.type_defs import DescribeTagsResponseTypeDef
 ```
 
 Required fields:
@@ -421,10 +443,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## FileSystemDescriptionResponseTypeDef
+## FileSystemDescriptionResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import FileSystemDescriptionResponseTypeDef
+from mypy_boto3_efs.type_defs import FileSystemDescriptionResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -449,10 +471,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## FileSystemPolicyDescriptionResponseTypeDef
+## FileSystemDescriptionTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import FileSystemPolicyDescriptionResponseTypeDef
+from mypy_boto3_efs.type_defs import FileSystemDescriptionTypeDef
+```
+
+Required fields:
+
+- `OwnerId`: `str`
+- `CreationToken`: `str`
+- `FileSystemId`: `str`
+- `CreationTime`: `datetime`
+- `LifeCycleState`: [LifeCycleStateType](./literals.md#lifecyclestatetype)
+- `NumberOfMountTargets`: `int`
+- `SizeInBytes`: [FileSystemSizeTypeDef](./type_defs.md#filesystemsizetypedef)
+- `PerformanceMode`: [PerformanceModeType](./literals.md#performancemodetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Optional fields:
+
+- `FileSystemArn`: `str`
+- `Name`: `str`
+- `Encrypted`: `bool`
+- `KmsKeyId`: `str`
+- `ThroughputMode`: [ThroughputModeType](./literals.md#throughputmodetype)
+- `ProvisionedThroughputInMibps`: `float`
+- `AvailabilityZoneName`: `str`
+- `AvailabilityZoneId`: `str`
+
+## FileSystemPolicyDescriptionTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import FileSystemPolicyDescriptionTypeDef
 ```
 
 Required fields:
@@ -478,10 +529,10 @@ Optional fields:
 - `ValueInIA`: `int`
 - `ValueInStandard`: `int`
 
-## LifecycleConfigurationDescriptionResponseTypeDef
+## LifecycleConfigurationDescriptionTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import LifecycleConfigurationDescriptionResponseTypeDef
+from mypy_boto3_efs.type_defs import LifecycleConfigurationDescriptionTypeDef
 ```
 
 Required fields:
@@ -502,10 +553,10 @@ Optional fields:
 - `TransitionToIA`:
   [TransitionToIARulesType](./literals.md#transitiontoiarulestype)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_efs.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -517,10 +568,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_efs.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -530,10 +581,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyMountTargetSecurityGroupsRequestTypeDef
+## ModifyMountTargetSecurityGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import ModifyMountTargetSecurityGroupsRequestTypeDef
+from mypy_boto3_efs.type_defs import ModifyMountTargetSecurityGroupsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -544,10 +595,10 @@ Optional fields:
 
 - `SecurityGroups`: `List`\[`str`\]
 
-## MountTargetDescriptionResponseTypeDef
+## MountTargetDescriptionResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import MountTargetDescriptionResponseTypeDef
+from mypy_boto3_efs.type_defs import MountTargetDescriptionResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -564,6 +615,28 @@ Required fields:
 - `VpcId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## MountTargetDescriptionTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import MountTargetDescriptionTypeDef
+```
+
+Required fields:
+
+- `MountTargetId`: `str`
+- `FileSystemId`: `str`
+- `SubnetId`: `str`
+- `LifeCycleState`: [LifeCycleStateType](./literals.md#lifecyclestatetype)
+
+Optional fields:
+
+- `OwnerId`: `str`
+- `IpAddress`: `str`
+- `NetworkInterfaceId`: `str`
+- `AvailabilityZoneId`: `str`
+- `AvailabilityZoneName`: `str`
+- `VpcId`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -592,20 +665,20 @@ Optional fields:
 
 - `SecondaryGids`: `List`\[`int`\]
 
-## PutAccountPreferencesRequestTypeDef
+## PutAccountPreferencesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import PutAccountPreferencesRequestTypeDef
+from mypy_boto3_efs.type_defs import PutAccountPreferencesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceIdType`: [ResourceIdTypeType](./literals.md#resourceidtypetype)
 
-## PutAccountPreferencesResponseResponseTypeDef
+## PutAccountPreferencesResponseTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import PutAccountPreferencesResponseResponseTypeDef
+from mypy_boto3_efs.type_defs import PutAccountPreferencesResponseTypeDef
 ```
 
 Required fields:
@@ -615,10 +688,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutBackupPolicyRequestTypeDef
+## PutBackupPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import PutBackupPolicyRequestTypeDef
+from mypy_boto3_efs.type_defs import PutBackupPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -626,10 +699,10 @@ Required fields:
 - `FileSystemId`: `str`
 - `BackupPolicy`: [BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef)
 
-## PutFileSystemPolicyRequestTypeDef
+## PutFileSystemPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import PutFileSystemPolicyRequestTypeDef
+from mypy_boto3_efs.type_defs import PutFileSystemPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -641,10 +714,10 @@ Optional fields:
 
 - `BypassPolicyLockoutSafetyCheck`: `bool`
 
-## PutLifecycleConfigurationRequestTypeDef
+## PutLifecycleConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import PutLifecycleConfigurationRequestTypeDef
+from mypy_boto3_efs.type_defs import PutLifecycleConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -689,10 +762,10 @@ Optional fields:
 - `Path`: `str`
 - `CreationInfo`: [CreationInfoTypeDef](./type_defs.md#creationinfotypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_efs.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -711,10 +784,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_efs.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -722,10 +795,10 @@ Required fields:
 - `ResourceId`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateFileSystemRequestTypeDef
+## UpdateFileSystemRequestRequestTypeDef
 
 ```python
-from mypy_boto3_efs.type_defs import UpdateFileSystemRequestTypeDef
+from mypy_boto3_efs.type_defs import UpdateFileSystemRequestRequestTypeDef
 ```
 
 Required fields:

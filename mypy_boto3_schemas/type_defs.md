@@ -8,75 +8,75 @@ type annotations stubs module
 [mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 - [Typed dictionaries for boto3 Schemas module](#typed-dictionaries-for-boto3-schemas-module)
-  - [CreateDiscovererRequestTypeDef](#creatediscovererrequesttypedef)
-  - [CreateDiscovererResponseResponseTypeDef](#creatediscovererresponseresponsetypedef)
-  - [CreateRegistryRequestTypeDef](#createregistryrequesttypedef)
-  - [CreateRegistryResponseResponseTypeDef](#createregistryresponseresponsetypedef)
-  - [CreateSchemaRequestTypeDef](#createschemarequesttypedef)
-  - [CreateSchemaResponseResponseTypeDef](#createschemaresponseresponsetypedef)
-  - [DeleteDiscovererRequestTypeDef](#deletediscovererrequesttypedef)
-  - [DeleteRegistryRequestTypeDef](#deleteregistryrequesttypedef)
-  - [DeleteResourcePolicyRequestTypeDef](#deleteresourcepolicyrequesttypedef)
-  - [DeleteSchemaRequestTypeDef](#deleteschemarequesttypedef)
-  - [DeleteSchemaVersionRequestTypeDef](#deleteschemaversionrequesttypedef)
-  - [DescribeCodeBindingRequestTypeDef](#describecodebindingrequesttypedef)
-  - [DescribeCodeBindingResponseResponseTypeDef](#describecodebindingresponseresponsetypedef)
-  - [DescribeDiscovererRequestTypeDef](#describediscovererrequesttypedef)
-  - [DescribeDiscovererResponseResponseTypeDef](#describediscovererresponseresponsetypedef)
-  - [DescribeRegistryRequestTypeDef](#describeregistryrequesttypedef)
-  - [DescribeRegistryResponseResponseTypeDef](#describeregistryresponseresponsetypedef)
-  - [DescribeSchemaRequestTypeDef](#describeschemarequesttypedef)
-  - [DescribeSchemaResponseResponseTypeDef](#describeschemaresponseresponsetypedef)
+  - [CreateDiscovererRequestRequestTypeDef](#creatediscovererrequestrequesttypedef)
+  - [CreateDiscovererResponseTypeDef](#creatediscovererresponsetypedef)
+  - [CreateRegistryRequestRequestTypeDef](#createregistryrequestrequesttypedef)
+  - [CreateRegistryResponseTypeDef](#createregistryresponsetypedef)
+  - [CreateSchemaRequestRequestTypeDef](#createschemarequestrequesttypedef)
+  - [CreateSchemaResponseTypeDef](#createschemaresponsetypedef)
+  - [DeleteDiscovererRequestRequestTypeDef](#deletediscovererrequestrequesttypedef)
+  - [DeleteRegistryRequestRequestTypeDef](#deleteregistryrequestrequesttypedef)
+  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
+  - [DeleteSchemaRequestRequestTypeDef](#deleteschemarequestrequesttypedef)
+  - [DeleteSchemaVersionRequestRequestTypeDef](#deleteschemaversionrequestrequesttypedef)
+  - [DescribeCodeBindingRequestRequestTypeDef](#describecodebindingrequestrequesttypedef)
+  - [DescribeCodeBindingResponseTypeDef](#describecodebindingresponsetypedef)
+  - [DescribeDiscovererRequestRequestTypeDef](#describediscovererrequestrequesttypedef)
+  - [DescribeDiscovererResponseTypeDef](#describediscovererresponsetypedef)
+  - [DescribeRegistryRequestRequestTypeDef](#describeregistryrequestrequesttypedef)
+  - [DescribeRegistryResponseTypeDef](#describeregistryresponsetypedef)
+  - [DescribeSchemaRequestRequestTypeDef](#describeschemarequestrequesttypedef)
+  - [DescribeSchemaResponseTypeDef](#describeschemaresponsetypedef)
   - [DiscovererSummaryTypeDef](#discoverersummarytypedef)
-  - [ExportSchemaRequestTypeDef](#exportschemarequesttypedef)
-  - [ExportSchemaResponseResponseTypeDef](#exportschemaresponseresponsetypedef)
-  - [GetCodeBindingSourceRequestTypeDef](#getcodebindingsourcerequesttypedef)
-  - [GetCodeBindingSourceResponseResponseTypeDef](#getcodebindingsourceresponseresponsetypedef)
-  - [GetDiscoveredSchemaRequestTypeDef](#getdiscoveredschemarequesttypedef)
-  - [GetDiscoveredSchemaResponseResponseTypeDef](#getdiscoveredschemaresponseresponsetypedef)
-  - [GetResourcePolicyRequestTypeDef](#getresourcepolicyrequesttypedef)
-  - [GetResourcePolicyResponseResponseTypeDef](#getresourcepolicyresponseresponsetypedef)
-  - [ListDiscoverersRequestTypeDef](#listdiscoverersrequesttypedef)
-  - [ListDiscoverersResponseResponseTypeDef](#listdiscoverersresponseresponsetypedef)
-  - [ListRegistriesRequestTypeDef](#listregistriesrequesttypedef)
-  - [ListRegistriesResponseResponseTypeDef](#listregistriesresponseresponsetypedef)
-  - [ListSchemaVersionsRequestTypeDef](#listschemaversionsrequesttypedef)
-  - [ListSchemaVersionsResponseResponseTypeDef](#listschemaversionsresponseresponsetypedef)
-  - [ListSchemasRequestTypeDef](#listschemasrequesttypedef)
-  - [ListSchemasResponseResponseTypeDef](#listschemasresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ExportSchemaRequestRequestTypeDef](#exportschemarequestrequesttypedef)
+  - [ExportSchemaResponseTypeDef](#exportschemaresponsetypedef)
+  - [GetCodeBindingSourceRequestRequestTypeDef](#getcodebindingsourcerequestrequesttypedef)
+  - [GetCodeBindingSourceResponseTypeDef](#getcodebindingsourceresponsetypedef)
+  - [GetDiscoveredSchemaRequestRequestTypeDef](#getdiscoveredschemarequestrequesttypedef)
+  - [GetDiscoveredSchemaResponseTypeDef](#getdiscoveredschemaresponsetypedef)
+  - [GetResourcePolicyRequestRequestTypeDef](#getresourcepolicyrequestrequesttypedef)
+  - [GetResourcePolicyResponseTypeDef](#getresourcepolicyresponsetypedef)
+  - [ListDiscoverersRequestRequestTypeDef](#listdiscoverersrequestrequesttypedef)
+  - [ListDiscoverersResponseTypeDef](#listdiscoverersresponsetypedef)
+  - [ListRegistriesRequestRequestTypeDef](#listregistriesrequestrequesttypedef)
+  - [ListRegistriesResponseTypeDef](#listregistriesresponsetypedef)
+  - [ListSchemaVersionsRequestRequestTypeDef](#listschemaversionsrequestrequesttypedef)
+  - [ListSchemaVersionsResponseTypeDef](#listschemaversionsresponsetypedef)
+  - [ListSchemasRequestRequestTypeDef](#listschemasrequestrequesttypedef)
+  - [ListSchemasResponseTypeDef](#listschemasresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutCodeBindingRequestTypeDef](#putcodebindingrequesttypedef)
-  - [PutCodeBindingResponseResponseTypeDef](#putcodebindingresponseresponsetypedef)
-  - [PutResourcePolicyRequestTypeDef](#putresourcepolicyrequesttypedef)
-  - [PutResourcePolicyResponseResponseTypeDef](#putresourcepolicyresponseresponsetypedef)
+  - [PutCodeBindingRequestRequestTypeDef](#putcodebindingrequestrequesttypedef)
+  - [PutCodeBindingResponseTypeDef](#putcodebindingresponsetypedef)
+  - [PutResourcePolicyRequestRequestTypeDef](#putresourcepolicyrequestrequesttypedef)
+  - [PutResourcePolicyResponseTypeDef](#putresourcepolicyresponsetypedef)
   - [RegistrySummaryTypeDef](#registrysummarytypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SchemaSummaryTypeDef](#schemasummarytypedef)
   - [SchemaVersionSummaryTypeDef](#schemaversionsummarytypedef)
   - [SearchSchemaSummaryTypeDef](#searchschemasummarytypedef)
   - [SearchSchemaVersionSummaryTypeDef](#searchschemaversionsummarytypedef)
-  - [SearchSchemasRequestTypeDef](#searchschemasrequesttypedef)
-  - [SearchSchemasResponseResponseTypeDef](#searchschemasresponseresponsetypedef)
-  - [StartDiscovererRequestTypeDef](#startdiscovererrequesttypedef)
-  - [StartDiscovererResponseResponseTypeDef](#startdiscovererresponseresponsetypedef)
-  - [StopDiscovererRequestTypeDef](#stopdiscovererrequesttypedef)
-  - [StopDiscovererResponseResponseTypeDef](#stopdiscovererresponseresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateDiscovererRequestTypeDef](#updatediscovererrequesttypedef)
-  - [UpdateDiscovererResponseResponseTypeDef](#updatediscovererresponseresponsetypedef)
-  - [UpdateRegistryRequestTypeDef](#updateregistryrequesttypedef)
-  - [UpdateRegistryResponseResponseTypeDef](#updateregistryresponseresponsetypedef)
-  - [UpdateSchemaRequestTypeDef](#updateschemarequesttypedef)
-  - [UpdateSchemaResponseResponseTypeDef](#updateschemaresponseresponsetypedef)
+  - [SearchSchemasRequestRequestTypeDef](#searchschemasrequestrequesttypedef)
+  - [SearchSchemasResponseTypeDef](#searchschemasresponsetypedef)
+  - [StartDiscovererRequestRequestTypeDef](#startdiscovererrequestrequesttypedef)
+  - [StartDiscovererResponseTypeDef](#startdiscovererresponsetypedef)
+  - [StopDiscovererRequestRequestTypeDef](#stopdiscovererrequestrequesttypedef)
+  - [StopDiscovererResponseTypeDef](#stopdiscovererresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateDiscovererRequestRequestTypeDef](#updatediscovererrequestrequesttypedef)
+  - [UpdateDiscovererResponseTypeDef](#updatediscovererresponsetypedef)
+  - [UpdateRegistryRequestRequestTypeDef](#updateregistryrequestrequesttypedef)
+  - [UpdateRegistryResponseTypeDef](#updateregistryresponsetypedef)
+  - [UpdateSchemaRequestRequestTypeDef](#updateschemarequestrequesttypedef)
+  - [UpdateSchemaResponseTypeDef](#updateschemaresponsetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
-## CreateDiscovererRequestTypeDef
+## CreateDiscovererRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import CreateDiscovererRequestTypeDef
+from mypy_boto3_schemas.type_defs import CreateDiscovererRequestRequestTypeDef
 ```
 
 Required fields:
@@ -88,10 +88,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateDiscovererResponseResponseTypeDef
+## CreateDiscovererResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import CreateDiscovererResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import CreateDiscovererResponseTypeDef
 ```
 
 Required fields:
@@ -105,10 +105,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRegistryRequestTypeDef
+## CreateRegistryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import CreateRegistryRequestTypeDef
+from mypy_boto3_schemas.type_defs import CreateRegistryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -120,10 +120,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateRegistryResponseResponseTypeDef
+## CreateRegistryResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import CreateRegistryResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import CreateRegistryResponseTypeDef
 ```
 
 Required fields:
@@ -135,10 +135,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSchemaRequestTypeDef
+## CreateSchemaRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import CreateSchemaRequestTypeDef
+from mypy_boto3_schemas.type_defs import CreateSchemaRequestRequestTypeDef
 ```
 
 Required fields:
@@ -153,10 +153,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateSchemaResponseResponseTypeDef
+## CreateSchemaResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import CreateSchemaResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import CreateSchemaResponseTypeDef
 ```
 
 Required fields:
@@ -172,40 +172,40 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDiscovererRequestTypeDef
+## DeleteDiscovererRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DeleteDiscovererRequestTypeDef
+from mypy_boto3_schemas.type_defs import DeleteDiscovererRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DiscovererId`: `str`
 
-## DeleteRegistryRequestTypeDef
+## DeleteRegistryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DeleteRegistryRequestTypeDef
+from mypy_boto3_schemas.type_defs import DeleteRegistryRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RegistryName`: `str`
 
-## DeleteResourcePolicyRequestTypeDef
+## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DeleteResourcePolicyRequestTypeDef
+from mypy_boto3_schemas.type_defs import DeleteResourcePolicyRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `RegistryName`: `str`
 
-## DeleteSchemaRequestTypeDef
+## DeleteSchemaRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DeleteSchemaRequestTypeDef
+from mypy_boto3_schemas.type_defs import DeleteSchemaRequestRequestTypeDef
 ```
 
 Required fields:
@@ -213,10 +213,10 @@ Required fields:
 - `RegistryName`: `str`
 - `SchemaName`: `str`
 
-## DeleteSchemaVersionRequestTypeDef
+## DeleteSchemaVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DeleteSchemaVersionRequestTypeDef
+from mypy_boto3_schemas.type_defs import DeleteSchemaVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -225,10 +225,10 @@ Required fields:
 - `SchemaName`: `str`
 - `SchemaVersion`: `str`
 
-## DescribeCodeBindingRequestTypeDef
+## DescribeCodeBindingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DescribeCodeBindingRequestTypeDef
+from mypy_boto3_schemas.type_defs import DescribeCodeBindingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -241,10 +241,10 @@ Optional fields:
 
 - `SchemaVersion`: `str`
 
-## DescribeCodeBindingResponseResponseTypeDef
+## DescribeCodeBindingResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DescribeCodeBindingResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import DescribeCodeBindingResponseTypeDef
 ```
 
 Required fields:
@@ -256,20 +256,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDiscovererRequestTypeDef
+## DescribeDiscovererRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DescribeDiscovererRequestTypeDef
+from mypy_boto3_schemas.type_defs import DescribeDiscovererRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DiscovererId`: `str`
 
-## DescribeDiscovererResponseResponseTypeDef
+## DescribeDiscovererResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DescribeDiscovererResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import DescribeDiscovererResponseTypeDef
 ```
 
 Required fields:
@@ -283,20 +283,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRegistryRequestTypeDef
+## DescribeRegistryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DescribeRegistryRequestTypeDef
+from mypy_boto3_schemas.type_defs import DescribeRegistryRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RegistryName`: `str`
 
-## DescribeRegistryResponseResponseTypeDef
+## DescribeRegistryResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DescribeRegistryResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import DescribeRegistryResponseTypeDef
 ```
 
 Required fields:
@@ -308,10 +308,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSchemaRequestTypeDef
+## DescribeSchemaRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DescribeSchemaRequestTypeDef
+from mypy_boto3_schemas.type_defs import DescribeSchemaRequestRequestTypeDef
 ```
 
 Required fields:
@@ -323,10 +323,10 @@ Optional fields:
 
 - `SchemaVersion`: `str`
 
-## DescribeSchemaResponseResponseTypeDef
+## DescribeSchemaResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import DescribeSchemaResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import DescribeSchemaResponseTypeDef
 ```
 
 Required fields:
@@ -357,10 +357,10 @@ Optional fields:
 - `State`: [DiscovererStateType](./literals.md#discovererstatetype)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## ExportSchemaRequestTypeDef
+## ExportSchemaRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import ExportSchemaRequestTypeDef
+from mypy_boto3_schemas.type_defs import ExportSchemaRequestRequestTypeDef
 ```
 
 Required fields:
@@ -373,10 +373,10 @@ Optional fields:
 
 - `SchemaVersion`: `str`
 
-## ExportSchemaResponseResponseTypeDef
+## ExportSchemaResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import ExportSchemaResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import ExportSchemaResponseTypeDef
 ```
 
 Required fields:
@@ -389,10 +389,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCodeBindingSourceRequestTypeDef
+## GetCodeBindingSourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import GetCodeBindingSourceRequestTypeDef
+from mypy_boto3_schemas.type_defs import GetCodeBindingSourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -405,10 +405,10 @@ Optional fields:
 
 - `SchemaVersion`: `str`
 
-## GetCodeBindingSourceResponseResponseTypeDef
+## GetCodeBindingSourceResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import GetCodeBindingSourceResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import GetCodeBindingSourceResponseTypeDef
 ```
 
 Required fields:
@@ -417,10 +417,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDiscoveredSchemaRequestTypeDef
+## GetDiscoveredSchemaRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import GetDiscoveredSchemaRequestTypeDef
+from mypy_boto3_schemas.type_defs import GetDiscoveredSchemaRequestRequestTypeDef
 ```
 
 Required fields:
@@ -428,10 +428,10 @@ Required fields:
 - `Events`: `List`\[`str`\]
 - `Type`: [TypeType](./literals.md#typetype)
 
-## GetDiscoveredSchemaResponseResponseTypeDef
+## GetDiscoveredSchemaResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import GetDiscoveredSchemaResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import GetDiscoveredSchemaResponseTypeDef
 ```
 
 Required fields:
@@ -440,20 +440,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourcePolicyRequestTypeDef
+## GetResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import GetResourcePolicyRequestTypeDef
+from mypy_boto3_schemas.type_defs import GetResourcePolicyRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `RegistryName`: `str`
 
-## GetResourcePolicyResponseResponseTypeDef
+## GetResourcePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import GetResourcePolicyResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import GetResourcePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -463,10 +463,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDiscoverersRequestTypeDef
+## ListDiscoverersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import ListDiscoverersRequestTypeDef
+from mypy_boto3_schemas.type_defs import ListDiscoverersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -476,10 +476,10 @@ Optional fields:
 - `NextToken`: `str`
 - `SourceArnPrefix`: `str`
 
-## ListDiscoverersResponseResponseTypeDef
+## ListDiscoverersResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import ListDiscoverersResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import ListDiscoverersResponseTypeDef
 ```
 
 Required fields:
@@ -490,10 +490,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRegistriesRequestTypeDef
+## ListRegistriesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import ListRegistriesRequestTypeDef
+from mypy_boto3_schemas.type_defs import ListRegistriesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -503,10 +503,10 @@ Optional fields:
 - `RegistryNamePrefix`: `str`
 - `Scope`: `str`
 
-## ListRegistriesResponseResponseTypeDef
+## ListRegistriesResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import ListRegistriesResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import ListRegistriesResponseTypeDef
 ```
 
 Required fields:
@@ -517,10 +517,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSchemaVersionsRequestTypeDef
+## ListSchemaVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import ListSchemaVersionsRequestTypeDef
+from mypy_boto3_schemas.type_defs import ListSchemaVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -533,10 +533,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## ListSchemaVersionsResponseResponseTypeDef
+## ListSchemaVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import ListSchemaVersionsResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import ListSchemaVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -547,10 +547,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSchemasRequestTypeDef
+## ListSchemasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import ListSchemasRequestTypeDef
+from mypy_boto3_schemas.type_defs import ListSchemasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -563,10 +563,10 @@ Optional fields:
 - `NextToken`: `str`
 - `SchemaNamePrefix`: `str`
 
-## ListSchemasResponseResponseTypeDef
+## ListSchemasResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import ListSchemasResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import ListSchemasResponseTypeDef
 ```
 
 Required fields:
@@ -577,20 +577,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_schemas.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -611,10 +611,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutCodeBindingRequestTypeDef
+## PutCodeBindingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import PutCodeBindingRequestTypeDef
+from mypy_boto3_schemas.type_defs import PutCodeBindingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -627,10 +627,10 @@ Optional fields:
 
 - `SchemaVersion`: `str`
 
-## PutCodeBindingResponseResponseTypeDef
+## PutCodeBindingResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import PutCodeBindingResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import PutCodeBindingResponseTypeDef
 ```
 
 Required fields:
@@ -642,10 +642,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutResourcePolicyRequestTypeDef
+## PutResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import PutResourcePolicyRequestTypeDef
+from mypy_boto3_schemas.type_defs import PutResourcePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -657,10 +657,10 @@ Optional fields:
 - `RegistryName`: `str`
 - `RevisionId`: `str`
 
-## PutResourcePolicyResponseResponseTypeDef
+## PutResourcePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import PutResourcePolicyResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import PutResourcePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -749,10 +749,10 @@ Optional fields:
 - `SchemaVersion`: `str`
 - `Type`: [TypeType](./literals.md#typetype)
 
-## SearchSchemasRequestTypeDef
+## SearchSchemasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import SearchSchemasRequestTypeDef
+from mypy_boto3_schemas.type_defs import SearchSchemasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -765,10 +765,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## SearchSchemasResponseResponseTypeDef
+## SearchSchemasResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import SearchSchemasResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import SearchSchemasResponseTypeDef
 ```
 
 Required fields:
@@ -779,43 +779,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartDiscovererRequestTypeDef
+## StartDiscovererRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import StartDiscovererRequestTypeDef
+from mypy_boto3_schemas.type_defs import StartDiscovererRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DiscovererId`: `str`
 
-## StartDiscovererResponseResponseTypeDef
+## StartDiscovererResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import StartDiscovererResponseResponseTypeDef
-```
-
-Required fields:
-
-- `DiscovererId`: `str`
-- `State`: [DiscovererStateType](./literals.md#discovererstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## StopDiscovererRequestTypeDef
-
-```python
-from mypy_boto3_schemas.type_defs import StopDiscovererRequestTypeDef
-```
-
-Required fields:
-
-- `DiscovererId`: `str`
-
-## StopDiscovererResponseResponseTypeDef
-
-```python
-from mypy_boto3_schemas.type_defs import StopDiscovererResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import StartDiscovererResponseTypeDef
 ```
 
 Required fields:
@@ -825,10 +802,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## StopDiscovererRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_schemas.type_defs import StopDiscovererRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DiscovererId`: `str`
+
+## StopDiscovererResponseTypeDef
+
+```python
+from mypy_boto3_schemas.type_defs import StopDiscovererResponseTypeDef
+```
+
+Required fields:
+
+- `DiscovererId`: `str`
+- `State`: [DiscovererStateType](./literals.md#discovererstatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_schemas.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -836,10 +836,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_schemas.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -847,10 +847,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateDiscovererRequestTypeDef
+## UpdateDiscovererRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import UpdateDiscovererRequestTypeDef
+from mypy_boto3_schemas.type_defs import UpdateDiscovererRequestRequestTypeDef
 ```
 
 Required fields:
@@ -861,10 +861,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## UpdateDiscovererResponseResponseTypeDef
+## UpdateDiscovererResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import UpdateDiscovererResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import UpdateDiscovererResponseTypeDef
 ```
 
 Required fields:
@@ -878,10 +878,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRegistryRequestTypeDef
+## UpdateRegistryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import UpdateRegistryRequestTypeDef
+from mypy_boto3_schemas.type_defs import UpdateRegistryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -892,10 +892,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## UpdateRegistryResponseResponseTypeDef
+## UpdateRegistryResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import UpdateRegistryResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import UpdateRegistryResponseTypeDef
 ```
 
 Required fields:
@@ -907,10 +907,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSchemaRequestTypeDef
+## UpdateSchemaRequestRequestTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import UpdateSchemaRequestTypeDef
+from mypy_boto3_schemas.type_defs import UpdateSchemaRequestRequestTypeDef
 ```
 
 Required fields:
@@ -925,10 +925,10 @@ Optional fields:
 - `Description`: `str`
 - `Type`: [TypeType](./literals.md#typetype)
 
-## UpdateSchemaResponseResponseTypeDef
+## UpdateSchemaResponseTypeDef
 
 ```python
-from mypy_boto3_schemas.type_defs import UpdateSchemaResponseResponseTypeDef
+from mypy_boto3_schemas.type_defs import UpdateSchemaResponseTypeDef
 ```
 
 Required fields:

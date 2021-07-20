@@ -35,7 +35,7 @@ Arguments for `ListApplicationSnapshotsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationSnapshotsPaginator.paginate` returns
-`Iterator`\[[ListApplicationSnapshotsResponseResponseTypeDef](./type_defs.md#listapplicationsnapshotsresponseresponsetypedef)\].
+`Iterator`\[[ListApplicationSnapshotsResponseTypeDef](./type_defs.md#listapplicationsnapshotsresponsetypedef)\].
 
 ## ListApplicationsPaginator
 
@@ -60,4 +60,4 @@ Arguments for `ListApplicationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationsPaginator.paginate` returns
-`Iterator`\[[ListApplicationsResponseResponseTypeDef](./type_defs.md#listapplicationsresponseresponsetypedef)\].
+`Iterator`\[[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)\].

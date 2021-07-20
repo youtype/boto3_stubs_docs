@@ -45,7 +45,7 @@ Arguments for `ListAccountAssignmentCreationStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountAssignmentCreationStatusPaginator.paginate` returns
-`Iterator`\[[ListAccountAssignmentCreationStatusResponseResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponseresponsetypedef)\].
+`Iterator`\[[ListAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponsetypedef)\].
 
 ## ListAccountAssignmentDeletionStatusPaginator
 
@@ -73,7 +73,7 @@ Arguments for `ListAccountAssignmentDeletionStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountAssignmentDeletionStatusPaginator.paginate` returns
-`Iterator`\[[ListAccountAssignmentDeletionStatusResponseResponseTypeDef](./type_defs.md#listaccountassignmentdeletionstatusresponseresponsetypedef)\].
+`Iterator`\[[ListAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#listaccountassignmentdeletionstatusresponsetypedef)\].
 
 ## ListAccountAssignmentsPaginator
 
@@ -101,7 +101,7 @@ Arguments for `ListAccountAssignmentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountAssignmentsPaginator.paginate` returns
-`Iterator`\[[ListAccountAssignmentsResponseResponseTypeDef](./type_defs.md#listaccountassignmentsresponseresponsetypedef)\].
+`Iterator`\[[ListAccountAssignmentsResponseTypeDef](./type_defs.md#listaccountassignmentsresponsetypedef)\].
 
 ## ListAccountsForProvisionedPermissionSetPaginator
 
@@ -131,7 +131,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountsForProvisionedPermissionSetPaginator.paginate` returns
-`Iterator`\[[ListAccountsForProvisionedPermissionSetResponseResponseTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetresponseresponsetypedef)\].
+`Iterator`\[[ListAccountsForProvisionedPermissionSetResponseTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetresponsetypedef)\].
 
 ## ListInstancesPaginator
 
@@ -156,7 +156,7 @@ Arguments for `ListInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInstancesPaginator.paginate` returns
-`Iterator`\[[ListInstancesResponseResponseTypeDef](./type_defs.md#listinstancesresponseresponsetypedef)\].
+`Iterator`\[[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef)\].
 
 ## ListManagedPoliciesInPermissionSetPaginator
 
@@ -183,7 +183,7 @@ Arguments for `ListManagedPoliciesInPermissionSetPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListManagedPoliciesInPermissionSetPaginator.paginate` returns
-`Iterator`\[[ListManagedPoliciesInPermissionSetResponseResponseTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetresponseresponsetypedef)\].
+`Iterator`\[[ListManagedPoliciesInPermissionSetResponseTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetresponsetypedef)\].
 
 ## ListPermissionSetProvisioningStatusPaginator
 
@@ -211,7 +211,7 @@ Arguments for `ListPermissionSetProvisioningStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPermissionSetProvisioningStatusPaginator.paginate` returns
-`Iterator`\[[ListPermissionSetProvisioningStatusResponseResponseTypeDef](./type_defs.md#listpermissionsetprovisioningstatusresponseresponsetypedef)\].
+`Iterator`\[[ListPermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#listpermissionsetprovisioningstatusresponsetypedef)\].
 
 ## ListPermissionSetsPaginator
 
@@ -237,7 +237,7 @@ Arguments for `ListPermissionSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPermissionSetsPaginator.paginate` returns
-`Iterator`\[[ListPermissionSetsResponseResponseTypeDef](./type_defs.md#listpermissionsetsresponseresponsetypedef)\].
+`Iterator`\[[ListPermissionSetsResponseTypeDef](./type_defs.md#listpermissionsetsresponsetypedef)\].
 
 ## ListPermissionSetsProvisionedToAccountPaginator
 
@@ -267,7 +267,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPermissionSetsProvisionedToAccountPaginator.paginate` returns
-`Iterator`\[[ListPermissionSetsProvisionedToAccountResponseResponseTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountresponseresponsetypedef)\].
+`Iterator`\[[ListPermissionSetsProvisionedToAccountResponseTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -294,4 +294,4 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].

@@ -8,18 +8,18 @@ type annotations stubs module
 [mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 - [Typed dictionaries for boto3 KinesisAnalyticsV2 module](#typed-dictionaries-for-boto3-kinesisanalyticsv2-module)
-  - [AddApplicationCloudWatchLoggingOptionRequestTypeDef](#addapplicationcloudwatchloggingoptionrequesttypedef)
-  - [AddApplicationCloudWatchLoggingOptionResponseResponseTypeDef](#addapplicationcloudwatchloggingoptionresponseresponsetypedef)
-  - [AddApplicationInputProcessingConfigurationRequestTypeDef](#addapplicationinputprocessingconfigurationrequesttypedef)
-  - [AddApplicationInputProcessingConfigurationResponseResponseTypeDef](#addapplicationinputprocessingconfigurationresponseresponsetypedef)
-  - [AddApplicationInputRequestTypeDef](#addapplicationinputrequesttypedef)
-  - [AddApplicationInputResponseResponseTypeDef](#addapplicationinputresponseresponsetypedef)
-  - [AddApplicationOutputRequestTypeDef](#addapplicationoutputrequesttypedef)
-  - [AddApplicationOutputResponseResponseTypeDef](#addapplicationoutputresponseresponsetypedef)
-  - [AddApplicationReferenceDataSourceRequestTypeDef](#addapplicationreferencedatasourcerequesttypedef)
-  - [AddApplicationReferenceDataSourceResponseResponseTypeDef](#addapplicationreferencedatasourceresponseresponsetypedef)
-  - [AddApplicationVpcConfigurationRequestTypeDef](#addapplicationvpcconfigurationrequesttypedef)
-  - [AddApplicationVpcConfigurationResponseResponseTypeDef](#addapplicationvpcconfigurationresponseresponsetypedef)
+  - [AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef](#addapplicationcloudwatchloggingoptionrequestrequesttypedef)
+  - [AddApplicationCloudWatchLoggingOptionResponseTypeDef](#addapplicationcloudwatchloggingoptionresponsetypedef)
+  - [AddApplicationInputProcessingConfigurationRequestRequestTypeDef](#addapplicationinputprocessingconfigurationrequestrequesttypedef)
+  - [AddApplicationInputProcessingConfigurationResponseTypeDef](#addapplicationinputprocessingconfigurationresponsetypedef)
+  - [AddApplicationInputRequestRequestTypeDef](#addapplicationinputrequestrequesttypedef)
+  - [AddApplicationInputResponseTypeDef](#addapplicationinputresponsetypedef)
+  - [AddApplicationOutputRequestRequestTypeDef](#addapplicationoutputrequestrequesttypedef)
+  - [AddApplicationOutputResponseTypeDef](#addapplicationoutputresponsetypedef)
+  - [AddApplicationReferenceDataSourceRequestRequestTypeDef](#addapplicationreferencedatasourcerequestrequesttypedef)
+  - [AddApplicationReferenceDataSourceResponseTypeDef](#addapplicationreferencedatasourceresponsetypedef)
+  - [AddApplicationVpcConfigurationRequestRequestTypeDef](#addapplicationvpcconfigurationrequestrequesttypedef)
+  - [AddApplicationVpcConfigurationResponseTypeDef](#addapplicationvpcconfigurationresponsetypedef)
   - [ApplicationCodeConfigurationDescriptionTypeDef](#applicationcodeconfigurationdescriptiontypedef)
   - [ApplicationCodeConfigurationTypeDef](#applicationcodeconfigurationtypedef)
   - [ApplicationCodeConfigurationUpdateTypeDef](#applicationcodeconfigurationupdatetypedef)
@@ -48,37 +48,37 @@ type annotations stubs module
   - [CodeContentDescriptionTypeDef](#codecontentdescriptiontypedef)
   - [CodeContentTypeDef](#codecontenttypedef)
   - [CodeContentUpdateTypeDef](#codecontentupdatetypedef)
-  - [CreateApplicationPresignedUrlRequestTypeDef](#createapplicationpresignedurlrequesttypedef)
-  - [CreateApplicationPresignedUrlResponseResponseTypeDef](#createapplicationpresignedurlresponseresponsetypedef)
-  - [CreateApplicationRequestTypeDef](#createapplicationrequesttypedef)
-  - [CreateApplicationResponseResponseTypeDef](#createapplicationresponseresponsetypedef)
-  - [CreateApplicationSnapshotRequestTypeDef](#createapplicationsnapshotrequesttypedef)
+  - [CreateApplicationPresignedUrlRequestRequestTypeDef](#createapplicationpresignedurlrequestrequesttypedef)
+  - [CreateApplicationPresignedUrlResponseTypeDef](#createapplicationpresignedurlresponsetypedef)
+  - [CreateApplicationRequestRequestTypeDef](#createapplicationrequestrequesttypedef)
+  - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
+  - [CreateApplicationSnapshotRequestRequestTypeDef](#createapplicationsnapshotrequestrequesttypedef)
   - [CustomArtifactConfigurationDescriptionTypeDef](#customartifactconfigurationdescriptiontypedef)
   - [CustomArtifactConfigurationTypeDef](#customartifactconfigurationtypedef)
-  - [DeleteApplicationCloudWatchLoggingOptionRequestTypeDef](#deleteapplicationcloudwatchloggingoptionrequesttypedef)
-  - [DeleteApplicationCloudWatchLoggingOptionResponseResponseTypeDef](#deleteapplicationcloudwatchloggingoptionresponseresponsetypedef)
-  - [DeleteApplicationInputProcessingConfigurationRequestTypeDef](#deleteapplicationinputprocessingconfigurationrequesttypedef)
-  - [DeleteApplicationInputProcessingConfigurationResponseResponseTypeDef](#deleteapplicationinputprocessingconfigurationresponseresponsetypedef)
-  - [DeleteApplicationOutputRequestTypeDef](#deleteapplicationoutputrequesttypedef)
-  - [DeleteApplicationOutputResponseResponseTypeDef](#deleteapplicationoutputresponseresponsetypedef)
-  - [DeleteApplicationReferenceDataSourceRequestTypeDef](#deleteapplicationreferencedatasourcerequesttypedef)
-  - [DeleteApplicationReferenceDataSourceResponseResponseTypeDef](#deleteapplicationreferencedatasourceresponseresponsetypedef)
-  - [DeleteApplicationRequestTypeDef](#deleteapplicationrequesttypedef)
-  - [DeleteApplicationSnapshotRequestTypeDef](#deleteapplicationsnapshotrequesttypedef)
-  - [DeleteApplicationVpcConfigurationRequestTypeDef](#deleteapplicationvpcconfigurationrequesttypedef)
-  - [DeleteApplicationVpcConfigurationResponseResponseTypeDef](#deleteapplicationvpcconfigurationresponseresponsetypedef)
+  - [DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef](#deleteapplicationcloudwatchloggingoptionrequestrequesttypedef)
+  - [DeleteApplicationCloudWatchLoggingOptionResponseTypeDef](#deleteapplicationcloudwatchloggingoptionresponsetypedef)
+  - [DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef](#deleteapplicationinputprocessingconfigurationrequestrequesttypedef)
+  - [DeleteApplicationInputProcessingConfigurationResponseTypeDef](#deleteapplicationinputprocessingconfigurationresponsetypedef)
+  - [DeleteApplicationOutputRequestRequestTypeDef](#deleteapplicationoutputrequestrequesttypedef)
+  - [DeleteApplicationOutputResponseTypeDef](#deleteapplicationoutputresponsetypedef)
+  - [DeleteApplicationReferenceDataSourceRequestRequestTypeDef](#deleteapplicationreferencedatasourcerequestrequesttypedef)
+  - [DeleteApplicationReferenceDataSourceResponseTypeDef](#deleteapplicationreferencedatasourceresponsetypedef)
+  - [DeleteApplicationRequestRequestTypeDef](#deleteapplicationrequestrequesttypedef)
+  - [DeleteApplicationSnapshotRequestRequestTypeDef](#deleteapplicationsnapshotrequestrequesttypedef)
+  - [DeleteApplicationVpcConfigurationRequestRequestTypeDef](#deleteapplicationvpcconfigurationrequestrequesttypedef)
+  - [DeleteApplicationVpcConfigurationResponseTypeDef](#deleteapplicationvpcconfigurationresponsetypedef)
   - [DeployAsApplicationConfigurationDescriptionTypeDef](#deployasapplicationconfigurationdescriptiontypedef)
   - [DeployAsApplicationConfigurationTypeDef](#deployasapplicationconfigurationtypedef)
   - [DeployAsApplicationConfigurationUpdateTypeDef](#deployasapplicationconfigurationupdatetypedef)
-  - [DescribeApplicationRequestTypeDef](#describeapplicationrequesttypedef)
-  - [DescribeApplicationResponseResponseTypeDef](#describeapplicationresponseresponsetypedef)
-  - [DescribeApplicationSnapshotRequestTypeDef](#describeapplicationsnapshotrequesttypedef)
-  - [DescribeApplicationSnapshotResponseResponseTypeDef](#describeapplicationsnapshotresponseresponsetypedef)
-  - [DescribeApplicationVersionRequestTypeDef](#describeapplicationversionrequesttypedef)
-  - [DescribeApplicationVersionResponseResponseTypeDef](#describeapplicationversionresponseresponsetypedef)
+  - [DescribeApplicationRequestRequestTypeDef](#describeapplicationrequestrequesttypedef)
+  - [DescribeApplicationResponseTypeDef](#describeapplicationresponsetypedef)
+  - [DescribeApplicationSnapshotRequestRequestTypeDef](#describeapplicationsnapshotrequestrequesttypedef)
+  - [DescribeApplicationSnapshotResponseTypeDef](#describeapplicationsnapshotresponsetypedef)
+  - [DescribeApplicationVersionRequestRequestTypeDef](#describeapplicationversionrequestrequesttypedef)
+  - [DescribeApplicationVersionResponseTypeDef](#describeapplicationversionresponsetypedef)
   - [DestinationSchemaTypeDef](#destinationschematypedef)
-  - [DiscoverInputSchemaRequestTypeDef](#discoverinputschemarequesttypedef)
-  - [DiscoverInputSchemaResponseResponseTypeDef](#discoverinputschemaresponseresponsetypedef)
+  - [DiscoverInputSchemaRequestRequestTypeDef](#discoverinputschemarequestrequesttypedef)
+  - [DiscoverInputSchemaResponseTypeDef](#discoverinputschemaresponsetypedef)
   - [EnvironmentPropertiesTypeDef](#environmentpropertiestypedef)
   - [EnvironmentPropertyDescriptionsTypeDef](#environmentpropertydescriptionstypedef)
   - [EnvironmentPropertyUpdatesTypeDef](#environmentpropertyupdatestypedef)
@@ -118,14 +118,14 @@ type annotations stubs module
   - [LambdaOutputDescriptionTypeDef](#lambdaoutputdescriptiontypedef)
   - [LambdaOutputTypeDef](#lambdaoutputtypedef)
   - [LambdaOutputUpdateTypeDef](#lambdaoutputupdatetypedef)
-  - [ListApplicationSnapshotsRequestTypeDef](#listapplicationsnapshotsrequesttypedef)
-  - [ListApplicationSnapshotsResponseResponseTypeDef](#listapplicationsnapshotsresponseresponsetypedef)
-  - [ListApplicationVersionsRequestTypeDef](#listapplicationversionsrequesttypedef)
-  - [ListApplicationVersionsResponseResponseTypeDef](#listapplicationversionsresponseresponsetypedef)
-  - [ListApplicationsRequestTypeDef](#listapplicationsrequesttypedef)
-  - [ListApplicationsResponseResponseTypeDef](#listapplicationsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListApplicationSnapshotsRequestRequestTypeDef](#listapplicationsnapshotsrequestrequesttypedef)
+  - [ListApplicationSnapshotsResponseTypeDef](#listapplicationsnapshotsresponsetypedef)
+  - [ListApplicationVersionsRequestRequestTypeDef](#listapplicationversionsrequestrequesttypedef)
+  - [ListApplicationVersionsResponseTypeDef](#listapplicationversionsresponsetypedef)
+  - [ListApplicationsRequestRequestTypeDef](#listapplicationsrequestrequesttypedef)
+  - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MappingParametersTypeDef](#mappingparameterstypedef)
   - [MavenReferenceTypeDef](#mavenreferencetypedef)
   - [MonitoringConfigurationDescriptionTypeDef](#monitoringconfigurationdescriptiontypedef)
@@ -145,8 +145,8 @@ type annotations stubs module
   - [ReferenceDataSourceTypeDef](#referencedatasourcetypedef)
   - [ReferenceDataSourceUpdateTypeDef](#referencedatasourceupdatetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RollbackApplicationRequestTypeDef](#rollbackapplicationrequesttypedef)
-  - [RollbackApplicationResponseResponseTypeDef](#rollbackapplicationresponseresponsetypedef)
+  - [RollbackApplicationRequestRequestTypeDef](#rollbackapplicationrequestrequesttypedef)
+  - [RollbackApplicationResponseTypeDef](#rollbackapplicationresponsetypedef)
   - [RunConfigurationDescriptionTypeDef](#runconfigurationdescriptiontypedef)
   - [RunConfigurationTypeDef](#runconfigurationtypedef)
   - [RunConfigurationUpdateTypeDef](#runconfigurationupdatetypedef)
@@ -166,15 +166,15 @@ type annotations stubs module
   - [SqlApplicationConfigurationTypeDef](#sqlapplicationconfigurationtypedef)
   - [SqlApplicationConfigurationUpdateTypeDef](#sqlapplicationconfigurationupdatetypedef)
   - [SqlRunConfigurationTypeDef](#sqlrunconfigurationtypedef)
-  - [StartApplicationRequestTypeDef](#startapplicationrequesttypedef)
-  - [StopApplicationRequestTypeDef](#stopapplicationrequesttypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [StartApplicationRequestRequestTypeDef](#startapplicationrequestrequesttypedef)
+  - [StopApplicationRequestRequestTypeDef](#stopapplicationrequestrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateApplicationMaintenanceConfigurationRequestTypeDef](#updateapplicationmaintenanceconfigurationrequesttypedef)
-  - [UpdateApplicationMaintenanceConfigurationResponseResponseTypeDef](#updateapplicationmaintenanceconfigurationresponseresponsetypedef)
-  - [UpdateApplicationRequestTypeDef](#updateapplicationrequesttypedef)
-  - [UpdateApplicationResponseResponseTypeDef](#updateapplicationresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateApplicationMaintenanceConfigurationRequestRequestTypeDef](#updateapplicationmaintenanceconfigurationrequestrequesttypedef)
+  - [UpdateApplicationMaintenanceConfigurationResponseTypeDef](#updateapplicationmaintenanceconfigurationresponsetypedef)
+  - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
+  - [UpdateApplicationResponseTypeDef](#updateapplicationresponsetypedef)
   - [VpcConfigurationDescriptionTypeDef](#vpcconfigurationdescriptiontypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
   - [VpcConfigurationUpdateTypeDef](#vpcconfigurationupdatetypedef)
@@ -185,10 +185,10 @@ type annotations stubs module
   - [ZeppelinMonitoringConfigurationTypeDef](#zeppelinmonitoringconfigurationtypedef)
   - [ZeppelinMonitoringConfigurationUpdateTypeDef](#zeppelinmonitoringconfigurationupdatetypedef)
 
-## AddApplicationCloudWatchLoggingOptionRequestTypeDef
+## AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLoggingOptionRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -202,10 +202,10 @@ Optional fields:
 - `CurrentApplicationVersionId`: `int`
 - `ConditionalToken`: `str`
 
-## AddApplicationCloudWatchLoggingOptionResponseResponseTypeDef
+## AddApplicationCloudWatchLoggingOptionResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLoggingOptionResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLoggingOptionResponseTypeDef
 ```
 
 Required fields:
@@ -217,10 +217,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddApplicationInputProcessingConfigurationRequestTypeDef
+## AddApplicationInputProcessingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputProcessingConfigurationRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputProcessingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -231,10 +231,10 @@ Required fields:
 - `InputProcessingConfiguration`:
   [InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef)
 
-## AddApplicationInputProcessingConfigurationResponseResponseTypeDef
+## AddApplicationInputProcessingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputProcessingConfigurationResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputProcessingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -247,10 +247,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddApplicationInputRequestTypeDef
+## AddApplicationInputRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputRequestRequestTypeDef
 ```
 
 Required fields:
@@ -259,10 +259,10 @@ Required fields:
 - `CurrentApplicationVersionId`: `int`
 - `Input`: [InputTypeDef](./type_defs.md#inputtypedef)
 
-## AddApplicationInputResponseResponseTypeDef
+## AddApplicationInputResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputResponseTypeDef
 ```
 
 Required fields:
@@ -274,10 +274,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddApplicationOutputRequestTypeDef
+## AddApplicationOutputRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationOutputRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationOutputRequestRequestTypeDef
 ```
 
 Required fields:
@@ -286,10 +286,10 @@ Required fields:
 - `CurrentApplicationVersionId`: `int`
 - `Output`: [OutputTypeDef](./type_defs.md#outputtypedef)
 
-## AddApplicationOutputResponseResponseTypeDef
+## AddApplicationOutputResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationOutputResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -301,10 +301,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddApplicationReferenceDataSourceRequestTypeDef
+## AddApplicationReferenceDataSourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationReferenceDataSourceRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationReferenceDataSourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -314,10 +314,10 @@ Required fields:
 - `ReferenceDataSource`:
   [ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef)
 
-## AddApplicationReferenceDataSourceResponseResponseTypeDef
+## AddApplicationReferenceDataSourceResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationReferenceDataSourceResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationReferenceDataSourceResponseTypeDef
 ```
 
 Required fields:
@@ -329,10 +329,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddApplicationVpcConfigurationRequestTypeDef
+## AddApplicationVpcConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationVpcConfigurationRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationVpcConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -346,10 +346,10 @@ Optional fields:
 - `CurrentApplicationVersionId`: `int`
 - `ConditionalToken`: `str`
 
-## AddApplicationVpcConfigurationResponseResponseTypeDef
+## AddApplicationVpcConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationVpcConfigurationResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationVpcConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -774,10 +774,10 @@ Optional fields:
 - `S3ContentLocationUpdate`:
   [S3ContentLocationUpdateTypeDef](./type_defs.md#s3contentlocationupdatetypedef)
 
-## CreateApplicationPresignedUrlRequestTypeDef
+## CreateApplicationPresignedUrlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationPresignedUrlRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationPresignedUrlRequestRequestTypeDef
 ```
 
 Required fields:
@@ -789,10 +789,10 @@ Optional fields:
 
 - `SessionExpirationDurationInSeconds`: `int`
 
-## CreateApplicationPresignedUrlResponseResponseTypeDef
+## CreateApplicationPresignedUrlResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationPresignedUrlResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationPresignedUrlResponseTypeDef
 ```
 
 Required fields:
@@ -801,10 +801,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateApplicationRequestTypeDef
+## CreateApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -824,10 +824,10 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ApplicationMode`: [ApplicationModeType](./literals.md#applicationmodetype)
 
-## CreateApplicationResponseResponseTypeDef
+## CreateApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -837,10 +837,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateApplicationSnapshotRequestTypeDef
+## CreateApplicationSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationSnapshotRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -879,10 +879,10 @@ Optional fields:
 - `MavenReference`:
   [MavenReferenceTypeDef](./type_defs.md#mavenreferencetypedef)
 
-## DeleteApplicationCloudWatchLoggingOptionRequestTypeDef
+## DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationCloudWatchLoggingOptionRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -895,10 +895,10 @@ Optional fields:
 - `CurrentApplicationVersionId`: `int`
 - `ConditionalToken`: `str`
 
-## DeleteApplicationCloudWatchLoggingOptionResponseResponseTypeDef
+## DeleteApplicationCloudWatchLoggingOptionResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationCloudWatchLoggingOptionResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationCloudWatchLoggingOptionResponseTypeDef
 ```
 
 Required fields:
@@ -910,10 +910,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteApplicationInputProcessingConfigurationRequestTypeDef
+## DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationInputProcessingConfigurationRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -922,10 +922,10 @@ Required fields:
 - `CurrentApplicationVersionId`: `int`
 - `InputId`: `str`
 
-## DeleteApplicationInputProcessingConfigurationResponseResponseTypeDef
+## DeleteApplicationInputProcessingConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationInputProcessingConfigurationResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationInputProcessingConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -935,10 +935,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteApplicationOutputRequestTypeDef
+## DeleteApplicationOutputRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationOutputRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationOutputRequestRequestTypeDef
 ```
 
 Required fields:
@@ -947,10 +947,10 @@ Required fields:
 - `CurrentApplicationVersionId`: `int`
 - `OutputId`: `str`
 
-## DeleteApplicationOutputResponseResponseTypeDef
+## DeleteApplicationOutputResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationOutputResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -960,10 +960,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteApplicationReferenceDataSourceRequestTypeDef
+## DeleteApplicationReferenceDataSourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationReferenceDataSourceRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationReferenceDataSourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -972,10 +972,10 @@ Required fields:
 - `CurrentApplicationVersionId`: `int`
 - `ReferenceId`: `str`
 
-## DeleteApplicationReferenceDataSourceResponseResponseTypeDef
+## DeleteApplicationReferenceDataSourceResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationReferenceDataSourceResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationReferenceDataSourceResponseTypeDef
 ```
 
 Required fields:
@@ -985,10 +985,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteApplicationRequestTypeDef
+## DeleteApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -996,10 +996,10 @@ Required fields:
 - `ApplicationName`: `str`
 - `CreateTimestamp`: `Union`\[`datetime`, `str`\]
 
-## DeleteApplicationSnapshotRequestTypeDef
+## DeleteApplicationSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationSnapshotRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1008,10 +1008,10 @@ Required fields:
 - `SnapshotName`: `str`
 - `SnapshotCreationTimestamp`: `Union`\[`datetime`, `str`\]
 
-## DeleteApplicationVpcConfigurationRequestTypeDef
+## DeleteApplicationVpcConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationVpcConfigurationRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationVpcConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1024,10 +1024,10 @@ Optional fields:
 - `CurrentApplicationVersionId`: `int`
 - `ConditionalToken`: `str`
 
-## DeleteApplicationVpcConfigurationResponseResponseTypeDef
+## DeleteApplicationVpcConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationVpcConfigurationResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationVpcConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -1070,10 +1070,10 @@ Required fields:
 - `S3ContentLocationUpdate`:
   [S3ContentBaseLocationUpdateTypeDef](./type_defs.md#s3contentbaselocationupdatetypedef)
 
-## DescribeApplicationRequestTypeDef
+## DescribeApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1084,10 +1084,10 @@ Optional fields:
 
 - `IncludeAdditionalDetails`: `bool`
 
-## DescribeApplicationResponseResponseTypeDef
+## DescribeApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -1097,10 +1097,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeApplicationSnapshotRequestTypeDef
+## DescribeApplicationSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationSnapshotRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1108,10 +1108,10 @@ Required fields:
 - `ApplicationName`: `str`
 - `SnapshotName`: `str`
 
-## DescribeApplicationSnapshotResponseResponseTypeDef
+## DescribeApplicationSnapshotResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationSnapshotResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationSnapshotResponseTypeDef
 ```
 
 Required fields:
@@ -1121,10 +1121,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeApplicationVersionRequestTypeDef
+## DescribeApplicationVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationVersionRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1132,10 +1132,10 @@ Required fields:
 - `ApplicationName`: `str`
 - `ApplicationVersionId`: `int`
 
-## DescribeApplicationVersionResponseResponseTypeDef
+## DescribeApplicationVersionResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationVersionResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationVersionResponseTypeDef
 ```
 
 Required fields:
@@ -1156,10 +1156,10 @@ Required fields:
 - `RecordFormatType`:
   [RecordFormatTypeType](./literals.md#recordformattypetype)
 
-## DiscoverInputSchemaRequestTypeDef
+## DiscoverInputSchemaRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DiscoverInputSchemaRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DiscoverInputSchemaRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1176,10 +1176,10 @@ Optional fields:
 - `InputProcessingConfiguration`:
   [InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef)
 
-## DiscoverInputSchemaResponseResponseTypeDef
+## DiscoverInputSchemaResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import DiscoverInputSchemaResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import DiscoverInputSchemaResponseTypeDef
 ```
 
 Required fields:
@@ -1671,10 +1671,10 @@ Required fields:
 
 - `ResourceARNUpdate`: `str`
 
-## ListApplicationSnapshotsRequestTypeDef
+## ListApplicationSnapshotsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationSnapshotsRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationSnapshotsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1686,10 +1686,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## ListApplicationSnapshotsResponseResponseTypeDef
+## ListApplicationSnapshotsResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationSnapshotsResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationSnapshotsResponseTypeDef
 ```
 
 Required fields:
@@ -1700,10 +1700,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListApplicationVersionsRequestTypeDef
+## ListApplicationVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationVersionsRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1715,10 +1715,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## ListApplicationVersionsResponseResponseTypeDef
+## ListApplicationVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationVersionsResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -1729,10 +1729,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListApplicationsRequestTypeDef
+## ListApplicationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationsRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1740,10 +1740,10 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-## ListApplicationsResponseResponseTypeDef
+## ListApplicationsResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationsResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationsResponseTypeDef
 ```
 
 Required fields:
@@ -1754,20 +1754,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceARN`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -2069,10 +2069,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RollbackApplicationRequestTypeDef
+## RollbackApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import RollbackApplicationRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import RollbackApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2080,10 +2080,10 @@ Required fields:
 - `ApplicationName`: `str`
 - `CurrentApplicationVersionId`: `int`
 
-## RollbackApplicationResponseResponseTypeDef
+## RollbackApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import RollbackApplicationResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import RollbackApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -2353,10 +2353,10 @@ Required fields:
 - `InputStartingPositionConfiguration`:
   [InputStartingPositionConfigurationTypeDef](./type_defs.md#inputstartingpositionconfigurationtypedef)
 
-## StartApplicationRequestTypeDef
+## StartApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import StartApplicationRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import StartApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2368,10 +2368,10 @@ Optional fields:
 - `RunConfiguration`:
   [RunConfigurationTypeDef](./type_defs.md#runconfigurationtypedef)
 
-## StopApplicationRequestTypeDef
+## StopApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import StopApplicationRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import StopApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2382,10 +2382,10 @@ Optional fields:
 
 - `Force`: `bool`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2407,10 +2407,10 @@ Optional fields:
 
 - `Value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2418,10 +2418,10 @@ Required fields:
 - `ResourceARN`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateApplicationMaintenanceConfigurationRequestTypeDef
+## UpdateApplicationMaintenanceConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationMaintenanceConfigurationRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationMaintenanceConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2430,10 +2430,10 @@ Required fields:
 - `ApplicationMaintenanceConfigurationUpdate`:
   [ApplicationMaintenanceConfigurationUpdateTypeDef](./type_defs.md#applicationmaintenanceconfigurationupdatetypedef)
 
-## UpdateApplicationMaintenanceConfigurationResponseResponseTypeDef
+## UpdateApplicationMaintenanceConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationMaintenanceConfigurationResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationMaintenanceConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -2444,10 +2444,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateApplicationRequestTypeDef
+## UpdateApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationRequestTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2466,10 +2466,10 @@ Optional fields:
   `List`\[[CloudWatchLoggingOptionUpdateTypeDef](./type_defs.md#cloudwatchloggingoptionupdatetypedef)\]
 - `ConditionalToken`: `str`
 
-## UpdateApplicationResponseResponseTypeDef
+## UpdateApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationResponseResponseTypeDef
+from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationResponseTypeDef
 ```
 
 Required fields:

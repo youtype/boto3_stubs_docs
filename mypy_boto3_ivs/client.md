@@ -11,6 +11,7 @@ type annotations stubs module
   - [IVSClient](#ivsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_get_channel](#batch_get_channel)
     - [batch_get_stream_key](#batch_get_stream_key)
     - [can_paginate](#can_paginate)
@@ -85,6 +86,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IVSClient exceptions.
+
+Type annotations for `boto3.client("ivs").exceptions` method.
+
+Boto3 documentation:
+[IVS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_get_channel
 
 Performs GetChannel on multiple ARNs simultaneously.
@@ -95,14 +107,14 @@ Boto3 documentation:
 [IVS.Client.batch_get_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.batch_get_channel)
 
 Arguments mapping described in
-[BatchGetChannelRequestTypeDef](./type_defs.md#batchgetchannelrequesttypedef).
+[BatchGetChannelRequestRequestTypeDef](./type_defs.md#batchgetchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arns`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetChannelResponseResponseTypeDef](./type_defs.md#batchgetchannelresponseresponsetypedef).
+[BatchGetChannelResponseTypeDef](./type_defs.md#batchgetchannelresponsetypedef).
 
 ### batch_get_stream_key
 
@@ -114,14 +126,14 @@ Boto3 documentation:
 [IVS.Client.batch_get_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.batch_get_stream_key)
 
 Arguments mapping described in
-[BatchGetStreamKeyRequestTypeDef](./type_defs.md#batchgetstreamkeyrequesttypedef).
+[BatchGetStreamKeyRequestRequestTypeDef](./type_defs.md#batchgetstreamkeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arns`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetStreamKeyResponseResponseTypeDef](./type_defs.md#batchgetstreamkeyresponseresponsetypedef).
+[BatchGetStreamKeyResponseTypeDef](./type_defs.md#batchgetstreamkeyresponsetypedef).
 
 ### can_paginate
 
@@ -148,7 +160,7 @@ Boto3 documentation:
 [IVS.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_channel)
 
 Arguments mapping described in
-[CreateChannelRequestTypeDef](./type_defs.md#createchannelrequesttypedef).
+[CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -160,7 +172,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateChannelResponseResponseTypeDef](./type_defs.md#createchannelresponseresponsetypedef).
+[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_recording_configuration
 
@@ -173,7 +185,7 @@ Boto3 documentation:
 [IVS.Client.create_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_recording_configuration)
 
 Arguments mapping described in
-[CreateRecordingConfigurationRequestTypeDef](./type_defs.md#createrecordingconfigurationrequesttypedef).
+[CreateRecordingConfigurationRequestRequestTypeDef](./type_defs.md#createrecordingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -184,7 +196,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRecordingConfigurationResponseResponseTypeDef](./type_defs.md#createrecordingconfigurationresponseresponsetypedef).
+[CreateRecordingConfigurationResponseTypeDef](./type_defs.md#createrecordingconfigurationresponsetypedef).
 
 ### create_stream_key
 
@@ -196,7 +208,7 @@ Boto3 documentation:
 [IVS.Client.create_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_stream_key)
 
 Arguments mapping described in
-[CreateStreamKeyRequestTypeDef](./type_defs.md#createstreamkeyrequesttypedef).
+[CreateStreamKeyRequestRequestTypeDef](./type_defs.md#createstreamkeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -204,7 +216,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStreamKeyResponseResponseTypeDef](./type_defs.md#createstreamkeyresponseresponsetypedef).
+[CreateStreamKeyResponseTypeDef](./type_defs.md#createstreamkeyresponsetypedef).
 
 ### delete_channel
 
@@ -216,7 +228,7 @@ Boto3 documentation:
 [IVS.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_channel)
 
 Arguments mapping described in
-[DeleteChannelRequestTypeDef](./type_defs.md#deletechannelrequesttypedef).
+[DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -232,7 +244,7 @@ Boto3 documentation:
 [IVS.Client.delete_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_playback_key_pair)
 
 Arguments mapping described in
-[DeletePlaybackKeyPairRequestTypeDef](./type_defs.md#deleteplaybackkeypairrequesttypedef).
+[DeletePlaybackKeyPairRequestRequestTypeDef](./type_defs.md#deleteplaybackkeypairrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,7 +263,7 @@ Boto3 documentation:
 [IVS.Client.delete_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_recording_configuration)
 
 Arguments mapping described in
-[DeleteRecordingConfigurationRequestTypeDef](./type_defs.md#deleterecordingconfigurationrequesttypedef).
+[DeleteRecordingConfigurationRequestRequestTypeDef](./type_defs.md#deleterecordingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -268,7 +280,7 @@ Boto3 documentation:
 [IVS.Client.delete_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_stream_key)
 
 Arguments mapping described in
-[DeleteStreamKeyRequestTypeDef](./type_defs.md#deletestreamkeyrequesttypedef).
+[DeleteStreamKeyRequestRequestTypeDef](./type_defs.md#deletestreamkeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -302,14 +314,13 @@ Boto3 documentation:
 [IVS.Client.get_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_channel)
 
 Arguments mapping described in
-[GetChannelRequestTypeDef](./type_defs.md#getchannelrequesttypedef).
+[GetChannelRequestRequestTypeDef](./type_defs.md#getchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-Returns
-[GetChannelResponseResponseTypeDef](./type_defs.md#getchannelresponseresponsetypedef).
+Returns [GetChannelResponseTypeDef](./type_defs.md#getchannelresponsetypedef).
 
 ### get_playback_key_pair
 
@@ -322,14 +333,14 @@ Boto3 documentation:
 [IVS.Client.get_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_playback_key_pair)
 
 Arguments mapping described in
-[GetPlaybackKeyPairRequestTypeDef](./type_defs.md#getplaybackkeypairrequesttypedef).
+[GetPlaybackKeyPairRequestRequestTypeDef](./type_defs.md#getplaybackkeypairrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetPlaybackKeyPairResponseResponseTypeDef](./type_defs.md#getplaybackkeypairresponseresponsetypedef).
+[GetPlaybackKeyPairResponseTypeDef](./type_defs.md#getplaybackkeypairresponsetypedef).
 
 ### get_recording_configuration
 
@@ -341,14 +352,14 @@ Boto3 documentation:
 [IVS.Client.get_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_recording_configuration)
 
 Arguments mapping described in
-[GetRecordingConfigurationRequestTypeDef](./type_defs.md#getrecordingconfigurationrequesttypedef).
+[GetRecordingConfigurationRequestRequestTypeDef](./type_defs.md#getrecordingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetRecordingConfigurationResponseResponseTypeDef](./type_defs.md#getrecordingconfigurationresponseresponsetypedef).
+[GetRecordingConfigurationResponseTypeDef](./type_defs.md#getrecordingconfigurationresponsetypedef).
 
 ### get_stream
 
@@ -360,14 +371,13 @@ Boto3 documentation:
 [IVS.Client.get_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream)
 
 Arguments mapping described in
-[GetStreamRequestTypeDef](./type_defs.md#getstreamrequesttypedef).
+[GetStreamRequestRequestTypeDef](./type_defs.md#getstreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `channelArn`: `str` *(required)*
 
-Returns
-[GetStreamResponseResponseTypeDef](./type_defs.md#getstreamresponseresponsetypedef).
+Returns [GetStreamResponseTypeDef](./type_defs.md#getstreamresponsetypedef).
 
 ### get_stream_key
 
@@ -379,14 +389,14 @@ Boto3 documentation:
 [IVS.Client.get_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream_key)
 
 Arguments mapping described in
-[GetStreamKeyRequestTypeDef](./type_defs.md#getstreamkeyrequesttypedef).
+[GetStreamKeyRequestRequestTypeDef](./type_defs.md#getstreamkeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
 Returns
-[GetStreamKeyResponseResponseTypeDef](./type_defs.md#getstreamkeyresponseresponsetypedef).
+[GetStreamKeyResponseTypeDef](./type_defs.md#getstreamkeyresponsetypedef).
 
 ### import_playback_key_pair
 
@@ -399,7 +409,7 @@ Boto3 documentation:
 [IVS.Client.import_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.import_playback_key_pair)
 
 Arguments mapping described in
-[ImportPlaybackKeyPairRequestTypeDef](./type_defs.md#importplaybackkeypairrequesttypedef).
+[ImportPlaybackKeyPairRequestRequestTypeDef](./type_defs.md#importplaybackkeypairrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -408,7 +418,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ImportPlaybackKeyPairResponseResponseTypeDef](./type_defs.md#importplaybackkeypairresponseresponsetypedef).
+[ImportPlaybackKeyPairResponseTypeDef](./type_defs.md#importplaybackkeypairresponsetypedef).
 
 ### list_channels
 
@@ -421,7 +431,7 @@ Boto3 documentation:
 [IVS.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_channels)
 
 Arguments mapping described in
-[ListChannelsRequestTypeDef](./type_defs.md#listchannelsrequesttypedef).
+[ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -431,7 +441,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef).
+[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
 ### list_playback_key_pairs
 
@@ -443,7 +453,7 @@ Boto3 documentation:
 [IVS.Client.list_playback_key_pairs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_playback_key_pairs)
 
 Arguments mapping described in
-[ListPlaybackKeyPairsRequestTypeDef](./type_defs.md#listplaybackkeypairsrequesttypedef).
+[ListPlaybackKeyPairsRequestRequestTypeDef](./type_defs.md#listplaybackkeypairsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -451,7 +461,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPlaybackKeyPairsResponseResponseTypeDef](./type_defs.md#listplaybackkeypairsresponseresponsetypedef).
+[ListPlaybackKeyPairsResponseTypeDef](./type_defs.md#listplaybackkeypairsresponsetypedef).
 
 ### list_recording_configurations
 
@@ -465,7 +475,7 @@ Boto3 documentation:
 [IVS.Client.list_recording_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_recording_configurations)
 
 Arguments mapping described in
-[ListRecordingConfigurationsRequestTypeDef](./type_defs.md#listrecordingconfigurationsrequesttypedef).
+[ListRecordingConfigurationsRequestRequestTypeDef](./type_defs.md#listrecordingconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,7 +483,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListRecordingConfigurationsResponseResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponseresponsetypedef).
+[ListRecordingConfigurationsResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponsetypedef).
 
 ### list_stream_keys
 
@@ -485,7 +495,7 @@ Boto3 documentation:
 [IVS.Client.list_stream_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_stream_keys)
 
 Arguments mapping described in
-[ListStreamKeysRequestTypeDef](./type_defs.md#liststreamkeysrequesttypedef).
+[ListStreamKeysRequestRequestTypeDef](./type_defs.md#liststreamkeysrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -494,7 +504,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListStreamKeysResponseResponseTypeDef](./type_defs.md#liststreamkeysresponseresponsetypedef).
+[ListStreamKeysResponseTypeDef](./type_defs.md#liststreamkeysresponsetypedef).
 
 ### list_streams
 
@@ -507,7 +517,7 @@ Boto3 documentation:
 [IVS.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_streams)
 
 Arguments mapping described in
-[ListStreamsRequestTypeDef](./type_defs.md#liststreamsrequesttypedef).
+[ListStreamsRequestRequestTypeDef](./type_defs.md#liststreamsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -515,7 +525,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListStreamsResponseResponseTypeDef](./type_defs.md#liststreamsresponseresponsetypedef).
+[ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -527,7 +537,7 @@ Boto3 documentation:
 [IVS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -536,7 +546,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_metadata
 
@@ -548,7 +558,7 @@ Boto3 documentation:
 [IVS.Client.put_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.put_metadata)
 
 Arguments mapping described in
-[PutMetadataRequestTypeDef](./type_defs.md#putmetadatarequesttypedef).
+[PutMetadataRequestRequestTypeDef](./type_defs.md#putmetadatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -565,7 +575,7 @@ Boto3 documentation:
 [IVS.Client.stop_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.stop_stream)
 
 Arguments mapping described in
-[StopStreamRequestTypeDef](./type_defs.md#stopstreamrequesttypedef).
+[StopStreamRequestRequestTypeDef](./type_defs.md#stopstreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -583,7 +593,7 @@ Boto3 documentation:
 [IVS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -602,7 +612,7 @@ Boto3 documentation:
 [IVS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -621,7 +631,7 @@ Boto3 documentation:
 [IVS.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.update_channel)
 
 Arguments mapping described in
-[UpdateChannelRequestTypeDef](./type_defs.md#updatechannelrequesttypedef).
+[UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -633,7 +643,7 @@ Keyword-only arguments:
 - `recordingConfigurationArn`: `str`
 
 Returns
-[UpdateChannelResponseResponseTypeDef](./type_defs.md#updatechannelresponseresponsetypedef).
+[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
 ### get_paginator
 

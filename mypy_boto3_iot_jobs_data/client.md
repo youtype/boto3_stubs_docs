@@ -11,6 +11,7 @@ type annotations stubs module
   - [IoTJobsDataPlaneClient](#iotjobsdataplaneclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [describe_job_execution](#describe_job_execution)
     - [generate_presigned_url](#generate_presigned_url)
@@ -59,6 +60,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IoTJobsDataPlaneClient exceptions.
+
+Type annotations for `boto3.client("iot-jobs-data").exceptions` method.
+
+Boto3 documentation:
+[IoTJobsDataPlane.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -85,7 +97,7 @@ Boto3 documentation:
 [IoTJobsDataPlane.Client.describe_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.describe_job_execution)
 
 Arguments mapping described in
-[DescribeJobExecutionRequestTypeDef](./type_defs.md#describejobexecutionrequesttypedef).
+[DescribeJobExecutionRequestRequestTypeDef](./type_defs.md#describejobexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -95,7 +107,7 @@ Keyword-only arguments:
 - `executionNumber`: `int`
 
 Returns
-[DescribeJobExecutionResponseResponseTypeDef](./type_defs.md#describejobexecutionresponseresponsetypedef).
+[DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -127,14 +139,14 @@ Boto3 documentation:
 [IoTJobsDataPlane.Client.get_pending_job_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.get_pending_job_executions)
 
 Arguments mapping described in
-[GetPendingJobExecutionsRequestTypeDef](./type_defs.md#getpendingjobexecutionsrequesttypedef).
+[GetPendingJobExecutionsRequestRequestTypeDef](./type_defs.md#getpendingjobexecutionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
 
 Returns
-[GetPendingJobExecutionsResponseResponseTypeDef](./type_defs.md#getpendingjobexecutionsresponseresponsetypedef).
+[GetPendingJobExecutionsResponseTypeDef](./type_defs.md#getpendingjobexecutionsresponsetypedef).
 
 ### start_next_pending_job_execution
 
@@ -148,7 +160,7 @@ Boto3 documentation:
 [IoTJobsDataPlane.Client.start_next_pending_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.start_next_pending_job_execution)
 
 Arguments mapping described in
-[StartNextPendingJobExecutionRequestTypeDef](./type_defs.md#startnextpendingjobexecutionrequesttypedef).
+[StartNextPendingJobExecutionRequestRequestTypeDef](./type_defs.md#startnextpendingjobexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,7 +169,7 @@ Keyword-only arguments:
 - `stepTimeoutInMinutes`: `int`
 
 Returns
-[StartNextPendingJobExecutionResponseResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponseresponsetypedef).
+[StartNextPendingJobExecutionResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponsetypedef).
 
 ### update_job_execution
 
@@ -170,7 +182,7 @@ Boto3 documentation:
 [IoTJobsDataPlane.Client.update_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.update_job_execution)
 
 Arguments mapping described in
-[UpdateJobExecutionRequestTypeDef](./type_defs.md#updatejobexecutionrequesttypedef).
+[UpdateJobExecutionRequestRequestTypeDef](./type_defs.md#updatejobexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -186,4 +198,4 @@ Keyword-only arguments:
 - `executionNumber`: `int`
 
 Returns
-[UpdateJobExecutionResponseResponseTypeDef](./type_defs.md#updatejobexecutionresponseresponsetypedef).
+[UpdateJobExecutionResponseTypeDef](./type_defs.md#updatejobexecutionresponsetypedef).

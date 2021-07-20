@@ -8,19 +8,19 @@ type annotations stubs module
 [mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
 - [Typed dictionaries for boto3 SavingsPlans module](#typed-dictionaries-for-boto3-savingsplans-module)
-  - [CreateSavingsPlanRequestTypeDef](#createsavingsplanrequesttypedef)
-  - [CreateSavingsPlanResponseResponseTypeDef](#createsavingsplanresponseresponsetypedef)
-  - [DeleteQueuedSavingsPlanRequestTypeDef](#deletequeuedsavingsplanrequesttypedef)
-  - [DescribeSavingsPlanRatesRequestTypeDef](#describesavingsplanratesrequesttypedef)
-  - [DescribeSavingsPlanRatesResponseResponseTypeDef](#describesavingsplanratesresponseresponsetypedef)
-  - [DescribeSavingsPlansOfferingRatesRequestTypeDef](#describesavingsplansofferingratesrequesttypedef)
-  - [DescribeSavingsPlansOfferingRatesResponseResponseTypeDef](#describesavingsplansofferingratesresponseresponsetypedef)
-  - [DescribeSavingsPlansOfferingsRequestTypeDef](#describesavingsplansofferingsrequesttypedef)
-  - [DescribeSavingsPlansOfferingsResponseResponseTypeDef](#describesavingsplansofferingsresponseresponsetypedef)
-  - [DescribeSavingsPlansRequestTypeDef](#describesavingsplansrequesttypedef)
-  - [DescribeSavingsPlansResponseResponseTypeDef](#describesavingsplansresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [CreateSavingsPlanRequestRequestTypeDef](#createsavingsplanrequestrequesttypedef)
+  - [CreateSavingsPlanResponseTypeDef](#createsavingsplanresponsetypedef)
+  - [DeleteQueuedSavingsPlanRequestRequestTypeDef](#deletequeuedsavingsplanrequestrequesttypedef)
+  - [DescribeSavingsPlanRatesRequestRequestTypeDef](#describesavingsplanratesrequestrequesttypedef)
+  - [DescribeSavingsPlanRatesResponseTypeDef](#describesavingsplanratesresponsetypedef)
+  - [DescribeSavingsPlansOfferingRatesRequestRequestTypeDef](#describesavingsplansofferingratesrequestrequesttypedef)
+  - [DescribeSavingsPlansOfferingRatesResponseTypeDef](#describesavingsplansofferingratesresponsetypedef)
+  - [DescribeSavingsPlansOfferingsRequestRequestTypeDef](#describesavingsplansofferingsrequestrequesttypedef)
+  - [DescribeSavingsPlansOfferingsResponseTypeDef](#describesavingsplansofferingsresponsetypedef)
+  - [DescribeSavingsPlansRequestRequestTypeDef](#describesavingsplansrequestrequesttypedef)
+  - [DescribeSavingsPlansResponseTypeDef](#describesavingsplansresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ParentSavingsPlanOfferingTypeDef](#parentsavingsplanofferingtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SavingsPlanFilterTypeDef](#savingsplanfiltertypedef)
@@ -34,13 +34,13 @@ type annotations stubs module
   - [SavingsPlanRatePropertyTypeDef](#savingsplanratepropertytypedef)
   - [SavingsPlanRateTypeDef](#savingsplanratetypedef)
   - [SavingsPlanTypeDef](#savingsplantypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
-## CreateSavingsPlanRequestTypeDef
+## CreateSavingsPlanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanRequestTypeDef
+from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanRequestRequestTypeDef
 ```
 
 Required fields:
@@ -55,10 +55,10 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateSavingsPlanResponseResponseTypeDef
+## CreateSavingsPlanResponseTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanResponseResponseTypeDef
+from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanResponseTypeDef
 ```
 
 Required fields:
@@ -67,20 +67,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteQueuedSavingsPlanRequestTypeDef
+## DeleteQueuedSavingsPlanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import DeleteQueuedSavingsPlanRequestTypeDef
+from mypy_boto3_savingsplans.type_defs import DeleteQueuedSavingsPlanRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `savingsPlanId`: `str`
 
-## DescribeSavingsPlanRatesRequestTypeDef
+## DescribeSavingsPlanRatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlanRatesRequestTypeDef
+from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlanRatesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -94,10 +94,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## DescribeSavingsPlanRatesResponseResponseTypeDef
+## DescribeSavingsPlanRatesResponseTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlanRatesResponseResponseTypeDef
+from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlanRatesResponseTypeDef
 ```
 
 Required fields:
@@ -109,10 +109,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSavingsPlansOfferingRatesRequestTypeDef
+## DescribeSavingsPlansOfferingRatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingRatesRequestTypeDef
+from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingRatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -133,10 +133,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## DescribeSavingsPlansOfferingRatesResponseResponseTypeDef
+## DescribeSavingsPlansOfferingRatesResponseTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingRatesResponseResponseTypeDef
+from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingRatesResponseTypeDef
 ```
 
 Required fields:
@@ -147,10 +147,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSavingsPlansOfferingsRequestTypeDef
+## DescribeSavingsPlansOfferingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingsRequestTypeDef
+from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -173,10 +173,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## DescribeSavingsPlansOfferingsResponseResponseTypeDef
+## DescribeSavingsPlansOfferingsResponseTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingsResponseResponseTypeDef
+from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansOfferingsResponseTypeDef
 ```
 
 Required fields:
@@ -187,10 +187,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSavingsPlansRequestTypeDef
+## DescribeSavingsPlansRequestRequestTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansRequestTypeDef
+from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -204,10 +204,10 @@ Optional fields:
 - `filters`:
   `List`\[[SavingsPlanFilterTypeDef](./type_defs.md#savingsplanfiltertypedef)\]
 
-## DescribeSavingsPlansResponseResponseTypeDef
+## DescribeSavingsPlansResponseTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansResponseResponseTypeDef
+from mypy_boto3_savingsplans.type_defs import DescribeSavingsPlansResponseTypeDef
 ```
 
 Required fields:
@@ -218,20 +218,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_savingsplans.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_savingsplans.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -446,10 +446,10 @@ Optional fields:
 - `termDurationInSeconds`: `int`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_savingsplans.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -457,10 +457,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_savingsplans.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_savingsplans.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:

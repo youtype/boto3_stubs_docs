@@ -11,6 +11,7 @@ type annotations stubs module
   - [CodePipelineClient](#codepipelineclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [acknowledge_job](#acknowledge_job)
     - [acknowledge_third_party_job](#acknowledge_third_party_job)
     - [can_paginate](#can_paginate)
@@ -125,6 +126,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CodePipelineClient exceptions.
+
+Type annotations for `boto3.client("codepipeline").exceptions` method.
+
+Boto3 documentation:
+[CodePipeline.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### acknowledge_job
 
 Returns information about a specified job and whether that job has been
@@ -136,7 +148,7 @@ Boto3 documentation:
 [CodePipeline.Client.acknowledge_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_job)
 
 Arguments mapping described in
-[AcknowledgeJobInputTypeDef](./type_defs.md#acknowledgejobinputtypedef).
+[AcknowledgeJobInputRequestTypeDef](./type_defs.md#acknowledgejobinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,7 +156,7 @@ Keyword-only arguments:
 - `nonce`: `str` *(required)*
 
 Returns
-[AcknowledgeJobOutputResponseTypeDef](./type_defs.md#acknowledgejoboutputresponsetypedef).
+[AcknowledgeJobOutputTypeDef](./type_defs.md#acknowledgejoboutputtypedef).
 
 ### acknowledge_third_party_job
 
@@ -157,7 +169,7 @@ Boto3 documentation:
 [CodePipeline.Client.acknowledge_third_party_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_third_party_job)
 
 Arguments mapping described in
-[AcknowledgeThirdPartyJobInputTypeDef](./type_defs.md#acknowledgethirdpartyjobinputtypedef).
+[AcknowledgeThirdPartyJobInputRequestTypeDef](./type_defs.md#acknowledgethirdpartyjobinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -166,7 +178,7 @@ Keyword-only arguments:
 - `clientToken`: `str` *(required)*
 
 Returns
-[AcknowledgeThirdPartyJobOutputResponseTypeDef](./type_defs.md#acknowledgethirdpartyjoboutputresponsetypedef).
+[AcknowledgeThirdPartyJobOutputTypeDef](./type_defs.md#acknowledgethirdpartyjoboutputtypedef).
 
 ### can_paginate
 
@@ -195,7 +207,7 @@ Boto3 documentation:
 [CodePipeline.Client.create_custom_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_custom_action_type)
 
 Arguments mapping described in
-[CreateCustomActionTypeInputTypeDef](./type_defs.md#createcustomactiontypeinputtypedef).
+[CreateCustomActionTypeInputRequestTypeDef](./type_defs.md#createcustomactiontypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -214,7 +226,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCustomActionTypeOutputResponseTypeDef](./type_defs.md#createcustomactiontypeoutputresponsetypedef).
+[CreateCustomActionTypeOutputTypeDef](./type_defs.md#createcustomactiontypeoutputtypedef).
 
 ### create_pipeline
 
@@ -226,7 +238,7 @@ Boto3 documentation:
 [CodePipeline.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_pipeline)
 
 Arguments mapping described in
-[CreatePipelineInputTypeDef](./type_defs.md#createpipelineinputtypedef).
+[CreatePipelineInputRequestTypeDef](./type_defs.md#createpipelineinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -236,7 +248,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePipelineOutputResponseTypeDef](./type_defs.md#createpipelineoutputresponsetypedef).
+[CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef).
 
 ### delete_custom_action_type
 
@@ -249,7 +261,7 @@ Boto3 documentation:
 [CodePipeline.Client.delete_custom_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_custom_action_type)
 
 Arguments mapping described in
-[DeleteCustomActionTypeInputTypeDef](./type_defs.md#deletecustomactiontypeinputtypedef).
+[DeleteCustomActionTypeInputRequestTypeDef](./type_defs.md#deletecustomactiontypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -268,7 +280,7 @@ Boto3 documentation:
 [CodePipeline.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_pipeline)
 
 Arguments mapping described in
-[DeletePipelineInputTypeDef](./type_defs.md#deletepipelineinputtypedef).
+[DeletePipelineInputRequestTypeDef](./type_defs.md#deletepipelineinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -284,7 +296,7 @@ Boto3 documentation:
 [CodePipeline.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_webhook)
 
 Arguments mapping described in
-[DeleteWebhookInputTypeDef](./type_defs.md#deletewebhookinputtypedef).
+[DeleteWebhookInputRequestTypeDef](./type_defs.md#deletewebhookinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,7 +316,7 @@ Boto3 documentation:
 [CodePipeline.Client.deregister_webhook_with_third_party](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.deregister_webhook_with_third_party)
 
 Arguments mapping described in
-[DeregisterWebhookWithThirdPartyInputTypeDef](./type_defs.md#deregisterwebhookwiththirdpartyinputtypedef).
+[DeregisterWebhookWithThirdPartyInputRequestTypeDef](./type_defs.md#deregisterwebhookwiththirdpartyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -324,7 +336,7 @@ Boto3 documentation:
 [CodePipeline.Client.disable_stage_transition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.disable_stage_transition)
 
 Arguments mapping described in
-[DisableStageTransitionInputTypeDef](./type_defs.md#disablestagetransitioninputtypedef).
+[DisableStageTransitionInputRequestTypeDef](./type_defs.md#disablestagetransitioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -345,7 +357,7 @@ Boto3 documentation:
 [CodePipeline.Client.enable_stage_transition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.enable_stage_transition)
 
 Arguments mapping described in
-[EnableStageTransitionInputTypeDef](./type_defs.md#enablestagetransitioninputtypedef).
+[EnableStageTransitionInputRequestTypeDef](./type_defs.md#enablestagetransitioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -384,7 +396,7 @@ Boto3 documentation:
 [CodePipeline.Client.get_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_action_type)
 
 Arguments mapping described in
-[GetActionTypeInputTypeDef](./type_defs.md#getactiontypeinputtypedef).
+[GetActionTypeInputRequestTypeDef](./type_defs.md#getactiontypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -395,7 +407,7 @@ Keyword-only arguments:
 - `version`: `str` *(required)*
 
 Returns
-[GetActionTypeOutputResponseTypeDef](./type_defs.md#getactiontypeoutputresponsetypedef).
+[GetActionTypeOutputTypeDef](./type_defs.md#getactiontypeoutputtypedef).
 
 ### get_job_details
 
@@ -407,14 +419,14 @@ Boto3 documentation:
 [CodePipeline.Client.get_job_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_job_details)
 
 Arguments mapping described in
-[GetJobDetailsInputTypeDef](./type_defs.md#getjobdetailsinputtypedef).
+[GetJobDetailsInputRequestTypeDef](./type_defs.md#getjobdetailsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 
 Returns
-[GetJobDetailsOutputResponseTypeDef](./type_defs.md#getjobdetailsoutputresponsetypedef).
+[GetJobDetailsOutputTypeDef](./type_defs.md#getjobdetailsoutputtypedef).
 
 ### get_pipeline
 
@@ -426,15 +438,14 @@ Boto3 documentation:
 [CodePipeline.Client.get_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline)
 
 Arguments mapping described in
-[GetPipelineInputTypeDef](./type_defs.md#getpipelineinputtypedef).
+[GetPipelineInputRequestTypeDef](./type_defs.md#getpipelineinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `version`: `int`
 
-Returns
-[GetPipelineOutputResponseTypeDef](./type_defs.md#getpipelineoutputresponsetypedef).
+Returns [GetPipelineOutputTypeDef](./type_defs.md#getpipelineoutputtypedef).
 
 ### get_pipeline_execution
 
@@ -449,7 +460,7 @@ Boto3 documentation:
 [CodePipeline.Client.get_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_execution)
 
 Arguments mapping described in
-[GetPipelineExecutionInputTypeDef](./type_defs.md#getpipelineexecutioninputtypedef).
+[GetPipelineExecutionInputRequestTypeDef](./type_defs.md#getpipelineexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -457,7 +468,7 @@ Keyword-only arguments:
 - `pipelineExecutionId`: `str` *(required)*
 
 Returns
-[GetPipelineExecutionOutputResponseTypeDef](./type_defs.md#getpipelineexecutionoutputresponsetypedef).
+[GetPipelineExecutionOutputTypeDef](./type_defs.md#getpipelineexecutionoutputtypedef).
 
 ### get_pipeline_state
 
@@ -470,14 +481,14 @@ Boto3 documentation:
 [CodePipeline.Client.get_pipeline_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_state)
 
 Arguments mapping described in
-[GetPipelineStateInputTypeDef](./type_defs.md#getpipelinestateinputtypedef).
+[GetPipelineStateInputRequestTypeDef](./type_defs.md#getpipelinestateinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
 Returns
-[GetPipelineStateOutputResponseTypeDef](./type_defs.md#getpipelinestateoutputresponsetypedef).
+[GetPipelineStateOutputTypeDef](./type_defs.md#getpipelinestateoutputtypedef).
 
 ### get_third_party_job_details
 
@@ -490,7 +501,7 @@ Boto3 documentation:
 [CodePipeline.Client.get_third_party_job_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_third_party_job_details)
 
 Arguments mapping described in
-[GetThirdPartyJobDetailsInputTypeDef](./type_defs.md#getthirdpartyjobdetailsinputtypedef).
+[GetThirdPartyJobDetailsInputRequestTypeDef](./type_defs.md#getthirdpartyjobdetailsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -498,7 +509,7 @@ Keyword-only arguments:
 - `clientToken`: `str` *(required)*
 
 Returns
-[GetThirdPartyJobDetailsOutputResponseTypeDef](./type_defs.md#getthirdpartyjobdetailsoutputresponsetypedef).
+[GetThirdPartyJobDetailsOutputTypeDef](./type_defs.md#getthirdpartyjobdetailsoutputtypedef).
 
 ### list_action_executions
 
@@ -511,7 +522,7 @@ Boto3 documentation:
 [CodePipeline.Client.list_action_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_executions)
 
 Arguments mapping described in
-[ListActionExecutionsInputTypeDef](./type_defs.md#listactionexecutionsinputtypedef).
+[ListActionExecutionsInputRequestTypeDef](./type_defs.md#listactionexecutionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -522,7 +533,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListActionExecutionsOutputResponseTypeDef](./type_defs.md#listactionexecutionsoutputresponsetypedef).
+[ListActionExecutionsOutputTypeDef](./type_defs.md#listactionexecutionsoutputtypedef).
 
 ### list_action_types
 
@@ -535,7 +546,7 @@ Boto3 documentation:
 [CodePipeline.Client.list_action_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_types)
 
 Arguments mapping described in
-[ListActionTypesInputTypeDef](./type_defs.md#listactiontypesinputtypedef).
+[ListActionTypesInputRequestTypeDef](./type_defs.md#listactiontypesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -544,7 +555,7 @@ Keyword-only arguments:
 - `regionFilter`: `str`
 
 Returns
-[ListActionTypesOutputResponseTypeDef](./type_defs.md#listactiontypesoutputresponsetypedef).
+[ListActionTypesOutputTypeDef](./type_defs.md#listactiontypesoutputtypedef).
 
 ### list_pipeline_executions
 
@@ -557,7 +568,7 @@ Boto3 documentation:
 [CodePipeline.Client.list_pipeline_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipeline_executions)
 
 Arguments mapping described in
-[ListPipelineExecutionsInputTypeDef](./type_defs.md#listpipelineexecutionsinputtypedef).
+[ListPipelineExecutionsInputRequestTypeDef](./type_defs.md#listpipelineexecutionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -566,7 +577,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListPipelineExecutionsOutputResponseTypeDef](./type_defs.md#listpipelineexecutionsoutputresponsetypedef).
+[ListPipelineExecutionsOutputTypeDef](./type_defs.md#listpipelineexecutionsoutputtypedef).
 
 ### list_pipelines
 
@@ -578,7 +589,7 @@ Boto3 documentation:
 [CodePipeline.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipelines)
 
 Arguments mapping described in
-[ListPipelinesInputTypeDef](./type_defs.md#listpipelinesinputtypedef).
+[ListPipelinesInputRequestTypeDef](./type_defs.md#listpipelinesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -586,7 +597,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPipelinesOutputResponseTypeDef](./type_defs.md#listpipelinesoutputresponsetypedef).
+[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -600,7 +611,7 @@ Boto3 documentation:
 [CodePipeline.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -609,7 +620,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### list_webhooks
 
@@ -621,15 +632,14 @@ Boto3 documentation:
 [CodePipeline.Client.list_webhooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_webhooks)
 
 Arguments mapping described in
-[ListWebhooksInputTypeDef](./type_defs.md#listwebhooksinputtypedef).
+[ListWebhooksInputRequestTypeDef](./type_defs.md#listwebhooksinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListWebhooksOutputResponseTypeDef](./type_defs.md#listwebhooksoutputresponsetypedef).
+Returns [ListWebhooksOutputTypeDef](./type_defs.md#listwebhooksoutputtypedef).
 
 ### poll_for_jobs
 
@@ -641,7 +651,7 @@ Boto3 documentation:
 [CodePipeline.Client.poll_for_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_jobs)
 
 Arguments mapping described in
-[PollForJobsInputTypeDef](./type_defs.md#pollforjobsinputtypedef).
+[PollForJobsInputRequestTypeDef](./type_defs.md#pollforjobsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -650,8 +660,7 @@ Keyword-only arguments:
 - `maxBatchSize`: `int`
 - `queryParam`: `Dict`\[`str`, `str`\]
 
-Returns
-[PollForJobsOutputResponseTypeDef](./type_defs.md#pollforjobsoutputresponsetypedef).
+Returns [PollForJobsOutputTypeDef](./type_defs.md#pollforjobsoutputtypedef).
 
 ### poll_for_third_party_jobs
 
@@ -664,7 +673,7 @@ Boto3 documentation:
 [CodePipeline.Client.poll_for_third_party_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_third_party_jobs)
 
 Arguments mapping described in
-[PollForThirdPartyJobsInputTypeDef](./type_defs.md#pollforthirdpartyjobsinputtypedef).
+[PollForThirdPartyJobsInputRequestTypeDef](./type_defs.md#pollforthirdpartyjobsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -673,7 +682,7 @@ Keyword-only arguments:
 - `maxBatchSize`: `int`
 
 Returns
-[PollForThirdPartyJobsOutputResponseTypeDef](./type_defs.md#pollforthirdpartyjobsoutputresponsetypedef).
+[PollForThirdPartyJobsOutputTypeDef](./type_defs.md#pollforthirdpartyjobsoutputtypedef).
 
 ### put_action_revision
 
@@ -685,7 +694,7 @@ Boto3 documentation:
 [CodePipeline.Client.put_action_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_action_revision)
 
 Arguments mapping described in
-[PutActionRevisionInputTypeDef](./type_defs.md#putactionrevisioninputtypedef).
+[PutActionRevisionInputRequestTypeDef](./type_defs.md#putactionrevisioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -696,7 +705,7 @@ Keyword-only arguments:
   [ActionRevisionTypeDef](./type_defs.md#actionrevisiontypedef) *(required)*
 
 Returns
-[PutActionRevisionOutputResponseTypeDef](./type_defs.md#putactionrevisionoutputresponsetypedef).
+[PutActionRevisionOutputTypeDef](./type_defs.md#putactionrevisionoutputtypedef).
 
 ### put_approval_result
 
@@ -708,7 +717,7 @@ Boto3 documentation:
 [CodePipeline.Client.put_approval_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_approval_result)
 
 Arguments mapping described in
-[PutApprovalResultInputTypeDef](./type_defs.md#putapprovalresultinputtypedef).
+[PutApprovalResultInputRequestTypeDef](./type_defs.md#putapprovalresultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -720,7 +729,7 @@ Keyword-only arguments:
 - `token`: `str` *(required)*
 
 Returns
-[PutApprovalResultOutputResponseTypeDef](./type_defs.md#putapprovalresultoutputresponsetypedef).
+[PutApprovalResultOutputTypeDef](./type_defs.md#putapprovalresultoutputtypedef).
 
 ### put_job_failure_result
 
@@ -733,7 +742,7 @@ Boto3 documentation:
 [CodePipeline.Client.put_job_failure_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_failure_result)
 
 Arguments mapping described in
-[PutJobFailureResultInputTypeDef](./type_defs.md#putjobfailureresultinputtypedef).
+[PutJobFailureResultInputRequestTypeDef](./type_defs.md#putjobfailureresultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -752,7 +761,7 @@ Boto3 documentation:
 [CodePipeline.Client.put_job_success_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_success_result)
 
 Arguments mapping described in
-[PutJobSuccessResultInputTypeDef](./type_defs.md#putjobsuccessresultinputtypedef).
+[PutJobSuccessResultInputRequestTypeDef](./type_defs.md#putjobsuccessresultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -776,7 +785,7 @@ Boto3 documentation:
 [CodePipeline.Client.put_third_party_job_failure_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_failure_result)
 
 Arguments mapping described in
-[PutThirdPartyJobFailureResultInputTypeDef](./type_defs.md#putthirdpartyjobfailureresultinputtypedef).
+[PutThirdPartyJobFailureResultInputRequestTypeDef](./type_defs.md#putthirdpartyjobfailureresultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -797,7 +806,7 @@ Boto3 documentation:
 [CodePipeline.Client.put_third_party_job_success_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_success_result)
 
 Arguments mapping described in
-[PutThirdPartyJobSuccessResultInputTypeDef](./type_defs.md#putthirdpartyjobsuccessresultinputtypedef).
+[PutThirdPartyJobSuccessResultInputRequestTypeDef](./type_defs.md#putthirdpartyjobsuccessresultinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -819,7 +828,7 @@ Boto3 documentation:
 [CodePipeline.Client.put_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_webhook)
 
 Arguments mapping described in
-[PutWebhookInputTypeDef](./type_defs.md#putwebhookinputtypedef).
+[PutWebhookInputRequestTypeDef](./type_defs.md#putwebhookinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -828,8 +837,7 @@ Keyword-only arguments:
   *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[PutWebhookOutputResponseTypeDef](./type_defs.md#putwebhookoutputresponsetypedef).
+Returns [PutWebhookOutputTypeDef](./type_defs.md#putwebhookoutputtypedef).
 
 ### register_webhook_with_third_party
 
@@ -843,7 +851,7 @@ Boto3 documentation:
 [CodePipeline.Client.register_webhook_with_third_party](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.register_webhook_with_third_party)
 
 Arguments mapping described in
-[RegisterWebhookWithThirdPartyInputTypeDef](./type_defs.md#registerwebhookwiththirdpartyinputtypedef).
+[RegisterWebhookWithThirdPartyInputRequestTypeDef](./type_defs.md#registerwebhookwiththirdpartyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -862,7 +870,7 @@ Boto3 documentation:
 [CodePipeline.Client.retry_stage_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.retry_stage_execution)
 
 Arguments mapping described in
-[RetryStageExecutionInputTypeDef](./type_defs.md#retrystageexecutioninputtypedef).
+[RetryStageExecutionInputRequestTypeDef](./type_defs.md#retrystageexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -873,7 +881,7 @@ Keyword-only arguments:
   [StageRetryModeType](./literals.md#stageretrymodetype)) *(required)*
 
 Returns
-[RetryStageExecutionOutputResponseTypeDef](./type_defs.md#retrystageexecutionoutputresponsetypedef).
+[RetryStageExecutionOutputTypeDef](./type_defs.md#retrystageexecutionoutputtypedef).
 
 ### start_pipeline_execution
 
@@ -886,7 +894,7 @@ Boto3 documentation:
 [CodePipeline.Client.start_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.start_pipeline_execution)
 
 Arguments mapping described in
-[StartPipelineExecutionInputTypeDef](./type_defs.md#startpipelineexecutioninputtypedef).
+[StartPipelineExecutionInputRequestTypeDef](./type_defs.md#startpipelineexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -894,7 +902,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[StartPipelineExecutionOutputResponseTypeDef](./type_defs.md#startpipelineexecutionoutputresponsetypedef).
+[StartPipelineExecutionOutputTypeDef](./type_defs.md#startpipelineexecutionoutputtypedef).
 
 ### stop_pipeline_execution
 
@@ -907,7 +915,7 @@ Boto3 documentation:
 [CodePipeline.Client.stop_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.stop_pipeline_execution)
 
 Arguments mapping described in
-[StopPipelineExecutionInputTypeDef](./type_defs.md#stoppipelineexecutioninputtypedef).
+[StopPipelineExecutionInputRequestTypeDef](./type_defs.md#stoppipelineexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -917,7 +925,7 @@ Keyword-only arguments:
 - `reason`: `str`
 
 Returns
-[StopPipelineExecutionOutputResponseTypeDef](./type_defs.md#stoppipelineexecutionoutputresponsetypedef).
+[StopPipelineExecutionOutputTypeDef](./type_defs.md#stoppipelineexecutionoutputtypedef).
 
 ### tag_resource
 
@@ -929,7 +937,7 @@ Boto3 documentation:
 [CodePipeline.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -948,7 +956,7 @@ Boto3 documentation:
 [CodePipeline.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -968,7 +976,7 @@ Boto3 documentation:
 [CodePipeline.Client.update_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_action_type)
 
 Arguments mapping described in
-[UpdateActionTypeInputTypeDef](./type_defs.md#updateactiontypeinputtypedef).
+[UpdateActionTypeInputRequestTypeDef](./type_defs.md#updateactiontypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -986,7 +994,7 @@ Boto3 documentation:
 [CodePipeline.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_pipeline)
 
 Arguments mapping described in
-[UpdatePipelineInputTypeDef](./type_defs.md#updatepipelineinputtypedef).
+[UpdatePipelineInputRequestTypeDef](./type_defs.md#updatepipelineinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -995,7 +1003,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdatePipelineOutputResponseTypeDef](./type_defs.md#updatepipelineoutputresponsetypedef).
+[UpdatePipelineOutputTypeDef](./type_defs.md#updatepipelineoutputtypedef).
 
 ### get_paginator
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [PersonalizeEventsClient](#personalizeeventsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [put_events](#put_events)
@@ -53,6 +54,17 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 
 ## Methods
+
+### exceptions
+
+PersonalizeEventsClient exceptions.
+
+Type annotations for `boto3.client("personalize-events").exceptions` method.
+
+Boto3 documentation:
+[PersonalizeEvents.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
 
 ### can_paginate
 
@@ -98,7 +110,7 @@ Boto3 documentation:
 [PersonalizeEvents.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_events)
 
 Arguments mapping described in
-[PutEventsRequestTypeDef](./type_defs.md#puteventsrequesttypedef).
+[PutEventsRequestRequestTypeDef](./type_defs.md#puteventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -118,7 +130,7 @@ Boto3 documentation:
 [PersonalizeEvents.Client.put_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_items)
 
 Arguments mapping described in
-[PutItemsRequestTypeDef](./type_defs.md#putitemsrequesttypedef).
+[PutItemsRequestRequestTypeDef](./type_defs.md#putitemsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -135,7 +147,7 @@ Boto3 documentation:
 [PersonalizeEvents.Client.put_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents.Client.put_users)
 
 Arguments mapping described in
-[PutUsersRequestTypeDef](./type_defs.md#putusersrequesttypedef).
+[PutUsersRequestRequestTypeDef](./type_defs.md#putusersrequestrequesttypedef).
 
 Keyword-only arguments:
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [CloudHSMV2Client](#cloudhsmv2client)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [copy_backup_to_region](#copy_backup_to_region)
     - [create_cluster](#create_cluster)
@@ -70,6 +71,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CloudHSMV2Client exceptions.
+
+Type annotations for `boto3.client("cloudhsmv2").exceptions` method.
+
+Boto3 documentation:
+[CloudHSMV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -95,7 +107,7 @@ Boto3 documentation:
 [CloudHSMV2.Client.copy_backup_to_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.copy_backup_to_region)
 
 Arguments mapping described in
-[CopyBackupToRegionRequestTypeDef](./type_defs.md#copybackuptoregionrequesttypedef).
+[CopyBackupToRegionRequestRequestTypeDef](./type_defs.md#copybackuptoregionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -104,7 +116,7 @@ Keyword-only arguments:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyBackupToRegionResponseResponseTypeDef](./type_defs.md#copybackuptoregionresponseresponsetypedef).
+[CopyBackupToRegionResponseTypeDef](./type_defs.md#copybackuptoregionresponsetypedef).
 
 ### create_cluster
 
@@ -116,7 +128,7 @@ Boto3 documentation:
 [CloudHSMV2.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_cluster)
 
 Arguments mapping described in
-[CreateClusterRequestTypeDef](./type_defs.md#createclusterrequesttypedef).
+[CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -128,7 +140,7 @@ Keyword-only arguments:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateClusterResponseResponseTypeDef](./type_defs.md#createclusterresponseresponsetypedef).
+[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
 ### create_hsm
 
@@ -141,7 +153,7 @@ Boto3 documentation:
 [CloudHSMV2.Client.create_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.create_hsm)
 
 Arguments mapping described in
-[CreateHsmRequestTypeDef](./type_defs.md#createhsmrequesttypedef).
+[CreateHsmRequestRequestTypeDef](./type_defs.md#createhsmrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,8 +161,7 @@ Keyword-only arguments:
 - `AvailabilityZone`: `str` *(required)*
 - `IpAddress`: `str`
 
-Returns
-[CreateHsmResponseResponseTypeDef](./type_defs.md#createhsmresponseresponsetypedef).
+Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
 
 ### delete_backup
 
@@ -162,14 +173,14 @@ Boto3 documentation:
 [CloudHSMV2.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_backup)
 
 Arguments mapping described in
-[DeleteBackupRequestTypeDef](./type_defs.md#deletebackuprequesttypedef).
+[DeleteBackupRequestRequestTypeDef](./type_defs.md#deletebackuprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
 
 Returns
-[DeleteBackupResponseResponseTypeDef](./type_defs.md#deletebackupresponseresponsetypedef).
+[DeleteBackupResponseTypeDef](./type_defs.md#deletebackupresponsetypedef).
 
 ### delete_cluster
 
@@ -181,14 +192,14 @@ Boto3 documentation:
 [CloudHSMV2.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_cluster)
 
 Arguments mapping described in
-[DeleteClusterRequestTypeDef](./type_defs.md#deleteclusterrequesttypedef).
+[DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
 Returns
-[DeleteClusterResponseResponseTypeDef](./type_defs.md#deleteclusterresponseresponsetypedef).
+[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
 
 ### delete_hsm
 
@@ -200,7 +211,7 @@ Boto3 documentation:
 [CloudHSMV2.Client.delete_hsm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.delete_hsm)
 
 Arguments mapping described in
-[DeleteHsmRequestTypeDef](./type_defs.md#deletehsmrequesttypedef).
+[DeleteHsmRequestRequestTypeDef](./type_defs.md#deletehsmrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -209,8 +220,7 @@ Keyword-only arguments:
 - `EniId`: `str`
 - `EniIp`: `str`
 
-Returns
-[DeleteHsmResponseResponseTypeDef](./type_defs.md#deletehsmresponseresponsetypedef).
+Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
 
 ### describe_backups
 
@@ -222,7 +232,7 @@ Boto3 documentation:
 [CloudHSMV2.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_backups)
 
 Arguments mapping described in
-[DescribeBackupsRequestTypeDef](./type_defs.md#describebackupsrequesttypedef).
+[DescribeBackupsRequestRequestTypeDef](./type_defs.md#describebackupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -232,7 +242,7 @@ Keyword-only arguments:
 - `SortAscending`: `bool`
 
 Returns
-[DescribeBackupsResponseResponseTypeDef](./type_defs.md#describebackupsresponseresponsetypedef).
+[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
 
 ### describe_clusters
 
@@ -244,7 +254,7 @@ Boto3 documentation:
 [CloudHSMV2.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.describe_clusters)
 
 Arguments mapping described in
-[DescribeClustersRequestTypeDef](./type_defs.md#describeclustersrequesttypedef).
+[DescribeClustersRequestRequestTypeDef](./type_defs.md#describeclustersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -253,7 +263,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeClustersResponseResponseTypeDef](./type_defs.md#describeclustersresponseresponsetypedef).
+[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
 
 ### generate_presigned_url
 
@@ -285,7 +295,7 @@ Boto3 documentation:
 [CloudHSMV2.Client.initialize_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.initialize_cluster)
 
 Arguments mapping described in
-[InitializeClusterRequestTypeDef](./type_defs.md#initializeclusterrequesttypedef).
+[InitializeClusterRequestRequestTypeDef](./type_defs.md#initializeclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -294,7 +304,7 @@ Keyword-only arguments:
 - `TrustAnchor`: `str` *(required)*
 
 Returns
-[InitializeClusterResponseResponseTypeDef](./type_defs.md#initializeclusterresponseresponsetypedef).
+[InitializeClusterResponseTypeDef](./type_defs.md#initializeclusterresponsetypedef).
 
 ### list_tags
 
@@ -306,7 +316,7 @@ Boto3 documentation:
 [CloudHSMV2.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.list_tags)
 
 Arguments mapping described in
-[ListTagsRequestTypeDef](./type_defs.md#listtagsrequesttypedef).
+[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -314,8 +324,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### modify_backup_attributes
 
@@ -328,7 +337,7 @@ Boto3 documentation:
 [CloudHSMV2.Client.modify_backup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_backup_attributes)
 
 Arguments mapping described in
-[ModifyBackupAttributesRequestTypeDef](./type_defs.md#modifybackupattributesrequesttypedef).
+[ModifyBackupAttributesRequestRequestTypeDef](./type_defs.md#modifybackupattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -336,7 +345,7 @@ Keyword-only arguments:
 - `NeverExpires`: `bool` *(required)*
 
 Returns
-[ModifyBackupAttributesResponseResponseTypeDef](./type_defs.md#modifybackupattributesresponseresponsetypedef).
+[ModifyBackupAttributesResponseTypeDef](./type_defs.md#modifybackupattributesresponsetypedef).
 
 ### modify_cluster
 
@@ -348,7 +357,7 @@ Boto3 documentation:
 [CloudHSMV2.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.modify_cluster)
 
 Arguments mapping described in
-[ModifyClusterRequestTypeDef](./type_defs.md#modifyclusterrequesttypedef).
+[ModifyClusterRequestRequestTypeDef](./type_defs.md#modifyclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -358,7 +367,7 @@ Keyword-only arguments:
 - `ClusterId`: `str` *(required)*
 
 Returns
-[ModifyClusterResponseResponseTypeDef](./type_defs.md#modifyclusterresponseresponsetypedef).
+[ModifyClusterResponseTypeDef](./type_defs.md#modifyclusterresponsetypedef).
 
 ### restore_backup
 
@@ -371,14 +380,14 @@ Boto3 documentation:
 [CloudHSMV2.Client.restore_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.restore_backup)
 
 Arguments mapping described in
-[RestoreBackupRequestTypeDef](./type_defs.md#restorebackuprequesttypedef).
+[RestoreBackupRequestRequestTypeDef](./type_defs.md#restorebackuprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
 
 Returns
-[RestoreBackupResponseResponseTypeDef](./type_defs.md#restorebackupresponseresponsetypedef).
+[RestoreBackupResponseTypeDef](./type_defs.md#restorebackupresponsetypedef).
 
 ### tag_resource
 
@@ -390,7 +399,7 @@ Boto3 documentation:
 [CloudHSMV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,7 +418,7 @@ Boto3 documentation:
 [CloudHSMV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

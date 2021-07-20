@@ -11,6 +11,7 @@ type annotations stubs module
   - [ApplicationAutoScalingClient](#applicationautoscalingclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [delete_scaling_policy](#delete_scaling_policy)
     - [delete_scheduled_action](#delete_scheduled_action)
@@ -66,6 +67,18 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ApplicationAutoScalingClient exceptions.
+
+Type annotations for `boto3.client("application-autoscaling").exceptions`
+method.
+
+Boto3 documentation:
+[ApplicationAutoScaling.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -94,7 +107,7 @@ Boto3 documentation:
 [ApplicationAutoScaling.Client.delete_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scaling_policy)
 
 Arguments mapping described in
-[DeleteScalingPolicyRequestTypeDef](./type_defs.md#deletescalingpolicyrequesttypedef).
+[DeleteScalingPolicyRequestRequestTypeDef](./type_defs.md#deletescalingpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -119,7 +132,7 @@ Boto3 documentation:
 [ApplicationAutoScaling.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scheduled_action)
 
 Arguments mapping described in
-[DeleteScheduledActionRequestTypeDef](./type_defs.md#deletescheduledactionrequesttypedef).
+[DeleteScheduledActionRequestRequestTypeDef](./type_defs.md#deletescheduledactionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,7 +157,7 @@ Boto3 documentation:
 [ApplicationAutoScaling.Client.deregister_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.deregister_scalable_target)
 
 Arguments mapping described in
-[DeregisterScalableTargetRequestTypeDef](./type_defs.md#deregisterscalabletargetrequesttypedef).
+[DeregisterScalableTargetRequestRequestTypeDef](./type_defs.md#deregisterscalabletargetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,7 +180,7 @@ Boto3 documentation:
 [ApplicationAutoScaling.Client.describe_scalable_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scalable_targets)
 
 Arguments mapping described in
-[DescribeScalableTargetsRequestTypeDef](./type_defs.md#describescalabletargetsrequesttypedef).
+[DescribeScalableTargetsRequestRequestTypeDef](./type_defs.md#describescalabletargetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -180,7 +193,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScalableTargetsResponseResponseTypeDef](./type_defs.md#describescalabletargetsresponseresponsetypedef).
+[DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef).
 
 ### describe_scaling_activities
 
@@ -194,7 +207,7 @@ Boto3 documentation:
 [ApplicationAutoScaling.Client.describe_scaling_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_activities)
 
 Arguments mapping described in
-[DescribeScalingActivitiesRequestTypeDef](./type_defs.md#describescalingactivitiesrequesttypedef).
+[DescribeScalingActivitiesRequestRequestTypeDef](./type_defs.md#describescalingactivitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,7 +220,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScalingActivitiesResponseResponseTypeDef](./type_defs.md#describescalingactivitiesresponseresponsetypedef).
+[DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef).
 
 ### describe_scaling_policies
 
@@ -221,7 +234,7 @@ Boto3 documentation:
 [ApplicationAutoScaling.Client.describe_scaling_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_policies)
 
 Arguments mapping described in
-[DescribeScalingPoliciesRequestTypeDef](./type_defs.md#describescalingpoliciesrequesttypedef).
+[DescribeScalingPoliciesRequestRequestTypeDef](./type_defs.md#describescalingpoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -235,7 +248,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScalingPoliciesResponseResponseTypeDef](./type_defs.md#describescalingpoliciesresponseresponsetypedef).
+[DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef).
 
 ### describe_scheduled_actions
 
@@ -249,7 +262,7 @@ Boto3 documentation:
 [ApplicationAutoScaling.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scheduled_actions)
 
 Arguments mapping described in
-[DescribeScheduledActionsRequestTypeDef](./type_defs.md#describescheduledactionsrequesttypedef).
+[DescribeScheduledActionsRequestRequestTypeDef](./type_defs.md#describescheduledactionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -263,7 +276,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScheduledActionsResponseResponseTypeDef](./type_defs.md#describescheduledactionsresponseresponsetypedef).
+[DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -296,7 +309,7 @@ Boto3 documentation:
 [ApplicationAutoScaling.Client.put_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scaling_policy)
 
 Arguments mapping described in
-[PutScalingPolicyRequestTypeDef](./type_defs.md#putscalingpolicyrequesttypedef).
+[PutScalingPolicyRequestRequestTypeDef](./type_defs.md#putscalingpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -313,7 +326,7 @@ Keyword-only arguments:
   [TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef)
 
 Returns
-[PutScalingPolicyResponseResponseTypeDef](./type_defs.md#putscalingpolicyresponseresponsetypedef).
+[PutScalingPolicyResponseTypeDef](./type_defs.md#putscalingpolicyresponsetypedef).
 
 ### put_scheduled_action
 
@@ -327,7 +340,7 @@ Boto3 documentation:
 [ApplicationAutoScaling.Client.put_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scheduled_action)
 
 Arguments mapping described in
-[PutScheduledActionRequestTypeDef](./type_defs.md#putscheduledactionrequesttypedef).
+[PutScheduledActionRequestRequestTypeDef](./type_defs.md#putscheduledactionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -357,7 +370,7 @@ Boto3 documentation:
 [ApplicationAutoScaling.Client.register_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.register_scalable_target)
 
 Arguments mapping described in
-[RegisterScalableTargetRequestTypeDef](./type_defs.md#registerscalabletargetrequesttypedef).
+[RegisterScalableTargetRequestRequestTypeDef](./type_defs.md#registerscalabletargetrequestrequesttypedef).
 
 Keyword-only arguments:
 

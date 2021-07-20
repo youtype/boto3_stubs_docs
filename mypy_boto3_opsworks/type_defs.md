@@ -10,105 +10,105 @@ type annotations stubs module
 - [Typed dictionaries for boto3 OpsWorks module](#typed-dictionaries-for-boto3-opsworks-module)
   - [AgentVersionTypeDef](#agentversiontypedef)
   - [AppTypeDef](#apptypedef)
-  - [AssignInstanceRequestTypeDef](#assigninstancerequesttypedef)
-  - [AssignVolumeRequestTypeDef](#assignvolumerequesttypedef)
-  - [AssociateElasticIpRequestTypeDef](#associateelasticiprequesttypedef)
-  - [AttachElasticLoadBalancerRequestTypeDef](#attachelasticloadbalancerrequesttypedef)
+  - [AssignInstanceRequestRequestTypeDef](#assigninstancerequestrequesttypedef)
+  - [AssignVolumeRequestRequestTypeDef](#assignvolumerequestrequesttypedef)
+  - [AssociateElasticIpRequestRequestTypeDef](#associateelasticiprequestrequesttypedef)
+  - [AttachElasticLoadBalancerRequestRequestTypeDef](#attachelasticloadbalancerrequestrequesttypedef)
   - [AutoScalingThresholdsTypeDef](#autoscalingthresholdstypedef)
   - [BlockDeviceMappingTypeDef](#blockdevicemappingtypedef)
   - [ChefConfigurationTypeDef](#chefconfigurationtypedef)
-  - [CloneStackRequestTypeDef](#clonestackrequesttypedef)
-  - [CloneStackResultResponseTypeDef](#clonestackresultresponsetypedef)
+  - [CloneStackRequestRequestTypeDef](#clonestackrequestrequesttypedef)
+  - [CloneStackResultTypeDef](#clonestackresulttypedef)
   - [CloudWatchLogsConfigurationTypeDef](#cloudwatchlogsconfigurationtypedef)
   - [CloudWatchLogsLogStreamTypeDef](#cloudwatchlogslogstreamtypedef)
   - [CommandTypeDef](#commandtypedef)
-  - [CreateAppRequestTypeDef](#createapprequesttypedef)
-  - [CreateAppResultResponseTypeDef](#createappresultresponsetypedef)
-  - [CreateDeploymentRequestTypeDef](#createdeploymentrequesttypedef)
-  - [CreateDeploymentResultResponseTypeDef](#createdeploymentresultresponsetypedef)
-  - [CreateInstanceRequestTypeDef](#createinstancerequesttypedef)
-  - [CreateInstanceResultResponseTypeDef](#createinstanceresultresponsetypedef)
+  - [CreateAppRequestRequestTypeDef](#createapprequestrequesttypedef)
+  - [CreateAppResultTypeDef](#createappresulttypedef)
+  - [CreateDeploymentRequestRequestTypeDef](#createdeploymentrequestrequesttypedef)
+  - [CreateDeploymentResultTypeDef](#createdeploymentresulttypedef)
+  - [CreateInstanceRequestRequestTypeDef](#createinstancerequestrequesttypedef)
+  - [CreateInstanceResultTypeDef](#createinstanceresulttypedef)
+  - [CreateLayerRequestRequestTypeDef](#createlayerrequestrequesttypedef)
   - [CreateLayerRequestStackTypeDef](#createlayerrequeststacktypedef)
-  - [CreateLayerRequestTypeDef](#createlayerrequesttypedef)
-  - [CreateLayerResultResponseTypeDef](#createlayerresultresponsetypedef)
+  - [CreateLayerResultTypeDef](#createlayerresulttypedef)
+  - [CreateStackRequestRequestTypeDef](#createstackrequestrequesttypedef)
   - [CreateStackRequestServiceResourceTypeDef](#createstackrequestserviceresourcetypedef)
-  - [CreateStackRequestTypeDef](#createstackrequesttypedef)
-  - [CreateStackResultResponseTypeDef](#createstackresultresponsetypedef)
-  - [CreateUserProfileRequestTypeDef](#createuserprofilerequesttypedef)
-  - [CreateUserProfileResultResponseTypeDef](#createuserprofileresultresponsetypedef)
+  - [CreateStackResultTypeDef](#createstackresulttypedef)
+  - [CreateUserProfileRequestRequestTypeDef](#createuserprofilerequestrequesttypedef)
+  - [CreateUserProfileResultTypeDef](#createuserprofileresulttypedef)
   - [DataSourceTypeDef](#datasourcetypedef)
-  - [DeleteAppRequestTypeDef](#deleteapprequesttypedef)
-  - [DeleteInstanceRequestTypeDef](#deleteinstancerequesttypedef)
-  - [DeleteLayerRequestTypeDef](#deletelayerrequesttypedef)
-  - [DeleteStackRequestTypeDef](#deletestackrequesttypedef)
-  - [DeleteUserProfileRequestTypeDef](#deleteuserprofilerequesttypedef)
+  - [DeleteAppRequestRequestTypeDef](#deleteapprequestrequesttypedef)
+  - [DeleteInstanceRequestRequestTypeDef](#deleteinstancerequestrequesttypedef)
+  - [DeleteLayerRequestRequestTypeDef](#deletelayerrequestrequesttypedef)
+  - [DeleteStackRequestRequestTypeDef](#deletestackrequestrequesttypedef)
+  - [DeleteUserProfileRequestRequestTypeDef](#deleteuserprofilerequestrequesttypedef)
   - [DeploymentCommandTypeDef](#deploymentcommandtypedef)
   - [DeploymentTypeDef](#deploymenttypedef)
-  - [DeregisterEcsClusterRequestTypeDef](#deregisterecsclusterrequesttypedef)
-  - [DeregisterElasticIpRequestTypeDef](#deregisterelasticiprequesttypedef)
-  - [DeregisterInstanceRequestTypeDef](#deregisterinstancerequesttypedef)
-  - [DeregisterRdsDbInstanceRequestTypeDef](#deregisterrdsdbinstancerequesttypedef)
-  - [DeregisterVolumeRequestTypeDef](#deregistervolumerequesttypedef)
-  - [DescribeAgentVersionsRequestTypeDef](#describeagentversionsrequesttypedef)
-  - [DescribeAgentVersionsResultResponseTypeDef](#describeagentversionsresultresponsetypedef)
-  - [DescribeAppsRequestTypeDef](#describeappsrequesttypedef)
-  - [DescribeAppsResultResponseTypeDef](#describeappsresultresponsetypedef)
-  - [DescribeCommandsRequestTypeDef](#describecommandsrequesttypedef)
-  - [DescribeCommandsResultResponseTypeDef](#describecommandsresultresponsetypedef)
-  - [DescribeDeploymentsRequestTypeDef](#describedeploymentsrequesttypedef)
-  - [DescribeDeploymentsResultResponseTypeDef](#describedeploymentsresultresponsetypedef)
-  - [DescribeEcsClustersRequestTypeDef](#describeecsclustersrequesttypedef)
-  - [DescribeEcsClustersResultResponseTypeDef](#describeecsclustersresultresponsetypedef)
-  - [DescribeElasticIpsRequestTypeDef](#describeelasticipsrequesttypedef)
-  - [DescribeElasticIpsResultResponseTypeDef](#describeelasticipsresultresponsetypedef)
-  - [DescribeElasticLoadBalancersRequestTypeDef](#describeelasticloadbalancersrequesttypedef)
-  - [DescribeElasticLoadBalancersResultResponseTypeDef](#describeelasticloadbalancersresultresponsetypedef)
-  - [DescribeInstancesRequestTypeDef](#describeinstancesrequesttypedef)
-  - [DescribeInstancesResultResponseTypeDef](#describeinstancesresultresponsetypedef)
-  - [DescribeLayersRequestTypeDef](#describelayersrequesttypedef)
-  - [DescribeLayersResultResponseTypeDef](#describelayersresultresponsetypedef)
-  - [DescribeLoadBasedAutoScalingRequestTypeDef](#describeloadbasedautoscalingrequesttypedef)
-  - [DescribeLoadBasedAutoScalingResultResponseTypeDef](#describeloadbasedautoscalingresultresponsetypedef)
-  - [DescribeMyUserProfileResultResponseTypeDef](#describemyuserprofileresultresponsetypedef)
-  - [DescribeOperatingSystemsResponseResponseTypeDef](#describeoperatingsystemsresponseresponsetypedef)
-  - [DescribePermissionsRequestTypeDef](#describepermissionsrequesttypedef)
-  - [DescribePermissionsResultResponseTypeDef](#describepermissionsresultresponsetypedef)
-  - [DescribeRaidArraysRequestTypeDef](#describeraidarraysrequesttypedef)
-  - [DescribeRaidArraysResultResponseTypeDef](#describeraidarraysresultresponsetypedef)
-  - [DescribeRdsDbInstancesRequestTypeDef](#describerdsdbinstancesrequesttypedef)
-  - [DescribeRdsDbInstancesResultResponseTypeDef](#describerdsdbinstancesresultresponsetypedef)
-  - [DescribeServiceErrorsRequestTypeDef](#describeserviceerrorsrequesttypedef)
-  - [DescribeServiceErrorsResultResponseTypeDef](#describeserviceerrorsresultresponsetypedef)
-  - [DescribeStackProvisioningParametersRequestTypeDef](#describestackprovisioningparametersrequesttypedef)
-  - [DescribeStackProvisioningParametersResultResponseTypeDef](#describestackprovisioningparametersresultresponsetypedef)
-  - [DescribeStackSummaryRequestTypeDef](#describestacksummaryrequesttypedef)
-  - [DescribeStackSummaryResultResponseTypeDef](#describestacksummaryresultresponsetypedef)
-  - [DescribeStacksRequestTypeDef](#describestacksrequesttypedef)
-  - [DescribeStacksResultResponseTypeDef](#describestacksresultresponsetypedef)
-  - [DescribeTimeBasedAutoScalingRequestTypeDef](#describetimebasedautoscalingrequesttypedef)
-  - [DescribeTimeBasedAutoScalingResultResponseTypeDef](#describetimebasedautoscalingresultresponsetypedef)
-  - [DescribeUserProfilesRequestTypeDef](#describeuserprofilesrequesttypedef)
-  - [DescribeUserProfilesResultResponseTypeDef](#describeuserprofilesresultresponsetypedef)
-  - [DescribeVolumesRequestTypeDef](#describevolumesrequesttypedef)
-  - [DescribeVolumesResultResponseTypeDef](#describevolumesresultresponsetypedef)
-  - [DetachElasticLoadBalancerRequestTypeDef](#detachelasticloadbalancerrequesttypedef)
-  - [DisassociateElasticIpRequestTypeDef](#disassociateelasticiprequesttypedef)
+  - [DeregisterEcsClusterRequestRequestTypeDef](#deregisterecsclusterrequestrequesttypedef)
+  - [DeregisterElasticIpRequestRequestTypeDef](#deregisterelasticiprequestrequesttypedef)
+  - [DeregisterInstanceRequestRequestTypeDef](#deregisterinstancerequestrequesttypedef)
+  - [DeregisterRdsDbInstanceRequestRequestTypeDef](#deregisterrdsdbinstancerequestrequesttypedef)
+  - [DeregisterVolumeRequestRequestTypeDef](#deregistervolumerequestrequesttypedef)
+  - [DescribeAgentVersionsRequestRequestTypeDef](#describeagentversionsrequestrequesttypedef)
+  - [DescribeAgentVersionsResultTypeDef](#describeagentversionsresulttypedef)
+  - [DescribeAppsRequestRequestTypeDef](#describeappsrequestrequesttypedef)
+  - [DescribeAppsResultTypeDef](#describeappsresulttypedef)
+  - [DescribeCommandsRequestRequestTypeDef](#describecommandsrequestrequesttypedef)
+  - [DescribeCommandsResultTypeDef](#describecommandsresulttypedef)
+  - [DescribeDeploymentsRequestRequestTypeDef](#describedeploymentsrequestrequesttypedef)
+  - [DescribeDeploymentsResultTypeDef](#describedeploymentsresulttypedef)
+  - [DescribeEcsClustersRequestRequestTypeDef](#describeecsclustersrequestrequesttypedef)
+  - [DescribeEcsClustersResultTypeDef](#describeecsclustersresulttypedef)
+  - [DescribeElasticIpsRequestRequestTypeDef](#describeelasticipsrequestrequesttypedef)
+  - [DescribeElasticIpsResultTypeDef](#describeelasticipsresulttypedef)
+  - [DescribeElasticLoadBalancersRequestRequestTypeDef](#describeelasticloadbalancersrequestrequesttypedef)
+  - [DescribeElasticLoadBalancersResultTypeDef](#describeelasticloadbalancersresulttypedef)
+  - [DescribeInstancesRequestRequestTypeDef](#describeinstancesrequestrequesttypedef)
+  - [DescribeInstancesResultTypeDef](#describeinstancesresulttypedef)
+  - [DescribeLayersRequestRequestTypeDef](#describelayersrequestrequesttypedef)
+  - [DescribeLayersResultTypeDef](#describelayersresulttypedef)
+  - [DescribeLoadBasedAutoScalingRequestRequestTypeDef](#describeloadbasedautoscalingrequestrequesttypedef)
+  - [DescribeLoadBasedAutoScalingResultTypeDef](#describeloadbasedautoscalingresulttypedef)
+  - [DescribeMyUserProfileResultTypeDef](#describemyuserprofileresulttypedef)
+  - [DescribeOperatingSystemsResponseTypeDef](#describeoperatingsystemsresponsetypedef)
+  - [DescribePermissionsRequestRequestTypeDef](#describepermissionsrequestrequesttypedef)
+  - [DescribePermissionsResultTypeDef](#describepermissionsresulttypedef)
+  - [DescribeRaidArraysRequestRequestTypeDef](#describeraidarraysrequestrequesttypedef)
+  - [DescribeRaidArraysResultTypeDef](#describeraidarraysresulttypedef)
+  - [DescribeRdsDbInstancesRequestRequestTypeDef](#describerdsdbinstancesrequestrequesttypedef)
+  - [DescribeRdsDbInstancesResultTypeDef](#describerdsdbinstancesresulttypedef)
+  - [DescribeServiceErrorsRequestRequestTypeDef](#describeserviceerrorsrequestrequesttypedef)
+  - [DescribeServiceErrorsResultTypeDef](#describeserviceerrorsresulttypedef)
+  - [DescribeStackProvisioningParametersRequestRequestTypeDef](#describestackprovisioningparametersrequestrequesttypedef)
+  - [DescribeStackProvisioningParametersResultTypeDef](#describestackprovisioningparametersresulttypedef)
+  - [DescribeStackSummaryRequestRequestTypeDef](#describestacksummaryrequestrequesttypedef)
+  - [DescribeStackSummaryResultTypeDef](#describestacksummaryresulttypedef)
+  - [DescribeStacksRequestRequestTypeDef](#describestacksrequestrequesttypedef)
+  - [DescribeStacksResultTypeDef](#describestacksresulttypedef)
+  - [DescribeTimeBasedAutoScalingRequestRequestTypeDef](#describetimebasedautoscalingrequestrequesttypedef)
+  - [DescribeTimeBasedAutoScalingResultTypeDef](#describetimebasedautoscalingresulttypedef)
+  - [DescribeUserProfilesRequestRequestTypeDef](#describeuserprofilesrequestrequesttypedef)
+  - [DescribeUserProfilesResultTypeDef](#describeuserprofilesresulttypedef)
+  - [DescribeVolumesRequestRequestTypeDef](#describevolumesrequestrequesttypedef)
+  - [DescribeVolumesResultTypeDef](#describevolumesresulttypedef)
+  - [DetachElasticLoadBalancerRequestRequestTypeDef](#detachelasticloadbalancerrequestrequesttypedef)
+  - [DisassociateElasticIpRequestRequestTypeDef](#disassociateelasticiprequestrequesttypedef)
   - [EbsBlockDeviceTypeDef](#ebsblockdevicetypedef)
   - [EcsClusterTypeDef](#ecsclustertypedef)
   - [ElasticIpTypeDef](#elasticiptypedef)
   - [ElasticLoadBalancerTypeDef](#elasticloadbalancertypedef)
   - [EnvironmentVariableTypeDef](#environmentvariabletypedef)
-  - [GetHostnameSuggestionRequestTypeDef](#gethostnamesuggestionrequesttypedef)
-  - [GetHostnameSuggestionResultResponseTypeDef](#gethostnamesuggestionresultresponsetypedef)
-  - [GrantAccessRequestTypeDef](#grantaccessrequesttypedef)
-  - [GrantAccessResultResponseTypeDef](#grantaccessresultresponsetypedef)
+  - [GetHostnameSuggestionRequestRequestTypeDef](#gethostnamesuggestionrequestrequesttypedef)
+  - [GetHostnameSuggestionResultTypeDef](#gethostnamesuggestionresulttypedef)
+  - [GrantAccessRequestRequestTypeDef](#grantaccessrequestrequesttypedef)
+  - [GrantAccessResultTypeDef](#grantaccessresulttypedef)
   - [InstanceIdentityTypeDef](#instanceidentitytypedef)
   - [InstanceTypeDef](#instancetypedef)
   - [InstancesCountTypeDef](#instancescounttypedef)
   - [LayerTypeDef](#layertypedef)
   - [LifecycleEventConfigurationTypeDef](#lifecycleeventconfigurationtypedef)
-  - [ListTagsRequestTypeDef](#listtagsrequesttypedef)
-  - [ListTagsResultResponseTypeDef](#listtagsresultresponsetypedef)
+  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
+  - [ListTagsResultTypeDef](#listtagsresulttypedef)
   - [LoadBasedAutoScalingConfigurationTypeDef](#loadbasedautoscalingconfigurationtypedef)
   - [OperatingSystemConfigurationManagerTypeDef](#operatingsystemconfigurationmanagertypedef)
   - [OperatingSystemTypeDef](#operatingsystemtypedef)
@@ -116,17 +116,17 @@ type annotations stubs module
   - [PermissionTypeDef](#permissiontypedef)
   - [RaidArrayTypeDef](#raidarraytypedef)
   - [RdsDbInstanceTypeDef](#rdsdbinstancetypedef)
-  - [RebootInstanceRequestTypeDef](#rebootinstancerequesttypedef)
+  - [RebootInstanceRequestRequestTypeDef](#rebootinstancerequestrequesttypedef)
   - [RecipesTypeDef](#recipestypedef)
-  - [RegisterEcsClusterRequestTypeDef](#registerecsclusterrequesttypedef)
-  - [RegisterEcsClusterResultResponseTypeDef](#registerecsclusterresultresponsetypedef)
-  - [RegisterElasticIpRequestTypeDef](#registerelasticiprequesttypedef)
-  - [RegisterElasticIpResultResponseTypeDef](#registerelasticipresultresponsetypedef)
-  - [RegisterInstanceRequestTypeDef](#registerinstancerequesttypedef)
-  - [RegisterInstanceResultResponseTypeDef](#registerinstanceresultresponsetypedef)
-  - [RegisterRdsDbInstanceRequestTypeDef](#registerrdsdbinstancerequesttypedef)
-  - [RegisterVolumeRequestTypeDef](#registervolumerequesttypedef)
-  - [RegisterVolumeResultResponseTypeDef](#registervolumeresultresponsetypedef)
+  - [RegisterEcsClusterRequestRequestTypeDef](#registerecsclusterrequestrequesttypedef)
+  - [RegisterEcsClusterResultTypeDef](#registerecsclusterresulttypedef)
+  - [RegisterElasticIpRequestRequestTypeDef](#registerelasticiprequestrequesttypedef)
+  - [RegisterElasticIpResultTypeDef](#registerelasticipresulttypedef)
+  - [RegisterInstanceRequestRequestTypeDef](#registerinstancerequestrequesttypedef)
+  - [RegisterInstanceResultTypeDef](#registerinstanceresulttypedef)
+  - [RegisterRdsDbInstanceRequestRequestTypeDef](#registerrdsdbinstancerequestrequesttypedef)
+  - [RegisterVolumeRequestRequestTypeDef](#registervolumerequestrequesttypedef)
+  - [RegisterVolumeResultTypeDef](#registervolumeresulttypedef)
   - [ReportedOsTypeDef](#reportedostypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SelfUserProfileTypeDef](#selfuserprofiletypedef)
@@ -134,34 +134,34 @@ type annotations stubs module
   - [ServiceResourceLayerRequestTypeDef](#serviceresourcelayerrequesttypedef)
   - [ServiceResourceStackRequestTypeDef](#serviceresourcestackrequesttypedef)
   - [ServiceResourceStackSummaryRequestTypeDef](#serviceresourcestacksummaryrequesttypedef)
-  - [SetLoadBasedAutoScalingRequestTypeDef](#setloadbasedautoscalingrequesttypedef)
-  - [SetPermissionRequestTypeDef](#setpermissionrequesttypedef)
-  - [SetTimeBasedAutoScalingRequestTypeDef](#settimebasedautoscalingrequesttypedef)
+  - [SetLoadBasedAutoScalingRequestRequestTypeDef](#setloadbasedautoscalingrequestrequesttypedef)
+  - [SetPermissionRequestRequestTypeDef](#setpermissionrequestrequesttypedef)
+  - [SetTimeBasedAutoScalingRequestRequestTypeDef](#settimebasedautoscalingrequestrequesttypedef)
   - [ShutdownEventConfigurationTypeDef](#shutdowneventconfigurationtypedef)
   - [SourceTypeDef](#sourcetypedef)
   - [SslConfigurationTypeDef](#sslconfigurationtypedef)
   - [StackConfigurationManagerTypeDef](#stackconfigurationmanagertypedef)
   - [StackSummaryTypeDef](#stacksummarytypedef)
   - [StackTypeDef](#stacktypedef)
-  - [StartInstanceRequestTypeDef](#startinstancerequesttypedef)
-  - [StartStackRequestTypeDef](#startstackrequesttypedef)
-  - [StopInstanceRequestTypeDef](#stopinstancerequesttypedef)
-  - [StopStackRequestTypeDef](#stopstackrequesttypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [StartInstanceRequestRequestTypeDef](#startinstancerequestrequesttypedef)
+  - [StartStackRequestRequestTypeDef](#startstackrequestrequesttypedef)
+  - [StopInstanceRequestRequestTypeDef](#stopinstancerequestrequesttypedef)
+  - [StopStackRequestRequestTypeDef](#stopstackrequestrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TemporaryCredentialTypeDef](#temporarycredentialtypedef)
   - [TimeBasedAutoScalingConfigurationTypeDef](#timebasedautoscalingconfigurationtypedef)
-  - [UnassignInstanceRequestTypeDef](#unassigninstancerequesttypedef)
-  - [UnassignVolumeRequestTypeDef](#unassignvolumerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateAppRequestTypeDef](#updateapprequesttypedef)
-  - [UpdateElasticIpRequestTypeDef](#updateelasticiprequesttypedef)
-  - [UpdateInstanceRequestTypeDef](#updateinstancerequesttypedef)
-  - [UpdateLayerRequestTypeDef](#updatelayerrequesttypedef)
-  - [UpdateMyUserProfileRequestTypeDef](#updatemyuserprofilerequesttypedef)
-  - [UpdateRdsDbInstanceRequestTypeDef](#updaterdsdbinstancerequesttypedef)
-  - [UpdateStackRequestTypeDef](#updatestackrequesttypedef)
-  - [UpdateUserProfileRequestTypeDef](#updateuserprofilerequesttypedef)
-  - [UpdateVolumeRequestTypeDef](#updatevolumerequesttypedef)
+  - [UnassignInstanceRequestRequestTypeDef](#unassigninstancerequestrequesttypedef)
+  - [UnassignVolumeRequestRequestTypeDef](#unassignvolumerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAppRequestRequestTypeDef](#updateapprequestrequesttypedef)
+  - [UpdateElasticIpRequestRequestTypeDef](#updateelasticiprequestrequesttypedef)
+  - [UpdateInstanceRequestRequestTypeDef](#updateinstancerequestrequesttypedef)
+  - [UpdateLayerRequestRequestTypeDef](#updatelayerrequestrequesttypedef)
+  - [UpdateMyUserProfileRequestRequestTypeDef](#updatemyuserprofilerequestrequesttypedef)
+  - [UpdateRdsDbInstanceRequestRequestTypeDef](#updaterdsdbinstancerequestrequesttypedef)
+  - [UpdateStackRequestRequestTypeDef](#updatestackrequestrequesttypedef)
+  - [UpdateUserProfileRequestRequestTypeDef](#updateuserprofilerequestrequesttypedef)
+  - [UpdateVolumeRequestRequestTypeDef](#updatevolumerequestrequesttypedef)
   - [UserProfileTypeDef](#userprofiletypedef)
   - [VolumeConfigurationTypeDef](#volumeconfigurationtypedef)
   - [VolumeTypeDef](#volumetypedef)
@@ -207,10 +207,10 @@ Optional fields:
 - `Environment`:
   `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
-## AssignInstanceRequestTypeDef
+## AssignInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import AssignInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import AssignInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -218,10 +218,10 @@ Required fields:
 - `InstanceId`: `str`
 - `LayerIds`: `List`\[`str`\]
 
-## AssignVolumeRequestTypeDef
+## AssignVolumeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import AssignVolumeRequestTypeDef
+from mypy_boto3_opsworks.type_defs import AssignVolumeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -232,10 +232,10 @@ Optional fields:
 
 - `InstanceId`: `str`
 
-## AssociateElasticIpRequestTypeDef
+## AssociateElasticIpRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import AssociateElasticIpRequestTypeDef
+from mypy_boto3_opsworks.type_defs import AssociateElasticIpRequestRequestTypeDef
 ```
 
 Required fields:
@@ -246,10 +246,10 @@ Optional fields:
 
 - `InstanceId`: `str`
 
-## AttachElasticLoadBalancerRequestTypeDef
+## AttachElasticLoadBalancerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import AttachElasticLoadBalancerRequestTypeDef
+from mypy_boto3_opsworks.type_defs import AttachElasticLoadBalancerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -297,10 +297,10 @@ Optional fields:
 - `ManageBerkshelf`: `bool`
 - `BerkshelfVersion`: `str`
 
-## CloneStackRequestTypeDef
+## CloneStackRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import CloneStackRequestTypeDef
+from mypy_boto3_opsworks.type_defs import CloneStackRequestRequestTypeDef
 ```
 
 Required fields:
@@ -335,10 +335,10 @@ Optional fields:
   [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `AgentVersion`: `str`
 
-## CloneStackResultResponseTypeDef
+## CloneStackResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import CloneStackResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import CloneStackResultTypeDef
 ```
 
 Required fields:
@@ -401,10 +401,10 @@ Optional fields:
 - `LogUrl`: `str`
 - `Type`: `str`
 
-## CreateAppRequestTypeDef
+## CreateAppRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import CreateAppRequestTypeDef
+from mypy_boto3_opsworks.type_defs import CreateAppRequestRequestTypeDef
 ```
 
 Required fields:
@@ -429,10 +429,10 @@ Optional fields:
 - `Environment`:
   `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
-## CreateAppResultResponseTypeDef
+## CreateAppResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import CreateAppResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import CreateAppResultTypeDef
 ```
 
 Required fields:
@@ -441,10 +441,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDeploymentRequestTypeDef
+## CreateDeploymentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import CreateDeploymentRequestTypeDef
+from mypy_boto3_opsworks.type_defs import CreateDeploymentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -461,10 +461,10 @@ Optional fields:
 - `Comment`: `str`
 - `CustomJson`: `str`
 
-## CreateDeploymentResultResponseTypeDef
+## CreateDeploymentResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import CreateDeploymentResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import CreateDeploymentResultTypeDef
 ```
 
 Required fields:
@@ -473,10 +473,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInstanceRequestTypeDef
+## CreateInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import CreateInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import CreateInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -504,10 +504,10 @@ Optional fields:
 - `AgentVersion`: `str`
 - `Tenancy`: `str`
 
-## CreateInstanceResultResponseTypeDef
+## CreateInstanceResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import CreateInstanceResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import CreateInstanceResultTypeDef
 ```
 
 Required fields:
@@ -515,6 +515,41 @@ Required fields:
 - `InstanceId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLayerRequestRequestTypeDef
+
+```python
+from mypy_boto3_opsworks.type_defs import CreateLayerRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StackId`: `str`
+- `Type`: [LayerTypeType](./literals.md#layertypetype)
+- `Name`: `str`
+- `Shortname`: `str`
+
+Optional fields:
+
+- `Attributes`:
+  `Dict`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
+  `str`\]
+- `CloudWatchLogsConfiguration`:
+  [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
+- `CustomInstanceProfileArn`: `str`
+- `CustomJson`: `str`
+- `CustomSecurityGroupIds`: `List`\[`str`\]
+- `Packages`: `List`\[`str`\]
+- `VolumeConfigurations`:
+  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
+- `EnableAutoHealing`: `bool`
+- `AutoAssignElasticIps`: `bool`
+- `AutoAssignPublicIps`: `bool`
+- `CustomRecipes`: [RecipesTypeDef](./type_defs.md#recipestypedef)
+- `InstallUpdatesOnBoot`: `bool`
+- `UseEbsOptimizedInstances`: `bool`
+- `LifecycleEventConfiguration`:
+  [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
 
 ## CreateLayerRequestStackTypeDef
 
@@ -550,45 +585,10 @@ Optional fields:
 - `LifecycleEventConfiguration`:
   [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
 
-## CreateLayerRequestTypeDef
+## CreateLayerResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import CreateLayerRequestTypeDef
-```
-
-Required fields:
-
-- `StackId`: `str`
-- `Type`: [LayerTypeType](./literals.md#layertypetype)
-- `Name`: `str`
-- `Shortname`: `str`
-
-Optional fields:
-
-- `Attributes`:
-  `Dict`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
-  `str`\]
-- `CloudWatchLogsConfiguration`:
-  [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
-- `CustomInstanceProfileArn`: `str`
-- `CustomJson`: `str`
-- `CustomSecurityGroupIds`: `List`\[`str`\]
-- `Packages`: `List`\[`str`\]
-- `VolumeConfigurations`:
-  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
-- `EnableAutoHealing`: `bool`
-- `AutoAssignElasticIps`: `bool`
-- `AutoAssignPublicIps`: `bool`
-- `CustomRecipes`: [RecipesTypeDef](./type_defs.md#recipestypedef)
-- `InstallUpdatesOnBoot`: `bool`
-- `UseEbsOptimizedInstances`: `bool`
-- `LifecycleEventConfiguration`:
-  [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
-
-## CreateLayerResultResponseTypeDef
-
-```python
-from mypy_boto3_opsworks.type_defs import CreateLayerResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import CreateLayerResultTypeDef
 ```
 
 Required fields:
@@ -596,6 +596,41 @@ Required fields:
 - `LayerId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateStackRequestRequestTypeDef
+
+```python
+from mypy_boto3_opsworks.type_defs import CreateStackRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Region`: `str`
+- `ServiceRoleArn`: `str`
+- `DefaultInstanceProfileArn`: `str`
+
+Optional fields:
+
+- `VpcId`: `str`
+- `Attributes`: `Dict`\[`Literal['Color']` (see
+  [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
+- `DefaultOs`: `str`
+- `HostnameTheme`: `str`
+- `DefaultAvailabilityZone`: `str`
+- `DefaultSubnetId`: `str`
+- `CustomJson`: `str`
+- `ConfigurationManager`:
+  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
+- `ChefConfiguration`:
+  [ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef)
+- `UseCustomCookbooks`: `bool`
+- `UseOpsworksSecurityGroups`: `bool`
+- `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
+- `DefaultSshKeyName`: `str`
+- `DefaultRootDeviceType`:
+  [RootDeviceTypeType](./literals.md#rootdevicetypetype)
+- `AgentVersion`: `str`
 
 ## CreateStackRequestServiceResourceTypeDef
 
@@ -632,45 +667,10 @@ Optional fields:
   [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `AgentVersion`: `str`
 
-## CreateStackRequestTypeDef
+## CreateStackResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import CreateStackRequestTypeDef
-```
-
-Required fields:
-
-- `Name`: `str`
-- `Region`: `str`
-- `ServiceRoleArn`: `str`
-- `DefaultInstanceProfileArn`: `str`
-
-Optional fields:
-
-- `VpcId`: `str`
-- `Attributes`: `Dict`\[`Literal['Color']` (see
-  [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
-- `DefaultOs`: `str`
-- `HostnameTheme`: `str`
-- `DefaultAvailabilityZone`: `str`
-- `DefaultSubnetId`: `str`
-- `CustomJson`: `str`
-- `ConfigurationManager`:
-  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
-- `ChefConfiguration`:
-  [ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef)
-- `UseCustomCookbooks`: `bool`
-- `UseOpsworksSecurityGroups`: `bool`
-- `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `DefaultSshKeyName`: `str`
-- `DefaultRootDeviceType`:
-  [RootDeviceTypeType](./literals.md#rootdevicetypetype)
-- `AgentVersion`: `str`
-
-## CreateStackResultResponseTypeDef
-
-```python
-from mypy_boto3_opsworks.type_defs import CreateStackResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import CreateStackResultTypeDef
 ```
 
 Required fields:
@@ -679,10 +679,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUserProfileRequestTypeDef
+## CreateUserProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import CreateUserProfileRequestTypeDef
+from mypy_boto3_opsworks.type_defs import CreateUserProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -695,10 +695,10 @@ Optional fields:
 - `SshPublicKey`: `str`
 - `AllowSelfManagement`: `bool`
 
-## CreateUserProfileResultResponseTypeDef
+## CreateUserProfileResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import CreateUserProfileResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import CreateUserProfileResultTypeDef
 ```
 
 Required fields:
@@ -719,20 +719,20 @@ Optional fields:
 - `Arn`: `str`
 - `DatabaseName`: `str`
 
-## DeleteAppRequestTypeDef
+## DeleteAppRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DeleteAppRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DeleteAppRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AppId`: `str`
 
-## DeleteInstanceRequestTypeDef
+## DeleteInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DeleteInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DeleteInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -744,30 +744,30 @@ Optional fields:
 - `DeleteElasticIp`: `bool`
 - `DeleteVolumes`: `bool`
 
-## DeleteLayerRequestTypeDef
+## DeleteLayerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DeleteLayerRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DeleteLayerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `LayerId`: `str`
 
-## DeleteStackRequestTypeDef
+## DeleteStackRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DeleteStackRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DeleteStackRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `StackId`: `str`
 
-## DeleteUserProfileRequestTypeDef
+## DeleteUserProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DeleteUserProfileRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DeleteUserProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -810,60 +810,60 @@ Optional fields:
 - `CustomJson`: `str`
 - `InstanceIds`: `List`\[`str`\]
 
-## DeregisterEcsClusterRequestTypeDef
+## DeregisterEcsClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DeregisterEcsClusterRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DeregisterEcsClusterRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `EcsClusterArn`: `str`
 
-## DeregisterElasticIpRequestTypeDef
+## DeregisterElasticIpRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DeregisterElasticIpRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DeregisterElasticIpRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ElasticIp`: `str`
 
-## DeregisterInstanceRequestTypeDef
+## DeregisterInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DeregisterInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DeregisterInstanceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InstanceId`: `str`
 
-## DeregisterRdsDbInstanceRequestTypeDef
+## DeregisterRdsDbInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DeregisterRdsDbInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DeregisterRdsDbInstanceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RdsDbInstanceArn`: `str`
 
-## DeregisterVolumeRequestTypeDef
+## DeregisterVolumeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DeregisterVolumeRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DeregisterVolumeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VolumeId`: `str`
 
-## DescribeAgentVersionsRequestTypeDef
+## DescribeAgentVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeAgentVersionsRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeAgentVersionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -872,10 +872,10 @@ Optional fields:
 - `ConfigurationManager`:
   [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
 
-## DescribeAgentVersionsResultResponseTypeDef
+## DescribeAgentVersionsResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeAgentVersionsResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeAgentVersionsResultTypeDef
 ```
 
 Required fields:
@@ -885,10 +885,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAppsRequestTypeDef
+## DescribeAppsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeAppsRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeAppsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -896,10 +896,10 @@ Optional fields:
 - `StackId`: `str`
 - `AppIds`: `List`\[`str`\]
 
-## DescribeAppsResultResponseTypeDef
+## DescribeAppsResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeAppsResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeAppsResultTypeDef
 ```
 
 Required fields:
@@ -908,10 +908,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCommandsRequestTypeDef
+## DescribeCommandsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeCommandsRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeCommandsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -920,10 +920,10 @@ Optional fields:
 - `InstanceId`: `str`
 - `CommandIds`: `List`\[`str`\]
 
-## DescribeCommandsResultResponseTypeDef
+## DescribeCommandsResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeCommandsResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeCommandsResultTypeDef
 ```
 
 Required fields:
@@ -932,10 +932,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDeploymentsRequestTypeDef
+## DescribeDeploymentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeDeploymentsRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeDeploymentsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -944,10 +944,10 @@ Optional fields:
 - `AppId`: `str`
 - `DeploymentIds`: `List`\[`str`\]
 
-## DescribeDeploymentsResultResponseTypeDef
+## DescribeDeploymentsResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeDeploymentsResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeDeploymentsResultTypeDef
 ```
 
 Required fields:
@@ -957,10 +957,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEcsClustersRequestTypeDef
+## DescribeEcsClustersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeEcsClustersRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeEcsClustersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -970,10 +970,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## DescribeEcsClustersResultResponseTypeDef
+## DescribeEcsClustersResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeEcsClustersResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeEcsClustersResultTypeDef
 ```
 
 Required fields:
@@ -984,10 +984,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeElasticIpsRequestTypeDef
+## DescribeElasticIpsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeElasticIpsRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeElasticIpsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -996,10 +996,10 @@ Optional fields:
 - `StackId`: `str`
 - `Ips`: `List`\[`str`\]
 
-## DescribeElasticIpsResultResponseTypeDef
+## DescribeElasticIpsResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeElasticIpsResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeElasticIpsResultTypeDef
 ```
 
 Required fields:
@@ -1008,10 +1008,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeElasticLoadBalancersRequestTypeDef
+## DescribeElasticLoadBalancersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeElasticLoadBalancersRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeElasticLoadBalancersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1019,10 +1019,10 @@ Optional fields:
 - `StackId`: `str`
 - `LayerIds`: `List`\[`str`\]
 
-## DescribeElasticLoadBalancersResultResponseTypeDef
+## DescribeElasticLoadBalancersResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeElasticLoadBalancersResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeElasticLoadBalancersResultTypeDef
 ```
 
 Required fields:
@@ -1032,10 +1032,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInstancesRequestTypeDef
+## DescribeInstancesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeInstancesRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeInstancesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1044,10 +1044,10 @@ Optional fields:
 - `LayerId`: `str`
 - `InstanceIds`: `List`\[`str`\]
 
-## DescribeInstancesResultResponseTypeDef
+## DescribeInstancesResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeInstancesResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeInstancesResultTypeDef
 ```
 
 Required fields:
@@ -1056,10 +1056,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLayersRequestTypeDef
+## DescribeLayersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeLayersRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeLayersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1067,10 +1067,10 @@ Optional fields:
 - `StackId`: `str`
 - `LayerIds`: `List`\[`str`\]
 
-## DescribeLayersResultResponseTypeDef
+## DescribeLayersResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeLayersResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeLayersResultTypeDef
 ```
 
 Required fields:
@@ -1079,20 +1079,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLoadBasedAutoScalingRequestTypeDef
+## DescribeLoadBasedAutoScalingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeLoadBasedAutoScalingRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeLoadBasedAutoScalingRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `LayerIds`: `List`\[`str`\]
 
-## DescribeLoadBasedAutoScalingResultResponseTypeDef
+## DescribeLoadBasedAutoScalingResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeLoadBasedAutoScalingResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeLoadBasedAutoScalingResultTypeDef
 ```
 
 Required fields:
@@ -1102,10 +1102,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeMyUserProfileResultResponseTypeDef
+## DescribeMyUserProfileResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeMyUserProfileResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeMyUserProfileResultTypeDef
 ```
 
 Required fields:
@@ -1115,10 +1115,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOperatingSystemsResponseResponseTypeDef
+## DescribeOperatingSystemsResponseTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeOperatingSystemsResponseResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeOperatingSystemsResponseTypeDef
 ```
 
 Required fields:
@@ -1128,10 +1128,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePermissionsRequestTypeDef
+## DescribePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribePermissionsRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribePermissionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1139,10 +1139,10 @@ Optional fields:
 - `IamUserArn`: `str`
 - `StackId`: `str`
 
-## DescribePermissionsResultResponseTypeDef
+## DescribePermissionsResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribePermissionsResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribePermissionsResultTypeDef
 ```
 
 Required fields:
@@ -1152,10 +1152,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRaidArraysRequestTypeDef
+## DescribeRaidArraysRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeRaidArraysRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeRaidArraysRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1164,10 +1164,10 @@ Optional fields:
 - `StackId`: `str`
 - `RaidArrayIds`: `List`\[`str`\]
 
-## DescribeRaidArraysResultResponseTypeDef
+## DescribeRaidArraysResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeRaidArraysResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeRaidArraysResultTypeDef
 ```
 
 Required fields:
@@ -1176,10 +1176,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRdsDbInstancesRequestTypeDef
+## DescribeRdsDbInstancesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeRdsDbInstancesRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeRdsDbInstancesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1190,10 +1190,10 @@ Optional fields:
 
 - `RdsDbInstanceArns`: `List`\[`str`\]
 
-## DescribeRdsDbInstancesResultResponseTypeDef
+## DescribeRdsDbInstancesResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeRdsDbInstancesResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeRdsDbInstancesResultTypeDef
 ```
 
 Required fields:
@@ -1203,10 +1203,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeServiceErrorsRequestTypeDef
+## DescribeServiceErrorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeServiceErrorsRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeServiceErrorsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1215,10 +1215,10 @@ Optional fields:
 - `InstanceId`: `str`
 - `ServiceErrorIds`: `List`\[`str`\]
 
-## DescribeServiceErrorsResultResponseTypeDef
+## DescribeServiceErrorsResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeServiceErrorsResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeServiceErrorsResultTypeDef
 ```
 
 Required fields:
@@ -1228,20 +1228,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStackProvisioningParametersRequestTypeDef
+## DescribeStackProvisioningParametersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeStackProvisioningParametersRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeStackProvisioningParametersRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `StackId`: `str`
 
-## DescribeStackProvisioningParametersResultResponseTypeDef
+## DescribeStackProvisioningParametersResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeStackProvisioningParametersResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeStackProvisioningParametersResultTypeDef
 ```
 
 Required fields:
@@ -1251,20 +1251,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStackSummaryRequestTypeDef
+## DescribeStackSummaryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeStackSummaryRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeStackSummaryRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `StackId`: `str`
 
-## DescribeStackSummaryResultResponseTypeDef
+## DescribeStackSummaryResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeStackSummaryResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeStackSummaryResultTypeDef
 ```
 
 Required fields:
@@ -1273,20 +1273,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStacksRequestTypeDef
+## DescribeStacksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeStacksRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeStacksRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `StackIds`: `List`\[`str`\]
 
-## DescribeStacksResultResponseTypeDef
+## DescribeStacksResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeStacksResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeStacksResultTypeDef
 ```
 
 Required fields:
@@ -1295,20 +1295,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTimeBasedAutoScalingRequestTypeDef
+## DescribeTimeBasedAutoScalingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeTimeBasedAutoScalingRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeTimeBasedAutoScalingRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InstanceIds`: `List`\[`str`\]
 
-## DescribeTimeBasedAutoScalingResultResponseTypeDef
+## DescribeTimeBasedAutoScalingResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeTimeBasedAutoScalingResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeTimeBasedAutoScalingResultTypeDef
 ```
 
 Required fields:
@@ -1318,20 +1318,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUserProfilesRequestTypeDef
+## DescribeUserProfilesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeUserProfilesRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeUserProfilesRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `IamUserArns`: `List`\[`str`\]
 
-## DescribeUserProfilesResultResponseTypeDef
+## DescribeUserProfilesResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeUserProfilesResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeUserProfilesResultTypeDef
 ```
 
 Required fields:
@@ -1341,10 +1341,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeVolumesRequestTypeDef
+## DescribeVolumesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeVolumesRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeVolumesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1354,10 +1354,10 @@ Optional fields:
 - `RaidArrayId`: `str`
 - `VolumeIds`: `List`\[`str`\]
 
-## DescribeVolumesResultResponseTypeDef
+## DescribeVolumesResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DescribeVolumesResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import DescribeVolumesResultTypeDef
 ```
 
 Required fields:
@@ -1366,10 +1366,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetachElasticLoadBalancerRequestTypeDef
+## DetachElasticLoadBalancerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DetachElasticLoadBalancerRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DetachElasticLoadBalancerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1377,10 +1377,10 @@ Required fields:
 - `ElasticLoadBalancerName`: `str`
 - `LayerId`: `str`
 
-## DisassociateElasticIpRequestTypeDef
+## DisassociateElasticIpRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import DisassociateElasticIpRequestTypeDef
+from mypy_boto3_opsworks.type_defs import DisassociateElasticIpRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1461,20 +1461,20 @@ Optional fields:
 
 - `Secure`: `bool`
 
-## GetHostnameSuggestionRequestTypeDef
+## GetHostnameSuggestionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import GetHostnameSuggestionRequestTypeDef
+from mypy_boto3_opsworks.type_defs import GetHostnameSuggestionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `LayerId`: `str`
 
-## GetHostnameSuggestionResultResponseTypeDef
+## GetHostnameSuggestionResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import GetHostnameSuggestionResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import GetHostnameSuggestionResultTypeDef
 ```
 
 Required fields:
@@ -1484,10 +1484,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GrantAccessRequestTypeDef
+## GrantAccessRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import GrantAccessRequestTypeDef
+from mypy_boto3_opsworks.type_defs import GrantAccessRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1498,10 +1498,10 @@ Optional fields:
 
 - `ValidForInMinutes`: `int`
 
-## GrantAccessResultResponseTypeDef
+## GrantAccessResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import GrantAccessResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import GrantAccessResultTypeDef
 ```
 
 Required fields:
@@ -1651,10 +1651,10 @@ Optional fields:
 - `Shutdown`:
   [ShutdownEventConfigurationTypeDef](./type_defs.md#shutdowneventconfigurationtypedef)
 
-## ListTagsRequestTypeDef
+## ListTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import ListTagsRequestTypeDef
+from mypy_boto3_opsworks.type_defs import ListTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1666,10 +1666,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListTagsResultResponseTypeDef
+## ListTagsResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import ListTagsResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import ListTagsResultTypeDef
 ```
 
 Required fields:
@@ -1788,10 +1788,10 @@ Optional fields:
 - `StackId`: `str`
 - `MissingOnRds`: `bool`
 
-## RebootInstanceRequestTypeDef
+## RebootInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import RebootInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import RebootInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1812,10 +1812,10 @@ Optional fields:
 - `Undeploy`: `List`\[`str`\]
 - `Shutdown`: `List`\[`str`\]
 
-## RegisterEcsClusterRequestTypeDef
+## RegisterEcsClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import RegisterEcsClusterRequestTypeDef
+from mypy_boto3_opsworks.type_defs import RegisterEcsClusterRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1823,10 +1823,10 @@ Required fields:
 - `EcsClusterArn`: `str`
 - `StackId`: `str`
 
-## RegisterEcsClusterResultResponseTypeDef
+## RegisterEcsClusterResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import RegisterEcsClusterResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import RegisterEcsClusterResultTypeDef
 ```
 
 Required fields:
@@ -1835,10 +1835,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterElasticIpRequestTypeDef
+## RegisterElasticIpRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import RegisterElasticIpRequestTypeDef
+from mypy_boto3_opsworks.type_defs import RegisterElasticIpRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1846,10 +1846,10 @@ Required fields:
 - `ElasticIp`: `str`
 - `StackId`: `str`
 
-## RegisterElasticIpResultResponseTypeDef
+## RegisterElasticIpResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import RegisterElasticIpResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import RegisterElasticIpResultTypeDef
 ```
 
 Required fields:
@@ -1858,10 +1858,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterInstanceRequestTypeDef
+## RegisterInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import RegisterInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import RegisterInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1878,10 +1878,10 @@ Optional fields:
 - `InstanceIdentity`:
   [InstanceIdentityTypeDef](./type_defs.md#instanceidentitytypedef)
 
-## RegisterInstanceResultResponseTypeDef
+## RegisterInstanceResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import RegisterInstanceResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import RegisterInstanceResultTypeDef
 ```
 
 Required fields:
@@ -1890,10 +1890,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterRdsDbInstanceRequestTypeDef
+## RegisterRdsDbInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import RegisterRdsDbInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import RegisterRdsDbInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1903,10 +1903,10 @@ Required fields:
 - `DbUser`: `str`
 - `DbPassword`: `str`
 
-## RegisterVolumeRequestTypeDef
+## RegisterVolumeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import RegisterVolumeRequestTypeDef
+from mypy_boto3_opsworks.type_defs import RegisterVolumeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1917,10 +1917,10 @@ Optional fields:
 
 - `Ec2VolumeId`: `str`
 
-## RegisterVolumeResultResponseTypeDef
+## RegisterVolumeResultTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import RegisterVolumeResultResponseTypeDef
+from mypy_boto3_opsworks.type_defs import RegisterVolumeResultTypeDef
 ```
 
 Required fields:
@@ -2013,10 +2013,10 @@ Required fields:
 
 - `stack_id`: `str`
 
-## SetLoadBasedAutoScalingRequestTypeDef
+## SetLoadBasedAutoScalingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import SetLoadBasedAutoScalingRequestTypeDef
+from mypy_boto3_opsworks.type_defs import SetLoadBasedAutoScalingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2031,10 +2031,10 @@ Optional fields:
 - `DownScaling`:
   [AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef)
 
-## SetPermissionRequestTypeDef
+## SetPermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import SetPermissionRequestTypeDef
+from mypy_boto3_opsworks.type_defs import SetPermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2048,10 +2048,10 @@ Optional fields:
 - `AllowSudo`: `bool`
 - `Level`: `str`
 
-## SetTimeBasedAutoScalingRequestTypeDef
+## SetTimeBasedAutoScalingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import SetTimeBasedAutoScalingRequestTypeDef
+from mypy_boto3_opsworks.type_defs import SetTimeBasedAutoScalingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2166,30 +2166,30 @@ Optional fields:
   [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `AgentVersion`: `str`
 
-## StartInstanceRequestTypeDef
+## StartInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import StartInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import StartInstanceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InstanceId`: `str`
 
-## StartStackRequestTypeDef
+## StartStackRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import StartStackRequestTypeDef
+from mypy_boto3_opsworks.type_defs import StartStackRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `StackId`: `str`
 
-## StopInstanceRequestTypeDef
+## StopInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import StopInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import StopInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2200,20 +2200,20 @@ Optional fields:
 
 - `Force`: `bool`
 
-## StopStackRequestTypeDef
+## StopStackRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import StopStackRequestTypeDef
+from mypy_boto3_opsworks.type_defs import StopStackRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `StackId`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2246,30 +2246,30 @@ Optional fields:
 - `AutoScalingSchedule`:
   [WeeklyAutoScalingScheduleTypeDef](./type_defs.md#weeklyautoscalingscheduletypedef)
 
-## UnassignInstanceRequestTypeDef
+## UnassignInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import UnassignInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import UnassignInstanceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InstanceId`: `str`
 
-## UnassignVolumeRequestTypeDef
+## UnassignVolumeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import UnassignVolumeRequestTypeDef
+from mypy_boto3_opsworks.type_defs import UnassignVolumeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `VolumeId`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2277,10 +2277,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateAppRequestTypeDef
+## UpdateAppRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import UpdateAppRequestTypeDef
+from mypy_boto3_opsworks.type_defs import UpdateAppRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2304,10 +2304,10 @@ Optional fields:
 - `Environment`:
   `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
-## UpdateElasticIpRequestTypeDef
+## UpdateElasticIpRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import UpdateElasticIpRequestTypeDef
+from mypy_boto3_opsworks.type_defs import UpdateElasticIpRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2318,10 +2318,10 @@ Optional fields:
 
 - `Name`: `str`
 
-## UpdateInstanceRequestTypeDef
+## UpdateInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import UpdateInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import UpdateInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2342,10 +2342,10 @@ Optional fields:
 - `EbsOptimized`: `bool`
 - `AgentVersion`: `str`
 
-## UpdateLayerRequestTypeDef
+## UpdateLayerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import UpdateLayerRequestTypeDef
+from mypy_boto3_opsworks.type_defs import UpdateLayerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2376,20 +2376,20 @@ Optional fields:
 - `LifecycleEventConfiguration`:
   [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
 
-## UpdateMyUserProfileRequestTypeDef
+## UpdateMyUserProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import UpdateMyUserProfileRequestTypeDef
+from mypy_boto3_opsworks.type_defs import UpdateMyUserProfileRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `SshPublicKey`: `str`
 
-## UpdateRdsDbInstanceRequestTypeDef
+## UpdateRdsDbInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import UpdateRdsDbInstanceRequestTypeDef
+from mypy_boto3_opsworks.type_defs import UpdateRdsDbInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2401,10 +2401,10 @@ Optional fields:
 - `DbUser`: `str`
 - `DbPassword`: `str`
 
-## UpdateStackRequestTypeDef
+## UpdateStackRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import UpdateStackRequestTypeDef
+from mypy_boto3_opsworks.type_defs import UpdateStackRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2435,10 +2435,10 @@ Optional fields:
 - `UseOpsworksSecurityGroups`: `bool`
 - `AgentVersion`: `str`
 
-## UpdateUserProfileRequestTypeDef
+## UpdateUserProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import UpdateUserProfileRequestTypeDef
+from mypy_boto3_opsworks.type_defs import UpdateUserProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2451,10 +2451,10 @@ Optional fields:
 - `SshPublicKey`: `str`
 - `AllowSelfManagement`: `bool`
 
-## UpdateVolumeRequestTypeDef
+## UpdateVolumeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_opsworks.type_defs import UpdateVolumeRequestTypeDef
+from mypy_boto3_opsworks.type_defs import UpdateVolumeRequestRequestTypeDef
 ```
 
 Required fields:

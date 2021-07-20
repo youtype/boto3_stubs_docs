@@ -11,6 +11,7 @@ type annotations stubs module
   - [mgnClient](#mgnclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [change_server_life_cycle_state](#change_server_life_cycle_state)
     - [create_replication_configuration_template](#create_replication_configuration_template)
@@ -81,6 +82,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+mgnClient exceptions.
+
+Type annotations for `boto3.client("mgn").exceptions` method.
+
+Boto3 documentation:
+[mgn.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -108,7 +120,7 @@ Boto3 documentation:
 [mgn.Client.change_server_life_cycle_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.change_server_life_cycle_state)
 
 Arguments mapping described in
-[ChangeServerLifeCycleStateRequestTypeDef](./type_defs.md#changeserverlifecyclestaterequesttypedef).
+[ChangeServerLifeCycleStateRequestRequestTypeDef](./type_defs.md#changeserverlifecyclestaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -118,7 +130,7 @@ Keyword-only arguments:
 - `sourceServerID`: `str` *(required)*
 
 Returns
-[SourceServerResponseTypeDef](./type_defs.md#sourceserverresponsetypedef).
+[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
 
 ### create_replication_configuration_template
 
@@ -131,7 +143,7 @@ Boto3 documentation:
 [mgn.Client.create_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.create_replication_configuration_template)
 
 Arguments mapping described in
-[CreateReplicationConfigurationTemplateRequestTypeDef](./type_defs.md#createreplicationconfigurationtemplaterequesttypedef).
+[CreateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,7 +168,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[ReplicationConfigurationTemplateResponseTypeDef](./type_defs.md#replicationconfigurationtemplateresponsetypedef).
+[ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef).
 
 ### delete_job
 
@@ -168,7 +180,7 @@ Boto3 documentation:
 [mgn.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_job)
 
 Arguments mapping described in
-[DeleteJobRequestTypeDef](./type_defs.md#deletejobrequesttypedef).
+[DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -190,7 +202,7 @@ Boto3 documentation:
 [mgn.Client.delete_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_replication_configuration_template)
 
 Arguments mapping described in
-[DeleteReplicationConfigurationTemplateRequestTypeDef](./type_defs.md#deletereplicationconfigurationtemplaterequesttypedef).
+[DeleteReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,7 +220,7 @@ Boto3 documentation:
 [mgn.Client.delete_source_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_source_server)
 
 Arguments mapping described in
-[DeleteSourceServerRequestTypeDef](./type_defs.md#deletesourceserverrequesttypedef).
+[DeleteSourceServerRequestRequestTypeDef](./type_defs.md#deletesourceserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -226,7 +238,7 @@ Boto3 documentation:
 [mgn.Client.describe_job_log_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_job_log_items)
 
 Arguments mapping described in
-[DescribeJobLogItemsRequestTypeDef](./type_defs.md#describejoblogitemsrequesttypedef).
+[DescribeJobLogItemsRequestRequestTypeDef](./type_defs.md#describejoblogitemsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -235,7 +247,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeJobLogItemsResponseResponseTypeDef](./type_defs.md#describejoblogitemsresponseresponsetypedef).
+[DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef).
 
 ### describe_jobs
 
@@ -247,7 +259,7 @@ Boto3 documentation:
 [mgn.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_jobs)
 
 Arguments mapping described in
-[DescribeJobsRequestTypeDef](./type_defs.md#describejobsrequesttypedef).
+[DescribeJobsRequestRequestTypeDef](./type_defs.md#describejobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -258,7 +270,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeJobsResponseResponseTypeDef](./type_defs.md#describejobsresponseresponsetypedef).
+[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
 
 ### describe_replication_configuration_templates
 
@@ -271,7 +283,7 @@ Boto3 documentation:
 [mgn.Client.describe_replication_configuration_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_replication_configuration_templates)
 
 Arguments mapping described in
-[DescribeReplicationConfigurationTemplatesRequestTypeDef](./type_defs.md#describereplicationconfigurationtemplatesrequesttypedef).
+[DescribeReplicationConfigurationTemplatesRequestRequestTypeDef](./type_defs.md#describereplicationconfigurationtemplatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -280,7 +292,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeReplicationConfigurationTemplatesResponseResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponseresponsetypedef).
+[DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef).
 
 ### describe_source_servers
 
@@ -292,7 +304,7 @@ Boto3 documentation:
 [mgn.Client.describe_source_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_source_servers)
 
 Arguments mapping described in
-[DescribeSourceServersRequestTypeDef](./type_defs.md#describesourceserversrequesttypedef).
+[DescribeSourceServersRequestRequestTypeDef](./type_defs.md#describesourceserversrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -303,7 +315,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeSourceServersResponseResponseTypeDef](./type_defs.md#describesourceserversresponseresponsetypedef).
+[DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef).
 
 ### disconnect_from_service
 
@@ -315,14 +327,14 @@ Boto3 documentation:
 [mgn.Client.disconnect_from_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.disconnect_from_service)
 
 Arguments mapping described in
-[DisconnectFromServiceRequestTypeDef](./type_defs.md#disconnectfromservicerequesttypedef).
+[DisconnectFromServiceRequestRequestTypeDef](./type_defs.md#disconnectfromservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
 Returns
-[SourceServerResponseTypeDef](./type_defs.md#sourceserverresponsetypedef).
+[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
 
 ### finalize_cutover
 
@@ -334,14 +346,14 @@ Boto3 documentation:
 [mgn.Client.finalize_cutover](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.finalize_cutover)
 
 Arguments mapping described in
-[FinalizeCutoverRequestTypeDef](./type_defs.md#finalizecutoverrequesttypedef).
+[FinalizeCutoverRequestRequestTypeDef](./type_defs.md#finalizecutoverrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
 Returns
-[SourceServerResponseTypeDef](./type_defs.md#sourceserverresponsetypedef).
+[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
 
 ### generate_presigned_url
 
@@ -371,14 +383,14 @@ Boto3 documentation:
 [mgn.Client.get_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_launch_configuration)
 
 Arguments mapping described in
-[GetLaunchConfigurationRequestTypeDef](./type_defs.md#getlaunchconfigurationrequesttypedef).
+[GetLaunchConfigurationRequestRequestTypeDef](./type_defs.md#getlaunchconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
 Returns
-[LaunchConfigurationResponseTypeDef](./type_defs.md#launchconfigurationresponsetypedef).
+[LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef).
 
 ### get_replication_configuration
 
@@ -391,14 +403,14 @@ Boto3 documentation:
 [mgn.Client.get_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_replication_configuration)
 
 Arguments mapping described in
-[GetReplicationConfigurationRequestTypeDef](./type_defs.md#getreplicationconfigurationrequesttypedef).
+[GetReplicationConfigurationRequestRequestTypeDef](./type_defs.md#getreplicationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
 Returns
-[ReplicationConfigurationResponseTypeDef](./type_defs.md#replicationconfigurationresponsetypedef).
+[ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef).
 
 ### initialize_service
 
@@ -421,14 +433,14 @@ Boto3 documentation:
 [mgn.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### mark_as_archived
 
@@ -441,14 +453,14 @@ Boto3 documentation:
 [mgn.Client.mark_as_archived](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.mark_as_archived)
 
 Arguments mapping described in
-[MarkAsArchivedRequestTypeDef](./type_defs.md#markasarchivedrequesttypedef).
+[MarkAsArchivedRequestRequestTypeDef](./type_defs.md#markasarchivedrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
 Returns
-[SourceServerResponseTypeDef](./type_defs.md#sourceserverresponsetypedef).
+[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
 
 ### retry_data_replication
 
@@ -462,14 +474,14 @@ Boto3 documentation:
 [mgn.Client.retry_data_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.retry_data_replication)
 
 Arguments mapping described in
-[RetryDataReplicationRequestTypeDef](./type_defs.md#retrydatareplicationrequesttypedef).
+[RetryDataReplicationRequestRequestTypeDef](./type_defs.md#retrydatareplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
 
 Returns
-[SourceServerResponseTypeDef](./type_defs.md#sourceserverresponsetypedef).
+[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
 
 ### start_cutover
 
@@ -481,7 +493,7 @@ Boto3 documentation:
 [mgn.Client.start_cutover](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_cutover)
 
 Arguments mapping described in
-[StartCutoverRequestTypeDef](./type_defs.md#startcutoverrequesttypedef).
+[StartCutoverRequestRequestTypeDef](./type_defs.md#startcutoverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -489,7 +501,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartCutoverResponseResponseTypeDef](./type_defs.md#startcutoverresponseresponsetypedef).
+[StartCutoverResponseTypeDef](./type_defs.md#startcutoverresponsetypedef).
 
 ### start_test
 
@@ -501,15 +513,14 @@ Boto3 documentation:
 [mgn.Client.start_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_test)
 
 Arguments mapping described in
-[StartTestRequestTypeDef](./type_defs.md#starttestrequesttypedef).
+[StartTestRequestRequestTypeDef](./type_defs.md#starttestrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `sourceServerIDs`: `List`\[`str`\] *(required)*
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[StartTestResponseResponseTypeDef](./type_defs.md#starttestresponseresponsetypedef).
+Returns [StartTestResponseTypeDef](./type_defs.md#starttestresponsetypedef).
 
 ### tag_resource
 
@@ -522,7 +533,7 @@ Boto3 documentation:
 [mgn.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -539,7 +550,7 @@ Boto3 documentation:
 [mgn.Client.terminate_target_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.terminate_target_instances)
 
 Arguments mapping described in
-[TerminateTargetInstancesRequestTypeDef](./type_defs.md#terminatetargetinstancesrequesttypedef).
+[TerminateTargetInstancesRequestRequestTypeDef](./type_defs.md#terminatetargetinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -547,7 +558,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[TerminateTargetInstancesResponseResponseTypeDef](./type_defs.md#terminatetargetinstancesresponseresponsetypedef).
+[TerminateTargetInstancesResponseTypeDef](./type_defs.md#terminatetargetinstancesresponsetypedef).
 
 ### untag_resource
 
@@ -560,7 +571,7 @@ Boto3 documentation:
 [mgn.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -577,7 +588,7 @@ Boto3 documentation:
 [mgn.Client.update_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_launch_configuration)
 
 Arguments mapping described in
-[UpdateLaunchConfigurationRequestTypeDef](./type_defs.md#updatelaunchconfigurationrequesttypedef).
+[UpdateLaunchConfigurationRequestRequestTypeDef](./type_defs.md#updatelaunchconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -592,7 +603,7 @@ Keyword-only arguments:
   [TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype)
 
 Returns
-[LaunchConfigurationResponseTypeDef](./type_defs.md#launchconfigurationresponsetypedef).
+[LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef).
 
 ### update_replication_configuration
 
@@ -605,7 +616,7 @@ Boto3 documentation:
 [mgn.Client.update_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration)
 
 Arguments mapping described in
-[UpdateReplicationConfigurationRequestTypeDef](./type_defs.md#updatereplicationconfigurationrequesttypedef).
+[UpdateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -630,7 +641,7 @@ Keyword-only arguments:
 - `useDedicatedReplicationServer`: `bool`
 
 Returns
-[ReplicationConfigurationResponseTypeDef](./type_defs.md#replicationconfigurationresponsetypedef).
+[ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef).
 
 ### update_replication_configuration_template
 
@@ -643,7 +654,7 @@ Boto3 documentation:
 [mgn.Client.update_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration_template)
 
 Arguments mapping described in
-[UpdateReplicationConfigurationTemplateRequestTypeDef](./type_defs.md#updatereplicationconfigurationtemplaterequesttypedef).
+[UpdateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -666,7 +677,7 @@ Keyword-only arguments:
 - `useDedicatedReplicationServer`: `bool`
 
 Returns
-[ReplicationConfigurationTemplateResponseTypeDef](./type_defs.md#replicationconfigurationtemplateresponsetypedef).
+[ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef).
 
 ### get_paginator
 

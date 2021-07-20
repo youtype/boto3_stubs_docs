@@ -11,6 +11,7 @@ type annotations stubs module
   - [DataSyncClient](#datasyncclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_task_execution](#cancel_task_execution)
     - [create_agent](#create_agent)
@@ -86,6 +87,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DataSyncClient exceptions.
+
+Type annotations for `boto3.client("datasync").exceptions` method.
+
+Boto3 documentation:
+[DataSync.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -111,7 +123,7 @@ Boto3 documentation:
 [DataSync.Client.cancel_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.cancel_task_execution)
 
 Arguments mapping described in
-[CancelTaskExecutionRequestTypeDef](./type_defs.md#canceltaskexecutionrequesttypedef).
+[CancelTaskExecutionRequestRequestTypeDef](./type_defs.md#canceltaskexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -129,7 +141,7 @@ Boto3 documentation:
 [DataSync.Client.create_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_agent)
 
 Arguments mapping described in
-[CreateAgentRequestTypeDef](./type_defs.md#createagentrequesttypedef).
+[CreateAgentRequestRequestTypeDef](./type_defs.md#createagentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -141,7 +153,7 @@ Keyword-only arguments:
 - `SecurityGroupArns`: `List`\[`str`\]
 
 Returns
-[CreateAgentResponseResponseTypeDef](./type_defs.md#createagentresponseresponsetypedef).
+[CreateAgentResponseTypeDef](./type_defs.md#createagentresponsetypedef).
 
 ### create_location_efs
 
@@ -153,7 +165,7 @@ Boto3 documentation:
 [DataSync.Client.create_location_efs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_efs)
 
 Arguments mapping described in
-[CreateLocationEfsRequestTypeDef](./type_defs.md#createlocationefsrequesttypedef).
+[CreateLocationEfsRequestRequestTypeDef](./type_defs.md#createlocationefsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -163,7 +175,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationEfsResponseResponseTypeDef](./type_defs.md#createlocationefsresponseresponsetypedef).
+[CreateLocationEfsResponseTypeDef](./type_defs.md#createlocationefsresponsetypedef).
 
 ### create_location_fsx_windows
 
@@ -176,7 +188,7 @@ Boto3 documentation:
 [DataSync.Client.create_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_windows)
 
 Arguments mapping described in
-[CreateLocationFsxWindowsRequestTypeDef](./type_defs.md#createlocationfsxwindowsrequesttypedef).
+[CreateLocationFsxWindowsRequestRequestTypeDef](./type_defs.md#createlocationfsxwindowsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -189,7 +201,7 @@ Keyword-only arguments:
 - `Domain`: `str`
 
 Returns
-[CreateLocationFsxWindowsResponseResponseTypeDef](./type_defs.md#createlocationfsxwindowsresponseresponsetypedef).
+[CreateLocationFsxWindowsResponseTypeDef](./type_defs.md#createlocationfsxwindowsresponsetypedef).
 
 ### create_location_nfs
 
@@ -202,7 +214,7 @@ Boto3 documentation:
 [DataSync.Client.create_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_nfs)
 
 Arguments mapping described in
-[CreateLocationNfsRequestTypeDef](./type_defs.md#createlocationnfsrequesttypedef).
+[CreateLocationNfsRequestRequestTypeDef](./type_defs.md#createlocationnfsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -215,7 +227,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationNfsResponseResponseTypeDef](./type_defs.md#createlocationnfsresponseresponsetypedef).
+[CreateLocationNfsResponseTypeDef](./type_defs.md#createlocationnfsresponsetypedef).
 
 ### create_location_object_storage
 
@@ -228,7 +240,7 @@ Boto3 documentation:
 [DataSync.Client.create_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_object_storage)
 
 Arguments mapping described in
-[CreateLocationObjectStorageRequestTypeDef](./type_defs.md#createlocationobjectstoragerequesttypedef).
+[CreateLocationObjectStorageRequestRequestTypeDef](./type_defs.md#createlocationobjectstoragerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -244,7 +256,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationObjectStorageResponseResponseTypeDef](./type_defs.md#createlocationobjectstorageresponseresponsetypedef).
+[CreateLocationObjectStorageResponseTypeDef](./type_defs.md#createlocationobjectstorageresponsetypedef).
 
 ### create_location_s3
 
@@ -256,7 +268,7 @@ Boto3 documentation:
 [DataSync.Client.create_location_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_s3)
 
 Arguments mapping described in
-[CreateLocationS3RequestTypeDef](./type_defs.md#createlocations3requesttypedef).
+[CreateLocationS3RequestRequestTypeDef](./type_defs.md#createlocations3requestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -268,7 +280,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationS3ResponseResponseTypeDef](./type_defs.md#createlocations3responseresponsetypedef).
+[CreateLocationS3ResponseTypeDef](./type_defs.md#createlocations3responsetypedef).
 
 ### create_location_smb
 
@@ -281,7 +293,7 @@ Boto3 documentation:
 [DataSync.Client.create_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_smb)
 
 Arguments mapping described in
-[CreateLocationSmbRequestTypeDef](./type_defs.md#createlocationsmbrequesttypedef).
+[CreateLocationSmbRequestRequestTypeDef](./type_defs.md#createlocationsmbrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -296,7 +308,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
-[CreateLocationSmbResponseResponseTypeDef](./type_defs.md#createlocationsmbresponseresponsetypedef).
+[CreateLocationSmbResponseTypeDef](./type_defs.md#createlocationsmbresponsetypedef).
 
 ### create_task
 
@@ -308,7 +320,7 @@ Boto3 documentation:
 [DataSync.Client.create_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_task)
 
 Arguments mapping described in
-[CreateTaskRequestTypeDef](./type_defs.md#createtaskrequesttypedef).
+[CreateTaskRequestRequestTypeDef](./type_defs.md#createtaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -321,8 +333,7 @@ Keyword-only arguments:
 - `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
-Returns
-[CreateTaskResponseResponseTypeDef](./type_defs.md#createtaskresponseresponsetypedef).
+Returns [CreateTaskResponseTypeDef](./type_defs.md#createtaskresponsetypedef).
 
 ### delete_agent
 
@@ -334,7 +345,7 @@ Boto3 documentation:
 [DataSync.Client.delete_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_agent)
 
 Arguments mapping described in
-[DeleteAgentRequestTypeDef](./type_defs.md#deleteagentrequesttypedef).
+[DeleteAgentRequestRequestTypeDef](./type_defs.md#deleteagentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -352,7 +363,7 @@ Boto3 documentation:
 [DataSync.Client.delete_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_location)
 
 Arguments mapping described in
-[DeleteLocationRequestTypeDef](./type_defs.md#deletelocationrequesttypedef).
+[DeleteLocationRequestRequestTypeDef](./type_defs.md#deletelocationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -370,7 +381,7 @@ Boto3 documentation:
 [DataSync.Client.delete_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_task)
 
 Arguments mapping described in
-[DeleteTaskRequestTypeDef](./type_defs.md#deletetaskrequesttypedef).
+[DeleteTaskRequestRequestTypeDef](./type_defs.md#deletetaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -389,14 +400,14 @@ Boto3 documentation:
 [DataSync.Client.describe_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_agent)
 
 Arguments mapping described in
-[DescribeAgentRequestTypeDef](./type_defs.md#describeagentrequesttypedef).
+[DescribeAgentRequestRequestTypeDef](./type_defs.md#describeagentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AgentArn`: `str` *(required)*
 
 Returns
-[DescribeAgentResponseResponseTypeDef](./type_defs.md#describeagentresponseresponsetypedef).
+[DescribeAgentResponseTypeDef](./type_defs.md#describeagentresponsetypedef).
 
 ### describe_location_efs
 
@@ -408,14 +419,14 @@ Boto3 documentation:
 [DataSync.Client.describe_location_efs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_efs)
 
 Arguments mapping described in
-[DescribeLocationEfsRequestTypeDef](./type_defs.md#describelocationefsrequesttypedef).
+[DescribeLocationEfsRequestRequestTypeDef](./type_defs.md#describelocationefsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationEfsResponseResponseTypeDef](./type_defs.md#describelocationefsresponseresponsetypedef).
+[DescribeLocationEfsResponseTypeDef](./type_defs.md#describelocationefsresponsetypedef).
 
 ### describe_location_fsx_windows
 
@@ -429,14 +440,14 @@ Boto3 documentation:
 [DataSync.Client.describe_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_windows)
 
 Arguments mapping described in
-[DescribeLocationFsxWindowsRequestTypeDef](./type_defs.md#describelocationfsxwindowsrequesttypedef).
+[DescribeLocationFsxWindowsRequestRequestTypeDef](./type_defs.md#describelocationfsxwindowsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationFsxWindowsResponseResponseTypeDef](./type_defs.md#describelocationfsxwindowsresponseresponsetypedef).
+[DescribeLocationFsxWindowsResponseTypeDef](./type_defs.md#describelocationfsxwindowsresponsetypedef).
 
 ### describe_location_nfs
 
@@ -448,14 +459,14 @@ Boto3 documentation:
 [DataSync.Client.describe_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_nfs)
 
 Arguments mapping described in
-[DescribeLocationNfsRequestTypeDef](./type_defs.md#describelocationnfsrequesttypedef).
+[DescribeLocationNfsRequestRequestTypeDef](./type_defs.md#describelocationnfsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationNfsResponseResponseTypeDef](./type_defs.md#describelocationnfsresponseresponsetypedef).
+[DescribeLocationNfsResponseTypeDef](./type_defs.md#describelocationnfsresponsetypedef).
 
 ### describe_location_object_storage
 
@@ -468,14 +479,14 @@ Boto3 documentation:
 [DataSync.Client.describe_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_object_storage)
 
 Arguments mapping described in
-[DescribeLocationObjectStorageRequestTypeDef](./type_defs.md#describelocationobjectstoragerequesttypedef).
+[DescribeLocationObjectStorageRequestRequestTypeDef](./type_defs.md#describelocationobjectstoragerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationObjectStorageResponseResponseTypeDef](./type_defs.md#describelocationobjectstorageresponseresponsetypedef).
+[DescribeLocationObjectStorageResponseTypeDef](./type_defs.md#describelocationobjectstorageresponsetypedef).
 
 ### describe_location_s3
 
@@ -487,14 +498,14 @@ Boto3 documentation:
 [DataSync.Client.describe_location_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_s3)
 
 Arguments mapping described in
-[DescribeLocationS3RequestTypeDef](./type_defs.md#describelocations3requesttypedef).
+[DescribeLocationS3RequestRequestTypeDef](./type_defs.md#describelocations3requestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationS3ResponseResponseTypeDef](./type_defs.md#describelocations3responseresponsetypedef).
+[DescribeLocationS3ResponseTypeDef](./type_defs.md#describelocations3responsetypedef).
 
 ### describe_location_smb
 
@@ -506,14 +517,14 @@ Boto3 documentation:
 [DataSync.Client.describe_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_smb)
 
 Arguments mapping described in
-[DescribeLocationSmbRequestTypeDef](./type_defs.md#describelocationsmbrequesttypedef).
+[DescribeLocationSmbRequestRequestTypeDef](./type_defs.md#describelocationsmbrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LocationArn`: `str` *(required)*
 
 Returns
-[DescribeLocationSmbResponseResponseTypeDef](./type_defs.md#describelocationsmbresponseresponsetypedef).
+[DescribeLocationSmbResponseTypeDef](./type_defs.md#describelocationsmbresponsetypedef).
 
 ### describe_task
 
@@ -525,14 +536,14 @@ Boto3 documentation:
 [DataSync.Client.describe_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task)
 
 Arguments mapping described in
-[DescribeTaskRequestTypeDef](./type_defs.md#describetaskrequesttypedef).
+[DescribeTaskRequestRequestTypeDef](./type_defs.md#describetaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TaskArn`: `str` *(required)*
 
 Returns
-[DescribeTaskResponseResponseTypeDef](./type_defs.md#describetaskresponseresponsetypedef).
+[DescribeTaskResponseTypeDef](./type_defs.md#describetaskresponsetypedef).
 
 ### describe_task_execution
 
@@ -544,14 +555,14 @@ Boto3 documentation:
 [DataSync.Client.describe_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task_execution)
 
 Arguments mapping described in
-[DescribeTaskExecutionRequestTypeDef](./type_defs.md#describetaskexecutionrequesttypedef).
+[DescribeTaskExecutionRequestRequestTypeDef](./type_defs.md#describetaskexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TaskExecutionArn`: `str` *(required)*
 
 Returns
-[DescribeTaskExecutionResponseResponseTypeDef](./type_defs.md#describetaskexecutionresponseresponsetypedef).
+[DescribeTaskExecutionResponseTypeDef](./type_defs.md#describetaskexecutionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -582,15 +593,14 @@ Boto3 documentation:
 [DataSync.Client.list_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_agents)
 
 Arguments mapping described in
-[ListAgentsRequestTypeDef](./type_defs.md#listagentsrequesttypedef).
+[ListAgentsRequestRequestTypeDef](./type_defs.md#listagentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListAgentsResponseResponseTypeDef](./type_defs.md#listagentsresponseresponsetypedef).
+Returns [ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef).
 
 ### list_locations
 
@@ -602,7 +612,7 @@ Boto3 documentation:
 [DataSync.Client.list_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_locations)
 
 Arguments mapping described in
-[ListLocationsRequestTypeDef](./type_defs.md#listlocationsrequesttypedef).
+[ListLocationsRequestRequestTypeDef](./type_defs.md#listlocationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -612,7 +622,7 @@ Keyword-only arguments:
   `List`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
 
 Returns
-[ListLocationsResponseResponseTypeDef](./type_defs.md#listlocationsresponseresponsetypedef).
+[ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -624,7 +634,7 @@ Boto3 documentation:
 [DataSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -633,7 +643,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_task_executions
 
@@ -645,7 +655,7 @@ Boto3 documentation:
 [DataSync.Client.list_task_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_task_executions)
 
 Arguments mapping described in
-[ListTaskExecutionsRequestTypeDef](./type_defs.md#listtaskexecutionsrequesttypedef).
+[ListTaskExecutionsRequestRequestTypeDef](./type_defs.md#listtaskexecutionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -654,7 +664,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTaskExecutionsResponseResponseTypeDef](./type_defs.md#listtaskexecutionsresponseresponsetypedef).
+[ListTaskExecutionsResponseTypeDef](./type_defs.md#listtaskexecutionsresponsetypedef).
 
 ### list_tasks
 
@@ -666,7 +676,7 @@ Boto3 documentation:
 [DataSync.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tasks)
 
 Arguments mapping described in
-[ListTasksRequestTypeDef](./type_defs.md#listtasksrequesttypedef).
+[ListTasksRequestRequestTypeDef](./type_defs.md#listtasksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -674,8 +684,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `Filters`: `List`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
 
-Returns
-[ListTasksResponseResponseTypeDef](./type_defs.md#listtasksresponseresponsetypedef).
+Returns [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef).
 
 ### start_task_execution
 
@@ -687,7 +696,7 @@ Boto3 documentation:
 [DataSync.Client.start_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.start_task_execution)
 
 Arguments mapping described in
-[StartTaskExecutionRequestTypeDef](./type_defs.md#starttaskexecutionrequesttypedef).
+[StartTaskExecutionRequestRequestTypeDef](./type_defs.md#starttaskexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -696,7 +705,7 @@ Keyword-only arguments:
 - `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 Returns
-[StartTaskExecutionResponseResponseTypeDef](./type_defs.md#starttaskexecutionresponseresponsetypedef).
+[StartTaskExecutionResponseTypeDef](./type_defs.md#starttaskexecutionresponsetypedef).
 
 ### tag_resource
 
@@ -708,7 +717,7 @@ Boto3 documentation:
 [DataSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -728,7 +737,7 @@ Boto3 documentation:
 [DataSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -747,7 +756,7 @@ Boto3 documentation:
 [DataSync.Client.update_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_agent)
 
 Arguments mapping described in
-[UpdateAgentRequestTypeDef](./type_defs.md#updateagentrequesttypedef).
+[UpdateAgentRequestRequestTypeDef](./type_defs.md#updateagentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -767,7 +776,7 @@ Boto3 documentation:
 [DataSync.Client.update_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_nfs)
 
 Arguments mapping described in
-[UpdateLocationNfsRequestTypeDef](./type_defs.md#updatelocationnfsrequesttypedef).
+[UpdateLocationNfsRequestRequestTypeDef](./type_defs.md#updatelocationnfsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -791,7 +800,7 @@ Boto3 documentation:
 [DataSync.Client.update_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_object_storage)
 
 Arguments mapping described in
-[UpdateLocationObjectStorageRequestTypeDef](./type_defs.md#updatelocationobjectstoragerequesttypedef).
+[UpdateLocationObjectStorageRequestRequestTypeDef](./type_defs.md#updatelocationobjectstoragerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -817,7 +826,7 @@ Boto3 documentation:
 [DataSync.Client.update_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_smb)
 
 Arguments mapping described in
-[UpdateLocationSmbRequestTypeDef](./type_defs.md#updatelocationsmbrequesttypedef).
+[UpdateLocationSmbRequestRequestTypeDef](./type_defs.md#updatelocationsmbrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -842,7 +851,7 @@ Boto3 documentation:
 [DataSync.Client.update_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task)
 
 Arguments mapping described in
-[UpdateTaskRequestTypeDef](./type_defs.md#updatetaskrequesttypedef).
+[UpdateTaskRequestRequestTypeDef](./type_defs.md#updatetaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -865,7 +874,7 @@ Boto3 documentation:
 [DataSync.Client.update_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task_execution)
 
 Arguments mapping described in
-[UpdateTaskExecutionRequestTypeDef](./type_defs.md#updatetaskexecutionrequesttypedef).
+[UpdateTaskExecutionRequestRequestTypeDef](./type_defs.md#updatetaskexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 

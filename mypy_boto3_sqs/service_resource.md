@@ -339,7 +339,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ChangeMessageVisibilityBatchResultResponseTypeDef](./type_defs.md#changemessagevisibilitybatchresultresponsetypedef).
+[ChangeMessageVisibilityBatchResultTypeDef](./type_defs.md#changemessagevisibilitybatchresulttypedef).
 
 #### Queue.delete method
 
@@ -370,7 +370,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DeleteMessageBatchResultResponseTypeDef](./type_defs.md#deletemessagebatchresultresponsetypedef).
+[DeleteMessageBatchResultTypeDef](./type_defs.md#deletemessagebatchresulttypedef).
 
 #### Queue.get_available_subresources method
 
@@ -477,8 +477,7 @@ Keyword-only arguments:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns
-[SendMessageResultResponseTypeDef](./type_defs.md#sendmessageresultresponsetypedef).
+Returns [SendMessageResultTypeDef](./type_defs.md#sendmessageresulttypedef).
 
 #### Queue.send_messages method
 
@@ -499,7 +498,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[SendMessageBatchResultResponseTypeDef](./type_defs.md#sendmessagebatchresultresponsetypedef).
+[SendMessageBatchResultTypeDef](./type_defs.md#sendmessagebatchresulttypedef).
 
 #### Queue.set_attributes method
 

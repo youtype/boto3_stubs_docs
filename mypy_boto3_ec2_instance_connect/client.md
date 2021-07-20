@@ -11,6 +11,7 @@ type annotations stubs module
   - [EC2InstanceConnectClient](#ec2instanceconnectclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [send_serial_console_ssh_public_key](#send_serial_console_ssh_public_key)
@@ -59,6 +60,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+EC2InstanceConnectClient exceptions.
+
+Type annotations for `boto3.client("ec2-instance-connect").exceptions` method.
+
+Boto3 documentation:
+[EC2InstanceConnect.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -106,7 +118,7 @@ Boto3 documentation:
 [EC2InstanceConnect.Client.send_serial_console_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_serial_console_ssh_public_key)
 
 Arguments mapping described in
-[SendSerialConsoleSSHPublicKeyRequestTypeDef](./type_defs.md#sendserialconsolesshpublickeyrequesttypedef).
+[SendSerialConsoleSSHPublicKeyRequestRequestTypeDef](./type_defs.md#sendserialconsolesshpublickeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -115,7 +127,7 @@ Keyword-only arguments:
 - `SerialPort`: `int`
 
 Returns
-[SendSerialConsoleSSHPublicKeyResponseResponseTypeDef](./type_defs.md#sendserialconsolesshpublickeyresponseresponsetypedef).
+[SendSerialConsoleSSHPublicKeyResponseTypeDef](./type_defs.md#sendserialconsolesshpublickeyresponsetypedef).
 
 ### send_ssh_public_key
 
@@ -129,7 +141,7 @@ Boto3 documentation:
 [EC2InstanceConnect.Client.send_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect.Client.send_ssh_public_key)
 
 Arguments mapping described in
-[SendSSHPublicKeyRequestTypeDef](./type_defs.md#sendsshpublickeyrequesttypedef).
+[SendSSHPublicKeyRequestRequestTypeDef](./type_defs.md#sendsshpublickeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -139,4 +151,4 @@ Keyword-only arguments:
 - `AvailabilityZone`: `str` *(required)*
 
 Returns
-[SendSSHPublicKeyResponseResponseTypeDef](./type_defs.md#sendsshpublickeyresponseresponsetypedef).
+[SendSSHPublicKeyResponseTypeDef](./type_defs.md#sendsshpublickeyresponsetypedef).

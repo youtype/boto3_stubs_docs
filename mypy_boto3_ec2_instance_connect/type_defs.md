@@ -9,10 +9,10 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 EC2InstanceConnect module](#typed-dictionaries-for-boto3-ec2instanceconnect-module)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendSSHPublicKeyRequestTypeDef](#sendsshpublickeyrequesttypedef)
-  - [SendSSHPublicKeyResponseResponseTypeDef](#sendsshpublickeyresponseresponsetypedef)
-  - [SendSerialConsoleSSHPublicKeyRequestTypeDef](#sendserialconsolesshpublickeyrequesttypedef)
-  - [SendSerialConsoleSSHPublicKeyResponseResponseTypeDef](#sendserialconsolesshpublickeyresponseresponsetypedef)
+  - [SendSSHPublicKeyRequestRequestTypeDef](#sendsshpublickeyrequestrequesttypedef)
+  - [SendSSHPublicKeyResponseTypeDef](#sendsshpublickeyresponsetypedef)
+  - [SendSerialConsoleSSHPublicKeyRequestRequestTypeDef](#sendserialconsolesshpublickeyrequestrequesttypedef)
+  - [SendSerialConsoleSSHPublicKeyResponseTypeDef](#sendserialconsolesshpublickeyresponsetypedef)
 
 ## ResponseMetadataTypeDef
 
@@ -28,10 +28,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## SendSSHPublicKeyRequestTypeDef
+## SendSSHPublicKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ec2_instance_connect.type_defs import SendSSHPublicKeyRequestTypeDef
+from mypy_boto3_ec2_instance_connect.type_defs import SendSSHPublicKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -41,10 +41,10 @@ Required fields:
 - `SSHPublicKey`: `str`
 - `AvailabilityZone`: `str`
 
-## SendSSHPublicKeyResponseResponseTypeDef
+## SendSSHPublicKeyResponseTypeDef
 
 ```python
-from mypy_boto3_ec2_instance_connect.type_defs import SendSSHPublicKeyResponseResponseTypeDef
+from mypy_boto3_ec2_instance_connect.type_defs import SendSSHPublicKeyResponseTypeDef
 ```
 
 Required fields:
@@ -54,10 +54,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SendSerialConsoleSSHPublicKeyRequestTypeDef
+## SendSerialConsoleSSHPublicKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ec2_instance_connect.type_defs import SendSerialConsoleSSHPublicKeyRequestTypeDef
+from mypy_boto3_ec2_instance_connect.type_defs import SendSerialConsoleSSHPublicKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -69,10 +69,10 @@ Optional fields:
 
 - `SerialPort`: `int`
 
-## SendSerialConsoleSSHPublicKeyResponseResponseTypeDef
+## SendSerialConsoleSSHPublicKeyResponseTypeDef
 
 ```python
-from mypy_boto3_ec2_instance_connect.type_defs import SendSerialConsoleSSHPublicKeyResponseResponseTypeDef
+from mypy_boto3_ec2_instance_connect.type_defs import SendSerialConsoleSSHPublicKeyResponseTypeDef
 ```
 
 Required fields:

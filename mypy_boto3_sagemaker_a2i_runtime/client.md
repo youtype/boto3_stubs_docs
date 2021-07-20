@@ -11,6 +11,7 @@ type annotations stubs module
   - [AugmentedAIRuntimeClient](#augmentedairuntimeclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [delete_human_loop](#delete_human_loop)
     - [describe_human_loop](#describe_human_loop)
@@ -60,6 +61,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AugmentedAIRuntimeClient exceptions.
+
+Type annotations for `boto3.client("sagemaker-a2i-runtime").exceptions` method.
+
+Boto3 documentation:
+[AugmentedAIRuntime.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -87,7 +99,7 @@ Boto3 documentation:
 [AugmentedAIRuntime.Client.delete_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.delete_human_loop)
 
 Arguments mapping described in
-[DeleteHumanLoopRequestTypeDef](./type_defs.md#deletehumanlooprequesttypedef).
+[DeleteHumanLoopRequestRequestTypeDef](./type_defs.md#deletehumanlooprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -106,14 +118,14 @@ Boto3 documentation:
 [AugmentedAIRuntime.Client.describe_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.describe_human_loop)
 
 Arguments mapping described in
-[DescribeHumanLoopRequestTypeDef](./type_defs.md#describehumanlooprequesttypedef).
+[DescribeHumanLoopRequestRequestTypeDef](./type_defs.md#describehumanlooprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HumanLoopName`: `str` *(required)*
 
 Returns
-[DescribeHumanLoopResponseResponseTypeDef](./type_defs.md#describehumanloopresponseresponsetypedef).
+[DescribeHumanLoopResponseTypeDef](./type_defs.md#describehumanloopresponsetypedef).
 
 ### generate_presigned_url
 
@@ -145,7 +157,7 @@ Boto3 documentation:
 [AugmentedAIRuntime.Client.list_human_loops](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.list_human_loops)
 
 Arguments mapping described in
-[ListHumanLoopsRequestTypeDef](./type_defs.md#listhumanloopsrequesttypedef).
+[ListHumanLoopsRequestRequestTypeDef](./type_defs.md#listhumanloopsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,7 +169,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListHumanLoopsResponseResponseTypeDef](./type_defs.md#listhumanloopsresponseresponsetypedef).
+[ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef).
 
 ### start_human_loop
 
@@ -170,7 +182,7 @@ Boto3 documentation:
 [AugmentedAIRuntime.Client.start_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop)
 
 Arguments mapping described in
-[StartHumanLoopRequestTypeDef](./type_defs.md#starthumanlooprequesttypedef).
+[StartHumanLoopRequestRequestTypeDef](./type_defs.md#starthumanlooprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,7 +194,7 @@ Keyword-only arguments:
   [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
 
 Returns
-[StartHumanLoopResponseResponseTypeDef](./type_defs.md#starthumanloopresponseresponsetypedef).
+[StartHumanLoopResponseTypeDef](./type_defs.md#starthumanloopresponsetypedef).
 
 ### stop_human_loop
 
@@ -195,7 +207,7 @@ Boto3 documentation:
 [AugmentedAIRuntime.Client.stop_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.stop_human_loop)
 
 Arguments mapping described in
-[StopHumanLoopRequestTypeDef](./type_defs.md#stophumanlooprequesttypedef).
+[StopHumanLoopRequestRequestTypeDef](./type_defs.md#stophumanlooprequestrequesttypedef).
 
 Keyword-only arguments:
 

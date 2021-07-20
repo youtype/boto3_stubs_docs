@@ -11,6 +11,7 @@ type annotations stubs module
   - [LexRuntimeServiceClient](#lexruntimeserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [delete_session](#delete_session)
     - [generate_presigned_url](#generate_presigned_url)
@@ -64,6 +65,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+LexRuntimeServiceClient exceptions.
+
+Type annotations for `boto3.client("lex-runtime").exceptions` method.
+
+Boto3 documentation:
+[LexRuntimeService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -89,7 +101,7 @@ Boto3 documentation:
 [LexRuntimeService.Client.delete_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.delete_session)
 
 Arguments mapping described in
-[DeleteSessionRequestTypeDef](./type_defs.md#deletesessionrequesttypedef).
+[DeleteSessionRequestRequestTypeDef](./type_defs.md#deletesessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -98,7 +110,7 @@ Keyword-only arguments:
 - `userId`: `str` *(required)*
 
 Returns
-[DeleteSessionResponseResponseTypeDef](./type_defs.md#deletesessionresponseresponsetypedef).
+[DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -129,7 +141,7 @@ Boto3 documentation:
 [LexRuntimeService.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.get_session)
 
 Arguments mapping described in
-[GetSessionRequestTypeDef](./type_defs.md#getsessionrequesttypedef).
+[GetSessionRequestRequestTypeDef](./type_defs.md#getsessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -138,8 +150,7 @@ Keyword-only arguments:
 - `userId`: `str` *(required)*
 - `checkpointLabelFilter`: `str`
 
-Returns
-[GetSessionResponseResponseTypeDef](./type_defs.md#getsessionresponseresponsetypedef).
+Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
 
 ### post_content
 
@@ -151,7 +162,7 @@ Boto3 documentation:
 [LexRuntimeService.Client.post_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.post_content)
 
 Arguments mapping described in
-[PostContentRequestTypeDef](./type_defs.md#postcontentrequesttypedef).
+[PostContentRequestRequestTypeDef](./type_defs.md#postcontentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,7 +178,7 @@ Keyword-only arguments:
 - `activeContexts`: `str`
 
 Returns
-[PostContentResponseResponseTypeDef](./type_defs.md#postcontentresponseresponsetypedef).
+[PostContentResponseTypeDef](./type_defs.md#postcontentresponsetypedef).
 
 ### post_text
 
@@ -179,7 +190,7 @@ Boto3 documentation:
 [LexRuntimeService.Client.post_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.post_text)
 
 Arguments mapping described in
-[PostTextRequestTypeDef](./type_defs.md#posttextrequesttypedef).
+[PostTextRequestRequestTypeDef](./type_defs.md#posttextrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,8 +203,7 @@ Keyword-only arguments:
 - `activeContexts`:
   `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
-Returns
-[PostTextResponseResponseTypeDef](./type_defs.md#posttextresponseresponsetypedef).
+Returns [PostTextResponseTypeDef](./type_defs.md#posttextresponsetypedef).
 
 ### put_session
 
@@ -205,7 +215,7 @@ Boto3 documentation:
 [LexRuntimeService.Client.put_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService.Client.put_session)
 
 Arguments mapping described in
-[PutSessionRequestTypeDef](./type_defs.md#putsessionrequesttypedef).
+[PutSessionRequestRequestTypeDef](./type_defs.md#putsessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,5 +230,4 @@ Keyword-only arguments:
 - `activeContexts`:
   `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
-Returns
-[PutSessionResponseResponseTypeDef](./type_defs.md#putsessionresponseresponsetypedef).
+Returns [PutSessionResponseTypeDef](./type_defs.md#putsessionresponsetypedef).

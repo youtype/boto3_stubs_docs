@@ -9,13 +9,13 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 Pricing module](#typed-dictionaries-for-boto3-pricing-module)
   - [AttributeValueTypeDef](#attributevaluetypedef)
-  - [DescribeServicesRequestTypeDef](#describeservicesrequesttypedef)
-  - [DescribeServicesResponseResponseTypeDef](#describeservicesresponseresponsetypedef)
+  - [DescribeServicesRequestRequestTypeDef](#describeservicesrequestrequesttypedef)
+  - [DescribeServicesResponseTypeDef](#describeservicesresponsetypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [GetAttributeValuesRequestTypeDef](#getattributevaluesrequesttypedef)
-  - [GetAttributeValuesResponseResponseTypeDef](#getattributevaluesresponseresponsetypedef)
-  - [GetProductsRequestTypeDef](#getproductsrequesttypedef)
-  - [GetProductsResponseResponseTypeDef](#getproductsresponseresponsetypedef)
+  - [GetAttributeValuesRequestRequestTypeDef](#getattributevaluesrequestrequesttypedef)
+  - [GetAttributeValuesResponseTypeDef](#getattributevaluesresponsetypedef)
+  - [GetProductsRequestRequestTypeDef](#getproductsrequestrequesttypedef)
+  - [GetProductsResponseTypeDef](#getproductsresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ServiceTypeDef](#servicetypedef)
@@ -30,10 +30,10 @@ Optional fields:
 
 - `Value`: `str`
 
-## DescribeServicesRequestTypeDef
+## DescribeServicesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pricing.type_defs import DescribeServicesRequestTypeDef
+from mypy_boto3_pricing.type_defs import DescribeServicesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -43,10 +43,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## DescribeServicesResponseResponseTypeDef
+## DescribeServicesResponseTypeDef
 
 ```python
-from mypy_boto3_pricing.type_defs import DescribeServicesResponseResponseTypeDef
+from mypy_boto3_pricing.type_defs import DescribeServicesResponseTypeDef
 ```
 
 Required fields:
@@ -70,10 +70,10 @@ Required fields:
 - `Field`: `str`
 - `Value`: `str`
 
-## GetAttributeValuesRequestTypeDef
+## GetAttributeValuesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pricing.type_defs import GetAttributeValuesRequestTypeDef
+from mypy_boto3_pricing.type_defs import GetAttributeValuesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -86,10 +86,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetAttributeValuesResponseResponseTypeDef
+## GetAttributeValuesResponseTypeDef
 
 ```python
-from mypy_boto3_pricing.type_defs import GetAttributeValuesResponseResponseTypeDef
+from mypy_boto3_pricing.type_defs import GetAttributeValuesResponseTypeDef
 ```
 
 Required fields:
@@ -100,10 +100,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetProductsRequestTypeDef
+## GetProductsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pricing.type_defs import GetProductsRequestTypeDef
+from mypy_boto3_pricing.type_defs import GetProductsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -114,10 +114,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetProductsResponseResponseTypeDef
+## GetProductsResponseTypeDef
 
 ```python
-from mypy_boto3_pricing.type_defs import GetProductsResponseResponseTypeDef
+from mypy_boto3_pricing.type_defs import GetProductsResponseTypeDef
 ```
 
 Required fields:

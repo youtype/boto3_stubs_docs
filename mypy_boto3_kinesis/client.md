@@ -11,6 +11,7 @@ type annotations stubs module
   - [KinesisClient](#kinesisclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_tags_to_stream](#add_tags_to_stream)
     - [can_paginate](#can_paginate)
     - [create_stream](#create_stream)
@@ -92,6 +93,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+KinesisClient exceptions.
+
+Type annotations for `boto3.client("kinesis").exceptions` method.
+
+Boto3 documentation:
+[Kinesis.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_tags_to_stream
 
 Adds or updates tags for the specified Kinesis data stream.
@@ -102,7 +114,7 @@ Boto3 documentation:
 [Kinesis.Client.add_tags_to_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.add_tags_to_stream)
 
 Arguments mapping described in
-[AddTagsToStreamInputTypeDef](./type_defs.md#addtagstostreaminputtypedef).
+[AddTagsToStreamInputRequestTypeDef](./type_defs.md#addtagstostreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -134,7 +146,7 @@ Boto3 documentation:
 [Kinesis.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.create_stream)
 
 Arguments mapping described in
-[CreateStreamInputTypeDef](./type_defs.md#createstreaminputtypedef).
+[CreateStreamInputRequestTypeDef](./type_defs.md#createstreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -153,7 +165,7 @@ Boto3 documentation:
 [Kinesis.Client.decrease_stream_retention_period](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.decrease_stream_retention_period)
 
 Arguments mapping described in
-[DecreaseStreamRetentionPeriodInputTypeDef](./type_defs.md#decreasestreamretentionperiodinputtypedef).
+[DecreaseStreamRetentionPeriodInputRequestTypeDef](./type_defs.md#decreasestreamretentionperiodinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -170,7 +182,7 @@ Boto3 documentation:
 [Kinesis.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.delete_stream)
 
 Arguments mapping described in
-[DeleteStreamInputTypeDef](./type_defs.md#deletestreaminputtypedef).
+[DeleteStreamInputRequestTypeDef](./type_defs.md#deletestreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -188,7 +200,7 @@ Boto3 documentation:
 [Kinesis.Client.deregister_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.deregister_stream_consumer)
 
 Arguments mapping described in
-[DeregisterStreamConsumerInputTypeDef](./type_defs.md#deregisterstreamconsumerinputtypedef).
+[DeregisterStreamConsumerInputRequestTypeDef](./type_defs.md#deregisterstreamconsumerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -206,7 +218,7 @@ Boto3 documentation:
 [Kinesis.Client.describe_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_limits)
 
 Returns
-[DescribeLimitsOutputResponseTypeDef](./type_defs.md#describelimitsoutputresponsetypedef).
+[DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef).
 
 ### describe_stream
 
@@ -218,7 +230,7 @@ Boto3 documentation:
 [Kinesis.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream)
 
 Arguments mapping described in
-[DescribeStreamInputTypeDef](./type_defs.md#describestreaminputtypedef).
+[DescribeStreamInputRequestTypeDef](./type_defs.md#describestreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -227,7 +239,7 @@ Keyword-only arguments:
 - `ExclusiveStartShardId`: `str`
 
 Returns
-[DescribeStreamOutputResponseTypeDef](./type_defs.md#describestreamoutputresponsetypedef).
+[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
 
 ### describe_stream_consumer
 
@@ -240,7 +252,7 @@ Boto3 documentation:
 [Kinesis.Client.describe_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream_consumer)
 
 Arguments mapping described in
-[DescribeStreamConsumerInputTypeDef](./type_defs.md#describestreamconsumerinputtypedef).
+[DescribeStreamConsumerInputRequestTypeDef](./type_defs.md#describestreamconsumerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -249,7 +261,7 @@ Keyword-only arguments:
 - `ConsumerARN`: `str`
 
 Returns
-[DescribeStreamConsumerOutputResponseTypeDef](./type_defs.md#describestreamconsumeroutputresponsetypedef).
+[DescribeStreamConsumerOutputTypeDef](./type_defs.md#describestreamconsumeroutputtypedef).
 
 ### describe_stream_summary
 
@@ -262,14 +274,14 @@ Boto3 documentation:
 [Kinesis.Client.describe_stream_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream_summary)
 
 Arguments mapping described in
-[DescribeStreamSummaryInputTypeDef](./type_defs.md#describestreamsummaryinputtypedef).
+[DescribeStreamSummaryInputRequestTypeDef](./type_defs.md#describestreamsummaryinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `StreamName`: `str` *(required)*
 
 Returns
-[DescribeStreamSummaryOutputResponseTypeDef](./type_defs.md#describestreamsummaryoutputresponsetypedef).
+[DescribeStreamSummaryOutputTypeDef](./type_defs.md#describestreamsummaryoutputtypedef).
 
 ### disable_enhanced_monitoring
 
@@ -282,7 +294,7 @@ Boto3 documentation:
 [Kinesis.Client.disable_enhanced_monitoring](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.disable_enhanced_monitoring)
 
 Arguments mapping described in
-[DisableEnhancedMonitoringInputTypeDef](./type_defs.md#disableenhancedmonitoringinputtypedef).
+[DisableEnhancedMonitoringInputRequestTypeDef](./type_defs.md#disableenhancedmonitoringinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -291,7 +303,7 @@ Keyword-only arguments:
   `List`\[[MetricsNameType](./literals.md#metricsnametype)\] *(required)*
 
 Returns
-[EnhancedMonitoringOutputResponseTypeDef](./type_defs.md#enhancedmonitoringoutputresponsetypedef).
+[EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef).
 
 ### enable_enhanced_monitoring
 
@@ -304,7 +316,7 @@ Boto3 documentation:
 [Kinesis.Client.enable_enhanced_monitoring](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.enable_enhanced_monitoring)
 
 Arguments mapping described in
-[EnableEnhancedMonitoringInputTypeDef](./type_defs.md#enableenhancedmonitoringinputtypedef).
+[EnableEnhancedMonitoringInputRequestTypeDef](./type_defs.md#enableenhancedmonitoringinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -313,7 +325,7 @@ Keyword-only arguments:
   `List`\[[MetricsNameType](./literals.md#metricsnametype)\] *(required)*
 
 Returns
-[EnhancedMonitoringOutputResponseTypeDef](./type_defs.md#enhancedmonitoringoutputresponsetypedef).
+[EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef).
 
 ### generate_presigned_url
 
@@ -343,15 +355,14 @@ Boto3 documentation:
 [Kinesis.Client.get_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.get_records)
 
 Arguments mapping described in
-[GetRecordsInputTypeDef](./type_defs.md#getrecordsinputtypedef).
+[GetRecordsInputRequestTypeDef](./type_defs.md#getrecordsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ShardIterator`: `str` *(required)*
 - `Limit`: `int`
 
-Returns
-[GetRecordsOutputResponseTypeDef](./type_defs.md#getrecordsoutputresponsetypedef).
+Returns [GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef).
 
 ### get_shard_iterator
 
@@ -363,7 +374,7 @@ Boto3 documentation:
 [Kinesis.Client.get_shard_iterator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.get_shard_iterator)
 
 Arguments mapping described in
-[GetShardIteratorInputTypeDef](./type_defs.md#getsharditeratorinputtypedef).
+[GetShardIteratorInputRequestTypeDef](./type_defs.md#getsharditeratorinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -375,7 +386,7 @@ Keyword-only arguments:
 - `Timestamp`: `Union`\[`datetime`, `str`\]
 
 Returns
-[GetShardIteratorOutputResponseTypeDef](./type_defs.md#getsharditeratoroutputresponsetypedef).
+[GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef).
 
 ### increase_stream_retention_period
 
@@ -389,7 +400,7 @@ Boto3 documentation:
 [Kinesis.Client.increase_stream_retention_period](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.increase_stream_retention_period)
 
 Arguments mapping described in
-[IncreaseStreamRetentionPeriodInputTypeDef](./type_defs.md#increasestreamretentionperiodinputtypedef).
+[IncreaseStreamRetentionPeriodInputRequestTypeDef](./type_defs.md#increasestreamretentionperiodinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -406,7 +417,7 @@ Boto3 documentation:
 [Kinesis.Client.list_shards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_shards)
 
 Arguments mapping described in
-[ListShardsInputTypeDef](./type_defs.md#listshardsinputtypedef).
+[ListShardsInputRequestTypeDef](./type_defs.md#listshardsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -417,8 +428,7 @@ Keyword-only arguments:
 - `StreamCreationTimestamp`: `Union`\[`datetime`, `str`\]
 - `ShardFilter`: [ShardFilterTypeDef](./type_defs.md#shardfiltertypedef)
 
-Returns
-[ListShardsOutputResponseTypeDef](./type_defs.md#listshardsoutputresponsetypedef).
+Returns [ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef).
 
 ### list_stream_consumers
 
@@ -431,7 +441,7 @@ Boto3 documentation:
 [Kinesis.Client.list_stream_consumers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_stream_consumers)
 
 Arguments mapping described in
-[ListStreamConsumersInputTypeDef](./type_defs.md#liststreamconsumersinputtypedef).
+[ListStreamConsumersInputRequestTypeDef](./type_defs.md#liststreamconsumersinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -441,7 +451,7 @@ Keyword-only arguments:
 - `StreamCreationTimestamp`: `Union`\[`datetime`, `str`\]
 
 Returns
-[ListStreamConsumersOutputResponseTypeDef](./type_defs.md#liststreamconsumersoutputresponsetypedef).
+[ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef).
 
 ### list_streams
 
@@ -453,15 +463,14 @@ Boto3 documentation:
 [Kinesis.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_streams)
 
 Arguments mapping described in
-[ListStreamsInputTypeDef](./type_defs.md#liststreamsinputtypedef).
+[ListStreamsInputRequestTypeDef](./type_defs.md#liststreamsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Limit`: `int`
 - `ExclusiveStartStreamName`: `str`
 
-Returns
-[ListStreamsOutputResponseTypeDef](./type_defs.md#liststreamsoutputresponsetypedef).
+Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).
 
 ### list_tags_for_stream
 
@@ -473,7 +482,7 @@ Boto3 documentation:
 [Kinesis.Client.list_tags_for_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_tags_for_stream)
 
 Arguments mapping described in
-[ListTagsForStreamInputTypeDef](./type_defs.md#listtagsforstreaminputtypedef).
+[ListTagsForStreamInputRequestTypeDef](./type_defs.md#listtagsforstreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -482,7 +491,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListTagsForStreamOutputResponseTypeDef](./type_defs.md#listtagsforstreamoutputresponsetypedef).
+[ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef).
 
 ### merge_shards
 
@@ -495,7 +504,7 @@ Boto3 documentation:
 [Kinesis.Client.merge_shards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.merge_shards)
 
 Arguments mapping described in
-[MergeShardsInputTypeDef](./type_defs.md#mergeshardsinputtypedef).
+[MergeShardsInputRequestTypeDef](./type_defs.md#mergeshardsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -513,7 +522,7 @@ Boto3 documentation:
 [Kinesis.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.put_record)
 
 Arguments mapping described in
-[PutRecordInputTypeDef](./type_defs.md#putrecordinputtypedef).
+[PutRecordInputRequestTypeDef](./type_defs.md#putrecordinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -523,8 +532,7 @@ Keyword-only arguments:
 - `ExplicitHashKey`: `str`
 - `SequenceNumberForOrdering`: `str`
 
-Returns
-[PutRecordOutputResponseTypeDef](./type_defs.md#putrecordoutputresponsetypedef).
+Returns [PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef).
 
 ### put_records
 
@@ -537,7 +545,7 @@ Boto3 documentation:
 [Kinesis.Client.put_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.put_records)
 
 Arguments mapping described in
-[PutRecordsInputTypeDef](./type_defs.md#putrecordsinputtypedef).
+[PutRecordsInputRequestTypeDef](./type_defs.md#putrecordsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -546,8 +554,7 @@ Keyword-only arguments:
   *(required)*
 - `StreamName`: `str` *(required)*
 
-Returns
-[PutRecordsOutputResponseTypeDef](./type_defs.md#putrecordsoutputresponsetypedef).
+Returns [PutRecordsOutputTypeDef](./type_defs.md#putrecordsoutputtypedef).
 
 ### register_stream_consumer
 
@@ -559,7 +566,7 @@ Boto3 documentation:
 [Kinesis.Client.register_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.register_stream_consumer)
 
 Arguments mapping described in
-[RegisterStreamConsumerInputTypeDef](./type_defs.md#registerstreamconsumerinputtypedef).
+[RegisterStreamConsumerInputRequestTypeDef](./type_defs.md#registerstreamconsumerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -567,7 +574,7 @@ Keyword-only arguments:
 - `ConsumerName`: `str` *(required)*
 
 Returns
-[RegisterStreamConsumerOutputResponseTypeDef](./type_defs.md#registerstreamconsumeroutputresponsetypedef).
+[RegisterStreamConsumerOutputTypeDef](./type_defs.md#registerstreamconsumeroutputtypedef).
 
 ### remove_tags_from_stream
 
@@ -579,7 +586,7 @@ Boto3 documentation:
 [Kinesis.Client.remove_tags_from_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.remove_tags_from_stream)
 
 Arguments mapping described in
-[RemoveTagsFromStreamInputTypeDef](./type_defs.md#removetagsfromstreaminputtypedef).
+[RemoveTagsFromStreamInputRequestTypeDef](./type_defs.md#removetagsfromstreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -597,7 +604,7 @@ Boto3 documentation:
 [Kinesis.Client.split_shard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.split_shard)
 
 Arguments mapping described in
-[SplitShardInputTypeDef](./type_defs.md#splitshardinputtypedef).
+[SplitShardInputRequestTypeDef](./type_defs.md#splitshardinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -616,7 +623,7 @@ Boto3 documentation:
 [Kinesis.Client.start_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.start_stream_encryption)
 
 Arguments mapping described in
-[StartStreamEncryptionInputTypeDef](./type_defs.md#startstreamencryptioninputtypedef).
+[StartStreamEncryptionInputRequestTypeDef](./type_defs.md#startstreamencryptioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -635,7 +642,7 @@ Boto3 documentation:
 [Kinesis.Client.stop_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.stop_stream_encryption)
 
 Arguments mapping described in
-[StopStreamEncryptionInputTypeDef](./type_defs.md#stopstreamencryptioninputtypedef).
+[StopStreamEncryptionInputRequestTypeDef](./type_defs.md#stopstreamencryptioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -656,7 +663,7 @@ Boto3 documentation:
 [Kinesis.Client.subscribe_to_shard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.subscribe_to_shard)
 
 Arguments mapping described in
-[SubscribeToShardInputTypeDef](./type_defs.md#subscribetoshardinputtypedef).
+[SubscribeToShardInputRequestTypeDef](./type_defs.md#subscribetoshardinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -667,7 +674,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[SubscribeToShardOutputResponseTypeDef](./type_defs.md#subscribetoshardoutputresponsetypedef).
+[SubscribeToShardOutputTypeDef](./type_defs.md#subscribetoshardoutputtypedef).
 
 ### update_shard_count
 
@@ -680,7 +687,7 @@ Boto3 documentation:
 [Kinesis.Client.update_shard_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.update_shard_count)
 
 Arguments mapping described in
-[UpdateShardCountInputTypeDef](./type_defs.md#updateshardcountinputtypedef).
+[UpdateShardCountInputRequestTypeDef](./type_defs.md#updateshardcountinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -690,7 +697,7 @@ Keyword-only arguments:
   [ScalingTypeType](./literals.md#scalingtypetype)) *(required)*
 
 Returns
-[UpdateShardCountOutputResponseTypeDef](./type_defs.md#updateshardcountoutputresponsetypedef).
+[UpdateShardCountOutputTypeDef](./type_defs.md#updateshardcountoutputtypedef).
 
 ### get_paginator
 

@@ -43,7 +43,7 @@ Arguments for `GetFlowTemplateRevisionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetFlowTemplateRevisionsPaginator.paginate` returns
-`Iterator`\[[GetFlowTemplateRevisionsResponseResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponseresponsetypedef)\].
+`Iterator`\[[GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef)\].
 
 ## GetSystemTemplateRevisionsPaginator
 
@@ -69,7 +69,7 @@ Arguments for `GetSystemTemplateRevisionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSystemTemplateRevisionsPaginator.paginate` returns
-`Iterator`\[[GetSystemTemplateRevisionsResponseResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponseresponsetypedef)\].
+`Iterator`\[[GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef)\].
 
 ## ListFlowExecutionMessagesPaginator
 
@@ -95,7 +95,7 @@ Arguments for `ListFlowExecutionMessagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFlowExecutionMessagesPaginator.paginate` returns
-`Iterator`\[[ListFlowExecutionMessagesResponseResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponseresponsetypedef)\].
+`Iterator`\[[ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -121,7 +121,7 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
 ## SearchEntitiesPaginator
 
@@ -151,7 +151,7 @@ Arguments for `SearchEntitiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchEntitiesPaginator.paginate` returns
-`Iterator`\[[SearchEntitiesResponseResponseTypeDef](./type_defs.md#searchentitiesresponseresponsetypedef)\].
+`Iterator`\[[SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef)\].
 
 ## SearchFlowExecutionsPaginator
 
@@ -180,7 +180,7 @@ Arguments for `SearchFlowExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchFlowExecutionsPaginator.paginate` returns
-`Iterator`\[[SearchFlowExecutionsResponseResponseTypeDef](./type_defs.md#searchflowexecutionsresponseresponsetypedef)\].
+`Iterator`\[[SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef)\].
 
 ## SearchFlowTemplatesPaginator
 
@@ -207,7 +207,7 @@ Arguments for `SearchFlowTemplatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchFlowTemplatesPaginator.paginate` returns
-`Iterator`\[[SearchFlowTemplatesResponseResponseTypeDef](./type_defs.md#searchflowtemplatesresponseresponsetypedef)\].
+`Iterator`\[[SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef)\].
 
 ## SearchSystemInstancesPaginator
 
@@ -234,7 +234,7 @@ Arguments for `SearchSystemInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchSystemInstancesPaginator.paginate` returns
-`Iterator`\[[SearchSystemInstancesResponseResponseTypeDef](./type_defs.md#searchsysteminstancesresponseresponsetypedef)\].
+`Iterator`\[[SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef)\].
 
 ## SearchSystemTemplatesPaginator
 
@@ -261,7 +261,7 @@ Arguments for `SearchSystemTemplatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchSystemTemplatesPaginator.paginate` returns
-`Iterator`\[[SearchSystemTemplatesResponseResponseTypeDef](./type_defs.md#searchsystemtemplatesresponseresponsetypedef)\].
+`Iterator`\[[SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef)\].
 
 ## SearchThingsPaginator
 
@@ -288,4 +288,4 @@ Arguments for `SearchThingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `SearchThingsPaginator.paginate` returns
-`Iterator`\[[SearchThingsResponseResponseTypeDef](./type_defs.md#searchthingsresponseresponsetypedef)\].
+`Iterator`\[[SearchThingsResponseTypeDef](./type_defs.md#searchthingsresponsetypedef)\].

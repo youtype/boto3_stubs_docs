@@ -11,6 +11,7 @@ type annotations stubs module
   - [SSOClient](#ssoclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_role_credentials](#get_role_credentials)
@@ -57,6 +58,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SSOClient exceptions.
+
+Type annotations for `boto3.client("sso").exceptions` method.
+
+Boto3 documentation:
+[SSO.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -101,7 +113,7 @@ Boto3 documentation:
 [SSO.Client.get_role_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.get_role_credentials)
 
 Arguments mapping described in
-[GetRoleCredentialsRequestTypeDef](./type_defs.md#getrolecredentialsrequesttypedef).
+[GetRoleCredentialsRequestRequestTypeDef](./type_defs.md#getrolecredentialsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -110,7 +122,7 @@ Keyword-only arguments:
 - `accessToken`: `str` *(required)*
 
 Returns
-[GetRoleCredentialsResponseResponseTypeDef](./type_defs.md#getrolecredentialsresponseresponsetypedef).
+[GetRoleCredentialsResponseTypeDef](./type_defs.md#getrolecredentialsresponsetypedef).
 
 ### list_account_roles
 
@@ -122,7 +134,7 @@ Boto3 documentation:
 [SSO.Client.list_account_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_account_roles)
 
 Arguments mapping described in
-[ListAccountRolesRequestTypeDef](./type_defs.md#listaccountrolesrequesttypedef).
+[ListAccountRolesRequestRequestTypeDef](./type_defs.md#listaccountrolesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -132,7 +144,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAccountRolesResponseResponseTypeDef](./type_defs.md#listaccountrolesresponseresponsetypedef).
+[ListAccountRolesResponseTypeDef](./type_defs.md#listaccountrolesresponsetypedef).
 
 ### list_accounts
 
@@ -144,7 +156,7 @@ Boto3 documentation:
 [SSO.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_accounts)
 
 Arguments mapping described in
-[ListAccountsRequestTypeDef](./type_defs.md#listaccountsrequesttypedef).
+[ListAccountsRequestRequestTypeDef](./type_defs.md#listaccountsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -153,7 +165,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAccountsResponseResponseTypeDef](./type_defs.md#listaccountsresponseresponsetypedef).
+[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
 
 ### logout
 
@@ -165,7 +177,7 @@ Boto3 documentation:
 [SSO.Client.logout](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.logout)
 
 Arguments mapping described in
-[LogoutRequestTypeDef](./type_defs.md#logoutrequesttypedef).
+[LogoutRequestRequestTypeDef](./type_defs.md#logoutrequestrequesttypedef).
 
 Keyword-only arguments:
 

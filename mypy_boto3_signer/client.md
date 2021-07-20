@@ -11,6 +11,7 @@ type annotations stubs module
   - [signerClient](#signerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_profile_permission](#add_profile_permission)
     - [can_paginate](#can_paginate)
     - [cancel_signing_profile](#cancel_signing_profile)
@@ -77,6 +78,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+signerClient exceptions.
+
+Type annotations for `boto3.client("signer").exceptions` method.
+
+Boto3 documentation:
+[signer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_profile_permission
 
 Adds cross-account permissions to a signing profile.
@@ -87,7 +99,7 @@ Boto3 documentation:
 [signer.Client.add_profile_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.add_profile_permission)
 
 Arguments mapping described in
-[AddProfilePermissionRequestTypeDef](./type_defs.md#addprofilepermissionrequesttypedef).
+[AddProfilePermissionRequestRequestTypeDef](./type_defs.md#addprofilepermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -99,7 +111,7 @@ Keyword-only arguments:
 - `revisionId`: `str`
 
 Returns
-[AddProfilePermissionResponseResponseTypeDef](./type_defs.md#addprofilepermissionresponseresponsetypedef).
+[AddProfilePermissionResponseTypeDef](./type_defs.md#addprofilepermissionresponsetypedef).
 
 ### can_paginate
 
@@ -126,7 +138,7 @@ Boto3 documentation:
 [signer.Client.cancel_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.cancel_signing_profile)
 
 Arguments mapping described in
-[CancelSigningProfileRequestTypeDef](./type_defs.md#cancelsigningprofilerequesttypedef).
+[CancelSigningProfileRequestRequestTypeDef](./type_defs.md#cancelsigningprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,14 +154,14 @@ Boto3 documentation:
 [signer.Client.describe_signing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.describe_signing_job)
 
 Arguments mapping described in
-[DescribeSigningJobRequestTypeDef](./type_defs.md#describesigningjobrequesttypedef).
+[DescribeSigningJobRequestRequestTypeDef](./type_defs.md#describesigningjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
 
 Returns
-[DescribeSigningJobResponseResponseTypeDef](./type_defs.md#describesigningjobresponseresponsetypedef).
+[DescribeSigningJobResponseTypeDef](./type_defs.md#describesigningjobresponsetypedef).
 
 ### generate_presigned_url
 
@@ -179,14 +191,14 @@ Boto3 documentation:
 [signer.Client.get_signing_platform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.get_signing_platform)
 
 Arguments mapping described in
-[GetSigningPlatformRequestTypeDef](./type_defs.md#getsigningplatformrequesttypedef).
+[GetSigningPlatformRequestRequestTypeDef](./type_defs.md#getsigningplatformrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `platformId`: `str` *(required)*
 
 Returns
-[GetSigningPlatformResponseResponseTypeDef](./type_defs.md#getsigningplatformresponseresponsetypedef).
+[GetSigningPlatformResponseTypeDef](./type_defs.md#getsigningplatformresponsetypedef).
 
 ### get_signing_profile
 
@@ -198,7 +210,7 @@ Boto3 documentation:
 [signer.Client.get_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.get_signing_profile)
 
 Arguments mapping described in
-[GetSigningProfileRequestTypeDef](./type_defs.md#getsigningprofilerequesttypedef).
+[GetSigningProfileRequestRequestTypeDef](./type_defs.md#getsigningprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -206,7 +218,7 @@ Keyword-only arguments:
 - `profileOwner`: `str`
 
 Returns
-[GetSigningProfileResponseResponseTypeDef](./type_defs.md#getsigningprofileresponseresponsetypedef).
+[GetSigningProfileResponseTypeDef](./type_defs.md#getsigningprofileresponsetypedef).
 
 ### list_profile_permissions
 
@@ -218,7 +230,7 @@ Boto3 documentation:
 [signer.Client.list_profile_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_profile_permissions)
 
 Arguments mapping described in
-[ListProfilePermissionsRequestTypeDef](./type_defs.md#listprofilepermissionsrequesttypedef).
+[ListProfilePermissionsRequestRequestTypeDef](./type_defs.md#listprofilepermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -226,7 +238,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListProfilePermissionsResponseResponseTypeDef](./type_defs.md#listprofilepermissionsresponseresponsetypedef).
+[ListProfilePermissionsResponseTypeDef](./type_defs.md#listprofilepermissionsresponsetypedef).
 
 ### list_signing_jobs
 
@@ -238,7 +250,7 @@ Boto3 documentation:
 [signer.Client.list_signing_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_jobs)
 
 Arguments mapping described in
-[ListSigningJobsRequestTypeDef](./type_defs.md#listsigningjobsrequesttypedef).
+[ListSigningJobsRequestRequestTypeDef](./type_defs.md#listsigningjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -253,7 +265,7 @@ Keyword-only arguments:
 - `jobInvoker`: `str`
 
 Returns
-[ListSigningJobsResponseResponseTypeDef](./type_defs.md#listsigningjobsresponseresponsetypedef).
+[ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef).
 
 ### list_signing_platforms
 
@@ -266,7 +278,7 @@ Boto3 documentation:
 [signer.Client.list_signing_platforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_platforms)
 
 Arguments mapping described in
-[ListSigningPlatformsRequestTypeDef](./type_defs.md#listsigningplatformsrequesttypedef).
+[ListSigningPlatformsRequestRequestTypeDef](./type_defs.md#listsigningplatformsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -277,7 +289,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListSigningPlatformsResponseResponseTypeDef](./type_defs.md#listsigningplatformsresponseresponsetypedef).
+[ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef).
 
 ### list_signing_profiles
 
@@ -289,7 +301,7 @@ Boto3 documentation:
 [signer.Client.list_signing_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_profiles)
 
 Arguments mapping described in
-[ListSigningProfilesRequestTypeDef](./type_defs.md#listsigningprofilesrequesttypedef).
+[ListSigningProfilesRequestRequestTypeDef](./type_defs.md#listsigningprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -301,7 +313,7 @@ Keyword-only arguments:
   `List`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
 
 Returns
-[ListSigningProfilesResponseResponseTypeDef](./type_defs.md#listsigningprofilesresponseresponsetypedef).
+[ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -313,14 +325,14 @@ Boto3 documentation:
 [signer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_signing_profile
 
@@ -332,7 +344,7 @@ Boto3 documentation:
 [signer.Client.put_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.put_signing_profile)
 
 Arguments mapping described in
-[PutSigningProfileRequestTypeDef](./type_defs.md#putsigningprofilerequesttypedef).
+[PutSigningProfileRequestRequestTypeDef](./type_defs.md#putsigningprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -348,7 +360,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[PutSigningProfileResponseResponseTypeDef](./type_defs.md#putsigningprofileresponseresponsetypedef).
+[PutSigningProfileResponseTypeDef](./type_defs.md#putsigningprofileresponsetypedef).
 
 ### remove_profile_permission
 
@@ -360,7 +372,7 @@ Boto3 documentation:
 [signer.Client.remove_profile_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.remove_profile_permission)
 
 Arguments mapping described in
-[RemoveProfilePermissionRequestTypeDef](./type_defs.md#removeprofilepermissionrequesttypedef).
+[RemoveProfilePermissionRequestRequestTypeDef](./type_defs.md#removeprofilepermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -369,7 +381,7 @@ Keyword-only arguments:
 - `statementId`: `str` *(required)*
 
 Returns
-[RemoveProfilePermissionResponseResponseTypeDef](./type_defs.md#removeprofilepermissionresponseresponsetypedef).
+[RemoveProfilePermissionResponseTypeDef](./type_defs.md#removeprofilepermissionresponsetypedef).
 
 ### revoke_signature
 
@@ -381,7 +393,7 @@ Boto3 documentation:
 [signer.Client.revoke_signature](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.revoke_signature)
 
 Arguments mapping described in
-[RevokeSignatureRequestTypeDef](./type_defs.md#revokesignaturerequesttypedef).
+[RevokeSignatureRequestRequestTypeDef](./type_defs.md#revokesignaturerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -399,7 +411,7 @@ Boto3 documentation:
 [signer.Client.revoke_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.revoke_signing_profile)
 
 Arguments mapping described in
-[RevokeSigningProfileRequestTypeDef](./type_defs.md#revokesigningprofilerequesttypedef).
+[RevokeSigningProfileRequestRequestTypeDef](./type_defs.md#revokesigningprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -418,7 +430,7 @@ Boto3 documentation:
 [signer.Client.start_signing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.start_signing_job)
 
 Arguments mapping described in
-[StartSigningJobRequestTypeDef](./type_defs.md#startsigningjobrequesttypedef).
+[StartSigningJobRequestRequestTypeDef](./type_defs.md#startsigningjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -430,7 +442,7 @@ Keyword-only arguments:
 - `profileOwner`: `str`
 
 Returns
-[StartSigningJobResponseResponseTypeDef](./type_defs.md#startsigningjobresponseresponsetypedef).
+[StartSigningJobResponseTypeDef](./type_defs.md#startsigningjobresponsetypedef).
 
 ### tag_resource
 
@@ -442,7 +454,7 @@ Boto3 documentation:
 [signer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -461,7 +473,7 @@ Boto3 documentation:
 [signer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

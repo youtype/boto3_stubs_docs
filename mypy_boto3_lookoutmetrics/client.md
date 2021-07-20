@@ -11,6 +11,7 @@ type annotations stubs module
   - [LookoutMetricsClient](#lookoutmetricsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [activate_anomaly_detector](#activate_anomaly_detector)
     - [back_test_anomaly_detector](#back_test_anomaly_detector)
     - [can_paginate](#can_paginate)
@@ -80,6 +81,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+LookoutMetricsClient exceptions.
+
+Type annotations for `boto3.client("lookoutmetrics").exceptions` method.
+
+Boto3 documentation:
+[LookoutMetrics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### activate_anomaly_detector
 
 Activates an anomaly detector.
@@ -91,7 +103,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.activate_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.activate_anomaly_detector)
 
 Arguments mapping described in
-[ActivateAnomalyDetectorRequestTypeDef](./type_defs.md#activateanomalydetectorrequesttypedef).
+[ActivateAnomalyDetectorRequestRequestTypeDef](./type_defs.md#activateanomalydetectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -110,7 +122,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.back_test_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.back_test_anomaly_detector)
 
 Arguments mapping described in
-[BackTestAnomalyDetectorRequestTypeDef](./type_defs.md#backtestanomalydetectorrequesttypedef).
+[BackTestAnomalyDetectorRequestRequestTypeDef](./type_defs.md#backtestanomalydetectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -143,7 +155,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.create_alert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_alert)
 
 Arguments mapping described in
-[CreateAlertRequestTypeDef](./type_defs.md#createalertrequesttypedef).
+[CreateAlertRequestRequestTypeDef](./type_defs.md#createalertrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -155,7 +167,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAlertResponseResponseTypeDef](./type_defs.md#createalertresponseresponsetypedef).
+[CreateAlertResponseTypeDef](./type_defs.md#createalertresponsetypedef).
 
 ### create_anomaly_detector
 
@@ -168,7 +180,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.create_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_anomaly_detector)
 
 Arguments mapping described in
-[CreateAnomalyDetectorRequestTypeDef](./type_defs.md#createanomalydetectorrequesttypedef).
+[CreateAnomalyDetectorRequestRequestTypeDef](./type_defs.md#createanomalydetectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -181,7 +193,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAnomalyDetectorResponseResponseTypeDef](./type_defs.md#createanomalydetectorresponseresponsetypedef).
+[CreateAnomalyDetectorResponseTypeDef](./type_defs.md#createanomalydetectorresponsetypedef).
 
 ### create_metric_set
 
@@ -193,7 +205,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.create_metric_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_metric_set)
 
 Arguments mapping described in
-[CreateMetricSetRequestTypeDef](./type_defs.md#createmetricsetrequesttypedef).
+[CreateMetricSetRequestRequestTypeDef](./type_defs.md#createmetricsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -213,7 +225,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateMetricSetResponseResponseTypeDef](./type_defs.md#createmetricsetresponseresponsetypedef).
+[CreateMetricSetResponseTypeDef](./type_defs.md#createmetricsetresponsetypedef).
 
 ### delete_alert
 
@@ -225,7 +237,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.delete_alert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_alert)
 
 Arguments mapping described in
-[DeleteAlertRequestTypeDef](./type_defs.md#deletealertrequesttypedef).
+[DeleteAlertRequestRequestTypeDef](./type_defs.md#deletealertrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -244,7 +256,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.delete_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_anomaly_detector)
 
 Arguments mapping described in
-[DeleteAnomalyDetectorRequestTypeDef](./type_defs.md#deleteanomalydetectorrequesttypedef).
+[DeleteAnomalyDetectorRequestRequestTypeDef](./type_defs.md#deleteanomalydetectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -262,14 +274,14 @@ Boto3 documentation:
 [LookoutMetrics.Client.describe_alert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_alert)
 
 Arguments mapping described in
-[DescribeAlertRequestTypeDef](./type_defs.md#describealertrequesttypedef).
+[DescribeAlertRequestRequestTypeDef](./type_defs.md#describealertrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AlertArn`: `str` *(required)*
 
 Returns
-[DescribeAlertResponseResponseTypeDef](./type_defs.md#describealertresponseresponsetypedef).
+[DescribeAlertResponseTypeDef](./type_defs.md#describealertresponsetypedef).
 
 ### describe_anomaly_detection_executions
 
@@ -282,7 +294,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.describe_anomaly_detection_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detection_executions)
 
 Arguments mapping described in
-[DescribeAnomalyDetectionExecutionsRequestTypeDef](./type_defs.md#describeanomalydetectionexecutionsrequesttypedef).
+[DescribeAnomalyDetectionExecutionsRequestRequestTypeDef](./type_defs.md#describeanomalydetectionexecutionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -292,7 +304,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeAnomalyDetectionExecutionsResponseResponseTypeDef](./type_defs.md#describeanomalydetectionexecutionsresponseresponsetypedef).
+[DescribeAnomalyDetectionExecutionsResponseTypeDef](./type_defs.md#describeanomalydetectionexecutionsresponsetypedef).
 
 ### describe_anomaly_detector
 
@@ -305,14 +317,14 @@ Boto3 documentation:
 [LookoutMetrics.Client.describe_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detector)
 
 Arguments mapping described in
-[DescribeAnomalyDetectorRequestTypeDef](./type_defs.md#describeanomalydetectorrequesttypedef).
+[DescribeAnomalyDetectorRequestRequestTypeDef](./type_defs.md#describeanomalydetectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AnomalyDetectorArn`: `str` *(required)*
 
 Returns
-[DescribeAnomalyDetectorResponseResponseTypeDef](./type_defs.md#describeanomalydetectorresponseresponsetypedef).
+[DescribeAnomalyDetectorResponseTypeDef](./type_defs.md#describeanomalydetectorresponsetypedef).
 
 ### describe_metric_set
 
@@ -325,14 +337,14 @@ Boto3 documentation:
 [LookoutMetrics.Client.describe_metric_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_metric_set)
 
 Arguments mapping described in
-[DescribeMetricSetRequestTypeDef](./type_defs.md#describemetricsetrequesttypedef).
+[DescribeMetricSetRequestRequestTypeDef](./type_defs.md#describemetricsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MetricSetArn`: `str` *(required)*
 
 Returns
-[DescribeMetricSetResponseResponseTypeDef](./type_defs.md#describemetricsetresponseresponsetypedef).
+[DescribeMetricSetResponseTypeDef](./type_defs.md#describemetricsetresponsetypedef).
 
 ### generate_presigned_url
 
@@ -363,7 +375,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.get_anomaly_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_anomaly_group)
 
 Arguments mapping described in
-[GetAnomalyGroupRequestTypeDef](./type_defs.md#getanomalygrouprequesttypedef).
+[GetAnomalyGroupRequestRequestTypeDef](./type_defs.md#getanomalygrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -371,7 +383,7 @@ Keyword-only arguments:
 - `AnomalyDetectorArn`: `str` *(required)*
 
 Returns
-[GetAnomalyGroupResponseResponseTypeDef](./type_defs.md#getanomalygroupresponseresponsetypedef).
+[GetAnomalyGroupResponseTypeDef](./type_defs.md#getanomalygroupresponsetypedef).
 
 ### get_feedback
 
@@ -383,7 +395,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.get_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_feedback)
 
 Arguments mapping described in
-[GetFeedbackRequestTypeDef](./type_defs.md#getfeedbackrequesttypedef).
+[GetFeedbackRequestRequestTypeDef](./type_defs.md#getfeedbackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -395,7 +407,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetFeedbackResponseResponseTypeDef](./type_defs.md#getfeedbackresponseresponsetypedef).
+[GetFeedbackResponseTypeDef](./type_defs.md#getfeedbackresponsetypedef).
 
 ### get_sample_data
 
@@ -407,7 +419,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.get_sample_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_sample_data)
 
 Arguments mapping described in
-[GetSampleDataRequestTypeDef](./type_defs.md#getsampledatarequesttypedef).
+[GetSampleDataRequestRequestTypeDef](./type_defs.md#getsampledatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -415,7 +427,7 @@ Keyword-only arguments:
   [SampleDataS3SourceConfigTypeDef](./type_defs.md#sampledatas3sourceconfigtypedef)
 
 Returns
-[GetSampleDataResponseResponseTypeDef](./type_defs.md#getsampledataresponseresponsetypedef).
+[GetSampleDataResponseTypeDef](./type_defs.md#getsampledataresponsetypedef).
 
 ### list_alerts
 
@@ -427,7 +439,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.list_alerts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_alerts)
 
 Arguments mapping described in
-[ListAlertsRequestTypeDef](./type_defs.md#listalertsrequesttypedef).
+[ListAlertsRequestRequestTypeDef](./type_defs.md#listalertsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -435,8 +447,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListAlertsResponseResponseTypeDef](./type_defs.md#listalertsresponseresponsetypedef).
+Returns [ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef).
 
 ### list_anomaly_detectors
 
@@ -449,7 +460,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.list_anomaly_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_detectors)
 
 Arguments mapping described in
-[ListAnomalyDetectorsRequestTypeDef](./type_defs.md#listanomalydetectorsrequesttypedef).
+[ListAnomalyDetectorsRequestRequestTypeDef](./type_defs.md#listanomalydetectorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -457,7 +468,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAnomalyDetectorsResponseResponseTypeDef](./type_defs.md#listanomalydetectorsresponseresponsetypedef).
+[ListAnomalyDetectorsResponseTypeDef](./type_defs.md#listanomalydetectorsresponsetypedef).
 
 ### list_anomaly_group_summaries
 
@@ -470,7 +481,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.list_anomaly_group_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_summaries)
 
 Arguments mapping described in
-[ListAnomalyGroupSummariesRequestTypeDef](./type_defs.md#listanomalygroupsummariesrequesttypedef).
+[ListAnomalyGroupSummariesRequestRequestTypeDef](./type_defs.md#listanomalygroupsummariesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,7 +491,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAnomalyGroupSummariesResponseResponseTypeDef](./type_defs.md#listanomalygroupsummariesresponseresponsetypedef).
+[ListAnomalyGroupSummariesResponseTypeDef](./type_defs.md#listanomalygroupsummariesresponsetypedef).
 
 ### list_anomaly_group_time_series
 
@@ -493,7 +504,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.list_anomaly_group_time_series](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_time_series)
 
 Arguments mapping described in
-[ListAnomalyGroupTimeSeriesRequestTypeDef](./type_defs.md#listanomalygrouptimeseriesrequesttypedef).
+[ListAnomalyGroupTimeSeriesRequestRequestTypeDef](./type_defs.md#listanomalygrouptimeseriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -504,7 +515,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAnomalyGroupTimeSeriesResponseResponseTypeDef](./type_defs.md#listanomalygrouptimeseriesresponseresponsetypedef).
+[ListAnomalyGroupTimeSeriesResponseTypeDef](./type_defs.md#listanomalygrouptimeseriesresponsetypedef).
 
 ### list_metric_sets
 
@@ -516,7 +527,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.list_metric_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_metric_sets)
 
 Arguments mapping described in
-[ListMetricSetsRequestTypeDef](./type_defs.md#listmetricsetsrequesttypedef).
+[ListMetricSetsRequestRequestTypeDef](./type_defs.md#listmetricsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -525,7 +536,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListMetricSetsResponseResponseTypeDef](./type_defs.md#listmetricsetsresponseresponsetypedef).
+[ListMetricSetsResponseTypeDef](./type_defs.md#listmetricsetsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -540,14 +551,14 @@ Boto3 documentation:
 [LookoutMetrics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_feedback
 
@@ -559,7 +570,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.put_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.put_feedback)
 
 Arguments mapping described in
-[PutFeedbackRequestTypeDef](./type_defs.md#putfeedbackrequesttypedef).
+[PutFeedbackRequestRequestTypeDef](./type_defs.md#putfeedbackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -582,7 +593,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -603,7 +614,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -623,7 +634,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.update_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_anomaly_detector)
 
 Arguments mapping described in
-[UpdateAnomalyDetectorRequestTypeDef](./type_defs.md#updateanomalydetectorrequesttypedef).
+[UpdateAnomalyDetectorRequestRequestTypeDef](./type_defs.md#updateanomalydetectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -634,7 +645,7 @@ Keyword-only arguments:
   [AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef)
 
 Returns
-[UpdateAnomalyDetectorResponseResponseTypeDef](./type_defs.md#updateanomalydetectorresponseresponsetypedef).
+[UpdateAnomalyDetectorResponseTypeDef](./type_defs.md#updateanomalydetectorresponsetypedef).
 
 ### update_metric_set
 
@@ -646,7 +657,7 @@ Boto3 documentation:
 [LookoutMetrics.Client.update_metric_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_metric_set)
 
 Arguments mapping described in
-[UpdateMetricSetRequestTypeDef](./type_defs.md#updatemetricsetrequesttypedef).
+[UpdateMetricSetRequestRequestTypeDef](./type_defs.md#updatemetricsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -661,4 +672,4 @@ Keyword-only arguments:
 - `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
 
 Returns
-[UpdateMetricSetResponseResponseTypeDef](./type_defs.md#updatemetricsetresponseresponsetypedef).
+[UpdateMetricSetResponseTypeDef](./type_defs.md#updatemetricsetresponsetypedef).

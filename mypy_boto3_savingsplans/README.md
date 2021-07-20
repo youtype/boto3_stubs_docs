@@ -38,6 +38,7 @@ from mypy_boto3_savingsplans.client import SavingsPlansClient
 - [describe_savings_plans](./client.md#describe_savings_plans)
 - [describe_savings_plans_offering_rates](./client.md#describe_savings_plans_offering_rates)
 - [describe_savings_plans_offerings](./client.md#describe_savings_plans_offerings)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [tag_resource](./client.md#tag_resource)
@@ -85,22 +86,22 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanRequestTypeDef, ...
+from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanRequestRequestTypeDef, ...
 ```
 
-- [CreateSavingsPlanRequestTypeDef](./type_defs.md#createsavingsplanrequesttypedef)
-- [CreateSavingsPlanResponseResponseTypeDef](./type_defs.md#createsavingsplanresponseresponsetypedef)
-- [DeleteQueuedSavingsPlanRequestTypeDef](./type_defs.md#deletequeuedsavingsplanrequesttypedef)
-- [DescribeSavingsPlanRatesRequestTypeDef](./type_defs.md#describesavingsplanratesrequesttypedef)
-- [DescribeSavingsPlanRatesResponseResponseTypeDef](./type_defs.md#describesavingsplanratesresponseresponsetypedef)
-- [DescribeSavingsPlansOfferingRatesRequestTypeDef](./type_defs.md#describesavingsplansofferingratesrequesttypedef)
-- [DescribeSavingsPlansOfferingRatesResponseResponseTypeDef](./type_defs.md#describesavingsplansofferingratesresponseresponsetypedef)
-- [DescribeSavingsPlansOfferingsRequestTypeDef](./type_defs.md#describesavingsplansofferingsrequesttypedef)
-- [DescribeSavingsPlansOfferingsResponseResponseTypeDef](./type_defs.md#describesavingsplansofferingsresponseresponsetypedef)
-- [DescribeSavingsPlansRequestTypeDef](./type_defs.md#describesavingsplansrequesttypedef)
-- [DescribeSavingsPlansResponseResponseTypeDef](./type_defs.md#describesavingsplansresponseresponsetypedef)
-- [ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef)
-- [ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)
+- [CreateSavingsPlanRequestRequestTypeDef](./type_defs.md#createsavingsplanrequestrequesttypedef)
+- [CreateSavingsPlanResponseTypeDef](./type_defs.md#createsavingsplanresponsetypedef)
+- [DeleteQueuedSavingsPlanRequestRequestTypeDef](./type_defs.md#deletequeuedsavingsplanrequestrequesttypedef)
+- [DescribeSavingsPlanRatesRequestRequestTypeDef](./type_defs.md#describesavingsplanratesrequestrequesttypedef)
+- [DescribeSavingsPlanRatesResponseTypeDef](./type_defs.md#describesavingsplanratesresponsetypedef)
+- [DescribeSavingsPlansOfferingRatesRequestRequestTypeDef](./type_defs.md#describesavingsplansofferingratesrequestrequesttypedef)
+- [DescribeSavingsPlansOfferingRatesResponseTypeDef](./type_defs.md#describesavingsplansofferingratesresponsetypedef)
+- [DescribeSavingsPlansOfferingsRequestRequestTypeDef](./type_defs.md#describesavingsplansofferingsrequestrequesttypedef)
+- [DescribeSavingsPlansOfferingsResponseTypeDef](./type_defs.md#describesavingsplansofferingsresponsetypedef)
+- [DescribeSavingsPlansRequestRequestTypeDef](./type_defs.md#describesavingsplansrequestrequesttypedef)
+- [DescribeSavingsPlansResponseTypeDef](./type_defs.md#describesavingsplansresponsetypedef)
+- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ParentSavingsPlanOfferingTypeDef](./type_defs.md#parentsavingsplanofferingtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SavingsPlanFilterTypeDef](./type_defs.md#savingsplanfiltertypedef)
@@ -114,5 +115,5 @@ from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanRequestTypeDef, .
 - [SavingsPlanRatePropertyTypeDef](./type_defs.md#savingsplanratepropertytypedef)
 - [SavingsPlanRateTypeDef](./type_defs.md#savingsplanratetypedef)
 - [SavingsPlanTypeDef](./type_defs.md#savingsplantypedef)
-- [TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef)
-- [UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
+- [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)

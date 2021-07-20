@@ -11,6 +11,7 @@ type annotations stubs module
   - [CodeStarconnectionsClient](#codestarconnectionsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_connection](#create_connection)
     - [create_host](#create_host)
@@ -65,6 +66,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CodeStarconnectionsClient exceptions.
+
+Type annotations for `boto3.client("codestar-connections").exceptions` method.
+
+Boto3 documentation:
+[CodeStarconnections.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -93,7 +105,7 @@ Boto3 documentation:
 [CodeStarconnections.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_connection)
 
 Arguments mapping described in
-[CreateConnectionInputTypeDef](./type_defs.md#createconnectioninputtypedef).
+[CreateConnectionInputRequestTypeDef](./type_defs.md#createconnectioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -103,7 +115,7 @@ Keyword-only arguments:
 - `HostArn`: `str`
 
 Returns
-[CreateConnectionOutputResponseTypeDef](./type_defs.md#createconnectionoutputresponsetypedef).
+[CreateConnectionOutputTypeDef](./type_defs.md#createconnectionoutputtypedef).
 
 ### create_host
 
@@ -116,7 +128,7 @@ Boto3 documentation:
 [CodeStarconnections.Client.create_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_host)
 
 Arguments mapping described in
-[CreateHostInputTypeDef](./type_defs.md#createhostinputtypedef).
+[CreateHostInputRequestTypeDef](./type_defs.md#createhostinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -128,8 +140,7 @@ Keyword-only arguments:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateHostOutputResponseTypeDef](./type_defs.md#createhostoutputresponsetypedef).
+Returns [CreateHostOutputTypeDef](./type_defs.md#createhostoutputtypedef).
 
 ### delete_connection
 
@@ -142,7 +153,7 @@ Boto3 documentation:
 [CodeStarconnections.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_connection)
 
 Arguments mapping described in
-[DeleteConnectionInputTypeDef](./type_defs.md#deleteconnectioninputtypedef).
+[DeleteConnectionInputRequestTypeDef](./type_defs.md#deleteconnectioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -160,7 +171,7 @@ Boto3 documentation:
 [CodeStarconnections.Client.delete_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_host)
 
 Arguments mapping described in
-[DeleteHostInputTypeDef](./type_defs.md#deletehostinputtypedef).
+[DeleteHostInputRequestTypeDef](./type_defs.md#deletehostinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,14 +210,14 @@ Boto3 documentation:
 [CodeStarconnections.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_connection)
 
 Arguments mapping described in
-[GetConnectionInputTypeDef](./type_defs.md#getconnectioninputtypedef).
+[GetConnectionInputRequestTypeDef](./type_defs.md#getconnectioninputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConnectionArn`: `str` *(required)*
 
 Returns
-[GetConnectionOutputResponseTypeDef](./type_defs.md#getconnectionoutputresponsetypedef).
+[GetConnectionOutputTypeDef](./type_defs.md#getconnectionoutputtypedef).
 
 ### get_host
 
@@ -219,14 +230,13 @@ Boto3 documentation:
 [CodeStarconnections.Client.get_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_host)
 
 Arguments mapping described in
-[GetHostInputTypeDef](./type_defs.md#gethostinputtypedef).
+[GetHostInputRequestTypeDef](./type_defs.md#gethostinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `HostArn`: `str` *(required)*
 
-Returns
-[GetHostOutputResponseTypeDef](./type_defs.md#gethostoutputresponsetypedef).
+Returns [GetHostOutputTypeDef](./type_defs.md#gethostoutputtypedef).
 
 ### list_connections
 
@@ -239,7 +249,7 @@ Boto3 documentation:
 [CodeStarconnections.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_connections)
 
 Arguments mapping described in
-[ListConnectionsInputTypeDef](./type_defs.md#listconnectionsinputtypedef).
+[ListConnectionsInputRequestTypeDef](./type_defs.md#listconnectionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -249,7 +259,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConnectionsOutputResponseTypeDef](./type_defs.md#listconnectionsoutputresponsetypedef).
+[ListConnectionsOutputTypeDef](./type_defs.md#listconnectionsoutputtypedef).
 
 ### list_hosts
 
@@ -261,15 +271,14 @@ Boto3 documentation:
 [CodeStarconnections.Client.list_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_hosts)
 
 Arguments mapping described in
-[ListHostsInputTypeDef](./type_defs.md#listhostsinputtypedef).
+[ListHostsInputRequestTypeDef](./type_defs.md#listhostsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListHostsOutputResponseTypeDef](./type_defs.md#listhostsoutputresponsetypedef).
+Returns [ListHostsOutputTypeDef](./type_defs.md#listhostsoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -283,14 +292,14 @@ Boto3 documentation:
 [CodeStarconnections.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### tag_resource
 
@@ -303,7 +312,7 @@ Boto3 documentation:
 [CodeStarconnections.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -323,7 +332,7 @@ Boto3 documentation:
 [CodeStarconnections.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -342,7 +351,7 @@ Boto3 documentation:
 [CodeStarconnections.Client.update_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.update_host)
 
 Arguments mapping described in
-[UpdateHostInputTypeDef](./type_defs.md#updatehostinputtypedef).
+[UpdateHostInputRequestTypeDef](./type_defs.md#updatehostinputrequesttypedef).
 
 Keyword-only arguments:
 

@@ -12,17 +12,17 @@ type annotations stubs module
   - [AssetDetailsTypeDef](#assetdetailstypedef)
   - [AssetEntryTypeDef](#assetentrytypedef)
   - [AssetSourceEntryTypeDef](#assetsourceentrytypedef)
-  - [CancelJobRequestTypeDef](#canceljobrequesttypedef)
-  - [CreateDataSetRequestTypeDef](#createdatasetrequesttypedef)
-  - [CreateDataSetResponseResponseTypeDef](#createdatasetresponseresponsetypedef)
-  - [CreateJobRequestTypeDef](#createjobrequesttypedef)
-  - [CreateJobResponseResponseTypeDef](#createjobresponseresponsetypedef)
-  - [CreateRevisionRequestTypeDef](#createrevisionrequesttypedef)
-  - [CreateRevisionResponseResponseTypeDef](#createrevisionresponseresponsetypedef)
+  - [CancelJobRequestRequestTypeDef](#canceljobrequestrequesttypedef)
+  - [CreateDataSetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
+  - [CreateDataSetResponseTypeDef](#createdatasetresponsetypedef)
+  - [CreateJobRequestRequestTypeDef](#createjobrequestrequesttypedef)
+  - [CreateJobResponseTypeDef](#createjobresponsetypedef)
+  - [CreateRevisionRequestRequestTypeDef](#createrevisionrequestrequesttypedef)
+  - [CreateRevisionResponseTypeDef](#createrevisionresponsetypedef)
   - [DataSetEntryTypeDef](#datasetentrytypedef)
-  - [DeleteAssetRequestTypeDef](#deleteassetrequesttypedef)
-  - [DeleteDataSetRequestTypeDef](#deletedatasetrequesttypedef)
-  - [DeleteRevisionRequestTypeDef](#deleterevisionrequesttypedef)
+  - [DeleteAssetRequestRequestTypeDef](#deleteassetrequestrequesttypedef)
+  - [DeleteDataSetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
+  - [DeleteRevisionRequestRequestTypeDef](#deleterevisionrequestrequesttypedef)
   - [DetailsTypeDef](#detailstypedef)
   - [ExportAssetToSignedUrlRequestDetailsTypeDef](#exportassettosignedurlrequestdetailstypedef)
   - [ExportAssetToSignedUrlResponseDetailsTypeDef](#exportassettosignedurlresponsedetailstypedef)
@@ -31,14 +31,14 @@ type annotations stubs module
   - [ExportRevisionsToS3RequestDetailsTypeDef](#exportrevisionstos3requestdetailstypedef)
   - [ExportRevisionsToS3ResponseDetailsTypeDef](#exportrevisionstos3responsedetailstypedef)
   - [ExportServerSideEncryptionTypeDef](#exportserversideencryptiontypedef)
-  - [GetAssetRequestTypeDef](#getassetrequesttypedef)
-  - [GetAssetResponseResponseTypeDef](#getassetresponseresponsetypedef)
-  - [GetDataSetRequestTypeDef](#getdatasetrequesttypedef)
-  - [GetDataSetResponseResponseTypeDef](#getdatasetresponseresponsetypedef)
-  - [GetJobRequestTypeDef](#getjobrequesttypedef)
-  - [GetJobResponseResponseTypeDef](#getjobresponseresponsetypedef)
-  - [GetRevisionRequestTypeDef](#getrevisionrequesttypedef)
-  - [GetRevisionResponseResponseTypeDef](#getrevisionresponseresponsetypedef)
+  - [GetAssetRequestRequestTypeDef](#getassetrequestrequesttypedef)
+  - [GetAssetResponseTypeDef](#getassetresponsetypedef)
+  - [GetDataSetRequestRequestTypeDef](#getdatasetrequestrequesttypedef)
+  - [GetDataSetResponseTypeDef](#getdatasetresponsetypedef)
+  - [GetJobRequestRequestTypeDef](#getjobrequestrequesttypedef)
+  - [GetJobResponseTypeDef](#getjobresponsetypedef)
+  - [GetRevisionRequestRequestTypeDef](#getrevisionrequestrequesttypedef)
+  - [GetRevisionResponseTypeDef](#getrevisionresponsetypedef)
   - [ImportAssetFromSignedUrlJobErrorDetailsTypeDef](#importassetfromsignedurljoberrordetailstypedef)
   - [ImportAssetFromSignedUrlRequestDetailsTypeDef](#importassetfromsignedurlrequestdetailstypedef)
   - [ImportAssetFromSignedUrlResponseDetailsTypeDef](#importassetfromsignedurlresponsedetailstypedef)
@@ -46,16 +46,16 @@ type annotations stubs module
   - [ImportAssetsFromS3ResponseDetailsTypeDef](#importassetsfroms3responsedetailstypedef)
   - [JobEntryTypeDef](#jobentrytypedef)
   - [JobErrorTypeDef](#joberrortypedef)
-  - [ListDataSetRevisionsRequestTypeDef](#listdatasetrevisionsrequesttypedef)
-  - [ListDataSetRevisionsResponseResponseTypeDef](#listdatasetrevisionsresponseresponsetypedef)
-  - [ListDataSetsRequestTypeDef](#listdatasetsrequesttypedef)
-  - [ListDataSetsResponseResponseTypeDef](#listdatasetsresponseresponsetypedef)
-  - [ListJobsRequestTypeDef](#listjobsrequesttypedef)
-  - [ListJobsResponseResponseTypeDef](#listjobsresponseresponsetypedef)
-  - [ListRevisionAssetsRequestTypeDef](#listrevisionassetsrequesttypedef)
-  - [ListRevisionAssetsResponseResponseTypeDef](#listrevisionassetsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListDataSetRevisionsRequestRequestTypeDef](#listdatasetrevisionsrequestrequesttypedef)
+  - [ListDataSetRevisionsResponseTypeDef](#listdatasetrevisionsresponsetypedef)
+  - [ListDataSetsRequestRequestTypeDef](#listdatasetsrequestrequesttypedef)
+  - [ListDataSetsResponseTypeDef](#listdatasetsresponsetypedef)
+  - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
+  - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
+  - [ListRevisionAssetsRequestRequestTypeDef](#listrevisionassetsrequestrequesttypedef)
+  - [ListRevisionAssetsResponseTypeDef](#listrevisionassetsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [OriginDetailsTypeDef](#origindetailstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [RequestDetailsTypeDef](#requestdetailstypedef)
@@ -64,15 +64,15 @@ type annotations stubs module
   - [RevisionDestinationEntryTypeDef](#revisiondestinationentrytypedef)
   - [RevisionEntryTypeDef](#revisionentrytypedef)
   - [S3SnapshotAssetTypeDef](#s3snapshotassettypedef)
-  - [StartJobRequestTypeDef](#startjobrequesttypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateAssetRequestTypeDef](#updateassetrequesttypedef)
-  - [UpdateAssetResponseResponseTypeDef](#updateassetresponseresponsetypedef)
-  - [UpdateDataSetRequestTypeDef](#updatedatasetrequesttypedef)
-  - [UpdateDataSetResponseResponseTypeDef](#updatedatasetresponseresponsetypedef)
-  - [UpdateRevisionRequestTypeDef](#updaterevisionrequesttypedef)
-  - [UpdateRevisionResponseResponseTypeDef](#updaterevisionresponseresponsetypedef)
+  - [StartJobRequestRequestTypeDef](#startjobrequestrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAssetRequestRequestTypeDef](#updateassetrequestrequesttypedef)
+  - [UpdateAssetResponseTypeDef](#updateassetresponsetypedef)
+  - [UpdateDataSetRequestRequestTypeDef](#updatedatasetrequestrequesttypedef)
+  - [UpdateDataSetResponseTypeDef](#updatedatasetresponsetypedef)
+  - [UpdateRevisionRequestRequestTypeDef](#updaterevisionrequestrequesttypedef)
+  - [UpdateRevisionResponseTypeDef](#updaterevisionresponsetypedef)
 
 ## AssetDestinationEntryTypeDef
 
@@ -134,20 +134,20 @@ Required fields:
 - `Bucket`: `str`
 - `Key`: `str`
 
-## CancelJobRequestTypeDef
+## CancelJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import CancelJobRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import CancelJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobId`: `str`
 
-## CreateDataSetRequestTypeDef
+## CreateDataSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import CreateDataSetRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import CreateDataSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -161,10 +161,10 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateDataSetResponseResponseTypeDef
+## CreateDataSetResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import CreateDataSetResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import CreateDataSetResponseTypeDef
 ```
 
 Required fields:
@@ -184,10 +184,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateJobRequestTypeDef
+## CreateJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import CreateJobRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import CreateJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -195,10 +195,10 @@ Required fields:
 - `Details`: [RequestDetailsTypeDef](./type_defs.md#requestdetailstypedef)
 - `Type`: [TypeType](./literals.md#typetype)
 
-## CreateJobResponseResponseTypeDef
+## CreateJobResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import CreateJobResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import CreateJobResponseTypeDef
 ```
 
 Required fields:
@@ -214,10 +214,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRevisionRequestTypeDef
+## CreateRevisionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import CreateRevisionRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import CreateRevisionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -229,10 +229,10 @@ Optional fields:
 - `Comment`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateRevisionResponseResponseTypeDef
+## CreateRevisionResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import CreateRevisionResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import CreateRevisionResponseTypeDef
 ```
 
 Required fields:
@@ -272,10 +272,10 @@ Optional fields:
 - `OriginDetails`: [OriginDetailsTypeDef](./type_defs.md#origindetailstypedef)
 - `SourceId`: `str`
 
-## DeleteAssetRequestTypeDef
+## DeleteAssetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import DeleteAssetRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import DeleteAssetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -284,20 +284,20 @@ Required fields:
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
-## DeleteDataSetRequestTypeDef
+## DeleteDataSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import DeleteDataSetRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import DeleteDataSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DataSetId`: `str`
 
-## DeleteRevisionRequestTypeDef
+## DeleteRevisionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import DeleteRevisionRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import DeleteRevisionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -432,10 +432,10 @@ Optional fields:
 
 - `KmsKeyArn`: `str`
 
-## GetAssetRequestTypeDef
+## GetAssetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import GetAssetRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import GetAssetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -444,10 +444,10 @@ Required fields:
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
-## GetAssetResponseResponseTypeDef
+## GetAssetResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import GetAssetResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import GetAssetResponseTypeDef
 ```
 
 Required fields:
@@ -466,20 +466,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDataSetRequestTypeDef
+## GetDataSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import GetDataSetRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import GetDataSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DataSetId`: `str`
 
-## GetDataSetResponseResponseTypeDef
+## GetDataSetResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import GetDataSetResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import GetDataSetResponseTypeDef
 ```
 
 Required fields:
@@ -499,20 +499,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetJobRequestTypeDef
+## GetJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import GetJobRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import GetJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobId`: `str`
 
-## GetJobResponseResponseTypeDef
+## GetJobResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import GetJobResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import GetJobResponseTypeDef
 ```
 
 Required fields:
@@ -528,10 +528,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRevisionRequestTypeDef
+## GetRevisionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import GetRevisionRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import GetRevisionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -539,10 +539,10 @@ Required fields:
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
-## GetRevisionResponseResponseTypeDef
+## GetRevisionResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import GetRevisionResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import GetRevisionResponseTypeDef
 ```
 
 Required fields:
@@ -666,10 +666,10 @@ Optional fields:
 - `ResourceType`:
   [JobErrorResourceTypesType](./literals.md#joberrorresourcetypestype)
 
-## ListDataSetRevisionsRequestTypeDef
+## ListDataSetRevisionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import ListDataSetRevisionsRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import ListDataSetRevisionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -681,10 +681,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListDataSetRevisionsResponseResponseTypeDef
+## ListDataSetRevisionsResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import ListDataSetRevisionsResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import ListDataSetRevisionsResponseTypeDef
 ```
 
 Required fields:
@@ -695,10 +695,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDataSetsRequestTypeDef
+## ListDataSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import ListDataSetsRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import ListDataSetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -707,10 +707,10 @@ Optional fields:
 - `NextToken`: `str`
 - `Origin`: `str`
 
-## ListDataSetsResponseResponseTypeDef
+## ListDataSetsResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import ListDataSetsResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import ListDataSetsResponseTypeDef
 ```
 
 Required fields:
@@ -721,10 +721,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJobsRequestTypeDef
+## ListJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import ListJobsRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import ListJobsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -734,10 +734,10 @@ Optional fields:
 - `NextToken`: `str`
 - `RevisionId`: `str`
 
-## ListJobsResponseResponseTypeDef
+## ListJobsResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import ListJobsResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import ListJobsResponseTypeDef
 ```
 
 Required fields:
@@ -747,10 +747,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRevisionAssetsRequestTypeDef
+## ListRevisionAssetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import ListRevisionAssetsRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import ListRevisionAssetsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -763,10 +763,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListRevisionAssetsResponseResponseTypeDef
+## ListRevisionAssetsResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import ListRevisionAssetsResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import ListRevisionAssetsResponseTypeDef
 ```
 
 Required fields:
@@ -776,20 +776,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -917,20 +917,20 @@ Required fields:
 
 - `Size`: `float`
 
-## StartJobRequestTypeDef
+## StartJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import StartJobRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import StartJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobId`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -938,10 +938,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -949,10 +949,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateAssetRequestTypeDef
+## UpdateAssetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import UpdateAssetRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import UpdateAssetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -962,10 +962,10 @@ Required fields:
 - `Name`: `str`
 - `RevisionId`: `str`
 
-## UpdateAssetResponseResponseTypeDef
+## UpdateAssetResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import UpdateAssetResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import UpdateAssetResponseTypeDef
 ```
 
 Required fields:
@@ -984,10 +984,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDataSetRequestTypeDef
+## UpdateDataSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import UpdateDataSetRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import UpdateDataSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -999,10 +999,10 @@ Optional fields:
 - `Description`: `str`
 - `Name`: `str`
 
-## UpdateDataSetResponseResponseTypeDef
+## UpdateDataSetResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import UpdateDataSetResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import UpdateDataSetResponseTypeDef
 ```
 
 Required fields:
@@ -1021,10 +1021,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRevisionRequestTypeDef
+## UpdateRevisionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import UpdateRevisionRequestTypeDef
+from mypy_boto3_dataexchange.type_defs import UpdateRevisionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1037,10 +1037,10 @@ Optional fields:
 - `Comment`: `str`
 - `Finalized`: `bool`
 
-## UpdateRevisionResponseResponseTypeDef
+## UpdateRevisionResponseTypeDef
 
 ```python
-from mypy_boto3_dataexchange.type_defs import UpdateRevisionResponseResponseTypeDef
+from mypy_boto3_dataexchange.type_defs import UpdateRevisionResponseTypeDef
 ```
 
 Required fields:

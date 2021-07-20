@@ -11,6 +11,7 @@ type annotations stubs module
   - [KMSClient](#kmsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_key_deletion](#cancel_key_deletion)
     - [connect_custom_key_store](#connect_custom_key_store)
@@ -130,6 +131,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+KMSClient exceptions.
+
+Type annotations for `boto3.client("kms").exceptions` method.
+
+Boto3 documentation:
+[KMS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -155,14 +167,14 @@ Boto3 documentation:
 [KMS.Client.cancel_key_deletion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.cancel_key_deletion)
 
 Arguments mapping described in
-[CancelKeyDeletionRequestTypeDef](./type_defs.md#cancelkeydeletionrequesttypedef).
+[CancelKeyDeletionRequestRequestTypeDef](./type_defs.md#cancelkeydeletionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
 Returns
-[CancelKeyDeletionResponseResponseTypeDef](./type_defs.md#cancelkeydeletionresponseresponsetypedef).
+[CancelKeyDeletionResponseTypeDef](./type_defs.md#cancelkeydeletionresponsetypedef).
 
 ### connect_custom_key_store
 
@@ -176,7 +188,7 @@ Boto3 documentation:
 [KMS.Client.connect_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.connect_custom_key_store)
 
 Arguments mapping described in
-[ConnectCustomKeyStoreRequestTypeDef](./type_defs.md#connectcustomkeystorerequesttypedef).
+[ConnectCustomKeyStoreRequestRequestTypeDef](./type_defs.md#connectcustomkeystorerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -194,7 +206,7 @@ Boto3 documentation:
 [KMS.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_alias)
 
 Arguments mapping described in
-[CreateAliasRequestTypeDef](./type_defs.md#createaliasrequesttypedef).
+[CreateAliasRequestRequestTypeDef](./type_defs.md#createaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -215,7 +227,7 @@ Boto3 documentation:
 [KMS.Client.create_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_custom_key_store)
 
 Arguments mapping described in
-[CreateCustomKeyStoreRequestTypeDef](./type_defs.md#createcustomkeystorerequesttypedef).
+[CreateCustomKeyStoreRequestRequestTypeDef](./type_defs.md#createcustomkeystorerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,7 +237,7 @@ Keyword-only arguments:
 - `KeyStorePassword`: `str` *(required)*
 
 Returns
-[CreateCustomKeyStoreResponseResponseTypeDef](./type_defs.md#createcustomkeystoreresponseresponsetypedef).
+[CreateCustomKeyStoreResponseTypeDef](./type_defs.md#createcustomkeystoreresponsetypedef).
 
 ### create_grant
 
@@ -237,7 +249,7 @@ Boto3 documentation:
 [KMS.Client.create_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_grant)
 
 Arguments mapping described in
-[CreateGrantRequestTypeDef](./type_defs.md#creategrantrequesttypedef).
+[CreateGrantRequestRequestTypeDef](./type_defs.md#creategrantrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,7 +264,7 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[CreateGrantResponseResponseTypeDef](./type_defs.md#creategrantresponseresponsetypedef).
+[CreateGrantResponseTypeDef](./type_defs.md#creategrantresponsetypedef).
 
 ### create_key
 
@@ -266,7 +278,7 @@ Boto3 documentation:
 [KMS.Client.create_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.create_key)
 
 Arguments mapping described in
-[CreateKeyRequestTypeDef](./type_defs.md#createkeyrequesttypedef).
+[CreateKeyRequestRequestTypeDef](./type_defs.md#createkeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -281,8 +293,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `MultiRegion`: `bool`
 
-Returns
-[CreateKeyResponseResponseTypeDef](./type_defs.md#createkeyresponseresponsetypedef).
+Returns [CreateKeyResponseTypeDef](./type_defs.md#createkeyresponsetypedef).
 
 ### decrypt
 
@@ -297,7 +308,7 @@ Boto3 documentation:
 [KMS.Client.decrypt](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.decrypt)
 
 Arguments mapping described in
-[DecryptRequestTypeDef](./type_defs.md#decryptrequesttypedef).
+[DecryptRequestRequestTypeDef](./type_defs.md#decryptrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,8 +320,7 @@ Keyword-only arguments:
 - `EncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
-Returns
-[DecryptResponseResponseTypeDef](./type_defs.md#decryptresponseresponsetypedef).
+Returns [DecryptResponseTypeDef](./type_defs.md#decryptresponsetypedef).
 
 ### delete_alias
 
@@ -322,7 +332,7 @@ Boto3 documentation:
 [KMS.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_alias)
 
 Arguments mapping described in
-[DeleteAliasRequestTypeDef](./type_defs.md#deletealiasrequesttypedef).
+[DeleteAliasRequestRequestTypeDef](./type_defs.md#deletealiasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -339,7 +349,7 @@ Boto3 documentation:
 [KMS.Client.delete_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_custom_key_store)
 
 Arguments mapping described in
-[DeleteCustomKeyStoreRequestTypeDef](./type_defs.md#deletecustomkeystorerequesttypedef).
+[DeleteCustomKeyStoreRequestRequestTypeDef](./type_defs.md#deletecustomkeystorerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -357,7 +367,7 @@ Boto3 documentation:
 [KMS.Client.delete_imported_key_material](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.delete_imported_key_material)
 
 Arguments mapping described in
-[DeleteImportedKeyMaterialRequestTypeDef](./type_defs.md#deleteimportedkeymaterialrequesttypedef).
+[DeleteImportedKeyMaterialRequestRequestTypeDef](./type_defs.md#deleteimportedkeymaterialrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -375,7 +385,7 @@ Boto3 documentation:
 [KMS.Client.describe_custom_key_stores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_custom_key_stores)
 
 Arguments mapping described in
-[DescribeCustomKeyStoresRequestTypeDef](./type_defs.md#describecustomkeystoresrequesttypedef).
+[DescribeCustomKeyStoresRequestRequestTypeDef](./type_defs.md#describecustomkeystoresrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -385,7 +395,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeCustomKeyStoresResponseResponseTypeDef](./type_defs.md#describecustomkeystoresresponseresponsetypedef).
+[DescribeCustomKeyStoresResponseTypeDef](./type_defs.md#describecustomkeystoresresponsetypedef).
 
 ### describe_key
 
@@ -397,7 +407,7 @@ Boto3 documentation:
 [KMS.Client.describe_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.describe_key)
 
 Arguments mapping described in
-[DescribeKeyRequestTypeDef](./type_defs.md#describekeyrequesttypedef).
+[DescribeKeyRequestRequestTypeDef](./type_defs.md#describekeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,7 +415,7 @@ Keyword-only arguments:
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
-[DescribeKeyResponseResponseTypeDef](./type_defs.md#describekeyresponseresponsetypedef).
+[DescribeKeyResponseTypeDef](./type_defs.md#describekeyresponsetypedef).
 
 ### disable_key
 
@@ -417,7 +427,7 @@ Boto3 documentation:
 [KMS.Client.disable_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key)
 
 Arguments mapping described in
-[DisableKeyRequestTypeDef](./type_defs.md#disablekeyrequesttypedef).
+[DisableKeyRequestRequestTypeDef](./type_defs.md#disablekeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -435,7 +445,7 @@ Boto3 documentation:
 [KMS.Client.disable_key_rotation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disable_key_rotation)
 
 Arguments mapping described in
-[DisableKeyRotationRequestTypeDef](./type_defs.md#disablekeyrotationrequesttypedef).
+[DisableKeyRotationRequestRequestTypeDef](./type_defs.md#disablekeyrotationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -453,7 +463,7 @@ Boto3 documentation:
 [KMS.Client.disconnect_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.disconnect_custom_key_store)
 
 Arguments mapping described in
-[DisconnectCustomKeyStoreRequestTypeDef](./type_defs.md#disconnectcustomkeystorerequesttypedef).
+[DisconnectCustomKeyStoreRequestRequestTypeDef](./type_defs.md#disconnectcustomkeystorerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,7 +481,7 @@ Boto3 documentation:
 [KMS.Client.enable_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key)
 
 Arguments mapping described in
-[EnableKeyRequestTypeDef](./type_defs.md#enablekeyrequesttypedef).
+[EnableKeyRequestRequestTypeDef](./type_defs.md#enablekeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -489,7 +499,7 @@ Boto3 documentation:
 [KMS.Client.enable_key_rotation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.enable_key_rotation)
 
 Arguments mapping described in
-[EnableKeyRotationRequestTypeDef](./type_defs.md#enablekeyrotationrequesttypedef).
+[EnableKeyRotationRequestRequestTypeDef](./type_defs.md#enablekeyrotationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -505,7 +515,7 @@ Boto3 documentation:
 [KMS.Client.encrypt](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.encrypt)
 
 Arguments mapping described in
-[EncryptRequestTypeDef](./type_defs.md#encryptrequesttypedef).
+[EncryptRequestRequestTypeDef](./type_defs.md#encryptrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -517,8 +527,7 @@ Keyword-only arguments:
 - `EncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
-Returns
-[EncryptResponseResponseTypeDef](./type_defs.md#encryptresponseresponsetypedef).
+Returns [EncryptResponseTypeDef](./type_defs.md#encryptresponsetypedef).
 
 ### generate_data_key
 
@@ -530,7 +539,7 @@ Boto3 documentation:
 [KMS.Client.generate_data_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key)
 
 Arguments mapping described in
-[GenerateDataKeyRequestTypeDef](./type_defs.md#generatedatakeyrequesttypedef).
+[GenerateDataKeyRequestRequestTypeDef](./type_defs.md#generatedatakeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -541,7 +550,7 @@ Keyword-only arguments:
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
-[GenerateDataKeyResponseResponseTypeDef](./type_defs.md#generatedatakeyresponseresponsetypedef).
+[GenerateDataKeyResponseTypeDef](./type_defs.md#generatedatakeyresponsetypedef).
 
 ### generate_data_key_pair
 
@@ -553,7 +562,7 @@ Boto3 documentation:
 [KMS.Client.generate_data_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_pair)
 
 Arguments mapping described in
-[GenerateDataKeyPairRequestTypeDef](./type_defs.md#generatedatakeypairrequesttypedef).
+[GenerateDataKeyPairRequestRequestTypeDef](./type_defs.md#generatedatakeypairrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -564,7 +573,7 @@ Keyword-only arguments:
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
-[GenerateDataKeyPairResponseResponseTypeDef](./type_defs.md#generatedatakeypairresponseresponsetypedef).
+[GenerateDataKeyPairResponseTypeDef](./type_defs.md#generatedatakeypairresponsetypedef).
 
 ### generate_data_key_pair_without_plaintext
 
@@ -577,7 +586,7 @@ Boto3 documentation:
 [KMS.Client.generate_data_key_pair_without_plaintext](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_pair_without_plaintext)
 
 Arguments mapping described in
-[GenerateDataKeyPairWithoutPlaintextRequestTypeDef](./type_defs.md#generatedatakeypairwithoutplaintextrequesttypedef).
+[GenerateDataKeyPairWithoutPlaintextRequestRequestTypeDef](./type_defs.md#generatedatakeypairwithoutplaintextrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -588,7 +597,7 @@ Keyword-only arguments:
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
-[GenerateDataKeyPairWithoutPlaintextResponseResponseTypeDef](./type_defs.md#generatedatakeypairwithoutplaintextresponseresponsetypedef).
+[GenerateDataKeyPairWithoutPlaintextResponseTypeDef](./type_defs.md#generatedatakeypairwithoutplaintextresponsetypedef).
 
 ### generate_data_key_without_plaintext
 
@@ -601,7 +610,7 @@ Boto3 documentation:
 [KMS.Client.generate_data_key_without_plaintext](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_data_key_without_plaintext)
 
 Arguments mapping described in
-[GenerateDataKeyWithoutPlaintextRequestTypeDef](./type_defs.md#generatedatakeywithoutplaintextrequesttypedef).
+[GenerateDataKeyWithoutPlaintextRequestRequestTypeDef](./type_defs.md#generatedatakeywithoutplaintextrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -612,7 +621,7 @@ Keyword-only arguments:
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
-[GenerateDataKeyWithoutPlaintextResponseResponseTypeDef](./type_defs.md#generatedatakeywithoutplaintextresponseresponsetypedef).
+[GenerateDataKeyWithoutPlaintextResponseTypeDef](./type_defs.md#generatedatakeywithoutplaintextresponsetypedef).
 
 ### generate_presigned_url
 
@@ -642,7 +651,7 @@ Boto3 documentation:
 [KMS.Client.generate_random](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.generate_random)
 
 Arguments mapping described in
-[GenerateRandomRequestTypeDef](./type_defs.md#generaterandomrequesttypedef).
+[GenerateRandomRequestRequestTypeDef](./type_defs.md#generaterandomrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -650,7 +659,7 @@ Keyword-only arguments:
 - `CustomKeyStoreId`: `str`
 
 Returns
-[GenerateRandomResponseResponseTypeDef](./type_defs.md#generaterandomresponseresponsetypedef).
+[GenerateRandomResponseTypeDef](./type_defs.md#generaterandomresponsetypedef).
 
 ### get_key_policy
 
@@ -662,7 +671,7 @@ Boto3 documentation:
 [KMS.Client.get_key_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_policy)
 
 Arguments mapping described in
-[GetKeyPolicyRequestTypeDef](./type_defs.md#getkeypolicyrequesttypedef).
+[GetKeyPolicyRequestRequestTypeDef](./type_defs.md#getkeypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -670,7 +679,7 @@ Keyword-only arguments:
 - `PolicyName`: `str` *(required)*
 
 Returns
-[GetKeyPolicyResponseResponseTypeDef](./type_defs.md#getkeypolicyresponseresponsetypedef).
+[GetKeyPolicyResponseTypeDef](./type_defs.md#getkeypolicyresponsetypedef).
 
 ### get_key_rotation_status
 
@@ -684,14 +693,14 @@ Boto3 documentation:
 [KMS.Client.get_key_rotation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_key_rotation_status)
 
 Arguments mapping described in
-[GetKeyRotationStatusRequestTypeDef](./type_defs.md#getkeyrotationstatusrequesttypedef).
+[GetKeyRotationStatusRequestRequestTypeDef](./type_defs.md#getkeyrotationstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
 Returns
-[GetKeyRotationStatusResponseResponseTypeDef](./type_defs.md#getkeyrotationstatusresponseresponsetypedef).
+[GetKeyRotationStatusResponseTypeDef](./type_defs.md#getkeyrotationstatusresponsetypedef).
 
 ### get_parameters_for_import
 
@@ -704,7 +713,7 @@ Boto3 documentation:
 [KMS.Client.get_parameters_for_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_parameters_for_import)
 
 Arguments mapping described in
-[GetParametersForImportRequestTypeDef](./type_defs.md#getparametersforimportrequesttypedef).
+[GetParametersForImportRequestRequestTypeDef](./type_defs.md#getparametersforimportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -715,7 +724,7 @@ Keyword-only arguments:
   [WrappingKeySpecType](./literals.md#wrappingkeyspectype)) *(required)*
 
 Returns
-[GetParametersForImportResponseResponseTypeDef](./type_defs.md#getparametersforimportresponseresponsetypedef).
+[GetParametersForImportResponseTypeDef](./type_defs.md#getparametersforimportresponsetypedef).
 
 ### get_public_key
 
@@ -727,7 +736,7 @@ Boto3 documentation:
 [KMS.Client.get_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.get_public_key)
 
 Arguments mapping described in
-[GetPublicKeyRequestTypeDef](./type_defs.md#getpublickeyrequesttypedef).
+[GetPublicKeyRequestRequestTypeDef](./type_defs.md#getpublickeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -735,7 +744,7 @@ Keyword-only arguments:
 - `GrantTokens`: `List`\[`str`\]
 
 Returns
-[GetPublicKeyResponseResponseTypeDef](./type_defs.md#getpublickeyresponseresponsetypedef).
+[GetPublicKeyResponseTypeDef](./type_defs.md#getpublickeyresponsetypedef).
 
 ### import_key_material
 
@@ -748,7 +757,7 @@ Boto3 documentation:
 [KMS.Client.import_key_material](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.import_key_material)
 
 Arguments mapping described in
-[ImportKeyMaterialRequestTypeDef](./type_defs.md#importkeymaterialrequesttypedef).
+[ImportKeyMaterialRequestRequestTypeDef](./type_defs.md#importkeymaterialrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -773,7 +782,7 @@ Boto3 documentation:
 [KMS.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_aliases)
 
 Arguments mapping described in
-[ListAliasesRequestTypeDef](./type_defs.md#listaliasesrequesttypedef).
+[ListAliasesRequestRequestTypeDef](./type_defs.md#listaliasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -782,7 +791,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListAliasesResponseResponseTypeDef](./type_defs.md#listaliasesresponseresponsetypedef).
+[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef).
 
 ### list_grants
 
@@ -794,7 +803,7 @@ Boto3 documentation:
 [KMS.Client.list_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_grants)
 
 Arguments mapping described in
-[ListGrantsRequestTypeDef](./type_defs.md#listgrantsrequesttypedef).
+[ListGrantsRequestRequestTypeDef](./type_defs.md#listgrantsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -804,8 +813,7 @@ Keyword-only arguments:
 - `GrantId`: `str`
 - `GranteePrincipal`: `str`
 
-Returns
-[ListGrantsResponseResponseTypeDef](./type_defs.md#listgrantsresponseresponsetypedef).
+Returns [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef).
 
 ### list_key_policies
 
@@ -818,7 +826,7 @@ Boto3 documentation:
 [KMS.Client.list_key_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_key_policies)
 
 Arguments mapping described in
-[ListKeyPoliciesRequestTypeDef](./type_defs.md#listkeypoliciesrequesttypedef).
+[ListKeyPoliciesRequestRequestTypeDef](./type_defs.md#listkeypoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -827,7 +835,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListKeyPoliciesResponseResponseTypeDef](./type_defs.md#listkeypoliciesresponseresponsetypedef).
+[ListKeyPoliciesResponseTypeDef](./type_defs.md#listkeypoliciesresponsetypedef).
 
 ### list_keys
 
@@ -840,15 +848,14 @@ Boto3 documentation:
 [KMS.Client.list_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_keys)
 
 Arguments mapping described in
-[ListKeysRequestTypeDef](./type_defs.md#listkeysrequesttypedef).
+[ListKeysRequestRequestTypeDef](./type_defs.md#listkeysrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Limit`: `int`
 - `Marker`: `str`
 
-Returns
-[ListKeysResponseResponseTypeDef](./type_defs.md#listkeysresponseresponsetypedef).
+Returns [ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef).
 
 ### list_resource_tags
 
@@ -860,7 +867,7 @@ Boto3 documentation:
 [KMS.Client.list_resource_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_resource_tags)
 
 Arguments mapping described in
-[ListResourceTagsRequestTypeDef](./type_defs.md#listresourcetagsrequesttypedef).
+[ListResourceTagsRequestRequestTypeDef](./type_defs.md#listresourcetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -869,7 +876,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListResourceTagsResponseResponseTypeDef](./type_defs.md#listresourcetagsresponseresponsetypedef).
+[ListResourceTagsResponseTypeDef](./type_defs.md#listresourcetagsresponsetypedef).
 
 ### list_retirable_grants
 
@@ -882,7 +889,7 @@ Boto3 documentation:
 [KMS.Client.list_retirable_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.list_retirable_grants)
 
 Arguments mapping described in
-[ListRetirableGrantsRequestTypeDef](./type_defs.md#listretirablegrantsrequesttypedef).
+[ListRetirableGrantsRequestRequestTypeDef](./type_defs.md#listretirablegrantsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -890,8 +897,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 - `Marker`: `str`
 
-Returns
-[ListGrantsResponseResponseTypeDef](./type_defs.md#listgrantsresponseresponsetypedef).
+Returns [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef).
 
 ### put_key_policy
 
@@ -903,7 +909,7 @@ Boto3 documentation:
 [KMS.Client.put_key_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.put_key_policy)
 
 Arguments mapping described in
-[PutKeyPolicyRequestTypeDef](./type_defs.md#putkeypolicyrequesttypedef).
+[PutKeyPolicyRequestRequestTypeDef](./type_defs.md#putkeypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -922,7 +928,7 @@ Boto3 documentation:
 [KMS.Client.re_encrypt](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.re_encrypt)
 
 Arguments mapping described in
-[ReEncryptRequestTypeDef](./type_defs.md#reencryptrequesttypedef).
+[ReEncryptRequestRequestTypeDef](./type_defs.md#reencryptrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -938,8 +944,7 @@ Keyword-only arguments:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 - `GrantTokens`: `List`\[`str`\]
 
-Returns
-[ReEncryptResponseResponseTypeDef](./type_defs.md#reencryptresponseresponsetypedef).
+Returns [ReEncryptResponseTypeDef](./type_defs.md#reencryptresponsetypedef).
 
 ### replicate_key
 
@@ -951,7 +956,7 @@ Boto3 documentation:
 [KMS.Client.replicate_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.replicate_key)
 
 Arguments mapping described in
-[ReplicateKeyRequestTypeDef](./type_defs.md#replicatekeyrequesttypedef).
+[ReplicateKeyRequestRequestTypeDef](./type_defs.md#replicatekeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -963,7 +968,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[ReplicateKeyResponseResponseTypeDef](./type_defs.md#replicatekeyresponseresponsetypedef).
+[ReplicateKeyResponseTypeDef](./type_defs.md#replicatekeyresponsetypedef).
 
 ### retire_grant
 
@@ -975,7 +980,7 @@ Boto3 documentation:
 [KMS.Client.retire_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.retire_grant)
 
 Arguments mapping described in
-[RetireGrantRequestTypeDef](./type_defs.md#retiregrantrequesttypedef).
+[RetireGrantRequestRequestTypeDef](./type_defs.md#retiregrantrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -993,7 +998,7 @@ Boto3 documentation:
 [KMS.Client.revoke_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.revoke_grant)
 
 Arguments mapping described in
-[RevokeGrantRequestTypeDef](./type_defs.md#revokegrantrequesttypedef).
+[RevokeGrantRequestRequestTypeDef](./type_defs.md#revokegrantrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1010,7 +1015,7 @@ Boto3 documentation:
 [KMS.Client.schedule_key_deletion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.schedule_key_deletion)
 
 Arguments mapping described in
-[ScheduleKeyDeletionRequestTypeDef](./type_defs.md#schedulekeydeletionrequesttypedef).
+[ScheduleKeyDeletionRequestRequestTypeDef](./type_defs.md#schedulekeydeletionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1018,7 +1023,7 @@ Keyword-only arguments:
 - `PendingWindowInDays`: `int`
 
 Returns
-[ScheduleKeyDeletionResponseResponseTypeDef](./type_defs.md#schedulekeydeletionresponseresponsetypedef).
+[ScheduleKeyDeletionResponseTypeDef](./type_defs.md#schedulekeydeletionresponsetypedef).
 
 ### sign
 
@@ -1032,7 +1037,7 @@ Boto3 documentation:
 [KMS.Client.sign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.sign)
 
 Arguments mapping described in
-[SignRequestTypeDef](./type_defs.md#signrequesttypedef).
+[SignRequestRequestTypeDef](./type_defs.md#signrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1044,8 +1049,7 @@ Keyword-only arguments:
 - `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 - `GrantTokens`: `List`\[`str`\]
 
-Returns
-[SignResponseResponseTypeDef](./type_defs.md#signresponseresponsetypedef).
+Returns [SignResponseTypeDef](./type_defs.md#signresponsetypedef).
 
 ### tag_resource
 
@@ -1059,7 +1063,7 @@ Boto3 documentation:
 [KMS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1077,7 +1081,7 @@ Boto3 documentation:
 [KMS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1095,7 +1099,7 @@ Boto3 documentation:
 [KMS.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_alias)
 
 Arguments mapping described in
-[UpdateAliasRequestTypeDef](./type_defs.md#updatealiasrequesttypedef).
+[UpdateAliasRequestRequestTypeDef](./type_defs.md#updatealiasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1112,7 +1116,7 @@ Boto3 documentation:
 [KMS.Client.update_custom_key_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_custom_key_store)
 
 Arguments mapping described in
-[UpdateCustomKeyStoreRequestTypeDef](./type_defs.md#updatecustomkeystorerequesttypedef).
+[UpdateCustomKeyStoreRequestRequestTypeDef](./type_defs.md#updatecustomkeystorerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1133,7 +1137,7 @@ Boto3 documentation:
 [KMS.Client.update_key_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_key_description)
 
 Arguments mapping described in
-[UpdateKeyDescriptionRequestTypeDef](./type_defs.md#updatekeydescriptionrequesttypedef).
+[UpdateKeyDescriptionRequestRequestTypeDef](./type_defs.md#updatekeydescriptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1150,7 +1154,7 @@ Boto3 documentation:
 [KMS.Client.update_primary_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.update_primary_region)
 
 Arguments mapping described in
-[UpdatePrimaryRegionRequestTypeDef](./type_defs.md#updateprimaryregionrequesttypedef).
+[UpdatePrimaryRegionRequestRequestTypeDef](./type_defs.md#updateprimaryregionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1167,7 +1171,7 @@ Boto3 documentation:
 [KMS.Client.verify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client.verify)
 
 Arguments mapping described in
-[VerifyRequestTypeDef](./type_defs.md#verifyrequesttypedef).
+[VerifyRequestRequestTypeDef](./type_defs.md#verifyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1181,8 +1185,7 @@ Keyword-only arguments:
 - `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 - `GrantTokens`: `List`\[`str`\]
 
-Returns
-[VerifyResponseResponseTypeDef](./type_defs.md#verifyresponseresponsetypedef).
+Returns [VerifyResponseTypeDef](./type_defs.md#verifyresponsetypedef).
 
 ### get_paginator
 

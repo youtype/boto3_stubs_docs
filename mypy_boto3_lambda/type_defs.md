@@ -10,126 +10,131 @@ type annotations stubs module
 - [Typed dictionaries for boto3 Lambda module](#typed-dictionaries-for-boto3-lambda-module)
   - [AccountLimitTypeDef](#accountlimittypedef)
   - [AccountUsageTypeDef](#accountusagetypedef)
-  - [AddLayerVersionPermissionRequestTypeDef](#addlayerversionpermissionrequesttypedef)
-  - [AddLayerVersionPermissionResponseResponseTypeDef](#addlayerversionpermissionresponseresponsetypedef)
-  - [AddPermissionRequestTypeDef](#addpermissionrequesttypedef)
-  - [AddPermissionResponseResponseTypeDef](#addpermissionresponseresponsetypedef)
-  - [AliasConfigurationResponseTypeDef](#aliasconfigurationresponsetypedef)
+  - [AddLayerVersionPermissionRequestRequestTypeDef](#addlayerversionpermissionrequestrequesttypedef)
+  - [AddLayerVersionPermissionResponseTypeDef](#addlayerversionpermissionresponsetypedef)
+  - [AddPermissionRequestRequestTypeDef](#addpermissionrequestrequesttypedef)
+  - [AddPermissionResponseTypeDef](#addpermissionresponsetypedef)
+  - [AliasConfigurationResponseMetadataTypeDef](#aliasconfigurationresponsemetadatatypedef)
+  - [AliasConfigurationTypeDef](#aliasconfigurationtypedef)
   - [AliasRoutingConfigurationTypeDef](#aliasroutingconfigurationtypedef)
   - [AllowedPublishersTypeDef](#allowedpublisherstypedef)
   - [CodeSigningConfigTypeDef](#codesigningconfigtypedef)
   - [CodeSigningPoliciesTypeDef](#codesigningpoliciestypedef)
+  - [ConcurrencyResponseMetadataTypeDef](#concurrencyresponsemetadatatypedef)
   - [ConcurrencyTypeDef](#concurrencytypedef)
-  - [CreateAliasRequestTypeDef](#createaliasrequesttypedef)
-  - [CreateCodeSigningConfigRequestTypeDef](#createcodesigningconfigrequesttypedef)
-  - [CreateCodeSigningConfigResponseResponseTypeDef](#createcodesigningconfigresponseresponsetypedef)
-  - [CreateEventSourceMappingRequestTypeDef](#createeventsourcemappingrequesttypedef)
-  - [CreateFunctionRequestTypeDef](#createfunctionrequesttypedef)
+  - [CreateAliasRequestRequestTypeDef](#createaliasrequestrequesttypedef)
+  - [CreateCodeSigningConfigRequestRequestTypeDef](#createcodesigningconfigrequestrequesttypedef)
+  - [CreateCodeSigningConfigResponseTypeDef](#createcodesigningconfigresponsetypedef)
+  - [CreateEventSourceMappingRequestRequestTypeDef](#createeventsourcemappingrequestrequesttypedef)
+  - [CreateFunctionRequestRequestTypeDef](#createfunctionrequestrequesttypedef)
   - [DeadLetterConfigTypeDef](#deadletterconfigtypedef)
-  - [DeleteAliasRequestTypeDef](#deletealiasrequesttypedef)
-  - [DeleteCodeSigningConfigRequestTypeDef](#deletecodesigningconfigrequesttypedef)
-  - [DeleteEventSourceMappingRequestTypeDef](#deleteeventsourcemappingrequesttypedef)
-  - [DeleteFunctionCodeSigningConfigRequestTypeDef](#deletefunctioncodesigningconfigrequesttypedef)
-  - [DeleteFunctionConcurrencyRequestTypeDef](#deletefunctionconcurrencyrequesttypedef)
-  - [DeleteFunctionEventInvokeConfigRequestTypeDef](#deletefunctioneventinvokeconfigrequesttypedef)
-  - [DeleteFunctionRequestTypeDef](#deletefunctionrequesttypedef)
-  - [DeleteLayerVersionRequestTypeDef](#deletelayerversionrequesttypedef)
-  - [DeleteProvisionedConcurrencyConfigRequestTypeDef](#deleteprovisionedconcurrencyconfigrequesttypedef)
+  - [DeleteAliasRequestRequestTypeDef](#deletealiasrequestrequesttypedef)
+  - [DeleteCodeSigningConfigRequestRequestTypeDef](#deletecodesigningconfigrequestrequesttypedef)
+  - [DeleteEventSourceMappingRequestRequestTypeDef](#deleteeventsourcemappingrequestrequesttypedef)
+  - [DeleteFunctionCodeSigningConfigRequestRequestTypeDef](#deletefunctioncodesigningconfigrequestrequesttypedef)
+  - [DeleteFunctionConcurrencyRequestRequestTypeDef](#deletefunctionconcurrencyrequestrequesttypedef)
+  - [DeleteFunctionEventInvokeConfigRequestRequestTypeDef](#deletefunctioneventinvokeconfigrequestrequesttypedef)
+  - [DeleteFunctionRequestRequestTypeDef](#deletefunctionrequestrequesttypedef)
+  - [DeleteLayerVersionRequestRequestTypeDef](#deletelayerversionrequestrequesttypedef)
+  - [DeleteProvisionedConcurrencyConfigRequestRequestTypeDef](#deleteprovisionedconcurrencyconfigrequestrequesttypedef)
   - [DestinationConfigTypeDef](#destinationconfigtypedef)
   - [EnvironmentErrorTypeDef](#environmenterrortypedef)
   - [EnvironmentResponseTypeDef](#environmentresponsetypedef)
   - [EnvironmentTypeDef](#environmenttypedef)
-  - [EventSourceMappingConfigurationResponseTypeDef](#eventsourcemappingconfigurationresponsetypedef)
+  - [EventSourceMappingConfigurationResponseMetadataTypeDef](#eventsourcemappingconfigurationresponsemetadatatypedef)
+  - [EventSourceMappingConfigurationTypeDef](#eventsourcemappingconfigurationtypedef)
   - [FileSystemConfigTypeDef](#filesystemconfigtypedef)
   - [FunctionCodeLocationTypeDef](#functioncodelocationtypedef)
   - [FunctionCodeTypeDef](#functioncodetypedef)
-  - [FunctionConfigurationResponseTypeDef](#functionconfigurationresponsetypedef)
-  - [FunctionEventInvokeConfigResponseTypeDef](#functioneventinvokeconfigresponsetypedef)
-  - [GetAccountSettingsResponseResponseTypeDef](#getaccountsettingsresponseresponsetypedef)
-  - [GetAliasRequestTypeDef](#getaliasrequesttypedef)
-  - [GetCodeSigningConfigRequestTypeDef](#getcodesigningconfigrequesttypedef)
-  - [GetCodeSigningConfigResponseResponseTypeDef](#getcodesigningconfigresponseresponsetypedef)
-  - [GetEventSourceMappingRequestTypeDef](#geteventsourcemappingrequesttypedef)
-  - [GetFunctionCodeSigningConfigRequestTypeDef](#getfunctioncodesigningconfigrequesttypedef)
-  - [GetFunctionCodeSigningConfigResponseResponseTypeDef](#getfunctioncodesigningconfigresponseresponsetypedef)
-  - [GetFunctionConcurrencyRequestTypeDef](#getfunctionconcurrencyrequesttypedef)
-  - [GetFunctionConcurrencyResponseResponseTypeDef](#getfunctionconcurrencyresponseresponsetypedef)
-  - [GetFunctionConfigurationRequestTypeDef](#getfunctionconfigurationrequesttypedef)
-  - [GetFunctionEventInvokeConfigRequestTypeDef](#getfunctioneventinvokeconfigrequesttypedef)
-  - [GetFunctionRequestTypeDef](#getfunctionrequesttypedef)
-  - [GetFunctionResponseResponseTypeDef](#getfunctionresponseresponsetypedef)
-  - [GetLayerVersionByArnRequestTypeDef](#getlayerversionbyarnrequesttypedef)
-  - [GetLayerVersionPolicyRequestTypeDef](#getlayerversionpolicyrequesttypedef)
-  - [GetLayerVersionPolicyResponseResponseTypeDef](#getlayerversionpolicyresponseresponsetypedef)
-  - [GetLayerVersionRequestTypeDef](#getlayerversionrequesttypedef)
-  - [GetLayerVersionResponseResponseTypeDef](#getlayerversionresponseresponsetypedef)
-  - [GetPolicyRequestTypeDef](#getpolicyrequesttypedef)
-  - [GetPolicyResponseResponseTypeDef](#getpolicyresponseresponsetypedef)
-  - [GetProvisionedConcurrencyConfigRequestTypeDef](#getprovisionedconcurrencyconfigrequesttypedef)
-  - [GetProvisionedConcurrencyConfigResponseResponseTypeDef](#getprovisionedconcurrencyconfigresponseresponsetypedef)
+  - [FunctionConfigurationResponseMetadataTypeDef](#functionconfigurationresponsemetadatatypedef)
+  - [FunctionConfigurationTypeDef](#functionconfigurationtypedef)
+  - [FunctionEventInvokeConfigResponseMetadataTypeDef](#functioneventinvokeconfigresponsemetadatatypedef)
+  - [FunctionEventInvokeConfigTypeDef](#functioneventinvokeconfigtypedef)
+  - [GetAccountSettingsResponseTypeDef](#getaccountsettingsresponsetypedef)
+  - [GetAliasRequestRequestTypeDef](#getaliasrequestrequesttypedef)
+  - [GetCodeSigningConfigRequestRequestTypeDef](#getcodesigningconfigrequestrequesttypedef)
+  - [GetCodeSigningConfigResponseTypeDef](#getcodesigningconfigresponsetypedef)
+  - [GetEventSourceMappingRequestRequestTypeDef](#geteventsourcemappingrequestrequesttypedef)
+  - [GetFunctionCodeSigningConfigRequestRequestTypeDef](#getfunctioncodesigningconfigrequestrequesttypedef)
+  - [GetFunctionCodeSigningConfigResponseTypeDef](#getfunctioncodesigningconfigresponsetypedef)
+  - [GetFunctionConcurrencyRequestRequestTypeDef](#getfunctionconcurrencyrequestrequesttypedef)
+  - [GetFunctionConcurrencyResponseTypeDef](#getfunctionconcurrencyresponsetypedef)
+  - [GetFunctionConfigurationRequestRequestTypeDef](#getfunctionconfigurationrequestrequesttypedef)
+  - [GetFunctionEventInvokeConfigRequestRequestTypeDef](#getfunctioneventinvokeconfigrequestrequesttypedef)
+  - [GetFunctionRequestRequestTypeDef](#getfunctionrequestrequesttypedef)
+  - [GetFunctionResponseTypeDef](#getfunctionresponsetypedef)
+  - [GetLayerVersionByArnRequestRequestTypeDef](#getlayerversionbyarnrequestrequesttypedef)
+  - [GetLayerVersionPolicyRequestRequestTypeDef](#getlayerversionpolicyrequestrequesttypedef)
+  - [GetLayerVersionPolicyResponseTypeDef](#getlayerversionpolicyresponsetypedef)
+  - [GetLayerVersionRequestRequestTypeDef](#getlayerversionrequestrequesttypedef)
+  - [GetLayerVersionResponseTypeDef](#getlayerversionresponsetypedef)
+  - [GetPolicyRequestRequestTypeDef](#getpolicyrequestrequesttypedef)
+  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
+  - [GetProvisionedConcurrencyConfigRequestRequestTypeDef](#getprovisionedconcurrencyconfigrequestrequesttypedef)
+  - [GetProvisionedConcurrencyConfigResponseTypeDef](#getprovisionedconcurrencyconfigresponsetypedef)
   - [ImageConfigErrorTypeDef](#imageconfigerrortypedef)
   - [ImageConfigResponseTypeDef](#imageconfigresponsetypedef)
   - [ImageConfigTypeDef](#imageconfigtypedef)
-  - [InvocationRequestTypeDef](#invocationrequesttypedef)
+  - [InvocationRequestRequestTypeDef](#invocationrequestrequesttypedef)
   - [InvocationResponseTypeDef](#invocationresponsetypedef)
-  - [InvokeAsyncRequestTypeDef](#invokeasyncrequesttypedef)
-  - [InvokeAsyncResponseResponseTypeDef](#invokeasyncresponseresponsetypedef)
+  - [InvokeAsyncRequestRequestTypeDef](#invokeasyncrequestrequesttypedef)
+  - [InvokeAsyncResponseTypeDef](#invokeasyncresponsetypedef)
   - [LayerTypeDef](#layertypedef)
   - [LayerVersionContentInputTypeDef](#layerversioncontentinputtypedef)
   - [LayerVersionContentOutputTypeDef](#layerversioncontentoutputtypedef)
   - [LayerVersionsListItemTypeDef](#layerversionslistitemtypedef)
   - [LayersListItemTypeDef](#layerslistitemtypedef)
-  - [ListAliasesRequestTypeDef](#listaliasesrequesttypedef)
-  - [ListAliasesResponseResponseTypeDef](#listaliasesresponseresponsetypedef)
-  - [ListCodeSigningConfigsRequestTypeDef](#listcodesigningconfigsrequesttypedef)
-  - [ListCodeSigningConfigsResponseResponseTypeDef](#listcodesigningconfigsresponseresponsetypedef)
-  - [ListEventSourceMappingsRequestTypeDef](#listeventsourcemappingsrequesttypedef)
-  - [ListEventSourceMappingsResponseResponseTypeDef](#listeventsourcemappingsresponseresponsetypedef)
-  - [ListFunctionEventInvokeConfigsRequestTypeDef](#listfunctioneventinvokeconfigsrequesttypedef)
-  - [ListFunctionEventInvokeConfigsResponseResponseTypeDef](#listfunctioneventinvokeconfigsresponseresponsetypedef)
-  - [ListFunctionsByCodeSigningConfigRequestTypeDef](#listfunctionsbycodesigningconfigrequesttypedef)
-  - [ListFunctionsByCodeSigningConfigResponseResponseTypeDef](#listfunctionsbycodesigningconfigresponseresponsetypedef)
-  - [ListFunctionsRequestTypeDef](#listfunctionsrequesttypedef)
-  - [ListFunctionsResponseResponseTypeDef](#listfunctionsresponseresponsetypedef)
-  - [ListLayerVersionsRequestTypeDef](#listlayerversionsrequesttypedef)
-  - [ListLayerVersionsResponseResponseTypeDef](#listlayerversionsresponseresponsetypedef)
-  - [ListLayersRequestTypeDef](#listlayersrequesttypedef)
-  - [ListLayersResponseResponseTypeDef](#listlayersresponseresponsetypedef)
-  - [ListProvisionedConcurrencyConfigsRequestTypeDef](#listprovisionedconcurrencyconfigsrequesttypedef)
-  - [ListProvisionedConcurrencyConfigsResponseResponseTypeDef](#listprovisionedconcurrencyconfigsresponseresponsetypedef)
-  - [ListTagsRequestTypeDef](#listtagsrequesttypedef)
-  - [ListTagsResponseResponseTypeDef](#listtagsresponseresponsetypedef)
-  - [ListVersionsByFunctionRequestTypeDef](#listversionsbyfunctionrequesttypedef)
-  - [ListVersionsByFunctionResponseResponseTypeDef](#listversionsbyfunctionresponseresponsetypedef)
+  - [ListAliasesRequestRequestTypeDef](#listaliasesrequestrequesttypedef)
+  - [ListAliasesResponseTypeDef](#listaliasesresponsetypedef)
+  - [ListCodeSigningConfigsRequestRequestTypeDef](#listcodesigningconfigsrequestrequesttypedef)
+  - [ListCodeSigningConfigsResponseTypeDef](#listcodesigningconfigsresponsetypedef)
+  - [ListEventSourceMappingsRequestRequestTypeDef](#listeventsourcemappingsrequestrequesttypedef)
+  - [ListEventSourceMappingsResponseTypeDef](#listeventsourcemappingsresponsetypedef)
+  - [ListFunctionEventInvokeConfigsRequestRequestTypeDef](#listfunctioneventinvokeconfigsrequestrequesttypedef)
+  - [ListFunctionEventInvokeConfigsResponseTypeDef](#listfunctioneventinvokeconfigsresponsetypedef)
+  - [ListFunctionsByCodeSigningConfigRequestRequestTypeDef](#listfunctionsbycodesigningconfigrequestrequesttypedef)
+  - [ListFunctionsByCodeSigningConfigResponseTypeDef](#listfunctionsbycodesigningconfigresponsetypedef)
+  - [ListFunctionsRequestRequestTypeDef](#listfunctionsrequestrequesttypedef)
+  - [ListFunctionsResponseTypeDef](#listfunctionsresponsetypedef)
+  - [ListLayerVersionsRequestRequestTypeDef](#listlayerversionsrequestrequesttypedef)
+  - [ListLayerVersionsResponseTypeDef](#listlayerversionsresponsetypedef)
+  - [ListLayersRequestRequestTypeDef](#listlayersrequestrequesttypedef)
+  - [ListLayersResponseTypeDef](#listlayersresponsetypedef)
+  - [ListProvisionedConcurrencyConfigsRequestRequestTypeDef](#listprovisionedconcurrencyconfigsrequestrequesttypedef)
+  - [ListProvisionedConcurrencyConfigsResponseTypeDef](#listprovisionedconcurrencyconfigsresponsetypedef)
+  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
+  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
+  - [ListVersionsByFunctionRequestRequestTypeDef](#listversionsbyfunctionrequestrequesttypedef)
+  - [ListVersionsByFunctionResponseTypeDef](#listversionsbyfunctionresponsetypedef)
   - [OnFailureTypeDef](#onfailuretypedef)
   - [OnSuccessTypeDef](#onsuccesstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ProvisionedConcurrencyConfigListItemTypeDef](#provisionedconcurrencyconfiglistitemtypedef)
-  - [PublishLayerVersionRequestTypeDef](#publishlayerversionrequesttypedef)
-  - [PublishLayerVersionResponseResponseTypeDef](#publishlayerversionresponseresponsetypedef)
-  - [PublishVersionRequestTypeDef](#publishversionrequesttypedef)
-  - [PutFunctionCodeSigningConfigRequestTypeDef](#putfunctioncodesigningconfigrequesttypedef)
-  - [PutFunctionCodeSigningConfigResponseResponseTypeDef](#putfunctioncodesigningconfigresponseresponsetypedef)
-  - [PutFunctionConcurrencyRequestTypeDef](#putfunctionconcurrencyrequesttypedef)
-  - [PutFunctionEventInvokeConfigRequestTypeDef](#putfunctioneventinvokeconfigrequesttypedef)
-  - [PutProvisionedConcurrencyConfigRequestTypeDef](#putprovisionedconcurrencyconfigrequesttypedef)
-  - [PutProvisionedConcurrencyConfigResponseResponseTypeDef](#putprovisionedconcurrencyconfigresponseresponsetypedef)
-  - [RemoveLayerVersionPermissionRequestTypeDef](#removelayerversionpermissionrequesttypedef)
-  - [RemovePermissionRequestTypeDef](#removepermissionrequesttypedef)
+  - [PublishLayerVersionRequestRequestTypeDef](#publishlayerversionrequestrequesttypedef)
+  - [PublishLayerVersionResponseTypeDef](#publishlayerversionresponsetypedef)
+  - [PublishVersionRequestRequestTypeDef](#publishversionrequestrequesttypedef)
+  - [PutFunctionCodeSigningConfigRequestRequestTypeDef](#putfunctioncodesigningconfigrequestrequesttypedef)
+  - [PutFunctionCodeSigningConfigResponseTypeDef](#putfunctioncodesigningconfigresponsetypedef)
+  - [PutFunctionConcurrencyRequestRequestTypeDef](#putfunctionconcurrencyrequestrequesttypedef)
+  - [PutFunctionEventInvokeConfigRequestRequestTypeDef](#putfunctioneventinvokeconfigrequestrequesttypedef)
+  - [PutProvisionedConcurrencyConfigRequestRequestTypeDef](#putprovisionedconcurrencyconfigrequestrequesttypedef)
+  - [PutProvisionedConcurrencyConfigResponseTypeDef](#putprovisionedconcurrencyconfigresponsetypedef)
+  - [RemoveLayerVersionPermissionRequestRequestTypeDef](#removelayerversionpermissionrequestrequesttypedef)
+  - [RemovePermissionRequestRequestTypeDef](#removepermissionrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SelfManagedEventSourceTypeDef](#selfmanagedeventsourcetypedef)
   - [SourceAccessConfigurationTypeDef](#sourceaccessconfigurationtypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TracingConfigResponseTypeDef](#tracingconfigresponsetypedef)
   - [TracingConfigTypeDef](#tracingconfigtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateAliasRequestTypeDef](#updatealiasrequesttypedef)
-  - [UpdateCodeSigningConfigRequestTypeDef](#updatecodesigningconfigrequesttypedef)
-  - [UpdateCodeSigningConfigResponseResponseTypeDef](#updatecodesigningconfigresponseresponsetypedef)
-  - [UpdateEventSourceMappingRequestTypeDef](#updateeventsourcemappingrequesttypedef)
-  - [UpdateFunctionCodeRequestTypeDef](#updatefunctioncoderequesttypedef)
-  - [UpdateFunctionConfigurationRequestTypeDef](#updatefunctionconfigurationrequesttypedef)
-  - [UpdateFunctionEventInvokeConfigRequestTypeDef](#updatefunctioneventinvokeconfigrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAliasRequestRequestTypeDef](#updatealiasrequestrequesttypedef)
+  - [UpdateCodeSigningConfigRequestRequestTypeDef](#updatecodesigningconfigrequestrequesttypedef)
+  - [UpdateCodeSigningConfigResponseTypeDef](#updatecodesigningconfigresponsetypedef)
+  - [UpdateEventSourceMappingRequestRequestTypeDef](#updateeventsourcemappingrequestrequesttypedef)
+  - [UpdateFunctionCodeRequestRequestTypeDef](#updatefunctioncoderequestrequesttypedef)
+  - [UpdateFunctionConfigurationRequestRequestTypeDef](#updatefunctionconfigurationrequestrequesttypedef)
+  - [UpdateFunctionEventInvokeConfigRequestRequestTypeDef](#updatefunctioneventinvokeconfigrequestrequesttypedef)
   - [VpcConfigResponseTypeDef](#vpcconfigresponsetypedef)
   - [VpcConfigTypeDef](#vpcconfigtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
@@ -159,10 +164,10 @@ Optional fields:
 - `TotalCodeSize`: `int`
 - `FunctionCount`: `int`
 
-## AddLayerVersionPermissionRequestTypeDef
+## AddLayerVersionPermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import AddLayerVersionPermissionRequestTypeDef
+from mypy_boto3_lambda.type_defs import AddLayerVersionPermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -178,10 +183,10 @@ Optional fields:
 - `OrganizationId`: `str`
 - `RevisionId`: `str`
 
-## AddLayerVersionPermissionResponseResponseTypeDef
+## AddLayerVersionPermissionResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import AddLayerVersionPermissionResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import AddLayerVersionPermissionResponseTypeDef
 ```
 
 Required fields:
@@ -191,10 +196,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddPermissionRequestTypeDef
+## AddPermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import AddPermissionRequestTypeDef
+from mypy_boto3_lambda.type_defs import AddPermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -212,10 +217,10 @@ Optional fields:
 - `Qualifier`: `str`
 - `RevisionId`: `str`
 
-## AddPermissionResponseResponseTypeDef
+## AddPermissionResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import AddPermissionResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import AddPermissionResponseTypeDef
 ```
 
 Required fields:
@@ -224,10 +229,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AliasConfigurationResponseTypeDef
+## AliasConfigurationResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import AliasConfigurationResponseTypeDef
+from mypy_boto3_lambda.type_defs import AliasConfigurationResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -241,6 +246,22 @@ Required fields:
 - `RevisionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AliasConfigurationTypeDef
+
+```python
+from mypy_boto3_lambda.type_defs import AliasConfigurationTypeDef
+```
+
+Optional fields:
+
+- `AliasArn`: `str`
+- `Name`: `str`
+- `FunctionVersion`: `str`
+- `Description`: `str`
+- `RoutingConfig`:
+  [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
+- `RevisionId`: `str`
 
 ## AliasRoutingConfigurationTypeDef
 
@@ -293,6 +314,18 @@ Optional fields:
 - `UntrustedArtifactOnDeployment`:
   [CodeSigningPolicyType](./literals.md#codesigningpolicytype)
 
+## ConcurrencyResponseMetadataTypeDef
+
+```python
+from mypy_boto3_lambda.type_defs import ConcurrencyResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `ReservedConcurrentExecutions`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ConcurrencyTypeDef
 
 ```python
@@ -303,10 +336,10 @@ Optional fields:
 
 - `ReservedConcurrentExecutions`: `int`
 
-## CreateAliasRequestTypeDef
+## CreateAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import CreateAliasRequestTypeDef
+from mypy_boto3_lambda.type_defs import CreateAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -321,10 +354,10 @@ Optional fields:
 - `RoutingConfig`:
   [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
 
-## CreateCodeSigningConfigRequestTypeDef
+## CreateCodeSigningConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import CreateCodeSigningConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import CreateCodeSigningConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -338,10 +371,10 @@ Optional fields:
 - `CodeSigningPolicies`:
   [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
 
-## CreateCodeSigningConfigResponseResponseTypeDef
+## CreateCodeSigningConfigResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import CreateCodeSigningConfigResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import CreateCodeSigningConfigResponseTypeDef
 ```
 
 Required fields:
@@ -351,10 +384,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateEventSourceMappingRequestTypeDef
+## CreateEventSourceMappingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import CreateEventSourceMappingRequestTypeDef
+from mypy_boto3_lambda.type_defs import CreateEventSourceMappingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -386,10 +419,10 @@ Optional fields:
 - `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
   [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
-## CreateFunctionRequestTypeDef
+## CreateFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import CreateFunctionRequestTypeDef
+from mypy_boto3_lambda.type_defs import CreateFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -430,10 +463,10 @@ Optional fields:
 
 - `TargetArn`: `str`
 
-## DeleteAliasRequestTypeDef
+## DeleteAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import DeleteAliasRequestTypeDef
+from mypy_boto3_lambda.type_defs import DeleteAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -441,64 +474,50 @@ Required fields:
 - `FunctionName`: `str`
 - `Name`: `str`
 
-## DeleteCodeSigningConfigRequestTypeDef
+## DeleteCodeSigningConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import DeleteCodeSigningConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import DeleteCodeSigningConfigRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CodeSigningConfigArn`: `str`
 
-## DeleteEventSourceMappingRequestTypeDef
+## DeleteEventSourceMappingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import DeleteEventSourceMappingRequestTypeDef
+from mypy_boto3_lambda.type_defs import DeleteEventSourceMappingRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `UUID`: `str`
 
-## DeleteFunctionCodeSigningConfigRequestTypeDef
+## DeleteFunctionCodeSigningConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import DeleteFunctionCodeSigningConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import DeleteFunctionCodeSigningConfigRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FunctionName`: `str`
 
-## DeleteFunctionConcurrencyRequestTypeDef
+## DeleteFunctionConcurrencyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import DeleteFunctionConcurrencyRequestTypeDef
+from mypy_boto3_lambda.type_defs import DeleteFunctionConcurrencyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FunctionName`: `str`
 
-## DeleteFunctionEventInvokeConfigRequestTypeDef
+## DeleteFunctionEventInvokeConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import DeleteFunctionEventInvokeConfigRequestTypeDef
-```
-
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Qualifier`: `str`
-
-## DeleteFunctionRequestTypeDef
-
-```python
-from mypy_boto3_lambda.type_defs import DeleteFunctionRequestTypeDef
+from mypy_boto3_lambda.type_defs import DeleteFunctionEventInvokeConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -509,10 +528,24 @@ Optional fields:
 
 - `Qualifier`: `str`
 
-## DeleteLayerVersionRequestTypeDef
+## DeleteFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import DeleteLayerVersionRequestTypeDef
+from mypy_boto3_lambda.type_defs import DeleteFunctionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `FunctionName`: `str`
+
+Optional fields:
+
+- `Qualifier`: `str`
+
+## DeleteLayerVersionRequestRequestTypeDef
+
+```python
+from mypy_boto3_lambda.type_defs import DeleteLayerVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -520,10 +553,10 @@ Required fields:
 - `LayerName`: `str`
 - `VersionNumber`: `int`
 
-## DeleteProvisionedConcurrencyConfigRequestTypeDef
+## DeleteProvisionedConcurrencyConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import DeleteProvisionedConcurrencyConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import DeleteProvisionedConcurrencyConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -574,10 +607,10 @@ Optional fields:
 
 - `Variables`: `Dict`\[`str`, `str`\]
 
-## EventSourceMappingConfigurationResponseTypeDef
+## EventSourceMappingConfigurationResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import EventSourceMappingConfigurationResponseTypeDef
+from mypy_boto3_lambda.type_defs import EventSourceMappingConfigurationResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -611,6 +644,42 @@ Required fields:
   [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## EventSourceMappingConfigurationTypeDef
+
+```python
+from mypy_boto3_lambda.type_defs import EventSourceMappingConfigurationTypeDef
+```
+
+Optional fields:
+
+- `UUID`: `str`
+- `StartingPosition`:
+  [EventSourcePositionType](./literals.md#eventsourcepositiontype)
+- `StartingPositionTimestamp`: `datetime`
+- `BatchSize`: `int`
+- `MaximumBatchingWindowInSeconds`: `int`
+- `ParallelizationFactor`: `int`
+- `EventSourceArn`: `str`
+- `FunctionArn`: `str`
+- `LastModified`: `datetime`
+- `LastProcessingResult`: `str`
+- `State`: `str`
+- `StateTransitionReason`: `str`
+- `DestinationConfig`:
+  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
+- `Topics`: `List`\[`str`\]
+- `Queues`: `List`\[`str`\]
+- `SourceAccessConfigurations`:
+  `List`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
+- `SelfManagedEventSource`:
+  [SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef)
+- `MaximumRecordAgeInSeconds`: `int`
+- `BisectBatchOnFunctionError`: `bool`
+- `MaximumRetryAttempts`: `int`
+- `TumblingWindowInSeconds`: `int`
+- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
+  [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
 ## FileSystemConfigTypeDef
 
@@ -650,10 +719,10 @@ Optional fields:
 - `S3ObjectVersion`: `str`
 - `ImageUri`: `str`
 
-## FunctionConfigurationResponseTypeDef
+## FunctionConfigurationResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import FunctionConfigurationResponseTypeDef
+from mypy_boto3_lambda.type_defs import FunctionConfigurationResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -700,10 +769,58 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## FunctionEventInvokeConfigResponseTypeDef
+## FunctionConfigurationTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import FunctionEventInvokeConfigResponseTypeDef
+from mypy_boto3_lambda.type_defs import FunctionConfigurationTypeDef
+```
+
+Optional fields:
+
+- `FunctionName`: `str`
+- `FunctionArn`: `str`
+- `Runtime`: [RuntimeType](./literals.md#runtimetype)
+- `Role`: `str`
+- `Handler`: `str`
+- `CodeSize`: `int`
+- `Description`: `str`
+- `Timeout`: `int`
+- `MemorySize`: `int`
+- `LastModified`: `str`
+- `CodeSha256`: `str`
+- `Version`: `str`
+- `VpcConfig`:
+  [VpcConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef)
+- `DeadLetterConfig`:
+  [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
+- `Environment`:
+  [EnvironmentResponseTypeDef](./type_defs.md#environmentresponsetypedef)
+- `KMSKeyArn`: `str`
+- `TracingConfig`:
+  [TracingConfigResponseTypeDef](./type_defs.md#tracingconfigresponsetypedef)
+- `MasterArn`: `str`
+- `RevisionId`: `str`
+- `Layers`: `List`\[[LayerTypeDef](./type_defs.md#layertypedef)\]
+- `State`: [StateType](./literals.md#statetype)
+- `StateReason`: `str`
+- `StateReasonCode`: [StateReasonCodeType](./literals.md#statereasoncodetype)
+- `LastUpdateStatus`:
+  [LastUpdateStatusType](./literals.md#lastupdatestatustype)
+- `LastUpdateStatusReason`: `str`
+- `LastUpdateStatusReasonCode`:
+  [LastUpdateStatusReasonCodeType](./literals.md#lastupdatestatusreasoncodetype)
+- `FileSystemConfigs`:
+  `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
+- `PackageType`: [PackageTypeType](./literals.md#packagetypetype)
+- `ImageConfigResponse`:
+  [ImageConfigResponseTypeDef](./type_defs.md#imageconfigresponsetypedef)
+- `SigningProfileVersionArn`: `str`
+- `SigningJobArn`: `str`
+
+## FunctionEventInvokeConfigResponseMetadataTypeDef
+
+```python
+from mypy_boto3_lambda.type_defs import FunctionEventInvokeConfigResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -717,10 +834,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAccountSettingsResponseResponseTypeDef
+## FunctionEventInvokeConfigTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetAccountSettingsResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import FunctionEventInvokeConfigTypeDef
+```
+
+Optional fields:
+
+- `LastModified`: `datetime`
+- `FunctionArn`: `str`
+- `MaximumRetryAttempts`: `int`
+- `MaximumEventAgeInSeconds`: `int`
+- `DestinationConfig`:
+  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
+
+## GetAccountSettingsResponseTypeDef
+
+```python
+from mypy_boto3_lambda.type_defs import GetAccountSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -730,10 +862,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAliasRequestTypeDef
+## GetAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetAliasRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -741,20 +873,20 @@ Required fields:
 - `FunctionName`: `str`
 - `Name`: `str`
 
-## GetCodeSigningConfigRequestTypeDef
+## GetCodeSigningConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetCodeSigningConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetCodeSigningConfigRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CodeSigningConfigArn`: `str`
 
-## GetCodeSigningConfigResponseResponseTypeDef
+## GetCodeSigningConfigResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetCodeSigningConfigResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import GetCodeSigningConfigResponseTypeDef
 ```
 
 Required fields:
@@ -764,30 +896,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEventSourceMappingRequestTypeDef
+## GetEventSourceMappingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetEventSourceMappingRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetEventSourceMappingRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `UUID`: `str`
 
-## GetFunctionCodeSigningConfigRequestTypeDef
+## GetFunctionCodeSigningConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetFunctionCodeSigningConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetFunctionCodeSigningConfigRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FunctionName`: `str`
 
-## GetFunctionCodeSigningConfigResponseResponseTypeDef
+## GetFunctionCodeSigningConfigResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetFunctionCodeSigningConfigResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import GetFunctionCodeSigningConfigResponseTypeDef
 ```
 
 Required fields:
@@ -797,20 +929,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFunctionConcurrencyRequestTypeDef
+## GetFunctionConcurrencyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetFunctionConcurrencyRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetFunctionConcurrencyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FunctionName`: `str`
 
-## GetFunctionConcurrencyResponseResponseTypeDef
+## GetFunctionConcurrencyResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetFunctionConcurrencyResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import GetFunctionConcurrencyResponseTypeDef
 ```
 
 Required fields:
@@ -819,10 +951,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFunctionConfigurationRequestTypeDef
+## GetFunctionConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetFunctionConfigurationRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetFunctionConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -833,10 +965,10 @@ Optional fields:
 
 - `Qualifier`: `str`
 
-## GetFunctionEventInvokeConfigRequestTypeDef
+## GetFunctionEventInvokeConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetFunctionEventInvokeConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetFunctionEventInvokeConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -847,10 +979,10 @@ Optional fields:
 
 - `Qualifier`: `str`
 
-## GetFunctionRequestTypeDef
+## GetFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetFunctionRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -861,16 +993,16 @@ Optional fields:
 
 - `Qualifier`: `str`
 
-## GetFunctionResponseResponseTypeDef
+## GetFunctionResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetFunctionResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import GetFunctionResponseTypeDef
 ```
 
 Required fields:
 
 - `Configuration`:
-  [FunctionConfigurationResponseTypeDef](./type_defs.md#functionconfigurationresponsetypedef)
+  [FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef)
 - `Code`:
   [FunctionCodeLocationTypeDef](./type_defs.md#functioncodelocationtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -878,20 +1010,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLayerVersionByArnRequestTypeDef
+## GetLayerVersionByArnRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetLayerVersionByArnRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetLayerVersionByArnRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Arn`: `str`
 
-## GetLayerVersionPolicyRequestTypeDef
+## GetLayerVersionPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetLayerVersionPolicyRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetLayerVersionPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -899,10 +1031,10 @@ Required fields:
 - `LayerName`: `str`
 - `VersionNumber`: `int`
 
-## GetLayerVersionPolicyResponseResponseTypeDef
+## GetLayerVersionPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetLayerVersionPolicyResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import GetLayerVersionPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -912,10 +1044,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLayerVersionRequestTypeDef
+## GetLayerVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetLayerVersionRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetLayerVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -923,10 +1055,10 @@ Required fields:
 - `LayerName`: `str`
 - `VersionNumber`: `int`
 
-## GetLayerVersionResponseResponseTypeDef
+## GetLayerVersionResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetLayerVersionResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import GetLayerVersionResponseTypeDef
 ```
 
 Required fields:
@@ -943,10 +1075,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPolicyRequestTypeDef
+## GetPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetPolicyRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -957,10 +1089,10 @@ Optional fields:
 
 - `Qualifier`: `str`
 
-## GetPolicyResponseResponseTypeDef
+## GetPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetPolicyResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import GetPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -970,10 +1102,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetProvisionedConcurrencyConfigRequestTypeDef
+## GetProvisionedConcurrencyConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetProvisionedConcurrencyConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import GetProvisionedConcurrencyConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -981,10 +1113,10 @@ Required fields:
 - `FunctionName`: `str`
 - `Qualifier`: `str`
 
-## GetProvisionedConcurrencyConfigResponseResponseTypeDef
+## GetProvisionedConcurrencyConfigResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import GetProvisionedConcurrencyConfigResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import GetProvisionedConcurrencyConfigResponseTypeDef
 ```
 
 Required fields:
@@ -1033,10 +1165,10 @@ Optional fields:
 - `Command`: `List`\[`str`\]
 - `WorkingDirectory`: `str`
 
-## InvocationRequestTypeDef
+## InvocationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import InvocationRequestTypeDef
+from mypy_boto3_lambda.type_defs import InvocationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1065,10 +1197,10 @@ Optional fields:
 - `Payload`: `IO`\[`bytes`\]
 - `ExecutedVersion`: `str`
 
-## InvokeAsyncRequestTypeDef
+## InvokeAsyncRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import InvokeAsyncRequestTypeDef
+from mypy_boto3_lambda.type_defs import InvokeAsyncRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1076,10 +1208,10 @@ Required fields:
 - `FunctionName`: `str`
 - `InvokeArgs`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
-## InvokeAsyncResponseResponseTypeDef
+## InvokeAsyncResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import InvokeAsyncResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import InvokeAsyncResponseTypeDef
 ```
 
 Required fields:
@@ -1156,10 +1288,10 @@ Optional fields:
 - `LatestMatchingVersion`:
   [LayerVersionsListItemTypeDef](./type_defs.md#layerversionslistitemtypedef)
 
-## ListAliasesRequestTypeDef
+## ListAliasesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListAliasesRequestTypeDef
+from mypy_boto3_lambda.type_defs import ListAliasesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1172,24 +1304,24 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListAliasesResponseResponseTypeDef
+## ListAliasesResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListAliasesResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import ListAliasesResponseTypeDef
 ```
 
 Required fields:
 
 - `NextMarker`: `str`
 - `Aliases`:
-  `List`\[[AliasConfigurationResponseTypeDef](./type_defs.md#aliasconfigurationresponsetypedef)\]
+  `List`\[[AliasConfigurationTypeDef](./type_defs.md#aliasconfigurationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCodeSigningConfigsRequestTypeDef
+## ListCodeSigningConfigsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListCodeSigningConfigsRequestTypeDef
+from mypy_boto3_lambda.type_defs import ListCodeSigningConfigsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1197,10 +1329,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListCodeSigningConfigsResponseResponseTypeDef
+## ListCodeSigningConfigsResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListCodeSigningConfigsResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import ListCodeSigningConfigsResponseTypeDef
 ```
 
 Required fields:
@@ -1211,10 +1343,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEventSourceMappingsRequestTypeDef
+## ListEventSourceMappingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListEventSourceMappingsRequestTypeDef
+from mypy_boto3_lambda.type_defs import ListEventSourceMappingsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1224,24 +1356,24 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListEventSourceMappingsResponseResponseTypeDef
+## ListEventSourceMappingsResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListEventSourceMappingsResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import ListEventSourceMappingsResponseTypeDef
 ```
 
 Required fields:
 
 - `NextMarker`: `str`
 - `EventSourceMappings`:
-  `List`\[[EventSourceMappingConfigurationResponseTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsetypedef)\]
+  `List`\[[EventSourceMappingConfigurationTypeDef](./type_defs.md#eventsourcemappingconfigurationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFunctionEventInvokeConfigsRequestTypeDef
+## ListFunctionEventInvokeConfigsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListFunctionEventInvokeConfigsRequestTypeDef
+from mypy_boto3_lambda.type_defs import ListFunctionEventInvokeConfigsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1253,24 +1385,24 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListFunctionEventInvokeConfigsResponseResponseTypeDef
+## ListFunctionEventInvokeConfigsResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListFunctionEventInvokeConfigsResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import ListFunctionEventInvokeConfigsResponseTypeDef
 ```
 
 Required fields:
 
 - `FunctionEventInvokeConfigs`:
-  `List`\[[FunctionEventInvokeConfigResponseTypeDef](./type_defs.md#functioneventinvokeconfigresponsetypedef)\]
+  `List`\[[FunctionEventInvokeConfigTypeDef](./type_defs.md#functioneventinvokeconfigtypedef)\]
 - `NextMarker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFunctionsByCodeSigningConfigRequestTypeDef
+## ListFunctionsByCodeSigningConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListFunctionsByCodeSigningConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import ListFunctionsByCodeSigningConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1282,10 +1414,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListFunctionsByCodeSigningConfigResponseResponseTypeDef
+## ListFunctionsByCodeSigningConfigResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListFunctionsByCodeSigningConfigResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import ListFunctionsByCodeSigningConfigResponseTypeDef
 ```
 
 Required fields:
@@ -1295,10 +1427,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFunctionsRequestTypeDef
+## ListFunctionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListFunctionsRequestTypeDef
+from mypy_boto3_lambda.type_defs import ListFunctionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1309,24 +1441,24 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListFunctionsResponseResponseTypeDef
+## ListFunctionsResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListFunctionsResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import ListFunctionsResponseTypeDef
 ```
 
 Required fields:
 
 - `NextMarker`: `str`
 - `Functions`:
-  `List`\[[FunctionConfigurationResponseTypeDef](./type_defs.md#functionconfigurationresponsetypedef)\]
+  `List`\[[FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLayerVersionsRequestTypeDef
+## ListLayerVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListLayerVersionsRequestTypeDef
+from mypy_boto3_lambda.type_defs import ListLayerVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1339,10 +1471,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListLayerVersionsResponseResponseTypeDef
+## ListLayerVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListLayerVersionsResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import ListLayerVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -1353,10 +1485,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLayersRequestTypeDef
+## ListLayersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListLayersRequestTypeDef
+from mypy_boto3_lambda.type_defs import ListLayersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1365,10 +1497,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListLayersResponseResponseTypeDef
+## ListLayersResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListLayersResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import ListLayersResponseTypeDef
 ```
 
 Required fields:
@@ -1379,10 +1511,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProvisionedConcurrencyConfigsRequestTypeDef
+## ListProvisionedConcurrencyConfigsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListProvisionedConcurrencyConfigsRequestTypeDef
+from mypy_boto3_lambda.type_defs import ListProvisionedConcurrencyConfigsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1394,10 +1526,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListProvisionedConcurrencyConfigsResponseResponseTypeDef
+## ListProvisionedConcurrencyConfigsResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListProvisionedConcurrencyConfigsResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import ListProvisionedConcurrencyConfigsResponseTypeDef
 ```
 
 Required fields:
@@ -1408,20 +1540,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsRequestTypeDef
+## ListTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListTagsRequestTypeDef
+from mypy_boto3_lambda.type_defs import ListTagsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Resource`: `str`
 
-## ListTagsResponseResponseTypeDef
+## ListTagsResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListTagsResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import ListTagsResponseTypeDef
 ```
 
 Required fields:
@@ -1430,10 +1562,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVersionsByFunctionRequestTypeDef
+## ListVersionsByFunctionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListVersionsByFunctionRequestTypeDef
+from mypy_boto3_lambda.type_defs import ListVersionsByFunctionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1445,17 +1577,17 @@ Optional fields:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-## ListVersionsByFunctionResponseResponseTypeDef
+## ListVersionsByFunctionResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import ListVersionsByFunctionResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import ListVersionsByFunctionResponseTypeDef
 ```
 
 Required fields:
 
 - `NextMarker`: `str`
 - `Versions`:
-  `List`\[[FunctionConfigurationResponseTypeDef](./type_defs.md#functionconfigurationresponsetypedef)\]
+  `List`\[[FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1508,10 +1640,10 @@ Optional fields:
 - `StatusReason`: `str`
 - `LastModified`: `str`
 
-## PublishLayerVersionRequestTypeDef
+## PublishLayerVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import PublishLayerVersionRequestTypeDef
+from mypy_boto3_lambda.type_defs import PublishLayerVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1526,10 +1658,10 @@ Optional fields:
 - `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
 
-## PublishLayerVersionResponseResponseTypeDef
+## PublishLayerVersionResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import PublishLayerVersionResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import PublishLayerVersionResponseTypeDef
 ```
 
 Required fields:
@@ -1546,10 +1678,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PublishVersionRequestTypeDef
+## PublishVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import PublishVersionRequestTypeDef
+from mypy_boto3_lambda.type_defs import PublishVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1562,10 +1694,10 @@ Optional fields:
 - `Description`: `str`
 - `RevisionId`: `str`
 
-## PutFunctionCodeSigningConfigRequestTypeDef
+## PutFunctionCodeSigningConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import PutFunctionCodeSigningConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import PutFunctionCodeSigningConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1573,10 +1705,10 @@ Required fields:
 - `CodeSigningConfigArn`: `str`
 - `FunctionName`: `str`
 
-## PutFunctionCodeSigningConfigResponseResponseTypeDef
+## PutFunctionCodeSigningConfigResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import PutFunctionCodeSigningConfigResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import PutFunctionCodeSigningConfigResponseTypeDef
 ```
 
 Required fields:
@@ -1586,10 +1718,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutFunctionConcurrencyRequestTypeDef
+## PutFunctionConcurrencyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import PutFunctionConcurrencyRequestTypeDef
+from mypy_boto3_lambda.type_defs import PutFunctionConcurrencyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1597,10 +1729,10 @@ Required fields:
 - `FunctionName`: `str`
 - `ReservedConcurrentExecutions`: `int`
 
-## PutFunctionEventInvokeConfigRequestTypeDef
+## PutFunctionEventInvokeConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import PutFunctionEventInvokeConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import PutFunctionEventInvokeConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1615,10 +1747,10 @@ Optional fields:
 - `DestinationConfig`:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 
-## PutProvisionedConcurrencyConfigRequestTypeDef
+## PutProvisionedConcurrencyConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import PutProvisionedConcurrencyConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import PutProvisionedConcurrencyConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1627,10 +1759,10 @@ Required fields:
 - `Qualifier`: `str`
 - `ProvisionedConcurrentExecutions`: `int`
 
-## PutProvisionedConcurrencyConfigResponseResponseTypeDef
+## PutProvisionedConcurrencyConfigResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import PutProvisionedConcurrencyConfigResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import PutProvisionedConcurrencyConfigResponseTypeDef
 ```
 
 Required fields:
@@ -1645,10 +1777,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RemoveLayerVersionPermissionRequestTypeDef
+## RemoveLayerVersionPermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import RemoveLayerVersionPermissionRequestTypeDef
+from mypy_boto3_lambda.type_defs import RemoveLayerVersionPermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1661,10 +1793,10 @@ Optional fields:
 
 - `RevisionId`: `str`
 
-## RemovePermissionRequestTypeDef
+## RemovePermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import RemovePermissionRequestTypeDef
+from mypy_boto3_lambda.type_defs import RemovePermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1713,10 +1845,10 @@ Optional fields:
 - `Type`: [SourceAccessTypeType](./literals.md#sourceaccesstypetype)
 - `URI`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_lambda.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1744,10 +1876,10 @@ Optional fields:
 
 - `Mode`: [TracingModeType](./literals.md#tracingmodetype)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_lambda.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1755,10 +1887,10 @@ Required fields:
 - `Resource`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateAliasRequestTypeDef
+## UpdateAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import UpdateAliasRequestTypeDef
+from mypy_boto3_lambda.type_defs import UpdateAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1774,10 +1906,10 @@ Optional fields:
   [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
 - `RevisionId`: `str`
 
-## UpdateCodeSigningConfigRequestTypeDef
+## UpdateCodeSigningConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import UpdateCodeSigningConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import UpdateCodeSigningConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1792,10 +1924,10 @@ Optional fields:
 - `CodeSigningPolicies`:
   [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
 
-## UpdateCodeSigningConfigResponseResponseTypeDef
+## UpdateCodeSigningConfigResponseTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import UpdateCodeSigningConfigResponseResponseTypeDef
+from mypy_boto3_lambda.type_defs import UpdateCodeSigningConfigResponseTypeDef
 ```
 
 Required fields:
@@ -1805,10 +1937,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateEventSourceMappingRequestTypeDef
+## UpdateEventSourceMappingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import UpdateEventSourceMappingRequestTypeDef
+from mypy_boto3_lambda.type_defs import UpdateEventSourceMappingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1833,10 +1965,10 @@ Optional fields:
 - `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
   [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
-## UpdateFunctionCodeRequestTypeDef
+## UpdateFunctionCodeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import UpdateFunctionCodeRequestTypeDef
+from mypy_boto3_lambda.type_defs import UpdateFunctionCodeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1854,10 +1986,10 @@ Optional fields:
 - `DryRun`: `bool`
 - `RevisionId`: `str`
 
-## UpdateFunctionConfigurationRequestTypeDef
+## UpdateFunctionConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import UpdateFunctionConfigurationRequestTypeDef
+from mypy_boto3_lambda.type_defs import UpdateFunctionConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1884,10 +2016,10 @@ Optional fields:
   `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 
-## UpdateFunctionEventInvokeConfigRequestTypeDef
+## UpdateFunctionEventInvokeConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lambda.type_defs import UpdateFunctionEventInvokeConfigRequestTypeDef
+from mypy_boto3_lambda.type_defs import UpdateFunctionEventInvokeConfigRequestRequestTypeDef
 ```
 
 Required fields:

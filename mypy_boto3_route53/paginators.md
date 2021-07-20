@@ -37,7 +37,7 @@ Arguments for `ListHealthChecksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHealthChecksPaginator.paginate` returns
-`Iterator`\[[ListHealthChecksResponseResponseTypeDef](./type_defs.md#listhealthchecksresponseresponsetypedef)\].
+`Iterator`\[[ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef)\].
 
 ## ListHostedZonesPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListHostedZonesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHostedZonesPaginator.paginate` returns
-`Iterator`\[[ListHostedZonesResponseResponseTypeDef](./type_defs.md#listhostedzonesresponseresponsetypedef)\].
+`Iterator`\[[ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef)\].
 
 ## ListQueryLoggingConfigsPaginator
 
@@ -89,7 +89,7 @@ Arguments for `ListQueryLoggingConfigsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQueryLoggingConfigsPaginator.paginate` returns
-`Iterator`\[[ListQueryLoggingConfigsResponseResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponseresponsetypedef)\].
+`Iterator`\[[ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef)\].
 
 ## ListResourceRecordSetsPaginator
 
@@ -115,7 +115,7 @@ Arguments for `ListResourceRecordSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceRecordSetsPaginator.paginate` returns
-`Iterator`\[[ListResourceRecordSetsResponseResponseTypeDef](./type_defs.md#listresourcerecordsetsresponseresponsetypedef)\].
+`Iterator`\[[ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef)\].
 
 ## ListVPCAssociationAuthorizationsPaginator
 
@@ -142,4 +142,4 @@ Arguments for `ListVPCAssociationAuthorizationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVPCAssociationAuthorizationsPaginator.paginate` returns
-`Iterator`\[[ListVPCAssociationAuthorizationsResponseResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponseresponsetypedef)\].
+`Iterator`\[[ListVPCAssociationAuthorizationsResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponsetypedef)\].

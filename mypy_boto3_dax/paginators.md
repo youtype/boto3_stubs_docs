@@ -39,7 +39,7 @@ Arguments for `DescribeClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeClustersPaginator.paginate` returns
-`Iterator`\[[DescribeClustersResponseResponseTypeDef](./type_defs.md#describeclustersresponseresponsetypedef)\].
+`Iterator`\[[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef)\].
 
 ## DescribeDefaultParametersPaginator
 
@@ -64,7 +64,7 @@ Arguments for `DescribeDefaultParametersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDefaultParametersPaginator.paginate` returns
-`Iterator`\[[DescribeDefaultParametersResponseResponseTypeDef](./type_defs.md#describedefaultparametersresponseresponsetypedef)\].
+`Iterator`\[[DescribeDefaultParametersResponseTypeDef](./type_defs.md#describedefaultparametersresponsetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -93,7 +93,7 @@ Arguments for `DescribeEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[DescribeEventsResponseResponseTypeDef](./type_defs.md#describeeventsresponseresponsetypedef)\].
+`Iterator`\[[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)\].
 
 ## DescribeParameterGroupsPaginator
 
@@ -119,7 +119,7 @@ Arguments for `DescribeParameterGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeParameterGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeParameterGroupsResponseResponseTypeDef](./type_defs.md#describeparametergroupsresponseresponsetypedef)\].
+`Iterator`\[[DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef)\].
 
 ## DescribeParametersPaginator
 
@@ -146,7 +146,7 @@ Arguments for `DescribeParametersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeParametersPaginator.paginate` returns
-`Iterator`\[[DescribeParametersResponseResponseTypeDef](./type_defs.md#describeparametersresponseresponsetypedef)\].
+`Iterator`\[[DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef)\].
 
 ## DescribeSubnetGroupsPaginator
 
@@ -172,7 +172,7 @@ Arguments for `DescribeSubnetGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSubnetGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeSubnetGroupsResponseResponseTypeDef](./type_defs.md#describesubnetgroupsresponseresponsetypedef)\].
+`Iterator`\[[DescribeSubnetGroupsResponseTypeDef](./type_defs.md#describesubnetgroupsresponsetypedef)\].
 
 ## ListTagsPaginator
 
@@ -197,4 +197,4 @@ Arguments for `ListTagsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsPaginator.paginate` returns
-`Iterator`\[[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef)\].
+`Iterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].

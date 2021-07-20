@@ -33,4 +33,4 @@ Arguments for `ListIdentityPoolsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIdentityPoolsPaginator.paginate` returns
-`Iterator`\[[ListIdentityPoolsResponseResponseTypeDef](./type_defs.md#listidentitypoolsresponseresponsetypedef)\].
+`Iterator`\[[ListIdentityPoolsResponseTypeDef](./type_defs.md#listidentitypoolsresponsetypedef)\].

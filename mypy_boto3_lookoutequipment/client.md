@@ -11,6 +11,7 @@ type annotations stubs module
   - [LookoutEquipmentClient](#lookoutequipmentclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_dataset](#create_dataset)
     - [create_inference_scheduler](#create_inference_scheduler)
@@ -77,6 +78,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+LookoutEquipmentClient exceptions.
+
+Type annotations for `boto3.client("lookoutequipment").exceptions` method.
+
+Boto3 documentation:
+[LookoutEquipment.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -102,7 +114,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_dataset)
 
 Arguments mapping described in
-[CreateDatasetRequestTypeDef](./type_defs.md#createdatasetrequesttypedef).
+[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -114,7 +126,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDatasetResponseResponseTypeDef](./type_defs.md#createdatasetresponseresponsetypedef).
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_inference_scheduler
 
@@ -127,7 +139,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.create_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_inference_scheduler)
 
 Arguments mapping described in
-[CreateInferenceSchedulerRequestTypeDef](./type_defs.md#createinferenceschedulerrequesttypedef).
+[CreateInferenceSchedulerRequestRequestTypeDef](./type_defs.md#createinferenceschedulerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -148,7 +160,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateInferenceSchedulerResponseResponseTypeDef](./type_defs.md#createinferenceschedulerresponseresponsetypedef).
+[CreateInferenceSchedulerResponseTypeDef](./type_defs.md#createinferenceschedulerresponsetypedef).
 
 ### create_model
 
@@ -160,7 +172,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_model)
 
 Arguments mapping described in
-[CreateModelRequestTypeDef](./type_defs.md#createmodelrequesttypedef).
+[CreateModelRequestRequestTypeDef](./type_defs.md#createmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -181,7 +193,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelResponseResponseTypeDef](./type_defs.md#createmodelresponseresponsetypedef).
+[CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
 
 ### delete_dataset
 
@@ -193,7 +205,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_dataset)
 
 Arguments mapping described in
-[DeleteDatasetRequestTypeDef](./type_defs.md#deletedatasetrequesttypedef).
+[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -210,7 +222,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.delete_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_inference_scheduler)
 
 Arguments mapping described in
-[DeleteInferenceSchedulerRequestTypeDef](./type_defs.md#deleteinferenceschedulerrequesttypedef).
+[DeleteInferenceSchedulerRequestRequestTypeDef](./type_defs.md#deleteinferenceschedulerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -226,7 +238,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_model)
 
 Arguments mapping described in
-[DeleteModelRequestTypeDef](./type_defs.md#deletemodelrequesttypedef).
+[DeleteModelRequestRequestTypeDef](./type_defs.md#deletemodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -244,14 +256,14 @@ Boto3 documentation:
 [LookoutEquipment.Client.describe_data_ingestion_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_data_ingestion_job)
 
 Arguments mapping described in
-[DescribeDataIngestionJobRequestTypeDef](./type_defs.md#describedataingestionjobrequesttypedef).
+[DescribeDataIngestionJobRequestRequestTypeDef](./type_defs.md#describedataingestionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeDataIngestionJobResponseResponseTypeDef](./type_defs.md#describedataingestionjobresponseresponsetypedef).
+[DescribeDataIngestionJobResponseTypeDef](./type_defs.md#describedataingestionjobresponsetypedef).
 
 ### describe_dataset
 
@@ -265,14 +277,14 @@ Boto3 documentation:
 [LookoutEquipment.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_dataset)
 
 Arguments mapping described in
-[DescribeDatasetRequestTypeDef](./type_defs.md#describedatasetrequesttypedef).
+[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DatasetName`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseResponseTypeDef](./type_defs.md#describedatasetresponseresponsetypedef).
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
 ### describe_inference_scheduler
 
@@ -288,14 +300,14 @@ Boto3 documentation:
 [LookoutEquipment.Client.describe_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_inference_scheduler)
 
 Arguments mapping described in
-[DescribeInferenceSchedulerRequestTypeDef](./type_defs.md#describeinferenceschedulerrequesttypedef).
+[DescribeInferenceSchedulerRequestRequestTypeDef](./type_defs.md#describeinferenceschedulerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InferenceSchedulerName`: `str` *(required)*
 
 Returns
-[DescribeInferenceSchedulerResponseResponseTypeDef](./type_defs.md#describeinferenceschedulerresponseresponsetypedef).
+[DescribeInferenceSchedulerResponseTypeDef](./type_defs.md#describeinferenceschedulerresponsetypedef).
 
 ### describe_model
 
@@ -308,14 +320,14 @@ Boto3 documentation:
 [LookoutEquipment.Client.describe_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_model)
 
 Arguments mapping described in
-[DescribeModelRequestTypeDef](./type_defs.md#describemodelrequesttypedef).
+[DescribeModelRequestRequestTypeDef](./type_defs.md#describemodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
 
 Returns
-[DescribeModelResponseResponseTypeDef](./type_defs.md#describemodelresponseresponsetypedef).
+[DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef).
 
 ### generate_presigned_url
 
@@ -348,7 +360,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.list_data_ingestion_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_data_ingestion_jobs)
 
 Arguments mapping described in
-[ListDataIngestionJobsRequestTypeDef](./type_defs.md#listdataingestionjobsrequesttypedef).
+[ListDataIngestionJobsRequestRequestTypeDef](./type_defs.md#listdataingestionjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -358,7 +370,7 @@ Keyword-only arguments:
 - `Status`: [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
 
 Returns
-[ListDataIngestionJobsResponseResponseTypeDef](./type_defs.md#listdataingestionjobsresponseresponsetypedef).
+[ListDataIngestionJobsResponseTypeDef](./type_defs.md#listdataingestionjobsresponsetypedef).
 
 ### list_datasets
 
@@ -371,7 +383,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_datasets)
 
 Arguments mapping described in
-[ListDatasetsRequestTypeDef](./type_defs.md#listdatasetsrequesttypedef).
+[ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -380,7 +392,7 @@ Keyword-only arguments:
 - `DatasetNameBeginsWith`: `str`
 
 Returns
-[ListDatasetsResponseResponseTypeDef](./type_defs.md#listdatasetsresponseresponsetypedef).
+[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
 ### list_inference_executions
 
@@ -394,7 +406,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.list_inference_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_executions)
 
 Arguments mapping described in
-[ListInferenceExecutionsRequestTypeDef](./type_defs.md#listinferenceexecutionsrequesttypedef).
+[ListInferenceExecutionsRequestRequestTypeDef](./type_defs.md#listinferenceexecutionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -407,7 +419,7 @@ Keyword-only arguments:
   [InferenceExecutionStatusType](./literals.md#inferenceexecutionstatustype)
 
 Returns
-[ListInferenceExecutionsResponseResponseTypeDef](./type_defs.md#listinferenceexecutionsresponseresponsetypedef).
+[ListInferenceExecutionsResponseTypeDef](./type_defs.md#listinferenceexecutionsresponsetypedef).
 
 ### list_inference_schedulers
 
@@ -421,7 +433,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.list_inference_schedulers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_schedulers)
 
 Arguments mapping described in
-[ListInferenceSchedulersRequestTypeDef](./type_defs.md#listinferenceschedulersrequesttypedef).
+[ListInferenceSchedulersRequestRequestTypeDef](./type_defs.md#listinferenceschedulersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -431,7 +443,7 @@ Keyword-only arguments:
 - `ModelName`: `str`
 
 Returns
-[ListInferenceSchedulersResponseResponseTypeDef](./type_defs.md#listinferenceschedulersresponseresponsetypedef).
+[ListInferenceSchedulersResponseTypeDef](./type_defs.md#listinferenceschedulersresponsetypedef).
 
 ### list_models
 
@@ -444,7 +456,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_models)
 
 Arguments mapping described in
-[ListModelsRequestTypeDef](./type_defs.md#listmodelsrequesttypedef).
+[ListModelsRequestRequestTypeDef](./type_defs.md#listmodelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -454,8 +466,7 @@ Keyword-only arguments:
 - `ModelNameBeginsWith`: `str`
 - `DatasetNameBeginsWith`: `str`
 
-Returns
-[ListModelsResponseResponseTypeDef](./type_defs.md#listmodelsresponseresponsetypedef).
+Returns [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -468,14 +479,14 @@ Boto3 documentation:
 [LookoutEquipment.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_data_ingestion_job
 
@@ -488,7 +499,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.start_data_ingestion_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_data_ingestion_job)
 
 Arguments mapping described in
-[StartDataIngestionJobRequestTypeDef](./type_defs.md#startdataingestionjobrequesttypedef).
+[StartDataIngestionJobRequestRequestTypeDef](./type_defs.md#startdataingestionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -500,7 +511,7 @@ Keyword-only arguments:
 - `ClientToken`: `str` *(required)*
 
 Returns
-[StartDataIngestionJobResponseResponseTypeDef](./type_defs.md#startdataingestionjobresponseresponsetypedef).
+[StartDataIngestionJobResponseTypeDef](./type_defs.md#startdataingestionjobresponsetypedef).
 
 ### start_inference_scheduler
 
@@ -513,14 +524,14 @@ Boto3 documentation:
 [LookoutEquipment.Client.start_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_inference_scheduler)
 
 Arguments mapping described in
-[StartInferenceSchedulerRequestTypeDef](./type_defs.md#startinferenceschedulerrequesttypedef).
+[StartInferenceSchedulerRequestRequestTypeDef](./type_defs.md#startinferenceschedulerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InferenceSchedulerName`: `str` *(required)*
 
 Returns
-[StartInferenceSchedulerResponseResponseTypeDef](./type_defs.md#startinferenceschedulerresponseresponsetypedef).
+[StartInferenceSchedulerResponseTypeDef](./type_defs.md#startinferenceschedulerresponsetypedef).
 
 ### stop_inference_scheduler
 
@@ -533,14 +544,14 @@ Boto3 documentation:
 [LookoutEquipment.Client.stop_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.stop_inference_scheduler)
 
 Arguments mapping described in
-[StopInferenceSchedulerRequestTypeDef](./type_defs.md#stopinferenceschedulerrequesttypedef).
+[StopInferenceSchedulerRequestRequestTypeDef](./type_defs.md#stopinferenceschedulerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InferenceSchedulerName`: `str` *(required)*
 
 Returns
-[StopInferenceSchedulerResponseResponseTypeDef](./type_defs.md#stopinferenceschedulerresponseresponsetypedef).
+[StopInferenceSchedulerResponseTypeDef](./type_defs.md#stopinferenceschedulerresponsetypedef).
 
 ### tag_resource
 
@@ -552,7 +563,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -571,7 +582,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -591,7 +602,7 @@ Boto3 documentation:
 [LookoutEquipment.Client.update_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.update_inference_scheduler)
 
 Arguments mapping described in
-[UpdateInferenceSchedulerRequestTypeDef](./type_defs.md#updateinferenceschedulerrequesttypedef).
+[UpdateInferenceSchedulerRequestRequestTypeDef](./type_defs.md#updateinferenceschedulerrequestrequesttypedef).
 
 Keyword-only arguments:
 

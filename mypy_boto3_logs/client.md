@@ -11,6 +11,7 @@ type annotations stubs module
   - [CloudWatchLogsClient](#cloudwatchlogsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_kms_key](#associate_kms_key)
     - [can_paginate](#can_paginate)
     - [cancel_export_task](#cancel_export_task)
@@ -102,6 +103,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CloudWatchLogsClient exceptions.
+
+Type annotations for `boto3.client("logs").exceptions` method.
+
+Boto3 documentation:
+[CloudWatchLogs.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_kms_key
 
 Associates the specified AWS Key Management Service (AWS KMS) customer master
@@ -113,7 +125,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.associate_kms_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.associate_kms_key)
 
 Arguments mapping described in
-[AssociateKmsKeyRequestTypeDef](./type_defs.md#associatekmskeyrequesttypedef).
+[AssociateKmsKeyRequestRequestTypeDef](./type_defs.md#associatekmskeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -145,7 +157,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.cancel_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.cancel_export_task)
 
 Arguments mapping described in
-[CancelExportTaskRequestTypeDef](./type_defs.md#cancelexporttaskrequesttypedef).
+[CancelExportTaskRequestRequestTypeDef](./type_defs.md#cancelexporttaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -162,7 +174,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.create_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_export_task)
 
 Arguments mapping described in
-[CreateExportTaskRequestTypeDef](./type_defs.md#createexporttaskrequesttypedef).
+[CreateExportTaskRequestRequestTypeDef](./type_defs.md#createexporttaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -175,7 +187,7 @@ Keyword-only arguments:
 - `destinationPrefix`: `str`
 
 Returns
-[CreateExportTaskResponseResponseTypeDef](./type_defs.md#createexporttaskresponseresponsetypedef).
+[CreateExportTaskResponseTypeDef](./type_defs.md#createexporttaskresponsetypedef).
 
 ### create_log_group
 
@@ -187,7 +199,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.create_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_group)
 
 Arguments mapping described in
-[CreateLogGroupRequestTypeDef](./type_defs.md#createloggrouprequesttypedef).
+[CreateLogGroupRequestRequestTypeDef](./type_defs.md#createloggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -205,7 +217,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.create_log_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_stream)
 
 Arguments mapping described in
-[CreateLogStreamRequestTypeDef](./type_defs.md#createlogstreamrequesttypedef).
+[CreateLogStreamRequestRequestTypeDef](./type_defs.md#createlogstreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,7 +235,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.delete_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_destination)
 
 Arguments mapping described in
-[DeleteDestinationRequestTypeDef](./type_defs.md#deletedestinationrequesttypedef).
+[DeleteDestinationRequestRequestTypeDef](./type_defs.md#deletedestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -240,7 +252,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.delete_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_group)
 
 Arguments mapping described in
-[DeleteLogGroupRequestTypeDef](./type_defs.md#deleteloggrouprequesttypedef).
+[DeleteLogGroupRequestRequestTypeDef](./type_defs.md#deleteloggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -257,7 +269,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.delete_log_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_stream)
 
 Arguments mapping described in
-[DeleteLogStreamRequestTypeDef](./type_defs.md#deletelogstreamrequesttypedef).
+[DeleteLogStreamRequestRequestTypeDef](./type_defs.md#deletelogstreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -274,7 +286,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.delete_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_metric_filter)
 
 Arguments mapping described in
-[DeleteMetricFilterRequestTypeDef](./type_defs.md#deletemetricfilterrequesttypedef).
+[DeleteMetricFilterRequestRequestTypeDef](./type_defs.md#deletemetricfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -291,14 +303,14 @@ Boto3 documentation:
 [CloudWatchLogs.Client.delete_query_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_query_definition)
 
 Arguments mapping described in
-[DeleteQueryDefinitionRequestTypeDef](./type_defs.md#deletequerydefinitionrequesttypedef).
+[DeleteQueryDefinitionRequestRequestTypeDef](./type_defs.md#deletequerydefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `queryDefinitionId`: `str` *(required)*
 
 Returns
-[DeleteQueryDefinitionResponseResponseTypeDef](./type_defs.md#deletequerydefinitionresponseresponsetypedef).
+[DeleteQueryDefinitionResponseTypeDef](./type_defs.md#deletequerydefinitionresponsetypedef).
 
 ### delete_resource_policy
 
@@ -310,7 +322,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_resource_policy)
 
 Arguments mapping described in
-[DeleteResourcePolicyRequestTypeDef](./type_defs.md#deleteresourcepolicyrequesttypedef).
+[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -326,7 +338,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.delete_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_retention_policy)
 
 Arguments mapping described in
-[DeleteRetentionPolicyRequestTypeDef](./type_defs.md#deleteretentionpolicyrequesttypedef).
+[DeleteRetentionPolicyRequestRequestTypeDef](./type_defs.md#deleteretentionpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -342,7 +354,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.delete_subscription_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_subscription_filter)
 
 Arguments mapping described in
-[DeleteSubscriptionFilterRequestTypeDef](./type_defs.md#deletesubscriptionfilterrequesttypedef).
+[DeleteSubscriptionFilterRequestRequestTypeDef](./type_defs.md#deletesubscriptionfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -359,7 +371,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.describe_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_destinations)
 
 Arguments mapping described in
-[DescribeDestinationsRequestTypeDef](./type_defs.md#describedestinationsrequesttypedef).
+[DescribeDestinationsRequestRequestTypeDef](./type_defs.md#describedestinationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -368,7 +380,7 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns
-[DescribeDestinationsResponseResponseTypeDef](./type_defs.md#describedestinationsresponseresponsetypedef).
+[DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef).
 
 ### describe_export_tasks
 
@@ -380,7 +392,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_export_tasks)
 
 Arguments mapping described in
-[DescribeExportTasksRequestTypeDef](./type_defs.md#describeexporttasksrequesttypedef).
+[DescribeExportTasksRequestRequestTypeDef](./type_defs.md#describeexporttasksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -391,7 +403,7 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns
-[DescribeExportTasksResponseResponseTypeDef](./type_defs.md#describeexporttasksresponseresponsetypedef).
+[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef).
 
 ### describe_log_groups
 
@@ -403,7 +415,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.describe_log_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_groups)
 
 Arguments mapping described in
-[DescribeLogGroupsRequestTypeDef](./type_defs.md#describeloggroupsrequesttypedef).
+[DescribeLogGroupsRequestRequestTypeDef](./type_defs.md#describeloggroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -412,7 +424,7 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns
-[DescribeLogGroupsResponseResponseTypeDef](./type_defs.md#describeloggroupsresponseresponsetypedef).
+[DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef).
 
 ### describe_log_streams
 
@@ -424,7 +436,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.describe_log_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_streams)
 
 Arguments mapping described in
-[DescribeLogStreamsRequestTypeDef](./type_defs.md#describelogstreamsrequesttypedef).
+[DescribeLogStreamsRequestRequestTypeDef](./type_defs.md#describelogstreamsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -436,7 +448,7 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns
-[DescribeLogStreamsResponseResponseTypeDef](./type_defs.md#describelogstreamsresponseresponsetypedef).
+[DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef).
 
 ### describe_metric_filters
 
@@ -448,7 +460,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.describe_metric_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_metric_filters)
 
 Arguments mapping described in
-[DescribeMetricFiltersRequestTypeDef](./type_defs.md#describemetricfiltersrequesttypedef).
+[DescribeMetricFiltersRequestRequestTypeDef](./type_defs.md#describemetricfiltersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -460,7 +472,7 @@ Keyword-only arguments:
 - `metricNamespace`: `str`
 
 Returns
-[DescribeMetricFiltersResponseResponseTypeDef](./type_defs.md#describemetricfiltersresponseresponsetypedef).
+[DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef).
 
 ### describe_queries
 
@@ -473,7 +485,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.describe_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_queries)
 
 Arguments mapping described in
-[DescribeQueriesRequestTypeDef](./type_defs.md#describequeriesrequesttypedef).
+[DescribeQueriesRequestRequestTypeDef](./type_defs.md#describequeriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -483,7 +495,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeQueriesResponseResponseTypeDef](./type_defs.md#describequeriesresponseresponsetypedef).
+[DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef).
 
 ### describe_query_definitions
 
@@ -496,7 +508,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.describe_query_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_query_definitions)
 
 Arguments mapping described in
-[DescribeQueryDefinitionsRequestTypeDef](./type_defs.md#describequerydefinitionsrequesttypedef).
+[DescribeQueryDefinitionsRequestRequestTypeDef](./type_defs.md#describequerydefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -505,7 +517,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeQueryDefinitionsResponseResponseTypeDef](./type_defs.md#describequerydefinitionsresponseresponsetypedef).
+[DescribeQueryDefinitionsResponseTypeDef](./type_defs.md#describequerydefinitionsresponsetypedef).
 
 ### describe_resource_policies
 
@@ -517,7 +529,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.describe_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_resource_policies)
 
 Arguments mapping described in
-[DescribeResourcePoliciesRequestTypeDef](./type_defs.md#describeresourcepoliciesrequesttypedef).
+[DescribeResourcePoliciesRequestRequestTypeDef](./type_defs.md#describeresourcepoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -525,7 +537,7 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns
-[DescribeResourcePoliciesResponseResponseTypeDef](./type_defs.md#describeresourcepoliciesresponseresponsetypedef).
+[DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef).
 
 ### describe_subscription_filters
 
@@ -538,7 +550,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.describe_subscription_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_subscription_filters)
 
 Arguments mapping described in
-[DescribeSubscriptionFiltersRequestTypeDef](./type_defs.md#describesubscriptionfiltersrequesttypedef).
+[DescribeSubscriptionFiltersRequestRequestTypeDef](./type_defs.md#describesubscriptionfiltersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -548,7 +560,7 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns
-[DescribeSubscriptionFiltersResponseResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponseresponsetypedef).
+[DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef).
 
 ### disassociate_kms_key
 
@@ -561,7 +573,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.disassociate_kms_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.disassociate_kms_key)
 
 Arguments mapping described in
-[DisassociateKmsKeyRequestTypeDef](./type_defs.md#disassociatekmskeyrequesttypedef).
+[DisassociateKmsKeyRequestRequestTypeDef](./type_defs.md#disassociatekmskeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -577,7 +589,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.filter_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.filter_log_events)
 
 Arguments mapping described in
-[FilterLogEventsRequestTypeDef](./type_defs.md#filterlogeventsrequesttypedef).
+[FilterLogEventsRequestRequestTypeDef](./type_defs.md#filterlogeventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -592,7 +604,7 @@ Keyword-only arguments:
 - `interleaved`: `bool`
 
 Returns
-[FilterLogEventsResponseResponseTypeDef](./type_defs.md#filterlogeventsresponseresponsetypedef).
+[FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -622,7 +634,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.get_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_events)
 
 Arguments mapping described in
-[GetLogEventsRequestTypeDef](./type_defs.md#getlogeventsrequesttypedef).
+[GetLogEventsRequestRequestTypeDef](./type_defs.md#getlogeventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -635,7 +647,7 @@ Keyword-only arguments:
 - `startFromHead`: `bool`
 
 Returns
-[GetLogEventsResponseResponseTypeDef](./type_defs.md#getlogeventsresponseresponsetypedef).
+[GetLogEventsResponseTypeDef](./type_defs.md#getlogeventsresponsetypedef).
 
 ### get_log_group_fields
 
@@ -648,7 +660,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.get_log_group_fields](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_group_fields)
 
 Arguments mapping described in
-[GetLogGroupFieldsRequestTypeDef](./type_defs.md#getloggroupfieldsrequesttypedef).
+[GetLogGroupFieldsRequestRequestTypeDef](./type_defs.md#getloggroupfieldsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -656,7 +668,7 @@ Keyword-only arguments:
 - `time`: `int`
 
 Returns
-[GetLogGroupFieldsResponseResponseTypeDef](./type_defs.md#getloggroupfieldsresponseresponsetypedef).
+[GetLogGroupFieldsResponseTypeDef](./type_defs.md#getloggroupfieldsresponsetypedef).
 
 ### get_log_record
 
@@ -668,14 +680,14 @@ Boto3 documentation:
 [CloudWatchLogs.Client.get_log_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_record)
 
 Arguments mapping described in
-[GetLogRecordRequestTypeDef](./type_defs.md#getlogrecordrequesttypedef).
+[GetLogRecordRequestRequestTypeDef](./type_defs.md#getlogrecordrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `logRecordPointer`: `str` *(required)*
 
 Returns
-[GetLogRecordResponseResponseTypeDef](./type_defs.md#getlogrecordresponseresponsetypedef).
+[GetLogRecordResponseTypeDef](./type_defs.md#getlogrecordresponsetypedef).
 
 ### get_query_results
 
@@ -687,14 +699,14 @@ Boto3 documentation:
 [CloudWatchLogs.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_query_results)
 
 Arguments mapping described in
-[GetQueryResultsRequestTypeDef](./type_defs.md#getqueryresultsrequesttypedef).
+[GetQueryResultsRequestRequestTypeDef](./type_defs.md#getqueryresultsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `queryId`: `str` *(required)*
 
 Returns
-[GetQueryResultsResponseResponseTypeDef](./type_defs.md#getqueryresultsresponseresponsetypedef).
+[GetQueryResultsResponseTypeDef](./type_defs.md#getqueryresultsresponsetypedef).
 
 ### list_tags_log_group
 
@@ -706,14 +718,14 @@ Boto3 documentation:
 [CloudWatchLogs.Client.list_tags_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.list_tags_log_group)
 
 Arguments mapping described in
-[ListTagsLogGroupRequestTypeDef](./type_defs.md#listtagsloggrouprequesttypedef).
+[ListTagsLogGroupRequestRequestTypeDef](./type_defs.md#listtagsloggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 
 Returns
-[ListTagsLogGroupResponseResponseTypeDef](./type_defs.md#listtagsloggroupresponseresponsetypedef).
+[ListTagsLogGroupResponseTypeDef](./type_defs.md#listtagsloggroupresponsetypedef).
 
 ### put_destination
 
@@ -725,7 +737,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.put_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination)
 
 Arguments mapping described in
-[PutDestinationRequestTypeDef](./type_defs.md#putdestinationrequesttypedef).
+[PutDestinationRequestRequestTypeDef](./type_defs.md#putdestinationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -734,7 +746,7 @@ Keyword-only arguments:
 - `roleArn`: `str` *(required)*
 
 Returns
-[PutDestinationResponseResponseTypeDef](./type_defs.md#putdestinationresponseresponsetypedef).
+[PutDestinationResponseTypeDef](./type_defs.md#putdestinationresponsetypedef).
 
 ### put_destination_policy
 
@@ -746,7 +758,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.put_destination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination_policy)
 
 Arguments mapping described in
-[PutDestinationPolicyRequestTypeDef](./type_defs.md#putdestinationpolicyrequesttypedef).
+[PutDestinationPolicyRequestRequestTypeDef](./type_defs.md#putdestinationpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -763,7 +775,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.put_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_log_events)
 
 Arguments mapping described in
-[PutLogEventsRequestTypeDef](./type_defs.md#putlogeventsrequesttypedef).
+[PutLogEventsRequestRequestTypeDef](./type_defs.md#putlogeventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -775,7 +787,7 @@ Keyword-only arguments:
 - `sequenceToken`: `str`
 
 Returns
-[PutLogEventsResponseResponseTypeDef](./type_defs.md#putlogeventsresponseresponsetypedef).
+[PutLogEventsResponseTypeDef](./type_defs.md#putlogeventsresponsetypedef).
 
 ### put_metric_filter
 
@@ -788,7 +800,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.put_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_metric_filter)
 
 Arguments mapping described in
-[PutMetricFilterRequestTypeDef](./type_defs.md#putmetricfilterrequesttypedef).
+[PutMetricFilterRequestRequestTypeDef](./type_defs.md#putmetricfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -809,7 +821,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.put_query_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_query_definition)
 
 Arguments mapping described in
-[PutQueryDefinitionRequestTypeDef](./type_defs.md#putquerydefinitionrequesttypedef).
+[PutQueryDefinitionRequestRequestTypeDef](./type_defs.md#putquerydefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -819,7 +831,7 @@ Keyword-only arguments:
 - `logGroupNames`: `List`\[`str`\]
 
 Returns
-[PutQueryDefinitionResponseResponseTypeDef](./type_defs.md#putquerydefinitionresponseresponsetypedef).
+[PutQueryDefinitionResponseTypeDef](./type_defs.md#putquerydefinitionresponsetypedef).
 
 ### put_resource_policy
 
@@ -832,7 +844,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_resource_policy)
 
 Arguments mapping described in
-[PutResourcePolicyRequestTypeDef](./type_defs.md#putresourcepolicyrequesttypedef).
+[PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -840,7 +852,7 @@ Keyword-only arguments:
 - `policyDocument`: `str`
 
 Returns
-[PutResourcePolicyResponseResponseTypeDef](./type_defs.md#putresourcepolicyresponseresponsetypedef).
+[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
 ### put_retention_policy
 
@@ -852,7 +864,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.put_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_retention_policy)
 
 Arguments mapping described in
-[PutRetentionPolicyRequestTypeDef](./type_defs.md#putretentionpolicyrequesttypedef).
+[PutRetentionPolicyRequestRequestTypeDef](./type_defs.md#putretentionpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -870,7 +882,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.put_subscription_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_subscription_filter)
 
 Arguments mapping described in
-[PutSubscriptionFilterRequestTypeDef](./type_defs.md#putsubscriptionfilterrequesttypedef).
+[PutSubscriptionFilterRequestRequestTypeDef](./type_defs.md#putsubscriptionfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -891,7 +903,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.start_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.start_query)
 
 Arguments mapping described in
-[StartQueryRequestTypeDef](./type_defs.md#startqueryrequesttypedef).
+[StartQueryRequestRequestTypeDef](./type_defs.md#startqueryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -902,8 +914,7 @@ Keyword-only arguments:
 - `logGroupNames`: `List`\[`str`\]
 - `limit`: `int`
 
-Returns
-[StartQueryResponseResponseTypeDef](./type_defs.md#startqueryresponseresponsetypedef).
+Returns [StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef).
 
 ### stop_query
 
@@ -915,14 +926,13 @@ Boto3 documentation:
 [CloudWatchLogs.Client.stop_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.stop_query)
 
 Arguments mapping described in
-[StopQueryRequestTypeDef](./type_defs.md#stopqueryrequesttypedef).
+[StopQueryRequestRequestTypeDef](./type_defs.md#stopqueryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `queryId`: `str` *(required)*
 
-Returns
-[StopQueryResponseResponseTypeDef](./type_defs.md#stopqueryresponseresponsetypedef).
+Returns [StopQueryResponseTypeDef](./type_defs.md#stopqueryresponsetypedef).
 
 ### tag_log_group
 
@@ -934,7 +944,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.tag_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.tag_log_group)
 
 Arguments mapping described in
-[TagLogGroupRequestTypeDef](./type_defs.md#tagloggrouprequesttypedef).
+[TagLogGroupRequestRequestTypeDef](./type_defs.md#tagloggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -952,7 +962,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.test_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.test_metric_filter)
 
 Arguments mapping described in
-[TestMetricFilterRequestTypeDef](./type_defs.md#testmetricfilterrequesttypedef).
+[TestMetricFilterRequestRequestTypeDef](./type_defs.md#testmetricfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -960,7 +970,7 @@ Keyword-only arguments:
 - `logEventMessages`: `List`\[`str`\] *(required)*
 
 Returns
-[TestMetricFilterResponseResponseTypeDef](./type_defs.md#testmetricfilterresponseresponsetypedef).
+[TestMetricFilterResponseTypeDef](./type_defs.md#testmetricfilterresponsetypedef).
 
 ### untag_log_group
 
@@ -972,7 +982,7 @@ Boto3 documentation:
 [CloudWatchLogs.Client.untag_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.untag_log_group)
 
 Arguments mapping described in
-[UntagLogGroupRequestTypeDef](./type_defs.md#untagloggrouprequesttypedef).
+[UntagLogGroupRequestRequestTypeDef](./type_defs.md#untagloggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 

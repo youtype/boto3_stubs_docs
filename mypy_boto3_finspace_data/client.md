@@ -11,6 +11,7 @@ type annotations stubs module
   - [FinSpaceDataClient](#finspacedataclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_changeset](#create_changeset)
     - [generate_presigned_url](#generate_presigned_url)
@@ -56,6 +57,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+FinSpaceDataClient exceptions.
+
+Type annotations for `boto3.client("finspace-data").exceptions` method.
+
+Boto3 documentation:
+[FinSpaceData.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -81,7 +93,7 @@ Boto3 documentation:
 [FinSpaceData.Client.create_changeset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_changeset)
 
 Arguments mapping described in
-[CreateChangesetRequestTypeDef](./type_defs.md#createchangesetrequesttypedef).
+[CreateChangesetRequestRequestTypeDef](./type_defs.md#createchangesetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -95,7 +107,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateChangesetResponseResponseTypeDef](./type_defs.md#createchangesetresponseresponsetypedef).
+[CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef).
 
 ### generate_presigned_url
 
@@ -127,7 +139,7 @@ Boto3 documentation:
 [FinSpaceData.Client.get_programmatic_access_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_programmatic_access_credentials)
 
 Arguments mapping described in
-[GetProgrammaticAccessCredentialsRequestTypeDef](./type_defs.md#getprogrammaticaccesscredentialsrequesttypedef).
+[GetProgrammaticAccessCredentialsRequestRequestTypeDef](./type_defs.md#getprogrammaticaccesscredentialsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -135,7 +147,7 @@ Keyword-only arguments:
 - `durationInMinutes`: `int`
 
 Returns
-[GetProgrammaticAccessCredentialsResponseResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponseresponsetypedef).
+[GetProgrammaticAccessCredentialsResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponsetypedef).
 
 ### get_working_location
 
@@ -149,11 +161,11 @@ Boto3 documentation:
 [FinSpaceData.Client.get_working_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_working_location)
 
 Arguments mapping described in
-[GetWorkingLocationRequestTypeDef](./type_defs.md#getworkinglocationrequesttypedef).
+[GetWorkingLocationRequestRequestTypeDef](./type_defs.md#getworkinglocationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `locationType`: [locationTypeType](./literals.md#locationtypetype)
 
 Returns
-[GetWorkingLocationResponseResponseTypeDef](./type_defs.md#getworkinglocationresponseresponsetypedef).
+[GetWorkingLocationResponseTypeDef](./type_defs.md#getworkinglocationresponsetypedef).

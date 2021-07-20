@@ -35,7 +35,7 @@ Arguments for `ListAppsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppsPaginator.paginate` returns
-`Iterator`\[[ListAppsResultResponseTypeDef](./type_defs.md#listappsresultresponsetypedef)\].
+`Iterator`\[[ListAppsResultTypeDef](./type_defs.md#listappsresulttypedef)\].
 
 ## ListBranchesPaginator
 
@@ -60,7 +60,7 @@ Arguments for `ListBranchesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBranchesPaginator.paginate` returns
-`Iterator`\[[ListBranchesResultResponseTypeDef](./type_defs.md#listbranchesresultresponsetypedef)\].
+`Iterator`\[[ListBranchesResultTypeDef](./type_defs.md#listbranchesresulttypedef)\].
 
 ## ListDomainAssociationsPaginator
 
@@ -86,7 +86,7 @@ Arguments for `ListDomainAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDomainAssociationsPaginator.paginate` returns
-`Iterator`\[[ListDomainAssociationsResultResponseTypeDef](./type_defs.md#listdomainassociationsresultresponsetypedef)\].
+`Iterator`\[[ListDomainAssociationsResultTypeDef](./type_defs.md#listdomainassociationsresulttypedef)\].
 
 ## ListJobsPaginator
 
@@ -112,4 +112,4 @@ Arguments for `ListJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResultResponseTypeDef](./type_defs.md#listjobsresultresponsetypedef)\].
+`Iterator`\[[ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)\].

@@ -10,26 +10,26 @@ type annotations stubs module
 - [Typed dictionaries for boto3 GlobalAccelerator module](#typed-dictionaries-for-boto3-globalaccelerator-module)
   - [AcceleratorAttributesTypeDef](#acceleratorattributestypedef)
   - [AcceleratorTypeDef](#acceleratortypedef)
-  - [AddCustomRoutingEndpointsRequestTypeDef](#addcustomroutingendpointsrequesttypedef)
-  - [AddCustomRoutingEndpointsResponseResponseTypeDef](#addcustomroutingendpointsresponseresponsetypedef)
-  - [AdvertiseByoipCidrRequestTypeDef](#advertisebyoipcidrrequesttypedef)
-  - [AdvertiseByoipCidrResponseResponseTypeDef](#advertisebyoipcidrresponseresponsetypedef)
-  - [AllowCustomRoutingTrafficRequestTypeDef](#allowcustomroutingtrafficrequesttypedef)
+  - [AddCustomRoutingEndpointsRequestRequestTypeDef](#addcustomroutingendpointsrequestrequesttypedef)
+  - [AddCustomRoutingEndpointsResponseTypeDef](#addcustomroutingendpointsresponsetypedef)
+  - [AdvertiseByoipCidrRequestRequestTypeDef](#advertisebyoipcidrrequestrequesttypedef)
+  - [AdvertiseByoipCidrResponseTypeDef](#advertisebyoipcidrresponsetypedef)
+  - [AllowCustomRoutingTrafficRequestRequestTypeDef](#allowcustomroutingtrafficrequestrequesttypedef)
   - [ByoipCidrEventTypeDef](#byoipcidreventtypedef)
   - [ByoipCidrTypeDef](#byoipcidrtypedef)
   - [CidrAuthorizationContextTypeDef](#cidrauthorizationcontexttypedef)
-  - [CreateAcceleratorRequestTypeDef](#createacceleratorrequesttypedef)
-  - [CreateAcceleratorResponseResponseTypeDef](#createacceleratorresponseresponsetypedef)
-  - [CreateCustomRoutingAcceleratorRequestTypeDef](#createcustomroutingacceleratorrequesttypedef)
-  - [CreateCustomRoutingAcceleratorResponseResponseTypeDef](#createcustomroutingacceleratorresponseresponsetypedef)
-  - [CreateCustomRoutingEndpointGroupRequestTypeDef](#createcustomroutingendpointgrouprequesttypedef)
-  - [CreateCustomRoutingEndpointGroupResponseResponseTypeDef](#createcustomroutingendpointgroupresponseresponsetypedef)
-  - [CreateCustomRoutingListenerRequestTypeDef](#createcustomroutinglistenerrequesttypedef)
-  - [CreateCustomRoutingListenerResponseResponseTypeDef](#createcustomroutinglistenerresponseresponsetypedef)
-  - [CreateEndpointGroupRequestTypeDef](#createendpointgrouprequesttypedef)
-  - [CreateEndpointGroupResponseResponseTypeDef](#createendpointgroupresponseresponsetypedef)
-  - [CreateListenerRequestTypeDef](#createlistenerrequesttypedef)
-  - [CreateListenerResponseResponseTypeDef](#createlistenerresponseresponsetypedef)
+  - [CreateAcceleratorRequestRequestTypeDef](#createacceleratorrequestrequesttypedef)
+  - [CreateAcceleratorResponseTypeDef](#createacceleratorresponsetypedef)
+  - [CreateCustomRoutingAcceleratorRequestRequestTypeDef](#createcustomroutingacceleratorrequestrequesttypedef)
+  - [CreateCustomRoutingAcceleratorResponseTypeDef](#createcustomroutingacceleratorresponsetypedef)
+  - [CreateCustomRoutingEndpointGroupRequestRequestTypeDef](#createcustomroutingendpointgrouprequestrequesttypedef)
+  - [CreateCustomRoutingEndpointGroupResponseTypeDef](#createcustomroutingendpointgroupresponsetypedef)
+  - [CreateCustomRoutingListenerRequestRequestTypeDef](#createcustomroutinglistenerrequestrequesttypedef)
+  - [CreateCustomRoutingListenerResponseTypeDef](#createcustomroutinglistenerresponsetypedef)
+  - [CreateEndpointGroupRequestRequestTypeDef](#createendpointgrouprequestrequesttypedef)
+  - [CreateEndpointGroupResponseTypeDef](#createendpointgroupresponsetypedef)
+  - [CreateListenerRequestRequestTypeDef](#createlistenerrequestrequesttypedef)
+  - [CreateListenerResponseTypeDef](#createlistenerresponsetypedef)
   - [CustomRoutingAcceleratorAttributesTypeDef](#customroutingacceleratorattributestypedef)
   - [CustomRoutingAcceleratorTypeDef](#customroutingacceleratortypedef)
   - [CustomRoutingDestinationConfigurationTypeDef](#customroutingdestinationconfigurationtypedef)
@@ -38,85 +38,85 @@ type annotations stubs module
   - [CustomRoutingEndpointDescriptionTypeDef](#customroutingendpointdescriptiontypedef)
   - [CustomRoutingEndpointGroupTypeDef](#customroutingendpointgrouptypedef)
   - [CustomRoutingListenerTypeDef](#customroutinglistenertypedef)
-  - [DeleteAcceleratorRequestTypeDef](#deleteacceleratorrequesttypedef)
-  - [DeleteCustomRoutingAcceleratorRequestTypeDef](#deletecustomroutingacceleratorrequesttypedef)
-  - [DeleteCustomRoutingEndpointGroupRequestTypeDef](#deletecustomroutingendpointgrouprequesttypedef)
-  - [DeleteCustomRoutingListenerRequestTypeDef](#deletecustomroutinglistenerrequesttypedef)
-  - [DeleteEndpointGroupRequestTypeDef](#deleteendpointgrouprequesttypedef)
-  - [DeleteListenerRequestTypeDef](#deletelistenerrequesttypedef)
-  - [DenyCustomRoutingTrafficRequestTypeDef](#denycustomroutingtrafficrequesttypedef)
-  - [DeprovisionByoipCidrRequestTypeDef](#deprovisionbyoipcidrrequesttypedef)
-  - [DeprovisionByoipCidrResponseResponseTypeDef](#deprovisionbyoipcidrresponseresponsetypedef)
-  - [DescribeAcceleratorAttributesRequestTypeDef](#describeacceleratorattributesrequesttypedef)
-  - [DescribeAcceleratorAttributesResponseResponseTypeDef](#describeacceleratorattributesresponseresponsetypedef)
-  - [DescribeAcceleratorRequestTypeDef](#describeacceleratorrequesttypedef)
-  - [DescribeAcceleratorResponseResponseTypeDef](#describeacceleratorresponseresponsetypedef)
-  - [DescribeCustomRoutingAcceleratorAttributesRequestTypeDef](#describecustomroutingacceleratorattributesrequesttypedef)
-  - [DescribeCustomRoutingAcceleratorAttributesResponseResponseTypeDef](#describecustomroutingacceleratorattributesresponseresponsetypedef)
-  - [DescribeCustomRoutingAcceleratorRequestTypeDef](#describecustomroutingacceleratorrequesttypedef)
-  - [DescribeCustomRoutingAcceleratorResponseResponseTypeDef](#describecustomroutingacceleratorresponseresponsetypedef)
-  - [DescribeCustomRoutingEndpointGroupRequestTypeDef](#describecustomroutingendpointgrouprequesttypedef)
-  - [DescribeCustomRoutingEndpointGroupResponseResponseTypeDef](#describecustomroutingendpointgroupresponseresponsetypedef)
-  - [DescribeCustomRoutingListenerRequestTypeDef](#describecustomroutinglistenerrequesttypedef)
-  - [DescribeCustomRoutingListenerResponseResponseTypeDef](#describecustomroutinglistenerresponseresponsetypedef)
-  - [DescribeEndpointGroupRequestTypeDef](#describeendpointgrouprequesttypedef)
-  - [DescribeEndpointGroupResponseResponseTypeDef](#describeendpointgroupresponseresponsetypedef)
-  - [DescribeListenerRequestTypeDef](#describelistenerrequesttypedef)
-  - [DescribeListenerResponseResponseTypeDef](#describelistenerresponseresponsetypedef)
+  - [DeleteAcceleratorRequestRequestTypeDef](#deleteacceleratorrequestrequesttypedef)
+  - [DeleteCustomRoutingAcceleratorRequestRequestTypeDef](#deletecustomroutingacceleratorrequestrequesttypedef)
+  - [DeleteCustomRoutingEndpointGroupRequestRequestTypeDef](#deletecustomroutingendpointgrouprequestrequesttypedef)
+  - [DeleteCustomRoutingListenerRequestRequestTypeDef](#deletecustomroutinglistenerrequestrequesttypedef)
+  - [DeleteEndpointGroupRequestRequestTypeDef](#deleteendpointgrouprequestrequesttypedef)
+  - [DeleteListenerRequestRequestTypeDef](#deletelistenerrequestrequesttypedef)
+  - [DenyCustomRoutingTrafficRequestRequestTypeDef](#denycustomroutingtrafficrequestrequesttypedef)
+  - [DeprovisionByoipCidrRequestRequestTypeDef](#deprovisionbyoipcidrrequestrequesttypedef)
+  - [DeprovisionByoipCidrResponseTypeDef](#deprovisionbyoipcidrresponsetypedef)
+  - [DescribeAcceleratorAttributesRequestRequestTypeDef](#describeacceleratorattributesrequestrequesttypedef)
+  - [DescribeAcceleratorAttributesResponseTypeDef](#describeacceleratorattributesresponsetypedef)
+  - [DescribeAcceleratorRequestRequestTypeDef](#describeacceleratorrequestrequesttypedef)
+  - [DescribeAcceleratorResponseTypeDef](#describeacceleratorresponsetypedef)
+  - [DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef](#describecustomroutingacceleratorattributesrequestrequesttypedef)
+  - [DescribeCustomRoutingAcceleratorAttributesResponseTypeDef](#describecustomroutingacceleratorattributesresponsetypedef)
+  - [DescribeCustomRoutingAcceleratorRequestRequestTypeDef](#describecustomroutingacceleratorrequestrequesttypedef)
+  - [DescribeCustomRoutingAcceleratorResponseTypeDef](#describecustomroutingacceleratorresponsetypedef)
+  - [DescribeCustomRoutingEndpointGroupRequestRequestTypeDef](#describecustomroutingendpointgrouprequestrequesttypedef)
+  - [DescribeCustomRoutingEndpointGroupResponseTypeDef](#describecustomroutingendpointgroupresponsetypedef)
+  - [DescribeCustomRoutingListenerRequestRequestTypeDef](#describecustomroutinglistenerrequestrequesttypedef)
+  - [DescribeCustomRoutingListenerResponseTypeDef](#describecustomroutinglistenerresponsetypedef)
+  - [DescribeEndpointGroupRequestRequestTypeDef](#describeendpointgrouprequestrequesttypedef)
+  - [DescribeEndpointGroupResponseTypeDef](#describeendpointgroupresponsetypedef)
+  - [DescribeListenerRequestRequestTypeDef](#describelistenerrequestrequesttypedef)
+  - [DescribeListenerResponseTypeDef](#describelistenerresponsetypedef)
   - [DestinationPortMappingTypeDef](#destinationportmappingtypedef)
   - [EndpointConfigurationTypeDef](#endpointconfigurationtypedef)
   - [EndpointDescriptionTypeDef](#endpointdescriptiontypedef)
   - [EndpointGroupTypeDef](#endpointgrouptypedef)
   - [IpSetTypeDef](#ipsettypedef)
-  - [ListAcceleratorsRequestTypeDef](#listacceleratorsrequesttypedef)
-  - [ListAcceleratorsResponseResponseTypeDef](#listacceleratorsresponseresponsetypedef)
-  - [ListByoipCidrsRequestTypeDef](#listbyoipcidrsrequesttypedef)
-  - [ListByoipCidrsResponseResponseTypeDef](#listbyoipcidrsresponseresponsetypedef)
-  - [ListCustomRoutingAcceleratorsRequestTypeDef](#listcustomroutingacceleratorsrequesttypedef)
-  - [ListCustomRoutingAcceleratorsResponseResponseTypeDef](#listcustomroutingacceleratorsresponseresponsetypedef)
-  - [ListCustomRoutingEndpointGroupsRequestTypeDef](#listcustomroutingendpointgroupsrequesttypedef)
-  - [ListCustomRoutingEndpointGroupsResponseResponseTypeDef](#listcustomroutingendpointgroupsresponseresponsetypedef)
-  - [ListCustomRoutingListenersRequestTypeDef](#listcustomroutinglistenersrequesttypedef)
-  - [ListCustomRoutingListenersResponseResponseTypeDef](#listcustomroutinglistenersresponseresponsetypedef)
-  - [ListCustomRoutingPortMappingsByDestinationRequestTypeDef](#listcustomroutingportmappingsbydestinationrequesttypedef)
-  - [ListCustomRoutingPortMappingsByDestinationResponseResponseTypeDef](#listcustomroutingportmappingsbydestinationresponseresponsetypedef)
-  - [ListCustomRoutingPortMappingsRequestTypeDef](#listcustomroutingportmappingsrequesttypedef)
-  - [ListCustomRoutingPortMappingsResponseResponseTypeDef](#listcustomroutingportmappingsresponseresponsetypedef)
-  - [ListEndpointGroupsRequestTypeDef](#listendpointgroupsrequesttypedef)
-  - [ListEndpointGroupsResponseResponseTypeDef](#listendpointgroupsresponseresponsetypedef)
-  - [ListListenersRequestTypeDef](#listlistenersrequesttypedef)
-  - [ListListenersResponseResponseTypeDef](#listlistenersresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListAcceleratorsRequestRequestTypeDef](#listacceleratorsrequestrequesttypedef)
+  - [ListAcceleratorsResponseTypeDef](#listacceleratorsresponsetypedef)
+  - [ListByoipCidrsRequestRequestTypeDef](#listbyoipcidrsrequestrequesttypedef)
+  - [ListByoipCidrsResponseTypeDef](#listbyoipcidrsresponsetypedef)
+  - [ListCustomRoutingAcceleratorsRequestRequestTypeDef](#listcustomroutingacceleratorsrequestrequesttypedef)
+  - [ListCustomRoutingAcceleratorsResponseTypeDef](#listcustomroutingacceleratorsresponsetypedef)
+  - [ListCustomRoutingEndpointGroupsRequestRequestTypeDef](#listcustomroutingendpointgroupsrequestrequesttypedef)
+  - [ListCustomRoutingEndpointGroupsResponseTypeDef](#listcustomroutingendpointgroupsresponsetypedef)
+  - [ListCustomRoutingListenersRequestRequestTypeDef](#listcustomroutinglistenersrequestrequesttypedef)
+  - [ListCustomRoutingListenersResponseTypeDef](#listcustomroutinglistenersresponsetypedef)
+  - [ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef](#listcustomroutingportmappingsbydestinationrequestrequesttypedef)
+  - [ListCustomRoutingPortMappingsByDestinationResponseTypeDef](#listcustomroutingportmappingsbydestinationresponsetypedef)
+  - [ListCustomRoutingPortMappingsRequestRequestTypeDef](#listcustomroutingportmappingsrequestrequesttypedef)
+  - [ListCustomRoutingPortMappingsResponseTypeDef](#listcustomroutingportmappingsresponsetypedef)
+  - [ListEndpointGroupsRequestRequestTypeDef](#listendpointgroupsrequestrequesttypedef)
+  - [ListEndpointGroupsResponseTypeDef](#listendpointgroupsresponsetypedef)
+  - [ListListenersRequestRequestTypeDef](#listlistenersrequestrequesttypedef)
+  - [ListListenersResponseTypeDef](#listlistenersresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListenerTypeDef](#listenertypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PortMappingTypeDef](#portmappingtypedef)
   - [PortOverrideTypeDef](#portoverridetypedef)
   - [PortRangeTypeDef](#portrangetypedef)
-  - [ProvisionByoipCidrRequestTypeDef](#provisionbyoipcidrrequesttypedef)
-  - [ProvisionByoipCidrResponseResponseTypeDef](#provisionbyoipcidrresponseresponsetypedef)
-  - [RemoveCustomRoutingEndpointsRequestTypeDef](#removecustomroutingendpointsrequesttypedef)
+  - [ProvisionByoipCidrRequestRequestTypeDef](#provisionbyoipcidrrequestrequesttypedef)
+  - [ProvisionByoipCidrResponseTypeDef](#provisionbyoipcidrresponsetypedef)
+  - [RemoveCustomRoutingEndpointsRequestRequestTypeDef](#removecustomroutingendpointsrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SocketAddressTypeDef](#socketaddresstypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateAcceleratorAttributesRequestTypeDef](#updateacceleratorattributesrequesttypedef)
-  - [UpdateAcceleratorAttributesResponseResponseTypeDef](#updateacceleratorattributesresponseresponsetypedef)
-  - [UpdateAcceleratorRequestTypeDef](#updateacceleratorrequesttypedef)
-  - [UpdateAcceleratorResponseResponseTypeDef](#updateacceleratorresponseresponsetypedef)
-  - [UpdateCustomRoutingAcceleratorAttributesRequestTypeDef](#updatecustomroutingacceleratorattributesrequesttypedef)
-  - [UpdateCustomRoutingAcceleratorAttributesResponseResponseTypeDef](#updatecustomroutingacceleratorattributesresponseresponsetypedef)
-  - [UpdateCustomRoutingAcceleratorRequestTypeDef](#updatecustomroutingacceleratorrequesttypedef)
-  - [UpdateCustomRoutingAcceleratorResponseResponseTypeDef](#updatecustomroutingacceleratorresponseresponsetypedef)
-  - [UpdateCustomRoutingListenerRequestTypeDef](#updatecustomroutinglistenerrequesttypedef)
-  - [UpdateCustomRoutingListenerResponseResponseTypeDef](#updatecustomroutinglistenerresponseresponsetypedef)
-  - [UpdateEndpointGroupRequestTypeDef](#updateendpointgrouprequesttypedef)
-  - [UpdateEndpointGroupResponseResponseTypeDef](#updateendpointgroupresponseresponsetypedef)
-  - [UpdateListenerRequestTypeDef](#updatelistenerrequesttypedef)
-  - [UpdateListenerResponseResponseTypeDef](#updatelistenerresponseresponsetypedef)
-  - [WithdrawByoipCidrRequestTypeDef](#withdrawbyoipcidrrequesttypedef)
-  - [WithdrawByoipCidrResponseResponseTypeDef](#withdrawbyoipcidrresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAcceleratorAttributesRequestRequestTypeDef](#updateacceleratorattributesrequestrequesttypedef)
+  - [UpdateAcceleratorAttributesResponseTypeDef](#updateacceleratorattributesresponsetypedef)
+  - [UpdateAcceleratorRequestRequestTypeDef](#updateacceleratorrequestrequesttypedef)
+  - [UpdateAcceleratorResponseTypeDef](#updateacceleratorresponsetypedef)
+  - [UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef](#updatecustomroutingacceleratorattributesrequestrequesttypedef)
+  - [UpdateCustomRoutingAcceleratorAttributesResponseTypeDef](#updatecustomroutingacceleratorattributesresponsetypedef)
+  - [UpdateCustomRoutingAcceleratorRequestRequestTypeDef](#updatecustomroutingacceleratorrequestrequesttypedef)
+  - [UpdateCustomRoutingAcceleratorResponseTypeDef](#updatecustomroutingacceleratorresponsetypedef)
+  - [UpdateCustomRoutingListenerRequestRequestTypeDef](#updatecustomroutinglistenerrequestrequesttypedef)
+  - [UpdateCustomRoutingListenerResponseTypeDef](#updatecustomroutinglistenerresponsetypedef)
+  - [UpdateEndpointGroupRequestRequestTypeDef](#updateendpointgrouprequestrequesttypedef)
+  - [UpdateEndpointGroupResponseTypeDef](#updateendpointgroupresponsetypedef)
+  - [UpdateListenerRequestRequestTypeDef](#updatelistenerrequestrequesttypedef)
+  - [UpdateListenerResponseTypeDef](#updatelistenerresponsetypedef)
+  - [WithdrawByoipCidrRequestRequestTypeDef](#withdrawbyoipcidrrequestrequesttypedef)
+  - [WithdrawByoipCidrResponseTypeDef](#withdrawbyoipcidrresponsetypedef)
 
 ## AcceleratorAttributesTypeDef
 
@@ -149,10 +149,10 @@ Optional fields:
 - `CreatedTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
-## AddCustomRoutingEndpointsRequestTypeDef
+## AddCustomRoutingEndpointsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import AddCustomRoutingEndpointsRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import AddCustomRoutingEndpointsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -161,10 +161,10 @@ Required fields:
   `List`\[[CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef)\]
 - `EndpointGroupArn`: `str`
 
-## AddCustomRoutingEndpointsResponseResponseTypeDef
+## AddCustomRoutingEndpointsResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import AddCustomRoutingEndpointsResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import AddCustomRoutingEndpointsResponseTypeDef
 ```
 
 Required fields:
@@ -175,20 +175,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AdvertiseByoipCidrRequestTypeDef
+## AdvertiseByoipCidrRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import AdvertiseByoipCidrRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import AdvertiseByoipCidrRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Cidr`: `str`
 
-## AdvertiseByoipCidrResponseResponseTypeDef
+## AdvertiseByoipCidrResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import AdvertiseByoipCidrResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import AdvertiseByoipCidrResponseTypeDef
 ```
 
 Required fields:
@@ -197,10 +197,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AllowCustomRoutingTrafficRequestTypeDef
+## AllowCustomRoutingTrafficRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import AllowCustomRoutingTrafficRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import AllowCustomRoutingTrafficRequestRequestTypeDef
 ```
 
 Required fields:
@@ -249,10 +249,10 @@ Required fields:
 - `Message`: `str`
 - `Signature`: `str`
 
-## CreateAcceleratorRequestTypeDef
+## CreateAcceleratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import CreateAcceleratorRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import CreateAcceleratorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -268,10 +268,10 @@ Optional fields:
 - `Enabled`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateAcceleratorResponseResponseTypeDef
+## CreateAcceleratorResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import CreateAcceleratorResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import CreateAcceleratorResponseTypeDef
 ```
 
 Required fields:
@@ -280,10 +280,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCustomRoutingAcceleratorRequestTypeDef
+## CreateCustomRoutingAcceleratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingAcceleratorRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingAcceleratorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -299,10 +299,10 @@ Optional fields:
 - `Enabled`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateCustomRoutingAcceleratorResponseResponseTypeDef
+## CreateCustomRoutingAcceleratorResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingAcceleratorResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingAcceleratorResponseTypeDef
 ```
 
 Required fields:
@@ -312,10 +312,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCustomRoutingEndpointGroupRequestTypeDef
+## CreateCustomRoutingEndpointGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingEndpointGroupRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingEndpointGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -326,10 +326,10 @@ Required fields:
   `List`\[[CustomRoutingDestinationConfigurationTypeDef](./type_defs.md#customroutingdestinationconfigurationtypedef)\]
 - `IdempotencyToken`: `str`
 
-## CreateCustomRoutingEndpointGroupResponseResponseTypeDef
+## CreateCustomRoutingEndpointGroupResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingEndpointGroupResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingEndpointGroupResponseTypeDef
 ```
 
 Required fields:
@@ -339,10 +339,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCustomRoutingListenerRequestTypeDef
+## CreateCustomRoutingListenerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingListenerRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingListenerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -351,10 +351,10 @@ Required fields:
 - `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `IdempotencyToken`: `str`
 
-## CreateCustomRoutingListenerResponseResponseTypeDef
+## CreateCustomRoutingListenerResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingListenerResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingListenerResponseTypeDef
 ```
 
 Required fields:
@@ -364,10 +364,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateEndpointGroupRequestTypeDef
+## CreateEndpointGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import CreateEndpointGroupRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import CreateEndpointGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -390,10 +390,10 @@ Optional fields:
 - `PortOverrides`:
   `List`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
-## CreateEndpointGroupResponseResponseTypeDef
+## CreateEndpointGroupResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import CreateEndpointGroupResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import CreateEndpointGroupResponseTypeDef
 ```
 
 Required fields:
@@ -402,10 +402,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateListenerRequestTypeDef
+## CreateListenerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import CreateListenerRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import CreateListenerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -419,10 +419,10 @@ Optional fields:
 
 - `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
 
-## CreateListenerResponseResponseTypeDef
+## CreateListenerResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import CreateListenerResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import CreateListenerResponseTypeDef
 ```
 
 Required fields:
@@ -534,70 +534,70 @@ Optional fields:
 - `ListenerArn`: `str`
 - `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 
-## DeleteAcceleratorRequestTypeDef
+## DeleteAcceleratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DeleteAcceleratorRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DeleteAcceleratorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AcceleratorArn`: `str`
 
-## DeleteCustomRoutingAcceleratorRequestTypeDef
+## DeleteCustomRoutingAcceleratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DeleteCustomRoutingAcceleratorRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DeleteCustomRoutingAcceleratorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AcceleratorArn`: `str`
 
-## DeleteCustomRoutingEndpointGroupRequestTypeDef
+## DeleteCustomRoutingEndpointGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DeleteCustomRoutingEndpointGroupRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DeleteCustomRoutingEndpointGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `EndpointGroupArn`: `str`
 
-## DeleteCustomRoutingListenerRequestTypeDef
+## DeleteCustomRoutingListenerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DeleteCustomRoutingListenerRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DeleteCustomRoutingListenerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ListenerArn`: `str`
 
-## DeleteEndpointGroupRequestTypeDef
+## DeleteEndpointGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DeleteEndpointGroupRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DeleteEndpointGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `EndpointGroupArn`: `str`
 
-## DeleteListenerRequestTypeDef
+## DeleteListenerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DeleteListenerRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DeleteListenerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ListenerArn`: `str`
 
-## DenyCustomRoutingTrafficRequestTypeDef
+## DenyCustomRoutingTrafficRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DenyCustomRoutingTrafficRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DenyCustomRoutingTrafficRequestRequestTypeDef
 ```
 
 Required fields:
@@ -611,20 +611,20 @@ Optional fields:
 - `DestinationPorts`: `List`\[`int`\]
 - `DenyAllTrafficToEndpoint`: `bool`
 
-## DeprovisionByoipCidrRequestTypeDef
+## DeprovisionByoipCidrRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DeprovisionByoipCidrRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DeprovisionByoipCidrRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Cidr`: `str`
 
-## DeprovisionByoipCidrResponseResponseTypeDef
+## DeprovisionByoipCidrResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DeprovisionByoipCidrResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DeprovisionByoipCidrResponseTypeDef
 ```
 
 Required fields:
@@ -633,20 +633,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAcceleratorAttributesRequestTypeDef
+## DescribeAcceleratorAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorAttributesRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorAttributesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AcceleratorArn`: `str`
 
-## DescribeAcceleratorAttributesResponseResponseTypeDef
+## DescribeAcceleratorAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorAttributesResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -656,20 +656,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAcceleratorRequestTypeDef
+## DescribeAcceleratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AcceleratorArn`: `str`
 
-## DescribeAcceleratorResponseResponseTypeDef
+## DescribeAcceleratorResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorResponseTypeDef
 ```
 
 Required fields:
@@ -678,20 +678,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCustomRoutingAcceleratorAttributesRequestTypeDef
+## DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorAttributesRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AcceleratorArn`: `str`
 
-## DescribeCustomRoutingAcceleratorAttributesResponseResponseTypeDef
+## DescribeCustomRoutingAcceleratorAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorAttributesResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -701,20 +701,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCustomRoutingAcceleratorRequestTypeDef
+## DescribeCustomRoutingAcceleratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AcceleratorArn`: `str`
 
-## DescribeCustomRoutingAcceleratorResponseResponseTypeDef
+## DescribeCustomRoutingAcceleratorResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorResponseTypeDef
 ```
 
 Required fields:
@@ -724,20 +724,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCustomRoutingEndpointGroupRequestTypeDef
+## DescribeCustomRoutingEndpointGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingEndpointGroupRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingEndpointGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `EndpointGroupArn`: `str`
 
-## DescribeCustomRoutingEndpointGroupResponseResponseTypeDef
+## DescribeCustomRoutingEndpointGroupResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingEndpointGroupResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingEndpointGroupResponseTypeDef
 ```
 
 Required fields:
@@ -747,20 +747,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCustomRoutingListenerRequestTypeDef
+## DescribeCustomRoutingListenerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingListenerRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingListenerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ListenerArn`: `str`
 
-## DescribeCustomRoutingListenerResponseResponseTypeDef
+## DescribeCustomRoutingListenerResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingListenerResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingListenerResponseTypeDef
 ```
 
 Required fields:
@@ -770,20 +770,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEndpointGroupRequestTypeDef
+## DescribeEndpointGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeEndpointGroupRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeEndpointGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `EndpointGroupArn`: `str`
 
-## DescribeEndpointGroupResponseResponseTypeDef
+## DescribeEndpointGroupResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeEndpointGroupResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeEndpointGroupResponseTypeDef
 ```
 
 Required fields:
@@ -792,20 +792,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeListenerRequestTypeDef
+## DescribeListenerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeListenerRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeListenerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ListenerArn`: `str`
 
-## DescribeListenerResponseResponseTypeDef
+## DescribeListenerResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import DescribeListenerResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import DescribeListenerResponseTypeDef
 ```
 
 Required fields:
@@ -894,10 +894,10 @@ Optional fields:
 - `IpFamily`: `str`
 - `IpAddresses`: `List`\[`str`\]
 
-## ListAcceleratorsRequestTypeDef
+## ListAcceleratorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListAcceleratorsRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListAcceleratorsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -905,10 +905,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListAcceleratorsResponseResponseTypeDef
+## ListAcceleratorsResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListAcceleratorsResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListAcceleratorsResponseTypeDef
 ```
 
 Required fields:
@@ -919,10 +919,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListByoipCidrsRequestTypeDef
+## ListByoipCidrsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListByoipCidrsRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListByoipCidrsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -930,10 +930,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListByoipCidrsResponseResponseTypeDef
+## ListByoipCidrsResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListByoipCidrsResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListByoipCidrsResponseTypeDef
 ```
 
 Required fields:
@@ -943,10 +943,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCustomRoutingAcceleratorsRequestTypeDef
+## ListCustomRoutingAcceleratorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingAcceleratorsRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingAcceleratorsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -954,10 +954,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListCustomRoutingAcceleratorsResponseResponseTypeDef
+## ListCustomRoutingAcceleratorsResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingAcceleratorsResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingAcceleratorsResponseTypeDef
 ```
 
 Required fields:
@@ -968,10 +968,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCustomRoutingEndpointGroupsRequestTypeDef
+## ListCustomRoutingEndpointGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingEndpointGroupsRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingEndpointGroupsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -983,10 +983,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListCustomRoutingEndpointGroupsResponseResponseTypeDef
+## ListCustomRoutingEndpointGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingEndpointGroupsResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingEndpointGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -997,10 +997,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCustomRoutingListenersRequestTypeDef
+## ListCustomRoutingListenersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingListenersRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingListenersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1012,10 +1012,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListCustomRoutingListenersResponseResponseTypeDef
+## ListCustomRoutingListenersResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingListenersResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingListenersResponseTypeDef
 ```
 
 Required fields:
@@ -1026,10 +1026,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCustomRoutingPortMappingsByDestinationRequestTypeDef
+## ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsByDestinationRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1042,10 +1042,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListCustomRoutingPortMappingsByDestinationResponseResponseTypeDef
+## ListCustomRoutingPortMappingsByDestinationResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsByDestinationResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsByDestinationResponseTypeDef
 ```
 
 Required fields:
@@ -1056,10 +1056,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCustomRoutingPortMappingsRequestTypeDef
+## ListCustomRoutingPortMappingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1072,10 +1072,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListCustomRoutingPortMappingsResponseResponseTypeDef
+## ListCustomRoutingPortMappingsResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsResponseTypeDef
 ```
 
 Required fields:
@@ -1086,10 +1086,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEndpointGroupsRequestTypeDef
+## ListEndpointGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListEndpointGroupsRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListEndpointGroupsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1101,10 +1101,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListEndpointGroupsResponseResponseTypeDef
+## ListEndpointGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListEndpointGroupsResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListEndpointGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -1115,10 +1115,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListListenersRequestTypeDef
+## ListListenersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListListenersRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListListenersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1130,10 +1130,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListListenersResponseResponseTypeDef
+## ListListenersResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListListenersResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListListenersResponseTypeDef
 ```
 
 Required fields:
@@ -1143,20 +1143,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1230,10 +1230,10 @@ Optional fields:
 - `FromPort`: `int`
 - `ToPort`: `int`
 
-## ProvisionByoipCidrRequestTypeDef
+## ProvisionByoipCidrRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ProvisionByoipCidrRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ProvisionByoipCidrRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1242,10 +1242,10 @@ Required fields:
 - `CidrAuthorizationContext`:
   [CidrAuthorizationContextTypeDef](./type_defs.md#cidrauthorizationcontexttypedef)
 
-## ProvisionByoipCidrResponseResponseTypeDef
+## ProvisionByoipCidrResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import ProvisionByoipCidrResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import ProvisionByoipCidrResponseTypeDef
 ```
 
 Required fields:
@@ -1254,10 +1254,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RemoveCustomRoutingEndpointsRequestTypeDef
+## RemoveCustomRoutingEndpointsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import RemoveCustomRoutingEndpointsRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import RemoveCustomRoutingEndpointsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1290,10 +1290,10 @@ Optional fields:
 - `IpAddress`: `str`
 - `Port`: `int`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1312,10 +1312,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1323,10 +1323,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateAcceleratorAttributesRequestTypeDef
+## UpdateAcceleratorAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorAttributesRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1339,10 +1339,10 @@ Optional fields:
 - `FlowLogsS3Bucket`: `str`
 - `FlowLogsS3Prefix`: `str`
 
-## UpdateAcceleratorAttributesResponseResponseTypeDef
+## UpdateAcceleratorAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorAttributesResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -1352,10 +1352,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAcceleratorRequestTypeDef
+## UpdateAcceleratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1369,10 +1369,10 @@ Optional fields:
   [IpAddressTypeType](./literals.md#ipaddresstypetype))
 - `Enabled`: `bool`
 
-## UpdateAcceleratorResponseResponseTypeDef
+## UpdateAcceleratorResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorResponseTypeDef
 ```
 
 Required fields:
@@ -1381,10 +1381,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateCustomRoutingAcceleratorAttributesRequestTypeDef
+## UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorAttributesRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1397,10 +1397,10 @@ Optional fields:
 - `FlowLogsS3Bucket`: `str`
 - `FlowLogsS3Prefix`: `str`
 
-## UpdateCustomRoutingAcceleratorAttributesResponseResponseTypeDef
+## UpdateCustomRoutingAcceleratorAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorAttributesResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -1410,10 +1410,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateCustomRoutingAcceleratorRequestTypeDef
+## UpdateCustomRoutingAcceleratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1427,10 +1427,10 @@ Optional fields:
   [IpAddressTypeType](./literals.md#ipaddresstypetype))
 - `Enabled`: `bool`
 
-## UpdateCustomRoutingAcceleratorResponseResponseTypeDef
+## UpdateCustomRoutingAcceleratorResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorResponseTypeDef
 ```
 
 Required fields:
@@ -1440,10 +1440,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateCustomRoutingListenerRequestTypeDef
+## UpdateCustomRoutingListenerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingListenerRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingListenerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1451,10 +1451,10 @@ Required fields:
 - `ListenerArn`: `str`
 - `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 
-## UpdateCustomRoutingListenerResponseResponseTypeDef
+## UpdateCustomRoutingListenerResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingListenerResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingListenerResponseTypeDef
 ```
 
 Required fields:
@@ -1464,10 +1464,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateEndpointGroupRequestTypeDef
+## UpdateEndpointGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateEndpointGroupRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateEndpointGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1488,10 +1488,10 @@ Optional fields:
 - `PortOverrides`:
   `List`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
-## UpdateEndpointGroupResponseResponseTypeDef
+## UpdateEndpointGroupResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateEndpointGroupResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateEndpointGroupResponseTypeDef
 ```
 
 Required fields:
@@ -1500,10 +1500,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateListenerRequestTypeDef
+## UpdateListenerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateListenerRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateListenerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1516,10 +1516,10 @@ Optional fields:
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
 
-## UpdateListenerResponseResponseTypeDef
+## UpdateListenerResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import UpdateListenerResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import UpdateListenerResponseTypeDef
 ```
 
 Required fields:
@@ -1528,20 +1528,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## WithdrawByoipCidrRequestTypeDef
+## WithdrawByoipCidrRequestRequestTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import WithdrawByoipCidrRequestTypeDef
+from mypy_boto3_globalaccelerator.type_defs import WithdrawByoipCidrRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Cidr`: `str`
 
-## WithdrawByoipCidrResponseResponseTypeDef
+## WithdrawByoipCidrResponseTypeDef
 
 ```python
-from mypy_boto3_globalaccelerator.type_defs import WithdrawByoipCidrResponseResponseTypeDef
+from mypy_boto3_globalaccelerator.type_defs import WithdrawByoipCidrResponseTypeDef
 ```
 
 Required fields:

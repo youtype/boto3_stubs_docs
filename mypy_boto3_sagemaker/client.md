@@ -11,6 +11,7 @@ type annotations stubs module
   - [SageMakerClient](#sagemakerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_association](#add_association)
     - [add_tags](#add_tags)
     - [associate_trial_component](#associate_trial_component)
@@ -289,6 +290,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SageMakerClient exceptions.
+
+Type annotations for `boto3.client("sagemaker").exceptions` method.
+
+Boto3 documentation:
+[SageMaker.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_association
 
 Creates an *association* between the source and the destination.
@@ -299,7 +311,7 @@ Boto3 documentation:
 [SageMaker.Client.add_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.add_association)
 
 Arguments mapping described in
-[AddAssociationRequestTypeDef](./type_defs.md#addassociationrequesttypedef).
+[AddAssociationRequestRequestTypeDef](./type_defs.md#addassociationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,7 +321,7 @@ Keyword-only arguments:
   [AssociationEdgeTypeType](./literals.md#associationedgetypetype)
 
 Returns
-[AddAssociationResponseResponseTypeDef](./type_defs.md#addassociationresponseresponsetypedef).
+[AddAssociationResponseTypeDef](./type_defs.md#addassociationresponsetypedef).
 
 ### add_tags
 
@@ -322,15 +334,14 @@ Boto3 documentation:
 [SageMaker.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.add_tags)
 
 Arguments mapping described in
-[AddTagsInputTypeDef](./type_defs.md#addtagsinputtypedef).
+[AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
-Returns
-[AddTagsOutputResponseTypeDef](./type_defs.md#addtagsoutputresponsetypedef).
+Returns [AddTagsOutputTypeDef](./type_defs.md#addtagsoutputtypedef).
 
 ### associate_trial_component
 
@@ -343,7 +354,7 @@ Boto3 documentation:
 [SageMaker.Client.associate_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.associate_trial_component)
 
 Arguments mapping described in
-[AssociateTrialComponentRequestTypeDef](./type_defs.md#associatetrialcomponentrequesttypedef).
+[AssociateTrialComponentRequestRequestTypeDef](./type_defs.md#associatetrialcomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -351,7 +362,7 @@ Keyword-only arguments:
 - `TrialName`: `str` *(required)*
 
 Returns
-[AssociateTrialComponentResponseResponseTypeDef](./type_defs.md#associatetrialcomponentresponseresponsetypedef).
+[AssociateTrialComponentResponseTypeDef](./type_defs.md#associatetrialcomponentresponsetypedef).
 
 ### can_paginate
 
@@ -378,7 +389,7 @@ Boto3 documentation:
 [SageMaker.Client.create_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_action)
 
 Arguments mapping described in
-[CreateActionRequestTypeDef](./type_defs.md#createactionrequesttypedef).
+[CreateActionRequestRequestTypeDef](./type_defs.md#createactionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -394,12 +405,12 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateActionResponseResponseTypeDef](./type_defs.md#createactionresponseresponsetypedef).
+[CreateActionResponseTypeDef](./type_defs.md#createactionresponsetypedef).
 
 ### create_algorithm
 
 Create a machine learning algorithm that you can use in Amazon SageMaker and
-list in the AWS Marketplace.
+list in the Amazon Web Services Marketplace.
 
 Type annotations for `boto3.client("sagemaker").create_algorithm` method.
 
@@ -407,7 +418,7 @@ Boto3 documentation:
 [SageMaker.Client.create_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_algorithm)
 
 Arguments mapping described in
-[CreateAlgorithmInputTypeDef](./type_defs.md#createalgorithminputtypedef).
+[CreateAlgorithmInputRequestTypeDef](./type_defs.md#createalgorithminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -424,7 +435,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAlgorithmOutputResponseTypeDef](./type_defs.md#createalgorithmoutputresponsetypedef).
+[CreateAlgorithmOutputTypeDef](./type_defs.md#createalgorithmoutputtypedef).
 
 ### create_app
 
@@ -436,7 +447,7 @@ Boto3 documentation:
 [SageMaker.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_app)
 
 Arguments mapping described in
-[CreateAppRequestTypeDef](./type_defs.md#createapprequesttypedef).
+[CreateAppRequestRequestTypeDef](./type_defs.md#createapprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -447,8 +458,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResourceSpec`: [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
 
-Returns
-[CreateAppResponseResponseTypeDef](./type_defs.md#createappresponseresponsetypedef).
+Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
 
 ### create_app_image_config
 
@@ -461,7 +471,7 @@ Boto3 documentation:
 [SageMaker.Client.create_app_image_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_app_image_config)
 
 Arguments mapping described in
-[CreateAppImageConfigRequestTypeDef](./type_defs.md#createappimageconfigrequesttypedef).
+[CreateAppImageConfigRequestRequestTypeDef](./type_defs.md#createappimageconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,7 +481,7 @@ Keyword-only arguments:
   [KernelGatewayImageConfigTypeDef](./type_defs.md#kernelgatewayimageconfigtypedef)
 
 Returns
-[CreateAppImageConfigResponseResponseTypeDef](./type_defs.md#createappimageconfigresponseresponsetypedef).
+[CreateAppImageConfigResponseTypeDef](./type_defs.md#createappimageconfigresponsetypedef).
 
 ### create_artifact
 
@@ -483,7 +493,7 @@ Boto3 documentation:
 [SageMaker.Client.create_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_artifact)
 
 Arguments mapping described in
-[CreateArtifactRequestTypeDef](./type_defs.md#createartifactrequesttypedef).
+[CreateArtifactRequestRequestTypeDef](./type_defs.md#createartifactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -497,7 +507,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateArtifactResponseResponseTypeDef](./type_defs.md#createartifactresponseresponsetypedef).
+[CreateArtifactResponseTypeDef](./type_defs.md#createartifactresponsetypedef).
 
 ### create_auto_ml_job
 
@@ -509,7 +519,7 @@ Boto3 documentation:
 [SageMaker.Client.create_auto_ml_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_auto_ml_job)
 
 Arguments mapping described in
-[CreateAutoMLJobRequestTypeDef](./type_defs.md#createautomljobrequesttypedef).
+[CreateAutoMLJobRequestRequestTypeDef](./type_defs.md#createautomljobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -532,7 +542,7 @@ Keyword-only arguments:
   [ModelDeployConfigTypeDef](./type_defs.md#modeldeployconfigtypedef)
 
 Returns
-[CreateAutoMLJobResponseResponseTypeDef](./type_defs.md#createautomljobresponseresponsetypedef).
+[CreateAutoMLJobResponseTypeDef](./type_defs.md#createautomljobresponsetypedef).
 
 ### create_code_repository
 
@@ -544,7 +554,7 @@ Boto3 documentation:
 [SageMaker.Client.create_code_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_code_repository)
 
 Arguments mapping described in
-[CreateCodeRepositoryInputTypeDef](./type_defs.md#createcoderepositoryinputtypedef).
+[CreateCodeRepositoryInputRequestTypeDef](./type_defs.md#createcoderepositoryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -553,7 +563,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCodeRepositoryOutputResponseTypeDef](./type_defs.md#createcoderepositoryoutputresponsetypedef).
+[CreateCodeRepositoryOutputTypeDef](./type_defs.md#createcoderepositoryoutputtypedef).
 
 ### create_compilation_job
 
@@ -565,7 +575,7 @@ Boto3 documentation:
 [SageMaker.Client.create_compilation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_compilation_job)
 
 Arguments mapping described in
-[CreateCompilationJobRequestTypeDef](./type_defs.md#createcompilationjobrequesttypedef).
+[CreateCompilationJobRequestRequestTypeDef](./type_defs.md#createcompilationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -582,7 +592,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCompilationJobResponseResponseTypeDef](./type_defs.md#createcompilationjobresponseresponsetypedef).
+[CreateCompilationJobResponseTypeDef](./type_defs.md#createcompilationjobresponsetypedef).
 
 ### create_context
 
@@ -594,7 +604,7 @@ Boto3 documentation:
 [SageMaker.Client.create_context](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_context)
 
 Arguments mapping described in
-[CreateContextRequestTypeDef](./type_defs.md#createcontextrequesttypedef).
+[CreateContextRequestRequestTypeDef](./type_defs.md#createcontextrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -607,7 +617,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateContextResponseResponseTypeDef](./type_defs.md#createcontextresponseresponsetypedef).
+[CreateContextResponseTypeDef](./type_defs.md#createcontextresponsetypedef).
 
 ### create_data_quality_job_definition
 
@@ -620,7 +630,7 @@ Boto3 documentation:
 [SageMaker.Client.create_data_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_data_quality_job_definition)
 
 Arguments mapping described in
-[CreateDataQualityJobDefinitionRequestTypeDef](./type_defs.md#createdataqualityjobdefinitionrequesttypedef).
+[CreateDataQualityJobDefinitionRequestRequestTypeDef](./type_defs.md#createdataqualityjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -647,7 +657,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDataQualityJobDefinitionResponseResponseTypeDef](./type_defs.md#createdataqualityjobdefinitionresponseresponsetypedef).
+[CreateDataQualityJobDefinitionResponseTypeDef](./type_defs.md#createdataqualityjobdefinitionresponsetypedef).
 
 ### create_device_fleet
 
@@ -659,7 +669,7 @@ Boto3 documentation:
 [SageMaker.Client.create_device_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_device_fleet)
 
 Arguments mapping described in
-[CreateDeviceFleetRequestTypeDef](./type_defs.md#createdevicefleetrequesttypedef).
+[CreateDeviceFleetRequestRequestTypeDef](./type_defs.md#createdevicefleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -682,7 +692,7 @@ Boto3 documentation:
 [SageMaker.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_domain)
 
 Arguments mapping described in
-[CreateDomainRequestTypeDef](./type_defs.md#createdomainrequesttypedef).
+[CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -699,7 +709,7 @@ Keyword-only arguments:
 - `KmsKeyId`: `str`
 
 Returns
-[CreateDomainResponseResponseTypeDef](./type_defs.md#createdomainresponseresponsetypedef).
+[CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
 
 ### create_edge_packaging_job
 
@@ -712,7 +722,7 @@ Boto3 documentation:
 [SageMaker.Client.create_edge_packaging_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_edge_packaging_job)
 
 Arguments mapping described in
-[CreateEdgePackagingJobRequestTypeDef](./type_defs.md#createedgepackagingjobrequesttypedef).
+[CreateEdgePackagingJobRequestRequestTypeDef](./type_defs.md#createedgepackagingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -737,7 +747,7 @@ Boto3 documentation:
 [SageMaker.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint)
 
 Arguments mapping described in
-[CreateEndpointInputTypeDef](./type_defs.md#createendpointinputtypedef).
+[CreateEndpointInputRequestTypeDef](./type_defs.md#createendpointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -746,7 +756,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEndpointOutputResponseTypeDef](./type_defs.md#createendpointoutputresponsetypedef).
+[CreateEndpointOutputTypeDef](./type_defs.md#createendpointoutputtypedef).
 
 ### create_endpoint_config
 
@@ -758,7 +768,7 @@ Boto3 documentation:
 [SageMaker.Client.create_endpoint_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_endpoint_config)
 
 Arguments mapping described in
-[CreateEndpointConfigInputTypeDef](./type_defs.md#createendpointconfiginputtypedef).
+[CreateEndpointConfigInputRequestTypeDef](./type_defs.md#createendpointconfiginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -772,7 +782,7 @@ Keyword-only arguments:
 - `KmsKeyId`: `str`
 
 Returns
-[CreateEndpointConfigOutputResponseTypeDef](./type_defs.md#createendpointconfigoutputresponsetypedef).
+[CreateEndpointConfigOutputTypeDef](./type_defs.md#createendpointconfigoutputtypedef).
 
 ### create_experiment
 
@@ -784,7 +794,7 @@ Boto3 documentation:
 [SageMaker.Client.create_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_experiment)
 
 Arguments mapping described in
-[CreateExperimentRequestTypeDef](./type_defs.md#createexperimentrequesttypedef).
+[CreateExperimentRequestRequestTypeDef](./type_defs.md#createexperimentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -794,7 +804,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateExperimentResponseResponseTypeDef](./type_defs.md#createexperimentresponseresponsetypedef).
+[CreateExperimentResponseTypeDef](./type_defs.md#createexperimentresponsetypedef).
 
 ### create_feature_group
 
@@ -806,7 +816,7 @@ Boto3 documentation:
 [SageMaker.Client.create_feature_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_feature_group)
 
 Arguments mapping described in
-[CreateFeatureGroupRequestTypeDef](./type_defs.md#createfeaturegrouprequesttypedef).
+[CreateFeatureGroupRequestRequestTypeDef](./type_defs.md#createfeaturegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -825,7 +835,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateFeatureGroupResponseResponseTypeDef](./type_defs.md#createfeaturegroupresponseresponsetypedef).
+[CreateFeatureGroupResponseTypeDef](./type_defs.md#createfeaturegroupresponsetypedef).
 
 ### create_flow_definition
 
@@ -837,7 +847,7 @@ Boto3 documentation:
 [SageMaker.Client.create_flow_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_flow_definition)
 
 Arguments mapping described in
-[CreateFlowDefinitionRequestTypeDef](./type_defs.md#createflowdefinitionrequesttypedef).
+[CreateFlowDefinitionRequestRequestTypeDef](./type_defs.md#createflowdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -855,7 +865,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateFlowDefinitionResponseResponseTypeDef](./type_defs.md#createflowdefinitionresponseresponsetypedef).
+[CreateFlowDefinitionResponseTypeDef](./type_defs.md#createflowdefinitionresponsetypedef).
 
 ### create_human_task_ui
 
@@ -867,7 +877,7 @@ Boto3 documentation:
 [SageMaker.Client.create_human_task_ui](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_human_task_ui)
 
 Arguments mapping described in
-[CreateHumanTaskUiRequestTypeDef](./type_defs.md#createhumantaskuirequesttypedef).
+[CreateHumanTaskUiRequestRequestTypeDef](./type_defs.md#createhumantaskuirequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -877,7 +887,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateHumanTaskUiResponseResponseTypeDef](./type_defs.md#createhumantaskuiresponseresponsetypedef).
+[CreateHumanTaskUiResponseTypeDef](./type_defs.md#createhumantaskuiresponsetypedef).
 
 ### create_hyper_parameter_tuning_job
 
@@ -890,7 +900,7 @@ Boto3 documentation:
 [SageMaker.Client.create_hyper_parameter_tuning_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_hyper_parameter_tuning_job)
 
 Arguments mapping described in
-[CreateHyperParameterTuningJobRequestTypeDef](./type_defs.md#createhyperparametertuningjobrequesttypedef).
+[CreateHyperParameterTuningJobRequestRequestTypeDef](./type_defs.md#createhyperparametertuningjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -907,7 +917,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateHyperParameterTuningJobResponseResponseTypeDef](./type_defs.md#createhyperparametertuningjobresponseresponsetypedef).
+[CreateHyperParameterTuningJobResponseTypeDef](./type_defs.md#createhyperparametertuningjobresponsetypedef).
 
 ### create_image
 
@@ -919,7 +929,7 @@ Boto3 documentation:
 [SageMaker.Client.create_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_image)
 
 Arguments mapping described in
-[CreateImageRequestTypeDef](./type_defs.md#createimagerequesttypedef).
+[CreateImageRequestRequestTypeDef](./type_defs.md#createimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -930,7 +940,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateImageResponseResponseTypeDef](./type_defs.md#createimageresponseresponsetypedef).
+[CreateImageResponseTypeDef](./type_defs.md#createimageresponsetypedef).
 
 ### create_image_version
 
@@ -942,7 +952,7 @@ Boto3 documentation:
 [SageMaker.Client.create_image_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_image_version)
 
 Arguments mapping described in
-[CreateImageVersionRequestTypeDef](./type_defs.md#createimageversionrequesttypedef).
+[CreateImageVersionRequestRequestTypeDef](./type_defs.md#createimageversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -951,7 +961,7 @@ Keyword-only arguments:
 - `ImageName`: `str` *(required)*
 
 Returns
-[CreateImageVersionResponseResponseTypeDef](./type_defs.md#createimageversionresponseresponsetypedef).
+[CreateImageVersionResponseTypeDef](./type_defs.md#createimageversionresponsetypedef).
 
 ### create_labeling_job
 
@@ -963,7 +973,7 @@ Boto3 documentation:
 [SageMaker.Client.create_labeling_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_labeling_job)
 
 Arguments mapping described in
-[CreateLabelingJobRequestTypeDef](./type_defs.md#createlabelingjobrequesttypedef).
+[CreateLabelingJobRequestRequestTypeDef](./type_defs.md#createlabelingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -986,7 +996,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateLabelingJobResponseResponseTypeDef](./type_defs.md#createlabelingjobresponseresponsetypedef).
+[CreateLabelingJobResponseTypeDef](./type_defs.md#createlabelingjobresponsetypedef).
 
 ### create_model
 
@@ -998,7 +1008,7 @@ Boto3 documentation:
 [SageMaker.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model)
 
 Arguments mapping described in
-[CreateModelInputTypeDef](./type_defs.md#createmodelinputtypedef).
+[CreateModelInputRequestTypeDef](./type_defs.md#createmodelinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1014,8 +1024,7 @@ Keyword-only arguments:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `EnableNetworkIsolation`: `bool`
 
-Returns
-[CreateModelOutputResponseTypeDef](./type_defs.md#createmodeloutputresponsetypedef).
+Returns [CreateModelOutputTypeDef](./type_defs.md#createmodeloutputtypedef).
 
 ### create_model_bias_job_definition
 
@@ -1028,7 +1037,7 @@ Boto3 documentation:
 [SageMaker.Client.create_model_bias_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_bias_job_definition)
 
 Arguments mapping described in
-[CreateModelBiasJobDefinitionRequestTypeDef](./type_defs.md#createmodelbiasjobdefinitionrequesttypedef).
+[CreateModelBiasJobDefinitionRequestRequestTypeDef](./type_defs.md#createmodelbiasjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1055,7 +1064,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelBiasJobDefinitionResponseResponseTypeDef](./type_defs.md#createmodelbiasjobdefinitionresponseresponsetypedef).
+[CreateModelBiasJobDefinitionResponseTypeDef](./type_defs.md#createmodelbiasjobdefinitionresponsetypedef).
 
 ### create_model_explainability_job_definition
 
@@ -1068,7 +1077,7 @@ Boto3 documentation:
 [SageMaker.Client.create_model_explainability_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_explainability_job_definition)
 
 Arguments mapping described in
-[CreateModelExplainabilityJobDefinitionRequestTypeDef](./type_defs.md#createmodelexplainabilityjobdefinitionrequesttypedef).
+[CreateModelExplainabilityJobDefinitionRequestRequestTypeDef](./type_defs.md#createmodelexplainabilityjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1095,12 +1104,13 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelExplainabilityJobDefinitionResponseResponseTypeDef](./type_defs.md#createmodelexplainabilityjobdefinitionresponseresponsetypedef).
+[CreateModelExplainabilityJobDefinitionResponseTypeDef](./type_defs.md#createmodelexplainabilityjobdefinitionresponsetypedef).
 
 ### create_model_package
 
 Creates a model package that you can use to create Amazon SageMaker models or
-list on AWS Marketplace, or a versioned model that is part of a model group.
+list on Amazon Web Services Marketplace, or a versioned model that is part of a
+model group.
 
 Type annotations for `boto3.client("sagemaker").create_model_package` method.
 
@@ -1108,7 +1118,7 @@ Boto3 documentation:
 [SageMaker.Client.create_model_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package)
 
 Arguments mapping described in
-[CreateModelPackageInputTypeDef](./type_defs.md#createmodelpackageinputtypedef).
+[CreateModelPackageInputRequestTypeDef](./type_defs.md#createmodelpackageinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1131,7 +1141,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateModelPackageOutputResponseTypeDef](./type_defs.md#createmodelpackageoutputresponsetypedef).
+[CreateModelPackageOutputTypeDef](./type_defs.md#createmodelpackageoutputtypedef).
 
 ### create_model_package_group
 
@@ -1144,7 +1154,7 @@ Boto3 documentation:
 [SageMaker.Client.create_model_package_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_package_group)
 
 Arguments mapping described in
-[CreateModelPackageGroupInputTypeDef](./type_defs.md#createmodelpackagegroupinputtypedef).
+[CreateModelPackageGroupInputRequestTypeDef](./type_defs.md#createmodelpackagegroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1153,7 +1163,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelPackageGroupOutputResponseTypeDef](./type_defs.md#createmodelpackagegroupoutputresponsetypedef).
+[CreateModelPackageGroupOutputTypeDef](./type_defs.md#createmodelpackagegroupoutputtypedef).
 
 ### create_model_quality_job_definition
 
@@ -1166,7 +1176,7 @@ Boto3 documentation:
 [SageMaker.Client.create_model_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_model_quality_job_definition)
 
 Arguments mapping described in
-[CreateModelQualityJobDefinitionRequestTypeDef](./type_defs.md#createmodelqualityjobdefinitionrequesttypedef).
+[CreateModelQualityJobDefinitionRequestRequestTypeDef](./type_defs.md#createmodelqualityjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1193,7 +1203,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateModelQualityJobDefinitionResponseResponseTypeDef](./type_defs.md#createmodelqualityjobdefinitionresponseresponsetypedef).
+[CreateModelQualityJobDefinitionResponseTypeDef](./type_defs.md#createmodelqualityjobdefinitionresponsetypedef).
 
 ### create_monitoring_schedule
 
@@ -1207,7 +1217,7 @@ Boto3 documentation:
 [SageMaker.Client.create_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_monitoring_schedule)
 
 Arguments mapping described in
-[CreateMonitoringScheduleRequestTypeDef](./type_defs.md#createmonitoringschedulerequesttypedef).
+[CreateMonitoringScheduleRequestRequestTypeDef](./type_defs.md#createmonitoringschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1218,7 +1228,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateMonitoringScheduleResponseResponseTypeDef](./type_defs.md#createmonitoringscheduleresponseresponsetypedef).
+[CreateMonitoringScheduleResponseTypeDef](./type_defs.md#createmonitoringscheduleresponsetypedef).
 
 ### create_notebook_instance
 
@@ -1231,7 +1241,7 @@ Boto3 documentation:
 [SageMaker.Client.create_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance)
 
 Arguments mapping described in
-[CreateNotebookInstanceInputTypeDef](./type_defs.md#createnotebookinstanceinputtypedef).
+[CreateNotebookInstanceInputRequestTypeDef](./type_defs.md#createnotebookinstanceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1254,7 +1264,7 @@ Keyword-only arguments:
 - `RootAccess`: [RootAccessType](./literals.md#rootaccesstype)
 
 Returns
-[CreateNotebookInstanceOutputResponseTypeDef](./type_defs.md#createnotebookinstanceoutputresponsetypedef).
+[CreateNotebookInstanceOutputTypeDef](./type_defs.md#createnotebookinstanceoutputtypedef).
 
 ### create_notebook_instance_lifecycle_config
 
@@ -1268,7 +1278,7 @@ Boto3 documentation:
 [SageMaker.Client.create_notebook_instance_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_notebook_instance_lifecycle_config)
 
 Arguments mapping described in
-[CreateNotebookInstanceLifecycleConfigInputTypeDef](./type_defs.md#createnotebookinstancelifecycleconfiginputtypedef).
+[CreateNotebookInstanceLifecycleConfigInputRequestTypeDef](./type_defs.md#createnotebookinstancelifecycleconfiginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1279,7 +1289,7 @@ Keyword-only arguments:
   `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 
 Returns
-[CreateNotebookInstanceLifecycleConfigOutputResponseTypeDef](./type_defs.md#createnotebookinstancelifecycleconfigoutputresponsetypedef).
+[CreateNotebookInstanceLifecycleConfigOutputTypeDef](./type_defs.md#createnotebookinstancelifecycleconfigoutputtypedef).
 
 ### create_pipeline
 
@@ -1291,7 +1301,7 @@ Boto3 documentation:
 [SageMaker.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_pipeline)
 
 Arguments mapping described in
-[CreatePipelineRequestTypeDef](./type_defs.md#createpipelinerequesttypedef).
+[CreatePipelineRequestRequestTypeDef](./type_defs.md#createpipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1304,7 +1314,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePipelineResponseResponseTypeDef](./type_defs.md#createpipelineresponseresponsetypedef).
+[CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
 
 ### create_presigned_domain_url
 
@@ -1317,7 +1327,7 @@ Boto3 documentation:
 [SageMaker.Client.create_presigned_domain_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_presigned_domain_url)
 
 Arguments mapping described in
-[CreatePresignedDomainUrlRequestTypeDef](./type_defs.md#createpresigneddomainurlrequesttypedef).
+[CreatePresignedDomainUrlRequestRequestTypeDef](./type_defs.md#createpresigneddomainurlrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1327,7 +1337,7 @@ Keyword-only arguments:
 - `ExpiresInSeconds`: `int`
 
 Returns
-[CreatePresignedDomainUrlResponseResponseTypeDef](./type_defs.md#createpresigneddomainurlresponseresponsetypedef).
+[CreatePresignedDomainUrlResponseTypeDef](./type_defs.md#createpresigneddomainurlresponsetypedef).
 
 ### create_presigned_notebook_instance_url
 
@@ -1341,7 +1351,7 @@ Boto3 documentation:
 [SageMaker.Client.create_presigned_notebook_instance_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_presigned_notebook_instance_url)
 
 Arguments mapping described in
-[CreatePresignedNotebookInstanceUrlInputTypeDef](./type_defs.md#createpresignednotebookinstanceurlinputtypedef).
+[CreatePresignedNotebookInstanceUrlInputRequestTypeDef](./type_defs.md#createpresignednotebookinstanceurlinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1349,7 +1359,7 @@ Keyword-only arguments:
 - `SessionExpirationDurationInSeconds`: `int`
 
 Returns
-[CreatePresignedNotebookInstanceUrlOutputResponseTypeDef](./type_defs.md#createpresignednotebookinstanceurloutputresponsetypedef).
+[CreatePresignedNotebookInstanceUrlOutputTypeDef](./type_defs.md#createpresignednotebookinstanceurloutputtypedef).
 
 ### create_processing_job
 
@@ -1361,7 +1371,7 @@ Boto3 documentation:
 [SageMaker.Client.create_processing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_processing_job)
 
 Arguments mapping described in
-[CreateProcessingJobRequestTypeDef](./type_defs.md#createprocessingjobrequesttypedef).
+[CreateProcessingJobRequestRequestTypeDef](./type_defs.md#createprocessingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1386,7 +1396,7 @@ Keyword-only arguments:
   [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 
 Returns
-[CreateProcessingJobResponseResponseTypeDef](./type_defs.md#createprocessingjobresponseresponsetypedef).
+[CreateProcessingJobResponseTypeDef](./type_defs.md#createprocessingjobresponsetypedef).
 
 ### create_project
 
@@ -1399,7 +1409,7 @@ Boto3 documentation:
 [SageMaker.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_project)
 
 Arguments mapping described in
-[CreateProjectInputTypeDef](./type_defs.md#createprojectinputtypedef).
+[CreateProjectInputRequestTypeDef](./type_defs.md#createprojectinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1411,7 +1421,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateProjectOutputResponseTypeDef](./type_defs.md#createprojectoutputresponsetypedef).
+[CreateProjectOutputTypeDef](./type_defs.md#createprojectoutputtypedef).
 
 ### create_training_job
 
@@ -1423,7 +1433,7 @@ Boto3 documentation:
 [SageMaker.Client.create_training_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_training_job)
 
 Arguments mapping described in
-[CreateTrainingJobRequestTypeDef](./type_defs.md#createtrainingjobrequesttypedef).
+[CreateTrainingJobRequestRequestTypeDef](./type_defs.md#createtrainingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1465,7 +1475,7 @@ Keyword-only arguments:
 - `RetryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 
 Returns
-[CreateTrainingJobResponseResponseTypeDef](./type_defs.md#createtrainingjobresponseresponsetypedef).
+[CreateTrainingJobResponseTypeDef](./type_defs.md#createtrainingjobresponsetypedef).
 
 ### create_transform_job
 
@@ -1477,7 +1487,7 @@ Boto3 documentation:
 [SageMaker.Client.create_transform_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_transform_job)
 
 Arguments mapping described in
-[CreateTransformJobRequestTypeDef](./type_defs.md#createtransformjobrequesttypedef).
+[CreateTransformJobRequestRequestTypeDef](./type_defs.md#createtransformjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1503,7 +1513,7 @@ Keyword-only arguments:
   [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 
 Returns
-[CreateTransformJobResponseResponseTypeDef](./type_defs.md#createtransformjobresponseresponsetypedef).
+[CreateTransformJobResponseTypeDef](./type_defs.md#createtransformjobresponsetypedef).
 
 ### create_trial
 
@@ -1515,7 +1525,7 @@ Boto3 documentation:
 [SageMaker.Client.create_trial](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_trial)
 
 Arguments mapping described in
-[CreateTrialRequestTypeDef](./type_defs.md#createtrialrequesttypedef).
+[CreateTrialRequestRequestTypeDef](./type_defs.md#createtrialrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1527,7 +1537,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTrialResponseResponseTypeDef](./type_defs.md#createtrialresponseresponsetypedef).
+[CreateTrialResponseTypeDef](./type_defs.md#createtrialresponsetypedef).
 
 ### create_trial_component
 
@@ -1539,7 +1549,7 @@ Boto3 documentation:
 [SageMaker.Client.create_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_trial_component)
 
 Arguments mapping described in
-[CreateTrialComponentRequestTypeDef](./type_defs.md#createtrialcomponentrequesttypedef).
+[CreateTrialComponentRequestRequestTypeDef](./type_defs.md#createtrialcomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1560,7 +1570,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTrialComponentResponseResponseTypeDef](./type_defs.md#createtrialcomponentresponseresponsetypedef).
+[CreateTrialComponentResponseTypeDef](./type_defs.md#createtrialcomponentresponsetypedef).
 
 ### create_user_profile
 
@@ -1572,7 +1582,7 @@ Boto3 documentation:
 [SageMaker.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_user_profile)
 
 Arguments mapping described in
-[CreateUserProfileRequestTypeDef](./type_defs.md#createuserprofilerequesttypedef).
+[CreateUserProfileRequestRequestTypeDef](./type_defs.md#createuserprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1584,7 +1594,7 @@ Keyword-only arguments:
 - `UserSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 
 Returns
-[CreateUserProfileResponseResponseTypeDef](./type_defs.md#createuserprofileresponseresponsetypedef).
+[CreateUserProfileResponseTypeDef](./type_defs.md#createuserprofileresponsetypedef).
 
 ### create_workforce
 
@@ -1596,7 +1606,7 @@ Boto3 documentation:
 [SageMaker.Client.create_workforce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_workforce)
 
 Arguments mapping described in
-[CreateWorkforceRequestTypeDef](./type_defs.md#createworkforcerequesttypedef).
+[CreateWorkforceRequestRequestTypeDef](./type_defs.md#createworkforcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1608,7 +1618,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateWorkforceResponseResponseTypeDef](./type_defs.md#createworkforceresponseresponsetypedef).
+[CreateWorkforceResponseTypeDef](./type_defs.md#createworkforceresponsetypedef).
 
 ### create_workteam
 
@@ -1620,7 +1630,7 @@ Boto3 documentation:
 [SageMaker.Client.create_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_workteam)
 
 Arguments mapping described in
-[CreateWorkteamRequestTypeDef](./type_defs.md#createworkteamrequesttypedef).
+[CreateWorkteamRequestRequestTypeDef](./type_defs.md#createworkteamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1635,7 +1645,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateWorkteamResponseResponseTypeDef](./type_defs.md#createworkteamresponseresponsetypedef).
+[CreateWorkteamResponseTypeDef](./type_defs.md#createworkteamresponsetypedef).
 
 ### delete_action
 
@@ -1647,14 +1657,14 @@ Boto3 documentation:
 [SageMaker.Client.delete_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_action)
 
 Arguments mapping described in
-[DeleteActionRequestTypeDef](./type_defs.md#deleteactionrequesttypedef).
+[DeleteActionRequestRequestTypeDef](./type_defs.md#deleteactionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ActionName`: `str` *(required)*
 
 Returns
-[DeleteActionResponseResponseTypeDef](./type_defs.md#deleteactionresponseresponsetypedef).
+[DeleteActionResponseTypeDef](./type_defs.md#deleteactionresponsetypedef).
 
 ### delete_algorithm
 
@@ -1666,7 +1676,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_algorithm)
 
 Arguments mapping described in
-[DeleteAlgorithmInputTypeDef](./type_defs.md#deletealgorithminputtypedef).
+[DeleteAlgorithmInputRequestTypeDef](./type_defs.md#deletealgorithminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1682,7 +1692,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_app)
 
 Arguments mapping described in
-[DeleteAppRequestTypeDef](./type_defs.md#deleteapprequesttypedef).
+[DeleteAppRequestRequestTypeDef](./type_defs.md#deleteapprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1702,7 +1712,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_app_image_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_app_image_config)
 
 Arguments mapping described in
-[DeleteAppImageConfigRequestTypeDef](./type_defs.md#deleteappimageconfigrequesttypedef).
+[DeleteAppImageConfigRequestRequestTypeDef](./type_defs.md#deleteappimageconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1718,7 +1728,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_artifact)
 
 Arguments mapping described in
-[DeleteArtifactRequestTypeDef](./type_defs.md#deleteartifactrequesttypedef).
+[DeleteArtifactRequestRequestTypeDef](./type_defs.md#deleteartifactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1726,7 +1736,7 @@ Keyword-only arguments:
 - `Source`: [ArtifactSourceTypeDef](./type_defs.md#artifactsourcetypedef)
 
 Returns
-[DeleteArtifactResponseResponseTypeDef](./type_defs.md#deleteartifactresponseresponsetypedef).
+[DeleteArtifactResponseTypeDef](./type_defs.md#deleteartifactresponsetypedef).
 
 ### delete_association
 
@@ -1738,7 +1748,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_association)
 
 Arguments mapping described in
-[DeleteAssociationRequestTypeDef](./type_defs.md#deleteassociationrequesttypedef).
+[DeleteAssociationRequestRequestTypeDef](./type_defs.md#deleteassociationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1746,7 +1756,7 @@ Keyword-only arguments:
 - `DestinationArn`: `str` *(required)*
 
 Returns
-[DeleteAssociationResponseResponseTypeDef](./type_defs.md#deleteassociationresponseresponsetypedef).
+[DeleteAssociationResponseTypeDef](./type_defs.md#deleteassociationresponsetypedef).
 
 ### delete_code_repository
 
@@ -1758,7 +1768,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_code_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_code_repository)
 
 Arguments mapping described in
-[DeleteCodeRepositoryInputTypeDef](./type_defs.md#deletecoderepositoryinputtypedef).
+[DeleteCodeRepositoryInputRequestTypeDef](./type_defs.md#deletecoderepositoryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1774,14 +1784,14 @@ Boto3 documentation:
 [SageMaker.Client.delete_context](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_context)
 
 Arguments mapping described in
-[DeleteContextRequestTypeDef](./type_defs.md#deletecontextrequesttypedef).
+[DeleteContextRequestRequestTypeDef](./type_defs.md#deletecontextrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContextName`: `str` *(required)*
 
 Returns
-[DeleteContextResponseResponseTypeDef](./type_defs.md#deletecontextresponseresponsetypedef).
+[DeleteContextResponseTypeDef](./type_defs.md#deletecontextresponsetypedef).
 
 ### delete_data_quality_job_definition
 
@@ -1794,7 +1804,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_data_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_data_quality_job_definition)
 
 Arguments mapping described in
-[DeleteDataQualityJobDefinitionRequestTypeDef](./type_defs.md#deletedataqualityjobdefinitionrequesttypedef).
+[DeleteDataQualityJobDefinitionRequestRequestTypeDef](./type_defs.md#deletedataqualityjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1810,7 +1820,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_device_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_device_fleet)
 
 Arguments mapping described in
-[DeleteDeviceFleetRequestTypeDef](./type_defs.md#deletedevicefleetrequesttypedef).
+[DeleteDeviceFleetRequestRequestTypeDef](./type_defs.md#deletedevicefleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1826,7 +1836,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_domain)
 
 Arguments mapping described in
-[DeleteDomainRequestTypeDef](./type_defs.md#deletedomainrequesttypedef).
+[DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1844,7 +1854,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_endpoint)
 
 Arguments mapping described in
-[DeleteEndpointInputTypeDef](./type_defs.md#deleteendpointinputtypedef).
+[DeleteEndpointInputRequestTypeDef](./type_defs.md#deleteendpointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1860,7 +1870,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_endpoint_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_endpoint_config)
 
 Arguments mapping described in
-[DeleteEndpointConfigInputTypeDef](./type_defs.md#deleteendpointconfiginputtypedef).
+[DeleteEndpointConfigInputRequestTypeDef](./type_defs.md#deleteendpointconfiginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1876,14 +1886,14 @@ Boto3 documentation:
 [SageMaker.Client.delete_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_experiment)
 
 Arguments mapping described in
-[DeleteExperimentRequestTypeDef](./type_defs.md#deleteexperimentrequesttypedef).
+[DeleteExperimentRequestRequestTypeDef](./type_defs.md#deleteexperimentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ExperimentName`: `str` *(required)*
 
 Returns
-[DeleteExperimentResponseResponseTypeDef](./type_defs.md#deleteexperimentresponseresponsetypedef).
+[DeleteExperimentResponseTypeDef](./type_defs.md#deleteexperimentresponsetypedef).
 
 ### delete_feature_group
 
@@ -1896,7 +1906,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_feature_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_feature_group)
 
 Arguments mapping described in
-[DeleteFeatureGroupRequestTypeDef](./type_defs.md#deletefeaturegrouprequesttypedef).
+[DeleteFeatureGroupRequestRequestTypeDef](./type_defs.md#deletefeaturegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1912,7 +1922,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_flow_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_flow_definition)
 
 Arguments mapping described in
-[DeleteFlowDefinitionRequestTypeDef](./type_defs.md#deleteflowdefinitionrequesttypedef).
+[DeleteFlowDefinitionRequestRequestTypeDef](./type_defs.md#deleteflowdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1931,7 +1941,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_human_task_ui](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_human_task_ui)
 
 Arguments mapping described in
-[DeleteHumanTaskUiRequestTypeDef](./type_defs.md#deletehumantaskuirequesttypedef).
+[DeleteHumanTaskUiRequestRequestTypeDef](./type_defs.md#deletehumantaskuirequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1949,7 +1959,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_image)
 
 Arguments mapping described in
-[DeleteImageRequestTypeDef](./type_defs.md#deleteimagerequesttypedef).
+[DeleteImageRequestRequestTypeDef](./type_defs.md#deleteimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1967,7 +1977,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_image_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_image_version)
 
 Arguments mapping described in
-[DeleteImageVersionRequestTypeDef](./type_defs.md#deleteimageversionrequesttypedef).
+[DeleteImageVersionRequestRequestTypeDef](./type_defs.md#deleteimageversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1986,7 +1996,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model)
 
 Arguments mapping described in
-[DeleteModelInputTypeDef](./type_defs.md#deletemodelinputtypedef).
+[DeleteModelInputRequestTypeDef](./type_defs.md#deletemodelinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2003,7 +2013,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_model_bias_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_bias_job_definition)
 
 Arguments mapping described in
-[DeleteModelBiasJobDefinitionRequestTypeDef](./type_defs.md#deletemodelbiasjobdefinitionrequesttypedef).
+[DeleteModelBiasJobDefinitionRequestRequestTypeDef](./type_defs.md#deletemodelbiasjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2020,7 +2030,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_model_explainability_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_explainability_job_definition)
 
 Arguments mapping described in
-[DeleteModelExplainabilityJobDefinitionRequestTypeDef](./type_defs.md#deletemodelexplainabilityjobdefinitionrequesttypedef).
+[DeleteModelExplainabilityJobDefinitionRequestRequestTypeDef](./type_defs.md#deletemodelexplainabilityjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2036,7 +2046,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_model_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package)
 
 Arguments mapping described in
-[DeleteModelPackageInputTypeDef](./type_defs.md#deletemodelpackageinputtypedef).
+[DeleteModelPackageInputRequestTypeDef](./type_defs.md#deletemodelpackageinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2053,7 +2063,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_model_package_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package_group)
 
 Arguments mapping described in
-[DeleteModelPackageGroupInputTypeDef](./type_defs.md#deletemodelpackagegroupinputtypedef).
+[DeleteModelPackageGroupInputRequestTypeDef](./type_defs.md#deletemodelpackagegroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2070,7 +2080,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_model_package_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_package_group_policy)
 
 Arguments mapping described in
-[DeleteModelPackageGroupPolicyInputTypeDef](./type_defs.md#deletemodelpackagegrouppolicyinputtypedef).
+[DeleteModelPackageGroupPolicyInputRequestTypeDef](./type_defs.md#deletemodelpackagegrouppolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2087,7 +2097,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_model_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_model_quality_job_definition)
 
 Arguments mapping described in
-[DeleteModelQualityJobDefinitionRequestTypeDef](./type_defs.md#deletemodelqualityjobdefinitionrequesttypedef).
+[DeleteModelQualityJobDefinitionRequestRequestTypeDef](./type_defs.md#deletemodelqualityjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2104,7 +2114,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_monitoring_schedule)
 
 Arguments mapping described in
-[DeleteMonitoringScheduleRequestTypeDef](./type_defs.md#deletemonitoringschedulerequesttypedef).
+[DeleteMonitoringScheduleRequestRequestTypeDef](./type_defs.md#deletemonitoringschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2121,7 +2131,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_notebook_instance)
 
 Arguments mapping described in
-[DeleteNotebookInstanceInputTypeDef](./type_defs.md#deletenotebookinstanceinputtypedef).
+[DeleteNotebookInstanceInputRequestTypeDef](./type_defs.md#deletenotebookinstanceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2138,7 +2148,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_notebook_instance_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_notebook_instance_lifecycle_config)
 
 Arguments mapping described in
-[DeleteNotebookInstanceLifecycleConfigInputTypeDef](./type_defs.md#deletenotebookinstancelifecycleconfiginputtypedef).
+[DeleteNotebookInstanceLifecycleConfigInputRequestTypeDef](./type_defs.md#deletenotebookinstancelifecycleconfiginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2154,7 +2164,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_pipeline)
 
 Arguments mapping described in
-[DeletePipelineRequestTypeDef](./type_defs.md#deletepipelinerequesttypedef).
+[DeletePipelineRequestRequestTypeDef](./type_defs.md#deletepipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2162,7 +2172,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str` *(required)*
 
 Returns
-[DeletePipelineResponseResponseTypeDef](./type_defs.md#deletepipelineresponseresponsetypedef).
+[DeletePipelineResponseTypeDef](./type_defs.md#deletepipelineresponsetypedef).
 
 ### delete_project
 
@@ -2174,7 +2184,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_project)
 
 Arguments mapping described in
-[DeleteProjectInputTypeDef](./type_defs.md#deleteprojectinputtypedef).
+[DeleteProjectInputRequestTypeDef](./type_defs.md#deleteprojectinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2190,7 +2200,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_tags)
 
 Arguments mapping described in
-[DeleteTagsInputTypeDef](./type_defs.md#deletetagsinputtypedef).
+[DeleteTagsInputRequestTypeDef](./type_defs.md#deletetagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2209,14 +2219,14 @@ Boto3 documentation:
 [SageMaker.Client.delete_trial](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_trial)
 
 Arguments mapping described in
-[DeleteTrialRequestTypeDef](./type_defs.md#deletetrialrequesttypedef).
+[DeleteTrialRequestRequestTypeDef](./type_defs.md#deletetrialrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TrialName`: `str` *(required)*
 
 Returns
-[DeleteTrialResponseResponseTypeDef](./type_defs.md#deletetrialresponseresponsetypedef).
+[DeleteTrialResponseTypeDef](./type_defs.md#deletetrialresponsetypedef).
 
 ### delete_trial_component
 
@@ -2228,14 +2238,14 @@ Boto3 documentation:
 [SageMaker.Client.delete_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_trial_component)
 
 Arguments mapping described in
-[DeleteTrialComponentRequestTypeDef](./type_defs.md#deletetrialcomponentrequesttypedef).
+[DeleteTrialComponentRequestRequestTypeDef](./type_defs.md#deletetrialcomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TrialComponentName`: `str` *(required)*
 
 Returns
-[DeleteTrialComponentResponseResponseTypeDef](./type_defs.md#deletetrialcomponentresponseresponsetypedef).
+[DeleteTrialComponentResponseTypeDef](./type_defs.md#deletetrialcomponentresponsetypedef).
 
 ### delete_user_profile
 
@@ -2247,7 +2257,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_user_profile)
 
 Arguments mapping described in
-[DeleteUserProfileRequestTypeDef](./type_defs.md#deleteuserprofilerequesttypedef).
+[DeleteUserProfileRequestRequestTypeDef](./type_defs.md#deleteuserprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2264,7 +2274,7 @@ Boto3 documentation:
 [SageMaker.Client.delete_workforce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_workforce)
 
 Arguments mapping described in
-[DeleteWorkforceRequestTypeDef](./type_defs.md#deleteworkforcerequesttypedef).
+[DeleteWorkforceRequestRequestTypeDef](./type_defs.md#deleteworkforcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2282,14 +2292,14 @@ Boto3 documentation:
 [SageMaker.Client.delete_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_workteam)
 
 Arguments mapping described in
-[DeleteWorkteamRequestTypeDef](./type_defs.md#deleteworkteamrequesttypedef).
+[DeleteWorkteamRequestRequestTypeDef](./type_defs.md#deleteworkteamrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `WorkteamName`: `str` *(required)*
 
 Returns
-[DeleteWorkteamResponseResponseTypeDef](./type_defs.md#deleteworkteamresponseresponsetypedef).
+[DeleteWorkteamResponseTypeDef](./type_defs.md#deleteworkteamresponsetypedef).
 
 ### deregister_devices
 
@@ -2301,7 +2311,7 @@ Boto3 documentation:
 [SageMaker.Client.deregister_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.deregister_devices)
 
 Arguments mapping described in
-[DeregisterDevicesRequestTypeDef](./type_defs.md#deregisterdevicesrequesttypedef).
+[DeregisterDevicesRequestRequestTypeDef](./type_defs.md#deregisterdevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2318,14 +2328,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_action)
 
 Arguments mapping described in
-[DescribeActionRequestTypeDef](./type_defs.md#describeactionrequesttypedef).
+[DescribeActionRequestRequestTypeDef](./type_defs.md#describeactionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ActionName`: `str` *(required)*
 
 Returns
-[DescribeActionResponseResponseTypeDef](./type_defs.md#describeactionresponseresponsetypedef).
+[DescribeActionResponseTypeDef](./type_defs.md#describeactionresponsetypedef).
 
 ### describe_algorithm
 
@@ -2337,14 +2347,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_algorithm)
 
 Arguments mapping described in
-[DescribeAlgorithmInputTypeDef](./type_defs.md#describealgorithminputtypedef).
+[DescribeAlgorithmInputRequestTypeDef](./type_defs.md#describealgorithminputrequesttypedef).
 
 Keyword-only arguments:
 
 - `AlgorithmName`: `str` *(required)*
 
 Returns
-[DescribeAlgorithmOutputResponseTypeDef](./type_defs.md#describealgorithmoutputresponsetypedef).
+[DescribeAlgorithmOutputTypeDef](./type_defs.md#describealgorithmoutputtypedef).
 
 ### describe_app
 
@@ -2356,7 +2366,7 @@ Boto3 documentation:
 [SageMaker.Client.describe_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_app)
 
 Arguments mapping described in
-[DescribeAppRequestTypeDef](./type_defs.md#describeapprequesttypedef).
+[DescribeAppRequestRequestTypeDef](./type_defs.md#describeapprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2366,7 +2376,7 @@ Keyword-only arguments:
 - `AppName`: `str` *(required)*
 
 Returns
-[DescribeAppResponseResponseTypeDef](./type_defs.md#describeappresponseresponsetypedef).
+[DescribeAppResponseTypeDef](./type_defs.md#describeappresponsetypedef).
 
 ### describe_app_image_config
 
@@ -2379,14 +2389,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_app_image_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_app_image_config)
 
 Arguments mapping described in
-[DescribeAppImageConfigRequestTypeDef](./type_defs.md#describeappimageconfigrequesttypedef).
+[DescribeAppImageConfigRequestRequestTypeDef](./type_defs.md#describeappimageconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AppImageConfigName`: `str` *(required)*
 
 Returns
-[DescribeAppImageConfigResponseResponseTypeDef](./type_defs.md#describeappimageconfigresponseresponsetypedef).
+[DescribeAppImageConfigResponseTypeDef](./type_defs.md#describeappimageconfigresponsetypedef).
 
 ### describe_artifact
 
@@ -2398,14 +2408,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_artifact)
 
 Arguments mapping described in
-[DescribeArtifactRequestTypeDef](./type_defs.md#describeartifactrequesttypedef).
+[DescribeArtifactRequestRequestTypeDef](./type_defs.md#describeartifactrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ArtifactArn`: `str` *(required)*
 
 Returns
-[DescribeArtifactResponseResponseTypeDef](./type_defs.md#describeartifactresponseresponsetypedef).
+[DescribeArtifactResponseTypeDef](./type_defs.md#describeartifactresponsetypedef).
 
 ### describe_auto_ml_job
 
@@ -2417,14 +2427,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_auto_ml_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_auto_ml_job)
 
 Arguments mapping described in
-[DescribeAutoMLJobRequestTypeDef](./type_defs.md#describeautomljobrequesttypedef).
+[DescribeAutoMLJobRequestRequestTypeDef](./type_defs.md#describeautomljobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AutoMLJobName`: `str` *(required)*
 
 Returns
-[DescribeAutoMLJobResponseResponseTypeDef](./type_defs.md#describeautomljobresponseresponsetypedef).
+[DescribeAutoMLJobResponseTypeDef](./type_defs.md#describeautomljobresponsetypedef).
 
 ### describe_code_repository
 
@@ -2437,14 +2447,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_code_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_code_repository)
 
 Arguments mapping described in
-[DescribeCodeRepositoryInputTypeDef](./type_defs.md#describecoderepositoryinputtypedef).
+[DescribeCodeRepositoryInputRequestTypeDef](./type_defs.md#describecoderepositoryinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `CodeRepositoryName`: `str` *(required)*
 
 Returns
-[DescribeCodeRepositoryOutputResponseTypeDef](./type_defs.md#describecoderepositoryoutputresponsetypedef).
+[DescribeCodeRepositoryOutputTypeDef](./type_defs.md#describecoderepositoryoutputtypedef).
 
 ### describe_compilation_job
 
@@ -2457,14 +2467,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_compilation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_compilation_job)
 
 Arguments mapping described in
-[DescribeCompilationJobRequestTypeDef](./type_defs.md#describecompilationjobrequesttypedef).
+[DescribeCompilationJobRequestRequestTypeDef](./type_defs.md#describecompilationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CompilationJobName`: `str` *(required)*
 
 Returns
-[DescribeCompilationJobResponseResponseTypeDef](./type_defs.md#describecompilationjobresponseresponsetypedef).
+[DescribeCompilationJobResponseTypeDef](./type_defs.md#describecompilationjobresponsetypedef).
 
 ### describe_context
 
@@ -2476,14 +2486,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_context](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_context)
 
 Arguments mapping described in
-[DescribeContextRequestTypeDef](./type_defs.md#describecontextrequesttypedef).
+[DescribeContextRequestRequestTypeDef](./type_defs.md#describecontextrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContextName`: `str` *(required)*
 
 Returns
-[DescribeContextResponseResponseTypeDef](./type_defs.md#describecontextresponseresponsetypedef).
+[DescribeContextResponseTypeDef](./type_defs.md#describecontextresponsetypedef).
 
 ### describe_data_quality_job_definition
 
@@ -2496,14 +2506,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_data_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_data_quality_job_definition)
 
 Arguments mapping described in
-[DescribeDataQualityJobDefinitionRequestTypeDef](./type_defs.md#describedataqualityjobdefinitionrequesttypedef).
+[DescribeDataQualityJobDefinitionRequestRequestTypeDef](./type_defs.md#describedataqualityjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 
 Returns
-[DescribeDataQualityJobDefinitionResponseResponseTypeDef](./type_defs.md#describedataqualityjobdefinitionresponseresponsetypedef).
+[DescribeDataQualityJobDefinitionResponseTypeDef](./type_defs.md#describedataqualityjobdefinitionresponsetypedef).
 
 ### describe_device
 
@@ -2515,7 +2525,7 @@ Boto3 documentation:
 [SageMaker.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_device)
 
 Arguments mapping described in
-[DescribeDeviceRequestTypeDef](./type_defs.md#describedevicerequesttypedef).
+[DescribeDeviceRequestRequestTypeDef](./type_defs.md#describedevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2524,7 +2534,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeDeviceResponseResponseTypeDef](./type_defs.md#describedeviceresponseresponsetypedef).
+[DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
 
 ### describe_device_fleet
 
@@ -2536,14 +2546,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_device_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_device_fleet)
 
 Arguments mapping described in
-[DescribeDeviceFleetRequestTypeDef](./type_defs.md#describedevicefleetrequesttypedef).
+[DescribeDeviceFleetRequestRequestTypeDef](./type_defs.md#describedevicefleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeviceFleetName`: `str` *(required)*
 
 Returns
-[DescribeDeviceFleetResponseResponseTypeDef](./type_defs.md#describedevicefleetresponseresponsetypedef).
+[DescribeDeviceFleetResponseTypeDef](./type_defs.md#describedevicefleetresponsetypedef).
 
 ### describe_domain
 
@@ -2555,14 +2565,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_domain)
 
 Arguments mapping described in
-[DescribeDomainRequestTypeDef](./type_defs.md#describedomainrequesttypedef).
+[DescribeDomainRequestRequestTypeDef](./type_defs.md#describedomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DomainId`: `str` *(required)*
 
 Returns
-[DescribeDomainResponseResponseTypeDef](./type_defs.md#describedomainresponseresponsetypedef).
+[DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef).
 
 ### describe_edge_packaging_job
 
@@ -2575,14 +2585,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_edge_packaging_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_edge_packaging_job)
 
 Arguments mapping described in
-[DescribeEdgePackagingJobRequestTypeDef](./type_defs.md#describeedgepackagingjobrequesttypedef).
+[DescribeEdgePackagingJobRequestRequestTypeDef](./type_defs.md#describeedgepackagingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `EdgePackagingJobName`: `str` *(required)*
 
 Returns
-[DescribeEdgePackagingJobResponseResponseTypeDef](./type_defs.md#describeedgepackagingjobresponseresponsetypedef).
+[DescribeEdgePackagingJobResponseTypeDef](./type_defs.md#describeedgepackagingjobresponsetypedef).
 
 ### describe_endpoint
 
@@ -2594,14 +2604,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_endpoint)
 
 Arguments mapping described in
-[DescribeEndpointInputTypeDef](./type_defs.md#describeendpointinputtypedef).
+[DescribeEndpointInputRequestTypeDef](./type_defs.md#describeendpointinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 
 Returns
-[DescribeEndpointOutputResponseTypeDef](./type_defs.md#describeendpointoutputresponsetypedef).
+[DescribeEndpointOutputTypeDef](./type_defs.md#describeendpointoutputtypedef).
 
 ### describe_endpoint_config
 
@@ -2615,14 +2625,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_endpoint_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_endpoint_config)
 
 Arguments mapping described in
-[DescribeEndpointConfigInputTypeDef](./type_defs.md#describeendpointconfiginputtypedef).
+[DescribeEndpointConfigInputRequestTypeDef](./type_defs.md#describeendpointconfiginputrequesttypedef).
 
 Keyword-only arguments:
 
 - `EndpointConfigName`: `str` *(required)*
 
 Returns
-[DescribeEndpointConfigOutputResponseTypeDef](./type_defs.md#describeendpointconfigoutputresponsetypedef).
+[DescribeEndpointConfigOutputTypeDef](./type_defs.md#describeendpointconfigoutputtypedef).
 
 ### describe_experiment
 
@@ -2634,14 +2644,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_experiment)
 
 Arguments mapping described in
-[DescribeExperimentRequestTypeDef](./type_defs.md#describeexperimentrequesttypedef).
+[DescribeExperimentRequestRequestTypeDef](./type_defs.md#describeexperimentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ExperimentName`: `str` *(required)*
 
 Returns
-[DescribeExperimentResponseResponseTypeDef](./type_defs.md#describeexperimentresponseresponsetypedef).
+[DescribeExperimentResponseTypeDef](./type_defs.md#describeexperimentresponsetypedef).
 
 ### describe_feature_group
 
@@ -2653,7 +2663,7 @@ Boto3 documentation:
 [SageMaker.Client.describe_feature_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_feature_group)
 
 Arguments mapping described in
-[DescribeFeatureGroupRequestTypeDef](./type_defs.md#describefeaturegrouprequesttypedef).
+[DescribeFeatureGroupRequestRequestTypeDef](./type_defs.md#describefeaturegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2661,7 +2671,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFeatureGroupResponseResponseTypeDef](./type_defs.md#describefeaturegroupresponseresponsetypedef).
+[DescribeFeatureGroupResponseTypeDef](./type_defs.md#describefeaturegroupresponsetypedef).
 
 ### describe_flow_definition
 
@@ -2674,14 +2684,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_flow_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_flow_definition)
 
 Arguments mapping described in
-[DescribeFlowDefinitionRequestTypeDef](./type_defs.md#describeflowdefinitionrequesttypedef).
+[DescribeFlowDefinitionRequestRequestTypeDef](./type_defs.md#describeflowdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FlowDefinitionName`: `str` *(required)*
 
 Returns
-[DescribeFlowDefinitionResponseResponseTypeDef](./type_defs.md#describeflowdefinitionresponseresponsetypedef).
+[DescribeFlowDefinitionResponseTypeDef](./type_defs.md#describeflowdefinitionresponsetypedef).
 
 ### describe_human_task_ui
 
@@ -2694,14 +2704,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_human_task_ui](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_human_task_ui)
 
 Arguments mapping described in
-[DescribeHumanTaskUiRequestTypeDef](./type_defs.md#describehumantaskuirequesttypedef).
+[DescribeHumanTaskUiRequestRequestTypeDef](./type_defs.md#describehumantaskuirequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HumanTaskUiName`: `str` *(required)*
 
 Returns
-[DescribeHumanTaskUiResponseResponseTypeDef](./type_defs.md#describehumantaskuiresponseresponsetypedef).
+[DescribeHumanTaskUiResponseTypeDef](./type_defs.md#describehumantaskuiresponsetypedef).
 
 ### describe_hyper_parameter_tuning_job
 
@@ -2714,14 +2724,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_hyper_parameter_tuning_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_hyper_parameter_tuning_job)
 
 Arguments mapping described in
-[DescribeHyperParameterTuningJobRequestTypeDef](./type_defs.md#describehyperparametertuningjobrequesttypedef).
+[DescribeHyperParameterTuningJobRequestRequestTypeDef](./type_defs.md#describehyperparametertuningjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HyperParameterTuningJobName`: `str` *(required)*
 
 Returns
-[DescribeHyperParameterTuningJobResponseResponseTypeDef](./type_defs.md#describehyperparametertuningjobresponseresponsetypedef).
+[DescribeHyperParameterTuningJobResponseTypeDef](./type_defs.md#describehyperparametertuningjobresponsetypedef).
 
 ### describe_image
 
@@ -2733,14 +2743,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_image)
 
 Arguments mapping described in
-[DescribeImageRequestTypeDef](./type_defs.md#describeimagerequesttypedef).
+[DescribeImageRequestRequestTypeDef](./type_defs.md#describeimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ImageName`: `str` *(required)*
 
 Returns
-[DescribeImageResponseResponseTypeDef](./type_defs.md#describeimageresponseresponsetypedef).
+[DescribeImageResponseTypeDef](./type_defs.md#describeimageresponsetypedef).
 
 ### describe_image_version
 
@@ -2752,7 +2762,7 @@ Boto3 documentation:
 [SageMaker.Client.describe_image_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_image_version)
 
 Arguments mapping described in
-[DescribeImageVersionRequestTypeDef](./type_defs.md#describeimageversionrequesttypedef).
+[DescribeImageVersionRequestRequestTypeDef](./type_defs.md#describeimageversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2760,7 +2770,7 @@ Keyword-only arguments:
 - `Version`: `int`
 
 Returns
-[DescribeImageVersionResponseResponseTypeDef](./type_defs.md#describeimageversionresponseresponsetypedef).
+[DescribeImageVersionResponseTypeDef](./type_defs.md#describeimageversionresponsetypedef).
 
 ### describe_labeling_job
 
@@ -2772,14 +2782,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_labeling_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_labeling_job)
 
 Arguments mapping described in
-[DescribeLabelingJobRequestTypeDef](./type_defs.md#describelabelingjobrequesttypedef).
+[DescribeLabelingJobRequestRequestTypeDef](./type_defs.md#describelabelingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LabelingJobName`: `str` *(required)*
 
 Returns
-[DescribeLabelingJobResponseResponseTypeDef](./type_defs.md#describelabelingjobresponseresponsetypedef).
+[DescribeLabelingJobResponseTypeDef](./type_defs.md#describelabelingjobresponsetypedef).
 
 ### describe_model
 
@@ -2791,14 +2801,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model)
 
 Arguments mapping described in
-[DescribeModelInputTypeDef](./type_defs.md#describemodelinputtypedef).
+[DescribeModelInputRequestTypeDef](./type_defs.md#describemodelinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
 
 Returns
-[DescribeModelOutputResponseTypeDef](./type_defs.md#describemodeloutputresponsetypedef).
+[DescribeModelOutputTypeDef](./type_defs.md#describemodeloutputtypedef).
 
 ### describe_model_bias_job_definition
 
@@ -2811,14 +2821,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_model_bias_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_bias_job_definition)
 
 Arguments mapping described in
-[DescribeModelBiasJobDefinitionRequestTypeDef](./type_defs.md#describemodelbiasjobdefinitionrequesttypedef).
+[DescribeModelBiasJobDefinitionRequestRequestTypeDef](./type_defs.md#describemodelbiasjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 
 Returns
-[DescribeModelBiasJobDefinitionResponseResponseTypeDef](./type_defs.md#describemodelbiasjobdefinitionresponseresponsetypedef).
+[DescribeModelBiasJobDefinitionResponseTypeDef](./type_defs.md#describemodelbiasjobdefinitionresponsetypedef).
 
 ### describe_model_explainability_job_definition
 
@@ -2832,19 +2842,19 @@ Boto3 documentation:
 [SageMaker.Client.describe_model_explainability_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_explainability_job_definition)
 
 Arguments mapping described in
-[DescribeModelExplainabilityJobDefinitionRequestTypeDef](./type_defs.md#describemodelexplainabilityjobdefinitionrequesttypedef).
+[DescribeModelExplainabilityJobDefinitionRequestRequestTypeDef](./type_defs.md#describemodelexplainabilityjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 
 Returns
-[DescribeModelExplainabilityJobDefinitionResponseResponseTypeDef](./type_defs.md#describemodelexplainabilityjobdefinitionresponseresponsetypedef).
+[DescribeModelExplainabilityJobDefinitionResponseTypeDef](./type_defs.md#describemodelexplainabilityjobdefinitionresponsetypedef).
 
 ### describe_model_package
 
 Returns a description of the specified model package, which is used to create
-Amazon SageMaker models or list them on AWS Marketplace.
+Amazon SageMaker models or list them on Amazon Web Services Marketplace.
 
 Type annotations for `boto3.client("sagemaker").describe_model_package` method.
 
@@ -2852,14 +2862,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_model_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_package)
 
 Arguments mapping described in
-[DescribeModelPackageInputTypeDef](./type_defs.md#describemodelpackageinputtypedef).
+[DescribeModelPackageInputRequestTypeDef](./type_defs.md#describemodelpackageinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ModelPackageName`: `str` *(required)*
 
 Returns
-[DescribeModelPackageOutputResponseTypeDef](./type_defs.md#describemodelpackageoutputresponsetypedef).
+[DescribeModelPackageOutputTypeDef](./type_defs.md#describemodelpackageoutputtypedef).
 
 ### describe_model_package_group
 
@@ -2872,14 +2882,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_model_package_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_package_group)
 
 Arguments mapping described in
-[DescribeModelPackageGroupInputTypeDef](./type_defs.md#describemodelpackagegroupinputtypedef).
+[DescribeModelPackageGroupInputRequestTypeDef](./type_defs.md#describemodelpackagegroupinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ModelPackageGroupName`: `str` *(required)*
 
 Returns
-[DescribeModelPackageGroupOutputResponseTypeDef](./type_defs.md#describemodelpackagegroupoutputresponsetypedef).
+[DescribeModelPackageGroupOutputTypeDef](./type_defs.md#describemodelpackagegroupoutputtypedef).
 
 ### describe_model_quality_job_definition
 
@@ -2892,14 +2902,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_model_quality_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_model_quality_job_definition)
 
 Arguments mapping described in
-[DescribeModelQualityJobDefinitionRequestTypeDef](./type_defs.md#describemodelqualityjobdefinitionrequesttypedef).
+[DescribeModelQualityJobDefinitionRequestRequestTypeDef](./type_defs.md#describemodelqualityjobdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 
 Returns
-[DescribeModelQualityJobDefinitionResponseResponseTypeDef](./type_defs.md#describemodelqualityjobdefinitionresponseresponsetypedef).
+[DescribeModelQualityJobDefinitionResponseTypeDef](./type_defs.md#describemodelqualityjobdefinitionresponsetypedef).
 
 ### describe_monitoring_schedule
 
@@ -2912,14 +2922,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_monitoring_schedule)
 
 Arguments mapping described in
-[DescribeMonitoringScheduleRequestTypeDef](./type_defs.md#describemonitoringschedulerequesttypedef).
+[DescribeMonitoringScheduleRequestRequestTypeDef](./type_defs.md#describemonitoringschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MonitoringScheduleName`: `str` *(required)*
 
 Returns
-[DescribeMonitoringScheduleResponseResponseTypeDef](./type_defs.md#describemonitoringscheduleresponseresponsetypedef).
+[DescribeMonitoringScheduleResponseTypeDef](./type_defs.md#describemonitoringscheduleresponsetypedef).
 
 ### describe_notebook_instance
 
@@ -2932,14 +2942,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_notebook_instance)
 
 Arguments mapping described in
-[DescribeNotebookInstanceInputTypeDef](./type_defs.md#describenotebookinstanceinputtypedef).
+[DescribeNotebookInstanceInputRequestTypeDef](./type_defs.md#describenotebookinstanceinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NotebookInstanceName`: `str` *(required)*
 
 Returns
-[DescribeNotebookInstanceOutputResponseTypeDef](./type_defs.md#describenotebookinstanceoutputresponsetypedef).
+[DescribeNotebookInstanceOutputTypeDef](./type_defs.md#describenotebookinstanceoutputtypedef).
 
 ### describe_notebook_instance_lifecycle_config
 
@@ -2952,14 +2962,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_notebook_instance_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_notebook_instance_lifecycle_config)
 
 Arguments mapping described in
-[DescribeNotebookInstanceLifecycleConfigInputTypeDef](./type_defs.md#describenotebookinstancelifecycleconfiginputtypedef).
+[DescribeNotebookInstanceLifecycleConfigInputRequestTypeDef](./type_defs.md#describenotebookinstancelifecycleconfiginputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NotebookInstanceLifecycleConfigName`: `str` *(required)*
 
 Returns
-[DescribeNotebookInstanceLifecycleConfigOutputResponseTypeDef](./type_defs.md#describenotebookinstancelifecycleconfigoutputresponsetypedef).
+[DescribeNotebookInstanceLifecycleConfigOutputTypeDef](./type_defs.md#describenotebookinstancelifecycleconfigoutputtypedef).
 
 ### describe_pipeline
 
@@ -2971,14 +2981,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline)
 
 Arguments mapping described in
-[DescribePipelineRequestTypeDef](./type_defs.md#describepipelinerequesttypedef).
+[DescribePipelineRequestRequestTypeDef](./type_defs.md#describepipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PipelineName`: `str` *(required)*
 
 Returns
-[DescribePipelineResponseResponseTypeDef](./type_defs.md#describepipelineresponseresponsetypedef).
+[DescribePipelineResponseTypeDef](./type_defs.md#describepipelineresponsetypedef).
 
 ### describe_pipeline_definition_for_execution
 
@@ -2991,14 +3001,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_pipeline_definition_for_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline_definition_for_execution)
 
 Arguments mapping described in
-[DescribePipelineDefinitionForExecutionRequestTypeDef](./type_defs.md#describepipelinedefinitionforexecutionrequesttypedef).
+[DescribePipelineDefinitionForExecutionRequestRequestTypeDef](./type_defs.md#describepipelinedefinitionforexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PipelineExecutionArn`: `str` *(required)*
 
 Returns
-[DescribePipelineDefinitionForExecutionResponseResponseTypeDef](./type_defs.md#describepipelinedefinitionforexecutionresponseresponsetypedef).
+[DescribePipelineDefinitionForExecutionResponseTypeDef](./type_defs.md#describepipelinedefinitionforexecutionresponsetypedef).
 
 ### describe_pipeline_execution
 
@@ -3011,14 +3021,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_pipeline_execution)
 
 Arguments mapping described in
-[DescribePipelineExecutionRequestTypeDef](./type_defs.md#describepipelineexecutionrequesttypedef).
+[DescribePipelineExecutionRequestRequestTypeDef](./type_defs.md#describepipelineexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PipelineExecutionArn`: `str` *(required)*
 
 Returns
-[DescribePipelineExecutionResponseResponseTypeDef](./type_defs.md#describepipelineexecutionresponseresponsetypedef).
+[DescribePipelineExecutionResponseTypeDef](./type_defs.md#describepipelineexecutionresponsetypedef).
 
 ### describe_processing_job
 
@@ -3031,14 +3041,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_processing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_processing_job)
 
 Arguments mapping described in
-[DescribeProcessingJobRequestTypeDef](./type_defs.md#describeprocessingjobrequesttypedef).
+[DescribeProcessingJobRequestRequestTypeDef](./type_defs.md#describeprocessingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ProcessingJobName`: `str` *(required)*
 
 Returns
-[DescribeProcessingJobResponseResponseTypeDef](./type_defs.md#describeprocessingjobresponseresponsetypedef).
+[DescribeProcessingJobResponseTypeDef](./type_defs.md#describeprocessingjobresponsetypedef).
 
 ### describe_project
 
@@ -3050,14 +3060,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_project)
 
 Arguments mapping described in
-[DescribeProjectInputTypeDef](./type_defs.md#describeprojectinputtypedef).
+[DescribeProjectInputRequestTypeDef](./type_defs.md#describeprojectinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 
 Returns
-[DescribeProjectOutputResponseTypeDef](./type_defs.md#describeprojectoutputresponsetypedef).
+[DescribeProjectOutputTypeDef](./type_defs.md#describeprojectoutputtypedef).
 
 ### describe_subscribed_workteam
 
@@ -3070,14 +3080,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_subscribed_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_subscribed_workteam)
 
 Arguments mapping described in
-[DescribeSubscribedWorkteamRequestTypeDef](./type_defs.md#describesubscribedworkteamrequesttypedef).
+[DescribeSubscribedWorkteamRequestRequestTypeDef](./type_defs.md#describesubscribedworkteamrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `WorkteamArn`: `str` *(required)*
 
 Returns
-[DescribeSubscribedWorkteamResponseResponseTypeDef](./type_defs.md#describesubscribedworkteamresponseresponsetypedef).
+[DescribeSubscribedWorkteamResponseTypeDef](./type_defs.md#describesubscribedworkteamresponsetypedef).
 
 ### describe_training_job
 
@@ -3089,14 +3099,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_training_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_training_job)
 
 Arguments mapping described in
-[DescribeTrainingJobRequestTypeDef](./type_defs.md#describetrainingjobrequesttypedef).
+[DescribeTrainingJobRequestRequestTypeDef](./type_defs.md#describetrainingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TrainingJobName`: `str` *(required)*
 
 Returns
-[DescribeTrainingJobResponseResponseTypeDef](./type_defs.md#describetrainingjobresponseresponsetypedef).
+[DescribeTrainingJobResponseTypeDef](./type_defs.md#describetrainingjobresponsetypedef).
 
 ### describe_transform_job
 
@@ -3108,14 +3118,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_transform_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_transform_job)
 
 Arguments mapping described in
-[DescribeTransformJobRequestTypeDef](./type_defs.md#describetransformjobrequesttypedef).
+[DescribeTransformJobRequestRequestTypeDef](./type_defs.md#describetransformjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TransformJobName`: `str` *(required)*
 
 Returns
-[DescribeTransformJobResponseResponseTypeDef](./type_defs.md#describetransformjobresponseresponsetypedef).
+[DescribeTransformJobResponseTypeDef](./type_defs.md#describetransformjobresponsetypedef).
 
 ### describe_trial
 
@@ -3127,14 +3137,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_trial](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_trial)
 
 Arguments mapping described in
-[DescribeTrialRequestTypeDef](./type_defs.md#describetrialrequesttypedef).
+[DescribeTrialRequestRequestTypeDef](./type_defs.md#describetrialrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TrialName`: `str` *(required)*
 
 Returns
-[DescribeTrialResponseResponseTypeDef](./type_defs.md#describetrialresponseresponsetypedef).
+[DescribeTrialResponseTypeDef](./type_defs.md#describetrialresponsetypedef).
 
 ### describe_trial_component
 
@@ -3147,14 +3157,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_trial_component)
 
 Arguments mapping described in
-[DescribeTrialComponentRequestTypeDef](./type_defs.md#describetrialcomponentrequesttypedef).
+[DescribeTrialComponentRequestRequestTypeDef](./type_defs.md#describetrialcomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TrialComponentName`: `str` *(required)*
 
 Returns
-[DescribeTrialComponentResponseResponseTypeDef](./type_defs.md#describetrialcomponentresponseresponsetypedef).
+[DescribeTrialComponentResponseTypeDef](./type_defs.md#describetrialcomponentresponsetypedef).
 
 ### describe_user_profile
 
@@ -3166,7 +3176,7 @@ Boto3 documentation:
 [SageMaker.Client.describe_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_user_profile)
 
 Arguments mapping described in
-[DescribeUserProfileRequestTypeDef](./type_defs.md#describeuserprofilerequesttypedef).
+[DescribeUserProfileRequestRequestTypeDef](./type_defs.md#describeuserprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3174,7 +3184,7 @@ Keyword-only arguments:
 - `UserProfileName`: `str` *(required)*
 
 Returns
-[DescribeUserProfileResponseResponseTypeDef](./type_defs.md#describeuserprofileresponseresponsetypedef).
+[DescribeUserProfileResponseTypeDef](./type_defs.md#describeuserprofileresponsetypedef).
 
 ### describe_workforce
 
@@ -3189,14 +3199,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_workforce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_workforce)
 
 Arguments mapping described in
-[DescribeWorkforceRequestTypeDef](./type_defs.md#describeworkforcerequesttypedef).
+[DescribeWorkforceRequestRequestTypeDef](./type_defs.md#describeworkforcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `WorkforceName`: `str` *(required)*
 
 Returns
-[DescribeWorkforceResponseResponseTypeDef](./type_defs.md#describeworkforceresponseresponsetypedef).
+[DescribeWorkforceResponseTypeDef](./type_defs.md#describeworkforceresponsetypedef).
 
 ### describe_workteam
 
@@ -3208,14 +3218,14 @@ Boto3 documentation:
 [SageMaker.Client.describe_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_workteam)
 
 Arguments mapping described in
-[DescribeWorkteamRequestTypeDef](./type_defs.md#describeworkteamrequesttypedef).
+[DescribeWorkteamRequestRequestTypeDef](./type_defs.md#describeworkteamrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `WorkteamName`: `str` *(required)*
 
 Returns
-[DescribeWorkteamResponseResponseTypeDef](./type_defs.md#describeworkteamresponseresponsetypedef).
+[DescribeWorkteamResponseTypeDef](./type_defs.md#describeworkteamresponsetypedef).
 
 ### disable_sagemaker_servicecatalog_portfolio
 
@@ -3240,7 +3250,7 @@ Boto3 documentation:
 [SageMaker.Client.disassociate_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.disassociate_trial_component)
 
 Arguments mapping described in
-[DisassociateTrialComponentRequestTypeDef](./type_defs.md#disassociatetrialcomponentrequesttypedef).
+[DisassociateTrialComponentRequestRequestTypeDef](./type_defs.md#disassociatetrialcomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3248,7 +3258,7 @@ Keyword-only arguments:
 - `TrialName`: `str` *(required)*
 
 Returns
-[DisassociateTrialComponentResponseResponseTypeDef](./type_defs.md#disassociatetrialcomponentresponseresponsetypedef).
+[DisassociateTrialComponentResponseTypeDef](./type_defs.md#disassociatetrialcomponentresponsetypedef).
 
 ### enable_sagemaker_servicecatalog_portfolio
 
@@ -3291,14 +3301,14 @@ Boto3 documentation:
 [SageMaker.Client.get_device_fleet_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_device_fleet_report)
 
 Arguments mapping described in
-[GetDeviceFleetReportRequestTypeDef](./type_defs.md#getdevicefleetreportrequesttypedef).
+[GetDeviceFleetReportRequestRequestTypeDef](./type_defs.md#getdevicefleetreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeviceFleetName`: `str` *(required)*
 
 Returns
-[GetDeviceFleetReportResponseResponseTypeDef](./type_defs.md#getdevicefleetreportresponseresponsetypedef).
+[GetDeviceFleetReportResponseTypeDef](./type_defs.md#getdevicefleetreportresponsetypedef).
 
 ### get_model_package_group_policy
 
@@ -3311,14 +3321,14 @@ Boto3 documentation:
 [SageMaker.Client.get_model_package_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_model_package_group_policy)
 
 Arguments mapping described in
-[GetModelPackageGroupPolicyInputTypeDef](./type_defs.md#getmodelpackagegrouppolicyinputtypedef).
+[GetModelPackageGroupPolicyInputRequestTypeDef](./type_defs.md#getmodelpackagegrouppolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ModelPackageGroupName`: `str` *(required)*
 
 Returns
-[GetModelPackageGroupPolicyOutputResponseTypeDef](./type_defs.md#getmodelpackagegrouppolicyoutputresponsetypedef).
+[GetModelPackageGroupPolicyOutputTypeDef](./type_defs.md#getmodelpackagegrouppolicyoutputtypedef).
 
 ### get_sagemaker_servicecatalog_portfolio_status
 
@@ -3332,7 +3342,7 @@ Boto3 documentation:
 [SageMaker.Client.get_sagemaker_servicecatalog_portfolio_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_sagemaker_servicecatalog_portfolio_status)
 
 Returns
-[GetSagemakerServicecatalogPortfolioStatusOutputResponseTypeDef](./type_defs.md#getsagemakerservicecatalogportfoliostatusoutputresponsetypedef).
+[GetSagemakerServicecatalogPortfolioStatusOutputTypeDef](./type_defs.md#getsagemakerservicecatalogportfoliostatusoutputtypedef).
 
 ### get_search_suggestions
 
@@ -3345,7 +3355,7 @@ Boto3 documentation:
 [SageMaker.Client.get_search_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.get_search_suggestions)
 
 Arguments mapping described in
-[GetSearchSuggestionsRequestTypeDef](./type_defs.md#getsearchsuggestionsrequesttypedef).
+[GetSearchSuggestionsRequestRequestTypeDef](./type_defs.md#getsearchsuggestionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3354,7 +3364,7 @@ Keyword-only arguments:
   [SuggestionQueryTypeDef](./type_defs.md#suggestionquerytypedef)
 
 Returns
-[GetSearchSuggestionsResponseResponseTypeDef](./type_defs.md#getsearchsuggestionsresponseresponsetypedef).
+[GetSearchSuggestionsResponseTypeDef](./type_defs.md#getsearchsuggestionsresponsetypedef).
 
 ### list_actions
 
@@ -3366,7 +3376,7 @@ Boto3 documentation:
 [SageMaker.Client.list_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_actions)
 
 Arguments mapping described in
-[ListActionsRequestTypeDef](./type_defs.md#listactionsrequesttypedef).
+[ListActionsRequestRequestTypeDef](./type_defs.md#listactionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3380,7 +3390,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListActionsResponseResponseTypeDef](./type_defs.md#listactionsresponseresponsetypedef).
+[ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef).
 
 ### list_algorithms
 
@@ -3392,7 +3402,7 @@ Boto3 documentation:
 [SageMaker.Client.list_algorithms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_algorithms)
 
 Arguments mapping described in
-[ListAlgorithmsInputTypeDef](./type_defs.md#listalgorithmsinputtypedef).
+[ListAlgorithmsInputRequestTypeDef](./type_defs.md#listalgorithmsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3405,7 +3415,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListAlgorithmsOutputResponseTypeDef](./type_defs.md#listalgorithmsoutputresponsetypedef).
+[ListAlgorithmsOutputTypeDef](./type_defs.md#listalgorithmsoutputtypedef).
 
 ### list_app_image_configs
 
@@ -3417,7 +3427,7 @@ Boto3 documentation:
 [SageMaker.Client.list_app_image_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_app_image_configs)
 
 Arguments mapping described in
-[ListAppImageConfigsRequestTypeDef](./type_defs.md#listappimageconfigsrequesttypedef).
+[ListAppImageConfigsRequestRequestTypeDef](./type_defs.md#listappimageconfigsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3433,7 +3443,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListAppImageConfigsResponseResponseTypeDef](./type_defs.md#listappimageconfigsresponseresponsetypedef).
+[ListAppImageConfigsResponseTypeDef](./type_defs.md#listappimageconfigsresponsetypedef).
 
 ### list_apps
 
@@ -3445,7 +3455,7 @@ Boto3 documentation:
 [SageMaker.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_apps)
 
 Arguments mapping described in
-[ListAppsRequestTypeDef](./type_defs.md#listappsrequesttypedef).
+[ListAppsRequestRequestTypeDef](./type_defs.md#listappsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3457,8 +3467,7 @@ Keyword-only arguments:
 - `DomainIdEquals`: `str`
 - `UserProfileNameEquals`: `str`
 
-Returns
-[ListAppsResponseResponseTypeDef](./type_defs.md#listappsresponseresponsetypedef).
+Returns [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef).
 
 ### list_artifacts
 
@@ -3470,7 +3479,7 @@ Boto3 documentation:
 [SageMaker.Client.list_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_artifacts)
 
 Arguments mapping described in
-[ListArtifactsRequestTypeDef](./type_defs.md#listartifactsrequesttypedef).
+[ListArtifactsRequestRequestTypeDef](./type_defs.md#listartifactsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3485,7 +3494,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListArtifactsResponseResponseTypeDef](./type_defs.md#listartifactsresponseresponsetypedef).
+[ListArtifactsResponseTypeDef](./type_defs.md#listartifactsresponsetypedef).
 
 ### list_associations
 
@@ -3497,7 +3506,7 @@ Boto3 documentation:
 [SageMaker.Client.list_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_associations)
 
 Arguments mapping described in
-[ListAssociationsRequestTypeDef](./type_defs.md#listassociationsrequesttypedef).
+[ListAssociationsRequestRequestTypeDef](./type_defs.md#listassociationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3515,7 +3524,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAssociationsResponseResponseTypeDef](./type_defs.md#listassociationsresponseresponsetypedef).
+[ListAssociationsResponseTypeDef](./type_defs.md#listassociationsresponsetypedef).
 
 ### list_auto_ml_jobs
 
@@ -3527,7 +3536,7 @@ Boto3 documentation:
 [SageMaker.Client.list_auto_ml_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_auto_ml_jobs)
 
 Arguments mapping described in
-[ListAutoMLJobsRequestTypeDef](./type_defs.md#listautomljobsrequesttypedef).
+[ListAutoMLJobsRequestRequestTypeDef](./type_defs.md#listautomljobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3543,7 +3552,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAutoMLJobsResponseResponseTypeDef](./type_defs.md#listautomljobsresponseresponsetypedef).
+[ListAutoMLJobsResponseTypeDef](./type_defs.md#listautomljobsresponsetypedef).
 
 ### list_candidates_for_auto_ml_job
 
@@ -3556,7 +3565,7 @@ Boto3 documentation:
 [SageMaker.Client.list_candidates_for_auto_ml_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_candidates_for_auto_ml_job)
 
 Arguments mapping described in
-[ListCandidatesForAutoMLJobRequestTypeDef](./type_defs.md#listcandidatesforautomljobrequesttypedef).
+[ListCandidatesForAutoMLJobRequestRequestTypeDef](./type_defs.md#listcandidatesforautomljobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3569,7 +3578,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCandidatesForAutoMLJobResponseResponseTypeDef](./type_defs.md#listcandidatesforautomljobresponseresponsetypedef).
+[ListCandidatesForAutoMLJobResponseTypeDef](./type_defs.md#listcandidatesforautomljobresponsetypedef).
 
 ### list_code_repositories
 
@@ -3581,7 +3590,7 @@ Boto3 documentation:
 [SageMaker.Client.list_code_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_code_repositories)
 
 Arguments mapping described in
-[ListCodeRepositoriesInputTypeDef](./type_defs.md#listcoderepositoriesinputtypedef).
+[ListCodeRepositoriesInputRequestTypeDef](./type_defs.md#listcoderepositoriesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3597,7 +3606,7 @@ Keyword-only arguments:
   [CodeRepositorySortOrderType](./literals.md#coderepositorysortordertype)
 
 Returns
-[ListCodeRepositoriesOutputResponseTypeDef](./type_defs.md#listcoderepositoriesoutputresponsetypedef).
+[ListCodeRepositoriesOutputTypeDef](./type_defs.md#listcoderepositoriesoutputtypedef).
 
 ### list_compilation_jobs
 
@@ -3609,7 +3618,7 @@ Boto3 documentation:
 [SageMaker.Client.list_compilation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_compilation_jobs)
 
 Arguments mapping described in
-[ListCompilationJobsRequestTypeDef](./type_defs.md#listcompilationjobsrequesttypedef).
+[ListCompilationJobsRequestRequestTypeDef](./type_defs.md#listcompilationjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3627,7 +3636,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListCompilationJobsResponseResponseTypeDef](./type_defs.md#listcompilationjobsresponseresponsetypedef).
+[ListCompilationJobsResponseTypeDef](./type_defs.md#listcompilationjobsresponsetypedef).
 
 ### list_contexts
 
@@ -3639,7 +3648,7 @@ Boto3 documentation:
 [SageMaker.Client.list_contexts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_contexts)
 
 Arguments mapping described in
-[ListContextsRequestTypeDef](./type_defs.md#listcontextsrequesttypedef).
+[ListContextsRequestRequestTypeDef](./type_defs.md#listcontextsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3653,7 +3662,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListContextsResponseResponseTypeDef](./type_defs.md#listcontextsresponseresponsetypedef).
+[ListContextsResponseTypeDef](./type_defs.md#listcontextsresponsetypedef).
 
 ### list_data_quality_job_definitions
 
@@ -3666,7 +3675,7 @@ Boto3 documentation:
 [SageMaker.Client.list_data_quality_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_data_quality_job_definitions)
 
 Arguments mapping described in
-[ListDataQualityJobDefinitionsRequestTypeDef](./type_defs.md#listdataqualityjobdefinitionsrequesttypedef).
+[ListDataQualityJobDefinitionsRequestRequestTypeDef](./type_defs.md#listdataqualityjobdefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3681,7 +3690,7 @@ Keyword-only arguments:
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
 Returns
-[ListDataQualityJobDefinitionsResponseResponseTypeDef](./type_defs.md#listdataqualityjobdefinitionsresponseresponsetypedef).
+[ListDataQualityJobDefinitionsResponseTypeDef](./type_defs.md#listdataqualityjobdefinitionsresponsetypedef).
 
 ### list_device_fleets
 
@@ -3693,7 +3702,7 @@ Boto3 documentation:
 [SageMaker.Client.list_device_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_device_fleets)
 
 Arguments mapping described in
-[ListDeviceFleetsRequestTypeDef](./type_defs.md#listdevicefleetsrequesttypedef).
+[ListDeviceFleetsRequestRequestTypeDef](./type_defs.md#listdevicefleetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3709,7 +3718,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListDeviceFleetsResponseResponseTypeDef](./type_defs.md#listdevicefleetsresponseresponsetypedef).
+[ListDeviceFleetsResponseTypeDef](./type_defs.md#listdevicefleetsresponsetypedef).
 
 ### list_devices
 
@@ -3721,7 +3730,7 @@ Boto3 documentation:
 [SageMaker.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_devices)
 
 Arguments mapping described in
-[ListDevicesRequestTypeDef](./type_defs.md#listdevicesrequesttypedef).
+[ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3732,7 +3741,7 @@ Keyword-only arguments:
 - `DeviceFleetName`: `str`
 
 Returns
-[ListDevicesResponseResponseTypeDef](./type_defs.md#listdevicesresponseresponsetypedef).
+[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
 
 ### list_domains
 
@@ -3744,7 +3753,7 @@ Boto3 documentation:
 [SageMaker.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_domains)
 
 Arguments mapping described in
-[ListDomainsRequestTypeDef](./type_defs.md#listdomainsrequesttypedef).
+[ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3752,7 +3761,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDomainsResponseResponseTypeDef](./type_defs.md#listdomainsresponseresponsetypedef).
+[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
 
 ### list_edge_packaging_jobs
 
@@ -3765,7 +3774,7 @@ Boto3 documentation:
 [SageMaker.Client.list_edge_packaging_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_edge_packaging_jobs)
 
 Arguments mapping described in
-[ListEdgePackagingJobsRequestTypeDef](./type_defs.md#listedgepackagingjobsrequesttypedef).
+[ListEdgePackagingJobsRequestRequestTypeDef](./type_defs.md#listedgepackagingjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3784,7 +3793,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListEdgePackagingJobsResponseResponseTypeDef](./type_defs.md#listedgepackagingjobsresponseresponsetypedef).
+[ListEdgePackagingJobsResponseTypeDef](./type_defs.md#listedgepackagingjobsresponsetypedef).
 
 ### list_endpoint_configs
 
@@ -3796,7 +3805,7 @@ Boto3 documentation:
 [SageMaker.Client.list_endpoint_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_endpoint_configs)
 
 Arguments mapping described in
-[ListEndpointConfigsInputTypeDef](./type_defs.md#listendpointconfigsinputtypedef).
+[ListEndpointConfigsInputRequestTypeDef](./type_defs.md#listendpointconfigsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3810,7 +3819,7 @@ Keyword-only arguments:
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
 Returns
-[ListEndpointConfigsOutputResponseTypeDef](./type_defs.md#listendpointconfigsoutputresponsetypedef).
+[ListEndpointConfigsOutputTypeDef](./type_defs.md#listendpointconfigsoutputtypedef).
 
 ### list_endpoints
 
@@ -3822,7 +3831,7 @@ Boto3 documentation:
 [SageMaker.Client.list_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_endpoints)
 
 Arguments mapping described in
-[ListEndpointsInputTypeDef](./type_defs.md#listendpointsinputtypedef).
+[ListEndpointsInputRequestTypeDef](./type_defs.md#listendpointsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3838,7 +3847,7 @@ Keyword-only arguments:
 - `StatusEquals`: [EndpointStatusType](./literals.md#endpointstatustype)
 
 Returns
-[ListEndpointsOutputResponseTypeDef](./type_defs.md#listendpointsoutputresponsetypedef).
+[ListEndpointsOutputTypeDef](./type_defs.md#listendpointsoutputtypedef).
 
 ### list_experiments
 
@@ -3850,7 +3859,7 @@ Boto3 documentation:
 [SageMaker.Client.list_experiments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_experiments)
 
 Arguments mapping described in
-[ListExperimentsRequestTypeDef](./type_defs.md#listexperimentsrequesttypedef).
+[ListExperimentsRequestRequestTypeDef](./type_defs.md#listexperimentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3862,7 +3871,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListExperimentsResponseResponseTypeDef](./type_defs.md#listexperimentsresponseresponsetypedef).
+[ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef).
 
 ### list_feature_groups
 
@@ -3874,7 +3883,7 @@ Boto3 documentation:
 [SageMaker.Client.list_feature_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_feature_groups)
 
 Arguments mapping described in
-[ListFeatureGroupsRequestTypeDef](./type_defs.md#listfeaturegroupsrequesttypedef).
+[ListFeatureGroupsRequestRequestTypeDef](./type_defs.md#listfeaturegroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3892,7 +3901,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFeatureGroupsResponseResponseTypeDef](./type_defs.md#listfeaturegroupsresponseresponsetypedef).
+[ListFeatureGroupsResponseTypeDef](./type_defs.md#listfeaturegroupsresponsetypedef).
 
 ### list_flow_definitions
 
@@ -3904,7 +3913,7 @@ Boto3 documentation:
 [SageMaker.Client.list_flow_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_flow_definitions)
 
 Arguments mapping described in
-[ListFlowDefinitionsRequestTypeDef](./type_defs.md#listflowdefinitionsrequesttypedef).
+[ListFlowDefinitionsRequestRequestTypeDef](./type_defs.md#listflowdefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3915,7 +3924,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListFlowDefinitionsResponseResponseTypeDef](./type_defs.md#listflowdefinitionsresponseresponsetypedef).
+[ListFlowDefinitionsResponseTypeDef](./type_defs.md#listflowdefinitionsresponsetypedef).
 
 ### list_human_task_uis
 
@@ -3927,7 +3936,7 @@ Boto3 documentation:
 [SageMaker.Client.list_human_task_uis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_human_task_uis)
 
 Arguments mapping described in
-[ListHumanTaskUisRequestTypeDef](./type_defs.md#listhumantaskuisrequesttypedef).
+[ListHumanTaskUisRequestRequestTypeDef](./type_defs.md#listhumantaskuisrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3938,7 +3947,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListHumanTaskUisResponseResponseTypeDef](./type_defs.md#listhumantaskuisresponseresponsetypedef).
+[ListHumanTaskUisResponseTypeDef](./type_defs.md#listhumantaskuisresponsetypedef).
 
 ### list_hyper_parameter_tuning_jobs
 
@@ -3952,7 +3961,7 @@ Boto3 documentation:
 [SageMaker.Client.list_hyper_parameter_tuning_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_hyper_parameter_tuning_jobs)
 
 Arguments mapping described in
-[ListHyperParameterTuningJobsRequestTypeDef](./type_defs.md#listhyperparametertuningjobsrequesttypedef).
+[ListHyperParameterTuningJobsRequestRequestTypeDef](./type_defs.md#listhyperparametertuningjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3970,7 +3979,7 @@ Keyword-only arguments:
   [HyperParameterTuningJobStatusType](./literals.md#hyperparametertuningjobstatustype)
 
 Returns
-[ListHyperParameterTuningJobsResponseResponseTypeDef](./type_defs.md#listhyperparametertuningjobsresponseresponsetypedef).
+[ListHyperParameterTuningJobsResponseTypeDef](./type_defs.md#listhyperparametertuningjobsresponsetypedef).
 
 ### list_image_versions
 
@@ -3982,7 +3991,7 @@ Boto3 documentation:
 [SageMaker.Client.list_image_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_image_versions)
 
 Arguments mapping described in
-[ListImageVersionsRequestTypeDef](./type_defs.md#listimageversionsrequesttypedef).
+[ListImageVersionsRequestRequestTypeDef](./type_defs.md#listimageversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3998,7 +4007,7 @@ Keyword-only arguments:
   [ImageVersionSortOrderType](./literals.md#imageversionsortordertype)
 
 Returns
-[ListImageVersionsResponseResponseTypeDef](./type_defs.md#listimageversionsresponseresponsetypedef).
+[ListImageVersionsResponseTypeDef](./type_defs.md#listimageversionsresponsetypedef).
 
 ### list_images
 
@@ -4010,7 +4019,7 @@ Boto3 documentation:
 [SageMaker.Client.list_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_images)
 
 Arguments mapping described in
-[ListImagesRequestTypeDef](./type_defs.md#listimagesrequesttypedef).
+[ListImagesRequestRequestTypeDef](./type_defs.md#listimagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4024,8 +4033,7 @@ Keyword-only arguments:
 - `SortBy`: [ImageSortByType](./literals.md#imagesortbytype)
 - `SortOrder`: [ImageSortOrderType](./literals.md#imagesortordertype)
 
-Returns
-[ListImagesResponseResponseTypeDef](./type_defs.md#listimagesresponseresponsetypedef).
+Returns [ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef).
 
 ### list_labeling_jobs
 
@@ -4037,7 +4045,7 @@ Boto3 documentation:
 [SageMaker.Client.list_labeling_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_labeling_jobs)
 
 Arguments mapping described in
-[ListLabelingJobsRequestTypeDef](./type_defs.md#listlabelingjobsrequesttypedef).
+[ListLabelingJobsRequestRequestTypeDef](./type_defs.md#listlabelingjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4053,7 +4061,7 @@ Keyword-only arguments:
 - `StatusEquals`: [LabelingJobStatusType](./literals.md#labelingjobstatustype)
 
 Returns
-[ListLabelingJobsResponseResponseTypeDef](./type_defs.md#listlabelingjobsresponseresponsetypedef).
+[ListLabelingJobsResponseTypeDef](./type_defs.md#listlabelingjobsresponsetypedef).
 
 ### list_labeling_jobs_for_workteam
 
@@ -4066,7 +4074,7 @@ Boto3 documentation:
 [SageMaker.Client.list_labeling_jobs_for_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_labeling_jobs_for_workteam)
 
 Arguments mapping described in
-[ListLabelingJobsForWorkteamRequestTypeDef](./type_defs.md#listlabelingjobsforworkteamrequesttypedef).
+[ListLabelingJobsForWorkteamRequestRequestTypeDef](./type_defs.md#listlabelingjobsforworkteamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4081,7 +4089,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListLabelingJobsForWorkteamResponseResponseTypeDef](./type_defs.md#listlabelingjobsforworkteamresponseresponsetypedef).
+[ListLabelingJobsForWorkteamResponseTypeDef](./type_defs.md#listlabelingjobsforworkteamresponsetypedef).
 
 ### list_model_bias_job_definitions
 
@@ -4094,7 +4102,7 @@ Boto3 documentation:
 [SageMaker.Client.list_model_bias_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_bias_job_definitions)
 
 Arguments mapping described in
-[ListModelBiasJobDefinitionsRequestTypeDef](./type_defs.md#listmodelbiasjobdefinitionsrequesttypedef).
+[ListModelBiasJobDefinitionsRequestRequestTypeDef](./type_defs.md#listmodelbiasjobdefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4109,7 +4117,7 @@ Keyword-only arguments:
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
 Returns
-[ListModelBiasJobDefinitionsResponseResponseTypeDef](./type_defs.md#listmodelbiasjobdefinitionsresponseresponsetypedef).
+[ListModelBiasJobDefinitionsResponseTypeDef](./type_defs.md#listmodelbiasjobdefinitionsresponsetypedef).
 
 ### list_model_explainability_job_definitions
 
@@ -4122,7 +4130,7 @@ Boto3 documentation:
 [SageMaker.Client.list_model_explainability_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_explainability_job_definitions)
 
 Arguments mapping described in
-[ListModelExplainabilityJobDefinitionsRequestTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsrequesttypedef).
+[ListModelExplainabilityJobDefinitionsRequestRequestTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4137,11 +4145,11 @@ Keyword-only arguments:
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
 Returns
-[ListModelExplainabilityJobDefinitionsResponseResponseTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsresponseresponsetypedef).
+[ListModelExplainabilityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsresponsetypedef).
 
 ### list_model_package_groups
 
-Gets a list of the model groups in your AWS account.
+Gets a list of the model groups in your Amazon Web Services account.
 
 Type annotations for `boto3.client("sagemaker").list_model_package_groups`
 method.
@@ -4150,7 +4158,7 @@ Boto3 documentation:
 [SageMaker.Client.list_model_package_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_package_groups)
 
 Arguments mapping described in
-[ListModelPackageGroupsInputTypeDef](./type_defs.md#listmodelpackagegroupsinputtypedef).
+[ListModelPackageGroupsInputRequestTypeDef](./type_defs.md#listmodelpackagegroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4164,7 +4172,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListModelPackageGroupsOutputResponseTypeDef](./type_defs.md#listmodelpackagegroupsoutputresponsetypedef).
+[ListModelPackageGroupsOutputTypeDef](./type_defs.md#listmodelpackagegroupsoutputtypedef).
 
 ### list_model_packages
 
@@ -4176,7 +4184,7 @@ Boto3 documentation:
 [SageMaker.Client.list_model_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_packages)
 
 Arguments mapping described in
-[ListModelPackagesInputTypeDef](./type_defs.md#listmodelpackagesinputtypedef).
+[ListModelPackagesInputRequestTypeDef](./type_defs.md#listmodelpackagesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4194,7 +4202,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListModelPackagesOutputResponseTypeDef](./type_defs.md#listmodelpackagesoutputresponsetypedef).
+[ListModelPackagesOutputTypeDef](./type_defs.md#listmodelpackagesoutputtypedef).
 
 ### list_model_quality_job_definitions
 
@@ -4207,7 +4215,7 @@ Boto3 documentation:
 [SageMaker.Client.list_model_quality_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_model_quality_job_definitions)
 
 Arguments mapping described in
-[ListModelQualityJobDefinitionsRequestTypeDef](./type_defs.md#listmodelqualityjobdefinitionsrequesttypedef).
+[ListModelQualityJobDefinitionsRequestRequestTypeDef](./type_defs.md#listmodelqualityjobdefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4222,11 +4230,11 @@ Keyword-only arguments:
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
 Returns
-[ListModelQualityJobDefinitionsResponseResponseTypeDef](./type_defs.md#listmodelqualityjobdefinitionsresponseresponsetypedef).
+[ListModelQualityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelqualityjobdefinitionsresponsetypedef).
 
 ### list_models
 
-Lists models created with the CreateModel API.
+Lists models created with the `CreateModel` API.
 
 Type annotations for `boto3.client("sagemaker").list_models` method.
 
@@ -4234,7 +4242,7 @@ Boto3 documentation:
 [SageMaker.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_models)
 
 Arguments mapping described in
-[ListModelsInputTypeDef](./type_defs.md#listmodelsinputtypedef).
+[ListModelsInputRequestTypeDef](./type_defs.md#listmodelsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4246,8 +4254,7 @@ Keyword-only arguments:
 - `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
-Returns
-[ListModelsOutputResponseTypeDef](./type_defs.md#listmodelsoutputresponsetypedef).
+Returns [ListModelsOutputTypeDef](./type_defs.md#listmodelsoutputtypedef).
 
 ### list_monitoring_executions
 
@@ -4260,7 +4267,7 @@ Boto3 documentation:
 [SageMaker.Client.list_monitoring_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_executions)
 
 Arguments mapping described in
-[ListMonitoringExecutionsRequestTypeDef](./type_defs.md#listmonitoringexecutionsrequesttypedef).
+[ListMonitoringExecutionsRequestRequestTypeDef](./type_defs.md#listmonitoringexecutionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4283,7 +4290,7 @@ Keyword-only arguments:
   [MonitoringTypeType](./literals.md#monitoringtypetype)
 
 Returns
-[ListMonitoringExecutionsResponseResponseTypeDef](./type_defs.md#listmonitoringexecutionsresponseresponsetypedef).
+[ListMonitoringExecutionsResponseTypeDef](./type_defs.md#listmonitoringexecutionsresponsetypedef).
 
 ### list_monitoring_schedules
 
@@ -4296,7 +4303,7 @@ Boto3 documentation:
 [SageMaker.Client.list_monitoring_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_monitoring_schedules)
 
 Arguments mapping described in
-[ListMonitoringSchedulesRequestTypeDef](./type_defs.md#listmonitoringschedulesrequesttypedef).
+[ListMonitoringSchedulesRequestRequestTypeDef](./type_defs.md#listmonitoringschedulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4317,7 +4324,7 @@ Keyword-only arguments:
   [MonitoringTypeType](./literals.md#monitoringtypetype)
 
 Returns
-[ListMonitoringSchedulesResponseResponseTypeDef](./type_defs.md#listmonitoringschedulesresponseresponsetypedef).
+[ListMonitoringSchedulesResponseTypeDef](./type_defs.md#listmonitoringschedulesresponsetypedef).
 
 ### list_notebook_instance_lifecycle_configs
 
@@ -4331,7 +4338,7 @@ Boto3 documentation:
 [SageMaker.Client.list_notebook_instance_lifecycle_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instance_lifecycle_configs)
 
 Arguments mapping described in
-[ListNotebookInstanceLifecycleConfigsInputTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsinputtypedef).
+[ListNotebookInstanceLifecycleConfigsInputRequestTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4348,12 +4355,12 @@ Keyword-only arguments:
 - `LastModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
 
 Returns
-[ListNotebookInstanceLifecycleConfigsOutputResponseTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsoutputresponsetypedef).
+[ListNotebookInstanceLifecycleConfigsOutputTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsoutputtypedef).
 
 ### list_notebook_instances
 
 Returns a list of the Amazon SageMaker notebook instances in the requester's
-account in an AWS Region.
+account in an Amazon Web Services Region.
 
 Type annotations for `boto3.client("sagemaker").list_notebook_instances`
 method.
@@ -4362,7 +4369,7 @@ Boto3 documentation:
 [SageMaker.Client.list_notebook_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_notebook_instances)
 
 Arguments mapping described in
-[ListNotebookInstancesInputTypeDef](./type_defs.md#listnotebookinstancesinputtypedef).
+[ListNotebookInstancesInputRequestTypeDef](./type_defs.md#listnotebookinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4384,7 +4391,7 @@ Keyword-only arguments:
 - `AdditionalCodeRepositoryEquals`: `str`
 
 Returns
-[ListNotebookInstancesOutputResponseTypeDef](./type_defs.md#listnotebookinstancesoutputresponsetypedef).
+[ListNotebookInstancesOutputTypeDef](./type_defs.md#listnotebookinstancesoutputtypedef).
 
 ### list_pipeline_execution_steps
 
@@ -4397,7 +4404,7 @@ Boto3 documentation:
 [SageMaker.Client.list_pipeline_execution_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_execution_steps)
 
 Arguments mapping described in
-[ListPipelineExecutionStepsRequestTypeDef](./type_defs.md#listpipelineexecutionstepsrequesttypedef).
+[ListPipelineExecutionStepsRequestRequestTypeDef](./type_defs.md#listpipelineexecutionstepsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4407,7 +4414,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListPipelineExecutionStepsResponseResponseTypeDef](./type_defs.md#listpipelineexecutionstepsresponseresponsetypedef).
+[ListPipelineExecutionStepsResponseTypeDef](./type_defs.md#listpipelineexecutionstepsresponsetypedef).
 
 ### list_pipeline_executions
 
@@ -4420,7 +4427,7 @@ Boto3 documentation:
 [SageMaker.Client.list_pipeline_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_executions)
 
 Arguments mapping described in
-[ListPipelineExecutionsRequestTypeDef](./type_defs.md#listpipelineexecutionsrequesttypedef).
+[ListPipelineExecutionsRequestRequestTypeDef](./type_defs.md#listpipelineexecutionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4434,7 +4441,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPipelineExecutionsResponseResponseTypeDef](./type_defs.md#listpipelineexecutionsresponseresponsetypedef).
+[ListPipelineExecutionsResponseTypeDef](./type_defs.md#listpipelineexecutionsresponsetypedef).
 
 ### list_pipeline_parameters_for_execution
 
@@ -4447,7 +4454,7 @@ Boto3 documentation:
 [SageMaker.Client.list_pipeline_parameters_for_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipeline_parameters_for_execution)
 
 Arguments mapping described in
-[ListPipelineParametersForExecutionRequestTypeDef](./type_defs.md#listpipelineparametersforexecutionrequesttypedef).
+[ListPipelineParametersForExecutionRequestRequestTypeDef](./type_defs.md#listpipelineparametersforexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4456,7 +4463,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPipelineParametersForExecutionResponseResponseTypeDef](./type_defs.md#listpipelineparametersforexecutionresponseresponsetypedef).
+[ListPipelineParametersForExecutionResponseTypeDef](./type_defs.md#listpipelineparametersforexecutionresponsetypedef).
 
 ### list_pipelines
 
@@ -4468,7 +4475,7 @@ Boto3 documentation:
 [SageMaker.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_pipelines)
 
 Arguments mapping described in
-[ListPipelinesRequestTypeDef](./type_defs.md#listpipelinesrequesttypedef).
+[ListPipelinesRequestRequestTypeDef](./type_defs.md#listpipelinesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4481,7 +4488,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPipelinesResponseResponseTypeDef](./type_defs.md#listpipelinesresponseresponsetypedef).
+[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef).
 
 ### list_processing_jobs
 
@@ -4493,7 +4500,7 @@ Boto3 documentation:
 [SageMaker.Client.list_processing_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_processing_jobs)
 
 Arguments mapping described in
-[ListProcessingJobsRequestTypeDef](./type_defs.md#listprocessingjobsrequesttypedef).
+[ListProcessingJobsRequestRequestTypeDef](./type_defs.md#listprocessingjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4510,11 +4517,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListProcessingJobsResponseResponseTypeDef](./type_defs.md#listprocessingjobsresponseresponsetypedef).
+[ListProcessingJobsResponseTypeDef](./type_defs.md#listprocessingjobsresponsetypedef).
 
 ### list_projects
 
-Gets a list of the projects in an AWS account.
+Gets a list of the projects in an Amazon Web Services account.
 
 Type annotations for `boto3.client("sagemaker").list_projects` method.
 
@@ -4522,7 +4529,7 @@ Boto3 documentation:
 [SageMaker.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_projects)
 
 Arguments mapping described in
-[ListProjectsInputTypeDef](./type_defs.md#listprojectsinputtypedef).
+[ListProjectsInputRequestTypeDef](./type_defs.md#listprojectsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4534,13 +4541,12 @@ Keyword-only arguments:
 - `SortBy`: [ProjectSortByType](./literals.md#projectsortbytype)
 - `SortOrder`: [ProjectSortOrderType](./literals.md#projectsortordertype)
 
-Returns
-[ListProjectsOutputResponseTypeDef](./type_defs.md#listprojectsoutputresponsetypedef).
+Returns [ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef).
 
 ### list_subscribed_workteams
 
-Gets a list of the work teams that you are subscribed to in the AWS
-Marketplace.
+Gets a list of the work teams that you are subscribed to in the Amazon Web
+Services Marketplace.
 
 Type annotations for `boto3.client("sagemaker").list_subscribed_workteams`
 method.
@@ -4549,7 +4555,7 @@ Boto3 documentation:
 [SageMaker.Client.list_subscribed_workteams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_subscribed_workteams)
 
 Arguments mapping described in
-[ListSubscribedWorkteamsRequestTypeDef](./type_defs.md#listsubscribedworkteamsrequesttypedef).
+[ListSubscribedWorkteamsRequestRequestTypeDef](./type_defs.md#listsubscribedworkteamsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4558,7 +4564,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListSubscribedWorkteamsResponseResponseTypeDef](./type_defs.md#listsubscribedworkteamsresponseresponsetypedef).
+[ListSubscribedWorkteamsResponseTypeDef](./type_defs.md#listsubscribedworkteamsresponsetypedef).
 
 ### list_tags
 
@@ -4570,7 +4576,7 @@ Boto3 documentation:
 [SageMaker.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_tags)
 
 Arguments mapping described in
-[ListTagsInputTypeDef](./type_defs.md#listtagsinputtypedef).
+[ListTagsInputRequestTypeDef](./type_defs.md#listtagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4578,8 +4584,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTagsOutputResponseTypeDef](./type_defs.md#listtagsoutputresponsetypedef).
+Returns [ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef).
 
 ### list_training_jobs
 
@@ -4591,7 +4596,7 @@ Boto3 documentation:
 [SageMaker.Client.list_training_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_training_jobs)
 
 Arguments mapping described in
-[ListTrainingJobsRequestTypeDef](./type_defs.md#listtrainingjobsrequesttypedef).
+[ListTrainingJobsRequestRequestTypeDef](./type_defs.md#listtrainingjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4607,7 +4612,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListTrainingJobsResponseResponseTypeDef](./type_defs.md#listtrainingjobsresponseresponsetypedef).
+[ListTrainingJobsResponseTypeDef](./type_defs.md#listtrainingjobsresponsetypedef).
 
 ### list_training_jobs_for_hyper_parameter_tuning_job
 
@@ -4622,7 +4627,7 @@ Boto3 documentation:
 [SageMaker.Client.list_training_jobs_for_hyper_parameter_tuning_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_training_jobs_for_hyper_parameter_tuning_job)
 
 Arguments mapping described in
-[ListTrainingJobsForHyperParameterTuningJobRequestTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobrequesttypedef).
+[ListTrainingJobsForHyperParameterTuningJobRequestRequestTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4635,7 +4640,7 @@ Keyword-only arguments:
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
 Returns
-[ListTrainingJobsForHyperParameterTuningJobResponseResponseTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobresponseresponsetypedef).
+[ListTrainingJobsForHyperParameterTuningJobResponseTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobresponsetypedef).
 
 ### list_transform_jobs
 
@@ -4647,7 +4652,7 @@ Boto3 documentation:
 [SageMaker.Client.list_transform_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_transform_jobs)
 
 Arguments mapping described in
-[ListTransformJobsRequestTypeDef](./type_defs.md#listtransformjobsrequesttypedef).
+[ListTransformJobsRequestRequestTypeDef](./type_defs.md#listtransformjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4664,7 +4669,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTransformJobsResponseResponseTypeDef](./type_defs.md#listtransformjobsresponseresponsetypedef).
+[ListTransformJobsResponseTypeDef](./type_defs.md#listtransformjobsresponsetypedef).
 
 ### list_trial_components
 
@@ -4676,7 +4681,7 @@ Boto3 documentation:
 [SageMaker.Client.list_trial_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_trial_components)
 
 Arguments mapping described in
-[ListTrialComponentsRequestTypeDef](./type_defs.md#listtrialcomponentsrequesttypedef).
+[ListTrialComponentsRequestRequestTypeDef](./type_defs.md#listtrialcomponentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4692,7 +4697,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTrialComponentsResponseResponseTypeDef](./type_defs.md#listtrialcomponentsresponseresponsetypedef).
+[ListTrialComponentsResponseTypeDef](./type_defs.md#listtrialcomponentsresponsetypedef).
 
 ### list_trials
 
@@ -4704,7 +4709,7 @@ Boto3 documentation:
 [SageMaker.Client.list_trials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_trials)
 
 Arguments mapping described in
-[ListTrialsRequestTypeDef](./type_defs.md#listtrialsrequesttypedef).
+[ListTrialsRequestRequestTypeDef](./type_defs.md#listtrialsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4717,8 +4722,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListTrialsResponseResponseTypeDef](./type_defs.md#listtrialsresponseresponsetypedef).
+Returns [ListTrialsResponseTypeDef](./type_defs.md#listtrialsresponsetypedef).
 
 ### list_user_profiles
 
@@ -4730,7 +4734,7 @@ Boto3 documentation:
 [SageMaker.Client.list_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_user_profiles)
 
 Arguments mapping described in
-[ListUserProfilesRequestTypeDef](./type_defs.md#listuserprofilesrequesttypedef).
+[ListUserProfilesRequestRequestTypeDef](./type_defs.md#listuserprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4742,11 +4746,12 @@ Keyword-only arguments:
 - `UserProfileNameContains`: `str`
 
 Returns
-[ListUserProfilesResponseResponseTypeDef](./type_defs.md#listuserprofilesresponseresponsetypedef).
+[ListUserProfilesResponseTypeDef](./type_defs.md#listuserprofilesresponsetypedef).
 
 ### list_workforces
 
-Use this operation to list all private and vendor workforces in an AWS Region.
+Use this operation to list all private and vendor workforces in an Amazon Web
+Services Region.
 
 Type annotations for `boto3.client("sagemaker").list_workforces` method.
 
@@ -4754,7 +4759,7 @@ Boto3 documentation:
 [SageMaker.Client.list_workforces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_workforces)
 
 Arguments mapping described in
-[ListWorkforcesRequestTypeDef](./type_defs.md#listworkforcesrequesttypedef).
+[ListWorkforcesRequestRequestTypeDef](./type_defs.md#listworkforcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4766,7 +4771,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkforcesResponseResponseTypeDef](./type_defs.md#listworkforcesresponseresponsetypedef).
+[ListWorkforcesResponseTypeDef](./type_defs.md#listworkforcesresponsetypedef).
 
 ### list_workteams
 
@@ -4778,7 +4783,7 @@ Boto3 documentation:
 [SageMaker.Client.list_workteams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_workteams)
 
 Arguments mapping described in
-[ListWorkteamsRequestTypeDef](./type_defs.md#listworkteamsrequesttypedef).
+[ListWorkteamsRequestRequestTypeDef](./type_defs.md#listworkteamsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4790,7 +4795,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkteamsResponseResponseTypeDef](./type_defs.md#listworkteamsresponseresponsetypedef).
+[ListWorkteamsResponseTypeDef](./type_defs.md#listworkteamsresponsetypedef).
 
 ### put_model_package_group_policy
 
@@ -4803,7 +4808,7 @@ Boto3 documentation:
 [SageMaker.Client.put_model_package_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.put_model_package_group_policy)
 
 Arguments mapping described in
-[PutModelPackageGroupPolicyInputTypeDef](./type_defs.md#putmodelpackagegrouppolicyinputtypedef).
+[PutModelPackageGroupPolicyInputRequestTypeDef](./type_defs.md#putmodelpackagegrouppolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4811,7 +4816,7 @@ Keyword-only arguments:
 - `ResourcePolicy`: `str` *(required)*
 
 Returns
-[PutModelPackageGroupPolicyOutputResponseTypeDef](./type_defs.md#putmodelpackagegrouppolicyoutputresponsetypedef).
+[PutModelPackageGroupPolicyOutputTypeDef](./type_defs.md#putmodelpackagegrouppolicyoutputtypedef).
 
 ### register_devices
 
@@ -4823,7 +4828,7 @@ Boto3 documentation:
 [SageMaker.Client.register_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.register_devices)
 
 Arguments mapping described in
-[RegisterDevicesRequestTypeDef](./type_defs.md#registerdevicesrequesttypedef).
+[RegisterDevicesRequestRequestTypeDef](./type_defs.md#registerdevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4842,7 +4847,7 @@ Boto3 documentation:
 [SageMaker.Client.render_ui_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.render_ui_template)
 
 Arguments mapping described in
-[RenderUiTemplateRequestTypeDef](./type_defs.md#renderuitemplaterequesttypedef).
+[RenderUiTemplateRequestRequestTypeDef](./type_defs.md#renderuitemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4853,7 +4858,7 @@ Keyword-only arguments:
 - `HumanTaskUiArn`: `str`
 
 Returns
-[RenderUiTemplateResponseResponseTypeDef](./type_defs.md#renderuitemplateresponseresponsetypedef).
+[RenderUiTemplateResponseTypeDef](./type_defs.md#renderuitemplateresponsetypedef).
 
 ### search
 
@@ -4865,7 +4870,7 @@ Boto3 documentation:
 [SageMaker.Client.search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.search)
 
 Arguments mapping described in
-[SearchRequestTypeDef](./type_defs.md#searchrequesttypedef).
+[SearchRequestRequestTypeDef](./type_defs.md#searchrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4877,8 +4882,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[SearchResponseResponseTypeDef](./type_defs.md#searchresponseresponsetypedef).
+Returns [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef).
 
 ### send_pipeline_execution_step_failure
 
@@ -4892,7 +4896,7 @@ Boto3 documentation:
 [SageMaker.Client.send_pipeline_execution_step_failure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.send_pipeline_execution_step_failure)
 
 Arguments mapping described in
-[SendPipelineExecutionStepFailureRequestTypeDef](./type_defs.md#sendpipelineexecutionstepfailurerequesttypedef).
+[SendPipelineExecutionStepFailureRequestRequestTypeDef](./type_defs.md#sendpipelineexecutionstepfailurerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4901,7 +4905,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[SendPipelineExecutionStepFailureResponseResponseTypeDef](./type_defs.md#sendpipelineexecutionstepfailureresponseresponsetypedef).
+[SendPipelineExecutionStepFailureResponseTypeDef](./type_defs.md#sendpipelineexecutionstepfailureresponsetypedef).
 
 ### send_pipeline_execution_step_success
 
@@ -4915,7 +4919,7 @@ Boto3 documentation:
 [SageMaker.Client.send_pipeline_execution_step_success](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.send_pipeline_execution_step_success)
 
 Arguments mapping described in
-[SendPipelineExecutionStepSuccessRequestTypeDef](./type_defs.md#sendpipelineexecutionstepsuccessrequesttypedef).
+[SendPipelineExecutionStepSuccessRequestRequestTypeDef](./type_defs.md#sendpipelineexecutionstepsuccessrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4925,7 +4929,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[SendPipelineExecutionStepSuccessResponseResponseTypeDef](./type_defs.md#sendpipelineexecutionstepsuccessresponseresponsetypedef).
+[SendPipelineExecutionStepSuccessResponseTypeDef](./type_defs.md#sendpipelineexecutionstepsuccessresponsetypedef).
 
 ### start_monitoring_schedule
 
@@ -4938,7 +4942,7 @@ Boto3 documentation:
 [SageMaker.Client.start_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_monitoring_schedule)
 
 Arguments mapping described in
-[StartMonitoringScheduleRequestTypeDef](./type_defs.md#startmonitoringschedulerequesttypedef).
+[StartMonitoringScheduleRequestRequestTypeDef](./type_defs.md#startmonitoringschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4956,7 +4960,7 @@ Boto3 documentation:
 [SageMaker.Client.start_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_notebook_instance)
 
 Arguments mapping described in
-[StartNotebookInstanceInputTypeDef](./type_defs.md#startnotebookinstanceinputtypedef).
+[StartNotebookInstanceInputRequestTypeDef](./type_defs.md#startnotebookinstanceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4973,7 +4977,7 @@ Boto3 documentation:
 [SageMaker.Client.start_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.start_pipeline_execution)
 
 Arguments mapping described in
-[StartPipelineExecutionRequestTypeDef](./type_defs.md#startpipelineexecutionrequesttypedef).
+[StartPipelineExecutionRequestRequestTypeDef](./type_defs.md#startpipelineexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -4985,7 +4989,7 @@ Keyword-only arguments:
 - `PipelineExecutionDescription`: `str`
 
 Returns
-[StartPipelineExecutionResponseResponseTypeDef](./type_defs.md#startpipelineexecutionresponseresponsetypedef).
+[StartPipelineExecutionResponseTypeDef](./type_defs.md#startpipelineexecutionresponsetypedef).
 
 ### stop_auto_ml_job
 
@@ -4997,7 +5001,7 @@ Boto3 documentation:
 [SageMaker.Client.stop_auto_ml_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_auto_ml_job)
 
 Arguments mapping described in
-[StopAutoMLJobRequestTypeDef](./type_defs.md#stopautomljobrequesttypedef).
+[StopAutoMLJobRequestRequestTypeDef](./type_defs.md#stopautomljobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5013,7 +5017,7 @@ Boto3 documentation:
 [SageMaker.Client.stop_compilation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_compilation_job)
 
 Arguments mapping described in
-[StopCompilationJobRequestTypeDef](./type_defs.md#stopcompilationjobrequesttypedef).
+[StopCompilationJobRequestRequestTypeDef](./type_defs.md#stopcompilationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5030,7 +5034,7 @@ Boto3 documentation:
 [SageMaker.Client.stop_edge_packaging_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_edge_packaging_job)
 
 Arguments mapping described in
-[StopEdgePackagingJobRequestTypeDef](./type_defs.md#stopedgepackagingjobrequesttypedef).
+[StopEdgePackagingJobRequestRequestTypeDef](./type_defs.md#stopedgepackagingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5048,7 +5052,7 @@ Boto3 documentation:
 [SageMaker.Client.stop_hyper_parameter_tuning_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_hyper_parameter_tuning_job)
 
 Arguments mapping described in
-[StopHyperParameterTuningJobRequestTypeDef](./type_defs.md#stophyperparametertuningjobrequesttypedef).
+[StopHyperParameterTuningJobRequestRequestTypeDef](./type_defs.md#stophyperparametertuningjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5064,7 +5068,7 @@ Boto3 documentation:
 [SageMaker.Client.stop_labeling_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_labeling_job)
 
 Arguments mapping described in
-[StopLabelingJobRequestTypeDef](./type_defs.md#stoplabelingjobrequesttypedef).
+[StopLabelingJobRequestRequestTypeDef](./type_defs.md#stoplabelingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5081,7 +5085,7 @@ Boto3 documentation:
 [SageMaker.Client.stop_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_monitoring_schedule)
 
 Arguments mapping described in
-[StopMonitoringScheduleRequestTypeDef](./type_defs.md#stopmonitoringschedulerequesttypedef).
+[StopMonitoringScheduleRequestRequestTypeDef](./type_defs.md#stopmonitoringschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5097,7 +5101,7 @@ Boto3 documentation:
 [SageMaker.Client.stop_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_notebook_instance)
 
 Arguments mapping described in
-[StopNotebookInstanceInputTypeDef](./type_defs.md#stopnotebookinstanceinputtypedef).
+[StopNotebookInstanceInputRequestTypeDef](./type_defs.md#stopnotebookinstanceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5114,7 +5118,7 @@ Boto3 documentation:
 [SageMaker.Client.stop_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_pipeline_execution)
 
 Arguments mapping described in
-[StopPipelineExecutionRequestTypeDef](./type_defs.md#stoppipelineexecutionrequesttypedef).
+[StopPipelineExecutionRequestRequestTypeDef](./type_defs.md#stoppipelineexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5122,7 +5126,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str` *(required)*
 
 Returns
-[StopPipelineExecutionResponseResponseTypeDef](./type_defs.md#stoppipelineexecutionresponseresponsetypedef).
+[StopPipelineExecutionResponseTypeDef](./type_defs.md#stoppipelineexecutionresponsetypedef).
 
 ### stop_processing_job
 
@@ -5134,7 +5138,7 @@ Boto3 documentation:
 [SageMaker.Client.stop_processing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_processing_job)
 
 Arguments mapping described in
-[StopProcessingJobRequestTypeDef](./type_defs.md#stopprocessingjobrequesttypedef).
+[StopProcessingJobRequestRequestTypeDef](./type_defs.md#stopprocessingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5150,7 +5154,7 @@ Boto3 documentation:
 [SageMaker.Client.stop_training_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_training_job)
 
 Arguments mapping described in
-[StopTrainingJobRequestTypeDef](./type_defs.md#stoptrainingjobrequesttypedef).
+[StopTrainingJobRequestRequestTypeDef](./type_defs.md#stoptrainingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5166,7 +5170,7 @@ Boto3 documentation:
 [SageMaker.Client.stop_transform_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.stop_transform_job)
 
 Arguments mapping described in
-[StopTransformJobRequestTypeDef](./type_defs.md#stoptransformjobrequesttypedef).
+[StopTransformJobRequestRequestTypeDef](./type_defs.md#stoptransformjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5182,7 +5186,7 @@ Boto3 documentation:
 [SageMaker.Client.update_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_action)
 
 Arguments mapping described in
-[UpdateActionRequestTypeDef](./type_defs.md#updateactionrequesttypedef).
+[UpdateActionRequestRequestTypeDef](./type_defs.md#updateactionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5193,7 +5197,7 @@ Keyword-only arguments:
 - `PropertiesToRemove`: `List`\[`str`\]
 
 Returns
-[UpdateActionResponseResponseTypeDef](./type_defs.md#updateactionresponseresponsetypedef).
+[UpdateActionResponseTypeDef](./type_defs.md#updateactionresponsetypedef).
 
 ### update_app_image_config
 
@@ -5206,7 +5210,7 @@ Boto3 documentation:
 [SageMaker.Client.update_app_image_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_app_image_config)
 
 Arguments mapping described in
-[UpdateAppImageConfigRequestTypeDef](./type_defs.md#updateappimageconfigrequesttypedef).
+[UpdateAppImageConfigRequestRequestTypeDef](./type_defs.md#updateappimageconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5215,7 +5219,7 @@ Keyword-only arguments:
   [KernelGatewayImageConfigTypeDef](./type_defs.md#kernelgatewayimageconfigtypedef)
 
 Returns
-[UpdateAppImageConfigResponseResponseTypeDef](./type_defs.md#updateappimageconfigresponseresponsetypedef).
+[UpdateAppImageConfigResponseTypeDef](./type_defs.md#updateappimageconfigresponsetypedef).
 
 ### update_artifact
 
@@ -5227,7 +5231,7 @@ Boto3 documentation:
 [SageMaker.Client.update_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_artifact)
 
 Arguments mapping described in
-[UpdateArtifactRequestTypeDef](./type_defs.md#updateartifactrequesttypedef).
+[UpdateArtifactRequestRequestTypeDef](./type_defs.md#updateartifactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5237,7 +5241,7 @@ Keyword-only arguments:
 - `PropertiesToRemove`: `List`\[`str`\]
 
 Returns
-[UpdateArtifactResponseResponseTypeDef](./type_defs.md#updateartifactresponseresponsetypedef).
+[UpdateArtifactResponseTypeDef](./type_defs.md#updateartifactresponsetypedef).
 
 ### update_code_repository
 
@@ -5249,7 +5253,7 @@ Boto3 documentation:
 [SageMaker.Client.update_code_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_code_repository)
 
 Arguments mapping described in
-[UpdateCodeRepositoryInputTypeDef](./type_defs.md#updatecoderepositoryinputtypedef).
+[UpdateCodeRepositoryInputRequestTypeDef](./type_defs.md#updatecoderepositoryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5258,7 +5262,7 @@ Keyword-only arguments:
   [GitConfigForUpdateTypeDef](./type_defs.md#gitconfigforupdatetypedef)
 
 Returns
-[UpdateCodeRepositoryOutputResponseTypeDef](./type_defs.md#updatecoderepositoryoutputresponsetypedef).
+[UpdateCodeRepositoryOutputTypeDef](./type_defs.md#updatecoderepositoryoutputtypedef).
 
 ### update_context
 
@@ -5270,7 +5274,7 @@ Boto3 documentation:
 [SageMaker.Client.update_context](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_context)
 
 Arguments mapping described in
-[UpdateContextRequestTypeDef](./type_defs.md#updatecontextrequesttypedef).
+[UpdateContextRequestRequestTypeDef](./type_defs.md#updatecontextrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5280,7 +5284,7 @@ Keyword-only arguments:
 - `PropertiesToRemove`: `List`\[`str`\]
 
 Returns
-[UpdateContextResponseResponseTypeDef](./type_defs.md#updatecontextresponseresponsetypedef).
+[UpdateContextResponseTypeDef](./type_defs.md#updatecontextresponsetypedef).
 
 ### update_device_fleet
 
@@ -5292,7 +5296,7 @@ Boto3 documentation:
 [SageMaker.Client.update_device_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_device_fleet)
 
 Arguments mapping described in
-[UpdateDeviceFleetRequestTypeDef](./type_defs.md#updatedevicefleetrequesttypedef).
+[UpdateDeviceFleetRequestRequestTypeDef](./type_defs.md#updatedevicefleetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5314,7 +5318,7 @@ Boto3 documentation:
 [SageMaker.Client.update_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_devices)
 
 Arguments mapping described in
-[UpdateDevicesRequestTypeDef](./type_defs.md#updatedevicesrequesttypedef).
+[UpdateDevicesRequestRequestTypeDef](./type_defs.md#updatedevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5332,7 +5336,7 @@ Boto3 documentation:
 [SageMaker.Client.update_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_domain)
 
 Arguments mapping described in
-[UpdateDomainRequestTypeDef](./type_defs.md#updatedomainrequesttypedef).
+[UpdateDomainRequestRequestTypeDef](./type_defs.md#updatedomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5341,7 +5345,7 @@ Keyword-only arguments:
   [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 
 Returns
-[UpdateDomainResponseResponseTypeDef](./type_defs.md#updatedomainresponseresponsetypedef).
+[UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef).
 
 ### update_endpoint
 
@@ -5355,7 +5359,7 @@ Boto3 documentation:
 [SageMaker.Client.update_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_endpoint)
 
 Arguments mapping described in
-[UpdateEndpointInputTypeDef](./type_defs.md#updateendpointinputtypedef).
+[UpdateEndpointInputRequestTypeDef](./type_defs.md#updateendpointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5368,7 +5372,7 @@ Keyword-only arguments:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 
 Returns
-[UpdateEndpointOutputResponseTypeDef](./type_defs.md#updateendpointoutputresponsetypedef).
+[UpdateEndpointOutputTypeDef](./type_defs.md#updateendpointoutputtypedef).
 
 ### update_endpoint_weights_and_capacities
 
@@ -5382,7 +5386,7 @@ Boto3 documentation:
 [SageMaker.Client.update_endpoint_weights_and_capacities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_endpoint_weights_and_capacities)
 
 Arguments mapping described in
-[UpdateEndpointWeightsAndCapacitiesInputTypeDef](./type_defs.md#updateendpointweightsandcapacitiesinputtypedef).
+[UpdateEndpointWeightsAndCapacitiesInputRequestTypeDef](./type_defs.md#updateendpointweightsandcapacitiesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5392,7 +5396,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateEndpointWeightsAndCapacitiesOutputResponseTypeDef](./type_defs.md#updateendpointweightsandcapacitiesoutputresponsetypedef).
+[UpdateEndpointWeightsAndCapacitiesOutputTypeDef](./type_defs.md#updateendpointweightsandcapacitiesoutputtypedef).
 
 ### update_experiment
 
@@ -5404,7 +5408,7 @@ Boto3 documentation:
 [SageMaker.Client.update_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_experiment)
 
 Arguments mapping described in
-[UpdateExperimentRequestTypeDef](./type_defs.md#updateexperimentrequesttypedef).
+[UpdateExperimentRequestRequestTypeDef](./type_defs.md#updateexperimentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5413,7 +5417,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateExperimentResponseResponseTypeDef](./type_defs.md#updateexperimentresponseresponsetypedef).
+[UpdateExperimentResponseTypeDef](./type_defs.md#updateexperimentresponsetypedef).
 
 ### update_image
 
@@ -5425,7 +5429,7 @@ Boto3 documentation:
 [SageMaker.Client.update_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_image)
 
 Arguments mapping described in
-[UpdateImageRequestTypeDef](./type_defs.md#updateimagerequesttypedef).
+[UpdateImageRequestRequestTypeDef](./type_defs.md#updateimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5436,7 +5440,7 @@ Keyword-only arguments:
 - `RoleArn`: `str`
 
 Returns
-[UpdateImageResponseResponseTypeDef](./type_defs.md#updateimageresponseresponsetypedef).
+[UpdateImageResponseTypeDef](./type_defs.md#updateimageresponsetypedef).
 
 ### update_model_package
 
@@ -5448,7 +5452,7 @@ Boto3 documentation:
 [SageMaker.Client.update_model_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_model_package)
 
 Arguments mapping described in
-[UpdateModelPackageInputTypeDef](./type_defs.md#updatemodelpackageinputtypedef).
+[UpdateModelPackageInputRequestTypeDef](./type_defs.md#updatemodelpackageinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5458,7 +5462,7 @@ Keyword-only arguments:
 - `ApprovalDescription`: `str`
 
 Returns
-[UpdateModelPackageOutputResponseTypeDef](./type_defs.md#updatemodelpackageoutputresponsetypedef).
+[UpdateModelPackageOutputTypeDef](./type_defs.md#updatemodelpackageoutputtypedef).
 
 ### update_monitoring_schedule
 
@@ -5471,7 +5475,7 @@ Boto3 documentation:
 [SageMaker.Client.update_monitoring_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_monitoring_schedule)
 
 Arguments mapping described in
-[UpdateMonitoringScheduleRequestTypeDef](./type_defs.md#updatemonitoringschedulerequesttypedef).
+[UpdateMonitoringScheduleRequestRequestTypeDef](./type_defs.md#updatemonitoringschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5481,7 +5485,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateMonitoringScheduleResponseResponseTypeDef](./type_defs.md#updatemonitoringscheduleresponseresponsetypedef).
+[UpdateMonitoringScheduleResponseTypeDef](./type_defs.md#updatemonitoringscheduleresponsetypedef).
 
 ### update_notebook_instance
 
@@ -5494,7 +5498,7 @@ Boto3 documentation:
 [SageMaker.Client.update_notebook_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_notebook_instance)
 
 Arguments mapping described in
-[UpdateNotebookInstanceInputTypeDef](./type_defs.md#updatenotebookinstanceinputtypedef).
+[UpdateNotebookInstanceInputRequestTypeDef](./type_defs.md#updatenotebookinstanceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5527,7 +5531,7 @@ Boto3 documentation:
 [SageMaker.Client.update_notebook_instance_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_notebook_instance_lifecycle_config)
 
 Arguments mapping described in
-[UpdateNotebookInstanceLifecycleConfigInputTypeDef](./type_defs.md#updatenotebookinstancelifecycleconfiginputtypedef).
+[UpdateNotebookInstanceLifecycleConfigInputRequestTypeDef](./type_defs.md#updatenotebookinstancelifecycleconfiginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5549,7 +5553,7 @@ Boto3 documentation:
 [SageMaker.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_pipeline)
 
 Arguments mapping described in
-[UpdatePipelineRequestTypeDef](./type_defs.md#updatepipelinerequesttypedef).
+[UpdatePipelineRequestRequestTypeDef](./type_defs.md#updatepipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5560,7 +5564,7 @@ Keyword-only arguments:
 - `RoleArn`: `str`
 
 Returns
-[UpdatePipelineResponseResponseTypeDef](./type_defs.md#updatepipelineresponseresponsetypedef).
+[UpdatePipelineResponseTypeDef](./type_defs.md#updatepipelineresponsetypedef).
 
 ### update_pipeline_execution
 
@@ -5573,7 +5577,7 @@ Boto3 documentation:
 [SageMaker.Client.update_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_pipeline_execution)
 
 Arguments mapping described in
-[UpdatePipelineExecutionRequestTypeDef](./type_defs.md#updatepipelineexecutionrequesttypedef).
+[UpdatePipelineExecutionRequestRequestTypeDef](./type_defs.md#updatepipelineexecutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5582,7 +5586,7 @@ Keyword-only arguments:
 - `PipelineExecutionDisplayName`: `str`
 
 Returns
-[UpdatePipelineExecutionResponseResponseTypeDef](./type_defs.md#updatepipelineexecutionresponseresponsetypedef).
+[UpdatePipelineExecutionResponseTypeDef](./type_defs.md#updatepipelineexecutionresponsetypedef).
 
 ### update_training_job
 
@@ -5594,7 +5598,7 @@ Boto3 documentation:
 [SageMaker.Client.update_training_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_training_job)
 
 Arguments mapping described in
-[UpdateTrainingJobRequestTypeDef](./type_defs.md#updatetrainingjobrequesttypedef).
+[UpdateTrainingJobRequestRequestTypeDef](./type_defs.md#updatetrainingjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5605,7 +5609,7 @@ Keyword-only arguments:
   `List`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
 
 Returns
-[UpdateTrainingJobResponseResponseTypeDef](./type_defs.md#updatetrainingjobresponseresponsetypedef).
+[UpdateTrainingJobResponseTypeDef](./type_defs.md#updatetrainingjobresponsetypedef).
 
 ### update_trial
 
@@ -5617,7 +5621,7 @@ Boto3 documentation:
 [SageMaker.Client.update_trial](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_trial)
 
 Arguments mapping described in
-[UpdateTrialRequestTypeDef](./type_defs.md#updatetrialrequesttypedef).
+[UpdateTrialRequestRequestTypeDef](./type_defs.md#updatetrialrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5625,7 +5629,7 @@ Keyword-only arguments:
 - `DisplayName`: `str`
 
 Returns
-[UpdateTrialResponseResponseTypeDef](./type_defs.md#updatetrialresponseresponsetypedef).
+[UpdateTrialResponseTypeDef](./type_defs.md#updatetrialresponsetypedef).
 
 ### update_trial_component
 
@@ -5637,7 +5641,7 @@ Boto3 documentation:
 [SageMaker.Client.update_trial_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_trial_component)
 
 Arguments mapping described in
-[UpdateTrialComponentRequestTypeDef](./type_defs.md#updatetrialcomponentrequesttypedef).
+[UpdateTrialComponentRequestRequestTypeDef](./type_defs.md#updatetrialcomponentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5658,7 +5662,7 @@ Keyword-only arguments:
 - `OutputArtifactsToRemove`: `List`\[`str`\]
 
 Returns
-[UpdateTrialComponentResponseResponseTypeDef](./type_defs.md#updatetrialcomponentresponseresponsetypedef).
+[UpdateTrialComponentResponseTypeDef](./type_defs.md#updatetrialcomponentresponsetypedef).
 
 ### update_user_profile
 
@@ -5670,7 +5674,7 @@ Boto3 documentation:
 [SageMaker.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_user_profile)
 
 Arguments mapping described in
-[UpdateUserProfileRequestTypeDef](./type_defs.md#updateuserprofilerequesttypedef).
+[UpdateUserProfileRequestRequestTypeDef](./type_defs.md#updateuserprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5679,7 +5683,7 @@ Keyword-only arguments:
 - `UserSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 
 Returns
-[UpdateUserProfileResponseResponseTypeDef](./type_defs.md#updateuserprofileresponseresponsetypedef).
+[UpdateUserProfileResponseTypeDef](./type_defs.md#updateuserprofileresponsetypedef).
 
 ### update_workforce
 
@@ -5691,7 +5695,7 @@ Boto3 documentation:
 [SageMaker.Client.update_workforce](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_workforce)
 
 Arguments mapping described in
-[UpdateWorkforceRequestTypeDef](./type_defs.md#updateworkforcerequesttypedef).
+[UpdateWorkforceRequestRequestTypeDef](./type_defs.md#updateworkforcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5701,7 +5705,7 @@ Keyword-only arguments:
 - `OidcConfig`: [OidcConfigTypeDef](./type_defs.md#oidcconfigtypedef)
 
 Returns
-[UpdateWorkforceResponseResponseTypeDef](./type_defs.md#updateworkforceresponseresponsetypedef).
+[UpdateWorkforceResponseTypeDef](./type_defs.md#updateworkforceresponsetypedef).
 
 ### update_workteam
 
@@ -5713,7 +5717,7 @@ Boto3 documentation:
 [SageMaker.Client.update_workteam](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.update_workteam)
 
 Arguments mapping described in
-[UpdateWorkteamRequestTypeDef](./type_defs.md#updateworkteamrequesttypedef).
+[UpdateWorkteamRequestRequestTypeDef](./type_defs.md#updateworkteamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -5725,7 +5729,7 @@ Keyword-only arguments:
   [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
 
 Returns
-[UpdateWorkteamResponseResponseTypeDef](./type_defs.md#updateworkteamresponseresponsetypedef).
+[UpdateWorkteamResponseTypeDef](./type_defs.md#updateworkteamresponsetypedef).
 
 ### get_paginator
 

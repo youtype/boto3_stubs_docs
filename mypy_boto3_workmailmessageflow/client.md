@@ -11,6 +11,7 @@ type annotations stubs module
   - [WorkMailMessageFlowClient](#workmailmessageflowclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_raw_message_content](#get_raw_message_content)
@@ -53,6 +54,17 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 
 ## Methods
+
+### exceptions
+
+WorkMailMessageFlowClient exceptions.
+
+Type annotations for `boto3.client("workmailmessageflow").exceptions` method.
+
+Boto3 documentation:
+[WorkMailMessageFlow.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
 
 ### can_paginate
 
@@ -99,14 +111,14 @@ Boto3 documentation:
 [WorkMailMessageFlow.Client.get_raw_message_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.get_raw_message_content)
 
 Arguments mapping described in
-[GetRawMessageContentRequestTypeDef](./type_defs.md#getrawmessagecontentrequesttypedef).
+[GetRawMessageContentRequestRequestTypeDef](./type_defs.md#getrawmessagecontentrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `messageId`: `str` *(required)*
 
 Returns
-[GetRawMessageContentResponseResponseTypeDef](./type_defs.md#getrawmessagecontentresponseresponsetypedef).
+[GetRawMessageContentResponseTypeDef](./type_defs.md#getrawmessagecontentresponsetypedef).
 
 ### put_raw_message_content
 
@@ -119,7 +131,7 @@ Boto3 documentation:
 [WorkMailMessageFlow.Client.put_raw_message_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.put_raw_message_content)
 
 Arguments mapping described in
-[PutRawMessageContentRequestTypeDef](./type_defs.md#putrawmessagecontentrequesttypedef).
+[PutRawMessageContentRequestRequestTypeDef](./type_defs.md#putrawmessagecontentrequestrequesttypedef).
 
 Keyword-only arguments:
 

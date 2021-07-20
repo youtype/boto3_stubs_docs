@@ -11,6 +11,7 @@ type annotations stubs module
   - [SagemakerEdgeManagerClient](#sagemakeredgemanagerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_device_registration](#get_device_registration)
@@ -50,6 +51,17 @@ Exceptions:
 - `Exceptions.InternalServiceException`
 
 ## Methods
+
+### exceptions
+
+SagemakerEdgeManagerClient exceptions.
+
+Type annotations for `boto3.client("sagemaker-edge").exceptions` method.
+
+Boto3 documentation:
+[SagemakerEdgeManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
 
 ### can_paginate
 
@@ -96,7 +108,7 @@ Boto3 documentation:
 [SagemakerEdgeManager.Client.get_device_registration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.get_device_registration)
 
 Arguments mapping described in
-[GetDeviceRegistrationRequestTypeDef](./type_defs.md#getdeviceregistrationrequesttypedef).
+[GetDeviceRegistrationRequestRequestTypeDef](./type_defs.md#getdeviceregistrationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -104,7 +116,7 @@ Keyword-only arguments:
 - `DeviceFleetName`: `str` *(required)*
 
 Returns
-[GetDeviceRegistrationResultResponseTypeDef](./type_defs.md#getdeviceregistrationresultresponsetypedef).
+[GetDeviceRegistrationResultTypeDef](./type_defs.md#getdeviceregistrationresulttypedef).
 
 ### send_heartbeat
 
@@ -116,7 +128,7 @@ Boto3 documentation:
 [SagemakerEdgeManager.Client.send_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.send_heartbeat)
 
 Arguments mapping described in
-[SendHeartbeatRequestTypeDef](./type_defs.md#sendheartbeatrequesttypedef).
+[SendHeartbeatRequestRequestTypeDef](./type_defs.md#sendheartbeatrequestrequesttypedef).
 
 Keyword-only arguments:
 

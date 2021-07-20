@@ -14,57 +14,57 @@ type annotations stubs module
   - [ApiPassthroughTypeDef](#apipassthroughtypedef)
   - [CertificateAuthorityConfigurationTypeDef](#certificateauthorityconfigurationtypedef)
   - [CertificateAuthorityTypeDef](#certificateauthoritytypedef)
-  - [CreateCertificateAuthorityAuditReportRequestTypeDef](#createcertificateauthorityauditreportrequesttypedef)
-  - [CreateCertificateAuthorityAuditReportResponseResponseTypeDef](#createcertificateauthorityauditreportresponseresponsetypedef)
-  - [CreateCertificateAuthorityRequestTypeDef](#createcertificateauthorityrequesttypedef)
-  - [CreateCertificateAuthorityResponseResponseTypeDef](#createcertificateauthorityresponseresponsetypedef)
-  - [CreatePermissionRequestTypeDef](#createpermissionrequesttypedef)
+  - [CreateCertificateAuthorityAuditReportRequestRequestTypeDef](#createcertificateauthorityauditreportrequestrequesttypedef)
+  - [CreateCertificateAuthorityAuditReportResponseTypeDef](#createcertificateauthorityauditreportresponsetypedef)
+  - [CreateCertificateAuthorityRequestRequestTypeDef](#createcertificateauthorityrequestrequesttypedef)
+  - [CreateCertificateAuthorityResponseTypeDef](#createcertificateauthorityresponsetypedef)
+  - [CreatePermissionRequestRequestTypeDef](#createpermissionrequestrequesttypedef)
   - [CrlConfigurationTypeDef](#crlconfigurationtypedef)
   - [CsrExtensionsTypeDef](#csrextensionstypedef)
-  - [DeleteCertificateAuthorityRequestTypeDef](#deletecertificateauthorityrequesttypedef)
-  - [DeletePermissionRequestTypeDef](#deletepermissionrequesttypedef)
-  - [DeletePolicyRequestTypeDef](#deletepolicyrequesttypedef)
-  - [DescribeCertificateAuthorityAuditReportRequestTypeDef](#describecertificateauthorityauditreportrequesttypedef)
-  - [DescribeCertificateAuthorityAuditReportResponseResponseTypeDef](#describecertificateauthorityauditreportresponseresponsetypedef)
-  - [DescribeCertificateAuthorityRequestTypeDef](#describecertificateauthorityrequesttypedef)
-  - [DescribeCertificateAuthorityResponseResponseTypeDef](#describecertificateauthorityresponseresponsetypedef)
+  - [DeleteCertificateAuthorityRequestRequestTypeDef](#deletecertificateauthorityrequestrequesttypedef)
+  - [DeletePermissionRequestRequestTypeDef](#deletepermissionrequestrequesttypedef)
+  - [DeletePolicyRequestRequestTypeDef](#deletepolicyrequestrequesttypedef)
+  - [DescribeCertificateAuthorityAuditReportRequestRequestTypeDef](#describecertificateauthorityauditreportrequestrequesttypedef)
+  - [DescribeCertificateAuthorityAuditReportResponseTypeDef](#describecertificateauthorityauditreportresponsetypedef)
+  - [DescribeCertificateAuthorityRequestRequestTypeDef](#describecertificateauthorityrequestrequesttypedef)
+  - [DescribeCertificateAuthorityResponseTypeDef](#describecertificateauthorityresponsetypedef)
   - [EdiPartyNameTypeDef](#edipartynametypedef)
   - [ExtendedKeyUsageTypeDef](#extendedkeyusagetypedef)
   - [ExtensionsTypeDef](#extensionstypedef)
   - [GeneralNameTypeDef](#generalnametypedef)
-  - [GetCertificateAuthorityCertificateRequestTypeDef](#getcertificateauthoritycertificaterequesttypedef)
-  - [GetCertificateAuthorityCertificateResponseResponseTypeDef](#getcertificateauthoritycertificateresponseresponsetypedef)
-  - [GetCertificateAuthorityCsrRequestTypeDef](#getcertificateauthoritycsrrequesttypedef)
-  - [GetCertificateAuthorityCsrResponseResponseTypeDef](#getcertificateauthoritycsrresponseresponsetypedef)
-  - [GetCertificateRequestTypeDef](#getcertificaterequesttypedef)
-  - [GetCertificateResponseResponseTypeDef](#getcertificateresponseresponsetypedef)
-  - [GetPolicyRequestTypeDef](#getpolicyrequesttypedef)
-  - [GetPolicyResponseResponseTypeDef](#getpolicyresponseresponsetypedef)
-  - [ImportCertificateAuthorityCertificateRequestTypeDef](#importcertificateauthoritycertificaterequesttypedef)
-  - [IssueCertificateRequestTypeDef](#issuecertificaterequesttypedef)
-  - [IssueCertificateResponseResponseTypeDef](#issuecertificateresponseresponsetypedef)
+  - [GetCertificateAuthorityCertificateRequestRequestTypeDef](#getcertificateauthoritycertificaterequestrequesttypedef)
+  - [GetCertificateAuthorityCertificateResponseTypeDef](#getcertificateauthoritycertificateresponsetypedef)
+  - [GetCertificateAuthorityCsrRequestRequestTypeDef](#getcertificateauthoritycsrrequestrequesttypedef)
+  - [GetCertificateAuthorityCsrResponseTypeDef](#getcertificateauthoritycsrresponsetypedef)
+  - [GetCertificateRequestRequestTypeDef](#getcertificaterequestrequesttypedef)
+  - [GetCertificateResponseTypeDef](#getcertificateresponsetypedef)
+  - [GetPolicyRequestRequestTypeDef](#getpolicyrequestrequesttypedef)
+  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
+  - [ImportCertificateAuthorityCertificateRequestRequestTypeDef](#importcertificateauthoritycertificaterequestrequesttypedef)
+  - [IssueCertificateRequestRequestTypeDef](#issuecertificaterequestrequesttypedef)
+  - [IssueCertificateResponseTypeDef](#issuecertificateresponsetypedef)
   - [KeyUsageTypeDef](#keyusagetypedef)
-  - [ListCertificateAuthoritiesRequestTypeDef](#listcertificateauthoritiesrequesttypedef)
-  - [ListCertificateAuthoritiesResponseResponseTypeDef](#listcertificateauthoritiesresponseresponsetypedef)
-  - [ListPermissionsRequestTypeDef](#listpermissionsrequesttypedef)
-  - [ListPermissionsResponseResponseTypeDef](#listpermissionsresponseresponsetypedef)
-  - [ListTagsRequestTypeDef](#listtagsrequesttypedef)
-  - [ListTagsResponseResponseTypeDef](#listtagsresponseresponsetypedef)
+  - [ListCertificateAuthoritiesRequestRequestTypeDef](#listcertificateauthoritiesrequestrequesttypedef)
+  - [ListCertificateAuthoritiesResponseTypeDef](#listcertificateauthoritiesresponsetypedef)
+  - [ListPermissionsRequestRequestTypeDef](#listpermissionsrequestrequesttypedef)
+  - [ListPermissionsResponseTypeDef](#listpermissionsresponsetypedef)
+  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
+  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
   - [OtherNameTypeDef](#othernametypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PermissionTypeDef](#permissiontypedef)
   - [PolicyInformationTypeDef](#policyinformationtypedef)
   - [PolicyQualifierInfoTypeDef](#policyqualifierinfotypedef)
-  - [PutPolicyRequestTypeDef](#putpolicyrequesttypedef)
+  - [PutPolicyRequestRequestTypeDef](#putpolicyrequestrequesttypedef)
   - [QualifierTypeDef](#qualifiertypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreCertificateAuthorityRequestTypeDef](#restorecertificateauthorityrequesttypedef)
+  - [RestoreCertificateAuthorityRequestRequestTypeDef](#restorecertificateauthorityrequestrequesttypedef)
   - [RevocationConfigurationTypeDef](#revocationconfigurationtypedef)
-  - [RevokeCertificateRequestTypeDef](#revokecertificaterequesttypedef)
-  - [TagCertificateAuthorityRequestTypeDef](#tagcertificateauthorityrequesttypedef)
+  - [RevokeCertificateRequestRequestTypeDef](#revokecertificaterequestrequesttypedef)
+  - [TagCertificateAuthorityRequestRequestTypeDef](#tagcertificateauthorityrequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagCertificateAuthorityRequestTypeDef](#untagcertificateauthorityrequesttypedef)
-  - [UpdateCertificateAuthorityRequestTypeDef](#updatecertificateauthorityrequesttypedef)
+  - [UntagCertificateAuthorityRequestRequestTypeDef](#untagcertificateauthorityrequestrequesttypedef)
+  - [UpdateCertificateAuthorityRequestRequestTypeDef](#updatecertificateauthorityrequestrequesttypedef)
   - [ValidityTypeDef](#validitytypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
@@ -170,10 +170,10 @@ Optional fields:
 - `KeyStorageSecurityStandard`:
   [KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype)
 
-## CreateCertificateAuthorityAuditReportRequestTypeDef
+## CreateCertificateAuthorityAuditReportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityAuditReportRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityAuditReportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -183,10 +183,10 @@ Required fields:
 - `AuditReportResponseFormat`:
   [AuditReportResponseFormatType](./literals.md#auditreportresponseformattype)
 
-## CreateCertificateAuthorityAuditReportResponseResponseTypeDef
+## CreateCertificateAuthorityAuditReportResponseTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityAuditReportResponseResponseTypeDef
+from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityAuditReportResponseTypeDef
 ```
 
 Required fields:
@@ -196,10 +196,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCertificateAuthorityRequestTypeDef
+## CreateCertificateAuthorityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityRequestRequestTypeDef
 ```
 
 Required fields:
@@ -218,10 +218,10 @@ Optional fields:
   [KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateCertificateAuthorityResponseResponseTypeDef
+## CreateCertificateAuthorityResponseTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityResponseResponseTypeDef
+from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityResponseTypeDef
 ```
 
 Required fields:
@@ -230,10 +230,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePermissionRequestTypeDef
+## CreatePermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import CreatePermissionRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import CreatePermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -275,10 +275,10 @@ Optional fields:
 - `SubjectInformationAccess`:
   `List`\[[AccessDescriptionTypeDef](./type_defs.md#accessdescriptiontypedef)\]
 
-## DeleteCertificateAuthorityRequestTypeDef
+## DeleteCertificateAuthorityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import DeleteCertificateAuthorityRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import DeleteCertificateAuthorityRequestRequestTypeDef
 ```
 
 Required fields:
@@ -289,10 +289,10 @@ Optional fields:
 
 - `PermanentDeletionTimeInDays`: `int`
 
-## DeletePermissionRequestTypeDef
+## DeletePermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import DeletePermissionRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import DeletePermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -304,20 +304,20 @@ Optional fields:
 
 - `SourceAccount`: `str`
 
-## DeletePolicyRequestTypeDef
+## DeletePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import DeletePolicyRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import DeletePolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## DescribeCertificateAuthorityAuditReportRequestTypeDef
+## DescribeCertificateAuthorityAuditReportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityAuditReportRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityAuditReportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -325,10 +325,10 @@ Required fields:
 - `CertificateAuthorityArn`: `str`
 - `AuditReportId`: `str`
 
-## DescribeCertificateAuthorityAuditReportResponseResponseTypeDef
+## DescribeCertificateAuthorityAuditReportResponseTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityAuditReportResponseResponseTypeDef
+from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityAuditReportResponseTypeDef
 ```
 
 Required fields:
@@ -341,20 +341,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCertificateAuthorityRequestTypeDef
+## DescribeCertificateAuthorityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CertificateAuthorityArn`: `str`
 
-## DescribeCertificateAuthorityResponseResponseTypeDef
+## DescribeCertificateAuthorityResponseTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityResponseResponseTypeDef
+from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityResponseTypeDef
 ```
 
 Required fields:
@@ -423,20 +423,20 @@ Optional fields:
 - `IpAddress`: `str`
 - `RegisteredId`: `str`
 
-## GetCertificateAuthorityCertificateRequestTypeDef
+## GetCertificateAuthorityCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCertificateRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CertificateAuthorityArn`: `str`
 
-## GetCertificateAuthorityCertificateResponseResponseTypeDef
+## GetCertificateAuthorityCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCertificateResponseResponseTypeDef
+from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -446,20 +446,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCertificateAuthorityCsrRequestTypeDef
+## GetCertificateAuthorityCsrRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCsrRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCsrRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CertificateAuthorityArn`: `str`
 
-## GetCertificateAuthorityCsrResponseResponseTypeDef
+## GetCertificateAuthorityCsrResponseTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCsrResponseResponseTypeDef
+from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCsrResponseTypeDef
 ```
 
 Required fields:
@@ -468,10 +468,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCertificateRequestTypeDef
+## GetCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import GetCertificateRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import GetCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -479,10 +479,10 @@ Required fields:
 - `CertificateAuthorityArn`: `str`
 - `CertificateArn`: `str`
 
-## GetCertificateResponseResponseTypeDef
+## GetCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import GetCertificateResponseResponseTypeDef
+from mypy_boto3_acm_pca.type_defs import GetCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -492,20 +492,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPolicyRequestTypeDef
+## GetPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import GetPolicyRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import GetPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## GetPolicyResponseResponseTypeDef
+## GetPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import GetPolicyResponseResponseTypeDef
+from mypy_boto3_acm_pca.type_defs import GetPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -514,10 +514,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ImportCertificateAuthorityCertificateRequestTypeDef
+## ImportCertificateAuthorityCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import ImportCertificateAuthorityCertificateRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import ImportCertificateAuthorityCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -529,10 +529,10 @@ Optional fields:
 
 - `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
-## IssueCertificateRequestTypeDef
+## IssueCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import IssueCertificateRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import IssueCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -551,10 +551,10 @@ Optional fields:
 - `ValidityNotBefore`: [ValidityTypeDef](./type_defs.md#validitytypedef)
 - `IdempotencyToken`: `str`
 
-## IssueCertificateResponseResponseTypeDef
+## IssueCertificateResponseTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import IssueCertificateResponseResponseTypeDef
+from mypy_boto3_acm_pca.type_defs import IssueCertificateResponseTypeDef
 ```
 
 Required fields:
@@ -581,10 +581,10 @@ Optional fields:
 - `EncipherOnly`: `bool`
 - `DecipherOnly`: `bool`
 
-## ListCertificateAuthoritiesRequestTypeDef
+## ListCertificateAuthoritiesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import ListCertificateAuthoritiesRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import ListCertificateAuthoritiesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -593,10 +593,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `ResourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
 
-## ListCertificateAuthoritiesResponseResponseTypeDef
+## ListCertificateAuthoritiesResponseTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import ListCertificateAuthoritiesResponseResponseTypeDef
+from mypy_boto3_acm_pca.type_defs import ListCertificateAuthoritiesResponseTypeDef
 ```
 
 Required fields:
@@ -607,10 +607,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPermissionsRequestTypeDef
+## ListPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import ListPermissionsRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import ListPermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -622,10 +622,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListPermissionsResponseResponseTypeDef
+## ListPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import ListPermissionsResponseResponseTypeDef
+from mypy_boto3_acm_pca.type_defs import ListPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -636,10 +636,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsRequestTypeDef
+## ListTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import ListTagsRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import ListTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -651,10 +651,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListTagsResponseResponseTypeDef
+## ListTagsResponseTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import ListTagsResponseResponseTypeDef
+from mypy_boto3_acm_pca.type_defs import ListTagsResponseTypeDef
 ```
 
 Required fields:
@@ -729,10 +729,10 @@ Required fields:
   [PolicyQualifierIdType](./literals.md#policyqualifieridtype))
 - `Qualifier`: [QualifierTypeDef](./type_defs.md#qualifiertypedef)
 
-## PutPolicyRequestTypeDef
+## PutPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import PutPolicyRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import PutPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -764,10 +764,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RestoreCertificateAuthorityRequestTypeDef
+## RestoreCertificateAuthorityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import RestoreCertificateAuthorityRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import RestoreCertificateAuthorityRequestRequestTypeDef
 ```
 
 Required fields:
@@ -785,10 +785,10 @@ Optional fields:
 - `CrlConfiguration`:
   [CrlConfigurationTypeDef](./type_defs.md#crlconfigurationtypedef)
 
-## RevokeCertificateRequestTypeDef
+## RevokeCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import RevokeCertificateRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import RevokeCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -798,10 +798,10 @@ Required fields:
 - `RevocationReason`:
   [RevocationReasonType](./literals.md#revocationreasontype)
 
-## TagCertificateAuthorityRequestTypeDef
+## TagCertificateAuthorityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import TagCertificateAuthorityRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import TagCertificateAuthorityRequestRequestTypeDef
 ```
 
 Required fields:
@@ -823,10 +823,10 @@ Optional fields:
 
 - `Value`: `str`
 
-## UntagCertificateAuthorityRequestTypeDef
+## UntagCertificateAuthorityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import UntagCertificateAuthorityRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import UntagCertificateAuthorityRequestRequestTypeDef
 ```
 
 Required fields:
@@ -834,10 +834,10 @@ Required fields:
 - `CertificateAuthorityArn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## UpdateCertificateAuthorityRequestTypeDef
+## UpdateCertificateAuthorityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_acm_pca.type_defs import UpdateCertificateAuthorityRequestTypeDef
+from mypy_boto3_acm_pca.type_defs import UpdateCertificateAuthorityRequestRequestTypeDef
 ```
 
 Required fields:

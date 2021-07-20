@@ -35,6 +35,7 @@ from mypy_boto3_s3outposts.client import S3OutpostsClient
 - [can_paginate](./client.md#can_paginate)
 - [create_endpoint](./client.md#create_endpoint)
 - [delete_endpoint](./client.md#delete_endpoint)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 - [list_endpoints](./client.md#list_endpoints)
@@ -84,15 +85,15 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_s3outposts.type_defs import CreateEndpointRequestTypeDef, ...
+from mypy_boto3_s3outposts.type_defs import CreateEndpointRequestRequestTypeDef, ...
 ```
 
-- [CreateEndpointRequestTypeDef](./type_defs.md#createendpointrequesttypedef)
-- [CreateEndpointResultResponseTypeDef](./type_defs.md#createendpointresultresponsetypedef)
-- [DeleteEndpointRequestTypeDef](./type_defs.md#deleteendpointrequesttypedef)
+- [CreateEndpointRequestRequestTypeDef](./type_defs.md#createendpointrequestrequesttypedef)
+- [CreateEndpointResultTypeDef](./type_defs.md#createendpointresulttypedef)
+- [DeleteEndpointRequestRequestTypeDef](./type_defs.md#deleteendpointrequestrequesttypedef)
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
-- [ListEndpointsRequestTypeDef](./type_defs.md#listendpointsrequesttypedef)
-- [ListEndpointsResultResponseTypeDef](./type_defs.md#listendpointsresultresponsetypedef)
+- [ListEndpointsRequestRequestTypeDef](./type_defs.md#listendpointsrequestrequesttypedef)
+- [ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef)
 - [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

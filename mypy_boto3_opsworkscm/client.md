@@ -11,6 +11,7 @@ type annotations stubs module
   - [OpsWorksCMClient](#opsworkscmclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_node](#associate_node)
     - [can_paginate](#can_paginate)
     - [create_backup](#create_backup)
@@ -75,6 +76,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+OpsWorksCMClient exceptions.
+
+Type annotations for `boto3.client("opsworkscm").exceptions` method.
+
+Boto3 documentation:
+[OpsWorksCM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_node
 
 Associates a new node with the server.
@@ -85,7 +97,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.associate_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.associate_node)
 
 Arguments mapping described in
-[AssociateNodeRequestTypeDef](./type_defs.md#associatenoderequesttypedef).
+[AssociateNodeRequestRequestTypeDef](./type_defs.md#associatenoderequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -96,7 +108,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AssociateNodeResponseResponseTypeDef](./type_defs.md#associatenoderesponseresponsetypedef).
+[AssociateNodeResponseTypeDef](./type_defs.md#associatenoderesponsetypedef).
 
 ### can_paginate
 
@@ -123,7 +135,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_backup)
 
 Arguments mapping described in
-[CreateBackupRequestTypeDef](./type_defs.md#createbackuprequesttypedef).
+[CreateBackupRequestRequestTypeDef](./type_defs.md#createbackuprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -132,7 +144,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateBackupResponseResponseTypeDef](./type_defs.md#createbackupresponseresponsetypedef).
+[CreateBackupResponseTypeDef](./type_defs.md#createbackupresponsetypedef).
 
 ### create_server
 
@@ -144,7 +156,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.create_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.create_server)
 
 Arguments mapping described in
-[CreateServerRequestTypeDef](./type_defs.md#createserverrequesttypedef).
+[CreateServerRequestRequestTypeDef](./type_defs.md#createserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -172,7 +184,7 @@ Keyword-only arguments:
 - `BackupId`: `str`
 
 Returns
-[CreateServerResponseResponseTypeDef](./type_defs.md#createserverresponseresponsetypedef).
+[CreateServerResponseTypeDef](./type_defs.md#createserverresponsetypedef).
 
 ### delete_backup
 
@@ -184,7 +196,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_backup)
 
 Arguments mapping described in
-[DeleteBackupRequestTypeDef](./type_defs.md#deletebackuprequesttypedef).
+[DeleteBackupRequestRequestTypeDef](./type_defs.md#deletebackuprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -203,7 +215,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.delete_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.delete_server)
 
 Arguments mapping described in
-[DeleteServerRequestTypeDef](./type_defs.md#deleteserverrequesttypedef).
+[DeleteServerRequestRequestTypeDef](./type_defs.md#deleteserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,7 +234,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_account_attributes)
 
 Returns
-[DescribeAccountAttributesResponseResponseTypeDef](./type_defs.md#describeaccountattributesresponseresponsetypedef).
+[DescribeAccountAttributesResponseTypeDef](./type_defs.md#describeaccountattributesresponsetypedef).
 
 ### describe_backups
 
@@ -234,7 +246,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_backups)
 
 Arguments mapping described in
-[DescribeBackupsRequestTypeDef](./type_defs.md#describebackupsrequesttypedef).
+[DescribeBackupsRequestRequestTypeDef](./type_defs.md#describebackupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -244,7 +256,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeBackupsResponseResponseTypeDef](./type_defs.md#describebackupsresponseresponsetypedef).
+[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
 
 ### describe_events
 
@@ -256,7 +268,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_events)
 
 Arguments mapping described in
-[DescribeEventsRequestTypeDef](./type_defs.md#describeeventsrequesttypedef).
+[DescribeEventsRequestRequestTypeDef](./type_defs.md#describeeventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -265,7 +277,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeEventsResponseResponseTypeDef](./type_defs.md#describeeventsresponseresponsetypedef).
+[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
 
 ### describe_node_association_status
 
@@ -279,7 +291,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.describe_node_association_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_node_association_status)
 
 Arguments mapping described in
-[DescribeNodeAssociationStatusRequestTypeDef](./type_defs.md#describenodeassociationstatusrequesttypedef).
+[DescribeNodeAssociationStatusRequestRequestTypeDef](./type_defs.md#describenodeassociationstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,7 +299,7 @@ Keyword-only arguments:
 - `ServerName`: `str` *(required)*
 
 Returns
-[DescribeNodeAssociationStatusResponseResponseTypeDef](./type_defs.md#describenodeassociationstatusresponseresponsetypedef).
+[DescribeNodeAssociationStatusResponseTypeDef](./type_defs.md#describenodeassociationstatusresponsetypedef).
 
 ### describe_servers
 
@@ -300,7 +312,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.describe_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.describe_servers)
 
 Arguments mapping described in
-[DescribeServersRequestTypeDef](./type_defs.md#describeserversrequesttypedef).
+[DescribeServersRequestRequestTypeDef](./type_defs.md#describeserversrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,7 +321,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeServersResponseResponseTypeDef](./type_defs.md#describeserversresponseresponsetypedef).
+[DescribeServersResponseTypeDef](./type_defs.md#describeserversresponsetypedef).
 
 ### disassociate_node
 
@@ -322,7 +334,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.disassociate_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.disassociate_node)
 
 Arguments mapping described in
-[DisassociateNodeRequestTypeDef](./type_defs.md#disassociatenoderequesttypedef).
+[DisassociateNodeRequestRequestTypeDef](./type_defs.md#disassociatenoderequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -332,7 +344,7 @@ Keyword-only arguments:
   `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 Returns
-[DisassociateNodeResponseResponseTypeDef](./type_defs.md#disassociatenoderesponseresponsetypedef).
+[DisassociateNodeResponseTypeDef](./type_defs.md#disassociatenoderesponsetypedef).
 
 ### export_server_engine_attribute
 
@@ -345,7 +357,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.export_server_engine_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.export_server_engine_attribute)
 
 Arguments mapping described in
-[ExportServerEngineAttributeRequestTypeDef](./type_defs.md#exportserverengineattributerequesttypedef).
+[ExportServerEngineAttributeRequestRequestTypeDef](./type_defs.md#exportserverengineattributerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -355,7 +367,7 @@ Keyword-only arguments:
   `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 Returns
-[ExportServerEngineAttributeResponseResponseTypeDef](./type_defs.md#exportserverengineattributeresponseresponsetypedef).
+[ExportServerEngineAttributeResponseTypeDef](./type_defs.md#exportserverengineattributeresponsetypedef).
 
 ### generate_presigned_url
 
@@ -388,7 +400,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -397,7 +409,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### restore_server
 
@@ -410,7 +422,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.restore_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.restore_server)
 
 Arguments mapping described in
-[RestoreServerRequestTypeDef](./type_defs.md#restoreserverrequesttypedef).
+[RestoreServerRequestRequestTypeDef](./type_defs.md#restoreserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -420,7 +432,7 @@ Keyword-only arguments:
 - `KeyPair`: `str`
 
 Returns
-[RestoreServerResponseResponseTypeDef](./type_defs.md#restoreserverresponseresponsetypedef).
+[RestoreServerResponseTypeDef](./type_defs.md#restoreserverresponsetypedef).
 
 ### start_maintenance
 
@@ -432,7 +444,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.start_maintenance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.start_maintenance)
 
 Arguments mapping described in
-[StartMaintenanceRequestTypeDef](./type_defs.md#startmaintenancerequesttypedef).
+[StartMaintenanceRequestRequestTypeDef](./type_defs.md#startmaintenancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -441,7 +453,7 @@ Keyword-only arguments:
   `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 Returns
-[StartMaintenanceResponseResponseTypeDef](./type_defs.md#startmaintenanceresponseresponsetypedef).
+[StartMaintenanceResponseTypeDef](./type_defs.md#startmaintenanceresponsetypedef).
 
 ### tag_resource
 
@@ -454,7 +466,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,7 +485,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -492,7 +504,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.update_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server)
 
 Arguments mapping described in
-[UpdateServerRequestTypeDef](./type_defs.md#updateserverrequesttypedef).
+[UpdateServerRequestRequestTypeDef](./type_defs.md#updateserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -503,7 +515,7 @@ Keyword-only arguments:
 - `PreferredBackupWindow`: `str`
 
 Returns
-[UpdateServerResponseResponseTypeDef](./type_defs.md#updateserverresponseresponsetypedef).
+[UpdateServerResponseTypeDef](./type_defs.md#updateserverresponsetypedef).
 
 ### update_server_engine_attributes
 
@@ -516,7 +528,7 @@ Boto3 documentation:
 [OpsWorksCM.Client.update_server_engine_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client.update_server_engine_attributes)
 
 Arguments mapping described in
-[UpdateServerEngineAttributesRequestTypeDef](./type_defs.md#updateserverengineattributesrequesttypedef).
+[UpdateServerEngineAttributesRequestRequestTypeDef](./type_defs.md#updateserverengineattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -525,7 +537,7 @@ Keyword-only arguments:
 - `AttributeValue`: `str`
 
 Returns
-[UpdateServerEngineAttributesResponseResponseTypeDef](./type_defs.md#updateserverengineattributesresponseresponsetypedef).
+[UpdateServerEngineAttributesResponseTypeDef](./type_defs.md#updateserverengineattributesresponsetypedef).
 
 ### get_paginator
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [CodeStarClient](#codestarclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_team_member](#associate_team_member)
     - [can_paginate](#can_paginate)
     - [create_project](#create_project)
@@ -80,6 +81,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CodeStarClient exceptions.
+
+Type annotations for `boto3.client("codestar").exceptions` method.
+
+Boto3 documentation:
+[CodeStar.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_team_member
 
 Adds an IAM user to the team for an AWS CodeStar project.
@@ -90,7 +102,7 @@ Boto3 documentation:
 [CodeStar.Client.associate_team_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.associate_team_member)
 
 Arguments mapping described in
-[AssociateTeamMemberRequestTypeDef](./type_defs.md#associateteammemberrequesttypedef).
+[AssociateTeamMemberRequestRequestTypeDef](./type_defs.md#associateteammemberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -101,7 +113,7 @@ Keyword-only arguments:
 - `remoteAccessAllowed`: `bool`
 
 Returns
-[AssociateTeamMemberResultResponseTypeDef](./type_defs.md#associateteammemberresultresponsetypedef).
+[AssociateTeamMemberResultTypeDef](./type_defs.md#associateteammemberresulttypedef).
 
 ### can_paginate
 
@@ -128,7 +140,7 @@ Boto3 documentation:
 [CodeStar.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_project)
 
 Arguments mapping described in
-[CreateProjectRequestTypeDef](./type_defs.md#createprojectrequesttypedef).
+[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -141,7 +153,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProjectResultResponseTypeDef](./type_defs.md#createprojectresultresponsetypedef).
+[CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
 
 ### create_user_profile
 
@@ -154,7 +166,7 @@ Boto3 documentation:
 [CodeStar.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_user_profile)
 
 Arguments mapping described in
-[CreateUserProfileRequestTypeDef](./type_defs.md#createuserprofilerequesttypedef).
+[CreateUserProfileRequestRequestTypeDef](./type_defs.md#createuserprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -164,7 +176,7 @@ Keyword-only arguments:
 - `sshPublicKey`: `str`
 
 Returns
-[CreateUserProfileResultResponseTypeDef](./type_defs.md#createuserprofileresultresponsetypedef).
+[CreateUserProfileResultTypeDef](./type_defs.md#createuserprofileresulttypedef).
 
 ### delete_project
 
@@ -176,7 +188,7 @@ Boto3 documentation:
 [CodeStar.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_project)
 
 Arguments mapping described in
-[DeleteProjectRequestTypeDef](./type_defs.md#deleteprojectrequesttypedef).
+[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -185,7 +197,7 @@ Keyword-only arguments:
 - `deleteStack`: `bool`
 
 Returns
-[DeleteProjectResultResponseTypeDef](./type_defs.md#deleteprojectresultresponsetypedef).
+[DeleteProjectResultTypeDef](./type_defs.md#deleteprojectresulttypedef).
 
 ### delete_user_profile
 
@@ -198,14 +210,14 @@ Boto3 documentation:
 [CodeStar.Client.delete_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_user_profile)
 
 Arguments mapping described in
-[DeleteUserProfileRequestTypeDef](./type_defs.md#deleteuserprofilerequesttypedef).
+[DeleteUserProfileRequestRequestTypeDef](./type_defs.md#deleteuserprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `userArn`: `str` *(required)*
 
 Returns
-[DeleteUserProfileResultResponseTypeDef](./type_defs.md#deleteuserprofileresultresponsetypedef).
+[DeleteUserProfileResultTypeDef](./type_defs.md#deleteuserprofileresulttypedef).
 
 ### describe_project
 
@@ -217,14 +229,14 @@ Boto3 documentation:
 [CodeStar.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_project)
 
 Arguments mapping described in
-[DescribeProjectRequestTypeDef](./type_defs.md#describeprojectrequesttypedef).
+[DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[DescribeProjectResultResponseTypeDef](./type_defs.md#describeprojectresultresponsetypedef).
+[DescribeProjectResultTypeDef](./type_defs.md#describeprojectresulttypedef).
 
 ### describe_user_profile
 
@@ -236,14 +248,14 @@ Boto3 documentation:
 [CodeStar.Client.describe_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_user_profile)
 
 Arguments mapping described in
-[DescribeUserProfileRequestTypeDef](./type_defs.md#describeuserprofilerequesttypedef).
+[DescribeUserProfileRequestRequestTypeDef](./type_defs.md#describeuserprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `userArn`: `str` *(required)*
 
 Returns
-[DescribeUserProfileResultResponseTypeDef](./type_defs.md#describeuserprofileresultresponsetypedef).
+[DescribeUserProfileResultTypeDef](./type_defs.md#describeuserprofileresulttypedef).
 
 ### disassociate_team_member
 
@@ -256,7 +268,7 @@ Boto3 documentation:
 [CodeStar.Client.disassociate_team_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.disassociate_team_member)
 
 Arguments mapping described in
-[DisassociateTeamMemberRequestTypeDef](./type_defs.md#disassociateteammemberrequesttypedef).
+[DisassociateTeamMemberRequestRequestTypeDef](./type_defs.md#disassociateteammemberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -293,15 +305,14 @@ Boto3 documentation:
 [CodeStar.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_projects)
 
 Arguments mapping described in
-[ListProjectsRequestTypeDef](./type_defs.md#listprojectsrequesttypedef).
+[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[ListProjectsResultResponseTypeDef](./type_defs.md#listprojectsresultresponsetypedef).
+Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
 
 ### list_resources
 
@@ -313,7 +324,7 @@ Boto3 documentation:
 [CodeStar.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_resources)
 
 Arguments mapping described in
-[ListResourcesRequestTypeDef](./type_defs.md#listresourcesrequesttypedef).
+[ListResourcesRequestRequestTypeDef](./type_defs.md#listresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -322,7 +333,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListResourcesResultResponseTypeDef](./type_defs.md#listresourcesresultresponsetypedef).
+[ListResourcesResultTypeDef](./type_defs.md#listresourcesresulttypedef).
 
 ### list_tags_for_project
 
@@ -334,7 +345,7 @@ Boto3 documentation:
 [CodeStar.Client.list_tags_for_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_tags_for_project)
 
 Arguments mapping described in
-[ListTagsForProjectRequestTypeDef](./type_defs.md#listtagsforprojectrequesttypedef).
+[ListTagsForProjectRequestRequestTypeDef](./type_defs.md#listtagsforprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -343,7 +354,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTagsForProjectResultResponseTypeDef](./type_defs.md#listtagsforprojectresultresponsetypedef).
+[ListTagsForProjectResultTypeDef](./type_defs.md#listtagsforprojectresulttypedef).
 
 ### list_team_members
 
@@ -355,7 +366,7 @@ Boto3 documentation:
 [CodeStar.Client.list_team_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_team_members)
 
 Arguments mapping described in
-[ListTeamMembersRequestTypeDef](./type_defs.md#listteammembersrequesttypedef).
+[ListTeamMembersRequestRequestTypeDef](./type_defs.md#listteammembersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -364,7 +375,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTeamMembersResultResponseTypeDef](./type_defs.md#listteammembersresultresponsetypedef).
+[ListTeamMembersResultTypeDef](./type_defs.md#listteammembersresulttypedef).
 
 ### list_user_profiles
 
@@ -376,7 +387,7 @@ Boto3 documentation:
 [CodeStar.Client.list_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_user_profiles)
 
 Arguments mapping described in
-[ListUserProfilesRequestTypeDef](./type_defs.md#listuserprofilesrequesttypedef).
+[ListUserProfilesRequestRequestTypeDef](./type_defs.md#listuserprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -384,7 +395,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListUserProfilesResultResponseTypeDef](./type_defs.md#listuserprofilesresultresponsetypedef).
+[ListUserProfilesResultTypeDef](./type_defs.md#listuserprofilesresulttypedef).
 
 ### tag_project
 
@@ -396,15 +407,14 @@ Boto3 documentation:
 [CodeStar.Client.tag_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.tag_project)
 
 Arguments mapping described in
-[TagProjectRequestTypeDef](./type_defs.md#tagprojectrequesttypedef).
+[TagProjectRequestRequestTypeDef](./type_defs.md#tagprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 - `tags`: `Dict`\[`str`, `str`\] *(required)*
 
-Returns
-[TagProjectResultResponseTypeDef](./type_defs.md#tagprojectresultresponsetypedef).
+Returns [TagProjectResultTypeDef](./type_defs.md#tagprojectresulttypedef).
 
 ### untag_project
 
@@ -416,7 +426,7 @@ Boto3 documentation:
 [CodeStar.Client.untag_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.untag_project)
 
 Arguments mapping described in
-[UntagProjectRequestTypeDef](./type_defs.md#untagprojectrequesttypedef).
+[UntagProjectRequestRequestTypeDef](./type_defs.md#untagprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -435,7 +445,7 @@ Boto3 documentation:
 [CodeStar.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_project)
 
 Arguments mapping described in
-[UpdateProjectRequestTypeDef](./type_defs.md#updateprojectrequesttypedef).
+[UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -455,7 +465,7 @@ Boto3 documentation:
 [CodeStar.Client.update_team_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_team_member)
 
 Arguments mapping described in
-[UpdateTeamMemberRequestTypeDef](./type_defs.md#updateteammemberrequesttypedef).
+[UpdateTeamMemberRequestRequestTypeDef](./type_defs.md#updateteammemberrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -465,7 +475,7 @@ Keyword-only arguments:
 - `remoteAccessAllowed`: `bool`
 
 Returns
-[UpdateTeamMemberResultResponseTypeDef](./type_defs.md#updateteammemberresultresponsetypedef).
+[UpdateTeamMemberResultTypeDef](./type_defs.md#updateteammemberresulttypedef).
 
 ### update_user_profile
 
@@ -477,7 +487,7 @@ Boto3 documentation:
 [CodeStar.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_user_profile)
 
 Arguments mapping described in
-[UpdateUserProfileRequestTypeDef](./type_defs.md#updateuserprofilerequesttypedef).
+[UpdateUserProfileRequestRequestTypeDef](./type_defs.md#updateuserprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -487,7 +497,7 @@ Keyword-only arguments:
 - `sshPublicKey`: `str`
 
 Returns
-[UpdateUserProfileResultResponseTypeDef](./type_defs.md#updateuserprofileresultresponsetypedef).
+[UpdateUserProfileResultTypeDef](./type_defs.md#updateuserprofileresulttypedef).
 
 ### get_paginator
 

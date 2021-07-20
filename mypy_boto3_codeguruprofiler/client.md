@@ -11,6 +11,7 @@ type annotations stubs module
   - [CodeGuruProfilerClient](#codeguruprofilerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_notification_channels](#add_notification_channels)
     - [batch_get_frame_metric_data](#batch_get_frame_metric_data)
     - [can_paginate](#can_paginate)
@@ -78,6 +79,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CodeGuruProfilerClient exceptions.
+
+Type annotations for `boto3.client("codeguruprofiler").exceptions` method.
+
+Boto3 documentation:
+[CodeGuruProfiler.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_notification_channels
 
 Add up to 2 anomaly notifications channels for a profiling group.
@@ -89,7 +101,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.add_notification_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.add_notification_channels)
 
 Arguments mapping described in
-[AddNotificationChannelsRequestTypeDef](./type_defs.md#addnotificationchannelsrequesttypedef).
+[AddNotificationChannelsRequestRequestTypeDef](./type_defs.md#addnotificationchannelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -98,7 +110,7 @@ Keyword-only arguments:
 - `profilingGroupName`: `str` *(required)*
 
 Returns
-[AddNotificationChannelsResponseResponseTypeDef](./type_defs.md#addnotificationchannelsresponseresponsetypedef).
+[AddNotificationChannelsResponseTypeDef](./type_defs.md#addnotificationchannelsresponsetypedef).
 
 ### batch_get_frame_metric_data
 
@@ -112,7 +124,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.batch_get_frame_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.batch_get_frame_metric_data)
 
 Arguments mapping described in
-[BatchGetFrameMetricDataRequestTypeDef](./type_defs.md#batchgetframemetricdatarequesttypedef).
+[BatchGetFrameMetricDataRequestRequestTypeDef](./type_defs.md#batchgetframemetricdatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -126,7 +138,7 @@ Keyword-only arguments:
   [AggregationPeriodType](./literals.md#aggregationperiodtype)
 
 Returns
-[BatchGetFrameMetricDataResponseResponseTypeDef](./type_defs.md#batchgetframemetricdataresponseresponsetypedef).
+[BatchGetFrameMetricDataResponseTypeDef](./type_defs.md#batchgetframemetricdataresponsetypedef).
 
 ### can_paginate
 
@@ -153,7 +165,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.configure_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.configure_agent)
 
 Arguments mapping described in
-[ConfigureAgentRequestTypeDef](./type_defs.md#configureagentrequesttypedef).
+[ConfigureAgentRequestRequestTypeDef](./type_defs.md#configureagentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -163,7 +175,7 @@ Keyword-only arguments:
   `str`\]
 
 Returns
-[ConfigureAgentResponseResponseTypeDef](./type_defs.md#configureagentresponseresponsetypedef).
+[ConfigureAgentResponseTypeDef](./type_defs.md#configureagentresponsetypedef).
 
 ### create_profiling_group
 
@@ -176,7 +188,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.create_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.create_profiling_group)
 
 Arguments mapping described in
-[CreateProfilingGroupRequestTypeDef](./type_defs.md#createprofilinggrouprequesttypedef).
+[CreateProfilingGroupRequestRequestTypeDef](./type_defs.md#createprofilinggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -188,7 +200,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProfilingGroupResponseResponseTypeDef](./type_defs.md#createprofilinggroupresponseresponsetypedef).
+[CreateProfilingGroupResponseTypeDef](./type_defs.md#createprofilinggroupresponsetypedef).
 
 ### delete_profiling_group
 
@@ -201,7 +213,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.delete_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.delete_profiling_group)
 
 Arguments mapping described in
-[DeleteProfilingGroupRequestTypeDef](./type_defs.md#deleteprofilinggrouprequesttypedef).
+[DeleteProfilingGroupRequestRequestTypeDef](./type_defs.md#deleteprofilinggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,14 +232,14 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.describe_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.describe_profiling_group)
 
 Arguments mapping described in
-[DescribeProfilingGroupRequestTypeDef](./type_defs.md#describeprofilinggrouprequesttypedef).
+[DescribeProfilingGroupRequestRequestTypeDef](./type_defs.md#describeprofilinggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `profilingGroupName`: `str` *(required)*
 
 Returns
-[DescribeProfilingGroupResponseResponseTypeDef](./type_defs.md#describeprofilinggroupresponseresponsetypedef).
+[DescribeProfilingGroupResponseTypeDef](./type_defs.md#describeprofilinggroupresponsetypedef).
 
 ### generate_presigned_url
 
@@ -259,7 +271,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.get_findings_report_account_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_findings_report_account_summary)
 
 Arguments mapping described in
-[GetFindingsReportAccountSummaryRequestTypeDef](./type_defs.md#getfindingsreportaccountsummaryrequesttypedef).
+[GetFindingsReportAccountSummaryRequestRequestTypeDef](./type_defs.md#getfindingsreportaccountsummaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -268,7 +280,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[GetFindingsReportAccountSummaryResponseResponseTypeDef](./type_defs.md#getfindingsreportaccountsummaryresponseresponsetypedef).
+[GetFindingsReportAccountSummaryResponseTypeDef](./type_defs.md#getfindingsreportaccountsummaryresponsetypedef).
 
 ### get_notification_configuration
 
@@ -281,14 +293,14 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.get_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_notification_configuration)
 
 Arguments mapping described in
-[GetNotificationConfigurationRequestTypeDef](./type_defs.md#getnotificationconfigurationrequesttypedef).
+[GetNotificationConfigurationRequestRequestTypeDef](./type_defs.md#getnotificationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `profilingGroupName`: `str` *(required)*
 
 Returns
-[GetNotificationConfigurationResponseResponseTypeDef](./type_defs.md#getnotificationconfigurationresponseresponsetypedef).
+[GetNotificationConfigurationResponseTypeDef](./type_defs.md#getnotificationconfigurationresponsetypedef).
 
 ### get_policy
 
@@ -300,14 +312,13 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_policy)
 
 Arguments mapping described in
-[GetPolicyRequestTypeDef](./type_defs.md#getpolicyrequesttypedef).
+[GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `profilingGroupName`: `str` *(required)*
 
-Returns
-[GetPolicyResponseResponseTypeDef](./type_defs.md#getpolicyresponseresponsetypedef).
+Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
 ### get_profile
 
@@ -319,7 +330,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.get_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_profile)
 
 Arguments mapping described in
-[GetProfileRequestTypeDef](./type_defs.md#getprofilerequesttypedef).
+[GetProfileRequestRequestTypeDef](./type_defs.md#getprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -330,8 +341,7 @@ Keyword-only arguments:
 - `period`: `str`
 - `startTime`: `Union`\[`datetime`, `str`\]
 
-Returns
-[GetProfileResponseResponseTypeDef](./type_defs.md#getprofileresponseresponsetypedef).
+Returns [GetProfileResponseTypeDef](./type_defs.md#getprofileresponsetypedef).
 
 ### get_recommendations
 
@@ -344,7 +354,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_recommendations)
 
 Arguments mapping described in
-[GetRecommendationsRequestTypeDef](./type_defs.md#getrecommendationsrequesttypedef).
+[GetRecommendationsRequestRequestTypeDef](./type_defs.md#getrecommendationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -354,7 +364,7 @@ Keyword-only arguments:
 - `locale`: `str`
 
 Returns
-[GetRecommendationsResponseResponseTypeDef](./type_defs.md#getrecommendationsresponseresponsetypedef).
+[GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef).
 
 ### list_findings_reports
 
@@ -367,7 +377,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.list_findings_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_findings_reports)
 
 Arguments mapping described in
-[ListFindingsReportsRequestTypeDef](./type_defs.md#listfindingsreportsrequesttypedef).
+[ListFindingsReportsRequestRequestTypeDef](./type_defs.md#listfindingsreportsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -379,7 +389,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListFindingsReportsResponseResponseTypeDef](./type_defs.md#listfindingsreportsresponseresponsetypedef).
+[ListFindingsReportsResponseTypeDef](./type_defs.md#listfindingsreportsresponsetypedef).
 
 ### list_profile_times
 
@@ -393,7 +403,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.list_profile_times](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profile_times)
 
 Arguments mapping described in
-[ListProfileTimesRequestTypeDef](./type_defs.md#listprofiletimesrequesttypedef).
+[ListProfileTimesRequestRequestTypeDef](./type_defs.md#listprofiletimesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -407,7 +417,7 @@ Keyword-only arguments:
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
 
 Returns
-[ListProfileTimesResponseResponseTypeDef](./type_defs.md#listprofiletimesresponseresponsetypedef).
+[ListProfileTimesResponseTypeDef](./type_defs.md#listprofiletimesresponsetypedef).
 
 ### list_profiling_groups
 
@@ -420,7 +430,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.list_profiling_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profiling_groups)
 
 Arguments mapping described in
-[ListProfilingGroupsRequestTypeDef](./type_defs.md#listprofilinggroupsrequesttypedef).
+[ListProfilingGroupsRequestRequestTypeDef](./type_defs.md#listprofilinggroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -429,7 +439,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListProfilingGroupsResponseResponseTypeDef](./type_defs.md#listprofilinggroupsresponseresponsetypedef).
+[ListProfilingGroupsResponseTypeDef](./type_defs.md#listprofilinggroupsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -442,14 +452,14 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### post_agent_profile
 
@@ -462,7 +472,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.post_agent_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.post_agent_profile)
 
 Arguments mapping described in
-[PostAgentProfileRequestTypeDef](./type_defs.md#postagentprofilerequesttypedef).
+[PostAgentProfileRequestRequestTypeDef](./type_defs.md#postagentprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -485,7 +495,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.put_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.put_permission)
 
 Arguments mapping described in
-[PutPermissionRequestTypeDef](./type_defs.md#putpermissionrequesttypedef).
+[PutPermissionRequestRequestTypeDef](./type_defs.md#putpermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -496,7 +506,7 @@ Keyword-only arguments:
 - `revisionId`: `str`
 
 Returns
-[PutPermissionResponseResponseTypeDef](./type_defs.md#putpermissionresponseresponsetypedef).
+[PutPermissionResponseTypeDef](./type_defs.md#putpermissionresponsetypedef).
 
 ### remove_notification_channel
 
@@ -509,7 +519,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.remove_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_notification_channel)
 
 Arguments mapping described in
-[RemoveNotificationChannelRequestTypeDef](./type_defs.md#removenotificationchannelrequesttypedef).
+[RemoveNotificationChannelRequestRequestTypeDef](./type_defs.md#removenotificationchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -517,7 +527,7 @@ Keyword-only arguments:
 - `profilingGroupName`: `str` *(required)*
 
 Returns
-[RemoveNotificationChannelResponseResponseTypeDef](./type_defs.md#removenotificationchannelresponseresponsetypedef).
+[RemoveNotificationChannelResponseTypeDef](./type_defs.md#removenotificationchannelresponsetypedef).
 
 ### remove_permission
 
@@ -530,7 +540,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_permission)
 
 Arguments mapping described in
-[RemovePermissionRequestTypeDef](./type_defs.md#removepermissionrequesttypedef).
+[RemovePermissionRequestRequestTypeDef](./type_defs.md#removepermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -540,7 +550,7 @@ Keyword-only arguments:
 - `revisionId`: `str` *(required)*
 
 Returns
-[RemovePermissionResponseResponseTypeDef](./type_defs.md#removepermissionresponseresponsetypedef).
+[RemovePermissionResponseTypeDef](./type_defs.md#removepermissionresponsetypedef).
 
 ### submit_feedback
 
@@ -552,7 +562,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.submit_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.submit_feedback)
 
 Arguments mapping described in
-[SubmitFeedbackRequestTypeDef](./type_defs.md#submitfeedbackrequesttypedef).
+[SubmitFeedbackRequestRequestTypeDef](./type_defs.md#submitfeedbackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -573,7 +583,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -592,7 +602,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -612,7 +622,7 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.update_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.update_profiling_group)
 
 Arguments mapping described in
-[UpdateProfilingGroupRequestTypeDef](./type_defs.md#updateprofilinggrouprequesttypedef).
+[UpdateProfilingGroupRequestRequestTypeDef](./type_defs.md#updateprofilinggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -622,7 +632,7 @@ Keyword-only arguments:
 - `profilingGroupName`: `str` *(required)*
 
 Returns
-[UpdateProfilingGroupResponseResponseTypeDef](./type_defs.md#updateprofilinggroupresponseresponsetypedef).
+[UpdateProfilingGroupResponseTypeDef](./type_defs.md#updateprofilinggroupresponsetypedef).
 
 ### get_paginator
 

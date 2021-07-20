@@ -11,6 +11,7 @@ type annotations stubs module
   - [DAXClient](#daxclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_cluster](#create_cluster)
     - [create_parameter_group](#create_parameter_group)
@@ -97,6 +98,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DAXClient exceptions.
+
+Type annotations for `boto3.client("dax").exceptions` method.
+
+Boto3 documentation:
+[DAX.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -122,7 +134,7 @@ Boto3 documentation:
 [DAX.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_cluster)
 
 Arguments mapping described in
-[CreateClusterRequestTypeDef](./type_defs.md#createclusterrequesttypedef).
+[CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -144,7 +156,7 @@ Keyword-only arguments:
   [ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype)
 
 Returns
-[CreateClusterResponseResponseTypeDef](./type_defs.md#createclusterresponseresponsetypedef).
+[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
 ### create_parameter_group
 
@@ -156,7 +168,7 @@ Boto3 documentation:
 [DAX.Client.create_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_parameter_group)
 
 Arguments mapping described in
-[CreateParameterGroupRequestTypeDef](./type_defs.md#createparametergrouprequesttypedef).
+[CreateParameterGroupRequestRequestTypeDef](./type_defs.md#createparametergrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -164,7 +176,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[CreateParameterGroupResponseResponseTypeDef](./type_defs.md#createparametergroupresponseresponsetypedef).
+[CreateParameterGroupResponseTypeDef](./type_defs.md#createparametergroupresponsetypedef).
 
 ### create_subnet_group
 
@@ -176,7 +188,7 @@ Boto3 documentation:
 [DAX.Client.create_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_subnet_group)
 
 Arguments mapping described in
-[CreateSubnetGroupRequestTypeDef](./type_defs.md#createsubnetgrouprequesttypedef).
+[CreateSubnetGroupRequestRequestTypeDef](./type_defs.md#createsubnetgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -185,7 +197,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[CreateSubnetGroupResponseResponseTypeDef](./type_defs.md#createsubnetgroupresponseresponsetypedef).
+[CreateSubnetGroupResponseTypeDef](./type_defs.md#createsubnetgroupresponsetypedef).
 
 ### decrease_replication_factor
 
@@ -197,7 +209,7 @@ Boto3 documentation:
 [DAX.Client.decrease_replication_factor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.decrease_replication_factor)
 
 Arguments mapping described in
-[DecreaseReplicationFactorRequestTypeDef](./type_defs.md#decreasereplicationfactorrequesttypedef).
+[DecreaseReplicationFactorRequestRequestTypeDef](./type_defs.md#decreasereplicationfactorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,7 +219,7 @@ Keyword-only arguments:
 - `NodeIdsToRemove`: `List`\[`str`\]
 
 Returns
-[DecreaseReplicationFactorResponseResponseTypeDef](./type_defs.md#decreasereplicationfactorresponseresponsetypedef).
+[DecreaseReplicationFactorResponseTypeDef](./type_defs.md#decreasereplicationfactorresponsetypedef).
 
 ### delete_cluster
 
@@ -219,14 +231,14 @@ Boto3 documentation:
 [DAX.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_cluster)
 
 Arguments mapping described in
-[DeleteClusterRequestTypeDef](./type_defs.md#deleteclusterrequesttypedef).
+[DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterName`: `str` *(required)*
 
 Returns
-[DeleteClusterResponseResponseTypeDef](./type_defs.md#deleteclusterresponseresponsetypedef).
+[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
 
 ### delete_parameter_group
 
@@ -238,14 +250,14 @@ Boto3 documentation:
 [DAX.Client.delete_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_parameter_group)
 
 Arguments mapping described in
-[DeleteParameterGroupRequestTypeDef](./type_defs.md#deleteparametergrouprequesttypedef).
+[DeleteParameterGroupRequestRequestTypeDef](./type_defs.md#deleteparametergrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 
 Returns
-[DeleteParameterGroupResponseResponseTypeDef](./type_defs.md#deleteparametergroupresponseresponsetypedef).
+[DeleteParameterGroupResponseTypeDef](./type_defs.md#deleteparametergroupresponsetypedef).
 
 ### delete_subnet_group
 
@@ -257,14 +269,14 @@ Boto3 documentation:
 [DAX.Client.delete_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_subnet_group)
 
 Arguments mapping described in
-[DeleteSubnetGroupRequestTypeDef](./type_defs.md#deletesubnetgrouprequesttypedef).
+[DeleteSubnetGroupRequestRequestTypeDef](./type_defs.md#deletesubnetgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SubnetGroupName`: `str` *(required)*
 
 Returns
-[DeleteSubnetGroupResponseResponseTypeDef](./type_defs.md#deletesubnetgroupresponseresponsetypedef).
+[DeleteSubnetGroupResponseTypeDef](./type_defs.md#deletesubnetgroupresponsetypedef).
 
 ### describe_clusters
 
@@ -278,7 +290,7 @@ Boto3 documentation:
 [DAX.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_clusters)
 
 Arguments mapping described in
-[DescribeClustersRequestTypeDef](./type_defs.md#describeclustersrequesttypedef).
+[DescribeClustersRequestRequestTypeDef](./type_defs.md#describeclustersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,7 +299,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeClustersResponseResponseTypeDef](./type_defs.md#describeclustersresponseresponsetypedef).
+[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
 
 ### describe_default_parameters
 
@@ -299,7 +311,7 @@ Boto3 documentation:
 [DAX.Client.describe_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_default_parameters)
 
 Arguments mapping described in
-[DescribeDefaultParametersRequestTypeDef](./type_defs.md#describedefaultparametersrequesttypedef).
+[DescribeDefaultParametersRequestRequestTypeDef](./type_defs.md#describedefaultparametersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,7 +319,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeDefaultParametersResponseResponseTypeDef](./type_defs.md#describedefaultparametersresponseresponsetypedef).
+[DescribeDefaultParametersResponseTypeDef](./type_defs.md#describedefaultparametersresponsetypedef).
 
 ### describe_events
 
@@ -319,7 +331,7 @@ Boto3 documentation:
 [DAX.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_events)
 
 Arguments mapping described in
-[DescribeEventsRequestTypeDef](./type_defs.md#describeeventsrequesttypedef).
+[DescribeEventsRequestRequestTypeDef](./type_defs.md#describeeventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -332,7 +344,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeEventsResponseResponseTypeDef](./type_defs.md#describeeventsresponseresponsetypedef).
+[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
 
 ### describe_parameter_groups
 
@@ -344,7 +356,7 @@ Boto3 documentation:
 [DAX.Client.describe_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_parameter_groups)
 
 Arguments mapping described in
-[DescribeParameterGroupsRequestTypeDef](./type_defs.md#describeparametergroupsrequesttypedef).
+[DescribeParameterGroupsRequestRequestTypeDef](./type_defs.md#describeparametergroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -353,7 +365,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeParameterGroupsResponseResponseTypeDef](./type_defs.md#describeparametergroupsresponseresponsetypedef).
+[DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef).
 
 ### describe_parameters
 
@@ -365,7 +377,7 @@ Boto3 documentation:
 [DAX.Client.describe_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_parameters)
 
 Arguments mapping described in
-[DescribeParametersRequestTypeDef](./type_defs.md#describeparametersrequesttypedef).
+[DescribeParametersRequestRequestTypeDef](./type_defs.md#describeparametersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -375,7 +387,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeParametersResponseResponseTypeDef](./type_defs.md#describeparametersresponseresponsetypedef).
+[DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef).
 
 ### describe_subnet_groups
 
@@ -387,7 +399,7 @@ Boto3 documentation:
 [DAX.Client.describe_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_subnet_groups)
 
 Arguments mapping described in
-[DescribeSubnetGroupsRequestTypeDef](./type_defs.md#describesubnetgroupsrequesttypedef).
+[DescribeSubnetGroupsRequestRequestTypeDef](./type_defs.md#describesubnetgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -396,7 +408,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeSubnetGroupsResponseResponseTypeDef](./type_defs.md#describesubnetgroupsresponseresponsetypedef).
+[DescribeSubnetGroupsResponseTypeDef](./type_defs.md#describesubnetgroupsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -426,7 +438,7 @@ Boto3 documentation:
 [DAX.Client.increase_replication_factor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.increase_replication_factor)
 
 Arguments mapping described in
-[IncreaseReplicationFactorRequestTypeDef](./type_defs.md#increasereplicationfactorrequesttypedef).
+[IncreaseReplicationFactorRequestRequestTypeDef](./type_defs.md#increasereplicationfactorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -435,7 +447,7 @@ Keyword-only arguments:
 - `AvailabilityZones`: `List`\[`str`\]
 
 Returns
-[IncreaseReplicationFactorResponseResponseTypeDef](./type_defs.md#increasereplicationfactorresponseresponsetypedef).
+[IncreaseReplicationFactorResponseTypeDef](./type_defs.md#increasereplicationfactorresponsetypedef).
 
 ### list_tags
 
@@ -447,15 +459,14 @@ Boto3 documentation:
 [DAX.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.list_tags)
 
 Arguments mapping described in
-[ListTagsRequestTypeDef](./type_defs.md#listtagsrequesttypedef).
+[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `NextToken`: `str`
 
-Returns
-[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### reboot_node
 
@@ -467,15 +478,14 @@ Boto3 documentation:
 [DAX.Client.reboot_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.reboot_node)
 
 Arguments mapping described in
-[RebootNodeRequestTypeDef](./type_defs.md#rebootnoderequesttypedef).
+[RebootNodeRequestRequestTypeDef](./type_defs.md#rebootnoderequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterName`: `str` *(required)*
 - `NodeId`: `str` *(required)*
 
-Returns
-[RebootNodeResponseResponseTypeDef](./type_defs.md#rebootnoderesponseresponsetypedef).
+Returns [RebootNodeResponseTypeDef](./type_defs.md#rebootnoderesponsetypedef).
 
 ### tag_resource
 
@@ -487,7 +497,7 @@ Boto3 documentation:
 [DAX.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -495,7 +505,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns
-[TagResourceResponseResponseTypeDef](./type_defs.md#tagresourceresponseresponsetypedef).
+[TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef).
 
 ### untag_resource
 
@@ -507,7 +517,7 @@ Boto3 documentation:
 [DAX.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -515,7 +525,7 @@ Keyword-only arguments:
 - `TagKeys`: `List`\[`str`\] *(required)*
 
 Returns
-[UntagResourceResponseResponseTypeDef](./type_defs.md#untagresourceresponseresponsetypedef).
+[UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef).
 
 ### update_cluster
 
@@ -527,7 +537,7 @@ Boto3 documentation:
 [DAX.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_cluster)
 
 Arguments mapping described in
-[UpdateClusterRequestTypeDef](./type_defs.md#updateclusterrequesttypedef).
+[UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -540,7 +550,7 @@ Keyword-only arguments:
 - `SecurityGroupIds`: `List`\[`str`\]
 
 Returns
-[UpdateClusterResponseResponseTypeDef](./type_defs.md#updateclusterresponseresponsetypedef).
+[UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef).
 
 ### update_parameter_group
 
@@ -552,7 +562,7 @@ Boto3 documentation:
 [DAX.Client.update_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_parameter_group)
 
 Arguments mapping described in
-[UpdateParameterGroupRequestTypeDef](./type_defs.md#updateparametergrouprequesttypedef).
+[UpdateParameterGroupRequestRequestTypeDef](./type_defs.md#updateparametergrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -562,7 +572,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateParameterGroupResponseResponseTypeDef](./type_defs.md#updateparametergroupresponseresponsetypedef).
+[UpdateParameterGroupResponseTypeDef](./type_defs.md#updateparametergroupresponsetypedef).
 
 ### update_subnet_group
 
@@ -574,7 +584,7 @@ Boto3 documentation:
 [DAX.Client.update_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_subnet_group)
 
 Arguments mapping described in
-[UpdateSubnetGroupRequestTypeDef](./type_defs.md#updatesubnetgrouprequesttypedef).
+[UpdateSubnetGroupRequestRequestTypeDef](./type_defs.md#updatesubnetgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -583,7 +593,7 @@ Keyword-only arguments:
 - `SubnetIds`: `List`\[`str`\]
 
 Returns
-[UpdateSubnetGroupResponseResponseTypeDef](./type_defs.md#updatesubnetgroupresponseresponsetypedef).
+[UpdateSubnetGroupResponseTypeDef](./type_defs.md#updatesubnetgroupresponsetypedef).
 
 ### get_paginator
 

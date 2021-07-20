@@ -9,27 +9,27 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 ResourceGroupsTaggingAPI module](#typed-dictionaries-for-boto3-resourcegroupstaggingapi-module)
   - [ComplianceDetailsTypeDef](#compliancedetailstypedef)
-  - [DescribeReportCreationOutputResponseTypeDef](#describereportcreationoutputresponsetypedef)
+  - [DescribeReportCreationOutputTypeDef](#describereportcreationoutputtypedef)
   - [FailureInfoTypeDef](#failureinfotypedef)
-  - [GetComplianceSummaryInputTypeDef](#getcompliancesummaryinputtypedef)
-  - [GetComplianceSummaryOutputResponseTypeDef](#getcompliancesummaryoutputresponsetypedef)
-  - [GetResourcesInputTypeDef](#getresourcesinputtypedef)
-  - [GetResourcesOutputResponseTypeDef](#getresourcesoutputresponsetypedef)
-  - [GetTagKeysInputTypeDef](#gettagkeysinputtypedef)
-  - [GetTagKeysOutputResponseTypeDef](#gettagkeysoutputresponsetypedef)
-  - [GetTagValuesInputTypeDef](#gettagvaluesinputtypedef)
-  - [GetTagValuesOutputResponseTypeDef](#gettagvaluesoutputresponsetypedef)
+  - [GetComplianceSummaryInputRequestTypeDef](#getcompliancesummaryinputrequesttypedef)
+  - [GetComplianceSummaryOutputTypeDef](#getcompliancesummaryoutputtypedef)
+  - [GetResourcesInputRequestTypeDef](#getresourcesinputrequesttypedef)
+  - [GetResourcesOutputTypeDef](#getresourcesoutputtypedef)
+  - [GetTagKeysInputRequestTypeDef](#gettagkeysinputrequesttypedef)
+  - [GetTagKeysOutputTypeDef](#gettagkeysoutputtypedef)
+  - [GetTagValuesInputRequestTypeDef](#gettagvaluesinputrequesttypedef)
+  - [GetTagValuesOutputTypeDef](#gettagvaluesoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResourceTagMappingTypeDef](#resourcetagmappingtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartReportCreationInputTypeDef](#startreportcreationinputtypedef)
+  - [StartReportCreationInputRequestTypeDef](#startreportcreationinputrequesttypedef)
   - [SummaryTypeDef](#summarytypedef)
   - [TagFilterTypeDef](#tagfiltertypedef)
-  - [TagResourcesInputTypeDef](#tagresourcesinputtypedef)
-  - [TagResourcesOutputResponseTypeDef](#tagresourcesoutputresponsetypedef)
+  - [TagResourcesInputRequestTypeDef](#tagresourcesinputrequesttypedef)
+  - [TagResourcesOutputTypeDef](#tagresourcesoutputtypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourcesInputTypeDef](#untagresourcesinputtypedef)
-  - [UntagResourcesOutputResponseTypeDef](#untagresourcesoutputresponsetypedef)
+  - [UntagResourcesInputRequestTypeDef](#untagresourcesinputrequesttypedef)
+  - [UntagResourcesOutputTypeDef](#untagresourcesoutputtypedef)
 
 ## ComplianceDetailsTypeDef
 
@@ -43,10 +43,10 @@ Optional fields:
 - `KeysWithNoncompliantValues`: `List`\[`str`\]
 - `ComplianceStatus`: `bool`
 
-## DescribeReportCreationOutputResponseTypeDef
+## DescribeReportCreationOutputTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import DescribeReportCreationOutputResponseTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import DescribeReportCreationOutputTypeDef
 ```
 
 Required fields:
@@ -69,10 +69,10 @@ Optional fields:
 - `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
 
-## GetComplianceSummaryInputTypeDef
+## GetComplianceSummaryInputRequestTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryInputTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryInputRequestTypeDef
 ```
 
 Optional fields:
@@ -86,10 +86,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `PaginationToken`: `str`
 
-## GetComplianceSummaryOutputResponseTypeDef
+## GetComplianceSummaryOutputTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryOutputResponseTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryOutputTypeDef
 ```
 
 Required fields:
@@ -99,10 +99,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourcesInputTypeDef
+## GetResourcesInputRequestTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetResourcesInputTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetResourcesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -116,10 +116,10 @@ Optional fields:
 - `ExcludeCompliantResources`: `bool`
 - `ResourceARNList`: `List`\[`str`\]
 
-## GetResourcesOutputResponseTypeDef
+## GetResourcesOutputTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetResourcesOutputResponseTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetResourcesOutputTypeDef
 ```
 
 Required fields:
@@ -130,20 +130,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTagKeysInputTypeDef
+## GetTagKeysInputRequestTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagKeysInputTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagKeysInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `PaginationToken`: `str`
 
-## GetTagKeysOutputResponseTypeDef
+## GetTagKeysOutputTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagKeysOutputResponseTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagKeysOutputTypeDef
 ```
 
 Required fields:
@@ -153,10 +153,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTagValuesInputTypeDef
+## GetTagValuesInputRequestTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagValuesInputTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagValuesInputRequestTypeDef
 ```
 
 Required fields:
@@ -167,10 +167,10 @@ Optional fields:
 
 - `PaginationToken`: `str`
 
-## GetTagValuesOutputResponseTypeDef
+## GetTagValuesOutputTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagValuesOutputResponseTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import GetTagValuesOutputTypeDef
 ```
 
 Required fields:
@@ -219,10 +219,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## StartReportCreationInputTypeDef
+## StartReportCreationInputRequestTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import StartReportCreationInputTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import StartReportCreationInputRequestTypeDef
 ```
 
 Required fields:
@@ -255,10 +255,10 @@ Optional fields:
 - `Key`: `str`
 - `Values`: `List`\[`str`\]
 
-## TagResourcesInputTypeDef
+## TagResourcesInputRequestTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import TagResourcesInputTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import TagResourcesInputRequestTypeDef
 ```
 
 Required fields:
@@ -266,10 +266,10 @@ Required fields:
 - `ResourceARNList`: `List`\[`str`\]
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## TagResourcesOutputResponseTypeDef
+## TagResourcesOutputTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import TagResourcesOutputResponseTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import TagResourcesOutputTypeDef
 ```
 
 Required fields:
@@ -290,10 +290,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourcesInputTypeDef
+## UntagResourcesInputRequestTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import UntagResourcesInputTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import UntagResourcesInputRequestTypeDef
 ```
 
 Required fields:
@@ -301,10 +301,10 @@ Required fields:
 - `ResourceARNList`: `List`\[`str`\]
 - `TagKeys`: `List`\[`str`\]
 
-## UntagResourcesOutputResponseTypeDef
+## UntagResourcesOutputTypeDef
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.type_defs import UntagResourcesOutputResponseTypeDef
+from mypy_boto3_resourcegroupstaggingapi.type_defs import UntagResourcesOutputTypeDef
 ```
 
 Required fields:

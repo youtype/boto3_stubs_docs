@@ -31,6 +31,7 @@ from mypy_boto3_forecastquery.client import ForecastQueryServiceClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [query_forecast](./client.md#query_forecast)
 
@@ -58,6 +59,6 @@ from mypy_boto3_forecastquery.type_defs import DataPointTypeDef, ...
 
 - [DataPointTypeDef](./type_defs.md#datapointtypedef)
 - [ForecastTypeDef](./type_defs.md#forecasttypedef)
-- [QueryForecastRequestTypeDef](./type_defs.md#queryforecastrequesttypedef)
-- [QueryForecastResponseResponseTypeDef](./type_defs.md#queryforecastresponseresponsetypedef)
+- [QueryForecastRequestRequestTypeDef](./type_defs.md#queryforecastrequestrequesttypedef)
+- [QueryForecastResponseTypeDef](./type_defs.md#queryforecastresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

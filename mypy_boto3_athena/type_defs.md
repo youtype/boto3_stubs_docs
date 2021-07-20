@@ -8,61 +8,61 @@ type annotations stubs module
 [mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
 
 - [Typed dictionaries for boto3 Athena module](#typed-dictionaries-for-boto3-athena-module)
-  - [BatchGetNamedQueryInputTypeDef](#batchgetnamedqueryinputtypedef)
-  - [BatchGetNamedQueryOutputResponseTypeDef](#batchgetnamedqueryoutputresponsetypedef)
-  - [BatchGetQueryExecutionInputTypeDef](#batchgetqueryexecutioninputtypedef)
-  - [BatchGetQueryExecutionOutputResponseTypeDef](#batchgetqueryexecutionoutputresponsetypedef)
+  - [BatchGetNamedQueryInputRequestTypeDef](#batchgetnamedqueryinputrequesttypedef)
+  - [BatchGetNamedQueryOutputTypeDef](#batchgetnamedqueryoutputtypedef)
+  - [BatchGetQueryExecutionInputRequestTypeDef](#batchgetqueryexecutioninputrequesttypedef)
+  - [BatchGetQueryExecutionOutputTypeDef](#batchgetqueryexecutionoutputtypedef)
   - [ColumnInfoTypeDef](#columninfotypedef)
   - [ColumnTypeDef](#columntypedef)
-  - [CreateDataCatalogInputTypeDef](#createdatacataloginputtypedef)
-  - [CreateNamedQueryInputTypeDef](#createnamedqueryinputtypedef)
-  - [CreateNamedQueryOutputResponseTypeDef](#createnamedqueryoutputresponsetypedef)
-  - [CreatePreparedStatementInputTypeDef](#createpreparedstatementinputtypedef)
-  - [CreateWorkGroupInputTypeDef](#createworkgroupinputtypedef)
+  - [CreateDataCatalogInputRequestTypeDef](#createdatacataloginputrequesttypedef)
+  - [CreateNamedQueryInputRequestTypeDef](#createnamedqueryinputrequesttypedef)
+  - [CreateNamedQueryOutputTypeDef](#createnamedqueryoutputtypedef)
+  - [CreatePreparedStatementInputRequestTypeDef](#createpreparedstatementinputrequesttypedef)
+  - [CreateWorkGroupInputRequestTypeDef](#createworkgroupinputrequesttypedef)
   - [DataCatalogSummaryTypeDef](#datacatalogsummarytypedef)
   - [DataCatalogTypeDef](#datacatalogtypedef)
   - [DatabaseTypeDef](#databasetypedef)
   - [DatumTypeDef](#datumtypedef)
-  - [DeleteDataCatalogInputTypeDef](#deletedatacataloginputtypedef)
-  - [DeleteNamedQueryInputTypeDef](#deletenamedqueryinputtypedef)
-  - [DeletePreparedStatementInputTypeDef](#deletepreparedstatementinputtypedef)
-  - [DeleteWorkGroupInputTypeDef](#deleteworkgroupinputtypedef)
+  - [DeleteDataCatalogInputRequestTypeDef](#deletedatacataloginputrequesttypedef)
+  - [DeleteNamedQueryInputRequestTypeDef](#deletenamedqueryinputrequesttypedef)
+  - [DeletePreparedStatementInputRequestTypeDef](#deletepreparedstatementinputrequesttypedef)
+  - [DeleteWorkGroupInputRequestTypeDef](#deleteworkgroupinputrequesttypedef)
   - [EncryptionConfigurationTypeDef](#encryptionconfigurationtypedef)
   - [EngineVersionTypeDef](#engineversiontypedef)
-  - [GetDataCatalogInputTypeDef](#getdatacataloginputtypedef)
-  - [GetDataCatalogOutputResponseTypeDef](#getdatacatalogoutputresponsetypedef)
-  - [GetDatabaseInputTypeDef](#getdatabaseinputtypedef)
-  - [GetDatabaseOutputResponseTypeDef](#getdatabaseoutputresponsetypedef)
-  - [GetNamedQueryInputTypeDef](#getnamedqueryinputtypedef)
-  - [GetNamedQueryOutputResponseTypeDef](#getnamedqueryoutputresponsetypedef)
-  - [GetPreparedStatementInputTypeDef](#getpreparedstatementinputtypedef)
-  - [GetPreparedStatementOutputResponseTypeDef](#getpreparedstatementoutputresponsetypedef)
-  - [GetQueryExecutionInputTypeDef](#getqueryexecutioninputtypedef)
-  - [GetQueryExecutionOutputResponseTypeDef](#getqueryexecutionoutputresponsetypedef)
-  - [GetQueryResultsInputTypeDef](#getqueryresultsinputtypedef)
-  - [GetQueryResultsOutputResponseTypeDef](#getqueryresultsoutputresponsetypedef)
-  - [GetTableMetadataInputTypeDef](#gettablemetadatainputtypedef)
-  - [GetTableMetadataOutputResponseTypeDef](#gettablemetadataoutputresponsetypedef)
-  - [GetWorkGroupInputTypeDef](#getworkgroupinputtypedef)
-  - [GetWorkGroupOutputResponseTypeDef](#getworkgroupoutputresponsetypedef)
-  - [ListDataCatalogsInputTypeDef](#listdatacatalogsinputtypedef)
-  - [ListDataCatalogsOutputResponseTypeDef](#listdatacatalogsoutputresponsetypedef)
-  - [ListDatabasesInputTypeDef](#listdatabasesinputtypedef)
-  - [ListDatabasesOutputResponseTypeDef](#listdatabasesoutputresponsetypedef)
-  - [ListEngineVersionsInputTypeDef](#listengineversionsinputtypedef)
-  - [ListEngineVersionsOutputResponseTypeDef](#listengineversionsoutputresponsetypedef)
-  - [ListNamedQueriesInputTypeDef](#listnamedqueriesinputtypedef)
-  - [ListNamedQueriesOutputResponseTypeDef](#listnamedqueriesoutputresponsetypedef)
-  - [ListPreparedStatementsInputTypeDef](#listpreparedstatementsinputtypedef)
-  - [ListPreparedStatementsOutputResponseTypeDef](#listpreparedstatementsoutputresponsetypedef)
-  - [ListQueryExecutionsInputTypeDef](#listqueryexecutionsinputtypedef)
-  - [ListQueryExecutionsOutputResponseTypeDef](#listqueryexecutionsoutputresponsetypedef)
-  - [ListTableMetadataInputTypeDef](#listtablemetadatainputtypedef)
-  - [ListTableMetadataOutputResponseTypeDef](#listtablemetadataoutputresponsetypedef)
-  - [ListTagsForResourceInputTypeDef](#listtagsforresourceinputtypedef)
-  - [ListTagsForResourceOutputResponseTypeDef](#listtagsforresourceoutputresponsetypedef)
-  - [ListWorkGroupsInputTypeDef](#listworkgroupsinputtypedef)
-  - [ListWorkGroupsOutputResponseTypeDef](#listworkgroupsoutputresponsetypedef)
+  - [GetDataCatalogInputRequestTypeDef](#getdatacataloginputrequesttypedef)
+  - [GetDataCatalogOutputTypeDef](#getdatacatalogoutputtypedef)
+  - [GetDatabaseInputRequestTypeDef](#getdatabaseinputrequesttypedef)
+  - [GetDatabaseOutputTypeDef](#getdatabaseoutputtypedef)
+  - [GetNamedQueryInputRequestTypeDef](#getnamedqueryinputrequesttypedef)
+  - [GetNamedQueryOutputTypeDef](#getnamedqueryoutputtypedef)
+  - [GetPreparedStatementInputRequestTypeDef](#getpreparedstatementinputrequesttypedef)
+  - [GetPreparedStatementOutputTypeDef](#getpreparedstatementoutputtypedef)
+  - [GetQueryExecutionInputRequestTypeDef](#getqueryexecutioninputrequesttypedef)
+  - [GetQueryExecutionOutputTypeDef](#getqueryexecutionoutputtypedef)
+  - [GetQueryResultsInputRequestTypeDef](#getqueryresultsinputrequesttypedef)
+  - [GetQueryResultsOutputTypeDef](#getqueryresultsoutputtypedef)
+  - [GetTableMetadataInputRequestTypeDef](#gettablemetadatainputrequesttypedef)
+  - [GetTableMetadataOutputTypeDef](#gettablemetadataoutputtypedef)
+  - [GetWorkGroupInputRequestTypeDef](#getworkgroupinputrequesttypedef)
+  - [GetWorkGroupOutputTypeDef](#getworkgroupoutputtypedef)
+  - [ListDataCatalogsInputRequestTypeDef](#listdatacatalogsinputrequesttypedef)
+  - [ListDataCatalogsOutputTypeDef](#listdatacatalogsoutputtypedef)
+  - [ListDatabasesInputRequestTypeDef](#listdatabasesinputrequesttypedef)
+  - [ListDatabasesOutputTypeDef](#listdatabasesoutputtypedef)
+  - [ListEngineVersionsInputRequestTypeDef](#listengineversionsinputrequesttypedef)
+  - [ListEngineVersionsOutputTypeDef](#listengineversionsoutputtypedef)
+  - [ListNamedQueriesInputRequestTypeDef](#listnamedqueriesinputrequesttypedef)
+  - [ListNamedQueriesOutputTypeDef](#listnamedqueriesoutputtypedef)
+  - [ListPreparedStatementsInputRequestTypeDef](#listpreparedstatementsinputrequesttypedef)
+  - [ListPreparedStatementsOutputTypeDef](#listpreparedstatementsoutputtypedef)
+  - [ListQueryExecutionsInputRequestTypeDef](#listqueryexecutionsinputrequesttypedef)
+  - [ListQueryExecutionsOutputTypeDef](#listqueryexecutionsoutputtypedef)
+  - [ListTableMetadataInputRequestTypeDef](#listtablemetadatainputrequesttypedef)
+  - [ListTableMetadataOutputTypeDef](#listtablemetadataoutputtypedef)
+  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
+  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
+  - [ListWorkGroupsInputRequestTypeDef](#listworkgroupsinputrequesttypedef)
+  - [ListWorkGroupsOutputTypeDef](#listworkgroupsoutputtypedef)
   - [NamedQueryTypeDef](#namedquerytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PreparedStatementSummaryTypeDef](#preparedstatementsummarytypedef)
@@ -77,37 +77,37 @@ type annotations stubs module
   - [ResultSetMetadataTypeDef](#resultsetmetadatatypedef)
   - [ResultSetTypeDef](#resultsettypedef)
   - [RowTypeDef](#rowtypedef)
-  - [StartQueryExecutionInputTypeDef](#startqueryexecutioninputtypedef)
-  - [StartQueryExecutionOutputResponseTypeDef](#startqueryexecutionoutputresponsetypedef)
-  - [StopQueryExecutionInputTypeDef](#stopqueryexecutioninputtypedef)
+  - [StartQueryExecutionInputRequestTypeDef](#startqueryexecutioninputrequesttypedef)
+  - [StartQueryExecutionOutputTypeDef](#startqueryexecutionoutputtypedef)
+  - [StopQueryExecutionInputRequestTypeDef](#stopqueryexecutioninputrequesttypedef)
   - [TableMetadataTypeDef](#tablemetadatatypedef)
-  - [TagResourceInputTypeDef](#tagresourceinputtypedef)
+  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [UnprocessedNamedQueryIdTypeDef](#unprocessednamedqueryidtypedef)
   - [UnprocessedQueryExecutionIdTypeDef](#unprocessedqueryexecutionidtypedef)
-  - [UntagResourceInputTypeDef](#untagresourceinputtypedef)
-  - [UpdateDataCatalogInputTypeDef](#updatedatacataloginputtypedef)
-  - [UpdatePreparedStatementInputTypeDef](#updatepreparedstatementinputtypedef)
-  - [UpdateWorkGroupInputTypeDef](#updateworkgroupinputtypedef)
+  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
+  - [UpdateDataCatalogInputRequestTypeDef](#updatedatacataloginputrequesttypedef)
+  - [UpdatePreparedStatementInputRequestTypeDef](#updatepreparedstatementinputrequesttypedef)
+  - [UpdateWorkGroupInputRequestTypeDef](#updateworkgroupinputrequesttypedef)
   - [WorkGroupConfigurationTypeDef](#workgroupconfigurationtypedef)
   - [WorkGroupConfigurationUpdatesTypeDef](#workgroupconfigurationupdatestypedef)
   - [WorkGroupSummaryTypeDef](#workgroupsummarytypedef)
   - [WorkGroupTypeDef](#workgrouptypedef)
 
-## BatchGetNamedQueryInputTypeDef
+## BatchGetNamedQueryInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import BatchGetNamedQueryInputTypeDef
+from mypy_boto3_athena.type_defs import BatchGetNamedQueryInputRequestTypeDef
 ```
 
 Required fields:
 
 - `NamedQueryIds`: `List`\[`str`\]
 
-## BatchGetNamedQueryOutputResponseTypeDef
+## BatchGetNamedQueryOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import BatchGetNamedQueryOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import BatchGetNamedQueryOutputTypeDef
 ```
 
 Required fields:
@@ -119,20 +119,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGetQueryExecutionInputTypeDef
+## BatchGetQueryExecutionInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import BatchGetQueryExecutionInputTypeDef
+from mypy_boto3_athena.type_defs import BatchGetQueryExecutionInputRequestTypeDef
 ```
 
 Required fields:
 
 - `QueryExecutionIds`: `List`\[`str`\]
 
-## BatchGetQueryExecutionOutputResponseTypeDef
+## BatchGetQueryExecutionOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import BatchGetQueryExecutionOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import BatchGetQueryExecutionOutputTypeDef
 ```
 
 Required fields:
@@ -181,10 +181,10 @@ Optional fields:
 - `Type`: `str`
 - `Comment`: `str`
 
-## CreateDataCatalogInputTypeDef
+## CreateDataCatalogInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import CreateDataCatalogInputTypeDef
+from mypy_boto3_athena.type_defs import CreateDataCatalogInputRequestTypeDef
 ```
 
 Required fields:
@@ -198,10 +198,10 @@ Optional fields:
 - `Parameters`: `Dict`\[`str`, `str`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateNamedQueryInputTypeDef
+## CreateNamedQueryInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import CreateNamedQueryInputTypeDef
+from mypy_boto3_athena.type_defs import CreateNamedQueryInputRequestTypeDef
 ```
 
 Required fields:
@@ -216,10 +216,10 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `WorkGroup`: `str`
 
-## CreateNamedQueryOutputResponseTypeDef
+## CreateNamedQueryOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import CreateNamedQueryOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import CreateNamedQueryOutputTypeDef
 ```
 
 Required fields:
@@ -228,10 +228,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePreparedStatementInputTypeDef
+## CreatePreparedStatementInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import CreatePreparedStatementInputTypeDef
+from mypy_boto3_athena.type_defs import CreatePreparedStatementInputRequestTypeDef
 ```
 
 Required fields:
@@ -244,10 +244,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## CreateWorkGroupInputTypeDef
+## CreateWorkGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import CreateWorkGroupInputTypeDef
+from mypy_boto3_athena.type_defs import CreateWorkGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -313,30 +313,30 @@ Optional fields:
 
 - `VarCharValue`: `str`
 
-## DeleteDataCatalogInputTypeDef
+## DeleteDataCatalogInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import DeleteDataCatalogInputTypeDef
+from mypy_boto3_athena.type_defs import DeleteDataCatalogInputRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteNamedQueryInputTypeDef
+## DeleteNamedQueryInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import DeleteNamedQueryInputTypeDef
+from mypy_boto3_athena.type_defs import DeleteNamedQueryInputRequestTypeDef
 ```
 
 Required fields:
 
 - `NamedQueryId`: `str`
 
-## DeletePreparedStatementInputTypeDef
+## DeletePreparedStatementInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import DeletePreparedStatementInputTypeDef
+from mypy_boto3_athena.type_defs import DeletePreparedStatementInputRequestTypeDef
 ```
 
 Required fields:
@@ -344,10 +344,10 @@ Required fields:
 - `StatementName`: `str`
 - `WorkGroup`: `str`
 
-## DeleteWorkGroupInputTypeDef
+## DeleteWorkGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import DeleteWorkGroupInputTypeDef
+from mypy_boto3_athena.type_defs import DeleteWorkGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -384,20 +384,20 @@ Optional fields:
 - `SelectedEngineVersion`: `str`
 - `EffectiveEngineVersion`: `str`
 
-## GetDataCatalogInputTypeDef
+## GetDataCatalogInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetDataCatalogInputTypeDef
+from mypy_boto3_athena.type_defs import GetDataCatalogInputRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetDataCatalogOutputResponseTypeDef
+## GetDataCatalogOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetDataCatalogOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import GetDataCatalogOutputTypeDef
 ```
 
 Required fields:
@@ -406,10 +406,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDatabaseInputTypeDef
+## GetDatabaseInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetDatabaseInputTypeDef
+from mypy_boto3_athena.type_defs import GetDatabaseInputRequestTypeDef
 ```
 
 Required fields:
@@ -417,10 +417,10 @@ Required fields:
 - `CatalogName`: `str`
 - `DatabaseName`: `str`
 
-## GetDatabaseOutputResponseTypeDef
+## GetDatabaseOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetDatabaseOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import GetDatabaseOutputTypeDef
 ```
 
 Required fields:
@@ -429,20 +429,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetNamedQueryInputTypeDef
+## GetNamedQueryInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetNamedQueryInputTypeDef
+from mypy_boto3_athena.type_defs import GetNamedQueryInputRequestTypeDef
 ```
 
 Required fields:
 
 - `NamedQueryId`: `str`
 
-## GetNamedQueryOutputResponseTypeDef
+## GetNamedQueryOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetNamedQueryOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import GetNamedQueryOutputTypeDef
 ```
 
 Required fields:
@@ -451,10 +451,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPreparedStatementInputTypeDef
+## GetPreparedStatementInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetPreparedStatementInputTypeDef
+from mypy_boto3_athena.type_defs import GetPreparedStatementInputRequestTypeDef
 ```
 
 Required fields:
@@ -462,10 +462,10 @@ Required fields:
 - `StatementName`: `str`
 - `WorkGroup`: `str`
 
-## GetPreparedStatementOutputResponseTypeDef
+## GetPreparedStatementOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetPreparedStatementOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import GetPreparedStatementOutputTypeDef
 ```
 
 Required fields:
@@ -475,20 +475,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetQueryExecutionInputTypeDef
+## GetQueryExecutionInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetQueryExecutionInputTypeDef
+from mypy_boto3_athena.type_defs import GetQueryExecutionInputRequestTypeDef
 ```
 
 Required fields:
 
 - `QueryExecutionId`: `str`
 
-## GetQueryExecutionOutputResponseTypeDef
+## GetQueryExecutionOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetQueryExecutionOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import GetQueryExecutionOutputTypeDef
 ```
 
 Required fields:
@@ -498,10 +498,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetQueryResultsInputTypeDef
+## GetQueryResultsInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetQueryResultsInputTypeDef
+from mypy_boto3_athena.type_defs import GetQueryResultsInputRequestTypeDef
 ```
 
 Required fields:
@@ -513,10 +513,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetQueryResultsOutputResponseTypeDef
+## GetQueryResultsOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetQueryResultsOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import GetQueryResultsOutputTypeDef
 ```
 
 Required fields:
@@ -527,10 +527,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTableMetadataInputTypeDef
+## GetTableMetadataInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetTableMetadataInputTypeDef
+from mypy_boto3_athena.type_defs import GetTableMetadataInputRequestTypeDef
 ```
 
 Required fields:
@@ -539,10 +539,10 @@ Required fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 
-## GetTableMetadataOutputResponseTypeDef
+## GetTableMetadataOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetTableMetadataOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import GetTableMetadataOutputTypeDef
 ```
 
 Required fields:
@@ -551,20 +551,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetWorkGroupInputTypeDef
+## GetWorkGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetWorkGroupInputTypeDef
+from mypy_boto3_athena.type_defs import GetWorkGroupInputRequestTypeDef
 ```
 
 Required fields:
 
 - `WorkGroup`: `str`
 
-## GetWorkGroupOutputResponseTypeDef
+## GetWorkGroupOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import GetWorkGroupOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import GetWorkGroupOutputTypeDef
 ```
 
 Required fields:
@@ -573,10 +573,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDataCatalogsInputTypeDef
+## ListDataCatalogsInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListDataCatalogsInputTypeDef
+from mypy_boto3_athena.type_defs import ListDataCatalogsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -584,10 +584,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDataCatalogsOutputResponseTypeDef
+## ListDataCatalogsOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListDataCatalogsOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import ListDataCatalogsOutputTypeDef
 ```
 
 Required fields:
@@ -598,10 +598,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatabasesInputTypeDef
+## ListDatabasesInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListDatabasesInputTypeDef
+from mypy_boto3_athena.type_defs import ListDatabasesInputRequestTypeDef
 ```
 
 Required fields:
@@ -613,10 +613,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDatabasesOutputResponseTypeDef
+## ListDatabasesOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListDatabasesOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import ListDatabasesOutputTypeDef
 ```
 
 Required fields:
@@ -626,10 +626,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEngineVersionsInputTypeDef
+## ListEngineVersionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListEngineVersionsInputTypeDef
+from mypy_boto3_athena.type_defs import ListEngineVersionsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -637,10 +637,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListEngineVersionsOutputResponseTypeDef
+## ListEngineVersionsOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListEngineVersionsOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import ListEngineVersionsOutputTypeDef
 ```
 
 Required fields:
@@ -651,10 +651,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListNamedQueriesInputTypeDef
+## ListNamedQueriesInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListNamedQueriesInputTypeDef
+from mypy_boto3_athena.type_defs import ListNamedQueriesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -663,10 +663,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `WorkGroup`: `str`
 
-## ListNamedQueriesOutputResponseTypeDef
+## ListNamedQueriesOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListNamedQueriesOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import ListNamedQueriesOutputTypeDef
 ```
 
 Required fields:
@@ -676,10 +676,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPreparedStatementsInputTypeDef
+## ListPreparedStatementsInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListPreparedStatementsInputTypeDef
+from mypy_boto3_athena.type_defs import ListPreparedStatementsInputRequestTypeDef
 ```
 
 Required fields:
@@ -691,10 +691,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListPreparedStatementsOutputResponseTypeDef
+## ListPreparedStatementsOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListPreparedStatementsOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import ListPreparedStatementsOutputTypeDef
 ```
 
 Required fields:
@@ -705,10 +705,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListQueryExecutionsInputTypeDef
+## ListQueryExecutionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListQueryExecutionsInputTypeDef
+from mypy_boto3_athena.type_defs import ListQueryExecutionsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -717,10 +717,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `WorkGroup`: `str`
 
-## ListQueryExecutionsOutputResponseTypeDef
+## ListQueryExecutionsOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListQueryExecutionsOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import ListQueryExecutionsOutputTypeDef
 ```
 
 Required fields:
@@ -730,10 +730,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTableMetadataInputTypeDef
+## ListTableMetadataInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListTableMetadataInputTypeDef
+from mypy_boto3_athena.type_defs import ListTableMetadataInputRequestTypeDef
 ```
 
 Required fields:
@@ -747,10 +747,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListTableMetadataOutputResponseTypeDef
+## ListTableMetadataOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListTableMetadataOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import ListTableMetadataOutputTypeDef
 ```
 
 Required fields:
@@ -761,10 +761,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceInputTypeDef
+## ListTagsForResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListTagsForResourceInputTypeDef
+from mypy_boto3_athena.type_defs import ListTagsForResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -776,10 +776,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListTagsForResourceOutputResponseTypeDef
+## ListTagsForResourceOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListTagsForResourceOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 Required fields:
@@ -789,10 +789,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListWorkGroupsInputTypeDef
+## ListWorkGroupsInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListWorkGroupsInputTypeDef
+from mypy_boto3_athena.type_defs import ListWorkGroupsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -800,10 +800,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListWorkGroupsOutputResponseTypeDef
+## ListWorkGroupsOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import ListWorkGroupsOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import ListWorkGroupsOutputTypeDef
 ```
 
 Required fields:
@@ -1003,10 +1003,10 @@ Optional fields:
 
 - `Data`: `List`\[[DatumTypeDef](./type_defs.md#datumtypedef)\]
 
-## StartQueryExecutionInputTypeDef
+## StartQueryExecutionInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import StartQueryExecutionInputTypeDef
+from mypy_boto3_athena.type_defs import StartQueryExecutionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1022,10 +1022,10 @@ Optional fields:
   [ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef)
 - `WorkGroup`: `str`
 
-## StartQueryExecutionOutputResponseTypeDef
+## StartQueryExecutionOutputTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import StartQueryExecutionOutputResponseTypeDef
+from mypy_boto3_athena.type_defs import StartQueryExecutionOutputTypeDef
 ```
 
 Required fields:
@@ -1034,10 +1034,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopQueryExecutionInputTypeDef
+## StopQueryExecutionInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import StopQueryExecutionInputTypeDef
+from mypy_boto3_athena.type_defs import StopQueryExecutionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1063,10 +1063,10 @@ Optional fields:
 - `PartitionKeys`: `List`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
 - `Parameters`: `Dict`\[`str`, `str`\]
 
-## TagResourceInputTypeDef
+## TagResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import TagResourceInputTypeDef
+from mypy_boto3_athena.type_defs import TagResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1109,10 +1109,10 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
-## UntagResourceInputTypeDef
+## UntagResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import UntagResourceInputTypeDef
+from mypy_boto3_athena.type_defs import UntagResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1120,10 +1120,10 @@ Required fields:
 - `ResourceARN`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateDataCatalogInputTypeDef
+## UpdateDataCatalogInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import UpdateDataCatalogInputTypeDef
+from mypy_boto3_athena.type_defs import UpdateDataCatalogInputRequestTypeDef
 ```
 
 Required fields:
@@ -1136,10 +1136,10 @@ Optional fields:
 - `Description`: `str`
 - `Parameters`: `Dict`\[`str`, `str`\]
 
-## UpdatePreparedStatementInputTypeDef
+## UpdatePreparedStatementInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import UpdatePreparedStatementInputTypeDef
+from mypy_boto3_athena.type_defs import UpdatePreparedStatementInputRequestTypeDef
 ```
 
 Required fields:
@@ -1152,10 +1152,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## UpdateWorkGroupInputTypeDef
+## UpdateWorkGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_athena.type_defs import UpdateWorkGroupInputTypeDef
+from mypy_boto3_athena.type_defs import UpdateWorkGroupInputRequestTypeDef
 ```
 
 Required fields:

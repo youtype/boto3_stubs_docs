@@ -33,6 +33,7 @@ from mypy_boto3_identitystore.client import IdentityStoreClient
 - [can_paginate](./client.md#can_paginate)
 - [describe_group](./client.md#describe_group)
 - [describe_user](./client.md#describe_user)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [list_groups](./client.md#list_groups)
 - [list_users](./client.md#list_users)
@@ -56,18 +57,18 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_identitystore.type_defs import DescribeGroupRequestTypeDef, ...
+from mypy_boto3_identitystore.type_defs import DescribeGroupRequestRequestTypeDef, ...
 ```
 
-- [DescribeGroupRequestTypeDef](./type_defs.md#describegrouprequesttypedef)
-- [DescribeGroupResponseResponseTypeDef](./type_defs.md#describegroupresponseresponsetypedef)
-- [DescribeUserRequestTypeDef](./type_defs.md#describeuserrequesttypedef)
-- [DescribeUserResponseResponseTypeDef](./type_defs.md#describeuserresponseresponsetypedef)
+- [DescribeGroupRequestRequestTypeDef](./type_defs.md#describegrouprequestrequesttypedef)
+- [DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef)
+- [DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef)
+- [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
 - [GroupTypeDef](./type_defs.md#grouptypedef)
-- [ListGroupsRequestTypeDef](./type_defs.md#listgroupsrequesttypedef)
-- [ListGroupsResponseResponseTypeDef](./type_defs.md#listgroupsresponseresponsetypedef)
-- [ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef)
-- [ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef)
+- [ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef)
+- [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)
+- [ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef)
+- [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)

@@ -11,6 +11,7 @@ type annotations stubs module
   - [CloudSearchDomainClient](#cloudsearchdomainclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [search](#search)
@@ -52,6 +53,17 @@ Exceptions:
 - `Exceptions.SearchException`
 
 ## Methods
+
+### exceptions
+
+CloudSearchDomainClient exceptions.
+
+Type annotations for `boto3.client("cloudsearchdomain").exceptions` method.
+
+Boto3 documentation:
+[CloudSearchDomain.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
 
 ### can_paginate
 
@@ -97,7 +109,7 @@ Boto3 documentation:
 [CloudSearchDomain.Client.search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.search)
 
 Arguments mapping described in
-[SearchRequestTypeDef](./type_defs.md#searchrequesttypedef).
+[SearchRequestRequestTypeDef](./type_defs.md#searchrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -116,8 +128,7 @@ Keyword-only arguments:
 - `start`: `int`
 - `stats`: `str`
 
-Returns
-[SearchResponseResponseTypeDef](./type_defs.md#searchresponseresponsetypedef).
+Returns [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef).
 
 ### suggest
 
@@ -129,7 +140,7 @@ Boto3 documentation:
 [CloudSearchDomain.Client.suggest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.suggest)
 
 Arguments mapping described in
-[SuggestRequestTypeDef](./type_defs.md#suggestrequesttypedef).
+[SuggestRequestRequestTypeDef](./type_defs.md#suggestrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -137,8 +148,7 @@ Keyword-only arguments:
 - `suggester`: `str` *(required)*
 - `size`: `int`
 
-Returns
-[SuggestResponseResponseTypeDef](./type_defs.md#suggestresponseresponsetypedef).
+Returns [SuggestResponseTypeDef](./type_defs.md#suggestresponsetypedef).
 
 ### upload_documents
 
@@ -151,7 +161,7 @@ Boto3 documentation:
 [CloudSearchDomain.Client.upload_documents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.upload_documents)
 
 Arguments mapping described in
-[UploadDocumentsRequestTypeDef](./type_defs.md#uploaddocumentsrequesttypedef).
+[UploadDocumentsRequestRequestTypeDef](./type_defs.md#uploaddocumentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -160,4 +170,4 @@ Keyword-only arguments:
 - `contentType`: [ContentTypeType](./literals.md#contenttypetype) *(required)*
 
 Returns
-[UploadDocumentsResponseResponseTypeDef](./type_defs.md#uploaddocumentsresponseresponsetypedef).
+[UploadDocumentsResponseTypeDef](./type_defs.md#uploaddocumentsresponsetypedef).

@@ -11,6 +11,7 @@ type annotations stubs module
   - [AthenaClient](#athenaclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_get_named_query](#batch_get_named_query)
     - [batch_get_query_execution](#batch_get_query_execution)
     - [can_paginate](#can_paginate)
@@ -88,6 +89,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AthenaClient exceptions.
+
+Type annotations for `boto3.client("athena").exceptions` method.
+
+Boto3 documentation:
+[Athena.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_get_named_query
 
 Returns the details of a single named query or a list of up to 50 queries,
@@ -99,14 +111,14 @@ Boto3 documentation:
 [Athena.Client.batch_get_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_named_query)
 
 Arguments mapping described in
-[BatchGetNamedQueryInputTypeDef](./type_defs.md#batchgetnamedqueryinputtypedef).
+[BatchGetNamedQueryInputRequestTypeDef](./type_defs.md#batchgetnamedqueryinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NamedQueryIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetNamedQueryOutputResponseTypeDef](./type_defs.md#batchgetnamedqueryoutputresponsetypedef).
+[BatchGetNamedQueryOutputTypeDef](./type_defs.md#batchgetnamedqueryoutputtypedef).
 
 ### batch_get_query_execution
 
@@ -119,14 +131,14 @@ Boto3 documentation:
 [Athena.Client.batch_get_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_query_execution)
 
 Arguments mapping described in
-[BatchGetQueryExecutionInputTypeDef](./type_defs.md#batchgetqueryexecutioninputtypedef).
+[BatchGetQueryExecutionInputRequestTypeDef](./type_defs.md#batchgetqueryexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
 - `QueryExecutionIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchGetQueryExecutionOutputResponseTypeDef](./type_defs.md#batchgetqueryexecutionoutputresponsetypedef).
+[BatchGetQueryExecutionOutputTypeDef](./type_defs.md#batchgetqueryexecutionoutputtypedef).
 
 ### can_paginate
 
@@ -153,7 +165,7 @@ Boto3 documentation:
 [Athena.Client.create_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_data_catalog)
 
 Arguments mapping described in
-[CreateDataCatalogInputTypeDef](./type_defs.md#createdatacataloginputtypedef).
+[CreateDataCatalogInputRequestTypeDef](./type_defs.md#createdatacataloginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -175,7 +187,7 @@ Boto3 documentation:
 [Athena.Client.create_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_named_query)
 
 Arguments mapping described in
-[CreateNamedQueryInputTypeDef](./type_defs.md#createnamedqueryinputtypedef).
+[CreateNamedQueryInputRequestTypeDef](./type_defs.md#createnamedqueryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -187,7 +199,7 @@ Keyword-only arguments:
 - `WorkGroup`: `str`
 
 Returns
-[CreateNamedQueryOutputResponseTypeDef](./type_defs.md#createnamedqueryoutputresponsetypedef).
+[CreateNamedQueryOutputTypeDef](./type_defs.md#createnamedqueryoutputtypedef).
 
 ### create_prepared_statement
 
@@ -199,7 +211,7 @@ Boto3 documentation:
 [Athena.Client.create_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_prepared_statement)
 
 Arguments mapping described in
-[CreatePreparedStatementInputTypeDef](./type_defs.md#createpreparedstatementinputtypedef).
+[CreatePreparedStatementInputRequestTypeDef](./type_defs.md#createpreparedstatementinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -220,7 +232,7 @@ Boto3 documentation:
 [Athena.Client.create_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_work_group)
 
 Arguments mapping described in
-[CreateWorkGroupInputTypeDef](./type_defs.md#createworkgroupinputtypedef).
+[CreateWorkGroupInputRequestTypeDef](./type_defs.md#createworkgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -242,7 +254,7 @@ Boto3 documentation:
 [Athena.Client.delete_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_data_catalog)
 
 Arguments mapping described in
-[DeleteDataCatalogInputTypeDef](./type_defs.md#deletedatacataloginputtypedef).
+[DeleteDataCatalogInputRequestTypeDef](./type_defs.md#deletedatacataloginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -261,7 +273,7 @@ Boto3 documentation:
 [Athena.Client.delete_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_named_query)
 
 Arguments mapping described in
-[DeleteNamedQueryInputTypeDef](./type_defs.md#deletenamedqueryinputtypedef).
+[DeleteNamedQueryInputRequestTypeDef](./type_defs.md#deletenamedqueryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -280,7 +292,7 @@ Boto3 documentation:
 [Athena.Client.delete_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_prepared_statement)
 
 Arguments mapping described in
-[DeletePreparedStatementInputTypeDef](./type_defs.md#deletepreparedstatementinputtypedef).
+[DeletePreparedStatementInputRequestTypeDef](./type_defs.md#deletepreparedstatementinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -299,7 +311,7 @@ Boto3 documentation:
 [Athena.Client.delete_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_work_group)
 
 Arguments mapping described in
-[DeleteWorkGroupInputTypeDef](./type_defs.md#deleteworkgroupinputtypedef).
+[DeleteWorkGroupInputRequestTypeDef](./type_defs.md#deleteworkgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -336,14 +348,14 @@ Boto3 documentation:
 [Athena.Client.get_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_data_catalog)
 
 Arguments mapping described in
-[GetDataCatalogInputTypeDef](./type_defs.md#getdatacataloginputtypedef).
+[GetDataCatalogInputRequestTypeDef](./type_defs.md#getdatacataloginputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetDataCatalogOutputResponseTypeDef](./type_defs.md#getdatacatalogoutputresponsetypedef).
+[GetDataCatalogOutputTypeDef](./type_defs.md#getdatacatalogoutputtypedef).
 
 ### get_database
 
@@ -355,15 +367,14 @@ Boto3 documentation:
 [Athena.Client.get_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_database)
 
 Arguments mapping described in
-[GetDatabaseInputTypeDef](./type_defs.md#getdatabaseinputtypedef).
+[GetDatabaseInputRequestTypeDef](./type_defs.md#getdatabaseinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `CatalogName`: `str` *(required)*
 - `DatabaseName`: `str` *(required)*
 
-Returns
-[GetDatabaseOutputResponseTypeDef](./type_defs.md#getdatabaseoutputresponsetypedef).
+Returns [GetDatabaseOutputTypeDef](./type_defs.md#getdatabaseoutputtypedef).
 
 ### get_named_query
 
@@ -375,14 +386,14 @@ Boto3 documentation:
 [Athena.Client.get_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_named_query)
 
 Arguments mapping described in
-[GetNamedQueryInputTypeDef](./type_defs.md#getnamedqueryinputtypedef).
+[GetNamedQueryInputRequestTypeDef](./type_defs.md#getnamedqueryinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NamedQueryId`: `str` *(required)*
 
 Returns
-[GetNamedQueryOutputResponseTypeDef](./type_defs.md#getnamedqueryoutputresponsetypedef).
+[GetNamedQueryOutputTypeDef](./type_defs.md#getnamedqueryoutputtypedef).
 
 ### get_prepared_statement
 
@@ -395,7 +406,7 @@ Boto3 documentation:
 [Athena.Client.get_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_prepared_statement)
 
 Arguments mapping described in
-[GetPreparedStatementInputTypeDef](./type_defs.md#getpreparedstatementinputtypedef).
+[GetPreparedStatementInputRequestTypeDef](./type_defs.md#getpreparedstatementinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -403,7 +414,7 @@ Keyword-only arguments:
 - `WorkGroup`: `str` *(required)*
 
 Returns
-[GetPreparedStatementOutputResponseTypeDef](./type_defs.md#getpreparedstatementoutputresponsetypedef).
+[GetPreparedStatementOutputTypeDef](./type_defs.md#getpreparedstatementoutputtypedef).
 
 ### get_query_execution
 
@@ -416,14 +427,14 @@ Boto3 documentation:
 [Athena.Client.get_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_execution)
 
 Arguments mapping described in
-[GetQueryExecutionInputTypeDef](./type_defs.md#getqueryexecutioninputtypedef).
+[GetQueryExecutionInputRequestTypeDef](./type_defs.md#getqueryexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
 - `QueryExecutionId`: `str` *(required)*
 
 Returns
-[GetQueryExecutionOutputResponseTypeDef](./type_defs.md#getqueryexecutionoutputresponsetypedef).
+[GetQueryExecutionOutputTypeDef](./type_defs.md#getqueryexecutionoutputtypedef).
 
 ### get_query_results
 
@@ -436,7 +447,7 @@ Boto3 documentation:
 [Athena.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_results)
 
 Arguments mapping described in
-[GetQueryResultsInputTypeDef](./type_defs.md#getqueryresultsinputtypedef).
+[GetQueryResultsInputRequestTypeDef](./type_defs.md#getqueryresultsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,7 +456,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetQueryResultsOutputResponseTypeDef](./type_defs.md#getqueryresultsoutputresponsetypedef).
+[GetQueryResultsOutputTypeDef](./type_defs.md#getqueryresultsoutputtypedef).
 
 ### get_table_metadata
 
@@ -457,7 +468,7 @@ Boto3 documentation:
 [Athena.Client.get_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_table_metadata)
 
 Arguments mapping described in
-[GetTableMetadataInputTypeDef](./type_defs.md#gettablemetadatainputtypedef).
+[GetTableMetadataInputRequestTypeDef](./type_defs.md#gettablemetadatainputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -466,7 +477,7 @@ Keyword-only arguments:
 - `TableName`: `str` *(required)*
 
 Returns
-[GetTableMetadataOutputResponseTypeDef](./type_defs.md#gettablemetadataoutputresponsetypedef).
+[GetTableMetadataOutputTypeDef](./type_defs.md#gettablemetadataoutputtypedef).
 
 ### get_work_group
 
@@ -478,14 +489,13 @@ Boto3 documentation:
 [Athena.Client.get_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_work_group)
 
 Arguments mapping described in
-[GetWorkGroupInputTypeDef](./type_defs.md#getworkgroupinputtypedef).
+[GetWorkGroupInputRequestTypeDef](./type_defs.md#getworkgroupinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `WorkGroup`: `str` *(required)*
 
-Returns
-[GetWorkGroupOutputResponseTypeDef](./type_defs.md#getworkgroupoutputresponsetypedef).
+Returns [GetWorkGroupOutputTypeDef](./type_defs.md#getworkgroupoutputtypedef).
 
 ### list_data_catalogs
 
@@ -497,7 +507,7 @@ Boto3 documentation:
 [Athena.Client.list_data_catalogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_data_catalogs)
 
 Arguments mapping described in
-[ListDataCatalogsInputTypeDef](./type_defs.md#listdatacatalogsinputtypedef).
+[ListDataCatalogsInputRequestTypeDef](./type_defs.md#listdatacatalogsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -505,7 +515,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDataCatalogsOutputResponseTypeDef](./type_defs.md#listdatacatalogsoutputresponsetypedef).
+[ListDataCatalogsOutputTypeDef](./type_defs.md#listdatacatalogsoutputtypedef).
 
 ### list_databases
 
@@ -517,7 +527,7 @@ Boto3 documentation:
 [Athena.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_databases)
 
 Arguments mapping described in
-[ListDatabasesInputTypeDef](./type_defs.md#listdatabasesinputtypedef).
+[ListDatabasesInputRequestTypeDef](./type_defs.md#listdatabasesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -526,7 +536,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDatabasesOutputResponseTypeDef](./type_defs.md#listdatabasesoutputresponsetypedef).
+[ListDatabasesOutputTypeDef](./type_defs.md#listdatabasesoutputtypedef).
 
 ### list_engine_versions
 
@@ -539,7 +549,7 @@ Boto3 documentation:
 [Athena.Client.list_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_engine_versions)
 
 Arguments mapping described in
-[ListEngineVersionsInputTypeDef](./type_defs.md#listengineversionsinputtypedef).
+[ListEngineVersionsInputRequestTypeDef](./type_defs.md#listengineversionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -547,7 +557,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEngineVersionsOutputResponseTypeDef](./type_defs.md#listengineversionsoutputresponsetypedef).
+[ListEngineVersionsOutputTypeDef](./type_defs.md#listengineversionsoutputtypedef).
 
 ### list_named_queries
 
@@ -560,7 +570,7 @@ Boto3 documentation:
 [Athena.Client.list_named_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_named_queries)
 
 Arguments mapping described in
-[ListNamedQueriesInputTypeDef](./type_defs.md#listnamedqueriesinputtypedef).
+[ListNamedQueriesInputRequestTypeDef](./type_defs.md#listnamedqueriesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -569,7 +579,7 @@ Keyword-only arguments:
 - `WorkGroup`: `str`
 
 Returns
-[ListNamedQueriesOutputResponseTypeDef](./type_defs.md#listnamedqueriesoutputresponsetypedef).
+[ListNamedQueriesOutputTypeDef](./type_defs.md#listnamedqueriesoutputtypedef).
 
 ### list_prepared_statements
 
@@ -581,7 +591,7 @@ Boto3 documentation:
 [Athena.Client.list_prepared_statements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_prepared_statements)
 
 Arguments mapping described in
-[ListPreparedStatementsInputTypeDef](./type_defs.md#listpreparedstatementsinputtypedef).
+[ListPreparedStatementsInputRequestTypeDef](./type_defs.md#listpreparedstatementsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -590,7 +600,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPreparedStatementsOutputResponseTypeDef](./type_defs.md#listpreparedstatementsoutputresponsetypedef).
+[ListPreparedStatementsOutputTypeDef](./type_defs.md#listpreparedstatementsoutputtypedef).
 
 ### list_query_executions
 
@@ -603,7 +613,7 @@ Boto3 documentation:
 [Athena.Client.list_query_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_query_executions)
 
 Arguments mapping described in
-[ListQueryExecutionsInputTypeDef](./type_defs.md#listqueryexecutionsinputtypedef).
+[ListQueryExecutionsInputRequestTypeDef](./type_defs.md#listqueryexecutionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -612,7 +622,7 @@ Keyword-only arguments:
 - `WorkGroup`: `str`
 
 Returns
-[ListQueryExecutionsOutputResponseTypeDef](./type_defs.md#listqueryexecutionsoutputresponsetypedef).
+[ListQueryExecutionsOutputTypeDef](./type_defs.md#listqueryexecutionsoutputtypedef).
 
 ### list_table_metadata
 
@@ -624,7 +634,7 @@ Boto3 documentation:
 [Athena.Client.list_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_table_metadata)
 
 Arguments mapping described in
-[ListTableMetadataInputTypeDef](./type_defs.md#listtablemetadatainputtypedef).
+[ListTableMetadataInputRequestTypeDef](./type_defs.md#listtablemetadatainputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -635,7 +645,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTableMetadataOutputResponseTypeDef](./type_defs.md#listtablemetadataoutputresponsetypedef).
+[ListTableMetadataOutputTypeDef](./type_defs.md#listtablemetadataoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -647,7 +657,7 @@ Boto3 documentation:
 [Athena.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -656,7 +666,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### list_work_groups
 
@@ -668,7 +678,7 @@ Boto3 documentation:
 [Athena.Client.list_work_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_work_groups)
 
 Arguments mapping described in
-[ListWorkGroupsInputTypeDef](./type_defs.md#listworkgroupsinputtypedef).
+[ListWorkGroupsInputRequestTypeDef](./type_defs.md#listworkgroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -676,7 +686,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListWorkGroupsOutputResponseTypeDef](./type_defs.md#listworkgroupsoutputresponsetypedef).
+[ListWorkGroupsOutputTypeDef](./type_defs.md#listworkgroupsoutputtypedef).
 
 ### start_query_execution
 
@@ -688,7 +698,7 @@ Boto3 documentation:
 [Athena.Client.start_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.start_query_execution)
 
 Arguments mapping described in
-[StartQueryExecutionInputTypeDef](./type_defs.md#startqueryexecutioninputtypedef).
+[StartQueryExecutionInputRequestTypeDef](./type_defs.md#startqueryexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -701,7 +711,7 @@ Keyword-only arguments:
 - `WorkGroup`: `str`
 
 Returns
-[StartQueryExecutionOutputResponseTypeDef](./type_defs.md#startqueryexecutionoutputresponsetypedef).
+[StartQueryExecutionOutputTypeDef](./type_defs.md#startqueryexecutionoutputtypedef).
 
 ### stop_query_execution
 
@@ -713,7 +723,7 @@ Boto3 documentation:
 [Athena.Client.stop_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.stop_query_execution)
 
 Arguments mapping described in
-[StopQueryExecutionInputTypeDef](./type_defs.md#stopqueryexecutioninputtypedef).
+[StopQueryExecutionInputRequestTypeDef](./type_defs.md#stopqueryexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -731,7 +741,7 @@ Boto3 documentation:
 [Athena.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -750,7 +760,7 @@ Boto3 documentation:
 [Athena.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -769,7 +779,7 @@ Boto3 documentation:
 [Athena.Client.update_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_data_catalog)
 
 Arguments mapping described in
-[UpdateDataCatalogInputTypeDef](./type_defs.md#updatedatacataloginputtypedef).
+[UpdateDataCatalogInputRequestTypeDef](./type_defs.md#updatedatacataloginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -790,7 +800,7 @@ Boto3 documentation:
 [Athena.Client.update_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_prepared_statement)
 
 Arguments mapping described in
-[UpdatePreparedStatementInputTypeDef](./type_defs.md#updatepreparedstatementinputtypedef).
+[UpdatePreparedStatementInputRequestTypeDef](./type_defs.md#updatepreparedstatementinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -811,7 +821,7 @@ Boto3 documentation:
 [Athena.Client.update_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_work_group)
 
 Arguments mapping described in
-[UpdateWorkGroupInputTypeDef](./type_defs.md#updateworkgroupinputtypedef).
+[UpdateWorkGroupInputRequestTypeDef](./type_defs.md#updateworkgroupinputrequesttypedef).
 
 Keyword-only arguments:
 

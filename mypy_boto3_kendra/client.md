@@ -11,6 +11,7 @@ type annotations stubs module
   - [kendraClient](#kendraclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_delete_document](#batch_delete_document)
     - [batch_get_document_status](#batch_get_document_status)
     - [batch_put_document](#batch_put_document)
@@ -24,11 +25,13 @@ type annotations stubs module
     - [delete_data_source](#delete_data_source)
     - [delete_faq](#delete_faq)
     - [delete_index](#delete_index)
+    - [delete_principal_mapping](#delete_principal_mapping)
     - [delete_query_suggestions_block_list](#delete_query_suggestions_block_list)
     - [delete_thesaurus](#delete_thesaurus)
     - [describe_data_source](#describe_data_source)
     - [describe_faq](#describe_faq)
     - [describe_index](#describe_index)
+    - [describe_principal_mapping](#describe_principal_mapping)
     - [describe_query_suggestions_block_list](#describe_query_suggestions_block_list)
     - [describe_query_suggestions_config](#describe_query_suggestions_config)
     - [describe_thesaurus](#describe_thesaurus)
@@ -37,10 +40,12 @@ type annotations stubs module
     - [list_data_source_sync_jobs](#list_data_source_sync_jobs)
     - [list_data_sources](#list_data_sources)
     - [list_faqs](#list_faqs)
+    - [list_groups_older_than_ordering_id](#list_groups_older_than_ordering_id)
     - [list_indices](#list_indices)
     - [list_query_suggestions_block_lists](#list_query_suggestions_block_lists)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_thesauri](#list_thesauri)
+    - [put_principal_mapping](#put_principal_mapping)
     - [query](#query)
     - [start_data_source_sync_job](#start_data_source_sync_job)
     - [stop_data_source_sync_job](#stop_data_source_sync_job)
@@ -97,6 +102,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+kendraClient exceptions.
+
+Type annotations for `boto3.client("kendra").exceptions` method.
+
+Boto3 documentation:
+[kendra.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_delete_document
 
 Removes one or more documents from an index.
@@ -107,7 +123,7 @@ Boto3 documentation:
 [kendra.Client.batch_delete_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_delete_document)
 
 Arguments mapping described in
-[BatchDeleteDocumentRequestTypeDef](./type_defs.md#batchdeletedocumentrequesttypedef).
+[BatchDeleteDocumentRequestRequestTypeDef](./type_defs.md#batchdeletedocumentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -117,7 +133,7 @@ Keyword-only arguments:
   [DataSourceSyncJobMetricTargetTypeDef](./type_defs.md#datasourcesyncjobmetrictargettypedef)
 
 Returns
-[BatchDeleteDocumentResponseResponseTypeDef](./type_defs.md#batchdeletedocumentresponseresponsetypedef).
+[BatchDeleteDocumentResponseTypeDef](./type_defs.md#batchdeletedocumentresponsetypedef).
 
 ### batch_get_document_status
 
@@ -131,7 +147,7 @@ Boto3 documentation:
 [kendra.Client.batch_get_document_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_get_document_status)
 
 Arguments mapping described in
-[BatchGetDocumentStatusRequestTypeDef](./type_defs.md#batchgetdocumentstatusrequesttypedef).
+[BatchGetDocumentStatusRequestRequestTypeDef](./type_defs.md#batchgetdocumentstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -141,7 +157,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchGetDocumentStatusResponseResponseTypeDef](./type_defs.md#batchgetdocumentstatusresponseresponsetypedef).
+[BatchGetDocumentStatusResponseTypeDef](./type_defs.md#batchgetdocumentstatusresponsetypedef).
 
 ### batch_put_document
 
@@ -153,7 +169,7 @@ Boto3 documentation:
 [kendra.Client.batch_put_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_put_document)
 
 Arguments mapping described in
-[BatchPutDocumentRequestTypeDef](./type_defs.md#batchputdocumentrequesttypedef).
+[BatchPutDocumentRequestRequestTypeDef](./type_defs.md#batchputdocumentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -163,7 +179,7 @@ Keyword-only arguments:
 - `RoleArn`: `str`
 
 Returns
-[BatchPutDocumentResponseResponseTypeDef](./type_defs.md#batchputdocumentresponseresponsetypedef).
+[BatchPutDocumentResponseTypeDef](./type_defs.md#batchputdocumentresponsetypedef).
 
 ### can_paginate
 
@@ -190,7 +206,7 @@ Boto3 documentation:
 [kendra.Client.clear_query_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.clear_query_suggestions)
 
 Arguments mapping described in
-[ClearQuerySuggestionsRequestTypeDef](./type_defs.md#clearquerysuggestionsrequesttypedef).
+[ClearQuerySuggestionsRequestRequestTypeDef](./type_defs.md#clearquerysuggestionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -206,7 +222,7 @@ Boto3 documentation:
 [kendra.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_data_source)
 
 Arguments mapping described in
-[CreateDataSourceRequestTypeDef](./type_defs.md#createdatasourcerequesttypedef).
+[CreateDataSourceRequestRequestTypeDef](./type_defs.md#createdatasourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,7 +238,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateDataSourceResponseResponseTypeDef](./type_defs.md#createdatasourceresponseresponsetypedef).
+[CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
 
 ### create_faq
 
@@ -234,7 +250,7 @@ Boto3 documentation:
 [kendra.Client.create_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_faq)
 
 Arguments mapping described in
-[CreateFaqRequestTypeDef](./type_defs.md#createfaqrequesttypedef).
+[CreateFaqRequestRequestTypeDef](./type_defs.md#createfaqrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -247,8 +263,7 @@ Keyword-only arguments:
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 - `ClientToken`: `str`
 
-Returns
-[CreateFaqResponseResponseTypeDef](./type_defs.md#createfaqresponseresponsetypedef).
+Returns [CreateFaqResponseTypeDef](./type_defs.md#createfaqresponsetypedef).
 
 ### create_index
 
@@ -260,7 +275,7 @@ Boto3 documentation:
 [kendra.Client.create_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_index)
 
 Arguments mapping described in
-[CreateIndexRequestTypeDef](./type_defs.md#createindexrequesttypedef).
+[CreateIndexRequestRequestTypeDef](./type_defs.md#createindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -278,7 +293,7 @@ Keyword-only arguments:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
 
 Returns
-[CreateIndexResponseResponseTypeDef](./type_defs.md#createindexresponseresponsetypedef).
+[CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
 
 ### create_query_suggestions_block_list
 
@@ -291,7 +306,7 @@ Boto3 documentation:
 [kendra.Client.create_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_query_suggestions_block_list)
 
 Arguments mapping described in
-[CreateQuerySuggestionsBlockListRequestTypeDef](./type_defs.md#createquerysuggestionsblocklistrequesttypedef).
+[CreateQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#createquerysuggestionsblocklistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,7 +319,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateQuerySuggestionsBlockListResponseResponseTypeDef](./type_defs.md#createquerysuggestionsblocklistresponseresponsetypedef).
+[CreateQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#createquerysuggestionsblocklistresponsetypedef).
 
 ### create_thesaurus
 
@@ -316,7 +331,7 @@ Boto3 documentation:
 [kendra.Client.create_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_thesaurus)
 
 Arguments mapping described in
-[CreateThesaurusRequestTypeDef](./type_defs.md#createthesaurusrequesttypedef).
+[CreateThesaurusRequestRequestTypeDef](./type_defs.md#createthesaurusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -329,7 +344,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns
-[CreateThesaurusResponseResponseTypeDef](./type_defs.md#createthesaurusresponseresponsetypedef).
+[CreateThesaurusResponseTypeDef](./type_defs.md#createthesaurusresponsetypedef).
 
 ### delete_data_source
 
@@ -341,7 +356,7 @@ Boto3 documentation:
 [kendra.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_data_source)
 
 Arguments mapping described in
-[DeleteDataSourceRequestTypeDef](./type_defs.md#deletedatasourcerequesttypedef).
+[DeleteDataSourceRequestRequestTypeDef](./type_defs.md#deletedatasourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -358,7 +373,7 @@ Boto3 documentation:
 [kendra.Client.delete_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_faq)
 
 Arguments mapping described in
-[DeleteFaqRequestTypeDef](./type_defs.md#deletefaqrequesttypedef).
+[DeleteFaqRequestRequestTypeDef](./type_defs.md#deletefaqrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -375,11 +390,31 @@ Boto3 documentation:
 [kendra.Client.delete_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_index)
 
 Arguments mapping described in
-[DeleteIndexRequestTypeDef](./type_defs.md#deleteindexrequesttypedef).
+[DeleteIndexRequestRequestTypeDef](./type_defs.md#deleteindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
+
+### delete_principal_mapping
+
+Deletes a group so that all users and sub groups that belong to the group can
+no longer access documents only available to that group.
+
+Type annotations for `boto3.client("kendra").delete_principal_mapping` method.
+
+Boto3 documentation:
+[kendra.Client.delete_principal_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_principal_mapping)
+
+Arguments mapping described in
+[DeletePrincipalMappingRequestRequestTypeDef](./type_defs.md#deleteprincipalmappingrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IndexId`: `str` *(required)*
+- `GroupId`: `str` *(required)*
+- `DataSourceId`: `str`
+- `OrderingId`: `int`
 
 ### delete_query_suggestions_block_list
 
@@ -392,7 +427,7 @@ Boto3 documentation:
 [kendra.Client.delete_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_query_suggestions_block_list)
 
 Arguments mapping described in
-[DeleteQuerySuggestionsBlockListRequestTypeDef](./type_defs.md#deletequerysuggestionsblocklistrequesttypedef).
+[DeleteQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#deletequerysuggestionsblocklistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,7 +444,7 @@ Boto3 documentation:
 [kendra.Client.delete_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_thesaurus)
 
 Arguments mapping described in
-[DeleteThesaurusRequestTypeDef](./type_defs.md#deletethesaurusrequesttypedef).
+[DeleteThesaurusRequestRequestTypeDef](./type_defs.md#deletethesaurusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -426,7 +461,7 @@ Boto3 documentation:
 [kendra.Client.describe_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_data_source)
 
 Arguments mapping described in
-[DescribeDataSourceRequestTypeDef](./type_defs.md#describedatasourcerequesttypedef).
+[DescribeDataSourceRequestRequestTypeDef](./type_defs.md#describedatasourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -434,7 +469,7 @@ Keyword-only arguments:
 - `IndexId`: `str` *(required)*
 
 Returns
-[DescribeDataSourceResponseResponseTypeDef](./type_defs.md#describedatasourceresponseresponsetypedef).
+[DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef).
 
 ### describe_faq
 
@@ -446,7 +481,7 @@ Boto3 documentation:
 [kendra.Client.describe_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_faq)
 
 Arguments mapping described in
-[DescribeFaqRequestTypeDef](./type_defs.md#describefaqrequesttypedef).
+[DescribeFaqRequestRequestTypeDef](./type_defs.md#describefaqrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -454,7 +489,7 @@ Keyword-only arguments:
 - `IndexId`: `str` *(required)*
 
 Returns
-[DescribeFaqResponseResponseTypeDef](./type_defs.md#describefaqresponseresponsetypedef).
+[DescribeFaqResponseTypeDef](./type_defs.md#describefaqresponsetypedef).
 
 ### describe_index
 
@@ -468,14 +503,37 @@ Boto3 documentation:
 [kendra.Client.describe_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_index)
 
 Arguments mapping described in
-[DescribeIndexRequestTypeDef](./type_defs.md#describeindexrequesttypedef).
+[DescribeIndexRequestRequestTypeDef](./type_defs.md#describeindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeIndexResponseResponseTypeDef](./type_defs.md#describeindexresponseresponsetypedef).
+[DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef).
+
+### describe_principal_mapping
+
+Describes the processing of `PUT` and `DELETE` actions for mapping users to
+their groups.
+
+Type annotations for `boto3.client("kendra").describe_principal_mapping`
+method.
+
+Boto3 documentation:
+[kendra.Client.describe_principal_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_principal_mapping)
+
+Arguments mapping described in
+[DescribePrincipalMappingRequestRequestTypeDef](./type_defs.md#describeprincipalmappingrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IndexId`: `str` *(required)*
+- `GroupId`: `str` *(required)*
+- `DataSourceId`: `str`
+
+Returns
+[DescribePrincipalMappingResponseTypeDef](./type_defs.md#describeprincipalmappingresponsetypedef).
 
 ### describe_query_suggestions_block_list
 
@@ -488,7 +546,7 @@ Boto3 documentation:
 [kendra.Client.describe_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_query_suggestions_block_list)
 
 Arguments mapping described in
-[DescribeQuerySuggestionsBlockListRequestTypeDef](./type_defs.md#describequerysuggestionsblocklistrequesttypedef).
+[DescribeQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#describequerysuggestionsblocklistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -496,7 +554,7 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeQuerySuggestionsBlockListResponseResponseTypeDef](./type_defs.md#describequerysuggestionsblocklistresponseresponsetypedef).
+[DescribeQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#describequerysuggestionsblocklistresponsetypedef).
 
 ### describe_query_suggestions_config
 
@@ -509,14 +567,14 @@ Boto3 documentation:
 [kendra.Client.describe_query_suggestions_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_query_suggestions_config)
 
 Arguments mapping described in
-[DescribeQuerySuggestionsConfigRequestTypeDef](./type_defs.md#describequerysuggestionsconfigrequesttypedef).
+[DescribeQuerySuggestionsConfigRequestRequestTypeDef](./type_defs.md#describequerysuggestionsconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
 
 Returns
-[DescribeQuerySuggestionsConfigResponseResponseTypeDef](./type_defs.md#describequerysuggestionsconfigresponseresponsetypedef).
+[DescribeQuerySuggestionsConfigResponseTypeDef](./type_defs.md#describequerysuggestionsconfigresponsetypedef).
 
 ### describe_thesaurus
 
@@ -528,7 +586,7 @@ Boto3 documentation:
 [kendra.Client.describe_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_thesaurus)
 
 Arguments mapping described in
-[DescribeThesaurusRequestTypeDef](./type_defs.md#describethesaurusrequesttypedef).
+[DescribeThesaurusRequestRequestTypeDef](./type_defs.md#describethesaurusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -536,7 +594,7 @@ Keyword-only arguments:
 - `IndexId`: `str` *(required)*
 
 Returns
-[DescribeThesaurusResponseResponseTypeDef](./type_defs.md#describethesaurusresponseresponsetypedef).
+[DescribeThesaurusResponseTypeDef](./type_defs.md#describethesaurusresponsetypedef).
 
 ### generate_presigned_url
 
@@ -566,7 +624,7 @@ Boto3 documentation:
 [kendra.Client.get_query_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.get_query_suggestions)
 
 Arguments mapping described in
-[GetQuerySuggestionsRequestTypeDef](./type_defs.md#getquerysuggestionsrequesttypedef).
+[GetQuerySuggestionsRequestRequestTypeDef](./type_defs.md#getquerysuggestionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -575,7 +633,7 @@ Keyword-only arguments:
 - `MaxSuggestionsCount`: `int`
 
 Returns
-[GetQuerySuggestionsResponseResponseTypeDef](./type_defs.md#getquerysuggestionsresponseresponsetypedef).
+[GetQuerySuggestionsResponseTypeDef](./type_defs.md#getquerysuggestionsresponsetypedef).
 
 ### list_data_source_sync_jobs
 
@@ -588,7 +646,7 @@ Boto3 documentation:
 [kendra.Client.list_data_source_sync_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_data_source_sync_jobs)
 
 Arguments mapping described in
-[ListDataSourceSyncJobsRequestTypeDef](./type_defs.md#listdatasourcesyncjobsrequesttypedef).
+[ListDataSourceSyncJobsRequestRequestTypeDef](./type_defs.md#listdatasourcesyncjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -601,7 +659,7 @@ Keyword-only arguments:
   [DataSourceSyncJobStatusType](./literals.md#datasourcesyncjobstatustype)
 
 Returns
-[ListDataSourceSyncJobsResponseResponseTypeDef](./type_defs.md#listdatasourcesyncjobsresponseresponsetypedef).
+[ListDataSourceSyncJobsResponseTypeDef](./type_defs.md#listdatasourcesyncjobsresponsetypedef).
 
 ### list_data_sources
 
@@ -613,7 +671,7 @@ Boto3 documentation:
 [kendra.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_data_sources)
 
 Arguments mapping described in
-[ListDataSourcesRequestTypeDef](./type_defs.md#listdatasourcesrequesttypedef).
+[ListDataSourcesRequestRequestTypeDef](./type_defs.md#listdatasourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -622,7 +680,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDataSourcesResponseResponseTypeDef](./type_defs.md#listdatasourcesresponseresponsetypedef).
+[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
 
 ### list_faqs
 
@@ -634,7 +692,7 @@ Boto3 documentation:
 [kendra.Client.list_faqs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_faqs)
 
 Arguments mapping described in
-[ListFaqsRequestTypeDef](./type_defs.md#listfaqsrequesttypedef).
+[ListFaqsRequestRequestTypeDef](./type_defs.md#listfaqsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -642,8 +700,32 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+Returns [ListFaqsResponseTypeDef](./type_defs.md#listfaqsresponsetypedef).
+
+### list_groups_older_than_ordering_id
+
+Provides a list of groups that are mapped to users before a given ordering or
+timestamp identifier.
+
+Type annotations for
+`boto3.client("kendra").list_groups_older_than_ordering_id` method.
+
+Boto3 documentation:
+[kendra.Client.list_groups_older_than_ordering_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_groups_older_than_ordering_id)
+
+Arguments mapping described in
+[ListGroupsOlderThanOrderingIdRequestRequestTypeDef](./type_defs.md#listgroupsolderthanorderingidrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IndexId`: `str` *(required)*
+- `OrderingId`: `int` *(required)*
+- `DataSourceId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
 Returns
-[ListFaqsResponseResponseTypeDef](./type_defs.md#listfaqsresponseresponsetypedef).
+[ListGroupsOlderThanOrderingIdResponseTypeDef](./type_defs.md#listgroupsolderthanorderingidresponsetypedef).
 
 ### list_indices
 
@@ -655,7 +737,7 @@ Boto3 documentation:
 [kendra.Client.list_indices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_indices)
 
 Arguments mapping described in
-[ListIndicesRequestTypeDef](./type_defs.md#listindicesrequesttypedef).
+[ListIndicesRequestRequestTypeDef](./type_defs.md#listindicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -663,7 +745,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListIndicesResponseResponseTypeDef](./type_defs.md#listindicesresponseresponsetypedef).
+[ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef).
 
 ### list_query_suggestions_block_lists
 
@@ -676,7 +758,7 @@ Boto3 documentation:
 [kendra.Client.list_query_suggestions_block_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_query_suggestions_block_lists)
 
 Arguments mapping described in
-[ListQuerySuggestionsBlockListsRequestTypeDef](./type_defs.md#listquerysuggestionsblocklistsrequesttypedef).
+[ListQuerySuggestionsBlockListsRequestRequestTypeDef](./type_defs.md#listquerysuggestionsblocklistsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -685,7 +767,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListQuerySuggestionsBlockListsResponseResponseTypeDef](./type_defs.md#listquerysuggestionsblocklistsresponseresponsetypedef).
+[ListQuerySuggestionsBlockListsResponseTypeDef](./type_defs.md#listquerysuggestionsblocklistsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -697,14 +779,14 @@ Boto3 documentation:
 [kendra.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_thesauri
 
@@ -716,7 +798,7 @@ Boto3 documentation:
 [kendra.Client.list_thesauri](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_thesauri)
 
 Arguments mapping described in
-[ListThesauriRequestTypeDef](./type_defs.md#listthesaurirequesttypedef).
+[ListThesauriRequestRequestTypeDef](./type_defs.md#listthesaurirequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -725,7 +807,29 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListThesauriResponseResponseTypeDef](./type_defs.md#listthesauriresponseresponsetypedef).
+[ListThesauriResponseTypeDef](./type_defs.md#listthesauriresponsetypedef).
+
+### put_principal_mapping
+
+Maps users to their groups.
+
+Type annotations for `boto3.client("kendra").put_principal_mapping` method.
+
+Boto3 documentation:
+[kendra.Client.put_principal_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.put_principal_mapping)
+
+Arguments mapping described in
+[PutPrincipalMappingRequestRequestTypeDef](./type_defs.md#putprincipalmappingrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IndexId`: `str` *(required)*
+- `GroupId`: `str` *(required)*
+- `GroupMembers`: [GroupMembersTypeDef](./type_defs.md#groupmemberstypedef)
+  *(required)*
+- `DataSourceId`: `str`
+- `OrderingId`: `int`
+- `RoleArn`: `str`
 
 ### query
 
@@ -737,7 +841,7 @@ Boto3 documentation:
 [kendra.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.query)
 
 Arguments mapping described in
-[QueryRequestTypeDef](./type_defs.md#queryrequesttypedef).
+[QueryRequestRequestTypeDef](./type_defs.md#queryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -758,8 +862,7 @@ Keyword-only arguments:
 - `UserContext`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `VisitorId`: `str`
 
-Returns
-[QueryResultResponseTypeDef](./type_defs.md#queryresultresponsetypedef).
+Returns [QueryResultTypeDef](./type_defs.md#queryresulttypedef).
 
 ### start_data_source_sync_job
 
@@ -772,7 +875,7 @@ Boto3 documentation:
 [kendra.Client.start_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.start_data_source_sync_job)
 
 Arguments mapping described in
-[StartDataSourceSyncJobRequestTypeDef](./type_defs.md#startdatasourcesyncjobrequesttypedef).
+[StartDataSourceSyncJobRequestRequestTypeDef](./type_defs.md#startdatasourcesyncjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -780,7 +883,7 @@ Keyword-only arguments:
 - `IndexId`: `str` *(required)*
 
 Returns
-[StartDataSourceSyncJobResponseResponseTypeDef](./type_defs.md#startdatasourcesyncjobresponseresponsetypedef).
+[StartDataSourceSyncJobResponseTypeDef](./type_defs.md#startdatasourcesyncjobresponsetypedef).
 
 ### stop_data_source_sync_job
 
@@ -792,7 +895,7 @@ Boto3 documentation:
 [kendra.Client.stop_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.stop_data_source_sync_job)
 
 Arguments mapping described in
-[StopDataSourceSyncJobRequestTypeDef](./type_defs.md#stopdatasourcesyncjobrequesttypedef).
+[StopDataSourceSyncJobRequestRequestTypeDef](./type_defs.md#stopdatasourcesyncjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -810,7 +913,7 @@ Boto3 documentation:
 [kendra.Client.submit_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.submit_feedback)
 
 Arguments mapping described in
-[SubmitFeedbackRequestTypeDef](./type_defs.md#submitfeedbackrequesttypedef).
+[SubmitFeedbackRequestRequestTypeDef](./type_defs.md#submitfeedbackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -831,7 +934,7 @@ Boto3 documentation:
 [kendra.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -850,7 +953,7 @@ Boto3 documentation:
 [kendra.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -869,7 +972,7 @@ Boto3 documentation:
 [kendra.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_data_source)
 
 Arguments mapping described in
-[UpdateDataSourceRequestTypeDef](./type_defs.md#updatedatasourcerequesttypedef).
+[UpdateDataSourceRequestRequestTypeDef](./type_defs.md#updatedatasourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -892,7 +995,7 @@ Boto3 documentation:
 [kendra.Client.update_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_index)
 
 Arguments mapping described in
-[UpdateIndexRequestTypeDef](./type_defs.md#updateindexrequesttypedef).
+[UpdateIndexRequestRequestTypeDef](./type_defs.md#updateindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -920,7 +1023,7 @@ Boto3 documentation:
 [kendra.Client.update_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_query_suggestions_block_list)
 
 Arguments mapping described in
-[UpdateQuerySuggestionsBlockListRequestTypeDef](./type_defs.md#updatequerysuggestionsblocklistrequesttypedef).
+[UpdateQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#updatequerysuggestionsblocklistrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -942,7 +1045,7 @@ Boto3 documentation:
 [kendra.Client.update_query_suggestions_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_query_suggestions_config)
 
 Arguments mapping described in
-[UpdateQuerySuggestionsConfigRequestTypeDef](./type_defs.md#updatequerysuggestionsconfigrequesttypedef).
+[UpdateQuerySuggestionsConfigRequestRequestTypeDef](./type_defs.md#updatequerysuggestionsconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -963,7 +1066,7 @@ Boto3 documentation:
 [kendra.Client.update_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_thesaurus)
 
 Arguments mapping described in
-[UpdateThesaurusRequestTypeDef](./type_defs.md#updatethesaurusrequesttypedef).
+[UpdateThesaurusRequestRequestTypeDef](./type_defs.md#updatethesaurusrequestrequesttypedef).
 
 Keyword-only arguments:
 

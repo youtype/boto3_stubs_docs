@@ -11,6 +11,7 @@ type annotations stubs module
   - [OpsWorksClient](#opsworksclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [assign_instance](#assign_instance)
     - [assign_volume](#assign_volume)
     - [associate_elastic_ip](#associate_elastic_ip)
@@ -126,6 +127,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+OpsWorksClient exceptions.
+
+Type annotations for `boto3.client("opsworks").exceptions` method.
+
+Boto3 documentation:
+[OpsWorks.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### assign_instance
 
 Assign a registered instance to a layer.
@@ -136,7 +148,7 @@ Boto3 documentation:
 [OpsWorks.Client.assign_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.assign_instance)
 
 Arguments mapping described in
-[AssignInstanceRequestTypeDef](./type_defs.md#assigninstancerequesttypedef).
+[AssignInstanceRequestRequestTypeDef](./type_defs.md#assigninstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -154,7 +166,7 @@ Boto3 documentation:
 [OpsWorks.Client.assign_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.assign_volume)
 
 Arguments mapping described in
-[AssignVolumeRequestTypeDef](./type_defs.md#assignvolumerequesttypedef).
+[AssignVolumeRequestRequestTypeDef](./type_defs.md#assignvolumerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -172,7 +184,7 @@ Boto3 documentation:
 [OpsWorks.Client.associate_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.associate_elastic_ip)
 
 Arguments mapping described in
-[AssociateElasticIpRequestTypeDef](./type_defs.md#associateelasticiprequesttypedef).
+[AssociateElasticIpRequestRequestTypeDef](./type_defs.md#associateelasticiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -190,7 +202,7 @@ Boto3 documentation:
 [OpsWorks.Client.attach_elastic_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.attach_elastic_load_balancer)
 
 Arguments mapping described in
-[AttachElasticLoadBalancerRequestTypeDef](./type_defs.md#attachelasticloadbalancerrequesttypedef).
+[AttachElasticLoadBalancerRequestRequestTypeDef](./type_defs.md#attachelasticloadbalancerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,7 +234,7 @@ Boto3 documentation:
 [OpsWorks.Client.clone_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.clone_stack)
 
 Arguments mapping described in
-[CloneStackRequestTypeDef](./type_defs.md#clonestackrequesttypedef).
+[CloneStackRequestRequestTypeDef](./type_defs.md#clonestackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -253,8 +265,7 @@ Keyword-only arguments:
   [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `AgentVersion`: `str`
 
-Returns
-[CloneStackResultResponseTypeDef](./type_defs.md#clonestackresultresponsetypedef).
+Returns [CloneStackResultTypeDef](./type_defs.md#clonestackresulttypedef).
 
 ### create_app
 
@@ -266,7 +277,7 @@ Boto3 documentation:
 [OpsWorks.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_app)
 
 Arguments mapping described in
-[CreateAppRequestTypeDef](./type_defs.md#createapprequesttypedef).
+[CreateAppRequestRequestTypeDef](./type_defs.md#createapprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,8 +298,7 @@ Keyword-only arguments:
 - `Environment`:
   `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
-Returns
-[CreateAppResultResponseTypeDef](./type_defs.md#createappresultresponsetypedef).
+Returns [CreateAppResultTypeDef](./type_defs.md#createappresulttypedef).
 
 ### create_deployment
 
@@ -300,7 +310,7 @@ Boto3 documentation:
 [OpsWorks.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_deployment)
 
 Arguments mapping described in
-[CreateDeploymentRequestTypeDef](./type_defs.md#createdeploymentrequesttypedef).
+[CreateDeploymentRequestRequestTypeDef](./type_defs.md#createdeploymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -315,7 +325,7 @@ Keyword-only arguments:
 - `CustomJson`: `str`
 
 Returns
-[CreateDeploymentResultResponseTypeDef](./type_defs.md#createdeploymentresultresponsetypedef).
+[CreateDeploymentResultTypeDef](./type_defs.md#createdeploymentresulttypedef).
 
 ### create_instance
 
@@ -327,7 +337,7 @@ Boto3 documentation:
 [OpsWorks.Client.create_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_instance)
 
 Arguments mapping described in
-[CreateInstanceRequestTypeDef](./type_defs.md#createinstancerequesttypedef).
+[CreateInstanceRequestRequestTypeDef](./type_defs.md#createinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -352,7 +362,7 @@ Keyword-only arguments:
 - `Tenancy`: `str`
 
 Returns
-[CreateInstanceResultResponseTypeDef](./type_defs.md#createinstanceresultresponsetypedef).
+[CreateInstanceResultTypeDef](./type_defs.md#createinstanceresulttypedef).
 
 ### create_layer
 
@@ -364,7 +374,7 @@ Boto3 documentation:
 [OpsWorks.Client.create_layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_layer)
 
 Arguments mapping described in
-[CreateLayerRequestTypeDef](./type_defs.md#createlayerrequesttypedef).
+[CreateLayerRequestRequestTypeDef](./type_defs.md#createlayerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -392,8 +402,7 @@ Keyword-only arguments:
 - `LifecycleEventConfiguration`:
   [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
 
-Returns
-[CreateLayerResultResponseTypeDef](./type_defs.md#createlayerresultresponsetypedef).
+Returns [CreateLayerResultTypeDef](./type_defs.md#createlayerresulttypedef).
 
 ### create_stack
 
@@ -405,7 +414,7 @@ Boto3 documentation:
 [OpsWorks.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_stack)
 
 Arguments mapping described in
-[CreateStackRequestTypeDef](./type_defs.md#createstackrequesttypedef).
+[CreateStackRequestRequestTypeDef](./type_defs.md#createstackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -433,8 +442,7 @@ Keyword-only arguments:
   [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `AgentVersion`: `str`
 
-Returns
-[CreateStackResultResponseTypeDef](./type_defs.md#createstackresultresponsetypedef).
+Returns [CreateStackResultTypeDef](./type_defs.md#createstackresulttypedef).
 
 ### create_user_profile
 
@@ -446,7 +454,7 @@ Boto3 documentation:
 [OpsWorks.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.create_user_profile)
 
 Arguments mapping described in
-[CreateUserProfileRequestTypeDef](./type_defs.md#createuserprofilerequesttypedef).
+[CreateUserProfileRequestRequestTypeDef](./type_defs.md#createuserprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -456,7 +464,7 @@ Keyword-only arguments:
 - `AllowSelfManagement`: `bool`
 
 Returns
-[CreateUserProfileResultResponseTypeDef](./type_defs.md#createuserprofileresultresponsetypedef).
+[CreateUserProfileResultTypeDef](./type_defs.md#createuserprofileresulttypedef).
 
 ### delete_app
 
@@ -468,7 +476,7 @@ Boto3 documentation:
 [OpsWorks.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_app)
 
 Arguments mapping described in
-[DeleteAppRequestTypeDef](./type_defs.md#deleteapprequesttypedef).
+[DeleteAppRequestRequestTypeDef](./type_defs.md#deleteapprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -485,7 +493,7 @@ Boto3 documentation:
 [OpsWorks.Client.delete_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_instance)
 
 Arguments mapping described in
-[DeleteInstanceRequestTypeDef](./type_defs.md#deleteinstancerequesttypedef).
+[DeleteInstanceRequestRequestTypeDef](./type_defs.md#deleteinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -503,7 +511,7 @@ Boto3 documentation:
 [OpsWorks.Client.delete_layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_layer)
 
 Arguments mapping described in
-[DeleteLayerRequestTypeDef](./type_defs.md#deletelayerrequesttypedef).
+[DeleteLayerRequestRequestTypeDef](./type_defs.md#deletelayerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -519,7 +527,7 @@ Boto3 documentation:
 [OpsWorks.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_stack)
 
 Arguments mapping described in
-[DeleteStackRequestTypeDef](./type_defs.md#deletestackrequesttypedef).
+[DeleteStackRequestRequestTypeDef](./type_defs.md#deletestackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -535,7 +543,7 @@ Boto3 documentation:
 [OpsWorks.Client.delete_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.delete_user_profile)
 
 Arguments mapping described in
-[DeleteUserProfileRequestTypeDef](./type_defs.md#deleteuserprofilerequesttypedef).
+[DeleteUserProfileRequestRequestTypeDef](./type_defs.md#deleteuserprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -551,7 +559,7 @@ Boto3 documentation:
 [OpsWorks.Client.deregister_ecs_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_ecs_cluster)
 
 Arguments mapping described in
-[DeregisterEcsClusterRequestTypeDef](./type_defs.md#deregisterecsclusterrequesttypedef).
+[DeregisterEcsClusterRequestRequestTypeDef](./type_defs.md#deregisterecsclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -567,7 +575,7 @@ Boto3 documentation:
 [OpsWorks.Client.deregister_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_elastic_ip)
 
 Arguments mapping described in
-[DeregisterElasticIpRequestTypeDef](./type_defs.md#deregisterelasticiprequesttypedef).
+[DeregisterElasticIpRequestRequestTypeDef](./type_defs.md#deregisterelasticiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -583,7 +591,7 @@ Boto3 documentation:
 [OpsWorks.Client.deregister_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_instance)
 
 Arguments mapping described in
-[DeregisterInstanceRequestTypeDef](./type_defs.md#deregisterinstancerequesttypedef).
+[DeregisterInstanceRequestRequestTypeDef](./type_defs.md#deregisterinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -600,7 +608,7 @@ Boto3 documentation:
 [OpsWorks.Client.deregister_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_rds_db_instance)
 
 Arguments mapping described in
-[DeregisterRdsDbInstanceRequestTypeDef](./type_defs.md#deregisterrdsdbinstancerequesttypedef).
+[DeregisterRdsDbInstanceRequestRequestTypeDef](./type_defs.md#deregisterrdsdbinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -616,7 +624,7 @@ Boto3 documentation:
 [OpsWorks.Client.deregister_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.deregister_volume)
 
 Arguments mapping described in
-[DeregisterVolumeRequestTypeDef](./type_defs.md#deregistervolumerequesttypedef).
+[DeregisterVolumeRequestRequestTypeDef](./type_defs.md#deregistervolumerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -632,7 +640,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_agent_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_agent_versions)
 
 Arguments mapping described in
-[DescribeAgentVersionsRequestTypeDef](./type_defs.md#describeagentversionsrequesttypedef).
+[DescribeAgentVersionsRequestRequestTypeDef](./type_defs.md#describeagentversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -641,7 +649,7 @@ Keyword-only arguments:
   [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
 
 Returns
-[DescribeAgentVersionsResultResponseTypeDef](./type_defs.md#describeagentversionsresultresponsetypedef).
+[DescribeAgentVersionsResultTypeDef](./type_defs.md#describeagentversionsresulttypedef).
 
 ### describe_apps
 
@@ -653,15 +661,14 @@ Boto3 documentation:
 [OpsWorks.Client.describe_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_apps)
 
 Arguments mapping described in
-[DescribeAppsRequestTypeDef](./type_defs.md#describeappsrequesttypedef).
+[DescribeAppsRequestRequestTypeDef](./type_defs.md#describeappsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `StackId`: `str`
 - `AppIds`: `List`\[`str`\]
 
-Returns
-[DescribeAppsResultResponseTypeDef](./type_defs.md#describeappsresultresponsetypedef).
+Returns [DescribeAppsResultTypeDef](./type_defs.md#describeappsresulttypedef).
 
 ### describe_commands
 
@@ -673,7 +680,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_commands](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_commands)
 
 Arguments mapping described in
-[DescribeCommandsRequestTypeDef](./type_defs.md#describecommandsrequesttypedef).
+[DescribeCommandsRequestRequestTypeDef](./type_defs.md#describecommandsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -682,7 +689,7 @@ Keyword-only arguments:
 - `CommandIds`: `List`\[`str`\]
 
 Returns
-[DescribeCommandsResultResponseTypeDef](./type_defs.md#describecommandsresultresponsetypedef).
+[DescribeCommandsResultTypeDef](./type_defs.md#describecommandsresulttypedef).
 
 ### describe_deployments
 
@@ -694,7 +701,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_deployments)
 
 Arguments mapping described in
-[DescribeDeploymentsRequestTypeDef](./type_defs.md#describedeploymentsrequesttypedef).
+[DescribeDeploymentsRequestRequestTypeDef](./type_defs.md#describedeploymentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -703,7 +710,7 @@ Keyword-only arguments:
 - `DeploymentIds`: `List`\[`str`\]
 
 Returns
-[DescribeDeploymentsResultResponseTypeDef](./type_defs.md#describedeploymentsresultresponsetypedef).
+[DescribeDeploymentsResultTypeDef](./type_defs.md#describedeploymentsresulttypedef).
 
 ### describe_ecs_clusters
 
@@ -715,7 +722,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_ecs_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_ecs_clusters)
 
 Arguments mapping described in
-[DescribeEcsClustersRequestTypeDef](./type_defs.md#describeecsclustersrequesttypedef).
+[DescribeEcsClustersRequestRequestTypeDef](./type_defs.md#describeecsclustersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -725,7 +732,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeEcsClustersResultResponseTypeDef](./type_defs.md#describeecsclustersresultresponsetypedef).
+[DescribeEcsClustersResultTypeDef](./type_defs.md#describeecsclustersresulttypedef).
 
 ### describe_elastic_ips
 
@@ -739,7 +746,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_elastic_ips](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_ips)
 
 Arguments mapping described in
-[DescribeElasticIpsRequestTypeDef](./type_defs.md#describeelasticipsrequesttypedef).
+[DescribeElasticIpsRequestRequestTypeDef](./type_defs.md#describeelasticipsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -748,7 +755,7 @@ Keyword-only arguments:
 - `Ips`: `List`\[`str`\]
 
 Returns
-[DescribeElasticIpsResultResponseTypeDef](./type_defs.md#describeelasticipsresultresponsetypedef).
+[DescribeElasticIpsResultTypeDef](./type_defs.md#describeelasticipsresulttypedef).
 
 ### describe_elastic_load_balancers
 
@@ -761,7 +768,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_elastic_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_elastic_load_balancers)
 
 Arguments mapping described in
-[DescribeElasticLoadBalancersRequestTypeDef](./type_defs.md#describeelasticloadbalancersrequesttypedef).
+[DescribeElasticLoadBalancersRequestRequestTypeDef](./type_defs.md#describeelasticloadbalancersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -769,7 +776,7 @@ Keyword-only arguments:
 - `LayerIds`: `List`\[`str`\]
 
 Returns
-[DescribeElasticLoadBalancersResultResponseTypeDef](./type_defs.md#describeelasticloadbalancersresultresponsetypedef).
+[DescribeElasticLoadBalancersResultTypeDef](./type_defs.md#describeelasticloadbalancersresulttypedef).
 
 ### describe_instances
 
@@ -781,7 +788,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_instances)
 
 Arguments mapping described in
-[DescribeInstancesRequestTypeDef](./type_defs.md#describeinstancesrequesttypedef).
+[DescribeInstancesRequestRequestTypeDef](./type_defs.md#describeinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -790,7 +797,7 @@ Keyword-only arguments:
 - `InstanceIds`: `List`\[`str`\]
 
 Returns
-[DescribeInstancesResultResponseTypeDef](./type_defs.md#describeinstancesresultresponsetypedef).
+[DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef).
 
 ### describe_layers
 
@@ -802,7 +809,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_layers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_layers)
 
 Arguments mapping described in
-[DescribeLayersRequestTypeDef](./type_defs.md#describelayersrequesttypedef).
+[DescribeLayersRequestRequestTypeDef](./type_defs.md#describelayersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -810,7 +817,7 @@ Keyword-only arguments:
 - `LayerIds`: `List`\[`str`\]
 
 Returns
-[DescribeLayersResultResponseTypeDef](./type_defs.md#describelayersresultresponsetypedef).
+[DescribeLayersResultTypeDef](./type_defs.md#describelayersresulttypedef).
 
 ### describe_load_based_auto_scaling
 
@@ -823,14 +830,14 @@ Boto3 documentation:
 [OpsWorks.Client.describe_load_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_load_based_auto_scaling)
 
 Arguments mapping described in
-[DescribeLoadBasedAutoScalingRequestTypeDef](./type_defs.md#describeloadbasedautoscalingrequesttypedef).
+[DescribeLoadBasedAutoScalingRequestRequestTypeDef](./type_defs.md#describeloadbasedautoscalingrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LayerIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeLoadBasedAutoScalingResultResponseTypeDef](./type_defs.md#describeloadbasedautoscalingresultresponsetypedef).
+[DescribeLoadBasedAutoScalingResultTypeDef](./type_defs.md#describeloadbasedautoscalingresulttypedef).
 
 ### describe_my_user_profile
 
@@ -843,7 +850,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_my_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_my_user_profile)
 
 Returns
-[DescribeMyUserProfileResultResponseTypeDef](./type_defs.md#describemyuserprofileresultresponsetypedef).
+[DescribeMyUserProfileResultTypeDef](./type_defs.md#describemyuserprofileresulttypedef).
 
 ### describe_operating_systems
 
@@ -856,7 +863,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_operating_systems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_operating_systems)
 
 Returns
-[DescribeOperatingSystemsResponseResponseTypeDef](./type_defs.md#describeoperatingsystemsresponseresponsetypedef).
+[DescribeOperatingSystemsResponseTypeDef](./type_defs.md#describeoperatingsystemsresponsetypedef).
 
 ### describe_permissions
 
@@ -868,7 +875,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_permissions)
 
 Arguments mapping described in
-[DescribePermissionsRequestTypeDef](./type_defs.md#describepermissionsrequesttypedef).
+[DescribePermissionsRequestRequestTypeDef](./type_defs.md#describepermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -876,7 +883,7 @@ Keyword-only arguments:
 - `StackId`: `str`
 
 Returns
-[DescribePermissionsResultResponseTypeDef](./type_defs.md#describepermissionsresultresponsetypedef).
+[DescribePermissionsResultTypeDef](./type_defs.md#describepermissionsresulttypedef).
 
 ### describe_raid_arrays
 
@@ -888,7 +895,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_raid_arrays](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_raid_arrays)
 
 Arguments mapping described in
-[DescribeRaidArraysRequestTypeDef](./type_defs.md#describeraidarraysrequesttypedef).
+[DescribeRaidArraysRequestRequestTypeDef](./type_defs.md#describeraidarraysrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -897,7 +904,7 @@ Keyword-only arguments:
 - `RaidArrayIds`: `List`\[`str`\]
 
 Returns
-[DescribeRaidArraysResultResponseTypeDef](./type_defs.md#describeraidarraysresultresponsetypedef).
+[DescribeRaidArraysResultTypeDef](./type_defs.md#describeraidarraysresulttypedef).
 
 ### describe_rds_db_instances
 
@@ -910,7 +917,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_rds_db_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_rds_db_instances)
 
 Arguments mapping described in
-[DescribeRdsDbInstancesRequestTypeDef](./type_defs.md#describerdsdbinstancesrequesttypedef).
+[DescribeRdsDbInstancesRequestRequestTypeDef](./type_defs.md#describerdsdbinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -918,7 +925,7 @@ Keyword-only arguments:
 - `RdsDbInstanceArns`: `List`\[`str`\]
 
 Returns
-[DescribeRdsDbInstancesResultResponseTypeDef](./type_defs.md#describerdsdbinstancesresultresponsetypedef).
+[DescribeRdsDbInstancesResultTypeDef](./type_defs.md#describerdsdbinstancesresulttypedef).
 
 ### describe_service_errors
 
@@ -930,7 +937,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_service_errors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_service_errors)
 
 Arguments mapping described in
-[DescribeServiceErrorsRequestTypeDef](./type_defs.md#describeserviceerrorsrequesttypedef).
+[DescribeServiceErrorsRequestRequestTypeDef](./type_defs.md#describeserviceerrorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -939,7 +946,7 @@ Keyword-only arguments:
 - `ServiceErrorIds`: `List`\[`str`\]
 
 Returns
-[DescribeServiceErrorsResultResponseTypeDef](./type_defs.md#describeserviceerrorsresultresponsetypedef).
+[DescribeServiceErrorsResultTypeDef](./type_defs.md#describeserviceerrorsresulttypedef).
 
 ### describe_stack_provisioning_parameters
 
@@ -952,14 +959,14 @@ Boto3 documentation:
 [OpsWorks.Client.describe_stack_provisioning_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stack_provisioning_parameters)
 
 Arguments mapping described in
-[DescribeStackProvisioningParametersRequestTypeDef](./type_defs.md#describestackprovisioningparametersrequesttypedef).
+[DescribeStackProvisioningParametersRequestRequestTypeDef](./type_defs.md#describestackprovisioningparametersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
 
 Returns
-[DescribeStackProvisioningParametersResultResponseTypeDef](./type_defs.md#describestackprovisioningparametersresultresponsetypedef).
+[DescribeStackProvisioningParametersResultTypeDef](./type_defs.md#describestackprovisioningparametersresulttypedef).
 
 ### describe_stack_summary
 
@@ -972,14 +979,14 @@ Boto3 documentation:
 [OpsWorks.Client.describe_stack_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stack_summary)
 
 Arguments mapping described in
-[DescribeStackSummaryRequestTypeDef](./type_defs.md#describestacksummaryrequesttypedef).
+[DescribeStackSummaryRequestRequestTypeDef](./type_defs.md#describestacksummaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `StackId`: `str` *(required)*
 
 Returns
-[DescribeStackSummaryResultResponseTypeDef](./type_defs.md#describestacksummaryresultresponsetypedef).
+[DescribeStackSummaryResultTypeDef](./type_defs.md#describestacksummaryresulttypedef).
 
 ### describe_stacks
 
@@ -991,14 +998,14 @@ Boto3 documentation:
 [OpsWorks.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_stacks)
 
 Arguments mapping described in
-[DescribeStacksRequestTypeDef](./type_defs.md#describestacksrequesttypedef).
+[DescribeStacksRequestRequestTypeDef](./type_defs.md#describestacksrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `StackIds`: `List`\[`str`\]
 
 Returns
-[DescribeStacksResultResponseTypeDef](./type_defs.md#describestacksresultresponsetypedef).
+[DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef).
 
 ### describe_time_based_auto_scaling
 
@@ -1011,14 +1018,14 @@ Boto3 documentation:
 [OpsWorks.Client.describe_time_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_time_based_auto_scaling)
 
 Arguments mapping described in
-[DescribeTimeBasedAutoScalingRequestTypeDef](./type_defs.md#describetimebasedautoscalingrequesttypedef).
+[DescribeTimeBasedAutoScalingRequestRequestTypeDef](./type_defs.md#describetimebasedautoscalingrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InstanceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeTimeBasedAutoScalingResultResponseTypeDef](./type_defs.md#describetimebasedautoscalingresultresponsetypedef).
+[DescribeTimeBasedAutoScalingResultTypeDef](./type_defs.md#describetimebasedautoscalingresulttypedef).
 
 ### describe_user_profiles
 
@@ -1030,14 +1037,14 @@ Boto3 documentation:
 [OpsWorks.Client.describe_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_user_profiles)
 
 Arguments mapping described in
-[DescribeUserProfilesRequestTypeDef](./type_defs.md#describeuserprofilesrequesttypedef).
+[DescribeUserProfilesRequestRequestTypeDef](./type_defs.md#describeuserprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `IamUserArns`: `List`\[`str`\]
 
 Returns
-[DescribeUserProfilesResultResponseTypeDef](./type_defs.md#describeuserprofilesresultresponsetypedef).
+[DescribeUserProfilesResultTypeDef](./type_defs.md#describeuserprofilesresulttypedef).
 
 ### describe_volumes
 
@@ -1049,7 +1056,7 @@ Boto3 documentation:
 [OpsWorks.Client.describe_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.describe_volumes)
 
 Arguments mapping described in
-[DescribeVolumesRequestTypeDef](./type_defs.md#describevolumesrequesttypedef).
+[DescribeVolumesRequestRequestTypeDef](./type_defs.md#describevolumesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1059,7 +1066,7 @@ Keyword-only arguments:
 - `VolumeIds`: `List`\[`str`\]
 
 Returns
-[DescribeVolumesResultResponseTypeDef](./type_defs.md#describevolumesresultresponsetypedef).
+[DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef).
 
 ### detach_elastic_load_balancer
 
@@ -1072,7 +1079,7 @@ Boto3 documentation:
 [OpsWorks.Client.detach_elastic_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.detach_elastic_load_balancer)
 
 Arguments mapping described in
-[DetachElasticLoadBalancerRequestTypeDef](./type_defs.md#detachelasticloadbalancerrequesttypedef).
+[DetachElasticLoadBalancerRequestRequestTypeDef](./type_defs.md#detachelasticloadbalancerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1089,7 +1096,7 @@ Boto3 documentation:
 [OpsWorks.Client.disassociate_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.disassociate_elastic_ip)
 
 Arguments mapping described in
-[DisassociateElasticIpRequestTypeDef](./type_defs.md#disassociateelasticiprequesttypedef).
+[DisassociateElasticIpRequestRequestTypeDef](./type_defs.md#disassociateelasticiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1124,14 +1131,14 @@ Boto3 documentation:
 [OpsWorks.Client.get_hostname_suggestion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.get_hostname_suggestion)
 
 Arguments mapping described in
-[GetHostnameSuggestionRequestTypeDef](./type_defs.md#gethostnamesuggestionrequesttypedef).
+[GetHostnameSuggestionRequestRequestTypeDef](./type_defs.md#gethostnamesuggestionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LayerId`: `str` *(required)*
 
 Returns
-[GetHostnameSuggestionResultResponseTypeDef](./type_defs.md#gethostnamesuggestionresultresponsetypedef).
+[GetHostnameSuggestionResultTypeDef](./type_defs.md#gethostnamesuggestionresulttypedef).
 
 ### grant_access
 
@@ -1143,15 +1150,14 @@ Boto3 documentation:
 [OpsWorks.Client.grant_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.grant_access)
 
 Arguments mapping described in
-[GrantAccessRequestTypeDef](./type_defs.md#grantaccessrequesttypedef).
+[GrantAccessRequestRequestTypeDef](./type_defs.md#grantaccessrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ValidForInMinutes`: `int`
 
-Returns
-[GrantAccessResultResponseTypeDef](./type_defs.md#grantaccessresultresponsetypedef).
+Returns [GrantAccessResultTypeDef](./type_defs.md#grantaccessresulttypedef).
 
 ### list_tags
 
@@ -1163,7 +1169,7 @@ Boto3 documentation:
 [OpsWorks.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.list_tags)
 
 Arguments mapping described in
-[ListTagsRequestTypeDef](./type_defs.md#listtagsrequesttypedef).
+[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1171,8 +1177,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListTagsResultResponseTypeDef](./type_defs.md#listtagsresultresponsetypedef).
+Returns [ListTagsResultTypeDef](./type_defs.md#listtagsresulttypedef).
 
 ### reboot_instance
 
@@ -1184,7 +1189,7 @@ Boto3 documentation:
 [OpsWorks.Client.reboot_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.reboot_instance)
 
 Arguments mapping described in
-[RebootInstanceRequestTypeDef](./type_defs.md#rebootinstancerequesttypedef).
+[RebootInstanceRequestRequestTypeDef](./type_defs.md#rebootinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1200,7 +1205,7 @@ Boto3 documentation:
 [OpsWorks.Client.register_ecs_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_ecs_cluster)
 
 Arguments mapping described in
-[RegisterEcsClusterRequestTypeDef](./type_defs.md#registerecsclusterrequesttypedef).
+[RegisterEcsClusterRequestRequestTypeDef](./type_defs.md#registerecsclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1208,7 +1213,7 @@ Keyword-only arguments:
 - `StackId`: `str` *(required)*
 
 Returns
-[RegisterEcsClusterResultResponseTypeDef](./type_defs.md#registerecsclusterresultresponsetypedef).
+[RegisterEcsClusterResultTypeDef](./type_defs.md#registerecsclusterresulttypedef).
 
 ### register_elastic_ip
 
@@ -1220,7 +1225,7 @@ Boto3 documentation:
 [OpsWorks.Client.register_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_elastic_ip)
 
 Arguments mapping described in
-[RegisterElasticIpRequestTypeDef](./type_defs.md#registerelasticiprequesttypedef).
+[RegisterElasticIpRequestRequestTypeDef](./type_defs.md#registerelasticiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1228,7 +1233,7 @@ Keyword-only arguments:
 - `StackId`: `str` *(required)*
 
 Returns
-[RegisterElasticIpResultResponseTypeDef](./type_defs.md#registerelasticipresultresponsetypedef).
+[RegisterElasticIpResultTypeDef](./type_defs.md#registerelasticipresulttypedef).
 
 ### register_instance
 
@@ -1241,7 +1246,7 @@ Boto3 documentation:
 [OpsWorks.Client.register_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_instance)
 
 Arguments mapping described in
-[RegisterInstanceRequestTypeDef](./type_defs.md#registerinstancerequesttypedef).
+[RegisterInstanceRequestRequestTypeDef](./type_defs.md#registerinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1255,7 +1260,7 @@ Keyword-only arguments:
   [InstanceIdentityTypeDef](./type_defs.md#instanceidentitytypedef)
 
 Returns
-[RegisterInstanceResultResponseTypeDef](./type_defs.md#registerinstanceresultresponsetypedef).
+[RegisterInstanceResultTypeDef](./type_defs.md#registerinstanceresulttypedef).
 
 ### register_rds_db_instance
 
@@ -1268,7 +1273,7 @@ Boto3 documentation:
 [OpsWorks.Client.register_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_rds_db_instance)
 
 Arguments mapping described in
-[RegisterRdsDbInstanceRequestTypeDef](./type_defs.md#registerrdsdbinstancerequesttypedef).
+[RegisterRdsDbInstanceRequestRequestTypeDef](./type_defs.md#registerrdsdbinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1287,7 +1292,7 @@ Boto3 documentation:
 [OpsWorks.Client.register_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.register_volume)
 
 Arguments mapping described in
-[RegisterVolumeRequestTypeDef](./type_defs.md#registervolumerequesttypedef).
+[RegisterVolumeRequestRequestTypeDef](./type_defs.md#registervolumerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1295,7 +1300,7 @@ Keyword-only arguments:
 - `Ec2VolumeId`: `str`
 
 Returns
-[RegisterVolumeResultResponseTypeDef](./type_defs.md#registervolumeresultresponsetypedef).
+[RegisterVolumeResultTypeDef](./type_defs.md#registervolumeresulttypedef).
 
 ### set_load_based_auto_scaling
 
@@ -1308,7 +1313,7 @@ Boto3 documentation:
 [OpsWorks.Client.set_load_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_load_based_auto_scaling)
 
 Arguments mapping described in
-[SetLoadBasedAutoScalingRequestTypeDef](./type_defs.md#setloadbasedautoscalingrequesttypedef).
+[SetLoadBasedAutoScalingRequestRequestTypeDef](./type_defs.md#setloadbasedautoscalingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1329,7 +1334,7 @@ Boto3 documentation:
 [OpsWorks.Client.set_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_permission)
 
 Arguments mapping described in
-[SetPermissionRequestTypeDef](./type_defs.md#setpermissionrequesttypedef).
+[SetPermissionRequestRequestTypeDef](./type_defs.md#setpermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1350,7 +1355,7 @@ Boto3 documentation:
 [OpsWorks.Client.set_time_based_auto_scaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.set_time_based_auto_scaling)
 
 Arguments mapping described in
-[SetTimeBasedAutoScalingRequestTypeDef](./type_defs.md#settimebasedautoscalingrequesttypedef).
+[SetTimeBasedAutoScalingRequestRequestTypeDef](./type_defs.md#settimebasedautoscalingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1368,7 +1373,7 @@ Boto3 documentation:
 [OpsWorks.Client.start_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.start_instance)
 
 Arguments mapping described in
-[StartInstanceRequestTypeDef](./type_defs.md#startinstancerequesttypedef).
+[StartInstanceRequestRequestTypeDef](./type_defs.md#startinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1384,7 +1389,7 @@ Boto3 documentation:
 [OpsWorks.Client.start_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.start_stack)
 
 Arguments mapping described in
-[StartStackRequestTypeDef](./type_defs.md#startstackrequesttypedef).
+[StartStackRequestRequestTypeDef](./type_defs.md#startstackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1400,7 +1405,7 @@ Boto3 documentation:
 [OpsWorks.Client.stop_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.stop_instance)
 
 Arguments mapping described in
-[StopInstanceRequestTypeDef](./type_defs.md#stopinstancerequesttypedef).
+[StopInstanceRequestRequestTypeDef](./type_defs.md#stopinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1417,7 +1422,7 @@ Boto3 documentation:
 [OpsWorks.Client.stop_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.stop_stack)
 
 Arguments mapping described in
-[StopStackRequestTypeDef](./type_defs.md#stopstackrequesttypedef).
+[StopStackRequestRequestTypeDef](./type_defs.md#stopstackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1434,7 +1439,7 @@ Boto3 documentation:
 [OpsWorks.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1451,7 +1456,7 @@ Boto3 documentation:
 [OpsWorks.Client.unassign_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.unassign_instance)
 
 Arguments mapping described in
-[UnassignInstanceRequestTypeDef](./type_defs.md#unassigninstancerequesttypedef).
+[UnassignInstanceRequestRequestTypeDef](./type_defs.md#unassigninstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1467,7 +1472,7 @@ Boto3 documentation:
 [OpsWorks.Client.unassign_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.unassign_volume)
 
 Arguments mapping described in
-[UnassignVolumeRequestTypeDef](./type_defs.md#unassignvolumerequesttypedef).
+[UnassignVolumeRequestRequestTypeDef](./type_defs.md#unassignvolumerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1483,7 +1488,7 @@ Boto3 documentation:
 [OpsWorks.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1500,7 +1505,7 @@ Boto3 documentation:
 [OpsWorks.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_app)
 
 Arguments mapping described in
-[UpdateAppRequestTypeDef](./type_defs.md#updateapprequesttypedef).
+[UpdateAppRequestRequestTypeDef](./type_defs.md#updateapprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1530,7 +1535,7 @@ Boto3 documentation:
 [OpsWorks.Client.update_elastic_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_elastic_ip)
 
 Arguments mapping described in
-[UpdateElasticIpRequestTypeDef](./type_defs.md#updateelasticiprequesttypedef).
+[UpdateElasticIpRequestRequestTypeDef](./type_defs.md#updateelasticiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1547,7 +1552,7 @@ Boto3 documentation:
 [OpsWorks.Client.update_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_instance)
 
 Arguments mapping described in
-[UpdateInstanceRequestTypeDef](./type_defs.md#updateinstancerequesttypedef).
+[UpdateInstanceRequestRequestTypeDef](./type_defs.md#updateinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1574,7 +1579,7 @@ Boto3 documentation:
 [OpsWorks.Client.update_layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_layer)
 
 Arguments mapping described in
-[UpdateLayerRequestTypeDef](./type_defs.md#updatelayerrequesttypedef).
+[UpdateLayerRequestRequestTypeDef](./type_defs.md#updatelayerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1611,7 +1616,7 @@ Boto3 documentation:
 [OpsWorks.Client.update_my_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_my_user_profile)
 
 Arguments mapping described in
-[UpdateMyUserProfileRequestTypeDef](./type_defs.md#updatemyuserprofilerequesttypedef).
+[UpdateMyUserProfileRequestRequestTypeDef](./type_defs.md#updatemyuserprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1627,7 +1632,7 @@ Boto3 documentation:
 [OpsWorks.Client.update_rds_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_rds_db_instance)
 
 Arguments mapping described in
-[UpdateRdsDbInstanceRequestTypeDef](./type_defs.md#updaterdsdbinstancerequesttypedef).
+[UpdateRdsDbInstanceRequestRequestTypeDef](./type_defs.md#updaterdsdbinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1645,7 +1650,7 @@ Boto3 documentation:
 [OpsWorks.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_stack)
 
 Arguments mapping described in
-[UpdateStackRequestTypeDef](./type_defs.md#updatestackrequesttypedef).
+[UpdateStackRequestRequestTypeDef](./type_defs.md#updatestackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1682,7 +1687,7 @@ Boto3 documentation:
 [OpsWorks.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_user_profile)
 
 Arguments mapping described in
-[UpdateUserProfileRequestTypeDef](./type_defs.md#updateuserprofilerequesttypedef).
+[UpdateUserProfileRequestRequestTypeDef](./type_defs.md#updateuserprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1701,7 +1706,7 @@ Boto3 documentation:
 [OpsWorks.Client.update_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Client.update_volume)
 
 Arguments mapping described in
-[UpdateVolumeRequestTypeDef](./type_defs.md#updatevolumerequesttypedef).
+[UpdateVolumeRequestRequestTypeDef](./type_defs.md#updatevolumerequestrequesttypedef).
 
 Keyword-only arguments:
 

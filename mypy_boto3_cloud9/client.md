@@ -11,6 +11,7 @@ type annotations stubs module
   - [Cloud9Client](#cloud9client)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_environment_ec2](#create_environment_ec2)
     - [create_environment_membership](#create_environment_membership)
@@ -70,6 +71,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+Cloud9Client exceptions.
+
+Type annotations for `boto3.client("cloud9").exceptions` method.
+
+Boto3 documentation:
+[Cloud9.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -97,7 +109,7 @@ Boto3 documentation:
 [Cloud9.Client.create_environment_ec2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_ec2)
 
 Arguments mapping described in
-[CreateEnvironmentEC2RequestTypeDef](./type_defs.md#createenvironmentec2requesttypedef).
+[CreateEnvironmentEC2RequestRequestTypeDef](./type_defs.md#createenvironmentec2requestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -113,7 +125,7 @@ Keyword-only arguments:
 - `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 
 Returns
-[CreateEnvironmentEC2ResultResponseTypeDef](./type_defs.md#createenvironmentec2resultresponsetypedef).
+[CreateEnvironmentEC2ResultTypeDef](./type_defs.md#createenvironmentec2resulttypedef).
 
 ### create_environment_membership
 
@@ -126,7 +138,7 @@ Boto3 documentation:
 [Cloud9.Client.create_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_membership)
 
 Arguments mapping described in
-[CreateEnvironmentMembershipRequestTypeDef](./type_defs.md#createenvironmentmembershiprequesttypedef).
+[CreateEnvironmentMembershipRequestRequestTypeDef](./type_defs.md#createenvironmentmembershiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,7 +148,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateEnvironmentMembershipResultResponseTypeDef](./type_defs.md#createenvironmentmembershipresultresponsetypedef).
+[CreateEnvironmentMembershipResultTypeDef](./type_defs.md#createenvironmentmembershipresulttypedef).
 
 ### delete_environment
 
@@ -148,7 +160,7 @@ Boto3 documentation:
 [Cloud9.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment)
 
 Arguments mapping described in
-[DeleteEnvironmentRequestTypeDef](./type_defs.md#deleteenvironmentrequesttypedef).
+[DeleteEnvironmentRequestRequestTypeDef](./type_defs.md#deleteenvironmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,7 +179,7 @@ Boto3 documentation:
 [Cloud9.Client.delete_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment_membership)
 
 Arguments mapping described in
-[DeleteEnvironmentMembershipRequestTypeDef](./type_defs.md#deleteenvironmentmembershiprequesttypedef).
+[DeleteEnvironmentMembershipRequestRequestTypeDef](./type_defs.md#deleteenvironmentmembershiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -188,7 +200,7 @@ Boto3 documentation:
 [Cloud9.Client.describe_environment_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_memberships)
 
 Arguments mapping described in
-[DescribeEnvironmentMembershipsRequestTypeDef](./type_defs.md#describeenvironmentmembershipsrequesttypedef).
+[DescribeEnvironmentMembershipsRequestRequestTypeDef](./type_defs.md#describeenvironmentmembershipsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,7 +211,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeEnvironmentMembershipsResultResponseTypeDef](./type_defs.md#describeenvironmentmembershipsresultresponsetypedef).
+[DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef).
 
 ### describe_environment_status
 
@@ -212,14 +224,14 @@ Boto3 documentation:
 [Cloud9.Client.describe_environment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_status)
 
 Arguments mapping described in
-[DescribeEnvironmentStatusRequestTypeDef](./type_defs.md#describeenvironmentstatusrequesttypedef).
+[DescribeEnvironmentStatusRequestRequestTypeDef](./type_defs.md#describeenvironmentstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `environmentId`: `str` *(required)*
 
 Returns
-[DescribeEnvironmentStatusResultResponseTypeDef](./type_defs.md#describeenvironmentstatusresultresponsetypedef).
+[DescribeEnvironmentStatusResultTypeDef](./type_defs.md#describeenvironmentstatusresulttypedef).
 
 ### describe_environments
 
@@ -231,14 +243,14 @@ Boto3 documentation:
 [Cloud9.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environments)
 
 Arguments mapping described in
-[DescribeEnvironmentsRequestTypeDef](./type_defs.md#describeenvironmentsrequesttypedef).
+[DescribeEnvironmentsRequestRequestTypeDef](./type_defs.md#describeenvironmentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `environmentIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeEnvironmentsResultResponseTypeDef](./type_defs.md#describeenvironmentsresultresponsetypedef).
+[DescribeEnvironmentsResultTypeDef](./type_defs.md#describeenvironmentsresulttypedef).
 
 ### generate_presigned_url
 
@@ -268,7 +280,7 @@ Boto3 documentation:
 [Cloud9.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_environments)
 
 Arguments mapping described in
-[ListEnvironmentsRequestTypeDef](./type_defs.md#listenvironmentsrequesttypedef).
+[ListEnvironmentsRequestRequestTypeDef](./type_defs.md#listenvironmentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -276,7 +288,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListEnvironmentsResultResponseTypeDef](./type_defs.md#listenvironmentsresultresponsetypedef).
+[ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef).
 
 ### list_tags_for_resource
 
@@ -288,14 +300,14 @@ Boto3 documentation:
 [Cloud9.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -307,7 +319,7 @@ Boto3 documentation:
 [Cloud9.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -326,7 +338,7 @@ Boto3 documentation:
 [Cloud9.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -345,7 +357,7 @@ Boto3 documentation:
 [Cloud9.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment)
 
 Arguments mapping described in
-[UpdateEnvironmentRequestTypeDef](./type_defs.md#updateenvironmentrequesttypedef).
+[UpdateEnvironmentRequestRequestTypeDef](./type_defs.md#updateenvironmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -367,7 +379,7 @@ Boto3 documentation:
 [Cloud9.Client.update_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment_membership)
 
 Arguments mapping described in
-[UpdateEnvironmentMembershipRequestTypeDef](./type_defs.md#updateenvironmentmembershiprequesttypedef).
+[UpdateEnvironmentMembershipRequestRequestTypeDef](./type_defs.md#updateenvironmentmembershiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -377,7 +389,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateEnvironmentMembershipResultResponseTypeDef](./type_defs.md#updateenvironmentmembershipresultresponsetypedef).
+[UpdateEnvironmentMembershipResultTypeDef](./type_defs.md#updateenvironmentmembershipresulttypedef).
 
 ### get_paginator
 

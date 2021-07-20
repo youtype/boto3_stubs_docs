@@ -9,48 +9,48 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 Translate module](#typed-dictionaries-for-boto3-translate-module)
   - [AppliedTerminologyTypeDef](#appliedterminologytypedef)
-  - [CreateParallelDataRequestTypeDef](#createparalleldatarequesttypedef)
-  - [CreateParallelDataResponseResponseTypeDef](#createparalleldataresponseresponsetypedef)
-  - [DeleteParallelDataRequestTypeDef](#deleteparalleldatarequesttypedef)
-  - [DeleteParallelDataResponseResponseTypeDef](#deleteparalleldataresponseresponsetypedef)
-  - [DeleteTerminologyRequestTypeDef](#deleteterminologyrequesttypedef)
-  - [DescribeTextTranslationJobRequestTypeDef](#describetexttranslationjobrequesttypedef)
-  - [DescribeTextTranslationJobResponseResponseTypeDef](#describetexttranslationjobresponseresponsetypedef)
+  - [CreateParallelDataRequestRequestTypeDef](#createparalleldatarequestrequesttypedef)
+  - [CreateParallelDataResponseTypeDef](#createparalleldataresponsetypedef)
+  - [DeleteParallelDataRequestRequestTypeDef](#deleteparalleldatarequestrequesttypedef)
+  - [DeleteParallelDataResponseTypeDef](#deleteparalleldataresponsetypedef)
+  - [DeleteTerminologyRequestRequestTypeDef](#deleteterminologyrequestrequesttypedef)
+  - [DescribeTextTranslationJobRequestRequestTypeDef](#describetexttranslationjobrequestrequesttypedef)
+  - [DescribeTextTranslationJobResponseTypeDef](#describetexttranslationjobresponsetypedef)
   - [EncryptionKeyTypeDef](#encryptionkeytypedef)
-  - [GetParallelDataRequestTypeDef](#getparalleldatarequesttypedef)
-  - [GetParallelDataResponseResponseTypeDef](#getparalleldataresponseresponsetypedef)
-  - [GetTerminologyRequestTypeDef](#getterminologyrequesttypedef)
-  - [GetTerminologyResponseResponseTypeDef](#getterminologyresponseresponsetypedef)
-  - [ImportTerminologyRequestTypeDef](#importterminologyrequesttypedef)
-  - [ImportTerminologyResponseResponseTypeDef](#importterminologyresponseresponsetypedef)
+  - [GetParallelDataRequestRequestTypeDef](#getparalleldatarequestrequesttypedef)
+  - [GetParallelDataResponseTypeDef](#getparalleldataresponsetypedef)
+  - [GetTerminologyRequestRequestTypeDef](#getterminologyrequestrequesttypedef)
+  - [GetTerminologyResponseTypeDef](#getterminologyresponsetypedef)
+  - [ImportTerminologyRequestRequestTypeDef](#importterminologyrequestrequesttypedef)
+  - [ImportTerminologyResponseTypeDef](#importterminologyresponsetypedef)
   - [InputDataConfigTypeDef](#inputdataconfigtypedef)
   - [JobDetailsTypeDef](#jobdetailstypedef)
-  - [ListParallelDataRequestTypeDef](#listparalleldatarequesttypedef)
-  - [ListParallelDataResponseResponseTypeDef](#listparalleldataresponseresponsetypedef)
-  - [ListTerminologiesRequestTypeDef](#listterminologiesrequesttypedef)
-  - [ListTerminologiesResponseResponseTypeDef](#listterminologiesresponseresponsetypedef)
-  - [ListTextTranslationJobsRequestTypeDef](#listtexttranslationjobsrequesttypedef)
-  - [ListTextTranslationJobsResponseResponseTypeDef](#listtexttranslationjobsresponseresponsetypedef)
+  - [ListParallelDataRequestRequestTypeDef](#listparalleldatarequestrequesttypedef)
+  - [ListParallelDataResponseTypeDef](#listparalleldataresponsetypedef)
+  - [ListTerminologiesRequestRequestTypeDef](#listterminologiesrequestrequesttypedef)
+  - [ListTerminologiesResponseTypeDef](#listterminologiesresponsetypedef)
+  - [ListTextTranslationJobsRequestRequestTypeDef](#listtexttranslationjobsrequestrequesttypedef)
+  - [ListTextTranslationJobsResponseTypeDef](#listtexttranslationjobsresponsetypedef)
   - [OutputDataConfigTypeDef](#outputdataconfigtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParallelDataConfigTypeDef](#paralleldataconfigtypedef)
   - [ParallelDataDataLocationTypeDef](#paralleldatadatalocationtypedef)
   - [ParallelDataPropertiesTypeDef](#paralleldatapropertiestypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartTextTranslationJobRequestTypeDef](#starttexttranslationjobrequesttypedef)
-  - [StartTextTranslationJobResponseResponseTypeDef](#starttexttranslationjobresponseresponsetypedef)
-  - [StopTextTranslationJobRequestTypeDef](#stoptexttranslationjobrequesttypedef)
-  - [StopTextTranslationJobResponseResponseTypeDef](#stoptexttranslationjobresponseresponsetypedef)
+  - [StartTextTranslationJobRequestRequestTypeDef](#starttexttranslationjobrequestrequesttypedef)
+  - [StartTextTranslationJobResponseTypeDef](#starttexttranslationjobresponsetypedef)
+  - [StopTextTranslationJobRequestRequestTypeDef](#stoptexttranslationjobrequestrequesttypedef)
+  - [StopTextTranslationJobResponseTypeDef](#stoptexttranslationjobresponsetypedef)
   - [TermTypeDef](#termtypedef)
   - [TerminologyDataLocationTypeDef](#terminologydatalocationtypedef)
   - [TerminologyDataTypeDef](#terminologydatatypedef)
   - [TerminologyPropertiesTypeDef](#terminologypropertiestypedef)
   - [TextTranslationJobFilterTypeDef](#texttranslationjobfiltertypedef)
   - [TextTranslationJobPropertiesTypeDef](#texttranslationjobpropertiestypedef)
-  - [TranslateTextRequestTypeDef](#translatetextrequesttypedef)
-  - [TranslateTextResponseResponseTypeDef](#translatetextresponseresponsetypedef)
-  - [UpdateParallelDataRequestTypeDef](#updateparalleldatarequesttypedef)
-  - [UpdateParallelDataResponseResponseTypeDef](#updateparalleldataresponseresponsetypedef)
+  - [TranslateTextRequestRequestTypeDef](#translatetextrequestrequesttypedef)
+  - [TranslateTextResponseTypeDef](#translatetextresponsetypedef)
+  - [UpdateParallelDataRequestRequestTypeDef](#updateparalleldatarequestrequesttypedef)
+  - [UpdateParallelDataResponseTypeDef](#updateparalleldataresponsetypedef)
 
 ## AppliedTerminologyTypeDef
 
@@ -63,10 +63,10 @@ Optional fields:
 - `Name`: `str`
 - `Terms`: `List`\[[TermTypeDef](./type_defs.md#termtypedef)\]
 
-## CreateParallelDataRequestTypeDef
+## CreateParallelDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import CreateParallelDataRequestTypeDef
+from mypy_boto3_translate.type_defs import CreateParallelDataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -81,10 +81,10 @@ Optional fields:
 - `Description`: `str`
 - `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
-## CreateParallelDataResponseResponseTypeDef
+## CreateParallelDataResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import CreateParallelDataResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import CreateParallelDataResponseTypeDef
 ```
 
 Required fields:
@@ -94,20 +94,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteParallelDataRequestTypeDef
+## DeleteParallelDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import DeleteParallelDataRequestTypeDef
+from mypy_boto3_translate.type_defs import DeleteParallelDataRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DeleteParallelDataResponseResponseTypeDef
+## DeleteParallelDataResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import DeleteParallelDataResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import DeleteParallelDataResponseTypeDef
 ```
 
 Required fields:
@@ -117,30 +117,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTerminologyRequestTypeDef
+## DeleteTerminologyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import DeleteTerminologyRequestTypeDef
+from mypy_boto3_translate.type_defs import DeleteTerminologyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeTextTranslationJobRequestTypeDef
+## DescribeTextTranslationJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import DescribeTextTranslationJobRequestTypeDef
+from mypy_boto3_translate.type_defs import DescribeTextTranslationJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobId`: `str`
 
-## DescribeTextTranslationJobResponseResponseTypeDef
+## DescribeTextTranslationJobResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import DescribeTextTranslationJobResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import DescribeTextTranslationJobResponseTypeDef
 ```
 
 Required fields:
@@ -162,20 +162,20 @@ Required fields:
   [EncryptionKeyTypeType](./literals.md#encryptionkeytypetype))
 - `Id`: `str`
 
-## GetParallelDataRequestTypeDef
+## GetParallelDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import GetParallelDataRequestTypeDef
+from mypy_boto3_translate.type_defs import GetParallelDataRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetParallelDataResponseResponseTypeDef
+## GetParallelDataResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import GetParallelDataResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import GetParallelDataResponseTypeDef
 ```
 
 Required fields:
@@ -191,10 +191,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTerminologyRequestTypeDef
+## GetTerminologyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import GetTerminologyRequestTypeDef
+from mypy_boto3_translate.type_defs import GetTerminologyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -203,10 +203,10 @@ Required fields:
 - `TerminologyDataFormat`:
   [TerminologyDataFormatType](./literals.md#terminologydataformattype)
 
-## GetTerminologyResponseResponseTypeDef
+## GetTerminologyResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import GetTerminologyResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import GetTerminologyResponseTypeDef
 ```
 
 Required fields:
@@ -218,10 +218,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ImportTerminologyRequestTypeDef
+## ImportTerminologyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import ImportTerminologyRequestTypeDef
+from mypy_boto3_translate.type_defs import ImportTerminologyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -237,10 +237,10 @@ Optional fields:
 - `Description`: `str`
 - `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
-## ImportTerminologyResponseResponseTypeDef
+## ImportTerminologyResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import ImportTerminologyResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import ImportTerminologyResponseTypeDef
 ```
 
 Required fields:
@@ -273,10 +273,10 @@ Optional fields:
 - `DocumentsWithErrorsCount`: `int`
 - `InputDocumentsCount`: `int`
 
-## ListParallelDataRequestTypeDef
+## ListParallelDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import ListParallelDataRequestTypeDef
+from mypy_boto3_translate.type_defs import ListParallelDataRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -284,10 +284,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListParallelDataResponseResponseTypeDef
+## ListParallelDataResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import ListParallelDataResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import ListParallelDataResponseTypeDef
 ```
 
 Required fields:
@@ -298,10 +298,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTerminologiesRequestTypeDef
+## ListTerminologiesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import ListTerminologiesRequestTypeDef
+from mypy_boto3_translate.type_defs import ListTerminologiesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -309,10 +309,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListTerminologiesResponseResponseTypeDef
+## ListTerminologiesResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import ListTerminologiesResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import ListTerminologiesResponseTypeDef
 ```
 
 Required fields:
@@ -323,10 +323,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTextTranslationJobsRequestTypeDef
+## ListTextTranslationJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import ListTextTranslationJobsRequestTypeDef
+from mypy_boto3_translate.type_defs import ListTextTranslationJobsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -336,10 +336,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListTextTranslationJobsResponseResponseTypeDef
+## ListTextTranslationJobsResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import ListTextTranslationJobsResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import ListTextTranslationJobsResponseTypeDef
 ```
 
 Required fields:
@@ -436,10 +436,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## StartTextTranslationJobRequestTypeDef
+## StartTextTranslationJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import StartTextTranslationJobRequestTypeDef
+from mypy_boto3_translate.type_defs import StartTextTranslationJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -459,10 +459,10 @@ Optional fields:
 - `TerminologyNames`: `List`\[`str`\]
 - `ParallelDataNames`: `List`\[`str`\]
 
-## StartTextTranslationJobResponseResponseTypeDef
+## StartTextTranslationJobResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import StartTextTranslationJobResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import StartTextTranslationJobResponseTypeDef
 ```
 
 Required fields:
@@ -472,20 +472,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopTextTranslationJobRequestTypeDef
+## StopTextTranslationJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import StopTextTranslationJobRequestTypeDef
+from mypy_boto3_translate.type_defs import StopTextTranslationJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobId`: `str`
 
-## StopTextTranslationJobResponseResponseTypeDef
+## StopTextTranslationJobResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import StopTextTranslationJobResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import StopTextTranslationJobResponseTypeDef
 ```
 
 Required fields:
@@ -586,10 +586,10 @@ Optional fields:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
 - `DataAccessRoleArn`: `str`
 
-## TranslateTextRequestTypeDef
+## TranslateTextRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import TranslateTextRequestTypeDef
+from mypy_boto3_translate.type_defs import TranslateTextRequestRequestTypeDef
 ```
 
 Required fields:
@@ -602,10 +602,10 @@ Optional fields:
 
 - `TerminologyNames`: `List`\[`str`\]
 
-## TranslateTextResponseResponseTypeDef
+## TranslateTextResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import TranslateTextResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import TranslateTextResponseTypeDef
 ```
 
 Required fields:
@@ -618,10 +618,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateParallelDataRequestTypeDef
+## UpdateParallelDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import UpdateParallelDataRequestTypeDef
+from mypy_boto3_translate.type_defs import UpdateParallelDataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -635,10 +635,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## UpdateParallelDataResponseResponseTypeDef
+## UpdateParallelDataResponseTypeDef
 
 ```python
-from mypy_boto3_translate.type_defs import UpdateParallelDataResponseResponseTypeDef
+from mypy_boto3_translate.type_defs import UpdateParallelDataResponseTypeDef
 ```
 
 Required fields:

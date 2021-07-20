@@ -11,6 +11,7 @@ type annotations stubs module
   - [GreengrassClient](#greengrassclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_role_to_group](#associate_role_to_group)
     - [associate_service_role_to_account](#associate_service_role_to_account)
     - [can_paginate](#can_paginate)
@@ -143,6 +144,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+GreengrassClient exceptions.
+
+Type annotations for `boto3.client("greengrass").exceptions` method.
+
+Boto3 documentation:
+[Greengrass.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_role_to_group
 
 Associates a role with a group.
@@ -154,7 +166,7 @@ Boto3 documentation:
 [Greengrass.Client.associate_role_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.associate_role_to_group)
 
 Arguments mapping described in
-[AssociateRoleToGroupRequestTypeDef](./type_defs.md#associateroletogrouprequesttypedef).
+[AssociateRoleToGroupRequestRequestTypeDef](./type_defs.md#associateroletogrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -162,7 +174,7 @@ Keyword-only arguments:
 - `RoleArn`: `str` *(required)*
 
 Returns
-[AssociateRoleToGroupResponseResponseTypeDef](./type_defs.md#associateroletogroupresponseresponsetypedef).
+[AssociateRoleToGroupResponseTypeDef](./type_defs.md#associateroletogroupresponsetypedef).
 
 ### associate_service_role_to_account
 
@@ -175,14 +187,14 @@ Boto3 documentation:
 [Greengrass.Client.associate_service_role_to_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.associate_service_role_to_account)
 
 Arguments mapping described in
-[AssociateServiceRoleToAccountRequestTypeDef](./type_defs.md#associateserviceroletoaccountrequesttypedef).
+[AssociateServiceRoleToAccountRequestRequestTypeDef](./type_defs.md#associateserviceroletoaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RoleArn`: `str` *(required)*
 
 Returns
-[AssociateServiceRoleToAccountResponseResponseTypeDef](./type_defs.md#associateserviceroletoaccountresponseresponsetypedef).
+[AssociateServiceRoleToAccountResponseTypeDef](./type_defs.md#associateserviceroletoaccountresponsetypedef).
 
 ### can_paginate
 
@@ -210,7 +222,7 @@ Boto3 documentation:
 [Greengrass.Client.create_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_connector_definition)
 
 Arguments mapping described in
-[CreateConnectorDefinitionRequestTypeDef](./type_defs.md#createconnectordefinitionrequesttypedef).
+[CreateConnectorDefinitionRequestRequestTypeDef](./type_defs.md#createconnectordefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -221,7 +233,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateConnectorDefinitionResponseResponseTypeDef](./type_defs.md#createconnectordefinitionresponseresponsetypedef).
+[CreateConnectorDefinitionResponseTypeDef](./type_defs.md#createconnectordefinitionresponsetypedef).
 
 ### create_connector_definition_version
 
@@ -234,7 +246,7 @@ Boto3 documentation:
 [Greengrass.Client.create_connector_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_connector_definition_version)
 
 Arguments mapping described in
-[CreateConnectorDefinitionVersionRequestTypeDef](./type_defs.md#createconnectordefinitionversionrequesttypedef).
+[CreateConnectorDefinitionVersionRequestRequestTypeDef](./type_defs.md#createconnectordefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -243,7 +255,7 @@ Keyword-only arguments:
 - `Connectors`: `List`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
 
 Returns
-[CreateConnectorDefinitionVersionResponseResponseTypeDef](./type_defs.md#createconnectordefinitionversionresponseresponsetypedef).
+[CreateConnectorDefinitionVersionResponseTypeDef](./type_defs.md#createconnectordefinitionversionresponsetypedef).
 
 ### create_core_definition
 
@@ -256,7 +268,7 @@ Boto3 documentation:
 [Greengrass.Client.create_core_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_core_definition)
 
 Arguments mapping described in
-[CreateCoreDefinitionRequestTypeDef](./type_defs.md#createcoredefinitionrequesttypedef).
+[CreateCoreDefinitionRequestRequestTypeDef](./type_defs.md#createcoredefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -267,7 +279,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateCoreDefinitionResponseResponseTypeDef](./type_defs.md#createcoredefinitionresponseresponsetypedef).
+[CreateCoreDefinitionResponseTypeDef](./type_defs.md#createcoredefinitionresponsetypedef).
 
 ### create_core_definition_version
 
@@ -280,7 +292,7 @@ Boto3 documentation:
 [Greengrass.Client.create_core_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_core_definition_version)
 
 Arguments mapping described in
-[CreateCoreDefinitionVersionRequestTypeDef](./type_defs.md#createcoredefinitionversionrequesttypedef).
+[CreateCoreDefinitionVersionRequestRequestTypeDef](./type_defs.md#createcoredefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -289,7 +301,7 @@ Keyword-only arguments:
 - `Cores`: `List`\[[CoreTypeDef](./type_defs.md#coretypedef)\]
 
 Returns
-[CreateCoreDefinitionVersionResponseResponseTypeDef](./type_defs.md#createcoredefinitionversionresponseresponsetypedef).
+[CreateCoreDefinitionVersionResponseTypeDef](./type_defs.md#createcoredefinitionversionresponsetypedef).
 
 ### create_deployment
 
@@ -301,7 +313,7 @@ Boto3 documentation:
 [Greengrass.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_deployment)
 
 Arguments mapping described in
-[CreateDeploymentRequestTypeDef](./type_defs.md#createdeploymentrequesttypedef).
+[CreateDeploymentRequestRequestTypeDef](./type_defs.md#createdeploymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -313,7 +325,7 @@ Keyword-only arguments:
 - `GroupVersionId`: `str`
 
 Returns
-[CreateDeploymentResponseResponseTypeDef](./type_defs.md#createdeploymentresponseresponsetypedef).
+[CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef).
 
 ### create_device_definition
 
@@ -326,7 +338,7 @@ Boto3 documentation:
 [Greengrass.Client.create_device_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_device_definition)
 
 Arguments mapping described in
-[CreateDeviceDefinitionRequestTypeDef](./type_defs.md#createdevicedefinitionrequesttypedef).
+[CreateDeviceDefinitionRequestRequestTypeDef](./type_defs.md#createdevicedefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,7 +349,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDeviceDefinitionResponseResponseTypeDef](./type_defs.md#createdevicedefinitionresponseresponsetypedef).
+[CreateDeviceDefinitionResponseTypeDef](./type_defs.md#createdevicedefinitionresponsetypedef).
 
 ### create_device_definition_version
 
@@ -350,7 +362,7 @@ Boto3 documentation:
 [Greengrass.Client.create_device_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_device_definition_version)
 
 Arguments mapping described in
-[CreateDeviceDefinitionVersionRequestTypeDef](./type_defs.md#createdevicedefinitionversionrequesttypedef).
+[CreateDeviceDefinitionVersionRequestRequestTypeDef](./type_defs.md#createdevicedefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -359,7 +371,7 @@ Keyword-only arguments:
 - `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
 
 Returns
-[CreateDeviceDefinitionVersionResponseResponseTypeDef](./type_defs.md#createdevicedefinitionversionresponseresponsetypedef).
+[CreateDeviceDefinitionVersionResponseTypeDef](./type_defs.md#createdevicedefinitionversionresponsetypedef).
 
 ### create_function_definition
 
@@ -373,7 +385,7 @@ Boto3 documentation:
 [Greengrass.Client.create_function_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_function_definition)
 
 Arguments mapping described in
-[CreateFunctionDefinitionRequestTypeDef](./type_defs.md#createfunctiondefinitionrequesttypedef).
+[CreateFunctionDefinitionRequestRequestTypeDef](./type_defs.md#createfunctiondefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -384,7 +396,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateFunctionDefinitionResponseResponseTypeDef](./type_defs.md#createfunctiondefinitionresponseresponsetypedef).
+[CreateFunctionDefinitionResponseTypeDef](./type_defs.md#createfunctiondefinitionresponsetypedef).
 
 ### create_function_definition_version
 
@@ -398,7 +410,7 @@ Boto3 documentation:
 [Greengrass.Client.create_function_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_function_definition_version)
 
 Arguments mapping described in
-[CreateFunctionDefinitionVersionRequestTypeDef](./type_defs.md#createfunctiondefinitionversionrequesttypedef).
+[CreateFunctionDefinitionVersionRequestRequestTypeDef](./type_defs.md#createfunctiondefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,7 +421,7 @@ Keyword-only arguments:
 - `Functions`: `List`\[[FunctionTypeDef](./type_defs.md#functiontypedef)\]
 
 Returns
-[CreateFunctionDefinitionVersionResponseResponseTypeDef](./type_defs.md#createfunctiondefinitionversionresponseresponsetypedef).
+[CreateFunctionDefinitionVersionResponseTypeDef](./type_defs.md#createfunctiondefinitionversionresponsetypedef).
 
 ### create_group
 
@@ -421,7 +433,7 @@ Boto3 documentation:
 [Greengrass.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_group)
 
 Arguments mapping described in
-[CreateGroupRequestTypeDef](./type_defs.md#creategrouprequesttypedef).
+[CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -431,7 +443,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateGroupResponseResponseTypeDef](./type_defs.md#creategroupresponseresponsetypedef).
+[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
 
 ### create_group_certificate_authority
 
@@ -444,7 +456,7 @@ Boto3 documentation:
 [Greengrass.Client.create_group_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_group_certificate_authority)
 
 Arguments mapping described in
-[CreateGroupCertificateAuthorityRequestTypeDef](./type_defs.md#creategroupcertificateauthorityrequesttypedef).
+[CreateGroupCertificateAuthorityRequestRequestTypeDef](./type_defs.md#creategroupcertificateauthorityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -452,7 +464,7 @@ Keyword-only arguments:
 - `AmznClientToken`: `str`
 
 Returns
-[CreateGroupCertificateAuthorityResponseResponseTypeDef](./type_defs.md#creategroupcertificateauthorityresponseresponsetypedef).
+[CreateGroupCertificateAuthorityResponseTypeDef](./type_defs.md#creategroupcertificateauthorityresponsetypedef).
 
 ### create_group_version
 
@@ -464,7 +476,7 @@ Boto3 documentation:
 [Greengrass.Client.create_group_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_group_version)
 
 Arguments mapping described in
-[CreateGroupVersionRequestTypeDef](./type_defs.md#creategroupversionrequesttypedef).
+[CreateGroupVersionRequestRequestTypeDef](./type_defs.md#creategroupversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -479,7 +491,7 @@ Keyword-only arguments:
 - `SubscriptionDefinitionVersionArn`: `str`
 
 Returns
-[CreateGroupVersionResponseResponseTypeDef](./type_defs.md#creategroupversionresponseresponsetypedef).
+[CreateGroupVersionResponseTypeDef](./type_defs.md#creategroupversionresponsetypedef).
 
 ### create_logger_definition
 
@@ -492,7 +504,7 @@ Boto3 documentation:
 [Greengrass.Client.create_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_logger_definition)
 
 Arguments mapping described in
-[CreateLoggerDefinitionRequestTypeDef](./type_defs.md#createloggerdefinitionrequesttypedef).
+[CreateLoggerDefinitionRequestRequestTypeDef](./type_defs.md#createloggerdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -503,7 +515,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateLoggerDefinitionResponseResponseTypeDef](./type_defs.md#createloggerdefinitionresponseresponsetypedef).
+[CreateLoggerDefinitionResponseTypeDef](./type_defs.md#createloggerdefinitionresponsetypedef).
 
 ### create_logger_definition_version
 
@@ -516,7 +528,7 @@ Boto3 documentation:
 [Greengrass.Client.create_logger_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_logger_definition_version)
 
 Arguments mapping described in
-[CreateLoggerDefinitionVersionRequestTypeDef](./type_defs.md#createloggerdefinitionversionrequesttypedef).
+[CreateLoggerDefinitionVersionRequestRequestTypeDef](./type_defs.md#createloggerdefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -525,7 +537,7 @@ Keyword-only arguments:
 - `Loggers`: `List`\[[LoggerTypeDef](./type_defs.md#loggertypedef)\]
 
 Returns
-[CreateLoggerDefinitionVersionResponseResponseTypeDef](./type_defs.md#createloggerdefinitionversionresponseresponsetypedef).
+[CreateLoggerDefinitionVersionResponseTypeDef](./type_defs.md#createloggerdefinitionversionresponsetypedef).
 
 ### create_resource_definition
 
@@ -539,7 +551,7 @@ Boto3 documentation:
 [Greengrass.Client.create_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_resource_definition)
 
 Arguments mapping described in
-[CreateResourceDefinitionRequestTypeDef](./type_defs.md#createresourcedefinitionrequesttypedef).
+[CreateResourceDefinitionRequestRequestTypeDef](./type_defs.md#createresourcedefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -550,7 +562,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateResourceDefinitionResponseResponseTypeDef](./type_defs.md#createresourcedefinitionresponseresponsetypedef).
+[CreateResourceDefinitionResponseTypeDef](./type_defs.md#createresourcedefinitionresponsetypedef).
 
 ### create_resource_definition_version
 
@@ -563,7 +575,7 @@ Boto3 documentation:
 [Greengrass.Client.create_resource_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_resource_definition_version)
 
 Arguments mapping described in
-[CreateResourceDefinitionVersionRequestTypeDef](./type_defs.md#createresourcedefinitionversionrequesttypedef).
+[CreateResourceDefinitionVersionRequestRequestTypeDef](./type_defs.md#createresourcedefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -572,7 +584,7 @@ Keyword-only arguments:
 - `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
 Returns
-[CreateResourceDefinitionVersionResponseResponseTypeDef](./type_defs.md#createresourcedefinitionversionresponseresponsetypedef).
+[CreateResourceDefinitionVersionResponseTypeDef](./type_defs.md#createresourcedefinitionversionresponsetypedef).
 
 ### create_software_update_job
 
@@ -587,7 +599,7 @@ Boto3 documentation:
 [Greengrass.Client.create_software_update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_software_update_job)
 
 Arguments mapping described in
-[CreateSoftwareUpdateJobRequestTypeDef](./type_defs.md#createsoftwareupdatejobrequesttypedef).
+[CreateSoftwareUpdateJobRequestRequestTypeDef](./type_defs.md#createsoftwareupdatejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -606,7 +618,7 @@ Keyword-only arguments:
   [UpdateAgentLogLevelType](./literals.md#updateagentlogleveltype)
 
 Returns
-[CreateSoftwareUpdateJobResponseResponseTypeDef](./type_defs.md#createsoftwareupdatejobresponseresponsetypedef).
+[CreateSoftwareUpdateJobResponseTypeDef](./type_defs.md#createsoftwareupdatejobresponsetypedef).
 
 ### create_subscription_definition
 
@@ -619,7 +631,7 @@ Boto3 documentation:
 [Greengrass.Client.create_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_subscription_definition)
 
 Arguments mapping described in
-[CreateSubscriptionDefinitionRequestTypeDef](./type_defs.md#createsubscriptiondefinitionrequesttypedef).
+[CreateSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#createsubscriptiondefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -630,7 +642,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSubscriptionDefinitionResponseResponseTypeDef](./type_defs.md#createsubscriptiondefinitionresponseresponsetypedef).
+[CreateSubscriptionDefinitionResponseTypeDef](./type_defs.md#createsubscriptiondefinitionresponsetypedef).
 
 ### create_subscription_definition_version
 
@@ -643,7 +655,7 @@ Boto3 documentation:
 [Greengrass.Client.create_subscription_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_subscription_definition_version)
 
 Arguments mapping described in
-[CreateSubscriptionDefinitionVersionRequestTypeDef](./type_defs.md#createsubscriptiondefinitionversionrequesttypedef).
+[CreateSubscriptionDefinitionVersionRequestRequestTypeDef](./type_defs.md#createsubscriptiondefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -653,7 +665,7 @@ Keyword-only arguments:
   `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
 
 Returns
-[CreateSubscriptionDefinitionVersionResponseResponseTypeDef](./type_defs.md#createsubscriptiondefinitionversionresponseresponsetypedef).
+[CreateSubscriptionDefinitionVersionResponseTypeDef](./type_defs.md#createsubscriptiondefinitionversionresponsetypedef).
 
 ### delete_connector_definition
 
@@ -666,7 +678,7 @@ Boto3 documentation:
 [Greengrass.Client.delete_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_connector_definition)
 
 Arguments mapping described in
-[DeleteConnectorDefinitionRequestTypeDef](./type_defs.md#deleteconnectordefinitionrequesttypedef).
+[DeleteConnectorDefinitionRequestRequestTypeDef](./type_defs.md#deleteconnectordefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -685,7 +697,7 @@ Boto3 documentation:
 [Greengrass.Client.delete_core_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_core_definition)
 
 Arguments mapping described in
-[DeleteCoreDefinitionRequestTypeDef](./type_defs.md#deletecoredefinitionrequesttypedef).
+[DeleteCoreDefinitionRequestRequestTypeDef](./type_defs.md#deletecoredefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -704,7 +716,7 @@ Boto3 documentation:
 [Greengrass.Client.delete_device_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_device_definition)
 
 Arguments mapping described in
-[DeleteDeviceDefinitionRequestTypeDef](./type_defs.md#deletedevicedefinitionrequesttypedef).
+[DeleteDeviceDefinitionRequestRequestTypeDef](./type_defs.md#deletedevicedefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -723,7 +735,7 @@ Boto3 documentation:
 [Greengrass.Client.delete_function_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_function_definition)
 
 Arguments mapping described in
-[DeleteFunctionDefinitionRequestTypeDef](./type_defs.md#deletefunctiondefinitionrequesttypedef).
+[DeleteFunctionDefinitionRequestRequestTypeDef](./type_defs.md#deletefunctiondefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -741,7 +753,7 @@ Boto3 documentation:
 [Greengrass.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_group)
 
 Arguments mapping described in
-[DeleteGroupRequestTypeDef](./type_defs.md#deletegrouprequesttypedef).
+[DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -760,7 +772,7 @@ Boto3 documentation:
 [Greengrass.Client.delete_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_logger_definition)
 
 Arguments mapping described in
-[DeleteLoggerDefinitionRequestTypeDef](./type_defs.md#deleteloggerdefinitionrequesttypedef).
+[DeleteLoggerDefinitionRequestRequestTypeDef](./type_defs.md#deleteloggerdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -779,7 +791,7 @@ Boto3 documentation:
 [Greengrass.Client.delete_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_resource_definition)
 
 Arguments mapping described in
-[DeleteResourceDefinitionRequestTypeDef](./type_defs.md#deleteresourcedefinitionrequesttypedef).
+[DeleteResourceDefinitionRequestRequestTypeDef](./type_defs.md#deleteresourcedefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -798,7 +810,7 @@ Boto3 documentation:
 [Greengrass.Client.delete_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_subscription_definition)
 
 Arguments mapping described in
-[DeleteSubscriptionDefinitionRequestTypeDef](./type_defs.md#deletesubscriptiondefinitionrequesttypedef).
+[DeleteSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#deletesubscriptiondefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -817,14 +829,14 @@ Boto3 documentation:
 [Greengrass.Client.disassociate_role_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.disassociate_role_from_group)
 
 Arguments mapping described in
-[DisassociateRoleFromGroupRequestTypeDef](./type_defs.md#disassociaterolefromgrouprequesttypedef).
+[DisassociateRoleFromGroupRequestRequestTypeDef](./type_defs.md#disassociaterolefromgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GroupId`: `str` *(required)*
 
 Returns
-[DisassociateRoleFromGroupResponseResponseTypeDef](./type_defs.md#disassociaterolefromgroupresponseresponsetypedef).
+[DisassociateRoleFromGroupResponseTypeDef](./type_defs.md#disassociaterolefromgroupresponsetypedef).
 
 ### disassociate_service_role_from_account
 
@@ -837,7 +849,7 @@ Boto3 documentation:
 [Greengrass.Client.disassociate_service_role_from_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.disassociate_service_role_from_account)
 
 Returns
-[DisassociateServiceRoleFromAccountResponseResponseTypeDef](./type_defs.md#disassociateservicerolefromaccountresponseresponsetypedef).
+[DisassociateServiceRoleFromAccountResponseTypeDef](./type_defs.md#disassociateservicerolefromaccountresponsetypedef).
 
 ### generate_presigned_url
 
@@ -868,14 +880,14 @@ Boto3 documentation:
 [Greengrass.Client.get_associated_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_associated_role)
 
 Arguments mapping described in
-[GetAssociatedRoleRequestTypeDef](./type_defs.md#getassociatedrolerequesttypedef).
+[GetAssociatedRoleRequestRequestTypeDef](./type_defs.md#getassociatedrolerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GroupId`: `str` *(required)*
 
 Returns
-[GetAssociatedRoleResponseResponseTypeDef](./type_defs.md#getassociatedroleresponseresponsetypedef).
+[GetAssociatedRoleResponseTypeDef](./type_defs.md#getassociatedroleresponsetypedef).
 
 ### get_bulk_deployment_status
 
@@ -888,14 +900,14 @@ Boto3 documentation:
 [Greengrass.Client.get_bulk_deployment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_bulk_deployment_status)
 
 Arguments mapping described in
-[GetBulkDeploymentStatusRequestTypeDef](./type_defs.md#getbulkdeploymentstatusrequesttypedef).
+[GetBulkDeploymentStatusRequestRequestTypeDef](./type_defs.md#getbulkdeploymentstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `BulkDeploymentId`: `str` *(required)*
 
 Returns
-[GetBulkDeploymentStatusResponseResponseTypeDef](./type_defs.md#getbulkdeploymentstatusresponseresponsetypedef).
+[GetBulkDeploymentStatusResponseTypeDef](./type_defs.md#getbulkdeploymentstatusresponsetypedef).
 
 ### get_connectivity_info
 
@@ -907,14 +919,14 @@ Boto3 documentation:
 [Greengrass.Client.get_connectivity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_connectivity_info)
 
 Arguments mapping described in
-[GetConnectivityInfoRequestTypeDef](./type_defs.md#getconnectivityinforequesttypedef).
+[GetConnectivityInfoRequestRequestTypeDef](./type_defs.md#getconnectivityinforequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ThingName`: `str` *(required)*
 
 Returns
-[GetConnectivityInfoResponseResponseTypeDef](./type_defs.md#getconnectivityinforesponseresponsetypedef).
+[GetConnectivityInfoResponseTypeDef](./type_defs.md#getconnectivityinforesponsetypedef).
 
 ### get_connector_definition
 
@@ -927,14 +939,14 @@ Boto3 documentation:
 [Greengrass.Client.get_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_connector_definition)
 
 Arguments mapping described in
-[GetConnectorDefinitionRequestTypeDef](./type_defs.md#getconnectordefinitionrequesttypedef).
+[GetConnectorDefinitionRequestRequestTypeDef](./type_defs.md#getconnectordefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConnectorDefinitionId`: `str` *(required)*
 
 Returns
-[GetConnectorDefinitionResponseResponseTypeDef](./type_defs.md#getconnectordefinitionresponseresponsetypedef).
+[GetConnectorDefinitionResponseTypeDef](./type_defs.md#getconnectordefinitionresponsetypedef).
 
 ### get_connector_definition_version
 
@@ -948,7 +960,7 @@ Boto3 documentation:
 [Greengrass.Client.get_connector_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_connector_definition_version)
 
 Arguments mapping described in
-[GetConnectorDefinitionVersionRequestTypeDef](./type_defs.md#getconnectordefinitionversionrequesttypedef).
+[GetConnectorDefinitionVersionRequestRequestTypeDef](./type_defs.md#getconnectordefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -957,7 +969,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetConnectorDefinitionVersionResponseResponseTypeDef](./type_defs.md#getconnectordefinitionversionresponseresponsetypedef).
+[GetConnectorDefinitionVersionResponseTypeDef](./type_defs.md#getconnectordefinitionversionresponsetypedef).
 
 ### get_core_definition
 
@@ -969,14 +981,14 @@ Boto3 documentation:
 [Greengrass.Client.get_core_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_core_definition)
 
 Arguments mapping described in
-[GetCoreDefinitionRequestTypeDef](./type_defs.md#getcoredefinitionrequesttypedef).
+[GetCoreDefinitionRequestRequestTypeDef](./type_defs.md#getcoredefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CoreDefinitionId`: `str` *(required)*
 
 Returns
-[GetCoreDefinitionResponseResponseTypeDef](./type_defs.md#getcoredefinitionresponseresponsetypedef).
+[GetCoreDefinitionResponseTypeDef](./type_defs.md#getcoredefinitionresponsetypedef).
 
 ### get_core_definition_version
 
@@ -989,7 +1001,7 @@ Boto3 documentation:
 [Greengrass.Client.get_core_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_core_definition_version)
 
 Arguments mapping described in
-[GetCoreDefinitionVersionRequestTypeDef](./type_defs.md#getcoredefinitionversionrequesttypedef).
+[GetCoreDefinitionVersionRequestRequestTypeDef](./type_defs.md#getcoredefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -997,7 +1009,7 @@ Keyword-only arguments:
 - `CoreDefinitionVersionId`: `str` *(required)*
 
 Returns
-[GetCoreDefinitionVersionResponseResponseTypeDef](./type_defs.md#getcoredefinitionversionresponseresponsetypedef).
+[GetCoreDefinitionVersionResponseTypeDef](./type_defs.md#getcoredefinitionversionresponsetypedef).
 
 ### get_deployment_status
 
@@ -1009,7 +1021,7 @@ Boto3 documentation:
 [Greengrass.Client.get_deployment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_deployment_status)
 
 Arguments mapping described in
-[GetDeploymentStatusRequestTypeDef](./type_defs.md#getdeploymentstatusrequesttypedef).
+[GetDeploymentStatusRequestRequestTypeDef](./type_defs.md#getdeploymentstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1017,7 +1029,7 @@ Keyword-only arguments:
 - `GroupId`: `str` *(required)*
 
 Returns
-[GetDeploymentStatusResponseResponseTypeDef](./type_defs.md#getdeploymentstatusresponseresponsetypedef).
+[GetDeploymentStatusResponseTypeDef](./type_defs.md#getdeploymentstatusresponsetypedef).
 
 ### get_device_definition
 
@@ -1029,14 +1041,14 @@ Boto3 documentation:
 [Greengrass.Client.get_device_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_device_definition)
 
 Arguments mapping described in
-[GetDeviceDefinitionRequestTypeDef](./type_defs.md#getdevicedefinitionrequesttypedef).
+[GetDeviceDefinitionRequestRequestTypeDef](./type_defs.md#getdevicedefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeviceDefinitionId`: `str` *(required)*
 
 Returns
-[GetDeviceDefinitionResponseResponseTypeDef](./type_defs.md#getdevicedefinitionresponseresponsetypedef).
+[GetDeviceDefinitionResponseTypeDef](./type_defs.md#getdevicedefinitionresponsetypedef).
 
 ### get_device_definition_version
 
@@ -1049,7 +1061,7 @@ Boto3 documentation:
 [Greengrass.Client.get_device_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_device_definition_version)
 
 Arguments mapping described in
-[GetDeviceDefinitionVersionRequestTypeDef](./type_defs.md#getdevicedefinitionversionrequesttypedef).
+[GetDeviceDefinitionVersionRequestRequestTypeDef](./type_defs.md#getdevicedefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1058,7 +1070,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetDeviceDefinitionVersionResponseResponseTypeDef](./type_defs.md#getdevicedefinitionversionresponseresponsetypedef).
+[GetDeviceDefinitionVersionResponseTypeDef](./type_defs.md#getdevicedefinitionversionresponsetypedef).
 
 ### get_function_definition
 
@@ -1072,14 +1084,14 @@ Boto3 documentation:
 [Greengrass.Client.get_function_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_function_definition)
 
 Arguments mapping described in
-[GetFunctionDefinitionRequestTypeDef](./type_defs.md#getfunctiondefinitionrequesttypedef).
+[GetFunctionDefinitionRequestRequestTypeDef](./type_defs.md#getfunctiondefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FunctionDefinitionId`: `str` *(required)*
 
 Returns
-[GetFunctionDefinitionResponseResponseTypeDef](./type_defs.md#getfunctiondefinitionresponseresponsetypedef).
+[GetFunctionDefinitionResponseTypeDef](./type_defs.md#getfunctiondefinitionresponsetypedef).
 
 ### get_function_definition_version
 
@@ -1093,7 +1105,7 @@ Boto3 documentation:
 [Greengrass.Client.get_function_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_function_definition_version)
 
 Arguments mapping described in
-[GetFunctionDefinitionVersionRequestTypeDef](./type_defs.md#getfunctiondefinitionversionrequesttypedef).
+[GetFunctionDefinitionVersionRequestRequestTypeDef](./type_defs.md#getfunctiondefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1102,7 +1114,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetFunctionDefinitionVersionResponseResponseTypeDef](./type_defs.md#getfunctiondefinitionversionresponseresponsetypedef).
+[GetFunctionDefinitionVersionResponseTypeDef](./type_defs.md#getfunctiondefinitionversionresponsetypedef).
 
 ### get_group
 
@@ -1114,14 +1126,13 @@ Boto3 documentation:
 [Greengrass.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group)
 
 Arguments mapping described in
-[GetGroupRequestTypeDef](./type_defs.md#getgrouprequesttypedef).
+[GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GroupId`: `str` *(required)*
 
-Returns
-[GetGroupResponseResponseTypeDef](./type_defs.md#getgroupresponseresponsetypedef).
+Returns [GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef).
 
 ### get_group_certificate_authority
 
@@ -1134,7 +1145,7 @@ Boto3 documentation:
 [Greengrass.Client.get_group_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group_certificate_authority)
 
 Arguments mapping described in
-[GetGroupCertificateAuthorityRequestTypeDef](./type_defs.md#getgroupcertificateauthorityrequesttypedef).
+[GetGroupCertificateAuthorityRequestRequestTypeDef](./type_defs.md#getgroupcertificateauthorityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1142,7 +1153,7 @@ Keyword-only arguments:
 - `GroupId`: `str` *(required)*
 
 Returns
-[GetGroupCertificateAuthorityResponseResponseTypeDef](./type_defs.md#getgroupcertificateauthorityresponseresponsetypedef).
+[GetGroupCertificateAuthorityResponseTypeDef](./type_defs.md#getgroupcertificateauthorityresponsetypedef).
 
 ### get_group_certificate_configuration
 
@@ -1155,14 +1166,14 @@ Boto3 documentation:
 [Greengrass.Client.get_group_certificate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group_certificate_configuration)
 
 Arguments mapping described in
-[GetGroupCertificateConfigurationRequestTypeDef](./type_defs.md#getgroupcertificateconfigurationrequesttypedef).
+[GetGroupCertificateConfigurationRequestRequestTypeDef](./type_defs.md#getgroupcertificateconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GroupId`: `str` *(required)*
 
 Returns
-[GetGroupCertificateConfigurationResponseResponseTypeDef](./type_defs.md#getgroupcertificateconfigurationresponseresponsetypedef).
+[GetGroupCertificateConfigurationResponseTypeDef](./type_defs.md#getgroupcertificateconfigurationresponsetypedef).
 
 ### get_group_version
 
@@ -1174,7 +1185,7 @@ Boto3 documentation:
 [Greengrass.Client.get_group_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group_version)
 
 Arguments mapping described in
-[GetGroupVersionRequestTypeDef](./type_defs.md#getgroupversionrequesttypedef).
+[GetGroupVersionRequestRequestTypeDef](./type_defs.md#getgroupversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1182,7 +1193,7 @@ Keyword-only arguments:
 - `GroupVersionId`: `str` *(required)*
 
 Returns
-[GetGroupVersionResponseResponseTypeDef](./type_defs.md#getgroupversionresponseresponsetypedef).
+[GetGroupVersionResponseTypeDef](./type_defs.md#getgroupversionresponsetypedef).
 
 ### get_logger_definition
 
@@ -1194,14 +1205,14 @@ Boto3 documentation:
 [Greengrass.Client.get_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_logger_definition)
 
 Arguments mapping described in
-[GetLoggerDefinitionRequestTypeDef](./type_defs.md#getloggerdefinitionrequesttypedef).
+[GetLoggerDefinitionRequestRequestTypeDef](./type_defs.md#getloggerdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `LoggerDefinitionId`: `str` *(required)*
 
 Returns
-[GetLoggerDefinitionResponseResponseTypeDef](./type_defs.md#getloggerdefinitionresponseresponsetypedef).
+[GetLoggerDefinitionResponseTypeDef](./type_defs.md#getloggerdefinitionresponsetypedef).
 
 ### get_logger_definition_version
 
@@ -1214,7 +1225,7 @@ Boto3 documentation:
 [Greengrass.Client.get_logger_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_logger_definition_version)
 
 Arguments mapping described in
-[GetLoggerDefinitionVersionRequestTypeDef](./type_defs.md#getloggerdefinitionversionrequesttypedef).
+[GetLoggerDefinitionVersionRequestRequestTypeDef](./type_defs.md#getloggerdefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1223,7 +1234,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetLoggerDefinitionVersionResponseResponseTypeDef](./type_defs.md#getloggerdefinitionversionresponseresponsetypedef).
+[GetLoggerDefinitionVersionResponseTypeDef](./type_defs.md#getloggerdefinitionversionresponsetypedef).
 
 ### get_resource_definition
 
@@ -1237,14 +1248,14 @@ Boto3 documentation:
 [Greengrass.Client.get_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_resource_definition)
 
 Arguments mapping described in
-[GetResourceDefinitionRequestTypeDef](./type_defs.md#getresourcedefinitionrequesttypedef).
+[GetResourceDefinitionRequestRequestTypeDef](./type_defs.md#getresourcedefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceDefinitionId`: `str` *(required)*
 
 Returns
-[GetResourceDefinitionResponseResponseTypeDef](./type_defs.md#getresourcedefinitionresponseresponsetypedef).
+[GetResourceDefinitionResponseTypeDef](./type_defs.md#getresourcedefinitionresponsetypedef).
 
 ### get_resource_definition_version
 
@@ -1258,7 +1269,7 @@ Boto3 documentation:
 [Greengrass.Client.get_resource_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_resource_definition_version)
 
 Arguments mapping described in
-[GetResourceDefinitionVersionRequestTypeDef](./type_defs.md#getresourcedefinitionversionrequesttypedef).
+[GetResourceDefinitionVersionRequestRequestTypeDef](./type_defs.md#getresourcedefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1266,7 +1277,7 @@ Keyword-only arguments:
 - `ResourceDefinitionVersionId`: `str` *(required)*
 
 Returns
-[GetResourceDefinitionVersionResponseResponseTypeDef](./type_defs.md#getresourcedefinitionversionresponseresponsetypedef).
+[GetResourceDefinitionVersionResponseTypeDef](./type_defs.md#getresourcedefinitionversionresponsetypedef).
 
 ### get_service_role_for_account
 
@@ -1279,7 +1290,7 @@ Boto3 documentation:
 [Greengrass.Client.get_service_role_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_service_role_for_account)
 
 Returns
-[GetServiceRoleForAccountResponseResponseTypeDef](./type_defs.md#getserviceroleforaccountresponseresponsetypedef).
+[GetServiceRoleForAccountResponseTypeDef](./type_defs.md#getserviceroleforaccountresponsetypedef).
 
 ### get_subscription_definition
 
@@ -1292,14 +1303,14 @@ Boto3 documentation:
 [Greengrass.Client.get_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_subscription_definition)
 
 Arguments mapping described in
-[GetSubscriptionDefinitionRequestTypeDef](./type_defs.md#getsubscriptiondefinitionrequesttypedef).
+[GetSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#getsubscriptiondefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SubscriptionDefinitionId`: `str` *(required)*
 
 Returns
-[GetSubscriptionDefinitionResponseResponseTypeDef](./type_defs.md#getsubscriptiondefinitionresponseresponsetypedef).
+[GetSubscriptionDefinitionResponseTypeDef](./type_defs.md#getsubscriptiondefinitionresponsetypedef).
 
 ### get_subscription_definition_version
 
@@ -1312,7 +1323,7 @@ Boto3 documentation:
 [Greengrass.Client.get_subscription_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_subscription_definition_version)
 
 Arguments mapping described in
-[GetSubscriptionDefinitionVersionRequestTypeDef](./type_defs.md#getsubscriptiondefinitionversionrequesttypedef).
+[GetSubscriptionDefinitionVersionRequestRequestTypeDef](./type_defs.md#getsubscriptiondefinitionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1321,7 +1332,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetSubscriptionDefinitionVersionResponseResponseTypeDef](./type_defs.md#getsubscriptiondefinitionversionresponseresponsetypedef).
+[GetSubscriptionDefinitionVersionResponseTypeDef](./type_defs.md#getsubscriptiondefinitionversionresponsetypedef).
 
 ### get_thing_runtime_configuration
 
@@ -1334,14 +1345,14 @@ Boto3 documentation:
 [Greengrass.Client.get_thing_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_thing_runtime_configuration)
 
 Arguments mapping described in
-[GetThingRuntimeConfigurationRequestTypeDef](./type_defs.md#getthingruntimeconfigurationrequesttypedef).
+[GetThingRuntimeConfigurationRequestRequestTypeDef](./type_defs.md#getthingruntimeconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ThingName`: `str` *(required)*
 
 Returns
-[GetThingRuntimeConfigurationResponseResponseTypeDef](./type_defs.md#getthingruntimeconfigurationresponseresponsetypedef).
+[GetThingRuntimeConfigurationResponseTypeDef](./type_defs.md#getthingruntimeconfigurationresponsetypedef).
 
 ### list_bulk_deployment_detailed_reports
 
@@ -1355,7 +1366,7 @@ Boto3 documentation:
 [Greengrass.Client.list_bulk_deployment_detailed_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_bulk_deployment_detailed_reports)
 
 Arguments mapping described in
-[ListBulkDeploymentDetailedReportsRequestTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsrequesttypedef).
+[ListBulkDeploymentDetailedReportsRequestRequestTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1364,7 +1375,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListBulkDeploymentDetailedReportsResponseResponseTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsresponseresponsetypedef).
+[ListBulkDeploymentDetailedReportsResponseTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsresponsetypedef).
 
 ### list_bulk_deployments
 
@@ -1376,7 +1387,7 @@ Boto3 documentation:
 [Greengrass.Client.list_bulk_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_bulk_deployments)
 
 Arguments mapping described in
-[ListBulkDeploymentsRequestTypeDef](./type_defs.md#listbulkdeploymentsrequesttypedef).
+[ListBulkDeploymentsRequestRequestTypeDef](./type_defs.md#listbulkdeploymentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1384,7 +1395,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListBulkDeploymentsResponseResponseTypeDef](./type_defs.md#listbulkdeploymentsresponseresponsetypedef).
+[ListBulkDeploymentsResponseTypeDef](./type_defs.md#listbulkdeploymentsresponsetypedef).
 
 ### list_connector_definition_versions
 
@@ -1398,7 +1409,7 @@ Boto3 documentation:
 [Greengrass.Client.list_connector_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_connector_definition_versions)
 
 Arguments mapping described in
-[ListConnectorDefinitionVersionsRequestTypeDef](./type_defs.md#listconnectordefinitionversionsrequesttypedef).
+[ListConnectorDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listconnectordefinitionversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1407,7 +1418,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConnectorDefinitionVersionsResponseResponseTypeDef](./type_defs.md#listconnectordefinitionversionsresponseresponsetypedef).
+[ListConnectorDefinitionVersionsResponseTypeDef](./type_defs.md#listconnectordefinitionversionsresponsetypedef).
 
 ### list_connector_definitions
 
@@ -1420,7 +1431,7 @@ Boto3 documentation:
 [Greengrass.Client.list_connector_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_connector_definitions)
 
 Arguments mapping described in
-[ListConnectorDefinitionsRequestTypeDef](./type_defs.md#listconnectordefinitionsrequesttypedef).
+[ListConnectorDefinitionsRequestRequestTypeDef](./type_defs.md#listconnectordefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1428,7 +1439,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListConnectorDefinitionsResponseResponseTypeDef](./type_defs.md#listconnectordefinitionsresponseresponsetypedef).
+[ListConnectorDefinitionsResponseTypeDef](./type_defs.md#listconnectordefinitionsresponsetypedef).
 
 ### list_core_definition_versions
 
@@ -1441,7 +1452,7 @@ Boto3 documentation:
 [Greengrass.Client.list_core_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_core_definition_versions)
 
 Arguments mapping described in
-[ListCoreDefinitionVersionsRequestTypeDef](./type_defs.md#listcoredefinitionversionsrequesttypedef).
+[ListCoreDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listcoredefinitionversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1450,7 +1461,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCoreDefinitionVersionsResponseResponseTypeDef](./type_defs.md#listcoredefinitionversionsresponseresponsetypedef).
+[ListCoreDefinitionVersionsResponseTypeDef](./type_defs.md#listcoredefinitionversionsresponsetypedef).
 
 ### list_core_definitions
 
@@ -1462,7 +1473,7 @@ Boto3 documentation:
 [Greengrass.Client.list_core_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_core_definitions)
 
 Arguments mapping described in
-[ListCoreDefinitionsRequestTypeDef](./type_defs.md#listcoredefinitionsrequesttypedef).
+[ListCoreDefinitionsRequestRequestTypeDef](./type_defs.md#listcoredefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1470,7 +1481,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCoreDefinitionsResponseResponseTypeDef](./type_defs.md#listcoredefinitionsresponseresponsetypedef).
+[ListCoreDefinitionsResponseTypeDef](./type_defs.md#listcoredefinitionsresponsetypedef).
 
 ### list_deployments
 
@@ -1482,7 +1493,7 @@ Boto3 documentation:
 [Greengrass.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_deployments)
 
 Arguments mapping described in
-[ListDeploymentsRequestTypeDef](./type_defs.md#listdeploymentsrequesttypedef).
+[ListDeploymentsRequestRequestTypeDef](./type_defs.md#listdeploymentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1491,7 +1502,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDeploymentsResponseResponseTypeDef](./type_defs.md#listdeploymentsresponseresponsetypedef).
+[ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef).
 
 ### list_device_definition_versions
 
@@ -1504,7 +1515,7 @@ Boto3 documentation:
 [Greengrass.Client.list_device_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_device_definition_versions)
 
 Arguments mapping described in
-[ListDeviceDefinitionVersionsRequestTypeDef](./type_defs.md#listdevicedefinitionversionsrequesttypedef).
+[ListDeviceDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listdevicedefinitionversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1513,7 +1524,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDeviceDefinitionVersionsResponseResponseTypeDef](./type_defs.md#listdevicedefinitionversionsresponseresponsetypedef).
+[ListDeviceDefinitionVersionsResponseTypeDef](./type_defs.md#listdevicedefinitionversionsresponsetypedef).
 
 ### list_device_definitions
 
@@ -1526,7 +1537,7 @@ Boto3 documentation:
 [Greengrass.Client.list_device_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_device_definitions)
 
 Arguments mapping described in
-[ListDeviceDefinitionsRequestTypeDef](./type_defs.md#listdevicedefinitionsrequesttypedef).
+[ListDeviceDefinitionsRequestRequestTypeDef](./type_defs.md#listdevicedefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1534,7 +1545,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDeviceDefinitionsResponseResponseTypeDef](./type_defs.md#listdevicedefinitionsresponseresponsetypedef).
+[ListDeviceDefinitionsResponseTypeDef](./type_defs.md#listdevicedefinitionsresponsetypedef).
 
 ### list_function_definition_versions
 
@@ -1547,7 +1558,7 @@ Boto3 documentation:
 [Greengrass.Client.list_function_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_function_definition_versions)
 
 Arguments mapping described in
-[ListFunctionDefinitionVersionsRequestTypeDef](./type_defs.md#listfunctiondefinitionversionsrequesttypedef).
+[ListFunctionDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listfunctiondefinitionversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1556,7 +1567,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFunctionDefinitionVersionsResponseResponseTypeDef](./type_defs.md#listfunctiondefinitionversionsresponseresponsetypedef).
+[ListFunctionDefinitionVersionsResponseTypeDef](./type_defs.md#listfunctiondefinitionversionsresponsetypedef).
 
 ### list_function_definitions
 
@@ -1569,7 +1580,7 @@ Boto3 documentation:
 [Greengrass.Client.list_function_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_function_definitions)
 
 Arguments mapping described in
-[ListFunctionDefinitionsRequestTypeDef](./type_defs.md#listfunctiondefinitionsrequesttypedef).
+[ListFunctionDefinitionsRequestRequestTypeDef](./type_defs.md#listfunctiondefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1577,7 +1588,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListFunctionDefinitionsResponseResponseTypeDef](./type_defs.md#listfunctiondefinitionsresponseresponsetypedef).
+[ListFunctionDefinitionsResponseTypeDef](./type_defs.md#listfunctiondefinitionsresponsetypedef).
 
 ### list_group_certificate_authorities
 
@@ -1590,14 +1601,14 @@ Boto3 documentation:
 [Greengrass.Client.list_group_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_group_certificate_authorities)
 
 Arguments mapping described in
-[ListGroupCertificateAuthoritiesRequestTypeDef](./type_defs.md#listgroupcertificateauthoritiesrequesttypedef).
+[ListGroupCertificateAuthoritiesRequestRequestTypeDef](./type_defs.md#listgroupcertificateauthoritiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GroupId`: `str` *(required)*
 
 Returns
-[ListGroupCertificateAuthoritiesResponseResponseTypeDef](./type_defs.md#listgroupcertificateauthoritiesresponseresponsetypedef).
+[ListGroupCertificateAuthoritiesResponseTypeDef](./type_defs.md#listgroupcertificateauthoritiesresponsetypedef).
 
 ### list_group_versions
 
@@ -1609,7 +1620,7 @@ Boto3 documentation:
 [Greengrass.Client.list_group_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_group_versions)
 
 Arguments mapping described in
-[ListGroupVersionsRequestTypeDef](./type_defs.md#listgroupversionsrequesttypedef).
+[ListGroupVersionsRequestRequestTypeDef](./type_defs.md#listgroupversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1618,7 +1629,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListGroupVersionsResponseResponseTypeDef](./type_defs.md#listgroupversionsresponseresponsetypedef).
+[ListGroupVersionsResponseTypeDef](./type_defs.md#listgroupversionsresponsetypedef).
 
 ### list_groups
 
@@ -1630,15 +1641,14 @@ Boto3 documentation:
 [Greengrass.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_groups)
 
 Arguments mapping described in
-[ListGroupsRequestTypeDef](./type_defs.md#listgroupsrequesttypedef).
+[ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
-Returns
-[ListGroupsResponseResponseTypeDef](./type_defs.md#listgroupsresponseresponsetypedef).
+Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
 ### list_logger_definition_versions
 
@@ -1651,7 +1661,7 @@ Boto3 documentation:
 [Greengrass.Client.list_logger_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_logger_definition_versions)
 
 Arguments mapping described in
-[ListLoggerDefinitionVersionsRequestTypeDef](./type_defs.md#listloggerdefinitionversionsrequesttypedef).
+[ListLoggerDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listloggerdefinitionversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1660,7 +1670,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLoggerDefinitionVersionsResponseResponseTypeDef](./type_defs.md#listloggerdefinitionversionsresponseresponsetypedef).
+[ListLoggerDefinitionVersionsResponseTypeDef](./type_defs.md#listloggerdefinitionversionsresponsetypedef).
 
 ### list_logger_definitions
 
@@ -1673,7 +1683,7 @@ Boto3 documentation:
 [Greengrass.Client.list_logger_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_logger_definitions)
 
 Arguments mapping described in
-[ListLoggerDefinitionsRequestTypeDef](./type_defs.md#listloggerdefinitionsrequesttypedef).
+[ListLoggerDefinitionsRequestRequestTypeDef](./type_defs.md#listloggerdefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1681,7 +1691,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLoggerDefinitionsResponseResponseTypeDef](./type_defs.md#listloggerdefinitionsresponseresponsetypedef).
+[ListLoggerDefinitionsResponseTypeDef](./type_defs.md#listloggerdefinitionsresponsetypedef).
 
 ### list_resource_definition_versions
 
@@ -1694,7 +1704,7 @@ Boto3 documentation:
 [Greengrass.Client.list_resource_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_resource_definition_versions)
 
 Arguments mapping described in
-[ListResourceDefinitionVersionsRequestTypeDef](./type_defs.md#listresourcedefinitionversionsrequesttypedef).
+[ListResourceDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listresourcedefinitionversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1703,7 +1713,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListResourceDefinitionVersionsResponseResponseTypeDef](./type_defs.md#listresourcedefinitionversionsresponseresponsetypedef).
+[ListResourceDefinitionVersionsResponseTypeDef](./type_defs.md#listresourcedefinitionversionsresponsetypedef).
 
 ### list_resource_definitions
 
@@ -1716,7 +1726,7 @@ Boto3 documentation:
 [Greengrass.Client.list_resource_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_resource_definitions)
 
 Arguments mapping described in
-[ListResourceDefinitionsRequestTypeDef](./type_defs.md#listresourcedefinitionsrequesttypedef).
+[ListResourceDefinitionsRequestRequestTypeDef](./type_defs.md#listresourcedefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1724,7 +1734,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListResourceDefinitionsResponseResponseTypeDef](./type_defs.md#listresourcedefinitionsresponseresponsetypedef).
+[ListResourceDefinitionsResponseTypeDef](./type_defs.md#listresourcedefinitionsresponsetypedef).
 
 ### list_subscription_definition_versions
 
@@ -1737,7 +1747,7 @@ Boto3 documentation:
 [Greengrass.Client.list_subscription_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_subscription_definition_versions)
 
 Arguments mapping described in
-[ListSubscriptionDefinitionVersionsRequestTypeDef](./type_defs.md#listsubscriptiondefinitionversionsrequesttypedef).
+[ListSubscriptionDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listsubscriptiondefinitionversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1746,7 +1756,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSubscriptionDefinitionVersionsResponseResponseTypeDef](./type_defs.md#listsubscriptiondefinitionversionsresponseresponsetypedef).
+[ListSubscriptionDefinitionVersionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionversionsresponsetypedef).
 
 ### list_subscription_definitions
 
@@ -1759,7 +1769,7 @@ Boto3 documentation:
 [Greengrass.Client.list_subscription_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_subscription_definitions)
 
 Arguments mapping described in
-[ListSubscriptionDefinitionsRequestTypeDef](./type_defs.md#listsubscriptiondefinitionsrequesttypedef).
+[ListSubscriptionDefinitionsRequestRequestTypeDef](./type_defs.md#listsubscriptiondefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1767,7 +1777,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSubscriptionDefinitionsResponseResponseTypeDef](./type_defs.md#listsubscriptiondefinitionsresponseresponsetypedef).
+[ListSubscriptionDefinitionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1780,14 +1790,14 @@ Boto3 documentation:
 [Greengrass.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### reset_deployments
 
@@ -1799,7 +1809,7 @@ Boto3 documentation:
 [Greengrass.Client.reset_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.reset_deployments)
 
 Arguments mapping described in
-[ResetDeploymentsRequestTypeDef](./type_defs.md#resetdeploymentsrequesttypedef).
+[ResetDeploymentsRequestRequestTypeDef](./type_defs.md#resetdeploymentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1808,7 +1818,7 @@ Keyword-only arguments:
 - `Force`: `bool`
 
 Returns
-[ResetDeploymentsResponseResponseTypeDef](./type_defs.md#resetdeploymentsresponseresponsetypedef).
+[ResetDeploymentsResponseTypeDef](./type_defs.md#resetdeploymentsresponsetypedef).
 
 ### start_bulk_deployment
 
@@ -1820,7 +1830,7 @@ Boto3 documentation:
 [Greengrass.Client.start_bulk_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.start_bulk_deployment)
 
 Arguments mapping described in
-[StartBulkDeploymentRequestTypeDef](./type_defs.md#startbulkdeploymentrequesttypedef).
+[StartBulkDeploymentRequestRequestTypeDef](./type_defs.md#startbulkdeploymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1830,7 +1840,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartBulkDeploymentResponseResponseTypeDef](./type_defs.md#startbulkdeploymentresponseresponsetypedef).
+[StartBulkDeploymentResponseTypeDef](./type_defs.md#startbulkdeploymentresponsetypedef).
 
 ### stop_bulk_deployment
 
@@ -1842,7 +1852,7 @@ Boto3 documentation:
 [Greengrass.Client.stop_bulk_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.stop_bulk_deployment)
 
 Arguments mapping described in
-[StopBulkDeploymentRequestTypeDef](./type_defs.md#stopbulkdeploymentrequesttypedef).
+[StopBulkDeploymentRequestRequestTypeDef](./type_defs.md#stopbulkdeploymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1860,7 +1870,7 @@ Boto3 documentation:
 [Greengrass.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1877,7 +1887,7 @@ Boto3 documentation:
 [Greengrass.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1895,7 +1905,7 @@ Boto3 documentation:
 [Greengrass.Client.update_connectivity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_connectivity_info)
 
 Arguments mapping described in
-[UpdateConnectivityInfoRequestTypeDef](./type_defs.md#updateconnectivityinforequesttypedef).
+[UpdateConnectivityInfoRequestRequestTypeDef](./type_defs.md#updateconnectivityinforequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1904,7 +1914,7 @@ Keyword-only arguments:
   `List`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
 
 Returns
-[UpdateConnectivityInfoResponseResponseTypeDef](./type_defs.md#updateconnectivityinforesponseresponsetypedef).
+[UpdateConnectivityInfoResponseTypeDef](./type_defs.md#updateconnectivityinforesponsetypedef).
 
 ### update_connector_definition
 
@@ -1917,7 +1927,7 @@ Boto3 documentation:
 [Greengrass.Client.update_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_connector_definition)
 
 Arguments mapping described in
-[UpdateConnectorDefinitionRequestTypeDef](./type_defs.md#updateconnectordefinitionrequesttypedef).
+[UpdateConnectorDefinitionRequestRequestTypeDef](./type_defs.md#updateconnectordefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1937,7 +1947,7 @@ Boto3 documentation:
 [Greengrass.Client.update_core_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_core_definition)
 
 Arguments mapping described in
-[UpdateCoreDefinitionRequestTypeDef](./type_defs.md#updatecoredefinitionrequesttypedef).
+[UpdateCoreDefinitionRequestRequestTypeDef](./type_defs.md#updatecoredefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1957,7 +1967,7 @@ Boto3 documentation:
 [Greengrass.Client.update_device_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_device_definition)
 
 Arguments mapping described in
-[UpdateDeviceDefinitionRequestTypeDef](./type_defs.md#updatedevicedefinitionrequesttypedef).
+[UpdateDeviceDefinitionRequestRequestTypeDef](./type_defs.md#updatedevicedefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1977,7 +1987,7 @@ Boto3 documentation:
 [Greengrass.Client.update_function_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_function_definition)
 
 Arguments mapping described in
-[UpdateFunctionDefinitionRequestTypeDef](./type_defs.md#updatefunctiondefinitionrequesttypedef).
+[UpdateFunctionDefinitionRequestRequestTypeDef](./type_defs.md#updatefunctiondefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1996,7 +2006,7 @@ Boto3 documentation:
 [Greengrass.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_group)
 
 Arguments mapping described in
-[UpdateGroupRequestTypeDef](./type_defs.md#updategrouprequesttypedef).
+[UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2016,7 +2026,7 @@ Boto3 documentation:
 [Greengrass.Client.update_group_certificate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_group_certificate_configuration)
 
 Arguments mapping described in
-[UpdateGroupCertificateConfigurationRequestTypeDef](./type_defs.md#updategroupcertificateconfigurationrequesttypedef).
+[UpdateGroupCertificateConfigurationRequestRequestTypeDef](./type_defs.md#updategroupcertificateconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2024,7 +2034,7 @@ Keyword-only arguments:
 - `CertificateExpiryInMilliseconds`: `str`
 
 Returns
-[UpdateGroupCertificateConfigurationResponseResponseTypeDef](./type_defs.md#updategroupcertificateconfigurationresponseresponsetypedef).
+[UpdateGroupCertificateConfigurationResponseTypeDef](./type_defs.md#updategroupcertificateconfigurationresponsetypedef).
 
 ### update_logger_definition
 
@@ -2037,7 +2047,7 @@ Boto3 documentation:
 [Greengrass.Client.update_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_logger_definition)
 
 Arguments mapping described in
-[UpdateLoggerDefinitionRequestTypeDef](./type_defs.md#updateloggerdefinitionrequesttypedef).
+[UpdateLoggerDefinitionRequestRequestTypeDef](./type_defs.md#updateloggerdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2057,7 +2067,7 @@ Boto3 documentation:
 [Greengrass.Client.update_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_resource_definition)
 
 Arguments mapping described in
-[UpdateResourceDefinitionRequestTypeDef](./type_defs.md#updateresourcedefinitionrequesttypedef).
+[UpdateResourceDefinitionRequestRequestTypeDef](./type_defs.md#updateresourcedefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2077,7 +2087,7 @@ Boto3 documentation:
 [Greengrass.Client.update_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_subscription_definition)
 
 Arguments mapping described in
-[UpdateSubscriptionDefinitionRequestTypeDef](./type_defs.md#updatesubscriptiondefinitionrequesttypedef).
+[UpdateSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#updatesubscriptiondefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2097,7 +2107,7 @@ Boto3 documentation:
 [Greengrass.Client.update_thing_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_thing_runtime_configuration)
 
 Arguments mapping described in
-[UpdateThingRuntimeConfigurationRequestTypeDef](./type_defs.md#updatethingruntimeconfigurationrequesttypedef).
+[UpdateThingRuntimeConfigurationRequestRequestTypeDef](./type_defs.md#updatethingruntimeconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 

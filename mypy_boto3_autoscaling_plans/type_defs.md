@@ -9,18 +9,18 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 AutoScalingPlans module](#typed-dictionaries-for-boto3-autoscalingplans-module)
   - [ApplicationSourceTypeDef](#applicationsourcetypedef)
-  - [CreateScalingPlanRequestTypeDef](#createscalingplanrequesttypedef)
-  - [CreateScalingPlanResponseResponseTypeDef](#createscalingplanresponseresponsetypedef)
+  - [CreateScalingPlanRequestRequestTypeDef](#createscalingplanrequestrequesttypedef)
+  - [CreateScalingPlanResponseTypeDef](#createscalingplanresponsetypedef)
   - [CustomizedLoadMetricSpecificationTypeDef](#customizedloadmetricspecificationtypedef)
   - [CustomizedScalingMetricSpecificationTypeDef](#customizedscalingmetricspecificationtypedef)
   - [DatapointTypeDef](#datapointtypedef)
-  - [DeleteScalingPlanRequestTypeDef](#deletescalingplanrequesttypedef)
-  - [DescribeScalingPlanResourcesRequestTypeDef](#describescalingplanresourcesrequesttypedef)
-  - [DescribeScalingPlanResourcesResponseResponseTypeDef](#describescalingplanresourcesresponseresponsetypedef)
-  - [DescribeScalingPlansRequestTypeDef](#describescalingplansrequesttypedef)
-  - [DescribeScalingPlansResponseResponseTypeDef](#describescalingplansresponseresponsetypedef)
-  - [GetScalingPlanResourceForecastDataRequestTypeDef](#getscalingplanresourceforecastdatarequesttypedef)
-  - [GetScalingPlanResourceForecastDataResponseResponseTypeDef](#getscalingplanresourceforecastdataresponseresponsetypedef)
+  - [DeleteScalingPlanRequestRequestTypeDef](#deletescalingplanrequestrequesttypedef)
+  - [DescribeScalingPlanResourcesRequestRequestTypeDef](#describescalingplanresourcesrequestrequesttypedef)
+  - [DescribeScalingPlanResourcesResponseTypeDef](#describescalingplanresourcesresponsetypedef)
+  - [DescribeScalingPlansRequestRequestTypeDef](#describescalingplansrequestrequesttypedef)
+  - [DescribeScalingPlansResponseTypeDef](#describescalingplansresponsetypedef)
+  - [GetScalingPlanResourceForecastDataRequestRequestTypeDef](#getscalingplanresourceforecastdatarequestrequesttypedef)
+  - [GetScalingPlanResourceForecastDataResponseTypeDef](#getscalingplanresourceforecastdataresponsetypedef)
   - [MetricDimensionTypeDef](#metricdimensiontypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PredefinedLoadMetricSpecificationTypeDef](#predefinedloadmetricspecificationtypedef)
@@ -32,7 +32,7 @@ type annotations stubs module
   - [ScalingPolicyTypeDef](#scalingpolicytypedef)
   - [TagFilterTypeDef](#tagfiltertypedef)
   - [TargetTrackingConfigurationTypeDef](#targettrackingconfigurationtypedef)
-  - [UpdateScalingPlanRequestTypeDef](#updatescalingplanrequesttypedef)
+  - [UpdateScalingPlanRequestRequestTypeDef](#updatescalingplanrequestrequesttypedef)
 
 ## ApplicationSourceTypeDef
 
@@ -45,10 +45,10 @@ Optional fields:
 - `CloudFormationStackARN`: `str`
 - `TagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 
-## CreateScalingPlanRequestTypeDef
+## CreateScalingPlanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling_plans.type_defs import CreateScalingPlanRequestTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import CreateScalingPlanRequestRequestTypeDef
 ```
 
 Required fields:
@@ -59,10 +59,10 @@ Required fields:
 - `ScalingInstructions`:
   `List`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
 
-## CreateScalingPlanResponseResponseTypeDef
+## CreateScalingPlanResponseTypeDef
 
 ```python
-from mypy_boto3_autoscaling_plans.type_defs import CreateScalingPlanResponseResponseTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import CreateScalingPlanResponseTypeDef
 ```
 
 Required fields:
@@ -118,10 +118,10 @@ Optional fields:
 - `Timestamp`: `datetime`
 - `Value`: `float`
 
-## DeleteScalingPlanRequestTypeDef
+## DeleteScalingPlanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling_plans.type_defs import DeleteScalingPlanRequestTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import DeleteScalingPlanRequestRequestTypeDef
 ```
 
 Required fields:
@@ -129,10 +129,10 @@ Required fields:
 - `ScalingPlanName`: `str`
 - `ScalingPlanVersion`: `int`
 
-## DescribeScalingPlanResourcesRequestTypeDef
+## DescribeScalingPlanResourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlanResourcesRequestTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlanResourcesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -145,10 +145,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeScalingPlanResourcesResponseResponseTypeDef
+## DescribeScalingPlanResourcesResponseTypeDef
 
 ```python
-from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlanResourcesResponseResponseTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlanResourcesResponseTypeDef
 ```
 
 Required fields:
@@ -159,10 +159,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeScalingPlansRequestTypeDef
+## DescribeScalingPlansRequestRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlansRequestTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlansRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -174,10 +174,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeScalingPlansResponseResponseTypeDef
+## DescribeScalingPlansResponseTypeDef
 
 ```python
-from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlansResponseResponseTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import DescribeScalingPlansResponseTypeDef
 ```
 
 Required fields:
@@ -188,10 +188,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetScalingPlanResourceForecastDataRequestTypeDef
+## GetScalingPlanResourceForecastDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling_plans.type_defs import GetScalingPlanResourceForecastDataRequestTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import GetScalingPlanResourceForecastDataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -208,10 +208,10 @@ Required fields:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 
-## GetScalingPlanResourceForecastDataResponseResponseTypeDef
+## GetScalingPlanResourceForecastDataResponseTypeDef
 
 ```python
-from mypy_boto3_autoscaling_plans.type_defs import GetScalingPlanResourceForecastDataResponseResponseTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import GetScalingPlanResourceForecastDataResponseTypeDef
 ```
 
 Required fields:
@@ -417,10 +417,10 @@ Optional fields:
 - `ScaleInCooldown`: `int`
 - `EstimatedInstanceWarmup`: `int`
 
-## UpdateScalingPlanRequestTypeDef
+## UpdateScalingPlanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_autoscaling_plans.type_defs import UpdateScalingPlanRequestTypeDef
+from mypy_boto3_autoscaling_plans.type_defs import UpdateScalingPlanRequestRequestTypeDef
 ```
 
 Required fields:

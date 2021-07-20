@@ -8,93 +8,93 @@ type annotations stubs module
 [mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 - [Typed dictionaries for boto3 Organizations module](#typed-dictionaries-for-boto3-organizations-module)
-  - [AcceptHandshakeRequestTypeDef](#accepthandshakerequesttypedef)
-  - [AcceptHandshakeResponseResponseTypeDef](#accepthandshakeresponseresponsetypedef)
+  - [AcceptHandshakeRequestRequestTypeDef](#accepthandshakerequestrequesttypedef)
+  - [AcceptHandshakeResponseTypeDef](#accepthandshakeresponsetypedef)
   - [AccountTypeDef](#accounttypedef)
-  - [AttachPolicyRequestTypeDef](#attachpolicyrequesttypedef)
-  - [CancelHandshakeRequestTypeDef](#cancelhandshakerequesttypedef)
-  - [CancelHandshakeResponseResponseTypeDef](#cancelhandshakeresponseresponsetypedef)
+  - [AttachPolicyRequestRequestTypeDef](#attachpolicyrequestrequesttypedef)
+  - [CancelHandshakeRequestRequestTypeDef](#cancelhandshakerequestrequesttypedef)
+  - [CancelHandshakeResponseTypeDef](#cancelhandshakeresponsetypedef)
   - [ChildTypeDef](#childtypedef)
-  - [CreateAccountRequestTypeDef](#createaccountrequesttypedef)
-  - [CreateAccountResponseResponseTypeDef](#createaccountresponseresponsetypedef)
+  - [CreateAccountRequestRequestTypeDef](#createaccountrequestrequesttypedef)
+  - [CreateAccountResponseTypeDef](#createaccountresponsetypedef)
   - [CreateAccountStatusTypeDef](#createaccountstatustypedef)
-  - [CreateGovCloudAccountRequestTypeDef](#creategovcloudaccountrequesttypedef)
-  - [CreateGovCloudAccountResponseResponseTypeDef](#creategovcloudaccountresponseresponsetypedef)
-  - [CreateOrganizationRequestTypeDef](#createorganizationrequesttypedef)
-  - [CreateOrganizationResponseResponseTypeDef](#createorganizationresponseresponsetypedef)
-  - [CreateOrganizationalUnitRequestTypeDef](#createorganizationalunitrequesttypedef)
-  - [CreateOrganizationalUnitResponseResponseTypeDef](#createorganizationalunitresponseresponsetypedef)
-  - [CreatePolicyRequestTypeDef](#createpolicyrequesttypedef)
-  - [CreatePolicyResponseResponseTypeDef](#createpolicyresponseresponsetypedef)
-  - [DeclineHandshakeRequestTypeDef](#declinehandshakerequesttypedef)
-  - [DeclineHandshakeResponseResponseTypeDef](#declinehandshakeresponseresponsetypedef)
+  - [CreateGovCloudAccountRequestRequestTypeDef](#creategovcloudaccountrequestrequesttypedef)
+  - [CreateGovCloudAccountResponseTypeDef](#creategovcloudaccountresponsetypedef)
+  - [CreateOrganizationRequestRequestTypeDef](#createorganizationrequestrequesttypedef)
+  - [CreateOrganizationResponseTypeDef](#createorganizationresponsetypedef)
+  - [CreateOrganizationalUnitRequestRequestTypeDef](#createorganizationalunitrequestrequesttypedef)
+  - [CreateOrganizationalUnitResponseTypeDef](#createorganizationalunitresponsetypedef)
+  - [CreatePolicyRequestRequestTypeDef](#createpolicyrequestrequesttypedef)
+  - [CreatePolicyResponseTypeDef](#createpolicyresponsetypedef)
+  - [DeclineHandshakeRequestRequestTypeDef](#declinehandshakerequestrequesttypedef)
+  - [DeclineHandshakeResponseTypeDef](#declinehandshakeresponsetypedef)
   - [DelegatedAdministratorTypeDef](#delegatedadministratortypedef)
   - [DelegatedServiceTypeDef](#delegatedservicetypedef)
-  - [DeleteOrganizationalUnitRequestTypeDef](#deleteorganizationalunitrequesttypedef)
-  - [DeletePolicyRequestTypeDef](#deletepolicyrequesttypedef)
-  - [DeregisterDelegatedAdministratorRequestTypeDef](#deregisterdelegatedadministratorrequesttypedef)
-  - [DescribeAccountRequestTypeDef](#describeaccountrequesttypedef)
-  - [DescribeAccountResponseResponseTypeDef](#describeaccountresponseresponsetypedef)
-  - [DescribeCreateAccountStatusRequestTypeDef](#describecreateaccountstatusrequesttypedef)
-  - [DescribeCreateAccountStatusResponseResponseTypeDef](#describecreateaccountstatusresponseresponsetypedef)
-  - [DescribeEffectivePolicyRequestTypeDef](#describeeffectivepolicyrequesttypedef)
-  - [DescribeEffectivePolicyResponseResponseTypeDef](#describeeffectivepolicyresponseresponsetypedef)
-  - [DescribeHandshakeRequestTypeDef](#describehandshakerequesttypedef)
-  - [DescribeHandshakeResponseResponseTypeDef](#describehandshakeresponseresponsetypedef)
-  - [DescribeOrganizationResponseResponseTypeDef](#describeorganizationresponseresponsetypedef)
-  - [DescribeOrganizationalUnitRequestTypeDef](#describeorganizationalunitrequesttypedef)
-  - [DescribeOrganizationalUnitResponseResponseTypeDef](#describeorganizationalunitresponseresponsetypedef)
-  - [DescribePolicyRequestTypeDef](#describepolicyrequesttypedef)
-  - [DescribePolicyResponseResponseTypeDef](#describepolicyresponseresponsetypedef)
-  - [DetachPolicyRequestTypeDef](#detachpolicyrequesttypedef)
-  - [DisableAWSServiceAccessRequestTypeDef](#disableawsserviceaccessrequesttypedef)
-  - [DisablePolicyTypeRequestTypeDef](#disablepolicytyperequesttypedef)
-  - [DisablePolicyTypeResponseResponseTypeDef](#disablepolicytyperesponseresponsetypedef)
+  - [DeleteOrganizationalUnitRequestRequestTypeDef](#deleteorganizationalunitrequestrequesttypedef)
+  - [DeletePolicyRequestRequestTypeDef](#deletepolicyrequestrequesttypedef)
+  - [DeregisterDelegatedAdministratorRequestRequestTypeDef](#deregisterdelegatedadministratorrequestrequesttypedef)
+  - [DescribeAccountRequestRequestTypeDef](#describeaccountrequestrequesttypedef)
+  - [DescribeAccountResponseTypeDef](#describeaccountresponsetypedef)
+  - [DescribeCreateAccountStatusRequestRequestTypeDef](#describecreateaccountstatusrequestrequesttypedef)
+  - [DescribeCreateAccountStatusResponseTypeDef](#describecreateaccountstatusresponsetypedef)
+  - [DescribeEffectivePolicyRequestRequestTypeDef](#describeeffectivepolicyrequestrequesttypedef)
+  - [DescribeEffectivePolicyResponseTypeDef](#describeeffectivepolicyresponsetypedef)
+  - [DescribeHandshakeRequestRequestTypeDef](#describehandshakerequestrequesttypedef)
+  - [DescribeHandshakeResponseTypeDef](#describehandshakeresponsetypedef)
+  - [DescribeOrganizationResponseTypeDef](#describeorganizationresponsetypedef)
+  - [DescribeOrganizationalUnitRequestRequestTypeDef](#describeorganizationalunitrequestrequesttypedef)
+  - [DescribeOrganizationalUnitResponseTypeDef](#describeorganizationalunitresponsetypedef)
+  - [DescribePolicyRequestRequestTypeDef](#describepolicyrequestrequesttypedef)
+  - [DescribePolicyResponseTypeDef](#describepolicyresponsetypedef)
+  - [DetachPolicyRequestRequestTypeDef](#detachpolicyrequestrequesttypedef)
+  - [DisableAWSServiceAccessRequestRequestTypeDef](#disableawsserviceaccessrequestrequesttypedef)
+  - [DisablePolicyTypeRequestRequestTypeDef](#disablepolicytyperequestrequesttypedef)
+  - [DisablePolicyTypeResponseTypeDef](#disablepolicytyperesponsetypedef)
   - [EffectivePolicyTypeDef](#effectivepolicytypedef)
-  - [EnableAWSServiceAccessRequestTypeDef](#enableawsserviceaccessrequesttypedef)
-  - [EnableAllFeaturesResponseResponseTypeDef](#enableallfeaturesresponseresponsetypedef)
-  - [EnablePolicyTypeRequestTypeDef](#enablepolicytyperequesttypedef)
-  - [EnablePolicyTypeResponseResponseTypeDef](#enablepolicytyperesponseresponsetypedef)
+  - [EnableAWSServiceAccessRequestRequestTypeDef](#enableawsserviceaccessrequestrequesttypedef)
+  - [EnableAllFeaturesResponseTypeDef](#enableallfeaturesresponsetypedef)
+  - [EnablePolicyTypeRequestRequestTypeDef](#enablepolicytyperequestrequesttypedef)
+  - [EnablePolicyTypeResponseTypeDef](#enablepolicytyperesponsetypedef)
   - [EnabledServicePrincipalTypeDef](#enabledserviceprincipaltypedef)
   - [HandshakeFilterTypeDef](#handshakefiltertypedef)
   - [HandshakePartyTypeDef](#handshakepartytypedef)
   - [HandshakeResourceTypeDef](#handshakeresourcetypedef)
   - [HandshakeTypeDef](#handshaketypedef)
-  - [InviteAccountToOrganizationRequestTypeDef](#inviteaccounttoorganizationrequesttypedef)
-  - [InviteAccountToOrganizationResponseResponseTypeDef](#inviteaccounttoorganizationresponseresponsetypedef)
-  - [ListAWSServiceAccessForOrganizationRequestTypeDef](#listawsserviceaccessfororganizationrequesttypedef)
-  - [ListAWSServiceAccessForOrganizationResponseResponseTypeDef](#listawsserviceaccessfororganizationresponseresponsetypedef)
-  - [ListAccountsForParentRequestTypeDef](#listaccountsforparentrequesttypedef)
-  - [ListAccountsForParentResponseResponseTypeDef](#listaccountsforparentresponseresponsetypedef)
-  - [ListAccountsRequestTypeDef](#listaccountsrequesttypedef)
-  - [ListAccountsResponseResponseTypeDef](#listaccountsresponseresponsetypedef)
-  - [ListChildrenRequestTypeDef](#listchildrenrequesttypedef)
-  - [ListChildrenResponseResponseTypeDef](#listchildrenresponseresponsetypedef)
-  - [ListCreateAccountStatusRequestTypeDef](#listcreateaccountstatusrequesttypedef)
-  - [ListCreateAccountStatusResponseResponseTypeDef](#listcreateaccountstatusresponseresponsetypedef)
-  - [ListDelegatedAdministratorsRequestTypeDef](#listdelegatedadministratorsrequesttypedef)
-  - [ListDelegatedAdministratorsResponseResponseTypeDef](#listdelegatedadministratorsresponseresponsetypedef)
-  - [ListDelegatedServicesForAccountRequestTypeDef](#listdelegatedservicesforaccountrequesttypedef)
-  - [ListDelegatedServicesForAccountResponseResponseTypeDef](#listdelegatedservicesforaccountresponseresponsetypedef)
-  - [ListHandshakesForAccountRequestTypeDef](#listhandshakesforaccountrequesttypedef)
-  - [ListHandshakesForAccountResponseResponseTypeDef](#listhandshakesforaccountresponseresponsetypedef)
-  - [ListHandshakesForOrganizationRequestTypeDef](#listhandshakesfororganizationrequesttypedef)
-  - [ListHandshakesForOrganizationResponseResponseTypeDef](#listhandshakesfororganizationresponseresponsetypedef)
-  - [ListOrganizationalUnitsForParentRequestTypeDef](#listorganizationalunitsforparentrequesttypedef)
-  - [ListOrganizationalUnitsForParentResponseResponseTypeDef](#listorganizationalunitsforparentresponseresponsetypedef)
-  - [ListParentsRequestTypeDef](#listparentsrequesttypedef)
-  - [ListParentsResponseResponseTypeDef](#listparentsresponseresponsetypedef)
-  - [ListPoliciesForTargetRequestTypeDef](#listpoliciesfortargetrequesttypedef)
-  - [ListPoliciesForTargetResponseResponseTypeDef](#listpoliciesfortargetresponseresponsetypedef)
-  - [ListPoliciesRequestTypeDef](#listpoliciesrequesttypedef)
-  - [ListPoliciesResponseResponseTypeDef](#listpoliciesresponseresponsetypedef)
-  - [ListRootsRequestTypeDef](#listrootsrequesttypedef)
-  - [ListRootsResponseResponseTypeDef](#listrootsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ListTargetsForPolicyRequestTypeDef](#listtargetsforpolicyrequesttypedef)
-  - [ListTargetsForPolicyResponseResponseTypeDef](#listtargetsforpolicyresponseresponsetypedef)
-  - [MoveAccountRequestTypeDef](#moveaccountrequesttypedef)
+  - [InviteAccountToOrganizationRequestRequestTypeDef](#inviteaccounttoorganizationrequestrequesttypedef)
+  - [InviteAccountToOrganizationResponseTypeDef](#inviteaccounttoorganizationresponsetypedef)
+  - [ListAWSServiceAccessForOrganizationRequestRequestTypeDef](#listawsserviceaccessfororganizationrequestrequesttypedef)
+  - [ListAWSServiceAccessForOrganizationResponseTypeDef](#listawsserviceaccessfororganizationresponsetypedef)
+  - [ListAccountsForParentRequestRequestTypeDef](#listaccountsforparentrequestrequesttypedef)
+  - [ListAccountsForParentResponseTypeDef](#listaccountsforparentresponsetypedef)
+  - [ListAccountsRequestRequestTypeDef](#listaccountsrequestrequesttypedef)
+  - [ListAccountsResponseTypeDef](#listaccountsresponsetypedef)
+  - [ListChildrenRequestRequestTypeDef](#listchildrenrequestrequesttypedef)
+  - [ListChildrenResponseTypeDef](#listchildrenresponsetypedef)
+  - [ListCreateAccountStatusRequestRequestTypeDef](#listcreateaccountstatusrequestrequesttypedef)
+  - [ListCreateAccountStatusResponseTypeDef](#listcreateaccountstatusresponsetypedef)
+  - [ListDelegatedAdministratorsRequestRequestTypeDef](#listdelegatedadministratorsrequestrequesttypedef)
+  - [ListDelegatedAdministratorsResponseTypeDef](#listdelegatedadministratorsresponsetypedef)
+  - [ListDelegatedServicesForAccountRequestRequestTypeDef](#listdelegatedservicesforaccountrequestrequesttypedef)
+  - [ListDelegatedServicesForAccountResponseTypeDef](#listdelegatedservicesforaccountresponsetypedef)
+  - [ListHandshakesForAccountRequestRequestTypeDef](#listhandshakesforaccountrequestrequesttypedef)
+  - [ListHandshakesForAccountResponseTypeDef](#listhandshakesforaccountresponsetypedef)
+  - [ListHandshakesForOrganizationRequestRequestTypeDef](#listhandshakesfororganizationrequestrequesttypedef)
+  - [ListHandshakesForOrganizationResponseTypeDef](#listhandshakesfororganizationresponsetypedef)
+  - [ListOrganizationalUnitsForParentRequestRequestTypeDef](#listorganizationalunitsforparentrequestrequesttypedef)
+  - [ListOrganizationalUnitsForParentResponseTypeDef](#listorganizationalunitsforparentresponsetypedef)
+  - [ListParentsRequestRequestTypeDef](#listparentsrequestrequesttypedef)
+  - [ListParentsResponseTypeDef](#listparentsresponsetypedef)
+  - [ListPoliciesForTargetRequestRequestTypeDef](#listpoliciesfortargetrequestrequesttypedef)
+  - [ListPoliciesForTargetResponseTypeDef](#listpoliciesfortargetresponsetypedef)
+  - [ListPoliciesRequestRequestTypeDef](#listpoliciesrequestrequesttypedef)
+  - [ListPoliciesResponseTypeDef](#listpoliciesresponsetypedef)
+  - [ListRootsRequestRequestTypeDef](#listrootsrequestrequesttypedef)
+  - [ListRootsResponseTypeDef](#listrootsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTargetsForPolicyRequestRequestTypeDef](#listtargetsforpolicyrequestrequesttypedef)
+  - [ListTargetsForPolicyResponseTypeDef](#listtargetsforpolicyresponsetypedef)
+  - [MoveAccountRequestRequestTypeDef](#moveaccountrequestrequesttypedef)
   - [OrganizationTypeDef](#organizationtypedef)
   - [OrganizationalUnitTypeDef](#organizationalunittypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
@@ -103,32 +103,32 @@ type annotations stubs module
   - [PolicyTargetSummaryTypeDef](#policytargetsummarytypedef)
   - [PolicyTypeDef](#policytypedef)
   - [PolicyTypeSummaryTypeDef](#policytypesummarytypedef)
-  - [RegisterDelegatedAdministratorRequestTypeDef](#registerdelegatedadministratorrequesttypedef)
-  - [RemoveAccountFromOrganizationRequestTypeDef](#removeaccountfromorganizationrequesttypedef)
+  - [RegisterDelegatedAdministratorRequestRequestTypeDef](#registerdelegatedadministratorrequestrequesttypedef)
+  - [RemoveAccountFromOrganizationRequestRequestTypeDef](#removeaccountfromorganizationrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RootTypeDef](#roottypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateOrganizationalUnitRequestTypeDef](#updateorganizationalunitrequesttypedef)
-  - [UpdateOrganizationalUnitResponseResponseTypeDef](#updateorganizationalunitresponseresponsetypedef)
-  - [UpdatePolicyRequestTypeDef](#updatepolicyrequesttypedef)
-  - [UpdatePolicyResponseResponseTypeDef](#updatepolicyresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateOrganizationalUnitRequestRequestTypeDef](#updateorganizationalunitrequestrequesttypedef)
+  - [UpdateOrganizationalUnitResponseTypeDef](#updateorganizationalunitresponsetypedef)
+  - [UpdatePolicyRequestRequestTypeDef](#updatepolicyrequestrequesttypedef)
+  - [UpdatePolicyResponseTypeDef](#updatepolicyresponsetypedef)
 
-## AcceptHandshakeRequestTypeDef
+## AcceptHandshakeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import AcceptHandshakeRequestTypeDef
+from mypy_boto3_organizations.type_defs import AcceptHandshakeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `HandshakeId`: `str`
 
-## AcceptHandshakeResponseResponseTypeDef
+## AcceptHandshakeResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import AcceptHandshakeResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import AcceptHandshakeResponseTypeDef
 ```
 
 Required fields:
@@ -154,10 +154,10 @@ Optional fields:
   [AccountJoinedMethodType](./literals.md#accountjoinedmethodtype)
 - `JoinedTimestamp`: `datetime`
 
-## AttachPolicyRequestTypeDef
+## AttachPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import AttachPolicyRequestTypeDef
+from mypy_boto3_organizations.type_defs import AttachPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -165,20 +165,20 @@ Required fields:
 - `PolicyId`: `str`
 - `TargetId`: `str`
 
-## CancelHandshakeRequestTypeDef
+## CancelHandshakeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import CancelHandshakeRequestTypeDef
+from mypy_boto3_organizations.type_defs import CancelHandshakeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `HandshakeId`: `str`
 
-## CancelHandshakeResponseResponseTypeDef
+## CancelHandshakeResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import CancelHandshakeResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import CancelHandshakeResponseTypeDef
 ```
 
 Required fields:
@@ -198,10 +198,10 @@ Optional fields:
 - `Id`: `str`
 - `Type`: [ChildTypeType](./literals.md#childtypetype)
 
-## CreateAccountRequestTypeDef
+## CreateAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import CreateAccountRequestTypeDef
+from mypy_boto3_organizations.type_defs import CreateAccountRequestRequestTypeDef
 ```
 
 Required fields:
@@ -216,10 +216,10 @@ Optional fields:
   [IAMUserAccessToBillingType](./literals.md#iamuseraccesstobillingtype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateAccountResponseResponseTypeDef
+## CreateAccountResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import CreateAccountResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import CreateAccountResponseTypeDef
 ```
 
 Required fields:
@@ -247,10 +247,10 @@ Optional fields:
 - `FailureReason`:
   [CreateAccountFailureReasonType](./literals.md#createaccountfailurereasontype)
 
-## CreateGovCloudAccountRequestTypeDef
+## CreateGovCloudAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import CreateGovCloudAccountRequestTypeDef
+from mypy_boto3_organizations.type_defs import CreateGovCloudAccountRequestRequestTypeDef
 ```
 
 Required fields:
@@ -265,10 +265,10 @@ Optional fields:
   [IAMUserAccessToBillingType](./literals.md#iamuseraccesstobillingtype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateGovCloudAccountResponseResponseTypeDef
+## CreateGovCloudAccountResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import CreateGovCloudAccountResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import CreateGovCloudAccountResponseTypeDef
 ```
 
 Required fields:
@@ -278,10 +278,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateOrganizationRequestTypeDef
+## CreateOrganizationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import CreateOrganizationRequestTypeDef
+from mypy_boto3_organizations.type_defs import CreateOrganizationRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -289,10 +289,10 @@ Optional fields:
 - `FeatureSet`:
   [OrganizationFeatureSetType](./literals.md#organizationfeaturesettype)
 
-## CreateOrganizationResponseResponseTypeDef
+## CreateOrganizationResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import CreateOrganizationResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import CreateOrganizationResponseTypeDef
 ```
 
 Required fields:
@@ -301,10 +301,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateOrganizationalUnitRequestTypeDef
+## CreateOrganizationalUnitRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import CreateOrganizationalUnitRequestTypeDef
+from mypy_boto3_organizations.type_defs import CreateOrganizationalUnitRequestRequestTypeDef
 ```
 
 Required fields:
@@ -316,10 +316,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateOrganizationalUnitResponseResponseTypeDef
+## CreateOrganizationalUnitResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import CreateOrganizationalUnitResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import CreateOrganizationalUnitResponseTypeDef
 ```
 
 Required fields:
@@ -329,10 +329,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePolicyRequestTypeDef
+## CreatePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import CreatePolicyRequestTypeDef
+from mypy_boto3_organizations.type_defs import CreatePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -346,10 +346,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreatePolicyResponseResponseTypeDef
+## CreatePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import CreatePolicyResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import CreatePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -358,20 +358,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeclineHandshakeRequestTypeDef
+## DeclineHandshakeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DeclineHandshakeRequestTypeDef
+from mypy_boto3_organizations.type_defs import DeclineHandshakeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `HandshakeId`: `str`
 
-## DeclineHandshakeResponseResponseTypeDef
+## DeclineHandshakeResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DeclineHandshakeResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import DeclineHandshakeResponseTypeDef
 ```
 
 Required fields:
@@ -409,30 +409,30 @@ Optional fields:
 - `ServicePrincipal`: `str`
 - `DelegationEnabledDate`: `datetime`
 
-## DeleteOrganizationalUnitRequestTypeDef
+## DeleteOrganizationalUnitRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DeleteOrganizationalUnitRequestTypeDef
+from mypy_boto3_organizations.type_defs import DeleteOrganizationalUnitRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `OrganizationalUnitId`: `str`
 
-## DeletePolicyRequestTypeDef
+## DeletePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DeletePolicyRequestTypeDef
+from mypy_boto3_organizations.type_defs import DeletePolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `PolicyId`: `str`
 
-## DeregisterDelegatedAdministratorRequestTypeDef
+## DeregisterDelegatedAdministratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DeregisterDelegatedAdministratorRequestTypeDef
+from mypy_boto3_organizations.type_defs import DeregisterDelegatedAdministratorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -440,20 +440,20 @@ Required fields:
 - `AccountId`: `str`
 - `ServicePrincipal`: `str`
 
-## DescribeAccountRequestTypeDef
+## DescribeAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribeAccountRequestTypeDef
+from mypy_boto3_organizations.type_defs import DescribeAccountRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AccountId`: `str`
 
-## DescribeAccountResponseResponseTypeDef
+## DescribeAccountResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribeAccountResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import DescribeAccountResponseTypeDef
 ```
 
 Required fields:
@@ -462,20 +462,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCreateAccountStatusRequestTypeDef
+## DescribeCreateAccountStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribeCreateAccountStatusRequestTypeDef
+from mypy_boto3_organizations.type_defs import DescribeCreateAccountStatusRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `CreateAccountRequestId`: `str`
 
-## DescribeCreateAccountStatusResponseResponseTypeDef
+## DescribeCreateAccountStatusResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribeCreateAccountStatusResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import DescribeCreateAccountStatusResponseTypeDef
 ```
 
 Required fields:
@@ -485,10 +485,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEffectivePolicyRequestTypeDef
+## DescribeEffectivePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribeEffectivePolicyRequestTypeDef
+from mypy_boto3_organizations.type_defs import DescribeEffectivePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -500,10 +500,10 @@ Optional fields:
 
 - `TargetId`: `str`
 
-## DescribeEffectivePolicyResponseResponseTypeDef
+## DescribeEffectivePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribeEffectivePolicyResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import DescribeEffectivePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -513,20 +513,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeHandshakeRequestTypeDef
+## DescribeHandshakeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribeHandshakeRequestTypeDef
+from mypy_boto3_organizations.type_defs import DescribeHandshakeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `HandshakeId`: `str`
 
-## DescribeHandshakeResponseResponseTypeDef
+## DescribeHandshakeResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribeHandshakeResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import DescribeHandshakeResponseTypeDef
 ```
 
 Required fields:
@@ -535,10 +535,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOrganizationResponseResponseTypeDef
+## DescribeOrganizationResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribeOrganizationResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import DescribeOrganizationResponseTypeDef
 ```
 
 Required fields:
@@ -547,20 +547,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeOrganizationalUnitRequestTypeDef
+## DescribeOrganizationalUnitRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribeOrganizationalUnitRequestTypeDef
+from mypy_boto3_organizations.type_defs import DescribeOrganizationalUnitRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `OrganizationalUnitId`: `str`
 
-## DescribeOrganizationalUnitResponseResponseTypeDef
+## DescribeOrganizationalUnitResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribeOrganizationalUnitResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import DescribeOrganizationalUnitResponseTypeDef
 ```
 
 Required fields:
@@ -570,20 +570,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePolicyRequestTypeDef
+## DescribePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribePolicyRequestTypeDef
+from mypy_boto3_organizations.type_defs import DescribePolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `PolicyId`: `str`
 
-## DescribePolicyResponseResponseTypeDef
+## DescribePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DescribePolicyResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import DescribePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -592,10 +592,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetachPolicyRequestTypeDef
+## DetachPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DetachPolicyRequestTypeDef
+from mypy_boto3_organizations.type_defs import DetachPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -603,20 +603,20 @@ Required fields:
 - `PolicyId`: `str`
 - `TargetId`: `str`
 
-## DisableAWSServiceAccessRequestTypeDef
+## DisableAWSServiceAccessRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DisableAWSServiceAccessRequestTypeDef
+from mypy_boto3_organizations.type_defs import DisableAWSServiceAccessRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ServicePrincipal`: `str`
 
-## DisablePolicyTypeRequestTypeDef
+## DisablePolicyTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DisablePolicyTypeRequestTypeDef
+from mypy_boto3_organizations.type_defs import DisablePolicyTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -624,10 +624,10 @@ Required fields:
 - `RootId`: `str`
 - `PolicyType`: [PolicyTypeType](./literals.md#policytypetype)
 
-## DisablePolicyTypeResponseResponseTypeDef
+## DisablePolicyTypeResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import DisablePolicyTypeResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import DisablePolicyTypeResponseTypeDef
 ```
 
 Required fields:
@@ -650,20 +650,20 @@ Optional fields:
 - `PolicyType`:
   [EffectivePolicyTypeType](./literals.md#effectivepolicytypetype)
 
-## EnableAWSServiceAccessRequestTypeDef
+## EnableAWSServiceAccessRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import EnableAWSServiceAccessRequestTypeDef
+from mypy_boto3_organizations.type_defs import EnableAWSServiceAccessRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ServicePrincipal`: `str`
 
-## EnableAllFeaturesResponseResponseTypeDef
+## EnableAllFeaturesResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import EnableAllFeaturesResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import EnableAllFeaturesResponseTypeDef
 ```
 
 Required fields:
@@ -672,10 +672,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EnablePolicyTypeRequestTypeDef
+## EnablePolicyTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import EnablePolicyTypeRequestTypeDef
+from mypy_boto3_organizations.type_defs import EnablePolicyTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -683,10 +683,10 @@ Required fields:
 - `RootId`: `str`
 - `PolicyType`: [PolicyTypeType](./literals.md#policytypetype)
 
-## EnablePolicyTypeResponseResponseTypeDef
+## EnablePolicyTypeResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import EnablePolicyTypeResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import EnablePolicyTypeResponseTypeDef
 ```
 
 Required fields:
@@ -760,10 +760,10 @@ Optional fields:
 - `Resources`:
   `List`\[[HandshakeResourceTypeDef](./type_defs.md#handshakeresourcetypedef)\]
 
-## InviteAccountToOrganizationRequestTypeDef
+## InviteAccountToOrganizationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import InviteAccountToOrganizationRequestTypeDef
+from mypy_boto3_organizations.type_defs import InviteAccountToOrganizationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -775,10 +775,10 @@ Optional fields:
 - `Notes`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## InviteAccountToOrganizationResponseResponseTypeDef
+## InviteAccountToOrganizationResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import InviteAccountToOrganizationResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import InviteAccountToOrganizationResponseTypeDef
 ```
 
 Required fields:
@@ -787,10 +787,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAWSServiceAccessForOrganizationRequestTypeDef
+## ListAWSServiceAccessForOrganizationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListAWSServiceAccessForOrganizationRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListAWSServiceAccessForOrganizationRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -798,10 +798,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListAWSServiceAccessForOrganizationResponseResponseTypeDef
+## ListAWSServiceAccessForOrganizationResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListAWSServiceAccessForOrganizationResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListAWSServiceAccessForOrganizationResponseTypeDef
 ```
 
 Required fields:
@@ -812,10 +812,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAccountsForParentRequestTypeDef
+## ListAccountsForParentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListAccountsForParentRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListAccountsForParentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -827,10 +827,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListAccountsForParentResponseResponseTypeDef
+## ListAccountsForParentResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListAccountsForParentResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListAccountsForParentResponseTypeDef
 ```
 
 Required fields:
@@ -840,10 +840,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAccountsRequestTypeDef
+## ListAccountsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListAccountsRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListAccountsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -851,10 +851,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListAccountsResponseResponseTypeDef
+## ListAccountsResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListAccountsResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListAccountsResponseTypeDef
 ```
 
 Required fields:
@@ -864,10 +864,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListChildrenRequestTypeDef
+## ListChildrenRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListChildrenRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListChildrenRequestRequestTypeDef
 ```
 
 Required fields:
@@ -880,10 +880,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListChildrenResponseResponseTypeDef
+## ListChildrenResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListChildrenResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListChildrenResponseTypeDef
 ```
 
 Required fields:
@@ -893,10 +893,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCreateAccountStatusRequestTypeDef
+## ListCreateAccountStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListCreateAccountStatusRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListCreateAccountStatusRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -906,10 +906,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListCreateAccountStatusResponseResponseTypeDef
+## ListCreateAccountStatusResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListCreateAccountStatusResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListCreateAccountStatusResponseTypeDef
 ```
 
 Required fields:
@@ -920,10 +920,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDelegatedAdministratorsRequestTypeDef
+## ListDelegatedAdministratorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListDelegatedAdministratorsRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListDelegatedAdministratorsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -932,10 +932,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDelegatedAdministratorsResponseResponseTypeDef
+## ListDelegatedAdministratorsResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListDelegatedAdministratorsResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListDelegatedAdministratorsResponseTypeDef
 ```
 
 Required fields:
@@ -946,10 +946,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDelegatedServicesForAccountRequestTypeDef
+## ListDelegatedServicesForAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListDelegatedServicesForAccountRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListDelegatedServicesForAccountRequestRequestTypeDef
 ```
 
 Required fields:
@@ -961,10 +961,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDelegatedServicesForAccountResponseResponseTypeDef
+## ListDelegatedServicesForAccountResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListDelegatedServicesForAccountResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListDelegatedServicesForAccountResponseTypeDef
 ```
 
 Required fields:
@@ -975,10 +975,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListHandshakesForAccountRequestTypeDef
+## ListHandshakesForAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListHandshakesForAccountRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListHandshakesForAccountRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -987,10 +987,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListHandshakesForAccountResponseResponseTypeDef
+## ListHandshakesForAccountResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListHandshakesForAccountResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListHandshakesForAccountResponseTypeDef
 ```
 
 Required fields:
@@ -1000,10 +1000,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListHandshakesForOrganizationRequestTypeDef
+## ListHandshakesForOrganizationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListHandshakesForOrganizationRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListHandshakesForOrganizationRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1012,10 +1012,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListHandshakesForOrganizationResponseResponseTypeDef
+## ListHandshakesForOrganizationResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListHandshakesForOrganizationResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListHandshakesForOrganizationResponseTypeDef
 ```
 
 Required fields:
@@ -1025,10 +1025,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListOrganizationalUnitsForParentRequestTypeDef
+## ListOrganizationalUnitsForParentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListOrganizationalUnitsForParentRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListOrganizationalUnitsForParentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1040,10 +1040,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListOrganizationalUnitsForParentResponseResponseTypeDef
+## ListOrganizationalUnitsForParentResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListOrganizationalUnitsForParentResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListOrganizationalUnitsForParentResponseTypeDef
 ```
 
 Required fields:
@@ -1054,10 +1054,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListParentsRequestTypeDef
+## ListParentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListParentsRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListParentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1069,10 +1069,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListParentsResponseResponseTypeDef
+## ListParentsResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListParentsResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListParentsResponseTypeDef
 ```
 
 Required fields:
@@ -1082,10 +1082,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPoliciesForTargetRequestTypeDef
+## ListPoliciesForTargetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListPoliciesForTargetRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListPoliciesForTargetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1098,10 +1098,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListPoliciesForTargetResponseResponseTypeDef
+## ListPoliciesForTargetResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListPoliciesForTargetResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListPoliciesForTargetResponseTypeDef
 ```
 
 Required fields:
@@ -1112,10 +1112,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPoliciesRequestTypeDef
+## ListPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListPoliciesRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListPoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1127,10 +1127,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListPoliciesResponseResponseTypeDef
+## ListPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListPoliciesResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -1141,10 +1141,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRootsRequestTypeDef
+## ListRootsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListRootsRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListRootsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1152,10 +1152,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListRootsResponseResponseTypeDef
+## ListRootsResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListRootsResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListRootsResponseTypeDef
 ```
 
 Required fields:
@@ -1165,10 +1165,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1179,10 +1179,10 @@ Optional fields:
 
 - `NextToken`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1192,10 +1192,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTargetsForPolicyRequestTypeDef
+## ListTargetsForPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListTargetsForPolicyRequestTypeDef
+from mypy_boto3_organizations.type_defs import ListTargetsForPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1207,10 +1207,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListTargetsForPolicyResponseResponseTypeDef
+## ListTargetsForPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import ListTargetsForPolicyResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import ListTargetsForPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1221,10 +1221,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## MoveAccountRequestTypeDef
+## MoveAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import MoveAccountRequestTypeDef
+from mypy_boto3_organizations.type_defs import MoveAccountRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1336,10 +1336,10 @@ Optional fields:
 - `Type`: [PolicyTypeType](./literals.md#policytypetype)
 - `Status`: [PolicyTypeStatusType](./literals.md#policytypestatustype)
 
-## RegisterDelegatedAdministratorRequestTypeDef
+## RegisterDelegatedAdministratorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import RegisterDelegatedAdministratorRequestTypeDef
+from mypy_boto3_organizations.type_defs import RegisterDelegatedAdministratorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1347,10 +1347,10 @@ Required fields:
 - `AccountId`: `str`
 - `ServicePrincipal`: `str`
 
-## RemoveAccountFromOrganizationRequestTypeDef
+## RemoveAccountFromOrganizationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import RemoveAccountFromOrganizationRequestTypeDef
+from mypy_boto3_organizations.type_defs import RemoveAccountFromOrganizationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1385,10 +1385,10 @@ Optional fields:
 - `PolicyTypes`:
   `List`\[[PolicyTypeSummaryTypeDef](./type_defs.md#policytypesummarytypedef)\]
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_organizations.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1407,10 +1407,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_organizations.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1418,10 +1418,10 @@ Required fields:
 - `ResourceId`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateOrganizationalUnitRequestTypeDef
+## UpdateOrganizationalUnitRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import UpdateOrganizationalUnitRequestTypeDef
+from mypy_boto3_organizations.type_defs import UpdateOrganizationalUnitRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1432,10 +1432,10 @@ Optional fields:
 
 - `Name`: `str`
 
-## UpdateOrganizationalUnitResponseResponseTypeDef
+## UpdateOrganizationalUnitResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import UpdateOrganizationalUnitResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import UpdateOrganizationalUnitResponseTypeDef
 ```
 
 Required fields:
@@ -1445,10 +1445,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePolicyRequestTypeDef
+## UpdatePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import UpdatePolicyRequestTypeDef
+from mypy_boto3_organizations.type_defs import UpdatePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1461,10 +1461,10 @@ Optional fields:
 - `Description`: `str`
 - `Content`: `str`
 
-## UpdatePolicyResponseResponseTypeDef
+## UpdatePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_organizations.type_defs import UpdatePolicyResponseResponseTypeDef
+from mypy_boto3_organizations.type_defs import UpdatePolicyResponseTypeDef
 ```
 
 Required fields:

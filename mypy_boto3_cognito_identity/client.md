@@ -11,6 +11,7 @@ type annotations stubs module
   - [CognitoIdentityClient](#cognitoidentityclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_identity_pool](#create_identity_pool)
     - [delete_identities](#delete_identities)
@@ -83,6 +84,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CognitoIdentityClient exceptions.
+
+Type annotations for `boto3.client("cognito-identity").exceptions` method.
+
+Boto3 documentation:
+[CognitoIdentity.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -109,7 +121,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.create_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.create_identity_pool)
 
 Arguments mapping described in
-[CreateIdentityPoolInputTypeDef](./type_defs.md#createidentitypoolinputtypedef).
+[CreateIdentityPoolInputRequestTypeDef](./type_defs.md#createidentitypoolinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -124,8 +136,7 @@ Keyword-only arguments:
 - `SamlProviderARNs`: `List`\[`str`\]
 - `IdentityPoolTags`: `Dict`\[`str`, `str`\]
 
-Returns
-[IdentityPoolResponseTypeDef](./type_defs.md#identitypoolresponsetypedef).
+Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
 
 ### delete_identities
 
@@ -138,14 +149,14 @@ Boto3 documentation:
 [CognitoIdentity.Client.delete_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identities)
 
 Arguments mapping described in
-[DeleteIdentitiesInputTypeDef](./type_defs.md#deleteidentitiesinputtypedef).
+[DeleteIdentitiesInputRequestTypeDef](./type_defs.md#deleteidentitiesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `IdentityIdsToDelete`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteIdentitiesResponseResponseTypeDef](./type_defs.md#deleteidentitiesresponseresponsetypedef).
+[DeleteIdentitiesResponseTypeDef](./type_defs.md#deleteidentitiesresponsetypedef).
 
 ### delete_identity_pool
 
@@ -158,7 +169,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.delete_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identity_pool)
 
 Arguments mapping described in
-[DeleteIdentityPoolInputTypeDef](./type_defs.md#deleteidentitypoolinputtypedef).
+[DeleteIdentityPoolInputRequestTypeDef](./type_defs.md#deleteidentitypoolinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -176,14 +187,14 @@ Boto3 documentation:
 [CognitoIdentity.Client.describe_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity)
 
 Arguments mapping described in
-[DescribeIdentityInputTypeDef](./type_defs.md#describeidentityinputtypedef).
+[DescribeIdentityInputRequestTypeDef](./type_defs.md#describeidentityinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `IdentityId`: `str` *(required)*
 
 Returns
-[IdentityDescriptionResponseTypeDef](./type_defs.md#identitydescriptionresponsetypedef).
+[IdentityDescriptionResponseMetadataTypeDef](./type_defs.md#identitydescriptionresponsemetadatatypedef).
 
 ### describe_identity_pool
 
@@ -197,14 +208,13 @@ Boto3 documentation:
 [CognitoIdentity.Client.describe_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity_pool)
 
 Arguments mapping described in
-[DescribeIdentityPoolInputTypeDef](./type_defs.md#describeidentitypoolinputtypedef).
+[DescribeIdentityPoolInputRequestTypeDef](./type_defs.md#describeidentitypoolinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
-Returns
-[IdentityPoolResponseTypeDef](./type_defs.md#identitypoolresponsetypedef).
+Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
 
 ### generate_presigned_url
 
@@ -236,7 +246,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.get_credentials_for_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_credentials_for_identity)
 
 Arguments mapping described in
-[GetCredentialsForIdentityInputTypeDef](./type_defs.md#getcredentialsforidentityinputtypedef).
+[GetCredentialsForIdentityInputRequestTypeDef](./type_defs.md#getcredentialsforidentityinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -245,7 +255,7 @@ Keyword-only arguments:
 - `CustomRoleArn`: `str`
 
 Returns
-[GetCredentialsForIdentityResponseResponseTypeDef](./type_defs.md#getcredentialsforidentityresponseresponsetypedef).
+[GetCredentialsForIdentityResponseTypeDef](./type_defs.md#getcredentialsforidentityresponsetypedef).
 
 ### get_id
 
@@ -257,7 +267,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.get_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_id)
 
 Arguments mapping described in
-[GetIdInputTypeDef](./type_defs.md#getidinputtypedef).
+[GetIdInputRequestTypeDef](./type_defs.md#getidinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -265,8 +275,7 @@ Keyword-only arguments:
 - `AccountId`: `str`
 - `Logins`: `Dict`\[`str`, `str`\]
 
-Returns
-[GetIdResponseResponseTypeDef](./type_defs.md#getidresponseresponsetypedef).
+Returns [GetIdResponseTypeDef](./type_defs.md#getidresponsetypedef).
 
 ### get_identity_pool_roles
 
@@ -279,14 +288,14 @@ Boto3 documentation:
 [CognitoIdentity.Client.get_identity_pool_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_identity_pool_roles)
 
 Arguments mapping described in
-[GetIdentityPoolRolesInputTypeDef](./type_defs.md#getidentitypoolrolesinputtypedef).
+[GetIdentityPoolRolesInputRequestTypeDef](./type_defs.md#getidentitypoolrolesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[GetIdentityPoolRolesResponseResponseTypeDef](./type_defs.md#getidentitypoolrolesresponseresponsetypedef).
+[GetIdentityPoolRolesResponseTypeDef](./type_defs.md#getidentitypoolrolesresponsetypedef).
 
 ### get_open_id_token
 
@@ -299,7 +308,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.get_open_id_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token)
 
 Arguments mapping described in
-[GetOpenIdTokenInputTypeDef](./type_defs.md#getopenidtokeninputtypedef).
+[GetOpenIdTokenInputRequestTypeDef](./type_defs.md#getopenidtokeninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,7 +316,7 @@ Keyword-only arguments:
 - `Logins`: `Dict`\[`str`, `str`\]
 
 Returns
-[GetOpenIdTokenResponseResponseTypeDef](./type_defs.md#getopenidtokenresponseresponsetypedef).
+[GetOpenIdTokenResponseTypeDef](./type_defs.md#getopenidtokenresponsetypedef).
 
 ### get_open_id_token_for_developer_identity
 
@@ -322,7 +331,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.get_open_id_token_for_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token_for_developer_identity)
 
 Arguments mapping described in
-[GetOpenIdTokenForDeveloperIdentityInputTypeDef](./type_defs.md#getopenidtokenfordeveloperidentityinputtypedef).
+[GetOpenIdTokenForDeveloperIdentityInputRequestTypeDef](./type_defs.md#getopenidtokenfordeveloperidentityinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -333,7 +342,7 @@ Keyword-only arguments:
 - `TokenDuration`: `int`
 
 Returns
-[GetOpenIdTokenForDeveloperIdentityResponseResponseTypeDef](./type_defs.md#getopenidtokenfordeveloperidentityresponseresponsetypedef).
+[GetOpenIdTokenForDeveloperIdentityResponseTypeDef](./type_defs.md#getopenidtokenfordeveloperidentityresponsetypedef).
 
 ### get_principal_tag_attribute_map
 
@@ -347,7 +356,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.get_principal_tag_attribute_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_principal_tag_attribute_map)
 
 Arguments mapping described in
-[GetPrincipalTagAttributeMapInputTypeDef](./type_defs.md#getprincipaltagattributemapinputtypedef).
+[GetPrincipalTagAttributeMapInputRequestTypeDef](./type_defs.md#getprincipaltagattributemapinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -355,7 +364,7 @@ Keyword-only arguments:
 - `IdentityProviderName`: `str` *(required)*
 
 Returns
-[GetPrincipalTagAttributeMapResponseResponseTypeDef](./type_defs.md#getprincipaltagattributemapresponseresponsetypedef).
+[GetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#getprincipaltagattributemapresponsetypedef).
 
 ### list_identities
 
@@ -367,7 +376,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.list_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identities)
 
 Arguments mapping described in
-[ListIdentitiesInputTypeDef](./type_defs.md#listidentitiesinputtypedef).
+[ListIdentitiesInputRequestTypeDef](./type_defs.md#listidentitiesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -377,7 +386,7 @@ Keyword-only arguments:
 - `HideDisabled`: `bool`
 
 Returns
-[ListIdentitiesResponseResponseTypeDef](./type_defs.md#listidentitiesresponseresponsetypedef).
+[ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef).
 
 ### list_identity_pools
 
@@ -390,7 +399,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.list_identity_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identity_pools)
 
 Arguments mapping described in
-[ListIdentityPoolsInputTypeDef](./type_defs.md#listidentitypoolsinputtypedef).
+[ListIdentityPoolsInputRequestTypeDef](./type_defs.md#listidentitypoolsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -398,7 +407,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListIdentityPoolsResponseResponseTypeDef](./type_defs.md#listidentitypoolsresponseresponsetypedef).
+[ListIdentityPoolsResponseTypeDef](./type_defs.md#listidentitypoolsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -411,14 +420,14 @@ Boto3 documentation:
 [CognitoIdentity.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### lookup_developer_identity
 
@@ -433,7 +442,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.lookup_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.lookup_developer_identity)
 
 Arguments mapping described in
-[LookupDeveloperIdentityInputTypeDef](./type_defs.md#lookupdeveloperidentityinputtypedef).
+[LookupDeveloperIdentityInputRequestTypeDef](./type_defs.md#lookupdeveloperidentityinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -444,7 +453,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[LookupDeveloperIdentityResponseResponseTypeDef](./type_defs.md#lookupdeveloperidentityresponseresponsetypedef).
+[LookupDeveloperIdentityResponseTypeDef](./type_defs.md#lookupdeveloperidentityresponsetypedef).
 
 ### merge_developer_identities
 
@@ -458,7 +467,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.merge_developer_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.merge_developer_identities)
 
 Arguments mapping described in
-[MergeDeveloperIdentitiesInputTypeDef](./type_defs.md#mergedeveloperidentitiesinputtypedef).
+[MergeDeveloperIdentitiesInputRequestTypeDef](./type_defs.md#mergedeveloperidentitiesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -468,7 +477,7 @@ Keyword-only arguments:
 - `IdentityPoolId`: `str` *(required)*
 
 Returns
-[MergeDeveloperIdentitiesResponseResponseTypeDef](./type_defs.md#mergedeveloperidentitiesresponseresponsetypedef).
+[MergeDeveloperIdentitiesResponseTypeDef](./type_defs.md#mergedeveloperidentitiesresponsetypedef).
 
 ### set_identity_pool_roles
 
@@ -481,7 +490,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.set_identity_pool_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_identity_pool_roles)
 
 Arguments mapping described in
-[SetIdentityPoolRolesInputTypeDef](./type_defs.md#setidentitypoolrolesinputtypedef).
+[SetIdentityPoolRolesInputRequestTypeDef](./type_defs.md#setidentitypoolrolesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -502,7 +511,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.set_principal_tag_attribute_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_principal_tag_attribute_map)
 
 Arguments mapping described in
-[SetPrincipalTagAttributeMapInputTypeDef](./type_defs.md#setprincipaltagattributemapinputtypedef).
+[SetPrincipalTagAttributeMapInputRequestTypeDef](./type_defs.md#setprincipaltagattributemapinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -512,7 +521,7 @@ Keyword-only arguments:
 - `PrincipalTags`: `Dict`\[`str`, `str`\]
 
 Returns
-[SetPrincipalTagAttributeMapResponseResponseTypeDef](./type_defs.md#setprincipaltagattributemapresponseresponsetypedef).
+[SetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#setprincipaltagattributemapresponsetypedef).
 
 ### tag_resource
 
@@ -524,7 +533,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -544,7 +553,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.unlink_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_developer_identity)
 
 Arguments mapping described in
-[UnlinkDeveloperIdentityInputTypeDef](./type_defs.md#unlinkdeveloperidentityinputtypedef).
+[UnlinkDeveloperIdentityInputRequestTypeDef](./type_defs.md#unlinkdeveloperidentityinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -563,7 +572,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.unlink_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_identity)
 
 Arguments mapping described in
-[UnlinkIdentityInputTypeDef](./type_defs.md#unlinkidentityinputtypedef).
+[UnlinkIdentityInputRequestTypeDef](./type_defs.md#unlinkidentityinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -581,7 +590,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -601,7 +610,7 @@ Boto3 documentation:
 [CognitoIdentity.Client.update_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.update_identity_pool)
 
 Arguments mapping described in
-[IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
+[IdentityPoolRequestTypeDef](./type_defs.md#identitypoolrequesttypedef).
 
 Keyword-only arguments:
 
@@ -617,8 +626,7 @@ Keyword-only arguments:
 - `SamlProviderARNs`: `List`\[`str`\]
 - `IdentityPoolTags`: `Dict`\[`str`, `str`\]
 
-Returns
-[IdentityPoolResponseTypeDef](./type_defs.md#identitypoolresponsetypedef).
+Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
 
 ### get_paginator
 

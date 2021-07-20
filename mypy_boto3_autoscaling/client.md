@@ -11,6 +11,7 @@ type annotations stubs module
   - [AutoScalingClient](#autoscalingclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [attach_instances](#attach_instances)
     - [attach_load_balancer_target_groups](#attach_load_balancer_target_groups)
     - [attach_load_balancers](#attach_load_balancers)
@@ -119,6 +120,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AutoScalingClient exceptions.
+
+Type annotations for `boto3.client("autoscaling").exceptions` method.
+
+Boto3 documentation:
+[AutoScaling.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### attach_instances
 
 Attaches one or more EC2 instances to the specified Auto Scaling group.
@@ -129,7 +141,7 @@ Boto3 documentation:
 [AutoScaling.Client.attach_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_instances)
 
 Arguments mapping described in
-[AttachInstancesQueryTypeDef](./type_defs.md#attachinstancesquerytypedef).
+[AttachInstancesQueryRequestTypeDef](./type_defs.md#attachinstancesqueryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -147,7 +159,7 @@ Boto3 documentation:
 [AutoScaling.Client.attach_load_balancer_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancer_target_groups)
 
 Arguments mapping described in
-[AttachLoadBalancerTargetGroupsTypeTypeDef](./type_defs.md#attachloadbalancertargetgroupstypetypedef).
+[AttachLoadBalancerTargetGroupsTypeRequestTypeDef](./type_defs.md#attachloadbalancertargetgroupstyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,7 +179,7 @@ Boto3 documentation:
 [AutoScaling.Client.attach_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancers)
 
 Arguments mapping described in
-[AttachLoadBalancersTypeTypeDef](./type_defs.md#attachloadbalancerstypetypedef).
+[AttachLoadBalancersTypeRequestTypeDef](./type_defs.md#attachloadbalancerstyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -187,7 +199,7 @@ Boto3 documentation:
 [AutoScaling.Client.batch_delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_delete_scheduled_action)
 
 Arguments mapping described in
-[BatchDeleteScheduledActionTypeTypeDef](./type_defs.md#batchdeletescheduledactiontypetypedef).
+[BatchDeleteScheduledActionTypeRequestTypeDef](./type_defs.md#batchdeletescheduledactiontyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -195,7 +207,7 @@ Keyword-only arguments:
 - `ScheduledActionNames`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeleteScheduledActionAnswerResponseTypeDef](./type_defs.md#batchdeletescheduledactionanswerresponsetypedef).
+[BatchDeleteScheduledActionAnswerTypeDef](./type_defs.md#batchdeletescheduledactionanswertypedef).
 
 ### batch_put_scheduled_update_group_action
 
@@ -209,7 +221,7 @@ Boto3 documentation:
 [AutoScaling.Client.batch_put_scheduled_update_group_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_put_scheduled_update_group_action)
 
 Arguments mapping described in
-[BatchPutScheduledUpdateGroupActionTypeTypeDef](./type_defs.md#batchputscheduledupdategroupactiontypetypedef).
+[BatchPutScheduledUpdateGroupActionTypeRequestTypeDef](./type_defs.md#batchputscheduledupdategroupactiontyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -219,7 +231,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchPutScheduledUpdateGroupActionAnswerResponseTypeDef](./type_defs.md#batchputscheduledupdategroupactionanswerresponsetypedef).
+[BatchPutScheduledUpdateGroupActionAnswerTypeDef](./type_defs.md#batchputscheduledupdategroupactionanswertypedef).
 
 ### can_paginate
 
@@ -247,14 +259,14 @@ Boto3 documentation:
 [AutoScaling.Client.cancel_instance_refresh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.cancel_instance_refresh)
 
 Arguments mapping described in
-[CancelInstanceRefreshTypeTypeDef](./type_defs.md#cancelinstancerefreshtypetypedef).
+[CancelInstanceRefreshTypeRequestTypeDef](./type_defs.md#cancelinstancerefreshtyperequesttypedef).
 
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 
 Returns
-[CancelInstanceRefreshAnswerResponseTypeDef](./type_defs.md#cancelinstancerefreshanswerresponsetypedef).
+[CancelInstanceRefreshAnswerTypeDef](./type_defs.md#cancelinstancerefreshanswertypedef).
 
 ### complete_lifecycle_action
 
@@ -268,7 +280,7 @@ Boto3 documentation:
 [AutoScaling.Client.complete_lifecycle_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.complete_lifecycle_action)
 
 Arguments mapping described in
-[CompleteLifecycleActionTypeTypeDef](./type_defs.md#completelifecycleactiontypetypedef).
+[CompleteLifecycleActionTypeRequestTypeDef](./type_defs.md#completelifecycleactiontyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -293,7 +305,7 @@ Boto3 documentation:
 [AutoScaling.Client.create_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_auto_scaling_group)
 
 Arguments mapping described in
-[CreateAutoScalingGroupTypeTypeDef](./type_defs.md#createautoscalinggrouptypetypedef).
+[CreateAutoScalingGroupTypeRequestTypeDef](./type_defs.md#createautoscalinggrouptyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -323,6 +335,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ServiceLinkedRoleARN`: `str`
 - `MaxInstanceLifetime`: `int`
+- `Context`: `str`
 
 ### create_launch_configuration
 
@@ -335,7 +348,7 @@ Boto3 documentation:
 [AutoScaling.Client.create_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_launch_configuration)
 
 Arguments mapping described in
-[CreateLaunchConfigurationTypeTypeDef](./type_defs.md#createlaunchconfigurationtypetypedef).
+[CreateLaunchConfigurationTypeRequestTypeDef](./type_defs.md#createlaunchconfigurationtyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -373,7 +386,7 @@ Boto3 documentation:
 [AutoScaling.Client.create_or_update_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_or_update_tags)
 
 Arguments mapping described in
-[CreateOrUpdateTagsTypeTypeDef](./type_defs.md#createorupdatetagstypetypedef).
+[CreateOrUpdateTagsTypeRequestTypeDef](./type_defs.md#createorupdatetagstyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -390,7 +403,7 @@ Boto3 documentation:
 [AutoScaling.Client.delete_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_auto_scaling_group)
 
 Arguments mapping described in
-[DeleteAutoScalingGroupTypeTypeDef](./type_defs.md#deleteautoscalinggrouptypetypedef).
+[DeleteAutoScalingGroupTypeRequestTypeDef](./type_defs.md#deleteautoscalinggrouptyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -408,7 +421,7 @@ Boto3 documentation:
 [AutoScaling.Client.delete_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_launch_configuration)
 
 Arguments mapping described in
-[LaunchConfigurationNameTypeTypeDef](./type_defs.md#launchconfigurationnametypetypedef).
+[LaunchConfigurationNameTypeRequestTypeDef](./type_defs.md#launchconfigurationnametyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -425,7 +438,7 @@ Boto3 documentation:
 [AutoScaling.Client.delete_lifecycle_hook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_lifecycle_hook)
 
 Arguments mapping described in
-[DeleteLifecycleHookTypeTypeDef](./type_defs.md#deletelifecyclehooktypetypedef).
+[DeleteLifecycleHookTypeRequestTypeDef](./type_defs.md#deletelifecyclehooktyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,7 +458,7 @@ Boto3 documentation:
 [AutoScaling.Client.delete_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_notification_configuration)
 
 Arguments mapping described in
-[DeleteNotificationConfigurationTypeTypeDef](./type_defs.md#deletenotificationconfigurationtypetypedef).
+[DeleteNotificationConfigurationTypeRequestTypeDef](./type_defs.md#deletenotificationconfigurationtyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -462,7 +475,7 @@ Boto3 documentation:
 [AutoScaling.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_policy)
 
 Arguments mapping described in
-[DeletePolicyTypeTypeDef](./type_defs.md#deletepolicytypetypedef).
+[DeletePolicyTypeRequestTypeDef](./type_defs.md#deletepolicytyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,7 +493,7 @@ Boto3 documentation:
 [AutoScaling.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_scheduled_action)
 
 Arguments mapping described in
-[DeleteScheduledActionTypeTypeDef](./type_defs.md#deletescheduledactiontypetypedef).
+[DeleteScheduledActionTypeRequestTypeDef](./type_defs.md#deletescheduledactiontyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -497,7 +510,7 @@ Boto3 documentation:
 [AutoScaling.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_tags)
 
 Arguments mapping described in
-[DeleteTagsTypeTypeDef](./type_defs.md#deletetagstypetypedef).
+[DeleteTagsTypeRequestTypeDef](./type_defs.md#deletetagstyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -513,7 +526,7 @@ Boto3 documentation:
 [AutoScaling.Client.delete_warm_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_warm_pool)
 
 Arguments mapping described in
-[DeleteWarmPoolTypeTypeDef](./type_defs.md#deletewarmpooltypetypedef).
+[DeleteWarmPoolTypeRequestTypeDef](./type_defs.md#deletewarmpooltyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -533,7 +546,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_account_limits)
 
 Returns
-[DescribeAccountLimitsAnswerResponseTypeDef](./type_defs.md#describeaccountlimitsanswerresponsetypedef).
+[DescribeAccountLimitsAnswerTypeDef](./type_defs.md#describeaccountlimitsanswertypedef).
 
 ### describe_adjustment_types
 
@@ -547,7 +560,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_adjustment_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_adjustment_types)
 
 Returns
-[DescribeAdjustmentTypesAnswerResponseTypeDef](./type_defs.md#describeadjustmenttypesanswerresponsetypedef).
+[DescribeAdjustmentTypesAnswerTypeDef](./type_defs.md#describeadjustmenttypesanswertypedef).
 
 ### describe_auto_scaling_groups
 
@@ -560,7 +573,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_auto_scaling_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_groups)
 
 Arguments mapping described in
-[AutoScalingGroupNamesTypeTypeDef](./type_defs.md#autoscalinggroupnamestypetypedef).
+[AutoScalingGroupNamesTypeRequestTypeDef](./type_defs.md#autoscalinggroupnamestyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -569,7 +582,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[AutoScalingGroupsTypeResponseTypeDef](./type_defs.md#autoscalinggroupstyperesponsetypedef).
+[AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef).
 
 ### describe_auto_scaling_instances
 
@@ -582,7 +595,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_auto_scaling_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_instances)
 
 Arguments mapping described in
-[DescribeAutoScalingInstancesTypeTypeDef](./type_defs.md#describeautoscalinginstancestypetypedef).
+[DescribeAutoScalingInstancesTypeRequestTypeDef](./type_defs.md#describeautoscalinginstancestyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -591,7 +604,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[AutoScalingInstancesTypeResponseTypeDef](./type_defs.md#autoscalinginstancestyperesponsetypedef).
+[AutoScalingInstancesTypeTypeDef](./type_defs.md#autoscalinginstancestypetypedef).
 
 ### describe_auto_scaling_notification_types
 
@@ -604,7 +617,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_auto_scaling_notification_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_notification_types)
 
 Returns
-[DescribeAutoScalingNotificationTypesAnswerResponseTypeDef](./type_defs.md#describeautoscalingnotificationtypesanswerresponsetypedef).
+[DescribeAutoScalingNotificationTypesAnswerTypeDef](./type_defs.md#describeautoscalingnotificationtypesanswertypedef).
 
 ### describe_instance_refreshes
 
@@ -618,7 +631,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_instance_refreshes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_instance_refreshes)
 
 Arguments mapping described in
-[DescribeInstanceRefreshesTypeTypeDef](./type_defs.md#describeinstancerefreshestypetypedef).
+[DescribeInstanceRefreshesTypeRequestTypeDef](./type_defs.md#describeinstancerefreshestyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -628,7 +641,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeInstanceRefreshesAnswerResponseTypeDef](./type_defs.md#describeinstancerefreshesanswerresponsetypedef).
+[DescribeInstanceRefreshesAnswerTypeDef](./type_defs.md#describeinstancerefreshesanswertypedef).
 
 ### describe_launch_configurations
 
@@ -641,7 +654,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_launch_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_launch_configurations)
 
 Arguments mapping described in
-[LaunchConfigurationNamesTypeTypeDef](./type_defs.md#launchconfigurationnamestypetypedef).
+[LaunchConfigurationNamesTypeRequestTypeDef](./type_defs.md#launchconfigurationnamestyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -650,7 +663,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[LaunchConfigurationsTypeResponseTypeDef](./type_defs.md#launchconfigurationstyperesponsetypedef).
+[LaunchConfigurationsTypeTypeDef](./type_defs.md#launchconfigurationstypetypedef).
 
 ### describe_lifecycle_hook_types
 
@@ -663,7 +676,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_lifecycle_hook_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hook_types)
 
 Returns
-[DescribeLifecycleHookTypesAnswerResponseTypeDef](./type_defs.md#describelifecyclehooktypesanswerresponsetypedef).
+[DescribeLifecycleHookTypesAnswerTypeDef](./type_defs.md#describelifecyclehooktypesanswertypedef).
 
 ### describe_lifecycle_hooks
 
@@ -677,7 +690,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_lifecycle_hooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hooks)
 
 Arguments mapping described in
-[DescribeLifecycleHooksTypeTypeDef](./type_defs.md#describelifecyclehookstypetypedef).
+[DescribeLifecycleHooksTypeRequestTypeDef](./type_defs.md#describelifecyclehookstyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -685,7 +698,7 @@ Keyword-only arguments:
 - `LifecycleHookNames`: `List`\[`str`\]
 
 Returns
-[DescribeLifecycleHooksAnswerResponseTypeDef](./type_defs.md#describelifecyclehooksanswerresponsetypedef).
+[DescribeLifecycleHooksAnswerTypeDef](./type_defs.md#describelifecyclehooksanswertypedef).
 
 ### describe_load_balancer_target_groups
 
@@ -699,7 +712,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_load_balancer_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancer_target_groups)
 
 Arguments mapping described in
-[DescribeLoadBalancerTargetGroupsRequestTypeDef](./type_defs.md#describeloadbalancertargetgroupsrequesttypedef).
+[DescribeLoadBalancerTargetGroupsRequestRequestTypeDef](./type_defs.md#describeloadbalancertargetgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -708,7 +721,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeLoadBalancerTargetGroupsResponseResponseTypeDef](./type_defs.md#describeloadbalancertargetgroupsresponseresponsetypedef).
+[DescribeLoadBalancerTargetGroupsResponseTypeDef](./type_defs.md#describeloadbalancertargetgroupsresponsetypedef).
 
 ### describe_load_balancers
 
@@ -721,7 +734,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancers)
 
 Arguments mapping described in
-[DescribeLoadBalancersRequestTypeDef](./type_defs.md#describeloadbalancersrequesttypedef).
+[DescribeLoadBalancersRequestRequestTypeDef](./type_defs.md#describeloadbalancersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -730,7 +743,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeLoadBalancersResponseResponseTypeDef](./type_defs.md#describeloadbalancersresponseresponsetypedef).
+[DescribeLoadBalancersResponseTypeDef](./type_defs.md#describeloadbalancersresponsetypedef).
 
 ### describe_metric_collection_types
 
@@ -743,7 +756,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_metric_collection_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_metric_collection_types)
 
 Returns
-[DescribeMetricCollectionTypesAnswerResponseTypeDef](./type_defs.md#describemetriccollectiontypesanswerresponsetypedef).
+[DescribeMetricCollectionTypesAnswerTypeDef](./type_defs.md#describemetriccollectiontypesanswertypedef).
 
 ### describe_notification_configurations
 
@@ -757,7 +770,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_notification_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_notification_configurations)
 
 Arguments mapping described in
-[DescribeNotificationConfigurationsTypeTypeDef](./type_defs.md#describenotificationconfigurationstypetypedef).
+[DescribeNotificationConfigurationsTypeRequestTypeDef](./type_defs.md#describenotificationconfigurationstyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -766,7 +779,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeNotificationConfigurationsAnswerResponseTypeDef](./type_defs.md#describenotificationconfigurationsanswerresponsetypedef).
+[DescribeNotificationConfigurationsAnswerTypeDef](./type_defs.md#describenotificationconfigurationsanswertypedef).
 
 ### describe_policies
 
@@ -778,7 +791,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_policies)
 
 Arguments mapping described in
-[DescribePoliciesTypeTypeDef](./type_defs.md#describepoliciestypetypedef).
+[DescribePoliciesTypeRequestTypeDef](./type_defs.md#describepoliciestyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -788,8 +801,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
-Returns
-[PoliciesTypeResponseTypeDef](./type_defs.md#policiestyperesponsetypedef).
+Returns [PoliciesTypeTypeDef](./type_defs.md#policiestypetypedef).
 
 ### describe_scaling_activities
 
@@ -802,7 +814,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_scaling_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_activities)
 
 Arguments mapping described in
-[DescribeScalingActivitiesTypeTypeDef](./type_defs.md#describescalingactivitiestypetypedef).
+[DescribeScalingActivitiesTypeRequestTypeDef](./type_defs.md#describescalingactivitiestyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -812,8 +824,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
-Returns
-[ActivitiesTypeResponseTypeDef](./type_defs.md#activitiestyperesponsetypedef).
+Returns [ActivitiesTypeTypeDef](./type_defs.md#activitiestypetypedef).
 
 ### describe_scaling_process_types
 
@@ -826,8 +837,7 @@ Type annotations for
 Boto3 documentation:
 [AutoScaling.Client.describe_scaling_process_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_process_types)
 
-Returns
-[ProcessesTypeResponseTypeDef](./type_defs.md#processestyperesponsetypedef).
+Returns [ProcessesTypeTypeDef](./type_defs.md#processestypetypedef).
 
 ### describe_scheduled_actions
 
@@ -841,7 +851,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scheduled_actions)
 
 Arguments mapping described in
-[DescribeScheduledActionsTypeTypeDef](./type_defs.md#describescheduledactionstypetypedef).
+[DescribeScheduledActionsTypeRequestTypeDef](./type_defs.md#describescheduledactionstyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -853,7 +863,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[ScheduledActionsTypeResponseTypeDef](./type_defs.md#scheduledactionstyperesponsetypedef).
+[ScheduledActionsTypeTypeDef](./type_defs.md#scheduledactionstypetypedef).
 
 ### describe_tags
 
@@ -865,7 +875,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_tags)
 
 Arguments mapping described in
-[DescribeTagsTypeTypeDef](./type_defs.md#describetagstypetypedef).
+[DescribeTagsTypeRequestTypeDef](./type_defs.md#describetagstyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -873,7 +883,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
-Returns [TagsTypeResponseTypeDef](./type_defs.md#tagstyperesponsetypedef).
+Returns [TagsTypeTypeDef](./type_defs.md#tagstypetypedef).
 
 ### describe_termination_policy_types
 
@@ -886,7 +896,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_termination_policy_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_termination_policy_types)
 
 Returns
-[DescribeTerminationPolicyTypesAnswerResponseTypeDef](./type_defs.md#describeterminationpolicytypesanswerresponsetypedef).
+[DescribeTerminationPolicyTypesAnswerTypeDef](./type_defs.md#describeterminationpolicytypesanswertypedef).
 
 ### describe_warm_pool
 
@@ -898,7 +908,7 @@ Boto3 documentation:
 [AutoScaling.Client.describe_warm_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_warm_pool)
 
 Arguments mapping described in
-[DescribeWarmPoolTypeTypeDef](./type_defs.md#describewarmpooltypetypedef).
+[DescribeWarmPoolTypeRequestTypeDef](./type_defs.md#describewarmpooltyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -907,7 +917,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWarmPoolAnswerResponseTypeDef](./type_defs.md#describewarmpoolanswerresponsetypedef).
+[DescribeWarmPoolAnswerTypeDef](./type_defs.md#describewarmpoolanswertypedef).
 
 ### detach_instances
 
@@ -919,7 +929,7 @@ Boto3 documentation:
 [AutoScaling.Client.detach_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_instances)
 
 Arguments mapping described in
-[DetachInstancesQueryTypeDef](./type_defs.md#detachinstancesquerytypedef).
+[DetachInstancesQueryRequestTypeDef](./type_defs.md#detachinstancesqueryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -928,7 +938,7 @@ Keyword-only arguments:
 - `InstanceIds`: `List`\[`str`\]
 
 Returns
-[DetachInstancesAnswerResponseTypeDef](./type_defs.md#detachinstancesanswerresponsetypedef).
+[DetachInstancesAnswerTypeDef](./type_defs.md#detachinstancesanswertypedef).
 
 ### detach_load_balancer_target_groups
 
@@ -941,7 +951,7 @@ Boto3 documentation:
 [AutoScaling.Client.detach_load_balancer_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancer_target_groups)
 
 Arguments mapping described in
-[DetachLoadBalancerTargetGroupsTypeTypeDef](./type_defs.md#detachloadbalancertargetgroupstypetypedef).
+[DetachLoadBalancerTargetGroupsTypeRequestTypeDef](./type_defs.md#detachloadbalancertargetgroupstyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -962,7 +972,7 @@ Boto3 documentation:
 [AutoScaling.Client.detach_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancers)
 
 Arguments mapping described in
-[DetachLoadBalancersTypeTypeDef](./type_defs.md#detachloadbalancerstypetypedef).
+[DetachLoadBalancersTypeRequestTypeDef](./type_defs.md#detachloadbalancerstyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -982,7 +992,7 @@ Boto3 documentation:
 [AutoScaling.Client.disable_metrics_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.disable_metrics_collection)
 
 Arguments mapping described in
-[DisableMetricsCollectionQueryTypeDef](./type_defs.md#disablemetricscollectionquerytypedef).
+[DisableMetricsCollectionQueryRequestTypeDef](./type_defs.md#disablemetricscollectionqueryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1000,7 +1010,7 @@ Boto3 documentation:
 [AutoScaling.Client.enable_metrics_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enable_metrics_collection)
 
 Arguments mapping described in
-[EnableMetricsCollectionQueryTypeDef](./type_defs.md#enablemetricscollectionquerytypedef).
+[EnableMetricsCollectionQueryRequestTypeDef](./type_defs.md#enablemetricscollectionqueryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1018,7 +1028,7 @@ Boto3 documentation:
 [AutoScaling.Client.enter_standby](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enter_standby)
 
 Arguments mapping described in
-[EnterStandbyQueryTypeDef](./type_defs.md#enterstandbyquerytypedef).
+[EnterStandbyQueryRequestTypeDef](./type_defs.md#enterstandbyqueryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1026,8 +1036,7 @@ Keyword-only arguments:
 - `ShouldDecrementDesiredCapacity`: `bool` *(required)*
 - `InstanceIds`: `List`\[`str`\]
 
-Returns
-[EnterStandbyAnswerResponseTypeDef](./type_defs.md#enterstandbyanswerresponsetypedef).
+Returns [EnterStandbyAnswerTypeDef](./type_defs.md#enterstandbyanswertypedef).
 
 ### execute_policy
 
@@ -1039,7 +1048,7 @@ Boto3 documentation:
 [AutoScaling.Client.execute_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.execute_policy)
 
 Arguments mapping described in
-[ExecutePolicyTypeTypeDef](./type_defs.md#executepolicytypetypedef).
+[ExecutePolicyTypeRequestTypeDef](./type_defs.md#executepolicytyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1059,15 +1068,14 @@ Boto3 documentation:
 [AutoScaling.Client.exit_standby](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.exit_standby)
 
 Arguments mapping described in
-[ExitStandbyQueryTypeDef](./type_defs.md#exitstandbyquerytypedef).
+[ExitStandbyQueryRequestTypeDef](./type_defs.md#exitstandbyqueryrequesttypedef).
 
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `InstanceIds`: `List`\[`str`\]
 
-Returns
-[ExitStandbyAnswerResponseTypeDef](./type_defs.md#exitstandbyanswerresponsetypedef).
+Returns [ExitStandbyAnswerTypeDef](./type_defs.md#exitstandbyanswertypedef).
 
 ### generate_presigned_url
 
@@ -1099,7 +1107,7 @@ Boto3 documentation:
 [AutoScaling.Client.get_predictive_scaling_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.get_predictive_scaling_forecast)
 
 Arguments mapping described in
-[GetPredictiveScalingForecastTypeTypeDef](./type_defs.md#getpredictivescalingforecasttypetypedef).
+[GetPredictiveScalingForecastTypeRequestTypeDef](./type_defs.md#getpredictivescalingforecasttyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1109,7 +1117,7 @@ Keyword-only arguments:
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 
 Returns
-[GetPredictiveScalingForecastAnswerResponseTypeDef](./type_defs.md#getpredictivescalingforecastanswerresponsetypedef).
+[GetPredictiveScalingForecastAnswerTypeDef](./type_defs.md#getpredictivescalingforecastanswertypedef).
 
 ### put_lifecycle_hook
 
@@ -1121,7 +1129,7 @@ Boto3 documentation:
 [AutoScaling.Client.put_lifecycle_hook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_lifecycle_hook)
 
 Arguments mapping described in
-[PutLifecycleHookTypeTypeDef](./type_defs.md#putlifecyclehooktypetypedef).
+[PutLifecycleHookTypeRequestTypeDef](./type_defs.md#putlifecyclehooktyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1148,7 +1156,7 @@ Boto3 documentation:
 [AutoScaling.Client.put_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_notification_configuration)
 
 Arguments mapping described in
-[PutNotificationConfigurationTypeTypeDef](./type_defs.md#putnotificationconfigurationtypetypedef).
+[PutNotificationConfigurationTypeRequestTypeDef](./type_defs.md#putnotificationconfigurationtyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1166,7 +1174,7 @@ Boto3 documentation:
 [AutoScaling.Client.put_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scaling_policy)
 
 Arguments mapping described in
-[PutScalingPolicyTypeTypeDef](./type_defs.md#putscalingpolicytypetypedef).
+[PutScalingPolicyTypeRequestTypeDef](./type_defs.md#putscalingpolicytyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1188,8 +1196,7 @@ Keyword-only arguments:
 - `PredictiveScalingConfiguration`:
   [PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef)
 
-Returns
-[PolicyARNTypeResponseTypeDef](./type_defs.md#policyarntyperesponsetypedef).
+Returns [PolicyARNTypeTypeDef](./type_defs.md#policyarntypetypedef).
 
 ### put_scheduled_update_group_action
 
@@ -1202,7 +1209,7 @@ Boto3 documentation:
 [AutoScaling.Client.put_scheduled_update_group_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scheduled_update_group_action)
 
 Arguments mapping described in
-[PutScheduledUpdateGroupActionTypeTypeDef](./type_defs.md#putscheduledupdategroupactiontypetypedef).
+[PutScheduledUpdateGroupActionTypeRequestTypeDef](./type_defs.md#putscheduledupdategroupactiontyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1227,7 +1234,7 @@ Boto3 documentation:
 [AutoScaling.Client.put_warm_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_warm_pool)
 
 Arguments mapping described in
-[PutWarmPoolTypeTypeDef](./type_defs.md#putwarmpooltypetypedef).
+[PutWarmPoolTypeRequestTypeDef](./type_defs.md#putwarmpooltyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1250,7 +1257,7 @@ Boto3 documentation:
 [AutoScaling.Client.record_lifecycle_action_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.record_lifecycle_action_heartbeat)
 
 Arguments mapping described in
-[RecordLifecycleActionHeartbeatTypeTypeDef](./type_defs.md#recordlifecycleactionheartbeattypetypedef).
+[RecordLifecycleActionHeartbeatTypeRequestTypeDef](./type_defs.md#recordlifecycleactionheartbeattyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1272,7 +1279,7 @@ Boto3 documentation:
 [AutoScaling.Client.resume_processes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.resume_processes)
 
 Arguments mapping described in
-[ScalingProcessQueryTypeDef](./type_defs.md#scalingprocessquerytypedef).
+[ScalingProcessQueryRequestTypeDef](./type_defs.md#scalingprocessqueryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1289,7 +1296,7 @@ Boto3 documentation:
 [AutoScaling.Client.set_desired_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_desired_capacity)
 
 Arguments mapping described in
-[SetDesiredCapacityTypeTypeDef](./type_defs.md#setdesiredcapacitytypetypedef).
+[SetDesiredCapacityTypeRequestTypeDef](./type_defs.md#setdesiredcapacitytyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1307,7 +1314,7 @@ Boto3 documentation:
 [AutoScaling.Client.set_instance_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_health)
 
 Arguments mapping described in
-[SetInstanceHealthQueryTypeDef](./type_defs.md#setinstancehealthquerytypedef).
+[SetInstanceHealthQueryRequestTypeDef](./type_defs.md#setinstancehealthqueryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1326,7 +1333,7 @@ Boto3 documentation:
 [AutoScaling.Client.set_instance_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_protection)
 
 Arguments mapping described in
-[SetInstanceProtectionQueryTypeDef](./type_defs.md#setinstanceprotectionquerytypedef).
+[SetInstanceProtectionQueryRequestTypeDef](./type_defs.md#setinstanceprotectionqueryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1349,7 +1356,7 @@ Boto3 documentation:
 [AutoScaling.Client.start_instance_refresh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.start_instance_refresh)
 
 Arguments mapping described in
-[StartInstanceRefreshTypeTypeDef](./type_defs.md#startinstancerefreshtypetypedef).
+[StartInstanceRefreshTypeRequestTypeDef](./type_defs.md#startinstancerefreshtyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1360,7 +1367,7 @@ Keyword-only arguments:
   [RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef)
 
 Returns
-[StartInstanceRefreshAnswerResponseTypeDef](./type_defs.md#startinstancerefreshanswerresponsetypedef).
+[StartInstanceRefreshAnswerTypeDef](./type_defs.md#startinstancerefreshanswertypedef).
 
 ### suspend_processes
 
@@ -1373,7 +1380,7 @@ Boto3 documentation:
 [AutoScaling.Client.suspend_processes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.suspend_processes)
 
 Arguments mapping described in
-[ScalingProcessQueryTypeDef](./type_defs.md#scalingprocessquerytypedef).
+[ScalingProcessQueryRequestTypeDef](./type_defs.md#scalingprocessqueryrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1392,15 +1399,14 @@ Boto3 documentation:
 [AutoScaling.Client.terminate_instance_in_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.terminate_instance_in_auto_scaling_group)
 
 Arguments mapping described in
-[TerminateInstanceInAutoScalingGroupTypeTypeDef](./type_defs.md#terminateinstanceinautoscalinggrouptypetypedef).
+[TerminateInstanceInAutoScalingGroupTypeRequestTypeDef](./type_defs.md#terminateinstanceinautoscalinggrouptyperequesttypedef).
 
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ShouldDecrementDesiredCapacity`: `bool` *(required)*
 
-Returns
-[ActivityTypeResponseTypeDef](./type_defs.md#activitytyperesponsetypedef).
+Returns [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef).
 
 ### update_auto_scaling_group
 
@@ -1415,7 +1421,7 @@ Boto3 documentation:
 [AutoScaling.Client.update_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.update_auto_scaling_group)
 
 Arguments mapping described in
-[UpdateAutoScalingGroupTypeTypeDef](./type_defs.md#updateautoscalinggrouptypetypedef).
+[UpdateAutoScalingGroupTypeRequestTypeDef](./type_defs.md#updateautoscalinggrouptyperequesttypedef).
 
 Keyword-only arguments:
 
@@ -1439,6 +1445,7 @@ Keyword-only arguments:
 - `ServiceLinkedRoleARN`: `str`
 - `MaxInstanceLifetime`: `int`
 - `CapacityRebalance`: `bool`
+- `Context`: `str`
 
 ### get_paginator
 

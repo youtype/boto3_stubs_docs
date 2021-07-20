@@ -11,6 +11,7 @@ type annotations stubs module
   - [EKSClient](#eksclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_encryption_config](#associate_encryption_config)
     - [associate_identity_provider_config](#associate_identity_provider_config)
     - [can_paginate](#can_paginate)
@@ -93,6 +94,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+EKSClient exceptions.
+
+Type annotations for `boto3.client("eks").exceptions` method.
+
+Boto3 documentation:
+[EKS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_encryption_config
 
 Associate encryption configuration to an existing cluster.
@@ -103,7 +115,7 @@ Boto3 documentation:
 [EKS.Client.associate_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.associate_encryption_config)
 
 Arguments mapping described in
-[AssociateEncryptionConfigRequestTypeDef](./type_defs.md#associateencryptionconfigrequesttypedef).
+[AssociateEncryptionConfigRequestRequestTypeDef](./type_defs.md#associateencryptionconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -114,7 +126,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[AssociateEncryptionConfigResponseResponseTypeDef](./type_defs.md#associateencryptionconfigresponseresponsetypedef).
+[AssociateEncryptionConfigResponseTypeDef](./type_defs.md#associateencryptionconfigresponsetypedef).
 
 ### associate_identity_provider_config
 
@@ -127,7 +139,7 @@ Boto3 documentation:
 [EKS.Client.associate_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.associate_identity_provider_config)
 
 Arguments mapping described in
-[AssociateIdentityProviderConfigRequestTypeDef](./type_defs.md#associateidentityproviderconfigrequesttypedef).
+[AssociateIdentityProviderConfigRequestRequestTypeDef](./type_defs.md#associateidentityproviderconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -139,7 +151,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[AssociateIdentityProviderConfigResponseResponseTypeDef](./type_defs.md#associateidentityproviderconfigresponseresponsetypedef).
+[AssociateIdentityProviderConfigResponseTypeDef](./type_defs.md#associateidentityproviderconfigresponsetypedef).
 
 ### can_paginate
 
@@ -166,7 +178,7 @@ Boto3 documentation:
 [EKS.Client.create_addon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_addon)
 
 Arguments mapping described in
-[CreateAddonRequestTypeDef](./type_defs.md#createaddonrequesttypedef).
+[CreateAddonRequestRequestTypeDef](./type_defs.md#createaddonrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -180,7 +192,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAddonResponseResponseTypeDef](./type_defs.md#createaddonresponseresponsetypedef).
+[CreateAddonResponseTypeDef](./type_defs.md#createaddonresponsetypedef).
 
 ### create_cluster
 
@@ -192,7 +204,7 @@ Boto3 documentation:
 [EKS.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_cluster)
 
 Arguments mapping described in
-[CreateClusterRequestTypeDef](./type_defs.md#createclusterrequesttypedef).
+[CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -211,11 +223,11 @@ Keyword-only arguments:
   `List`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
 
 Returns
-[CreateClusterResponseResponseTypeDef](./type_defs.md#createclusterresponseresponsetypedef).
+[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
 ### create_fargate_profile
 
-Creates an AWS Fargate profile for your Amazon EKS cluster.
+Creates an Fargate profile for your Amazon EKS cluster.
 
 Type annotations for `boto3.client("eks").create_fargate_profile` method.
 
@@ -223,7 +235,7 @@ Boto3 documentation:
 [EKS.Client.create_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_fargate_profile)
 
 Arguments mapping described in
-[CreateFargateProfileRequestTypeDef](./type_defs.md#createfargateprofilerequesttypedef).
+[CreateFargateProfileRequestRequestTypeDef](./type_defs.md#createfargateprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -237,7 +249,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateFargateProfileResponseResponseTypeDef](./type_defs.md#createfargateprofileresponseresponsetypedef).
+[CreateFargateProfileResponseTypeDef](./type_defs.md#createfargateprofileresponsetypedef).
 
 ### create_nodegroup
 
@@ -249,7 +261,7 @@ Boto3 documentation:
 [EKS.Client.create_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_nodegroup)
 
 Arguments mapping described in
-[CreateNodegroupRequestTypeDef](./type_defs.md#createnodegrouprequesttypedef).
+[CreateNodegroupRequestRequestTypeDef](./type_defs.md#createnodegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -277,7 +289,7 @@ Keyword-only arguments:
 - `releaseVersion`: `str`
 
 Returns
-[CreateNodegroupResponseResponseTypeDef](./type_defs.md#createnodegroupresponseresponsetypedef).
+[CreateNodegroupResponseTypeDef](./type_defs.md#createnodegroupresponsetypedef).
 
 ### delete_addon
 
@@ -289,7 +301,7 @@ Boto3 documentation:
 [EKS.Client.delete_addon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_addon)
 
 Arguments mapping described in
-[DeleteAddonRequestTypeDef](./type_defs.md#deleteaddonrequesttypedef).
+[DeleteAddonRequestRequestTypeDef](./type_defs.md#deleteaddonrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -297,7 +309,7 @@ Keyword-only arguments:
 - `addonName`: `str` *(required)*
 
 Returns
-[DeleteAddonResponseResponseTypeDef](./type_defs.md#deleteaddonresponseresponsetypedef).
+[DeleteAddonResponseTypeDef](./type_defs.md#deleteaddonresponsetypedef).
 
 ### delete_cluster
 
@@ -309,18 +321,18 @@ Boto3 documentation:
 [EKS.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_cluster)
 
 Arguments mapping described in
-[DeleteClusterRequestTypeDef](./type_defs.md#deleteclusterrequesttypedef).
+[DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
 Returns
-[DeleteClusterResponseResponseTypeDef](./type_defs.md#deleteclusterresponseresponsetypedef).
+[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
 
 ### delete_fargate_profile
 
-Deletes an AWS Fargate profile.
+Deletes an Fargate profile.
 
 Type annotations for `boto3.client("eks").delete_fargate_profile` method.
 
@@ -328,7 +340,7 @@ Boto3 documentation:
 [EKS.Client.delete_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_fargate_profile)
 
 Arguments mapping described in
-[DeleteFargateProfileRequestTypeDef](./type_defs.md#deletefargateprofilerequesttypedef).
+[DeleteFargateProfileRequestRequestTypeDef](./type_defs.md#deletefargateprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -336,7 +348,7 @@ Keyword-only arguments:
 - `fargateProfileName`: `str` *(required)*
 
 Returns
-[DeleteFargateProfileResponseResponseTypeDef](./type_defs.md#deletefargateprofileresponseresponsetypedef).
+[DeleteFargateProfileResponseTypeDef](./type_defs.md#deletefargateprofileresponsetypedef).
 
 ### delete_nodegroup
 
@@ -348,7 +360,7 @@ Boto3 documentation:
 [EKS.Client.delete_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_nodegroup)
 
 Arguments mapping described in
-[DeleteNodegroupRequestTypeDef](./type_defs.md#deletenodegrouprequesttypedef).
+[DeleteNodegroupRequestRequestTypeDef](./type_defs.md#deletenodegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -356,7 +368,7 @@ Keyword-only arguments:
 - `nodegroupName`: `str` *(required)*
 
 Returns
-[DeleteNodegroupResponseResponseTypeDef](./type_defs.md#deletenodegroupresponseresponsetypedef).
+[DeleteNodegroupResponseTypeDef](./type_defs.md#deletenodegroupresponsetypedef).
 
 ### describe_addon
 
@@ -368,7 +380,7 @@ Boto3 documentation:
 [EKS.Client.describe_addon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon)
 
 Arguments mapping described in
-[DescribeAddonRequestTypeDef](./type_defs.md#describeaddonrequesttypedef).
+[DescribeAddonRequestRequestTypeDef](./type_defs.md#describeaddonrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -376,7 +388,7 @@ Keyword-only arguments:
 - `addonName`: `str` *(required)*
 
 Returns
-[DescribeAddonResponseResponseTypeDef](./type_defs.md#describeaddonresponseresponsetypedef).
+[DescribeAddonResponseTypeDef](./type_defs.md#describeaddonresponsetypedef).
 
 ### describe_addon_versions
 
@@ -388,7 +400,7 @@ Boto3 documentation:
 [EKS.Client.describe_addon_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon_versions)
 
 Arguments mapping described in
-[DescribeAddonVersionsRequestTypeDef](./type_defs.md#describeaddonversionsrequesttypedef).
+[DescribeAddonVersionsRequestRequestTypeDef](./type_defs.md#describeaddonversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -398,7 +410,7 @@ Keyword-only arguments:
 - `addonName`: `str`
 
 Returns
-[DescribeAddonVersionsResponseResponseTypeDef](./type_defs.md#describeaddonversionsresponseresponsetypedef).
+[DescribeAddonVersionsResponseTypeDef](./type_defs.md#describeaddonversionsresponsetypedef).
 
 ### describe_cluster
 
@@ -410,18 +422,18 @@ Boto3 documentation:
 [EKS.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_cluster)
 
 Arguments mapping described in
-[DescribeClusterRequestTypeDef](./type_defs.md#describeclusterrequesttypedef).
+[DescribeClusterRequestRequestTypeDef](./type_defs.md#describeclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
 Returns
-[DescribeClusterResponseResponseTypeDef](./type_defs.md#describeclusterresponseresponsetypedef).
+[DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef).
 
 ### describe_fargate_profile
 
-Returns descriptive information about an AWS Fargate profile.
+Returns descriptive information about an Fargate profile.
 
 Type annotations for `boto3.client("eks").describe_fargate_profile` method.
 
@@ -429,7 +441,7 @@ Boto3 documentation:
 [EKS.Client.describe_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_fargate_profile)
 
 Arguments mapping described in
-[DescribeFargateProfileRequestTypeDef](./type_defs.md#describefargateprofilerequesttypedef).
+[DescribeFargateProfileRequestRequestTypeDef](./type_defs.md#describefargateprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -437,7 +449,7 @@ Keyword-only arguments:
 - `fargateProfileName`: `str` *(required)*
 
 Returns
-[DescribeFargateProfileResponseResponseTypeDef](./type_defs.md#describefargateprofileresponseresponsetypedef).
+[DescribeFargateProfileResponseTypeDef](./type_defs.md#describefargateprofileresponsetypedef).
 
 ### describe_identity_provider_config
 
@@ -450,7 +462,7 @@ Boto3 documentation:
 [EKS.Client.describe_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_identity_provider_config)
 
 Arguments mapping described in
-[DescribeIdentityProviderConfigRequestTypeDef](./type_defs.md#describeidentityproviderconfigrequesttypedef).
+[DescribeIdentityProviderConfigRequestRequestTypeDef](./type_defs.md#describeidentityproviderconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -460,7 +472,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DescribeIdentityProviderConfigResponseResponseTypeDef](./type_defs.md#describeidentityproviderconfigresponseresponsetypedef).
+[DescribeIdentityProviderConfigResponseTypeDef](./type_defs.md#describeidentityproviderconfigresponsetypedef).
 
 ### describe_nodegroup
 
@@ -472,7 +484,7 @@ Boto3 documentation:
 [EKS.Client.describe_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_nodegroup)
 
 Arguments mapping described in
-[DescribeNodegroupRequestTypeDef](./type_defs.md#describenodegrouprequesttypedef).
+[DescribeNodegroupRequestRequestTypeDef](./type_defs.md#describenodegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,7 +492,7 @@ Keyword-only arguments:
 - `nodegroupName`: `str` *(required)*
 
 Returns
-[DescribeNodegroupResponseResponseTypeDef](./type_defs.md#describenodegroupresponseresponsetypedef).
+[DescribeNodegroupResponseTypeDef](./type_defs.md#describenodegroupresponsetypedef).
 
 ### describe_update
 
@@ -492,7 +504,7 @@ Boto3 documentation:
 [EKS.Client.describe_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_update)
 
 Arguments mapping described in
-[DescribeUpdateRequestTypeDef](./type_defs.md#describeupdaterequesttypedef).
+[DescribeUpdateRequestRequestTypeDef](./type_defs.md#describeupdaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -502,7 +514,7 @@ Keyword-only arguments:
 - `addonName`: `str`
 
 Returns
-[DescribeUpdateResponseResponseTypeDef](./type_defs.md#describeupdateresponseresponsetypedef).
+[DescribeUpdateResponseTypeDef](./type_defs.md#describeupdateresponsetypedef).
 
 ### disassociate_identity_provider_config
 
@@ -515,7 +527,7 @@ Boto3 documentation:
 [EKS.Client.disassociate_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.disassociate_identity_provider_config)
 
 Arguments mapping described in
-[DisassociateIdentityProviderConfigRequestTypeDef](./type_defs.md#disassociateidentityproviderconfigrequesttypedef).
+[DisassociateIdentityProviderConfigRequestRequestTypeDef](./type_defs.md#disassociateidentityproviderconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -526,7 +538,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[DisassociateIdentityProviderConfigResponseResponseTypeDef](./type_defs.md#disassociateidentityproviderconfigresponseresponsetypedef).
+[DisassociateIdentityProviderConfigResponseTypeDef](./type_defs.md#disassociateidentityproviderconfigresponsetypedef).
 
 ### generate_presigned_url
 
@@ -556,7 +568,7 @@ Boto3 documentation:
 [EKS.Client.list_addons](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_addons)
 
 Arguments mapping described in
-[ListAddonsRequestTypeDef](./type_defs.md#listaddonsrequesttypedef).
+[ListAddonsRequestRequestTypeDef](./type_defs.md#listaddonsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -564,12 +576,12 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-Returns
-[ListAddonsResponseResponseTypeDef](./type_defs.md#listaddonsresponseresponsetypedef).
+Returns [ListAddonsResponseTypeDef](./type_defs.md#listaddonsresponsetypedef).
 
 ### list_clusters
 
-Lists the Amazon EKS clusters in your AWS account in the specified Region.
+Lists the Amazon EKS clusters in your Amazon Web Services account in the
+specified Region.
 
 Type annotations for `boto3.client("eks").list_clusters` method.
 
@@ -577,7 +589,7 @@ Boto3 documentation:
 [EKS.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_clusters)
 
 Arguments mapping described in
-[ListClustersRequestTypeDef](./type_defs.md#listclustersrequesttypedef).
+[ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -585,12 +597,12 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListClustersResponseResponseTypeDef](./type_defs.md#listclustersresponseresponsetypedef).
+[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
 
 ### list_fargate_profiles
 
-Lists the AWS Fargate profiles associated with the specified cluster in your
-AWS account in the specified Region.
+Lists the Fargate profiles associated with the specified cluster in your Amazon
+Web Services account in the specified Region.
 
 Type annotations for `boto3.client("eks").list_fargate_profiles` method.
 
@@ -598,7 +610,7 @@ Boto3 documentation:
 [EKS.Client.list_fargate_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_fargate_profiles)
 
 Arguments mapping described in
-[ListFargateProfilesRequestTypeDef](./type_defs.md#listfargateprofilesrequesttypedef).
+[ListFargateProfilesRequestRequestTypeDef](./type_defs.md#listfargateprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -607,7 +619,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListFargateProfilesResponseResponseTypeDef](./type_defs.md#listfargateprofilesresponseresponsetypedef).
+[ListFargateProfilesResponseTypeDef](./type_defs.md#listfargateprofilesresponsetypedef).
 
 ### list_identity_provider_configs
 
@@ -620,7 +632,7 @@ Boto3 documentation:
 [EKS.Client.list_identity_provider_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_identity_provider_configs)
 
 Arguments mapping described in
-[ListIdentityProviderConfigsRequestTypeDef](./type_defs.md#listidentityproviderconfigsrequesttypedef).
+[ListIdentityProviderConfigsRequestRequestTypeDef](./type_defs.md#listidentityproviderconfigsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -629,12 +641,12 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListIdentityProviderConfigsResponseResponseTypeDef](./type_defs.md#listidentityproviderconfigsresponseresponsetypedef).
+[ListIdentityProviderConfigsResponseTypeDef](./type_defs.md#listidentityproviderconfigsresponsetypedef).
 
 ### list_nodegroups
 
 Lists the Amazon EKS managed node groups associated with the specified cluster
-in your AWS account in the specified Region.
+in your Amazon Web Services account in the specified Region.
 
 Type annotations for `boto3.client("eks").list_nodegroups` method.
 
@@ -642,7 +654,7 @@ Boto3 documentation:
 [EKS.Client.list_nodegroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_nodegroups)
 
 Arguments mapping described in
-[ListNodegroupsRequestTypeDef](./type_defs.md#listnodegroupsrequesttypedef).
+[ListNodegroupsRequestRequestTypeDef](./type_defs.md#listnodegroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -651,7 +663,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListNodegroupsResponseResponseTypeDef](./type_defs.md#listnodegroupsresponseresponsetypedef).
+[ListNodegroupsResponseTypeDef](./type_defs.md#listnodegroupsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -663,19 +675,19 @@ Boto3 documentation:
 [EKS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_updates
 
 Lists the updates associated with an Amazon EKS cluster or managed node group
-in your AWS account, in the specified Region.
+in your Amazon Web Services account, in the specified Region.
 
 Type annotations for `boto3.client("eks").list_updates` method.
 
@@ -683,7 +695,7 @@ Boto3 documentation:
 [EKS.Client.list_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_updates)
 
 Arguments mapping described in
-[ListUpdatesRequestTypeDef](./type_defs.md#listupdatesrequesttypedef).
+[ListUpdatesRequestRequestTypeDef](./type_defs.md#listupdatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -694,7 +706,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListUpdatesResponseResponseTypeDef](./type_defs.md#listupdatesresponseresponsetypedef).
+[ListUpdatesResponseTypeDef](./type_defs.md#listupdatesresponsetypedef).
 
 ### tag_resource
 
@@ -706,7 +718,7 @@ Boto3 documentation:
 [EKS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -725,7 +737,7 @@ Boto3 documentation:
 [EKS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -744,7 +756,7 @@ Boto3 documentation:
 [EKS.Client.update_addon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_addon)
 
 Arguments mapping described in
-[UpdateAddonRequestTypeDef](./type_defs.md#updateaddonrequesttypedef).
+[UpdateAddonRequestRequestTypeDef](./type_defs.md#updateaddonrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -757,7 +769,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[UpdateAddonResponseResponseTypeDef](./type_defs.md#updateaddonresponseresponsetypedef).
+[UpdateAddonResponseTypeDef](./type_defs.md#updateaddonresponsetypedef).
 
 ### update_cluster_config
 
@@ -769,7 +781,7 @@ Boto3 documentation:
 [EKS.Client.update_cluster_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_cluster_config)
 
 Arguments mapping described in
-[UpdateClusterConfigRequestTypeDef](./type_defs.md#updateclusterconfigrequesttypedef).
+[UpdateClusterConfigRequestRequestTypeDef](./type_defs.md#updateclusterconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -780,7 +792,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[UpdateClusterConfigResponseResponseTypeDef](./type_defs.md#updateclusterconfigresponseresponsetypedef).
+[UpdateClusterConfigResponseTypeDef](./type_defs.md#updateclusterconfigresponsetypedef).
 
 ### update_cluster_version
 
@@ -792,7 +804,7 @@ Boto3 documentation:
 [EKS.Client.update_cluster_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_cluster_version)
 
 Arguments mapping described in
-[UpdateClusterVersionRequestTypeDef](./type_defs.md#updateclusterversionrequesttypedef).
+[UpdateClusterVersionRequestRequestTypeDef](./type_defs.md#updateclusterversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -801,7 +813,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[UpdateClusterVersionResponseResponseTypeDef](./type_defs.md#updateclusterversionresponseresponsetypedef).
+[UpdateClusterVersionResponseTypeDef](./type_defs.md#updateclusterversionresponsetypedef).
 
 ### update_nodegroup_config
 
@@ -813,7 +825,7 @@ Boto3 documentation:
 [EKS.Client.update_nodegroup_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_nodegroup_config)
 
 Arguments mapping described in
-[UpdateNodegroupConfigRequestTypeDef](./type_defs.md#updatenodegroupconfigrequesttypedef).
+[UpdateNodegroupConfigRequestRequestTypeDef](./type_defs.md#updatenodegroupconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -830,7 +842,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[UpdateNodegroupConfigResponseResponseTypeDef](./type_defs.md#updatenodegroupconfigresponseresponsetypedef).
+[UpdateNodegroupConfigResponseTypeDef](./type_defs.md#updatenodegroupconfigresponsetypedef).
 
 ### update_nodegroup_version
 
@@ -843,7 +855,7 @@ Boto3 documentation:
 [EKS.Client.update_nodegroup_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_nodegroup_version)
 
 Arguments mapping described in
-[UpdateNodegroupVersionRequestTypeDef](./type_defs.md#updatenodegroupversionrequesttypedef).
+[UpdateNodegroupVersionRequestRequestTypeDef](./type_defs.md#updatenodegroupversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -857,7 +869,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[UpdateNodegroupVersionResponseResponseTypeDef](./type_defs.md#updatenodegroupversionresponseresponsetypedef).
+[UpdateNodegroupVersionResponseTypeDef](./type_defs.md#updatenodegroupversionresponsetypedef).
 
 ### get_paginator
 
@@ -890,6 +902,10 @@ Type annotations for `boto3.client("eks").get_waiter` method with overloads.
   [ClusterActiveWaiter](./waiters.md#clusteractivewaiter)
 - `client.get_waiter("cluster_deleted")` ->
   [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
+- `client.get_waiter("fargate_profile_active")` ->
+  [FargateProfileActiveWaiter](./waiters.md#fargateprofileactivewaiter)
+- `client.get_waiter("fargate_profile_deleted")` ->
+  [FargateProfileDeletedWaiter](./waiters.md#fargateprofiledeletedwaiter)
 - `client.get_waiter("nodegroup_active")` ->
   [NodegroupActiveWaiter](./waiters.md#nodegroupactivewaiter)
 - `client.get_waiter("nodegroup_deleted")` ->

@@ -11,6 +11,7 @@ type annotations stubs module
   - [WAFClient](#wafclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_byte_match_set](#create_byte_match_set)
     - [create_geo_match_set](#create_geo_match_set)
@@ -145,6 +146,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+WAFClient exceptions.
+
+Type annotations for `boto3.client("waf").exceptions` method.
+
+Boto3 documentation:
+[WAF.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -170,7 +182,7 @@ Boto3 documentation:
 [WAF.Client.create_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_byte_match_set)
 
 Arguments mapping described in
-[CreateByteMatchSetRequestTypeDef](./type_defs.md#createbytematchsetrequesttypedef).
+[CreateByteMatchSetRequestRequestTypeDef](./type_defs.md#createbytematchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -178,7 +190,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateByteMatchSetResponseResponseTypeDef](./type_defs.md#createbytematchsetresponseresponsetypedef).
+[CreateByteMatchSetResponseTypeDef](./type_defs.md#createbytematchsetresponsetypedef).
 
 ### create_geo_match_set
 
@@ -190,7 +202,7 @@ Boto3 documentation:
 [WAF.Client.create_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_geo_match_set)
 
 Arguments mapping described in
-[CreateGeoMatchSetRequestTypeDef](./type_defs.md#creategeomatchsetrequesttypedef).
+[CreateGeoMatchSetRequestRequestTypeDef](./type_defs.md#creategeomatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -198,7 +210,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateGeoMatchSetResponseResponseTypeDef](./type_defs.md#creategeomatchsetresponseresponsetypedef).
+[CreateGeoMatchSetResponseTypeDef](./type_defs.md#creategeomatchsetresponsetypedef).
 
 ### create_ip_set
 
@@ -210,7 +222,7 @@ Boto3 documentation:
 [WAF.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_ip_set)
 
 Arguments mapping described in
-[CreateIPSetRequestTypeDef](./type_defs.md#createipsetrequesttypedef).
+[CreateIPSetRequestRequestTypeDef](./type_defs.md#createipsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,7 +230,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateIPSetResponseResponseTypeDef](./type_defs.md#createipsetresponseresponsetypedef).
+[CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
 
 ### create_rate_based_rule
 
@@ -230,7 +242,7 @@ Boto3 documentation:
 [WAF.Client.create_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_rate_based_rule)
 
 Arguments mapping described in
-[CreateRateBasedRuleRequestTypeDef](./type_defs.md#createratebasedrulerequesttypedef).
+[CreateRateBasedRuleRequestRequestTypeDef](./type_defs.md#createratebasedrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -243,7 +255,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRateBasedRuleResponseResponseTypeDef](./type_defs.md#createratebasedruleresponseresponsetypedef).
+[CreateRateBasedRuleResponseTypeDef](./type_defs.md#createratebasedruleresponsetypedef).
 
 ### create_regex_match_set
 
@@ -255,7 +267,7 @@ Boto3 documentation:
 [WAF.Client.create_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_regex_match_set)
 
 Arguments mapping described in
-[CreateRegexMatchSetRequestTypeDef](./type_defs.md#createregexmatchsetrequesttypedef).
+[CreateRegexMatchSetRequestRequestTypeDef](./type_defs.md#createregexmatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -263,7 +275,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateRegexMatchSetResponseResponseTypeDef](./type_defs.md#createregexmatchsetresponseresponsetypedef).
+[CreateRegexMatchSetResponseTypeDef](./type_defs.md#createregexmatchsetresponsetypedef).
 
 ### create_regex_pattern_set
 
@@ -275,7 +287,7 @@ Boto3 documentation:
 [WAF.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_regex_pattern_set)
 
 Arguments mapping described in
-[CreateRegexPatternSetRequestTypeDef](./type_defs.md#createregexpatternsetrequesttypedef).
+[CreateRegexPatternSetRequestRequestTypeDef](./type_defs.md#createregexpatternsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -283,7 +295,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateRegexPatternSetResponseResponseTypeDef](./type_defs.md#createregexpatternsetresponseresponsetypedef).
+[CreateRegexPatternSetResponseTypeDef](./type_defs.md#createregexpatternsetresponsetypedef).
 
 ### create_rule
 
@@ -295,7 +307,7 @@ Boto3 documentation:
 [WAF.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_rule)
 
 Arguments mapping described in
-[CreateRuleRequestTypeDef](./type_defs.md#createrulerequesttypedef).
+[CreateRuleRequestRequestTypeDef](./type_defs.md#createrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,8 +316,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateRuleResponseResponseTypeDef](./type_defs.md#createruleresponseresponsetypedef).
+Returns [CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef).
 
 ### create_rule_group
 
@@ -317,7 +328,7 @@ Boto3 documentation:
 [WAF.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_rule_group)
 
 Arguments mapping described in
-[CreateRuleGroupRequestTypeDef](./type_defs.md#createrulegrouprequesttypedef).
+[CreateRuleGroupRequestRequestTypeDef](./type_defs.md#createrulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -327,7 +338,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRuleGroupResponseResponseTypeDef](./type_defs.md#createrulegroupresponseresponsetypedef).
+[CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef).
 
 ### create_size_constraint_set
 
@@ -339,7 +350,7 @@ Boto3 documentation:
 [WAF.Client.create_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_size_constraint_set)
 
 Arguments mapping described in
-[CreateSizeConstraintSetRequestTypeDef](./type_defs.md#createsizeconstraintsetrequesttypedef).
+[CreateSizeConstraintSetRequestRequestTypeDef](./type_defs.md#createsizeconstraintsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -347,7 +358,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateSizeConstraintSetResponseResponseTypeDef](./type_defs.md#createsizeconstraintsetresponseresponsetypedef).
+[CreateSizeConstraintSetResponseTypeDef](./type_defs.md#createsizeconstraintsetresponsetypedef).
 
 ### create_sql_injection_match_set
 
@@ -360,7 +371,7 @@ Boto3 documentation:
 [WAF.Client.create_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_sql_injection_match_set)
 
 Arguments mapping described in
-[CreateSqlInjectionMatchSetRequestTypeDef](./type_defs.md#createsqlinjectionmatchsetrequesttypedef).
+[CreateSqlInjectionMatchSetRequestRequestTypeDef](./type_defs.md#createsqlinjectionmatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -368,7 +379,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateSqlInjectionMatchSetResponseResponseTypeDef](./type_defs.md#createsqlinjectionmatchsetresponseresponsetypedef).
+[CreateSqlInjectionMatchSetResponseTypeDef](./type_defs.md#createsqlinjectionmatchsetresponsetypedef).
 
 ### create_web_acl
 
@@ -380,7 +391,7 @@ Boto3 documentation:
 [WAF.Client.create_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_web_acl)
 
 Arguments mapping described in
-[CreateWebACLRequestTypeDef](./type_defs.md#createwebaclrequesttypedef).
+[CreateWebACLRequestRequestTypeDef](./type_defs.md#createwebaclrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -392,7 +403,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateWebACLResponseResponseTypeDef](./type_defs.md#createwebaclresponseresponsetypedef).
+[CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef).
 
 ### create_web_acl_migration_stack
 
@@ -406,7 +417,7 @@ Boto3 documentation:
 [WAF.Client.create_web_acl_migration_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_web_acl_migration_stack)
 
 Arguments mapping described in
-[CreateWebACLMigrationStackRequestTypeDef](./type_defs.md#createwebaclmigrationstackrequesttypedef).
+[CreateWebACLMigrationStackRequestRequestTypeDef](./type_defs.md#createwebaclmigrationstackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -415,7 +426,7 @@ Keyword-only arguments:
 - `IgnoreUnsupportedType`: `bool` *(required)*
 
 Returns
-[CreateWebACLMigrationStackResponseResponseTypeDef](./type_defs.md#createwebaclmigrationstackresponseresponsetypedef).
+[CreateWebACLMigrationStackResponseTypeDef](./type_defs.md#createwebaclmigrationstackresponsetypedef).
 
 ### create_xss_match_set
 
@@ -427,7 +438,7 @@ Boto3 documentation:
 [WAF.Client.create_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_xss_match_set)
 
 Arguments mapping described in
-[CreateXssMatchSetRequestTypeDef](./type_defs.md#createxssmatchsetrequesttypedef).
+[CreateXssMatchSetRequestRequestTypeDef](./type_defs.md#createxssmatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -435,7 +446,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[CreateXssMatchSetResponseResponseTypeDef](./type_defs.md#createxssmatchsetresponseresponsetypedef).
+[CreateXssMatchSetResponseTypeDef](./type_defs.md#createxssmatchsetresponsetypedef).
 
 ### delete_byte_match_set
 
@@ -447,7 +458,7 @@ Boto3 documentation:
 [WAF.Client.delete_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_byte_match_set)
 
 Arguments mapping described in
-[DeleteByteMatchSetRequestTypeDef](./type_defs.md#deletebytematchsetrequesttypedef).
+[DeleteByteMatchSetRequestRequestTypeDef](./type_defs.md#deletebytematchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -455,7 +466,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteByteMatchSetResponseResponseTypeDef](./type_defs.md#deletebytematchsetresponseresponsetypedef).
+[DeleteByteMatchSetResponseTypeDef](./type_defs.md#deletebytematchsetresponsetypedef).
 
 ### delete_geo_match_set
 
@@ -467,7 +478,7 @@ Boto3 documentation:
 [WAF.Client.delete_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_geo_match_set)
 
 Arguments mapping described in
-[DeleteGeoMatchSetRequestTypeDef](./type_defs.md#deletegeomatchsetrequesttypedef).
+[DeleteGeoMatchSetRequestRequestTypeDef](./type_defs.md#deletegeomatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -475,7 +486,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteGeoMatchSetResponseResponseTypeDef](./type_defs.md#deletegeomatchsetresponseresponsetypedef).
+[DeleteGeoMatchSetResponseTypeDef](./type_defs.md#deletegeomatchsetresponsetypedef).
 
 ### delete_ip_set
 
@@ -487,7 +498,7 @@ Boto3 documentation:
 [WAF.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_ip_set)
 
 Arguments mapping described in
-[DeleteIPSetRequestTypeDef](./type_defs.md#deleteipsetrequesttypedef).
+[DeleteIPSetRequestRequestTypeDef](./type_defs.md#deleteipsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -495,7 +506,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteIPSetResponseResponseTypeDef](./type_defs.md#deleteipsetresponseresponsetypedef).
+[DeleteIPSetResponseTypeDef](./type_defs.md#deleteipsetresponsetypedef).
 
 ### delete_logging_configuration
 
@@ -507,7 +518,7 @@ Boto3 documentation:
 [WAF.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_logging_configuration)
 
 Arguments mapping described in
-[DeleteLoggingConfigurationRequestTypeDef](./type_defs.md#deleteloggingconfigurationrequesttypedef).
+[DeleteLoggingConfigurationRequestRequestTypeDef](./type_defs.md#deleteloggingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -525,7 +536,7 @@ Boto3 documentation:
 [WAF.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_permission_policy)
 
 Arguments mapping described in
-[DeletePermissionPolicyRequestTypeDef](./type_defs.md#deletepermissionpolicyrequesttypedef).
+[DeletePermissionPolicyRequestRequestTypeDef](./type_defs.md#deletepermissionpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -543,7 +554,7 @@ Boto3 documentation:
 [WAF.Client.delete_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_rate_based_rule)
 
 Arguments mapping described in
-[DeleteRateBasedRuleRequestTypeDef](./type_defs.md#deleteratebasedrulerequesttypedef).
+[DeleteRateBasedRuleRequestRequestTypeDef](./type_defs.md#deleteratebasedrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -551,7 +562,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteRateBasedRuleResponseResponseTypeDef](./type_defs.md#deleteratebasedruleresponseresponsetypedef).
+[DeleteRateBasedRuleResponseTypeDef](./type_defs.md#deleteratebasedruleresponsetypedef).
 
 ### delete_regex_match_set
 
@@ -563,7 +574,7 @@ Boto3 documentation:
 [WAF.Client.delete_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_regex_match_set)
 
 Arguments mapping described in
-[DeleteRegexMatchSetRequestTypeDef](./type_defs.md#deleteregexmatchsetrequesttypedef).
+[DeleteRegexMatchSetRequestRequestTypeDef](./type_defs.md#deleteregexmatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -571,7 +582,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteRegexMatchSetResponseResponseTypeDef](./type_defs.md#deleteregexmatchsetresponseresponsetypedef).
+[DeleteRegexMatchSetResponseTypeDef](./type_defs.md#deleteregexmatchsetresponsetypedef).
 
 ### delete_regex_pattern_set
 
@@ -583,7 +594,7 @@ Boto3 documentation:
 [WAF.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_regex_pattern_set)
 
 Arguments mapping described in
-[DeleteRegexPatternSetRequestTypeDef](./type_defs.md#deleteregexpatternsetrequesttypedef).
+[DeleteRegexPatternSetRequestRequestTypeDef](./type_defs.md#deleteregexpatternsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -591,7 +602,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteRegexPatternSetResponseResponseTypeDef](./type_defs.md#deleteregexpatternsetresponseresponsetypedef).
+[DeleteRegexPatternSetResponseTypeDef](./type_defs.md#deleteregexpatternsetresponsetypedef).
 
 ### delete_rule
 
@@ -603,15 +614,14 @@ Boto3 documentation:
 [WAF.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_rule)
 
 Arguments mapping described in
-[DeleteRuleRequestTypeDef](./type_defs.md#deleterulerequesttypedef).
+[DeleteRuleRequestRequestTypeDef](./type_defs.md#deleterulerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 
-Returns
-[DeleteRuleResponseResponseTypeDef](./type_defs.md#deleteruleresponseresponsetypedef).
+Returns [DeleteRuleResponseTypeDef](./type_defs.md#deleteruleresponsetypedef).
 
 ### delete_rule_group
 
@@ -623,7 +633,7 @@ Boto3 documentation:
 [WAF.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_rule_group)
 
 Arguments mapping described in
-[DeleteRuleGroupRequestTypeDef](./type_defs.md#deleterulegrouprequesttypedef).
+[DeleteRuleGroupRequestRequestTypeDef](./type_defs.md#deleterulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -631,7 +641,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteRuleGroupResponseResponseTypeDef](./type_defs.md#deleterulegroupresponseresponsetypedef).
+[DeleteRuleGroupResponseTypeDef](./type_defs.md#deleterulegroupresponsetypedef).
 
 ### delete_size_constraint_set
 
@@ -643,7 +653,7 @@ Boto3 documentation:
 [WAF.Client.delete_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_size_constraint_set)
 
 Arguments mapping described in
-[DeleteSizeConstraintSetRequestTypeDef](./type_defs.md#deletesizeconstraintsetrequesttypedef).
+[DeleteSizeConstraintSetRequestRequestTypeDef](./type_defs.md#deletesizeconstraintsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -651,7 +661,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteSizeConstraintSetResponseResponseTypeDef](./type_defs.md#deletesizeconstraintsetresponseresponsetypedef).
+[DeleteSizeConstraintSetResponseTypeDef](./type_defs.md#deletesizeconstraintsetresponsetypedef).
 
 ### delete_sql_injection_match_set
 
@@ -664,7 +674,7 @@ Boto3 documentation:
 [WAF.Client.delete_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_sql_injection_match_set)
 
 Arguments mapping described in
-[DeleteSqlInjectionMatchSetRequestTypeDef](./type_defs.md#deletesqlinjectionmatchsetrequesttypedef).
+[DeleteSqlInjectionMatchSetRequestRequestTypeDef](./type_defs.md#deletesqlinjectionmatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -672,7 +682,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteSqlInjectionMatchSetResponseResponseTypeDef](./type_defs.md#deletesqlinjectionmatchsetresponseresponsetypedef).
+[DeleteSqlInjectionMatchSetResponseTypeDef](./type_defs.md#deletesqlinjectionmatchsetresponsetypedef).
 
 ### delete_web_acl
 
@@ -684,7 +694,7 @@ Boto3 documentation:
 [WAF.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_web_acl)
 
 Arguments mapping described in
-[DeleteWebACLRequestTypeDef](./type_defs.md#deletewebaclrequesttypedef).
+[DeleteWebACLRequestRequestTypeDef](./type_defs.md#deletewebaclrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -692,7 +702,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteWebACLResponseResponseTypeDef](./type_defs.md#deletewebaclresponseresponsetypedef).
+[DeleteWebACLResponseTypeDef](./type_defs.md#deletewebaclresponsetypedef).
 
 ### delete_xss_match_set
 
@@ -704,7 +714,7 @@ Boto3 documentation:
 [WAF.Client.delete_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_xss_match_set)
 
 Arguments mapping described in
-[DeleteXssMatchSetRequestTypeDef](./type_defs.md#deletexssmatchsetrequesttypedef).
+[DeleteXssMatchSetRequestRequestTypeDef](./type_defs.md#deletexssmatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -712,7 +722,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[DeleteXssMatchSetResponseResponseTypeDef](./type_defs.md#deletexssmatchsetresponseresponsetypedef).
+[DeleteXssMatchSetResponseTypeDef](./type_defs.md#deletexssmatchsetresponsetypedef).
 
 ### generate_presigned_url
 
@@ -742,14 +752,14 @@ Boto3 documentation:
 [WAF.Client.get_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_byte_match_set)
 
 Arguments mapping described in
-[GetByteMatchSetRequestTypeDef](./type_defs.md#getbytematchsetrequesttypedef).
+[GetByteMatchSetRequestRequestTypeDef](./type_defs.md#getbytematchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ByteMatchSetId`: `str` *(required)*
 
 Returns
-[GetByteMatchSetResponseResponseTypeDef](./type_defs.md#getbytematchsetresponseresponsetypedef).
+[GetByteMatchSetResponseTypeDef](./type_defs.md#getbytematchsetresponsetypedef).
 
 ### get_change_token
 
@@ -761,7 +771,7 @@ Boto3 documentation:
 [WAF.Client.get_change_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_change_token)
 
 Returns
-[GetChangeTokenResponseResponseTypeDef](./type_defs.md#getchangetokenresponseresponsetypedef).
+[GetChangeTokenResponseTypeDef](./type_defs.md#getchangetokenresponsetypedef).
 
 ### get_change_token_status
 
@@ -773,14 +783,14 @@ Boto3 documentation:
 [WAF.Client.get_change_token_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_change_token_status)
 
 Arguments mapping described in
-[GetChangeTokenStatusRequestTypeDef](./type_defs.md#getchangetokenstatusrequesttypedef).
+[GetChangeTokenStatusRequestRequestTypeDef](./type_defs.md#getchangetokenstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[GetChangeTokenStatusResponseResponseTypeDef](./type_defs.md#getchangetokenstatusresponseresponsetypedef).
+[GetChangeTokenStatusResponseTypeDef](./type_defs.md#getchangetokenstatusresponsetypedef).
 
 ### get_geo_match_set
 
@@ -792,14 +802,14 @@ Boto3 documentation:
 [WAF.Client.get_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_geo_match_set)
 
 Arguments mapping described in
-[GetGeoMatchSetRequestTypeDef](./type_defs.md#getgeomatchsetrequesttypedef).
+[GetGeoMatchSetRequestRequestTypeDef](./type_defs.md#getgeomatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GeoMatchSetId`: `str` *(required)*
 
 Returns
-[GetGeoMatchSetResponseResponseTypeDef](./type_defs.md#getgeomatchsetresponseresponsetypedef).
+[GetGeoMatchSetResponseTypeDef](./type_defs.md#getgeomatchsetresponsetypedef).
 
 ### get_ip_set
 
@@ -811,14 +821,13 @@ Boto3 documentation:
 [WAF.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_ip_set)
 
 Arguments mapping described in
-[GetIPSetRequestTypeDef](./type_defs.md#getipsetrequesttypedef).
+[GetIPSetRequestRequestTypeDef](./type_defs.md#getipsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `IPSetId`: `str` *(required)*
 
-Returns
-[GetIPSetResponseResponseTypeDef](./type_defs.md#getipsetresponseresponsetypedef).
+Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
 
 ### get_logging_configuration
 
@@ -830,14 +839,14 @@ Boto3 documentation:
 [WAF.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_logging_configuration)
 
 Arguments mapping described in
-[GetLoggingConfigurationRequestTypeDef](./type_defs.md#getloggingconfigurationrequesttypedef).
+[GetLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getloggingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[GetLoggingConfigurationResponseResponseTypeDef](./type_defs.md#getloggingconfigurationresponseresponsetypedef).
+[GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef).
 
 ### get_permission_policy
 
@@ -849,14 +858,14 @@ Boto3 documentation:
 [WAF.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_permission_policy)
 
 Arguments mapping described in
-[GetPermissionPolicyRequestTypeDef](./type_defs.md#getpermissionpolicyrequesttypedef).
+[GetPermissionPolicyRequestRequestTypeDef](./type_defs.md#getpermissionpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[GetPermissionPolicyResponseResponseTypeDef](./type_defs.md#getpermissionpolicyresponseresponsetypedef).
+[GetPermissionPolicyResponseTypeDef](./type_defs.md#getpermissionpolicyresponsetypedef).
 
 ### get_rate_based_rule
 
@@ -868,14 +877,14 @@ Boto3 documentation:
 [WAF.Client.get_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rate_based_rule)
 
 Arguments mapping described in
-[GetRateBasedRuleRequestTypeDef](./type_defs.md#getratebasedrulerequesttypedef).
+[GetRateBasedRuleRequestRequestTypeDef](./type_defs.md#getratebasedrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 
 Returns
-[GetRateBasedRuleResponseResponseTypeDef](./type_defs.md#getratebasedruleresponseresponsetypedef).
+[GetRateBasedRuleResponseTypeDef](./type_defs.md#getratebasedruleresponsetypedef).
 
 ### get_rate_based_rule_managed_keys
 
@@ -888,7 +897,7 @@ Boto3 documentation:
 [WAF.Client.get_rate_based_rule_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rate_based_rule_managed_keys)
 
 Arguments mapping described in
-[GetRateBasedRuleManagedKeysRequestTypeDef](./type_defs.md#getratebasedrulemanagedkeysrequesttypedef).
+[GetRateBasedRuleManagedKeysRequestRequestTypeDef](./type_defs.md#getratebasedrulemanagedkeysrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -896,7 +905,7 @@ Keyword-only arguments:
 - `NextMarker`: `str`
 
 Returns
-[GetRateBasedRuleManagedKeysResponseResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponseresponsetypedef).
+[GetRateBasedRuleManagedKeysResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponsetypedef).
 
 ### get_regex_match_set
 
@@ -908,14 +917,14 @@ Boto3 documentation:
 [WAF.Client.get_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_regex_match_set)
 
 Arguments mapping described in
-[GetRegexMatchSetRequestTypeDef](./type_defs.md#getregexmatchsetrequesttypedef).
+[GetRegexMatchSetRequestRequestTypeDef](./type_defs.md#getregexmatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RegexMatchSetId`: `str` *(required)*
 
 Returns
-[GetRegexMatchSetResponseResponseTypeDef](./type_defs.md#getregexmatchsetresponseresponsetypedef).
+[GetRegexMatchSetResponseTypeDef](./type_defs.md#getregexmatchsetresponsetypedef).
 
 ### get_regex_pattern_set
 
@@ -927,14 +936,14 @@ Boto3 documentation:
 [WAF.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_regex_pattern_set)
 
 Arguments mapping described in
-[GetRegexPatternSetRequestTypeDef](./type_defs.md#getregexpatternsetrequesttypedef).
+[GetRegexPatternSetRequestRequestTypeDef](./type_defs.md#getregexpatternsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RegexPatternSetId`: `str` *(required)*
 
 Returns
-[GetRegexPatternSetResponseResponseTypeDef](./type_defs.md#getregexpatternsetresponseresponsetypedef).
+[GetRegexPatternSetResponseTypeDef](./type_defs.md#getregexpatternsetresponsetypedef).
 
 ### get_rule
 
@@ -946,14 +955,13 @@ Boto3 documentation:
 [WAF.Client.get_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rule)
 
 Arguments mapping described in
-[GetRuleRequestTypeDef](./type_defs.md#getrulerequesttypedef).
+[GetRuleRequestRequestTypeDef](./type_defs.md#getrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 
-Returns
-[GetRuleResponseResponseTypeDef](./type_defs.md#getruleresponseresponsetypedef).
+Returns [GetRuleResponseTypeDef](./type_defs.md#getruleresponsetypedef).
 
 ### get_rule_group
 
@@ -965,14 +973,14 @@ Boto3 documentation:
 [WAF.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rule_group)
 
 Arguments mapping described in
-[GetRuleGroupRequestTypeDef](./type_defs.md#getrulegrouprequesttypedef).
+[GetRuleGroupRequestRequestTypeDef](./type_defs.md#getrulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RuleGroupId`: `str` *(required)*
 
 Returns
-[GetRuleGroupResponseResponseTypeDef](./type_defs.md#getrulegroupresponseresponsetypedef).
+[GetRuleGroupResponseTypeDef](./type_defs.md#getrulegroupresponsetypedef).
 
 ### get_sampled_requests
 
@@ -984,7 +992,7 @@ Boto3 documentation:
 [WAF.Client.get_sampled_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_sampled_requests)
 
 Arguments mapping described in
-[GetSampledRequestsRequestTypeDef](./type_defs.md#getsampledrequestsrequesttypedef).
+[GetSampledRequestsRequestRequestTypeDef](./type_defs.md#getsampledrequestsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -995,7 +1003,7 @@ Keyword-only arguments:
 - `MaxItems`: `int` *(required)*
 
 Returns
-[GetSampledRequestsResponseResponseTypeDef](./type_defs.md#getsampledrequestsresponseresponsetypedef).
+[GetSampledRequestsResponseTypeDef](./type_defs.md#getsampledrequestsresponsetypedef).
 
 ### get_size_constraint_set
 
@@ -1007,14 +1015,14 @@ Boto3 documentation:
 [WAF.Client.get_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_size_constraint_set)
 
 Arguments mapping described in
-[GetSizeConstraintSetRequestTypeDef](./type_defs.md#getsizeconstraintsetrequesttypedef).
+[GetSizeConstraintSetRequestRequestTypeDef](./type_defs.md#getsizeconstraintsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SizeConstraintSetId`: `str` *(required)*
 
 Returns
-[GetSizeConstraintSetResponseResponseTypeDef](./type_defs.md#getsizeconstraintsetresponseresponsetypedef).
+[GetSizeConstraintSetResponseTypeDef](./type_defs.md#getsizeconstraintsetresponsetypedef).
 
 ### get_sql_injection_match_set
 
@@ -1026,14 +1034,14 @@ Boto3 documentation:
 [WAF.Client.get_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_sql_injection_match_set)
 
 Arguments mapping described in
-[GetSqlInjectionMatchSetRequestTypeDef](./type_defs.md#getsqlinjectionmatchsetrequesttypedef).
+[GetSqlInjectionMatchSetRequestRequestTypeDef](./type_defs.md#getsqlinjectionmatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SqlInjectionMatchSetId`: `str` *(required)*
 
 Returns
-[GetSqlInjectionMatchSetResponseResponseTypeDef](./type_defs.md#getsqlinjectionmatchsetresponseresponsetypedef).
+[GetSqlInjectionMatchSetResponseTypeDef](./type_defs.md#getsqlinjectionmatchsetresponsetypedef).
 
 ### get_web_acl
 
@@ -1045,14 +1053,13 @@ Boto3 documentation:
 [WAF.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_web_acl)
 
 Arguments mapping described in
-[GetWebACLRequestTypeDef](./type_defs.md#getwebaclrequesttypedef).
+[GetWebACLRequestRequestTypeDef](./type_defs.md#getwebaclrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `WebACLId`: `str` *(required)*
 
-Returns
-[GetWebACLResponseResponseTypeDef](./type_defs.md#getwebaclresponseresponsetypedef).
+Returns [GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef).
 
 ### get_xss_match_set
 
@@ -1064,14 +1071,14 @@ Boto3 documentation:
 [WAF.Client.get_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_xss_match_set)
 
 Arguments mapping described in
-[GetXssMatchSetRequestTypeDef](./type_defs.md#getxssmatchsetrequesttypedef).
+[GetXssMatchSetRequestRequestTypeDef](./type_defs.md#getxssmatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `XssMatchSetId`: `str` *(required)*
 
 Returns
-[GetXssMatchSetResponseResponseTypeDef](./type_defs.md#getxssmatchsetresponseresponsetypedef).
+[GetXssMatchSetResponseTypeDef](./type_defs.md#getxssmatchsetresponsetypedef).
 
 ### list_activated_rules_in_rule_group
 
@@ -1084,7 +1091,7 @@ Boto3 documentation:
 [WAF.Client.list_activated_rules_in_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_activated_rules_in_rule_group)
 
 Arguments mapping described in
-[ListActivatedRulesInRuleGroupRequestTypeDef](./type_defs.md#listactivatedrulesinrulegrouprequesttypedef).
+[ListActivatedRulesInRuleGroupRequestRequestTypeDef](./type_defs.md#listactivatedrulesinrulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1093,7 +1100,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListActivatedRulesInRuleGroupResponseResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponseresponsetypedef).
+[ListActivatedRulesInRuleGroupResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponsetypedef).
 
 ### list_byte_match_sets
 
@@ -1105,7 +1112,7 @@ Boto3 documentation:
 [WAF.Client.list_byte_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_byte_match_sets)
 
 Arguments mapping described in
-[ListByteMatchSetsRequestTypeDef](./type_defs.md#listbytematchsetsrequesttypedef).
+[ListByteMatchSetsRequestRequestTypeDef](./type_defs.md#listbytematchsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1113,7 +1120,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListByteMatchSetsResponseResponseTypeDef](./type_defs.md#listbytematchsetsresponseresponsetypedef).
+[ListByteMatchSetsResponseTypeDef](./type_defs.md#listbytematchsetsresponsetypedef).
 
 ### list_geo_match_sets
 
@@ -1125,7 +1132,7 @@ Boto3 documentation:
 [WAF.Client.list_geo_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_geo_match_sets)
 
 Arguments mapping described in
-[ListGeoMatchSetsRequestTypeDef](./type_defs.md#listgeomatchsetsrequesttypedef).
+[ListGeoMatchSetsRequestRequestTypeDef](./type_defs.md#listgeomatchsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1133,7 +1140,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListGeoMatchSetsResponseResponseTypeDef](./type_defs.md#listgeomatchsetsresponseresponsetypedef).
+[ListGeoMatchSetsResponseTypeDef](./type_defs.md#listgeomatchsetsresponsetypedef).
 
 ### list_ip_sets
 
@@ -1145,15 +1152,14 @@ Boto3 documentation:
 [WAF.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_ip_sets)
 
 Arguments mapping described in
-[ListIPSetsRequestTypeDef](./type_defs.md#listipsetsrequesttypedef).
+[ListIPSetsRequestRequestTypeDef](./type_defs.md#listipsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-Returns
-[ListIPSetsResponseResponseTypeDef](./type_defs.md#listipsetsresponseresponsetypedef).
+Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
 
 ### list_logging_configurations
 
@@ -1165,7 +1171,7 @@ Boto3 documentation:
 [WAF.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_logging_configurations)
 
 Arguments mapping described in
-[ListLoggingConfigurationsRequestTypeDef](./type_defs.md#listloggingconfigurationsrequesttypedef).
+[ListLoggingConfigurationsRequestRequestTypeDef](./type_defs.md#listloggingconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1173,7 +1179,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListLoggingConfigurationsResponseResponseTypeDef](./type_defs.md#listloggingconfigurationsresponseresponsetypedef).
+[ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef).
 
 ### list_rate_based_rules
 
@@ -1185,7 +1191,7 @@ Boto3 documentation:
 [WAF.Client.list_rate_based_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_rate_based_rules)
 
 Arguments mapping described in
-[ListRateBasedRulesRequestTypeDef](./type_defs.md#listratebasedrulesrequesttypedef).
+[ListRateBasedRulesRequestRequestTypeDef](./type_defs.md#listratebasedrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1193,7 +1199,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListRateBasedRulesResponseResponseTypeDef](./type_defs.md#listratebasedrulesresponseresponsetypedef).
+[ListRateBasedRulesResponseTypeDef](./type_defs.md#listratebasedrulesresponsetypedef).
 
 ### list_regex_match_sets
 
@@ -1205,7 +1211,7 @@ Boto3 documentation:
 [WAF.Client.list_regex_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_regex_match_sets)
 
 Arguments mapping described in
-[ListRegexMatchSetsRequestTypeDef](./type_defs.md#listregexmatchsetsrequesttypedef).
+[ListRegexMatchSetsRequestRequestTypeDef](./type_defs.md#listregexmatchsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1213,7 +1219,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListRegexMatchSetsResponseResponseTypeDef](./type_defs.md#listregexmatchsetsresponseresponsetypedef).
+[ListRegexMatchSetsResponseTypeDef](./type_defs.md#listregexmatchsetsresponsetypedef).
 
 ### list_regex_pattern_sets
 
@@ -1225,7 +1231,7 @@ Boto3 documentation:
 [WAF.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_regex_pattern_sets)
 
 Arguments mapping described in
-[ListRegexPatternSetsRequestTypeDef](./type_defs.md#listregexpatternsetsrequesttypedef).
+[ListRegexPatternSetsRequestRequestTypeDef](./type_defs.md#listregexpatternsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1233,7 +1239,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListRegexPatternSetsResponseResponseTypeDef](./type_defs.md#listregexpatternsetsresponseresponsetypedef).
+[ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef).
 
 ### list_rule_groups
 
@@ -1245,7 +1251,7 @@ Boto3 documentation:
 [WAF.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_rule_groups)
 
 Arguments mapping described in
-[ListRuleGroupsRequestTypeDef](./type_defs.md#listrulegroupsrequesttypedef).
+[ListRuleGroupsRequestRequestTypeDef](./type_defs.md#listrulegroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1253,7 +1259,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListRuleGroupsResponseResponseTypeDef](./type_defs.md#listrulegroupsresponseresponsetypedef).
+[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef).
 
 ### list_rules
 
@@ -1265,15 +1271,14 @@ Boto3 documentation:
 [WAF.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_rules)
 
 Arguments mapping described in
-[ListRulesRequestTypeDef](./type_defs.md#listrulesrequesttypedef).
+[ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextMarker`: `str`
 - `Limit`: `int`
 
-Returns
-[ListRulesResponseResponseTypeDef](./type_defs.md#listrulesresponseresponsetypedef).
+Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
 
 ### list_size_constraint_sets
 
@@ -1285,7 +1290,7 @@ Boto3 documentation:
 [WAF.Client.list_size_constraint_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_size_constraint_sets)
 
 Arguments mapping described in
-[ListSizeConstraintSetsRequestTypeDef](./type_defs.md#listsizeconstraintsetsrequesttypedef).
+[ListSizeConstraintSetsRequestRequestTypeDef](./type_defs.md#listsizeconstraintsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1293,7 +1298,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListSizeConstraintSetsResponseResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponseresponsetypedef).
+[ListSizeConstraintSetsResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponsetypedef).
 
 ### list_sql_injection_match_sets
 
@@ -1306,7 +1311,7 @@ Boto3 documentation:
 [WAF.Client.list_sql_injection_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_sql_injection_match_sets)
 
 Arguments mapping described in
-[ListSqlInjectionMatchSetsRequestTypeDef](./type_defs.md#listsqlinjectionmatchsetsrequesttypedef).
+[ListSqlInjectionMatchSetsRequestRequestTypeDef](./type_defs.md#listsqlinjectionmatchsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1314,7 +1319,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListSqlInjectionMatchSetsResponseResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponseresponsetypedef).
+[ListSqlInjectionMatchSetsResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponsetypedef).
 
 ### list_subscribed_rule_groups
 
@@ -1326,7 +1331,7 @@ Boto3 documentation:
 [WAF.Client.list_subscribed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_subscribed_rule_groups)
 
 Arguments mapping described in
-[ListSubscribedRuleGroupsRequestTypeDef](./type_defs.md#listsubscribedrulegroupsrequesttypedef).
+[ListSubscribedRuleGroupsRequestRequestTypeDef](./type_defs.md#listsubscribedrulegroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1334,7 +1339,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListSubscribedRuleGroupsResponseResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponseresponsetypedef).
+[ListSubscribedRuleGroupsResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1346,7 +1351,7 @@ Boto3 documentation:
 [WAF.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1355,7 +1360,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_web_acls
 
@@ -1367,7 +1372,7 @@ Boto3 documentation:
 [WAF.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_web_acls)
 
 Arguments mapping described in
-[ListWebACLsRequestTypeDef](./type_defs.md#listwebaclsrequesttypedef).
+[ListWebACLsRequestRequestTypeDef](./type_defs.md#listwebaclsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1375,7 +1380,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListWebACLsResponseResponseTypeDef](./type_defs.md#listwebaclsresponseresponsetypedef).
+[ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef).
 
 ### list_xss_match_sets
 
@@ -1387,7 +1392,7 @@ Boto3 documentation:
 [WAF.Client.list_xss_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_xss_match_sets)
 
 Arguments mapping described in
-[ListXssMatchSetsRequestTypeDef](./type_defs.md#listxssmatchsetsrequesttypedef).
+[ListXssMatchSetsRequestRequestTypeDef](./type_defs.md#listxssmatchsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1395,7 +1400,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns
-[ListXssMatchSetsResponseResponseTypeDef](./type_defs.md#listxssmatchsetsresponseresponsetypedef).
+[ListXssMatchSetsResponseTypeDef](./type_defs.md#listxssmatchsetsresponsetypedef).
 
 ### put_logging_configuration
 
@@ -1407,7 +1412,7 @@ Boto3 documentation:
 [WAF.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.put_logging_configuration)
 
 Arguments mapping described in
-[PutLoggingConfigurationRequestTypeDef](./type_defs.md#putloggingconfigurationrequesttypedef).
+[PutLoggingConfigurationRequestRequestTypeDef](./type_defs.md#putloggingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1416,7 +1421,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutLoggingConfigurationResponseResponseTypeDef](./type_defs.md#putloggingconfigurationresponseresponsetypedef).
+[PutLoggingConfigurationResponseTypeDef](./type_defs.md#putloggingconfigurationresponsetypedef).
 
 ### put_permission_policy
 
@@ -1428,7 +1433,7 @@ Boto3 documentation:
 [WAF.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.put_permission_policy)
 
 Arguments mapping described in
-[PutPermissionPolicyRequestTypeDef](./type_defs.md#putpermissionpolicyrequesttypedef).
+[PutPermissionPolicyRequestRequestTypeDef](./type_defs.md#putpermissionpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1447,7 +1452,7 @@ Boto3 documentation:
 [WAF.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1466,7 +1471,7 @@ Boto3 documentation:
 [WAF.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1485,7 +1490,7 @@ Boto3 documentation:
 [WAF.Client.update_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_byte_match_set)
 
 Arguments mapping described in
-[UpdateByteMatchSetRequestTypeDef](./type_defs.md#updatebytematchsetrequesttypedef).
+[UpdateByteMatchSetRequestRequestTypeDef](./type_defs.md#updatebytematchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1496,7 +1501,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateByteMatchSetResponseResponseTypeDef](./type_defs.md#updatebytematchsetresponseresponsetypedef).
+[UpdateByteMatchSetResponseTypeDef](./type_defs.md#updatebytematchsetresponsetypedef).
 
 ### update_geo_match_set
 
@@ -1508,7 +1513,7 @@ Boto3 documentation:
 [WAF.Client.update_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_geo_match_set)
 
 Arguments mapping described in
-[UpdateGeoMatchSetRequestTypeDef](./type_defs.md#updategeomatchsetrequesttypedef).
+[UpdateGeoMatchSetRequestRequestTypeDef](./type_defs.md#updategeomatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1519,7 +1524,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateGeoMatchSetResponseResponseTypeDef](./type_defs.md#updategeomatchsetresponseresponsetypedef).
+[UpdateGeoMatchSetResponseTypeDef](./type_defs.md#updategeomatchsetresponsetypedef).
 
 ### update_ip_set
 
@@ -1531,7 +1536,7 @@ Boto3 documentation:
 [WAF.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_ip_set)
 
 Arguments mapping described in
-[UpdateIPSetRequestTypeDef](./type_defs.md#updateipsetrequesttypedef).
+[UpdateIPSetRequestRequestTypeDef](./type_defs.md#updateipsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1541,7 +1546,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateIPSetResponseResponseTypeDef](./type_defs.md#updateipsetresponseresponsetypedef).
+[UpdateIPSetResponseTypeDef](./type_defs.md#updateipsetresponsetypedef).
 
 ### update_rate_based_rule
 
@@ -1553,7 +1558,7 @@ Boto3 documentation:
 [WAF.Client.update_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_rate_based_rule)
 
 Arguments mapping described in
-[UpdateRateBasedRuleRequestTypeDef](./type_defs.md#updateratebasedrulerequesttypedef).
+[UpdateRateBasedRuleRequestRequestTypeDef](./type_defs.md#updateratebasedrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1564,7 +1569,7 @@ Keyword-only arguments:
 - `RateLimit`: `int` *(required)*
 
 Returns
-[UpdateRateBasedRuleResponseResponseTypeDef](./type_defs.md#updateratebasedruleresponseresponsetypedef).
+[UpdateRateBasedRuleResponseTypeDef](./type_defs.md#updateratebasedruleresponsetypedef).
 
 ### update_regex_match_set
 
@@ -1576,7 +1581,7 @@ Boto3 documentation:
 [WAF.Client.update_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_regex_match_set)
 
 Arguments mapping described in
-[UpdateRegexMatchSetRequestTypeDef](./type_defs.md#updateregexmatchsetrequesttypedef).
+[UpdateRegexMatchSetRequestRequestTypeDef](./type_defs.md#updateregexmatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1587,7 +1592,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[UpdateRegexMatchSetResponseResponseTypeDef](./type_defs.md#updateregexmatchsetresponseresponsetypedef).
+[UpdateRegexMatchSetResponseTypeDef](./type_defs.md#updateregexmatchsetresponsetypedef).
 
 ### update_regex_pattern_set
 
@@ -1599,7 +1604,7 @@ Boto3 documentation:
 [WAF.Client.update_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_regex_pattern_set)
 
 Arguments mapping described in
-[UpdateRegexPatternSetRequestTypeDef](./type_defs.md#updateregexpatternsetrequesttypedef).
+[UpdateRegexPatternSetRequestRequestTypeDef](./type_defs.md#updateregexpatternsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1610,7 +1615,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[UpdateRegexPatternSetResponseResponseTypeDef](./type_defs.md#updateregexpatternsetresponseresponsetypedef).
+[UpdateRegexPatternSetResponseTypeDef](./type_defs.md#updateregexpatternsetresponsetypedef).
 
 ### update_rule
 
@@ -1622,7 +1627,7 @@ Boto3 documentation:
 [WAF.Client.update_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_rule)
 
 Arguments mapping described in
-[UpdateRuleRequestTypeDef](./type_defs.md#updaterulerequesttypedef).
+[UpdateRuleRequestRequestTypeDef](./type_defs.md#updaterulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1631,8 +1636,7 @@ Keyword-only arguments:
 - `Updates`: `List`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
   *(required)*
 
-Returns
-[UpdateRuleResponseResponseTypeDef](./type_defs.md#updateruleresponseresponsetypedef).
+Returns [UpdateRuleResponseTypeDef](./type_defs.md#updateruleresponsetypedef).
 
 ### update_rule_group
 
@@ -1644,7 +1648,7 @@ Boto3 documentation:
 [WAF.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_rule_group)
 
 Arguments mapping described in
-[UpdateRuleGroupRequestTypeDef](./type_defs.md#updaterulegrouprequesttypedef).
+[UpdateRuleGroupRequestRequestTypeDef](./type_defs.md#updaterulegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1655,7 +1659,7 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns
-[UpdateRuleGroupResponseResponseTypeDef](./type_defs.md#updaterulegroupresponseresponsetypedef).
+[UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef).
 
 ### update_size_constraint_set
 
@@ -1667,7 +1671,7 @@ Boto3 documentation:
 [WAF.Client.update_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_size_constraint_set)
 
 Arguments mapping described in
-[UpdateSizeConstraintSetRequestTypeDef](./type_defs.md#updatesizeconstraintsetrequesttypedef).
+[UpdateSizeConstraintSetRequestRequestTypeDef](./type_defs.md#updatesizeconstraintsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1678,7 +1682,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateSizeConstraintSetResponseResponseTypeDef](./type_defs.md#updatesizeconstraintsetresponseresponsetypedef).
+[UpdateSizeConstraintSetResponseTypeDef](./type_defs.md#updatesizeconstraintsetresponsetypedef).
 
 ### update_sql_injection_match_set
 
@@ -1691,7 +1695,7 @@ Boto3 documentation:
 [WAF.Client.update_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_sql_injection_match_set)
 
 Arguments mapping described in
-[UpdateSqlInjectionMatchSetRequestTypeDef](./type_defs.md#updatesqlinjectionmatchsetrequesttypedef).
+[UpdateSqlInjectionMatchSetRequestRequestTypeDef](./type_defs.md#updatesqlinjectionmatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1702,7 +1706,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateSqlInjectionMatchSetResponseResponseTypeDef](./type_defs.md#updatesqlinjectionmatchsetresponseresponsetypedef).
+[UpdateSqlInjectionMatchSetResponseTypeDef](./type_defs.md#updatesqlinjectionmatchsetresponsetypedef).
 
 ### update_web_acl
 
@@ -1714,7 +1718,7 @@ Boto3 documentation:
 [WAF.Client.update_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_web_acl)
 
 Arguments mapping described in
-[UpdateWebACLRequestTypeDef](./type_defs.md#updatewebaclrequesttypedef).
+[UpdateWebACLRequestRequestTypeDef](./type_defs.md#updatewebaclrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1725,7 +1729,7 @@ Keyword-only arguments:
 - `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
 
 Returns
-[UpdateWebACLResponseResponseTypeDef](./type_defs.md#updatewebaclresponseresponsetypedef).
+[UpdateWebACLResponseTypeDef](./type_defs.md#updatewebaclresponsetypedef).
 
 ### update_xss_match_set
 
@@ -1737,7 +1741,7 @@ Boto3 documentation:
 [WAF.Client.update_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_xss_match_set)
 
 Arguments mapping described in
-[UpdateXssMatchSetRequestTypeDef](./type_defs.md#updatexssmatchsetrequesttypedef).
+[UpdateXssMatchSetRequestRequestTypeDef](./type_defs.md#updatexssmatchsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1748,7 +1752,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateXssMatchSetResponseResponseTypeDef](./type_defs.md#updatexssmatchsetresponseresponsetypedef).
+[UpdateXssMatchSetResponseTypeDef](./type_defs.md#updatexssmatchsetresponsetypedef).
 
 ### get_paginator
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [LambdaClient](#lambdaclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_layer_version_permission](#add_layer_version_permission)
     - [add_permission](#add_permission)
     - [can_paginate](#can_paginate)
@@ -142,10 +143,21 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+LambdaClient exceptions.
+
+Type annotations for `boto3.client("lambda").exceptions` method.
+
+Boto3 documentation:
+[Lambda.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_layer_version_permission
 
 Adds permissions to the resource-based policy of a version of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration- layers.html>`\_\_.
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
 
 Type annotations for `boto3.client("lambda").add_layer_version_permission`
 method.
@@ -154,7 +166,7 @@ Boto3 documentation:
 [Lambda.Client.add_layer_version_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_layer_version_permission)
 
 Arguments mapping described in
-[AddLayerVersionPermissionRequestTypeDef](./type_defs.md#addlayerversionpermissionrequesttypedef).
+[AddLayerVersionPermissionRequestRequestTypeDef](./type_defs.md#addlayerversionpermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,11 +179,12 @@ Keyword-only arguments:
 - `RevisionId`: `str`
 
 Returns
-[AddLayerVersionPermissionResponseResponseTypeDef](./type_defs.md#addlayerversionpermissionresponseresponsetypedef).
+[AddLayerVersionPermissionResponseTypeDef](./type_defs.md#addlayerversionpermissionresponsetypedef).
 
 ### add_permission
 
-Grants an AWS service or another account permission to use a function.
+Grants an Amazon Web Services service or another account permission to use a
+function.
 
 Type annotations for `boto3.client("lambda").add_permission` method.
 
@@ -179,7 +192,7 @@ Boto3 documentation:
 [Lambda.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_permission)
 
 Arguments mapping described in
-[AddPermissionRequestTypeDef](./type_defs.md#addpermissionrequesttypedef).
+[AddPermissionRequestRequestTypeDef](./type_defs.md#addpermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -194,7 +207,7 @@ Keyword-only arguments:
 - `RevisionId`: `str`
 
 Returns
-[AddPermissionResponseResponseTypeDef](./type_defs.md#addpermissionresponseresponsetypedef).
+[AddPermissionResponseTypeDef](./type_defs.md#addpermissionresponsetypedef).
 
 ### can_paginate
 
@@ -223,7 +236,7 @@ Boto3 documentation:
 [Lambda.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_alias)
 
 Arguments mapping described in
-[CreateAliasRequestTypeDef](./type_defs.md#createaliasrequesttypedef).
+[CreateAliasRequestRequestTypeDef](./type_defs.md#createaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -235,7 +248,7 @@ Keyword-only arguments:
   [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
 
 Returns
-[AliasConfigurationResponseTypeDef](./type_defs.md#aliasconfigurationresponsetypedef).
+[AliasConfigurationResponseMetadataTypeDef](./type_defs.md#aliasconfigurationresponsemetadatatypedef).
 
 ### create_code_signing_config
 
@@ -248,7 +261,7 @@ Boto3 documentation:
 [Lambda.Client.create_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_code_signing_config)
 
 Arguments mapping described in
-[CreateCodeSigningConfigRequestTypeDef](./type_defs.md#createcodesigningconfigrequesttypedef).
+[CreateCodeSigningConfigRequestRequestTypeDef](./type_defs.md#createcodesigningconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -260,11 +273,11 @@ Keyword-only arguments:
   [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
 
 Returns
-[CreateCodeSigningConfigResponseResponseTypeDef](./type_defs.md#createcodesigningconfigresponseresponsetypedef).
+[CreateCodeSigningConfigResponseTypeDef](./type_defs.md#createcodesigningconfigresponsetypedef).
 
 ### create_event_source_mapping
 
-Creates a mapping between an event source and an AWS Lambda function.
+Creates a mapping between an event source and an Lambda function.
 
 Type annotations for `boto3.client("lambda").create_event_source_mapping`
 method.
@@ -273,7 +286,7 @@ Boto3 documentation:
 [Lambda.Client.create_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_event_source_mapping)
 
 Arguments mapping described in
-[CreateEventSourceMappingRequestTypeDef](./type_defs.md#createeventsourcemappingrequesttypedef).
+[CreateEventSourceMappingRequestRequestTypeDef](./type_defs.md#createeventsourcemappingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -302,7 +315,7 @@ Keyword-only arguments:
   [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
 Returns
-[EventSourceMappingConfigurationResponseTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsetypedef).
+[EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
 
 ### create_function
 
@@ -314,7 +327,7 @@ Boto3 documentation:
 [Lambda.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_function)
 
 Arguments mapping described in
-[CreateFunctionRequestTypeDef](./type_defs.md#createfunctionrequesttypedef).
+[CreateFunctionRequestRequestTypeDef](./type_defs.md#createfunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -343,7 +356,7 @@ Keyword-only arguments:
 - `CodeSigningConfigArn`: `str`
 
 Returns
-[FunctionConfigurationResponseTypeDef](./type_defs.md#functionconfigurationresponsetypedef).
+[FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
 
 ### delete_alias
 
@@ -357,7 +370,7 @@ Boto3 documentation:
 [Lambda.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_alias)
 
 Arguments mapping described in
-[DeleteAliasRequestTypeDef](./type_defs.md#deletealiasrequesttypedef).
+[DeleteAliasRequestRequestTypeDef](./type_defs.md#deletealiasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -375,7 +388,7 @@ Boto3 documentation:
 [Lambda.Client.delete_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_code_signing_config)
 
 Arguments mapping described in
-[DeleteCodeSigningConfigRequestTypeDef](./type_defs.md#deletecodesigningconfigrequesttypedef).
+[DeleteCodeSigningConfigRequestRequestTypeDef](./type_defs.md#deletecodesigningconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -395,14 +408,14 @@ Boto3 documentation:
 [Lambda.Client.delete_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_event_source_mapping)
 
 Arguments mapping described in
-[DeleteEventSourceMappingRequestTypeDef](./type_defs.md#deleteeventsourcemappingrequesttypedef).
+[DeleteEventSourceMappingRequestRequestTypeDef](./type_defs.md#deleteeventsourcemappingrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `UUID`: `str` *(required)*
 
 Returns
-[EventSourceMappingConfigurationResponseTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsetypedef).
+[EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
 
 ### delete_function
 
@@ -414,7 +427,7 @@ Boto3 documentation:
 [Lambda.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function)
 
 Arguments mapping described in
-[DeleteFunctionRequestTypeDef](./type_defs.md#deletefunctionrequesttypedef).
+[DeleteFunctionRequestRequestTypeDef](./type_defs.md#deletefunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -432,7 +445,7 @@ Boto3 documentation:
 [Lambda.Client.delete_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_code_signing_config)
 
 Arguments mapping described in
-[DeleteFunctionCodeSigningConfigRequestTypeDef](./type_defs.md#deletefunctioncodesigningconfigrequesttypedef).
+[DeleteFunctionCodeSigningConfigRequestRequestTypeDef](./type_defs.md#deletefunctioncodesigningconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,7 +462,7 @@ Boto3 documentation:
 [Lambda.Client.delete_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_concurrency)
 
 Arguments mapping described in
-[DeleteFunctionConcurrencyRequestTypeDef](./type_defs.md#deletefunctionconcurrencyrequesttypedef).
+[DeleteFunctionConcurrencyRequestRequestTypeDef](./type_defs.md#deletefunctionconcurrencyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -467,7 +480,7 @@ Boto3 documentation:
 [Lambda.Client.delete_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_event_invoke_config)
 
 Arguments mapping described in
-[DeleteFunctionEventInvokeConfigRequestTypeDef](./type_defs.md#deletefunctioneventinvokeconfigrequesttypedef).
+[DeleteFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#deletefunctioneventinvokeconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -477,7 +490,7 @@ Keyword-only arguments:
 ### delete_layer_version
 
 Deletes a version of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
 
 Type annotations for `boto3.client("lambda").delete_layer_version` method.
 
@@ -485,7 +498,7 @@ Boto3 documentation:
 [Lambda.Client.delete_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_layer_version)
 
 Arguments mapping described in
-[DeleteLayerVersionRequestTypeDef](./type_defs.md#deletelayerversionrequesttypedef).
+[DeleteLayerVersionRequestRequestTypeDef](./type_defs.md#deletelayerversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -503,7 +516,7 @@ Boto3 documentation:
 [Lambda.Client.delete_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_provisioned_concurrency_config)
 
 Arguments mapping described in
-[DeleteProvisionedConcurrencyConfigRequestTypeDef](./type_defs.md#deleteprovisionedconcurrencyconfigrequesttypedef).
+[DeleteProvisionedConcurrencyConfigRequestRequestTypeDef](./type_defs.md#deleteprovisionedconcurrencyconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -532,7 +545,7 @@ Returns `str`.
 
 Retrieves details about your account's
 `limits <https://docs.aws.amazon.com/lambda/latest/dg/limits.html>`\_\_ and
-usage in an AWS Region.
+usage in an Amazon Web Services Region.
 
 Type annotations for `boto3.client("lambda").get_account_settings` method.
 
@@ -540,7 +553,7 @@ Boto3 documentation:
 [Lambda.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_account_settings)
 
 Returns
-[GetAccountSettingsResponseResponseTypeDef](./type_defs.md#getaccountsettingsresponseresponsetypedef).
+[GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef).
 
 ### get_alias
 
@@ -554,7 +567,7 @@ Boto3 documentation:
 [Lambda.Client.get_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_alias)
 
 Arguments mapping described in
-[GetAliasRequestTypeDef](./type_defs.md#getaliasrequesttypedef).
+[GetAliasRequestRequestTypeDef](./type_defs.md#getaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -562,7 +575,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[AliasConfigurationResponseTypeDef](./type_defs.md#aliasconfigurationresponsetypedef).
+[AliasConfigurationResponseMetadataTypeDef](./type_defs.md#aliasconfigurationresponsemetadatatypedef).
 
 ### get_code_signing_config
 
@@ -574,14 +587,14 @@ Boto3 documentation:
 [Lambda.Client.get_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_code_signing_config)
 
 Arguments mapping described in
-[GetCodeSigningConfigRequestTypeDef](./type_defs.md#getcodesigningconfigrequesttypedef).
+[GetCodeSigningConfigRequestRequestTypeDef](./type_defs.md#getcodesigningconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CodeSigningConfigArn`: `str` *(required)*
 
 Returns
-[GetCodeSigningConfigResponseResponseTypeDef](./type_defs.md#getcodesigningconfigresponseresponsetypedef).
+[GetCodeSigningConfigResponseTypeDef](./type_defs.md#getcodesigningconfigresponsetypedef).
 
 ### get_event_source_mapping
 
@@ -593,14 +606,14 @@ Boto3 documentation:
 [Lambda.Client.get_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_event_source_mapping)
 
 Arguments mapping described in
-[GetEventSourceMappingRequestTypeDef](./type_defs.md#geteventsourcemappingrequesttypedef).
+[GetEventSourceMappingRequestRequestTypeDef](./type_defs.md#geteventsourcemappingrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `UUID`: `str` *(required)*
 
 Returns
-[EventSourceMappingConfigurationResponseTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsetypedef).
+[EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
 
 ### get_function
 
@@ -613,7 +626,7 @@ Boto3 documentation:
 [Lambda.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function)
 
 Arguments mapping described in
-[GetFunctionRequestTypeDef](./type_defs.md#getfunctionrequesttypedef).
+[GetFunctionRequestRequestTypeDef](./type_defs.md#getfunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -621,7 +634,7 @@ Keyword-only arguments:
 - `Qualifier`: `str`
 
 Returns
-[GetFunctionResponseResponseTypeDef](./type_defs.md#getfunctionresponseresponsetypedef).
+[GetFunctionResponseTypeDef](./type_defs.md#getfunctionresponsetypedef).
 
 ### get_function_code_signing_config
 
@@ -634,14 +647,14 @@ Boto3 documentation:
 [Lambda.Client.get_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_code_signing_config)
 
 Arguments mapping described in
-[GetFunctionCodeSigningConfigRequestTypeDef](./type_defs.md#getfunctioncodesigningconfigrequesttypedef).
+[GetFunctionCodeSigningConfigRequestRequestTypeDef](./type_defs.md#getfunctioncodesigningconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 
 Returns
-[GetFunctionCodeSigningConfigResponseResponseTypeDef](./type_defs.md#getfunctioncodesigningconfigresponseresponsetypedef).
+[GetFunctionCodeSigningConfigResponseTypeDef](./type_defs.md#getfunctioncodesigningconfigresponsetypedef).
 
 ### get_function_concurrency
 
@@ -653,14 +666,14 @@ Boto3 documentation:
 [Lambda.Client.get_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_concurrency)
 
 Arguments mapping described in
-[GetFunctionConcurrencyRequestTypeDef](./type_defs.md#getfunctionconcurrencyrequesttypedef).
+[GetFunctionConcurrencyRequestRequestTypeDef](./type_defs.md#getfunctionconcurrencyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 
 Returns
-[GetFunctionConcurrencyResponseResponseTypeDef](./type_defs.md#getfunctionconcurrencyresponseresponsetypedef).
+[GetFunctionConcurrencyResponseTypeDef](./type_defs.md#getfunctionconcurrencyresponsetypedef).
 
 ### get_function_configuration
 
@@ -673,7 +686,7 @@ Boto3 documentation:
 [Lambda.Client.get_function_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_configuration)
 
 Arguments mapping described in
-[GetFunctionConfigurationRequestTypeDef](./type_defs.md#getfunctionconfigurationrequesttypedef).
+[GetFunctionConfigurationRequestRequestTypeDef](./type_defs.md#getfunctionconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -681,7 +694,7 @@ Keyword-only arguments:
 - `Qualifier`: `str`
 
 Returns
-[FunctionConfigurationResponseTypeDef](./type_defs.md#functionconfigurationresponsetypedef).
+[FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
 
 ### get_function_event_invoke_config
 
@@ -695,7 +708,7 @@ Boto3 documentation:
 [Lambda.Client.get_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_event_invoke_config)
 
 Arguments mapping described in
-[GetFunctionEventInvokeConfigRequestTypeDef](./type_defs.md#getfunctioneventinvokeconfigrequesttypedef).
+[GetFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#getfunctioneventinvokeconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -703,12 +716,12 @@ Keyword-only arguments:
 - `Qualifier`: `str`
 
 Returns
-[FunctionEventInvokeConfigResponseTypeDef](./type_defs.md#functioneventinvokeconfigresponsetypedef).
+[FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef).
 
 ### get_layer_version
 
 Returns information about a version of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
 , with a link to download the layer archive that's valid for 10 minutes.
 
 Type annotations for `boto3.client("lambda").get_layer_version` method.
@@ -717,7 +730,7 @@ Boto3 documentation:
 [Lambda.Client.get_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version)
 
 Arguments mapping described in
-[GetLayerVersionRequestTypeDef](./type_defs.md#getlayerversionrequesttypedef).
+[GetLayerVersionRequestRequestTypeDef](./type_defs.md#getlayerversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -725,12 +738,12 @@ Keyword-only arguments:
 - `VersionNumber`: `int` *(required)*
 
 Returns
-[GetLayerVersionResponseResponseTypeDef](./type_defs.md#getlayerversionresponseresponsetypedef).
+[GetLayerVersionResponseTypeDef](./type_defs.md#getlayerversionresponsetypedef).
 
 ### get_layer_version_by_arn
 
 Returns information about a version of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
 , with a link to download the layer archive that's valid for 10 minutes.
 
 Type annotations for `boto3.client("lambda").get_layer_version_by_arn` method.
@@ -739,19 +752,19 @@ Boto3 documentation:
 [Lambda.Client.get_layer_version_by_arn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_by_arn)
 
 Arguments mapping described in
-[GetLayerVersionByArnRequestTypeDef](./type_defs.md#getlayerversionbyarnrequesttypedef).
+[GetLayerVersionByArnRequestRequestTypeDef](./type_defs.md#getlayerversionbyarnrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[GetLayerVersionResponseResponseTypeDef](./type_defs.md#getlayerversionresponseresponsetypedef).
+[GetLayerVersionResponseTypeDef](./type_defs.md#getlayerversionresponsetypedef).
 
 ### get_layer_version_policy
 
 Returns the permission policy for a version of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
 
 Type annotations for `boto3.client("lambda").get_layer_version_policy` method.
 
@@ -759,7 +772,7 @@ Boto3 documentation:
 [Lambda.Client.get_layer_version_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_policy)
 
 Arguments mapping described in
-[GetLayerVersionPolicyRequestTypeDef](./type_defs.md#getlayerversionpolicyrequesttypedef).
+[GetLayerVersionPolicyRequestRequestTypeDef](./type_defs.md#getlayerversionpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -767,7 +780,7 @@ Keyword-only arguments:
 - `VersionNumber`: `int` *(required)*
 
 Returns
-[GetLayerVersionPolicyResponseResponseTypeDef](./type_defs.md#getlayerversionpolicyresponseresponsetypedef).
+[GetLayerVersionPolicyResponseTypeDef](./type_defs.md#getlayerversionpolicyresponsetypedef).
 
 ### get_policy
 
@@ -781,15 +794,14 @@ Boto3 documentation:
 [Lambda.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_policy)
 
 Arguments mapping described in
-[GetPolicyRequestTypeDef](./type_defs.md#getpolicyrequesttypedef).
+[GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
 
-Returns
-[GetPolicyResponseResponseTypeDef](./type_defs.md#getpolicyresponseresponsetypedef).
+Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
 ### get_provisioned_concurrency_config
 
@@ -803,7 +815,7 @@ Boto3 documentation:
 [Lambda.Client.get_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_provisioned_concurrency_config)
 
 Arguments mapping described in
-[GetProvisionedConcurrencyConfigRequestTypeDef](./type_defs.md#getprovisionedconcurrencyconfigrequesttypedef).
+[GetProvisionedConcurrencyConfigRequestRequestTypeDef](./type_defs.md#getprovisionedconcurrencyconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -811,7 +823,7 @@ Keyword-only arguments:
 - `Qualifier`: `str` *(required)*
 
 Returns
-[GetProvisionedConcurrencyConfigResponseResponseTypeDef](./type_defs.md#getprovisionedconcurrencyconfigresponseresponsetypedef).
+[GetProvisionedConcurrencyConfigResponseTypeDef](./type_defs.md#getprovisionedconcurrencyconfigresponsetypedef).
 
 ### invoke
 
@@ -823,7 +835,7 @@ Boto3 documentation:
 [Lambda.Client.invoke](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke)
 
 Arguments mapping described in
-[InvocationRequestTypeDef](./type_defs.md#invocationrequesttypedef).
+[InvocationRequestRequestTypeDef](./type_defs.md#invocationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -846,7 +858,7 @@ Boto3 documentation:
 [Lambda.Client.invoke_async](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke_async)
 
 Arguments mapping described in
-[InvokeAsyncRequestTypeDef](./type_defs.md#invokeasyncrequesttypedef).
+[InvokeAsyncRequestRequestTypeDef](./type_defs.md#invokeasyncrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -855,7 +867,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[InvokeAsyncResponseResponseTypeDef](./type_defs.md#invokeasyncresponseresponsetypedef).
+[InvokeAsyncResponseTypeDef](./type_defs.md#invokeasyncresponsetypedef).
 
 ### list_aliases
 
@@ -869,7 +881,7 @@ Boto3 documentation:
 [Lambda.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_aliases)
 
 Arguments mapping described in
-[ListAliasesRequestTypeDef](./type_defs.md#listaliasesrequesttypedef).
+[ListAliasesRequestRequestTypeDef](./type_defs.md#listaliasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -879,7 +891,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListAliasesResponseResponseTypeDef](./type_defs.md#listaliasesresponseresponsetypedef).
+[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef).
 
 ### list_code_signing_configs
 
@@ -892,7 +904,7 @@ Boto3 documentation:
 [Lambda.Client.list_code_signing_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_code_signing_configs)
 
 Arguments mapping described in
-[ListCodeSigningConfigsRequestTypeDef](./type_defs.md#listcodesigningconfigsrequesttypedef).
+[ListCodeSigningConfigsRequestRequestTypeDef](./type_defs.md#listcodesigningconfigsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -900,7 +912,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListCodeSigningConfigsResponseResponseTypeDef](./type_defs.md#listcodesigningconfigsresponseresponsetypedef).
+[ListCodeSigningConfigsResponseTypeDef](./type_defs.md#listcodesigningconfigsresponsetypedef).
 
 ### list_event_source_mappings
 
@@ -913,7 +925,7 @@ Boto3 documentation:
 [Lambda.Client.list_event_source_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_event_source_mappings)
 
 Arguments mapping described in
-[ListEventSourceMappingsRequestTypeDef](./type_defs.md#listeventsourcemappingsrequesttypedef).
+[ListEventSourceMappingsRequestRequestTypeDef](./type_defs.md#listeventsourcemappingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -923,7 +935,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListEventSourceMappingsResponseResponseTypeDef](./type_defs.md#listeventsourcemappingsresponseresponsetypedef).
+[ListEventSourceMappingsResponseTypeDef](./type_defs.md#listeventsourcemappingsresponsetypedef).
 
 ### list_function_event_invoke_configs
 
@@ -936,7 +948,7 @@ Boto3 documentation:
 [Lambda.Client.list_function_event_invoke_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_function_event_invoke_configs)
 
 Arguments mapping described in
-[ListFunctionEventInvokeConfigsRequestTypeDef](./type_defs.md#listfunctioneventinvokeconfigsrequesttypedef).
+[ListFunctionEventInvokeConfigsRequestRequestTypeDef](./type_defs.md#listfunctioneventinvokeconfigsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -945,7 +957,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListFunctionEventInvokeConfigsResponseResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponseresponsetypedef).
+[ListFunctionEventInvokeConfigsResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponsetypedef).
 
 ### list_functions
 
@@ -958,7 +970,7 @@ Boto3 documentation:
 [Lambda.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions)
 
 Arguments mapping described in
-[ListFunctionsRequestTypeDef](./type_defs.md#listfunctionsrequesttypedef).
+[ListFunctionsRequestRequestTypeDef](./type_defs.md#listfunctionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -969,7 +981,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListFunctionsResponseResponseTypeDef](./type_defs.md#listfunctionsresponseresponsetypedef).
+[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef).
 
 ### list_functions_by_code_signing_config
 
@@ -982,7 +994,7 @@ Boto3 documentation:
 [Lambda.Client.list_functions_by_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions_by_code_signing_config)
 
 Arguments mapping described in
-[ListFunctionsByCodeSigningConfigRequestTypeDef](./type_defs.md#listfunctionsbycodesigningconfigrequesttypedef).
+[ListFunctionsByCodeSigningConfigRequestRequestTypeDef](./type_defs.md#listfunctionsbycodesigningconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -991,12 +1003,12 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListFunctionsByCodeSigningConfigResponseResponseTypeDef](./type_defs.md#listfunctionsbycodesigningconfigresponseresponsetypedef).
+[ListFunctionsByCodeSigningConfigResponseTypeDef](./type_defs.md#listfunctionsbycodesigningconfigresponsetypedef).
 
 ### list_layer_versions
 
 Lists the versions of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_.
 
 Type annotations for `boto3.client("lambda").list_layer_versions` method.
 
@@ -1004,7 +1016,7 @@ Boto3 documentation:
 [Lambda.Client.list_layer_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layer_versions)
 
 Arguments mapping described in
-[ListLayerVersionsRequestTypeDef](./type_defs.md#listlayerversionsrequesttypedef).
+[ListLayerVersionsRequestRequestTypeDef](./type_defs.md#listlayerversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1014,12 +1026,12 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListLayerVersionsResponseResponseTypeDef](./type_defs.md#listlayerversionsresponseresponsetypedef).
+[ListLayerVersionsResponseTypeDef](./type_defs.md#listlayerversionsresponsetypedef).
 
 ### list_layers
 
 Lists
-`AWS Lambda layers <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+`Lambda layers <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
 and shows information about the latest version of each.
 
 Type annotations for `boto3.client("lambda").list_layers` method.
@@ -1028,7 +1040,7 @@ Boto3 documentation:
 [Lambda.Client.list_layers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layers)
 
 Arguments mapping described in
-[ListLayersRequestTypeDef](./type_defs.md#listlayersrequesttypedef).
+[ListLayersRequestRequestTypeDef](./type_defs.md#listlayersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1036,8 +1048,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-Returns
-[ListLayersResponseResponseTypeDef](./type_defs.md#listlayersresponseresponsetypedef).
+Returns [ListLayersResponseTypeDef](./type_defs.md#listlayersresponsetypedef).
 
 ### list_provisioned_concurrency_configs
 
@@ -1050,7 +1061,7 @@ Boto3 documentation:
 [Lambda.Client.list_provisioned_concurrency_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_provisioned_concurrency_configs)
 
 Arguments mapping described in
-[ListProvisionedConcurrencyConfigsRequestTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsrequesttypedef).
+[ListProvisionedConcurrencyConfigsRequestRequestTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1059,7 +1070,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListProvisionedConcurrencyConfigsResponseResponseTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsresponseresponsetypedef).
+[ListProvisionedConcurrencyConfigsResponseTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsresponsetypedef).
 
 ### list_tags
 
@@ -1072,14 +1083,13 @@ Boto3 documentation:
 [Lambda.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_tags)
 
 Arguments mapping described in
-[ListTagsRequestTypeDef](./type_defs.md#listtagsrequesttypedef).
+[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
 
-Returns
-[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### list_versions_by_function
 
@@ -1093,7 +1103,7 @@ Boto3 documentation:
 [Lambda.Client.list_versions_by_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_versions_by_function)
 
 Arguments mapping described in
-[ListVersionsByFunctionRequestTypeDef](./type_defs.md#listversionsbyfunctionrequesttypedef).
+[ListVersionsByFunctionRequestRequestTypeDef](./type_defs.md#listversionsbyfunctionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1102,12 +1112,12 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListVersionsByFunctionResponseResponseTypeDef](./type_defs.md#listversionsbyfunctionresponseresponsetypedef).
+[ListVersionsByFunctionResponseTypeDef](./type_defs.md#listversionsbyfunctionresponsetypedef).
 
 ### publish_layer_version
 
 Creates an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
 from a ZIP archive.
 
 Type annotations for `boto3.client("lambda").publish_layer_version` method.
@@ -1116,7 +1126,7 @@ Boto3 documentation:
 [Lambda.Client.publish_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_layer_version)
 
 Arguments mapping described in
-[PublishLayerVersionRequestTypeDef](./type_defs.md#publishlayerversionrequesttypedef).
+[PublishLayerVersionRequestRequestTypeDef](./type_defs.md#publishlayerversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1129,7 +1139,7 @@ Keyword-only arguments:
 - `LicenseInfo`: `str`
 
 Returns
-[PublishLayerVersionResponseResponseTypeDef](./type_defs.md#publishlayerversionresponseresponsetypedef).
+[PublishLayerVersionResponseTypeDef](./type_defs.md#publishlayerversionresponsetypedef).
 
 ### publish_version
 
@@ -1143,7 +1153,7 @@ Boto3 documentation:
 [Lambda.Client.publish_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_version)
 
 Arguments mapping described in
-[PublishVersionRequestTypeDef](./type_defs.md#publishversionrequesttypedef).
+[PublishVersionRequestRequestTypeDef](./type_defs.md#publishversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1153,7 +1163,7 @@ Keyword-only arguments:
 - `RevisionId`: `str`
 
 Returns
-[FunctionConfigurationResponseTypeDef](./type_defs.md#functionconfigurationresponsetypedef).
+[FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
 
 ### put_function_code_signing_config
 
@@ -1166,7 +1176,7 @@ Boto3 documentation:
 [Lambda.Client.put_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_code_signing_config)
 
 Arguments mapping described in
-[PutFunctionCodeSigningConfigRequestTypeDef](./type_defs.md#putfunctioncodesigningconfigrequesttypedef).
+[PutFunctionCodeSigningConfigRequestRequestTypeDef](./type_defs.md#putfunctioncodesigningconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1174,7 +1184,7 @@ Keyword-only arguments:
 - `FunctionName`: `str` *(required)*
 
 Returns
-[PutFunctionCodeSigningConfigResponseResponseTypeDef](./type_defs.md#putfunctioncodesigningconfigresponseresponsetypedef).
+[PutFunctionCodeSigningConfigResponseTypeDef](./type_defs.md#putfunctioncodesigningconfigresponsetypedef).
 
 ### put_function_concurrency
 
@@ -1187,14 +1197,15 @@ Boto3 documentation:
 [Lambda.Client.put_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_concurrency)
 
 Arguments mapping described in
-[PutFunctionConcurrencyRequestTypeDef](./type_defs.md#putfunctionconcurrencyrequesttypedef).
+[PutFunctionConcurrencyRequestRequestTypeDef](./type_defs.md#putfunctionconcurrencyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FunctionName`: `str` *(required)*
 - `ReservedConcurrentExecutions`: `int` *(required)*
 
-Returns [ConcurrencyTypeDef](./type_defs.md#concurrencytypedef).
+Returns
+[ConcurrencyResponseMetadataTypeDef](./type_defs.md#concurrencyresponsemetadatatypedef).
 
 ### put_function_event_invoke_config
 
@@ -1209,7 +1220,7 @@ Boto3 documentation:
 [Lambda.Client.put_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_event_invoke_config)
 
 Arguments mapping described in
-[PutFunctionEventInvokeConfigRequestTypeDef](./type_defs.md#putfunctioneventinvokeconfigrequesttypedef).
+[PutFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#putfunctioneventinvokeconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1221,7 +1232,7 @@ Keyword-only arguments:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 
 Returns
-[FunctionEventInvokeConfigResponseTypeDef](./type_defs.md#functioneventinvokeconfigresponsetypedef).
+[FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef).
 
 ### put_provisioned_concurrency_config
 
@@ -1234,7 +1245,7 @@ Boto3 documentation:
 [Lambda.Client.put_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_provisioned_concurrency_config)
 
 Arguments mapping described in
-[PutProvisionedConcurrencyConfigRequestTypeDef](./type_defs.md#putprovisionedconcurrencyconfigrequesttypedef).
+[PutProvisionedConcurrencyConfigRequestRequestTypeDef](./type_defs.md#putprovisionedconcurrencyconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1243,12 +1254,12 @@ Keyword-only arguments:
 - `ProvisionedConcurrentExecutions`: `int` *(required)*
 
 Returns
-[PutProvisionedConcurrencyConfigResponseResponseTypeDef](./type_defs.md#putprovisionedconcurrencyconfigresponseresponsetypedef).
+[PutProvisionedConcurrencyConfigResponseTypeDef](./type_defs.md#putprovisionedconcurrencyconfigresponsetypedef).
 
 ### remove_layer_version_permission
 
 Removes a statement from the permissions policy for a version of an
-`AWS Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration- layers.html>`\_\_.
+`Lambda layer <https://docs.aws.amazon.com/lambda/latest/dg/configuration- layers.html>`\_\_.
 
 Type annotations for `boto3.client("lambda").remove_layer_version_permission`
 method.
@@ -1257,7 +1268,7 @@ Boto3 documentation:
 [Lambda.Client.remove_layer_version_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_layer_version_permission)
 
 Arguments mapping described in
-[RemoveLayerVersionPermissionRequestTypeDef](./type_defs.md#removelayerversionpermissionrequesttypedef).
+[RemoveLayerVersionPermissionRequestRequestTypeDef](./type_defs.md#removelayerversionpermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1268,7 +1279,8 @@ Keyword-only arguments:
 
 ### remove_permission
 
-Revokes function-use permission from an AWS service or another account.
+Revokes function-use permission from an Amazon Web Services service or another
+account.
 
 Type annotations for `boto3.client("lambda").remove_permission` method.
 
@@ -1276,7 +1288,7 @@ Boto3 documentation:
 [Lambda.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_permission)
 
 Arguments mapping described in
-[RemovePermissionRequestTypeDef](./type_defs.md#removepermissionrequesttypedef).
+[RemovePermissionRequestRequestTypeDef](./type_defs.md#removepermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1296,7 +1308,7 @@ Boto3 documentation:
 [Lambda.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1314,7 +1326,7 @@ Boto3 documentation:
 [Lambda.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1333,7 +1345,7 @@ Boto3 documentation:
 [Lambda.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_alias)
 
 Arguments mapping described in
-[UpdateAliasRequestTypeDef](./type_defs.md#updatealiasrequesttypedef).
+[UpdateAliasRequestRequestTypeDef](./type_defs.md#updatealiasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1346,7 +1358,7 @@ Keyword-only arguments:
 - `RevisionId`: `str`
 
 Returns
-[AliasConfigurationResponseTypeDef](./type_defs.md#aliasconfigurationresponsetypedef).
+[AliasConfigurationResponseMetadataTypeDef](./type_defs.md#aliasconfigurationresponsemetadatatypedef).
 
 ### update_code_signing_config
 
@@ -1359,7 +1371,7 @@ Boto3 documentation:
 [Lambda.Client.update_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_code_signing_config)
 
 Arguments mapping described in
-[UpdateCodeSigningConfigRequestTypeDef](./type_defs.md#updatecodesigningconfigrequesttypedef).
+[UpdateCodeSigningConfigRequestRequestTypeDef](./type_defs.md#updatecodesigningconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1371,7 +1383,7 @@ Keyword-only arguments:
   [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
 
 Returns
-[UpdateCodeSigningConfigResponseResponseTypeDef](./type_defs.md#updatecodesigningconfigresponseresponsetypedef).
+[UpdateCodeSigningConfigResponseTypeDef](./type_defs.md#updatecodesigningconfigresponsetypedef).
 
 ### update_event_source_mapping
 
@@ -1384,7 +1396,7 @@ Boto3 documentation:
 [Lambda.Client.update_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_event_source_mapping)
 
 Arguments mapping described in
-[UpdateEventSourceMappingRequestTypeDef](./type_defs.md#updateeventsourcemappingrequesttypedef).
+[UpdateEventSourceMappingRequestRequestTypeDef](./type_defs.md#updateeventsourcemappingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1406,7 +1418,7 @@ Keyword-only arguments:
   [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
 Returns
-[EventSourceMappingConfigurationResponseTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsetypedef).
+[EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
 
 ### update_function_code
 
@@ -1418,7 +1430,7 @@ Boto3 documentation:
 [Lambda.Client.update_function_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_code)
 
 Arguments mapping described in
-[UpdateFunctionCodeRequestTypeDef](./type_defs.md#updatefunctioncoderequesttypedef).
+[UpdateFunctionCodeRequestRequestTypeDef](./type_defs.md#updatefunctioncoderequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1433,7 +1445,7 @@ Keyword-only arguments:
 - `RevisionId`: `str`
 
 Returns
-[FunctionConfigurationResponseTypeDef](./type_defs.md#functionconfigurationresponsetypedef).
+[FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
 
 ### update_function_configuration
 
@@ -1446,7 +1458,7 @@ Boto3 documentation:
 [Lambda.Client.update_function_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_configuration)
 
 Arguments mapping described in
-[UpdateFunctionConfigurationRequestTypeDef](./type_defs.md#updatefunctionconfigurationrequesttypedef).
+[UpdateFunctionConfigurationRequestRequestTypeDef](./type_defs.md#updatefunctionconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1470,7 +1482,7 @@ Keyword-only arguments:
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 
 Returns
-[FunctionConfigurationResponseTypeDef](./type_defs.md#functionconfigurationresponsetypedef).
+[FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
 
 ### update_function_event_invoke_config
 
@@ -1484,7 +1496,7 @@ Boto3 documentation:
 [Lambda.Client.update_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_event_invoke_config)
 
 Arguments mapping described in
-[UpdateFunctionEventInvokeConfigRequestTypeDef](./type_defs.md#updatefunctioneventinvokeconfigrequesttypedef).
+[UpdateFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#updatefunctioneventinvokeconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1496,7 +1508,7 @@ Keyword-only arguments:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 
 Returns
-[FunctionEventInvokeConfigResponseTypeDef](./type_defs.md#functioneventinvokeconfigresponsetypedef).
+[FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef).
 
 ### get_paginator
 

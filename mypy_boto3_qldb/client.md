@@ -11,6 +11,7 @@ type annotations stubs module
   - [QLDBClient](#qldbclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_journal_kinesis_stream](#cancel_journal_kinesis_stream)
     - [create_ledger](#create_ledger)
@@ -74,6 +75,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+QLDBClient exceptions.
+
+Type annotations for `boto3.client("qldb").exceptions` method.
+
+Boto3 documentation:
+[QLDB.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -100,7 +112,7 @@ Boto3 documentation:
 [QLDB.Client.cancel_journal_kinesis_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.cancel_journal_kinesis_stream)
 
 Arguments mapping described in
-[CancelJournalKinesisStreamRequestTypeDef](./type_defs.md#canceljournalkinesisstreamrequesttypedef).
+[CancelJournalKinesisStreamRequestRequestTypeDef](./type_defs.md#canceljournalkinesisstreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -108,7 +120,7 @@ Keyword-only arguments:
 - `StreamId`: `str` *(required)*
 
 Returns
-[CancelJournalKinesisStreamResponseResponseTypeDef](./type_defs.md#canceljournalkinesisstreamresponseresponsetypedef).
+[CancelJournalKinesisStreamResponseTypeDef](./type_defs.md#canceljournalkinesisstreamresponsetypedef).
 
 ### create_ledger
 
@@ -120,7 +132,7 @@ Boto3 documentation:
 [QLDB.Client.create_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.create_ledger)
 
 Arguments mapping described in
-[CreateLedgerRequestTypeDef](./type_defs.md#createledgerrequesttypedef).
+[CreateLedgerRequestRequestTypeDef](./type_defs.md#createledgerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -131,7 +143,7 @@ Keyword-only arguments:
 - `DeletionProtection`: `bool`
 
 Returns
-[CreateLedgerResponseResponseTypeDef](./type_defs.md#createledgerresponseresponsetypedef).
+[CreateLedgerResponseTypeDef](./type_defs.md#createledgerresponsetypedef).
 
 ### delete_ledger
 
@@ -143,7 +155,7 @@ Boto3 documentation:
 [QLDB.Client.delete_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.delete_ledger)
 
 Arguments mapping described in
-[DeleteLedgerRequestTypeDef](./type_defs.md#deleteledgerrequesttypedef).
+[DeleteLedgerRequestRequestTypeDef](./type_defs.md#deleteledgerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -160,7 +172,7 @@ Boto3 documentation:
 [QLDB.Client.describe_journal_kinesis_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_journal_kinesis_stream)
 
 Arguments mapping described in
-[DescribeJournalKinesisStreamRequestTypeDef](./type_defs.md#describejournalkinesisstreamrequesttypedef).
+[DescribeJournalKinesisStreamRequestRequestTypeDef](./type_defs.md#describejournalkinesisstreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -168,7 +180,7 @@ Keyword-only arguments:
 - `StreamId`: `str` *(required)*
 
 Returns
-[DescribeJournalKinesisStreamResponseResponseTypeDef](./type_defs.md#describejournalkinesisstreamresponseresponsetypedef).
+[DescribeJournalKinesisStreamResponseTypeDef](./type_defs.md#describejournalkinesisstreamresponsetypedef).
 
 ### describe_journal_s3_export
 
@@ -182,7 +194,7 @@ Boto3 documentation:
 [QLDB.Client.describe_journal_s3_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_journal_s3_export)
 
 Arguments mapping described in
-[DescribeJournalS3ExportRequestTypeDef](./type_defs.md#describejournals3exportrequesttypedef).
+[DescribeJournalS3ExportRequestRequestTypeDef](./type_defs.md#describejournals3exportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -190,7 +202,7 @@ Keyword-only arguments:
 - `ExportId`: `str` *(required)*
 
 Returns
-[DescribeJournalS3ExportResponseResponseTypeDef](./type_defs.md#describejournals3exportresponseresponsetypedef).
+[DescribeJournalS3ExportResponseTypeDef](./type_defs.md#describejournals3exportresponsetypedef).
 
 ### describe_ledger
 
@@ -203,14 +215,14 @@ Boto3 documentation:
 [QLDB.Client.describe_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_ledger)
 
 Arguments mapping described in
-[DescribeLedgerRequestTypeDef](./type_defs.md#describeledgerrequesttypedef).
+[DescribeLedgerRequestRequestTypeDef](./type_defs.md#describeledgerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeLedgerResponseResponseTypeDef](./type_defs.md#describeledgerresponseresponsetypedef).
+[DescribeLedgerResponseTypeDef](./type_defs.md#describeledgerresponsetypedef).
 
 ### export_journal_to_s3
 
@@ -223,7 +235,7 @@ Boto3 documentation:
 [QLDB.Client.export_journal_to_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.export_journal_to_s3)
 
 Arguments mapping described in
-[ExportJournalToS3RequestTypeDef](./type_defs.md#exportjournaltos3requesttypedef).
+[ExportJournalToS3RequestRequestTypeDef](./type_defs.md#exportjournaltos3requestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -236,7 +248,7 @@ Keyword-only arguments:
 - `RoleArn`: `str` *(required)*
 
 Returns
-[ExportJournalToS3ResponseResponseTypeDef](./type_defs.md#exportjournaltos3responseresponsetypedef).
+[ExportJournalToS3ResponseTypeDef](./type_defs.md#exportjournaltos3responsetypedef).
 
 ### generate_presigned_url
 
@@ -266,7 +278,7 @@ Boto3 documentation:
 [QLDB.Client.get_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_block)
 
 Arguments mapping described in
-[GetBlockRequestTypeDef](./type_defs.md#getblockrequesttypedef).
+[GetBlockRequestRequestTypeDef](./type_defs.md#getblockrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -275,8 +287,7 @@ Keyword-only arguments:
   *(required)*
 - `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
-Returns
-[GetBlockResponseResponseTypeDef](./type_defs.md#getblockresponseresponsetypedef).
+Returns [GetBlockResponseTypeDef](./type_defs.md#getblockresponsetypedef).
 
 ### get_digest
 
@@ -288,14 +299,13 @@ Boto3 documentation:
 [QLDB.Client.get_digest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_digest)
 
 Arguments mapping described in
-[GetDigestRequestTypeDef](./type_defs.md#getdigestrequesttypedef).
+[GetDigestRequestRequestTypeDef](./type_defs.md#getdigestrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetDigestResponseResponseTypeDef](./type_defs.md#getdigestresponseresponsetypedef).
+Returns [GetDigestResponseTypeDef](./type_defs.md#getdigestresponsetypedef).
 
 ### get_revision
 
@@ -307,7 +317,7 @@ Boto3 documentation:
 [QLDB.Client.get_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_revision)
 
 Arguments mapping described in
-[GetRevisionRequestTypeDef](./type_defs.md#getrevisionrequesttypedef).
+[GetRevisionRequestRequestTypeDef](./type_defs.md#getrevisionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -318,7 +328,7 @@ Keyword-only arguments:
 - `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
 Returns
-[GetRevisionResponseResponseTypeDef](./type_defs.md#getrevisionresponseresponsetypedef).
+[GetRevisionResponseTypeDef](./type_defs.md#getrevisionresponsetypedef).
 
 ### list_journal_kinesis_streams_for_ledger
 
@@ -332,7 +342,7 @@ Boto3 documentation:
 [QLDB.Client.list_journal_kinesis_streams_for_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_kinesis_streams_for_ledger)
 
 Arguments mapping described in
-[ListJournalKinesisStreamsForLedgerRequestTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerrequesttypedef).
+[ListJournalKinesisStreamsForLedgerRequestRequestTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -341,7 +351,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListJournalKinesisStreamsForLedgerResponseResponseTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerresponseresponsetypedef).
+[ListJournalKinesisStreamsForLedgerResponseTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerresponsetypedef).
 
 ### list_journal_s3_exports
 
@@ -354,7 +364,7 @@ Boto3 documentation:
 [QLDB.Client.list_journal_s3_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports)
 
 Arguments mapping described in
-[ListJournalS3ExportsRequestTypeDef](./type_defs.md#listjournals3exportsrequesttypedef).
+[ListJournalS3ExportsRequestRequestTypeDef](./type_defs.md#listjournals3exportsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,7 +372,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListJournalS3ExportsResponseResponseTypeDef](./type_defs.md#listjournals3exportsresponseresponsetypedef).
+[ListJournalS3ExportsResponseTypeDef](./type_defs.md#listjournals3exportsresponsetypedef).
 
 ### list_journal_s3_exports_for_ledger
 
@@ -375,7 +385,7 @@ Boto3 documentation:
 [QLDB.Client.list_journal_s3_exports_for_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports_for_ledger)
 
 Arguments mapping described in
-[ListJournalS3ExportsForLedgerRequestTypeDef](./type_defs.md#listjournals3exportsforledgerrequesttypedef).
+[ListJournalS3ExportsForLedgerRequestRequestTypeDef](./type_defs.md#listjournals3exportsforledgerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -384,7 +394,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListJournalS3ExportsForLedgerResponseResponseTypeDef](./type_defs.md#listjournals3exportsforledgerresponseresponsetypedef).
+[ListJournalS3ExportsForLedgerResponseTypeDef](./type_defs.md#listjournals3exportsforledgerresponsetypedef).
 
 ### list_ledgers
 
@@ -397,7 +407,7 @@ Boto3 documentation:
 [QLDB.Client.list_ledgers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_ledgers)
 
 Arguments mapping described in
-[ListLedgersRequestTypeDef](./type_defs.md#listledgersrequesttypedef).
+[ListLedgersRequestRequestTypeDef](./type_defs.md#listledgersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,7 +415,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLedgersResponseResponseTypeDef](./type_defs.md#listledgersresponseresponsetypedef).
+[ListLedgersResponseTypeDef](./type_defs.md#listledgersresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -417,14 +427,14 @@ Boto3 documentation:
 [QLDB.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### stream_journal_to_kinesis
 
@@ -436,7 +446,7 @@ Boto3 documentation:
 [QLDB.Client.stream_journal_to_kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.stream_journal_to_kinesis)
 
 Arguments mapping described in
-[StreamJournalToKinesisRequestTypeDef](./type_defs.md#streamjournaltokinesisrequesttypedef).
+[StreamJournalToKinesisRequestRequestTypeDef](./type_defs.md#streamjournaltokinesisrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -451,7 +461,7 @@ Keyword-only arguments:
 - `ExclusiveEndTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[StreamJournalToKinesisResponseResponseTypeDef](./type_defs.md#streamjournaltokinesisresponseresponsetypedef).
+[StreamJournalToKinesisResponseTypeDef](./type_defs.md#streamjournaltokinesisresponsetypedef).
 
 ### tag_resource
 
@@ -463,7 +473,7 @@ Boto3 documentation:
 [QLDB.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -482,7 +492,7 @@ Boto3 documentation:
 [QLDB.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -501,7 +511,7 @@ Boto3 documentation:
 [QLDB.Client.update_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.update_ledger)
 
 Arguments mapping described in
-[UpdateLedgerRequestTypeDef](./type_defs.md#updateledgerrequesttypedef).
+[UpdateLedgerRequestRequestTypeDef](./type_defs.md#updateledgerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -509,7 +519,7 @@ Keyword-only arguments:
 - `DeletionProtection`: `bool`
 
 Returns
-[UpdateLedgerResponseResponseTypeDef](./type_defs.md#updateledgerresponseresponsetypedef).
+[UpdateLedgerResponseTypeDef](./type_defs.md#updateledgerresponsetypedef).
 
 ### update_ledger_permissions_mode
 
@@ -522,7 +532,7 @@ Boto3 documentation:
 [QLDB.Client.update_ledger_permissions_mode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.update_ledger_permissions_mode)
 
 Arguments mapping described in
-[UpdateLedgerPermissionsModeRequestTypeDef](./type_defs.md#updateledgerpermissionsmoderequesttypedef).
+[UpdateLedgerPermissionsModeRequestRequestTypeDef](./type_defs.md#updateledgerpermissionsmoderequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -531,4 +541,4 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateLedgerPermissionsModeResponseResponseTypeDef](./type_defs.md#updateledgerpermissionsmoderesponseresponsetypedef).
+[UpdateLedgerPermissionsModeResponseTypeDef](./type_defs.md#updateledgerpermissionsmoderesponsetypedef).

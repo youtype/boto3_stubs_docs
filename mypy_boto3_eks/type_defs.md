@@ -13,46 +13,46 @@ type annotations stubs module
   - [AddonIssueTypeDef](#addonissuetypedef)
   - [AddonTypeDef](#addontypedef)
   - [AddonVersionInfoTypeDef](#addonversioninfotypedef)
-  - [AssociateEncryptionConfigRequestTypeDef](#associateencryptionconfigrequesttypedef)
-  - [AssociateEncryptionConfigResponseResponseTypeDef](#associateencryptionconfigresponseresponsetypedef)
-  - [AssociateIdentityProviderConfigRequestTypeDef](#associateidentityproviderconfigrequesttypedef)
-  - [AssociateIdentityProviderConfigResponseResponseTypeDef](#associateidentityproviderconfigresponseresponsetypedef)
+  - [AssociateEncryptionConfigRequestRequestTypeDef](#associateencryptionconfigrequestrequesttypedef)
+  - [AssociateEncryptionConfigResponseTypeDef](#associateencryptionconfigresponsetypedef)
+  - [AssociateIdentityProviderConfigRequestRequestTypeDef](#associateidentityproviderconfigrequestrequesttypedef)
+  - [AssociateIdentityProviderConfigResponseTypeDef](#associateidentityproviderconfigresponsetypedef)
   - [AutoScalingGroupTypeDef](#autoscalinggrouptypedef)
   - [CertificateTypeDef](#certificatetypedef)
   - [ClusterTypeDef](#clustertypedef)
   - [CompatibilityTypeDef](#compatibilitytypedef)
-  - [CreateAddonRequestTypeDef](#createaddonrequesttypedef)
-  - [CreateAddonResponseResponseTypeDef](#createaddonresponseresponsetypedef)
-  - [CreateClusterRequestTypeDef](#createclusterrequesttypedef)
-  - [CreateClusterResponseResponseTypeDef](#createclusterresponseresponsetypedef)
-  - [CreateFargateProfileRequestTypeDef](#createfargateprofilerequesttypedef)
-  - [CreateFargateProfileResponseResponseTypeDef](#createfargateprofileresponseresponsetypedef)
-  - [CreateNodegroupRequestTypeDef](#createnodegrouprequesttypedef)
-  - [CreateNodegroupResponseResponseTypeDef](#createnodegroupresponseresponsetypedef)
-  - [DeleteAddonRequestTypeDef](#deleteaddonrequesttypedef)
-  - [DeleteAddonResponseResponseTypeDef](#deleteaddonresponseresponsetypedef)
-  - [DeleteClusterRequestTypeDef](#deleteclusterrequesttypedef)
-  - [DeleteClusterResponseResponseTypeDef](#deleteclusterresponseresponsetypedef)
-  - [DeleteFargateProfileRequestTypeDef](#deletefargateprofilerequesttypedef)
-  - [DeleteFargateProfileResponseResponseTypeDef](#deletefargateprofileresponseresponsetypedef)
-  - [DeleteNodegroupRequestTypeDef](#deletenodegrouprequesttypedef)
-  - [DeleteNodegroupResponseResponseTypeDef](#deletenodegroupresponseresponsetypedef)
-  - [DescribeAddonRequestTypeDef](#describeaddonrequesttypedef)
-  - [DescribeAddonResponseResponseTypeDef](#describeaddonresponseresponsetypedef)
-  - [DescribeAddonVersionsRequestTypeDef](#describeaddonversionsrequesttypedef)
-  - [DescribeAddonVersionsResponseResponseTypeDef](#describeaddonversionsresponseresponsetypedef)
-  - [DescribeClusterRequestTypeDef](#describeclusterrequesttypedef)
-  - [DescribeClusterResponseResponseTypeDef](#describeclusterresponseresponsetypedef)
-  - [DescribeFargateProfileRequestTypeDef](#describefargateprofilerequesttypedef)
-  - [DescribeFargateProfileResponseResponseTypeDef](#describefargateprofileresponseresponsetypedef)
-  - [DescribeIdentityProviderConfigRequestTypeDef](#describeidentityproviderconfigrequesttypedef)
-  - [DescribeIdentityProviderConfigResponseResponseTypeDef](#describeidentityproviderconfigresponseresponsetypedef)
-  - [DescribeNodegroupRequestTypeDef](#describenodegrouprequesttypedef)
-  - [DescribeNodegroupResponseResponseTypeDef](#describenodegroupresponseresponsetypedef)
-  - [DescribeUpdateRequestTypeDef](#describeupdaterequesttypedef)
-  - [DescribeUpdateResponseResponseTypeDef](#describeupdateresponseresponsetypedef)
-  - [DisassociateIdentityProviderConfigRequestTypeDef](#disassociateidentityproviderconfigrequesttypedef)
-  - [DisassociateIdentityProviderConfigResponseResponseTypeDef](#disassociateidentityproviderconfigresponseresponsetypedef)
+  - [CreateAddonRequestRequestTypeDef](#createaddonrequestrequesttypedef)
+  - [CreateAddonResponseTypeDef](#createaddonresponsetypedef)
+  - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
+  - [CreateClusterResponseTypeDef](#createclusterresponsetypedef)
+  - [CreateFargateProfileRequestRequestTypeDef](#createfargateprofilerequestrequesttypedef)
+  - [CreateFargateProfileResponseTypeDef](#createfargateprofileresponsetypedef)
+  - [CreateNodegroupRequestRequestTypeDef](#createnodegrouprequestrequesttypedef)
+  - [CreateNodegroupResponseTypeDef](#createnodegroupresponsetypedef)
+  - [DeleteAddonRequestRequestTypeDef](#deleteaddonrequestrequesttypedef)
+  - [DeleteAddonResponseTypeDef](#deleteaddonresponsetypedef)
+  - [DeleteClusterRequestRequestTypeDef](#deleteclusterrequestrequesttypedef)
+  - [DeleteClusterResponseTypeDef](#deleteclusterresponsetypedef)
+  - [DeleteFargateProfileRequestRequestTypeDef](#deletefargateprofilerequestrequesttypedef)
+  - [DeleteFargateProfileResponseTypeDef](#deletefargateprofileresponsetypedef)
+  - [DeleteNodegroupRequestRequestTypeDef](#deletenodegrouprequestrequesttypedef)
+  - [DeleteNodegroupResponseTypeDef](#deletenodegroupresponsetypedef)
+  - [DescribeAddonRequestRequestTypeDef](#describeaddonrequestrequesttypedef)
+  - [DescribeAddonResponseTypeDef](#describeaddonresponsetypedef)
+  - [DescribeAddonVersionsRequestRequestTypeDef](#describeaddonversionsrequestrequesttypedef)
+  - [DescribeAddonVersionsResponseTypeDef](#describeaddonversionsresponsetypedef)
+  - [DescribeClusterRequestRequestTypeDef](#describeclusterrequestrequesttypedef)
+  - [DescribeClusterResponseTypeDef](#describeclusterresponsetypedef)
+  - [DescribeFargateProfileRequestRequestTypeDef](#describefargateprofilerequestrequesttypedef)
+  - [DescribeFargateProfileResponseTypeDef](#describefargateprofileresponsetypedef)
+  - [DescribeIdentityProviderConfigRequestRequestTypeDef](#describeidentityproviderconfigrequestrequesttypedef)
+  - [DescribeIdentityProviderConfigResponseTypeDef](#describeidentityproviderconfigresponsetypedef)
+  - [DescribeNodegroupRequestRequestTypeDef](#describenodegrouprequestrequesttypedef)
+  - [DescribeNodegroupResponseTypeDef](#describenodegroupresponsetypedef)
+  - [DescribeUpdateRequestRequestTypeDef](#describeupdaterequestrequesttypedef)
+  - [DescribeUpdateResponseTypeDef](#describeupdateresponsetypedef)
+  - [DisassociateIdentityProviderConfigRequestRequestTypeDef](#disassociateidentityproviderconfigrequestrequesttypedef)
+  - [DisassociateIdentityProviderConfigResponseTypeDef](#disassociateidentityproviderconfigresponsetypedef)
   - [EncryptionConfigTypeDef](#encryptionconfigtypedef)
   - [ErrorDetailTypeDef](#errordetailtypedef)
   - [FargateProfileSelectorTypeDef](#fargateprofileselectortypedef)
@@ -64,20 +64,20 @@ type annotations stubs module
   - [KubernetesNetworkConfigRequestTypeDef](#kubernetesnetworkconfigrequesttypedef)
   - [KubernetesNetworkConfigResponseTypeDef](#kubernetesnetworkconfigresponsetypedef)
   - [LaunchTemplateSpecificationTypeDef](#launchtemplatespecificationtypedef)
-  - [ListAddonsRequestTypeDef](#listaddonsrequesttypedef)
-  - [ListAddonsResponseResponseTypeDef](#listaddonsresponseresponsetypedef)
-  - [ListClustersRequestTypeDef](#listclustersrequesttypedef)
-  - [ListClustersResponseResponseTypeDef](#listclustersresponseresponsetypedef)
-  - [ListFargateProfilesRequestTypeDef](#listfargateprofilesrequesttypedef)
-  - [ListFargateProfilesResponseResponseTypeDef](#listfargateprofilesresponseresponsetypedef)
-  - [ListIdentityProviderConfigsRequestTypeDef](#listidentityproviderconfigsrequesttypedef)
-  - [ListIdentityProviderConfigsResponseResponseTypeDef](#listidentityproviderconfigsresponseresponsetypedef)
-  - [ListNodegroupsRequestTypeDef](#listnodegroupsrequesttypedef)
-  - [ListNodegroupsResponseResponseTypeDef](#listnodegroupsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ListUpdatesRequestTypeDef](#listupdatesrequesttypedef)
-  - [ListUpdatesResponseResponseTypeDef](#listupdatesresponseresponsetypedef)
+  - [ListAddonsRequestRequestTypeDef](#listaddonsrequestrequesttypedef)
+  - [ListAddonsResponseTypeDef](#listaddonsresponsetypedef)
+  - [ListClustersRequestRequestTypeDef](#listclustersrequestrequesttypedef)
+  - [ListClustersResponseTypeDef](#listclustersresponsetypedef)
+  - [ListFargateProfilesRequestRequestTypeDef](#listfargateprofilesrequestrequesttypedef)
+  - [ListFargateProfilesResponseTypeDef](#listfargateprofilesresponsetypedef)
+  - [ListIdentityProviderConfigsRequestRequestTypeDef](#listidentityproviderconfigsrequestrequesttypedef)
+  - [ListIdentityProviderConfigsResponseTypeDef](#listidentityproviderconfigsresponsetypedef)
+  - [ListNodegroupsRequestRequestTypeDef](#listnodegroupsrequestrequesttypedef)
+  - [ListNodegroupsResponseTypeDef](#listnodegroupsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListUpdatesRequestRequestTypeDef](#listupdatesrequestrequesttypedef)
+  - [ListUpdatesResponseTypeDef](#listupdatesresponsetypedef)
   - [LogSetupTypeDef](#logsetuptypedef)
   - [LoggingTypeDef](#loggingtypedef)
   - [NodegroupHealthTypeDef](#nodegrouphealthtypedef)
@@ -92,20 +92,20 @@ type annotations stubs module
   - [ProviderTypeDef](#providertypedef)
   - [RemoteAccessConfigTypeDef](#remoteaccessconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TaintTypeDef](#tainttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateAddonRequestTypeDef](#updateaddonrequesttypedef)
-  - [UpdateAddonResponseResponseTypeDef](#updateaddonresponseresponsetypedef)
-  - [UpdateClusterConfigRequestTypeDef](#updateclusterconfigrequesttypedef)
-  - [UpdateClusterConfigResponseResponseTypeDef](#updateclusterconfigresponseresponsetypedef)
-  - [UpdateClusterVersionRequestTypeDef](#updateclusterversionrequesttypedef)
-  - [UpdateClusterVersionResponseResponseTypeDef](#updateclusterversionresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAddonRequestRequestTypeDef](#updateaddonrequestrequesttypedef)
+  - [UpdateAddonResponseTypeDef](#updateaddonresponsetypedef)
+  - [UpdateClusterConfigRequestRequestTypeDef](#updateclusterconfigrequestrequesttypedef)
+  - [UpdateClusterConfigResponseTypeDef](#updateclusterconfigresponsetypedef)
+  - [UpdateClusterVersionRequestRequestTypeDef](#updateclusterversionrequestrequesttypedef)
+  - [UpdateClusterVersionResponseTypeDef](#updateclusterversionresponsetypedef)
   - [UpdateLabelsPayloadTypeDef](#updatelabelspayloadtypedef)
-  - [UpdateNodegroupConfigRequestTypeDef](#updatenodegroupconfigrequesttypedef)
-  - [UpdateNodegroupConfigResponseResponseTypeDef](#updatenodegroupconfigresponseresponsetypedef)
-  - [UpdateNodegroupVersionRequestTypeDef](#updatenodegroupversionrequesttypedef)
-  - [UpdateNodegroupVersionResponseResponseTypeDef](#updatenodegroupversionresponseresponsetypedef)
+  - [UpdateNodegroupConfigRequestRequestTypeDef](#updatenodegroupconfigrequestrequesttypedef)
+  - [UpdateNodegroupConfigResponseTypeDef](#updatenodegroupconfigresponsetypedef)
+  - [UpdateNodegroupVersionRequestRequestTypeDef](#updatenodegroupversionrequestrequesttypedef)
+  - [UpdateNodegroupVersionResponseTypeDef](#updatenodegroupversionresponsetypedef)
   - [UpdateParamTypeDef](#updateparamtypedef)
   - [UpdateTaintsPayloadTypeDef](#updatetaintspayloadtypedef)
   - [UpdateTypeDef](#updatetypedef)
@@ -180,10 +180,10 @@ Optional fields:
 - `compatibilities`:
   `List`\[[CompatibilityTypeDef](./type_defs.md#compatibilitytypedef)\]
 
-## AssociateEncryptionConfigRequestTypeDef
+## AssociateEncryptionConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import AssociateEncryptionConfigRequestTypeDef
+from mypy_boto3_eks.type_defs import AssociateEncryptionConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -196,10 +196,10 @@ Optional fields:
 
 - `clientRequestToken`: `str`
 
-## AssociateEncryptionConfigResponseResponseTypeDef
+## AssociateEncryptionConfigResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import AssociateEncryptionConfigResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import AssociateEncryptionConfigResponseTypeDef
 ```
 
 Required fields:
@@ -208,10 +208,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateIdentityProviderConfigRequestTypeDef
+## AssociateIdentityProviderConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import AssociateIdentityProviderConfigRequestTypeDef
+from mypy_boto3_eks.type_defs import AssociateIdentityProviderConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -225,10 +225,10 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `clientRequestToken`: `str`
 
-## AssociateIdentityProviderConfigResponseResponseTypeDef
+## AssociateIdentityProviderConfigResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import AssociateIdentityProviderConfigResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import AssociateIdentityProviderConfigResponseTypeDef
 ```
 
 Required fields:
@@ -299,10 +299,10 @@ Optional fields:
 - `platformVersions`: `List`\[`str`\]
 - `defaultVersion`: `bool`
 
-## CreateAddonRequestTypeDef
+## CreateAddonRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import CreateAddonRequestTypeDef
+from mypy_boto3_eks.type_defs import CreateAddonRequestRequestTypeDef
 ```
 
 Required fields:
@@ -319,10 +319,10 @@ Optional fields:
 - `clientRequestToken`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateAddonResponseResponseTypeDef
+## CreateAddonResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import CreateAddonResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import CreateAddonResponseTypeDef
 ```
 
 Required fields:
@@ -331,10 +331,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateClusterRequestTypeDef
+## CreateClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import CreateClusterRequestTypeDef
+from mypy_boto3_eks.type_defs import CreateClusterRequestRequestTypeDef
 ```
 
 Required fields:
@@ -355,10 +355,10 @@ Optional fields:
 - `encryptionConfig`:
   `List`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
 
-## CreateClusterResponseResponseTypeDef
+## CreateClusterResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import CreateClusterResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import CreateClusterResponseTypeDef
 ```
 
 Required fields:
@@ -367,10 +367,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFargateProfileRequestTypeDef
+## CreateFargateProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import CreateFargateProfileRequestTypeDef
+from mypy_boto3_eks.type_defs import CreateFargateProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -387,10 +387,10 @@ Optional fields:
 - `clientRequestToken`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateFargateProfileResponseResponseTypeDef
+## CreateFargateProfileResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import CreateFargateProfileResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import CreateFargateProfileResponseTypeDef
 ```
 
 Required fields:
@@ -400,10 +400,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateNodegroupRequestTypeDef
+## CreateNodegroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import CreateNodegroupRequestTypeDef
+from mypy_boto3_eks.type_defs import CreateNodegroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -434,10 +434,10 @@ Optional fields:
 - `version`: `str`
 - `releaseVersion`: `str`
 
-## CreateNodegroupResponseResponseTypeDef
+## CreateNodegroupResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import CreateNodegroupResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import CreateNodegroupResponseTypeDef
 ```
 
 Required fields:
@@ -446,10 +446,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAddonRequestTypeDef
+## DeleteAddonRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DeleteAddonRequestTypeDef
+from mypy_boto3_eks.type_defs import DeleteAddonRequestRequestTypeDef
 ```
 
 Required fields:
@@ -457,10 +457,10 @@ Required fields:
 - `clusterName`: `str`
 - `addonName`: `str`
 
-## DeleteAddonResponseResponseTypeDef
+## DeleteAddonResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DeleteAddonResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import DeleteAddonResponseTypeDef
 ```
 
 Required fields:
@@ -469,20 +469,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteClusterRequestTypeDef
+## DeleteClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DeleteClusterRequestTypeDef
+from mypy_boto3_eks.type_defs import DeleteClusterRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DeleteClusterResponseResponseTypeDef
+## DeleteClusterResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DeleteClusterResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import DeleteClusterResponseTypeDef
 ```
 
 Required fields:
@@ -491,10 +491,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteFargateProfileRequestTypeDef
+## DeleteFargateProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DeleteFargateProfileRequestTypeDef
+from mypy_boto3_eks.type_defs import DeleteFargateProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -502,10 +502,10 @@ Required fields:
 - `clusterName`: `str`
 - `fargateProfileName`: `str`
 
-## DeleteFargateProfileResponseResponseTypeDef
+## DeleteFargateProfileResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DeleteFargateProfileResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import DeleteFargateProfileResponseTypeDef
 ```
 
 Required fields:
@@ -515,10 +515,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteNodegroupRequestTypeDef
+## DeleteNodegroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DeleteNodegroupRequestTypeDef
+from mypy_boto3_eks.type_defs import DeleteNodegroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -526,10 +526,10 @@ Required fields:
 - `clusterName`: `str`
 - `nodegroupName`: `str`
 
-## DeleteNodegroupResponseResponseTypeDef
+## DeleteNodegroupResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DeleteNodegroupResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import DeleteNodegroupResponseTypeDef
 ```
 
 Required fields:
@@ -538,10 +538,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAddonRequestTypeDef
+## DescribeAddonRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeAddonRequestTypeDef
+from mypy_boto3_eks.type_defs import DescribeAddonRequestRequestTypeDef
 ```
 
 Required fields:
@@ -549,10 +549,10 @@ Required fields:
 - `clusterName`: `str`
 - `addonName`: `str`
 
-## DescribeAddonResponseResponseTypeDef
+## DescribeAddonResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeAddonResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import DescribeAddonResponseTypeDef
 ```
 
 Required fields:
@@ -561,10 +561,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeAddonVersionsRequestTypeDef
+## DescribeAddonVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeAddonVersionsRequestTypeDef
+from mypy_boto3_eks.type_defs import DescribeAddonVersionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -574,10 +574,10 @@ Optional fields:
 - `nextToken`: `str`
 - `addonName`: `str`
 
-## DescribeAddonVersionsResponseResponseTypeDef
+## DescribeAddonVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeAddonVersionsResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import DescribeAddonVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -587,20 +587,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeClusterRequestTypeDef
+## DescribeClusterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeClusterRequestTypeDef
+from mypy_boto3_eks.type_defs import DescribeClusterRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DescribeClusterResponseResponseTypeDef
+## DescribeClusterResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeClusterResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import DescribeClusterResponseTypeDef
 ```
 
 Required fields:
@@ -609,10 +609,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFargateProfileRequestTypeDef
+## DescribeFargateProfileRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeFargateProfileRequestTypeDef
+from mypy_boto3_eks.type_defs import DescribeFargateProfileRequestRequestTypeDef
 ```
 
 Required fields:
@@ -620,10 +620,10 @@ Required fields:
 - `clusterName`: `str`
 - `fargateProfileName`: `str`
 
-## DescribeFargateProfileResponseResponseTypeDef
+## DescribeFargateProfileResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeFargateProfileResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import DescribeFargateProfileResponseTypeDef
 ```
 
 Required fields:
@@ -633,10 +633,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIdentityProviderConfigRequestTypeDef
+## DescribeIdentityProviderConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeIdentityProviderConfigRequestTypeDef
+from mypy_boto3_eks.type_defs import DescribeIdentityProviderConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -645,10 +645,10 @@ Required fields:
 - `identityProviderConfig`:
   [IdentityProviderConfigTypeDef](./type_defs.md#identityproviderconfigtypedef)
 
-## DescribeIdentityProviderConfigResponseResponseTypeDef
+## DescribeIdentityProviderConfigResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeIdentityProviderConfigResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import DescribeIdentityProviderConfigResponseTypeDef
 ```
 
 Required fields:
@@ -658,10 +658,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNodegroupRequestTypeDef
+## DescribeNodegroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeNodegroupRequestTypeDef
+from mypy_boto3_eks.type_defs import DescribeNodegroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -669,10 +669,10 @@ Required fields:
 - `clusterName`: `str`
 - `nodegroupName`: `str`
 
-## DescribeNodegroupResponseResponseTypeDef
+## DescribeNodegroupResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeNodegroupResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import DescribeNodegroupResponseTypeDef
 ```
 
 Required fields:
@@ -681,10 +681,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUpdateRequestTypeDef
+## DescribeUpdateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeUpdateRequestTypeDef
+from mypy_boto3_eks.type_defs import DescribeUpdateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -697,10 +697,10 @@ Optional fields:
 - `nodegroupName`: `str`
 - `addonName`: `str`
 
-## DescribeUpdateResponseResponseTypeDef
+## DescribeUpdateResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DescribeUpdateResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import DescribeUpdateResponseTypeDef
 ```
 
 Required fields:
@@ -709,10 +709,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateIdentityProviderConfigRequestTypeDef
+## DisassociateIdentityProviderConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DisassociateIdentityProviderConfigRequestTypeDef
+from mypy_boto3_eks.type_defs import DisassociateIdentityProviderConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -725,10 +725,10 @@ Optional fields:
 
 - `clientRequestToken`: `str`
 
-## DisassociateIdentityProviderConfigResponseResponseTypeDef
+## DisassociateIdentityProviderConfigResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import DisassociateIdentityProviderConfigResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import DisassociateIdentityProviderConfigResponseTypeDef
 ```
 
 Required fields:
@@ -866,10 +866,10 @@ Optional fields:
 - `version`: `str`
 - `id`: `str`
 
-## ListAddonsRequestTypeDef
+## ListAddonsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListAddonsRequestTypeDef
+from mypy_boto3_eks.type_defs import ListAddonsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -881,10 +881,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListAddonsResponseResponseTypeDef
+## ListAddonsResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListAddonsResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import ListAddonsResponseTypeDef
 ```
 
 Required fields:
@@ -894,10 +894,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListClustersRequestTypeDef
+## ListClustersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListClustersRequestTypeDef
+from mypy_boto3_eks.type_defs import ListClustersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -905,10 +905,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListClustersResponseResponseTypeDef
+## ListClustersResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListClustersResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import ListClustersResponseTypeDef
 ```
 
 Required fields:
@@ -918,10 +918,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFargateProfilesRequestTypeDef
+## ListFargateProfilesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListFargateProfilesRequestTypeDef
+from mypy_boto3_eks.type_defs import ListFargateProfilesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -933,10 +933,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListFargateProfilesResponseResponseTypeDef
+## ListFargateProfilesResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListFargateProfilesResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import ListFargateProfilesResponseTypeDef
 ```
 
 Required fields:
@@ -946,10 +946,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIdentityProviderConfigsRequestTypeDef
+## ListIdentityProviderConfigsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListIdentityProviderConfigsRequestTypeDef
+from mypy_boto3_eks.type_defs import ListIdentityProviderConfigsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -961,10 +961,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListIdentityProviderConfigsResponseResponseTypeDef
+## ListIdentityProviderConfigsResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListIdentityProviderConfigsResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import ListIdentityProviderConfigsResponseTypeDef
 ```
 
 Required fields:
@@ -975,10 +975,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListNodegroupsRequestTypeDef
+## ListNodegroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListNodegroupsRequestTypeDef
+from mypy_boto3_eks.type_defs import ListNodegroupsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -990,10 +990,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListNodegroupsResponseResponseTypeDef
+## ListNodegroupsResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListNodegroupsResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import ListNodegroupsResponseTypeDef
 ```
 
 Required fields:
@@ -1003,20 +1003,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_eks.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1025,10 +1025,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUpdatesRequestTypeDef
+## ListUpdatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListUpdatesRequestTypeDef
+from mypy_boto3_eks.type_defs import ListUpdatesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1042,10 +1042,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListUpdatesResponseResponseTypeDef
+## ListUpdatesResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import ListUpdatesResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import ListUpdatesResponseTypeDef
 ```
 
 Required fields:
@@ -1256,10 +1256,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_eks.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1279,10 +1279,10 @@ Optional fields:
 - `value`: `str`
 - `effect`: [TaintEffectType](./literals.md#tainteffecttype)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_eks.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1290,10 +1290,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateAddonRequestTypeDef
+## UpdateAddonRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import UpdateAddonRequestTypeDef
+from mypy_boto3_eks.type_defs import UpdateAddonRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1309,10 +1309,10 @@ Optional fields:
   [ResolveConflictsType](./literals.md#resolveconflictstype)
 - `clientRequestToken`: `str`
 
-## UpdateAddonResponseResponseTypeDef
+## UpdateAddonResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import UpdateAddonResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import UpdateAddonResponseTypeDef
 ```
 
 Required fields:
@@ -1321,10 +1321,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateClusterConfigRequestTypeDef
+## UpdateClusterConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import UpdateClusterConfigRequestTypeDef
+from mypy_boto3_eks.type_defs import UpdateClusterConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1338,10 +1338,10 @@ Optional fields:
 - `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `clientRequestToken`: `str`
 
-## UpdateClusterConfigResponseResponseTypeDef
+## UpdateClusterConfigResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import UpdateClusterConfigResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import UpdateClusterConfigResponseTypeDef
 ```
 
 Required fields:
@@ -1350,10 +1350,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateClusterVersionRequestTypeDef
+## UpdateClusterVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import UpdateClusterVersionRequestTypeDef
+from mypy_boto3_eks.type_defs import UpdateClusterVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1365,10 +1365,10 @@ Optional fields:
 
 - `clientRequestToken`: `str`
 
-## UpdateClusterVersionResponseResponseTypeDef
+## UpdateClusterVersionResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import UpdateClusterVersionResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import UpdateClusterVersionResponseTypeDef
 ```
 
 Required fields:
@@ -1388,10 +1388,10 @@ Optional fields:
 - `addOrUpdateLabels`: `Dict`\[`str`, `str`\]
 - `removeLabels`: `List`\[`str`\]
 
-## UpdateNodegroupConfigRequestTypeDef
+## UpdateNodegroupConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import UpdateNodegroupConfigRequestTypeDef
+from mypy_boto3_eks.type_defs import UpdateNodegroupConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1411,10 +1411,10 @@ Optional fields:
   [NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef)
 - `clientRequestToken`: `str`
 
-## UpdateNodegroupConfigResponseResponseTypeDef
+## UpdateNodegroupConfigResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import UpdateNodegroupConfigResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import UpdateNodegroupConfigResponseTypeDef
 ```
 
 Required fields:
@@ -1423,10 +1423,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateNodegroupVersionRequestTypeDef
+## UpdateNodegroupVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import UpdateNodegroupVersionRequestTypeDef
+from mypy_boto3_eks.type_defs import UpdateNodegroupVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1443,10 +1443,10 @@ Optional fields:
 - `force`: `bool`
 - `clientRequestToken`: `str`
 
-## UpdateNodegroupVersionResponseResponseTypeDef
+## UpdateNodegroupVersionResponseTypeDef
 
 ```python
-from mypy_boto3_eks.type_defs import UpdateNodegroupVersionResponseResponseTypeDef
+from mypy_boto3_eks.type_defs import UpdateNodegroupVersionResponseTypeDef
 ```
 
 Required fields:

@@ -9,40 +9,40 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 FraudDetector module](#typed-dictionaries-for-boto3-frauddetector-module)
   - [BatchCreateVariableErrorTypeDef](#batchcreatevariableerrortypedef)
-  - [BatchCreateVariableRequestTypeDef](#batchcreatevariablerequesttypedef)
-  - [BatchCreateVariableResultResponseTypeDef](#batchcreatevariableresultresponsetypedef)
+  - [BatchCreateVariableRequestRequestTypeDef](#batchcreatevariablerequestrequesttypedef)
+  - [BatchCreateVariableResultTypeDef](#batchcreatevariableresulttypedef)
   - [BatchGetVariableErrorTypeDef](#batchgetvariableerrortypedef)
-  - [BatchGetVariableRequestTypeDef](#batchgetvariablerequesttypedef)
-  - [BatchGetVariableResultResponseTypeDef](#batchgetvariableresultresponsetypedef)
+  - [BatchGetVariableRequestRequestTypeDef](#batchgetvariablerequestrequesttypedef)
+  - [BatchGetVariableResultTypeDef](#batchgetvariableresulttypedef)
   - [BatchPredictionTypeDef](#batchpredictiontypedef)
-  - [CancelBatchPredictionJobRequestTypeDef](#cancelbatchpredictionjobrequesttypedef)
-  - [CreateBatchPredictionJobRequestTypeDef](#createbatchpredictionjobrequesttypedef)
-  - [CreateDetectorVersionRequestTypeDef](#createdetectorversionrequesttypedef)
-  - [CreateDetectorVersionResultResponseTypeDef](#createdetectorversionresultresponsetypedef)
-  - [CreateModelRequestTypeDef](#createmodelrequesttypedef)
-  - [CreateModelVersionRequestTypeDef](#createmodelversionrequesttypedef)
-  - [CreateModelVersionResultResponseTypeDef](#createmodelversionresultresponsetypedef)
-  - [CreateRuleRequestTypeDef](#createrulerequesttypedef)
-  - [CreateRuleResultResponseTypeDef](#createruleresultresponsetypedef)
-  - [CreateVariableRequestTypeDef](#createvariablerequesttypedef)
+  - [CancelBatchPredictionJobRequestRequestTypeDef](#cancelbatchpredictionjobrequestrequesttypedef)
+  - [CreateBatchPredictionJobRequestRequestTypeDef](#createbatchpredictionjobrequestrequesttypedef)
+  - [CreateDetectorVersionRequestRequestTypeDef](#createdetectorversionrequestrequesttypedef)
+  - [CreateDetectorVersionResultTypeDef](#createdetectorversionresulttypedef)
+  - [CreateModelRequestRequestTypeDef](#createmodelrequestrequesttypedef)
+  - [CreateModelVersionRequestRequestTypeDef](#createmodelversionrequestrequesttypedef)
+  - [CreateModelVersionResultTypeDef](#createmodelversionresulttypedef)
+  - [CreateRuleRequestRequestTypeDef](#createrulerequestrequesttypedef)
+  - [CreateRuleResultTypeDef](#createruleresulttypedef)
+  - [CreateVariableRequestRequestTypeDef](#createvariablerequestrequesttypedef)
   - [DataValidationMetricsTypeDef](#datavalidationmetricstypedef)
-  - [DeleteBatchPredictionJobRequestTypeDef](#deletebatchpredictionjobrequesttypedef)
-  - [DeleteDetectorRequestTypeDef](#deletedetectorrequesttypedef)
-  - [DeleteDetectorVersionRequestTypeDef](#deletedetectorversionrequesttypedef)
-  - [DeleteEntityTypeRequestTypeDef](#deleteentitytyperequesttypedef)
-  - [DeleteEventRequestTypeDef](#deleteeventrequesttypedef)
-  - [DeleteEventTypeRequestTypeDef](#deleteeventtyperequesttypedef)
-  - [DeleteExternalModelRequestTypeDef](#deleteexternalmodelrequesttypedef)
-  - [DeleteLabelRequestTypeDef](#deletelabelrequesttypedef)
-  - [DeleteModelRequestTypeDef](#deletemodelrequesttypedef)
-  - [DeleteModelVersionRequestTypeDef](#deletemodelversionrequesttypedef)
-  - [DeleteOutcomeRequestTypeDef](#deleteoutcomerequesttypedef)
-  - [DeleteRuleRequestTypeDef](#deleterulerequesttypedef)
-  - [DeleteVariableRequestTypeDef](#deletevariablerequesttypedef)
-  - [DescribeDetectorRequestTypeDef](#describedetectorrequesttypedef)
-  - [DescribeDetectorResultResponseTypeDef](#describedetectorresultresponsetypedef)
-  - [DescribeModelVersionsRequestTypeDef](#describemodelversionsrequesttypedef)
-  - [DescribeModelVersionsResultResponseTypeDef](#describemodelversionsresultresponsetypedef)
+  - [DeleteBatchPredictionJobRequestRequestTypeDef](#deletebatchpredictionjobrequestrequesttypedef)
+  - [DeleteDetectorRequestRequestTypeDef](#deletedetectorrequestrequesttypedef)
+  - [DeleteDetectorVersionRequestRequestTypeDef](#deletedetectorversionrequestrequesttypedef)
+  - [DeleteEntityTypeRequestRequestTypeDef](#deleteentitytyperequestrequesttypedef)
+  - [DeleteEventRequestRequestTypeDef](#deleteeventrequestrequesttypedef)
+  - [DeleteEventTypeRequestRequestTypeDef](#deleteeventtyperequestrequesttypedef)
+  - [DeleteExternalModelRequestRequestTypeDef](#deleteexternalmodelrequestrequesttypedef)
+  - [DeleteLabelRequestRequestTypeDef](#deletelabelrequestrequesttypedef)
+  - [DeleteModelRequestRequestTypeDef](#deletemodelrequestrequesttypedef)
+  - [DeleteModelVersionRequestRequestTypeDef](#deletemodelversionrequestrequesttypedef)
+  - [DeleteOutcomeRequestRequestTypeDef](#deleteoutcomerequestrequesttypedef)
+  - [DeleteRuleRequestRequestTypeDef](#deleterulerequestrequesttypedef)
+  - [DeleteVariableRequestRequestTypeDef](#deletevariablerequestrequesttypedef)
+  - [DescribeDetectorRequestRequestTypeDef](#describedetectorrequestrequesttypedef)
+  - [DescribeDetectorResultTypeDef](#describedetectorresulttypedef)
+  - [DescribeModelVersionsRequestRequestTypeDef](#describemodelversionsrequestrequesttypedef)
+  - [DescribeModelVersionsResultTypeDef](#describemodelversionsresulttypedef)
   - [DetectorTypeDef](#detectortypedef)
   - [DetectorVersionSummaryTypeDef](#detectorversionsummarytypedef)
   - [EntityTypeDef](#entitytypedef)
@@ -52,38 +52,39 @@ type annotations stubs module
   - [ExternalModelTypeDef](#externalmodeltypedef)
   - [FieldValidationMessageTypeDef](#fieldvalidationmessagetypedef)
   - [FileValidationMessageTypeDef](#filevalidationmessagetypedef)
-  - [GetBatchPredictionJobsRequestTypeDef](#getbatchpredictionjobsrequesttypedef)
-  - [GetBatchPredictionJobsResultResponseTypeDef](#getbatchpredictionjobsresultresponsetypedef)
-  - [GetDetectorVersionRequestTypeDef](#getdetectorversionrequesttypedef)
-  - [GetDetectorVersionResultResponseTypeDef](#getdetectorversionresultresponsetypedef)
-  - [GetDetectorsRequestTypeDef](#getdetectorsrequesttypedef)
-  - [GetDetectorsResultResponseTypeDef](#getdetectorsresultresponsetypedef)
-  - [GetEntityTypesRequestTypeDef](#getentitytypesrequesttypedef)
-  - [GetEntityTypesResultResponseTypeDef](#getentitytypesresultresponsetypedef)
-  - [GetEventPredictionRequestTypeDef](#geteventpredictionrequesttypedef)
-  - [GetEventPredictionResultResponseTypeDef](#geteventpredictionresultresponsetypedef)
-  - [GetEventTypesRequestTypeDef](#geteventtypesrequesttypedef)
-  - [GetEventTypesResultResponseTypeDef](#geteventtypesresultresponsetypedef)
-  - [GetExternalModelsRequestTypeDef](#getexternalmodelsrequesttypedef)
-  - [GetExternalModelsResultResponseTypeDef](#getexternalmodelsresultresponsetypedef)
-  - [GetKMSEncryptionKeyResultResponseTypeDef](#getkmsencryptionkeyresultresponsetypedef)
-  - [GetLabelsRequestTypeDef](#getlabelsrequesttypedef)
-  - [GetLabelsResultResponseTypeDef](#getlabelsresultresponsetypedef)
-  - [GetModelVersionRequestTypeDef](#getmodelversionrequesttypedef)
-  - [GetModelVersionResultResponseTypeDef](#getmodelversionresultresponsetypedef)
-  - [GetModelsRequestTypeDef](#getmodelsrequesttypedef)
-  - [GetModelsResultResponseTypeDef](#getmodelsresultresponsetypedef)
-  - [GetOutcomesRequestTypeDef](#getoutcomesrequesttypedef)
-  - [GetOutcomesResultResponseTypeDef](#getoutcomesresultresponsetypedef)
-  - [GetRulesRequestTypeDef](#getrulesrequesttypedef)
-  - [GetRulesResultResponseTypeDef](#getrulesresultresponsetypedef)
-  - [GetVariablesRequestTypeDef](#getvariablesrequesttypedef)
-  - [GetVariablesResultResponseTypeDef](#getvariablesresultresponsetypedef)
+  - [GetBatchPredictionJobsRequestRequestTypeDef](#getbatchpredictionjobsrequestrequesttypedef)
+  - [GetBatchPredictionJobsResultTypeDef](#getbatchpredictionjobsresulttypedef)
+  - [GetDetectorVersionRequestRequestTypeDef](#getdetectorversionrequestrequesttypedef)
+  - [GetDetectorVersionResultTypeDef](#getdetectorversionresulttypedef)
+  - [GetDetectorsRequestRequestTypeDef](#getdetectorsrequestrequesttypedef)
+  - [GetDetectorsResultTypeDef](#getdetectorsresulttypedef)
+  - [GetEntityTypesRequestRequestTypeDef](#getentitytypesrequestrequesttypedef)
+  - [GetEntityTypesResultTypeDef](#getentitytypesresulttypedef)
+  - [GetEventPredictionRequestRequestTypeDef](#geteventpredictionrequestrequesttypedef)
+  - [GetEventPredictionResultTypeDef](#geteventpredictionresulttypedef)
+  - [GetEventTypesRequestRequestTypeDef](#geteventtypesrequestrequesttypedef)
+  - [GetEventTypesResultTypeDef](#geteventtypesresulttypedef)
+  - [GetExternalModelsRequestRequestTypeDef](#getexternalmodelsrequestrequesttypedef)
+  - [GetExternalModelsResultTypeDef](#getexternalmodelsresulttypedef)
+  - [GetKMSEncryptionKeyResultTypeDef](#getkmsencryptionkeyresulttypedef)
+  - [GetLabelsRequestRequestTypeDef](#getlabelsrequestrequesttypedef)
+  - [GetLabelsResultTypeDef](#getlabelsresulttypedef)
+  - [GetModelVersionRequestRequestTypeDef](#getmodelversionrequestrequesttypedef)
+  - [GetModelVersionResultTypeDef](#getmodelversionresulttypedef)
+  - [GetModelsRequestRequestTypeDef](#getmodelsrequestrequesttypedef)
+  - [GetModelsResultTypeDef](#getmodelsresulttypedef)
+  - [GetOutcomesRequestRequestTypeDef](#getoutcomesrequestrequesttypedef)
+  - [GetOutcomesResultTypeDef](#getoutcomesresulttypedef)
+  - [GetRulesRequestRequestTypeDef](#getrulesrequestrequesttypedef)
+  - [GetRulesResultTypeDef](#getrulesresulttypedef)
+  - [GetVariablesRequestRequestTypeDef](#getvariablesrequestrequesttypedef)
+  - [GetVariablesResultTypeDef](#getvariablesresulttypedef)
   - [KMSKeyTypeDef](#kmskeytypedef)
   - [LabelSchemaTypeDef](#labelschematypedef)
   - [LabelTypeDef](#labeltypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResultResponseTypeDef](#listtagsforresourceresultresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
+  - [LogitMetricTypeDef](#logitmetrictypedef)
   - [MetricDataPointTypeDef](#metricdatapointtypedef)
   - [ModelEndpointDataBlobTypeDef](#modelendpointdatablobtypedef)
   - [ModelInputConfigurationTypeDef](#modelinputconfigurationtypedef)
@@ -93,35 +94,36 @@ type annotations stubs module
   - [ModelVersionDetailTypeDef](#modelversiondetailtypedef)
   - [ModelVersionTypeDef](#modelversiontypedef)
   - [OutcomeTypeDef](#outcometypedef)
-  - [PutDetectorRequestTypeDef](#putdetectorrequesttypedef)
-  - [PutEntityTypeRequestTypeDef](#putentitytyperequesttypedef)
-  - [PutEventTypeRequestTypeDef](#puteventtyperequesttypedef)
-  - [PutExternalModelRequestTypeDef](#putexternalmodelrequesttypedef)
-  - [PutKMSEncryptionKeyRequestTypeDef](#putkmsencryptionkeyrequesttypedef)
-  - [PutLabelRequestTypeDef](#putlabelrequesttypedef)
-  - [PutOutcomeRequestTypeDef](#putoutcomerequesttypedef)
+  - [PutDetectorRequestRequestTypeDef](#putdetectorrequestrequesttypedef)
+  - [PutEntityTypeRequestRequestTypeDef](#putentitytyperequestrequesttypedef)
+  - [PutEventTypeRequestRequestTypeDef](#puteventtyperequestrequesttypedef)
+  - [PutExternalModelRequestRequestTypeDef](#putexternalmodelrequestrequesttypedef)
+  - [PutKMSEncryptionKeyRequestRequestTypeDef](#putkmsencryptionkeyrequestrequesttypedef)
+  - [PutLabelRequestRequestTypeDef](#putlabelrequestrequesttypedef)
+  - [PutOutcomeRequestRequestTypeDef](#putoutcomerequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RuleDetailTypeDef](#ruledetailtypedef)
   - [RuleResultTypeDef](#ruleresulttypedef)
   - [RuleTypeDef](#ruletypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TrainingDataSchemaTypeDef](#trainingdataschematypedef)
   - [TrainingMetricsTypeDef](#trainingmetricstypedef)
   - [TrainingResultTypeDef](#trainingresulttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateDetectorVersionMetadataRequestTypeDef](#updatedetectorversionmetadatarequesttypedef)
-  - [UpdateDetectorVersionRequestTypeDef](#updatedetectorversionrequesttypedef)
-  - [UpdateDetectorVersionStatusRequestTypeDef](#updatedetectorversionstatusrequesttypedef)
-  - [UpdateModelRequestTypeDef](#updatemodelrequesttypedef)
-  - [UpdateModelVersionRequestTypeDef](#updatemodelversionrequesttypedef)
-  - [UpdateModelVersionResultResponseTypeDef](#updatemodelversionresultresponsetypedef)
-  - [UpdateModelVersionStatusRequestTypeDef](#updatemodelversionstatusrequesttypedef)
-  - [UpdateRuleMetadataRequestTypeDef](#updaterulemetadatarequesttypedef)
-  - [UpdateRuleVersionRequestTypeDef](#updateruleversionrequesttypedef)
-  - [UpdateRuleVersionResultResponseTypeDef](#updateruleversionresultresponsetypedef)
-  - [UpdateVariableRequestTypeDef](#updatevariablerequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateDetectorVersionMetadataRequestRequestTypeDef](#updatedetectorversionmetadatarequestrequesttypedef)
+  - [UpdateDetectorVersionRequestRequestTypeDef](#updatedetectorversionrequestrequesttypedef)
+  - [UpdateDetectorVersionStatusRequestRequestTypeDef](#updatedetectorversionstatusrequestrequesttypedef)
+  - [UpdateModelRequestRequestTypeDef](#updatemodelrequestrequesttypedef)
+  - [UpdateModelVersionRequestRequestTypeDef](#updatemodelversionrequestrequesttypedef)
+  - [UpdateModelVersionResultTypeDef](#updatemodelversionresulttypedef)
+  - [UpdateModelVersionStatusRequestRequestTypeDef](#updatemodelversionstatusrequestrequesttypedef)
+  - [UpdateRuleMetadataRequestRequestTypeDef](#updaterulemetadatarequestrequesttypedef)
+  - [UpdateRuleVersionRequestRequestTypeDef](#updateruleversionrequestrequesttypedef)
+  - [UpdateRuleVersionResultTypeDef](#updateruleversionresulttypedef)
+  - [UpdateVariableRequestRequestTypeDef](#updatevariablerequestrequesttypedef)
   - [VariableEntryTypeDef](#variableentrytypedef)
+  - [VariableImportanceMetricsTypeDef](#variableimportancemetricstypedef)
   - [VariableTypeDef](#variabletypedef)
 
 ## BatchCreateVariableErrorTypeDef
@@ -136,10 +138,10 @@ Optional fields:
 - `code`: `int`
 - `message`: `str`
 
-## BatchCreateVariableRequestTypeDef
+## BatchCreateVariableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import BatchCreateVariableRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import BatchCreateVariableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -151,10 +153,10 @@ Optional fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## BatchCreateVariableResultResponseTypeDef
+## BatchCreateVariableResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import BatchCreateVariableResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import BatchCreateVariableResultTypeDef
 ```
 
 Required fields:
@@ -176,20 +178,20 @@ Optional fields:
 - `code`: `int`
 - `message`: `str`
 
-## BatchGetVariableRequestTypeDef
+## BatchGetVariableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import BatchGetVariableRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import BatchGetVariableRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `names`: `List`\[`str`\]
 
-## BatchGetVariableResultResponseTypeDef
+## BatchGetVariableResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import BatchGetVariableResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import BatchGetVariableResultTypeDef
 ```
 
 Required fields:
@@ -224,20 +226,20 @@ Optional fields:
 - `processedRecordsCount`: `int`
 - `totalRecordsCount`: `int`
 
-## CancelBatchPredictionJobRequestTypeDef
+## CancelBatchPredictionJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import CancelBatchPredictionJobRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import CancelBatchPredictionJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `jobId`: `str`
 
-## CreateBatchPredictionJobRequestTypeDef
+## CreateBatchPredictionJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import CreateBatchPredictionJobRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import CreateBatchPredictionJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -254,10 +256,10 @@ Optional fields:
 - `detectorVersion`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDetectorVersionRequestTypeDef
+## CreateDetectorVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import CreateDetectorVersionRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import CreateDetectorVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -275,10 +277,10 @@ Optional fields:
   [RuleExecutionModeType](./literals.md#ruleexecutionmodetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDetectorVersionResultResponseTypeDef
+## CreateDetectorVersionResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import CreateDetectorVersionResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import CreateDetectorVersionResultTypeDef
 ```
 
 Required fields:
@@ -290,10 +292,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateModelRequestTypeDef
+## CreateModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import CreateModelRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import CreateModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -308,10 +310,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateModelVersionRequestTypeDef
+## CreateModelVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import CreateModelVersionRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import CreateModelVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -330,10 +332,10 @@ Optional fields:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateModelVersionResultResponseTypeDef
+## CreateModelVersionResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import CreateModelVersionResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import CreateModelVersionResultTypeDef
 ```
 
 Required fields:
@@ -346,10 +348,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRuleRequestTypeDef
+## CreateRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import CreateRuleRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import CreateRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -366,10 +368,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateRuleResultResponseTypeDef
+## CreateRuleResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import CreateRuleResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import CreateRuleResultTypeDef
 ```
 
 Required fields:
@@ -378,10 +380,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateVariableRequestTypeDef
+## CreateVariableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import CreateVariableRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import CreateVariableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -410,30 +412,30 @@ Optional fields:
 - `fieldLevelMessages`:
   `List`\[[FieldValidationMessageTypeDef](./type_defs.md#fieldvalidationmessagetypedef)\]
 
-## DeleteBatchPredictionJobRequestTypeDef
+## DeleteBatchPredictionJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteBatchPredictionJobRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteBatchPredictionJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `jobId`: `str`
 
-## DeleteDetectorRequestTypeDef
+## DeleteDetectorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteDetectorRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteDetectorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `detectorId`: `str`
 
-## DeleteDetectorVersionRequestTypeDef
+## DeleteDetectorVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteDetectorVersionRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteDetectorVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -441,20 +443,20 @@ Required fields:
 - `detectorId`: `str`
 - `detectorVersionId`: `str`
 
-## DeleteEntityTypeRequestTypeDef
+## DeleteEntityTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteEntityTypeRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteEntityTypeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DeleteEventRequestTypeDef
+## DeleteEventRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteEventRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteEventRequestRequestTypeDef
 ```
 
 Required fields:
@@ -462,40 +464,40 @@ Required fields:
 - `eventId`: `str`
 - `eventTypeName`: `str`
 
-## DeleteEventTypeRequestTypeDef
+## DeleteEventTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteEventTypeRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteEventTypeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DeleteExternalModelRequestTypeDef
+## DeleteExternalModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteExternalModelRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteExternalModelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `modelEndpoint`: `str`
 
-## DeleteLabelRequestTypeDef
+## DeleteLabelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteLabelRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteLabelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DeleteModelRequestTypeDef
+## DeleteModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteModelRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -504,10 +506,10 @@ Required fields:
 - `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
   [ModelTypeEnumType](./literals.md#modeltypeenumtype))
 
-## DeleteModelVersionRequestTypeDef
+## DeleteModelVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteModelVersionRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteModelVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -517,40 +519,40 @@ Required fields:
   [ModelTypeEnumType](./literals.md#modeltypeenumtype))
 - `modelVersionNumber`: `str`
 
-## DeleteOutcomeRequestTypeDef
+## DeleteOutcomeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteOutcomeRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteOutcomeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DeleteRuleRequestTypeDef
+## DeleteRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteRuleRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteRuleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `rule`: [RuleTypeDef](./type_defs.md#ruletypedef)
 
-## DeleteVariableRequestTypeDef
+## DeleteVariableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DeleteVariableRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DeleteVariableRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DescribeDetectorRequestTypeDef
+## DescribeDetectorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DescribeDetectorRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DescribeDetectorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -562,10 +564,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## DescribeDetectorResultResponseTypeDef
+## DescribeDetectorResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DescribeDetectorResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import DescribeDetectorResultTypeDef
 ```
 
 Required fields:
@@ -578,10 +580,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeModelVersionsRequestTypeDef
+## DescribeModelVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DescribeModelVersionsRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import DescribeModelVersionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -593,10 +595,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## DescribeModelVersionsResultResponseTypeDef
+## DescribeModelVersionsResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import DescribeModelVersionsResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import DescribeModelVersionsResultTypeDef
 ```
 
 Required fields:
@@ -737,10 +739,10 @@ Optional fields:
 - `content`: `str`
 - `type`: `str`
 
-## GetBatchPredictionJobsRequestTypeDef
+## GetBatchPredictionJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetBatchPredictionJobsRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetBatchPredictionJobsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -749,10 +751,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## GetBatchPredictionJobsResultResponseTypeDef
+## GetBatchPredictionJobsResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetBatchPredictionJobsResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetBatchPredictionJobsResultTypeDef
 ```
 
 Required fields:
@@ -763,10 +765,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDetectorVersionRequestTypeDef
+## GetDetectorVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetDetectorVersionRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetDetectorVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -774,10 +776,10 @@ Required fields:
 - `detectorId`: `str`
 - `detectorVersionId`: `str`
 
-## GetDetectorVersionResultResponseTypeDef
+## GetDetectorVersionResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetDetectorVersionResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetDetectorVersionResultTypeDef
 ```
 
 Required fields:
@@ -799,10 +801,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDetectorsRequestTypeDef
+## GetDetectorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetDetectorsRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetDetectorsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -811,10 +813,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetDetectorsResultResponseTypeDef
+## GetDetectorsResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetDetectorsResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetDetectorsResultTypeDef
 ```
 
 Required fields:
@@ -824,10 +826,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEntityTypesRequestTypeDef
+## GetEntityTypesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetEntityTypesRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetEntityTypesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -836,10 +838,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetEntityTypesResultResponseTypeDef
+## GetEntityTypesResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetEntityTypesResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetEntityTypesResultTypeDef
 ```
 
 Required fields:
@@ -850,10 +852,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEventPredictionRequestTypeDef
+## GetEventPredictionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetEventPredictionRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetEventPredictionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -871,10 +873,10 @@ Optional fields:
 - `externalModelEndpointDataBlobs`: `Dict`\[`str`,
   [ModelEndpointDataBlobTypeDef](./type_defs.md#modelendpointdatablobtypedef)\]
 
-## GetEventPredictionResultResponseTypeDef
+## GetEventPredictionResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetEventPredictionResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetEventPredictionResultTypeDef
 ```
 
 Required fields:
@@ -886,10 +888,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEventTypesRequestTypeDef
+## GetEventTypesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetEventTypesRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetEventTypesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -898,10 +900,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetEventTypesResultResponseTypeDef
+## GetEventTypesResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetEventTypesResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetEventTypesResultTypeDef
 ```
 
 Required fields:
@@ -911,10 +913,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetExternalModelsRequestTypeDef
+## GetExternalModelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetExternalModelsRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetExternalModelsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -923,10 +925,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetExternalModelsResultResponseTypeDef
+## GetExternalModelsResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetExternalModelsResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetExternalModelsResultTypeDef
 ```
 
 Required fields:
@@ -937,10 +939,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetKMSEncryptionKeyResultResponseTypeDef
+## GetKMSEncryptionKeyResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetKMSEncryptionKeyResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetKMSEncryptionKeyResultTypeDef
 ```
 
 Required fields:
@@ -949,10 +951,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLabelsRequestTypeDef
+## GetLabelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetLabelsRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetLabelsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -961,10 +963,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetLabelsResultResponseTypeDef
+## GetLabelsResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetLabelsResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetLabelsResultTypeDef
 ```
 
 Required fields:
@@ -974,10 +976,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetModelVersionRequestTypeDef
+## GetModelVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetModelVersionRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetModelVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -987,10 +989,10 @@ Required fields:
   [ModelTypeEnumType](./literals.md#modeltypeenumtype))
 - `modelVersionNumber`: `str`
 
-## GetModelVersionResultResponseTypeDef
+## GetModelVersionResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetModelVersionResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetModelVersionResultTypeDef
 ```
 
 Required fields:
@@ -1010,10 +1012,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetModelsRequestTypeDef
+## GetModelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetModelsRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetModelsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1024,10 +1026,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetModelsResultResponseTypeDef
+## GetModelsResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetModelsResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetModelsResultTypeDef
 ```
 
 Required fields:
@@ -1037,10 +1039,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOutcomesRequestTypeDef
+## GetOutcomesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetOutcomesRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetOutcomesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1049,10 +1051,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetOutcomesResultResponseTypeDef
+## GetOutcomesResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetOutcomesResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetOutcomesResultTypeDef
 ```
 
 Required fields:
@@ -1062,10 +1064,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRulesRequestTypeDef
+## GetRulesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetRulesRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetRulesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1079,10 +1081,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetRulesResultResponseTypeDef
+## GetRulesResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetRulesResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetRulesResultTypeDef
 ```
 
 Required fields:
@@ -1093,10 +1095,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetVariablesRequestTypeDef
+## GetVariablesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetVariablesRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import GetVariablesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1105,10 +1107,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetVariablesResultResponseTypeDef
+## GetVariablesResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import GetVariablesResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import GetVariablesResultTypeDef
 ```
 
 Required fields:
@@ -1152,10 +1154,10 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1167,10 +1169,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListTagsForResourceResultResponseTypeDef
+## ListTagsForResourceResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import ListTagsForResourceResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import ListTagsForResourceResultTypeDef
 ```
 
 Required fields:
@@ -1179,6 +1181,18 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## LogitMetricTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import LogitMetricTypeDef
+```
+
+Required fields:
+
+- `variableName`: `str`
+- `variableType`: `str`
+- `variableImportance`: `float`
 
 ## MetricDataPointTypeDef
 
@@ -1321,10 +1335,10 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
-## PutDetectorRequestTypeDef
+## PutDetectorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import PutDetectorRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import PutDetectorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1337,10 +1351,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## PutEntityTypeRequestTypeDef
+## PutEntityTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import PutEntityTypeRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import PutEntityTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1352,10 +1366,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## PutEventTypeRequestTypeDef
+## PutEventTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import PutEventTypeRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import PutEventTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1370,10 +1384,10 @@ Optional fields:
 - `labels`: `List`\[`str`\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## PutExternalModelRequestTypeDef
+## PutExternalModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import PutExternalModelRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import PutExternalModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1393,20 +1407,20 @@ Optional fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## PutKMSEncryptionKeyRequestTypeDef
+## PutKMSEncryptionKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import PutKMSEncryptionKeyRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import PutKMSEncryptionKeyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `kmsEncryptionKeyArn`: `str`
 
-## PutLabelRequestTypeDef
+## PutLabelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import PutLabelRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import PutLabelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1418,10 +1432,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## PutOutcomeRequestTypeDef
+## PutOutcomeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import PutOutcomeRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import PutOutcomeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1490,10 +1504,10 @@ Required fields:
 - `ruleId`: `str`
 - `ruleVersion`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1547,11 +1561,13 @@ Optional fields:
   [DataValidationMetricsTypeDef](./type_defs.md#datavalidationmetricstypedef)
 - `trainingMetrics`:
   [TrainingMetricsTypeDef](./type_defs.md#trainingmetricstypedef)
+- `variableImportanceMetrics`:
+  [VariableImportanceMetricsTypeDef](./type_defs.md#variableimportancemetricstypedef)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1559,10 +1575,10 @@ Required fields:
 - `resourceARN`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateDetectorVersionMetadataRequestTypeDef
+## UpdateDetectorVersionMetadataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import UpdateDetectorVersionMetadataRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import UpdateDetectorVersionMetadataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1571,10 +1587,10 @@ Required fields:
 - `detectorVersionId`: `str`
 - `description`: `str`
 
-## UpdateDetectorVersionRequestTypeDef
+## UpdateDetectorVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import UpdateDetectorVersionRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import UpdateDetectorVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1592,10 +1608,10 @@ Optional fields:
 - `ruleExecutionMode`:
   [RuleExecutionModeType](./literals.md#ruleexecutionmodetype)
 
-## UpdateDetectorVersionStatusRequestTypeDef
+## UpdateDetectorVersionStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import UpdateDetectorVersionStatusRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import UpdateDetectorVersionStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1605,10 +1621,10 @@ Required fields:
 - `status`:
   [DetectorVersionStatusType](./literals.md#detectorversionstatustype)
 
-## UpdateModelRequestTypeDef
+## UpdateModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import UpdateModelRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import UpdateModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1621,10 +1637,10 @@ Optional fields:
 
 - `description`: `str`
 
-## UpdateModelVersionRequestTypeDef
+## UpdateModelVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import UpdateModelVersionRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import UpdateModelVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1640,10 +1656,10 @@ Optional fields:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## UpdateModelVersionResultResponseTypeDef
+## UpdateModelVersionResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import UpdateModelVersionResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import UpdateModelVersionResultTypeDef
 ```
 
 Required fields:
@@ -1656,10 +1672,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateModelVersionStatusRequestTypeDef
+## UpdateModelVersionStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import UpdateModelVersionStatusRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import UpdateModelVersionStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1670,10 +1686,10 @@ Required fields:
 - `modelVersionNumber`: `str`
 - `status`: [ModelVersionStatusType](./literals.md#modelversionstatustype)
 
-## UpdateRuleMetadataRequestTypeDef
+## UpdateRuleMetadataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import UpdateRuleMetadataRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import UpdateRuleMetadataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1681,10 +1697,10 @@ Required fields:
 - `rule`: [RuleTypeDef](./type_defs.md#ruletypedef)
 - `description`: `str`
 
-## UpdateRuleVersionRequestTypeDef
+## UpdateRuleVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import UpdateRuleVersionRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import UpdateRuleVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1700,10 +1716,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## UpdateRuleVersionResultResponseTypeDef
+## UpdateRuleVersionResultTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import UpdateRuleVersionResultResponseTypeDef
+from mypy_boto3_frauddetector.type_defs import UpdateRuleVersionResultTypeDef
 ```
 
 Required fields:
@@ -1712,10 +1728,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateVariableRequestTypeDef
+## UpdateVariableRequestRequestTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import UpdateVariableRequestTypeDef
+from mypy_boto3_frauddetector.type_defs import UpdateVariableRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1742,6 +1758,17 @@ Optional fields:
 - `defaultValue`: `str`
 - `description`: `str`
 - `variableType`: `str`
+
+## VariableImportanceMetricsTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import VariableImportanceMetricsTypeDef
+```
+
+Optional fields:
+
+- `LogitMetrics`:
+  `List`\[[LogitMetricTypeDef](./type_defs.md#logitmetrictypedef)\]
 
 ## VariableTypeDef
 

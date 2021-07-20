@@ -40,7 +40,7 @@ Arguments for `ListJobRunsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobRunsPaginator.paginate` returns
-`Iterator`\[[ListJobRunsResponseResponseTypeDef](./type_defs.md#listjobrunsresponseresponsetypedef)\].
+`Iterator`\[[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef)\].
 
 ## ListManagedEndpointsPaginator
 
@@ -70,7 +70,7 @@ Arguments for `ListManagedEndpointsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListManagedEndpointsPaginator.paginate` returns
-`Iterator`\[[ListManagedEndpointsResponseResponseTypeDef](./type_defs.md#listmanagedendpointsresponseresponsetypedef)\].
+`Iterator`\[[ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef)\].
 
 ## ListVirtualClustersPaginator
 
@@ -102,4 +102,4 @@ Arguments for `ListVirtualClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVirtualClustersPaginator.paginate` returns
-`Iterator`\[[ListVirtualClustersResponseResponseTypeDef](./type_defs.md#listvirtualclustersresponseresponsetypedef)\].
+`Iterator`\[[ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef)\].

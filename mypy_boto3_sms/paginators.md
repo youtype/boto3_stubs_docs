@@ -36,7 +36,7 @@ Arguments for `GetConnectorsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetConnectorsPaginator.paginate` returns
-`Iterator`\[[GetConnectorsResponseResponseTypeDef](./type_defs.md#getconnectorsresponseresponsetypedef)\].
+`Iterator`\[[GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef)\].
 
 ## GetReplicationJobsPaginator
 
@@ -62,7 +62,7 @@ Arguments for `GetReplicationJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetReplicationJobsPaginator.paginate` returns
-`Iterator`\[[GetReplicationJobsResponseResponseTypeDef](./type_defs.md#getreplicationjobsresponseresponsetypedef)\].
+`Iterator`\[[GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef)\].
 
 ## GetReplicationRunsPaginator
 
@@ -88,7 +88,7 @@ Arguments for `GetReplicationRunsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetReplicationRunsPaginator.paginate` returns
-`Iterator`\[[GetReplicationRunsResponseResponseTypeDef](./type_defs.md#getreplicationrunsresponseresponsetypedef)\].
+`Iterator`\[[GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef)\].
 
 ## GetServersPaginator
 
@@ -114,7 +114,7 @@ Arguments for `GetServersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetServersPaginator.paginate` returns
-`Iterator`\[[GetServersResponseResponseTypeDef](./type_defs.md#getserversresponseresponsetypedef)\].
+`Iterator`\[[GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef)\].
 
 ## ListAppsPaginator
 
@@ -139,4 +139,4 @@ Arguments for `ListAppsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppsPaginator.paginate` returns
-`Iterator`\[[ListAppsResponseResponseTypeDef](./type_defs.md#listappsresponseresponsetypedef)\].
+`Iterator`\[[ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef)\].

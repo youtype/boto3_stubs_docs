@@ -11,6 +11,7 @@ type annotations stubs module
   - [CodeGuruReviewerClient](#codegurureviewerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_repository](#associate_repository)
     - [can_paginate](#can_paginate)
     - [create_code_review](#create_code_review)
@@ -71,6 +72,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CodeGuruReviewerClient exceptions.
+
+Type annotations for `boto3.client("codeguru-reviewer").exceptions` method.
+
+Boto3 documentation:
+[CodeGuruReviewer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_repository
 
 .
@@ -82,7 +94,7 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.associate_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.associate_repository)
 
 Arguments mapping described in
-[AssociateRepositoryRequestTypeDef](./type_defs.md#associaterepositoryrequesttypedef).
+[AssociateRepositoryRequestRequestTypeDef](./type_defs.md#associaterepositoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -93,7 +105,7 @@ Keyword-only arguments:
 - `KMSKeyDetails`: [KMSKeyDetailsTypeDef](./type_defs.md#kmskeydetailstypedef)
 
 Returns
-[AssociateRepositoryResponseResponseTypeDef](./type_defs.md#associaterepositoryresponseresponsetypedef).
+[AssociateRepositoryResponseTypeDef](./type_defs.md#associaterepositoryresponsetypedef).
 
 ### can_paginate
 
@@ -121,7 +133,7 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.create_code_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.create_code_review)
 
 Arguments mapping described in
-[CreateCodeReviewRequestTypeDef](./type_defs.md#createcodereviewrequesttypedef).
+[CreateCodeReviewRequestRequestTypeDef](./type_defs.md#createcodereviewrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -132,7 +144,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[CreateCodeReviewResponseResponseTypeDef](./type_defs.md#createcodereviewresponseresponsetypedef).
+[CreateCodeReviewResponseTypeDef](./type_defs.md#createcodereviewresponsetypedef).
 
 ### describe_code_review
 
@@ -145,14 +157,14 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.describe_code_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_code_review)
 
 Arguments mapping described in
-[DescribeCodeReviewRequestTypeDef](./type_defs.md#describecodereviewrequesttypedef).
+[DescribeCodeReviewRequestRequestTypeDef](./type_defs.md#describecodereviewrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CodeReviewArn`: `str` *(required)*
 
 Returns
-[DescribeCodeReviewResponseResponseTypeDef](./type_defs.md#describecodereviewresponseresponsetypedef).
+[DescribeCodeReviewResponseTypeDef](./type_defs.md#describecodereviewresponsetypedef).
 
 ### describe_recommendation_feedback
 
@@ -165,7 +177,7 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.describe_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_recommendation_feedback)
 
 Arguments mapping described in
-[DescribeRecommendationFeedbackRequestTypeDef](./type_defs.md#describerecommendationfeedbackrequesttypedef).
+[DescribeRecommendationFeedbackRequestRequestTypeDef](./type_defs.md#describerecommendationfeedbackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -174,7 +186,7 @@ Keyword-only arguments:
 - `UserId`: `str`
 
 Returns
-[DescribeRecommendationFeedbackResponseResponseTypeDef](./type_defs.md#describerecommendationfeedbackresponseresponsetypedef).
+[DescribeRecommendationFeedbackResponseTypeDef](./type_defs.md#describerecommendationfeedbackresponsetypedef).
 
 ### describe_repository_association
 
@@ -187,14 +199,14 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.describe_repository_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_repository_association)
 
 Arguments mapping described in
-[DescribeRepositoryAssociationRequestTypeDef](./type_defs.md#describerepositoryassociationrequesttypedef).
+[DescribeRepositoryAssociationRequestRequestTypeDef](./type_defs.md#describerepositoryassociationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AssociationArn`: `str` *(required)*
 
 Returns
-[DescribeRepositoryAssociationResponseResponseTypeDef](./type_defs.md#describerepositoryassociationresponseresponsetypedef).
+[DescribeRepositoryAssociationResponseTypeDef](./type_defs.md#describerepositoryassociationresponsetypedef).
 
 ### disassociate_repository
 
@@ -207,14 +219,14 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.disassociate_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.disassociate_repository)
 
 Arguments mapping described in
-[DisassociateRepositoryRequestTypeDef](./type_defs.md#disassociaterepositoryrequesttypedef).
+[DisassociateRepositoryRequestRequestTypeDef](./type_defs.md#disassociaterepositoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AssociationArn`: `str` *(required)*
 
 Returns
-[DisassociateRepositoryResponseResponseTypeDef](./type_defs.md#disassociaterepositoryresponseresponsetypedef).
+[DisassociateRepositoryResponseTypeDef](./type_defs.md#disassociaterepositoryresponsetypedef).
 
 ### generate_presigned_url
 
@@ -246,7 +258,7 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.list_code_reviews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_code_reviews)
 
 Arguments mapping described in
-[ListCodeReviewsRequestTypeDef](./type_defs.md#listcodereviewsrequesttypedef).
+[ListCodeReviewsRequestRequestTypeDef](./type_defs.md#listcodereviewsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -258,7 +270,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCodeReviewsResponseResponseTypeDef](./type_defs.md#listcodereviewsresponseresponsetypedef).
+[ListCodeReviewsResponseTypeDef](./type_defs.md#listcodereviewsresponsetypedef).
 
 ### list_recommendation_feedback
 
@@ -271,7 +283,7 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.list_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendation_feedback)
 
 Arguments mapping described in
-[ListRecommendationFeedbackRequestTypeDef](./type_defs.md#listrecommendationfeedbackrequesttypedef).
+[ListRecommendationFeedbackRequestRequestTypeDef](./type_defs.md#listrecommendationfeedbackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -282,7 +294,7 @@ Keyword-only arguments:
 - `RecommendationIds`: `List`\[`str`\]
 
 Returns
-[ListRecommendationFeedbackResponseResponseTypeDef](./type_defs.md#listrecommendationfeedbackresponseresponsetypedef).
+[ListRecommendationFeedbackResponseTypeDef](./type_defs.md#listrecommendationfeedbackresponsetypedef).
 
 ### list_recommendations
 
@@ -295,7 +307,7 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.list_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendations)
 
 Arguments mapping described in
-[ListRecommendationsRequestTypeDef](./type_defs.md#listrecommendationsrequesttypedef).
+[ListRecommendationsRequestRequestTypeDef](./type_defs.md#listrecommendationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,7 +316,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListRecommendationsResponseResponseTypeDef](./type_defs.md#listrecommendationsresponseresponsetypedef).
+[ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef).
 
 ### list_repository_associations
 
@@ -317,7 +329,7 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.list_repository_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_repository_associations)
 
 Arguments mapping described in
-[ListRepositoryAssociationsRequestTypeDef](./type_defs.md#listrepositoryassociationsrequesttypedef).
+[ListRepositoryAssociationsRequestRequestTypeDef](./type_defs.md#listrepositoryassociationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -330,7 +342,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRepositoryAssociationsResponseResponseTypeDef](./type_defs.md#listrepositoryassociationsresponseresponsetypedef).
+[ListRepositoryAssociationsResponseTypeDef](./type_defs.md#listrepositoryassociationsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -343,14 +355,14 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_recommendation_feedback
 
@@ -363,7 +375,7 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.put_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.put_recommendation_feedback)
 
 Arguments mapping described in
-[PutRecommendationFeedbackRequestTypeDef](./type_defs.md#putrecommendationfeedbackrequesttypedef).
+[PutRecommendationFeedbackRequestRequestTypeDef](./type_defs.md#putrecommendationfeedbackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -384,7 +396,7 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -403,7 +415,7 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

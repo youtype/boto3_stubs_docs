@@ -10,8 +10,8 @@ type annotations stubs module
 - [Typed dictionaries for boto3 ForecastQueryService module](#typed-dictionaries-for-boto3-forecastqueryservice-module)
   - [DataPointTypeDef](#datapointtypedef)
   - [ForecastTypeDef](#forecasttypedef)
-  - [QueryForecastRequestTypeDef](#queryforecastrequesttypedef)
-  - [QueryForecastResponseResponseTypeDef](#queryforecastresponseresponsetypedef)
+  - [QueryForecastRequestRequestTypeDef](#queryforecastrequestrequesttypedef)
+  - [QueryForecastResponseTypeDef](#queryforecastresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
 ## DataPointTypeDef
@@ -36,10 +36,10 @@ Optional fields:
 - `Predictions`: `Dict`\[`str`,
   `List`\[[DataPointTypeDef](./type_defs.md#datapointtypedef)\]\]
 
-## QueryForecastRequestTypeDef
+## QueryForecastRequestRequestTypeDef
 
 ```python
-from mypy_boto3_forecastquery.type_defs import QueryForecastRequestTypeDef
+from mypy_boto3_forecastquery.type_defs import QueryForecastRequestRequestTypeDef
 ```
 
 Required fields:
@@ -53,10 +53,10 @@ Optional fields:
 - `EndDate`: `str`
 - `NextToken`: `str`
 
-## QueryForecastResponseResponseTypeDef
+## QueryForecastResponseTypeDef
 
 ```python
-from mypy_boto3_forecastquery.type_defs import QueryForecastResponseResponseTypeDef
+from mypy_boto3_forecastquery.type_defs import QueryForecastResponseTypeDef
 ```
 
 Required fields:

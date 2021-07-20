@@ -12,6 +12,7 @@ type annotations stubs module
   - [KinesisVideoSignalingChannelsClient](#kinesisvideosignalingchannelsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_ice_server_config](#get_ice_server_config)
@@ -56,6 +57,18 @@ Exceptions:
 - `Exceptions.SessionExpiredException`
 
 ## Methods
+
+### exceptions
+
+KinesisVideoSignalingChannelsClient exceptions.
+
+Type annotations for `boto3.client("kinesis-video-signaling").exceptions`
+method.
+
+Boto3 documentation:
+[KinesisVideoSignalingChannels.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
 
 ### can_paginate
 
@@ -105,7 +118,7 @@ Boto3 documentation:
 [KinesisVideoSignalingChannels.Client.get_ice_server_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.get_ice_server_config)
 
 Arguments mapping described in
-[GetIceServerConfigRequestTypeDef](./type_defs.md#geticeserverconfigrequesttypedef).
+[GetIceServerConfigRequestRequestTypeDef](./type_defs.md#geticeserverconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -115,7 +128,7 @@ Keyword-only arguments:
 - `Username`: `str`
 
 Returns
-[GetIceServerConfigResponseResponseTypeDef](./type_defs.md#geticeserverconfigresponseresponsetypedef).
+[GetIceServerConfigResponseTypeDef](./type_defs.md#geticeserverconfigresponsetypedef).
 
 ### send_alexa_offer_to_master
 
@@ -129,7 +142,7 @@ Boto3 documentation:
 [KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.send_alexa_offer_to_master)
 
 Arguments mapping described in
-[SendAlexaOfferToMasterRequestTypeDef](./type_defs.md#sendalexaoffertomasterrequesttypedef).
+[SendAlexaOfferToMasterRequestRequestTypeDef](./type_defs.md#sendalexaoffertomasterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -138,4 +151,4 @@ Keyword-only arguments:
 - `MessagePayload`: `str` *(required)*
 
 Returns
-[SendAlexaOfferToMasterResponseResponseTypeDef](./type_defs.md#sendalexaoffertomasterresponseresponsetypedef).
+[SendAlexaOfferToMasterResponseTypeDef](./type_defs.md#sendalexaoffertomasterresponsetypedef).

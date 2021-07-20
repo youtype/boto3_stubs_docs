@@ -19,8 +19,8 @@ type annotations stubs module
   - [IOUsageTypeDef](#iousagetypedef)
   - [PageTypeDef](#pagetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendCommandRequestTypeDef](#sendcommandrequesttypedef)
-  - [SendCommandResultResponseTypeDef](#sendcommandresultresponsetypedef)
+  - [SendCommandRequestRequestTypeDef](#sendcommandrequestrequesttypedef)
+  - [SendCommandResultTypeDef](#sendcommandresulttypedef)
   - [StartSessionRequestTypeDef](#startsessionrequesttypedef)
   - [StartSessionResultTypeDef](#startsessionresulttypedef)
   - [StartTransactionResultTypeDef](#starttransactionresulttypedef)
@@ -163,10 +163,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## SendCommandRequestTypeDef
+## SendCommandRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb_session.type_defs import SendCommandRequestTypeDef
+from mypy_boto3_qldb_session.type_defs import SendCommandRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -184,10 +184,10 @@ Optional fields:
 - `FetchPage`:
   [FetchPageRequestTypeDef](./type_defs.md#fetchpagerequesttypedef)
 
-## SendCommandResultResponseTypeDef
+## SendCommandResultTypeDef
 
 ```python
-from mypy_boto3_qldb_session.type_defs import SendCommandResultResponseTypeDef
+from mypy_boto3_qldb_session.type_defs import SendCommandResultTypeDef
 ```
 
 Required fields:

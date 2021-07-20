@@ -31,6 +31,7 @@ from mypy_boto3_personalize_runtime.client import PersonalizeRuntimeClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_personalized_ranking](./client.md#get_personalized_ranking)
 - [get_recommendations](./client.md#get_recommendations)
@@ -51,12 +52,12 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingRequestTypeDef, ...
+from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingRequestRequestTypeDef, ...
 ```
 
-- [GetPersonalizedRankingRequestTypeDef](./type_defs.md#getpersonalizedrankingrequesttypedef)
-- [GetPersonalizedRankingResponseResponseTypeDef](./type_defs.md#getpersonalizedrankingresponseresponsetypedef)
-- [GetRecommendationsRequestTypeDef](./type_defs.md#getrecommendationsrequesttypedef)
-- [GetRecommendationsResponseResponseTypeDef](./type_defs.md#getrecommendationsresponseresponsetypedef)
+- [GetPersonalizedRankingRequestRequestTypeDef](./type_defs.md#getpersonalizedrankingrequestrequesttypedef)
+- [GetPersonalizedRankingResponseTypeDef](./type_defs.md#getpersonalizedrankingresponsetypedef)
+- [GetRecommendationsRequestRequestTypeDef](./type_defs.md#getrecommendationsrequestrequesttypedef)
+- [GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef)
 - [PredictedItemTypeDef](./type_defs.md#predicteditemtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

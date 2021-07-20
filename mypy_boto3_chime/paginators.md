@@ -35,7 +35,7 @@ Arguments for `ListAccountsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAccountsPaginator.paginate` returns
-`Iterator`\[[ListAccountsResponseResponseTypeDef](./type_defs.md#listaccountsresponseresponsetypedef)\].
+`Iterator`\[[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef)\].
 
 ## ListUsersPaginator
 
@@ -62,4 +62,4 @@ Arguments for `ListUsersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListUsersPaginator.paginate` returns
-`Iterator`\[[ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef)\].
+`Iterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].

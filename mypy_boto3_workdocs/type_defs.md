@@ -8,78 +8,78 @@ type annotations stubs module
 [mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 - [Typed dictionaries for boto3 WorkDocs module](#typed-dictionaries-for-boto3-workdocs-module)
-  - [AbortDocumentVersionUploadRequestTypeDef](#abortdocumentversionuploadrequesttypedef)
-  - [ActivateUserRequestTypeDef](#activateuserrequesttypedef)
-  - [ActivateUserResponseResponseTypeDef](#activateuserresponseresponsetypedef)
+  - [AbortDocumentVersionUploadRequestRequestTypeDef](#abortdocumentversionuploadrequestrequesttypedef)
+  - [ActivateUserRequestRequestTypeDef](#activateuserrequestrequesttypedef)
+  - [ActivateUserResponseTypeDef](#activateuserresponsetypedef)
   - [ActivityTypeDef](#activitytypedef)
-  - [AddResourcePermissionsRequestTypeDef](#addresourcepermissionsrequesttypedef)
-  - [AddResourcePermissionsResponseResponseTypeDef](#addresourcepermissionsresponseresponsetypedef)
+  - [AddResourcePermissionsRequestRequestTypeDef](#addresourcepermissionsrequestrequesttypedef)
+  - [AddResourcePermissionsResponseTypeDef](#addresourcepermissionsresponsetypedef)
   - [CommentMetadataTypeDef](#commentmetadatatypedef)
   - [CommentTypeDef](#commenttypedef)
-  - [CreateCommentRequestTypeDef](#createcommentrequesttypedef)
-  - [CreateCommentResponseResponseTypeDef](#createcommentresponseresponsetypedef)
-  - [CreateCustomMetadataRequestTypeDef](#createcustommetadatarequesttypedef)
-  - [CreateFolderRequestTypeDef](#createfolderrequesttypedef)
-  - [CreateFolderResponseResponseTypeDef](#createfolderresponseresponsetypedef)
-  - [CreateLabelsRequestTypeDef](#createlabelsrequesttypedef)
-  - [CreateNotificationSubscriptionRequestTypeDef](#createnotificationsubscriptionrequesttypedef)
-  - [CreateNotificationSubscriptionResponseResponseTypeDef](#createnotificationsubscriptionresponseresponsetypedef)
-  - [CreateUserRequestTypeDef](#createuserrequesttypedef)
-  - [CreateUserResponseResponseTypeDef](#createuserresponseresponsetypedef)
-  - [DeactivateUserRequestTypeDef](#deactivateuserrequesttypedef)
-  - [DeleteCommentRequestTypeDef](#deletecommentrequesttypedef)
-  - [DeleteCustomMetadataRequestTypeDef](#deletecustommetadatarequesttypedef)
-  - [DeleteDocumentRequestTypeDef](#deletedocumentrequesttypedef)
-  - [DeleteFolderContentsRequestTypeDef](#deletefoldercontentsrequesttypedef)
-  - [DeleteFolderRequestTypeDef](#deletefolderrequesttypedef)
-  - [DeleteLabelsRequestTypeDef](#deletelabelsrequesttypedef)
-  - [DeleteNotificationSubscriptionRequestTypeDef](#deletenotificationsubscriptionrequesttypedef)
-  - [DeleteUserRequestTypeDef](#deleteuserrequesttypedef)
-  - [DescribeActivitiesRequestTypeDef](#describeactivitiesrequesttypedef)
-  - [DescribeActivitiesResponseResponseTypeDef](#describeactivitiesresponseresponsetypedef)
-  - [DescribeCommentsRequestTypeDef](#describecommentsrequesttypedef)
-  - [DescribeCommentsResponseResponseTypeDef](#describecommentsresponseresponsetypedef)
-  - [DescribeDocumentVersionsRequestTypeDef](#describedocumentversionsrequesttypedef)
-  - [DescribeDocumentVersionsResponseResponseTypeDef](#describedocumentversionsresponseresponsetypedef)
-  - [DescribeFolderContentsRequestTypeDef](#describefoldercontentsrequesttypedef)
-  - [DescribeFolderContentsResponseResponseTypeDef](#describefoldercontentsresponseresponsetypedef)
-  - [DescribeGroupsRequestTypeDef](#describegroupsrequesttypedef)
-  - [DescribeGroupsResponseResponseTypeDef](#describegroupsresponseresponsetypedef)
-  - [DescribeNotificationSubscriptionsRequestTypeDef](#describenotificationsubscriptionsrequesttypedef)
-  - [DescribeNotificationSubscriptionsResponseResponseTypeDef](#describenotificationsubscriptionsresponseresponsetypedef)
-  - [DescribeResourcePermissionsRequestTypeDef](#describeresourcepermissionsrequesttypedef)
-  - [DescribeResourcePermissionsResponseResponseTypeDef](#describeresourcepermissionsresponseresponsetypedef)
-  - [DescribeRootFoldersRequestTypeDef](#describerootfoldersrequesttypedef)
-  - [DescribeRootFoldersResponseResponseTypeDef](#describerootfoldersresponseresponsetypedef)
-  - [DescribeUsersRequestTypeDef](#describeusersrequesttypedef)
-  - [DescribeUsersResponseResponseTypeDef](#describeusersresponseresponsetypedef)
+  - [CreateCommentRequestRequestTypeDef](#createcommentrequestrequesttypedef)
+  - [CreateCommentResponseTypeDef](#createcommentresponsetypedef)
+  - [CreateCustomMetadataRequestRequestTypeDef](#createcustommetadatarequestrequesttypedef)
+  - [CreateFolderRequestRequestTypeDef](#createfolderrequestrequesttypedef)
+  - [CreateFolderResponseTypeDef](#createfolderresponsetypedef)
+  - [CreateLabelsRequestRequestTypeDef](#createlabelsrequestrequesttypedef)
+  - [CreateNotificationSubscriptionRequestRequestTypeDef](#createnotificationsubscriptionrequestrequesttypedef)
+  - [CreateNotificationSubscriptionResponseTypeDef](#createnotificationsubscriptionresponsetypedef)
+  - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
+  - [CreateUserResponseTypeDef](#createuserresponsetypedef)
+  - [DeactivateUserRequestRequestTypeDef](#deactivateuserrequestrequesttypedef)
+  - [DeleteCommentRequestRequestTypeDef](#deletecommentrequestrequesttypedef)
+  - [DeleteCustomMetadataRequestRequestTypeDef](#deletecustommetadatarequestrequesttypedef)
+  - [DeleteDocumentRequestRequestTypeDef](#deletedocumentrequestrequesttypedef)
+  - [DeleteFolderContentsRequestRequestTypeDef](#deletefoldercontentsrequestrequesttypedef)
+  - [DeleteFolderRequestRequestTypeDef](#deletefolderrequestrequesttypedef)
+  - [DeleteLabelsRequestRequestTypeDef](#deletelabelsrequestrequesttypedef)
+  - [DeleteNotificationSubscriptionRequestRequestTypeDef](#deletenotificationsubscriptionrequestrequesttypedef)
+  - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
+  - [DescribeActivitiesRequestRequestTypeDef](#describeactivitiesrequestrequesttypedef)
+  - [DescribeActivitiesResponseTypeDef](#describeactivitiesresponsetypedef)
+  - [DescribeCommentsRequestRequestTypeDef](#describecommentsrequestrequesttypedef)
+  - [DescribeCommentsResponseTypeDef](#describecommentsresponsetypedef)
+  - [DescribeDocumentVersionsRequestRequestTypeDef](#describedocumentversionsrequestrequesttypedef)
+  - [DescribeDocumentVersionsResponseTypeDef](#describedocumentversionsresponsetypedef)
+  - [DescribeFolderContentsRequestRequestTypeDef](#describefoldercontentsrequestrequesttypedef)
+  - [DescribeFolderContentsResponseTypeDef](#describefoldercontentsresponsetypedef)
+  - [DescribeGroupsRequestRequestTypeDef](#describegroupsrequestrequesttypedef)
+  - [DescribeGroupsResponseTypeDef](#describegroupsresponsetypedef)
+  - [DescribeNotificationSubscriptionsRequestRequestTypeDef](#describenotificationsubscriptionsrequestrequesttypedef)
+  - [DescribeNotificationSubscriptionsResponseTypeDef](#describenotificationsubscriptionsresponsetypedef)
+  - [DescribeResourcePermissionsRequestRequestTypeDef](#describeresourcepermissionsrequestrequesttypedef)
+  - [DescribeResourcePermissionsResponseTypeDef](#describeresourcepermissionsresponsetypedef)
+  - [DescribeRootFoldersRequestRequestTypeDef](#describerootfoldersrequestrequesttypedef)
+  - [DescribeRootFoldersResponseTypeDef](#describerootfoldersresponsetypedef)
+  - [DescribeUsersRequestRequestTypeDef](#describeusersrequestrequesttypedef)
+  - [DescribeUsersResponseTypeDef](#describeusersresponsetypedef)
   - [DocumentMetadataTypeDef](#documentmetadatatypedef)
   - [DocumentVersionMetadataTypeDef](#documentversionmetadatatypedef)
   - [FolderMetadataTypeDef](#foldermetadatatypedef)
-  - [GetCurrentUserRequestTypeDef](#getcurrentuserrequesttypedef)
-  - [GetCurrentUserResponseResponseTypeDef](#getcurrentuserresponseresponsetypedef)
-  - [GetDocumentPathRequestTypeDef](#getdocumentpathrequesttypedef)
-  - [GetDocumentPathResponseResponseTypeDef](#getdocumentpathresponseresponsetypedef)
-  - [GetDocumentRequestTypeDef](#getdocumentrequesttypedef)
-  - [GetDocumentResponseResponseTypeDef](#getdocumentresponseresponsetypedef)
-  - [GetDocumentVersionRequestTypeDef](#getdocumentversionrequesttypedef)
-  - [GetDocumentVersionResponseResponseTypeDef](#getdocumentversionresponseresponsetypedef)
-  - [GetFolderPathRequestTypeDef](#getfolderpathrequesttypedef)
-  - [GetFolderPathResponseResponseTypeDef](#getfolderpathresponseresponsetypedef)
-  - [GetFolderRequestTypeDef](#getfolderrequesttypedef)
-  - [GetFolderResponseResponseTypeDef](#getfolderresponseresponsetypedef)
-  - [GetResourcesRequestTypeDef](#getresourcesrequesttypedef)
-  - [GetResourcesResponseResponseTypeDef](#getresourcesresponseresponsetypedef)
+  - [GetCurrentUserRequestRequestTypeDef](#getcurrentuserrequestrequesttypedef)
+  - [GetCurrentUserResponseTypeDef](#getcurrentuserresponsetypedef)
+  - [GetDocumentPathRequestRequestTypeDef](#getdocumentpathrequestrequesttypedef)
+  - [GetDocumentPathResponseTypeDef](#getdocumentpathresponsetypedef)
+  - [GetDocumentRequestRequestTypeDef](#getdocumentrequestrequesttypedef)
+  - [GetDocumentResponseTypeDef](#getdocumentresponsetypedef)
+  - [GetDocumentVersionRequestRequestTypeDef](#getdocumentversionrequestrequesttypedef)
+  - [GetDocumentVersionResponseTypeDef](#getdocumentversionresponsetypedef)
+  - [GetFolderPathRequestRequestTypeDef](#getfolderpathrequestrequesttypedef)
+  - [GetFolderPathResponseTypeDef](#getfolderpathresponsetypedef)
+  - [GetFolderRequestRequestTypeDef](#getfolderrequestrequesttypedef)
+  - [GetFolderResponseTypeDef](#getfolderresponsetypedef)
+  - [GetResourcesRequestRequestTypeDef](#getresourcesrequestrequesttypedef)
+  - [GetResourcesResponseTypeDef](#getresourcesresponsetypedef)
   - [GroupMetadataTypeDef](#groupmetadatatypedef)
-  - [InitiateDocumentVersionUploadRequestTypeDef](#initiatedocumentversionuploadrequesttypedef)
-  - [InitiateDocumentVersionUploadResponseResponseTypeDef](#initiatedocumentversionuploadresponseresponsetypedef)
+  - [InitiateDocumentVersionUploadRequestRequestTypeDef](#initiatedocumentversionuploadrequestrequesttypedef)
+  - [InitiateDocumentVersionUploadResponseTypeDef](#initiatedocumentversionuploadresponsetypedef)
   - [NotificationOptionsTypeDef](#notificationoptionstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParticipantsTypeDef](#participantstypedef)
   - [PermissionInfoTypeDef](#permissioninfotypedef)
   - [PrincipalTypeDef](#principaltypedef)
-  - [RemoveAllResourcePermissionsRequestTypeDef](#removeallresourcepermissionsrequesttypedef)
-  - [RemoveResourcePermissionRequestTypeDef](#removeresourcepermissionrequesttypedef)
+  - [RemoveAllResourcePermissionsRequestRequestTypeDef](#removeallresourcepermissionsrequestrequesttypedef)
+  - [RemoveResourcePermissionRequestRequestTypeDef](#removeresourcepermissionrequestrequesttypedef)
   - [ResourceMetadataTypeDef](#resourcemetadatatypedef)
   - [ResourcePathComponentTypeDef](#resourcepathcomponenttypedef)
   - [ResourcePathTypeDef](#resourcepathtypedef)
@@ -88,20 +88,20 @@ type annotations stubs module
   - [ShareResultTypeDef](#shareresulttypedef)
   - [StorageRuleTypeTypeDef](#storageruletypetypedef)
   - [SubscriptionTypeDef](#subscriptiontypedef)
-  - [UpdateDocumentRequestTypeDef](#updatedocumentrequesttypedef)
-  - [UpdateDocumentVersionRequestTypeDef](#updatedocumentversionrequesttypedef)
-  - [UpdateFolderRequestTypeDef](#updatefolderrequesttypedef)
-  - [UpdateUserRequestTypeDef](#updateuserrequesttypedef)
-  - [UpdateUserResponseResponseTypeDef](#updateuserresponseresponsetypedef)
+  - [UpdateDocumentRequestRequestTypeDef](#updatedocumentrequestrequesttypedef)
+  - [UpdateDocumentVersionRequestRequestTypeDef](#updatedocumentversionrequestrequesttypedef)
+  - [UpdateFolderRequestRequestTypeDef](#updatefolderrequestrequesttypedef)
+  - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
+  - [UpdateUserResponseTypeDef](#updateuserresponsetypedef)
   - [UploadMetadataTypeDef](#uploadmetadatatypedef)
   - [UserMetadataTypeDef](#usermetadatatypedef)
   - [UserStorageMetadataTypeDef](#userstoragemetadatatypedef)
   - [UserTypeDef](#usertypedef)
 
-## AbortDocumentVersionUploadRequestTypeDef
+## AbortDocumentVersionUploadRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import AbortDocumentVersionUploadRequestTypeDef
+from mypy_boto3_workdocs.type_defs import AbortDocumentVersionUploadRequestRequestTypeDef
 ```
 
 Required fields:
@@ -113,10 +113,10 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
-## ActivateUserRequestTypeDef
+## ActivateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import ActivateUserRequestTypeDef
+from mypy_boto3_workdocs.type_defs import ActivateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -127,10 +127,10 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
-## ActivateUserResponseResponseTypeDef
+## ActivateUserResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import ActivateUserResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import ActivateUserResponseTypeDef
 ```
 
 Required fields:
@@ -160,10 +160,10 @@ Optional fields:
 - `CommentMetadata`:
   [CommentMetadataTypeDef](./type_defs.md#commentmetadatatypedef)
 
-## AddResourcePermissionsRequestTypeDef
+## AddResourcePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import AddResourcePermissionsRequestTypeDef
+from mypy_boto3_workdocs.type_defs import AddResourcePermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -178,10 +178,10 @@ Optional fields:
 - `NotificationOptions`:
   [NotificationOptionsTypeDef](./type_defs.md#notificationoptionstypedef)
 
-## AddResourcePermissionsResponseResponseTypeDef
+## AddResourcePermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import AddResourcePermissionsResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import AddResourcePermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -227,10 +227,10 @@ Optional fields:
   [CommentVisibilityTypeType](./literals.md#commentvisibilitytypetype)
 - `RecipientId`: `str`
 
-## CreateCommentRequestTypeDef
+## CreateCommentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import CreateCommentRequestTypeDef
+from mypy_boto3_workdocs.type_defs import CreateCommentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -248,10 +248,10 @@ Optional fields:
   [CommentVisibilityTypeType](./literals.md#commentvisibilitytypetype)
 - `NotifyCollaborators`: `bool`
 
-## CreateCommentResponseResponseTypeDef
+## CreateCommentResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import CreateCommentResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import CreateCommentResponseTypeDef
 ```
 
 Required fields:
@@ -260,10 +260,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCustomMetadataRequestTypeDef
+## CreateCustomMetadataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import CreateCustomMetadataRequestTypeDef
+from mypy_boto3_workdocs.type_defs import CreateCustomMetadataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -276,10 +276,10 @@ Optional fields:
 - `AuthenticationToken`: `str`
 - `VersionId`: `str`
 
-## CreateFolderRequestTypeDef
+## CreateFolderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import CreateFolderRequestTypeDef
+from mypy_boto3_workdocs.type_defs import CreateFolderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -291,10 +291,10 @@ Optional fields:
 - `AuthenticationToken`: `str`
 - `Name`: `str`
 
-## CreateFolderResponseResponseTypeDef
+## CreateFolderResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import CreateFolderResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import CreateFolderResponseTypeDef
 ```
 
 Required fields:
@@ -303,10 +303,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLabelsRequestTypeDef
+## CreateLabelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import CreateLabelsRequestTypeDef
+from mypy_boto3_workdocs.type_defs import CreateLabelsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -318,10 +318,10 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
-## CreateNotificationSubscriptionRequestTypeDef
+## CreateNotificationSubscriptionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import CreateNotificationSubscriptionRequestTypeDef
+from mypy_boto3_workdocs.type_defs import CreateNotificationSubscriptionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -333,10 +333,10 @@ Required fields:
 - `SubscriptionType`: `Literal['ALL']` (see
   [SubscriptionTypeType](./literals.md#subscriptiontypetype))
 
-## CreateNotificationSubscriptionResponseResponseTypeDef
+## CreateNotificationSubscriptionResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import CreateNotificationSubscriptionResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import CreateNotificationSubscriptionResponseTypeDef
 ```
 
 Required fields:
@@ -345,10 +345,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUserRequestTypeDef
+## CreateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import CreateUserRequestTypeDef
+from mypy_boto3_workdocs.type_defs import CreateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -367,10 +367,10 @@ Optional fields:
   [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
 - `AuthenticationToken`: `str`
 
-## CreateUserResponseResponseTypeDef
+## CreateUserResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import CreateUserResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import CreateUserResponseTypeDef
 ```
 
 Required fields:
@@ -379,10 +379,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeactivateUserRequestTypeDef
+## DeactivateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DeactivateUserRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DeactivateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -393,10 +393,10 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
-## DeleteCommentRequestTypeDef
+## DeleteCommentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DeleteCommentRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DeleteCommentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -409,10 +409,10 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
-## DeleteCustomMetadataRequestTypeDef
+## DeleteCustomMetadataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DeleteCustomMetadataRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DeleteCustomMetadataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -426,10 +426,10 @@ Optional fields:
 - `Keys`: `List`\[`str`\]
 - `DeleteAll`: `bool`
 
-## DeleteDocumentRequestTypeDef
+## DeleteDocumentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DeleteDocumentRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DeleteDocumentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -440,10 +440,10 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
-## DeleteFolderContentsRequestTypeDef
+## DeleteFolderContentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DeleteFolderContentsRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DeleteFolderContentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -454,10 +454,10 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
-## DeleteFolderRequestTypeDef
+## DeleteFolderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DeleteFolderRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DeleteFolderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -468,10 +468,10 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
-## DeleteLabelsRequestTypeDef
+## DeleteLabelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DeleteLabelsRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DeleteLabelsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -484,10 +484,10 @@ Optional fields:
 - `Labels`: `List`\[`str`\]
 - `DeleteAll`: `bool`
 
-## DeleteNotificationSubscriptionRequestTypeDef
+## DeleteNotificationSubscriptionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DeleteNotificationSubscriptionRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DeleteNotificationSubscriptionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -495,10 +495,10 @@ Required fields:
 - `SubscriptionId`: `str`
 - `OrganizationId`: `str`
 
-## DeleteUserRequestTypeDef
+## DeleteUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DeleteUserRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DeleteUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -509,10 +509,10 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
-## DescribeActivitiesRequestTypeDef
+## DescribeActivitiesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeActivitiesRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeActivitiesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -528,10 +528,10 @@ Optional fields:
 - `Limit`: `int`
 - `Marker`: `str`
 
-## DescribeActivitiesResponseResponseTypeDef
+## DescribeActivitiesResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeActivitiesResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeActivitiesResponseTypeDef
 ```
 
 Required fields:
@@ -541,10 +541,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCommentsRequestTypeDef
+## DescribeCommentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeCommentsRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeCommentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -558,10 +558,10 @@ Optional fields:
 - `Limit`: `int`
 - `Marker`: `str`
 
-## DescribeCommentsResponseResponseTypeDef
+## DescribeCommentsResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeCommentsResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeCommentsResponseTypeDef
 ```
 
 Required fields:
@@ -571,10 +571,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDocumentVersionsRequestTypeDef
+## DescribeDocumentVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeDocumentVersionsRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeDocumentVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -589,10 +589,10 @@ Optional fields:
 - `Include`: `str`
 - `Fields`: `str`
 
-## DescribeDocumentVersionsResponseResponseTypeDef
+## DescribeDocumentVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeDocumentVersionsResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeDocumentVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -603,10 +603,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFolderContentsRequestTypeDef
+## DescribeFolderContentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeFolderContentsRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeFolderContentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -623,10 +623,10 @@ Optional fields:
 - `Type`: [FolderContentTypeType](./literals.md#foldercontenttypetype)
 - `Include`: `str`
 
-## DescribeFolderContentsResponseResponseTypeDef
+## DescribeFolderContentsResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeFolderContentsResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeFolderContentsResponseTypeDef
 ```
 
 Required fields:
@@ -639,10 +639,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeGroupsRequestTypeDef
+## DescribeGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeGroupsRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeGroupsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -656,10 +656,10 @@ Optional fields:
 - `Marker`: `str`
 - `Limit`: `int`
 
-## DescribeGroupsResponseResponseTypeDef
+## DescribeGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeGroupsResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -670,10 +670,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeNotificationSubscriptionsRequestTypeDef
+## DescribeNotificationSubscriptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeNotificationSubscriptionsRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeNotificationSubscriptionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -685,10 +685,10 @@ Optional fields:
 - `Marker`: `str`
 - `Limit`: `int`
 
-## DescribeNotificationSubscriptionsResponseResponseTypeDef
+## DescribeNotificationSubscriptionsResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeNotificationSubscriptionsResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeNotificationSubscriptionsResponseTypeDef
 ```
 
 Required fields:
@@ -699,10 +699,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeResourcePermissionsRequestTypeDef
+## DescribeResourcePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeResourcePermissionsRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeResourcePermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -716,10 +716,10 @@ Optional fields:
 - `Limit`: `int`
 - `Marker`: `str`
 
-## DescribeResourcePermissionsResponseResponseTypeDef
+## DescribeResourcePermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeResourcePermissionsResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeResourcePermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -729,10 +729,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRootFoldersRequestTypeDef
+## DescribeRootFoldersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeRootFoldersRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeRootFoldersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -744,10 +744,10 @@ Optional fields:
 - `Limit`: `int`
 - `Marker`: `str`
 
-## DescribeRootFoldersResponseResponseTypeDef
+## DescribeRootFoldersResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeRootFoldersResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeRootFoldersResponseTypeDef
 ```
 
 Required fields:
@@ -758,10 +758,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUsersRequestTypeDef
+## DescribeUsersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeUsersRequestTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeUsersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -777,10 +777,10 @@ Optional fields:
 - `Limit`: `int`
 - `Fields`: `str`
 
-## DescribeUsersResponseResponseTypeDef
+## DescribeUsersResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import DescribeUsersResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import DescribeUsersResponseTypeDef
 ```
 
 Required fields:
@@ -855,20 +855,20 @@ Optional fields:
 - `Size`: `int`
 - `LatestVersionSize`: `int`
 
-## GetCurrentUserRequestTypeDef
+## GetCurrentUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetCurrentUserRequestTypeDef
+from mypy_boto3_workdocs.type_defs import GetCurrentUserRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AuthenticationToken`: `str`
 
-## GetCurrentUserResponseResponseTypeDef
+## GetCurrentUserResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetCurrentUserResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import GetCurrentUserResponseTypeDef
 ```
 
 Required fields:
@@ -877,10 +877,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDocumentPathRequestTypeDef
+## GetDocumentPathRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetDocumentPathRequestTypeDef
+from mypy_boto3_workdocs.type_defs import GetDocumentPathRequestRequestTypeDef
 ```
 
 Required fields:
@@ -894,10 +894,10 @@ Optional fields:
 - `Fields`: `str`
 - `Marker`: `str`
 
-## GetDocumentPathResponseResponseTypeDef
+## GetDocumentPathResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetDocumentPathResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import GetDocumentPathResponseTypeDef
 ```
 
 Required fields:
@@ -906,10 +906,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDocumentRequestTypeDef
+## GetDocumentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetDocumentRequestTypeDef
+from mypy_boto3_workdocs.type_defs import GetDocumentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -921,10 +921,10 @@ Optional fields:
 - `AuthenticationToken`: `str`
 - `IncludeCustomMetadata`: `bool`
 
-## GetDocumentResponseResponseTypeDef
+## GetDocumentResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetDocumentResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import GetDocumentResponseTypeDef
 ```
 
 Required fields:
@@ -934,10 +934,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDocumentVersionRequestTypeDef
+## GetDocumentVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetDocumentVersionRequestTypeDef
+from mypy_boto3_workdocs.type_defs import GetDocumentVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -951,10 +951,10 @@ Optional fields:
 - `Fields`: `str`
 - `IncludeCustomMetadata`: `bool`
 
-## GetDocumentVersionResponseResponseTypeDef
+## GetDocumentVersionResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetDocumentVersionResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import GetDocumentVersionResponseTypeDef
 ```
 
 Required fields:
@@ -965,10 +965,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFolderPathRequestTypeDef
+## GetFolderPathRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetFolderPathRequestTypeDef
+from mypy_boto3_workdocs.type_defs import GetFolderPathRequestRequestTypeDef
 ```
 
 Required fields:
@@ -982,10 +982,10 @@ Optional fields:
 - `Fields`: `str`
 - `Marker`: `str`
 
-## GetFolderPathResponseResponseTypeDef
+## GetFolderPathResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetFolderPathResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import GetFolderPathResponseTypeDef
 ```
 
 Required fields:
@@ -994,10 +994,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFolderRequestTypeDef
+## GetFolderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetFolderRequestTypeDef
+from mypy_boto3_workdocs.type_defs import GetFolderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1009,10 +1009,10 @@ Optional fields:
 - `AuthenticationToken`: `str`
 - `IncludeCustomMetadata`: `bool`
 
-## GetFolderResponseResponseTypeDef
+## GetFolderResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetFolderResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import GetFolderResponseTypeDef
 ```
 
 Required fields:
@@ -1022,10 +1022,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourcesRequestTypeDef
+## GetResourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetResourcesRequestTypeDef
+from mypy_boto3_workdocs.type_defs import GetResourcesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1037,10 +1037,10 @@ Optional fields:
 - `Limit`: `int`
 - `Marker`: `str`
 
-## GetResourcesResponseResponseTypeDef
+## GetResourcesResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import GetResourcesResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import GetResourcesResponseTypeDef
 ```
 
 Required fields:
@@ -1064,10 +1064,10 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 
-## InitiateDocumentVersionUploadRequestTypeDef
+## InitiateDocumentVersionUploadRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import InitiateDocumentVersionUploadRequestTypeDef
+from mypy_boto3_workdocs.type_defs import InitiateDocumentVersionUploadRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1084,10 +1084,10 @@ Optional fields:
 - `ContentType`: `str`
 - `DocumentSizeInBytes`: `int`
 
-## InitiateDocumentVersionUploadResponseResponseTypeDef
+## InitiateDocumentVersionUploadResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import InitiateDocumentVersionUploadResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import InitiateDocumentVersionUploadResponseTypeDef
 ```
 
 Required fields:
@@ -1157,10 +1157,10 @@ Optional fields:
 - `Roles`:
   `List`\[[PermissionInfoTypeDef](./type_defs.md#permissioninfotypedef)\]
 
-## RemoveAllResourcePermissionsRequestTypeDef
+## RemoveAllResourcePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import RemoveAllResourcePermissionsRequestTypeDef
+from mypy_boto3_workdocs.type_defs import RemoveAllResourcePermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1171,10 +1171,10 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
-## RemoveResourcePermissionRequestTypeDef
+## RemoveResourcePermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import RemoveResourcePermissionRequestTypeDef
+from mypy_boto3_workdocs.type_defs import RemoveResourcePermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1290,10 +1290,10 @@ Optional fields:
 - `Protocol`: `Literal['HTTPS']` (see
   [SubscriptionProtocolTypeType](./literals.md#subscriptionprotocoltypetype))
 
-## UpdateDocumentRequestTypeDef
+## UpdateDocumentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import UpdateDocumentRequestTypeDef
+from mypy_boto3_workdocs.type_defs import UpdateDocumentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1307,10 +1307,10 @@ Optional fields:
 - `ParentFolderId`: `str`
 - `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
 
-## UpdateDocumentVersionRequestTypeDef
+## UpdateDocumentVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import UpdateDocumentVersionRequestTypeDef
+from mypy_boto3_workdocs.type_defs import UpdateDocumentVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1324,10 +1324,10 @@ Optional fields:
 - `VersionStatus`: `Literal['ACTIVE']` (see
   [DocumentVersionStatusType](./literals.md#documentversionstatustype))
 
-## UpdateFolderRequestTypeDef
+## UpdateFolderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import UpdateFolderRequestTypeDef
+from mypy_boto3_workdocs.type_defs import UpdateFolderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1341,10 +1341,10 @@ Optional fields:
 - `ParentFolderId`: `str`
 - `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
 
-## UpdateUserRequestTypeDef
+## UpdateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import UpdateUserRequestTypeDef
+from mypy_boto3_workdocs.type_defs import UpdateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1364,10 +1364,10 @@ Optional fields:
 - `GrantPoweruserPrivileges`:
   [BooleanEnumTypeType](./literals.md#booleanenumtypetype)
 
-## UpdateUserResponseResponseTypeDef
+## UpdateUserResponseTypeDef
 
 ```python
-from mypy_boto3_workdocs.type_defs import UpdateUserResponseResponseTypeDef
+from mypy_boto3_workdocs.type_defs import UpdateUserResponseTypeDef
 ```
 
 Required fields:

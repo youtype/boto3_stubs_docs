@@ -12,6 +12,7 @@ type annotations stubs module
   - [ApplicationDiscoveryServiceClient](#applicationdiscoveryserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_configuration_items_to_application](#associate_configuration_items_to_application)
     - [batch_delete_import_data](#batch_delete_import_data)
     - [can_paginate](#can_paginate)
@@ -84,6 +85,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ApplicationDiscoveryServiceClient exceptions.
+
+Type annotations for `boto3.client("discovery").exceptions` method.
+
+Boto3 documentation:
+[ApplicationDiscoveryService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_configuration_items_to_application
 
 Associates one or more configuration items with an application.
@@ -96,7 +108,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.associate_configuration_items_to_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.associate_configuration_items_to_application)
 
 Arguments mapping described in
-[AssociateConfigurationItemsToApplicationRequestTypeDef](./type_defs.md#associateconfigurationitemstoapplicationrequesttypedef).
+[AssociateConfigurationItemsToApplicationRequestRequestTypeDef](./type_defs.md#associateconfigurationitemstoapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -116,14 +128,14 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.batch_delete_import_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.batch_delete_import_data)
 
 Arguments mapping described in
-[BatchDeleteImportDataRequestTypeDef](./type_defs.md#batchdeleteimportdatarequesttypedef).
+[BatchDeleteImportDataRequestRequestTypeDef](./type_defs.md#batchdeleteimportdatarequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `importTaskIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeleteImportDataResponseResponseTypeDef](./type_defs.md#batchdeleteimportdataresponseresponsetypedef).
+[BatchDeleteImportDataResponseTypeDef](./type_defs.md#batchdeleteimportdataresponsetypedef).
 
 ### can_paginate
 
@@ -150,7 +162,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_application)
 
 Arguments mapping described in
-[CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef).
+[CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -158,7 +170,7 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns
-[CreateApplicationResponseResponseTypeDef](./type_defs.md#createapplicationresponseresponsetypedef).
+[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
 ### create_tags
 
@@ -170,7 +182,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_tags)
 
 Arguments mapping described in
-[CreateTagsRequestTypeDef](./type_defs.md#createtagsrequesttypedef).
+[CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -189,7 +201,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.delete_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_applications)
 
 Arguments mapping described in
-[DeleteApplicationsRequestTypeDef](./type_defs.md#deleteapplicationsrequesttypedef).
+[DeleteApplicationsRequestRequestTypeDef](./type_defs.md#deleteapplicationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,7 +219,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_tags)
 
 Arguments mapping described in
-[DeleteTagsRequestTypeDef](./type_defs.md#deletetagsrequesttypedef).
+[DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -226,7 +238,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_agents)
 
 Arguments mapping described in
-[DescribeAgentsRequestTypeDef](./type_defs.md#describeagentsrequesttypedef).
+[DescribeAgentsRequestRequestTypeDef](./type_defs.md#describeagentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -236,7 +248,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeAgentsResponseResponseTypeDef](./type_defs.md#describeagentsresponseresponsetypedef).
+[DescribeAgentsResponseTypeDef](./type_defs.md#describeagentsresponsetypedef).
 
 ### describe_configurations
 
@@ -249,14 +261,14 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_configurations)
 
 Arguments mapping described in
-[DescribeConfigurationsRequestTypeDef](./type_defs.md#describeconfigurationsrequesttypedef).
+[DescribeConfigurationsRequestRequestTypeDef](./type_defs.md#describeconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `configurationIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeConfigurationsResponseResponseTypeDef](./type_defs.md#describeconfigurationsresponseresponsetypedef).
+[DescribeConfigurationsResponseTypeDef](./type_defs.md#describeconfigurationsresponsetypedef).
 
 ### describe_continuous_exports
 
@@ -269,7 +281,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_continuous_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_continuous_exports)
 
 Arguments mapping described in
-[DescribeContinuousExportsRequestTypeDef](./type_defs.md#describecontinuousexportsrequesttypedef).
+[DescribeContinuousExportsRequestRequestTypeDef](./type_defs.md#describecontinuousexportsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -278,7 +290,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeContinuousExportsResponseResponseTypeDef](./type_defs.md#describecontinuousexportsresponseresponsetypedef).
+[DescribeContinuousExportsResponseTypeDef](./type_defs.md#describecontinuousexportsresponsetypedef).
 
 ### describe_export_configurations
 
@@ -291,7 +303,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_export_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_configurations)
 
 Arguments mapping described in
-[DescribeExportConfigurationsRequestTypeDef](./type_defs.md#describeexportconfigurationsrequesttypedef).
+[DescribeExportConfigurationsRequestRequestTypeDef](./type_defs.md#describeexportconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -300,7 +312,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeExportConfigurationsResponseResponseTypeDef](./type_defs.md#describeexportconfigurationsresponseresponsetypedef).
+[DescribeExportConfigurationsResponseTypeDef](./type_defs.md#describeexportconfigurationsresponsetypedef).
 
 ### describe_export_tasks
 
@@ -312,7 +324,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_tasks)
 
 Arguments mapping described in
-[DescribeExportTasksRequestTypeDef](./type_defs.md#describeexporttasksrequesttypedef).
+[DescribeExportTasksRequestRequestTypeDef](./type_defs.md#describeexporttasksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -323,7 +335,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeExportTasksResponseResponseTypeDef](./type_defs.md#describeexporttasksresponseresponsetypedef).
+[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef).
 
 ### describe_import_tasks
 
@@ -337,7 +349,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_import_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_import_tasks)
 
 Arguments mapping described in
-[DescribeImportTasksRequestTypeDef](./type_defs.md#describeimporttasksrequesttypedef).
+[DescribeImportTasksRequestRequestTypeDef](./type_defs.md#describeimporttasksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -347,7 +359,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeImportTasksResponseResponseTypeDef](./type_defs.md#describeimporttasksresponseresponsetypedef).
+[DescribeImportTasksResponseTypeDef](./type_defs.md#describeimporttasksresponsetypedef).
 
 ### describe_tags
 
@@ -360,7 +372,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_tags)
 
 Arguments mapping described in
-[DescribeTagsRequestTypeDef](./type_defs.md#describetagsrequesttypedef).
+[DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -369,7 +381,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeTagsResponseResponseTypeDef](./type_defs.md#describetagsresponseresponsetypedef).
+[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
 
 ### disassociate_configuration_items_from_application
 
@@ -383,7 +395,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application)
 
 Arguments mapping described in
-[DisassociateConfigurationItemsFromApplicationRequestTypeDef](./type_defs.md#disassociateconfigurationitemsfromapplicationrequesttypedef).
+[DisassociateConfigurationItemsFromApplicationRequestRequestTypeDef](./type_defs.md#disassociateconfigurationitemsfromapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -402,7 +414,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.export_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.export_configurations)
 
 Returns
-[ExportConfigurationsResponseResponseTypeDef](./type_defs.md#exportconfigurationsresponseresponsetypedef).
+[ExportConfigurationsResponseTypeDef](./type_defs.md#exportconfigurationsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -432,7 +444,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.get_discovery_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.get_discovery_summary)
 
 Returns
-[GetDiscoverySummaryResponseResponseTypeDef](./type_defs.md#getdiscoverysummaryresponseresponsetypedef).
+[GetDiscoverySummaryResponseTypeDef](./type_defs.md#getdiscoverysummaryresponsetypedef).
 
 ### list_configurations
 
@@ -445,7 +457,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_configurations)
 
 Arguments mapping described in
-[ListConfigurationsRequestTypeDef](./type_defs.md#listconfigurationsrequesttypedef).
+[ListConfigurationsRequestRequestTypeDef](./type_defs.md#listconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -459,7 +471,7 @@ Keyword-only arguments:
   `List`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
 
 Returns
-[ListConfigurationsResponseResponseTypeDef](./type_defs.md#listconfigurationsresponseresponsetypedef).
+[ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
 
 ### list_server_neighbors
 
@@ -472,7 +484,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.list_server_neighbors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_server_neighbors)
 
 Arguments mapping described in
-[ListServerNeighborsRequestTypeDef](./type_defs.md#listserverneighborsrequesttypedef).
+[ListServerNeighborsRequestRequestTypeDef](./type_defs.md#listserverneighborsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -483,7 +495,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListServerNeighborsResponseResponseTypeDef](./type_defs.md#listserverneighborsresponseresponsetypedef).
+[ListServerNeighborsResponseTypeDef](./type_defs.md#listserverneighborsresponsetypedef).
 
 ### start_continuous_export
 
@@ -496,7 +508,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.start_continuous_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_continuous_export)
 
 Returns
-[StartContinuousExportResponseResponseTypeDef](./type_defs.md#startcontinuousexportresponseresponsetypedef).
+[StartContinuousExportResponseTypeDef](./type_defs.md#startcontinuousexportresponsetypedef).
 
 ### start_data_collection_by_agent_ids
 
@@ -509,14 +521,14 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids)
 
 Arguments mapping described in
-[StartDataCollectionByAgentIdsRequestTypeDef](./type_defs.md#startdatacollectionbyagentidsrequesttypedef).
+[StartDataCollectionByAgentIdsRequestRequestTypeDef](./type_defs.md#startdatacollectionbyagentidsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `agentIds`: `List`\[`str`\] *(required)*
 
 Returns
-[StartDataCollectionByAgentIdsResponseResponseTypeDef](./type_defs.md#startdatacollectionbyagentidsresponseresponsetypedef).
+[StartDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#startdatacollectionbyagentidsresponsetypedef).
 
 ### start_export_task
 
@@ -528,7 +540,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.start_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_export_task)
 
 Arguments mapping described in
-[StartExportTaskRequestTypeDef](./type_defs.md#startexporttaskrequesttypedef).
+[StartExportTaskRequestRequestTypeDef](./type_defs.md#startexporttaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -540,7 +552,7 @@ Keyword-only arguments:
 - `endTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[StartExportTaskResponseResponseTypeDef](./type_defs.md#startexporttaskresponseresponsetypedef).
+[StartExportTaskResponseTypeDef](./type_defs.md#startexporttaskresponsetypedef).
 
 ### start_import_task
 
@@ -555,7 +567,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.start_import_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_import_task)
 
 Arguments mapping described in
-[StartImportTaskRequestTypeDef](./type_defs.md#startimporttaskrequesttypedef).
+[StartImportTaskRequestRequestTypeDef](./type_defs.md#startimporttaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -564,7 +576,7 @@ Keyword-only arguments:
 - `clientRequestToken`: `str`
 
 Returns
-[StartImportTaskResponseResponseTypeDef](./type_defs.md#startimporttaskresponseresponsetypedef).
+[StartImportTaskResponseTypeDef](./type_defs.md#startimporttaskresponsetypedef).
 
 ### stop_continuous_export
 
@@ -576,14 +588,14 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.stop_continuous_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_continuous_export)
 
 Arguments mapping described in
-[StopContinuousExportRequestTypeDef](./type_defs.md#stopcontinuousexportrequesttypedef).
+[StopContinuousExportRequestRequestTypeDef](./type_defs.md#stopcontinuousexportrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `exportId`: `str` *(required)*
 
 Returns
-[StopContinuousExportResponseResponseTypeDef](./type_defs.md#stopcontinuousexportresponseresponsetypedef).
+[StopContinuousExportResponseTypeDef](./type_defs.md#stopcontinuousexportresponsetypedef).
 
 ### stop_data_collection_by_agent_ids
 
@@ -596,14 +608,14 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids)
 
 Arguments mapping described in
-[StopDataCollectionByAgentIdsRequestTypeDef](./type_defs.md#stopdatacollectionbyagentidsrequesttypedef).
+[StopDataCollectionByAgentIdsRequestRequestTypeDef](./type_defs.md#stopdatacollectionbyagentidsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `agentIds`: `List`\[`str`\] *(required)*
 
 Returns
-[StopDataCollectionByAgentIdsResponseResponseTypeDef](./type_defs.md#stopdatacollectionbyagentidsresponseresponsetypedef).
+[StopDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#stopdatacollectionbyagentidsresponsetypedef).
 
 ### update_application
 
@@ -615,7 +627,7 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.update_application)
 
 Arguments mapping described in
-[UpdateApplicationRequestTypeDef](./type_defs.md#updateapplicationrequesttypedef).
+[UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 

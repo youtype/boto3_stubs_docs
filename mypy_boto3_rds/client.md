@@ -11,6 +11,7 @@ type annotations stubs module
   - [RDSClient](#rdsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_role_to_db_cluster](#add_role_to_db_cluster)
     - [add_role_to_db_instance](#add_role_to_db_instance)
     - [add_source_identifier_to_subscription](#add_source_identifier_to_subscription)
@@ -305,6 +306,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+RDSClient exceptions.
+
+Type annotations for `boto3.client("rds").exceptions` method.
+
+Boto3 documentation:
+[RDS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_role_to_db_cluster
 
 Associates an Identity and Access Management (IAM) role from an Amazon Aurora
@@ -316,7 +328,7 @@ Boto3 documentation:
 [RDS.Client.add_role_to_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_role_to_db_cluster)
 
 Arguments mapping described in
-[AddRoleToDBClusterMessageTypeDef](./type_defs.md#addroletodbclustermessagetypedef).
+[AddRoleToDBClusterMessageRequestTypeDef](./type_defs.md#addroletodbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -335,7 +347,7 @@ Boto3 documentation:
 [RDS.Client.add_role_to_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_role_to_db_instance)
 
 Arguments mapping described in
-[AddRoleToDBInstanceMessageTypeDef](./type_defs.md#addroletodbinstancemessagetypedef).
+[AddRoleToDBInstanceMessageRequestTypeDef](./type_defs.md#addroletodbinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -354,7 +366,7 @@ Boto3 documentation:
 [RDS.Client.add_source_identifier_to_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_source_identifier_to_subscription)
 
 Arguments mapping described in
-[AddSourceIdentifierToSubscriptionMessageTypeDef](./type_defs.md#addsourceidentifiertosubscriptionmessagetypedef).
+[AddSourceIdentifierToSubscriptionMessageRequestTypeDef](./type_defs.md#addsourceidentifiertosubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,7 +374,7 @@ Keyword-only arguments:
 - `SourceIdentifier`: `str` *(required)*
 
 Returns
-[AddSourceIdentifierToSubscriptionResultResponseTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresultresponsetypedef).
+[AddSourceIdentifierToSubscriptionResultTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresulttypedef).
 
 ### add_tags_to_resource
 
@@ -374,7 +386,7 @@ Boto3 documentation:
 [RDS.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_tags_to_resource)
 
 Arguments mapping described in
-[AddTagsToResourceMessageTypeDef](./type_defs.md#addtagstoresourcemessagetypedef).
+[AddTagsToResourceMessageRequestTypeDef](./type_defs.md#addtagstoresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -393,7 +405,7 @@ Boto3 documentation:
 [RDS.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.apply_pending_maintenance_action)
 
 Arguments mapping described in
-[ApplyPendingMaintenanceActionMessageTypeDef](./type_defs.md#applypendingmaintenanceactionmessagetypedef).
+[ApplyPendingMaintenanceActionMessageRequestTypeDef](./type_defs.md#applypendingmaintenanceactionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -402,7 +414,7 @@ Keyword-only arguments:
 - `OptInType`: `str` *(required)*
 
 Returns
-[ApplyPendingMaintenanceActionResultResponseTypeDef](./type_defs.md#applypendingmaintenanceactionresultresponsetypedef).
+[ApplyPendingMaintenanceActionResultTypeDef](./type_defs.md#applypendingmaintenanceactionresulttypedef).
 
 ### authorize_db_security_group_ingress
 
@@ -415,7 +427,7 @@ Boto3 documentation:
 [RDS.Client.authorize_db_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.authorize_db_security_group_ingress)
 
 Arguments mapping described in
-[AuthorizeDBSecurityGroupIngressMessageTypeDef](./type_defs.md#authorizedbsecuritygroupingressmessagetypedef).
+[AuthorizeDBSecurityGroupIngressMessageRequestTypeDef](./type_defs.md#authorizedbsecuritygroupingressmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -426,7 +438,7 @@ Keyword-only arguments:
 - `EC2SecurityGroupOwnerId`: `str`
 
 Returns
-[AuthorizeDBSecurityGroupIngressResultResponseTypeDef](./type_defs.md#authorizedbsecuritygroupingressresultresponsetypedef).
+[AuthorizeDBSecurityGroupIngressResultTypeDef](./type_defs.md#authorizedbsecuritygroupingressresulttypedef).
 
 ### backtrack_db_cluster
 
@@ -438,7 +450,7 @@ Boto3 documentation:
 [RDS.Client.backtrack_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.backtrack_db_cluster)
 
 Arguments mapping described in
-[BacktrackDBClusterMessageTypeDef](./type_defs.md#backtrackdbclustermessagetypedef).
+[BacktrackDBClusterMessageRequestTypeDef](./type_defs.md#backtrackdbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -448,7 +460,7 @@ Keyword-only arguments:
 - `UseEarliestTimeOnPointInTimeUnavailable`: `bool`
 
 Returns
-[DBClusterBacktrackResponseTypeDef](./type_defs.md#dbclusterbacktrackresponsetypedef).
+[DBClusterBacktrackResponseMetadataTypeDef](./type_defs.md#dbclusterbacktrackresponsemetadatatypedef).
 
 ### can_paginate
 
@@ -475,13 +487,14 @@ Boto3 documentation:
 [RDS.Client.cancel_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.cancel_export_task)
 
 Arguments mapping described in
-[CancelExportTaskMessageTypeDef](./type_defs.md#cancelexporttaskmessagetypedef).
+[CancelExportTaskMessageRequestTypeDef](./type_defs.md#cancelexporttaskmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ExportTaskIdentifier`: `str` *(required)*
 
-Returns [ExportTaskResponseTypeDef](./type_defs.md#exporttaskresponsetypedef).
+Returns
+[ExportTaskResponseMetadataTypeDef](./type_defs.md#exporttaskresponsemetadatatypedef).
 
 ### copy_db_cluster_parameter_group
 
@@ -494,7 +507,7 @@ Boto3 documentation:
 [RDS.Client.copy_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_cluster_parameter_group)
 
 Arguments mapping described in
-[CopyDBClusterParameterGroupMessageTypeDef](./type_defs.md#copydbclusterparametergroupmessagetypedef).
+[CopyDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#copydbclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -504,7 +517,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyDBClusterParameterGroupResultResponseTypeDef](./type_defs.md#copydbclusterparametergroupresultresponsetypedef).
+[CopyDBClusterParameterGroupResultTypeDef](./type_defs.md#copydbclusterparametergroupresulttypedef).
 
 ### copy_db_cluster_snapshot
 
@@ -516,7 +529,7 @@ Boto3 documentation:
 [RDS.Client.copy_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_cluster_snapshot)
 
 Arguments mapping described in
-[CopyDBClusterSnapshotMessageTypeDef](./type_defs.md#copydbclustersnapshotmessagetypedef).
+[CopyDBClusterSnapshotMessageRequestTypeDef](./type_defs.md#copydbclustersnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -529,7 +542,7 @@ Keyword-only arguments:
 - `SourceRegion`: `str`
 
 Returns
-[CopyDBClusterSnapshotResultResponseTypeDef](./type_defs.md#copydbclustersnapshotresultresponsetypedef).
+[CopyDBClusterSnapshotResultTypeDef](./type_defs.md#copydbclustersnapshotresulttypedef).
 
 ### copy_db_parameter_group
 
@@ -541,7 +554,7 @@ Boto3 documentation:
 [RDS.Client.copy_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_parameter_group)
 
 Arguments mapping described in
-[CopyDBParameterGroupMessageTypeDef](./type_defs.md#copydbparametergroupmessagetypedef).
+[CopyDBParameterGroupMessageRequestTypeDef](./type_defs.md#copydbparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -551,7 +564,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyDBParameterGroupResultResponseTypeDef](./type_defs.md#copydbparametergroupresultresponsetypedef).
+[CopyDBParameterGroupResultTypeDef](./type_defs.md#copydbparametergroupresulttypedef).
 
 ### copy_db_snapshot
 
@@ -563,7 +576,7 @@ Boto3 documentation:
 [RDS.Client.copy_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_snapshot)
 
 Arguments mapping described in
-[CopyDBSnapshotMessageTypeDef](./type_defs.md#copydbsnapshotmessagetypedef).
+[CopyDBSnapshotMessageRequestTypeDef](./type_defs.md#copydbsnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -578,7 +591,7 @@ Keyword-only arguments:
 - `SourceRegion`: `str`
 
 Returns
-[CopyDBSnapshotResultResponseTypeDef](./type_defs.md#copydbsnapshotresultresponsetypedef).
+[CopyDBSnapshotResultTypeDef](./type_defs.md#copydbsnapshotresulttypedef).
 
 ### copy_option_group
 
@@ -590,7 +603,7 @@ Boto3 documentation:
 [RDS.Client.copy_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_option_group)
 
 Arguments mapping described in
-[CopyOptionGroupMessageTypeDef](./type_defs.md#copyoptiongroupmessagetypedef).
+[CopyOptionGroupMessageRequestTypeDef](./type_defs.md#copyoptiongroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -600,7 +613,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyOptionGroupResultResponseTypeDef](./type_defs.md#copyoptiongroupresultresponsetypedef).
+[CopyOptionGroupResultTypeDef](./type_defs.md#copyoptiongroupresulttypedef).
 
 ### create_custom_availability_zone
 
@@ -613,7 +626,7 @@ Boto3 documentation:
 [RDS.Client.create_custom_availability_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_custom_availability_zone)
 
 Arguments mapping described in
-[CreateCustomAvailabilityZoneMessageTypeDef](./type_defs.md#createcustomavailabilityzonemessagetypedef).
+[CreateCustomAvailabilityZoneMessageRequestTypeDef](./type_defs.md#createcustomavailabilityzonemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -623,7 +636,7 @@ Keyword-only arguments:
 - `VpnTunnelOriginatorIP`: `str`
 
 Returns
-[CreateCustomAvailabilityZoneResultResponseTypeDef](./type_defs.md#createcustomavailabilityzoneresultresponsetypedef).
+[CreateCustomAvailabilityZoneResultTypeDef](./type_defs.md#createcustomavailabilityzoneresulttypedef).
 
 ### create_db_cluster
 
@@ -635,7 +648,7 @@ Boto3 documentation:
 [RDS.Client.create_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster)
 
 Arguments mapping described in
-[CreateDBClusterMessageTypeDef](./type_defs.md#createdbclustermessagetypedef).
+[CreateDBClusterMessageRequestTypeDef](./type_defs.md#createdbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -676,7 +689,7 @@ Keyword-only arguments:
 - `SourceRegion`: `str`
 
 Returns
-[CreateDBClusterResultResponseTypeDef](./type_defs.md#createdbclusterresultresponsetypedef).
+[CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef).
 
 ### create_db_cluster_endpoint
 
@@ -689,7 +702,7 @@ Boto3 documentation:
 [RDS.Client.create_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_endpoint)
 
 Arguments mapping described in
-[CreateDBClusterEndpointMessageTypeDef](./type_defs.md#createdbclusterendpointmessagetypedef).
+[CreateDBClusterEndpointMessageRequestTypeDef](./type_defs.md#createdbclusterendpointmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -701,7 +714,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[DBClusterEndpointResponseTypeDef](./type_defs.md#dbclusterendpointresponsetypedef).
+[DBClusterEndpointResponseMetadataTypeDef](./type_defs.md#dbclusterendpointresponsemetadatatypedef).
 
 ### create_db_cluster_parameter_group
 
@@ -714,7 +727,7 @@ Boto3 documentation:
 [RDS.Client.create_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_parameter_group)
 
 Arguments mapping described in
-[CreateDBClusterParameterGroupMessageTypeDef](./type_defs.md#createdbclusterparametergroupmessagetypedef).
+[CreateDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#createdbclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -724,7 +737,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBClusterParameterGroupResultResponseTypeDef](./type_defs.md#createdbclusterparametergroupresultresponsetypedef).
+[CreateDBClusterParameterGroupResultTypeDef](./type_defs.md#createdbclusterparametergroupresulttypedef).
 
 ### create_db_cluster_snapshot
 
@@ -736,7 +749,7 @@ Boto3 documentation:
 [RDS.Client.create_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_snapshot)
 
 Arguments mapping described in
-[CreateDBClusterSnapshotMessageTypeDef](./type_defs.md#createdbclustersnapshotmessagetypedef).
+[CreateDBClusterSnapshotMessageRequestTypeDef](./type_defs.md#createdbclustersnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -745,7 +758,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBClusterSnapshotResultResponseTypeDef](./type_defs.md#createdbclustersnapshotresultresponsetypedef).
+[CreateDBClusterSnapshotResultTypeDef](./type_defs.md#createdbclustersnapshotresulttypedef).
 
 ### create_db_instance
 
@@ -757,7 +770,7 @@ Boto3 documentation:
 [RDS.Client.create_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_instance)
 
 Arguments mapping described in
-[CreateDBInstanceMessageTypeDef](./type_defs.md#createdbinstancemessagetypedef).
+[CreateDBInstanceMessageRequestTypeDef](./type_defs.md#createdbinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -812,7 +825,7 @@ Keyword-only arguments:
 - `EnableCustomerOwnedIp`: `bool`
 
 Returns
-[CreateDBInstanceResultResponseTypeDef](./type_defs.md#createdbinstanceresultresponsetypedef).
+[CreateDBInstanceResultTypeDef](./type_defs.md#createdbinstanceresulttypedef).
 
 ### create_db_instance_read_replica
 
@@ -826,7 +839,7 @@ Boto3 documentation:
 [RDS.Client.create_db_instance_read_replica](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_instance_read_replica)
 
 Arguments mapping described in
-[CreateDBInstanceReadReplicaMessageTypeDef](./type_defs.md#createdbinstancereadreplicamessagetypedef).
+[CreateDBInstanceReadReplicaMessageRequestTypeDef](./type_defs.md#createdbinstancereadreplicamessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -866,7 +879,7 @@ Keyword-only arguments:
 - `SourceRegion`: `str`
 
 Returns
-[CreateDBInstanceReadReplicaResultResponseTypeDef](./type_defs.md#createdbinstancereadreplicaresultresponsetypedef).
+[CreateDBInstanceReadReplicaResultTypeDef](./type_defs.md#createdbinstancereadreplicaresulttypedef).
 
 ### create_db_parameter_group
 
@@ -878,7 +891,7 @@ Boto3 documentation:
 [RDS.Client.create_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_parameter_group)
 
 Arguments mapping described in
-[CreateDBParameterGroupMessageTypeDef](./type_defs.md#createdbparametergroupmessagetypedef).
+[CreateDBParameterGroupMessageRequestTypeDef](./type_defs.md#createdbparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -888,7 +901,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBParameterGroupResultResponseTypeDef](./type_defs.md#createdbparametergroupresultresponsetypedef).
+[CreateDBParameterGroupResultTypeDef](./type_defs.md#createdbparametergroupresulttypedef).
 
 ### create_db_proxy
 
@@ -900,7 +913,7 @@ Boto3 documentation:
 [RDS.Client.create_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_proxy)
 
 Arguments mapping described in
-[CreateDBProxyRequestTypeDef](./type_defs.md#createdbproxyrequesttypedef).
+[CreateDBProxyRequestRequestTypeDef](./type_defs.md#createdbproxyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -919,7 +932,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBProxyResponseResponseTypeDef](./type_defs.md#createdbproxyresponseresponsetypedef).
+[CreateDBProxyResponseTypeDef](./type_defs.md#createdbproxyresponsetypedef).
 
 ### create_db_proxy_endpoint
 
@@ -931,7 +944,7 @@ Boto3 documentation:
 [RDS.Client.create_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_proxy_endpoint)
 
 Arguments mapping described in
-[CreateDBProxyEndpointRequestTypeDef](./type_defs.md#createdbproxyendpointrequesttypedef).
+[CreateDBProxyEndpointRequestRequestTypeDef](./type_defs.md#createdbproxyendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -944,7 +957,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBProxyEndpointResponseResponseTypeDef](./type_defs.md#createdbproxyendpointresponseresponsetypedef).
+[CreateDBProxyEndpointResponseTypeDef](./type_defs.md#createdbproxyendpointresponsetypedef).
 
 ### create_db_security_group
 
@@ -956,7 +969,7 @@ Boto3 documentation:
 [RDS.Client.create_db_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_security_group)
 
 Arguments mapping described in
-[CreateDBSecurityGroupMessageTypeDef](./type_defs.md#createdbsecuritygroupmessagetypedef).
+[CreateDBSecurityGroupMessageRequestTypeDef](./type_defs.md#createdbsecuritygroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -965,7 +978,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBSecurityGroupResultResponseTypeDef](./type_defs.md#createdbsecuritygroupresultresponsetypedef).
+[CreateDBSecurityGroupResultTypeDef](./type_defs.md#createdbsecuritygroupresulttypedef).
 
 ### create_db_snapshot
 
@@ -977,7 +990,7 @@ Boto3 documentation:
 [RDS.Client.create_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_snapshot)
 
 Arguments mapping described in
-[CreateDBSnapshotMessageTypeDef](./type_defs.md#createdbsnapshotmessagetypedef).
+[CreateDBSnapshotMessageRequestTypeDef](./type_defs.md#createdbsnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -986,7 +999,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBSnapshotResultResponseTypeDef](./type_defs.md#createdbsnapshotresultresponsetypedef).
+[CreateDBSnapshotResultTypeDef](./type_defs.md#createdbsnapshotresulttypedef).
 
 ### create_db_subnet_group
 
@@ -998,7 +1011,7 @@ Boto3 documentation:
 [RDS.Client.create_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_subnet_group)
 
 Arguments mapping described in
-[CreateDBSubnetGroupMessageTypeDef](./type_defs.md#createdbsubnetgroupmessagetypedef).
+[CreateDBSubnetGroupMessageRequestTypeDef](./type_defs.md#createdbsubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1008,7 +1021,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDBSubnetGroupResultResponseTypeDef](./type_defs.md#createdbsubnetgroupresultresponsetypedef).
+[CreateDBSubnetGroupResultTypeDef](./type_defs.md#createdbsubnetgroupresulttypedef).
 
 ### create_event_subscription
 
@@ -1020,7 +1033,7 @@ Boto3 documentation:
 [RDS.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_event_subscription)
 
 Arguments mapping described in
-[CreateEventSubscriptionMessageTypeDef](./type_defs.md#createeventsubscriptionmessagetypedef).
+[CreateEventSubscriptionMessageRequestTypeDef](./type_defs.md#createeventsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1033,7 +1046,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateEventSubscriptionResultResponseTypeDef](./type_defs.md#createeventsubscriptionresultresponsetypedef).
+[CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
 
 ### create_global_cluster
 
@@ -1046,7 +1059,7 @@ Boto3 documentation:
 [RDS.Client.create_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_global_cluster)
 
 Arguments mapping described in
-[CreateGlobalClusterMessageTypeDef](./type_defs.md#createglobalclustermessagetypedef).
+[CreateGlobalClusterMessageRequestTypeDef](./type_defs.md#createglobalclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1059,7 +1072,7 @@ Keyword-only arguments:
 - `StorageEncrypted`: `bool`
 
 Returns
-[CreateGlobalClusterResultResponseTypeDef](./type_defs.md#createglobalclusterresultresponsetypedef).
+[CreateGlobalClusterResultTypeDef](./type_defs.md#createglobalclusterresulttypedef).
 
 ### create_option_group
 
@@ -1071,7 +1084,7 @@ Boto3 documentation:
 [RDS.Client.create_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_option_group)
 
 Arguments mapping described in
-[CreateOptionGroupMessageTypeDef](./type_defs.md#createoptiongroupmessagetypedef).
+[CreateOptionGroupMessageRequestTypeDef](./type_defs.md#createoptiongroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1082,7 +1095,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateOptionGroupResultResponseTypeDef](./type_defs.md#createoptiongroupresultresponsetypedef).
+[CreateOptionGroupResultTypeDef](./type_defs.md#createoptiongroupresulttypedef).
 
 ### delete_custom_availability_zone
 
@@ -1095,14 +1108,14 @@ Boto3 documentation:
 [RDS.Client.delete_custom_availability_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_custom_availability_zone)
 
 Arguments mapping described in
-[DeleteCustomAvailabilityZoneMessageTypeDef](./type_defs.md#deletecustomavailabilityzonemessagetypedef).
+[DeleteCustomAvailabilityZoneMessageRequestTypeDef](./type_defs.md#deletecustomavailabilityzonemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `CustomAvailabilityZoneId`: `str` *(required)*
 
 Returns
-[DeleteCustomAvailabilityZoneResultResponseTypeDef](./type_defs.md#deletecustomavailabilityzoneresultresponsetypedef).
+[DeleteCustomAvailabilityZoneResultTypeDef](./type_defs.md#deletecustomavailabilityzoneresulttypedef).
 
 ### delete_db_cluster
 
@@ -1114,7 +1127,7 @@ Boto3 documentation:
 [RDS.Client.delete_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster)
 
 Arguments mapping described in
-[DeleteDBClusterMessageTypeDef](./type_defs.md#deletedbclustermessagetypedef).
+[DeleteDBClusterMessageRequestTypeDef](./type_defs.md#deletedbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1123,7 +1136,7 @@ Keyword-only arguments:
 - `FinalDBSnapshotIdentifier`: `str`
 
 Returns
-[DeleteDBClusterResultResponseTypeDef](./type_defs.md#deletedbclusterresultresponsetypedef).
+[DeleteDBClusterResultTypeDef](./type_defs.md#deletedbclusterresulttypedef).
 
 ### delete_db_cluster_endpoint
 
@@ -1135,14 +1148,14 @@ Boto3 documentation:
 [RDS.Client.delete_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_endpoint)
 
 Arguments mapping described in
-[DeleteDBClusterEndpointMessageTypeDef](./type_defs.md#deletedbclusterendpointmessagetypedef).
+[DeleteDBClusterEndpointMessageRequestTypeDef](./type_defs.md#deletedbclusterendpointmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBClusterEndpointIdentifier`: `str` *(required)*
 
 Returns
-[DBClusterEndpointResponseTypeDef](./type_defs.md#dbclusterendpointresponsetypedef).
+[DBClusterEndpointResponseMetadataTypeDef](./type_defs.md#dbclusterendpointresponsemetadatatypedef).
 
 ### delete_db_cluster_parameter_group
 
@@ -1155,7 +1168,7 @@ Boto3 documentation:
 [RDS.Client.delete_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_parameter_group)
 
 Arguments mapping described in
-[DeleteDBClusterParameterGroupMessageTypeDef](./type_defs.md#deletedbclusterparametergroupmessagetypedef).
+[DeleteDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#deletedbclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1171,14 +1184,14 @@ Boto3 documentation:
 [RDS.Client.delete_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_snapshot)
 
 Arguments mapping described in
-[DeleteDBClusterSnapshotMessageTypeDef](./type_defs.md#deletedbclustersnapshotmessagetypedef).
+[DeleteDBClusterSnapshotMessageRequestTypeDef](./type_defs.md#deletedbclustersnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 
 Returns
-[DeleteDBClusterSnapshotResultResponseTypeDef](./type_defs.md#deletedbclustersnapshotresultresponsetypedef).
+[DeleteDBClusterSnapshotResultTypeDef](./type_defs.md#deletedbclustersnapshotresulttypedef).
 
 ### delete_db_instance
 
@@ -1190,7 +1203,7 @@ Boto3 documentation:
 [RDS.Client.delete_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance)
 
 Arguments mapping described in
-[DeleteDBInstanceMessageTypeDef](./type_defs.md#deletedbinstancemessagetypedef).
+[DeleteDBInstanceMessageRequestTypeDef](./type_defs.md#deletedbinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1200,7 +1213,7 @@ Keyword-only arguments:
 - `DeleteAutomatedBackups`: `bool`
 
 Returns
-[DeleteDBInstanceResultResponseTypeDef](./type_defs.md#deletedbinstanceresultresponsetypedef).
+[DeleteDBInstanceResultTypeDef](./type_defs.md#deletedbinstanceresulttypedef).
 
 ### delete_db_instance_automated_backup
 
@@ -1214,7 +1227,7 @@ Boto3 documentation:
 [RDS.Client.delete_db_instance_automated_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance_automated_backup)
 
 Arguments mapping described in
-[DeleteDBInstanceAutomatedBackupMessageTypeDef](./type_defs.md#deletedbinstanceautomatedbackupmessagetypedef).
+[DeleteDBInstanceAutomatedBackupMessageRequestTypeDef](./type_defs.md#deletedbinstanceautomatedbackupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1222,7 +1235,7 @@ Keyword-only arguments:
 - `DBInstanceAutomatedBackupsArn`: `str`
 
 Returns
-[DeleteDBInstanceAutomatedBackupResultResponseTypeDef](./type_defs.md#deletedbinstanceautomatedbackupresultresponsetypedef).
+[DeleteDBInstanceAutomatedBackupResultTypeDef](./type_defs.md#deletedbinstanceautomatedbackupresulttypedef).
 
 ### delete_db_parameter_group
 
@@ -1234,7 +1247,7 @@ Boto3 documentation:
 [RDS.Client.delete_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_parameter_group)
 
 Arguments mapping described in
-[DeleteDBParameterGroupMessageTypeDef](./type_defs.md#deletedbparametergroupmessagetypedef).
+[DeleteDBParameterGroupMessageRequestTypeDef](./type_defs.md#deletedbparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1250,14 +1263,14 @@ Boto3 documentation:
 [RDS.Client.delete_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy)
 
 Arguments mapping described in
-[DeleteDBProxyRequestTypeDef](./type_defs.md#deletedbproxyrequesttypedef).
+[DeleteDBProxyRequestRequestTypeDef](./type_defs.md#deletedbproxyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DBProxyName`: `str` *(required)*
 
 Returns
-[DeleteDBProxyResponseResponseTypeDef](./type_defs.md#deletedbproxyresponseresponsetypedef).
+[DeleteDBProxyResponseTypeDef](./type_defs.md#deletedbproxyresponsetypedef).
 
 ### delete_db_proxy_endpoint
 
@@ -1269,14 +1282,14 @@ Boto3 documentation:
 [RDS.Client.delete_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy_endpoint)
 
 Arguments mapping described in
-[DeleteDBProxyEndpointRequestTypeDef](./type_defs.md#deletedbproxyendpointrequesttypedef).
+[DeleteDBProxyEndpointRequestRequestTypeDef](./type_defs.md#deletedbproxyendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DBProxyEndpointName`: `str` *(required)*
 
 Returns
-[DeleteDBProxyEndpointResponseResponseTypeDef](./type_defs.md#deletedbproxyendpointresponseresponsetypedef).
+[DeleteDBProxyEndpointResponseTypeDef](./type_defs.md#deletedbproxyendpointresponsetypedef).
 
 ### delete_db_security_group
 
@@ -1288,7 +1301,7 @@ Boto3 documentation:
 [RDS.Client.delete_db_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_security_group)
 
 Arguments mapping described in
-[DeleteDBSecurityGroupMessageTypeDef](./type_defs.md#deletedbsecuritygroupmessagetypedef).
+[DeleteDBSecurityGroupMessageRequestTypeDef](./type_defs.md#deletedbsecuritygroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1304,14 +1317,14 @@ Boto3 documentation:
 [RDS.Client.delete_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_snapshot)
 
 Arguments mapping described in
-[DeleteDBSnapshotMessageTypeDef](./type_defs.md#deletedbsnapshotmessagetypedef).
+[DeleteDBSnapshotMessageRequestTypeDef](./type_defs.md#deletedbsnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBSnapshotIdentifier`: `str` *(required)*
 
 Returns
-[DeleteDBSnapshotResultResponseTypeDef](./type_defs.md#deletedbsnapshotresultresponsetypedef).
+[DeleteDBSnapshotResultTypeDef](./type_defs.md#deletedbsnapshotresulttypedef).
 
 ### delete_db_subnet_group
 
@@ -1323,7 +1336,7 @@ Boto3 documentation:
 [RDS.Client.delete_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_subnet_group)
 
 Arguments mapping described in
-[DeleteDBSubnetGroupMessageTypeDef](./type_defs.md#deletedbsubnetgroupmessagetypedef).
+[DeleteDBSubnetGroupMessageRequestTypeDef](./type_defs.md#deletedbsubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1339,14 +1352,14 @@ Boto3 documentation:
 [RDS.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_event_subscription)
 
 Arguments mapping described in
-[DeleteEventSubscriptionMessageTypeDef](./type_defs.md#deleteeventsubscriptionmessagetypedef).
+[DeleteEventSubscriptionMessageRequestTypeDef](./type_defs.md#deleteeventsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 
 Returns
-[DeleteEventSubscriptionResultResponseTypeDef](./type_defs.md#deleteeventsubscriptionresultresponsetypedef).
+[DeleteEventSubscriptionResultTypeDef](./type_defs.md#deleteeventsubscriptionresulttypedef).
 
 ### delete_global_cluster
 
@@ -1358,14 +1371,14 @@ Boto3 documentation:
 [RDS.Client.delete_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_global_cluster)
 
 Arguments mapping described in
-[DeleteGlobalClusterMessageTypeDef](./type_defs.md#deleteglobalclustermessagetypedef).
+[DeleteGlobalClusterMessageRequestTypeDef](./type_defs.md#deleteglobalclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `GlobalClusterIdentifier`: `str` *(required)*
 
 Returns
-[DeleteGlobalClusterResultResponseTypeDef](./type_defs.md#deleteglobalclusterresultresponsetypedef).
+[DeleteGlobalClusterResultTypeDef](./type_defs.md#deleteglobalclusterresulttypedef).
 
 ### delete_installation_media
 
@@ -1378,14 +1391,14 @@ Boto3 documentation:
 [RDS.Client.delete_installation_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_installation_media)
 
 Arguments mapping described in
-[DeleteInstallationMediaMessageTypeDef](./type_defs.md#deleteinstallationmediamessagetypedef).
+[DeleteInstallationMediaMessageRequestTypeDef](./type_defs.md#deleteinstallationmediamessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `InstallationMediaId`: `str` *(required)*
 
 Returns
-[InstallationMediaResponseTypeDef](./type_defs.md#installationmediaresponsetypedef).
+[InstallationMediaResponseMetadataTypeDef](./type_defs.md#installationmediaresponsemetadatatypedef).
 
 ### delete_option_group
 
@@ -1397,7 +1410,7 @@ Boto3 documentation:
 [RDS.Client.delete_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_option_group)
 
 Arguments mapping described in
-[DeleteOptionGroupMessageTypeDef](./type_defs.md#deleteoptiongroupmessagetypedef).
+[DeleteOptionGroupMessageRequestTypeDef](./type_defs.md#deleteoptiongroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1414,7 +1427,7 @@ Boto3 documentation:
 [RDS.Client.deregister_db_proxy_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.deregister_db_proxy_targets)
 
 Arguments mapping described in
-[DeregisterDBProxyTargetsRequestTypeDef](./type_defs.md#deregisterdbproxytargetsrequesttypedef).
+[DeregisterDBProxyTargetsRequestRequestTypeDef](./type_defs.md#deregisterdbproxytargetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1435,7 +1448,7 @@ Boto3 documentation:
 [RDS.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_account_attributes)
 
 Returns
-[AccountAttributesMessageResponseTypeDef](./type_defs.md#accountattributesmessageresponsetypedef).
+[AccountAttributesMessageTypeDef](./type_defs.md#accountattributesmessagetypedef).
 
 ### describe_certificates
 
@@ -1448,7 +1461,7 @@ Boto3 documentation:
 [RDS.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_certificates)
 
 Arguments mapping described in
-[DescribeCertificatesMessageTypeDef](./type_defs.md#describecertificatesmessagetypedef).
+[DescribeCertificatesMessageRequestTypeDef](./type_defs.md#describecertificatesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1457,8 +1470,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[CertificateMessageResponseTypeDef](./type_defs.md#certificatemessageresponsetypedef).
+Returns [CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef).
 
 ### describe_custom_availability_zones
 
@@ -1471,7 +1483,7 @@ Boto3 documentation:
 [RDS.Client.describe_custom_availability_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_custom_availability_zones)
 
 Arguments mapping described in
-[DescribeCustomAvailabilityZonesMessageTypeDef](./type_defs.md#describecustomavailabilityzonesmessagetypedef).
+[DescribeCustomAvailabilityZonesMessageRequestTypeDef](./type_defs.md#describecustomavailabilityzonesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1481,7 +1493,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[CustomAvailabilityZoneMessageResponseTypeDef](./type_defs.md#customavailabilityzonemessageresponsetypedef).
+[CustomAvailabilityZoneMessageTypeDef](./type_defs.md#customavailabilityzonemessagetypedef).
 
 ### describe_db_cluster_backtracks
 
@@ -1494,7 +1506,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_cluster_backtracks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_backtracks)
 
 Arguments mapping described in
-[DescribeDBClusterBacktracksMessageTypeDef](./type_defs.md#describedbclusterbacktracksmessagetypedef).
+[DescribeDBClusterBacktracksMessageRequestTypeDef](./type_defs.md#describedbclusterbacktracksmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1505,7 +1517,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBClusterBacktrackMessageResponseTypeDef](./type_defs.md#dbclusterbacktrackmessageresponsetypedef).
+[DBClusterBacktrackMessageTypeDef](./type_defs.md#dbclusterbacktrackmessagetypedef).
 
 ### describe_db_cluster_endpoints
 
@@ -1518,7 +1530,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_cluster_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_endpoints)
 
 Arguments mapping described in
-[DescribeDBClusterEndpointsMessageTypeDef](./type_defs.md#describedbclusterendpointsmessagetypedef).
+[DescribeDBClusterEndpointsMessageRequestTypeDef](./type_defs.md#describedbclusterendpointsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1529,7 +1541,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBClusterEndpointMessageResponseTypeDef](./type_defs.md#dbclusterendpointmessageresponsetypedef).
+[DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef).
 
 ### describe_db_cluster_parameter_groups
 
@@ -1542,7 +1554,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_parameter_groups)
 
 Arguments mapping described in
-[DescribeDBClusterParameterGroupsMessageTypeDef](./type_defs.md#describedbclusterparametergroupsmessagetypedef).
+[DescribeDBClusterParameterGroupsMessageRequestTypeDef](./type_defs.md#describedbclusterparametergroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1552,7 +1564,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBClusterParameterGroupsMessageResponseTypeDef](./type_defs.md#dbclusterparametergroupsmessageresponsetypedef).
+[DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef).
 
 ### describe_db_cluster_parameters
 
@@ -1566,7 +1578,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_parameters)
 
 Arguments mapping described in
-[DescribeDBClusterParametersMessageTypeDef](./type_defs.md#describedbclusterparametersmessagetypedef).
+[DescribeDBClusterParametersMessageRequestTypeDef](./type_defs.md#describedbclusterparametersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1577,7 +1589,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBClusterParameterGroupDetailsResponseTypeDef](./type_defs.md#dbclusterparametergroupdetailsresponsetypedef).
+[DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef).
 
 ### describe_db_cluster_snapshot_attributes
 
@@ -1591,14 +1603,14 @@ Boto3 documentation:
 [RDS.Client.describe_db_cluster_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshot_attributes)
 
 Arguments mapping described in
-[DescribeDBClusterSnapshotAttributesMessageTypeDef](./type_defs.md#describedbclustersnapshotattributesmessagetypedef).
+[DescribeDBClusterSnapshotAttributesMessageRequestTypeDef](./type_defs.md#describedbclustersnapshotattributesmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 
 Returns
-[DescribeDBClusterSnapshotAttributesResultResponseTypeDef](./type_defs.md#describedbclustersnapshotattributesresultresponsetypedef).
+[DescribeDBClusterSnapshotAttributesResultTypeDef](./type_defs.md#describedbclustersnapshotattributesresulttypedef).
 
 ### describe_db_cluster_snapshots
 
@@ -1611,7 +1623,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshots)
 
 Arguments mapping described in
-[DescribeDBClusterSnapshotsMessageTypeDef](./type_defs.md#describedbclustersnapshotsmessagetypedef).
+[DescribeDBClusterSnapshotsMessageRequestTypeDef](./type_defs.md#describedbclustersnapshotsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1625,7 +1637,7 @@ Keyword-only arguments:
 - `IncludePublic`: `bool`
 
 Returns
-[DBClusterSnapshotMessageResponseTypeDef](./type_defs.md#dbclustersnapshotmessageresponsetypedef).
+[DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef).
 
 ### describe_db_clusters
 
@@ -1637,7 +1649,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_clusters)
 
 Arguments mapping described in
-[DescribeDBClustersMessageTypeDef](./type_defs.md#describedbclustersmessagetypedef).
+[DescribeDBClustersMessageRequestTypeDef](./type_defs.md#describedbclustersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1647,8 +1659,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 - `IncludeShared`: `bool`
 
-Returns
-[DBClusterMessageResponseTypeDef](./type_defs.md#dbclustermessageresponsetypedef).
+Returns [DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef).
 
 ### describe_db_engine_versions
 
@@ -1660,7 +1671,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_engine_versions)
 
 Arguments mapping described in
-[DescribeDBEngineVersionsMessageTypeDef](./type_defs.md#describedbengineversionsmessagetypedef).
+[DescribeDBEngineVersionsMessageRequestTypeDef](./type_defs.md#describedbengineversionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1676,7 +1687,7 @@ Keyword-only arguments:
 - `IncludeAll`: `bool`
 
 Returns
-[DBEngineVersionMessageResponseTypeDef](./type_defs.md#dbengineversionmessageresponsetypedef).
+[DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef).
 
 ### describe_db_instance_automated_backups
 
@@ -1689,7 +1700,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_instance_automated_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instance_automated_backups)
 
 Arguments mapping described in
-[DescribeDBInstanceAutomatedBackupsMessageTypeDef](./type_defs.md#describedbinstanceautomatedbackupsmessagetypedef).
+[DescribeDBInstanceAutomatedBackupsMessageRequestTypeDef](./type_defs.md#describedbinstanceautomatedbackupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1701,7 +1712,7 @@ Keyword-only arguments:
 - `DBInstanceAutomatedBackupsArn`: `str`
 
 Returns
-[DBInstanceAutomatedBackupMessageResponseTypeDef](./type_defs.md#dbinstanceautomatedbackupmessageresponsetypedef).
+[DBInstanceAutomatedBackupMessageTypeDef](./type_defs.md#dbinstanceautomatedbackupmessagetypedef).
 
 ### describe_db_instances
 
@@ -1713,7 +1724,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instances)
 
 Arguments mapping described in
-[DescribeDBInstancesMessageTypeDef](./type_defs.md#describedbinstancesmessagetypedef).
+[DescribeDBInstancesMessageRequestTypeDef](./type_defs.md#describedbinstancesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1722,8 +1733,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[DBInstanceMessageResponseTypeDef](./type_defs.md#dbinstancemessageresponsetypedef).
+Returns [DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef).
 
 ### describe_db_log_files
 
@@ -1735,7 +1745,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_log_files](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_log_files)
 
 Arguments mapping described in
-[DescribeDBLogFilesMessageTypeDef](./type_defs.md#describedblogfilesmessagetypedef).
+[DescribeDBLogFilesMessageRequestTypeDef](./type_defs.md#describedblogfilesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1748,7 +1758,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeDBLogFilesResponseResponseTypeDef](./type_defs.md#describedblogfilesresponseresponsetypedef).
+[DescribeDBLogFilesResponseTypeDef](./type_defs.md#describedblogfilesresponsetypedef).
 
 ### describe_db_parameter_groups
 
@@ -1760,7 +1770,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_parameter_groups)
 
 Arguments mapping described in
-[DescribeDBParameterGroupsMessageTypeDef](./type_defs.md#describedbparametergroupsmessagetypedef).
+[DescribeDBParameterGroupsMessageRequestTypeDef](./type_defs.md#describedbparametergroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1770,7 +1780,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBParameterGroupsMessageResponseTypeDef](./type_defs.md#dbparametergroupsmessageresponsetypedef).
+[DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef).
 
 ### describe_db_parameters
 
@@ -1782,7 +1792,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_parameters)
 
 Arguments mapping described in
-[DescribeDBParametersMessageTypeDef](./type_defs.md#describedbparametersmessagetypedef).
+[DescribeDBParametersMessageRequestTypeDef](./type_defs.md#describedbparametersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1793,7 +1803,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBParameterGroupDetailsResponseTypeDef](./type_defs.md#dbparametergroupdetailsresponsetypedef).
+[DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef).
 
 ### describe_db_proxies
 
@@ -1805,7 +1815,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_proxies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxies)
 
 Arguments mapping described in
-[DescribeDBProxiesRequestTypeDef](./type_defs.md#describedbproxiesrequesttypedef).
+[DescribeDBProxiesRequestRequestTypeDef](./type_defs.md#describedbproxiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1815,7 +1825,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeDBProxiesResponseResponseTypeDef](./type_defs.md#describedbproxiesresponseresponsetypedef).
+[DescribeDBProxiesResponseTypeDef](./type_defs.md#describedbproxiesresponsetypedef).
 
 ### describe_db_proxy_endpoints
 
@@ -1827,7 +1837,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_proxy_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_endpoints)
 
 Arguments mapping described in
-[DescribeDBProxyEndpointsRequestTypeDef](./type_defs.md#describedbproxyendpointsrequesttypedef).
+[DescribeDBProxyEndpointsRequestRequestTypeDef](./type_defs.md#describedbproxyendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1838,7 +1848,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeDBProxyEndpointsResponseResponseTypeDef](./type_defs.md#describedbproxyendpointsresponseresponsetypedef).
+[DescribeDBProxyEndpointsResponseTypeDef](./type_defs.md#describedbproxyendpointsresponsetypedef).
 
 ### describe_db_proxy_target_groups
 
@@ -1852,7 +1862,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_proxy_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_target_groups)
 
 Arguments mapping described in
-[DescribeDBProxyTargetGroupsRequestTypeDef](./type_defs.md#describedbproxytargetgroupsrequesttypedef).
+[DescribeDBProxyTargetGroupsRequestRequestTypeDef](./type_defs.md#describedbproxytargetgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1863,7 +1873,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeDBProxyTargetGroupsResponseResponseTypeDef](./type_defs.md#describedbproxytargetgroupsresponseresponsetypedef).
+[DescribeDBProxyTargetGroupsResponseTypeDef](./type_defs.md#describedbproxytargetgroupsresponsetypedef).
 
 ### describe_db_proxy_targets
 
@@ -1875,7 +1885,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_proxy_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_targets)
 
 Arguments mapping described in
-[DescribeDBProxyTargetsRequestTypeDef](./type_defs.md#describedbproxytargetsrequesttypedef).
+[DescribeDBProxyTargetsRequestRequestTypeDef](./type_defs.md#describedbproxytargetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1886,7 +1896,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[DescribeDBProxyTargetsResponseResponseTypeDef](./type_defs.md#describedbproxytargetsresponseresponsetypedef).
+[DescribeDBProxyTargetsResponseTypeDef](./type_defs.md#describedbproxytargetsresponsetypedef).
 
 ### describe_db_security_groups
 
@@ -1898,7 +1908,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_security_groups)
 
 Arguments mapping described in
-[DescribeDBSecurityGroupsMessageTypeDef](./type_defs.md#describedbsecuritygroupsmessagetypedef).
+[DescribeDBSecurityGroupsMessageRequestTypeDef](./type_defs.md#describedbsecuritygroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1908,7 +1918,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBSecurityGroupMessageResponseTypeDef](./type_defs.md#dbsecuritygroupmessageresponsetypedef).
+[DBSecurityGroupMessageTypeDef](./type_defs.md#dbsecuritygroupmessagetypedef).
 
 ### describe_db_snapshot_attributes
 
@@ -1922,14 +1932,14 @@ Boto3 documentation:
 [RDS.Client.describe_db_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshot_attributes)
 
 Arguments mapping described in
-[DescribeDBSnapshotAttributesMessageTypeDef](./type_defs.md#describedbsnapshotattributesmessagetypedef).
+[DescribeDBSnapshotAttributesMessageRequestTypeDef](./type_defs.md#describedbsnapshotattributesmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBSnapshotIdentifier`: `str` *(required)*
 
 Returns
-[DescribeDBSnapshotAttributesResultResponseTypeDef](./type_defs.md#describedbsnapshotattributesresultresponsetypedef).
+[DescribeDBSnapshotAttributesResultTypeDef](./type_defs.md#describedbsnapshotattributesresulttypedef).
 
 ### describe_db_snapshots
 
@@ -1941,7 +1951,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshots)
 
 Arguments mapping described in
-[DescribeDBSnapshotsMessageTypeDef](./type_defs.md#describedbsnapshotsmessagetypedef).
+[DescribeDBSnapshotsMessageRequestTypeDef](./type_defs.md#describedbsnapshotsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1955,8 +1965,7 @@ Keyword-only arguments:
 - `IncludePublic`: `bool`
 - `DbiResourceId`: `str`
 
-Returns
-[DBSnapshotMessageResponseTypeDef](./type_defs.md#dbsnapshotmessageresponsetypedef).
+Returns [DBSnapshotMessageTypeDef](./type_defs.md#dbsnapshotmessagetypedef).
 
 ### describe_db_subnet_groups
 
@@ -1968,7 +1977,7 @@ Boto3 documentation:
 [RDS.Client.describe_db_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_subnet_groups)
 
 Arguments mapping described in
-[DescribeDBSubnetGroupsMessageTypeDef](./type_defs.md#describedbsubnetgroupsmessagetypedef).
+[DescribeDBSubnetGroupsMessageRequestTypeDef](./type_defs.md#describedbsubnetgroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1978,7 +1987,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DBSubnetGroupMessageResponseTypeDef](./type_defs.md#dbsubnetgroupmessageresponsetypedef).
+[DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef).
 
 ### describe_engine_default_cluster_parameters
 
@@ -1992,7 +2001,7 @@ Boto3 documentation:
 [RDS.Client.describe_engine_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_engine_default_cluster_parameters)
 
 Arguments mapping described in
-[DescribeEngineDefaultClusterParametersMessageTypeDef](./type_defs.md#describeenginedefaultclusterparametersmessagetypedef).
+[DescribeEngineDefaultClusterParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultclusterparametersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2002,7 +2011,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeEngineDefaultClusterParametersResultResponseTypeDef](./type_defs.md#describeenginedefaultclusterparametersresultresponsetypedef).
+[DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef).
 
 ### describe_engine_default_parameters
 
@@ -2016,7 +2025,7 @@ Boto3 documentation:
 [RDS.Client.describe_engine_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_engine_default_parameters)
 
 Arguments mapping described in
-[DescribeEngineDefaultParametersMessageTypeDef](./type_defs.md#describeenginedefaultparametersmessagetypedef).
+[DescribeEngineDefaultParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultparametersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2026,7 +2035,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeEngineDefaultParametersResultResponseTypeDef](./type_defs.md#describeenginedefaultparametersresultresponsetypedef).
+[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef).
 
 ### describe_event_categories
 
@@ -2039,7 +2048,7 @@ Boto3 documentation:
 [RDS.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_categories)
 
 Arguments mapping described in
-[DescribeEventCategoriesMessageTypeDef](./type_defs.md#describeeventcategoriesmessagetypedef).
+[DescribeEventCategoriesMessageRequestTypeDef](./type_defs.md#describeeventcategoriesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2047,7 +2056,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[EventCategoriesMessageResponseTypeDef](./type_defs.md#eventcategoriesmessageresponsetypedef).
+[EventCategoriesMessageTypeDef](./type_defs.md#eventcategoriesmessagetypedef).
 
 ### describe_event_subscriptions
 
@@ -2059,7 +2068,7 @@ Boto3 documentation:
 [RDS.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_subscriptions)
 
 Arguments mapping described in
-[DescribeEventSubscriptionsMessageTypeDef](./type_defs.md#describeeventsubscriptionsmessagetypedef).
+[DescribeEventSubscriptionsMessageRequestTypeDef](./type_defs.md#describeeventsubscriptionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2069,7 +2078,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[EventSubscriptionsMessageResponseTypeDef](./type_defs.md#eventsubscriptionsmessageresponsetypedef).
+[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef).
 
 ### describe_events
 
@@ -2082,7 +2091,7 @@ Boto3 documentation:
 [RDS.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_events)
 
 Arguments mapping described in
-[DescribeEventsMessageTypeDef](./type_defs.md#describeeventsmessagetypedef).
+[DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2096,8 +2105,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[EventsMessageResponseTypeDef](./type_defs.md#eventsmessageresponsetypedef).
+Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
 ### describe_export_tasks
 
@@ -2109,7 +2117,7 @@ Boto3 documentation:
 [RDS.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_export_tasks)
 
 Arguments mapping described in
-[DescribeExportTasksMessageTypeDef](./type_defs.md#describeexporttasksmessagetypedef).
+[DescribeExportTasksMessageRequestTypeDef](./type_defs.md#describeexporttasksmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2119,8 +2127,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
-Returns
-[ExportTasksMessageResponseTypeDef](./type_defs.md#exporttasksmessageresponsetypedef).
+Returns [ExportTasksMessageTypeDef](./type_defs.md#exporttasksmessagetypedef).
 
 ### describe_global_clusters
 
@@ -2132,7 +2139,7 @@ Boto3 documentation:
 [RDS.Client.describe_global_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_global_clusters)
 
 Arguments mapping described in
-[DescribeGlobalClustersMessageTypeDef](./type_defs.md#describeglobalclustersmessagetypedef).
+[DescribeGlobalClustersMessageRequestTypeDef](./type_defs.md#describeglobalclustersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2142,7 +2149,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[GlobalClustersMessageResponseTypeDef](./type_defs.md#globalclustersmessageresponsetypedef).
+[GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef).
 
 ### describe_installation_media
 
@@ -2155,7 +2162,7 @@ Boto3 documentation:
 [RDS.Client.describe_installation_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_installation_media)
 
 Arguments mapping described in
-[DescribeInstallationMediaMessageTypeDef](./type_defs.md#describeinstallationmediamessagetypedef).
+[DescribeInstallationMediaMessageRequestTypeDef](./type_defs.md#describeinstallationmediamessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2165,7 +2172,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[InstallationMediaMessageResponseTypeDef](./type_defs.md#installationmediamessageresponsetypedef).
+[InstallationMediaMessageTypeDef](./type_defs.md#installationmediamessagetypedef).
 
 ### describe_option_group_options
 
@@ -2178,7 +2185,7 @@ Boto3 documentation:
 [RDS.Client.describe_option_group_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_option_group_options)
 
 Arguments mapping described in
-[DescribeOptionGroupOptionsMessageTypeDef](./type_defs.md#describeoptiongroupoptionsmessagetypedef).
+[DescribeOptionGroupOptionsMessageRequestTypeDef](./type_defs.md#describeoptiongroupoptionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2189,7 +2196,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[OptionGroupOptionsMessageResponseTypeDef](./type_defs.md#optiongroupoptionsmessageresponsetypedef).
+[OptionGroupOptionsMessageTypeDef](./type_defs.md#optiongroupoptionsmessagetypedef).
 
 ### describe_option_groups
 
@@ -2201,7 +2208,7 @@ Boto3 documentation:
 [RDS.Client.describe_option_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_option_groups)
 
 Arguments mapping described in
-[DescribeOptionGroupsMessageTypeDef](./type_defs.md#describeoptiongroupsmessagetypedef).
+[DescribeOptionGroupsMessageRequestTypeDef](./type_defs.md#describeoptiongroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2212,8 +2219,7 @@ Keyword-only arguments:
 - `EngineName`: `str`
 - `MajorEngineVersion`: `str`
 
-Returns
-[OptionGroupsResponseTypeDef](./type_defs.md#optiongroupsresponsetypedef).
+Returns [OptionGroupsTypeDef](./type_defs.md#optiongroupstypedef).
 
 ### describe_orderable_db_instance_options
 
@@ -2226,7 +2232,7 @@ Boto3 documentation:
 [RDS.Client.describe_orderable_db_instance_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_orderable_db_instance_options)
 
 Arguments mapping described in
-[DescribeOrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#describeorderabledbinstanceoptionsmessagetypedef).
+[DescribeOrderableDBInstanceOptionsMessageRequestTypeDef](./type_defs.md#describeorderabledbinstanceoptionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2241,7 +2247,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[OrderableDBInstanceOptionsMessageResponseTypeDef](./type_defs.md#orderabledbinstanceoptionsmessageresponsetypedef).
+[OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef).
 
 ### describe_pending_maintenance_actions
 
@@ -2255,7 +2261,7 @@ Boto3 documentation:
 [RDS.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_pending_maintenance_actions)
 
 Arguments mapping described in
-[DescribePendingMaintenanceActionsMessageTypeDef](./type_defs.md#describependingmaintenanceactionsmessagetypedef).
+[DescribePendingMaintenanceActionsMessageRequestTypeDef](./type_defs.md#describependingmaintenanceactionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2265,7 +2271,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns
-[PendingMaintenanceActionsMessageResponseTypeDef](./type_defs.md#pendingmaintenanceactionsmessageresponsetypedef).
+[PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef).
 
 ### describe_reserved_db_instances
 
@@ -2279,7 +2285,7 @@ Boto3 documentation:
 [RDS.Client.describe_reserved_db_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_reserved_db_instances)
 
 Arguments mapping described in
-[DescribeReservedDBInstancesMessageTypeDef](./type_defs.md#describereserveddbinstancesmessagetypedef).
+[DescribeReservedDBInstancesMessageRequestTypeDef](./type_defs.md#describereserveddbinstancesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2296,7 +2302,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ReservedDBInstanceMessageResponseTypeDef](./type_defs.md#reserveddbinstancemessageresponsetypedef).
+[ReservedDBInstanceMessageTypeDef](./type_defs.md#reserveddbinstancemessagetypedef).
 
 ### describe_reserved_db_instances_offerings
 
@@ -2309,7 +2315,7 @@ Boto3 documentation:
 [RDS.Client.describe_reserved_db_instances_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_reserved_db_instances_offerings)
 
 Arguments mapping described in
-[DescribeReservedDBInstancesOfferingsMessageTypeDef](./type_defs.md#describereserveddbinstancesofferingsmessagetypedef).
+[DescribeReservedDBInstancesOfferingsMessageRequestTypeDef](./type_defs.md#describereserveddbinstancesofferingsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2324,7 +2330,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ReservedDBInstancesOfferingMessageResponseTypeDef](./type_defs.md#reserveddbinstancesofferingmessageresponsetypedef).
+[ReservedDBInstancesOfferingMessageTypeDef](./type_defs.md#reserveddbinstancesofferingmessagetypedef).
 
 ### describe_source_regions
 
@@ -2338,7 +2344,7 @@ Boto3 documentation:
 [RDS.Client.describe_source_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_source_regions)
 
 Arguments mapping described in
-[DescribeSourceRegionsMessageTypeDef](./type_defs.md#describesourceregionsmessagetypedef).
+[DescribeSourceRegionsMessageRequestTypeDef](./type_defs.md#describesourceregionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2348,7 +2354,7 @@ Keyword-only arguments:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
-[SourceRegionMessageResponseTypeDef](./type_defs.md#sourceregionmessageresponsetypedef).
+[SourceRegionMessageTypeDef](./type_defs.md#sourceregionmessagetypedef).
 
 ### describe_valid_db_instance_modifications
 
@@ -2362,14 +2368,14 @@ Boto3 documentation:
 [RDS.Client.describe_valid_db_instance_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_valid_db_instance_modifications)
 
 Arguments mapping described in
-[DescribeValidDBInstanceModificationsMessageTypeDef](./type_defs.md#describevaliddbinstancemodificationsmessagetypedef).
+[DescribeValidDBInstanceModificationsMessageRequestTypeDef](./type_defs.md#describevaliddbinstancemodificationsmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 
 Returns
-[DescribeValidDBInstanceModificationsResultResponseTypeDef](./type_defs.md#describevaliddbinstancemodificationsresultresponsetypedef).
+[DescribeValidDBInstanceModificationsResultTypeDef](./type_defs.md#describevaliddbinstancemodificationsresulttypedef).
 
 ### download_db_log_file_portion
 
@@ -2381,7 +2387,7 @@ Boto3 documentation:
 [RDS.Client.download_db_log_file_portion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.download_db_log_file_portion)
 
 Arguments mapping described in
-[DownloadDBLogFilePortionMessageTypeDef](./type_defs.md#downloaddblogfileportionmessagetypedef).
+[DownloadDBLogFilePortionMessageRequestTypeDef](./type_defs.md#downloaddblogfileportionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2391,7 +2397,7 @@ Keyword-only arguments:
 - `NumberOfLines`: `int`
 
 Returns
-[DownloadDBLogFilePortionDetailsResponseTypeDef](./type_defs.md#downloaddblogfileportiondetailsresponsetypedef).
+[DownloadDBLogFilePortionDetailsTypeDef](./type_defs.md#downloaddblogfileportiondetailstypedef).
 
 ### failover_db_cluster
 
@@ -2403,7 +2409,7 @@ Boto3 documentation:
 [RDS.Client.failover_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_db_cluster)
 
 Arguments mapping described in
-[FailoverDBClusterMessageTypeDef](./type_defs.md#failoverdbclustermessagetypedef).
+[FailoverDBClusterMessageRequestTypeDef](./type_defs.md#failoverdbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2411,7 +2417,7 @@ Keyword-only arguments:
 - `TargetDBInstanceIdentifier`: `str`
 
 Returns
-[FailoverDBClusterResultResponseTypeDef](./type_defs.md#failoverdbclusterresultresponsetypedef).
+[FailoverDBClusterResultTypeDef](./type_defs.md#failoverdbclusterresulttypedef).
 
 ### failover_global_cluster
 
@@ -2423,7 +2429,7 @@ Boto3 documentation:
 [RDS.Client.failover_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_global_cluster)
 
 Arguments mapping described in
-[FailoverGlobalClusterMessageTypeDef](./type_defs.md#failoverglobalclustermessagetypedef).
+[FailoverGlobalClusterMessageRequestTypeDef](./type_defs.md#failoverglobalclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2431,7 +2437,7 @@ Keyword-only arguments:
 - `TargetDbClusterIdentifier`: `str` *(required)*
 
 Returns
-[FailoverGlobalClusterResultResponseTypeDef](./type_defs.md#failoverglobalclusterresultresponsetypedef).
+[FailoverGlobalClusterResultTypeDef](./type_defs.md#failoverglobalclusterresulttypedef).
 
 ### generate_db_auth_token
 
@@ -2483,7 +2489,7 @@ Boto3 documentation:
 [RDS.Client.import_installation_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.import_installation_media)
 
 Arguments mapping described in
-[ImportInstallationMediaMessageTypeDef](./type_defs.md#importinstallationmediamessagetypedef).
+[ImportInstallationMediaMessageRequestTypeDef](./type_defs.md#importinstallationmediamessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2494,7 +2500,7 @@ Keyword-only arguments:
 - `OSInstallationMediaPath`: `str` *(required)*
 
 Returns
-[InstallationMediaResponseTypeDef](./type_defs.md#installationmediaresponsetypedef).
+[InstallationMediaResponseMetadataTypeDef](./type_defs.md#installationmediaresponsemetadatatypedef).
 
 ### list_tags_for_resource
 
@@ -2506,15 +2512,14 @@ Boto3 documentation:
 [RDS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceMessageTypeDef](./type_defs.md#listtagsforresourcemessagetypedef).
+[ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-Returns
-[TagListMessageResponseTypeDef](./type_defs.md#taglistmessageresponsetypedef).
+Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
 ### modify_certificates
 
@@ -2528,7 +2533,7 @@ Boto3 documentation:
 [RDS.Client.modify_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_certificates)
 
 Arguments mapping described in
-[ModifyCertificatesMessageTypeDef](./type_defs.md#modifycertificatesmessagetypedef).
+[ModifyCertificatesMessageRequestTypeDef](./type_defs.md#modifycertificatesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2536,7 +2541,7 @@ Keyword-only arguments:
 - `RemoveCustomerOverride`: `bool`
 
 Returns
-[ModifyCertificatesResultResponseTypeDef](./type_defs.md#modifycertificatesresultresponsetypedef).
+[ModifyCertificatesResultTypeDef](./type_defs.md#modifycertificatesresulttypedef).
 
 ### modify_current_db_cluster_capacity
 
@@ -2549,7 +2554,7 @@ Boto3 documentation:
 [RDS.Client.modify_current_db_cluster_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_current_db_cluster_capacity)
 
 Arguments mapping described in
-[ModifyCurrentDBClusterCapacityMessageTypeDef](./type_defs.md#modifycurrentdbclustercapacitymessagetypedef).
+[ModifyCurrentDBClusterCapacityMessageRequestTypeDef](./type_defs.md#modifycurrentdbclustercapacitymessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2559,7 +2564,7 @@ Keyword-only arguments:
 - `TimeoutAction`: `str`
 
 Returns
-[DBClusterCapacityInfoResponseTypeDef](./type_defs.md#dbclustercapacityinforesponsetypedef).
+[DBClusterCapacityInfoTypeDef](./type_defs.md#dbclustercapacityinfotypedef).
 
 ### modify_db_cluster
 
@@ -2571,7 +2576,7 @@ Boto3 documentation:
 [RDS.Client.modify_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster)
 
 Arguments mapping described in
-[ModifyDBClusterMessageTypeDef](./type_defs.md#modifydbclustermessagetypedef).
+[ModifyDBClusterMessageRequestTypeDef](./type_defs.md#modifydbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2603,7 +2608,7 @@ Keyword-only arguments:
 - `EnableGlobalWriteForwarding`: `bool`
 
 Returns
-[ModifyDBClusterResultResponseTypeDef](./type_defs.md#modifydbclusterresultresponsetypedef).
+[ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef).
 
 ### modify_db_cluster_endpoint
 
@@ -2615,7 +2620,7 @@ Boto3 documentation:
 [RDS.Client.modify_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_endpoint)
 
 Arguments mapping described in
-[ModifyDBClusterEndpointMessageTypeDef](./type_defs.md#modifydbclusterendpointmessagetypedef).
+[ModifyDBClusterEndpointMessageRequestTypeDef](./type_defs.md#modifydbclusterendpointmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2625,7 +2630,7 @@ Keyword-only arguments:
 - `ExcludedMembers`: `List`\[`str`\]
 
 Returns
-[DBClusterEndpointResponseTypeDef](./type_defs.md#dbclusterendpointresponsetypedef).
+[DBClusterEndpointResponseMetadataTypeDef](./type_defs.md#dbclusterendpointresponsemetadatatypedef).
 
 ### modify_db_cluster_parameter_group
 
@@ -2638,7 +2643,7 @@ Boto3 documentation:
 [RDS.Client.modify_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_parameter_group)
 
 Arguments mapping described in
-[ModifyDBClusterParameterGroupMessageTypeDef](./type_defs.md#modifydbclusterparametergroupmessagetypedef).
+[ModifyDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#modifydbclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2647,7 +2652,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DBClusterParameterGroupNameMessageResponseTypeDef](./type_defs.md#dbclusterparametergroupnamemessageresponsetypedef).
+[DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
 
 ### modify_db_cluster_snapshot_attribute
 
@@ -2661,7 +2666,7 @@ Boto3 documentation:
 [RDS.Client.modify_db_cluster_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_snapshot_attribute)
 
 Arguments mapping described in
-[ModifyDBClusterSnapshotAttributeMessageTypeDef](./type_defs.md#modifydbclustersnapshotattributemessagetypedef).
+[ModifyDBClusterSnapshotAttributeMessageRequestTypeDef](./type_defs.md#modifydbclustersnapshotattributemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2671,7 +2676,7 @@ Keyword-only arguments:
 - `ValuesToRemove`: `List`\[`str`\]
 
 Returns
-[ModifyDBClusterSnapshotAttributeResultResponseTypeDef](./type_defs.md#modifydbclustersnapshotattributeresultresponsetypedef).
+[ModifyDBClusterSnapshotAttributeResultTypeDef](./type_defs.md#modifydbclustersnapshotattributeresulttypedef).
 
 ### modify_db_instance
 
@@ -2683,7 +2688,7 @@ Boto3 documentation:
 [RDS.Client.modify_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_instance)
 
 Arguments mapping described in
-[ModifyDBInstanceMessageTypeDef](./type_defs.md#modifydbinstancemessagetypedef).
+[ModifyDBInstanceMessageRequestTypeDef](./type_defs.md#modifydbinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2736,7 +2741,7 @@ Keyword-only arguments:
 - `AwsBackupRecoveryPointArn`: `str`
 
 Returns
-[ModifyDBInstanceResultResponseTypeDef](./type_defs.md#modifydbinstanceresultresponsetypedef).
+[ModifyDBInstanceResultTypeDef](./type_defs.md#modifydbinstanceresulttypedef).
 
 ### modify_db_parameter_group
 
@@ -2748,7 +2753,7 @@ Boto3 documentation:
 [RDS.Client.modify_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_parameter_group)
 
 Arguments mapping described in
-[ModifyDBParameterGroupMessageTypeDef](./type_defs.md#modifydbparametergroupmessagetypedef).
+[ModifyDBParameterGroupMessageRequestTypeDef](./type_defs.md#modifydbparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2757,7 +2762,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DBParameterGroupNameMessageResponseTypeDef](./type_defs.md#dbparametergroupnamemessageresponsetypedef).
+[DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef).
 
 ### modify_db_proxy
 
@@ -2769,7 +2774,7 @@ Boto3 documentation:
 [RDS.Client.modify_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy)
 
 Arguments mapping described in
-[ModifyDBProxyRequestTypeDef](./type_defs.md#modifydbproxyrequesttypedef).
+[ModifyDBProxyRequestRequestTypeDef](./type_defs.md#modifydbproxyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2784,7 +2789,7 @@ Keyword-only arguments:
 - `SecurityGroups`: `List`\[`str`\]
 
 Returns
-[ModifyDBProxyResponseResponseTypeDef](./type_defs.md#modifydbproxyresponseresponsetypedef).
+[ModifyDBProxyResponseTypeDef](./type_defs.md#modifydbproxyresponsetypedef).
 
 ### modify_db_proxy_endpoint
 
@@ -2796,7 +2801,7 @@ Boto3 documentation:
 [RDS.Client.modify_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy_endpoint)
 
 Arguments mapping described in
-[ModifyDBProxyEndpointRequestTypeDef](./type_defs.md#modifydbproxyendpointrequesttypedef).
+[ModifyDBProxyEndpointRequestRequestTypeDef](./type_defs.md#modifydbproxyendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2805,7 +2810,7 @@ Keyword-only arguments:
 - `VpcSecurityGroupIds`: `List`\[`str`\]
 
 Returns
-[ModifyDBProxyEndpointResponseResponseTypeDef](./type_defs.md#modifydbproxyendpointresponseresponsetypedef).
+[ModifyDBProxyEndpointResponseTypeDef](./type_defs.md#modifydbproxyendpointresponsetypedef).
 
 ### modify_db_proxy_target_group
 
@@ -2817,7 +2822,7 @@ Boto3 documentation:
 [RDS.Client.modify_db_proxy_target_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy_target_group)
 
 Arguments mapping described in
-[ModifyDBProxyTargetGroupRequestTypeDef](./type_defs.md#modifydbproxytargetgrouprequesttypedef).
+[ModifyDBProxyTargetGroupRequestRequestTypeDef](./type_defs.md#modifydbproxytargetgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2828,7 +2833,7 @@ Keyword-only arguments:
 - `NewName`: `str`
 
 Returns
-[ModifyDBProxyTargetGroupResponseResponseTypeDef](./type_defs.md#modifydbproxytargetgroupresponseresponsetypedef).
+[ModifyDBProxyTargetGroupResponseTypeDef](./type_defs.md#modifydbproxytargetgroupresponsetypedef).
 
 ### modify_db_snapshot
 
@@ -2840,7 +2845,7 @@ Boto3 documentation:
 [RDS.Client.modify_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_snapshot)
 
 Arguments mapping described in
-[ModifyDBSnapshotMessageTypeDef](./type_defs.md#modifydbsnapshotmessagetypedef).
+[ModifyDBSnapshotMessageRequestTypeDef](./type_defs.md#modifydbsnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2849,7 +2854,7 @@ Keyword-only arguments:
 - `OptionGroupName`: `str`
 
 Returns
-[ModifyDBSnapshotResultResponseTypeDef](./type_defs.md#modifydbsnapshotresultresponsetypedef).
+[ModifyDBSnapshotResultTypeDef](./type_defs.md#modifydbsnapshotresulttypedef).
 
 ### modify_db_snapshot_attribute
 
@@ -2862,7 +2867,7 @@ Boto3 documentation:
 [RDS.Client.modify_db_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_snapshot_attribute)
 
 Arguments mapping described in
-[ModifyDBSnapshotAttributeMessageTypeDef](./type_defs.md#modifydbsnapshotattributemessagetypedef).
+[ModifyDBSnapshotAttributeMessageRequestTypeDef](./type_defs.md#modifydbsnapshotattributemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2872,7 +2877,7 @@ Keyword-only arguments:
 - `ValuesToRemove`: `List`\[`str`\]
 
 Returns
-[ModifyDBSnapshotAttributeResultResponseTypeDef](./type_defs.md#modifydbsnapshotattributeresultresponsetypedef).
+[ModifyDBSnapshotAttributeResultTypeDef](./type_defs.md#modifydbsnapshotattributeresulttypedef).
 
 ### modify_db_subnet_group
 
@@ -2884,7 +2889,7 @@ Boto3 documentation:
 [RDS.Client.modify_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_subnet_group)
 
 Arguments mapping described in
-[ModifyDBSubnetGroupMessageTypeDef](./type_defs.md#modifydbsubnetgroupmessagetypedef).
+[ModifyDBSubnetGroupMessageRequestTypeDef](./type_defs.md#modifydbsubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2893,7 +2898,7 @@ Keyword-only arguments:
 - `DBSubnetGroupDescription`: `str`
 
 Returns
-[ModifyDBSubnetGroupResultResponseTypeDef](./type_defs.md#modifydbsubnetgroupresultresponsetypedef).
+[ModifyDBSubnetGroupResultTypeDef](./type_defs.md#modifydbsubnetgroupresulttypedef).
 
 ### modify_event_subscription
 
@@ -2905,7 +2910,7 @@ Boto3 documentation:
 [RDS.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_event_subscription)
 
 Arguments mapping described in
-[ModifyEventSubscriptionMessageTypeDef](./type_defs.md#modifyeventsubscriptionmessagetypedef).
+[ModifyEventSubscriptionMessageRequestTypeDef](./type_defs.md#modifyeventsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2916,7 +2921,7 @@ Keyword-only arguments:
 - `Enabled`: `bool`
 
 Returns
-[ModifyEventSubscriptionResultResponseTypeDef](./type_defs.md#modifyeventsubscriptionresultresponsetypedef).
+[ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef).
 
 ### modify_global_cluster
 
@@ -2928,7 +2933,7 @@ Boto3 documentation:
 [RDS.Client.modify_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_global_cluster)
 
 Arguments mapping described in
-[ModifyGlobalClusterMessageTypeDef](./type_defs.md#modifyglobalclustermessagetypedef).
+[ModifyGlobalClusterMessageRequestTypeDef](./type_defs.md#modifyglobalclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2939,7 +2944,7 @@ Keyword-only arguments:
 - `AllowMajorVersionUpgrade`: `bool`
 
 Returns
-[ModifyGlobalClusterResultResponseTypeDef](./type_defs.md#modifyglobalclusterresultresponsetypedef).
+[ModifyGlobalClusterResultTypeDef](./type_defs.md#modifyglobalclusterresulttypedef).
 
 ### modify_option_group
 
@@ -2951,7 +2956,7 @@ Boto3 documentation:
 [RDS.Client.modify_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_option_group)
 
 Arguments mapping described in
-[ModifyOptionGroupMessageTypeDef](./type_defs.md#modifyoptiongroupmessagetypedef).
+[ModifyOptionGroupMessageRequestTypeDef](./type_defs.md#modifyoptiongroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2962,7 +2967,7 @@ Keyword-only arguments:
 - `ApplyImmediately`: `bool`
 
 Returns
-[ModifyOptionGroupResultResponseTypeDef](./type_defs.md#modifyoptiongroupresultresponsetypedef).
+[ModifyOptionGroupResultTypeDef](./type_defs.md#modifyoptiongroupresulttypedef).
 
 ### promote_read_replica
 
@@ -2974,7 +2979,7 @@ Boto3 documentation:
 [RDS.Client.promote_read_replica](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica)
 
 Arguments mapping described in
-[PromoteReadReplicaMessageTypeDef](./type_defs.md#promotereadreplicamessagetypedef).
+[PromoteReadReplicaMessageRequestTypeDef](./type_defs.md#promotereadreplicamessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -2983,7 +2988,7 @@ Keyword-only arguments:
 - `PreferredBackupWindow`: `str`
 
 Returns
-[PromoteReadReplicaResultResponseTypeDef](./type_defs.md#promotereadreplicaresultresponsetypedef).
+[PromoteReadReplicaResultTypeDef](./type_defs.md#promotereadreplicaresulttypedef).
 
 ### promote_read_replica_db_cluster
 
@@ -2996,14 +3001,14 @@ Boto3 documentation:
 [RDS.Client.promote_read_replica_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica_db_cluster)
 
 Arguments mapping described in
-[PromoteReadReplicaDBClusterMessageTypeDef](./type_defs.md#promotereadreplicadbclustermessagetypedef).
+[PromoteReadReplicaDBClusterMessageRequestTypeDef](./type_defs.md#promotereadreplicadbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 
 Returns
-[PromoteReadReplicaDBClusterResultResponseTypeDef](./type_defs.md#promotereadreplicadbclusterresultresponsetypedef).
+[PromoteReadReplicaDBClusterResultTypeDef](./type_defs.md#promotereadreplicadbclusterresulttypedef).
 
 ### purchase_reserved_db_instances_offering
 
@@ -3016,7 +3021,7 @@ Boto3 documentation:
 [RDS.Client.purchase_reserved_db_instances_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.purchase_reserved_db_instances_offering)
 
 Arguments mapping described in
-[PurchaseReservedDBInstancesOfferingMessageTypeDef](./type_defs.md#purchasereserveddbinstancesofferingmessagetypedef).
+[PurchaseReservedDBInstancesOfferingMessageRequestTypeDef](./type_defs.md#purchasereserveddbinstancesofferingmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3026,7 +3031,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PurchaseReservedDBInstancesOfferingResultResponseTypeDef](./type_defs.md#purchasereserveddbinstancesofferingresultresponsetypedef).
+[PurchaseReservedDBInstancesOfferingResultTypeDef](./type_defs.md#purchasereserveddbinstancesofferingresulttypedef).
 
 ### reboot_db_instance
 
@@ -3038,7 +3043,7 @@ Boto3 documentation:
 [RDS.Client.reboot_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reboot_db_instance)
 
 Arguments mapping described in
-[RebootDBInstanceMessageTypeDef](./type_defs.md#rebootdbinstancemessagetypedef).
+[RebootDBInstanceMessageRequestTypeDef](./type_defs.md#rebootdbinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3046,7 +3051,7 @@ Keyword-only arguments:
 - `ForceFailover`: `bool`
 
 Returns
-[RebootDBInstanceResultResponseTypeDef](./type_defs.md#rebootdbinstanceresultresponsetypedef).
+[RebootDBInstanceResultTypeDef](./type_defs.md#rebootdbinstanceresulttypedef).
 
 ### register_db_proxy_targets
 
@@ -3059,7 +3064,7 @@ Boto3 documentation:
 [RDS.Client.register_db_proxy_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.register_db_proxy_targets)
 
 Arguments mapping described in
-[RegisterDBProxyTargetsRequestTypeDef](./type_defs.md#registerdbproxytargetsrequesttypedef).
+[RegisterDBProxyTargetsRequestRequestTypeDef](./type_defs.md#registerdbproxytargetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3069,7 +3074,7 @@ Keyword-only arguments:
 - `DBClusterIdentifiers`: `List`\[`str`\]
 
 Returns
-[RegisterDBProxyTargetsResponseResponseTypeDef](./type_defs.md#registerdbproxytargetsresponseresponsetypedef).
+[RegisterDBProxyTargetsResponseTypeDef](./type_defs.md#registerdbproxytargetsresponsetypedef).
 
 ### remove_from_global_cluster
 
@@ -3081,7 +3086,7 @@ Boto3 documentation:
 [RDS.Client.remove_from_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_from_global_cluster)
 
 Arguments mapping described in
-[RemoveFromGlobalClusterMessageTypeDef](./type_defs.md#removefromglobalclustermessagetypedef).
+[RemoveFromGlobalClusterMessageRequestTypeDef](./type_defs.md#removefromglobalclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3089,7 +3094,7 @@ Keyword-only arguments:
 - `DbClusterIdentifier`: `str`
 
 Returns
-[RemoveFromGlobalClusterResultResponseTypeDef](./type_defs.md#removefromglobalclusterresultresponsetypedef).
+[RemoveFromGlobalClusterResultTypeDef](./type_defs.md#removefromglobalclusterresulttypedef).
 
 ### remove_role_from_db_cluster
 
@@ -3102,7 +3107,7 @@ Boto3 documentation:
 [RDS.Client.remove_role_from_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_role_from_db_cluster)
 
 Arguments mapping described in
-[RemoveRoleFromDBClusterMessageTypeDef](./type_defs.md#removerolefromdbclustermessagetypedef).
+[RemoveRoleFromDBClusterMessageRequestTypeDef](./type_defs.md#removerolefromdbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3121,7 +3126,7 @@ Boto3 documentation:
 [RDS.Client.remove_role_from_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_role_from_db_instance)
 
 Arguments mapping described in
-[RemoveRoleFromDBInstanceMessageTypeDef](./type_defs.md#removerolefromdbinstancemessagetypedef).
+[RemoveRoleFromDBInstanceMessageRequestTypeDef](./type_defs.md#removerolefromdbinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3141,7 +3146,7 @@ Boto3 documentation:
 [RDS.Client.remove_source_identifier_from_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_source_identifier_from_subscription)
 
 Arguments mapping described in
-[RemoveSourceIdentifierFromSubscriptionMessageTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionmessagetypedef).
+[RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3149,7 +3154,7 @@ Keyword-only arguments:
 - `SourceIdentifier`: `str` *(required)*
 
 Returns
-[RemoveSourceIdentifierFromSubscriptionResultResponseTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresultresponsetypedef).
+[RemoveSourceIdentifierFromSubscriptionResultTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresulttypedef).
 
 ### remove_tags_from_resource
 
@@ -3161,7 +3166,7 @@ Boto3 documentation:
 [RDS.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_tags_from_resource)
 
 Arguments mapping described in
-[RemoveTagsFromResourceMessageTypeDef](./type_defs.md#removetagsfromresourcemessagetypedef).
+[RemoveTagsFromResourceMessageRequestTypeDef](./type_defs.md#removetagsfromresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3179,7 +3184,7 @@ Boto3 documentation:
 [RDS.Client.reset_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reset_db_cluster_parameter_group)
 
 Arguments mapping described in
-[ResetDBClusterParameterGroupMessageTypeDef](./type_defs.md#resetdbclusterparametergroupmessagetypedef).
+[ResetDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#resetdbclusterparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3188,7 +3193,7 @@ Keyword-only arguments:
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
-[DBClusterParameterGroupNameMessageResponseTypeDef](./type_defs.md#dbclusterparametergroupnamemessageresponsetypedef).
+[DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
 
 ### reset_db_parameter_group
 
@@ -3201,7 +3206,7 @@ Boto3 documentation:
 [RDS.Client.reset_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reset_db_parameter_group)
 
 Arguments mapping described in
-[ResetDBParameterGroupMessageTypeDef](./type_defs.md#resetdbparametergroupmessagetypedef).
+[ResetDBParameterGroupMessageRequestTypeDef](./type_defs.md#resetdbparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3210,7 +3215,7 @@ Keyword-only arguments:
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
-[DBParameterGroupNameMessageResponseTypeDef](./type_defs.md#dbparametergroupnamemessageresponsetypedef).
+[DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef).
 
 ### restore_db_cluster_from_s3
 
@@ -3223,7 +3228,7 @@ Boto3 documentation:
 [RDS.Client.restore_db_cluster_from_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_from_s3)
 
 Arguments mapping described in
-[RestoreDBClusterFromS3MessageTypeDef](./type_defs.md#restoredbclusterfroms3messagetypedef).
+[RestoreDBClusterFromS3MessageRequestTypeDef](./type_defs.md#restoredbclusterfroms3messagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3260,7 +3265,7 @@ Keyword-only arguments:
 - `DomainIAMRoleName`: `str`
 
 Returns
-[RestoreDBClusterFromS3ResultResponseTypeDef](./type_defs.md#restoredbclusterfroms3resultresponsetypedef).
+[RestoreDBClusterFromS3ResultTypeDef](./type_defs.md#restoredbclusterfroms3resulttypedef).
 
 ### restore_db_cluster_from_snapshot
 
@@ -3273,7 +3278,7 @@ Boto3 documentation:
 [RDS.Client.restore_db_cluster_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_from_snapshot)
 
 Arguments mapping described in
-[RestoreDBClusterFromSnapshotMessageTypeDef](./type_defs.md#restoredbclusterfromsnapshotmessagetypedef).
+[RestoreDBClusterFromSnapshotMessageRequestTypeDef](./type_defs.md#restoredbclusterfromsnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3302,7 +3307,7 @@ Keyword-only arguments:
 - `DomainIAMRoleName`: `str`
 
 Returns
-[RestoreDBClusterFromSnapshotResultResponseTypeDef](./type_defs.md#restoredbclusterfromsnapshotresultresponsetypedef).
+[RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef).
 
 ### restore_db_cluster_to_point_in_time
 
@@ -3315,7 +3320,7 @@ Boto3 documentation:
 [RDS.Client.restore_db_cluster_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_to_point_in_time)
 
 Arguments mapping described in
-[RestoreDBClusterToPointInTimeMessageTypeDef](./type_defs.md#restoredbclustertopointintimemessagetypedef).
+[RestoreDBClusterToPointInTimeMessageRequestTypeDef](./type_defs.md#restoredbclustertopointintimemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3343,7 +3348,7 @@ Keyword-only arguments:
 - `EngineMode`: `str`
 
 Returns
-[RestoreDBClusterToPointInTimeResultResponseTypeDef](./type_defs.md#restoredbclustertopointintimeresultresponsetypedef).
+[RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef).
 
 ### restore_db_instance_from_db_snapshot
 
@@ -3356,7 +3361,7 @@ Boto3 documentation:
 [RDS.Client.restore_db_instance_from_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_db_snapshot)
 
 Arguments mapping described in
-[RestoreDBInstanceFromDBSnapshotMessageTypeDef](./type_defs.md#restoredbinstancefromdbsnapshotmessagetypedef).
+[RestoreDBInstanceFromDBSnapshotMessageRequestTypeDef](./type_defs.md#restoredbinstancefromdbsnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3392,7 +3397,7 @@ Keyword-only arguments:
 - `EnableCustomerOwnedIp`: `bool`
 
 Returns
-[RestoreDBInstanceFromDBSnapshotResultResponseTypeDef](./type_defs.md#restoredbinstancefromdbsnapshotresultresponsetypedef).
+[RestoreDBInstanceFromDBSnapshotResultTypeDef](./type_defs.md#restoredbinstancefromdbsnapshotresulttypedef).
 
 ### restore_db_instance_from_s3
 
@@ -3405,7 +3410,7 @@ Boto3 documentation:
 [RDS.Client.restore_db_instance_from_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_s3)
 
 Arguments mapping described in
-[RestoreDBInstanceFromS3MessageTypeDef](./type_defs.md#restoredbinstancefroms3messagetypedef).
+[RestoreDBInstanceFromS3MessageRequestTypeDef](./type_defs.md#restoredbinstancefroms3messagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3456,7 +3461,7 @@ Keyword-only arguments:
 - `MaxAllocatedStorage`: `int`
 
 Returns
-[RestoreDBInstanceFromS3ResultResponseTypeDef](./type_defs.md#restoredbinstancefroms3resultresponsetypedef).
+[RestoreDBInstanceFromS3ResultTypeDef](./type_defs.md#restoredbinstancefroms3resulttypedef).
 
 ### restore_db_instance_to_point_in_time
 
@@ -3469,7 +3474,7 @@ Boto3 documentation:
 [RDS.Client.restore_db_instance_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_to_point_in_time)
 
 Arguments mapping described in
-[RestoreDBInstanceToPointInTimeMessageTypeDef](./type_defs.md#restoredbinstancetopointintimemessagetypedef).
+[RestoreDBInstanceToPointInTimeMessageRequestTypeDef](./type_defs.md#restoredbinstancetopointintimemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3510,7 +3515,7 @@ Keyword-only arguments:
 - `EnableCustomerOwnedIp`: `bool`
 
 Returns
-[RestoreDBInstanceToPointInTimeResultResponseTypeDef](./type_defs.md#restoredbinstancetopointintimeresultresponsetypedef).
+[RestoreDBInstanceToPointInTimeResultTypeDef](./type_defs.md#restoredbinstancetopointintimeresulttypedef).
 
 ### revoke_db_security_group_ingress
 
@@ -3524,7 +3529,7 @@ Boto3 documentation:
 [RDS.Client.revoke_db_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.revoke_db_security_group_ingress)
 
 Arguments mapping described in
-[RevokeDBSecurityGroupIngressMessageTypeDef](./type_defs.md#revokedbsecuritygroupingressmessagetypedef).
+[RevokeDBSecurityGroupIngressMessageRequestTypeDef](./type_defs.md#revokedbsecuritygroupingressmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3535,7 +3540,7 @@ Keyword-only arguments:
 - `EC2SecurityGroupOwnerId`: `str`
 
 Returns
-[RevokeDBSecurityGroupIngressResultResponseTypeDef](./type_defs.md#revokedbsecuritygroupingressresultresponsetypedef).
+[RevokeDBSecurityGroupIngressResultTypeDef](./type_defs.md#revokedbsecuritygroupingressresulttypedef).
 
 ### start_activity_stream
 
@@ -3547,7 +3552,7 @@ Boto3 documentation:
 [RDS.Client.start_activity_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_activity_stream)
 
 Arguments mapping described in
-[StartActivityStreamRequestTypeDef](./type_defs.md#startactivitystreamrequesttypedef).
+[StartActivityStreamRequestRequestTypeDef](./type_defs.md#startactivitystreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3559,7 +3564,7 @@ Keyword-only arguments:
 - `EngineNativeAuditFieldsIncluded`: `bool`
 
 Returns
-[StartActivityStreamResponseResponseTypeDef](./type_defs.md#startactivitystreamresponseresponsetypedef).
+[StartActivityStreamResponseTypeDef](./type_defs.md#startactivitystreamresponsetypedef).
 
 ### start_db_cluster
 
@@ -3572,14 +3577,14 @@ Boto3 documentation:
 [RDS.Client.start_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_cluster)
 
 Arguments mapping described in
-[StartDBClusterMessageTypeDef](./type_defs.md#startdbclustermessagetypedef).
+[StartDBClusterMessageRequestTypeDef](./type_defs.md#startdbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 
 Returns
-[StartDBClusterResultResponseTypeDef](./type_defs.md#startdbclusterresultresponsetypedef).
+[StartDBClusterResultTypeDef](./type_defs.md#startdbclusterresulttypedef).
 
 ### start_db_instance
 
@@ -3592,14 +3597,14 @@ Boto3 documentation:
 [RDS.Client.start_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance)
 
 Arguments mapping described in
-[StartDBInstanceMessageTypeDef](./type_defs.md#startdbinstancemessagetypedef).
+[StartDBInstanceMessageRequestTypeDef](./type_defs.md#startdbinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str` *(required)*
 
 Returns
-[StartDBInstanceResultResponseTypeDef](./type_defs.md#startdbinstanceresultresponsetypedef).
+[StartDBInstanceResultTypeDef](./type_defs.md#startdbinstanceresulttypedef).
 
 ### start_db_instance_automated_backups_replication
 
@@ -3613,7 +3618,7 @@ Boto3 documentation:
 [RDS.Client.start_db_instance_automated_backups_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance_automated_backups_replication)
 
 Arguments mapping described in
-[StartDBInstanceAutomatedBackupsReplicationMessageTypeDef](./type_defs.md#startdbinstanceautomatedbackupsreplicationmessagetypedef).
+[StartDBInstanceAutomatedBackupsReplicationMessageRequestTypeDef](./type_defs.md#startdbinstanceautomatedbackupsreplicationmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3624,7 +3629,7 @@ Keyword-only arguments:
 - `SourceRegion`: `str`
 
 Returns
-[StartDBInstanceAutomatedBackupsReplicationResultResponseTypeDef](./type_defs.md#startdbinstanceautomatedbackupsreplicationresultresponsetypedef).
+[StartDBInstanceAutomatedBackupsReplicationResultTypeDef](./type_defs.md#startdbinstanceautomatedbackupsreplicationresulttypedef).
 
 ### start_export_task
 
@@ -3636,7 +3641,7 @@ Boto3 documentation:
 [RDS.Client.start_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_export_task)
 
 Arguments mapping described in
-[StartExportTaskMessageTypeDef](./type_defs.md#startexporttaskmessagetypedef).
+[StartExportTaskMessageRequestTypeDef](./type_defs.md#startexporttaskmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3648,7 +3653,8 @@ Keyword-only arguments:
 - `S3Prefix`: `str`
 - `ExportOnly`: `List`\[`str`\]
 
-Returns [ExportTaskResponseTypeDef](./type_defs.md#exporttaskresponsetypedef).
+Returns
+[ExportTaskResponseMetadataTypeDef](./type_defs.md#exporttaskresponsemetadatatypedef).
 
 ### stop_activity_stream
 
@@ -3662,7 +3668,7 @@ Boto3 documentation:
 [RDS.Client.stop_activity_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_activity_stream)
 
 Arguments mapping described in
-[StopActivityStreamRequestTypeDef](./type_defs.md#stopactivitystreamrequesttypedef).
+[StopActivityStreamRequestRequestTypeDef](./type_defs.md#stopactivitystreamrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3670,7 +3676,7 @@ Keyword-only arguments:
 - `ApplyImmediately`: `bool`
 
 Returns
-[StopActivityStreamResponseResponseTypeDef](./type_defs.md#stopactivitystreamresponseresponsetypedef).
+[StopActivityStreamResponseTypeDef](./type_defs.md#stopactivitystreamresponsetypedef).
 
 ### stop_db_cluster
 
@@ -3682,14 +3688,14 @@ Boto3 documentation:
 [RDS.Client.stop_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_cluster)
 
 Arguments mapping described in
-[StopDBClusterMessageTypeDef](./type_defs.md#stopdbclustermessagetypedef).
+[StopDBClusterMessageRequestTypeDef](./type_defs.md#stopdbclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 
 Returns
-[StopDBClusterResultResponseTypeDef](./type_defs.md#stopdbclusterresultresponsetypedef).
+[StopDBClusterResultTypeDef](./type_defs.md#stopdbclusterresulttypedef).
 
 ### stop_db_instance
 
@@ -3701,7 +3707,7 @@ Boto3 documentation:
 [RDS.Client.stop_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance)
 
 Arguments mapping described in
-[StopDBInstanceMessageTypeDef](./type_defs.md#stopdbinstancemessagetypedef).
+[StopDBInstanceMessageRequestTypeDef](./type_defs.md#stopdbinstancemessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -3709,7 +3715,7 @@ Keyword-only arguments:
 - `DBSnapshotIdentifier`: `str`
 
 Returns
-[StopDBInstanceResultResponseTypeDef](./type_defs.md#stopdbinstanceresultresponsetypedef).
+[StopDBInstanceResultTypeDef](./type_defs.md#stopdbinstanceresulttypedef).
 
 ### stop_db_instance_automated_backups_replication
 
@@ -3722,14 +3728,14 @@ Boto3 documentation:
 [RDS.Client.stop_db_instance_automated_backups_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance_automated_backups_replication)
 
 Arguments mapping described in
-[StopDBInstanceAutomatedBackupsReplicationMessageTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationmessagetypedef).
+[StopDBInstanceAutomatedBackupsReplicationMessageRequestTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `SourceDBInstanceArn`: `str` *(required)*
 
 Returns
-[StopDBInstanceAutomatedBackupsReplicationResultResponseTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationresultresponsetypedef).
+[StopDBInstanceAutomatedBackupsReplicationResultTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationresulttypedef).
 
 ### get_paginator
 

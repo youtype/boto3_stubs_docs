@@ -11,6 +11,7 @@ type annotations stubs module
   - [MarketplaceMeteringClient](#marketplacemeteringclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_meter_usage](#batch_meter_usage)
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
@@ -69,6 +70,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MarketplaceMeteringClient exceptions.
+
+Type annotations for `boto3.client("meteringmarketplace").exceptions` method.
+
+Boto3 documentation:
+[MarketplaceMetering.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_meter_usage
 
 BatchMeterUsage is called from a SaaS application listed on the AWS Marketplace
@@ -81,7 +93,7 @@ Boto3 documentation:
 [MarketplaceMetering.Client.batch_meter_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.batch_meter_usage)
 
 Arguments mapping described in
-[BatchMeterUsageRequestTypeDef](./type_defs.md#batchmeterusagerequesttypedef).
+[BatchMeterUsageRequestRequestTypeDef](./type_defs.md#batchmeterusagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -91,7 +103,7 @@ Keyword-only arguments:
 - `ProductCode`: `str` *(required)*
 
 Returns
-[BatchMeterUsageResultResponseTypeDef](./type_defs.md#batchmeterusageresultresponsetypedef).
+[BatchMeterUsageResultTypeDef](./type_defs.md#batchmeterusageresulttypedef).
 
 ### can_paginate
 
@@ -137,7 +149,7 @@ Boto3 documentation:
 [MarketplaceMetering.Client.meter_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.meter_usage)
 
 Arguments mapping described in
-[MeterUsageRequestTypeDef](./type_defs.md#meterusagerequesttypedef).
+[MeterUsageRequestRequestTypeDef](./type_defs.md#meterusagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,8 +161,7 @@ Keyword-only arguments:
 - `UsageAllocations`:
   `List`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
 
-Returns
-[MeterUsageResultResponseTypeDef](./type_defs.md#meterusageresultresponsetypedef).
+Returns [MeterUsageResultTypeDef](./type_defs.md#meterusageresulttypedef).
 
 ### register_usage
 
@@ -165,7 +176,7 @@ Boto3 documentation:
 [MarketplaceMetering.Client.register_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.register_usage)
 
 Arguments mapping described in
-[RegisterUsageRequestTypeDef](./type_defs.md#registerusagerequesttypedef).
+[RegisterUsageRequestRequestTypeDef](./type_defs.md#registerusagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -174,7 +185,7 @@ Keyword-only arguments:
 - `Nonce`: `str`
 
 Returns
-[RegisterUsageResultResponseTypeDef](./type_defs.md#registerusageresultresponsetypedef).
+[RegisterUsageResultTypeDef](./type_defs.md#registerusageresulttypedef).
 
 ### resolve_customer
 
@@ -188,11 +199,11 @@ Boto3 documentation:
 [MarketplaceMetering.Client.resolve_customer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.resolve_customer)
 
 Arguments mapping described in
-[ResolveCustomerRequestTypeDef](./type_defs.md#resolvecustomerrequesttypedef).
+[ResolveCustomerRequestRequestTypeDef](./type_defs.md#resolvecustomerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RegistrationToken`: `str` *(required)*
 
 Returns
-[ResolveCustomerResultResponseTypeDef](./type_defs.md#resolvecustomerresultresponsetypedef).
+[ResolveCustomerResultTypeDef](./type_defs.md#resolvecustomerresulttypedef).

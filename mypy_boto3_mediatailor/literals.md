@@ -11,6 +11,7 @@ type annotations stubs module
   - [AccessTypeType](#accesstypetype)
   - [ChannelStateType](#channelstatetype)
   - [GetChannelSchedulePaginatorName](#getchannelschedulepaginatorname)
+  - [ListAlertsPaginatorName](#listalertspaginatorname)
   - [ListChannelsPaginatorName](#listchannelspaginatorname)
   - [ListPlaybackConfigurationsPaginatorName](#listplaybackconfigurationspaginatorname)
   - [ListSourceLocationsPaginatorName](#listsourcelocationspaginatorname)
@@ -53,6 +54,16 @@ from mypy_boto3_mediatailor.literals import GetChannelSchedulePaginatorName
 Values:
 
 - `get_channel_schedule`
+
+## ListAlertsPaginatorName
+
+```python
+from mypy_boto3_mediatailor.literals import ListAlertsPaginatorName
+```
+
+Values:
+
+- `list_alerts`
 
 ## ListChannelsPaginatorName
 

@@ -30,6 +30,7 @@ type annotations stubs module
   - [KeyLocationType](#keylocationtype)
   - [ModeType](#modetype)
   - [OrderType](#ordertype)
+  - [PrincipalMappingStatusType](#principalmappingstatustype)
   - [PrincipalTypeType](#principaltypetype)
   - [QueryIdentifiersEnclosingOptionType](#queryidentifiersenclosingoptiontype)
   - [QueryResultTypeType](#queryresulttypetype)
@@ -352,6 +353,20 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+## PrincipalMappingStatusType
+
+```python
+from mypy_boto3_kendra.literals import PrincipalMappingStatusType
+```
+
+Values:
+
+- `DELETED`
+- `DELETING`
+- `FAILED`
+- `PROCESSING`
+- `SUCCEEDED`
 
 ## PrincipalTypeType
 

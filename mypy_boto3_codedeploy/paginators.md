@@ -49,7 +49,7 @@ Arguments for `ListApplicationRevisionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationRevisionsPaginator.paginate` returns
-`Iterator`\[[ListApplicationRevisionsOutputResponseTypeDef](./type_defs.md#listapplicationrevisionsoutputresponsetypedef)\].
+`Iterator`\[[ListApplicationRevisionsOutputTypeDef](./type_defs.md#listapplicationrevisionsoutputtypedef)\].
 
 ## ListApplicationsPaginator
 
@@ -74,7 +74,7 @@ Arguments for `ListApplicationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationsPaginator.paginate` returns
-`Iterator`\[[ListApplicationsOutputResponseTypeDef](./type_defs.md#listapplicationsoutputresponsetypedef)\].
+`Iterator`\[[ListApplicationsOutputTypeDef](./type_defs.md#listapplicationsoutputtypedef)\].
 
 ## ListDeploymentConfigsPaginator
 
@@ -99,7 +99,7 @@ Arguments for `ListDeploymentConfigsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentConfigsPaginator.paginate` returns
-`Iterator`\[[ListDeploymentConfigsOutputResponseTypeDef](./type_defs.md#listdeploymentconfigsoutputresponsetypedef)\].
+`Iterator`\[[ListDeploymentConfigsOutputTypeDef](./type_defs.md#listdeploymentconfigsoutputtypedef)\].
 
 ## ListDeploymentGroupsPaginator
 
@@ -125,7 +125,7 @@ Arguments for `ListDeploymentGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentGroupsPaginator.paginate` returns
-`Iterator`\[[ListDeploymentGroupsOutputResponseTypeDef](./type_defs.md#listdeploymentgroupsoutputresponsetypedef)\].
+`Iterator`\[[ListDeploymentGroupsOutputTypeDef](./type_defs.md#listdeploymentgroupsoutputtypedef)\].
 
 ## ListDeploymentInstancesPaginator
 
@@ -155,7 +155,7 @@ Arguments for `ListDeploymentInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentInstancesPaginator.paginate` returns
-`Iterator`\[[ListDeploymentInstancesOutputResponseTypeDef](./type_defs.md#listdeploymentinstancesoutputresponsetypedef)\].
+`Iterator`\[[ListDeploymentInstancesOutputTypeDef](./type_defs.md#listdeploymentinstancesoutputtypedef)\].
 
 ## ListDeploymentTargetsPaginator
 
@@ -184,7 +184,7 @@ Arguments for `ListDeploymentTargetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentTargetsPaginator.paginate` returns
-`Iterator`\[[ListDeploymentTargetsOutputResponseTypeDef](./type_defs.md#listdeploymenttargetsoutputresponsetypedef)\].
+`Iterator`\[[ListDeploymentTargetsOutputTypeDef](./type_defs.md#listdeploymenttargetsoutputtypedef)\].
 
 ## ListDeploymentsPaginator
 
@@ -215,7 +215,7 @@ Arguments for `ListDeploymentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeploymentsPaginator.paginate` returns
-`Iterator`\[[ListDeploymentsOutputResponseTypeDef](./type_defs.md#listdeploymentsoutputresponsetypedef)\].
+`Iterator`\[[ListDeploymentsOutputTypeDef](./type_defs.md#listdeploymentsoutputtypedef)\].
 
 ## ListGitHubAccountTokenNamesPaginator
 
@@ -240,7 +240,7 @@ Arguments for `ListGitHubAccountTokenNamesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGitHubAccountTokenNamesPaginator.paginate` returns
-`Iterator`\[[ListGitHubAccountTokenNamesOutputResponseTypeDef](./type_defs.md#listgithubaccounttokennamesoutputresponsetypedef)\].
+`Iterator`\[[ListGitHubAccountTokenNamesOutputTypeDef](./type_defs.md#listgithubaccounttokennamesoutputtypedef)\].
 
 ## ListOnPremisesInstancesPaginator
 
@@ -268,4 +268,4 @@ Arguments for `ListOnPremisesInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOnPremisesInstancesPaginator.paginate` returns
-`Iterator`\[[ListOnPremisesInstancesOutputResponseTypeDef](./type_defs.md#listonpremisesinstancesoutputresponsetypedef)\].
+`Iterator`\[[ListOnPremisesInstancesOutputTypeDef](./type_defs.md#listonpremisesinstancesoutputtypedef)\].

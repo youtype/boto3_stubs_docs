@@ -14,85 +14,85 @@ type annotations stubs module
   - [BouncedRecipientInfoTypeDef](#bouncedrecipientinfotypedef)
   - [BulkEmailDestinationStatusTypeDef](#bulkemaildestinationstatustypedef)
   - [BulkEmailDestinationTypeDef](#bulkemaildestinationtypedef)
-  - [CloneReceiptRuleSetRequestTypeDef](#clonereceiptrulesetrequesttypedef)
+  - [CloneReceiptRuleSetRequestRequestTypeDef](#clonereceiptrulesetrequestrequesttypedef)
   - [CloudWatchDestinationTypeDef](#cloudwatchdestinationtypedef)
   - [CloudWatchDimensionConfigurationTypeDef](#cloudwatchdimensionconfigurationtypedef)
   - [ConfigurationSetTypeDef](#configurationsettypedef)
   - [ContentTypeDef](#contenttypedef)
-  - [CreateConfigurationSetEventDestinationRequestTypeDef](#createconfigurationseteventdestinationrequesttypedef)
-  - [CreateConfigurationSetRequestTypeDef](#createconfigurationsetrequesttypedef)
-  - [CreateConfigurationSetTrackingOptionsRequestTypeDef](#createconfigurationsettrackingoptionsrequesttypedef)
-  - [CreateCustomVerificationEmailTemplateRequestTypeDef](#createcustomverificationemailtemplaterequesttypedef)
-  - [CreateReceiptFilterRequestTypeDef](#createreceiptfilterrequesttypedef)
-  - [CreateReceiptRuleRequestTypeDef](#createreceiptrulerequesttypedef)
-  - [CreateReceiptRuleSetRequestTypeDef](#createreceiptrulesetrequesttypedef)
-  - [CreateTemplateRequestTypeDef](#createtemplaterequesttypedef)
+  - [CreateConfigurationSetEventDestinationRequestRequestTypeDef](#createconfigurationseteventdestinationrequestrequesttypedef)
+  - [CreateConfigurationSetRequestRequestTypeDef](#createconfigurationsetrequestrequesttypedef)
+  - [CreateConfigurationSetTrackingOptionsRequestRequestTypeDef](#createconfigurationsettrackingoptionsrequestrequesttypedef)
+  - [CreateCustomVerificationEmailTemplateRequestRequestTypeDef](#createcustomverificationemailtemplaterequestrequesttypedef)
+  - [CreateReceiptFilterRequestRequestTypeDef](#createreceiptfilterrequestrequesttypedef)
+  - [CreateReceiptRuleRequestRequestTypeDef](#createreceiptrulerequestrequesttypedef)
+  - [CreateReceiptRuleSetRequestRequestTypeDef](#createreceiptrulesetrequestrequesttypedef)
+  - [CreateTemplateRequestRequestTypeDef](#createtemplaterequestrequesttypedef)
   - [CustomVerificationEmailTemplateTypeDef](#customverificationemailtemplatetypedef)
-  - [DeleteConfigurationSetEventDestinationRequestTypeDef](#deleteconfigurationseteventdestinationrequesttypedef)
-  - [DeleteConfigurationSetRequestTypeDef](#deleteconfigurationsetrequesttypedef)
-  - [DeleteConfigurationSetTrackingOptionsRequestTypeDef](#deleteconfigurationsettrackingoptionsrequesttypedef)
-  - [DeleteCustomVerificationEmailTemplateRequestTypeDef](#deletecustomverificationemailtemplaterequesttypedef)
-  - [DeleteIdentityPolicyRequestTypeDef](#deleteidentitypolicyrequesttypedef)
-  - [DeleteIdentityRequestTypeDef](#deleteidentityrequesttypedef)
-  - [DeleteReceiptFilterRequestTypeDef](#deletereceiptfilterrequesttypedef)
-  - [DeleteReceiptRuleRequestTypeDef](#deletereceiptrulerequesttypedef)
-  - [DeleteReceiptRuleSetRequestTypeDef](#deletereceiptrulesetrequesttypedef)
-  - [DeleteTemplateRequestTypeDef](#deletetemplaterequesttypedef)
-  - [DeleteVerifiedEmailAddressRequestTypeDef](#deleteverifiedemailaddressrequesttypedef)
+  - [DeleteConfigurationSetEventDestinationRequestRequestTypeDef](#deleteconfigurationseteventdestinationrequestrequesttypedef)
+  - [DeleteConfigurationSetRequestRequestTypeDef](#deleteconfigurationsetrequestrequesttypedef)
+  - [DeleteConfigurationSetTrackingOptionsRequestRequestTypeDef](#deleteconfigurationsettrackingoptionsrequestrequesttypedef)
+  - [DeleteCustomVerificationEmailTemplateRequestRequestTypeDef](#deletecustomverificationemailtemplaterequestrequesttypedef)
+  - [DeleteIdentityPolicyRequestRequestTypeDef](#deleteidentitypolicyrequestrequesttypedef)
+  - [DeleteIdentityRequestRequestTypeDef](#deleteidentityrequestrequesttypedef)
+  - [DeleteReceiptFilterRequestRequestTypeDef](#deletereceiptfilterrequestrequesttypedef)
+  - [DeleteReceiptRuleRequestRequestTypeDef](#deletereceiptrulerequestrequesttypedef)
+  - [DeleteReceiptRuleSetRequestRequestTypeDef](#deletereceiptrulesetrequestrequesttypedef)
+  - [DeleteTemplateRequestRequestTypeDef](#deletetemplaterequestrequesttypedef)
+  - [DeleteVerifiedEmailAddressRequestRequestTypeDef](#deleteverifiedemailaddressrequestrequesttypedef)
   - [DeliveryOptionsTypeDef](#deliveryoptionstypedef)
-  - [DescribeActiveReceiptRuleSetResponseResponseTypeDef](#describeactivereceiptrulesetresponseresponsetypedef)
-  - [DescribeConfigurationSetRequestTypeDef](#describeconfigurationsetrequesttypedef)
-  - [DescribeConfigurationSetResponseResponseTypeDef](#describeconfigurationsetresponseresponsetypedef)
-  - [DescribeReceiptRuleRequestTypeDef](#describereceiptrulerequesttypedef)
-  - [DescribeReceiptRuleResponseResponseTypeDef](#describereceiptruleresponseresponsetypedef)
-  - [DescribeReceiptRuleSetRequestTypeDef](#describereceiptrulesetrequesttypedef)
-  - [DescribeReceiptRuleSetResponseResponseTypeDef](#describereceiptrulesetresponseresponsetypedef)
+  - [DescribeActiveReceiptRuleSetResponseTypeDef](#describeactivereceiptrulesetresponsetypedef)
+  - [DescribeConfigurationSetRequestRequestTypeDef](#describeconfigurationsetrequestrequesttypedef)
+  - [DescribeConfigurationSetResponseTypeDef](#describeconfigurationsetresponsetypedef)
+  - [DescribeReceiptRuleRequestRequestTypeDef](#describereceiptrulerequestrequesttypedef)
+  - [DescribeReceiptRuleResponseTypeDef](#describereceiptruleresponsetypedef)
+  - [DescribeReceiptRuleSetRequestRequestTypeDef](#describereceiptrulesetrequestrequesttypedef)
+  - [DescribeReceiptRuleSetResponseTypeDef](#describereceiptrulesetresponsetypedef)
   - [DestinationTypeDef](#destinationtypedef)
   - [EventDestinationTypeDef](#eventdestinationtypedef)
   - [ExtensionFieldTypeDef](#extensionfieldtypedef)
-  - [GetAccountSendingEnabledResponseResponseTypeDef](#getaccountsendingenabledresponseresponsetypedef)
-  - [GetCustomVerificationEmailTemplateRequestTypeDef](#getcustomverificationemailtemplaterequesttypedef)
-  - [GetCustomVerificationEmailTemplateResponseResponseTypeDef](#getcustomverificationemailtemplateresponseresponsetypedef)
-  - [GetIdentityDkimAttributesRequestTypeDef](#getidentitydkimattributesrequesttypedef)
-  - [GetIdentityDkimAttributesResponseResponseTypeDef](#getidentitydkimattributesresponseresponsetypedef)
-  - [GetIdentityMailFromDomainAttributesRequestTypeDef](#getidentitymailfromdomainattributesrequesttypedef)
-  - [GetIdentityMailFromDomainAttributesResponseResponseTypeDef](#getidentitymailfromdomainattributesresponseresponsetypedef)
-  - [GetIdentityNotificationAttributesRequestTypeDef](#getidentitynotificationattributesrequesttypedef)
-  - [GetIdentityNotificationAttributesResponseResponseTypeDef](#getidentitynotificationattributesresponseresponsetypedef)
-  - [GetIdentityPoliciesRequestTypeDef](#getidentitypoliciesrequesttypedef)
-  - [GetIdentityPoliciesResponseResponseTypeDef](#getidentitypoliciesresponseresponsetypedef)
-  - [GetIdentityVerificationAttributesRequestTypeDef](#getidentityverificationattributesrequesttypedef)
-  - [GetIdentityVerificationAttributesResponseResponseTypeDef](#getidentityverificationattributesresponseresponsetypedef)
-  - [GetSendQuotaResponseResponseTypeDef](#getsendquotaresponseresponsetypedef)
-  - [GetSendStatisticsResponseResponseTypeDef](#getsendstatisticsresponseresponsetypedef)
-  - [GetTemplateRequestTypeDef](#gettemplaterequesttypedef)
-  - [GetTemplateResponseResponseTypeDef](#gettemplateresponseresponsetypedef)
+  - [GetAccountSendingEnabledResponseTypeDef](#getaccountsendingenabledresponsetypedef)
+  - [GetCustomVerificationEmailTemplateRequestRequestTypeDef](#getcustomverificationemailtemplaterequestrequesttypedef)
+  - [GetCustomVerificationEmailTemplateResponseTypeDef](#getcustomverificationemailtemplateresponsetypedef)
+  - [GetIdentityDkimAttributesRequestRequestTypeDef](#getidentitydkimattributesrequestrequesttypedef)
+  - [GetIdentityDkimAttributesResponseTypeDef](#getidentitydkimattributesresponsetypedef)
+  - [GetIdentityMailFromDomainAttributesRequestRequestTypeDef](#getidentitymailfromdomainattributesrequestrequesttypedef)
+  - [GetIdentityMailFromDomainAttributesResponseTypeDef](#getidentitymailfromdomainattributesresponsetypedef)
+  - [GetIdentityNotificationAttributesRequestRequestTypeDef](#getidentitynotificationattributesrequestrequesttypedef)
+  - [GetIdentityNotificationAttributesResponseTypeDef](#getidentitynotificationattributesresponsetypedef)
+  - [GetIdentityPoliciesRequestRequestTypeDef](#getidentitypoliciesrequestrequesttypedef)
+  - [GetIdentityPoliciesResponseTypeDef](#getidentitypoliciesresponsetypedef)
+  - [GetIdentityVerificationAttributesRequestRequestTypeDef](#getidentityverificationattributesrequestrequesttypedef)
+  - [GetIdentityVerificationAttributesResponseTypeDef](#getidentityverificationattributesresponsetypedef)
+  - [GetSendQuotaResponseTypeDef](#getsendquotaresponsetypedef)
+  - [GetSendStatisticsResponseTypeDef](#getsendstatisticsresponsetypedef)
+  - [GetTemplateRequestRequestTypeDef](#gettemplaterequestrequesttypedef)
+  - [GetTemplateResponseTypeDef](#gettemplateresponsetypedef)
   - [IdentityDkimAttributesTypeDef](#identitydkimattributestypedef)
   - [IdentityMailFromDomainAttributesTypeDef](#identitymailfromdomainattributestypedef)
   - [IdentityNotificationAttributesTypeDef](#identitynotificationattributestypedef)
   - [IdentityVerificationAttributesTypeDef](#identityverificationattributestypedef)
   - [KinesisFirehoseDestinationTypeDef](#kinesisfirehosedestinationtypedef)
   - [LambdaActionTypeDef](#lambdaactiontypedef)
-  - [ListConfigurationSetsRequestTypeDef](#listconfigurationsetsrequesttypedef)
-  - [ListConfigurationSetsResponseResponseTypeDef](#listconfigurationsetsresponseresponsetypedef)
-  - [ListCustomVerificationEmailTemplatesRequestTypeDef](#listcustomverificationemailtemplatesrequesttypedef)
-  - [ListCustomVerificationEmailTemplatesResponseResponseTypeDef](#listcustomverificationemailtemplatesresponseresponsetypedef)
-  - [ListIdentitiesRequestTypeDef](#listidentitiesrequesttypedef)
-  - [ListIdentitiesResponseResponseTypeDef](#listidentitiesresponseresponsetypedef)
-  - [ListIdentityPoliciesRequestTypeDef](#listidentitypoliciesrequesttypedef)
-  - [ListIdentityPoliciesResponseResponseTypeDef](#listidentitypoliciesresponseresponsetypedef)
-  - [ListReceiptFiltersResponseResponseTypeDef](#listreceiptfiltersresponseresponsetypedef)
-  - [ListReceiptRuleSetsRequestTypeDef](#listreceiptrulesetsrequesttypedef)
-  - [ListReceiptRuleSetsResponseResponseTypeDef](#listreceiptrulesetsresponseresponsetypedef)
-  - [ListTemplatesRequestTypeDef](#listtemplatesrequesttypedef)
-  - [ListTemplatesResponseResponseTypeDef](#listtemplatesresponseresponsetypedef)
-  - [ListVerifiedEmailAddressesResponseResponseTypeDef](#listverifiedemailaddressesresponseresponsetypedef)
+  - [ListConfigurationSetsRequestRequestTypeDef](#listconfigurationsetsrequestrequesttypedef)
+  - [ListConfigurationSetsResponseTypeDef](#listconfigurationsetsresponsetypedef)
+  - [ListCustomVerificationEmailTemplatesRequestRequestTypeDef](#listcustomverificationemailtemplatesrequestrequesttypedef)
+  - [ListCustomVerificationEmailTemplatesResponseTypeDef](#listcustomverificationemailtemplatesresponsetypedef)
+  - [ListIdentitiesRequestRequestTypeDef](#listidentitiesrequestrequesttypedef)
+  - [ListIdentitiesResponseTypeDef](#listidentitiesresponsetypedef)
+  - [ListIdentityPoliciesRequestRequestTypeDef](#listidentitypoliciesrequestrequesttypedef)
+  - [ListIdentityPoliciesResponseTypeDef](#listidentitypoliciesresponsetypedef)
+  - [ListReceiptFiltersResponseTypeDef](#listreceiptfiltersresponsetypedef)
+  - [ListReceiptRuleSetsRequestRequestTypeDef](#listreceiptrulesetsrequestrequesttypedef)
+  - [ListReceiptRuleSetsResponseTypeDef](#listreceiptrulesetsresponsetypedef)
+  - [ListTemplatesRequestRequestTypeDef](#listtemplatesrequestrequesttypedef)
+  - [ListTemplatesResponseTypeDef](#listtemplatesresponsetypedef)
+  - [ListVerifiedEmailAddressesResponseTypeDef](#listverifiedemailaddressesresponsetypedef)
   - [MessageDsnTypeDef](#messagedsntypedef)
   - [MessageTagTypeDef](#messagetagtypedef)
   - [MessageTypeDef](#messagetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutConfigurationSetDeliveryOptionsRequestTypeDef](#putconfigurationsetdeliveryoptionsrequesttypedef)
-  - [PutIdentityPolicyRequestTypeDef](#putidentitypolicyrequesttypedef)
+  - [PutConfigurationSetDeliveryOptionsRequestRequestTypeDef](#putconfigurationsetdeliveryoptionsrequestrequesttypedef)
+  - [PutIdentityPolicyRequestRequestTypeDef](#putidentitypolicyrequestrequesttypedef)
   - [RawMessageTypeDef](#rawmessagetypedef)
   - [ReceiptActionTypeDef](#receiptactiontypedef)
   - [ReceiptFilterTypeDef](#receiptfiltertypedef)
@@ -100,52 +100,52 @@ type annotations stubs module
   - [ReceiptRuleSetMetadataTypeDef](#receiptrulesetmetadatatypedef)
   - [ReceiptRuleTypeDef](#receiptruletypedef)
   - [RecipientDsnFieldsTypeDef](#recipientdsnfieldstypedef)
-  - [ReorderReceiptRuleSetRequestTypeDef](#reorderreceiptrulesetrequesttypedef)
+  - [ReorderReceiptRuleSetRequestRequestTypeDef](#reorderreceiptrulesetrequestrequesttypedef)
   - [ReputationOptionsTypeDef](#reputationoptionstypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3ActionTypeDef](#s3actiontypedef)
   - [SNSActionTypeDef](#snsactiontypedef)
   - [SNSDestinationTypeDef](#snsdestinationtypedef)
-  - [SendBounceRequestTypeDef](#sendbouncerequesttypedef)
-  - [SendBounceResponseResponseTypeDef](#sendbounceresponseresponsetypedef)
-  - [SendBulkTemplatedEmailRequestTypeDef](#sendbulktemplatedemailrequesttypedef)
-  - [SendBulkTemplatedEmailResponseResponseTypeDef](#sendbulktemplatedemailresponseresponsetypedef)
-  - [SendCustomVerificationEmailRequestTypeDef](#sendcustomverificationemailrequesttypedef)
-  - [SendCustomVerificationEmailResponseResponseTypeDef](#sendcustomverificationemailresponseresponsetypedef)
+  - [SendBounceRequestRequestTypeDef](#sendbouncerequestrequesttypedef)
+  - [SendBounceResponseTypeDef](#sendbounceresponsetypedef)
+  - [SendBulkTemplatedEmailRequestRequestTypeDef](#sendbulktemplatedemailrequestrequesttypedef)
+  - [SendBulkTemplatedEmailResponseTypeDef](#sendbulktemplatedemailresponsetypedef)
+  - [SendCustomVerificationEmailRequestRequestTypeDef](#sendcustomverificationemailrequestrequesttypedef)
+  - [SendCustomVerificationEmailResponseTypeDef](#sendcustomverificationemailresponsetypedef)
   - [SendDataPointTypeDef](#senddatapointtypedef)
-  - [SendEmailRequestTypeDef](#sendemailrequesttypedef)
-  - [SendEmailResponseResponseTypeDef](#sendemailresponseresponsetypedef)
-  - [SendRawEmailRequestTypeDef](#sendrawemailrequesttypedef)
-  - [SendRawEmailResponseResponseTypeDef](#sendrawemailresponseresponsetypedef)
-  - [SendTemplatedEmailRequestTypeDef](#sendtemplatedemailrequesttypedef)
-  - [SendTemplatedEmailResponseResponseTypeDef](#sendtemplatedemailresponseresponsetypedef)
-  - [SetActiveReceiptRuleSetRequestTypeDef](#setactivereceiptrulesetrequesttypedef)
-  - [SetIdentityDkimEnabledRequestTypeDef](#setidentitydkimenabledrequesttypedef)
-  - [SetIdentityFeedbackForwardingEnabledRequestTypeDef](#setidentityfeedbackforwardingenabledrequesttypedef)
-  - [SetIdentityHeadersInNotificationsEnabledRequestTypeDef](#setidentityheadersinnotificationsenabledrequesttypedef)
-  - [SetIdentityMailFromDomainRequestTypeDef](#setidentitymailfromdomainrequesttypedef)
-  - [SetIdentityNotificationTopicRequestTypeDef](#setidentitynotificationtopicrequesttypedef)
-  - [SetReceiptRulePositionRequestTypeDef](#setreceiptrulepositionrequesttypedef)
+  - [SendEmailRequestRequestTypeDef](#sendemailrequestrequesttypedef)
+  - [SendEmailResponseTypeDef](#sendemailresponsetypedef)
+  - [SendRawEmailRequestRequestTypeDef](#sendrawemailrequestrequesttypedef)
+  - [SendRawEmailResponseTypeDef](#sendrawemailresponsetypedef)
+  - [SendTemplatedEmailRequestRequestTypeDef](#sendtemplatedemailrequestrequesttypedef)
+  - [SendTemplatedEmailResponseTypeDef](#sendtemplatedemailresponsetypedef)
+  - [SetActiveReceiptRuleSetRequestRequestTypeDef](#setactivereceiptrulesetrequestrequesttypedef)
+  - [SetIdentityDkimEnabledRequestRequestTypeDef](#setidentitydkimenabledrequestrequesttypedef)
+  - [SetIdentityFeedbackForwardingEnabledRequestRequestTypeDef](#setidentityfeedbackforwardingenabledrequestrequesttypedef)
+  - [SetIdentityHeadersInNotificationsEnabledRequestRequestTypeDef](#setidentityheadersinnotificationsenabledrequestrequesttypedef)
+  - [SetIdentityMailFromDomainRequestRequestTypeDef](#setidentitymailfromdomainrequestrequesttypedef)
+  - [SetIdentityNotificationTopicRequestRequestTypeDef](#setidentitynotificationtopicrequestrequesttypedef)
+  - [SetReceiptRulePositionRequestRequestTypeDef](#setreceiptrulepositionrequestrequesttypedef)
   - [StopActionTypeDef](#stopactiontypedef)
   - [TemplateMetadataTypeDef](#templatemetadatatypedef)
   - [TemplateTypeDef](#templatetypedef)
-  - [TestRenderTemplateRequestTypeDef](#testrendertemplaterequesttypedef)
-  - [TestRenderTemplateResponseResponseTypeDef](#testrendertemplateresponseresponsetypedef)
+  - [TestRenderTemplateRequestRequestTypeDef](#testrendertemplaterequestrequesttypedef)
+  - [TestRenderTemplateResponseTypeDef](#testrendertemplateresponsetypedef)
   - [TrackingOptionsTypeDef](#trackingoptionstypedef)
-  - [UpdateAccountSendingEnabledRequestTypeDef](#updateaccountsendingenabledrequesttypedef)
-  - [UpdateConfigurationSetEventDestinationRequestTypeDef](#updateconfigurationseteventdestinationrequesttypedef)
-  - [UpdateConfigurationSetReputationMetricsEnabledRequestTypeDef](#updateconfigurationsetreputationmetricsenabledrequesttypedef)
-  - [UpdateConfigurationSetSendingEnabledRequestTypeDef](#updateconfigurationsetsendingenabledrequesttypedef)
-  - [UpdateConfigurationSetTrackingOptionsRequestTypeDef](#updateconfigurationsettrackingoptionsrequesttypedef)
-  - [UpdateCustomVerificationEmailTemplateRequestTypeDef](#updatecustomverificationemailtemplaterequesttypedef)
-  - [UpdateReceiptRuleRequestTypeDef](#updatereceiptrulerequesttypedef)
-  - [UpdateTemplateRequestTypeDef](#updatetemplaterequesttypedef)
-  - [VerifyDomainDkimRequestTypeDef](#verifydomaindkimrequesttypedef)
-  - [VerifyDomainDkimResponseResponseTypeDef](#verifydomaindkimresponseresponsetypedef)
-  - [VerifyDomainIdentityRequestTypeDef](#verifydomainidentityrequesttypedef)
-  - [VerifyDomainIdentityResponseResponseTypeDef](#verifydomainidentityresponseresponsetypedef)
-  - [VerifyEmailAddressRequestTypeDef](#verifyemailaddressrequesttypedef)
-  - [VerifyEmailIdentityRequestTypeDef](#verifyemailidentityrequesttypedef)
+  - [UpdateAccountSendingEnabledRequestRequestTypeDef](#updateaccountsendingenabledrequestrequesttypedef)
+  - [UpdateConfigurationSetEventDestinationRequestRequestTypeDef](#updateconfigurationseteventdestinationrequestrequesttypedef)
+  - [UpdateConfigurationSetReputationMetricsEnabledRequestRequestTypeDef](#updateconfigurationsetreputationmetricsenabledrequestrequesttypedef)
+  - [UpdateConfigurationSetSendingEnabledRequestRequestTypeDef](#updateconfigurationsetsendingenabledrequestrequesttypedef)
+  - [UpdateConfigurationSetTrackingOptionsRequestRequestTypeDef](#updateconfigurationsettrackingoptionsrequestrequesttypedef)
+  - [UpdateCustomVerificationEmailTemplateRequestRequestTypeDef](#updatecustomverificationemailtemplaterequestrequesttypedef)
+  - [UpdateReceiptRuleRequestRequestTypeDef](#updatereceiptrulerequestrequesttypedef)
+  - [UpdateTemplateRequestRequestTypeDef](#updatetemplaterequestrequesttypedef)
+  - [VerifyDomainDkimRequestRequestTypeDef](#verifydomaindkimrequestrequesttypedef)
+  - [VerifyDomainDkimResponseTypeDef](#verifydomaindkimresponsetypedef)
+  - [VerifyDomainIdentityRequestRequestTypeDef](#verifydomainidentityrequestrequesttypedef)
+  - [VerifyDomainIdentityResponseTypeDef](#verifydomainidentityresponsetypedef)
+  - [VerifyEmailAddressRequestRequestTypeDef](#verifyemailaddressrequestrequesttypedef)
+  - [VerifyEmailIdentityRequestRequestTypeDef](#verifyemailidentityrequestrequesttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WorkmailActionTypeDef](#workmailactiontypedef)
 
@@ -233,10 +233,10 @@ Optional fields:
   `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ReplacementTemplateData`: `str`
 
-## CloneReceiptRuleSetRequestTypeDef
+## CloneReceiptRuleSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import CloneReceiptRuleSetRequestTypeDef
+from mypy_boto3_ses.type_defs import CloneReceiptRuleSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -292,10 +292,10 @@ Optional fields:
 
 - `Charset`: `str`
 
-## CreateConfigurationSetEventDestinationRequestTypeDef
+## CreateConfigurationSetEventDestinationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import CreateConfigurationSetEventDestinationRequestTypeDef
+from mypy_boto3_ses.type_defs import CreateConfigurationSetEventDestinationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -304,10 +304,10 @@ Required fields:
 - `EventDestination`:
   [EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef)
 
-## CreateConfigurationSetRequestTypeDef
+## CreateConfigurationSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import CreateConfigurationSetRequestTypeDef
+from mypy_boto3_ses.type_defs import CreateConfigurationSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -315,10 +315,10 @@ Required fields:
 - `ConfigurationSet`:
   [ConfigurationSetTypeDef](./type_defs.md#configurationsettypedef)
 
-## CreateConfigurationSetTrackingOptionsRequestTypeDef
+## CreateConfigurationSetTrackingOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import CreateConfigurationSetTrackingOptionsRequestTypeDef
+from mypy_boto3_ses.type_defs import CreateConfigurationSetTrackingOptionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -327,10 +327,10 @@ Required fields:
 - `TrackingOptions`:
   [TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef)
 
-## CreateCustomVerificationEmailTemplateRequestTypeDef
+## CreateCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import CreateCustomVerificationEmailTemplateRequestTypeDef
+from mypy_boto3_ses.type_defs import CreateCustomVerificationEmailTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -342,20 +342,20 @@ Required fields:
 - `SuccessRedirectionURL`: `str`
 - `FailureRedirectionURL`: `str`
 
-## CreateReceiptFilterRequestTypeDef
+## CreateReceiptFilterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import CreateReceiptFilterRequestTypeDef
+from mypy_boto3_ses.type_defs import CreateReceiptFilterRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Filter`: [ReceiptFilterTypeDef](./type_defs.md#receiptfiltertypedef)
 
-## CreateReceiptRuleRequestTypeDef
+## CreateReceiptRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import CreateReceiptRuleRequestTypeDef
+from mypy_boto3_ses.type_defs import CreateReceiptRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -367,20 +367,20 @@ Optional fields:
 
 - `After`: `str`
 
-## CreateReceiptRuleSetRequestTypeDef
+## CreateReceiptRuleSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import CreateReceiptRuleSetRequestTypeDef
+from mypy_boto3_ses.type_defs import CreateReceiptRuleSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RuleSetName`: `str`
 
-## CreateTemplateRequestTypeDef
+## CreateTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import CreateTemplateRequestTypeDef
+from mypy_boto3_ses.type_defs import CreateTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -401,10 +401,10 @@ Optional fields:
 - `SuccessRedirectionURL`: `str`
 - `FailureRedirectionURL`: `str`
 
-## DeleteConfigurationSetEventDestinationRequestTypeDef
+## DeleteConfigurationSetEventDestinationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DeleteConfigurationSetEventDestinationRequestTypeDef
+from mypy_boto3_ses.type_defs import DeleteConfigurationSetEventDestinationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -412,40 +412,40 @@ Required fields:
 - `ConfigurationSetName`: `str`
 - `EventDestinationName`: `str`
 
-## DeleteConfigurationSetRequestTypeDef
+## DeleteConfigurationSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DeleteConfigurationSetRequestTypeDef
+from mypy_boto3_ses.type_defs import DeleteConfigurationSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ConfigurationSetName`: `str`
 
-## DeleteConfigurationSetTrackingOptionsRequestTypeDef
+## DeleteConfigurationSetTrackingOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DeleteConfigurationSetTrackingOptionsRequestTypeDef
+from mypy_boto3_ses.type_defs import DeleteConfigurationSetTrackingOptionsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ConfigurationSetName`: `str`
 
-## DeleteCustomVerificationEmailTemplateRequestTypeDef
+## DeleteCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DeleteCustomVerificationEmailTemplateRequestTypeDef
+from mypy_boto3_ses.type_defs import DeleteCustomVerificationEmailTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TemplateName`: `str`
 
-## DeleteIdentityPolicyRequestTypeDef
+## DeleteIdentityPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DeleteIdentityPolicyRequestTypeDef
+from mypy_boto3_ses.type_defs import DeleteIdentityPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -453,30 +453,30 @@ Required fields:
 - `Identity`: `str`
 - `PolicyName`: `str`
 
-## DeleteIdentityRequestTypeDef
+## DeleteIdentityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DeleteIdentityRequestTypeDef
+from mypy_boto3_ses.type_defs import DeleteIdentityRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Identity`: `str`
 
-## DeleteReceiptFilterRequestTypeDef
+## DeleteReceiptFilterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DeleteReceiptFilterRequestTypeDef
+from mypy_boto3_ses.type_defs import DeleteReceiptFilterRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FilterName`: `str`
 
-## DeleteReceiptRuleRequestTypeDef
+## DeleteReceiptRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DeleteReceiptRuleRequestTypeDef
+from mypy_boto3_ses.type_defs import DeleteReceiptRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -484,30 +484,30 @@ Required fields:
 - `RuleSetName`: `str`
 - `RuleName`: `str`
 
-## DeleteReceiptRuleSetRequestTypeDef
+## DeleteReceiptRuleSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DeleteReceiptRuleSetRequestTypeDef
+from mypy_boto3_ses.type_defs import DeleteReceiptRuleSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RuleSetName`: `str`
 
-## DeleteTemplateRequestTypeDef
+## DeleteTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DeleteTemplateRequestTypeDef
+from mypy_boto3_ses.type_defs import DeleteTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TemplateName`: `str`
 
-## DeleteVerifiedEmailAddressRequestTypeDef
+## DeleteVerifiedEmailAddressRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DeleteVerifiedEmailAddressRequestTypeDef
+from mypy_boto3_ses.type_defs import DeleteVerifiedEmailAddressRequestRequestTypeDef
 ```
 
 Required fields:
@@ -524,10 +524,10 @@ Optional fields:
 
 - `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
 
-## DescribeActiveReceiptRuleSetResponseResponseTypeDef
+## DescribeActiveReceiptRuleSetResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DescribeActiveReceiptRuleSetResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import DescribeActiveReceiptRuleSetResponseTypeDef
 ```
 
 Required fields:
@@ -538,10 +538,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConfigurationSetRequestTypeDef
+## DescribeConfigurationSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DescribeConfigurationSetRequestTypeDef
+from mypy_boto3_ses.type_defs import DescribeConfigurationSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -553,10 +553,10 @@ Optional fields:
 - `ConfigurationSetAttributeNames`:
   `List`\[[ConfigurationSetAttributeType](./literals.md#configurationsetattributetype)\]
 
-## DescribeConfigurationSetResponseResponseTypeDef
+## DescribeConfigurationSetResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DescribeConfigurationSetResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import DescribeConfigurationSetResponseTypeDef
 ```
 
 Required fields:
@@ -574,10 +574,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReceiptRuleRequestTypeDef
+## DescribeReceiptRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DescribeReceiptRuleRequestTypeDef
+from mypy_boto3_ses.type_defs import DescribeReceiptRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -585,10 +585,10 @@ Required fields:
 - `RuleSetName`: `str`
 - `RuleName`: `str`
 
-## DescribeReceiptRuleResponseResponseTypeDef
+## DescribeReceiptRuleResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DescribeReceiptRuleResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import DescribeReceiptRuleResponseTypeDef
 ```
 
 Required fields:
@@ -597,20 +597,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReceiptRuleSetRequestTypeDef
+## DescribeReceiptRuleSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DescribeReceiptRuleSetRequestTypeDef
+from mypy_boto3_ses.type_defs import DescribeReceiptRuleSetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RuleSetName`: `str`
 
-## DescribeReceiptRuleSetResponseResponseTypeDef
+## DescribeReceiptRuleSetResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import DescribeReceiptRuleSetResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import DescribeReceiptRuleSetResponseTypeDef
 ```
 
 Required fields:
@@ -665,10 +665,10 @@ Required fields:
 - `Name`: `str`
 - `Value`: `str`
 
-## GetAccountSendingEnabledResponseResponseTypeDef
+## GetAccountSendingEnabledResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetAccountSendingEnabledResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import GetAccountSendingEnabledResponseTypeDef
 ```
 
 Required fields:
@@ -677,20 +677,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCustomVerificationEmailTemplateRequestTypeDef
+## GetCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetCustomVerificationEmailTemplateRequestTypeDef
+from mypy_boto3_ses.type_defs import GetCustomVerificationEmailTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TemplateName`: `str`
 
-## GetCustomVerificationEmailTemplateResponseResponseTypeDef
+## GetCustomVerificationEmailTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetCustomVerificationEmailTemplateResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import GetCustomVerificationEmailTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -704,20 +704,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetIdentityDkimAttributesRequestTypeDef
+## GetIdentityDkimAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetIdentityDkimAttributesRequestTypeDef
+from mypy_boto3_ses.type_defs import GetIdentityDkimAttributesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Identities`: `List`\[`str`\]
 
-## GetIdentityDkimAttributesResponseResponseTypeDef
+## GetIdentityDkimAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetIdentityDkimAttributesResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import GetIdentityDkimAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -727,20 +727,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetIdentityMailFromDomainAttributesRequestTypeDef
+## GetIdentityMailFromDomainAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetIdentityMailFromDomainAttributesRequestTypeDef
+from mypy_boto3_ses.type_defs import GetIdentityMailFromDomainAttributesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Identities`: `List`\[`str`\]
 
-## GetIdentityMailFromDomainAttributesResponseResponseTypeDef
+## GetIdentityMailFromDomainAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetIdentityMailFromDomainAttributesResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import GetIdentityMailFromDomainAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -750,20 +750,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetIdentityNotificationAttributesRequestTypeDef
+## GetIdentityNotificationAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetIdentityNotificationAttributesRequestTypeDef
+from mypy_boto3_ses.type_defs import GetIdentityNotificationAttributesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Identities`: `List`\[`str`\]
 
-## GetIdentityNotificationAttributesResponseResponseTypeDef
+## GetIdentityNotificationAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetIdentityNotificationAttributesResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import GetIdentityNotificationAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -773,10 +773,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetIdentityPoliciesRequestTypeDef
+## GetIdentityPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetIdentityPoliciesRequestTypeDef
+from mypy_boto3_ses.type_defs import GetIdentityPoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -784,10 +784,10 @@ Required fields:
 - `Identity`: `str`
 - `PolicyNames`: `List`\[`str`\]
 
-## GetIdentityPoliciesResponseResponseTypeDef
+## GetIdentityPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetIdentityPoliciesResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import GetIdentityPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -796,20 +796,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetIdentityVerificationAttributesRequestTypeDef
+## GetIdentityVerificationAttributesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetIdentityVerificationAttributesRequestTypeDef
+from mypy_boto3_ses.type_defs import GetIdentityVerificationAttributesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Identities`: `List`\[`str`\]
 
-## GetIdentityVerificationAttributesResponseResponseTypeDef
+## GetIdentityVerificationAttributesResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetIdentityVerificationAttributesResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import GetIdentityVerificationAttributesResponseTypeDef
 ```
 
 Required fields:
@@ -819,10 +819,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSendQuotaResponseResponseTypeDef
+## GetSendQuotaResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetSendQuotaResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import GetSendQuotaResponseTypeDef
 ```
 
 Required fields:
@@ -833,10 +833,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSendStatisticsResponseResponseTypeDef
+## GetSendStatisticsResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetSendStatisticsResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import GetSendStatisticsResponseTypeDef
 ```
 
 Required fields:
@@ -846,20 +846,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetTemplateRequestTypeDef
+## GetTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetTemplateRequestTypeDef
+from mypy_boto3_ses.type_defs import GetTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `TemplateName`: `str`
 
-## GetTemplateResponseResponseTypeDef
+## GetTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import GetTemplateResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import GetTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -958,10 +958,10 @@ Optional fields:
 - `TopicArn`: `str`
 - `InvocationType`: [InvocationTypeType](./literals.md#invocationtypetype)
 
-## ListConfigurationSetsRequestTypeDef
+## ListConfigurationSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListConfigurationSetsRequestTypeDef
+from mypy_boto3_ses.type_defs import ListConfigurationSetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -969,10 +969,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxItems`: `int`
 
-## ListConfigurationSetsResponseResponseTypeDef
+## ListConfigurationSetsResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListConfigurationSetsResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import ListConfigurationSetsResponseTypeDef
 ```
 
 Required fields:
@@ -983,10 +983,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListCustomVerificationEmailTemplatesRequestTypeDef
+## ListCustomVerificationEmailTemplatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListCustomVerificationEmailTemplatesRequestTypeDef
+from mypy_boto3_ses.type_defs import ListCustomVerificationEmailTemplatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -994,10 +994,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListCustomVerificationEmailTemplatesResponseResponseTypeDef
+## ListCustomVerificationEmailTemplatesResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListCustomVerificationEmailTemplatesResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import ListCustomVerificationEmailTemplatesResponseTypeDef
 ```
 
 Required fields:
@@ -1008,10 +1008,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIdentitiesRequestTypeDef
+## ListIdentitiesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListIdentitiesRequestTypeDef
+from mypy_boto3_ses.type_defs import ListIdentitiesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1020,10 +1020,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxItems`: `int`
 
-## ListIdentitiesResponseResponseTypeDef
+## ListIdentitiesResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListIdentitiesResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import ListIdentitiesResponseTypeDef
 ```
 
 Required fields:
@@ -1033,20 +1033,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIdentityPoliciesRequestTypeDef
+## ListIdentityPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListIdentityPoliciesRequestTypeDef
+from mypy_boto3_ses.type_defs import ListIdentityPoliciesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Identity`: `str`
 
-## ListIdentityPoliciesResponseResponseTypeDef
+## ListIdentityPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListIdentityPoliciesResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import ListIdentityPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -1055,10 +1055,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReceiptFiltersResponseResponseTypeDef
+## ListReceiptFiltersResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListReceiptFiltersResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import ListReceiptFiltersResponseTypeDef
 ```
 
 Required fields:
@@ -1068,20 +1068,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListReceiptRuleSetsRequestTypeDef
+## ListReceiptRuleSetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListReceiptRuleSetsRequestTypeDef
+from mypy_boto3_ses.type_defs import ListReceiptRuleSetsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `NextToken`: `str`
 
-## ListReceiptRuleSetsResponseResponseTypeDef
+## ListReceiptRuleSetsResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListReceiptRuleSetsResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import ListReceiptRuleSetsResponseTypeDef
 ```
 
 Required fields:
@@ -1092,10 +1092,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTemplatesRequestTypeDef
+## ListTemplatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListTemplatesRequestTypeDef
+from mypy_boto3_ses.type_defs import ListTemplatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1103,10 +1103,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxItems`: `int`
 
-## ListTemplatesResponseResponseTypeDef
+## ListTemplatesResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListTemplatesResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import ListTemplatesResponseTypeDef
 ```
 
 Required fields:
@@ -1117,10 +1117,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListVerifiedEmailAddressesResponseResponseTypeDef
+## ListVerifiedEmailAddressesResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ListVerifiedEmailAddressesResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import ListVerifiedEmailAddressesResponseTypeDef
 ```
 
 Required fields:
@@ -1179,10 +1179,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutConfigurationSetDeliveryOptionsRequestTypeDef
+## PutConfigurationSetDeliveryOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import PutConfigurationSetDeliveryOptionsRequestTypeDef
+from mypy_boto3_ses.type_defs import PutConfigurationSetDeliveryOptionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1194,10 +1194,10 @@ Optional fields:
 - `DeliveryOptions`:
   [DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef)
 
-## PutIdentityPolicyRequestTypeDef
+## PutIdentityPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import PutIdentityPolicyRequestTypeDef
+from mypy_boto3_ses.type_defs import PutIdentityPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1306,10 +1306,10 @@ Optional fields:
 - `ExtensionFields`:
   `List`\[[ExtensionFieldTypeDef](./type_defs.md#extensionfieldtypedef)\]
 
-## ReorderReceiptRuleSetRequestTypeDef
+## ReorderReceiptRuleSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import ReorderReceiptRuleSetRequestTypeDef
+from mypy_boto3_ses.type_defs import ReorderReceiptRuleSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1383,10 +1383,10 @@ Required fields:
 
 - `TopicARN`: `str`
 
-## SendBounceRequestTypeDef
+## SendBounceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SendBounceRequestTypeDef
+from mypy_boto3_ses.type_defs import SendBounceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1402,10 +1402,10 @@ Optional fields:
 - `MessageDsn`: [MessageDsnTypeDef](./type_defs.md#messagedsntypedef)
 - `BounceSenderArn`: `str`
 
-## SendBounceResponseResponseTypeDef
+## SendBounceResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SendBounceResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import SendBounceResponseTypeDef
 ```
 
 Required fields:
@@ -1414,10 +1414,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SendBulkTemplatedEmailRequestTypeDef
+## SendBulkTemplatedEmailRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SendBulkTemplatedEmailRequestTypeDef
+from mypy_boto3_ses.type_defs import SendBulkTemplatedEmailRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1439,10 +1439,10 @@ Optional fields:
 - `TemplateArn`: `str`
 - `DefaultTemplateData`: `str`
 
-## SendBulkTemplatedEmailResponseResponseTypeDef
+## SendBulkTemplatedEmailResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SendBulkTemplatedEmailResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import SendBulkTemplatedEmailResponseTypeDef
 ```
 
 Required fields:
@@ -1452,10 +1452,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SendCustomVerificationEmailRequestTypeDef
+## SendCustomVerificationEmailRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SendCustomVerificationEmailRequestTypeDef
+from mypy_boto3_ses.type_defs import SendCustomVerificationEmailRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1467,10 +1467,10 @@ Optional fields:
 
 - `ConfigurationSetName`: `str`
 
-## SendCustomVerificationEmailResponseResponseTypeDef
+## SendCustomVerificationEmailResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SendCustomVerificationEmailResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import SendCustomVerificationEmailResponseTypeDef
 ```
 
 Required fields:
@@ -1493,10 +1493,10 @@ Optional fields:
 - `Complaints`: `int`
 - `Rejects`: `int`
 
-## SendEmailRequestTypeDef
+## SendEmailRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SendEmailRequestTypeDef
+from mypy_boto3_ses.type_defs import SendEmailRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1514,10 +1514,10 @@ Optional fields:
 - `Tags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
-## SendEmailResponseResponseTypeDef
+## SendEmailResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SendEmailResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import SendEmailResponseTypeDef
 ```
 
 Required fields:
@@ -1526,10 +1526,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SendRawEmailRequestTypeDef
+## SendRawEmailRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SendRawEmailRequestTypeDef
+from mypy_boto3_ses.type_defs import SendRawEmailRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1546,10 +1546,10 @@ Optional fields:
 - `Tags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
-## SendRawEmailResponseResponseTypeDef
+## SendRawEmailResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SendRawEmailResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import SendRawEmailResponseTypeDef
 ```
 
 Required fields:
@@ -1558,10 +1558,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SendTemplatedEmailRequestTypeDef
+## SendTemplatedEmailRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SendTemplatedEmailRequestTypeDef
+from mypy_boto3_ses.type_defs import SendTemplatedEmailRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1581,10 +1581,10 @@ Optional fields:
 - `ConfigurationSetName`: `str`
 - `TemplateArn`: `str`
 
-## SendTemplatedEmailResponseResponseTypeDef
+## SendTemplatedEmailResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SendTemplatedEmailResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import SendTemplatedEmailResponseTypeDef
 ```
 
 Required fields:
@@ -1593,20 +1593,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SetActiveReceiptRuleSetRequestTypeDef
+## SetActiveReceiptRuleSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SetActiveReceiptRuleSetRequestTypeDef
+from mypy_boto3_ses.type_defs import SetActiveReceiptRuleSetRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `RuleSetName`: `str`
 
-## SetIdentityDkimEnabledRequestTypeDef
+## SetIdentityDkimEnabledRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SetIdentityDkimEnabledRequestTypeDef
+from mypy_boto3_ses.type_defs import SetIdentityDkimEnabledRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1614,10 +1614,10 @@ Required fields:
 - `Identity`: `str`
 - `DkimEnabled`: `bool`
 
-## SetIdentityFeedbackForwardingEnabledRequestTypeDef
+## SetIdentityFeedbackForwardingEnabledRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SetIdentityFeedbackForwardingEnabledRequestTypeDef
+from mypy_boto3_ses.type_defs import SetIdentityFeedbackForwardingEnabledRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1625,10 +1625,10 @@ Required fields:
 - `Identity`: `str`
 - `ForwardingEnabled`: `bool`
 
-## SetIdentityHeadersInNotificationsEnabledRequestTypeDef
+## SetIdentityHeadersInNotificationsEnabledRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SetIdentityHeadersInNotificationsEnabledRequestTypeDef
+from mypy_boto3_ses.type_defs import SetIdentityHeadersInNotificationsEnabledRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1638,10 +1638,10 @@ Required fields:
   [NotificationTypeType](./literals.md#notificationtypetype)
 - `Enabled`: `bool`
 
-## SetIdentityMailFromDomainRequestTypeDef
+## SetIdentityMailFromDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SetIdentityMailFromDomainRequestTypeDef
+from mypy_boto3_ses.type_defs import SetIdentityMailFromDomainRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1654,10 +1654,10 @@ Optional fields:
 - `BehaviorOnMXFailure`:
   [BehaviorOnMXFailureType](./literals.md#behavioronmxfailuretype)
 
-## SetIdentityNotificationTopicRequestTypeDef
+## SetIdentityNotificationTopicRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SetIdentityNotificationTopicRequestTypeDef
+from mypy_boto3_ses.type_defs import SetIdentityNotificationTopicRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1670,10 +1670,10 @@ Optional fields:
 
 - `SnsTopic`: `str`
 
-## SetReceiptRulePositionRequestTypeDef
+## SetReceiptRulePositionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import SetReceiptRulePositionRequestTypeDef
+from mypy_boto3_ses.type_defs import SetReceiptRulePositionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1727,10 +1727,10 @@ Optional fields:
 - `TextPart`: `str`
 - `HtmlPart`: `str`
 
-## TestRenderTemplateRequestTypeDef
+## TestRenderTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import TestRenderTemplateRequestTypeDef
+from mypy_boto3_ses.type_defs import TestRenderTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1738,10 +1738,10 @@ Required fields:
 - `TemplateName`: `str`
 - `TemplateData`: `str`
 
-## TestRenderTemplateResponseResponseTypeDef
+## TestRenderTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import TestRenderTemplateResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import TestRenderTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -1760,20 +1760,20 @@ Optional fields:
 
 - `CustomRedirectDomain`: `str`
 
-## UpdateAccountSendingEnabledRequestTypeDef
+## UpdateAccountSendingEnabledRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import UpdateAccountSendingEnabledRequestTypeDef
+from mypy_boto3_ses.type_defs import UpdateAccountSendingEnabledRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `Enabled`: `bool`
 
-## UpdateConfigurationSetEventDestinationRequestTypeDef
+## UpdateConfigurationSetEventDestinationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import UpdateConfigurationSetEventDestinationRequestTypeDef
+from mypy_boto3_ses.type_defs import UpdateConfigurationSetEventDestinationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1782,10 +1782,10 @@ Required fields:
 - `EventDestination`:
   [EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef)
 
-## UpdateConfigurationSetReputationMetricsEnabledRequestTypeDef
+## UpdateConfigurationSetReputationMetricsEnabledRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import UpdateConfigurationSetReputationMetricsEnabledRequestTypeDef
+from mypy_boto3_ses.type_defs import UpdateConfigurationSetReputationMetricsEnabledRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1793,10 +1793,10 @@ Required fields:
 - `ConfigurationSetName`: `str`
 - `Enabled`: `bool`
 
-## UpdateConfigurationSetSendingEnabledRequestTypeDef
+## UpdateConfigurationSetSendingEnabledRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import UpdateConfigurationSetSendingEnabledRequestTypeDef
+from mypy_boto3_ses.type_defs import UpdateConfigurationSetSendingEnabledRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1804,10 +1804,10 @@ Required fields:
 - `ConfigurationSetName`: `str`
 - `Enabled`: `bool`
 
-## UpdateConfigurationSetTrackingOptionsRequestTypeDef
+## UpdateConfigurationSetTrackingOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import UpdateConfigurationSetTrackingOptionsRequestTypeDef
+from mypy_boto3_ses.type_defs import UpdateConfigurationSetTrackingOptionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1816,10 +1816,10 @@ Required fields:
 - `TrackingOptions`:
   [TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef)
 
-## UpdateCustomVerificationEmailTemplateRequestTypeDef
+## UpdateCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import UpdateCustomVerificationEmailTemplateRequestTypeDef
+from mypy_boto3_ses.type_defs import UpdateCustomVerificationEmailTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1834,10 +1834,10 @@ Optional fields:
 - `SuccessRedirectionURL`: `str`
 - `FailureRedirectionURL`: `str`
 
-## UpdateReceiptRuleRequestTypeDef
+## UpdateReceiptRuleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import UpdateReceiptRuleRequestTypeDef
+from mypy_boto3_ses.type_defs import UpdateReceiptRuleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1845,30 +1845,30 @@ Required fields:
 - `RuleSetName`: `str`
 - `Rule`: [ReceiptRuleTypeDef](./type_defs.md#receiptruletypedef)
 
-## UpdateTemplateRequestTypeDef
+## UpdateTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import UpdateTemplateRequestTypeDef
+from mypy_boto3_ses.type_defs import UpdateTemplateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Template`: [TemplateTypeDef](./type_defs.md#templatetypedef)
 
-## VerifyDomainDkimRequestTypeDef
+## VerifyDomainDkimRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import VerifyDomainDkimRequestTypeDef
+from mypy_boto3_ses.type_defs import VerifyDomainDkimRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Domain`: `str`
 
-## VerifyDomainDkimResponseResponseTypeDef
+## VerifyDomainDkimResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import VerifyDomainDkimResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import VerifyDomainDkimResponseTypeDef
 ```
 
 Required fields:
@@ -1877,20 +1877,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## VerifyDomainIdentityRequestTypeDef
+## VerifyDomainIdentityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import VerifyDomainIdentityRequestTypeDef
+from mypy_boto3_ses.type_defs import VerifyDomainIdentityRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Domain`: `str`
 
-## VerifyDomainIdentityResponseResponseTypeDef
+## VerifyDomainIdentityResponseTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import VerifyDomainIdentityResponseResponseTypeDef
+from mypy_boto3_ses.type_defs import VerifyDomainIdentityResponseTypeDef
 ```
 
 Required fields:
@@ -1899,20 +1899,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## VerifyEmailAddressRequestTypeDef
+## VerifyEmailAddressRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import VerifyEmailAddressRequestTypeDef
+from mypy_boto3_ses.type_defs import VerifyEmailAddressRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `EmailAddress`: `str`
 
-## VerifyEmailIdentityRequestTypeDef
+## VerifyEmailIdentityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ses.type_defs import VerifyEmailIdentityRequestTypeDef
+from mypy_boto3_ses.type_defs import VerifyEmailIdentityRequestRequestTypeDef
 ```
 
 Required fields:

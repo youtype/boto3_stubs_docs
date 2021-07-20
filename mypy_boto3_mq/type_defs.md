@@ -17,54 +17,54 @@ type annotations stubs module
   - [ConfigurationRevisionTypeDef](#configurationrevisiontypedef)
   - [ConfigurationTypeDef](#configurationtypedef)
   - [ConfigurationsTypeDef](#configurationstypedef)
-  - [CreateBrokerRequestTypeDef](#createbrokerrequesttypedef)
-  - [CreateBrokerResponseResponseTypeDef](#createbrokerresponseresponsetypedef)
-  - [CreateConfigurationRequestTypeDef](#createconfigurationrequesttypedef)
-  - [CreateConfigurationResponseResponseTypeDef](#createconfigurationresponseresponsetypedef)
-  - [CreateTagsRequestTypeDef](#createtagsrequesttypedef)
-  - [CreateUserRequestTypeDef](#createuserrequesttypedef)
-  - [DeleteBrokerRequestTypeDef](#deletebrokerrequesttypedef)
-  - [DeleteBrokerResponseResponseTypeDef](#deletebrokerresponseresponsetypedef)
-  - [DeleteTagsRequestTypeDef](#deletetagsrequesttypedef)
-  - [DeleteUserRequestTypeDef](#deleteuserrequesttypedef)
-  - [DescribeBrokerEngineTypesRequestTypeDef](#describebrokerenginetypesrequesttypedef)
-  - [DescribeBrokerEngineTypesResponseResponseTypeDef](#describebrokerenginetypesresponseresponsetypedef)
-  - [DescribeBrokerInstanceOptionsRequestTypeDef](#describebrokerinstanceoptionsrequesttypedef)
-  - [DescribeBrokerInstanceOptionsResponseResponseTypeDef](#describebrokerinstanceoptionsresponseresponsetypedef)
-  - [DescribeBrokerRequestTypeDef](#describebrokerrequesttypedef)
-  - [DescribeBrokerResponseResponseTypeDef](#describebrokerresponseresponsetypedef)
-  - [DescribeConfigurationRequestTypeDef](#describeconfigurationrequesttypedef)
-  - [DescribeConfigurationResponseResponseTypeDef](#describeconfigurationresponseresponsetypedef)
-  - [DescribeConfigurationRevisionRequestTypeDef](#describeconfigurationrevisionrequesttypedef)
-  - [DescribeConfigurationRevisionResponseResponseTypeDef](#describeconfigurationrevisionresponseresponsetypedef)
-  - [DescribeUserRequestTypeDef](#describeuserrequesttypedef)
-  - [DescribeUserResponseResponseTypeDef](#describeuserresponseresponsetypedef)
+  - [CreateBrokerRequestRequestTypeDef](#createbrokerrequestrequesttypedef)
+  - [CreateBrokerResponseTypeDef](#createbrokerresponsetypedef)
+  - [CreateConfigurationRequestRequestTypeDef](#createconfigurationrequestrequesttypedef)
+  - [CreateConfigurationResponseTypeDef](#createconfigurationresponsetypedef)
+  - [CreateTagsRequestRequestTypeDef](#createtagsrequestrequesttypedef)
+  - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
+  - [DeleteBrokerRequestRequestTypeDef](#deletebrokerrequestrequesttypedef)
+  - [DeleteBrokerResponseTypeDef](#deletebrokerresponsetypedef)
+  - [DeleteTagsRequestRequestTypeDef](#deletetagsrequestrequesttypedef)
+  - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
+  - [DescribeBrokerEngineTypesRequestRequestTypeDef](#describebrokerenginetypesrequestrequesttypedef)
+  - [DescribeBrokerEngineTypesResponseTypeDef](#describebrokerenginetypesresponsetypedef)
+  - [DescribeBrokerInstanceOptionsRequestRequestTypeDef](#describebrokerinstanceoptionsrequestrequesttypedef)
+  - [DescribeBrokerInstanceOptionsResponseTypeDef](#describebrokerinstanceoptionsresponsetypedef)
+  - [DescribeBrokerRequestRequestTypeDef](#describebrokerrequestrequesttypedef)
+  - [DescribeBrokerResponseTypeDef](#describebrokerresponsetypedef)
+  - [DescribeConfigurationRequestRequestTypeDef](#describeconfigurationrequestrequesttypedef)
+  - [DescribeConfigurationResponseTypeDef](#describeconfigurationresponsetypedef)
+  - [DescribeConfigurationRevisionRequestRequestTypeDef](#describeconfigurationrevisionrequestrequesttypedef)
+  - [DescribeConfigurationRevisionResponseTypeDef](#describeconfigurationrevisionresponsetypedef)
+  - [DescribeUserRequestRequestTypeDef](#describeuserrequestrequesttypedef)
+  - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
   - [EncryptionOptionsTypeDef](#encryptionoptionstypedef)
   - [EngineVersionTypeDef](#engineversiontypedef)
   - [LdapServerMetadataInputTypeDef](#ldapservermetadatainputtypedef)
   - [LdapServerMetadataOutputTypeDef](#ldapservermetadataoutputtypedef)
-  - [ListBrokersRequestTypeDef](#listbrokersrequesttypedef)
-  - [ListBrokersResponseResponseTypeDef](#listbrokersresponseresponsetypedef)
-  - [ListConfigurationRevisionsRequestTypeDef](#listconfigurationrevisionsrequesttypedef)
-  - [ListConfigurationRevisionsResponseResponseTypeDef](#listconfigurationrevisionsresponseresponsetypedef)
-  - [ListConfigurationsRequestTypeDef](#listconfigurationsrequesttypedef)
-  - [ListConfigurationsResponseResponseTypeDef](#listconfigurationsresponseresponsetypedef)
-  - [ListTagsRequestTypeDef](#listtagsrequesttypedef)
-  - [ListTagsResponseResponseTypeDef](#listtagsresponseresponsetypedef)
-  - [ListUsersRequestTypeDef](#listusersrequesttypedef)
-  - [ListUsersResponseResponseTypeDef](#listusersresponseresponsetypedef)
+  - [ListBrokersRequestRequestTypeDef](#listbrokersrequestrequesttypedef)
+  - [ListBrokersResponseTypeDef](#listbrokersresponsetypedef)
+  - [ListConfigurationRevisionsRequestRequestTypeDef](#listconfigurationrevisionsrequestrequesttypedef)
+  - [ListConfigurationRevisionsResponseTypeDef](#listconfigurationrevisionsresponsetypedef)
+  - [ListConfigurationsRequestRequestTypeDef](#listconfigurationsrequestrequesttypedef)
+  - [ListConfigurationsResponseTypeDef](#listconfigurationsresponsetypedef)
+  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
+  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
+  - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
+  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
   - [LogsSummaryTypeDef](#logssummarytypedef)
   - [LogsTypeDef](#logstypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PendingLogsTypeDef](#pendinglogstypedef)
-  - [RebootBrokerRequestTypeDef](#rebootbrokerrequesttypedef)
+  - [RebootBrokerRequestRequestTypeDef](#rebootbrokerrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SanitizationWarningTypeDef](#sanitizationwarningtypedef)
-  - [UpdateBrokerRequestTypeDef](#updatebrokerrequesttypedef)
-  - [UpdateBrokerResponseResponseTypeDef](#updatebrokerresponseresponsetypedef)
-  - [UpdateConfigurationRequestTypeDef](#updateconfigurationrequesttypedef)
-  - [UpdateConfigurationResponseResponseTypeDef](#updateconfigurationresponseresponsetypedef)
-  - [UpdateUserRequestTypeDef](#updateuserrequesttypedef)
+  - [UpdateBrokerRequestRequestTypeDef](#updatebrokerrequestrequesttypedef)
+  - [UpdateBrokerResponseTypeDef](#updatebrokerresponsetypedef)
+  - [UpdateConfigurationRequestRequestTypeDef](#updateconfigurationrequestrequesttypedef)
+  - [UpdateConfigurationResponseTypeDef](#updateconfigurationresponsetypedef)
+  - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
   - [UserPendingChangesTypeDef](#userpendingchangestypedef)
   - [UserSummaryTypeDef](#usersummarytypedef)
   - [UserTypeDef](#usertypedef)
@@ -127,6 +127,11 @@ Optional fields:
 from mypy_boto3_mq.type_defs import BrokerSummaryTypeDef
 ```
 
+Required fields:
+
+- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
+
 Optional fields:
 
 - `BrokerArn`: `str`
@@ -134,8 +139,6 @@ Optional fields:
 - `BrokerName`: `str`
 - `BrokerState`: [BrokerStateType](./literals.md#brokerstatetype)
 - `Created`: `datetime`
-- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
-- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
 - `HostInstanceType`: `str`
 
 ## ConfigurationIdTypeDef
@@ -144,9 +147,12 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ConfigurationIdTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Id`: `str`
+
+Optional fields:
+
 - `Revision`: `int`
 
 ## ConfigurationRevisionTypeDef
@@ -155,11 +161,14 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ConfigurationRevisionTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Created`: `datetime`
-- `Description`: `str`
 - `Revision`: `int`
+
+Optional fields:
+
+- `Description`: `str`
 
 ## ConfigurationTypeDef
 
@@ -167,7 +176,7 @@ Optional fields:
 from mypy_boto3_mq.type_defs import ConfigurationTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Arn`: `str`
 - `AuthenticationStrategy`:
@@ -180,6 +189,9 @@ Optional fields:
 - `LatestRevision`:
   [ConfigurationRevisionTypeDef](./type_defs.md#configurationrevisiontypedef)
 - `Name`: `str`
+
+Optional fields:
+
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## ConfigurationsTypeDef
@@ -195,43 +207,46 @@ Optional fields:
   `List`\[[ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef)\]
 - `Pending`: [ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef)
 
-## CreateBrokerRequestTypeDef
+## CreateBrokerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import CreateBrokerRequestTypeDef
+from mypy_boto3_mq.type_defs import CreateBrokerRequestRequestTypeDef
 ```
+
+Required fields:
+
+- `AutoMinorVersionUpgrade`: `bool`
+- `BrokerName`: `str`
+- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
+- `EngineVersion`: `str`
+- `HostInstanceType`: `str`
+- `PubliclyAccessible`: `bool`
+- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 
 Optional fields:
 
 - `AuthenticationStrategy`:
   [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
-- `AutoMinorVersionUpgrade`: `bool`
-- `BrokerName`: `str`
 - `Configuration`:
   [ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef)
 - `CreatorRequestId`: `str`
-- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
 - `EncryptionOptions`:
   [EncryptionOptionsTypeDef](./type_defs.md#encryptionoptionstypedef)
-- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
-- `EngineVersion`: `str`
-- `HostInstanceType`: `str`
 - `LdapServerMetadata`:
   [LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef)
 - `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
 - `MaintenanceWindowStartTime`:
   [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
-- `PubliclyAccessible`: `bool`
 - `SecurityGroups`: `List`\[`str`\]
 - `StorageType`: [BrokerStorageTypeType](./literals.md#brokerstoragetypetype)
 - `SubnetIds`: `List`\[`str`\]
 - `Tags`: `Dict`\[`str`, `str`\]
-- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
 
-## CreateBrokerResponseResponseTypeDef
+## CreateBrokerResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import CreateBrokerResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import CreateBrokerResponseTypeDef
 ```
 
 Required fields:
@@ -241,25 +256,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateConfigurationRequestTypeDef
+## CreateConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import CreateConfigurationRequestTypeDef
+from mypy_boto3_mq.type_defs import CreateConfigurationRequestRequestTypeDef
 ```
+
+Required fields:
+
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
+- `EngineVersion`: `str`
+- `Name`: `str`
 
 Optional fields:
 
 - `AuthenticationStrategy`:
   [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
-- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
-- `EngineVersion`: `str`
-- `Name`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateConfigurationResponseResponseTypeDef
+## CreateConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import CreateConfigurationResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import CreateConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -275,10 +293,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTagsRequestTypeDef
+## CreateTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import CreateTagsRequestTypeDef
+from mypy_boto3_mq.type_defs import CreateTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -289,37 +307,37 @@ Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateUserRequestTypeDef
+## CreateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import CreateUserRequestTypeDef
+from mypy_boto3_mq.type_defs import CreateUserRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `BrokerId`: `str`
+- `Password`: `str`
 - `Username`: `str`
 
 Optional fields:
 
 - `ConsoleAccess`: `bool`
 - `Groups`: `List`\[`str`\]
-- `Password`: `str`
 
-## DeleteBrokerRequestTypeDef
+## DeleteBrokerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DeleteBrokerRequestTypeDef
+from mypy_boto3_mq.type_defs import DeleteBrokerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `BrokerId`: `str`
 
-## DeleteBrokerResponseResponseTypeDef
+## DeleteBrokerResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DeleteBrokerResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import DeleteBrokerResponseTypeDef
 ```
 
 Required fields:
@@ -328,10 +346,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteTagsRequestTypeDef
+## DeleteTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DeleteTagsRequestTypeDef
+from mypy_boto3_mq.type_defs import DeleteTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -339,10 +357,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## DeleteUserRequestTypeDef
+## DeleteUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DeleteUserRequestTypeDef
+from mypy_boto3_mq.type_defs import DeleteUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -350,10 +368,10 @@ Required fields:
 - `BrokerId`: `str`
 - `Username`: `str`
 
-## DescribeBrokerEngineTypesRequestTypeDef
+## DescribeBrokerEngineTypesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DescribeBrokerEngineTypesRequestTypeDef
+from mypy_boto3_mq.type_defs import DescribeBrokerEngineTypesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -362,10 +380,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeBrokerEngineTypesResponseResponseTypeDef
+## DescribeBrokerEngineTypesResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DescribeBrokerEngineTypesResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import DescribeBrokerEngineTypesResponseTypeDef
 ```
 
 Required fields:
@@ -377,10 +395,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBrokerInstanceOptionsRequestTypeDef
+## DescribeBrokerInstanceOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DescribeBrokerInstanceOptionsRequestTypeDef
+from mypy_boto3_mq.type_defs import DescribeBrokerInstanceOptionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -391,10 +409,10 @@ Optional fields:
 - `NextToken`: `str`
 - `StorageType`: `str`
 
-## DescribeBrokerInstanceOptionsResponseResponseTypeDef
+## DescribeBrokerInstanceOptionsResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DescribeBrokerInstanceOptionsResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import DescribeBrokerInstanceOptionsResponseTypeDef
 ```
 
 Required fields:
@@ -406,20 +424,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBrokerRequestTypeDef
+## DescribeBrokerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DescribeBrokerRequestTypeDef
+from mypy_boto3_mq.type_defs import DescribeBrokerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `BrokerId`: `str`
 
-## DescribeBrokerResponseResponseTypeDef
+## DescribeBrokerResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DescribeBrokerResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import DescribeBrokerResponseTypeDef
 ```
 
 Required fields:
@@ -463,20 +481,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConfigurationRequestTypeDef
+## DescribeConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DescribeConfigurationRequestTypeDef
+from mypy_boto3_mq.type_defs import DescribeConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ConfigurationId`: `str`
 
-## DescribeConfigurationResponseResponseTypeDef
+## DescribeConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DescribeConfigurationResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import DescribeConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -496,10 +514,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeConfigurationRevisionRequestTypeDef
+## DescribeConfigurationRevisionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DescribeConfigurationRevisionRequestTypeDef
+from mypy_boto3_mq.type_defs import DescribeConfigurationRevisionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -507,10 +525,10 @@ Required fields:
 - `ConfigurationId`: `str`
 - `ConfigurationRevision`: `str`
 
-## DescribeConfigurationRevisionResponseResponseTypeDef
+## DescribeConfigurationRevisionResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DescribeConfigurationRevisionResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import DescribeConfigurationRevisionResponseTypeDef
 ```
 
 Required fields:
@@ -522,10 +540,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUserRequestTypeDef
+## DescribeUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DescribeUserRequestTypeDef
+from mypy_boto3_mq.type_defs import DescribeUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -533,10 +551,10 @@ Required fields:
 - `BrokerId`: `str`
 - `Username`: `str`
 
-## DescribeUserResponseResponseTypeDef
+## DescribeUserResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import DescribeUserResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import DescribeUserResponseTypeDef
 ```
 
 Required fields:
@@ -580,18 +598,21 @@ Optional fields:
 from mypy_boto3_mq.type_defs import LdapServerMetadataInputTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Hosts`: `List`\[`str`\]
 - `RoleBase`: `str`
-- `RoleName`: `str`
 - `RoleSearchMatching`: `str`
-- `RoleSearchSubtree`: `bool`
 - `ServiceAccountPassword`: `str`
 - `ServiceAccountUsername`: `str`
 - `UserBase`: `str`
-- `UserRoleName`: `str`
 - `UserSearchMatching`: `str`
+
+Optional fields:
+
+- `RoleName`: `str`
+- `RoleSearchSubtree`: `bool`
+- `UserRoleName`: `str`
 - `UserSearchSubtree`: `bool`
 
 ## LdapServerMetadataOutputTypeDef
@@ -600,23 +621,26 @@ Optional fields:
 from mypy_boto3_mq.type_defs import LdapServerMetadataOutputTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Hosts`: `List`\[`str`\]
 - `RoleBase`: `str`
-- `RoleName`: `str`
 - `RoleSearchMatching`: `str`
-- `RoleSearchSubtree`: `bool`
 - `ServiceAccountUsername`: `str`
 - `UserBase`: `str`
-- `UserRoleName`: `str`
 - `UserSearchMatching`: `str`
+
+Optional fields:
+
+- `RoleName`: `str`
+- `RoleSearchSubtree`: `bool`
+- `UserRoleName`: `str`
 - `UserSearchSubtree`: `bool`
 
-## ListBrokersRequestTypeDef
+## ListBrokersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import ListBrokersRequestTypeDef
+from mypy_boto3_mq.type_defs import ListBrokersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -624,10 +648,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListBrokersResponseResponseTypeDef
+## ListBrokersResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import ListBrokersResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import ListBrokersResponseTypeDef
 ```
 
 Required fields:
@@ -638,10 +662,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListConfigurationRevisionsRequestTypeDef
+## ListConfigurationRevisionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import ListConfigurationRevisionsRequestTypeDef
+from mypy_boto3_mq.type_defs import ListConfigurationRevisionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -653,10 +677,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListConfigurationRevisionsResponseResponseTypeDef
+## ListConfigurationRevisionsResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import ListConfigurationRevisionsResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import ListConfigurationRevisionsResponseTypeDef
 ```
 
 Required fields:
@@ -669,10 +693,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListConfigurationsRequestTypeDef
+## ListConfigurationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import ListConfigurationsRequestTypeDef
+from mypy_boto3_mq.type_defs import ListConfigurationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -680,10 +704,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListConfigurationsResponseResponseTypeDef
+## ListConfigurationsResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import ListConfigurationsResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import ListConfigurationsResponseTypeDef
 ```
 
 Required fields:
@@ -695,20 +719,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsRequestTypeDef
+## ListTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import ListTagsRequestTypeDef
+from mypy_boto3_mq.type_defs import ListTagsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsResponseResponseTypeDef
+## ListTagsResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import ListTagsResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import ListTagsResponseTypeDef
 ```
 
 Required fields:
@@ -717,10 +741,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUsersRequestTypeDef
+## ListUsersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import ListUsersRequestTypeDef
+from mypy_boto3_mq.type_defs import ListUsersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -732,10 +756,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListUsersResponseResponseTypeDef
+## ListUsersResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import ListUsersResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import ListUsersResponseTypeDef
 ```
 
 Required fields:
@@ -753,12 +777,15 @@ Required fields:
 from mypy_boto3_mq.type_defs import LogsSummaryTypeDef
 ```
 
+Required fields:
+
+- `General`: `bool`
+- `GeneralLogGroup`: `str`
+
 Optional fields:
 
 - `Audit`: `bool`
 - `AuditLogGroup`: `str`
-- `General`: `bool`
-- `GeneralLogGroup`: `str`
 - `Pending`: [PendingLogsTypeDef](./type_defs.md#pendinglogstypedef)
 
 ## LogsTypeDef
@@ -795,10 +822,10 @@ Optional fields:
 - `Audit`: `bool`
 - `General`: `bool`
 
-## RebootBrokerRequestTypeDef
+## RebootBrokerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import RebootBrokerRequestTypeDef
+from mypy_boto3_mq.type_defs import RebootBrokerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -825,17 +852,20 @@ Required fields:
 from mypy_boto3_mq.type_defs import SanitizationWarningTypeDef
 ```
 
+Required fields:
+
+- `Reason`:
+  [SanitizationWarningReasonType](./literals.md#sanitizationwarningreasontype)
+
 Optional fields:
 
 - `AttributeName`: `str`
 - `ElementName`: `str`
-- `Reason`:
-  [SanitizationWarningReasonType](./literals.md#sanitizationwarningreasontype)
 
-## UpdateBrokerRequestTypeDef
+## UpdateBrokerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import UpdateBrokerRequestTypeDef
+from mypy_boto3_mq.type_defs import UpdateBrokerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -854,12 +884,14 @@ Optional fields:
 - `LdapServerMetadata`:
   [LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef)
 - `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
+- `MaintenanceWindowStartTime`:
+  [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
 - `SecurityGroups`: `List`\[`str`\]
 
-## UpdateBrokerResponseResponseTypeDef
+## UpdateBrokerResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import UpdateBrokerResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import UpdateBrokerResponseTypeDef
 ```
 
 Required fields:
@@ -875,29 +907,31 @@ Required fields:
 - `LdapServerMetadata`:
   [LdapServerMetadataOutputTypeDef](./type_defs.md#ldapservermetadataoutputtypedef)
 - `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
+- `MaintenanceWindowStartTime`:
+  [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
 - `SecurityGroups`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateConfigurationRequestTypeDef
+## UpdateConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import UpdateConfigurationRequestTypeDef
+from mypy_boto3_mq.type_defs import UpdateConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ConfigurationId`: `str`
+- `Data`: `str`
 
 Optional fields:
 
-- `Data`: `str`
 - `Description`: `str`
 
-## UpdateConfigurationResponseResponseTypeDef
+## UpdateConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import UpdateConfigurationResponseResponseTypeDef
+from mypy_boto3_mq.type_defs import UpdateConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -913,10 +947,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateUserRequestTypeDef
+## UpdateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mq.type_defs import UpdateUserRequestTypeDef
+from mypy_boto3_mq.type_defs import UpdateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -936,11 +970,14 @@ Optional fields:
 from mypy_boto3_mq.type_defs import UserPendingChangesTypeDef
 ```
 
+Required fields:
+
+- `PendingChange`: [ChangeTypeType](./literals.md#changetypetype)
+
 Optional fields:
 
 - `ConsoleAccess`: `bool`
 - `Groups`: `List`\[`str`\]
-- `PendingChange`: [ChangeTypeType](./literals.md#changetypetype)
 
 ## UserSummaryTypeDef
 
@@ -948,10 +985,13 @@ Optional fields:
 from mypy_boto3_mq.type_defs import UserSummaryTypeDef
 ```
 
+Required fields:
+
+- `Username`: `str`
+
 Optional fields:
 
 - `PendingChange`: [ChangeTypeType](./literals.md#changetypetype)
-- `Username`: `str`
 
 ## UserTypeDef
 
@@ -959,12 +999,15 @@ Optional fields:
 from mypy_boto3_mq.type_defs import UserTypeDef
 ```
 
+Required fields:
+
+- `Password`: `str`
+- `Username`: `str`
+
 Optional fields:
 
 - `ConsoleAccess`: `bool`
 - `Groups`: `List`\[`str`\]
-- `Password`: `str`
-- `Username`: `str`
 
 ## WeeklyStartTimeTypeDef
 
@@ -972,8 +1015,11 @@ Optional fields:
 from mypy_boto3_mq.type_defs import WeeklyStartTimeTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
 - `TimeOfDay`: `str`
+
+Optional fields:
+
 - `TimeZone`: `str`

@@ -41,7 +41,7 @@ Arguments for `DescribeScalableTargetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalableTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeScalableTargetsResponseResponseTypeDef](./type_defs.md#describescalabletargetsresponseresponsetypedef)\].
+`Iterator`\[[DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef)\].
 
 ## DescribeScalingActivitiesPaginator
 
@@ -71,7 +71,7 @@ Arguments for `DescribeScalingActivitiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingActivitiesPaginator.paginate` returns
-`Iterator`\[[DescribeScalingActivitiesResponseResponseTypeDef](./type_defs.md#describescalingactivitiesresponseresponsetypedef)\].
+`Iterator`\[[DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef)\].
 
 ## DescribeScalingPoliciesPaginator
 
@@ -102,7 +102,7 @@ Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScalingPoliciesPaginator.paginate` returns
-`Iterator`\[[DescribeScalingPoliciesResponseResponseTypeDef](./type_defs.md#describescalingpoliciesresponseresponsetypedef)\].
+`Iterator`\[[DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef)\].
 
 ## DescribeScheduledActionsPaginator
 
@@ -133,4 +133,4 @@ Arguments for `DescribeScheduledActionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeScheduledActionsPaginator.paginate` returns
-`Iterator`\[[DescribeScheduledActionsResponseResponseTypeDef](./type_defs.md#describescheduledactionsresponseresponsetypedef)\].
+`Iterator`\[[DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef)\].

@@ -8,35 +8,35 @@ type annotations stubs module
 [mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 - [Typed dictionaries for boto3 HealthLake module](#typed-dictionaries-for-boto3-healthlake-module)
-  - [CreateFHIRDatastoreRequestTypeDef](#createfhirdatastorerequesttypedef)
-  - [CreateFHIRDatastoreResponseResponseTypeDef](#createfhirdatastoreresponseresponsetypedef)
+  - [CreateFHIRDatastoreRequestRequestTypeDef](#createfhirdatastorerequestrequesttypedef)
+  - [CreateFHIRDatastoreResponseTypeDef](#createfhirdatastoreresponsetypedef)
   - [DatastoreFilterTypeDef](#datastorefiltertypedef)
   - [DatastorePropertiesTypeDef](#datastorepropertiestypedef)
-  - [DeleteFHIRDatastoreRequestTypeDef](#deletefhirdatastorerequesttypedef)
-  - [DeleteFHIRDatastoreResponseResponseTypeDef](#deletefhirdatastoreresponseresponsetypedef)
-  - [DescribeFHIRDatastoreRequestTypeDef](#describefhirdatastorerequesttypedef)
-  - [DescribeFHIRDatastoreResponseResponseTypeDef](#describefhirdatastoreresponseresponsetypedef)
-  - [DescribeFHIRExportJobRequestTypeDef](#describefhirexportjobrequesttypedef)
-  - [DescribeFHIRExportJobResponseResponseTypeDef](#describefhirexportjobresponseresponsetypedef)
-  - [DescribeFHIRImportJobRequestTypeDef](#describefhirimportjobrequesttypedef)
-  - [DescribeFHIRImportJobResponseResponseTypeDef](#describefhirimportjobresponseresponsetypedef)
+  - [DeleteFHIRDatastoreRequestRequestTypeDef](#deletefhirdatastorerequestrequesttypedef)
+  - [DeleteFHIRDatastoreResponseTypeDef](#deletefhirdatastoreresponsetypedef)
+  - [DescribeFHIRDatastoreRequestRequestTypeDef](#describefhirdatastorerequestrequesttypedef)
+  - [DescribeFHIRDatastoreResponseTypeDef](#describefhirdatastoreresponsetypedef)
+  - [DescribeFHIRExportJobRequestRequestTypeDef](#describefhirexportjobrequestrequesttypedef)
+  - [DescribeFHIRExportJobResponseTypeDef](#describefhirexportjobresponsetypedef)
+  - [DescribeFHIRImportJobRequestRequestTypeDef](#describefhirimportjobrequestrequesttypedef)
+  - [DescribeFHIRImportJobResponseTypeDef](#describefhirimportjobresponsetypedef)
   - [ExportJobPropertiesTypeDef](#exportjobpropertiestypedef)
   - [ImportJobPropertiesTypeDef](#importjobpropertiestypedef)
   - [InputDataConfigTypeDef](#inputdataconfigtypedef)
-  - [ListFHIRDatastoresRequestTypeDef](#listfhirdatastoresrequesttypedef)
-  - [ListFHIRDatastoresResponseResponseTypeDef](#listfhirdatastoresresponseresponsetypedef)
+  - [ListFHIRDatastoresRequestRequestTypeDef](#listfhirdatastoresrequestrequesttypedef)
+  - [ListFHIRDatastoresResponseTypeDef](#listfhirdatastoresresponsetypedef)
   - [OutputDataConfigTypeDef](#outputdataconfigtypedef)
   - [PreloadDataConfigTypeDef](#preloaddataconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartFHIRExportJobRequestTypeDef](#startfhirexportjobrequesttypedef)
-  - [StartFHIRExportJobResponseResponseTypeDef](#startfhirexportjobresponseresponsetypedef)
-  - [StartFHIRImportJobRequestTypeDef](#startfhirimportjobrequesttypedef)
-  - [StartFHIRImportJobResponseResponseTypeDef](#startfhirimportjobresponseresponsetypedef)
+  - [StartFHIRExportJobRequestRequestTypeDef](#startfhirexportjobrequestrequesttypedef)
+  - [StartFHIRExportJobResponseTypeDef](#startfhirexportjobresponsetypedef)
+  - [StartFHIRImportJobRequestRequestTypeDef](#startfhirimportjobrequestrequesttypedef)
+  - [StartFHIRImportJobResponseTypeDef](#startfhirimportjobresponsetypedef)
 
-## CreateFHIRDatastoreRequestTypeDef
+## CreateFHIRDatastoreRequestRequestTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import CreateFHIRDatastoreRequestTypeDef
+from mypy_boto3_healthlake.type_defs import CreateFHIRDatastoreRequestRequestTypeDef
 ```
 
 Required fields:
@@ -51,10 +51,10 @@ Optional fields:
   [PreloadDataConfigTypeDef](./type_defs.md#preloaddataconfigtypedef)
 - `ClientToken`: `str`
 
-## CreateFHIRDatastoreResponseResponseTypeDef
+## CreateFHIRDatastoreResponseTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import CreateFHIRDatastoreResponseResponseTypeDef
+from mypy_boto3_healthlake.type_defs import CreateFHIRDatastoreResponseTypeDef
 ```
 
 Required fields:
@@ -101,20 +101,20 @@ Optional fields:
 - `PreloadDataConfig`:
   [PreloadDataConfigTypeDef](./type_defs.md#preloaddataconfigtypedef)
 
-## DeleteFHIRDatastoreRequestTypeDef
+## DeleteFHIRDatastoreRequestRequestTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import DeleteFHIRDatastoreRequestTypeDef
+from mypy_boto3_healthlake.type_defs import DeleteFHIRDatastoreRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `DatastoreId`: `str`
 
-## DeleteFHIRDatastoreResponseResponseTypeDef
+## DeleteFHIRDatastoreResponseTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import DeleteFHIRDatastoreResponseResponseTypeDef
+from mypy_boto3_healthlake.type_defs import DeleteFHIRDatastoreResponseTypeDef
 ```
 
 Required fields:
@@ -126,20 +126,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFHIRDatastoreRequestTypeDef
+## DescribeFHIRDatastoreRequestRequestTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import DescribeFHIRDatastoreRequestTypeDef
+from mypy_boto3_healthlake.type_defs import DescribeFHIRDatastoreRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `DatastoreId`: `str`
 
-## DescribeFHIRDatastoreResponseResponseTypeDef
+## DescribeFHIRDatastoreResponseTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import DescribeFHIRDatastoreResponseResponseTypeDef
+from mypy_boto3_healthlake.type_defs import DescribeFHIRDatastoreResponseTypeDef
 ```
 
 Required fields:
@@ -149,10 +149,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFHIRExportJobRequestTypeDef
+## DescribeFHIRExportJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import DescribeFHIRExportJobRequestTypeDef
+from mypy_boto3_healthlake.type_defs import DescribeFHIRExportJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -160,10 +160,10 @@ Required fields:
 - `DatastoreId`: `str`
 - `JobId`: `str`
 
-## DescribeFHIRExportJobResponseResponseTypeDef
+## DescribeFHIRExportJobResponseTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import DescribeFHIRExportJobResponseResponseTypeDef
+from mypy_boto3_healthlake.type_defs import DescribeFHIRExportJobResponseTypeDef
 ```
 
 Required fields:
@@ -173,10 +173,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFHIRImportJobRequestTypeDef
+## DescribeFHIRImportJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import DescribeFHIRImportJobRequestTypeDef
+from mypy_boto3_healthlake.type_defs import DescribeFHIRImportJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -184,10 +184,10 @@ Required fields:
 - `DatastoreId`: `str`
 - `JobId`: `str`
 
-## DescribeFHIRImportJobResponseResponseTypeDef
+## DescribeFHIRImportJobResponseTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import DescribeFHIRImportJobResponseResponseTypeDef
+from mypy_boto3_healthlake.type_defs import DescribeFHIRImportJobResponseTypeDef
 ```
 
 Required fields:
@@ -251,10 +251,10 @@ Optional fields:
 
 - `S3Uri`: `str`
 
-## ListFHIRDatastoresRequestTypeDef
+## ListFHIRDatastoresRequestRequestTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import ListFHIRDatastoresRequestTypeDef
+from mypy_boto3_healthlake.type_defs import ListFHIRDatastoresRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -263,10 +263,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListFHIRDatastoresResponseResponseTypeDef
+## ListFHIRDatastoresResponseTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import ListFHIRDatastoresResponseResponseTypeDef
+from mypy_boto3_healthlake.type_defs import ListFHIRDatastoresResponseTypeDef
 ```
 
 Required fields:
@@ -312,10 +312,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## StartFHIRExportJobRequestTypeDef
+## StartFHIRExportJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import StartFHIRExportJobRequestTypeDef
+from mypy_boto3_healthlake.type_defs import StartFHIRExportJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -330,10 +330,10 @@ Optional fields:
 
 - `JobName`: `str`
 
-## StartFHIRExportJobResponseResponseTypeDef
+## StartFHIRExportJobResponseTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import StartFHIRExportJobResponseResponseTypeDef
+from mypy_boto3_healthlake.type_defs import StartFHIRExportJobResponseTypeDef
 ```
 
 Required fields:
@@ -344,10 +344,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartFHIRImportJobRequestTypeDef
+## StartFHIRImportJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import StartFHIRImportJobRequestTypeDef
+from mypy_boto3_healthlake.type_defs import StartFHIRImportJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -362,10 +362,10 @@ Optional fields:
 
 - `JobName`: `str`
 
-## StartFHIRImportJobResponseResponseTypeDef
+## StartFHIRImportJobResponseTypeDef
 
 ```python
-from mypy_boto3_healthlake.type_defs import StartFHIRImportJobResponseResponseTypeDef
+from mypy_boto3_healthlake.type_defs import StartFHIRImportJobResponseTypeDef
 ```
 
 Required fields:

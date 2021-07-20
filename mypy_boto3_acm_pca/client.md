@@ -11,6 +11,7 @@ type annotations stubs module
   - [ACMPCAClient](#acmpcaclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_certificate_authority](#create_certificate_authority)
     - [create_certificate_authority_audit_report](#create_certificate_authority_audit_report)
@@ -92,6 +93,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ACMPCAClient exceptions.
+
+Type annotations for `boto3.client("acm-pca").exceptions` method.
+
+Boto3 documentation:
+[ACMPCA.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -118,7 +130,7 @@ Boto3 documentation:
 [ACMPCA.Client.create_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority)
 
 Arguments mapping described in
-[CreateCertificateAuthorityRequestTypeDef](./type_defs.md#createcertificateauthorityrequesttypedef).
+[CreateCertificateAuthorityRequestRequestTypeDef](./type_defs.md#createcertificateauthorityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,7 +148,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCertificateAuthorityResponseResponseTypeDef](./type_defs.md#createcertificateauthorityresponseresponsetypedef).
+[CreateCertificateAuthorityResponseTypeDef](./type_defs.md#createcertificateauthorityresponsetypedef).
 
 ### create_certificate_authority_audit_report
 
@@ -149,7 +161,7 @@ Boto3 documentation:
 [ACMPCA.Client.create_certificate_authority_audit_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority_audit_report)
 
 Arguments mapping described in
-[CreateCertificateAuthorityAuditReportRequestTypeDef](./type_defs.md#createcertificateauthorityauditreportrequesttypedef).
+[CreateCertificateAuthorityAuditReportRequestRequestTypeDef](./type_defs.md#createcertificateauthorityauditreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -160,7 +172,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateCertificateAuthorityAuditReportResponseResponseTypeDef](./type_defs.md#createcertificateauthorityauditreportresponseresponsetypedef).
+[CreateCertificateAuthorityAuditReportResponseTypeDef](./type_defs.md#createcertificateauthorityauditreportresponsetypedef).
 
 ### create_permission
 
@@ -173,7 +185,7 @@ Boto3 documentation:
 [ACMPCA.Client.create_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_permission)
 
 Arguments mapping described in
-[CreatePermissionRequestTypeDef](./type_defs.md#createpermissionrequesttypedef).
+[CreatePermissionRequestRequestTypeDef](./type_defs.md#createpermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -194,7 +206,7 @@ Boto3 documentation:
 [ACMPCA.Client.delete_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_certificate_authority)
 
 Arguments mapping described in
-[DeleteCertificateAuthorityRequestTypeDef](./type_defs.md#deletecertificateauthorityrequesttypedef).
+[DeleteCertificateAuthorityRequestRequestTypeDef](./type_defs.md#deletecertificateauthorityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -212,7 +224,7 @@ Boto3 documentation:
 [ACMPCA.Client.delete_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_permission)
 
 Arguments mapping described in
-[DeletePermissionRequestTypeDef](./type_defs.md#deletepermissionrequesttypedef).
+[DeletePermissionRequestRequestTypeDef](./type_defs.md#deletepermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -230,7 +242,7 @@ Boto3 documentation:
 [ACMPCA.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_policy)
 
 Arguments mapping described in
-[DeletePolicyRequestTypeDef](./type_defs.md#deletepolicyrequesttypedef).
+[DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -248,14 +260,14 @@ Boto3 documentation:
 [ACMPCA.Client.describe_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority)
 
 Arguments mapping described in
-[DescribeCertificateAuthorityRequestTypeDef](./type_defs.md#describecertificateauthorityrequesttypedef).
+[DescribeCertificateAuthorityRequestRequestTypeDef](./type_defs.md#describecertificateauthorityrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 
 Returns
-[DescribeCertificateAuthorityResponseResponseTypeDef](./type_defs.md#describecertificateauthorityresponseresponsetypedef).
+[DescribeCertificateAuthorityResponseTypeDef](./type_defs.md#describecertificateauthorityresponsetypedef).
 
 ### describe_certificate_authority_audit_report
 
@@ -270,7 +282,7 @@ Boto3 documentation:
 [ACMPCA.Client.describe_certificate_authority_audit_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority_audit_report)
 
 Arguments mapping described in
-[DescribeCertificateAuthorityAuditReportRequestTypeDef](./type_defs.md#describecertificateauthorityauditreportrequesttypedef).
+[DescribeCertificateAuthorityAuditReportRequestRequestTypeDef](./type_defs.md#describecertificateauthorityauditreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -278,7 +290,7 @@ Keyword-only arguments:
 - `AuditReportId`: `str` *(required)*
 
 Returns
-[DescribeCertificateAuthorityAuditReportResponseResponseTypeDef](./type_defs.md#describecertificateauthorityauditreportresponseresponsetypedef).
+[DescribeCertificateAuthorityAuditReportResponseTypeDef](./type_defs.md#describecertificateauthorityauditreportresponsetypedef).
 
 ### generate_presigned_url
 
@@ -309,7 +321,7 @@ Boto3 documentation:
 [ACMPCA.Client.get_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate)
 
 Arguments mapping described in
-[GetCertificateRequestTypeDef](./type_defs.md#getcertificaterequesttypedef).
+[GetCertificateRequestRequestTypeDef](./type_defs.md#getcertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -317,7 +329,7 @@ Keyword-only arguments:
 - `CertificateArn`: `str` *(required)*
 
 Returns
-[GetCertificateResponseResponseTypeDef](./type_defs.md#getcertificateresponseresponsetypedef).
+[GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef).
 
 ### get_certificate_authority_certificate
 
@@ -331,14 +343,14 @@ Boto3 documentation:
 [ACMPCA.Client.get_certificate_authority_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_certificate)
 
 Arguments mapping described in
-[GetCertificateAuthorityCertificateRequestTypeDef](./type_defs.md#getcertificateauthoritycertificaterequesttypedef).
+[GetCertificateAuthorityCertificateRequestRequestTypeDef](./type_defs.md#getcertificateauthoritycertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 
 Returns
-[GetCertificateAuthorityCertificateResponseResponseTypeDef](./type_defs.md#getcertificateauthoritycertificateresponseresponsetypedef).
+[GetCertificateAuthorityCertificateResponseTypeDef](./type_defs.md#getcertificateauthoritycertificateresponsetypedef).
 
 ### get_certificate_authority_csr
 
@@ -352,14 +364,14 @@ Boto3 documentation:
 [ACMPCA.Client.get_certificate_authority_csr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_csr)
 
 Arguments mapping described in
-[GetCertificateAuthorityCsrRequestTypeDef](./type_defs.md#getcertificateauthoritycsrrequesttypedef).
+[GetCertificateAuthorityCsrRequestRequestTypeDef](./type_defs.md#getcertificateauthoritycsrrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 
 Returns
-[GetCertificateAuthorityCsrResponseResponseTypeDef](./type_defs.md#getcertificateauthoritycsrresponseresponsetypedef).
+[GetCertificateAuthorityCsrResponseTypeDef](./type_defs.md#getcertificateauthoritycsrresponsetypedef).
 
 ### get_policy
 
@@ -371,14 +383,13 @@ Boto3 documentation:
 [ACMPCA.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_policy)
 
 Arguments mapping described in
-[GetPolicyRequestTypeDef](./type_defs.md#getpolicyrequesttypedef).
+[GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
-Returns
-[GetPolicyResponseResponseTypeDef](./type_defs.md#getpolicyresponseresponsetypedef).
+Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
 ### import_certificate_authority_certificate
 
@@ -391,7 +402,7 @@ Boto3 documentation:
 [ACMPCA.Client.import_certificate_authority_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.import_certificate_authority_certificate)
 
 Arguments mapping described in
-[ImportCertificateAuthorityCertificateRequestTypeDef](./type_defs.md#importcertificateauthoritycertificaterequesttypedef).
+[ImportCertificateAuthorityCertificateRequestRequestTypeDef](./type_defs.md#importcertificateauthoritycertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -411,7 +422,7 @@ Boto3 documentation:
 [ACMPCA.Client.issue_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.issue_certificate)
 
 Arguments mapping described in
-[IssueCertificateRequestTypeDef](./type_defs.md#issuecertificaterequesttypedef).
+[IssueCertificateRequestRequestTypeDef](./type_defs.md#issuecertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -427,7 +438,7 @@ Keyword-only arguments:
 - `IdempotencyToken`: `str`
 
 Returns
-[IssueCertificateResponseResponseTypeDef](./type_defs.md#issuecertificateresponseresponsetypedef).
+[IssueCertificateResponseTypeDef](./type_defs.md#issuecertificateresponsetypedef).
 
 ### list_certificate_authorities
 
@@ -442,7 +453,7 @@ Boto3 documentation:
 [ACMPCA.Client.list_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_certificate_authorities)
 
 Arguments mapping described in
-[ListCertificateAuthoritiesRequestTypeDef](./type_defs.md#listcertificateauthoritiesrequesttypedef).
+[ListCertificateAuthoritiesRequestRequestTypeDef](./type_defs.md#listcertificateauthoritiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -451,7 +462,7 @@ Keyword-only arguments:
 - `ResourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
 
 Returns
-[ListCertificateAuthoritiesResponseResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponseresponsetypedef).
+[ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef).
 
 ### list_permissions
 
@@ -464,7 +475,7 @@ Boto3 documentation:
 [ACMPCA.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_permissions)
 
 Arguments mapping described in
-[ListPermissionsRequestTypeDef](./type_defs.md#listpermissionsrequesttypedef).
+[ListPermissionsRequestRequestTypeDef](./type_defs.md#listpermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,7 +484,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPermissionsResponseResponseTypeDef](./type_defs.md#listpermissionsresponseresponsetypedef).
+[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
 ### list_tags
 
@@ -486,7 +497,7 @@ Boto3 documentation:
 [ACMPCA.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_tags)
 
 Arguments mapping described in
-[ListTagsRequestTypeDef](./type_defs.md#listtagsrequesttypedef).
+[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -494,8 +505,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### put_policy
 
@@ -507,7 +517,7 @@ Boto3 documentation:
 [ACMPCA.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.put_policy)
 
 Arguments mapping described in
-[PutPolicyRequestTypeDef](./type_defs.md#putpolicyrequesttypedef).
+[PutPolicyRequestRequestTypeDef](./type_defs.md#putpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -525,7 +535,7 @@ Boto3 documentation:
 [ACMPCA.Client.restore_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.restore_certificate_authority)
 
 Arguments mapping described in
-[RestoreCertificateAuthorityRequestTypeDef](./type_defs.md#restorecertificateauthorityrequesttypedef).
+[RestoreCertificateAuthorityRequestRequestTypeDef](./type_defs.md#restorecertificateauthorityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -541,7 +551,7 @@ Boto3 documentation:
 [ACMPCA.Client.revoke_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.revoke_certificate)
 
 Arguments mapping described in
-[RevokeCertificateRequestTypeDef](./type_defs.md#revokecertificaterequesttypedef).
+[RevokeCertificateRequestRequestTypeDef](./type_defs.md#revokecertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -561,7 +571,7 @@ Boto3 documentation:
 [ACMPCA.Client.tag_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.tag_certificate_authority)
 
 Arguments mapping described in
-[TagCertificateAuthorityRequestTypeDef](./type_defs.md#tagcertificateauthorityrequesttypedef).
+[TagCertificateAuthorityRequestRequestTypeDef](./type_defs.md#tagcertificateauthorityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -579,7 +589,7 @@ Boto3 documentation:
 [ACMPCA.Client.untag_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.untag_certificate_authority)
 
 Arguments mapping described in
-[UntagCertificateAuthorityRequestTypeDef](./type_defs.md#untagcertificateauthorityrequesttypedef).
+[UntagCertificateAuthorityRequestRequestTypeDef](./type_defs.md#untagcertificateauthorityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -597,7 +607,7 @@ Boto3 documentation:
 [ACMPCA.Client.update_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.update_certificate_authority)
 
 Arguments mapping described in
-[UpdateCertificateAuthorityRequestTypeDef](./type_defs.md#updatecertificateauthorityrequesttypedef).
+[UpdateCertificateAuthorityRequestRequestTypeDef](./type_defs.md#updatecertificateauthorityrequestrequesttypedef).
 
 Keyword-only arguments:
 

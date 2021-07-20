@@ -53,7 +53,7 @@ Arguments for `ListAppliedSchemaArnsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppliedSchemaArnsPaginator.paginate` returns
-`Iterator`\[[ListAppliedSchemaArnsResponseResponseTypeDef](./type_defs.md#listappliedschemaarnsresponseresponsetypedef)\].
+`Iterator`\[[ListAppliedSchemaArnsResponseTypeDef](./type_defs.md#listappliedschemaarnsresponsetypedef)\].
 
 ## ListAttachedIndicesPaginator
 
@@ -83,7 +83,7 @@ Arguments for `ListAttachedIndicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAttachedIndicesPaginator.paginate` returns
-`Iterator`\[[ListAttachedIndicesResponseResponseTypeDef](./type_defs.md#listattachedindicesresponseresponsetypedef)\].
+`Iterator`\[[ListAttachedIndicesResponseTypeDef](./type_defs.md#listattachedindicesresponsetypedef)\].
 
 ## ListDevelopmentSchemaArnsPaginator
 
@@ -108,7 +108,7 @@ Arguments for `ListDevelopmentSchemaArnsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDevelopmentSchemaArnsPaginator.paginate` returns
-`Iterator`\[[ListDevelopmentSchemaArnsResponseResponseTypeDef](./type_defs.md#listdevelopmentschemaarnsresponseresponsetypedef)\].
+`Iterator`\[[ListDevelopmentSchemaArnsResponseTypeDef](./type_defs.md#listdevelopmentschemaarnsresponsetypedef)\].
 
 ## ListDirectoriesPaginator
 
@@ -134,7 +134,7 @@ Arguments for `ListDirectoriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDirectoriesPaginator.paginate` returns
-`Iterator`\[[ListDirectoriesResponseResponseTypeDef](./type_defs.md#listdirectoriesresponseresponsetypedef)\].
+`Iterator`\[[ListDirectoriesResponseTypeDef](./type_defs.md#listdirectoriesresponsetypedef)\].
 
 ## ListFacetAttributesPaginator
 
@@ -161,7 +161,7 @@ Arguments for `ListFacetAttributesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFacetAttributesPaginator.paginate` returns
-`Iterator`\[[ListFacetAttributesResponseResponseTypeDef](./type_defs.md#listfacetattributesresponseresponsetypedef)\].
+`Iterator`\[[ListFacetAttributesResponseTypeDef](./type_defs.md#listfacetattributesresponsetypedef)\].
 
 ## ListFacetNamesPaginator
 
@@ -187,7 +187,7 @@ Arguments for `ListFacetNamesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFacetNamesPaginator.paginate` returns
-`Iterator`\[[ListFacetNamesResponseResponseTypeDef](./type_defs.md#listfacetnamesresponseresponsetypedef)\].
+`Iterator`\[[ListFacetNamesResponseTypeDef](./type_defs.md#listfacetnamesresponsetypedef)\].
 
 ## ListIncomingTypedLinksPaginator
 
@@ -221,7 +221,7 @@ Arguments for `ListIncomingTypedLinksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIncomingTypedLinksPaginator.paginate` returns
-`Iterator`\[[ListIncomingTypedLinksResponseResponseTypeDef](./type_defs.md#listincomingtypedlinksresponseresponsetypedef)\].
+`Iterator`\[[ListIncomingTypedLinksResponseTypeDef](./type_defs.md#listincomingtypedlinksresponsetypedef)\].
 
 ## ListIndexPaginator
 
@@ -253,7 +253,7 @@ Arguments for `ListIndexPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListIndexPaginator.paginate` returns
-`Iterator`\[[ListIndexResponseResponseTypeDef](./type_defs.md#listindexresponseresponsetypedef)\].
+`Iterator`\[[ListIndexResponseTypeDef](./type_defs.md#listindexresponsetypedef)\].
 
 ## ListManagedSchemaArnsPaginator
 
@@ -279,7 +279,7 @@ Arguments for `ListManagedSchemaArnsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListManagedSchemaArnsPaginator.paginate` returns
-`Iterator`\[[ListManagedSchemaArnsResponseResponseTypeDef](./type_defs.md#listmanagedschemaarnsresponseresponsetypedef)\].
+`Iterator`\[[ListManagedSchemaArnsResponseTypeDef](./type_defs.md#listmanagedschemaarnsresponsetypedef)\].
 
 ## ListObjectAttributesPaginator
 
@@ -310,7 +310,7 @@ Arguments for `ListObjectAttributesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListObjectAttributesPaginator.paginate` returns
-`Iterator`\[[ListObjectAttributesResponseResponseTypeDef](./type_defs.md#listobjectattributesresponseresponsetypedef)\].
+`Iterator`\[[ListObjectAttributesResponseTypeDef](./type_defs.md#listobjectattributesresponsetypedef)\].
 
 ## ListObjectParentPathsPaginator
 
@@ -338,7 +338,7 @@ Arguments for `ListObjectParentPathsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListObjectParentPathsPaginator.paginate` returns
-`Iterator`\[[ListObjectParentPathsResponseResponseTypeDef](./type_defs.md#listobjectparentpathsresponseresponsetypedef)\].
+`Iterator`\[[ListObjectParentPathsResponseTypeDef](./type_defs.md#listobjectparentpathsresponsetypedef)\].
 
 ## ListObjectPoliciesPaginator
 
@@ -368,7 +368,7 @@ Arguments for `ListObjectPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListObjectPoliciesPaginator.paginate` returns
-`Iterator`\[[ListObjectPoliciesResponseResponseTypeDef](./type_defs.md#listobjectpoliciesresponseresponsetypedef)\].
+`Iterator`\[[ListObjectPoliciesResponseTypeDef](./type_defs.md#listobjectpoliciesresponsetypedef)\].
 
 ## ListOutgoingTypedLinksPaginator
 
@@ -402,7 +402,7 @@ Arguments for `ListOutgoingTypedLinksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListOutgoingTypedLinksPaginator.paginate` returns
-`Iterator`\[[ListOutgoingTypedLinksResponseResponseTypeDef](./type_defs.md#listoutgoingtypedlinksresponseresponsetypedef)\].
+`Iterator`\[[ListOutgoingTypedLinksResponseTypeDef](./type_defs.md#listoutgoingtypedlinksresponsetypedef)\].
 
 ## ListPolicyAttachmentsPaginator
 
@@ -432,7 +432,7 @@ Arguments for `ListPolicyAttachmentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPolicyAttachmentsPaginator.paginate` returns
-`Iterator`\[[ListPolicyAttachmentsResponseResponseTypeDef](./type_defs.md#listpolicyattachmentsresponseresponsetypedef)\].
+`Iterator`\[[ListPolicyAttachmentsResponseTypeDef](./type_defs.md#listpolicyattachmentsresponsetypedef)\].
 
 ## ListPublishedSchemaArnsPaginator
 
@@ -458,7 +458,7 @@ Arguments for `ListPublishedSchemaArnsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPublishedSchemaArnsPaginator.paginate` returns
-`Iterator`\[[ListPublishedSchemaArnsResponseResponseTypeDef](./type_defs.md#listpublishedschemaarnsresponseresponsetypedef)\].
+`Iterator`\[[ListPublishedSchemaArnsResponseTypeDef](./type_defs.md#listpublishedschemaarnsresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -484,7 +484,7 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
 ## ListTypedLinkFacetAttributesPaginator
 
@@ -511,7 +511,7 @@ Arguments for `ListTypedLinkFacetAttributesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTypedLinkFacetAttributesPaginator.paginate` returns
-`Iterator`\[[ListTypedLinkFacetAttributesResponseResponseTypeDef](./type_defs.md#listtypedlinkfacetattributesresponseresponsetypedef)\].
+`Iterator`\[[ListTypedLinkFacetAttributesResponseTypeDef](./type_defs.md#listtypedlinkfacetattributesresponsetypedef)\].
 
 ## ListTypedLinkFacetNamesPaginator
 
@@ -537,7 +537,7 @@ Arguments for `ListTypedLinkFacetNamesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTypedLinkFacetNamesPaginator.paginate` returns
-`Iterator`\[[ListTypedLinkFacetNamesResponseResponseTypeDef](./type_defs.md#listtypedlinkfacetnamesresponseresponsetypedef)\].
+`Iterator`\[[ListTypedLinkFacetNamesResponseTypeDef](./type_defs.md#listtypedlinkfacetnamesresponsetypedef)\].
 
 ## LookupPolicyPaginator
 
@@ -565,4 +565,4 @@ Arguments for `LookupPolicyPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `LookupPolicyPaginator.paginate` returns
-`Iterator`\[[LookupPolicyResponseResponseTypeDef](./type_defs.md#lookuppolicyresponseresponsetypedef)\].
+`Iterator`\[[LookupPolicyResponseTypeDef](./type_defs.md#lookuppolicyresponsetypedef)\].

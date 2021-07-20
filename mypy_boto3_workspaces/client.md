@@ -11,6 +11,7 @@ type annotations stubs module
   - [WorkSpacesClient](#workspacesclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_connection_alias](#associate_connection_alias)
     - [associate_ip_groups](#associate_ip_groups)
     - [authorize_ip_rules](#authorize_ip_rules)
@@ -116,6 +117,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+WorkSpacesClient exceptions.
+
+Type annotations for `boto3.client("workspaces").exceptions` method.
+
+Boto3 documentation:
+[WorkSpaces.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_connection_alias
 
 Associates the specified connection alias with the specified directory to
@@ -128,7 +140,7 @@ Boto3 documentation:
 [WorkSpaces.Client.associate_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_connection_alias)
 
 Arguments mapping described in
-[AssociateConnectionAliasRequestTypeDef](./type_defs.md#associateconnectionaliasrequesttypedef).
+[AssociateConnectionAliasRequestRequestTypeDef](./type_defs.md#associateconnectionaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,7 +148,7 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 
 Returns
-[AssociateConnectionAliasResultResponseTypeDef](./type_defs.md#associateconnectionaliasresultresponsetypedef).
+[AssociateConnectionAliasResultTypeDef](./type_defs.md#associateconnectionaliasresulttypedef).
 
 ### associate_ip_groups
 
@@ -148,7 +160,7 @@ Boto3 documentation:
 [WorkSpaces.Client.associate_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_ip_groups)
 
 Arguments mapping described in
-[AssociateIpGroupsRequestTypeDef](./type_defs.md#associateipgroupsrequesttypedef).
+[AssociateIpGroupsRequestRequestTypeDef](./type_defs.md#associateipgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,7 +179,7 @@ Boto3 documentation:
 [WorkSpaces.Client.authorize_ip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.authorize_ip_rules)
 
 Arguments mapping described in
-[AuthorizeIpRulesRequestTypeDef](./type_defs.md#authorizeiprulesrequesttypedef).
+[AuthorizeIpRulesRequestRequestTypeDef](./type_defs.md#authorizeiprulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -202,7 +214,7 @@ Boto3 documentation:
 [WorkSpaces.Client.copy_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.copy_workspace_image)
 
 Arguments mapping described in
-[CopyWorkspaceImageRequestTypeDef](./type_defs.md#copyworkspaceimagerequesttypedef).
+[CopyWorkspaceImageRequestRequestTypeDef](./type_defs.md#copyworkspaceimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -213,7 +225,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CopyWorkspaceImageResultResponseTypeDef](./type_defs.md#copyworkspaceimageresultresponsetypedef).
+[CopyWorkspaceImageResultTypeDef](./type_defs.md#copyworkspaceimageresulttypedef).
 
 ### create_connection_alias
 
@@ -226,7 +238,7 @@ Boto3 documentation:
 [WorkSpaces.Client.create_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_connection_alias)
 
 Arguments mapping described in
-[CreateConnectionAliasRequestTypeDef](./type_defs.md#createconnectionaliasrequesttypedef).
+[CreateConnectionAliasRequestRequestTypeDef](./type_defs.md#createconnectionaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -234,7 +246,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateConnectionAliasResultResponseTypeDef](./type_defs.md#createconnectionaliasresultresponsetypedef).
+[CreateConnectionAliasResultTypeDef](./type_defs.md#createconnectionaliasresulttypedef).
 
 ### create_ip_group
 
@@ -246,7 +258,7 @@ Boto3 documentation:
 [WorkSpaces.Client.create_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_ip_group)
 
 Arguments mapping described in
-[CreateIpGroupRequestTypeDef](./type_defs.md#createipgrouprequesttypedef).
+[CreateIpGroupRequestRequestTypeDef](./type_defs.md#createipgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -256,7 +268,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateIpGroupResultResponseTypeDef](./type_defs.md#createipgroupresultresponsetypedef).
+[CreateIpGroupResultTypeDef](./type_defs.md#createipgroupresulttypedef).
 
 ### create_tags
 
@@ -268,7 +280,7 @@ Boto3 documentation:
 [WorkSpaces.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_tags)
 
 Arguments mapping described in
-[CreateTagsRequestTypeDef](./type_defs.md#createtagsrequesttypedef).
+[CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -288,7 +300,7 @@ Boto3 documentation:
 [WorkSpaces.Client.create_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspace_bundle)
 
 Arguments mapping described in
-[CreateWorkspaceBundleRequestTypeDef](./type_defs.md#createworkspacebundlerequesttypedef).
+[CreateWorkspaceBundleRequestRequestTypeDef](./type_defs.md#createworkspacebundlerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -303,7 +315,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateWorkspaceBundleResultResponseTypeDef](./type_defs.md#createworkspacebundleresultresponsetypedef).
+[CreateWorkspaceBundleResultTypeDef](./type_defs.md#createworkspacebundleresulttypedef).
 
 ### create_workspaces
 
@@ -315,7 +327,7 @@ Boto3 documentation:
 [WorkSpaces.Client.create_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspaces)
 
 Arguments mapping described in
-[CreateWorkspacesRequestTypeDef](./type_defs.md#createworkspacesrequesttypedef).
+[CreateWorkspacesRequestRequestTypeDef](./type_defs.md#createworkspacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -324,7 +336,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateWorkspacesResultResponseTypeDef](./type_defs.md#createworkspacesresultresponsetypedef).
+[CreateWorkspacesResultTypeDef](./type_defs.md#createworkspacesresulttypedef).
 
 ### delete_connection_alias
 
@@ -337,7 +349,7 @@ Boto3 documentation:
 [WorkSpaces.Client.delete_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_connection_alias)
 
 Arguments mapping described in
-[DeleteConnectionAliasRequestTypeDef](./type_defs.md#deleteconnectionaliasrequesttypedef).
+[DeleteConnectionAliasRequestRequestTypeDef](./type_defs.md#deleteconnectionaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -355,7 +367,7 @@ Boto3 documentation:
 [WorkSpaces.Client.delete_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_ip_group)
 
 Arguments mapping described in
-[DeleteIpGroupRequestTypeDef](./type_defs.md#deleteipgrouprequesttypedef).
+[DeleteIpGroupRequestRequestTypeDef](./type_defs.md#deleteipgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -373,7 +385,7 @@ Boto3 documentation:
 [WorkSpaces.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_tags)
 
 Arguments mapping described in
-[DeleteTagsRequestTypeDef](./type_defs.md#deletetagsrequesttypedef).
+[DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -393,7 +405,7 @@ Boto3 documentation:
 [WorkSpaces.Client.delete_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_bundle)
 
 Arguments mapping described in
-[DeleteWorkspaceBundleRequestTypeDef](./type_defs.md#deleteworkspacebundlerequesttypedef).
+[DeleteWorkspaceBundleRequestRequestTypeDef](./type_defs.md#deleteworkspacebundlerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -412,7 +424,7 @@ Boto3 documentation:
 [WorkSpaces.Client.delete_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_image)
 
 Arguments mapping described in
-[DeleteWorkspaceImageRequestTypeDef](./type_defs.md#deleteworkspaceimagerequesttypedef).
+[DeleteWorkspaceImageRequestRequestTypeDef](./type_defs.md#deleteworkspaceimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -431,7 +443,7 @@ Boto3 documentation:
 [WorkSpaces.Client.deregister_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.deregister_workspace_directory)
 
 Arguments mapping described in
-[DeregisterWorkspaceDirectoryRequestTypeDef](./type_defs.md#deregisterworkspacedirectoryrequesttypedef).
+[DeregisterWorkspaceDirectoryRequestRequestTypeDef](./type_defs.md#deregisterworkspacedirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -450,7 +462,7 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account)
 
 Returns
-[DescribeAccountResultResponseTypeDef](./type_defs.md#describeaccountresultresponsetypedef).
+[DescribeAccountResultTypeDef](./type_defs.md#describeaccountresulttypedef).
 
 ### describe_account_modifications
 
@@ -464,14 +476,14 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_account_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account_modifications)
 
 Arguments mapping described in
-[DescribeAccountModificationsRequestTypeDef](./type_defs.md#describeaccountmodificationsrequesttypedef).
+[DescribeAccountModificationsRequestRequestTypeDef](./type_defs.md#describeaccountmodificationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[DescribeAccountModificationsResultResponseTypeDef](./type_defs.md#describeaccountmodificationsresultresponsetypedef).
+[DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef).
 
 ### describe_client_properties
 
@@ -485,14 +497,14 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_client_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_client_properties)
 
 Arguments mapping described in
-[DescribeClientPropertiesRequestTypeDef](./type_defs.md#describeclientpropertiesrequesttypedef).
+[DescribeClientPropertiesRequestRequestTypeDef](./type_defs.md#describeclientpropertiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeClientPropertiesResultResponseTypeDef](./type_defs.md#describeclientpropertiesresultresponsetypedef).
+[DescribeClientPropertiesResultTypeDef](./type_defs.md#describeclientpropertiesresulttypedef).
 
 ### describe_connection_alias_permissions
 
@@ -506,7 +518,7 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_connection_alias_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_alias_permissions)
 
 Arguments mapping described in
-[DescribeConnectionAliasPermissionsRequestTypeDef](./type_defs.md#describeconnectionaliaspermissionsrequesttypedef).
+[DescribeConnectionAliasPermissionsRequestRequestTypeDef](./type_defs.md#describeconnectionaliaspermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -515,7 +527,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeConnectionAliasPermissionsResultResponseTypeDef](./type_defs.md#describeconnectionaliaspermissionsresultresponsetypedef).
+[DescribeConnectionAliasPermissionsResultTypeDef](./type_defs.md#describeconnectionaliaspermissionsresulttypedef).
 
 ### describe_connection_aliases
 
@@ -529,7 +541,7 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_connection_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_aliases)
 
 Arguments mapping described in
-[DescribeConnectionAliasesRequestTypeDef](./type_defs.md#describeconnectionaliasesrequesttypedef).
+[DescribeConnectionAliasesRequestRequestTypeDef](./type_defs.md#describeconnectionaliasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -539,7 +551,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeConnectionAliasesResultResponseTypeDef](./type_defs.md#describeconnectionaliasesresultresponsetypedef).
+[DescribeConnectionAliasesResultTypeDef](./type_defs.md#describeconnectionaliasesresulttypedef).
 
 ### describe_ip_groups
 
@@ -551,7 +563,7 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_ip_groups)
 
 Arguments mapping described in
-[DescribeIpGroupsRequestTypeDef](./type_defs.md#describeipgroupsrequesttypedef).
+[DescribeIpGroupsRequestRequestTypeDef](./type_defs.md#describeipgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -560,7 +572,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeIpGroupsResultResponseTypeDef](./type_defs.md#describeipgroupsresultresponsetypedef).
+[DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef).
 
 ### describe_tags
 
@@ -572,14 +584,13 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_tags)
 
 Arguments mapping described in
-[DescribeTagsRequestTypeDef](./type_defs.md#describetagsrequesttypedef).
+[DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 
-Returns
-[DescribeTagsResultResponseTypeDef](./type_defs.md#describetagsresultresponsetypedef).
+Returns [DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef).
 
 ### describe_workspace_bundles
 
@@ -592,7 +603,7 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_bundles)
 
 Arguments mapping described in
-[DescribeWorkspaceBundlesRequestTypeDef](./type_defs.md#describeworkspacebundlesrequesttypedef).
+[DescribeWorkspaceBundlesRequestRequestTypeDef](./type_defs.md#describeworkspacebundlesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -601,7 +612,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWorkspaceBundlesResultResponseTypeDef](./type_defs.md#describeworkspacebundlesresultresponsetypedef).
+[DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef).
 
 ### describe_workspace_directories
 
@@ -614,7 +625,7 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_directories)
 
 Arguments mapping described in
-[DescribeWorkspaceDirectoriesRequestTypeDef](./type_defs.md#describeworkspacedirectoriesrequesttypedef).
+[DescribeWorkspaceDirectoriesRequestRequestTypeDef](./type_defs.md#describeworkspacedirectoriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -623,7 +634,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWorkspaceDirectoriesResultResponseTypeDef](./type_defs.md#describeworkspacedirectoriesresultresponsetypedef).
+[DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef).
 
 ### describe_workspace_image_permissions
 
@@ -637,7 +648,7 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_image_permissions)
 
 Arguments mapping described in
-[DescribeWorkspaceImagePermissionsRequestTypeDef](./type_defs.md#describeworkspaceimagepermissionsrequesttypedef).
+[DescribeWorkspaceImagePermissionsRequestRequestTypeDef](./type_defs.md#describeworkspaceimagepermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -646,7 +657,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeWorkspaceImagePermissionsResultResponseTypeDef](./type_defs.md#describeworkspaceimagepermissionsresultresponsetypedef).
+[DescribeWorkspaceImagePermissionsResultTypeDef](./type_defs.md#describeworkspaceimagepermissionsresulttypedef).
 
 ### describe_workspace_images
 
@@ -660,7 +671,7 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_images)
 
 Arguments mapping described in
-[DescribeWorkspaceImagesRequestTypeDef](./type_defs.md#describeworkspaceimagesrequesttypedef).
+[DescribeWorkspaceImagesRequestRequestTypeDef](./type_defs.md#describeworkspaceimagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -670,7 +681,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeWorkspaceImagesResultResponseTypeDef](./type_defs.md#describeworkspaceimagesresultresponsetypedef).
+[DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef).
 
 ### describe_workspace_snapshots
 
@@ -683,14 +694,14 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_workspace_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_snapshots)
 
 Arguments mapping described in
-[DescribeWorkspaceSnapshotsRequestTypeDef](./type_defs.md#describeworkspacesnapshotsrequesttypedef).
+[DescribeWorkspaceSnapshotsRequestRequestTypeDef](./type_defs.md#describeworkspacesnapshotsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `WorkspaceId`: `str` *(required)*
 
 Returns
-[DescribeWorkspaceSnapshotsResultResponseTypeDef](./type_defs.md#describeworkspacesnapshotsresultresponsetypedef).
+[DescribeWorkspaceSnapshotsResultTypeDef](./type_defs.md#describeworkspacesnapshotsresulttypedef).
 
 ### describe_workspaces
 
@@ -702,7 +713,7 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces)
 
 Arguments mapping described in
-[DescribeWorkspacesRequestTypeDef](./type_defs.md#describeworkspacesrequesttypedef).
+[DescribeWorkspacesRequestRequestTypeDef](./type_defs.md#describeworkspacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -714,7 +725,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWorkspacesResultResponseTypeDef](./type_defs.md#describeworkspacesresultresponsetypedef).
+[DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef).
 
 ### describe_workspaces_connection_status
 
@@ -727,7 +738,7 @@ Boto3 documentation:
 [WorkSpaces.Client.describe_workspaces_connection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces_connection_status)
 
 Arguments mapping described in
-[DescribeWorkspacesConnectionStatusRequestTypeDef](./type_defs.md#describeworkspacesconnectionstatusrequesttypedef).
+[DescribeWorkspacesConnectionStatusRequestRequestTypeDef](./type_defs.md#describeworkspacesconnectionstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -735,7 +746,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeWorkspacesConnectionStatusResultResponseTypeDef](./type_defs.md#describeworkspacesconnectionstatusresultresponsetypedef).
+[DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef).
 
 ### disassociate_connection_alias
 
@@ -748,7 +759,7 @@ Boto3 documentation:
 [WorkSpaces.Client.disassociate_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_connection_alias)
 
 Arguments mapping described in
-[DisassociateConnectionAliasRequestTypeDef](./type_defs.md#disassociateconnectionaliasrequesttypedef).
+[DisassociateConnectionAliasRequestRequestTypeDef](./type_defs.md#disassociateconnectionaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -768,7 +779,7 @@ Boto3 documentation:
 [WorkSpaces.Client.disassociate_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_ip_groups)
 
 Arguments mapping described in
-[DisassociateIpGroupsRequestTypeDef](./type_defs.md#disassociateipgroupsrequesttypedef).
+[DisassociateIpGroupsRequestRequestTypeDef](./type_defs.md#disassociateipgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -808,7 +819,7 @@ Boto3 documentation:
 [WorkSpaces.Client.import_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.import_workspace_image)
 
 Arguments mapping described in
-[ImportWorkspaceImageRequestTypeDef](./type_defs.md#importworkspaceimagerequesttypedef).
+[ImportWorkspaceImageRequestRequestTypeDef](./type_defs.md#importworkspaceimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -822,7 +833,7 @@ Keyword-only arguments:
 - `Applications`: `List`\[[ApplicationType](./literals.md#applicationtype)\]
 
 Returns
-[ImportWorkspaceImageResultResponseTypeDef](./type_defs.md#importworkspaceimageresultresponsetypedef).
+[ImportWorkspaceImageResultTypeDef](./type_defs.md#importworkspaceimageresulttypedef).
 
 ### list_available_management_cidr_ranges
 
@@ -837,7 +848,7 @@ Boto3 documentation:
 [WorkSpaces.Client.list_available_management_cidr_ranges](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.list_available_management_cidr_ranges)
 
 Arguments mapping described in
-[ListAvailableManagementCidrRangesRequestTypeDef](./type_defs.md#listavailablemanagementcidrrangesrequesttypedef).
+[ListAvailableManagementCidrRangesRequestRequestTypeDef](./type_defs.md#listavailablemanagementcidrrangesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -846,7 +857,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAvailableManagementCidrRangesResultResponseTypeDef](./type_defs.md#listavailablemanagementcidrrangesresultresponsetypedef).
+[ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef).
 
 ### migrate_workspace
 
@@ -859,7 +870,7 @@ Boto3 documentation:
 [WorkSpaces.Client.migrate_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.migrate_workspace)
 
 Arguments mapping described in
-[MigrateWorkspaceRequestTypeDef](./type_defs.md#migrateworkspacerequesttypedef).
+[MigrateWorkspaceRequestRequestTypeDef](./type_defs.md#migrateworkspacerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -867,7 +878,7 @@ Keyword-only arguments:
 - `BundleId`: `str` *(required)*
 
 Returns
-[MigrateWorkspaceResultResponseTypeDef](./type_defs.md#migrateworkspaceresultresponsetypedef).
+[MigrateWorkspaceResultTypeDef](./type_defs.md#migrateworkspaceresulttypedef).
 
 ### modify_account
 
@@ -880,7 +891,7 @@ Boto3 documentation:
 [WorkSpaces.Client.modify_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_account)
 
 Arguments mapping described in
-[ModifyAccountRequestTypeDef](./type_defs.md#modifyaccountrequesttypedef).
+[ModifyAccountRequestRequestTypeDef](./type_defs.md#modifyaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -901,7 +912,7 @@ Boto3 documentation:
 [WorkSpaces.Client.modify_client_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_client_properties)
 
 Arguments mapping described in
-[ModifyClientPropertiesRequestTypeDef](./type_defs.md#modifyclientpropertiesrequesttypedef).
+[ModifyClientPropertiesRequestRequestTypeDef](./type_defs.md#modifyclientpropertiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -923,7 +934,7 @@ Boto3 documentation:
 [WorkSpaces.Client.modify_selfservice_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_selfservice_permissions)
 
 Arguments mapping described in
-[ModifySelfservicePermissionsRequestTypeDef](./type_defs.md#modifyselfservicepermissionsrequesttypedef).
+[ModifySelfservicePermissionsRequestRequestTypeDef](./type_defs.md#modifyselfservicepermissionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -946,7 +957,7 @@ Boto3 documentation:
 [WorkSpaces.Client.modify_workspace_access_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_access_properties)
 
 Arguments mapping described in
-[ModifyWorkspaceAccessPropertiesRequestTypeDef](./type_defs.md#modifyworkspaceaccesspropertiesrequesttypedef).
+[ModifyWorkspaceAccessPropertiesRequestRequestTypeDef](./type_defs.md#modifyworkspaceaccesspropertiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -968,7 +979,7 @@ Boto3 documentation:
 [WorkSpaces.Client.modify_workspace_creation_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_creation_properties)
 
 Arguments mapping described in
-[ModifyWorkspaceCreationPropertiesRequestTypeDef](./type_defs.md#modifyworkspacecreationpropertiesrequesttypedef).
+[ModifyWorkspaceCreationPropertiesRequestRequestTypeDef](./type_defs.md#modifyworkspacecreationpropertiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -990,7 +1001,7 @@ Boto3 documentation:
 [WorkSpaces.Client.modify_workspace_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_properties)
 
 Arguments mapping described in
-[ModifyWorkspacePropertiesRequestTypeDef](./type_defs.md#modifyworkspacepropertiesrequesttypedef).
+[ModifyWorkspacePropertiesRequestRequestTypeDef](./type_defs.md#modifyworkspacepropertiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1012,7 +1023,7 @@ Boto3 documentation:
 [WorkSpaces.Client.modify_workspace_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_state)
 
 Arguments mapping described in
-[ModifyWorkspaceStateRequestTypeDef](./type_defs.md#modifyworkspacestaterequesttypedef).
+[ModifyWorkspaceStateRequestRequestTypeDef](./type_defs.md#modifyworkspacestaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1033,7 +1044,7 @@ Boto3 documentation:
 [WorkSpaces.Client.reboot_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.reboot_workspaces)
 
 Arguments mapping described in
-[RebootWorkspacesRequestTypeDef](./type_defs.md#rebootworkspacesrequesttypedef).
+[RebootWorkspacesRequestRequestTypeDef](./type_defs.md#rebootworkspacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1042,7 +1053,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[RebootWorkspacesResultResponseTypeDef](./type_defs.md#rebootworkspacesresultresponsetypedef).
+[RebootWorkspacesResultTypeDef](./type_defs.md#rebootworkspacesresulttypedef).
 
 ### rebuild_workspaces
 
@@ -1054,7 +1065,7 @@ Boto3 documentation:
 [WorkSpaces.Client.rebuild_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.rebuild_workspaces)
 
 Arguments mapping described in
-[RebuildWorkspacesRequestTypeDef](./type_defs.md#rebuildworkspacesrequesttypedef).
+[RebuildWorkspacesRequestRequestTypeDef](./type_defs.md#rebuildworkspacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1063,7 +1074,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[RebuildWorkspacesResultResponseTypeDef](./type_defs.md#rebuildworkspacesresultresponsetypedef).
+[RebuildWorkspacesResultTypeDef](./type_defs.md#rebuildworkspacesresulttypedef).
 
 ### register_workspace_directory
 
@@ -1076,7 +1087,7 @@ Boto3 documentation:
 [WorkSpaces.Client.register_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.register_workspace_directory)
 
 Arguments mapping described in
-[RegisterWorkspaceDirectoryRequestTypeDef](./type_defs.md#registerworkspacedirectoryrequesttypedef).
+[RegisterWorkspaceDirectoryRequestRequestTypeDef](./type_defs.md#registerworkspacedirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1099,7 +1110,7 @@ Boto3 documentation:
 [WorkSpaces.Client.restore_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.restore_workspace)
 
 Arguments mapping described in
-[RestoreWorkspaceRequestTypeDef](./type_defs.md#restoreworkspacerequesttypedef).
+[RestoreWorkspaceRequestRequestTypeDef](./type_defs.md#restoreworkspacerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1117,7 +1128,7 @@ Boto3 documentation:
 [WorkSpaces.Client.revoke_ip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.revoke_ip_rules)
 
 Arguments mapping described in
-[RevokeIpRulesRequestTypeDef](./type_defs.md#revokeiprulesrequesttypedef).
+[RevokeIpRulesRequestRequestTypeDef](./type_defs.md#revokeiprulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1136,7 +1147,7 @@ Boto3 documentation:
 [WorkSpaces.Client.start_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.start_workspaces)
 
 Arguments mapping described in
-[StartWorkspacesRequestTypeDef](./type_defs.md#startworkspacesrequesttypedef).
+[StartWorkspacesRequestRequestTypeDef](./type_defs.md#startworkspacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1145,7 +1156,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[StartWorkspacesResultResponseTypeDef](./type_defs.md#startworkspacesresultresponsetypedef).
+[StartWorkspacesResultTypeDef](./type_defs.md#startworkspacesresulttypedef).
 
 ### stop_workspaces
 
@@ -1157,7 +1168,7 @@ Boto3 documentation:
 [WorkSpaces.Client.stop_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.stop_workspaces)
 
 Arguments mapping described in
-[StopWorkspacesRequestTypeDef](./type_defs.md#stopworkspacesrequesttypedef).
+[StopWorkspacesRequestRequestTypeDef](./type_defs.md#stopworkspacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1166,7 +1177,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[StopWorkspacesResultResponseTypeDef](./type_defs.md#stopworkspacesresultresponsetypedef).
+[StopWorkspacesResultTypeDef](./type_defs.md#stopworkspacesresulttypedef).
 
 ### terminate_workspaces
 
@@ -1178,7 +1189,7 @@ Boto3 documentation:
 [WorkSpaces.Client.terminate_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.terminate_workspaces)
 
 Arguments mapping described in
-[TerminateWorkspacesRequestTypeDef](./type_defs.md#terminateworkspacesrequesttypedef).
+[TerminateWorkspacesRequestRequestTypeDef](./type_defs.md#terminateworkspacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1187,7 +1198,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[TerminateWorkspacesResultResponseTypeDef](./type_defs.md#terminateworkspacesresultresponsetypedef).
+[TerminateWorkspacesResultTypeDef](./type_defs.md#terminateworkspacesresulttypedef).
 
 ### update_connection_alias_permission
 
@@ -1201,7 +1212,7 @@ Boto3 documentation:
 [WorkSpaces.Client.update_connection_alias_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_connection_alias_permission)
 
 Arguments mapping described in
-[UpdateConnectionAliasPermissionRequestTypeDef](./type_defs.md#updateconnectionaliaspermissionrequesttypedef).
+[UpdateConnectionAliasPermissionRequestRequestTypeDef](./type_defs.md#updateconnectionaliaspermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1224,7 +1235,7 @@ Boto3 documentation:
 [WorkSpaces.Client.update_rules_of_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_rules_of_ip_group)
 
 Arguments mapping described in
-[UpdateRulesOfIpGroupRequestTypeDef](./type_defs.md#updaterulesofipgrouprequesttypedef).
+[UpdateRulesOfIpGroupRequestRequestTypeDef](./type_defs.md#updaterulesofipgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1245,7 +1256,7 @@ Boto3 documentation:
 [WorkSpaces.Client.update_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_bundle)
 
 Arguments mapping described in
-[UpdateWorkspaceBundleRequestTypeDef](./type_defs.md#updateworkspacebundlerequesttypedef).
+[UpdateWorkspaceBundleRequestRequestTypeDef](./type_defs.md#updateworkspacebundlerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1266,7 +1277,7 @@ Boto3 documentation:
 [WorkSpaces.Client.update_workspace_image_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_image_permission)
 
 Arguments mapping described in
-[UpdateWorkspaceImagePermissionRequestTypeDef](./type_defs.md#updateworkspaceimagepermissionrequesttypedef).
+[UpdateWorkspaceImagePermissionRequestRequestTypeDef](./type_defs.md#updateworkspaceimagepermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 

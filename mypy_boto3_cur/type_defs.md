@@ -8,30 +8,30 @@ type annotations stubs module
 [mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
 
 - [Typed dictionaries for boto3 CostandUsageReportService module](#typed-dictionaries-for-boto3-costandusagereportservice-module)
-  - [DeleteReportDefinitionRequestTypeDef](#deletereportdefinitionrequesttypedef)
-  - [DeleteReportDefinitionResponseResponseTypeDef](#deletereportdefinitionresponseresponsetypedef)
-  - [DescribeReportDefinitionsRequestTypeDef](#describereportdefinitionsrequesttypedef)
-  - [DescribeReportDefinitionsResponseResponseTypeDef](#describereportdefinitionsresponseresponsetypedef)
-  - [ModifyReportDefinitionRequestTypeDef](#modifyreportdefinitionrequesttypedef)
+  - [DeleteReportDefinitionRequestRequestTypeDef](#deletereportdefinitionrequestrequesttypedef)
+  - [DeleteReportDefinitionResponseTypeDef](#deletereportdefinitionresponsetypedef)
+  - [DescribeReportDefinitionsRequestRequestTypeDef](#describereportdefinitionsrequestrequesttypedef)
+  - [DescribeReportDefinitionsResponseTypeDef](#describereportdefinitionsresponsetypedef)
+  - [ModifyReportDefinitionRequestRequestTypeDef](#modifyreportdefinitionrequestrequesttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutReportDefinitionRequestTypeDef](#putreportdefinitionrequesttypedef)
+  - [PutReportDefinitionRequestRequestTypeDef](#putreportdefinitionrequestrequesttypedef)
   - [ReportDefinitionTypeDef](#reportdefinitiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
-## DeleteReportDefinitionRequestTypeDef
+## DeleteReportDefinitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cur.type_defs import DeleteReportDefinitionRequestTypeDef
+from mypy_boto3_cur.type_defs import DeleteReportDefinitionRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `ReportName`: `str`
 
-## DeleteReportDefinitionResponseResponseTypeDef
+## DeleteReportDefinitionResponseTypeDef
 
 ```python
-from mypy_boto3_cur.type_defs import DeleteReportDefinitionResponseResponseTypeDef
+from mypy_boto3_cur.type_defs import DeleteReportDefinitionResponseTypeDef
 ```
 
 Required fields:
@@ -40,10 +40,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReportDefinitionsRequestTypeDef
+## DescribeReportDefinitionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cur.type_defs import DescribeReportDefinitionsRequestTypeDef
+from mypy_boto3_cur.type_defs import DescribeReportDefinitionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -51,10 +51,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeReportDefinitionsResponseResponseTypeDef
+## DescribeReportDefinitionsResponseTypeDef
 
 ```python
-from mypy_boto3_cur.type_defs import DescribeReportDefinitionsResponseResponseTypeDef
+from mypy_boto3_cur.type_defs import DescribeReportDefinitionsResponseTypeDef
 ```
 
 Required fields:
@@ -65,10 +65,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyReportDefinitionRequestTypeDef
+## ModifyReportDefinitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cur.type_defs import ModifyReportDefinitionRequestTypeDef
+from mypy_boto3_cur.type_defs import ModifyReportDefinitionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -89,10 +89,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutReportDefinitionRequestTypeDef
+## PutReportDefinitionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_cur.type_defs import PutReportDefinitionRequestTypeDef
+from mypy_boto3_cur.type_defs import PutReportDefinitionRequestRequestTypeDef
 ```
 
 Required fields:

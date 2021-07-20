@@ -11,6 +11,7 @@ type annotations stubs module
   - [KinesisVideoClient](#kinesisvideoclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_signaling_channel](#create_signaling_channel)
     - [create_stream](#create_stream)
@@ -81,6 +82,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+KinesisVideoClient exceptions.
+
+Type annotations for `boto3.client("kinesisvideo").exceptions` method.
+
+Boto3 documentation:
+[KinesisVideo.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -107,7 +119,7 @@ Boto3 documentation:
 [KinesisVideo.Client.create_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.create_signaling_channel)
 
 Arguments mapping described in
-[CreateSignalingChannelInputTypeDef](./type_defs.md#createsignalingchannelinputtypedef).
+[CreateSignalingChannelInputRequestTypeDef](./type_defs.md#createsignalingchannelinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -119,7 +131,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSignalingChannelOutputResponseTypeDef](./type_defs.md#createsignalingchanneloutputresponsetypedef).
+[CreateSignalingChannelOutputTypeDef](./type_defs.md#createsignalingchanneloutputtypedef).
 
 ### create_stream
 
@@ -131,7 +143,7 @@ Boto3 documentation:
 [KinesisVideo.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.create_stream)
 
 Arguments mapping described in
-[CreateStreamInputTypeDef](./type_defs.md#createstreaminputtypedef).
+[CreateStreamInputRequestTypeDef](./type_defs.md#createstreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,8 +154,7 @@ Keyword-only arguments:
 - `DataRetentionInHours`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateStreamOutputResponseTypeDef](./type_defs.md#createstreamoutputresponsetypedef).
+Returns [CreateStreamOutputTypeDef](./type_defs.md#createstreamoutputtypedef).
 
 ### delete_signaling_channel
 
@@ -156,7 +167,7 @@ Boto3 documentation:
 [KinesisVideo.Client.delete_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_signaling_channel)
 
 Arguments mapping described in
-[DeleteSignalingChannelInputTypeDef](./type_defs.md#deletesignalingchannelinputtypedef).
+[DeleteSignalingChannelInputRequestTypeDef](./type_defs.md#deletesignalingchannelinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -175,7 +186,7 @@ Boto3 documentation:
 [KinesisVideo.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.delete_stream)
 
 Arguments mapping described in
-[DeleteStreamInputTypeDef](./type_defs.md#deletestreaminputtypedef).
+[DeleteStreamInputRequestTypeDef](./type_defs.md#deletestreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -195,7 +206,7 @@ Boto3 documentation:
 [KinesisVideo.Client.describe_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_signaling_channel)
 
 Arguments mapping described in
-[DescribeSignalingChannelInputTypeDef](./type_defs.md#describesignalingchannelinputtypedef).
+[DescribeSignalingChannelInputRequestTypeDef](./type_defs.md#describesignalingchannelinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -203,7 +214,7 @@ Keyword-only arguments:
 - `ChannelARN`: `str`
 
 Returns
-[DescribeSignalingChannelOutputResponseTypeDef](./type_defs.md#describesignalingchanneloutputresponsetypedef).
+[DescribeSignalingChannelOutputTypeDef](./type_defs.md#describesignalingchanneloutputtypedef).
 
 ### describe_stream
 
@@ -215,7 +226,7 @@ Boto3 documentation:
 [KinesisVideo.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.describe_stream)
 
 Arguments mapping described in
-[DescribeStreamInputTypeDef](./type_defs.md#describestreaminputtypedef).
+[DescribeStreamInputRequestTypeDef](./type_defs.md#describestreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,7 +234,7 @@ Keyword-only arguments:
 - `StreamARN`: `str`
 
 Returns
-[DescribeStreamOutputResponseTypeDef](./type_defs.md#describestreamoutputresponsetypedef).
+[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
 
 ### generate_presigned_url
 
@@ -254,7 +265,7 @@ Boto3 documentation:
 [KinesisVideo.Client.get_data_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.get_data_endpoint)
 
 Arguments mapping described in
-[GetDataEndpointInputTypeDef](./type_defs.md#getdataendpointinputtypedef).
+[GetDataEndpointInputRequestTypeDef](./type_defs.md#getdataendpointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -263,7 +274,7 @@ Keyword-only arguments:
 - `StreamARN`: `str`
 
 Returns
-[GetDataEndpointOutputResponseTypeDef](./type_defs.md#getdataendpointoutputresponsetypedef).
+[GetDataEndpointOutputTypeDef](./type_defs.md#getdataendpointoutputtypedef).
 
 ### get_signaling_channel_endpoint
 
@@ -277,7 +288,7 @@ Boto3 documentation:
 [KinesisVideo.Client.get_signaling_channel_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.get_signaling_channel_endpoint)
 
 Arguments mapping described in
-[GetSignalingChannelEndpointInputTypeDef](./type_defs.md#getsignalingchannelendpointinputtypedef).
+[GetSignalingChannelEndpointInputRequestTypeDef](./type_defs.md#getsignalingchannelendpointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -286,7 +297,7 @@ Keyword-only arguments:
   [SingleMasterChannelEndpointConfigurationTypeDef](./type_defs.md#singlemasterchannelendpointconfigurationtypedef)
 
 Returns
-[GetSignalingChannelEndpointOutputResponseTypeDef](./type_defs.md#getsignalingchannelendpointoutputresponsetypedef).
+[GetSignalingChannelEndpointOutputTypeDef](./type_defs.md#getsignalingchannelendpointoutputtypedef).
 
 ### list_signaling_channels
 
@@ -299,7 +310,7 @@ Boto3 documentation:
 [KinesisVideo.Client.list_signaling_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_signaling_channels)
 
 Arguments mapping described in
-[ListSignalingChannelsInputTypeDef](./type_defs.md#listsignalingchannelsinputtypedef).
+[ListSignalingChannelsInputRequestTypeDef](./type_defs.md#listsignalingchannelsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,7 +320,7 @@ Keyword-only arguments:
   [ChannelNameConditionTypeDef](./type_defs.md#channelnameconditiontypedef)
 
 Returns
-[ListSignalingChannelsOutputResponseTypeDef](./type_defs.md#listsignalingchannelsoutputresponsetypedef).
+[ListSignalingChannelsOutputTypeDef](./type_defs.md#listsignalingchannelsoutputtypedef).
 
 ### list_streams
 
@@ -321,7 +332,7 @@ Boto3 documentation:
 [KinesisVideo.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_streams)
 
 Arguments mapping described in
-[ListStreamsInputTypeDef](./type_defs.md#liststreamsinputtypedef).
+[ListStreamsInputRequestTypeDef](./type_defs.md#liststreamsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -330,8 +341,7 @@ Keyword-only arguments:
 - `StreamNameCondition`:
   [StreamNameConditionTypeDef](./type_defs.md#streamnameconditiontypedef)
 
-Returns
-[ListStreamsOutputResponseTypeDef](./type_defs.md#liststreamsoutputresponsetypedef).
+Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -344,7 +354,7 @@ Boto3 documentation:
 [KinesisVideo.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -352,7 +362,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### list_tags_for_stream
 
@@ -365,7 +375,7 @@ Boto3 documentation:
 [KinesisVideo.Client.list_tags_for_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.list_tags_for_stream)
 
 Arguments mapping described in
-[ListTagsForStreamInputTypeDef](./type_defs.md#listtagsforstreaminputtypedef).
+[ListTagsForStreamInputRequestTypeDef](./type_defs.md#listtagsforstreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -374,7 +384,7 @@ Keyword-only arguments:
 - `StreamName`: `str`
 
 Returns
-[ListTagsForStreamOutputResponseTypeDef](./type_defs.md#listtagsforstreamoutputresponsetypedef).
+[ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef).
 
 ### tag_resource
 
@@ -386,7 +396,7 @@ Boto3 documentation:
 [KinesisVideo.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,7 +415,7 @@ Boto3 documentation:
 [KinesisVideo.Client.tag_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.tag_stream)
 
 Arguments mapping described in
-[TagStreamInputTypeDef](./type_defs.md#tagstreaminputtypedef).
+[TagStreamInputRequestTypeDef](./type_defs.md#tagstreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -425,7 +435,7 @@ Boto3 documentation:
 [KinesisVideo.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -444,7 +454,7 @@ Boto3 documentation:
 [KinesisVideo.Client.untag_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.untag_stream)
 
 Arguments mapping described in
-[UntagStreamInputTypeDef](./type_defs.md#untagstreaminputtypedef).
+[UntagStreamInputRequestTypeDef](./type_defs.md#untagstreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -466,7 +476,7 @@ Boto3 documentation:
 [KinesisVideo.Client.update_data_retention](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_data_retention)
 
 Arguments mapping described in
-[UpdateDataRetentionInputTypeDef](./type_defs.md#updatedataretentioninputtypedef).
+[UpdateDataRetentionInputRequestTypeDef](./type_defs.md#updatedataretentioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -491,7 +501,7 @@ Boto3 documentation:
 [KinesisVideo.Client.update_signaling_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_signaling_channel)
 
 Arguments mapping described in
-[UpdateSignalingChannelInputTypeDef](./type_defs.md#updatesignalingchannelinputtypedef).
+[UpdateSignalingChannelInputRequestTypeDef](./type_defs.md#updatesignalingchannelinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -512,7 +522,7 @@ Boto3 documentation:
 [KinesisVideo.Client.update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.update_stream)
 
 Arguments mapping described in
-[UpdateStreamInputTypeDef](./type_defs.md#updatestreaminputtypedef).
+[UpdateStreamInputRequestTypeDef](./type_defs.md#updatestreaminputrequesttypedef).
 
 Keyword-only arguments:
 

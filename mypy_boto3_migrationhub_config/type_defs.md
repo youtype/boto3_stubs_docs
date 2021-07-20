@@ -8,19 +8,19 @@ type annotations stubs module
 [mypy_boto3_migrationhub_config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
 
 - [Typed dictionaries for boto3 MigrationHubConfig module](#typed-dictionaries-for-boto3-migrationhubconfig-module)
-  - [CreateHomeRegionControlRequestTypeDef](#createhomeregioncontrolrequesttypedef)
-  - [CreateHomeRegionControlResultResponseTypeDef](#createhomeregioncontrolresultresponsetypedef)
-  - [DescribeHomeRegionControlsRequestTypeDef](#describehomeregioncontrolsrequesttypedef)
-  - [DescribeHomeRegionControlsResultResponseTypeDef](#describehomeregioncontrolsresultresponsetypedef)
-  - [GetHomeRegionResultResponseTypeDef](#gethomeregionresultresponsetypedef)
+  - [CreateHomeRegionControlRequestRequestTypeDef](#createhomeregioncontrolrequestrequesttypedef)
+  - [CreateHomeRegionControlResultTypeDef](#createhomeregioncontrolresulttypedef)
+  - [DescribeHomeRegionControlsRequestRequestTypeDef](#describehomeregioncontrolsrequestrequesttypedef)
+  - [DescribeHomeRegionControlsResultTypeDef](#describehomeregioncontrolsresulttypedef)
+  - [GetHomeRegionResultTypeDef](#gethomeregionresulttypedef)
   - [HomeRegionControlTypeDef](#homeregioncontroltypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TargetTypeDef](#targettypedef)
 
-## CreateHomeRegionControlRequestTypeDef
+## CreateHomeRegionControlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_migrationhub_config.type_defs import CreateHomeRegionControlRequestTypeDef
+from mypy_boto3_migrationhub_config.type_defs import CreateHomeRegionControlRequestRequestTypeDef
 ```
 
 Required fields:
@@ -32,10 +32,10 @@ Optional fields:
 
 - `DryRun`: `bool`
 
-## CreateHomeRegionControlResultResponseTypeDef
+## CreateHomeRegionControlResultTypeDef
 
 ```python
-from mypy_boto3_migrationhub_config.type_defs import CreateHomeRegionControlResultResponseTypeDef
+from mypy_boto3_migrationhub_config.type_defs import CreateHomeRegionControlResultTypeDef
 ```
 
 Required fields:
@@ -45,10 +45,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeHomeRegionControlsRequestTypeDef
+## DescribeHomeRegionControlsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_migrationhub_config.type_defs import DescribeHomeRegionControlsRequestTypeDef
+from mypy_boto3_migrationhub_config.type_defs import DescribeHomeRegionControlsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -59,10 +59,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeHomeRegionControlsResultResponseTypeDef
+## DescribeHomeRegionControlsResultTypeDef
 
 ```python
-from mypy_boto3_migrationhub_config.type_defs import DescribeHomeRegionControlsResultResponseTypeDef
+from mypy_boto3_migrationhub_config.type_defs import DescribeHomeRegionControlsResultTypeDef
 ```
 
 Required fields:
@@ -73,10 +73,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetHomeRegionResultResponseTypeDef
+## GetHomeRegionResultTypeDef
 
 ```python
-from mypy_boto3_migrationhub_config.type_defs import GetHomeRegionResultResponseTypeDef
+from mypy_boto3_migrationhub_config.type_defs import GetHomeRegionResultTypeDef
 ```
 
 Required fields:

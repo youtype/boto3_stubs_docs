@@ -11,6 +11,7 @@ type annotations stubs module
   - [SavingsPlansClient](#savingsplansclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_savings_plan](#create_savings_plan)
     - [delete_queued_savings_plan](#delete_queued_savings_plan)
@@ -61,6 +62,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SavingsPlansClient exceptions.
+
+Type annotations for `boto3.client("savingsplans").exceptions` method.
+
+Boto3 documentation:
+[SavingsPlans.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -86,7 +98,7 @@ Boto3 documentation:
 [SavingsPlans.Client.create_savings_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.create_savings_plan)
 
 Arguments mapping described in
-[CreateSavingsPlanRequestTypeDef](./type_defs.md#createsavingsplanrequesttypedef).
+[CreateSavingsPlanRequestRequestTypeDef](./type_defs.md#createsavingsplanrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -98,7 +110,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSavingsPlanResponseResponseTypeDef](./type_defs.md#createsavingsplanresponseresponsetypedef).
+[CreateSavingsPlanResponseTypeDef](./type_defs.md#createsavingsplanresponsetypedef).
 
 ### delete_queued_savings_plan
 
@@ -111,7 +123,7 @@ Boto3 documentation:
 [SavingsPlans.Client.delete_queued_savings_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.delete_queued_savings_plan)
 
 Arguments mapping described in
-[DeleteQueuedSavingsPlanRequestTypeDef](./type_defs.md#deletequeuedsavingsplanrequesttypedef).
+[DeleteQueuedSavingsPlanRequestRequestTypeDef](./type_defs.md#deletequeuedsavingsplanrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -130,7 +142,7 @@ Boto3 documentation:
 [SavingsPlans.Client.describe_savings_plan_rates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plan_rates)
 
 Arguments mapping described in
-[DescribeSavingsPlanRatesRequestTypeDef](./type_defs.md#describesavingsplanratesrequesttypedef).
+[DescribeSavingsPlanRatesRequestRequestTypeDef](./type_defs.md#describesavingsplanratesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -141,7 +153,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeSavingsPlanRatesResponseResponseTypeDef](./type_defs.md#describesavingsplanratesresponseresponsetypedef).
+[DescribeSavingsPlanRatesResponseTypeDef](./type_defs.md#describesavingsplanratesresponsetypedef).
 
 ### describe_savings_plans
 
@@ -154,7 +166,7 @@ Boto3 documentation:
 [SavingsPlans.Client.describe_savings_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans)
 
 Arguments mapping described in
-[DescribeSavingsPlansRequestTypeDef](./type_defs.md#describesavingsplansrequesttypedef).
+[DescribeSavingsPlansRequestRequestTypeDef](./type_defs.md#describesavingsplansrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -168,7 +180,7 @@ Keyword-only arguments:
   `List`\[[SavingsPlanFilterTypeDef](./type_defs.md#savingsplanfiltertypedef)\]
 
 Returns
-[DescribeSavingsPlansResponseResponseTypeDef](./type_defs.md#describesavingsplansresponseresponsetypedef).
+[DescribeSavingsPlansResponseTypeDef](./type_defs.md#describesavingsplansresponsetypedef).
 
 ### describe_savings_plans_offering_rates
 
@@ -181,7 +193,7 @@ Boto3 documentation:
 [SavingsPlans.Client.describe_savings_plans_offering_rates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offering_rates)
 
 Arguments mapping described in
-[DescribeSavingsPlansOfferingRatesRequestTypeDef](./type_defs.md#describesavingsplansofferingratesrequesttypedef).
+[DescribeSavingsPlansOfferingRatesRequestRequestTypeDef](./type_defs.md#describesavingsplansofferingratesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -202,7 +214,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeSavingsPlansOfferingRatesResponseResponseTypeDef](./type_defs.md#describesavingsplansofferingratesresponseresponsetypedef).
+[DescribeSavingsPlansOfferingRatesResponseTypeDef](./type_defs.md#describesavingsplansofferingratesresponsetypedef).
 
 ### describe_savings_plans_offerings
 
@@ -215,7 +227,7 @@ Boto3 documentation:
 [SavingsPlans.Client.describe_savings_plans_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offerings)
 
 Arguments mapping described in
-[DescribeSavingsPlansOfferingsRequestTypeDef](./type_defs.md#describesavingsplansofferingsrequesttypedef).
+[DescribeSavingsPlansOfferingsRequestRequestTypeDef](./type_defs.md#describesavingsplansofferingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -238,7 +250,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeSavingsPlansOfferingsResponseResponseTypeDef](./type_defs.md#describesavingsplansofferingsresponseresponsetypedef).
+[DescribeSavingsPlansOfferingsResponseTypeDef](./type_defs.md#describesavingsplansofferingsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -270,14 +282,14 @@ Boto3 documentation:
 [SavingsPlans.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -289,7 +301,7 @@ Boto3 documentation:
 [SavingsPlans.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,7 +320,7 @@ Boto3 documentation:
 [SavingsPlans.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

@@ -8,45 +8,45 @@ type annotations stubs module
 [mypy_boto3_proton](https://pypi.org/project/mypy-boto3-proton/).
 
 - [Typed dictionaries for boto3 Proton module](#typed-dictionaries-for-boto3-proton-module)
-  - [AcceptEnvironmentAccountConnectionInputTypeDef](#acceptenvironmentaccountconnectioninputtypedef)
-  - [AcceptEnvironmentAccountConnectionOutputResponseTypeDef](#acceptenvironmentaccountconnectionoutputresponsetypedef)
+  - [AcceptEnvironmentAccountConnectionInputRequestTypeDef](#acceptenvironmentaccountconnectioninputrequesttypedef)
+  - [AcceptEnvironmentAccountConnectionOutputTypeDef](#acceptenvironmentaccountconnectionoutputtypedef)
   - [AccountSettingsTypeDef](#accountsettingstypedef)
-  - [CancelEnvironmentDeploymentInputTypeDef](#cancelenvironmentdeploymentinputtypedef)
-  - [CancelEnvironmentDeploymentOutputResponseTypeDef](#cancelenvironmentdeploymentoutputresponsetypedef)
-  - [CancelServiceInstanceDeploymentInputTypeDef](#cancelserviceinstancedeploymentinputtypedef)
-  - [CancelServiceInstanceDeploymentOutputResponseTypeDef](#cancelserviceinstancedeploymentoutputresponsetypedef)
-  - [CancelServicePipelineDeploymentInputTypeDef](#cancelservicepipelinedeploymentinputtypedef)
-  - [CancelServicePipelineDeploymentOutputResponseTypeDef](#cancelservicepipelinedeploymentoutputresponsetypedef)
+  - [CancelEnvironmentDeploymentInputRequestTypeDef](#cancelenvironmentdeploymentinputrequesttypedef)
+  - [CancelEnvironmentDeploymentOutputTypeDef](#cancelenvironmentdeploymentoutputtypedef)
+  - [CancelServiceInstanceDeploymentInputRequestTypeDef](#cancelserviceinstancedeploymentinputrequesttypedef)
+  - [CancelServiceInstanceDeploymentOutputTypeDef](#cancelserviceinstancedeploymentoutputtypedef)
+  - [CancelServicePipelineDeploymentInputRequestTypeDef](#cancelservicepipelinedeploymentinputrequesttypedef)
+  - [CancelServicePipelineDeploymentOutputTypeDef](#cancelservicepipelinedeploymentoutputtypedef)
   - [CompatibleEnvironmentTemplateInputTypeDef](#compatibleenvironmenttemplateinputtypedef)
   - [CompatibleEnvironmentTemplateTypeDef](#compatibleenvironmenttemplatetypedef)
-  - [CreateEnvironmentAccountConnectionInputTypeDef](#createenvironmentaccountconnectioninputtypedef)
-  - [CreateEnvironmentAccountConnectionOutputResponseTypeDef](#createenvironmentaccountconnectionoutputresponsetypedef)
-  - [CreateEnvironmentInputTypeDef](#createenvironmentinputtypedef)
-  - [CreateEnvironmentOutputResponseTypeDef](#createenvironmentoutputresponsetypedef)
-  - [CreateEnvironmentTemplateInputTypeDef](#createenvironmenttemplateinputtypedef)
-  - [CreateEnvironmentTemplateOutputResponseTypeDef](#createenvironmenttemplateoutputresponsetypedef)
-  - [CreateEnvironmentTemplateVersionInputTypeDef](#createenvironmenttemplateversioninputtypedef)
-  - [CreateEnvironmentTemplateVersionOutputResponseTypeDef](#createenvironmenttemplateversionoutputresponsetypedef)
-  - [CreateServiceInputTypeDef](#createserviceinputtypedef)
-  - [CreateServiceOutputResponseTypeDef](#createserviceoutputresponsetypedef)
-  - [CreateServiceTemplateInputTypeDef](#createservicetemplateinputtypedef)
-  - [CreateServiceTemplateOutputResponseTypeDef](#createservicetemplateoutputresponsetypedef)
-  - [CreateServiceTemplateVersionInputTypeDef](#createservicetemplateversioninputtypedef)
-  - [CreateServiceTemplateVersionOutputResponseTypeDef](#createservicetemplateversionoutputresponsetypedef)
-  - [DeleteEnvironmentAccountConnectionInputTypeDef](#deleteenvironmentaccountconnectioninputtypedef)
-  - [DeleteEnvironmentAccountConnectionOutputResponseTypeDef](#deleteenvironmentaccountconnectionoutputresponsetypedef)
-  - [DeleteEnvironmentInputTypeDef](#deleteenvironmentinputtypedef)
-  - [DeleteEnvironmentOutputResponseTypeDef](#deleteenvironmentoutputresponsetypedef)
-  - [DeleteEnvironmentTemplateInputTypeDef](#deleteenvironmenttemplateinputtypedef)
-  - [DeleteEnvironmentTemplateOutputResponseTypeDef](#deleteenvironmenttemplateoutputresponsetypedef)
-  - [DeleteEnvironmentTemplateVersionInputTypeDef](#deleteenvironmenttemplateversioninputtypedef)
-  - [DeleteEnvironmentTemplateVersionOutputResponseTypeDef](#deleteenvironmenttemplateversionoutputresponsetypedef)
-  - [DeleteServiceInputTypeDef](#deleteserviceinputtypedef)
-  - [DeleteServiceOutputResponseTypeDef](#deleteserviceoutputresponsetypedef)
-  - [DeleteServiceTemplateInputTypeDef](#deleteservicetemplateinputtypedef)
-  - [DeleteServiceTemplateOutputResponseTypeDef](#deleteservicetemplateoutputresponsetypedef)
-  - [DeleteServiceTemplateVersionInputTypeDef](#deleteservicetemplateversioninputtypedef)
-  - [DeleteServiceTemplateVersionOutputResponseTypeDef](#deleteservicetemplateversionoutputresponsetypedef)
+  - [CreateEnvironmentAccountConnectionInputRequestTypeDef](#createenvironmentaccountconnectioninputrequesttypedef)
+  - [CreateEnvironmentAccountConnectionOutputTypeDef](#createenvironmentaccountconnectionoutputtypedef)
+  - [CreateEnvironmentInputRequestTypeDef](#createenvironmentinputrequesttypedef)
+  - [CreateEnvironmentOutputTypeDef](#createenvironmentoutputtypedef)
+  - [CreateEnvironmentTemplateInputRequestTypeDef](#createenvironmenttemplateinputrequesttypedef)
+  - [CreateEnvironmentTemplateOutputTypeDef](#createenvironmenttemplateoutputtypedef)
+  - [CreateEnvironmentTemplateVersionInputRequestTypeDef](#createenvironmenttemplateversioninputrequesttypedef)
+  - [CreateEnvironmentTemplateVersionOutputTypeDef](#createenvironmenttemplateversionoutputtypedef)
+  - [CreateServiceInputRequestTypeDef](#createserviceinputrequesttypedef)
+  - [CreateServiceOutputTypeDef](#createserviceoutputtypedef)
+  - [CreateServiceTemplateInputRequestTypeDef](#createservicetemplateinputrequesttypedef)
+  - [CreateServiceTemplateOutputTypeDef](#createservicetemplateoutputtypedef)
+  - [CreateServiceTemplateVersionInputRequestTypeDef](#createservicetemplateversioninputrequesttypedef)
+  - [CreateServiceTemplateVersionOutputTypeDef](#createservicetemplateversionoutputtypedef)
+  - [DeleteEnvironmentAccountConnectionInputRequestTypeDef](#deleteenvironmentaccountconnectioninputrequesttypedef)
+  - [DeleteEnvironmentAccountConnectionOutputTypeDef](#deleteenvironmentaccountconnectionoutputtypedef)
+  - [DeleteEnvironmentInputRequestTypeDef](#deleteenvironmentinputrequesttypedef)
+  - [DeleteEnvironmentOutputTypeDef](#deleteenvironmentoutputtypedef)
+  - [DeleteEnvironmentTemplateInputRequestTypeDef](#deleteenvironmenttemplateinputrequesttypedef)
+  - [DeleteEnvironmentTemplateOutputTypeDef](#deleteenvironmenttemplateoutputtypedef)
+  - [DeleteEnvironmentTemplateVersionInputRequestTypeDef](#deleteenvironmenttemplateversioninputrequesttypedef)
+  - [DeleteEnvironmentTemplateVersionOutputTypeDef](#deleteenvironmenttemplateversionoutputtypedef)
+  - [DeleteServiceInputRequestTypeDef](#deleteserviceinputrequesttypedef)
+  - [DeleteServiceOutputTypeDef](#deleteserviceoutputtypedef)
+  - [DeleteServiceTemplateInputRequestTypeDef](#deleteservicetemplateinputrequesttypedef)
+  - [DeleteServiceTemplateOutputTypeDef](#deleteservicetemplateoutputtypedef)
+  - [DeleteServiceTemplateVersionInputRequestTypeDef](#deleteservicetemplateversioninputrequesttypedef)
+  - [DeleteServiceTemplateVersionOutputTypeDef](#deleteservicetemplateversionoutputtypedef)
   - [EnvironmentAccountConnectionSummaryTypeDef](#environmentaccountconnectionsummarytypedef)
   - [EnvironmentAccountConnectionTypeDef](#environmentaccountconnectiontypedef)
   - [EnvironmentSummaryTypeDef](#environmentsummarytypedef)
@@ -56,44 +56,44 @@ type annotations stubs module
   - [EnvironmentTemplateVersionSummaryTypeDef](#environmenttemplateversionsummarytypedef)
   - [EnvironmentTemplateVersionTypeDef](#environmenttemplateversiontypedef)
   - [EnvironmentTypeDef](#environmenttypedef)
-  - [GetAccountSettingsOutputResponseTypeDef](#getaccountsettingsoutputresponsetypedef)
-  - [GetEnvironmentAccountConnectionInputTypeDef](#getenvironmentaccountconnectioninputtypedef)
-  - [GetEnvironmentAccountConnectionOutputResponseTypeDef](#getenvironmentaccountconnectionoutputresponsetypedef)
-  - [GetEnvironmentInputTypeDef](#getenvironmentinputtypedef)
-  - [GetEnvironmentOutputResponseTypeDef](#getenvironmentoutputresponsetypedef)
-  - [GetEnvironmentTemplateInputTypeDef](#getenvironmenttemplateinputtypedef)
-  - [GetEnvironmentTemplateOutputResponseTypeDef](#getenvironmenttemplateoutputresponsetypedef)
-  - [GetEnvironmentTemplateVersionInputTypeDef](#getenvironmenttemplateversioninputtypedef)
-  - [GetEnvironmentTemplateVersionOutputResponseTypeDef](#getenvironmenttemplateversionoutputresponsetypedef)
-  - [GetServiceInputTypeDef](#getserviceinputtypedef)
-  - [GetServiceInstanceInputTypeDef](#getserviceinstanceinputtypedef)
-  - [GetServiceInstanceOutputResponseTypeDef](#getserviceinstanceoutputresponsetypedef)
-  - [GetServiceOutputResponseTypeDef](#getserviceoutputresponsetypedef)
-  - [GetServiceTemplateInputTypeDef](#getservicetemplateinputtypedef)
-  - [GetServiceTemplateOutputResponseTypeDef](#getservicetemplateoutputresponsetypedef)
-  - [GetServiceTemplateVersionInputTypeDef](#getservicetemplateversioninputtypedef)
-  - [GetServiceTemplateVersionOutputResponseTypeDef](#getservicetemplateversionoutputresponsetypedef)
-  - [ListEnvironmentAccountConnectionsInputTypeDef](#listenvironmentaccountconnectionsinputtypedef)
-  - [ListEnvironmentAccountConnectionsOutputResponseTypeDef](#listenvironmentaccountconnectionsoutputresponsetypedef)
-  - [ListEnvironmentTemplateVersionsInputTypeDef](#listenvironmenttemplateversionsinputtypedef)
-  - [ListEnvironmentTemplateVersionsOutputResponseTypeDef](#listenvironmenttemplateversionsoutputresponsetypedef)
-  - [ListEnvironmentTemplatesInputTypeDef](#listenvironmenttemplatesinputtypedef)
-  - [ListEnvironmentTemplatesOutputResponseTypeDef](#listenvironmenttemplatesoutputresponsetypedef)
-  - [ListEnvironmentsInputTypeDef](#listenvironmentsinputtypedef)
-  - [ListEnvironmentsOutputResponseTypeDef](#listenvironmentsoutputresponsetypedef)
-  - [ListServiceInstancesInputTypeDef](#listserviceinstancesinputtypedef)
-  - [ListServiceInstancesOutputResponseTypeDef](#listserviceinstancesoutputresponsetypedef)
-  - [ListServiceTemplateVersionsInputTypeDef](#listservicetemplateversionsinputtypedef)
-  - [ListServiceTemplateVersionsOutputResponseTypeDef](#listservicetemplateversionsoutputresponsetypedef)
-  - [ListServiceTemplatesInputTypeDef](#listservicetemplatesinputtypedef)
-  - [ListServiceTemplatesOutputResponseTypeDef](#listservicetemplatesoutputresponsetypedef)
-  - [ListServicesInputTypeDef](#listservicesinputtypedef)
-  - [ListServicesOutputResponseTypeDef](#listservicesoutputresponsetypedef)
-  - [ListTagsForResourceInputTypeDef](#listtagsforresourceinputtypedef)
-  - [ListTagsForResourceOutputResponseTypeDef](#listtagsforresourceoutputresponsetypedef)
+  - [GetAccountSettingsOutputTypeDef](#getaccountsettingsoutputtypedef)
+  - [GetEnvironmentAccountConnectionInputRequestTypeDef](#getenvironmentaccountconnectioninputrequesttypedef)
+  - [GetEnvironmentAccountConnectionOutputTypeDef](#getenvironmentaccountconnectionoutputtypedef)
+  - [GetEnvironmentInputRequestTypeDef](#getenvironmentinputrequesttypedef)
+  - [GetEnvironmentOutputTypeDef](#getenvironmentoutputtypedef)
+  - [GetEnvironmentTemplateInputRequestTypeDef](#getenvironmenttemplateinputrequesttypedef)
+  - [GetEnvironmentTemplateOutputTypeDef](#getenvironmenttemplateoutputtypedef)
+  - [GetEnvironmentTemplateVersionInputRequestTypeDef](#getenvironmenttemplateversioninputrequesttypedef)
+  - [GetEnvironmentTemplateVersionOutputTypeDef](#getenvironmenttemplateversionoutputtypedef)
+  - [GetServiceInputRequestTypeDef](#getserviceinputrequesttypedef)
+  - [GetServiceInstanceInputRequestTypeDef](#getserviceinstanceinputrequesttypedef)
+  - [GetServiceInstanceOutputTypeDef](#getserviceinstanceoutputtypedef)
+  - [GetServiceOutputTypeDef](#getserviceoutputtypedef)
+  - [GetServiceTemplateInputRequestTypeDef](#getservicetemplateinputrequesttypedef)
+  - [GetServiceTemplateOutputTypeDef](#getservicetemplateoutputtypedef)
+  - [GetServiceTemplateVersionInputRequestTypeDef](#getservicetemplateversioninputrequesttypedef)
+  - [GetServiceTemplateVersionOutputTypeDef](#getservicetemplateversionoutputtypedef)
+  - [ListEnvironmentAccountConnectionsInputRequestTypeDef](#listenvironmentaccountconnectionsinputrequesttypedef)
+  - [ListEnvironmentAccountConnectionsOutputTypeDef](#listenvironmentaccountconnectionsoutputtypedef)
+  - [ListEnvironmentTemplateVersionsInputRequestTypeDef](#listenvironmenttemplateversionsinputrequesttypedef)
+  - [ListEnvironmentTemplateVersionsOutputTypeDef](#listenvironmenttemplateversionsoutputtypedef)
+  - [ListEnvironmentTemplatesInputRequestTypeDef](#listenvironmenttemplatesinputrequesttypedef)
+  - [ListEnvironmentTemplatesOutputTypeDef](#listenvironmenttemplatesoutputtypedef)
+  - [ListEnvironmentsInputRequestTypeDef](#listenvironmentsinputrequesttypedef)
+  - [ListEnvironmentsOutputTypeDef](#listenvironmentsoutputtypedef)
+  - [ListServiceInstancesInputRequestTypeDef](#listserviceinstancesinputrequesttypedef)
+  - [ListServiceInstancesOutputTypeDef](#listserviceinstancesoutputtypedef)
+  - [ListServiceTemplateVersionsInputRequestTypeDef](#listservicetemplateversionsinputrequesttypedef)
+  - [ListServiceTemplateVersionsOutputTypeDef](#listservicetemplateversionsoutputtypedef)
+  - [ListServiceTemplatesInputRequestTypeDef](#listservicetemplatesinputrequesttypedef)
+  - [ListServiceTemplatesOutputTypeDef](#listservicetemplatesoutputtypedef)
+  - [ListServicesInputRequestTypeDef](#listservicesinputrequesttypedef)
+  - [ListServicesOutputTypeDef](#listservicesoutputtypedef)
+  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
+  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [RejectEnvironmentAccountConnectionInputTypeDef](#rejectenvironmentaccountconnectioninputtypedef)
-  - [RejectEnvironmentAccountConnectionOutputResponseTypeDef](#rejectenvironmentaccountconnectionoutputresponsetypedef)
+  - [RejectEnvironmentAccountConnectionInputRequestTypeDef](#rejectenvironmentaccountconnectioninputrequesttypedef)
+  - [RejectEnvironmentAccountConnectionOutputTypeDef](#rejectenvironmentaccountconnectionoutputtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3ObjectSourceTypeDef](#s3objectsourcetypedef)
   - [ServiceInstanceSummaryTypeDef](#serviceinstancesummarytypedef)
@@ -105,46 +105,46 @@ type annotations stubs module
   - [ServiceTemplateVersionSummaryTypeDef](#servicetemplateversionsummarytypedef)
   - [ServiceTemplateVersionTypeDef](#servicetemplateversiontypedef)
   - [ServiceTypeDef](#servicetypedef)
-  - [TagResourceInputTypeDef](#tagresourceinputtypedef)
+  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TemplateVersionSourceInputTypeDef](#templateversionsourceinputtypedef)
-  - [UntagResourceInputTypeDef](#untagresourceinputtypedef)
-  - [UpdateAccountSettingsInputTypeDef](#updateaccountsettingsinputtypedef)
-  - [UpdateAccountSettingsOutputResponseTypeDef](#updateaccountsettingsoutputresponsetypedef)
-  - [UpdateEnvironmentAccountConnectionInputTypeDef](#updateenvironmentaccountconnectioninputtypedef)
-  - [UpdateEnvironmentAccountConnectionOutputResponseTypeDef](#updateenvironmentaccountconnectionoutputresponsetypedef)
-  - [UpdateEnvironmentInputTypeDef](#updateenvironmentinputtypedef)
-  - [UpdateEnvironmentOutputResponseTypeDef](#updateenvironmentoutputresponsetypedef)
-  - [UpdateEnvironmentTemplateInputTypeDef](#updateenvironmenttemplateinputtypedef)
-  - [UpdateEnvironmentTemplateOutputResponseTypeDef](#updateenvironmenttemplateoutputresponsetypedef)
-  - [UpdateEnvironmentTemplateVersionInputTypeDef](#updateenvironmenttemplateversioninputtypedef)
-  - [UpdateEnvironmentTemplateVersionOutputResponseTypeDef](#updateenvironmenttemplateversionoutputresponsetypedef)
-  - [UpdateServiceInputTypeDef](#updateserviceinputtypedef)
-  - [UpdateServiceInstanceInputTypeDef](#updateserviceinstanceinputtypedef)
-  - [UpdateServiceInstanceOutputResponseTypeDef](#updateserviceinstanceoutputresponsetypedef)
-  - [UpdateServiceOutputResponseTypeDef](#updateserviceoutputresponsetypedef)
-  - [UpdateServicePipelineInputTypeDef](#updateservicepipelineinputtypedef)
-  - [UpdateServicePipelineOutputResponseTypeDef](#updateservicepipelineoutputresponsetypedef)
-  - [UpdateServiceTemplateInputTypeDef](#updateservicetemplateinputtypedef)
-  - [UpdateServiceTemplateOutputResponseTypeDef](#updateservicetemplateoutputresponsetypedef)
-  - [UpdateServiceTemplateVersionInputTypeDef](#updateservicetemplateversioninputtypedef)
-  - [UpdateServiceTemplateVersionOutputResponseTypeDef](#updateservicetemplateversionoutputresponsetypedef)
+  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
+  - [UpdateAccountSettingsInputRequestTypeDef](#updateaccountsettingsinputrequesttypedef)
+  - [UpdateAccountSettingsOutputTypeDef](#updateaccountsettingsoutputtypedef)
+  - [UpdateEnvironmentAccountConnectionInputRequestTypeDef](#updateenvironmentaccountconnectioninputrequesttypedef)
+  - [UpdateEnvironmentAccountConnectionOutputTypeDef](#updateenvironmentaccountconnectionoutputtypedef)
+  - [UpdateEnvironmentInputRequestTypeDef](#updateenvironmentinputrequesttypedef)
+  - [UpdateEnvironmentOutputTypeDef](#updateenvironmentoutputtypedef)
+  - [UpdateEnvironmentTemplateInputRequestTypeDef](#updateenvironmenttemplateinputrequesttypedef)
+  - [UpdateEnvironmentTemplateOutputTypeDef](#updateenvironmenttemplateoutputtypedef)
+  - [UpdateEnvironmentTemplateVersionInputRequestTypeDef](#updateenvironmenttemplateversioninputrequesttypedef)
+  - [UpdateEnvironmentTemplateVersionOutputTypeDef](#updateenvironmenttemplateversionoutputtypedef)
+  - [UpdateServiceInputRequestTypeDef](#updateserviceinputrequesttypedef)
+  - [UpdateServiceInstanceInputRequestTypeDef](#updateserviceinstanceinputrequesttypedef)
+  - [UpdateServiceInstanceOutputTypeDef](#updateserviceinstanceoutputtypedef)
+  - [UpdateServiceOutputTypeDef](#updateserviceoutputtypedef)
+  - [UpdateServicePipelineInputRequestTypeDef](#updateservicepipelineinputrequesttypedef)
+  - [UpdateServicePipelineOutputTypeDef](#updateservicepipelineoutputtypedef)
+  - [UpdateServiceTemplateInputRequestTypeDef](#updateservicetemplateinputrequesttypedef)
+  - [UpdateServiceTemplateOutputTypeDef](#updateservicetemplateoutputtypedef)
+  - [UpdateServiceTemplateVersionInputRequestTypeDef](#updateservicetemplateversioninputrequesttypedef)
+  - [UpdateServiceTemplateVersionOutputTypeDef](#updateservicetemplateversionoutputtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
-## AcceptEnvironmentAccountConnectionInputTypeDef
+## AcceptEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionInputTypeDef
+from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionInputRequestTypeDef
 ```
 
 Required fields:
 
 - `id`: `str`
 
-## AcceptEnvironmentAccountConnectionOutputResponseTypeDef
+## AcceptEnvironmentAccountConnectionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionOutputTypeDef
 ```
 
 Required fields:
@@ -164,20 +164,20 @@ Optional fields:
 
 - `pipelineServiceRoleArn`: `str`
 
-## CancelEnvironmentDeploymentInputTypeDef
+## CancelEnvironmentDeploymentInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CancelEnvironmentDeploymentInputTypeDef
+from mypy_boto3_proton.type_defs import CancelEnvironmentDeploymentInputRequestTypeDef
 ```
 
 Required fields:
 
 - `environmentName`: `str`
 
-## CancelEnvironmentDeploymentOutputResponseTypeDef
+## CancelEnvironmentDeploymentOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CancelEnvironmentDeploymentOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import CancelEnvironmentDeploymentOutputTypeDef
 ```
 
 Required fields:
@@ -186,10 +186,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CancelServiceInstanceDeploymentInputTypeDef
+## CancelServiceInstanceDeploymentInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CancelServiceInstanceDeploymentInputTypeDef
+from mypy_boto3_proton.type_defs import CancelServiceInstanceDeploymentInputRequestTypeDef
 ```
 
 Required fields:
@@ -197,10 +197,10 @@ Required fields:
 - `serviceInstanceName`: `str`
 - `serviceName`: `str`
 
-## CancelServiceInstanceDeploymentOutputResponseTypeDef
+## CancelServiceInstanceDeploymentOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CancelServiceInstanceDeploymentOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import CancelServiceInstanceDeploymentOutputTypeDef
 ```
 
 Required fields:
@@ -210,20 +210,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CancelServicePipelineDeploymentInputTypeDef
+## CancelServicePipelineDeploymentInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CancelServicePipelineDeploymentInputTypeDef
+from mypy_boto3_proton.type_defs import CancelServicePipelineDeploymentInputRequestTypeDef
 ```
 
 Required fields:
 
 - `serviceName`: `str`
 
-## CancelServicePipelineDeploymentOutputResponseTypeDef
+## CancelServicePipelineDeploymentOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CancelServicePipelineDeploymentOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import CancelServicePipelineDeploymentOutputTypeDef
 ```
 
 Required fields:
@@ -254,10 +254,10 @@ Required fields:
 - `majorVersion`: `str`
 - `templateName`: `str`
 
-## CreateEnvironmentAccountConnectionInputTypeDef
+## CreateEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateEnvironmentAccountConnectionInputTypeDef
+from mypy_boto3_proton.type_defs import CreateEnvironmentAccountConnectionInputRequestTypeDef
 ```
 
 Required fields:
@@ -270,10 +270,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## CreateEnvironmentAccountConnectionOutputResponseTypeDef
+## CreateEnvironmentAccountConnectionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateEnvironmentAccountConnectionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import CreateEnvironmentAccountConnectionOutputTypeDef
 ```
 
 Required fields:
@@ -283,10 +283,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateEnvironmentInputTypeDef
+## CreateEnvironmentInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateEnvironmentInputTypeDef
+from mypy_boto3_proton.type_defs import CreateEnvironmentInputRequestTypeDef
 ```
 
 Required fields:
@@ -304,10 +304,10 @@ Optional fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `templateMinorVersion`: `str`
 
-## CreateEnvironmentOutputResponseTypeDef
+## CreateEnvironmentOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateEnvironmentOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import CreateEnvironmentOutputTypeDef
 ```
 
 Required fields:
@@ -316,10 +316,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateEnvironmentTemplateInputTypeDef
+## CreateEnvironmentTemplateInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateEnvironmentTemplateInputTypeDef
+from mypy_boto3_proton.type_defs import CreateEnvironmentTemplateInputRequestTypeDef
 ```
 
 Required fields:
@@ -335,10 +335,10 @@ Optional fields:
   [ProvisioningType](./literals.md#provisioningtype))
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateEnvironmentTemplateOutputResponseTypeDef
+## CreateEnvironmentTemplateOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateEnvironmentTemplateOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import CreateEnvironmentTemplateOutputTypeDef
 ```
 
 Required fields:
@@ -348,10 +348,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateEnvironmentTemplateVersionInputTypeDef
+## CreateEnvironmentTemplateVersionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateEnvironmentTemplateVersionInputTypeDef
+from mypy_boto3_proton.type_defs import CreateEnvironmentTemplateVersionInputRequestTypeDef
 ```
 
 Required fields:
@@ -367,10 +367,10 @@ Optional fields:
 - `majorVersion`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateEnvironmentTemplateVersionOutputResponseTypeDef
+## CreateEnvironmentTemplateVersionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateEnvironmentTemplateVersionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import CreateEnvironmentTemplateVersionOutputTypeDef
 ```
 
 Required fields:
@@ -380,10 +380,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateServiceInputTypeDef
+## CreateServiceInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateServiceInputTypeDef
+from mypy_boto3_proton.type_defs import CreateServiceInputRequestTypeDef
 ```
 
 Required fields:
@@ -402,10 +402,10 @@ Optional fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `templateMinorVersion`: `str`
 
-## CreateServiceOutputResponseTypeDef
+## CreateServiceOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateServiceOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import CreateServiceOutputTypeDef
 ```
 
 Required fields:
@@ -414,10 +414,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateServiceTemplateInputTypeDef
+## CreateServiceTemplateInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateServiceTemplateInputTypeDef
+from mypy_boto3_proton.type_defs import CreateServiceTemplateInputRequestTypeDef
 ```
 
 Required fields:
@@ -433,10 +433,10 @@ Optional fields:
   [ProvisioningType](./literals.md#provisioningtype))
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateServiceTemplateOutputResponseTypeDef
+## CreateServiceTemplateOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateServiceTemplateOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import CreateServiceTemplateOutputTypeDef
 ```
 
 Required fields:
@@ -446,10 +446,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateServiceTemplateVersionInputTypeDef
+## CreateServiceTemplateVersionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateServiceTemplateVersionInputTypeDef
+from mypy_boto3_proton.type_defs import CreateServiceTemplateVersionInputRequestTypeDef
 ```
 
 Required fields:
@@ -467,10 +467,10 @@ Optional fields:
 - `majorVersion`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateServiceTemplateVersionOutputResponseTypeDef
+## CreateServiceTemplateVersionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import CreateServiceTemplateVersionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import CreateServiceTemplateVersionOutputTypeDef
 ```
 
 Required fields:
@@ -480,20 +480,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteEnvironmentAccountConnectionInputTypeDef
+## DeleteEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteEnvironmentAccountConnectionInputTypeDef
+from mypy_boto3_proton.type_defs import DeleteEnvironmentAccountConnectionInputRequestTypeDef
 ```
 
 Required fields:
 
 - `id`: `str`
 
-## DeleteEnvironmentAccountConnectionOutputResponseTypeDef
+## DeleteEnvironmentAccountConnectionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteEnvironmentAccountConnectionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import DeleteEnvironmentAccountConnectionOutputTypeDef
 ```
 
 Required fields:
@@ -503,20 +503,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteEnvironmentInputTypeDef
+## DeleteEnvironmentInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteEnvironmentInputTypeDef
+from mypy_boto3_proton.type_defs import DeleteEnvironmentInputRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DeleteEnvironmentOutputResponseTypeDef
+## DeleteEnvironmentOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteEnvironmentOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import DeleteEnvironmentOutputTypeDef
 ```
 
 Required fields:
@@ -525,20 +525,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteEnvironmentTemplateInputTypeDef
+## DeleteEnvironmentTemplateInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateInputTypeDef
+from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateInputRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DeleteEnvironmentTemplateOutputResponseTypeDef
+## DeleteEnvironmentTemplateOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateOutputTypeDef
 ```
 
 Required fields:
@@ -548,10 +548,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteEnvironmentTemplateVersionInputTypeDef
+## DeleteEnvironmentTemplateVersionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateVersionInputTypeDef
+from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateVersionInputRequestTypeDef
 ```
 
 Required fields:
@@ -560,10 +560,10 @@ Required fields:
 - `minorVersion`: `str`
 - `templateName`: `str`
 
-## DeleteEnvironmentTemplateVersionOutputResponseTypeDef
+## DeleteEnvironmentTemplateVersionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateVersionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateVersionOutputTypeDef
 ```
 
 Required fields:
@@ -573,20 +573,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteServiceInputTypeDef
+## DeleteServiceInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteServiceInputTypeDef
+from mypy_boto3_proton.type_defs import DeleteServiceInputRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DeleteServiceOutputResponseTypeDef
+## DeleteServiceOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteServiceOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import DeleteServiceOutputTypeDef
 ```
 
 Required fields:
@@ -595,20 +595,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteServiceTemplateInputTypeDef
+## DeleteServiceTemplateInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteServiceTemplateInputTypeDef
+from mypy_boto3_proton.type_defs import DeleteServiceTemplateInputRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## DeleteServiceTemplateOutputResponseTypeDef
+## DeleteServiceTemplateOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteServiceTemplateOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import DeleteServiceTemplateOutputTypeDef
 ```
 
 Required fields:
@@ -618,10 +618,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteServiceTemplateVersionInputTypeDef
+## DeleteServiceTemplateVersionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteServiceTemplateVersionInputTypeDef
+from mypy_boto3_proton.type_defs import DeleteServiceTemplateVersionInputRequestTypeDef
 ```
 
 Required fields:
@@ -630,10 +630,10 @@ Required fields:
 - `minorVersion`: `str`
 - `templateName`: `str`
 
-## DeleteServiceTemplateVersionOutputResponseTypeDef
+## DeleteServiceTemplateVersionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import DeleteServiceTemplateVersionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import DeleteServiceTemplateVersionOutputTypeDef
 ```
 
 Required fields:
@@ -841,10 +841,10 @@ Optional fields:
   [ProvisioningType](./literals.md#provisioningtype))
 - `spec`: `str`
 
-## GetAccountSettingsOutputResponseTypeDef
+## GetAccountSettingsOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetAccountSettingsOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import GetAccountSettingsOutputTypeDef
 ```
 
 Required fields:
@@ -854,20 +854,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEnvironmentAccountConnectionInputTypeDef
+## GetEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetEnvironmentAccountConnectionInputTypeDef
+from mypy_boto3_proton.type_defs import GetEnvironmentAccountConnectionInputRequestTypeDef
 ```
 
 Required fields:
 
 - `id`: `str`
 
-## GetEnvironmentAccountConnectionOutputResponseTypeDef
+## GetEnvironmentAccountConnectionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetEnvironmentAccountConnectionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import GetEnvironmentAccountConnectionOutputTypeDef
 ```
 
 Required fields:
@@ -877,20 +877,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEnvironmentInputTypeDef
+## GetEnvironmentInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetEnvironmentInputTypeDef
+from mypy_boto3_proton.type_defs import GetEnvironmentInputRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## GetEnvironmentOutputResponseTypeDef
+## GetEnvironmentOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetEnvironmentOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import GetEnvironmentOutputTypeDef
 ```
 
 Required fields:
@@ -899,20 +899,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEnvironmentTemplateInputTypeDef
+## GetEnvironmentTemplateInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetEnvironmentTemplateInputTypeDef
+from mypy_boto3_proton.type_defs import GetEnvironmentTemplateInputRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## GetEnvironmentTemplateOutputResponseTypeDef
+## GetEnvironmentTemplateOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetEnvironmentTemplateOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import GetEnvironmentTemplateOutputTypeDef
 ```
 
 Required fields:
@@ -922,10 +922,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEnvironmentTemplateVersionInputTypeDef
+## GetEnvironmentTemplateVersionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetEnvironmentTemplateVersionInputTypeDef
+from mypy_boto3_proton.type_defs import GetEnvironmentTemplateVersionInputRequestTypeDef
 ```
 
 Required fields:
@@ -934,10 +934,10 @@ Required fields:
 - `minorVersion`: `str`
 - `templateName`: `str`
 
-## GetEnvironmentTemplateVersionOutputResponseTypeDef
+## GetEnvironmentTemplateVersionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetEnvironmentTemplateVersionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import GetEnvironmentTemplateVersionOutputTypeDef
 ```
 
 Required fields:
@@ -947,20 +947,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceInputTypeDef
+## GetServiceInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetServiceInputTypeDef
+from mypy_boto3_proton.type_defs import GetServiceInputRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## GetServiceInstanceInputTypeDef
+## GetServiceInstanceInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetServiceInstanceInputTypeDef
+from mypy_boto3_proton.type_defs import GetServiceInstanceInputRequestTypeDef
 ```
 
 Required fields:
@@ -968,10 +968,10 @@ Required fields:
 - `name`: `str`
 - `serviceName`: `str`
 
-## GetServiceInstanceOutputResponseTypeDef
+## GetServiceInstanceOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetServiceInstanceOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import GetServiceInstanceOutputTypeDef
 ```
 
 Required fields:
@@ -981,10 +981,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceOutputResponseTypeDef
+## GetServiceOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetServiceOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import GetServiceOutputTypeDef
 ```
 
 Required fields:
@@ -993,20 +993,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceTemplateInputTypeDef
+## GetServiceTemplateInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetServiceTemplateInputTypeDef
+from mypy_boto3_proton.type_defs import GetServiceTemplateInputRequestTypeDef
 ```
 
 Required fields:
 
 - `name`: `str`
 
-## GetServiceTemplateOutputResponseTypeDef
+## GetServiceTemplateOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetServiceTemplateOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import GetServiceTemplateOutputTypeDef
 ```
 
 Required fields:
@@ -1016,10 +1016,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServiceTemplateVersionInputTypeDef
+## GetServiceTemplateVersionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetServiceTemplateVersionInputTypeDef
+from mypy_boto3_proton.type_defs import GetServiceTemplateVersionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1028,10 +1028,10 @@ Required fields:
 - `minorVersion`: `str`
 - `templateName`: `str`
 
-## GetServiceTemplateVersionOutputResponseTypeDef
+## GetServiceTemplateVersionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import GetServiceTemplateVersionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import GetServiceTemplateVersionOutputTypeDef
 ```
 
 Required fields:
@@ -1041,10 +1041,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEnvironmentAccountConnectionsInputTypeDef
+## ListEnvironmentAccountConnectionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListEnvironmentAccountConnectionsInputTypeDef
+from mypy_boto3_proton.type_defs import ListEnvironmentAccountConnectionsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1060,10 +1060,10 @@ Optional fields:
 - `statuses`:
   `List`\[[EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)\]
 
-## ListEnvironmentAccountConnectionsOutputResponseTypeDef
+## ListEnvironmentAccountConnectionsOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListEnvironmentAccountConnectionsOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import ListEnvironmentAccountConnectionsOutputTypeDef
 ```
 
 Required fields:
@@ -1074,10 +1074,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEnvironmentTemplateVersionsInputTypeDef
+## ListEnvironmentTemplateVersionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListEnvironmentTemplateVersionsInputTypeDef
+from mypy_boto3_proton.type_defs import ListEnvironmentTemplateVersionsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1090,10 +1090,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListEnvironmentTemplateVersionsOutputResponseTypeDef
+## ListEnvironmentTemplateVersionsOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListEnvironmentTemplateVersionsOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import ListEnvironmentTemplateVersionsOutputTypeDef
 ```
 
 Required fields:
@@ -1104,10 +1104,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEnvironmentTemplatesInputTypeDef
+## ListEnvironmentTemplatesInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListEnvironmentTemplatesInputTypeDef
+from mypy_boto3_proton.type_defs import ListEnvironmentTemplatesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1115,10 +1115,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListEnvironmentTemplatesOutputResponseTypeDef
+## ListEnvironmentTemplatesOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListEnvironmentTemplatesOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import ListEnvironmentTemplatesOutputTypeDef
 ```
 
 Required fields:
@@ -1129,10 +1129,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListEnvironmentsInputTypeDef
+## ListEnvironmentsInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListEnvironmentsInputTypeDef
+from mypy_boto3_proton.type_defs import ListEnvironmentsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1142,10 +1142,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListEnvironmentsOutputResponseTypeDef
+## ListEnvironmentsOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListEnvironmentsOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import ListEnvironmentsOutputTypeDef
 ```
 
 Required fields:
@@ -1156,10 +1156,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServiceInstancesInputTypeDef
+## ListServiceInstancesInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListServiceInstancesInputTypeDef
+from mypy_boto3_proton.type_defs import ListServiceInstancesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1168,10 +1168,10 @@ Optional fields:
 - `nextToken`: `str`
 - `serviceName`: `str`
 
-## ListServiceInstancesOutputResponseTypeDef
+## ListServiceInstancesOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListServiceInstancesOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import ListServiceInstancesOutputTypeDef
 ```
 
 Required fields:
@@ -1182,10 +1182,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServiceTemplateVersionsInputTypeDef
+## ListServiceTemplateVersionsInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListServiceTemplateVersionsInputTypeDef
+from mypy_boto3_proton.type_defs import ListServiceTemplateVersionsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1198,10 +1198,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListServiceTemplateVersionsOutputResponseTypeDef
+## ListServiceTemplateVersionsOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListServiceTemplateVersionsOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import ListServiceTemplateVersionsOutputTypeDef
 ```
 
 Required fields:
@@ -1212,10 +1212,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServiceTemplatesInputTypeDef
+## ListServiceTemplatesInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListServiceTemplatesInputTypeDef
+from mypy_boto3_proton.type_defs import ListServiceTemplatesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1223,10 +1223,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListServiceTemplatesOutputResponseTypeDef
+## ListServiceTemplatesOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListServiceTemplatesOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import ListServiceTemplatesOutputTypeDef
 ```
 
 Required fields:
@@ -1237,10 +1237,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServicesInputTypeDef
+## ListServicesInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListServicesInputTypeDef
+from mypy_boto3_proton.type_defs import ListServicesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -1248,10 +1248,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListServicesOutputResponseTypeDef
+## ListServicesOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListServicesOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import ListServicesOutputTypeDef
 ```
 
 Required fields:
@@ -1262,10 +1262,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceInputTypeDef
+## ListTagsForResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListTagsForResourceInputTypeDef
+from mypy_boto3_proton.type_defs import ListTagsForResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1277,10 +1277,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListTagsForResourceOutputResponseTypeDef
+## ListTagsForResourceOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import ListTagsForResourceOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 Required fields:
@@ -1302,20 +1302,20 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## RejectEnvironmentAccountConnectionInputTypeDef
+## RejectEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import RejectEnvironmentAccountConnectionInputTypeDef
+from mypy_boto3_proton.type_defs import RejectEnvironmentAccountConnectionInputRequestTypeDef
 ```
 
 Required fields:
 
 - `id`: `str`
 
-## RejectEnvironmentAccountConnectionOutputResponseTypeDef
+## RejectEnvironmentAccountConnectionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import RejectEnvironmentAccountConnectionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import RejectEnvironmentAccountConnectionOutputTypeDef
 ```
 
 Required fields:
@@ -1561,10 +1561,10 @@ Optional fields:
 - `repositoryId`: `str`
 - `statusMessage`: `str`
 
-## TagResourceInputTypeDef
+## TagResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import TagResourceInputTypeDef
+from mypy_boto3_proton.type_defs import TagResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1593,10 +1593,10 @@ Optional fields:
 
 - `s3`: [S3ObjectSourceTypeDef](./type_defs.md#s3objectsourcetypedef)
 
-## UntagResourceInputTypeDef
+## UntagResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UntagResourceInputTypeDef
+from mypy_boto3_proton.type_defs import UntagResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1604,20 +1604,20 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateAccountSettingsInputTypeDef
+## UpdateAccountSettingsInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateAccountSettingsInputTypeDef
+from mypy_boto3_proton.type_defs import UpdateAccountSettingsInputRequestTypeDef
 ```
 
 Optional fields:
 
 - `pipelineServiceRoleArn`: `str`
 
-## UpdateAccountSettingsOutputResponseTypeDef
+## UpdateAccountSettingsOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateAccountSettingsOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import UpdateAccountSettingsOutputTypeDef
 ```
 
 Required fields:
@@ -1627,10 +1627,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateEnvironmentAccountConnectionInputTypeDef
+## UpdateEnvironmentAccountConnectionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateEnvironmentAccountConnectionInputTypeDef
+from mypy_boto3_proton.type_defs import UpdateEnvironmentAccountConnectionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1638,10 +1638,10 @@ Required fields:
 - `id`: `str`
 - `roleArn`: `str`
 
-## UpdateEnvironmentAccountConnectionOutputResponseTypeDef
+## UpdateEnvironmentAccountConnectionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateEnvironmentAccountConnectionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import UpdateEnvironmentAccountConnectionOutputTypeDef
 ```
 
 Required fields:
@@ -1651,10 +1651,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateEnvironmentInputTypeDef
+## UpdateEnvironmentInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateEnvironmentInputTypeDef
+from mypy_boto3_proton.type_defs import UpdateEnvironmentInputRequestTypeDef
 ```
 
 Required fields:
@@ -1672,10 +1672,10 @@ Optional fields:
 - `templateMajorVersion`: `str`
 - `templateMinorVersion`: `str`
 
-## UpdateEnvironmentOutputResponseTypeDef
+## UpdateEnvironmentOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateEnvironmentOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import UpdateEnvironmentOutputTypeDef
 ```
 
 Required fields:
@@ -1684,10 +1684,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateEnvironmentTemplateInputTypeDef
+## UpdateEnvironmentTemplateInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateEnvironmentTemplateInputTypeDef
+from mypy_boto3_proton.type_defs import UpdateEnvironmentTemplateInputRequestTypeDef
 ```
 
 Required fields:
@@ -1699,10 +1699,10 @@ Optional fields:
 - `description`: `str`
 - `displayName`: `str`
 
-## UpdateEnvironmentTemplateOutputResponseTypeDef
+## UpdateEnvironmentTemplateOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateEnvironmentTemplateOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import UpdateEnvironmentTemplateOutputTypeDef
 ```
 
 Required fields:
@@ -1712,10 +1712,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateEnvironmentTemplateVersionInputTypeDef
+## UpdateEnvironmentTemplateVersionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateEnvironmentTemplateVersionInputTypeDef
+from mypy_boto3_proton.type_defs import UpdateEnvironmentTemplateVersionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1730,10 +1730,10 @@ Optional fields:
 - `status`:
   [TemplateVersionStatusType](./literals.md#templateversionstatustype)
 
-## UpdateEnvironmentTemplateVersionOutputResponseTypeDef
+## UpdateEnvironmentTemplateVersionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateEnvironmentTemplateVersionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import UpdateEnvironmentTemplateVersionOutputTypeDef
 ```
 
 Required fields:
@@ -1743,10 +1743,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateServiceInputTypeDef
+## UpdateServiceInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateServiceInputTypeDef
+from mypy_boto3_proton.type_defs import UpdateServiceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1758,10 +1758,10 @@ Optional fields:
 - `description`: `str`
 - `spec`: `str`
 
-## UpdateServiceInstanceInputTypeDef
+## UpdateServiceInstanceInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateServiceInstanceInputTypeDef
+from mypy_boto3_proton.type_defs import UpdateServiceInstanceInputRequestTypeDef
 ```
 
 Required fields:
@@ -1777,10 +1777,10 @@ Optional fields:
 - `templateMajorVersion`: `str`
 - `templateMinorVersion`: `str`
 
-## UpdateServiceInstanceOutputResponseTypeDef
+## UpdateServiceInstanceOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateServiceInstanceOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import UpdateServiceInstanceOutputTypeDef
 ```
 
 Required fields:
@@ -1790,10 +1790,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateServiceOutputResponseTypeDef
+## UpdateServiceOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateServiceOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import UpdateServiceOutputTypeDef
 ```
 
 Required fields:
@@ -1802,10 +1802,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateServicePipelineInputTypeDef
+## UpdateServicePipelineInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateServicePipelineInputTypeDef
+from mypy_boto3_proton.type_defs import UpdateServicePipelineInputRequestTypeDef
 ```
 
 Required fields:
@@ -1820,10 +1820,10 @@ Optional fields:
 - `templateMajorVersion`: `str`
 - `templateMinorVersion`: `str`
 
-## UpdateServicePipelineOutputResponseTypeDef
+## UpdateServicePipelineOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateServicePipelineOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import UpdateServicePipelineOutputTypeDef
 ```
 
 Required fields:
@@ -1832,10 +1832,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateServiceTemplateInputTypeDef
+## UpdateServiceTemplateInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateServiceTemplateInputTypeDef
+from mypy_boto3_proton.type_defs import UpdateServiceTemplateInputRequestTypeDef
 ```
 
 Required fields:
@@ -1847,10 +1847,10 @@ Optional fields:
 - `description`: `str`
 - `displayName`: `str`
 
-## UpdateServiceTemplateOutputResponseTypeDef
+## UpdateServiceTemplateOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateServiceTemplateOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import UpdateServiceTemplateOutputTypeDef
 ```
 
 Required fields:
@@ -1860,10 +1860,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateServiceTemplateVersionInputTypeDef
+## UpdateServiceTemplateVersionInputRequestTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateServiceTemplateVersionInputTypeDef
+from mypy_boto3_proton.type_defs import UpdateServiceTemplateVersionInputRequestTypeDef
 ```
 
 Required fields:
@@ -1880,10 +1880,10 @@ Optional fields:
 - `status`:
   [TemplateVersionStatusType](./literals.md#templateversionstatustype)
 
-## UpdateServiceTemplateVersionOutputResponseTypeDef
+## UpdateServiceTemplateVersionOutputTypeDef
 
 ```python
-from mypy_boto3_proton.type_defs import UpdateServiceTemplateVersionOutputResponseTypeDef
+from mypy_boto3_proton.type_defs import UpdateServiceTemplateVersionOutputTypeDef
 ```
 
 Required fields:

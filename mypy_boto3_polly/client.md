@@ -11,6 +11,7 @@ type annotations stubs module
   - [PollyClient](#pollyclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [delete_lexicon](#delete_lexicon)
     - [describe_voices](#describe_voices)
@@ -79,6 +80,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+PollyClient exceptions.
+
+Type annotations for `boto3.client("polly").exceptions` method.
+
+Boto3 documentation:
+[Polly.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -104,7 +116,7 @@ Boto3 documentation:
 [Polly.Client.delete_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.delete_lexicon)
 
 Arguments mapping described in
-[DeleteLexiconInputTypeDef](./type_defs.md#deletelexiconinputtypedef).
+[DeleteLexiconInputRequestTypeDef](./type_defs.md#deletelexiconinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -123,7 +135,7 @@ Boto3 documentation:
 [Polly.Client.describe_voices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.describe_voices)
 
 Arguments mapping described in
-[DescribeVoicesInputTypeDef](./type_defs.md#describevoicesinputtypedef).
+[DescribeVoicesInputRequestTypeDef](./type_defs.md#describevoicesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -133,7 +145,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeVoicesOutputResponseTypeDef](./type_defs.md#describevoicesoutputresponsetypedef).
+[DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef).
 
 ### generate_presigned_url
 
@@ -164,14 +176,13 @@ Boto3 documentation:
 [Polly.Client.get_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_lexicon)
 
 Arguments mapping described in
-[GetLexiconInputTypeDef](./type_defs.md#getlexiconinputtypedef).
+[GetLexiconInputRequestTypeDef](./type_defs.md#getlexiconinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetLexiconOutputResponseTypeDef](./type_defs.md#getlexiconoutputresponsetypedef).
+Returns [GetLexiconOutputTypeDef](./type_defs.md#getlexiconoutputtypedef).
 
 ### get_speech_synthesis_task
 
@@ -183,14 +194,14 @@ Boto3 documentation:
 [Polly.Client.get_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_speech_synthesis_task)
 
 Arguments mapping described in
-[GetSpeechSynthesisTaskInputTypeDef](./type_defs.md#getspeechsynthesistaskinputtypedef).
+[GetSpeechSynthesisTaskInputRequestTypeDef](./type_defs.md#getspeechsynthesistaskinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `TaskId`: `str` *(required)*
 
 Returns
-[GetSpeechSynthesisTaskOutputResponseTypeDef](./type_defs.md#getspeechsynthesistaskoutputresponsetypedef).
+[GetSpeechSynthesisTaskOutputTypeDef](./type_defs.md#getspeechsynthesistaskoutputtypedef).
 
 ### list_lexicons
 
@@ -202,14 +213,13 @@ Boto3 documentation:
 [Polly.Client.list_lexicons](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_lexicons)
 
 Arguments mapping described in
-[ListLexiconsInputTypeDef](./type_defs.md#listlexiconsinputtypedef).
+[ListLexiconsInputRequestTypeDef](./type_defs.md#listlexiconsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
-Returns
-[ListLexiconsOutputResponseTypeDef](./type_defs.md#listlexiconsoutputresponsetypedef).
+Returns [ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef).
 
 ### list_speech_synthesis_tasks
 
@@ -222,7 +232,7 @@ Boto3 documentation:
 [Polly.Client.list_speech_synthesis_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_speech_synthesis_tasks)
 
 Arguments mapping described in
-[ListSpeechSynthesisTasksInputTypeDef](./type_defs.md#listspeechsynthesistasksinputtypedef).
+[ListSpeechSynthesisTasksInputRequestTypeDef](./type_defs.md#listspeechsynthesistasksinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -231,7 +241,7 @@ Keyword-only arguments:
 - `Status`: [TaskStatusType](./literals.md#taskstatustype)
 
 Returns
-[ListSpeechSynthesisTasksOutputResponseTypeDef](./type_defs.md#listspeechsynthesistasksoutputresponsetypedef).
+[ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef).
 
 ### put_lexicon
 
@@ -243,7 +253,7 @@ Boto3 documentation:
 [Polly.Client.put_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.put_lexicon)
 
 Arguments mapping described in
-[PutLexiconInputTypeDef](./type_defs.md#putlexiconinputtypedef).
+[PutLexiconInputRequestTypeDef](./type_defs.md#putlexiconinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -264,7 +274,7 @@ Boto3 documentation:
 [Polly.Client.start_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.start_speech_synthesis_task)
 
 Arguments mapping described in
-[StartSpeechSynthesisTaskInputTypeDef](./type_defs.md#startspeechsynthesistaskinputtypedef).
+[StartSpeechSynthesisTaskInputRequestTypeDef](./type_defs.md#startspeechsynthesistaskinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -284,7 +294,7 @@ Keyword-only arguments:
 - `TextType`: [TextTypeType](./literals.md#texttypetype)
 
 Returns
-[StartSpeechSynthesisTaskOutputResponseTypeDef](./type_defs.md#startspeechsynthesistaskoutputresponsetypedef).
+[StartSpeechSynthesisTaskOutputTypeDef](./type_defs.md#startspeechsynthesistaskoutputtypedef).
 
 ### synthesize_speech
 
@@ -296,7 +306,7 @@ Boto3 documentation:
 [Polly.Client.synthesize_speech](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.synthesize_speech)
 
 Arguments mapping described in
-[SynthesizeSpeechInputTypeDef](./type_defs.md#synthesizespeechinputtypedef).
+[SynthesizeSpeechInputRequestTypeDef](./type_defs.md#synthesizespeechinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -313,7 +323,7 @@ Keyword-only arguments:
 - `TextType`: [TextTypeType](./literals.md#texttypetype)
 
 Returns
-[SynthesizeSpeechOutputResponseTypeDef](./type_defs.md#synthesizespeechoutputresponsetypedef).
+[SynthesizeSpeechOutputTypeDef](./type_defs.md#synthesizespeechoutputtypedef).
 
 ### get_paginator
 

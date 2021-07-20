@@ -43,7 +43,7 @@ Arguments for `DescribeAlarmHistoryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAlarmHistoryPaginator.paginate` returns
-`Iterator`\[[DescribeAlarmHistoryOutputResponseTypeDef](./type_defs.md#describealarmhistoryoutputresponsetypedef)\].
+`Iterator`\[[DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef)\].
 
 ## DescribeAlarmsPaginator
 
@@ -75,7 +75,7 @@ Arguments for `DescribeAlarmsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAlarmsPaginator.paginate` returns
-`Iterator`\[[DescribeAlarmsOutputResponseTypeDef](./type_defs.md#describealarmsoutputresponsetypedef)\].
+`Iterator`\[[DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef)\].
 
 ## GetMetricDataPaginator
 
@@ -107,7 +107,7 @@ Arguments for `GetMetricDataPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetMetricDataPaginator.paginate` returns
-`Iterator`\[[GetMetricDataOutputResponseTypeDef](./type_defs.md#getmetricdataoutputresponsetypedef)\].
+`Iterator`\[[GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef)\].
 
 ## ListDashboardsPaginator
 
@@ -133,7 +133,7 @@ Arguments for `ListDashboardsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDashboardsPaginator.paginate` returns
-`Iterator`\[[ListDashboardsOutputResponseTypeDef](./type_defs.md#listdashboardsoutputresponsetypedef)\].
+`Iterator`\[[ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef)\].
 
 ## ListMetricsPaginator
 
@@ -164,4 +164,4 @@ Arguments for `ListMetricsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMetricsPaginator.paginate` returns
-`Iterator`\[[ListMetricsOutputResponseTypeDef](./type_defs.md#listmetricsoutputresponsetypedef)\].
+`Iterator`\[[ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef)\].

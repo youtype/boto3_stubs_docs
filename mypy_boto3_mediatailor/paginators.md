@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Paginators for boto3 MediaTailor module](#paginators-for-boto3-mediatailor-module)
   - [GetChannelSchedulePaginator](#getchannelschedulepaginator)
+  - [ListAlertsPaginator](#listalertspaginator)
   - [ListChannelsPaginator](#listchannelspaginator)
   - [ListPlaybackConfigurationsPaginator](#listplaybackconfigurationspaginator)
   - [ListSourceLocationsPaginator](#listsourcelocationspaginator)
@@ -39,7 +40,33 @@ Arguments for `GetChannelSchedulePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetChannelSchedulePaginator.paginate` returns
-`Iterator`\[[GetChannelScheduleResponseResponseTypeDef](./type_defs.md#getchannelscheduleresponseresponsetypedef)\].
+`Iterator`\[[GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef)\].
+
+## ListAlertsPaginator
+
+Type annotations for
+`boto3.client("mediatailor").get_paginator("list_alerts")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_mediatailor.paginator import ListAlertsPaginator
+
+def get_list_alerts_paginator() -> ListAlertsPaginator:
+    return boto3.client("mediatailor").get_paginator("list_alerts")
+```
+
+Boto3 documentation:
+[MediaTailor.Paginator.ListAlerts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListAlerts)
+
+Arguments for `ListAlertsPaginator.paginate` method:
+
+- `ResourceArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListAlertsPaginator.paginate` returns
+`Iterator`\[[ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef)\].
 
 ## ListChannelsPaginator
 
@@ -64,7 +91,7 @@ Arguments for `ListChannelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListChannelsPaginator.paginate` returns
-`Iterator`\[[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef)\].
+`Iterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
 
 ## ListPlaybackConfigurationsPaginator
 
@@ -89,7 +116,7 @@ Arguments for `ListPlaybackConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlaybackConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListPlaybackConfigurationsResponseResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponseresponsetypedef)\].
+`Iterator`\[[ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef)\].
 
 ## ListSourceLocationsPaginator
 
@@ -114,7 +141,7 @@ Arguments for `ListSourceLocationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSourceLocationsPaginator.paginate` returns
-`Iterator`\[[ListSourceLocationsResponseResponseTypeDef](./type_defs.md#listsourcelocationsresponseresponsetypedef)\].
+`Iterator`\[[ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef)\].
 
 ## ListVodSourcesPaginator
 
@@ -140,4 +167,4 @@ Arguments for `ListVodSourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVodSourcesPaginator.paginate` returns
-`Iterator`\[[ListVodSourcesResponseResponseTypeDef](./type_defs.md#listvodsourcesresponseresponsetypedef)\].
+`Iterator`\[[ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef)\].

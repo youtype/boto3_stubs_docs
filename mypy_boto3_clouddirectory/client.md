@@ -11,6 +11,7 @@ type annotations stubs module
   - [CloudDirectoryClient](#clouddirectoryclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_facet_to_object](#add_facet_to_object)
     - [apply_schema](#apply_schema)
     - [attach_object](#attach_object)
@@ -150,6 +151,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CloudDirectoryClient exceptions.
+
+Type annotations for `boto3.client("clouddirectory").exceptions` method.
+
+Boto3 documentation:
+[CloudDirectory.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_facet_to_object
 
 Adds a new Facet to an object.
@@ -161,7 +173,7 @@ Boto3 documentation:
 [CloudDirectory.Client.add_facet_to_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.add_facet_to_object)
 
 Arguments mapping described in
-[AddFacetToObjectRequestTypeDef](./type_defs.md#addfacettoobjectrequesttypedef).
+[AddFacetToObjectRequestRequestTypeDef](./type_defs.md#addfacettoobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -186,7 +198,7 @@ Boto3 documentation:
 [CloudDirectory.Client.apply_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.apply_schema)
 
 Arguments mapping described in
-[ApplySchemaRequestTypeDef](./type_defs.md#applyschemarequesttypedef).
+[ApplySchemaRequestRequestTypeDef](./type_defs.md#applyschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -194,7 +206,7 @@ Keyword-only arguments:
 - `DirectoryArn`: `str` *(required)*
 
 Returns
-[ApplySchemaResponseResponseTypeDef](./type_defs.md#applyschemaresponseresponsetypedef).
+[ApplySchemaResponseTypeDef](./type_defs.md#applyschemaresponsetypedef).
 
 ### attach_object
 
@@ -206,7 +218,7 @@ Boto3 documentation:
 [CloudDirectory.Client.attach_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_object)
 
 Arguments mapping described in
-[AttachObjectRequestTypeDef](./type_defs.md#attachobjectrequesttypedef).
+[AttachObjectRequestRequestTypeDef](./type_defs.md#attachobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,7 +230,7 @@ Keyword-only arguments:
 - `LinkName`: `str` *(required)*
 
 Returns
-[AttachObjectResponseResponseTypeDef](./type_defs.md#attachobjectresponseresponsetypedef).
+[AttachObjectResponseTypeDef](./type_defs.md#attachobjectresponsetypedef).
 
 ### attach_policy
 
@@ -230,7 +242,7 @@ Boto3 documentation:
 [CloudDirectory.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_policy)
 
 Arguments mapping described in
-[AttachPolicyRequestTypeDef](./type_defs.md#attachpolicyrequesttypedef).
+[AttachPolicyRequestRequestTypeDef](./type_defs.md#attachpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,7 +264,7 @@ Boto3 documentation:
 [CloudDirectory.Client.attach_to_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_to_index)
 
 Arguments mapping described in
-[AttachToIndexRequestTypeDef](./type_defs.md#attachtoindexrequesttypedef).
+[AttachToIndexRequestRequestTypeDef](./type_defs.md#attachtoindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -263,7 +275,7 @@ Keyword-only arguments:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 
 Returns
-[AttachToIndexResponseResponseTypeDef](./type_defs.md#attachtoindexresponseresponsetypedef).
+[AttachToIndexResponseTypeDef](./type_defs.md#attachtoindexresponsetypedef).
 
 ### attach_typed_link
 
@@ -275,7 +287,7 @@ Boto3 documentation:
 [CloudDirectory.Client.attach_typed_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_typed_link)
 
 Arguments mapping described in
-[AttachTypedLinkRequestTypeDef](./type_defs.md#attachtypedlinkrequesttypedef).
+[AttachTypedLinkRequestRequestTypeDef](./type_defs.md#attachtypedlinkrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -292,7 +304,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AttachTypedLinkResponseResponseTypeDef](./type_defs.md#attachtypedlinkresponseresponsetypedef).
+[AttachTypedLinkResponseTypeDef](./type_defs.md#attachtypedlinkresponsetypedef).
 
 ### batch_read
 
@@ -304,7 +316,7 @@ Boto3 documentation:
 [CloudDirectory.Client.batch_read](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.batch_read)
 
 Arguments mapping described in
-[BatchReadRequestTypeDef](./type_defs.md#batchreadrequesttypedef).
+[BatchReadRequestRequestTypeDef](./type_defs.md#batchreadrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -315,8 +327,7 @@ Keyword-only arguments:
 - `ConsistencyLevel`:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
-Returns
-[BatchReadResponseResponseTypeDef](./type_defs.md#batchreadresponseresponsetypedef).
+Returns [BatchReadResponseTypeDef](./type_defs.md#batchreadresponsetypedef).
 
 ### batch_write
 
@@ -328,7 +339,7 @@ Boto3 documentation:
 [CloudDirectory.Client.batch_write](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.batch_write)
 
 Arguments mapping described in
-[BatchWriteRequestTypeDef](./type_defs.md#batchwriterequesttypedef).
+[BatchWriteRequestRequestTypeDef](./type_defs.md#batchwriterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,8 +348,7 @@ Keyword-only arguments:
   `List`\[[BatchWriteOperationTypeDef](./type_defs.md#batchwriteoperationtypedef)\]
   *(required)*
 
-Returns
-[BatchWriteResponseResponseTypeDef](./type_defs.md#batchwriteresponseresponsetypedef).
+Returns [BatchWriteResponseTypeDef](./type_defs.md#batchwriteresponsetypedef).
 
 ### can_paginate
 
@@ -365,7 +375,7 @@ Boto3 documentation:
 [CloudDirectory.Client.create_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_directory)
 
 Arguments mapping described in
-[CreateDirectoryRequestTypeDef](./type_defs.md#createdirectoryrequesttypedef).
+[CreateDirectoryRequestRequestTypeDef](./type_defs.md#createdirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -373,7 +383,7 @@ Keyword-only arguments:
 - `SchemaArn`: `str` *(required)*
 
 Returns
-[CreateDirectoryResponseResponseTypeDef](./type_defs.md#createdirectoryresponseresponsetypedef).
+[CreateDirectoryResponseTypeDef](./type_defs.md#createdirectoryresponsetypedef).
 
 ### create_facet
 
@@ -385,7 +395,7 @@ Boto3 documentation:
 [CloudDirectory.Client.create_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_facet)
 
 Arguments mapping described in
-[CreateFacetRequestTypeDef](./type_defs.md#createfacetrequesttypedef).
+[CreateFacetRequestRequestTypeDef](./type_defs.md#createfacetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -408,7 +418,7 @@ Boto3 documentation:
 [CloudDirectory.Client.create_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_index)
 
 Arguments mapping described in
-[CreateIndexRequestTypeDef](./type_defs.md#createindexrequesttypedef).
+[CreateIndexRequestRequestTypeDef](./type_defs.md#createindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -422,7 +432,7 @@ Keyword-only arguments:
 - `LinkName`: `str`
 
 Returns
-[CreateIndexResponseResponseTypeDef](./type_defs.md#createindexresponseresponsetypedef).
+[CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
 
 ### create_object
 
@@ -434,7 +444,7 @@ Boto3 documentation:
 [CloudDirectory.Client.create_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_object)
 
 Arguments mapping described in
-[CreateObjectRequestTypeDef](./type_defs.md#createobjectrequesttypedef).
+[CreateObjectRequestRequestTypeDef](./type_defs.md#createobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,7 +459,7 @@ Keyword-only arguments:
 - `LinkName`: `str`
 
 Returns
-[CreateObjectResponseResponseTypeDef](./type_defs.md#createobjectresponseresponsetypedef).
+[CreateObjectResponseTypeDef](./type_defs.md#createobjectresponsetypedef).
 
 ### create_schema
 
@@ -461,14 +471,14 @@ Boto3 documentation:
 [CloudDirectory.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_schema)
 
 Arguments mapping described in
-[CreateSchemaRequestTypeDef](./type_defs.md#createschemarequesttypedef).
+[CreateSchemaRequestRequestTypeDef](./type_defs.md#createschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[CreateSchemaResponseResponseTypeDef](./type_defs.md#createschemaresponseresponsetypedef).
+[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
 
 ### create_typed_link_facet
 
@@ -481,7 +491,7 @@ Boto3 documentation:
 [CloudDirectory.Client.create_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_typed_link_facet)
 
 Arguments mapping described in
-[CreateTypedLinkFacetRequestTypeDef](./type_defs.md#createtypedlinkfacetrequesttypedef).
+[CreateTypedLinkFacetRequestRequestTypeDef](./type_defs.md#createtypedlinkfacetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -501,14 +511,14 @@ Boto3 documentation:
 [CloudDirectory.Client.delete_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_directory)
 
 Arguments mapping described in
-[DeleteDirectoryRequestTypeDef](./type_defs.md#deletedirectoryrequesttypedef).
+[DeleteDirectoryRequestRequestTypeDef](./type_defs.md#deletedirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 
 Returns
-[DeleteDirectoryResponseResponseTypeDef](./type_defs.md#deletedirectoryresponseresponsetypedef).
+[DeleteDirectoryResponseTypeDef](./type_defs.md#deletedirectoryresponsetypedef).
 
 ### delete_facet
 
@@ -520,7 +530,7 @@ Boto3 documentation:
 [CloudDirectory.Client.delete_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_facet)
 
 Arguments mapping described in
-[DeleteFacetRequestTypeDef](./type_defs.md#deletefacetrequesttypedef).
+[DeleteFacetRequestRequestTypeDef](./type_defs.md#deletefacetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -539,7 +549,7 @@ Boto3 documentation:
 [CloudDirectory.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_object)
 
 Arguments mapping described in
-[DeleteObjectRequestTypeDef](./type_defs.md#deleteobjectrequesttypedef).
+[DeleteObjectRequestRequestTypeDef](./type_defs.md#deleteobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -559,14 +569,14 @@ Boto3 documentation:
 [CloudDirectory.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_schema)
 
 Arguments mapping described in
-[DeleteSchemaRequestTypeDef](./type_defs.md#deleteschemarequesttypedef).
+[DeleteSchemaRequestRequestTypeDef](./type_defs.md#deleteschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 
 Returns
-[DeleteSchemaResponseResponseTypeDef](./type_defs.md#deleteschemaresponseresponsetypedef).
+[DeleteSchemaResponseTypeDef](./type_defs.md#deleteschemaresponsetypedef).
 
 ### delete_typed_link_facet
 
@@ -579,7 +589,7 @@ Boto3 documentation:
 [CloudDirectory.Client.delete_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_typed_link_facet)
 
 Arguments mapping described in
-[DeleteTypedLinkFacetRequestTypeDef](./type_defs.md#deletetypedlinkfacetrequesttypedef).
+[DeleteTypedLinkFacetRequestRequestTypeDef](./type_defs.md#deletetypedlinkfacetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -598,7 +608,7 @@ Boto3 documentation:
 [CloudDirectory.Client.detach_from_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_from_index)
 
 Arguments mapping described in
-[DetachFromIndexRequestTypeDef](./type_defs.md#detachfromindexrequesttypedef).
+[DetachFromIndexRequestRequestTypeDef](./type_defs.md#detachfromindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -609,7 +619,7 @@ Keyword-only arguments:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 
 Returns
-[DetachFromIndexResponseResponseTypeDef](./type_defs.md#detachfromindexresponseresponsetypedef).
+[DetachFromIndexResponseTypeDef](./type_defs.md#detachfromindexresponsetypedef).
 
 ### detach_object
 
@@ -621,7 +631,7 @@ Boto3 documentation:
 [CloudDirectory.Client.detach_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_object)
 
 Arguments mapping described in
-[DetachObjectRequestTypeDef](./type_defs.md#detachobjectrequesttypedef).
+[DetachObjectRequestRequestTypeDef](./type_defs.md#detachobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -631,7 +641,7 @@ Keyword-only arguments:
 - `LinkName`: `str` *(required)*
 
 Returns
-[DetachObjectResponseResponseTypeDef](./type_defs.md#detachobjectresponseresponsetypedef).
+[DetachObjectResponseTypeDef](./type_defs.md#detachobjectresponsetypedef).
 
 ### detach_policy
 
@@ -643,7 +653,7 @@ Boto3 documentation:
 [CloudDirectory.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_policy)
 
 Arguments mapping described in
-[DetachPolicyRequestTypeDef](./type_defs.md#detachpolicyrequesttypedef).
+[DetachPolicyRequestRequestTypeDef](./type_defs.md#detachpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -665,7 +675,7 @@ Boto3 documentation:
 [CloudDirectory.Client.detach_typed_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_typed_link)
 
 Arguments mapping described in
-[DetachTypedLinkRequestTypeDef](./type_defs.md#detachtypedlinkrequesttypedef).
+[DetachTypedLinkRequestRequestTypeDef](./type_defs.md#detachtypedlinkrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -684,14 +694,14 @@ Boto3 documentation:
 [CloudDirectory.Client.disable_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.disable_directory)
 
 Arguments mapping described in
-[DisableDirectoryRequestTypeDef](./type_defs.md#disabledirectoryrequesttypedef).
+[DisableDirectoryRequestRequestTypeDef](./type_defs.md#disabledirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 
 Returns
-[DisableDirectoryResponseResponseTypeDef](./type_defs.md#disabledirectoryresponseresponsetypedef).
+[DisableDirectoryResponseTypeDef](./type_defs.md#disabledirectoryresponsetypedef).
 
 ### enable_directory
 
@@ -703,14 +713,14 @@ Boto3 documentation:
 [CloudDirectory.Client.enable_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.enable_directory)
 
 Arguments mapping described in
-[EnableDirectoryRequestTypeDef](./type_defs.md#enabledirectoryrequesttypedef).
+[EnableDirectoryRequestRequestTypeDef](./type_defs.md#enabledirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 
 Returns
-[EnableDirectoryResponseResponseTypeDef](./type_defs.md#enabledirectoryresponseresponsetypedef).
+[EnableDirectoryResponseTypeDef](./type_defs.md#enabledirectoryresponsetypedef).
 
 ### generate_presigned_url
 
@@ -742,14 +752,14 @@ Boto3 documentation:
 [CloudDirectory.Client.get_applied_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_applied_schema_version)
 
 Arguments mapping described in
-[GetAppliedSchemaVersionRequestTypeDef](./type_defs.md#getappliedschemaversionrequesttypedef).
+[GetAppliedSchemaVersionRequestRequestTypeDef](./type_defs.md#getappliedschemaversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 
 Returns
-[GetAppliedSchemaVersionResponseResponseTypeDef](./type_defs.md#getappliedschemaversionresponseresponsetypedef).
+[GetAppliedSchemaVersionResponseTypeDef](./type_defs.md#getappliedschemaversionresponsetypedef).
 
 ### get_directory
 
@@ -761,14 +771,14 @@ Boto3 documentation:
 [CloudDirectory.Client.get_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_directory)
 
 Arguments mapping described in
-[GetDirectoryRequestTypeDef](./type_defs.md#getdirectoryrequesttypedef).
+[GetDirectoryRequestRequestTypeDef](./type_defs.md#getdirectoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 
 Returns
-[GetDirectoryResponseResponseTypeDef](./type_defs.md#getdirectoryresponseresponsetypedef).
+[GetDirectoryResponseTypeDef](./type_defs.md#getdirectoryresponsetypedef).
 
 ### get_facet
 
@@ -781,15 +791,14 @@ Boto3 documentation:
 [CloudDirectory.Client.get_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_facet)
 
 Arguments mapping described in
-[GetFacetRequestTypeDef](./type_defs.md#getfacetrequesttypedef).
+[GetFacetRequestRequestTypeDef](./type_defs.md#getfacetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
 
-Returns
-[GetFacetResponseResponseTypeDef](./type_defs.md#getfacetresponseresponsetypedef).
+Returns [GetFacetResponseTypeDef](./type_defs.md#getfacetresponsetypedef).
 
 ### get_link_attributes
 
@@ -802,7 +811,7 @@ Boto3 documentation:
 [CloudDirectory.Client.get_link_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_link_attributes)
 
 Arguments mapping described in
-[GetLinkAttributesRequestTypeDef](./type_defs.md#getlinkattributesrequesttypedef).
+[GetLinkAttributesRequestRequestTypeDef](./type_defs.md#getlinkattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -815,7 +824,7 @@ Keyword-only arguments:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
 Returns
-[GetLinkAttributesResponseResponseTypeDef](./type_defs.md#getlinkattributesresponseresponsetypedef).
+[GetLinkAttributesResponseTypeDef](./type_defs.md#getlinkattributesresponsetypedef).
 
 ### get_object_attributes
 
@@ -828,7 +837,7 @@ Boto3 documentation:
 [CloudDirectory.Client.get_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_attributes)
 
 Arguments mapping described in
-[GetObjectAttributesRequestTypeDef](./type_defs.md#getobjectattributesrequesttypedef).
+[GetObjectAttributesRequestRequestTypeDef](./type_defs.md#getobjectattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -842,7 +851,7 @@ Keyword-only arguments:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
 Returns
-[GetObjectAttributesResponseResponseTypeDef](./type_defs.md#getobjectattributesresponseresponsetypedef).
+[GetObjectAttributesResponseTypeDef](./type_defs.md#getobjectattributesresponsetypedef).
 
 ### get_object_information
 
@@ -855,7 +864,7 @@ Boto3 documentation:
 [CloudDirectory.Client.get_object_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_information)
 
 Arguments mapping described in
-[GetObjectInformationRequestTypeDef](./type_defs.md#getobjectinformationrequesttypedef).
+[GetObjectInformationRequestRequestTypeDef](./type_defs.md#getobjectinformationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -866,7 +875,7 @@ Keyword-only arguments:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
 Returns
-[GetObjectInformationResponseResponseTypeDef](./type_defs.md#getobjectinformationresponseresponsetypedef).
+[GetObjectInformationResponseTypeDef](./type_defs.md#getobjectinformationresponsetypedef).
 
 ### get_schema_as_json
 
@@ -879,14 +888,14 @@ Boto3 documentation:
 [CloudDirectory.Client.get_schema_as_json](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_schema_as_json)
 
 Arguments mapping described in
-[GetSchemaAsJsonRequestTypeDef](./type_defs.md#getschemaasjsonrequesttypedef).
+[GetSchemaAsJsonRequestRequestTypeDef](./type_defs.md#getschemaasjsonrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SchemaArn`: `str` *(required)*
 
 Returns
-[GetSchemaAsJsonResponseResponseTypeDef](./type_defs.md#getschemaasjsonresponseresponsetypedef).
+[GetSchemaAsJsonResponseTypeDef](./type_defs.md#getschemaasjsonresponsetypedef).
 
 ### get_typed_link_facet_information
 
@@ -899,7 +908,7 @@ Boto3 documentation:
 [CloudDirectory.Client.get_typed_link_facet_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_typed_link_facet_information)
 
 Arguments mapping described in
-[GetTypedLinkFacetInformationRequestTypeDef](./type_defs.md#gettypedlinkfacetinformationrequesttypedef).
+[GetTypedLinkFacetInformationRequestRequestTypeDef](./type_defs.md#gettypedlinkfacetinformationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -907,7 +916,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetTypedLinkFacetInformationResponseResponseTypeDef](./type_defs.md#gettypedlinkfacetinformationresponseresponsetypedef).
+[GetTypedLinkFacetInformationResponseTypeDef](./type_defs.md#gettypedlinkfacetinformationresponsetypedef).
 
 ### list_applied_schema_arns
 
@@ -920,7 +929,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_applied_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_applied_schema_arns)
 
 Arguments mapping described in
-[ListAppliedSchemaArnsRequestTypeDef](./type_defs.md#listappliedschemaarnsrequesttypedef).
+[ListAppliedSchemaArnsRequestRequestTypeDef](./type_defs.md#listappliedschemaarnsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -930,7 +939,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAppliedSchemaArnsResponseResponseTypeDef](./type_defs.md#listappliedschemaarnsresponseresponsetypedef).
+[ListAppliedSchemaArnsResponseTypeDef](./type_defs.md#listappliedschemaarnsresponsetypedef).
 
 ### list_attached_indices
 
@@ -943,7 +952,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_attached_indices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_attached_indices)
 
 Arguments mapping described in
-[ListAttachedIndicesRequestTypeDef](./type_defs.md#listattachedindicesrequesttypedef).
+[ListAttachedIndicesRequestRequestTypeDef](./type_defs.md#listattachedindicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -956,7 +965,7 @@ Keyword-only arguments:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
 Returns
-[ListAttachedIndicesResponseResponseTypeDef](./type_defs.md#listattachedindicesresponseresponsetypedef).
+[ListAttachedIndicesResponseTypeDef](./type_defs.md#listattachedindicesresponsetypedef).
 
 ### list_development_schema_arns
 
@@ -969,7 +978,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_development_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_development_schema_arns)
 
 Arguments mapping described in
-[ListDevelopmentSchemaArnsRequestTypeDef](./type_defs.md#listdevelopmentschemaarnsrequesttypedef).
+[ListDevelopmentSchemaArnsRequestRequestTypeDef](./type_defs.md#listdevelopmentschemaarnsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -977,7 +986,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDevelopmentSchemaArnsResponseResponseTypeDef](./type_defs.md#listdevelopmentschemaarnsresponseresponsetypedef).
+[ListDevelopmentSchemaArnsResponseTypeDef](./type_defs.md#listdevelopmentschemaarnsresponsetypedef).
 
 ### list_directories
 
@@ -989,7 +998,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_directories)
 
 Arguments mapping described in
-[ListDirectoriesRequestTypeDef](./type_defs.md#listdirectoriesrequesttypedef).
+[ListDirectoriesRequestRequestTypeDef](./type_defs.md#listdirectoriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -998,7 +1007,7 @@ Keyword-only arguments:
 - `state`: [DirectoryStateType](./literals.md#directorystatetype)
 
 Returns
-[ListDirectoriesResponseResponseTypeDef](./type_defs.md#listdirectoriesresponseresponsetypedef).
+[ListDirectoriesResponseTypeDef](./type_defs.md#listdirectoriesresponsetypedef).
 
 ### list_facet_attributes
 
@@ -1011,7 +1020,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_facet_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_attributes)
 
 Arguments mapping described in
-[ListFacetAttributesRequestTypeDef](./type_defs.md#listfacetattributesrequesttypedef).
+[ListFacetAttributesRequestRequestTypeDef](./type_defs.md#listfacetattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1021,7 +1030,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListFacetAttributesResponseResponseTypeDef](./type_defs.md#listfacetattributesresponseresponsetypedef).
+[ListFacetAttributesResponseTypeDef](./type_defs.md#listfacetattributesresponsetypedef).
 
 ### list_facet_names
 
@@ -1033,7 +1042,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_facet_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_names)
 
 Arguments mapping described in
-[ListFacetNamesRequestTypeDef](./type_defs.md#listfacetnamesrequesttypedef).
+[ListFacetNamesRequestRequestTypeDef](./type_defs.md#listfacetnamesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1042,7 +1051,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListFacetNamesResponseResponseTypeDef](./type_defs.md#listfacetnamesresponseresponsetypedef).
+[ListFacetNamesResponseTypeDef](./type_defs.md#listfacetnamesresponsetypedef).
 
 ### list_incoming_typed_links
 
@@ -1056,7 +1065,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_incoming_typed_links](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_incoming_typed_links)
 
 Arguments mapping described in
-[ListIncomingTypedLinksRequestTypeDef](./type_defs.md#listincomingtypedlinksrequesttypedef).
+[ListIncomingTypedLinksRequestRequestTypeDef](./type_defs.md#listincomingtypedlinksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1073,7 +1082,7 @@ Keyword-only arguments:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
 Returns
-[ListIncomingTypedLinksResponseResponseTypeDef](./type_defs.md#listincomingtypedlinksresponseresponsetypedef).
+[ListIncomingTypedLinksResponseTypeDef](./type_defs.md#listincomingtypedlinksresponsetypedef).
 
 ### list_index
 
@@ -1085,7 +1094,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_index)
 
 Arguments mapping described in
-[ListIndexRequestTypeDef](./type_defs.md#listindexrequesttypedef).
+[ListIndexRequestRequestTypeDef](./type_defs.md#listindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1099,8 +1108,7 @@ Keyword-only arguments:
 - `ConsistencyLevel`:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
-Returns
-[ListIndexResponseResponseTypeDef](./type_defs.md#listindexresponseresponsetypedef).
+Returns [ListIndexResponseTypeDef](./type_defs.md#listindexresponsetypedef).
 
 ### list_managed_schema_arns
 
@@ -1113,7 +1121,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_managed_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_managed_schema_arns)
 
 Arguments mapping described in
-[ListManagedSchemaArnsRequestTypeDef](./type_defs.md#listmanagedschemaarnsrequesttypedef).
+[ListManagedSchemaArnsRequestRequestTypeDef](./type_defs.md#listmanagedschemaarnsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1122,7 +1130,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListManagedSchemaArnsResponseResponseTypeDef](./type_defs.md#listmanagedschemaarnsresponseresponsetypedef).
+[ListManagedSchemaArnsResponseTypeDef](./type_defs.md#listmanagedschemaarnsresponsetypedef).
 
 ### list_object_attributes
 
@@ -1135,7 +1143,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_attributes)
 
 Arguments mapping described in
-[ListObjectAttributesRequestTypeDef](./type_defs.md#listobjectattributesrequesttypedef).
+[ListObjectAttributesRequestRequestTypeDef](./type_defs.md#listobjectattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1149,7 +1157,7 @@ Keyword-only arguments:
 - `FacetFilter`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
 
 Returns
-[ListObjectAttributesResponseResponseTypeDef](./type_defs.md#listobjectattributesresponseresponsetypedef).
+[ListObjectAttributesResponseTypeDef](./type_defs.md#listobjectattributesresponsetypedef).
 
 ### list_object_children
 
@@ -1163,7 +1171,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_object_children](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_children)
 
 Arguments mapping described in
-[ListObjectChildrenRequestTypeDef](./type_defs.md#listobjectchildrenrequesttypedef).
+[ListObjectChildrenRequestRequestTypeDef](./type_defs.md#listobjectchildrenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1176,7 +1184,7 @@ Keyword-only arguments:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
 Returns
-[ListObjectChildrenResponseResponseTypeDef](./type_defs.md#listobjectchildrenresponseresponsetypedef).
+[ListObjectChildrenResponseTypeDef](./type_defs.md#listobjectchildrenresponsetypedef).
 
 ### list_object_parent_paths
 
@@ -1190,7 +1198,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_object_parent_paths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parent_paths)
 
 Arguments mapping described in
-[ListObjectParentPathsRequestTypeDef](./type_defs.md#listobjectparentpathsrequesttypedef).
+[ListObjectParentPathsRequestRequestTypeDef](./type_defs.md#listobjectparentpathsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1201,7 +1209,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListObjectParentPathsResponseResponseTypeDef](./type_defs.md#listobjectparentpathsresponseresponsetypedef).
+[ListObjectParentPathsResponseTypeDef](./type_defs.md#listobjectparentpathsresponsetypedef).
 
 ### list_object_parents
 
@@ -1215,7 +1223,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_object_parents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parents)
 
 Arguments mapping described in
-[ListObjectParentsRequestTypeDef](./type_defs.md#listobjectparentsrequesttypedef).
+[ListObjectParentsRequestRequestTypeDef](./type_defs.md#listobjectparentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1229,7 +1237,7 @@ Keyword-only arguments:
 - `IncludeAllLinksToEachParent`: `bool`
 
 Returns
-[ListObjectParentsResponseResponseTypeDef](./type_defs.md#listobjectparentsresponseresponsetypedef).
+[ListObjectParentsResponseTypeDef](./type_defs.md#listobjectparentsresponsetypedef).
 
 ### list_object_policies
 
@@ -1242,7 +1250,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_object_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_policies)
 
 Arguments mapping described in
-[ListObjectPoliciesRequestTypeDef](./type_defs.md#listobjectpoliciesrequesttypedef).
+[ListObjectPoliciesRequestRequestTypeDef](./type_defs.md#listobjectpoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1255,7 +1263,7 @@ Keyword-only arguments:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
 Returns
-[ListObjectPoliciesResponseResponseTypeDef](./type_defs.md#listobjectpoliciesresponseresponsetypedef).
+[ListObjectPoliciesResponseTypeDef](./type_defs.md#listobjectpoliciesresponsetypedef).
 
 ### list_outgoing_typed_links
 
@@ -1269,7 +1277,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_outgoing_typed_links](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_outgoing_typed_links)
 
 Arguments mapping described in
-[ListOutgoingTypedLinksRequestTypeDef](./type_defs.md#listoutgoingtypedlinksrequesttypedef).
+[ListOutgoingTypedLinksRequestRequestTypeDef](./type_defs.md#listoutgoingtypedlinksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1286,7 +1294,7 @@ Keyword-only arguments:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
 Returns
-[ListOutgoingTypedLinksResponseResponseTypeDef](./type_defs.md#listoutgoingtypedlinksresponseresponsetypedef).
+[ListOutgoingTypedLinksResponseTypeDef](./type_defs.md#listoutgoingtypedlinksresponsetypedef).
 
 ### list_policy_attachments
 
@@ -1299,7 +1307,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_policy_attachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_policy_attachments)
 
 Arguments mapping described in
-[ListPolicyAttachmentsRequestTypeDef](./type_defs.md#listpolicyattachmentsrequesttypedef).
+[ListPolicyAttachmentsRequestRequestTypeDef](./type_defs.md#listpolicyattachmentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1312,7 +1320,7 @@ Keyword-only arguments:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
 Returns
-[ListPolicyAttachmentsResponseResponseTypeDef](./type_defs.md#listpolicyattachmentsresponseresponsetypedef).
+[ListPolicyAttachmentsResponseTypeDef](./type_defs.md#listpolicyattachmentsresponsetypedef).
 
 ### list_published_schema_arns
 
@@ -1325,7 +1333,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_published_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_published_schema_arns)
 
 Arguments mapping described in
-[ListPublishedSchemaArnsRequestTypeDef](./type_defs.md#listpublishedschemaarnsrequesttypedef).
+[ListPublishedSchemaArnsRequestRequestTypeDef](./type_defs.md#listpublishedschemaarnsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1334,7 +1342,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPublishedSchemaArnsResponseResponseTypeDef](./type_defs.md#listpublishedschemaarnsresponseresponsetypedef).
+[ListPublishedSchemaArnsResponseTypeDef](./type_defs.md#listpublishedschemaarnsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1347,7 +1355,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1356,7 +1364,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_typed_link_facet_attributes
 
@@ -1370,7 +1378,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_typed_link_facet_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_attributes)
 
 Arguments mapping described in
-[ListTypedLinkFacetAttributesRequestTypeDef](./type_defs.md#listtypedlinkfacetattributesrequesttypedef).
+[ListTypedLinkFacetAttributesRequestRequestTypeDef](./type_defs.md#listtypedlinkfacetattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1380,7 +1388,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTypedLinkFacetAttributesResponseResponseTypeDef](./type_defs.md#listtypedlinkfacetattributesresponseresponsetypedef).
+[ListTypedLinkFacetAttributesResponseTypeDef](./type_defs.md#listtypedlinkfacetattributesresponsetypedef).
 
 ### list_typed_link_facet_names
 
@@ -1393,7 +1401,7 @@ Boto3 documentation:
 [CloudDirectory.Client.list_typed_link_facet_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_names)
 
 Arguments mapping described in
-[ListTypedLinkFacetNamesRequestTypeDef](./type_defs.md#listtypedlinkfacetnamesrequesttypedef).
+[ListTypedLinkFacetNamesRequestRequestTypeDef](./type_defs.md#listtypedlinkfacetnamesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1402,7 +1410,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTypedLinkFacetNamesResponseResponseTypeDef](./type_defs.md#listtypedlinkfacetnamesresponseresponsetypedef).
+[ListTypedLinkFacetNamesResponseTypeDef](./type_defs.md#listtypedlinkfacetnamesresponsetypedef).
 
 ### lookup_policy
 
@@ -1414,7 +1422,7 @@ Boto3 documentation:
 [CloudDirectory.Client.lookup_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.lookup_policy)
 
 Arguments mapping described in
-[LookupPolicyRequestTypeDef](./type_defs.md#lookuppolicyrequesttypedef).
+[LookupPolicyRequestRequestTypeDef](./type_defs.md#lookuppolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1425,7 +1433,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[LookupPolicyResponseResponseTypeDef](./type_defs.md#lookuppolicyresponseresponsetypedef).
+[LookupPolicyResponseTypeDef](./type_defs.md#lookuppolicyresponsetypedef).
 
 ### publish_schema
 
@@ -1438,7 +1446,7 @@ Boto3 documentation:
 [CloudDirectory.Client.publish_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.publish_schema)
 
 Arguments mapping described in
-[PublishSchemaRequestTypeDef](./type_defs.md#publishschemarequesttypedef).
+[PublishSchemaRequestRequestTypeDef](./type_defs.md#publishschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1448,7 +1456,7 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[PublishSchemaResponseResponseTypeDef](./type_defs.md#publishschemaresponseresponsetypedef).
+[PublishSchemaResponseTypeDef](./type_defs.md#publishschemaresponsetypedef).
 
 ### put_schema_from_json
 
@@ -1461,7 +1469,7 @@ Boto3 documentation:
 [CloudDirectory.Client.put_schema_from_json](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.put_schema_from_json)
 
 Arguments mapping described in
-[PutSchemaFromJsonRequestTypeDef](./type_defs.md#putschemafromjsonrequesttypedef).
+[PutSchemaFromJsonRequestRequestTypeDef](./type_defs.md#putschemafromjsonrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1469,7 +1477,7 @@ Keyword-only arguments:
 - `Document`: `str` *(required)*
 
 Returns
-[PutSchemaFromJsonResponseResponseTypeDef](./type_defs.md#putschemafromjsonresponseresponsetypedef).
+[PutSchemaFromJsonResponseTypeDef](./type_defs.md#putschemafromjsonresponsetypedef).
 
 ### remove_facet_from_object
 
@@ -1482,7 +1490,7 @@ Boto3 documentation:
 [CloudDirectory.Client.remove_facet_from_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.remove_facet_from_object)
 
 Arguments mapping described in
-[RemoveFacetFromObjectRequestTypeDef](./type_defs.md#removefacetfromobjectrequesttypedef).
+[RemoveFacetFromObjectRequestRequestTypeDef](./type_defs.md#removefacetfromobjectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1504,7 +1512,7 @@ Boto3 documentation:
 [CloudDirectory.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1523,7 +1531,7 @@ Boto3 documentation:
 [CloudDirectory.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1542,7 +1550,7 @@ Boto3 documentation:
 [CloudDirectory.Client.update_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_facet)
 
 Arguments mapping described in
-[UpdateFacetRequestTypeDef](./type_defs.md#updatefacetrequesttypedef).
+[UpdateFacetRequestRequestTypeDef](./type_defs.md#updatefacetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1565,7 +1573,7 @@ Boto3 documentation:
 [CloudDirectory.Client.update_link_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_link_attributes)
 
 Arguments mapping described in
-[UpdateLinkAttributesRequestTypeDef](./type_defs.md#updatelinkattributesrequesttypedef).
+[UpdateLinkAttributesRequestRequestTypeDef](./type_defs.md#updatelinkattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1590,7 +1598,7 @@ Boto3 documentation:
 [CloudDirectory.Client.update_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_object_attributes)
 
 Arguments mapping described in
-[UpdateObjectAttributesRequestTypeDef](./type_defs.md#updateobjectattributesrequesttypedef).
+[UpdateObjectAttributesRequestRequestTypeDef](./type_defs.md#updateobjectattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1602,7 +1610,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateObjectAttributesResponseResponseTypeDef](./type_defs.md#updateobjectattributesresponseresponsetypedef).
+[UpdateObjectAttributesResponseTypeDef](./type_defs.md#updateobjectattributesresponsetypedef).
 
 ### update_schema
 
@@ -1614,7 +1622,7 @@ Boto3 documentation:
 [CloudDirectory.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_schema)
 
 Arguments mapping described in
-[UpdateSchemaRequestTypeDef](./type_defs.md#updateschemarequesttypedef).
+[UpdateSchemaRequestRequestTypeDef](./type_defs.md#updateschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1622,7 +1630,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[UpdateSchemaResponseResponseTypeDef](./type_defs.md#updateschemaresponseresponsetypedef).
+[UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
 
 ### update_typed_link_facet
 
@@ -1635,7 +1643,7 @@ Boto3 documentation:
 [CloudDirectory.Client.update_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_typed_link_facet)
 
 Arguments mapping described in
-[UpdateTypedLinkFacetRequestTypeDef](./type_defs.md#updatetypedlinkfacetrequesttypedef).
+[UpdateTypedLinkFacetRequestRequestTypeDef](./type_defs.md#updatetypedlinkfacetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1660,7 +1668,7 @@ Boto3 documentation:
 [CloudDirectory.Client.upgrade_applied_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_applied_schema)
 
 Arguments mapping described in
-[UpgradeAppliedSchemaRequestTypeDef](./type_defs.md#upgradeappliedschemarequesttypedef).
+[UpgradeAppliedSchemaRequestRequestTypeDef](./type_defs.md#upgradeappliedschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1669,7 +1677,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[UpgradeAppliedSchemaResponseResponseTypeDef](./type_defs.md#upgradeappliedschemaresponseresponsetypedef).
+[UpgradeAppliedSchemaResponseTypeDef](./type_defs.md#upgradeappliedschemaresponsetypedef).
 
 ### upgrade_published_schema
 
@@ -1683,7 +1691,7 @@ Boto3 documentation:
 [CloudDirectory.Client.upgrade_published_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_published_schema)
 
 Arguments mapping described in
-[UpgradePublishedSchemaRequestTypeDef](./type_defs.md#upgradepublishedschemarequesttypedef).
+[UpgradePublishedSchemaRequestRequestTypeDef](./type_defs.md#upgradepublishedschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1693,7 +1701,7 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns
-[UpgradePublishedSchemaResponseResponseTypeDef](./type_defs.md#upgradepublishedschemaresponseresponsetypedef).
+[UpgradePublishedSchemaResponseTypeDef](./type_defs.md#upgradepublishedschemaresponsetypedef).
 
 ### get_paginator
 

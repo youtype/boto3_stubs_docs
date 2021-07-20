@@ -11,6 +11,7 @@ type annotations stubs module
   - [LightsailClient](#lightsailclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [allocate_static_ip](#allocate_static_ip)
     - [attach_certificate_to_distribution](#attach_certificate_to_distribution)
     - [attach_disk](#attach_disk)
@@ -198,6 +199,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+LightsailClient exceptions.
+
+Type annotations for `boto3.client("lightsail").exceptions` method.
+
+Boto3 documentation:
+[Lightsail.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### allocate_static_ip
 
 Allocates a static IP address.
@@ -208,14 +220,14 @@ Boto3 documentation:
 [Lightsail.Client.allocate_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.allocate_static_ip)
 
 Arguments mapping described in
-[AllocateStaticIpRequestTypeDef](./type_defs.md#allocatestaticiprequesttypedef).
+[AllocateStaticIpRequestRequestTypeDef](./type_defs.md#allocatestaticiprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `staticIpName`: `str` *(required)*
 
 Returns
-[AllocateStaticIpResultResponseTypeDef](./type_defs.md#allocatestaticipresultresponsetypedef).
+[AllocateStaticIpResultTypeDef](./type_defs.md#allocatestaticipresulttypedef).
 
 ### attach_certificate_to_distribution
 
@@ -229,7 +241,7 @@ Boto3 documentation:
 [Lightsail.Client.attach_certificate_to_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_certificate_to_distribution)
 
 Arguments mapping described in
-[AttachCertificateToDistributionRequestTypeDef](./type_defs.md#attachcertificatetodistributionrequesttypedef).
+[AttachCertificateToDistributionRequestRequestTypeDef](./type_defs.md#attachcertificatetodistributionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -237,7 +249,7 @@ Keyword-only arguments:
 - `certificateName`: `str` *(required)*
 
 Returns
-[AttachCertificateToDistributionResultResponseTypeDef](./type_defs.md#attachcertificatetodistributionresultresponsetypedef).
+[AttachCertificateToDistributionResultTypeDef](./type_defs.md#attachcertificatetodistributionresulttypedef).
 
 ### attach_disk
 
@@ -250,7 +262,7 @@ Boto3 documentation:
 [Lightsail.Client.attach_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_disk)
 
 Arguments mapping described in
-[AttachDiskRequestTypeDef](./type_defs.md#attachdiskrequesttypedef).
+[AttachDiskRequestRequestTypeDef](./type_defs.md#attachdiskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -258,8 +270,7 @@ Keyword-only arguments:
 - `instanceName`: `str` *(required)*
 - `diskPath`: `str` *(required)*
 
-Returns
-[AttachDiskResultResponseTypeDef](./type_defs.md#attachdiskresultresponsetypedef).
+Returns [AttachDiskResultTypeDef](./type_defs.md#attachdiskresulttypedef).
 
 ### attach_instances_to_load_balancer
 
@@ -272,7 +283,7 @@ Boto3 documentation:
 [Lightsail.Client.attach_instances_to_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_instances_to_load_balancer)
 
 Arguments mapping described in
-[AttachInstancesToLoadBalancerRequestTypeDef](./type_defs.md#attachinstancestoloadbalancerrequesttypedef).
+[AttachInstancesToLoadBalancerRequestRequestTypeDef](./type_defs.md#attachinstancestoloadbalancerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -280,7 +291,7 @@ Keyword-only arguments:
 - `instanceNames`: `List`\[`str`\] *(required)*
 
 Returns
-[AttachInstancesToLoadBalancerResultResponseTypeDef](./type_defs.md#attachinstancestoloadbalancerresultresponsetypedef).
+[AttachInstancesToLoadBalancerResultTypeDef](./type_defs.md#attachinstancestoloadbalancerresulttypedef).
 
 ### attach_load_balancer_tls_certificate
 
@@ -293,7 +304,7 @@ Boto3 documentation:
 [Lightsail.Client.attach_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_load_balancer_tls_certificate)
 
 Arguments mapping described in
-[AttachLoadBalancerTlsCertificateRequestTypeDef](./type_defs.md#attachloadbalancertlscertificaterequesttypedef).
+[AttachLoadBalancerTlsCertificateRequestRequestTypeDef](./type_defs.md#attachloadbalancertlscertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -301,7 +312,7 @@ Keyword-only arguments:
 - `certificateName`: `str` *(required)*
 
 Returns
-[AttachLoadBalancerTlsCertificateResultResponseTypeDef](./type_defs.md#attachloadbalancertlscertificateresultresponsetypedef).
+[AttachLoadBalancerTlsCertificateResultTypeDef](./type_defs.md#attachloadbalancertlscertificateresulttypedef).
 
 ### attach_static_ip
 
@@ -313,7 +324,7 @@ Boto3 documentation:
 [Lightsail.Client.attach_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.attach_static_ip)
 
 Arguments mapping described in
-[AttachStaticIpRequestTypeDef](./type_defs.md#attachstaticiprequesttypedef).
+[AttachStaticIpRequestRequestTypeDef](./type_defs.md#attachstaticiprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -321,7 +332,7 @@ Keyword-only arguments:
 - `instanceName`: `str` *(required)*
 
 Returns
-[AttachStaticIpResultResponseTypeDef](./type_defs.md#attachstaticipresultresponsetypedef).
+[AttachStaticIpResultTypeDef](./type_defs.md#attachstaticipresulttypedef).
 
 ### can_paginate
 
@@ -349,7 +360,7 @@ Boto3 documentation:
 [Lightsail.Client.close_instance_public_ports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.close_instance_public_ports)
 
 Arguments mapping described in
-[CloseInstancePublicPortsRequestTypeDef](./type_defs.md#closeinstancepublicportsrequesttypedef).
+[CloseInstancePublicPortsRequestRequestTypeDef](./type_defs.md#closeinstancepublicportsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -357,7 +368,7 @@ Keyword-only arguments:
 - `instanceName`: `str` *(required)*
 
 Returns
-[CloseInstancePublicPortsResultResponseTypeDef](./type_defs.md#closeinstancepublicportsresultresponsetypedef).
+[CloseInstancePublicPortsResultTypeDef](./type_defs.md#closeinstancepublicportsresulttypedef).
 
 ### copy_snapshot
 
@@ -370,7 +381,7 @@ Boto3 documentation:
 [Lightsail.Client.copy_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.copy_snapshot)
 
 Arguments mapping described in
-[CopySnapshotRequestTypeDef](./type_defs.md#copysnapshotrequesttypedef).
+[CopySnapshotRequestRequestTypeDef](./type_defs.md#copysnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -381,8 +392,7 @@ Keyword-only arguments:
 - `restoreDate`: `str`
 - `useLatestRestorableAutoSnapshot`: `bool`
 
-Returns
-[CopySnapshotResultResponseTypeDef](./type_defs.md#copysnapshotresultresponsetypedef).
+Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
 
 ### create_certificate
 
@@ -395,7 +405,7 @@ Boto3 documentation:
 [Lightsail.Client.create_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_certificate)
 
 Arguments mapping described in
-[CreateCertificateRequestTypeDef](./type_defs.md#createcertificaterequesttypedef).
+[CreateCertificateRequestRequestTypeDef](./type_defs.md#createcertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,7 +415,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCertificateResultResponseTypeDef](./type_defs.md#createcertificateresultresponsetypedef).
+[CreateCertificateResultTypeDef](./type_defs.md#createcertificateresulttypedef).
 
 ### create_cloud_formation_stack
 
@@ -419,7 +429,7 @@ Boto3 documentation:
 [Lightsail.Client.create_cloud_formation_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_cloud_formation_stack)
 
 Arguments mapping described in
-[CreateCloudFormationStackRequestTypeDef](./type_defs.md#createcloudformationstackrequesttypedef).
+[CreateCloudFormationStackRequestRequestTypeDef](./type_defs.md#createcloudformationstackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -428,7 +438,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateCloudFormationStackResultResponseTypeDef](./type_defs.md#createcloudformationstackresultresponsetypedef).
+[CreateCloudFormationStackResultTypeDef](./type_defs.md#createcloudformationstackresulttypedef).
 
 ### create_contact_method
 
@@ -440,7 +450,7 @@ Boto3 documentation:
 [Lightsail.Client.create_contact_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_contact_method)
 
 Arguments mapping described in
-[CreateContactMethodRequestTypeDef](./type_defs.md#createcontactmethodrequesttypedef).
+[CreateContactMethodRequestRequestTypeDef](./type_defs.md#createcontactmethodrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,7 +459,7 @@ Keyword-only arguments:
 - `contactEndpoint`: `str` *(required)*
 
 Returns
-[CreateContactMethodResultResponseTypeDef](./type_defs.md#createcontactmethodresultresponsetypedef).
+[CreateContactMethodResultTypeDef](./type_defs.md#createcontactmethodresulttypedef).
 
 ### create_container_service
 
@@ -462,7 +472,7 @@ Boto3 documentation:
 [Lightsail.Client.create_container_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service)
 
 Arguments mapping described in
-[CreateContainerServiceRequestTypeDef](./type_defs.md#createcontainerservicerequesttypedef).
+[CreateContainerServiceRequestRequestTypeDef](./type_defs.md#createcontainerservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -477,7 +487,7 @@ Keyword-only arguments:
   [ContainerServiceDeploymentRequestTypeDef](./type_defs.md#containerservicedeploymentrequesttypedef)
 
 Returns
-[CreateContainerServiceResultResponseTypeDef](./type_defs.md#createcontainerserviceresultresponsetypedef).
+[CreateContainerServiceResultTypeDef](./type_defs.md#createcontainerserviceresulttypedef).
 
 ### create_container_service_deployment
 
@@ -490,7 +500,7 @@ Boto3 documentation:
 [Lightsail.Client.create_container_service_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_deployment)
 
 Arguments mapping described in
-[CreateContainerServiceDeploymentRequestTypeDef](./type_defs.md#createcontainerservicedeploymentrequesttypedef).
+[CreateContainerServiceDeploymentRequestRequestTypeDef](./type_defs.md#createcontainerservicedeploymentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -501,7 +511,7 @@ Keyword-only arguments:
   [EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef)
 
 Returns
-[CreateContainerServiceDeploymentResultResponseTypeDef](./type_defs.md#createcontainerservicedeploymentresultresponsetypedef).
+[CreateContainerServiceDeploymentResultTypeDef](./type_defs.md#createcontainerservicedeploymentresulttypedef).
 
 ### create_container_service_registry_login
 
@@ -515,7 +525,7 @@ Boto3 documentation:
 [Lightsail.Client.create_container_service_registry_login](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_container_service_registry_login)
 
 Returns
-[CreateContainerServiceRegistryLoginResultResponseTypeDef](./type_defs.md#createcontainerserviceregistryloginresultresponsetypedef).
+[CreateContainerServiceRegistryLoginResultTypeDef](./type_defs.md#createcontainerserviceregistryloginresulttypedef).
 
 ### create_disk
 
@@ -528,7 +538,7 @@ Boto3 documentation:
 [Lightsail.Client.create_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk)
 
 Arguments mapping described in
-[CreateDiskRequestTypeDef](./type_defs.md#creatediskrequesttypedef).
+[CreateDiskRequestRequestTypeDef](./type_defs.md#creatediskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -538,8 +548,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 
-Returns
-[CreateDiskResultResponseTypeDef](./type_defs.md#creatediskresultresponsetypedef).
+Returns [CreateDiskResultTypeDef](./type_defs.md#creatediskresulttypedef).
 
 ### create_disk_from_snapshot
 
@@ -552,7 +561,7 @@ Boto3 documentation:
 [Lightsail.Client.create_disk_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_from_snapshot)
 
 Arguments mapping described in
-[CreateDiskFromSnapshotRequestTypeDef](./type_defs.md#creatediskfromsnapshotrequesttypedef).
+[CreateDiskFromSnapshotRequestRequestTypeDef](./type_defs.md#creatediskfromsnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -567,7 +576,7 @@ Keyword-only arguments:
 - `useLatestRestorableAutoSnapshot`: `bool`
 
 Returns
-[CreateDiskFromSnapshotResultResponseTypeDef](./type_defs.md#creatediskfromsnapshotresultresponsetypedef).
+[CreateDiskFromSnapshotResultTypeDef](./type_defs.md#creatediskfromsnapshotresulttypedef).
 
 ### create_disk_snapshot
 
@@ -579,7 +588,7 @@ Boto3 documentation:
 [Lightsail.Client.create_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_disk_snapshot)
 
 Arguments mapping described in
-[CreateDiskSnapshotRequestTypeDef](./type_defs.md#createdisksnapshotrequesttypedef).
+[CreateDiskSnapshotRequestRequestTypeDef](./type_defs.md#createdisksnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -589,7 +598,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDiskSnapshotResultResponseTypeDef](./type_defs.md#createdisksnapshotresultresponsetypedef).
+[CreateDiskSnapshotResultTypeDef](./type_defs.md#createdisksnapshotresulttypedef).
 
 ### create_distribution
 
@@ -601,7 +610,7 @@ Boto3 documentation:
 [Lightsail.Client.create_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_distribution)
 
 Arguments mapping described in
-[CreateDistributionRequestTypeDef](./type_defs.md#createdistributionrequesttypedef).
+[CreateDistributionRequestRequestTypeDef](./type_defs.md#createdistributionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -619,7 +628,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDistributionResultResponseTypeDef](./type_defs.md#createdistributionresultresponsetypedef).
+[CreateDistributionResultTypeDef](./type_defs.md#createdistributionresulttypedef).
 
 ### create_domain
 
@@ -631,15 +640,14 @@ Boto3 documentation:
 [Lightsail.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_domain)
 
 Arguments mapping described in
-[CreateDomainRequestTypeDef](./type_defs.md#createdomainrequesttypedef).
+[CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateDomainResultResponseTypeDef](./type_defs.md#createdomainresultresponsetypedef).
+Returns [CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef).
 
 ### create_domain_entry
 
@@ -653,7 +661,7 @@ Boto3 documentation:
 [Lightsail.Client.create_domain_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_domain_entry)
 
 Arguments mapping described in
-[CreateDomainEntryRequestTypeDef](./type_defs.md#createdomainentryrequesttypedef).
+[CreateDomainEntryRequestRequestTypeDef](./type_defs.md#createdomainentryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -662,7 +670,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateDomainEntryResultResponseTypeDef](./type_defs.md#createdomainentryresultresponsetypedef).
+[CreateDomainEntryResultTypeDef](./type_defs.md#createdomainentryresulttypedef).
 
 ### create_instance_snapshot
 
@@ -675,7 +683,7 @@ Boto3 documentation:
 [Lightsail.Client.create_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instance_snapshot)
 
 Arguments mapping described in
-[CreateInstanceSnapshotRequestTypeDef](./type_defs.md#createinstancesnapshotrequesttypedef).
+[CreateInstanceSnapshotRequestRequestTypeDef](./type_defs.md#createinstancesnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -684,7 +692,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateInstanceSnapshotResultResponseTypeDef](./type_defs.md#createinstancesnapshotresultresponsetypedef).
+[CreateInstanceSnapshotResultTypeDef](./type_defs.md#createinstancesnapshotresulttypedef).
 
 ### create_instances
 
@@ -696,7 +704,7 @@ Boto3 documentation:
 [Lightsail.Client.create_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances)
 
 Arguments mapping described in
-[CreateInstancesRequestTypeDef](./type_defs.md#createinstancesrequesttypedef).
+[CreateInstancesRequestRequestTypeDef](./type_defs.md#createinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -712,7 +720,7 @@ Keyword-only arguments:
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 Returns
-[CreateInstancesResultResponseTypeDef](./type_defs.md#createinstancesresultresponsetypedef).
+[CreateInstancesResultTypeDef](./type_defs.md#createinstancesresulttypedef).
 
 ### create_instances_from_snapshot
 
@@ -726,7 +734,7 @@ Boto3 documentation:
 [Lightsail.Client.create_instances_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_instances_from_snapshot)
 
 Arguments mapping described in
-[CreateInstancesFromSnapshotRequestTypeDef](./type_defs.md#createinstancesfromsnapshotrequesttypedef).
+[CreateInstancesFromSnapshotRequestRequestTypeDef](./type_defs.md#createinstancesfromsnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -746,7 +754,7 @@ Keyword-only arguments:
 - `useLatestRestorableAutoSnapshot`: `bool`
 
 Returns
-[CreateInstancesFromSnapshotResultResponseTypeDef](./type_defs.md#createinstancesfromsnapshotresultresponsetypedef).
+[CreateInstancesFromSnapshotResultTypeDef](./type_defs.md#createinstancesfromsnapshotresulttypedef).
 
 ### create_key_pair
 
@@ -758,7 +766,7 @@ Boto3 documentation:
 [Lightsail.Client.create_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_key_pair)
 
 Arguments mapping described in
-[CreateKeyPairRequestTypeDef](./type_defs.md#createkeypairrequesttypedef).
+[CreateKeyPairRequestRequestTypeDef](./type_defs.md#createkeypairrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -766,7 +774,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateKeyPairResultResponseTypeDef](./type_defs.md#createkeypairresultresponsetypedef).
+[CreateKeyPairResultTypeDef](./type_defs.md#createkeypairresulttypedef).
 
 ### create_load_balancer
 
@@ -778,7 +786,7 @@ Boto3 documentation:
 [Lightsail.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer)
 
 Arguments mapping described in
-[CreateLoadBalancerRequestTypeDef](./type_defs.md#createloadbalancerrequesttypedef).
+[CreateLoadBalancerRequestRequestTypeDef](./type_defs.md#createloadbalancerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -792,7 +800,7 @@ Keyword-only arguments:
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 Returns
-[CreateLoadBalancerResultResponseTypeDef](./type_defs.md#createloadbalancerresultresponsetypedef).
+[CreateLoadBalancerResultTypeDef](./type_defs.md#createloadbalancerresulttypedef).
 
 ### create_load_balancer_tls_certificate
 
@@ -805,7 +813,7 @@ Boto3 documentation:
 [Lightsail.Client.create_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_load_balancer_tls_certificate)
 
 Arguments mapping described in
-[CreateLoadBalancerTlsCertificateRequestTypeDef](./type_defs.md#createloadbalancertlscertificaterequesttypedef).
+[CreateLoadBalancerTlsCertificateRequestRequestTypeDef](./type_defs.md#createloadbalancertlscertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -816,7 +824,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateLoadBalancerTlsCertificateResultResponseTypeDef](./type_defs.md#createloadbalancertlscertificateresultresponsetypedef).
+[CreateLoadBalancerTlsCertificateResultTypeDef](./type_defs.md#createloadbalancertlscertificateresulttypedef).
 
 ### create_relational_database
 
@@ -829,7 +837,7 @@ Boto3 documentation:
 [Lightsail.Client.create_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database)
 
 Arguments mapping described in
-[CreateRelationalDatabaseRequestTypeDef](./type_defs.md#createrelationaldatabaserequesttypedef).
+[CreateRelationalDatabaseRequestRequestTypeDef](./type_defs.md#createrelationaldatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -846,7 +854,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRelationalDatabaseResultResponseTypeDef](./type_defs.md#createrelationaldatabaseresultresponsetypedef).
+[CreateRelationalDatabaseResultTypeDef](./type_defs.md#createrelationaldatabaseresulttypedef).
 
 ### create_relational_database_from_snapshot
 
@@ -859,7 +867,7 @@ Boto3 documentation:
 [Lightsail.Client.create_relational_database_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_from_snapshot)
 
 Arguments mapping described in
-[CreateRelationalDatabaseFromSnapshotRequestTypeDef](./type_defs.md#createrelationaldatabasefromsnapshotrequesttypedef).
+[CreateRelationalDatabaseFromSnapshotRequestRequestTypeDef](./type_defs.md#createrelationaldatabasefromsnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -874,7 +882,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRelationalDatabaseFromSnapshotResultResponseTypeDef](./type_defs.md#createrelationaldatabasefromsnapshotresultresponsetypedef).
+[CreateRelationalDatabaseFromSnapshotResultTypeDef](./type_defs.md#createrelationaldatabasefromsnapshotresulttypedef).
 
 ### create_relational_database_snapshot
 
@@ -887,7 +895,7 @@ Boto3 documentation:
 [Lightsail.Client.create_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.create_relational_database_snapshot)
 
 Arguments mapping described in
-[CreateRelationalDatabaseSnapshotRequestTypeDef](./type_defs.md#createrelationaldatabasesnapshotrequesttypedef).
+[CreateRelationalDatabaseSnapshotRequestRequestTypeDef](./type_defs.md#createrelationaldatabasesnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -896,7 +904,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateRelationalDatabaseSnapshotResultResponseTypeDef](./type_defs.md#createrelationaldatabasesnapshotresultresponsetypedef).
+[CreateRelationalDatabaseSnapshotResultTypeDef](./type_defs.md#createrelationaldatabasesnapshotresulttypedef).
 
 ### delete_alarm
 
@@ -908,14 +916,13 @@ Boto3 documentation:
 [Lightsail.Client.delete_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_alarm)
 
 Arguments mapping described in
-[DeleteAlarmRequestTypeDef](./type_defs.md#deletealarmrequesttypedef).
+[DeleteAlarmRequestRequestTypeDef](./type_defs.md#deletealarmrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `alarmName`: `str` *(required)*
 
-Returns
-[DeleteAlarmResultResponseTypeDef](./type_defs.md#deletealarmresultresponsetypedef).
+Returns [DeleteAlarmResultTypeDef](./type_defs.md#deletealarmresulttypedef).
 
 ### delete_auto_snapshot
 
@@ -927,7 +934,7 @@ Boto3 documentation:
 [Lightsail.Client.delete_auto_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_auto_snapshot)
 
 Arguments mapping described in
-[DeleteAutoSnapshotRequestTypeDef](./type_defs.md#deleteautosnapshotrequesttypedef).
+[DeleteAutoSnapshotRequestRequestTypeDef](./type_defs.md#deleteautosnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -935,7 +942,7 @@ Keyword-only arguments:
 - `date`: `str` *(required)*
 
 Returns
-[DeleteAutoSnapshotResultResponseTypeDef](./type_defs.md#deleteautosnapshotresultresponsetypedef).
+[DeleteAutoSnapshotResultTypeDef](./type_defs.md#deleteautosnapshotresulttypedef).
 
 ### delete_certificate
 
@@ -948,14 +955,14 @@ Boto3 documentation:
 [Lightsail.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_certificate)
 
 Arguments mapping described in
-[DeleteCertificateRequestTypeDef](./type_defs.md#deletecertificaterequesttypedef).
+[DeleteCertificateRequestRequestTypeDef](./type_defs.md#deletecertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `certificateName`: `str` *(required)*
 
 Returns
-[DeleteCertificateResultResponseTypeDef](./type_defs.md#deletecertificateresultresponsetypedef).
+[DeleteCertificateResultTypeDef](./type_defs.md#deletecertificateresulttypedef).
 
 ### delete_contact_method
 
@@ -967,7 +974,7 @@ Boto3 documentation:
 [Lightsail.Client.delete_contact_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_contact_method)
 
 Arguments mapping described in
-[DeleteContactMethodRequestTypeDef](./type_defs.md#deletecontactmethodrequesttypedef).
+[DeleteContactMethodRequestRequestTypeDef](./type_defs.md#deletecontactmethodrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -975,7 +982,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DeleteContactMethodResultResponseTypeDef](./type_defs.md#deletecontactmethodresultresponsetypedef).
+[DeleteContactMethodResultTypeDef](./type_defs.md#deletecontactmethodresulttypedef).
 
 ### delete_container_image
 
@@ -988,7 +995,7 @@ Boto3 documentation:
 [Lightsail.Client.delete_container_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_container_image)
 
 Arguments mapping described in
-[DeleteContainerImageRequestTypeDef](./type_defs.md#deletecontainerimagerequesttypedef).
+[DeleteContainerImageRequestRequestTypeDef](./type_defs.md#deletecontainerimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1008,7 +1015,7 @@ Boto3 documentation:
 [Lightsail.Client.delete_container_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_container_service)
 
 Arguments mapping described in
-[DeleteContainerServiceRequestTypeDef](./type_defs.md#deletecontainerservicerequesttypedef).
+[DeleteContainerServiceRequestRequestTypeDef](./type_defs.md#deletecontainerservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1026,15 +1033,14 @@ Boto3 documentation:
 [Lightsail.Client.delete_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_disk)
 
 Arguments mapping described in
-[DeleteDiskRequestTypeDef](./type_defs.md#deletediskrequesttypedef).
+[DeleteDiskRequestRequestTypeDef](./type_defs.md#deletediskrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `diskName`: `str` *(required)*
 - `forceDeleteAddOns`: `bool`
 
-Returns
-[DeleteDiskResultResponseTypeDef](./type_defs.md#deletediskresultresponsetypedef).
+Returns [DeleteDiskResultTypeDef](./type_defs.md#deletediskresulttypedef).
 
 ### delete_disk_snapshot
 
@@ -1046,14 +1052,14 @@ Boto3 documentation:
 [Lightsail.Client.delete_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_disk_snapshot)
 
 Arguments mapping described in
-[DeleteDiskSnapshotRequestTypeDef](./type_defs.md#deletedisksnapshotrequesttypedef).
+[DeleteDiskSnapshotRequestRequestTypeDef](./type_defs.md#deletedisksnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `diskSnapshotName`: `str` *(required)*
 
 Returns
-[DeleteDiskSnapshotResultResponseTypeDef](./type_defs.md#deletedisksnapshotresultresponsetypedef).
+[DeleteDiskSnapshotResultTypeDef](./type_defs.md#deletedisksnapshotresulttypedef).
 
 ### delete_distribution
 
@@ -1065,14 +1071,14 @@ Boto3 documentation:
 [Lightsail.Client.delete_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_distribution)
 
 Arguments mapping described in
-[DeleteDistributionRequestTypeDef](./type_defs.md#deletedistributionrequesttypedef).
+[DeleteDistributionRequestRequestTypeDef](./type_defs.md#deletedistributionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `distributionName`: `str`
 
 Returns
-[DeleteDistributionResultResponseTypeDef](./type_defs.md#deletedistributionresultresponsetypedef).
+[DeleteDistributionResultTypeDef](./type_defs.md#deletedistributionresulttypedef).
 
 ### delete_domain
 
@@ -1084,14 +1090,13 @@ Boto3 documentation:
 [Lightsail.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_domain)
 
 Arguments mapping described in
-[DeleteDomainRequestTypeDef](./type_defs.md#deletedomainrequesttypedef).
+[DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 
-Returns
-[DeleteDomainResultResponseTypeDef](./type_defs.md#deletedomainresultresponsetypedef).
+Returns [DeleteDomainResultTypeDef](./type_defs.md#deletedomainresulttypedef).
 
 ### delete_domain_entry
 
@@ -1103,7 +1108,7 @@ Boto3 documentation:
 [Lightsail.Client.delete_domain_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_domain_entry)
 
 Arguments mapping described in
-[DeleteDomainEntryRequestTypeDef](./type_defs.md#deletedomainentryrequesttypedef).
+[DeleteDomainEntryRequestRequestTypeDef](./type_defs.md#deletedomainentryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1112,7 +1117,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DeleteDomainEntryResultResponseTypeDef](./type_defs.md#deletedomainentryresultresponsetypedef).
+[DeleteDomainEntryResultTypeDef](./type_defs.md#deletedomainentryresulttypedef).
 
 ### delete_instance
 
@@ -1124,7 +1129,7 @@ Boto3 documentation:
 [Lightsail.Client.delete_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_instance)
 
 Arguments mapping described in
-[DeleteInstanceRequestTypeDef](./type_defs.md#deleteinstancerequesttypedef).
+[DeleteInstanceRequestRequestTypeDef](./type_defs.md#deleteinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1132,7 +1137,7 @@ Keyword-only arguments:
 - `forceDeleteAddOns`: `bool`
 
 Returns
-[DeleteInstanceResultResponseTypeDef](./type_defs.md#deleteinstanceresultresponsetypedef).
+[DeleteInstanceResultTypeDef](./type_defs.md#deleteinstanceresulttypedef).
 
 ### delete_instance_snapshot
 
@@ -1145,14 +1150,14 @@ Boto3 documentation:
 [Lightsail.Client.delete_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_instance_snapshot)
 
 Arguments mapping described in
-[DeleteInstanceSnapshotRequestTypeDef](./type_defs.md#deleteinstancesnapshotrequesttypedef).
+[DeleteInstanceSnapshotRequestRequestTypeDef](./type_defs.md#deleteinstancesnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `instanceSnapshotName`: `str` *(required)*
 
 Returns
-[DeleteInstanceSnapshotResultResponseTypeDef](./type_defs.md#deleteinstancesnapshotresultresponsetypedef).
+[DeleteInstanceSnapshotResultTypeDef](./type_defs.md#deleteinstancesnapshotresulttypedef).
 
 ### delete_key_pair
 
@@ -1164,14 +1169,14 @@ Boto3 documentation:
 [Lightsail.Client.delete_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_key_pair)
 
 Arguments mapping described in
-[DeleteKeyPairRequestTypeDef](./type_defs.md#deletekeypairrequesttypedef).
+[DeleteKeyPairRequestRequestTypeDef](./type_defs.md#deletekeypairrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `keyPairName`: `str` *(required)*
 
 Returns
-[DeleteKeyPairResultResponseTypeDef](./type_defs.md#deletekeypairresultresponsetypedef).
+[DeleteKeyPairResultTypeDef](./type_defs.md#deletekeypairresulttypedef).
 
 ### delete_known_host_keys
 
@@ -1184,14 +1189,14 @@ Boto3 documentation:
 [Lightsail.Client.delete_known_host_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_known_host_keys)
 
 Arguments mapping described in
-[DeleteKnownHostKeysRequestTypeDef](./type_defs.md#deleteknownhostkeysrequesttypedef).
+[DeleteKnownHostKeysRequestRequestTypeDef](./type_defs.md#deleteknownhostkeysrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
 
 Returns
-[DeleteKnownHostKeysResultResponseTypeDef](./type_defs.md#deleteknownhostkeysresultresponsetypedef).
+[DeleteKnownHostKeysResultTypeDef](./type_defs.md#deleteknownhostkeysresulttypedef).
 
 ### delete_load_balancer
 
@@ -1203,14 +1208,14 @@ Boto3 documentation:
 [Lightsail.Client.delete_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer)
 
 Arguments mapping described in
-[DeleteLoadBalancerRequestTypeDef](./type_defs.md#deleteloadbalancerrequesttypedef).
+[DeleteLoadBalancerRequestRequestTypeDef](./type_defs.md#deleteloadbalancerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `loadBalancerName`: `str` *(required)*
 
 Returns
-[DeleteLoadBalancerResultResponseTypeDef](./type_defs.md#deleteloadbalancerresultresponsetypedef).
+[DeleteLoadBalancerResultTypeDef](./type_defs.md#deleteloadbalancerresulttypedef).
 
 ### delete_load_balancer_tls_certificate
 
@@ -1223,7 +1228,7 @@ Boto3 documentation:
 [Lightsail.Client.delete_load_balancer_tls_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_load_balancer_tls_certificate)
 
 Arguments mapping described in
-[DeleteLoadBalancerTlsCertificateRequestTypeDef](./type_defs.md#deleteloadbalancertlscertificaterequesttypedef).
+[DeleteLoadBalancerTlsCertificateRequestRequestTypeDef](./type_defs.md#deleteloadbalancertlscertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1232,7 +1237,7 @@ Keyword-only arguments:
 - `force`: `bool`
 
 Returns
-[DeleteLoadBalancerTlsCertificateResultResponseTypeDef](./type_defs.md#deleteloadbalancertlscertificateresultresponsetypedef).
+[DeleteLoadBalancerTlsCertificateResultTypeDef](./type_defs.md#deleteloadbalancertlscertificateresulttypedef).
 
 ### delete_relational_database
 
@@ -1245,7 +1250,7 @@ Boto3 documentation:
 [Lightsail.Client.delete_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database)
 
 Arguments mapping described in
-[DeleteRelationalDatabaseRequestTypeDef](./type_defs.md#deleterelationaldatabaserequesttypedef).
+[DeleteRelationalDatabaseRequestRequestTypeDef](./type_defs.md#deleterelationaldatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1254,7 +1259,7 @@ Keyword-only arguments:
 - `finalRelationalDatabaseSnapshotName`: `str`
 
 Returns
-[DeleteRelationalDatabaseResultResponseTypeDef](./type_defs.md#deleterelationaldatabaseresultresponsetypedef).
+[DeleteRelationalDatabaseResultTypeDef](./type_defs.md#deleterelationaldatabaseresulttypedef).
 
 ### delete_relational_database_snapshot
 
@@ -1267,14 +1272,14 @@ Boto3 documentation:
 [Lightsail.Client.delete_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.delete_relational_database_snapshot)
 
 Arguments mapping described in
-[DeleteRelationalDatabaseSnapshotRequestTypeDef](./type_defs.md#deleterelationaldatabasesnapshotrequesttypedef).
+[DeleteRelationalDatabaseSnapshotRequestRequestTypeDef](./type_defs.md#deleterelationaldatabasesnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `relationalDatabaseSnapshotName`: `str` *(required)*
 
 Returns
-[DeleteRelationalDatabaseSnapshotResultResponseTypeDef](./type_defs.md#deleterelationaldatabasesnapshotresultresponsetypedef).
+[DeleteRelationalDatabaseSnapshotResultTypeDef](./type_defs.md#deleterelationaldatabasesnapshotresulttypedef).
 
 ### detach_certificate_from_distribution
 
@@ -1288,14 +1293,14 @@ Boto3 documentation:
 [Lightsail.Client.detach_certificate_from_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_certificate_from_distribution)
 
 Arguments mapping described in
-[DetachCertificateFromDistributionRequestTypeDef](./type_defs.md#detachcertificatefromdistributionrequesttypedef).
+[DetachCertificateFromDistributionRequestRequestTypeDef](./type_defs.md#detachcertificatefromdistributionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `distributionName`: `str` *(required)*
 
 Returns
-[DetachCertificateFromDistributionResultResponseTypeDef](./type_defs.md#detachcertificatefromdistributionresultresponsetypedef).
+[DetachCertificateFromDistributionResultTypeDef](./type_defs.md#detachcertificatefromdistributionresulttypedef).
 
 ### detach_disk
 
@@ -1307,14 +1312,13 @@ Boto3 documentation:
 [Lightsail.Client.detach_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_disk)
 
 Arguments mapping described in
-[DetachDiskRequestTypeDef](./type_defs.md#detachdiskrequesttypedef).
+[DetachDiskRequestRequestTypeDef](./type_defs.md#detachdiskrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `diskName`: `str` *(required)*
 
-Returns
-[DetachDiskResultResponseTypeDef](./type_defs.md#detachdiskresultresponsetypedef).
+Returns [DetachDiskResultTypeDef](./type_defs.md#detachdiskresulttypedef).
 
 ### detach_instances_from_load_balancer
 
@@ -1327,7 +1331,7 @@ Boto3 documentation:
 [Lightsail.Client.detach_instances_from_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_instances_from_load_balancer)
 
 Arguments mapping described in
-[DetachInstancesFromLoadBalancerRequestTypeDef](./type_defs.md#detachinstancesfromloadbalancerrequesttypedef).
+[DetachInstancesFromLoadBalancerRequestRequestTypeDef](./type_defs.md#detachinstancesfromloadbalancerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1335,7 +1339,7 @@ Keyword-only arguments:
 - `instanceNames`: `List`\[`str`\] *(required)*
 
 Returns
-[DetachInstancesFromLoadBalancerResultResponseTypeDef](./type_defs.md#detachinstancesfromloadbalancerresultresponsetypedef).
+[DetachInstancesFromLoadBalancerResultTypeDef](./type_defs.md#detachinstancesfromloadbalancerresulttypedef).
 
 ### detach_static_ip
 
@@ -1348,14 +1352,14 @@ Boto3 documentation:
 [Lightsail.Client.detach_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.detach_static_ip)
 
 Arguments mapping described in
-[DetachStaticIpRequestTypeDef](./type_defs.md#detachstaticiprequesttypedef).
+[DetachStaticIpRequestRequestTypeDef](./type_defs.md#detachstaticiprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `staticIpName`: `str` *(required)*
 
 Returns
-[DetachStaticIpResultResponseTypeDef](./type_defs.md#detachstaticipresultresponsetypedef).
+[DetachStaticIpResultTypeDef](./type_defs.md#detachstaticipresulttypedef).
 
 ### disable_add_on
 
@@ -1367,7 +1371,7 @@ Boto3 documentation:
 [Lightsail.Client.disable_add_on](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.disable_add_on)
 
 Arguments mapping described in
-[DisableAddOnRequestTypeDef](./type_defs.md#disableaddonrequesttypedef).
+[DisableAddOnRequestRequestTypeDef](./type_defs.md#disableaddonrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1375,8 +1379,7 @@ Keyword-only arguments:
   [AddOnTypeType](./literals.md#addontypetype)) *(required)*
 - `resourceName`: `str` *(required)*
 
-Returns
-[DisableAddOnResultResponseTypeDef](./type_defs.md#disableaddonresultresponsetypedef).
+Returns [DisableAddOnResultTypeDef](./type_defs.md#disableaddonresulttypedef).
 
 ### download_default_key_pair
 
@@ -1389,7 +1392,7 @@ Boto3 documentation:
 [Lightsail.Client.download_default_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.download_default_key_pair)
 
 Returns
-[DownloadDefaultKeyPairResultResponseTypeDef](./type_defs.md#downloaddefaultkeypairresultresponsetypedef).
+[DownloadDefaultKeyPairResultTypeDef](./type_defs.md#downloaddefaultkeypairresulttypedef).
 
 ### enable_add_on
 
@@ -1401,7 +1404,7 @@ Boto3 documentation:
 [Lightsail.Client.enable_add_on](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.enable_add_on)
 
 Arguments mapping described in
-[EnableAddOnRequestTypeDef](./type_defs.md#enableaddonrequesttypedef).
+[EnableAddOnRequestRequestTypeDef](./type_defs.md#enableaddonrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1409,8 +1412,7 @@ Keyword-only arguments:
 - `addOnRequest`: [AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)
   *(required)*
 
-Returns
-[EnableAddOnResultResponseTypeDef](./type_defs.md#enableaddonresultresponsetypedef).
+Returns [EnableAddOnResultTypeDef](./type_defs.md#enableaddonresulttypedef).
 
 ### export_snapshot
 
@@ -1423,14 +1425,14 @@ Boto3 documentation:
 [Lightsail.Client.export_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.export_snapshot)
 
 Arguments mapping described in
-[ExportSnapshotRequestTypeDef](./type_defs.md#exportsnapshotrequesttypedef).
+[ExportSnapshotRequestRequestTypeDef](./type_defs.md#exportsnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `sourceSnapshotName`: `str` *(required)*
 
 Returns
-[ExportSnapshotResultResponseTypeDef](./type_defs.md#exportsnapshotresultresponsetypedef).
+[ExportSnapshotResultTypeDef](./type_defs.md#exportsnapshotresulttypedef).
 
 ### generate_presigned_url
 
@@ -1460,14 +1462,14 @@ Boto3 documentation:
 [Lightsail.Client.get_active_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_active_names)
 
 Arguments mapping described in
-[GetActiveNamesRequestTypeDef](./type_defs.md#getactivenamesrequesttypedef).
+[GetActiveNamesRequestRequestTypeDef](./type_defs.md#getactivenamesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
 Returns
-[GetActiveNamesResultResponseTypeDef](./type_defs.md#getactivenamesresultresponsetypedef).
+[GetActiveNamesResultTypeDef](./type_defs.md#getactivenamesresulttypedef).
 
 ### get_alarms
 
@@ -1479,7 +1481,7 @@ Boto3 documentation:
 [Lightsail.Client.get_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_alarms)
 
 Arguments mapping described in
-[GetAlarmsRequestTypeDef](./type_defs.md#getalarmsrequesttypedef).
+[GetAlarmsRequestRequestTypeDef](./type_defs.md#getalarmsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1487,8 +1489,7 @@ Keyword-only arguments:
 - `pageToken`: `str`
 - `monitoredResourceName`: `str`
 
-Returns
-[GetAlarmsResultResponseTypeDef](./type_defs.md#getalarmsresultresponsetypedef).
+Returns [GetAlarmsResultTypeDef](./type_defs.md#getalarmsresulttypedef).
 
 ### get_auto_snapshots
 
@@ -1500,14 +1501,14 @@ Boto3 documentation:
 [Lightsail.Client.get_auto_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_auto_snapshots)
 
 Arguments mapping described in
-[GetAutoSnapshotsRequestTypeDef](./type_defs.md#getautosnapshotsrequesttypedef).
+[GetAutoSnapshotsRequestRequestTypeDef](./type_defs.md#getautosnapshotsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceName`: `str` *(required)*
 
 Returns
-[GetAutoSnapshotsResultResponseTypeDef](./type_defs.md#getautosnapshotsresultresponsetypedef).
+[GetAutoSnapshotsResultTypeDef](./type_defs.md#getautosnapshotsresulttypedef).
 
 ### get_blueprints
 
@@ -1519,7 +1520,7 @@ Boto3 documentation:
 [Lightsail.Client.get_blueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_blueprints)
 
 Arguments mapping described in
-[GetBlueprintsRequestTypeDef](./type_defs.md#getblueprintsrequesttypedef).
+[GetBlueprintsRequestRequestTypeDef](./type_defs.md#getblueprintsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1527,7 +1528,7 @@ Keyword-only arguments:
 - `pageToken`: `str`
 
 Returns
-[GetBlueprintsResultResponseTypeDef](./type_defs.md#getblueprintsresultresponsetypedef).
+[GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef).
 
 ### get_bundles
 
@@ -1539,15 +1540,14 @@ Boto3 documentation:
 [Lightsail.Client.get_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_bundles)
 
 Arguments mapping described in
-[GetBundlesRequestTypeDef](./type_defs.md#getbundlesrequesttypedef).
+[GetBundlesRequestRequestTypeDef](./type_defs.md#getbundlesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `includeInactive`: `bool`
 - `pageToken`: `str`
 
-Returns
-[GetBundlesResultResponseTypeDef](./type_defs.md#getbundlesresultresponsetypedef).
+Returns [GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef).
 
 ### get_certificates
 
@@ -1559,7 +1559,7 @@ Boto3 documentation:
 [Lightsail.Client.get_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_certificates)
 
 Arguments mapping described in
-[GetCertificatesRequestTypeDef](./type_defs.md#getcertificatesrequesttypedef).
+[GetCertificatesRequestRequestTypeDef](./type_defs.md#getcertificatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1569,7 +1569,7 @@ Keyword-only arguments:
 - `certificateName`: `str`
 
 Returns
-[GetCertificatesResultResponseTypeDef](./type_defs.md#getcertificatesresultresponsetypedef).
+[GetCertificatesResultTypeDef](./type_defs.md#getcertificatesresulttypedef).
 
 ### get_cloud_formation_stack_records
 
@@ -1583,14 +1583,14 @@ Boto3 documentation:
 [Lightsail.Client.get_cloud_formation_stack_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_cloud_formation_stack_records)
 
 Arguments mapping described in
-[GetCloudFormationStackRecordsRequestTypeDef](./type_defs.md#getcloudformationstackrecordsrequesttypedef).
+[GetCloudFormationStackRecordsRequestRequestTypeDef](./type_defs.md#getcloudformationstackrecordsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
 Returns
-[GetCloudFormationStackRecordsResultResponseTypeDef](./type_defs.md#getcloudformationstackrecordsresultresponsetypedef).
+[GetCloudFormationStackRecordsResultTypeDef](./type_defs.md#getcloudformationstackrecordsresulttypedef).
 
 ### get_contact_methods
 
@@ -1602,7 +1602,7 @@ Boto3 documentation:
 [Lightsail.Client.get_contact_methods](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_contact_methods)
 
 Arguments mapping described in
-[GetContactMethodsRequestTypeDef](./type_defs.md#getcontactmethodsrequesttypedef).
+[GetContactMethodsRequestRequestTypeDef](./type_defs.md#getcontactmethodsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1610,7 +1610,7 @@ Keyword-only arguments:
   `List`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
 
 Returns
-[GetContactMethodsResultResponseTypeDef](./type_defs.md#getcontactmethodsresultresponsetypedef).
+[GetContactMethodsResultTypeDef](./type_defs.md#getcontactmethodsresulttypedef).
 
 ### get_container_api_metadata
 
@@ -1624,7 +1624,7 @@ Boto3 documentation:
 [Lightsail.Client.get_container_api_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_api_metadata)
 
 Returns
-[GetContainerAPIMetadataResultResponseTypeDef](./type_defs.md#getcontainerapimetadataresultresponsetypedef).
+[GetContainerAPIMetadataResultTypeDef](./type_defs.md#getcontainerapimetadataresulttypedef).
 
 ### get_container_images
 
@@ -1637,14 +1637,14 @@ Boto3 documentation:
 [Lightsail.Client.get_container_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_images)
 
 Arguments mapping described in
-[GetContainerImagesRequestTypeDef](./type_defs.md#getcontainerimagesrequesttypedef).
+[GetContainerImagesRequestRequestTypeDef](./type_defs.md#getcontainerimagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `serviceName`: `str` *(required)*
 
 Returns
-[GetContainerImagesResultResponseTypeDef](./type_defs.md#getcontainerimagesresultresponsetypedef).
+[GetContainerImagesResultTypeDef](./type_defs.md#getcontainerimagesresulttypedef).
 
 ### get_container_log
 
@@ -1657,7 +1657,7 @@ Boto3 documentation:
 [Lightsail.Client.get_container_log](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_log)
 
 Arguments mapping described in
-[GetContainerLogRequestTypeDef](./type_defs.md#getcontainerlogrequesttypedef).
+[GetContainerLogRequestRequestTypeDef](./type_defs.md#getcontainerlogrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1669,7 +1669,7 @@ Keyword-only arguments:
 - `pageToken`: `str`
 
 Returns
-[GetContainerLogResultResponseTypeDef](./type_defs.md#getcontainerlogresultresponsetypedef).
+[GetContainerLogResultTypeDef](./type_defs.md#getcontainerlogresulttypedef).
 
 ### get_container_service_deployments
 
@@ -1684,14 +1684,14 @@ Boto3 documentation:
 [Lightsail.Client.get_container_service_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_deployments)
 
 Arguments mapping described in
-[GetContainerServiceDeploymentsRequestTypeDef](./type_defs.md#getcontainerservicedeploymentsrequesttypedef).
+[GetContainerServiceDeploymentsRequestRequestTypeDef](./type_defs.md#getcontainerservicedeploymentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `serviceName`: `str` *(required)*
 
 Returns
-[GetContainerServiceDeploymentsResultResponseTypeDef](./type_defs.md#getcontainerservicedeploymentsresultresponsetypedef).
+[GetContainerServiceDeploymentsResultTypeDef](./type_defs.md#getcontainerservicedeploymentsresulttypedef).
 
 ### get_container_service_metric_data
 
@@ -1705,7 +1705,7 @@ Boto3 documentation:
 [Lightsail.Client.get_container_service_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_metric_data)
 
 Arguments mapping described in
-[GetContainerServiceMetricDataRequestTypeDef](./type_defs.md#getcontainerservicemetricdatarequesttypedef).
+[GetContainerServiceMetricDataRequestRequestTypeDef](./type_defs.md#getcontainerservicemetricdatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1721,7 +1721,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetContainerServiceMetricDataResultResponseTypeDef](./type_defs.md#getcontainerservicemetricdataresultresponsetypedef).
+[GetContainerServiceMetricDataResultTypeDef](./type_defs.md#getcontainerservicemetricdataresulttypedef).
 
 ### get_container_service_powers
 
@@ -1735,7 +1735,7 @@ Boto3 documentation:
 [Lightsail.Client.get_container_service_powers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_service_powers)
 
 Returns
-[GetContainerServicePowersResultResponseTypeDef](./type_defs.md#getcontainerservicepowersresultresponsetypedef).
+[GetContainerServicePowersResultTypeDef](./type_defs.md#getcontainerservicepowersresulttypedef).
 
 ### get_container_services
 
@@ -1748,14 +1748,14 @@ Boto3 documentation:
 [Lightsail.Client.get_container_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_container_services)
 
 Arguments mapping described in
-[GetContainerServicesRequestTypeDef](./type_defs.md#getcontainerservicesrequesttypedef).
+[GetContainerServicesRequestRequestTypeDef](./type_defs.md#getcontainerservicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `serviceName`: `str`
 
 Returns
-[ContainerServicesListResultResponseTypeDef](./type_defs.md#containerserviceslistresultresponsetypedef).
+[ContainerServicesListResultTypeDef](./type_defs.md#containerserviceslistresulttypedef).
 
 ### get_disk
 
@@ -1767,14 +1767,13 @@ Boto3 documentation:
 [Lightsail.Client.get_disk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk)
 
 Arguments mapping described in
-[GetDiskRequestTypeDef](./type_defs.md#getdiskrequesttypedef).
+[GetDiskRequestRequestTypeDef](./type_defs.md#getdiskrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `diskName`: `str` *(required)*
 
-Returns
-[GetDiskResultResponseTypeDef](./type_defs.md#getdiskresultresponsetypedef).
+Returns [GetDiskResultTypeDef](./type_defs.md#getdiskresulttypedef).
 
 ### get_disk_snapshot
 
@@ -1786,14 +1785,14 @@ Boto3 documentation:
 [Lightsail.Client.get_disk_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshot)
 
 Arguments mapping described in
-[GetDiskSnapshotRequestTypeDef](./type_defs.md#getdisksnapshotrequesttypedef).
+[GetDiskSnapshotRequestRequestTypeDef](./type_defs.md#getdisksnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `diskSnapshotName`: `str` *(required)*
 
 Returns
-[GetDiskSnapshotResultResponseTypeDef](./type_defs.md#getdisksnapshotresultresponsetypedef).
+[GetDiskSnapshotResultTypeDef](./type_defs.md#getdisksnapshotresulttypedef).
 
 ### get_disk_snapshots
 
@@ -1806,14 +1805,14 @@ Boto3 documentation:
 [Lightsail.Client.get_disk_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disk_snapshots)
 
 Arguments mapping described in
-[GetDiskSnapshotsRequestTypeDef](./type_defs.md#getdisksnapshotsrequesttypedef).
+[GetDiskSnapshotsRequestRequestTypeDef](./type_defs.md#getdisksnapshotsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
 Returns
-[GetDiskSnapshotsResultResponseTypeDef](./type_defs.md#getdisksnapshotsresultresponsetypedef).
+[GetDiskSnapshotsResultTypeDef](./type_defs.md#getdisksnapshotsresulttypedef).
 
 ### get_disks
 
@@ -1826,14 +1825,13 @@ Boto3 documentation:
 [Lightsail.Client.get_disks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_disks)
 
 Arguments mapping described in
-[GetDisksRequestTypeDef](./type_defs.md#getdisksrequesttypedef).
+[GetDisksRequestRequestTypeDef](./type_defs.md#getdisksrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
-Returns
-[GetDisksResultResponseTypeDef](./type_defs.md#getdisksresultresponsetypedef).
+Returns [GetDisksResultTypeDef](./type_defs.md#getdisksresulttypedef).
 
 ### get_distribution_bundles
 
@@ -1847,7 +1845,7 @@ Boto3 documentation:
 [Lightsail.Client.get_distribution_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_bundles)
 
 Returns
-[GetDistributionBundlesResultResponseTypeDef](./type_defs.md#getdistributionbundlesresultresponsetypedef).
+[GetDistributionBundlesResultTypeDef](./type_defs.md#getdistributionbundlesresulttypedef).
 
 ### get_distribution_latest_cache_reset
 
@@ -1861,14 +1859,14 @@ Boto3 documentation:
 [Lightsail.Client.get_distribution_latest_cache_reset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_latest_cache_reset)
 
 Arguments mapping described in
-[GetDistributionLatestCacheResetRequestTypeDef](./type_defs.md#getdistributionlatestcacheresetrequesttypedef).
+[GetDistributionLatestCacheResetRequestRequestTypeDef](./type_defs.md#getdistributionlatestcacheresetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `distributionName`: `str`
 
 Returns
-[GetDistributionLatestCacheResetResultResponseTypeDef](./type_defs.md#getdistributionlatestcacheresetresultresponsetypedef).
+[GetDistributionLatestCacheResetResultTypeDef](./type_defs.md#getdistributionlatestcacheresetresulttypedef).
 
 ### get_distribution_metric_data
 
@@ -1882,7 +1880,7 @@ Boto3 documentation:
 [Lightsail.Client.get_distribution_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distribution_metric_data)
 
 Arguments mapping described in
-[GetDistributionMetricDataRequestTypeDef](./type_defs.md#getdistributionmetricdatarequesttypedef).
+[GetDistributionMetricDataRequestRequestTypeDef](./type_defs.md#getdistributionmetricdatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1899,7 +1897,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetDistributionMetricDataResultResponseTypeDef](./type_defs.md#getdistributionmetricdataresultresponsetypedef).
+[GetDistributionMetricDataResultTypeDef](./type_defs.md#getdistributionmetricdataresulttypedef).
 
 ### get_distributions
 
@@ -1912,7 +1910,7 @@ Boto3 documentation:
 [Lightsail.Client.get_distributions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_distributions)
 
 Arguments mapping described in
-[GetDistributionsRequestTypeDef](./type_defs.md#getdistributionsrequesttypedef).
+[GetDistributionsRequestRequestTypeDef](./type_defs.md#getdistributionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1920,7 +1918,7 @@ Keyword-only arguments:
 - `pageToken`: `str`
 
 Returns
-[GetDistributionsResultResponseTypeDef](./type_defs.md#getdistributionsresultresponsetypedef).
+[GetDistributionsResultTypeDef](./type_defs.md#getdistributionsresulttypedef).
 
 ### get_domain
 
@@ -1932,14 +1930,13 @@ Boto3 documentation:
 [Lightsail.Client.get_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_domain)
 
 Arguments mapping described in
-[GetDomainRequestTypeDef](./type_defs.md#getdomainrequesttypedef).
+[GetDomainRequestRequestTypeDef](./type_defs.md#getdomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
 
-Returns
-[GetDomainResultResponseTypeDef](./type_defs.md#getdomainresultresponsetypedef).
+Returns [GetDomainResultTypeDef](./type_defs.md#getdomainresulttypedef).
 
 ### get_domains
 
@@ -1951,14 +1948,13 @@ Boto3 documentation:
 [Lightsail.Client.get_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_domains)
 
 Arguments mapping described in
-[GetDomainsRequestTypeDef](./type_defs.md#getdomainsrequesttypedef).
+[GetDomainsRequestRequestTypeDef](./type_defs.md#getdomainsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
-Returns
-[GetDomainsResultResponseTypeDef](./type_defs.md#getdomainsresultresponsetypedef).
+Returns [GetDomainsResultTypeDef](./type_defs.md#getdomainsresulttypedef).
 
 ### get_export_snapshot_records
 
@@ -1972,14 +1968,14 @@ Boto3 documentation:
 [Lightsail.Client.get_export_snapshot_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_export_snapshot_records)
 
 Arguments mapping described in
-[GetExportSnapshotRecordsRequestTypeDef](./type_defs.md#getexportsnapshotrecordsrequesttypedef).
+[GetExportSnapshotRecordsRequestRequestTypeDef](./type_defs.md#getexportsnapshotrecordsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
 Returns
-[GetExportSnapshotRecordsResultResponseTypeDef](./type_defs.md#getexportsnapshotrecordsresultresponsetypedef).
+[GetExportSnapshotRecordsResultTypeDef](./type_defs.md#getexportsnapshotrecordsresulttypedef).
 
 ### get_instance
 
@@ -1992,14 +1988,13 @@ Boto3 documentation:
 [Lightsail.Client.get_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance)
 
 Arguments mapping described in
-[GetInstanceRequestTypeDef](./type_defs.md#getinstancerequesttypedef).
+[GetInstanceRequestRequestTypeDef](./type_defs.md#getinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
 
-Returns
-[GetInstanceResultResponseTypeDef](./type_defs.md#getinstanceresultresponsetypedef).
+Returns [GetInstanceResultTypeDef](./type_defs.md#getinstanceresulttypedef).
 
 ### get_instance_access_details
 
@@ -2013,7 +2008,7 @@ Boto3 documentation:
 [Lightsail.Client.get_instance_access_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_access_details)
 
 Arguments mapping described in
-[GetInstanceAccessDetailsRequestTypeDef](./type_defs.md#getinstanceaccessdetailsrequesttypedef).
+[GetInstanceAccessDetailsRequestRequestTypeDef](./type_defs.md#getinstanceaccessdetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2022,7 +2017,7 @@ Keyword-only arguments:
   [InstanceAccessProtocolType](./literals.md#instanceaccessprotocoltype)
 
 Returns
-[GetInstanceAccessDetailsResultResponseTypeDef](./type_defs.md#getinstanceaccessdetailsresultresponsetypedef).
+[GetInstanceAccessDetailsResultTypeDef](./type_defs.md#getinstanceaccessdetailsresulttypedef).
 
 ### get_instance_metric_data
 
@@ -2036,7 +2031,7 @@ Boto3 documentation:
 [Lightsail.Client.get_instance_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_metric_data)
 
 Arguments mapping described in
-[GetInstanceMetricDataRequestTypeDef](./type_defs.md#getinstancemetricdatarequesttypedef).
+[GetInstanceMetricDataRequestRequestTypeDef](./type_defs.md#getinstancemetricdatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2052,7 +2047,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetInstanceMetricDataResultResponseTypeDef](./type_defs.md#getinstancemetricdataresultresponsetypedef).
+[GetInstanceMetricDataResultTypeDef](./type_defs.md#getinstancemetricdataresulttypedef).
 
 ### get_instance_port_states
 
@@ -2067,14 +2062,14 @@ Boto3 documentation:
 [Lightsail.Client.get_instance_port_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_port_states)
 
 Arguments mapping described in
-[GetInstancePortStatesRequestTypeDef](./type_defs.md#getinstanceportstatesrequesttypedef).
+[GetInstancePortStatesRequestRequestTypeDef](./type_defs.md#getinstanceportstatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
 
 Returns
-[GetInstancePortStatesResultResponseTypeDef](./type_defs.md#getinstanceportstatesresultresponsetypedef).
+[GetInstancePortStatesResultTypeDef](./type_defs.md#getinstanceportstatesresulttypedef).
 
 ### get_instance_snapshot
 
@@ -2086,14 +2081,14 @@ Boto3 documentation:
 [Lightsail.Client.get_instance_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshot)
 
 Arguments mapping described in
-[GetInstanceSnapshotRequestTypeDef](./type_defs.md#getinstancesnapshotrequesttypedef).
+[GetInstanceSnapshotRequestRequestTypeDef](./type_defs.md#getinstancesnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `instanceSnapshotName`: `str` *(required)*
 
 Returns
-[GetInstanceSnapshotResultResponseTypeDef](./type_defs.md#getinstancesnapshotresultresponsetypedef).
+[GetInstanceSnapshotResultTypeDef](./type_defs.md#getinstancesnapshotresulttypedef).
 
 ### get_instance_snapshots
 
@@ -2105,14 +2100,14 @@ Boto3 documentation:
 [Lightsail.Client.get_instance_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_snapshots)
 
 Arguments mapping described in
-[GetInstanceSnapshotsRequestTypeDef](./type_defs.md#getinstancesnapshotsrequesttypedef).
+[GetInstanceSnapshotsRequestRequestTypeDef](./type_defs.md#getinstancesnapshotsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
 Returns
-[GetInstanceSnapshotsResultResponseTypeDef](./type_defs.md#getinstancesnapshotsresultresponsetypedef).
+[GetInstanceSnapshotsResultTypeDef](./type_defs.md#getinstancesnapshotsresulttypedef).
 
 ### get_instance_state
 
@@ -2124,14 +2119,14 @@ Boto3 documentation:
 [Lightsail.Client.get_instance_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instance_state)
 
 Arguments mapping described in
-[GetInstanceStateRequestTypeDef](./type_defs.md#getinstancestaterequesttypedef).
+[GetInstanceStateRequestRequestTypeDef](./type_defs.md#getinstancestaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
 
 Returns
-[GetInstanceStateResultResponseTypeDef](./type_defs.md#getinstancestateresultresponsetypedef).
+[GetInstanceStateResultTypeDef](./type_defs.md#getinstancestateresulttypedef).
 
 ### get_instances
 
@@ -2144,14 +2139,13 @@ Boto3 documentation:
 [Lightsail.Client.get_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_instances)
 
 Arguments mapping described in
-[GetInstancesRequestTypeDef](./type_defs.md#getinstancesrequesttypedef).
+[GetInstancesRequestRequestTypeDef](./type_defs.md#getinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
-Returns
-[GetInstancesResultResponseTypeDef](./type_defs.md#getinstancesresultresponsetypedef).
+Returns [GetInstancesResultTypeDef](./type_defs.md#getinstancesresulttypedef).
 
 ### get_key_pair
 
@@ -2163,14 +2157,13 @@ Boto3 documentation:
 [Lightsail.Client.get_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_key_pair)
 
 Arguments mapping described in
-[GetKeyPairRequestTypeDef](./type_defs.md#getkeypairrequesttypedef).
+[GetKeyPairRequestRequestTypeDef](./type_defs.md#getkeypairrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `keyPairName`: `str` *(required)*
 
-Returns
-[GetKeyPairResultResponseTypeDef](./type_defs.md#getkeypairresultresponsetypedef).
+Returns [GetKeyPairResultTypeDef](./type_defs.md#getkeypairresulttypedef).
 
 ### get_key_pairs
 
@@ -2182,14 +2175,13 @@ Boto3 documentation:
 [Lightsail.Client.get_key_pairs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_key_pairs)
 
 Arguments mapping described in
-[GetKeyPairsRequestTypeDef](./type_defs.md#getkeypairsrequesttypedef).
+[GetKeyPairsRequestRequestTypeDef](./type_defs.md#getkeypairsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
-Returns
-[GetKeyPairsResultResponseTypeDef](./type_defs.md#getkeypairsresultresponsetypedef).
+Returns [GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef).
 
 ### get_load_balancer
 
@@ -2201,14 +2193,14 @@ Boto3 documentation:
 [Lightsail.Client.get_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer)
 
 Arguments mapping described in
-[GetLoadBalancerRequestTypeDef](./type_defs.md#getloadbalancerrequesttypedef).
+[GetLoadBalancerRequestRequestTypeDef](./type_defs.md#getloadbalancerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `loadBalancerName`: `str` *(required)*
 
 Returns
-[GetLoadBalancerResultResponseTypeDef](./type_defs.md#getloadbalancerresultresponsetypedef).
+[GetLoadBalancerResultTypeDef](./type_defs.md#getloadbalancerresulttypedef).
 
 ### get_load_balancer_metric_data
 
@@ -2221,7 +2213,7 @@ Boto3 documentation:
 [Lightsail.Client.get_load_balancer_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_metric_data)
 
 Arguments mapping described in
-[GetLoadBalancerMetricDataRequestTypeDef](./type_defs.md#getloadbalancermetricdatarequesttypedef).
+[GetLoadBalancerMetricDataRequestRequestTypeDef](./type_defs.md#getloadbalancermetricdatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2238,7 +2230,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetLoadBalancerMetricDataResultResponseTypeDef](./type_defs.md#getloadbalancermetricdataresultresponsetypedef).
+[GetLoadBalancerMetricDataResultTypeDef](./type_defs.md#getloadbalancermetricdataresulttypedef).
 
 ### get_load_balancer_tls_certificates
 
@@ -2252,14 +2244,14 @@ Boto3 documentation:
 [Lightsail.Client.get_load_balancer_tls_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancer_tls_certificates)
 
 Arguments mapping described in
-[GetLoadBalancerTlsCertificatesRequestTypeDef](./type_defs.md#getloadbalancertlscertificatesrequesttypedef).
+[GetLoadBalancerTlsCertificatesRequestRequestTypeDef](./type_defs.md#getloadbalancertlscertificatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `loadBalancerName`: `str` *(required)*
 
 Returns
-[GetLoadBalancerTlsCertificatesResultResponseTypeDef](./type_defs.md#getloadbalancertlscertificatesresultresponsetypedef).
+[GetLoadBalancerTlsCertificatesResultTypeDef](./type_defs.md#getloadbalancertlscertificatesresulttypedef).
 
 ### get_load_balancers
 
@@ -2271,14 +2263,14 @@ Boto3 documentation:
 [Lightsail.Client.get_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_load_balancers)
 
 Arguments mapping described in
-[GetLoadBalancersRequestTypeDef](./type_defs.md#getloadbalancersrequesttypedef).
+[GetLoadBalancersRequestRequestTypeDef](./type_defs.md#getloadbalancersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
 Returns
-[GetLoadBalancersResultResponseTypeDef](./type_defs.md#getloadbalancersresultresponsetypedef).
+[GetLoadBalancersResultTypeDef](./type_defs.md#getloadbalancersresulttypedef).
 
 ### get_operation
 
@@ -2290,14 +2282,13 @@ Boto3 documentation:
 [Lightsail.Client.get_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operation)
 
 Arguments mapping described in
-[GetOperationRequestTypeDef](./type_defs.md#getoperationrequesttypedef).
+[GetOperationRequestRequestTypeDef](./type_defs.md#getoperationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `operationId`: `str` *(required)*
 
-Returns
-[GetOperationResultResponseTypeDef](./type_defs.md#getoperationresultresponsetypedef).
+Returns [GetOperationResultTypeDef](./type_defs.md#getoperationresulttypedef).
 
 ### get_operations
 
@@ -2309,14 +2300,14 @@ Boto3 documentation:
 [Lightsail.Client.get_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operations)
 
 Arguments mapping described in
-[GetOperationsRequestTypeDef](./type_defs.md#getoperationsrequesttypedef).
+[GetOperationsRequestRequestTypeDef](./type_defs.md#getoperationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
 Returns
-[GetOperationsResultResponseTypeDef](./type_defs.md#getoperationsresultresponsetypedef).
+[GetOperationsResultTypeDef](./type_defs.md#getoperationsresulttypedef).
 
 ### get_operations_for_resource
 
@@ -2329,7 +2320,7 @@ Boto3 documentation:
 [Lightsail.Client.get_operations_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_operations_for_resource)
 
 Arguments mapping described in
-[GetOperationsForResourceRequestTypeDef](./type_defs.md#getoperationsforresourcerequesttypedef).
+[GetOperationsForResourceRequestRequestTypeDef](./type_defs.md#getoperationsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2337,7 +2328,7 @@ Keyword-only arguments:
 - `pageToken`: `str`
 
 Returns
-[GetOperationsForResourceResultResponseTypeDef](./type_defs.md#getoperationsforresourceresultresponsetypedef).
+[GetOperationsForResourceResultTypeDef](./type_defs.md#getoperationsforresourceresulttypedef).
 
 ### get_regions
 
@@ -2349,15 +2340,14 @@ Boto3 documentation:
 [Lightsail.Client.get_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_regions)
 
 Arguments mapping described in
-[GetRegionsRequestTypeDef](./type_defs.md#getregionsrequesttypedef).
+[GetRegionsRequestRequestTypeDef](./type_defs.md#getregionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `includeAvailabilityZones`: `bool`
 - `includeRelationalDatabaseAvailabilityZones`: `bool`
 
-Returns
-[GetRegionsResultResponseTypeDef](./type_defs.md#getregionsresultresponsetypedef).
+Returns [GetRegionsResultTypeDef](./type_defs.md#getregionsresulttypedef).
 
 ### get_relational_database
 
@@ -2370,14 +2360,14 @@ Boto3 documentation:
 [Lightsail.Client.get_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database)
 
 Arguments mapping described in
-[GetRelationalDatabaseRequestTypeDef](./type_defs.md#getrelationaldatabaserequesttypedef).
+[GetRelationalDatabaseRequestRequestTypeDef](./type_defs.md#getrelationaldatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 
 Returns
-[GetRelationalDatabaseResultResponseTypeDef](./type_defs.md#getrelationaldatabaseresultresponsetypedef).
+[GetRelationalDatabaseResultTypeDef](./type_defs.md#getrelationaldatabaseresulttypedef).
 
 ### get_relational_database_blueprints
 
@@ -2390,14 +2380,14 @@ Boto3 documentation:
 [Lightsail.Client.get_relational_database_blueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_blueprints)
 
 Arguments mapping described in
-[GetRelationalDatabaseBlueprintsRequestTypeDef](./type_defs.md#getrelationaldatabaseblueprintsrequesttypedef).
+[GetRelationalDatabaseBlueprintsRequestRequestTypeDef](./type_defs.md#getrelationaldatabaseblueprintsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabaseBlueprintsResultResponseTypeDef](./type_defs.md#getrelationaldatabaseblueprintsresultresponsetypedef).
+[GetRelationalDatabaseBlueprintsResultTypeDef](./type_defs.md#getrelationaldatabaseblueprintsresulttypedef).
 
 ### get_relational_database_bundles
 
@@ -2410,14 +2400,14 @@ Boto3 documentation:
 [Lightsail.Client.get_relational_database_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_bundles)
 
 Arguments mapping described in
-[GetRelationalDatabaseBundlesRequestTypeDef](./type_defs.md#getrelationaldatabasebundlesrequesttypedef).
+[GetRelationalDatabaseBundlesRequestRequestTypeDef](./type_defs.md#getrelationaldatabasebundlesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabaseBundlesResultResponseTypeDef](./type_defs.md#getrelationaldatabasebundlesresultresponsetypedef).
+[GetRelationalDatabaseBundlesResultTypeDef](./type_defs.md#getrelationaldatabasebundlesresulttypedef).
 
 ### get_relational_database_events
 
@@ -2430,7 +2420,7 @@ Boto3 documentation:
 [Lightsail.Client.get_relational_database_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_events)
 
 Arguments mapping described in
-[GetRelationalDatabaseEventsRequestTypeDef](./type_defs.md#getrelationaldatabaseeventsrequesttypedef).
+[GetRelationalDatabaseEventsRequestRequestTypeDef](./type_defs.md#getrelationaldatabaseeventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2439,7 +2429,7 @@ Keyword-only arguments:
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabaseEventsResultResponseTypeDef](./type_defs.md#getrelationaldatabaseeventsresultresponsetypedef).
+[GetRelationalDatabaseEventsResultTypeDef](./type_defs.md#getrelationaldatabaseeventsresulttypedef).
 
 ### get_relational_database_log_events
 
@@ -2452,7 +2442,7 @@ Boto3 documentation:
 [Lightsail.Client.get_relational_database_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_events)
 
 Arguments mapping described in
-[GetRelationalDatabaseLogEventsRequestTypeDef](./type_defs.md#getrelationaldatabaselogeventsrequesttypedef).
+[GetRelationalDatabaseLogEventsRequestRequestTypeDef](./type_defs.md#getrelationaldatabaselogeventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2464,7 +2454,7 @@ Keyword-only arguments:
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabaseLogEventsResultResponseTypeDef](./type_defs.md#getrelationaldatabaselogeventsresultresponsetypedef).
+[GetRelationalDatabaseLogEventsResultTypeDef](./type_defs.md#getrelationaldatabaselogeventsresulttypedef).
 
 ### get_relational_database_log_streams
 
@@ -2478,14 +2468,14 @@ Boto3 documentation:
 [Lightsail.Client.get_relational_database_log_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_log_streams)
 
 Arguments mapping described in
-[GetRelationalDatabaseLogStreamsRequestTypeDef](./type_defs.md#getrelationaldatabaselogstreamsrequesttypedef).
+[GetRelationalDatabaseLogStreamsRequestRequestTypeDef](./type_defs.md#getrelationaldatabaselogstreamsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 
 Returns
-[GetRelationalDatabaseLogStreamsResultResponseTypeDef](./type_defs.md#getrelationaldatabaselogstreamsresultresponsetypedef).
+[GetRelationalDatabaseLogStreamsResultTypeDef](./type_defs.md#getrelationaldatabaselogstreamsresulttypedef).
 
 ### get_relational_database_master_user_password
 
@@ -2500,7 +2490,7 @@ Boto3 documentation:
 [Lightsail.Client.get_relational_database_master_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_master_user_password)
 
 Arguments mapping described in
-[GetRelationalDatabaseMasterUserPasswordRequestTypeDef](./type_defs.md#getrelationaldatabasemasteruserpasswordrequesttypedef).
+[GetRelationalDatabaseMasterUserPasswordRequestRequestTypeDef](./type_defs.md#getrelationaldatabasemasteruserpasswordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2509,7 +2499,7 @@ Keyword-only arguments:
   [RelationalDatabasePasswordVersionType](./literals.md#relationaldatabasepasswordversiontype)
 
 Returns
-[GetRelationalDatabaseMasterUserPasswordResultResponseTypeDef](./type_defs.md#getrelationaldatabasemasteruserpasswordresultresponsetypedef).
+[GetRelationalDatabaseMasterUserPasswordResultTypeDef](./type_defs.md#getrelationaldatabasemasteruserpasswordresulttypedef).
 
 ### get_relational_database_metric_data
 
@@ -2523,7 +2513,7 @@ Boto3 documentation:
 [Lightsail.Client.get_relational_database_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_metric_data)
 
 Arguments mapping described in
-[GetRelationalDatabaseMetricDataRequestTypeDef](./type_defs.md#getrelationaldatabasemetricdatarequesttypedef).
+[GetRelationalDatabaseMetricDataRequestRequestTypeDef](./type_defs.md#getrelationaldatabasemetricdatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2540,7 +2530,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetRelationalDatabaseMetricDataResultResponseTypeDef](./type_defs.md#getrelationaldatabasemetricdataresultresponsetypedef).
+[GetRelationalDatabaseMetricDataResultTypeDef](./type_defs.md#getrelationaldatabasemetricdataresulttypedef).
 
 ### get_relational_database_parameters
 
@@ -2554,7 +2544,7 @@ Boto3 documentation:
 [Lightsail.Client.get_relational_database_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_parameters)
 
 Arguments mapping described in
-[GetRelationalDatabaseParametersRequestTypeDef](./type_defs.md#getrelationaldatabaseparametersrequesttypedef).
+[GetRelationalDatabaseParametersRequestRequestTypeDef](./type_defs.md#getrelationaldatabaseparametersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2562,7 +2552,7 @@ Keyword-only arguments:
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabaseParametersResultResponseTypeDef](./type_defs.md#getrelationaldatabaseparametersresultresponsetypedef).
+[GetRelationalDatabaseParametersResultTypeDef](./type_defs.md#getrelationaldatabaseparametersresulttypedef).
 
 ### get_relational_database_snapshot
 
@@ -2575,14 +2565,14 @@ Boto3 documentation:
 [Lightsail.Client.get_relational_database_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshot)
 
 Arguments mapping described in
-[GetRelationalDatabaseSnapshotRequestTypeDef](./type_defs.md#getrelationaldatabasesnapshotrequesttypedef).
+[GetRelationalDatabaseSnapshotRequestRequestTypeDef](./type_defs.md#getrelationaldatabasesnapshotrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `relationalDatabaseSnapshotName`: `str` *(required)*
 
 Returns
-[GetRelationalDatabaseSnapshotResultResponseTypeDef](./type_defs.md#getrelationaldatabasesnapshotresultresponsetypedef).
+[GetRelationalDatabaseSnapshotResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotresulttypedef).
 
 ### get_relational_database_snapshots
 
@@ -2595,14 +2585,14 @@ Boto3 documentation:
 [Lightsail.Client.get_relational_database_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_database_snapshots)
 
 Arguments mapping described in
-[GetRelationalDatabaseSnapshotsRequestTypeDef](./type_defs.md#getrelationaldatabasesnapshotsrequesttypedef).
+[GetRelationalDatabaseSnapshotsRequestRequestTypeDef](./type_defs.md#getrelationaldatabasesnapshotsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabaseSnapshotsResultResponseTypeDef](./type_defs.md#getrelationaldatabasesnapshotsresultresponsetypedef).
+[GetRelationalDatabaseSnapshotsResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotsresulttypedef).
 
 ### get_relational_databases
 
@@ -2615,14 +2605,14 @@ Boto3 documentation:
 [Lightsail.Client.get_relational_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_relational_databases)
 
 Arguments mapping described in
-[GetRelationalDatabasesRequestTypeDef](./type_defs.md#getrelationaldatabasesrequesttypedef).
+[GetRelationalDatabasesRequestRequestTypeDef](./type_defs.md#getrelationaldatabasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
 Returns
-[GetRelationalDatabasesResultResponseTypeDef](./type_defs.md#getrelationaldatabasesresultresponsetypedef).
+[GetRelationalDatabasesResultTypeDef](./type_defs.md#getrelationaldatabasesresulttypedef).
 
 ### get_static_ip
 
@@ -2634,14 +2624,13 @@ Boto3 documentation:
 [Lightsail.Client.get_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_static_ip)
 
 Arguments mapping described in
-[GetStaticIpRequestTypeDef](./type_defs.md#getstaticiprequesttypedef).
+[GetStaticIpRequestRequestTypeDef](./type_defs.md#getstaticiprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `staticIpName`: `str` *(required)*
 
-Returns
-[GetStaticIpResultResponseTypeDef](./type_defs.md#getstaticipresultresponsetypedef).
+Returns [GetStaticIpResultTypeDef](./type_defs.md#getstaticipresulttypedef).
 
 ### get_static_ips
 
@@ -2653,14 +2642,13 @@ Boto3 documentation:
 [Lightsail.Client.get_static_ips](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.get_static_ips)
 
 Arguments mapping described in
-[GetStaticIpsRequestTypeDef](./type_defs.md#getstaticipsrequesttypedef).
+[GetStaticIpsRequestRequestTypeDef](./type_defs.md#getstaticipsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `pageToken`: `str`
 
-Returns
-[GetStaticIpsResultResponseTypeDef](./type_defs.md#getstaticipsresultresponsetypedef).
+Returns [GetStaticIpsResultTypeDef](./type_defs.md#getstaticipsresulttypedef).
 
 ### import_key_pair
 
@@ -2672,7 +2660,7 @@ Boto3 documentation:
 [Lightsail.Client.import_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.import_key_pair)
 
 Arguments mapping described in
-[ImportKeyPairRequestTypeDef](./type_defs.md#importkeypairrequesttypedef).
+[ImportKeyPairRequestRequestTypeDef](./type_defs.md#importkeypairrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2680,7 +2668,7 @@ Keyword-only arguments:
 - `publicKeyBase64`: `str` *(required)*
 
 Returns
-[ImportKeyPairResultResponseTypeDef](./type_defs.md#importkeypairresultresponsetypedef).
+[ImportKeyPairResultTypeDef](./type_defs.md#importkeypairresulttypedef).
 
 ### is_vpc_peered
 
@@ -2691,8 +2679,7 @@ Type annotations for `boto3.client("lightsail").is_vpc_peered` method.
 Boto3 documentation:
 [Lightsail.Client.is_vpc_peered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.is_vpc_peered)
 
-Returns
-[IsVpcPeeredResultResponseTypeDef](./type_defs.md#isvpcpeeredresultresponsetypedef).
+Returns [IsVpcPeeredResultTypeDef](./type_defs.md#isvpcpeeredresulttypedef).
 
 ### open_instance_public_ports
 
@@ -2707,7 +2694,7 @@ Boto3 documentation:
 [Lightsail.Client.open_instance_public_ports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.open_instance_public_ports)
 
 Arguments mapping described in
-[OpenInstancePublicPortsRequestTypeDef](./type_defs.md#openinstancepublicportsrequesttypedef).
+[OpenInstancePublicPortsRequestRequestTypeDef](./type_defs.md#openinstancepublicportsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2715,7 +2702,7 @@ Keyword-only arguments:
 - `instanceName`: `str` *(required)*
 
 Returns
-[OpenInstancePublicPortsResultResponseTypeDef](./type_defs.md#openinstancepublicportsresultresponsetypedef).
+[OpenInstancePublicPortsResultTypeDef](./type_defs.md#openinstancepublicportsresulttypedef).
 
 ### peer_vpc
 
@@ -2726,8 +2713,7 @@ Type annotations for `boto3.client("lightsail").peer_vpc` method.
 Boto3 documentation:
 [Lightsail.Client.peer_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.peer_vpc)
 
-Returns
-[PeerVpcResultResponseTypeDef](./type_defs.md#peervpcresultresponsetypedef).
+Returns [PeerVpcResultTypeDef](./type_defs.md#peervpcresulttypedef).
 
 ### put_alarm
 
@@ -2739,7 +2725,7 @@ Boto3 documentation:
 [Lightsail.Client.put_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_alarm)
 
 Arguments mapping described in
-[PutAlarmRequestTypeDef](./type_defs.md#putalarmrequesttypedef).
+[PutAlarmRequestRequestTypeDef](./type_defs.md#putalarmrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2759,8 +2745,7 @@ Keyword-only arguments:
   `List`\[[AlarmStateType](./literals.md#alarmstatetype)\]
 - `notificationEnabled`: `bool`
 
-Returns
-[PutAlarmResultResponseTypeDef](./type_defs.md#putalarmresultresponsetypedef).
+Returns [PutAlarmResultTypeDef](./type_defs.md#putalarmresulttypedef).
 
 ### put_instance_public_ports
 
@@ -2775,7 +2760,7 @@ Boto3 documentation:
 [Lightsail.Client.put_instance_public_ports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.put_instance_public_ports)
 
 Arguments mapping described in
-[PutInstancePublicPortsRequestTypeDef](./type_defs.md#putinstancepublicportsrequesttypedef).
+[PutInstancePublicPortsRequestRequestTypeDef](./type_defs.md#putinstancepublicportsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2784,7 +2769,7 @@ Keyword-only arguments:
 - `instanceName`: `str` *(required)*
 
 Returns
-[PutInstancePublicPortsResultResponseTypeDef](./type_defs.md#putinstancepublicportsresultresponsetypedef).
+[PutInstancePublicPortsResultTypeDef](./type_defs.md#putinstancepublicportsresulttypedef).
 
 ### reboot_instance
 
@@ -2796,14 +2781,14 @@ Boto3 documentation:
 [Lightsail.Client.reboot_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reboot_instance)
 
 Arguments mapping described in
-[RebootInstanceRequestTypeDef](./type_defs.md#rebootinstancerequesttypedef).
+[RebootInstanceRequestRequestTypeDef](./type_defs.md#rebootinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
 
 Returns
-[RebootInstanceResultResponseTypeDef](./type_defs.md#rebootinstanceresultresponsetypedef).
+[RebootInstanceResultTypeDef](./type_defs.md#rebootinstanceresulttypedef).
 
 ### reboot_relational_database
 
@@ -2816,14 +2801,14 @@ Boto3 documentation:
 [Lightsail.Client.reboot_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reboot_relational_database)
 
 Arguments mapping described in
-[RebootRelationalDatabaseRequestTypeDef](./type_defs.md#rebootrelationaldatabaserequesttypedef).
+[RebootRelationalDatabaseRequestRequestTypeDef](./type_defs.md#rebootrelationaldatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 
 Returns
-[RebootRelationalDatabaseResultResponseTypeDef](./type_defs.md#rebootrelationaldatabaseresultresponsetypedef).
+[RebootRelationalDatabaseResultTypeDef](./type_defs.md#rebootrelationaldatabaseresulttypedef).
 
 ### register_container_image
 
@@ -2836,7 +2821,7 @@ Boto3 documentation:
 [Lightsail.Client.register_container_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.register_container_image)
 
 Arguments mapping described in
-[RegisterContainerImageRequestTypeDef](./type_defs.md#registercontainerimagerequesttypedef).
+[RegisterContainerImageRequestRequestTypeDef](./type_defs.md#registercontainerimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2845,7 +2830,7 @@ Keyword-only arguments:
 - `digest`: `str` *(required)*
 
 Returns
-[RegisterContainerImageResultResponseTypeDef](./type_defs.md#registercontainerimageresultresponsetypedef).
+[RegisterContainerImageResultTypeDef](./type_defs.md#registercontainerimageresulttypedef).
 
 ### release_static_ip
 
@@ -2857,14 +2842,14 @@ Boto3 documentation:
 [Lightsail.Client.release_static_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.release_static_ip)
 
 Arguments mapping described in
-[ReleaseStaticIpRequestTypeDef](./type_defs.md#releasestaticiprequesttypedef).
+[ReleaseStaticIpRequestRequestTypeDef](./type_defs.md#releasestaticiprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `staticIpName`: `str` *(required)*
 
 Returns
-[ReleaseStaticIpResultResponseTypeDef](./type_defs.md#releasestaticipresultresponsetypedef).
+[ReleaseStaticIpResultTypeDef](./type_defs.md#releasestaticipresulttypedef).
 
 ### reset_distribution_cache
 
@@ -2878,14 +2863,14 @@ Boto3 documentation:
 [Lightsail.Client.reset_distribution_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.reset_distribution_cache)
 
 Arguments mapping described in
-[ResetDistributionCacheRequestTypeDef](./type_defs.md#resetdistributioncacherequesttypedef).
+[ResetDistributionCacheRequestRequestTypeDef](./type_defs.md#resetdistributioncacherequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `distributionName`: `str`
 
 Returns
-[ResetDistributionCacheResultResponseTypeDef](./type_defs.md#resetdistributioncacheresultresponsetypedef).
+[ResetDistributionCacheResultTypeDef](./type_defs.md#resetdistributioncacheresulttypedef).
 
 ### send_contact_method_verification
 
@@ -2899,7 +2884,7 @@ Boto3 documentation:
 [Lightsail.Client.send_contact_method_verification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.send_contact_method_verification)
 
 Arguments mapping described in
-[SendContactMethodVerificationRequestTypeDef](./type_defs.md#sendcontactmethodverificationrequesttypedef).
+[SendContactMethodVerificationRequestRequestTypeDef](./type_defs.md#sendcontactmethodverificationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2908,7 +2893,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[SendContactMethodVerificationResultResponseTypeDef](./type_defs.md#sendcontactmethodverificationresultresponsetypedef).
+[SendContactMethodVerificationResultTypeDef](./type_defs.md#sendcontactmethodverificationresulttypedef).
 
 ### set_ip_address_type
 
@@ -2920,7 +2905,7 @@ Boto3 documentation:
 [Lightsail.Client.set_ip_address_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.set_ip_address_type)
 
 Arguments mapping described in
-[SetIpAddressTypeRequestTypeDef](./type_defs.md#setipaddresstyperequesttypedef).
+[SetIpAddressTypeRequestRequestTypeDef](./type_defs.md#setipaddresstyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2931,7 +2916,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[SetIpAddressTypeResultResponseTypeDef](./type_defs.md#setipaddresstyperesultresponsetypedef).
+[SetIpAddressTypeResultTypeDef](./type_defs.md#setipaddresstyperesulttypedef).
 
 ### start_instance
 
@@ -2943,14 +2928,14 @@ Boto3 documentation:
 [Lightsail.Client.start_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_instance)
 
 Arguments mapping described in
-[StartInstanceRequestTypeDef](./type_defs.md#startinstancerequesttypedef).
+[StartInstanceRequestRequestTypeDef](./type_defs.md#startinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
 
 Returns
-[StartInstanceResultResponseTypeDef](./type_defs.md#startinstanceresultresponsetypedef).
+[StartInstanceResultTypeDef](./type_defs.md#startinstanceresulttypedef).
 
 ### start_relational_database
 
@@ -2963,14 +2948,14 @@ Boto3 documentation:
 [Lightsail.Client.start_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.start_relational_database)
 
 Arguments mapping described in
-[StartRelationalDatabaseRequestTypeDef](./type_defs.md#startrelationaldatabaserequesttypedef).
+[StartRelationalDatabaseRequestRequestTypeDef](./type_defs.md#startrelationaldatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 
 Returns
-[StartRelationalDatabaseResultResponseTypeDef](./type_defs.md#startrelationaldatabaseresultresponsetypedef).
+[StartRelationalDatabaseResultTypeDef](./type_defs.md#startrelationaldatabaseresulttypedef).
 
 ### stop_instance
 
@@ -2982,15 +2967,14 @@ Boto3 documentation:
 [Lightsail.Client.stop_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_instance)
 
 Arguments mapping described in
-[StopInstanceRequestTypeDef](./type_defs.md#stopinstancerequesttypedef).
+[StopInstanceRequestRequestTypeDef](./type_defs.md#stopinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
 - `force`: `bool`
 
-Returns
-[StopInstanceResultResponseTypeDef](./type_defs.md#stopinstanceresultresponsetypedef).
+Returns [StopInstanceResultTypeDef](./type_defs.md#stopinstanceresulttypedef).
 
 ### stop_relational_database
 
@@ -3003,7 +2987,7 @@ Boto3 documentation:
 [Lightsail.Client.stop_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.stop_relational_database)
 
 Arguments mapping described in
-[StopRelationalDatabaseRequestTypeDef](./type_defs.md#stoprelationaldatabaserequesttypedef).
+[StopRelationalDatabaseRequestRequestTypeDef](./type_defs.md#stoprelationaldatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3011,7 +2995,7 @@ Keyword-only arguments:
 - `relationalDatabaseSnapshotName`: `str`
 
 Returns
-[StopRelationalDatabaseResultResponseTypeDef](./type_defs.md#stoprelationaldatabaseresultresponsetypedef).
+[StopRelationalDatabaseResultTypeDef](./type_defs.md#stoprelationaldatabaseresulttypedef).
 
 ### tag_resource
 
@@ -3023,7 +3007,7 @@ Boto3 documentation:
 [Lightsail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3031,8 +3015,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 - `resourceArn`: `str`
 
-Returns
-[TagResourceResultResponseTypeDef](./type_defs.md#tagresourceresultresponsetypedef).
+Returns [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef).
 
 ### test_alarm
 
@@ -3044,15 +3027,14 @@ Boto3 documentation:
 [Lightsail.Client.test_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.test_alarm)
 
 Arguments mapping described in
-[TestAlarmRequestTypeDef](./type_defs.md#testalarmrequesttypedef).
+[TestAlarmRequestRequestTypeDef](./type_defs.md#testalarmrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `alarmName`: `str` *(required)*
 - `state`: [AlarmStateType](./literals.md#alarmstatetype) *(required)*
 
-Returns
-[TestAlarmResultResponseTypeDef](./type_defs.md#testalarmresultresponsetypedef).
+Returns [TestAlarmResultTypeDef](./type_defs.md#testalarmresulttypedef).
 
 ### unpeer_vpc
 
@@ -3063,8 +3045,7 @@ Type annotations for `boto3.client("lightsail").unpeer_vpc` method.
 Boto3 documentation:
 [Lightsail.Client.unpeer_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.unpeer_vpc)
 
-Returns
-[UnpeerVpcResultResponseTypeDef](./type_defs.md#unpeervpcresultresponsetypedef).
+Returns [UnpeerVpcResultTypeDef](./type_defs.md#unpeervpcresulttypedef).
 
 ### untag_resource
 
@@ -3077,7 +3058,7 @@ Boto3 documentation:
 [Lightsail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3086,7 +3067,7 @@ Keyword-only arguments:
 - `resourceArn`: `str`
 
 Returns
-[UntagResourceResultResponseTypeDef](./type_defs.md#untagresourceresultresponsetypedef).
+[UntagResourceResultTypeDef](./type_defs.md#untagresourceresulttypedef).
 
 ### update_container_service
 
@@ -3100,7 +3081,7 @@ Boto3 documentation:
 [Lightsail.Client.update_container_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_container_service)
 
 Arguments mapping described in
-[UpdateContainerServiceRequestTypeDef](./type_defs.md#updatecontainerservicerequesttypedef).
+[UpdateContainerServiceRequestRequestTypeDef](./type_defs.md#updatecontainerservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3112,7 +3093,7 @@ Keyword-only arguments:
 - `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
 
 Returns
-[UpdateContainerServiceResultResponseTypeDef](./type_defs.md#updatecontainerserviceresultresponsetypedef).
+[UpdateContainerServiceResultTypeDef](./type_defs.md#updatecontainerserviceresulttypedef).
 
 ### update_distribution
 
@@ -3125,7 +3106,7 @@ Boto3 documentation:
 [Lightsail.Client.update_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution)
 
 Arguments mapping described in
-[UpdateDistributionRequestTypeDef](./type_defs.md#updatedistributionrequesttypedef).
+[UpdateDistributionRequestRequestTypeDef](./type_defs.md#updatedistributionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3140,7 +3121,7 @@ Keyword-only arguments:
 - `isEnabled`: `bool`
 
 Returns
-[UpdateDistributionResultResponseTypeDef](./type_defs.md#updatedistributionresultresponsetypedef).
+[UpdateDistributionResultTypeDef](./type_defs.md#updatedistributionresulttypedef).
 
 ### update_distribution_bundle
 
@@ -3154,7 +3135,7 @@ Boto3 documentation:
 [Lightsail.Client.update_distribution_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_distribution_bundle)
 
 Arguments mapping described in
-[UpdateDistributionBundleRequestTypeDef](./type_defs.md#updatedistributionbundlerequesttypedef).
+[UpdateDistributionBundleRequestRequestTypeDef](./type_defs.md#updatedistributionbundlerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3162,7 +3143,7 @@ Keyword-only arguments:
 - `bundleId`: `str`
 
 Returns
-[UpdateDistributionBundleResultResponseTypeDef](./type_defs.md#updatedistributionbundleresultresponsetypedef).
+[UpdateDistributionBundleResultTypeDef](./type_defs.md#updatedistributionbundleresulttypedef).
 
 ### update_domain_entry
 
@@ -3174,7 +3155,7 @@ Boto3 documentation:
 [Lightsail.Client.update_domain_entry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_domain_entry)
 
 Arguments mapping described in
-[UpdateDomainEntryRequestTypeDef](./type_defs.md#updatedomainentryrequesttypedef).
+[UpdateDomainEntryRequestRequestTypeDef](./type_defs.md#updatedomainentryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3183,7 +3164,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateDomainEntryResultResponseTypeDef](./type_defs.md#updatedomainentryresultresponsetypedef).
+[UpdateDomainEntryResultTypeDef](./type_defs.md#updatedomainentryresulttypedef).
 
 ### update_load_balancer_attribute
 
@@ -3196,7 +3177,7 @@ Boto3 documentation:
 [Lightsail.Client.update_load_balancer_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_load_balancer_attribute)
 
 Arguments mapping described in
-[UpdateLoadBalancerAttributeRequestTypeDef](./type_defs.md#updateloadbalancerattributerequesttypedef).
+[UpdateLoadBalancerAttributeRequestRequestTypeDef](./type_defs.md#updateloadbalancerattributerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3207,7 +3188,7 @@ Keyword-only arguments:
 - `attributeValue`: `str` *(required)*
 
 Returns
-[UpdateLoadBalancerAttributeResultResponseTypeDef](./type_defs.md#updateloadbalancerattributeresultresponsetypedef).
+[UpdateLoadBalancerAttributeResultTypeDef](./type_defs.md#updateloadbalancerattributeresulttypedef).
 
 ### update_relational_database
 
@@ -3220,7 +3201,7 @@ Boto3 documentation:
 [Lightsail.Client.update_relational_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database)
 
 Arguments mapping described in
-[UpdateRelationalDatabaseRequestTypeDef](./type_defs.md#updaterelationaldatabaserequesttypedef).
+[UpdateRelationalDatabaseRequestRequestTypeDef](./type_defs.md#updaterelationaldatabaserequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3236,7 +3217,7 @@ Keyword-only arguments:
 - `caCertificateIdentifier`: `str`
 
 Returns
-[UpdateRelationalDatabaseResultResponseTypeDef](./type_defs.md#updaterelationaldatabaseresultresponsetypedef).
+[UpdateRelationalDatabaseResultTypeDef](./type_defs.md#updaterelationaldatabaseresulttypedef).
 
 ### update_relational_database_parameters
 
@@ -3249,7 +3230,7 @@ Boto3 documentation:
 [Lightsail.Client.update_relational_database_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client.update_relational_database_parameters)
 
 Arguments mapping described in
-[UpdateRelationalDatabaseParametersRequestTypeDef](./type_defs.md#updaterelationaldatabaseparametersrequesttypedef).
+[UpdateRelationalDatabaseParametersRequestRequestTypeDef](./type_defs.md#updaterelationaldatabaseparametersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3259,7 +3240,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateRelationalDatabaseParametersResultResponseTypeDef](./type_defs.md#updaterelationaldatabaseparametersresultresponsetypedef).
+[UpdateRelationalDatabaseParametersResultTypeDef](./type_defs.md#updaterelationaldatabaseparametersresulttypedef).
 
 ### get_paginator
 

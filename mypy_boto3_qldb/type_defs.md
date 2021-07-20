@@ -8,56 +8,56 @@ type annotations stubs module
 [mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
 - [Typed dictionaries for boto3 QLDB module](#typed-dictionaries-for-boto3-qldb-module)
-  - [CancelJournalKinesisStreamRequestTypeDef](#canceljournalkinesisstreamrequesttypedef)
-  - [CancelJournalKinesisStreamResponseResponseTypeDef](#canceljournalkinesisstreamresponseresponsetypedef)
-  - [CreateLedgerRequestTypeDef](#createledgerrequesttypedef)
-  - [CreateLedgerResponseResponseTypeDef](#createledgerresponseresponsetypedef)
-  - [DeleteLedgerRequestTypeDef](#deleteledgerrequesttypedef)
-  - [DescribeJournalKinesisStreamRequestTypeDef](#describejournalkinesisstreamrequesttypedef)
-  - [DescribeJournalKinesisStreamResponseResponseTypeDef](#describejournalkinesisstreamresponseresponsetypedef)
-  - [DescribeJournalS3ExportRequestTypeDef](#describejournals3exportrequesttypedef)
-  - [DescribeJournalS3ExportResponseResponseTypeDef](#describejournals3exportresponseresponsetypedef)
-  - [DescribeLedgerRequestTypeDef](#describeledgerrequesttypedef)
-  - [DescribeLedgerResponseResponseTypeDef](#describeledgerresponseresponsetypedef)
-  - [ExportJournalToS3RequestTypeDef](#exportjournaltos3requesttypedef)
-  - [ExportJournalToS3ResponseResponseTypeDef](#exportjournaltos3responseresponsetypedef)
-  - [GetBlockRequestTypeDef](#getblockrequesttypedef)
-  - [GetBlockResponseResponseTypeDef](#getblockresponseresponsetypedef)
-  - [GetDigestRequestTypeDef](#getdigestrequesttypedef)
-  - [GetDigestResponseResponseTypeDef](#getdigestresponseresponsetypedef)
-  - [GetRevisionRequestTypeDef](#getrevisionrequesttypedef)
-  - [GetRevisionResponseResponseTypeDef](#getrevisionresponseresponsetypedef)
+  - [CancelJournalKinesisStreamRequestRequestTypeDef](#canceljournalkinesisstreamrequestrequesttypedef)
+  - [CancelJournalKinesisStreamResponseTypeDef](#canceljournalkinesisstreamresponsetypedef)
+  - [CreateLedgerRequestRequestTypeDef](#createledgerrequestrequesttypedef)
+  - [CreateLedgerResponseTypeDef](#createledgerresponsetypedef)
+  - [DeleteLedgerRequestRequestTypeDef](#deleteledgerrequestrequesttypedef)
+  - [DescribeJournalKinesisStreamRequestRequestTypeDef](#describejournalkinesisstreamrequestrequesttypedef)
+  - [DescribeJournalKinesisStreamResponseTypeDef](#describejournalkinesisstreamresponsetypedef)
+  - [DescribeJournalS3ExportRequestRequestTypeDef](#describejournals3exportrequestrequesttypedef)
+  - [DescribeJournalS3ExportResponseTypeDef](#describejournals3exportresponsetypedef)
+  - [DescribeLedgerRequestRequestTypeDef](#describeledgerrequestrequesttypedef)
+  - [DescribeLedgerResponseTypeDef](#describeledgerresponsetypedef)
+  - [ExportJournalToS3RequestRequestTypeDef](#exportjournaltos3requestrequesttypedef)
+  - [ExportJournalToS3ResponseTypeDef](#exportjournaltos3responsetypedef)
+  - [GetBlockRequestRequestTypeDef](#getblockrequestrequesttypedef)
+  - [GetBlockResponseTypeDef](#getblockresponsetypedef)
+  - [GetDigestRequestRequestTypeDef](#getdigestrequestrequesttypedef)
+  - [GetDigestResponseTypeDef](#getdigestresponsetypedef)
+  - [GetRevisionRequestRequestTypeDef](#getrevisionrequestrequesttypedef)
+  - [GetRevisionResponseTypeDef](#getrevisionresponsetypedef)
   - [JournalKinesisStreamDescriptionTypeDef](#journalkinesisstreamdescriptiontypedef)
   - [JournalS3ExportDescriptionTypeDef](#journals3exportdescriptiontypedef)
   - [KinesisConfigurationTypeDef](#kinesisconfigurationtypedef)
   - [LedgerSummaryTypeDef](#ledgersummarytypedef)
-  - [ListJournalKinesisStreamsForLedgerRequestTypeDef](#listjournalkinesisstreamsforledgerrequesttypedef)
-  - [ListJournalKinesisStreamsForLedgerResponseResponseTypeDef](#listjournalkinesisstreamsforledgerresponseresponsetypedef)
-  - [ListJournalS3ExportsForLedgerRequestTypeDef](#listjournals3exportsforledgerrequesttypedef)
-  - [ListJournalS3ExportsForLedgerResponseResponseTypeDef](#listjournals3exportsforledgerresponseresponsetypedef)
-  - [ListJournalS3ExportsRequestTypeDef](#listjournals3exportsrequesttypedef)
-  - [ListJournalS3ExportsResponseResponseTypeDef](#listjournals3exportsresponseresponsetypedef)
-  - [ListLedgersRequestTypeDef](#listledgersrequesttypedef)
-  - [ListLedgersResponseResponseTypeDef](#listledgersresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListJournalKinesisStreamsForLedgerRequestRequestTypeDef](#listjournalkinesisstreamsforledgerrequestrequesttypedef)
+  - [ListJournalKinesisStreamsForLedgerResponseTypeDef](#listjournalkinesisstreamsforledgerresponsetypedef)
+  - [ListJournalS3ExportsForLedgerRequestRequestTypeDef](#listjournals3exportsforledgerrequestrequesttypedef)
+  - [ListJournalS3ExportsForLedgerResponseTypeDef](#listjournals3exportsforledgerresponsetypedef)
+  - [ListJournalS3ExportsRequestRequestTypeDef](#listjournals3exportsrequestrequesttypedef)
+  - [ListJournalS3ExportsResponseTypeDef](#listjournals3exportsresponsetypedef)
+  - [ListLedgersRequestRequestTypeDef](#listledgersrequestrequesttypedef)
+  - [ListLedgersResponseTypeDef](#listledgersresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3EncryptionConfigurationTypeDef](#s3encryptionconfigurationtypedef)
   - [S3ExportConfigurationTypeDef](#s3exportconfigurationtypedef)
-  - [StreamJournalToKinesisRequestTypeDef](#streamjournaltokinesisrequesttypedef)
-  - [StreamJournalToKinesisResponseResponseTypeDef](#streamjournaltokinesisresponseresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateLedgerPermissionsModeRequestTypeDef](#updateledgerpermissionsmoderequesttypedef)
-  - [UpdateLedgerPermissionsModeResponseResponseTypeDef](#updateledgerpermissionsmoderesponseresponsetypedef)
-  - [UpdateLedgerRequestTypeDef](#updateledgerrequesttypedef)
-  - [UpdateLedgerResponseResponseTypeDef](#updateledgerresponseresponsetypedef)
+  - [StreamJournalToKinesisRequestRequestTypeDef](#streamjournaltokinesisrequestrequesttypedef)
+  - [StreamJournalToKinesisResponseTypeDef](#streamjournaltokinesisresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateLedgerPermissionsModeRequestRequestTypeDef](#updateledgerpermissionsmoderequestrequesttypedef)
+  - [UpdateLedgerPermissionsModeResponseTypeDef](#updateledgerpermissionsmoderesponsetypedef)
+  - [UpdateLedgerRequestRequestTypeDef](#updateledgerrequestrequesttypedef)
+  - [UpdateLedgerResponseTypeDef](#updateledgerresponsetypedef)
   - [ValueHolderTypeDef](#valueholdertypedef)
 
-## CancelJournalKinesisStreamRequestTypeDef
+## CancelJournalKinesisStreamRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import CancelJournalKinesisStreamRequestTypeDef
+from mypy_boto3_qldb.type_defs import CancelJournalKinesisStreamRequestRequestTypeDef
 ```
 
 Required fields:
@@ -65,10 +65,10 @@ Required fields:
 - `LedgerName`: `str`
 - `StreamId`: `str`
 
-## CancelJournalKinesisStreamResponseResponseTypeDef
+## CancelJournalKinesisStreamResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import CancelJournalKinesisStreamResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import CancelJournalKinesisStreamResponseTypeDef
 ```
 
 Required fields:
@@ -77,10 +77,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLedgerRequestTypeDef
+## CreateLedgerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import CreateLedgerRequestTypeDef
+from mypy_boto3_qldb.type_defs import CreateLedgerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -93,10 +93,10 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `DeletionProtection`: `bool`
 
-## CreateLedgerResponseResponseTypeDef
+## CreateLedgerResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import CreateLedgerResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import CreateLedgerResponseTypeDef
 ```
 
 Required fields:
@@ -110,20 +110,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteLedgerRequestTypeDef
+## DeleteLedgerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import DeleteLedgerRequestTypeDef
+from mypy_boto3_qldb.type_defs import DeleteLedgerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeJournalKinesisStreamRequestTypeDef
+## DescribeJournalKinesisStreamRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import DescribeJournalKinesisStreamRequestTypeDef
+from mypy_boto3_qldb.type_defs import DescribeJournalKinesisStreamRequestRequestTypeDef
 ```
 
 Required fields:
@@ -131,10 +131,10 @@ Required fields:
 - `LedgerName`: `str`
 - `StreamId`: `str`
 
-## DescribeJournalKinesisStreamResponseResponseTypeDef
+## DescribeJournalKinesisStreamResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import DescribeJournalKinesisStreamResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import DescribeJournalKinesisStreamResponseTypeDef
 ```
 
 Required fields:
@@ -144,10 +144,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeJournalS3ExportRequestTypeDef
+## DescribeJournalS3ExportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import DescribeJournalS3ExportRequestTypeDef
+from mypy_boto3_qldb.type_defs import DescribeJournalS3ExportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -155,10 +155,10 @@ Required fields:
 - `Name`: `str`
 - `ExportId`: `str`
 
-## DescribeJournalS3ExportResponseResponseTypeDef
+## DescribeJournalS3ExportResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import DescribeJournalS3ExportResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import DescribeJournalS3ExportResponseTypeDef
 ```
 
 Required fields:
@@ -168,20 +168,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLedgerRequestTypeDef
+## DescribeLedgerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import DescribeLedgerRequestTypeDef
+from mypy_boto3_qldb.type_defs import DescribeLedgerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## DescribeLedgerResponseResponseTypeDef
+## DescribeLedgerResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import DescribeLedgerResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import DescribeLedgerResponseTypeDef
 ```
 
 Required fields:
@@ -195,10 +195,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExportJournalToS3RequestTypeDef
+## ExportJournalToS3RequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import ExportJournalToS3RequestTypeDef
+from mypy_boto3_qldb.type_defs import ExportJournalToS3RequestRequestTypeDef
 ```
 
 Required fields:
@@ -210,10 +210,10 @@ Required fields:
   [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
 - `RoleArn`: `str`
 
-## ExportJournalToS3ResponseResponseTypeDef
+## ExportJournalToS3ResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import ExportJournalToS3ResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import ExportJournalToS3ResponseTypeDef
 ```
 
 Required fields:
@@ -222,10 +222,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBlockRequestTypeDef
+## GetBlockRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import GetBlockRequestTypeDef
+from mypy_boto3_qldb.type_defs import GetBlockRequestRequestTypeDef
 ```
 
 Required fields:
@@ -237,10 +237,10 @@ Optional fields:
 
 - `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
-## GetBlockResponseResponseTypeDef
+## GetBlockResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import GetBlockResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import GetBlockResponseTypeDef
 ```
 
 Required fields:
@@ -250,20 +250,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDigestRequestTypeDef
+## GetDigestRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import GetDigestRequestTypeDef
+from mypy_boto3_qldb.type_defs import GetDigestRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Name`: `str`
 
-## GetDigestResponseResponseTypeDef
+## GetDigestResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import GetDigestResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import GetDigestResponseTypeDef
 ```
 
 Required fields:
@@ -273,10 +273,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRevisionRequestTypeDef
+## GetRevisionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import GetRevisionRequestTypeDef
+from mypy_boto3_qldb.type_defs import GetRevisionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -289,10 +289,10 @@ Optional fields:
 
 - `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
-## GetRevisionResponseResponseTypeDef
+## GetRevisionResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import GetRevisionResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import GetRevisionResponseTypeDef
 ```
 
 Required fields:
@@ -370,10 +370,10 @@ Optional fields:
 - `State`: [LedgerStateType](./literals.md#ledgerstatetype)
 - `CreationDateTime`: `datetime`
 
-## ListJournalKinesisStreamsForLedgerRequestTypeDef
+## ListJournalKinesisStreamsForLedgerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import ListJournalKinesisStreamsForLedgerRequestTypeDef
+from mypy_boto3_qldb.type_defs import ListJournalKinesisStreamsForLedgerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -385,10 +385,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListJournalKinesisStreamsForLedgerResponseResponseTypeDef
+## ListJournalKinesisStreamsForLedgerResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import ListJournalKinesisStreamsForLedgerResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import ListJournalKinesisStreamsForLedgerResponseTypeDef
 ```
 
 Required fields:
@@ -399,10 +399,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJournalS3ExportsForLedgerRequestTypeDef
+## ListJournalS3ExportsForLedgerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import ListJournalS3ExportsForLedgerRequestTypeDef
+from mypy_boto3_qldb.type_defs import ListJournalS3ExportsForLedgerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -414,10 +414,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListJournalS3ExportsForLedgerResponseResponseTypeDef
+## ListJournalS3ExportsForLedgerResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import ListJournalS3ExportsForLedgerResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import ListJournalS3ExportsForLedgerResponseTypeDef
 ```
 
 Required fields:
@@ -428,10 +428,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListJournalS3ExportsRequestTypeDef
+## ListJournalS3ExportsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import ListJournalS3ExportsRequestTypeDef
+from mypy_boto3_qldb.type_defs import ListJournalS3ExportsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -439,10 +439,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListJournalS3ExportsResponseResponseTypeDef
+## ListJournalS3ExportsResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import ListJournalS3ExportsResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import ListJournalS3ExportsResponseTypeDef
 ```
 
 Required fields:
@@ -453,10 +453,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListLedgersRequestTypeDef
+## ListLedgersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import ListLedgersRequestTypeDef
+from mypy_boto3_qldb.type_defs import ListLedgersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -464,10 +464,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListLedgersResponseResponseTypeDef
+## ListLedgersResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import ListLedgersResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import ListLedgersResponseTypeDef
 ```
 
 Required fields:
@@ -478,20 +478,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_qldb.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -542,10 +542,10 @@ Required fields:
 - `EncryptionConfiguration`:
   [S3EncryptionConfigurationTypeDef](./type_defs.md#s3encryptionconfigurationtypedef)
 
-## StreamJournalToKinesisRequestTypeDef
+## StreamJournalToKinesisRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import StreamJournalToKinesisRequestTypeDef
+from mypy_boto3_qldb.type_defs import StreamJournalToKinesisRequestRequestTypeDef
 ```
 
 Required fields:
@@ -562,10 +562,10 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ExclusiveEndTime`: `Union`\[`datetime`, `str`\]
 
-## StreamJournalToKinesisResponseResponseTypeDef
+## StreamJournalToKinesisResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import StreamJournalToKinesisResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import StreamJournalToKinesisResponseTypeDef
 ```
 
 Required fields:
@@ -574,10 +574,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_qldb.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -585,10 +585,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_qldb.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -596,10 +596,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateLedgerPermissionsModeRequestTypeDef
+## UpdateLedgerPermissionsModeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import UpdateLedgerPermissionsModeRequestTypeDef
+from mypy_boto3_qldb.type_defs import UpdateLedgerPermissionsModeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -607,10 +607,10 @@ Required fields:
 - `Name`: `str`
 - `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
 
-## UpdateLedgerPermissionsModeResponseResponseTypeDef
+## UpdateLedgerPermissionsModeResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import UpdateLedgerPermissionsModeResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import UpdateLedgerPermissionsModeResponseTypeDef
 ```
 
 Required fields:
@@ -621,10 +621,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateLedgerRequestTypeDef
+## UpdateLedgerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import UpdateLedgerRequestTypeDef
+from mypy_boto3_qldb.type_defs import UpdateLedgerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -635,10 +635,10 @@ Optional fields:
 
 - `DeletionProtection`: `bool`
 
-## UpdateLedgerResponseResponseTypeDef
+## UpdateLedgerResponseTypeDef
 
 ```python
-from mypy_boto3_qldb.type_defs import UpdateLedgerResponseResponseTypeDef
+from mypy_boto3_qldb.type_defs import UpdateLedgerResponseTypeDef
 ```
 
 Required fields:

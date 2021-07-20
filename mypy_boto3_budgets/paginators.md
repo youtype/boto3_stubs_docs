@@ -43,7 +43,7 @@ Arguments for `DescribeBudgetActionHistoriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBudgetActionHistoriesPaginator.paginate` returns
-`Iterator`\[[DescribeBudgetActionHistoriesResponseResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponseresponsetypedef)\].
+`Iterator`\[[DescribeBudgetActionHistoriesResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponsetypedef)\].
 
 ## DescribeBudgetActionsForAccountPaginator
 
@@ -69,7 +69,7 @@ Arguments for `DescribeBudgetActionsForAccountPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBudgetActionsForAccountPaginator.paginate` returns
-`Iterator`\[[DescribeBudgetActionsForAccountResponseResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponseresponsetypedef)\].
+`Iterator`\[[DescribeBudgetActionsForAccountResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponsetypedef)\].
 
 ## DescribeBudgetActionsForBudgetPaginator
 
@@ -96,7 +96,7 @@ Arguments for `DescribeBudgetActionsForBudgetPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBudgetActionsForBudgetPaginator.paginate` returns
-`Iterator`\[[DescribeBudgetActionsForBudgetResponseResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponseresponsetypedef)\].
+`Iterator`\[[DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef)\].
 
 ## DescribeBudgetPerformanceHistoryPaginator
 
@@ -124,7 +124,7 @@ Arguments for `DescribeBudgetPerformanceHistoryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBudgetPerformanceHistoryPaginator.paginate` returns
-`Iterator`\[[DescribeBudgetPerformanceHistoryResponseResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponseresponsetypedef)\].
+`Iterator`\[[DescribeBudgetPerformanceHistoryResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponsetypedef)\].
 
 ## DescribeBudgetsPaginator
 
@@ -150,7 +150,7 @@ Arguments for `DescribeBudgetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBudgetsPaginator.paginate` returns
-`Iterator`\[[DescribeBudgetsResponseResponseTypeDef](./type_defs.md#describebudgetsresponseresponsetypedef)\].
+`Iterator`\[[DescribeBudgetsResponseTypeDef](./type_defs.md#describebudgetsresponsetypedef)\].
 
 ## DescribeNotificationsForBudgetPaginator
 
@@ -177,7 +177,7 @@ Arguments for `DescribeNotificationsForBudgetPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeNotificationsForBudgetPaginator.paginate` returns
-`Iterator`\[[DescribeNotificationsForBudgetResponseResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponseresponsetypedef)\].
+`Iterator`\[[DescribeNotificationsForBudgetResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponsetypedef)\].
 
 ## DescribeSubscribersForNotificationPaginator
 
@@ -206,4 +206,4 @@ Arguments for `DescribeSubscribersForNotificationPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSubscribersForNotificationPaginator.paginate` returns
-`Iterator`\[[DescribeSubscribersForNotificationResponseResponseTypeDef](./type_defs.md#describesubscribersfornotificationresponseresponsetypedef)\].
+`Iterator`\[[DescribeSubscribersForNotificationResponseTypeDef](./type_defs.md#describesubscribersfornotificationresponsetypedef)\].

@@ -11,6 +11,7 @@ type annotations stubs module
   - [SWFClient](#swfclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [count_closed_workflow_executions](#count_closed_workflow_executions)
     - [count_open_workflow_executions](#count_open_workflow_executions)
@@ -96,6 +97,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SWFClient exceptions.
+
+Type annotations for `boto3.client("swf").exceptions` method.
+
+Boto3 documentation:
+[SWF.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -123,7 +135,7 @@ Boto3 documentation:
 [SWF.Client.count_closed_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_closed_workflow_executions)
 
 Arguments mapping described in
-[CountClosedWorkflowExecutionsInputTypeDef](./type_defs.md#countclosedworkflowexecutionsinputtypedef).
+[CountClosedWorkflowExecutionsInputRequestTypeDef](./type_defs.md#countclosedworkflowexecutionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -141,7 +153,7 @@ Keyword-only arguments:
   [CloseStatusFilterTypeDef](./type_defs.md#closestatusfiltertypedef)
 
 Returns
-[WorkflowExecutionCountResponseTypeDef](./type_defs.md#workflowexecutioncountresponsetypedef).
+[WorkflowExecutionCountTypeDef](./type_defs.md#workflowexecutioncounttypedef).
 
 ### count_open_workflow_executions
 
@@ -155,7 +167,7 @@ Boto3 documentation:
 [SWF.Client.count_open_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_open_workflow_executions)
 
 Arguments mapping described in
-[CountOpenWorkflowExecutionsInputTypeDef](./type_defs.md#countopenworkflowexecutionsinputtypedef).
+[CountOpenWorkflowExecutionsInputRequestTypeDef](./type_defs.md#countopenworkflowexecutionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -170,7 +182,7 @@ Keyword-only arguments:
   [WorkflowExecutionFilterTypeDef](./type_defs.md#workflowexecutionfiltertypedef)
 
 Returns
-[WorkflowExecutionCountResponseTypeDef](./type_defs.md#workflowexecutioncountresponsetypedef).
+[WorkflowExecutionCountTypeDef](./type_defs.md#workflowexecutioncounttypedef).
 
 ### count_pending_activity_tasks
 
@@ -182,15 +194,14 @@ Boto3 documentation:
 [SWF.Client.count_pending_activity_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_pending_activity_tasks)
 
 Arguments mapping described in
-[CountPendingActivityTasksInputTypeDef](./type_defs.md#countpendingactivitytasksinputtypedef).
+[CountPendingActivityTasksInputRequestTypeDef](./type_defs.md#countpendingactivitytasksinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
 
-Returns
-[PendingTaskCountResponseTypeDef](./type_defs.md#pendingtaskcountresponsetypedef).
+Returns [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef).
 
 ### count_pending_decision_tasks
 
@@ -202,15 +213,14 @@ Boto3 documentation:
 [SWF.Client.count_pending_decision_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.count_pending_decision_tasks)
 
 Arguments mapping described in
-[CountPendingDecisionTasksInputTypeDef](./type_defs.md#countpendingdecisiontasksinputtypedef).
+[CountPendingDecisionTasksInputRequestTypeDef](./type_defs.md#countpendingdecisiontasksinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
 
-Returns
-[PendingTaskCountResponseTypeDef](./type_defs.md#pendingtaskcountresponsetypedef).
+Returns [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef).
 
 ### deprecate_activity_type
 
@@ -222,7 +232,7 @@ Boto3 documentation:
 [SWF.Client.deprecate_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_activity_type)
 
 Arguments mapping described in
-[DeprecateActivityTypeInputTypeDef](./type_defs.md#deprecateactivitytypeinputtypedef).
+[DeprecateActivityTypeInputRequestTypeDef](./type_defs.md#deprecateactivitytypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -240,7 +250,7 @@ Boto3 documentation:
 [SWF.Client.deprecate_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_domain)
 
 Arguments mapping described in
-[DeprecateDomainInputTypeDef](./type_defs.md#deprecatedomaininputtypedef).
+[DeprecateDomainInputRequestTypeDef](./type_defs.md#deprecatedomaininputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -256,7 +266,7 @@ Boto3 documentation:
 [SWF.Client.deprecate_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.deprecate_workflow_type)
 
 Arguments mapping described in
-[DeprecateWorkflowTypeInputTypeDef](./type_defs.md#deprecateworkflowtypeinputtypedef).
+[DeprecateWorkflowTypeInputRequestTypeDef](./type_defs.md#deprecateworkflowtypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -274,7 +284,7 @@ Boto3 documentation:
 [SWF.Client.describe_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_activity_type)
 
 Arguments mapping described in
-[DescribeActivityTypeInputTypeDef](./type_defs.md#describeactivitytypeinputtypedef).
+[DescribeActivityTypeInputRequestTypeDef](./type_defs.md#describeactivitytypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -282,8 +292,7 @@ Keyword-only arguments:
 - `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
   *(required)*
 
-Returns
-[ActivityTypeDetailResponseTypeDef](./type_defs.md#activitytypedetailresponsetypedef).
+Returns [ActivityTypeDetailTypeDef](./type_defs.md#activitytypedetailtypedef).
 
 ### describe_domain
 
@@ -296,14 +305,13 @@ Boto3 documentation:
 [SWF.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_domain)
 
 Arguments mapping described in
-[DescribeDomainInputTypeDef](./type_defs.md#describedomaininputtypedef).
+[DescribeDomainInputRequestTypeDef](./type_defs.md#describedomaininputrequesttypedef).
 
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
-Returns
-[DomainDetailResponseTypeDef](./type_defs.md#domaindetailresponsetypedef).
+Returns [DomainDetailTypeDef](./type_defs.md#domaindetailtypedef).
 
 ### describe_workflow_execution
 
@@ -316,7 +324,7 @@ Boto3 documentation:
 [SWF.Client.describe_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_workflow_execution)
 
 Arguments mapping described in
-[DescribeWorkflowExecutionInputTypeDef](./type_defs.md#describeworkflowexecutioninputtypedef).
+[DescribeWorkflowExecutionInputRequestTypeDef](./type_defs.md#describeworkflowexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -326,7 +334,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[WorkflowExecutionDetailResponseTypeDef](./type_defs.md#workflowexecutiondetailresponsetypedef).
+[WorkflowExecutionDetailTypeDef](./type_defs.md#workflowexecutiondetailtypedef).
 
 ### describe_workflow_type
 
@@ -338,7 +346,7 @@ Boto3 documentation:
 [SWF.Client.describe_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.describe_workflow_type)
 
 Arguments mapping described in
-[DescribeWorkflowTypeInputTypeDef](./type_defs.md#describeworkflowtypeinputtypedef).
+[DescribeWorkflowTypeInputRequestTypeDef](./type_defs.md#describeworkflowtypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -346,8 +354,7 @@ Keyword-only arguments:
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
   *(required)*
 
-Returns
-[WorkflowTypeDetailResponseTypeDef](./type_defs.md#workflowtypedetailresponsetypedef).
+Returns [WorkflowTypeDetailTypeDef](./type_defs.md#workflowtypedetailtypedef).
 
 ### generate_presigned_url
 
@@ -378,7 +385,7 @@ Boto3 documentation:
 [SWF.Client.get_workflow_execution_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.get_workflow_execution_history)
 
 Arguments mapping described in
-[GetWorkflowExecutionHistoryInputTypeDef](./type_defs.md#getworkflowexecutionhistoryinputtypedef).
+[GetWorkflowExecutionHistoryInputRequestTypeDef](./type_defs.md#getworkflowexecutionhistoryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -390,7 +397,7 @@ Keyword-only arguments:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns [HistoryResponseTypeDef](./type_defs.md#historyresponsetypedef).
+Returns [HistoryTypeDef](./type_defs.md#historytypedef).
 
 ### list_activity_types
 
@@ -403,7 +410,7 @@ Boto3 documentation:
 [SWF.Client.list_activity_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_activity_types)
 
 Arguments mapping described in
-[ListActivityTypesInputTypeDef](./type_defs.md#listactivitytypesinputtypedef).
+[ListActivityTypesInputRequestTypeDef](./type_defs.md#listactivitytypesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -415,8 +422,7 @@ Keyword-only arguments:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns
-[ActivityTypeInfosResponseTypeDef](./type_defs.md#activitytypeinfosresponsetypedef).
+Returns [ActivityTypeInfosTypeDef](./type_defs.md#activitytypeinfostypedef).
 
 ### list_closed_workflow_executions
 
@@ -430,7 +436,7 @@ Boto3 documentation:
 [SWF.Client.list_closed_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_closed_workflow_executions)
 
 Arguments mapping described in
-[ListClosedWorkflowExecutionsInputTypeDef](./type_defs.md#listclosedworkflowexecutionsinputtypedef).
+[ListClosedWorkflowExecutionsInputRequestTypeDef](./type_defs.md#listclosedworkflowexecutionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -451,7 +457,7 @@ Keyword-only arguments:
 - `reverseOrder`: `bool`
 
 Returns
-[WorkflowExecutionInfosResponseTypeDef](./type_defs.md#workflowexecutioninfosresponsetypedef).
+[WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef).
 
 ### list_domains
 
@@ -463,7 +469,7 @@ Boto3 documentation:
 [SWF.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_domains)
 
 Arguments mapping described in
-[ListDomainsInputTypeDef](./type_defs.md#listdomainsinputtypedef).
+[ListDomainsInputRequestTypeDef](./type_defs.md#listdomainsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,8 +479,7 @@ Keyword-only arguments:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns
-[DomainInfosResponseTypeDef](./type_defs.md#domaininfosresponsetypedef).
+Returns [DomainInfosTypeDef](./type_defs.md#domaininfostypedef).
 
 ### list_open_workflow_executions
 
@@ -488,7 +493,7 @@ Boto3 documentation:
 [SWF.Client.list_open_workflow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_open_workflow_executions)
 
 Arguments mapping described in
-[ListOpenWorkflowExecutionsInputTypeDef](./type_defs.md#listopenworkflowexecutionsinputtypedef).
+[ListOpenWorkflowExecutionsInputRequestTypeDef](./type_defs.md#listopenworkflowexecutionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -506,7 +511,7 @@ Keyword-only arguments:
   [WorkflowExecutionFilterTypeDef](./type_defs.md#workflowexecutionfiltertypedef)
 
 Returns
-[WorkflowExecutionInfosResponseTypeDef](./type_defs.md#workflowexecutioninfosresponsetypedef).
+[WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef).
 
 ### list_tags_for_resource
 
@@ -518,14 +523,14 @@ Boto3 documentation:
 [SWF.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### list_workflow_types
 
@@ -537,7 +542,7 @@ Boto3 documentation:
 [SWF.Client.list_workflow_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.list_workflow_types)
 
 Arguments mapping described in
-[ListWorkflowTypesInputTypeDef](./type_defs.md#listworkflowtypesinputtypedef).
+[ListWorkflowTypesInputRequestTypeDef](./type_defs.md#listworkflowtypesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -549,8 +554,7 @@ Keyword-only arguments:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns
-[WorkflowTypeInfosResponseTypeDef](./type_defs.md#workflowtypeinfosresponsetypedef).
+Returns [WorkflowTypeInfosTypeDef](./type_defs.md#workflowtypeinfostypedef).
 
 ### poll_for_activity_task
 
@@ -562,7 +566,7 @@ Boto3 documentation:
 [SWF.Client.poll_for_activity_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_activity_task)
 
 Arguments mapping described in
-[PollForActivityTaskInputTypeDef](./type_defs.md#pollforactivitytaskinputtypedef).
+[PollForActivityTaskInputRequestTypeDef](./type_defs.md#pollforactivitytaskinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -570,8 +574,7 @@ Keyword-only arguments:
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
 - `identity`: `str`
 
-Returns
-[ActivityTaskResponseTypeDef](./type_defs.md#activitytaskresponsetypedef).
+Returns [ActivityTaskTypeDef](./type_defs.md#activitytasktypedef).
 
 ### poll_for_decision_task
 
@@ -583,7 +586,7 @@ Boto3 documentation:
 [SWF.Client.poll_for_decision_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.poll_for_decision_task)
 
 Arguments mapping described in
-[PollForDecisionTaskInputTypeDef](./type_defs.md#pollfordecisiontaskinputtypedef).
+[PollForDecisionTaskInputRequestTypeDef](./type_defs.md#pollfordecisiontaskinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -594,8 +597,7 @@ Keyword-only arguments:
 - `maximumPageSize`: `int`
 - `reverseOrder`: `bool`
 
-Returns
-[DecisionTaskResponseTypeDef](./type_defs.md#decisiontaskresponsetypedef).
+Returns [DecisionTaskTypeDef](./type_defs.md#decisiontasktypedef).
 
 ### record_activity_task_heartbeat
 
@@ -609,15 +611,14 @@ Boto3 documentation:
 [SWF.Client.record_activity_task_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.record_activity_task_heartbeat)
 
 Arguments mapping described in
-[RecordActivityTaskHeartbeatInputTypeDef](./type_defs.md#recordactivitytaskheartbeatinputtypedef).
+[RecordActivityTaskHeartbeatInputRequestTypeDef](./type_defs.md#recordactivitytaskheartbeatinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `taskToken`: `str` *(required)*
 - `details`: `str`
 
-Returns
-[ActivityTaskStatusResponseTypeDef](./type_defs.md#activitytaskstatusresponsetypedef).
+Returns [ActivityTaskStatusTypeDef](./type_defs.md#activitytaskstatustypedef).
 
 ### register_activity_type
 
@@ -630,7 +631,7 @@ Boto3 documentation:
 [SWF.Client.register_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_activity_type)
 
 Arguments mapping described in
-[RegisterActivityTypeInputTypeDef](./type_defs.md#registeractivitytypeinputtypedef).
+[RegisterActivityTypeInputRequestTypeDef](./type_defs.md#registeractivitytypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -655,7 +656,7 @@ Boto3 documentation:
 [SWF.Client.register_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_domain)
 
 Arguments mapping described in
-[RegisterDomainInputTypeDef](./type_defs.md#registerdomaininputtypedef).
+[RegisterDomainInputRequestTypeDef](./type_defs.md#registerdomaininputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -675,7 +676,7 @@ Boto3 documentation:
 [SWF.Client.register_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.register_workflow_type)
 
 Arguments mapping described in
-[RegisterWorkflowTypeInputTypeDef](./type_defs.md#registerworkflowtypeinputtypedef).
+[RegisterWorkflowTypeInputRequestTypeDef](./type_defs.md#registerworkflowtypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -702,7 +703,7 @@ Boto3 documentation:
 [SWF.Client.request_cancel_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.request_cancel_workflow_execution)
 
 Arguments mapping described in
-[RequestCancelWorkflowExecutionInputTypeDef](./type_defs.md#requestcancelworkflowexecutioninputtypedef).
+[RequestCancelWorkflowExecutionInputRequestTypeDef](./type_defs.md#requestcancelworkflowexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -722,7 +723,7 @@ Boto3 documentation:
 [SWF.Client.respond_activity_task_canceled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_canceled)
 
 Arguments mapping described in
-[RespondActivityTaskCanceledInputTypeDef](./type_defs.md#respondactivitytaskcanceledinputtypedef).
+[RespondActivityTaskCanceledInputRequestTypeDef](./type_defs.md#respondactivitytaskcanceledinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -741,7 +742,7 @@ Boto3 documentation:
 [SWF.Client.respond_activity_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_completed)
 
 Arguments mapping described in
-[RespondActivityTaskCompletedInputTypeDef](./type_defs.md#respondactivitytaskcompletedinputtypedef).
+[RespondActivityTaskCompletedInputRequestTypeDef](./type_defs.md#respondactivitytaskcompletedinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -759,7 +760,7 @@ Boto3 documentation:
 [SWF.Client.respond_activity_task_failed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_activity_task_failed)
 
 Arguments mapping described in
-[RespondActivityTaskFailedInputTypeDef](./type_defs.md#respondactivitytaskfailedinputtypedef).
+[RespondActivityTaskFailedInputRequestTypeDef](./type_defs.md#respondactivitytaskfailedinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -779,7 +780,7 @@ Boto3 documentation:
 [SWF.Client.respond_decision_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.respond_decision_task_completed)
 
 Arguments mapping described in
-[RespondDecisionTaskCompletedInputTypeDef](./type_defs.md#responddecisiontaskcompletedinputtypedef).
+[RespondDecisionTaskCompletedInputRequestTypeDef](./type_defs.md#responddecisiontaskcompletedinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -799,7 +800,7 @@ Boto3 documentation:
 [SWF.Client.signal_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.signal_workflow_execution)
 
 Arguments mapping described in
-[SignalWorkflowExecutionInputTypeDef](./type_defs.md#signalworkflowexecutioninputtypedef).
+[SignalWorkflowExecutionInputRequestTypeDef](./type_defs.md#signalworkflowexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -820,7 +821,7 @@ Boto3 documentation:
 [SWF.Client.start_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.start_workflow_execution)
 
 Arguments mapping described in
-[StartWorkflowExecutionInputTypeDef](./type_defs.md#startworkflowexecutioninputtypedef).
+[StartWorkflowExecutionInputRequestTypeDef](./type_defs.md#startworkflowexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -837,7 +838,7 @@ Keyword-only arguments:
 - `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `lambdaRole`: `str`
 
-Returns [RunResponseTypeDef](./type_defs.md#runresponsetypedef).
+Returns [RunTypeDef](./type_defs.md#runtypedef).
 
 ### tag_resource
 
@@ -849,7 +850,7 @@ Boto3 documentation:
 [SWF.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -868,7 +869,7 @@ Boto3 documentation:
 [SWF.Client.terminate_workflow_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.terminate_workflow_execution)
 
 Arguments mapping described in
-[TerminateWorkflowExecutionInputTypeDef](./type_defs.md#terminateworkflowexecutioninputtypedef).
+[TerminateWorkflowExecutionInputRequestTypeDef](./type_defs.md#terminateworkflowexecutioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -889,7 +890,7 @@ Boto3 documentation:
 [SWF.Client.undeprecate_activity_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_activity_type)
 
 Arguments mapping described in
-[UndeprecateActivityTypeInputTypeDef](./type_defs.md#undeprecateactivitytypeinputtypedef).
+[UndeprecateActivityTypeInputRequestTypeDef](./type_defs.md#undeprecateactivitytypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -907,7 +908,7 @@ Boto3 documentation:
 [SWF.Client.undeprecate_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_domain)
 
 Arguments mapping described in
-[UndeprecateDomainInputTypeDef](./type_defs.md#undeprecatedomaininputtypedef).
+[UndeprecateDomainInputRequestTypeDef](./type_defs.md#undeprecatedomaininputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -923,7 +924,7 @@ Boto3 documentation:
 [SWF.Client.undeprecate_workflow_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.undeprecate_workflow_type)
 
 Arguments mapping described in
-[UndeprecateWorkflowTypeInputTypeDef](./type_defs.md#undeprecateworkflowtypeinputtypedef).
+[UndeprecateWorkflowTypeInputRequestTypeDef](./type_defs.md#undeprecateworkflowtypeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -941,7 +942,7 @@ Boto3 documentation:
 [SWF.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 

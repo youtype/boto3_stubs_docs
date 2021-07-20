@@ -11,6 +11,7 @@ type annotations stubs module
   - [SQSClient](#sqsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_permission](#add_permission)
     - [can_paginate](#can_paginate)
     - [change_message_visibility](#change_message_visibility)
@@ -85,6 +86,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SQSClient exceptions.
+
+Type annotations for `boto3.client("sqs").exceptions` method.
+
+Boto3 documentation:
+[SQS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_permission
 
 Adds a permission to a queue for a specific
@@ -96,7 +108,7 @@ Boto3 documentation:
 [SQS.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.add_permission)
 
 Arguments mapping described in
-[AddPermissionRequestTypeDef](./type_defs.md#addpermissionrequesttypedef).
+[AddPermissionRequestRequestTypeDef](./type_defs.md#addpermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -131,7 +143,7 @@ Boto3 documentation:
 [SQS.Client.change_message_visibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.change_message_visibility)
 
 Arguments mapping described in
-[ChangeMessageVisibilityRequestTypeDef](./type_defs.md#changemessagevisibilityrequesttypedef).
+[ChangeMessageVisibilityRequestRequestTypeDef](./type_defs.md#changemessagevisibilityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -150,7 +162,7 @@ Boto3 documentation:
 [SQS.Client.change_message_visibility_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.change_message_visibility_batch)
 
 Arguments mapping described in
-[ChangeMessageVisibilityBatchRequestTypeDef](./type_defs.md#changemessagevisibilitybatchrequesttypedef).
+[ChangeMessageVisibilityBatchRequestRequestTypeDef](./type_defs.md#changemessagevisibilitybatchrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -160,7 +172,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ChangeMessageVisibilityBatchResultResponseTypeDef](./type_defs.md#changemessagevisibilitybatchresultresponsetypedef).
+[ChangeMessageVisibilityBatchResultTypeDef](./type_defs.md#changemessagevisibilitybatchresulttypedef).
 
 ### create_queue
 
@@ -172,7 +184,7 @@ Boto3 documentation:
 [SQS.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.create_queue)
 
 Arguments mapping described in
-[CreateQueueRequestTypeDef](./type_defs.md#createqueuerequesttypedef).
+[CreateQueueRequestRequestTypeDef](./type_defs.md#createqueuerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,8 +194,7 @@ Keyword-only arguments:
   `str`\]
 - `tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateQueueResultResponseTypeDef](./type_defs.md#createqueueresultresponsetypedef).
+Returns [CreateQueueResultTypeDef](./type_defs.md#createqueueresulttypedef).
 
 ### delete_message
 
@@ -195,7 +206,7 @@ Boto3 documentation:
 [SQS.Client.delete_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_message)
 
 Arguments mapping described in
-[DeleteMessageRequestTypeDef](./type_defs.md#deletemessagerequesttypedef).
+[DeleteMessageRequestRequestTypeDef](./type_defs.md#deletemessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -212,7 +223,7 @@ Boto3 documentation:
 [SQS.Client.delete_message_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_message_batch)
 
 Arguments mapping described in
-[DeleteMessageBatchRequestTypeDef](./type_defs.md#deletemessagebatchrequesttypedef).
+[DeleteMessageBatchRequestRequestTypeDef](./type_defs.md#deletemessagebatchrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,7 +233,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DeleteMessageBatchResultResponseTypeDef](./type_defs.md#deletemessagebatchresultresponsetypedef).
+[DeleteMessageBatchResultTypeDef](./type_defs.md#deletemessagebatchresulttypedef).
 
 ### delete_queue
 
@@ -235,7 +246,7 @@ Boto3 documentation:
 [SQS.Client.delete_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.delete_queue)
 
 Arguments mapping described in
-[DeleteQueueRequestTypeDef](./type_defs.md#deletequeuerequesttypedef).
+[DeleteQueueRequestRequestTypeDef](./type_defs.md#deletequeuerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -269,7 +280,7 @@ Boto3 documentation:
 [SQS.Client.get_queue_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.get_queue_attributes)
 
 Arguments mapping described in
-[GetQueueAttributesRequestTypeDef](./type_defs.md#getqueueattributesrequesttypedef).
+[GetQueueAttributesRequestRequestTypeDef](./type_defs.md#getqueueattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -278,7 +289,7 @@ Keyword-only arguments:
   `List`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
 
 Returns
-[GetQueueAttributesResultResponseTypeDef](./type_defs.md#getqueueattributesresultresponsetypedef).
+[GetQueueAttributesResultTypeDef](./type_defs.md#getqueueattributesresulttypedef).
 
 ### get_queue_url
 
@@ -290,15 +301,14 @@ Boto3 documentation:
 [SQS.Client.get_queue_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.get_queue_url)
 
 Arguments mapping described in
-[GetQueueUrlRequestTypeDef](./type_defs.md#getqueueurlrequesttypedef).
+[GetQueueUrlRequestRequestTypeDef](./type_defs.md#getqueueurlrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `QueueName`: `str` *(required)*
 - `QueueOwnerAWSAccountId`: `str`
 
-Returns
-[GetQueueUrlResultResponseTypeDef](./type_defs.md#getqueueurlresultresponsetypedef).
+Returns [GetQueueUrlResultTypeDef](./type_defs.md#getqueueurlresulttypedef).
 
 ### list_dead_letter_source_queues
 
@@ -312,7 +322,7 @@ Boto3 documentation:
 [SQS.Client.list_dead_letter_source_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_dead_letter_source_queues)
 
 Arguments mapping described in
-[ListDeadLetterSourceQueuesRequestTypeDef](./type_defs.md#listdeadlettersourcequeuesrequesttypedef).
+[ListDeadLetterSourceQueuesRequestRequestTypeDef](./type_defs.md#listdeadlettersourcequeuesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -321,7 +331,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDeadLetterSourceQueuesResultResponseTypeDef](./type_defs.md#listdeadlettersourcequeuesresultresponsetypedef).
+[ListDeadLetterSourceQueuesResultTypeDef](./type_defs.md#listdeadlettersourcequeuesresulttypedef).
 
 ### list_queue_tags
 
@@ -333,14 +343,14 @@ Boto3 documentation:
 [SQS.Client.list_queue_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_queue_tags)
 
 Arguments mapping described in
-[ListQueueTagsRequestTypeDef](./type_defs.md#listqueuetagsrequesttypedef).
+[ListQueueTagsRequestRequestTypeDef](./type_defs.md#listqueuetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 
 Returns
-[ListQueueTagsResultResponseTypeDef](./type_defs.md#listqueuetagsresultresponsetypedef).
+[ListQueueTagsResultTypeDef](./type_defs.md#listqueuetagsresulttypedef).
 
 ### list_queues
 
@@ -352,7 +362,7 @@ Boto3 documentation:
 [SQS.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.list_queues)
 
 Arguments mapping described in
-[ListQueuesRequestTypeDef](./type_defs.md#listqueuesrequesttypedef).
+[ListQueuesRequestRequestTypeDef](./type_defs.md#listqueuesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -360,8 +370,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListQueuesResultResponseTypeDef](./type_defs.md#listqueuesresultresponsetypedef).
+Returns [ListQueuesResultTypeDef](./type_defs.md#listqueuesresulttypedef).
 
 ### purge_queue
 
@@ -373,7 +382,7 @@ Boto3 documentation:
 [SQS.Client.purge_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.purge_queue)
 
 Arguments mapping described in
-[PurgeQueueRequestTypeDef](./type_defs.md#purgequeuerequesttypedef).
+[PurgeQueueRequestRequestTypeDef](./type_defs.md#purgequeuerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -389,7 +398,7 @@ Boto3 documentation:
 [SQS.Client.receive_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.receive_message)
 
 Arguments mapping described in
-[ReceiveMessageRequestTypeDef](./type_defs.md#receivemessagerequesttypedef).
+[ReceiveMessageRequestRequestTypeDef](./type_defs.md#receivemessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -403,7 +412,7 @@ Keyword-only arguments:
 - `ReceiveRequestAttemptId`: `str`
 
 Returns
-[ReceiveMessageResultResponseTypeDef](./type_defs.md#receivemessageresultresponsetypedef).
+[ReceiveMessageResultTypeDef](./type_defs.md#receivemessageresulttypedef).
 
 ### remove_permission
 
@@ -416,7 +425,7 @@ Boto3 documentation:
 [SQS.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.remove_permission)
 
 Arguments mapping described in
-[RemovePermissionRequestTypeDef](./type_defs.md#removepermissionrequesttypedef).
+[RemovePermissionRequestRequestTypeDef](./type_defs.md#removepermissionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -433,7 +442,7 @@ Boto3 documentation:
 [SQS.Client.send_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.send_message)
 
 Arguments mapping described in
-[SendMessageRequestTypeDef](./type_defs.md#sendmessagerequesttypedef).
+[SendMessageRequestRequestTypeDef](./type_defs.md#sendmessagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -448,8 +457,7 @@ Keyword-only arguments:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns
-[SendMessageResultResponseTypeDef](./type_defs.md#sendmessageresultresponsetypedef).
+Returns [SendMessageResultTypeDef](./type_defs.md#sendmessageresulttypedef).
 
 ### send_message_batch
 
@@ -461,7 +469,7 @@ Boto3 documentation:
 [SQS.Client.send_message_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.send_message_batch)
 
 Arguments mapping described in
-[SendMessageBatchRequestTypeDef](./type_defs.md#sendmessagebatchrequesttypedef).
+[SendMessageBatchRequestRequestTypeDef](./type_defs.md#sendmessagebatchrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,7 +479,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[SendMessageBatchResultResponseTypeDef](./type_defs.md#sendmessagebatchresultresponsetypedef).
+[SendMessageBatchResultTypeDef](./type_defs.md#sendmessagebatchresulttypedef).
 
 ### set_queue_attributes
 
@@ -483,7 +491,7 @@ Boto3 documentation:
 [SQS.Client.set_queue_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.set_queue_attributes)
 
 Arguments mapping described in
-[SetQueueAttributesRequestTypeDef](./type_defs.md#setqueueattributesrequesttypedef).
+[SetQueueAttributesRequestRequestTypeDef](./type_defs.md#setqueueattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -502,7 +510,7 @@ Boto3 documentation:
 [SQS.Client.tag_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.tag_queue)
 
 Arguments mapping described in
-[TagQueueRequestTypeDef](./type_defs.md#tagqueuerequesttypedef).
+[TagQueueRequestRequestTypeDef](./type_defs.md#tagqueuerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -519,7 +527,7 @@ Boto3 documentation:
 [SQS.Client.untag_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Client.untag_queue)
 
 Arguments mapping described in
-[UntagQueueRequestTypeDef](./type_defs.md#untagqueuerequesttypedef).
+[UntagQueueRequestRequestTypeDef](./type_defs.md#untagqueuerequestrequesttypedef).
 
 Keyword-only arguments:
 

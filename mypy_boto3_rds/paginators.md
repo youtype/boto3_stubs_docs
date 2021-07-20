@@ -70,7 +70,7 @@ Arguments for `DescribeCertificatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCertificatesPaginator.paginate` returns
-`Iterator`\[[CertificateMessageResponseTypeDef](./type_defs.md#certificatemessageresponsetypedef)\].
+`Iterator`\[[CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef)\].
 
 ## DescribeCustomAvailabilityZonesPaginator
 
@@ -97,7 +97,7 @@ Arguments for `DescribeCustomAvailabilityZonesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCustomAvailabilityZonesPaginator.paginate` returns
-`Iterator`\[[CustomAvailabilityZoneMessageResponseTypeDef](./type_defs.md#customavailabilityzonemessageresponsetypedef)\].
+`Iterator`\[[CustomAvailabilityZoneMessageTypeDef](./type_defs.md#customavailabilityzonemessagetypedef)\].
 
 ## DescribeDBClusterBacktracksPaginator
 
@@ -125,7 +125,7 @@ Arguments for `DescribeDBClusterBacktracksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClusterBacktracksPaginator.paginate` returns
-`Iterator`\[[DBClusterBacktrackMessageResponseTypeDef](./type_defs.md#dbclusterbacktrackmessageresponsetypedef)\].
+`Iterator`\[[DBClusterBacktrackMessageTypeDef](./type_defs.md#dbclusterbacktrackmessagetypedef)\].
 
 ## DescribeDBClusterEndpointsPaginator
 
@@ -153,7 +153,7 @@ Arguments for `DescribeDBClusterEndpointsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClusterEndpointsPaginator.paginate` returns
-`Iterator`\[[DBClusterEndpointMessageResponseTypeDef](./type_defs.md#dbclusterendpointmessageresponsetypedef)\].
+`Iterator`\[[DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef)\].
 
 ## DescribeDBClusterParameterGroupsPaginator
 
@@ -180,7 +180,7 @@ Arguments for `DescribeDBClusterParameterGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClusterParameterGroupsPaginator.paginate` returns
-`Iterator`\[[DBClusterParameterGroupsMessageResponseTypeDef](./type_defs.md#dbclusterparametergroupsmessageresponsetypedef)\].
+`Iterator`\[[DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef)\].
 
 ## DescribeDBClusterParametersPaginator
 
@@ -208,7 +208,7 @@ Arguments for `DescribeDBClusterParametersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClusterParametersPaginator.paginate` returns
-`Iterator`\[[DBClusterParameterGroupDetailsResponseTypeDef](./type_defs.md#dbclusterparametergroupdetailsresponsetypedef)\].
+`Iterator`\[[DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef)\].
 
 ## DescribeDBClusterSnapshotsPaginator
 
@@ -239,7 +239,7 @@ Arguments for `DescribeDBClusterSnapshotsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClusterSnapshotsPaginator.paginate` returns
-`Iterator`\[[DBClusterSnapshotMessageResponseTypeDef](./type_defs.md#dbclustersnapshotmessageresponsetypedef)\].
+`Iterator`\[[DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef)\].
 
 ## DescribeDBClustersPaginator
 
@@ -267,7 +267,7 @@ Arguments for `DescribeDBClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBClustersPaginator.paginate` returns
-`Iterator`\[[DBClusterMessageResponseTypeDef](./type_defs.md#dbclustermessageresponsetypedef)\].
+`Iterator`\[[DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef)\].
 
 ## DescribeDBEngineVersionsPaginator
 
@@ -300,7 +300,7 @@ Arguments for `DescribeDBEngineVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBEngineVersionsPaginator.paginate` returns
-`Iterator`\[[DBEngineVersionMessageResponseTypeDef](./type_defs.md#dbengineversionmessageresponsetypedef)\].
+`Iterator`\[[DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef)\].
 
 ## DescribeDBInstanceAutomatedBackupsPaginator
 
@@ -329,7 +329,7 @@ Arguments for `DescribeDBInstanceAutomatedBackupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBInstanceAutomatedBackupsPaginator.paginate` returns
-`Iterator`\[[DBInstanceAutomatedBackupMessageResponseTypeDef](./type_defs.md#dbinstanceautomatedbackupmessageresponsetypedef)\].
+`Iterator`\[[DBInstanceAutomatedBackupMessageTypeDef](./type_defs.md#dbinstanceautomatedbackupmessagetypedef)\].
 
 ## DescribeDBInstancesPaginator
 
@@ -356,7 +356,7 @@ Arguments for `DescribeDBInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBInstancesPaginator.paginate` returns
-`Iterator`\[[DBInstanceMessageResponseTypeDef](./type_defs.md#dbinstancemessageresponsetypedef)\].
+`Iterator`\[[DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef)\].
 
 ## DescribeDBLogFilesPaginator
 
@@ -386,7 +386,7 @@ Arguments for `DescribeDBLogFilesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBLogFilesPaginator.paginate` returns
-`Iterator`\[[DescribeDBLogFilesResponseResponseTypeDef](./type_defs.md#describedblogfilesresponseresponsetypedef)\].
+`Iterator`\[[DescribeDBLogFilesResponseTypeDef](./type_defs.md#describedblogfilesresponsetypedef)\].
 
 ## DescribeDBParameterGroupsPaginator
 
@@ -413,7 +413,7 @@ Arguments for `DescribeDBParameterGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBParameterGroupsPaginator.paginate` returns
-`Iterator`\[[DBParameterGroupsMessageResponseTypeDef](./type_defs.md#dbparametergroupsmessageresponsetypedef)\].
+`Iterator`\[[DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef)\].
 
 ## DescribeDBParametersPaginator
 
@@ -441,7 +441,7 @@ Arguments for `DescribeDBParametersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBParametersPaginator.paginate` returns
-`Iterator`\[[DBParameterGroupDetailsResponseTypeDef](./type_defs.md#dbparametergroupdetailsresponsetypedef)\].
+`Iterator`\[[DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef)\].
 
 ## DescribeDBProxiesPaginator
 
@@ -468,7 +468,7 @@ Arguments for `DescribeDBProxiesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBProxiesPaginator.paginate` returns
-`Iterator`\[[DescribeDBProxiesResponseResponseTypeDef](./type_defs.md#describedbproxiesresponseresponsetypedef)\].
+`Iterator`\[[DescribeDBProxiesResponseTypeDef](./type_defs.md#describedbproxiesresponsetypedef)\].
 
 ## DescribeDBProxyEndpointsPaginator
 
@@ -496,7 +496,7 @@ Arguments for `DescribeDBProxyEndpointsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBProxyEndpointsPaginator.paginate` returns
-`Iterator`\[[DescribeDBProxyEndpointsResponseResponseTypeDef](./type_defs.md#describedbproxyendpointsresponseresponsetypedef)\].
+`Iterator`\[[DescribeDBProxyEndpointsResponseTypeDef](./type_defs.md#describedbproxyendpointsresponsetypedef)\].
 
 ## DescribeDBProxyTargetGroupsPaginator
 
@@ -524,7 +524,7 @@ Arguments for `DescribeDBProxyTargetGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBProxyTargetGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeDBProxyTargetGroupsResponseResponseTypeDef](./type_defs.md#describedbproxytargetgroupsresponseresponsetypedef)\].
+`Iterator`\[[DescribeDBProxyTargetGroupsResponseTypeDef](./type_defs.md#describedbproxytargetgroupsresponsetypedef)\].
 
 ## DescribeDBProxyTargetsPaginator
 
@@ -552,7 +552,7 @@ Arguments for `DescribeDBProxyTargetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBProxyTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeDBProxyTargetsResponseResponseTypeDef](./type_defs.md#describedbproxytargetsresponseresponsetypedef)\].
+`Iterator`\[[DescribeDBProxyTargetsResponseTypeDef](./type_defs.md#describedbproxytargetsresponsetypedef)\].
 
 ## DescribeDBSecurityGroupsPaginator
 
@@ -579,7 +579,7 @@ Arguments for `DescribeDBSecurityGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBSecurityGroupsPaginator.paginate` returns
-`Iterator`\[[DBSecurityGroupMessageResponseTypeDef](./type_defs.md#dbsecuritygroupmessageresponsetypedef)\].
+`Iterator`\[[DBSecurityGroupMessageTypeDef](./type_defs.md#dbsecuritygroupmessagetypedef)\].
 
 ## DescribeDBSnapshotsPaginator
 
@@ -611,7 +611,7 @@ Arguments for `DescribeDBSnapshotsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBSnapshotsPaginator.paginate` returns
-`Iterator`\[[DBSnapshotMessageResponseTypeDef](./type_defs.md#dbsnapshotmessageresponsetypedef)\].
+`Iterator`\[[DBSnapshotMessageTypeDef](./type_defs.md#dbsnapshotmessagetypedef)\].
 
 ## DescribeDBSubnetGroupsPaginator
 
@@ -638,7 +638,7 @@ Arguments for `DescribeDBSubnetGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDBSubnetGroupsPaginator.paginate` returns
-`Iterator`\[[DBSubnetGroupMessageResponseTypeDef](./type_defs.md#dbsubnetgroupmessageresponsetypedef)\].
+`Iterator`\[[DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef)\].
 
 ## DescribeEngineDefaultClusterParametersPaginator
 
@@ -666,7 +666,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEngineDefaultClusterParametersPaginator.paginate` returns
-`Iterator`\[[DescribeEngineDefaultClusterParametersResultResponseTypeDef](./type_defs.md#describeenginedefaultclusterparametersresultresponsetypedef)\].
+`Iterator`\[[DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef)\].
 
 ## DescribeEngineDefaultParametersPaginator
 
@@ -693,7 +693,7 @@ Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEngineDefaultParametersPaginator.paginate` returns
-`Iterator`\[[DescribeEngineDefaultParametersResultResponseTypeDef](./type_defs.md#describeenginedefaultparametersresultresponsetypedef)\].
+`Iterator`\[[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef)\].
 
 ## DescribeEventSubscriptionsPaginator
 
@@ -720,7 +720,7 @@ Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventSubscriptionsPaginator.paginate` returns
-`Iterator`\[[EventSubscriptionsMessageResponseTypeDef](./type_defs.md#eventsubscriptionsmessageresponsetypedef)\].
+`Iterator`\[[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -751,7 +751,7 @@ Arguments for `DescribeEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[EventsMessageResponseTypeDef](./type_defs.md#eventsmessageresponsetypedef)\].
+`Iterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
 
 ## DescribeExportTasksPaginator
 
@@ -779,7 +779,7 @@ Arguments for `DescribeExportTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeExportTasksPaginator.paginate` returns
-`Iterator`\[[ExportTasksMessageResponseTypeDef](./type_defs.md#exporttasksmessageresponsetypedef)\].
+`Iterator`\[[ExportTasksMessageTypeDef](./type_defs.md#exporttasksmessagetypedef)\].
 
 ## DescribeGlobalClustersPaginator
 
@@ -806,7 +806,7 @@ Arguments for `DescribeGlobalClustersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGlobalClustersPaginator.paginate` returns
-`Iterator`\[[GlobalClustersMessageResponseTypeDef](./type_defs.md#globalclustersmessageresponsetypedef)\].
+`Iterator`\[[GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef)\].
 
 ## DescribeInstallationMediaPaginator
 
@@ -833,7 +833,7 @@ Arguments for `DescribeInstallationMediaPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeInstallationMediaPaginator.paginate` returns
-`Iterator`\[[InstallationMediaMessageResponseTypeDef](./type_defs.md#installationmediamessageresponsetypedef)\].
+`Iterator`\[[InstallationMediaMessageTypeDef](./type_defs.md#installationmediamessagetypedef)\].
 
 ## DescribeOptionGroupOptionsPaginator
 
@@ -861,7 +861,7 @@ Arguments for `DescribeOptionGroupOptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOptionGroupOptionsPaginator.paginate` returns
-`Iterator`\[[OptionGroupOptionsMessageResponseTypeDef](./type_defs.md#optiongroupoptionsmessageresponsetypedef)\].
+`Iterator`\[[OptionGroupOptionsMessageTypeDef](./type_defs.md#optiongroupoptionsmessagetypedef)\].
 
 ## DescribeOptionGroupsPaginator
 
@@ -890,7 +890,7 @@ Arguments for `DescribeOptionGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOptionGroupsPaginator.paginate` returns
-`Iterator`\[[OptionGroupsResponseTypeDef](./type_defs.md#optiongroupsresponsetypedef)\].
+`Iterator`\[[OptionGroupsTypeDef](./type_defs.md#optiongroupstypedef)\].
 
 ## DescribeOrderableDBInstanceOptionsPaginator
 
@@ -922,7 +922,7 @@ Arguments for `DescribeOrderableDBInstanceOptionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeOrderableDBInstanceOptionsPaginator.paginate` returns
-`Iterator`\[[OrderableDBInstanceOptionsMessageResponseTypeDef](./type_defs.md#orderabledbinstanceoptionsmessageresponsetypedef)\].
+`Iterator`\[[OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef)\].
 
 ## DescribePendingMaintenanceActionsPaginator
 
@@ -949,7 +949,7 @@ Arguments for `DescribePendingMaintenanceActionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribePendingMaintenanceActionsPaginator.paginate` returns
-`Iterator`\[[PendingMaintenanceActionsMessageResponseTypeDef](./type_defs.md#pendingmaintenanceactionsmessageresponsetypedef)\].
+`Iterator`\[[PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef)\].
 
 ## DescribeReservedDBInstancesPaginator
 
@@ -983,7 +983,7 @@ Arguments for `DescribeReservedDBInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedDBInstancesPaginator.paginate` returns
-`Iterator`\[[ReservedDBInstanceMessageResponseTypeDef](./type_defs.md#reserveddbinstancemessageresponsetypedef)\].
+`Iterator`\[[ReservedDBInstanceMessageTypeDef](./type_defs.md#reserveddbinstancemessagetypedef)\].
 
 ## DescribeReservedDBInstancesOfferingsPaginator
 
@@ -1015,7 +1015,7 @@ Arguments for `DescribeReservedDBInstancesOfferingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeReservedDBInstancesOfferingsPaginator.paginate` returns
-`Iterator`\[[ReservedDBInstancesOfferingMessageResponseTypeDef](./type_defs.md#reserveddbinstancesofferingmessageresponsetypedef)\].
+`Iterator`\[[ReservedDBInstancesOfferingMessageTypeDef](./type_defs.md#reserveddbinstancesofferingmessagetypedef)\].
 
 ## DescribeSourceRegionsPaginator
 
@@ -1042,7 +1042,7 @@ Arguments for `DescribeSourceRegionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSourceRegionsPaginator.paginate` returns
-`Iterator`\[[SourceRegionMessageResponseTypeDef](./type_defs.md#sourceregionmessageresponsetypedef)\].
+`Iterator`\[[SourceRegionMessageTypeDef](./type_defs.md#sourceregionmessagetypedef)\].
 
 ## DownloadDBLogFilePortionPaginator
 
@@ -1069,4 +1069,4 @@ Arguments for `DownloadDBLogFilePortionPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DownloadDBLogFilePortionPaginator.paginate` returns
-`Iterator`\[[DownloadDBLogFilePortionDetailsResponseTypeDef](./type_defs.md#downloaddblogfileportiondetailsresponsetypedef)\].
+`Iterator`\[[DownloadDBLogFilePortionDetailsTypeDef](./type_defs.md#downloaddblogfileportiondetailstypedef)\].

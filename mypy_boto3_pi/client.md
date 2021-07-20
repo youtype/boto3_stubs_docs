@@ -11,6 +11,7 @@ type annotations stubs module
   - [PIClient](#piclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [describe_dimension_keys](#describe_dimension_keys)
     - [generate_presigned_url](#generate_presigned_url)
@@ -54,6 +55,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+PIClient exceptions.
+
+Type annotations for `boto3.client("pi").exceptions` method.
+
+Boto3 documentation:
+[PI.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -79,7 +91,7 @@ Boto3 documentation:
 [PI.Client.describe_dimension_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.describe_dimension_keys)
 
 Arguments mapping described in
-[DescribeDimensionKeysRequestTypeDef](./type_defs.md#describedimensionkeysrequesttypedef).
+[DescribeDimensionKeysRequestRequestTypeDef](./type_defs.md#describedimensionkeysrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -98,7 +110,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeDimensionKeysResponseResponseTypeDef](./type_defs.md#describedimensionkeysresponseresponsetypedef).
+[DescribeDimensionKeysResponseTypeDef](./type_defs.md#describedimensionkeysresponsetypedef).
 
 ### generate_presigned_url
 
@@ -129,7 +141,7 @@ Boto3 documentation:
 [PI.Client.get_dimension_key_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_dimension_key_details)
 
 Arguments mapping described in
-[GetDimensionKeyDetailsRequestTypeDef](./type_defs.md#getdimensionkeydetailsrequesttypedef).
+[GetDimensionKeyDetailsRequestRequestTypeDef](./type_defs.md#getdimensionkeydetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -141,7 +153,7 @@ Keyword-only arguments:
 - `RequestedDimensions`: `List`\[`str`\]
 
 Returns
-[GetDimensionKeyDetailsResponseResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponseresponsetypedef).
+[GetDimensionKeyDetailsResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponsetypedef).
 
 ### get_resource_metrics
 
@@ -154,7 +166,7 @@ Boto3 documentation:
 [PI.Client.get_resource_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metrics)
 
 Arguments mapping described in
-[GetResourceMetricsRequestTypeDef](./type_defs.md#getresourcemetricsrequesttypedef).
+[GetResourceMetricsRequestRequestTypeDef](./type_defs.md#getresourcemetricsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -171,4 +183,4 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetResourceMetricsResponseResponseTypeDef](./type_defs.md#getresourcemetricsresponseresponsetypedef).
+[GetResourceMetricsResponseTypeDef](./type_defs.md#getresourcemetricsresponsetypedef).

@@ -11,6 +11,7 @@ type annotations stubs module
   - [AutoScalingPlansClient](#autoscalingplansclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_scaling_plan](#create_scaling_plan)
     - [delete_scaling_plan](#delete_scaling_plan)
@@ -61,6 +62,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AutoScalingPlansClient exceptions.
+
+Type annotations for `boto3.client("autoscaling-plans").exceptions` method.
+
+Boto3 documentation:
+[AutoScalingPlans.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -87,7 +99,7 @@ Boto3 documentation:
 [AutoScalingPlans.Client.create_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.create_scaling_plan)
 
 Arguments mapping described in
-[CreateScalingPlanRequestTypeDef](./type_defs.md#createscalingplanrequesttypedef).
+[CreateScalingPlanRequestRequestTypeDef](./type_defs.md#createscalingplanrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -100,7 +112,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateScalingPlanResponseResponseTypeDef](./type_defs.md#createscalingplanresponseresponsetypedef).
+[CreateScalingPlanResponseTypeDef](./type_defs.md#createscalingplanresponsetypedef).
 
 ### delete_scaling_plan
 
@@ -113,7 +125,7 @@ Boto3 documentation:
 [AutoScalingPlans.Client.delete_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.delete_scaling_plan)
 
 Arguments mapping described in
-[DeleteScalingPlanRequestTypeDef](./type_defs.md#deletescalingplanrequesttypedef).
+[DeleteScalingPlanRequestRequestTypeDef](./type_defs.md#deletescalingplanrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -133,7 +145,7 @@ Boto3 documentation:
 [AutoScalingPlans.Client.describe_scaling_plan_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plan_resources)
 
 Arguments mapping described in
-[DescribeScalingPlanResourcesRequestTypeDef](./type_defs.md#describescalingplanresourcesrequesttypedef).
+[DescribeScalingPlanResourcesRequestRequestTypeDef](./type_defs.md#describescalingplanresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -143,7 +155,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScalingPlanResourcesResponseResponseTypeDef](./type_defs.md#describescalingplanresourcesresponseresponsetypedef).
+[DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef).
 
 ### describe_scaling_plans
 
@@ -156,7 +168,7 @@ Boto3 documentation:
 [AutoScalingPlans.Client.describe_scaling_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plans)
 
 Arguments mapping described in
-[DescribeScalingPlansRequestTypeDef](./type_defs.md#describescalingplansrequesttypedef).
+[DescribeScalingPlansRequestRequestTypeDef](./type_defs.md#describescalingplansrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -168,7 +180,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeScalingPlansResponseResponseTypeDef](./type_defs.md#describescalingplansresponseresponsetypedef).
+[DescribeScalingPlansResponseTypeDef](./type_defs.md#describescalingplansresponsetypedef).
 
 ### generate_presigned_url
 
@@ -201,7 +213,7 @@ Boto3 documentation:
 [AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data)
 
 Arguments mapping described in
-[GetScalingPlanResourceForecastDataRequestTypeDef](./type_defs.md#getscalingplanresourceforecastdatarequesttypedef).
+[GetScalingPlanResourceForecastDataRequestRequestTypeDef](./type_defs.md#getscalingplanresourceforecastdatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,7 +230,7 @@ Keyword-only arguments:
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 
 Returns
-[GetScalingPlanResourceForecastDataResponseResponseTypeDef](./type_defs.md#getscalingplanresourceforecastdataresponseresponsetypedef).
+[GetScalingPlanResourceForecastDataResponseTypeDef](./type_defs.md#getscalingplanresourceforecastdataresponsetypedef).
 
 ### update_scaling_plan
 
@@ -231,7 +243,7 @@ Boto3 documentation:
 [AutoScalingPlans.Client.update_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.update_scaling_plan)
 
 Arguments mapping described in
-[UpdateScalingPlanRequestTypeDef](./type_defs.md#updatescalingplanrequesttypedef).
+[UpdateScalingPlanRequestRequestTypeDef](./type_defs.md#updatescalingplanrequestrequesttypedef).
 
 Keyword-only arguments:
 

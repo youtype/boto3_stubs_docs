@@ -11,6 +11,7 @@ type annotations stubs module
   - [ElastiCacheClient](#elasticacheclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_tags_to_resource](#add_tags_to_resource)
     - [authorize_cache_security_group_ingress](#authorize_cache_security_group_ingress)
     - [batch_apply_update_action](#batch_apply_update_action)
@@ -182,6 +183,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ElastiCacheClient exceptions.
+
+Type annotations for `boto3.client("elasticache").exceptions` method.
+
+Boto3 documentation:
+[ElastiCache.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_tags_to_resource
 
 A tag is a key-value pair where the key and value are case-sensitive.
@@ -192,15 +204,14 @@ Boto3 documentation:
 [ElastiCache.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.add_tags_to_resource)
 
 Arguments mapping described in
-[AddTagsToResourceMessageTypeDef](./type_defs.md#addtagstoresourcemessagetypedef).
+[AddTagsToResourceMessageRequestTypeDef](./type_defs.md#addtagstoresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
-Returns
-[TagListMessageResponseTypeDef](./type_defs.md#taglistmessageresponsetypedef).
+Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
 ### authorize_cache_security_group_ingress
 
@@ -213,7 +224,7 @@ Boto3 documentation:
 [ElastiCache.Client.authorize_cache_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.authorize_cache_security_group_ingress)
 
 Arguments mapping described in
-[AuthorizeCacheSecurityGroupIngressMessageTypeDef](./type_defs.md#authorizecachesecuritygroupingressmessagetypedef).
+[AuthorizeCacheSecurityGroupIngressMessageRequestTypeDef](./type_defs.md#authorizecachesecuritygroupingressmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,7 +233,7 @@ Keyword-only arguments:
 - `EC2SecurityGroupOwnerId`: `str` *(required)*
 
 Returns
-[AuthorizeCacheSecurityGroupIngressResultResponseTypeDef](./type_defs.md#authorizecachesecuritygroupingressresultresponsetypedef).
+[AuthorizeCacheSecurityGroupIngressResultTypeDef](./type_defs.md#authorizecachesecuritygroupingressresulttypedef).
 
 ### batch_apply_update_action
 
@@ -235,7 +246,7 @@ Boto3 documentation:
 [ElastiCache.Client.batch_apply_update_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.batch_apply_update_action)
 
 Arguments mapping described in
-[BatchApplyUpdateActionMessageTypeDef](./type_defs.md#batchapplyupdateactionmessagetypedef).
+[BatchApplyUpdateActionMessageRequestTypeDef](./type_defs.md#batchapplyupdateactionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -244,7 +255,7 @@ Keyword-only arguments:
 - `CacheClusterIds`: `List`\[`str`\]
 
 Returns
-[UpdateActionResultsMessageResponseTypeDef](./type_defs.md#updateactionresultsmessageresponsetypedef).
+[UpdateActionResultsMessageTypeDef](./type_defs.md#updateactionresultsmessagetypedef).
 
 ### batch_stop_update_action
 
@@ -257,7 +268,7 @@ Boto3 documentation:
 [ElastiCache.Client.batch_stop_update_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.batch_stop_update_action)
 
 Arguments mapping described in
-[BatchStopUpdateActionMessageTypeDef](./type_defs.md#batchstopupdateactionmessagetypedef).
+[BatchStopUpdateActionMessageRequestTypeDef](./type_defs.md#batchstopupdateactionmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -266,7 +277,7 @@ Keyword-only arguments:
 - `CacheClusterIds`: `List`\[`str`\]
 
 Returns
-[UpdateActionResultsMessageResponseTypeDef](./type_defs.md#updateactionresultsmessageresponsetypedef).
+[UpdateActionResultsMessageTypeDef](./type_defs.md#updateactionresultsmessagetypedef).
 
 ### can_paginate
 
@@ -293,7 +304,7 @@ Boto3 documentation:
 [ElastiCache.Client.complete_migration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.complete_migration)
 
 Arguments mapping described in
-[CompleteMigrationMessageTypeDef](./type_defs.md#completemigrationmessagetypedef).
+[CompleteMigrationMessageRequestTypeDef](./type_defs.md#completemigrationmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -301,7 +312,7 @@ Keyword-only arguments:
 - `Force`: `bool`
 
 Returns
-[CompleteMigrationResponseResponseTypeDef](./type_defs.md#completemigrationresponseresponsetypedef).
+[CompleteMigrationResponseTypeDef](./type_defs.md#completemigrationresponsetypedef).
 
 ### copy_snapshot
 
@@ -313,7 +324,7 @@ Boto3 documentation:
 [ElastiCache.Client.copy_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.copy_snapshot)
 
 Arguments mapping described in
-[CopySnapshotMessageTypeDef](./type_defs.md#copysnapshotmessagetypedef).
+[CopySnapshotMessageRequestTypeDef](./type_defs.md#copysnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -323,8 +334,7 @@ Keyword-only arguments:
 - `KmsKeyId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CopySnapshotResultResponseTypeDef](./type_defs.md#copysnapshotresultresponsetypedef).
+Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
 
 ### create_cache_cluster
 
@@ -336,7 +346,7 @@ Boto3 documentation:
 [ElastiCache.Client.create_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_cache_cluster)
 
 Arguments mapping described in
-[CreateCacheClusterMessageTypeDef](./type_defs.md#createcacheclustermessagetypedef).
+[CreateCacheClusterMessageRequestTypeDef](./type_defs.md#createcacheclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -370,7 +380,7 @@ Keyword-only arguments:
   `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 Returns
-[CreateCacheClusterResultResponseTypeDef](./type_defs.md#createcacheclusterresultresponsetypedef).
+[CreateCacheClusterResultTypeDef](./type_defs.md#createcacheclusterresulttypedef).
 
 ### create_cache_parameter_group
 
@@ -383,7 +393,7 @@ Boto3 documentation:
 [ElastiCache.Client.create_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_cache_parameter_group)
 
 Arguments mapping described in
-[CreateCacheParameterGroupMessageTypeDef](./type_defs.md#createcacheparametergroupmessagetypedef).
+[CreateCacheParameterGroupMessageRequestTypeDef](./type_defs.md#createcacheparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -393,7 +403,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCacheParameterGroupResultResponseTypeDef](./type_defs.md#createcacheparametergroupresultresponsetypedef).
+[CreateCacheParameterGroupResultTypeDef](./type_defs.md#createcacheparametergroupresulttypedef).
 
 ### create_cache_security_group
 
@@ -406,7 +416,7 @@ Boto3 documentation:
 [ElastiCache.Client.create_cache_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_cache_security_group)
 
 Arguments mapping described in
-[CreateCacheSecurityGroupMessageTypeDef](./type_defs.md#createcachesecuritygroupmessagetypedef).
+[CreateCacheSecurityGroupMessageRequestTypeDef](./type_defs.md#createcachesecuritygroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -415,7 +425,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCacheSecurityGroupResultResponseTypeDef](./type_defs.md#createcachesecuritygroupresultresponsetypedef).
+[CreateCacheSecurityGroupResultTypeDef](./type_defs.md#createcachesecuritygroupresulttypedef).
 
 ### create_cache_subnet_group
 
@@ -428,7 +438,7 @@ Boto3 documentation:
 [ElastiCache.Client.create_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_cache_subnet_group)
 
 Arguments mapping described in
-[CreateCacheSubnetGroupMessageTypeDef](./type_defs.md#createcachesubnetgroupmessagetypedef).
+[CreateCacheSubnetGroupMessageRequestTypeDef](./type_defs.md#createcachesubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -438,7 +448,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCacheSubnetGroupResultResponseTypeDef](./type_defs.md#createcachesubnetgroupresultresponsetypedef).
+[CreateCacheSubnetGroupResultTypeDef](./type_defs.md#createcachesubnetgroupresulttypedef).
 
 ### create_global_replication_group
 
@@ -452,7 +462,7 @@ Boto3 documentation:
 [ElastiCache.Client.create_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_global_replication_group)
 
 Arguments mapping described in
-[CreateGlobalReplicationGroupMessageTypeDef](./type_defs.md#createglobalreplicationgroupmessagetypedef).
+[CreateGlobalReplicationGroupMessageRequestTypeDef](./type_defs.md#createglobalreplicationgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -461,7 +471,7 @@ Keyword-only arguments:
 - `GlobalReplicationGroupDescription`: `str`
 
 Returns
-[CreateGlobalReplicationGroupResultResponseTypeDef](./type_defs.md#createglobalreplicationgroupresultresponsetypedef).
+[CreateGlobalReplicationGroupResultTypeDef](./type_defs.md#createglobalreplicationgroupresulttypedef).
 
 ### create_replication_group
 
@@ -475,7 +485,7 @@ Boto3 documentation:
 [ElastiCache.Client.create_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_replication_group)
 
 Arguments mapping described in
-[CreateReplicationGroupMessageTypeDef](./type_defs.md#createreplicationgroupmessagetypedef).
+[CreateReplicationGroupMessageRequestTypeDef](./type_defs.md#createreplicationgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -516,7 +526,7 @@ Keyword-only arguments:
   `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 Returns
-[CreateReplicationGroupResultResponseTypeDef](./type_defs.md#createreplicationgroupresultresponsetypedef).
+[CreateReplicationGroupResultTypeDef](./type_defs.md#createreplicationgroupresulttypedef).
 
 ### create_snapshot
 
@@ -529,7 +539,7 @@ Boto3 documentation:
 [ElastiCache.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_snapshot)
 
 Arguments mapping described in
-[CreateSnapshotMessageTypeDef](./type_defs.md#createsnapshotmessagetypedef).
+[CreateSnapshotMessageRequestTypeDef](./type_defs.md#createsnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -540,7 +550,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSnapshotResultResponseTypeDef](./type_defs.md#createsnapshotresultresponsetypedef).
+[CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef).
 
 ### create_user
 
@@ -552,7 +562,7 @@ Boto3 documentation:
 [ElastiCache.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_user)
 
 Arguments mapping described in
-[CreateUserMessageTypeDef](./type_defs.md#createusermessagetypedef).
+[CreateUserMessageRequestTypeDef](./type_defs.md#createusermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -564,7 +574,8 @@ Keyword-only arguments:
 - `NoPasswordRequired`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [UserResponseTypeDef](./type_defs.md#userresponsetypedef).
+Returns
+[UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef).
 
 ### create_user_group
 
@@ -576,7 +587,7 @@ Boto3 documentation:
 [ElastiCache.Client.create_user_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.create_user_group)
 
 Arguments mapping described in
-[CreateUserGroupMessageTypeDef](./type_defs.md#createusergroupmessagetypedef).
+[CreateUserGroupMessageRequestTypeDef](./type_defs.md#createusergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -585,7 +596,8 @@ Keyword-only arguments:
 - `UserIds`: `List`\[`str`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns [UserGroupResponseTypeDef](./type_defs.md#usergroupresponsetypedef).
+Returns
+[UserGroupResponseMetadataTypeDef](./type_defs.md#usergroupresponsemetadatatypedef).
 
 ### decrease_node_groups_in_global_replication_group
 
@@ -602,7 +614,7 @@ Boto3 documentation:
 [ElastiCache.Client.decrease_node_groups_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.decrease_node_groups_in_global_replication_group)
 
 Arguments mapping described in
-[DecreaseNodeGroupsInGlobalReplicationGroupMessageTypeDef](./type_defs.md#decreasenodegroupsinglobalreplicationgroupmessagetypedef).
+[DecreaseNodeGroupsInGlobalReplicationGroupMessageRequestTypeDef](./type_defs.md#decreasenodegroupsinglobalreplicationgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -613,7 +625,7 @@ Keyword-only arguments:
 - `GlobalNodeGroupsToRetain`: `List`\[`str`\]
 
 Returns
-[DecreaseNodeGroupsInGlobalReplicationGroupResultResponseTypeDef](./type_defs.md#decreasenodegroupsinglobalreplicationgroupresultresponsetypedef).
+[DecreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](./type_defs.md#decreasenodegroupsinglobalreplicationgroupresulttypedef).
 
 ### decrease_replica_count
 
@@ -628,7 +640,7 @@ Boto3 documentation:
 [ElastiCache.Client.decrease_replica_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.decrease_replica_count)
 
 Arguments mapping described in
-[DecreaseReplicaCountMessageTypeDef](./type_defs.md#decreasereplicacountmessagetypedef).
+[DecreaseReplicaCountMessageRequestTypeDef](./type_defs.md#decreasereplicacountmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -640,7 +652,7 @@ Keyword-only arguments:
 - `ReplicasToRemove`: `List`\[`str`\]
 
 Returns
-[DecreaseReplicaCountResultResponseTypeDef](./type_defs.md#decreasereplicacountresultresponsetypedef).
+[DecreaseReplicaCountResultTypeDef](./type_defs.md#decreasereplicacountresulttypedef).
 
 ### delete_cache_cluster
 
@@ -652,7 +664,7 @@ Boto3 documentation:
 [ElastiCache.Client.delete_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_cluster)
 
 Arguments mapping described in
-[DeleteCacheClusterMessageTypeDef](./type_defs.md#deletecacheclustermessagetypedef).
+[DeleteCacheClusterMessageRequestTypeDef](./type_defs.md#deletecacheclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -660,7 +672,7 @@ Keyword-only arguments:
 - `FinalSnapshotIdentifier`: `str`
 
 Returns
-[DeleteCacheClusterResultResponseTypeDef](./type_defs.md#deletecacheclusterresultresponsetypedef).
+[DeleteCacheClusterResultTypeDef](./type_defs.md#deletecacheclusterresulttypedef).
 
 ### delete_cache_parameter_group
 
@@ -673,7 +685,7 @@ Boto3 documentation:
 [ElastiCache.Client.delete_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_parameter_group)
 
 Arguments mapping described in
-[DeleteCacheParameterGroupMessageTypeDef](./type_defs.md#deletecacheparametergroupmessagetypedef).
+[DeleteCacheParameterGroupMessageRequestTypeDef](./type_defs.md#deletecacheparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -690,7 +702,7 @@ Boto3 documentation:
 [ElastiCache.Client.delete_cache_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_security_group)
 
 Arguments mapping described in
-[DeleteCacheSecurityGroupMessageTypeDef](./type_defs.md#deletecachesecuritygroupmessagetypedef).
+[DeleteCacheSecurityGroupMessageRequestTypeDef](./type_defs.md#deletecachesecuritygroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -707,7 +719,7 @@ Boto3 documentation:
 [ElastiCache.Client.delete_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_cache_subnet_group)
 
 Arguments mapping described in
-[DeleteCacheSubnetGroupMessageTypeDef](./type_defs.md#deletecachesubnetgroupmessagetypedef).
+[DeleteCacheSubnetGroupMessageRequestTypeDef](./type_defs.md#deletecachesubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -726,7 +738,7 @@ Boto3 documentation:
 [ElastiCache.Client.delete_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_global_replication_group)
 
 Arguments mapping described in
-[DeleteGlobalReplicationGroupMessageTypeDef](./type_defs.md#deleteglobalreplicationgroupmessagetypedef).
+[DeleteGlobalReplicationGroupMessageRequestTypeDef](./type_defs.md#deleteglobalreplicationgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -734,7 +746,7 @@ Keyword-only arguments:
 - `RetainPrimaryReplicationGroup`: `bool` *(required)*
 
 Returns
-[DeleteGlobalReplicationGroupResultResponseTypeDef](./type_defs.md#deleteglobalreplicationgroupresultresponsetypedef).
+[DeleteGlobalReplicationGroupResultTypeDef](./type_defs.md#deleteglobalreplicationgroupresulttypedef).
 
 ### delete_replication_group
 
@@ -747,7 +759,7 @@ Boto3 documentation:
 [ElastiCache.Client.delete_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_replication_group)
 
 Arguments mapping described in
-[DeleteReplicationGroupMessageTypeDef](./type_defs.md#deletereplicationgroupmessagetypedef).
+[DeleteReplicationGroupMessageRequestTypeDef](./type_defs.md#deletereplicationgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -756,7 +768,7 @@ Keyword-only arguments:
 - `FinalSnapshotIdentifier`: `str`
 
 Returns
-[DeleteReplicationGroupResultResponseTypeDef](./type_defs.md#deletereplicationgroupresultresponsetypedef).
+[DeleteReplicationGroupResultTypeDef](./type_defs.md#deletereplicationgroupresulttypedef).
 
 ### delete_snapshot
 
@@ -768,14 +780,14 @@ Boto3 documentation:
 [ElastiCache.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_snapshot)
 
 Arguments mapping described in
-[DeleteSnapshotMessageTypeDef](./type_defs.md#deletesnapshotmessagetypedef).
+[DeleteSnapshotMessageRequestTypeDef](./type_defs.md#deletesnapshotmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `SnapshotName`: `str` *(required)*
 
 Returns
-[DeleteSnapshotResultResponseTypeDef](./type_defs.md#deletesnapshotresultresponsetypedef).
+[DeleteSnapshotResultTypeDef](./type_defs.md#deletesnapshotresulttypedef).
 
 ### delete_user
 
@@ -787,13 +799,14 @@ Boto3 documentation:
 [ElastiCache.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_user)
 
 Arguments mapping described in
-[DeleteUserMessageTypeDef](./type_defs.md#deleteusermessagetypedef).
+[DeleteUserMessageRequestTypeDef](./type_defs.md#deleteusermessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `UserId`: `str` *(required)*
 
-Returns [UserResponseTypeDef](./type_defs.md#userresponsetypedef).
+Returns
+[UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef).
 
 ### delete_user_group
 
@@ -805,13 +818,14 @@ Boto3 documentation:
 [ElastiCache.Client.delete_user_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.delete_user_group)
 
 Arguments mapping described in
-[DeleteUserGroupMessageTypeDef](./type_defs.md#deleteusergroupmessagetypedef).
+[DeleteUserGroupMessageRequestTypeDef](./type_defs.md#deleteusergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `UserGroupId`: `str` *(required)*
 
-Returns [UserGroupResponseTypeDef](./type_defs.md#usergroupresponsetypedef).
+Returns
+[UserGroupResponseMetadataTypeDef](./type_defs.md#usergroupresponsemetadatatypedef).
 
 ### describe_cache_clusters
 
@@ -826,7 +840,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_cache_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_clusters)
 
 Arguments mapping described in
-[DescribeCacheClustersMessageTypeDef](./type_defs.md#describecacheclustersmessagetypedef).
+[DescribeCacheClustersMessageRequestTypeDef](./type_defs.md#describecacheclustersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -837,7 +851,7 @@ Keyword-only arguments:
 - `ShowCacheClustersNotInReplicationGroups`: `bool`
 
 Returns
-[CacheClusterMessageResponseTypeDef](./type_defs.md#cacheclustermessageresponsetypedef).
+[CacheClusterMessageTypeDef](./type_defs.md#cacheclustermessagetypedef).
 
 ### describe_cache_engine_versions
 
@@ -850,7 +864,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_cache_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_engine_versions)
 
 Arguments mapping described in
-[DescribeCacheEngineVersionsMessageTypeDef](./type_defs.md#describecacheengineversionsmessagetypedef).
+[DescribeCacheEngineVersionsMessageRequestTypeDef](./type_defs.md#describecacheengineversionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -862,7 +876,7 @@ Keyword-only arguments:
 - `DefaultOnly`: `bool`
 
 Returns
-[CacheEngineVersionMessageResponseTypeDef](./type_defs.md#cacheengineversionmessageresponsetypedef).
+[CacheEngineVersionMessageTypeDef](./type_defs.md#cacheengineversionmessagetypedef).
 
 ### describe_cache_parameter_groups
 
@@ -875,7 +889,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_cache_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_parameter_groups)
 
 Arguments mapping described in
-[DescribeCacheParameterGroupsMessageTypeDef](./type_defs.md#describecacheparametergroupsmessagetypedef).
+[DescribeCacheParameterGroupsMessageRequestTypeDef](./type_defs.md#describecacheparametergroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -884,7 +898,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[CacheParameterGroupsMessageResponseTypeDef](./type_defs.md#cacheparametergroupsmessageresponsetypedef).
+[CacheParameterGroupsMessageTypeDef](./type_defs.md#cacheparametergroupsmessagetypedef).
 
 ### describe_cache_parameters
 
@@ -897,7 +911,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_cache_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_parameters)
 
 Arguments mapping described in
-[DescribeCacheParametersMessageTypeDef](./type_defs.md#describecacheparametersmessagetypedef).
+[DescribeCacheParametersMessageRequestTypeDef](./type_defs.md#describecacheparametersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -907,7 +921,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[CacheParameterGroupDetailsResponseTypeDef](./type_defs.md#cacheparametergroupdetailsresponsetypedef).
+[CacheParameterGroupDetailsTypeDef](./type_defs.md#cacheparametergroupdetailstypedef).
 
 ### describe_cache_security_groups
 
@@ -920,7 +934,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_cache_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_security_groups)
 
 Arguments mapping described in
-[DescribeCacheSecurityGroupsMessageTypeDef](./type_defs.md#describecachesecuritygroupsmessagetypedef).
+[DescribeCacheSecurityGroupsMessageRequestTypeDef](./type_defs.md#describecachesecuritygroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -929,7 +943,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[CacheSecurityGroupMessageResponseTypeDef](./type_defs.md#cachesecuritygroupmessageresponsetypedef).
+[CacheSecurityGroupMessageTypeDef](./type_defs.md#cachesecuritygroupmessagetypedef).
 
 ### describe_cache_subnet_groups
 
@@ -942,7 +956,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_cache_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_cache_subnet_groups)
 
 Arguments mapping described in
-[DescribeCacheSubnetGroupsMessageTypeDef](./type_defs.md#describecachesubnetgroupsmessagetypedef).
+[DescribeCacheSubnetGroupsMessageRequestTypeDef](./type_defs.md#describecachesubnetgroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -951,7 +965,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[CacheSubnetGroupMessageResponseTypeDef](./type_defs.md#cachesubnetgroupmessageresponsetypedef).
+[CacheSubnetGroupMessageTypeDef](./type_defs.md#cachesubnetgroupmessagetypedef).
 
 ### describe_engine_default_parameters
 
@@ -965,7 +979,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_engine_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_engine_default_parameters)
 
 Arguments mapping described in
-[DescribeEngineDefaultParametersMessageTypeDef](./type_defs.md#describeenginedefaultparametersmessagetypedef).
+[DescribeEngineDefaultParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultparametersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -974,7 +988,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeEngineDefaultParametersResultResponseTypeDef](./type_defs.md#describeenginedefaultparametersresultresponsetypedef).
+[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef).
 
 ### describe_events
 
@@ -987,7 +1001,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_events)
 
 Arguments mapping described in
-[DescribeEventsMessageTypeDef](./type_defs.md#describeeventsmessagetypedef).
+[DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -999,8 +1013,7 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-Returns
-[EventsMessageResponseTypeDef](./type_defs.md#eventsmessageresponsetypedef).
+Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
 ### describe_global_replication_groups
 
@@ -1013,7 +1026,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_global_replication_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_global_replication_groups)
 
 Arguments mapping described in
-[DescribeGlobalReplicationGroupsMessageTypeDef](./type_defs.md#describeglobalreplicationgroupsmessagetypedef).
+[DescribeGlobalReplicationGroupsMessageRequestTypeDef](./type_defs.md#describeglobalreplicationgroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1023,7 +1036,7 @@ Keyword-only arguments:
 - `ShowMemberInfo`: `bool`
 
 Returns
-[DescribeGlobalReplicationGroupsResultResponseTypeDef](./type_defs.md#describeglobalreplicationgroupsresultresponsetypedef).
+[DescribeGlobalReplicationGroupsResultTypeDef](./type_defs.md#describeglobalreplicationgroupsresulttypedef).
 
 ### describe_replication_groups
 
@@ -1036,7 +1049,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_replication_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_replication_groups)
 
 Arguments mapping described in
-[DescribeReplicationGroupsMessageTypeDef](./type_defs.md#describereplicationgroupsmessagetypedef).
+[DescribeReplicationGroupsMessageRequestTypeDef](./type_defs.md#describereplicationgroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1045,7 +1058,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ReplicationGroupMessageResponseTypeDef](./type_defs.md#replicationgroupmessageresponsetypedef).
+[ReplicationGroupMessageTypeDef](./type_defs.md#replicationgroupmessagetypedef).
 
 ### describe_reserved_cache_nodes
 
@@ -1059,7 +1072,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_reserved_cache_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_reserved_cache_nodes)
 
 Arguments mapping described in
-[DescribeReservedCacheNodesMessageTypeDef](./type_defs.md#describereservedcachenodesmessagetypedef).
+[DescribeReservedCacheNodesMessageRequestTypeDef](./type_defs.md#describereservedcachenodesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1073,7 +1086,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ReservedCacheNodeMessageResponseTypeDef](./type_defs.md#reservedcachenodemessageresponsetypedef).
+[ReservedCacheNodeMessageTypeDef](./type_defs.md#reservedcachenodemessagetypedef).
 
 ### describe_reserved_cache_nodes_offerings
 
@@ -1086,7 +1099,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_reserved_cache_nodes_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_reserved_cache_nodes_offerings)
 
 Arguments mapping described in
-[DescribeReservedCacheNodesOfferingsMessageTypeDef](./type_defs.md#describereservedcachenodesofferingsmessagetypedef).
+[DescribeReservedCacheNodesOfferingsMessageRequestTypeDef](./type_defs.md#describereservedcachenodesofferingsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1099,7 +1112,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ReservedCacheNodesOfferingMessageResponseTypeDef](./type_defs.md#reservedcachenodesofferingmessageresponsetypedef).
+[ReservedCacheNodesOfferingMessageTypeDef](./type_defs.md#reservedcachenodesofferingmessagetypedef).
 
 ### describe_service_updates
 
@@ -1115,7 +1128,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_service_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_service_updates)
 
 Arguments mapping described in
-[DescribeServiceUpdatesMessageTypeDef](./type_defs.md#describeserviceupdatesmessagetypedef).
+[DescribeServiceUpdatesMessageRequestTypeDef](./type_defs.md#describeserviceupdatesmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1126,7 +1139,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ServiceUpdatesMessageResponseTypeDef](./type_defs.md#serviceupdatesmessageresponsetypedef).
+[ServiceUpdatesMessageTypeDef](./type_defs.md#serviceupdatesmessagetypedef).
 
 ### describe_snapshots
 
@@ -1138,7 +1151,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_snapshots)
 
 Arguments mapping described in
-[DescribeSnapshotsMessageTypeDef](./type_defs.md#describesnapshotsmessagetypedef).
+[DescribeSnapshotsMessageRequestTypeDef](./type_defs.md#describesnapshotsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1151,7 +1164,7 @@ Keyword-only arguments:
 - `ShowNodeGroupConfig`: `bool`
 
 Returns
-[DescribeSnapshotsListMessageResponseTypeDef](./type_defs.md#describesnapshotslistmessageresponsetypedef).
+[DescribeSnapshotsListMessageTypeDef](./type_defs.md#describesnapshotslistmessagetypedef).
 
 ### describe_update_actions
 
@@ -1167,7 +1180,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_update_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_update_actions)
 
 Arguments mapping described in
-[DescribeUpdateActionsMessageTypeDef](./type_defs.md#describeupdateactionsmessagetypedef).
+[DescribeUpdateActionsMessageRequestTypeDef](./type_defs.md#describeupdateactionsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1186,7 +1199,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[UpdateActionsMessageResponseTypeDef](./type_defs.md#updateactionsmessageresponsetypedef).
+[UpdateActionsMessageTypeDef](./type_defs.md#updateactionsmessagetypedef).
 
 ### describe_user_groups
 
@@ -1198,7 +1211,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_user_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_user_groups)
 
 Arguments mapping described in
-[DescribeUserGroupsMessageTypeDef](./type_defs.md#describeusergroupsmessagetypedef).
+[DescribeUserGroupsMessageRequestTypeDef](./type_defs.md#describeusergroupsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1207,7 +1220,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeUserGroupsResultResponseTypeDef](./type_defs.md#describeusergroupsresultresponsetypedef).
+[DescribeUserGroupsResultTypeDef](./type_defs.md#describeusergroupsresulttypedef).
 
 ### describe_users
 
@@ -1219,7 +1232,7 @@ Boto3 documentation:
 [ElastiCache.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.describe_users)
 
 Arguments mapping described in
-[DescribeUsersMessageTypeDef](./type_defs.md#describeusersmessagetypedef).
+[DescribeUsersMessageRequestTypeDef](./type_defs.md#describeusersmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1230,7 +1243,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeUsersResultResponseTypeDef](./type_defs.md#describeusersresultresponsetypedef).
+[DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef).
 
 ### disassociate_global_replication_group
 
@@ -1244,7 +1257,7 @@ Boto3 documentation:
 [ElastiCache.Client.disassociate_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.disassociate_global_replication_group)
 
 Arguments mapping described in
-[DisassociateGlobalReplicationGroupMessageTypeDef](./type_defs.md#disassociateglobalreplicationgroupmessagetypedef).
+[DisassociateGlobalReplicationGroupMessageRequestTypeDef](./type_defs.md#disassociateglobalreplicationgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1253,7 +1266,7 @@ Keyword-only arguments:
 - `ReplicationGroupRegion`: `str` *(required)*
 
 Returns
-[DisassociateGlobalReplicationGroupResultResponseTypeDef](./type_defs.md#disassociateglobalreplicationgroupresultresponsetypedef).
+[DisassociateGlobalReplicationGroupResultTypeDef](./type_defs.md#disassociateglobalreplicationgroupresulttypedef).
 
 ### failover_global_replication_group
 
@@ -1266,7 +1279,7 @@ Boto3 documentation:
 [ElastiCache.Client.failover_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.failover_global_replication_group)
 
 Arguments mapping described in
-[FailoverGlobalReplicationGroupMessageTypeDef](./type_defs.md#failoverglobalreplicationgroupmessagetypedef).
+[FailoverGlobalReplicationGroupMessageRequestTypeDef](./type_defs.md#failoverglobalreplicationgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1275,7 +1288,7 @@ Keyword-only arguments:
 - `PrimaryReplicationGroupId`: `str` *(required)*
 
 Returns
-[FailoverGlobalReplicationGroupResultResponseTypeDef](./type_defs.md#failoverglobalreplicationgroupresultresponsetypedef).
+[FailoverGlobalReplicationGroupResultTypeDef](./type_defs.md#failoverglobalreplicationgroupresulttypedef).
 
 ### generate_presigned_url
 
@@ -1311,7 +1324,7 @@ Boto3 documentation:
 [ElastiCache.Client.increase_node_groups_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.increase_node_groups_in_global_replication_group)
 
 Arguments mapping described in
-[IncreaseNodeGroupsInGlobalReplicationGroupMessageTypeDef](./type_defs.md#increasenodegroupsinglobalreplicationgroupmessagetypedef).
+[IncreaseNodeGroupsInGlobalReplicationGroupMessageRequestTypeDef](./type_defs.md#increasenodegroupsinglobalreplicationgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1322,7 +1335,7 @@ Keyword-only arguments:
   `List`\[[RegionalConfigurationTypeDef](./type_defs.md#regionalconfigurationtypedef)\]
 
 Returns
-[IncreaseNodeGroupsInGlobalReplicationGroupResultResponseTypeDef](./type_defs.md#increasenodegroupsinglobalreplicationgroupresultresponsetypedef).
+[IncreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](./type_defs.md#increasenodegroupsinglobalreplicationgroupresulttypedef).
 
 ### increase_replica_count
 
@@ -1337,7 +1350,7 @@ Boto3 documentation:
 [ElastiCache.Client.increase_replica_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.increase_replica_count)
 
 Arguments mapping described in
-[IncreaseReplicaCountMessageTypeDef](./type_defs.md#increasereplicacountmessagetypedef).
+[IncreaseReplicaCountMessageRequestTypeDef](./type_defs.md#increasereplicacountmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1348,7 +1361,7 @@ Keyword-only arguments:
   `List`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
 
 Returns
-[IncreaseReplicaCountResultResponseTypeDef](./type_defs.md#increasereplicacountresultresponsetypedef).
+[IncreaseReplicaCountResultTypeDef](./type_defs.md#increasereplicacountresulttypedef).
 
 ### list_allowed_node_type_modifications
 
@@ -1362,7 +1375,7 @@ Boto3 documentation:
 [ElastiCache.Client.list_allowed_node_type_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.list_allowed_node_type_modifications)
 
 Arguments mapping described in
-[ListAllowedNodeTypeModificationsMessageTypeDef](./type_defs.md#listallowednodetypemodificationsmessagetypedef).
+[ListAllowedNodeTypeModificationsMessageRequestTypeDef](./type_defs.md#listallowednodetypemodificationsmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1370,7 +1383,7 @@ Keyword-only arguments:
 - `ReplicationGroupId`: `str`
 
 Returns
-[AllowedNodeTypeModificationsMessageResponseTypeDef](./type_defs.md#allowednodetypemodificationsmessageresponsetypedef).
+[AllowedNodeTypeModificationsMessageTypeDef](./type_defs.md#allowednodetypemodificationsmessagetypedef).
 
 ### list_tags_for_resource
 
@@ -1383,14 +1396,13 @@ Boto3 documentation:
 [ElastiCache.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceMessageTypeDef](./type_defs.md#listtagsforresourcemessagetypedef).
+[ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 
-Returns
-[TagListMessageResponseTypeDef](./type_defs.md#taglistmessageresponsetypedef).
+Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
 ### modify_cache_cluster
 
@@ -1402,7 +1414,7 @@ Boto3 documentation:
 [ElastiCache.Client.modify_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_cache_cluster)
 
 Arguments mapping described in
-[ModifyCacheClusterMessageTypeDef](./type_defs.md#modifycacheclustermessagetypedef).
+[ModifyCacheClusterMessageRequestTypeDef](./type_defs.md#modifycacheclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1430,7 +1442,7 @@ Keyword-only arguments:
   `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 Returns
-[ModifyCacheClusterResultResponseTypeDef](./type_defs.md#modifycacheclusterresultresponsetypedef).
+[ModifyCacheClusterResultTypeDef](./type_defs.md#modifycacheclusterresulttypedef).
 
 ### modify_cache_parameter_group
 
@@ -1443,7 +1455,7 @@ Boto3 documentation:
 [ElastiCache.Client.modify_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_cache_parameter_group)
 
 Arguments mapping described in
-[ModifyCacheParameterGroupMessageTypeDef](./type_defs.md#modifycacheparametergroupmessagetypedef).
+[ModifyCacheParameterGroupMessageRequestTypeDef](./type_defs.md#modifycacheparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1453,7 +1465,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CacheParameterGroupNameMessageResponseTypeDef](./type_defs.md#cacheparametergroupnamemessageresponsetypedef).
+[CacheParameterGroupNameMessageTypeDef](./type_defs.md#cacheparametergroupnamemessagetypedef).
 
 ### modify_cache_subnet_group
 
@@ -1466,7 +1478,7 @@ Boto3 documentation:
 [ElastiCache.Client.modify_cache_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_cache_subnet_group)
 
 Arguments mapping described in
-[ModifyCacheSubnetGroupMessageTypeDef](./type_defs.md#modifycachesubnetgroupmessagetypedef).
+[ModifyCacheSubnetGroupMessageRequestTypeDef](./type_defs.md#modifycachesubnetgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1475,7 +1487,7 @@ Keyword-only arguments:
 - `SubnetIds`: `List`\[`str`\]
 
 Returns
-[ModifyCacheSubnetGroupResultResponseTypeDef](./type_defs.md#modifycachesubnetgroupresultresponsetypedef).
+[ModifyCacheSubnetGroupResultTypeDef](./type_defs.md#modifycachesubnetgroupresulttypedef).
 
 ### modify_global_replication_group
 
@@ -1488,7 +1500,7 @@ Boto3 documentation:
 [ElastiCache.Client.modify_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_global_replication_group)
 
 Arguments mapping described in
-[ModifyGlobalReplicationGroupMessageTypeDef](./type_defs.md#modifyglobalreplicationgroupmessagetypedef).
+[ModifyGlobalReplicationGroupMessageRequestTypeDef](./type_defs.md#modifyglobalreplicationgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1501,7 +1513,7 @@ Keyword-only arguments:
 - `AutomaticFailoverEnabled`: `bool`
 
 Returns
-[ModifyGlobalReplicationGroupResultResponseTypeDef](./type_defs.md#modifyglobalreplicationgroupresultresponsetypedef).
+[ModifyGlobalReplicationGroupResultTypeDef](./type_defs.md#modifyglobalreplicationgroupresulttypedef).
 
 ### modify_replication_group
 
@@ -1514,7 +1526,7 @@ Boto3 documentation:
 [ElastiCache.Client.modify_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_replication_group)
 
 Arguments mapping described in
-[ModifyReplicationGroupMessageTypeDef](./type_defs.md#modifyreplicationgroupmessagetypedef).
+[ModifyReplicationGroupMessageRequestTypeDef](./type_defs.md#modifyreplicationgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1547,7 +1559,7 @@ Keyword-only arguments:
   `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 Returns
-[ModifyReplicationGroupResultResponseTypeDef](./type_defs.md#modifyreplicationgroupresultresponsetypedef).
+[ModifyReplicationGroupResultTypeDef](./type_defs.md#modifyreplicationgroupresulttypedef).
 
 ### modify_replication_group_shard_configuration
 
@@ -1562,7 +1574,7 @@ Boto3 documentation:
 [ElastiCache.Client.modify_replication_group_shard_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_replication_group_shard_configuration)
 
 Arguments mapping described in
-[ModifyReplicationGroupShardConfigurationMessageTypeDef](./type_defs.md#modifyreplicationgroupshardconfigurationmessagetypedef).
+[ModifyReplicationGroupShardConfigurationMessageRequestTypeDef](./type_defs.md#modifyreplicationgroupshardconfigurationmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1575,7 +1587,7 @@ Keyword-only arguments:
 - `NodeGroupsToRetain`: `List`\[`str`\]
 
 Returns
-[ModifyReplicationGroupShardConfigurationResultResponseTypeDef](./type_defs.md#modifyreplicationgroupshardconfigurationresultresponsetypedef).
+[ModifyReplicationGroupShardConfigurationResultTypeDef](./type_defs.md#modifyreplicationgroupshardconfigurationresulttypedef).
 
 ### modify_user
 
@@ -1587,7 +1599,7 @@ Boto3 documentation:
 [ElastiCache.Client.modify_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_user)
 
 Arguments mapping described in
-[ModifyUserMessageTypeDef](./type_defs.md#modifyusermessagetypedef).
+[ModifyUserMessageRequestTypeDef](./type_defs.md#modifyusermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1597,7 +1609,8 @@ Keyword-only arguments:
 - `Passwords`: `List`\[`str`\]
 - `NoPasswordRequired`: `bool`
 
-Returns [UserResponseTypeDef](./type_defs.md#userresponsetypedef).
+Returns
+[UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef).
 
 ### modify_user_group
 
@@ -1609,7 +1622,7 @@ Boto3 documentation:
 [ElastiCache.Client.modify_user_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.modify_user_group)
 
 Arguments mapping described in
-[ModifyUserGroupMessageTypeDef](./type_defs.md#modifyusergroupmessagetypedef).
+[ModifyUserGroupMessageRequestTypeDef](./type_defs.md#modifyusergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1617,7 +1630,8 @@ Keyword-only arguments:
 - `UserIdsToAdd`: `List`\[`str`\]
 - `UserIdsToRemove`: `List`\[`str`\]
 
-Returns [UserGroupResponseTypeDef](./type_defs.md#usergroupresponsetypedef).
+Returns
+[UserGroupResponseMetadataTypeDef](./type_defs.md#usergroupresponsemetadatatypedef).
 
 ### purchase_reserved_cache_nodes_offering
 
@@ -1630,7 +1644,7 @@ Boto3 documentation:
 [ElastiCache.Client.purchase_reserved_cache_nodes_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.purchase_reserved_cache_nodes_offering)
 
 Arguments mapping described in
-[PurchaseReservedCacheNodesOfferingMessageTypeDef](./type_defs.md#purchasereservedcachenodesofferingmessagetypedef).
+[PurchaseReservedCacheNodesOfferingMessageRequestTypeDef](./type_defs.md#purchasereservedcachenodesofferingmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1640,7 +1654,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PurchaseReservedCacheNodesOfferingResultResponseTypeDef](./type_defs.md#purchasereservedcachenodesofferingresultresponsetypedef).
+[PurchaseReservedCacheNodesOfferingResultTypeDef](./type_defs.md#purchasereservedcachenodesofferingresulttypedef).
 
 ### rebalance_slots_in_global_replication_group
 
@@ -1655,7 +1669,7 @@ Boto3 documentation:
 [ElastiCache.Client.rebalance_slots_in_global_replication_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.rebalance_slots_in_global_replication_group)
 
 Arguments mapping described in
-[RebalanceSlotsInGlobalReplicationGroupMessageTypeDef](./type_defs.md#rebalanceslotsinglobalreplicationgroupmessagetypedef).
+[RebalanceSlotsInGlobalReplicationGroupMessageRequestTypeDef](./type_defs.md#rebalanceslotsinglobalreplicationgroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1663,7 +1677,7 @@ Keyword-only arguments:
 - `ApplyImmediately`: `bool` *(required)*
 
 Returns
-[RebalanceSlotsInGlobalReplicationGroupResultResponseTypeDef](./type_defs.md#rebalanceslotsinglobalreplicationgroupresultresponsetypedef).
+[RebalanceSlotsInGlobalReplicationGroupResultTypeDef](./type_defs.md#rebalanceslotsinglobalreplicationgroupresulttypedef).
 
 ### reboot_cache_cluster
 
@@ -1675,7 +1689,7 @@ Boto3 documentation:
 [ElastiCache.Client.reboot_cache_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.reboot_cache_cluster)
 
 Arguments mapping described in
-[RebootCacheClusterMessageTypeDef](./type_defs.md#rebootcacheclustermessagetypedef).
+[RebootCacheClusterMessageRequestTypeDef](./type_defs.md#rebootcacheclustermessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1683,7 +1697,7 @@ Keyword-only arguments:
 - `CacheNodeIdsToReboot`: `List`\[`str`\] *(required)*
 
 Returns
-[RebootCacheClusterResultResponseTypeDef](./type_defs.md#rebootcacheclusterresultresponsetypedef).
+[RebootCacheClusterResultTypeDef](./type_defs.md#rebootcacheclusterresulttypedef).
 
 ### remove_tags_from_resource
 
@@ -1696,15 +1710,14 @@ Boto3 documentation:
 [ElastiCache.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.remove_tags_from_resource)
 
 Arguments mapping described in
-[RemoveTagsFromResourceMessageTypeDef](./type_defs.md#removetagsfromresourcemessagetypedef).
+[RemoveTagsFromResourceMessageRequestTypeDef](./type_defs.md#removetagsfromresourcemessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `TagKeys`: `List`\[`str`\] *(required)*
 
-Returns
-[TagListMessageResponseTypeDef](./type_defs.md#taglistmessageresponsetypedef).
+Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
 ### reset_cache_parameter_group
 
@@ -1718,7 +1731,7 @@ Boto3 documentation:
 [ElastiCache.Client.reset_cache_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.reset_cache_parameter_group)
 
 Arguments mapping described in
-[ResetCacheParameterGroupMessageTypeDef](./type_defs.md#resetcacheparametergroupmessagetypedef).
+[ResetCacheParameterGroupMessageRequestTypeDef](./type_defs.md#resetcacheparametergroupmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1728,7 +1741,7 @@ Keyword-only arguments:
   `List`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
 
 Returns
-[CacheParameterGroupNameMessageResponseTypeDef](./type_defs.md#cacheparametergroupnamemessageresponsetypedef).
+[CacheParameterGroupNameMessageTypeDef](./type_defs.md#cacheparametergroupnamemessagetypedef).
 
 ### revoke_cache_security_group_ingress
 
@@ -1741,7 +1754,7 @@ Boto3 documentation:
 [ElastiCache.Client.revoke_cache_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.revoke_cache_security_group_ingress)
 
 Arguments mapping described in
-[RevokeCacheSecurityGroupIngressMessageTypeDef](./type_defs.md#revokecachesecuritygroupingressmessagetypedef).
+[RevokeCacheSecurityGroupIngressMessageRequestTypeDef](./type_defs.md#revokecachesecuritygroupingressmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1750,7 +1763,7 @@ Keyword-only arguments:
 - `EC2SecurityGroupOwnerId`: `str` *(required)*
 
 Returns
-[RevokeCacheSecurityGroupIngressResultResponseTypeDef](./type_defs.md#revokecachesecuritygroupingressresultresponsetypedef).
+[RevokeCacheSecurityGroupIngressResultTypeDef](./type_defs.md#revokecachesecuritygroupingressresulttypedef).
 
 ### start_migration
 
@@ -1762,7 +1775,7 @@ Boto3 documentation:
 [ElastiCache.Client.start_migration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.start_migration)
 
 Arguments mapping described in
-[StartMigrationMessageTypeDef](./type_defs.md#startmigrationmessagetypedef).
+[StartMigrationMessageRequestTypeDef](./type_defs.md#startmigrationmessagerequesttypedef).
 
 Keyword-only arguments:
 
@@ -1772,7 +1785,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[StartMigrationResponseResponseTypeDef](./type_defs.md#startmigrationresponseresponsetypedef).
+[StartMigrationResponseTypeDef](./type_defs.md#startmigrationresponsetypedef).
 
 ### test_failover
 
@@ -1786,15 +1799,14 @@ Boto3 documentation:
 [ElastiCache.Client.test_failover](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.test_failover)
 
 Arguments mapping described in
-[TestFailoverMessageTypeDef](./type_defs.md#testfailovermessagetypedef).
+[TestFailoverMessageRequestTypeDef](./type_defs.md#testfailovermessagerequesttypedef).
 
 Keyword-only arguments:
 
 - `ReplicationGroupId`: `str` *(required)*
 - `NodeGroupId`: `str` *(required)*
 
-Returns
-[TestFailoverResultResponseTypeDef](./type_defs.md#testfailoverresultresponsetypedef).
+Returns [TestFailoverResultTypeDef](./type_defs.md#testfailoverresulttypedef).
 
 ### get_paginator
 

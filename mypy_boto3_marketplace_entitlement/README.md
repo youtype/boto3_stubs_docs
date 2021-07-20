@@ -33,6 +33,7 @@ from mypy_boto3_marketplace_entitlement.client import MarketplaceEntitlementServ
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_entitlements](./client.md#get_entitlements)
 - [get_paginator](./client.md#get_paginator)
@@ -85,7 +86,7 @@ from mypy_boto3_marketplace_entitlement.type_defs import EntitlementTypeDef, ...
 
 - [EntitlementTypeDef](./type_defs.md#entitlementtypedef)
 - [EntitlementValueTypeDef](./type_defs.md#entitlementvaluetypedef)
-- [GetEntitlementsRequestTypeDef](./type_defs.md#getentitlementsrequesttypedef)
-- [GetEntitlementsResultResponseTypeDef](./type_defs.md#getentitlementsresultresponsetypedef)
+- [GetEntitlementsRequestRequestTypeDef](./type_defs.md#getentitlementsrequestrequesttypedef)
+- [GetEntitlementsResultTypeDef](./type_defs.md#getentitlementsresulttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

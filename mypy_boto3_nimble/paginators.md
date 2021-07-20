@@ -43,7 +43,7 @@ Arguments for `ListEulaAcceptancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEulaAcceptancesPaginator.paginate` returns
-`Iterator`\[[ListEulaAcceptancesResponseResponseTypeDef](./type_defs.md#listeulaacceptancesresponseresponsetypedef)\].
+`Iterator`\[[ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef)\].
 
 ## ListEulasPaginator
 
@@ -68,7 +68,7 @@ Arguments for `ListEulasPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEulasPaginator.paginate` returns
-`Iterator`\[[ListEulasResponseResponseTypeDef](./type_defs.md#listeulasresponseresponsetypedef)\].
+`Iterator`\[[ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef)\].
 
 ## ListLaunchProfileMembersPaginator
 
@@ -95,7 +95,7 @@ Arguments for `ListLaunchProfileMembersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLaunchProfileMembersPaginator.paginate` returns
-`Iterator`\[[ListLaunchProfileMembersResponseResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponseresponsetypedef)\].
+`Iterator`\[[ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef)\].
 
 ## ListLaunchProfilesPaginator
 
@@ -123,7 +123,7 @@ Arguments for `ListLaunchProfilesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLaunchProfilesPaginator.paginate` returns
-`Iterator`\[[ListLaunchProfilesResponseResponseTypeDef](./type_defs.md#listlaunchprofilesresponseresponsetypedef)\].
+`Iterator`\[[ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef)\].
 
 ## ListStreamingImagesPaginator
 
@@ -150,7 +150,7 @@ Arguments for `ListStreamingImagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamingImagesPaginator.paginate` returns
-`Iterator`\[[ListStreamingImagesResponseResponseTypeDef](./type_defs.md#liststreamingimagesresponseresponsetypedef)\].
+`Iterator`\[[ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef)\].
 
 ## ListStreamingSessionsPaginator
 
@@ -178,7 +178,7 @@ Arguments for `ListStreamingSessionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamingSessionsPaginator.paginate` returns
-`Iterator`\[[ListStreamingSessionsResponseResponseTypeDef](./type_defs.md#liststreamingsessionsresponseresponsetypedef)\].
+`Iterator`\[[ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef)\].
 
 ## ListStudioComponentsPaginator
 
@@ -206,7 +206,7 @@ Arguments for `ListStudioComponentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStudioComponentsPaginator.paginate` returns
-`Iterator`\[[ListStudioComponentsResponseResponseTypeDef](./type_defs.md#liststudiocomponentsresponseresponsetypedef)\].
+`Iterator`\[[ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef)\].
 
 ## ListStudioMembersPaginator
 
@@ -232,7 +232,7 @@ Arguments for `ListStudioMembersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStudioMembersPaginator.paginate` returns
-`Iterator`\[[ListStudioMembersResponseResponseTypeDef](./type_defs.md#liststudiomembersresponseresponsetypedef)\].
+`Iterator`\[[ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef)\].
 
 ## ListStudiosPaginator
 
@@ -256,4 +256,4 @@ Arguments for `ListStudiosPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStudiosPaginator.paginate` returns
-`Iterator`\[[ListStudiosResponseResponseTypeDef](./type_defs.md#liststudiosresponseresponsetypedef)\].
+`Iterator`\[[ListStudiosResponseTypeDef](./type_defs.md#liststudiosresponsetypedef)\].

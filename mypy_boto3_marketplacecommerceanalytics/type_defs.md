@@ -8,16 +8,16 @@ type annotations stubs module
 [mypy_boto3_marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
 
 - [Typed dictionaries for boto3 MarketplaceCommerceAnalytics module](#typed-dictionaries-for-boto3-marketplacecommerceanalytics-module)
-  - [GenerateDataSetRequestTypeDef](#generatedatasetrequesttypedef)
-  - [GenerateDataSetResultResponseTypeDef](#generatedatasetresultresponsetypedef)
+  - [GenerateDataSetRequestRequestTypeDef](#generatedatasetrequestrequesttypedef)
+  - [GenerateDataSetResultTypeDef](#generatedatasetresulttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartSupportDataExportRequestTypeDef](#startsupportdataexportrequesttypedef)
-  - [StartSupportDataExportResultResponseTypeDef](#startsupportdataexportresultresponsetypedef)
+  - [StartSupportDataExportRequestRequestTypeDef](#startsupportdataexportrequestrequesttypedef)
+  - [StartSupportDataExportResultTypeDef](#startsupportdataexportresulttypedef)
 
-## GenerateDataSetRequestTypeDef
+## GenerateDataSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetRequestTypeDef
+from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -33,10 +33,10 @@ Optional fields:
 - `destinationS3Prefix`: `str`
 - `customerDefinedValues`: `Dict`\[`str`, `str`\]
 
-## GenerateDataSetResultResponseTypeDef
+## GenerateDataSetResultTypeDef
 
 ```python
-from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetResultResponseTypeDef
+from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetResultTypeDef
 ```
 
 Required fields:
@@ -59,10 +59,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## StartSupportDataExportRequestTypeDef
+## StartSupportDataExportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_marketplacecommerceanalytics.type_defs import StartSupportDataExportRequestTypeDef
+from mypy_boto3_marketplacecommerceanalytics.type_defs import StartSupportDataExportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -78,10 +78,10 @@ Optional fields:
 - `destinationS3Prefix`: `str`
 - `customerDefinedValues`: `Dict`\[`str`, `str`\]
 
-## StartSupportDataExportResultResponseTypeDef
+## StartSupportDataExportResultTypeDef
 
 ```python
-from mypy_boto3_marketplacecommerceanalytics.type_defs import StartSupportDataExportResultResponseTypeDef
+from mypy_boto3_marketplacecommerceanalytics.type_defs import StartSupportDataExportResultTypeDef
 ```
 
 Required fields:

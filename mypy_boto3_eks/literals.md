@@ -19,6 +19,8 @@ type annotations stubs module
   - [ClusterStatusType](#clusterstatustype)
   - [DescribeAddonVersionsPaginatorName](#describeaddonversionspaginatorname)
   - [ErrorCodeType](#errorcodetype)
+  - [FargateProfileActiveWaiterName](#fargateprofileactivewaitername)
+  - [FargateProfileDeletedWaiterName](#fargateprofiledeletedwaitername)
   - [FargateProfileStatusType](#fargateprofilestatustype)
   - [ListAddonsPaginatorName](#listaddonspaginatorname)
   - [ListClustersPaginatorName](#listclusterspaginatorname)
@@ -85,6 +87,7 @@ Values:
 - `ConfigurationConflict`
 - `InsufficientNumberOfReplicas`
 - `InternalFailure`
+- `UnsupportedAddonModification`
 
 ## AddonStatusType
 
@@ -179,7 +182,28 @@ Values:
 - `SecurityGroupNotFound`
 - `SubnetNotFound`
 - `Unknown`
+- `UnsupportedAddonModification`
 - `VpcIdNotFound`
+
+## FargateProfileActiveWaiterName
+
+```python
+from mypy_boto3_eks.literals import FargateProfileActiveWaiterName
+```
+
+Values:
+
+- `fargate_profile_active`
+
+## FargateProfileDeletedWaiterName
+
+```python
+from mypy_boto3_eks.literals import FargateProfileDeletedWaiterName
+```
+
+Values:
+
+- `fargate_profile_deleted`
 
 ## FargateProfileStatusType
 

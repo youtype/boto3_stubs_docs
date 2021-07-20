@@ -11,6 +11,7 @@ type annotations stubs module
   - [SMSClient](#smsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_app](#create_app)
     - [create_replication_job](#create_replication_job)
@@ -96,6 +97,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SMSClient exceptions.
+
+Type annotations for `boto3.client("sms").exceptions` method.
+
+Boto3 documentation:
+[SMS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -121,7 +133,7 @@ Boto3 documentation:
 [SMS.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_app)
 
 Arguments mapping described in
-[CreateAppRequestTypeDef](./type_defs.md#createapprequesttypedef).
+[CreateAppRequestRequestTypeDef](./type_defs.md#createapprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -133,8 +145,7 @@ Keyword-only arguments:
   `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateAppResponseResponseTypeDef](./type_defs.md#createappresponseresponsetypedef).
+Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
 
 ### create_replication_job
 
@@ -146,7 +157,7 @@ Boto3 documentation:
 [SMS.Client.create_replication_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_replication_job)
 
 Arguments mapping described in
-[CreateReplicationJobRequestTypeDef](./type_defs.md#createreplicationjobrequesttypedef).
+[CreateReplicationJobRequestRequestTypeDef](./type_defs.md#createreplicationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -162,7 +173,7 @@ Keyword-only arguments:
 - `kmsKeyId`: `str`
 
 Returns
-[CreateReplicationJobResponseResponseTypeDef](./type_defs.md#createreplicationjobresponseresponsetypedef).
+[CreateReplicationJobResponseTypeDef](./type_defs.md#createreplicationjobresponsetypedef).
 
 ### delete_app
 
@@ -174,7 +185,7 @@ Boto3 documentation:
 [SMS.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app)
 
 Arguments mapping described in
-[DeleteAppRequestTypeDef](./type_defs.md#deleteapprequesttypedef).
+[DeleteAppRequestRequestTypeDef](./type_defs.md#deleteapprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -195,7 +206,7 @@ Boto3 documentation:
 [SMS.Client.delete_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_launch_configuration)
 
 Arguments mapping described in
-[DeleteAppLaunchConfigurationRequestTypeDef](./type_defs.md#deleteapplaunchconfigurationrequesttypedef).
+[DeleteAppLaunchConfigurationRequestRequestTypeDef](./type_defs.md#deleteapplaunchconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -214,7 +225,7 @@ Boto3 documentation:
 [SMS.Client.delete_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_replication_configuration)
 
 Arguments mapping described in
-[DeleteAppReplicationConfigurationRequestTypeDef](./type_defs.md#deleteappreplicationconfigurationrequesttypedef).
+[DeleteAppReplicationConfigurationRequestRequestTypeDef](./type_defs.md#deleteappreplicationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -233,7 +244,7 @@ Boto3 documentation:
 [SMS.Client.delete_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_validation_configuration)
 
 Arguments mapping described in
-[DeleteAppValidationConfigurationRequestTypeDef](./type_defs.md#deleteappvalidationconfigurationrequesttypedef).
+[DeleteAppValidationConfigurationRequestRequestTypeDef](./type_defs.md#deleteappvalidationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,7 +262,7 @@ Boto3 documentation:
 [SMS.Client.delete_replication_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_replication_job)
 
 Arguments mapping described in
-[DeleteReplicationJobRequestTypeDef](./type_defs.md#deletereplicationjobrequesttypedef).
+[DeleteReplicationJobRequestRequestTypeDef](./type_defs.md#deletereplicationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -280,7 +291,7 @@ Boto3 documentation:
 [SMS.Client.disassociate_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.disassociate_connector)
 
 Arguments mapping described in
-[DisassociateConnectorRequestTypeDef](./type_defs.md#disassociateconnectorrequesttypedef).
+[DisassociateConnectorRequestRequestTypeDef](./type_defs.md#disassociateconnectorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -299,7 +310,7 @@ Boto3 documentation:
 [SMS.Client.generate_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_change_set)
 
 Arguments mapping described in
-[GenerateChangeSetRequestTypeDef](./type_defs.md#generatechangesetrequesttypedef).
+[GenerateChangeSetRequestRequestTypeDef](./type_defs.md#generatechangesetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,7 +318,7 @@ Keyword-only arguments:
 - `changesetFormat`: [OutputFormatType](./literals.md#outputformattype)
 
 Returns
-[GenerateChangeSetResponseResponseTypeDef](./type_defs.md#generatechangesetresponseresponsetypedef).
+[GenerateChangeSetResponseTypeDef](./type_defs.md#generatechangesetresponsetypedef).
 
 ### generate_presigned_url
 
@@ -339,7 +350,7 @@ Boto3 documentation:
 [SMS.Client.generate_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_template)
 
 Arguments mapping described in
-[GenerateTemplateRequestTypeDef](./type_defs.md#generatetemplaterequesttypedef).
+[GenerateTemplateRequestRequestTypeDef](./type_defs.md#generatetemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -347,7 +358,7 @@ Keyword-only arguments:
 - `templateFormat`: [OutputFormatType](./literals.md#outputformattype)
 
 Returns
-[GenerateTemplateResponseResponseTypeDef](./type_defs.md#generatetemplateresponseresponsetypedef).
+[GenerateTemplateResponseTypeDef](./type_defs.md#generatetemplateresponsetypedef).
 
 ### get_app
 
@@ -359,14 +370,13 @@ Boto3 documentation:
 [SMS.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app)
 
 Arguments mapping described in
-[GetAppRequestTypeDef](./type_defs.md#getapprequesttypedef).
+[GetAppRequestRequestTypeDef](./type_defs.md#getapprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `appId`: `str`
 
-Returns
-[GetAppResponseResponseTypeDef](./type_defs.md#getappresponseresponsetypedef).
+Returns [GetAppResponseTypeDef](./type_defs.md#getappresponsetypedef).
 
 ### get_app_launch_configuration
 
@@ -379,14 +389,14 @@ Boto3 documentation:
 [SMS.Client.get_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_launch_configuration)
 
 Arguments mapping described in
-[GetAppLaunchConfigurationRequestTypeDef](./type_defs.md#getapplaunchconfigurationrequesttypedef).
+[GetAppLaunchConfigurationRequestRequestTypeDef](./type_defs.md#getapplaunchconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `appId`: `str`
 
 Returns
-[GetAppLaunchConfigurationResponseResponseTypeDef](./type_defs.md#getapplaunchconfigurationresponseresponsetypedef).
+[GetAppLaunchConfigurationResponseTypeDef](./type_defs.md#getapplaunchconfigurationresponsetypedef).
 
 ### get_app_replication_configuration
 
@@ -400,14 +410,14 @@ Boto3 documentation:
 [SMS.Client.get_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_replication_configuration)
 
 Arguments mapping described in
-[GetAppReplicationConfigurationRequestTypeDef](./type_defs.md#getappreplicationconfigurationrequesttypedef).
+[GetAppReplicationConfigurationRequestRequestTypeDef](./type_defs.md#getappreplicationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `appId`: `str`
 
 Returns
-[GetAppReplicationConfigurationResponseResponseTypeDef](./type_defs.md#getappreplicationconfigurationresponseresponsetypedef).
+[GetAppReplicationConfigurationResponseTypeDef](./type_defs.md#getappreplicationconfigurationresponsetypedef).
 
 ### get_app_validation_configuration
 
@@ -420,14 +430,14 @@ Boto3 documentation:
 [SMS.Client.get_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_validation_configuration)
 
 Arguments mapping described in
-[GetAppValidationConfigurationRequestTypeDef](./type_defs.md#getappvalidationconfigurationrequesttypedef).
+[GetAppValidationConfigurationRequestRequestTypeDef](./type_defs.md#getappvalidationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 
 Returns
-[GetAppValidationConfigurationResponseResponseTypeDef](./type_defs.md#getappvalidationconfigurationresponseresponsetypedef).
+[GetAppValidationConfigurationResponseTypeDef](./type_defs.md#getappvalidationconfigurationresponsetypedef).
 
 ### get_app_validation_output
 
@@ -439,14 +449,14 @@ Boto3 documentation:
 [SMS.Client.get_app_validation_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_validation_output)
 
 Arguments mapping described in
-[GetAppValidationOutputRequestTypeDef](./type_defs.md#getappvalidationoutputrequesttypedef).
+[GetAppValidationOutputRequestRequestTypeDef](./type_defs.md#getappvalidationoutputrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 
 Returns
-[GetAppValidationOutputResponseResponseTypeDef](./type_defs.md#getappvalidationoutputresponseresponsetypedef).
+[GetAppValidationOutputResponseTypeDef](./type_defs.md#getappvalidationoutputresponsetypedef).
 
 ### get_connectors
 
@@ -458,7 +468,7 @@ Boto3 documentation:
 [SMS.Client.get_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_connectors)
 
 Arguments mapping described in
-[GetConnectorsRequestTypeDef](./type_defs.md#getconnectorsrequesttypedef).
+[GetConnectorsRequestRequestTypeDef](./type_defs.md#getconnectorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -466,7 +476,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetConnectorsResponseResponseTypeDef](./type_defs.md#getconnectorsresponseresponsetypedef).
+[GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef).
 
 ### get_replication_jobs
 
@@ -478,7 +488,7 @@ Boto3 documentation:
 [SMS.Client.get_replication_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_jobs)
 
 Arguments mapping described in
-[GetReplicationJobsRequestTypeDef](./type_defs.md#getreplicationjobsrequesttypedef).
+[GetReplicationJobsRequestRequestTypeDef](./type_defs.md#getreplicationjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -487,7 +497,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetReplicationJobsResponseResponseTypeDef](./type_defs.md#getreplicationjobsresponseresponsetypedef).
+[GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef).
 
 ### get_replication_runs
 
@@ -499,7 +509,7 @@ Boto3 documentation:
 [SMS.Client.get_replication_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_runs)
 
 Arguments mapping described in
-[GetReplicationRunsRequestTypeDef](./type_defs.md#getreplicationrunsrequesttypedef).
+[GetReplicationRunsRequestRequestTypeDef](./type_defs.md#getreplicationrunsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -508,7 +518,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetReplicationRunsResponseResponseTypeDef](./type_defs.md#getreplicationrunsresponseresponsetypedef).
+[GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef).
 
 ### get_servers
 
@@ -520,7 +530,7 @@ Boto3 documentation:
 [SMS.Client.get_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_servers)
 
 Arguments mapping described in
-[GetServersRequestTypeDef](./type_defs.md#getserversrequesttypedef).
+[GetServersRequestRequestTypeDef](./type_defs.md#getserversrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -529,8 +539,7 @@ Keyword-only arguments:
 - `vmServerAddressList`:
   `List`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
 
-Returns
-[GetServersResponseResponseTypeDef](./type_defs.md#getserversresponseresponsetypedef).
+Returns [GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef).
 
 ### import_app_catalog
 
@@ -542,7 +551,7 @@ Boto3 documentation:
 [SMS.Client.import_app_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.import_app_catalog)
 
 Arguments mapping described in
-[ImportAppCatalogRequestTypeDef](./type_defs.md#importappcatalogrequesttypedef).
+[ImportAppCatalogRequestRequestTypeDef](./type_defs.md#importappcatalogrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -571,7 +580,7 @@ Boto3 documentation:
 [SMS.Client.launch_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.launch_app)
 
 Arguments mapping described in
-[LaunchAppRequestTypeDef](./type_defs.md#launchapprequesttypedef).
+[LaunchAppRequestRequestTypeDef](./type_defs.md#launchapprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -589,7 +598,7 @@ Boto3 documentation:
 [SMS.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.list_apps)
 
 Arguments mapping described in
-[ListAppsRequestTypeDef](./type_defs.md#listappsrequesttypedef).
+[ListAppsRequestRequestTypeDef](./type_defs.md#listappsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -597,8 +606,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[ListAppsResponseResponseTypeDef](./type_defs.md#listappsresponseresponsetypedef).
+Returns [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef).
 
 ### notify_app_validation_output
 
@@ -611,7 +619,7 @@ Boto3 documentation:
 [SMS.Client.notify_app_validation_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.notify_app_validation_output)
 
 Arguments mapping described in
-[NotifyAppValidationOutputRequestTypeDef](./type_defs.md#notifyappvalidationoutputrequesttypedef).
+[NotifyAppValidationOutputRequestRequestTypeDef](./type_defs.md#notifyappvalidationoutputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -631,7 +639,7 @@ Boto3 documentation:
 [SMS.Client.put_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_launch_configuration)
 
 Arguments mapping described in
-[PutAppLaunchConfigurationRequestTypeDef](./type_defs.md#putapplaunchconfigurationrequesttypedef).
+[PutAppLaunchConfigurationRequestRequestTypeDef](./type_defs.md#putapplaunchconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -654,7 +662,7 @@ Boto3 documentation:
 [SMS.Client.put_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_replication_configuration)
 
 Arguments mapping described in
-[PutAppReplicationConfigurationRequestTypeDef](./type_defs.md#putappreplicationconfigurationrequesttypedef).
+[PutAppReplicationConfigurationRequestRequestTypeDef](./type_defs.md#putappreplicationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -675,7 +683,7 @@ Boto3 documentation:
 [SMS.Client.put_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_validation_configuration)
 
 Arguments mapping described in
-[PutAppValidationConfigurationRequestTypeDef](./type_defs.md#putappvalidationconfigurationrequesttypedef).
+[PutAppValidationConfigurationRequestRequestTypeDef](./type_defs.md#putappvalidationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -698,7 +706,7 @@ Boto3 documentation:
 [SMS.Client.start_app_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_app_replication)
 
 Arguments mapping described in
-[StartAppReplicationRequestTypeDef](./type_defs.md#startappreplicationrequesttypedef).
+[StartAppReplicationRequestRequestTypeDef](./type_defs.md#startappreplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -717,7 +725,7 @@ Boto3 documentation:
 [SMS.Client.start_on_demand_app_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_on_demand_app_replication)
 
 Arguments mapping described in
-[StartOnDemandAppReplicationRequestTypeDef](./type_defs.md#startondemandappreplicationrequesttypedef).
+[StartOnDemandAppReplicationRequestRequestTypeDef](./type_defs.md#startondemandappreplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -737,7 +745,7 @@ Boto3 documentation:
 [SMS.Client.start_on_demand_replication_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_on_demand_replication_run)
 
 Arguments mapping described in
-[StartOnDemandReplicationRunRequestTypeDef](./type_defs.md#startondemandreplicationrunrequesttypedef).
+[StartOnDemandReplicationRunRequestRequestTypeDef](./type_defs.md#startondemandreplicationrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -745,7 +753,7 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns
-[StartOnDemandReplicationRunResponseResponseTypeDef](./type_defs.md#startondemandreplicationrunresponseresponsetypedef).
+[StartOnDemandReplicationRunResponseTypeDef](./type_defs.md#startondemandreplicationrunresponsetypedef).
 
 ### stop_app_replication
 
@@ -758,7 +766,7 @@ Boto3 documentation:
 [SMS.Client.stop_app_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.stop_app_replication)
 
 Arguments mapping described in
-[StopAppReplicationRequestTypeDef](./type_defs.md#stopappreplicationrequesttypedef).
+[StopAppReplicationRequestRequestTypeDef](./type_defs.md#stopappreplicationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -776,7 +784,7 @@ Boto3 documentation:
 [SMS.Client.terminate_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.terminate_app)
 
 Arguments mapping described in
-[TerminateAppRequestTypeDef](./type_defs.md#terminateapprequesttypedef).
+[TerminateAppRequestRequestTypeDef](./type_defs.md#terminateapprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -794,7 +802,7 @@ Boto3 documentation:
 [SMS.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_app)
 
 Arguments mapping described in
-[UpdateAppRequestTypeDef](./type_defs.md#updateapprequesttypedef).
+[UpdateAppRequestRequestTypeDef](./type_defs.md#updateapprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -806,8 +814,7 @@ Keyword-only arguments:
   `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[UpdateAppResponseResponseTypeDef](./type_defs.md#updateappresponseresponsetypedef).
+Returns [UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef).
 
 ### update_replication_job
 
@@ -819,7 +826,7 @@ Boto3 documentation:
 [SMS.Client.update_replication_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_replication_job)
 
 Arguments mapping described in
-[UpdateReplicationJobRequestTypeDef](./type_defs.md#updatereplicationjobrequesttypedef).
+[UpdateReplicationJobRequestRequestTypeDef](./type_defs.md#updatereplicationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 

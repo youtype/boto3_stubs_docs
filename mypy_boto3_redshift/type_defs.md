@@ -8,256 +8,274 @@ type annotations stubs module
 [mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 - [Typed dictionaries for boto3 Redshift module](#typed-dictionaries-for-boto3-redshift-module)
-  - [AcceptReservedNodeExchangeInputMessageTypeDef](#acceptreservednodeexchangeinputmessagetypedef)
-  - [AcceptReservedNodeExchangeOutputMessageResponseTypeDef](#acceptreservednodeexchangeoutputmessageresponsetypedef)
-  - [AccountAttributeListResponseTypeDef](#accountattributelistresponsetypedef)
+  - [AcceptReservedNodeExchangeInputMessageRequestTypeDef](#acceptreservednodeexchangeinputmessagerequesttypedef)
+  - [AcceptReservedNodeExchangeOutputMessageTypeDef](#acceptreservednodeexchangeoutputmessagetypedef)
+  - [AccountAttributeListTypeDef](#accountattributelisttypedef)
   - [AccountAttributeTypeDef](#accountattributetypedef)
   - [AccountWithRestoreAccessTypeDef](#accountwithrestoreaccesstypedef)
   - [AquaConfigurationTypeDef](#aquaconfigurationtypedef)
   - [AttributeValueTargetTypeDef](#attributevaluetargettypedef)
-  - [AuthorizeClusterSecurityGroupIngressMessageTypeDef](#authorizeclustersecuritygroupingressmessagetypedef)
-  - [AuthorizeClusterSecurityGroupIngressResultResponseTypeDef](#authorizeclustersecuritygroupingressresultresponsetypedef)
-  - [AuthorizeEndpointAccessMessageTypeDef](#authorizeendpointaccessmessagetypedef)
-  - [AuthorizeSnapshotAccessMessageTypeDef](#authorizesnapshotaccessmessagetypedef)
-  - [AuthorizeSnapshotAccessResultResponseTypeDef](#authorizesnapshotaccessresultresponsetypedef)
+  - [AuthenticationProfileTypeDef](#authenticationprofiletypedef)
+  - [AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef](#authorizeclustersecuritygroupingressmessagerequesttypedef)
+  - [AuthorizeClusterSecurityGroupIngressResultTypeDef](#authorizeclustersecuritygroupingressresulttypedef)
+  - [AuthorizeEndpointAccessMessageRequestTypeDef](#authorizeendpointaccessmessagerequesttypedef)
+  - [AuthorizeSnapshotAccessMessageRequestTypeDef](#authorizesnapshotaccessmessagerequesttypedef)
+  - [AuthorizeSnapshotAccessResultTypeDef](#authorizesnapshotaccessresulttypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
-  - [BatchDeleteClusterSnapshotsRequestTypeDef](#batchdeleteclustersnapshotsrequesttypedef)
-  - [BatchDeleteClusterSnapshotsResultResponseTypeDef](#batchdeleteclustersnapshotsresultresponsetypedef)
-  - [BatchModifyClusterSnapshotsMessageTypeDef](#batchmodifyclustersnapshotsmessagetypedef)
-  - [BatchModifyClusterSnapshotsOutputMessageResponseTypeDef](#batchmodifyclustersnapshotsoutputmessageresponsetypedef)
-  - [CancelResizeMessageTypeDef](#cancelresizemessagetypedef)
+  - [BatchDeleteClusterSnapshotsRequestRequestTypeDef](#batchdeleteclustersnapshotsrequestrequesttypedef)
+  - [BatchDeleteClusterSnapshotsResultTypeDef](#batchdeleteclustersnapshotsresulttypedef)
+  - [BatchModifyClusterSnapshotsMessageRequestTypeDef](#batchmodifyclustersnapshotsmessagerequesttypedef)
+  - [BatchModifyClusterSnapshotsOutputMessageTypeDef](#batchmodifyclustersnapshotsoutputmessagetypedef)
+  - [CancelResizeMessageRequestTypeDef](#cancelresizemessagerequesttypedef)
   - [ClusterAssociatedToScheduleTypeDef](#clusterassociatedtoscheduletypedef)
-  - [ClusterCredentialsResponseTypeDef](#clustercredentialsresponsetypedef)
+  - [ClusterCredentialsTypeDef](#clustercredentialstypedef)
   - [ClusterDbRevisionTypeDef](#clusterdbrevisiontypedef)
-  - [ClusterDbRevisionsMessageResponseTypeDef](#clusterdbrevisionsmessageresponsetypedef)
+  - [ClusterDbRevisionsMessageTypeDef](#clusterdbrevisionsmessagetypedef)
   - [ClusterIamRoleTypeDef](#clusteriamroletypedef)
   - [ClusterNodeTypeDef](#clusternodetypedef)
-  - [ClusterParameterGroupDetailsResponseTypeDef](#clusterparametergroupdetailsresponsetypedef)
-  - [ClusterParameterGroupNameMessageResponseTypeDef](#clusterparametergroupnamemessageresponsetypedef)
+  - [ClusterParameterGroupDetailsTypeDef](#clusterparametergroupdetailstypedef)
+  - [ClusterParameterGroupNameMessageTypeDef](#clusterparametergroupnamemessagetypedef)
   - [ClusterParameterGroupStatusTypeDef](#clusterparametergroupstatustypedef)
   - [ClusterParameterGroupTypeDef](#clusterparametergrouptypedef)
-  - [ClusterParameterGroupsMessageResponseTypeDef](#clusterparametergroupsmessageresponsetypedef)
+  - [ClusterParameterGroupsMessageTypeDef](#clusterparametergroupsmessagetypedef)
   - [ClusterParameterStatusTypeDef](#clusterparameterstatustypedef)
   - [ClusterSecurityGroupMembershipTypeDef](#clustersecuritygroupmembershiptypedef)
-  - [ClusterSecurityGroupMessageResponseTypeDef](#clustersecuritygroupmessageresponsetypedef)
+  - [ClusterSecurityGroupMessageTypeDef](#clustersecuritygroupmessagetypedef)
   - [ClusterSecurityGroupTypeDef](#clustersecuritygrouptypedef)
   - [ClusterSnapshotCopyStatusTypeDef](#clustersnapshotcopystatustypedef)
-  - [ClusterSubnetGroupMessageResponseTypeDef](#clustersubnetgroupmessageresponsetypedef)
+  - [ClusterSubnetGroupMessageTypeDef](#clustersubnetgroupmessagetypedef)
   - [ClusterSubnetGroupTypeDef](#clustersubnetgrouptypedef)
   - [ClusterTypeDef](#clustertypedef)
   - [ClusterVersionTypeDef](#clusterversiontypedef)
-  - [ClusterVersionsMessageResponseTypeDef](#clusterversionsmessageresponsetypedef)
-  - [ClustersMessageResponseTypeDef](#clustersmessageresponsetypedef)
-  - [CopyClusterSnapshotMessageTypeDef](#copyclustersnapshotmessagetypedef)
-  - [CopyClusterSnapshotResultResponseTypeDef](#copyclustersnapshotresultresponsetypedef)
-  - [CreateClusterMessageTypeDef](#createclustermessagetypedef)
-  - [CreateClusterParameterGroupMessageTypeDef](#createclusterparametergroupmessagetypedef)
-  - [CreateClusterParameterGroupResultResponseTypeDef](#createclusterparametergroupresultresponsetypedef)
-  - [CreateClusterResultResponseTypeDef](#createclusterresultresponsetypedef)
-  - [CreateClusterSecurityGroupMessageTypeDef](#createclustersecuritygroupmessagetypedef)
-  - [CreateClusterSecurityGroupResultResponseTypeDef](#createclustersecuritygroupresultresponsetypedef)
-  - [CreateClusterSnapshotMessageTypeDef](#createclustersnapshotmessagetypedef)
-  - [CreateClusterSnapshotResultResponseTypeDef](#createclustersnapshotresultresponsetypedef)
-  - [CreateClusterSubnetGroupMessageTypeDef](#createclustersubnetgroupmessagetypedef)
-  - [CreateClusterSubnetGroupResultResponseTypeDef](#createclustersubnetgroupresultresponsetypedef)
-  - [CreateEndpointAccessMessageTypeDef](#createendpointaccessmessagetypedef)
-  - [CreateEventSubscriptionMessageTypeDef](#createeventsubscriptionmessagetypedef)
-  - [CreateEventSubscriptionResultResponseTypeDef](#createeventsubscriptionresultresponsetypedef)
-  - [CreateHsmClientCertificateMessageTypeDef](#createhsmclientcertificatemessagetypedef)
-  - [CreateHsmClientCertificateResultResponseTypeDef](#createhsmclientcertificateresultresponsetypedef)
-  - [CreateHsmConfigurationMessageTypeDef](#createhsmconfigurationmessagetypedef)
-  - [CreateHsmConfigurationResultResponseTypeDef](#createhsmconfigurationresultresponsetypedef)
-  - [CreateScheduledActionMessageTypeDef](#createscheduledactionmessagetypedef)
-  - [CreateSnapshotCopyGrantMessageTypeDef](#createsnapshotcopygrantmessagetypedef)
-  - [CreateSnapshotCopyGrantResultResponseTypeDef](#createsnapshotcopygrantresultresponsetypedef)
-  - [CreateSnapshotScheduleMessageTypeDef](#createsnapshotschedulemessagetypedef)
-  - [CreateTagsMessageTypeDef](#createtagsmessagetypedef)
-  - [CreateUsageLimitMessageTypeDef](#createusagelimitmessagetypedef)
-  - [CustomerStorageMessageResponseTypeDef](#customerstoragemessageresponsetypedef)
+  - [ClusterVersionsMessageTypeDef](#clusterversionsmessagetypedef)
+  - [ClustersMessageTypeDef](#clustersmessagetypedef)
+  - [CopyClusterSnapshotMessageRequestTypeDef](#copyclustersnapshotmessagerequesttypedef)
+  - [CopyClusterSnapshotResultTypeDef](#copyclustersnapshotresulttypedef)
+  - [CreateAuthenticationProfileMessageRequestTypeDef](#createauthenticationprofilemessagerequesttypedef)
+  - [CreateAuthenticationProfileResultTypeDef](#createauthenticationprofileresulttypedef)
+  - [CreateClusterMessageRequestTypeDef](#createclustermessagerequesttypedef)
+  - [CreateClusterParameterGroupMessageRequestTypeDef](#createclusterparametergroupmessagerequesttypedef)
+  - [CreateClusterParameterGroupResultTypeDef](#createclusterparametergroupresulttypedef)
+  - [CreateClusterResultTypeDef](#createclusterresulttypedef)
+  - [CreateClusterSecurityGroupMessageRequestTypeDef](#createclustersecuritygroupmessagerequesttypedef)
+  - [CreateClusterSecurityGroupResultTypeDef](#createclustersecuritygroupresulttypedef)
+  - [CreateClusterSnapshotMessageRequestTypeDef](#createclustersnapshotmessagerequesttypedef)
+  - [CreateClusterSnapshotResultTypeDef](#createclustersnapshotresulttypedef)
+  - [CreateClusterSubnetGroupMessageRequestTypeDef](#createclustersubnetgroupmessagerequesttypedef)
+  - [CreateClusterSubnetGroupResultTypeDef](#createclustersubnetgroupresulttypedef)
+  - [CreateEndpointAccessMessageRequestTypeDef](#createendpointaccessmessagerequesttypedef)
+  - [CreateEventSubscriptionMessageRequestTypeDef](#createeventsubscriptionmessagerequesttypedef)
+  - [CreateEventSubscriptionResultTypeDef](#createeventsubscriptionresulttypedef)
+  - [CreateHsmClientCertificateMessageRequestTypeDef](#createhsmclientcertificatemessagerequesttypedef)
+  - [CreateHsmClientCertificateResultTypeDef](#createhsmclientcertificateresulttypedef)
+  - [CreateHsmConfigurationMessageRequestTypeDef](#createhsmconfigurationmessagerequesttypedef)
+  - [CreateHsmConfigurationResultTypeDef](#createhsmconfigurationresulttypedef)
+  - [CreateScheduledActionMessageRequestTypeDef](#createscheduledactionmessagerequesttypedef)
+  - [CreateSnapshotCopyGrantMessageRequestTypeDef](#createsnapshotcopygrantmessagerequesttypedef)
+  - [CreateSnapshotCopyGrantResultTypeDef](#createsnapshotcopygrantresulttypedef)
+  - [CreateSnapshotScheduleMessageRequestTypeDef](#createsnapshotschedulemessagerequesttypedef)
+  - [CreateTagsMessageRequestTypeDef](#createtagsmessagerequesttypedef)
+  - [CreateUsageLimitMessageRequestTypeDef](#createusagelimitmessagerequesttypedef)
+  - [CustomerStorageMessageTypeDef](#customerstoragemessagetypedef)
   - [DataTransferProgressTypeDef](#datatransferprogresstypedef)
   - [DefaultClusterParametersTypeDef](#defaultclusterparameterstypedef)
   - [DeferredMaintenanceWindowTypeDef](#deferredmaintenancewindowtypedef)
-  - [DeleteClusterMessageTypeDef](#deleteclustermessagetypedef)
-  - [DeleteClusterParameterGroupMessageTypeDef](#deleteclusterparametergroupmessagetypedef)
-  - [DeleteClusterResultResponseTypeDef](#deleteclusterresultresponsetypedef)
-  - [DeleteClusterSecurityGroupMessageTypeDef](#deleteclustersecuritygroupmessagetypedef)
+  - [DeleteAuthenticationProfileMessageRequestTypeDef](#deleteauthenticationprofilemessagerequesttypedef)
+  - [DeleteAuthenticationProfileResultTypeDef](#deleteauthenticationprofileresulttypedef)
+  - [DeleteClusterMessageRequestTypeDef](#deleteclustermessagerequesttypedef)
+  - [DeleteClusterParameterGroupMessageRequestTypeDef](#deleteclusterparametergroupmessagerequesttypedef)
+  - [DeleteClusterResultTypeDef](#deleteclusterresulttypedef)
+  - [DeleteClusterSecurityGroupMessageRequestTypeDef](#deleteclustersecuritygroupmessagerequesttypedef)
+  - [DeleteClusterSnapshotMessageRequestTypeDef](#deleteclustersnapshotmessagerequesttypedef)
   - [DeleteClusterSnapshotMessageTypeDef](#deleteclustersnapshotmessagetypedef)
-  - [DeleteClusterSnapshotResultResponseTypeDef](#deleteclustersnapshotresultresponsetypedef)
-  - [DeleteClusterSubnetGroupMessageTypeDef](#deleteclustersubnetgroupmessagetypedef)
-  - [DeleteEndpointAccessMessageTypeDef](#deleteendpointaccessmessagetypedef)
-  - [DeleteEventSubscriptionMessageTypeDef](#deleteeventsubscriptionmessagetypedef)
-  - [DeleteHsmClientCertificateMessageTypeDef](#deletehsmclientcertificatemessagetypedef)
-  - [DeleteHsmConfigurationMessageTypeDef](#deletehsmconfigurationmessagetypedef)
-  - [DeleteScheduledActionMessageTypeDef](#deletescheduledactionmessagetypedef)
-  - [DeleteSnapshotCopyGrantMessageTypeDef](#deletesnapshotcopygrantmessagetypedef)
-  - [DeleteSnapshotScheduleMessageTypeDef](#deletesnapshotschedulemessagetypedef)
-  - [DeleteTagsMessageTypeDef](#deletetagsmessagetypedef)
-  - [DeleteUsageLimitMessageTypeDef](#deleteusagelimitmessagetypedef)
-  - [DescribeAccountAttributesMessageTypeDef](#describeaccountattributesmessagetypedef)
-  - [DescribeClusterDbRevisionsMessageTypeDef](#describeclusterdbrevisionsmessagetypedef)
-  - [DescribeClusterParameterGroupsMessageTypeDef](#describeclusterparametergroupsmessagetypedef)
-  - [DescribeClusterParametersMessageTypeDef](#describeclusterparametersmessagetypedef)
-  - [DescribeClusterSecurityGroupsMessageTypeDef](#describeclustersecuritygroupsmessagetypedef)
-  - [DescribeClusterSnapshotsMessageTypeDef](#describeclustersnapshotsmessagetypedef)
-  - [DescribeClusterSubnetGroupsMessageTypeDef](#describeclustersubnetgroupsmessagetypedef)
-  - [DescribeClusterTracksMessageTypeDef](#describeclustertracksmessagetypedef)
-  - [DescribeClusterVersionsMessageTypeDef](#describeclusterversionsmessagetypedef)
-  - [DescribeClustersMessageTypeDef](#describeclustersmessagetypedef)
-  - [DescribeDefaultClusterParametersMessageTypeDef](#describedefaultclusterparametersmessagetypedef)
-  - [DescribeDefaultClusterParametersResultResponseTypeDef](#describedefaultclusterparametersresultresponsetypedef)
-  - [DescribeEndpointAccessMessageTypeDef](#describeendpointaccessmessagetypedef)
-  - [DescribeEndpointAuthorizationMessageTypeDef](#describeendpointauthorizationmessagetypedef)
-  - [DescribeEventCategoriesMessageTypeDef](#describeeventcategoriesmessagetypedef)
-  - [DescribeEventSubscriptionsMessageTypeDef](#describeeventsubscriptionsmessagetypedef)
-  - [DescribeEventsMessageTypeDef](#describeeventsmessagetypedef)
-  - [DescribeHsmClientCertificatesMessageTypeDef](#describehsmclientcertificatesmessagetypedef)
-  - [DescribeHsmConfigurationsMessageTypeDef](#describehsmconfigurationsmessagetypedef)
-  - [DescribeLoggingStatusMessageTypeDef](#describeloggingstatusmessagetypedef)
-  - [DescribeNodeConfigurationOptionsMessageTypeDef](#describenodeconfigurationoptionsmessagetypedef)
-  - [DescribeOrderableClusterOptionsMessageTypeDef](#describeorderableclusteroptionsmessagetypedef)
-  - [DescribePartnersInputMessageTypeDef](#describepartnersinputmessagetypedef)
-  - [DescribePartnersOutputMessageResponseTypeDef](#describepartnersoutputmessageresponsetypedef)
-  - [DescribeReservedNodeOfferingsMessageTypeDef](#describereservednodeofferingsmessagetypedef)
-  - [DescribeReservedNodesMessageTypeDef](#describereservednodesmessagetypedef)
-  - [DescribeResizeMessageTypeDef](#describeresizemessagetypedef)
-  - [DescribeScheduledActionsMessageTypeDef](#describescheduledactionsmessagetypedef)
-  - [DescribeSnapshotCopyGrantsMessageTypeDef](#describesnapshotcopygrantsmessagetypedef)
-  - [DescribeSnapshotSchedulesMessageTypeDef](#describesnapshotschedulesmessagetypedef)
-  - [DescribeSnapshotSchedulesOutputMessageResponseTypeDef](#describesnapshotschedulesoutputmessageresponsetypedef)
-  - [DescribeTableRestoreStatusMessageTypeDef](#describetablerestorestatusmessagetypedef)
-  - [DescribeTagsMessageTypeDef](#describetagsmessagetypedef)
-  - [DescribeUsageLimitsMessageTypeDef](#describeusagelimitsmessagetypedef)
-  - [DisableLoggingMessageTypeDef](#disableloggingmessagetypedef)
-  - [DisableSnapshotCopyMessageTypeDef](#disablesnapshotcopymessagetypedef)
-  - [DisableSnapshotCopyResultResponseTypeDef](#disablesnapshotcopyresultresponsetypedef)
+  - [DeleteClusterSnapshotResultTypeDef](#deleteclustersnapshotresulttypedef)
+  - [DeleteClusterSubnetGroupMessageRequestTypeDef](#deleteclustersubnetgroupmessagerequesttypedef)
+  - [DeleteEndpointAccessMessageRequestTypeDef](#deleteendpointaccessmessagerequesttypedef)
+  - [DeleteEventSubscriptionMessageRequestTypeDef](#deleteeventsubscriptionmessagerequesttypedef)
+  - [DeleteHsmClientCertificateMessageRequestTypeDef](#deletehsmclientcertificatemessagerequesttypedef)
+  - [DeleteHsmConfigurationMessageRequestTypeDef](#deletehsmconfigurationmessagerequesttypedef)
+  - [DeleteScheduledActionMessageRequestTypeDef](#deletescheduledactionmessagerequesttypedef)
+  - [DeleteSnapshotCopyGrantMessageRequestTypeDef](#deletesnapshotcopygrantmessagerequesttypedef)
+  - [DeleteSnapshotScheduleMessageRequestTypeDef](#deletesnapshotschedulemessagerequesttypedef)
+  - [DeleteTagsMessageRequestTypeDef](#deletetagsmessagerequesttypedef)
+  - [DeleteUsageLimitMessageRequestTypeDef](#deleteusagelimitmessagerequesttypedef)
+  - [DescribeAccountAttributesMessageRequestTypeDef](#describeaccountattributesmessagerequesttypedef)
+  - [DescribeAuthenticationProfilesMessageRequestTypeDef](#describeauthenticationprofilesmessagerequesttypedef)
+  - [DescribeAuthenticationProfilesResultTypeDef](#describeauthenticationprofilesresulttypedef)
+  - [DescribeClusterDbRevisionsMessageRequestTypeDef](#describeclusterdbrevisionsmessagerequesttypedef)
+  - [DescribeClusterParameterGroupsMessageRequestTypeDef](#describeclusterparametergroupsmessagerequesttypedef)
+  - [DescribeClusterParametersMessageRequestTypeDef](#describeclusterparametersmessagerequesttypedef)
+  - [DescribeClusterSecurityGroupsMessageRequestTypeDef](#describeclustersecuritygroupsmessagerequesttypedef)
+  - [DescribeClusterSnapshotsMessageRequestTypeDef](#describeclustersnapshotsmessagerequesttypedef)
+  - [DescribeClusterSubnetGroupsMessageRequestTypeDef](#describeclustersubnetgroupsmessagerequesttypedef)
+  - [DescribeClusterTracksMessageRequestTypeDef](#describeclustertracksmessagerequesttypedef)
+  - [DescribeClusterVersionsMessageRequestTypeDef](#describeclusterversionsmessagerequesttypedef)
+  - [DescribeClustersMessageRequestTypeDef](#describeclustersmessagerequesttypedef)
+  - [DescribeDefaultClusterParametersMessageRequestTypeDef](#describedefaultclusterparametersmessagerequesttypedef)
+  - [DescribeDefaultClusterParametersResultTypeDef](#describedefaultclusterparametersresulttypedef)
+  - [DescribeEndpointAccessMessageRequestTypeDef](#describeendpointaccessmessagerequesttypedef)
+  - [DescribeEndpointAuthorizationMessageRequestTypeDef](#describeendpointauthorizationmessagerequesttypedef)
+  - [DescribeEventCategoriesMessageRequestTypeDef](#describeeventcategoriesmessagerequesttypedef)
+  - [DescribeEventSubscriptionsMessageRequestTypeDef](#describeeventsubscriptionsmessagerequesttypedef)
+  - [DescribeEventsMessageRequestTypeDef](#describeeventsmessagerequesttypedef)
+  - [DescribeHsmClientCertificatesMessageRequestTypeDef](#describehsmclientcertificatesmessagerequesttypedef)
+  - [DescribeHsmConfigurationsMessageRequestTypeDef](#describehsmconfigurationsmessagerequesttypedef)
+  - [DescribeLoggingStatusMessageRequestTypeDef](#describeloggingstatusmessagerequesttypedef)
+  - [DescribeNodeConfigurationOptionsMessageRequestTypeDef](#describenodeconfigurationoptionsmessagerequesttypedef)
+  - [DescribeOrderableClusterOptionsMessageRequestTypeDef](#describeorderableclusteroptionsmessagerequesttypedef)
+  - [DescribePartnersInputMessageRequestTypeDef](#describepartnersinputmessagerequesttypedef)
+  - [DescribePartnersOutputMessageTypeDef](#describepartnersoutputmessagetypedef)
+  - [DescribeReservedNodeOfferingsMessageRequestTypeDef](#describereservednodeofferingsmessagerequesttypedef)
+  - [DescribeReservedNodesMessageRequestTypeDef](#describereservednodesmessagerequesttypedef)
+  - [DescribeResizeMessageRequestTypeDef](#describeresizemessagerequesttypedef)
+  - [DescribeScheduledActionsMessageRequestTypeDef](#describescheduledactionsmessagerequesttypedef)
+  - [DescribeSnapshotCopyGrantsMessageRequestTypeDef](#describesnapshotcopygrantsmessagerequesttypedef)
+  - [DescribeSnapshotSchedulesMessageRequestTypeDef](#describesnapshotschedulesmessagerequesttypedef)
+  - [DescribeSnapshotSchedulesOutputMessageTypeDef](#describesnapshotschedulesoutputmessagetypedef)
+  - [DescribeTableRestoreStatusMessageRequestTypeDef](#describetablerestorestatusmessagerequesttypedef)
+  - [DescribeTagsMessageRequestTypeDef](#describetagsmessagerequesttypedef)
+  - [DescribeUsageLimitsMessageRequestTypeDef](#describeusagelimitsmessagerequesttypedef)
+  - [DisableLoggingMessageRequestTypeDef](#disableloggingmessagerequesttypedef)
+  - [DisableSnapshotCopyMessageRequestTypeDef](#disablesnapshotcopymessagerequesttypedef)
+  - [DisableSnapshotCopyResultTypeDef](#disablesnapshotcopyresulttypedef)
   - [EC2SecurityGroupTypeDef](#ec2securitygrouptypedef)
   - [ElasticIpStatusTypeDef](#elasticipstatustypedef)
-  - [EnableLoggingMessageTypeDef](#enableloggingmessagetypedef)
-  - [EnableSnapshotCopyMessageTypeDef](#enablesnapshotcopymessagetypedef)
-  - [EnableSnapshotCopyResultResponseTypeDef](#enablesnapshotcopyresultresponsetypedef)
-  - [EndpointAccessListResponseTypeDef](#endpointaccesslistresponsetypedef)
-  - [EndpointAccessResponseTypeDef](#endpointaccessresponsetypedef)
-  - [EndpointAuthorizationListResponseTypeDef](#endpointauthorizationlistresponsetypedef)
-  - [EndpointAuthorizationResponseTypeDef](#endpointauthorizationresponsetypedef)
+  - [EnableLoggingMessageRequestTypeDef](#enableloggingmessagerequesttypedef)
+  - [EnableSnapshotCopyMessageRequestTypeDef](#enablesnapshotcopymessagerequesttypedef)
+  - [EnableSnapshotCopyResultTypeDef](#enablesnapshotcopyresulttypedef)
+  - [EndpointAccessListTypeDef](#endpointaccesslisttypedef)
+  - [EndpointAccessResponseMetadataTypeDef](#endpointaccessresponsemetadatatypedef)
+  - [EndpointAccessTypeDef](#endpointaccesstypedef)
+  - [EndpointAuthorizationListTypeDef](#endpointauthorizationlisttypedef)
+  - [EndpointAuthorizationResponseMetadataTypeDef](#endpointauthorizationresponsemetadatatypedef)
+  - [EndpointAuthorizationTypeDef](#endpointauthorizationtypedef)
   - [EndpointTypeDef](#endpointtypedef)
   - [EventCategoriesMapTypeDef](#eventcategoriesmaptypedef)
-  - [EventCategoriesMessageResponseTypeDef](#eventcategoriesmessageresponsetypedef)
+  - [EventCategoriesMessageTypeDef](#eventcategoriesmessagetypedef)
   - [EventInfoMapTypeDef](#eventinfomaptypedef)
   - [EventSubscriptionTypeDef](#eventsubscriptiontypedef)
-  - [EventSubscriptionsMessageResponseTypeDef](#eventsubscriptionsmessageresponsetypedef)
+  - [EventSubscriptionsMessageTypeDef](#eventsubscriptionsmessagetypedef)
   - [EventTypeDef](#eventtypedef)
-  - [EventsMessageResponseTypeDef](#eventsmessageresponsetypedef)
-  - [GetClusterCredentialsMessageTypeDef](#getclustercredentialsmessagetypedef)
-  - [GetReservedNodeExchangeOfferingsInputMessageTypeDef](#getreservednodeexchangeofferingsinputmessagetypedef)
-  - [GetReservedNodeExchangeOfferingsOutputMessageResponseTypeDef](#getreservednodeexchangeofferingsoutputmessageresponsetypedef)
-  - [HsmClientCertificateMessageResponseTypeDef](#hsmclientcertificatemessageresponsetypedef)
+  - [EventsMessageTypeDef](#eventsmessagetypedef)
+  - [GetClusterCredentialsMessageRequestTypeDef](#getclustercredentialsmessagerequesttypedef)
+  - [GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef](#getreservednodeexchangeofferingsinputmessagerequesttypedef)
+  - [GetReservedNodeExchangeOfferingsOutputMessageTypeDef](#getreservednodeexchangeofferingsoutputmessagetypedef)
+  - [HsmClientCertificateMessageTypeDef](#hsmclientcertificatemessagetypedef)
   - [HsmClientCertificateTypeDef](#hsmclientcertificatetypedef)
-  - [HsmConfigurationMessageResponseTypeDef](#hsmconfigurationmessageresponsetypedef)
+  - [HsmConfigurationMessageTypeDef](#hsmconfigurationmessagetypedef)
   - [HsmConfigurationTypeDef](#hsmconfigurationtypedef)
   - [HsmStatusTypeDef](#hsmstatustypedef)
   - [IPRangeTypeDef](#iprangetypedef)
-  - [LoggingStatusResponseTypeDef](#loggingstatusresponsetypedef)
+  - [LoggingStatusTypeDef](#loggingstatustypedef)
   - [MaintenanceTrackTypeDef](#maintenancetracktypedef)
-  - [ModifyAquaInputMessageTypeDef](#modifyaquainputmessagetypedef)
-  - [ModifyAquaOutputMessageResponseTypeDef](#modifyaquaoutputmessageresponsetypedef)
-  - [ModifyClusterDbRevisionMessageTypeDef](#modifyclusterdbrevisionmessagetypedef)
-  - [ModifyClusterDbRevisionResultResponseTypeDef](#modifyclusterdbrevisionresultresponsetypedef)
-  - [ModifyClusterIamRolesMessageTypeDef](#modifyclusteriamrolesmessagetypedef)
-  - [ModifyClusterIamRolesResultResponseTypeDef](#modifyclusteriamrolesresultresponsetypedef)
-  - [ModifyClusterMaintenanceMessageTypeDef](#modifyclustermaintenancemessagetypedef)
-  - [ModifyClusterMaintenanceResultResponseTypeDef](#modifyclustermaintenanceresultresponsetypedef)
-  - [ModifyClusterMessageTypeDef](#modifyclustermessagetypedef)
-  - [ModifyClusterParameterGroupMessageTypeDef](#modifyclusterparametergroupmessagetypedef)
-  - [ModifyClusterResultResponseTypeDef](#modifyclusterresultresponsetypedef)
-  - [ModifyClusterSnapshotMessageTypeDef](#modifyclustersnapshotmessagetypedef)
-  - [ModifyClusterSnapshotResultResponseTypeDef](#modifyclustersnapshotresultresponsetypedef)
-  - [ModifyClusterSnapshotScheduleMessageTypeDef](#modifyclustersnapshotschedulemessagetypedef)
-  - [ModifyClusterSubnetGroupMessageTypeDef](#modifyclustersubnetgroupmessagetypedef)
-  - [ModifyClusterSubnetGroupResultResponseTypeDef](#modifyclustersubnetgroupresultresponsetypedef)
-  - [ModifyEndpointAccessMessageTypeDef](#modifyendpointaccessmessagetypedef)
-  - [ModifyEventSubscriptionMessageTypeDef](#modifyeventsubscriptionmessagetypedef)
-  - [ModifyEventSubscriptionResultResponseTypeDef](#modifyeventsubscriptionresultresponsetypedef)
-  - [ModifyScheduledActionMessageTypeDef](#modifyscheduledactionmessagetypedef)
-  - [ModifySnapshotCopyRetentionPeriodMessageTypeDef](#modifysnapshotcopyretentionperiodmessagetypedef)
-  - [ModifySnapshotCopyRetentionPeriodResultResponseTypeDef](#modifysnapshotcopyretentionperiodresultresponsetypedef)
-  - [ModifySnapshotScheduleMessageTypeDef](#modifysnapshotschedulemessagetypedef)
-  - [ModifyUsageLimitMessageTypeDef](#modifyusagelimitmessagetypedef)
+  - [ModifyAquaInputMessageRequestTypeDef](#modifyaquainputmessagerequesttypedef)
+  - [ModifyAquaOutputMessageTypeDef](#modifyaquaoutputmessagetypedef)
+  - [ModifyAuthenticationProfileMessageRequestTypeDef](#modifyauthenticationprofilemessagerequesttypedef)
+  - [ModifyAuthenticationProfileResultTypeDef](#modifyauthenticationprofileresulttypedef)
+  - [ModifyClusterDbRevisionMessageRequestTypeDef](#modifyclusterdbrevisionmessagerequesttypedef)
+  - [ModifyClusterDbRevisionResultTypeDef](#modifyclusterdbrevisionresulttypedef)
+  - [ModifyClusterIamRolesMessageRequestTypeDef](#modifyclusteriamrolesmessagerequesttypedef)
+  - [ModifyClusterIamRolesResultTypeDef](#modifyclusteriamrolesresulttypedef)
+  - [ModifyClusterMaintenanceMessageRequestTypeDef](#modifyclustermaintenancemessagerequesttypedef)
+  - [ModifyClusterMaintenanceResultTypeDef](#modifyclustermaintenanceresulttypedef)
+  - [ModifyClusterMessageRequestTypeDef](#modifyclustermessagerequesttypedef)
+  - [ModifyClusterParameterGroupMessageRequestTypeDef](#modifyclusterparametergroupmessagerequesttypedef)
+  - [ModifyClusterResultTypeDef](#modifyclusterresulttypedef)
+  - [ModifyClusterSnapshotMessageRequestTypeDef](#modifyclustersnapshotmessagerequesttypedef)
+  - [ModifyClusterSnapshotResultTypeDef](#modifyclustersnapshotresulttypedef)
+  - [ModifyClusterSnapshotScheduleMessageRequestTypeDef](#modifyclustersnapshotschedulemessagerequesttypedef)
+  - [ModifyClusterSubnetGroupMessageRequestTypeDef](#modifyclustersubnetgroupmessagerequesttypedef)
+  - [ModifyClusterSubnetGroupResultTypeDef](#modifyclustersubnetgroupresulttypedef)
+  - [ModifyEndpointAccessMessageRequestTypeDef](#modifyendpointaccessmessagerequesttypedef)
+  - [ModifyEventSubscriptionMessageRequestTypeDef](#modifyeventsubscriptionmessagerequesttypedef)
+  - [ModifyEventSubscriptionResultTypeDef](#modifyeventsubscriptionresulttypedef)
+  - [ModifyScheduledActionMessageRequestTypeDef](#modifyscheduledactionmessagerequesttypedef)
+  - [ModifySnapshotCopyRetentionPeriodMessageRequestTypeDef](#modifysnapshotcopyretentionperiodmessagerequesttypedef)
+  - [ModifySnapshotCopyRetentionPeriodResultTypeDef](#modifysnapshotcopyretentionperiodresulttypedef)
+  - [ModifySnapshotScheduleMessageRequestTypeDef](#modifysnapshotschedulemessagerequesttypedef)
+  - [ModifyUsageLimitMessageRequestTypeDef](#modifyusagelimitmessagerequesttypedef)
   - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
   - [NodeConfigurationOptionTypeDef](#nodeconfigurationoptiontypedef)
   - [NodeConfigurationOptionsFilterTypeDef](#nodeconfigurationoptionsfiltertypedef)
-  - [NodeConfigurationOptionsMessageResponseTypeDef](#nodeconfigurationoptionsmessageresponsetypedef)
+  - [NodeConfigurationOptionsMessageTypeDef](#nodeconfigurationoptionsmessagetypedef)
   - [OrderableClusterOptionTypeDef](#orderableclusteroptiontypedef)
-  - [OrderableClusterOptionsMessageResponseTypeDef](#orderableclusteroptionsmessageresponsetypedef)
+  - [OrderableClusterOptionsMessageTypeDef](#orderableclusteroptionsmessagetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParameterTypeDef](#parametertypedef)
   - [PartnerIntegrationInfoTypeDef](#partnerintegrationinfotypedef)
-  - [PartnerIntegrationInputMessageTypeDef](#partnerintegrationinputmessagetypedef)
-  - [PartnerIntegrationOutputMessageResponseTypeDef](#partnerintegrationoutputmessageresponsetypedef)
+  - [PartnerIntegrationInputMessageRequestTypeDef](#partnerintegrationinputmessagerequesttypedef)
+  - [PartnerIntegrationOutputMessageTypeDef](#partnerintegrationoutputmessagetypedef)
+  - [PauseClusterMessageRequestTypeDef](#pauseclustermessagerequesttypedef)
   - [PauseClusterMessageTypeDef](#pauseclustermessagetypedef)
-  - [PauseClusterResultResponseTypeDef](#pauseclusterresultresponsetypedef)
+  - [PauseClusterResultTypeDef](#pauseclusterresulttypedef)
   - [PendingModifiedValuesTypeDef](#pendingmodifiedvaluestypedef)
-  - [PurchaseReservedNodeOfferingMessageTypeDef](#purchasereservednodeofferingmessagetypedef)
-  - [PurchaseReservedNodeOfferingResultResponseTypeDef](#purchasereservednodeofferingresultresponsetypedef)
-  - [RebootClusterMessageTypeDef](#rebootclustermessagetypedef)
-  - [RebootClusterResultResponseTypeDef](#rebootclusterresultresponsetypedef)
+  - [PurchaseReservedNodeOfferingMessageRequestTypeDef](#purchasereservednodeofferingmessagerequesttypedef)
+  - [PurchaseReservedNodeOfferingResultTypeDef](#purchasereservednodeofferingresulttypedef)
+  - [RebootClusterMessageRequestTypeDef](#rebootclustermessagerequesttypedef)
+  - [RebootClusterResultTypeDef](#rebootclusterresulttypedef)
   - [RecurringChargeTypeDef](#recurringchargetypedef)
   - [ReservedNodeOfferingTypeDef](#reservednodeofferingtypedef)
-  - [ReservedNodeOfferingsMessageResponseTypeDef](#reservednodeofferingsmessageresponsetypedef)
+  - [ReservedNodeOfferingsMessageTypeDef](#reservednodeofferingsmessagetypedef)
   - [ReservedNodeTypeDef](#reservednodetypedef)
-  - [ReservedNodesMessageResponseTypeDef](#reservednodesmessageresponsetypedef)
-  - [ResetClusterParameterGroupMessageTypeDef](#resetclusterparametergroupmessagetypedef)
+  - [ReservedNodesMessageTypeDef](#reservednodesmessagetypedef)
+  - [ResetClusterParameterGroupMessageRequestTypeDef](#resetclusterparametergroupmessagerequesttypedef)
+  - [ResizeClusterMessageRequestTypeDef](#resizeclustermessagerequesttypedef)
   - [ResizeClusterMessageTypeDef](#resizeclustermessagetypedef)
-  - [ResizeClusterResultResponseTypeDef](#resizeclusterresultresponsetypedef)
+  - [ResizeClusterResultTypeDef](#resizeclusterresulttypedef)
   - [ResizeInfoTypeDef](#resizeinfotypedef)
-  - [ResizeProgressMessageResponseTypeDef](#resizeprogressmessageresponsetypedef)
+  - [ResizeProgressMessageTypeDef](#resizeprogressmessagetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreFromClusterSnapshotMessageTypeDef](#restorefromclustersnapshotmessagetypedef)
-  - [RestoreFromClusterSnapshotResultResponseTypeDef](#restorefromclustersnapshotresultresponsetypedef)
+  - [RestoreFromClusterSnapshotMessageRequestTypeDef](#restorefromclustersnapshotmessagerequesttypedef)
+  - [RestoreFromClusterSnapshotResultTypeDef](#restorefromclustersnapshotresulttypedef)
   - [RestoreStatusTypeDef](#restorestatustypedef)
-  - [RestoreTableFromClusterSnapshotMessageTypeDef](#restoretablefromclustersnapshotmessagetypedef)
-  - [RestoreTableFromClusterSnapshotResultResponseTypeDef](#restoretablefromclustersnapshotresultresponsetypedef)
+  - [RestoreTableFromClusterSnapshotMessageRequestTypeDef](#restoretablefromclustersnapshotmessagerequesttypedef)
+  - [RestoreTableFromClusterSnapshotResultTypeDef](#restoretablefromclustersnapshotresulttypedef)
+  - [ResumeClusterMessageRequestTypeDef](#resumeclustermessagerequesttypedef)
   - [ResumeClusterMessageTypeDef](#resumeclustermessagetypedef)
-  - [ResumeClusterResultResponseTypeDef](#resumeclusterresultresponsetypedef)
+  - [ResumeClusterResultTypeDef](#resumeclusterresulttypedef)
   - [RevisionTargetTypeDef](#revisiontargettypedef)
-  - [RevokeClusterSecurityGroupIngressMessageTypeDef](#revokeclustersecuritygroupingressmessagetypedef)
-  - [RevokeClusterSecurityGroupIngressResultResponseTypeDef](#revokeclustersecuritygroupingressresultresponsetypedef)
-  - [RevokeEndpointAccessMessageTypeDef](#revokeendpointaccessmessagetypedef)
-  - [RevokeSnapshotAccessMessageTypeDef](#revokesnapshotaccessmessagetypedef)
-  - [RevokeSnapshotAccessResultResponseTypeDef](#revokesnapshotaccessresultresponsetypedef)
-  - [RotateEncryptionKeyMessageTypeDef](#rotateencryptionkeymessagetypedef)
-  - [RotateEncryptionKeyResultResponseTypeDef](#rotateencryptionkeyresultresponsetypedef)
+  - [RevokeClusterSecurityGroupIngressMessageRequestTypeDef](#revokeclustersecuritygroupingressmessagerequesttypedef)
+  - [RevokeClusterSecurityGroupIngressResultTypeDef](#revokeclustersecuritygroupingressresulttypedef)
+  - [RevokeEndpointAccessMessageRequestTypeDef](#revokeendpointaccessmessagerequesttypedef)
+  - [RevokeSnapshotAccessMessageRequestTypeDef](#revokesnapshotaccessmessagerequesttypedef)
+  - [RevokeSnapshotAccessResultTypeDef](#revokesnapshotaccessresulttypedef)
+  - [RotateEncryptionKeyMessageRequestTypeDef](#rotateencryptionkeymessagerequesttypedef)
+  - [RotateEncryptionKeyResultTypeDef](#rotateencryptionkeyresulttypedef)
   - [ScheduledActionFilterTypeDef](#scheduledactionfiltertypedef)
-  - [ScheduledActionResponseTypeDef](#scheduledactionresponsetypedef)
+  - [ScheduledActionResponseMetadataTypeDef](#scheduledactionresponsemetadatatypedef)
+  - [ScheduledActionTypeDef](#scheduledactiontypedef)
   - [ScheduledActionTypeTypeDef](#scheduledactiontypetypedef)
-  - [ScheduledActionsMessageResponseTypeDef](#scheduledactionsmessageresponsetypedef)
-  - [SnapshotCopyGrantMessageResponseTypeDef](#snapshotcopygrantmessageresponsetypedef)
+  - [ScheduledActionsMessageTypeDef](#scheduledactionsmessagetypedef)
+  - [SnapshotCopyGrantMessageTypeDef](#snapshotcopygrantmessagetypedef)
   - [SnapshotCopyGrantTypeDef](#snapshotcopygranttypedef)
   - [SnapshotErrorMessageTypeDef](#snapshoterrormessagetypedef)
-  - [SnapshotMessageResponseTypeDef](#snapshotmessageresponsetypedef)
-  - [SnapshotScheduleResponseTypeDef](#snapshotscheduleresponsetypedef)
+  - [SnapshotMessageTypeDef](#snapshotmessagetypedef)
+  - [SnapshotScheduleResponseMetadataTypeDef](#snapshotscheduleresponsemetadatatypedef)
+  - [SnapshotScheduleTypeDef](#snapshotscheduletypedef)
   - [SnapshotSortingEntityTypeDef](#snapshotsortingentitytypedef)
   - [SnapshotTypeDef](#snapshottypedef)
   - [SubnetTypeDef](#subnettypedef)
   - [SupportedOperationTypeDef](#supportedoperationtypedef)
   - [SupportedPlatformTypeDef](#supportedplatformtypedef)
-  - [TableRestoreStatusMessageResponseTypeDef](#tablerestorestatusmessageresponsetypedef)
+  - [TableRestoreStatusMessageTypeDef](#tablerestorestatusmessagetypedef)
   - [TableRestoreStatusTypeDef](#tablerestorestatustypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TaggedResourceListMessageResponseTypeDef](#taggedresourcelistmessageresponsetypedef)
+  - [TaggedResourceListMessageTypeDef](#taggedresourcelistmessagetypedef)
   - [TaggedResourceTypeDef](#taggedresourcetypedef)
-  - [TrackListMessageResponseTypeDef](#tracklistmessageresponsetypedef)
-  - [UpdatePartnerStatusInputMessageTypeDef](#updatepartnerstatusinputmessagetypedef)
+  - [TrackListMessageTypeDef](#tracklistmessagetypedef)
+  - [UpdatePartnerStatusInputMessageRequestTypeDef](#updatepartnerstatusinputmessagerequesttypedef)
   - [UpdateTargetTypeDef](#updatetargettypedef)
-  - [UsageLimitListResponseTypeDef](#usagelimitlistresponsetypedef)
-  - [UsageLimitResponseTypeDef](#usagelimitresponsetypedef)
+  - [UsageLimitListTypeDef](#usagelimitlisttypedef)
+  - [UsageLimitResponseMetadataTypeDef](#usagelimitresponsemetadatatypedef)
+  - [UsageLimitTypeDef](#usagelimittypedef)
   - [VpcEndpointTypeDef](#vpcendpointtypedef)
   - [VpcSecurityGroupMembershipTypeDef](#vpcsecuritygroupmembershiptypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
-## AcceptReservedNodeExchangeInputMessageTypeDef
+## AcceptReservedNodeExchangeInputMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessageTypeDef
+from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessageRequestTypeDef
 ```
 
 Required fields:
@@ -265,10 +283,10 @@ Required fields:
 - `ReservedNodeId`: `str`
 - `TargetReservedNodeOfferingId`: `str`
 
-## AcceptReservedNodeExchangeOutputMessageResponseTypeDef
+## AcceptReservedNodeExchangeOutputMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeOutputMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeOutputMessageTypeDef
 ```
 
 Required fields:
@@ -278,10 +296,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AccountAttributeListResponseTypeDef
+## AccountAttributeListTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import AccountAttributeListResponseTypeDef
+from mypy_boto3_redshift.type_defs import AccountAttributeListTypeDef
 ```
 
 Required fields:
@@ -336,10 +354,21 @@ Optional fields:
 
 - `AttributeValue`: `str`
 
-## AuthorizeClusterSecurityGroupIngressMessageTypeDef
+## AuthenticationProfileTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import AuthorizeClusterSecurityGroupIngressMessageTypeDef
+from mypy_boto3_redshift.type_defs import AuthenticationProfileTypeDef
+```
+
+Optional fields:
+
+- `AuthenticationProfileName`: `str`
+- `AuthenticationProfileContent`: `str`
+
+## AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef
 ```
 
 Required fields:
@@ -352,10 +381,10 @@ Optional fields:
 - `EC2SecurityGroupName`: `str`
 - `EC2SecurityGroupOwnerId`: `str`
 
-## AuthorizeClusterSecurityGroupIngressResultResponseTypeDef
+## AuthorizeClusterSecurityGroupIngressResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import AuthorizeClusterSecurityGroupIngressResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import AuthorizeClusterSecurityGroupIngressResultTypeDef
 ```
 
 Required fields:
@@ -365,10 +394,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AuthorizeEndpointAccessMessageTypeDef
+## AuthorizeEndpointAccessMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import AuthorizeEndpointAccessMessageTypeDef
+from mypy_boto3_redshift.type_defs import AuthorizeEndpointAccessMessageRequestTypeDef
 ```
 
 Required fields:
@@ -380,10 +409,10 @@ Optional fields:
 - `ClusterIdentifier`: `str`
 - `VpcIds`: `List`\[`str`\]
 
-## AuthorizeSnapshotAccessMessageTypeDef
+## AuthorizeSnapshotAccessMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import AuthorizeSnapshotAccessMessageTypeDef
+from mypy_boto3_redshift.type_defs import AuthorizeSnapshotAccessMessageRequestTypeDef
 ```
 
 Required fields:
@@ -395,10 +424,10 @@ Optional fields:
 
 - `SnapshotClusterIdentifier`: `str`
 
-## AuthorizeSnapshotAccessResultResponseTypeDef
+## AuthorizeSnapshotAccessResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import AuthorizeSnapshotAccessResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import AuthorizeSnapshotAccessResultTypeDef
 ```
 
 Required fields:
@@ -419,10 +448,10 @@ Optional fields:
 - `SupportedPlatforms`:
   `List`\[[SupportedPlatformTypeDef](./type_defs.md#supportedplatformtypedef)\]
 
-## BatchDeleteClusterSnapshotsRequestTypeDef
+## BatchDeleteClusterSnapshotsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import BatchDeleteClusterSnapshotsRequestTypeDef
+from mypy_boto3_redshift.type_defs import BatchDeleteClusterSnapshotsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -430,10 +459,10 @@ Required fields:
 - `Identifiers`:
   `List`\[[DeleteClusterSnapshotMessageTypeDef](./type_defs.md#deleteclustersnapshotmessagetypedef)\]
 
-## BatchDeleteClusterSnapshotsResultResponseTypeDef
+## BatchDeleteClusterSnapshotsResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import BatchDeleteClusterSnapshotsResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import BatchDeleteClusterSnapshotsResultTypeDef
 ```
 
 Required fields:
@@ -444,10 +473,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchModifyClusterSnapshotsMessageTypeDef
+## BatchModifyClusterSnapshotsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import BatchModifyClusterSnapshotsMessageTypeDef
+from mypy_boto3_redshift.type_defs import BatchModifyClusterSnapshotsMessageRequestTypeDef
 ```
 
 Required fields:
@@ -459,10 +488,10 @@ Optional fields:
 - `ManualSnapshotRetentionPeriod`: `int`
 - `Force`: `bool`
 
-## BatchModifyClusterSnapshotsOutputMessageResponseTypeDef
+## BatchModifyClusterSnapshotsOutputMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import BatchModifyClusterSnapshotsOutputMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import BatchModifyClusterSnapshotsOutputMessageTypeDef
 ```
 
 Required fields:
@@ -473,10 +502,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CancelResizeMessageTypeDef
+## CancelResizeMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CancelResizeMessageTypeDef
+from mypy_boto3_redshift.type_defs import CancelResizeMessageRequestTypeDef
 ```
 
 Required fields:
@@ -495,10 +524,10 @@ Optional fields:
 - `ScheduleAssociationState`:
   [ScheduleStateType](./literals.md#schedulestatetype)
 
-## ClusterCredentialsResponseTypeDef
+## ClusterCredentialsTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ClusterCredentialsResponseTypeDef
+from mypy_boto3_redshift.type_defs import ClusterCredentialsTypeDef
 ```
 
 Required fields:
@@ -523,10 +552,10 @@ Optional fields:
 - `RevisionTargets`:
   `List`\[[RevisionTargetTypeDef](./type_defs.md#revisiontargettypedef)\]
 
-## ClusterDbRevisionsMessageResponseTypeDef
+## ClusterDbRevisionsMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ClusterDbRevisionsMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import ClusterDbRevisionsMessageTypeDef
 ```
 
 Required fields:
@@ -560,10 +589,10 @@ Optional fields:
 - `PrivateIPAddress`: `str`
 - `PublicIPAddress`: `str`
 
-## ClusterParameterGroupDetailsResponseTypeDef
+## ClusterParameterGroupDetailsTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ClusterParameterGroupDetailsResponseTypeDef
+from mypy_boto3_redshift.type_defs import ClusterParameterGroupDetailsTypeDef
 ```
 
 Required fields:
@@ -573,10 +602,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ClusterParameterGroupNameMessageResponseTypeDef
+## ClusterParameterGroupNameMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ClusterParameterGroupNameMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import ClusterParameterGroupNameMessageTypeDef
 ```
 
 Required fields:
@@ -612,10 +641,10 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## ClusterParameterGroupsMessageResponseTypeDef
+## ClusterParameterGroupsMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ClusterParameterGroupsMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import ClusterParameterGroupsMessageTypeDef
 ```
 
 Required fields:
@@ -649,10 +678,10 @@ Optional fields:
 - `ClusterSecurityGroupName`: `str`
 - `Status`: `str`
 
-## ClusterSecurityGroupMessageResponseTypeDef
+## ClusterSecurityGroupMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ClusterSecurityGroupMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import ClusterSecurityGroupMessageTypeDef
 ```
 
 Required fields:
@@ -691,10 +720,10 @@ Optional fields:
 - `ManualSnapshotRetentionPeriod`: `int`
 - `SnapshotCopyGrantName`: `str`
 
-## ClusterSubnetGroupMessageResponseTypeDef
+## ClusterSubnetGroupMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ClusterSubnetGroupMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import ClusterSubnetGroupMessageTypeDef
 ```
 
 Required fields:
@@ -802,10 +831,10 @@ Optional fields:
 - `ClusterParameterGroupFamily`: `str`
 - `Description`: `str`
 
-## ClusterVersionsMessageResponseTypeDef
+## ClusterVersionsMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ClusterVersionsMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import ClusterVersionsMessageTypeDef
 ```
 
 Required fields:
@@ -816,10 +845,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ClustersMessageResponseTypeDef
+## ClustersMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ClustersMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import ClustersMessageTypeDef
 ```
 
 Required fields:
@@ -829,10 +858,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CopyClusterSnapshotMessageTypeDef
+## CopyClusterSnapshotMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CopyClusterSnapshotMessageTypeDef
+from mypy_boto3_redshift.type_defs import CopyClusterSnapshotMessageRequestTypeDef
 ```
 
 Required fields:
@@ -845,10 +874,10 @@ Optional fields:
 - `SourceSnapshotClusterIdentifier`: `str`
 - `ManualSnapshotRetentionPeriod`: `int`
 
-## CopyClusterSnapshotResultResponseTypeDef
+## CopyClusterSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CopyClusterSnapshotResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import CopyClusterSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -857,10 +886,34 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateClusterMessageTypeDef
+## CreateAuthenticationProfileMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateClusterMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateAuthenticationProfileMessageRequestTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfileName`: `str`
+- `AuthenticationProfileContent`: `str`
+
+## CreateAuthenticationProfileResultTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import CreateAuthenticationProfileResultTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfileName`: `str`
+- `AuthenticationProfileContent`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateClusterMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import CreateClusterMessageRequestTypeDef
 ```
 
 Required fields:
@@ -902,10 +955,10 @@ Optional fields:
 - `AquaConfigurationStatus`:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
 
-## CreateClusterParameterGroupMessageTypeDef
+## CreateClusterParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateClusterParameterGroupMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateClusterParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -918,10 +971,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateClusterParameterGroupResultResponseTypeDef
+## CreateClusterParameterGroupResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateClusterParameterGroupResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import CreateClusterParameterGroupResultTypeDef
 ```
 
 Required fields:
@@ -931,10 +984,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateClusterResultResponseTypeDef
+## CreateClusterResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateClusterResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import CreateClusterResultTypeDef
 ```
 
 Required fields:
@@ -943,10 +996,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateClusterSecurityGroupMessageTypeDef
+## CreateClusterSecurityGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateClusterSecurityGroupMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateClusterSecurityGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -958,10 +1011,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateClusterSecurityGroupResultResponseTypeDef
+## CreateClusterSecurityGroupResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateClusterSecurityGroupResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import CreateClusterSecurityGroupResultTypeDef
 ```
 
 Required fields:
@@ -971,10 +1024,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateClusterSnapshotMessageTypeDef
+## CreateClusterSnapshotMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateClusterSnapshotMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateClusterSnapshotMessageRequestTypeDef
 ```
 
 Required fields:
@@ -987,10 +1040,10 @@ Optional fields:
 - `ManualSnapshotRetentionPeriod`: `int`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateClusterSnapshotResultResponseTypeDef
+## CreateClusterSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateClusterSnapshotResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import CreateClusterSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -999,10 +1052,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateClusterSubnetGroupMessageTypeDef
+## CreateClusterSubnetGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateClusterSubnetGroupMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateClusterSubnetGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1015,10 +1068,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateClusterSubnetGroupResultResponseTypeDef
+## CreateClusterSubnetGroupResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateClusterSubnetGroupResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import CreateClusterSubnetGroupResultTypeDef
 ```
 
 Required fields:
@@ -1028,10 +1081,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateEndpointAccessMessageTypeDef
+## CreateEndpointAccessMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateEndpointAccessMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateEndpointAccessMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1045,10 +1098,10 @@ Optional fields:
 - `ResourceOwner`: `str`
 - `VpcSecurityGroupIds`: `List`\[`str`\]
 
-## CreateEventSubscriptionMessageTypeDef
+## CreateEventSubscriptionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateEventSubscriptionMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateEventSubscriptionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1065,10 +1118,10 @@ Optional fields:
 - `Enabled`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateEventSubscriptionResultResponseTypeDef
+## CreateEventSubscriptionResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateEventSubscriptionResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import CreateEventSubscriptionResultTypeDef
 ```
 
 Required fields:
@@ -1078,10 +1131,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateHsmClientCertificateMessageTypeDef
+## CreateHsmClientCertificateMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateHsmClientCertificateMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateHsmClientCertificateMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1092,10 +1145,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateHsmClientCertificateResultResponseTypeDef
+## CreateHsmClientCertificateResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateHsmClientCertificateResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import CreateHsmClientCertificateResultTypeDef
 ```
 
 Required fields:
@@ -1105,10 +1158,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateHsmConfigurationMessageTypeDef
+## CreateHsmConfigurationMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateHsmConfigurationMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateHsmConfigurationMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1124,10 +1177,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateHsmConfigurationResultResponseTypeDef
+## CreateHsmConfigurationResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateHsmConfigurationResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import CreateHsmConfigurationResultTypeDef
 ```
 
 Required fields:
@@ -1137,10 +1190,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateScheduledActionMessageTypeDef
+## CreateScheduledActionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateScheduledActionMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateScheduledActionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1158,10 +1211,10 @@ Optional fields:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Enable`: `bool`
 
-## CreateSnapshotCopyGrantMessageTypeDef
+## CreateSnapshotCopyGrantMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateSnapshotCopyGrantMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateSnapshotCopyGrantMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1173,10 +1226,10 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateSnapshotCopyGrantResultResponseTypeDef
+## CreateSnapshotCopyGrantResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateSnapshotCopyGrantResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import CreateSnapshotCopyGrantResultTypeDef
 ```
 
 Required fields:
@@ -1186,10 +1239,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSnapshotScheduleMessageTypeDef
+## CreateSnapshotScheduleMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateSnapshotScheduleMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateSnapshotScheduleMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1201,10 +1254,10 @@ Optional fields:
 - `DryRun`: `bool`
 - `NextInvocations`: `int`
 
-## CreateTagsMessageTypeDef
+## CreateTagsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateTagsMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateTagsMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1212,10 +1265,10 @@ Required fields:
 - `ResourceName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateUsageLimitMessageTypeDef
+## CreateUsageLimitMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CreateUsageLimitMessageTypeDef
+from mypy_boto3_redshift.type_defs import CreateUsageLimitMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1233,10 +1286,10 @@ Optional fields:
   [UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CustomerStorageMessageResponseTypeDef
+## CustomerStorageMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import CustomerStorageMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import CustomerStorageMessageTypeDef
 ```
 
 Required fields:
@@ -1285,10 +1338,32 @@ Optional fields:
 - `DeferMaintenanceStartTime`: `datetime`
 - `DeferMaintenanceEndTime`: `datetime`
 
-## DeleteClusterMessageTypeDef
+## DeleteAuthenticationProfileMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteClusterMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteAuthenticationProfileMessageRequestTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfileName`: `str`
+
+## DeleteAuthenticationProfileResultTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DeleteAuthenticationProfileResultTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfileName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteClusterMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DeleteClusterMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1301,20 +1376,20 @@ Optional fields:
 - `FinalClusterSnapshotIdentifier`: `str`
 - `FinalClusterSnapshotRetentionPeriod`: `int`
 
-## DeleteClusterParameterGroupMessageTypeDef
+## DeleteClusterParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteClusterParameterGroupMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteClusterParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `ParameterGroupName`: `str`
 
-## DeleteClusterResultResponseTypeDef
+## DeleteClusterResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteClusterResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import DeleteClusterResultTypeDef
 ```
 
 Required fields:
@@ -1323,15 +1398,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteClusterSecurityGroupMessageTypeDef
+## DeleteClusterSecurityGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteClusterSecurityGroupMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteClusterSecurityGroupMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterSecurityGroupName`: `str`
+
+## DeleteClusterSnapshotMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DeleteClusterSnapshotMessageRequestTypeDef
+```
+
+Required fields:
+
+- `SnapshotIdentifier`: `str`
+
+Optional fields:
+
+- `SnapshotClusterIdentifier`: `str`
 
 ## DeleteClusterSnapshotMessageTypeDef
 
@@ -1347,10 +1436,10 @@ Optional fields:
 
 - `SnapshotClusterIdentifier`: `str`
 
-## DeleteClusterSnapshotResultResponseTypeDef
+## DeleteClusterSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteClusterSnapshotResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import DeleteClusterSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -1359,90 +1448,90 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteClusterSubnetGroupMessageTypeDef
+## DeleteClusterSubnetGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteClusterSubnetGroupMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteClusterSubnetGroupMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterSubnetGroupName`: `str`
 
-## DeleteEndpointAccessMessageTypeDef
+## DeleteEndpointAccessMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteEndpointAccessMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteEndpointAccessMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `EndpointName`: `str`
 
-## DeleteEventSubscriptionMessageTypeDef
+## DeleteEventSubscriptionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteEventSubscriptionMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteEventSubscriptionMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `SubscriptionName`: `str`
 
-## DeleteHsmClientCertificateMessageTypeDef
+## DeleteHsmClientCertificateMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteHsmClientCertificateMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteHsmClientCertificateMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `HsmClientCertificateIdentifier`: `str`
 
-## DeleteHsmConfigurationMessageTypeDef
+## DeleteHsmConfigurationMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteHsmConfigurationMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteHsmConfigurationMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `HsmConfigurationIdentifier`: `str`
 
-## DeleteScheduledActionMessageTypeDef
+## DeleteScheduledActionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteScheduledActionMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteScheduledActionMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `ScheduledActionName`: `str`
 
-## DeleteSnapshotCopyGrantMessageTypeDef
+## DeleteSnapshotCopyGrantMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteSnapshotCopyGrantMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteSnapshotCopyGrantMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `SnapshotCopyGrantName`: `str`
 
-## DeleteSnapshotScheduleMessageTypeDef
+## DeleteSnapshotScheduleMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteSnapshotScheduleMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteSnapshotScheduleMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `ScheduleIdentifier`: `str`
 
-## DeleteTagsMessageTypeDef
+## DeleteTagsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteTagsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteTagsMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1450,30 +1539,53 @@ Required fields:
 - `ResourceName`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## DeleteUsageLimitMessageTypeDef
+## DeleteUsageLimitMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DeleteUsageLimitMessageTypeDef
+from mypy_boto3_redshift.type_defs import DeleteUsageLimitMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `UsageLimitId`: `str`
 
-## DescribeAccountAttributesMessageTypeDef
+## DescribeAccountAttributesMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeAccountAttributesMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeAccountAttributesMessageRequestTypeDef
 ```
 
 Optional fields:
 
 - `AttributeNames`: `List`\[`str`\]
 
-## DescribeClusterDbRevisionsMessageTypeDef
+## DescribeAuthenticationProfilesMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeClusterDbRevisionsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeAuthenticationProfilesMessageRequestTypeDef
+```
+
+Optional fields:
+
+- `AuthenticationProfileName`: `str`
+
+## DescribeAuthenticationProfilesResultTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DescribeAuthenticationProfilesResultTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfiles`:
+  `List`\[[AuthenticationProfileTypeDef](./type_defs.md#authenticationprofiletypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeClusterDbRevisionsMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DescribeClusterDbRevisionsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1482,10 +1594,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeClusterParameterGroupsMessageTypeDef
+## DescribeClusterParameterGroupsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeClusterParameterGroupsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeClusterParameterGroupsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1496,10 +1608,10 @@ Optional fields:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
-## DescribeClusterParametersMessageTypeDef
+## DescribeClusterParametersMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeClusterParametersMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeClusterParametersMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1512,10 +1624,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeClusterSecurityGroupsMessageTypeDef
+## DescribeClusterSecurityGroupsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeClusterSecurityGroupsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeClusterSecurityGroupsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1526,10 +1638,10 @@ Optional fields:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
-## DescribeClusterSnapshotsMessageTypeDef
+## DescribeClusterSnapshotsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeClusterSnapshotsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeClusterSnapshotsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1548,10 +1660,10 @@ Optional fields:
 - `SortingEntities`:
   `List`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
 
-## DescribeClusterSubnetGroupsMessageTypeDef
+## DescribeClusterSubnetGroupsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeClusterSubnetGroupsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeClusterSubnetGroupsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1562,10 +1674,10 @@ Optional fields:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
-## DescribeClusterTracksMessageTypeDef
+## DescribeClusterTracksMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeClusterTracksMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeClusterTracksMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1574,10 +1686,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeClusterVersionsMessageTypeDef
+## DescribeClusterVersionsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeClusterVersionsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeClusterVersionsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1587,10 +1699,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeClustersMessageTypeDef
+## DescribeClustersMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeClustersMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeClustersMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1601,10 +1713,10 @@ Optional fields:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
-## DescribeDefaultClusterParametersMessageTypeDef
+## DescribeDefaultClusterParametersMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeDefaultClusterParametersMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeDefaultClusterParametersMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1616,10 +1728,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeDefaultClusterParametersResultResponseTypeDef
+## DescribeDefaultClusterParametersResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeDefaultClusterParametersResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import DescribeDefaultClusterParametersResultTypeDef
 ```
 
 Required fields:
@@ -1629,10 +1741,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEndpointAccessMessageTypeDef
+## DescribeEndpointAccessMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeEndpointAccessMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeEndpointAccessMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1644,10 +1756,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeEndpointAuthorizationMessageTypeDef
+## DescribeEndpointAuthorizationMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeEndpointAuthorizationMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeEndpointAuthorizationMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1658,20 +1770,20 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeEventCategoriesMessageTypeDef
+## DescribeEventCategoriesMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeEventCategoriesMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeEventCategoriesMessageRequestTypeDef
 ```
 
 Optional fields:
 
 - `SourceType`: `str`
 
-## DescribeEventSubscriptionsMessageTypeDef
+## DescribeEventSubscriptionsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeEventSubscriptionsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeEventSubscriptionsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1682,10 +1794,10 @@ Optional fields:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
-## DescribeEventsMessageTypeDef
+## DescribeEventsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeEventsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeEventsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1698,10 +1810,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeHsmClientCertificatesMessageTypeDef
+## DescribeHsmClientCertificatesMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeHsmClientCertificatesMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeHsmClientCertificatesMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1712,10 +1824,10 @@ Optional fields:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
-## DescribeHsmConfigurationsMessageTypeDef
+## DescribeHsmConfigurationsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeHsmConfigurationsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeHsmConfigurationsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1726,20 +1838,20 @@ Optional fields:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
-## DescribeLoggingStatusMessageTypeDef
+## DescribeLoggingStatusMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeLoggingStatusMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeLoggingStatusMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterIdentifier`: `str`
 
-## DescribeNodeConfigurationOptionsMessageTypeDef
+## DescribeNodeConfigurationOptionsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeNodeConfigurationOptionsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeNodeConfigurationOptionsMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1756,10 +1868,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
-## DescribeOrderableClusterOptionsMessageTypeDef
+## DescribeOrderableClusterOptionsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeOrderableClusterOptionsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeOrderableClusterOptionsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1769,10 +1881,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribePartnersInputMessageTypeDef
+## DescribePartnersInputMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribePartnersInputMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribePartnersInputMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1785,10 +1897,10 @@ Optional fields:
 - `DatabaseName`: `str`
 - `PartnerName`: `str`
 
-## DescribePartnersOutputMessageResponseTypeDef
+## DescribePartnersOutputMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribePartnersOutputMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import DescribePartnersOutputMessageTypeDef
 ```
 
 Required fields:
@@ -1798,10 +1910,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeReservedNodeOfferingsMessageTypeDef
+## DescribeReservedNodeOfferingsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeReservedNodeOfferingsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeReservedNodeOfferingsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1810,10 +1922,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeReservedNodesMessageTypeDef
+## DescribeReservedNodesMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeReservedNodesMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeReservedNodesMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1822,20 +1934,20 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeResizeMessageTypeDef
+## DescribeResizeMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeResizeMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeResizeMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterIdentifier`: `str`
 
-## DescribeScheduledActionsMessageTypeDef
+## DescribeScheduledActionsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeScheduledActionsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeScheduledActionsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1851,10 +1963,10 @@ Optional fields:
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
-## DescribeSnapshotCopyGrantsMessageTypeDef
+## DescribeSnapshotCopyGrantsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeSnapshotCopyGrantsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeSnapshotCopyGrantsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1865,10 +1977,10 @@ Optional fields:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
-## DescribeSnapshotSchedulesMessageTypeDef
+## DescribeSnapshotSchedulesMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeSnapshotSchedulesMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeSnapshotSchedulesMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1880,24 +1992,24 @@ Optional fields:
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
-## DescribeSnapshotSchedulesOutputMessageResponseTypeDef
+## DescribeSnapshotSchedulesOutputMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeSnapshotSchedulesOutputMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import DescribeSnapshotSchedulesOutputMessageTypeDef
 ```
 
 Required fields:
 
 - `SnapshotSchedules`:
-  `List`\[[SnapshotScheduleResponseTypeDef](./type_defs.md#snapshotscheduleresponsetypedef)\]
+  `List`\[[SnapshotScheduleTypeDef](./type_defs.md#snapshotscheduletypedef)\]
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTableRestoreStatusMessageTypeDef
+## DescribeTableRestoreStatusMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeTableRestoreStatusMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeTableRestoreStatusMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1907,10 +2019,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeTagsMessageTypeDef
+## DescribeTagsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeTagsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeTagsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1922,10 +2034,10 @@ Optional fields:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
-## DescribeUsageLimitsMessageTypeDef
+## DescribeUsageLimitsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DescribeUsageLimitsMessageTypeDef
+from mypy_boto3_redshift.type_defs import DescribeUsageLimitsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1939,30 +2051,30 @@ Optional fields:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
-## DisableLoggingMessageTypeDef
+## DisableLoggingMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DisableLoggingMessageTypeDef
+from mypy_boto3_redshift.type_defs import DisableLoggingMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterIdentifier`: `str`
 
-## DisableSnapshotCopyMessageTypeDef
+## DisableSnapshotCopyMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DisableSnapshotCopyMessageTypeDef
+from mypy_boto3_redshift.type_defs import DisableSnapshotCopyMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterIdentifier`: `str`
 
-## DisableSnapshotCopyResultResponseTypeDef
+## DisableSnapshotCopyResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import DisableSnapshotCopyResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import DisableSnapshotCopyResultTypeDef
 ```
 
 Required fields:
@@ -1995,10 +2107,10 @@ Optional fields:
 - `ElasticIp`: `str`
 - `Status`: `str`
 
-## EnableLoggingMessageTypeDef
+## EnableLoggingMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import EnableLoggingMessageTypeDef
+from mypy_boto3_redshift.type_defs import EnableLoggingMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2010,10 +2122,10 @@ Optional fields:
 
 - `S3KeyPrefix`: `str`
 
-## EnableSnapshotCopyMessageTypeDef
+## EnableSnapshotCopyMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import EnableSnapshotCopyMessageTypeDef
+from mypy_boto3_redshift.type_defs import EnableSnapshotCopyMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2027,10 +2139,10 @@ Optional fields:
 - `SnapshotCopyGrantName`: `str`
 - `ManualSnapshotRetentionPeriod`: `int`
 
-## EnableSnapshotCopyResultResponseTypeDef
+## EnableSnapshotCopyResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import EnableSnapshotCopyResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import EnableSnapshotCopyResultTypeDef
 ```
 
 Required fields:
@@ -2039,24 +2151,24 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EndpointAccessListResponseTypeDef
+## EndpointAccessListTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import EndpointAccessListResponseTypeDef
+from mypy_boto3_redshift.type_defs import EndpointAccessListTypeDef
 ```
 
 Required fields:
 
 - `EndpointAccessList`:
-  `List`\[[EndpointAccessResponseTypeDef](./type_defs.md#endpointaccessresponsetypedef)\]
+  `List`\[[EndpointAccessTypeDef](./type_defs.md#endpointaccesstypedef)\]
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EndpointAccessResponseTypeDef
+## EndpointAccessResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import EndpointAccessResponseTypeDef
+from mypy_boto3_redshift.type_defs import EndpointAccessResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -2075,24 +2187,44 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EndpointAuthorizationListResponseTypeDef
+## EndpointAccessTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import EndpointAuthorizationListResponseTypeDef
+from mypy_boto3_redshift.type_defs import EndpointAccessTypeDef
+```
+
+Optional fields:
+
+- `ClusterIdentifier`: `str`
+- `ResourceOwner`: `str`
+- `SubnetGroupName`: `str`
+- `EndpointStatus`: `str`
+- `EndpointName`: `str`
+- `EndpointCreateTime`: `datetime`
+- `Port`: `int`
+- `Address`: `str`
+- `VpcSecurityGroups`:
+  `List`\[[VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)\]
+- `VpcEndpoint`: [VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef)
+
+## EndpointAuthorizationListTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import EndpointAuthorizationListTypeDef
 ```
 
 Required fields:
 
 - `EndpointAuthorizationList`:
-  `List`\[[EndpointAuthorizationResponseTypeDef](./type_defs.md#endpointauthorizationresponsetypedef)\]
+  `List`\[[EndpointAuthorizationTypeDef](./type_defs.md#endpointauthorizationtypedef)\]
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EndpointAuthorizationResponseTypeDef
+## EndpointAuthorizationResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import EndpointAuthorizationResponseTypeDef
+from mypy_boto3_redshift.type_defs import EndpointAuthorizationResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -2108,6 +2240,24 @@ Required fields:
 - `EndpointCount`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## EndpointAuthorizationTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import EndpointAuthorizationTypeDef
+```
+
+Optional fields:
+
+- `Grantor`: `str`
+- `Grantee`: `str`
+- `ClusterIdentifier`: `str`
+- `AuthorizeTime`: `datetime`
+- `ClusterStatus`: `str`
+- `Status`: [AuthorizationStatusType](./literals.md#authorizationstatustype)
+- `AllowedAllVPCs`: `bool`
+- `AllowedVPCs`: `List`\[`str`\]
+- `EndpointCount`: `int`
 
 ## EndpointTypeDef
 
@@ -2133,10 +2283,10 @@ Optional fields:
 - `SourceType`: `str`
 - `Events`: `List`\[[EventInfoMapTypeDef](./type_defs.md#eventinfomaptypedef)\]
 
-## EventCategoriesMessageResponseTypeDef
+## EventCategoriesMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import EventCategoriesMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import EventCategoriesMessageTypeDef
 ```
 
 Required fields:
@@ -2179,10 +2329,10 @@ Optional fields:
 - `Enabled`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## EventSubscriptionsMessageResponseTypeDef
+## EventSubscriptionsMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import EventSubscriptionsMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import EventSubscriptionsMessageTypeDef
 ```
 
 Required fields:
@@ -2209,10 +2359,10 @@ Optional fields:
 - `Date`: `datetime`
 - `EventId`: `str`
 
-## EventsMessageResponseTypeDef
+## EventsMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import EventsMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import EventsMessageTypeDef
 ```
 
 Required fields:
@@ -2222,10 +2372,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetClusterCredentialsMessageTypeDef
+## GetClusterCredentialsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import GetClusterCredentialsMessageTypeDef
+from mypy_boto3_redshift.type_defs import GetClusterCredentialsMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2240,10 +2390,10 @@ Optional fields:
 - `AutoCreate`: `bool`
 - `DbGroups`: `List`\[`str`\]
 
-## GetReservedNodeExchangeOfferingsInputMessageTypeDef
+## GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import GetReservedNodeExchangeOfferingsInputMessageTypeDef
+from mypy_boto3_redshift.type_defs import GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2255,10 +2405,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## GetReservedNodeExchangeOfferingsOutputMessageResponseTypeDef
+## GetReservedNodeExchangeOfferingsOutputMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import GetReservedNodeExchangeOfferingsOutputMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import GetReservedNodeExchangeOfferingsOutputMessageTypeDef
 ```
 
 Required fields:
@@ -2269,10 +2419,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## HsmClientCertificateMessageResponseTypeDef
+## HsmClientCertificateMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import HsmClientCertificateMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import HsmClientCertificateMessageTypeDef
 ```
 
 Required fields:
@@ -2295,10 +2445,10 @@ Optional fields:
 - `HsmClientCertificatePublicKey`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## HsmConfigurationMessageResponseTypeDef
+## HsmConfigurationMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import HsmConfigurationMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import HsmConfigurationMessageTypeDef
 ```
 
 Required fields:
@@ -2347,10 +2497,10 @@ Optional fields:
 - `CIDRIP`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## LoggingStatusResponseTypeDef
+## LoggingStatusTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import LoggingStatusResponseTypeDef
+from mypy_boto3_redshift.type_defs import LoggingStatusTypeDef
 ```
 
 Required fields:
@@ -2377,10 +2527,10 @@ Optional fields:
 - `UpdateTargets`:
   `List`\[[UpdateTargetTypeDef](./type_defs.md#updatetargettypedef)\]
 
-## ModifyAquaInputMessageTypeDef
+## ModifyAquaInputMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyAquaInputMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyAquaInputMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2392,10 +2542,10 @@ Optional fields:
 - `AquaConfigurationStatus`:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
 
-## ModifyAquaOutputMessageResponseTypeDef
+## ModifyAquaOutputMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyAquaOutputMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import ModifyAquaOutputMessageTypeDef
 ```
 
 Required fields:
@@ -2405,10 +2555,34 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyClusterDbRevisionMessageTypeDef
+## ModifyAuthenticationProfileMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterDbRevisionMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyAuthenticationProfileMessageRequestTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfileName`: `str`
+- `AuthenticationProfileContent`: `str`
+
+## ModifyAuthenticationProfileResultTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import ModifyAuthenticationProfileResultTypeDef
+```
+
+Required fields:
+
+- `AuthenticationProfileName`: `str`
+- `AuthenticationProfileContent`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ModifyClusterDbRevisionMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import ModifyClusterDbRevisionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2416,10 +2590,10 @@ Required fields:
 - `ClusterIdentifier`: `str`
 - `RevisionTarget`: `str`
 
-## ModifyClusterDbRevisionResultResponseTypeDef
+## ModifyClusterDbRevisionResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterDbRevisionResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterDbRevisionResultTypeDef
 ```
 
 Required fields:
@@ -2428,10 +2602,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyClusterIamRolesMessageTypeDef
+## ModifyClusterIamRolesMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterIamRolesMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterIamRolesMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2443,10 +2617,10 @@ Optional fields:
 - `AddIamRoles`: `List`\[`str`\]
 - `RemoveIamRoles`: `List`\[`str`\]
 
-## ModifyClusterIamRolesResultResponseTypeDef
+## ModifyClusterIamRolesResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterIamRolesResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterIamRolesResultTypeDef
 ```
 
 Required fields:
@@ -2455,10 +2629,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyClusterMaintenanceMessageTypeDef
+## ModifyClusterMaintenanceMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterMaintenanceMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterMaintenanceMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2473,10 +2647,10 @@ Optional fields:
 - `DeferMaintenanceEndTime`: `Union`\[`datetime`, `str`\]
 - `DeferMaintenanceDuration`: `int`
 
-## ModifyClusterMaintenanceResultResponseTypeDef
+## ModifyClusterMaintenanceResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterMaintenanceResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterMaintenanceResultTypeDef
 ```
 
 Required fields:
@@ -2485,10 +2659,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyClusterMessageTypeDef
+## ModifyClusterMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2522,10 +2696,10 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `Port`: `int`
 
-## ModifyClusterParameterGroupMessageTypeDef
+## ModifyClusterParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterParameterGroupMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2533,10 +2707,10 @@ Required fields:
 - `ParameterGroupName`: `str`
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
-## ModifyClusterResultResponseTypeDef
+## ModifyClusterResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterResultTypeDef
 ```
 
 Required fields:
@@ -2545,10 +2719,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyClusterSnapshotMessageTypeDef
+## ModifyClusterSnapshotMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterSnapshotMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterSnapshotMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2560,10 +2734,10 @@ Optional fields:
 - `ManualSnapshotRetentionPeriod`: `int`
 - `Force`: `bool`
 
-## ModifyClusterSnapshotResultResponseTypeDef
+## ModifyClusterSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterSnapshotResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -2572,10 +2746,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyClusterSnapshotScheduleMessageTypeDef
+## ModifyClusterSnapshotScheduleMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterSnapshotScheduleMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterSnapshotScheduleMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2587,10 +2761,10 @@ Optional fields:
 - `ScheduleIdentifier`: `str`
 - `DisassociateSchedule`: `bool`
 
-## ModifyClusterSubnetGroupMessageTypeDef
+## ModifyClusterSubnetGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterSubnetGroupMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterSubnetGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2602,10 +2776,10 @@ Optional fields:
 
 - `Description`: `str`
 
-## ModifyClusterSubnetGroupResultResponseTypeDef
+## ModifyClusterSubnetGroupResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyClusterSubnetGroupResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import ModifyClusterSubnetGroupResultTypeDef
 ```
 
 Required fields:
@@ -2615,10 +2789,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyEndpointAccessMessageTypeDef
+## ModifyEndpointAccessMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyEndpointAccessMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyEndpointAccessMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2629,10 +2803,10 @@ Optional fields:
 
 - `VpcSecurityGroupIds`: `List`\[`str`\]
 
-## ModifyEventSubscriptionMessageTypeDef
+## ModifyEventSubscriptionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyEventSubscriptionMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyEventSubscriptionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2648,10 +2822,10 @@ Optional fields:
 - `Severity`: `str`
 - `Enabled`: `bool`
 
-## ModifyEventSubscriptionResultResponseTypeDef
+## ModifyEventSubscriptionResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyEventSubscriptionResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import ModifyEventSubscriptionResultTypeDef
 ```
 
 Required fields:
@@ -2661,10 +2835,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyScheduledActionMessageTypeDef
+## ModifyScheduledActionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyScheduledActionMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyScheduledActionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2682,10 +2856,10 @@ Optional fields:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Enable`: `bool`
 
-## ModifySnapshotCopyRetentionPeriodMessageTypeDef
+## ModifySnapshotCopyRetentionPeriodMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifySnapshotCopyRetentionPeriodMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifySnapshotCopyRetentionPeriodMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2697,10 +2871,10 @@ Optional fields:
 
 - `Manual`: `bool`
 
-## ModifySnapshotCopyRetentionPeriodResultResponseTypeDef
+## ModifySnapshotCopyRetentionPeriodResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifySnapshotCopyRetentionPeriodResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import ModifySnapshotCopyRetentionPeriodResultTypeDef
 ```
 
 Required fields:
@@ -2709,10 +2883,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifySnapshotScheduleMessageTypeDef
+## ModifySnapshotScheduleMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifySnapshotScheduleMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifySnapshotScheduleMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2720,10 +2894,10 @@ Required fields:
 - `ScheduleIdentifier`: `str`
 - `ScheduleDefinitions`: `List`\[`str`\]
 
-## ModifyUsageLimitMessageTypeDef
+## ModifyUsageLimitMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ModifyUsageLimitMessageTypeDef
+from mypy_boto3_redshift.type_defs import ModifyUsageLimitMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2775,10 +2949,10 @@ Optional fields:
 - `Operator`: [OperatorTypeType](./literals.md#operatortypetype)
 - `Values`: `List`\[`str`\]
 
-## NodeConfigurationOptionsMessageResponseTypeDef
+## NodeConfigurationOptionsMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import NodeConfigurationOptionsMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import NodeConfigurationOptionsMessageTypeDef
 ```
 
 Required fields:
@@ -2803,10 +2977,10 @@ Optional fields:
 - `AvailabilityZones`:
   `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
 
-## OrderableClusterOptionsMessageResponseTypeDef
+## OrderableClusterOptionsMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import OrderableClusterOptionsMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import OrderableClusterOptionsMessageTypeDef
 ```
 
 Required fields:
@@ -2863,10 +3037,10 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 
-## PartnerIntegrationInputMessageTypeDef
+## PartnerIntegrationInputMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import PartnerIntegrationInputMessageTypeDef
+from mypy_boto3_redshift.type_defs import PartnerIntegrationInputMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2876,10 +3050,10 @@ Required fields:
 - `DatabaseName`: `str`
 - `PartnerName`: `str`
 
-## PartnerIntegrationOutputMessageResponseTypeDef
+## PartnerIntegrationOutputMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import PartnerIntegrationOutputMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import PartnerIntegrationOutputMessageTypeDef
 ```
 
 Required fields:
@@ -2888,6 +3062,16 @@ Required fields:
 - `PartnerName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PauseClusterMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import PauseClusterMessageRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterIdentifier`: `str`
 
 ## PauseClusterMessageTypeDef
 
@@ -2899,10 +3083,10 @@ Required fields:
 
 - `ClusterIdentifier`: `str`
 
-## PauseClusterResultResponseTypeDef
+## PauseClusterResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import PauseClusterResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import PauseClusterResultTypeDef
 ```
 
 Required fields:
@@ -2931,10 +3115,10 @@ Optional fields:
 - `MaintenanceTrackName`: `str`
 - `EncryptionType`: `str`
 
-## PurchaseReservedNodeOfferingMessageTypeDef
+## PurchaseReservedNodeOfferingMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import PurchaseReservedNodeOfferingMessageTypeDef
+from mypy_boto3_redshift.type_defs import PurchaseReservedNodeOfferingMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2945,10 +3129,10 @@ Optional fields:
 
 - `NodeCount`: `int`
 
-## PurchaseReservedNodeOfferingResultResponseTypeDef
+## PurchaseReservedNodeOfferingResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import PurchaseReservedNodeOfferingResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import PurchaseReservedNodeOfferingResultTypeDef
 ```
 
 Required fields:
@@ -2957,20 +3141,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RebootClusterMessageTypeDef
+## RebootClusterMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RebootClusterMessageTypeDef
+from mypy_boto3_redshift.type_defs import RebootClusterMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterIdentifier`: `str`
 
-## RebootClusterResultResponseTypeDef
+## RebootClusterResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RebootClusterResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import RebootClusterResultTypeDef
 ```
 
 Required fields:
@@ -3010,10 +3194,10 @@ Optional fields:
 - `ReservedNodeOfferingType`:
   [ReservedNodeOfferingTypeType](./literals.md#reservednodeofferingtypetype)
 
-## ReservedNodeOfferingsMessageResponseTypeDef
+## ReservedNodeOfferingsMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ReservedNodeOfferingsMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import ReservedNodeOfferingsMessageTypeDef
 ```
 
 Required fields:
@@ -3048,10 +3232,10 @@ Optional fields:
 - `ReservedNodeOfferingType`:
   [ReservedNodeOfferingTypeType](./literals.md#reservednodeofferingtypetype)
 
-## ReservedNodesMessageResponseTypeDef
+## ReservedNodesMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ReservedNodesMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import ReservedNodesMessageTypeDef
 ```
 
 Required fields:
@@ -3062,10 +3246,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResetClusterParameterGroupMessageTypeDef
+## ResetClusterParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ResetClusterParameterGroupMessageTypeDef
+from mypy_boto3_redshift.type_defs import ResetClusterParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -3076,6 +3260,23 @@ Optional fields:
 
 - `ResetAllParameters`: `bool`
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+
+## ResizeClusterMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import ResizeClusterMessageRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterIdentifier`: `str`
+
+Optional fields:
+
+- `ClusterType`: `str`
+- `NodeType`: `str`
+- `NumberOfNodes`: `int`
+- `Classic`: `bool`
 
 ## ResizeClusterMessageTypeDef
 
@@ -3094,10 +3295,10 @@ Optional fields:
 - `NumberOfNodes`: `int`
 - `Classic`: `bool`
 
-## ResizeClusterResultResponseTypeDef
+## ResizeClusterResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ResizeClusterResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import ResizeClusterResultTypeDef
 ```
 
 Required fields:
@@ -3117,10 +3318,10 @@ Optional fields:
 - `ResizeType`: `str`
 - `AllowCancelResize`: `bool`
 
-## ResizeProgressMessageResponseTypeDef
+## ResizeProgressMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ResizeProgressMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import ResizeProgressMessageTypeDef
 ```
 
 Required fields:
@@ -3158,10 +3359,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RestoreFromClusterSnapshotMessageTypeDef
+## RestoreFromClusterSnapshotMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RestoreFromClusterSnapshotMessageTypeDef
+from mypy_boto3_redshift.type_defs import RestoreFromClusterSnapshotMessageRequestTypeDef
 ```
 
 Required fields:
@@ -3199,10 +3400,10 @@ Optional fields:
 - `AquaConfigurationStatus`:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
 
-## RestoreFromClusterSnapshotResultResponseTypeDef
+## RestoreFromClusterSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RestoreFromClusterSnapshotResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import RestoreFromClusterSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -3226,10 +3427,10 @@ Optional fields:
 - `ElapsedTimeInSeconds`: `int`
 - `EstimatedTimeToCompletionInSeconds`: `int`
 
-## RestoreTableFromClusterSnapshotMessageTypeDef
+## RestoreTableFromClusterSnapshotMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RestoreTableFromClusterSnapshotMessageTypeDef
+from mypy_boto3_redshift.type_defs import RestoreTableFromClusterSnapshotMessageRequestTypeDef
 ```
 
 Required fields:
@@ -3247,10 +3448,10 @@ Optional fields:
 - `TargetSchemaName`: `str`
 - `EnableCaseSensitiveIdentifier`: `bool`
 
-## RestoreTableFromClusterSnapshotResultResponseTypeDef
+## RestoreTableFromClusterSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RestoreTableFromClusterSnapshotResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import RestoreTableFromClusterSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -3259,6 +3460,16 @@ Required fields:
   [TableRestoreStatusTypeDef](./type_defs.md#tablerestorestatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ResumeClusterMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import ResumeClusterMessageRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterIdentifier`: `str`
 
 ## ResumeClusterMessageTypeDef
 
@@ -3270,10 +3481,10 @@ Required fields:
 
 - `ClusterIdentifier`: `str`
 
-## ResumeClusterResultResponseTypeDef
+## ResumeClusterResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ResumeClusterResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import ResumeClusterResultTypeDef
 ```
 
 Required fields:
@@ -3294,10 +3505,10 @@ Optional fields:
 - `Description`: `str`
 - `DatabaseRevisionReleaseDate`: `datetime`
 
-## RevokeClusterSecurityGroupIngressMessageTypeDef
+## RevokeClusterSecurityGroupIngressMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RevokeClusterSecurityGroupIngressMessageTypeDef
+from mypy_boto3_redshift.type_defs import RevokeClusterSecurityGroupIngressMessageRequestTypeDef
 ```
 
 Required fields:
@@ -3310,10 +3521,10 @@ Optional fields:
 - `EC2SecurityGroupName`: `str`
 - `EC2SecurityGroupOwnerId`: `str`
 
-## RevokeClusterSecurityGroupIngressResultResponseTypeDef
+## RevokeClusterSecurityGroupIngressResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RevokeClusterSecurityGroupIngressResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import RevokeClusterSecurityGroupIngressResultTypeDef
 ```
 
 Required fields:
@@ -3323,10 +3534,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RevokeEndpointAccessMessageTypeDef
+## RevokeEndpointAccessMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RevokeEndpointAccessMessageTypeDef
+from mypy_boto3_redshift.type_defs import RevokeEndpointAccessMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -3336,10 +3547,10 @@ Optional fields:
 - `VpcIds`: `List`\[`str`\]
 - `Force`: `bool`
 
-## RevokeSnapshotAccessMessageTypeDef
+## RevokeSnapshotAccessMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RevokeSnapshotAccessMessageTypeDef
+from mypy_boto3_redshift.type_defs import RevokeSnapshotAccessMessageRequestTypeDef
 ```
 
 Required fields:
@@ -3351,10 +3562,10 @@ Optional fields:
 
 - `SnapshotClusterIdentifier`: `str`
 
-## RevokeSnapshotAccessResultResponseTypeDef
+## RevokeSnapshotAccessResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RevokeSnapshotAccessResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import RevokeSnapshotAccessResultTypeDef
 ```
 
 Required fields:
@@ -3363,20 +3574,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RotateEncryptionKeyMessageTypeDef
+## RotateEncryptionKeyMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RotateEncryptionKeyMessageTypeDef
+from mypy_boto3_redshift.type_defs import RotateEncryptionKeyMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `ClusterIdentifier`: `str`
 
-## RotateEncryptionKeyResultResponseTypeDef
+## RotateEncryptionKeyResultTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import RotateEncryptionKeyResultResponseTypeDef
+from mypy_boto3_redshift.type_defs import RotateEncryptionKeyResultTypeDef
 ```
 
 Required fields:
@@ -3397,10 +3608,10 @@ Required fields:
   [ScheduledActionFilterNameType](./literals.md#scheduledactionfilternametype)
 - `Values`: `List`\[`str`\]
 
-## ScheduledActionResponseTypeDef
+## ScheduledActionResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ScheduledActionResponseTypeDef
+from mypy_boto3_redshift.type_defs import ScheduledActionResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -3418,6 +3629,25 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ScheduledActionTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import ScheduledActionTypeDef
+```
+
+Optional fields:
+
+- `ScheduledActionName`: `str`
+- `TargetAction`:
+  [ScheduledActionTypeTypeDef](./type_defs.md#scheduledactiontypetypedef)
+- `Schedule`: `str`
+- `IamRole`: `str`
+- `ScheduledActionDescription`: `str`
+- `State`: [ScheduledActionStateType](./literals.md#scheduledactionstatetype)
+- `NextInvocations`: `List`\[`datetime`\]
+- `StartTime`: `datetime`
+- `EndTime`: `datetime`
+
 ## ScheduledActionTypeTypeDef
 
 ```python
@@ -3433,24 +3663,24 @@ Optional fields:
 - `ResumeCluster`:
   [ResumeClusterMessageTypeDef](./type_defs.md#resumeclustermessagetypedef)
 
-## ScheduledActionsMessageResponseTypeDef
+## ScheduledActionsMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import ScheduledActionsMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import ScheduledActionsMessageTypeDef
 ```
 
 Required fields:
 
 - `Marker`: `str`
 - `ScheduledActions`:
-  `List`\[[ScheduledActionResponseTypeDef](./type_defs.md#scheduledactionresponsetypedef)\]
+  `List`\[[ScheduledActionTypeDef](./type_defs.md#scheduledactiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SnapshotCopyGrantMessageResponseTypeDef
+## SnapshotCopyGrantMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import SnapshotCopyGrantMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import SnapshotCopyGrantMessageTypeDef
 ```
 
 Required fields:
@@ -3486,10 +3716,10 @@ Optional fields:
 - `FailureCode`: `str`
 - `FailureReason`: `str`
 
-## SnapshotMessageResponseTypeDef
+## SnapshotMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import SnapshotMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import SnapshotMessageTypeDef
 ```
 
 Required fields:
@@ -3499,10 +3729,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SnapshotScheduleResponseTypeDef
+## SnapshotScheduleResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import SnapshotScheduleResponseTypeDef
+from mypy_boto3_redshift.type_defs import SnapshotScheduleResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -3517,6 +3747,23 @@ Required fields:
   `List`\[[ClusterAssociatedToScheduleTypeDef](./type_defs.md#clusterassociatedtoscheduletypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## SnapshotScheduleTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import SnapshotScheduleTypeDef
+```
+
+Optional fields:
+
+- `ScheduleDefinitions`: `List`\[`str`\]
+- `ScheduleIdentifier`: `str`
+- `ScheduleDescription`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `NextInvocations`: `List`\[`datetime`\]
+- `AssociatedClusterCount`: `int`
+- `AssociatedClusters`:
+  `List`\[[ClusterAssociatedToScheduleTypeDef](./type_defs.md#clusterassociatedtoscheduletypedef)\]
 
 ## SnapshotSortingEntityTypeDef
 
@@ -3610,10 +3857,10 @@ Optional fields:
 
 - `Name`: `str`
 
-## TableRestoreStatusMessageResponseTypeDef
+## TableRestoreStatusMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import TableRestoreStatusMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import TableRestoreStatusMessageTypeDef
 ```
 
 Required fields:
@@ -3659,10 +3906,10 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## TaggedResourceListMessageResponseTypeDef
+## TaggedResourceListMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import TaggedResourceListMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import TaggedResourceListMessageTypeDef
 ```
 
 Required fields:
@@ -3685,10 +3932,10 @@ Optional fields:
 - `ResourceName`: `str`
 - `ResourceType`: `str`
 
-## TrackListMessageResponseTypeDef
+## TrackListMessageTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import TrackListMessageResponseTypeDef
+from mypy_boto3_redshift.type_defs import TrackListMessageTypeDef
 ```
 
 Required fields:
@@ -3699,10 +3946,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdatePartnerStatusInputMessageTypeDef
+## UpdatePartnerStatusInputMessageRequestTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import UpdatePartnerStatusInputMessageTypeDef
+from mypy_boto3_redshift.type_defs import UpdatePartnerStatusInputMessageRequestTypeDef
 ```
 
 Required fields:
@@ -3731,24 +3978,24 @@ Optional fields:
 - `SupportedOperations`:
   `List`\[[SupportedOperationTypeDef](./type_defs.md#supportedoperationtypedef)\]
 
-## UsageLimitListResponseTypeDef
+## UsageLimitListTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import UsageLimitListResponseTypeDef
+from mypy_boto3_redshift.type_defs import UsageLimitListTypeDef
 ```
 
 Required fields:
 
 - `UsageLimits`:
-  `List`\[[UsageLimitResponseTypeDef](./type_defs.md#usagelimitresponsetypedef)\]
+  `List`\[[UsageLimitTypeDef](./type_defs.md#usagelimittypedef)\]
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UsageLimitResponseTypeDef
+## UsageLimitResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_redshift.type_defs import UsageLimitResponseTypeDef
+from mypy_boto3_redshift.type_defs import UsageLimitResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -3765,6 +4012,25 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UsageLimitTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import UsageLimitTypeDef
+```
+
+Optional fields:
+
+- `UsageLimitId`: `str`
+- `ClusterIdentifier`: `str`
+- `FeatureType`:
+  [UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype)
+- `LimitType`: [UsageLimitLimitTypeType](./literals.md#usagelimitlimittypetype)
+- `Amount`: `int`
+- `Period`: [UsageLimitPeriodType](./literals.md#usagelimitperiodtype)
+- `BreachAction`:
+  [UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## VpcEndpointTypeDef
 

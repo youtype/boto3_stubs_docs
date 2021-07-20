@@ -9,192 +9,214 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 APIGateway module](#typed-dictionaries-for-boto3-apigateway-module)
   - [AccessLogSettingsTypeDef](#accesslogsettingstypedef)
-  - [AccountResponseTypeDef](#accountresponsetypedef)
-  - [ApiKeyIdsResponseTypeDef](#apikeyidsresponsetypedef)
-  - [ApiKeyResponseTypeDef](#apikeyresponsetypedef)
-  - [ApiKeysResponseTypeDef](#apikeysresponsetypedef)
+  - [AccountTypeDef](#accounttypedef)
+  - [ApiKeyIdsTypeDef](#apikeyidstypedef)
+  - [ApiKeyResponseMetadataTypeDef](#apikeyresponsemetadatatypedef)
+  - [ApiKeyTypeDef](#apikeytypedef)
+  - [ApiKeysTypeDef](#apikeystypedef)
   - [ApiStageTypeDef](#apistagetypedef)
-  - [AuthorizerResponseTypeDef](#authorizerresponsetypedef)
-  - [AuthorizersResponseTypeDef](#authorizersresponsetypedef)
-  - [BasePathMappingResponseTypeDef](#basepathmappingresponsetypedef)
-  - [BasePathMappingsResponseTypeDef](#basepathmappingsresponsetypedef)
+  - [AuthorizerResponseMetadataTypeDef](#authorizerresponsemetadatatypedef)
+  - [AuthorizerTypeDef](#authorizertypedef)
+  - [AuthorizersTypeDef](#authorizerstypedef)
+  - [BasePathMappingResponseMetadataTypeDef](#basepathmappingresponsemetadatatypedef)
+  - [BasePathMappingTypeDef](#basepathmappingtypedef)
+  - [BasePathMappingsTypeDef](#basepathmappingstypedef)
   - [CanarySettingsTypeDef](#canarysettingstypedef)
-  - [ClientCertificateResponseTypeDef](#clientcertificateresponsetypedef)
-  - [ClientCertificatesResponseTypeDef](#clientcertificatesresponsetypedef)
-  - [CreateApiKeyRequestTypeDef](#createapikeyrequesttypedef)
-  - [CreateAuthorizerRequestTypeDef](#createauthorizerrequesttypedef)
-  - [CreateBasePathMappingRequestTypeDef](#createbasepathmappingrequesttypedef)
-  - [CreateDeploymentRequestTypeDef](#createdeploymentrequesttypedef)
-  - [CreateDocumentationPartRequestTypeDef](#createdocumentationpartrequesttypedef)
-  - [CreateDocumentationVersionRequestTypeDef](#createdocumentationversionrequesttypedef)
-  - [CreateDomainNameRequestTypeDef](#createdomainnamerequesttypedef)
-  - [CreateModelRequestTypeDef](#createmodelrequesttypedef)
-  - [CreateRequestValidatorRequestTypeDef](#createrequestvalidatorrequesttypedef)
-  - [CreateResourceRequestTypeDef](#createresourcerequesttypedef)
-  - [CreateRestApiRequestTypeDef](#createrestapirequesttypedef)
-  - [CreateStageRequestTypeDef](#createstagerequesttypedef)
-  - [CreateUsagePlanKeyRequestTypeDef](#createusageplankeyrequesttypedef)
-  - [CreateUsagePlanRequestTypeDef](#createusageplanrequesttypedef)
-  - [CreateVpcLinkRequestTypeDef](#createvpclinkrequesttypedef)
-  - [DeleteApiKeyRequestTypeDef](#deleteapikeyrequesttypedef)
-  - [DeleteAuthorizerRequestTypeDef](#deleteauthorizerrequesttypedef)
-  - [DeleteBasePathMappingRequestTypeDef](#deletebasepathmappingrequesttypedef)
-  - [DeleteClientCertificateRequestTypeDef](#deleteclientcertificaterequesttypedef)
-  - [DeleteDeploymentRequestTypeDef](#deletedeploymentrequesttypedef)
-  - [DeleteDocumentationPartRequestTypeDef](#deletedocumentationpartrequesttypedef)
-  - [DeleteDocumentationVersionRequestTypeDef](#deletedocumentationversionrequesttypedef)
-  - [DeleteDomainNameRequestTypeDef](#deletedomainnamerequesttypedef)
-  - [DeleteGatewayResponseRequestTypeDef](#deletegatewayresponserequesttypedef)
-  - [DeleteIntegrationRequestTypeDef](#deleteintegrationrequesttypedef)
-  - [DeleteIntegrationResponseRequestTypeDef](#deleteintegrationresponserequesttypedef)
-  - [DeleteMethodRequestTypeDef](#deletemethodrequesttypedef)
-  - [DeleteMethodResponseRequestTypeDef](#deletemethodresponserequesttypedef)
-  - [DeleteModelRequestTypeDef](#deletemodelrequesttypedef)
-  - [DeleteRequestValidatorRequestTypeDef](#deleterequestvalidatorrequesttypedef)
-  - [DeleteResourceRequestTypeDef](#deleteresourcerequesttypedef)
-  - [DeleteRestApiRequestTypeDef](#deleterestapirequesttypedef)
-  - [DeleteStageRequestTypeDef](#deletestagerequesttypedef)
-  - [DeleteUsagePlanKeyRequestTypeDef](#deleteusageplankeyrequesttypedef)
-  - [DeleteUsagePlanRequestTypeDef](#deleteusageplanrequesttypedef)
-  - [DeleteVpcLinkRequestTypeDef](#deletevpclinkrequesttypedef)
+  - [ClientCertificateResponseMetadataTypeDef](#clientcertificateresponsemetadatatypedef)
+  - [ClientCertificateTypeDef](#clientcertificatetypedef)
+  - [ClientCertificatesTypeDef](#clientcertificatestypedef)
+  - [CreateApiKeyRequestRequestTypeDef](#createapikeyrequestrequesttypedef)
+  - [CreateAuthorizerRequestRequestTypeDef](#createauthorizerrequestrequesttypedef)
+  - [CreateBasePathMappingRequestRequestTypeDef](#createbasepathmappingrequestrequesttypedef)
+  - [CreateDeploymentRequestRequestTypeDef](#createdeploymentrequestrequesttypedef)
+  - [CreateDocumentationPartRequestRequestTypeDef](#createdocumentationpartrequestrequesttypedef)
+  - [CreateDocumentationVersionRequestRequestTypeDef](#createdocumentationversionrequestrequesttypedef)
+  - [CreateDomainNameRequestRequestTypeDef](#createdomainnamerequestrequesttypedef)
+  - [CreateModelRequestRequestTypeDef](#createmodelrequestrequesttypedef)
+  - [CreateRequestValidatorRequestRequestTypeDef](#createrequestvalidatorrequestrequesttypedef)
+  - [CreateResourceRequestRequestTypeDef](#createresourcerequestrequesttypedef)
+  - [CreateRestApiRequestRequestTypeDef](#createrestapirequestrequesttypedef)
+  - [CreateStageRequestRequestTypeDef](#createstagerequestrequesttypedef)
+  - [CreateUsagePlanKeyRequestRequestTypeDef](#createusageplankeyrequestrequesttypedef)
+  - [CreateUsagePlanRequestRequestTypeDef](#createusageplanrequestrequesttypedef)
+  - [CreateVpcLinkRequestRequestTypeDef](#createvpclinkrequestrequesttypedef)
+  - [DeleteApiKeyRequestRequestTypeDef](#deleteapikeyrequestrequesttypedef)
+  - [DeleteAuthorizerRequestRequestTypeDef](#deleteauthorizerrequestrequesttypedef)
+  - [DeleteBasePathMappingRequestRequestTypeDef](#deletebasepathmappingrequestrequesttypedef)
+  - [DeleteClientCertificateRequestRequestTypeDef](#deleteclientcertificaterequestrequesttypedef)
+  - [DeleteDeploymentRequestRequestTypeDef](#deletedeploymentrequestrequesttypedef)
+  - [DeleteDocumentationPartRequestRequestTypeDef](#deletedocumentationpartrequestrequesttypedef)
+  - [DeleteDocumentationVersionRequestRequestTypeDef](#deletedocumentationversionrequestrequesttypedef)
+  - [DeleteDomainNameRequestRequestTypeDef](#deletedomainnamerequestrequesttypedef)
+  - [DeleteGatewayResponseRequestRequestTypeDef](#deletegatewayresponserequestrequesttypedef)
+  - [DeleteIntegrationRequestRequestTypeDef](#deleteintegrationrequestrequesttypedef)
+  - [DeleteIntegrationResponseRequestRequestTypeDef](#deleteintegrationresponserequestrequesttypedef)
+  - [DeleteMethodRequestRequestTypeDef](#deletemethodrequestrequesttypedef)
+  - [DeleteMethodResponseRequestRequestTypeDef](#deletemethodresponserequestrequesttypedef)
+  - [DeleteModelRequestRequestTypeDef](#deletemodelrequestrequesttypedef)
+  - [DeleteRequestValidatorRequestRequestTypeDef](#deleterequestvalidatorrequestrequesttypedef)
+  - [DeleteResourceRequestRequestTypeDef](#deleteresourcerequestrequesttypedef)
+  - [DeleteRestApiRequestRequestTypeDef](#deleterestapirequestrequesttypedef)
+  - [DeleteStageRequestRequestTypeDef](#deletestagerequestrequesttypedef)
+  - [DeleteUsagePlanKeyRequestRequestTypeDef](#deleteusageplankeyrequestrequesttypedef)
+  - [DeleteUsagePlanRequestRequestTypeDef](#deleteusageplanrequestrequesttypedef)
+  - [DeleteVpcLinkRequestRequestTypeDef](#deletevpclinkrequestrequesttypedef)
   - [DeploymentCanarySettingsTypeDef](#deploymentcanarysettingstypedef)
-  - [DeploymentResponseTypeDef](#deploymentresponsetypedef)
-  - [DeploymentsResponseTypeDef](#deploymentsresponsetypedef)
-  - [DocumentationPartIdsResponseTypeDef](#documentationpartidsresponsetypedef)
+  - [DeploymentResponseMetadataTypeDef](#deploymentresponsemetadatatypedef)
+  - [DeploymentTypeDef](#deploymenttypedef)
+  - [DeploymentsTypeDef](#deploymentstypedef)
+  - [DocumentationPartIdsTypeDef](#documentationpartidstypedef)
   - [DocumentationPartLocationTypeDef](#documentationpartlocationtypedef)
-  - [DocumentationPartResponseTypeDef](#documentationpartresponsetypedef)
-  - [DocumentationPartsResponseTypeDef](#documentationpartsresponsetypedef)
-  - [DocumentationVersionResponseTypeDef](#documentationversionresponsetypedef)
-  - [DocumentationVersionsResponseTypeDef](#documentationversionsresponsetypedef)
-  - [DomainNameResponseTypeDef](#domainnameresponsetypedef)
-  - [DomainNamesResponseTypeDef](#domainnamesresponsetypedef)
+  - [DocumentationPartResponseMetadataTypeDef](#documentationpartresponsemetadatatypedef)
+  - [DocumentationPartTypeDef](#documentationparttypedef)
+  - [DocumentationPartsTypeDef](#documentationpartstypedef)
+  - [DocumentationVersionResponseMetadataTypeDef](#documentationversionresponsemetadatatypedef)
+  - [DocumentationVersionTypeDef](#documentationversiontypedef)
+  - [DocumentationVersionsTypeDef](#documentationversionstypedef)
+  - [DomainNameResponseMetadataTypeDef](#domainnameresponsemetadatatypedef)
+  - [DomainNameTypeDef](#domainnametypedef)
+  - [DomainNamesTypeDef](#domainnamestypedef)
   - [EndpointConfigurationTypeDef](#endpointconfigurationtypedef)
-  - [ExportResponseResponseTypeDef](#exportresponseresponsetypedef)
-  - [FlushStageAuthorizersCacheRequestTypeDef](#flushstageauthorizerscacherequesttypedef)
-  - [FlushStageCacheRequestTypeDef](#flushstagecacherequesttypedef)
-  - [GatewayResponseResponseTypeDef](#gatewayresponseresponsetypedef)
-  - [GatewayResponsesResponseTypeDef](#gatewayresponsesresponsetypedef)
-  - [GenerateClientCertificateRequestTypeDef](#generateclientcertificaterequesttypedef)
-  - [GetApiKeyRequestTypeDef](#getapikeyrequesttypedef)
-  - [GetApiKeysRequestTypeDef](#getapikeysrequesttypedef)
-  - [GetAuthorizerRequestTypeDef](#getauthorizerrequesttypedef)
-  - [GetAuthorizersRequestTypeDef](#getauthorizersrequesttypedef)
-  - [GetBasePathMappingRequestTypeDef](#getbasepathmappingrequesttypedef)
-  - [GetBasePathMappingsRequestTypeDef](#getbasepathmappingsrequesttypedef)
-  - [GetClientCertificateRequestTypeDef](#getclientcertificaterequesttypedef)
-  - [GetClientCertificatesRequestTypeDef](#getclientcertificatesrequesttypedef)
-  - [GetDeploymentRequestTypeDef](#getdeploymentrequesttypedef)
-  - [GetDeploymentsRequestTypeDef](#getdeploymentsrequesttypedef)
-  - [GetDocumentationPartRequestTypeDef](#getdocumentationpartrequesttypedef)
-  - [GetDocumentationPartsRequestTypeDef](#getdocumentationpartsrequesttypedef)
-  - [GetDocumentationVersionRequestTypeDef](#getdocumentationversionrequesttypedef)
-  - [GetDocumentationVersionsRequestTypeDef](#getdocumentationversionsrequesttypedef)
-  - [GetDomainNameRequestTypeDef](#getdomainnamerequesttypedef)
-  - [GetDomainNamesRequestTypeDef](#getdomainnamesrequesttypedef)
-  - [GetExportRequestTypeDef](#getexportrequesttypedef)
-  - [GetGatewayResponseRequestTypeDef](#getgatewayresponserequesttypedef)
-  - [GetGatewayResponsesRequestTypeDef](#getgatewayresponsesrequesttypedef)
-  - [GetIntegrationRequestTypeDef](#getintegrationrequesttypedef)
-  - [GetIntegrationResponseRequestTypeDef](#getintegrationresponserequesttypedef)
-  - [GetMethodRequestTypeDef](#getmethodrequesttypedef)
-  - [GetMethodResponseRequestTypeDef](#getmethodresponserequesttypedef)
-  - [GetModelRequestTypeDef](#getmodelrequesttypedef)
-  - [GetModelTemplateRequestTypeDef](#getmodeltemplaterequesttypedef)
-  - [GetModelsRequestTypeDef](#getmodelsrequesttypedef)
-  - [GetRequestValidatorRequestTypeDef](#getrequestvalidatorrequesttypedef)
-  - [GetRequestValidatorsRequestTypeDef](#getrequestvalidatorsrequesttypedef)
-  - [GetResourceRequestTypeDef](#getresourcerequesttypedef)
-  - [GetResourcesRequestTypeDef](#getresourcesrequesttypedef)
-  - [GetRestApiRequestTypeDef](#getrestapirequesttypedef)
-  - [GetRestApisRequestTypeDef](#getrestapisrequesttypedef)
-  - [GetSdkRequestTypeDef](#getsdkrequesttypedef)
-  - [GetSdkTypeRequestTypeDef](#getsdktyperequesttypedef)
-  - [GetSdkTypesRequestTypeDef](#getsdktypesrequesttypedef)
-  - [GetStageRequestTypeDef](#getstagerequesttypedef)
-  - [GetStagesRequestTypeDef](#getstagesrequesttypedef)
-  - [GetTagsRequestTypeDef](#gettagsrequesttypedef)
-  - [GetUsagePlanKeyRequestTypeDef](#getusageplankeyrequesttypedef)
-  - [GetUsagePlanKeysRequestTypeDef](#getusageplankeysrequesttypedef)
-  - [GetUsagePlanRequestTypeDef](#getusageplanrequesttypedef)
-  - [GetUsagePlansRequestTypeDef](#getusageplansrequesttypedef)
-  - [GetUsageRequestTypeDef](#getusagerequesttypedef)
-  - [GetVpcLinkRequestTypeDef](#getvpclinkrequesttypedef)
-  - [GetVpcLinksRequestTypeDef](#getvpclinksrequesttypedef)
-  - [ImportApiKeysRequestTypeDef](#importapikeysrequesttypedef)
-  - [ImportDocumentationPartsRequestTypeDef](#importdocumentationpartsrequesttypedef)
-  - [ImportRestApiRequestTypeDef](#importrestapirequesttypedef)
+  - [ExportResponseTypeDef](#exportresponsetypedef)
+  - [FlushStageAuthorizersCacheRequestRequestTypeDef](#flushstageauthorizerscacherequestrequesttypedef)
+  - [FlushStageCacheRequestRequestTypeDef](#flushstagecacherequestrequesttypedef)
+  - [GatewayResponseResponseMetadataTypeDef](#gatewayresponseresponsemetadatatypedef)
+  - [GatewayResponseTypeDef](#gatewayresponsetypedef)
+  - [GatewayResponsesTypeDef](#gatewayresponsestypedef)
+  - [GenerateClientCertificateRequestRequestTypeDef](#generateclientcertificaterequestrequesttypedef)
+  - [GetApiKeyRequestRequestTypeDef](#getapikeyrequestrequesttypedef)
+  - [GetApiKeysRequestRequestTypeDef](#getapikeysrequestrequesttypedef)
+  - [GetAuthorizerRequestRequestTypeDef](#getauthorizerrequestrequesttypedef)
+  - [GetAuthorizersRequestRequestTypeDef](#getauthorizersrequestrequesttypedef)
+  - [GetBasePathMappingRequestRequestTypeDef](#getbasepathmappingrequestrequesttypedef)
+  - [GetBasePathMappingsRequestRequestTypeDef](#getbasepathmappingsrequestrequesttypedef)
+  - [GetClientCertificateRequestRequestTypeDef](#getclientcertificaterequestrequesttypedef)
+  - [GetClientCertificatesRequestRequestTypeDef](#getclientcertificatesrequestrequesttypedef)
+  - [GetDeploymentRequestRequestTypeDef](#getdeploymentrequestrequesttypedef)
+  - [GetDeploymentsRequestRequestTypeDef](#getdeploymentsrequestrequesttypedef)
+  - [GetDocumentationPartRequestRequestTypeDef](#getdocumentationpartrequestrequesttypedef)
+  - [GetDocumentationPartsRequestRequestTypeDef](#getdocumentationpartsrequestrequesttypedef)
+  - [GetDocumentationVersionRequestRequestTypeDef](#getdocumentationversionrequestrequesttypedef)
+  - [GetDocumentationVersionsRequestRequestTypeDef](#getdocumentationversionsrequestrequesttypedef)
+  - [GetDomainNameRequestRequestTypeDef](#getdomainnamerequestrequesttypedef)
+  - [GetDomainNamesRequestRequestTypeDef](#getdomainnamesrequestrequesttypedef)
+  - [GetExportRequestRequestTypeDef](#getexportrequestrequesttypedef)
+  - [GetGatewayResponseRequestRequestTypeDef](#getgatewayresponserequestrequesttypedef)
+  - [GetGatewayResponsesRequestRequestTypeDef](#getgatewayresponsesrequestrequesttypedef)
+  - [GetIntegrationRequestRequestTypeDef](#getintegrationrequestrequesttypedef)
+  - [GetIntegrationResponseRequestRequestTypeDef](#getintegrationresponserequestrequesttypedef)
+  - [GetMethodRequestRequestTypeDef](#getmethodrequestrequesttypedef)
+  - [GetMethodResponseRequestRequestTypeDef](#getmethodresponserequestrequesttypedef)
+  - [GetModelRequestRequestTypeDef](#getmodelrequestrequesttypedef)
+  - [GetModelTemplateRequestRequestTypeDef](#getmodeltemplaterequestrequesttypedef)
+  - [GetModelsRequestRequestTypeDef](#getmodelsrequestrequesttypedef)
+  - [GetRequestValidatorRequestRequestTypeDef](#getrequestvalidatorrequestrequesttypedef)
+  - [GetRequestValidatorsRequestRequestTypeDef](#getrequestvalidatorsrequestrequesttypedef)
+  - [GetResourceRequestRequestTypeDef](#getresourcerequestrequesttypedef)
+  - [GetResourcesRequestRequestTypeDef](#getresourcesrequestrequesttypedef)
+  - [GetRestApiRequestRequestTypeDef](#getrestapirequestrequesttypedef)
+  - [GetRestApisRequestRequestTypeDef](#getrestapisrequestrequesttypedef)
+  - [GetSdkRequestRequestTypeDef](#getsdkrequestrequesttypedef)
+  - [GetSdkTypeRequestRequestTypeDef](#getsdktyperequestrequesttypedef)
+  - [GetSdkTypesRequestRequestTypeDef](#getsdktypesrequestrequesttypedef)
+  - [GetStageRequestRequestTypeDef](#getstagerequestrequesttypedef)
+  - [GetStagesRequestRequestTypeDef](#getstagesrequestrequesttypedef)
+  - [GetTagsRequestRequestTypeDef](#gettagsrequestrequesttypedef)
+  - [GetUsagePlanKeyRequestRequestTypeDef](#getusageplankeyrequestrequesttypedef)
+  - [GetUsagePlanKeysRequestRequestTypeDef](#getusageplankeysrequestrequesttypedef)
+  - [GetUsagePlanRequestRequestTypeDef](#getusageplanrequestrequesttypedef)
+  - [GetUsagePlansRequestRequestTypeDef](#getusageplansrequestrequesttypedef)
+  - [GetUsageRequestRequestTypeDef](#getusagerequestrequesttypedef)
+  - [GetVpcLinkRequestRequestTypeDef](#getvpclinkrequestrequesttypedef)
+  - [GetVpcLinksRequestRequestTypeDef](#getvpclinksrequestrequesttypedef)
+  - [ImportApiKeysRequestRequestTypeDef](#importapikeysrequestrequesttypedef)
+  - [ImportDocumentationPartsRequestRequestTypeDef](#importdocumentationpartsrequestrequesttypedef)
+  - [ImportRestApiRequestRequestTypeDef](#importrestapirequestrequesttypedef)
+  - [IntegrationResponseMetadataTypeDef](#integrationresponsemetadatatypedef)
+  - [IntegrationResponseResponseMetadataTypeDef](#integrationresponseresponsemetadatatypedef)
   - [IntegrationResponseTypeDef](#integrationresponsetypedef)
   - [IntegrationTypeDef](#integrationtypedef)
+  - [MethodResponseMetadataTypeDef](#methodresponsemetadatatypedef)
+  - [MethodResponseResponseMetadataTypeDef](#methodresponseresponsemetadatatypedef)
   - [MethodResponseTypeDef](#methodresponsetypedef)
   - [MethodSettingTypeDef](#methodsettingtypedef)
   - [MethodSnapshotTypeDef](#methodsnapshottypedef)
   - [MethodTypeDef](#methodtypedef)
-  - [ModelResponseTypeDef](#modelresponsetypedef)
-  - [ModelsResponseTypeDef](#modelsresponsetypedef)
+  - [ModelResponseMetadataTypeDef](#modelresponsemetadatatypedef)
+  - [ModelTypeDef](#modeltypedef)
+  - [ModelsTypeDef](#modelstypedef)
   - [MutualTlsAuthenticationInputTypeDef](#mutualtlsauthenticationinputtypedef)
   - [MutualTlsAuthenticationTypeDef](#mutualtlsauthenticationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PatchOperationTypeDef](#patchoperationtypedef)
-  - [PutGatewayResponseRequestTypeDef](#putgatewayresponserequesttypedef)
-  - [PutIntegrationRequestTypeDef](#putintegrationrequesttypedef)
-  - [PutIntegrationResponseRequestTypeDef](#putintegrationresponserequesttypedef)
-  - [PutMethodRequestTypeDef](#putmethodrequesttypedef)
-  - [PutMethodResponseRequestTypeDef](#putmethodresponserequesttypedef)
-  - [PutRestApiRequestTypeDef](#putrestapirequesttypedef)
+  - [PutGatewayResponseRequestRequestTypeDef](#putgatewayresponserequestrequesttypedef)
+  - [PutIntegrationRequestRequestTypeDef](#putintegrationrequestrequesttypedef)
+  - [PutIntegrationResponseRequestRequestTypeDef](#putintegrationresponserequestrequesttypedef)
+  - [PutMethodRequestRequestTypeDef](#putmethodrequestrequesttypedef)
+  - [PutMethodResponseRequestRequestTypeDef](#putmethodresponserequestrequesttypedef)
+  - [PutRestApiRequestRequestTypeDef](#putrestapirequestrequesttypedef)
   - [QuotaSettingsTypeDef](#quotasettingstypedef)
-  - [RequestValidatorResponseTypeDef](#requestvalidatorresponsetypedef)
-  - [RequestValidatorsResponseTypeDef](#requestvalidatorsresponsetypedef)
-  - [ResourceResponseTypeDef](#resourceresponsetypedef)
-  - [ResourcesResponseTypeDef](#resourcesresponsetypedef)
+  - [RequestValidatorResponseMetadataTypeDef](#requestvalidatorresponsemetadatatypedef)
+  - [RequestValidatorTypeDef](#requestvalidatortypedef)
+  - [RequestValidatorsTypeDef](#requestvalidatorstypedef)
+  - [ResourceResponseMetadataTypeDef](#resourceresponsemetadatatypedef)
+  - [ResourceTypeDef](#resourcetypedef)
+  - [ResourcesTypeDef](#resourcestypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestApiResponseTypeDef](#restapiresponsetypedef)
-  - [RestApisResponseTypeDef](#restapisresponsetypedef)
+  - [RestApiResponseMetadataTypeDef](#restapiresponsemetadatatypedef)
+  - [RestApiTypeDef](#restapitypedef)
+  - [RestApisTypeDef](#restapistypedef)
   - [SdkConfigurationPropertyTypeDef](#sdkconfigurationpropertytypedef)
-  - [SdkResponseResponseTypeDef](#sdkresponseresponsetypedef)
-  - [SdkTypeResponseTypeDef](#sdktyperesponsetypedef)
-  - [SdkTypesResponseTypeDef](#sdktypesresponsetypedef)
+  - [SdkResponseTypeDef](#sdkresponsetypedef)
+  - [SdkTypeResponseMetadataTypeDef](#sdktyperesponsemetadatatypedef)
+  - [SdkTypeTypeDef](#sdktypetypedef)
+  - [SdkTypesTypeDef](#sdktypestypedef)
   - [StageKeyTypeDef](#stagekeytypedef)
-  - [StageResponseTypeDef](#stageresponsetypedef)
-  - [StagesResponseTypeDef](#stagesresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [TagsResponseTypeDef](#tagsresponsetypedef)
-  - [TemplateResponseTypeDef](#templateresponsetypedef)
-  - [TestInvokeAuthorizerRequestTypeDef](#testinvokeauthorizerrequesttypedef)
-  - [TestInvokeAuthorizerResponseResponseTypeDef](#testinvokeauthorizerresponseresponsetypedef)
-  - [TestInvokeMethodRequestTypeDef](#testinvokemethodrequesttypedef)
-  - [TestInvokeMethodResponseResponseTypeDef](#testinvokemethodresponseresponsetypedef)
+  - [StageResponseMetadataTypeDef](#stageresponsemetadatatypedef)
+  - [StageTypeDef](#stagetypedef)
+  - [StagesTypeDef](#stagestypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [TagsTypeDef](#tagstypedef)
+  - [TemplateTypeDef](#templatetypedef)
+  - [TestInvokeAuthorizerRequestRequestTypeDef](#testinvokeauthorizerrequestrequesttypedef)
+  - [TestInvokeAuthorizerResponseTypeDef](#testinvokeauthorizerresponsetypedef)
+  - [TestInvokeMethodRequestRequestTypeDef](#testinvokemethodrequestrequesttypedef)
+  - [TestInvokeMethodResponseTypeDef](#testinvokemethodresponsetypedef)
   - [ThrottleSettingsTypeDef](#throttlesettingstypedef)
   - [TlsConfigTypeDef](#tlsconfigtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateAccountRequestTypeDef](#updateaccountrequesttypedef)
-  - [UpdateApiKeyRequestTypeDef](#updateapikeyrequesttypedef)
-  - [UpdateAuthorizerRequestTypeDef](#updateauthorizerrequesttypedef)
-  - [UpdateBasePathMappingRequestTypeDef](#updatebasepathmappingrequesttypedef)
-  - [UpdateClientCertificateRequestTypeDef](#updateclientcertificaterequesttypedef)
-  - [UpdateDeploymentRequestTypeDef](#updatedeploymentrequesttypedef)
-  - [UpdateDocumentationPartRequestTypeDef](#updatedocumentationpartrequesttypedef)
-  - [UpdateDocumentationVersionRequestTypeDef](#updatedocumentationversionrequesttypedef)
-  - [UpdateDomainNameRequestTypeDef](#updatedomainnamerequesttypedef)
-  - [UpdateGatewayResponseRequestTypeDef](#updategatewayresponserequesttypedef)
-  - [UpdateIntegrationRequestTypeDef](#updateintegrationrequesttypedef)
-  - [UpdateIntegrationResponseRequestTypeDef](#updateintegrationresponserequesttypedef)
-  - [UpdateMethodRequestTypeDef](#updatemethodrequesttypedef)
-  - [UpdateMethodResponseRequestTypeDef](#updatemethodresponserequesttypedef)
-  - [UpdateModelRequestTypeDef](#updatemodelrequesttypedef)
-  - [UpdateRequestValidatorRequestTypeDef](#updaterequestvalidatorrequesttypedef)
-  - [UpdateResourceRequestTypeDef](#updateresourcerequesttypedef)
-  - [UpdateRestApiRequestTypeDef](#updaterestapirequesttypedef)
-  - [UpdateStageRequestTypeDef](#updatestagerequesttypedef)
-  - [UpdateUsagePlanRequestTypeDef](#updateusageplanrequesttypedef)
-  - [UpdateUsageRequestTypeDef](#updateusagerequesttypedef)
-  - [UpdateVpcLinkRequestTypeDef](#updatevpclinkrequesttypedef)
-  - [UsagePlanKeyResponseTypeDef](#usageplankeyresponsetypedef)
-  - [UsagePlanKeysResponseTypeDef](#usageplankeysresponsetypedef)
-  - [UsagePlanResponseTypeDef](#usageplanresponsetypedef)
-  - [UsagePlansResponseTypeDef](#usageplansresponsetypedef)
-  - [UsageResponseTypeDef](#usageresponsetypedef)
-  - [VpcLinkResponseTypeDef](#vpclinkresponsetypedef)
-  - [VpcLinksResponseTypeDef](#vpclinksresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAccountRequestRequestTypeDef](#updateaccountrequestrequesttypedef)
+  - [UpdateApiKeyRequestRequestTypeDef](#updateapikeyrequestrequesttypedef)
+  - [UpdateAuthorizerRequestRequestTypeDef](#updateauthorizerrequestrequesttypedef)
+  - [UpdateBasePathMappingRequestRequestTypeDef](#updatebasepathmappingrequestrequesttypedef)
+  - [UpdateClientCertificateRequestRequestTypeDef](#updateclientcertificaterequestrequesttypedef)
+  - [UpdateDeploymentRequestRequestTypeDef](#updatedeploymentrequestrequesttypedef)
+  - [UpdateDocumentationPartRequestRequestTypeDef](#updatedocumentationpartrequestrequesttypedef)
+  - [UpdateDocumentationVersionRequestRequestTypeDef](#updatedocumentationversionrequestrequesttypedef)
+  - [UpdateDomainNameRequestRequestTypeDef](#updatedomainnamerequestrequesttypedef)
+  - [UpdateGatewayResponseRequestRequestTypeDef](#updategatewayresponserequestrequesttypedef)
+  - [UpdateIntegrationRequestRequestTypeDef](#updateintegrationrequestrequesttypedef)
+  - [UpdateIntegrationResponseRequestRequestTypeDef](#updateintegrationresponserequestrequesttypedef)
+  - [UpdateMethodRequestRequestTypeDef](#updatemethodrequestrequesttypedef)
+  - [UpdateMethodResponseRequestRequestTypeDef](#updatemethodresponserequestrequesttypedef)
+  - [UpdateModelRequestRequestTypeDef](#updatemodelrequestrequesttypedef)
+  - [UpdateRequestValidatorRequestRequestTypeDef](#updaterequestvalidatorrequestrequesttypedef)
+  - [UpdateResourceRequestRequestTypeDef](#updateresourcerequestrequesttypedef)
+  - [UpdateRestApiRequestRequestTypeDef](#updaterestapirequestrequesttypedef)
+  - [UpdateStageRequestRequestTypeDef](#updatestagerequestrequesttypedef)
+  - [UpdateUsagePlanRequestRequestTypeDef](#updateusageplanrequestrequesttypedef)
+  - [UpdateUsageRequestRequestTypeDef](#updateusagerequestrequesttypedef)
+  - [UpdateVpcLinkRequestRequestTypeDef](#updatevpclinkrequestrequesttypedef)
+  - [UsagePlanKeyResponseMetadataTypeDef](#usageplankeyresponsemetadatatypedef)
+  - [UsagePlanKeyTypeDef](#usageplankeytypedef)
+  - [UsagePlanKeysTypeDef](#usageplankeystypedef)
+  - [UsagePlanResponseMetadataTypeDef](#usageplanresponsemetadatatypedef)
+  - [UsagePlanTypeDef](#usageplantypedef)
+  - [UsagePlansTypeDef](#usageplanstypedef)
+  - [UsageTypeDef](#usagetypedef)
+  - [VpcLinkResponseMetadataTypeDef](#vpclinkresponsemetadatatypedef)
+  - [VpcLinkTypeDef](#vpclinktypedef)
+  - [VpcLinksTypeDef](#vpclinkstypedef)
 
 ## AccessLogSettingsTypeDef
 
@@ -207,10 +229,10 @@ Optional fields:
 - `format`: `str`
 - `destinationArn`: `str`
 
-## AccountResponseTypeDef
+## AccountTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import AccountResponseTypeDef
+from mypy_boto3_apigateway.type_defs import AccountTypeDef
 ```
 
 Required fields:
@@ -223,10 +245,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ApiKeyIdsResponseTypeDef
+## ApiKeyIdsTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ApiKeyIdsResponseTypeDef
+from mypy_boto3_apigateway.type_defs import ApiKeyIdsTypeDef
 ```
 
 Required fields:
@@ -236,10 +258,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ApiKeyResponseTypeDef
+## ApiKeyResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ApiKeyResponseTypeDef
+from mypy_boto3_apigateway.type_defs import ApiKeyResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -257,18 +279,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ApiKeysResponseTypeDef
+## ApiKeyTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ApiKeysResponseTypeDef
+from mypy_boto3_apigateway.type_defs import ApiKeyTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `value`: `str`
+- `name`: `str`
+- `customerId`: `str`
+- `description`: `str`
+- `enabled`: `bool`
+- `createdDate`: `datetime`
+- `lastUpdatedDate`: `datetime`
+- `stageKeys`: `List`\[`str`\]
+- `tags`: `Dict`\[`str`, `str`\]
+
+## ApiKeysTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import ApiKeysTypeDef
 ```
 
 Required fields:
 
 - `warnings`: `List`\[`str`\]
 - `position`: `str`
-- `items`:
-  `List`\[[ApiKeyResponseTypeDef](./type_defs.md#apikeyresponsetypedef)\]
+- `items`: `List`\[[ApiKeyTypeDef](./type_defs.md#apikeytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -285,10 +325,10 @@ Optional fields:
 - `throttle`: `Dict`\[`str`,
   [ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef)\]
 
-## AuthorizerResponseTypeDef
+## AuthorizerResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import AuthorizerResponseTypeDef
+from mypy_boto3_apigateway.type_defs import AuthorizerResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -306,24 +346,42 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AuthorizersResponseTypeDef
+## AuthorizerTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import AuthorizersResponseTypeDef
+from mypy_boto3_apigateway.type_defs import AuthorizerTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `name`: `str`
+- `type`: [AuthorizerTypeType](./literals.md#authorizertypetype)
+- `providerARNs`: `List`\[`str`\]
+- `authType`: `str`
+- `authorizerUri`: `str`
+- `authorizerCredentials`: `str`
+- `identitySource`: `str`
+- `identityValidationExpression`: `str`
+- `authorizerResultTtlInSeconds`: `int`
+
+## AuthorizersTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import AuthorizersTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
-- `items`:
-  `List`\[[AuthorizerResponseTypeDef](./type_defs.md#authorizerresponsetypedef)\]
+- `items`: `List`\[[AuthorizerTypeDef](./type_defs.md#authorizertypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BasePathMappingResponseTypeDef
+## BasePathMappingResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import BasePathMappingResponseTypeDef
+from mypy_boto3_apigateway.type_defs import BasePathMappingResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -334,17 +392,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BasePathMappingsResponseTypeDef
+## BasePathMappingTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import BasePathMappingsResponseTypeDef
+from mypy_boto3_apigateway.type_defs import BasePathMappingTypeDef
+```
+
+Optional fields:
+
+- `basePath`: `str`
+- `restApiId`: `str`
+- `stage`: `str`
+
+## BasePathMappingsTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import BasePathMappingsTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
 - `items`:
-  `List`\[[BasePathMappingResponseTypeDef](./type_defs.md#basepathmappingresponsetypedef)\]
+  `List`\[[BasePathMappingTypeDef](./type_defs.md#basepathmappingtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -361,10 +431,10 @@ Optional fields:
 - `stageVariableOverrides`: `Dict`\[`str`, `str`\]
 - `useStageCache`: `bool`
 
-## ClientCertificateResponseTypeDef
+## ClientCertificateResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ClientCertificateResponseTypeDef
+from mypy_boto3_apigateway.type_defs import ClientCertificateResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -378,24 +448,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ClientCertificatesResponseTypeDef
+## ClientCertificateTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ClientCertificatesResponseTypeDef
+from mypy_boto3_apigateway.type_defs import ClientCertificateTypeDef
+```
+
+Optional fields:
+
+- `clientCertificateId`: `str`
+- `description`: `str`
+- `pemEncodedCertificate`: `str`
+- `createdDate`: `datetime`
+- `expirationDate`: `datetime`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## ClientCertificatesTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import ClientCertificatesTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
 - `items`:
-  `List`\[[ClientCertificateResponseTypeDef](./type_defs.md#clientcertificateresponsetypedef)\]
+  `List`\[[ClientCertificateTypeDef](./type_defs.md#clientcertificatetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateApiKeyRequestTypeDef
+## CreateApiKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateApiKeyRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateApiKeyRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -409,10 +494,10 @@ Optional fields:
 - `customerId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateAuthorizerRequestTypeDef
+## CreateAuthorizerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateAuthorizerRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateAuthorizerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -431,10 +516,10 @@ Optional fields:
 - `identityValidationExpression`: `str`
 - `authorizerResultTtlInSeconds`: `int`
 
-## CreateBasePathMappingRequestTypeDef
+## CreateBasePathMappingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateBasePathMappingRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateBasePathMappingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -447,10 +532,10 @@ Optional fields:
 - `basePath`: `str`
 - `stage`: `str`
 
-## CreateDeploymentRequestTypeDef
+## CreateDeploymentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateDeploymentRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateDeploymentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -470,10 +555,10 @@ Optional fields:
   [DeploymentCanarySettingsTypeDef](./type_defs.md#deploymentcanarysettingstypedef)
 - `tracingEnabled`: `bool`
 
-## CreateDocumentationPartRequestTypeDef
+## CreateDocumentationPartRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateDocumentationPartRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateDocumentationPartRequestRequestTypeDef
 ```
 
 Required fields:
@@ -483,10 +568,10 @@ Required fields:
   [DocumentationPartLocationTypeDef](./type_defs.md#documentationpartlocationtypedef)
 - `properties`: `str`
 
-## CreateDocumentationVersionRequestTypeDef
+## CreateDocumentationVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateDocumentationVersionRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateDocumentationVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -499,10 +584,10 @@ Optional fields:
 - `stageName`: `str`
 - `description`: `str`
 
-## CreateDomainNameRequestTypeDef
+## CreateDomainNameRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateDomainNameRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateDomainNameRequestRequestTypeDef
 ```
 
 Required fields:
@@ -525,10 +610,10 @@ Optional fields:
 - `mutualTlsAuthentication`:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
 
-## CreateModelRequestTypeDef
+## CreateModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateModelRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -542,10 +627,10 @@ Optional fields:
 - `description`: `str`
 - `schema`: `str`
 
-## CreateRequestValidatorRequestTypeDef
+## CreateRequestValidatorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateRequestValidatorRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateRequestValidatorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -558,10 +643,10 @@ Optional fields:
 - `validateRequestBody`: `bool`
 - `validateRequestParameters`: `bool`
 
-## CreateResourceRequestTypeDef
+## CreateResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateResourceRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -570,10 +655,10 @@ Required fields:
 - `parentId`: `str`
 - `pathPart`: `str`
 
-## CreateRestApiRequestTypeDef
+## CreateRestApiRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateRestApiRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateRestApiRequestRequestTypeDef
 ```
 
 Required fields:
@@ -594,10 +679,10 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `disableExecuteApiEndpoint`: `bool`
 
-## CreateStageRequestTypeDef
+## CreateStageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateStageRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateStageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -619,10 +704,10 @@ Optional fields:
 - `tracingEnabled`: `bool`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateUsagePlanKeyRequestTypeDef
+## CreateUsagePlanKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateUsagePlanKeyRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateUsagePlanKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -631,10 +716,10 @@ Required fields:
 - `keyId`: `str`
 - `keyType`: `str`
 
-## CreateUsagePlanRequestTypeDef
+## CreateUsagePlanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateUsagePlanRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateUsagePlanRequestRequestTypeDef
 ```
 
 Required fields:
@@ -649,10 +734,10 @@ Optional fields:
 - `quota`: [QuotaSettingsTypeDef](./type_defs.md#quotasettingstypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateVpcLinkRequestTypeDef
+## CreateVpcLinkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import CreateVpcLinkRequestTypeDef
+from mypy_boto3_apigateway.type_defs import CreateVpcLinkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -665,20 +750,20 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## DeleteApiKeyRequestTypeDef
+## DeleteApiKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteApiKeyRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteApiKeyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `apiKey`: `str`
 
-## DeleteAuthorizerRequestTypeDef
+## DeleteAuthorizerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteAuthorizerRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteAuthorizerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -686,10 +771,10 @@ Required fields:
 - `restApiId`: `str`
 - `authorizerId`: `str`
 
-## DeleteBasePathMappingRequestTypeDef
+## DeleteBasePathMappingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteBasePathMappingRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteBasePathMappingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -697,20 +782,20 @@ Required fields:
 - `domainName`: `str`
 - `basePath`: `str`
 
-## DeleteClientCertificateRequestTypeDef
+## DeleteClientCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteClientCertificateRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteClientCertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `clientCertificateId`: `str`
 
-## DeleteDeploymentRequestTypeDef
+## DeleteDeploymentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteDeploymentRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteDeploymentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -718,10 +803,10 @@ Required fields:
 - `restApiId`: `str`
 - `deploymentId`: `str`
 
-## DeleteDocumentationPartRequestTypeDef
+## DeleteDocumentationPartRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteDocumentationPartRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteDocumentationPartRequestRequestTypeDef
 ```
 
 Required fields:
@@ -729,10 +814,10 @@ Required fields:
 - `restApiId`: `str`
 - `documentationPartId`: `str`
 
-## DeleteDocumentationVersionRequestTypeDef
+## DeleteDocumentationVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteDocumentationVersionRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteDocumentationVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -740,20 +825,20 @@ Required fields:
 - `restApiId`: `str`
 - `documentationVersion`: `str`
 
-## DeleteDomainNameRequestTypeDef
+## DeleteDomainNameRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteDomainNameRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteDomainNameRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `domainName`: `str`
 
-## DeleteGatewayResponseRequestTypeDef
+## DeleteGatewayResponseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteGatewayResponseRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteGatewayResponseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -762,10 +847,10 @@ Required fields:
 - `responseType`:
   [GatewayResponseTypeType](./literals.md#gatewayresponsetypetype)
 
-## DeleteIntegrationRequestTypeDef
+## DeleteIntegrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteIntegrationRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteIntegrationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -774,35 +859,10 @@ Required fields:
 - `resourceId`: `str`
 - `httpMethod`: `str`
 
-## DeleteIntegrationResponseRequestTypeDef
+## DeleteIntegrationResponseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteIntegrationResponseRequestTypeDef
-```
-
-Required fields:
-
-- `restApiId`: `str`
-- `resourceId`: `str`
-- `httpMethod`: `str`
-- `statusCode`: `str`
-
-## DeleteMethodRequestTypeDef
-
-```python
-from mypy_boto3_apigateway.type_defs import DeleteMethodRequestTypeDef
-```
-
-Required fields:
-
-- `restApiId`: `str`
-- `resourceId`: `str`
-- `httpMethod`: `str`
-
-## DeleteMethodResponseRequestTypeDef
-
-```python
-from mypy_boto3_apigateway.type_defs import DeleteMethodResponseRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteIntegrationResponseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -812,10 +872,35 @@ Required fields:
 - `httpMethod`: `str`
 - `statusCode`: `str`
 
-## DeleteModelRequestTypeDef
+## DeleteMethodRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteModelRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteMethodRequestRequestTypeDef
+```
+
+Required fields:
+
+- `restApiId`: `str`
+- `resourceId`: `str`
+- `httpMethod`: `str`
+
+## DeleteMethodResponseRequestRequestTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import DeleteMethodResponseRequestRequestTypeDef
+```
+
+Required fields:
+
+- `restApiId`: `str`
+- `resourceId`: `str`
+- `httpMethod`: `str`
+- `statusCode`: `str`
+
+## DeleteModelRequestRequestTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import DeleteModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -823,10 +908,10 @@ Required fields:
 - `restApiId`: `str`
 - `modelName`: `str`
 
-## DeleteRequestValidatorRequestTypeDef
+## DeleteRequestValidatorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteRequestValidatorRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteRequestValidatorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -834,10 +919,10 @@ Required fields:
 - `restApiId`: `str`
 - `requestValidatorId`: `str`
 
-## DeleteResourceRequestTypeDef
+## DeleteResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteResourceRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -845,20 +930,20 @@ Required fields:
 - `restApiId`: `str`
 - `resourceId`: `str`
 
-## DeleteRestApiRequestTypeDef
+## DeleteRestApiRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteRestApiRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteRestApiRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `restApiId`: `str`
 
-## DeleteStageRequestTypeDef
+## DeleteStageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteStageRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteStageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -866,10 +951,10 @@ Required fields:
 - `restApiId`: `str`
 - `stageName`: `str`
 
-## DeleteUsagePlanKeyRequestTypeDef
+## DeleteUsagePlanKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteUsagePlanKeyRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteUsagePlanKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -877,20 +962,20 @@ Required fields:
 - `usagePlanId`: `str`
 - `keyId`: `str`
 
-## DeleteUsagePlanRequestTypeDef
+## DeleteUsagePlanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteUsagePlanRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteUsagePlanRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `usagePlanId`: `str`
 
-## DeleteVpcLinkRequestTypeDef
+## DeleteVpcLinkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeleteVpcLinkRequestTypeDef
+from mypy_boto3_apigateway.type_defs import DeleteVpcLinkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -909,10 +994,10 @@ Optional fields:
 - `stageVariableOverrides`: `Dict`\[`str`, `str`\]
 - `useStageCache`: `bool`
 
-## DeploymentResponseTypeDef
+## DeploymentResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeploymentResponseTypeDef
+from mypy_boto3_apigateway.type_defs import DeploymentResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -925,24 +1010,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeploymentsResponseTypeDef
+## DeploymentTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DeploymentsResponseTypeDef
+from mypy_boto3_apigateway.type_defs import DeploymentTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `description`: `str`
+- `createdDate`: `datetime`
+- `apiSummary`: `Dict`\[`str`, `Dict`\[`str`,
+  [MethodSnapshotTypeDef](./type_defs.md#methodsnapshottypedef)\]\]
+
+## DeploymentsTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import DeploymentsTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
-- `items`:
-  `List`\[[DeploymentResponseTypeDef](./type_defs.md#deploymentresponsetypedef)\]
+- `items`: `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DocumentationPartIdsResponseTypeDef
+## DocumentationPartIdsTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DocumentationPartIdsResponseTypeDef
+from mypy_boto3_apigateway.type_defs import DocumentationPartIdsTypeDef
 ```
 
 Required fields:
@@ -969,10 +1067,10 @@ Optional fields:
 - `statusCode`: `str`
 - `name`: `str`
 
-## DocumentationPartResponseTypeDef
+## DocumentationPartResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DocumentationPartResponseTypeDef
+from mypy_boto3_apigateway.type_defs import DocumentationPartResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -984,24 +1082,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DocumentationPartsResponseTypeDef
+## DocumentationPartTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DocumentationPartsResponseTypeDef
+from mypy_boto3_apigateway.type_defs import DocumentationPartTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `location`:
+  [DocumentationPartLocationTypeDef](./type_defs.md#documentationpartlocationtypedef)
+- `properties`: `str`
+
+## DocumentationPartsTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import DocumentationPartsTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
 - `items`:
-  `List`\[[DocumentationPartResponseTypeDef](./type_defs.md#documentationpartresponsetypedef)\]
+  `List`\[[DocumentationPartTypeDef](./type_defs.md#documentationparttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DocumentationVersionResponseTypeDef
+## DocumentationVersionResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DocumentationVersionResponseTypeDef
+from mypy_boto3_apigateway.type_defs import DocumentationVersionResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -1012,24 +1123,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DocumentationVersionsResponseTypeDef
+## DocumentationVersionTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DocumentationVersionsResponseTypeDef
+from mypy_boto3_apigateway.type_defs import DocumentationVersionTypeDef
+```
+
+Optional fields:
+
+- `version`: `str`
+- `createdDate`: `datetime`
+- `description`: `str`
+
+## DocumentationVersionsTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import DocumentationVersionsTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
 - `items`:
-  `List`\[[DocumentationVersionResponseTypeDef](./type_defs.md#documentationversionresponsetypedef)\]
+  `List`\[[DocumentationVersionTypeDef](./type_defs.md#documentationversiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DomainNameResponseTypeDef
+## DomainNameResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DomainNameResponseTypeDef
+from mypy_boto3_apigateway.type_defs import DomainNameResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -1056,17 +1179,44 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DomainNamesResponseTypeDef
+## DomainNameTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import DomainNamesResponseTypeDef
+from mypy_boto3_apigateway.type_defs import DomainNameTypeDef
+```
+
+Optional fields:
+
+- `domainName`: `str`
+- `certificateName`: `str`
+- `certificateArn`: `str`
+- `certificateUploadDate`: `datetime`
+- `regionalDomainName`: `str`
+- `regionalHostedZoneId`: `str`
+- `regionalCertificateName`: `str`
+- `regionalCertificateArn`: `str`
+- `distributionDomainName`: `str`
+- `distributionHostedZoneId`: `str`
+- `endpointConfiguration`:
+  [EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)
+- `domainNameStatus`:
+  [DomainNameStatusType](./literals.md#domainnamestatustype)
+- `domainNameStatusMessage`: `str`
+- `securityPolicy`: [SecurityPolicyType](./literals.md#securitypolicytype)
+- `tags`: `Dict`\[`str`, `str`\]
+- `mutualTlsAuthentication`:
+  [MutualTlsAuthenticationTypeDef](./type_defs.md#mutualtlsauthenticationtypedef)
+
+## DomainNamesTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import DomainNamesTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
-- `items`:
-  `List`\[[DomainNameResponseTypeDef](./type_defs.md#domainnameresponsetypedef)\]
+- `items`: `List`\[[DomainNameTypeDef](./type_defs.md#domainnametypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1081,10 +1231,10 @@ Optional fields:
 - `types`: `List`\[[EndpointTypeType](./literals.md#endpointtypetype)\]
 - `vpcEndpointIds`: `List`\[`str`\]
 
-## ExportResponseResponseTypeDef
+## ExportResponseTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ExportResponseResponseTypeDef
+from mypy_boto3_apigateway.type_defs import ExportResponseTypeDef
 ```
 
 Required fields:
@@ -1095,10 +1245,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## FlushStageAuthorizersCacheRequestTypeDef
+## FlushStageAuthorizersCacheRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import FlushStageAuthorizersCacheRequestTypeDef
+from mypy_boto3_apigateway.type_defs import FlushStageAuthorizersCacheRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1106,10 +1256,10 @@ Required fields:
 - `restApiId`: `str`
 - `stageName`: `str`
 
-## FlushStageCacheRequestTypeDef
+## FlushStageCacheRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import FlushStageCacheRequestTypeDef
+from mypy_boto3_apigateway.type_defs import FlushStageCacheRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1117,10 +1267,10 @@ Required fields:
 - `restApiId`: `str`
 - `stageName`: `str`
 
-## GatewayResponseResponseTypeDef
+## GatewayResponseResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GatewayResponseResponseTypeDef
+from mypy_boto3_apigateway.type_defs import GatewayResponseResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -1134,24 +1284,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GatewayResponsesResponseTypeDef
+## GatewayResponseTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GatewayResponsesResponseTypeDef
+from mypy_boto3_apigateway.type_defs import GatewayResponseTypeDef
+```
+
+Optional fields:
+
+- `responseType`:
+  [GatewayResponseTypeType](./literals.md#gatewayresponsetypetype)
+- `statusCode`: `str`
+- `responseParameters`: `Dict`\[`str`, `str`\]
+- `responseTemplates`: `Dict`\[`str`, `str`\]
+- `defaultResponse`: `bool`
+
+## GatewayResponsesTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import GatewayResponsesTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
 - `items`:
-  `List`\[[GatewayResponseResponseTypeDef](./type_defs.md#gatewayresponseresponsetypedef)\]
+  `List`\[[GatewayResponseTypeDef](./type_defs.md#gatewayresponsetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GenerateClientCertificateRequestTypeDef
+## GenerateClientCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GenerateClientCertificateRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GenerateClientCertificateRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1159,10 +1324,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## GetApiKeyRequestTypeDef
+## GetApiKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetApiKeyRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetApiKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1173,10 +1338,10 @@ Optional fields:
 
 - `includeValue`: `bool`
 
-## GetApiKeysRequestTypeDef
+## GetApiKeysRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetApiKeysRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetApiKeysRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1187,10 +1352,10 @@ Optional fields:
 - `customerId`: `str`
 - `includeValues`: `bool`
 
-## GetAuthorizerRequestTypeDef
+## GetAuthorizerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetAuthorizerRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetAuthorizerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1198,10 +1363,10 @@ Required fields:
 - `restApiId`: `str`
 - `authorizerId`: `str`
 
-## GetAuthorizersRequestTypeDef
+## GetAuthorizersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetAuthorizersRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetAuthorizersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1213,10 +1378,10 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetBasePathMappingRequestTypeDef
+## GetBasePathMappingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetBasePathMappingRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetBasePathMappingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1224,10 +1389,10 @@ Required fields:
 - `domainName`: `str`
 - `basePath`: `str`
 
-## GetBasePathMappingsRequestTypeDef
+## GetBasePathMappingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetBasePathMappingsRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetBasePathMappingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1239,20 +1404,20 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetClientCertificateRequestTypeDef
+## GetClientCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetClientCertificateRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetClientCertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `clientCertificateId`: `str`
 
-## GetClientCertificatesRequestTypeDef
+## GetClientCertificatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetClientCertificatesRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetClientCertificatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1260,10 +1425,10 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetDeploymentRequestTypeDef
+## GetDeploymentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetDeploymentRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetDeploymentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1275,10 +1440,10 @@ Optional fields:
 
 - `embed`: `List`\[`str`\]
 
-## GetDeploymentsRequestTypeDef
+## GetDeploymentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetDeploymentsRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetDeploymentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1290,10 +1455,10 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetDocumentationPartRequestTypeDef
+## GetDocumentationPartRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetDocumentationPartRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetDocumentationPartRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1301,10 +1466,10 @@ Required fields:
 - `restApiId`: `str`
 - `documentationPartId`: `str`
 
-## GetDocumentationPartsRequestTypeDef
+## GetDocumentationPartsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetDocumentationPartsRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetDocumentationPartsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1321,10 +1486,10 @@ Optional fields:
 - `locationStatus`:
   [LocationStatusTypeType](./literals.md#locationstatustypetype)
 
-## GetDocumentationVersionRequestTypeDef
+## GetDocumentationVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetDocumentationVersionRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetDocumentationVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1332,10 +1497,10 @@ Required fields:
 - `restApiId`: `str`
 - `documentationVersion`: `str`
 
-## GetDocumentationVersionsRequestTypeDef
+## GetDocumentationVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetDocumentationVersionsRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetDocumentationVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1347,20 +1512,20 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetDomainNameRequestTypeDef
+## GetDomainNameRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetDomainNameRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetDomainNameRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `domainName`: `str`
 
-## GetDomainNamesRequestTypeDef
+## GetDomainNamesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetDomainNamesRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetDomainNamesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1368,10 +1533,10 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetExportRequestTypeDef
+## GetExportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetExportRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetExportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1385,10 +1550,10 @@ Optional fields:
 - `parameters`: `Dict`\[`str`, `str`\]
 - `accepts`: `str`
 
-## GetGatewayResponseRequestTypeDef
+## GetGatewayResponseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetGatewayResponseRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetGatewayResponseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1397,10 +1562,10 @@ Required fields:
 - `responseType`:
   [GatewayResponseTypeType](./literals.md#gatewayresponsetypetype)
 
-## GetGatewayResponsesRequestTypeDef
+## GetGatewayResponsesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetGatewayResponsesRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetGatewayResponsesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1412,10 +1577,10 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetIntegrationRequestTypeDef
+## GetIntegrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetIntegrationRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetIntegrationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1424,35 +1589,10 @@ Required fields:
 - `resourceId`: `str`
 - `httpMethod`: `str`
 
-## GetIntegrationResponseRequestTypeDef
+## GetIntegrationResponseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetIntegrationResponseRequestTypeDef
-```
-
-Required fields:
-
-- `restApiId`: `str`
-- `resourceId`: `str`
-- `httpMethod`: `str`
-- `statusCode`: `str`
-
-## GetMethodRequestTypeDef
-
-```python
-from mypy_boto3_apigateway.type_defs import GetMethodRequestTypeDef
-```
-
-Required fields:
-
-- `restApiId`: `str`
-- `resourceId`: `str`
-- `httpMethod`: `str`
-
-## GetMethodResponseRequestTypeDef
-
-```python
-from mypy_boto3_apigateway.type_defs import GetMethodResponseRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetIntegrationResponseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1462,10 +1602,35 @@ Required fields:
 - `httpMethod`: `str`
 - `statusCode`: `str`
 
-## GetModelRequestTypeDef
+## GetMethodRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetModelRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetMethodRequestRequestTypeDef
+```
+
+Required fields:
+
+- `restApiId`: `str`
+- `resourceId`: `str`
+- `httpMethod`: `str`
+
+## GetMethodResponseRequestRequestTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import GetMethodResponseRequestRequestTypeDef
+```
+
+Required fields:
+
+- `restApiId`: `str`
+- `resourceId`: `str`
+- `httpMethod`: `str`
+- `statusCode`: `str`
+
+## GetModelRequestRequestTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import GetModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1477,10 +1642,10 @@ Optional fields:
 
 - `flatten`: `bool`
 
-## GetModelTemplateRequestTypeDef
+## GetModelTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetModelTemplateRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetModelTemplateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1488,10 +1653,10 @@ Required fields:
 - `restApiId`: `str`
 - `modelName`: `str`
 
-## GetModelsRequestTypeDef
+## GetModelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetModelsRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetModelsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1503,10 +1668,10 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetRequestValidatorRequestTypeDef
+## GetRequestValidatorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetRequestValidatorRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetRequestValidatorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1514,10 +1679,10 @@ Required fields:
 - `restApiId`: `str`
 - `requestValidatorId`: `str`
 
-## GetRequestValidatorsRequestTypeDef
+## GetRequestValidatorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetRequestValidatorsRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetRequestValidatorsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1529,10 +1694,10 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetResourceRequestTypeDef
+## GetResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetResourceRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1544,10 +1709,10 @@ Optional fields:
 
 - `embed`: `List`\[`str`\]
 
-## GetResourcesRequestTypeDef
+## GetResourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetResourcesRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetResourcesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1560,20 +1725,20 @@ Optional fields:
 - `limit`: `int`
 - `embed`: `List`\[`str`\]
 
-## GetRestApiRequestTypeDef
+## GetRestApiRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetRestApiRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetRestApiRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `restApiId`: `str`
 
-## GetRestApisRequestTypeDef
+## GetRestApisRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetRestApisRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetRestApisRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1581,10 +1746,10 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetSdkRequestTypeDef
+## GetSdkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetSdkRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetSdkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1597,20 +1762,20 @@ Optional fields:
 
 - `parameters`: `Dict`\[`str`, `str`\]
 
-## GetSdkTypeRequestTypeDef
+## GetSdkTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetSdkTypeRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetSdkTypeRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `id`: `str`
 
-## GetSdkTypesRequestTypeDef
+## GetSdkTypesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetSdkTypesRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetSdkTypesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1618,10 +1783,10 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetStageRequestTypeDef
+## GetStageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetStageRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetStageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1629,10 +1794,10 @@ Required fields:
 - `restApiId`: `str`
 - `stageName`: `str`
 
-## GetStagesRequestTypeDef
+## GetStagesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetStagesRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetStagesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1643,10 +1808,10 @@ Optional fields:
 
 - `deploymentId`: `str`
 
-## GetTagsRequestTypeDef
+## GetTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetTagsRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1658,10 +1823,10 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetUsagePlanKeyRequestTypeDef
+## GetUsagePlanKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetUsagePlanKeyRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetUsagePlanKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1669,10 +1834,10 @@ Required fields:
 - `usagePlanId`: `str`
 - `keyId`: `str`
 
-## GetUsagePlanKeysRequestTypeDef
+## GetUsagePlanKeysRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetUsagePlanKeysRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetUsagePlanKeysRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1685,20 +1850,20 @@ Optional fields:
 - `limit`: `int`
 - `nameQuery`: `str`
 
-## GetUsagePlanRequestTypeDef
+## GetUsagePlanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetUsagePlanRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetUsagePlanRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `usagePlanId`: `str`
 
-## GetUsagePlansRequestTypeDef
+## GetUsagePlansRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetUsagePlansRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetUsagePlansRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1707,10 +1872,10 @@ Optional fields:
 - `keyId`: `str`
 - `limit`: `int`
 
-## GetUsageRequestTypeDef
+## GetUsageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetUsageRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetUsageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1725,20 +1890,20 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## GetVpcLinkRequestTypeDef
+## GetVpcLinkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetVpcLinkRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetVpcLinkRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `vpcLinkId`: `str`
 
-## GetVpcLinksRequestTypeDef
+## GetVpcLinksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import GetVpcLinksRequestTypeDef
+from mypy_boto3_apigateway.type_defs import GetVpcLinksRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1746,10 +1911,10 @@ Optional fields:
 - `position`: `str`
 - `limit`: `int`
 
-## ImportApiKeysRequestTypeDef
+## ImportApiKeysRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ImportApiKeysRequestTypeDef
+from mypy_boto3_apigateway.type_defs import ImportApiKeysRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1762,10 +1927,10 @@ Optional fields:
 
 - `failOnWarnings`: `bool`
 
-## ImportDocumentationPartsRequestTypeDef
+## ImportDocumentationPartsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ImportDocumentationPartsRequestTypeDef
+from mypy_boto3_apigateway.type_defs import ImportDocumentationPartsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1778,10 +1943,10 @@ Optional fields:
 - `mode`: [PutModeType](./literals.md#putmodetype)
 - `failOnWarnings`: `bool`
 
-## ImportRestApiRequestTypeDef
+## ImportRestApiRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ImportRestApiRequestTypeDef
+from mypy_boto3_apigateway.type_defs import ImportRestApiRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1792,6 +1957,51 @@ Optional fields:
 
 - `failOnWarnings`: `bool`
 - `parameters`: `Dict`\[`str`, `str`\]
+
+## IntegrationResponseMetadataTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import IntegrationResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `type`: [IntegrationTypeType](./literals.md#integrationtypetype)
+- `httpMethod`: `str`
+- `uri`: `str`
+- `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
+- `connectionId`: `str`
+- `credentials`: `str`
+- `requestParameters`: `Dict`\[`str`, `str`\]
+- `requestTemplates`: `Dict`\[`str`, `str`\]
+- `passthroughBehavior`: `str`
+- `contentHandling`:
+  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
+- `timeoutInMillis`: `int`
+- `cacheNamespace`: `str`
+- `cacheKeyParameters`: `List`\[`str`\]
+- `integrationResponses`: `Dict`\[`str`,
+  [IntegrationResponseTypeDef](./type_defs.md#integrationresponsetypedef)\]
+- `tlsConfig`: [TlsConfigTypeDef](./type_defs.md#tlsconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## IntegrationResponseResponseMetadataTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import IntegrationResponseResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `statusCode`: `str`
+- `selectionPattern`: `str`
+- `responseParameters`: `Dict`\[`str`, `str`\]
+- `responseTemplates`: `Dict`\[`str`, `str`\]
+- `contentHandling`:
+  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## IntegrationResponseTypeDef
 
@@ -1833,6 +2043,43 @@ Optional fields:
 - `integrationResponses`: `Dict`\[`str`,
   [IntegrationResponseTypeDef](./type_defs.md#integrationresponsetypedef)\]
 - `tlsConfig`: [TlsConfigTypeDef](./type_defs.md#tlsconfigtypedef)
+
+## MethodResponseMetadataTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import MethodResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `httpMethod`: `str`
+- `authorizationType`: `str`
+- `authorizerId`: `str`
+- `apiKeyRequired`: `bool`
+- `requestValidatorId`: `str`
+- `operationName`: `str`
+- `requestParameters`: `Dict`\[`str`, `bool`\]
+- `requestModels`: `Dict`\[`str`, `str`\]
+- `methodResponses`: `Dict`\[`str`,
+  [MethodResponseTypeDef](./type_defs.md#methodresponsetypedef)\]
+- `methodIntegration`: [IntegrationTypeDef](./type_defs.md#integrationtypedef)
+- `authorizationScopes`: `List`\[`str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## MethodResponseResponseMetadataTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import MethodResponseResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `statusCode`: `str`
+- `responseParameters`: `Dict`\[`str`, `bool`\]
+- `responseModels`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## MethodResponseTypeDef
 
@@ -1898,10 +2145,10 @@ Optional fields:
 - `methodIntegration`: [IntegrationTypeDef](./type_defs.md#integrationtypedef)
 - `authorizationScopes`: `List`\[`str`\]
 
-## ModelResponseTypeDef
+## ModelResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ModelResponseTypeDef
+from mypy_boto3_apigateway.type_defs import ModelResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -1914,17 +2161,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModelsResponseTypeDef
+## ModelTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ModelsResponseTypeDef
+from mypy_boto3_apigateway.type_defs import ModelTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `name`: `str`
+- `description`: `str`
+- `schema`: `str`
+- `contentType`: `str`
+
+## ModelsTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import ModelsTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
-- `items`:
-  `List`\[[ModelResponseTypeDef](./type_defs.md#modelresponsetypedef)\]
+- `items`: `List`\[[ModelTypeDef](./type_defs.md#modeltypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1976,10 +2236,10 @@ Optional fields:
 - `value`: `str`
 - `from`: `str`
 
-## PutGatewayResponseRequestTypeDef
+## PutGatewayResponseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import PutGatewayResponseRequestTypeDef
+from mypy_boto3_apigateway.type_defs import PutGatewayResponseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1994,10 +2254,10 @@ Optional fields:
 - `responseParameters`: `Dict`\[`str`, `str`\]
 - `responseTemplates`: `Dict`\[`str`, `str`\]
 
-## PutIntegrationRequestTypeDef
+## PutIntegrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import PutIntegrationRequestTypeDef
+from mypy_boto3_apigateway.type_defs import PutIntegrationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2024,10 +2284,10 @@ Optional fields:
 - `timeoutInMillis`: `int`
 - `tlsConfig`: [TlsConfigTypeDef](./type_defs.md#tlsconfigtypedef)
 
-## PutIntegrationResponseRequestTypeDef
+## PutIntegrationResponseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import PutIntegrationResponseRequestTypeDef
+from mypy_boto3_apigateway.type_defs import PutIntegrationResponseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2045,10 +2305,10 @@ Optional fields:
 - `contentHandling`:
   [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 
-## PutMethodRequestTypeDef
+## PutMethodRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import PutMethodRequestTypeDef
+from mypy_boto3_apigateway.type_defs import PutMethodRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2068,10 +2328,10 @@ Optional fields:
 - `requestValidatorId`: `str`
 - `authorizationScopes`: `List`\[`str`\]
 
-## PutMethodResponseRequestTypeDef
+## PutMethodResponseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import PutMethodResponseRequestTypeDef
+from mypy_boto3_apigateway.type_defs import PutMethodResponseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2086,10 +2346,10 @@ Optional fields:
 - `responseParameters`: `Dict`\[`str`, `bool`\]
 - `responseModels`: `Dict`\[`str`, `str`\]
 
-## PutRestApiRequestTypeDef
+## PutRestApiRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import PutRestApiRequestTypeDef
+from mypy_boto3_apigateway.type_defs import PutRestApiRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2115,10 +2375,10 @@ Optional fields:
 - `offset`: `int`
 - `period`: [QuotaPeriodTypeType](./literals.md#quotaperiodtypetype)
 
-## RequestValidatorResponseTypeDef
+## RequestValidatorResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import RequestValidatorResponseTypeDef
+from mypy_boto3_apigateway.type_defs import RequestValidatorResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -2130,24 +2390,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RequestValidatorsResponseTypeDef
+## RequestValidatorTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import RequestValidatorsResponseTypeDef
+from mypy_boto3_apigateway.type_defs import RequestValidatorTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `name`: `str`
+- `validateRequestBody`: `bool`
+- `validateRequestParameters`: `bool`
+
+## RequestValidatorsTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import RequestValidatorsTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
 - `items`:
-  `List`\[[RequestValidatorResponseTypeDef](./type_defs.md#requestvalidatorresponsetypedef)\]
+  `List`\[[RequestValidatorTypeDef](./type_defs.md#requestvalidatortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResourceResponseTypeDef
+## ResourceResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ResourceResponseTypeDef
+from mypy_boto3_apigateway.type_defs import ResourceResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -2161,17 +2434,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResourcesResponseTypeDef
+## ResourceTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import ResourcesResponseTypeDef
+from mypy_boto3_apigateway.type_defs import ResourceTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `parentId`: `str`
+- `pathPart`: `str`
+- `path`: `str`
+- `resourceMethods`: `Dict`\[`str`,
+  [MethodTypeDef](./type_defs.md#methodtypedef)\]
+
+## ResourcesTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import ResourcesTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
-- `items`:
-  `List`\[[ResourceResponseTypeDef](./type_defs.md#resourceresponsetypedef)\]
+- `items`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2189,10 +2476,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RestApiResponseTypeDef
+## RestApiResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import RestApiResponseTypeDef
+from mypy_boto3_apigateway.type_defs import RestApiResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -2214,17 +2501,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RestApisResponseTypeDef
+## RestApiTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import RestApisResponseTypeDef
+from mypy_boto3_apigateway.type_defs import RestApiTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `name`: `str`
+- `description`: `str`
+- `createdDate`: `datetime`
+- `version`: `str`
+- `warnings`: `List`\[`str`\]
+- `binaryMediaTypes`: `List`\[`str`\]
+- `minimumCompressionSize`: `int`
+- `apiKeySource`: [ApiKeySourceTypeType](./literals.md#apikeysourcetypetype)
+- `endpointConfiguration`:
+  [EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)
+- `policy`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+- `disableExecuteApiEndpoint`: `bool`
+
+## RestApisTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import RestApisTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
-- `items`:
-  `List`\[[RestApiResponseTypeDef](./type_defs.md#restapiresponsetypedef)\]
+- `items`: `List`\[[RestApiTypeDef](./type_defs.md#restapitypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2242,10 +2551,10 @@ Optional fields:
 - `required`: `bool`
 - `defaultValue`: `str`
 
-## SdkResponseResponseTypeDef
+## SdkResponseTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import SdkResponseResponseTypeDef
+from mypy_boto3_apigateway.type_defs import SdkResponseTypeDef
 ```
 
 Required fields:
@@ -2256,10 +2565,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SdkTypeResponseTypeDef
+## SdkTypeResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import SdkTypeResponseTypeDef
+from mypy_boto3_apigateway.type_defs import SdkTypeResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -2272,17 +2581,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SdkTypesResponseTypeDef
+## SdkTypeTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import SdkTypesResponseTypeDef
+from mypy_boto3_apigateway.type_defs import SdkTypeTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `friendlyName`: `str`
+- `description`: `str`
+- `configurationProperties`:
+  `List`\[[SdkConfigurationPropertyTypeDef](./type_defs.md#sdkconfigurationpropertytypedef)\]
+
+## SdkTypesTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import SdkTypesTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
-- `items`:
-  `List`\[[SdkTypeResponseTypeDef](./type_defs.md#sdktyperesponsetypedef)\]
+- `items`: `List`\[[SdkTypeTypeDef](./type_defs.md#sdktypetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2297,10 +2619,10 @@ Optional fields:
 - `restApiId`: `str`
 - `stageName`: `str`
 
-## StageResponseTypeDef
+## StageResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import StageResponseTypeDef
+from mypy_boto3_apigateway.type_defs import StageResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -2330,22 +2652,53 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StagesResponseTypeDef
+## StageTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import StagesResponseTypeDef
+from mypy_boto3_apigateway.type_defs import StageTypeDef
+```
+
+Optional fields:
+
+- `deploymentId`: `str`
+- `clientCertificateId`: `str`
+- `stageName`: `str`
+- `description`: `str`
+- `cacheClusterEnabled`: `bool`
+- `cacheClusterSize`:
+  [CacheClusterSizeType](./literals.md#cacheclustersizetype)
+- `cacheClusterStatus`:
+  [CacheClusterStatusType](./literals.md#cacheclusterstatustype)
+- `methodSettings`: `Dict`\[`str`,
+  [MethodSettingTypeDef](./type_defs.md#methodsettingtypedef)\]
+- `variables`: `Dict`\[`str`, `str`\]
+- `documentationVersion`: `str`
+- `accessLogSettings`:
+  [AccessLogSettingsTypeDef](./type_defs.md#accesslogsettingstypedef)
+- `canarySettings`:
+  [CanarySettingsTypeDef](./type_defs.md#canarysettingstypedef)
+- `tracingEnabled`: `bool`
+- `webAclArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+- `createdDate`: `datetime`
+- `lastUpdatedDate`: `datetime`
+
+## StagesTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import StagesTypeDef
 ```
 
 Required fields:
 
-- `item`: `List`\[[StageResponseTypeDef](./type_defs.md#stageresponsetypedef)\]
+- `item`: `List`\[[StageTypeDef](./type_defs.md#stagetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_apigateway.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2353,10 +2706,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## TagsResponseTypeDef
+## TagsTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import TagsResponseTypeDef
+from mypy_boto3_apigateway.type_defs import TagsTypeDef
 ```
 
 Required fields:
@@ -2365,10 +2718,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TemplateResponseTypeDef
+## TemplateTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import TemplateResponseTypeDef
+from mypy_boto3_apigateway.type_defs import TemplateTypeDef
 ```
 
 Required fields:
@@ -2377,10 +2730,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TestInvokeAuthorizerRequestTypeDef
+## TestInvokeAuthorizerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import TestInvokeAuthorizerRequestTypeDef
+from mypy_boto3_apigateway.type_defs import TestInvokeAuthorizerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2397,10 +2750,10 @@ Optional fields:
 - `stageVariables`: `Dict`\[`str`, `str`\]
 - `additionalContext`: `Dict`\[`str`, `str`\]
 
-## TestInvokeAuthorizerResponseResponseTypeDef
+## TestInvokeAuthorizerResponseTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import TestInvokeAuthorizerResponseResponseTypeDef
+from mypy_boto3_apigateway.type_defs import TestInvokeAuthorizerResponseTypeDef
 ```
 
 Required fields:
@@ -2415,10 +2768,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TestInvokeMethodRequestTypeDef
+## TestInvokeMethodRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import TestInvokeMethodRequestTypeDef
+from mypy_boto3_apigateway.type_defs import TestInvokeMethodRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2436,10 +2789,10 @@ Optional fields:
 - `clientCertificateId`: `str`
 - `stageVariables`: `Dict`\[`str`, `str`\]
 
-## TestInvokeMethodResponseResponseTypeDef
+## TestInvokeMethodResponseTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import TestInvokeMethodResponseResponseTypeDef
+from mypy_boto3_apigateway.type_defs import TestInvokeMethodResponseTypeDef
 ```
 
 Required fields:
@@ -2474,10 +2827,10 @@ Optional fields:
 
 - `insecureSkipVerification`: `bool`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2485,10 +2838,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateAccountRequestTypeDef
+## UpdateAccountRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateAccountRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateAccountRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2496,10 +2849,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateApiKeyRequestTypeDef
+## UpdateApiKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateApiKeyRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateApiKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2511,10 +2864,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateAuthorizerRequestTypeDef
+## UpdateAuthorizerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateAuthorizerRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateAuthorizerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2527,10 +2880,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateBasePathMappingRequestTypeDef
+## UpdateBasePathMappingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateBasePathMappingRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateBasePathMappingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2543,10 +2896,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateClientCertificateRequestTypeDef
+## UpdateClientCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateClientCertificateRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateClientCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2558,10 +2911,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateDeploymentRequestTypeDef
+## UpdateDeploymentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateDeploymentRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateDeploymentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2574,10 +2927,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateDocumentationPartRequestTypeDef
+## UpdateDocumentationPartRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateDocumentationPartRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateDocumentationPartRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2590,10 +2943,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateDocumentationVersionRequestTypeDef
+## UpdateDocumentationVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateDocumentationVersionRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateDocumentationVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2606,10 +2959,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateDomainNameRequestTypeDef
+## UpdateDomainNameRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateDomainNameRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateDomainNameRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2621,10 +2974,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateGatewayResponseRequestTypeDef
+## UpdateGatewayResponseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateGatewayResponseRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateGatewayResponseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2638,10 +2991,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateIntegrationRequestTypeDef
+## UpdateIntegrationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateIntegrationRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateIntegrationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2655,45 +3008,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateIntegrationResponseRequestTypeDef
+## UpdateIntegrationResponseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateIntegrationResponseRequestTypeDef
-```
-
-Required fields:
-
-- `restApiId`: `str`
-- `resourceId`: `str`
-- `httpMethod`: `str`
-- `statusCode`: `str`
-
-Optional fields:
-
-- `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
-
-## UpdateMethodRequestTypeDef
-
-```python
-from mypy_boto3_apigateway.type_defs import UpdateMethodRequestTypeDef
-```
-
-Required fields:
-
-- `restApiId`: `str`
-- `resourceId`: `str`
-- `httpMethod`: `str`
-
-Optional fields:
-
-- `patchOperations`:
-  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
-
-## UpdateMethodResponseRequestTypeDef
-
-```python
-from mypy_boto3_apigateway.type_defs import UpdateMethodResponseRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateIntegrationResponseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2708,10 +3026,45 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateModelRequestTypeDef
+## UpdateMethodRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateModelRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateMethodRequestRequestTypeDef
+```
+
+Required fields:
+
+- `restApiId`: `str`
+- `resourceId`: `str`
+- `httpMethod`: `str`
+
+Optional fields:
+
+- `patchOperations`:
+  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+
+## UpdateMethodResponseRequestRequestTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import UpdateMethodResponseRequestRequestTypeDef
+```
+
+Required fields:
+
+- `restApiId`: `str`
+- `resourceId`: `str`
+- `httpMethod`: `str`
+- `statusCode`: `str`
+
+Optional fields:
+
+- `patchOperations`:
+  `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+
+## UpdateModelRequestRequestTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import UpdateModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2724,10 +3077,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateRequestValidatorRequestTypeDef
+## UpdateRequestValidatorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateRequestValidatorRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateRequestValidatorRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2740,10 +3093,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateResourceRequestTypeDef
+## UpdateResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateResourceRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2756,10 +3109,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateRestApiRequestTypeDef
+## UpdateRestApiRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateRestApiRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateRestApiRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2771,10 +3124,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateStageRequestTypeDef
+## UpdateStageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateStageRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateStageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2787,10 +3140,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateUsagePlanRequestTypeDef
+## UpdateUsagePlanRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateUsagePlanRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateUsagePlanRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2802,10 +3155,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateUsageRequestTypeDef
+## UpdateUsageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateUsageRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateUsageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2818,10 +3171,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UpdateVpcLinkRequestTypeDef
+## UpdateVpcLinkRequestRequestTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UpdateVpcLinkRequestTypeDef
+from mypy_boto3_apigateway.type_defs import UpdateVpcLinkRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2833,10 +3186,10 @@ Optional fields:
 - `patchOperations`:
   `List`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-## UsagePlanKeyResponseTypeDef
+## UsagePlanKeyResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UsagePlanKeyResponseTypeDef
+from mypy_boto3_apigateway.type_defs import UsagePlanKeyResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -2848,24 +3201,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UsagePlanKeysResponseTypeDef
+## UsagePlanKeyTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UsagePlanKeysResponseTypeDef
+from mypy_boto3_apigateway.type_defs import UsagePlanKeyTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `type`: `str`
+- `value`: `str`
+- `name`: `str`
+
+## UsagePlanKeysTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import UsagePlanKeysTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
-- `items`:
-  `List`\[[UsagePlanKeyResponseTypeDef](./type_defs.md#usageplankeyresponsetypedef)\]
+- `items`: `List`\[[UsagePlanKeyTypeDef](./type_defs.md#usageplankeytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UsagePlanResponseTypeDef
+## UsagePlanResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UsagePlanResponseTypeDef
+from mypy_boto3_apigateway.type_defs import UsagePlanResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -2881,24 +3246,40 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UsagePlansResponseTypeDef
+## UsagePlanTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UsagePlansResponseTypeDef
+from mypy_boto3_apigateway.type_defs import UsagePlanTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `name`: `str`
+- `description`: `str`
+- `apiStages`: `List`\[[ApiStageTypeDef](./type_defs.md#apistagetypedef)\]
+- `throttle`: [ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef)
+- `quota`: [QuotaSettingsTypeDef](./type_defs.md#quotasettingstypedef)
+- `productCode`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## UsagePlansTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import UsagePlansTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
-- `items`:
-  `List`\[[UsagePlanResponseTypeDef](./type_defs.md#usageplanresponsetypedef)\]
+- `items`: `List`\[[UsagePlanTypeDef](./type_defs.md#usageplantypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UsageResponseTypeDef
+## UsageTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import UsageResponseTypeDef
+from mypy_boto3_apigateway.type_defs import UsageTypeDef
 ```
 
 Required fields:
@@ -2911,10 +3292,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## VpcLinkResponseTypeDef
+## VpcLinkResponseMetadataTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import VpcLinkResponseTypeDef
+from mypy_boto3_apigateway.type_defs import VpcLinkResponseMetadataTypeDef
 ```
 
 Required fields:
@@ -2929,16 +3310,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## VpcLinksResponseTypeDef
+## VpcLinkTypeDef
 
 ```python
-from mypy_boto3_apigateway.type_defs import VpcLinksResponseTypeDef
+from mypy_boto3_apigateway.type_defs import VpcLinkTypeDef
+```
+
+Optional fields:
+
+- `id`: `str`
+- `name`: `str`
+- `description`: `str`
+- `targetArns`: `List`\[`str`\]
+- `status`: [VpcLinkStatusType](./literals.md#vpclinkstatustype)
+- `statusMessage`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## VpcLinksTypeDef
+
+```python
+from mypy_boto3_apigateway.type_defs import VpcLinksTypeDef
 ```
 
 Required fields:
 
 - `position`: `str`
-- `items`:
-  `List`\[[VpcLinkResponseTypeDef](./type_defs.md#vpclinkresponsetypedef)\]
+- `items`: `List`\[[VpcLinkTypeDef](./type_defs.md#vpclinktypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

@@ -32,6 +32,7 @@ from mypy_boto3_marketplacecommerceanalytics.client import MarketplaceCommerceAn
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_data_set](./client.md#generate_data_set)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [start_support_data_export](./client.md#start_support_data_export)
@@ -64,11 +65,11 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetRequestTypeDef, ...
+from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetRequestRequestTypeDef, ...
 ```
 
-- [GenerateDataSetRequestTypeDef](./type_defs.md#generatedatasetrequesttypedef)
-- [GenerateDataSetResultResponseTypeDef](./type_defs.md#generatedatasetresultresponsetypedef)
+- [GenerateDataSetRequestRequestTypeDef](./type_defs.md#generatedatasetrequestrequesttypedef)
+- [GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [StartSupportDataExportRequestTypeDef](./type_defs.md#startsupportdataexportrequesttypedef)
-- [StartSupportDataExportResultResponseTypeDef](./type_defs.md#startsupportdataexportresultresponsetypedef)
+- [StartSupportDataExportRequestRequestTypeDef](./type_defs.md#startsupportdataexportrequestrequesttypedef)
+- [StartSupportDataExportResultTypeDef](./type_defs.md#startsupportdataexportresulttypedef)

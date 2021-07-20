@@ -27,8 +27,8 @@ type annotations stubs module
   - [BotVersionLocaleDetailsTypeDef](#botversionlocaledetailstypedef)
   - [BotVersionSortByTypeDef](#botversionsortbytypedef)
   - [BotVersionSummaryTypeDef](#botversionsummarytypedef)
-  - [BuildBotLocaleRequestTypeDef](#buildbotlocalerequesttypedef)
-  - [BuildBotLocaleResponseResponseTypeDef](#buildbotlocaleresponseresponsetypedef)
+  - [BuildBotLocaleRequestRequestTypeDef](#buildbotlocalerequestrequesttypedef)
+  - [BuildBotLocaleResponseTypeDef](#buildbotlocaleresponsetypedef)
   - [BuiltInIntentSortByTypeDef](#builtinintentsortbytypedef)
   - [BuiltInIntentSummaryTypeDef](#builtinintentsummarytypedef)
   - [BuiltInSlotTypeSortByTypeDef](#builtinslottypesortbytypedef)
@@ -37,68 +37,68 @@ type annotations stubs module
   - [CloudWatchLogGroupLogDestinationTypeDef](#cloudwatchloggrouplogdestinationtypedef)
   - [CodeHookSpecificationTypeDef](#codehookspecificationtypedef)
   - [ConversationLogSettingsTypeDef](#conversationlogsettingstypedef)
-  - [CreateBotAliasRequestTypeDef](#createbotaliasrequesttypedef)
-  - [CreateBotAliasResponseResponseTypeDef](#createbotaliasresponseresponsetypedef)
-  - [CreateBotLocaleRequestTypeDef](#createbotlocalerequesttypedef)
-  - [CreateBotLocaleResponseResponseTypeDef](#createbotlocaleresponseresponsetypedef)
-  - [CreateBotRequestTypeDef](#createbotrequesttypedef)
-  - [CreateBotResponseResponseTypeDef](#createbotresponseresponsetypedef)
-  - [CreateBotVersionRequestTypeDef](#createbotversionrequesttypedef)
-  - [CreateBotVersionResponseResponseTypeDef](#createbotversionresponseresponsetypedef)
-  - [CreateExportRequestTypeDef](#createexportrequesttypedef)
-  - [CreateExportResponseResponseTypeDef](#createexportresponseresponsetypedef)
-  - [CreateIntentRequestTypeDef](#createintentrequesttypedef)
-  - [CreateIntentResponseResponseTypeDef](#createintentresponseresponsetypedef)
-  - [CreateResourcePolicyRequestTypeDef](#createresourcepolicyrequesttypedef)
-  - [CreateResourcePolicyResponseResponseTypeDef](#createresourcepolicyresponseresponsetypedef)
-  - [CreateResourcePolicyStatementRequestTypeDef](#createresourcepolicystatementrequesttypedef)
-  - [CreateResourcePolicyStatementResponseResponseTypeDef](#createresourcepolicystatementresponseresponsetypedef)
-  - [CreateSlotRequestTypeDef](#createslotrequesttypedef)
-  - [CreateSlotResponseResponseTypeDef](#createslotresponseresponsetypedef)
-  - [CreateSlotTypeRequestTypeDef](#createslottyperequesttypedef)
-  - [CreateSlotTypeResponseResponseTypeDef](#createslottyperesponseresponsetypedef)
-  - [CreateUploadUrlResponseResponseTypeDef](#createuploadurlresponseresponsetypedef)
+  - [CreateBotAliasRequestRequestTypeDef](#createbotaliasrequestrequesttypedef)
+  - [CreateBotAliasResponseTypeDef](#createbotaliasresponsetypedef)
+  - [CreateBotLocaleRequestRequestTypeDef](#createbotlocalerequestrequesttypedef)
+  - [CreateBotLocaleResponseTypeDef](#createbotlocaleresponsetypedef)
+  - [CreateBotRequestRequestTypeDef](#createbotrequestrequesttypedef)
+  - [CreateBotResponseTypeDef](#createbotresponsetypedef)
+  - [CreateBotVersionRequestRequestTypeDef](#createbotversionrequestrequesttypedef)
+  - [CreateBotVersionResponseTypeDef](#createbotversionresponsetypedef)
+  - [CreateExportRequestRequestTypeDef](#createexportrequestrequesttypedef)
+  - [CreateExportResponseTypeDef](#createexportresponsetypedef)
+  - [CreateIntentRequestRequestTypeDef](#createintentrequestrequesttypedef)
+  - [CreateIntentResponseTypeDef](#createintentresponsetypedef)
+  - [CreateResourcePolicyRequestRequestTypeDef](#createresourcepolicyrequestrequesttypedef)
+  - [CreateResourcePolicyResponseTypeDef](#createresourcepolicyresponsetypedef)
+  - [CreateResourcePolicyStatementRequestRequestTypeDef](#createresourcepolicystatementrequestrequesttypedef)
+  - [CreateResourcePolicyStatementResponseTypeDef](#createresourcepolicystatementresponsetypedef)
+  - [CreateSlotRequestRequestTypeDef](#createslotrequestrequesttypedef)
+  - [CreateSlotResponseTypeDef](#createslotresponsetypedef)
+  - [CreateSlotTypeRequestRequestTypeDef](#createslottyperequestrequesttypedef)
+  - [CreateSlotTypeResponseTypeDef](#createslottyperesponsetypedef)
+  - [CreateUploadUrlResponseTypeDef](#createuploadurlresponsetypedef)
   - [CustomPayloadTypeDef](#custompayloadtypedef)
   - [DataPrivacyTypeDef](#dataprivacytypedef)
-  - [DeleteBotAliasRequestTypeDef](#deletebotaliasrequesttypedef)
-  - [DeleteBotAliasResponseResponseTypeDef](#deletebotaliasresponseresponsetypedef)
-  - [DeleteBotLocaleRequestTypeDef](#deletebotlocalerequesttypedef)
-  - [DeleteBotLocaleResponseResponseTypeDef](#deletebotlocaleresponseresponsetypedef)
-  - [DeleteBotRequestTypeDef](#deletebotrequesttypedef)
-  - [DeleteBotResponseResponseTypeDef](#deletebotresponseresponsetypedef)
-  - [DeleteBotVersionRequestTypeDef](#deletebotversionrequesttypedef)
-  - [DeleteBotVersionResponseResponseTypeDef](#deletebotversionresponseresponsetypedef)
-  - [DeleteExportRequestTypeDef](#deleteexportrequesttypedef)
-  - [DeleteExportResponseResponseTypeDef](#deleteexportresponseresponsetypedef)
-  - [DeleteImportRequestTypeDef](#deleteimportrequesttypedef)
-  - [DeleteImportResponseResponseTypeDef](#deleteimportresponseresponsetypedef)
-  - [DeleteIntentRequestTypeDef](#deleteintentrequesttypedef)
-  - [DeleteResourcePolicyRequestTypeDef](#deleteresourcepolicyrequesttypedef)
-  - [DeleteResourcePolicyResponseResponseTypeDef](#deleteresourcepolicyresponseresponsetypedef)
-  - [DeleteResourcePolicyStatementRequestTypeDef](#deleteresourcepolicystatementrequesttypedef)
-  - [DeleteResourcePolicyStatementResponseResponseTypeDef](#deleteresourcepolicystatementresponseresponsetypedef)
-  - [DeleteSlotRequestTypeDef](#deleteslotrequesttypedef)
-  - [DeleteSlotTypeRequestTypeDef](#deleteslottyperequesttypedef)
-  - [DescribeBotAliasRequestTypeDef](#describebotaliasrequesttypedef)
-  - [DescribeBotAliasResponseResponseTypeDef](#describebotaliasresponseresponsetypedef)
-  - [DescribeBotLocaleRequestTypeDef](#describebotlocalerequesttypedef)
-  - [DescribeBotLocaleResponseResponseTypeDef](#describebotlocaleresponseresponsetypedef)
-  - [DescribeBotRequestTypeDef](#describebotrequesttypedef)
-  - [DescribeBotResponseResponseTypeDef](#describebotresponseresponsetypedef)
-  - [DescribeBotVersionRequestTypeDef](#describebotversionrequesttypedef)
-  - [DescribeBotVersionResponseResponseTypeDef](#describebotversionresponseresponsetypedef)
-  - [DescribeExportRequestTypeDef](#describeexportrequesttypedef)
-  - [DescribeExportResponseResponseTypeDef](#describeexportresponseresponsetypedef)
-  - [DescribeImportRequestTypeDef](#describeimportrequesttypedef)
-  - [DescribeImportResponseResponseTypeDef](#describeimportresponseresponsetypedef)
-  - [DescribeIntentRequestTypeDef](#describeintentrequesttypedef)
-  - [DescribeIntentResponseResponseTypeDef](#describeintentresponseresponsetypedef)
-  - [DescribeResourcePolicyRequestTypeDef](#describeresourcepolicyrequesttypedef)
-  - [DescribeResourcePolicyResponseResponseTypeDef](#describeresourcepolicyresponseresponsetypedef)
-  - [DescribeSlotRequestTypeDef](#describeslotrequesttypedef)
-  - [DescribeSlotResponseResponseTypeDef](#describeslotresponseresponsetypedef)
-  - [DescribeSlotTypeRequestTypeDef](#describeslottyperequesttypedef)
-  - [DescribeSlotTypeResponseResponseTypeDef](#describeslottyperesponseresponsetypedef)
+  - [DeleteBotAliasRequestRequestTypeDef](#deletebotaliasrequestrequesttypedef)
+  - [DeleteBotAliasResponseTypeDef](#deletebotaliasresponsetypedef)
+  - [DeleteBotLocaleRequestRequestTypeDef](#deletebotlocalerequestrequesttypedef)
+  - [DeleteBotLocaleResponseTypeDef](#deletebotlocaleresponsetypedef)
+  - [DeleteBotRequestRequestTypeDef](#deletebotrequestrequesttypedef)
+  - [DeleteBotResponseTypeDef](#deletebotresponsetypedef)
+  - [DeleteBotVersionRequestRequestTypeDef](#deletebotversionrequestrequesttypedef)
+  - [DeleteBotVersionResponseTypeDef](#deletebotversionresponsetypedef)
+  - [DeleteExportRequestRequestTypeDef](#deleteexportrequestrequesttypedef)
+  - [DeleteExportResponseTypeDef](#deleteexportresponsetypedef)
+  - [DeleteImportRequestRequestTypeDef](#deleteimportrequestrequesttypedef)
+  - [DeleteImportResponseTypeDef](#deleteimportresponsetypedef)
+  - [DeleteIntentRequestRequestTypeDef](#deleteintentrequestrequesttypedef)
+  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
+  - [DeleteResourcePolicyResponseTypeDef](#deleteresourcepolicyresponsetypedef)
+  - [DeleteResourcePolicyStatementRequestRequestTypeDef](#deleteresourcepolicystatementrequestrequesttypedef)
+  - [DeleteResourcePolicyStatementResponseTypeDef](#deleteresourcepolicystatementresponsetypedef)
+  - [DeleteSlotRequestRequestTypeDef](#deleteslotrequestrequesttypedef)
+  - [DeleteSlotTypeRequestRequestTypeDef](#deleteslottyperequestrequesttypedef)
+  - [DescribeBotAliasRequestRequestTypeDef](#describebotaliasrequestrequesttypedef)
+  - [DescribeBotAliasResponseTypeDef](#describebotaliasresponsetypedef)
+  - [DescribeBotLocaleRequestRequestTypeDef](#describebotlocalerequestrequesttypedef)
+  - [DescribeBotLocaleResponseTypeDef](#describebotlocaleresponsetypedef)
+  - [DescribeBotRequestRequestTypeDef](#describebotrequestrequesttypedef)
+  - [DescribeBotResponseTypeDef](#describebotresponsetypedef)
+  - [DescribeBotVersionRequestRequestTypeDef](#describebotversionrequestrequesttypedef)
+  - [DescribeBotVersionResponseTypeDef](#describebotversionresponsetypedef)
+  - [DescribeExportRequestRequestTypeDef](#describeexportrequestrequesttypedef)
+  - [DescribeExportResponseTypeDef](#describeexportresponsetypedef)
+  - [DescribeImportRequestRequestTypeDef](#describeimportrequestrequesttypedef)
+  - [DescribeImportResponseTypeDef](#describeimportresponsetypedef)
+  - [DescribeIntentRequestRequestTypeDef](#describeintentrequestrequesttypedef)
+  - [DescribeIntentResponseTypeDef](#describeintentresponsetypedef)
+  - [DescribeResourcePolicyRequestRequestTypeDef](#describeresourcepolicyrequestrequesttypedef)
+  - [DescribeResourcePolicyResponseTypeDef](#describeresourcepolicyresponsetypedef)
+  - [DescribeSlotRequestRequestTypeDef](#describeslotrequestrequesttypedef)
+  - [DescribeSlotResponseTypeDef](#describeslotresponsetypedef)
+  - [DescribeSlotTypeRequestRequestTypeDef](#describeslottyperequestrequesttypedef)
+  - [DescribeSlotTypeResponseTypeDef](#describeslottyperesponsetypedef)
   - [DialogCodeHookSettingsTypeDef](#dialogcodehooksettingstypedef)
   - [ExportFilterTypeDef](#exportfiltertypedef)
   - [ExportResourceSpecificationTypeDef](#exportresourcespecificationtypedef)
@@ -118,30 +118,30 @@ type annotations stubs module
   - [IntentSummaryTypeDef](#intentsummarytypedef)
   - [KendraConfigurationTypeDef](#kendraconfigurationtypedef)
   - [LambdaCodeHookTypeDef](#lambdacodehooktypedef)
-  - [ListBotAliasesRequestTypeDef](#listbotaliasesrequesttypedef)
-  - [ListBotAliasesResponseResponseTypeDef](#listbotaliasesresponseresponsetypedef)
-  - [ListBotLocalesRequestTypeDef](#listbotlocalesrequesttypedef)
-  - [ListBotLocalesResponseResponseTypeDef](#listbotlocalesresponseresponsetypedef)
-  - [ListBotVersionsRequestTypeDef](#listbotversionsrequesttypedef)
-  - [ListBotVersionsResponseResponseTypeDef](#listbotversionsresponseresponsetypedef)
-  - [ListBotsRequestTypeDef](#listbotsrequesttypedef)
-  - [ListBotsResponseResponseTypeDef](#listbotsresponseresponsetypedef)
-  - [ListBuiltInIntentsRequestTypeDef](#listbuiltinintentsrequesttypedef)
-  - [ListBuiltInIntentsResponseResponseTypeDef](#listbuiltinintentsresponseresponsetypedef)
-  - [ListBuiltInSlotTypesRequestTypeDef](#listbuiltinslottypesrequesttypedef)
-  - [ListBuiltInSlotTypesResponseResponseTypeDef](#listbuiltinslottypesresponseresponsetypedef)
-  - [ListExportsRequestTypeDef](#listexportsrequesttypedef)
-  - [ListExportsResponseResponseTypeDef](#listexportsresponseresponsetypedef)
-  - [ListImportsRequestTypeDef](#listimportsrequesttypedef)
-  - [ListImportsResponseResponseTypeDef](#listimportsresponseresponsetypedef)
-  - [ListIntentsRequestTypeDef](#listintentsrequesttypedef)
-  - [ListIntentsResponseResponseTypeDef](#listintentsresponseresponsetypedef)
-  - [ListSlotTypesRequestTypeDef](#listslottypesrequesttypedef)
-  - [ListSlotTypesResponseResponseTypeDef](#listslottypesresponseresponsetypedef)
-  - [ListSlotsRequestTypeDef](#listslotsrequesttypedef)
-  - [ListSlotsResponseResponseTypeDef](#listslotsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListBotAliasesRequestRequestTypeDef](#listbotaliasesrequestrequesttypedef)
+  - [ListBotAliasesResponseTypeDef](#listbotaliasesresponsetypedef)
+  - [ListBotLocalesRequestRequestTypeDef](#listbotlocalesrequestrequesttypedef)
+  - [ListBotLocalesResponseTypeDef](#listbotlocalesresponsetypedef)
+  - [ListBotVersionsRequestRequestTypeDef](#listbotversionsrequestrequesttypedef)
+  - [ListBotVersionsResponseTypeDef](#listbotversionsresponsetypedef)
+  - [ListBotsRequestRequestTypeDef](#listbotsrequestrequesttypedef)
+  - [ListBotsResponseTypeDef](#listbotsresponsetypedef)
+  - [ListBuiltInIntentsRequestRequestTypeDef](#listbuiltinintentsrequestrequesttypedef)
+  - [ListBuiltInIntentsResponseTypeDef](#listbuiltinintentsresponsetypedef)
+  - [ListBuiltInSlotTypesRequestRequestTypeDef](#listbuiltinslottypesrequestrequesttypedef)
+  - [ListBuiltInSlotTypesResponseTypeDef](#listbuiltinslottypesresponsetypedef)
+  - [ListExportsRequestRequestTypeDef](#listexportsrequestrequesttypedef)
+  - [ListExportsResponseTypeDef](#listexportsresponsetypedef)
+  - [ListImportsRequestRequestTypeDef](#listimportsrequestrequesttypedef)
+  - [ListImportsResponseTypeDef](#listimportsresponsetypedef)
+  - [ListIntentsRequestRequestTypeDef](#listintentsrequestrequesttypedef)
+  - [ListIntentsResponseTypeDef](#listintentsresponsetypedef)
+  - [ListSlotTypesRequestRequestTypeDef](#listslottypesrequestrequesttypedef)
+  - [ListSlotTypesResponseTypeDef](#listslottypesresponsetypedef)
+  - [ListSlotsRequestRequestTypeDef](#listslotsrequestrequesttypedef)
+  - [ListSlotsResponseTypeDef](#listslotsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MessageGroupTypeDef](#messagegrouptypedef)
   - [MessageTypeDef](#messagetypedef)
   - [MultipleValuesSettingTypeDef](#multiplevaluessettingtypedef)
@@ -170,29 +170,29 @@ type annotations stubs module
   - [SlotValueElicitationSettingTypeDef](#slotvalueelicitationsettingtypedef)
   - [SlotValueRegexFilterTypeDef](#slotvalueregexfiltertypedef)
   - [SlotValueSelectionSettingTypeDef](#slotvalueselectionsettingtypedef)
-  - [StartImportRequestTypeDef](#startimportrequesttypedef)
-  - [StartImportResponseResponseTypeDef](#startimportresponseresponsetypedef)
+  - [StartImportRequestRequestTypeDef](#startimportrequestrequesttypedef)
+  - [StartImportResponseTypeDef](#startimportresponsetypedef)
   - [StillWaitingResponseSpecificationTypeDef](#stillwaitingresponsespecificationtypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TextLogDestinationTypeDef](#textlogdestinationtypedef)
   - [TextLogSettingTypeDef](#textlogsettingtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateBotAliasRequestTypeDef](#updatebotaliasrequesttypedef)
-  - [UpdateBotAliasResponseResponseTypeDef](#updatebotaliasresponseresponsetypedef)
-  - [UpdateBotLocaleRequestTypeDef](#updatebotlocalerequesttypedef)
-  - [UpdateBotLocaleResponseResponseTypeDef](#updatebotlocaleresponseresponsetypedef)
-  - [UpdateBotRequestTypeDef](#updatebotrequesttypedef)
-  - [UpdateBotResponseResponseTypeDef](#updatebotresponseresponsetypedef)
-  - [UpdateExportRequestTypeDef](#updateexportrequesttypedef)
-  - [UpdateExportResponseResponseTypeDef](#updateexportresponseresponsetypedef)
-  - [UpdateIntentRequestTypeDef](#updateintentrequesttypedef)
-  - [UpdateIntentResponseResponseTypeDef](#updateintentresponseresponsetypedef)
-  - [UpdateResourcePolicyRequestTypeDef](#updateresourcepolicyrequesttypedef)
-  - [UpdateResourcePolicyResponseResponseTypeDef](#updateresourcepolicyresponseresponsetypedef)
-  - [UpdateSlotRequestTypeDef](#updateslotrequesttypedef)
-  - [UpdateSlotResponseResponseTypeDef](#updateslotresponseresponsetypedef)
-  - [UpdateSlotTypeRequestTypeDef](#updateslottyperequesttypedef)
-  - [UpdateSlotTypeResponseResponseTypeDef](#updateslottyperesponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateBotAliasRequestRequestTypeDef](#updatebotaliasrequestrequesttypedef)
+  - [UpdateBotAliasResponseTypeDef](#updatebotaliasresponsetypedef)
+  - [UpdateBotLocaleRequestRequestTypeDef](#updatebotlocalerequestrequesttypedef)
+  - [UpdateBotLocaleResponseTypeDef](#updatebotlocaleresponsetypedef)
+  - [UpdateBotRequestRequestTypeDef](#updatebotrequestrequesttypedef)
+  - [UpdateBotResponseTypeDef](#updatebotresponsetypedef)
+  - [UpdateExportRequestRequestTypeDef](#updateexportrequestrequesttypedef)
+  - [UpdateExportResponseTypeDef](#updateexportresponsetypedef)
+  - [UpdateIntentRequestRequestTypeDef](#updateintentrequestrequesttypedef)
+  - [UpdateIntentResponseTypeDef](#updateintentresponsetypedef)
+  - [UpdateResourcePolicyRequestRequestTypeDef](#updateresourcepolicyrequestrequesttypedef)
+  - [UpdateResourcePolicyResponseTypeDef](#updateresourcepolicyresponsetypedef)
+  - [UpdateSlotRequestRequestTypeDef](#updateslotrequestrequesttypedef)
+  - [UpdateSlotResponseTypeDef](#updateslotresponsetypedef)
+  - [UpdateSlotTypeRequestRequestTypeDef](#updateslottyperequestrequesttypedef)
+  - [UpdateSlotTypeResponseTypeDef](#updateslottyperesponsetypedef)
   - [VoiceSettingsTypeDef](#voicesettingstypedef)
   - [WaitAndContinueSpecificationTypeDef](#waitandcontinuespecificationtypedef)
 
@@ -448,10 +448,10 @@ Optional fields:
 - `botStatus`: [BotStatusType](./literals.md#botstatustype)
 - `creationDateTime`: `datetime`
 
-## BuildBotLocaleRequestTypeDef
+## BuildBotLocaleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import BuildBotLocaleRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import BuildBotLocaleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -460,10 +460,10 @@ Required fields:
 - `botVersion`: `str`
 - `localeId`: `str`
 
-## BuildBotLocaleResponseResponseTypeDef
+## BuildBotLocaleResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import BuildBotLocaleResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import BuildBotLocaleResponseTypeDef
 ```
 
 Required fields:
@@ -568,10 +568,10 @@ Optional fields:
 - `audioLogSettings`:
   `List`\[[AudioLogSettingTypeDef](./type_defs.md#audiologsettingtypedef)\]
 
-## CreateBotAliasRequestTypeDef
+## CreateBotAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateBotAliasRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateBotAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -591,10 +591,10 @@ Optional fields:
   [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateBotAliasResponseResponseTypeDef
+## CreateBotAliasResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateBotAliasResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateBotAliasResponseTypeDef
 ```
 
 Required fields:
@@ -616,10 +616,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateBotLocaleRequestTypeDef
+## CreateBotLocaleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateBotLocaleRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateBotLocaleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -634,10 +634,10 @@ Optional fields:
 - `description`: `str`
 - `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
 
-## CreateBotLocaleResponseResponseTypeDef
+## CreateBotLocaleResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateBotLocaleResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateBotLocaleResponseTypeDef
 ```
 
 Required fields:
@@ -654,10 +654,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateBotRequestTypeDef
+## CreateBotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateBotRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateBotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -673,10 +673,10 @@ Optional fields:
 - `botTags`: `Dict`\[`str`, `str`\]
 - `testBotAliasTags`: `Dict`\[`str`, `str`\]
 
-## CreateBotResponseResponseTypeDef
+## CreateBotResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateBotResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateBotResponseTypeDef
 ```
 
 Required fields:
@@ -694,10 +694,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateBotVersionRequestTypeDef
+## CreateBotVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateBotVersionRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateBotVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -710,10 +710,10 @@ Optional fields:
 
 - `description`: `str`
 
-## CreateBotVersionResponseResponseTypeDef
+## CreateBotVersionResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateBotVersionResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateBotVersionResponseTypeDef
 ```
 
 Required fields:
@@ -728,10 +728,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateExportRequestTypeDef
+## CreateExportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateExportRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateExportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -745,10 +745,10 @@ Optional fields:
 
 - `filePassword`: `str`
 
-## CreateExportResponseResponseTypeDef
+## CreateExportResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateExportResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateExportResponseTypeDef
 ```
 
 Required fields:
@@ -763,10 +763,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateIntentRequestTypeDef
+## CreateIntentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateIntentRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateIntentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -797,10 +797,10 @@ Optional fields:
 - `kendraConfiguration`:
   [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 
-## CreateIntentResponseResponseTypeDef
+## CreateIntentResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateIntentResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateIntentResponseTypeDef
 ```
 
 Required fields:
@@ -832,10 +832,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateResourcePolicyRequestTypeDef
+## CreateResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -843,10 +843,10 @@ Required fields:
 - `resourceArn`: `str`
 - `policy`: `str`
 
-## CreateResourcePolicyResponseResponseTypeDef
+## CreateResourcePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -856,10 +856,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateResourcePolicyStatementRequestTypeDef
+## CreateResourcePolicyStatementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyStatementRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyStatementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -875,10 +875,10 @@ Optional fields:
 - `condition`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
 - `expectedRevisionId`: `str`
 
-## CreateResourcePolicyStatementResponseResponseTypeDef
+## CreateResourcePolicyStatementResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyStatementResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyStatementResponseTypeDef
 ```
 
 Required fields:
@@ -888,10 +888,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSlotRequestTypeDef
+## CreateSlotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateSlotRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateSlotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -913,10 +913,10 @@ Optional fields:
 - `multipleValuesSetting`:
   [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
 
-## CreateSlotResponseResponseTypeDef
+## CreateSlotResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateSlotResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateSlotResponseTypeDef
 ```
 
 Required fields:
@@ -939,10 +939,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateSlotTypeRequestTypeDef
+## CreateSlotTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateSlotTypeRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateSlotTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -961,10 +961,10 @@ Optional fields:
   `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
 - `parentSlotTypeSignature`: `str`
 
-## CreateSlotTypeResponseResponseTypeDef
+## CreateSlotTypeResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateSlotTypeResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateSlotTypeResponseTypeDef
 ```
 
 Required fields:
@@ -984,10 +984,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUploadUrlResponseResponseTypeDef
+## CreateUploadUrlResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import CreateUploadUrlResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import CreateUploadUrlResponseTypeDef
 ```
 
 Required fields:
@@ -1017,10 +1017,10 @@ Required fields:
 
 - `childDirected`: `bool`
 
-## DeleteBotAliasRequestTypeDef
+## DeleteBotAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteBotAliasRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteBotAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1032,10 +1032,10 @@ Optional fields:
 
 - `skipResourceInUseCheck`: `bool`
 
-## DeleteBotAliasResponseResponseTypeDef
+## DeleteBotAliasResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteBotAliasResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteBotAliasResponseTypeDef
 ```
 
 Required fields:
@@ -1046,10 +1046,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteBotLocaleRequestTypeDef
+## DeleteBotLocaleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteBotLocaleRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteBotLocaleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1058,10 +1058,10 @@ Required fields:
 - `botVersion`: `str`
 - `localeId`: `str`
 
-## DeleteBotLocaleResponseResponseTypeDef
+## DeleteBotLocaleResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteBotLocaleResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteBotLocaleResponseTypeDef
 ```
 
 Required fields:
@@ -1073,10 +1073,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteBotRequestTypeDef
+## DeleteBotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteBotRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteBotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1087,10 +1087,10 @@ Optional fields:
 
 - `skipResourceInUseCheck`: `bool`
 
-## DeleteBotResponseResponseTypeDef
+## DeleteBotResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteBotResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteBotResponseTypeDef
 ```
 
 Required fields:
@@ -1100,10 +1100,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteBotVersionRequestTypeDef
+## DeleteBotVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteBotVersionRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteBotVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1115,10 +1115,10 @@ Optional fields:
 
 - `skipResourceInUseCheck`: `bool`
 
-## DeleteBotVersionResponseResponseTypeDef
+## DeleteBotVersionResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteBotVersionResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteBotVersionResponseTypeDef
 ```
 
 Required fields:
@@ -1129,20 +1129,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteExportRequestTypeDef
+## DeleteExportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteExportRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteExportRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `exportId`: `str`
 
-## DeleteExportResponseResponseTypeDef
+## DeleteExportResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteExportResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteExportResponseTypeDef
 ```
 
 Required fields:
@@ -1152,20 +1152,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteImportRequestTypeDef
+## DeleteImportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteImportRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteImportRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `importId`: `str`
 
-## DeleteImportResponseResponseTypeDef
+## DeleteImportResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteImportResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteImportResponseTypeDef
 ```
 
 Required fields:
@@ -1175,10 +1175,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteIntentRequestTypeDef
+## DeleteIntentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteIntentRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteIntentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1188,10 +1188,10 @@ Required fields:
 - `botVersion`: `str`
 - `localeId`: `str`
 
-## DeleteResourcePolicyRequestTypeDef
+## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1202,10 +1202,10 @@ Optional fields:
 
 - `expectedRevisionId`: `str`
 
-## DeleteResourcePolicyResponseResponseTypeDef
+## DeleteResourcePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1215,10 +1215,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteResourcePolicyStatementRequestTypeDef
+## DeleteResourcePolicyStatementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyStatementRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyStatementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1230,10 +1230,10 @@ Optional fields:
 
 - `expectedRevisionId`: `str`
 
-## DeleteResourcePolicyStatementResponseResponseTypeDef
+## DeleteResourcePolicyStatementResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyStatementResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyStatementResponseTypeDef
 ```
 
 Required fields:
@@ -1243,10 +1243,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteSlotRequestTypeDef
+## DeleteSlotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteSlotRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteSlotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1257,10 +1257,10 @@ Required fields:
 - `localeId`: `str`
 - `intentId`: `str`
 
-## DeleteSlotTypeRequestTypeDef
+## DeleteSlotTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DeleteSlotTypeRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DeleteSlotTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1274,10 +1274,10 @@ Optional fields:
 
 - `skipResourceInUseCheck`: `bool`
 
-## DescribeBotAliasRequestTypeDef
+## DescribeBotAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeBotAliasRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeBotAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1285,10 +1285,10 @@ Required fields:
 - `botAliasId`: `str`
 - `botId`: `str`
 
-## DescribeBotAliasResponseResponseTypeDef
+## DescribeBotAliasResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeBotAliasResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeBotAliasResponseTypeDef
 ```
 
 Required fields:
@@ -1312,10 +1312,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBotLocaleRequestTypeDef
+## DescribeBotLocaleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeBotLocaleRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeBotLocaleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1324,10 +1324,10 @@ Required fields:
 - `botVersion`: `str`
 - `localeId`: `str`
 
-## DescribeBotLocaleResponseResponseTypeDef
+## DescribeBotLocaleResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeBotLocaleResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeBotLocaleResponseTypeDef
 ```
 
 Required fields:
@@ -1351,20 +1351,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBotRequestTypeDef
+## DescribeBotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeBotRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeBotRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `botId`: `str`
 
-## DescribeBotResponseResponseTypeDef
+## DescribeBotResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeBotResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeBotResponseTypeDef
 ```
 
 Required fields:
@@ -1381,10 +1381,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBotVersionRequestTypeDef
+## DescribeBotVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeBotVersionRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeBotVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1392,10 +1392,10 @@ Required fields:
 - `botId`: `str`
 - `botVersion`: `str`
 
-## DescribeBotVersionResponseResponseTypeDef
+## DescribeBotVersionResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeBotVersionResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeBotVersionResponseTypeDef
 ```
 
 Required fields:
@@ -1413,20 +1413,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeExportRequestTypeDef
+## DescribeExportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeExportRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeExportRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `exportId`: `str`
 
-## DescribeExportResponseResponseTypeDef
+## DescribeExportResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeExportResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeExportResponseTypeDef
 ```
 
 Required fields:
@@ -1444,20 +1444,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeImportRequestTypeDef
+## DescribeImportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeImportRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeImportRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `importId`: `str`
 
-## DescribeImportResponseResponseTypeDef
+## DescribeImportResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeImportResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeImportResponseTypeDef
 ```
 
 Required fields:
@@ -1475,10 +1475,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIntentRequestTypeDef
+## DescribeIntentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeIntentRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeIntentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1488,10 +1488,10 @@ Required fields:
 - `botVersion`: `str`
 - `localeId`: `str`
 
-## DescribeIntentResponseResponseTypeDef
+## DescribeIntentResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeIntentResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeIntentResponseTypeDef
 ```
 
 Required fields:
@@ -1526,20 +1526,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeResourcePolicyRequestTypeDef
+## DescribeResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeResourcePolicyRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeResourcePolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## DescribeResourcePolicyResponseResponseTypeDef
+## DescribeResourcePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeResourcePolicyResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeResourcePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -1550,10 +1550,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSlotRequestTypeDef
+## DescribeSlotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeSlotRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeSlotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1564,10 +1564,10 @@ Required fields:
 - `localeId`: `str`
 - `intentId`: `str`
 
-## DescribeSlotResponseResponseTypeDef
+## DescribeSlotResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeSlotResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeSlotResponseTypeDef
 ```
 
 Required fields:
@@ -1591,10 +1591,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSlotTypeRequestTypeDef
+## DescribeSlotTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeSlotTypeRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeSlotTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1604,10 +1604,10 @@ Required fields:
 - `botVersion`: `str`
 - `localeId`: `str`
 
-## DescribeSlotTypeResponseResponseTypeDef
+## DescribeSlotTypeResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import DescribeSlotTypeResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import DescribeSlotTypeResponseTypeDef
 ```
 
 Required fields:
@@ -1878,10 +1878,10 @@ Required fields:
 - `lambdaARN`: `str`
 - `codeHookInterfaceVersion`: `str`
 
-## ListBotAliasesRequestTypeDef
+## ListBotAliasesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListBotAliasesRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListBotAliasesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1893,10 +1893,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListBotAliasesResponseResponseTypeDef
+## ListBotAliasesResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListBotAliasesResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListBotAliasesResponseTypeDef
 ```
 
 Required fields:
@@ -1908,10 +1908,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBotLocalesRequestTypeDef
+## ListBotLocalesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListBotLocalesRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListBotLocalesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1927,10 +1927,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListBotLocalesResponseResponseTypeDef
+## ListBotLocalesResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListBotLocalesResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListBotLocalesResponseTypeDef
 ```
 
 Required fields:
@@ -1943,10 +1943,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBotVersionsRequestTypeDef
+## ListBotVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListBotVersionsRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListBotVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1959,10 +1959,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListBotVersionsResponseResponseTypeDef
+## ListBotVersionsResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListBotVersionsResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListBotVersionsResponseTypeDef
 ```
 
 Required fields:
@@ -1974,10 +1974,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBotsRequestTypeDef
+## ListBotsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListBotsRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListBotsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1987,10 +1987,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListBotsResponseResponseTypeDef
+## ListBotsResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListBotsResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListBotsResponseTypeDef
 ```
 
 Required fields:
@@ -2001,10 +2001,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBuiltInIntentsRequestTypeDef
+## ListBuiltInIntentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListBuiltInIntentsRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListBuiltInIntentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2018,10 +2018,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListBuiltInIntentsResponseResponseTypeDef
+## ListBuiltInIntentsResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListBuiltInIntentsResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListBuiltInIntentsResponseTypeDef
 ```
 
 Required fields:
@@ -2033,10 +2033,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBuiltInSlotTypesRequestTypeDef
+## ListBuiltInSlotTypesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListBuiltInSlotTypesRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListBuiltInSlotTypesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2050,10 +2050,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListBuiltInSlotTypesResponseResponseTypeDef
+## ListBuiltInSlotTypesResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListBuiltInSlotTypesResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListBuiltInSlotTypesResponseTypeDef
 ```
 
 Required fields:
@@ -2065,10 +2065,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListExportsRequestTypeDef
+## ListExportsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListExportsRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListExportsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2081,10 +2081,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListExportsResponseResponseTypeDef
+## ListExportsResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListExportsResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListExportsResponseTypeDef
 ```
 
 Required fields:
@@ -2097,10 +2097,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListImportsRequestTypeDef
+## ListImportsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListImportsRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListImportsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2113,10 +2113,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListImportsResponseResponseTypeDef
+## ListImportsResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListImportsResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListImportsResponseTypeDef
 ```
 
 Required fields:
@@ -2129,10 +2129,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListIntentsRequestTypeDef
+## ListIntentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListIntentsRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListIntentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2149,10 +2149,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListIntentsResponseResponseTypeDef
+## ListIntentsResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListIntentsResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListIntentsResponseTypeDef
 ```
 
 Required fields:
@@ -2166,10 +2166,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSlotTypesRequestTypeDef
+## ListSlotTypesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListSlotTypesRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListSlotTypesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2186,10 +2186,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListSlotTypesResponseResponseTypeDef
+## ListSlotTypesResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListSlotTypesResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListSlotTypesResponseTypeDef
 ```
 
 Required fields:
@@ -2203,10 +2203,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSlotsRequestTypeDef
+## ListSlotsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListSlotsRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListSlotsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2223,10 +2223,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListSlotsResponseResponseTypeDef
+## ListSlotsResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListSlotsResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListSlotsResponseTypeDef
 ```
 
 Required fields:
@@ -2241,20 +2241,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceARN`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -2617,10 +2617,10 @@ Optional fields:
 - `regexFilter`:
   [SlotValueRegexFilterTypeDef](./type_defs.md#slotvalueregexfiltertypedef)
 
-## StartImportRequestTypeDef
+## StartImportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import StartImportRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import StartImportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2634,10 +2634,10 @@ Optional fields:
 
 - `filePassword`: `str`
 
-## StartImportResponseResponseTypeDef
+## StartImportResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import StartImportResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import StartImportResponseTypeDef
 ```
 
 Required fields:
@@ -2668,10 +2668,10 @@ Optional fields:
 
 - `allowInterrupt`: `bool`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2702,10 +2702,10 @@ Required fields:
 - `destination`:
   [TextLogDestinationTypeDef](./type_defs.md#textlogdestinationtypedef)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2713,10 +2713,10 @@ Required fields:
 - `resourceARN`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateBotAliasRequestTypeDef
+## UpdateBotAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateBotAliasRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateBotAliasRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2736,10 +2736,10 @@ Optional fields:
 - `sentimentAnalysisSettings`:
   [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
 
-## UpdateBotAliasResponseResponseTypeDef
+## UpdateBotAliasResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateBotAliasResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateBotAliasResponseTypeDef
 ```
 
 Required fields:
@@ -2761,10 +2761,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateBotLocaleRequestTypeDef
+## UpdateBotLocaleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateBotLocaleRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateBotLocaleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2779,10 +2779,10 @@ Optional fields:
 - `description`: `str`
 - `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
 
-## UpdateBotLocaleResponseResponseTypeDef
+## UpdateBotLocaleResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateBotLocaleResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateBotLocaleResponseTypeDef
 ```
 
 Required fields:
@@ -2801,10 +2801,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateBotRequestTypeDef
+## UpdateBotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateBotRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateBotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2819,10 +2819,10 @@ Optional fields:
 
 - `description`: `str`
 
-## UpdateBotResponseResponseTypeDef
+## UpdateBotResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateBotResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateBotResponseTypeDef
 ```
 
 Required fields:
@@ -2839,10 +2839,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateExportRequestTypeDef
+## UpdateExportRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateExportRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateExportRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2853,10 +2853,10 @@ Optional fields:
 
 - `filePassword`: `str`
 
-## UpdateExportResponseResponseTypeDef
+## UpdateExportResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateExportResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateExportResponseTypeDef
 ```
 
 Required fields:
@@ -2872,10 +2872,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateIntentRequestTypeDef
+## UpdateIntentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateIntentRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateIntentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2909,10 +2909,10 @@ Optional fields:
 - `kendraConfiguration`:
   [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 
-## UpdateIntentResponseResponseTypeDef
+## UpdateIntentResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateIntentResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateIntentResponseTypeDef
 ```
 
 Required fields:
@@ -2947,10 +2947,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateResourcePolicyRequestTypeDef
+## UpdateResourcePolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateResourcePolicyRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateResourcePolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2962,10 +2962,10 @@ Optional fields:
 
 - `expectedRevisionId`: `str`
 
-## UpdateResourcePolicyResponseResponseTypeDef
+## UpdateResourcePolicyResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateResourcePolicyResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateResourcePolicyResponseTypeDef
 ```
 
 Required fields:
@@ -2975,10 +2975,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSlotRequestTypeDef
+## UpdateSlotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateSlotRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateSlotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3001,10 +3001,10 @@ Optional fields:
 - `multipleValuesSetting`:
   [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
 
-## UpdateSlotResponseResponseTypeDef
+## UpdateSlotResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateSlotResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateSlotResponseTypeDef
 ```
 
 Required fields:
@@ -3028,10 +3028,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateSlotTypeRequestTypeDef
+## UpdateSlotTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateSlotTypeRequestTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateSlotTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3051,10 +3051,10 @@ Optional fields:
   `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
 - `parentSlotTypeSignature`: `str`
 
-## UpdateSlotTypeResponseResponseTypeDef
+## UpdateSlotTypeResponseTypeDef
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import UpdateSlotTypeResponseResponseTypeDef
+from mypy_boto3_lexv2_models.type_defs import UpdateSlotTypeResponseTypeDef
 ```
 
 Required fields:

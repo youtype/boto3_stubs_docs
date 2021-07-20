@@ -33,6 +33,7 @@ from mypy_boto3_pricing.client import PricingClient
 
 - [can_paginate](./client.md#can_paginate)
 - [describe_services](./client.md#describe_services)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_attribute_values](./client.md#get_attribute_values)
 - [get_paginator](./client.md#get_paginator)
@@ -91,13 +92,13 @@ from mypy_boto3_pricing.type_defs import AttributeValueTypeDef, ...
 ```
 
 - [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
-- [DescribeServicesRequestTypeDef](./type_defs.md#describeservicesrequesttypedef)
-- [DescribeServicesResponseResponseTypeDef](./type_defs.md#describeservicesresponseresponsetypedef)
+- [DescribeServicesRequestRequestTypeDef](./type_defs.md#describeservicesrequestrequesttypedef)
+- [DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
-- [GetAttributeValuesRequestTypeDef](./type_defs.md#getattributevaluesrequesttypedef)
-- [GetAttributeValuesResponseResponseTypeDef](./type_defs.md#getattributevaluesresponseresponsetypedef)
-- [GetProductsRequestTypeDef](./type_defs.md#getproductsrequesttypedef)
-- [GetProductsResponseResponseTypeDef](./type_defs.md#getproductsresponseresponsetypedef)
+- [GetAttributeValuesRequestRequestTypeDef](./type_defs.md#getattributevaluesrequestrequesttypedef)
+- [GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef)
+- [GetProductsRequestRequestTypeDef](./type_defs.md#getproductsrequestrequesttypedef)
+- [GetProductsResponseTypeDef](./type_defs.md#getproductsresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ServiceTypeDef](./type_defs.md#servicetypedef)

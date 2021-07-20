@@ -40,7 +40,7 @@ Arguments for `DescribeCasesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCasesPaginator.paginate` returns
-`Iterator`\[[DescribeCasesResponseResponseTypeDef](./type_defs.md#describecasesresponseresponsetypedef)\].
+`Iterator`\[[DescribeCasesResponseTypeDef](./type_defs.md#describecasesresponsetypedef)\].
 
 ## DescribeCommunicationsPaginator
 
@@ -68,4 +68,4 @@ Arguments for `DescribeCommunicationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeCommunicationsPaginator.paginate` returns
-`Iterator`\[[DescribeCommunicationsResponseResponseTypeDef](./type_defs.md#describecommunicationsresponseresponsetypedef)\].
+`Iterator`\[[DescribeCommunicationsResponseTypeDef](./type_defs.md#describecommunicationsresponsetypedef)\].

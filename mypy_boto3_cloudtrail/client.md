@@ -11,6 +11,7 @@ type annotations stubs module
   - [CloudTrailClient](#cloudtrailclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_tags](#add_tags)
     - [can_paginate](#can_paginate)
     - [create_trail](#create_trail)
@@ -111,6 +112,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CloudTrailClient exceptions.
+
+Type annotations for `boto3.client("cloudtrail").exceptions` method.
+
+Boto3 documentation:
+[CloudTrail.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_tags
 
 Adds one or more tags to a trail, up to a limit of 50.
@@ -121,7 +133,7 @@ Boto3 documentation:
 [CloudTrail.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.add_tags)
 
 Arguments mapping described in
-[AddTagsRequestTypeDef](./type_defs.md#addtagsrequesttypedef).
+[AddTagsRequestRequestTypeDef](./type_defs.md#addtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,7 +168,7 @@ Boto3 documentation:
 [CloudTrail.Client.create_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_trail)
 
 Arguments mapping described in
-[CreateTrailRequestTypeDef](./type_defs.md#createtrailrequesttypedef).
+[CreateTrailRequestRequestTypeDef](./type_defs.md#createtrailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -174,7 +186,7 @@ Keyword-only arguments:
 - `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTrailResponseResponseTypeDef](./type_defs.md#createtrailresponseresponsetypedef).
+[CreateTrailResponseTypeDef](./type_defs.md#createtrailresponsetypedef).
 
 ### delete_trail
 
@@ -186,7 +198,7 @@ Boto3 documentation:
 [CloudTrail.Client.delete_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_trail)
 
 Arguments mapping described in
-[DeleteTrailRequestTypeDef](./type_defs.md#deletetrailrequesttypedef).
+[DeleteTrailRequestRequestTypeDef](./type_defs.md#deletetrailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -205,7 +217,7 @@ Boto3 documentation:
 [CloudTrail.Client.describe_trails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.describe_trails)
 
 Arguments mapping described in
-[DescribeTrailsRequestTypeDef](./type_defs.md#describetrailsrequesttypedef).
+[DescribeTrailsRequestRequestTypeDef](./type_defs.md#describetrailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -213,7 +225,7 @@ Keyword-only arguments:
 - `includeShadowTrails`: `bool`
 
 Returns
-[DescribeTrailsResponseResponseTypeDef](./type_defs.md#describetrailsresponseresponsetypedef).
+[DescribeTrailsResponseTypeDef](./type_defs.md#describetrailsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -245,14 +257,14 @@ Boto3 documentation:
 [CloudTrail.Client.get_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_event_selectors)
 
 Arguments mapping described in
-[GetEventSelectorsRequestTypeDef](./type_defs.md#geteventselectorsrequesttypedef).
+[GetEventSelectorsRequestRequestTypeDef](./type_defs.md#geteventselectorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TrailName`: `str` *(required)*
 
 Returns
-[GetEventSelectorsResponseResponseTypeDef](./type_defs.md#geteventselectorsresponseresponsetypedef).
+[GetEventSelectorsResponseTypeDef](./type_defs.md#geteventselectorsresponsetypedef).
 
 ### get_insight_selectors
 
@@ -265,14 +277,14 @@ Boto3 documentation:
 [CloudTrail.Client.get_insight_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_insight_selectors)
 
 Arguments mapping described in
-[GetInsightSelectorsRequestTypeDef](./type_defs.md#getinsightselectorsrequesttypedef).
+[GetInsightSelectorsRequestRequestTypeDef](./type_defs.md#getinsightselectorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TrailName`: `str` *(required)*
 
 Returns
-[GetInsightSelectorsResponseResponseTypeDef](./type_defs.md#getinsightselectorsresponseresponsetypedef).
+[GetInsightSelectorsResponseTypeDef](./type_defs.md#getinsightselectorsresponsetypedef).
 
 ### get_trail
 
@@ -284,14 +296,13 @@ Boto3 documentation:
 [CloudTrail.Client.get_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail)
 
 Arguments mapping described in
-[GetTrailRequestTypeDef](./type_defs.md#gettrailrequesttypedef).
+[GetTrailRequestRequestTypeDef](./type_defs.md#gettrailrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-Returns
-[GetTrailResponseResponseTypeDef](./type_defs.md#gettrailresponseresponsetypedef).
+Returns [GetTrailResponseTypeDef](./type_defs.md#gettrailresponsetypedef).
 
 ### get_trail_status
 
@@ -303,14 +314,14 @@ Boto3 documentation:
 [CloudTrail.Client.get_trail_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail_status)
 
 Arguments mapping described in
-[GetTrailStatusRequestTypeDef](./type_defs.md#gettrailstatusrequesttypedef).
+[GetTrailStatusRequestRequestTypeDef](./type_defs.md#gettrailstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetTrailStatusResponseResponseTypeDef](./type_defs.md#gettrailstatusresponseresponsetypedef).
+[GetTrailStatusResponseTypeDef](./type_defs.md#gettrailstatusresponsetypedef).
 
 ### list_public_keys
 
@@ -323,7 +334,7 @@ Boto3 documentation:
 [CloudTrail.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_public_keys)
 
 Arguments mapping described in
-[ListPublicKeysRequestTypeDef](./type_defs.md#listpublickeysrequesttypedef).
+[ListPublicKeysRequestRequestTypeDef](./type_defs.md#listpublickeysrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -332,7 +343,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPublicKeysResponseResponseTypeDef](./type_defs.md#listpublickeysresponseresponsetypedef).
+[ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef).
 
 ### list_tags
 
@@ -344,15 +355,14 @@ Boto3 documentation:
 [CloudTrail.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_tags)
 
 Arguments mapping described in
-[ListTagsRequestTypeDef](./type_defs.md#listtagsrequesttypedef).
+[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceIdList`: `List`\[`str`\] *(required)*
 - `NextToken`: `str`
 
-Returns
-[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### list_trails
 
@@ -364,14 +374,13 @@ Boto3 documentation:
 [CloudTrail.Client.list_trails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_trails)
 
 Arguments mapping described in
-[ListTrailsRequestTypeDef](./type_defs.md#listtrailsrequesttypedef).
+[ListTrailsRequestRequestTypeDef](./type_defs.md#listtrailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
-Returns
-[ListTrailsResponseResponseTypeDef](./type_defs.md#listtrailsresponseresponsetypedef).
+Returns [ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef).
 
 ### lookup_events
 
@@ -386,7 +395,7 @@ Boto3 documentation:
 [CloudTrail.Client.lookup_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.lookup_events)
 
 Arguments mapping described in
-[LookupEventsRequestTypeDef](./type_defs.md#lookupeventsrequesttypedef).
+[LookupEventsRequestRequestTypeDef](./type_defs.md#lookupeventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -400,7 +409,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[LookupEventsResponseResponseTypeDef](./type_defs.md#lookupeventsresponseresponsetypedef).
+[LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef).
 
 ### put_event_selectors
 
@@ -412,7 +421,7 @@ Boto3 documentation:
 [CloudTrail.Client.put_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_event_selectors)
 
 Arguments mapping described in
-[PutEventSelectorsRequestTypeDef](./type_defs.md#puteventselectorsrequesttypedef).
+[PutEventSelectorsRequestRequestTypeDef](./type_defs.md#puteventselectorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -423,7 +432,7 @@ Keyword-only arguments:
   `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
 
 Returns
-[PutEventSelectorsResponseResponseTypeDef](./type_defs.md#puteventselectorsresponseresponsetypedef).
+[PutEventSelectorsResponseTypeDef](./type_defs.md#puteventselectorsresponsetypedef).
 
 ### put_insight_selectors
 
@@ -436,7 +445,7 @@ Boto3 documentation:
 [CloudTrail.Client.put_insight_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_insight_selectors)
 
 Arguments mapping described in
-[PutInsightSelectorsRequestTypeDef](./type_defs.md#putinsightselectorsrequesttypedef).
+[PutInsightSelectorsRequestRequestTypeDef](./type_defs.md#putinsightselectorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -446,7 +455,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutInsightSelectorsResponseResponseTypeDef](./type_defs.md#putinsightselectorsresponseresponsetypedef).
+[PutInsightSelectorsResponseTypeDef](./type_defs.md#putinsightselectorsresponsetypedef).
 
 ### remove_tags
 
@@ -458,7 +467,7 @@ Boto3 documentation:
 [CloudTrail.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.remove_tags)
 
 Arguments mapping described in
-[RemoveTagsRequestTypeDef](./type_defs.md#removetagsrequesttypedef).
+[RemoveTagsRequestRequestTypeDef](./type_defs.md#removetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -477,7 +486,7 @@ Boto3 documentation:
 [CloudTrail.Client.start_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_logging)
 
 Arguments mapping described in
-[StartLoggingRequestTypeDef](./type_defs.md#startloggingrequesttypedef).
+[StartLoggingRequestRequestTypeDef](./type_defs.md#startloggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -496,7 +505,7 @@ Boto3 documentation:
 [CloudTrail.Client.stop_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.stop_logging)
 
 Arguments mapping described in
-[StopLoggingRequestTypeDef](./type_defs.md#stoploggingrequesttypedef).
+[StopLoggingRequestRequestTypeDef](./type_defs.md#stoploggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -514,7 +523,7 @@ Boto3 documentation:
 [CloudTrail.Client.update_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_trail)
 
 Arguments mapping described in
-[UpdateTrailRequestTypeDef](./type_defs.md#updatetrailrequesttypedef).
+[UpdateTrailRequestRequestTypeDef](./type_defs.md#updatetrailrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -531,7 +540,7 @@ Keyword-only arguments:
 - `IsOrganizationTrail`: `bool`
 
 Returns
-[UpdateTrailResponseResponseTypeDef](./type_defs.md#updatetrailresponseresponsetypedef).
+[UpdateTrailResponseTypeDef](./type_defs.md#updatetrailresponsetypedef).
 
 ### get_paginator
 

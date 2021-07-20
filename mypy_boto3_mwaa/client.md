@@ -11,6 +11,7 @@ type annotations stubs module
   - [MWAAClient](#mwaaclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_cli_token](#create_cli_token)
     - [create_environment](#create_environment)
@@ -64,6 +65,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MWAAClient exceptions.
+
+Type annotations for `boto3.client("mwaa").exceptions` method.
+
+Boto3 documentation:
+[MWAA.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -89,14 +101,14 @@ Boto3 documentation:
 [MWAA.Client.create_cli_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_cli_token)
 
 Arguments mapping described in
-[CreateCliTokenRequestTypeDef](./type_defs.md#createclitokenrequesttypedef).
+[CreateCliTokenRequestRequestTypeDef](./type_defs.md#createclitokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[CreateCliTokenResponseResponseTypeDef](./type_defs.md#createclitokenresponseresponsetypedef).
+[CreateCliTokenResponseTypeDef](./type_defs.md#createclitokenresponsetypedef).
 
 ### create_environment
 
@@ -108,7 +120,7 @@ Boto3 documentation:
 [MWAA.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_environment)
 
 Arguments mapping described in
-[CreateEnvironmentInputTypeDef](./type_defs.md#createenvironmentinputtypedef).
+[CreateEnvironmentInputRequestTypeDef](./type_defs.md#createenvironmentinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -138,7 +150,7 @@ Keyword-only arguments:
 - `WeeklyMaintenanceWindowStart`: `str`
 
 Returns
-[CreateEnvironmentOutputResponseTypeDef](./type_defs.md#createenvironmentoutputresponsetypedef).
+[CreateEnvironmentOutputTypeDef](./type_defs.md#createenvironmentoutputtypedef).
 
 ### create_web_login_token
 
@@ -151,14 +163,14 @@ Boto3 documentation:
 [MWAA.Client.create_web_login_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_web_login_token)
 
 Arguments mapping described in
-[CreateWebLoginTokenRequestTypeDef](./type_defs.md#createweblogintokenrequesttypedef).
+[CreateWebLoginTokenRequestRequestTypeDef](./type_defs.md#createweblogintokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[CreateWebLoginTokenResponseResponseTypeDef](./type_defs.md#createweblogintokenresponseresponsetypedef).
+[CreateWebLoginTokenResponseTypeDef](./type_defs.md#createweblogintokenresponsetypedef).
 
 ### delete_environment
 
@@ -170,7 +182,7 @@ Boto3 documentation:
 [MWAA.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.delete_environment)
 
 Arguments mapping described in
-[DeleteEnvironmentInputTypeDef](./type_defs.md#deleteenvironmentinputtypedef).
+[DeleteEnvironmentInputRequestTypeDef](./type_defs.md#deleteenvironmentinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,14 +219,14 @@ Boto3 documentation:
 [MWAA.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.get_environment)
 
 Arguments mapping described in
-[GetEnvironmentInputTypeDef](./type_defs.md#getenvironmentinputtypedef).
+[GetEnvironmentInputRequestTypeDef](./type_defs.md#getenvironmentinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetEnvironmentOutputResponseTypeDef](./type_defs.md#getenvironmentoutputresponsetypedef).
+[GetEnvironmentOutputTypeDef](./type_defs.md#getenvironmentoutputtypedef).
 
 ### list_environments
 
@@ -226,7 +238,7 @@ Boto3 documentation:
 [MWAA.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_environments)
 
 Arguments mapping described in
-[ListEnvironmentsInputTypeDef](./type_defs.md#listenvironmentsinputtypedef).
+[ListEnvironmentsInputRequestTypeDef](./type_defs.md#listenvironmentsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -234,7 +246,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListEnvironmentsOutputResponseTypeDef](./type_defs.md#listenvironmentsoutputresponsetypedef).
+[ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -247,14 +259,14 @@ Boto3 documentation:
 [MWAA.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### publish_metrics
 
@@ -266,7 +278,7 @@ Boto3 documentation:
 [MWAA.Client.publish_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.publish_metrics)
 
 Arguments mapping described in
-[PublishMetricsInputTypeDef](./type_defs.md#publishmetricsinputtypedef).
+[PublishMetricsInputRequestTypeDef](./type_defs.md#publishmetricsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -288,7 +300,7 @@ Boto3 documentation:
 [MWAA.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,7 +320,7 @@ Boto3 documentation:
 [MWAA.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -327,7 +339,7 @@ Boto3 documentation:
 [MWAA.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.update_environment)
 
 Arguments mapping described in
-[UpdateEnvironmentInputTypeDef](./type_defs.md#updateenvironmentinputtypedef).
+[UpdateEnvironmentInputRequestTypeDef](./type_defs.md#updateenvironmentinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -354,7 +366,7 @@ Keyword-only arguments:
 - `WeeklyMaintenanceWindowStart`: `str`
 
 Returns
-[UpdateEnvironmentOutputResponseTypeDef](./type_defs.md#updateenvironmentoutputresponsetypedef).
+[UpdateEnvironmentOutputTypeDef](./type_defs.md#updateenvironmentoutputtypedef).
 
 ### get_paginator
 

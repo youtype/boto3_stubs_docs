@@ -12,49 +12,49 @@ type annotations stubs module
   - [AppValidationConfigurationTypeDef](#appvalidationconfigurationtypedef)
   - [AppValidationOutputTypeDef](#appvalidationoutputtypedef)
   - [ConnectorTypeDef](#connectortypedef)
-  - [CreateAppRequestTypeDef](#createapprequesttypedef)
-  - [CreateAppResponseResponseTypeDef](#createappresponseresponsetypedef)
-  - [CreateReplicationJobRequestTypeDef](#createreplicationjobrequesttypedef)
-  - [CreateReplicationJobResponseResponseTypeDef](#createreplicationjobresponseresponsetypedef)
-  - [DeleteAppLaunchConfigurationRequestTypeDef](#deleteapplaunchconfigurationrequesttypedef)
-  - [DeleteAppReplicationConfigurationRequestTypeDef](#deleteappreplicationconfigurationrequesttypedef)
-  - [DeleteAppRequestTypeDef](#deleteapprequesttypedef)
-  - [DeleteAppValidationConfigurationRequestTypeDef](#deleteappvalidationconfigurationrequesttypedef)
-  - [DeleteReplicationJobRequestTypeDef](#deletereplicationjobrequesttypedef)
-  - [DisassociateConnectorRequestTypeDef](#disassociateconnectorrequesttypedef)
-  - [GenerateChangeSetRequestTypeDef](#generatechangesetrequesttypedef)
-  - [GenerateChangeSetResponseResponseTypeDef](#generatechangesetresponseresponsetypedef)
-  - [GenerateTemplateRequestTypeDef](#generatetemplaterequesttypedef)
-  - [GenerateTemplateResponseResponseTypeDef](#generatetemplateresponseresponsetypedef)
-  - [GetAppLaunchConfigurationRequestTypeDef](#getapplaunchconfigurationrequesttypedef)
-  - [GetAppLaunchConfigurationResponseResponseTypeDef](#getapplaunchconfigurationresponseresponsetypedef)
-  - [GetAppReplicationConfigurationRequestTypeDef](#getappreplicationconfigurationrequesttypedef)
-  - [GetAppReplicationConfigurationResponseResponseTypeDef](#getappreplicationconfigurationresponseresponsetypedef)
-  - [GetAppRequestTypeDef](#getapprequesttypedef)
-  - [GetAppResponseResponseTypeDef](#getappresponseresponsetypedef)
-  - [GetAppValidationConfigurationRequestTypeDef](#getappvalidationconfigurationrequesttypedef)
-  - [GetAppValidationConfigurationResponseResponseTypeDef](#getappvalidationconfigurationresponseresponsetypedef)
-  - [GetAppValidationOutputRequestTypeDef](#getappvalidationoutputrequesttypedef)
-  - [GetAppValidationOutputResponseResponseTypeDef](#getappvalidationoutputresponseresponsetypedef)
-  - [GetConnectorsRequestTypeDef](#getconnectorsrequesttypedef)
-  - [GetConnectorsResponseResponseTypeDef](#getconnectorsresponseresponsetypedef)
-  - [GetReplicationJobsRequestTypeDef](#getreplicationjobsrequesttypedef)
-  - [GetReplicationJobsResponseResponseTypeDef](#getreplicationjobsresponseresponsetypedef)
-  - [GetReplicationRunsRequestTypeDef](#getreplicationrunsrequesttypedef)
-  - [GetReplicationRunsResponseResponseTypeDef](#getreplicationrunsresponseresponsetypedef)
-  - [GetServersRequestTypeDef](#getserversrequesttypedef)
-  - [GetServersResponseResponseTypeDef](#getserversresponseresponsetypedef)
-  - [ImportAppCatalogRequestTypeDef](#importappcatalogrequesttypedef)
-  - [LaunchAppRequestTypeDef](#launchapprequesttypedef)
+  - [CreateAppRequestRequestTypeDef](#createapprequestrequesttypedef)
+  - [CreateAppResponseTypeDef](#createappresponsetypedef)
+  - [CreateReplicationJobRequestRequestTypeDef](#createreplicationjobrequestrequesttypedef)
+  - [CreateReplicationJobResponseTypeDef](#createreplicationjobresponsetypedef)
+  - [DeleteAppLaunchConfigurationRequestRequestTypeDef](#deleteapplaunchconfigurationrequestrequesttypedef)
+  - [DeleteAppReplicationConfigurationRequestRequestTypeDef](#deleteappreplicationconfigurationrequestrequesttypedef)
+  - [DeleteAppRequestRequestTypeDef](#deleteapprequestrequesttypedef)
+  - [DeleteAppValidationConfigurationRequestRequestTypeDef](#deleteappvalidationconfigurationrequestrequesttypedef)
+  - [DeleteReplicationJobRequestRequestTypeDef](#deletereplicationjobrequestrequesttypedef)
+  - [DisassociateConnectorRequestRequestTypeDef](#disassociateconnectorrequestrequesttypedef)
+  - [GenerateChangeSetRequestRequestTypeDef](#generatechangesetrequestrequesttypedef)
+  - [GenerateChangeSetResponseTypeDef](#generatechangesetresponsetypedef)
+  - [GenerateTemplateRequestRequestTypeDef](#generatetemplaterequestrequesttypedef)
+  - [GenerateTemplateResponseTypeDef](#generatetemplateresponsetypedef)
+  - [GetAppLaunchConfigurationRequestRequestTypeDef](#getapplaunchconfigurationrequestrequesttypedef)
+  - [GetAppLaunchConfigurationResponseTypeDef](#getapplaunchconfigurationresponsetypedef)
+  - [GetAppReplicationConfigurationRequestRequestTypeDef](#getappreplicationconfigurationrequestrequesttypedef)
+  - [GetAppReplicationConfigurationResponseTypeDef](#getappreplicationconfigurationresponsetypedef)
+  - [GetAppRequestRequestTypeDef](#getapprequestrequesttypedef)
+  - [GetAppResponseTypeDef](#getappresponsetypedef)
+  - [GetAppValidationConfigurationRequestRequestTypeDef](#getappvalidationconfigurationrequestrequesttypedef)
+  - [GetAppValidationConfigurationResponseTypeDef](#getappvalidationconfigurationresponsetypedef)
+  - [GetAppValidationOutputRequestRequestTypeDef](#getappvalidationoutputrequestrequesttypedef)
+  - [GetAppValidationOutputResponseTypeDef](#getappvalidationoutputresponsetypedef)
+  - [GetConnectorsRequestRequestTypeDef](#getconnectorsrequestrequesttypedef)
+  - [GetConnectorsResponseTypeDef](#getconnectorsresponsetypedef)
+  - [GetReplicationJobsRequestRequestTypeDef](#getreplicationjobsrequestrequesttypedef)
+  - [GetReplicationJobsResponseTypeDef](#getreplicationjobsresponsetypedef)
+  - [GetReplicationRunsRequestRequestTypeDef](#getreplicationrunsrequestrequesttypedef)
+  - [GetReplicationRunsResponseTypeDef](#getreplicationrunsresponsetypedef)
+  - [GetServersRequestRequestTypeDef](#getserversrequestrequesttypedef)
+  - [GetServersResponseTypeDef](#getserversresponsetypedef)
+  - [ImportAppCatalogRequestRequestTypeDef](#importappcatalogrequestrequesttypedef)
+  - [LaunchAppRequestRequestTypeDef](#launchapprequestrequesttypedef)
   - [LaunchDetailsTypeDef](#launchdetailstypedef)
-  - [ListAppsRequestTypeDef](#listappsrequesttypedef)
-  - [ListAppsResponseResponseTypeDef](#listappsresponseresponsetypedef)
+  - [ListAppsRequestRequestTypeDef](#listappsrequestrequesttypedef)
+  - [ListAppsResponseTypeDef](#listappsresponsetypedef)
   - [NotificationContextTypeDef](#notificationcontexttypedef)
-  - [NotifyAppValidationOutputRequestTypeDef](#notifyappvalidationoutputrequesttypedef)
+  - [NotifyAppValidationOutputRequestRequestTypeDef](#notifyappvalidationoutputrequestrequesttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutAppLaunchConfigurationRequestTypeDef](#putapplaunchconfigurationrequesttypedef)
-  - [PutAppReplicationConfigurationRequestTypeDef](#putappreplicationconfigurationrequesttypedef)
-  - [PutAppValidationConfigurationRequestTypeDef](#putappvalidationconfigurationrequesttypedef)
+  - [PutAppLaunchConfigurationRequestRequestTypeDef](#putapplaunchconfigurationrequestrequesttypedef)
+  - [PutAppReplicationConfigurationRequestRequestTypeDef](#putappreplicationconfigurationrequestrequesttypedef)
+  - [PutAppValidationConfigurationRequestRequestTypeDef](#putappvalidationconfigurationrequestrequesttypedef)
   - [ReplicationJobTypeDef](#replicationjobtypedef)
   - [ReplicationRunStageDetailsTypeDef](#replicationrunstagedetailstypedef)
   - [ReplicationRunTypeDef](#replicationruntypedef)
@@ -73,16 +73,16 @@ type annotations stubs module
   - [ServerValidationConfigurationTypeDef](#servervalidationconfigurationtypedef)
   - [ServerValidationOutputTypeDef](#servervalidationoutputtypedef)
   - [SourceTypeDef](#sourcetypedef)
-  - [StartAppReplicationRequestTypeDef](#startappreplicationrequesttypedef)
-  - [StartOnDemandAppReplicationRequestTypeDef](#startondemandappreplicationrequesttypedef)
-  - [StartOnDemandReplicationRunRequestTypeDef](#startondemandreplicationrunrequesttypedef)
-  - [StartOnDemandReplicationRunResponseResponseTypeDef](#startondemandreplicationrunresponseresponsetypedef)
-  - [StopAppReplicationRequestTypeDef](#stopappreplicationrequesttypedef)
+  - [StartAppReplicationRequestRequestTypeDef](#startappreplicationrequestrequesttypedef)
+  - [StartOnDemandAppReplicationRequestRequestTypeDef](#startondemandappreplicationrequestrequesttypedef)
+  - [StartOnDemandReplicationRunRequestRequestTypeDef](#startondemandreplicationrunrequestrequesttypedef)
+  - [StartOnDemandReplicationRunResponseTypeDef](#startondemandreplicationrunresponsetypedef)
+  - [StopAppReplicationRequestRequestTypeDef](#stopappreplicationrequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TerminateAppRequestTypeDef](#terminateapprequesttypedef)
-  - [UpdateAppRequestTypeDef](#updateapprequesttypedef)
-  - [UpdateAppResponseResponseTypeDef](#updateappresponseresponsetypedef)
-  - [UpdateReplicationJobRequestTypeDef](#updatereplicationjobrequesttypedef)
+  - [TerminateAppRequestRequestTypeDef](#terminateapprequestrequesttypedef)
+  - [UpdateAppRequestRequestTypeDef](#updateapprequestrequesttypedef)
+  - [UpdateAppResponseTypeDef](#updateappresponsetypedef)
+  - [UpdateReplicationJobRequestRequestTypeDef](#updatereplicationjobrequestrequesttypedef)
   - [UserDataTypeDef](#userdatatypedef)
   - [UserDataValidationParametersTypeDef](#userdatavalidationparameterstypedef)
   - [ValidationOutputTypeDef](#validationoutputtypedef)
@@ -165,10 +165,10 @@ Optional fields:
 - `macAddress`: `str`
 - `associatedOn`: `datetime`
 
-## CreateAppRequestTypeDef
+## CreateAppRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import CreateAppRequestTypeDef
+from mypy_boto3_sms.type_defs import CreateAppRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -181,10 +181,10 @@ Optional fields:
   `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateAppResponseResponseTypeDef
+## CreateAppResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import CreateAppResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import CreateAppResponseTypeDef
 ```
 
 Required fields:
@@ -196,10 +196,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateReplicationJobRequestTypeDef
+## CreateReplicationJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import CreateReplicationJobRequestTypeDef
+from mypy_boto3_sms.type_defs import CreateReplicationJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -218,10 +218,10 @@ Optional fields:
 - `encrypted`: `bool`
 - `kmsKeyId`: `str`
 
-## CreateReplicationJobResponseResponseTypeDef
+## CreateReplicationJobResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import CreateReplicationJobResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import CreateReplicationJobResponseTypeDef
 ```
 
 Required fields:
@@ -230,30 +230,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAppLaunchConfigurationRequestTypeDef
+## DeleteAppLaunchConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import DeleteAppLaunchConfigurationRequestTypeDef
+from mypy_boto3_sms.type_defs import DeleteAppLaunchConfigurationRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `appId`: `str`
 
-## DeleteAppReplicationConfigurationRequestTypeDef
+## DeleteAppReplicationConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import DeleteAppReplicationConfigurationRequestTypeDef
+from mypy_boto3_sms.type_defs import DeleteAppReplicationConfigurationRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `appId`: `str`
 
-## DeleteAppRequestTypeDef
+## DeleteAppRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import DeleteAppRequestTypeDef
+from mypy_boto3_sms.type_defs import DeleteAppRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -262,40 +262,40 @@ Optional fields:
 - `forceStopAppReplication`: `bool`
 - `forceTerminateApp`: `bool`
 
-## DeleteAppValidationConfigurationRequestTypeDef
+## DeleteAppValidationConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import DeleteAppValidationConfigurationRequestTypeDef
+from mypy_boto3_sms.type_defs import DeleteAppValidationConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `appId`: `str`
 
-## DeleteReplicationJobRequestTypeDef
+## DeleteReplicationJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import DeleteReplicationJobRequestTypeDef
+from mypy_boto3_sms.type_defs import DeleteReplicationJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `replicationJobId`: `str`
 
-## DisassociateConnectorRequestTypeDef
+## DisassociateConnectorRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import DisassociateConnectorRequestTypeDef
+from mypy_boto3_sms.type_defs import DisassociateConnectorRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `connectorId`: `str`
 
-## GenerateChangeSetRequestTypeDef
+## GenerateChangeSetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GenerateChangeSetRequestTypeDef
+from mypy_boto3_sms.type_defs import GenerateChangeSetRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -303,10 +303,10 @@ Optional fields:
 - `appId`: `str`
 - `changesetFormat`: [OutputFormatType](./literals.md#outputformattype)
 
-## GenerateChangeSetResponseResponseTypeDef
+## GenerateChangeSetResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GenerateChangeSetResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import GenerateChangeSetResponseTypeDef
 ```
 
 Required fields:
@@ -315,10 +315,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GenerateTemplateRequestTypeDef
+## GenerateTemplateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GenerateTemplateRequestTypeDef
+from mypy_boto3_sms.type_defs import GenerateTemplateRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -326,10 +326,10 @@ Optional fields:
 - `appId`: `str`
 - `templateFormat`: [OutputFormatType](./literals.md#outputformattype)
 
-## GenerateTemplateResponseResponseTypeDef
+## GenerateTemplateResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GenerateTemplateResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import GenerateTemplateResponseTypeDef
 ```
 
 Required fields:
@@ -338,20 +338,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAppLaunchConfigurationRequestTypeDef
+## GetAppLaunchConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetAppLaunchConfigurationRequestTypeDef
+from mypy_boto3_sms.type_defs import GetAppLaunchConfigurationRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `appId`: `str`
 
-## GetAppLaunchConfigurationResponseResponseTypeDef
+## GetAppLaunchConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetAppLaunchConfigurationResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import GetAppLaunchConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -364,20 +364,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAppReplicationConfigurationRequestTypeDef
+## GetAppReplicationConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetAppReplicationConfigurationRequestTypeDef
+from mypy_boto3_sms.type_defs import GetAppReplicationConfigurationRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `appId`: `str`
 
-## GetAppReplicationConfigurationResponseResponseTypeDef
+## GetAppReplicationConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetAppReplicationConfigurationResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import GetAppReplicationConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -387,20 +387,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAppRequestTypeDef
+## GetAppRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetAppRequestTypeDef
+from mypy_boto3_sms.type_defs import GetAppRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `appId`: `str`
 
-## GetAppResponseResponseTypeDef
+## GetAppResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetAppResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import GetAppResponseTypeDef
 ```
 
 Required fields:
@@ -412,20 +412,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAppValidationConfigurationRequestTypeDef
+## GetAppValidationConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetAppValidationConfigurationRequestTypeDef
+from mypy_boto3_sms.type_defs import GetAppValidationConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `appId`: `str`
 
-## GetAppValidationConfigurationResponseResponseTypeDef
+## GetAppValidationConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetAppValidationConfigurationResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import GetAppValidationConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -437,20 +437,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAppValidationOutputRequestTypeDef
+## GetAppValidationOutputRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetAppValidationOutputRequestTypeDef
+from mypy_boto3_sms.type_defs import GetAppValidationOutputRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `appId`: `str`
 
-## GetAppValidationOutputResponseResponseTypeDef
+## GetAppValidationOutputResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetAppValidationOutputResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import GetAppValidationOutputResponseTypeDef
 ```
 
 Required fields:
@@ -460,10 +460,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetConnectorsRequestTypeDef
+## GetConnectorsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetConnectorsRequestTypeDef
+from mypy_boto3_sms.type_defs import GetConnectorsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -471,10 +471,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetConnectorsResponseResponseTypeDef
+## GetConnectorsResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetConnectorsResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import GetConnectorsResponseTypeDef
 ```
 
 Required fields:
@@ -485,10 +485,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetReplicationJobsRequestTypeDef
+## GetReplicationJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetReplicationJobsRequestTypeDef
+from mypy_boto3_sms.type_defs import GetReplicationJobsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -497,10 +497,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetReplicationJobsResponseResponseTypeDef
+## GetReplicationJobsResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetReplicationJobsResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import GetReplicationJobsResponseTypeDef
 ```
 
 Required fields:
@@ -511,10 +511,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetReplicationRunsRequestTypeDef
+## GetReplicationRunsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetReplicationRunsRequestTypeDef
+from mypy_boto3_sms.type_defs import GetReplicationRunsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -526,10 +526,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetReplicationRunsResponseResponseTypeDef
+## GetReplicationRunsResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetReplicationRunsResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import GetReplicationRunsResponseTypeDef
 ```
 
 Required fields:
@@ -542,10 +542,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetServersRequestTypeDef
+## GetServersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetServersRequestTypeDef
+from mypy_boto3_sms.type_defs import GetServersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -555,10 +555,10 @@ Optional fields:
 - `vmServerAddressList`:
   `List`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
 
-## GetServersResponseResponseTypeDef
+## GetServersResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import GetServersResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import GetServersResponseTypeDef
 ```
 
 Required fields:
@@ -571,20 +571,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ImportAppCatalogRequestTypeDef
+## ImportAppCatalogRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import ImportAppCatalogRequestTypeDef
+from mypy_boto3_sms.type_defs import ImportAppCatalogRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `roleName`: `str`
 
-## LaunchAppRequestTypeDef
+## LaunchAppRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import LaunchAppRequestTypeDef
+from mypy_boto3_sms.type_defs import LaunchAppRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -603,10 +603,10 @@ Optional fields:
 - `stackName`: `str`
 - `stackId`: `str`
 
-## ListAppsRequestTypeDef
+## ListAppsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import ListAppsRequestTypeDef
+from mypy_boto3_sms.type_defs import ListAppsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -615,10 +615,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAppsResponseResponseTypeDef
+## ListAppsResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import ListAppsResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import ListAppsResponseTypeDef
 ```
 
 Required fields:
@@ -640,10 +640,10 @@ Optional fields:
 - `status`: [ValidationStatusType](./literals.md#validationstatustype)
 - `statusMessage`: `str`
 
-## NotifyAppValidationOutputRequestTypeDef
+## NotifyAppValidationOutputRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import NotifyAppValidationOutputRequestTypeDef
+from mypy_boto3_sms.type_defs import NotifyAppValidationOutputRequestRequestTypeDef
 ```
 
 Required fields:
@@ -667,10 +667,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutAppLaunchConfigurationRequestTypeDef
+## PutAppLaunchConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import PutAppLaunchConfigurationRequestTypeDef
+from mypy_boto3_sms.type_defs import PutAppLaunchConfigurationRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -681,10 +681,10 @@ Optional fields:
 - `serverGroupLaunchConfigurations`:
   `List`\[[ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef)\]
 
-## PutAppReplicationConfigurationRequestTypeDef
+## PutAppReplicationConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import PutAppReplicationConfigurationRequestTypeDef
+from mypy_boto3_sms.type_defs import PutAppReplicationConfigurationRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -693,10 +693,10 @@ Optional fields:
 - `serverGroupReplicationConfigurations`:
   `List`\[[ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef)\]
 
-## PutAppValidationConfigurationRequestTypeDef
+## PutAppValidationConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import PutAppValidationConfigurationRequestTypeDef
+from mypy_boto3_sms.type_defs import PutAppValidationConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -970,20 +970,20 @@ Optional fields:
 
 - `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 
-## StartAppReplicationRequestTypeDef
+## StartAppReplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import StartAppReplicationRequestTypeDef
+from mypy_boto3_sms.type_defs import StartAppReplicationRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `appId`: `str`
 
-## StartOnDemandAppReplicationRequestTypeDef
+## StartOnDemandAppReplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import StartOnDemandAppReplicationRequestTypeDef
+from mypy_boto3_sms.type_defs import StartOnDemandAppReplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -994,10 +994,10 @@ Optional fields:
 
 - `description`: `str`
 
-## StartOnDemandReplicationRunRequestTypeDef
+## StartOnDemandReplicationRunRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import StartOnDemandReplicationRunRequestTypeDef
+from mypy_boto3_sms.type_defs import StartOnDemandReplicationRunRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1008,10 +1008,10 @@ Optional fields:
 
 - `description`: `str`
 
-## StartOnDemandReplicationRunResponseResponseTypeDef
+## StartOnDemandReplicationRunResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import StartOnDemandReplicationRunResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import StartOnDemandReplicationRunResponseTypeDef
 ```
 
 Required fields:
@@ -1020,10 +1020,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopAppReplicationRequestTypeDef
+## StopAppReplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import StopAppReplicationRequestTypeDef
+from mypy_boto3_sms.type_defs import StopAppReplicationRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1041,20 +1041,20 @@ Optional fields:
 - `key`: `str`
 - `value`: `str`
 
-## TerminateAppRequestTypeDef
+## TerminateAppRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import TerminateAppRequestTypeDef
+from mypy_boto3_sms.type_defs import TerminateAppRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `appId`: `str`
 
-## UpdateAppRequestTypeDef
+## UpdateAppRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import UpdateAppRequestTypeDef
+from mypy_boto3_sms.type_defs import UpdateAppRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1067,10 +1067,10 @@ Optional fields:
   `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## UpdateAppResponseResponseTypeDef
+## UpdateAppResponseTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import UpdateAppResponseResponseTypeDef
+from mypy_boto3_sms.type_defs import UpdateAppResponseTypeDef
 ```
 
 Required fields:
@@ -1082,10 +1082,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateReplicationJobRequestTypeDef
+## UpdateReplicationJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sms.type_defs import UpdateReplicationJobRequestTypeDef
+from mypy_boto3_sms.type_defs import UpdateReplicationJobRequestRequestTypeDef
 ```
 
 Required fields:

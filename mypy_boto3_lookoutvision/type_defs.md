@@ -8,41 +8,41 @@ type annotations stubs module
 [mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 - [Typed dictionaries for boto3 LookoutforVision module](#typed-dictionaries-for-boto3-lookoutforvision-module)
-  - [CreateDatasetRequestTypeDef](#createdatasetrequesttypedef)
-  - [CreateDatasetResponseResponseTypeDef](#createdatasetresponseresponsetypedef)
-  - [CreateModelRequestTypeDef](#createmodelrequesttypedef)
-  - [CreateModelResponseResponseTypeDef](#createmodelresponseresponsetypedef)
-  - [CreateProjectRequestTypeDef](#createprojectrequesttypedef)
-  - [CreateProjectResponseResponseTypeDef](#createprojectresponseresponsetypedef)
+  - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
+  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
+  - [CreateModelRequestRequestTypeDef](#createmodelrequestrequesttypedef)
+  - [CreateModelResponseTypeDef](#createmodelresponsetypedef)
+  - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
+  - [CreateProjectResponseTypeDef](#createprojectresponsetypedef)
   - [DatasetDescriptionTypeDef](#datasetdescriptiontypedef)
   - [DatasetGroundTruthManifestTypeDef](#datasetgroundtruthmanifesttypedef)
   - [DatasetImageStatsTypeDef](#datasetimagestatstypedef)
   - [DatasetMetadataTypeDef](#datasetmetadatatypedef)
   - [DatasetSourceTypeDef](#datasetsourcetypedef)
-  - [DeleteDatasetRequestTypeDef](#deletedatasetrequesttypedef)
-  - [DeleteModelRequestTypeDef](#deletemodelrequesttypedef)
-  - [DeleteModelResponseResponseTypeDef](#deletemodelresponseresponsetypedef)
-  - [DeleteProjectRequestTypeDef](#deleteprojectrequesttypedef)
-  - [DeleteProjectResponseResponseTypeDef](#deleteprojectresponseresponsetypedef)
-  - [DescribeDatasetRequestTypeDef](#describedatasetrequesttypedef)
-  - [DescribeDatasetResponseResponseTypeDef](#describedatasetresponseresponsetypedef)
-  - [DescribeModelRequestTypeDef](#describemodelrequesttypedef)
-  - [DescribeModelResponseResponseTypeDef](#describemodelresponseresponsetypedef)
-  - [DescribeProjectRequestTypeDef](#describeprojectrequesttypedef)
-  - [DescribeProjectResponseResponseTypeDef](#describeprojectresponseresponsetypedef)
-  - [DetectAnomaliesRequestTypeDef](#detectanomaliesrequesttypedef)
-  - [DetectAnomaliesResponseResponseTypeDef](#detectanomaliesresponseresponsetypedef)
+  - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
+  - [DeleteModelRequestRequestTypeDef](#deletemodelrequestrequesttypedef)
+  - [DeleteModelResponseTypeDef](#deletemodelresponsetypedef)
+  - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
+  - [DeleteProjectResponseTypeDef](#deleteprojectresponsetypedef)
+  - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
+  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
+  - [DescribeModelRequestRequestTypeDef](#describemodelrequestrequesttypedef)
+  - [DescribeModelResponseTypeDef](#describemodelresponsetypedef)
+  - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
+  - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
+  - [DetectAnomaliesRequestRequestTypeDef](#detectanomaliesrequestrequesttypedef)
+  - [DetectAnomaliesResponseTypeDef](#detectanomaliesresponsetypedef)
   - [DetectAnomalyResultTypeDef](#detectanomalyresulttypedef)
   - [ImageSourceTypeDef](#imagesourcetypedef)
   - [InputS3ObjectTypeDef](#inputs3objecttypedef)
-  - [ListDatasetEntriesRequestTypeDef](#listdatasetentriesrequesttypedef)
-  - [ListDatasetEntriesResponseResponseTypeDef](#listdatasetentriesresponseresponsetypedef)
-  - [ListModelsRequestTypeDef](#listmodelsrequesttypedef)
-  - [ListModelsResponseResponseTypeDef](#listmodelsresponseresponsetypedef)
-  - [ListProjectsRequestTypeDef](#listprojectsrequesttypedef)
-  - [ListProjectsResponseResponseTypeDef](#listprojectsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListDatasetEntriesRequestRequestTypeDef](#listdatasetentriesrequestrequesttypedef)
+  - [ListDatasetEntriesResponseTypeDef](#listdatasetentriesresponsetypedef)
+  - [ListModelsRequestRequestTypeDef](#listmodelsrequestrequesttypedef)
+  - [ListModelsResponseTypeDef](#listmodelsresponsetypedef)
+  - [ListProjectsRequestRequestTypeDef](#listprojectsrequestrequesttypedef)
+  - [ListProjectsResponseTypeDef](#listprojectsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ModelDescriptionTypeDef](#modeldescriptiontypedef)
   - [ModelMetadataTypeDef](#modelmetadatatypedef)
   - [ModelPerformanceTypeDef](#modelperformancetypedef)
@@ -53,20 +53,20 @@ type annotations stubs module
   - [ProjectMetadataTypeDef](#projectmetadatatypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3LocationTypeDef](#s3locationtypedef)
-  - [StartModelRequestTypeDef](#startmodelrequesttypedef)
-  - [StartModelResponseResponseTypeDef](#startmodelresponseresponsetypedef)
-  - [StopModelRequestTypeDef](#stopmodelrequesttypedef)
-  - [StopModelResponseResponseTypeDef](#stopmodelresponseresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [StartModelRequestRequestTypeDef](#startmodelrequestrequesttypedef)
+  - [StartModelResponseTypeDef](#startmodelresponsetypedef)
+  - [StopModelRequestRequestTypeDef](#stopmodelrequestrequesttypedef)
+  - [StopModelResponseTypeDef](#stopmodelresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateDatasetEntriesRequestTypeDef](#updatedatasetentriesrequesttypedef)
-  - [UpdateDatasetEntriesResponseResponseTypeDef](#updatedatasetentriesresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateDatasetEntriesRequestRequestTypeDef](#updatedatasetentriesrequestrequesttypedef)
+  - [UpdateDatasetEntriesResponseTypeDef](#updatedatasetentriesresponsetypedef)
 
-## CreateDatasetRequestTypeDef
+## CreateDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import CreateDatasetRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import CreateDatasetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -79,10 +79,10 @@ Optional fields:
 - `DatasetSource`: [DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef)
 - `ClientToken`: `str`
 
-## CreateDatasetResponseResponseTypeDef
+## CreateDatasetResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import CreateDatasetResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import CreateDatasetResponseTypeDef
 ```
 
 Required fields:
@@ -92,10 +92,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateModelRequestTypeDef
+## CreateModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import CreateModelRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import CreateModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -110,10 +110,10 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateModelResponseResponseTypeDef
+## CreateModelResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import CreateModelResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import CreateModelResponseTypeDef
 ```
 
 Required fields:
@@ -122,10 +122,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateProjectRequestTypeDef
+## CreateProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import CreateProjectRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import CreateProjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -136,10 +136,10 @@ Optional fields:
 
 - `ClientToken`: `str`
 
-## CreateProjectResponseResponseTypeDef
+## CreateProjectResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import CreateProjectResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import CreateProjectResponseTypeDef
 ```
 
 Required fields:
@@ -213,10 +213,10 @@ Optional fields:
 - `GroundTruthManifest`:
   [DatasetGroundTruthManifestTypeDef](./type_defs.md#datasetgroundtruthmanifesttypedef)
 
-## DeleteDatasetRequestTypeDef
+## DeleteDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DeleteDatasetRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import DeleteDatasetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -228,10 +228,10 @@ Optional fields:
 
 - `ClientToken`: `str`
 
-## DeleteModelRequestTypeDef
+## DeleteModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DeleteModelRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import DeleteModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -243,10 +243,10 @@ Optional fields:
 
 - `ClientToken`: `str`
 
-## DeleteModelResponseResponseTypeDef
+## DeleteModelResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DeleteModelResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import DeleteModelResponseTypeDef
 ```
 
 Required fields:
@@ -255,10 +255,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProjectRequestTypeDef
+## DeleteProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DeleteProjectRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import DeleteProjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -269,10 +269,10 @@ Optional fields:
 
 - `ClientToken`: `str`
 
-## DeleteProjectResponseResponseTypeDef
+## DeleteProjectResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DeleteProjectResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import DeleteProjectResponseTypeDef
 ```
 
 Required fields:
@@ -281,10 +281,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDatasetRequestTypeDef
+## DescribeDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DescribeDatasetRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import DescribeDatasetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -292,10 +292,10 @@ Required fields:
 - `ProjectName`: `str`
 - `DatasetType`: `str`
 
-## DescribeDatasetResponseResponseTypeDef
+## DescribeDatasetResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DescribeDatasetResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import DescribeDatasetResponseTypeDef
 ```
 
 Required fields:
@@ -305,10 +305,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeModelRequestTypeDef
+## DescribeModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DescribeModelRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import DescribeModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -316,10 +316,10 @@ Required fields:
 - `ProjectName`: `str`
 - `ModelVersion`: `str`
 
-## DescribeModelResponseResponseTypeDef
+## DescribeModelResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DescribeModelResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import DescribeModelResponseTypeDef
 ```
 
 Required fields:
@@ -329,20 +329,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProjectRequestTypeDef
+## DescribeProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DescribeProjectRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import DescribeProjectRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ProjectName`: `str`
 
-## DescribeProjectResponseResponseTypeDef
+## DescribeProjectResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DescribeProjectResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import DescribeProjectResponseTypeDef
 ```
 
 Required fields:
@@ -352,10 +352,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetectAnomaliesRequestTypeDef
+## DetectAnomaliesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DetectAnomaliesRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import DetectAnomaliesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -365,10 +365,10 @@ Required fields:
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ContentType`: `str`
 
-## DetectAnomaliesResponseResponseTypeDef
+## DetectAnomaliesResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import DetectAnomaliesResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import DetectAnomaliesResponseTypeDef
 ```
 
 Required fields:
@@ -415,10 +415,10 @@ Optional fields:
 
 - `VersionId`: `str`
 
-## ListDatasetEntriesRequestTypeDef
+## ListDatasetEntriesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import ListDatasetEntriesRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import ListDatasetEntriesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -436,10 +436,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `SourceRefContains`: `str`
 
-## ListDatasetEntriesResponseResponseTypeDef
+## ListDatasetEntriesResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import ListDatasetEntriesResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import ListDatasetEntriesResponseTypeDef
 ```
 
 Required fields:
@@ -449,10 +449,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListModelsRequestTypeDef
+## ListModelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import ListModelsRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import ListModelsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -464,10 +464,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListModelsResponseResponseTypeDef
+## ListModelsResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import ListModelsResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import ListModelsResponseTypeDef
 ```
 
 Required fields:
@@ -478,10 +478,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProjectsRequestTypeDef
+## ListProjectsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import ListProjectsRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import ListProjectsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -489,10 +489,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListProjectsResponseResponseTypeDef
+## ListProjectsResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import ListProjectsResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import ListProjectsResponseTypeDef
 ```
 
 Required fields:
@@ -503,20 +503,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -665,10 +665,10 @@ Optional fields:
 
 - `Prefix`: `str`
 
-## StartModelRequestTypeDef
+## StartModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import StartModelRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import StartModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -681,10 +681,10 @@ Optional fields:
 
 - `ClientToken`: `str`
 
-## StartModelResponseResponseTypeDef
+## StartModelResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import StartModelResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import StartModelResponseTypeDef
 ```
 
 Required fields:
@@ -693,10 +693,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopModelRequestTypeDef
+## StopModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import StopModelRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import StopModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -708,10 +708,10 @@ Optional fields:
 
 - `ClientToken`: `str`
 
-## StopModelResponseResponseTypeDef
+## StopModelResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import StopModelResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import StopModelResponseTypeDef
 ```
 
 Required fields:
@@ -720,10 +720,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -742,10 +742,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -753,10 +753,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateDatasetEntriesRequestTypeDef
+## UpdateDatasetEntriesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import UpdateDatasetEntriesRequestTypeDef
+from mypy_boto3_lookoutvision.type_defs import UpdateDatasetEntriesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -769,10 +769,10 @@ Optional fields:
 
 - `ClientToken`: `str`
 
-## UpdateDatasetEntriesResponseResponseTypeDef
+## UpdateDatasetEntriesResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutvision.type_defs import UpdateDatasetEntriesResponseResponseTypeDef
+from mypy_boto3_lookoutvision.type_defs import UpdateDatasetEntriesResponseTypeDef
 ```
 
 Required fields:

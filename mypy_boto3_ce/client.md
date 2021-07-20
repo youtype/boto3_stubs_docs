@@ -11,6 +11,7 @@ type annotations stubs module
   - [CostExplorerClient](#costexplorerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_anomaly_monitor](#create_anomaly_monitor)
     - [create_anomaly_subscription](#create_anomaly_subscription)
@@ -88,6 +89,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CostExplorerClient exceptions.
+
+Type annotations for `boto3.client("ce").exceptions` method.
+
+Boto3 documentation:
+[CostExplorer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -114,7 +126,7 @@ Boto3 documentation:
 [CostExplorer.Client.create_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_monitor)
 
 Arguments mapping described in
-[CreateAnomalyMonitorRequestTypeDef](./type_defs.md#createanomalymonitorrequesttypedef).
+[CreateAnomalyMonitorRequestRequestTypeDef](./type_defs.md#createanomalymonitorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -122,7 +134,7 @@ Keyword-only arguments:
   [AnomalyMonitorTypeDef](./type_defs.md#anomalymonitortypedef) *(required)*
 
 Returns
-[CreateAnomalyMonitorResponseResponseTypeDef](./type_defs.md#createanomalymonitorresponseresponsetypedef).
+[CreateAnomalyMonitorResponseTypeDef](./type_defs.md#createanomalymonitorresponsetypedef).
 
 ### create_anomaly_subscription
 
@@ -134,7 +146,7 @@ Boto3 documentation:
 [CostExplorer.Client.create_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_anomaly_subscription)
 
 Arguments mapping described in
-[CreateAnomalySubscriptionRequestTypeDef](./type_defs.md#createanomalysubscriptionrequesttypedef).
+[CreateAnomalySubscriptionRequestRequestTypeDef](./type_defs.md#createanomalysubscriptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -143,7 +155,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateAnomalySubscriptionResponseResponseTypeDef](./type_defs.md#createanomalysubscriptionresponseresponsetypedef).
+[CreateAnomalySubscriptionResponseTypeDef](./type_defs.md#createanomalysubscriptionresponsetypedef).
 
 ### create_cost_category_definition
 
@@ -156,7 +168,7 @@ Boto3 documentation:
 [CostExplorer.Client.create_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.create_cost_category_definition)
 
 Arguments mapping described in
-[CreateCostCategoryDefinitionRequestTypeDef](./type_defs.md#createcostcategorydefinitionrequesttypedef).
+[CreateCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#createcostcategorydefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -170,7 +182,7 @@ Keyword-only arguments:
 - `DefaultValue`: `str`
 
 Returns
-[CreateCostCategoryDefinitionResponseResponseTypeDef](./type_defs.md#createcostcategorydefinitionresponseresponsetypedef).
+[CreateCostCategoryDefinitionResponseTypeDef](./type_defs.md#createcostcategorydefinitionresponsetypedef).
 
 ### delete_anomaly_monitor
 
@@ -182,7 +194,7 @@ Boto3 documentation:
 [CostExplorer.Client.delete_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_monitor)
 
 Arguments mapping described in
-[DeleteAnomalyMonitorRequestTypeDef](./type_defs.md#deleteanomalymonitorrequesttypedef).
+[DeleteAnomalyMonitorRequestRequestTypeDef](./type_defs.md#deleteanomalymonitorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -200,7 +212,7 @@ Boto3 documentation:
 [CostExplorer.Client.delete_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_anomaly_subscription)
 
 Arguments mapping described in
-[DeleteAnomalySubscriptionRequestTypeDef](./type_defs.md#deleteanomalysubscriptionrequesttypedef).
+[DeleteAnomalySubscriptionRequestRequestTypeDef](./type_defs.md#deleteanomalysubscriptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -219,14 +231,14 @@ Boto3 documentation:
 [CostExplorer.Client.delete_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.delete_cost_category_definition)
 
 Arguments mapping described in
-[DeleteCostCategoryDefinitionRequestTypeDef](./type_defs.md#deletecostcategorydefinitionrequesttypedef).
+[DeleteCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#deletecostcategorydefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CostCategoryArn`: `str` *(required)*
 
 Returns
-[DeleteCostCategoryDefinitionResponseResponseTypeDef](./type_defs.md#deletecostcategorydefinitionresponseresponsetypedef).
+[DeleteCostCategoryDefinitionResponseTypeDef](./type_defs.md#deletecostcategorydefinitionresponsetypedef).
 
 ### describe_cost_category_definition
 
@@ -240,7 +252,7 @@ Boto3 documentation:
 [CostExplorer.Client.describe_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.describe_cost_category_definition)
 
 Arguments mapping described in
-[DescribeCostCategoryDefinitionRequestTypeDef](./type_defs.md#describecostcategorydefinitionrequesttypedef).
+[DescribeCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#describecostcategorydefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -248,7 +260,7 @@ Keyword-only arguments:
 - `EffectiveOn`: `str`
 
 Returns
-[DescribeCostCategoryDefinitionResponseResponseTypeDef](./type_defs.md#describecostcategorydefinitionresponseresponsetypedef).
+[DescribeCostCategoryDefinitionResponseTypeDef](./type_defs.md#describecostcategorydefinitionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -279,7 +291,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_anomalies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomalies)
 
 Arguments mapping described in
-[GetAnomaliesRequestTypeDef](./type_defs.md#getanomaliesrequesttypedef).
+[GetAnomaliesRequestRequestTypeDef](./type_defs.md#getanomaliesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -294,7 +306,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetAnomaliesResponseResponseTypeDef](./type_defs.md#getanomaliesresponseresponsetypedef).
+[GetAnomaliesResponseTypeDef](./type_defs.md#getanomaliesresponsetypedef).
 
 ### get_anomaly_monitors
 
@@ -306,7 +318,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_anomaly_monitors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomaly_monitors)
 
 Arguments mapping described in
-[GetAnomalyMonitorsRequestTypeDef](./type_defs.md#getanomalymonitorsrequesttypedef).
+[GetAnomalyMonitorsRequestRequestTypeDef](./type_defs.md#getanomalymonitorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -315,7 +327,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetAnomalyMonitorsResponseResponseTypeDef](./type_defs.md#getanomalymonitorsresponseresponsetypedef).
+[GetAnomalyMonitorsResponseTypeDef](./type_defs.md#getanomalymonitorsresponsetypedef).
 
 ### get_anomaly_subscriptions
 
@@ -327,7 +339,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_anomaly_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_anomaly_subscriptions)
 
 Arguments mapping described in
-[GetAnomalySubscriptionsRequestTypeDef](./type_defs.md#getanomalysubscriptionsrequesttypedef).
+[GetAnomalySubscriptionsRequestRequestTypeDef](./type_defs.md#getanomalysubscriptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,7 +349,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetAnomalySubscriptionsResponseResponseTypeDef](./type_defs.md#getanomalysubscriptionsresponseresponsetypedef).
+[GetAnomalySubscriptionsResponseTypeDef](./type_defs.md#getanomalysubscriptionsresponsetypedef).
 
 ### get_cost_and_usage
 
@@ -349,7 +361,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_cost_and_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage)
 
 Arguments mapping described in
-[GetCostAndUsageRequestTypeDef](./type_defs.md#getcostandusagerequesttypedef).
+[GetCostAndUsageRequestRequestTypeDef](./type_defs.md#getcostandusagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -363,7 +375,7 @@ Keyword-only arguments:
 - `NextPageToken`: `str`
 
 Returns
-[GetCostAndUsageResponseResponseTypeDef](./type_defs.md#getcostandusageresponseresponsetypedef).
+[GetCostAndUsageResponseTypeDef](./type_defs.md#getcostandusageresponsetypedef).
 
 ### get_cost_and_usage_with_resources
 
@@ -376,7 +388,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_cost_and_usage_with_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_and_usage_with_resources)
 
 Arguments mapping described in
-[GetCostAndUsageWithResourcesRequestTypeDef](./type_defs.md#getcostandusagewithresourcesrequesttypedef).
+[GetCostAndUsageWithResourcesRequestRequestTypeDef](./type_defs.md#getcostandusagewithresourcesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -390,7 +402,7 @@ Keyword-only arguments:
 - `NextPageToken`: `str`
 
 Returns
-[GetCostAndUsageWithResourcesResponseResponseTypeDef](./type_defs.md#getcostandusagewithresourcesresponseresponsetypedef).
+[GetCostAndUsageWithResourcesResponseTypeDef](./type_defs.md#getcostandusagewithresourcesresponsetypedef).
 
 ### get_cost_categories
 
@@ -402,7 +414,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_cost_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_categories)
 
 Arguments mapping described in
-[GetCostCategoriesRequestTypeDef](./type_defs.md#getcostcategoriesrequesttypedef).
+[GetCostCategoriesRequestRequestTypeDef](./type_defs.md#getcostcategoriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -417,7 +429,7 @@ Keyword-only arguments:
 - `NextPageToken`: `str`
 
 Returns
-[GetCostCategoriesResponseResponseTypeDef](./type_defs.md#getcostcategoriesresponseresponsetypedef).
+[GetCostCategoriesResponseTypeDef](./type_defs.md#getcostcategoriesresponsetypedef).
 
 ### get_cost_forecast
 
@@ -430,7 +442,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_cost_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_cost_forecast)
 
 Arguments mapping described in
-[GetCostForecastRequestTypeDef](./type_defs.md#getcostforecastrequesttypedef).
+[GetCostForecastRequestRequestTypeDef](./type_defs.md#getcostforecastrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -442,7 +454,7 @@ Keyword-only arguments:
 - `PredictionIntervalLevel`: `int`
 
 Returns
-[GetCostForecastResponseResponseTypeDef](./type_defs.md#getcostforecastresponseresponsetypedef).
+[GetCostForecastResponseTypeDef](./type_defs.md#getcostforecastresponsetypedef).
 
 ### get_dimension_values
 
@@ -455,7 +467,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_dimension_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_dimension_values)
 
 Arguments mapping described in
-[GetDimensionValuesRequestTypeDef](./type_defs.md#getdimensionvaluesrequesttypedef).
+[GetDimensionValuesRequestRequestTypeDef](./type_defs.md#getdimensionvaluesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,7 +483,7 @@ Keyword-only arguments:
 - `NextPageToken`: `str`
 
 Returns
-[GetDimensionValuesResponseResponseTypeDef](./type_defs.md#getdimensionvaluesresponseresponsetypedef).
+[GetDimensionValuesResponseTypeDef](./type_defs.md#getdimensionvaluesresponsetypedef).
 
 ### get_reservation_coverage
 
@@ -483,7 +495,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_reservation_coverage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_coverage)
 
 Arguments mapping described in
-[GetReservationCoverageRequestTypeDef](./type_defs.md#getreservationcoveragerequesttypedef).
+[GetReservationCoverageRequestRequestTypeDef](./type_defs.md#getreservationcoveragerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -499,7 +511,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetReservationCoverageResponseResponseTypeDef](./type_defs.md#getreservationcoverageresponseresponsetypedef).
+[GetReservationCoverageResponseTypeDef](./type_defs.md#getreservationcoverageresponsetypedef).
 
 ### get_reservation_purchase_recommendation
 
@@ -512,7 +524,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_reservation_purchase_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_purchase_recommendation)
 
 Arguments mapping described in
-[GetReservationPurchaseRecommendationRequestTypeDef](./type_defs.md#getreservationpurchaserecommendationrequesttypedef).
+[GetReservationPurchaseRecommendationRequestRequestTypeDef](./type_defs.md#getreservationpurchaserecommendationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -530,7 +542,7 @@ Keyword-only arguments:
 - `NextPageToken`: `str`
 
 Returns
-[GetReservationPurchaseRecommendationResponseResponseTypeDef](./type_defs.md#getreservationpurchaserecommendationresponseresponsetypedef).
+[GetReservationPurchaseRecommendationResponseTypeDef](./type_defs.md#getreservationpurchaserecommendationresponsetypedef).
 
 ### get_reservation_utilization
 
@@ -542,7 +554,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_reservation_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_reservation_utilization)
 
 Arguments mapping described in
-[GetReservationUtilizationRequestTypeDef](./type_defs.md#getreservationutilizationrequesttypedef).
+[GetReservationUtilizationRequestRequestTypeDef](./type_defs.md#getreservationutilizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -557,7 +569,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetReservationUtilizationResponseResponseTypeDef](./type_defs.md#getreservationutilizationresponseresponsetypedef).
+[GetReservationUtilizationResponseTypeDef](./type_defs.md#getreservationutilizationresponsetypedef).
 
 ### get_rightsizing_recommendation
 
@@ -571,7 +583,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_rightsizing_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_rightsizing_recommendation)
 
 Arguments mapping described in
-[GetRightsizingRecommendationRequestTypeDef](./type_defs.md#getrightsizingrecommendationrequesttypedef).
+[GetRightsizingRecommendationRequestRequestTypeDef](./type_defs.md#getrightsizingrecommendationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -583,7 +595,7 @@ Keyword-only arguments:
 - `NextPageToken`: `str`
 
 Returns
-[GetRightsizingRecommendationResponseResponseTypeDef](./type_defs.md#getrightsizingrecommendationresponseresponsetypedef).
+[GetRightsizingRecommendationResponseTypeDef](./type_defs.md#getrightsizingrecommendationresponsetypedef).
 
 ### get_savings_plans_coverage
 
@@ -595,7 +607,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_savings_plans_coverage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_coverage)
 
 Arguments mapping described in
-[GetSavingsPlansCoverageRequestTypeDef](./type_defs.md#getsavingsplanscoveragerequesttypedef).
+[GetSavingsPlansCoverageRequestRequestTypeDef](./type_defs.md#getsavingsplanscoveragerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -611,7 +623,7 @@ Keyword-only arguments:
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 
 Returns
-[GetSavingsPlansCoverageResponseResponseTypeDef](./type_defs.md#getsavingsplanscoverageresponseresponsetypedef).
+[GetSavingsPlansCoverageResponseTypeDef](./type_defs.md#getsavingsplanscoverageresponsetypedef).
 
 ### get_savings_plans_purchase_recommendation
 
@@ -625,7 +637,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_savings_plans_purchase_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_purchase_recommendation)
 
 Arguments mapping described in
-[GetSavingsPlansPurchaseRecommendationRequestTypeDef](./type_defs.md#getsavingsplanspurchaserecommendationrequesttypedef).
+[GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef](./type_defs.md#getsavingsplanspurchaserecommendationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -644,7 +656,7 @@ Keyword-only arguments:
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 
 Returns
-[GetSavingsPlansPurchaseRecommendationResponseResponseTypeDef](./type_defs.md#getsavingsplanspurchaserecommendationresponseresponsetypedef).
+[GetSavingsPlansPurchaseRecommendationResponseTypeDef](./type_defs.md#getsavingsplanspurchaserecommendationresponsetypedef).
 
 ### get_savings_plans_utilization
 
@@ -657,7 +669,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_savings_plans_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization)
 
 Arguments mapping described in
-[GetSavingsPlansUtilizationRequestTypeDef](./type_defs.md#getsavingsplansutilizationrequesttypedef).
+[GetSavingsPlansUtilizationRequestRequestTypeDef](./type_defs.md#getsavingsplansutilizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -668,7 +680,7 @@ Keyword-only arguments:
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 
 Returns
-[GetSavingsPlansUtilizationResponseResponseTypeDef](./type_defs.md#getsavingsplansutilizationresponseresponsetypedef).
+[GetSavingsPlansUtilizationResponseTypeDef](./type_defs.md#getsavingsplansutilizationresponsetypedef).
 
 ### get_savings_plans_utilization_details
 
@@ -682,7 +694,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_savings_plans_utilization_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_savings_plans_utilization_details)
 
 Arguments mapping described in
-[GetSavingsPlansUtilizationDetailsRequestTypeDef](./type_defs.md#getsavingsplansutilizationdetailsrequesttypedef).
+[GetSavingsPlansUtilizationDetailsRequestRequestTypeDef](./type_defs.md#getsavingsplansutilizationdetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -696,7 +708,7 @@ Keyword-only arguments:
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 
 Returns
-[GetSavingsPlansUtilizationDetailsResponseResponseTypeDef](./type_defs.md#getsavingsplansutilizationdetailsresponseresponsetypedef).
+[GetSavingsPlansUtilizationDetailsResponseTypeDef](./type_defs.md#getsavingsplansutilizationdetailsresponsetypedef).
 
 ### get_tags
 
@@ -708,7 +720,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_tags)
 
 Arguments mapping described in
-[GetTagsRequestTypeDef](./type_defs.md#gettagsrequesttypedef).
+[GetTagsRequestRequestTypeDef](./type_defs.md#gettagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -722,8 +734,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
-Returns
-[GetTagsResponseResponseTypeDef](./type_defs.md#gettagsresponseresponsetypedef).
+Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
 
 ### get_usage_forecast
 
@@ -736,7 +747,7 @@ Boto3 documentation:
 [CostExplorer.Client.get_usage_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.get_usage_forecast)
 
 Arguments mapping described in
-[GetUsageForecastRequestTypeDef](./type_defs.md#getusageforecastrequesttypedef).
+[GetUsageForecastRequestRequestTypeDef](./type_defs.md#getusageforecastrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -748,7 +759,7 @@ Keyword-only arguments:
 - `PredictionIntervalLevel`: `int`
 
 Returns
-[GetUsageForecastResponseResponseTypeDef](./type_defs.md#getusageforecastresponseresponsetypedef).
+[GetUsageForecastResponseTypeDef](./type_defs.md#getusageforecastresponsetypedef).
 
 ### list_cost_category_definitions
 
@@ -762,7 +773,7 @@ Boto3 documentation:
 [CostExplorer.Client.list_cost_category_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_cost_category_definitions)
 
 Arguments mapping described in
-[ListCostCategoryDefinitionsRequestTypeDef](./type_defs.md#listcostcategorydefinitionsrequesttypedef).
+[ListCostCategoryDefinitionsRequestRequestTypeDef](./type_defs.md#listcostcategorydefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -771,7 +782,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListCostCategoryDefinitionsResponseResponseTypeDef](./type_defs.md#listcostcategorydefinitionsresponseresponsetypedef).
+[ListCostCategoryDefinitionsResponseTypeDef](./type_defs.md#listcostcategorydefinitionsresponsetypedef).
 
 ### provide_anomaly_feedback
 
@@ -783,7 +794,7 @@ Boto3 documentation:
 [CostExplorer.Client.provide_anomaly_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.provide_anomaly_feedback)
 
 Arguments mapping described in
-[ProvideAnomalyFeedbackRequestTypeDef](./type_defs.md#provideanomalyfeedbackrequesttypedef).
+[ProvideAnomalyFeedbackRequestRequestTypeDef](./type_defs.md#provideanomalyfeedbackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -792,7 +803,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ProvideAnomalyFeedbackResponseResponseTypeDef](./type_defs.md#provideanomalyfeedbackresponseresponsetypedef).
+[ProvideAnomalyFeedbackResponseTypeDef](./type_defs.md#provideanomalyfeedbackresponsetypedef).
 
 ### update_anomaly_monitor
 
@@ -804,7 +815,7 @@ Boto3 documentation:
 [CostExplorer.Client.update_anomaly_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_monitor)
 
 Arguments mapping described in
-[UpdateAnomalyMonitorRequestTypeDef](./type_defs.md#updateanomalymonitorrequesttypedef).
+[UpdateAnomalyMonitorRequestRequestTypeDef](./type_defs.md#updateanomalymonitorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -812,7 +823,7 @@ Keyword-only arguments:
 - `MonitorName`: `str`
 
 Returns
-[UpdateAnomalyMonitorResponseResponseTypeDef](./type_defs.md#updateanomalymonitorresponseresponsetypedef).
+[UpdateAnomalyMonitorResponseTypeDef](./type_defs.md#updateanomalymonitorresponsetypedef).
 
 ### update_anomaly_subscription
 
@@ -824,7 +835,7 @@ Boto3 documentation:
 [CostExplorer.Client.update_anomaly_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_anomaly_subscription)
 
 Arguments mapping described in
-[UpdateAnomalySubscriptionRequestTypeDef](./type_defs.md#updateanomalysubscriptionrequesttypedef).
+[UpdateAnomalySubscriptionRequestRequestTypeDef](./type_defs.md#updateanomalysubscriptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -838,7 +849,7 @@ Keyword-only arguments:
 - `SubscriptionName`: `str`
 
 Returns
-[UpdateAnomalySubscriptionResponseResponseTypeDef](./type_defs.md#updateanomalysubscriptionresponseresponsetypedef).
+[UpdateAnomalySubscriptionResponseTypeDef](./type_defs.md#updateanomalysubscriptionresponsetypedef).
 
 ### update_cost_category_definition
 
@@ -851,7 +862,7 @@ Boto3 documentation:
 [CostExplorer.Client.update_cost_category_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.update_cost_category_definition)
 
 Arguments mapping described in
-[UpdateCostCategoryDefinitionRequestTypeDef](./type_defs.md#updatecostcategorydefinitionrequesttypedef).
+[UpdateCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#updatecostcategorydefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -865,4 +876,4 @@ Keyword-only arguments:
 - `DefaultValue`: `str`
 
 Returns
-[UpdateCostCategoryDefinitionResponseResponseTypeDef](./type_defs.md#updatecostcategorydefinitionresponseresponsetypedef).
+[UpdateCostCategoryDefinitionResponseTypeDef](./type_defs.md#updatecostcategorydefinitionresponsetypedef).

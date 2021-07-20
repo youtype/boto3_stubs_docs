@@ -10,49 +10,49 @@ type annotations stubs module
 - [Typed dictionaries for boto3 AppRegistry module](#typed-dictionaries-for-boto3-appregistry-module)
   - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
   - [ApplicationTypeDef](#applicationtypedef)
-  - [AssociateAttributeGroupRequestTypeDef](#associateattributegrouprequesttypedef)
-  - [AssociateAttributeGroupResponseResponseTypeDef](#associateattributegroupresponseresponsetypedef)
-  - [AssociateResourceRequestTypeDef](#associateresourcerequesttypedef)
-  - [AssociateResourceResponseResponseTypeDef](#associateresourceresponseresponsetypedef)
+  - [AssociateAttributeGroupRequestRequestTypeDef](#associateattributegrouprequestrequesttypedef)
+  - [AssociateAttributeGroupResponseTypeDef](#associateattributegroupresponsetypedef)
+  - [AssociateResourceRequestRequestTypeDef](#associateresourcerequestrequesttypedef)
+  - [AssociateResourceResponseTypeDef](#associateresourceresponsetypedef)
   - [AttributeGroupSummaryTypeDef](#attributegroupsummarytypedef)
   - [AttributeGroupTypeDef](#attributegrouptypedef)
-  - [CreateApplicationRequestTypeDef](#createapplicationrequesttypedef)
-  - [CreateApplicationResponseResponseTypeDef](#createapplicationresponseresponsetypedef)
-  - [CreateAttributeGroupRequestTypeDef](#createattributegrouprequesttypedef)
-  - [CreateAttributeGroupResponseResponseTypeDef](#createattributegroupresponseresponsetypedef)
-  - [DeleteApplicationRequestTypeDef](#deleteapplicationrequesttypedef)
-  - [DeleteApplicationResponseResponseTypeDef](#deleteapplicationresponseresponsetypedef)
-  - [DeleteAttributeGroupRequestTypeDef](#deleteattributegrouprequesttypedef)
-  - [DeleteAttributeGroupResponseResponseTypeDef](#deleteattributegroupresponseresponsetypedef)
-  - [DisassociateAttributeGroupRequestTypeDef](#disassociateattributegrouprequesttypedef)
-  - [DisassociateAttributeGroupResponseResponseTypeDef](#disassociateattributegroupresponseresponsetypedef)
-  - [DisassociateResourceRequestTypeDef](#disassociateresourcerequesttypedef)
-  - [DisassociateResourceResponseResponseTypeDef](#disassociateresourceresponseresponsetypedef)
-  - [GetApplicationRequestTypeDef](#getapplicationrequesttypedef)
-  - [GetApplicationResponseResponseTypeDef](#getapplicationresponseresponsetypedef)
-  - [GetAttributeGroupRequestTypeDef](#getattributegrouprequesttypedef)
-  - [GetAttributeGroupResponseResponseTypeDef](#getattributegroupresponseresponsetypedef)
-  - [ListApplicationsRequestTypeDef](#listapplicationsrequesttypedef)
-  - [ListApplicationsResponseResponseTypeDef](#listapplicationsresponseresponsetypedef)
-  - [ListAssociatedAttributeGroupsRequestTypeDef](#listassociatedattributegroupsrequesttypedef)
-  - [ListAssociatedAttributeGroupsResponseResponseTypeDef](#listassociatedattributegroupsresponseresponsetypedef)
-  - [ListAssociatedResourcesRequestTypeDef](#listassociatedresourcesrequesttypedef)
-  - [ListAssociatedResourcesResponseResponseTypeDef](#listassociatedresourcesresponseresponsetypedef)
-  - [ListAttributeGroupsRequestTypeDef](#listattributegroupsrequesttypedef)
-  - [ListAttributeGroupsResponseResponseTypeDef](#listattributegroupsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [CreateApplicationRequestRequestTypeDef](#createapplicationrequestrequesttypedef)
+  - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
+  - [CreateAttributeGroupRequestRequestTypeDef](#createattributegrouprequestrequesttypedef)
+  - [CreateAttributeGroupResponseTypeDef](#createattributegroupresponsetypedef)
+  - [DeleteApplicationRequestRequestTypeDef](#deleteapplicationrequestrequesttypedef)
+  - [DeleteApplicationResponseTypeDef](#deleteapplicationresponsetypedef)
+  - [DeleteAttributeGroupRequestRequestTypeDef](#deleteattributegrouprequestrequesttypedef)
+  - [DeleteAttributeGroupResponseTypeDef](#deleteattributegroupresponsetypedef)
+  - [DisassociateAttributeGroupRequestRequestTypeDef](#disassociateattributegrouprequestrequesttypedef)
+  - [DisassociateAttributeGroupResponseTypeDef](#disassociateattributegroupresponsetypedef)
+  - [DisassociateResourceRequestRequestTypeDef](#disassociateresourcerequestrequesttypedef)
+  - [DisassociateResourceResponseTypeDef](#disassociateresourceresponsetypedef)
+  - [GetApplicationRequestRequestTypeDef](#getapplicationrequestrequesttypedef)
+  - [GetApplicationResponseTypeDef](#getapplicationresponsetypedef)
+  - [GetAttributeGroupRequestRequestTypeDef](#getattributegrouprequestrequesttypedef)
+  - [GetAttributeGroupResponseTypeDef](#getattributegroupresponsetypedef)
+  - [ListApplicationsRequestRequestTypeDef](#listapplicationsrequestrequesttypedef)
+  - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
+  - [ListAssociatedAttributeGroupsRequestRequestTypeDef](#listassociatedattributegroupsrequestrequesttypedef)
+  - [ListAssociatedAttributeGroupsResponseTypeDef](#listassociatedattributegroupsresponsetypedef)
+  - [ListAssociatedResourcesRequestRequestTypeDef](#listassociatedresourcesrequestrequesttypedef)
+  - [ListAssociatedResourcesResponseTypeDef](#listassociatedresourcesresponsetypedef)
+  - [ListAttributeGroupsRequestRequestTypeDef](#listattributegroupsrequestrequesttypedef)
+  - [ListAttributeGroupsResponseTypeDef](#listattributegroupsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResourceInfoTypeDef](#resourceinfotypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SyncResourceRequestTypeDef](#syncresourcerequesttypedef)
-  - [SyncResourceResponseResponseTypeDef](#syncresourceresponseresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateApplicationRequestTypeDef](#updateapplicationrequesttypedef)
-  - [UpdateApplicationResponseResponseTypeDef](#updateapplicationresponseresponsetypedef)
-  - [UpdateAttributeGroupRequestTypeDef](#updateattributegrouprequesttypedef)
-  - [UpdateAttributeGroupResponseResponseTypeDef](#updateattributegroupresponseresponsetypedef)
+  - [SyncResourceRequestRequestTypeDef](#syncresourcerequestrequesttypedef)
+  - [SyncResourceResponseTypeDef](#syncresourceresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
+  - [UpdateApplicationResponseTypeDef](#updateapplicationresponsetypedef)
+  - [UpdateAttributeGroupRequestRequestTypeDef](#updateattributegrouprequestrequesttypedef)
+  - [UpdateAttributeGroupResponseTypeDef](#updateattributegroupresponsetypedef)
 
 ## ApplicationSummaryTypeDef
 
@@ -85,10 +85,10 @@ Optional fields:
 - `lastUpdateTime`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## AssociateAttributeGroupRequestTypeDef
+## AssociateAttributeGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import AssociateAttributeGroupRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import AssociateAttributeGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -96,10 +96,10 @@ Required fields:
 - `application`: `str`
 - `attributeGroup`: `str`
 
-## AssociateAttributeGroupResponseResponseTypeDef
+## AssociateAttributeGroupResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import AssociateAttributeGroupResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import AssociateAttributeGroupResponseTypeDef
 ```
 
 Required fields:
@@ -109,10 +109,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateResourceRequestTypeDef
+## AssociateResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import AssociateResourceRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import AssociateResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -122,10 +122,10 @@ Required fields:
   [ResourceTypeType](./literals.md#resourcetypetype))
 - `resource`: `str`
 
-## AssociateResourceResponseResponseTypeDef
+## AssociateResourceResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import AssociateResourceResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import AssociateResourceResponseTypeDef
 ```
 
 Required fields:
@@ -166,10 +166,10 @@ Optional fields:
 - `lastUpdateTime`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateApplicationRequestTypeDef
+## CreateApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import CreateApplicationRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import CreateApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -182,10 +182,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateApplicationResponseResponseTypeDef
+## CreateApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import CreateApplicationResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import CreateApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -194,10 +194,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateAttributeGroupRequestTypeDef
+## CreateAttributeGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import CreateAttributeGroupRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import CreateAttributeGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -211,10 +211,10 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## CreateAttributeGroupResponseResponseTypeDef
+## CreateAttributeGroupResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import CreateAttributeGroupResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import CreateAttributeGroupResponseTypeDef
 ```
 
 Required fields:
@@ -224,20 +224,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteApplicationRequestTypeDef
+## DeleteApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteApplicationRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteApplicationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `application`: `str`
 
-## DeleteApplicationResponseResponseTypeDef
+## DeleteApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteApplicationResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -247,20 +247,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAttributeGroupRequestTypeDef
+## DeleteAttributeGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteAttributeGroupRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteAttributeGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `attributeGroup`: `str`
 
-## DeleteAttributeGroupResponseResponseTypeDef
+## DeleteAttributeGroupResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteAttributeGroupResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteAttributeGroupResponseTypeDef
 ```
 
 Required fields:
@@ -270,10 +270,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateAttributeGroupRequestTypeDef
+## DisassociateAttributeGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import DisassociateAttributeGroupRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import DisassociateAttributeGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -281,10 +281,10 @@ Required fields:
 - `application`: `str`
 - `attributeGroup`: `str`
 
-## DisassociateAttributeGroupResponseResponseTypeDef
+## DisassociateAttributeGroupResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import DisassociateAttributeGroupResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import DisassociateAttributeGroupResponseTypeDef
 ```
 
 Required fields:
@@ -294,10 +294,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateResourceRequestTypeDef
+## DisassociateResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import DisassociateResourceRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import DisassociateResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -307,10 +307,10 @@ Required fields:
   [ResourceTypeType](./literals.md#resourcetypetype))
 - `resource`: `str`
 
-## DisassociateResourceResponseResponseTypeDef
+## DisassociateResourceResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import DisassociateResourceResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import DisassociateResourceResponseTypeDef
 ```
 
 Required fields:
@@ -320,20 +320,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetApplicationRequestTypeDef
+## GetApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import GetApplicationRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import GetApplicationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `application`: `str`
 
-## GetApplicationResponseResponseTypeDef
+## GetApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import GetApplicationResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import GetApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -349,20 +349,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAttributeGroupRequestTypeDef
+## GetAttributeGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import GetAttributeGroupRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import GetAttributeGroupRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `attributeGroup`: `str`
 
-## GetAttributeGroupResponseResponseTypeDef
+## GetAttributeGroupResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import GetAttributeGroupResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import GetAttributeGroupResponseTypeDef
 ```
 
 Required fields:
@@ -378,10 +378,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListApplicationsRequestTypeDef
+## ListApplicationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import ListApplicationsRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListApplicationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -389,10 +389,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListApplicationsResponseResponseTypeDef
+## ListApplicationsResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import ListApplicationsResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListApplicationsResponseTypeDef
 ```
 
 Required fields:
@@ -403,10 +403,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAssociatedAttributeGroupsRequestTypeDef
+## ListAssociatedAttributeGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import ListAssociatedAttributeGroupsRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListAssociatedAttributeGroupsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -418,10 +418,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAssociatedAttributeGroupsResponseResponseTypeDef
+## ListAssociatedAttributeGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import ListAssociatedAttributeGroupsResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListAssociatedAttributeGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -431,10 +431,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAssociatedResourcesRequestTypeDef
+## ListAssociatedResourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import ListAssociatedResourcesRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListAssociatedResourcesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -446,10 +446,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAssociatedResourcesResponseResponseTypeDef
+## ListAssociatedResourcesResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import ListAssociatedResourcesResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListAssociatedResourcesResponseTypeDef
 ```
 
 Required fields:
@@ -460,10 +460,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAttributeGroupsRequestTypeDef
+## ListAttributeGroupsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import ListAttributeGroupsRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListAttributeGroupsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -471,10 +471,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListAttributeGroupsResponseResponseTypeDef
+## ListAttributeGroupsResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import ListAttributeGroupsResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListAttributeGroupsResponseTypeDef
 ```
 
 Required fields:
@@ -485,20 +485,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -544,10 +544,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## SyncResourceRequestTypeDef
+## SyncResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import SyncResourceRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import SyncResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -556,10 +556,10 @@ Required fields:
   [ResourceTypeType](./literals.md#resourcetypetype))
 - `resource`: `str`
 
-## SyncResourceResponseResponseTypeDef
+## SyncResourceResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import SyncResourceResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import SyncResourceResponseTypeDef
 ```
 
 Required fields:
@@ -570,10 +570,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -581,10 +581,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -592,10 +592,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateApplicationRequestTypeDef
+## UpdateApplicationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateApplicationRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateApplicationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -607,10 +607,10 @@ Optional fields:
 - `name`: `str`
 - `description`: `str`
 
-## UpdateApplicationResponseResponseTypeDef
+## UpdateApplicationResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateApplicationResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateApplicationResponseTypeDef
 ```
 
 Required fields:
@@ -619,10 +619,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateAttributeGroupRequestTypeDef
+## UpdateAttributeGroupRequestRequestTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateAttributeGroupRequestTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateAttributeGroupRequestRequestTypeDef
 ```
 
 Required fields:
@@ -635,10 +635,10 @@ Optional fields:
 - `description`: `str`
 - `attributes`: `str`
 
-## UpdateAttributeGroupResponseResponseTypeDef
+## UpdateAttributeGroupResponseTypeDef
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateAttributeGroupResponseResponseTypeDef
+from mypy_boto3_servicecatalog_appregistry.type_defs import UpdateAttributeGroupResponseTypeDef
 ```
 
 Required fields:

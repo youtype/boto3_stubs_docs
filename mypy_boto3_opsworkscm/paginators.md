@@ -38,7 +38,7 @@ Arguments for `DescribeBackupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeBackupsPaginator.paginate` returns
-`Iterator`\[[DescribeBackupsResponseResponseTypeDef](./type_defs.md#describebackupsresponseresponsetypedef)\].
+`Iterator`\[[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef)\].
 
 ## DescribeEventsPaginator
 
@@ -64,7 +64,7 @@ Arguments for `DescribeEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeEventsPaginator.paginate` returns
-`Iterator`\[[DescribeEventsResponseResponseTypeDef](./type_defs.md#describeeventsresponseresponsetypedef)\].
+`Iterator`\[[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)\].
 
 ## DescribeServersPaginator
 
@@ -90,7 +90,7 @@ Arguments for `DescribeServersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeServersPaginator.paginate` returns
-`Iterator`\[[DescribeServersResponseResponseTypeDef](./type_defs.md#describeserversresponseresponsetypedef)\].
+`Iterator`\[[DescribeServersResponseTypeDef](./type_defs.md#describeserversresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -116,4 +116,4 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef)\].
+`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].

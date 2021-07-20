@@ -8,27 +8,27 @@ type annotations stubs module
 [mypy_boto3_workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 
 - [Typed dictionaries for boto3 WorkMailMessageFlow module](#typed-dictionaries-for-boto3-workmailmessageflow-module)
-  - [GetRawMessageContentRequestTypeDef](#getrawmessagecontentrequesttypedef)
-  - [GetRawMessageContentResponseResponseTypeDef](#getrawmessagecontentresponseresponsetypedef)
-  - [PutRawMessageContentRequestTypeDef](#putrawmessagecontentrequesttypedef)
+  - [GetRawMessageContentRequestRequestTypeDef](#getrawmessagecontentrequestrequesttypedef)
+  - [GetRawMessageContentResponseTypeDef](#getrawmessagecontentresponsetypedef)
+  - [PutRawMessageContentRequestRequestTypeDef](#putrawmessagecontentrequestrequesttypedef)
   - [RawMessageContentTypeDef](#rawmessagecontenttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3ReferenceTypeDef](#s3referencetypedef)
 
-## GetRawMessageContentRequestTypeDef
+## GetRawMessageContentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentRequestTypeDef
+from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `messageId`: `str`
 
-## GetRawMessageContentResponseResponseTypeDef
+## GetRawMessageContentResponseTypeDef
 
 ```python
-from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentResponseResponseTypeDef
+from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentResponseTypeDef
 ```
 
 Required fields:
@@ -37,10 +37,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutRawMessageContentRequestTypeDef
+## PutRawMessageContentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_workmailmessageflow.type_defs import PutRawMessageContentRequestTypeDef
+from mypy_boto3_workmailmessageflow.type_defs import PutRawMessageContentRequestRequestTypeDef
 ```
 
 Required fields:

@@ -11,6 +11,7 @@ type annotations stubs module
   - [IoTThingsGraphClient](#iotthingsgraphclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_entity_to_thing](#associate_entity_to_thing)
     - [can_paginate](#can_paginate)
     - [create_flow_template](#create_flow_template)
@@ -91,6 +92,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IoTThingsGraphClient exceptions.
+
+Type annotations for `boto3.client("iotthingsgraph").exceptions` method.
+
+Boto3 documentation:
+[IoTThingsGraph.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_entity_to_thing
 
 Associates a device with a concrete thing that is in the user's registry.
@@ -102,7 +114,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.associate_entity_to_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.associate_entity_to_thing)
 
 Arguments mapping described in
-[AssociateEntityToThingRequestTypeDef](./type_defs.md#associateentitytothingrequesttypedef).
+[AssociateEntityToThingRequestRequestTypeDef](./type_defs.md#associateentitytothingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -138,7 +150,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.create_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_flow_template)
 
 Arguments mapping described in
-[CreateFlowTemplateRequestTypeDef](./type_defs.md#createflowtemplaterequesttypedef).
+[CreateFlowTemplateRequestRequestTypeDef](./type_defs.md#createflowtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -148,7 +160,7 @@ Keyword-only arguments:
 - `compatibleNamespaceVersion`: `int`
 
 Returns
-[CreateFlowTemplateResponseResponseTypeDef](./type_defs.md#createflowtemplateresponseresponsetypedef).
+[CreateFlowTemplateResponseTypeDef](./type_defs.md#createflowtemplateresponsetypedef).
 
 ### create_system_instance
 
@@ -161,7 +173,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.create_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_system_instance)
 
 Arguments mapping described in
-[CreateSystemInstanceRequestTypeDef](./type_defs.md#createsysteminstancerequesttypedef).
+[CreateSystemInstanceRequestRequestTypeDef](./type_defs.md#createsysteminstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -178,7 +190,7 @@ Keyword-only arguments:
 - `flowActionsRoleArn`: `str`
 
 Returns
-[CreateSystemInstanceResponseResponseTypeDef](./type_defs.md#createsysteminstanceresponseresponsetypedef).
+[CreateSystemInstanceResponseTypeDef](./type_defs.md#createsysteminstanceresponsetypedef).
 
 ### create_system_template
 
@@ -191,7 +203,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.create_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_system_template)
 
 Arguments mapping described in
-[CreateSystemTemplateRequestTypeDef](./type_defs.md#createsystemtemplaterequesttypedef).
+[CreateSystemTemplateRequestRequestTypeDef](./type_defs.md#createsystemtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -201,7 +213,7 @@ Keyword-only arguments:
 - `compatibleNamespaceVersion`: `int`
 
 Returns
-[CreateSystemTemplateResponseResponseTypeDef](./type_defs.md#createsystemtemplateresponseresponsetypedef).
+[CreateSystemTemplateResponseTypeDef](./type_defs.md#createsystemtemplateresponsetypedef).
 
 ### delete_flow_template
 
@@ -214,7 +226,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.delete_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_flow_template)
 
 Arguments mapping described in
-[DeleteFlowTemplateRequestTypeDef](./type_defs.md#deleteflowtemplaterequesttypedef).
+[DeleteFlowTemplateRequestRequestTypeDef](./type_defs.md#deleteflowtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -232,7 +244,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_namespace)
 
 Returns
-[DeleteNamespaceResponseResponseTypeDef](./type_defs.md#deletenamespaceresponseresponsetypedef).
+[DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef).
 
 ### delete_system_instance
 
@@ -245,7 +257,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.delete_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_system_instance)
 
 Arguments mapping described in
-[DeleteSystemInstanceRequestTypeDef](./type_defs.md#deletesysteminstancerequesttypedef).
+[DeleteSystemInstanceRequestRequestTypeDef](./type_defs.md#deletesysteminstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -264,7 +276,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.delete_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_system_template)
 
 Arguments mapping described in
-[DeleteSystemTemplateRequestTypeDef](./type_defs.md#deletesystemtemplaterequesttypedef).
+[DeleteSystemTemplateRequestRequestTypeDef](./type_defs.md#deletesystemtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -284,14 +296,14 @@ Boto3 documentation:
 [IoTThingsGraph.Client.deploy_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deploy_system_instance)
 
 Arguments mapping described in
-[DeploySystemInstanceRequestTypeDef](./type_defs.md#deploysysteminstancerequesttypedef).
+[DeploySystemInstanceRequestRequestTypeDef](./type_defs.md#deploysysteminstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str`
 
 Returns
-[DeploySystemInstanceResponseResponseTypeDef](./type_defs.md#deploysysteminstanceresponseresponsetypedef).
+[DeploySystemInstanceResponseTypeDef](./type_defs.md#deploysysteminstanceresponsetypedef).
 
 ### deprecate_flow_template
 
@@ -304,7 +316,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.deprecate_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deprecate_flow_template)
 
 Arguments mapping described in
-[DeprecateFlowTemplateRequestTypeDef](./type_defs.md#deprecateflowtemplaterequesttypedef).
+[DeprecateFlowTemplateRequestRequestTypeDef](./type_defs.md#deprecateflowtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -323,7 +335,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.deprecate_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deprecate_system_template)
 
 Arguments mapping described in
-[DeprecateSystemTemplateRequestTypeDef](./type_defs.md#deprecatesystemtemplaterequesttypedef).
+[DeprecateSystemTemplateRequestRequestTypeDef](./type_defs.md#deprecatesystemtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -343,14 +355,14 @@ Boto3 documentation:
 [IoTThingsGraph.Client.describe_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.describe_namespace)
 
 Arguments mapping described in
-[DescribeNamespaceRequestTypeDef](./type_defs.md#describenamespacerequesttypedef).
+[DescribeNamespaceRequestRequestTypeDef](./type_defs.md#describenamespacerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `namespaceName`: `str`
 
 Returns
-[DescribeNamespaceResponseResponseTypeDef](./type_defs.md#describenamespaceresponseresponsetypedef).
+[DescribeNamespaceResponseTypeDef](./type_defs.md#describenamespaceresponsetypedef).
 
 ### dissociate_entity_from_thing
 
@@ -363,7 +375,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.dissociate_entity_from_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.dissociate_entity_from_thing)
 
 Arguments mapping described in
-[DissociateEntityFromThingRequestTypeDef](./type_defs.md#dissociateentityfromthingrequesttypedef).
+[DissociateEntityFromThingRequestRequestTypeDef](./type_defs.md#dissociateentityfromthingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -401,7 +413,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.get_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_entities)
 
 Arguments mapping described in
-[GetEntitiesRequestTypeDef](./type_defs.md#getentitiesrequesttypedef).
+[GetEntitiesRequestRequestTypeDef](./type_defs.md#getentitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,7 +421,7 @@ Keyword-only arguments:
 - `namespaceVersion`: `int`
 
 Returns
-[GetEntitiesResponseResponseTypeDef](./type_defs.md#getentitiesresponseresponsetypedef).
+[GetEntitiesResponseTypeDef](./type_defs.md#getentitiesresponsetypedef).
 
 ### get_flow_template
 
@@ -422,7 +434,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.get_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_flow_template)
 
 Arguments mapping described in
-[GetFlowTemplateRequestTypeDef](./type_defs.md#getflowtemplaterequesttypedef).
+[GetFlowTemplateRequestRequestTypeDef](./type_defs.md#getflowtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -430,7 +442,7 @@ Keyword-only arguments:
 - `revisionNumber`: `int`
 
 Returns
-[GetFlowTemplateResponseResponseTypeDef](./type_defs.md#getflowtemplateresponseresponsetypedef).
+[GetFlowTemplateResponseTypeDef](./type_defs.md#getflowtemplateresponsetypedef).
 
 ### get_flow_template_revisions
 
@@ -443,7 +455,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.get_flow_template_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_flow_template_revisions)
 
 Arguments mapping described in
-[GetFlowTemplateRevisionsRequestTypeDef](./type_defs.md#getflowtemplaterevisionsrequesttypedef).
+[GetFlowTemplateRevisionsRequestRequestTypeDef](./type_defs.md#getflowtemplaterevisionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -452,7 +464,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetFlowTemplateRevisionsResponseResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponseresponsetypedef).
+[GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef).
 
 ### get_namespace_deletion_status
 
@@ -465,7 +477,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.get_namespace_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_namespace_deletion_status)
 
 Returns
-[GetNamespaceDeletionStatusResponseResponseTypeDef](./type_defs.md#getnamespacedeletionstatusresponseresponsetypedef).
+[GetNamespaceDeletionStatusResponseTypeDef](./type_defs.md#getnamespacedeletionstatusresponsetypedef).
 
 ### get_system_instance
 
@@ -478,14 +490,14 @@ Boto3 documentation:
 [IoTThingsGraph.Client.get_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_instance)
 
 Arguments mapping described in
-[GetSystemInstanceRequestTypeDef](./type_defs.md#getsysteminstancerequesttypedef).
+[GetSystemInstanceRequestRequestTypeDef](./type_defs.md#getsysteminstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[GetSystemInstanceResponseResponseTypeDef](./type_defs.md#getsysteminstanceresponseresponsetypedef).
+[GetSystemInstanceResponseTypeDef](./type_defs.md#getsysteminstanceresponsetypedef).
 
 ### get_system_template
 
@@ -498,7 +510,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.get_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_template)
 
 Arguments mapping described in
-[GetSystemTemplateRequestTypeDef](./type_defs.md#getsystemtemplaterequesttypedef).
+[GetSystemTemplateRequestRequestTypeDef](./type_defs.md#getsystemtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -506,7 +518,7 @@ Keyword-only arguments:
 - `revisionNumber`: `int`
 
 Returns
-[GetSystemTemplateResponseResponseTypeDef](./type_defs.md#getsystemtemplateresponseresponsetypedef).
+[GetSystemTemplateResponseTypeDef](./type_defs.md#getsystemtemplateresponsetypedef).
 
 ### get_system_template_revisions
 
@@ -519,7 +531,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.get_system_template_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_template_revisions)
 
 Arguments mapping described in
-[GetSystemTemplateRevisionsRequestTypeDef](./type_defs.md#getsystemtemplaterevisionsrequesttypedef).
+[GetSystemTemplateRevisionsRequestRequestTypeDef](./type_defs.md#getsystemtemplaterevisionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -528,7 +540,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetSystemTemplateRevisionsResponseResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponseresponsetypedef).
+[GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef).
 
 ### get_upload_status
 
@@ -540,14 +552,14 @@ Boto3 documentation:
 [IoTThingsGraph.Client.get_upload_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_upload_status)
 
 Arguments mapping described in
-[GetUploadStatusRequestTypeDef](./type_defs.md#getuploadstatusrequesttypedef).
+[GetUploadStatusRequestRequestTypeDef](./type_defs.md#getuploadstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `uploadId`: `str` *(required)*
 
 Returns
-[GetUploadStatusResponseResponseTypeDef](./type_defs.md#getuploadstatusresponseresponsetypedef).
+[GetUploadStatusResponseTypeDef](./type_defs.md#getuploadstatusresponsetypedef).
 
 ### list_flow_execution_messages
 
@@ -561,7 +573,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.list_flow_execution_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.list_flow_execution_messages)
 
 Arguments mapping described in
-[ListFlowExecutionMessagesRequestTypeDef](./type_defs.md#listflowexecutionmessagesrequesttypedef).
+[ListFlowExecutionMessagesRequestRequestTypeDef](./type_defs.md#listflowexecutionmessagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -570,7 +582,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListFlowExecutionMessagesResponseResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponseresponsetypedef).
+[ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -583,7 +595,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -592,7 +604,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### search_entities
 
@@ -604,7 +616,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.search_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_entities)
 
 Arguments mapping described in
-[SearchEntitiesRequestTypeDef](./type_defs.md#searchentitiesrequesttypedef).
+[SearchEntitiesRequestRequestTypeDef](./type_defs.md#searchentitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -617,7 +629,7 @@ Keyword-only arguments:
 - `namespaceVersion`: `int`
 
 Returns
-[SearchEntitiesResponseResponseTypeDef](./type_defs.md#searchentitiesresponseresponsetypedef).
+[SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef).
 
 ### search_flow_executions
 
@@ -630,7 +642,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.search_flow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_flow_executions)
 
 Arguments mapping described in
-[SearchFlowExecutionsRequestTypeDef](./type_defs.md#searchflowexecutionsrequesttypedef).
+[SearchFlowExecutionsRequestRequestTypeDef](./type_defs.md#searchflowexecutionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -642,7 +654,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[SearchFlowExecutionsResponseResponseTypeDef](./type_defs.md#searchflowexecutionsresponseresponsetypedef).
+[SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef).
 
 ### search_flow_templates
 
@@ -655,7 +667,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.search_flow_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_flow_templates)
 
 Arguments mapping described in
-[SearchFlowTemplatesRequestTypeDef](./type_defs.md#searchflowtemplatesrequesttypedef).
+[SearchFlowTemplatesRequestRequestTypeDef](./type_defs.md#searchflowtemplatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -665,7 +677,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[SearchFlowTemplatesResponseResponseTypeDef](./type_defs.md#searchflowtemplatesresponseresponsetypedef).
+[SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef).
 
 ### search_system_instances
 
@@ -678,7 +690,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.search_system_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_system_instances)
 
 Arguments mapping described in
-[SearchSystemInstancesRequestTypeDef](./type_defs.md#searchsysteminstancesrequesttypedef).
+[SearchSystemInstancesRequestRequestTypeDef](./type_defs.md#searchsysteminstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -688,7 +700,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[SearchSystemInstancesResponseResponseTypeDef](./type_defs.md#searchsysteminstancesresponseresponsetypedef).
+[SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef).
 
 ### search_system_templates
 
@@ -701,7 +713,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.search_system_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_system_templates)
 
 Arguments mapping described in
-[SearchSystemTemplatesRequestTypeDef](./type_defs.md#searchsystemtemplatesrequesttypedef).
+[SearchSystemTemplatesRequestRequestTypeDef](./type_defs.md#searchsystemtemplatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -711,7 +723,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[SearchSystemTemplatesResponseResponseTypeDef](./type_defs.md#searchsystemtemplatesresponseresponsetypedef).
+[SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef).
 
 ### search_things
 
@@ -723,7 +735,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.search_things](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_things)
 
 Arguments mapping described in
-[SearchThingsRequestTypeDef](./type_defs.md#searchthingsrequesttypedef).
+[SearchThingsRequestRequestTypeDef](./type_defs.md#searchthingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -733,7 +745,7 @@ Keyword-only arguments:
 - `namespaceVersion`: `int`
 
 Returns
-[SearchThingsResponseResponseTypeDef](./type_defs.md#searchthingsresponseresponsetypedef).
+[SearchThingsResponseTypeDef](./type_defs.md#searchthingsresponsetypedef).
 
 ### tag_resource
 
@@ -745,7 +757,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -765,14 +777,14 @@ Boto3 documentation:
 [IoTThingsGraph.Client.undeploy_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.undeploy_system_instance)
 
 Arguments mapping described in
-[UndeploySystemInstanceRequestTypeDef](./type_defs.md#undeploysysteminstancerequesttypedef).
+[UndeploySystemInstanceRequestRequestTypeDef](./type_defs.md#undeploysysteminstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str`
 
 Returns
-[UndeploySystemInstanceResponseResponseTypeDef](./type_defs.md#undeploysysteminstanceresponseresponsetypedef).
+[UndeploySystemInstanceResponseTypeDef](./type_defs.md#undeploysysteminstanceresponsetypedef).
 
 ### untag_resource
 
@@ -784,7 +796,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -804,7 +816,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.update_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.update_flow_template)
 
 Arguments mapping described in
-[UpdateFlowTemplateRequestTypeDef](./type_defs.md#updateflowtemplaterequesttypedef).
+[UpdateFlowTemplateRequestRequestTypeDef](./type_defs.md#updateflowtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -815,7 +827,7 @@ Keyword-only arguments:
 - `compatibleNamespaceVersion`: `int`
 
 Returns
-[UpdateFlowTemplateResponseResponseTypeDef](./type_defs.md#updateflowtemplateresponseresponsetypedef).
+[UpdateFlowTemplateResponseTypeDef](./type_defs.md#updateflowtemplateresponsetypedef).
 
 ### update_system_template
 
@@ -828,7 +840,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.update_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.update_system_template)
 
 Arguments mapping described in
-[UpdateSystemTemplateRequestTypeDef](./type_defs.md#updatesystemtemplaterequesttypedef).
+[UpdateSystemTemplateRequestRequestTypeDef](./type_defs.md#updatesystemtemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -839,7 +851,7 @@ Keyword-only arguments:
 - `compatibleNamespaceVersion`: `int`
 
 Returns
-[UpdateSystemTemplateResponseResponseTypeDef](./type_defs.md#updatesystemtemplateresponseresponsetypedef).
+[UpdateSystemTemplateResponseTypeDef](./type_defs.md#updatesystemtemplateresponsetypedef).
 
 ### upload_entity_definitions
 
@@ -852,7 +864,7 @@ Boto3 documentation:
 [IoTThingsGraph.Client.upload_entity_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.upload_entity_definitions)
 
 Arguments mapping described in
-[UploadEntityDefinitionsRequestTypeDef](./type_defs.md#uploadentitydefinitionsrequesttypedef).
+[UploadEntityDefinitionsRequestRequestTypeDef](./type_defs.md#uploadentitydefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -862,7 +874,7 @@ Keyword-only arguments:
 - `deprecateExistingEntities`: `bool`
 
 Returns
-[UploadEntityDefinitionsResponseResponseTypeDef](./type_defs.md#uploadentitydefinitionsresponseresponsetypedef).
+[UploadEntityDefinitionsResponseTypeDef](./type_defs.md#uploadentitydefinitionsresponsetypedef).
 
 ### get_paginator
 

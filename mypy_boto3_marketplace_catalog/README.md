@@ -35,6 +35,7 @@ from mypy_boto3_marketplace_catalog.client import MarketplaceCatalogClient
 - [cancel_change_set](./client.md#cancel_change_set)
 - [describe_change_set](./client.md#describe_change_set)
 - [describe_entity](./client.md#describe_entity)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [list_change_sets](./client.md#list_change_sets)
 - [list_entities](./client.md#list_entities)
@@ -76,27 +77,27 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_marketplace_catalog.type_defs import CancelChangeSetRequestTypeDef, ...
+from mypy_boto3_marketplace_catalog.type_defs import CancelChangeSetRequestRequestTypeDef, ...
 ```
 
-- [CancelChangeSetRequestTypeDef](./type_defs.md#cancelchangesetrequesttypedef)
-- [CancelChangeSetResponseResponseTypeDef](./type_defs.md#cancelchangesetresponseresponsetypedef)
+- [CancelChangeSetRequestRequestTypeDef](./type_defs.md#cancelchangesetrequestrequesttypedef)
+- [CancelChangeSetResponseTypeDef](./type_defs.md#cancelchangesetresponsetypedef)
 - [ChangeSetSummaryListItemTypeDef](./type_defs.md#changesetsummarylistitemtypedef)
 - [ChangeSummaryTypeDef](./type_defs.md#changesummarytypedef)
 - [ChangeTypeDef](./type_defs.md#changetypedef)
-- [DescribeChangeSetRequestTypeDef](./type_defs.md#describechangesetrequesttypedef)
-- [DescribeChangeSetResponseResponseTypeDef](./type_defs.md#describechangesetresponseresponsetypedef)
-- [DescribeEntityRequestTypeDef](./type_defs.md#describeentityrequesttypedef)
-- [DescribeEntityResponseResponseTypeDef](./type_defs.md#describeentityresponseresponsetypedef)
+- [DescribeChangeSetRequestRequestTypeDef](./type_defs.md#describechangesetrequestrequesttypedef)
+- [DescribeChangeSetResponseTypeDef](./type_defs.md#describechangesetresponsetypedef)
+- [DescribeEntityRequestRequestTypeDef](./type_defs.md#describeentityrequestrequesttypedef)
+- [DescribeEntityResponseTypeDef](./type_defs.md#describeentityresponsetypedef)
 - [EntitySummaryTypeDef](./type_defs.md#entitysummarytypedef)
 - [EntityTypeDef](./type_defs.md#entitytypedef)
 - [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
-- [ListChangeSetsRequestTypeDef](./type_defs.md#listchangesetsrequesttypedef)
-- [ListChangeSetsResponseResponseTypeDef](./type_defs.md#listchangesetsresponseresponsetypedef)
-- [ListEntitiesRequestTypeDef](./type_defs.md#listentitiesrequesttypedef)
-- [ListEntitiesResponseResponseTypeDef](./type_defs.md#listentitiesresponseresponsetypedef)
+- [ListChangeSetsRequestRequestTypeDef](./type_defs.md#listchangesetsrequestrequesttypedef)
+- [ListChangeSetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef)
+- [ListEntitiesRequestRequestTypeDef](./type_defs.md#listentitiesrequestrequesttypedef)
+- [ListEntitiesResponseTypeDef](./type_defs.md#listentitiesresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SortTypeDef](./type_defs.md#sorttypedef)
-- [StartChangeSetRequestTypeDef](./type_defs.md#startchangesetrequesttypedef)
-- [StartChangeSetResponseResponseTypeDef](./type_defs.md#startchangesetresponseresponsetypedef)
+- [StartChangeSetRequestRequestTypeDef](./type_defs.md#startchangesetrequestrequesttypedef)
+- [StartChangeSetResponseTypeDef](./type_defs.md#startchangesetresponsetypedef)

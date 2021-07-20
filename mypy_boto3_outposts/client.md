@@ -11,6 +11,7 @@ type annotations stubs module
   - [OutpostsClient](#outpostsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_outpost](#create_outpost)
     - [delete_outpost](#delete_outpost)
@@ -64,6 +65,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+OutpostsClient exceptions.
+
+Type annotations for `boto3.client("outposts").exceptions` method.
+
+Boto3 documentation:
+[Outposts.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -89,7 +101,7 @@ Boto3 documentation:
 [Outposts.Client.create_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_outpost)
 
 Arguments mapping described in
-[CreateOutpostInputTypeDef](./type_defs.md#createoutpostinputtypedef).
+[CreateOutpostInputRequestTypeDef](./type_defs.md#createoutpostinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -101,7 +113,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateOutpostOutputResponseTypeDef](./type_defs.md#createoutpostoutputresponsetypedef).
+[CreateOutpostOutputTypeDef](./type_defs.md#createoutpostoutputtypedef).
 
 ### delete_outpost
 
@@ -113,7 +125,7 @@ Boto3 documentation:
 [Outposts.Client.delete_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_outpost)
 
 Arguments mapping described in
-[DeleteOutpostInputTypeDef](./type_defs.md#deleteoutpostinputtypedef).
+[DeleteOutpostInputRequestTypeDef](./type_defs.md#deleteoutpostinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -131,7 +143,7 @@ Boto3 documentation:
 [Outposts.Client.delete_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_site)
 
 Arguments mapping described in
-[DeleteSiteInputTypeDef](./type_defs.md#deletesiteinputtypedef).
+[DeleteSiteInputRequestTypeDef](./type_defs.md#deletesiteinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,14 +179,13 @@ Boto3 documentation:
 [Outposts.Client.get_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost)
 
 Arguments mapping described in
-[GetOutpostInputTypeDef](./type_defs.md#getoutpostinputtypedef).
+[GetOutpostInputRequestTypeDef](./type_defs.md#getoutpostinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `OutpostId`: `str` *(required)*
 
-Returns
-[GetOutpostOutputResponseTypeDef](./type_defs.md#getoutpostoutputresponsetypedef).
+Returns [GetOutpostOutputTypeDef](./type_defs.md#getoutpostoutputtypedef).
 
 ### get_outpost_instance_types
 
@@ -187,7 +198,7 @@ Boto3 documentation:
 [Outposts.Client.get_outpost_instance_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost_instance_types)
 
 Arguments mapping described in
-[GetOutpostInstanceTypesInputTypeDef](./type_defs.md#getoutpostinstancetypesinputtypedef).
+[GetOutpostInstanceTypesInputRequestTypeDef](./type_defs.md#getoutpostinstancetypesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -196,11 +207,11 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[GetOutpostInstanceTypesOutputResponseTypeDef](./type_defs.md#getoutpostinstancetypesoutputresponsetypedef).
+[GetOutpostInstanceTypesOutputTypeDef](./type_defs.md#getoutpostinstancetypesoutputtypedef).
 
 ### list_outposts
 
-List the Outposts for your AWS account.
+Create a list of the Outposts for your AWS account.
 
 Type annotations for `boto3.client("outposts").list_outposts` method.
 
@@ -208,15 +219,17 @@ Boto3 documentation:
 [Outposts.Client.list_outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_outposts)
 
 Arguments mapping described in
-[ListOutpostsInputTypeDef](./type_defs.md#listoutpostsinputtypedef).
+[ListOutpostsInputRequestTypeDef](./type_defs.md#listoutpostsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `LifeCycleStatusFilter`: `List`\[`str`\]
+- `AvailabilityZoneFilter`: `List`\[`str`\]
+- `AvailabilityZoneIdFilter`: `List`\[`str`\]
 
-Returns
-[ListOutpostsOutputResponseTypeDef](./type_defs.md#listoutpostsoutputresponsetypedef).
+Returns [ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef).
 
 ### list_sites
 
@@ -228,15 +241,14 @@ Boto3 documentation:
 [Outposts.Client.list_sites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_sites)
 
 Arguments mapping described in
-[ListSitesInputTypeDef](./type_defs.md#listsitesinputtypedef).
+[ListSitesInputRequestTypeDef](./type_defs.md#listsitesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListSitesOutputResponseTypeDef](./type_defs.md#listsitesoutputresponsetypedef).
+Returns [ListSitesOutputTypeDef](./type_defs.md#listsitesoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -248,14 +260,14 @@ Boto3 documentation:
 [Outposts.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -267,7 +279,7 @@ Boto3 documentation:
 [Outposts.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -286,7 +298,7 @@ Boto3 documentation:
 [Outposts.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

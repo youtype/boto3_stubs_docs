@@ -11,18 +11,18 @@ type annotations stubs module
   - [AddOnRequestTypeDef](#addonrequesttypedef)
   - [AddOnTypeDef](#addontypedef)
   - [AlarmTypeDef](#alarmtypedef)
-  - [AllocateStaticIpRequestTypeDef](#allocatestaticiprequesttypedef)
-  - [AllocateStaticIpResultResponseTypeDef](#allocatestaticipresultresponsetypedef)
-  - [AttachCertificateToDistributionRequestTypeDef](#attachcertificatetodistributionrequesttypedef)
-  - [AttachCertificateToDistributionResultResponseTypeDef](#attachcertificatetodistributionresultresponsetypedef)
-  - [AttachDiskRequestTypeDef](#attachdiskrequesttypedef)
-  - [AttachDiskResultResponseTypeDef](#attachdiskresultresponsetypedef)
-  - [AttachInstancesToLoadBalancerRequestTypeDef](#attachinstancestoloadbalancerrequesttypedef)
-  - [AttachInstancesToLoadBalancerResultResponseTypeDef](#attachinstancestoloadbalancerresultresponsetypedef)
-  - [AttachLoadBalancerTlsCertificateRequestTypeDef](#attachloadbalancertlscertificaterequesttypedef)
-  - [AttachLoadBalancerTlsCertificateResultResponseTypeDef](#attachloadbalancertlscertificateresultresponsetypedef)
-  - [AttachStaticIpRequestTypeDef](#attachstaticiprequesttypedef)
-  - [AttachStaticIpResultResponseTypeDef](#attachstaticipresultresponsetypedef)
+  - [AllocateStaticIpRequestRequestTypeDef](#allocatestaticiprequestrequesttypedef)
+  - [AllocateStaticIpResultTypeDef](#allocatestaticipresulttypedef)
+  - [AttachCertificateToDistributionRequestRequestTypeDef](#attachcertificatetodistributionrequestrequesttypedef)
+  - [AttachCertificateToDistributionResultTypeDef](#attachcertificatetodistributionresulttypedef)
+  - [AttachDiskRequestRequestTypeDef](#attachdiskrequestrequesttypedef)
+  - [AttachDiskResultTypeDef](#attachdiskresulttypedef)
+  - [AttachInstancesToLoadBalancerRequestRequestTypeDef](#attachinstancestoloadbalancerrequestrequesttypedef)
+  - [AttachInstancesToLoadBalancerResultTypeDef](#attachinstancestoloadbalancerresulttypedef)
+  - [AttachLoadBalancerTlsCertificateRequestRequestTypeDef](#attachloadbalancertlscertificaterequestrequesttypedef)
+  - [AttachLoadBalancerTlsCertificateResultTypeDef](#attachloadbalancertlscertificateresulttypedef)
+  - [AttachStaticIpRequestRequestTypeDef](#attachstaticiprequestrequesttypedef)
+  - [AttachStaticIpResultTypeDef](#attachstaticipresulttypedef)
   - [AttachedDiskTypeDef](#attacheddisktypedef)
   - [AutoSnapshotAddOnRequestTypeDef](#autosnapshotaddonrequesttypedef)
   - [AutoSnapshotDetailsTypeDef](#autosnapshotdetailstypedef)
@@ -34,8 +34,8 @@ type annotations stubs module
   - [CacheSettingsTypeDef](#cachesettingstypedef)
   - [CertificateSummaryTypeDef](#certificatesummarytypedef)
   - [CertificateTypeDef](#certificatetypedef)
-  - [CloseInstancePublicPortsRequestTypeDef](#closeinstancepublicportsrequesttypedef)
-  - [CloseInstancePublicPortsResultResponseTypeDef](#closeinstancepublicportsresultresponsetypedef)
+  - [CloseInstancePublicPortsRequestRequestTypeDef](#closeinstancepublicportsrequestrequesttypedef)
+  - [CloseInstancePublicPortsResultTypeDef](#closeinstancepublicportsresulttypedef)
   - [CloudFormationStackRecordSourceInfoTypeDef](#cloudformationstackrecordsourceinfotypedef)
   - [CloudFormationStackRecordTypeDef](#cloudformationstackrecordtypedef)
   - [ContactMethodTypeDef](#contactmethodtypedef)
@@ -49,99 +49,99 @@ type annotations stubs module
   - [ContainerServiceRegistryLoginTypeDef](#containerserviceregistrylogintypedef)
   - [ContainerServiceStateDetailTypeDef](#containerservicestatedetailtypedef)
   - [ContainerServiceTypeDef](#containerservicetypedef)
-  - [ContainerServicesListResultResponseTypeDef](#containerserviceslistresultresponsetypedef)
+  - [ContainerServicesListResultTypeDef](#containerserviceslistresulttypedef)
   - [ContainerTypeDef](#containertypedef)
   - [CookieObjectTypeDef](#cookieobjecttypedef)
-  - [CopySnapshotRequestTypeDef](#copysnapshotrequesttypedef)
-  - [CopySnapshotResultResponseTypeDef](#copysnapshotresultresponsetypedef)
-  - [CreateCertificateRequestTypeDef](#createcertificaterequesttypedef)
-  - [CreateCertificateResultResponseTypeDef](#createcertificateresultresponsetypedef)
-  - [CreateCloudFormationStackRequestTypeDef](#createcloudformationstackrequesttypedef)
-  - [CreateCloudFormationStackResultResponseTypeDef](#createcloudformationstackresultresponsetypedef)
-  - [CreateContactMethodRequestTypeDef](#createcontactmethodrequesttypedef)
-  - [CreateContactMethodResultResponseTypeDef](#createcontactmethodresultresponsetypedef)
-  - [CreateContainerServiceDeploymentRequestTypeDef](#createcontainerservicedeploymentrequesttypedef)
-  - [CreateContainerServiceDeploymentResultResponseTypeDef](#createcontainerservicedeploymentresultresponsetypedef)
-  - [CreateContainerServiceRegistryLoginResultResponseTypeDef](#createcontainerserviceregistryloginresultresponsetypedef)
-  - [CreateContainerServiceRequestTypeDef](#createcontainerservicerequesttypedef)
-  - [CreateContainerServiceResultResponseTypeDef](#createcontainerserviceresultresponsetypedef)
-  - [CreateDiskFromSnapshotRequestTypeDef](#creatediskfromsnapshotrequesttypedef)
-  - [CreateDiskFromSnapshotResultResponseTypeDef](#creatediskfromsnapshotresultresponsetypedef)
-  - [CreateDiskRequestTypeDef](#creatediskrequesttypedef)
-  - [CreateDiskResultResponseTypeDef](#creatediskresultresponsetypedef)
-  - [CreateDiskSnapshotRequestTypeDef](#createdisksnapshotrequesttypedef)
-  - [CreateDiskSnapshotResultResponseTypeDef](#createdisksnapshotresultresponsetypedef)
-  - [CreateDistributionRequestTypeDef](#createdistributionrequesttypedef)
-  - [CreateDistributionResultResponseTypeDef](#createdistributionresultresponsetypedef)
-  - [CreateDomainEntryRequestTypeDef](#createdomainentryrequesttypedef)
-  - [CreateDomainEntryResultResponseTypeDef](#createdomainentryresultresponsetypedef)
-  - [CreateDomainRequestTypeDef](#createdomainrequesttypedef)
-  - [CreateDomainResultResponseTypeDef](#createdomainresultresponsetypedef)
-  - [CreateInstanceSnapshotRequestTypeDef](#createinstancesnapshotrequesttypedef)
-  - [CreateInstanceSnapshotResultResponseTypeDef](#createinstancesnapshotresultresponsetypedef)
-  - [CreateInstancesFromSnapshotRequestTypeDef](#createinstancesfromsnapshotrequesttypedef)
-  - [CreateInstancesFromSnapshotResultResponseTypeDef](#createinstancesfromsnapshotresultresponsetypedef)
-  - [CreateInstancesRequestTypeDef](#createinstancesrequesttypedef)
-  - [CreateInstancesResultResponseTypeDef](#createinstancesresultresponsetypedef)
-  - [CreateKeyPairRequestTypeDef](#createkeypairrequesttypedef)
-  - [CreateKeyPairResultResponseTypeDef](#createkeypairresultresponsetypedef)
-  - [CreateLoadBalancerRequestTypeDef](#createloadbalancerrequesttypedef)
-  - [CreateLoadBalancerResultResponseTypeDef](#createloadbalancerresultresponsetypedef)
-  - [CreateLoadBalancerTlsCertificateRequestTypeDef](#createloadbalancertlscertificaterequesttypedef)
-  - [CreateLoadBalancerTlsCertificateResultResponseTypeDef](#createloadbalancertlscertificateresultresponsetypedef)
-  - [CreateRelationalDatabaseFromSnapshotRequestTypeDef](#createrelationaldatabasefromsnapshotrequesttypedef)
-  - [CreateRelationalDatabaseFromSnapshotResultResponseTypeDef](#createrelationaldatabasefromsnapshotresultresponsetypedef)
-  - [CreateRelationalDatabaseRequestTypeDef](#createrelationaldatabaserequesttypedef)
-  - [CreateRelationalDatabaseResultResponseTypeDef](#createrelationaldatabaseresultresponsetypedef)
-  - [CreateRelationalDatabaseSnapshotRequestTypeDef](#createrelationaldatabasesnapshotrequesttypedef)
-  - [CreateRelationalDatabaseSnapshotResultResponseTypeDef](#createrelationaldatabasesnapshotresultresponsetypedef)
-  - [DeleteAlarmRequestTypeDef](#deletealarmrequesttypedef)
-  - [DeleteAlarmResultResponseTypeDef](#deletealarmresultresponsetypedef)
-  - [DeleteAutoSnapshotRequestTypeDef](#deleteautosnapshotrequesttypedef)
-  - [DeleteAutoSnapshotResultResponseTypeDef](#deleteautosnapshotresultresponsetypedef)
-  - [DeleteCertificateRequestTypeDef](#deletecertificaterequesttypedef)
-  - [DeleteCertificateResultResponseTypeDef](#deletecertificateresultresponsetypedef)
-  - [DeleteContactMethodRequestTypeDef](#deletecontactmethodrequesttypedef)
-  - [DeleteContactMethodResultResponseTypeDef](#deletecontactmethodresultresponsetypedef)
-  - [DeleteContainerImageRequestTypeDef](#deletecontainerimagerequesttypedef)
-  - [DeleteContainerServiceRequestTypeDef](#deletecontainerservicerequesttypedef)
-  - [DeleteDiskRequestTypeDef](#deletediskrequesttypedef)
-  - [DeleteDiskResultResponseTypeDef](#deletediskresultresponsetypedef)
-  - [DeleteDiskSnapshotRequestTypeDef](#deletedisksnapshotrequesttypedef)
-  - [DeleteDiskSnapshotResultResponseTypeDef](#deletedisksnapshotresultresponsetypedef)
-  - [DeleteDistributionRequestTypeDef](#deletedistributionrequesttypedef)
-  - [DeleteDistributionResultResponseTypeDef](#deletedistributionresultresponsetypedef)
-  - [DeleteDomainEntryRequestTypeDef](#deletedomainentryrequesttypedef)
-  - [DeleteDomainEntryResultResponseTypeDef](#deletedomainentryresultresponsetypedef)
-  - [DeleteDomainRequestTypeDef](#deletedomainrequesttypedef)
-  - [DeleteDomainResultResponseTypeDef](#deletedomainresultresponsetypedef)
-  - [DeleteInstanceRequestTypeDef](#deleteinstancerequesttypedef)
-  - [DeleteInstanceResultResponseTypeDef](#deleteinstanceresultresponsetypedef)
-  - [DeleteInstanceSnapshotRequestTypeDef](#deleteinstancesnapshotrequesttypedef)
-  - [DeleteInstanceSnapshotResultResponseTypeDef](#deleteinstancesnapshotresultresponsetypedef)
-  - [DeleteKeyPairRequestTypeDef](#deletekeypairrequesttypedef)
-  - [DeleteKeyPairResultResponseTypeDef](#deletekeypairresultresponsetypedef)
-  - [DeleteKnownHostKeysRequestTypeDef](#deleteknownhostkeysrequesttypedef)
-  - [DeleteKnownHostKeysResultResponseTypeDef](#deleteknownhostkeysresultresponsetypedef)
-  - [DeleteLoadBalancerRequestTypeDef](#deleteloadbalancerrequesttypedef)
-  - [DeleteLoadBalancerResultResponseTypeDef](#deleteloadbalancerresultresponsetypedef)
-  - [DeleteLoadBalancerTlsCertificateRequestTypeDef](#deleteloadbalancertlscertificaterequesttypedef)
-  - [DeleteLoadBalancerTlsCertificateResultResponseTypeDef](#deleteloadbalancertlscertificateresultresponsetypedef)
-  - [DeleteRelationalDatabaseRequestTypeDef](#deleterelationaldatabaserequesttypedef)
-  - [DeleteRelationalDatabaseResultResponseTypeDef](#deleterelationaldatabaseresultresponsetypedef)
-  - [DeleteRelationalDatabaseSnapshotRequestTypeDef](#deleterelationaldatabasesnapshotrequesttypedef)
-  - [DeleteRelationalDatabaseSnapshotResultResponseTypeDef](#deleterelationaldatabasesnapshotresultresponsetypedef)
+  - [CopySnapshotRequestRequestTypeDef](#copysnapshotrequestrequesttypedef)
+  - [CopySnapshotResultTypeDef](#copysnapshotresulttypedef)
+  - [CreateCertificateRequestRequestTypeDef](#createcertificaterequestrequesttypedef)
+  - [CreateCertificateResultTypeDef](#createcertificateresulttypedef)
+  - [CreateCloudFormationStackRequestRequestTypeDef](#createcloudformationstackrequestrequesttypedef)
+  - [CreateCloudFormationStackResultTypeDef](#createcloudformationstackresulttypedef)
+  - [CreateContactMethodRequestRequestTypeDef](#createcontactmethodrequestrequesttypedef)
+  - [CreateContactMethodResultTypeDef](#createcontactmethodresulttypedef)
+  - [CreateContainerServiceDeploymentRequestRequestTypeDef](#createcontainerservicedeploymentrequestrequesttypedef)
+  - [CreateContainerServiceDeploymentResultTypeDef](#createcontainerservicedeploymentresulttypedef)
+  - [CreateContainerServiceRegistryLoginResultTypeDef](#createcontainerserviceregistryloginresulttypedef)
+  - [CreateContainerServiceRequestRequestTypeDef](#createcontainerservicerequestrequesttypedef)
+  - [CreateContainerServiceResultTypeDef](#createcontainerserviceresulttypedef)
+  - [CreateDiskFromSnapshotRequestRequestTypeDef](#creatediskfromsnapshotrequestrequesttypedef)
+  - [CreateDiskFromSnapshotResultTypeDef](#creatediskfromsnapshotresulttypedef)
+  - [CreateDiskRequestRequestTypeDef](#creatediskrequestrequesttypedef)
+  - [CreateDiskResultTypeDef](#creatediskresulttypedef)
+  - [CreateDiskSnapshotRequestRequestTypeDef](#createdisksnapshotrequestrequesttypedef)
+  - [CreateDiskSnapshotResultTypeDef](#createdisksnapshotresulttypedef)
+  - [CreateDistributionRequestRequestTypeDef](#createdistributionrequestrequesttypedef)
+  - [CreateDistributionResultTypeDef](#createdistributionresulttypedef)
+  - [CreateDomainEntryRequestRequestTypeDef](#createdomainentryrequestrequesttypedef)
+  - [CreateDomainEntryResultTypeDef](#createdomainentryresulttypedef)
+  - [CreateDomainRequestRequestTypeDef](#createdomainrequestrequesttypedef)
+  - [CreateDomainResultTypeDef](#createdomainresulttypedef)
+  - [CreateInstanceSnapshotRequestRequestTypeDef](#createinstancesnapshotrequestrequesttypedef)
+  - [CreateInstanceSnapshotResultTypeDef](#createinstancesnapshotresulttypedef)
+  - [CreateInstancesFromSnapshotRequestRequestTypeDef](#createinstancesfromsnapshotrequestrequesttypedef)
+  - [CreateInstancesFromSnapshotResultTypeDef](#createinstancesfromsnapshotresulttypedef)
+  - [CreateInstancesRequestRequestTypeDef](#createinstancesrequestrequesttypedef)
+  - [CreateInstancesResultTypeDef](#createinstancesresulttypedef)
+  - [CreateKeyPairRequestRequestTypeDef](#createkeypairrequestrequesttypedef)
+  - [CreateKeyPairResultTypeDef](#createkeypairresulttypedef)
+  - [CreateLoadBalancerRequestRequestTypeDef](#createloadbalancerrequestrequesttypedef)
+  - [CreateLoadBalancerResultTypeDef](#createloadbalancerresulttypedef)
+  - [CreateLoadBalancerTlsCertificateRequestRequestTypeDef](#createloadbalancertlscertificaterequestrequesttypedef)
+  - [CreateLoadBalancerTlsCertificateResultTypeDef](#createloadbalancertlscertificateresulttypedef)
+  - [CreateRelationalDatabaseFromSnapshotRequestRequestTypeDef](#createrelationaldatabasefromsnapshotrequestrequesttypedef)
+  - [CreateRelationalDatabaseFromSnapshotResultTypeDef](#createrelationaldatabasefromsnapshotresulttypedef)
+  - [CreateRelationalDatabaseRequestRequestTypeDef](#createrelationaldatabaserequestrequesttypedef)
+  - [CreateRelationalDatabaseResultTypeDef](#createrelationaldatabaseresulttypedef)
+  - [CreateRelationalDatabaseSnapshotRequestRequestTypeDef](#createrelationaldatabasesnapshotrequestrequesttypedef)
+  - [CreateRelationalDatabaseSnapshotResultTypeDef](#createrelationaldatabasesnapshotresulttypedef)
+  - [DeleteAlarmRequestRequestTypeDef](#deletealarmrequestrequesttypedef)
+  - [DeleteAlarmResultTypeDef](#deletealarmresulttypedef)
+  - [DeleteAutoSnapshotRequestRequestTypeDef](#deleteautosnapshotrequestrequesttypedef)
+  - [DeleteAutoSnapshotResultTypeDef](#deleteautosnapshotresulttypedef)
+  - [DeleteCertificateRequestRequestTypeDef](#deletecertificaterequestrequesttypedef)
+  - [DeleteCertificateResultTypeDef](#deletecertificateresulttypedef)
+  - [DeleteContactMethodRequestRequestTypeDef](#deletecontactmethodrequestrequesttypedef)
+  - [DeleteContactMethodResultTypeDef](#deletecontactmethodresulttypedef)
+  - [DeleteContainerImageRequestRequestTypeDef](#deletecontainerimagerequestrequesttypedef)
+  - [DeleteContainerServiceRequestRequestTypeDef](#deletecontainerservicerequestrequesttypedef)
+  - [DeleteDiskRequestRequestTypeDef](#deletediskrequestrequesttypedef)
+  - [DeleteDiskResultTypeDef](#deletediskresulttypedef)
+  - [DeleteDiskSnapshotRequestRequestTypeDef](#deletedisksnapshotrequestrequesttypedef)
+  - [DeleteDiskSnapshotResultTypeDef](#deletedisksnapshotresulttypedef)
+  - [DeleteDistributionRequestRequestTypeDef](#deletedistributionrequestrequesttypedef)
+  - [DeleteDistributionResultTypeDef](#deletedistributionresulttypedef)
+  - [DeleteDomainEntryRequestRequestTypeDef](#deletedomainentryrequestrequesttypedef)
+  - [DeleteDomainEntryResultTypeDef](#deletedomainentryresulttypedef)
+  - [DeleteDomainRequestRequestTypeDef](#deletedomainrequestrequesttypedef)
+  - [DeleteDomainResultTypeDef](#deletedomainresulttypedef)
+  - [DeleteInstanceRequestRequestTypeDef](#deleteinstancerequestrequesttypedef)
+  - [DeleteInstanceResultTypeDef](#deleteinstanceresulttypedef)
+  - [DeleteInstanceSnapshotRequestRequestTypeDef](#deleteinstancesnapshotrequestrequesttypedef)
+  - [DeleteInstanceSnapshotResultTypeDef](#deleteinstancesnapshotresulttypedef)
+  - [DeleteKeyPairRequestRequestTypeDef](#deletekeypairrequestrequesttypedef)
+  - [DeleteKeyPairResultTypeDef](#deletekeypairresulttypedef)
+  - [DeleteKnownHostKeysRequestRequestTypeDef](#deleteknownhostkeysrequestrequesttypedef)
+  - [DeleteKnownHostKeysResultTypeDef](#deleteknownhostkeysresulttypedef)
+  - [DeleteLoadBalancerRequestRequestTypeDef](#deleteloadbalancerrequestrequesttypedef)
+  - [DeleteLoadBalancerResultTypeDef](#deleteloadbalancerresulttypedef)
+  - [DeleteLoadBalancerTlsCertificateRequestRequestTypeDef](#deleteloadbalancertlscertificaterequestrequesttypedef)
+  - [DeleteLoadBalancerTlsCertificateResultTypeDef](#deleteloadbalancertlscertificateresulttypedef)
+  - [DeleteRelationalDatabaseRequestRequestTypeDef](#deleterelationaldatabaserequestrequesttypedef)
+  - [DeleteRelationalDatabaseResultTypeDef](#deleterelationaldatabaseresulttypedef)
+  - [DeleteRelationalDatabaseSnapshotRequestRequestTypeDef](#deleterelationaldatabasesnapshotrequestrequesttypedef)
+  - [DeleteRelationalDatabaseSnapshotResultTypeDef](#deleterelationaldatabasesnapshotresulttypedef)
   - [DestinationInfoTypeDef](#destinationinfotypedef)
-  - [DetachCertificateFromDistributionRequestTypeDef](#detachcertificatefromdistributionrequesttypedef)
-  - [DetachCertificateFromDistributionResultResponseTypeDef](#detachcertificatefromdistributionresultresponsetypedef)
-  - [DetachDiskRequestTypeDef](#detachdiskrequesttypedef)
-  - [DetachDiskResultResponseTypeDef](#detachdiskresultresponsetypedef)
-  - [DetachInstancesFromLoadBalancerRequestTypeDef](#detachinstancesfromloadbalancerrequesttypedef)
-  - [DetachInstancesFromLoadBalancerResultResponseTypeDef](#detachinstancesfromloadbalancerresultresponsetypedef)
-  - [DetachStaticIpRequestTypeDef](#detachstaticiprequesttypedef)
-  - [DetachStaticIpResultResponseTypeDef](#detachstaticipresultresponsetypedef)
-  - [DisableAddOnRequestTypeDef](#disableaddonrequesttypedef)
-  - [DisableAddOnResultResponseTypeDef](#disableaddonresultresponsetypedef)
+  - [DetachCertificateFromDistributionRequestRequestTypeDef](#detachcertificatefromdistributionrequestrequesttypedef)
+  - [DetachCertificateFromDistributionResultTypeDef](#detachcertificatefromdistributionresulttypedef)
+  - [DetachDiskRequestRequestTypeDef](#detachdiskrequestrequesttypedef)
+  - [DetachDiskResultTypeDef](#detachdiskresulttypedef)
+  - [DetachInstancesFromLoadBalancerRequestRequestTypeDef](#detachinstancesfromloadbalancerrequestrequesttypedef)
+  - [DetachInstancesFromLoadBalancerResultTypeDef](#detachinstancesfromloadbalancerresulttypedef)
+  - [DetachStaticIpRequestRequestTypeDef](#detachstaticiprequestrequesttypedef)
+  - [DetachStaticIpResultTypeDef](#detachstaticipresulttypedef)
+  - [DisableAddOnRequestRequestTypeDef](#disableaddonrequestrequesttypedef)
+  - [DisableAddOnResultTypeDef](#disableaddonresulttypedef)
   - [DiskInfoTypeDef](#diskinfotypedef)
   - [DiskMapTypeDef](#diskmaptypedef)
   - [DiskSnapshotInfoTypeDef](#disksnapshotinfotypedef)
@@ -151,130 +151,130 @@ type annotations stubs module
   - [DomainEntryTypeDef](#domainentrytypedef)
   - [DomainTypeDef](#domaintypedef)
   - [DomainValidationRecordTypeDef](#domainvalidationrecordtypedef)
-  - [DownloadDefaultKeyPairResultResponseTypeDef](#downloaddefaultkeypairresultresponsetypedef)
-  - [EnableAddOnRequestTypeDef](#enableaddonrequesttypedef)
-  - [EnableAddOnResultResponseTypeDef](#enableaddonresultresponsetypedef)
+  - [DownloadDefaultKeyPairResultTypeDef](#downloaddefaultkeypairresulttypedef)
+  - [EnableAddOnRequestRequestTypeDef](#enableaddonrequestrequesttypedef)
+  - [EnableAddOnResultTypeDef](#enableaddonresulttypedef)
   - [EndpointRequestTypeDef](#endpointrequesttypedef)
   - [ExportSnapshotRecordSourceInfoTypeDef](#exportsnapshotrecordsourceinfotypedef)
   - [ExportSnapshotRecordTypeDef](#exportsnapshotrecordtypedef)
-  - [ExportSnapshotRequestTypeDef](#exportsnapshotrequesttypedef)
-  - [ExportSnapshotResultResponseTypeDef](#exportsnapshotresultresponsetypedef)
-  - [GetActiveNamesRequestTypeDef](#getactivenamesrequesttypedef)
-  - [GetActiveNamesResultResponseTypeDef](#getactivenamesresultresponsetypedef)
-  - [GetAlarmsRequestTypeDef](#getalarmsrequesttypedef)
-  - [GetAlarmsResultResponseTypeDef](#getalarmsresultresponsetypedef)
-  - [GetAutoSnapshotsRequestTypeDef](#getautosnapshotsrequesttypedef)
-  - [GetAutoSnapshotsResultResponseTypeDef](#getautosnapshotsresultresponsetypedef)
-  - [GetBlueprintsRequestTypeDef](#getblueprintsrequesttypedef)
-  - [GetBlueprintsResultResponseTypeDef](#getblueprintsresultresponsetypedef)
-  - [GetBundlesRequestTypeDef](#getbundlesrequesttypedef)
-  - [GetBundlesResultResponseTypeDef](#getbundlesresultresponsetypedef)
-  - [GetCertificatesRequestTypeDef](#getcertificatesrequesttypedef)
-  - [GetCertificatesResultResponseTypeDef](#getcertificatesresultresponsetypedef)
-  - [GetCloudFormationStackRecordsRequestTypeDef](#getcloudformationstackrecordsrequesttypedef)
-  - [GetCloudFormationStackRecordsResultResponseTypeDef](#getcloudformationstackrecordsresultresponsetypedef)
-  - [GetContactMethodsRequestTypeDef](#getcontactmethodsrequesttypedef)
-  - [GetContactMethodsResultResponseTypeDef](#getcontactmethodsresultresponsetypedef)
-  - [GetContainerAPIMetadataResultResponseTypeDef](#getcontainerapimetadataresultresponsetypedef)
-  - [GetContainerImagesRequestTypeDef](#getcontainerimagesrequesttypedef)
-  - [GetContainerImagesResultResponseTypeDef](#getcontainerimagesresultresponsetypedef)
-  - [GetContainerLogRequestTypeDef](#getcontainerlogrequesttypedef)
-  - [GetContainerLogResultResponseTypeDef](#getcontainerlogresultresponsetypedef)
-  - [GetContainerServiceDeploymentsRequestTypeDef](#getcontainerservicedeploymentsrequesttypedef)
-  - [GetContainerServiceDeploymentsResultResponseTypeDef](#getcontainerservicedeploymentsresultresponsetypedef)
-  - [GetContainerServiceMetricDataRequestTypeDef](#getcontainerservicemetricdatarequesttypedef)
-  - [GetContainerServiceMetricDataResultResponseTypeDef](#getcontainerservicemetricdataresultresponsetypedef)
-  - [GetContainerServicePowersResultResponseTypeDef](#getcontainerservicepowersresultresponsetypedef)
-  - [GetContainerServicesRequestTypeDef](#getcontainerservicesrequesttypedef)
-  - [GetDiskRequestTypeDef](#getdiskrequesttypedef)
-  - [GetDiskResultResponseTypeDef](#getdiskresultresponsetypedef)
-  - [GetDiskSnapshotRequestTypeDef](#getdisksnapshotrequesttypedef)
-  - [GetDiskSnapshotResultResponseTypeDef](#getdisksnapshotresultresponsetypedef)
-  - [GetDiskSnapshotsRequestTypeDef](#getdisksnapshotsrequesttypedef)
-  - [GetDiskSnapshotsResultResponseTypeDef](#getdisksnapshotsresultresponsetypedef)
-  - [GetDisksRequestTypeDef](#getdisksrequesttypedef)
-  - [GetDisksResultResponseTypeDef](#getdisksresultresponsetypedef)
-  - [GetDistributionBundlesResultResponseTypeDef](#getdistributionbundlesresultresponsetypedef)
-  - [GetDistributionLatestCacheResetRequestTypeDef](#getdistributionlatestcacheresetrequesttypedef)
-  - [GetDistributionLatestCacheResetResultResponseTypeDef](#getdistributionlatestcacheresetresultresponsetypedef)
-  - [GetDistributionMetricDataRequestTypeDef](#getdistributionmetricdatarequesttypedef)
-  - [GetDistributionMetricDataResultResponseTypeDef](#getdistributionmetricdataresultresponsetypedef)
-  - [GetDistributionsRequestTypeDef](#getdistributionsrequesttypedef)
-  - [GetDistributionsResultResponseTypeDef](#getdistributionsresultresponsetypedef)
-  - [GetDomainRequestTypeDef](#getdomainrequesttypedef)
-  - [GetDomainResultResponseTypeDef](#getdomainresultresponsetypedef)
-  - [GetDomainsRequestTypeDef](#getdomainsrequesttypedef)
-  - [GetDomainsResultResponseTypeDef](#getdomainsresultresponsetypedef)
-  - [GetExportSnapshotRecordsRequestTypeDef](#getexportsnapshotrecordsrequesttypedef)
-  - [GetExportSnapshotRecordsResultResponseTypeDef](#getexportsnapshotrecordsresultresponsetypedef)
-  - [GetInstanceAccessDetailsRequestTypeDef](#getinstanceaccessdetailsrequesttypedef)
-  - [GetInstanceAccessDetailsResultResponseTypeDef](#getinstanceaccessdetailsresultresponsetypedef)
-  - [GetInstanceMetricDataRequestTypeDef](#getinstancemetricdatarequesttypedef)
-  - [GetInstanceMetricDataResultResponseTypeDef](#getinstancemetricdataresultresponsetypedef)
-  - [GetInstancePortStatesRequestTypeDef](#getinstanceportstatesrequesttypedef)
-  - [GetInstancePortStatesResultResponseTypeDef](#getinstanceportstatesresultresponsetypedef)
-  - [GetInstanceRequestTypeDef](#getinstancerequesttypedef)
-  - [GetInstanceResultResponseTypeDef](#getinstanceresultresponsetypedef)
-  - [GetInstanceSnapshotRequestTypeDef](#getinstancesnapshotrequesttypedef)
-  - [GetInstanceSnapshotResultResponseTypeDef](#getinstancesnapshotresultresponsetypedef)
-  - [GetInstanceSnapshotsRequestTypeDef](#getinstancesnapshotsrequesttypedef)
-  - [GetInstanceSnapshotsResultResponseTypeDef](#getinstancesnapshotsresultresponsetypedef)
-  - [GetInstanceStateRequestTypeDef](#getinstancestaterequesttypedef)
-  - [GetInstanceStateResultResponseTypeDef](#getinstancestateresultresponsetypedef)
-  - [GetInstancesRequestTypeDef](#getinstancesrequesttypedef)
-  - [GetInstancesResultResponseTypeDef](#getinstancesresultresponsetypedef)
-  - [GetKeyPairRequestTypeDef](#getkeypairrequesttypedef)
-  - [GetKeyPairResultResponseTypeDef](#getkeypairresultresponsetypedef)
-  - [GetKeyPairsRequestTypeDef](#getkeypairsrequesttypedef)
-  - [GetKeyPairsResultResponseTypeDef](#getkeypairsresultresponsetypedef)
-  - [GetLoadBalancerMetricDataRequestTypeDef](#getloadbalancermetricdatarequesttypedef)
-  - [GetLoadBalancerMetricDataResultResponseTypeDef](#getloadbalancermetricdataresultresponsetypedef)
-  - [GetLoadBalancerRequestTypeDef](#getloadbalancerrequesttypedef)
-  - [GetLoadBalancerResultResponseTypeDef](#getloadbalancerresultresponsetypedef)
-  - [GetLoadBalancerTlsCertificatesRequestTypeDef](#getloadbalancertlscertificatesrequesttypedef)
-  - [GetLoadBalancerTlsCertificatesResultResponseTypeDef](#getloadbalancertlscertificatesresultresponsetypedef)
-  - [GetLoadBalancersRequestTypeDef](#getloadbalancersrequesttypedef)
-  - [GetLoadBalancersResultResponseTypeDef](#getloadbalancersresultresponsetypedef)
-  - [GetOperationRequestTypeDef](#getoperationrequesttypedef)
-  - [GetOperationResultResponseTypeDef](#getoperationresultresponsetypedef)
-  - [GetOperationsForResourceRequestTypeDef](#getoperationsforresourcerequesttypedef)
-  - [GetOperationsForResourceResultResponseTypeDef](#getoperationsforresourceresultresponsetypedef)
-  - [GetOperationsRequestTypeDef](#getoperationsrequesttypedef)
-  - [GetOperationsResultResponseTypeDef](#getoperationsresultresponsetypedef)
-  - [GetRegionsRequestTypeDef](#getregionsrequesttypedef)
-  - [GetRegionsResultResponseTypeDef](#getregionsresultresponsetypedef)
-  - [GetRelationalDatabaseBlueprintsRequestTypeDef](#getrelationaldatabaseblueprintsrequesttypedef)
-  - [GetRelationalDatabaseBlueprintsResultResponseTypeDef](#getrelationaldatabaseblueprintsresultresponsetypedef)
-  - [GetRelationalDatabaseBundlesRequestTypeDef](#getrelationaldatabasebundlesrequesttypedef)
-  - [GetRelationalDatabaseBundlesResultResponseTypeDef](#getrelationaldatabasebundlesresultresponsetypedef)
-  - [GetRelationalDatabaseEventsRequestTypeDef](#getrelationaldatabaseeventsrequesttypedef)
-  - [GetRelationalDatabaseEventsResultResponseTypeDef](#getrelationaldatabaseeventsresultresponsetypedef)
-  - [GetRelationalDatabaseLogEventsRequestTypeDef](#getrelationaldatabaselogeventsrequesttypedef)
-  - [GetRelationalDatabaseLogEventsResultResponseTypeDef](#getrelationaldatabaselogeventsresultresponsetypedef)
-  - [GetRelationalDatabaseLogStreamsRequestTypeDef](#getrelationaldatabaselogstreamsrequesttypedef)
-  - [GetRelationalDatabaseLogStreamsResultResponseTypeDef](#getrelationaldatabaselogstreamsresultresponsetypedef)
-  - [GetRelationalDatabaseMasterUserPasswordRequestTypeDef](#getrelationaldatabasemasteruserpasswordrequesttypedef)
-  - [GetRelationalDatabaseMasterUserPasswordResultResponseTypeDef](#getrelationaldatabasemasteruserpasswordresultresponsetypedef)
-  - [GetRelationalDatabaseMetricDataRequestTypeDef](#getrelationaldatabasemetricdatarequesttypedef)
-  - [GetRelationalDatabaseMetricDataResultResponseTypeDef](#getrelationaldatabasemetricdataresultresponsetypedef)
-  - [GetRelationalDatabaseParametersRequestTypeDef](#getrelationaldatabaseparametersrequesttypedef)
-  - [GetRelationalDatabaseParametersResultResponseTypeDef](#getrelationaldatabaseparametersresultresponsetypedef)
-  - [GetRelationalDatabaseRequestTypeDef](#getrelationaldatabaserequesttypedef)
-  - [GetRelationalDatabaseResultResponseTypeDef](#getrelationaldatabaseresultresponsetypedef)
-  - [GetRelationalDatabaseSnapshotRequestTypeDef](#getrelationaldatabasesnapshotrequesttypedef)
-  - [GetRelationalDatabaseSnapshotResultResponseTypeDef](#getrelationaldatabasesnapshotresultresponsetypedef)
-  - [GetRelationalDatabaseSnapshotsRequestTypeDef](#getrelationaldatabasesnapshotsrequesttypedef)
-  - [GetRelationalDatabaseSnapshotsResultResponseTypeDef](#getrelationaldatabasesnapshotsresultresponsetypedef)
-  - [GetRelationalDatabasesRequestTypeDef](#getrelationaldatabasesrequesttypedef)
-  - [GetRelationalDatabasesResultResponseTypeDef](#getrelationaldatabasesresultresponsetypedef)
-  - [GetStaticIpRequestTypeDef](#getstaticiprequesttypedef)
-  - [GetStaticIpResultResponseTypeDef](#getstaticipresultresponsetypedef)
-  - [GetStaticIpsRequestTypeDef](#getstaticipsrequesttypedef)
-  - [GetStaticIpsResultResponseTypeDef](#getstaticipsresultresponsetypedef)
+  - [ExportSnapshotRequestRequestTypeDef](#exportsnapshotrequestrequesttypedef)
+  - [ExportSnapshotResultTypeDef](#exportsnapshotresulttypedef)
+  - [GetActiveNamesRequestRequestTypeDef](#getactivenamesrequestrequesttypedef)
+  - [GetActiveNamesResultTypeDef](#getactivenamesresulttypedef)
+  - [GetAlarmsRequestRequestTypeDef](#getalarmsrequestrequesttypedef)
+  - [GetAlarmsResultTypeDef](#getalarmsresulttypedef)
+  - [GetAutoSnapshotsRequestRequestTypeDef](#getautosnapshotsrequestrequesttypedef)
+  - [GetAutoSnapshotsResultTypeDef](#getautosnapshotsresulttypedef)
+  - [GetBlueprintsRequestRequestTypeDef](#getblueprintsrequestrequesttypedef)
+  - [GetBlueprintsResultTypeDef](#getblueprintsresulttypedef)
+  - [GetBundlesRequestRequestTypeDef](#getbundlesrequestrequesttypedef)
+  - [GetBundlesResultTypeDef](#getbundlesresulttypedef)
+  - [GetCertificatesRequestRequestTypeDef](#getcertificatesrequestrequesttypedef)
+  - [GetCertificatesResultTypeDef](#getcertificatesresulttypedef)
+  - [GetCloudFormationStackRecordsRequestRequestTypeDef](#getcloudformationstackrecordsrequestrequesttypedef)
+  - [GetCloudFormationStackRecordsResultTypeDef](#getcloudformationstackrecordsresulttypedef)
+  - [GetContactMethodsRequestRequestTypeDef](#getcontactmethodsrequestrequesttypedef)
+  - [GetContactMethodsResultTypeDef](#getcontactmethodsresulttypedef)
+  - [GetContainerAPIMetadataResultTypeDef](#getcontainerapimetadataresulttypedef)
+  - [GetContainerImagesRequestRequestTypeDef](#getcontainerimagesrequestrequesttypedef)
+  - [GetContainerImagesResultTypeDef](#getcontainerimagesresulttypedef)
+  - [GetContainerLogRequestRequestTypeDef](#getcontainerlogrequestrequesttypedef)
+  - [GetContainerLogResultTypeDef](#getcontainerlogresulttypedef)
+  - [GetContainerServiceDeploymentsRequestRequestTypeDef](#getcontainerservicedeploymentsrequestrequesttypedef)
+  - [GetContainerServiceDeploymentsResultTypeDef](#getcontainerservicedeploymentsresulttypedef)
+  - [GetContainerServiceMetricDataRequestRequestTypeDef](#getcontainerservicemetricdatarequestrequesttypedef)
+  - [GetContainerServiceMetricDataResultTypeDef](#getcontainerservicemetricdataresulttypedef)
+  - [GetContainerServicePowersResultTypeDef](#getcontainerservicepowersresulttypedef)
+  - [GetContainerServicesRequestRequestTypeDef](#getcontainerservicesrequestrequesttypedef)
+  - [GetDiskRequestRequestTypeDef](#getdiskrequestrequesttypedef)
+  - [GetDiskResultTypeDef](#getdiskresulttypedef)
+  - [GetDiskSnapshotRequestRequestTypeDef](#getdisksnapshotrequestrequesttypedef)
+  - [GetDiskSnapshotResultTypeDef](#getdisksnapshotresulttypedef)
+  - [GetDiskSnapshotsRequestRequestTypeDef](#getdisksnapshotsrequestrequesttypedef)
+  - [GetDiskSnapshotsResultTypeDef](#getdisksnapshotsresulttypedef)
+  - [GetDisksRequestRequestTypeDef](#getdisksrequestrequesttypedef)
+  - [GetDisksResultTypeDef](#getdisksresulttypedef)
+  - [GetDistributionBundlesResultTypeDef](#getdistributionbundlesresulttypedef)
+  - [GetDistributionLatestCacheResetRequestRequestTypeDef](#getdistributionlatestcacheresetrequestrequesttypedef)
+  - [GetDistributionLatestCacheResetResultTypeDef](#getdistributionlatestcacheresetresulttypedef)
+  - [GetDistributionMetricDataRequestRequestTypeDef](#getdistributionmetricdatarequestrequesttypedef)
+  - [GetDistributionMetricDataResultTypeDef](#getdistributionmetricdataresulttypedef)
+  - [GetDistributionsRequestRequestTypeDef](#getdistributionsrequestrequesttypedef)
+  - [GetDistributionsResultTypeDef](#getdistributionsresulttypedef)
+  - [GetDomainRequestRequestTypeDef](#getdomainrequestrequesttypedef)
+  - [GetDomainResultTypeDef](#getdomainresulttypedef)
+  - [GetDomainsRequestRequestTypeDef](#getdomainsrequestrequesttypedef)
+  - [GetDomainsResultTypeDef](#getdomainsresulttypedef)
+  - [GetExportSnapshotRecordsRequestRequestTypeDef](#getexportsnapshotrecordsrequestrequesttypedef)
+  - [GetExportSnapshotRecordsResultTypeDef](#getexportsnapshotrecordsresulttypedef)
+  - [GetInstanceAccessDetailsRequestRequestTypeDef](#getinstanceaccessdetailsrequestrequesttypedef)
+  - [GetInstanceAccessDetailsResultTypeDef](#getinstanceaccessdetailsresulttypedef)
+  - [GetInstanceMetricDataRequestRequestTypeDef](#getinstancemetricdatarequestrequesttypedef)
+  - [GetInstanceMetricDataResultTypeDef](#getinstancemetricdataresulttypedef)
+  - [GetInstancePortStatesRequestRequestTypeDef](#getinstanceportstatesrequestrequesttypedef)
+  - [GetInstancePortStatesResultTypeDef](#getinstanceportstatesresulttypedef)
+  - [GetInstanceRequestRequestTypeDef](#getinstancerequestrequesttypedef)
+  - [GetInstanceResultTypeDef](#getinstanceresulttypedef)
+  - [GetInstanceSnapshotRequestRequestTypeDef](#getinstancesnapshotrequestrequesttypedef)
+  - [GetInstanceSnapshotResultTypeDef](#getinstancesnapshotresulttypedef)
+  - [GetInstanceSnapshotsRequestRequestTypeDef](#getinstancesnapshotsrequestrequesttypedef)
+  - [GetInstanceSnapshotsResultTypeDef](#getinstancesnapshotsresulttypedef)
+  - [GetInstanceStateRequestRequestTypeDef](#getinstancestaterequestrequesttypedef)
+  - [GetInstanceStateResultTypeDef](#getinstancestateresulttypedef)
+  - [GetInstancesRequestRequestTypeDef](#getinstancesrequestrequesttypedef)
+  - [GetInstancesResultTypeDef](#getinstancesresulttypedef)
+  - [GetKeyPairRequestRequestTypeDef](#getkeypairrequestrequesttypedef)
+  - [GetKeyPairResultTypeDef](#getkeypairresulttypedef)
+  - [GetKeyPairsRequestRequestTypeDef](#getkeypairsrequestrequesttypedef)
+  - [GetKeyPairsResultTypeDef](#getkeypairsresulttypedef)
+  - [GetLoadBalancerMetricDataRequestRequestTypeDef](#getloadbalancermetricdatarequestrequesttypedef)
+  - [GetLoadBalancerMetricDataResultTypeDef](#getloadbalancermetricdataresulttypedef)
+  - [GetLoadBalancerRequestRequestTypeDef](#getloadbalancerrequestrequesttypedef)
+  - [GetLoadBalancerResultTypeDef](#getloadbalancerresulttypedef)
+  - [GetLoadBalancerTlsCertificatesRequestRequestTypeDef](#getloadbalancertlscertificatesrequestrequesttypedef)
+  - [GetLoadBalancerTlsCertificatesResultTypeDef](#getloadbalancertlscertificatesresulttypedef)
+  - [GetLoadBalancersRequestRequestTypeDef](#getloadbalancersrequestrequesttypedef)
+  - [GetLoadBalancersResultTypeDef](#getloadbalancersresulttypedef)
+  - [GetOperationRequestRequestTypeDef](#getoperationrequestrequesttypedef)
+  - [GetOperationResultTypeDef](#getoperationresulttypedef)
+  - [GetOperationsForResourceRequestRequestTypeDef](#getoperationsforresourcerequestrequesttypedef)
+  - [GetOperationsForResourceResultTypeDef](#getoperationsforresourceresulttypedef)
+  - [GetOperationsRequestRequestTypeDef](#getoperationsrequestrequesttypedef)
+  - [GetOperationsResultTypeDef](#getoperationsresulttypedef)
+  - [GetRegionsRequestRequestTypeDef](#getregionsrequestrequesttypedef)
+  - [GetRegionsResultTypeDef](#getregionsresulttypedef)
+  - [GetRelationalDatabaseBlueprintsRequestRequestTypeDef](#getrelationaldatabaseblueprintsrequestrequesttypedef)
+  - [GetRelationalDatabaseBlueprintsResultTypeDef](#getrelationaldatabaseblueprintsresulttypedef)
+  - [GetRelationalDatabaseBundlesRequestRequestTypeDef](#getrelationaldatabasebundlesrequestrequesttypedef)
+  - [GetRelationalDatabaseBundlesResultTypeDef](#getrelationaldatabasebundlesresulttypedef)
+  - [GetRelationalDatabaseEventsRequestRequestTypeDef](#getrelationaldatabaseeventsrequestrequesttypedef)
+  - [GetRelationalDatabaseEventsResultTypeDef](#getrelationaldatabaseeventsresulttypedef)
+  - [GetRelationalDatabaseLogEventsRequestRequestTypeDef](#getrelationaldatabaselogeventsrequestrequesttypedef)
+  - [GetRelationalDatabaseLogEventsResultTypeDef](#getrelationaldatabaselogeventsresulttypedef)
+  - [GetRelationalDatabaseLogStreamsRequestRequestTypeDef](#getrelationaldatabaselogstreamsrequestrequesttypedef)
+  - [GetRelationalDatabaseLogStreamsResultTypeDef](#getrelationaldatabaselogstreamsresulttypedef)
+  - [GetRelationalDatabaseMasterUserPasswordRequestRequestTypeDef](#getrelationaldatabasemasteruserpasswordrequestrequesttypedef)
+  - [GetRelationalDatabaseMasterUserPasswordResultTypeDef](#getrelationaldatabasemasteruserpasswordresulttypedef)
+  - [GetRelationalDatabaseMetricDataRequestRequestTypeDef](#getrelationaldatabasemetricdatarequestrequesttypedef)
+  - [GetRelationalDatabaseMetricDataResultTypeDef](#getrelationaldatabasemetricdataresulttypedef)
+  - [GetRelationalDatabaseParametersRequestRequestTypeDef](#getrelationaldatabaseparametersrequestrequesttypedef)
+  - [GetRelationalDatabaseParametersResultTypeDef](#getrelationaldatabaseparametersresulttypedef)
+  - [GetRelationalDatabaseRequestRequestTypeDef](#getrelationaldatabaserequestrequesttypedef)
+  - [GetRelationalDatabaseResultTypeDef](#getrelationaldatabaseresulttypedef)
+  - [GetRelationalDatabaseSnapshotRequestRequestTypeDef](#getrelationaldatabasesnapshotrequestrequesttypedef)
+  - [GetRelationalDatabaseSnapshotResultTypeDef](#getrelationaldatabasesnapshotresulttypedef)
+  - [GetRelationalDatabaseSnapshotsRequestRequestTypeDef](#getrelationaldatabasesnapshotsrequestrequesttypedef)
+  - [GetRelationalDatabaseSnapshotsResultTypeDef](#getrelationaldatabasesnapshotsresulttypedef)
+  - [GetRelationalDatabasesRequestRequestTypeDef](#getrelationaldatabasesrequestrequesttypedef)
+  - [GetRelationalDatabasesResultTypeDef](#getrelationaldatabasesresulttypedef)
+  - [GetStaticIpRequestRequestTypeDef](#getstaticiprequestrequesttypedef)
+  - [GetStaticIpResultTypeDef](#getstaticipresulttypedef)
+  - [GetStaticIpsRequestRequestTypeDef](#getstaticipsrequestrequesttypedef)
+  - [GetStaticIpsResultTypeDef](#getstaticipsresulttypedef)
   - [HeaderObjectTypeDef](#headerobjecttypedef)
   - [HostKeyAttributesTypeDef](#hostkeyattributestypedef)
-  - [ImportKeyPairRequestTypeDef](#importkeypairrequesttypedef)
-  - [ImportKeyPairResultResponseTypeDef](#importkeypairresultresponsetypedef)
+  - [ImportKeyPairRequestRequestTypeDef](#importkeypairrequestrequesttypedef)
+  - [ImportKeyPairResultTypeDef](#importkeypairresulttypedef)
   - [InputOriginTypeDef](#inputorigintypedef)
   - [InstanceAccessDetailsTypeDef](#instanceaccessdetailstypedef)
   - [InstanceEntryTypeDef](#instanceentrytypedef)
@@ -287,7 +287,7 @@ type annotations stubs module
   - [InstanceSnapshotTypeDef](#instancesnapshottypedef)
   - [InstanceStateTypeDef](#instancestatetypedef)
   - [InstanceTypeDef](#instancetypedef)
-  - [IsVpcPeeredResultResponseTypeDef](#isvpcpeeredresultresponsetypedef)
+  - [IsVpcPeeredResultTypeDef](#isvpcpeeredresulttypedef)
   - [KeyPairTypeDef](#keypairtypedef)
   - [LightsailDistributionTypeDef](#lightsaildistributiontypedef)
   - [LoadBalancerTlsCertificateDomainValidationOptionTypeDef](#loadbalancertlscertificatedomainvalidationoptiontypedef)
@@ -300,28 +300,28 @@ type annotations stubs module
   - [MetricDatapointTypeDef](#metricdatapointtypedef)
   - [MonitoredResourceInfoTypeDef](#monitoredresourceinfotypedef)
   - [MonthlyTransferTypeDef](#monthlytransfertypedef)
-  - [OpenInstancePublicPortsRequestTypeDef](#openinstancepublicportsrequesttypedef)
-  - [OpenInstancePublicPortsResultResponseTypeDef](#openinstancepublicportsresultresponsetypedef)
+  - [OpenInstancePublicPortsRequestRequestTypeDef](#openinstancepublicportsrequestrequesttypedef)
+  - [OpenInstancePublicPortsResultTypeDef](#openinstancepublicportsresulttypedef)
   - [OperationTypeDef](#operationtypedef)
   - [OriginTypeDef](#origintypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PasswordDataTypeDef](#passworddatatypedef)
-  - [PeerVpcResultResponseTypeDef](#peervpcresultresponsetypedef)
+  - [PeerVpcResultTypeDef](#peervpcresulttypedef)
   - [PendingMaintenanceActionTypeDef](#pendingmaintenanceactiontypedef)
   - [PendingModifiedRelationalDatabaseValuesTypeDef](#pendingmodifiedrelationaldatabasevaluestypedef)
   - [PortInfoTypeDef](#portinfotypedef)
-  - [PutAlarmRequestTypeDef](#putalarmrequesttypedef)
-  - [PutAlarmResultResponseTypeDef](#putalarmresultresponsetypedef)
-  - [PutInstancePublicPortsRequestTypeDef](#putinstancepublicportsrequesttypedef)
-  - [PutInstancePublicPortsResultResponseTypeDef](#putinstancepublicportsresultresponsetypedef)
+  - [PutAlarmRequestRequestTypeDef](#putalarmrequestrequesttypedef)
+  - [PutAlarmResultTypeDef](#putalarmresulttypedef)
+  - [PutInstancePublicPortsRequestRequestTypeDef](#putinstancepublicportsrequestrequesttypedef)
+  - [PutInstancePublicPortsResultTypeDef](#putinstancepublicportsresulttypedef)
   - [QueryStringObjectTypeDef](#querystringobjecttypedef)
-  - [RebootInstanceRequestTypeDef](#rebootinstancerequesttypedef)
-  - [RebootInstanceResultResponseTypeDef](#rebootinstanceresultresponsetypedef)
-  - [RebootRelationalDatabaseRequestTypeDef](#rebootrelationaldatabaserequesttypedef)
-  - [RebootRelationalDatabaseResultResponseTypeDef](#rebootrelationaldatabaseresultresponsetypedef)
+  - [RebootInstanceRequestRequestTypeDef](#rebootinstancerequestrequesttypedef)
+  - [RebootInstanceResultTypeDef](#rebootinstanceresulttypedef)
+  - [RebootRelationalDatabaseRequestRequestTypeDef](#rebootrelationaldatabaserequestrequesttypedef)
+  - [RebootRelationalDatabaseResultTypeDef](#rebootrelationaldatabaseresulttypedef)
   - [RegionTypeDef](#regiontypedef)
-  - [RegisterContainerImageRequestTypeDef](#registercontainerimagerequesttypedef)
-  - [RegisterContainerImageResultResponseTypeDef](#registercontainerimageresultresponsetypedef)
+  - [RegisterContainerImageRequestRequestTypeDef](#registercontainerimagerequestrequesttypedef)
+  - [RegisterContainerImageResultTypeDef](#registercontainerimageresulttypedef)
   - [RelationalDatabaseBlueprintTypeDef](#relationaldatabaseblueprinttypedef)
   - [RelationalDatabaseBundleTypeDef](#relationaldatabasebundletypedef)
   - [RelationalDatabaseEndpointTypeDef](#relationaldatabaseendpointtypedef)
@@ -330,49 +330,49 @@ type annotations stubs module
   - [RelationalDatabaseParameterTypeDef](#relationaldatabaseparametertypedef)
   - [RelationalDatabaseSnapshotTypeDef](#relationaldatabasesnapshottypedef)
   - [RelationalDatabaseTypeDef](#relationaldatabasetypedef)
-  - [ReleaseStaticIpRequestTypeDef](#releasestaticiprequesttypedef)
-  - [ReleaseStaticIpResultResponseTypeDef](#releasestaticipresultresponsetypedef)
+  - [ReleaseStaticIpRequestRequestTypeDef](#releasestaticiprequestrequesttypedef)
+  - [ReleaseStaticIpResultTypeDef](#releasestaticipresulttypedef)
   - [RenewalSummaryTypeDef](#renewalsummarytypedef)
-  - [ResetDistributionCacheRequestTypeDef](#resetdistributioncacherequesttypedef)
-  - [ResetDistributionCacheResultResponseTypeDef](#resetdistributioncacheresultresponsetypedef)
+  - [ResetDistributionCacheRequestRequestTypeDef](#resetdistributioncacherequestrequesttypedef)
+  - [ResetDistributionCacheResultTypeDef](#resetdistributioncacheresulttypedef)
   - [ResourceLocationTypeDef](#resourcelocationtypedef)
   - [ResourceRecordTypeDef](#resourcerecordtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendContactMethodVerificationRequestTypeDef](#sendcontactmethodverificationrequesttypedef)
-  - [SendContactMethodVerificationResultResponseTypeDef](#sendcontactmethodverificationresultresponsetypedef)
-  - [SetIpAddressTypeRequestTypeDef](#setipaddresstyperequesttypedef)
-  - [SetIpAddressTypeResultResponseTypeDef](#setipaddresstyperesultresponsetypedef)
-  - [StartInstanceRequestTypeDef](#startinstancerequesttypedef)
-  - [StartInstanceResultResponseTypeDef](#startinstanceresultresponsetypedef)
-  - [StartRelationalDatabaseRequestTypeDef](#startrelationaldatabaserequesttypedef)
-  - [StartRelationalDatabaseResultResponseTypeDef](#startrelationaldatabaseresultresponsetypedef)
+  - [SendContactMethodVerificationRequestRequestTypeDef](#sendcontactmethodverificationrequestrequesttypedef)
+  - [SendContactMethodVerificationResultTypeDef](#sendcontactmethodverificationresulttypedef)
+  - [SetIpAddressTypeRequestRequestTypeDef](#setipaddresstyperequestrequesttypedef)
+  - [SetIpAddressTypeResultTypeDef](#setipaddresstyperesulttypedef)
+  - [StartInstanceRequestRequestTypeDef](#startinstancerequestrequesttypedef)
+  - [StartInstanceResultTypeDef](#startinstanceresulttypedef)
+  - [StartRelationalDatabaseRequestRequestTypeDef](#startrelationaldatabaserequestrequesttypedef)
+  - [StartRelationalDatabaseResultTypeDef](#startrelationaldatabaseresulttypedef)
   - [StaticIpTypeDef](#staticiptypedef)
-  - [StopInstanceRequestTypeDef](#stopinstancerequesttypedef)
-  - [StopInstanceResultResponseTypeDef](#stopinstanceresultresponsetypedef)
-  - [StopRelationalDatabaseRequestTypeDef](#stoprelationaldatabaserequesttypedef)
-  - [StopRelationalDatabaseResultResponseTypeDef](#stoprelationaldatabaseresultresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [TagResourceResultResponseTypeDef](#tagresourceresultresponsetypedef)
+  - [StopInstanceRequestRequestTypeDef](#stopinstancerequestrequesttypedef)
+  - [StopInstanceResultTypeDef](#stopinstanceresulttypedef)
+  - [StopRelationalDatabaseRequestRequestTypeDef](#stoprelationaldatabaserequestrequesttypedef)
+  - [StopRelationalDatabaseResultTypeDef](#stoprelationaldatabaseresulttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [TagResourceResultTypeDef](#tagresourceresulttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TestAlarmRequestTypeDef](#testalarmrequesttypedef)
-  - [TestAlarmResultResponseTypeDef](#testalarmresultresponsetypedef)
-  - [UnpeerVpcResultResponseTypeDef](#unpeervpcresultresponsetypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UntagResourceResultResponseTypeDef](#untagresourceresultresponsetypedef)
-  - [UpdateContainerServiceRequestTypeDef](#updatecontainerservicerequesttypedef)
-  - [UpdateContainerServiceResultResponseTypeDef](#updatecontainerserviceresultresponsetypedef)
-  - [UpdateDistributionBundleRequestTypeDef](#updatedistributionbundlerequesttypedef)
-  - [UpdateDistributionBundleResultResponseTypeDef](#updatedistributionbundleresultresponsetypedef)
-  - [UpdateDistributionRequestTypeDef](#updatedistributionrequesttypedef)
-  - [UpdateDistributionResultResponseTypeDef](#updatedistributionresultresponsetypedef)
-  - [UpdateDomainEntryRequestTypeDef](#updatedomainentryrequesttypedef)
-  - [UpdateDomainEntryResultResponseTypeDef](#updatedomainentryresultresponsetypedef)
-  - [UpdateLoadBalancerAttributeRequestTypeDef](#updateloadbalancerattributerequesttypedef)
-  - [UpdateLoadBalancerAttributeResultResponseTypeDef](#updateloadbalancerattributeresultresponsetypedef)
-  - [UpdateRelationalDatabaseParametersRequestTypeDef](#updaterelationaldatabaseparametersrequesttypedef)
-  - [UpdateRelationalDatabaseParametersResultResponseTypeDef](#updaterelationaldatabaseparametersresultresponsetypedef)
-  - [UpdateRelationalDatabaseRequestTypeDef](#updaterelationaldatabaserequesttypedef)
-  - [UpdateRelationalDatabaseResultResponseTypeDef](#updaterelationaldatabaseresultresponsetypedef)
+  - [TestAlarmRequestRequestTypeDef](#testalarmrequestrequesttypedef)
+  - [TestAlarmResultTypeDef](#testalarmresulttypedef)
+  - [UnpeerVpcResultTypeDef](#unpeervpcresulttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UntagResourceResultTypeDef](#untagresourceresulttypedef)
+  - [UpdateContainerServiceRequestRequestTypeDef](#updatecontainerservicerequestrequesttypedef)
+  - [UpdateContainerServiceResultTypeDef](#updatecontainerserviceresulttypedef)
+  - [UpdateDistributionBundleRequestRequestTypeDef](#updatedistributionbundlerequestrequesttypedef)
+  - [UpdateDistributionBundleResultTypeDef](#updatedistributionbundleresulttypedef)
+  - [UpdateDistributionRequestRequestTypeDef](#updatedistributionrequestrequesttypedef)
+  - [UpdateDistributionResultTypeDef](#updatedistributionresulttypedef)
+  - [UpdateDomainEntryRequestRequestTypeDef](#updatedomainentryrequestrequesttypedef)
+  - [UpdateDomainEntryResultTypeDef](#updatedomainentryresulttypedef)
+  - [UpdateLoadBalancerAttributeRequestRequestTypeDef](#updateloadbalancerattributerequestrequesttypedef)
+  - [UpdateLoadBalancerAttributeResultTypeDef](#updateloadbalancerattributeresulttypedef)
+  - [UpdateRelationalDatabaseParametersRequestRequestTypeDef](#updaterelationaldatabaseparametersrequestrequesttypedef)
+  - [UpdateRelationalDatabaseParametersResultTypeDef](#updaterelationaldatabaseparametersresulttypedef)
+  - [UpdateRelationalDatabaseRequestRequestTypeDef](#updaterelationaldatabaserequestrequesttypedef)
+  - [UpdateRelationalDatabaseResultTypeDef](#updaterelationaldatabaseresulttypedef)
 
 ## AddOnRequestTypeDef
 
@@ -437,20 +437,20 @@ Optional fields:
   `List`\[[AlarmStateType](./literals.md#alarmstatetype)\]
 - `notificationEnabled`: `bool`
 
-## AllocateStaticIpRequestTypeDef
+## AllocateStaticIpRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import AllocateStaticIpRequestTypeDef
+from mypy_boto3_lightsail.type_defs import AllocateStaticIpRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `staticIpName`: `str`
 
-## AllocateStaticIpResultResponseTypeDef
+## AllocateStaticIpResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import AllocateStaticIpResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import AllocateStaticIpResultTypeDef
 ```
 
 Required fields:
@@ -459,10 +459,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AttachCertificateToDistributionRequestTypeDef
+## AttachCertificateToDistributionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import AttachCertificateToDistributionRequestTypeDef
+from mypy_boto3_lightsail.type_defs import AttachCertificateToDistributionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -470,10 +470,10 @@ Required fields:
 - `distributionName`: `str`
 - `certificateName`: `str`
 
-## AttachCertificateToDistributionResultResponseTypeDef
+## AttachCertificateToDistributionResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import AttachCertificateToDistributionResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import AttachCertificateToDistributionResultTypeDef
 ```
 
 Required fields:
@@ -482,10 +482,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AttachDiskRequestTypeDef
+## AttachDiskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import AttachDiskRequestTypeDef
+from mypy_boto3_lightsail.type_defs import AttachDiskRequestRequestTypeDef
 ```
 
 Required fields:
@@ -494,10 +494,10 @@ Required fields:
 - `instanceName`: `str`
 - `diskPath`: `str`
 
-## AttachDiskResultResponseTypeDef
+## AttachDiskResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import AttachDiskResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import AttachDiskResultTypeDef
 ```
 
 Required fields:
@@ -506,10 +506,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AttachInstancesToLoadBalancerRequestTypeDef
+## AttachInstancesToLoadBalancerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import AttachInstancesToLoadBalancerRequestTypeDef
+from mypy_boto3_lightsail.type_defs import AttachInstancesToLoadBalancerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -517,10 +517,10 @@ Required fields:
 - `loadBalancerName`: `str`
 - `instanceNames`: `List`\[`str`\]
 
-## AttachInstancesToLoadBalancerResultResponseTypeDef
+## AttachInstancesToLoadBalancerResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import AttachInstancesToLoadBalancerResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import AttachInstancesToLoadBalancerResultTypeDef
 ```
 
 Required fields:
@@ -529,10 +529,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AttachLoadBalancerTlsCertificateRequestTypeDef
+## AttachLoadBalancerTlsCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import AttachLoadBalancerTlsCertificateRequestTypeDef
+from mypy_boto3_lightsail.type_defs import AttachLoadBalancerTlsCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -540,10 +540,10 @@ Required fields:
 - `loadBalancerName`: `str`
 - `certificateName`: `str`
 
-## AttachLoadBalancerTlsCertificateResultResponseTypeDef
+## AttachLoadBalancerTlsCertificateResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import AttachLoadBalancerTlsCertificateResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import AttachLoadBalancerTlsCertificateResultTypeDef
 ```
 
 Required fields:
@@ -552,10 +552,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AttachStaticIpRequestTypeDef
+## AttachStaticIpRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import AttachStaticIpRequestTypeDef
+from mypy_boto3_lightsail.type_defs import AttachStaticIpRequestRequestTypeDef
 ```
 
 Required fields:
@@ -563,10 +563,10 @@ Required fields:
 - `staticIpName`: `str`
 - `instanceName`: `str`
 
-## AttachStaticIpResultResponseTypeDef
+## AttachStaticIpResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import AttachStaticIpResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import AttachStaticIpResultTypeDef
 ```
 
 Required fields:
@@ -748,10 +748,10 @@ Optional fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `supportCode`: `str`
 
-## CloseInstancePublicPortsRequestTypeDef
+## CloseInstancePublicPortsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CloseInstancePublicPortsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CloseInstancePublicPortsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -759,10 +759,10 @@ Required fields:
 - `portInfo`: [PortInfoTypeDef](./type_defs.md#portinfotypedef)
 - `instanceName`: `str`
 
-## CloseInstancePublicPortsResultResponseTypeDef
+## CloseInstancePublicPortsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CloseInstancePublicPortsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CloseInstancePublicPortsResultTypeDef
 ```
 
 Required fields:
@@ -973,10 +973,10 @@ Optional fields:
 - `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
 - `url`: `str`
 
-## ContainerServicesListResultResponseTypeDef
+## ContainerServicesListResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import ContainerServicesListResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import ContainerServicesListResultTypeDef
 ```
 
 Required fields:
@@ -1011,10 +1011,10 @@ Optional fields:
 - `option`: [ForwardValuesType](./literals.md#forwardvaluestype)
 - `cookiesAllowList`: `List`\[`str`\]
 
-## CopySnapshotRequestTypeDef
+## CopySnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CopySnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CopySnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1029,10 +1029,10 @@ Optional fields:
 - `restoreDate`: `str`
 - `useLatestRestorableAutoSnapshot`: `bool`
 
-## CopySnapshotResultResponseTypeDef
+## CopySnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CopySnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CopySnapshotResultTypeDef
 ```
 
 Required fields:
@@ -1041,10 +1041,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCertificateRequestTypeDef
+## CreateCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateCertificateRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1057,10 +1057,10 @@ Optional fields:
 - `subjectAlternativeNames`: `List`\[`str`\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateCertificateResultResponseTypeDef
+## CreateCertificateResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateCertificateResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateCertificateResultTypeDef
 ```
 
 Required fields:
@@ -1071,10 +1071,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateCloudFormationStackRequestTypeDef
+## CreateCloudFormationStackRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateCloudFormationStackRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateCloudFormationStackRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1082,10 +1082,10 @@ Required fields:
 - `instances`:
   `List`\[[InstanceEntryTypeDef](./type_defs.md#instanceentrytypedef)\]
 
-## CreateCloudFormationStackResultResponseTypeDef
+## CreateCloudFormationStackResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateCloudFormationStackResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateCloudFormationStackResultTypeDef
 ```
 
 Required fields:
@@ -1094,10 +1094,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateContactMethodRequestTypeDef
+## CreateContactMethodRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateContactMethodRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateContactMethodRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1105,10 +1105,10 @@ Required fields:
 - `protocol`: [ContactProtocolType](./literals.md#contactprotocoltype)
 - `contactEndpoint`: `str`
 
-## CreateContactMethodResultResponseTypeDef
+## CreateContactMethodResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateContactMethodResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateContactMethodResultTypeDef
 ```
 
 Required fields:
@@ -1117,10 +1117,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateContainerServiceDeploymentRequestTypeDef
+## CreateContainerServiceDeploymentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateContainerServiceDeploymentRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateContainerServiceDeploymentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1134,10 +1134,10 @@ Optional fields:
 - `publicEndpoint`:
   [EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef)
 
-## CreateContainerServiceDeploymentResultResponseTypeDef
+## CreateContainerServiceDeploymentResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateContainerServiceDeploymentResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateContainerServiceDeploymentResultTypeDef
 ```
 
 Required fields:
@@ -1147,10 +1147,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateContainerServiceRegistryLoginResultResponseTypeDef
+## CreateContainerServiceRegistryLoginResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateContainerServiceRegistryLoginResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateContainerServiceRegistryLoginResultTypeDef
 ```
 
 Required fields:
@@ -1160,10 +1160,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateContainerServiceRequestTypeDef
+## CreateContainerServiceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateContainerServiceRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateContainerServiceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1180,10 +1180,10 @@ Optional fields:
 - `deployment`:
   [ContainerServiceDeploymentRequestTypeDef](./type_defs.md#containerservicedeploymentrequesttypedef)
 
-## CreateContainerServiceResultResponseTypeDef
+## CreateContainerServiceResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateContainerServiceResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateContainerServiceResultTypeDef
 ```
 
 Required fields:
@@ -1193,10 +1193,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDiskFromSnapshotRequestTypeDef
+## CreateDiskFromSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateDiskFromSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateDiskFromSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1214,10 +1214,10 @@ Optional fields:
 - `restoreDate`: `str`
 - `useLatestRestorableAutoSnapshot`: `bool`
 
-## CreateDiskFromSnapshotResultResponseTypeDef
+## CreateDiskFromSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateDiskFromSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateDiskFromSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -1226,10 +1226,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDiskRequestTypeDef
+## CreateDiskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateDiskRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateDiskRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1243,10 +1243,10 @@ Optional fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 
-## CreateDiskResultResponseTypeDef
+## CreateDiskResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateDiskResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateDiskResultTypeDef
 ```
 
 Required fields:
@@ -1255,10 +1255,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDiskSnapshotRequestTypeDef
+## CreateDiskSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateDiskSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateDiskSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1271,10 +1271,10 @@ Optional fields:
 - `instanceName`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDiskSnapshotResultResponseTypeDef
+## CreateDiskSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateDiskSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateDiskSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -1283,10 +1283,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDistributionRequestTypeDef
+## CreateDistributionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateDistributionRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateDistributionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1306,10 +1306,10 @@ Optional fields:
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDistributionResultResponseTypeDef
+## CreateDistributionResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateDistributionResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateDistributionResultTypeDef
 ```
 
 Required fields:
@@ -1320,10 +1320,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDomainEntryRequestTypeDef
+## CreateDomainEntryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateDomainEntryRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateDomainEntryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1331,10 +1331,10 @@ Required fields:
 - `domainName`: `str`
 - `domainEntry`: [DomainEntryTypeDef](./type_defs.md#domainentrytypedef)
 
-## CreateDomainEntryResultResponseTypeDef
+## CreateDomainEntryResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateDomainEntryResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateDomainEntryResultTypeDef
 ```
 
 Required fields:
@@ -1343,10 +1343,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDomainRequestTypeDef
+## CreateDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateDomainRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateDomainRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1357,10 +1357,10 @@ Optional fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDomainResultResponseTypeDef
+## CreateDomainResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateDomainResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateDomainResultTypeDef
 ```
 
 Required fields:
@@ -1369,10 +1369,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInstanceSnapshotRequestTypeDef
+## CreateInstanceSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateInstanceSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateInstanceSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1384,10 +1384,10 @@ Optional fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateInstanceSnapshotResultResponseTypeDef
+## CreateInstanceSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateInstanceSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateInstanceSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -1396,10 +1396,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInstancesFromSnapshotRequestTypeDef
+## CreateInstancesFromSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateInstancesFromSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateInstancesFromSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1422,10 +1422,10 @@ Optional fields:
 - `restoreDate`: `str`
 - `useLatestRestorableAutoSnapshot`: `bool`
 
-## CreateInstancesFromSnapshotResultResponseTypeDef
+## CreateInstancesFromSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateInstancesFromSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateInstancesFromSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -1434,10 +1434,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInstancesRequestTypeDef
+## CreateInstancesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateInstancesRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateInstancesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1456,10 +1456,10 @@ Optional fields:
 - `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
-## CreateInstancesResultResponseTypeDef
+## CreateInstancesResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateInstancesResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateInstancesResultTypeDef
 ```
 
 Required fields:
@@ -1468,10 +1468,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateKeyPairRequestTypeDef
+## CreateKeyPairRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateKeyPairRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateKeyPairRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1482,10 +1482,10 @@ Optional fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateKeyPairResultResponseTypeDef
+## CreateKeyPairResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateKeyPairResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateKeyPairResultTypeDef
 ```
 
 Required fields:
@@ -1497,10 +1497,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLoadBalancerRequestTypeDef
+## CreateLoadBalancerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateLoadBalancerRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateLoadBalancerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1517,10 +1517,10 @@ Optional fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
-## CreateLoadBalancerResultResponseTypeDef
+## CreateLoadBalancerResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateLoadBalancerResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateLoadBalancerResultTypeDef
 ```
 
 Required fields:
@@ -1529,10 +1529,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLoadBalancerTlsCertificateRequestTypeDef
+## CreateLoadBalancerTlsCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateLoadBalancerTlsCertificateRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateLoadBalancerTlsCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1546,10 +1546,10 @@ Optional fields:
 - `certificateAlternativeNames`: `List`\[`str`\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateLoadBalancerTlsCertificateResultResponseTypeDef
+## CreateLoadBalancerTlsCertificateResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateLoadBalancerTlsCertificateResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateLoadBalancerTlsCertificateResultTypeDef
 ```
 
 Required fields:
@@ -1558,10 +1558,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRelationalDatabaseFromSnapshotRequestTypeDef
+## CreateRelationalDatabaseFromSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseFromSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseFromSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1579,10 +1579,10 @@ Optional fields:
 - `useLatestRestorableTime`: `bool`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateRelationalDatabaseFromSnapshotResultResponseTypeDef
+## CreateRelationalDatabaseFromSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseFromSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseFromSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -1591,10 +1591,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRelationalDatabaseRequestTypeDef
+## CreateRelationalDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1614,10 +1614,10 @@ Optional fields:
 - `publiclyAccessible`: `bool`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateRelationalDatabaseResultResponseTypeDef
+## CreateRelationalDatabaseResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseResultTypeDef
 ```
 
 Required fields:
@@ -1626,10 +1626,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRelationalDatabaseSnapshotRequestTypeDef
+## CreateRelationalDatabaseSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1641,10 +1641,10 @@ Optional fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateRelationalDatabaseSnapshotResultResponseTypeDef
+## CreateRelationalDatabaseSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import CreateRelationalDatabaseSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -1653,20 +1653,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAlarmRequestTypeDef
+## DeleteAlarmRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteAlarmRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteAlarmRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `alarmName`: `str`
 
-## DeleteAlarmResultResponseTypeDef
+## DeleteAlarmResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteAlarmResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteAlarmResultTypeDef
 ```
 
 Required fields:
@@ -1675,10 +1675,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAutoSnapshotRequestTypeDef
+## DeleteAutoSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteAutoSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteAutoSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1686,10 +1686,10 @@ Required fields:
 - `resourceName`: `str`
 - `date`: `str`
 
-## DeleteAutoSnapshotResultResponseTypeDef
+## DeleteAutoSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteAutoSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteAutoSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -1698,20 +1698,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteCertificateRequestTypeDef
+## DeleteCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteCertificateRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteCertificateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `certificateName`: `str`
 
-## DeleteCertificateResultResponseTypeDef
+## DeleteCertificateResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteCertificateResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteCertificateResultTypeDef
 ```
 
 Required fields:
@@ -1720,20 +1720,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteContactMethodRequestTypeDef
+## DeleteContactMethodRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteContactMethodRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteContactMethodRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `protocol`: [ContactProtocolType](./literals.md#contactprotocoltype)
 
-## DeleteContactMethodResultResponseTypeDef
+## DeleteContactMethodResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteContactMethodResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteContactMethodResultTypeDef
 ```
 
 Required fields:
@@ -1742,10 +1742,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteContainerImageRequestTypeDef
+## DeleteContainerImageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteContainerImageRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteContainerImageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1753,20 +1753,20 @@ Required fields:
 - `serviceName`: `str`
 - `image`: `str`
 
-## DeleteContainerServiceRequestTypeDef
+## DeleteContainerServiceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteContainerServiceRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteContainerServiceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `serviceName`: `str`
 
-## DeleteDiskRequestTypeDef
+## DeleteDiskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteDiskRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteDiskRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1777,10 +1777,10 @@ Optional fields:
 
 - `forceDeleteAddOns`: `bool`
 
-## DeleteDiskResultResponseTypeDef
+## DeleteDiskResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteDiskResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteDiskResultTypeDef
 ```
 
 Required fields:
@@ -1789,20 +1789,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDiskSnapshotRequestTypeDef
+## DeleteDiskSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteDiskSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteDiskSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `diskSnapshotName`: `str`
 
-## DeleteDiskSnapshotResultResponseTypeDef
+## DeleteDiskSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteDiskSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteDiskSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -1811,20 +1811,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDistributionRequestTypeDef
+## DeleteDistributionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteDistributionRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteDistributionRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `distributionName`: `str`
 
-## DeleteDistributionResultResponseTypeDef
+## DeleteDistributionResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteDistributionResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteDistributionResultTypeDef
 ```
 
 Required fields:
@@ -1833,10 +1833,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDomainEntryRequestTypeDef
+## DeleteDomainEntryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteDomainEntryRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteDomainEntryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1844,10 +1844,10 @@ Required fields:
 - `domainName`: `str`
 - `domainEntry`: [DomainEntryTypeDef](./type_defs.md#domainentrytypedef)
 
-## DeleteDomainEntryResultResponseTypeDef
+## DeleteDomainEntryResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteDomainEntryResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteDomainEntryResultTypeDef
 ```
 
 Required fields:
@@ -1856,20 +1856,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDomainRequestTypeDef
+## DeleteDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteDomainRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteDomainRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `domainName`: `str`
 
-## DeleteDomainResultResponseTypeDef
+## DeleteDomainResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteDomainResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteDomainResultTypeDef
 ```
 
 Required fields:
@@ -1878,10 +1878,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteInstanceRequestTypeDef
+## DeleteInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteInstanceRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1892,10 +1892,10 @@ Optional fields:
 
 - `forceDeleteAddOns`: `bool`
 
-## DeleteInstanceResultResponseTypeDef
+## DeleteInstanceResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteInstanceResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteInstanceResultTypeDef
 ```
 
 Required fields:
@@ -1904,20 +1904,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteInstanceSnapshotRequestTypeDef
+## DeleteInstanceSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteInstanceSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteInstanceSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `instanceSnapshotName`: `str`
 
-## DeleteInstanceSnapshotResultResponseTypeDef
+## DeleteInstanceSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteInstanceSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteInstanceSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -1926,20 +1926,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteKeyPairRequestTypeDef
+## DeleteKeyPairRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteKeyPairRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteKeyPairRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `keyPairName`: `str`
 
-## DeleteKeyPairResultResponseTypeDef
+## DeleteKeyPairResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteKeyPairResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteKeyPairResultTypeDef
 ```
 
 Required fields:
@@ -1948,20 +1948,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteKnownHostKeysRequestTypeDef
+## DeleteKnownHostKeysRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteKnownHostKeysRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteKnownHostKeysRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `instanceName`: `str`
 
-## DeleteKnownHostKeysResultResponseTypeDef
+## DeleteKnownHostKeysResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteKnownHostKeysResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteKnownHostKeysResultTypeDef
 ```
 
 Required fields:
@@ -1970,20 +1970,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteLoadBalancerRequestTypeDef
+## DeleteLoadBalancerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteLoadBalancerRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteLoadBalancerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `loadBalancerName`: `str`
 
-## DeleteLoadBalancerResultResponseTypeDef
+## DeleteLoadBalancerResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteLoadBalancerResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteLoadBalancerResultTypeDef
 ```
 
 Required fields:
@@ -1992,10 +1992,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteLoadBalancerTlsCertificateRequestTypeDef
+## DeleteLoadBalancerTlsCertificateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteLoadBalancerTlsCertificateRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteLoadBalancerTlsCertificateRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2007,10 +2007,10 @@ Optional fields:
 
 - `force`: `bool`
 
-## DeleteLoadBalancerTlsCertificateResultResponseTypeDef
+## DeleteLoadBalancerTlsCertificateResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteLoadBalancerTlsCertificateResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteLoadBalancerTlsCertificateResultTypeDef
 ```
 
 Required fields:
@@ -2019,10 +2019,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRelationalDatabaseRequestTypeDef
+## DeleteRelationalDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteRelationalDatabaseRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteRelationalDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2034,10 +2034,10 @@ Optional fields:
 - `skipFinalSnapshot`: `bool`
 - `finalRelationalDatabaseSnapshotName`: `str`
 
-## DeleteRelationalDatabaseResultResponseTypeDef
+## DeleteRelationalDatabaseResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteRelationalDatabaseResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteRelationalDatabaseResultTypeDef
 ```
 
 Required fields:
@@ -2046,20 +2046,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRelationalDatabaseSnapshotRequestTypeDef
+## DeleteRelationalDatabaseSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteRelationalDatabaseSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteRelationalDatabaseSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `relationalDatabaseSnapshotName`: `str`
 
-## DeleteRelationalDatabaseSnapshotResultResponseTypeDef
+## DeleteRelationalDatabaseSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DeleteRelationalDatabaseSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DeleteRelationalDatabaseSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -2079,20 +2079,20 @@ Optional fields:
 - `id`: `str`
 - `service`: `str`
 
-## DetachCertificateFromDistributionRequestTypeDef
+## DetachCertificateFromDistributionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DetachCertificateFromDistributionRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DetachCertificateFromDistributionRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `distributionName`: `str`
 
-## DetachCertificateFromDistributionResultResponseTypeDef
+## DetachCertificateFromDistributionResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DetachCertificateFromDistributionResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DetachCertificateFromDistributionResultTypeDef
 ```
 
 Required fields:
@@ -2101,20 +2101,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetachDiskRequestTypeDef
+## DetachDiskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DetachDiskRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DetachDiskRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `diskName`: `str`
 
-## DetachDiskResultResponseTypeDef
+## DetachDiskResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DetachDiskResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DetachDiskResultTypeDef
 ```
 
 Required fields:
@@ -2123,10 +2123,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetachInstancesFromLoadBalancerRequestTypeDef
+## DetachInstancesFromLoadBalancerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DetachInstancesFromLoadBalancerRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DetachInstancesFromLoadBalancerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2134,10 +2134,10 @@ Required fields:
 - `loadBalancerName`: `str`
 - `instanceNames`: `List`\[`str`\]
 
-## DetachInstancesFromLoadBalancerResultResponseTypeDef
+## DetachInstancesFromLoadBalancerResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DetachInstancesFromLoadBalancerResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DetachInstancesFromLoadBalancerResultTypeDef
 ```
 
 Required fields:
@@ -2146,20 +2146,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DetachStaticIpRequestTypeDef
+## DetachStaticIpRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DetachStaticIpRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DetachStaticIpRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `staticIpName`: `str`
 
-## DetachStaticIpResultResponseTypeDef
+## DetachStaticIpResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DetachStaticIpResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DetachStaticIpResultTypeDef
 ```
 
 Required fields:
@@ -2168,10 +2168,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisableAddOnRequestTypeDef
+## DisableAddOnRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DisableAddOnRequestTypeDef
+from mypy_boto3_lightsail.type_defs import DisableAddOnRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2180,10 +2180,10 @@ Required fields:
   [AddOnTypeType](./literals.md#addontypetype))
 - `resourceName`: `str`
 
-## DisableAddOnResultResponseTypeDef
+## DisableAddOnResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DisableAddOnResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DisableAddOnResultTypeDef
 ```
 
 Required fields:
@@ -2335,10 +2335,10 @@ Optional fields:
 - `resourceRecord`:
   [ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)
 
-## DownloadDefaultKeyPairResultResponseTypeDef
+## DownloadDefaultKeyPairResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import DownloadDefaultKeyPairResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import DownloadDefaultKeyPairResultTypeDef
 ```
 
 Required fields:
@@ -2348,10 +2348,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EnableAddOnRequestTypeDef
+## EnableAddOnRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import EnableAddOnRequestTypeDef
+from mypy_boto3_lightsail.type_defs import EnableAddOnRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2359,10 +2359,10 @@ Required fields:
 - `resourceName`: `str`
 - `addOnRequest`: [AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)
 
-## EnableAddOnResultResponseTypeDef
+## EnableAddOnResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import EnableAddOnResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import EnableAddOnResultTypeDef
 ```
 
 Required fields:
@@ -2426,20 +2426,20 @@ Optional fields:
 - `destinationInfo`:
   [DestinationInfoTypeDef](./type_defs.md#destinationinfotypedef)
 
-## ExportSnapshotRequestTypeDef
+## ExportSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import ExportSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import ExportSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `sourceSnapshotName`: `str`
 
-## ExportSnapshotResultResponseTypeDef
+## ExportSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import ExportSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import ExportSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -2448,20 +2448,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetActiveNamesRequestTypeDef
+## GetActiveNamesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetActiveNamesRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetActiveNamesRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetActiveNamesResultResponseTypeDef
+## GetActiveNamesResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetActiveNamesResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetActiveNamesResultTypeDef
 ```
 
 Required fields:
@@ -2471,10 +2471,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAlarmsRequestTypeDef
+## GetAlarmsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetAlarmsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetAlarmsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2483,10 +2483,10 @@ Optional fields:
 - `pageToken`: `str`
 - `monitoredResourceName`: `str`
 
-## GetAlarmsResultResponseTypeDef
+## GetAlarmsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetAlarmsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetAlarmsResultTypeDef
 ```
 
 Required fields:
@@ -2496,20 +2496,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetAutoSnapshotsRequestTypeDef
+## GetAutoSnapshotsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetAutoSnapshotsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetAutoSnapshotsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceName`: `str`
 
-## GetAutoSnapshotsResultResponseTypeDef
+## GetAutoSnapshotsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetAutoSnapshotsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetAutoSnapshotsResultTypeDef
 ```
 
 Required fields:
@@ -2521,10 +2521,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBlueprintsRequestTypeDef
+## GetBlueprintsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetBlueprintsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetBlueprintsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2532,10 +2532,10 @@ Optional fields:
 - `includeInactive`: `bool`
 - `pageToken`: `str`
 
-## GetBlueprintsResultResponseTypeDef
+## GetBlueprintsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetBlueprintsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetBlueprintsResultTypeDef
 ```
 
 Required fields:
@@ -2545,10 +2545,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetBundlesRequestTypeDef
+## GetBundlesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetBundlesRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetBundlesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2556,10 +2556,10 @@ Optional fields:
 - `includeInactive`: `bool`
 - `pageToken`: `str`
 
-## GetBundlesResultResponseTypeDef
+## GetBundlesResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetBundlesResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetBundlesResultTypeDef
 ```
 
 Required fields:
@@ -2569,10 +2569,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCertificatesRequestTypeDef
+## GetCertificatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetCertificatesRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetCertificatesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2582,10 +2582,10 @@ Optional fields:
 - `includeCertificateDetails`: `bool`
 - `certificateName`: `str`
 
-## GetCertificatesResultResponseTypeDef
+## GetCertificatesResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetCertificatesResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetCertificatesResultTypeDef
 ```
 
 Required fields:
@@ -2595,20 +2595,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCloudFormationStackRecordsRequestTypeDef
+## GetCloudFormationStackRecordsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetCloudFormationStackRecordsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetCloudFormationStackRecordsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetCloudFormationStackRecordsResultResponseTypeDef
+## GetCloudFormationStackRecordsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetCloudFormationStackRecordsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetCloudFormationStackRecordsResultTypeDef
 ```
 
 Required fields:
@@ -2619,10 +2619,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContactMethodsRequestTypeDef
+## GetContactMethodsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContactMethodsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetContactMethodsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2630,10 +2630,10 @@ Optional fields:
 - `protocols`:
   `List`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
 
-## GetContactMethodsResultResponseTypeDef
+## GetContactMethodsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContactMethodsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetContactMethodsResultTypeDef
 ```
 
 Required fields:
@@ -2643,10 +2643,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContainerAPIMetadataResultResponseTypeDef
+## GetContainerAPIMetadataResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContainerAPIMetadataResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetContainerAPIMetadataResultTypeDef
 ```
 
 Required fields:
@@ -2655,20 +2655,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContainerImagesRequestTypeDef
+## GetContainerImagesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContainerImagesRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetContainerImagesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `serviceName`: `str`
 
-## GetContainerImagesResultResponseTypeDef
+## GetContainerImagesResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContainerImagesResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetContainerImagesResultTypeDef
 ```
 
 Required fields:
@@ -2678,10 +2678,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContainerLogRequestTypeDef
+## GetContainerLogRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContainerLogRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetContainerLogRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2696,10 +2696,10 @@ Optional fields:
 - `filterPattern`: `str`
 - `pageToken`: `str`
 
-## GetContainerLogResultResponseTypeDef
+## GetContainerLogResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContainerLogResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetContainerLogResultTypeDef
 ```
 
 Required fields:
@@ -2710,20 +2710,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContainerServiceDeploymentsRequestTypeDef
+## GetContainerServiceDeploymentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContainerServiceDeploymentsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetContainerServiceDeploymentsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `serviceName`: `str`
 
-## GetContainerServiceDeploymentsResultResponseTypeDef
+## GetContainerServiceDeploymentsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContainerServiceDeploymentsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetContainerServiceDeploymentsResultTypeDef
 ```
 
 Required fields:
@@ -2733,10 +2733,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContainerServiceMetricDataRequestTypeDef
+## GetContainerServiceMetricDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContainerServiceMetricDataRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetContainerServiceMetricDataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2750,10 +2750,10 @@ Required fields:
 - `statistics`:
   `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
 
-## GetContainerServiceMetricDataResultResponseTypeDef
+## GetContainerServiceMetricDataResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContainerServiceMetricDataResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetContainerServiceMetricDataResultTypeDef
 ```
 
 Required fields:
@@ -2765,10 +2765,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContainerServicePowersResultResponseTypeDef
+## GetContainerServicePowersResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContainerServicePowersResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetContainerServicePowersResultTypeDef
 ```
 
 Required fields:
@@ -2778,30 +2778,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetContainerServicesRequestTypeDef
+## GetContainerServicesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetContainerServicesRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetContainerServicesRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `serviceName`: `str`
 
-## GetDiskRequestTypeDef
+## GetDiskRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDiskRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetDiskRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `diskName`: `str`
 
-## GetDiskResultResponseTypeDef
+## GetDiskResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDiskResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetDiskResultTypeDef
 ```
 
 Required fields:
@@ -2810,20 +2810,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDiskSnapshotRequestTypeDef
+## GetDiskSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDiskSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetDiskSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `diskSnapshotName`: `str`
 
-## GetDiskSnapshotResultResponseTypeDef
+## GetDiskSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDiskSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetDiskSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -2832,20 +2832,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDiskSnapshotsRequestTypeDef
+## GetDiskSnapshotsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDiskSnapshotsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetDiskSnapshotsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetDiskSnapshotsResultResponseTypeDef
+## GetDiskSnapshotsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDiskSnapshotsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetDiskSnapshotsResultTypeDef
 ```
 
 Required fields:
@@ -2856,20 +2856,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDisksRequestTypeDef
+## GetDisksRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDisksRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetDisksRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetDisksResultResponseTypeDef
+## GetDisksResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDisksResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetDisksResultTypeDef
 ```
 
 Required fields:
@@ -2879,10 +2879,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDistributionBundlesResultResponseTypeDef
+## GetDistributionBundlesResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDistributionBundlesResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetDistributionBundlesResultTypeDef
 ```
 
 Required fields:
@@ -2892,20 +2892,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDistributionLatestCacheResetRequestTypeDef
+## GetDistributionLatestCacheResetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDistributionLatestCacheResetRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetDistributionLatestCacheResetRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `distributionName`: `str`
 
-## GetDistributionLatestCacheResetResultResponseTypeDef
+## GetDistributionLatestCacheResetResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDistributionLatestCacheResetResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetDistributionLatestCacheResetResultTypeDef
 ```
 
 Required fields:
@@ -2915,10 +2915,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDistributionMetricDataRequestTypeDef
+## GetDistributionMetricDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDistributionMetricDataRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetDistributionMetricDataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -2933,10 +2933,10 @@ Required fields:
 - `statistics`:
   `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
 
-## GetDistributionMetricDataResultResponseTypeDef
+## GetDistributionMetricDataResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDistributionMetricDataResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetDistributionMetricDataResultTypeDef
 ```
 
 Required fields:
@@ -2948,10 +2948,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDistributionsRequestTypeDef
+## GetDistributionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDistributionsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetDistributionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -2959,10 +2959,10 @@ Optional fields:
 - `distributionName`: `str`
 - `pageToken`: `str`
 
-## GetDistributionsResultResponseTypeDef
+## GetDistributionsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDistributionsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetDistributionsResultTypeDef
 ```
 
 Required fields:
@@ -2973,20 +2973,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDomainRequestTypeDef
+## GetDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDomainRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetDomainRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `domainName`: `str`
 
-## GetDomainResultResponseTypeDef
+## GetDomainResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDomainResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetDomainResultTypeDef
 ```
 
 Required fields:
@@ -2995,20 +2995,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDomainsRequestTypeDef
+## GetDomainsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDomainsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetDomainsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetDomainsResultResponseTypeDef
+## GetDomainsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetDomainsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetDomainsResultTypeDef
 ```
 
 Required fields:
@@ -3018,20 +3018,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetExportSnapshotRecordsRequestTypeDef
+## GetExportSnapshotRecordsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetExportSnapshotRecordsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetExportSnapshotRecordsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetExportSnapshotRecordsResultResponseTypeDef
+## GetExportSnapshotRecordsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetExportSnapshotRecordsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetExportSnapshotRecordsResultTypeDef
 ```
 
 Required fields:
@@ -3042,10 +3042,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInstanceAccessDetailsRequestTypeDef
+## GetInstanceAccessDetailsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstanceAccessDetailsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstanceAccessDetailsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3057,10 +3057,10 @@ Optional fields:
 - `protocol`:
   [InstanceAccessProtocolType](./literals.md#instanceaccessprotocoltype)
 
-## GetInstanceAccessDetailsResultResponseTypeDef
+## GetInstanceAccessDetailsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstanceAccessDetailsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstanceAccessDetailsResultTypeDef
 ```
 
 Required fields:
@@ -3070,10 +3070,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInstanceMetricDataRequestTypeDef
+## GetInstanceMetricDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstanceMetricDataRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstanceMetricDataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3087,10 +3087,10 @@ Required fields:
 - `statistics`:
   `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
 
-## GetInstanceMetricDataResultResponseTypeDef
+## GetInstanceMetricDataResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstanceMetricDataResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstanceMetricDataResultTypeDef
 ```
 
 Required fields:
@@ -3101,20 +3101,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInstancePortStatesRequestTypeDef
+## GetInstancePortStatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstancePortStatesRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstancePortStatesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `instanceName`: `str`
 
-## GetInstancePortStatesResultResponseTypeDef
+## GetInstancePortStatesResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstancePortStatesResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstancePortStatesResultTypeDef
 ```
 
 Required fields:
@@ -3124,20 +3124,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInstanceRequestTypeDef
+## GetInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstanceRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstanceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `instanceName`: `str`
 
-## GetInstanceResultResponseTypeDef
+## GetInstanceResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstanceResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstanceResultTypeDef
 ```
 
 Required fields:
@@ -3146,20 +3146,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInstanceSnapshotRequestTypeDef
+## GetInstanceSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstanceSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstanceSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `instanceSnapshotName`: `str`
 
-## GetInstanceSnapshotResultResponseTypeDef
+## GetInstanceSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstanceSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstanceSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -3169,20 +3169,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInstanceSnapshotsRequestTypeDef
+## GetInstanceSnapshotsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstanceSnapshotsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstanceSnapshotsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetInstanceSnapshotsResultResponseTypeDef
+## GetInstanceSnapshotsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstanceSnapshotsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstanceSnapshotsResultTypeDef
 ```
 
 Required fields:
@@ -3193,20 +3193,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInstanceStateRequestTypeDef
+## GetInstanceStateRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstanceStateRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstanceStateRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `instanceName`: `str`
 
-## GetInstanceStateResultResponseTypeDef
+## GetInstanceStateResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstanceStateResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstanceStateResultTypeDef
 ```
 
 Required fields:
@@ -3215,20 +3215,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetInstancesRequestTypeDef
+## GetInstancesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstancesRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstancesRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetInstancesResultResponseTypeDef
+## GetInstancesResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetInstancesResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetInstancesResultTypeDef
 ```
 
 Required fields:
@@ -3238,20 +3238,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetKeyPairRequestTypeDef
+## GetKeyPairRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetKeyPairRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetKeyPairRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `keyPairName`: `str`
 
-## GetKeyPairResultResponseTypeDef
+## GetKeyPairResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetKeyPairResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetKeyPairResultTypeDef
 ```
 
 Required fields:
@@ -3260,20 +3260,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetKeyPairsRequestTypeDef
+## GetKeyPairsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetKeyPairsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetKeyPairsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetKeyPairsResultResponseTypeDef
+## GetKeyPairsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetKeyPairsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetKeyPairsResultTypeDef
 ```
 
 Required fields:
@@ -3283,10 +3283,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLoadBalancerMetricDataRequestTypeDef
+## GetLoadBalancerMetricDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetLoadBalancerMetricDataRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetLoadBalancerMetricDataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3301,10 +3301,10 @@ Required fields:
 - `statistics`:
   `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
 
-## GetLoadBalancerMetricDataResultResponseTypeDef
+## GetLoadBalancerMetricDataResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetLoadBalancerMetricDataResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetLoadBalancerMetricDataResultTypeDef
 ```
 
 Required fields:
@@ -3316,20 +3316,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLoadBalancerRequestTypeDef
+## GetLoadBalancerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetLoadBalancerRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetLoadBalancerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `loadBalancerName`: `str`
 
-## GetLoadBalancerResultResponseTypeDef
+## GetLoadBalancerResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetLoadBalancerResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetLoadBalancerResultTypeDef
 ```
 
 Required fields:
@@ -3338,20 +3338,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLoadBalancerTlsCertificatesRequestTypeDef
+## GetLoadBalancerTlsCertificatesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetLoadBalancerTlsCertificatesRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetLoadBalancerTlsCertificatesRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `loadBalancerName`: `str`
 
-## GetLoadBalancerTlsCertificatesResultResponseTypeDef
+## GetLoadBalancerTlsCertificatesResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetLoadBalancerTlsCertificatesResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetLoadBalancerTlsCertificatesResultTypeDef
 ```
 
 Required fields:
@@ -3361,20 +3361,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLoadBalancersRequestTypeDef
+## GetLoadBalancersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetLoadBalancersRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetLoadBalancersRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetLoadBalancersResultResponseTypeDef
+## GetLoadBalancersResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetLoadBalancersResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetLoadBalancersResultTypeDef
 ```
 
 Required fields:
@@ -3385,20 +3385,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOperationRequestTypeDef
+## GetOperationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetOperationRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetOperationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `operationId`: `str`
 
-## GetOperationResultResponseTypeDef
+## GetOperationResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetOperationResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetOperationResultTypeDef
 ```
 
 Required fields:
@@ -3407,10 +3407,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOperationsForResourceRequestTypeDef
+## GetOperationsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetOperationsForResourceRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetOperationsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3421,10 +3421,10 @@ Optional fields:
 
 - `pageToken`: `str`
 
-## GetOperationsForResourceResultResponseTypeDef
+## GetOperationsForResourceResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetOperationsForResourceResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetOperationsForResourceResultTypeDef
 ```
 
 Required fields:
@@ -3435,20 +3435,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetOperationsRequestTypeDef
+## GetOperationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetOperationsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetOperationsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetOperationsResultResponseTypeDef
+## GetOperationsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetOperationsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetOperationsResultTypeDef
 ```
 
 Required fields:
@@ -3458,10 +3458,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRegionsRequestTypeDef
+## GetRegionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRegionsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRegionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -3469,10 +3469,10 @@ Optional fields:
 - `includeAvailabilityZones`: `bool`
 - `includeRelationalDatabaseAvailabilityZones`: `bool`
 
-## GetRegionsResultResponseTypeDef
+## GetRegionsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRegionsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRegionsResultTypeDef
 ```
 
 Required fields:
@@ -3481,20 +3481,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRelationalDatabaseBlueprintsRequestTypeDef
+## GetRelationalDatabaseBlueprintsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseBlueprintsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseBlueprintsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetRelationalDatabaseBlueprintsResultResponseTypeDef
+## GetRelationalDatabaseBlueprintsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseBlueprintsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseBlueprintsResultTypeDef
 ```
 
 Required fields:
@@ -3505,20 +3505,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRelationalDatabaseBundlesRequestTypeDef
+## GetRelationalDatabaseBundlesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseBundlesRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseBundlesRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetRelationalDatabaseBundlesResultResponseTypeDef
+## GetRelationalDatabaseBundlesResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseBundlesResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseBundlesResultTypeDef
 ```
 
 Required fields:
@@ -3529,10 +3529,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRelationalDatabaseEventsRequestTypeDef
+## GetRelationalDatabaseEventsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseEventsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseEventsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3544,10 +3544,10 @@ Optional fields:
 - `durationInMinutes`: `int`
 - `pageToken`: `str`
 
-## GetRelationalDatabaseEventsResultResponseTypeDef
+## GetRelationalDatabaseEventsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseEventsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseEventsResultTypeDef
 ```
 
 Required fields:
@@ -3558,10 +3558,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRelationalDatabaseLogEventsRequestTypeDef
+## GetRelationalDatabaseLogEventsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseLogEventsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseLogEventsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3576,10 +3576,10 @@ Optional fields:
 - `startFromHead`: `bool`
 - `pageToken`: `str`
 
-## GetRelationalDatabaseLogEventsResultResponseTypeDef
+## GetRelationalDatabaseLogEventsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseLogEventsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseLogEventsResultTypeDef
 ```
 
 Required fields:
@@ -3591,20 +3591,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRelationalDatabaseLogStreamsRequestTypeDef
+## GetRelationalDatabaseLogStreamsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseLogStreamsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseLogStreamsRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `relationalDatabaseName`: `str`
 
-## GetRelationalDatabaseLogStreamsResultResponseTypeDef
+## GetRelationalDatabaseLogStreamsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseLogStreamsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseLogStreamsResultTypeDef
 ```
 
 Required fields:
@@ -3613,10 +3613,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRelationalDatabaseMasterUserPasswordRequestTypeDef
+## GetRelationalDatabaseMasterUserPasswordRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseMasterUserPasswordRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseMasterUserPasswordRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3628,10 +3628,10 @@ Optional fields:
 - `passwordVersion`:
   [RelationalDatabasePasswordVersionType](./literals.md#relationaldatabasepasswordversiontype)
 
-## GetRelationalDatabaseMasterUserPasswordResultResponseTypeDef
+## GetRelationalDatabaseMasterUserPasswordResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseMasterUserPasswordResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseMasterUserPasswordResultTypeDef
 ```
 
 Required fields:
@@ -3641,10 +3641,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRelationalDatabaseMetricDataRequestTypeDef
+## GetRelationalDatabaseMetricDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseMetricDataRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseMetricDataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3659,10 +3659,10 @@ Required fields:
 - `statistics`:
   `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
 
-## GetRelationalDatabaseMetricDataResultResponseTypeDef
+## GetRelationalDatabaseMetricDataResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseMetricDataResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseMetricDataResultTypeDef
 ```
 
 Required fields:
@@ -3674,10 +3674,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRelationalDatabaseParametersRequestTypeDef
+## GetRelationalDatabaseParametersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseParametersRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseParametersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3688,10 +3688,10 @@ Optional fields:
 
 - `pageToken`: `str`
 
-## GetRelationalDatabaseParametersResultResponseTypeDef
+## GetRelationalDatabaseParametersResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseParametersResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseParametersResultTypeDef
 ```
 
 Required fields:
@@ -3702,20 +3702,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRelationalDatabaseRequestTypeDef
+## GetRelationalDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `relationalDatabaseName`: `str`
 
-## GetRelationalDatabaseResultResponseTypeDef
+## GetRelationalDatabaseResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseResultTypeDef
 ```
 
 Required fields:
@@ -3725,20 +3725,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRelationalDatabaseSnapshotRequestTypeDef
+## GetRelationalDatabaseSnapshotRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseSnapshotRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseSnapshotRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `relationalDatabaseSnapshotName`: `str`
 
-## GetRelationalDatabaseSnapshotResultResponseTypeDef
+## GetRelationalDatabaseSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseSnapshotResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -3748,20 +3748,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRelationalDatabaseSnapshotsRequestTypeDef
+## GetRelationalDatabaseSnapshotsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseSnapshotsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseSnapshotsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetRelationalDatabaseSnapshotsResultResponseTypeDef
+## GetRelationalDatabaseSnapshotsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseSnapshotsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabaseSnapshotsResultTypeDef
 ```
 
 Required fields:
@@ -3772,20 +3772,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRelationalDatabasesRequestTypeDef
+## GetRelationalDatabasesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabasesRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabasesRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetRelationalDatabasesResultResponseTypeDef
+## GetRelationalDatabasesResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetRelationalDatabasesResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetRelationalDatabasesResultTypeDef
 ```
 
 Required fields:
@@ -3796,20 +3796,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStaticIpRequestTypeDef
+## GetStaticIpRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetStaticIpRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetStaticIpRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `staticIpName`: `str`
 
-## GetStaticIpResultResponseTypeDef
+## GetStaticIpResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetStaticIpResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetStaticIpResultTypeDef
 ```
 
 Required fields:
@@ -3818,20 +3818,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetStaticIpsRequestTypeDef
+## GetStaticIpsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetStaticIpsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import GetStaticIpsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `pageToken`: `str`
 
-## GetStaticIpsResultResponseTypeDef
+## GetStaticIpsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import GetStaticIpsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import GetStaticIpsResultTypeDef
 ```
 
 Required fields:
@@ -3868,10 +3868,10 @@ Optional fields:
 - `notValidBefore`: `datetime`
 - `notValidAfter`: `datetime`
 
-## ImportKeyPairRequestTypeDef
+## ImportKeyPairRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import ImportKeyPairRequestTypeDef
+from mypy_boto3_lightsail.type_defs import ImportKeyPairRequestRequestTypeDef
 ```
 
 Required fields:
@@ -3879,10 +3879,10 @@ Required fields:
 - `keyPairName`: `str`
 - `publicKeyBase64`: `str`
 
-## ImportKeyPairResultResponseTypeDef
+## ImportKeyPairResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import ImportKeyPairResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import ImportKeyPairResultTypeDef
 ```
 
 Required fields:
@@ -4096,10 +4096,10 @@ Optional fields:
 - `username`: `str`
 - `sshKeyName`: `str`
 
-## IsVpcPeeredResultResponseTypeDef
+## IsVpcPeeredResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import IsVpcPeeredResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import IsVpcPeeredResultTypeDef
 ```
 
 Required fields:
@@ -4327,10 +4327,10 @@ Optional fields:
 
 - `gbPerMonthAllocated`: `int`
 
-## OpenInstancePublicPortsRequestTypeDef
+## OpenInstancePublicPortsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import OpenInstancePublicPortsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import OpenInstancePublicPortsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4338,10 +4338,10 @@ Required fields:
 - `portInfo`: [PortInfoTypeDef](./type_defs.md#portinfotypedef)
 - `instanceName`: `str`
 
-## OpenInstancePublicPortsResultResponseTypeDef
+## OpenInstancePublicPortsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import OpenInstancePublicPortsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import OpenInstancePublicPortsResultTypeDef
 ```
 
 Required fields:
@@ -4408,10 +4408,10 @@ Optional fields:
 - `ciphertext`: `str`
 - `keyPairName`: `str`
 
-## PeerVpcResultResponseTypeDef
+## PeerVpcResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import PeerVpcResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import PeerVpcResultTypeDef
 ```
 
 Required fields:
@@ -4459,10 +4459,10 @@ Optional fields:
 - `ipv6Cidrs`: `List`\[`str`\]
 - `cidrListAliases`: `List`\[`str`\]
 
-## PutAlarmRequestTypeDef
+## PutAlarmRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import PutAlarmRequestTypeDef
+from mypy_boto3_lightsail.type_defs import PutAlarmRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4486,10 +4486,10 @@ Optional fields:
   `List`\[[AlarmStateType](./literals.md#alarmstatetype)\]
 - `notificationEnabled`: `bool`
 
-## PutAlarmResultResponseTypeDef
+## PutAlarmResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import PutAlarmResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import PutAlarmResultTypeDef
 ```
 
 Required fields:
@@ -4498,10 +4498,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutInstancePublicPortsRequestTypeDef
+## PutInstancePublicPortsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import PutInstancePublicPortsRequestTypeDef
+from mypy_boto3_lightsail.type_defs import PutInstancePublicPortsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4509,10 +4509,10 @@ Required fields:
 - `portInfos`: `List`\[[PortInfoTypeDef](./type_defs.md#portinfotypedef)\]
 - `instanceName`: `str`
 
-## PutInstancePublicPortsResultResponseTypeDef
+## PutInstancePublicPortsResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import PutInstancePublicPortsResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import PutInstancePublicPortsResultTypeDef
 ```
 
 Required fields:
@@ -4532,20 +4532,20 @@ Optional fields:
 - `option`: `bool`
 - `queryStringsAllowList`: `List`\[`str`\]
 
-## RebootInstanceRequestTypeDef
+## RebootInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import RebootInstanceRequestTypeDef
+from mypy_boto3_lightsail.type_defs import RebootInstanceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `instanceName`: `str`
 
-## RebootInstanceResultResponseTypeDef
+## RebootInstanceResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import RebootInstanceResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import RebootInstanceResultTypeDef
 ```
 
 Required fields:
@@ -4554,20 +4554,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RebootRelationalDatabaseRequestTypeDef
+## RebootRelationalDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import RebootRelationalDatabaseRequestTypeDef
+from mypy_boto3_lightsail.type_defs import RebootRelationalDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `relationalDatabaseName`: `str`
 
-## RebootRelationalDatabaseResultResponseTypeDef
+## RebootRelationalDatabaseResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import RebootRelationalDatabaseResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import RebootRelationalDatabaseResultTypeDef
 ```
 
 Required fields:
@@ -4593,10 +4593,10 @@ Optional fields:
 - `relationalDatabaseAvailabilityZones`:
   `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
 
-## RegisterContainerImageRequestTypeDef
+## RegisterContainerImageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import RegisterContainerImageRequestTypeDef
+from mypy_boto3_lightsail.type_defs import RegisterContainerImageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4605,10 +4605,10 @@ Required fields:
 - `label`: `str`
 - `digest`: `str`
 
-## RegisterContainerImageResultResponseTypeDef
+## RegisterContainerImageResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import RegisterContainerImageResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import RegisterContainerImageResultTypeDef
 ```
 
 Required fields:
@@ -4768,20 +4768,20 @@ Optional fields:
   `List`\[[PendingMaintenanceActionTypeDef](./type_defs.md#pendingmaintenanceactiontypedef)\]
 - `caCertificateIdentifier`: `str`
 
-## ReleaseStaticIpRequestTypeDef
+## ReleaseStaticIpRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import ReleaseStaticIpRequestTypeDef
+from mypy_boto3_lightsail.type_defs import ReleaseStaticIpRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `staticIpName`: `str`
 
-## ReleaseStaticIpResultResponseTypeDef
+## ReleaseStaticIpResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import ReleaseStaticIpResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import ReleaseStaticIpResultTypeDef
 ```
 
 Required fields:
@@ -4804,20 +4804,20 @@ Optional fields:
 - `renewalStatusReason`: `str`
 - `updatedAt`: `datetime`
 
-## ResetDistributionCacheRequestTypeDef
+## ResetDistributionCacheRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import ResetDistributionCacheRequestTypeDef
+from mypy_boto3_lightsail.type_defs import ResetDistributionCacheRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `distributionName`: `str`
 
-## ResetDistributionCacheResultResponseTypeDef
+## ResetDistributionCacheResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import ResetDistributionCacheResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import ResetDistributionCacheResultTypeDef
 ```
 
 Required fields:
@@ -4865,10 +4865,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## SendContactMethodVerificationRequestTypeDef
+## SendContactMethodVerificationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import SendContactMethodVerificationRequestTypeDef
+from mypy_boto3_lightsail.type_defs import SendContactMethodVerificationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4876,10 +4876,10 @@ Required fields:
 - `protocol`: `Literal['Email']` (see
   [ContactMethodVerificationProtocolType](./literals.md#contactmethodverificationprotocoltype))
 
-## SendContactMethodVerificationResultResponseTypeDef
+## SendContactMethodVerificationResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import SendContactMethodVerificationResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import SendContactMethodVerificationResultTypeDef
 ```
 
 Required fields:
@@ -4888,10 +4888,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SetIpAddressTypeRequestTypeDef
+## SetIpAddressTypeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import SetIpAddressTypeRequestTypeDef
+from mypy_boto3_lightsail.type_defs import SetIpAddressTypeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4900,10 +4900,10 @@ Required fields:
 - `resourceName`: `str`
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
-## SetIpAddressTypeResultResponseTypeDef
+## SetIpAddressTypeResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import SetIpAddressTypeResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import SetIpAddressTypeResultTypeDef
 ```
 
 Required fields:
@@ -4912,20 +4912,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartInstanceRequestTypeDef
+## StartInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import StartInstanceRequestTypeDef
+from mypy_boto3_lightsail.type_defs import StartInstanceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `instanceName`: `str`
 
-## StartInstanceResultResponseTypeDef
+## StartInstanceResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import StartInstanceResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import StartInstanceResultTypeDef
 ```
 
 Required fields:
@@ -4934,20 +4934,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartRelationalDatabaseRequestTypeDef
+## StartRelationalDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import StartRelationalDatabaseRequestTypeDef
+from mypy_boto3_lightsail.type_defs import StartRelationalDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `relationalDatabaseName`: `str`
 
-## StartRelationalDatabaseResultResponseTypeDef
+## StartRelationalDatabaseResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import StartRelationalDatabaseResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import StartRelationalDatabaseResultTypeDef
 ```
 
 Required fields:
@@ -4974,10 +4974,10 @@ Optional fields:
 - `attachedTo`: `str`
 - `isAttached`: `bool`
 
-## StopInstanceRequestTypeDef
+## StopInstanceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import StopInstanceRequestTypeDef
+from mypy_boto3_lightsail.type_defs import StopInstanceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -4988,10 +4988,10 @@ Optional fields:
 
 - `force`: `bool`
 
-## StopInstanceResultResponseTypeDef
+## StopInstanceResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import StopInstanceResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import StopInstanceResultTypeDef
 ```
 
 Required fields:
@@ -5000,10 +5000,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopRelationalDatabaseRequestTypeDef
+## StopRelationalDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import StopRelationalDatabaseRequestTypeDef
+from mypy_boto3_lightsail.type_defs import StopRelationalDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5014,10 +5014,10 @@ Optional fields:
 
 - `relationalDatabaseSnapshotName`: `str`
 
-## StopRelationalDatabaseResultResponseTypeDef
+## StopRelationalDatabaseResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import StopRelationalDatabaseResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import StopRelationalDatabaseResultTypeDef
 ```
 
 Required fields:
@@ -5026,10 +5026,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_lightsail.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5041,10 +5041,10 @@ Optional fields:
 
 - `resourceArn`: `str`
 
-## TagResourceResultResponseTypeDef
+## TagResourceResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import TagResourceResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import TagResourceResultTypeDef
 ```
 
 Required fields:
@@ -5064,10 +5064,10 @@ Optional fields:
 - `key`: `str`
 - `value`: `str`
 
-## TestAlarmRequestTypeDef
+## TestAlarmRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import TestAlarmRequestTypeDef
+from mypy_boto3_lightsail.type_defs import TestAlarmRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5075,10 +5075,10 @@ Required fields:
 - `alarmName`: `str`
 - `state`: [AlarmStateType](./literals.md#alarmstatetype)
 
-## TestAlarmResultResponseTypeDef
+## TestAlarmResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import TestAlarmResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import TestAlarmResultTypeDef
 ```
 
 Required fields:
@@ -5087,10 +5087,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UnpeerVpcResultResponseTypeDef
+## UnpeerVpcResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UnpeerVpcResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import UnpeerVpcResultTypeDef
 ```
 
 Required fields:
@@ -5099,10 +5099,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_lightsail.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5114,10 +5114,10 @@ Optional fields:
 
 - `resourceArn`: `str`
 
-## UntagResourceResultResponseTypeDef
+## UntagResourceResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UntagResourceResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import UntagResourceResultTypeDef
 ```
 
 Required fields:
@@ -5126,10 +5126,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateContainerServiceRequestTypeDef
+## UpdateContainerServiceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateContainerServiceRequestTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateContainerServiceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5144,10 +5144,10 @@ Optional fields:
 - `isDisabled`: `bool`
 - `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
 
-## UpdateContainerServiceResultResponseTypeDef
+## UpdateContainerServiceResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateContainerServiceResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateContainerServiceResultTypeDef
 ```
 
 Required fields:
@@ -5157,10 +5157,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDistributionBundleRequestTypeDef
+## UpdateDistributionBundleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateDistributionBundleRequestTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateDistributionBundleRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -5168,10 +5168,10 @@ Optional fields:
 - `distributionName`: `str`
 - `bundleId`: `str`
 
-## UpdateDistributionBundleResultResponseTypeDef
+## UpdateDistributionBundleResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateDistributionBundleResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateDistributionBundleResultTypeDef
 ```
 
 Required fields:
@@ -5180,10 +5180,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDistributionRequestTypeDef
+## UpdateDistributionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateDistributionRequestTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateDistributionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5201,10 +5201,10 @@ Optional fields:
   `List`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
 - `isEnabled`: `bool`
 
-## UpdateDistributionResultResponseTypeDef
+## UpdateDistributionResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateDistributionResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateDistributionResultTypeDef
 ```
 
 Required fields:
@@ -5213,10 +5213,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateDomainEntryRequestTypeDef
+## UpdateDomainEntryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateDomainEntryRequestTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateDomainEntryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5224,10 +5224,10 @@ Required fields:
 - `domainName`: `str`
 - `domainEntry`: [DomainEntryTypeDef](./type_defs.md#domainentrytypedef)
 
-## UpdateDomainEntryResultResponseTypeDef
+## UpdateDomainEntryResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateDomainEntryResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateDomainEntryResultTypeDef
 ```
 
 Required fields:
@@ -5236,10 +5236,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateLoadBalancerAttributeRequestTypeDef
+## UpdateLoadBalancerAttributeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateLoadBalancerAttributeRequestTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateLoadBalancerAttributeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5249,10 +5249,10 @@ Required fields:
   [LoadBalancerAttributeNameType](./literals.md#loadbalancerattributenametype)
 - `attributeValue`: `str`
 
-## UpdateLoadBalancerAttributeResultResponseTypeDef
+## UpdateLoadBalancerAttributeResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateLoadBalancerAttributeResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateLoadBalancerAttributeResultTypeDef
 ```
 
 Required fields:
@@ -5261,10 +5261,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRelationalDatabaseParametersRequestTypeDef
+## UpdateRelationalDatabaseParametersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateRelationalDatabaseParametersRequestTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateRelationalDatabaseParametersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5273,10 +5273,10 @@ Required fields:
 - `parameters`:
   `List`\[[RelationalDatabaseParameterTypeDef](./type_defs.md#relationaldatabaseparametertypedef)\]
 
-## UpdateRelationalDatabaseParametersResultResponseTypeDef
+## UpdateRelationalDatabaseParametersResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateRelationalDatabaseParametersResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateRelationalDatabaseParametersResultTypeDef
 ```
 
 Required fields:
@@ -5285,10 +5285,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRelationalDatabaseRequestTypeDef
+## UpdateRelationalDatabaseRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateRelationalDatabaseRequestTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateRelationalDatabaseRequestRequestTypeDef
 ```
 
 Required fields:
@@ -5307,10 +5307,10 @@ Optional fields:
 - `applyImmediately`: `bool`
 - `caCertificateIdentifier`: `str`
 
-## UpdateRelationalDatabaseResultResponseTypeDef
+## UpdateRelationalDatabaseResultTypeDef
 
 ```python
-from mypy_boto3_lightsail.type_defs import UpdateRelationalDatabaseResultResponseTypeDef
+from mypy_boto3_lightsail.type_defs import UpdateRelationalDatabaseResultTypeDef
 ```
 
 Required fields:

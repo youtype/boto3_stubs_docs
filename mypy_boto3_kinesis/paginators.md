@@ -37,7 +37,7 @@ Arguments for `DescribeStreamPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStreamPaginator.paginate` returns
-`Iterator`\[[DescribeStreamOutputResponseTypeDef](./type_defs.md#describestreamoutputresponsetypedef)\].
+`Iterator`\[[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef)\].
 
 ## ListShardsPaginator
 
@@ -65,7 +65,7 @@ Arguments for `ListShardsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListShardsPaginator.paginate` returns
-`Iterator`\[[ListShardsOutputResponseTypeDef](./type_defs.md#listshardsoutputresponsetypedef)\].
+`Iterator`\[[ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef)\].
 
 ## ListStreamConsumersPaginator
 
@@ -92,7 +92,7 @@ Arguments for `ListStreamConsumersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamConsumersPaginator.paginate` returns
-`Iterator`\[[ListStreamConsumersOutputResponseTypeDef](./type_defs.md#liststreamconsumersoutputresponsetypedef)\].
+`Iterator`\[[ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef)\].
 
 ## ListStreamsPaginator
 
@@ -116,4 +116,4 @@ Arguments for `ListStreamsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamsPaginator.paginate` returns
-`Iterator`\[[ListStreamsOutputResponseTypeDef](./type_defs.md#liststreamsoutputresponsetypedef)\].
+`Iterator`\[[ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef)\].

@@ -11,6 +11,7 @@ type annotations stubs module
   - [ECRClient](#ecrclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [batch_check_layer_availability](#batch_check_layer_availability)
     - [batch_delete_image](#batch_delete_image)
     - [batch_get_image](#batch_get_image)
@@ -114,6 +115,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ECRClient exceptions.
+
+Type annotations for `boto3.client("ecr").exceptions` method.
+
+Boto3 documentation:
+[ECR.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### batch_check_layer_availability
 
 Checks the availability of one or more image layers in a repository.
@@ -125,7 +137,7 @@ Boto3 documentation:
 [ECR.Client.batch_check_layer_availability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_check_layer_availability)
 
 Arguments mapping described in
-[BatchCheckLayerAvailabilityRequestTypeDef](./type_defs.md#batchchecklayeravailabilityrequesttypedef).
+[BatchCheckLayerAvailabilityRequestRequestTypeDef](./type_defs.md#batchchecklayeravailabilityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -134,7 +146,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[BatchCheckLayerAvailabilityResponseResponseTypeDef](./type_defs.md#batchchecklayeravailabilityresponseresponsetypedef).
+[BatchCheckLayerAvailabilityResponseTypeDef](./type_defs.md#batchchecklayeravailabilityresponsetypedef).
 
 ### batch_delete_image
 
@@ -146,7 +158,7 @@ Boto3 documentation:
 [ECR.Client.batch_delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_delete_image)
 
 Arguments mapping described in
-[BatchDeleteImageRequestTypeDef](./type_defs.md#batchdeleteimagerequesttypedef).
+[BatchDeleteImageRequestRequestTypeDef](./type_defs.md#batchdeleteimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -157,7 +169,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[BatchDeleteImageResponseResponseTypeDef](./type_defs.md#batchdeleteimageresponseresponsetypedef).
+[BatchDeleteImageResponseTypeDef](./type_defs.md#batchdeleteimageresponsetypedef).
 
 ### batch_get_image
 
@@ -169,7 +181,7 @@ Boto3 documentation:
 [ECR.Client.batch_get_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.batch_get_image)
 
 Arguments mapping described in
-[BatchGetImageRequestTypeDef](./type_defs.md#batchgetimagerequesttypedef).
+[BatchGetImageRequestRequestTypeDef](./type_defs.md#batchgetimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -181,7 +193,7 @@ Keyword-only arguments:
 - `acceptedMediaTypes`: `List`\[`str`\]
 
 Returns
-[BatchGetImageResponseResponseTypeDef](./type_defs.md#batchgetimageresponseresponsetypedef).
+[BatchGetImageResponseTypeDef](./type_defs.md#batchgetimageresponsetypedef).
 
 ### can_paginate
 
@@ -209,7 +221,7 @@ Boto3 documentation:
 [ECR.Client.complete_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.complete_layer_upload)
 
 Arguments mapping described in
-[CompleteLayerUploadRequestTypeDef](./type_defs.md#completelayeruploadrequesttypedef).
+[CompleteLayerUploadRequestRequestTypeDef](./type_defs.md#completelayeruploadrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -219,7 +231,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[CompleteLayerUploadResponseResponseTypeDef](./type_defs.md#completelayeruploadresponseresponsetypedef).
+[CompleteLayerUploadResponseTypeDef](./type_defs.md#completelayeruploadresponsetypedef).
 
 ### create_repository
 
@@ -231,7 +243,7 @@ Boto3 documentation:
 [ECR.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.create_repository)
 
 Arguments mapping described in
-[CreateRepositoryRequestTypeDef](./type_defs.md#createrepositoryrequesttypedef).
+[CreateRepositoryRequestRequestTypeDef](./type_defs.md#createrepositoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -245,7 +257,7 @@ Keyword-only arguments:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 
 Returns
-[CreateRepositoryResponseResponseTypeDef](./type_defs.md#createrepositoryresponseresponsetypedef).
+[CreateRepositoryResponseTypeDef](./type_defs.md#createrepositoryresponsetypedef).
 
 ### delete_lifecycle_policy
 
@@ -257,7 +269,7 @@ Boto3 documentation:
 [ECR.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_lifecycle_policy)
 
 Arguments mapping described in
-[DeleteLifecyclePolicyRequestTypeDef](./type_defs.md#deletelifecyclepolicyrequesttypedef).
+[DeleteLifecyclePolicyRequestRequestTypeDef](./type_defs.md#deletelifecyclepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -265,7 +277,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[DeleteLifecyclePolicyResponseResponseTypeDef](./type_defs.md#deletelifecyclepolicyresponseresponsetypedef).
+[DeleteLifecyclePolicyResponseTypeDef](./type_defs.md#deletelifecyclepolicyresponsetypedef).
 
 ### delete_registry_policy
 
@@ -277,7 +289,7 @@ Boto3 documentation:
 [ECR.Client.delete_registry_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_registry_policy)
 
 Returns
-[DeleteRegistryPolicyResponseResponseTypeDef](./type_defs.md#deleteregistrypolicyresponseresponsetypedef).
+[DeleteRegistryPolicyResponseTypeDef](./type_defs.md#deleteregistrypolicyresponsetypedef).
 
 ### delete_repository
 
@@ -289,7 +301,7 @@ Boto3 documentation:
 [ECR.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_repository)
 
 Arguments mapping described in
-[DeleteRepositoryRequestTypeDef](./type_defs.md#deleterepositoryrequesttypedef).
+[DeleteRepositoryRequestRequestTypeDef](./type_defs.md#deleterepositoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -298,7 +310,7 @@ Keyword-only arguments:
 - `force`: `bool`
 
 Returns
-[DeleteRepositoryResponseResponseTypeDef](./type_defs.md#deleterepositoryresponseresponsetypedef).
+[DeleteRepositoryResponseTypeDef](./type_defs.md#deleterepositoryresponsetypedef).
 
 ### delete_repository_policy
 
@@ -310,7 +322,7 @@ Boto3 documentation:
 [ECR.Client.delete_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.delete_repository_policy)
 
 Arguments mapping described in
-[DeleteRepositoryPolicyRequestTypeDef](./type_defs.md#deleterepositorypolicyrequesttypedef).
+[DeleteRepositoryPolicyRequestRequestTypeDef](./type_defs.md#deleterepositorypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -318,7 +330,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[DeleteRepositoryPolicyResponseResponseTypeDef](./type_defs.md#deleterepositorypolicyresponseresponsetypedef).
+[DeleteRepositoryPolicyResponseTypeDef](./type_defs.md#deleterepositorypolicyresponsetypedef).
 
 ### describe_image_scan_findings
 
@@ -330,7 +342,7 @@ Boto3 documentation:
 [ECR.Client.describe_image_scan_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_image_scan_findings)
 
 Arguments mapping described in
-[DescribeImageScanFindingsRequestTypeDef](./type_defs.md#describeimagescanfindingsrequesttypedef).
+[DescribeImageScanFindingsRequestRequestTypeDef](./type_defs.md#describeimagescanfindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -342,7 +354,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeImageScanFindingsResponseResponseTypeDef](./type_defs.md#describeimagescanfindingsresponseresponsetypedef).
+[DescribeImageScanFindingsResponseTypeDef](./type_defs.md#describeimagescanfindingsresponsetypedef).
 
 ### describe_images
 
@@ -354,7 +366,7 @@ Boto3 documentation:
 [ECR.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_images)
 
 Arguments mapping described in
-[DescribeImagesRequestTypeDef](./type_defs.md#describeimagesrequesttypedef).
+[DescribeImagesRequestRequestTypeDef](./type_defs.md#describeimagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -368,7 +380,7 @@ Keyword-only arguments:
   [DescribeImagesFilterTypeDef](./type_defs.md#describeimagesfiltertypedef)
 
 Returns
-[DescribeImagesResponseResponseTypeDef](./type_defs.md#describeimagesresponseresponsetypedef).
+[DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef).
 
 ### describe_registry
 
@@ -380,7 +392,7 @@ Boto3 documentation:
 [ECR.Client.describe_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_registry)
 
 Returns
-[DescribeRegistryResponseResponseTypeDef](./type_defs.md#describeregistryresponseresponsetypedef).
+[DescribeRegistryResponseTypeDef](./type_defs.md#describeregistryresponsetypedef).
 
 ### describe_repositories
 
@@ -392,7 +404,7 @@ Boto3 documentation:
 [ECR.Client.describe_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_repositories)
 
 Arguments mapping described in
-[DescribeRepositoriesRequestTypeDef](./type_defs.md#describerepositoriesrequesttypedef).
+[DescribeRepositoriesRequestRequestTypeDef](./type_defs.md#describerepositoriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -402,7 +414,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[DescribeRepositoriesResponseResponseTypeDef](./type_defs.md#describerepositoriesresponseresponsetypedef).
+[DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef).
 
 ### generate_presigned_url
 
@@ -432,14 +444,14 @@ Boto3 documentation:
 [ECR.Client.get_authorization_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_authorization_token)
 
 Arguments mapping described in
-[GetAuthorizationTokenRequestTypeDef](./type_defs.md#getauthorizationtokenrequesttypedef).
+[GetAuthorizationTokenRequestRequestTypeDef](./type_defs.md#getauthorizationtokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `registryIds`: `List`\[`str`\]
 
 Returns
-[GetAuthorizationTokenResponseResponseTypeDef](./type_defs.md#getauthorizationtokenresponseresponsetypedef).
+[GetAuthorizationTokenResponseTypeDef](./type_defs.md#getauthorizationtokenresponsetypedef).
 
 ### get_download_url_for_layer
 
@@ -452,7 +464,7 @@ Boto3 documentation:
 [ECR.Client.get_download_url_for_layer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_download_url_for_layer)
 
 Arguments mapping described in
-[GetDownloadUrlForLayerRequestTypeDef](./type_defs.md#getdownloadurlforlayerrequesttypedef).
+[GetDownloadUrlForLayerRequestRequestTypeDef](./type_defs.md#getdownloadurlforlayerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -461,7 +473,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[GetDownloadUrlForLayerResponseResponseTypeDef](./type_defs.md#getdownloadurlforlayerresponseresponsetypedef).
+[GetDownloadUrlForLayerResponseTypeDef](./type_defs.md#getdownloadurlforlayerresponsetypedef).
 
 ### get_lifecycle_policy
 
@@ -473,7 +485,7 @@ Boto3 documentation:
 [ECR.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_lifecycle_policy)
 
 Arguments mapping described in
-[GetLifecyclePolicyRequestTypeDef](./type_defs.md#getlifecyclepolicyrequesttypedef).
+[GetLifecyclePolicyRequestRequestTypeDef](./type_defs.md#getlifecyclepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -481,7 +493,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[GetLifecyclePolicyResponseResponseTypeDef](./type_defs.md#getlifecyclepolicyresponseresponsetypedef).
+[GetLifecyclePolicyResponseTypeDef](./type_defs.md#getlifecyclepolicyresponsetypedef).
 
 ### get_lifecycle_policy_preview
 
@@ -494,7 +506,7 @@ Boto3 documentation:
 [ECR.Client.get_lifecycle_policy_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_lifecycle_policy_preview)
 
 Arguments mapping described in
-[GetLifecyclePolicyPreviewRequestTypeDef](./type_defs.md#getlifecyclepolicypreviewrequesttypedef).
+[GetLifecyclePolicyPreviewRequestRequestTypeDef](./type_defs.md#getlifecyclepolicypreviewrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -508,7 +520,7 @@ Keyword-only arguments:
   [LifecyclePolicyPreviewFilterTypeDef](./type_defs.md#lifecyclepolicypreviewfiltertypedef)
 
 Returns
-[GetLifecyclePolicyPreviewResponseResponseTypeDef](./type_defs.md#getlifecyclepolicypreviewresponseresponsetypedef).
+[GetLifecyclePolicyPreviewResponseTypeDef](./type_defs.md#getlifecyclepolicypreviewresponsetypedef).
 
 ### get_registry_policy
 
@@ -520,7 +532,7 @@ Boto3 documentation:
 [ECR.Client.get_registry_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_registry_policy)
 
 Returns
-[GetRegistryPolicyResponseResponseTypeDef](./type_defs.md#getregistrypolicyresponseresponsetypedef).
+[GetRegistryPolicyResponseTypeDef](./type_defs.md#getregistrypolicyresponsetypedef).
 
 ### get_repository_policy
 
@@ -532,7 +544,7 @@ Boto3 documentation:
 [ECR.Client.get_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.get_repository_policy)
 
 Arguments mapping described in
-[GetRepositoryPolicyRequestTypeDef](./type_defs.md#getrepositorypolicyrequesttypedef).
+[GetRepositoryPolicyRequestRequestTypeDef](./type_defs.md#getrepositorypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -540,7 +552,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[GetRepositoryPolicyResponseResponseTypeDef](./type_defs.md#getrepositorypolicyresponseresponsetypedef).
+[GetRepositoryPolicyResponseTypeDef](./type_defs.md#getrepositorypolicyresponsetypedef).
 
 ### initiate_layer_upload
 
@@ -552,7 +564,7 @@ Boto3 documentation:
 [ECR.Client.initiate_layer_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.initiate_layer_upload)
 
 Arguments mapping described in
-[InitiateLayerUploadRequestTypeDef](./type_defs.md#initiatelayeruploadrequesttypedef).
+[InitiateLayerUploadRequestRequestTypeDef](./type_defs.md#initiatelayeruploadrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -560,7 +572,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[InitiateLayerUploadResponseResponseTypeDef](./type_defs.md#initiatelayeruploadresponseresponsetypedef).
+[InitiateLayerUploadResponseTypeDef](./type_defs.md#initiatelayeruploadresponsetypedef).
 
 ### list_images
 
@@ -572,7 +584,7 @@ Boto3 documentation:
 [ECR.Client.list_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.list_images)
 
 Arguments mapping described in
-[ListImagesRequestTypeDef](./type_defs.md#listimagesrequesttypedef).
+[ListImagesRequestRequestTypeDef](./type_defs.md#listimagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -582,8 +594,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `filter`: [ListImagesFilterTypeDef](./type_defs.md#listimagesfiltertypedef)
 
-Returns
-[ListImagesResponseResponseTypeDef](./type_defs.md#listimagesresponseresponsetypedef).
+Returns [ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -595,14 +606,14 @@ Boto3 documentation:
 [ECR.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_image
 
@@ -614,7 +625,7 @@ Boto3 documentation:
 [ECR.Client.put_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image)
 
 Arguments mapping described in
-[PutImageRequestTypeDef](./type_defs.md#putimagerequesttypedef).
+[PutImageRequestRequestTypeDef](./type_defs.md#putimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -625,8 +636,7 @@ Keyword-only arguments:
 - `imageTag`: `str`
 - `imageDigest`: `str`
 
-Returns
-[PutImageResponseResponseTypeDef](./type_defs.md#putimageresponseresponsetypedef).
+Returns [PutImageResponseTypeDef](./type_defs.md#putimageresponsetypedef).
 
 ### put_image_scanning_configuration
 
@@ -639,7 +649,7 @@ Boto3 documentation:
 [ECR.Client.put_image_scanning_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image_scanning_configuration)
 
 Arguments mapping described in
-[PutImageScanningConfigurationRequestTypeDef](./type_defs.md#putimagescanningconfigurationrequesttypedef).
+[PutImageScanningConfigurationRequestRequestTypeDef](./type_defs.md#putimagescanningconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -650,7 +660,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[PutImageScanningConfigurationResponseResponseTypeDef](./type_defs.md#putimagescanningconfigurationresponseresponsetypedef).
+[PutImageScanningConfigurationResponseTypeDef](./type_defs.md#putimagescanningconfigurationresponsetypedef).
 
 ### put_image_tag_mutability
 
@@ -662,7 +672,7 @@ Boto3 documentation:
 [ECR.Client.put_image_tag_mutability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_image_tag_mutability)
 
 Arguments mapping described in
-[PutImageTagMutabilityRequestTypeDef](./type_defs.md#putimagetagmutabilityrequesttypedef).
+[PutImageTagMutabilityRequestRequestTypeDef](./type_defs.md#putimagetagmutabilityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -672,7 +682,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[PutImageTagMutabilityResponseResponseTypeDef](./type_defs.md#putimagetagmutabilityresponseresponsetypedef).
+[PutImageTagMutabilityResponseTypeDef](./type_defs.md#putimagetagmutabilityresponsetypedef).
 
 ### put_lifecycle_policy
 
@@ -684,7 +694,7 @@ Boto3 documentation:
 [ECR.Client.put_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_lifecycle_policy)
 
 Arguments mapping described in
-[PutLifecyclePolicyRequestTypeDef](./type_defs.md#putlifecyclepolicyrequesttypedef).
+[PutLifecyclePolicyRequestRequestTypeDef](./type_defs.md#putlifecyclepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -693,7 +703,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[PutLifecyclePolicyResponseResponseTypeDef](./type_defs.md#putlifecyclepolicyresponseresponsetypedef).
+[PutLifecyclePolicyResponseTypeDef](./type_defs.md#putlifecyclepolicyresponsetypedef).
 
 ### put_registry_policy
 
@@ -705,14 +715,14 @@ Boto3 documentation:
 [ECR.Client.put_registry_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_registry_policy)
 
 Arguments mapping described in
-[PutRegistryPolicyRequestTypeDef](./type_defs.md#putregistrypolicyrequesttypedef).
+[PutRegistryPolicyRequestRequestTypeDef](./type_defs.md#putregistrypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `policyText`: `str` *(required)*
 
 Returns
-[PutRegistryPolicyResponseResponseTypeDef](./type_defs.md#putregistrypolicyresponseresponsetypedef).
+[PutRegistryPolicyResponseTypeDef](./type_defs.md#putregistrypolicyresponsetypedef).
 
 ### put_replication_configuration
 
@@ -725,7 +735,7 @@ Boto3 documentation:
 [ECR.Client.put_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.put_replication_configuration)
 
 Arguments mapping described in
-[PutReplicationConfigurationRequestTypeDef](./type_defs.md#putreplicationconfigurationrequesttypedef).
+[PutReplicationConfigurationRequestRequestTypeDef](./type_defs.md#putreplicationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -734,7 +744,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutReplicationConfigurationResponseResponseTypeDef](./type_defs.md#putreplicationconfigurationresponseresponsetypedef).
+[PutReplicationConfigurationResponseTypeDef](./type_defs.md#putreplicationconfigurationresponsetypedef).
 
 ### set_repository_policy
 
@@ -747,7 +757,7 @@ Boto3 documentation:
 [ECR.Client.set_repository_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.set_repository_policy)
 
 Arguments mapping described in
-[SetRepositoryPolicyRequestTypeDef](./type_defs.md#setrepositorypolicyrequesttypedef).
+[SetRepositoryPolicyRequestRequestTypeDef](./type_defs.md#setrepositorypolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -757,7 +767,7 @@ Keyword-only arguments:
 - `force`: `bool`
 
 Returns
-[SetRepositoryPolicyResponseResponseTypeDef](./type_defs.md#setrepositorypolicyresponseresponsetypedef).
+[SetRepositoryPolicyResponseTypeDef](./type_defs.md#setrepositorypolicyresponsetypedef).
 
 ### start_image_scan
 
@@ -769,7 +779,7 @@ Boto3 documentation:
 [ECR.Client.start_image_scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.start_image_scan)
 
 Arguments mapping described in
-[StartImageScanRequestTypeDef](./type_defs.md#startimagescanrequesttypedef).
+[StartImageScanRequestRequestTypeDef](./type_defs.md#startimagescanrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -779,7 +789,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[StartImageScanResponseResponseTypeDef](./type_defs.md#startimagescanresponseresponsetypedef).
+[StartImageScanResponseTypeDef](./type_defs.md#startimagescanresponsetypedef).
 
 ### start_lifecycle_policy_preview
 
@@ -792,7 +802,7 @@ Boto3 documentation:
 [ECR.Client.start_lifecycle_policy_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.start_lifecycle_policy_preview)
 
 Arguments mapping described in
-[StartLifecyclePolicyPreviewRequestTypeDef](./type_defs.md#startlifecyclepolicypreviewrequesttypedef).
+[StartLifecyclePolicyPreviewRequestRequestTypeDef](./type_defs.md#startlifecyclepolicypreviewrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -801,7 +811,7 @@ Keyword-only arguments:
 - `lifecyclePolicyText`: `str`
 
 Returns
-[StartLifecyclePolicyPreviewResponseResponseTypeDef](./type_defs.md#startlifecyclepolicypreviewresponseresponsetypedef).
+[StartLifecyclePolicyPreviewResponseTypeDef](./type_defs.md#startlifecyclepolicypreviewresponsetypedef).
 
 ### tag_resource
 
@@ -813,7 +823,7 @@ Boto3 documentation:
 [ECR.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -832,7 +842,7 @@ Boto3 documentation:
 [ECR.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -851,7 +861,7 @@ Boto3 documentation:
 [ECR.Client.upload_layer_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.upload_layer_part)
 
 Arguments mapping described in
-[UploadLayerPartRequestTypeDef](./type_defs.md#uploadlayerpartrequesttypedef).
+[UploadLayerPartRequestRequestTypeDef](./type_defs.md#uploadlayerpartrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -864,7 +874,7 @@ Keyword-only arguments:
 - `registryId`: `str`
 
 Returns
-[UploadLayerPartResponseResponseTypeDef](./type_defs.md#uploadlayerpartresponseresponsetypedef).
+[UploadLayerPartResponseTypeDef](./type_defs.md#uploadlayerpartresponsetypedef).
 
 ### get_paginator
 

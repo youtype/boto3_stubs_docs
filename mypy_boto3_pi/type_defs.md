@@ -9,15 +9,15 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 PI module](#typed-dictionaries-for-boto3-pi-module)
   - [DataPointTypeDef](#datapointtypedef)
-  - [DescribeDimensionKeysRequestTypeDef](#describedimensionkeysrequesttypedef)
-  - [DescribeDimensionKeysResponseResponseTypeDef](#describedimensionkeysresponseresponsetypedef)
+  - [DescribeDimensionKeysRequestRequestTypeDef](#describedimensionkeysrequestrequesttypedef)
+  - [DescribeDimensionKeysResponseTypeDef](#describedimensionkeysresponsetypedef)
   - [DimensionGroupTypeDef](#dimensiongrouptypedef)
   - [DimensionKeyDescriptionTypeDef](#dimensionkeydescriptiontypedef)
   - [DimensionKeyDetailTypeDef](#dimensionkeydetailtypedef)
-  - [GetDimensionKeyDetailsRequestTypeDef](#getdimensionkeydetailsrequesttypedef)
-  - [GetDimensionKeyDetailsResponseResponseTypeDef](#getdimensionkeydetailsresponseresponsetypedef)
-  - [GetResourceMetricsRequestTypeDef](#getresourcemetricsrequesttypedef)
-  - [GetResourceMetricsResponseResponseTypeDef](#getresourcemetricsresponseresponsetypedef)
+  - [GetDimensionKeyDetailsRequestRequestTypeDef](#getdimensionkeydetailsrequestrequesttypedef)
+  - [GetDimensionKeyDetailsResponseTypeDef](#getdimensionkeydetailsresponsetypedef)
+  - [GetResourceMetricsRequestRequestTypeDef](#getresourcemetricsrequestrequesttypedef)
+  - [GetResourceMetricsResponseTypeDef](#getresourcemetricsresponsetypedef)
   - [MetricKeyDataPointsTypeDef](#metrickeydatapointstypedef)
   - [MetricQueryTypeDef](#metricquerytypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
@@ -35,10 +35,10 @@ Required fields:
 - `Timestamp`: `datetime`
 - `Value`: `float`
 
-## DescribeDimensionKeysRequestTypeDef
+## DescribeDimensionKeysRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pi.type_defs import DescribeDimensionKeysRequestTypeDef
+from mypy_boto3_pi.type_defs import DescribeDimensionKeysRequestRequestTypeDef
 ```
 
 Required fields:
@@ -59,10 +59,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## DescribeDimensionKeysResponseResponseTypeDef
+## DescribeDimensionKeysResponseTypeDef
 
 ```python
-from mypy_boto3_pi.type_defs import DescribeDimensionKeysResponseResponseTypeDef
+from mypy_boto3_pi.type_defs import DescribeDimensionKeysResponseTypeDef
 ```
 
 Required fields:
@@ -116,10 +116,10 @@ Optional fields:
 - `Dimension`: `str`
 - `Status`: [DetailStatusType](./literals.md#detailstatustype)
 
-## GetDimensionKeyDetailsRequestTypeDef
+## GetDimensionKeyDetailsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pi.type_defs import GetDimensionKeyDetailsRequestTypeDef
+from mypy_boto3_pi.type_defs import GetDimensionKeyDetailsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -134,10 +134,10 @@ Optional fields:
 
 - `RequestedDimensions`: `List`\[`str`\]
 
-## GetDimensionKeyDetailsResponseResponseTypeDef
+## GetDimensionKeyDetailsResponseTypeDef
 
 ```python
-from mypy_boto3_pi.type_defs import GetDimensionKeyDetailsResponseResponseTypeDef
+from mypy_boto3_pi.type_defs import GetDimensionKeyDetailsResponseTypeDef
 ```
 
 Required fields:
@@ -147,10 +147,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourceMetricsRequestTypeDef
+## GetResourceMetricsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_pi.type_defs import GetResourceMetricsRequestTypeDef
+from mypy_boto3_pi.type_defs import GetResourceMetricsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -169,10 +169,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## GetResourceMetricsResponseResponseTypeDef
+## GetResourceMetricsResponseTypeDef
 
 ```python
-from mypy_boto3_pi.type_defs import GetResourceMetricsResponseResponseTypeDef
+from mypy_boto3_pi.type_defs import GetResourceMetricsResponseTypeDef
 ```
 
 Required fields:

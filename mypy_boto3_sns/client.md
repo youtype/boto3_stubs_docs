@@ -11,6 +11,7 @@ type annotations stubs module
   - [SNSClient](#snsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_permission](#add_permission)
     - [can_paginate](#can_paginate)
     - [check_if_phone_number_is_opted_out](#check_if_phone_number_is_opted_out)
@@ -115,10 +116,21 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SNSClient exceptions.
+
+Type annotations for `boto3.client("sns").exceptions` method.
+
+Boto3 documentation:
+[SNS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_permission
 
 Adds a statement to a topic's access control policy, granting access for the
-specified AWS accounts to the specified actions.
+specified accounts to the specified actions.
 
 Type annotations for `boto3.client("sns").add_permission` method.
 
@@ -126,7 +138,7 @@ Boto3 documentation:
 [SNS.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.add_permission)
 
 Arguments mapping described in
-[AddPermissionInputTypeDef](./type_defs.md#addpermissioninputtypedef).
+[AddPermissionInputRequestTypeDef](./type_defs.md#addpermissioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -162,14 +174,14 @@ Boto3 documentation:
 [SNS.Client.check_if_phone_number_is_opted_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.check_if_phone_number_is_opted_out)
 
 Arguments mapping described in
-[CheckIfPhoneNumberIsOptedOutInputTypeDef](./type_defs.md#checkifphonenumberisoptedoutinputtypedef).
+[CheckIfPhoneNumberIsOptedOutInputRequestTypeDef](./type_defs.md#checkifphonenumberisoptedoutinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `phoneNumber`: `str` *(required)*
 
 Returns
-[CheckIfPhoneNumberIsOptedOutResponseResponseTypeDef](./type_defs.md#checkifphonenumberisoptedoutresponseresponsetypedef).
+[CheckIfPhoneNumberIsOptedOutResponseTypeDef](./type_defs.md#checkifphonenumberisoptedoutresponsetypedef).
 
 ### confirm_subscription
 
@@ -182,7 +194,7 @@ Boto3 documentation:
 [SNS.Client.confirm_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.confirm_subscription)
 
 Arguments mapping described in
-[ConfirmSubscriptionInputTypeDef](./type_defs.md#confirmsubscriptioninputtypedef).
+[ConfirmSubscriptionInputRequestTypeDef](./type_defs.md#confirmsubscriptioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -191,7 +203,7 @@ Keyword-only arguments:
 - `AuthenticateOnUnsubscribe`: `str`
 
 Returns
-[ConfirmSubscriptionResponseResponseTypeDef](./type_defs.md#confirmsubscriptionresponseresponsetypedef).
+[ConfirmSubscriptionResponseTypeDef](./type_defs.md#confirmsubscriptionresponsetypedef).
 
 ### create_platform_application
 
@@ -205,7 +217,7 @@ Boto3 documentation:
 [SNS.Client.create_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_application)
 
 Arguments mapping described in
-[CreatePlatformApplicationInputTypeDef](./type_defs.md#createplatformapplicationinputtypedef).
+[CreatePlatformApplicationInputRequestTypeDef](./type_defs.md#createplatformapplicationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -214,7 +226,7 @@ Keyword-only arguments:
 - `Attributes`: `Dict`\[`str`, `str`\] *(required)*
 
 Returns
-[CreatePlatformApplicationResponseResponseTypeDef](./type_defs.md#createplatformapplicationresponseresponsetypedef).
+[CreatePlatformApplicationResponseTypeDef](./type_defs.md#createplatformapplicationresponsetypedef).
 
 ### create_platform_endpoint
 
@@ -227,7 +239,7 @@ Boto3 documentation:
 [SNS.Client.create_platform_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_endpoint)
 
 Arguments mapping described in
-[CreatePlatformEndpointInputTypeDef](./type_defs.md#createplatformendpointinputtypedef).
+[CreatePlatformEndpointInputRequestTypeDef](./type_defs.md#createplatformendpointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -237,12 +249,12 @@ Keyword-only arguments:
 - `Attributes`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateEndpointResponseResponseTypeDef](./type_defs.md#createendpointresponseresponsetypedef).
+[CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
 
 ### create_sms_sandbox_phone_number
 
-Adds a destination phone number to an AWS account in the SMS sandbox and sends
-a one-time password (OTP) to that phone number.
+Adds a destination phone number to an account in the SMS sandbox and sends a
+one-time password (OTP) to that phone number.
 
 Type annotations for `boto3.client("sns").create_sms_sandbox_phone_number`
 method.
@@ -251,7 +263,7 @@ Boto3 documentation:
 [SNS.Client.create_sms_sandbox_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_sms_sandbox_phone_number)
 
 Arguments mapping described in
-[CreateSMSSandboxPhoneNumberInputTypeDef](./type_defs.md#createsmssandboxphonenumberinputtypedef).
+[CreateSMSSandboxPhoneNumberInputRequestTypeDef](./type_defs.md#createsmssandboxphonenumberinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -271,7 +283,7 @@ Boto3 documentation:
 [SNS.Client.create_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_topic)
 
 Arguments mapping described in
-[CreateTopicInputTypeDef](./type_defs.md#createtopicinputtypedef).
+[CreateTopicInputRequestTypeDef](./type_defs.md#createtopicinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -280,7 +292,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTopicResponseResponseTypeDef](./type_defs.md#createtopicresponseresponsetypedef).
+[CreateTopicResponseTypeDef](./type_defs.md#createtopicresponsetypedef).
 
 ### delete_endpoint
 
@@ -292,7 +304,7 @@ Boto3 documentation:
 [SNS.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_endpoint)
 
 Arguments mapping described in
-[DeleteEndpointInputTypeDef](./type_defs.md#deleteendpointinputtypedef).
+[DeleteEndpointInputRequestTypeDef](./type_defs.md#deleteendpointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,7 +321,7 @@ Boto3 documentation:
 [SNS.Client.delete_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_platform_application)
 
 Arguments mapping described in
-[DeletePlatformApplicationInputTypeDef](./type_defs.md#deleteplatformapplicationinputtypedef).
+[DeletePlatformApplicationInputRequestTypeDef](./type_defs.md#deleteplatformapplicationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -317,7 +329,7 @@ Keyword-only arguments:
 
 ### delete_sms_sandbox_phone_number
 
-Deletes an AWS account's verified or pending phone number from the SMS sandbox.
+Deletes an account's verified or pending phone number from the SMS sandbox.
 
 Type annotations for `boto3.client("sns").delete_sms_sandbox_phone_number`
 method.
@@ -326,7 +338,7 @@ Boto3 documentation:
 [SNS.Client.delete_sms_sandbox_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_sms_sandbox_phone_number)
 
 Arguments mapping described in
-[DeleteSMSSandboxPhoneNumberInputTypeDef](./type_defs.md#deletesmssandboxphonenumberinputtypedef).
+[DeleteSMSSandboxPhoneNumberInputRequestTypeDef](./type_defs.md#deletesmssandboxphonenumberinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -344,7 +356,7 @@ Boto3 documentation:
 [SNS.Client.delete_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_topic)
 
 Arguments mapping described in
-[DeleteTopicInputTypeDef](./type_defs.md#deletetopicinputtypedef).
+[DeleteTopicInputRequestTypeDef](./type_defs.md#deletetopicinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -379,14 +391,14 @@ Boto3 documentation:
 [SNS.Client.get_endpoint_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_endpoint_attributes)
 
 Arguments mapping described in
-[GetEndpointAttributesInputTypeDef](./type_defs.md#getendpointattributesinputtypedef).
+[GetEndpointAttributesInputRequestTypeDef](./type_defs.md#getendpointattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 
 Returns
-[GetEndpointAttributesResponseResponseTypeDef](./type_defs.md#getendpointattributesresponseresponsetypedef).
+[GetEndpointAttributesResponseTypeDef](./type_defs.md#getendpointattributesresponsetypedef).
 
 ### get_platform_application_attributes
 
@@ -400,14 +412,14 @@ Boto3 documentation:
 [SNS.Client.get_platform_application_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_platform_application_attributes)
 
 Arguments mapping described in
-[GetPlatformApplicationAttributesInputTypeDef](./type_defs.md#getplatformapplicationattributesinputtypedef).
+[GetPlatformApplicationAttributesInputRequestTypeDef](./type_defs.md#getplatformapplicationattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `PlatformApplicationArn`: `str` *(required)*
 
 Returns
-[GetPlatformApplicationAttributesResponseResponseTypeDef](./type_defs.md#getplatformapplicationattributesresponseresponsetypedef).
+[GetPlatformApplicationAttributesResponseTypeDef](./type_defs.md#getplatformapplicationattributesresponsetypedef).
 
 ### get_sms_attributes
 
@@ -419,19 +431,18 @@ Boto3 documentation:
 [SNS.Client.get_sms_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_sms_attributes)
 
 Arguments mapping described in
-[GetSMSAttributesInputTypeDef](./type_defs.md#getsmsattributesinputtypedef).
+[GetSMSAttributesInputRequestTypeDef](./type_defs.md#getsmsattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `attributes`: `List`\[`str`\]
 
 Returns
-[GetSMSAttributesResponseResponseTypeDef](./type_defs.md#getsmsattributesresponseresponsetypedef).
+[GetSMSAttributesResponseTypeDef](./type_defs.md#getsmsattributesresponsetypedef).
 
 ### get_sms_sandbox_account_status
 
-Retrieves the SMS sandbox status for the calling AWS account in the target AWS
-Region.
+Retrieves the SMS sandbox status for the calling account in the target Region.
 
 Type annotations for `boto3.client("sns").get_sms_sandbox_account_status`
 method.
@@ -440,7 +451,7 @@ Boto3 documentation:
 [SNS.Client.get_sms_sandbox_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_sms_sandbox_account_status)
 
 Returns
-[GetSMSSandboxAccountStatusResultResponseTypeDef](./type_defs.md#getsmssandboxaccountstatusresultresponsetypedef).
+[GetSMSSandboxAccountStatusResultTypeDef](./type_defs.md#getsmssandboxaccountstatusresulttypedef).
 
 ### get_subscription_attributes
 
@@ -452,14 +463,14 @@ Boto3 documentation:
 [SNS.Client.get_subscription_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_subscription_attributes)
 
 Arguments mapping described in
-[GetSubscriptionAttributesInputTypeDef](./type_defs.md#getsubscriptionattributesinputtypedef).
+[GetSubscriptionAttributesInputRequestTypeDef](./type_defs.md#getsubscriptionattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `SubscriptionArn`: `str` *(required)*
 
 Returns
-[GetSubscriptionAttributesResponseResponseTypeDef](./type_defs.md#getsubscriptionattributesresponseresponsetypedef).
+[GetSubscriptionAttributesResponseTypeDef](./type_defs.md#getsubscriptionattributesresponsetypedef).
 
 ### get_topic_attributes
 
@@ -471,14 +482,14 @@ Boto3 documentation:
 [SNS.Client.get_topic_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_topic_attributes)
 
 Arguments mapping described in
-[GetTopicAttributesInputTypeDef](./type_defs.md#gettopicattributesinputtypedef).
+[GetTopicAttributesInputRequestTypeDef](./type_defs.md#gettopicattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
 
 Returns
-[GetTopicAttributesResponseResponseTypeDef](./type_defs.md#gettopicattributesresponseresponsetypedef).
+[GetTopicAttributesResponseTypeDef](./type_defs.md#gettopicattributesresponsetypedef).
 
 ### list_endpoints_by_platform_application
 
@@ -492,7 +503,7 @@ Boto3 documentation:
 [SNS.Client.list_endpoints_by_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_endpoints_by_platform_application)
 
 Arguments mapping described in
-[ListEndpointsByPlatformApplicationInputTypeDef](./type_defs.md#listendpointsbyplatformapplicationinputtypedef).
+[ListEndpointsByPlatformApplicationInputRequestTypeDef](./type_defs.md#listendpointsbyplatformapplicationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -500,12 +511,11 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListEndpointsByPlatformApplicationResponseResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponseresponsetypedef).
+[ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef).
 
 ### list_origination_numbers
 
-Lists the calling AWS account's dedicated origination numbers and their
-metadata.
+Lists the calling account's dedicated origination numbers and their metadata.
 
 Type annotations for `boto3.client("sns").list_origination_numbers` method.
 
@@ -513,7 +523,7 @@ Boto3 documentation:
 [SNS.Client.list_origination_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_origination_numbers)
 
 Arguments mapping described in
-[ListOriginationNumbersRequestTypeDef](./type_defs.md#listoriginationnumbersrequesttypedef).
+[ListOriginationNumbersRequestRequestTypeDef](./type_defs.md#listoriginationnumbersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -521,7 +531,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListOriginationNumbersResultResponseTypeDef](./type_defs.md#listoriginationnumbersresultresponsetypedef).
+[ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef).
 
 ### list_phone_numbers_opted_out
 
@@ -534,14 +544,14 @@ Boto3 documentation:
 [SNS.Client.list_phone_numbers_opted_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_phone_numbers_opted_out)
 
 Arguments mapping described in
-[ListPhoneNumbersOptedOutInputTypeDef](./type_defs.md#listphonenumbersoptedoutinputtypedef).
+[ListPhoneNumbersOptedOutInputRequestTypeDef](./type_defs.md#listphonenumbersoptedoutinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 
 Returns
-[ListPhoneNumbersOptedOutResponseResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponseresponsetypedef).
+[ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef).
 
 ### list_platform_applications
 
@@ -554,18 +564,18 @@ Boto3 documentation:
 [SNS.Client.list_platform_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_platform_applications)
 
 Arguments mapping described in
-[ListPlatformApplicationsInputTypeDef](./type_defs.md#listplatformapplicationsinputtypedef).
+[ListPlatformApplicationsInputRequestTypeDef](./type_defs.md#listplatformapplicationsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[ListPlatformApplicationsResponseResponseTypeDef](./type_defs.md#listplatformapplicationsresponseresponsetypedef).
+[ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef).
 
 ### list_sms_sandbox_phone_numbers
 
-Lists the calling AWS account's current verified and pending destination phone
+Lists the calling account's current verified and pending destination phone
 numbers in the SMS sandbox.
 
 Type annotations for `boto3.client("sns").list_sms_sandbox_phone_numbers`
@@ -575,7 +585,7 @@ Boto3 documentation:
 [SNS.Client.list_sms_sandbox_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_sms_sandbox_phone_numbers)
 
 Arguments mapping described in
-[ListSMSSandboxPhoneNumbersInputTypeDef](./type_defs.md#listsmssandboxphonenumbersinputtypedef).
+[ListSMSSandboxPhoneNumbersInputRequestTypeDef](./type_defs.md#listsmssandboxphonenumbersinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -583,7 +593,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListSMSSandboxPhoneNumbersResultResponseTypeDef](./type_defs.md#listsmssandboxphonenumbersresultresponsetypedef).
+[ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef).
 
 ### list_subscriptions
 
@@ -595,14 +605,14 @@ Boto3 documentation:
 [SNS.Client.list_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions)
 
 Arguments mapping described in
-[ListSubscriptionsInputTypeDef](./type_defs.md#listsubscriptionsinputtypedef).
+[ListSubscriptionsInputRequestTypeDef](./type_defs.md#listsubscriptionsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[ListSubscriptionsResponseResponseTypeDef](./type_defs.md#listsubscriptionsresponseresponsetypedef).
+[ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef).
 
 ### list_subscriptions_by_topic
 
@@ -614,7 +624,7 @@ Boto3 documentation:
 [SNS.Client.list_subscriptions_by_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions_by_topic)
 
 Arguments mapping described in
-[ListSubscriptionsByTopicInputTypeDef](./type_defs.md#listsubscriptionsbytopicinputtypedef).
+[ListSubscriptionsByTopicInputRequestTypeDef](./type_defs.md#listsubscriptionsbytopicinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -622,7 +632,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSubscriptionsByTopicResponseResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponseresponsetypedef).
+[ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -634,14 +644,14 @@ Boto3 documentation:
 [SNS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_topics
 
@@ -653,14 +663,13 @@ Boto3 documentation:
 [SNS.Client.list_topics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_topics)
 
 Arguments mapping described in
-[ListTopicsInputTypeDef](./type_defs.md#listtopicsinputtypedef).
+[ListTopicsInputRequestTypeDef](./type_defs.md#listtopicsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
-Returns
-[ListTopicsResponseResponseTypeDef](./type_defs.md#listtopicsresponseresponsetypedef).
+Returns [ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef).
 
 ### opt_in_phone_number
 
@@ -673,7 +682,7 @@ Boto3 documentation:
 [SNS.Client.opt_in_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.opt_in_phone_number)
 
 Arguments mapping described in
-[OptInPhoneNumberInputTypeDef](./type_defs.md#optinphonenumberinputtypedef).
+[OptInPhoneNumberInputRequestTypeDef](./type_defs.md#optinphonenumberinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -693,7 +702,7 @@ Boto3 documentation:
 [SNS.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish)
 
 Arguments mapping described in
-[PublishInputTypeDef](./type_defs.md#publishinputtypedef).
+[PublishInputRequestTypeDef](./type_defs.md#publishinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -708,8 +717,7 @@ Keyword-only arguments:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns
-[PublishResponseResponseTypeDef](./type_defs.md#publishresponseresponsetypedef).
+Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 
 ### remove_permission
 
@@ -721,7 +729,7 @@ Boto3 documentation:
 [SNS.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.remove_permission)
 
 Arguments mapping described in
-[RemovePermissionInputTypeDef](./type_defs.md#removepermissioninputtypedef).
+[RemovePermissionInputRequestTypeDef](./type_defs.md#removepermissioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -739,7 +747,7 @@ Boto3 documentation:
 [SNS.Client.set_endpoint_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_endpoint_attributes)
 
 Arguments mapping described in
-[SetEndpointAttributesInputTypeDef](./type_defs.md#setendpointattributesinputtypedef).
+[SetEndpointAttributesInputRequestTypeDef](./type_defs.md#setendpointattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -758,7 +766,7 @@ Boto3 documentation:
 [SNS.Client.set_platform_application_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_platform_application_attributes)
 
 Arguments mapping described in
-[SetPlatformApplicationAttributesInputTypeDef](./type_defs.md#setplatformapplicationattributesinputtypedef).
+[SetPlatformApplicationAttributesInputRequestTypeDef](./type_defs.md#setplatformapplicationattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -776,7 +784,7 @@ Boto3 documentation:
 [SNS.Client.set_sms_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_sms_attributes)
 
 Arguments mapping described in
-[SetSMSAttributesInputTypeDef](./type_defs.md#setsmsattributesinputtypedef).
+[SetSMSAttributesInputRequestTypeDef](./type_defs.md#setsmsattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -795,7 +803,7 @@ Boto3 documentation:
 [SNS.Client.set_subscription_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_subscription_attributes)
 
 Arguments mapping described in
-[SetSubscriptionAttributesInputTypeDef](./type_defs.md#setsubscriptionattributesinputtypedef).
+[SetSubscriptionAttributesInputRequestTypeDef](./type_defs.md#setsubscriptionattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -813,7 +821,7 @@ Boto3 documentation:
 [SNS.Client.set_topic_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_topic_attributes)
 
 Arguments mapping described in
-[SetTopicAttributesInputTypeDef](./type_defs.md#settopicattributesinputtypedef).
+[SetTopicAttributesInputRequestTypeDef](./type_defs.md#settopicattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -831,7 +839,7 @@ Boto3 documentation:
 [SNS.Client.subscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.subscribe)
 
 Arguments mapping described in
-[SubscribeInputTypeDef](./type_defs.md#subscribeinputtypedef).
+[SubscribeInputRequestTypeDef](./type_defs.md#subscribeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -841,8 +849,7 @@ Keyword-only arguments:
 - `Attributes`: `Dict`\[`str`, `str`\]
 - `ReturnSubscriptionArn`: `bool`
 
-Returns
-[SubscribeResponseResponseTypeDef](./type_defs.md#subscriberesponseresponsetypedef).
+Returns [SubscribeResponseTypeDef](./type_defs.md#subscriberesponsetypedef).
 
 ### tag_resource
 
@@ -854,7 +861,7 @@ Boto3 documentation:
 [SNS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -873,7 +880,7 @@ Boto3 documentation:
 [SNS.Client.unsubscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.unsubscribe)
 
 Arguments mapping described in
-[UnsubscribeInputTypeDef](./type_defs.md#unsubscribeinputtypedef).
+[UnsubscribeInputRequestTypeDef](./type_defs.md#unsubscribeinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -889,7 +896,7 @@ Boto3 documentation:
 [SNS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -901,7 +908,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### verify_sms_sandbox_phone_number
 
 Verifies a destination phone number with a one-time password (OTP) for the
-calling AWS account.
+calling account.
 
 Type annotations for `boto3.client("sns").verify_sms_sandbox_phone_number`
 method.
@@ -910,7 +917,7 @@ Boto3 documentation:
 [SNS.Client.verify_sms_sandbox_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.verify_sms_sandbox_phone_number)
 
 Arguments mapping described in
-[VerifySMSSandboxPhoneNumberInputTypeDef](./type_defs.md#verifysmssandboxphonenumberinputtypedef).
+[VerifySMSSandboxPhoneNumberInputRequestTypeDef](./type_defs.md#verifysmssandboxphonenumberinputrequesttypedef).
 
 Keyword-only arguments:
 

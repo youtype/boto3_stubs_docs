@@ -11,6 +11,7 @@ type annotations stubs module
   - [ElasticTranscoderClient](#elastictranscoderclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_job](#cancel_job)
     - [create_job](#create_job)
@@ -74,6 +75,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ElasticTranscoderClient exceptions.
+
+Type annotations for `boto3.client("elastictranscoder").exceptions` method.
+
+Boto3 documentation:
+[ElasticTranscoder.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -99,7 +111,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.cancel_job)
 
 Arguments mapping described in
-[CancelJobRequestTypeDef](./type_defs.md#canceljobrequesttypedef).
+[CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -118,7 +130,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_job)
 
 Arguments mapping described in
-[CreateJobRequestTypeDef](./type_defs.md#createjobrequesttypedef).
+[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -133,8 +145,7 @@ Keyword-only arguments:
   `List`\[[CreateJobPlaylistTypeDef](./type_defs.md#createjobplaylisttypedef)\]
 - `UserMetadata`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateJobResponseResponseTypeDef](./type_defs.md#createjobresponseresponsetypedef).
+Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
 ### create_pipeline
 
@@ -147,7 +158,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_pipeline)
 
 Arguments mapping described in
-[CreatePipelineRequestTypeDef](./type_defs.md#createpipelinerequesttypedef).
+[CreatePipelineRequestRequestTypeDef](./type_defs.md#createpipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -163,7 +174,7 @@ Keyword-only arguments:
   [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
 
 Returns
-[CreatePipelineResponseResponseTypeDef](./type_defs.md#createpipelineresponseresponsetypedef).
+[CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
 
 ### create_preset
 
@@ -175,7 +186,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.create_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_preset)
 
 Arguments mapping described in
-[CreatePresetRequestTypeDef](./type_defs.md#createpresetrequesttypedef).
+[CreatePresetRequestRequestTypeDef](./type_defs.md#createpresetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -187,7 +198,7 @@ Keyword-only arguments:
 - `Thumbnails`: [ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef)
 
 Returns
-[CreatePresetResponseResponseTypeDef](./type_defs.md#createpresetresponseresponsetypedef).
+[CreatePresetResponseTypeDef](./type_defs.md#createpresetresponsetypedef).
 
 ### delete_pipeline
 
@@ -200,7 +211,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_pipeline)
 
 Arguments mapping described in
-[DeletePipelineRequestTypeDef](./type_defs.md#deletepipelinerequesttypedef).
+[DeletePipelineRequestRequestTypeDef](./type_defs.md#deletepipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,7 +229,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.delete_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_preset)
 
 Arguments mapping described in
-[DeletePresetRequestTypeDef](./type_defs.md#deletepresetrequesttypedef).
+[DeletePresetRequestRequestTypeDef](./type_defs.md#deletepresetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -257,7 +268,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.list_jobs_by_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_pipeline)
 
 Arguments mapping described in
-[ListJobsByPipelineRequestTypeDef](./type_defs.md#listjobsbypipelinerequesttypedef).
+[ListJobsByPipelineRequestRequestTypeDef](./type_defs.md#listjobsbypipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -266,7 +277,7 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ListJobsByPipelineResponseResponseTypeDef](./type_defs.md#listjobsbypipelineresponseresponsetypedef).
+[ListJobsByPipelineResponseTypeDef](./type_defs.md#listjobsbypipelineresponsetypedef).
 
 ### list_jobs_by_status
 
@@ -280,7 +291,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.list_jobs_by_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_status)
 
 Arguments mapping described in
-[ListJobsByStatusRequestTypeDef](./type_defs.md#listjobsbystatusrequesttypedef).
+[ListJobsByStatusRequestRequestTypeDef](./type_defs.md#listjobsbystatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -289,7 +300,7 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ListJobsByStatusResponseResponseTypeDef](./type_defs.md#listjobsbystatusresponseresponsetypedef).
+[ListJobsByStatusResponseTypeDef](./type_defs.md#listjobsbystatusresponsetypedef).
 
 ### list_pipelines
 
@@ -302,7 +313,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_pipelines)
 
 Arguments mapping described in
-[ListPipelinesRequestTypeDef](./type_defs.md#listpipelinesrequesttypedef).
+[ListPipelinesRequestRequestTypeDef](./type_defs.md#listpipelinesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -310,7 +321,7 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ListPipelinesResponseResponseTypeDef](./type_defs.md#listpipelinesresponseresponsetypedef).
+[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef).
 
 ### list_presets
 
@@ -323,7 +334,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.list_presets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_presets)
 
 Arguments mapping described in
-[ListPresetsRequestTypeDef](./type_defs.md#listpresetsrequesttypedef).
+[ListPresetsRequestRequestTypeDef](./type_defs.md#listpresetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -331,7 +342,7 @@ Keyword-only arguments:
 - `PageToken`: `str`
 
 Returns
-[ListPresetsResponseResponseTypeDef](./type_defs.md#listpresetsresponseresponsetypedef).
+[ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef).
 
 ### read_job
 
@@ -343,14 +354,13 @@ Boto3 documentation:
 [ElasticTranscoder.Client.read_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_job)
 
 Arguments mapping described in
-[ReadJobRequestTypeDef](./type_defs.md#readjobrequesttypedef).
+[ReadJobRequestRequestTypeDef](./type_defs.md#readjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
-Returns
-[ReadJobResponseResponseTypeDef](./type_defs.md#readjobresponseresponsetypedef).
+Returns [ReadJobResponseTypeDef](./type_defs.md#readjobresponsetypedef).
 
 ### read_pipeline
 
@@ -362,14 +372,14 @@ Boto3 documentation:
 [ElasticTranscoder.Client.read_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_pipeline)
 
 Arguments mapping described in
-[ReadPipelineRequestTypeDef](./type_defs.md#readpipelinerequesttypedef).
+[ReadPipelineRequestRequestTypeDef](./type_defs.md#readpipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[ReadPipelineResponseResponseTypeDef](./type_defs.md#readpipelineresponseresponsetypedef).
+[ReadPipelineResponseTypeDef](./type_defs.md#readpipelineresponsetypedef).
 
 ### read_preset
 
@@ -381,14 +391,13 @@ Boto3 documentation:
 [ElasticTranscoder.Client.read_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_preset)
 
 Arguments mapping described in
-[ReadPresetRequestTypeDef](./type_defs.md#readpresetrequesttypedef).
+[ReadPresetRequestRequestTypeDef](./type_defs.md#readpresetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
-Returns
-[ReadPresetResponseResponseTypeDef](./type_defs.md#readpresetresponseresponsetypedef).
+Returns [ReadPresetResponseTypeDef](./type_defs.md#readpresetresponsetypedef).
 
 ### test_role
 
@@ -400,7 +409,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.test_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.test_role)
 
 Arguments mapping described in
-[TestRoleRequestTypeDef](./type_defs.md#testrolerequesttypedef).
+[TestRoleRequestRequestTypeDef](./type_defs.md#testrolerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,8 +418,7 @@ Keyword-only arguments:
 - `OutputBucket`: `str` *(required)*
 - `Topics`: `List`\[`str`\] *(required)*
 
-Returns
-[TestRoleResponseResponseTypeDef](./type_defs.md#testroleresponseresponsetypedef).
+Returns [TestRoleResponseTypeDef](./type_defs.md#testroleresponsetypedef).
 
 ### update_pipeline
 
@@ -423,7 +431,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline)
 
 Arguments mapping described in
-[UpdatePipelineRequestTypeDef](./type_defs.md#updatepipelinerequesttypedef).
+[UpdatePipelineRequestRequestTypeDef](./type_defs.md#updatepipelinerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -439,7 +447,7 @@ Keyword-only arguments:
   [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
 
 Returns
-[UpdatePipelineResponseResponseTypeDef](./type_defs.md#updatepipelineresponseresponsetypedef).
+[UpdatePipelineResponseTypeDef](./type_defs.md#updatepipelineresponsetypedef).
 
 ### update_pipeline_notifications
 
@@ -453,7 +461,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.update_pipeline_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_notifications)
 
 Arguments mapping described in
-[UpdatePipelineNotificationsRequestTypeDef](./type_defs.md#updatepipelinenotificationsrequesttypedef).
+[UpdatePipelineNotificationsRequestRequestTypeDef](./type_defs.md#updatepipelinenotificationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -462,7 +470,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdatePipelineNotificationsResponseResponseTypeDef](./type_defs.md#updatepipelinenotificationsresponseresponsetypedef).
+[UpdatePipelineNotificationsResponseTypeDef](./type_defs.md#updatepipelinenotificationsresponsetypedef).
 
 ### update_pipeline_status
 
@@ -476,7 +484,7 @@ Boto3 documentation:
 [ElasticTranscoder.Client.update_pipeline_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_status)
 
 Arguments mapping described in
-[UpdatePipelineStatusRequestTypeDef](./type_defs.md#updatepipelinestatusrequesttypedef).
+[UpdatePipelineStatusRequestRequestTypeDef](./type_defs.md#updatepipelinestatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -484,7 +492,7 @@ Keyword-only arguments:
 - `Status`: `str` *(required)*
 
 Returns
-[UpdatePipelineStatusResponseResponseTypeDef](./type_defs.md#updatepipelinestatusresponseresponsetypedef).
+[UpdatePipelineStatusResponseTypeDef](./type_defs.md#updatepipelinestatusresponsetypedef).
 
 ### get_paginator
 

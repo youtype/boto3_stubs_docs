@@ -11,6 +11,7 @@ type annotations stubs module
   - [MediaPackageVodClient](#mediapackagevodclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [configure_logs](#configure_logs)
     - [create_asset](#create_asset)
@@ -72,6 +73,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MediaPackageVodClient exceptions.
+
+Type annotations for `boto3.client("mediapackage-vod").exceptions` method.
+
+Boto3 documentation:
+[MediaPackageVod.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -101,7 +113,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.configure_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.configure_logs)
 
 Arguments mapping described in
-[ConfigureLogsRequestTypeDef](./type_defs.md#configurelogsrequesttypedef).
+[ConfigureLogsRequestRequestTypeDef](./type_defs.md#configurelogsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -110,7 +122,7 @@ Keyword-only arguments:
   [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
 
 Returns
-[ConfigureLogsResponseResponseTypeDef](./type_defs.md#configurelogsresponseresponsetypedef).
+[ConfigureLogsResponseTypeDef](./type_defs.md#configurelogsresponsetypedef).
 
 ### create_asset
 
@@ -122,7 +134,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.create_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_asset)
 
 Arguments mapping described in
-[CreateAssetRequestTypeDef](./type_defs.md#createassetrequesttypedef).
+[CreateAssetRequestRequestTypeDef](./type_defs.md#createassetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -134,7 +146,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAssetResponseResponseTypeDef](./type_defs.md#createassetresponseresponsetypedef).
+[CreateAssetResponseTypeDef](./type_defs.md#createassetresponsetypedef).
 
 ### create_packaging_configuration
 
@@ -147,7 +159,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.create_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_packaging_configuration)
 
 Arguments mapping described in
-[CreatePackagingConfigurationRequestTypeDef](./type_defs.md#createpackagingconfigurationrequesttypedef).
+[CreatePackagingConfigurationRequestRequestTypeDef](./type_defs.md#createpackagingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -160,7 +172,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreatePackagingConfigurationResponseResponseTypeDef](./type_defs.md#createpackagingconfigurationresponseresponsetypedef).
+[CreatePackagingConfigurationResponseTypeDef](./type_defs.md#createpackagingconfigurationresponsetypedef).
 
 ### create_packaging_group
 
@@ -173,7 +185,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.create_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.create_packaging_group)
 
 Arguments mapping described in
-[CreatePackagingGroupRequestTypeDef](./type_defs.md#createpackaginggrouprequesttypedef).
+[CreatePackagingGroupRequestRequestTypeDef](./type_defs.md#createpackaginggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -184,7 +196,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreatePackagingGroupResponseResponseTypeDef](./type_defs.md#createpackaginggroupresponseresponsetypedef).
+[CreatePackagingGroupResponseTypeDef](./type_defs.md#createpackaginggroupresponsetypedef).
 
 ### delete_asset
 
@@ -196,7 +208,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_asset)
 
 Arguments mapping described in
-[DeleteAssetRequestTypeDef](./type_defs.md#deleteassetrequesttypedef).
+[DeleteAssetRequestRequestTypeDef](./type_defs.md#deleteassetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -215,7 +227,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.delete_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_packaging_configuration)
 
 Arguments mapping described in
-[DeletePackagingConfigurationRequestTypeDef](./type_defs.md#deletepackagingconfigurationrequesttypedef).
+[DeletePackagingConfigurationRequestRequestTypeDef](./type_defs.md#deletepackagingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -234,7 +246,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.delete_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.delete_packaging_group)
 
 Arguments mapping described in
-[DeletePackagingGroupRequestTypeDef](./type_defs.md#deletepackaginggrouprequesttypedef).
+[DeletePackagingGroupRequestRequestTypeDef](./type_defs.md#deletepackaginggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,14 +264,14 @@ Boto3 documentation:
 [MediaPackageVod.Client.describe_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_asset)
 
 Arguments mapping described in
-[DescribeAssetRequestTypeDef](./type_defs.md#describeassetrequesttypedef).
+[DescribeAssetRequestRequestTypeDef](./type_defs.md#describeassetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeAssetResponseResponseTypeDef](./type_defs.md#describeassetresponseresponsetypedef).
+[DescribeAssetResponseTypeDef](./type_defs.md#describeassetresponsetypedef).
 
 ### describe_packaging_configuration
 
@@ -272,14 +284,14 @@ Boto3 documentation:
 [MediaPackageVod.Client.describe_packaging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_packaging_configuration)
 
 Arguments mapping described in
-[DescribePackagingConfigurationRequestTypeDef](./type_defs.md#describepackagingconfigurationrequesttypedef).
+[DescribePackagingConfigurationRequestRequestTypeDef](./type_defs.md#describepackagingconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribePackagingConfigurationResponseResponseTypeDef](./type_defs.md#describepackagingconfigurationresponseresponsetypedef).
+[DescribePackagingConfigurationResponseTypeDef](./type_defs.md#describepackagingconfigurationresponsetypedef).
 
 ### describe_packaging_group
 
@@ -292,14 +304,14 @@ Boto3 documentation:
 [MediaPackageVod.Client.describe_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.describe_packaging_group)
 
 Arguments mapping described in
-[DescribePackagingGroupRequestTypeDef](./type_defs.md#describepackaginggrouprequesttypedef).
+[DescribePackagingGroupRequestRequestTypeDef](./type_defs.md#describepackaginggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribePackagingGroupResponseResponseTypeDef](./type_defs.md#describepackaginggroupresponseresponsetypedef).
+[DescribePackagingGroupResponseTypeDef](./type_defs.md#describepackaginggroupresponsetypedef).
 
 ### generate_presigned_url
 
@@ -330,7 +342,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.list_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_assets)
 
 Arguments mapping described in
-[ListAssetsRequestTypeDef](./type_defs.md#listassetsrequesttypedef).
+[ListAssetsRequestRequestTypeDef](./type_defs.md#listassetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -338,8 +350,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `PackagingGroupId`: `str`
 
-Returns
-[ListAssetsResponseResponseTypeDef](./type_defs.md#listassetsresponseresponsetypedef).
+Returns [ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef).
 
 ### list_packaging_configurations
 
@@ -352,7 +363,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.list_packaging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_packaging_configurations)
 
 Arguments mapping described in
-[ListPackagingConfigurationsRequestTypeDef](./type_defs.md#listpackagingconfigurationsrequesttypedef).
+[ListPackagingConfigurationsRequestRequestTypeDef](./type_defs.md#listpackagingconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -361,7 +372,7 @@ Keyword-only arguments:
 - `PackagingGroupId`: `str`
 
 Returns
-[ListPackagingConfigurationsResponseResponseTypeDef](./type_defs.md#listpackagingconfigurationsresponseresponsetypedef).
+[ListPackagingConfigurationsResponseTypeDef](./type_defs.md#listpackagingconfigurationsresponsetypedef).
 
 ### list_packaging_groups
 
@@ -374,7 +385,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.list_packaging_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_packaging_groups)
 
 Arguments mapping described in
-[ListPackagingGroupsRequestTypeDef](./type_defs.md#listpackaginggroupsrequesttypedef).
+[ListPackagingGroupsRequestRequestTypeDef](./type_defs.md#listpackaginggroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -382,7 +393,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPackagingGroupsResponseResponseTypeDef](./type_defs.md#listpackaginggroupsresponseresponsetypedef).
+[ListPackagingGroupsResponseTypeDef](./type_defs.md#listpackaginggroupsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -395,14 +406,14 @@ Boto3 documentation:
 [MediaPackageVod.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -414,7 +425,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -431,7 +442,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,7 +460,7 @@ Boto3 documentation:
 [MediaPackageVod.Client.update_packaging_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.update_packaging_group)
 
 Arguments mapping described in
-[UpdatePackagingGroupRequestTypeDef](./type_defs.md#updatepackaginggrouprequesttypedef).
+[UpdatePackagingGroupRequestRequestTypeDef](./type_defs.md#updatepackaginggrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -457,7 +468,7 @@ Keyword-only arguments:
 - `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
 
 Returns
-[UpdatePackagingGroupResponseResponseTypeDef](./type_defs.md#updatepackaginggroupresponseresponsetypedef).
+[UpdatePackagingGroupResponseTypeDef](./type_defs.md#updatepackaginggroupresponsetypedef).
 
 ### get_paginator
 

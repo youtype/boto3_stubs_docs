@@ -11,6 +11,7 @@ type annotations stubs module
   - [LexRuntimeV2Client](#lexruntimev2client)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [delete_session](#delete_session)
     - [generate_presigned_url](#generate_presigned_url)
@@ -61,6 +62,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+LexRuntimeV2Client exceptions.
+
+Type annotations for `boto3.client("lexv2-runtime").exceptions` method.
+
+Boto3 documentation:
+[LexRuntimeV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -86,7 +98,7 @@ Boto3 documentation:
 [LexRuntimeV2.Client.delete_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.delete_session)
 
 Arguments mapping described in
-[DeleteSessionRequestTypeDef](./type_defs.md#deletesessionrequesttypedef).
+[DeleteSessionRequestRequestTypeDef](./type_defs.md#deletesessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -96,7 +108,7 @@ Keyword-only arguments:
 - `sessionId`: `str` *(required)*
 
 Returns
-[DeleteSessionResponseResponseTypeDef](./type_defs.md#deletesessionresponseresponsetypedef).
+[DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -127,7 +139,7 @@ Boto3 documentation:
 [LexRuntimeV2.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.get_session)
 
 Arguments mapping described in
-[GetSessionRequestTypeDef](./type_defs.md#getsessionrequesttypedef).
+[GetSessionRequestRequestTypeDef](./type_defs.md#getsessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -136,8 +148,7 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `sessionId`: `str` *(required)*
 
-Returns
-[GetSessionResponseResponseTypeDef](./type_defs.md#getsessionresponseresponsetypedef).
+Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
 
 ### put_session
 
@@ -150,7 +161,7 @@ Boto3 documentation:
 [LexRuntimeV2.Client.put_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.put_session)
 
 Arguments mapping described in
-[PutSessionRequestTypeDef](./type_defs.md#putsessionrequesttypedef).
+[PutSessionRequestRequestTypeDef](./type_defs.md#putsessionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -164,8 +175,7 @@ Keyword-only arguments:
 - `requestAttributes`: `Dict`\[`str`, `str`\]
 - `responseContentType`: `str`
 
-Returns
-[PutSessionResponseResponseTypeDef](./type_defs.md#putsessionresponseresponsetypedef).
+Returns [PutSessionResponseTypeDef](./type_defs.md#putsessionresponsetypedef).
 
 ### recognize_text
 
@@ -177,7 +187,7 @@ Boto3 documentation:
 [LexRuntimeV2.Client.recognize_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_text)
 
 Arguments mapping described in
-[RecognizeTextRequestTypeDef](./type_defs.md#recognizetextrequesttypedef).
+[RecognizeTextRequestRequestTypeDef](./type_defs.md#recognizetextrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -190,7 +200,7 @@ Keyword-only arguments:
 - `requestAttributes`: `Dict`\[`str`, `str`\]
 
 Returns
-[RecognizeTextResponseResponseTypeDef](./type_defs.md#recognizetextresponseresponsetypedef).
+[RecognizeTextResponseTypeDef](./type_defs.md#recognizetextresponsetypedef).
 
 ### recognize_utterance
 
@@ -203,7 +213,7 @@ Boto3 documentation:
 [LexRuntimeV2.Client.recognize_utterance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_utterance)
 
 Arguments mapping described in
-[RecognizeUtteranceRequestTypeDef](./type_defs.md#recognizeutterancerequesttypedef).
+[RecognizeUtteranceRequestRequestTypeDef](./type_defs.md#recognizeutterancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,4 +228,4 @@ Keyword-only arguments:
 - `inputStream`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
-[RecognizeUtteranceResponseResponseTypeDef](./type_defs.md#recognizeutteranceresponseresponsetypedef).
+[RecognizeUtteranceResponseTypeDef](./type_defs.md#recognizeutteranceresponsetypedef).

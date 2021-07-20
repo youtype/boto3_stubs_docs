@@ -11,6 +11,7 @@ type annotations stubs module
   - [IoTSecureTunnelingClient](#iotsecuretunnelingclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [close_tunnel](#close_tunnel)
     - [describe_tunnel](#describe_tunnel)
@@ -57,6 +58,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IoTSecureTunnelingClient exceptions.
+
+Type annotations for `boto3.client("iotsecuretunneling").exceptions` method.
+
+Boto3 documentation:
+[IoTSecureTunneling.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -82,7 +94,7 @@ Boto3 documentation:
 [IoTSecureTunneling.Client.close_tunnel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.close_tunnel)
 
 Arguments mapping described in
-[CloseTunnelRequestTypeDef](./type_defs.md#closetunnelrequesttypedef).
+[CloseTunnelRequestRequestTypeDef](./type_defs.md#closetunnelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -102,14 +114,14 @@ Boto3 documentation:
 [IoTSecureTunneling.Client.describe_tunnel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.describe_tunnel)
 
 Arguments mapping described in
-[DescribeTunnelRequestTypeDef](./type_defs.md#describetunnelrequesttypedef).
+[DescribeTunnelRequestRequestTypeDef](./type_defs.md#describetunnelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `tunnelId`: `str` *(required)*
 
 Returns
-[DescribeTunnelResponseResponseTypeDef](./type_defs.md#describetunnelresponseresponsetypedef).
+[DescribeTunnelResponseTypeDef](./type_defs.md#describetunnelresponsetypedef).
 
 ### generate_presigned_url
 
@@ -141,14 +153,14 @@ Boto3 documentation:
 [IoTSecureTunneling.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_tunnels
 
@@ -160,7 +172,7 @@ Boto3 documentation:
 [IoTSecureTunneling.Client.list_tunnels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.list_tunnels)
 
 Arguments mapping described in
-[ListTunnelsRequestTypeDef](./type_defs.md#listtunnelsrequesttypedef).
+[ListTunnelsRequestRequestTypeDef](./type_defs.md#listtunnelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -169,7 +181,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListTunnelsResponseResponseTypeDef](./type_defs.md#listtunnelsresponseresponsetypedef).
+[ListTunnelsResponseTypeDef](./type_defs.md#listtunnelsresponsetypedef).
 
 ### open_tunnel
 
@@ -182,7 +194,7 @@ Boto3 documentation:
 [IoTSecureTunneling.Client.open_tunnel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.open_tunnel)
 
 Arguments mapping described in
-[OpenTunnelRequestTypeDef](./type_defs.md#opentunnelrequesttypedef).
+[OpenTunnelRequestRequestTypeDef](./type_defs.md#opentunnelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,8 +204,7 @@ Keyword-only arguments:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
 
-Returns
-[OpenTunnelResponseResponseTypeDef](./type_defs.md#opentunnelresponseresponsetypedef).
+Returns [OpenTunnelResponseTypeDef](./type_defs.md#opentunnelresponsetypedef).
 
 ### tag_resource
 
@@ -205,7 +216,7 @@ Boto3 documentation:
 [IoTSecureTunneling.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,7 +236,7 @@ Boto3 documentation:
 [IoTSecureTunneling.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

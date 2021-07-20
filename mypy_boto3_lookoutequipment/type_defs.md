@@ -8,27 +8,27 @@ type annotations stubs module
 [mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
 - [Typed dictionaries for boto3 LookoutEquipment module](#typed-dictionaries-for-boto3-lookoutequipment-module)
-  - [CreateDatasetRequestTypeDef](#createdatasetrequesttypedef)
-  - [CreateDatasetResponseResponseTypeDef](#createdatasetresponseresponsetypedef)
-  - [CreateInferenceSchedulerRequestTypeDef](#createinferenceschedulerrequesttypedef)
-  - [CreateInferenceSchedulerResponseResponseTypeDef](#createinferenceschedulerresponseresponsetypedef)
-  - [CreateModelRequestTypeDef](#createmodelrequesttypedef)
-  - [CreateModelResponseResponseTypeDef](#createmodelresponseresponsetypedef)
+  - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
+  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
+  - [CreateInferenceSchedulerRequestRequestTypeDef](#createinferenceschedulerrequestrequesttypedef)
+  - [CreateInferenceSchedulerResponseTypeDef](#createinferenceschedulerresponsetypedef)
+  - [CreateModelRequestRequestTypeDef](#createmodelrequestrequesttypedef)
+  - [CreateModelResponseTypeDef](#createmodelresponsetypedef)
   - [DataIngestionJobSummaryTypeDef](#dataingestionjobsummarytypedef)
   - [DataPreProcessingConfigurationTypeDef](#datapreprocessingconfigurationtypedef)
   - [DatasetSchemaTypeDef](#datasetschematypedef)
   - [DatasetSummaryTypeDef](#datasetsummarytypedef)
-  - [DeleteDatasetRequestTypeDef](#deletedatasetrequesttypedef)
-  - [DeleteInferenceSchedulerRequestTypeDef](#deleteinferenceschedulerrequesttypedef)
-  - [DeleteModelRequestTypeDef](#deletemodelrequesttypedef)
-  - [DescribeDataIngestionJobRequestTypeDef](#describedataingestionjobrequesttypedef)
-  - [DescribeDataIngestionJobResponseResponseTypeDef](#describedataingestionjobresponseresponsetypedef)
-  - [DescribeDatasetRequestTypeDef](#describedatasetrequesttypedef)
-  - [DescribeDatasetResponseResponseTypeDef](#describedatasetresponseresponsetypedef)
-  - [DescribeInferenceSchedulerRequestTypeDef](#describeinferenceschedulerrequesttypedef)
-  - [DescribeInferenceSchedulerResponseResponseTypeDef](#describeinferenceschedulerresponseresponsetypedef)
-  - [DescribeModelRequestTypeDef](#describemodelrequesttypedef)
-  - [DescribeModelResponseResponseTypeDef](#describemodelresponseresponsetypedef)
+  - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
+  - [DeleteInferenceSchedulerRequestRequestTypeDef](#deleteinferenceschedulerrequestrequesttypedef)
+  - [DeleteModelRequestRequestTypeDef](#deletemodelrequestrequesttypedef)
+  - [DescribeDataIngestionJobRequestRequestTypeDef](#describedataingestionjobrequestrequesttypedef)
+  - [DescribeDataIngestionJobResponseTypeDef](#describedataingestionjobresponsetypedef)
+  - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
+  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
+  - [DescribeInferenceSchedulerRequestRequestTypeDef](#describeinferenceschedulerrequestrequesttypedef)
+  - [DescribeInferenceSchedulerResponseTypeDef](#describeinferenceschedulerresponsetypedef)
+  - [DescribeModelRequestRequestTypeDef](#describemodelrequestrequesttypedef)
+  - [DescribeModelResponseTypeDef](#describemodelresponsetypedef)
   - [InferenceExecutionSummaryTypeDef](#inferenceexecutionsummarytypedef)
   - [InferenceInputConfigurationTypeDef](#inferenceinputconfigurationtypedef)
   - [InferenceInputNameConfigurationTypeDef](#inferenceinputnameconfigurationtypedef)
@@ -40,36 +40,36 @@ type annotations stubs module
   - [IngestionS3InputConfigurationTypeDef](#ingestions3inputconfigurationtypedef)
   - [LabelsInputConfigurationTypeDef](#labelsinputconfigurationtypedef)
   - [LabelsS3InputConfigurationTypeDef](#labelss3inputconfigurationtypedef)
-  - [ListDataIngestionJobsRequestTypeDef](#listdataingestionjobsrequesttypedef)
-  - [ListDataIngestionJobsResponseResponseTypeDef](#listdataingestionjobsresponseresponsetypedef)
-  - [ListDatasetsRequestTypeDef](#listdatasetsrequesttypedef)
-  - [ListDatasetsResponseResponseTypeDef](#listdatasetsresponseresponsetypedef)
-  - [ListInferenceExecutionsRequestTypeDef](#listinferenceexecutionsrequesttypedef)
-  - [ListInferenceExecutionsResponseResponseTypeDef](#listinferenceexecutionsresponseresponsetypedef)
-  - [ListInferenceSchedulersRequestTypeDef](#listinferenceschedulersrequesttypedef)
-  - [ListInferenceSchedulersResponseResponseTypeDef](#listinferenceschedulersresponseresponsetypedef)
-  - [ListModelsRequestTypeDef](#listmodelsrequesttypedef)
-  - [ListModelsResponseResponseTypeDef](#listmodelsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListDataIngestionJobsRequestRequestTypeDef](#listdataingestionjobsrequestrequesttypedef)
+  - [ListDataIngestionJobsResponseTypeDef](#listdataingestionjobsresponsetypedef)
+  - [ListDatasetsRequestRequestTypeDef](#listdatasetsrequestrequesttypedef)
+  - [ListDatasetsResponseTypeDef](#listdatasetsresponsetypedef)
+  - [ListInferenceExecutionsRequestRequestTypeDef](#listinferenceexecutionsrequestrequesttypedef)
+  - [ListInferenceExecutionsResponseTypeDef](#listinferenceexecutionsresponsetypedef)
+  - [ListInferenceSchedulersRequestRequestTypeDef](#listinferenceschedulersrequestrequesttypedef)
+  - [ListInferenceSchedulersResponseTypeDef](#listinferenceschedulersresponsetypedef)
+  - [ListModelsRequestRequestTypeDef](#listmodelsrequestrequesttypedef)
+  - [ListModelsResponseTypeDef](#listmodelsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ModelSummaryTypeDef](#modelsummarytypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [S3ObjectTypeDef](#s3objecttypedef)
-  - [StartDataIngestionJobRequestTypeDef](#startdataingestionjobrequesttypedef)
-  - [StartDataIngestionJobResponseResponseTypeDef](#startdataingestionjobresponseresponsetypedef)
-  - [StartInferenceSchedulerRequestTypeDef](#startinferenceschedulerrequesttypedef)
-  - [StartInferenceSchedulerResponseResponseTypeDef](#startinferenceschedulerresponseresponsetypedef)
-  - [StopInferenceSchedulerRequestTypeDef](#stopinferenceschedulerrequesttypedef)
-  - [StopInferenceSchedulerResponseResponseTypeDef](#stopinferenceschedulerresponseresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [StartDataIngestionJobRequestRequestTypeDef](#startdataingestionjobrequestrequesttypedef)
+  - [StartDataIngestionJobResponseTypeDef](#startdataingestionjobresponsetypedef)
+  - [StartInferenceSchedulerRequestRequestTypeDef](#startinferenceschedulerrequestrequesttypedef)
+  - [StartInferenceSchedulerResponseTypeDef](#startinferenceschedulerresponsetypedef)
+  - [StopInferenceSchedulerRequestRequestTypeDef](#stopinferenceschedulerrequestrequesttypedef)
+  - [StopInferenceSchedulerResponseTypeDef](#stopinferenceschedulerresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateInferenceSchedulerRequestTypeDef](#updateinferenceschedulerrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateInferenceSchedulerRequestRequestTypeDef](#updateinferenceschedulerrequestrequesttypedef)
 
-## CreateDatasetRequestTypeDef
+## CreateDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import CreateDatasetRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import CreateDatasetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -83,10 +83,10 @@ Optional fields:
 - `ServerSideKmsKeyId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDatasetResponseResponseTypeDef
+## CreateDatasetResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import CreateDatasetResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import CreateDatasetResponseTypeDef
 ```
 
 Required fields:
@@ -97,10 +97,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateInferenceSchedulerRequestTypeDef
+## CreateInferenceSchedulerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import CreateInferenceSchedulerRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import CreateInferenceSchedulerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -122,10 +122,10 @@ Optional fields:
 - `ServerSideKmsKeyId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateInferenceSchedulerResponseResponseTypeDef
+## CreateInferenceSchedulerResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import CreateInferenceSchedulerResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import CreateInferenceSchedulerResponseTypeDef
 ```
 
 Required fields:
@@ -137,10 +137,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateModelRequestTypeDef
+## CreateModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import CreateModelRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import CreateModelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -164,10 +164,10 @@ Optional fields:
 - `ServerSideKmsKeyId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateModelResponseResponseTypeDef
+## CreateModelResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import CreateModelResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import CreateModelResponseTypeDef
 ```
 
 Required fields:
@@ -226,50 +226,50 @@ Optional fields:
 - `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
 - `CreatedAt`: `datetime`
 
-## DeleteDatasetRequestTypeDef
+## DeleteDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import DeleteDatasetRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import DeleteDatasetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DatasetName`: `str`
 
-## DeleteInferenceSchedulerRequestTypeDef
+## DeleteInferenceSchedulerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import DeleteInferenceSchedulerRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import DeleteInferenceSchedulerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InferenceSchedulerName`: `str`
 
-## DeleteModelRequestTypeDef
+## DeleteModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import DeleteModelRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import DeleteModelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ModelName`: `str`
 
-## DescribeDataIngestionJobRequestTypeDef
+## DescribeDataIngestionJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import DescribeDataIngestionJobRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import DescribeDataIngestionJobRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `JobId`: `str`
 
-## DescribeDataIngestionJobResponseResponseTypeDef
+## DescribeDataIngestionJobResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import DescribeDataIngestionJobResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import DescribeDataIngestionJobResponseTypeDef
 ```
 
 Required fields:
@@ -285,20 +285,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDatasetRequestTypeDef
+## DescribeDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import DescribeDatasetRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import DescribeDatasetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `DatasetName`: `str`
 
-## DescribeDatasetResponseResponseTypeDef
+## DescribeDatasetResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import DescribeDatasetResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import DescribeDatasetResponseTypeDef
 ```
 
 Required fields:
@@ -315,20 +315,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeInferenceSchedulerRequestTypeDef
+## DescribeInferenceSchedulerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import DescribeInferenceSchedulerRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import DescribeInferenceSchedulerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InferenceSchedulerName`: `str`
 
-## DescribeInferenceSchedulerResponseResponseTypeDef
+## DescribeInferenceSchedulerResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import DescribeInferenceSchedulerResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import DescribeInferenceSchedulerResponseTypeDef
 ```
 
 Required fields:
@@ -353,20 +353,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeModelRequestTypeDef
+## DescribeModelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import DescribeModelRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import DescribeModelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ModelName`: `str`
 
-## DescribeModelResponseResponseTypeDef
+## DescribeModelResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import DescribeModelResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import DescribeModelResponseTypeDef
 ```
 
 Required fields:
@@ -556,10 +556,10 @@ Optional fields:
 
 - `Prefix`: `str`
 
-## ListDataIngestionJobsRequestTypeDef
+## ListDataIngestionJobsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import ListDataIngestionJobsRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import ListDataIngestionJobsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -569,10 +569,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `Status`: [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
 
-## ListDataIngestionJobsResponseResponseTypeDef
+## ListDataIngestionJobsResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import ListDataIngestionJobsResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import ListDataIngestionJobsResponseTypeDef
 ```
 
 Required fields:
@@ -583,10 +583,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatasetsRequestTypeDef
+## ListDatasetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import ListDatasetsRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import ListDatasetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -595,10 +595,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `DatasetNameBeginsWith`: `str`
 
-## ListDatasetsResponseResponseTypeDef
+## ListDatasetsResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import ListDatasetsResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import ListDatasetsResponseTypeDef
 ```
 
 Required fields:
@@ -609,10 +609,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInferenceExecutionsRequestTypeDef
+## ListInferenceExecutionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import ListInferenceExecutionsRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import ListInferenceExecutionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -628,10 +628,10 @@ Optional fields:
 - `Status`:
   [InferenceExecutionStatusType](./literals.md#inferenceexecutionstatustype)
 
-## ListInferenceExecutionsResponseResponseTypeDef
+## ListInferenceExecutionsResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import ListInferenceExecutionsResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import ListInferenceExecutionsResponseTypeDef
 ```
 
 Required fields:
@@ -642,10 +642,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInferenceSchedulersRequestTypeDef
+## ListInferenceSchedulersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import ListInferenceSchedulersRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import ListInferenceSchedulersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -655,10 +655,10 @@ Optional fields:
 - `InferenceSchedulerNameBeginsWith`: `str`
 - `ModelName`: `str`
 
-## ListInferenceSchedulersResponseResponseTypeDef
+## ListInferenceSchedulersResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import ListInferenceSchedulersResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import ListInferenceSchedulersResponseTypeDef
 ```
 
 Required fields:
@@ -669,10 +669,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListModelsRequestTypeDef
+## ListModelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import ListModelsRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import ListModelsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -683,10 +683,10 @@ Optional fields:
 - `ModelNameBeginsWith`: `str`
 - `DatasetNameBeginsWith`: `str`
 
-## ListModelsResponseResponseTypeDef
+## ListModelsResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import ListModelsResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import ListModelsResponseTypeDef
 ```
 
 Required fields:
@@ -697,20 +697,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -759,10 +759,10 @@ Required fields:
 - `Bucket`: `str`
 - `Key`: `str`
 
-## StartDataIngestionJobRequestTypeDef
+## StartDataIngestionJobRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import StartDataIngestionJobRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import StartDataIngestionJobRequestRequestTypeDef
 ```
 
 Required fields:
@@ -773,10 +773,10 @@ Required fields:
 - `RoleArn`: `str`
 - `ClientToken`: `str`
 
-## StartDataIngestionJobResponseResponseTypeDef
+## StartDataIngestionJobResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import StartDataIngestionJobResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import StartDataIngestionJobResponseTypeDef
 ```
 
 Required fields:
@@ -786,47 +786,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartInferenceSchedulerRequestTypeDef
+## StartInferenceSchedulerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import StartInferenceSchedulerRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import StartInferenceSchedulerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `InferenceSchedulerName`: `str`
 
-## StartInferenceSchedulerResponseResponseTypeDef
+## StartInferenceSchedulerResponseTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import StartInferenceSchedulerResponseResponseTypeDef
-```
-
-Required fields:
-
-- `ModelArn`: `str`
-- `ModelName`: `str`
-- `InferenceSchedulerName`: `str`
-- `InferenceSchedulerArn`: `str`
-- `Status`:
-  [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-## StopInferenceSchedulerRequestTypeDef
-
-```python
-from mypy_boto3_lookoutequipment.type_defs import StopInferenceSchedulerRequestTypeDef
-```
-
-Required fields:
-
-- `InferenceSchedulerName`: `str`
-
-## StopInferenceSchedulerResponseResponseTypeDef
-
-```python
-from mypy_boto3_lookoutequipment.type_defs import StopInferenceSchedulerResponseResponseTypeDef
+from mypy_boto3_lookoutequipment.type_defs import StartInferenceSchedulerResponseTypeDef
 ```
 
 Required fields:
@@ -840,10 +813,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## StopInferenceSchedulerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import StopInferenceSchedulerRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InferenceSchedulerName`: `str`
+
+## StopInferenceSchedulerResponseTypeDef
+
+```python
+from mypy_boto3_lookoutequipment.type_defs import StopInferenceSchedulerResponseTypeDef
+```
+
+Required fields:
+
+- `ModelArn`: `str`
+- `ModelName`: `str`
+- `InferenceSchedulerName`: `str`
+- `InferenceSchedulerArn`: `str`
+- `Status`:
+  [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_lookoutequipment.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -862,10 +862,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -873,10 +873,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateInferenceSchedulerRequestTypeDef
+## UpdateInferenceSchedulerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lookoutequipment.type_defs import UpdateInferenceSchedulerRequestTypeDef
+from mypy_boto3_lookoutequipment.type_defs import UpdateInferenceSchedulerRequestRequestTypeDef
 ```
 
 Required fields:

@@ -8,39 +8,39 @@ type annotations stubs module
 [mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
 
 - [Typed dictionaries for boto3 Detective module](#typed-dictionaries-for-boto3-detective-module)
-  - [AcceptInvitationRequestTypeDef](#acceptinvitationrequesttypedef)
+  - [AcceptInvitationRequestRequestTypeDef](#acceptinvitationrequestrequesttypedef)
   - [AccountTypeDef](#accounttypedef)
-  - [CreateGraphRequestTypeDef](#creategraphrequesttypedef)
-  - [CreateGraphResponseResponseTypeDef](#creategraphresponseresponsetypedef)
-  - [CreateMembersRequestTypeDef](#createmembersrequesttypedef)
-  - [CreateMembersResponseResponseTypeDef](#createmembersresponseresponsetypedef)
-  - [DeleteGraphRequestTypeDef](#deletegraphrequesttypedef)
-  - [DeleteMembersRequestTypeDef](#deletemembersrequesttypedef)
-  - [DeleteMembersResponseResponseTypeDef](#deletemembersresponseresponsetypedef)
-  - [DisassociateMembershipRequestTypeDef](#disassociatemembershiprequesttypedef)
-  - [GetMembersRequestTypeDef](#getmembersrequesttypedef)
-  - [GetMembersResponseResponseTypeDef](#getmembersresponseresponsetypedef)
+  - [CreateGraphRequestRequestTypeDef](#creategraphrequestrequesttypedef)
+  - [CreateGraphResponseTypeDef](#creategraphresponsetypedef)
+  - [CreateMembersRequestRequestTypeDef](#createmembersrequestrequesttypedef)
+  - [CreateMembersResponseTypeDef](#createmembersresponsetypedef)
+  - [DeleteGraphRequestRequestTypeDef](#deletegraphrequestrequesttypedef)
+  - [DeleteMembersRequestRequestTypeDef](#deletemembersrequestrequesttypedef)
+  - [DeleteMembersResponseTypeDef](#deletemembersresponsetypedef)
+  - [DisassociateMembershipRequestRequestTypeDef](#disassociatemembershiprequestrequesttypedef)
+  - [GetMembersRequestRequestTypeDef](#getmembersrequestrequesttypedef)
+  - [GetMembersResponseTypeDef](#getmembersresponsetypedef)
   - [GraphTypeDef](#graphtypedef)
-  - [ListGraphsRequestTypeDef](#listgraphsrequesttypedef)
-  - [ListGraphsResponseResponseTypeDef](#listgraphsresponseresponsetypedef)
-  - [ListInvitationsRequestTypeDef](#listinvitationsrequesttypedef)
-  - [ListInvitationsResponseResponseTypeDef](#listinvitationsresponseresponsetypedef)
-  - [ListMembersRequestTypeDef](#listmembersrequesttypedef)
-  - [ListMembersResponseResponseTypeDef](#listmembersresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListGraphsRequestRequestTypeDef](#listgraphsrequestrequesttypedef)
+  - [ListGraphsResponseTypeDef](#listgraphsresponsetypedef)
+  - [ListInvitationsRequestRequestTypeDef](#listinvitationsrequestrequesttypedef)
+  - [ListInvitationsResponseTypeDef](#listinvitationsresponsetypedef)
+  - [ListMembersRequestRequestTypeDef](#listmembersrequestrequesttypedef)
+  - [ListMembersResponseTypeDef](#listmembersresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MemberDetailTypeDef](#memberdetailtypedef)
-  - [RejectInvitationRequestTypeDef](#rejectinvitationrequesttypedef)
+  - [RejectInvitationRequestRequestTypeDef](#rejectinvitationrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartMonitoringMemberRequestTypeDef](#startmonitoringmemberrequesttypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [StartMonitoringMemberRequestRequestTypeDef](#startmonitoringmemberrequestrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UnprocessedAccountTypeDef](#unprocessedaccounttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
-## AcceptInvitationRequestTypeDef
+## AcceptInvitationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import AcceptInvitationRequestTypeDef
+from mypy_boto3_detective.type_defs import AcceptInvitationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -58,20 +58,20 @@ Required fields:
 - `AccountId`: `str`
 - `EmailAddress`: `str`
 
-## CreateGraphRequestTypeDef
+## CreateGraphRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import CreateGraphRequestTypeDef
+from mypy_boto3_detective.type_defs import CreateGraphRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateGraphResponseResponseTypeDef
+## CreateGraphResponseTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import CreateGraphResponseResponseTypeDef
+from mypy_boto3_detective.type_defs import CreateGraphResponseTypeDef
 ```
 
 Required fields:
@@ -80,10 +80,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateMembersRequestTypeDef
+## CreateMembersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import CreateMembersRequestTypeDef
+from mypy_boto3_detective.type_defs import CreateMembersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -96,10 +96,10 @@ Optional fields:
 - `Message`: `str`
 - `DisableEmailNotification`: `bool`
 
-## CreateMembersResponseResponseTypeDef
+## CreateMembersResponseTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import CreateMembersResponseResponseTypeDef
+from mypy_boto3_detective.type_defs import CreateMembersResponseTypeDef
 ```
 
 Required fields:
@@ -111,20 +111,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteGraphRequestTypeDef
+## DeleteGraphRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import DeleteGraphRequestTypeDef
+from mypy_boto3_detective.type_defs import DeleteGraphRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `GraphArn`: `str`
 
-## DeleteMembersRequestTypeDef
+## DeleteMembersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import DeleteMembersRequestTypeDef
+from mypy_boto3_detective.type_defs import DeleteMembersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -132,10 +132,10 @@ Required fields:
 - `GraphArn`: `str`
 - `AccountIds`: `List`\[`str`\]
 
-## DeleteMembersResponseResponseTypeDef
+## DeleteMembersResponseTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import DeleteMembersResponseResponseTypeDef
+from mypy_boto3_detective.type_defs import DeleteMembersResponseTypeDef
 ```
 
 Required fields:
@@ -146,20 +146,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateMembershipRequestTypeDef
+## DisassociateMembershipRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import DisassociateMembershipRequestTypeDef
+from mypy_boto3_detective.type_defs import DisassociateMembershipRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `GraphArn`: `str`
 
-## GetMembersRequestTypeDef
+## GetMembersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import GetMembersRequestTypeDef
+from mypy_boto3_detective.type_defs import GetMembersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -167,10 +167,10 @@ Required fields:
 - `GraphArn`: `str`
 - `AccountIds`: `List`\[`str`\]
 
-## GetMembersResponseResponseTypeDef
+## GetMembersResponseTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import GetMembersResponseResponseTypeDef
+from mypy_boto3_detective.type_defs import GetMembersResponseTypeDef
 ```
 
 Required fields:
@@ -193,10 +193,10 @@ Optional fields:
 - `Arn`: `str`
 - `CreatedTime`: `datetime`
 
-## ListGraphsRequestTypeDef
+## ListGraphsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import ListGraphsRequestTypeDef
+from mypy_boto3_detective.type_defs import ListGraphsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -204,10 +204,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListGraphsResponseResponseTypeDef
+## ListGraphsResponseTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import ListGraphsResponseResponseTypeDef
+from mypy_boto3_detective.type_defs import ListGraphsResponseTypeDef
 ```
 
 Required fields:
@@ -217,10 +217,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListInvitationsRequestTypeDef
+## ListInvitationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import ListInvitationsRequestTypeDef
+from mypy_boto3_detective.type_defs import ListInvitationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -228,10 +228,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListInvitationsResponseResponseTypeDef
+## ListInvitationsResponseTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import ListInvitationsResponseResponseTypeDef
+from mypy_boto3_detective.type_defs import ListInvitationsResponseTypeDef
 ```
 
 Required fields:
@@ -242,10 +242,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListMembersRequestTypeDef
+## ListMembersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import ListMembersRequestTypeDef
+from mypy_boto3_detective.type_defs import ListMembersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -257,10 +257,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListMembersResponseResponseTypeDef
+## ListMembersResponseTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import ListMembersResponseResponseTypeDef
+from mypy_boto3_detective.type_defs import ListMembersResponseTypeDef
 ```
 
 Required fields:
@@ -271,20 +271,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_detective.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_detective.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -316,10 +316,10 @@ Optional fields:
 - `PercentOfGraphUtilization`: `float`
 - `PercentOfGraphUtilizationUpdatedTime`: `datetime`
 
-## RejectInvitationRequestTypeDef
+## RejectInvitationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import RejectInvitationRequestTypeDef
+from mypy_boto3_detective.type_defs import RejectInvitationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -340,10 +340,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## StartMonitoringMemberRequestTypeDef
+## StartMonitoringMemberRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import StartMonitoringMemberRequestTypeDef
+from mypy_boto3_detective.type_defs import StartMonitoringMemberRequestRequestTypeDef
 ```
 
 Required fields:
@@ -351,10 +351,10 @@ Required fields:
 - `GraphArn`: `str`
 - `AccountId`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_detective.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -373,10 +373,10 @@ Optional fields:
 - `AccountId`: `str`
 - `Reason`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_detective.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_detective.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:

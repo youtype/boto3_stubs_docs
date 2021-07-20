@@ -453,8 +453,7 @@ Keyword-only arguments:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns
-[PublishResponseResponseTypeDef](./type_defs.md#publishresponseresponsetypedef).
+Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 
 #### PlatformEndpoint.reload method
 
@@ -614,7 +613,7 @@ Boto3 documentation:
 #### Topic.add_permission method
 
 Adds a statement to a topic's access control policy, granting access for the
-specified AWS accounts to the specified actions.
+specified accounts to the specified actions.
 
 Type annotations for `boto3.resource("sns").add_permission` method.
 
@@ -706,8 +705,7 @@ Keyword-only arguments:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
-Returns
-[PublishResponseResponseTypeDef](./type_defs.md#publishresponseresponsetypedef).
+Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 
 #### Topic.reload method
 

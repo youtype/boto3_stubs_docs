@@ -35,6 +35,7 @@ from mypy_boto3_timestream_query.client import TimestreamQueryClient
 - [can_paginate](./client.md#can_paginate)
 - [cancel_query](./client.md#cancel_query)
 - [describe_endpoints](./client.md#describe_endpoints)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 - [query](./client.md#query)
@@ -86,18 +87,18 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_timestream_query.type_defs import CancelQueryRequestTypeDef, ...
+from mypy_boto3_timestream_query.type_defs import CancelQueryRequestRequestTypeDef, ...
 ```
 
-- [CancelQueryRequestTypeDef](./type_defs.md#cancelqueryrequesttypedef)
-- [CancelQueryResponseResponseTypeDef](./type_defs.md#cancelqueryresponseresponsetypedef)
+- [CancelQueryRequestRequestTypeDef](./type_defs.md#cancelqueryrequestrequesttypedef)
+- [CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef)
 - [ColumnInfoTypeDef](./type_defs.md#columninfotypedef)
 - [DatumTypeDef](./type_defs.md#datumtypedef)
-- [DescribeEndpointsResponseResponseTypeDef](./type_defs.md#describeendpointsresponseresponsetypedef)
+- [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [QueryRequestTypeDef](./type_defs.md#queryrequesttypedef)
-- [QueryResponseResponseTypeDef](./type_defs.md#queryresponseresponsetypedef)
+- [QueryRequestRequestTypeDef](./type_defs.md#queryrequestrequesttypedef)
+- [QueryResponseTypeDef](./type_defs.md#queryresponsetypedef)
 - [QueryStatusTypeDef](./type_defs.md#querystatustypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RowTypeDef](./type_defs.md#rowtypedef)

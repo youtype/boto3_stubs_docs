@@ -14,18 +14,18 @@ type annotations stubs module
   - [DASHTimestampRangeTypeDef](#dashtimestamprangetypedef)
   - [FragmentSelectorTypeDef](#fragmentselectortypedef)
   - [FragmentTypeDef](#fragmenttypedef)
-  - [GetClipInputTypeDef](#getclipinputtypedef)
-  - [GetClipOutputResponseTypeDef](#getclipoutputresponsetypedef)
-  - [GetDASHStreamingSessionURLInputTypeDef](#getdashstreamingsessionurlinputtypedef)
-  - [GetDASHStreamingSessionURLOutputResponseTypeDef](#getdashstreamingsessionurloutputresponsetypedef)
-  - [GetHLSStreamingSessionURLInputTypeDef](#gethlsstreamingsessionurlinputtypedef)
-  - [GetHLSStreamingSessionURLOutputResponseTypeDef](#gethlsstreamingsessionurloutputresponsetypedef)
-  - [GetMediaForFragmentListInputTypeDef](#getmediaforfragmentlistinputtypedef)
-  - [GetMediaForFragmentListOutputResponseTypeDef](#getmediaforfragmentlistoutputresponsetypedef)
+  - [GetClipInputRequestTypeDef](#getclipinputrequesttypedef)
+  - [GetClipOutputTypeDef](#getclipoutputtypedef)
+  - [GetDASHStreamingSessionURLInputRequestTypeDef](#getdashstreamingsessionurlinputrequesttypedef)
+  - [GetDASHStreamingSessionURLOutputTypeDef](#getdashstreamingsessionurloutputtypedef)
+  - [GetHLSStreamingSessionURLInputRequestTypeDef](#gethlsstreamingsessionurlinputrequesttypedef)
+  - [GetHLSStreamingSessionURLOutputTypeDef](#gethlsstreamingsessionurloutputtypedef)
+  - [GetMediaForFragmentListInputRequestTypeDef](#getmediaforfragmentlistinputrequesttypedef)
+  - [GetMediaForFragmentListOutputTypeDef](#getmediaforfragmentlistoutputtypedef)
   - [HLSFragmentSelectorTypeDef](#hlsfragmentselectortypedef)
   - [HLSTimestampRangeTypeDef](#hlstimestamprangetypedef)
-  - [ListFragmentsInputTypeDef](#listfragmentsinputtypedef)
-  - [ListFragmentsOutputResponseTypeDef](#listfragmentsoutputresponsetypedef)
+  - [ListFragmentsInputRequestTypeDef](#listfragmentsinputrequesttypedef)
+  - [ListFragmentsOutputTypeDef](#listfragmentsoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TimestampRangeTypeDef](#timestamprangetypedef)
@@ -105,10 +105,10 @@ Optional fields:
 - `ServerTimestamp`: `datetime`
 - `FragmentLengthInMilliseconds`: `int`
 
-## GetClipInputTypeDef
+## GetClipInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.type_defs import GetClipInputTypeDef
+from mypy_boto3_kinesis_video_archived_media.type_defs import GetClipInputRequestTypeDef
 ```
 
 Required fields:
@@ -121,10 +121,10 @@ Optional fields:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
-## GetClipOutputResponseTypeDef
+## GetClipOutputTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.type_defs import GetClipOutputResponseTypeDef
+from mypy_boto3_kinesis_video_archived_media.type_defs import GetClipOutputTypeDef
 ```
 
 Required fields:
@@ -134,10 +134,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDASHStreamingSessionURLInputTypeDef
+## GetDASHStreamingSessionURLInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.type_defs import GetDASHStreamingSessionURLInputTypeDef
+from mypy_boto3_kinesis_video_archived_media.type_defs import GetDASHStreamingSessionURLInputRequestTypeDef
 ```
 
 Optional fields:
@@ -154,10 +154,10 @@ Optional fields:
 - `Expires`: `int`
 - `MaxManifestFragmentResults`: `int`
 
-## GetDASHStreamingSessionURLOutputResponseTypeDef
+## GetDASHStreamingSessionURLOutputTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.type_defs import GetDASHStreamingSessionURLOutputResponseTypeDef
+from mypy_boto3_kinesis_video_archived_media.type_defs import GetDASHStreamingSessionURLOutputTypeDef
 ```
 
 Required fields:
@@ -166,10 +166,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetHLSStreamingSessionURLInputTypeDef
+## GetHLSStreamingSessionURLInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.type_defs import GetHLSStreamingSessionURLInputTypeDef
+from mypy_boto3_kinesis_video_archived_media.type_defs import GetHLSStreamingSessionURLInputRequestTypeDef
 ```
 
 Optional fields:
@@ -187,10 +187,10 @@ Optional fields:
 - `Expires`: `int`
 - `MaxMediaPlaylistFragmentResults`: `int`
 
-## GetHLSStreamingSessionURLOutputResponseTypeDef
+## GetHLSStreamingSessionURLOutputTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.type_defs import GetHLSStreamingSessionURLOutputResponseTypeDef
+from mypy_boto3_kinesis_video_archived_media.type_defs import GetHLSStreamingSessionURLOutputTypeDef
 ```
 
 Required fields:
@@ -199,10 +199,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetMediaForFragmentListInputTypeDef
+## GetMediaForFragmentListInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.type_defs import GetMediaForFragmentListInputTypeDef
+from mypy_boto3_kinesis_video_archived_media.type_defs import GetMediaForFragmentListInputRequestTypeDef
 ```
 
 Required fields:
@@ -214,10 +214,10 @@ Optional fields:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
-## GetMediaForFragmentListOutputResponseTypeDef
+## GetMediaForFragmentListOutputTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.type_defs import GetMediaForFragmentListOutputResponseTypeDef
+from mypy_boto3_kinesis_video_archived_media.type_defs import GetMediaForFragmentListOutputTypeDef
 ```
 
 Required fields:
@@ -251,10 +251,10 @@ Optional fields:
 - `StartTimestamp`: `Union`\[`datetime`, `str`\]
 - `EndTimestamp`: `Union`\[`datetime`, `str`\]
 
-## ListFragmentsInputTypeDef
+## ListFragmentsInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.type_defs import ListFragmentsInputTypeDef
+from mypy_boto3_kinesis_video_archived_media.type_defs import ListFragmentsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -266,10 +266,10 @@ Optional fields:
 - `FragmentSelector`:
   [FragmentSelectorTypeDef](./type_defs.md#fragmentselectortypedef)
 
-## ListFragmentsOutputResponseTypeDef
+## ListFragmentsOutputTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_archived_media.type_defs import ListFragmentsOutputResponseTypeDef
+from mypy_boto3_kinesis_video_archived_media.type_defs import ListFragmentsOutputTypeDef
 ```
 
 Required fields:

@@ -38,7 +38,7 @@ Arguments for `ListDatasetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatasetsPaginator.paginate` returns
-`Iterator`\[[ListDatasetsResponseResponseTypeDef](./type_defs.md#listdatasetsresponseresponsetypedef)\].
+`Iterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
 
 ## ListJobRunsPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListJobRunsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobRunsPaginator.paginate` returns
-`Iterator`\[[ListJobRunsResponseResponseTypeDef](./type_defs.md#listjobrunsresponseresponsetypedef)\].
+`Iterator`\[[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef)\].
 
 ## ListJobsPaginator
 
@@ -89,7 +89,7 @@ Arguments for `ListJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsResponseResponseTypeDef](./type_defs.md#listjobsresponseresponsetypedef)\].
+`Iterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
 
 ## ListProjectsPaginator
 
@@ -113,7 +113,7 @@ Arguments for `ListProjectsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProjectsPaginator.paginate` returns
-`Iterator`\[[ListProjectsResponseResponseTypeDef](./type_defs.md#listprojectsresponseresponsetypedef)\].
+`Iterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].
 
 ## ListRecipeVersionsPaginator
 
@@ -139,7 +139,7 @@ Arguments for `ListRecipeVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRecipeVersionsPaginator.paginate` returns
-`Iterator`\[[ListRecipeVersionsResponseResponseTypeDef](./type_defs.md#listrecipeversionsresponseresponsetypedef)\].
+`Iterator`\[[ListRecipeVersionsResponseTypeDef](./type_defs.md#listrecipeversionsresponsetypedef)\].
 
 ## ListRecipesPaginator
 
@@ -164,7 +164,7 @@ Arguments for `ListRecipesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRecipesPaginator.paginate` returns
-`Iterator`\[[ListRecipesResponseResponseTypeDef](./type_defs.md#listrecipesresponseresponsetypedef)\].
+`Iterator`\[[ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef)\].
 
 ## ListSchedulesPaginator
 
@@ -190,4 +190,4 @@ Arguments for `ListSchedulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSchedulesPaginator.paginate` returns
-`Iterator`\[[ListSchedulesResponseResponseTypeDef](./type_defs.md#listschedulesresponseresponsetypedef)\].
+`Iterator`\[[ListSchedulesResponseTypeDef](./type_defs.md#listschedulesresponsetypedef)\].

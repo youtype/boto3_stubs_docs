@@ -11,6 +11,7 @@ type annotations stubs module
   - [AlexaForBusinessClient](#alexaforbusinessclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [approve_skill](#approve_skill)
     - [associate_contact_with_address_book](#associate_contact_with_address_book)
     - [associate_device_with_network_profile](#associate_device_with_network_profile)
@@ -157,6 +158,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+AlexaForBusinessClient exceptions.
+
+Type annotations for `boto3.client("alexaforbusiness").exceptions` method.
+
+Boto3 documentation:
+[AlexaForBusiness.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### approve_skill
 
 Associates a skill with the organization under the customer's AWS account.
@@ -167,7 +179,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.approve_skill](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.approve_skill)
 
 Arguments mapping described in
-[ApproveSkillRequestTypeDef](./type_defs.md#approveskillrequesttypedef).
+[ApproveSkillRequestRequestTypeDef](./type_defs.md#approveskillrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -186,7 +198,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.associate_contact_with_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_contact_with_address_book)
 
 Arguments mapping described in
-[AssociateContactWithAddressBookRequestTypeDef](./type_defs.md#associatecontactwithaddressbookrequesttypedef).
+[AssociateContactWithAddressBookRequestRequestTypeDef](./type_defs.md#associatecontactwithaddressbookrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,7 +219,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.associate_device_with_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_network_profile)
 
 Arguments mapping described in
-[AssociateDeviceWithNetworkProfileRequestTypeDef](./type_defs.md#associatedevicewithnetworkprofilerequesttypedef).
+[AssociateDeviceWithNetworkProfileRequestRequestTypeDef](./type_defs.md#associatedevicewithnetworkprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -227,7 +239,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.associate_device_with_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_room)
 
 Arguments mapping described in
-[AssociateDeviceWithRoomRequestTypeDef](./type_defs.md#associatedevicewithroomrequesttypedef).
+[AssociateDeviceWithRoomRequestRequestTypeDef](./type_defs.md#associatedevicewithroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -247,7 +259,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.associate_skill_group_with_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_group_with_room)
 
 Arguments mapping described in
-[AssociateSkillGroupWithRoomRequestTypeDef](./type_defs.md#associateskillgroupwithroomrequesttypedef).
+[AssociateSkillGroupWithRoomRequestRequestTypeDef](./type_defs.md#associateskillgroupwithroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -267,7 +279,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.associate_skill_with_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_skill_group)
 
 Arguments mapping described in
-[AssociateSkillWithSkillGroupRequestTypeDef](./type_defs.md#associateskillwithskillgrouprequesttypedef).
+[AssociateSkillWithSkillGroupRequestRequestTypeDef](./type_defs.md#associateskillwithskillgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,7 +299,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.associate_skill_with_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_users)
 
 Arguments mapping described in
-[AssociateSkillWithUsersRequestTypeDef](./type_defs.md#associateskillwithusersrequesttypedef).
+[AssociateSkillWithUsersRequestRequestTypeDef](./type_defs.md#associateskillwithusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -321,7 +333,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.create_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_address_book)
 
 Arguments mapping described in
-[CreateAddressBookRequestTypeDef](./type_defs.md#createaddressbookrequesttypedef).
+[CreateAddressBookRequestRequestTypeDef](./type_defs.md#createaddressbookrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -331,7 +343,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAddressBookResponseResponseTypeDef](./type_defs.md#createaddressbookresponseresponsetypedef).
+[CreateAddressBookResponseTypeDef](./type_defs.md#createaddressbookresponsetypedef).
 
 ### create_business_report_schedule
 
@@ -345,7 +357,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.create_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_business_report_schedule)
 
 Arguments mapping described in
-[CreateBusinessReportScheduleRequestTypeDef](./type_defs.md#createbusinessreportschedulerequesttypedef).
+[CreateBusinessReportScheduleRequestRequestTypeDef](./type_defs.md#createbusinessreportschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -363,7 +375,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateBusinessReportScheduleResponseResponseTypeDef](./type_defs.md#createbusinessreportscheduleresponseresponsetypedef).
+[CreateBusinessReportScheduleResponseTypeDef](./type_defs.md#createbusinessreportscheduleresponsetypedef).
 
 ### create_conference_provider
 
@@ -376,7 +388,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.create_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_conference_provider)
 
 Arguments mapping described in
-[CreateConferenceProviderRequestTypeDef](./type_defs.md#createconferenceproviderrequesttypedef).
+[CreateConferenceProviderRequestRequestTypeDef](./type_defs.md#createconferenceproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -392,7 +404,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateConferenceProviderResponseResponseTypeDef](./type_defs.md#createconferenceproviderresponseresponsetypedef).
+[CreateConferenceProviderResponseTypeDef](./type_defs.md#createconferenceproviderresponsetypedef).
 
 ### create_contact
 
@@ -404,7 +416,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.create_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_contact)
 
 Arguments mapping described in
-[CreateContactRequestTypeDef](./type_defs.md#createcontactrequesttypedef).
+[CreateContactRequestRequestTypeDef](./type_defs.md#createcontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -420,7 +432,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateContactResponseResponseTypeDef](./type_defs.md#createcontactresponseresponsetypedef).
+[CreateContactResponseTypeDef](./type_defs.md#createcontactresponsetypedef).
 
 ### create_gateway_group
 
@@ -433,7 +445,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.create_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_gateway_group)
 
 Arguments mapping described in
-[CreateGatewayGroupRequestTypeDef](./type_defs.md#creategatewaygrouprequesttypedef).
+[CreateGatewayGroupRequestRequestTypeDef](./type_defs.md#creategatewaygrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -443,7 +455,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateGatewayGroupResponseResponseTypeDef](./type_defs.md#creategatewaygroupresponseresponsetypedef).
+[CreateGatewayGroupResponseTypeDef](./type_defs.md#creategatewaygroupresponsetypedef).
 
 ### create_network_profile
 
@@ -456,7 +468,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.create_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_network_profile)
 
 Arguments mapping described in
-[CreateNetworkProfileRequestTypeDef](./type_defs.md#createnetworkprofilerequesttypedef).
+[CreateNetworkProfileRequestRequestTypeDef](./type_defs.md#createnetworkprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -475,7 +487,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateNetworkProfileResponseResponseTypeDef](./type_defs.md#createnetworkprofileresponseresponsetypedef).
+[CreateNetworkProfileResponseTypeDef](./type_defs.md#createnetworkprofileresponsetypedef).
 
 ### create_profile
 
@@ -487,7 +499,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.create_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_profile)
 
 Arguments mapping described in
-[CreateProfileRequestTypeDef](./type_defs.md#createprofilerequesttypedef).
+[CreateProfileRequestRequestTypeDef](./type_defs.md#createprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -510,7 +522,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateProfileResponseResponseTypeDef](./type_defs.md#createprofileresponseresponsetypedef).
+[CreateProfileResponseTypeDef](./type_defs.md#createprofileresponsetypedef).
 
 ### create_room
 
@@ -522,7 +534,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.create_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_room)
 
 Arguments mapping described in
-[CreateRoomRequestTypeDef](./type_defs.md#createroomrequesttypedef).
+[CreateRoomRequestRequestTypeDef](./type_defs.md#createroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -533,8 +545,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateRoomResponseResponseTypeDef](./type_defs.md#createroomresponseresponsetypedef).
+Returns [CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef).
 
 ### create_skill_group
 
@@ -547,7 +558,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.create_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_skill_group)
 
 Arguments mapping described in
-[CreateSkillGroupRequestTypeDef](./type_defs.md#createskillgrouprequesttypedef).
+[CreateSkillGroupRequestRequestTypeDef](./type_defs.md#createskillgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -557,7 +568,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSkillGroupResponseResponseTypeDef](./type_defs.md#createskillgroupresponseresponsetypedef).
+[CreateSkillGroupResponseTypeDef](./type_defs.md#createskillgroupresponsetypedef).
 
 ### create_user
 
@@ -569,7 +580,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_user)
 
 Arguments mapping described in
-[CreateUserRequestTypeDef](./type_defs.md#createuserrequesttypedef).
+[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -580,8 +591,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateUserResponseResponseTypeDef](./type_defs.md#createuserresponseresponsetypedef).
+Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### delete_address_book
 
@@ -594,7 +604,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_address_book)
 
 Arguments mapping described in
-[DeleteAddressBookRequestTypeDef](./type_defs.md#deleteaddressbookrequesttypedef).
+[DeleteAddressBookRequestRequestTypeDef](./type_defs.md#deleteaddressbookrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -613,7 +623,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_business_report_schedule)
 
 Arguments mapping described in
-[DeleteBusinessReportScheduleRequestTypeDef](./type_defs.md#deletebusinessreportschedulerequesttypedef).
+[DeleteBusinessReportScheduleRequestRequestTypeDef](./type_defs.md#deletebusinessreportschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -632,7 +642,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_conference_provider)
 
 Arguments mapping described in
-[DeleteConferenceProviderRequestTypeDef](./type_defs.md#deleteconferenceproviderrequesttypedef).
+[DeleteConferenceProviderRequestRequestTypeDef](./type_defs.md#deleteconferenceproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -650,7 +660,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_contact)
 
 Arguments mapping described in
-[DeleteContactRequestTypeDef](./type_defs.md#deletecontactrequesttypedef).
+[DeleteContactRequestRequestTypeDef](./type_defs.md#deletecontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -668,7 +678,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device)
 
 Arguments mapping described in
-[DeleteDeviceRequestTypeDef](./type_defs.md#deletedevicerequesttypedef).
+[DeleteDeviceRequestRequestTypeDef](./type_defs.md#deletedevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -689,7 +699,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_device_usage_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device_usage_data)
 
 Arguments mapping described in
-[DeleteDeviceUsageDataRequestTypeDef](./type_defs.md#deletedeviceusagedatarequesttypedef).
+[DeleteDeviceUsageDataRequestRequestTypeDef](./type_defs.md#deletedeviceusagedatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -710,7 +720,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_gateway_group)
 
 Arguments mapping described in
-[DeleteGatewayGroupRequestTypeDef](./type_defs.md#deletegatewaygrouprequesttypedef).
+[DeleteGatewayGroupRequestRequestTypeDef](./type_defs.md#deletegatewaygrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -729,7 +739,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_network_profile)
 
 Arguments mapping described in
-[DeleteNetworkProfileRequestTypeDef](./type_defs.md#deletenetworkprofilerequesttypedef).
+[DeleteNetworkProfileRequestRequestTypeDef](./type_defs.md#deletenetworkprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -747,7 +757,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_profile)
 
 Arguments mapping described in
-[DeleteProfileRequestTypeDef](./type_defs.md#deleteprofilerequesttypedef).
+[DeleteProfileRequestRequestTypeDef](./type_defs.md#deleteprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -765,7 +775,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room)
 
 Arguments mapping described in
-[DeleteRoomRequestTypeDef](./type_defs.md#deleteroomrequesttypedef).
+[DeleteRoomRequestRequestTypeDef](./type_defs.md#deleteroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -784,7 +794,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room_skill_parameter)
 
 Arguments mapping described in
-[DeleteRoomSkillParameterRequestTypeDef](./type_defs.md#deleteroomskillparameterrequesttypedef).
+[DeleteRoomSkillParameterRequestRequestTypeDef](./type_defs.md#deleteroomskillparameterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -805,7 +815,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_skill_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_authorization)
 
 Arguments mapping described in
-[DeleteSkillAuthorizationRequestTypeDef](./type_defs.md#deleteskillauthorizationrequesttypedef).
+[DeleteSkillAuthorizationRequestRequestTypeDef](./type_defs.md#deleteskillauthorizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -825,7 +835,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_group)
 
 Arguments mapping described in
-[DeleteSkillGroupRequestTypeDef](./type_defs.md#deleteskillgrouprequesttypedef).
+[DeleteSkillGroupRequestRequestTypeDef](./type_defs.md#deleteskillgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -843,7 +853,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_user)
 
 Arguments mapping described in
-[DeleteUserRequestTypeDef](./type_defs.md#deleteuserrequesttypedef).
+[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -864,7 +874,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.disassociate_contact_from_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_contact_from_address_book)
 
 Arguments mapping described in
-[DisassociateContactFromAddressBookRequestTypeDef](./type_defs.md#disassociatecontactfromaddressbookrequesttypedef).
+[DisassociateContactFromAddressBookRequestRequestTypeDef](./type_defs.md#disassociatecontactfromaddressbookrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -884,7 +894,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.disassociate_device_from_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_device_from_room)
 
 Arguments mapping described in
-[DisassociateDeviceFromRoomRequestTypeDef](./type_defs.md#disassociatedevicefromroomrequesttypedef).
+[DisassociateDeviceFromRoomRequestRequestTypeDef](./type_defs.md#disassociatedevicefromroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -903,7 +913,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.disassociate_skill_from_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_skill_group)
 
 Arguments mapping described in
-[DisassociateSkillFromSkillGroupRequestTypeDef](./type_defs.md#disassociateskillfromskillgrouprequesttypedef).
+[DisassociateSkillFromSkillGroupRequestRequestTypeDef](./type_defs.md#disassociateskillfromskillgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -924,7 +934,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.disassociate_skill_from_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_users)
 
 Arguments mapping described in
-[DisassociateSkillFromUsersRequestTypeDef](./type_defs.md#disassociateskillfromusersrequesttypedef).
+[DisassociateSkillFromUsersRequestRequestTypeDef](./type_defs.md#disassociateskillfromusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -943,7 +953,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.disassociate_skill_group_from_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_group_from_room)
 
 Arguments mapping described in
-[DisassociateSkillGroupFromRoomRequestTypeDef](./type_defs.md#disassociateskillgroupfromroomrequesttypedef).
+[DisassociateSkillGroupFromRoomRequestRequestTypeDef](./type_defs.md#disassociateskillgroupfromroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -963,7 +973,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.forget_smart_home_appliances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.forget_smart_home_appliances)
 
 Arguments mapping described in
-[ForgetSmartHomeAppliancesRequestTypeDef](./type_defs.md#forgetsmarthomeappliancesrequesttypedef).
+[ForgetSmartHomeAppliancesRequestRequestTypeDef](./type_defs.md#forgetsmarthomeappliancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1001,14 +1011,14 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_address_book)
 
 Arguments mapping described in
-[GetAddressBookRequestTypeDef](./type_defs.md#getaddressbookrequesttypedef).
+[GetAddressBookRequestRequestTypeDef](./type_defs.md#getaddressbookrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AddressBookArn`: `str` *(required)*
 
 Returns
-[GetAddressBookResponseResponseTypeDef](./type_defs.md#getaddressbookresponseresponsetypedef).
+[GetAddressBookResponseTypeDef](./type_defs.md#getaddressbookresponsetypedef).
 
 ### get_conference_preference
 
@@ -1021,7 +1031,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_conference_preference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_preference)
 
 Returns
-[GetConferencePreferenceResponseResponseTypeDef](./type_defs.md#getconferencepreferenceresponseresponsetypedef).
+[GetConferencePreferenceResponseTypeDef](./type_defs.md#getconferencepreferenceresponsetypedef).
 
 ### get_conference_provider
 
@@ -1034,14 +1044,14 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_provider)
 
 Arguments mapping described in
-[GetConferenceProviderRequestTypeDef](./type_defs.md#getconferenceproviderrequesttypedef).
+[GetConferenceProviderRequestRequestTypeDef](./type_defs.md#getconferenceproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ConferenceProviderArn`: `str` *(required)*
 
 Returns
-[GetConferenceProviderResponseResponseTypeDef](./type_defs.md#getconferenceproviderresponseresponsetypedef).
+[GetConferenceProviderResponseTypeDef](./type_defs.md#getconferenceproviderresponsetypedef).
 
 ### get_contact
 
@@ -1053,14 +1063,13 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_contact)
 
 Arguments mapping described in
-[GetContactRequestTypeDef](./type_defs.md#getcontactrequesttypedef).
+[GetContactRequestRequestTypeDef](./type_defs.md#getcontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ContactArn`: `str` *(required)*
 
-Returns
-[GetContactResponseResponseTypeDef](./type_defs.md#getcontactresponseresponsetypedef).
+Returns [GetContactResponseTypeDef](./type_defs.md#getcontactresponsetypedef).
 
 ### get_device
 
@@ -1072,14 +1081,13 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_device)
 
 Arguments mapping described in
-[GetDeviceRequestTypeDef](./type_defs.md#getdevicerequesttypedef).
+[GetDeviceRequestRequestTypeDef](./type_defs.md#getdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeviceArn`: `str`
 
-Returns
-[GetDeviceResponseResponseTypeDef](./type_defs.md#getdeviceresponseresponsetypedef).
+Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
 
 ### get_gateway
 
@@ -1091,14 +1099,13 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway)
 
 Arguments mapping described in
-[GetGatewayRequestTypeDef](./type_defs.md#getgatewayrequesttypedef).
+[GetGatewayRequestRequestTypeDef](./type_defs.md#getgatewayrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GatewayArn`: `str` *(required)*
 
-Returns
-[GetGatewayResponseResponseTypeDef](./type_defs.md#getgatewayresponseresponsetypedef).
+Returns [GetGatewayResponseTypeDef](./type_defs.md#getgatewayresponsetypedef).
 
 ### get_gateway_group
 
@@ -1111,14 +1118,14 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway_group)
 
 Arguments mapping described in
-[GetGatewayGroupRequestTypeDef](./type_defs.md#getgatewaygrouprequesttypedef).
+[GetGatewayGroupRequestRequestTypeDef](./type_defs.md#getgatewaygrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GatewayGroupArn`: `str` *(required)*
 
 Returns
-[GetGatewayGroupResponseResponseTypeDef](./type_defs.md#getgatewaygroupresponseresponsetypedef).
+[GetGatewayGroupResponseTypeDef](./type_defs.md#getgatewaygroupresponsetypedef).
 
 ### get_invitation_configuration
 
@@ -1132,7 +1139,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_invitation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_invitation_configuration)
 
 Returns
-[GetInvitationConfigurationResponseResponseTypeDef](./type_defs.md#getinvitationconfigurationresponseresponsetypedef).
+[GetInvitationConfigurationResponseTypeDef](./type_defs.md#getinvitationconfigurationresponsetypedef).
 
 ### get_network_profile
 
@@ -1145,14 +1152,14 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_network_profile)
 
 Arguments mapping described in
-[GetNetworkProfileRequestTypeDef](./type_defs.md#getnetworkprofilerequesttypedef).
+[GetNetworkProfileRequestRequestTypeDef](./type_defs.md#getnetworkprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NetworkProfileArn`: `str` *(required)*
 
 Returns
-[GetNetworkProfileResponseResponseTypeDef](./type_defs.md#getnetworkprofileresponseresponsetypedef).
+[GetNetworkProfileResponseTypeDef](./type_defs.md#getnetworkprofileresponsetypedef).
 
 ### get_profile
 
@@ -1164,14 +1171,13 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_profile)
 
 Arguments mapping described in
-[GetProfileRequestTypeDef](./type_defs.md#getprofilerequesttypedef).
+[GetProfileRequestRequestTypeDef](./type_defs.md#getprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ProfileArn`: `str`
 
-Returns
-[GetProfileResponseResponseTypeDef](./type_defs.md#getprofileresponseresponsetypedef).
+Returns [GetProfileResponseTypeDef](./type_defs.md#getprofileresponsetypedef).
 
 ### get_room
 
@@ -1183,14 +1189,13 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room)
 
 Arguments mapping described in
-[GetRoomRequestTypeDef](./type_defs.md#getroomrequesttypedef).
+[GetRoomRequestRequestTypeDef](./type_defs.md#getroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RoomArn`: `str`
 
-Returns
-[GetRoomResponseResponseTypeDef](./type_defs.md#getroomresponseresponsetypedef).
+Returns [GetRoomResponseTypeDef](./type_defs.md#getroomresponsetypedef).
 
 ### get_room_skill_parameter
 
@@ -1203,7 +1208,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room_skill_parameter)
 
 Arguments mapping described in
-[GetRoomSkillParameterRequestTypeDef](./type_defs.md#getroomskillparameterrequesttypedef).
+[GetRoomSkillParameterRequestRequestTypeDef](./type_defs.md#getroomskillparameterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1212,7 +1217,7 @@ Keyword-only arguments:
 - `RoomArn`: `str`
 
 Returns
-[GetRoomSkillParameterResponseResponseTypeDef](./type_defs.md#getroomskillparameterresponseresponsetypedef).
+[GetRoomSkillParameterResponseTypeDef](./type_defs.md#getroomskillparameterresponsetypedef).
 
 ### get_skill_group
 
@@ -1224,14 +1229,14 @@ Boto3 documentation:
 [AlexaForBusiness.Client.get_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_skill_group)
 
 Arguments mapping described in
-[GetSkillGroupRequestTypeDef](./type_defs.md#getskillgrouprequesttypedef).
+[GetSkillGroupRequestRequestTypeDef](./type_defs.md#getskillgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SkillGroupArn`: `str`
 
 Returns
-[GetSkillGroupResponseResponseTypeDef](./type_defs.md#getskillgroupresponseresponsetypedef).
+[GetSkillGroupResponseTypeDef](./type_defs.md#getskillgroupresponsetypedef).
 
 ### list_business_report_schedules
 
@@ -1244,7 +1249,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.list_business_report_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_business_report_schedules)
 
 Arguments mapping described in
-[ListBusinessReportSchedulesRequestTypeDef](./type_defs.md#listbusinessreportschedulesrequesttypedef).
+[ListBusinessReportSchedulesRequestRequestTypeDef](./type_defs.md#listbusinessreportschedulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1252,7 +1257,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListBusinessReportSchedulesResponseResponseTypeDef](./type_defs.md#listbusinessreportschedulesresponseresponsetypedef).
+[ListBusinessReportSchedulesResponseTypeDef](./type_defs.md#listbusinessreportschedulesresponsetypedef).
 
 ### list_conference_providers
 
@@ -1265,7 +1270,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.list_conference_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_conference_providers)
 
 Arguments mapping described in
-[ListConferenceProvidersRequestTypeDef](./type_defs.md#listconferenceprovidersrequesttypedef).
+[ListConferenceProvidersRequestRequestTypeDef](./type_defs.md#listconferenceprovidersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1273,7 +1278,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListConferenceProvidersResponseResponseTypeDef](./type_defs.md#listconferenceprovidersresponseresponsetypedef).
+[ListConferenceProvidersResponseTypeDef](./type_defs.md#listconferenceprovidersresponsetypedef).
 
 ### list_device_events
 
@@ -1287,7 +1292,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.list_device_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_device_events)
 
 Arguments mapping described in
-[ListDeviceEventsRequestTypeDef](./type_defs.md#listdeviceeventsrequesttypedef).
+[ListDeviceEventsRequestRequestTypeDef](./type_defs.md#listdeviceeventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1297,7 +1302,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDeviceEventsResponseResponseTypeDef](./type_defs.md#listdeviceeventsresponseresponsetypedef).
+[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef).
 
 ### list_gateway_groups
 
@@ -1310,7 +1315,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.list_gateway_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateway_groups)
 
 Arguments mapping described in
-[ListGatewayGroupsRequestTypeDef](./type_defs.md#listgatewaygroupsrequesttypedef).
+[ListGatewayGroupsRequestRequestTypeDef](./type_defs.md#listgatewaygroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1318,7 +1323,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListGatewayGroupsResponseResponseTypeDef](./type_defs.md#listgatewaygroupsresponseresponsetypedef).
+[ListGatewayGroupsResponseTypeDef](./type_defs.md#listgatewaygroupsresponsetypedef).
 
 ### list_gateways
 
@@ -1330,7 +1335,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateways)
 
 Arguments mapping described in
-[ListGatewaysRequestTypeDef](./type_defs.md#listgatewaysrequesttypedef).
+[ListGatewaysRequestRequestTypeDef](./type_defs.md#listgatewaysrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1339,7 +1344,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListGatewaysResponseResponseTypeDef](./type_defs.md#listgatewaysresponseresponsetypedef).
+[ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef).
 
 ### list_skills
 
@@ -1351,7 +1356,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.list_skills](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills)
 
 Arguments mapping described in
-[ListSkillsRequestTypeDef](./type_defs.md#listskillsrequesttypedef).
+[ListSkillsRequestRequestTypeDef](./type_defs.md#listskillsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1362,8 +1367,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListSkillsResponseResponseTypeDef](./type_defs.md#listskillsresponseresponsetypedef).
+Returns [ListSkillsResponseTypeDef](./type_defs.md#listskillsresponsetypedef).
 
 ### list_skills_store_categories
 
@@ -1376,7 +1380,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.list_skills_store_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_categories)
 
 Arguments mapping described in
-[ListSkillsStoreCategoriesRequestTypeDef](./type_defs.md#listskillsstorecategoriesrequesttypedef).
+[ListSkillsStoreCategoriesRequestRequestTypeDef](./type_defs.md#listskillsstorecategoriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1384,7 +1388,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListSkillsStoreCategoriesResponseResponseTypeDef](./type_defs.md#listskillsstorecategoriesresponseresponsetypedef).
+[ListSkillsStoreCategoriesResponseTypeDef](./type_defs.md#listskillsstorecategoriesresponsetypedef).
 
 ### list_skills_store_skills_by_category
 
@@ -1397,7 +1401,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.list_skills_store_skills_by_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_skills_by_category)
 
 Arguments mapping described in
-[ListSkillsStoreSkillsByCategoryRequestTypeDef](./type_defs.md#listskillsstoreskillsbycategoryrequesttypedef).
+[ListSkillsStoreSkillsByCategoryRequestRequestTypeDef](./type_defs.md#listskillsstoreskillsbycategoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1406,7 +1410,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListSkillsStoreSkillsByCategoryResponseResponseTypeDef](./type_defs.md#listskillsstoreskillsbycategoryresponseresponsetypedef).
+[ListSkillsStoreSkillsByCategoryResponseTypeDef](./type_defs.md#listskillsstoreskillsbycategoryresponsetypedef).
 
 ### list_smart_home_appliances
 
@@ -1419,7 +1423,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.list_smart_home_appliances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_smart_home_appliances)
 
 Arguments mapping described in
-[ListSmartHomeAppliancesRequestTypeDef](./type_defs.md#listsmarthomeappliancesrequesttypedef).
+[ListSmartHomeAppliancesRequestRequestTypeDef](./type_defs.md#listsmarthomeappliancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1428,7 +1432,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSmartHomeAppliancesResponseResponseTypeDef](./type_defs.md#listsmarthomeappliancesresponseresponsetypedef).
+[ListSmartHomeAppliancesResponseTypeDef](./type_defs.md#listsmarthomeappliancesresponsetypedef).
 
 ### list_tags
 
@@ -1440,7 +1444,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_tags)
 
 Arguments mapping described in
-[ListTagsRequestTypeDef](./type_defs.md#listtagsrequesttypedef).
+[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1448,8 +1452,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTagsResponseResponseTypeDef](./type_defs.md#listtagsresponseresponsetypedef).
+Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
 ### put_conference_preference
 
@@ -1463,7 +1466,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.put_conference_preference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_conference_preference)
 
 Arguments mapping described in
-[PutConferencePreferenceRequestTypeDef](./type_defs.md#putconferencepreferencerequesttypedef).
+[PutConferencePreferenceRequestRequestTypeDef](./type_defs.md#putconferencepreferencerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1485,7 +1488,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.put_invitation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_invitation_configuration)
 
 Arguments mapping described in
-[PutInvitationConfigurationRequestTypeDef](./type_defs.md#putinvitationconfigurationrequesttypedef).
+[PutInvitationConfigurationRequestRequestTypeDef](./type_defs.md#putinvitationconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1506,7 +1509,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.put_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_room_skill_parameter)
 
 Arguments mapping described in
-[PutRoomSkillParameterRequestTypeDef](./type_defs.md#putroomskillparameterrequesttypedef).
+[PutRoomSkillParameterRequestRequestTypeDef](./type_defs.md#putroomskillparameterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1529,7 +1532,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.put_skill_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_skill_authorization)
 
 Arguments mapping described in
-[PutSkillAuthorizationRequestTypeDef](./type_defs.md#putskillauthorizationrequesttypedef).
+[PutSkillAuthorizationRequestRequestTypeDef](./type_defs.md#putskillauthorizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1551,7 +1554,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.register_avs_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.register_avs_device)
 
 Arguments mapping described in
-[RegisterAVSDeviceRequestTypeDef](./type_defs.md#registeravsdevicerequesttypedef).
+[RegisterAVSDeviceRequestRequestTypeDef](./type_defs.md#registeravsdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1564,7 +1567,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[RegisterAVSDeviceResponseResponseTypeDef](./type_defs.md#registeravsdeviceresponseresponsetypedef).
+[RegisterAVSDeviceResponseTypeDef](./type_defs.md#registeravsdeviceresponsetypedef).
 
 ### reject_skill
 
@@ -1576,7 +1579,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.reject_skill](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.reject_skill)
 
 Arguments mapping described in
-[RejectSkillRequestTypeDef](./type_defs.md#rejectskillrequesttypedef).
+[RejectSkillRequestRequestTypeDef](./type_defs.md#rejectskillrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1594,7 +1597,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.resolve_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.resolve_room)
 
 Arguments mapping described in
-[ResolveRoomRequestTypeDef](./type_defs.md#resolveroomrequesttypedef).
+[ResolveRoomRequestRequestTypeDef](./type_defs.md#resolveroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1602,7 +1605,7 @@ Keyword-only arguments:
 - `SkillId`: `str` *(required)*
 
 Returns
-[ResolveRoomResponseResponseTypeDef](./type_defs.md#resolveroomresponseresponsetypedef).
+[ResolveRoomResponseTypeDef](./type_defs.md#resolveroomresponsetypedef).
 
 ### revoke_invitation
 
@@ -1615,7 +1618,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.revoke_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.revoke_invitation)
 
 Arguments mapping described in
-[RevokeInvitationRequestTypeDef](./type_defs.md#revokeinvitationrequesttypedef).
+[RevokeInvitationRequestRequestTypeDef](./type_defs.md#revokeinvitationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1636,7 +1639,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.search_address_books](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_address_books)
 
 Arguments mapping described in
-[SearchAddressBooksRequestTypeDef](./type_defs.md#searchaddressbooksrequesttypedef).
+[SearchAddressBooksRequestRequestTypeDef](./type_defs.md#searchaddressbooksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1646,7 +1649,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[SearchAddressBooksResponseResponseTypeDef](./type_defs.md#searchaddressbooksresponseresponsetypedef).
+[SearchAddressBooksResponseTypeDef](./type_defs.md#searchaddressbooksresponsetypedef).
 
 ### search_contacts
 
@@ -1659,7 +1662,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.search_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_contacts)
 
 Arguments mapping described in
-[SearchContactsRequestTypeDef](./type_defs.md#searchcontactsrequesttypedef).
+[SearchContactsRequestRequestTypeDef](./type_defs.md#searchcontactsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1669,7 +1672,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[SearchContactsResponseResponseTypeDef](./type_defs.md#searchcontactsresponseresponsetypedef).
+[SearchContactsResponseTypeDef](./type_defs.md#searchcontactsresponsetypedef).
 
 ### search_devices
 
@@ -1681,7 +1684,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.search_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_devices)
 
 Arguments mapping described in
-[SearchDevicesRequestTypeDef](./type_defs.md#searchdevicesrequesttypedef).
+[SearchDevicesRequestRequestTypeDef](./type_defs.md#searchdevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1691,7 +1694,7 @@ Keyword-only arguments:
 - `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
-[SearchDevicesResponseResponseTypeDef](./type_defs.md#searchdevicesresponseresponsetypedef).
+[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef).
 
 ### search_network_profiles
 
@@ -1705,7 +1708,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.search_network_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_network_profiles)
 
 Arguments mapping described in
-[SearchNetworkProfilesRequestTypeDef](./type_defs.md#searchnetworkprofilesrequesttypedef).
+[SearchNetworkProfilesRequestRequestTypeDef](./type_defs.md#searchnetworkprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1715,7 +1718,7 @@ Keyword-only arguments:
 - `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
-[SearchNetworkProfilesResponseResponseTypeDef](./type_defs.md#searchnetworkprofilesresponseresponsetypedef).
+[SearchNetworkProfilesResponseTypeDef](./type_defs.md#searchnetworkprofilesresponsetypedef).
 
 ### search_profiles
 
@@ -1727,7 +1730,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.search_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_profiles)
 
 Arguments mapping described in
-[SearchProfilesRequestTypeDef](./type_defs.md#searchprofilesrequesttypedef).
+[SearchProfilesRequestRequestTypeDef](./type_defs.md#searchprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1737,7 +1740,7 @@ Keyword-only arguments:
 - `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
-[SearchProfilesResponseResponseTypeDef](./type_defs.md#searchprofilesresponseresponsetypedef).
+[SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef).
 
 ### search_rooms
 
@@ -1749,7 +1752,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.search_rooms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_rooms)
 
 Arguments mapping described in
-[SearchRoomsRequestTypeDef](./type_defs.md#searchroomsrequesttypedef).
+[SearchRoomsRequestRequestTypeDef](./type_defs.md#searchroomsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1759,7 +1762,7 @@ Keyword-only arguments:
 - `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
-[SearchRoomsResponseResponseTypeDef](./type_defs.md#searchroomsresponseresponsetypedef).
+[SearchRoomsResponseTypeDef](./type_defs.md#searchroomsresponsetypedef).
 
 ### search_skill_groups
 
@@ -1773,7 +1776,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.search_skill_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_skill_groups)
 
 Arguments mapping described in
-[SearchSkillGroupsRequestTypeDef](./type_defs.md#searchskillgroupsrequesttypedef).
+[SearchSkillGroupsRequestRequestTypeDef](./type_defs.md#searchskillgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1783,7 +1786,7 @@ Keyword-only arguments:
 - `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
-[SearchSkillGroupsResponseResponseTypeDef](./type_defs.md#searchskillgroupsresponseresponsetypedef).
+[SearchSkillGroupsResponseTypeDef](./type_defs.md#searchskillgroupsresponsetypedef).
 
 ### search_users
 
@@ -1795,7 +1798,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.search_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_users)
 
 Arguments mapping described in
-[SearchUsersRequestTypeDef](./type_defs.md#searchusersrequesttypedef).
+[SearchUsersRequestRequestTypeDef](./type_defs.md#searchusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1805,7 +1808,7 @@ Keyword-only arguments:
 - `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 Returns
-[SearchUsersResponseResponseTypeDef](./type_defs.md#searchusersresponseresponsetypedef).
+[SearchUsersResponseTypeDef](./type_defs.md#searchusersresponsetypedef).
 
 ### send_announcement
 
@@ -1819,7 +1822,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.send_announcement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_announcement)
 
 Arguments mapping described in
-[SendAnnouncementRequestTypeDef](./type_defs.md#sendannouncementrequesttypedef).
+[SendAnnouncementRequestRequestTypeDef](./type_defs.md#sendannouncementrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1830,7 +1833,7 @@ Keyword-only arguments:
 - `TimeToLiveInSeconds`: `int`
 
 Returns
-[SendAnnouncementResponseResponseTypeDef](./type_defs.md#sendannouncementresponseresponsetypedef).
+[SendAnnouncementResponseTypeDef](./type_defs.md#sendannouncementresponsetypedef).
 
 ### send_invitation
 
@@ -1842,7 +1845,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.send_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_invitation)
 
 Arguments mapping described in
-[SendInvitationRequestTypeDef](./type_defs.md#sendinvitationrequesttypedef).
+[SendInvitationRequestRequestTypeDef](./type_defs.md#sendinvitationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1861,7 +1864,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.start_device_sync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_device_sync)
 
 Arguments mapping described in
-[StartDeviceSyncRequestTypeDef](./type_defs.md#startdevicesyncrequesttypedef).
+[StartDeviceSyncRequestRequestTypeDef](./type_defs.md#startdevicesyncrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1882,7 +1885,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.start_smart_home_appliance_discovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_smart_home_appliance_discovery)
 
 Arguments mapping described in
-[StartSmartHomeApplianceDiscoveryRequestTypeDef](./type_defs.md#startsmarthomeappliancediscoveryrequesttypedef).
+[StartSmartHomeApplianceDiscoveryRequestRequestTypeDef](./type_defs.md#startsmarthomeappliancediscoveryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1900,7 +1903,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1919,7 +1922,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1939,7 +1942,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.update_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_address_book)
 
 Arguments mapping described in
-[UpdateAddressBookRequestTypeDef](./type_defs.md#updateaddressbookrequesttypedef).
+[UpdateAddressBookRequestRequestTypeDef](./type_defs.md#updateaddressbookrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1961,7 +1964,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.update_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_business_report_schedule)
 
 Arguments mapping described in
-[UpdateBusinessReportScheduleRequestTypeDef](./type_defs.md#updatebusinessreportschedulerequesttypedef).
+[UpdateBusinessReportScheduleRequestRequestTypeDef](./type_defs.md#updatebusinessreportschedulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1986,7 +1989,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.update_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_conference_provider)
 
 Arguments mapping described in
-[UpdateConferenceProviderRequestTypeDef](./type_defs.md#updateconferenceproviderrequesttypedef).
+[UpdateConferenceProviderRequestRequestTypeDef](./type_defs.md#updateconferenceproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2011,7 +2014,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_contact)
 
 Arguments mapping described in
-[UpdateContactRequestTypeDef](./type_defs.md#updatecontactrequesttypedef).
+[UpdateContactRequestRequestTypeDef](./type_defs.md#updatecontactrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2037,7 +2040,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.update_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_device)
 
 Arguments mapping described in
-[UpdateDeviceRequestTypeDef](./type_defs.md#updatedevicerequesttypedef).
+[UpdateDeviceRequestRequestTypeDef](./type_defs.md#updatedevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2056,7 +2059,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.update_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway)
 
 Arguments mapping described in
-[UpdateGatewayRequestTypeDef](./type_defs.md#updategatewayrequesttypedef).
+[UpdateGatewayRequestRequestTypeDef](./type_defs.md#updategatewayrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2078,7 +2081,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.update_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway_group)
 
 Arguments mapping described in
-[UpdateGatewayGroupRequestTypeDef](./type_defs.md#updategatewaygrouprequesttypedef).
+[UpdateGatewayGroupRequestRequestTypeDef](./type_defs.md#updategatewaygrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2099,7 +2102,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.update_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_network_profile)
 
 Arguments mapping described in
-[UpdateNetworkProfileRequestTypeDef](./type_defs.md#updatenetworkprofilerequesttypedef).
+[UpdateNetworkProfileRequestRequestTypeDef](./type_defs.md#updatenetworkprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2123,7 +2126,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.update_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_profile)
 
 Arguments mapping described in
-[UpdateProfileRequestTypeDef](./type_defs.md#updateprofilerequesttypedef).
+[UpdateProfileRequestRequestTypeDef](./type_defs.md#updateprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2155,7 +2158,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.update_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_room)
 
 Arguments mapping described in
-[UpdateRoomRequestTypeDef](./type_defs.md#updateroomrequesttypedef).
+[UpdateRoomRequestRequestTypeDef](./type_defs.md#updateroomrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2178,7 +2181,7 @@ Boto3 documentation:
 [AlexaForBusiness.Client.update_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_skill_group)
 
 Arguments mapping described in
-[UpdateSkillGroupRequestTypeDef](./type_defs.md#updateskillgrouprequesttypedef).
+[UpdateSkillGroupRequestRequestTypeDef](./type_defs.md#updateskillgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 

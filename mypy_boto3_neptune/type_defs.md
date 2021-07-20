@@ -8,161 +8,161 @@ type annotations stubs module
 [mypy_boto3_neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
 - [Typed dictionaries for boto3 Neptune module](#typed-dictionaries-for-boto3-neptune-module)
-  - [AddRoleToDBClusterMessageTypeDef](#addroletodbclustermessagetypedef)
-  - [AddSourceIdentifierToSubscriptionMessageTypeDef](#addsourceidentifiertosubscriptionmessagetypedef)
-  - [AddSourceIdentifierToSubscriptionResultResponseTypeDef](#addsourceidentifiertosubscriptionresultresponsetypedef)
-  - [AddTagsToResourceMessageTypeDef](#addtagstoresourcemessagetypedef)
-  - [ApplyPendingMaintenanceActionMessageTypeDef](#applypendingmaintenanceactionmessagetypedef)
-  - [ApplyPendingMaintenanceActionResultResponseTypeDef](#applypendingmaintenanceactionresultresponsetypedef)
+  - [AddRoleToDBClusterMessageRequestTypeDef](#addroletodbclustermessagerequesttypedef)
+  - [AddSourceIdentifierToSubscriptionMessageRequestTypeDef](#addsourceidentifiertosubscriptionmessagerequesttypedef)
+  - [AddSourceIdentifierToSubscriptionResultTypeDef](#addsourceidentifiertosubscriptionresulttypedef)
+  - [AddTagsToResourceMessageRequestTypeDef](#addtagstoresourcemessagerequesttypedef)
+  - [ApplyPendingMaintenanceActionMessageRequestTypeDef](#applypendingmaintenanceactionmessagerequesttypedef)
+  - [ApplyPendingMaintenanceActionResultTypeDef](#applypendingmaintenanceactionresulttypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
   - [CharacterSetTypeDef](#charactersettypedef)
   - [CloudwatchLogsExportConfigurationTypeDef](#cloudwatchlogsexportconfigurationtypedef)
-  - [CopyDBClusterParameterGroupMessageTypeDef](#copydbclusterparametergroupmessagetypedef)
-  - [CopyDBClusterParameterGroupResultResponseTypeDef](#copydbclusterparametergroupresultresponsetypedef)
-  - [CopyDBClusterSnapshotMessageTypeDef](#copydbclustersnapshotmessagetypedef)
-  - [CopyDBClusterSnapshotResultResponseTypeDef](#copydbclustersnapshotresultresponsetypedef)
-  - [CopyDBParameterGroupMessageTypeDef](#copydbparametergroupmessagetypedef)
-  - [CopyDBParameterGroupResultResponseTypeDef](#copydbparametergroupresultresponsetypedef)
-  - [CreateDBClusterEndpointMessageTypeDef](#createdbclusterendpointmessagetypedef)
-  - [CreateDBClusterEndpointOutputResponseTypeDef](#createdbclusterendpointoutputresponsetypedef)
-  - [CreateDBClusterMessageTypeDef](#createdbclustermessagetypedef)
-  - [CreateDBClusterParameterGroupMessageTypeDef](#createdbclusterparametergroupmessagetypedef)
-  - [CreateDBClusterParameterGroupResultResponseTypeDef](#createdbclusterparametergroupresultresponsetypedef)
-  - [CreateDBClusterResultResponseTypeDef](#createdbclusterresultresponsetypedef)
-  - [CreateDBClusterSnapshotMessageTypeDef](#createdbclustersnapshotmessagetypedef)
-  - [CreateDBClusterSnapshotResultResponseTypeDef](#createdbclustersnapshotresultresponsetypedef)
-  - [CreateDBInstanceMessageTypeDef](#createdbinstancemessagetypedef)
-  - [CreateDBInstanceResultResponseTypeDef](#createdbinstanceresultresponsetypedef)
-  - [CreateDBParameterGroupMessageTypeDef](#createdbparametergroupmessagetypedef)
-  - [CreateDBParameterGroupResultResponseTypeDef](#createdbparametergroupresultresponsetypedef)
-  - [CreateDBSubnetGroupMessageTypeDef](#createdbsubnetgroupmessagetypedef)
-  - [CreateDBSubnetGroupResultResponseTypeDef](#createdbsubnetgroupresultresponsetypedef)
-  - [CreateEventSubscriptionMessageTypeDef](#createeventsubscriptionmessagetypedef)
-  - [CreateEventSubscriptionResultResponseTypeDef](#createeventsubscriptionresultresponsetypedef)
-  - [DBClusterEndpointMessageResponseTypeDef](#dbclusterendpointmessageresponsetypedef)
+  - [CopyDBClusterParameterGroupMessageRequestTypeDef](#copydbclusterparametergroupmessagerequesttypedef)
+  - [CopyDBClusterParameterGroupResultTypeDef](#copydbclusterparametergroupresulttypedef)
+  - [CopyDBClusterSnapshotMessageRequestTypeDef](#copydbclustersnapshotmessagerequesttypedef)
+  - [CopyDBClusterSnapshotResultTypeDef](#copydbclustersnapshotresulttypedef)
+  - [CopyDBParameterGroupMessageRequestTypeDef](#copydbparametergroupmessagerequesttypedef)
+  - [CopyDBParameterGroupResultTypeDef](#copydbparametergroupresulttypedef)
+  - [CreateDBClusterEndpointMessageRequestTypeDef](#createdbclusterendpointmessagerequesttypedef)
+  - [CreateDBClusterEndpointOutputTypeDef](#createdbclusterendpointoutputtypedef)
+  - [CreateDBClusterMessageRequestTypeDef](#createdbclustermessagerequesttypedef)
+  - [CreateDBClusterParameterGroupMessageRequestTypeDef](#createdbclusterparametergroupmessagerequesttypedef)
+  - [CreateDBClusterParameterGroupResultTypeDef](#createdbclusterparametergroupresulttypedef)
+  - [CreateDBClusterResultTypeDef](#createdbclusterresulttypedef)
+  - [CreateDBClusterSnapshotMessageRequestTypeDef](#createdbclustersnapshotmessagerequesttypedef)
+  - [CreateDBClusterSnapshotResultTypeDef](#createdbclustersnapshotresulttypedef)
+  - [CreateDBInstanceMessageRequestTypeDef](#createdbinstancemessagerequesttypedef)
+  - [CreateDBInstanceResultTypeDef](#createdbinstanceresulttypedef)
+  - [CreateDBParameterGroupMessageRequestTypeDef](#createdbparametergroupmessagerequesttypedef)
+  - [CreateDBParameterGroupResultTypeDef](#createdbparametergroupresulttypedef)
+  - [CreateDBSubnetGroupMessageRequestTypeDef](#createdbsubnetgroupmessagerequesttypedef)
+  - [CreateDBSubnetGroupResultTypeDef](#createdbsubnetgroupresulttypedef)
+  - [CreateEventSubscriptionMessageRequestTypeDef](#createeventsubscriptionmessagerequesttypedef)
+  - [CreateEventSubscriptionResultTypeDef](#createeventsubscriptionresulttypedef)
+  - [DBClusterEndpointMessageTypeDef](#dbclusterendpointmessagetypedef)
   - [DBClusterEndpointTypeDef](#dbclusterendpointtypedef)
   - [DBClusterMemberTypeDef](#dbclustermembertypedef)
-  - [DBClusterMessageResponseTypeDef](#dbclustermessageresponsetypedef)
+  - [DBClusterMessageTypeDef](#dbclustermessagetypedef)
   - [DBClusterOptionGroupStatusTypeDef](#dbclusteroptiongroupstatustypedef)
-  - [DBClusterParameterGroupDetailsResponseTypeDef](#dbclusterparametergroupdetailsresponsetypedef)
-  - [DBClusterParameterGroupNameMessageResponseTypeDef](#dbclusterparametergroupnamemessageresponsetypedef)
+  - [DBClusterParameterGroupDetailsTypeDef](#dbclusterparametergroupdetailstypedef)
+  - [DBClusterParameterGroupNameMessageTypeDef](#dbclusterparametergroupnamemessagetypedef)
   - [DBClusterParameterGroupTypeDef](#dbclusterparametergrouptypedef)
-  - [DBClusterParameterGroupsMessageResponseTypeDef](#dbclusterparametergroupsmessageresponsetypedef)
+  - [DBClusterParameterGroupsMessageTypeDef](#dbclusterparametergroupsmessagetypedef)
   - [DBClusterRoleTypeDef](#dbclusterroletypedef)
   - [DBClusterSnapshotAttributeTypeDef](#dbclustersnapshotattributetypedef)
   - [DBClusterSnapshotAttributesResultTypeDef](#dbclustersnapshotattributesresulttypedef)
-  - [DBClusterSnapshotMessageResponseTypeDef](#dbclustersnapshotmessageresponsetypedef)
+  - [DBClusterSnapshotMessageTypeDef](#dbclustersnapshotmessagetypedef)
   - [DBClusterSnapshotTypeDef](#dbclustersnapshottypedef)
   - [DBClusterTypeDef](#dbclustertypedef)
-  - [DBEngineVersionMessageResponseTypeDef](#dbengineversionmessageresponsetypedef)
+  - [DBEngineVersionMessageTypeDef](#dbengineversionmessagetypedef)
   - [DBEngineVersionTypeDef](#dbengineversiontypedef)
-  - [DBInstanceMessageResponseTypeDef](#dbinstancemessageresponsetypedef)
+  - [DBInstanceMessageTypeDef](#dbinstancemessagetypedef)
   - [DBInstanceStatusInfoTypeDef](#dbinstancestatusinfotypedef)
   - [DBInstanceTypeDef](#dbinstancetypedef)
-  - [DBParameterGroupDetailsResponseTypeDef](#dbparametergroupdetailsresponsetypedef)
-  - [DBParameterGroupNameMessageResponseTypeDef](#dbparametergroupnamemessageresponsetypedef)
+  - [DBParameterGroupDetailsTypeDef](#dbparametergroupdetailstypedef)
+  - [DBParameterGroupNameMessageTypeDef](#dbparametergroupnamemessagetypedef)
   - [DBParameterGroupStatusTypeDef](#dbparametergroupstatustypedef)
   - [DBParameterGroupTypeDef](#dbparametergrouptypedef)
-  - [DBParameterGroupsMessageResponseTypeDef](#dbparametergroupsmessageresponsetypedef)
+  - [DBParameterGroupsMessageTypeDef](#dbparametergroupsmessagetypedef)
   - [DBSecurityGroupMembershipTypeDef](#dbsecuritygroupmembershiptypedef)
-  - [DBSubnetGroupMessageResponseTypeDef](#dbsubnetgroupmessageresponsetypedef)
+  - [DBSubnetGroupMessageTypeDef](#dbsubnetgroupmessagetypedef)
   - [DBSubnetGroupTypeDef](#dbsubnetgrouptypedef)
-  - [DeleteDBClusterEndpointMessageTypeDef](#deletedbclusterendpointmessagetypedef)
-  - [DeleteDBClusterEndpointOutputResponseTypeDef](#deletedbclusterendpointoutputresponsetypedef)
-  - [DeleteDBClusterMessageTypeDef](#deletedbclustermessagetypedef)
-  - [DeleteDBClusterParameterGroupMessageTypeDef](#deletedbclusterparametergroupmessagetypedef)
-  - [DeleteDBClusterResultResponseTypeDef](#deletedbclusterresultresponsetypedef)
-  - [DeleteDBClusterSnapshotMessageTypeDef](#deletedbclustersnapshotmessagetypedef)
-  - [DeleteDBClusterSnapshotResultResponseTypeDef](#deletedbclustersnapshotresultresponsetypedef)
-  - [DeleteDBInstanceMessageTypeDef](#deletedbinstancemessagetypedef)
-  - [DeleteDBInstanceResultResponseTypeDef](#deletedbinstanceresultresponsetypedef)
-  - [DeleteDBParameterGroupMessageTypeDef](#deletedbparametergroupmessagetypedef)
-  - [DeleteDBSubnetGroupMessageTypeDef](#deletedbsubnetgroupmessagetypedef)
-  - [DeleteEventSubscriptionMessageTypeDef](#deleteeventsubscriptionmessagetypedef)
-  - [DeleteEventSubscriptionResultResponseTypeDef](#deleteeventsubscriptionresultresponsetypedef)
-  - [DescribeDBClusterEndpointsMessageTypeDef](#describedbclusterendpointsmessagetypedef)
-  - [DescribeDBClusterParameterGroupsMessageTypeDef](#describedbclusterparametergroupsmessagetypedef)
-  - [DescribeDBClusterParametersMessageTypeDef](#describedbclusterparametersmessagetypedef)
-  - [DescribeDBClusterSnapshotAttributesMessageTypeDef](#describedbclustersnapshotattributesmessagetypedef)
-  - [DescribeDBClusterSnapshotAttributesResultResponseTypeDef](#describedbclustersnapshotattributesresultresponsetypedef)
-  - [DescribeDBClusterSnapshotsMessageTypeDef](#describedbclustersnapshotsmessagetypedef)
-  - [DescribeDBClustersMessageTypeDef](#describedbclustersmessagetypedef)
-  - [DescribeDBEngineVersionsMessageTypeDef](#describedbengineversionsmessagetypedef)
-  - [DescribeDBInstancesMessageTypeDef](#describedbinstancesmessagetypedef)
-  - [DescribeDBParameterGroupsMessageTypeDef](#describedbparametergroupsmessagetypedef)
-  - [DescribeDBParametersMessageTypeDef](#describedbparametersmessagetypedef)
-  - [DescribeDBSubnetGroupsMessageTypeDef](#describedbsubnetgroupsmessagetypedef)
-  - [DescribeEngineDefaultClusterParametersMessageTypeDef](#describeenginedefaultclusterparametersmessagetypedef)
-  - [DescribeEngineDefaultClusterParametersResultResponseTypeDef](#describeenginedefaultclusterparametersresultresponsetypedef)
-  - [DescribeEngineDefaultParametersMessageTypeDef](#describeenginedefaultparametersmessagetypedef)
-  - [DescribeEngineDefaultParametersResultResponseTypeDef](#describeenginedefaultparametersresultresponsetypedef)
-  - [DescribeEventCategoriesMessageTypeDef](#describeeventcategoriesmessagetypedef)
-  - [DescribeEventSubscriptionsMessageTypeDef](#describeeventsubscriptionsmessagetypedef)
-  - [DescribeEventsMessageTypeDef](#describeeventsmessagetypedef)
-  - [DescribeOrderableDBInstanceOptionsMessageTypeDef](#describeorderabledbinstanceoptionsmessagetypedef)
-  - [DescribePendingMaintenanceActionsMessageTypeDef](#describependingmaintenanceactionsmessagetypedef)
-  - [DescribeValidDBInstanceModificationsMessageTypeDef](#describevaliddbinstancemodificationsmessagetypedef)
-  - [DescribeValidDBInstanceModificationsResultResponseTypeDef](#describevaliddbinstancemodificationsresultresponsetypedef)
+  - [DeleteDBClusterEndpointMessageRequestTypeDef](#deletedbclusterendpointmessagerequesttypedef)
+  - [DeleteDBClusterEndpointOutputTypeDef](#deletedbclusterendpointoutputtypedef)
+  - [DeleteDBClusterMessageRequestTypeDef](#deletedbclustermessagerequesttypedef)
+  - [DeleteDBClusterParameterGroupMessageRequestTypeDef](#deletedbclusterparametergroupmessagerequesttypedef)
+  - [DeleteDBClusterResultTypeDef](#deletedbclusterresulttypedef)
+  - [DeleteDBClusterSnapshotMessageRequestTypeDef](#deletedbclustersnapshotmessagerequesttypedef)
+  - [DeleteDBClusterSnapshotResultTypeDef](#deletedbclustersnapshotresulttypedef)
+  - [DeleteDBInstanceMessageRequestTypeDef](#deletedbinstancemessagerequesttypedef)
+  - [DeleteDBInstanceResultTypeDef](#deletedbinstanceresulttypedef)
+  - [DeleteDBParameterGroupMessageRequestTypeDef](#deletedbparametergroupmessagerequesttypedef)
+  - [DeleteDBSubnetGroupMessageRequestTypeDef](#deletedbsubnetgroupmessagerequesttypedef)
+  - [DeleteEventSubscriptionMessageRequestTypeDef](#deleteeventsubscriptionmessagerequesttypedef)
+  - [DeleteEventSubscriptionResultTypeDef](#deleteeventsubscriptionresulttypedef)
+  - [DescribeDBClusterEndpointsMessageRequestTypeDef](#describedbclusterendpointsmessagerequesttypedef)
+  - [DescribeDBClusterParameterGroupsMessageRequestTypeDef](#describedbclusterparametergroupsmessagerequesttypedef)
+  - [DescribeDBClusterParametersMessageRequestTypeDef](#describedbclusterparametersmessagerequesttypedef)
+  - [DescribeDBClusterSnapshotAttributesMessageRequestTypeDef](#describedbclustersnapshotattributesmessagerequesttypedef)
+  - [DescribeDBClusterSnapshotAttributesResultTypeDef](#describedbclustersnapshotattributesresulttypedef)
+  - [DescribeDBClusterSnapshotsMessageRequestTypeDef](#describedbclustersnapshotsmessagerequesttypedef)
+  - [DescribeDBClustersMessageRequestTypeDef](#describedbclustersmessagerequesttypedef)
+  - [DescribeDBEngineVersionsMessageRequestTypeDef](#describedbengineversionsmessagerequesttypedef)
+  - [DescribeDBInstancesMessageRequestTypeDef](#describedbinstancesmessagerequesttypedef)
+  - [DescribeDBParameterGroupsMessageRequestTypeDef](#describedbparametergroupsmessagerequesttypedef)
+  - [DescribeDBParametersMessageRequestTypeDef](#describedbparametersmessagerequesttypedef)
+  - [DescribeDBSubnetGroupsMessageRequestTypeDef](#describedbsubnetgroupsmessagerequesttypedef)
+  - [DescribeEngineDefaultClusterParametersMessageRequestTypeDef](#describeenginedefaultclusterparametersmessagerequesttypedef)
+  - [DescribeEngineDefaultClusterParametersResultTypeDef](#describeenginedefaultclusterparametersresulttypedef)
+  - [DescribeEngineDefaultParametersMessageRequestTypeDef](#describeenginedefaultparametersmessagerequesttypedef)
+  - [DescribeEngineDefaultParametersResultTypeDef](#describeenginedefaultparametersresulttypedef)
+  - [DescribeEventCategoriesMessageRequestTypeDef](#describeeventcategoriesmessagerequesttypedef)
+  - [DescribeEventSubscriptionsMessageRequestTypeDef](#describeeventsubscriptionsmessagerequesttypedef)
+  - [DescribeEventsMessageRequestTypeDef](#describeeventsmessagerequesttypedef)
+  - [DescribeOrderableDBInstanceOptionsMessageRequestTypeDef](#describeorderabledbinstanceoptionsmessagerequesttypedef)
+  - [DescribePendingMaintenanceActionsMessageRequestTypeDef](#describependingmaintenanceactionsmessagerequesttypedef)
+  - [DescribeValidDBInstanceModificationsMessageRequestTypeDef](#describevaliddbinstancemodificationsmessagerequesttypedef)
+  - [DescribeValidDBInstanceModificationsResultTypeDef](#describevaliddbinstancemodificationsresulttypedef)
   - [DomainMembershipTypeDef](#domainmembershiptypedef)
   - [DoubleRangeTypeDef](#doublerangetypedef)
   - [EndpointTypeDef](#endpointtypedef)
   - [EngineDefaultsTypeDef](#enginedefaultstypedef)
   - [EventCategoriesMapTypeDef](#eventcategoriesmaptypedef)
-  - [EventCategoriesMessageResponseTypeDef](#eventcategoriesmessageresponsetypedef)
+  - [EventCategoriesMessageTypeDef](#eventcategoriesmessagetypedef)
   - [EventSubscriptionTypeDef](#eventsubscriptiontypedef)
-  - [EventSubscriptionsMessageResponseTypeDef](#eventsubscriptionsmessageresponsetypedef)
+  - [EventSubscriptionsMessageTypeDef](#eventsubscriptionsmessagetypedef)
   - [EventTypeDef](#eventtypedef)
-  - [EventsMessageResponseTypeDef](#eventsmessageresponsetypedef)
-  - [FailoverDBClusterMessageTypeDef](#failoverdbclustermessagetypedef)
-  - [FailoverDBClusterResultResponseTypeDef](#failoverdbclusterresultresponsetypedef)
+  - [EventsMessageTypeDef](#eventsmessagetypedef)
+  - [FailoverDBClusterMessageRequestTypeDef](#failoverdbclustermessagerequesttypedef)
+  - [FailoverDBClusterResultTypeDef](#failoverdbclusterresulttypedef)
   - [FilterTypeDef](#filtertypedef)
-  - [ListTagsForResourceMessageTypeDef](#listtagsforresourcemessagetypedef)
-  - [ModifyDBClusterEndpointMessageTypeDef](#modifydbclusterendpointmessagetypedef)
-  - [ModifyDBClusterEndpointOutputResponseTypeDef](#modifydbclusterendpointoutputresponsetypedef)
-  - [ModifyDBClusterMessageTypeDef](#modifydbclustermessagetypedef)
-  - [ModifyDBClusterParameterGroupMessageTypeDef](#modifydbclusterparametergroupmessagetypedef)
-  - [ModifyDBClusterResultResponseTypeDef](#modifydbclusterresultresponsetypedef)
-  - [ModifyDBClusterSnapshotAttributeMessageTypeDef](#modifydbclustersnapshotattributemessagetypedef)
-  - [ModifyDBClusterSnapshotAttributeResultResponseTypeDef](#modifydbclustersnapshotattributeresultresponsetypedef)
-  - [ModifyDBInstanceMessageTypeDef](#modifydbinstancemessagetypedef)
-  - [ModifyDBInstanceResultResponseTypeDef](#modifydbinstanceresultresponsetypedef)
-  - [ModifyDBParameterGroupMessageTypeDef](#modifydbparametergroupmessagetypedef)
-  - [ModifyDBSubnetGroupMessageTypeDef](#modifydbsubnetgroupmessagetypedef)
-  - [ModifyDBSubnetGroupResultResponseTypeDef](#modifydbsubnetgroupresultresponsetypedef)
-  - [ModifyEventSubscriptionMessageTypeDef](#modifyeventsubscriptionmessagetypedef)
-  - [ModifyEventSubscriptionResultResponseTypeDef](#modifyeventsubscriptionresultresponsetypedef)
+  - [ListTagsForResourceMessageRequestTypeDef](#listtagsforresourcemessagerequesttypedef)
+  - [ModifyDBClusterEndpointMessageRequestTypeDef](#modifydbclusterendpointmessagerequesttypedef)
+  - [ModifyDBClusterEndpointOutputTypeDef](#modifydbclusterendpointoutputtypedef)
+  - [ModifyDBClusterMessageRequestTypeDef](#modifydbclustermessagerequesttypedef)
+  - [ModifyDBClusterParameterGroupMessageRequestTypeDef](#modifydbclusterparametergroupmessagerequesttypedef)
+  - [ModifyDBClusterResultTypeDef](#modifydbclusterresulttypedef)
+  - [ModifyDBClusterSnapshotAttributeMessageRequestTypeDef](#modifydbclustersnapshotattributemessagerequesttypedef)
+  - [ModifyDBClusterSnapshotAttributeResultTypeDef](#modifydbclustersnapshotattributeresulttypedef)
+  - [ModifyDBInstanceMessageRequestTypeDef](#modifydbinstancemessagerequesttypedef)
+  - [ModifyDBInstanceResultTypeDef](#modifydbinstanceresulttypedef)
+  - [ModifyDBParameterGroupMessageRequestTypeDef](#modifydbparametergroupmessagerequesttypedef)
+  - [ModifyDBSubnetGroupMessageRequestTypeDef](#modifydbsubnetgroupmessagerequesttypedef)
+  - [ModifyDBSubnetGroupResultTypeDef](#modifydbsubnetgroupresulttypedef)
+  - [ModifyEventSubscriptionMessageRequestTypeDef](#modifyeventsubscriptionmessagerequesttypedef)
+  - [ModifyEventSubscriptionResultTypeDef](#modifyeventsubscriptionresulttypedef)
   - [OptionGroupMembershipTypeDef](#optiongroupmembershiptypedef)
   - [OrderableDBInstanceOptionTypeDef](#orderabledbinstanceoptiontypedef)
-  - [OrderableDBInstanceOptionsMessageResponseTypeDef](#orderabledbinstanceoptionsmessageresponsetypedef)
+  - [OrderableDBInstanceOptionsMessageTypeDef](#orderabledbinstanceoptionsmessagetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ParameterTypeDef](#parametertypedef)
   - [PendingCloudwatchLogsExportsTypeDef](#pendingcloudwatchlogsexportstypedef)
   - [PendingMaintenanceActionTypeDef](#pendingmaintenanceactiontypedef)
-  - [PendingMaintenanceActionsMessageResponseTypeDef](#pendingmaintenanceactionsmessageresponsetypedef)
+  - [PendingMaintenanceActionsMessageTypeDef](#pendingmaintenanceactionsmessagetypedef)
   - [PendingModifiedValuesTypeDef](#pendingmodifiedvaluestypedef)
-  - [PromoteReadReplicaDBClusterMessageTypeDef](#promotereadreplicadbclustermessagetypedef)
-  - [PromoteReadReplicaDBClusterResultResponseTypeDef](#promotereadreplicadbclusterresultresponsetypedef)
+  - [PromoteReadReplicaDBClusterMessageRequestTypeDef](#promotereadreplicadbclustermessagerequesttypedef)
+  - [PromoteReadReplicaDBClusterResultTypeDef](#promotereadreplicadbclusterresulttypedef)
   - [RangeTypeDef](#rangetypedef)
-  - [RebootDBInstanceMessageTypeDef](#rebootdbinstancemessagetypedef)
-  - [RebootDBInstanceResultResponseTypeDef](#rebootdbinstanceresultresponsetypedef)
-  - [RemoveRoleFromDBClusterMessageTypeDef](#removerolefromdbclustermessagetypedef)
-  - [RemoveSourceIdentifierFromSubscriptionMessageTypeDef](#removesourceidentifierfromsubscriptionmessagetypedef)
-  - [RemoveSourceIdentifierFromSubscriptionResultResponseTypeDef](#removesourceidentifierfromsubscriptionresultresponsetypedef)
-  - [RemoveTagsFromResourceMessageTypeDef](#removetagsfromresourcemessagetypedef)
-  - [ResetDBClusterParameterGroupMessageTypeDef](#resetdbclusterparametergroupmessagetypedef)
-  - [ResetDBParameterGroupMessageTypeDef](#resetdbparametergroupmessagetypedef)
+  - [RebootDBInstanceMessageRequestTypeDef](#rebootdbinstancemessagerequesttypedef)
+  - [RebootDBInstanceResultTypeDef](#rebootdbinstanceresulttypedef)
+  - [RemoveRoleFromDBClusterMessageRequestTypeDef](#removerolefromdbclustermessagerequesttypedef)
+  - [RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef](#removesourceidentifierfromsubscriptionmessagerequesttypedef)
+  - [RemoveSourceIdentifierFromSubscriptionResultTypeDef](#removesourceidentifierfromsubscriptionresulttypedef)
+  - [RemoveTagsFromResourceMessageRequestTypeDef](#removetagsfromresourcemessagerequesttypedef)
+  - [ResetDBClusterParameterGroupMessageRequestTypeDef](#resetdbclusterparametergroupmessagerequesttypedef)
+  - [ResetDBParameterGroupMessageRequestTypeDef](#resetdbparametergroupmessagerequesttypedef)
   - [ResourcePendingMaintenanceActionsTypeDef](#resourcependingmaintenanceactionstypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreDBClusterFromSnapshotMessageTypeDef](#restoredbclusterfromsnapshotmessagetypedef)
-  - [RestoreDBClusterFromSnapshotResultResponseTypeDef](#restoredbclusterfromsnapshotresultresponsetypedef)
-  - [RestoreDBClusterToPointInTimeMessageTypeDef](#restoredbclustertopointintimemessagetypedef)
-  - [RestoreDBClusterToPointInTimeResultResponseTypeDef](#restoredbclustertopointintimeresultresponsetypedef)
-  - [StartDBClusterMessageTypeDef](#startdbclustermessagetypedef)
-  - [StartDBClusterResultResponseTypeDef](#startdbclusterresultresponsetypedef)
-  - [StopDBClusterMessageTypeDef](#stopdbclustermessagetypedef)
-  - [StopDBClusterResultResponseTypeDef](#stopdbclusterresultresponsetypedef)
+  - [RestoreDBClusterFromSnapshotMessageRequestTypeDef](#restoredbclusterfromsnapshotmessagerequesttypedef)
+  - [RestoreDBClusterFromSnapshotResultTypeDef](#restoredbclusterfromsnapshotresulttypedef)
+  - [RestoreDBClusterToPointInTimeMessageRequestTypeDef](#restoredbclustertopointintimemessagerequesttypedef)
+  - [RestoreDBClusterToPointInTimeResultTypeDef](#restoredbclustertopointintimeresulttypedef)
+  - [StartDBClusterMessageRequestTypeDef](#startdbclustermessagerequesttypedef)
+  - [StartDBClusterResultTypeDef](#startdbclusterresulttypedef)
+  - [StopDBClusterMessageRequestTypeDef](#stopdbclustermessagerequesttypedef)
+  - [StopDBClusterResultTypeDef](#stopdbclusterresulttypedef)
   - [SubnetTypeDef](#subnettypedef)
-  - [TagListMessageResponseTypeDef](#taglistmessageresponsetypedef)
+  - [TagListMessageTypeDef](#taglistmessagetypedef)
   - [TagTypeDef](#tagtypedef)
   - [TimezoneTypeDef](#timezonetypedef)
   - [UpgradeTargetTypeDef](#upgradetargettypedef)
@@ -171,10 +171,10 @@ type annotations stubs module
   - [VpcSecurityGroupMembershipTypeDef](#vpcsecuritygroupmembershiptypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
-## AddRoleToDBClusterMessageTypeDef
+## AddRoleToDBClusterMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import AddRoleToDBClusterMessageTypeDef
+from mypy_boto3_neptune.type_defs import AddRoleToDBClusterMessageRequestTypeDef
 ```
 
 Required fields:
@@ -186,10 +186,10 @@ Optional fields:
 
 - `FeatureName`: `str`
 
-## AddSourceIdentifierToSubscriptionMessageTypeDef
+## AddSourceIdentifierToSubscriptionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import AddSourceIdentifierToSubscriptionMessageTypeDef
+from mypy_boto3_neptune.type_defs import AddSourceIdentifierToSubscriptionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -197,10 +197,10 @@ Required fields:
 - `SubscriptionName`: `str`
 - `SourceIdentifier`: `str`
 
-## AddSourceIdentifierToSubscriptionResultResponseTypeDef
+## AddSourceIdentifierToSubscriptionResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import AddSourceIdentifierToSubscriptionResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import AddSourceIdentifierToSubscriptionResultTypeDef
 ```
 
 Required fields:
@@ -210,10 +210,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddTagsToResourceMessageTypeDef
+## AddTagsToResourceMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import AddTagsToResourceMessageTypeDef
+from mypy_boto3_neptune.type_defs import AddTagsToResourceMessageRequestTypeDef
 ```
 
 Required fields:
@@ -221,10 +221,10 @@ Required fields:
 - `ResourceName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## ApplyPendingMaintenanceActionMessageTypeDef
+## ApplyPendingMaintenanceActionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ApplyPendingMaintenanceActionMessageTypeDef
+from mypy_boto3_neptune.type_defs import ApplyPendingMaintenanceActionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -233,10 +233,10 @@ Required fields:
 - `ApplyAction`: `str`
 - `OptInType`: `str`
 
-## ApplyPendingMaintenanceActionResultResponseTypeDef
+## ApplyPendingMaintenanceActionResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ApplyPendingMaintenanceActionResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import ApplyPendingMaintenanceActionResultTypeDef
 ```
 
 Required fields:
@@ -278,10 +278,10 @@ Optional fields:
 - `EnableLogTypes`: `List`\[`str`\]
 - `DisableLogTypes`: `List`\[`str`\]
 
-## CopyDBClusterParameterGroupMessageTypeDef
+## CopyDBClusterParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CopyDBClusterParameterGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import CopyDBClusterParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -294,10 +294,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CopyDBClusterParameterGroupResultResponseTypeDef
+## CopyDBClusterParameterGroupResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CopyDBClusterParameterGroupResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import CopyDBClusterParameterGroupResultTypeDef
 ```
 
 Required fields:
@@ -307,10 +307,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CopyDBClusterSnapshotMessageTypeDef
+## CopyDBClusterSnapshotMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CopyDBClusterSnapshotMessageTypeDef
+from mypy_boto3_neptune.type_defs import CopyDBClusterSnapshotMessageRequestTypeDef
 ```
 
 Required fields:
@@ -326,10 +326,10 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SourceRegion`: `str`
 
-## CopyDBClusterSnapshotResultResponseTypeDef
+## CopyDBClusterSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CopyDBClusterSnapshotResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import CopyDBClusterSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -339,10 +339,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CopyDBParameterGroupMessageTypeDef
+## CopyDBParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CopyDBParameterGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import CopyDBParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -355,10 +355,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CopyDBParameterGroupResultResponseTypeDef
+## CopyDBParameterGroupResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CopyDBParameterGroupResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import CopyDBParameterGroupResultTypeDef
 ```
 
 Required fields:
@@ -368,10 +368,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBClusterEndpointMessageTypeDef
+## CreateDBClusterEndpointMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBClusterEndpointMessageTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBClusterEndpointMessageRequestTypeDef
 ```
 
 Required fields:
@@ -386,10 +386,10 @@ Optional fields:
 - `ExcludedMembers`: `List`\[`str`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDBClusterEndpointOutputResponseTypeDef
+## CreateDBClusterEndpointOutputTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBClusterEndpointOutputResponseTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBClusterEndpointOutputTypeDef
 ```
 
 Required fields:
@@ -407,10 +407,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBClusterMessageTypeDef
+## CreateDBClusterMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBClusterMessageTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBClusterMessageRequestTypeDef
 ```
 
 Required fields:
@@ -445,10 +445,10 @@ Optional fields:
 - `DeletionProtection`: `bool`
 - `SourceRegion`: `str`
 
-## CreateDBClusterParameterGroupMessageTypeDef
+## CreateDBClusterParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBClusterParameterGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBClusterParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -461,10 +461,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDBClusterParameterGroupResultResponseTypeDef
+## CreateDBClusterParameterGroupResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBClusterParameterGroupResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBClusterParameterGroupResultTypeDef
 ```
 
 Required fields:
@@ -474,10 +474,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBClusterResultResponseTypeDef
+## CreateDBClusterResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBClusterResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBClusterResultTypeDef
 ```
 
 Required fields:
@@ -486,10 +486,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBClusterSnapshotMessageTypeDef
+## CreateDBClusterSnapshotMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBClusterSnapshotMessageTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBClusterSnapshotMessageRequestTypeDef
 ```
 
 Required fields:
@@ -501,10 +501,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDBClusterSnapshotResultResponseTypeDef
+## CreateDBClusterSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBClusterSnapshotResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBClusterSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -514,10 +514,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBInstanceMessageTypeDef
+## CreateDBInstanceMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBInstanceMessageTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBInstanceMessageRequestTypeDef
 ```
 
 Required fields:
@@ -569,10 +569,10 @@ Optional fields:
 - `EnableCloudwatchLogsExports`: `List`\[`str`\]
 - `DeletionProtection`: `bool`
 
-## CreateDBInstanceResultResponseTypeDef
+## CreateDBInstanceResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBInstanceResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBInstanceResultTypeDef
 ```
 
 Required fields:
@@ -581,10 +581,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBParameterGroupMessageTypeDef
+## CreateDBParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBParameterGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -597,10 +597,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDBParameterGroupResultResponseTypeDef
+## CreateDBParameterGroupResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBParameterGroupResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBParameterGroupResultTypeDef
 ```
 
 Required fields:
@@ -610,10 +610,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDBSubnetGroupMessageTypeDef
+## CreateDBSubnetGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBSubnetGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBSubnetGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -626,10 +626,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDBSubnetGroupResultResponseTypeDef
+## CreateDBSubnetGroupResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateDBSubnetGroupResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import CreateDBSubnetGroupResultTypeDef
 ```
 
 Required fields:
@@ -638,10 +638,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateEventSubscriptionMessageTypeDef
+## CreateEventSubscriptionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateEventSubscriptionMessageTypeDef
+from mypy_boto3_neptune.type_defs import CreateEventSubscriptionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -657,10 +657,10 @@ Optional fields:
 - `Enabled`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateEventSubscriptionResultResponseTypeDef
+## CreateEventSubscriptionResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import CreateEventSubscriptionResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import CreateEventSubscriptionResultTypeDef
 ```
 
 Required fields:
@@ -670,10 +670,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DBClusterEndpointMessageResponseTypeDef
+## DBClusterEndpointMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DBClusterEndpointMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import DBClusterEndpointMessageTypeDef
 ```
 
 Required fields:
@@ -716,10 +716,10 @@ Optional fields:
 - `DBClusterParameterGroupStatus`: `str`
 - `PromotionTier`: `int`
 
-## DBClusterMessageResponseTypeDef
+## DBClusterMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DBClusterMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import DBClusterMessageTypeDef
 ```
 
 Required fields:
@@ -740,10 +740,10 @@ Optional fields:
 - `DBClusterOptionGroupName`: `str`
 - `Status`: `str`
 
-## DBClusterParameterGroupDetailsResponseTypeDef
+## DBClusterParameterGroupDetailsTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DBClusterParameterGroupDetailsResponseTypeDef
+from mypy_boto3_neptune.type_defs import DBClusterParameterGroupDetailsTypeDef
 ```
 
 Required fields:
@@ -753,10 +753,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DBClusterParameterGroupNameMessageResponseTypeDef
+## DBClusterParameterGroupNameMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DBClusterParameterGroupNameMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import DBClusterParameterGroupNameMessageTypeDef
 ```
 
 Required fields:
@@ -778,10 +778,10 @@ Optional fields:
 - `Description`: `str`
 - `DBClusterParameterGroupArn`: `str`
 
-## DBClusterParameterGroupsMessageResponseTypeDef
+## DBClusterParameterGroupsMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DBClusterParameterGroupsMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import DBClusterParameterGroupsMessageTypeDef
 ```
 
 Required fields:
@@ -827,10 +827,10 @@ Optional fields:
 - `DBClusterSnapshotAttributes`:
   `List`\[[DBClusterSnapshotAttributeTypeDef](./type_defs.md#dbclustersnapshotattributetypedef)\]
 
-## DBClusterSnapshotMessageResponseTypeDef
+## DBClusterSnapshotMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DBClusterSnapshotMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import DBClusterSnapshotMessageTypeDef
 ```
 
 Required fields:
@@ -923,10 +923,10 @@ Optional fields:
 - `CrossAccountClone`: `bool`
 - `AutomaticRestartTime`: `datetime`
 
-## DBEngineVersionMessageResponseTypeDef
+## DBEngineVersionMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DBEngineVersionMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import DBEngineVersionMessageTypeDef
 ```
 
 Required fields:
@@ -962,10 +962,10 @@ Optional fields:
 - `SupportsLogExportsToCloudwatchLogs`: `bool`
 - `SupportsReadReplica`: `bool`
 
-## DBInstanceMessageResponseTypeDef
+## DBInstanceMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DBInstanceMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import DBInstanceMessageTypeDef
 ```
 
 Required fields:
@@ -1058,10 +1058,10 @@ Optional fields:
 - `EnabledCloudwatchLogsExports`: `List`\[`str`\]
 - `DeletionProtection`: `bool`
 
-## DBParameterGroupDetailsResponseTypeDef
+## DBParameterGroupDetailsTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DBParameterGroupDetailsResponseTypeDef
+from mypy_boto3_neptune.type_defs import DBParameterGroupDetailsTypeDef
 ```
 
 Required fields:
@@ -1071,10 +1071,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DBParameterGroupNameMessageResponseTypeDef
+## DBParameterGroupNameMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DBParameterGroupNameMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import DBParameterGroupNameMessageTypeDef
 ```
 
 Required fields:
@@ -1107,10 +1107,10 @@ Optional fields:
 - `Description`: `str`
 - `DBParameterGroupArn`: `str`
 
-## DBParameterGroupsMessageResponseTypeDef
+## DBParameterGroupsMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DBParameterGroupsMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import DBParameterGroupsMessageTypeDef
 ```
 
 Required fields:
@@ -1132,10 +1132,10 @@ Optional fields:
 - `DBSecurityGroupName`: `str`
 - `Status`: `str`
 
-## DBSubnetGroupMessageResponseTypeDef
+## DBSubnetGroupMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DBSubnetGroupMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import DBSubnetGroupMessageTypeDef
 ```
 
 Required fields:
@@ -1161,20 +1161,20 @@ Optional fields:
 - `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
 - `DBSubnetGroupArn`: `str`
 
-## DeleteDBClusterEndpointMessageTypeDef
+## DeleteDBClusterEndpointMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteDBClusterEndpointMessageTypeDef
+from mypy_boto3_neptune.type_defs import DeleteDBClusterEndpointMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `DBClusterEndpointIdentifier`: `str`
 
-## DeleteDBClusterEndpointOutputResponseTypeDef
+## DeleteDBClusterEndpointOutputTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteDBClusterEndpointOutputResponseTypeDef
+from mypy_boto3_neptune.type_defs import DeleteDBClusterEndpointOutputTypeDef
 ```
 
 Required fields:
@@ -1192,10 +1192,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDBClusterMessageTypeDef
+## DeleteDBClusterMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteDBClusterMessageTypeDef
+from mypy_boto3_neptune.type_defs import DeleteDBClusterMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1207,20 +1207,20 @@ Optional fields:
 - `SkipFinalSnapshot`: `bool`
 - `FinalDBSnapshotIdentifier`: `str`
 
-## DeleteDBClusterParameterGroupMessageTypeDef
+## DeleteDBClusterParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteDBClusterParameterGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import DeleteDBClusterParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `DBClusterParameterGroupName`: `str`
 
-## DeleteDBClusterResultResponseTypeDef
+## DeleteDBClusterResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteDBClusterResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import DeleteDBClusterResultTypeDef
 ```
 
 Required fields:
@@ -1229,20 +1229,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDBClusterSnapshotMessageTypeDef
+## DeleteDBClusterSnapshotMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteDBClusterSnapshotMessageTypeDef
+from mypy_boto3_neptune.type_defs import DeleteDBClusterSnapshotMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `DBClusterSnapshotIdentifier`: `str`
 
-## DeleteDBClusterSnapshotResultResponseTypeDef
+## DeleteDBClusterSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteDBClusterSnapshotResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import DeleteDBClusterSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -1252,10 +1252,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDBInstanceMessageTypeDef
+## DeleteDBInstanceMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteDBInstanceMessageTypeDef
+from mypy_boto3_neptune.type_defs import DeleteDBInstanceMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1267,10 +1267,10 @@ Optional fields:
 - `SkipFinalSnapshot`: `bool`
 - `FinalDBSnapshotIdentifier`: `str`
 
-## DeleteDBInstanceResultResponseTypeDef
+## DeleteDBInstanceResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteDBInstanceResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import DeleteDBInstanceResultTypeDef
 ```
 
 Required fields:
@@ -1279,40 +1279,40 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDBParameterGroupMessageTypeDef
+## DeleteDBParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteDBParameterGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import DeleteDBParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `DBParameterGroupName`: `str`
 
-## DeleteDBSubnetGroupMessageTypeDef
+## DeleteDBSubnetGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteDBSubnetGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import DeleteDBSubnetGroupMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `DBSubnetGroupName`: `str`
 
-## DeleteEventSubscriptionMessageTypeDef
+## DeleteEventSubscriptionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteEventSubscriptionMessageTypeDef
+from mypy_boto3_neptune.type_defs import DeleteEventSubscriptionMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `SubscriptionName`: `str`
 
-## DeleteEventSubscriptionResultResponseTypeDef
+## DeleteEventSubscriptionResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DeleteEventSubscriptionResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import DeleteEventSubscriptionResultTypeDef
 ```
 
 Required fields:
@@ -1322,10 +1322,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDBClusterEndpointsMessageTypeDef
+## DescribeDBClusterEndpointsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeDBClusterEndpointsMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeDBClusterEndpointsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1336,10 +1336,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeDBClusterParameterGroupsMessageTypeDef
+## DescribeDBClusterParameterGroupsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeDBClusterParameterGroupsMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeDBClusterParameterGroupsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1349,10 +1349,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeDBClusterParametersMessageTypeDef
+## DescribeDBClusterParametersMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeDBClusterParametersMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeDBClusterParametersMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1366,20 +1366,20 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeDBClusterSnapshotAttributesMessageTypeDef
+## DescribeDBClusterSnapshotAttributesMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeDBClusterSnapshotAttributesMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeDBClusterSnapshotAttributesMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `DBClusterSnapshotIdentifier`: `str`
 
-## DescribeDBClusterSnapshotAttributesResultResponseTypeDef
+## DescribeDBClusterSnapshotAttributesResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeDBClusterSnapshotAttributesResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import DescribeDBClusterSnapshotAttributesResultTypeDef
 ```
 
 Required fields:
@@ -1389,10 +1389,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDBClusterSnapshotsMessageTypeDef
+## DescribeDBClusterSnapshotsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeDBClusterSnapshotsMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeDBClusterSnapshotsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1406,10 +1406,10 @@ Optional fields:
 - `IncludeShared`: `bool`
 - `IncludePublic`: `bool`
 
-## DescribeDBClustersMessageTypeDef
+## DescribeDBClustersMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeDBClustersMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeDBClustersMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1419,10 +1419,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeDBEngineVersionsMessageTypeDef
+## DescribeDBEngineVersionsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeDBEngineVersionsMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeDBEngineVersionsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1437,10 +1437,10 @@ Optional fields:
 - `ListSupportedCharacterSets`: `bool`
 - `ListSupportedTimezones`: `bool`
 
-## DescribeDBInstancesMessageTypeDef
+## DescribeDBInstancesMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeDBInstancesMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeDBInstancesMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1450,10 +1450,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeDBParameterGroupsMessageTypeDef
+## DescribeDBParameterGroupsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeDBParameterGroupsMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeDBParameterGroupsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1463,10 +1463,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeDBParametersMessageTypeDef
+## DescribeDBParametersMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeDBParametersMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeDBParametersMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1480,10 +1480,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeDBSubnetGroupsMessageTypeDef
+## DescribeDBSubnetGroupsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeDBSubnetGroupsMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeDBSubnetGroupsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1493,10 +1493,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeEngineDefaultClusterParametersMessageTypeDef
+## DescribeEngineDefaultClusterParametersMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeEngineDefaultClusterParametersMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeEngineDefaultClusterParametersMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1509,10 +1509,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeEngineDefaultClusterParametersResultResponseTypeDef
+## DescribeEngineDefaultClusterParametersResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeEngineDefaultClusterParametersResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import DescribeEngineDefaultClusterParametersResultTypeDef
 ```
 
 Required fields:
@@ -1522,10 +1522,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEngineDefaultParametersMessageTypeDef
+## DescribeEngineDefaultParametersMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeEngineDefaultParametersMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeEngineDefaultParametersMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1538,10 +1538,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeEngineDefaultParametersResultResponseTypeDef
+## DescribeEngineDefaultParametersResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeEngineDefaultParametersResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import DescribeEngineDefaultParametersResultTypeDef
 ```
 
 Required fields:
@@ -1551,10 +1551,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeEventCategoriesMessageTypeDef
+## DescribeEventCategoriesMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeEventCategoriesMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeEventCategoriesMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1562,10 +1562,10 @@ Optional fields:
 - `SourceType`: `str`
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-## DescribeEventSubscriptionsMessageTypeDef
+## DescribeEventSubscriptionsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeEventSubscriptionsMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeEventSubscriptionsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1575,10 +1575,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeEventsMessageTypeDef
+## DescribeEventsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeEventsMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeEventsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1593,10 +1593,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribeOrderableDBInstanceOptionsMessageTypeDef
+## DescribeOrderableDBInstanceOptionsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeOrderableDBInstanceOptionsMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeOrderableDBInstanceOptionsMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1613,10 +1613,10 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
-## DescribePendingMaintenanceActionsMessageTypeDef
+## DescribePendingMaintenanceActionsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribePendingMaintenanceActionsMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribePendingMaintenanceActionsMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1626,20 +1626,20 @@ Optional fields:
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
-## DescribeValidDBInstanceModificationsMessageTypeDef
+## DescribeValidDBInstanceModificationsMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeValidDBInstanceModificationsMessageTypeDef
+from mypy_boto3_neptune.type_defs import DescribeValidDBInstanceModificationsMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `DBInstanceIdentifier`: `str`
 
-## DescribeValidDBInstanceModificationsResultResponseTypeDef
+## DescribeValidDBInstanceModificationsResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import DescribeValidDBInstanceModificationsResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import DescribeValidDBInstanceModificationsResultTypeDef
 ```
 
 Required fields:
@@ -1708,10 +1708,10 @@ Optional fields:
 - `SourceType`: `str`
 - `EventCategories`: `List`\[`str`\]
 
-## EventCategoriesMessageResponseTypeDef
+## EventCategoriesMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import EventCategoriesMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import EventCategoriesMessageTypeDef
 ```
 
 Required fields:
@@ -1740,10 +1740,10 @@ Optional fields:
 - `Enabled`: `bool`
 - `EventSubscriptionArn`: `str`
 
-## EventSubscriptionsMessageResponseTypeDef
+## EventSubscriptionsMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import EventSubscriptionsMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import EventSubscriptionsMessageTypeDef
 ```
 
 Required fields:
@@ -1769,10 +1769,10 @@ Optional fields:
 - `Date`: `datetime`
 - `SourceArn`: `str`
 
-## EventsMessageResponseTypeDef
+## EventsMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import EventsMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import EventsMessageTypeDef
 ```
 
 Required fields:
@@ -1782,10 +1782,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## FailoverDBClusterMessageTypeDef
+## FailoverDBClusterMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import FailoverDBClusterMessageTypeDef
+from mypy_boto3_neptune.type_defs import FailoverDBClusterMessageRequestTypeDef
 ```
 
 Optional fields:
@@ -1793,10 +1793,10 @@ Optional fields:
 - `DBClusterIdentifier`: `str`
 - `TargetDBInstanceIdentifier`: `str`
 
-## FailoverDBClusterResultResponseTypeDef
+## FailoverDBClusterResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import FailoverDBClusterResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import FailoverDBClusterResultTypeDef
 ```
 
 Required fields:
@@ -1816,10 +1816,10 @@ Required fields:
 - `Name`: `str`
 - `Values`: `List`\[`str`\]
 
-## ListTagsForResourceMessageTypeDef
+## ListTagsForResourceMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ListTagsForResourceMessageTypeDef
+from mypy_boto3_neptune.type_defs import ListTagsForResourceMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1830,10 +1830,10 @@ Optional fields:
 
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
-## ModifyDBClusterEndpointMessageTypeDef
+## ModifyDBClusterEndpointMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyDBClusterEndpointMessageTypeDef
+from mypy_boto3_neptune.type_defs import ModifyDBClusterEndpointMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1846,10 +1846,10 @@ Optional fields:
 - `StaticMembers`: `List`\[`str`\]
 - `ExcludedMembers`: `List`\[`str`\]
 
-## ModifyDBClusterEndpointOutputResponseTypeDef
+## ModifyDBClusterEndpointOutputTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyDBClusterEndpointOutputResponseTypeDef
+from mypy_boto3_neptune.type_defs import ModifyDBClusterEndpointOutputTypeDef
 ```
 
 Required fields:
@@ -1867,10 +1867,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBClusterMessageTypeDef
+## ModifyDBClusterMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyDBClusterMessageTypeDef
+from mypy_boto3_neptune.type_defs import ModifyDBClusterMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1896,10 +1896,10 @@ Optional fields:
 - `DeletionProtection`: `bool`
 - `CopyTagsToSnapshot`: `bool`
 
-## ModifyDBClusterParameterGroupMessageTypeDef
+## ModifyDBClusterParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyDBClusterParameterGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import ModifyDBClusterParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1907,10 +1907,10 @@ Required fields:
 - `DBClusterParameterGroupName`: `str`
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
-## ModifyDBClusterResultResponseTypeDef
+## ModifyDBClusterResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyDBClusterResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import ModifyDBClusterResultTypeDef
 ```
 
 Required fields:
@@ -1919,10 +1919,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBClusterSnapshotAttributeMessageTypeDef
+## ModifyDBClusterSnapshotAttributeMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyDBClusterSnapshotAttributeMessageTypeDef
+from mypy_boto3_neptune.type_defs import ModifyDBClusterSnapshotAttributeMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1935,10 +1935,10 @@ Optional fields:
 - `ValuesToAdd`: `List`\[`str`\]
 - `ValuesToRemove`: `List`\[`str`\]
 
-## ModifyDBClusterSnapshotAttributeResultResponseTypeDef
+## ModifyDBClusterSnapshotAttributeResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyDBClusterSnapshotAttributeResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import ModifyDBClusterSnapshotAttributeResultTypeDef
 ```
 
 Required fields:
@@ -1948,10 +1948,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBInstanceMessageTypeDef
+## ModifyDBInstanceMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyDBInstanceMessageTypeDef
+from mypy_boto3_neptune.type_defs import ModifyDBInstanceMessageRequestTypeDef
 ```
 
 Required fields:
@@ -1998,10 +1998,10 @@ Optional fields:
   [CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef)
 - `DeletionProtection`: `bool`
 
-## ModifyDBInstanceResultResponseTypeDef
+## ModifyDBInstanceResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyDBInstanceResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import ModifyDBInstanceResultTypeDef
 ```
 
 Required fields:
@@ -2010,10 +2010,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyDBParameterGroupMessageTypeDef
+## ModifyDBParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyDBParameterGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import ModifyDBParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2021,10 +2021,10 @@ Required fields:
 - `DBParameterGroupName`: `str`
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
-## ModifyDBSubnetGroupMessageTypeDef
+## ModifyDBSubnetGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyDBSubnetGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import ModifyDBSubnetGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2036,10 +2036,10 @@ Optional fields:
 
 - `DBSubnetGroupDescription`: `str`
 
-## ModifyDBSubnetGroupResultResponseTypeDef
+## ModifyDBSubnetGroupResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyDBSubnetGroupResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import ModifyDBSubnetGroupResultTypeDef
 ```
 
 Required fields:
@@ -2048,10 +2048,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyEventSubscriptionMessageTypeDef
+## ModifyEventSubscriptionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyEventSubscriptionMessageTypeDef
+from mypy_boto3_neptune.type_defs import ModifyEventSubscriptionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2065,10 +2065,10 @@ Optional fields:
 - `EventCategories`: `List`\[`str`\]
 - `Enabled`: `bool`
 
-## ModifyEventSubscriptionResultResponseTypeDef
+## ModifyEventSubscriptionResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ModifyEventSubscriptionResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import ModifyEventSubscriptionResultTypeDef
 ```
 
 Required fields:
@@ -2119,10 +2119,10 @@ Optional fields:
 - `MinIopsPerGib`: `float`
 - `MaxIopsPerGib`: `float`
 
-## OrderableDBInstanceOptionsMessageResponseTypeDef
+## OrderableDBInstanceOptionsMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import OrderableDBInstanceOptionsMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import OrderableDBInstanceOptionsMessageTypeDef
 ```
 
 Required fields:
@@ -2190,10 +2190,10 @@ Optional fields:
 - `CurrentApplyDate`: `datetime`
 - `Description`: `str`
 
-## PendingMaintenanceActionsMessageResponseTypeDef
+## PendingMaintenanceActionsMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import PendingMaintenanceActionsMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import PendingMaintenanceActionsMessageTypeDef
 ```
 
 Required fields:
@@ -2228,20 +2228,20 @@ Optional fields:
 - `PendingCloudwatchLogsExports`:
   [PendingCloudwatchLogsExportsTypeDef](./type_defs.md#pendingcloudwatchlogsexportstypedef)
 
-## PromoteReadReplicaDBClusterMessageTypeDef
+## PromoteReadReplicaDBClusterMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import PromoteReadReplicaDBClusterMessageTypeDef
+from mypy_boto3_neptune.type_defs import PromoteReadReplicaDBClusterMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `DBClusterIdentifier`: `str`
 
-## PromoteReadReplicaDBClusterResultResponseTypeDef
+## PromoteReadReplicaDBClusterResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import PromoteReadReplicaDBClusterResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import PromoteReadReplicaDBClusterResultTypeDef
 ```
 
 Required fields:
@@ -2262,10 +2262,10 @@ Optional fields:
 - `To`: `int`
 - `Step`: `int`
 
-## RebootDBInstanceMessageTypeDef
+## RebootDBInstanceMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import RebootDBInstanceMessageTypeDef
+from mypy_boto3_neptune.type_defs import RebootDBInstanceMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2276,10 +2276,10 @@ Optional fields:
 
 - `ForceFailover`: `bool`
 
-## RebootDBInstanceResultResponseTypeDef
+## RebootDBInstanceResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import RebootDBInstanceResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import RebootDBInstanceResultTypeDef
 ```
 
 Required fields:
@@ -2288,10 +2288,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RemoveRoleFromDBClusterMessageTypeDef
+## RemoveRoleFromDBClusterMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import RemoveRoleFromDBClusterMessageTypeDef
+from mypy_boto3_neptune.type_defs import RemoveRoleFromDBClusterMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2303,10 +2303,10 @@ Optional fields:
 
 - `FeatureName`: `str`
 
-## RemoveSourceIdentifierFromSubscriptionMessageTypeDef
+## RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import RemoveSourceIdentifierFromSubscriptionMessageTypeDef
+from mypy_boto3_neptune.type_defs import RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2314,10 +2314,10 @@ Required fields:
 - `SubscriptionName`: `str`
 - `SourceIdentifier`: `str`
 
-## RemoveSourceIdentifierFromSubscriptionResultResponseTypeDef
+## RemoveSourceIdentifierFromSubscriptionResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import RemoveSourceIdentifierFromSubscriptionResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import RemoveSourceIdentifierFromSubscriptionResultTypeDef
 ```
 
 Required fields:
@@ -2327,10 +2327,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RemoveTagsFromResourceMessageTypeDef
+## RemoveTagsFromResourceMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import RemoveTagsFromResourceMessageTypeDef
+from mypy_boto3_neptune.type_defs import RemoveTagsFromResourceMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2338,10 +2338,10 @@ Required fields:
 - `ResourceName`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## ResetDBClusterParameterGroupMessageTypeDef
+## ResetDBClusterParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ResetDBClusterParameterGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import ResetDBClusterParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2353,10 +2353,10 @@ Optional fields:
 - `ResetAllParameters`: `bool`
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
-## ResetDBParameterGroupMessageTypeDef
+## ResetDBParameterGroupMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import ResetDBParameterGroupMessageTypeDef
+from mypy_boto3_neptune.type_defs import ResetDBParameterGroupMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2394,10 +2394,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RestoreDBClusterFromSnapshotMessageTypeDef
+## RestoreDBClusterFromSnapshotMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import RestoreDBClusterFromSnapshotMessageTypeDef
+from mypy_boto3_neptune.type_defs import RestoreDBClusterFromSnapshotMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2423,10 +2423,10 @@ Optional fields:
 - `DeletionProtection`: `bool`
 - `CopyTagsToSnapshot`: `bool`
 
-## RestoreDBClusterFromSnapshotResultResponseTypeDef
+## RestoreDBClusterFromSnapshotResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import RestoreDBClusterFromSnapshotResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import RestoreDBClusterFromSnapshotResultTypeDef
 ```
 
 Required fields:
@@ -2435,10 +2435,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RestoreDBClusterToPointInTimeMessageTypeDef
+## RestoreDBClusterToPointInTimeMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import RestoreDBClusterToPointInTimeMessageTypeDef
+from mypy_boto3_neptune.type_defs import RestoreDBClusterToPointInTimeMessageRequestTypeDef
 ```
 
 Required fields:
@@ -2462,10 +2462,10 @@ Optional fields:
 - `DBClusterParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 
-## RestoreDBClusterToPointInTimeResultResponseTypeDef
+## RestoreDBClusterToPointInTimeResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import RestoreDBClusterToPointInTimeResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import RestoreDBClusterToPointInTimeResultTypeDef
 ```
 
 Required fields:
@@ -2474,20 +2474,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StartDBClusterMessageTypeDef
+## StartDBClusterMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import StartDBClusterMessageTypeDef
+from mypy_boto3_neptune.type_defs import StartDBClusterMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `DBClusterIdentifier`: `str`
 
-## StartDBClusterResultResponseTypeDef
+## StartDBClusterResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import StartDBClusterResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import StartDBClusterResultTypeDef
 ```
 
 Required fields:
@@ -2496,20 +2496,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## StopDBClusterMessageTypeDef
+## StopDBClusterMessageRequestTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import StopDBClusterMessageTypeDef
+from mypy_boto3_neptune.type_defs import StopDBClusterMessageRequestTypeDef
 ```
 
 Required fields:
 
 - `DBClusterIdentifier`: `str`
 
-## StopDBClusterResultResponseTypeDef
+## StopDBClusterResultTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import StopDBClusterResultResponseTypeDef
+from mypy_boto3_neptune.type_defs import StopDBClusterResultTypeDef
 ```
 
 Required fields:
@@ -2531,10 +2531,10 @@ Optional fields:
   [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
 - `SubnetStatus`: `str`
 
-## TagListMessageResponseTypeDef
+## TagListMessageTypeDef
 
 ```python
-from mypy_boto3_neptune.type_defs import TagListMessageResponseTypeDef
+from mypy_boto3_neptune.type_defs import TagListMessageTypeDef
 ```
 
 Required fields:

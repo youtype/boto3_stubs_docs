@@ -220,7 +220,7 @@ Keyword-only arguments:
 - `ScanBy`: [ScanByType](./literals.md#scanbytype)
 
 Returns
-[DescribeAlarmHistoryOutputResponseTypeDef](./type_defs.md#describealarmhistoryoutputresponsetypedef).
+[DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef).
 
 #### Alarm.disable_actions method
 
@@ -373,7 +373,7 @@ Keyword-only arguments:
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 
 Returns
-[GetMetricStatisticsOutputResponseTypeDef](./type_defs.md#getmetricstatisticsoutputresponsetypedef).
+[GetMetricStatisticsOutputTypeDef](./type_defs.md#getmetricstatisticsoutputtypedef).
 
 #### Metric.load method
 

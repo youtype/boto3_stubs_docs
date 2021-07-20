@@ -11,6 +11,7 @@ type annotations stubs module
   - [IAMClient](#iamclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_client_id_to_open_id_connect_provider](#add_client_id_to_open_id_connect_provider)
     - [add_role_to_instance_profile](#add_role_to_instance_profile)
     - [add_user_to_group](#add_user_to_group)
@@ -235,6 +236,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IAMClient exceptions.
+
+Type annotations for `boto3.client("iam").exceptions` method.
+
+Boto3 documentation:
+[IAM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_client_id_to_open_id_connect_provider
 
 Adds a new client ID (also known as audience) to the list of client IDs already
@@ -247,7 +259,7 @@ Boto3 documentation:
 [IAM.Client.add_client_id_to_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_client_id_to_open_id_connect_provider)
 
 Arguments mapping described in
-[AddClientIDToOpenIDConnectProviderRequestTypeDef](./type_defs.md#addclientidtoopenidconnectproviderrequesttypedef).
+[AddClientIDToOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#addclientidtoopenidconnectproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -264,7 +276,7 @@ Boto3 documentation:
 [IAM.Client.add_role_to_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_role_to_instance_profile)
 
 Arguments mapping described in
-[AddRoleToInstanceProfileRequestTypeDef](./type_defs.md#addroletoinstanceprofilerequesttypedef).
+[AddRoleToInstanceProfileRequestRequestTypeDef](./type_defs.md#addroletoinstanceprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -281,7 +293,7 @@ Boto3 documentation:
 [IAM.Client.add_user_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_user_to_group)
 
 Arguments mapping described in
-[AddUserToGroupRequestTypeDef](./type_defs.md#addusertogrouprequesttypedef).
+[AddUserToGroupRequestRequestTypeDef](./type_defs.md#addusertogrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -298,7 +310,7 @@ Boto3 documentation:
 [IAM.Client.attach_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_group_policy)
 
 Arguments mapping described in
-[AttachGroupPolicyRequestTypeDef](./type_defs.md#attachgrouppolicyrequesttypedef).
+[AttachGroupPolicyRequestRequestTypeDef](./type_defs.md#attachgrouppolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -315,7 +327,7 @@ Boto3 documentation:
 [IAM.Client.attach_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_role_policy)
 
 Arguments mapping described in
-[AttachRolePolicyRequestTypeDef](./type_defs.md#attachrolepolicyrequesttypedef).
+[AttachRolePolicyRequestRequestTypeDef](./type_defs.md#attachrolepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -332,7 +344,7 @@ Boto3 documentation:
 [IAM.Client.attach_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_user_policy)
 
 Arguments mapping described in
-[AttachUserPolicyRequestTypeDef](./type_defs.md#attachuserpolicyrequesttypedef).
+[AttachUserPolicyRequestRequestTypeDef](./type_defs.md#attachuserpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -364,7 +376,7 @@ Boto3 documentation:
 [IAM.Client.change_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.change_password)
 
 Arguments mapping described in
-[ChangePasswordRequestTypeDef](./type_defs.md#changepasswordrequesttypedef).
+[ChangePasswordRequestRequestTypeDef](./type_defs.md#changepasswordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -373,8 +385,8 @@ Keyword-only arguments:
 
 ### create_access_key
 
-Creates a new AWS secret access key and corresponding AWS access key ID for the
-specified user.
+Creates a new Amazon Web Services secret access key and corresponding Amazon
+Web Services access key ID for the specified user.
 
 Type annotations for `boto3.client("iam").create_access_key` method.
 
@@ -382,18 +394,18 @@ Boto3 documentation:
 [IAM.Client.create_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_access_key)
 
 Arguments mapping described in
-[CreateAccessKeyRequestTypeDef](./type_defs.md#createaccesskeyrequesttypedef).
+[CreateAccessKeyRequestRequestTypeDef](./type_defs.md#createaccesskeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `UserName`: `str`
 
 Returns
-[CreateAccessKeyResponseResponseTypeDef](./type_defs.md#createaccesskeyresponseresponsetypedef).
+[CreateAccessKeyResponseTypeDef](./type_defs.md#createaccesskeyresponsetypedef).
 
 ### create_account_alias
 
-Creates an alias for your AWS account.
+Creates an alias for your account.
 
 Type annotations for `boto3.client("iam").create_account_alias` method.
 
@@ -401,7 +413,7 @@ Boto3 documentation:
 [IAM.Client.create_account_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_account_alias)
 
 Arguments mapping described in
-[CreateAccountAliasRequestTypeDef](./type_defs.md#createaccountaliasrequesttypedef).
+[CreateAccountAliasRequestRequestTypeDef](./type_defs.md#createaccountaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -417,7 +429,7 @@ Boto3 documentation:
 [IAM.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_group)
 
 Arguments mapping described in
-[CreateGroupRequestTypeDef](./type_defs.md#creategrouprequesttypedef).
+[CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -425,7 +437,7 @@ Keyword-only arguments:
 - `Path`: `str`
 
 Returns
-[CreateGroupResponseResponseTypeDef](./type_defs.md#creategroupresponseresponsetypedef).
+[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
 
 ### create_instance_profile
 
@@ -437,7 +449,7 @@ Boto3 documentation:
 [IAM.Client.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_instance_profile)
 
 Arguments mapping described in
-[CreateInstanceProfileRequestTypeDef](./type_defs.md#createinstanceprofilerequesttypedef).
+[CreateInstanceProfileRequestRequestTypeDef](./type_defs.md#createinstanceprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -446,7 +458,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateInstanceProfileResponseResponseTypeDef](./type_defs.md#createinstanceprofileresponseresponsetypedef).
+[CreateInstanceProfileResponseTypeDef](./type_defs.md#createinstanceprofileresponsetypedef).
 
 ### create_login_profile
 
@@ -458,7 +470,7 @@ Boto3 documentation:
 [IAM.Client.create_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_login_profile)
 
 Arguments mapping described in
-[CreateLoginProfileRequestTypeDef](./type_defs.md#createloginprofilerequesttypedef).
+[CreateLoginProfileRequestRequestTypeDef](./type_defs.md#createloginprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -467,7 +479,7 @@ Keyword-only arguments:
 - `PasswordResetRequired`: `bool`
 
 Returns
-[CreateLoginProfileResponseResponseTypeDef](./type_defs.md#createloginprofileresponseresponsetypedef).
+[CreateLoginProfileResponseTypeDef](./type_defs.md#createloginprofileresponsetypedef).
 
 ### create_open_id_connect_provider
 
@@ -481,7 +493,7 @@ Boto3 documentation:
 [IAM.Client.create_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_open_id_connect_provider)
 
 Arguments mapping described in
-[CreateOpenIDConnectProviderRequestTypeDef](./type_defs.md#createopenidconnectproviderrequesttypedef).
+[CreateOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#createopenidconnectproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -491,11 +503,11 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateOpenIDConnectProviderResponseResponseTypeDef](./type_defs.md#createopenidconnectproviderresponseresponsetypedef).
+[CreateOpenIDConnectProviderResponseTypeDef](./type_defs.md#createopenidconnectproviderresponsetypedef).
 
 ### create_policy
 
-Creates a new managed policy for your AWS account.
+Creates a new managed policy for your account.
 
 Type annotations for `boto3.client("iam").create_policy` method.
 
@@ -503,7 +515,7 @@ Boto3 documentation:
 [IAM.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy)
 
 Arguments mapping described in
-[CreatePolicyRequestTypeDef](./type_defs.md#createpolicyrequesttypedef).
+[CreatePolicyRequestRequestTypeDef](./type_defs.md#createpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -514,7 +526,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePolicyResponseResponseTypeDef](./type_defs.md#createpolicyresponseresponsetypedef).
+[CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
 
 ### create_policy_version
 
@@ -526,7 +538,7 @@ Boto3 documentation:
 [IAM.Client.create_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy_version)
 
 Arguments mapping described in
-[CreatePolicyVersionRequestTypeDef](./type_defs.md#createpolicyversionrequesttypedef).
+[CreatePolicyVersionRequestRequestTypeDef](./type_defs.md#createpolicyversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -535,11 +547,11 @@ Keyword-only arguments:
 - `SetAsDefault`: `bool`
 
 Returns
-[CreatePolicyVersionResponseResponseTypeDef](./type_defs.md#createpolicyversionresponseresponsetypedef).
+[CreatePolicyVersionResponseTypeDef](./type_defs.md#createpolicyversionresponsetypedef).
 
 ### create_role
 
-Creates a new role for your AWS account.
+Creates a new role for your account.
 
 Type annotations for `boto3.client("iam").create_role` method.
 
@@ -547,7 +559,7 @@ Boto3 documentation:
 [IAM.Client.create_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_role)
 
 Arguments mapping described in
-[CreateRoleRequestTypeDef](./type_defs.md#createrolerequesttypedef).
+[CreateRoleRequestRequestTypeDef](./type_defs.md#createrolerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -559,8 +571,7 @@ Keyword-only arguments:
 - `PermissionsBoundary`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateRoleResponseResponseTypeDef](./type_defs.md#createroleresponseresponsetypedef).
+Returns [CreateRoleResponseTypeDef](./type_defs.md#createroleresponsetypedef).
 
 ### create_saml_provider
 
@@ -573,7 +584,7 @@ Boto3 documentation:
 [IAM.Client.create_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_saml_provider)
 
 Arguments mapping described in
-[CreateSAMLProviderRequestTypeDef](./type_defs.md#createsamlproviderrequesttypedef).
+[CreateSAMLProviderRequestRequestTypeDef](./type_defs.md#createsamlproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -582,11 +593,11 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateSAMLProviderResponseResponseTypeDef](./type_defs.md#createsamlproviderresponseresponsetypedef).
+[CreateSAMLProviderResponseTypeDef](./type_defs.md#createsamlproviderresponsetypedef).
 
 ### create_service_linked_role
 
-Creates an IAM role that is linked to a specific AWS service.
+Creates an IAM role that is linked to a specific Amazon Web Services service.
 
 Type annotations for `boto3.client("iam").create_service_linked_role` method.
 
@@ -594,7 +605,7 @@ Boto3 documentation:
 [IAM.Client.create_service_linked_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_linked_role)
 
 Arguments mapping described in
-[CreateServiceLinkedRoleRequestTypeDef](./type_defs.md#createservicelinkedrolerequesttypedef).
+[CreateServiceLinkedRoleRequestRequestTypeDef](./type_defs.md#createservicelinkedrolerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -603,7 +614,7 @@ Keyword-only arguments:
 - `CustomSuffix`: `str`
 
 Returns
-[CreateServiceLinkedRoleResponseResponseTypeDef](./type_defs.md#createservicelinkedroleresponseresponsetypedef).
+[CreateServiceLinkedRoleResponseTypeDef](./type_defs.md#createservicelinkedroleresponsetypedef).
 
 ### create_service_specific_credential
 
@@ -617,7 +628,7 @@ Boto3 documentation:
 [IAM.Client.create_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_specific_credential)
 
 Arguments mapping described in
-[CreateServiceSpecificCredentialRequestTypeDef](./type_defs.md#createservicespecificcredentialrequesttypedef).
+[CreateServiceSpecificCredentialRequestRequestTypeDef](./type_defs.md#createservicespecificcredentialrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -625,11 +636,11 @@ Keyword-only arguments:
 - `ServiceName`: `str` *(required)*
 
 Returns
-[CreateServiceSpecificCredentialResponseResponseTypeDef](./type_defs.md#createservicespecificcredentialresponseresponsetypedef).
+[CreateServiceSpecificCredentialResponseTypeDef](./type_defs.md#createservicespecificcredentialresponsetypedef).
 
 ### create_user
 
-Creates a new IAM user for your AWS account.
+Creates a new IAM user for your account.
 
 Type annotations for `boto3.client("iam").create_user` method.
 
@@ -637,7 +648,7 @@ Boto3 documentation:
 [IAM.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_user)
 
 Arguments mapping described in
-[CreateUserRequestTypeDef](./type_defs.md#createuserrequesttypedef).
+[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -646,12 +657,11 @@ Keyword-only arguments:
 - `PermissionsBoundary`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateUserResponseResponseTypeDef](./type_defs.md#createuserresponseresponsetypedef).
+Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### create_virtual_mfa_device
 
-Creates a new virtual MFA device for the AWS account.
+Creates a new virtual MFA device for the account.
 
 Type annotations for `boto3.client("iam").create_virtual_mfa_device` method.
 
@@ -659,7 +669,7 @@ Boto3 documentation:
 [IAM.Client.create_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_virtual_mfa_device)
 
 Arguments mapping described in
-[CreateVirtualMFADeviceRequestTypeDef](./type_defs.md#createvirtualmfadevicerequesttypedef).
+[CreateVirtualMFADeviceRequestRequestTypeDef](./type_defs.md#createvirtualmfadevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -668,7 +678,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateVirtualMFADeviceResponseResponseTypeDef](./type_defs.md#createvirtualmfadeviceresponseresponsetypedef).
+[CreateVirtualMFADeviceResponseTypeDef](./type_defs.md#createvirtualmfadeviceresponsetypedef).
 
 ### deactivate_mfa_device
 
@@ -681,7 +691,7 @@ Boto3 documentation:
 [IAM.Client.deactivate_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.deactivate_mfa_device)
 
 Arguments mapping described in
-[DeactivateMFADeviceRequestTypeDef](./type_defs.md#deactivatemfadevicerequesttypedef).
+[DeactivateMFADeviceRequestRequestTypeDef](./type_defs.md#deactivatemfadevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -698,7 +708,7 @@ Boto3 documentation:
 [IAM.Client.delete_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_access_key)
 
 Arguments mapping described in
-[DeleteAccessKeyRequestTypeDef](./type_defs.md#deleteaccesskeyrequesttypedef).
+[DeleteAccessKeyRequestRequestTypeDef](./type_defs.md#deleteaccesskeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -707,7 +717,7 @@ Keyword-only arguments:
 
 ### delete_account_alias
 
-Deletes the specified AWS account alias.
+Deletes the specified account alias.
 
 Type annotations for `boto3.client("iam").delete_account_alias` method.
 
@@ -715,7 +725,7 @@ Boto3 documentation:
 [IAM.Client.delete_account_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_alias)
 
 Arguments mapping described in
-[DeleteAccountAliasRequestTypeDef](./type_defs.md#deleteaccountaliasrequesttypedef).
+[DeleteAccountAliasRequestRequestTypeDef](./type_defs.md#deleteaccountaliasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -723,7 +733,7 @@ Keyword-only arguments:
 
 ### delete_account_password_policy
 
-Deletes the password policy for the AWS account.
+Deletes the password policy for the account.
 
 Type annotations for `boto3.client("iam").delete_account_password_policy`
 method.
@@ -741,7 +751,7 @@ Boto3 documentation:
 [IAM.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group)
 
 Arguments mapping described in
-[DeleteGroupRequestTypeDef](./type_defs.md#deletegrouprequesttypedef).
+[DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -758,7 +768,7 @@ Boto3 documentation:
 [IAM.Client.delete_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group_policy)
 
 Arguments mapping described in
-[DeleteGroupPolicyRequestTypeDef](./type_defs.md#deletegrouppolicyrequesttypedef).
+[DeleteGroupPolicyRequestRequestTypeDef](./type_defs.md#deletegrouppolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -775,7 +785,7 @@ Boto3 documentation:
 [IAM.Client.delete_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_instance_profile)
 
 Arguments mapping described in
-[DeleteInstanceProfileRequestTypeDef](./type_defs.md#deleteinstanceprofilerequesttypedef).
+[DeleteInstanceProfileRequestRequestTypeDef](./type_defs.md#deleteinstanceprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -784,7 +794,7 @@ Keyword-only arguments:
 ### delete_login_profile
 
 Deletes the password for the specified IAM user, which terminates the user's
-ability to access AWS services through the AWS Management Console.
+ability to access Amazon Web Services services through the Management Console.
 
 Type annotations for `boto3.client("iam").delete_login_profile` method.
 
@@ -792,7 +802,7 @@ Boto3 documentation:
 [IAM.Client.delete_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_login_profile)
 
 Arguments mapping described in
-[DeleteLoginProfileRequestTypeDef](./type_defs.md#deleteloginprofilerequesttypedef).
+[DeleteLoginProfileRequestRequestTypeDef](./type_defs.md#deleteloginprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -809,7 +819,7 @@ Boto3 documentation:
 [IAM.Client.delete_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_open_id_connect_provider)
 
 Arguments mapping described in
-[DeleteOpenIDConnectProviderRequestTypeDef](./type_defs.md#deleteopenidconnectproviderrequesttypedef).
+[DeleteOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#deleteopenidconnectproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -825,7 +835,7 @@ Boto3 documentation:
 [IAM.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy)
 
 Arguments mapping described in
-[DeletePolicyRequestTypeDef](./type_defs.md#deletepolicyrequesttypedef).
+[DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -841,7 +851,7 @@ Boto3 documentation:
 [IAM.Client.delete_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy_version)
 
 Arguments mapping described in
-[DeletePolicyVersionRequestTypeDef](./type_defs.md#deletepolicyversionrequesttypedef).
+[DeletePolicyVersionRequestRequestTypeDef](./type_defs.md#deletepolicyversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -858,7 +868,7 @@ Boto3 documentation:
 [IAM.Client.delete_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role)
 
 Arguments mapping described in
-[DeleteRoleRequestTypeDef](./type_defs.md#deleterolerequesttypedef).
+[DeleteRoleRequestRequestTypeDef](./type_defs.md#deleterolerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -875,7 +885,7 @@ Boto3 documentation:
 [IAM.Client.delete_role_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_permissions_boundary)
 
 Arguments mapping described in
-[DeleteRolePermissionsBoundaryRequestTypeDef](./type_defs.md#deleterolepermissionsboundaryrequesttypedef).
+[DeleteRolePermissionsBoundaryRequestRequestTypeDef](./type_defs.md#deleterolepermissionsboundaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -891,7 +901,7 @@ Boto3 documentation:
 [IAM.Client.delete_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_policy)
 
 Arguments mapping described in
-[DeleteRolePolicyRequestTypeDef](./type_defs.md#deleterolepolicyrequesttypedef).
+[DeleteRolePolicyRequestRequestTypeDef](./type_defs.md#deleterolepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -908,7 +918,7 @@ Boto3 documentation:
 [IAM.Client.delete_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_saml_provider)
 
 Arguments mapping described in
-[DeleteSAMLProviderRequestTypeDef](./type_defs.md#deletesamlproviderrequesttypedef).
+[DeleteSAMLProviderRequestRequestTypeDef](./type_defs.md#deletesamlproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -924,7 +934,7 @@ Boto3 documentation:
 [IAM.Client.delete_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_server_certificate)
 
 Arguments mapping described in
-[DeleteServerCertificateRequestTypeDef](./type_defs.md#deleteservercertificaterequesttypedef).
+[DeleteServerCertificateRequestRequestTypeDef](./type_defs.md#deleteservercertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -941,14 +951,14 @@ Boto3 documentation:
 [IAM.Client.delete_service_linked_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_linked_role)
 
 Arguments mapping described in
-[DeleteServiceLinkedRoleRequestTypeDef](./type_defs.md#deleteservicelinkedrolerequesttypedef).
+[DeleteServiceLinkedRoleRequestRequestTypeDef](./type_defs.md#deleteservicelinkedrolerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
 Returns
-[DeleteServiceLinkedRoleResponseResponseTypeDef](./type_defs.md#deleteservicelinkedroleresponseresponsetypedef).
+[DeleteServiceLinkedRoleResponseTypeDef](./type_defs.md#deleteservicelinkedroleresponsetypedef).
 
 ### delete_service_specific_credential
 
@@ -961,7 +971,7 @@ Boto3 documentation:
 [IAM.Client.delete_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_specific_credential)
 
 Arguments mapping described in
-[DeleteServiceSpecificCredentialRequestTypeDef](./type_defs.md#deleteservicespecificcredentialrequesttypedef).
+[DeleteServiceSpecificCredentialRequestRequestTypeDef](./type_defs.md#deleteservicespecificcredentialrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -978,7 +988,7 @@ Boto3 documentation:
 [IAM.Client.delete_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_signing_certificate)
 
 Arguments mapping described in
-[DeleteSigningCertificateRequestTypeDef](./type_defs.md#deletesigningcertificaterequesttypedef).
+[DeleteSigningCertificateRequestRequestTypeDef](./type_defs.md#deletesigningcertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -995,7 +1005,7 @@ Boto3 documentation:
 [IAM.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_ssh_public_key)
 
 Arguments mapping described in
-[DeleteSSHPublicKeyRequestTypeDef](./type_defs.md#deletesshpublickeyrequesttypedef).
+[DeleteSSHPublicKeyRequestRequestTypeDef](./type_defs.md#deletesshpublickeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1012,7 +1022,7 @@ Boto3 documentation:
 [IAM.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user)
 
 Arguments mapping described in
-[DeleteUserRequestTypeDef](./type_defs.md#deleteuserrequesttypedef).
+[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1029,7 +1039,7 @@ Boto3 documentation:
 [IAM.Client.delete_user_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_permissions_boundary)
 
 Arguments mapping described in
-[DeleteUserPermissionsBoundaryRequestTypeDef](./type_defs.md#deleteuserpermissionsboundaryrequesttypedef).
+[DeleteUserPermissionsBoundaryRequestRequestTypeDef](./type_defs.md#deleteuserpermissionsboundaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1045,7 +1055,7 @@ Boto3 documentation:
 [IAM.Client.delete_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_policy)
 
 Arguments mapping described in
-[DeleteUserPolicyRequestTypeDef](./type_defs.md#deleteuserpolicyrequesttypedef).
+[DeleteUserPolicyRequestRequestTypeDef](./type_defs.md#deleteuserpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1062,7 +1072,7 @@ Boto3 documentation:
 [IAM.Client.delete_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_virtual_mfa_device)
 
 Arguments mapping described in
-[DeleteVirtualMFADeviceRequestTypeDef](./type_defs.md#deletevirtualmfadevicerequesttypedef).
+[DeleteVirtualMFADeviceRequestRequestTypeDef](./type_defs.md#deletevirtualmfadevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1078,7 +1088,7 @@ Boto3 documentation:
 [IAM.Client.detach_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_group_policy)
 
 Arguments mapping described in
-[DetachGroupPolicyRequestTypeDef](./type_defs.md#detachgrouppolicyrequesttypedef).
+[DetachGroupPolicyRequestRequestTypeDef](./type_defs.md#detachgrouppolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1095,7 +1105,7 @@ Boto3 documentation:
 [IAM.Client.detach_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_role_policy)
 
 Arguments mapping described in
-[DetachRolePolicyRequestTypeDef](./type_defs.md#detachrolepolicyrequesttypedef).
+[DetachRolePolicyRequestRequestTypeDef](./type_defs.md#detachrolepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1112,7 +1122,7 @@ Boto3 documentation:
 [IAM.Client.detach_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_user_policy)
 
 Arguments mapping described in
-[DetachUserPolicyRequestTypeDef](./type_defs.md#detachuserpolicyrequesttypedef).
+[DetachUserPolicyRequestRequestTypeDef](./type_defs.md#detachuserpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1129,7 +1139,7 @@ Boto3 documentation:
 [IAM.Client.enable_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.enable_mfa_device)
 
 Arguments mapping described in
-[EnableMFADeviceRequestTypeDef](./type_defs.md#enablemfadevicerequesttypedef).
+[EnableMFADeviceRequestRequestTypeDef](./type_defs.md#enablemfadevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1140,7 +1150,7 @@ Keyword-only arguments:
 
 ### generate_credential_report
 
-Generates a credential report for the AWS account.
+Generates a credential report for the account.
 
 Type annotations for `boto3.client("iam").generate_credential_report` method.
 
@@ -1148,11 +1158,11 @@ Boto3 documentation:
 [IAM.Client.generate_credential_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_credential_report)
 
 Returns
-[GenerateCredentialReportResponseResponseTypeDef](./type_defs.md#generatecredentialreportresponseresponsetypedef).
+[GenerateCredentialReportResponseTypeDef](./type_defs.md#generatecredentialreportresponsetypedef).
 
 ### generate_organizations_access_report
 
-Generates a report for service last accessed data for AWS Organizations.
+Generates a report for service last accessed data for Organizations.
 
 Type annotations for `boto3.client("iam").generate_organizations_access_report`
 method.
@@ -1161,7 +1171,7 @@ Boto3 documentation:
 [IAM.Client.generate_organizations_access_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_organizations_access_report)
 
 Arguments mapping described in
-[GenerateOrganizationsAccessReportRequestTypeDef](./type_defs.md#generateorganizationsaccessreportrequesttypedef).
+[GenerateOrganizationsAccessReportRequestRequestTypeDef](./type_defs.md#generateorganizationsaccessreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1169,7 +1179,7 @@ Keyword-only arguments:
 - `OrganizationsPolicyId`: `str`
 
 Returns
-[GenerateOrganizationsAccessReportResponseResponseTypeDef](./type_defs.md#generateorganizationsaccessreportresponseresponsetypedef).
+[GenerateOrganizationsAccessReportResponseTypeDef](./type_defs.md#generateorganizationsaccessreportresponsetypedef).
 
 ### generate_presigned_url
 
@@ -1192,7 +1202,8 @@ Returns `str`.
 ### generate_service_last_accessed_details
 
 Generates a report that includes details about when an IAM resource (user,
-group, role, or policy) was last used in an attempt to access AWS services.
+group, role, or policy) was last used in an attempt to access Amazon Web
+Services services.
 
 Type annotations for
 `boto3.client("iam").generate_service_last_accessed_details` method.
@@ -1201,7 +1212,7 @@ Boto3 documentation:
 [IAM.Client.generate_service_last_accessed_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_service_last_accessed_details)
 
 Arguments mapping described in
-[GenerateServiceLastAccessedDetailsRequestTypeDef](./type_defs.md#generateservicelastaccesseddetailsrequesttypedef).
+[GenerateServiceLastAccessedDetailsRequestRequestTypeDef](./type_defs.md#generateservicelastaccesseddetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1210,7 +1221,7 @@ Keyword-only arguments:
   [AccessAdvisorUsageGranularityTypeType](./literals.md#accessadvisorusagegranularitytypetype)
 
 Returns
-[GenerateServiceLastAccessedDetailsResponseResponseTypeDef](./type_defs.md#generateservicelastaccesseddetailsresponseresponsetypedef).
+[GenerateServiceLastAccessedDetailsResponseTypeDef](./type_defs.md#generateservicelastaccesseddetailsresponsetypedef).
 
 ### get_access_key_last_used
 
@@ -1222,19 +1233,19 @@ Boto3 documentation:
 [IAM.Client.get_access_key_last_used](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_access_key_last_used)
 
 Arguments mapping described in
-[GetAccessKeyLastUsedRequestTypeDef](./type_defs.md#getaccesskeylastusedrequesttypedef).
+[GetAccessKeyLastUsedRequestRequestTypeDef](./type_defs.md#getaccesskeylastusedrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccessKeyId`: `str` *(required)*
 
 Returns
-[GetAccessKeyLastUsedResponseResponseTypeDef](./type_defs.md#getaccesskeylastusedresponseresponsetypedef).
+[GetAccessKeyLastUsedResponseTypeDef](./type_defs.md#getaccesskeylastusedresponsetypedef).
 
 ### get_account_authorization_details
 
 Retrieves information about all IAM users, groups, roles, and policies in your
-AWS account, including their relationships to one another.
+Amazon Web Services account, including their relationships to one another.
 
 Type annotations for `boto3.client("iam").get_account_authorization_details`
 method.
@@ -1243,7 +1254,7 @@ Boto3 documentation:
 [IAM.Client.get_account_authorization_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_authorization_details)
 
 Arguments mapping described in
-[GetAccountAuthorizationDetailsRequestTypeDef](./type_defs.md#getaccountauthorizationdetailsrequesttypedef).
+[GetAccountAuthorizationDetailsRequestRequestTypeDef](./type_defs.md#getaccountauthorizationdetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1252,11 +1263,11 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[GetAccountAuthorizationDetailsResponseResponseTypeDef](./type_defs.md#getaccountauthorizationdetailsresponseresponsetypedef).
+[GetAccountAuthorizationDetailsResponseTypeDef](./type_defs.md#getaccountauthorizationdetailsresponsetypedef).
 
 ### get_account_password_policy
 
-Retrieves the password policy for the AWS account.
+Retrieves the password policy for the account.
 
 Type annotations for `boto3.client("iam").get_account_password_policy` method.
 
@@ -1264,11 +1275,12 @@ Boto3 documentation:
 [IAM.Client.get_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_password_policy)
 
 Returns
-[GetAccountPasswordPolicyResponseResponseTypeDef](./type_defs.md#getaccountpasswordpolicyresponseresponsetypedef).
+[GetAccountPasswordPolicyResponseTypeDef](./type_defs.md#getaccountpasswordpolicyresponsetypedef).
 
 ### get_account_summary
 
-Retrieves information about IAM entity usage and IAM quotas in the AWS account.
+Retrieves information about IAM entity usage and IAM quotas in the Amazon Web
+Services account.
 
 Type annotations for `boto3.client("iam").get_account_summary` method.
 
@@ -1276,7 +1288,7 @@ Boto3 documentation:
 [IAM.Client.get_account_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_summary)
 
 Returns
-[GetAccountSummaryResponseResponseTypeDef](./type_defs.md#getaccountsummaryresponseresponsetypedef).
+[GetAccountSummaryResponseTypeDef](./type_defs.md#getaccountsummaryresponsetypedef).
 
 ### get_context_keys_for_custom_policy
 
@@ -1289,14 +1301,14 @@ Boto3 documentation:
 [IAM.Client.get_context_keys_for_custom_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_custom_policy)
 
 Arguments mapping described in
-[GetContextKeysForCustomPolicyRequestTypeDef](./type_defs.md#getcontextkeysforcustompolicyrequesttypedef).
+[GetContextKeysForCustomPolicyRequestRequestTypeDef](./type_defs.md#getcontextkeysforcustompolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PolicyInputList`: `List`\[`str`\] *(required)*
 
 Returns
-[GetContextKeysForPolicyResponseResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponseresponsetypedef).
+[GetContextKeysForPolicyResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponsetypedef).
 
 ### get_context_keys_for_principal_policy
 
@@ -1310,7 +1322,7 @@ Boto3 documentation:
 [IAM.Client.get_context_keys_for_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_principal_policy)
 
 Arguments mapping described in
-[GetContextKeysForPrincipalPolicyRequestTypeDef](./type_defs.md#getcontextkeysforprincipalpolicyrequesttypedef).
+[GetContextKeysForPrincipalPolicyRequestRequestTypeDef](./type_defs.md#getcontextkeysforprincipalpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1318,11 +1330,11 @@ Keyword-only arguments:
 - `PolicyInputList`: `List`\[`str`\]
 
 Returns
-[GetContextKeysForPolicyResponseResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponseresponsetypedef).
+[GetContextKeysForPolicyResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponsetypedef).
 
 ### get_credential_report
 
-Retrieves a credential report for the AWS account.
+Retrieves a credential report for the account.
 
 Type annotations for `boto3.client("iam").get_credential_report` method.
 
@@ -1330,7 +1342,7 @@ Boto3 documentation:
 [IAM.Client.get_credential_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_credential_report)
 
 Returns
-[GetCredentialReportResponseResponseTypeDef](./type_defs.md#getcredentialreportresponseresponsetypedef).
+[GetCredentialReportResponseTypeDef](./type_defs.md#getcredentialreportresponsetypedef).
 
 ### get_group
 
@@ -1342,7 +1354,7 @@ Boto3 documentation:
 [IAM.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group)
 
 Arguments mapping described in
-[GetGroupRequestTypeDef](./type_defs.md#getgrouprequesttypedef).
+[GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1350,8 +1362,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-Returns
-[GetGroupResponseResponseTypeDef](./type_defs.md#getgroupresponseresponsetypedef).
+Returns [GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef).
 
 ### get_group_policy
 
@@ -1364,7 +1375,7 @@ Boto3 documentation:
 [IAM.Client.get_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group_policy)
 
 Arguments mapping described in
-[GetGroupPolicyRequestTypeDef](./type_defs.md#getgrouppolicyrequesttypedef).
+[GetGroupPolicyRequestRequestTypeDef](./type_defs.md#getgrouppolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1372,7 +1383,7 @@ Keyword-only arguments:
 - `PolicyName`: `str` *(required)*
 
 Returns
-[GetGroupPolicyResponseResponseTypeDef](./type_defs.md#getgrouppolicyresponseresponsetypedef).
+[GetGroupPolicyResponseTypeDef](./type_defs.md#getgrouppolicyresponsetypedef).
 
 ### get_instance_profile
 
@@ -1385,18 +1396,18 @@ Boto3 documentation:
 [IAM.Client.get_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_instance_profile)
 
 Arguments mapping described in
-[GetInstanceProfileRequestTypeDef](./type_defs.md#getinstanceprofilerequesttypedef).
+[GetInstanceProfileRequestRequestTypeDef](./type_defs.md#getinstanceprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 
 Returns
-[GetInstanceProfileResponseResponseTypeDef](./type_defs.md#getinstanceprofileresponseresponsetypedef).
+[GetInstanceProfileResponseTypeDef](./type_defs.md#getinstanceprofileresponsetypedef).
 
 ### get_login_profile
 
-Retrieves the user name and password creation date for the specified IAM user.
+Retrieves the user name for the specified IAM user.
 
 Type annotations for `boto3.client("iam").get_login_profile` method.
 
@@ -1404,14 +1415,14 @@ Boto3 documentation:
 [IAM.Client.get_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_login_profile)
 
 Arguments mapping described in
-[GetLoginProfileRequestTypeDef](./type_defs.md#getloginprofilerequesttypedef).
+[GetLoginProfileRequestRequestTypeDef](./type_defs.md#getloginprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
 Returns
-[GetLoginProfileResponseResponseTypeDef](./type_defs.md#getloginprofileresponseresponsetypedef).
+[GetLoginProfileResponseTypeDef](./type_defs.md#getloginprofileresponsetypedef).
 
 ### get_open_id_connect_provider
 
@@ -1424,18 +1435,18 @@ Boto3 documentation:
 [IAM.Client.get_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_open_id_connect_provider)
 
 Arguments mapping described in
-[GetOpenIDConnectProviderRequestTypeDef](./type_defs.md#getopenidconnectproviderrequesttypedef).
+[GetOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#getopenidconnectproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
 
 Returns
-[GetOpenIDConnectProviderResponseResponseTypeDef](./type_defs.md#getopenidconnectproviderresponseresponsetypedef).
+[GetOpenIDConnectProviderResponseTypeDef](./type_defs.md#getopenidconnectproviderresponsetypedef).
 
 ### get_organizations_access_report
 
-Retrieves the service last accessed data report for AWS Organizations that was
+Retrieves the service last accessed data report for Organizations that was
 previously generated using the ` GenerateOrganizationsAccessReport` operation.
 
 Type annotations for `boto3.client("iam").get_organizations_access_report`
@@ -1445,7 +1456,7 @@ Boto3 documentation:
 [IAM.Client.get_organizations_access_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_organizations_access_report)
 
 Arguments mapping described in
-[GetOrganizationsAccessReportRequestTypeDef](./type_defs.md#getorganizationsaccessreportrequesttypedef).
+[GetOrganizationsAccessReportRequestRequestTypeDef](./type_defs.md#getorganizationsaccessreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1455,7 +1466,7 @@ Keyword-only arguments:
 - `SortKey`: [sortKeyTypeType](./literals.md#sortkeytypetype)
 
 Returns
-[GetOrganizationsAccessReportResponseResponseTypeDef](./type_defs.md#getorganizationsaccessreportresponseresponsetypedef).
+[GetOrganizationsAccessReportResponseTypeDef](./type_defs.md#getorganizationsaccessreportresponsetypedef).
 
 ### get_policy
 
@@ -1469,14 +1480,13 @@ Boto3 documentation:
 [IAM.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy)
 
 Arguments mapping described in
-[GetPolicyRequestTypeDef](./type_defs.md#getpolicyrequesttypedef).
+[GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
-Returns
-[GetPolicyResponseResponseTypeDef](./type_defs.md#getpolicyresponseresponsetypedef).
+Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
 ### get_policy_version
 
@@ -1489,7 +1499,7 @@ Boto3 documentation:
 [IAM.Client.get_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy_version)
 
 Arguments mapping described in
-[GetPolicyVersionRequestTypeDef](./type_defs.md#getpolicyversionrequesttypedef).
+[GetPolicyVersionRequestRequestTypeDef](./type_defs.md#getpolicyversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1497,7 +1507,7 @@ Keyword-only arguments:
 - `VersionId`: `str` *(required)*
 
 Returns
-[GetPolicyVersionResponseResponseTypeDef](./type_defs.md#getpolicyversionresponseresponsetypedef).
+[GetPolicyVersionResponseTypeDef](./type_defs.md#getpolicyversionresponsetypedef).
 
 ### get_role
 
@@ -1511,14 +1521,13 @@ Boto3 documentation:
 [IAM.Client.get_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role)
 
 Arguments mapping described in
-[GetRoleRequestTypeDef](./type_defs.md#getrolerequesttypedef).
+[GetRoleRequestRequestTypeDef](./type_defs.md#getrolerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
-Returns
-[GetRoleResponseResponseTypeDef](./type_defs.md#getroleresponseresponsetypedef).
+Returns [GetRoleResponseTypeDef](./type_defs.md#getroleresponsetypedef).
 
 ### get_role_policy
 
@@ -1531,7 +1540,7 @@ Boto3 documentation:
 [IAM.Client.get_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role_policy)
 
 Arguments mapping described in
-[GetRolePolicyRequestTypeDef](./type_defs.md#getrolepolicyrequesttypedef).
+[GetRolePolicyRequestRequestTypeDef](./type_defs.md#getrolepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1539,7 +1548,7 @@ Keyword-only arguments:
 - `PolicyName`: `str` *(required)*
 
 Returns
-[GetRolePolicyResponseResponseTypeDef](./type_defs.md#getrolepolicyresponseresponsetypedef).
+[GetRolePolicyResponseTypeDef](./type_defs.md#getrolepolicyresponsetypedef).
 
 ### get_saml_provider
 
@@ -1552,14 +1561,14 @@ Boto3 documentation:
 [IAM.Client.get_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_saml_provider)
 
 Arguments mapping described in
-[GetSAMLProviderRequestTypeDef](./type_defs.md#getsamlproviderrequesttypedef).
+[GetSAMLProviderRequestRequestTypeDef](./type_defs.md#getsamlproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `SAMLProviderArn`: `str` *(required)*
 
 Returns
-[GetSAMLProviderResponseResponseTypeDef](./type_defs.md#getsamlproviderresponseresponsetypedef).
+[GetSAMLProviderResponseTypeDef](./type_defs.md#getsamlproviderresponsetypedef).
 
 ### get_server_certificate
 
@@ -1571,14 +1580,14 @@ Boto3 documentation:
 [IAM.Client.get_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_server_certificate)
 
 Arguments mapping described in
-[GetServerCertificateRequestTypeDef](./type_defs.md#getservercertificaterequesttypedef).
+[GetServerCertificateRequestRequestTypeDef](./type_defs.md#getservercertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
 
 Returns
-[GetServerCertificateResponseResponseTypeDef](./type_defs.md#getservercertificateresponseresponsetypedef).
+[GetServerCertificateResponseTypeDef](./type_defs.md#getservercertificateresponsetypedef).
 
 ### get_service_last_accessed_details
 
@@ -1592,7 +1601,7 @@ Boto3 documentation:
 [IAM.Client.get_service_last_accessed_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details)
 
 Arguments mapping described in
-[GetServiceLastAccessedDetailsRequestTypeDef](./type_defs.md#getservicelastaccesseddetailsrequesttypedef).
+[GetServiceLastAccessedDetailsRequestRequestTypeDef](./type_defs.md#getservicelastaccesseddetailsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1601,7 +1610,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[GetServiceLastAccessedDetailsResponseResponseTypeDef](./type_defs.md#getservicelastaccesseddetailsresponseresponsetypedef).
+[GetServiceLastAccessedDetailsResponseTypeDef](./type_defs.md#getservicelastaccesseddetailsresponsetypedef).
 
 ### get_service_last_accessed_details_with_entities
 
@@ -1616,7 +1625,7 @@ Boto3 documentation:
 [IAM.Client.get_service_last_accessed_details_with_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details_with_entities)
 
 Arguments mapping described in
-[GetServiceLastAccessedDetailsWithEntitiesRequestTypeDef](./type_defs.md#getservicelastaccesseddetailswithentitiesrequesttypedef).
+[GetServiceLastAccessedDetailsWithEntitiesRequestRequestTypeDef](./type_defs.md#getservicelastaccesseddetailswithentitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1626,7 +1635,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[GetServiceLastAccessedDetailsWithEntitiesResponseResponseTypeDef](./type_defs.md#getservicelastaccesseddetailswithentitiesresponseresponsetypedef).
+[GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef](./type_defs.md#getservicelastaccesseddetailswithentitiesresponsetypedef).
 
 ### get_service_linked_role_deletion_status
 
@@ -1639,14 +1648,14 @@ Boto3 documentation:
 [IAM.Client.get_service_linked_role_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_linked_role_deletion_status)
 
 Arguments mapping described in
-[GetServiceLinkedRoleDeletionStatusRequestTypeDef](./type_defs.md#getservicelinkedroledeletionstatusrequesttypedef).
+[GetServiceLinkedRoleDeletionStatusRequestRequestTypeDef](./type_defs.md#getservicelinkedroledeletionstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeletionTaskId`: `str` *(required)*
 
 Returns
-[GetServiceLinkedRoleDeletionStatusResponseResponseTypeDef](./type_defs.md#getservicelinkedroledeletionstatusresponseresponsetypedef).
+[GetServiceLinkedRoleDeletionStatusResponseTypeDef](./type_defs.md#getservicelinkedroledeletionstatusresponsetypedef).
 
 ### get_ssh_public_key
 
@@ -1658,7 +1667,7 @@ Boto3 documentation:
 [IAM.Client.get_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_ssh_public_key)
 
 Arguments mapping described in
-[GetSSHPublicKeyRequestTypeDef](./type_defs.md#getsshpublickeyrequesttypedef).
+[GetSSHPublicKeyRequestRequestTypeDef](./type_defs.md#getsshpublickeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1667,7 +1676,7 @@ Keyword-only arguments:
 - `Encoding`: [encodingTypeType](./literals.md#encodingtypetype) *(required)*
 
 Returns
-[GetSSHPublicKeyResponseResponseTypeDef](./type_defs.md#getsshpublickeyresponseresponsetypedef).
+[GetSSHPublicKeyResponseTypeDef](./type_defs.md#getsshpublickeyresponsetypedef).
 
 ### get_user
 
@@ -1680,14 +1689,13 @@ Boto3 documentation:
 [IAM.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user)
 
 Arguments mapping described in
-[GetUserRequestTypeDef](./type_defs.md#getuserrequesttypedef).
+[GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `UserName`: `str`
 
-Returns
-[GetUserResponseResponseTypeDef](./type_defs.md#getuserresponseresponsetypedef).
+Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
 
 ### get_user_policy
 
@@ -1700,7 +1708,7 @@ Boto3 documentation:
 [IAM.Client.get_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user_policy)
 
 Arguments mapping described in
-[GetUserPolicyRequestTypeDef](./type_defs.md#getuserpolicyrequesttypedef).
+[GetUserPolicyRequestRequestTypeDef](./type_defs.md#getuserpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1708,7 +1716,7 @@ Keyword-only arguments:
 - `PolicyName`: `str` *(required)*
 
 Returns
-[GetUserPolicyResponseResponseTypeDef](./type_defs.md#getuserpolicyresponseresponsetypedef).
+[GetUserPolicyResponseTypeDef](./type_defs.md#getuserpolicyresponsetypedef).
 
 ### list_access_keys
 
@@ -1721,7 +1729,7 @@ Boto3 documentation:
 [IAM.Client.list_access_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_access_keys)
 
 Arguments mapping described in
-[ListAccessKeysRequestTypeDef](./type_defs.md#listaccesskeysrequesttypedef).
+[ListAccessKeysRequestRequestTypeDef](./type_defs.md#listaccesskeysrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1730,12 +1738,12 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListAccessKeysResponseResponseTypeDef](./type_defs.md#listaccesskeysresponseresponsetypedef).
+[ListAccessKeysResponseTypeDef](./type_defs.md#listaccesskeysresponsetypedef).
 
 ### list_account_aliases
 
-Lists the account alias associated with the AWS account (Note: you can have
-only one).
+Lists the account alias associated with the account (Note: you can have only
+one).
 
 Type annotations for `boto3.client("iam").list_account_aliases` method.
 
@@ -1743,7 +1751,7 @@ Boto3 documentation:
 [IAM.Client.list_account_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_account_aliases)
 
 Arguments mapping described in
-[ListAccountAliasesRequestTypeDef](./type_defs.md#listaccountaliasesrequesttypedef).
+[ListAccountAliasesRequestRequestTypeDef](./type_defs.md#listaccountaliasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1751,7 +1759,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListAccountAliasesResponseResponseTypeDef](./type_defs.md#listaccountaliasesresponseresponsetypedef).
+[ListAccountAliasesResponseTypeDef](./type_defs.md#listaccountaliasesresponsetypedef).
 
 ### list_attached_group_policies
 
@@ -1763,7 +1771,7 @@ Boto3 documentation:
 [IAM.Client.list_attached_group_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_group_policies)
 
 Arguments mapping described in
-[ListAttachedGroupPoliciesRequestTypeDef](./type_defs.md#listattachedgrouppoliciesrequesttypedef).
+[ListAttachedGroupPoliciesRequestRequestTypeDef](./type_defs.md#listattachedgrouppoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1773,7 +1781,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListAttachedGroupPoliciesResponseResponseTypeDef](./type_defs.md#listattachedgrouppoliciesresponseresponsetypedef).
+[ListAttachedGroupPoliciesResponseTypeDef](./type_defs.md#listattachedgrouppoliciesresponsetypedef).
 
 ### list_attached_role_policies
 
@@ -1785,7 +1793,7 @@ Boto3 documentation:
 [IAM.Client.list_attached_role_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_role_policies)
 
 Arguments mapping described in
-[ListAttachedRolePoliciesRequestTypeDef](./type_defs.md#listattachedrolepoliciesrequesttypedef).
+[ListAttachedRolePoliciesRequestRequestTypeDef](./type_defs.md#listattachedrolepoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1795,7 +1803,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListAttachedRolePoliciesResponseResponseTypeDef](./type_defs.md#listattachedrolepoliciesresponseresponsetypedef).
+[ListAttachedRolePoliciesResponseTypeDef](./type_defs.md#listattachedrolepoliciesresponsetypedef).
 
 ### list_attached_user_policies
 
@@ -1807,7 +1815,7 @@ Boto3 documentation:
 [IAM.Client.list_attached_user_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_user_policies)
 
 Arguments mapping described in
-[ListAttachedUserPoliciesRequestTypeDef](./type_defs.md#listattacheduserpoliciesrequesttypedef).
+[ListAttachedUserPoliciesRequestRequestTypeDef](./type_defs.md#listattacheduserpoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1817,7 +1825,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListAttachedUserPoliciesResponseResponseTypeDef](./type_defs.md#listattacheduserpoliciesresponseresponsetypedef).
+[ListAttachedUserPoliciesResponseTypeDef](./type_defs.md#listattacheduserpoliciesresponsetypedef).
 
 ### list_entities_for_policy
 
@@ -1830,7 +1838,7 @@ Boto3 documentation:
 [IAM.Client.list_entities_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_entities_for_policy)
 
 Arguments mapping described in
-[ListEntitiesForPolicyRequestTypeDef](./type_defs.md#listentitiesforpolicyrequesttypedef).
+[ListEntitiesForPolicyRequestRequestTypeDef](./type_defs.md#listentitiesforpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1842,7 +1850,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListEntitiesForPolicyResponseResponseTypeDef](./type_defs.md#listentitiesforpolicyresponseresponsetypedef).
+[ListEntitiesForPolicyResponseTypeDef](./type_defs.md#listentitiesforpolicyresponsetypedef).
 
 ### list_group_policies
 
@@ -1855,7 +1863,7 @@ Boto3 documentation:
 [IAM.Client.list_group_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_group_policies)
 
 Arguments mapping described in
-[ListGroupPoliciesRequestTypeDef](./type_defs.md#listgrouppoliciesrequesttypedef).
+[ListGroupPoliciesRequestRequestTypeDef](./type_defs.md#listgrouppoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1864,7 +1872,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListGroupPoliciesResponseResponseTypeDef](./type_defs.md#listgrouppoliciesresponseresponsetypedef).
+[ListGroupPoliciesResponseTypeDef](./type_defs.md#listgrouppoliciesresponsetypedef).
 
 ### list_groups
 
@@ -1876,7 +1884,7 @@ Boto3 documentation:
 [IAM.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups)
 
 Arguments mapping described in
-[ListGroupsRequestTypeDef](./type_defs.md#listgroupsrequesttypedef).
+[ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1884,8 +1892,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-Returns
-[ListGroupsResponseResponseTypeDef](./type_defs.md#listgroupsresponseresponsetypedef).
+Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
 ### list_groups_for_user
 
@@ -1897,7 +1904,7 @@ Boto3 documentation:
 [IAM.Client.list_groups_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups_for_user)
 
 Arguments mapping described in
-[ListGroupsForUserRequestTypeDef](./type_defs.md#listgroupsforuserrequesttypedef).
+[ListGroupsForUserRequestRequestTypeDef](./type_defs.md#listgroupsforuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1906,7 +1913,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListGroupsForUserResponseResponseTypeDef](./type_defs.md#listgroupsforuserresponseresponsetypedef).
+[ListGroupsForUserResponseTypeDef](./type_defs.md#listgroupsforuserresponsetypedef).
 
 ### list_instance_profile_tags
 
@@ -1918,7 +1925,7 @@ Boto3 documentation:
 [IAM.Client.list_instance_profile_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profile_tags)
 
 Arguments mapping described in
-[ListInstanceProfileTagsRequestTypeDef](./type_defs.md#listinstanceprofiletagsrequesttypedef).
+[ListInstanceProfileTagsRequestRequestTypeDef](./type_defs.md#listinstanceprofiletagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1927,7 +1934,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListInstanceProfileTagsResponseResponseTypeDef](./type_defs.md#listinstanceprofiletagsresponseresponsetypedef).
+[ListInstanceProfileTagsResponseTypeDef](./type_defs.md#listinstanceprofiletagsresponsetypedef).
 
 ### list_instance_profiles
 
@@ -1939,7 +1946,7 @@ Boto3 documentation:
 [IAM.Client.list_instance_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles)
 
 Arguments mapping described in
-[ListInstanceProfilesRequestTypeDef](./type_defs.md#listinstanceprofilesrequesttypedef).
+[ListInstanceProfilesRequestRequestTypeDef](./type_defs.md#listinstanceprofilesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1948,7 +1955,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListInstanceProfilesResponseResponseTypeDef](./type_defs.md#listinstanceprofilesresponseresponsetypedef).
+[ListInstanceProfilesResponseTypeDef](./type_defs.md#listinstanceprofilesresponsetypedef).
 
 ### list_instance_profiles_for_role
 
@@ -1961,7 +1968,7 @@ Boto3 documentation:
 [IAM.Client.list_instance_profiles_for_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles_for_role)
 
 Arguments mapping described in
-[ListInstanceProfilesForRoleRequestTypeDef](./type_defs.md#listinstanceprofilesforrolerequesttypedef).
+[ListInstanceProfilesForRoleRequestRequestTypeDef](./type_defs.md#listinstanceprofilesforrolerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1970,7 +1977,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListInstanceProfilesForRoleResponseResponseTypeDef](./type_defs.md#listinstanceprofilesforroleresponseresponsetypedef).
+[ListInstanceProfilesForRoleResponseTypeDef](./type_defs.md#listinstanceprofilesforroleresponsetypedef).
 
 ### list_mfa_device_tags
 
@@ -1983,7 +1990,7 @@ Boto3 documentation:
 [IAM.Client.list_mfa_device_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_device_tags)
 
 Arguments mapping described in
-[ListMFADeviceTagsRequestTypeDef](./type_defs.md#listmfadevicetagsrequesttypedef).
+[ListMFADeviceTagsRequestRequestTypeDef](./type_defs.md#listmfadevicetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1992,7 +1999,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListMFADeviceTagsResponseResponseTypeDef](./type_defs.md#listmfadevicetagsresponseresponsetypedef).
+[ListMFADeviceTagsResponseTypeDef](./type_defs.md#listmfadevicetagsresponsetypedef).
 
 ### list_mfa_devices
 
@@ -2004,7 +2011,7 @@ Boto3 documentation:
 [IAM.Client.list_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_devices)
 
 Arguments mapping described in
-[ListMFADevicesRequestTypeDef](./type_defs.md#listmfadevicesrequesttypedef).
+[ListMFADevicesRequestRequestTypeDef](./type_defs.md#listmfadevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2013,7 +2020,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListMFADevicesResponseResponseTypeDef](./type_defs.md#listmfadevicesresponseresponsetypedef).
+[ListMFADevicesResponseTypeDef](./type_defs.md#listmfadevicesresponsetypedef).
 
 ### list_open_id_connect_provider_tags
 
@@ -2027,7 +2034,7 @@ Boto3 documentation:
 [IAM.Client.list_open_id_connect_provider_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_provider_tags)
 
 Arguments mapping described in
-[ListOpenIDConnectProviderTagsRequestTypeDef](./type_defs.md#listopenidconnectprovidertagsrequesttypedef).
+[ListOpenIDConnectProviderTagsRequestRequestTypeDef](./type_defs.md#listopenidconnectprovidertagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2036,12 +2043,12 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListOpenIDConnectProviderTagsResponseResponseTypeDef](./type_defs.md#listopenidconnectprovidertagsresponseresponsetypedef).
+[ListOpenIDConnectProviderTagsResponseTypeDef](./type_defs.md#listopenidconnectprovidertagsresponsetypedef).
 
 ### list_open_id_connect_providers
 
 Lists information about the IAM OpenID Connect (OIDC) provider resource objects
-defined in the AWS account.
+defined in the account.
 
 Type annotations for `boto3.client("iam").list_open_id_connect_providers`
 method.
@@ -2050,12 +2057,12 @@ Boto3 documentation:
 [IAM.Client.list_open_id_connect_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_providers)
 
 Returns
-[ListOpenIDConnectProvidersResponseResponseTypeDef](./type_defs.md#listopenidconnectprovidersresponseresponsetypedef).
+[ListOpenIDConnectProvidersResponseTypeDef](./type_defs.md#listopenidconnectprovidersresponsetypedef).
 
 ### list_policies
 
-Lists all the managed policies that are available in your AWS account,
-including your own customer-defined managed policies and all AWS managed
+Lists all the managed policies that are available in your account, including
+your own customer-defined managed policies and all Amazon Web Services managed
 policies.
 
 Type annotations for `boto3.client("iam").list_policies` method.
@@ -2064,7 +2071,7 @@ Boto3 documentation:
 [IAM.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies)
 
 Arguments mapping described in
-[ListPoliciesRequestTypeDef](./type_defs.md#listpoliciesrequesttypedef).
+[ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2076,7 +2083,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListPoliciesResponseResponseTypeDef](./type_defs.md#listpoliciesresponseresponsetypedef).
+[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
 
 ### list_policies_granting_service_access
 
@@ -2090,7 +2097,7 @@ Boto3 documentation:
 [IAM.Client.list_policies_granting_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies_granting_service_access)
 
 Arguments mapping described in
-[ListPoliciesGrantingServiceAccessRequestTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessrequesttypedef).
+[ListPoliciesGrantingServiceAccessRequestRequestTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2099,7 +2106,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[ListPoliciesGrantingServiceAccessResponseResponseTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessresponseresponsetypedef).
+[ListPoliciesGrantingServiceAccessResponseTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessresponsetypedef).
 
 ### list_policy_tags
 
@@ -2111,7 +2118,7 @@ Boto3 documentation:
 [IAM.Client.list_policy_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_tags)
 
 Arguments mapping described in
-[ListPolicyTagsRequestTypeDef](./type_defs.md#listpolicytagsrequesttypedef).
+[ListPolicyTagsRequestRequestTypeDef](./type_defs.md#listpolicytagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2120,7 +2127,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListPolicyTagsResponseResponseTypeDef](./type_defs.md#listpolicytagsresponseresponsetypedef).
+[ListPolicyTagsResponseTypeDef](./type_defs.md#listpolicytagsresponsetypedef).
 
 ### list_policy_versions
 
@@ -2133,7 +2140,7 @@ Boto3 documentation:
 [IAM.Client.list_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_versions)
 
 Arguments mapping described in
-[ListPolicyVersionsRequestTypeDef](./type_defs.md#listpolicyversionsrequesttypedef).
+[ListPolicyVersionsRequestRequestTypeDef](./type_defs.md#listpolicyversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2142,7 +2149,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListPolicyVersionsResponseResponseTypeDef](./type_defs.md#listpolicyversionsresponseresponsetypedef).
+[ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef).
 
 ### list_role_policies
 
@@ -2155,7 +2162,7 @@ Boto3 documentation:
 [IAM.Client.list_role_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_policies)
 
 Arguments mapping described in
-[ListRolePoliciesRequestTypeDef](./type_defs.md#listrolepoliciesrequesttypedef).
+[ListRolePoliciesRequestRequestTypeDef](./type_defs.md#listrolepoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2164,7 +2171,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListRolePoliciesResponseResponseTypeDef](./type_defs.md#listrolepoliciesresponseresponsetypedef).
+[ListRolePoliciesResponseTypeDef](./type_defs.md#listrolepoliciesresponsetypedef).
 
 ### list_role_tags
 
@@ -2176,7 +2183,7 @@ Boto3 documentation:
 [IAM.Client.list_role_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_tags)
 
 Arguments mapping described in
-[ListRoleTagsRequestTypeDef](./type_defs.md#listroletagsrequesttypedef).
+[ListRoleTagsRequestRequestTypeDef](./type_defs.md#listroletagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2185,7 +2192,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListRoleTagsResponseResponseTypeDef](./type_defs.md#listroletagsresponseresponsetypedef).
+[ListRoleTagsResponseTypeDef](./type_defs.md#listroletagsresponsetypedef).
 
 ### list_roles
 
@@ -2197,7 +2204,7 @@ Boto3 documentation:
 [IAM.Client.list_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_roles)
 
 Arguments mapping described in
-[ListRolesRequestTypeDef](./type_defs.md#listrolesrequesttypedef).
+[ListRolesRequestRequestTypeDef](./type_defs.md#listrolesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2205,8 +2212,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-Returns
-[ListRolesResponseResponseTypeDef](./type_defs.md#listrolesresponseresponsetypedef).
+Returns [ListRolesResponseTypeDef](./type_defs.md#listrolesresponsetypedef).
 
 ### list_saml_provider_tags
 
@@ -2219,7 +2225,7 @@ Boto3 documentation:
 [IAM.Client.list_saml_provider_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_provider_tags)
 
 Arguments mapping described in
-[ListSAMLProviderTagsRequestTypeDef](./type_defs.md#listsamlprovidertagsrequesttypedef).
+[ListSAMLProviderTagsRequestRequestTypeDef](./type_defs.md#listsamlprovidertagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2228,7 +2234,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListSAMLProviderTagsResponseResponseTypeDef](./type_defs.md#listsamlprovidertagsresponseresponsetypedef).
+[ListSAMLProviderTagsResponseTypeDef](./type_defs.md#listsamlprovidertagsresponsetypedef).
 
 ### list_saml_providers
 
@@ -2240,7 +2246,7 @@ Boto3 documentation:
 [IAM.Client.list_saml_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_providers)
 
 Returns
-[ListSAMLProvidersResponseResponseTypeDef](./type_defs.md#listsamlprovidersresponseresponsetypedef).
+[ListSAMLProvidersResponseTypeDef](./type_defs.md#listsamlprovidersresponsetypedef).
 
 ### list_server_certificate_tags
 
@@ -2252,7 +2258,7 @@ Boto3 documentation:
 [IAM.Client.list_server_certificate_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificate_tags)
 
 Arguments mapping described in
-[ListServerCertificateTagsRequestTypeDef](./type_defs.md#listservercertificatetagsrequesttypedef).
+[ListServerCertificateTagsRequestRequestTypeDef](./type_defs.md#listservercertificatetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2261,7 +2267,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListServerCertificateTagsResponseResponseTypeDef](./type_defs.md#listservercertificatetagsresponseresponsetypedef).
+[ListServerCertificateTagsResponseTypeDef](./type_defs.md#listservercertificatetagsresponsetypedef).
 
 ### list_server_certificates
 
@@ -2274,7 +2280,7 @@ Boto3 documentation:
 [IAM.Client.list_server_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificates)
 
 Arguments mapping described in
-[ListServerCertificatesRequestTypeDef](./type_defs.md#listservercertificatesrequesttypedef).
+[ListServerCertificatesRequestRequestTypeDef](./type_defs.md#listservercertificatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2283,7 +2289,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListServerCertificatesResponseResponseTypeDef](./type_defs.md#listservercertificatesresponseresponsetypedef).
+[ListServerCertificatesResponseTypeDef](./type_defs.md#listservercertificatesresponsetypedef).
 
 ### list_service_specific_credentials
 
@@ -2297,7 +2303,7 @@ Boto3 documentation:
 [IAM.Client.list_service_specific_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_service_specific_credentials)
 
 Arguments mapping described in
-[ListServiceSpecificCredentialsRequestTypeDef](./type_defs.md#listservicespecificcredentialsrequesttypedef).
+[ListServiceSpecificCredentialsRequestRequestTypeDef](./type_defs.md#listservicespecificcredentialsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2305,7 +2311,7 @@ Keyword-only arguments:
 - `ServiceName`: `str`
 
 Returns
-[ListServiceSpecificCredentialsResponseResponseTypeDef](./type_defs.md#listservicespecificcredentialsresponseresponsetypedef).
+[ListServiceSpecificCredentialsResponseTypeDef](./type_defs.md#listservicespecificcredentialsresponsetypedef).
 
 ### list_signing_certificates
 
@@ -2318,7 +2324,7 @@ Boto3 documentation:
 [IAM.Client.list_signing_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_signing_certificates)
 
 Arguments mapping described in
-[ListSigningCertificatesRequestTypeDef](./type_defs.md#listsigningcertificatesrequesttypedef).
+[ListSigningCertificatesRequestRequestTypeDef](./type_defs.md#listsigningcertificatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2327,7 +2333,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListSigningCertificatesResponseResponseTypeDef](./type_defs.md#listsigningcertificatesresponseresponsetypedef).
+[ListSigningCertificatesResponseTypeDef](./type_defs.md#listsigningcertificatesresponsetypedef).
 
 ### list_ssh_public_keys
 
@@ -2340,7 +2346,7 @@ Boto3 documentation:
 [IAM.Client.list_ssh_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_ssh_public_keys)
 
 Arguments mapping described in
-[ListSSHPublicKeysRequestTypeDef](./type_defs.md#listsshpublickeysrequesttypedef).
+[ListSSHPublicKeysRequestRequestTypeDef](./type_defs.md#listsshpublickeysrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2349,7 +2355,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListSSHPublicKeysResponseResponseTypeDef](./type_defs.md#listsshpublickeysresponseresponsetypedef).
+[ListSSHPublicKeysResponseTypeDef](./type_defs.md#listsshpublickeysresponsetypedef).
 
 ### list_user_policies
 
@@ -2361,7 +2367,7 @@ Boto3 documentation:
 [IAM.Client.list_user_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_policies)
 
 Arguments mapping described in
-[ListUserPoliciesRequestTypeDef](./type_defs.md#listuserpoliciesrequesttypedef).
+[ListUserPoliciesRequestRequestTypeDef](./type_defs.md#listuserpoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2370,7 +2376,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListUserPoliciesResponseResponseTypeDef](./type_defs.md#listuserpoliciesresponseresponsetypedef).
+[ListUserPoliciesResponseTypeDef](./type_defs.md#listuserpoliciesresponsetypedef).
 
 ### list_user_tags
 
@@ -2382,7 +2388,7 @@ Boto3 documentation:
 [IAM.Client.list_user_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_tags)
 
 Arguments mapping described in
-[ListUserTagsRequestTypeDef](./type_defs.md#listusertagsrequesttypedef).
+[ListUserTagsRequestRequestTypeDef](./type_defs.md#listusertagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2391,7 +2397,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListUserTagsResponseResponseTypeDef](./type_defs.md#listusertagsresponseresponsetypedef).
+[ListUserTagsResponseTypeDef](./type_defs.md#listusertagsresponsetypedef).
 
 ### list_users
 
@@ -2403,7 +2409,7 @@ Boto3 documentation:
 [IAM.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_users)
 
 Arguments mapping described in
-[ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef).
+[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2411,12 +2417,11 @@ Keyword-only arguments:
 - `Marker`: `str`
 - `MaxItems`: `int`
 
-Returns
-[ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef).
+Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
 ### list_virtual_mfa_devices
 
-Lists the virtual MFA devices defined in the AWS account by assignment status.
+Lists the virtual MFA devices defined in the account by assignment status.
 
 Type annotations for `boto3.client("iam").list_virtual_mfa_devices` method.
 
@@ -2424,7 +2429,7 @@ Boto3 documentation:
 [IAM.Client.list_virtual_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_virtual_mfa_devices)
 
 Arguments mapping described in
-[ListVirtualMFADevicesRequestTypeDef](./type_defs.md#listvirtualmfadevicesrequesttypedef).
+[ListVirtualMFADevicesRequestRequestTypeDef](./type_defs.md#listvirtualmfadevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2434,7 +2439,7 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns
-[ListVirtualMFADevicesResponseResponseTypeDef](./type_defs.md#listvirtualmfadevicesresponseresponsetypedef).
+[ListVirtualMFADevicesResponseTypeDef](./type_defs.md#listvirtualmfadevicesresponsetypedef).
 
 ### put_group_policy
 
@@ -2447,7 +2452,7 @@ Boto3 documentation:
 [IAM.Client.put_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_group_policy)
 
 Arguments mapping described in
-[PutGroupPolicyRequestTypeDef](./type_defs.md#putgrouppolicyrequesttypedef).
+[PutGroupPolicyRequestRequestTypeDef](./type_defs.md#putgrouppolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2467,7 +2472,7 @@ Boto3 documentation:
 [IAM.Client.put_role_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_permissions_boundary)
 
 Arguments mapping described in
-[PutRolePermissionsBoundaryRequestTypeDef](./type_defs.md#putrolepermissionsboundaryrequesttypedef).
+[PutRolePermissionsBoundaryRequestRequestTypeDef](./type_defs.md#putrolepermissionsboundaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2485,7 +2490,7 @@ Boto3 documentation:
 [IAM.Client.put_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_policy)
 
 Arguments mapping described in
-[PutRolePolicyRequestTypeDef](./type_defs.md#putrolepolicyrequesttypedef).
+[PutRolePolicyRequestRequestTypeDef](./type_defs.md#putrolepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2505,7 +2510,7 @@ Boto3 documentation:
 [IAM.Client.put_user_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_permissions_boundary)
 
 Arguments mapping described in
-[PutUserPermissionsBoundaryRequestTypeDef](./type_defs.md#putuserpermissionsboundaryrequesttypedef).
+[PutUserPermissionsBoundaryRequestRequestTypeDef](./type_defs.md#putuserpermissionsboundaryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2523,7 +2528,7 @@ Boto3 documentation:
 [IAM.Client.put_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_policy)
 
 Arguments mapping described in
-[PutUserPolicyRequestTypeDef](./type_defs.md#putuserpolicyrequesttypedef).
+[PutUserPolicyRequestRequestTypeDef](./type_defs.md#putuserpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2544,7 +2549,7 @@ Boto3 documentation:
 [IAM.Client.remove_client_id_from_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_client_id_from_open_id_connect_provider)
 
 Arguments mapping described in
-[RemoveClientIDFromOpenIDConnectProviderRequestTypeDef](./type_defs.md#removeclientidfromopenidconnectproviderrequesttypedef).
+[RemoveClientIDFromOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#removeclientidfromopenidconnectproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2562,7 +2567,7 @@ Boto3 documentation:
 [IAM.Client.remove_role_from_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_role_from_instance_profile)
 
 Arguments mapping described in
-[RemoveRoleFromInstanceProfileRequestTypeDef](./type_defs.md#removerolefrominstanceprofilerequesttypedef).
+[RemoveRoleFromInstanceProfileRequestRequestTypeDef](./type_defs.md#removerolefrominstanceprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2579,7 +2584,7 @@ Boto3 documentation:
 [IAM.Client.remove_user_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_user_from_group)
 
 Arguments mapping described in
-[RemoveUserFromGroupRequestTypeDef](./type_defs.md#removeuserfromgrouprequesttypedef).
+[RemoveUserFromGroupRequestRequestTypeDef](./type_defs.md#removeuserfromgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2597,7 +2602,7 @@ Boto3 documentation:
 [IAM.Client.reset_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.reset_service_specific_credential)
 
 Arguments mapping described in
-[ResetServiceSpecificCredentialRequestTypeDef](./type_defs.md#resetservicespecificcredentialrequesttypedef).
+[ResetServiceSpecificCredentialRequestRequestTypeDef](./type_defs.md#resetservicespecificcredentialrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2605,12 +2610,12 @@ Keyword-only arguments:
 - `UserName`: `str`
 
 Returns
-[ResetServiceSpecificCredentialResponseResponseTypeDef](./type_defs.md#resetservicespecificcredentialresponseresponsetypedef).
+[ResetServiceSpecificCredentialResponseTypeDef](./type_defs.md#resetservicespecificcredentialresponsetypedef).
 
 ### resync_mfa_device
 
-Synchronizes the specified MFA device with its IAM resource object on the AWS
-servers.
+Synchronizes the specified MFA device with its IAM resource object on the
+Amazon Web Services servers.
 
 Type annotations for `boto3.client("iam").resync_mfa_device` method.
 
@@ -2618,7 +2623,7 @@ Boto3 documentation:
 [IAM.Client.resync_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.resync_mfa_device)
 
 Arguments mapping described in
-[ResyncMFADeviceRequestTypeDef](./type_defs.md#resyncmfadevicerequesttypedef).
+[ResyncMFADeviceRequestRequestTypeDef](./type_defs.md#resyncmfadevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2638,7 +2643,7 @@ Boto3 documentation:
 [IAM.Client.set_default_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_default_policy_version)
 
 Arguments mapping described in
-[SetDefaultPolicyVersionRequestTypeDef](./type_defs.md#setdefaultpolicyversionrequesttypedef).
+[SetDefaultPolicyVersionRequestRequestTypeDef](./type_defs.md#setdefaultpolicyversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2648,7 +2653,7 @@ Keyword-only arguments:
 ### set_security_token_service_preferences
 
 Sets the specified version of the global endpoint token as the token version
-used for the AWS account.
+used for the account.
 
 Type annotations for
 `boto3.client("iam").set_security_token_service_preferences` method.
@@ -2657,7 +2662,7 @@ Boto3 documentation:
 [IAM.Client.set_security_token_service_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_security_token_service_preferences)
 
 Arguments mapping described in
-[SetSecurityTokenServicePreferencesRequestTypeDef](./type_defs.md#setsecuritytokenservicepreferencesrequesttypedef).
+[SetSecurityTokenServicePreferencesRequestRequestTypeDef](./type_defs.md#setsecuritytokenservicepreferencesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2668,8 +2673,8 @@ Keyword-only arguments:
 ### simulate_custom_policy
 
 Simulate how a set of IAM policies and optionally a resource-based policy works
-with a list of API operations and AWS resources to determine the policies'
-effective permissions.
+with a list of API operations and Amazon Web Services resources to determine
+the policies' effective permissions.
 
 Type annotations for `boto3.client("iam").simulate_custom_policy` method.
 
@@ -2677,7 +2682,7 @@ Boto3 documentation:
 [IAM.Client.simulate_custom_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_custom_policy)
 
 Arguments mapping described in
-[SimulateCustomPolicyRequestTypeDef](./type_defs.md#simulatecustompolicyrequesttypedef).
+[SimulateCustomPolicyRequestRequestTypeDef](./type_defs.md#simulatecustompolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2695,13 +2700,13 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[SimulatePolicyResponseResponseTypeDef](./type_defs.md#simulatepolicyresponseresponsetypedef).
+[SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef).
 
 ### simulate_principal_policy
 
 Simulate how a set of IAM policies attached to an IAM entity works with a list
-of API operations and AWS resources to determine the policies' effective
-permissions.
+of API operations and Amazon Web Services resources to determine the policies'
+effective permissions.
 
 Type annotations for `boto3.client("iam").simulate_principal_policy` method.
 
@@ -2709,7 +2714,7 @@ Boto3 documentation:
 [IAM.Client.simulate_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_principal_policy)
 
 Arguments mapping described in
-[SimulatePrincipalPolicyRequestTypeDef](./type_defs.md#simulateprincipalpolicyrequesttypedef).
+[SimulatePrincipalPolicyRequestRequestTypeDef](./type_defs.md#simulateprincipalpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2728,7 +2733,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[SimulatePolicyResponseResponseTypeDef](./type_defs.md#simulatepolicyresponseresponsetypedef).
+[SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef).
 
 ### tag_instance_profile
 
@@ -2740,7 +2745,7 @@ Boto3 documentation:
 [IAM.Client.tag_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_instance_profile)
 
 Arguments mapping described in
-[TagInstanceProfileRequestTypeDef](./type_defs.md#taginstanceprofilerequesttypedef).
+[TagInstanceProfileRequestRequestTypeDef](./type_defs.md#taginstanceprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2758,7 +2763,7 @@ Boto3 documentation:
 [IAM.Client.tag_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_mfa_device)
 
 Arguments mapping described in
-[TagMFADeviceRequestTypeDef](./type_defs.md#tagmfadevicerequesttypedef).
+[TagMFADeviceRequestRequestTypeDef](./type_defs.md#tagmfadevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2775,7 +2780,7 @@ Boto3 documentation:
 [IAM.Client.tag_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_open_id_connect_provider)
 
 Arguments mapping described in
-[TagOpenIDConnectProviderRequestTypeDef](./type_defs.md#tagopenidconnectproviderrequesttypedef).
+[TagOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#tagopenidconnectproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2792,7 +2797,7 @@ Boto3 documentation:
 [IAM.Client.tag_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_policy)
 
 Arguments mapping described in
-[TagPolicyRequestTypeDef](./type_defs.md#tagpolicyrequesttypedef).
+[TagPolicyRequestRequestTypeDef](./type_defs.md#tagpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2809,7 +2814,7 @@ Boto3 documentation:
 [IAM.Client.tag_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_role)
 
 Arguments mapping described in
-[TagRoleRequestTypeDef](./type_defs.md#tagrolerequesttypedef).
+[TagRoleRequestRequestTypeDef](./type_defs.md#tagrolerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2827,7 +2832,7 @@ Boto3 documentation:
 [IAM.Client.tag_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_saml_provider)
 
 Arguments mapping described in
-[TagSAMLProviderRequestTypeDef](./type_defs.md#tagsamlproviderrequesttypedef).
+[TagSAMLProviderRequestRequestTypeDef](./type_defs.md#tagsamlproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2844,7 +2849,7 @@ Boto3 documentation:
 [IAM.Client.tag_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_server_certificate)
 
 Arguments mapping described in
-[TagServerCertificateRequestTypeDef](./type_defs.md#tagservercertificaterequesttypedef).
+[TagServerCertificateRequestRequestTypeDef](./type_defs.md#tagservercertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2861,7 +2866,7 @@ Boto3 documentation:
 [IAM.Client.tag_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_user)
 
 Arguments mapping described in
-[TagUserRequestTypeDef](./type_defs.md#taguserrequesttypedef).
+[TagUserRequestRequestTypeDef](./type_defs.md#taguserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2878,7 +2883,7 @@ Boto3 documentation:
 [IAM.Client.untag_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_instance_profile)
 
 Arguments mapping described in
-[UntagInstanceProfileRequestTypeDef](./type_defs.md#untaginstanceprofilerequesttypedef).
+[UntagInstanceProfileRequestRequestTypeDef](./type_defs.md#untaginstanceprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2896,7 +2901,7 @@ Boto3 documentation:
 [IAM.Client.untag_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_mfa_device)
 
 Arguments mapping described in
-[UntagMFADeviceRequestTypeDef](./type_defs.md#untagmfadevicerequesttypedef).
+[UntagMFADeviceRequestRequestTypeDef](./type_defs.md#untagmfadevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2915,7 +2920,7 @@ Boto3 documentation:
 [IAM.Client.untag_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_open_id_connect_provider)
 
 Arguments mapping described in
-[UntagOpenIDConnectProviderRequestTypeDef](./type_defs.md#untagopenidconnectproviderrequesttypedef).
+[UntagOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#untagopenidconnectproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2932,7 +2937,7 @@ Boto3 documentation:
 [IAM.Client.untag_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_policy)
 
 Arguments mapping described in
-[UntagPolicyRequestTypeDef](./type_defs.md#untagpolicyrequesttypedef).
+[UntagPolicyRequestRequestTypeDef](./type_defs.md#untagpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2949,7 +2954,7 @@ Boto3 documentation:
 [IAM.Client.untag_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_role)
 
 Arguments mapping described in
-[UntagRoleRequestTypeDef](./type_defs.md#untagrolerequesttypedef).
+[UntagRoleRequestRequestTypeDef](./type_defs.md#untagrolerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2967,7 +2972,7 @@ Boto3 documentation:
 [IAM.Client.untag_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_saml_provider)
 
 Arguments mapping described in
-[UntagSAMLProviderRequestTypeDef](./type_defs.md#untagsamlproviderrequesttypedef).
+[UntagSAMLProviderRequestRequestTypeDef](./type_defs.md#untagsamlproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2984,7 +2989,7 @@ Boto3 documentation:
 [IAM.Client.untag_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_server_certificate)
 
 Arguments mapping described in
-[UntagServerCertificateRequestTypeDef](./type_defs.md#untagservercertificaterequesttypedef).
+[UntagServerCertificateRequestRequestTypeDef](./type_defs.md#untagservercertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3001,7 +3006,7 @@ Boto3 documentation:
 [IAM.Client.untag_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_user)
 
 Arguments mapping described in
-[UntagUserRequestTypeDef](./type_defs.md#untaguserrequesttypedef).
+[UntagUserRequestRequestTypeDef](./type_defs.md#untaguserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3019,7 +3024,7 @@ Boto3 documentation:
 [IAM.Client.update_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_access_key)
 
 Arguments mapping described in
-[UpdateAccessKeyRequestTypeDef](./type_defs.md#updateaccesskeyrequesttypedef).
+[UpdateAccessKeyRequestRequestTypeDef](./type_defs.md#updateaccesskeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3029,7 +3034,7 @@ Keyword-only arguments:
 
 ### update_account_password_policy
 
-Updates the password policy settings for the AWS account.
+Updates the password policy settings for the account.
 
 Type annotations for `boto3.client("iam").update_account_password_policy`
 method.
@@ -3038,7 +3043,7 @@ Boto3 documentation:
 [IAM.Client.update_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_account_password_policy)
 
 Arguments mapping described in
-[UpdateAccountPasswordPolicyRequestTypeDef](./type_defs.md#updateaccountpasswordpolicyrequesttypedef).
+[UpdateAccountPasswordPolicyRequestRequestTypeDef](./type_defs.md#updateaccountpasswordpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3062,7 +3067,7 @@ Boto3 documentation:
 [IAM.Client.update_assume_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_assume_role_policy)
 
 Arguments mapping described in
-[UpdateAssumeRolePolicyRequestTypeDef](./type_defs.md#updateassumerolepolicyrequesttypedef).
+[UpdateAssumeRolePolicyRequestRequestTypeDef](./type_defs.md#updateassumerolepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3079,7 +3084,7 @@ Boto3 documentation:
 [IAM.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_group)
 
 Arguments mapping described in
-[UpdateGroupRequestTypeDef](./type_defs.md#updategrouprequesttypedef).
+[UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3097,7 +3102,7 @@ Boto3 documentation:
 [IAM.Client.update_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_login_profile)
 
 Arguments mapping described in
-[UpdateLoginProfileRequestTypeDef](./type_defs.md#updateloginprofilerequesttypedef).
+[UpdateLoginProfileRequestRequestTypeDef](./type_defs.md#updateloginprofilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3117,7 +3122,7 @@ Boto3 documentation:
 [IAM.Client.update_open_id_connect_provider_thumbprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_open_id_connect_provider_thumbprint)
 
 Arguments mapping described in
-[UpdateOpenIDConnectProviderThumbprintRequestTypeDef](./type_defs.md#updateopenidconnectproviderthumbprintrequesttypedef).
+[UpdateOpenIDConnectProviderThumbprintRequestRequestTypeDef](./type_defs.md#updateopenidconnectproviderthumbprintrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3134,7 +3139,7 @@ Boto3 documentation:
 [IAM.Client.update_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role)
 
 Arguments mapping described in
-[UpdateRoleRequestTypeDef](./type_defs.md#updaterolerequesttypedef).
+[UpdateRoleRequestRequestTypeDef](./type_defs.md#updaterolerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3154,7 +3159,7 @@ Boto3 documentation:
 [IAM.Client.update_role_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role_description)
 
 Arguments mapping described in
-[UpdateRoleDescriptionRequestTypeDef](./type_defs.md#updateroledescriptionrequesttypedef).
+[UpdateRoleDescriptionRequestRequestTypeDef](./type_defs.md#updateroledescriptionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3162,7 +3167,7 @@ Keyword-only arguments:
 - `Description`: `str` *(required)*
 
 Returns
-[UpdateRoleDescriptionResponseResponseTypeDef](./type_defs.md#updateroledescriptionresponseresponsetypedef).
+[UpdateRoleDescriptionResponseTypeDef](./type_defs.md#updateroledescriptionresponsetypedef).
 
 ### update_saml_provider
 
@@ -3174,7 +3179,7 @@ Boto3 documentation:
 [IAM.Client.update_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_saml_provider)
 
 Arguments mapping described in
-[UpdateSAMLProviderRequestTypeDef](./type_defs.md#updatesamlproviderrequesttypedef).
+[UpdateSAMLProviderRequestRequestTypeDef](./type_defs.md#updatesamlproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3182,7 +3187,7 @@ Keyword-only arguments:
 - `SAMLProviderArn`: `str` *(required)*
 
 Returns
-[UpdateSAMLProviderResponseResponseTypeDef](./type_defs.md#updatesamlproviderresponseresponsetypedef).
+[UpdateSAMLProviderResponseTypeDef](./type_defs.md#updatesamlproviderresponsetypedef).
 
 ### update_server_certificate
 
@@ -3195,7 +3200,7 @@ Boto3 documentation:
 [IAM.Client.update_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_server_certificate)
 
 Arguments mapping described in
-[UpdateServerCertificateRequestTypeDef](./type_defs.md#updateservercertificaterequesttypedef).
+[UpdateServerCertificateRequestRequestTypeDef](./type_defs.md#updateservercertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3214,7 +3219,7 @@ Boto3 documentation:
 [IAM.Client.update_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_service_specific_credential)
 
 Arguments mapping described in
-[UpdateServiceSpecificCredentialRequestTypeDef](./type_defs.md#updateservicespecificcredentialrequesttypedef).
+[UpdateServiceSpecificCredentialRequestRequestTypeDef](./type_defs.md#updateservicespecificcredentialrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3233,7 +3238,7 @@ Boto3 documentation:
 [IAM.Client.update_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_signing_certificate)
 
 Arguments mapping described in
-[UpdateSigningCertificateRequestTypeDef](./type_defs.md#updatesigningcertificaterequesttypedef).
+[UpdateSigningCertificateRequestRequestTypeDef](./type_defs.md#updatesigningcertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3251,7 +3256,7 @@ Boto3 documentation:
 [IAM.Client.update_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_ssh_public_key)
 
 Arguments mapping described in
-[UpdateSSHPublicKeyRequestTypeDef](./type_defs.md#updatesshpublickeyrequesttypedef).
+[UpdateSSHPublicKeyRequestRequestTypeDef](./type_defs.md#updatesshpublickeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3269,7 +3274,7 @@ Boto3 documentation:
 [IAM.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_user)
 
 Arguments mapping described in
-[UpdateUserRequestTypeDef](./type_defs.md#updateuserrequesttypedef).
+[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3279,7 +3284,7 @@ Keyword-only arguments:
 
 ### upload_server_certificate
 
-Uploads a server certificate entity for the AWS account.
+Uploads a server certificate entity for the account.
 
 Type annotations for `boto3.client("iam").upload_server_certificate` method.
 
@@ -3287,7 +3292,7 @@ Boto3 documentation:
 [IAM.Client.upload_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_server_certificate)
 
 Arguments mapping described in
-[UploadServerCertificateRequestTypeDef](./type_defs.md#uploadservercertificaterequesttypedef).
+[UploadServerCertificateRequestRequestTypeDef](./type_defs.md#uploadservercertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3299,7 +3304,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[UploadServerCertificateResponseResponseTypeDef](./type_defs.md#uploadservercertificateresponseresponsetypedef).
+[UploadServerCertificateResponseTypeDef](./type_defs.md#uploadservercertificateresponsetypedef).
 
 ### upload_signing_certificate
 
@@ -3312,7 +3317,7 @@ Boto3 documentation:
 [IAM.Client.upload_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_signing_certificate)
 
 Arguments mapping described in
-[UploadSigningCertificateRequestTypeDef](./type_defs.md#uploadsigningcertificaterequesttypedef).
+[UploadSigningCertificateRequestRequestTypeDef](./type_defs.md#uploadsigningcertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3320,7 +3325,7 @@ Keyword-only arguments:
 - `UserName`: `str`
 
 Returns
-[UploadSigningCertificateResponseResponseTypeDef](./type_defs.md#uploadsigningcertificateresponseresponsetypedef).
+[UploadSigningCertificateResponseTypeDef](./type_defs.md#uploadsigningcertificateresponsetypedef).
 
 ### upload_ssh_public_key
 
@@ -3332,7 +3337,7 @@ Boto3 documentation:
 [IAM.Client.upload_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_ssh_public_key)
 
 Arguments mapping described in
-[UploadSSHPublicKeyRequestTypeDef](./type_defs.md#uploadsshpublickeyrequesttypedef).
+[UploadSSHPublicKeyRequestRequestTypeDef](./type_defs.md#uploadsshpublickeyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -3340,7 +3345,7 @@ Keyword-only arguments:
 - `SSHPublicKeyBody`: `str` *(required)*
 
 Returns
-[UploadSSHPublicKeyResponseResponseTypeDef](./type_defs.md#uploadsshpublickeyresponseresponsetypedef).
+[UploadSSHPublicKeyResponseTypeDef](./type_defs.md#uploadsshpublickeyresponsetypedef).
 
 ### get_paginator
 

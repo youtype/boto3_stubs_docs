@@ -10,9 +10,9 @@ type annotations stubs module
 - [Typed dictionaries for boto3 IoTAnalytics module](#typed-dictionaries-for-boto3-iotanalytics-module)
   - [AddAttributesActivityTypeDef](#addattributesactivitytypedef)
   - [BatchPutMessageErrorEntryTypeDef](#batchputmessageerrorentrytypedef)
-  - [BatchPutMessageRequestTypeDef](#batchputmessagerequesttypedef)
-  - [BatchPutMessageResponseResponseTypeDef](#batchputmessageresponseresponsetypedef)
-  - [CancelPipelineReprocessingRequestTypeDef](#cancelpipelinereprocessingrequesttypedef)
+  - [BatchPutMessageRequestRequestTypeDef](#batchputmessagerequestrequesttypedef)
+  - [BatchPutMessageResponseTypeDef](#batchputmessageresponsetypedef)
+  - [CancelPipelineReprocessingRequestRequestTypeDef](#cancelpipelinereprocessingrequestrequesttypedef)
   - [ChannelActivityTypeDef](#channelactivitytypedef)
   - [ChannelMessagesTypeDef](#channelmessagestypedef)
   - [ChannelStatisticsTypeDef](#channelstatisticstypedef)
@@ -22,16 +22,16 @@ type annotations stubs module
   - [ChannelTypeDef](#channeltypedef)
   - [ColumnTypeDef](#columntypedef)
   - [ContainerDatasetActionTypeDef](#containerdatasetactiontypedef)
-  - [CreateChannelRequestTypeDef](#createchannelrequesttypedef)
-  - [CreateChannelResponseResponseTypeDef](#createchannelresponseresponsetypedef)
-  - [CreateDatasetContentRequestTypeDef](#createdatasetcontentrequesttypedef)
-  - [CreateDatasetContentResponseResponseTypeDef](#createdatasetcontentresponseresponsetypedef)
-  - [CreateDatasetRequestTypeDef](#createdatasetrequesttypedef)
-  - [CreateDatasetResponseResponseTypeDef](#createdatasetresponseresponsetypedef)
-  - [CreateDatastoreRequestTypeDef](#createdatastorerequesttypedef)
-  - [CreateDatastoreResponseResponseTypeDef](#createdatastoreresponseresponsetypedef)
-  - [CreatePipelineRequestTypeDef](#createpipelinerequesttypedef)
-  - [CreatePipelineResponseResponseTypeDef](#createpipelineresponseresponsetypedef)
+  - [CreateChannelRequestRequestTypeDef](#createchannelrequestrequesttypedef)
+  - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
+  - [CreateDatasetContentRequestRequestTypeDef](#createdatasetcontentrequestrequesttypedef)
+  - [CreateDatasetContentResponseTypeDef](#createdatasetcontentresponsetypedef)
+  - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
+  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
+  - [CreateDatastoreRequestRequestTypeDef](#createdatastorerequestrequesttypedef)
+  - [CreateDatastoreResponseTypeDef](#createdatastoreresponsetypedef)
+  - [CreatePipelineRequestRequestTypeDef](#createpipelinerequestrequesttypedef)
+  - [CreatePipelineResponseTypeDef](#createpipelineresponsetypedef)
   - [CustomerManagedChannelS3StorageSummaryTypeDef](#customermanagedchannels3storagesummarytypedef)
   - [CustomerManagedChannelS3StorageTypeDef](#customermanagedchannels3storagetypedef)
   - [CustomerManagedDatastoreS3StorageSummaryTypeDef](#customermanageddatastores3storagesummarytypedef)
@@ -55,46 +55,46 @@ type annotations stubs module
   - [DatastoreStorageTypeDef](#datastorestoragetypedef)
   - [DatastoreSummaryTypeDef](#datastoresummarytypedef)
   - [DatastoreTypeDef](#datastoretypedef)
-  - [DeleteChannelRequestTypeDef](#deletechannelrequesttypedef)
-  - [DeleteDatasetContentRequestTypeDef](#deletedatasetcontentrequesttypedef)
-  - [DeleteDatasetRequestTypeDef](#deletedatasetrequesttypedef)
-  - [DeleteDatastoreRequestTypeDef](#deletedatastorerequesttypedef)
-  - [DeletePipelineRequestTypeDef](#deletepipelinerequesttypedef)
+  - [DeleteChannelRequestRequestTypeDef](#deletechannelrequestrequesttypedef)
+  - [DeleteDatasetContentRequestRequestTypeDef](#deletedatasetcontentrequestrequesttypedef)
+  - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
+  - [DeleteDatastoreRequestRequestTypeDef](#deletedatastorerequestrequesttypedef)
+  - [DeletePipelineRequestRequestTypeDef](#deletepipelinerequestrequesttypedef)
   - [DeltaTimeSessionWindowConfigurationTypeDef](#deltatimesessionwindowconfigurationtypedef)
   - [DeltaTimeTypeDef](#deltatimetypedef)
-  - [DescribeChannelRequestTypeDef](#describechannelrequesttypedef)
-  - [DescribeChannelResponseResponseTypeDef](#describechannelresponseresponsetypedef)
-  - [DescribeDatasetRequestTypeDef](#describedatasetrequesttypedef)
-  - [DescribeDatasetResponseResponseTypeDef](#describedatasetresponseresponsetypedef)
-  - [DescribeDatastoreRequestTypeDef](#describedatastorerequesttypedef)
-  - [DescribeDatastoreResponseResponseTypeDef](#describedatastoreresponseresponsetypedef)
-  - [DescribeLoggingOptionsResponseResponseTypeDef](#describeloggingoptionsresponseresponsetypedef)
-  - [DescribePipelineRequestTypeDef](#describepipelinerequesttypedef)
-  - [DescribePipelineResponseResponseTypeDef](#describepipelineresponseresponsetypedef)
+  - [DescribeChannelRequestRequestTypeDef](#describechannelrequestrequesttypedef)
+  - [DescribeChannelResponseTypeDef](#describechannelresponsetypedef)
+  - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
+  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
+  - [DescribeDatastoreRequestRequestTypeDef](#describedatastorerequestrequesttypedef)
+  - [DescribeDatastoreResponseTypeDef](#describedatastoreresponsetypedef)
+  - [DescribeLoggingOptionsResponseTypeDef](#describeloggingoptionsresponsetypedef)
+  - [DescribePipelineRequestRequestTypeDef](#describepipelinerequestrequesttypedef)
+  - [DescribePipelineResponseTypeDef](#describepipelineresponsetypedef)
   - [DeviceRegistryEnrichActivityTypeDef](#deviceregistryenrichactivitytypedef)
   - [DeviceShadowEnrichActivityTypeDef](#deviceshadowenrichactivitytypedef)
   - [EstimatedResourceSizeTypeDef](#estimatedresourcesizetypedef)
   - [FileFormatConfigurationTypeDef](#fileformatconfigurationtypedef)
   - [FilterActivityTypeDef](#filteractivitytypedef)
-  - [GetDatasetContentRequestTypeDef](#getdatasetcontentrequesttypedef)
-  - [GetDatasetContentResponseResponseTypeDef](#getdatasetcontentresponseresponsetypedef)
+  - [GetDatasetContentRequestRequestTypeDef](#getdatasetcontentrequestrequesttypedef)
+  - [GetDatasetContentResponseTypeDef](#getdatasetcontentresponsetypedef)
   - [GlueConfigurationTypeDef](#glueconfigurationtypedef)
   - [IotEventsDestinationConfigurationTypeDef](#ioteventsdestinationconfigurationtypedef)
   - [LambdaActivityTypeDef](#lambdaactivitytypedef)
   - [LateDataRuleConfigurationTypeDef](#latedataruleconfigurationtypedef)
   - [LateDataRuleTypeDef](#latedataruletypedef)
-  - [ListChannelsRequestTypeDef](#listchannelsrequesttypedef)
-  - [ListChannelsResponseResponseTypeDef](#listchannelsresponseresponsetypedef)
-  - [ListDatasetContentsRequestTypeDef](#listdatasetcontentsrequesttypedef)
-  - [ListDatasetContentsResponseResponseTypeDef](#listdatasetcontentsresponseresponsetypedef)
-  - [ListDatasetsRequestTypeDef](#listdatasetsrequesttypedef)
-  - [ListDatasetsResponseResponseTypeDef](#listdatasetsresponseresponsetypedef)
-  - [ListDatastoresRequestTypeDef](#listdatastoresrequesttypedef)
-  - [ListDatastoresResponseResponseTypeDef](#listdatastoresresponseresponsetypedef)
-  - [ListPipelinesRequestTypeDef](#listpipelinesrequesttypedef)
-  - [ListPipelinesResponseResponseTypeDef](#listpipelinesresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
+  - [ListChannelsRequestRequestTypeDef](#listchannelsrequestrequesttypedef)
+  - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
+  - [ListDatasetContentsRequestRequestTypeDef](#listdatasetcontentsrequestrequesttypedef)
+  - [ListDatasetContentsResponseTypeDef](#listdatasetcontentsresponsetypedef)
+  - [ListDatasetsRequestRequestTypeDef](#listdatasetsrequestrequesttypedef)
+  - [ListDatasetsResponseTypeDef](#listdatasetsresponsetypedef)
+  - [ListDatastoresRequestRequestTypeDef](#listdatastoresrequestrequesttypedef)
+  - [ListDatastoresResponseTypeDef](#listdatastoresresponsetypedef)
+  - [ListPipelinesRequestRequestTypeDef](#listpipelinesrequestrequesttypedef)
+  - [ListPipelinesResponseTypeDef](#listpipelinesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LoggingOptionsTypeDef](#loggingoptionstypedef)
   - [MathActivityTypeDef](#mathactivitytypedef)
   - [MessageTypeDef](#messagetypedef)
@@ -105,33 +105,33 @@ type annotations stubs module
   - [PipelineActivityTypeDef](#pipelineactivitytypedef)
   - [PipelineSummaryTypeDef](#pipelinesummarytypedef)
   - [PipelineTypeDef](#pipelinetypedef)
-  - [PutLoggingOptionsRequestTypeDef](#putloggingoptionsrequesttypedef)
+  - [PutLoggingOptionsRequestRequestTypeDef](#putloggingoptionsrequestrequesttypedef)
   - [QueryFilterTypeDef](#queryfiltertypedef)
   - [RemoveAttributesActivityTypeDef](#removeattributesactivitytypedef)
   - [ReprocessingSummaryTypeDef](#reprocessingsummarytypedef)
   - [ResourceConfigurationTypeDef](#resourceconfigurationtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RetentionPeriodTypeDef](#retentionperiodtypedef)
-  - [RunPipelineActivityRequestTypeDef](#runpipelineactivityrequesttypedef)
-  - [RunPipelineActivityResponseResponseTypeDef](#runpipelineactivityresponseresponsetypedef)
+  - [RunPipelineActivityRequestRequestTypeDef](#runpipelineactivityrequestrequesttypedef)
+  - [RunPipelineActivityResponseTypeDef](#runpipelineactivityresponsetypedef)
   - [S3DestinationConfigurationTypeDef](#s3destinationconfigurationtypedef)
-  - [SampleChannelDataRequestTypeDef](#samplechanneldatarequesttypedef)
-  - [SampleChannelDataResponseResponseTypeDef](#samplechanneldataresponseresponsetypedef)
+  - [SampleChannelDataRequestRequestTypeDef](#samplechanneldatarequestrequesttypedef)
+  - [SampleChannelDataResponseTypeDef](#samplechanneldataresponsetypedef)
   - [ScheduleTypeDef](#scheduletypedef)
   - [SchemaDefinitionTypeDef](#schemadefinitiontypedef)
   - [SelectAttributesActivityTypeDef](#selectattributesactivitytypedef)
   - [SqlQueryDatasetActionTypeDef](#sqlquerydatasetactiontypedef)
-  - [StartPipelineReprocessingRequestTypeDef](#startpipelinereprocessingrequesttypedef)
-  - [StartPipelineReprocessingResponseResponseTypeDef](#startpipelinereprocessingresponseresponsetypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [StartPipelineReprocessingRequestRequestTypeDef](#startpipelinereprocessingrequestrequesttypedef)
+  - [StartPipelineReprocessingResponseTypeDef](#startpipelinereprocessingresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TimestampPartitionTypeDef](#timestamppartitiontypedef)
   - [TriggeringDatasetTypeDef](#triggeringdatasettypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateChannelRequestTypeDef](#updatechannelrequesttypedef)
-  - [UpdateDatasetRequestTypeDef](#updatedatasetrequesttypedef)
-  - [UpdateDatastoreRequestTypeDef](#updatedatastorerequesttypedef)
-  - [UpdatePipelineRequestTypeDef](#updatepipelinerequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateChannelRequestRequestTypeDef](#updatechannelrequestrequesttypedef)
+  - [UpdateDatasetRequestRequestTypeDef](#updatedatasetrequestrequesttypedef)
+  - [UpdateDatastoreRequestRequestTypeDef](#updatedatastorerequestrequesttypedef)
+  - [UpdatePipelineRequestRequestTypeDef](#updatepipelinerequestrequesttypedef)
   - [VariableTypeDef](#variabletypedef)
   - [VersioningConfigurationTypeDef](#versioningconfigurationtypedef)
 
@@ -162,10 +162,10 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
-## BatchPutMessageRequestTypeDef
+## BatchPutMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import BatchPutMessageRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import BatchPutMessageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -173,10 +173,10 @@ Required fields:
 - `channelName`: `str`
 - `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
 
-## BatchPutMessageResponseResponseTypeDef
+## BatchPutMessageResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import BatchPutMessageResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import BatchPutMessageResponseTypeDef
 ```
 
 Required fields:
@@ -186,10 +186,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CancelPipelineReprocessingRequestTypeDef
+## CancelPipelineReprocessingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import CancelPipelineReprocessingRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import CancelPipelineReprocessingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -319,10 +319,10 @@ Optional fields:
 
 - `variables`: `List`\[[VariableTypeDef](./type_defs.md#variabletypedef)\]
 
-## CreateChannelRequestTypeDef
+## CreateChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import CreateChannelRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import CreateChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -337,10 +337,10 @@ Optional fields:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateChannelResponseResponseTypeDef
+## CreateChannelResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import CreateChannelResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import CreateChannelResponseTypeDef
 ```
 
 Required fields:
@@ -352,10 +352,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDatasetContentRequestTypeDef
+## CreateDatasetContentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import CreateDatasetContentRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import CreateDatasetContentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -366,10 +366,10 @@ Optional fields:
 
 - `versionId`: `str`
 
-## CreateDatasetContentResponseResponseTypeDef
+## CreateDatasetContentResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import CreateDatasetContentResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import CreateDatasetContentResponseTypeDef
 ```
 
 Required fields:
@@ -378,10 +378,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDatasetRequestTypeDef
+## CreateDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import CreateDatasetRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import CreateDatasetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -404,10 +404,10 @@ Optional fields:
 - `lateDataRules`:
   `List`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
-## CreateDatasetResponseResponseTypeDef
+## CreateDatasetResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import CreateDatasetResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import CreateDatasetResponseTypeDef
 ```
 
 Required fields:
@@ -419,10 +419,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDatastoreRequestTypeDef
+## CreateDatastoreRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import CreateDatastoreRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import CreateDatastoreRequestRequestTypeDef
 ```
 
 Required fields:
@@ -441,10 +441,10 @@ Optional fields:
 - `datastorePartitions`:
   [DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef)
 
-## CreateDatastoreResponseResponseTypeDef
+## CreateDatastoreResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import CreateDatastoreResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import CreateDatastoreResponseTypeDef
 ```
 
 Required fields:
@@ -456,10 +456,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreatePipelineRequestTypeDef
+## CreatePipelineRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import CreatePipelineRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import CreatePipelineRequestRequestTypeDef
 ```
 
 Required fields:
@@ -472,10 +472,10 @@ Optional fields:
 
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreatePipelineResponseResponseTypeDef
+## CreatePipelineResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import CreatePipelineResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import CreatePipelineResponseTypeDef
 ```
 
 Required fields:
@@ -804,20 +804,20 @@ Optional fields:
 - `datastorePartitions`:
   [DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef)
 
-## DeleteChannelRequestTypeDef
+## DeleteChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DeleteChannelRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import DeleteChannelRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `channelName`: `str`
 
-## DeleteDatasetContentRequestTypeDef
+## DeleteDatasetContentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DeleteDatasetContentRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import DeleteDatasetContentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -828,30 +828,30 @@ Optional fields:
 
 - `versionId`: `str`
 
-## DeleteDatasetRequestTypeDef
+## DeleteDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DeleteDatasetRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import DeleteDatasetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `datasetName`: `str`
 
-## DeleteDatastoreRequestTypeDef
+## DeleteDatastoreRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DeleteDatastoreRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import DeleteDatastoreRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `datastoreName`: `str`
 
-## DeletePipelineRequestTypeDef
+## DeletePipelineRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DeletePipelineRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import DeletePipelineRequestRequestTypeDef
 ```
 
 Required fields:
@@ -879,10 +879,10 @@ Required fields:
 - `offsetSeconds`: `int`
 - `timeExpression`: `str`
 
-## DescribeChannelRequestTypeDef
+## DescribeChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DescribeChannelRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import DescribeChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -893,10 +893,10 @@ Optional fields:
 
 - `includeStatistics`: `bool`
 
-## DescribeChannelResponseResponseTypeDef
+## DescribeChannelResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DescribeChannelResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import DescribeChannelResponseTypeDef
 ```
 
 Required fields:
@@ -907,20 +907,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDatasetRequestTypeDef
+## DescribeDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DescribeDatasetRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import DescribeDatasetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `datasetName`: `str`
 
-## DescribeDatasetResponseResponseTypeDef
+## DescribeDatasetResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DescribeDatasetResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import DescribeDatasetResponseTypeDef
 ```
 
 Required fields:
@@ -929,10 +929,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDatastoreRequestTypeDef
+## DescribeDatastoreRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DescribeDatastoreRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import DescribeDatastoreRequestRequestTypeDef
 ```
 
 Required fields:
@@ -943,10 +943,10 @@ Optional fields:
 
 - `includeStatistics`: `bool`
 
-## DescribeDatastoreResponseResponseTypeDef
+## DescribeDatastoreResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DescribeDatastoreResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import DescribeDatastoreResponseTypeDef
 ```
 
 Required fields:
@@ -957,10 +957,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLoggingOptionsResponseResponseTypeDef
+## DescribeLoggingOptionsResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DescribeLoggingOptionsResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import DescribeLoggingOptionsResponseTypeDef
 ```
 
 Required fields:
@@ -970,20 +970,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePipelineRequestTypeDef
+## DescribePipelineRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DescribePipelineRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import DescribePipelineRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `pipelineName`: `str`
 
-## DescribePipelineResponseResponseTypeDef
+## DescribePipelineResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import DescribePipelineResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import DescribePipelineResponseTypeDef
 ```
 
 Required fields:
@@ -1064,10 +1064,10 @@ Optional fields:
 
 - `next`: `str`
 
-## GetDatasetContentRequestTypeDef
+## GetDatasetContentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import GetDatasetContentRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import GetDatasetContentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1078,10 +1078,10 @@ Optional fields:
 
 - `versionId`: `str`
 
-## GetDatasetContentResponseResponseTypeDef
+## GetDatasetContentResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import GetDatasetContentResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import GetDatasetContentResponseTypeDef
 ```
 
 Required fields:
@@ -1158,10 +1158,10 @@ Optional fields:
 
 - `ruleName`: `str`
 
-## ListChannelsRequestTypeDef
+## ListChannelsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import ListChannelsRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListChannelsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1169,10 +1169,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListChannelsResponseResponseTypeDef
+## ListChannelsResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import ListChannelsResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListChannelsResponseTypeDef
 ```
 
 Required fields:
@@ -1183,10 +1183,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatasetContentsRequestTypeDef
+## ListDatasetContentsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import ListDatasetContentsRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListDatasetContentsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1200,10 +1200,10 @@ Optional fields:
 - `scheduledOnOrAfter`: `Union`\[`datetime`, `str`\]
 - `scheduledBefore`: `Union`\[`datetime`, `str`\]
 
-## ListDatasetContentsResponseResponseTypeDef
+## ListDatasetContentsResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import ListDatasetContentsResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListDatasetContentsResponseTypeDef
 ```
 
 Required fields:
@@ -1214,10 +1214,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatasetsRequestTypeDef
+## ListDatasetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import ListDatasetsRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListDatasetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1225,10 +1225,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListDatasetsResponseResponseTypeDef
+## ListDatasetsResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import ListDatasetsResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListDatasetsResponseTypeDef
 ```
 
 Required fields:
@@ -1239,10 +1239,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDatastoresRequestTypeDef
+## ListDatastoresRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import ListDatastoresRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListDatastoresRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1250,10 +1250,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListDatastoresResponseResponseTypeDef
+## ListDatastoresResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import ListDatastoresResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListDatastoresResponseTypeDef
 ```
 
 Required fields:
@@ -1264,10 +1264,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPipelinesRequestTypeDef
+## ListPipelinesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import ListPipelinesRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListPipelinesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -1275,10 +1275,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListPipelinesResponseResponseTypeDef
+## ListPipelinesResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import ListPipelinesResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListPipelinesResponseTypeDef
 ```
 
 Required fields:
@@ -1289,20 +1289,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -1450,10 +1450,10 @@ Optional fields:
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 
-## PutLoggingOptionsRequestTypeDef
+## PutLoggingOptionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import PutLoggingOptionsRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import PutLoggingOptionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1534,10 +1534,10 @@ Optional fields:
 - `unlimited`: `bool`
 - `numberOfDays`: `int`
 
-## RunPipelineActivityRequestTypeDef
+## RunPipelineActivityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import RunPipelineActivityRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import RunPipelineActivityRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1546,10 +1546,10 @@ Required fields:
   [PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)
 - `payloads`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]\]
 
-## RunPipelineActivityResponseResponseTypeDef
+## RunPipelineActivityResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import RunPipelineActivityResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import RunPipelineActivityResponseTypeDef
 ```
 
 Required fields:
@@ -1576,10 +1576,10 @@ Optional fields:
 - `glueConfiguration`:
   [GlueConfigurationTypeDef](./type_defs.md#glueconfigurationtypedef)
 
-## SampleChannelDataRequestTypeDef
+## SampleChannelDataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import SampleChannelDataRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import SampleChannelDataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1592,10 +1592,10 @@ Optional fields:
 - `startTime`: `Union`\[`datetime`, `str`\]
 - `endTime`: `Union`\[`datetime`, `str`\]
 
-## SampleChannelDataResponseResponseTypeDef
+## SampleChannelDataResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import SampleChannelDataResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import SampleChannelDataResponseTypeDef
 ```
 
 Required fields:
@@ -1653,10 +1653,10 @@ Optional fields:
 
 - `filters`: `List`\[[QueryFilterTypeDef](./type_defs.md#queryfiltertypedef)\]
 
-## StartPipelineReprocessingRequestTypeDef
+## StartPipelineReprocessingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import StartPipelineReprocessingRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import StartPipelineReprocessingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1670,10 +1670,10 @@ Optional fields:
 - `channelMessages`:
   [ChannelMessagesTypeDef](./type_defs.md#channelmessagestypedef)
 
-## StartPipelineReprocessingResponseResponseTypeDef
+## StartPipelineReprocessingResponseTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import StartPipelineReprocessingResponseResponseTypeDef
+from mypy_boto3_iotanalytics.type_defs import StartPipelineReprocessingResponseTypeDef
 ```
 
 Required fields:
@@ -1682,10 +1682,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1728,10 +1728,10 @@ Required fields:
 
 - `name`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1739,10 +1739,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateChannelRequestTypeDef
+## UpdateChannelRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import UpdateChannelRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import UpdateChannelRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1756,10 +1756,10 @@ Optional fields:
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 
-## UpdateDatasetRequestTypeDef
+## UpdateDatasetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import UpdateDatasetRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import UpdateDatasetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1781,10 +1781,10 @@ Optional fields:
 - `lateDataRules`:
   `List`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
-## UpdateDatastoreRequestTypeDef
+## UpdateDatastoreRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import UpdateDatastoreRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import UpdateDatastoreRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1800,10 +1800,10 @@ Optional fields:
 - `fileFormatConfiguration`:
   [FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef)
 
-## UpdatePipelineRequestTypeDef
+## UpdatePipelineRequestRequestTypeDef
 
 ```python
-from mypy_boto3_iotanalytics.type_defs import UpdatePipelineRequestTypeDef
+from mypy_boto3_iotanalytics.type_defs import UpdatePipelineRequestRequestTypeDef
 ```
 
 Required fields:

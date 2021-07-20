@@ -11,6 +11,7 @@ type annotations stubs module
   - [SchemasClient](#schemasclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_discoverer](#create_discoverer)
     - [create_registry](#create_registry)
@@ -91,6 +92,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SchemasClient exceptions.
+
+Type annotations for `boto3.client("schemas").exceptions` method.
+
+Boto3 documentation:
+[Schemas.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -116,7 +128,7 @@ Boto3 documentation:
 [Schemas.Client.create_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_discoverer)
 
 Arguments mapping described in
-[CreateDiscovererRequestTypeDef](./type_defs.md#creatediscovererrequesttypedef).
+[CreateDiscovererRequestRequestTypeDef](./type_defs.md#creatediscovererrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -125,7 +137,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDiscovererResponseResponseTypeDef](./type_defs.md#creatediscovererresponseresponsetypedef).
+[CreateDiscovererResponseTypeDef](./type_defs.md#creatediscovererresponsetypedef).
 
 ### create_registry
 
@@ -137,7 +149,7 @@ Boto3 documentation:
 [Schemas.Client.create_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_registry)
 
 Arguments mapping described in
-[CreateRegistryRequestTypeDef](./type_defs.md#createregistryrequesttypedef).
+[CreateRegistryRequestRequestTypeDef](./type_defs.md#createregistryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -146,7 +158,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRegistryResponseResponseTypeDef](./type_defs.md#createregistryresponseresponsetypedef).
+[CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
 
 ### create_schema
 
@@ -158,7 +170,7 @@ Boto3 documentation:
 [Schemas.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_schema)
 
 Arguments mapping described in
-[CreateSchemaRequestTypeDef](./type_defs.md#createschemarequesttypedef).
+[CreateSchemaRequestRequestTypeDef](./type_defs.md#createschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -170,7 +182,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSchemaResponseResponseTypeDef](./type_defs.md#createschemaresponseresponsetypedef).
+[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
 
 ### delete_discoverer
 
@@ -182,7 +194,7 @@ Boto3 documentation:
 [Schemas.Client.delete_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_discoverer)
 
 Arguments mapping described in
-[DeleteDiscovererRequestTypeDef](./type_defs.md#deletediscovererrequesttypedef).
+[DeleteDiscovererRequestRequestTypeDef](./type_defs.md#deletediscovererrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -198,7 +210,7 @@ Boto3 documentation:
 [Schemas.Client.delete_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_registry)
 
 Arguments mapping described in
-[DeleteRegistryRequestTypeDef](./type_defs.md#deleteregistryrequesttypedef).
+[DeleteRegistryRequestRequestTypeDef](./type_defs.md#deleteregistryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -214,7 +226,7 @@ Boto3 documentation:
 [Schemas.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_resource_policy)
 
 Arguments mapping described in
-[DeleteResourcePolicyRequestTypeDef](./type_defs.md#deleteresourcepolicyrequesttypedef).
+[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -230,7 +242,7 @@ Boto3 documentation:
 [Schemas.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema)
 
 Arguments mapping described in
-[DeleteSchemaRequestTypeDef](./type_defs.md#deleteschemarequesttypedef).
+[DeleteSchemaRequestRequestTypeDef](./type_defs.md#deleteschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -250,7 +262,7 @@ Boto3 documentation:
 [Schemas.Client.delete_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema_version)
 
 Arguments mapping described in
-[DeleteSchemaVersionRequestTypeDef](./type_defs.md#deleteschemaversionrequesttypedef).
+[DeleteSchemaVersionRequestRequestTypeDef](./type_defs.md#deleteschemaversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -268,7 +280,7 @@ Boto3 documentation:
 [Schemas.Client.describe_code_binding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_code_binding)
 
 Arguments mapping described in
-[DescribeCodeBindingRequestTypeDef](./type_defs.md#describecodebindingrequesttypedef).
+[DescribeCodeBindingRequestRequestTypeDef](./type_defs.md#describecodebindingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -278,7 +290,7 @@ Keyword-only arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[DescribeCodeBindingResponseResponseTypeDef](./type_defs.md#describecodebindingresponseresponsetypedef).
+[DescribeCodeBindingResponseTypeDef](./type_defs.md#describecodebindingresponsetypedef).
 
 ### describe_discoverer
 
@@ -290,14 +302,14 @@ Boto3 documentation:
 [Schemas.Client.describe_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_discoverer)
 
 Arguments mapping described in
-[DescribeDiscovererRequestTypeDef](./type_defs.md#describediscovererrequesttypedef).
+[DescribeDiscovererRequestRequestTypeDef](./type_defs.md#describediscovererrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DiscovererId`: `str` *(required)*
 
 Returns
-[DescribeDiscovererResponseResponseTypeDef](./type_defs.md#describediscovererresponseresponsetypedef).
+[DescribeDiscovererResponseTypeDef](./type_defs.md#describediscovererresponsetypedef).
 
 ### describe_registry
 
@@ -309,14 +321,14 @@ Boto3 documentation:
 [Schemas.Client.describe_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_registry)
 
 Arguments mapping described in
-[DescribeRegistryRequestTypeDef](./type_defs.md#describeregistryrequesttypedef).
+[DescribeRegistryRequestRequestTypeDef](./type_defs.md#describeregistryrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 
 Returns
-[DescribeRegistryResponseResponseTypeDef](./type_defs.md#describeregistryresponseresponsetypedef).
+[DescribeRegistryResponseTypeDef](./type_defs.md#describeregistryresponsetypedef).
 
 ### describe_schema
 
@@ -328,7 +340,7 @@ Boto3 documentation:
 [Schemas.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_schema)
 
 Arguments mapping described in
-[DescribeSchemaRequestTypeDef](./type_defs.md#describeschemarequesttypedef).
+[DescribeSchemaRequestRequestTypeDef](./type_defs.md#describeschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,7 +349,7 @@ Keyword-only arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[DescribeSchemaResponseResponseTypeDef](./type_defs.md#describeschemaresponseresponsetypedef).
+[DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef).
 
 ### export_schema
 
@@ -352,7 +364,7 @@ Boto3 documentation:
 [Schemas.Client.export_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.export_schema)
 
 Arguments mapping described in
-[ExportSchemaRequestTypeDef](./type_defs.md#exportschemarequesttypedef).
+[ExportSchemaRequestRequestTypeDef](./type_defs.md#exportschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,7 +374,7 @@ Keyword-only arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[ExportSchemaResponseResponseTypeDef](./type_defs.md#exportschemaresponseresponsetypedef).
+[ExportSchemaResponseTypeDef](./type_defs.md#exportschemaresponsetypedef).
 
 ### generate_presigned_url
 
@@ -392,7 +404,7 @@ Boto3 documentation:
 [Schemas.Client.get_code_binding_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_code_binding_source)
 
 Arguments mapping described in
-[GetCodeBindingSourceRequestTypeDef](./type_defs.md#getcodebindingsourcerequesttypedef).
+[GetCodeBindingSourceRequestRequestTypeDef](./type_defs.md#getcodebindingsourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -402,7 +414,7 @@ Keyword-only arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[GetCodeBindingSourceResponseResponseTypeDef](./type_defs.md#getcodebindingsourceresponseresponsetypedef).
+[GetCodeBindingSourceResponseTypeDef](./type_defs.md#getcodebindingsourceresponsetypedef).
 
 ### get_discovered_schema
 
@@ -414,7 +426,7 @@ Boto3 documentation:
 [Schemas.Client.get_discovered_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_discovered_schema)
 
 Arguments mapping described in
-[GetDiscoveredSchemaRequestTypeDef](./type_defs.md#getdiscoveredschemarequesttypedef).
+[GetDiscoveredSchemaRequestRequestTypeDef](./type_defs.md#getdiscoveredschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -422,7 +434,7 @@ Keyword-only arguments:
 - `Type`: [TypeType](./literals.md#typetype) *(required)*
 
 Returns
-[GetDiscoveredSchemaResponseResponseTypeDef](./type_defs.md#getdiscoveredschemaresponseresponsetypedef).
+[GetDiscoveredSchemaResponseTypeDef](./type_defs.md#getdiscoveredschemaresponsetypedef).
 
 ### get_resource_policy
 
@@ -434,14 +446,14 @@ Boto3 documentation:
 [Schemas.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_resource_policy)
 
 Arguments mapping described in
-[GetResourcePolicyRequestTypeDef](./type_defs.md#getresourcepolicyrequesttypedef).
+[GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `RegistryName`: `str`
 
 Returns
-[GetResourcePolicyResponseResponseTypeDef](./type_defs.md#getresourcepolicyresponseresponsetypedef).
+[GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
 
 ### list_discoverers
 
@@ -453,7 +465,7 @@ Boto3 documentation:
 [Schemas.Client.list_discoverers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_discoverers)
 
 Arguments mapping described in
-[ListDiscoverersRequestTypeDef](./type_defs.md#listdiscoverersrequesttypedef).
+[ListDiscoverersRequestRequestTypeDef](./type_defs.md#listdiscoverersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -463,7 +475,7 @@ Keyword-only arguments:
 - `SourceArnPrefix`: `str`
 
 Returns
-[ListDiscoverersResponseResponseTypeDef](./type_defs.md#listdiscoverersresponseresponsetypedef).
+[ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef).
 
 ### list_registries
 
@@ -475,7 +487,7 @@ Boto3 documentation:
 [Schemas.Client.list_registries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_registries)
 
 Arguments mapping described in
-[ListRegistriesRequestTypeDef](./type_defs.md#listregistriesrequesttypedef).
+[ListRegistriesRequestRequestTypeDef](./type_defs.md#listregistriesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -485,7 +497,7 @@ Keyword-only arguments:
 - `Scope`: `str`
 
 Returns
-[ListRegistriesResponseResponseTypeDef](./type_defs.md#listregistriesresponseresponsetypedef).
+[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef).
 
 ### list_schema_versions
 
@@ -497,7 +509,7 @@ Boto3 documentation:
 [Schemas.Client.list_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schema_versions)
 
 Arguments mapping described in
-[ListSchemaVersionsRequestTypeDef](./type_defs.md#listschemaversionsrequesttypedef).
+[ListSchemaVersionsRequestRequestTypeDef](./type_defs.md#listschemaversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -507,7 +519,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListSchemaVersionsResponseResponseTypeDef](./type_defs.md#listschemaversionsresponseresponsetypedef).
+[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef).
 
 ### list_schemas
 
@@ -519,7 +531,7 @@ Boto3 documentation:
 [Schemas.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schemas)
 
 Arguments mapping described in
-[ListSchemasRequestTypeDef](./type_defs.md#listschemasrequesttypedef).
+[ListSchemasRequestRequestTypeDef](./type_defs.md#listschemasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -529,7 +541,7 @@ Keyword-only arguments:
 - `SchemaNamePrefix`: `str`
 
 Returns
-[ListSchemasResponseResponseTypeDef](./type_defs.md#listschemasresponseresponsetypedef).
+[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -541,14 +553,14 @@ Boto3 documentation:
 [Schemas.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_code_binding
 
@@ -563,7 +575,7 @@ Boto3 documentation:
 [Schemas.Client.put_code_binding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_code_binding)
 
 Arguments mapping described in
-[PutCodeBindingRequestTypeDef](./type_defs.md#putcodebindingrequesttypedef).
+[PutCodeBindingRequestRequestTypeDef](./type_defs.md#putcodebindingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -573,7 +585,7 @@ Keyword-only arguments:
 - `SchemaVersion`: `str`
 
 Returns
-[PutCodeBindingResponseResponseTypeDef](./type_defs.md#putcodebindingresponseresponsetypedef).
+[PutCodeBindingResponseTypeDef](./type_defs.md#putcodebindingresponsetypedef).
 
 ### put_resource_policy
 
@@ -585,7 +597,7 @@ Boto3 documentation:
 [Schemas.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_resource_policy)
 
 Arguments mapping described in
-[PutResourcePolicyRequestTypeDef](./type_defs.md#putresourcepolicyrequesttypedef).
+[PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -594,7 +606,7 @@ Keyword-only arguments:
 - `RevisionId`: `str`
 
 Returns
-[PutResourcePolicyResponseResponseTypeDef](./type_defs.md#putresourcepolicyresponseresponsetypedef).
+[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
 ### search_schemas
 
@@ -609,7 +621,7 @@ Boto3 documentation:
 [Schemas.Client.search_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.search_schemas)
 
 Arguments mapping described in
-[SearchSchemasRequestTypeDef](./type_defs.md#searchschemasrequesttypedef).
+[SearchSchemasRequestRequestTypeDef](./type_defs.md#searchschemasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -619,7 +631,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[SearchSchemasResponseResponseTypeDef](./type_defs.md#searchschemasresponseresponsetypedef).
+[SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef).
 
 ### start_discoverer
 
@@ -633,14 +645,14 @@ Boto3 documentation:
 [Schemas.Client.start_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.start_discoverer)
 
 Arguments mapping described in
-[StartDiscovererRequestTypeDef](./type_defs.md#startdiscovererrequesttypedef).
+[StartDiscovererRequestRequestTypeDef](./type_defs.md#startdiscovererrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DiscovererId`: `str` *(required)*
 
 Returns
-[StartDiscovererResponseResponseTypeDef](./type_defs.md#startdiscovererresponseresponsetypedef).
+[StartDiscovererResponseTypeDef](./type_defs.md#startdiscovererresponsetypedef).
 
 ### stop_discoverer
 
@@ -654,14 +666,14 @@ Boto3 documentation:
 [Schemas.Client.stop_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.stop_discoverer)
 
 Arguments mapping described in
-[StopDiscovererRequestTypeDef](./type_defs.md#stopdiscovererrequesttypedef).
+[StopDiscovererRequestRequestTypeDef](./type_defs.md#stopdiscovererrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DiscovererId`: `str` *(required)*
 
 Returns
-[StopDiscovererResponseResponseTypeDef](./type_defs.md#stopdiscovererresponseresponsetypedef).
+[StopDiscovererResponseTypeDef](./type_defs.md#stopdiscovererresponsetypedef).
 
 ### tag_resource
 
@@ -673,7 +685,7 @@ Boto3 documentation:
 [Schemas.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -690,7 +702,7 @@ Boto3 documentation:
 [Schemas.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -710,7 +722,7 @@ Boto3 documentation:
 [Schemas.Client.update_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_discoverer)
 
 Arguments mapping described in
-[UpdateDiscovererRequestTypeDef](./type_defs.md#updatediscovererrequesttypedef).
+[UpdateDiscovererRequestRequestTypeDef](./type_defs.md#updatediscovererrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -718,7 +730,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateDiscovererResponseResponseTypeDef](./type_defs.md#updatediscovererresponseresponsetypedef).
+[UpdateDiscovererResponseTypeDef](./type_defs.md#updatediscovererresponsetypedef).
 
 ### update_registry
 
@@ -730,7 +742,7 @@ Boto3 documentation:
 [Schemas.Client.update_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_registry)
 
 Arguments mapping described in
-[UpdateRegistryRequestTypeDef](./type_defs.md#updateregistryrequesttypedef).
+[UpdateRegistryRequestRequestTypeDef](./type_defs.md#updateregistryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -738,7 +750,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateRegistryResponseResponseTypeDef](./type_defs.md#updateregistryresponseresponsetypedef).
+[UpdateRegistryResponseTypeDef](./type_defs.md#updateregistryresponsetypedef).
 
 ### update_schema
 
@@ -750,7 +762,7 @@ Boto3 documentation:
 [Schemas.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_schema)
 
 Arguments mapping described in
-[UpdateSchemaRequestTypeDef](./type_defs.md#updateschemarequesttypedef).
+[UpdateSchemaRequestRequestTypeDef](./type_defs.md#updateschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -762,7 +774,7 @@ Keyword-only arguments:
 - `Type`: [TypeType](./literals.md#typetype)
 
 Returns
-[UpdateSchemaResponseResponseTypeDef](./type_defs.md#updateschemaresponseresponsetypedef).
+[UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
 
 ### get_paginator
 

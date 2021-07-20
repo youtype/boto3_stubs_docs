@@ -11,6 +11,7 @@ type annotations stubs module
   - [MediaPackageClient](#mediapackageclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [configure_logs](#configure_logs)
     - [create_channel](#create_channel)
@@ -74,6 +75,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MediaPackageClient exceptions.
+
+Type annotations for `boto3.client("mediapackage").exceptions` method.
+
+Boto3 documentation:
+[MediaPackage.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -102,7 +114,7 @@ Boto3 documentation:
 [MediaPackage.Client.configure_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.configure_logs)
 
 Arguments mapping described in
-[ConfigureLogsRequestTypeDef](./type_defs.md#configurelogsrequesttypedef).
+[ConfigureLogsRequestRequestTypeDef](./type_defs.md#configurelogsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -113,7 +125,7 @@ Keyword-only arguments:
   [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
 
 Returns
-[ConfigureLogsResponseResponseTypeDef](./type_defs.md#configurelogsresponseresponsetypedef).
+[ConfigureLogsResponseTypeDef](./type_defs.md#configurelogsresponsetypedef).
 
 ### create_channel
 
@@ -125,7 +137,7 @@ Boto3 documentation:
 [MediaPackage.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_channel)
 
 Arguments mapping described in
-[CreateChannelRequestTypeDef](./type_defs.md#createchannelrequesttypedef).
+[CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -134,7 +146,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateChannelResponseResponseTypeDef](./type_defs.md#createchannelresponseresponsetypedef).
+[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
 ### create_harvest_job
 
@@ -146,7 +158,7 @@ Boto3 documentation:
 [MediaPackage.Client.create_harvest_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_harvest_job)
 
 Arguments mapping described in
-[CreateHarvestJobRequestTypeDef](./type_defs.md#createharvestjobrequesttypedef).
+[CreateHarvestJobRequestRequestTypeDef](./type_defs.md#createharvestjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -158,7 +170,7 @@ Keyword-only arguments:
 - `StartTime`: `str` *(required)*
 
 Returns
-[CreateHarvestJobResponseResponseTypeDef](./type_defs.md#createharvestjobresponseresponsetypedef).
+[CreateHarvestJobResponseTypeDef](./type_defs.md#createharvestjobresponsetypedef).
 
 ### create_origin_endpoint
 
@@ -171,7 +183,7 @@ Boto3 documentation:
 [MediaPackage.Client.create_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.create_origin_endpoint)
 
 Arguments mapping described in
-[CreateOriginEndpointRequestTypeDef](./type_defs.md#createoriginendpointrequesttypedef).
+[CreateOriginEndpointRequestRequestTypeDef](./type_defs.md#createoriginendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,7 +204,7 @@ Keyword-only arguments:
 - `Whitelist`: `List`\[`str`\]
 
 Returns
-[CreateOriginEndpointResponseResponseTypeDef](./type_defs.md#createoriginendpointresponseresponsetypedef).
+[CreateOriginEndpointResponseTypeDef](./type_defs.md#createoriginendpointresponsetypedef).
 
 ### delete_channel
 
@@ -204,7 +216,7 @@ Boto3 documentation:
 [MediaPackage.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.delete_channel)
 
 Arguments mapping described in
-[DeleteChannelRequestTypeDef](./type_defs.md#deletechannelrequesttypedef).
+[DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,7 +235,7 @@ Boto3 documentation:
 [MediaPackage.Client.delete_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.delete_origin_endpoint)
 
 Arguments mapping described in
-[DeleteOriginEndpointRequestTypeDef](./type_defs.md#deleteoriginendpointrequesttypedef).
+[DeleteOriginEndpointRequestRequestTypeDef](./type_defs.md#deleteoriginendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -241,14 +253,14 @@ Boto3 documentation:
 [MediaPackage.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_channel)
 
 Arguments mapping described in
-[DescribeChannelRequestTypeDef](./type_defs.md#describechannelrequesttypedef).
+[DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeChannelResponseResponseTypeDef](./type_defs.md#describechannelresponseresponsetypedef).
+[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
 ### describe_harvest_job
 
@@ -261,14 +273,14 @@ Boto3 documentation:
 [MediaPackage.Client.describe_harvest_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_harvest_job)
 
 Arguments mapping described in
-[DescribeHarvestJobRequestTypeDef](./type_defs.md#describeharvestjobrequesttypedef).
+[DescribeHarvestJobRequestRequestTypeDef](./type_defs.md#describeharvestjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeHarvestJobResponseResponseTypeDef](./type_defs.md#describeharvestjobresponseresponsetypedef).
+[DescribeHarvestJobResponseTypeDef](./type_defs.md#describeharvestjobresponsetypedef).
 
 ### describe_origin_endpoint
 
@@ -281,14 +293,14 @@ Boto3 documentation:
 [MediaPackage.Client.describe_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.describe_origin_endpoint)
 
 Arguments mapping described in
-[DescribeOriginEndpointRequestTypeDef](./type_defs.md#describeoriginendpointrequesttypedef).
+[DescribeOriginEndpointRequestRequestTypeDef](./type_defs.md#describeoriginendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeOriginEndpointResponseResponseTypeDef](./type_defs.md#describeoriginendpointresponseresponsetypedef).
+[DescribeOriginEndpointResponseTypeDef](./type_defs.md#describeoriginendpointresponsetypedef).
 
 ### generate_presigned_url
 
@@ -319,7 +331,7 @@ Boto3 documentation:
 [MediaPackage.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_channels)
 
 Arguments mapping described in
-[ListChannelsRequestTypeDef](./type_defs.md#listchannelsrequesttypedef).
+[ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -327,7 +339,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListChannelsResponseResponseTypeDef](./type_defs.md#listchannelsresponseresponsetypedef).
+[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
 ### list_harvest_jobs
 
@@ -339,7 +351,7 @@ Boto3 documentation:
 [MediaPackage.Client.list_harvest_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_harvest_jobs)
 
 Arguments mapping described in
-[ListHarvestJobsRequestTypeDef](./type_defs.md#listharvestjobsrequesttypedef).
+[ListHarvestJobsRequestRequestTypeDef](./type_defs.md#listharvestjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -349,7 +361,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListHarvestJobsResponseResponseTypeDef](./type_defs.md#listharvestjobsresponseresponsetypedef).
+[ListHarvestJobsResponseTypeDef](./type_defs.md#listharvestjobsresponsetypedef).
 
 ### list_origin_endpoints
 
@@ -362,7 +374,7 @@ Boto3 documentation:
 [MediaPackage.Client.list_origin_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_origin_endpoints)
 
 Arguments mapping described in
-[ListOriginEndpointsRequestTypeDef](./type_defs.md#listoriginendpointsrequesttypedef).
+[ListOriginEndpointsRequestRequestTypeDef](./type_defs.md#listoriginendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -371,7 +383,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListOriginEndpointsResponseResponseTypeDef](./type_defs.md#listoriginendpointsresponseresponsetypedef).
+[ListOriginEndpointsResponseTypeDef](./type_defs.md#listoriginendpointsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -387,14 +399,14 @@ Boto3 documentation:
 [MediaPackage.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### rotate_channel_credentials
 
@@ -407,14 +419,14 @@ Boto3 documentation:
 [MediaPackage.Client.rotate_channel_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.rotate_channel_credentials)
 
 Arguments mapping described in
-[RotateChannelCredentialsRequestTypeDef](./type_defs.md#rotatechannelcredentialsrequesttypedef).
+[RotateChannelCredentialsRequestRequestTypeDef](./type_defs.md#rotatechannelcredentialsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[RotateChannelCredentialsResponseResponseTypeDef](./type_defs.md#rotatechannelcredentialsresponseresponsetypedef).
+[RotateChannelCredentialsResponseTypeDef](./type_defs.md#rotatechannelcredentialsresponsetypedef).
 
 ### rotate_ingest_endpoint_credentials
 
@@ -428,7 +440,7 @@ Boto3 documentation:
 [MediaPackage.Client.rotate_ingest_endpoint_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.rotate_ingest_endpoint_credentials)
 
 Arguments mapping described in
-[RotateIngestEndpointCredentialsRequestTypeDef](./type_defs.md#rotateingestendpointcredentialsrequesttypedef).
+[RotateIngestEndpointCredentialsRequestRequestTypeDef](./type_defs.md#rotateingestendpointcredentialsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -436,7 +448,7 @@ Keyword-only arguments:
 - `IngestEndpointId`: `str` *(required)*
 
 Returns
-[RotateIngestEndpointCredentialsResponseResponseTypeDef](./type_defs.md#rotateingestendpointcredentialsresponseresponsetypedef).
+[RotateIngestEndpointCredentialsResponseTypeDef](./type_defs.md#rotateingestendpointcredentialsresponsetypedef).
 
 ### tag_resource
 
@@ -451,7 +463,7 @@ Boto3 documentation:
 [MediaPackage.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,7 +483,7 @@ Boto3 documentation:
 [MediaPackage.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -488,7 +500,7 @@ Boto3 documentation:
 [MediaPackage.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.update_channel)
 
 Arguments mapping described in
-[UpdateChannelRequestTypeDef](./type_defs.md#updatechannelrequesttypedef).
+[UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -496,7 +508,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateChannelResponseResponseTypeDef](./type_defs.md#updatechannelresponseresponsetypedef).
+[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
 ### update_origin_endpoint
 
@@ -509,7 +521,7 @@ Boto3 documentation:
 [MediaPackage.Client.update_origin_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.update_origin_endpoint)
 
 Arguments mapping described in
-[UpdateOriginEndpointRequestTypeDef](./type_defs.md#updateoriginendpointrequesttypedef).
+[UpdateOriginEndpointRequestRequestTypeDef](./type_defs.md#updateoriginendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -528,7 +540,7 @@ Keyword-only arguments:
 - `Whitelist`: `List`\[`str`\]
 
 Returns
-[UpdateOriginEndpointResponseResponseTypeDef](./type_defs.md#updateoriginendpointresponseresponsetypedef).
+[UpdateOriginEndpointResponseTypeDef](./type_defs.md#updateoriginendpointresponsetypedef).
 
 ### get_paginator
 

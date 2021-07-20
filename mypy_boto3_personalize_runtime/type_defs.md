@@ -8,17 +8,17 @@ type annotations stubs module
 [mypy_boto3_personalize_runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
 
 - [Typed dictionaries for boto3 PersonalizeRuntime module](#typed-dictionaries-for-boto3-personalizeruntime-module)
-  - [GetPersonalizedRankingRequestTypeDef](#getpersonalizedrankingrequesttypedef)
-  - [GetPersonalizedRankingResponseResponseTypeDef](#getpersonalizedrankingresponseresponsetypedef)
-  - [GetRecommendationsRequestTypeDef](#getrecommendationsrequesttypedef)
-  - [GetRecommendationsResponseResponseTypeDef](#getrecommendationsresponseresponsetypedef)
+  - [GetPersonalizedRankingRequestRequestTypeDef](#getpersonalizedrankingrequestrequesttypedef)
+  - [GetPersonalizedRankingResponseTypeDef](#getpersonalizedrankingresponsetypedef)
+  - [GetRecommendationsRequestRequestTypeDef](#getrecommendationsrequestrequesttypedef)
+  - [GetRecommendationsResponseTypeDef](#getrecommendationsresponsetypedef)
   - [PredictedItemTypeDef](#predicteditemtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
-## GetPersonalizedRankingRequestTypeDef
+## GetPersonalizedRankingRequestRequestTypeDef
 
 ```python
-from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingRequestTypeDef
+from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingRequestRequestTypeDef
 ```
 
 Required fields:
@@ -33,10 +33,10 @@ Optional fields:
 - `filterArn`: `str`
 - `filterValues`: `Dict`\[`str`, `str`\]
 
-## GetPersonalizedRankingResponseResponseTypeDef
+## GetPersonalizedRankingResponseTypeDef
 
 ```python
-from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingResponseResponseTypeDef
+from mypy_boto3_personalize_runtime.type_defs import GetPersonalizedRankingResponseTypeDef
 ```
 
 Required fields:
@@ -47,10 +47,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRecommendationsRequestTypeDef
+## GetRecommendationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsRequestTypeDef
+from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -66,10 +66,10 @@ Optional fields:
 - `filterArn`: `str`
 - `filterValues`: `Dict`\[`str`, `str`\]
 
-## GetRecommendationsResponseResponseTypeDef
+## GetRecommendationsResponseTypeDef
 
 ```python
-from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsResponseResponseTypeDef
+from mypy_boto3_personalize_runtime.type_defs import GetRecommendationsResponseTypeDef
 ```
 
 Required fields:

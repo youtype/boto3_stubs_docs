@@ -11,6 +11,7 @@ type annotations stubs module
   - [ECSClient](#ecsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_capacity_provider](#create_capacity_provider)
     - [create_cluster](#create_cluster)
@@ -126,6 +127,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ECSClient exceptions.
+
+Type annotations for `boto3.client("ecs").exceptions` method.
+
+Boto3 documentation:
+[ECS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -151,7 +163,7 @@ Boto3 documentation:
 [ECS.Client.create_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_capacity_provider)
 
 Arguments mapping described in
-[CreateCapacityProviderRequestTypeDef](./type_defs.md#createcapacityproviderrequesttypedef).
+[CreateCapacityProviderRequestRequestTypeDef](./type_defs.md#createcapacityproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -162,7 +174,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateCapacityProviderResponseResponseTypeDef](./type_defs.md#createcapacityproviderresponseresponsetypedef).
+[CreateCapacityProviderResponseTypeDef](./type_defs.md#createcapacityproviderresponsetypedef).
 
 ### create_cluster
 
@@ -174,7 +186,7 @@ Boto3 documentation:
 [ECS.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_cluster)
 
 Arguments mapping described in
-[CreateClusterRequestTypeDef](./type_defs.md#createclusterrequesttypedef).
+[CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -189,7 +201,7 @@ Keyword-only arguments:
   `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 
 Returns
-[CreateClusterResponseResponseTypeDef](./type_defs.md#createclusterresponseresponsetypedef).
+[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
 ### create_service
 
@@ -201,7 +213,7 @@ Boto3 documentation:
 [ECS.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_service)
 
 Arguments mapping described in
-[CreateServiceRequestTypeDef](./type_defs.md#createservicerequesttypedef).
+[CreateServiceRequestRequestTypeDef](./type_defs.md#createservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -238,7 +250,7 @@ Keyword-only arguments:
 - `enableExecuteCommand`: `bool`
 
 Returns
-[CreateServiceResponseResponseTypeDef](./type_defs.md#createserviceresponseresponsetypedef).
+[CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
 
 ### create_task_set
 
@@ -250,7 +262,7 @@ Boto3 documentation:
 [ECS.Client.create_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_task_set)
 
 Arguments mapping described in
-[CreateTaskSetRequestTypeDef](./type_defs.md#createtasksetrequesttypedef).
+[CreateTaskSetRequestRequestTypeDef](./type_defs.md#createtasksetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,7 +285,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateTaskSetResponseResponseTypeDef](./type_defs.md#createtasksetresponseresponsetypedef).
+[CreateTaskSetResponseTypeDef](./type_defs.md#createtasksetresponsetypedef).
 
 ### delete_account_setting
 
@@ -286,7 +298,7 @@ Boto3 documentation:
 [ECS.Client.delete_account_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_account_setting)
 
 Arguments mapping described in
-[DeleteAccountSettingRequestTypeDef](./type_defs.md#deleteaccountsettingrequesttypedef).
+[DeleteAccountSettingRequestRequestTypeDef](./type_defs.md#deleteaccountsettingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -294,7 +306,7 @@ Keyword-only arguments:
 - `principalArn`: `str`
 
 Returns
-[DeleteAccountSettingResponseResponseTypeDef](./type_defs.md#deleteaccountsettingresponseresponsetypedef).
+[DeleteAccountSettingResponseTypeDef](./type_defs.md#deleteaccountsettingresponsetypedef).
 
 ### delete_attributes
 
@@ -306,7 +318,7 @@ Boto3 documentation:
 [ECS.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_attributes)
 
 Arguments mapping described in
-[DeleteAttributesRequestTypeDef](./type_defs.md#deleteattributesrequesttypedef).
+[DeleteAttributesRequestRequestTypeDef](./type_defs.md#deleteattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -315,7 +327,7 @@ Keyword-only arguments:
 - `cluster`: `str`
 
 Returns
-[DeleteAttributesResponseResponseTypeDef](./type_defs.md#deleteattributesresponseresponsetypedef).
+[DeleteAttributesResponseTypeDef](./type_defs.md#deleteattributesresponsetypedef).
 
 ### delete_capacity_provider
 
@@ -327,14 +339,14 @@ Boto3 documentation:
 [ECS.Client.delete_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_capacity_provider)
 
 Arguments mapping described in
-[DeleteCapacityProviderRequestTypeDef](./type_defs.md#deletecapacityproviderrequesttypedef).
+[DeleteCapacityProviderRequestRequestTypeDef](./type_defs.md#deletecapacityproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `capacityProvider`: `str` *(required)*
 
 Returns
-[DeleteCapacityProviderResponseResponseTypeDef](./type_defs.md#deletecapacityproviderresponseresponsetypedef).
+[DeleteCapacityProviderResponseTypeDef](./type_defs.md#deletecapacityproviderresponsetypedef).
 
 ### delete_cluster
 
@@ -346,14 +358,14 @@ Boto3 documentation:
 [ECS.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_cluster)
 
 Arguments mapping described in
-[DeleteClusterRequestTypeDef](./type_defs.md#deleteclusterrequesttypedef).
+[DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `cluster`: `str` *(required)*
 
 Returns
-[DeleteClusterResponseResponseTypeDef](./type_defs.md#deleteclusterresponseresponsetypedef).
+[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
 
 ### delete_service
 
@@ -365,7 +377,7 @@ Boto3 documentation:
 [ECS.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_service)
 
 Arguments mapping described in
-[DeleteServiceRequestTypeDef](./type_defs.md#deleteservicerequesttypedef).
+[DeleteServiceRequestRequestTypeDef](./type_defs.md#deleteservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -374,7 +386,7 @@ Keyword-only arguments:
 - `force`: `bool`
 
 Returns
-[DeleteServiceResponseResponseTypeDef](./type_defs.md#deleteserviceresponseresponsetypedef).
+[DeleteServiceResponseTypeDef](./type_defs.md#deleteserviceresponsetypedef).
 
 ### delete_task_set
 
@@ -386,7 +398,7 @@ Boto3 documentation:
 [ECS.Client.delete_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_task_set)
 
 Arguments mapping described in
-[DeleteTaskSetRequestTypeDef](./type_defs.md#deletetasksetrequesttypedef).
+[DeleteTaskSetRequestRequestTypeDef](./type_defs.md#deletetasksetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -396,7 +408,7 @@ Keyword-only arguments:
 - `force`: `bool`
 
 Returns
-[DeleteTaskSetResponseResponseTypeDef](./type_defs.md#deletetasksetresponseresponsetypedef).
+[DeleteTaskSetResponseTypeDef](./type_defs.md#deletetasksetresponsetypedef).
 
 ### deregister_container_instance
 
@@ -409,7 +421,7 @@ Boto3 documentation:
 [ECS.Client.deregister_container_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_container_instance)
 
 Arguments mapping described in
-[DeregisterContainerInstanceRequestTypeDef](./type_defs.md#deregistercontainerinstancerequesttypedef).
+[DeregisterContainerInstanceRequestRequestTypeDef](./type_defs.md#deregistercontainerinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -418,7 +430,7 @@ Keyword-only arguments:
 - `force`: `bool`
 
 Returns
-[DeregisterContainerInstanceResponseResponseTypeDef](./type_defs.md#deregistercontainerinstanceresponseresponsetypedef).
+[DeregisterContainerInstanceResponseTypeDef](./type_defs.md#deregistercontainerinstanceresponsetypedef).
 
 ### deregister_task_definition
 
@@ -430,14 +442,14 @@ Boto3 documentation:
 [ECS.Client.deregister_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_task_definition)
 
 Arguments mapping described in
-[DeregisterTaskDefinitionRequestTypeDef](./type_defs.md#deregistertaskdefinitionrequesttypedef).
+[DeregisterTaskDefinitionRequestRequestTypeDef](./type_defs.md#deregistertaskdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `taskDefinition`: `str` *(required)*
 
 Returns
-[DeregisterTaskDefinitionResponseResponseTypeDef](./type_defs.md#deregistertaskdefinitionresponseresponsetypedef).
+[DeregisterTaskDefinitionResponseTypeDef](./type_defs.md#deregistertaskdefinitionresponsetypedef).
 
 ### describe_capacity_providers
 
@@ -449,7 +461,7 @@ Boto3 documentation:
 [ECS.Client.describe_capacity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_capacity_providers)
 
 Arguments mapping described in
-[DescribeCapacityProvidersRequestTypeDef](./type_defs.md#describecapacityprovidersrequesttypedef).
+[DescribeCapacityProvidersRequestRequestTypeDef](./type_defs.md#describecapacityprovidersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -460,7 +472,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[DescribeCapacityProvidersResponseResponseTypeDef](./type_defs.md#describecapacityprovidersresponseresponsetypedef).
+[DescribeCapacityProvidersResponseTypeDef](./type_defs.md#describecapacityprovidersresponsetypedef).
 
 ### describe_clusters
 
@@ -472,7 +484,7 @@ Boto3 documentation:
 [ECS.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_clusters)
 
 Arguments mapping described in
-[DescribeClustersRequestTypeDef](./type_defs.md#describeclustersrequesttypedef).
+[DescribeClustersRequestRequestTypeDef](./type_defs.md#describeclustersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,7 +492,7 @@ Keyword-only arguments:
 - `include`: `List`\[[ClusterFieldType](./literals.md#clusterfieldtype)\]
 
 Returns
-[DescribeClustersResponseResponseTypeDef](./type_defs.md#describeclustersresponseresponsetypedef).
+[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
 
 ### describe_container_instances
 
@@ -492,7 +504,7 @@ Boto3 documentation:
 [ECS.Client.describe_container_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_container_instances)
 
 Arguments mapping described in
-[DescribeContainerInstancesRequestTypeDef](./type_defs.md#describecontainerinstancesrequesttypedef).
+[DescribeContainerInstancesRequestRequestTypeDef](./type_defs.md#describecontainerinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -502,7 +514,7 @@ Keyword-only arguments:
   [ContainerInstanceFieldType](./literals.md#containerinstancefieldtype))\]
 
 Returns
-[DescribeContainerInstancesResponseResponseTypeDef](./type_defs.md#describecontainerinstancesresponseresponsetypedef).
+[DescribeContainerInstancesResponseTypeDef](./type_defs.md#describecontainerinstancesresponsetypedef).
 
 ### describe_services
 
@@ -514,7 +526,7 @@ Boto3 documentation:
 [ECS.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_services)
 
 Arguments mapping described in
-[DescribeServicesRequestTypeDef](./type_defs.md#describeservicesrequesttypedef).
+[DescribeServicesRequestRequestTypeDef](./type_defs.md#describeservicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -524,7 +536,7 @@ Keyword-only arguments:
   [ServiceFieldType](./literals.md#servicefieldtype))\]
 
 Returns
-[DescribeServicesResponseResponseTypeDef](./type_defs.md#describeservicesresponseresponsetypedef).
+[DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
 
 ### describe_task_definition
 
@@ -536,7 +548,7 @@ Boto3 documentation:
 [ECS.Client.describe_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_definition)
 
 Arguments mapping described in
-[DescribeTaskDefinitionRequestTypeDef](./type_defs.md#describetaskdefinitionrequesttypedef).
+[DescribeTaskDefinitionRequestRequestTypeDef](./type_defs.md#describetaskdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -545,7 +557,7 @@ Keyword-only arguments:
   [TaskDefinitionFieldType](./literals.md#taskdefinitionfieldtype))\]
 
 Returns
-[DescribeTaskDefinitionResponseResponseTypeDef](./type_defs.md#describetaskdefinitionresponseresponsetypedef).
+[DescribeTaskDefinitionResponseTypeDef](./type_defs.md#describetaskdefinitionresponsetypedef).
 
 ### describe_task_sets
 
@@ -557,7 +569,7 @@ Boto3 documentation:
 [ECS.Client.describe_task_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_sets)
 
 Arguments mapping described in
-[DescribeTaskSetsRequestTypeDef](./type_defs.md#describetasksetsrequesttypedef).
+[DescribeTaskSetsRequestRequestTypeDef](./type_defs.md#describetasksetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -568,7 +580,7 @@ Keyword-only arguments:
   [TaskSetFieldType](./literals.md#tasksetfieldtype))\]
 
 Returns
-[DescribeTaskSetsResponseResponseTypeDef](./type_defs.md#describetasksetsresponseresponsetypedef).
+[DescribeTaskSetsResponseTypeDef](./type_defs.md#describetasksetsresponsetypedef).
 
 ### describe_tasks
 
@@ -580,7 +592,7 @@ Boto3 documentation:
 [ECS.Client.describe_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_tasks)
 
 Arguments mapping described in
-[DescribeTasksRequestTypeDef](./type_defs.md#describetasksrequesttypedef).
+[DescribeTasksRequestRequestTypeDef](./type_defs.md#describetasksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -590,7 +602,7 @@ Keyword-only arguments:
   [TaskFieldType](./literals.md#taskfieldtype))\]
 
 Returns
-[DescribeTasksResponseResponseTypeDef](./type_defs.md#describetasksresponseresponsetypedef).
+[DescribeTasksResponseTypeDef](./type_defs.md#describetasksresponsetypedef).
 
 ### discover_poll_endpoint
 
@@ -602,7 +614,7 @@ Boto3 documentation:
 [ECS.Client.discover_poll_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.discover_poll_endpoint)
 
 Arguments mapping described in
-[DiscoverPollEndpointRequestTypeDef](./type_defs.md#discoverpollendpointrequesttypedef).
+[DiscoverPollEndpointRequestRequestTypeDef](./type_defs.md#discoverpollendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -610,7 +622,7 @@ Keyword-only arguments:
 - `cluster`: `str`
 
 Returns
-[DiscoverPollEndpointResponseResponseTypeDef](./type_defs.md#discoverpollendpointresponseresponsetypedef).
+[DiscoverPollEndpointResponseTypeDef](./type_defs.md#discoverpollendpointresponsetypedef).
 
 ### execute_command
 
@@ -622,7 +634,7 @@ Boto3 documentation:
 [ECS.Client.execute_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.execute_command)
 
 Arguments mapping described in
-[ExecuteCommandRequestTypeDef](./type_defs.md#executecommandrequesttypedef).
+[ExecuteCommandRequestRequestTypeDef](./type_defs.md#executecommandrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -633,7 +645,7 @@ Keyword-only arguments:
 - `container`: `str`
 
 Returns
-[ExecuteCommandResponseResponseTypeDef](./type_defs.md#executecommandresponseresponsetypedef).
+[ExecuteCommandResponseTypeDef](./type_defs.md#executecommandresponsetypedef).
 
 ### generate_presigned_url
 
@@ -663,7 +675,7 @@ Boto3 documentation:
 [ECS.Client.list_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_account_settings)
 
 Arguments mapping described in
-[ListAccountSettingsRequestTypeDef](./type_defs.md#listaccountsettingsrequesttypedef).
+[ListAccountSettingsRequestRequestTypeDef](./type_defs.md#listaccountsettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -675,7 +687,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAccountSettingsResponseResponseTypeDef](./type_defs.md#listaccountsettingsresponseresponsetypedef).
+[ListAccountSettingsResponseTypeDef](./type_defs.md#listaccountsettingsresponsetypedef).
 
 ### list_attributes
 
@@ -688,7 +700,7 @@ Boto3 documentation:
 [ECS.Client.list_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_attributes)
 
 Arguments mapping described in
-[ListAttributesRequestTypeDef](./type_defs.md#listattributesrequesttypedef).
+[ListAttributesRequestRequestTypeDef](./type_defs.md#listattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -701,7 +713,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAttributesResponseResponseTypeDef](./type_defs.md#listattributesresponseresponsetypedef).
+[ListAttributesResponseTypeDef](./type_defs.md#listattributesresponsetypedef).
 
 ### list_clusters
 
@@ -713,7 +725,7 @@ Boto3 documentation:
 [ECS.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_clusters)
 
 Arguments mapping described in
-[ListClustersRequestTypeDef](./type_defs.md#listclustersrequesttypedef).
+[ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -721,7 +733,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListClustersResponseResponseTypeDef](./type_defs.md#listclustersresponseresponsetypedef).
+[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
 
 ### list_container_instances
 
@@ -733,7 +745,7 @@ Boto3 documentation:
 [ECS.Client.list_container_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_container_instances)
 
 Arguments mapping described in
-[ListContainerInstancesRequestTypeDef](./type_defs.md#listcontainerinstancesrequesttypedef).
+[ListContainerInstancesRequestRequestTypeDef](./type_defs.md#listcontainerinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -745,7 +757,7 @@ Keyword-only arguments:
   [ContainerInstanceStatusType](./literals.md#containerinstancestatustype)
 
 Returns
-[ListContainerInstancesResponseResponseTypeDef](./type_defs.md#listcontainerinstancesresponseresponsetypedef).
+[ListContainerInstancesResponseTypeDef](./type_defs.md#listcontainerinstancesresponsetypedef).
 
 ### list_services
 
@@ -757,7 +769,7 @@ Boto3 documentation:
 [ECS.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_services)
 
 Arguments mapping described in
-[ListServicesRequestTypeDef](./type_defs.md#listservicesrequesttypedef).
+[ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -769,7 +781,7 @@ Keyword-only arguments:
   [SchedulingStrategyType](./literals.md#schedulingstrategytype)
 
 Returns
-[ListServicesResponseResponseTypeDef](./type_defs.md#listservicesresponseresponsetypedef).
+[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -781,14 +793,14 @@ Boto3 documentation:
 [ECS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_task_definition_families
 
@@ -803,7 +815,7 @@ Boto3 documentation:
 [ECS.Client.list_task_definition_families](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definition_families)
 
 Arguments mapping described in
-[ListTaskDefinitionFamiliesRequestTypeDef](./type_defs.md#listtaskdefinitionfamiliesrequesttypedef).
+[ListTaskDefinitionFamiliesRequestRequestTypeDef](./type_defs.md#listtaskdefinitionfamiliesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -814,7 +826,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTaskDefinitionFamiliesResponseResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponseresponsetypedef).
+[ListTaskDefinitionFamiliesResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponsetypedef).
 
 ### list_task_definitions
 
@@ -826,7 +838,7 @@ Boto3 documentation:
 [ECS.Client.list_task_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definitions)
 
 Arguments mapping described in
-[ListTaskDefinitionsRequestTypeDef](./type_defs.md#listtaskdefinitionsrequesttypedef).
+[ListTaskDefinitionsRequestRequestTypeDef](./type_defs.md#listtaskdefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -837,7 +849,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListTaskDefinitionsResponseResponseTypeDef](./type_defs.md#listtaskdefinitionsresponseresponsetypedef).
+[ListTaskDefinitionsResponseTypeDef](./type_defs.md#listtaskdefinitionsresponsetypedef).
 
 ### list_tasks
 
@@ -849,7 +861,7 @@ Boto3 documentation:
 [ECS.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tasks)
 
 Arguments mapping described in
-[ListTasksRequestTypeDef](./type_defs.md#listtasksrequesttypedef).
+[ListTasksRequestRequestTypeDef](./type_defs.md#listtasksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -863,8 +875,7 @@ Keyword-only arguments:
 - `desiredStatus`: [DesiredStatusType](./literals.md#desiredstatustype)
 - `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
 
-Returns
-[ListTasksResponseResponseTypeDef](./type_defs.md#listtasksresponseresponsetypedef).
+Returns [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef).
 
 ### put_account_setting
 
@@ -876,7 +887,7 @@ Boto3 documentation:
 [ECS.Client.put_account_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting)
 
 Arguments mapping described in
-[PutAccountSettingRequestTypeDef](./type_defs.md#putaccountsettingrequesttypedef).
+[PutAccountSettingRequestRequestTypeDef](./type_defs.md#putaccountsettingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -885,7 +896,7 @@ Keyword-only arguments:
 - `principalArn`: `str`
 
 Returns
-[PutAccountSettingResponseResponseTypeDef](./type_defs.md#putaccountsettingresponseresponsetypedef).
+[PutAccountSettingResponseTypeDef](./type_defs.md#putaccountsettingresponsetypedef).
 
 ### put_account_setting_default
 
@@ -898,7 +909,7 @@ Boto3 documentation:
 [ECS.Client.put_account_setting_default](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting_default)
 
 Arguments mapping described in
-[PutAccountSettingDefaultRequestTypeDef](./type_defs.md#putaccountsettingdefaultrequesttypedef).
+[PutAccountSettingDefaultRequestRequestTypeDef](./type_defs.md#putaccountsettingdefaultrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -906,7 +917,7 @@ Keyword-only arguments:
 - `value`: `str` *(required)*
 
 Returns
-[PutAccountSettingDefaultResponseResponseTypeDef](./type_defs.md#putaccountsettingdefaultresponseresponsetypedef).
+[PutAccountSettingDefaultResponseTypeDef](./type_defs.md#putaccountsettingdefaultresponsetypedef).
 
 ### put_attributes
 
@@ -918,7 +929,7 @@ Boto3 documentation:
 [ECS.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_attributes)
 
 Arguments mapping described in
-[PutAttributesRequestTypeDef](./type_defs.md#putattributesrequesttypedef).
+[PutAttributesRequestRequestTypeDef](./type_defs.md#putattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -927,7 +938,7 @@ Keyword-only arguments:
 - `cluster`: `str`
 
 Returns
-[PutAttributesResponseResponseTypeDef](./type_defs.md#putattributesresponseresponsetypedef).
+[PutAttributesResponseTypeDef](./type_defs.md#putattributesresponsetypedef).
 
 ### put_cluster_capacity_providers
 
@@ -941,7 +952,7 @@ Boto3 documentation:
 [ECS.Client.put_cluster_capacity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_cluster_capacity_providers)
 
 Arguments mapping described in
-[PutClusterCapacityProvidersRequestTypeDef](./type_defs.md#putclustercapacityprovidersrequesttypedef).
+[PutClusterCapacityProvidersRequestRequestTypeDef](./type_defs.md#putclustercapacityprovidersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -952,7 +963,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutClusterCapacityProvidersResponseResponseTypeDef](./type_defs.md#putclustercapacityprovidersresponseresponsetypedef).
+[PutClusterCapacityProvidersResponseTypeDef](./type_defs.md#putclustercapacityprovidersresponsetypedef).
 
 ### register_container_instance
 
@@ -964,7 +975,7 @@ Boto3 documentation:
 [ECS.Client.register_container_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_container_instance)
 
 Arguments mapping described in
-[RegisterContainerInstanceRequestTypeDef](./type_defs.md#registercontainerinstancerequesttypedef).
+[RegisterContainerInstanceRequestRequestTypeDef](./type_defs.md#registercontainerinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -980,7 +991,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[RegisterContainerInstanceResponseResponseTypeDef](./type_defs.md#registercontainerinstanceresponseresponsetypedef).
+[RegisterContainerInstanceResponseTypeDef](./type_defs.md#registercontainerinstanceresponsetypedef).
 
 ### register_task_definition
 
@@ -993,7 +1004,7 @@ Boto3 documentation:
 [ECS.Client.register_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_task_definition)
 
 Arguments mapping described in
-[RegisterTaskDefinitionRequestTypeDef](./type_defs.md#registertaskdefinitionrequesttypedef).
+[RegisterTaskDefinitionRequestRequestTypeDef](./type_defs.md#registertaskdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1022,7 +1033,7 @@ Keyword-only arguments:
   [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 
 Returns
-[RegisterTaskDefinitionResponseResponseTypeDef](./type_defs.md#registertaskdefinitionresponseresponsetypedef).
+[RegisterTaskDefinitionResponseTypeDef](./type_defs.md#registertaskdefinitionresponsetypedef).
 
 ### run_task
 
@@ -1034,7 +1045,7 @@ Boto3 documentation:
 [ECS.Client.run_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.run_task)
 
 Arguments mapping described in
-[RunTaskRequestTypeDef](./type_defs.md#runtaskrequesttypedef).
+[RunTaskRequestRequestTypeDef](./type_defs.md#runtaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1060,8 +1071,7 @@ Keyword-only arguments:
 - `startedBy`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[RunTaskResponseResponseTypeDef](./type_defs.md#runtaskresponseresponsetypedef).
+Returns [RunTaskResponseTypeDef](./type_defs.md#runtaskresponsetypedef).
 
 ### start_task
 
@@ -1074,7 +1084,7 @@ Boto3 documentation:
 [ECS.Client.start_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.start_task)
 
 Arguments mapping described in
-[StartTaskRequestTypeDef](./type_defs.md#starttaskrequesttypedef).
+[StartTaskRequestRequestTypeDef](./type_defs.md#starttaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1092,8 +1102,7 @@ Keyword-only arguments:
 - `startedBy`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[StartTaskResponseResponseTypeDef](./type_defs.md#starttaskresponseresponsetypedef).
+Returns [StartTaskResponseTypeDef](./type_defs.md#starttaskresponsetypedef).
 
 ### stop_task
 
@@ -1105,7 +1114,7 @@ Boto3 documentation:
 [ECS.Client.stop_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.stop_task)
 
 Arguments mapping described in
-[StopTaskRequestTypeDef](./type_defs.md#stoptaskrequesttypedef).
+[StopTaskRequestRequestTypeDef](./type_defs.md#stoptaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1113,8 +1122,7 @@ Keyword-only arguments:
 - `cluster`: `str`
 - `reason`: `str`
 
-Returns
-[StopTaskResponseResponseTypeDef](./type_defs.md#stoptaskresponseresponsetypedef).
+Returns [StopTaskResponseTypeDef](./type_defs.md#stoptaskresponsetypedef).
 
 ### submit_attachment_state_changes
 
@@ -1127,7 +1135,7 @@ Boto3 documentation:
 [ECS.Client.submit_attachment_state_changes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_attachment_state_changes)
 
 Arguments mapping described in
-[SubmitAttachmentStateChangesRequestTypeDef](./type_defs.md#submitattachmentstatechangesrequesttypedef).
+[SubmitAttachmentStateChangesRequestRequestTypeDef](./type_defs.md#submitattachmentstatechangesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1137,7 +1145,7 @@ Keyword-only arguments:
 - `cluster`: `str`
 
 Returns
-[SubmitAttachmentStateChangesResponseResponseTypeDef](./type_defs.md#submitattachmentstatechangesresponseresponsetypedef).
+[SubmitAttachmentStateChangesResponseTypeDef](./type_defs.md#submitattachmentstatechangesresponsetypedef).
 
 ### submit_container_state_change
 
@@ -1150,7 +1158,7 @@ Boto3 documentation:
 [ECS.Client.submit_container_state_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_container_state_change)
 
 Arguments mapping described in
-[SubmitContainerStateChangeRequestTypeDef](./type_defs.md#submitcontainerstatechangerequesttypedef).
+[SubmitContainerStateChangeRequestRequestTypeDef](./type_defs.md#submitcontainerstatechangerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1165,7 +1173,7 @@ Keyword-only arguments:
   `List`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
 
 Returns
-[SubmitContainerStateChangeResponseResponseTypeDef](./type_defs.md#submitcontainerstatechangeresponseresponsetypedef).
+[SubmitContainerStateChangeResponseTypeDef](./type_defs.md#submitcontainerstatechangeresponsetypedef).
 
 ### submit_task_state_change
 
@@ -1177,7 +1185,7 @@ Boto3 documentation:
 [ECS.Client.submit_task_state_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_task_state_change)
 
 Arguments mapping described in
-[SubmitTaskStateChangeRequestTypeDef](./type_defs.md#submittaskstatechangerequesttypedef).
+[SubmitTaskStateChangeRequestRequestTypeDef](./type_defs.md#submittaskstatechangerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1196,7 +1204,7 @@ Keyword-only arguments:
 - `executionStoppedAt`: `Union`\[`datetime`, `str`\]
 
 Returns
-[SubmitTaskStateChangeResponseResponseTypeDef](./type_defs.md#submittaskstatechangeresponseresponsetypedef).
+[SubmitTaskStateChangeResponseTypeDef](./type_defs.md#submittaskstatechangeresponsetypedef).
 
 ### tag_resource
 
@@ -1208,7 +1216,7 @@ Boto3 documentation:
 [ECS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1227,7 +1235,7 @@ Boto3 documentation:
 [ECS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1246,7 +1254,7 @@ Boto3 documentation:
 [ECS.Client.update_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_capacity_provider)
 
 Arguments mapping described in
-[UpdateCapacityProviderRequestTypeDef](./type_defs.md#updatecapacityproviderrequesttypedef).
+[UpdateCapacityProviderRequestRequestTypeDef](./type_defs.md#updatecapacityproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1256,7 +1264,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateCapacityProviderResponseResponseTypeDef](./type_defs.md#updatecapacityproviderresponseresponsetypedef).
+[UpdateCapacityProviderResponseTypeDef](./type_defs.md#updatecapacityproviderresponsetypedef).
 
 ### update_cluster
 
@@ -1268,7 +1276,7 @@ Boto3 documentation:
 [ECS.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster)
 
 Arguments mapping described in
-[UpdateClusterRequestTypeDef](./type_defs.md#updateclusterrequesttypedef).
+[UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1279,7 +1287,7 @@ Keyword-only arguments:
   [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
 
 Returns
-[UpdateClusterResponseResponseTypeDef](./type_defs.md#updateclusterresponseresponsetypedef).
+[UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef).
 
 ### update_cluster_settings
 
@@ -1291,7 +1299,7 @@ Boto3 documentation:
 [ECS.Client.update_cluster_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster_settings)
 
 Arguments mapping described in
-[UpdateClusterSettingsRequestTypeDef](./type_defs.md#updateclustersettingsrequesttypedef).
+[UpdateClusterSettingsRequestRequestTypeDef](./type_defs.md#updateclustersettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1301,7 +1309,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateClusterSettingsResponseResponseTypeDef](./type_defs.md#updateclustersettingsresponseresponsetypedef).
+[UpdateClusterSettingsResponseTypeDef](./type_defs.md#updateclustersettingsresponsetypedef).
 
 ### update_container_agent
 
@@ -1313,7 +1321,7 @@ Boto3 documentation:
 [ECS.Client.update_container_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_agent)
 
 Arguments mapping described in
-[UpdateContainerAgentRequestTypeDef](./type_defs.md#updatecontaineragentrequesttypedef).
+[UpdateContainerAgentRequestRequestTypeDef](./type_defs.md#updatecontaineragentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1321,7 +1329,7 @@ Keyword-only arguments:
 - `cluster`: `str`
 
 Returns
-[UpdateContainerAgentResponseResponseTypeDef](./type_defs.md#updatecontaineragentresponseresponsetypedef).
+[UpdateContainerAgentResponseTypeDef](./type_defs.md#updatecontaineragentresponsetypedef).
 
 ### update_container_instances_state
 
@@ -1334,7 +1342,7 @@ Boto3 documentation:
 [ECS.Client.update_container_instances_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_instances_state)
 
 Arguments mapping described in
-[UpdateContainerInstancesStateRequestTypeDef](./type_defs.md#updatecontainerinstancesstaterequesttypedef).
+[UpdateContainerInstancesStateRequestRequestTypeDef](./type_defs.md#updatecontainerinstancesstaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1345,7 +1353,7 @@ Keyword-only arguments:
 - `cluster`: `str`
 
 Returns
-[UpdateContainerInstancesStateResponseResponseTypeDef](./type_defs.md#updatecontainerinstancesstateresponseresponsetypedef).
+[UpdateContainerInstancesStateResponseTypeDef](./type_defs.md#updatecontainerinstancesstateresponsetypedef).
 
 ### update_service
 
@@ -1357,7 +1365,7 @@ Boto3 documentation:
 [ECS.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service)
 
 Arguments mapping described in
-[UpdateServiceRequestTypeDef](./type_defs.md#updateservicerequesttypedef).
+[UpdateServiceRequestRequestTypeDef](./type_defs.md#updateservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1381,7 +1389,7 @@ Keyword-only arguments:
 - `enableExecuteCommand`: `bool`
 
 Returns
-[UpdateServiceResponseResponseTypeDef](./type_defs.md#updateserviceresponseresponsetypedef).
+[UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef).
 
 ### update_service_primary_task_set
 
@@ -1394,7 +1402,7 @@ Boto3 documentation:
 [ECS.Client.update_service_primary_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service_primary_task_set)
 
 Arguments mapping described in
-[UpdateServicePrimaryTaskSetRequestTypeDef](./type_defs.md#updateserviceprimarytasksetrequesttypedef).
+[UpdateServicePrimaryTaskSetRequestRequestTypeDef](./type_defs.md#updateserviceprimarytasksetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1403,7 +1411,7 @@ Keyword-only arguments:
 - `primaryTaskSet`: `str` *(required)*
 
 Returns
-[UpdateServicePrimaryTaskSetResponseResponseTypeDef](./type_defs.md#updateserviceprimarytasksetresponseresponsetypedef).
+[UpdateServicePrimaryTaskSetResponseTypeDef](./type_defs.md#updateserviceprimarytasksetresponsetypedef).
 
 ### update_task_set
 
@@ -1415,7 +1423,7 @@ Boto3 documentation:
 [ECS.Client.update_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_task_set)
 
 Arguments mapping described in
-[UpdateTaskSetRequestTypeDef](./type_defs.md#updatetasksetrequesttypedef).
+[UpdateTaskSetRequestRequestTypeDef](./type_defs.md#updatetasksetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1425,7 +1433,7 @@ Keyword-only arguments:
 - `scale`: [ScaleTypeDef](./type_defs.md#scaletypedef) *(required)*
 
 Returns
-[UpdateTaskSetResponseResponseTypeDef](./type_defs.md#updatetasksetresponseresponsetypedef).
+[UpdateTaskSetResponseTypeDef](./type_defs.md#updatetasksetresponsetypedef).
 
 ### get_paginator
 

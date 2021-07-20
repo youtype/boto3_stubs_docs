@@ -39,4 +39,4 @@ Arguments for `ListProfileTimesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProfileTimesPaginator.paginate` returns
-`Iterator`\[[ListProfileTimesResponseResponseTypeDef](./type_defs.md#listprofiletimesresponseresponsetypedef)\].
+`Iterator`\[[ListProfileTimesResponseTypeDef](./type_defs.md#listprofiletimesresponsetypedef)\].

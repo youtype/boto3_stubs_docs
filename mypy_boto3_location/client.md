@@ -11,6 +11,7 @@ type annotations stubs module
   - [LocationServiceClient](#locationserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_tracker_consumer](#associate_tracker_consumer)
     - [batch_delete_device_position_history](#batch_delete_device_position_history)
     - [batch_delete_geofence](#batch_delete_geofence)
@@ -100,6 +101,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+LocationServiceClient exceptions.
+
+Type annotations for `boto3.client("location").exceptions` method.
+
+Boto3 documentation:
+[LocationService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_tracker_consumer
 
 Creates an association between a geofence collection and a tracker resource.
@@ -111,7 +123,7 @@ Boto3 documentation:
 [LocationService.Client.associate_tracker_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.associate_tracker_consumer)
 
 Arguments mapping described in
-[AssociateTrackerConsumerRequestTypeDef](./type_defs.md#associatetrackerconsumerrequesttypedef).
+[AssociateTrackerConsumerRequestRequestTypeDef](./type_defs.md#associatetrackerconsumerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -131,7 +143,7 @@ Boto3 documentation:
 [LocationService.Client.batch_delete_device_position_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_delete_device_position_history)
 
 Arguments mapping described in
-[BatchDeleteDevicePositionHistoryRequestTypeDef](./type_defs.md#batchdeletedevicepositionhistoryrequesttypedef).
+[BatchDeleteDevicePositionHistoryRequestRequestTypeDef](./type_defs.md#batchdeletedevicepositionhistoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -139,7 +151,7 @@ Keyword-only arguments:
 - `TrackerName`: `str` *(required)*
 
 Returns
-[BatchDeleteDevicePositionHistoryResponseResponseTypeDef](./type_defs.md#batchdeletedevicepositionhistoryresponseresponsetypedef).
+[BatchDeleteDevicePositionHistoryResponseTypeDef](./type_defs.md#batchdeletedevicepositionhistoryresponsetypedef).
 
 ### batch_delete_geofence
 
@@ -151,7 +163,7 @@ Boto3 documentation:
 [LocationService.Client.batch_delete_geofence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_delete_geofence)
 
 Arguments mapping described in
-[BatchDeleteGeofenceRequestTypeDef](./type_defs.md#batchdeletegeofencerequesttypedef).
+[BatchDeleteGeofenceRequestRequestTypeDef](./type_defs.md#batchdeletegeofencerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -159,7 +171,7 @@ Keyword-only arguments:
 - `GeofenceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[BatchDeleteGeofenceResponseResponseTypeDef](./type_defs.md#batchdeletegeofenceresponseresponsetypedef).
+[BatchDeleteGeofenceResponseTypeDef](./type_defs.md#batchdeletegeofenceresponsetypedef).
 
 ### batch_evaluate_geofences
 
@@ -173,7 +185,7 @@ Boto3 documentation:
 [LocationService.Client.batch_evaluate_geofences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_evaluate_geofences)
 
 Arguments mapping described in
-[BatchEvaluateGeofencesRequestTypeDef](./type_defs.md#batchevaluategeofencesrequesttypedef).
+[BatchEvaluateGeofencesRequestRequestTypeDef](./type_defs.md#batchevaluategeofencesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -183,7 +195,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchEvaluateGeofencesResponseResponseTypeDef](./type_defs.md#batchevaluategeofencesresponseresponsetypedef).
+[BatchEvaluateGeofencesResponseTypeDef](./type_defs.md#batchevaluategeofencesresponsetypedef).
 
 ### batch_get_device_position
 
@@ -196,7 +208,7 @@ Boto3 documentation:
 [LocationService.Client.batch_get_device_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_get_device_position)
 
 Arguments mapping described in
-[BatchGetDevicePositionRequestTypeDef](./type_defs.md#batchgetdevicepositionrequesttypedef).
+[BatchGetDevicePositionRequestRequestTypeDef](./type_defs.md#batchgetdevicepositionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -204,7 +216,7 @@ Keyword-only arguments:
 - `TrackerName`: `str` *(required)*
 
 Returns
-[BatchGetDevicePositionResponseResponseTypeDef](./type_defs.md#batchgetdevicepositionresponseresponsetypedef).
+[BatchGetDevicePositionResponseTypeDef](./type_defs.md#batchgetdevicepositionresponsetypedef).
 
 ### batch_put_geofence
 
@@ -218,7 +230,7 @@ Boto3 documentation:
 [LocationService.Client.batch_put_geofence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_put_geofence)
 
 Arguments mapping described in
-[BatchPutGeofenceRequestTypeDef](./type_defs.md#batchputgeofencerequesttypedef).
+[BatchPutGeofenceRequestRequestTypeDef](./type_defs.md#batchputgeofencerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -228,7 +240,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchPutGeofenceResponseResponseTypeDef](./type_defs.md#batchputgeofenceresponseresponsetypedef).
+[BatchPutGeofenceResponseTypeDef](./type_defs.md#batchputgeofenceresponsetypedef).
 
 ### batch_update_device_position
 
@@ -241,7 +253,7 @@ Boto3 documentation:
 [LocationService.Client.batch_update_device_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.batch_update_device_position)
 
 Arguments mapping described in
-[BatchUpdateDevicePositionRequestTypeDef](./type_defs.md#batchupdatedevicepositionrequesttypedef).
+[BatchUpdateDevicePositionRequestRequestTypeDef](./type_defs.md#batchupdatedevicepositionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -251,7 +263,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchUpdateDevicePositionResponseResponseTypeDef](./type_defs.md#batchupdatedevicepositionresponseresponsetypedef).
+[BatchUpdateDevicePositionResponseTypeDef](./type_defs.md#batchupdatedevicepositionresponsetypedef).
 
 ### calculate_route
 
@@ -265,7 +277,7 @@ Boto3 documentation:
 [LocationService.Client.calculate_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.calculate_route)
 
 Arguments mapping described in
-[CalculateRouteRequestTypeDef](./type_defs.md#calculaterouterequesttypedef).
+[CalculateRouteRequestRequestTypeDef](./type_defs.md#calculaterouterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -284,7 +296,7 @@ Keyword-only arguments:
 - `WaypointPositions`: `List`\[`List`\[`float`\]\]
 
 Returns
-[CalculateRouteResponseResponseTypeDef](./type_defs.md#calculaterouteresponseresponsetypedef).
+[CalculateRouteResponseTypeDef](./type_defs.md#calculaterouteresponsetypedef).
 
 ### can_paginate
 
@@ -312,7 +324,7 @@ Boto3 documentation:
 [LocationService.Client.create_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_geofence_collection)
 
 Arguments mapping described in
-[CreateGeofenceCollectionRequestTypeDef](./type_defs.md#creategeofencecollectionrequesttypedef).
+[CreateGeofenceCollectionRequestRequestTypeDef](./type_defs.md#creategeofencecollectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -324,7 +336,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateGeofenceCollectionResponseResponseTypeDef](./type_defs.md#creategeofencecollectionresponseresponsetypedef).
+[CreateGeofenceCollectionResponseTypeDef](./type_defs.md#creategeofencecollectionresponsetypedef).
 
 ### create_map
 
@@ -337,7 +349,7 @@ Boto3 documentation:
 [LocationService.Client.create_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_map)
 
 Arguments mapping described in
-[CreateMapRequestTypeDef](./type_defs.md#createmaprequesttypedef).
+[CreateMapRequestRequestTypeDef](./type_defs.md#createmaprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -349,8 +361,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-Returns
-[CreateMapResponseResponseTypeDef](./type_defs.md#createmapresponseresponsetypedef).
+Returns [CreateMapResponseTypeDef](./type_defs.md#createmapresponsetypedef).
 
 ### create_place_index
 
@@ -363,7 +374,7 @@ Boto3 documentation:
 [LocationService.Client.create_place_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_place_index)
 
 Arguments mapping described in
-[CreatePlaceIndexRequestTypeDef](./type_defs.md#createplaceindexrequesttypedef).
+[CreatePlaceIndexRequestRequestTypeDef](./type_defs.md#createplaceindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -376,7 +387,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreatePlaceIndexResponseResponseTypeDef](./type_defs.md#createplaceindexresponseresponsetypedef).
+[CreatePlaceIndexResponseTypeDef](./type_defs.md#createplaceindexresponsetypedef).
 
 ### create_route_calculator
 
@@ -388,7 +399,7 @@ Boto3 documentation:
 [LocationService.Client.create_route_calculator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_route_calculator)
 
 Arguments mapping described in
-[CreateRouteCalculatorRequestTypeDef](./type_defs.md#createroutecalculatorrequesttypedef).
+[CreateRouteCalculatorRequestRequestTypeDef](./type_defs.md#createroutecalculatorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -399,7 +410,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateRouteCalculatorResponseResponseTypeDef](./type_defs.md#createroutecalculatorresponseresponsetypedef).
+[CreateRouteCalculatorResponseTypeDef](./type_defs.md#createroutecalculatorresponsetypedef).
 
 ### create_tracker
 
@@ -412,7 +423,7 @@ Boto3 documentation:
 [LocationService.Client.create_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.create_tracker)
 
 Arguments mapping described in
-[CreateTrackerRequestTypeDef](./type_defs.md#createtrackerrequesttypedef).
+[CreateTrackerRequestRequestTypeDef](./type_defs.md#createtrackerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -424,7 +435,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateTrackerResponseResponseTypeDef](./type_defs.md#createtrackerresponseresponsetypedef).
+[CreateTrackerResponseTypeDef](./type_defs.md#createtrackerresponsetypedef).
 
 ### delete_geofence_collection
 
@@ -437,7 +448,7 @@ Boto3 documentation:
 [LocationService.Client.delete_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_geofence_collection)
 
 Arguments mapping described in
-[DeleteGeofenceCollectionRequestTypeDef](./type_defs.md#deletegeofencecollectionrequesttypedef).
+[DeleteGeofenceCollectionRequestRequestTypeDef](./type_defs.md#deletegeofencecollectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -455,7 +466,7 @@ Boto3 documentation:
 [LocationService.Client.delete_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_map)
 
 Arguments mapping described in
-[DeleteMapRequestTypeDef](./type_defs.md#deletemaprequesttypedef).
+[DeleteMapRequestRequestTypeDef](./type_defs.md#deletemaprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -473,7 +484,7 @@ Boto3 documentation:
 [LocationService.Client.delete_place_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_place_index)
 
 Arguments mapping described in
-[DeletePlaceIndexRequestTypeDef](./type_defs.md#deleteplaceindexrequesttypedef).
+[DeletePlaceIndexRequestRequestTypeDef](./type_defs.md#deleteplaceindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -491,7 +502,7 @@ Boto3 documentation:
 [LocationService.Client.delete_route_calculator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_route_calculator)
 
 Arguments mapping described in
-[DeleteRouteCalculatorRequestTypeDef](./type_defs.md#deleteroutecalculatorrequesttypedef).
+[DeleteRouteCalculatorRequestRequestTypeDef](./type_defs.md#deleteroutecalculatorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -509,7 +520,7 @@ Boto3 documentation:
 [LocationService.Client.delete_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.delete_tracker)
 
 Arguments mapping described in
-[DeleteTrackerRequestTypeDef](./type_defs.md#deletetrackerrequesttypedef).
+[DeleteTrackerRequestRequestTypeDef](./type_defs.md#deletetrackerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -528,14 +539,14 @@ Boto3 documentation:
 [LocationService.Client.describe_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_geofence_collection)
 
 Arguments mapping described in
-[DescribeGeofenceCollectionRequestTypeDef](./type_defs.md#describegeofencecollectionrequesttypedef).
+[DescribeGeofenceCollectionRequestRequestTypeDef](./type_defs.md#describegeofencecollectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CollectionName`: `str` *(required)*
 
 Returns
-[DescribeGeofenceCollectionResponseResponseTypeDef](./type_defs.md#describegeofencecollectionresponseresponsetypedef).
+[DescribeGeofenceCollectionResponseTypeDef](./type_defs.md#describegeofencecollectionresponsetypedef).
 
 ### describe_map
 
@@ -547,14 +558,14 @@ Boto3 documentation:
 [LocationService.Client.describe_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_map)
 
 Arguments mapping described in
-[DescribeMapRequestTypeDef](./type_defs.md#describemaprequesttypedef).
+[DescribeMapRequestRequestTypeDef](./type_defs.md#describemaprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MapName`: `str` *(required)*
 
 Returns
-[DescribeMapResponseResponseTypeDef](./type_defs.md#describemapresponseresponsetypedef).
+[DescribeMapResponseTypeDef](./type_defs.md#describemapresponsetypedef).
 
 ### describe_place_index
 
@@ -566,14 +577,14 @@ Boto3 documentation:
 [LocationService.Client.describe_place_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_place_index)
 
 Arguments mapping described in
-[DescribePlaceIndexRequestTypeDef](./type_defs.md#describeplaceindexrequesttypedef).
+[DescribePlaceIndexRequestRequestTypeDef](./type_defs.md#describeplaceindexrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `IndexName`: `str` *(required)*
 
 Returns
-[DescribePlaceIndexResponseResponseTypeDef](./type_defs.md#describeplaceindexresponseresponsetypedef).
+[DescribePlaceIndexResponseTypeDef](./type_defs.md#describeplaceindexresponsetypedef).
 
 ### describe_route_calculator
 
@@ -586,14 +597,14 @@ Boto3 documentation:
 [LocationService.Client.describe_route_calculator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_route_calculator)
 
 Arguments mapping described in
-[DescribeRouteCalculatorRequestTypeDef](./type_defs.md#describeroutecalculatorrequesttypedef).
+[DescribeRouteCalculatorRequestRequestTypeDef](./type_defs.md#describeroutecalculatorrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CalculatorName`: `str` *(required)*
 
 Returns
-[DescribeRouteCalculatorResponseResponseTypeDef](./type_defs.md#describeroutecalculatorresponseresponsetypedef).
+[DescribeRouteCalculatorResponseTypeDef](./type_defs.md#describeroutecalculatorresponsetypedef).
 
 ### describe_tracker
 
@@ -605,14 +616,14 @@ Boto3 documentation:
 [LocationService.Client.describe_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.describe_tracker)
 
 Arguments mapping described in
-[DescribeTrackerRequestTypeDef](./type_defs.md#describetrackerrequesttypedef).
+[DescribeTrackerRequestRequestTypeDef](./type_defs.md#describetrackerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TrackerName`: `str` *(required)*
 
 Returns
-[DescribeTrackerResponseResponseTypeDef](./type_defs.md#describetrackerresponseresponsetypedef).
+[DescribeTrackerResponseTypeDef](./type_defs.md#describetrackerresponsetypedef).
 
 ### disassociate_tracker_consumer
 
@@ -625,7 +636,7 @@ Boto3 documentation:
 [LocationService.Client.disassociate_tracker_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.disassociate_tracker_consumer)
 
 Arguments mapping described in
-[DisassociateTrackerConsumerRequestTypeDef](./type_defs.md#disassociatetrackerconsumerrequesttypedef).
+[DisassociateTrackerConsumerRequestRequestTypeDef](./type_defs.md#disassociatetrackerconsumerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -662,7 +673,7 @@ Boto3 documentation:
 [LocationService.Client.get_device_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_device_position)
 
 Arguments mapping described in
-[GetDevicePositionRequestTypeDef](./type_defs.md#getdevicepositionrequesttypedef).
+[GetDevicePositionRequestRequestTypeDef](./type_defs.md#getdevicepositionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -670,7 +681,7 @@ Keyword-only arguments:
 - `TrackerName`: `str` *(required)*
 
 Returns
-[GetDevicePositionResponseResponseTypeDef](./type_defs.md#getdevicepositionresponseresponsetypedef).
+[GetDevicePositionResponseTypeDef](./type_defs.md#getdevicepositionresponsetypedef).
 
 ### get_device_position_history
 
@@ -684,7 +695,7 @@ Boto3 documentation:
 [LocationService.Client.get_device_position_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_device_position_history)
 
 Arguments mapping described in
-[GetDevicePositionHistoryRequestTypeDef](./type_defs.md#getdevicepositionhistoryrequesttypedef).
+[GetDevicePositionHistoryRequestRequestTypeDef](./type_defs.md#getdevicepositionhistoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -695,7 +706,7 @@ Keyword-only arguments:
 - `StartTimeInclusive`: `Union`\[`datetime`, `str`\]
 
 Returns
-[GetDevicePositionHistoryResponseResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponseresponsetypedef).
+[GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef).
 
 ### get_geofence
 
@@ -707,7 +718,7 @@ Boto3 documentation:
 [LocationService.Client.get_geofence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_geofence)
 
 Arguments mapping described in
-[GetGeofenceRequestTypeDef](./type_defs.md#getgeofencerequesttypedef).
+[GetGeofenceRequestRequestTypeDef](./type_defs.md#getgeofencerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -715,7 +726,7 @@ Keyword-only arguments:
 - `GeofenceId`: `str` *(required)*
 
 Returns
-[GetGeofenceResponseResponseTypeDef](./type_defs.md#getgeofenceresponseresponsetypedef).
+[GetGeofenceResponseTypeDef](./type_defs.md#getgeofenceresponsetypedef).
 
 ### get_map_glyphs
 
@@ -727,7 +738,7 @@ Boto3 documentation:
 [LocationService.Client.get_map_glyphs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_glyphs)
 
 Arguments mapping described in
-[GetMapGlyphsRequestTypeDef](./type_defs.md#getmapglyphsrequesttypedef).
+[GetMapGlyphsRequestRequestTypeDef](./type_defs.md#getmapglyphsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -736,7 +747,7 @@ Keyword-only arguments:
 - `MapName`: `str` *(required)*
 
 Returns
-[GetMapGlyphsResponseResponseTypeDef](./type_defs.md#getmapglyphsresponseresponsetypedef).
+[GetMapGlyphsResponseTypeDef](./type_defs.md#getmapglyphsresponsetypedef).
 
 ### get_map_sprites
 
@@ -748,7 +759,7 @@ Boto3 documentation:
 [LocationService.Client.get_map_sprites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_sprites)
 
 Arguments mapping described in
-[GetMapSpritesRequestTypeDef](./type_defs.md#getmapspritesrequesttypedef).
+[GetMapSpritesRequestRequestTypeDef](./type_defs.md#getmapspritesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -756,7 +767,7 @@ Keyword-only arguments:
 - `MapName`: `str` *(required)*
 
 Returns
-[GetMapSpritesResponseResponseTypeDef](./type_defs.md#getmapspritesresponseresponsetypedef).
+[GetMapSpritesResponseTypeDef](./type_defs.md#getmapspritesresponsetypedef).
 
 ### get_map_style_descriptor
 
@@ -769,14 +780,14 @@ Boto3 documentation:
 [LocationService.Client.get_map_style_descriptor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_style_descriptor)
 
 Arguments mapping described in
-[GetMapStyleDescriptorRequestTypeDef](./type_defs.md#getmapstyledescriptorrequesttypedef).
+[GetMapStyleDescriptorRequestRequestTypeDef](./type_defs.md#getmapstyledescriptorrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MapName`: `str` *(required)*
 
 Returns
-[GetMapStyleDescriptorResponseResponseTypeDef](./type_defs.md#getmapstyledescriptorresponseresponsetypedef).
+[GetMapStyleDescriptorResponseTypeDef](./type_defs.md#getmapstyledescriptorresponsetypedef).
 
 ### get_map_tile
 
@@ -788,7 +799,7 @@ Boto3 documentation:
 [LocationService.Client.get_map_tile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.get_map_tile)
 
 Arguments mapping described in
-[GetMapTileRequestTypeDef](./type_defs.md#getmaptilerequesttypedef).
+[GetMapTileRequestRequestTypeDef](./type_defs.md#getmaptilerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -797,8 +808,7 @@ Keyword-only arguments:
 - `Y`: `str` *(required)*
 - `Z`: `str` *(required)*
 
-Returns
-[GetMapTileResponseResponseTypeDef](./type_defs.md#getmaptileresponseresponsetypedef).
+Returns [GetMapTileResponseTypeDef](./type_defs.md#getmaptileresponsetypedef).
 
 ### list_device_positions
 
@@ -810,7 +820,7 @@ Boto3 documentation:
 [LocationService.Client.list_device_positions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_device_positions)
 
 Arguments mapping described in
-[ListDevicePositionsRequestTypeDef](./type_defs.md#listdevicepositionsrequesttypedef).
+[ListDevicePositionsRequestRequestTypeDef](./type_defs.md#listdevicepositionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -819,7 +829,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDevicePositionsResponseResponseTypeDef](./type_defs.md#listdevicepositionsresponseresponsetypedef).
+[ListDevicePositionsResponseTypeDef](./type_defs.md#listdevicepositionsresponsetypedef).
 
 ### list_geofence_collections
 
@@ -832,7 +842,7 @@ Boto3 documentation:
 [LocationService.Client.list_geofence_collections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_geofence_collections)
 
 Arguments mapping described in
-[ListGeofenceCollectionsRequestTypeDef](./type_defs.md#listgeofencecollectionsrequesttypedef).
+[ListGeofenceCollectionsRequestRequestTypeDef](./type_defs.md#listgeofencecollectionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -840,7 +850,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListGeofenceCollectionsResponseResponseTypeDef](./type_defs.md#listgeofencecollectionsresponseresponsetypedef).
+[ListGeofenceCollectionsResponseTypeDef](./type_defs.md#listgeofencecollectionsresponsetypedef).
 
 ### list_geofences
 
@@ -852,7 +862,7 @@ Boto3 documentation:
 [LocationService.Client.list_geofences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_geofences)
 
 Arguments mapping described in
-[ListGeofencesRequestTypeDef](./type_defs.md#listgeofencesrequesttypedef).
+[ListGeofencesRequestRequestTypeDef](./type_defs.md#listgeofencesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -860,7 +870,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListGeofencesResponseResponseTypeDef](./type_defs.md#listgeofencesresponseresponsetypedef).
+[ListGeofencesResponseTypeDef](./type_defs.md#listgeofencesresponsetypedef).
 
 ### list_maps
 
@@ -872,15 +882,14 @@ Boto3 documentation:
 [LocationService.Client.list_maps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_maps)
 
 Arguments mapping described in
-[ListMapsRequestTypeDef](./type_defs.md#listmapsrequesttypedef).
+[ListMapsRequestRequestTypeDef](./type_defs.md#listmapsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListMapsResponseResponseTypeDef](./type_defs.md#listmapsresponseresponsetypedef).
+Returns [ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef).
 
 ### list_place_indexes
 
@@ -892,7 +901,7 @@ Boto3 documentation:
 [LocationService.Client.list_place_indexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_place_indexes)
 
 Arguments mapping described in
-[ListPlaceIndexesRequestTypeDef](./type_defs.md#listplaceindexesrequesttypedef).
+[ListPlaceIndexesRequestRequestTypeDef](./type_defs.md#listplaceindexesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -900,7 +909,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPlaceIndexesResponseResponseTypeDef](./type_defs.md#listplaceindexesresponseresponsetypedef).
+[ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef).
 
 ### list_route_calculators
 
@@ -912,7 +921,7 @@ Boto3 documentation:
 [LocationService.Client.list_route_calculators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_route_calculators)
 
 Arguments mapping described in
-[ListRouteCalculatorsRequestTypeDef](./type_defs.md#listroutecalculatorsrequesttypedef).
+[ListRouteCalculatorsRequestRequestTypeDef](./type_defs.md#listroutecalculatorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -920,7 +929,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListRouteCalculatorsResponseResponseTypeDef](./type_defs.md#listroutecalculatorsresponseresponsetypedef).
+[ListRouteCalculatorsResponseTypeDef](./type_defs.md#listroutecalculatorsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -932,14 +941,14 @@ Boto3 documentation:
 [LocationService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_tracker_consumers
 
@@ -951,7 +960,7 @@ Boto3 documentation:
 [LocationService.Client.list_tracker_consumers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_tracker_consumers)
 
 Arguments mapping described in
-[ListTrackerConsumersRequestTypeDef](./type_defs.md#listtrackerconsumersrequesttypedef).
+[ListTrackerConsumersRequestRequestTypeDef](./type_defs.md#listtrackerconsumersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -960,7 +969,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTrackerConsumersResponseResponseTypeDef](./type_defs.md#listtrackerconsumersresponseresponsetypedef).
+[ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef).
 
 ### list_trackers
 
@@ -972,7 +981,7 @@ Boto3 documentation:
 [LocationService.Client.list_trackers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.list_trackers)
 
 Arguments mapping described in
-[ListTrackersRequestTypeDef](./type_defs.md#listtrackersrequesttypedef).
+[ListTrackersRequestRequestTypeDef](./type_defs.md#listtrackersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -980,7 +989,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTrackersResponseResponseTypeDef](./type_defs.md#listtrackersresponseresponsetypedef).
+[ListTrackersResponseTypeDef](./type_defs.md#listtrackersresponsetypedef).
 
 ### put_geofence
 
@@ -993,7 +1002,7 @@ Boto3 documentation:
 [LocationService.Client.put_geofence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.put_geofence)
 
 Arguments mapping described in
-[PutGeofenceRequestTypeDef](./type_defs.md#putgeofencerequesttypedef).
+[PutGeofenceRequestRequestTypeDef](./type_defs.md#putgeofencerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1003,7 +1012,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutGeofenceResponseResponseTypeDef](./type_defs.md#putgeofenceresponseresponsetypedef).
+[PutGeofenceResponseTypeDef](./type_defs.md#putgeofenceresponsetypedef).
 
 ### search_place_index_for_position
 
@@ -1016,7 +1025,7 @@ Boto3 documentation:
 [LocationService.Client.search_place_index_for_position](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_position)
 
 Arguments mapping described in
-[SearchPlaceIndexForPositionRequestTypeDef](./type_defs.md#searchplaceindexforpositionrequesttypedef).
+[SearchPlaceIndexForPositionRequestRequestTypeDef](./type_defs.md#searchplaceindexforpositionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1025,7 +1034,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[SearchPlaceIndexForPositionResponseResponseTypeDef](./type_defs.md#searchplaceindexforpositionresponseresponsetypedef).
+[SearchPlaceIndexForPositionResponseTypeDef](./type_defs.md#searchplaceindexforpositionresponsetypedef).
 
 ### search_place_index_for_text
 
@@ -1039,7 +1048,7 @@ Boto3 documentation:
 [LocationService.Client.search_place_index_for_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.search_place_index_for_text)
 
 Arguments mapping described in
-[SearchPlaceIndexForTextRequestTypeDef](./type_defs.md#searchplaceindexfortextrequesttypedef).
+[SearchPlaceIndexForTextRequestRequestTypeDef](./type_defs.md#searchplaceindexfortextrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1051,7 +1060,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[SearchPlaceIndexForTextResponseResponseTypeDef](./type_defs.md#searchplaceindexfortextresponseresponsetypedef).
+[SearchPlaceIndexForTextResponseTypeDef](./type_defs.md#searchplaceindexfortextresponsetypedef).
 
 ### tag_resource
 
@@ -1064,7 +1073,7 @@ Boto3 documentation:
 [LocationService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1083,7 +1092,7 @@ Boto3 documentation:
 [LocationService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

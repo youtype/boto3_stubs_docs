@@ -11,6 +11,7 @@ type annotations stubs module
   - [PersonalizeClient](#personalizeclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_batch_inference_job](#create_batch_inference_job)
     - [create_campaign](#create_campaign)
@@ -102,6 +103,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+PersonalizeClient exceptions.
+
+Type annotations for `boto3.client("personalize").exceptions` method.
+
+Boto3 documentation:
+[Personalize.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -128,7 +140,7 @@ Boto3 documentation:
 [Personalize.Client.create_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_inference_job)
 
 Arguments mapping described in
-[CreateBatchInferenceJobRequestTypeDef](./type_defs.md#createbatchinferencejobrequesttypedef).
+[CreateBatchInferenceJobRequestRequestTypeDef](./type_defs.md#createbatchinferencejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -147,7 +159,7 @@ Keyword-only arguments:
   [BatchInferenceJobConfigTypeDef](./type_defs.md#batchinferencejobconfigtypedef)
 
 Returns
-[CreateBatchInferenceJobResponseResponseTypeDef](./type_defs.md#createbatchinferencejobresponseresponsetypedef).
+[CreateBatchInferenceJobResponseTypeDef](./type_defs.md#createbatchinferencejobresponsetypedef).
 
 ### create_campaign
 
@@ -159,7 +171,7 @@ Boto3 documentation:
 [Personalize.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_campaign)
 
 Arguments mapping described in
-[CreateCampaignRequestTypeDef](./type_defs.md#createcampaignrequesttypedef).
+[CreateCampaignRequestRequestTypeDef](./type_defs.md#createcampaignrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -170,7 +182,7 @@ Keyword-only arguments:
   [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 
 Returns
-[CreateCampaignResponseResponseTypeDef](./type_defs.md#createcampaignresponseresponsetypedef).
+[CreateCampaignResponseTypeDef](./type_defs.md#createcampaignresponsetypedef).
 
 ### create_dataset
 
@@ -182,7 +194,7 @@ Boto3 documentation:
 [Personalize.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset)
 
 Arguments mapping described in
-[CreateDatasetRequestTypeDef](./type_defs.md#createdatasetrequesttypedef).
+[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -192,7 +204,7 @@ Keyword-only arguments:
 - `datasetType`: `str` *(required)*
 
 Returns
-[CreateDatasetResponseResponseTypeDef](./type_defs.md#createdatasetresponseresponsetypedef).
+[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
 ### create_dataset_export_job
 
@@ -205,7 +217,7 @@ Boto3 documentation:
 [Personalize.Client.create_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_export_job)
 
 Arguments mapping described in
-[CreateDatasetExportJobRequestTypeDef](./type_defs.md#createdatasetexportjobrequesttypedef).
+[CreateDatasetExportJobRequestRequestTypeDef](./type_defs.md#createdatasetexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,7 +230,7 @@ Keyword-only arguments:
 - `ingestionMode`: [IngestionModeType](./literals.md#ingestionmodetype)
 
 Returns
-[CreateDatasetExportJobResponseResponseTypeDef](./type_defs.md#createdatasetexportjobresponseresponsetypedef).
+[CreateDatasetExportJobResponseTypeDef](./type_defs.md#createdatasetexportjobresponsetypedef).
 
 ### create_dataset_group
 
@@ -230,7 +242,7 @@ Boto3 documentation:
 [Personalize.Client.create_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_group)
 
 Arguments mapping described in
-[CreateDatasetGroupRequestTypeDef](./type_defs.md#createdatasetgrouprequesttypedef).
+[CreateDatasetGroupRequestRequestTypeDef](./type_defs.md#createdatasetgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -239,7 +251,7 @@ Keyword-only arguments:
 - `kmsKeyArn`: `str`
 
 Returns
-[CreateDatasetGroupResponseResponseTypeDef](./type_defs.md#createdatasetgroupresponseresponsetypedef).
+[CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef).
 
 ### create_dataset_import_job
 
@@ -253,7 +265,7 @@ Boto3 documentation:
 [Personalize.Client.create_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_import_job)
 
 Arguments mapping described in
-[CreateDatasetImportJobRequestTypeDef](./type_defs.md#createdatasetimportjobrequesttypedef).
+[CreateDatasetImportJobRequestRequestTypeDef](./type_defs.md#createdatasetimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -264,7 +276,7 @@ Keyword-only arguments:
 - `roleArn`: `str` *(required)*
 
 Returns
-[CreateDatasetImportJobResponseResponseTypeDef](./type_defs.md#createdatasetimportjobresponseresponsetypedef).
+[CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef).
 
 ### create_event_tracker
 
@@ -279,7 +291,7 @@ Boto3 documentation:
 [Personalize.Client.create_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_event_tracker)
 
 Arguments mapping described in
-[CreateEventTrackerRequestTypeDef](./type_defs.md#createeventtrackerrequesttypedef).
+[CreateEventTrackerRequestRequestTypeDef](./type_defs.md#createeventtrackerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,7 +299,7 @@ Keyword-only arguments:
 - `datasetGroupArn`: `str` *(required)*
 
 Returns
-[CreateEventTrackerResponseResponseTypeDef](./type_defs.md#createeventtrackerresponseresponsetypedef).
+[CreateEventTrackerResponseTypeDef](./type_defs.md#createeventtrackerresponsetypedef).
 
 ### create_filter
 
@@ -299,7 +311,7 @@ Boto3 documentation:
 [Personalize.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_filter)
 
 Arguments mapping described in
-[CreateFilterRequestTypeDef](./type_defs.md#createfilterrequesttypedef).
+[CreateFilterRequestRequestTypeDef](./type_defs.md#createfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,7 +320,7 @@ Keyword-only arguments:
 - `filterExpression`: `str` *(required)*
 
 Returns
-[CreateFilterResponseResponseTypeDef](./type_defs.md#createfilterresponseresponsetypedef).
+[CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef).
 
 ### create_schema
 
@@ -320,7 +332,7 @@ Boto3 documentation:
 [Personalize.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_schema)
 
 Arguments mapping described in
-[CreateSchemaRequestTypeDef](./type_defs.md#createschemarequesttypedef).
+[CreateSchemaRequestRequestTypeDef](./type_defs.md#createschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -328,7 +340,7 @@ Keyword-only arguments:
 - `schema`: `str` *(required)*
 
 Returns
-[CreateSchemaResponseResponseTypeDef](./type_defs.md#createschemaresponseresponsetypedef).
+[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
 
 ### create_solution
 
@@ -340,7 +352,7 @@ Boto3 documentation:
 [Personalize.Client.create_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution)
 
 Arguments mapping described in
-[CreateSolutionRequestTypeDef](./type_defs.md#createsolutionrequesttypedef).
+[CreateSolutionRequestRequestTypeDef](./type_defs.md#createsolutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -354,7 +366,7 @@ Keyword-only arguments:
   [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
 
 Returns
-[CreateSolutionResponseResponseTypeDef](./type_defs.md#createsolutionresponseresponsetypedef).
+[CreateSolutionResponseTypeDef](./type_defs.md#createsolutionresponsetypedef).
 
 ### create_solution_version
 
@@ -367,7 +379,7 @@ Boto3 documentation:
 [Personalize.Client.create_solution_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution_version)
 
 Arguments mapping described in
-[CreateSolutionVersionRequestTypeDef](./type_defs.md#createsolutionversionrequesttypedef).
+[CreateSolutionVersionRequestRequestTypeDef](./type_defs.md#createsolutionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -375,7 +387,7 @@ Keyword-only arguments:
 - `trainingMode`: [TrainingModeType](./literals.md#trainingmodetype)
 
 Returns
-[CreateSolutionVersionResponseResponseTypeDef](./type_defs.md#createsolutionversionresponseresponsetypedef).
+[CreateSolutionVersionResponseTypeDef](./type_defs.md#createsolutionversionresponsetypedef).
 
 ### delete_campaign
 
@@ -387,7 +399,7 @@ Boto3 documentation:
 [Personalize.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_campaign)
 
 Arguments mapping described in
-[DeleteCampaignRequestTypeDef](./type_defs.md#deletecampaignrequesttypedef).
+[DeleteCampaignRequestRequestTypeDef](./type_defs.md#deletecampaignrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -403,7 +415,7 @@ Boto3 documentation:
 [Personalize.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset)
 
 Arguments mapping described in
-[DeleteDatasetRequestTypeDef](./type_defs.md#deletedatasetrequesttypedef).
+[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -419,7 +431,7 @@ Boto3 documentation:
 [Personalize.Client.delete_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset_group)
 
 Arguments mapping described in
-[DeleteDatasetGroupRequestTypeDef](./type_defs.md#deletedatasetgrouprequesttypedef).
+[DeleteDatasetGroupRequestRequestTypeDef](./type_defs.md#deletedatasetgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -435,7 +447,7 @@ Boto3 documentation:
 [Personalize.Client.delete_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_event_tracker)
 
 Arguments mapping described in
-[DeleteEventTrackerRequestTypeDef](./type_defs.md#deleteeventtrackerrequesttypedef).
+[DeleteEventTrackerRequestRequestTypeDef](./type_defs.md#deleteeventtrackerrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -451,7 +463,7 @@ Boto3 documentation:
 [Personalize.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_filter)
 
 Arguments mapping described in
-[DeleteFilterRequestTypeDef](./type_defs.md#deletefilterrequesttypedef).
+[DeleteFilterRequestRequestTypeDef](./type_defs.md#deletefilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -467,7 +479,7 @@ Boto3 documentation:
 [Personalize.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_schema)
 
 Arguments mapping described in
-[DeleteSchemaRequestTypeDef](./type_defs.md#deleteschemarequesttypedef).
+[DeleteSchemaRequestRequestTypeDef](./type_defs.md#deleteschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -483,7 +495,7 @@ Boto3 documentation:
 [Personalize.Client.delete_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_solution)
 
 Arguments mapping described in
-[DeleteSolutionRequestTypeDef](./type_defs.md#deletesolutionrequesttypedef).
+[DeleteSolutionRequestRequestTypeDef](./type_defs.md#deletesolutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -499,14 +511,14 @@ Boto3 documentation:
 [Personalize.Client.describe_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_algorithm)
 
 Arguments mapping described in
-[DescribeAlgorithmRequestTypeDef](./type_defs.md#describealgorithmrequesttypedef).
+[DescribeAlgorithmRequestRequestTypeDef](./type_defs.md#describealgorithmrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `algorithmArn`: `str` *(required)*
 
 Returns
-[DescribeAlgorithmResponseResponseTypeDef](./type_defs.md#describealgorithmresponseresponsetypedef).
+[DescribeAlgorithmResponseTypeDef](./type_defs.md#describealgorithmresponsetypedef).
 
 ### describe_batch_inference_job
 
@@ -521,14 +533,14 @@ Boto3 documentation:
 [Personalize.Client.describe_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_inference_job)
 
 Arguments mapping described in
-[DescribeBatchInferenceJobRequestTypeDef](./type_defs.md#describebatchinferencejobrequesttypedef).
+[DescribeBatchInferenceJobRequestRequestTypeDef](./type_defs.md#describebatchinferencejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `batchInferenceJobArn`: `str` *(required)*
 
 Returns
-[DescribeBatchInferenceJobResponseResponseTypeDef](./type_defs.md#describebatchinferencejobresponseresponsetypedef).
+[DescribeBatchInferenceJobResponseTypeDef](./type_defs.md#describebatchinferencejobresponsetypedef).
 
 ### describe_campaign
 
@@ -540,14 +552,14 @@ Boto3 documentation:
 [Personalize.Client.describe_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_campaign)
 
 Arguments mapping described in
-[DescribeCampaignRequestTypeDef](./type_defs.md#describecampaignrequesttypedef).
+[DescribeCampaignRequestRequestTypeDef](./type_defs.md#describecampaignrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `campaignArn`: `str` *(required)*
 
 Returns
-[DescribeCampaignResponseResponseTypeDef](./type_defs.md#describecampaignresponseresponsetypedef).
+[DescribeCampaignResponseTypeDef](./type_defs.md#describecampaignresponsetypedef).
 
 ### describe_dataset
 
@@ -559,14 +571,14 @@ Boto3 documentation:
 [Personalize.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset)
 
 Arguments mapping described in
-[DescribeDatasetRequestTypeDef](./type_defs.md#describedatasetrequesttypedef).
+[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `datasetArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetResponseResponseTypeDef](./type_defs.md#describedatasetresponseresponsetypedef).
+[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
 ### describe_dataset_export_job
 
@@ -580,14 +592,14 @@ Boto3 documentation:
 [Personalize.Client.describe_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job)
 
 Arguments mapping described in
-[DescribeDatasetExportJobRequestTypeDef](./type_defs.md#describedatasetexportjobrequesttypedef).
+[DescribeDatasetExportJobRequestRequestTypeDef](./type_defs.md#describedatasetexportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `datasetExportJobArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetExportJobResponseResponseTypeDef](./type_defs.md#describedatasetexportjobresponseresponsetypedef).
+[DescribeDatasetExportJobResponseTypeDef](./type_defs.md#describedatasetexportjobresponsetypedef).
 
 ### describe_dataset_group
 
@@ -600,14 +612,14 @@ Boto3 documentation:
 [Personalize.Client.describe_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_group)
 
 Arguments mapping described in
-[DescribeDatasetGroupRequestTypeDef](./type_defs.md#describedatasetgrouprequesttypedef).
+[DescribeDatasetGroupRequestRequestTypeDef](./type_defs.md#describedatasetgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `datasetGroupArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetGroupResponseResponseTypeDef](./type_defs.md#describedatasetgroupresponseresponsetypedef).
+[DescribeDatasetGroupResponseTypeDef](./type_defs.md#describedatasetgroupresponsetypedef).
 
 ### describe_dataset_import_job
 
@@ -621,14 +633,14 @@ Boto3 documentation:
 [Personalize.Client.describe_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job)
 
 Arguments mapping described in
-[DescribeDatasetImportJobRequestTypeDef](./type_defs.md#describedatasetimportjobrequesttypedef).
+[DescribeDatasetImportJobRequestRequestTypeDef](./type_defs.md#describedatasetimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `datasetImportJobArn`: `str` *(required)*
 
 Returns
-[DescribeDatasetImportJobResponseResponseTypeDef](./type_defs.md#describedatasetimportjobresponseresponsetypedef).
+[DescribeDatasetImportJobResponseTypeDef](./type_defs.md#describedatasetimportjobresponsetypedef).
 
 ### describe_event_tracker
 
@@ -641,14 +653,14 @@ Boto3 documentation:
 [Personalize.Client.describe_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_event_tracker)
 
 Arguments mapping described in
-[DescribeEventTrackerRequestTypeDef](./type_defs.md#describeeventtrackerrequesttypedef).
+[DescribeEventTrackerRequestRequestTypeDef](./type_defs.md#describeeventtrackerrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `eventTrackerArn`: `str` *(required)*
 
 Returns
-[DescribeEventTrackerResponseResponseTypeDef](./type_defs.md#describeeventtrackerresponseresponsetypedef).
+[DescribeEventTrackerResponseTypeDef](./type_defs.md#describeeventtrackerresponsetypedef).
 
 ### describe_feature_transformation
 
@@ -661,14 +673,14 @@ Boto3 documentation:
 [Personalize.Client.describe_feature_transformation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_feature_transformation)
 
 Arguments mapping described in
-[DescribeFeatureTransformationRequestTypeDef](./type_defs.md#describefeaturetransformationrequesttypedef).
+[DescribeFeatureTransformationRequestRequestTypeDef](./type_defs.md#describefeaturetransformationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `featureTransformationArn`: `str` *(required)*
 
 Returns
-[DescribeFeatureTransformationResponseResponseTypeDef](./type_defs.md#describefeaturetransformationresponseresponsetypedef).
+[DescribeFeatureTransformationResponseTypeDef](./type_defs.md#describefeaturetransformationresponsetypedef).
 
 ### describe_filter
 
@@ -680,14 +692,14 @@ Boto3 documentation:
 [Personalize.Client.describe_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_filter)
 
 Arguments mapping described in
-[DescribeFilterRequestTypeDef](./type_defs.md#describefilterrequesttypedef).
+[DescribeFilterRequestRequestTypeDef](./type_defs.md#describefilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `filterArn`: `str` *(required)*
 
 Returns
-[DescribeFilterResponseResponseTypeDef](./type_defs.md#describefilterresponseresponsetypedef).
+[DescribeFilterResponseTypeDef](./type_defs.md#describefilterresponsetypedef).
 
 ### describe_recipe
 
@@ -699,14 +711,14 @@ Boto3 documentation:
 [Personalize.Client.describe_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recipe)
 
 Arguments mapping described in
-[DescribeRecipeRequestTypeDef](./type_defs.md#describereciperequesttypedef).
+[DescribeRecipeRequestRequestTypeDef](./type_defs.md#describereciperequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `recipeArn`: `str` *(required)*
 
 Returns
-[DescribeRecipeResponseResponseTypeDef](./type_defs.md#describereciperesponseresponsetypedef).
+[DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef).
 
 ### describe_schema
 
@@ -718,14 +730,14 @@ Boto3 documentation:
 [Personalize.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_schema)
 
 Arguments mapping described in
-[DescribeSchemaRequestTypeDef](./type_defs.md#describeschemarequesttypedef).
+[DescribeSchemaRequestRequestTypeDef](./type_defs.md#describeschemarequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `schemaArn`: `str` *(required)*
 
 Returns
-[DescribeSchemaResponseResponseTypeDef](./type_defs.md#describeschemaresponseresponsetypedef).
+[DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef).
 
 ### describe_solution
 
@@ -737,14 +749,14 @@ Boto3 documentation:
 [Personalize.Client.describe_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution)
 
 Arguments mapping described in
-[DescribeSolutionRequestTypeDef](./type_defs.md#describesolutionrequesttypedef).
+[DescribeSolutionRequestRequestTypeDef](./type_defs.md#describesolutionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `solutionArn`: `str` *(required)*
 
 Returns
-[DescribeSolutionResponseResponseTypeDef](./type_defs.md#describesolutionresponseresponsetypedef).
+[DescribeSolutionResponseTypeDef](./type_defs.md#describesolutionresponsetypedef).
 
 ### describe_solution_version
 
@@ -757,14 +769,14 @@ Boto3 documentation:
 [Personalize.Client.describe_solution_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution_version)
 
 Arguments mapping described in
-[DescribeSolutionVersionRequestTypeDef](./type_defs.md#describesolutionversionrequesttypedef).
+[DescribeSolutionVersionRequestRequestTypeDef](./type_defs.md#describesolutionversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `solutionVersionArn`: `str` *(required)*
 
 Returns
-[DescribeSolutionVersionResponseResponseTypeDef](./type_defs.md#describesolutionversionresponseresponsetypedef).
+[DescribeSolutionVersionResponseTypeDef](./type_defs.md#describesolutionversionresponsetypedef).
 
 ### generate_presigned_url
 
@@ -795,14 +807,14 @@ Boto3 documentation:
 [Personalize.Client.get_solution_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.get_solution_metrics)
 
 Arguments mapping described in
-[GetSolutionMetricsRequestTypeDef](./type_defs.md#getsolutionmetricsrequesttypedef).
+[GetSolutionMetricsRequestRequestTypeDef](./type_defs.md#getsolutionmetricsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `solutionVersionArn`: `str` *(required)*
 
 Returns
-[GetSolutionMetricsResponseResponseTypeDef](./type_defs.md#getsolutionmetricsresponseresponsetypedef).
+[GetSolutionMetricsResponseTypeDef](./type_defs.md#getsolutionmetricsresponsetypedef).
 
 ### list_batch_inference_jobs
 
@@ -816,7 +828,7 @@ Boto3 documentation:
 [Personalize.Client.list_batch_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_inference_jobs)
 
 Arguments mapping described in
-[ListBatchInferenceJobsRequestTypeDef](./type_defs.md#listbatchinferencejobsrequesttypedef).
+[ListBatchInferenceJobsRequestRequestTypeDef](./type_defs.md#listbatchinferencejobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -825,7 +837,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListBatchInferenceJobsResponseResponseTypeDef](./type_defs.md#listbatchinferencejobsresponseresponsetypedef).
+[ListBatchInferenceJobsResponseTypeDef](./type_defs.md#listbatchinferencejobsresponsetypedef).
 
 ### list_campaigns
 
@@ -837,7 +849,7 @@ Boto3 documentation:
 [Personalize.Client.list_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_campaigns)
 
 Arguments mapping described in
-[ListCampaignsRequestTypeDef](./type_defs.md#listcampaignsrequesttypedef).
+[ListCampaignsRequestRequestTypeDef](./type_defs.md#listcampaignsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -846,7 +858,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListCampaignsResponseResponseTypeDef](./type_defs.md#listcampaignsresponseresponsetypedef).
+[ListCampaignsResponseTypeDef](./type_defs.md#listcampaignsresponsetypedef).
 
 ### list_dataset_export_jobs
 
@@ -859,7 +871,7 @@ Boto3 documentation:
 [Personalize.Client.list_dataset_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_export_jobs)
 
 Arguments mapping described in
-[ListDatasetExportJobsRequestTypeDef](./type_defs.md#listdatasetexportjobsrequesttypedef).
+[ListDatasetExportJobsRequestRequestTypeDef](./type_defs.md#listdatasetexportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -868,7 +880,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDatasetExportJobsResponseResponseTypeDef](./type_defs.md#listdatasetexportjobsresponseresponsetypedef).
+[ListDatasetExportJobsResponseTypeDef](./type_defs.md#listdatasetexportjobsresponsetypedef).
 
 ### list_dataset_groups
 
@@ -880,7 +892,7 @@ Boto3 documentation:
 [Personalize.Client.list_dataset_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_groups)
 
 Arguments mapping described in
-[ListDatasetGroupsRequestTypeDef](./type_defs.md#listdatasetgroupsrequesttypedef).
+[ListDatasetGroupsRequestRequestTypeDef](./type_defs.md#listdatasetgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -888,7 +900,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDatasetGroupsResponseResponseTypeDef](./type_defs.md#listdatasetgroupsresponseresponsetypedef).
+[ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef).
 
 ### list_dataset_import_jobs
 
@@ -901,7 +913,7 @@ Boto3 documentation:
 [Personalize.Client.list_dataset_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_import_jobs)
 
 Arguments mapping described in
-[ListDatasetImportJobsRequestTypeDef](./type_defs.md#listdatasetimportjobsrequesttypedef).
+[ListDatasetImportJobsRequestRequestTypeDef](./type_defs.md#listdatasetimportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -910,7 +922,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDatasetImportJobsResponseResponseTypeDef](./type_defs.md#listdatasetimportjobsresponseresponsetypedef).
+[ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef).
 
 ### list_datasets
 
@@ -922,7 +934,7 @@ Boto3 documentation:
 [Personalize.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_datasets)
 
 Arguments mapping described in
-[ListDatasetsRequestTypeDef](./type_defs.md#listdatasetsrequesttypedef).
+[ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -931,7 +943,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDatasetsResponseResponseTypeDef](./type_defs.md#listdatasetsresponseresponsetypedef).
+[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
 ### list_event_trackers
 
@@ -943,7 +955,7 @@ Boto3 documentation:
 [Personalize.Client.list_event_trackers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_event_trackers)
 
 Arguments mapping described in
-[ListEventTrackersRequestTypeDef](./type_defs.md#listeventtrackersrequesttypedef).
+[ListEventTrackersRequestRequestTypeDef](./type_defs.md#listeventtrackersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -952,7 +964,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListEventTrackersResponseResponseTypeDef](./type_defs.md#listeventtrackersresponseresponsetypedef).
+[ListEventTrackersResponseTypeDef](./type_defs.md#listeventtrackersresponsetypedef).
 
 ### list_filters
 
@@ -964,7 +976,7 @@ Boto3 documentation:
 [Personalize.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_filters)
 
 Arguments mapping described in
-[ListFiltersRequestTypeDef](./type_defs.md#listfiltersrequesttypedef).
+[ListFiltersRequestRequestTypeDef](./type_defs.md#listfiltersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -973,7 +985,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListFiltersResponseResponseTypeDef](./type_defs.md#listfiltersresponseresponsetypedef).
+[ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef).
 
 ### list_recipes
 
@@ -985,7 +997,7 @@ Boto3 documentation:
 [Personalize.Client.list_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recipes)
 
 Arguments mapping described in
-[ListRecipesRequestTypeDef](./type_defs.md#listrecipesrequesttypedef).
+[ListRecipesRequestRequestTypeDef](./type_defs.md#listrecipesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -995,7 +1007,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListRecipesResponseResponseTypeDef](./type_defs.md#listrecipesresponseresponsetypedef).
+[ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef).
 
 ### list_schemas
 
@@ -1007,7 +1019,7 @@ Boto3 documentation:
 [Personalize.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_schemas)
 
 Arguments mapping described in
-[ListSchemasRequestTypeDef](./type_defs.md#listschemasrequesttypedef).
+[ListSchemasRequestRequestTypeDef](./type_defs.md#listschemasrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1015,7 +1027,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListSchemasResponseResponseTypeDef](./type_defs.md#listschemasresponseresponsetypedef).
+[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
 
 ### list_solution_versions
 
@@ -1028,7 +1040,7 @@ Boto3 documentation:
 [Personalize.Client.list_solution_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solution_versions)
 
 Arguments mapping described in
-[ListSolutionVersionsRequestTypeDef](./type_defs.md#listsolutionversionsrequesttypedef).
+[ListSolutionVersionsRequestRequestTypeDef](./type_defs.md#listsolutionversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1037,7 +1049,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListSolutionVersionsResponseResponseTypeDef](./type_defs.md#listsolutionversionsresponseresponsetypedef).
+[ListSolutionVersionsResponseTypeDef](./type_defs.md#listsolutionversionsresponsetypedef).
 
 ### list_solutions
 
@@ -1049,7 +1061,7 @@ Boto3 documentation:
 [Personalize.Client.list_solutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solutions)
 
 Arguments mapping described in
-[ListSolutionsRequestTypeDef](./type_defs.md#listsolutionsrequesttypedef).
+[ListSolutionsRequestRequestTypeDef](./type_defs.md#listsolutionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1058,7 +1070,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListSolutionsResponseResponseTypeDef](./type_defs.md#listsolutionsresponseresponsetypedef).
+[ListSolutionsResponseTypeDef](./type_defs.md#listsolutionsresponsetypedef).
 
 ### stop_solution_version_creation
 
@@ -1072,7 +1084,7 @@ Boto3 documentation:
 [Personalize.Client.stop_solution_version_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.stop_solution_version_creation)
 
 Arguments mapping described in
-[StopSolutionVersionCreationRequestTypeDef](./type_defs.md#stopsolutionversioncreationrequesttypedef).
+[StopSolutionVersionCreationRequestRequestTypeDef](./type_defs.md#stopsolutionversioncreationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1089,7 +1101,7 @@ Boto3 documentation:
 [Personalize.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_campaign)
 
 Arguments mapping described in
-[UpdateCampaignRequestTypeDef](./type_defs.md#updatecampaignrequesttypedef).
+[UpdateCampaignRequestRequestTypeDef](./type_defs.md#updatecampaignrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1100,7 +1112,7 @@ Keyword-only arguments:
   [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 
 Returns
-[UpdateCampaignResponseResponseTypeDef](./type_defs.md#updatecampaignresponseresponsetypedef).
+[UpdateCampaignResponseTypeDef](./type_defs.md#updatecampaignresponsetypedef).
 
 ### get_paginator
 

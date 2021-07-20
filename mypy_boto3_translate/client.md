@@ -11,6 +11,7 @@ type annotations stubs module
   - [TranslateClient](#translateclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_parallel_data](#create_parallel_data)
     - [delete_parallel_data](#delete_parallel_data)
@@ -76,6 +77,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+TranslateClient exceptions.
+
+Type annotations for `boto3.client("translate").exceptions` method.
+
+Boto3 documentation:
+[Translate.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -102,7 +114,7 @@ Boto3 documentation:
 [Translate.Client.create_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.create_parallel_data)
 
 Arguments mapping described in
-[CreateParallelDataRequestTypeDef](./type_defs.md#createparalleldatarequesttypedef).
+[CreateParallelDataRequestRequestTypeDef](./type_defs.md#createparalleldatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -115,7 +127,7 @@ Keyword-only arguments:
 - `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
 Returns
-[CreateParallelDataResponseResponseTypeDef](./type_defs.md#createparalleldataresponseresponsetypedef).
+[CreateParallelDataResponseTypeDef](./type_defs.md#createparalleldataresponsetypedef).
 
 ### delete_parallel_data
 
@@ -127,14 +139,14 @@ Boto3 documentation:
 [Translate.Client.delete_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_parallel_data)
 
 Arguments mapping described in
-[DeleteParallelDataRequestTypeDef](./type_defs.md#deleteparalleldatarequesttypedef).
+[DeleteParallelDataRequestRequestTypeDef](./type_defs.md#deleteparalleldatarequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DeleteParallelDataResponseResponseTypeDef](./type_defs.md#deleteparalleldataresponseresponsetypedef).
+[DeleteParallelDataResponseTypeDef](./type_defs.md#deleteparalleldataresponsetypedef).
 
 ### delete_terminology
 
@@ -146,7 +158,7 @@ Boto3 documentation:
 [Translate.Client.delete_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_terminology)
 
 Arguments mapping described in
-[DeleteTerminologyRequestTypeDef](./type_defs.md#deleteterminologyrequesttypedef).
+[DeleteTerminologyRequestRequestTypeDef](./type_defs.md#deleteterminologyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -165,14 +177,14 @@ Boto3 documentation:
 [Translate.Client.describe_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.describe_text_translation_job)
 
 Arguments mapping described in
-[DescribeTextTranslationJobRequestTypeDef](./type_defs.md#describetexttranslationjobrequesttypedef).
+[DescribeTextTranslationJobRequestRequestTypeDef](./type_defs.md#describetexttranslationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeTextTranslationJobResponseResponseTypeDef](./type_defs.md#describetexttranslationjobresponseresponsetypedef).
+[DescribeTextTranslationJobResponseTypeDef](./type_defs.md#describetexttranslationjobresponsetypedef).
 
 ### generate_presigned_url
 
@@ -202,14 +214,14 @@ Boto3 documentation:
 [Translate.Client.get_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_parallel_data)
 
 Arguments mapping described in
-[GetParallelDataRequestTypeDef](./type_defs.md#getparalleldatarequesttypedef).
+[GetParallelDataRequestRequestTypeDef](./type_defs.md#getparalleldatarequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetParallelDataResponseResponseTypeDef](./type_defs.md#getparalleldataresponseresponsetypedef).
+[GetParallelDataResponseTypeDef](./type_defs.md#getparalleldataresponsetypedef).
 
 ### get_terminology
 
@@ -221,7 +233,7 @@ Boto3 documentation:
 [Translate.Client.get_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_terminology)
 
 Arguments mapping described in
-[GetTerminologyRequestTypeDef](./type_defs.md#getterminologyrequesttypedef).
+[GetTerminologyRequestRequestTypeDef](./type_defs.md#getterminologyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -231,7 +243,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[GetTerminologyResponseResponseTypeDef](./type_defs.md#getterminologyresponseresponsetypedef).
+[GetTerminologyResponseTypeDef](./type_defs.md#getterminologyresponsetypedef).
 
 ### import_terminology
 
@@ -244,7 +256,7 @@ Boto3 documentation:
 [Translate.Client.import_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.import_terminology)
 
 Arguments mapping described in
-[ImportTerminologyRequestTypeDef](./type_defs.md#importterminologyrequesttypedef).
+[ImportTerminologyRequestRequestTypeDef](./type_defs.md#importterminologyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -257,7 +269,7 @@ Keyword-only arguments:
 - `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
 Returns
-[ImportTerminologyResponseResponseTypeDef](./type_defs.md#importterminologyresponseresponsetypedef).
+[ImportTerminologyResponseTypeDef](./type_defs.md#importterminologyresponsetypedef).
 
 ### list_parallel_data
 
@@ -269,7 +281,7 @@ Boto3 documentation:
 [Translate.Client.list_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_parallel_data)
 
 Arguments mapping described in
-[ListParallelDataRequestTypeDef](./type_defs.md#listparalleldatarequesttypedef).
+[ListParallelDataRequestRequestTypeDef](./type_defs.md#listparalleldatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -277,7 +289,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListParallelDataResponseResponseTypeDef](./type_defs.md#listparalleldataresponseresponsetypedef).
+[ListParallelDataResponseTypeDef](./type_defs.md#listparalleldataresponsetypedef).
 
 ### list_terminologies
 
@@ -289,7 +301,7 @@ Boto3 documentation:
 [Translate.Client.list_terminologies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_terminologies)
 
 Arguments mapping described in
-[ListTerminologiesRequestTypeDef](./type_defs.md#listterminologiesrequesttypedef).
+[ListTerminologiesRequestRequestTypeDef](./type_defs.md#listterminologiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -297,7 +309,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTerminologiesResponseResponseTypeDef](./type_defs.md#listterminologiesresponseresponsetypedef).
+[ListTerminologiesResponseTypeDef](./type_defs.md#listterminologiesresponsetypedef).
 
 ### list_text_translation_jobs
 
@@ -310,7 +322,7 @@ Boto3 documentation:
 [Translate.Client.list_text_translation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_text_translation_jobs)
 
 Arguments mapping described in
-[ListTextTranslationJobsRequestTypeDef](./type_defs.md#listtexttranslationjobsrequesttypedef).
+[ListTextTranslationJobsRequestRequestTypeDef](./type_defs.md#listtexttranslationjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -320,7 +332,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTextTranslationJobsResponseResponseTypeDef](./type_defs.md#listtexttranslationjobsresponseresponsetypedef).
+[ListTextTranslationJobsResponseTypeDef](./type_defs.md#listtexttranslationjobsresponsetypedef).
 
 ### start_text_translation_job
 
@@ -333,7 +345,7 @@ Boto3 documentation:
 [Translate.Client.start_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.start_text_translation_job)
 
 Arguments mapping described in
-[StartTextTranslationJobRequestTypeDef](./type_defs.md#starttexttranslationjobrequesttypedef).
+[StartTextTranslationJobRequestRequestTypeDef](./type_defs.md#starttexttranslationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -351,7 +363,7 @@ Keyword-only arguments:
 - `ParallelDataNames`: `List`\[`str`\]
 
 Returns
-[StartTextTranslationJobResponseResponseTypeDef](./type_defs.md#starttexttranslationjobresponseresponsetypedef).
+[StartTextTranslationJobResponseTypeDef](./type_defs.md#starttexttranslationjobresponsetypedef).
 
 ### stop_text_translation_job
 
@@ -364,14 +376,14 @@ Boto3 documentation:
 [Translate.Client.stop_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.stop_text_translation_job)
 
 Arguments mapping described in
-[StopTextTranslationJobRequestTypeDef](./type_defs.md#stoptexttranslationjobrequesttypedef).
+[StopTextTranslationJobRequestRequestTypeDef](./type_defs.md#stoptexttranslationjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[StopTextTranslationJobResponseResponseTypeDef](./type_defs.md#stoptexttranslationjobresponseresponsetypedef).
+[StopTextTranslationJobResponseTypeDef](./type_defs.md#stoptexttranslationjobresponsetypedef).
 
 ### translate_text
 
@@ -383,7 +395,7 @@ Boto3 documentation:
 [Translate.Client.translate_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.translate_text)
 
 Arguments mapping described in
-[TranslateTextRequestTypeDef](./type_defs.md#translatetextrequesttypedef).
+[TranslateTextRequestRequestTypeDef](./type_defs.md#translatetextrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -393,7 +405,7 @@ Keyword-only arguments:
 - `TerminologyNames`: `List`\[`str`\]
 
 Returns
-[TranslateTextResponseResponseTypeDef](./type_defs.md#translatetextresponseresponsetypedef).
+[TranslateTextResponseTypeDef](./type_defs.md#translatetextresponsetypedef).
 
 ### update_parallel_data
 
@@ -406,7 +418,7 @@ Boto3 documentation:
 [Translate.Client.update_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.update_parallel_data)
 
 Arguments mapping described in
-[UpdateParallelDataRequestTypeDef](./type_defs.md#updateparalleldatarequesttypedef).
+[UpdateParallelDataRequestRequestTypeDef](./type_defs.md#updateparalleldatarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -418,7 +430,7 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns
-[UpdateParallelDataResponseResponseTypeDef](./type_defs.md#updateparalleldataresponseresponsetypedef).
+[UpdateParallelDataResponseTypeDef](./type_defs.md#updateparalleldataresponsetypedef).
 
 ### get_paginator
 

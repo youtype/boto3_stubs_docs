@@ -31,6 +31,7 @@ from mypy_boto3_personalize_events.client import PersonalizeEventsClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [put_events](./client.md#put_events)
 - [put_items](./client.md#put_items)
@@ -58,7 +59,7 @@ from mypy_boto3_personalize_events.type_defs import EventTypeDef, ...
 
 - [EventTypeDef](./type_defs.md#eventtypedef)
 - [ItemTypeDef](./type_defs.md#itemtypedef)
-- [PutEventsRequestTypeDef](./type_defs.md#puteventsrequesttypedef)
-- [PutItemsRequestTypeDef](./type_defs.md#putitemsrequesttypedef)
-- [PutUsersRequestTypeDef](./type_defs.md#putusersrequesttypedef)
+- [PutEventsRequestRequestTypeDef](./type_defs.md#puteventsrequestrequesttypedef)
+- [PutItemsRequestRequestTypeDef](./type_defs.md#putitemsrequestrequesttypedef)
+- [PutUsersRequestRequestTypeDef](./type_defs.md#putusersrequestrequesttypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)

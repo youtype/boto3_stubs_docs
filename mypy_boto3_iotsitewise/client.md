@@ -11,6 +11,7 @@ type annotations stubs module
   - [IoTSiteWiseClient](#iotsitewiseclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_assets](#associate_assets)
     - [batch_associate_project_assets](#batch_associate_project_assets)
     - [batch_disassociate_project_assets](#batch_disassociate_project_assets)
@@ -41,6 +42,7 @@ type annotations stubs module
     - [describe_logging_options](#describe_logging_options)
     - [describe_portal](#describe_portal)
     - [describe_project](#describe_project)
+    - [describe_storage_configuration](#describe_storage_configuration)
     - [disassociate_assets](#disassociate_assets)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_asset_property_aggregates](#get_asset_property_aggregates)
@@ -60,6 +62,7 @@ type annotations stubs module
     - [list_tags_for_resource](#list_tags_for_resource)
     - [put_default_encryption_configuration](#put_default_encryption_configuration)
     - [put_logging_options](#put_logging_options)
+    - [put_storage_configuration](#put_storage_configuration)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_access_policy](#update_access_policy)
@@ -118,6 +121,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IoTSiteWiseClient exceptions.
+
+Type annotations for `boto3.client("iotsitewise").exceptions` method.
+
+Boto3 documentation:
+[IoTSiteWise.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_assets
 
 Associates a child asset with the given parent asset through a hierarchy
@@ -129,7 +143,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.associate_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.associate_assets)
 
 Arguments mapping described in
-[AssociateAssetsRequestTypeDef](./type_defs.md#associateassetsrequesttypedef).
+[AssociateAssetsRequestRequestTypeDef](./type_defs.md#associateassetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -140,7 +154,7 @@ Keyword-only arguments:
 
 ### batch_associate_project_assets
 
-Associates a group (batch) of assets with an AWS IoT SiteWise Monitor project.
+Associates a group (batch) of assets with an IoT SiteWise Monitor project.
 
 Type annotations for
 `boto3.client("iotsitewise").batch_associate_project_assets` method.
@@ -149,7 +163,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.batch_associate_project_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_associate_project_assets)
 
 Arguments mapping described in
-[BatchAssociateProjectAssetsRequestTypeDef](./type_defs.md#batchassociateprojectassetsrequesttypedef).
+[BatchAssociateProjectAssetsRequestRequestTypeDef](./type_defs.md#batchassociateprojectassetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -158,12 +172,11 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[BatchAssociateProjectAssetsResponseResponseTypeDef](./type_defs.md#batchassociateprojectassetsresponseresponsetypedef).
+[BatchAssociateProjectAssetsResponseTypeDef](./type_defs.md#batchassociateprojectassetsresponsetypedef).
 
 ### batch_disassociate_project_assets
 
-Disassociates a group (batch) of assets from an AWS IoT SiteWise Monitor
-project.
+Disassociates a group (batch) of assets from an IoT SiteWise Monitor project.
 
 Type annotations for
 `boto3.client("iotsitewise").batch_disassociate_project_assets` method.
@@ -172,7 +185,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.batch_disassociate_project_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_disassociate_project_assets)
 
 Arguments mapping described in
-[BatchDisassociateProjectAssetsRequestTypeDef](./type_defs.md#batchdisassociateprojectassetsrequesttypedef).
+[BatchDisassociateProjectAssetsRequestRequestTypeDef](./type_defs.md#batchdisassociateprojectassetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -181,11 +194,11 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[BatchDisassociateProjectAssetsResponseResponseTypeDef](./type_defs.md#batchdisassociateprojectassetsresponseresponsetypedef).
+[BatchDisassociateProjectAssetsResponseTypeDef](./type_defs.md#batchdisassociateprojectassetsresponsetypedef).
 
 ### batch_put_asset_property_value
 
-Sends a list of asset property values to AWS IoT SiteWise.
+Sends a list of asset property values to IoT SiteWise.
 
 Type annotations for
 `boto3.client("iotsitewise").batch_put_asset_property_value` method.
@@ -194,7 +207,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.batch_put_asset_property_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_put_asset_property_value)
 
 Arguments mapping described in
-[BatchPutAssetPropertyValueRequestTypeDef](./type_defs.md#batchputassetpropertyvaluerequesttypedef).
+[BatchPutAssetPropertyValueRequestRequestTypeDef](./type_defs.md#batchputassetpropertyvaluerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -203,7 +216,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BatchPutAssetPropertyValueResponseResponseTypeDef](./type_defs.md#batchputassetpropertyvalueresponseresponsetypedef).
+[BatchPutAssetPropertyValueResponseTypeDef](./type_defs.md#batchputassetpropertyvalueresponsetypedef).
 
 ### can_paginate
 
@@ -222,9 +235,9 @@ Returns `bool`.
 
 ### create_access_policy
 
-Creates an access policy that grants the specified identity (AWS SSO user, AWS
-SSO group, or IAM user) access to the specified AWS IoT SiteWise Monitor portal
-or project resource.
+Creates an access policy that grants the specified identity (Amazon Web
+Services SSO user, Amazon Web Services SSO group, or IAM user) access to the
+specified IoT SiteWise Monitor portal or project resource.
 
 Type annotations for `boto3.client("iotsitewise").create_access_policy` method.
 
@@ -232,7 +245,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.create_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_access_policy)
 
 Arguments mapping described in
-[CreateAccessPolicyRequestTypeDef](./type_defs.md#createaccesspolicyrequesttypedef).
+[CreateAccessPolicyRequestRequestTypeDef](./type_defs.md#createaccesspolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -246,7 +259,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAccessPolicyResponseResponseTypeDef](./type_defs.md#createaccesspolicyresponseresponsetypedef).
+[CreateAccessPolicyResponseTypeDef](./type_defs.md#createaccesspolicyresponsetypedef).
 
 ### create_asset
 
@@ -258,7 +271,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.create_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset)
 
 Arguments mapping described in
-[CreateAssetRequestTypeDef](./type_defs.md#createassetrequesttypedef).
+[CreateAssetRequestRequestTypeDef](./type_defs.md#createassetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -268,7 +281,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAssetResponseResponseTypeDef](./type_defs.md#createassetresponseresponsetypedef).
+[CreateAssetResponseTypeDef](./type_defs.md#createassetresponsetypedef).
 
 ### create_asset_model
 
@@ -280,7 +293,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.create_asset_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset_model)
 
 Arguments mapping described in
-[CreateAssetModelRequestTypeDef](./type_defs.md#createassetmodelrequesttypedef).
+[CreateAssetModelRequestRequestTypeDef](./type_defs.md#createassetmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -296,11 +309,11 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateAssetModelResponseResponseTypeDef](./type_defs.md#createassetmodelresponseresponsetypedef).
+[CreateAssetModelResponseTypeDef](./type_defs.md#createassetmodelresponsetypedef).
 
 ### create_dashboard
 
-Creates a dashboard in an AWS IoT SiteWise Monitor project.
+Creates a dashboard in an IoT SiteWise Monitor project.
 
 Type annotations for `boto3.client("iotsitewise").create_dashboard` method.
 
@@ -308,7 +321,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.create_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_dashboard)
 
 Arguments mapping described in
-[CreateDashboardRequestTypeDef](./type_defs.md#createdashboardrequesttypedef).
+[CreateDashboardRequestRequestTypeDef](./type_defs.md#createdashboardrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -320,12 +333,12 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateDashboardResponseResponseTypeDef](./type_defs.md#createdashboardresponseresponsetypedef).
+[CreateDashboardResponseTypeDef](./type_defs.md#createdashboardresponsetypedef).
 
 ### create_gateway
 
 Creates a gateway, which is a virtual or edge device that delivers industrial
-data streams from local servers to AWS IoT SiteWise.
+data streams from local servers to IoT SiteWise.
 
 Type annotations for `boto3.client("iotsitewise").create_gateway` method.
 
@@ -333,7 +346,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.create_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_gateway)
 
 Arguments mapping described in
-[CreateGatewayRequestTypeDef](./type_defs.md#creategatewayrequesttypedef).
+[CreateGatewayRequestRequestTypeDef](./type_defs.md#creategatewayrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -343,7 +356,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateGatewayResponseResponseTypeDef](./type_defs.md#creategatewayresponseresponsetypedef).
+[CreateGatewayResponseTypeDef](./type_defs.md#creategatewayresponsetypedef).
 
 ### create_portal
 
@@ -355,7 +368,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.create_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_portal)
 
 Arguments mapping described in
-[CreatePortalRequestTypeDef](./type_defs.md#createportalrequesttypedef).
+[CreatePortalRequestRequestTypeDef](./type_defs.md#createportalrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -371,7 +384,7 @@ Keyword-only arguments:
 - `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
 
 Returns
-[CreatePortalResponseResponseTypeDef](./type_defs.md#createportalresponseresponsetypedef).
+[CreatePortalResponseTypeDef](./type_defs.md#createportalresponsetypedef).
 
 ### create_project
 
@@ -383,7 +396,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_project)
 
 Arguments mapping described in
-[CreateProjectRequestTypeDef](./type_defs.md#createprojectrequesttypedef).
+[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -394,12 +407,12 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateProjectResponseResponseTypeDef](./type_defs.md#createprojectresponseresponsetypedef).
+[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
 ### delete_access_policy
 
 Deletes an access policy that grants the specified identity access to the
-specified AWS IoT SiteWise Monitor resource.
+specified IoT SiteWise Monitor resource.
 
 Type annotations for `boto3.client("iotsitewise").delete_access_policy` method.
 
@@ -407,7 +420,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.delete_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_access_policy)
 
 Arguments mapping described in
-[DeleteAccessPolicyRequestTypeDef](./type_defs.md#deleteaccesspolicyrequesttypedef).
+[DeleteAccessPolicyRequestRequestTypeDef](./type_defs.md#deleteaccesspolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -426,7 +439,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset)
 
 Arguments mapping described in
-[DeleteAssetRequestTypeDef](./type_defs.md#deleteassetrequesttypedef).
+[DeleteAssetRequestRequestTypeDef](./type_defs.md#deleteassetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -434,7 +447,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteAssetResponseResponseTypeDef](./type_defs.md#deleteassetresponseresponsetypedef).
+[DeleteAssetResponseTypeDef](./type_defs.md#deleteassetresponsetypedef).
 
 ### delete_asset_model
 
@@ -446,7 +459,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.delete_asset_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset_model)
 
 Arguments mapping described in
-[DeleteAssetModelRequestTypeDef](./type_defs.md#deleteassetmodelrequesttypedef).
+[DeleteAssetModelRequestRequestTypeDef](./type_defs.md#deleteassetmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -454,11 +467,11 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeleteAssetModelResponseResponseTypeDef](./type_defs.md#deleteassetmodelresponseresponsetypedef).
+[DeleteAssetModelResponseTypeDef](./type_defs.md#deleteassetmodelresponsetypedef).
 
 ### delete_dashboard
 
-Deletes a dashboard from AWS IoT SiteWise Monitor.
+Deletes a dashboard from IoT SiteWise Monitor.
 
 Type annotations for `boto3.client("iotsitewise").delete_dashboard` method.
 
@@ -466,7 +479,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.delete_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_dashboard)
 
 Arguments mapping described in
-[DeleteDashboardRequestTypeDef](./type_defs.md#deletedashboardrequesttypedef).
+[DeleteDashboardRequestRequestTypeDef](./type_defs.md#deletedashboardrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -477,7 +490,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_gateway
 
-Deletes a gateway from AWS IoT SiteWise.
+Deletes a gateway from IoT SiteWise.
 
 Type annotations for `boto3.client("iotsitewise").delete_gateway` method.
 
@@ -485,7 +498,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.delete_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_gateway)
 
 Arguments mapping described in
-[DeleteGatewayRequestTypeDef](./type_defs.md#deletegatewayrequesttypedef).
+[DeleteGatewayRequestRequestTypeDef](./type_defs.md#deletegatewayrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -493,7 +506,7 @@ Keyword-only arguments:
 
 ### delete_portal
 
-Deletes a portal from AWS IoT SiteWise Monitor.
+Deletes a portal from IoT SiteWise Monitor.
 
 Type annotations for `boto3.client("iotsitewise").delete_portal` method.
 
@@ -501,7 +514,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.delete_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_portal)
 
 Arguments mapping described in
-[DeletePortalRequestTypeDef](./type_defs.md#deleteportalrequesttypedef).
+[DeletePortalRequestRequestTypeDef](./type_defs.md#deleteportalrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -509,11 +522,11 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[DeletePortalResponseResponseTypeDef](./type_defs.md#deleteportalresponseresponsetypedef).
+[DeletePortalResponseTypeDef](./type_defs.md#deleteportalresponsetypedef).
 
 ### delete_project
 
-Deletes a project from AWS IoT SiteWise Monitor.
+Deletes a project from IoT SiteWise Monitor.
 
 Type annotations for `boto3.client("iotsitewise").delete_project` method.
 
@@ -521,7 +534,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_project)
 
 Arguments mapping described in
-[DeleteProjectRequestTypeDef](./type_defs.md#deleteprojectrequesttypedef).
+[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -532,7 +545,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_access_policy
 
-Describes an access policy, which specifies an identity's access to an AWS IoT
+Describes an access policy, which specifies an identity's access to an IoT
 SiteWise Monitor portal or project.
 
 Type annotations for `boto3.client("iotsitewise").describe_access_policy`
@@ -542,14 +555,14 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_access_policy)
 
 Arguments mapping described in
-[DescribeAccessPolicyRequestTypeDef](./type_defs.md#describeaccesspolicyrequesttypedef).
+[DescribeAccessPolicyRequestRequestTypeDef](./type_defs.md#describeaccesspolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `accessPolicyId`: `str` *(required)*
 
 Returns
-[DescribeAccessPolicyResponseResponseTypeDef](./type_defs.md#describeaccesspolicyresponseresponsetypedef).
+[DescribeAccessPolicyResponseTypeDef](./type_defs.md#describeaccesspolicyresponsetypedef).
 
 ### describe_asset
 
@@ -561,14 +574,14 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset)
 
 Arguments mapping described in
-[DescribeAssetRequestTypeDef](./type_defs.md#describeassetrequesttypedef).
+[DescribeAssetRequestRequestTypeDef](./type_defs.md#describeassetrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `assetId`: `str` *(required)*
 
 Returns
-[DescribeAssetResponseResponseTypeDef](./type_defs.md#describeassetresponseresponsetypedef).
+[DescribeAssetResponseTypeDef](./type_defs.md#describeassetresponsetypedef).
 
 ### describe_asset_model
 
@@ -580,14 +593,14 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_asset_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_model)
 
 Arguments mapping described in
-[DescribeAssetModelRequestTypeDef](./type_defs.md#describeassetmodelrequesttypedef).
+[DescribeAssetModelRequestRequestTypeDef](./type_defs.md#describeassetmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `assetModelId`: `str` *(required)*
 
 Returns
-[DescribeAssetModelResponseResponseTypeDef](./type_defs.md#describeassetmodelresponseresponsetypedef).
+[DescribeAssetModelResponseTypeDef](./type_defs.md#describeassetmodelresponsetypedef).
 
 ### describe_asset_property
 
@@ -600,7 +613,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_asset_property](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_property)
 
 Arguments mapping described in
-[DescribeAssetPropertyRequestTypeDef](./type_defs.md#describeassetpropertyrequesttypedef).
+[DescribeAssetPropertyRequestRequestTypeDef](./type_defs.md#describeassetpropertyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -608,7 +621,7 @@ Keyword-only arguments:
 - `propertyId`: `str` *(required)*
 
 Returns
-[DescribeAssetPropertyResponseResponseTypeDef](./type_defs.md#describeassetpropertyresponseresponsetypedef).
+[DescribeAssetPropertyResponseTypeDef](./type_defs.md#describeassetpropertyresponsetypedef).
 
 ### describe_dashboard
 
@@ -620,19 +633,19 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_dashboard)
 
 Arguments mapping described in
-[DescribeDashboardRequestTypeDef](./type_defs.md#describedashboardrequesttypedef).
+[DescribeDashboardRequestRequestTypeDef](./type_defs.md#describedashboardrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `dashboardId`: `str` *(required)*
 
 Returns
-[DescribeDashboardResponseResponseTypeDef](./type_defs.md#describedashboardresponseresponsetypedef).
+[DescribeDashboardResponseTypeDef](./type_defs.md#describedashboardresponsetypedef).
 
 ### describe_default_encryption_configuration
 
-Retrieves information about the default encryption configuration for the AWS
-account in the default or specified region.
+Retrieves information about the default encryption configuration for the Amazon
+Web Services account in the default or specified Region.
 
 Type annotations for
 `boto3.client("iotsitewise").describe_default_encryption_configuration` method.
@@ -641,7 +654,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_default_encryption_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_default_encryption_configuration)
 
 Returns
-[DescribeDefaultEncryptionConfigurationResponseResponseTypeDef](./type_defs.md#describedefaultencryptionconfigurationresponseresponsetypedef).
+[DescribeDefaultEncryptionConfigurationResponseTypeDef](./type_defs.md#describedefaultencryptionconfigurationresponsetypedef).
 
 ### describe_gateway
 
@@ -653,14 +666,14 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway)
 
 Arguments mapping described in
-[DescribeGatewayRequestTypeDef](./type_defs.md#describegatewayrequesttypedef).
+[DescribeGatewayRequestRequestTypeDef](./type_defs.md#describegatewayrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `gatewayId`: `str` *(required)*
 
 Returns
-[DescribeGatewayResponseResponseTypeDef](./type_defs.md#describegatewayresponseresponsetypedef).
+[DescribeGatewayResponseTypeDef](./type_defs.md#describegatewayresponsetypedef).
 
 ### describe_gateway_capability_configuration
 
@@ -673,7 +686,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_gateway_capability_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway_capability_configuration)
 
 Arguments mapping described in
-[DescribeGatewayCapabilityConfigurationRequestTypeDef](./type_defs.md#describegatewaycapabilityconfigurationrequesttypedef).
+[DescribeGatewayCapabilityConfigurationRequestRequestTypeDef](./type_defs.md#describegatewaycapabilityconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -681,11 +694,11 @@ Keyword-only arguments:
 - `capabilityNamespace`: `str` *(required)*
 
 Returns
-[DescribeGatewayCapabilityConfigurationResponseResponseTypeDef](./type_defs.md#describegatewaycapabilityconfigurationresponseresponsetypedef).
+[DescribeGatewayCapabilityConfigurationResponseTypeDef](./type_defs.md#describegatewaycapabilityconfigurationresponsetypedef).
 
 ### describe_logging_options
 
-Retrieves the current AWS IoT SiteWise logging options.
+Retrieves the current IoT SiteWise logging options.
 
 Type annotations for `boto3.client("iotsitewise").describe_logging_options`
 method.
@@ -694,7 +707,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_logging_options)
 
 Returns
-[DescribeLoggingOptionsResponseResponseTypeDef](./type_defs.md#describeloggingoptionsresponseresponsetypedef).
+[DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
 
 ### describe_portal
 
@@ -706,14 +719,14 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_portal)
 
 Arguments mapping described in
-[DescribePortalRequestTypeDef](./type_defs.md#describeportalrequesttypedef).
+[DescribePortalRequestRequestTypeDef](./type_defs.md#describeportalrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `portalId`: `str` *(required)*
 
 Returns
-[DescribePortalResponseResponseTypeDef](./type_defs.md#describeportalresponseresponsetypedef).
+[DescribePortalResponseTypeDef](./type_defs.md#describeportalresponsetypedef).
 
 ### describe_project
 
@@ -725,14 +738,27 @@ Boto3 documentation:
 [IoTSiteWise.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_project)
 
 Arguments mapping described in
-[DescribeProjectRequestTypeDef](./type_defs.md#describeprojectrequesttypedef).
+[DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `projectId`: `str` *(required)*
 
 Returns
-[DescribeProjectResponseResponseTypeDef](./type_defs.md#describeprojectresponseresponsetypedef).
+[DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
+
+### describe_storage_configuration
+
+Retrieves information about the storage configuration for IoT SiteWise.
+
+Type annotations for
+`boto3.client("iotsitewise").describe_storage_configuration` method.
+
+Boto3 documentation:
+[IoTSiteWise.Client.describe_storage_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_storage_configuration)
+
+Returns
+[DescribeStorageConfigurationResponseTypeDef](./type_defs.md#describestorageconfigurationresponsetypedef).
 
 ### disassociate_assets
 
@@ -745,7 +771,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.disassociate_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.disassociate_assets)
 
 Arguments mapping described in
-[DisassociateAssetsRequestTypeDef](./type_defs.md#disassociateassetsrequesttypedef).
+[DisassociateAssetsRequestRequestTypeDef](./type_defs.md#disassociateassetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -784,7 +810,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.get_asset_property_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_aggregates)
 
 Arguments mapping described in
-[GetAssetPropertyAggregatesRequestTypeDef](./type_defs.md#getassetpropertyaggregatesrequesttypedef).
+[GetAssetPropertyAggregatesRequestRequestTypeDef](./type_defs.md#getassetpropertyaggregatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -802,7 +828,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetAssetPropertyAggregatesResponseResponseTypeDef](./type_defs.md#getassetpropertyaggregatesresponseresponsetypedef).
+[GetAssetPropertyAggregatesResponseTypeDef](./type_defs.md#getassetpropertyaggregatesresponsetypedef).
 
 ### get_asset_property_value
 
@@ -815,7 +841,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.get_asset_property_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value)
 
 Arguments mapping described in
-[GetAssetPropertyValueRequestTypeDef](./type_defs.md#getassetpropertyvaluerequesttypedef).
+[GetAssetPropertyValueRequestRequestTypeDef](./type_defs.md#getassetpropertyvaluerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -824,7 +850,7 @@ Keyword-only arguments:
 - `propertyAlias`: `str`
 
 Returns
-[GetAssetPropertyValueResponseResponseTypeDef](./type_defs.md#getassetpropertyvalueresponseresponsetypedef).
+[GetAssetPropertyValueResponseTypeDef](./type_defs.md#getassetpropertyvalueresponsetypedef).
 
 ### get_asset_property_value_history
 
@@ -837,7 +863,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.get_asset_property_value_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value_history)
 
 Arguments mapping described in
-[GetAssetPropertyValueHistoryRequestTypeDef](./type_defs.md#getassetpropertyvaluehistoryrequesttypedef).
+[GetAssetPropertyValueHistoryRequestRequestTypeDef](./type_defs.md#getassetpropertyvaluehistoryrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -852,7 +878,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetAssetPropertyValueHistoryResponseResponseTypeDef](./type_defs.md#getassetpropertyvaluehistoryresponseresponsetypedef).
+[GetAssetPropertyValueHistoryResponseTypeDef](./type_defs.md#getassetpropertyvaluehistoryresponsetypedef).
 
 ### get_interpolated_asset_property_values
 
@@ -866,7 +892,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.get_interpolated_asset_property_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_interpolated_asset_property_values)
 
 Arguments mapping described in
-[GetInterpolatedAssetPropertyValuesRequestTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesrequesttypedef).
+[GetInterpolatedAssetPropertyValuesRequestRequestTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -884,13 +910,13 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetInterpolatedAssetPropertyValuesResponseResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponseresponsetypedef).
+[GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef).
 
 ### list_access_policies
 
-Retrieves a paginated list of access policies for an identity (an AWS SSO user,
-an AWS SSO group, or an IAM user) or an AWS IoT SiteWise Monitor resource (a
-portal or project).
+Retrieves a paginated list of access policies for an identity (an Amazon Web
+Services SSO user, an Amazon Web Services SSO group, or an IAM user) or an IoT
+SiteWise Monitor resource (a portal or project).
 
 Type annotations for `boto3.client("iotsitewise").list_access_policies` method.
 
@@ -898,7 +924,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.list_access_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_access_policies)
 
 Arguments mapping described in
-[ListAccessPoliciesRequestTypeDef](./type_defs.md#listaccesspoliciesrequesttypedef).
+[ListAccessPoliciesRequestRequestTypeDef](./type_defs.md#listaccesspoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -911,7 +937,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAccessPoliciesResponseResponseTypeDef](./type_defs.md#listaccesspoliciesresponseresponsetypedef).
+[ListAccessPoliciesResponseTypeDef](./type_defs.md#listaccesspoliciesresponsetypedef).
 
 ### list_asset_models
 
@@ -923,7 +949,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.list_asset_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_models)
 
 Arguments mapping described in
-[ListAssetModelsRequestTypeDef](./type_defs.md#listassetmodelsrequesttypedef).
+[ListAssetModelsRequestRequestTypeDef](./type_defs.md#listassetmodelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -931,7 +957,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssetModelsResponseResponseTypeDef](./type_defs.md#listassetmodelsresponseresponsetypedef).
+[ListAssetModelsResponseTypeDef](./type_defs.md#listassetmodelsresponsetypedef).
 
 ### list_asset_relationships
 
@@ -944,7 +970,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.list_asset_relationships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_relationships)
 
 Arguments mapping described in
-[ListAssetRelationshipsRequestTypeDef](./type_defs.md#listassetrelationshipsrequesttypedef).
+[ListAssetRelationshipsRequestRequestTypeDef](./type_defs.md#listassetrelationshipsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -955,7 +981,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssetRelationshipsResponseResponseTypeDef](./type_defs.md#listassetrelationshipsresponseresponsetypedef).
+[ListAssetRelationshipsResponseTypeDef](./type_defs.md#listassetrelationshipsresponsetypedef).
 
 ### list_assets
 
@@ -967,7 +993,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.list_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_assets)
 
 Arguments mapping described in
-[ListAssetsRequestTypeDef](./type_defs.md#listassetsrequesttypedef).
+[ListAssetsRequestRequestTypeDef](./type_defs.md#listassetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -976,8 +1002,7 @@ Keyword-only arguments:
 - `assetModelId`: `str`
 - `filter`: [ListAssetsFilterType](./literals.md#listassetsfiltertype)
 
-Returns
-[ListAssetsResponseResponseTypeDef](./type_defs.md#listassetsresponseresponsetypedef).
+Returns [ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef).
 
 ### list_associated_assets
 
@@ -990,7 +1015,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.list_associated_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_associated_assets)
 
 Arguments mapping described in
-[ListAssociatedAssetsRequestTypeDef](./type_defs.md#listassociatedassetsrequesttypedef).
+[ListAssociatedAssetsRequestRequestTypeDef](./type_defs.md#listassociatedassetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1002,12 +1027,11 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssociatedAssetsResponseResponseTypeDef](./type_defs.md#listassociatedassetsresponseresponsetypedef).
+[ListAssociatedAssetsResponseTypeDef](./type_defs.md#listassociatedassetsresponsetypedef).
 
 ### list_dashboards
 
-Retrieves a paginated list of dashboards for an AWS IoT SiteWise Monitor
-project.
+Retrieves a paginated list of dashboards for an IoT SiteWise Monitor project.
 
 Type annotations for `boto3.client("iotsitewise").list_dashboards` method.
 
@@ -1015,7 +1039,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.list_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_dashboards)
 
 Arguments mapping described in
-[ListDashboardsRequestTypeDef](./type_defs.md#listdashboardsrequesttypedef).
+[ListDashboardsRequestRequestTypeDef](./type_defs.md#listdashboardsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1024,7 +1048,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDashboardsResponseResponseTypeDef](./type_defs.md#listdashboardsresponseresponsetypedef).
+[ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef).
 
 ### list_gateways
 
@@ -1036,7 +1060,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_gateways)
 
 Arguments mapping described in
-[ListGatewaysRequestTypeDef](./type_defs.md#listgatewaysrequesttypedef).
+[ListGatewaysRequestRequestTypeDef](./type_defs.md#listgatewaysrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1044,11 +1068,11 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListGatewaysResponseResponseTypeDef](./type_defs.md#listgatewaysresponseresponsetypedef).
+[ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef).
 
 ### list_portals
 
-Retrieves a paginated list of AWS IoT SiteWise Monitor portals.
+Retrieves a paginated list of IoT SiteWise Monitor portals.
 
 Type annotations for `boto3.client("iotsitewise").list_portals` method.
 
@@ -1056,7 +1080,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.list_portals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_portals)
 
 Arguments mapping described in
-[ListPortalsRequestTypeDef](./type_defs.md#listportalsrequesttypedef).
+[ListPortalsRequestRequestTypeDef](./type_defs.md#listportalsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1064,12 +1088,12 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListPortalsResponseResponseTypeDef](./type_defs.md#listportalsresponseresponsetypedef).
+[ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef).
 
 ### list_project_assets
 
-Retrieves a paginated list of assets associated with an AWS IoT SiteWise
-Monitor project.
+Retrieves a paginated list of assets associated with an IoT SiteWise Monitor
+project.
 
 Type annotations for `boto3.client("iotsitewise").list_project_assets` method.
 
@@ -1077,7 +1101,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.list_project_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_project_assets)
 
 Arguments mapping described in
-[ListProjectAssetsRequestTypeDef](./type_defs.md#listprojectassetsrequesttypedef).
+[ListProjectAssetsRequestRequestTypeDef](./type_defs.md#listprojectassetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1086,11 +1110,11 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListProjectAssetsResponseResponseTypeDef](./type_defs.md#listprojectassetsresponseresponsetypedef).
+[ListProjectAssetsResponseTypeDef](./type_defs.md#listprojectassetsresponsetypedef).
 
 ### list_projects
 
-Retrieves a paginated list of projects for an AWS IoT SiteWise Monitor portal.
+Retrieves a paginated list of projects for an IoT SiteWise Monitor portal.
 
 Type annotations for `boto3.client("iotsitewise").list_projects` method.
 
@@ -1098,7 +1122,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_projects)
 
 Arguments mapping described in
-[ListProjectsRequestTypeDef](./type_defs.md#listprojectsrequesttypedef).
+[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1107,11 +1131,11 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListProjectsResponseResponseTypeDef](./type_defs.md#listprojectsresponseresponsetypedef).
+[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
 
 ### list_tags_for_resource
 
-Retrieves the list of tags for an AWS IoT SiteWise resource.
+Retrieves the list of tags for an IoT SiteWise resource.
 
 Type annotations for `boto3.client("iotsitewise").list_tags_for_resource`
 method.
@@ -1120,18 +1144,18 @@ Boto3 documentation:
 [IoTSiteWise.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_default_encryption_configuration
 
-Sets the default encryption configuration for the AWS account.
+Sets the default encryption configuration for the Amazon Web Services account.
 
 Type annotations for
 `boto3.client("iotsitewise").put_default_encryption_configuration` method.
@@ -1140,7 +1164,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.put_default_encryption_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_default_encryption_configuration)
 
 Arguments mapping described in
-[PutDefaultEncryptionConfigurationRequestTypeDef](./type_defs.md#putdefaultencryptionconfigurationrequesttypedef).
+[PutDefaultEncryptionConfigurationRequestRequestTypeDef](./type_defs.md#putdefaultencryptionconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1149,11 +1173,11 @@ Keyword-only arguments:
 - `kmsKeyId`: `str`
 
 Returns
-[PutDefaultEncryptionConfigurationResponseResponseTypeDef](./type_defs.md#putdefaultencryptionconfigurationresponseresponsetypedef).
+[PutDefaultEncryptionConfigurationResponseTypeDef](./type_defs.md#putdefaultencryptionconfigurationresponsetypedef).
 
 ### put_logging_options
 
-Sets logging options for AWS IoT SiteWise.
+Sets logging options for IoT SiteWise.
 
 Type annotations for `boto3.client("iotsitewise").put_logging_options` method.
 
@@ -1161,7 +1185,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.put_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_logging_options)
 
 Arguments mapping described in
-[PutLoggingOptionsRequestTypeDef](./type_defs.md#putloggingoptionsrequesttypedef).
+[PutLoggingOptionsRequestRequestTypeDef](./type_defs.md#putloggingoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1170,9 +1194,31 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### put_storage_configuration
+
+Configures storage settings for IoT SiteWise.
+
+Type annotations for `boto3.client("iotsitewise").put_storage_configuration`
+method.
+
+Boto3 documentation:
+[IoTSiteWise.Client.put_storage_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_storage_configuration)
+
+Arguments mapping described in
+[PutStorageConfigurationRequestRequestTypeDef](./type_defs.md#putstorageconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `storageType`: [StorageTypeType](./literals.md#storagetypetype) *(required)*
+- `multiLayerStorage`:
+  [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
+
+Returns
+[PutStorageConfigurationResponseTypeDef](./type_defs.md#putstorageconfigurationresponsetypedef).
+
 ### tag_resource
 
-Adds tags to an AWS IoT SiteWise resource.
+Adds tags to an IoT SiteWise resource.
 
 Type annotations for `boto3.client("iotsitewise").tag_resource` method.
 
@@ -1180,7 +1226,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1191,7 +1237,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes a tag from an AWS IoT SiteWise resource.
+Removes a tag from an IoT SiteWise resource.
 
 Type annotations for `boto3.client("iotsitewise").untag_resource` method.
 
@@ -1199,7 +1245,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1210,8 +1256,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_access_policy
 
-Updates an existing access policy that specifies an identity's access to an AWS
-IoT SiteWise Monitor portal or project resource.
+Updates an existing access policy that specifies an identity's access to an IoT
+SiteWise Monitor portal or project resource.
 
 Type annotations for `boto3.client("iotsitewise").update_access_policy` method.
 
@@ -1219,7 +1265,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.update_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_access_policy)
 
 Arguments mapping described in
-[UpdateAccessPolicyRequestTypeDef](./type_defs.md#updateaccesspolicyrequesttypedef).
+[UpdateAccessPolicyRequestRequestTypeDef](./type_defs.md#updateaccesspolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1244,7 +1290,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.update_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset)
 
 Arguments mapping described in
-[UpdateAssetRequestTypeDef](./type_defs.md#updateassetrequesttypedef).
+[UpdateAssetRequestRequestTypeDef](./type_defs.md#updateassetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1253,7 +1299,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[UpdateAssetResponseResponseTypeDef](./type_defs.md#updateassetresponseresponsetypedef).
+[UpdateAssetResponseTypeDef](./type_defs.md#updateassetresponsetypedef).
 
 ### update_asset_model
 
@@ -1265,7 +1311,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.update_asset_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_model)
 
 Arguments mapping described in
-[UpdateAssetModelRequestTypeDef](./type_defs.md#updateassetmodelrequesttypedef).
+[UpdateAssetModelRequestRequestTypeDef](./type_defs.md#updateassetmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1281,7 +1327,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns
-[UpdateAssetModelResponseResponseTypeDef](./type_defs.md#updateassetmodelresponseresponsetypedef).
+[UpdateAssetModelResponseTypeDef](./type_defs.md#updateassetmodelresponsetypedef).
 
 ### update_asset_property
 
@@ -1294,7 +1340,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.update_asset_property](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_property)
 
 Arguments mapping described in
-[UpdateAssetPropertyRequestTypeDef](./type_defs.md#updateassetpropertyrequesttypedef).
+[UpdateAssetPropertyRequestRequestTypeDef](./type_defs.md#updateassetpropertyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1307,7 +1353,7 @@ Keyword-only arguments:
 
 ### update_dashboard
 
-Updates an AWS IoT SiteWise Monitor dashboard.
+Updates an IoT SiteWise Monitor dashboard.
 
 Type annotations for `boto3.client("iotsitewise").update_dashboard` method.
 
@@ -1315,7 +1361,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.update_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_dashboard)
 
 Arguments mapping described in
-[UpdateDashboardRequestTypeDef](./type_defs.md#updatedashboardrequesttypedef).
+[UpdateDashboardRequestRequestTypeDef](./type_defs.md#updatedashboardrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1337,7 +1383,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.update_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway)
 
 Arguments mapping described in
-[UpdateGatewayRequestTypeDef](./type_defs.md#updategatewayrequesttypedef).
+[UpdateGatewayRequestRequestTypeDef](./type_defs.md#updategatewayrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1356,7 +1402,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.update_gateway_capability_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway_capability_configuration)
 
 Arguments mapping described in
-[UpdateGatewayCapabilityConfigurationRequestTypeDef](./type_defs.md#updategatewaycapabilityconfigurationrequesttypedef).
+[UpdateGatewayCapabilityConfigurationRequestRequestTypeDef](./type_defs.md#updategatewaycapabilityconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1365,11 +1411,11 @@ Keyword-only arguments:
 - `capabilityConfiguration`: `str` *(required)*
 
 Returns
-[UpdateGatewayCapabilityConfigurationResponseResponseTypeDef](./type_defs.md#updategatewaycapabilityconfigurationresponseresponsetypedef).
+[UpdateGatewayCapabilityConfigurationResponseTypeDef](./type_defs.md#updategatewaycapabilityconfigurationresponsetypedef).
 
 ### update_portal
 
-Updates an AWS IoT SiteWise Monitor portal.
+Updates an IoT SiteWise Monitor portal.
 
 Type annotations for `boto3.client("iotsitewise").update_portal` method.
 
@@ -1377,7 +1423,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.update_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_portal)
 
 Arguments mapping described in
-[UpdatePortalRequestTypeDef](./type_defs.md#updateportalrequesttypedef).
+[UpdatePortalRequestRequestTypeDef](./type_defs.md#updateportalrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1392,11 +1438,11 @@ Keyword-only arguments:
 - `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
 
 Returns
-[UpdatePortalResponseResponseTypeDef](./type_defs.md#updateportalresponseresponsetypedef).
+[UpdatePortalResponseTypeDef](./type_defs.md#updateportalresponsetypedef).
 
 ### update_project
 
-Updates an AWS IoT SiteWise Monitor project.
+Updates an IoT SiteWise Monitor project.
 
 Type annotations for `boto3.client("iotsitewise").update_project` method.
 
@@ -1404,7 +1450,7 @@ Boto3 documentation:
 [IoTSiteWise.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_project)
 
 Arguments mapping described in
-[UpdateProjectRequestTypeDef](./type_defs.md#updateprojectrequesttypedef).
+[UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 

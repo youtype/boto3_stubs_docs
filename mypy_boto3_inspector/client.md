@@ -11,6 +11,7 @@ type annotations stubs module
   - [InspectorClient](#inspectorclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_attributes_to_findings](#add_attributes_to_findings)
     - [can_paginate](#can_paginate)
     - [create_assessment_target](#create_assessment_target)
@@ -97,6 +98,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+InspectorClient exceptions.
+
+Type annotations for `boto3.client("inspector").exceptions` method.
+
+Boto3 documentation:
+[Inspector.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_attributes_to_findings
 
 Assigns attributes (key and value pairs) to the findings that are specified by
@@ -109,7 +121,7 @@ Boto3 documentation:
 [Inspector.Client.add_attributes_to_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.add_attributes_to_findings)
 
 Arguments mapping described in
-[AddAttributesToFindingsRequestTypeDef](./type_defs.md#addattributestofindingsrequesttypedef).
+[AddAttributesToFindingsRequestRequestTypeDef](./type_defs.md#addattributestofindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -118,7 +130,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddAttributesToFindingsResponseResponseTypeDef](./type_defs.md#addattributestofindingsresponseresponsetypedef).
+[AddAttributesToFindingsResponseTypeDef](./type_defs.md#addattributestofindingsresponsetypedef).
 
 ### can_paginate
 
@@ -147,7 +159,7 @@ Boto3 documentation:
 [Inspector.Client.create_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_target)
 
 Arguments mapping described in
-[CreateAssessmentTargetRequestTypeDef](./type_defs.md#createassessmenttargetrequesttypedef).
+[CreateAssessmentTargetRequestRequestTypeDef](./type_defs.md#createassessmenttargetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -155,7 +167,7 @@ Keyword-only arguments:
 - `resourceGroupArn`: `str`
 
 Returns
-[CreateAssessmentTargetResponseResponseTypeDef](./type_defs.md#createassessmenttargetresponseresponsetypedef).
+[CreateAssessmentTargetResponseTypeDef](./type_defs.md#createassessmenttargetresponsetypedef).
 
 ### create_assessment_template
 
@@ -169,7 +181,7 @@ Boto3 documentation:
 [Inspector.Client.create_assessment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_template)
 
 Arguments mapping described in
-[CreateAssessmentTemplateRequestTypeDef](./type_defs.md#createassessmenttemplaterequesttypedef).
+[CreateAssessmentTemplateRequestRequestTypeDef](./type_defs.md#createassessmenttemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -181,7 +193,7 @@ Keyword-only arguments:
   `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 Returns
-[CreateAssessmentTemplateResponseResponseTypeDef](./type_defs.md#createassessmenttemplateresponseresponsetypedef).
+[CreateAssessmentTemplateResponseTypeDef](./type_defs.md#createassessmenttemplateresponsetypedef).
 
 ### create_exclusions_preview
 
@@ -195,14 +207,14 @@ Boto3 documentation:
 [Inspector.Client.create_exclusions_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_exclusions_preview)
 
 Arguments mapping described in
-[CreateExclusionsPreviewRequestTypeDef](./type_defs.md#createexclusionspreviewrequesttypedef).
+[CreateExclusionsPreviewRequestRequestTypeDef](./type_defs.md#createexclusionspreviewrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `assessmentTemplateArn`: `str` *(required)*
 
 Returns
-[CreateExclusionsPreviewResponseResponseTypeDef](./type_defs.md#createexclusionspreviewresponseresponsetypedef).
+[CreateExclusionsPreviewResponseTypeDef](./type_defs.md#createexclusionspreviewresponsetypedef).
 
 ### create_resource_group
 
@@ -216,7 +228,7 @@ Boto3 documentation:
 [Inspector.Client.create_resource_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_resource_group)
 
 Arguments mapping described in
-[CreateResourceGroupRequestTypeDef](./type_defs.md#createresourcegrouprequesttypedef).
+[CreateResourceGroupRequestRequestTypeDef](./type_defs.md#createresourcegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,7 +237,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateResourceGroupResponseResponseTypeDef](./type_defs.md#createresourcegroupresponseresponsetypedef).
+[CreateResourceGroupResponseTypeDef](./type_defs.md#createresourcegroupresponsetypedef).
 
 ### delete_assessment_run
 
@@ -237,7 +249,7 @@ Boto3 documentation:
 [Inspector.Client.delete_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_run)
 
 Arguments mapping described in
-[DeleteAssessmentRunRequestTypeDef](./type_defs.md#deleteassessmentrunrequesttypedef).
+[DeleteAssessmentRunRequestRequestTypeDef](./type_defs.md#deleteassessmentrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -255,7 +267,7 @@ Boto3 documentation:
 [Inspector.Client.delete_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_target)
 
 Arguments mapping described in
-[DeleteAssessmentTargetRequestTypeDef](./type_defs.md#deleteassessmenttargetrequesttypedef).
+[DeleteAssessmentTargetRequestRequestTypeDef](./type_defs.md#deleteassessmenttargetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,7 +285,7 @@ Boto3 documentation:
 [Inspector.Client.delete_assessment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_template)
 
 Arguments mapping described in
-[DeleteAssessmentTemplateRequestTypeDef](./type_defs.md#deleteassessmenttemplaterequesttypedef).
+[DeleteAssessmentTemplateRequestRequestTypeDef](./type_defs.md#deleteassessmenttemplaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -291,14 +303,14 @@ Boto3 documentation:
 [Inspector.Client.describe_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_runs)
 
 Arguments mapping described in
-[DescribeAssessmentRunsRequestTypeDef](./type_defs.md#describeassessmentrunsrequesttypedef).
+[DescribeAssessmentRunsRequestRequestTypeDef](./type_defs.md#describeassessmentrunsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `assessmentRunArns`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeAssessmentRunsResponseResponseTypeDef](./type_defs.md#describeassessmentrunsresponseresponsetypedef).
+[DescribeAssessmentRunsResponseTypeDef](./type_defs.md#describeassessmentrunsresponsetypedef).
 
 ### describe_assessment_targets
 
@@ -312,14 +324,14 @@ Boto3 documentation:
 [Inspector.Client.describe_assessment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_targets)
 
 Arguments mapping described in
-[DescribeAssessmentTargetsRequestTypeDef](./type_defs.md#describeassessmenttargetsrequesttypedef).
+[DescribeAssessmentTargetsRequestRequestTypeDef](./type_defs.md#describeassessmenttargetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `assessmentTargetArns`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeAssessmentTargetsResponseResponseTypeDef](./type_defs.md#describeassessmenttargetsresponseresponsetypedef).
+[DescribeAssessmentTargetsResponseTypeDef](./type_defs.md#describeassessmenttargetsresponsetypedef).
 
 ### describe_assessment_templates
 
@@ -333,14 +345,14 @@ Boto3 documentation:
 [Inspector.Client.describe_assessment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_templates)
 
 Arguments mapping described in
-[DescribeAssessmentTemplatesRequestTypeDef](./type_defs.md#describeassessmenttemplatesrequesttypedef).
+[DescribeAssessmentTemplatesRequestRequestTypeDef](./type_defs.md#describeassessmenttemplatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `assessmentTemplateArns`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeAssessmentTemplatesResponseResponseTypeDef](./type_defs.md#describeassessmenttemplatesresponseresponsetypedef).
+[DescribeAssessmentTemplatesResponseTypeDef](./type_defs.md#describeassessmenttemplatesresponsetypedef).
 
 ### describe_cross_account_access_role
 
@@ -354,7 +366,7 @@ Boto3 documentation:
 [Inspector.Client.describe_cross_account_access_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_cross_account_access_role)
 
 Returns
-[DescribeCrossAccountAccessRoleResponseResponseTypeDef](./type_defs.md#describecrossaccountaccessroleresponseresponsetypedef).
+[DescribeCrossAccountAccessRoleResponseTypeDef](./type_defs.md#describecrossaccountaccessroleresponsetypedef).
 
 ### describe_exclusions
 
@@ -366,7 +378,7 @@ Boto3 documentation:
 [Inspector.Client.describe_exclusions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_exclusions)
 
 Arguments mapping described in
-[DescribeExclusionsRequestTypeDef](./type_defs.md#describeexclusionsrequesttypedef).
+[DescribeExclusionsRequestRequestTypeDef](./type_defs.md#describeexclusionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -374,7 +386,7 @@ Keyword-only arguments:
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
 Returns
-[DescribeExclusionsResponseResponseTypeDef](./type_defs.md#describeexclusionsresponseresponsetypedef).
+[DescribeExclusionsResponseTypeDef](./type_defs.md#describeexclusionsresponsetypedef).
 
 ### describe_findings
 
@@ -386,7 +398,7 @@ Boto3 documentation:
 [Inspector.Client.describe_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_findings)
 
 Arguments mapping described in
-[DescribeFindingsRequestTypeDef](./type_defs.md#describefindingsrequesttypedef).
+[DescribeFindingsRequestRequestTypeDef](./type_defs.md#describefindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -394,7 +406,7 @@ Keyword-only arguments:
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
 Returns
-[DescribeFindingsResponseResponseTypeDef](./type_defs.md#describefindingsresponseresponsetypedef).
+[DescribeFindingsResponseTypeDef](./type_defs.md#describefindingsresponsetypedef).
 
 ### describe_resource_groups
 
@@ -408,14 +420,14 @@ Boto3 documentation:
 [Inspector.Client.describe_resource_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_resource_groups)
 
 Arguments mapping described in
-[DescribeResourceGroupsRequestTypeDef](./type_defs.md#describeresourcegroupsrequesttypedef).
+[DescribeResourceGroupsRequestRequestTypeDef](./type_defs.md#describeresourcegroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceGroupArns`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeResourceGroupsResponseResponseTypeDef](./type_defs.md#describeresourcegroupsresponseresponsetypedef).
+[DescribeResourceGroupsResponseTypeDef](./type_defs.md#describeresourcegroupsresponsetypedef).
 
 ### describe_rules_packages
 
@@ -429,7 +441,7 @@ Boto3 documentation:
 [Inspector.Client.describe_rules_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_rules_packages)
 
 Arguments mapping described in
-[DescribeRulesPackagesRequestTypeDef](./type_defs.md#describerulespackagesrequesttypedef).
+[DescribeRulesPackagesRequestRequestTypeDef](./type_defs.md#describerulespackagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -437,7 +449,7 @@ Keyword-only arguments:
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
 Returns
-[DescribeRulesPackagesResponseResponseTypeDef](./type_defs.md#describerulespackagesresponseresponsetypedef).
+[DescribeRulesPackagesResponseTypeDef](./type_defs.md#describerulespackagesresponsetypedef).
 
 ### generate_presigned_url
 
@@ -468,7 +480,7 @@ Boto3 documentation:
 [Inspector.Client.get_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_assessment_report)
 
 Arguments mapping described in
-[GetAssessmentReportRequestTypeDef](./type_defs.md#getassessmentreportrequesttypedef).
+[GetAssessmentReportRequestRequestTypeDef](./type_defs.md#getassessmentreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -478,7 +490,7 @@ Keyword-only arguments:
 - `reportType`: [ReportTypeType](./literals.md#reporttypetype) *(required)*
 
 Returns
-[GetAssessmentReportResponseResponseTypeDef](./type_defs.md#getassessmentreportresponseresponsetypedef).
+[GetAssessmentReportResponseTypeDef](./type_defs.md#getassessmentreportresponsetypedef).
 
 ### get_exclusions_preview
 
@@ -491,7 +503,7 @@ Boto3 documentation:
 [Inspector.Client.get_exclusions_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_exclusions_preview)
 
 Arguments mapping described in
-[GetExclusionsPreviewRequestTypeDef](./type_defs.md#getexclusionspreviewrequesttypedef).
+[GetExclusionsPreviewRequestRequestTypeDef](./type_defs.md#getexclusionspreviewrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -502,7 +514,7 @@ Keyword-only arguments:
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
 Returns
-[GetExclusionsPreviewResponseResponseTypeDef](./type_defs.md#getexclusionspreviewresponseresponsetypedef).
+[GetExclusionsPreviewResponseTypeDef](./type_defs.md#getexclusionspreviewresponsetypedef).
 
 ### get_telemetry_metadata
 
@@ -514,14 +526,14 @@ Boto3 documentation:
 [Inspector.Client.get_telemetry_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_telemetry_metadata)
 
 Arguments mapping described in
-[GetTelemetryMetadataRequestTypeDef](./type_defs.md#gettelemetrymetadatarequesttypedef).
+[GetTelemetryMetadataRequestRequestTypeDef](./type_defs.md#gettelemetrymetadatarequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `assessmentRunArn`: `str` *(required)*
 
 Returns
-[GetTelemetryMetadataResponseResponseTypeDef](./type_defs.md#gettelemetrymetadataresponseresponsetypedef).
+[GetTelemetryMetadataResponseTypeDef](./type_defs.md#gettelemetrymetadataresponsetypedef).
 
 ### list_assessment_run_agents
 
@@ -535,7 +547,7 @@ Boto3 documentation:
 [Inspector.Client.list_assessment_run_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_run_agents)
 
 Arguments mapping described in
-[ListAssessmentRunAgentsRequestTypeDef](./type_defs.md#listassessmentrunagentsrequesttypedef).
+[ListAssessmentRunAgentsRequestRequestTypeDef](./type_defs.md#listassessmentrunagentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -545,7 +557,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentRunAgentsResponseResponseTypeDef](./type_defs.md#listassessmentrunagentsresponseresponsetypedef).
+[ListAssessmentRunAgentsResponseTypeDef](./type_defs.md#listassessmentrunagentsresponsetypedef).
 
 ### list_assessment_runs
 
@@ -558,7 +570,7 @@ Boto3 documentation:
 [Inspector.Client.list_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_runs)
 
 Arguments mapping described in
-[ListAssessmentRunsRequestTypeDef](./type_defs.md#listassessmentrunsrequesttypedef).
+[ListAssessmentRunsRequestRequestTypeDef](./type_defs.md#listassessmentrunsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -569,7 +581,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentRunsResponseResponseTypeDef](./type_defs.md#listassessmentrunsresponseresponsetypedef).
+[ListAssessmentRunsResponseTypeDef](./type_defs.md#listassessmentrunsresponsetypedef).
 
 ### list_assessment_targets
 
@@ -582,7 +594,7 @@ Boto3 documentation:
 [Inspector.Client.list_assessment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_targets)
 
 Arguments mapping described in
-[ListAssessmentTargetsRequestTypeDef](./type_defs.md#listassessmenttargetsrequesttypedef).
+[ListAssessmentTargetsRequestRequestTypeDef](./type_defs.md#listassessmenttargetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -592,7 +604,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentTargetsResponseResponseTypeDef](./type_defs.md#listassessmenttargetsresponseresponsetypedef).
+[ListAssessmentTargetsResponseTypeDef](./type_defs.md#listassessmenttargetsresponsetypedef).
 
 ### list_assessment_templates
 
@@ -606,7 +618,7 @@ Boto3 documentation:
 [Inspector.Client.list_assessment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_templates)
 
 Arguments mapping described in
-[ListAssessmentTemplatesRequestTypeDef](./type_defs.md#listassessmenttemplatesrequesttypedef).
+[ListAssessmentTemplatesRequestRequestTypeDef](./type_defs.md#listassessmenttemplatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -617,7 +629,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAssessmentTemplatesResponseResponseTypeDef](./type_defs.md#listassessmenttemplatesresponseresponsetypedef).
+[ListAssessmentTemplatesResponseTypeDef](./type_defs.md#listassessmenttemplatesresponsetypedef).
 
 ### list_event_subscriptions
 
@@ -631,7 +643,7 @@ Boto3 documentation:
 [Inspector.Client.list_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_event_subscriptions)
 
 Arguments mapping described in
-[ListEventSubscriptionsRequestTypeDef](./type_defs.md#listeventsubscriptionsrequesttypedef).
+[ListEventSubscriptionsRequestRequestTypeDef](./type_defs.md#listeventsubscriptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -640,7 +652,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListEventSubscriptionsResponseResponseTypeDef](./type_defs.md#listeventsubscriptionsresponseresponsetypedef).
+[ListEventSubscriptionsResponseTypeDef](./type_defs.md#listeventsubscriptionsresponsetypedef).
 
 ### list_exclusions
 
@@ -652,7 +664,7 @@ Boto3 documentation:
 [Inspector.Client.list_exclusions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_exclusions)
 
 Arguments mapping described in
-[ListExclusionsRequestTypeDef](./type_defs.md#listexclusionsrequesttypedef).
+[ListExclusionsRequestRequestTypeDef](./type_defs.md#listexclusionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -661,7 +673,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListExclusionsResponseResponseTypeDef](./type_defs.md#listexclusionsresponseresponsetypedef).
+[ListExclusionsResponseTypeDef](./type_defs.md#listexclusionsresponsetypedef).
 
 ### list_findings
 
@@ -674,7 +686,7 @@ Boto3 documentation:
 [Inspector.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_findings)
 
 Arguments mapping described in
-[ListFindingsRequestTypeDef](./type_defs.md#listfindingsrequesttypedef).
+[ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -684,7 +696,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListFindingsResponseResponseTypeDef](./type_defs.md#listfindingsresponseresponsetypedef).
+[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
 
 ### list_rules_packages
 
@@ -696,7 +708,7 @@ Boto3 documentation:
 [Inspector.Client.list_rules_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_rules_packages)
 
 Arguments mapping described in
-[ListRulesPackagesRequestTypeDef](./type_defs.md#listrulespackagesrequesttypedef).
+[ListRulesPackagesRequestRequestTypeDef](./type_defs.md#listrulespackagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -704,7 +716,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListRulesPackagesResponseResponseTypeDef](./type_defs.md#listrulespackagesresponseresponsetypedef).
+[ListRulesPackagesResponseTypeDef](./type_defs.md#listrulespackagesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -716,14 +728,14 @@ Boto3 documentation:
 [Inspector.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### preview_agents
 
@@ -736,7 +748,7 @@ Boto3 documentation:
 [Inspector.Client.preview_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.preview_agents)
 
 Arguments mapping described in
-[PreviewAgentsRequestTypeDef](./type_defs.md#previewagentsrequesttypedef).
+[PreviewAgentsRequestRequestTypeDef](./type_defs.md#previewagentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -745,7 +757,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[PreviewAgentsResponseResponseTypeDef](./type_defs.md#previewagentsresponseresponsetypedef).
+[PreviewAgentsResponseTypeDef](./type_defs.md#previewagentsresponsetypedef).
 
 ### register_cross_account_access_role
 
@@ -759,7 +771,7 @@ Boto3 documentation:
 [Inspector.Client.register_cross_account_access_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.register_cross_account_access_role)
 
 Arguments mapping described in
-[RegisterCrossAccountAccessRoleRequestTypeDef](./type_defs.md#registercrossaccountaccessrolerequesttypedef).
+[RegisterCrossAccountAccessRoleRequestRequestTypeDef](./type_defs.md#registercrossaccountaccessrolerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -778,7 +790,7 @@ Boto3 documentation:
 [Inspector.Client.remove_attributes_from_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.remove_attributes_from_findings)
 
 Arguments mapping described in
-[RemoveAttributesFromFindingsRequestTypeDef](./type_defs.md#removeattributesfromfindingsrequesttypedef).
+[RemoveAttributesFromFindingsRequestRequestTypeDef](./type_defs.md#removeattributesfromfindingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -786,7 +798,7 @@ Keyword-only arguments:
 - `attributeKeys`: `List`\[`str`\] *(required)*
 
 Returns
-[RemoveAttributesFromFindingsResponseResponseTypeDef](./type_defs.md#removeattributesfromfindingsresponseresponsetypedef).
+[RemoveAttributesFromFindingsResponseTypeDef](./type_defs.md#removeattributesfromfindingsresponsetypedef).
 
 ### set_tags_for_resource
 
@@ -799,7 +811,7 @@ Boto3 documentation:
 [Inspector.Client.set_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.set_tags_for_resource)
 
 Arguments mapping described in
-[SetTagsForResourceRequestTypeDef](./type_defs.md#settagsforresourcerequesttypedef).
+[SetTagsForResourceRequestRequestTypeDef](./type_defs.md#settagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -816,7 +828,7 @@ Boto3 documentation:
 [Inspector.Client.start_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.start_assessment_run)
 
 Arguments mapping described in
-[StartAssessmentRunRequestTypeDef](./type_defs.md#startassessmentrunrequesttypedef).
+[StartAssessmentRunRequestRequestTypeDef](./type_defs.md#startassessmentrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -824,7 +836,7 @@ Keyword-only arguments:
 - `assessmentRunName`: `str`
 
 Returns
-[StartAssessmentRunResponseResponseTypeDef](./type_defs.md#startassessmentrunresponseresponsetypedef).
+[StartAssessmentRunResponseTypeDef](./type_defs.md#startassessmentrunresponsetypedef).
 
 ### stop_assessment_run
 
@@ -836,7 +848,7 @@ Boto3 documentation:
 [Inspector.Client.stop_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.stop_assessment_run)
 
 Arguments mapping described in
-[StopAssessmentRunRequestTypeDef](./type_defs.md#stopassessmentrunrequesttypedef).
+[StopAssessmentRunRequestRequestTypeDef](./type_defs.md#stopassessmentrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -854,7 +866,7 @@ Boto3 documentation:
 [Inspector.Client.subscribe_to_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.subscribe_to_event)
 
 Arguments mapping described in
-[SubscribeToEventRequestTypeDef](./type_defs.md#subscribetoeventrequesttypedef).
+[SubscribeToEventRequestRequestTypeDef](./type_defs.md#subscribetoeventrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -873,7 +885,7 @@ Boto3 documentation:
 [Inspector.Client.unsubscribe_from_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.unsubscribe_from_event)
 
 Arguments mapping described in
-[UnsubscribeFromEventRequestTypeDef](./type_defs.md#unsubscribefromeventrequesttypedef).
+[UnsubscribeFromEventRequestRequestTypeDef](./type_defs.md#unsubscribefromeventrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -893,7 +905,7 @@ Boto3 documentation:
 [Inspector.Client.update_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.update_assessment_target)
 
 Arguments mapping described in
-[UpdateAssessmentTargetRequestTypeDef](./type_defs.md#updateassessmenttargetrequesttypedef).
+[UpdateAssessmentTargetRequestRequestTypeDef](./type_defs.md#updateassessmenttargetrequestrequesttypedef).
 
 Keyword-only arguments:
 

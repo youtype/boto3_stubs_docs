@@ -11,6 +11,7 @@ type annotations stubs module
   - [IoTDataPlaneClient](#iotdataplaneclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [delete_thing_shadow](#delete_thing_shadow)
     - [generate_presigned_url](#generate_presigned_url)
@@ -63,6 +64,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IoTDataPlaneClient exceptions.
+
+Type annotations for `boto3.client("iot-data").exceptions` method.
+
+Boto3 documentation:
+[IoTDataPlane.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -88,7 +100,7 @@ Boto3 documentation:
 [IoTDataPlane.Client.delete_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.delete_thing_shadow)
 
 Arguments mapping described in
-[DeleteThingShadowRequestTypeDef](./type_defs.md#deletethingshadowrequesttypedef).
+[DeleteThingShadowRequestRequestTypeDef](./type_defs.md#deletethingshadowrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -96,7 +108,7 @@ Keyword-only arguments:
 - `shadowName`: `str`
 
 Returns
-[DeleteThingShadowResponseResponseTypeDef](./type_defs.md#deletethingshadowresponseresponsetypedef).
+[DeleteThingShadowResponseTypeDef](./type_defs.md#deletethingshadowresponsetypedef).
 
 ### generate_presigned_url
 
@@ -126,7 +138,7 @@ Boto3 documentation:
 [IoTDataPlane.Client.get_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.get_thing_shadow)
 
 Arguments mapping described in
-[GetThingShadowRequestTypeDef](./type_defs.md#getthingshadowrequesttypedef).
+[GetThingShadowRequestRequestTypeDef](./type_defs.md#getthingshadowrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -134,7 +146,7 @@ Keyword-only arguments:
 - `shadowName`: `str`
 
 Returns
-[GetThingShadowResponseResponseTypeDef](./type_defs.md#getthingshadowresponseresponsetypedef).
+[GetThingShadowResponseTypeDef](./type_defs.md#getthingshadowresponsetypedef).
 
 ### list_named_shadows_for_thing
 
@@ -147,7 +159,7 @@ Boto3 documentation:
 [IoTDataPlane.Client.list_named_shadows_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.list_named_shadows_for_thing)
 
 Arguments mapping described in
-[ListNamedShadowsForThingRequestTypeDef](./type_defs.md#listnamedshadowsforthingrequesttypedef).
+[ListNamedShadowsForThingRequestRequestTypeDef](./type_defs.md#listnamedshadowsforthingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,7 +168,7 @@ Keyword-only arguments:
 - `pageSize`: `int`
 
 Returns
-[ListNamedShadowsForThingResponseResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponseresponsetypedef).
+[ListNamedShadowsForThingResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponsetypedef).
 
 ### publish
 
@@ -168,7 +180,7 @@ Boto3 documentation:
 [IoTDataPlane.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.publish)
 
 Arguments mapping described in
-[PublishRequestTypeDef](./type_defs.md#publishrequesttypedef).
+[PublishRequestRequestTypeDef](./type_defs.md#publishrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -186,7 +198,7 @@ Boto3 documentation:
 [IoTDataPlane.Client.update_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.update_thing_shadow)
 
 Arguments mapping described in
-[UpdateThingShadowRequestTypeDef](./type_defs.md#updatethingshadowrequesttypedef).
+[UpdateThingShadowRequestRequestTypeDef](./type_defs.md#updatethingshadowrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -195,4 +207,4 @@ Keyword-only arguments:
 - `shadowName`: `str`
 
 Returns
-[UpdateThingShadowResponseResponseTypeDef](./type_defs.md#updatethingshadowresponseresponsetypedef).
+[UpdateThingShadowResponseTypeDef](./type_defs.md#updatethingshadowresponsetypedef).

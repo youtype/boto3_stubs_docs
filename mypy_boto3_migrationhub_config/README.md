@@ -34,6 +34,7 @@ from mypy_boto3_migrationhub_config.client import MigrationHubConfigClient
 - [can_paginate](./client.md#can_paginate)
 - [create_home_region_control](./client.md#create_home_region_control)
 - [describe_home_region_controls](./client.md#describe_home_region_controls)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_home_region](./client.md#get_home_region)
 
@@ -69,14 +70,14 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_migrationhub_config.type_defs import CreateHomeRegionControlRequestTypeDef, ...
+from mypy_boto3_migrationhub_config.type_defs import CreateHomeRegionControlRequestRequestTypeDef, ...
 ```
 
-- [CreateHomeRegionControlRequestTypeDef](./type_defs.md#createhomeregioncontrolrequesttypedef)
-- [CreateHomeRegionControlResultResponseTypeDef](./type_defs.md#createhomeregioncontrolresultresponsetypedef)
-- [DescribeHomeRegionControlsRequestTypeDef](./type_defs.md#describehomeregioncontrolsrequesttypedef)
-- [DescribeHomeRegionControlsResultResponseTypeDef](./type_defs.md#describehomeregioncontrolsresultresponsetypedef)
-- [GetHomeRegionResultResponseTypeDef](./type_defs.md#gethomeregionresultresponsetypedef)
+- [CreateHomeRegionControlRequestRequestTypeDef](./type_defs.md#createhomeregioncontrolrequestrequesttypedef)
+- [CreateHomeRegionControlResultTypeDef](./type_defs.md#createhomeregioncontrolresulttypedef)
+- [DescribeHomeRegionControlsRequestRequestTypeDef](./type_defs.md#describehomeregioncontrolsrequestrequesttypedef)
+- [DescribeHomeRegionControlsResultTypeDef](./type_defs.md#describehomeregioncontrolsresulttypedef)
+- [GetHomeRegionResultTypeDef](./type_defs.md#gethomeregionresulttypedef)
 - [HomeRegionControlTypeDef](./type_defs.md#homeregioncontroltypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TargetTypeDef](./type_defs.md#targettypedef)

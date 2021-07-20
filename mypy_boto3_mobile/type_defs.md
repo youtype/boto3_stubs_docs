@@ -9,29 +9,29 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 Mobile module](#typed-dictionaries-for-boto3-mobile-module)
   - [BundleDetailsTypeDef](#bundledetailstypedef)
-  - [CreateProjectRequestTypeDef](#createprojectrequesttypedef)
-  - [CreateProjectResultResponseTypeDef](#createprojectresultresponsetypedef)
-  - [DeleteProjectRequestTypeDef](#deleteprojectrequesttypedef)
-  - [DeleteProjectResultResponseTypeDef](#deleteprojectresultresponsetypedef)
-  - [DescribeBundleRequestTypeDef](#describebundlerequesttypedef)
-  - [DescribeBundleResultResponseTypeDef](#describebundleresultresponsetypedef)
-  - [DescribeProjectRequestTypeDef](#describeprojectrequesttypedef)
-  - [DescribeProjectResultResponseTypeDef](#describeprojectresultresponsetypedef)
-  - [ExportBundleRequestTypeDef](#exportbundlerequesttypedef)
-  - [ExportBundleResultResponseTypeDef](#exportbundleresultresponsetypedef)
-  - [ExportProjectRequestTypeDef](#exportprojectrequesttypedef)
-  - [ExportProjectResultResponseTypeDef](#exportprojectresultresponsetypedef)
-  - [ListBundlesRequestTypeDef](#listbundlesrequesttypedef)
-  - [ListBundlesResultResponseTypeDef](#listbundlesresultresponsetypedef)
-  - [ListProjectsRequestTypeDef](#listprojectsrequesttypedef)
-  - [ListProjectsResultResponseTypeDef](#listprojectsresultresponsetypedef)
+  - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
+  - [CreateProjectResultTypeDef](#createprojectresulttypedef)
+  - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
+  - [DeleteProjectResultTypeDef](#deleteprojectresulttypedef)
+  - [DescribeBundleRequestRequestTypeDef](#describebundlerequestrequesttypedef)
+  - [DescribeBundleResultTypeDef](#describebundleresulttypedef)
+  - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
+  - [DescribeProjectResultTypeDef](#describeprojectresulttypedef)
+  - [ExportBundleRequestRequestTypeDef](#exportbundlerequestrequesttypedef)
+  - [ExportBundleResultTypeDef](#exportbundleresulttypedef)
+  - [ExportProjectRequestRequestTypeDef](#exportprojectrequestrequesttypedef)
+  - [ExportProjectResultTypeDef](#exportprojectresulttypedef)
+  - [ListBundlesRequestRequestTypeDef](#listbundlesrequestrequesttypedef)
+  - [ListBundlesResultTypeDef](#listbundlesresulttypedef)
+  - [ListProjectsRequestRequestTypeDef](#listprojectsrequestrequesttypedef)
+  - [ListProjectsResultTypeDef](#listprojectsresulttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ProjectDetailsTypeDef](#projectdetailstypedef)
   - [ProjectSummaryTypeDef](#projectsummarytypedef)
   - [ResourceTypeDef](#resourcetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [UpdateProjectRequestTypeDef](#updateprojectrequesttypedef)
-  - [UpdateProjectResultResponseTypeDef](#updateprojectresultresponsetypedef)
+  - [UpdateProjectRequestRequestTypeDef](#updateprojectrequestrequesttypedef)
+  - [UpdateProjectResultTypeDef](#updateprojectresulttypedef)
 
 ## BundleDetailsTypeDef
 
@@ -48,10 +48,10 @@ Optional fields:
 - `iconUrl`: `str`
 - `availablePlatforms`: `List`\[[PlatformType](./literals.md#platformtype)\]
 
-## CreateProjectRequestTypeDef
+## CreateProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import CreateProjectRequestTypeDef
+from mypy_boto3_mobile.type_defs import CreateProjectRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -61,10 +61,10 @@ Optional fields:
 - `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `snapshotId`: `str`
 
-## CreateProjectResultResponseTypeDef
+## CreateProjectResultTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import CreateProjectResultResponseTypeDef
+from mypy_boto3_mobile.type_defs import CreateProjectResultTypeDef
 ```
 
 Required fields:
@@ -73,20 +73,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteProjectRequestTypeDef
+## DeleteProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import DeleteProjectRequestTypeDef
+from mypy_boto3_mobile.type_defs import DeleteProjectRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `projectId`: `str`
 
-## DeleteProjectResultResponseTypeDef
+## DeleteProjectResultTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import DeleteProjectResultResponseTypeDef
+from mypy_boto3_mobile.type_defs import DeleteProjectResultTypeDef
 ```
 
 Required fields:
@@ -98,20 +98,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeBundleRequestTypeDef
+## DescribeBundleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import DescribeBundleRequestTypeDef
+from mypy_boto3_mobile.type_defs import DescribeBundleRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `bundleId`: `str`
 
-## DescribeBundleResultResponseTypeDef
+## DescribeBundleResultTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import DescribeBundleResultResponseTypeDef
+from mypy_boto3_mobile.type_defs import DescribeBundleResultTypeDef
 ```
 
 Required fields:
@@ -120,10 +120,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeProjectRequestTypeDef
+## DescribeProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import DescribeProjectRequestTypeDef
+from mypy_boto3_mobile.type_defs import DescribeProjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -134,10 +134,10 @@ Optional fields:
 
 - `syncFromResources`: `bool`
 
-## DescribeProjectResultResponseTypeDef
+## DescribeProjectResultTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import DescribeProjectResultResponseTypeDef
+from mypy_boto3_mobile.type_defs import DescribeProjectResultTypeDef
 ```
 
 Required fields:
@@ -146,10 +146,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExportBundleRequestTypeDef
+## ExportBundleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import ExportBundleRequestTypeDef
+from mypy_boto3_mobile.type_defs import ExportBundleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -161,10 +161,10 @@ Optional fields:
 - `projectId`: `str`
 - `platform`: [PlatformType](./literals.md#platformtype)
 
-## ExportBundleResultResponseTypeDef
+## ExportBundleResultTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import ExportBundleResultResponseTypeDef
+from mypy_boto3_mobile.type_defs import ExportBundleResultTypeDef
 ```
 
 Required fields:
@@ -173,20 +173,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExportProjectRequestTypeDef
+## ExportProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import ExportProjectRequestTypeDef
+from mypy_boto3_mobile.type_defs import ExportProjectRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `projectId`: `str`
 
-## ExportProjectResultResponseTypeDef
+## ExportProjectResultTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import ExportProjectResultResponseTypeDef
+from mypy_boto3_mobile.type_defs import ExportProjectResultTypeDef
 ```
 
 Required fields:
@@ -197,10 +197,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListBundlesRequestTypeDef
+## ListBundlesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import ListBundlesRequestTypeDef
+from mypy_boto3_mobile.type_defs import ListBundlesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -208,10 +208,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListBundlesResultResponseTypeDef
+## ListBundlesResultTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import ListBundlesResultResponseTypeDef
+from mypy_boto3_mobile.type_defs import ListBundlesResultTypeDef
 ```
 
 Required fields:
@@ -222,10 +222,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListProjectsRequestTypeDef
+## ListProjectsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import ListProjectsRequestTypeDef
+from mypy_boto3_mobile.type_defs import ListProjectsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -233,10 +233,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListProjectsResultResponseTypeDef
+## ListProjectsResultTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import ListProjectsResultResponseTypeDef
+from mypy_boto3_mobile.type_defs import ListProjectsResultTypeDef
 ```
 
 Required fields:
@@ -315,10 +315,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## UpdateProjectRequestTypeDef
+## UpdateProjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import UpdateProjectRequestTypeDef
+from mypy_boto3_mobile.type_defs import UpdateProjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -329,10 +329,10 @@ Optional fields:
 
 - `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
-## UpdateProjectResultResponseTypeDef
+## UpdateProjectResultTypeDef
 
 ```python
-from mypy_boto3_mobile.type_defs import UpdateProjectResultResponseTypeDef
+from mypy_boto3_mobile.type_defs import UpdateProjectResultTypeDef
 ```
 
 Required fields:

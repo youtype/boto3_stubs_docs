@@ -37,4 +37,4 @@ Arguments for `ListFragmentsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFragmentsPaginator.paginate` returns
-`Iterator`\[[ListFragmentsOutputResponseTypeDef](./type_defs.md#listfragmentsoutputresponsetypedef)\].
+`Iterator`\[[ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef)\].

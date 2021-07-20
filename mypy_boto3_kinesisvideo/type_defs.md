@@ -10,28 +10,28 @@ type annotations stubs module
 - [Typed dictionaries for boto3 KinesisVideo module](#typed-dictionaries-for-boto3-kinesisvideo-module)
   - [ChannelInfoTypeDef](#channelinfotypedef)
   - [ChannelNameConditionTypeDef](#channelnameconditiontypedef)
-  - [CreateSignalingChannelInputTypeDef](#createsignalingchannelinputtypedef)
-  - [CreateSignalingChannelOutputResponseTypeDef](#createsignalingchanneloutputresponsetypedef)
-  - [CreateStreamInputTypeDef](#createstreaminputtypedef)
-  - [CreateStreamOutputResponseTypeDef](#createstreamoutputresponsetypedef)
-  - [DeleteSignalingChannelInputTypeDef](#deletesignalingchannelinputtypedef)
-  - [DeleteStreamInputTypeDef](#deletestreaminputtypedef)
-  - [DescribeSignalingChannelInputTypeDef](#describesignalingchannelinputtypedef)
-  - [DescribeSignalingChannelOutputResponseTypeDef](#describesignalingchanneloutputresponsetypedef)
-  - [DescribeStreamInputTypeDef](#describestreaminputtypedef)
-  - [DescribeStreamOutputResponseTypeDef](#describestreamoutputresponsetypedef)
-  - [GetDataEndpointInputTypeDef](#getdataendpointinputtypedef)
-  - [GetDataEndpointOutputResponseTypeDef](#getdataendpointoutputresponsetypedef)
-  - [GetSignalingChannelEndpointInputTypeDef](#getsignalingchannelendpointinputtypedef)
-  - [GetSignalingChannelEndpointOutputResponseTypeDef](#getsignalingchannelendpointoutputresponsetypedef)
-  - [ListSignalingChannelsInputTypeDef](#listsignalingchannelsinputtypedef)
-  - [ListSignalingChannelsOutputResponseTypeDef](#listsignalingchannelsoutputresponsetypedef)
-  - [ListStreamsInputTypeDef](#liststreamsinputtypedef)
-  - [ListStreamsOutputResponseTypeDef](#liststreamsoutputresponsetypedef)
-  - [ListTagsForResourceInputTypeDef](#listtagsforresourceinputtypedef)
-  - [ListTagsForResourceOutputResponseTypeDef](#listtagsforresourceoutputresponsetypedef)
-  - [ListTagsForStreamInputTypeDef](#listtagsforstreaminputtypedef)
-  - [ListTagsForStreamOutputResponseTypeDef](#listtagsforstreamoutputresponsetypedef)
+  - [CreateSignalingChannelInputRequestTypeDef](#createsignalingchannelinputrequesttypedef)
+  - [CreateSignalingChannelOutputTypeDef](#createsignalingchanneloutputtypedef)
+  - [CreateStreamInputRequestTypeDef](#createstreaminputrequesttypedef)
+  - [CreateStreamOutputTypeDef](#createstreamoutputtypedef)
+  - [DeleteSignalingChannelInputRequestTypeDef](#deletesignalingchannelinputrequesttypedef)
+  - [DeleteStreamInputRequestTypeDef](#deletestreaminputrequesttypedef)
+  - [DescribeSignalingChannelInputRequestTypeDef](#describesignalingchannelinputrequesttypedef)
+  - [DescribeSignalingChannelOutputTypeDef](#describesignalingchanneloutputtypedef)
+  - [DescribeStreamInputRequestTypeDef](#describestreaminputrequesttypedef)
+  - [DescribeStreamOutputTypeDef](#describestreamoutputtypedef)
+  - [GetDataEndpointInputRequestTypeDef](#getdataendpointinputrequesttypedef)
+  - [GetDataEndpointOutputTypeDef](#getdataendpointoutputtypedef)
+  - [GetSignalingChannelEndpointInputRequestTypeDef](#getsignalingchannelendpointinputrequesttypedef)
+  - [GetSignalingChannelEndpointOutputTypeDef](#getsignalingchannelendpointoutputtypedef)
+  - [ListSignalingChannelsInputRequestTypeDef](#listsignalingchannelsinputrequesttypedef)
+  - [ListSignalingChannelsOutputTypeDef](#listsignalingchannelsoutputtypedef)
+  - [ListStreamsInputRequestTypeDef](#liststreamsinputrequesttypedef)
+  - [ListStreamsOutputTypeDef](#liststreamsoutputtypedef)
+  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
+  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
+  - [ListTagsForStreamInputRequestTypeDef](#listtagsforstreaminputrequesttypedef)
+  - [ListTagsForStreamOutputTypeDef](#listtagsforstreamoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResourceEndpointListItemTypeDef](#resourceendpointlistitemtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
@@ -39,14 +39,14 @@ type annotations stubs module
   - [SingleMasterConfigurationTypeDef](#singlemasterconfigurationtypedef)
   - [StreamInfoTypeDef](#streaminfotypedef)
   - [StreamNameConditionTypeDef](#streamnameconditiontypedef)
-  - [TagResourceInputTypeDef](#tagresourceinputtypedef)
-  - [TagStreamInputTypeDef](#tagstreaminputtypedef)
+  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
+  - [TagStreamInputRequestTypeDef](#tagstreaminputrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceInputTypeDef](#untagresourceinputtypedef)
-  - [UntagStreamInputTypeDef](#untagstreaminputtypedef)
-  - [UpdateDataRetentionInputTypeDef](#updatedataretentioninputtypedef)
-  - [UpdateSignalingChannelInputTypeDef](#updatesignalingchannelinputtypedef)
-  - [UpdateStreamInputTypeDef](#updatestreaminputtypedef)
+  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
+  - [UntagStreamInputRequestTypeDef](#untagstreaminputrequesttypedef)
+  - [UpdateDataRetentionInputRequestTypeDef](#updatedataretentioninputrequesttypedef)
+  - [UpdateSignalingChannelInputRequestTypeDef](#updatesignalingchannelinputrequesttypedef)
+  - [UpdateStreamInputRequestTypeDef](#updatestreaminputrequesttypedef)
 
 ## ChannelInfoTypeDef
 
@@ -78,10 +78,10 @@ Optional fields:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype))
 - `ComparisonValue`: `str`
 
-## CreateSignalingChannelInputTypeDef
+## CreateSignalingChannelInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import CreateSignalingChannelInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import CreateSignalingChannelInputRequestTypeDef
 ```
 
 Required fields:
@@ -96,10 +96,10 @@ Optional fields:
   [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateSignalingChannelOutputResponseTypeDef
+## CreateSignalingChannelOutputTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import CreateSignalingChannelOutputResponseTypeDef
+from mypy_boto3_kinesisvideo.type_defs import CreateSignalingChannelOutputTypeDef
 ```
 
 Required fields:
@@ -108,10 +108,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateStreamInputTypeDef
+## CreateStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import CreateStreamInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import CreateStreamInputRequestTypeDef
 ```
 
 Required fields:
@@ -126,10 +126,10 @@ Optional fields:
 - `DataRetentionInHours`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateStreamOutputResponseTypeDef
+## CreateStreamOutputTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import CreateStreamOutputResponseTypeDef
+from mypy_boto3_kinesisvideo.type_defs import CreateStreamOutputTypeDef
 ```
 
 Required fields:
@@ -138,10 +138,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteSignalingChannelInputTypeDef
+## DeleteSignalingChannelInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import DeleteSignalingChannelInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import DeleteSignalingChannelInputRequestTypeDef
 ```
 
 Required fields:
@@ -152,10 +152,10 @@ Optional fields:
 
 - `CurrentVersion`: `str`
 
-## DeleteStreamInputTypeDef
+## DeleteStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import DeleteStreamInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import DeleteStreamInputRequestTypeDef
 ```
 
 Required fields:
@@ -166,10 +166,10 @@ Optional fields:
 
 - `CurrentVersion`: `str`
 
-## DescribeSignalingChannelInputTypeDef
+## DescribeSignalingChannelInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import DescribeSignalingChannelInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import DescribeSignalingChannelInputRequestTypeDef
 ```
 
 Optional fields:
@@ -177,10 +177,10 @@ Optional fields:
 - `ChannelName`: `str`
 - `ChannelARN`: `str`
 
-## DescribeSignalingChannelOutputResponseTypeDef
+## DescribeSignalingChannelOutputTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import DescribeSignalingChannelOutputResponseTypeDef
+from mypy_boto3_kinesisvideo.type_defs import DescribeSignalingChannelOutputTypeDef
 ```
 
 Required fields:
@@ -189,10 +189,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeStreamInputTypeDef
+## DescribeStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import DescribeStreamInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import DescribeStreamInputRequestTypeDef
 ```
 
 Optional fields:
@@ -200,10 +200,10 @@ Optional fields:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
-## DescribeStreamOutputResponseTypeDef
+## DescribeStreamOutputTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import DescribeStreamOutputResponseTypeDef
+from mypy_boto3_kinesisvideo.type_defs import DescribeStreamOutputTypeDef
 ```
 
 Required fields:
@@ -212,10 +212,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDataEndpointInputTypeDef
+## GetDataEndpointInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import GetDataEndpointInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import GetDataEndpointInputRequestTypeDef
 ```
 
 Required fields:
@@ -227,10 +227,10 @@ Optional fields:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
-## GetDataEndpointOutputResponseTypeDef
+## GetDataEndpointOutputTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import GetDataEndpointOutputResponseTypeDef
+from mypy_boto3_kinesisvideo.type_defs import GetDataEndpointOutputTypeDef
 ```
 
 Required fields:
@@ -239,10 +239,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSignalingChannelEndpointInputTypeDef
+## GetSignalingChannelEndpointInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import GetSignalingChannelEndpointInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import GetSignalingChannelEndpointInputRequestTypeDef
 ```
 
 Required fields:
@@ -254,10 +254,10 @@ Optional fields:
 - `SingleMasterChannelEndpointConfiguration`:
   [SingleMasterChannelEndpointConfigurationTypeDef](./type_defs.md#singlemasterchannelendpointconfigurationtypedef)
 
-## GetSignalingChannelEndpointOutputResponseTypeDef
+## GetSignalingChannelEndpointOutputTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import GetSignalingChannelEndpointOutputResponseTypeDef
+from mypy_boto3_kinesisvideo.type_defs import GetSignalingChannelEndpointOutputTypeDef
 ```
 
 Required fields:
@@ -267,10 +267,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSignalingChannelsInputTypeDef
+## ListSignalingChannelsInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -280,10 +280,10 @@ Optional fields:
 - `ChannelNameCondition`:
   [ChannelNameConditionTypeDef](./type_defs.md#channelnameconditiontypedef)
 
-## ListSignalingChannelsOutputResponseTypeDef
+## ListSignalingChannelsOutputTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsOutputResponseTypeDef
+from mypy_boto3_kinesisvideo.type_defs import ListSignalingChannelsOutputTypeDef
 ```
 
 Required fields:
@@ -294,10 +294,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListStreamsInputTypeDef
+## ListStreamsInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import ListStreamsInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import ListStreamsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -307,10 +307,10 @@ Optional fields:
 - `StreamNameCondition`:
   [StreamNameConditionTypeDef](./type_defs.md#streamnameconditiontypedef)
 
-## ListStreamsOutputResponseTypeDef
+## ListStreamsOutputTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import ListStreamsOutputResponseTypeDef
+from mypy_boto3_kinesisvideo.type_defs import ListStreamsOutputTypeDef
 ```
 
 Required fields:
@@ -321,10 +321,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceInputTypeDef
+## ListTagsForResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import ListTagsForResourceInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import ListTagsForResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -335,10 +335,10 @@ Optional fields:
 
 - `NextToken`: `str`
 
-## ListTagsForResourceOutputResponseTypeDef
+## ListTagsForResourceOutputTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import ListTagsForResourceOutputResponseTypeDef
+from mypy_boto3_kinesisvideo.type_defs import ListTagsForResourceOutputTypeDef
 ```
 
 Required fields:
@@ -348,10 +348,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForStreamInputTypeDef
+## ListTagsForStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import ListTagsForStreamInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import ListTagsForStreamInputRequestTypeDef
 ```
 
 Optional fields:
@@ -360,10 +360,10 @@ Optional fields:
 - `StreamARN`: `str`
 - `StreamName`: `str`
 
-## ListTagsForStreamOutputResponseTypeDef
+## ListTagsForStreamOutputTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import ListTagsForStreamOutputResponseTypeDef
+from mypy_boto3_kinesisvideo.type_defs import ListTagsForStreamOutputTypeDef
 ```
 
 Required fields:
@@ -462,10 +462,10 @@ Optional fields:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype))
 - `ComparisonValue`: `str`
 
-## TagResourceInputTypeDef
+## TagResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import TagResourceInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import TagResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -473,10 +473,10 @@ Required fields:
 - `ResourceARN`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## TagStreamInputTypeDef
+## TagStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import TagStreamInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import TagStreamInputRequestTypeDef
 ```
 
 Required fields:
@@ -499,10 +499,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## UntagResourceInputTypeDef
+## UntagResourceInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import UntagResourceInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import UntagResourceInputRequestTypeDef
 ```
 
 Required fields:
@@ -510,10 +510,10 @@ Required fields:
 - `ResourceARN`: `str`
 - `TagKeyList`: `List`\[`str`\]
 
-## UntagStreamInputTypeDef
+## UntagStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import UntagStreamInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import UntagStreamInputRequestTypeDef
 ```
 
 Required fields:
@@ -525,10 +525,10 @@ Optional fields:
 - `StreamARN`: `str`
 - `StreamName`: `str`
 
-## UpdateDataRetentionInputTypeDef
+## UpdateDataRetentionInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import UpdateDataRetentionInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import UpdateDataRetentionInputRequestTypeDef
 ```
 
 Required fields:
@@ -543,10 +543,10 @@ Optional fields:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
-## UpdateSignalingChannelInputTypeDef
+## UpdateSignalingChannelInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import UpdateSignalingChannelInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import UpdateSignalingChannelInputRequestTypeDef
 ```
 
 Required fields:
@@ -559,10 +559,10 @@ Optional fields:
 - `SingleMasterConfiguration`:
   [SingleMasterConfigurationTypeDef](./type_defs.md#singlemasterconfigurationtypedef)
 
-## UpdateStreamInputTypeDef
+## UpdateStreamInputRequestTypeDef
 
 ```python
-from mypy_boto3_kinesisvideo.type_defs import UpdateStreamInputTypeDef
+from mypy_boto3_kinesisvideo.type_defs import UpdateStreamInputRequestTypeDef
 ```
 
 Required fields:

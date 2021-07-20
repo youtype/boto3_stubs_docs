@@ -8,17 +8,17 @@ type annotations stubs module
 [mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
 
 - [Typed dictionaries for boto3 KinesisVideoSignalingChannels module](#typed-dictionaries-for-boto3-kinesisvideosignalingchannels-module)
-  - [GetIceServerConfigRequestTypeDef](#geticeserverconfigrequesttypedef)
-  - [GetIceServerConfigResponseResponseTypeDef](#geticeserverconfigresponseresponsetypedef)
+  - [GetIceServerConfigRequestRequestTypeDef](#geticeserverconfigrequestrequesttypedef)
+  - [GetIceServerConfigResponseTypeDef](#geticeserverconfigresponsetypedef)
   - [IceServerTypeDef](#iceservertypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendAlexaOfferToMasterRequestTypeDef](#sendalexaoffertomasterrequesttypedef)
-  - [SendAlexaOfferToMasterResponseResponseTypeDef](#sendalexaoffertomasterresponseresponsetypedef)
+  - [SendAlexaOfferToMasterRequestRequestTypeDef](#sendalexaoffertomasterrequestrequesttypedef)
+  - [SendAlexaOfferToMasterResponseTypeDef](#sendalexaoffertomasterresponsetypedef)
 
-## GetIceServerConfigRequestTypeDef
+## GetIceServerConfigRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigRequestTypeDef
+from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigRequestRequestTypeDef
 ```
 
 Required fields:
@@ -31,10 +31,10 @@ Optional fields:
 - `Service`: `Literal['TURN']` (see [ServiceType](./literals.md#servicetype))
 - `Username`: `str`
 
-## GetIceServerConfigResponseResponseTypeDef
+## GetIceServerConfigResponseTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigResponseResponseTypeDef
+from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigResponseTypeDef
 ```
 
 Required fields:
@@ -71,10 +71,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## SendAlexaOfferToMasterRequestTypeDef
+## SendAlexaOfferToMasterRequestRequestTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_signaling.type_defs import SendAlexaOfferToMasterRequestTypeDef
+from mypy_boto3_kinesis_video_signaling.type_defs import SendAlexaOfferToMasterRequestRequestTypeDef
 ```
 
 Required fields:
@@ -83,10 +83,10 @@ Required fields:
 - `SenderClientId`: `str`
 - `MessagePayload`: `str`
 
-## SendAlexaOfferToMasterResponseResponseTypeDef
+## SendAlexaOfferToMasterResponseTypeDef
 
 ```python
-from mypy_boto3_kinesis_video_signaling.type_defs import SendAlexaOfferToMasterResponseResponseTypeDef
+from mypy_boto3_kinesis_video_signaling.type_defs import SendAlexaOfferToMasterResponseTypeDef
 ```
 
 Required fields:

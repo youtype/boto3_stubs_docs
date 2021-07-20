@@ -8,32 +8,32 @@ type annotations stubs module
 [mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
 
 - [Typed dictionaries for boto3 STS module](#typed-dictionaries-for-boto3-sts-module)
-  - [AssumeRoleRequestTypeDef](#assumerolerequesttypedef)
-  - [AssumeRoleResponseResponseTypeDef](#assumeroleresponseresponsetypedef)
-  - [AssumeRoleWithSAMLRequestTypeDef](#assumerolewithsamlrequesttypedef)
-  - [AssumeRoleWithSAMLResponseResponseTypeDef](#assumerolewithsamlresponseresponsetypedef)
-  - [AssumeRoleWithWebIdentityRequestTypeDef](#assumerolewithwebidentityrequesttypedef)
-  - [AssumeRoleWithWebIdentityResponseResponseTypeDef](#assumerolewithwebidentityresponseresponsetypedef)
+  - [AssumeRoleRequestRequestTypeDef](#assumerolerequestrequesttypedef)
+  - [AssumeRoleResponseTypeDef](#assumeroleresponsetypedef)
+  - [AssumeRoleWithSAMLRequestRequestTypeDef](#assumerolewithsamlrequestrequesttypedef)
+  - [AssumeRoleWithSAMLResponseTypeDef](#assumerolewithsamlresponsetypedef)
+  - [AssumeRoleWithWebIdentityRequestRequestTypeDef](#assumerolewithwebidentityrequestrequesttypedef)
+  - [AssumeRoleWithWebIdentityResponseTypeDef](#assumerolewithwebidentityresponsetypedef)
   - [AssumedRoleUserTypeDef](#assumedroleusertypedef)
   - [CredentialsTypeDef](#credentialstypedef)
-  - [DecodeAuthorizationMessageRequestTypeDef](#decodeauthorizationmessagerequesttypedef)
-  - [DecodeAuthorizationMessageResponseResponseTypeDef](#decodeauthorizationmessageresponseresponsetypedef)
+  - [DecodeAuthorizationMessageRequestRequestTypeDef](#decodeauthorizationmessagerequestrequesttypedef)
+  - [DecodeAuthorizationMessageResponseTypeDef](#decodeauthorizationmessageresponsetypedef)
   - [FederatedUserTypeDef](#federatedusertypedef)
-  - [GetAccessKeyInfoRequestTypeDef](#getaccesskeyinforequesttypedef)
-  - [GetAccessKeyInfoResponseResponseTypeDef](#getaccesskeyinforesponseresponsetypedef)
-  - [GetCallerIdentityResponseResponseTypeDef](#getcalleridentityresponseresponsetypedef)
-  - [GetFederationTokenRequestTypeDef](#getfederationtokenrequesttypedef)
-  - [GetFederationTokenResponseResponseTypeDef](#getfederationtokenresponseresponsetypedef)
-  - [GetSessionTokenRequestTypeDef](#getsessiontokenrequesttypedef)
-  - [GetSessionTokenResponseResponseTypeDef](#getsessiontokenresponseresponsetypedef)
+  - [GetAccessKeyInfoRequestRequestTypeDef](#getaccesskeyinforequestrequesttypedef)
+  - [GetAccessKeyInfoResponseTypeDef](#getaccesskeyinforesponsetypedef)
+  - [GetCallerIdentityResponseTypeDef](#getcalleridentityresponsetypedef)
+  - [GetFederationTokenRequestRequestTypeDef](#getfederationtokenrequestrequesttypedef)
+  - [GetFederationTokenResponseTypeDef](#getfederationtokenresponsetypedef)
+  - [GetSessionTokenRequestRequestTypeDef](#getsessiontokenrequestrequesttypedef)
+  - [GetSessionTokenResponseTypeDef](#getsessiontokenresponsetypedef)
   - [PolicyDescriptorTypeTypeDef](#policydescriptortypetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagTypeDef](#tagtypedef)
 
-## AssumeRoleRequestTypeDef
+## AssumeRoleRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import AssumeRoleRequestTypeDef
+from mypy_boto3_sts.type_defs import AssumeRoleRequestRequestTypeDef
 ```
 
 Required fields:
@@ -54,10 +54,10 @@ Optional fields:
 - `TokenCode`: `str`
 - `SourceIdentity`: `str`
 
-## AssumeRoleResponseResponseTypeDef
+## AssumeRoleResponseTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import AssumeRoleResponseResponseTypeDef
+from mypy_boto3_sts.type_defs import AssumeRoleResponseTypeDef
 ```
 
 Required fields:
@@ -70,10 +70,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssumeRoleWithSAMLRequestTypeDef
+## AssumeRoleWithSAMLRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import AssumeRoleWithSAMLRequestTypeDef
+from mypy_boto3_sts.type_defs import AssumeRoleWithSAMLRequestRequestTypeDef
 ```
 
 Required fields:
@@ -89,10 +89,10 @@ Optional fields:
 - `Policy`: `str`
 - `DurationSeconds`: `int`
 
-## AssumeRoleWithSAMLResponseResponseTypeDef
+## AssumeRoleWithSAMLResponseTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import AssumeRoleWithSAMLResponseResponseTypeDef
+from mypy_boto3_sts.type_defs import AssumeRoleWithSAMLResponseTypeDef
 ```
 
 Required fields:
@@ -110,10 +110,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssumeRoleWithWebIdentityRequestTypeDef
+## AssumeRoleWithWebIdentityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import AssumeRoleWithWebIdentityRequestTypeDef
+from mypy_boto3_sts.type_defs import AssumeRoleWithWebIdentityRequestRequestTypeDef
 ```
 
 Required fields:
@@ -130,10 +130,10 @@ Optional fields:
 - `Policy`: `str`
 - `DurationSeconds`: `int`
 
-## AssumeRoleWithWebIdentityResponseResponseTypeDef
+## AssumeRoleWithWebIdentityResponseTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import AssumeRoleWithWebIdentityResponseResponseTypeDef
+from mypy_boto3_sts.type_defs import AssumeRoleWithWebIdentityResponseTypeDef
 ```
 
 Required fields:
@@ -173,20 +173,20 @@ Required fields:
 - `SessionToken`: `str`
 - `Expiration`: `datetime`
 
-## DecodeAuthorizationMessageRequestTypeDef
+## DecodeAuthorizationMessageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import DecodeAuthorizationMessageRequestTypeDef
+from mypy_boto3_sts.type_defs import DecodeAuthorizationMessageRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `EncodedMessage`: `str`
 
-## DecodeAuthorizationMessageResponseResponseTypeDef
+## DecodeAuthorizationMessageResponseTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import DecodeAuthorizationMessageResponseResponseTypeDef
+from mypy_boto3_sts.type_defs import DecodeAuthorizationMessageResponseTypeDef
 ```
 
 Required fields:
@@ -206,20 +206,20 @@ Required fields:
 - `FederatedUserId`: `str`
 - `Arn`: `str`
 
-## GetAccessKeyInfoRequestTypeDef
+## GetAccessKeyInfoRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import GetAccessKeyInfoRequestTypeDef
+from mypy_boto3_sts.type_defs import GetAccessKeyInfoRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `AccessKeyId`: `str`
 
-## GetAccessKeyInfoResponseResponseTypeDef
+## GetAccessKeyInfoResponseTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import GetAccessKeyInfoResponseResponseTypeDef
+from mypy_boto3_sts.type_defs import GetAccessKeyInfoResponseTypeDef
 ```
 
 Required fields:
@@ -228,10 +228,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetCallerIdentityResponseResponseTypeDef
+## GetCallerIdentityResponseTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import GetCallerIdentityResponseResponseTypeDef
+from mypy_boto3_sts.type_defs import GetCallerIdentityResponseTypeDef
 ```
 
 Required fields:
@@ -242,10 +242,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetFederationTokenRequestTypeDef
+## GetFederationTokenRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import GetFederationTokenRequestTypeDef
+from mypy_boto3_sts.type_defs import GetFederationTokenRequestRequestTypeDef
 ```
 
 Required fields:
@@ -260,10 +260,10 @@ Optional fields:
 - `DurationSeconds`: `int`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## GetFederationTokenResponseResponseTypeDef
+## GetFederationTokenResponseTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import GetFederationTokenResponseResponseTypeDef
+from mypy_boto3_sts.type_defs import GetFederationTokenResponseTypeDef
 ```
 
 Required fields:
@@ -274,10 +274,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetSessionTokenRequestTypeDef
+## GetSessionTokenRequestRequestTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import GetSessionTokenRequestTypeDef
+from mypy_boto3_sts.type_defs import GetSessionTokenRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -286,10 +286,10 @@ Optional fields:
 - `SerialNumber`: `str`
 - `TokenCode`: `str`
 
-## GetSessionTokenResponseResponseTypeDef
+## GetSessionTokenResponseTypeDef
 
 ```python
-from mypy_boto3_sts.type_defs import GetSessionTokenResponseResponseTypeDef
+from mypy_boto3_sts.type_defs import GetSessionTokenResponseTypeDef
 ```
 
 Required fields:

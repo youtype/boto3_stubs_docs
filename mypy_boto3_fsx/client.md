@@ -11,6 +11,7 @@ type annotations stubs module
   - [FSxClient](#fsxclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [associate_file_system_aliases](#associate_file_system_aliases)
     - [can_paginate](#can_paginate)
     - [cancel_data_repository_task](#cancel_data_repository_task)
@@ -94,6 +95,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+FSxClient exceptions.
+
+Type annotations for `boto3.client("fsx").exceptions` method.
+
+Boto3 documentation:
+[FSx.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### associate_file_system_aliases
 
 Use this action to associate one or more Domain Name Server (DNS) aliases with
@@ -106,7 +118,7 @@ Boto3 documentation:
 [FSx.Client.associate_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.associate_file_system_aliases)
 
 Arguments mapping described in
-[AssociateFileSystemAliasesRequestTypeDef](./type_defs.md#associatefilesystemaliasesrequesttypedef).
+[AssociateFileSystemAliasesRequestRequestTypeDef](./type_defs.md#associatefilesystemaliasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -115,7 +127,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[AssociateFileSystemAliasesResponseResponseTypeDef](./type_defs.md#associatefilesystemaliasesresponseresponsetypedef).
+[AssociateFileSystemAliasesResponseTypeDef](./type_defs.md#associatefilesystemaliasesresponsetypedef).
 
 ### can_paginate
 
@@ -143,14 +155,14 @@ Boto3 documentation:
 [FSx.Client.cancel_data_repository_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.cancel_data_repository_task)
 
 Arguments mapping described in
-[CancelDataRepositoryTaskRequestTypeDef](./type_defs.md#canceldatarepositorytaskrequesttypedef).
+[CancelDataRepositoryTaskRequestRequestTypeDef](./type_defs.md#canceldatarepositorytaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TaskId`: `str` *(required)*
 
 Returns
-[CancelDataRepositoryTaskResponseResponseTypeDef](./type_defs.md#canceldatarepositorytaskresponseresponsetypedef).
+[CancelDataRepositoryTaskResponseTypeDef](./type_defs.md#canceldatarepositorytaskresponsetypedef).
 
 ### copy_backup
 
@@ -163,7 +175,7 @@ Boto3 documentation:
 [FSx.Client.copy_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.copy_backup)
 
 Arguments mapping described in
-[CopyBackupRequestTypeDef](./type_defs.md#copybackuprequesttypedef).
+[CopyBackupRequestRequestTypeDef](./type_defs.md#copybackuprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -174,8 +186,7 @@ Keyword-only arguments:
 - `CopyTags`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CopyBackupResponseResponseTypeDef](./type_defs.md#copybackupresponseresponsetypedef).
+Returns [CopyBackupResponseTypeDef](./type_defs.md#copybackupresponsetypedef).
 
 ### create_backup
 
@@ -187,7 +198,7 @@ Boto3 documentation:
 [FSx.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_backup)
 
 Arguments mapping described in
-[CreateBackupRequestTypeDef](./type_defs.md#createbackuprequesttypedef).
+[CreateBackupRequestRequestTypeDef](./type_defs.md#createbackuprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -196,7 +207,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateBackupResponseResponseTypeDef](./type_defs.md#createbackupresponseresponsetypedef).
+[CreateBackupResponseTypeDef](./type_defs.md#createbackupresponsetypedef).
 
 ### create_data_repository_task
 
@@ -208,7 +219,7 @@ Boto3 documentation:
 [FSx.Client.create_data_repository_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_data_repository_task)
 
 Arguments mapping described in
-[CreateDataRepositoryTaskRequestTypeDef](./type_defs.md#createdatarepositorytaskrequesttypedef).
+[CreateDataRepositoryTaskRequestRequestTypeDef](./type_defs.md#createdatarepositorytaskrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,7 +234,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateDataRepositoryTaskResponseResponseTypeDef](./type_defs.md#createdatarepositorytaskresponseresponsetypedef).
+[CreateDataRepositoryTaskResponseTypeDef](./type_defs.md#createdatarepositorytaskresponsetypedef).
 
 ### create_file_system
 
@@ -235,7 +246,7 @@ Boto3 documentation:
 [FSx.Client.create_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system)
 
 Arguments mapping described in
-[CreateFileSystemRequestTypeDef](./type_defs.md#createfilesystemrequesttypedef).
+[CreateFileSystemRequestRequestTypeDef](./type_defs.md#createfilesystemrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -254,7 +265,7 @@ Keyword-only arguments:
   [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
 
 Returns
-[CreateFileSystemResponseResponseTypeDef](./type_defs.md#createfilesystemresponseresponsetypedef).
+[CreateFileSystemResponseTypeDef](./type_defs.md#createfilesystemresponsetypedef).
 
 ### create_file_system_from_backup
 
@@ -267,7 +278,7 @@ Boto3 documentation:
 [FSx.Client.create_file_system_from_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system_from_backup)
 
 Arguments mapping described in
-[CreateFileSystemFromBackupRequestTypeDef](./type_defs.md#createfilesystemfrombackuprequesttypedef).
+[CreateFileSystemFromBackupRequestRequestTypeDef](./type_defs.md#createfilesystemfrombackuprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -284,7 +295,7 @@ Keyword-only arguments:
 - `KmsKeyId`: `str`
 
 Returns
-[CreateFileSystemFromBackupResponseResponseTypeDef](./type_defs.md#createfilesystemfrombackupresponseresponsetypedef).
+[CreateFileSystemFromBackupResponseTypeDef](./type_defs.md#createfilesystemfrombackupresponsetypedef).
 
 ### delete_backup
 
@@ -296,7 +307,7 @@ Boto3 documentation:
 [FSx.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_backup)
 
 Arguments mapping described in
-[DeleteBackupRequestTypeDef](./type_defs.md#deletebackuprequesttypedef).
+[DeleteBackupRequestRequestTypeDef](./type_defs.md#deletebackuprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,7 +315,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[DeleteBackupResponseResponseTypeDef](./type_defs.md#deletebackupresponseresponsetypedef).
+[DeleteBackupResponseTypeDef](./type_defs.md#deletebackupresponsetypedef).
 
 ### delete_file_system
 
@@ -316,7 +327,7 @@ Boto3 documentation:
 [FSx.Client.delete_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_file_system)
 
 Arguments mapping described in
-[DeleteFileSystemRequestTypeDef](./type_defs.md#deletefilesystemrequesttypedef).
+[DeleteFileSystemRequestRequestTypeDef](./type_defs.md#deletefilesystemrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -328,7 +339,7 @@ Keyword-only arguments:
   [DeleteFileSystemLustreConfigurationTypeDef](./type_defs.md#deletefilesystemlustreconfigurationtypedef)
 
 Returns
-[DeleteFileSystemResponseResponseTypeDef](./type_defs.md#deletefilesystemresponseresponsetypedef).
+[DeleteFileSystemResponseTypeDef](./type_defs.md#deletefilesystemresponsetypedef).
 
 ### describe_backups
 
@@ -341,7 +352,7 @@ Boto3 documentation:
 [FSx.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_backups)
 
 Arguments mapping described in
-[DescribeBackupsRequestTypeDef](./type_defs.md#describebackupsrequesttypedef).
+[DescribeBackupsRequestRequestTypeDef](./type_defs.md#describebackupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -351,7 +362,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeBackupsResponseResponseTypeDef](./type_defs.md#describebackupsresponseresponsetypedef).
+[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
 
 ### describe_data_repository_tasks
 
@@ -366,7 +377,7 @@ Boto3 documentation:
 [FSx.Client.describe_data_repository_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_tasks)
 
 Arguments mapping described in
-[DescribeDataRepositoryTasksRequestTypeDef](./type_defs.md#describedatarepositorytasksrequesttypedef).
+[DescribeDataRepositoryTasksRequestRequestTypeDef](./type_defs.md#describedatarepositorytasksrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -377,7 +388,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeDataRepositoryTasksResponseResponseTypeDef](./type_defs.md#describedatarepositorytasksresponseresponsetypedef).
+[DescribeDataRepositoryTasksResponseTypeDef](./type_defs.md#describedatarepositorytasksresponsetypedef).
 
 ### describe_file_system_aliases
 
@@ -390,7 +401,7 @@ Boto3 documentation:
 [FSx.Client.describe_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_system_aliases)
 
 Arguments mapping described in
-[DescribeFileSystemAliasesRequestTypeDef](./type_defs.md#describefilesystemaliasesrequesttypedef).
+[DescribeFileSystemAliasesRequestRequestTypeDef](./type_defs.md#describefilesystemaliasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -400,7 +411,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFileSystemAliasesResponseResponseTypeDef](./type_defs.md#describefilesystemaliasesresponseresponsetypedef).
+[DescribeFileSystemAliasesResponseTypeDef](./type_defs.md#describefilesystemaliasesresponsetypedef).
 
 ### describe_file_systems
 
@@ -413,7 +424,7 @@ Boto3 documentation:
 [FSx.Client.describe_file_systems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_systems)
 
 Arguments mapping described in
-[DescribeFileSystemsRequestTypeDef](./type_defs.md#describefilesystemsrequesttypedef).
+[DescribeFileSystemsRequestRequestTypeDef](./type_defs.md#describefilesystemsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -422,7 +433,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFileSystemsResponseResponseTypeDef](./type_defs.md#describefilesystemsresponseresponsetypedef).
+[DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef).
 
 ### disassociate_file_system_aliases
 
@@ -436,7 +447,7 @@ Boto3 documentation:
 [FSx.Client.disassociate_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.disassociate_file_system_aliases)
 
 Arguments mapping described in
-[DisassociateFileSystemAliasesRequestTypeDef](./type_defs.md#disassociatefilesystemaliasesrequesttypedef).
+[DisassociateFileSystemAliasesRequestRequestTypeDef](./type_defs.md#disassociatefilesystemaliasesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,7 +456,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[DisassociateFileSystemAliasesResponseResponseTypeDef](./type_defs.md#disassociatefilesystemaliasesresponseresponsetypedef).
+[DisassociateFileSystemAliasesResponseTypeDef](./type_defs.md#disassociatefilesystemaliasesresponsetypedef).
 
 ### generate_presigned_url
 
@@ -476,7 +487,7 @@ Boto3 documentation:
 [FSx.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -485,7 +496,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### tag_resource
 
@@ -497,7 +508,7 @@ Boto3 documentation:
 [FSx.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -516,7 +527,7 @@ Boto3 documentation:
 [FSx.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -536,7 +547,7 @@ Boto3 documentation:
 [FSx.Client.update_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_file_system)
 
 Arguments mapping described in
-[UpdateFileSystemRequestTypeDef](./type_defs.md#updatefilesystemrequesttypedef).
+[UpdateFileSystemRequestRequestTypeDef](./type_defs.md#updatefilesystemrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -549,7 +560,7 @@ Keyword-only arguments:
   [UpdateFileSystemLustreConfigurationTypeDef](./type_defs.md#updatefilesystemlustreconfigurationtypedef)
 
 Returns
-[UpdateFileSystemResponseResponseTypeDef](./type_defs.md#updatefilesystemresponseresponsetypedef).
+[UpdateFileSystemResponseTypeDef](./type_defs.md#updatefilesystemresponsetypedef).
 
 ### get_paginator
 

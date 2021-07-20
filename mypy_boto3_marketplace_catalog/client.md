@@ -11,6 +11,7 @@ type annotations stubs module
   - [MarketplaceCatalogClient](#marketplacecatalogclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_change_set](#cancel_change_set)
     - [describe_change_set](#describe_change_set)
@@ -62,6 +63,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+MarketplaceCatalogClient exceptions.
+
+Type annotations for `boto3.client("marketplace-catalog").exceptions` method.
+
+Boto3 documentation:
+[MarketplaceCatalog.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -88,7 +100,7 @@ Boto3 documentation:
 [MarketplaceCatalog.Client.cancel_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.cancel_change_set)
 
 Arguments mapping described in
-[CancelChangeSetRequestTypeDef](./type_defs.md#cancelchangesetrequesttypedef).
+[CancelChangeSetRequestRequestTypeDef](./type_defs.md#cancelchangesetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -96,7 +108,7 @@ Keyword-only arguments:
 - `ChangeSetId`: `str` *(required)*
 
 Returns
-[CancelChangeSetResponseResponseTypeDef](./type_defs.md#cancelchangesetresponseresponsetypedef).
+[CancelChangeSetResponseTypeDef](./type_defs.md#cancelchangesetresponsetypedef).
 
 ### describe_change_set
 
@@ -109,7 +121,7 @@ Boto3 documentation:
 [MarketplaceCatalog.Client.describe_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_change_set)
 
 Arguments mapping described in
-[DescribeChangeSetRequestTypeDef](./type_defs.md#describechangesetrequesttypedef).
+[DescribeChangeSetRequestRequestTypeDef](./type_defs.md#describechangesetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -117,7 +129,7 @@ Keyword-only arguments:
 - `ChangeSetId`: `str` *(required)*
 
 Returns
-[DescribeChangeSetResponseResponseTypeDef](./type_defs.md#describechangesetresponseresponsetypedef).
+[DescribeChangeSetResponseTypeDef](./type_defs.md#describechangesetresponsetypedef).
 
 ### describe_entity
 
@@ -130,7 +142,7 @@ Boto3 documentation:
 [MarketplaceCatalog.Client.describe_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_entity)
 
 Arguments mapping described in
-[DescribeEntityRequestTypeDef](./type_defs.md#describeentityrequesttypedef).
+[DescribeEntityRequestRequestTypeDef](./type_defs.md#describeentityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -138,7 +150,7 @@ Keyword-only arguments:
 - `EntityId`: `str` *(required)*
 
 Returns
-[DescribeEntityResponseResponseTypeDef](./type_defs.md#describeentityresponseresponsetypedef).
+[DescribeEntityResponseTypeDef](./type_defs.md#describeentityresponsetypedef).
 
 ### generate_presigned_url
 
@@ -171,7 +183,7 @@ Boto3 documentation:
 [MarketplaceCatalog.Client.list_change_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_change_sets)
 
 Arguments mapping described in
-[ListChangeSetsRequestTypeDef](./type_defs.md#listchangesetsrequesttypedef).
+[ListChangeSetsRequestRequestTypeDef](./type_defs.md#listchangesetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -182,7 +194,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListChangeSetsResponseResponseTypeDef](./type_defs.md#listchangesetsresponseresponsetypedef).
+[ListChangeSetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef).
 
 ### list_entities
 
@@ -195,7 +207,7 @@ Boto3 documentation:
 [MarketplaceCatalog.Client.list_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_entities)
 
 Arguments mapping described in
-[ListEntitiesRequestTypeDef](./type_defs.md#listentitiesrequesttypedef).
+[ListEntitiesRequestRequestTypeDef](./type_defs.md#listentitiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,7 +219,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEntitiesResponseResponseTypeDef](./type_defs.md#listentitiesresponseresponsetypedef).
+[ListEntitiesResponseTypeDef](./type_defs.md#listentitiesresponsetypedef).
 
 ### start_change_set
 
@@ -220,7 +232,7 @@ Boto3 documentation:
 [MarketplaceCatalog.Client.start_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.start_change_set)
 
 Arguments mapping described in
-[StartChangeSetRequestTypeDef](./type_defs.md#startchangesetrequesttypedef).
+[StartChangeSetRequestRequestTypeDef](./type_defs.md#startchangesetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -231,4 +243,4 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns
-[StartChangeSetResponseResponseTypeDef](./type_defs.md#startchangesetresponseresponsetypedef).
+[StartChangeSetResponseTypeDef](./type_defs.md#startchangesetresponsetypedef).

@@ -34,6 +34,7 @@ from mypy_boto3_applicationcostprofiler.client import ApplicationCostProfilerCli
 
 - [can_paginate](./client.md#can_paginate)
 - [delete_report_definition](./client.md#delete_report_definition)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 - [get_report_definition](./client.md#get_report_definition)
@@ -89,23 +90,23 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_applicationcostprofiler.type_defs import DeleteReportDefinitionRequestTypeDef, ...
+from mypy_boto3_applicationcostprofiler.type_defs import DeleteReportDefinitionRequestRequestTypeDef, ...
 ```
 
-- [DeleteReportDefinitionRequestTypeDef](./type_defs.md#deletereportdefinitionrequesttypedef)
-- [DeleteReportDefinitionResultResponseTypeDef](./type_defs.md#deletereportdefinitionresultresponsetypedef)
-- [GetReportDefinitionRequestTypeDef](./type_defs.md#getreportdefinitionrequesttypedef)
-- [GetReportDefinitionResultResponseTypeDef](./type_defs.md#getreportdefinitionresultresponsetypedef)
-- [ImportApplicationUsageRequestTypeDef](./type_defs.md#importapplicationusagerequesttypedef)
-- [ImportApplicationUsageResultResponseTypeDef](./type_defs.md#importapplicationusageresultresponsetypedef)
-- [ListReportDefinitionsRequestTypeDef](./type_defs.md#listreportdefinitionsrequesttypedef)
-- [ListReportDefinitionsResultResponseTypeDef](./type_defs.md#listreportdefinitionsresultresponsetypedef)
+- [DeleteReportDefinitionRequestRequestTypeDef](./type_defs.md#deletereportdefinitionrequestrequesttypedef)
+- [DeleteReportDefinitionResultTypeDef](./type_defs.md#deletereportdefinitionresulttypedef)
+- [GetReportDefinitionRequestRequestTypeDef](./type_defs.md#getreportdefinitionrequestrequesttypedef)
+- [GetReportDefinitionResultTypeDef](./type_defs.md#getreportdefinitionresulttypedef)
+- [ImportApplicationUsageRequestRequestTypeDef](./type_defs.md#importapplicationusagerequestrequesttypedef)
+- [ImportApplicationUsageResultTypeDef](./type_defs.md#importapplicationusageresulttypedef)
+- [ListReportDefinitionsRequestRequestTypeDef](./type_defs.md#listreportdefinitionsrequestrequesttypedef)
+- [ListReportDefinitionsResultTypeDef](./type_defs.md#listreportdefinitionsresulttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [PutReportDefinitionRequestTypeDef](./type_defs.md#putreportdefinitionrequesttypedef)
-- [PutReportDefinitionResultResponseTypeDef](./type_defs.md#putreportdefinitionresultresponsetypedef)
+- [PutReportDefinitionRequestRequestTypeDef](./type_defs.md#putreportdefinitionrequestrequesttypedef)
+- [PutReportDefinitionResultTypeDef](./type_defs.md#putreportdefinitionresulttypedef)
 - [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - [SourceS3LocationTypeDef](./type_defs.md#sources3locationtypedef)
-- [UpdateReportDefinitionRequestTypeDef](./type_defs.md#updatereportdefinitionrequesttypedef)
-- [UpdateReportDefinitionResultResponseTypeDef](./type_defs.md#updatereportdefinitionresultresponsetypedef)
+- [UpdateReportDefinitionRequestRequestTypeDef](./type_defs.md#updatereportdefinitionrequestrequesttypedef)
+- [UpdateReportDefinitionResultTypeDef](./type_defs.md#updatereportdefinitionresulttypedef)

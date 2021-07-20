@@ -8,67 +8,67 @@ type annotations stubs module
 [mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).
 
 - [Typed dictionaries for boto3 WorkLink module](#typed-dictionaries-for-boto3-worklink-module)
-  - [AssociateDomainRequestTypeDef](#associatedomainrequesttypedef)
-  - [AssociateWebsiteAuthorizationProviderRequestTypeDef](#associatewebsiteauthorizationproviderrequesttypedef)
-  - [AssociateWebsiteAuthorizationProviderResponseResponseTypeDef](#associatewebsiteauthorizationproviderresponseresponsetypedef)
-  - [AssociateWebsiteCertificateAuthorityRequestTypeDef](#associatewebsitecertificateauthorityrequesttypedef)
-  - [AssociateWebsiteCertificateAuthorityResponseResponseTypeDef](#associatewebsitecertificateauthorityresponseresponsetypedef)
-  - [CreateFleetRequestTypeDef](#createfleetrequesttypedef)
-  - [CreateFleetResponseResponseTypeDef](#createfleetresponseresponsetypedef)
-  - [DeleteFleetRequestTypeDef](#deletefleetrequesttypedef)
-  - [DescribeAuditStreamConfigurationRequestTypeDef](#describeauditstreamconfigurationrequesttypedef)
-  - [DescribeAuditStreamConfigurationResponseResponseTypeDef](#describeauditstreamconfigurationresponseresponsetypedef)
-  - [DescribeCompanyNetworkConfigurationRequestTypeDef](#describecompanynetworkconfigurationrequesttypedef)
-  - [DescribeCompanyNetworkConfigurationResponseResponseTypeDef](#describecompanynetworkconfigurationresponseresponsetypedef)
-  - [DescribeDevicePolicyConfigurationRequestTypeDef](#describedevicepolicyconfigurationrequesttypedef)
-  - [DescribeDevicePolicyConfigurationResponseResponseTypeDef](#describedevicepolicyconfigurationresponseresponsetypedef)
-  - [DescribeDeviceRequestTypeDef](#describedevicerequesttypedef)
-  - [DescribeDeviceResponseResponseTypeDef](#describedeviceresponseresponsetypedef)
-  - [DescribeDomainRequestTypeDef](#describedomainrequesttypedef)
-  - [DescribeDomainResponseResponseTypeDef](#describedomainresponseresponsetypedef)
-  - [DescribeFleetMetadataRequestTypeDef](#describefleetmetadatarequesttypedef)
-  - [DescribeFleetMetadataResponseResponseTypeDef](#describefleetmetadataresponseresponsetypedef)
-  - [DescribeIdentityProviderConfigurationRequestTypeDef](#describeidentityproviderconfigurationrequesttypedef)
-  - [DescribeIdentityProviderConfigurationResponseResponseTypeDef](#describeidentityproviderconfigurationresponseresponsetypedef)
-  - [DescribeWebsiteCertificateAuthorityRequestTypeDef](#describewebsitecertificateauthorityrequesttypedef)
-  - [DescribeWebsiteCertificateAuthorityResponseResponseTypeDef](#describewebsitecertificateauthorityresponseresponsetypedef)
+  - [AssociateDomainRequestRequestTypeDef](#associatedomainrequestrequesttypedef)
+  - [AssociateWebsiteAuthorizationProviderRequestRequestTypeDef](#associatewebsiteauthorizationproviderrequestrequesttypedef)
+  - [AssociateWebsiteAuthorizationProviderResponseTypeDef](#associatewebsiteauthorizationproviderresponsetypedef)
+  - [AssociateWebsiteCertificateAuthorityRequestRequestTypeDef](#associatewebsitecertificateauthorityrequestrequesttypedef)
+  - [AssociateWebsiteCertificateAuthorityResponseTypeDef](#associatewebsitecertificateauthorityresponsetypedef)
+  - [CreateFleetRequestRequestTypeDef](#createfleetrequestrequesttypedef)
+  - [CreateFleetResponseTypeDef](#createfleetresponsetypedef)
+  - [DeleteFleetRequestRequestTypeDef](#deletefleetrequestrequesttypedef)
+  - [DescribeAuditStreamConfigurationRequestRequestTypeDef](#describeauditstreamconfigurationrequestrequesttypedef)
+  - [DescribeAuditStreamConfigurationResponseTypeDef](#describeauditstreamconfigurationresponsetypedef)
+  - [DescribeCompanyNetworkConfigurationRequestRequestTypeDef](#describecompanynetworkconfigurationrequestrequesttypedef)
+  - [DescribeCompanyNetworkConfigurationResponseTypeDef](#describecompanynetworkconfigurationresponsetypedef)
+  - [DescribeDevicePolicyConfigurationRequestRequestTypeDef](#describedevicepolicyconfigurationrequestrequesttypedef)
+  - [DescribeDevicePolicyConfigurationResponseTypeDef](#describedevicepolicyconfigurationresponsetypedef)
+  - [DescribeDeviceRequestRequestTypeDef](#describedevicerequestrequesttypedef)
+  - [DescribeDeviceResponseTypeDef](#describedeviceresponsetypedef)
+  - [DescribeDomainRequestRequestTypeDef](#describedomainrequestrequesttypedef)
+  - [DescribeDomainResponseTypeDef](#describedomainresponsetypedef)
+  - [DescribeFleetMetadataRequestRequestTypeDef](#describefleetmetadatarequestrequesttypedef)
+  - [DescribeFleetMetadataResponseTypeDef](#describefleetmetadataresponsetypedef)
+  - [DescribeIdentityProviderConfigurationRequestRequestTypeDef](#describeidentityproviderconfigurationrequestrequesttypedef)
+  - [DescribeIdentityProviderConfigurationResponseTypeDef](#describeidentityproviderconfigurationresponsetypedef)
+  - [DescribeWebsiteCertificateAuthorityRequestRequestTypeDef](#describewebsitecertificateauthorityrequestrequesttypedef)
+  - [DescribeWebsiteCertificateAuthorityResponseTypeDef](#describewebsitecertificateauthorityresponsetypedef)
   - [DeviceSummaryTypeDef](#devicesummarytypedef)
-  - [DisassociateDomainRequestTypeDef](#disassociatedomainrequesttypedef)
-  - [DisassociateWebsiteAuthorizationProviderRequestTypeDef](#disassociatewebsiteauthorizationproviderrequesttypedef)
-  - [DisassociateWebsiteCertificateAuthorityRequestTypeDef](#disassociatewebsitecertificateauthorityrequesttypedef)
+  - [DisassociateDomainRequestRequestTypeDef](#disassociatedomainrequestrequesttypedef)
+  - [DisassociateWebsiteAuthorizationProviderRequestRequestTypeDef](#disassociatewebsiteauthorizationproviderrequestrequesttypedef)
+  - [DisassociateWebsiteCertificateAuthorityRequestRequestTypeDef](#disassociatewebsitecertificateauthorityrequestrequesttypedef)
   - [DomainSummaryTypeDef](#domainsummarytypedef)
   - [FleetSummaryTypeDef](#fleetsummarytypedef)
-  - [ListDevicesRequestTypeDef](#listdevicesrequesttypedef)
-  - [ListDevicesResponseResponseTypeDef](#listdevicesresponseresponsetypedef)
-  - [ListDomainsRequestTypeDef](#listdomainsrequesttypedef)
-  - [ListDomainsResponseResponseTypeDef](#listdomainsresponseresponsetypedef)
-  - [ListFleetsRequestTypeDef](#listfleetsrequesttypedef)
-  - [ListFleetsResponseResponseTypeDef](#listfleetsresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ListWebsiteAuthorizationProvidersRequestTypeDef](#listwebsiteauthorizationprovidersrequesttypedef)
-  - [ListWebsiteAuthorizationProvidersResponseResponseTypeDef](#listwebsiteauthorizationprovidersresponseresponsetypedef)
-  - [ListWebsiteCertificateAuthoritiesRequestTypeDef](#listwebsitecertificateauthoritiesrequesttypedef)
-  - [ListWebsiteCertificateAuthoritiesResponseResponseTypeDef](#listwebsitecertificateauthoritiesresponseresponsetypedef)
+  - [ListDevicesRequestRequestTypeDef](#listdevicesrequestrequesttypedef)
+  - [ListDevicesResponseTypeDef](#listdevicesresponsetypedef)
+  - [ListDomainsRequestRequestTypeDef](#listdomainsrequestrequesttypedef)
+  - [ListDomainsResponseTypeDef](#listdomainsresponsetypedef)
+  - [ListFleetsRequestRequestTypeDef](#listfleetsrequestrequesttypedef)
+  - [ListFleetsResponseTypeDef](#listfleetsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListWebsiteAuthorizationProvidersRequestRequestTypeDef](#listwebsiteauthorizationprovidersrequestrequesttypedef)
+  - [ListWebsiteAuthorizationProvidersResponseTypeDef](#listwebsiteauthorizationprovidersresponsetypedef)
+  - [ListWebsiteCertificateAuthoritiesRequestRequestTypeDef](#listwebsitecertificateauthoritiesrequestrequesttypedef)
+  - [ListWebsiteCertificateAuthoritiesResponseTypeDef](#listwebsitecertificateauthoritiesresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreDomainAccessRequestTypeDef](#restoredomainaccessrequesttypedef)
-  - [RevokeDomainAccessRequestTypeDef](#revokedomainaccessrequesttypedef)
-  - [SignOutUserRequestTypeDef](#signoutuserrequesttypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateAuditStreamConfigurationRequestTypeDef](#updateauditstreamconfigurationrequesttypedef)
-  - [UpdateCompanyNetworkConfigurationRequestTypeDef](#updatecompanynetworkconfigurationrequesttypedef)
-  - [UpdateDevicePolicyConfigurationRequestTypeDef](#updatedevicepolicyconfigurationrequesttypedef)
-  - [UpdateDomainMetadataRequestTypeDef](#updatedomainmetadatarequesttypedef)
-  - [UpdateFleetMetadataRequestTypeDef](#updatefleetmetadatarequesttypedef)
-  - [UpdateIdentityProviderConfigurationRequestTypeDef](#updateidentityproviderconfigurationrequesttypedef)
+  - [RestoreDomainAccessRequestRequestTypeDef](#restoredomainaccessrequestrequesttypedef)
+  - [RevokeDomainAccessRequestRequestTypeDef](#revokedomainaccessrequestrequesttypedef)
+  - [SignOutUserRequestRequestTypeDef](#signoutuserrequestrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAuditStreamConfigurationRequestRequestTypeDef](#updateauditstreamconfigurationrequestrequesttypedef)
+  - [UpdateCompanyNetworkConfigurationRequestRequestTypeDef](#updatecompanynetworkconfigurationrequestrequesttypedef)
+  - [UpdateDevicePolicyConfigurationRequestRequestTypeDef](#updatedevicepolicyconfigurationrequestrequesttypedef)
+  - [UpdateDomainMetadataRequestRequestTypeDef](#updatedomainmetadatarequestrequesttypedef)
+  - [UpdateFleetMetadataRequestRequestTypeDef](#updatefleetmetadatarequestrequesttypedef)
+  - [UpdateIdentityProviderConfigurationRequestRequestTypeDef](#updateidentityproviderconfigurationrequestrequesttypedef)
   - [WebsiteAuthorizationProviderSummaryTypeDef](#websiteauthorizationprovidersummarytypedef)
   - [WebsiteCaSummaryTypeDef](#websitecasummarytypedef)
 
-## AssociateDomainRequestTypeDef
+## AssociateDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import AssociateDomainRequestTypeDef
+from mypy_boto3_worklink.type_defs import AssociateDomainRequestRequestTypeDef
 ```
 
 Required fields:
@@ -81,10 +81,10 @@ Optional fields:
 
 - `DisplayName`: `str`
 
-## AssociateWebsiteAuthorizationProviderRequestTypeDef
+## AssociateWebsiteAuthorizationProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import AssociateWebsiteAuthorizationProviderRequestTypeDef
+from mypy_boto3_worklink.type_defs import AssociateWebsiteAuthorizationProviderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -97,10 +97,10 @@ Optional fields:
 
 - `DomainName`: `str`
 
-## AssociateWebsiteAuthorizationProviderResponseResponseTypeDef
+## AssociateWebsiteAuthorizationProviderResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import AssociateWebsiteAuthorizationProviderResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import AssociateWebsiteAuthorizationProviderResponseTypeDef
 ```
 
 Required fields:
@@ -109,10 +109,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateWebsiteCertificateAuthorityRequestTypeDef
+## AssociateWebsiteCertificateAuthorityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import AssociateWebsiteCertificateAuthorityRequestTypeDef
+from mypy_boto3_worklink.type_defs import AssociateWebsiteCertificateAuthorityRequestRequestTypeDef
 ```
 
 Required fields:
@@ -124,10 +124,10 @@ Optional fields:
 
 - `DisplayName`: `str`
 
-## AssociateWebsiteCertificateAuthorityResponseResponseTypeDef
+## AssociateWebsiteCertificateAuthorityResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import AssociateWebsiteCertificateAuthorityResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import AssociateWebsiteCertificateAuthorityResponseTypeDef
 ```
 
 Required fields:
@@ -136,10 +136,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateFleetRequestTypeDef
+## CreateFleetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import CreateFleetRequestTypeDef
+from mypy_boto3_worklink.type_defs import CreateFleetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -152,10 +152,10 @@ Optional fields:
 - `OptimizeForEndUserLocation`: `bool`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## CreateFleetResponseResponseTypeDef
+## CreateFleetResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import CreateFleetResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import CreateFleetResponseTypeDef
 ```
 
 Required fields:
@@ -164,30 +164,30 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteFleetRequestTypeDef
+## DeleteFleetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DeleteFleetRequestTypeDef
+from mypy_boto3_worklink.type_defs import DeleteFleetRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FleetArn`: `str`
 
-## DescribeAuditStreamConfigurationRequestTypeDef
+## DescribeAuditStreamConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeAuditStreamConfigurationRequestTypeDef
+from mypy_boto3_worklink.type_defs import DescribeAuditStreamConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FleetArn`: `str`
 
-## DescribeAuditStreamConfigurationResponseResponseTypeDef
+## DescribeAuditStreamConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeAuditStreamConfigurationResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import DescribeAuditStreamConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -196,20 +196,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeCompanyNetworkConfigurationRequestTypeDef
+## DescribeCompanyNetworkConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeCompanyNetworkConfigurationRequestTypeDef
+from mypy_boto3_worklink.type_defs import DescribeCompanyNetworkConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FleetArn`: `str`
 
-## DescribeCompanyNetworkConfigurationResponseResponseTypeDef
+## DescribeCompanyNetworkConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeCompanyNetworkConfigurationResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import DescribeCompanyNetworkConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -220,20 +220,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDevicePolicyConfigurationRequestTypeDef
+## DescribeDevicePolicyConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeDevicePolicyConfigurationRequestTypeDef
+from mypy_boto3_worklink.type_defs import DescribeDevicePolicyConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FleetArn`: `str`
 
-## DescribeDevicePolicyConfigurationResponseResponseTypeDef
+## DescribeDevicePolicyConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeDevicePolicyConfigurationResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import DescribeDevicePolicyConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -242,10 +242,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDeviceRequestTypeDef
+## DescribeDeviceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeDeviceRequestTypeDef
+from mypy_boto3_worklink.type_defs import DescribeDeviceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -253,10 +253,10 @@ Required fields:
 - `FleetArn`: `str`
 - `DeviceId`: `str`
 
-## DescribeDeviceResponseResponseTypeDef
+## DescribeDeviceResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeDeviceResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import DescribeDeviceResponseTypeDef
 ```
 
 Required fields:
@@ -273,10 +273,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDomainRequestTypeDef
+## DescribeDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeDomainRequestTypeDef
+from mypy_boto3_worklink.type_defs import DescribeDomainRequestRequestTypeDef
 ```
 
 Required fields:
@@ -284,10 +284,10 @@ Required fields:
 - `FleetArn`: `str`
 - `DomainName`: `str`
 
-## DescribeDomainResponseResponseTypeDef
+## DescribeDomainResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeDomainResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import DescribeDomainResponseTypeDef
 ```
 
 Required fields:
@@ -300,20 +300,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeFleetMetadataRequestTypeDef
+## DescribeFleetMetadataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeFleetMetadataRequestTypeDef
+from mypy_boto3_worklink.type_defs import DescribeFleetMetadataRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FleetArn`: `str`
 
-## DescribeFleetMetadataResponseResponseTypeDef
+## DescribeFleetMetadataResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeFleetMetadataResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import DescribeFleetMetadataResponseTypeDef
 ```
 
 Required fields:
@@ -329,20 +329,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeIdentityProviderConfigurationRequestTypeDef
+## DescribeIdentityProviderConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeIdentityProviderConfigurationRequestTypeDef
+from mypy_boto3_worklink.type_defs import DescribeIdentityProviderConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `FleetArn`: `str`
 
-## DescribeIdentityProviderConfigurationResponseResponseTypeDef
+## DescribeIdentityProviderConfigurationResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeIdentityProviderConfigurationResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import DescribeIdentityProviderConfigurationResponseTypeDef
 ```
 
 Required fields:
@@ -354,10 +354,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeWebsiteCertificateAuthorityRequestTypeDef
+## DescribeWebsiteCertificateAuthorityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeWebsiteCertificateAuthorityRequestTypeDef
+from mypy_boto3_worklink.type_defs import DescribeWebsiteCertificateAuthorityRequestRequestTypeDef
 ```
 
 Required fields:
@@ -365,10 +365,10 @@ Required fields:
 - `FleetArn`: `str`
 - `WebsiteCaId`: `str`
 
-## DescribeWebsiteCertificateAuthorityResponseResponseTypeDef
+## DescribeWebsiteCertificateAuthorityResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DescribeWebsiteCertificateAuthorityResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import DescribeWebsiteCertificateAuthorityResponseTypeDef
 ```
 
 Required fields:
@@ -390,10 +390,10 @@ Optional fields:
 - `DeviceId`: `str`
 - `DeviceStatus`: [DeviceStatusType](./literals.md#devicestatustype)
 
-## DisassociateDomainRequestTypeDef
+## DisassociateDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DisassociateDomainRequestTypeDef
+from mypy_boto3_worklink.type_defs import DisassociateDomainRequestRequestTypeDef
 ```
 
 Required fields:
@@ -401,10 +401,10 @@ Required fields:
 - `FleetArn`: `str`
 - `DomainName`: `str`
 
-## DisassociateWebsiteAuthorizationProviderRequestTypeDef
+## DisassociateWebsiteAuthorizationProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DisassociateWebsiteAuthorizationProviderRequestTypeDef
+from mypy_boto3_worklink.type_defs import DisassociateWebsiteAuthorizationProviderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -412,10 +412,10 @@ Required fields:
 - `FleetArn`: `str`
 - `AuthorizationProviderId`: `str`
 
-## DisassociateWebsiteCertificateAuthorityRequestTypeDef
+## DisassociateWebsiteCertificateAuthorityRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import DisassociateWebsiteCertificateAuthorityRequestTypeDef
+from mypy_boto3_worklink.type_defs import DisassociateWebsiteCertificateAuthorityRequestRequestTypeDef
 ```
 
 Required fields:
@@ -456,10 +456,10 @@ Optional fields:
 - `FleetStatus`: [FleetStatusType](./literals.md#fleetstatustype)
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## ListDevicesRequestTypeDef
+## ListDevicesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import ListDevicesRequestTypeDef
+from mypy_boto3_worklink.type_defs import ListDevicesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -471,10 +471,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDevicesResponseResponseTypeDef
+## ListDevicesResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import ListDevicesResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import ListDevicesResponseTypeDef
 ```
 
 Required fields:
@@ -485,10 +485,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListDomainsRequestTypeDef
+## ListDomainsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import ListDomainsRequestTypeDef
+from mypy_boto3_worklink.type_defs import ListDomainsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -500,10 +500,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListDomainsResponseResponseTypeDef
+## ListDomainsResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import ListDomainsResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import ListDomainsResponseTypeDef
 ```
 
 Required fields:
@@ -514,10 +514,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListFleetsRequestTypeDef
+## ListFleetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import ListFleetsRequestTypeDef
+from mypy_boto3_worklink.type_defs import ListFleetsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -525,10 +525,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListFleetsResponseResponseTypeDef
+## ListFleetsResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import ListFleetsResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import ListFleetsResponseTypeDef
 ```
 
 Required fields:
@@ -539,20 +539,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_worklink.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -561,10 +561,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListWebsiteAuthorizationProvidersRequestTypeDef
+## ListWebsiteAuthorizationProvidersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import ListWebsiteAuthorizationProvidersRequestTypeDef
+from mypy_boto3_worklink.type_defs import ListWebsiteAuthorizationProvidersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -576,10 +576,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListWebsiteAuthorizationProvidersResponseResponseTypeDef
+## ListWebsiteAuthorizationProvidersResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import ListWebsiteAuthorizationProvidersResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import ListWebsiteAuthorizationProvidersResponseTypeDef
 ```
 
 Required fields:
@@ -590,10 +590,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListWebsiteCertificateAuthoritiesRequestTypeDef
+## ListWebsiteCertificateAuthoritiesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import ListWebsiteCertificateAuthoritiesRequestTypeDef
+from mypy_boto3_worklink.type_defs import ListWebsiteCertificateAuthoritiesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -605,10 +605,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListWebsiteCertificateAuthoritiesResponseResponseTypeDef
+## ListWebsiteCertificateAuthoritiesResponseTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import ListWebsiteCertificateAuthoritiesResponseResponseTypeDef
+from mypy_boto3_worklink.type_defs import ListWebsiteCertificateAuthoritiesResponseTypeDef
 ```
 
 Required fields:
@@ -633,10 +633,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RestoreDomainAccessRequestTypeDef
+## RestoreDomainAccessRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import RestoreDomainAccessRequestTypeDef
+from mypy_boto3_worklink.type_defs import RestoreDomainAccessRequestRequestTypeDef
 ```
 
 Required fields:
@@ -644,10 +644,10 @@ Required fields:
 - `FleetArn`: `str`
 - `DomainName`: `str`
 
-## RevokeDomainAccessRequestTypeDef
+## RevokeDomainAccessRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import RevokeDomainAccessRequestTypeDef
+from mypy_boto3_worklink.type_defs import RevokeDomainAccessRequestRequestTypeDef
 ```
 
 Required fields:
@@ -655,10 +655,10 @@ Required fields:
 - `FleetArn`: `str`
 - `DomainName`: `str`
 
-## SignOutUserRequestTypeDef
+## SignOutUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import SignOutUserRequestTypeDef
+from mypy_boto3_worklink.type_defs import SignOutUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -666,10 +666,10 @@ Required fields:
 - `FleetArn`: `str`
 - `Username`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_worklink.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -677,10 +677,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_worklink.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -688,10 +688,10 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateAuditStreamConfigurationRequestTypeDef
+## UpdateAuditStreamConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import UpdateAuditStreamConfigurationRequestTypeDef
+from mypy_boto3_worklink.type_defs import UpdateAuditStreamConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -702,10 +702,10 @@ Optional fields:
 
 - `AuditStreamArn`: `str`
 
-## UpdateCompanyNetworkConfigurationRequestTypeDef
+## UpdateCompanyNetworkConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import UpdateCompanyNetworkConfigurationRequestTypeDef
+from mypy_boto3_worklink.type_defs import UpdateCompanyNetworkConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -715,10 +715,10 @@ Required fields:
 - `SubnetIds`: `List`\[`str`\]
 - `SecurityGroupIds`: `List`\[`str`\]
 
-## UpdateDevicePolicyConfigurationRequestTypeDef
+## UpdateDevicePolicyConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import UpdateDevicePolicyConfigurationRequestTypeDef
+from mypy_boto3_worklink.type_defs import UpdateDevicePolicyConfigurationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -729,10 +729,10 @@ Optional fields:
 
 - `DeviceCaCertificate`: `str`
 
-## UpdateDomainMetadataRequestTypeDef
+## UpdateDomainMetadataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import UpdateDomainMetadataRequestTypeDef
+from mypy_boto3_worklink.type_defs import UpdateDomainMetadataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -744,10 +744,10 @@ Optional fields:
 
 - `DisplayName`: `str`
 
-## UpdateFleetMetadataRequestTypeDef
+## UpdateFleetMetadataRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import UpdateFleetMetadataRequestTypeDef
+from mypy_boto3_worklink.type_defs import UpdateFleetMetadataRequestRequestTypeDef
 ```
 
 Required fields:
@@ -759,10 +759,10 @@ Optional fields:
 - `DisplayName`: `str`
 - `OptimizeForEndUserLocation`: `bool`
 
-## UpdateIdentityProviderConfigurationRequestTypeDef
+## UpdateIdentityProviderConfigurationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_worklink.type_defs import UpdateIdentityProviderConfigurationRequestTypeDef
+from mypy_boto3_worklink.type_defs import UpdateIdentityProviderConfigurationRequestRequestTypeDef
 ```
 
 Required fields:

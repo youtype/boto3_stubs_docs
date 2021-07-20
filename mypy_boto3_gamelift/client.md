@@ -11,6 +11,7 @@ type annotations stubs module
   - [GameLiftClient](#gameliftclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_match](#accept_match)
     - [can_paginate](#can_paginate)
     - [claim_game_server](#claim_game_server)
@@ -159,6 +160,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+GameLiftClient exceptions.
+
+Type annotations for `boto3.client("gamelift").exceptions` method.
+
+Boto3 documentation:
+[GameLift.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_match
 
 Registers a player's acceptance or rejection of a proposed FlexMatch match.
@@ -169,7 +181,7 @@ Boto3 documentation:
 [GameLift.Client.accept_match](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.accept_match)
 
 Arguments mapping described in
-[AcceptMatchInputTypeDef](./type_defs.md#acceptmatchinputtypedef).
+[AcceptMatchInputRequestTypeDef](./type_defs.md#acceptmatchinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,7 +219,7 @@ Boto3 documentation:
 [GameLift.Client.claim_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.claim_game_server)
 
 Arguments mapping described in
-[ClaimGameServerInputTypeDef](./type_defs.md#claimgameserverinputtypedef).
+[ClaimGameServerInputRequestTypeDef](./type_defs.md#claimgameserverinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -216,7 +228,7 @@ Keyword-only arguments:
 - `GameServerData`: `str`
 
 Returns
-[ClaimGameServerOutputResponseTypeDef](./type_defs.md#claimgameserveroutputresponsetypedef).
+[ClaimGameServerOutputTypeDef](./type_defs.md#claimgameserveroutputtypedef).
 
 ### create_alias
 
@@ -228,7 +240,7 @@ Boto3 documentation:
 [GameLift.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_alias)
 
 Arguments mapping described in
-[CreateAliasInputTypeDef](./type_defs.md#createaliasinputtypedef).
+[CreateAliasInputRequestTypeDef](./type_defs.md#createaliasinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -238,8 +250,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateAliasOutputResponseTypeDef](./type_defs.md#createaliasoutputresponsetypedef).
+Returns [CreateAliasOutputTypeDef](./type_defs.md#createaliasoutputtypedef).
 
 ### create_build
 
@@ -251,7 +262,7 @@ Boto3 documentation:
 [GameLift.Client.create_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_build)
 
 Arguments mapping described in
-[CreateBuildInputTypeDef](./type_defs.md#createbuildinputtypedef).
+[CreateBuildInputRequestTypeDef](./type_defs.md#createbuildinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -261,8 +272,7 @@ Keyword-only arguments:
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateBuildOutputResponseTypeDef](./type_defs.md#createbuildoutputresponsetypedef).
+Returns [CreateBuildOutputTypeDef](./type_defs.md#createbuildoutputtypedef).
 
 ### create_fleet
 
@@ -275,7 +285,7 @@ Boto3 documentation:
 [GameLift.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet)
 
 Arguments mapping described in
-[CreateFleetInputTypeDef](./type_defs.md#createfleetinputtypedef).
+[CreateFleetInputRequestTypeDef](./type_defs.md#createfleetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,8 +317,7 @@ Keyword-only arguments:
   `List`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateFleetOutputResponseTypeDef](./type_defs.md#createfleetoutputresponsetypedef).
+Returns [CreateFleetOutputTypeDef](./type_defs.md#createfleetoutputtypedef).
 
 ### create_fleet_locations
 
@@ -321,7 +330,7 @@ Boto3 documentation:
 [GameLift.Client.create_fleet_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet_locations)
 
 Arguments mapping described in
-[CreateFleetLocationsInputTypeDef](./type_defs.md#createfleetlocationsinputtypedef).
+[CreateFleetLocationsInputRequestTypeDef](./type_defs.md#createfleetlocationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -331,7 +340,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateFleetLocationsOutputResponseTypeDef](./type_defs.md#createfleetlocationsoutputresponsetypedef).
+[CreateFleetLocationsOutputTypeDef](./type_defs.md#createfleetlocationsoutputtypedef).
 
 ### create_game_server_group
 
@@ -346,7 +355,7 @@ Boto3 documentation:
 [GameLift.Client.create_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_server_group)
 
 Arguments mapping described in
-[CreateGameServerGroupInputTypeDef](./type_defs.md#creategameservergroupinputtypedef).
+[CreateGameServerGroupInputRequestTypeDef](./type_defs.md#creategameservergroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -370,7 +379,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateGameServerGroupOutputResponseTypeDef](./type_defs.md#creategameservergroupoutputresponsetypedef).
+[CreateGameServerGroupOutputTypeDef](./type_defs.md#creategameservergroupoutputtypedef).
 
 ### create_game_session
 
@@ -382,7 +391,7 @@ Boto3 documentation:
 [GameLift.Client.create_game_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session)
 
 Arguments mapping described in
-[CreateGameSessionInputTypeDef](./type_defs.md#creategamesessioninputtypedef).
+[CreateGameSessionInputRequestTypeDef](./type_defs.md#creategamesessioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -399,7 +408,7 @@ Keyword-only arguments:
 - `Location`: `str`
 
 Returns
-[CreateGameSessionOutputResponseTypeDef](./type_defs.md#creategamesessionoutputresponsetypedef).
+[CreateGameSessionOutputTypeDef](./type_defs.md#creategamesessionoutputtypedef).
 
 ### create_game_session_queue
 
@@ -412,7 +421,7 @@ Boto3 documentation:
 [GameLift.Client.create_game_session_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session_queue)
 
 Arguments mapping described in
-[CreateGameSessionQueueInputTypeDef](./type_defs.md#creategamesessionqueueinputtypedef).
+[CreateGameSessionQueueInputRequestTypeDef](./type_defs.md#creategamesessionqueueinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -431,7 +440,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateGameSessionQueueOutputResponseTypeDef](./type_defs.md#creategamesessionqueueoutputresponsetypedef).
+[CreateGameSessionQueueOutputTypeDef](./type_defs.md#creategamesessionqueueoutputtypedef).
 
 ### create_matchmaking_configuration
 
@@ -444,7 +453,7 @@ Boto3 documentation:
 [GameLift.Client.create_matchmaking_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_configuration)
 
 Arguments mapping described in
-[CreateMatchmakingConfigurationInputTypeDef](./type_defs.md#creatematchmakingconfigurationinputtypedef).
+[CreateMatchmakingConfigurationInputRequestTypeDef](./type_defs.md#creatematchmakingconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -466,7 +475,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateMatchmakingConfigurationOutputResponseTypeDef](./type_defs.md#creatematchmakingconfigurationoutputresponsetypedef).
+[CreateMatchmakingConfigurationOutputTypeDef](./type_defs.md#creatematchmakingconfigurationoutputtypedef).
 
 ### create_matchmaking_rule_set
 
@@ -479,7 +488,7 @@ Boto3 documentation:
 [GameLift.Client.create_matchmaking_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_rule_set)
 
 Arguments mapping described in
-[CreateMatchmakingRuleSetInputTypeDef](./type_defs.md#creatematchmakingrulesetinputtypedef).
+[CreateMatchmakingRuleSetInputRequestTypeDef](./type_defs.md#creatematchmakingrulesetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -488,7 +497,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateMatchmakingRuleSetOutputResponseTypeDef](./type_defs.md#creatematchmakingrulesetoutputresponsetypedef).
+[CreateMatchmakingRuleSetOutputTypeDef](./type_defs.md#creatematchmakingrulesetoutputtypedef).
 
 ### create_player_session
 
@@ -500,7 +509,7 @@ Boto3 documentation:
 [GameLift.Client.create_player_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_session)
 
 Arguments mapping described in
-[CreatePlayerSessionInputTypeDef](./type_defs.md#createplayersessioninputtypedef).
+[CreatePlayerSessionInputRequestTypeDef](./type_defs.md#createplayersessioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -509,7 +518,7 @@ Keyword-only arguments:
 - `PlayerData`: `str`
 
 Returns
-[CreatePlayerSessionOutputResponseTypeDef](./type_defs.md#createplayersessionoutputresponsetypedef).
+[CreatePlayerSessionOutputTypeDef](./type_defs.md#createplayersessionoutputtypedef).
 
 ### create_player_sessions
 
@@ -521,7 +530,7 @@ Boto3 documentation:
 [GameLift.Client.create_player_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_sessions)
 
 Arguments mapping described in
-[CreatePlayerSessionsInputTypeDef](./type_defs.md#createplayersessionsinputtypedef).
+[CreatePlayerSessionsInputRequestTypeDef](./type_defs.md#createplayersessionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -530,7 +539,7 @@ Keyword-only arguments:
 - `PlayerDataMap`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreatePlayerSessionsOutputResponseTypeDef](./type_defs.md#createplayersessionsoutputresponsetypedef).
+[CreatePlayerSessionsOutputTypeDef](./type_defs.md#createplayersessionsoutputtypedef).
 
 ### create_script
 
@@ -542,7 +551,7 @@ Boto3 documentation:
 [GameLift.Client.create_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_script)
 
 Arguments mapping described in
-[CreateScriptInputTypeDef](./type_defs.md#createscriptinputtypedef).
+[CreateScriptInputRequestTypeDef](./type_defs.md#createscriptinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -552,8 +561,7 @@ Keyword-only arguments:
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-Returns
-[CreateScriptOutputResponseTypeDef](./type_defs.md#createscriptoutputresponsetypedef).
+Returns [CreateScriptOutputTypeDef](./type_defs.md#createscriptoutputtypedef).
 
 ### create_vpc_peering_authorization
 
@@ -568,7 +576,7 @@ Boto3 documentation:
 [GameLift.Client.create_vpc_peering_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_authorization)
 
 Arguments mapping described in
-[CreateVpcPeeringAuthorizationInputTypeDef](./type_defs.md#createvpcpeeringauthorizationinputtypedef).
+[CreateVpcPeeringAuthorizationInputRequestTypeDef](./type_defs.md#createvpcpeeringauthorizationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -576,7 +584,7 @@ Keyword-only arguments:
 - `PeerVpcId`: `str` *(required)*
 
 Returns
-[CreateVpcPeeringAuthorizationOutputResponseTypeDef](./type_defs.md#createvpcpeeringauthorizationoutputresponsetypedef).
+[CreateVpcPeeringAuthorizationOutputTypeDef](./type_defs.md#createvpcpeeringauthorizationoutputtypedef).
 
 ### create_vpc_peering_connection
 
@@ -590,7 +598,7 @@ Boto3 documentation:
 [GameLift.Client.create_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_connection)
 
 Arguments mapping described in
-[CreateVpcPeeringConnectionInputTypeDef](./type_defs.md#createvpcpeeringconnectioninputtypedef).
+[CreateVpcPeeringConnectionInputRequestTypeDef](./type_defs.md#createvpcpeeringconnectioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -610,7 +618,7 @@ Boto3 documentation:
 [GameLift.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_alias)
 
 Arguments mapping described in
-[DeleteAliasInputTypeDef](./type_defs.md#deletealiasinputtypedef).
+[DeleteAliasInputRequestTypeDef](./type_defs.md#deletealiasinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -626,7 +634,7 @@ Boto3 documentation:
 [GameLift.Client.delete_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_build)
 
 Arguments mapping described in
-[DeleteBuildInputTypeDef](./type_defs.md#deletebuildinputtypedef).
+[DeleteBuildInputRequestTypeDef](./type_defs.md#deletebuildinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -642,7 +650,7 @@ Boto3 documentation:
 [GameLift.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet)
 
 Arguments mapping described in
-[DeleteFleetInputTypeDef](./type_defs.md#deletefleetinputtypedef).
+[DeleteFleetInputRequestTypeDef](./type_defs.md#deletefleetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -658,7 +666,7 @@ Boto3 documentation:
 [GameLift.Client.delete_fleet_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet_locations)
 
 Arguments mapping described in
-[DeleteFleetLocationsInputTypeDef](./type_defs.md#deletefleetlocationsinputtypedef).
+[DeleteFleetLocationsInputRequestTypeDef](./type_defs.md#deletefleetlocationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -666,7 +674,7 @@ Keyword-only arguments:
 - `Locations`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteFleetLocationsOutputResponseTypeDef](./type_defs.md#deletefleetlocationsoutputresponsetypedef).
+[DeleteFleetLocationsOutputTypeDef](./type_defs.md#deletefleetlocationsoutputtypedef).
 
 ### delete_game_server_group
 
@@ -681,7 +689,7 @@ Boto3 documentation:
 [GameLift.Client.delete_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_server_group)
 
 Arguments mapping described in
-[DeleteGameServerGroupInputTypeDef](./type_defs.md#deletegameservergroupinputtypedef).
+[DeleteGameServerGroupInputRequestTypeDef](./type_defs.md#deletegameservergroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -690,7 +698,7 @@ Keyword-only arguments:
   [GameServerGroupDeleteOptionType](./literals.md#gameservergroupdeleteoptiontype)
 
 Returns
-[DeleteGameServerGroupOutputResponseTypeDef](./type_defs.md#deletegameservergroupoutputresponsetypedef).
+[DeleteGameServerGroupOutputTypeDef](./type_defs.md#deletegameservergroupoutputtypedef).
 
 ### delete_game_session_queue
 
@@ -703,7 +711,7 @@ Boto3 documentation:
 [GameLift.Client.delete_game_session_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_session_queue)
 
 Arguments mapping described in
-[DeleteGameSessionQueueInputTypeDef](./type_defs.md#deletegamesessionqueueinputtypedef).
+[DeleteGameSessionQueueInputRequestTypeDef](./type_defs.md#deletegamesessionqueueinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -722,7 +730,7 @@ Boto3 documentation:
 [GameLift.Client.delete_matchmaking_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_configuration)
 
 Arguments mapping described in
-[DeleteMatchmakingConfigurationInputTypeDef](./type_defs.md#deletematchmakingconfigurationinputtypedef).
+[DeleteMatchmakingConfigurationInputRequestTypeDef](./type_defs.md#deletematchmakingconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -741,7 +749,7 @@ Boto3 documentation:
 [GameLift.Client.delete_matchmaking_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_rule_set)
 
 Arguments mapping described in
-[DeleteMatchmakingRuleSetInputTypeDef](./type_defs.md#deletematchmakingrulesetinputtypedef).
+[DeleteMatchmakingRuleSetInputRequestTypeDef](./type_defs.md#deletematchmakingrulesetinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -759,7 +767,7 @@ Boto3 documentation:
 [GameLift.Client.delete_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_scaling_policy)
 
 Arguments mapping described in
-[DeleteScalingPolicyInputTypeDef](./type_defs.md#deletescalingpolicyinputtypedef).
+[DeleteScalingPolicyInputRequestTypeDef](./type_defs.md#deletescalingpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -776,7 +784,7 @@ Boto3 documentation:
 [GameLift.Client.delete_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_script)
 
 Arguments mapping described in
-[DeleteScriptInputTypeDef](./type_defs.md#deletescriptinputtypedef).
+[DeleteScriptInputRequestTypeDef](./type_defs.md#deletescriptinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -793,7 +801,7 @@ Boto3 documentation:
 [GameLift.Client.delete_vpc_peering_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_authorization)
 
 Arguments mapping described in
-[DeleteVpcPeeringAuthorizationInputTypeDef](./type_defs.md#deletevpcpeeringauthorizationinputtypedef).
+[DeleteVpcPeeringAuthorizationInputRequestTypeDef](./type_defs.md#deletevpcpeeringauthorizationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -813,7 +821,7 @@ Boto3 documentation:
 [GameLift.Client.delete_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_connection)
 
 Arguments mapping described in
-[DeleteVpcPeeringConnectionInputTypeDef](./type_defs.md#deletevpcpeeringconnectioninputtypedef).
+[DeleteVpcPeeringConnectionInputRequestTypeDef](./type_defs.md#deletevpcpeeringconnectioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -833,7 +841,7 @@ Boto3 documentation:
 [GameLift.Client.deregister_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.deregister_game_server)
 
 Arguments mapping described in
-[DeregisterGameServerInputTypeDef](./type_defs.md#deregistergameserverinputtypedef).
+[DeregisterGameServerInputRequestTypeDef](./type_defs.md#deregistergameserverinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -850,14 +858,14 @@ Boto3 documentation:
 [GameLift.Client.describe_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_alias)
 
 Arguments mapping described in
-[DescribeAliasInputTypeDef](./type_defs.md#describealiasinputtypedef).
+[DescribeAliasInputRequestTypeDef](./type_defs.md#describealiasinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `AliasId`: `str` *(required)*
 
 Returns
-[DescribeAliasOutputResponseTypeDef](./type_defs.md#describealiasoutputresponsetypedef).
+[DescribeAliasOutputTypeDef](./type_defs.md#describealiasoutputtypedef).
 
 ### describe_build
 
@@ -869,14 +877,14 @@ Boto3 documentation:
 [GameLift.Client.describe_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_build)
 
 Arguments mapping described in
-[DescribeBuildInputTypeDef](./type_defs.md#describebuildinputtypedef).
+[DescribeBuildInputRequestTypeDef](./type_defs.md#describebuildinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BuildId`: `str` *(required)*
 
 Returns
-[DescribeBuildOutputResponseTypeDef](./type_defs.md#describebuildoutputresponsetypedef).
+[DescribeBuildOutputTypeDef](./type_defs.md#describebuildoutputtypedef).
 
 ### describe_ec2_instance_limits
 
@@ -890,7 +898,7 @@ Boto3 documentation:
 [GameLift.Client.describe_ec2_instance_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_ec2_instance_limits)
 
 Arguments mapping described in
-[DescribeEC2InstanceLimitsInputTypeDef](./type_defs.md#describeec2instancelimitsinputtypedef).
+[DescribeEC2InstanceLimitsInputRequestTypeDef](./type_defs.md#describeec2instancelimitsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -898,7 +906,7 @@ Keyword-only arguments:
 - `Location`: `str`
 
 Returns
-[DescribeEC2InstanceLimitsOutputResponseTypeDef](./type_defs.md#describeec2instancelimitsoutputresponsetypedef).
+[DescribeEC2InstanceLimitsOutputTypeDef](./type_defs.md#describeec2instancelimitsoutputtypedef).
 
 ### describe_fleet_attributes
 
@@ -912,7 +920,7 @@ Boto3 documentation:
 [GameLift.Client.describe_fleet_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_attributes)
 
 Arguments mapping described in
-[DescribeFleetAttributesInputTypeDef](./type_defs.md#describefleetattributesinputtypedef).
+[DescribeFleetAttributesInputRequestTypeDef](./type_defs.md#describefleetattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -921,7 +929,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFleetAttributesOutputResponseTypeDef](./type_defs.md#describefleetattributesoutputresponsetypedef).
+[DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef).
 
 ### describe_fleet_capacity
 
@@ -933,7 +941,7 @@ Boto3 documentation:
 [GameLift.Client.describe_fleet_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_capacity)
 
 Arguments mapping described in
-[DescribeFleetCapacityInputTypeDef](./type_defs.md#describefleetcapacityinputtypedef).
+[DescribeFleetCapacityInputRequestTypeDef](./type_defs.md#describefleetcapacityinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -942,7 +950,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFleetCapacityOutputResponseTypeDef](./type_defs.md#describefleetcapacityoutputresponsetypedef).
+[DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef).
 
 ### describe_fleet_events
 
@@ -954,7 +962,7 @@ Boto3 documentation:
 [GameLift.Client.describe_fleet_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_events)
 
 Arguments mapping described in
-[DescribeFleetEventsInputTypeDef](./type_defs.md#describefleeteventsinputtypedef).
+[DescribeFleetEventsInputRequestTypeDef](./type_defs.md#describefleeteventsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -965,7 +973,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFleetEventsOutputResponseTypeDef](./type_defs.md#describefleeteventsoutputresponsetypedef).
+[DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef).
 
 ### describe_fleet_location_attributes
 
@@ -979,7 +987,7 @@ Boto3 documentation:
 [GameLift.Client.describe_fleet_location_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_attributes)
 
 Arguments mapping described in
-[DescribeFleetLocationAttributesInputTypeDef](./type_defs.md#describefleetlocationattributesinputtypedef).
+[DescribeFleetLocationAttributesInputRequestTypeDef](./type_defs.md#describefleetlocationattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -989,7 +997,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFleetLocationAttributesOutputResponseTypeDef](./type_defs.md#describefleetlocationattributesoutputresponsetypedef).
+[DescribeFleetLocationAttributesOutputTypeDef](./type_defs.md#describefleetlocationattributesoutputtypedef).
 
 ### describe_fleet_location_capacity
 
@@ -1002,7 +1010,7 @@ Boto3 documentation:
 [GameLift.Client.describe_fleet_location_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_capacity)
 
 Arguments mapping described in
-[DescribeFleetLocationCapacityInputTypeDef](./type_defs.md#describefleetlocationcapacityinputtypedef).
+[DescribeFleetLocationCapacityInputRequestTypeDef](./type_defs.md#describefleetlocationcapacityinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1010,7 +1018,7 @@ Keyword-only arguments:
 - `Location`: `str` *(required)*
 
 Returns
-[DescribeFleetLocationCapacityOutputResponseTypeDef](./type_defs.md#describefleetlocationcapacityoutputresponsetypedef).
+[DescribeFleetLocationCapacityOutputTypeDef](./type_defs.md#describefleetlocationcapacityoutputtypedef).
 
 ### describe_fleet_location_utilization
 
@@ -1023,7 +1031,7 @@ Boto3 documentation:
 [GameLift.Client.describe_fleet_location_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_utilization)
 
 Arguments mapping described in
-[DescribeFleetLocationUtilizationInputTypeDef](./type_defs.md#describefleetlocationutilizationinputtypedef).
+[DescribeFleetLocationUtilizationInputRequestTypeDef](./type_defs.md#describefleetlocationutilizationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1031,7 +1039,7 @@ Keyword-only arguments:
 - `Location`: `str` *(required)*
 
 Returns
-[DescribeFleetLocationUtilizationOutputResponseTypeDef](./type_defs.md#describefleetlocationutilizationoutputresponsetypedef).
+[DescribeFleetLocationUtilizationOutputTypeDef](./type_defs.md#describefleetlocationutilizationoutputtypedef).
 
 ### describe_fleet_port_settings
 
@@ -1044,7 +1052,7 @@ Boto3 documentation:
 [GameLift.Client.describe_fleet_port_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_port_settings)
 
 Arguments mapping described in
-[DescribeFleetPortSettingsInputTypeDef](./type_defs.md#describefleetportsettingsinputtypedef).
+[DescribeFleetPortSettingsInputRequestTypeDef](./type_defs.md#describefleetportsettingsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1052,7 +1060,7 @@ Keyword-only arguments:
 - `Location`: `str`
 
 Returns
-[DescribeFleetPortSettingsOutputResponseTypeDef](./type_defs.md#describefleetportsettingsoutputresponsetypedef).
+[DescribeFleetPortSettingsOutputTypeDef](./type_defs.md#describefleetportsettingsoutputtypedef).
 
 ### describe_fleet_utilization
 
@@ -1065,7 +1073,7 @@ Boto3 documentation:
 [GameLift.Client.describe_fleet_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_utilization)
 
 Arguments mapping described in
-[DescribeFleetUtilizationInputTypeDef](./type_defs.md#describefleetutilizationinputtypedef).
+[DescribeFleetUtilizationInputRequestTypeDef](./type_defs.md#describefleetutilizationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1074,7 +1082,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeFleetUtilizationOutputResponseTypeDef](./type_defs.md#describefleetutilizationoutputresponsetypedef).
+[DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef).
 
 ### describe_game_server
 
@@ -1087,7 +1095,7 @@ Boto3 documentation:
 [GameLift.Client.describe_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server)
 
 Arguments mapping described in
-[DescribeGameServerInputTypeDef](./type_defs.md#describegameserverinputtypedef).
+[DescribeGameServerInputRequestTypeDef](./type_defs.md#describegameserverinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1095,7 +1103,7 @@ Keyword-only arguments:
 - `GameServerId`: `str` *(required)*
 
 Returns
-[DescribeGameServerOutputResponseTypeDef](./type_defs.md#describegameserveroutputresponsetypedef).
+[DescribeGameServerOutputTypeDef](./type_defs.md#describegameserveroutputtypedef).
 
 ### describe_game_server_group
 
@@ -1109,14 +1117,14 @@ Boto3 documentation:
 [GameLift.Client.describe_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_group)
 
 Arguments mapping described in
-[DescribeGameServerGroupInputTypeDef](./type_defs.md#describegameservergroupinputtypedef).
+[DescribeGameServerGroupInputRequestTypeDef](./type_defs.md#describegameservergroupinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `GameServerGroupName`: `str` *(required)*
 
 Returns
-[DescribeGameServerGroupOutputResponseTypeDef](./type_defs.md#describegameservergroupoutputresponsetypedef).
+[DescribeGameServerGroupOutputTypeDef](./type_defs.md#describegameservergroupoutputtypedef).
 
 ### describe_game_server_instances
 
@@ -1131,7 +1139,7 @@ Boto3 documentation:
 [GameLift.Client.describe_game_server_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_instances)
 
 Arguments mapping described in
-[DescribeGameServerInstancesInputTypeDef](./type_defs.md#describegameserverinstancesinputtypedef).
+[DescribeGameServerInstancesInputRequestTypeDef](./type_defs.md#describegameserverinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1141,7 +1149,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeGameServerInstancesOutputResponseTypeDef](./type_defs.md#describegameserverinstancesoutputresponsetypedef).
+[DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef).
 
 ### describe_game_session_details
 
@@ -1156,7 +1164,7 @@ Boto3 documentation:
 [GameLift.Client.describe_game_session_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_details)
 
 Arguments mapping described in
-[DescribeGameSessionDetailsInputTypeDef](./type_defs.md#describegamesessiondetailsinputtypedef).
+[DescribeGameSessionDetailsInputRequestTypeDef](./type_defs.md#describegamesessiondetailsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1169,7 +1177,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeGameSessionDetailsOutputResponseTypeDef](./type_defs.md#describegamesessiondetailsoutputresponsetypedef).
+[DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef).
 
 ### describe_game_session_placement
 
@@ -1183,14 +1191,14 @@ Boto3 documentation:
 [GameLift.Client.describe_game_session_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_placement)
 
 Arguments mapping described in
-[DescribeGameSessionPlacementInputTypeDef](./type_defs.md#describegamesessionplacementinputtypedef).
+[DescribeGameSessionPlacementInputRequestTypeDef](./type_defs.md#describegamesessionplacementinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `PlacementId`: `str` *(required)*
 
 Returns
-[DescribeGameSessionPlacementOutputResponseTypeDef](./type_defs.md#describegamesessionplacementoutputresponsetypedef).
+[DescribeGameSessionPlacementOutputTypeDef](./type_defs.md#describegamesessionplacementoutputtypedef).
 
 ### describe_game_session_queues
 
@@ -1203,7 +1211,7 @@ Boto3 documentation:
 [GameLift.Client.describe_game_session_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_queues)
 
 Arguments mapping described in
-[DescribeGameSessionQueuesInputTypeDef](./type_defs.md#describegamesessionqueuesinputtypedef).
+[DescribeGameSessionQueuesInputRequestTypeDef](./type_defs.md#describegamesessionqueuesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1212,7 +1220,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeGameSessionQueuesOutputResponseTypeDef](./type_defs.md#describegamesessionqueuesoutputresponsetypedef).
+[DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef).
 
 ### describe_game_sessions
 
@@ -1224,7 +1232,7 @@ Boto3 documentation:
 [GameLift.Client.describe_game_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_sessions)
 
 Arguments mapping described in
-[DescribeGameSessionsInputTypeDef](./type_defs.md#describegamesessionsinputtypedef).
+[DescribeGameSessionsInputRequestTypeDef](./type_defs.md#describegamesessionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1237,7 +1245,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeGameSessionsOutputResponseTypeDef](./type_defs.md#describegamesessionsoutputresponsetypedef).
+[DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef).
 
 ### describe_instances
 
@@ -1250,7 +1258,7 @@ Boto3 documentation:
 [GameLift.Client.describe_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_instances)
 
 Arguments mapping described in
-[DescribeInstancesInputTypeDef](./type_defs.md#describeinstancesinputtypedef).
+[DescribeInstancesInputRequestTypeDef](./type_defs.md#describeinstancesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1261,7 +1269,7 @@ Keyword-only arguments:
 - `Location`: `str`
 
 Returns
-[DescribeInstancesOutputResponseTypeDef](./type_defs.md#describeinstancesoutputresponsetypedef).
+[DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef).
 
 ### describe_matchmaking
 
@@ -1273,14 +1281,14 @@ Boto3 documentation:
 [GameLift.Client.describe_matchmaking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking)
 
 Arguments mapping described in
-[DescribeMatchmakingInputTypeDef](./type_defs.md#describematchmakinginputtypedef).
+[DescribeMatchmakingInputRequestTypeDef](./type_defs.md#describematchmakinginputrequesttypedef).
 
 Keyword-only arguments:
 
 - `TicketIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DescribeMatchmakingOutputResponseTypeDef](./type_defs.md#describematchmakingoutputresponsetypedef).
+[DescribeMatchmakingOutputTypeDef](./type_defs.md#describematchmakingoutputtypedef).
 
 ### describe_matchmaking_configurations
 
@@ -1293,7 +1301,7 @@ Boto3 documentation:
 [GameLift.Client.describe_matchmaking_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_configurations)
 
 Arguments mapping described in
-[DescribeMatchmakingConfigurationsInputTypeDef](./type_defs.md#describematchmakingconfigurationsinputtypedef).
+[DescribeMatchmakingConfigurationsInputRequestTypeDef](./type_defs.md#describematchmakingconfigurationsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1303,7 +1311,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeMatchmakingConfigurationsOutputResponseTypeDef](./type_defs.md#describematchmakingconfigurationsoutputresponsetypedef).
+[DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef).
 
 ### describe_matchmaking_rule_sets
 
@@ -1316,7 +1324,7 @@ Boto3 documentation:
 [GameLift.Client.describe_matchmaking_rule_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_rule_sets)
 
 Arguments mapping described in
-[DescribeMatchmakingRuleSetsInputTypeDef](./type_defs.md#describematchmakingrulesetsinputtypedef).
+[DescribeMatchmakingRuleSetsInputRequestTypeDef](./type_defs.md#describematchmakingrulesetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1325,7 +1333,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeMatchmakingRuleSetsOutputResponseTypeDef](./type_defs.md#describematchmakingrulesetsoutputresponsetypedef).
+[DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef).
 
 ### describe_player_sessions
 
@@ -1338,7 +1346,7 @@ Boto3 documentation:
 [GameLift.Client.describe_player_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_player_sessions)
 
 Arguments mapping described in
-[DescribePlayerSessionsInputTypeDef](./type_defs.md#describeplayersessionsinputtypedef).
+[DescribePlayerSessionsInputRequestTypeDef](./type_defs.md#describeplayersessionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1350,7 +1358,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribePlayerSessionsOutputResponseTypeDef](./type_defs.md#describeplayersessionsoutputresponsetypedef).
+[DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef).
 
 ### describe_runtime_configuration
 
@@ -1363,14 +1371,14 @@ Boto3 documentation:
 [GameLift.Client.describe_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_runtime_configuration)
 
 Arguments mapping described in
-[DescribeRuntimeConfigurationInputTypeDef](./type_defs.md#describeruntimeconfigurationinputtypedef).
+[DescribeRuntimeConfigurationInputRequestTypeDef](./type_defs.md#describeruntimeconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 
 Returns
-[DescribeRuntimeConfigurationOutputResponseTypeDef](./type_defs.md#describeruntimeconfigurationoutputresponsetypedef).
+[DescribeRuntimeConfigurationOutputTypeDef](./type_defs.md#describeruntimeconfigurationoutputtypedef).
 
 ### describe_scaling_policies
 
@@ -1383,7 +1391,7 @@ Boto3 documentation:
 [GameLift.Client.describe_scaling_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_scaling_policies)
 
 Arguments mapping described in
-[DescribeScalingPoliciesInputTypeDef](./type_defs.md#describescalingpoliciesinputtypedef).
+[DescribeScalingPoliciesInputRequestTypeDef](./type_defs.md#describescalingpoliciesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1394,7 +1402,7 @@ Keyword-only arguments:
 - `Location`: `str`
 
 Returns
-[DescribeScalingPoliciesOutputResponseTypeDef](./type_defs.md#describescalingpoliciesoutputresponsetypedef).
+[DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef).
 
 ### describe_script
 
@@ -1406,14 +1414,14 @@ Boto3 documentation:
 [GameLift.Client.describe_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_script)
 
 Arguments mapping described in
-[DescribeScriptInputTypeDef](./type_defs.md#describescriptinputtypedef).
+[DescribeScriptInputRequestTypeDef](./type_defs.md#describescriptinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ScriptId`: `str` *(required)*
 
 Returns
-[DescribeScriptOutputResponseTypeDef](./type_defs.md#describescriptoutputresponsetypedef).
+[DescribeScriptOutputTypeDef](./type_defs.md#describescriptoutputtypedef).
 
 ### describe_vpc_peering_authorizations
 
@@ -1427,7 +1435,7 @@ Boto3 documentation:
 [GameLift.Client.describe_vpc_peering_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_authorizations)
 
 Returns
-[DescribeVpcPeeringAuthorizationsOutputResponseTypeDef](./type_defs.md#describevpcpeeringauthorizationsoutputresponsetypedef).
+[DescribeVpcPeeringAuthorizationsOutputTypeDef](./type_defs.md#describevpcpeeringauthorizationsoutputtypedef).
 
 ### describe_vpc_peering_connections
 
@@ -1440,14 +1448,14 @@ Boto3 documentation:
 [GameLift.Client.describe_vpc_peering_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_connections)
 
 Arguments mapping described in
-[DescribeVpcPeeringConnectionsInputTypeDef](./type_defs.md#describevpcpeeringconnectionsinputtypedef).
+[DescribeVpcPeeringConnectionsInputRequestTypeDef](./type_defs.md#describevpcpeeringconnectionsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `FleetId`: `str`
 
 Returns
-[DescribeVpcPeeringConnectionsOutputResponseTypeDef](./type_defs.md#describevpcpeeringconnectionsoutputresponsetypedef).
+[DescribeVpcPeeringConnectionsOutputTypeDef](./type_defs.md#describevpcpeeringconnectionsoutputtypedef).
 
 ### generate_presigned_url
 
@@ -1479,14 +1487,14 @@ Boto3 documentation:
 [GameLift.Client.get_game_session_log_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_game_session_log_url)
 
 Arguments mapping described in
-[GetGameSessionLogUrlInputTypeDef](./type_defs.md#getgamesessionlogurlinputtypedef).
+[GetGameSessionLogUrlInputRequestTypeDef](./type_defs.md#getgamesessionlogurlinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `GameSessionId`: `str` *(required)*
 
 Returns
-[GetGameSessionLogUrlOutputResponseTypeDef](./type_defs.md#getgamesessionlogurloutputresponsetypedef).
+[GetGameSessionLogUrlOutputTypeDef](./type_defs.md#getgamesessionlogurloutputtypedef).
 
 ### get_instance_access
 
@@ -1498,7 +1506,7 @@ Boto3 documentation:
 [GameLift.Client.get_instance_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_instance_access)
 
 Arguments mapping described in
-[GetInstanceAccessInputTypeDef](./type_defs.md#getinstanceaccessinputtypedef).
+[GetInstanceAccessInputRequestTypeDef](./type_defs.md#getinstanceaccessinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1506,7 +1514,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 
 Returns
-[GetInstanceAccessOutputResponseTypeDef](./type_defs.md#getinstanceaccessoutputresponsetypedef).
+[GetInstanceAccessOutputTypeDef](./type_defs.md#getinstanceaccessoutputtypedef).
 
 ### list_aliases
 
@@ -1518,7 +1526,7 @@ Boto3 documentation:
 [GameLift.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_aliases)
 
 Arguments mapping described in
-[ListAliasesInputTypeDef](./type_defs.md#listaliasesinputtypedef).
+[ListAliasesInputRequestTypeDef](./type_defs.md#listaliasesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1528,8 +1536,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListAliasesOutputResponseTypeDef](./type_defs.md#listaliasesoutputresponsetypedef).
+Returns [ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef).
 
 ### list_builds
 
@@ -1542,7 +1549,7 @@ Boto3 documentation:
 [GameLift.Client.list_builds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_builds)
 
 Arguments mapping described in
-[ListBuildsInputTypeDef](./type_defs.md#listbuildsinputtypedef).
+[ListBuildsInputRequestTypeDef](./type_defs.md#listbuildsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1550,8 +1557,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListBuildsOutputResponseTypeDef](./type_defs.md#listbuildsoutputresponsetypedef).
+Returns [ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef).
 
 ### list_fleets
 
@@ -1563,7 +1569,7 @@ Boto3 documentation:
 [GameLift.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_fleets)
 
 Arguments mapping described in
-[ListFleetsInputTypeDef](./type_defs.md#listfleetsinputtypedef).
+[ListFleetsInputRequestTypeDef](./type_defs.md#listfleetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1572,8 +1578,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListFleetsOutputResponseTypeDef](./type_defs.md#listfleetsoutputresponsetypedef).
+Returns [ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef).
 
 ### list_game_server_groups
 
@@ -1587,7 +1592,7 @@ Boto3 documentation:
 [GameLift.Client.list_game_server_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_server_groups)
 
 Arguments mapping described in
-[ListGameServerGroupsInputTypeDef](./type_defs.md#listgameservergroupsinputtypedef).
+[ListGameServerGroupsInputRequestTypeDef](./type_defs.md#listgameservergroupsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1595,7 +1600,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListGameServerGroupsOutputResponseTypeDef](./type_defs.md#listgameservergroupsoutputresponsetypedef).
+[ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef).
 
 ### list_game_servers
 
@@ -1609,7 +1614,7 @@ Boto3 documentation:
 [GameLift.Client.list_game_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_servers)
 
 Arguments mapping described in
-[ListGameServersInputTypeDef](./type_defs.md#listgameserversinputtypedef).
+[ListGameServersInputRequestTypeDef](./type_defs.md#listgameserversinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1619,7 +1624,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListGameServersOutputResponseTypeDef](./type_defs.md#listgameserversoutputresponsetypedef).
+[ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef).
 
 ### list_scripts
 
@@ -1632,15 +1637,14 @@ Boto3 documentation:
 [GameLift.Client.list_scripts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_scripts)
 
 Arguments mapping described in
-[ListScriptsInputTypeDef](./type_defs.md#listscriptsinputtypedef).
+[ListScriptsInputRequestTypeDef](./type_defs.md#listscriptsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Limit`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListScriptsOutputResponseTypeDef](./type_defs.md#listscriptsoutputresponsetypedef).
+Returns [ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -1652,14 +1656,14 @@ Boto3 documentation:
 [GameLift.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_scaling_policy
 
@@ -1671,7 +1675,7 @@ Boto3 documentation:
 [GameLift.Client.put_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.put_scaling_policy)
 
 Arguments mapping described in
-[PutScalingPolicyInputTypeDef](./type_defs.md#putscalingpolicyinputtypedef).
+[PutScalingPolicyInputRequestTypeDef](./type_defs.md#putscalingpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1690,7 +1694,7 @@ Keyword-only arguments:
   [TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef)
 
 Returns
-[PutScalingPolicyOutputResponseTypeDef](./type_defs.md#putscalingpolicyoutputresponsetypedef).
+[PutScalingPolicyOutputTypeDef](./type_defs.md#putscalingpolicyoutputtypedef).
 
 ### register_game_server
 
@@ -1704,7 +1708,7 @@ Boto3 documentation:
 [GameLift.Client.register_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.register_game_server)
 
 Arguments mapping described in
-[RegisterGameServerInputTypeDef](./type_defs.md#registergameserverinputtypedef).
+[RegisterGameServerInputRequestTypeDef](./type_defs.md#registergameserverinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1715,7 +1719,7 @@ Keyword-only arguments:
 - `GameServerData`: `str`
 
 Returns
-[RegisterGameServerOutputResponseTypeDef](./type_defs.md#registergameserveroutputresponsetypedef).
+[RegisterGameServerOutputTypeDef](./type_defs.md#registergameserveroutputtypedef).
 
 ### request_upload_credentials
 
@@ -1729,14 +1733,14 @@ Boto3 documentation:
 [GameLift.Client.request_upload_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.request_upload_credentials)
 
 Arguments mapping described in
-[RequestUploadCredentialsInputTypeDef](./type_defs.md#requestuploadcredentialsinputtypedef).
+[RequestUploadCredentialsInputRequestTypeDef](./type_defs.md#requestuploadcredentialsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `BuildId`: `str` *(required)*
 
 Returns
-[RequestUploadCredentialsOutputResponseTypeDef](./type_defs.md#requestuploadcredentialsoutputresponsetypedef).
+[RequestUploadCredentialsOutputTypeDef](./type_defs.md#requestuploadcredentialsoutputtypedef).
 
 ### resolve_alias
 
@@ -1748,14 +1752,13 @@ Boto3 documentation:
 [GameLift.Client.resolve_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resolve_alias)
 
 Arguments mapping described in
-[ResolveAliasInputTypeDef](./type_defs.md#resolvealiasinputtypedef).
+[ResolveAliasInputRequestTypeDef](./type_defs.md#resolvealiasinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `AliasId`: `str` *(required)*
 
-Returns
-[ResolveAliasOutputResponseTypeDef](./type_defs.md#resolvealiasoutputresponsetypedef).
+Returns [ResolveAliasOutputTypeDef](./type_defs.md#resolvealiasoutputtypedef).
 
 ### resume_game_server_group
 
@@ -1770,7 +1773,7 @@ Boto3 documentation:
 [GameLift.Client.resume_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resume_game_server_group)
 
 Arguments mapping described in
-[ResumeGameServerGroupInputTypeDef](./type_defs.md#resumegameservergroupinputtypedef).
+[ResumeGameServerGroupInputRequestTypeDef](./type_defs.md#resumegameservergroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1780,7 +1783,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ResumeGameServerGroupOutputResponseTypeDef](./type_defs.md#resumegameservergroupoutputresponsetypedef).
+[ResumeGameServerGroupOutputTypeDef](./type_defs.md#resumegameservergroupoutputtypedef).
 
 ### search_game_sessions
 
@@ -1793,7 +1796,7 @@ Boto3 documentation:
 [GameLift.Client.search_game_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.search_game_sessions)
 
 Arguments mapping described in
-[SearchGameSessionsInputTypeDef](./type_defs.md#searchgamesessionsinputtypedef).
+[SearchGameSessionsInputRequestTypeDef](./type_defs.md#searchgamesessionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1806,7 +1809,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[SearchGameSessionsOutputResponseTypeDef](./type_defs.md#searchgamesessionsoutputresponsetypedef).
+[SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef).
 
 ### start_fleet_actions
 
@@ -1819,7 +1822,7 @@ Boto3 documentation:
 [GameLift.Client.start_fleet_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_fleet_actions)
 
 Arguments mapping described in
-[StartFleetActionsInputTypeDef](./type_defs.md#startfleetactionsinputtypedef).
+[StartFleetActionsInputRequestTypeDef](./type_defs.md#startfleetactionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1829,7 +1832,7 @@ Keyword-only arguments:
 - `Location`: `str`
 
 Returns
-[StartFleetActionsOutputResponseTypeDef](./type_defs.md#startfleetactionsoutputresponsetypedef).
+[StartFleetActionsOutputTypeDef](./type_defs.md#startfleetactionsoutputtypedef).
 
 ### start_game_session_placement
 
@@ -1843,7 +1846,7 @@ Boto3 documentation:
 [GameLift.Client.start_game_session_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_game_session_placement)
 
 Arguments mapping described in
-[StartGameSessionPlacementInputTypeDef](./type_defs.md#startgamesessionplacementinputtypedef).
+[StartGameSessionPlacementInputRequestTypeDef](./type_defs.md#startgamesessionplacementinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1860,7 +1863,7 @@ Keyword-only arguments:
 - `GameSessionData`: `str`
 
 Returns
-[StartGameSessionPlacementOutputResponseTypeDef](./type_defs.md#startgamesessionplacementoutputresponsetypedef).
+[StartGameSessionPlacementOutputTypeDef](./type_defs.md#startgamesessionplacementoutputtypedef).
 
 ### start_match_backfill
 
@@ -1872,7 +1875,7 @@ Boto3 documentation:
 [GameLift.Client.start_match_backfill](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_match_backfill)
 
 Arguments mapping described in
-[StartMatchBackfillInputTypeDef](./type_defs.md#startmatchbackfillinputtypedef).
+[StartMatchBackfillInputRequestTypeDef](./type_defs.md#startmatchbackfillinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1883,7 +1886,7 @@ Keyword-only arguments:
 - `GameSessionArn`: `str`
 
 Returns
-[StartMatchBackfillOutputResponseTypeDef](./type_defs.md#startmatchbackfilloutputresponsetypedef).
+[StartMatchBackfillOutputTypeDef](./type_defs.md#startmatchbackfilloutputtypedef).
 
 ### start_matchmaking
 
@@ -1896,7 +1899,7 @@ Boto3 documentation:
 [GameLift.Client.start_matchmaking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_matchmaking)
 
 Arguments mapping described in
-[StartMatchmakingInputTypeDef](./type_defs.md#startmatchmakinginputtypedef).
+[StartMatchmakingInputRequestTypeDef](./type_defs.md#startmatchmakinginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1906,7 +1909,7 @@ Keyword-only arguments:
 - `TicketId`: `str`
 
 Returns
-[StartMatchmakingOutputResponseTypeDef](./type_defs.md#startmatchmakingoutputresponsetypedef).
+[StartMatchmakingOutputTypeDef](./type_defs.md#startmatchmakingoutputtypedef).
 
 ### stop_fleet_actions
 
@@ -1918,7 +1921,7 @@ Boto3 documentation:
 [GameLift.Client.stop_fleet_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_fleet_actions)
 
 Arguments mapping described in
-[StopFleetActionsInputTypeDef](./type_defs.md#stopfleetactionsinputtypedef).
+[StopFleetActionsInputRequestTypeDef](./type_defs.md#stopfleetactionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1928,7 +1931,7 @@ Keyword-only arguments:
 - `Location`: `str`
 
 Returns
-[StopFleetActionsOutputResponseTypeDef](./type_defs.md#stopfleetactionsoutputresponsetypedef).
+[StopFleetActionsOutputTypeDef](./type_defs.md#stopfleetactionsoutputtypedef).
 
 ### stop_game_session_placement
 
@@ -1941,14 +1944,14 @@ Boto3 documentation:
 [GameLift.Client.stop_game_session_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_game_session_placement)
 
 Arguments mapping described in
-[StopGameSessionPlacementInputTypeDef](./type_defs.md#stopgamesessionplacementinputtypedef).
+[StopGameSessionPlacementInputRequestTypeDef](./type_defs.md#stopgamesessionplacementinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `PlacementId`: `str` *(required)*
 
 Returns
-[StopGameSessionPlacementOutputResponseTypeDef](./type_defs.md#stopgamesessionplacementoutputresponsetypedef).
+[StopGameSessionPlacementOutputTypeDef](./type_defs.md#stopgamesessionplacementoutputtypedef).
 
 ### stop_matchmaking
 
@@ -1961,7 +1964,7 @@ Boto3 documentation:
 [GameLift.Client.stop_matchmaking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_matchmaking)
 
 Arguments mapping described in
-[StopMatchmakingInputTypeDef](./type_defs.md#stopmatchmakinginputtypedef).
+[StopMatchmakingInputRequestTypeDef](./type_defs.md#stopmatchmakinginputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1982,7 +1985,7 @@ Boto3 documentation:
 [GameLift.Client.suspend_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.suspend_game_server_group)
 
 Arguments mapping described in
-[SuspendGameServerGroupInputTypeDef](./type_defs.md#suspendgameservergroupinputtypedef).
+[SuspendGameServerGroupInputRequestTypeDef](./type_defs.md#suspendgameservergroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1992,7 +1995,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[SuspendGameServerGroupOutputResponseTypeDef](./type_defs.md#suspendgameservergroupoutputresponsetypedef).
+[SuspendGameServerGroupOutputTypeDef](./type_defs.md#suspendgameservergroupoutputtypedef).
 
 ### tag_resource
 
@@ -2004,7 +2007,7 @@ Boto3 documentation:
 [GameLift.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2023,7 +2026,7 @@ Boto3 documentation:
 [GameLift.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2042,7 +2045,7 @@ Boto3 documentation:
 [GameLift.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_alias)
 
 Arguments mapping described in
-[UpdateAliasInputTypeDef](./type_defs.md#updatealiasinputtypedef).
+[UpdateAliasInputRequestTypeDef](./type_defs.md#updatealiasinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2052,8 +2055,7 @@ Keyword-only arguments:
 - `RoutingStrategy`:
   [RoutingStrategyTypeDef](./type_defs.md#routingstrategytypedef)
 
-Returns
-[UpdateAliasOutputResponseTypeDef](./type_defs.md#updatealiasoutputresponsetypedef).
+Returns [UpdateAliasOutputTypeDef](./type_defs.md#updatealiasoutputtypedef).
 
 ### update_build
 
@@ -2065,7 +2067,7 @@ Boto3 documentation:
 [GameLift.Client.update_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_build)
 
 Arguments mapping described in
-[UpdateBuildInputTypeDef](./type_defs.md#updatebuildinputtypedef).
+[UpdateBuildInputRequestTypeDef](./type_defs.md#updatebuildinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2073,8 +2075,7 @@ Keyword-only arguments:
 - `Name`: `str`
 - `Version`: `str`
 
-Returns
-[UpdateBuildOutputResponseTypeDef](./type_defs.md#updatebuildoutputresponsetypedef).
+Returns [UpdateBuildOutputTypeDef](./type_defs.md#updatebuildoutputtypedef).
 
 ### update_fleet_attributes
 
@@ -2087,7 +2088,7 @@ Boto3 documentation:
 [GameLift.Client.update_fleet_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_attributes)
 
 Arguments mapping described in
-[UpdateFleetAttributesInputTypeDef](./type_defs.md#updatefleetattributesinputtypedef).
+[UpdateFleetAttributesInputRequestTypeDef](./type_defs.md#updatefleetattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2101,7 +2102,7 @@ Keyword-only arguments:
 - `MetricGroups`: `List`\[`str`\]
 
 Returns
-[UpdateFleetAttributesOutputResponseTypeDef](./type_defs.md#updatefleetattributesoutputresponsetypedef).
+[UpdateFleetAttributesOutputTypeDef](./type_defs.md#updatefleetattributesoutputtypedef).
 
 ### update_fleet_capacity
 
@@ -2113,7 +2114,7 @@ Boto3 documentation:
 [GameLift.Client.update_fleet_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_capacity)
 
 Arguments mapping described in
-[UpdateFleetCapacityInputTypeDef](./type_defs.md#updatefleetcapacityinputtypedef).
+[UpdateFleetCapacityInputRequestTypeDef](./type_defs.md#updatefleetcapacityinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2124,7 +2125,7 @@ Keyword-only arguments:
 - `Location`: `str`
 
 Returns
-[UpdateFleetCapacityOutputResponseTypeDef](./type_defs.md#updatefleetcapacityoutputresponsetypedef).
+[UpdateFleetCapacityOutputTypeDef](./type_defs.md#updatefleetcapacityoutputtypedef).
 
 ### update_fleet_port_settings
 
@@ -2138,7 +2139,7 @@ Boto3 documentation:
 [GameLift.Client.update_fleet_port_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_port_settings)
 
 Arguments mapping described in
-[UpdateFleetPortSettingsInputTypeDef](./type_defs.md#updatefleetportsettingsinputtypedef).
+[UpdateFleetPortSettingsInputRequestTypeDef](./type_defs.md#updatefleetportsettingsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2149,7 +2150,7 @@ Keyword-only arguments:
   `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 
 Returns
-[UpdateFleetPortSettingsOutputResponseTypeDef](./type_defs.md#updatefleetportsettingsoutputresponsetypedef).
+[UpdateFleetPortSettingsOutputTypeDef](./type_defs.md#updatefleetportsettingsoutputtypedef).
 
 ### update_game_server
 
@@ -2163,7 +2164,7 @@ Boto3 documentation:
 [GameLift.Client.update_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server)
 
 Arguments mapping described in
-[UpdateGameServerInputTypeDef](./type_defs.md#updategameserverinputtypedef).
+[UpdateGameServerInputRequestTypeDef](./type_defs.md#updategameserverinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2176,7 +2177,7 @@ Keyword-only arguments:
   [GameServerHealthCheckType](./literals.md#gameserverhealthchecktype))
 
 Returns
-[UpdateGameServerOutputResponseTypeDef](./type_defs.md#updategameserveroutputresponsetypedef).
+[UpdateGameServerOutputTypeDef](./type_defs.md#updategameserveroutputtypedef).
 
 ### update_game_server_group
 
@@ -2190,7 +2191,7 @@ Boto3 documentation:
 [GameLift.Client.update_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server_group)
 
 Arguments mapping described in
-[UpdateGameServerGroupInputTypeDef](./type_defs.md#updategameservergroupinputtypedef).
+[UpdateGameServerGroupInputRequestTypeDef](./type_defs.md#updategameservergroupinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2204,7 +2205,7 @@ Keyword-only arguments:
   [BalancingStrategyType](./literals.md#balancingstrategytype)
 
 Returns
-[UpdateGameServerGroupOutputResponseTypeDef](./type_defs.md#updategameservergroupoutputresponsetypedef).
+[UpdateGameServerGroupOutputTypeDef](./type_defs.md#updategameservergroupoutputtypedef).
 
 ### update_game_session
 
@@ -2216,7 +2217,7 @@ Boto3 documentation:
 [GameLift.Client.update_game_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session)
 
 Arguments mapping described in
-[UpdateGameSessionInputTypeDef](./type_defs.md#updategamesessioninputtypedef).
+[UpdateGameSessionInputRequestTypeDef](./type_defs.md#updategamesessioninputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2229,7 +2230,7 @@ Keyword-only arguments:
   [ProtectionPolicyType](./literals.md#protectionpolicytype)
 
 Returns
-[UpdateGameSessionOutputResponseTypeDef](./type_defs.md#updategamesessionoutputresponsetypedef).
+[UpdateGameSessionOutputTypeDef](./type_defs.md#updategamesessionoutputtypedef).
 
 ### update_game_session_queue
 
@@ -2243,7 +2244,7 @@ Boto3 documentation:
 [GameLift.Client.update_game_session_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session_queue)
 
 Arguments mapping described in
-[UpdateGameSessionQueueInputTypeDef](./type_defs.md#updategamesessionqueueinputtypedef).
+[UpdateGameSessionQueueInputRequestTypeDef](./type_defs.md#updategamesessionqueueinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2261,7 +2262,7 @@ Keyword-only arguments:
 - `NotificationTarget`: `str`
 
 Returns
-[UpdateGameSessionQueueOutputResponseTypeDef](./type_defs.md#updategamesessionqueueoutputresponsetypedef).
+[UpdateGameSessionQueueOutputTypeDef](./type_defs.md#updategamesessionqueueoutputtypedef).
 
 ### update_matchmaking_configuration
 
@@ -2274,7 +2275,7 @@ Boto3 documentation:
 [GameLift.Client.update_matchmaking_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_matchmaking_configuration)
 
 Arguments mapping described in
-[UpdateMatchmakingConfigurationInputTypeDef](./type_defs.md#updatematchmakingconfigurationinputtypedef).
+[UpdateMatchmakingConfigurationInputRequestTypeDef](./type_defs.md#updatematchmakingconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2295,7 +2296,7 @@ Keyword-only arguments:
 - `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)
 
 Returns
-[UpdateMatchmakingConfigurationOutputResponseTypeDef](./type_defs.md#updatematchmakingconfigurationoutputresponsetypedef).
+[UpdateMatchmakingConfigurationOutputTypeDef](./type_defs.md#updatematchmakingconfigurationoutputtypedef).
 
 ### update_runtime_configuration
 
@@ -2309,7 +2310,7 @@ Boto3 documentation:
 [GameLift.Client.update_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_runtime_configuration)
 
 Arguments mapping described in
-[UpdateRuntimeConfigurationInputTypeDef](./type_defs.md#updateruntimeconfigurationinputtypedef).
+[UpdateRuntimeConfigurationInputRequestTypeDef](./type_defs.md#updateruntimeconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2319,7 +2320,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateRuntimeConfigurationOutputResponseTypeDef](./type_defs.md#updateruntimeconfigurationoutputresponsetypedef).
+[UpdateRuntimeConfigurationOutputTypeDef](./type_defs.md#updateruntimeconfigurationoutputtypedef).
 
 ### update_script
 
@@ -2331,7 +2332,7 @@ Boto3 documentation:
 [GameLift.Client.update_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_script)
 
 Arguments mapping described in
-[UpdateScriptInputTypeDef](./type_defs.md#updatescriptinputtypedef).
+[UpdateScriptInputRequestTypeDef](./type_defs.md#updatescriptinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2341,8 +2342,7 @@ Keyword-only arguments:
 - `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
-Returns
-[UpdateScriptOutputResponseTypeDef](./type_defs.md#updatescriptoutputresponsetypedef).
+Returns [UpdateScriptOutputTypeDef](./type_defs.md#updatescriptoutputtypedef).
 
 ### validate_matchmaking_rule_set
 
@@ -2355,14 +2355,14 @@ Boto3 documentation:
 [GameLift.Client.validate_matchmaking_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.validate_matchmaking_rule_set)
 
 Arguments mapping described in
-[ValidateMatchmakingRuleSetInputTypeDef](./type_defs.md#validatematchmakingrulesetinputtypedef).
+[ValidateMatchmakingRuleSetInputRequestTypeDef](./type_defs.md#validatematchmakingrulesetinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `RuleSetBody`: `str` *(required)*
 
 Returns
-[ValidateMatchmakingRuleSetOutputResponseTypeDef](./type_defs.md#validatematchmakingrulesetoutputresponsetypedef).
+[ValidateMatchmakingRuleSetOutputTypeDef](./type_defs.md#validatematchmakingrulesetoutputtypedef).
 
 ### get_paginator
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [TranscribeServiceClient](#transcribeserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_language_model](#create_language_model)
     - [create_medical_vocabulary](#create_medical_vocabulary)
@@ -80,6 +81,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+TranscribeServiceClient exceptions.
+
+Type annotations for `boto3.client("transcribe").exceptions` method.
+
+Boto3 documentation:
+[TranscribeService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -105,7 +117,7 @@ Boto3 documentation:
 [TranscribeService.Client.create_language_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_language_model)
 
 Arguments mapping described in
-[CreateLanguageModelRequestTypeDef](./type_defs.md#createlanguagemodelrequesttypedef).
+[CreateLanguageModelRequestRequestTypeDef](./type_defs.md#createlanguagemodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -118,7 +130,7 @@ Keyword-only arguments:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
 
 Returns
-[CreateLanguageModelResponseResponseTypeDef](./type_defs.md#createlanguagemodelresponseresponsetypedef).
+[CreateLanguageModelResponseTypeDef](./type_defs.md#createlanguagemodelresponsetypedef).
 
 ### create_medical_vocabulary
 
@@ -132,7 +144,7 @@ Boto3 documentation:
 [TranscribeService.Client.create_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_medical_vocabulary)
 
 Arguments mapping described in
-[CreateMedicalVocabularyRequestTypeDef](./type_defs.md#createmedicalvocabularyrequesttypedef).
+[CreateMedicalVocabularyRequestRequestTypeDef](./type_defs.md#createmedicalvocabularyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -142,7 +154,7 @@ Keyword-only arguments:
 - `VocabularyFileUri`: `str` *(required)*
 
 Returns
-[CreateMedicalVocabularyResponseResponseTypeDef](./type_defs.md#createmedicalvocabularyresponseresponsetypedef).
+[CreateMedicalVocabularyResponseTypeDef](./type_defs.md#createmedicalvocabularyresponsetypedef).
 
 ### create_vocabulary
 
@@ -155,7 +167,7 @@ Boto3 documentation:
 [TranscribeService.Client.create_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary)
 
 Arguments mapping described in
-[CreateVocabularyRequestTypeDef](./type_defs.md#createvocabularyrequesttypedef).
+[CreateVocabularyRequestRequestTypeDef](./type_defs.md#createvocabularyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -166,7 +178,7 @@ Keyword-only arguments:
 - `VocabularyFileUri`: `str`
 
 Returns
-[CreateVocabularyResponseResponseTypeDef](./type_defs.md#createvocabularyresponseresponsetypedef).
+[CreateVocabularyResponseTypeDef](./type_defs.md#createvocabularyresponsetypedef).
 
 ### create_vocabulary_filter
 
@@ -180,7 +192,7 @@ Boto3 documentation:
 [TranscribeService.Client.create_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary_filter)
 
 Arguments mapping described in
-[CreateVocabularyFilterRequestTypeDef](./type_defs.md#createvocabularyfilterrequesttypedef).
+[CreateVocabularyFilterRequestRequestTypeDef](./type_defs.md#createvocabularyfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -191,7 +203,7 @@ Keyword-only arguments:
 - `VocabularyFilterFileUri`: `str`
 
 Returns
-[CreateVocabularyFilterResponseResponseTypeDef](./type_defs.md#createvocabularyfilterresponseresponsetypedef).
+[CreateVocabularyFilterResponseTypeDef](./type_defs.md#createvocabularyfilterresponsetypedef).
 
 ### delete_language_model
 
@@ -203,7 +215,7 @@ Boto3 documentation:
 [TranscribeService.Client.delete_language_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_language_model)
 
 Arguments mapping described in
-[DeleteLanguageModelRequestTypeDef](./type_defs.md#deletelanguagemodelrequesttypedef).
+[DeleteLanguageModelRequestRequestTypeDef](./type_defs.md#deletelanguagemodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -221,7 +233,7 @@ Boto3 documentation:
 [TranscribeService.Client.delete_medical_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_transcription_job)
 
 Arguments mapping described in
-[DeleteMedicalTranscriptionJobRequestTypeDef](./type_defs.md#deletemedicaltranscriptionjobrequesttypedef).
+[DeleteMedicalTranscriptionJobRequestRequestTypeDef](./type_defs.md#deletemedicaltranscriptionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -238,7 +250,7 @@ Boto3 documentation:
 [TranscribeService.Client.delete_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_vocabulary)
 
 Arguments mapping described in
-[DeleteMedicalVocabularyRequestTypeDef](./type_defs.md#deletemedicalvocabularyrequesttypedef).
+[DeleteMedicalVocabularyRequestRequestTypeDef](./type_defs.md#deletemedicalvocabularyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -256,7 +268,7 @@ Boto3 documentation:
 [TranscribeService.Client.delete_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_transcription_job)
 
 Arguments mapping described in
-[DeleteTranscriptionJobRequestTypeDef](./type_defs.md#deletetranscriptionjobrequesttypedef).
+[DeleteTranscriptionJobRequestRequestTypeDef](./type_defs.md#deletetranscriptionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -272,7 +284,7 @@ Boto3 documentation:
 [TranscribeService.Client.delete_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary)
 
 Arguments mapping described in
-[DeleteVocabularyRequestTypeDef](./type_defs.md#deletevocabularyrequesttypedef).
+[DeleteVocabularyRequestRequestTypeDef](./type_defs.md#deletevocabularyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -289,7 +301,7 @@ Boto3 documentation:
 [TranscribeService.Client.delete_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary_filter)
 
 Arguments mapping described in
-[DeleteVocabularyFilterRequestTypeDef](./type_defs.md#deletevocabularyfilterrequesttypedef).
+[DeleteVocabularyFilterRequestRequestTypeDef](./type_defs.md#deletevocabularyfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -306,14 +318,14 @@ Boto3 documentation:
 [TranscribeService.Client.describe_language_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.describe_language_model)
 
 Arguments mapping described in
-[DescribeLanguageModelRequestTypeDef](./type_defs.md#describelanguagemodelrequesttypedef).
+[DescribeLanguageModelRequestRequestTypeDef](./type_defs.md#describelanguagemodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
 
 Returns
-[DescribeLanguageModelResponseResponseTypeDef](./type_defs.md#describelanguagemodelresponseresponsetypedef).
+[DescribeLanguageModelResponseTypeDef](./type_defs.md#describelanguagemodelresponsetypedef).
 
 ### generate_presigned_url
 
@@ -345,14 +357,14 @@ Boto3 documentation:
 [TranscribeService.Client.get_medical_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_transcription_job)
 
 Arguments mapping described in
-[GetMedicalTranscriptionJobRequestTypeDef](./type_defs.md#getmedicaltranscriptionjobrequesttypedef).
+[GetMedicalTranscriptionJobRequestRequestTypeDef](./type_defs.md#getmedicaltranscriptionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MedicalTranscriptionJobName`: `str` *(required)*
 
 Returns
-[GetMedicalTranscriptionJobResponseResponseTypeDef](./type_defs.md#getmedicaltranscriptionjobresponseresponsetypedef).
+[GetMedicalTranscriptionJobResponseTypeDef](./type_defs.md#getmedicaltranscriptionjobresponsetypedef).
 
 ### get_medical_vocabulary
 
@@ -365,14 +377,14 @@ Boto3 documentation:
 [TranscribeService.Client.get_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_vocabulary)
 
 Arguments mapping described in
-[GetMedicalVocabularyRequestTypeDef](./type_defs.md#getmedicalvocabularyrequesttypedef).
+[GetMedicalVocabularyRequestRequestTypeDef](./type_defs.md#getmedicalvocabularyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VocabularyName`: `str` *(required)*
 
 Returns
-[GetMedicalVocabularyResponseResponseTypeDef](./type_defs.md#getmedicalvocabularyresponseresponsetypedef).
+[GetMedicalVocabularyResponseTypeDef](./type_defs.md#getmedicalvocabularyresponsetypedef).
 
 ### get_transcription_job
 
@@ -384,14 +396,14 @@ Boto3 documentation:
 [TranscribeService.Client.get_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_transcription_job)
 
 Arguments mapping described in
-[GetTranscriptionJobRequestTypeDef](./type_defs.md#gettranscriptionjobrequesttypedef).
+[GetTranscriptionJobRequestRequestTypeDef](./type_defs.md#gettranscriptionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `TranscriptionJobName`: `str` *(required)*
 
 Returns
-[GetTranscriptionJobResponseResponseTypeDef](./type_defs.md#gettranscriptionjobresponseresponsetypedef).
+[GetTranscriptionJobResponseTypeDef](./type_defs.md#gettranscriptionjobresponsetypedef).
 
 ### get_vocabulary
 
@@ -403,14 +415,14 @@ Boto3 documentation:
 [TranscribeService.Client.get_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary)
 
 Arguments mapping described in
-[GetVocabularyRequestTypeDef](./type_defs.md#getvocabularyrequesttypedef).
+[GetVocabularyRequestRequestTypeDef](./type_defs.md#getvocabularyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VocabularyName`: `str` *(required)*
 
 Returns
-[GetVocabularyResponseResponseTypeDef](./type_defs.md#getvocabularyresponseresponsetypedef).
+[GetVocabularyResponseTypeDef](./type_defs.md#getvocabularyresponsetypedef).
 
 ### get_vocabulary_filter
 
@@ -422,14 +434,14 @@ Boto3 documentation:
 [TranscribeService.Client.get_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary_filter)
 
 Arguments mapping described in
-[GetVocabularyFilterRequestTypeDef](./type_defs.md#getvocabularyfilterrequesttypedef).
+[GetVocabularyFilterRequestRequestTypeDef](./type_defs.md#getvocabularyfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `VocabularyFilterName`: `str` *(required)*
 
 Returns
-[GetVocabularyFilterResponseResponseTypeDef](./type_defs.md#getvocabularyfilterresponseresponsetypedef).
+[GetVocabularyFilterResponseTypeDef](./type_defs.md#getvocabularyfilterresponsetypedef).
 
 ### list_language_models
 
@@ -441,7 +453,7 @@ Boto3 documentation:
 [TranscribeService.Client.list_language_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_language_models)
 
 Arguments mapping described in
-[ListLanguageModelsRequestTypeDef](./type_defs.md#listlanguagemodelsrequesttypedef).
+[ListLanguageModelsRequestRequestTypeDef](./type_defs.md#listlanguagemodelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -451,7 +463,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListLanguageModelsResponseResponseTypeDef](./type_defs.md#listlanguagemodelsresponseresponsetypedef).
+[ListLanguageModelsResponseTypeDef](./type_defs.md#listlanguagemodelsresponsetypedef).
 
 ### list_medical_transcription_jobs
 
@@ -465,7 +477,7 @@ Boto3 documentation:
 [TranscribeService.Client.list_medical_transcription_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_transcription_jobs)
 
 Arguments mapping described in
-[ListMedicalTranscriptionJobsRequestTypeDef](./type_defs.md#listmedicaltranscriptionjobsrequesttypedef).
+[ListMedicalTranscriptionJobsRequestRequestTypeDef](./type_defs.md#listmedicaltranscriptionjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -476,7 +488,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMedicalTranscriptionJobsResponseResponseTypeDef](./type_defs.md#listmedicaltranscriptionjobsresponseresponsetypedef).
+[ListMedicalTranscriptionJobsResponseTypeDef](./type_defs.md#listmedicaltranscriptionjobsresponsetypedef).
 
 ### list_medical_vocabularies
 
@@ -489,7 +501,7 @@ Boto3 documentation:
 [TranscribeService.Client.list_medical_vocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_vocabularies)
 
 Arguments mapping described in
-[ListMedicalVocabulariesRequestTypeDef](./type_defs.md#listmedicalvocabulariesrequesttypedef).
+[ListMedicalVocabulariesRequestRequestTypeDef](./type_defs.md#listmedicalvocabulariesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -499,7 +511,7 @@ Keyword-only arguments:
 - `NameContains`: `str`
 
 Returns
-[ListMedicalVocabulariesResponseResponseTypeDef](./type_defs.md#listmedicalvocabulariesresponseresponsetypedef).
+[ListMedicalVocabulariesResponseTypeDef](./type_defs.md#listmedicalvocabulariesresponsetypedef).
 
 ### list_transcription_jobs
 
@@ -512,7 +524,7 @@ Boto3 documentation:
 [TranscribeService.Client.list_transcription_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_transcription_jobs)
 
 Arguments mapping described in
-[ListTranscriptionJobsRequestTypeDef](./type_defs.md#listtranscriptionjobsrequesttypedef).
+[ListTranscriptionJobsRequestRequestTypeDef](./type_defs.md#listtranscriptionjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -523,7 +535,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTranscriptionJobsResponseResponseTypeDef](./type_defs.md#listtranscriptionjobsresponseresponsetypedef).
+[ListTranscriptionJobsResponseTypeDef](./type_defs.md#listtranscriptionjobsresponsetypedef).
 
 ### list_vocabularies
 
@@ -535,7 +547,7 @@ Boto3 documentation:
 [TranscribeService.Client.list_vocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabularies)
 
 Arguments mapping described in
-[ListVocabulariesRequestTypeDef](./type_defs.md#listvocabulariesrequesttypedef).
+[ListVocabulariesRequestRequestTypeDef](./type_defs.md#listvocabulariesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -545,7 +557,7 @@ Keyword-only arguments:
 - `NameContains`: `str`
 
 Returns
-[ListVocabulariesResponseResponseTypeDef](./type_defs.md#listvocabulariesresponseresponsetypedef).
+[ListVocabulariesResponseTypeDef](./type_defs.md#listvocabulariesresponsetypedef).
 
 ### list_vocabulary_filters
 
@@ -558,7 +570,7 @@ Boto3 documentation:
 [TranscribeService.Client.list_vocabulary_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabulary_filters)
 
 Arguments mapping described in
-[ListVocabularyFiltersRequestTypeDef](./type_defs.md#listvocabularyfiltersrequesttypedef).
+[ListVocabularyFiltersRequestRequestTypeDef](./type_defs.md#listvocabularyfiltersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -567,7 +579,7 @@ Keyword-only arguments:
 - `NameContains`: `str`
 
 Returns
-[ListVocabularyFiltersResponseResponseTypeDef](./type_defs.md#listvocabularyfiltersresponseresponsetypedef).
+[ListVocabularyFiltersResponseTypeDef](./type_defs.md#listvocabularyfiltersresponsetypedef).
 
 ### start_medical_transcription_job
 
@@ -580,7 +592,7 @@ Boto3 documentation:
 [TranscribeService.Client.start_medical_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_medical_transcription_job)
 
 Arguments mapping described in
-[StartMedicalTranscriptionJobRequestTypeDef](./type_defs.md#startmedicaltranscriptionjobrequesttypedef).
+[StartMedicalTranscriptionJobRequestRequestTypeDef](./type_defs.md#startmedicaltranscriptionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -602,7 +614,7 @@ Keyword-only arguments:
   [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype))
 
 Returns
-[StartMedicalTranscriptionJobResponseResponseTypeDef](./type_defs.md#startmedicaltranscriptionjobresponseresponsetypedef).
+[StartMedicalTranscriptionJobResponseTypeDef](./type_defs.md#startmedicaltranscriptionjobresponsetypedef).
 
 ### start_transcription_job
 
@@ -615,7 +627,7 @@ Boto3 documentation:
 [TranscribeService.Client.start_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job)
 
 Arguments mapping described in
-[StartTranscriptionJobRequestTypeDef](./type_defs.md#starttranscriptionjobrequesttypedef).
+[StartTranscriptionJobRequestRequestTypeDef](./type_defs.md#starttranscriptionjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -638,7 +650,7 @@ Keyword-only arguments:
   `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
 
 Returns
-[StartTranscriptionJobResponseResponseTypeDef](./type_defs.md#starttranscriptionjobresponseresponsetypedef).
+[StartTranscriptionJobResponseTypeDef](./type_defs.md#starttranscriptionjobresponsetypedef).
 
 ### update_medical_vocabulary
 
@@ -652,7 +664,7 @@ Boto3 documentation:
 [TranscribeService.Client.update_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_medical_vocabulary)
 
 Arguments mapping described in
-[UpdateMedicalVocabularyRequestTypeDef](./type_defs.md#updatemedicalvocabularyrequesttypedef).
+[UpdateMedicalVocabularyRequestRequestTypeDef](./type_defs.md#updatemedicalvocabularyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -662,7 +674,7 @@ Keyword-only arguments:
 - `VocabularyFileUri`: `str`
 
 Returns
-[UpdateMedicalVocabularyResponseResponseTypeDef](./type_defs.md#updatemedicalvocabularyresponseresponsetypedef).
+[UpdateMedicalVocabularyResponseTypeDef](./type_defs.md#updatemedicalvocabularyresponsetypedef).
 
 ### update_vocabulary
 
@@ -674,7 +686,7 @@ Boto3 documentation:
 [TranscribeService.Client.update_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary)
 
 Arguments mapping described in
-[UpdateVocabularyRequestTypeDef](./type_defs.md#updatevocabularyrequesttypedef).
+[UpdateVocabularyRequestRequestTypeDef](./type_defs.md#updatevocabularyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -685,7 +697,7 @@ Keyword-only arguments:
 - `VocabularyFileUri`: `str`
 
 Returns
-[UpdateVocabularyResponseResponseTypeDef](./type_defs.md#updatevocabularyresponseresponsetypedef).
+[UpdateVocabularyResponseTypeDef](./type_defs.md#updatevocabularyresponsetypedef).
 
 ### update_vocabulary_filter
 
@@ -698,7 +710,7 @@ Boto3 documentation:
 [TranscribeService.Client.update_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary_filter)
 
 Arguments mapping described in
-[UpdateVocabularyFilterRequestTypeDef](./type_defs.md#updatevocabularyfilterrequesttypedef).
+[UpdateVocabularyFilterRequestRequestTypeDef](./type_defs.md#updatevocabularyfilterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -707,4 +719,4 @@ Keyword-only arguments:
 - `VocabularyFilterFileUri`: `str`
 
 Returns
-[UpdateVocabularyFilterResponseResponseTypeDef](./type_defs.md#updatevocabularyfilterresponseresponsetypedef).
+[UpdateVocabularyFilterResponseTypeDef](./type_defs.md#updatevocabularyfilterresponsetypedef).

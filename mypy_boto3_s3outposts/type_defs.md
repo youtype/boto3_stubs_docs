@@ -8,20 +8,20 @@ type annotations stubs module
 [mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
 - [Typed dictionaries for boto3 S3Outposts module](#typed-dictionaries-for-boto3-s3outposts-module)
-  - [CreateEndpointRequestTypeDef](#createendpointrequesttypedef)
-  - [CreateEndpointResultResponseTypeDef](#createendpointresultresponsetypedef)
-  - [DeleteEndpointRequestTypeDef](#deleteendpointrequesttypedef)
+  - [CreateEndpointRequestRequestTypeDef](#createendpointrequestrequesttypedef)
+  - [CreateEndpointResultTypeDef](#createendpointresulttypedef)
+  - [DeleteEndpointRequestRequestTypeDef](#deleteendpointrequestrequesttypedef)
   - [EndpointTypeDef](#endpointtypedef)
-  - [ListEndpointsRequestTypeDef](#listendpointsrequesttypedef)
-  - [ListEndpointsResultResponseTypeDef](#listendpointsresultresponsetypedef)
+  - [ListEndpointsRequestRequestTypeDef](#listendpointsrequestrequesttypedef)
+  - [ListEndpointsResultTypeDef](#listendpointsresulttypedef)
   - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
-## CreateEndpointRequestTypeDef
+## CreateEndpointRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3outposts.type_defs import CreateEndpointRequestTypeDef
+from mypy_boto3_s3outposts.type_defs import CreateEndpointRequestRequestTypeDef
 ```
 
 Required fields:
@@ -30,10 +30,10 @@ Required fields:
 - `SubnetId`: `str`
 - `SecurityGroupId`: `str`
 
-## CreateEndpointResultResponseTypeDef
+## CreateEndpointResultTypeDef
 
 ```python
-from mypy_boto3_s3outposts.type_defs import CreateEndpointResultResponseTypeDef
+from mypy_boto3_s3outposts.type_defs import CreateEndpointResultTypeDef
 ```
 
 Required fields:
@@ -42,10 +42,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteEndpointRequestTypeDef
+## DeleteEndpointRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3outposts.type_defs import DeleteEndpointRequestTypeDef
+from mypy_boto3_s3outposts.type_defs import DeleteEndpointRequestRequestTypeDef
 ```
 
 Required fields:
@@ -69,10 +69,10 @@ Optional fields:
 - `NetworkInterfaces`:
   `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
 
-## ListEndpointsRequestTypeDef
+## ListEndpointsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_s3outposts.type_defs import ListEndpointsRequestTypeDef
+from mypy_boto3_s3outposts.type_defs import ListEndpointsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -80,10 +80,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListEndpointsResultResponseTypeDef
+## ListEndpointsResultTypeDef
 
 ```python
-from mypy_boto3_s3outposts.type_defs import ListEndpointsResultResponseTypeDef
+from mypy_boto3_s3outposts.type_defs import ListEndpointsResultTypeDef
 ```
 
 Required fields:

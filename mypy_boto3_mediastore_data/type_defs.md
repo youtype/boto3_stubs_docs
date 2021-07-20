@@ -8,43 +8,43 @@ type annotations stubs module
 [mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
 - [Typed dictionaries for boto3 MediaStoreData module](#typed-dictionaries-for-boto3-mediastoredata-module)
-  - [DeleteObjectRequestTypeDef](#deleteobjectrequesttypedef)
-  - [DescribeObjectRequestTypeDef](#describeobjectrequesttypedef)
-  - [DescribeObjectResponseResponseTypeDef](#describeobjectresponseresponsetypedef)
-  - [GetObjectRequestTypeDef](#getobjectrequesttypedef)
-  - [GetObjectResponseResponseTypeDef](#getobjectresponseresponsetypedef)
+  - [DeleteObjectRequestRequestTypeDef](#deleteobjectrequestrequesttypedef)
+  - [DescribeObjectRequestRequestTypeDef](#describeobjectrequestrequesttypedef)
+  - [DescribeObjectResponseTypeDef](#describeobjectresponsetypedef)
+  - [GetObjectRequestRequestTypeDef](#getobjectrequestrequesttypedef)
+  - [GetObjectResponseTypeDef](#getobjectresponsetypedef)
   - [ItemTypeDef](#itemtypedef)
-  - [ListItemsRequestTypeDef](#listitemsrequesttypedef)
-  - [ListItemsResponseResponseTypeDef](#listitemsresponseresponsetypedef)
+  - [ListItemsRequestRequestTypeDef](#listitemsrequestrequesttypedef)
+  - [ListItemsResponseTypeDef](#listitemsresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutObjectRequestTypeDef](#putobjectrequesttypedef)
-  - [PutObjectResponseResponseTypeDef](#putobjectresponseresponsetypedef)
+  - [PutObjectRequestRequestTypeDef](#putobjectrequestrequesttypedef)
+  - [PutObjectResponseTypeDef](#putobjectresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
-## DeleteObjectRequestTypeDef
+## DeleteObjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import DeleteObjectRequestTypeDef
+from mypy_boto3_mediastore_data.type_defs import DeleteObjectRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Path`: `str`
 
-## DescribeObjectRequestTypeDef
+## DescribeObjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import DescribeObjectRequestTypeDef
+from mypy_boto3_mediastore_data.type_defs import DescribeObjectRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `Path`: `str`
 
-## DescribeObjectResponseResponseTypeDef
+## DescribeObjectResponseTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import DescribeObjectResponseResponseTypeDef
+from mypy_boto3_mediastore_data.type_defs import DescribeObjectResponseTypeDef
 ```
 
 Required fields:
@@ -57,10 +57,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetObjectRequestTypeDef
+## GetObjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import GetObjectRequestTypeDef
+from mypy_boto3_mediastore_data.type_defs import GetObjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -71,10 +71,10 @@ Optional fields:
 
 - `Range`: `str`
 
-## GetObjectResponseResponseTypeDef
+## GetObjectResponseTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import GetObjectResponseResponseTypeDef
+from mypy_boto3_mediastore_data.type_defs import GetObjectResponseTypeDef
 ```
 
 Required fields:
@@ -105,10 +105,10 @@ Optional fields:
 - `ContentType`: `str`
 - `ContentLength`: `int`
 
-## ListItemsRequestTypeDef
+## ListItemsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import ListItemsRequestTypeDef
+from mypy_boto3_mediastore_data.type_defs import ListItemsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -117,10 +117,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListItemsResponseResponseTypeDef
+## ListItemsResponseTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import ListItemsResponseResponseTypeDef
+from mypy_boto3_mediastore_data.type_defs import ListItemsResponseTypeDef
 ```
 
 Required fields:
@@ -142,10 +142,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutObjectRequestTypeDef
+## PutObjectRequestRequestTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import PutObjectRequestTypeDef
+from mypy_boto3_mediastore_data.type_defs import PutObjectRequestRequestTypeDef
 ```
 
 Required fields:
@@ -162,10 +162,10 @@ Optional fields:
 - `UploadAvailability`:
   [UploadAvailabilityType](./literals.md#uploadavailabilitytype)
 
-## PutObjectResponseResponseTypeDef
+## PutObjectResponseTypeDef
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import PutObjectResponseResponseTypeDef
+from mypy_boto3_mediastore_data.type_defs import PutObjectResponseTypeDef
 ```
 
 Required fields:

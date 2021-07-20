@@ -11,6 +11,7 @@ type annotations stubs module
   - [DevOpsGuruClient](#devopsguruclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_notification_channel](#add_notification_channel)
     - [can_paginate](#can_paginate)
     - [describe_account_health](#describe_account_health)
@@ -77,6 +78,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+DevOpsGuruClient exceptions.
+
+Type annotations for `boto3.client("devops-guru").exceptions` method.
+
+Boto3 documentation:
+[DevOpsGuru.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_notification_channel
 
 Adds a notification channel to DevOps Guru.
@@ -88,7 +100,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.add_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.add_notification_channel)
 
 Arguments mapping described in
-[AddNotificationChannelRequestTypeDef](./type_defs.md#addnotificationchannelrequesttypedef).
+[AddNotificationChannelRequestRequestTypeDef](./type_defs.md#addnotificationchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -97,7 +109,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[AddNotificationChannelResponseResponseTypeDef](./type_defs.md#addnotificationchannelresponseresponsetypedef).
+[AddNotificationChannelResponseTypeDef](./type_defs.md#addnotificationchannelresponsetypedef).
 
 ### can_paginate
 
@@ -126,7 +138,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.describe_account_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_account_health)
 
 Returns
-[DescribeAccountHealthResponseResponseTypeDef](./type_defs.md#describeaccounthealthresponseresponsetypedef).
+[DescribeAccountHealthResponseTypeDef](./type_defs.md#describeaccounthealthresponsetypedef).
 
 ### describe_account_overview
 
@@ -141,7 +153,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.describe_account_overview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_account_overview)
 
 Arguments mapping described in
-[DescribeAccountOverviewRequestTypeDef](./type_defs.md#describeaccountoverviewrequesttypedef).
+[DescribeAccountOverviewRequestRequestTypeDef](./type_defs.md#describeaccountoverviewrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,7 +161,7 @@ Keyword-only arguments:
 - `ToTime`: `Union`\[`datetime`, `str`\]
 
 Returns
-[DescribeAccountOverviewResponseResponseTypeDef](./type_defs.md#describeaccountoverviewresponseresponsetypedef).
+[DescribeAccountOverviewResponseTypeDef](./type_defs.md#describeaccountoverviewresponsetypedef).
 
 ### describe_anomaly
 
@@ -161,14 +173,14 @@ Boto3 documentation:
 [DevOpsGuru.Client.describe_anomaly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_anomaly)
 
 Arguments mapping described in
-[DescribeAnomalyRequestTypeDef](./type_defs.md#describeanomalyrequesttypedef).
+[DescribeAnomalyRequestRequestTypeDef](./type_defs.md#describeanomalyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeAnomalyResponseResponseTypeDef](./type_defs.md#describeanomalyresponseresponsetypedef).
+[DescribeAnomalyResponseTypeDef](./type_defs.md#describeanomalyresponsetypedef).
 
 ### describe_feedback
 
@@ -181,14 +193,14 @@ Boto3 documentation:
 [DevOpsGuru.Client.describe_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_feedback)
 
 Arguments mapping described in
-[DescribeFeedbackRequestTypeDef](./type_defs.md#describefeedbackrequesttypedef).
+[DescribeFeedbackRequestRequestTypeDef](./type_defs.md#describefeedbackrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InsightId`: `str`
 
 Returns
-[DescribeFeedbackResponseResponseTypeDef](./type_defs.md#describefeedbackresponseresponsetypedef).
+[DescribeFeedbackResponseTypeDef](./type_defs.md#describefeedbackresponsetypedef).
 
 ### describe_insight
 
@@ -200,14 +212,14 @@ Boto3 documentation:
 [DevOpsGuru.Client.describe_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_insight)
 
 Arguments mapping described in
-[DescribeInsightRequestTypeDef](./type_defs.md#describeinsightrequesttypedef).
+[DescribeInsightRequestRequestTypeDef](./type_defs.md#describeinsightrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DescribeInsightResponseResponseTypeDef](./type_defs.md#describeinsightresponseresponsetypedef).
+[DescribeInsightResponseTypeDef](./type_defs.md#describeinsightresponsetypedef).
 
 ### describe_resource_collection_health
 
@@ -222,7 +234,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.describe_resource_collection_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_resource_collection_health)
 
 Arguments mapping described in
-[DescribeResourceCollectionHealthRequestTypeDef](./type_defs.md#describeresourcecollectionhealthrequesttypedef).
+[DescribeResourceCollectionHealthRequestRequestTypeDef](./type_defs.md#describeresourcecollectionhealthrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -232,7 +244,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeResourceCollectionHealthResponseResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponseresponsetypedef).
+[DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef).
 
 ### describe_service_integration
 
@@ -246,7 +258,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.describe_service_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_service_integration)
 
 Returns
-[DescribeServiceIntegrationResponseResponseTypeDef](./type_defs.md#describeserviceintegrationresponseresponsetypedef).
+[DescribeServiceIntegrationResponseTypeDef](./type_defs.md#describeserviceintegrationresponsetypedef).
 
 ### generate_presigned_url
 
@@ -278,14 +290,14 @@ Boto3 documentation:
 [DevOpsGuru.Client.get_cost_estimation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.get_cost_estimation)
 
 Arguments mapping described in
-[GetCostEstimationRequestTypeDef](./type_defs.md#getcostestimationrequesttypedef).
+[GetCostEstimationRequestRequestTypeDef](./type_defs.md#getcostestimationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[GetCostEstimationResponseResponseTypeDef](./type_defs.md#getcostestimationresponseresponsetypedef).
+[GetCostEstimationResponseTypeDef](./type_defs.md#getcostestimationresponsetypedef).
 
 ### get_resource_collection
 
@@ -298,7 +310,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.get_resource_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.get_resource_collection)
 
 Arguments mapping described in
-[GetResourceCollectionRequestTypeDef](./type_defs.md#getresourcecollectionrequesttypedef).
+[GetResourceCollectionRequestRequestTypeDef](./type_defs.md#getresourcecollectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,7 +320,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetResourceCollectionResponseResponseTypeDef](./type_defs.md#getresourcecollectionresponseresponsetypedef).
+[GetResourceCollectionResponseTypeDef](./type_defs.md#getresourcecollectionresponsetypedef).
 
 ### list_anomalies_for_insight
 
@@ -322,7 +334,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.list_anomalies_for_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_anomalies_for_insight)
 
 Arguments mapping described in
-[ListAnomaliesForInsightRequestTypeDef](./type_defs.md#listanomaliesforinsightrequesttypedef).
+[ListAnomaliesForInsightRequestRequestTypeDef](./type_defs.md#listanomaliesforinsightrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -333,7 +345,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAnomaliesForInsightResponseResponseTypeDef](./type_defs.md#listanomaliesforinsightresponseresponsetypedef).
+[ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef).
 
 ### list_events
 
@@ -346,7 +358,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.list_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_events)
 
 Arguments mapping described in
-[ListEventsRequestTypeDef](./type_defs.md#listeventsrequesttypedef).
+[ListEventsRequestRequestTypeDef](./type_defs.md#listeventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -356,8 +368,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListEventsResponseResponseTypeDef](./type_defs.md#listeventsresponseresponsetypedef).
+Returns [ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef).
 
 ### list_insights
 
@@ -369,7 +380,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.list_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_insights)
 
 Arguments mapping described in
-[ListInsightsRequestTypeDef](./type_defs.md#listinsightsrequesttypedef).
+[ListInsightsRequestRequestTypeDef](./type_defs.md#listinsightsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -380,7 +391,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInsightsResponseResponseTypeDef](./type_defs.md#listinsightsresponseresponsetypedef).
+[ListInsightsResponseTypeDef](./type_defs.md#listinsightsresponsetypedef).
 
 ### list_notification_channels
 
@@ -393,14 +404,14 @@ Boto3 documentation:
 [DevOpsGuru.Client.list_notification_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_notification_channels)
 
 Arguments mapping described in
-[ListNotificationChannelsRequestTypeDef](./type_defs.md#listnotificationchannelsrequesttypedef).
+[ListNotificationChannelsRequestRequestTypeDef](./type_defs.md#listnotificationchannelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 
 Returns
-[ListNotificationChannelsResponseResponseTypeDef](./type_defs.md#listnotificationchannelsresponseresponsetypedef).
+[ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef).
 
 ### list_recommendations
 
@@ -412,7 +423,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.list_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.list_recommendations)
 
 Arguments mapping described in
-[ListRecommendationsRequestTypeDef](./type_defs.md#listrecommendationsrequesttypedef).
+[ListRecommendationsRequestRequestTypeDef](./type_defs.md#listrecommendationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -421,7 +432,7 @@ Keyword-only arguments:
 - `Locale`: [LocaleType](./literals.md#localetype)
 
 Returns
-[ListRecommendationsResponseResponseTypeDef](./type_defs.md#listrecommendationsresponseresponsetypedef).
+[ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef).
 
 ### put_feedback
 
@@ -433,7 +444,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.put_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.put_feedback)
 
 Arguments mapping described in
-[PutFeedbackRequestTypeDef](./type_defs.md#putfeedbackrequesttypedef).
+[PutFeedbackRequestRequestTypeDef](./type_defs.md#putfeedbackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -453,7 +464,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.remove_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.remove_notification_channel)
 
 Arguments mapping described in
-[RemoveNotificationChannelRequestTypeDef](./type_defs.md#removenotificationchannelrequesttypedef).
+[RemoveNotificationChannelRequestRequestTypeDef](./type_defs.md#removenotificationchannelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,7 +482,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.search_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.search_insights)
 
 Arguments mapping described in
-[SearchInsightsRequestTypeDef](./type_defs.md#searchinsightsrequesttypedef).
+[SearchInsightsRequestRequestTypeDef](./type_defs.md#searchinsightsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -484,7 +495,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[SearchInsightsResponseResponseTypeDef](./type_defs.md#searchinsightsresponseresponsetypedef).
+[SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef).
 
 ### start_cost_estimation
 
@@ -498,7 +509,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.start_cost_estimation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.start_cost_estimation)
 
 Arguments mapping described in
-[StartCostEstimationRequestTypeDef](./type_defs.md#startcostestimationrequesttypedef).
+[StartCostEstimationRequestRequestTypeDef](./type_defs.md#startcostestimationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -520,7 +531,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.update_resource_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.update_resource_collection)
 
 Arguments mapping described in
-[UpdateResourceCollectionRequestTypeDef](./type_defs.md#updateresourcecollectionrequesttypedef).
+[UpdateResourceCollectionRequestRequestTypeDef](./type_defs.md#updateresourcecollectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -545,7 +556,7 @@ Boto3 documentation:
 [DevOpsGuru.Client.update_service_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.update_service_integration)
 
 Arguments mapping described in
-[UpdateServiceIntegrationRequestTypeDef](./type_defs.md#updateserviceintegrationrequesttypedef).
+[UpdateServiceIntegrationRequestRequestTypeDef](./type_defs.md#updateserviceintegrationrequestrequesttypedef).
 
 Keyword-only arguments:
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [EMRContainersClient](#emrcontainersclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_job_run](#cancel_job_run)
     - [create_managed_endpoint](#create_managed_endpoint)
@@ -67,6 +68,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+EMRContainersClient exceptions.
+
+Type annotations for `boto3.client("emr-containers").exceptions` method.
+
+Boto3 documentation:
+[EMRContainers.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -92,7 +104,7 @@ Boto3 documentation:
 [EMRContainers.Client.cancel_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.cancel_job_run)
 
 Arguments mapping described in
-[CancelJobRunRequestTypeDef](./type_defs.md#canceljobrunrequesttypedef).
+[CancelJobRunRequestRequestTypeDef](./type_defs.md#canceljobrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -100,7 +112,7 @@ Keyword-only arguments:
 - `virtualClusterId`: `str` *(required)*
 
 Returns
-[CancelJobRunResponseResponseTypeDef](./type_defs.md#canceljobrunresponseresponsetypedef).
+[CancelJobRunResponseTypeDef](./type_defs.md#canceljobrunresponsetypedef).
 
 ### create_managed_endpoint
 
@@ -113,7 +125,7 @@ Boto3 documentation:
 [EMRContainers.Client.create_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_managed_endpoint)
 
 Arguments mapping described in
-[CreateManagedEndpointRequestTypeDef](./type_defs.md#createmanagedendpointrequesttypedef).
+[CreateManagedEndpointRequestRequestTypeDef](./type_defs.md#createmanagedendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -129,7 +141,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateManagedEndpointResponseResponseTypeDef](./type_defs.md#createmanagedendpointresponseresponsetypedef).
+[CreateManagedEndpointResponseTypeDef](./type_defs.md#createmanagedendpointresponsetypedef).
 
 ### create_virtual_cluster
 
@@ -142,7 +154,7 @@ Boto3 documentation:
 [EMRContainers.Client.create_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.create_virtual_cluster)
 
 Arguments mapping described in
-[CreateVirtualClusterRequestTypeDef](./type_defs.md#createvirtualclusterrequesttypedef).
+[CreateVirtualClusterRequestRequestTypeDef](./type_defs.md#createvirtualclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -154,7 +166,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateVirtualClusterResponseResponseTypeDef](./type_defs.md#createvirtualclusterresponseresponsetypedef).
+[CreateVirtualClusterResponseTypeDef](./type_defs.md#createvirtualclusterresponsetypedef).
 
 ### delete_managed_endpoint
 
@@ -167,7 +179,7 @@ Boto3 documentation:
 [EMRContainers.Client.delete_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_managed_endpoint)
 
 Arguments mapping described in
-[DeleteManagedEndpointRequestTypeDef](./type_defs.md#deletemanagedendpointrequesttypedef).
+[DeleteManagedEndpointRequestRequestTypeDef](./type_defs.md#deletemanagedendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -175,7 +187,7 @@ Keyword-only arguments:
 - `virtualClusterId`: `str` *(required)*
 
 Returns
-[DeleteManagedEndpointResponseResponseTypeDef](./type_defs.md#deletemanagedendpointresponseresponsetypedef).
+[DeleteManagedEndpointResponseTypeDef](./type_defs.md#deletemanagedendpointresponsetypedef).
 
 ### delete_virtual_cluster
 
@@ -188,14 +200,14 @@ Boto3 documentation:
 [EMRContainers.Client.delete_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.delete_virtual_cluster)
 
 Arguments mapping described in
-[DeleteVirtualClusterRequestTypeDef](./type_defs.md#deletevirtualclusterrequesttypedef).
+[DeleteVirtualClusterRequestRequestTypeDef](./type_defs.md#deletevirtualclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[DeleteVirtualClusterResponseResponseTypeDef](./type_defs.md#deletevirtualclusterresponseresponsetypedef).
+[DeleteVirtualClusterResponseTypeDef](./type_defs.md#deletevirtualclusterresponsetypedef).
 
 ### describe_job_run
 
@@ -207,7 +219,7 @@ Boto3 documentation:
 [EMRContainers.Client.describe_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_job_run)
 
 Arguments mapping described in
-[DescribeJobRunRequestTypeDef](./type_defs.md#describejobrunrequesttypedef).
+[DescribeJobRunRequestRequestTypeDef](./type_defs.md#describejobrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -215,7 +227,7 @@ Keyword-only arguments:
 - `virtualClusterId`: `str` *(required)*
 
 Returns
-[DescribeJobRunResponseResponseTypeDef](./type_defs.md#describejobrunresponseresponsetypedef).
+[DescribeJobRunResponseTypeDef](./type_defs.md#describejobrunresponsetypedef).
 
 ### describe_managed_endpoint
 
@@ -228,7 +240,7 @@ Boto3 documentation:
 [EMRContainers.Client.describe_managed_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_managed_endpoint)
 
 Arguments mapping described in
-[DescribeManagedEndpointRequestTypeDef](./type_defs.md#describemanagedendpointrequesttypedef).
+[DescribeManagedEndpointRequestRequestTypeDef](./type_defs.md#describemanagedendpointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -236,7 +248,7 @@ Keyword-only arguments:
 - `virtualClusterId`: `str` *(required)*
 
 Returns
-[DescribeManagedEndpointResponseResponseTypeDef](./type_defs.md#describemanagedendpointresponseresponsetypedef).
+[DescribeManagedEndpointResponseTypeDef](./type_defs.md#describemanagedendpointresponsetypedef).
 
 ### describe_virtual_cluster
 
@@ -249,14 +261,14 @@ Boto3 documentation:
 [EMRContainers.Client.describe_virtual_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.describe_virtual_cluster)
 
 Arguments mapping described in
-[DescribeVirtualClusterRequestTypeDef](./type_defs.md#describevirtualclusterrequesttypedef).
+[DescribeVirtualClusterRequestRequestTypeDef](./type_defs.md#describevirtualclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `id`: `str` *(required)*
 
 Returns
-[DescribeVirtualClusterResponseResponseTypeDef](./type_defs.md#describevirtualclusterresponseresponsetypedef).
+[DescribeVirtualClusterResponseTypeDef](./type_defs.md#describevirtualclusterresponsetypedef).
 
 ### generate_presigned_url
 
@@ -287,7 +299,7 @@ Boto3 documentation:
 [EMRContainers.Client.list_job_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_job_runs)
 
 Arguments mapping described in
-[ListJobRunsRequestTypeDef](./type_defs.md#listjobrunsrequesttypedef).
+[ListJobRunsRequestRequestTypeDef](./type_defs.md#listjobrunsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -300,7 +312,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListJobRunsResponseResponseTypeDef](./type_defs.md#listjobrunsresponseresponsetypedef).
+[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef).
 
 ### list_managed_endpoints
 
@@ -313,7 +325,7 @@ Boto3 documentation:
 [EMRContainers.Client.list_managed_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_managed_endpoints)
 
 Arguments mapping described in
-[ListManagedEndpointsRequestTypeDef](./type_defs.md#listmanagedendpointsrequesttypedef).
+[ListManagedEndpointsRequestRequestTypeDef](./type_defs.md#listmanagedendpointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -326,7 +338,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListManagedEndpointsResponseResponseTypeDef](./type_defs.md#listmanagedendpointsresponseresponsetypedef).
+[ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -339,14 +351,14 @@ Boto3 documentation:
 [EMRContainers.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_virtual_clusters
 
@@ -359,7 +371,7 @@ Boto3 documentation:
 [EMRContainers.Client.list_virtual_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.list_virtual_clusters)
 
 Arguments mapping described in
-[ListVirtualClustersRequestTypeDef](./type_defs.md#listvirtualclustersrequesttypedef).
+[ListVirtualClustersRequestRequestTypeDef](./type_defs.md#listvirtualclustersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -374,7 +386,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListVirtualClustersResponseResponseTypeDef](./type_defs.md#listvirtualclustersresponseresponsetypedef).
+[ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef).
 
 ### start_job_run
 
@@ -386,7 +398,7 @@ Boto3 documentation:
 [EMRContainers.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.start_job_run)
 
 Arguments mapping described in
-[StartJobRunRequestTypeDef](./type_defs.md#startjobrunrequesttypedef).
+[StartJobRunRequestRequestTypeDef](./type_defs.md#startjobrunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -401,7 +413,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartJobRunResponseResponseTypeDef](./type_defs.md#startjobrunresponseresponsetypedef).
+[StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
 
 ### tag_resource
 
@@ -413,7 +425,7 @@ Boto3 documentation:
 [EMRContainers.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -432,7 +444,7 @@ Boto3 documentation:
 [EMRContainers.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

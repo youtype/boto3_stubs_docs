@@ -11,6 +11,7 @@ type annotations stubs module
   - [OrganizationsClient](#organizationsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [accept_handshake](#accept_handshake)
     - [attach_policy](#attach_policy)
     - [can_paginate](#can_paginate)
@@ -144,6 +145,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+OrganizationsClient exceptions.
+
+Type annotations for `boto3.client("organizations").exceptions` method.
+
+Boto3 documentation:
+[Organizations.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### accept_handshake
 
 Sends a response to the originator of a handshake agreeing to the action
@@ -155,14 +167,14 @@ Boto3 documentation:
 [Organizations.Client.accept_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.accept_handshake)
 
 Arguments mapping described in
-[AcceptHandshakeRequestTypeDef](./type_defs.md#accepthandshakerequesttypedef).
+[AcceptHandshakeRequestRequestTypeDef](./type_defs.md#accepthandshakerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HandshakeId`: `str` *(required)*
 
 Returns
-[AcceptHandshakeResponseResponseTypeDef](./type_defs.md#accepthandshakeresponseresponsetypedef).
+[AcceptHandshakeResponseTypeDef](./type_defs.md#accepthandshakeresponsetypedef).
 
 ### attach_policy
 
@@ -175,7 +187,7 @@ Boto3 documentation:
 [Organizations.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.attach_policy)
 
 Arguments mapping described in
-[AttachPolicyRequestTypeDef](./type_defs.md#attachpolicyrequesttypedef).
+[AttachPolicyRequestRequestTypeDef](./type_defs.md#attachpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -207,14 +219,14 @@ Boto3 documentation:
 [Organizations.Client.cancel_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.cancel_handshake)
 
 Arguments mapping described in
-[CancelHandshakeRequestTypeDef](./type_defs.md#cancelhandshakerequesttypedef).
+[CancelHandshakeRequestRequestTypeDef](./type_defs.md#cancelhandshakerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HandshakeId`: `str` *(required)*
 
 Returns
-[CancelHandshakeResponseResponseTypeDef](./type_defs.md#cancelhandshakeresponseresponsetypedef).
+[CancelHandshakeResponseTypeDef](./type_defs.md#cancelhandshakeresponsetypedef).
 
 ### create_account
 
@@ -227,7 +239,7 @@ Boto3 documentation:
 [Organizations.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_account)
 
 Arguments mapping described in
-[CreateAccountRequestTypeDef](./type_defs.md#createaccountrequesttypedef).
+[CreateAccountRequestRequestTypeDef](./type_defs.md#createaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -239,7 +251,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAccountResponseResponseTypeDef](./type_defs.md#createaccountresponseresponsetypedef).
+[CreateAccountResponseTypeDef](./type_defs.md#createaccountresponsetypedef).
 
 ### create_gov_cloud_account
 
@@ -253,7 +265,7 @@ Boto3 documentation:
 [Organizations.Client.create_gov_cloud_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_gov_cloud_account)
 
 Arguments mapping described in
-[CreateGovCloudAccountRequestTypeDef](./type_defs.md#creategovcloudaccountrequesttypedef).
+[CreateGovCloudAccountRequestRequestTypeDef](./type_defs.md#creategovcloudaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -265,7 +277,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateGovCloudAccountResponseResponseTypeDef](./type_defs.md#creategovcloudaccountresponseresponsetypedef).
+[CreateGovCloudAccountResponseTypeDef](./type_defs.md#creategovcloudaccountresponsetypedef).
 
 ### create_organization
 
@@ -278,7 +290,7 @@ Boto3 documentation:
 [Organizations.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organization)
 
 Arguments mapping described in
-[CreateOrganizationRequestTypeDef](./type_defs.md#createorganizationrequesttypedef).
+[CreateOrganizationRequestRequestTypeDef](./type_defs.md#createorganizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -286,7 +298,7 @@ Keyword-only arguments:
   [OrganizationFeatureSetType](./literals.md#organizationfeaturesettype)
 
 Returns
-[CreateOrganizationResponseResponseTypeDef](./type_defs.md#createorganizationresponseresponsetypedef).
+[CreateOrganizationResponseTypeDef](./type_defs.md#createorganizationresponsetypedef).
 
 ### create_organizational_unit
 
@@ -299,7 +311,7 @@ Boto3 documentation:
 [Organizations.Client.create_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organizational_unit)
 
 Arguments mapping described in
-[CreateOrganizationalUnitRequestTypeDef](./type_defs.md#createorganizationalunitrequesttypedef).
+[CreateOrganizationalUnitRequestRequestTypeDef](./type_defs.md#createorganizationalunitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -308,7 +320,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateOrganizationalUnitResponseResponseTypeDef](./type_defs.md#createorganizationalunitresponseresponsetypedef).
+[CreateOrganizationalUnitResponseTypeDef](./type_defs.md#createorganizationalunitresponsetypedef).
 
 ### create_policy
 
@@ -321,7 +333,7 @@ Boto3 documentation:
 [Organizations.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_policy)
 
 Arguments mapping described in
-[CreatePolicyRequestTypeDef](./type_defs.md#createpolicyrequesttypedef).
+[CreatePolicyRequestRequestTypeDef](./type_defs.md#createpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -332,7 +344,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePolicyResponseResponseTypeDef](./type_defs.md#createpolicyresponseresponsetypedef).
+[CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
 
 ### decline_handshake
 
@@ -344,14 +356,14 @@ Boto3 documentation:
 [Organizations.Client.decline_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.decline_handshake)
 
 Arguments mapping described in
-[DeclineHandshakeRequestTypeDef](./type_defs.md#declinehandshakerequesttypedef).
+[DeclineHandshakeRequestRequestTypeDef](./type_defs.md#declinehandshakerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HandshakeId`: `str` *(required)*
 
 Returns
-[DeclineHandshakeResponseResponseTypeDef](./type_defs.md#declinehandshakeresponseresponsetypedef).
+[DeclineHandshakeResponseTypeDef](./type_defs.md#declinehandshakeresponsetypedef).
 
 ### delete_organization
 
@@ -374,7 +386,7 @@ Boto3 documentation:
 [Organizations.Client.delete_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organizational_unit)
 
 Arguments mapping described in
-[DeleteOrganizationalUnitRequestTypeDef](./type_defs.md#deleteorganizationalunitrequesttypedef).
+[DeleteOrganizationalUnitRequestRequestTypeDef](./type_defs.md#deleteorganizationalunitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -390,7 +402,7 @@ Boto3 documentation:
 [Organizations.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_policy)
 
 Arguments mapping described in
-[DeletePolicyRequestTypeDef](./type_defs.md#deletepolicyrequesttypedef).
+[DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -408,7 +420,7 @@ Boto3 documentation:
 [Organizations.Client.deregister_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.deregister_delegated_administrator)
 
 Arguments mapping described in
-[DeregisterDelegatedAdministratorRequestTypeDef](./type_defs.md#deregisterdelegatedadministratorrequesttypedef).
+[DeregisterDelegatedAdministratorRequestRequestTypeDef](./type_defs.md#deregisterdelegatedadministratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -425,14 +437,14 @@ Boto3 documentation:
 [Organizations.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_account)
 
 Arguments mapping described in
-[DescribeAccountRequestTypeDef](./type_defs.md#describeaccountrequesttypedef).
+[DescribeAccountRequestRequestTypeDef](./type_defs.md#describeaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
 Returns
-[DescribeAccountResponseResponseTypeDef](./type_defs.md#describeaccountresponseresponsetypedef).
+[DescribeAccountResponseTypeDef](./type_defs.md#describeaccountresponsetypedef).
 
 ### describe_create_account_status
 
@@ -445,14 +457,14 @@ Boto3 documentation:
 [Organizations.Client.describe_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_create_account_status)
 
 Arguments mapping described in
-[DescribeCreateAccountStatusRequestTypeDef](./type_defs.md#describecreateaccountstatusrequesttypedef).
+[DescribeCreateAccountStatusRequestRequestTypeDef](./type_defs.md#describecreateaccountstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CreateAccountRequestId`: `str` *(required)*
 
 Returns
-[DescribeCreateAccountStatusResponseResponseTypeDef](./type_defs.md#describecreateaccountstatusresponseresponsetypedef).
+[DescribeCreateAccountStatusResponseTypeDef](./type_defs.md#describecreateaccountstatusresponsetypedef).
 
 ### describe_effective_policy
 
@@ -466,7 +478,7 @@ Boto3 documentation:
 [Organizations.Client.describe_effective_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_effective_policy)
 
 Arguments mapping described in
-[DescribeEffectivePolicyRequestTypeDef](./type_defs.md#describeeffectivepolicyrequesttypedef).
+[DescribeEffectivePolicyRequestRequestTypeDef](./type_defs.md#describeeffectivepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -475,7 +487,7 @@ Keyword-only arguments:
 - `TargetId`: `str`
 
 Returns
-[DescribeEffectivePolicyResponseResponseTypeDef](./type_defs.md#describeeffectivepolicyresponseresponsetypedef).
+[DescribeEffectivePolicyResponseTypeDef](./type_defs.md#describeeffectivepolicyresponsetypedef).
 
 ### describe_handshake
 
@@ -487,14 +499,14 @@ Boto3 documentation:
 [Organizations.Client.describe_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_handshake)
 
 Arguments mapping described in
-[DescribeHandshakeRequestTypeDef](./type_defs.md#describehandshakerequesttypedef).
+[DescribeHandshakeRequestRequestTypeDef](./type_defs.md#describehandshakerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `HandshakeId`: `str` *(required)*
 
 Returns
-[DescribeHandshakeResponseResponseTypeDef](./type_defs.md#describehandshakeresponseresponsetypedef).
+[DescribeHandshakeResponseTypeDef](./type_defs.md#describehandshakeresponsetypedef).
 
 ### describe_organization
 
@@ -508,7 +520,7 @@ Boto3 documentation:
 [Organizations.Client.describe_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organization)
 
 Returns
-[DescribeOrganizationResponseResponseTypeDef](./type_defs.md#describeorganizationresponseresponsetypedef).
+[DescribeOrganizationResponseTypeDef](./type_defs.md#describeorganizationresponsetypedef).
 
 ### describe_organizational_unit
 
@@ -521,14 +533,14 @@ Boto3 documentation:
 [Organizations.Client.describe_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organizational_unit)
 
 Arguments mapping described in
-[DescribeOrganizationalUnitRequestTypeDef](./type_defs.md#describeorganizationalunitrequesttypedef).
+[DescribeOrganizationalUnitRequestRequestTypeDef](./type_defs.md#describeorganizationalunitrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `OrganizationalUnitId`: `str` *(required)*
 
 Returns
-[DescribeOrganizationalUnitResponseResponseTypeDef](./type_defs.md#describeorganizationalunitresponseresponsetypedef).
+[DescribeOrganizationalUnitResponseTypeDef](./type_defs.md#describeorganizationalunitresponsetypedef).
 
 ### describe_policy
 
@@ -540,14 +552,14 @@ Boto3 documentation:
 [Organizations.Client.describe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_policy)
 
 Arguments mapping described in
-[DescribePolicyRequestTypeDef](./type_defs.md#describepolicyrequesttypedef).
+[DescribePolicyRequestRequestTypeDef](./type_defs.md#describepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 
 Returns
-[DescribePolicyResponseResponseTypeDef](./type_defs.md#describepolicyresponseresponsetypedef).
+[DescribePolicyResponseTypeDef](./type_defs.md#describepolicyresponsetypedef).
 
 ### detach_policy
 
@@ -559,7 +571,7 @@ Boto3 documentation:
 [Organizations.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.detach_policy)
 
 Arguments mapping described in
-[DetachPolicyRequestTypeDef](./type_defs.md#detachpolicyrequesttypedef).
+[DetachPolicyRequestRequestTypeDef](./type_defs.md#detachpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -578,7 +590,7 @@ Boto3 documentation:
 [Organizations.Client.disable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_aws_service_access)
 
 Arguments mapping described in
-[DisableAWSServiceAccessRequestTypeDef](./type_defs.md#disableawsserviceaccessrequesttypedef).
+[DisableAWSServiceAccessRequestRequestTypeDef](./type_defs.md#disableawsserviceaccessrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -595,7 +607,7 @@ Boto3 documentation:
 [Organizations.Client.disable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_policy_type)
 
 Arguments mapping described in
-[DisablePolicyTypeRequestTypeDef](./type_defs.md#disablepolicytyperequesttypedef).
+[DisablePolicyTypeRequestRequestTypeDef](./type_defs.md#disablepolicytyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -603,7 +615,7 @@ Keyword-only arguments:
 - `PolicyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
 
 Returns
-[DisablePolicyTypeResponseResponseTypeDef](./type_defs.md#disablepolicytyperesponseresponsetypedef).
+[DisablePolicyTypeResponseTypeDef](./type_defs.md#disablepolicytyperesponsetypedef).
 
 ### enable_all_features
 
@@ -616,7 +628,7 @@ Boto3 documentation:
 [Organizations.Client.enable_all_features](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_all_features)
 
 Returns
-[EnableAllFeaturesResponseResponseTypeDef](./type_defs.md#enableallfeaturesresponseresponsetypedef).
+[EnableAllFeaturesResponseTypeDef](./type_defs.md#enableallfeaturesresponsetypedef).
 
 ### enable_aws_service_access
 
@@ -630,7 +642,7 @@ Boto3 documentation:
 [Organizations.Client.enable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_aws_service_access)
 
 Arguments mapping described in
-[EnableAWSServiceAccessRequestTypeDef](./type_defs.md#enableawsserviceaccessrequesttypedef).
+[EnableAWSServiceAccessRequestRequestTypeDef](./type_defs.md#enableawsserviceaccessrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -646,7 +658,7 @@ Boto3 documentation:
 [Organizations.Client.enable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_policy_type)
 
 Arguments mapping described in
-[EnablePolicyTypeRequestTypeDef](./type_defs.md#enablepolicytyperequesttypedef).
+[EnablePolicyTypeRequestRequestTypeDef](./type_defs.md#enablepolicytyperequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -654,7 +666,7 @@ Keyword-only arguments:
 - `PolicyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
 
 Returns
-[EnablePolicyTypeResponseResponseTypeDef](./type_defs.md#enablepolicytyperesponseresponsetypedef).
+[EnablePolicyTypeResponseTypeDef](./type_defs.md#enablepolicytyperesponsetypedef).
 
 ### generate_presigned_url
 
@@ -687,7 +699,7 @@ Boto3 documentation:
 [Organizations.Client.invite_account_to_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.invite_account_to_organization)
 
 Arguments mapping described in
-[InviteAccountToOrganizationRequestTypeDef](./type_defs.md#inviteaccounttoorganizationrequesttypedef).
+[InviteAccountToOrganizationRequestRequestTypeDef](./type_defs.md#inviteaccounttoorganizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -697,7 +709,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[InviteAccountToOrganizationResponseResponseTypeDef](./type_defs.md#inviteaccounttoorganizationresponseresponsetypedef).
+[InviteAccountToOrganizationResponseTypeDef](./type_defs.md#inviteaccounttoorganizationresponsetypedef).
 
 ### leave_organization
 
@@ -718,7 +730,7 @@ Boto3 documentation:
 [Organizations.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts)
 
 Arguments mapping described in
-[ListAccountsRequestTypeDef](./type_defs.md#listaccountsrequesttypedef).
+[ListAccountsRequestRequestTypeDef](./type_defs.md#listaccountsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -726,7 +738,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccountsResponseResponseTypeDef](./type_defs.md#listaccountsresponseresponsetypedef).
+[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
 
 ### list_accounts_for_parent
 
@@ -740,7 +752,7 @@ Boto3 documentation:
 [Organizations.Client.list_accounts_for_parent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts_for_parent)
 
 Arguments mapping described in
-[ListAccountsForParentRequestTypeDef](./type_defs.md#listaccountsforparentrequesttypedef).
+[ListAccountsForParentRequestRequestTypeDef](./type_defs.md#listaccountsforparentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -749,7 +761,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccountsForParentResponseResponseTypeDef](./type_defs.md#listaccountsforparentresponseresponsetypedef).
+[ListAccountsForParentResponseTypeDef](./type_defs.md#listaccountsforparentresponsetypedef).
 
 ### list_aws_service_access_for_organization
 
@@ -764,7 +776,7 @@ Boto3 documentation:
 [Organizations.Client.list_aws_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_aws_service_access_for_organization)
 
 Arguments mapping described in
-[ListAWSServiceAccessForOrganizationRequestTypeDef](./type_defs.md#listawsserviceaccessfororganizationrequesttypedef).
+[ListAWSServiceAccessForOrganizationRequestRequestTypeDef](./type_defs.md#listawsserviceaccessfororganizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -772,7 +784,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAWSServiceAccessForOrganizationResponseResponseTypeDef](./type_defs.md#listawsserviceaccessfororganizationresponseresponsetypedef).
+[ListAWSServiceAccessForOrganizationResponseTypeDef](./type_defs.md#listawsserviceaccessfororganizationresponsetypedef).
 
 ### list_children
 
@@ -785,7 +797,7 @@ Boto3 documentation:
 [Organizations.Client.list_children](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_children)
 
 Arguments mapping described in
-[ListChildrenRequestTypeDef](./type_defs.md#listchildrenrequesttypedef).
+[ListChildrenRequestRequestTypeDef](./type_defs.md#listchildrenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -795,7 +807,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListChildrenResponseResponseTypeDef](./type_defs.md#listchildrenresponseresponsetypedef).
+[ListChildrenResponseTypeDef](./type_defs.md#listchildrenresponsetypedef).
 
 ### list_create_account_status
 
@@ -809,7 +821,7 @@ Boto3 documentation:
 [Organizations.Client.list_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_create_account_status)
 
 Arguments mapping described in
-[ListCreateAccountStatusRequestTypeDef](./type_defs.md#listcreateaccountstatusrequesttypedef).
+[ListCreateAccountStatusRequestRequestTypeDef](./type_defs.md#listcreateaccountstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -819,7 +831,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListCreateAccountStatusResponseResponseTypeDef](./type_defs.md#listcreateaccountstatusresponseresponsetypedef).
+[ListCreateAccountStatusResponseTypeDef](./type_defs.md#listcreateaccountstatusresponsetypedef).
 
 ### list_delegated_administrators
 
@@ -833,7 +845,7 @@ Boto3 documentation:
 [Organizations.Client.list_delegated_administrators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_administrators)
 
 Arguments mapping described in
-[ListDelegatedAdministratorsRequestTypeDef](./type_defs.md#listdelegatedadministratorsrequesttypedef).
+[ListDelegatedAdministratorsRequestRequestTypeDef](./type_defs.md#listdelegatedadministratorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -842,7 +854,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDelegatedAdministratorsResponseResponseTypeDef](./type_defs.md#listdelegatedadministratorsresponseresponsetypedef).
+[ListDelegatedAdministratorsResponseTypeDef](./type_defs.md#listdelegatedadministratorsresponsetypedef).
 
 ### list_delegated_services_for_account
 
@@ -856,7 +868,7 @@ Boto3 documentation:
 [Organizations.Client.list_delegated_services_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_services_for_account)
 
 Arguments mapping described in
-[ListDelegatedServicesForAccountRequestTypeDef](./type_defs.md#listdelegatedservicesforaccountrequesttypedef).
+[ListDelegatedServicesForAccountRequestRequestTypeDef](./type_defs.md#listdelegatedservicesforaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -865,7 +877,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListDelegatedServicesForAccountResponseResponseTypeDef](./type_defs.md#listdelegatedservicesforaccountresponseresponsetypedef).
+[ListDelegatedServicesForAccountResponseTypeDef](./type_defs.md#listdelegatedservicesforaccountresponsetypedef).
 
 ### list_handshakes_for_account
 
@@ -879,7 +891,7 @@ Boto3 documentation:
 [Organizations.Client.list_handshakes_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_account)
 
 Arguments mapping described in
-[ListHandshakesForAccountRequestTypeDef](./type_defs.md#listhandshakesforaccountrequesttypedef).
+[ListHandshakesForAccountRequestRequestTypeDef](./type_defs.md#listhandshakesforaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -888,7 +900,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListHandshakesForAccountResponseResponseTypeDef](./type_defs.md#listhandshakesforaccountresponseresponsetypedef).
+[ListHandshakesForAccountResponseTypeDef](./type_defs.md#listhandshakesforaccountresponsetypedef).
 
 ### list_handshakes_for_organization
 
@@ -902,7 +914,7 @@ Boto3 documentation:
 [Organizations.Client.list_handshakes_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_organization)
 
 Arguments mapping described in
-[ListHandshakesForOrganizationRequestTypeDef](./type_defs.md#listhandshakesfororganizationrequesttypedef).
+[ListHandshakesForOrganizationRequestRequestTypeDef](./type_defs.md#listhandshakesfororganizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -911,7 +923,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListHandshakesForOrganizationResponseResponseTypeDef](./type_defs.md#listhandshakesfororganizationresponseresponsetypedef).
+[ListHandshakesForOrganizationResponseTypeDef](./type_defs.md#listhandshakesfororganizationresponsetypedef).
 
 ### list_organizational_units_for_parent
 
@@ -924,7 +936,7 @@ Boto3 documentation:
 [Organizations.Client.list_organizational_units_for_parent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_organizational_units_for_parent)
 
 Arguments mapping described in
-[ListOrganizationalUnitsForParentRequestTypeDef](./type_defs.md#listorganizationalunitsforparentrequesttypedef).
+[ListOrganizationalUnitsForParentRequestRequestTypeDef](./type_defs.md#listorganizationalunitsforparentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -933,7 +945,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListOrganizationalUnitsForParentResponseResponseTypeDef](./type_defs.md#listorganizationalunitsforparentresponseresponsetypedef).
+[ListOrganizationalUnitsForParentResponseTypeDef](./type_defs.md#listorganizationalunitsforparentresponsetypedef).
 
 ### list_parents
 
@@ -946,7 +958,7 @@ Boto3 documentation:
 [Organizations.Client.list_parents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_parents)
 
 Arguments mapping described in
-[ListParentsRequestTypeDef](./type_defs.md#listparentsrequesttypedef).
+[ListParentsRequestRequestTypeDef](./type_defs.md#listparentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -955,7 +967,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListParentsResponseResponseTypeDef](./type_defs.md#listparentsresponseresponsetypedef).
+[ListParentsResponseTypeDef](./type_defs.md#listparentsresponsetypedef).
 
 ### list_policies
 
@@ -967,7 +979,7 @@ Boto3 documentation:
 [Organizations.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies)
 
 Arguments mapping described in
-[ListPoliciesRequestTypeDef](./type_defs.md#listpoliciesrequesttypedef).
+[ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -976,7 +988,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPoliciesResponseResponseTypeDef](./type_defs.md#listpoliciesresponseresponsetypedef).
+[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
 
 ### list_policies_for_target
 
@@ -990,7 +1002,7 @@ Boto3 documentation:
 [Organizations.Client.list_policies_for_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies_for_target)
 
 Arguments mapping described in
-[ListPoliciesForTargetRequestTypeDef](./type_defs.md#listpoliciesfortargetrequesttypedef).
+[ListPoliciesForTargetRequestRequestTypeDef](./type_defs.md#listpoliciesfortargetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1000,7 +1012,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPoliciesForTargetResponseResponseTypeDef](./type_defs.md#listpoliciesfortargetresponseresponsetypedef).
+[ListPoliciesForTargetResponseTypeDef](./type_defs.md#listpoliciesfortargetresponsetypedef).
 
 ### list_roots
 
@@ -1012,15 +1024,14 @@ Boto3 documentation:
 [Organizations.Client.list_roots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_roots)
 
 Arguments mapping described in
-[ListRootsRequestTypeDef](./type_defs.md#listrootsrequesttypedef).
+[ListRootsRequestRequestTypeDef](./type_defs.md#listrootsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListRootsResponseResponseTypeDef](./type_defs.md#listrootsresponseresponsetypedef).
+Returns [ListRootsResponseTypeDef](./type_defs.md#listrootsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1033,7 +1044,7 @@ Boto3 documentation:
 [Organizations.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1041,7 +1052,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_targets_for_policy
 
@@ -1055,7 +1066,7 @@ Boto3 documentation:
 [Organizations.Client.list_targets_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_targets_for_policy)
 
 Arguments mapping described in
-[ListTargetsForPolicyRequestTypeDef](./type_defs.md#listtargetsforpolicyrequesttypedef).
+[ListTargetsForPolicyRequestRequestTypeDef](./type_defs.md#listtargetsforpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1064,7 +1075,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListTargetsForPolicyResponseResponseTypeDef](./type_defs.md#listtargetsforpolicyresponseresponsetypedef).
+[ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef).
 
 ### move_account
 
@@ -1077,7 +1088,7 @@ Boto3 documentation:
 [Organizations.Client.move_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.move_account)
 
 Arguments mapping described in
-[MoveAccountRequestTypeDef](./type_defs.md#moveaccountrequesttypedef).
+[MoveAccountRequestRequestTypeDef](./type_defs.md#moveaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1097,7 +1108,7 @@ Boto3 documentation:
 [Organizations.Client.register_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.register_delegated_administrator)
 
 Arguments mapping described in
-[RegisterDelegatedAdministratorRequestTypeDef](./type_defs.md#registerdelegatedadministratorrequesttypedef).
+[RegisterDelegatedAdministratorRequestRequestTypeDef](./type_defs.md#registerdelegatedadministratorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1115,7 +1126,7 @@ Boto3 documentation:
 [Organizations.Client.remove_account_from_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.remove_account_from_organization)
 
 Arguments mapping described in
-[RemoveAccountFromOrganizationRequestTypeDef](./type_defs.md#removeaccountfromorganizationrequesttypedef).
+[RemoveAccountFromOrganizationRequestRequestTypeDef](./type_defs.md#removeaccountfromorganizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1131,7 +1142,7 @@ Boto3 documentation:
 [Organizations.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1148,7 +1159,7 @@ Boto3 documentation:
 [Organizations.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1166,7 +1177,7 @@ Boto3 documentation:
 [Organizations.Client.update_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_organizational_unit)
 
 Arguments mapping described in
-[UpdateOrganizationalUnitRequestTypeDef](./type_defs.md#updateorganizationalunitrequesttypedef).
+[UpdateOrganizationalUnitRequestRequestTypeDef](./type_defs.md#updateorganizationalunitrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1174,7 +1185,7 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns
-[UpdateOrganizationalUnitResponseResponseTypeDef](./type_defs.md#updateorganizationalunitresponseresponsetypedef).
+[UpdateOrganizationalUnitResponseTypeDef](./type_defs.md#updateorganizationalunitresponsetypedef).
 
 ### update_policy
 
@@ -1186,7 +1197,7 @@ Boto3 documentation:
 [Organizations.Client.update_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_policy)
 
 Arguments mapping described in
-[UpdatePolicyRequestTypeDef](./type_defs.md#updatepolicyrequesttypedef).
+[UpdatePolicyRequestRequestTypeDef](./type_defs.md#updatepolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1196,7 +1207,7 @@ Keyword-only arguments:
 - `Content`: `str`
 
 Returns
-[UpdatePolicyResponseResponseTypeDef](./type_defs.md#updatepolicyresponseresponsetypedef).
+[UpdatePolicyResponseTypeDef](./type_defs.md#updatepolicyresponsetypedef).
 
 ### get_paginator
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [SSOAdminClient](#ssoadminclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [attach_managed_policy_to_permission_set](#attach_managed_policy_to_permission_set)
     - [can_paginate](#can_paginate)
     - [create_account_assignment](#create_account_assignment)
@@ -87,6 +88,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SSOAdminClient exceptions.
+
+Type annotations for `boto3.client("sso-admin").exceptions` method.
+
+Boto3 documentation:
+[SSOAdmin.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### attach_managed_policy_to_permission_set
 
 Attaches an IAM managed policy ARN to a permission set.
@@ -98,7 +110,7 @@ Boto3 documentation:
 [SSOAdmin.Client.attach_managed_policy_to_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set)
 
 Arguments mapping described in
-[AttachManagedPolicyToPermissionSetRequestTypeDef](./type_defs.md#attachmanagedpolicytopermissionsetrequesttypedef).
+[AttachManagedPolicyToPermissionSetRequestRequestTypeDef](./type_defs.md#attachmanagedpolicytopermissionsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -135,7 +147,7 @@ Boto3 documentation:
 [SSOAdmin.Client.create_account_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_account_assignment)
 
 Arguments mapping described in
-[CreateAccountAssignmentRequestTypeDef](./type_defs.md#createaccountassignmentrequesttypedef).
+[CreateAccountAssignmentRequestRequestTypeDef](./type_defs.md#createaccountassignmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -149,7 +161,7 @@ Keyword-only arguments:
 - `PrincipalId`: `str` *(required)*
 
 Returns
-[CreateAccountAssignmentResponseResponseTypeDef](./type_defs.md#createaccountassignmentresponseresponsetypedef).
+[CreateAccountAssignmentResponseTypeDef](./type_defs.md#createaccountassignmentresponsetypedef).
 
 ### create_instance_access_control_attribute_configuration
 
@@ -164,7 +176,7 @@ Boto3 documentation:
 [SSOAdmin.Client.create_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_instance_access_control_attribute_configuration)
 
 Arguments mapping described in
-[CreateInstanceAccessControlAttributeConfigurationRequestTypeDef](./type_defs.md#createinstanceaccesscontrolattributeconfigurationrequesttypedef).
+[CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#createinstanceaccesscontrolattributeconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -185,7 +197,7 @@ Boto3 documentation:
 [SSOAdmin.Client.create_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_permission_set)
 
 Arguments mapping described in
-[CreatePermissionSetRequestTypeDef](./type_defs.md#createpermissionsetrequesttypedef).
+[CreatePermissionSetRequestRequestTypeDef](./type_defs.md#createpermissionsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -197,7 +209,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreatePermissionSetResponseResponseTypeDef](./type_defs.md#createpermissionsetresponseresponsetypedef).
+[CreatePermissionSetResponseTypeDef](./type_defs.md#createpermissionsetresponsetypedef).
 
 ### delete_account_assignment
 
@@ -211,7 +223,7 @@ Boto3 documentation:
 [SSOAdmin.Client.delete_account_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_account_assignment)
 
 Arguments mapping described in
-[DeleteAccountAssignmentRequestTypeDef](./type_defs.md#deleteaccountassignmentrequesttypedef).
+[DeleteAccountAssignmentRequestRequestTypeDef](./type_defs.md#deleteaccountassignmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -225,7 +237,7 @@ Keyword-only arguments:
 - `PrincipalId`: `str` *(required)*
 
 Returns
-[DeleteAccountAssignmentResponseResponseTypeDef](./type_defs.md#deleteaccountassignmentresponseresponsetypedef).
+[DeleteAccountAssignmentResponseTypeDef](./type_defs.md#deleteaccountassignmentresponsetypedef).
 
 ### delete_inline_policy_from_permission_set
 
@@ -238,7 +250,7 @@ Boto3 documentation:
 [SSOAdmin.Client.delete_inline_policy_from_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_inline_policy_from_permission_set)
 
 Arguments mapping described in
-[DeleteInlinePolicyFromPermissionSetRequestTypeDef](./type_defs.md#deleteinlinepolicyfrompermissionsetrequesttypedef).
+[DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef](./type_defs.md#deleteinlinepolicyfrompermissionsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -261,7 +273,7 @@ Boto3 documentation:
 [SSOAdmin.Client.delete_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_instance_access_control_attribute_configuration)
 
 Arguments mapping described in
-[DeleteInstanceAccessControlAttributeConfigurationRequestTypeDef](./type_defs.md#deleteinstanceaccesscontrolattributeconfigurationrequesttypedef).
+[DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#deleteinstanceaccesscontrolattributeconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -279,7 +291,7 @@ Boto3 documentation:
 [SSOAdmin.Client.delete_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_permission_set)
 
 Arguments mapping described in
-[DeletePermissionSetRequestTypeDef](./type_defs.md#deletepermissionsetrequesttypedef).
+[DeletePermissionSetRequestRequestTypeDef](./type_defs.md#deletepermissionsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -299,7 +311,7 @@ Boto3 documentation:
 [SSOAdmin.Client.describe_account_assignment_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_creation_status)
 
 Arguments mapping described in
-[DescribeAccountAssignmentCreationStatusRequestTypeDef](./type_defs.md#describeaccountassignmentcreationstatusrequesttypedef).
+[DescribeAccountAssignmentCreationStatusRequestRequestTypeDef](./type_defs.md#describeaccountassignmentcreationstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -307,7 +319,7 @@ Keyword-only arguments:
 - `AccountAssignmentCreationRequestId`: `str` *(required)*
 
 Returns
-[DescribeAccountAssignmentCreationStatusResponseResponseTypeDef](./type_defs.md#describeaccountassignmentcreationstatusresponseresponsetypedef).
+[DescribeAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#describeaccountassignmentcreationstatusresponsetypedef).
 
 ### describe_account_assignment_deletion_status
 
@@ -320,7 +332,7 @@ Boto3 documentation:
 [SSOAdmin.Client.describe_account_assignment_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_deletion_status)
 
 Arguments mapping described in
-[DescribeAccountAssignmentDeletionStatusRequestTypeDef](./type_defs.md#describeaccountassignmentdeletionstatusrequesttypedef).
+[DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef](./type_defs.md#describeaccountassignmentdeletionstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -328,7 +340,7 @@ Keyword-only arguments:
 - `AccountAssignmentDeletionRequestId`: `str` *(required)*
 
 Returns
-[DescribeAccountAssignmentDeletionStatusResponseResponseTypeDef](./type_defs.md#describeaccountassignmentdeletionstatusresponseresponsetypedef).
+[DescribeAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#describeaccountassignmentdeletionstatusresponsetypedef).
 
 ### describe_instance_access_control_attribute_configuration
 
@@ -344,14 +356,14 @@ Boto3 documentation:
 [SSOAdmin.Client.describe_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_instance_access_control_attribute_configuration)
 
 Arguments mapping described in
-[DescribeInstanceAccessControlAttributeConfigurationRequestTypeDef](./type_defs.md#describeinstanceaccesscontrolattributeconfigurationrequesttypedef).
+[DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#describeinstanceaccesscontrolattributeconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `InstanceArn`: `str` *(required)*
 
 Returns
-[DescribeInstanceAccessControlAttributeConfigurationResponseResponseTypeDef](./type_defs.md#describeinstanceaccesscontrolattributeconfigurationresponseresponsetypedef).
+[DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef](./type_defs.md#describeinstanceaccesscontrolattributeconfigurationresponsetypedef).
 
 ### describe_permission_set
 
@@ -364,7 +376,7 @@ Boto3 documentation:
 [SSOAdmin.Client.describe_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set)
 
 Arguments mapping described in
-[DescribePermissionSetRequestTypeDef](./type_defs.md#describepermissionsetrequesttypedef).
+[DescribePermissionSetRequestRequestTypeDef](./type_defs.md#describepermissionsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -372,7 +384,7 @@ Keyword-only arguments:
 - `PermissionSetArn`: `str` *(required)*
 
 Returns
-[DescribePermissionSetResponseResponseTypeDef](./type_defs.md#describepermissionsetresponseresponsetypedef).
+[DescribePermissionSetResponseTypeDef](./type_defs.md#describepermissionsetresponsetypedef).
 
 ### describe_permission_set_provisioning_status
 
@@ -385,7 +397,7 @@ Boto3 documentation:
 [SSOAdmin.Client.describe_permission_set_provisioning_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set_provisioning_status)
 
 Arguments mapping described in
-[DescribePermissionSetProvisioningStatusRequestTypeDef](./type_defs.md#describepermissionsetprovisioningstatusrequesttypedef).
+[DescribePermissionSetProvisioningStatusRequestRequestTypeDef](./type_defs.md#describepermissionsetprovisioningstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -393,7 +405,7 @@ Keyword-only arguments:
 - `ProvisionPermissionSetRequestId`: `str` *(required)*
 
 Returns
-[DescribePermissionSetProvisioningStatusResponseResponseTypeDef](./type_defs.md#describepermissionsetprovisioningstatusresponseresponsetypedef).
+[DescribePermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#describepermissionsetprovisioningstatusresponsetypedef).
 
 ### detach_managed_policy_from_permission_set
 
@@ -406,7 +418,7 @@ Boto3 documentation:
 [SSOAdmin.Client.detach_managed_policy_from_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set)
 
 Arguments mapping described in
-[DetachManagedPolicyFromPermissionSetRequestTypeDef](./type_defs.md#detachmanagedpolicyfrompermissionsetrequesttypedef).
+[DetachManagedPolicyFromPermissionSetRequestRequestTypeDef](./type_defs.md#detachmanagedpolicyfrompermissionsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -445,7 +457,7 @@ Boto3 documentation:
 [SSOAdmin.Client.get_inline_policy_for_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.get_inline_policy_for_permission_set)
 
 Arguments mapping described in
-[GetInlinePolicyForPermissionSetRequestTypeDef](./type_defs.md#getinlinepolicyforpermissionsetrequesttypedef).
+[GetInlinePolicyForPermissionSetRequestRequestTypeDef](./type_defs.md#getinlinepolicyforpermissionsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -453,7 +465,7 @@ Keyword-only arguments:
 - `PermissionSetArn`: `str` *(required)*
 
 Returns
-[GetInlinePolicyForPermissionSetResponseResponseTypeDef](./type_defs.md#getinlinepolicyforpermissionsetresponseresponsetypedef).
+[GetInlinePolicyForPermissionSetResponseTypeDef](./type_defs.md#getinlinepolicyforpermissionsetresponsetypedef).
 
 ### list_account_assignment_creation_status
 
@@ -467,7 +479,7 @@ Boto3 documentation:
 [SSOAdmin.Client.list_account_assignment_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_creation_status)
 
 Arguments mapping described in
-[ListAccountAssignmentCreationStatusRequestTypeDef](./type_defs.md#listaccountassignmentcreationstatusrequesttypedef).
+[ListAccountAssignmentCreationStatusRequestRequestTypeDef](./type_defs.md#listaccountassignmentcreationstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -478,7 +490,7 @@ Keyword-only arguments:
   [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
 
 Returns
-[ListAccountAssignmentCreationStatusResponseResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponseresponsetypedef).
+[ListAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponsetypedef).
 
 ### list_account_assignment_deletion_status
 
@@ -492,7 +504,7 @@ Boto3 documentation:
 [SSOAdmin.Client.list_account_assignment_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_deletion_status)
 
 Arguments mapping described in
-[ListAccountAssignmentDeletionStatusRequestTypeDef](./type_defs.md#listaccountassignmentdeletionstatusrequesttypedef).
+[ListAccountAssignmentDeletionStatusRequestRequestTypeDef](./type_defs.md#listaccountassignmentdeletionstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -503,7 +515,7 @@ Keyword-only arguments:
   [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
 
 Returns
-[ListAccountAssignmentDeletionStatusResponseResponseTypeDef](./type_defs.md#listaccountassignmentdeletionstatusresponseresponsetypedef).
+[ListAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#listaccountassignmentdeletionstatusresponsetypedef).
 
 ### list_account_assignments
 
@@ -517,7 +529,7 @@ Boto3 documentation:
 [SSOAdmin.Client.list_account_assignments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignments)
 
 Arguments mapping described in
-[ListAccountAssignmentsRequestTypeDef](./type_defs.md#listaccountassignmentsrequesttypedef).
+[ListAccountAssignmentsRequestRequestTypeDef](./type_defs.md#listaccountassignmentsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -528,7 +540,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAccountAssignmentsResponseResponseTypeDef](./type_defs.md#listaccountassignmentsresponseresponsetypedef).
+[ListAccountAssignmentsResponseTypeDef](./type_defs.md#listaccountassignmentsresponsetypedef).
 
 ### list_accounts_for_provisioned_permission_set
 
@@ -542,7 +554,7 @@ Boto3 documentation:
 [SSOAdmin.Client.list_accounts_for_provisioned_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_accounts_for_provisioned_permission_set)
 
 Arguments mapping described in
-[ListAccountsForProvisionedPermissionSetRequestTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetrequesttypedef).
+[ListAccountsForProvisionedPermissionSetRequestRequestTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -554,7 +566,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListAccountsForProvisionedPermissionSetResponseResponseTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetresponseresponsetypedef).
+[ListAccountsForProvisionedPermissionSetResponseTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetresponsetypedef).
 
 ### list_instances
 
@@ -566,7 +578,7 @@ Boto3 documentation:
 [SSOAdmin.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_instances)
 
 Arguments mapping described in
-[ListInstancesRequestTypeDef](./type_defs.md#listinstancesrequesttypedef).
+[ListInstancesRequestRequestTypeDef](./type_defs.md#listinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -574,7 +586,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListInstancesResponseResponseTypeDef](./type_defs.md#listinstancesresponseresponsetypedef).
+[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef).
 
 ### list_managed_policies_in_permission_set
 
@@ -587,7 +599,7 @@ Boto3 documentation:
 [SSOAdmin.Client.list_managed_policies_in_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_managed_policies_in_permission_set)
 
 Arguments mapping described in
-[ListManagedPoliciesInPermissionSetRequestTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetrequesttypedef).
+[ListManagedPoliciesInPermissionSetRequestRequestTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -597,7 +609,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListManagedPoliciesInPermissionSetResponseResponseTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetresponseresponsetypedef).
+[ListManagedPoliciesInPermissionSetResponseTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetresponsetypedef).
 
 ### list_permission_set_provisioning_status
 
@@ -611,7 +623,7 @@ Boto3 documentation:
 [SSOAdmin.Client.list_permission_set_provisioning_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_set_provisioning_status)
 
 Arguments mapping described in
-[ListPermissionSetProvisioningStatusRequestTypeDef](./type_defs.md#listpermissionsetprovisioningstatusrequesttypedef).
+[ListPermissionSetProvisioningStatusRequestRequestTypeDef](./type_defs.md#listpermissionsetprovisioningstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -622,7 +634,7 @@ Keyword-only arguments:
   [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
 
 Returns
-[ListPermissionSetProvisioningStatusResponseResponseTypeDef](./type_defs.md#listpermissionsetprovisioningstatusresponseresponsetypedef).
+[ListPermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#listpermissionsetprovisioningstatusresponsetypedef).
 
 ### list_permission_sets
 
@@ -634,7 +646,7 @@ Boto3 documentation:
 [SSOAdmin.Client.list_permission_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets)
 
 Arguments mapping described in
-[ListPermissionSetsRequestTypeDef](./type_defs.md#listpermissionsetsrequesttypedef).
+[ListPermissionSetsRequestRequestTypeDef](./type_defs.md#listpermissionsetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -643,7 +655,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListPermissionSetsResponseResponseTypeDef](./type_defs.md#listpermissionsetsresponseresponsetypedef).
+[ListPermissionSetsResponseTypeDef](./type_defs.md#listpermissionsetsresponsetypedef).
 
 ### list_permission_sets_provisioned_to_account
 
@@ -656,7 +668,7 @@ Boto3 documentation:
 [SSOAdmin.Client.list_permission_sets_provisioned_to_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets_provisioned_to_account)
 
 Arguments mapping described in
-[ListPermissionSetsProvisionedToAccountRequestTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountrequesttypedef).
+[ListPermissionSetsProvisionedToAccountRequestRequestTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -668,7 +680,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListPermissionSetsProvisionedToAccountResponseResponseTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountresponseresponsetypedef).
+[ListPermissionSetsProvisionedToAccountResponseTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -680,7 +692,7 @@ Boto3 documentation:
 [SSOAdmin.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -689,7 +701,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### provision_permission_set
 
@@ -703,7 +715,7 @@ Boto3 documentation:
 [SSOAdmin.Client.provision_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.provision_permission_set)
 
 Arguments mapping described in
-[ProvisionPermissionSetRequestTypeDef](./type_defs.md#provisionpermissionsetrequesttypedef).
+[ProvisionPermissionSetRequestRequestTypeDef](./type_defs.md#provisionpermissionsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -714,7 +726,7 @@ Keyword-only arguments:
 - `TargetId`: `str`
 
 Returns
-[ProvisionPermissionSetResponseResponseTypeDef](./type_defs.md#provisionpermissionsetresponseresponsetypedef).
+[ProvisionPermissionSetResponseTypeDef](./type_defs.md#provisionpermissionsetresponsetypedef).
 
 ### put_inline_policy_to_permission_set
 
@@ -727,7 +739,7 @@ Boto3 documentation:
 [SSOAdmin.Client.put_inline_policy_to_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.put_inline_policy_to_permission_set)
 
 Arguments mapping described in
-[PutInlinePolicyToPermissionSetRequestTypeDef](./type_defs.md#putinlinepolicytopermissionsetrequesttypedef).
+[PutInlinePolicyToPermissionSetRequestRequestTypeDef](./type_defs.md#putinlinepolicytopermissionsetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -747,7 +759,7 @@ Boto3 documentation:
 [SSOAdmin.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -767,7 +779,7 @@ Boto3 documentation:
 [SSOAdmin.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -790,7 +802,7 @@ Boto3 documentation:
 [SSOAdmin.Client.update_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_instance_access_control_attribute_configuration)
 
 Arguments mapping described in
-[UpdateInstanceAccessControlAttributeConfigurationRequestTypeDef](./type_defs.md#updateinstanceaccesscontrolattributeconfigurationrequesttypedef).
+[UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#updateinstanceaccesscontrolattributeconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -811,7 +823,7 @@ Boto3 documentation:
 [SSOAdmin.Client.update_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_permission_set)
 
 Arguments mapping described in
-[UpdatePermissionSetRequestTypeDef](./type_defs.md#updatepermissionsetrequesttypedef).
+[UpdatePermissionSetRequestRequestTypeDef](./type_defs.md#updatepermissionsetrequestrequesttypedef).
 
 Keyword-only arguments:
 

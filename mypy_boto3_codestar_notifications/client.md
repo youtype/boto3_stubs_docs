@@ -11,6 +11,7 @@ type annotations stubs module
   - [CodeStarNotificationsClient](#codestarnotificationsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_notification_rule](#create_notification_rule)
     - [delete_notification_rule](#delete_notification_rule)
@@ -70,6 +71,18 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CodeStarNotificationsClient exceptions.
+
+Type annotations for `boto3.client("codestar-notifications").exceptions`
+method.
+
+Boto3 documentation:
+[CodeStarNotifications.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -97,7 +110,7 @@ Boto3 documentation:
 [CodeStarNotifications.Client.create_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.create_notification_rule)
 
 Arguments mapping described in
-[CreateNotificationRuleRequestTypeDef](./type_defs.md#createnotificationrulerequesttypedef).
+[CreateNotificationRuleRequestRequestTypeDef](./type_defs.md#createnotificationrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -113,7 +126,7 @@ Keyword-only arguments:
   [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
 
 Returns
-[CreateNotificationRuleResultResponseTypeDef](./type_defs.md#createnotificationruleresultresponsetypedef).
+[CreateNotificationRuleResultTypeDef](./type_defs.md#createnotificationruleresulttypedef).
 
 ### delete_notification_rule
 
@@ -126,14 +139,14 @@ Boto3 documentation:
 [CodeStarNotifications.Client.delete_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_notification_rule)
 
 Arguments mapping described in
-[DeleteNotificationRuleRequestTypeDef](./type_defs.md#deletenotificationrulerequesttypedef).
+[DeleteNotificationRuleRequestRequestTypeDef](./type_defs.md#deletenotificationrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[DeleteNotificationRuleResultResponseTypeDef](./type_defs.md#deletenotificationruleresultresponsetypedef).
+[DeleteNotificationRuleResultTypeDef](./type_defs.md#deletenotificationruleresulttypedef).
 
 ### delete_target
 
@@ -146,7 +159,7 @@ Boto3 documentation:
 [CodeStarNotifications.Client.delete_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_target)
 
 Arguments mapping described in
-[DeleteTargetRequestTypeDef](./type_defs.md#deletetargetrequesttypedef).
+[DeleteTargetRequestRequestTypeDef](./type_defs.md#deletetargetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -166,14 +179,14 @@ Boto3 documentation:
 [CodeStarNotifications.Client.describe_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.describe_notification_rule)
 
 Arguments mapping described in
-[DescribeNotificationRuleRequestTypeDef](./type_defs.md#describenotificationrulerequesttypedef).
+[DescribeNotificationRuleRequestRequestTypeDef](./type_defs.md#describenotificationrulerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[DescribeNotificationRuleResultResponseTypeDef](./type_defs.md#describenotificationruleresultresponsetypedef).
+[DescribeNotificationRuleResultTypeDef](./type_defs.md#describenotificationruleresulttypedef).
 
 ### generate_presigned_url
 
@@ -206,7 +219,7 @@ Boto3 documentation:
 [CodeStarNotifications.Client.list_event_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_event_types)
 
 Arguments mapping described in
-[ListEventTypesRequestTypeDef](./type_defs.md#listeventtypesrequesttypedef).
+[ListEventTypesRequestRequestTypeDef](./type_defs.md#listeventtypesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -216,7 +229,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListEventTypesResultResponseTypeDef](./type_defs.md#listeventtypesresultresponsetypedef).
+[ListEventTypesResultTypeDef](./type_defs.md#listeventtypesresulttypedef).
 
 ### list_notification_rules
 
@@ -229,7 +242,7 @@ Boto3 documentation:
 [CodeStarNotifications.Client.list_notification_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_notification_rules)
 
 Arguments mapping described in
-[ListNotificationRulesRequestTypeDef](./type_defs.md#listnotificationrulesrequesttypedef).
+[ListNotificationRulesRequestRequestTypeDef](./type_defs.md#listnotificationrulesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -239,7 +252,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListNotificationRulesResultResponseTypeDef](./type_defs.md#listnotificationrulesresultresponsetypedef).
+[ListNotificationRulesResultTypeDef](./type_defs.md#listnotificationrulesresulttypedef).
 
 ### list_tags_for_resource
 
@@ -252,14 +265,14 @@ Boto3 documentation:
 [CodeStarNotifications.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResultResponseTypeDef](./type_defs.md#listtagsforresourceresultresponsetypedef).
+[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
 ### list_targets
 
@@ -272,7 +285,7 @@ Boto3 documentation:
 [CodeStarNotifications.Client.list_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_targets)
 
 Arguments mapping described in
-[ListTargetsRequestTypeDef](./type_defs.md#listtargetsrequesttypedef).
+[ListTargetsRequestRequestTypeDef](./type_defs.md#listtargetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -281,8 +294,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListTargetsResultResponseTypeDef](./type_defs.md#listtargetsresultresponsetypedef).
+Returns [ListTargetsResultTypeDef](./type_defs.md#listtargetsresulttypedef).
 
 ### subscribe
 
@@ -296,7 +308,7 @@ Boto3 documentation:
 [CodeStarNotifications.Client.subscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.subscribe)
 
 Arguments mapping described in
-[SubscribeRequestTypeDef](./type_defs.md#subscriberequesttypedef).
+[SubscribeRequestRequestTypeDef](./type_defs.md#subscriberequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -304,8 +316,7 @@ Keyword-only arguments:
 - `Target`: [TargetTypeDef](./type_defs.md#targettypedef) *(required)*
 - `ClientRequestToken`: `str`
 
-Returns
-[SubscribeResultResponseTypeDef](./type_defs.md#subscriberesultresponsetypedef).
+Returns [SubscribeResultTypeDef](./type_defs.md#subscriberesulttypedef).
 
 ### tag_resource
 
@@ -318,15 +329,14 @@ Boto3 documentation:
 [CodeStarNotifications.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `Tags`: `Dict`\[`str`, `str`\] *(required)*
 
-Returns
-[TagResourceResultResponseTypeDef](./type_defs.md#tagresourceresultresponsetypedef).
+Returns [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef).
 
 ### unsubscribe
 
@@ -341,15 +351,14 @@ Boto3 documentation:
 [CodeStarNotifications.Client.unsubscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.unsubscribe)
 
 Arguments mapping described in
-[UnsubscribeRequestTypeDef](./type_defs.md#unsubscriberequesttypedef).
+[UnsubscribeRequestRequestTypeDef](./type_defs.md#unsubscriberequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
 - `TargetAddress`: `str` *(required)*
 
-Returns
-[UnsubscribeResultResponseTypeDef](./type_defs.md#unsubscriberesultresponsetypedef).
+Returns [UnsubscribeResultTypeDef](./type_defs.md#unsubscriberesulttypedef).
 
 ### untag_resource
 
@@ -363,7 +372,7 @@ Boto3 documentation:
 [CodeStarNotifications.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -383,7 +392,7 @@ Boto3 documentation:
 [CodeStarNotifications.Client.update_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.update_notification_rule)
 
 Arguments mapping described in
-[UpdateNotificationRuleRequestTypeDef](./type_defs.md#updatenotificationrulerequesttypedef).
+[UpdateNotificationRuleRequestRequestTypeDef](./type_defs.md#updatenotificationrulerequestrequesttypedef).
 
 Keyword-only arguments:
 

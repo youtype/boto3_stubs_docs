@@ -25,6 +25,9 @@ type annotations stubs module
   - [LicenseType](#licensetype)
   - [ListAccountsPaginatorName](#listaccountspaginatorname)
   - [ListUsersPaginatorName](#listuserspaginatorname)
+  - [MediaPipelineSinkTypeType](#mediapipelinesinktypetype)
+  - [MediaPipelineSourceTypeType](#mediapipelinesourcetypetype)
+  - [MediaPipelineStatusType](#mediapipelinestatustype)
   - [MemberTypeType](#membertypetype)
   - [NotificationTargetType](#notificationtargettype)
   - [NumberSelectionBehaviorType](#numberselectionbehaviortype)
@@ -247,6 +250,40 @@ from mypy_boto3_chime.literals import ListUsersPaginatorName
 Values:
 
 - `list_users`
+
+## MediaPipelineSinkTypeType
+
+```python
+from mypy_boto3_chime.literals import MediaPipelineSinkTypeType
+```
+
+Values:
+
+- `S3Bucket`
+
+## MediaPipelineSourceTypeType
+
+```python
+from mypy_boto3_chime.literals import MediaPipelineSourceTypeType
+```
+
+Values:
+
+- `ChimeSdkMeeting`
+
+## MediaPipelineStatusType
+
+```python
+from mypy_boto3_chime.literals import MediaPipelineStatusType
+```
+
+Values:
+
+- `Failed`
+- `Initializing`
+- `InProgress`
+- `Stopped`
+- `Stopping`
 
 ## MemberTypeType
 

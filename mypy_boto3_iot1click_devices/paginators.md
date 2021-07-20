@@ -37,7 +37,7 @@ Arguments for `ListDeviceEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeviceEventsPaginator.paginate` returns
-`Iterator`\[[ListDeviceEventsResponseResponseTypeDef](./type_defs.md#listdeviceeventsresponseresponsetypedef)\].
+`Iterator`\[[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef)\].
 
 ## ListDevicesPaginator
 
@@ -63,4 +63,4 @@ Arguments for `ListDevicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDevicesPaginator.paginate` returns
-`Iterator`\[[ListDevicesResponseResponseTypeDef](./type_defs.md#listdevicesresponseresponsetypedef)\].
+`Iterator`\[[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef)\].

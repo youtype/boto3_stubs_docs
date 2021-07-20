@@ -11,6 +11,7 @@ type annotations stubs module
   - [EFSClient](#efsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_access_point](#create_access_point)
     - [create_file_system](#create_file_system)
@@ -104,6 +105,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+EFSClient exceptions.
+
+Type annotations for `boto3.client("efs").exceptions` method.
+
+Boto3 documentation:
+[EFS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -129,7 +141,7 @@ Boto3 documentation:
 [EFS.Client.create_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_access_point)
 
 Arguments mapping described in
-[CreateAccessPointRequestTypeDef](./type_defs.md#createaccesspointrequesttypedef).
+[CreateAccessPointRequestRequestTypeDef](./type_defs.md#createaccesspointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -140,7 +152,7 @@ Keyword-only arguments:
 - `RootDirectory`: [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
 
 Returns
-[AccessPointDescriptionResponseTypeDef](./type_defs.md#accesspointdescriptionresponsetypedef).
+[AccessPointDescriptionResponseMetadataTypeDef](./type_defs.md#accesspointdescriptionresponsemetadatatypedef).
 
 ### create_file_system
 
@@ -152,7 +164,7 @@ Boto3 documentation:
 [EFS.Client.create_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_file_system)
 
 Arguments mapping described in
-[CreateFileSystemRequestTypeDef](./type_defs.md#createfilesystemrequesttypedef).
+[CreateFileSystemRequestRequestTypeDef](./type_defs.md#createfilesystemrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -167,7 +179,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[FileSystemDescriptionResponseTypeDef](./type_defs.md#filesystemdescriptionresponsetypedef).
+[FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef).
 
 ### create_mount_target
 
@@ -179,7 +191,7 @@ Boto3 documentation:
 [EFS.Client.create_mount_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_mount_target)
 
 Arguments mapping described in
-[CreateMountTargetRequestTypeDef](./type_defs.md#createmounttargetrequesttypedef).
+[CreateMountTargetRequestRequestTypeDef](./type_defs.md#createmounttargetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -189,7 +201,7 @@ Keyword-only arguments:
 - `SecurityGroups`: `List`\[`str`\]
 
 Returns
-[MountTargetDescriptionResponseTypeDef](./type_defs.md#mounttargetdescriptionresponsetypedef).
+[MountTargetDescriptionResponseMetadataTypeDef](./type_defs.md#mounttargetdescriptionresponsemetadatatypedef).
 
 ### create_tags
 
@@ -201,7 +213,7 @@ Boto3 documentation:
 [EFS.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_tags)
 
 Arguments mapping described in
-[CreateTagsRequestTypeDef](./type_defs.md#createtagsrequesttypedef).
+[CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,7 +230,7 @@ Boto3 documentation:
 [EFS.Client.delete_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_access_point)
 
 Arguments mapping described in
-[DeleteAccessPointRequestTypeDef](./type_defs.md#deleteaccesspointrequesttypedef).
+[DeleteAccessPointRequestRequestTypeDef](./type_defs.md#deleteaccesspointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -234,7 +246,7 @@ Boto3 documentation:
 [EFS.Client.delete_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system)
 
 Arguments mapping described in
-[DeleteFileSystemRequestTypeDef](./type_defs.md#deletefilesystemrequesttypedef).
+[DeleteFileSystemRequestRequestTypeDef](./type_defs.md#deletefilesystemrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -250,7 +262,7 @@ Boto3 documentation:
 [EFS.Client.delete_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system_policy)
 
 Arguments mapping described in
-[DeleteFileSystemPolicyRequestTypeDef](./type_defs.md#deletefilesystempolicyrequesttypedef).
+[DeleteFileSystemPolicyRequestRequestTypeDef](./type_defs.md#deletefilesystempolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -266,7 +278,7 @@ Boto3 documentation:
 [EFS.Client.delete_mount_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_mount_target)
 
 Arguments mapping described in
-[DeleteMountTargetRequestTypeDef](./type_defs.md#deletemounttargetrequesttypedef).
+[DeleteMountTargetRequestRequestTypeDef](./type_defs.md#deletemounttargetrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -282,7 +294,7 @@ Boto3 documentation:
 [EFS.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_tags)
 
 Arguments mapping described in
-[DeleteTagsRequestTypeDef](./type_defs.md#deletetagsrequesttypedef).
+[DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -300,7 +312,7 @@ Boto3 documentation:
 [EFS.Client.describe_access_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_access_points)
 
 Arguments mapping described in
-[DescribeAccessPointsRequestTypeDef](./type_defs.md#describeaccesspointsrequesttypedef).
+[DescribeAccessPointsRequestRequestTypeDef](./type_defs.md#describeaccesspointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -310,7 +322,7 @@ Keyword-only arguments:
 - `FileSystemId`: `str`
 
 Returns
-[DescribeAccessPointsResponseResponseTypeDef](./type_defs.md#describeaccesspointsresponseresponsetypedef).
+[DescribeAccessPointsResponseTypeDef](./type_defs.md#describeaccesspointsresponsetypedef).
 
 ### describe_account_preferences
 
@@ -325,7 +337,7 @@ Boto3 documentation:
 [EFS.Client.describe_account_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_account_preferences)
 
 Arguments mapping described in
-[DescribeAccountPreferencesRequestTypeDef](./type_defs.md#describeaccountpreferencesrequesttypedef).
+[DescribeAccountPreferencesRequestRequestTypeDef](./type_defs.md#describeaccountpreferencesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -333,7 +345,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeAccountPreferencesResponseResponseTypeDef](./type_defs.md#describeaccountpreferencesresponseresponsetypedef).
+[DescribeAccountPreferencesResponseTypeDef](./type_defs.md#describeaccountpreferencesresponsetypedef).
 
 ### describe_backup_policy
 
@@ -345,14 +357,14 @@ Boto3 documentation:
 [EFS.Client.describe_backup_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_backup_policy)
 
 Arguments mapping described in
-[DescribeBackupPolicyRequestTypeDef](./type_defs.md#describebackuppolicyrequesttypedef).
+[DescribeBackupPolicyRequestRequestTypeDef](./type_defs.md#describebackuppolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 
 Returns
-[BackupPolicyDescriptionResponseTypeDef](./type_defs.md#backuppolicydescriptionresponsetypedef).
+[BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef).
 
 ### describe_file_system_policy
 
@@ -364,14 +376,14 @@ Boto3 documentation:
 [EFS.Client.describe_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_system_policy)
 
 Arguments mapping described in
-[DescribeFileSystemPolicyRequestTypeDef](./type_defs.md#describefilesystempolicyrequesttypedef).
+[DescribeFileSystemPolicyRequestRequestTypeDef](./type_defs.md#describefilesystempolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 
 Returns
-[FileSystemPolicyDescriptionResponseTypeDef](./type_defs.md#filesystempolicydescriptionresponsetypedef).
+[FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef).
 
 ### describe_file_systems
 
@@ -384,7 +396,7 @@ Boto3 documentation:
 [EFS.Client.describe_file_systems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_systems)
 
 Arguments mapping described in
-[DescribeFileSystemsRequestTypeDef](./type_defs.md#describefilesystemsrequesttypedef).
+[DescribeFileSystemsRequestRequestTypeDef](./type_defs.md#describefilesystemsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -394,7 +406,7 @@ Keyword-only arguments:
 - `FileSystemId`: `str`
 
 Returns
-[DescribeFileSystemsResponseResponseTypeDef](./type_defs.md#describefilesystemsresponseresponsetypedef).
+[DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef).
 
 ### describe_lifecycle_configuration
 
@@ -408,14 +420,14 @@ Boto3 documentation:
 [EFS.Client.describe_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_lifecycle_configuration)
 
 Arguments mapping described in
-[DescribeLifecycleConfigurationRequestTypeDef](./type_defs.md#describelifecycleconfigurationrequesttypedef).
+[DescribeLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#describelifecycleconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 
 Returns
-[LifecycleConfigurationDescriptionResponseTypeDef](./type_defs.md#lifecycleconfigurationdescriptionresponsetypedef).
+[LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef).
 
 ### describe_mount_target_security_groups
 
@@ -428,14 +440,14 @@ Boto3 documentation:
 [EFS.Client.describe_mount_target_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_target_security_groups)
 
 Arguments mapping described in
-[DescribeMountTargetSecurityGroupsRequestTypeDef](./type_defs.md#describemounttargetsecuritygroupsrequesttypedef).
+[DescribeMountTargetSecurityGroupsRequestRequestTypeDef](./type_defs.md#describemounttargetsecuritygroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MountTargetId`: `str` *(required)*
 
 Returns
-[DescribeMountTargetSecurityGroupsResponseResponseTypeDef](./type_defs.md#describemounttargetsecuritygroupsresponseresponsetypedef).
+[DescribeMountTargetSecurityGroupsResponseTypeDef](./type_defs.md#describemounttargetsecuritygroupsresponsetypedef).
 
 ### describe_mount_targets
 
@@ -448,7 +460,7 @@ Boto3 documentation:
 [EFS.Client.describe_mount_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_targets)
 
 Arguments mapping described in
-[DescribeMountTargetsRequestTypeDef](./type_defs.md#describemounttargetsrequesttypedef).
+[DescribeMountTargetsRequestRequestTypeDef](./type_defs.md#describemounttargetsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -459,7 +471,7 @@ Keyword-only arguments:
 - `AccessPointId`: `str`
 
 Returns
-[DescribeMountTargetsResponseResponseTypeDef](./type_defs.md#describemounttargetsresponseresponsetypedef).
+[DescribeMountTargetsResponseTypeDef](./type_defs.md#describemounttargetsresponsetypedef).
 
 ### describe_tags
 
@@ -471,7 +483,7 @@ Boto3 documentation:
 [EFS.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_tags)
 
 Arguments mapping described in
-[DescribeTagsRequestTypeDef](./type_defs.md#describetagsrequesttypedef).
+[DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -480,7 +492,7 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns
-[DescribeTagsResponseResponseTypeDef](./type_defs.md#describetagsresponseresponsetypedef).
+[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -510,7 +522,7 @@ Boto3 documentation:
 [EFS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -519,7 +531,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### modify_mount_target_security_groups
 
@@ -532,7 +544,7 @@ Boto3 documentation:
 [EFS.Client.modify_mount_target_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.modify_mount_target_security_groups)
 
 Arguments mapping described in
-[ModifyMountTargetSecurityGroupsRequestTypeDef](./type_defs.md#modifymounttargetsecuritygroupsrequesttypedef).
+[ModifyMountTargetSecurityGroupsRequestRequestTypeDef](./type_defs.md#modifymounttargetsecuritygroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -552,7 +564,7 @@ Boto3 documentation:
 [EFS.Client.put_account_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_account_preferences)
 
 Arguments mapping described in
-[PutAccountPreferencesRequestTypeDef](./type_defs.md#putaccountpreferencesrequesttypedef).
+[PutAccountPreferencesRequestRequestTypeDef](./type_defs.md#putaccountpreferencesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -560,7 +572,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[PutAccountPreferencesResponseResponseTypeDef](./type_defs.md#putaccountpreferencesresponseresponsetypedef).
+[PutAccountPreferencesResponseTypeDef](./type_defs.md#putaccountpreferencesresponsetypedef).
 
 ### put_backup_policy
 
@@ -572,7 +584,7 @@ Boto3 documentation:
 [EFS.Client.put_backup_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_backup_policy)
 
 Arguments mapping described in
-[PutBackupPolicyRequestTypeDef](./type_defs.md#putbackuppolicyrequesttypedef).
+[PutBackupPolicyRequestRequestTypeDef](./type_defs.md#putbackuppolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -581,7 +593,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[BackupPolicyDescriptionResponseTypeDef](./type_defs.md#backuppolicydescriptionresponsetypedef).
+[BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef).
 
 ### put_file_system_policy
 
@@ -593,7 +605,7 @@ Boto3 documentation:
 [EFS.Client.put_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_file_system_policy)
 
 Arguments mapping described in
-[PutFileSystemPolicyRequestTypeDef](./type_defs.md#putfilesystempolicyrequesttypedef).
+[PutFileSystemPolicyRequestRequestTypeDef](./type_defs.md#putfilesystempolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -602,7 +614,7 @@ Keyword-only arguments:
 - `BypassPolicyLockoutSafetyCheck`: `bool`
 
 Returns
-[FileSystemPolicyDescriptionResponseTypeDef](./type_defs.md#filesystempolicydescriptionresponsetypedef).
+[FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef).
 
 ### put_lifecycle_configuration
 
@@ -614,7 +626,7 @@ Boto3 documentation:
 [EFS.Client.put_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_lifecycle_configuration)
 
 Arguments mapping described in
-[PutLifecycleConfigurationRequestTypeDef](./type_defs.md#putlifecycleconfigurationrequesttypedef).
+[PutLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#putlifecycleconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -624,7 +636,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[LifecycleConfigurationDescriptionResponseTypeDef](./type_defs.md#lifecycleconfigurationdescriptionresponsetypedef).
+[LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef).
 
 ### tag_resource
 
@@ -636,7 +648,7 @@ Boto3 documentation:
 [EFS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -653,7 +665,7 @@ Boto3 documentation:
 [EFS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -671,7 +683,7 @@ Boto3 documentation:
 [EFS.Client.update_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.update_file_system)
 
 Arguments mapping described in
-[UpdateFileSystemRequestTypeDef](./type_defs.md#updatefilesystemrequesttypedef).
+[UpdateFileSystemRequestRequestTypeDef](./type_defs.md#updatefilesystemrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -680,7 +692,7 @@ Keyword-only arguments:
 - `ProvisionedThroughputInMibps`: `float`
 
 Returns
-[FileSystemDescriptionResponseTypeDef](./type_defs.md#filesystemdescriptionresponsetypedef).
+[FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef).
 
 ### get_paginator
 

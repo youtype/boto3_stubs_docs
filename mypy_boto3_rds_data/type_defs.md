@@ -9,25 +9,25 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 RDSDataService module](#typed-dictionaries-for-boto3-rdsdataservice-module)
   - [ArrayValueTypeDef](#arrayvaluetypedef)
-  - [BatchExecuteStatementRequestTypeDef](#batchexecutestatementrequesttypedef)
-  - [BatchExecuteStatementResponseResponseTypeDef](#batchexecutestatementresponseresponsetypedef)
-  - [BeginTransactionRequestTypeDef](#begintransactionrequesttypedef)
-  - [BeginTransactionResponseResponseTypeDef](#begintransactionresponseresponsetypedef)
+  - [BatchExecuteStatementRequestRequestTypeDef](#batchexecutestatementrequestrequesttypedef)
+  - [BatchExecuteStatementResponseTypeDef](#batchexecutestatementresponsetypedef)
+  - [BeginTransactionRequestRequestTypeDef](#begintransactionrequestrequesttypedef)
+  - [BeginTransactionResponseTypeDef](#begintransactionresponsetypedef)
   - [ColumnMetadataTypeDef](#columnmetadatatypedef)
-  - [CommitTransactionRequestTypeDef](#committransactionrequesttypedef)
-  - [CommitTransactionResponseResponseTypeDef](#committransactionresponseresponsetypedef)
-  - [ExecuteSqlRequestTypeDef](#executesqlrequesttypedef)
-  - [ExecuteSqlResponseResponseTypeDef](#executesqlresponseresponsetypedef)
-  - [ExecuteStatementRequestTypeDef](#executestatementrequesttypedef)
-  - [ExecuteStatementResponseResponseTypeDef](#executestatementresponseresponsetypedef)
+  - [CommitTransactionRequestRequestTypeDef](#committransactionrequestrequesttypedef)
+  - [CommitTransactionResponseTypeDef](#committransactionresponsetypedef)
+  - [ExecuteSqlRequestRequestTypeDef](#executesqlrequestrequesttypedef)
+  - [ExecuteSqlResponseTypeDef](#executesqlresponsetypedef)
+  - [ExecuteStatementRequestRequestTypeDef](#executestatementrequestrequesttypedef)
+  - [ExecuteStatementResponseTypeDef](#executestatementresponsetypedef)
   - [FieldTypeDef](#fieldtypedef)
   - [RecordTypeDef](#recordtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResultFrameTypeDef](#resultframetypedef)
   - [ResultSetMetadataTypeDef](#resultsetmetadatatypedef)
   - [ResultSetOptionsTypeDef](#resultsetoptionstypedef)
-  - [RollbackTransactionRequestTypeDef](#rollbacktransactionrequesttypedef)
-  - [RollbackTransactionResponseResponseTypeDef](#rollbacktransactionresponseresponsetypedef)
+  - [RollbackTransactionRequestRequestTypeDef](#rollbacktransactionrequestrequesttypedef)
+  - [RollbackTransactionResponseTypeDef](#rollbacktransactionresponsetypedef)
   - [SqlParameterTypeDef](#sqlparametertypedef)
   - [SqlStatementResultTypeDef](#sqlstatementresulttypedef)
   - [StructValueTypeDef](#structvaluetypedef)
@@ -49,10 +49,10 @@ Optional fields:
 - `longValues`: `List`\[`int`\]
 - `stringValues`: `List`\[`str`\]
 
-## BatchExecuteStatementRequestTypeDef
+## BatchExecuteStatementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rds_data.type_defs import BatchExecuteStatementRequestTypeDef
+from mypy_boto3_rds_data.type_defs import BatchExecuteStatementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -69,10 +69,10 @@ Optional fields:
 - `schema`: `str`
 - `transactionId`: `str`
 
-## BatchExecuteStatementResponseResponseTypeDef
+## BatchExecuteStatementResponseTypeDef
 
 ```python
-from mypy_boto3_rds_data.type_defs import BatchExecuteStatementResponseResponseTypeDef
+from mypy_boto3_rds_data.type_defs import BatchExecuteStatementResponseTypeDef
 ```
 
 Required fields:
@@ -82,10 +82,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BeginTransactionRequestTypeDef
+## BeginTransactionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rds_data.type_defs import BeginTransactionRequestTypeDef
+from mypy_boto3_rds_data.type_defs import BeginTransactionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -98,10 +98,10 @@ Optional fields:
 - `database`: `str`
 - `schema`: `str`
 
-## BeginTransactionResponseResponseTypeDef
+## BeginTransactionResponseTypeDef
 
 ```python
-from mypy_boto3_rds_data.type_defs import BeginTransactionResponseResponseTypeDef
+from mypy_boto3_rds_data.type_defs import BeginTransactionResponseTypeDef
 ```
 
 Required fields:
@@ -133,10 +133,10 @@ Optional fields:
 - `type`: `int`
 - `typeName`: `str`
 
-## CommitTransactionRequestTypeDef
+## CommitTransactionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rds_data.type_defs import CommitTransactionRequestTypeDef
+from mypy_boto3_rds_data.type_defs import CommitTransactionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -145,10 +145,10 @@ Required fields:
 - `secretArn`: `str`
 - `transactionId`: `str`
 
-## CommitTransactionResponseResponseTypeDef
+## CommitTransactionResponseTypeDef
 
 ```python
-from mypy_boto3_rds_data.type_defs import CommitTransactionResponseResponseTypeDef
+from mypy_boto3_rds_data.type_defs import CommitTransactionResponseTypeDef
 ```
 
 Required fields:
@@ -157,10 +157,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExecuteSqlRequestTypeDef
+## ExecuteSqlRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rds_data.type_defs import ExecuteSqlRequestTypeDef
+from mypy_boto3_rds_data.type_defs import ExecuteSqlRequestRequestTypeDef
 ```
 
 Required fields:
@@ -174,10 +174,10 @@ Optional fields:
 - `database`: `str`
 - `schema`: `str`
 
-## ExecuteSqlResponseResponseTypeDef
+## ExecuteSqlResponseTypeDef
 
 ```python
-from mypy_boto3_rds_data.type_defs import ExecuteSqlResponseResponseTypeDef
+from mypy_boto3_rds_data.type_defs import ExecuteSqlResponseTypeDef
 ```
 
 Required fields:
@@ -187,10 +187,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ExecuteStatementRequestTypeDef
+## ExecuteStatementRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rds_data.type_defs import ExecuteStatementRequestTypeDef
+from mypy_boto3_rds_data.type_defs import ExecuteStatementRequestRequestTypeDef
 ```
 
 Required fields:
@@ -211,10 +211,10 @@ Optional fields:
 - `schema`: `str`
 - `transactionId`: `str`
 
-## ExecuteStatementResponseResponseTypeDef
+## ExecuteStatementResponseTypeDef
 
 ```python
-from mypy_boto3_rds_data.type_defs import ExecuteStatementResponseResponseTypeDef
+from mypy_boto3_rds_data.type_defs import ExecuteStatementResponseTypeDef
 ```
 
 Required fields:
@@ -302,10 +302,10 @@ Optional fields:
 - `decimalReturnType`:
   [DecimalReturnTypeType](./literals.md#decimalreturntypetype)
 
-## RollbackTransactionRequestTypeDef
+## RollbackTransactionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_rds_data.type_defs import RollbackTransactionRequestTypeDef
+from mypy_boto3_rds_data.type_defs import RollbackTransactionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -314,10 +314,10 @@ Required fields:
 - `secretArn`: `str`
 - `transactionId`: `str`
 
-## RollbackTransactionResponseResponseTypeDef
+## RollbackTransactionResponseTypeDef
 
 ```python
-from mypy_boto3_rds_data.type_defs import RollbackTransactionResponseResponseTypeDef
+from mypy_boto3_rds_data.type_defs import RollbackTransactionResponseTypeDef
 ```
 
 Required fields:

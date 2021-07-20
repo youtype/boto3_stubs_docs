@@ -9,88 +9,88 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 CodeArtifact module](#typed-dictionaries-for-boto3-codeartifact-module)
   - [AssetSummaryTypeDef](#assetsummarytypedef)
-  - [AssociateExternalConnectionRequestTypeDef](#associateexternalconnectionrequesttypedef)
-  - [AssociateExternalConnectionResultResponseTypeDef](#associateexternalconnectionresultresponsetypedef)
-  - [CopyPackageVersionsRequestTypeDef](#copypackageversionsrequesttypedef)
-  - [CopyPackageVersionsResultResponseTypeDef](#copypackageversionsresultresponsetypedef)
-  - [CreateDomainRequestTypeDef](#createdomainrequesttypedef)
-  - [CreateDomainResultResponseTypeDef](#createdomainresultresponsetypedef)
-  - [CreateRepositoryRequestTypeDef](#createrepositoryrequesttypedef)
-  - [CreateRepositoryResultResponseTypeDef](#createrepositoryresultresponsetypedef)
-  - [DeleteDomainPermissionsPolicyRequestTypeDef](#deletedomainpermissionspolicyrequesttypedef)
-  - [DeleteDomainPermissionsPolicyResultResponseTypeDef](#deletedomainpermissionspolicyresultresponsetypedef)
-  - [DeleteDomainRequestTypeDef](#deletedomainrequesttypedef)
-  - [DeleteDomainResultResponseTypeDef](#deletedomainresultresponsetypedef)
-  - [DeletePackageVersionsRequestTypeDef](#deletepackageversionsrequesttypedef)
-  - [DeletePackageVersionsResultResponseTypeDef](#deletepackageversionsresultresponsetypedef)
-  - [DeleteRepositoryPermissionsPolicyRequestTypeDef](#deleterepositorypermissionspolicyrequesttypedef)
-  - [DeleteRepositoryPermissionsPolicyResultResponseTypeDef](#deleterepositorypermissionspolicyresultresponsetypedef)
-  - [DeleteRepositoryRequestTypeDef](#deleterepositoryrequesttypedef)
-  - [DeleteRepositoryResultResponseTypeDef](#deleterepositoryresultresponsetypedef)
-  - [DescribeDomainRequestTypeDef](#describedomainrequesttypedef)
-  - [DescribeDomainResultResponseTypeDef](#describedomainresultresponsetypedef)
-  - [DescribePackageVersionRequestTypeDef](#describepackageversionrequesttypedef)
-  - [DescribePackageVersionResultResponseTypeDef](#describepackageversionresultresponsetypedef)
-  - [DescribeRepositoryRequestTypeDef](#describerepositoryrequesttypedef)
-  - [DescribeRepositoryResultResponseTypeDef](#describerepositoryresultresponsetypedef)
-  - [DisassociateExternalConnectionRequestTypeDef](#disassociateexternalconnectionrequesttypedef)
-  - [DisassociateExternalConnectionResultResponseTypeDef](#disassociateexternalconnectionresultresponsetypedef)
-  - [DisposePackageVersionsRequestTypeDef](#disposepackageversionsrequesttypedef)
-  - [DisposePackageVersionsResultResponseTypeDef](#disposepackageversionsresultresponsetypedef)
+  - [AssociateExternalConnectionRequestRequestTypeDef](#associateexternalconnectionrequestrequesttypedef)
+  - [AssociateExternalConnectionResultTypeDef](#associateexternalconnectionresulttypedef)
+  - [CopyPackageVersionsRequestRequestTypeDef](#copypackageversionsrequestrequesttypedef)
+  - [CopyPackageVersionsResultTypeDef](#copypackageversionsresulttypedef)
+  - [CreateDomainRequestRequestTypeDef](#createdomainrequestrequesttypedef)
+  - [CreateDomainResultTypeDef](#createdomainresulttypedef)
+  - [CreateRepositoryRequestRequestTypeDef](#createrepositoryrequestrequesttypedef)
+  - [CreateRepositoryResultTypeDef](#createrepositoryresulttypedef)
+  - [DeleteDomainPermissionsPolicyRequestRequestTypeDef](#deletedomainpermissionspolicyrequestrequesttypedef)
+  - [DeleteDomainPermissionsPolicyResultTypeDef](#deletedomainpermissionspolicyresulttypedef)
+  - [DeleteDomainRequestRequestTypeDef](#deletedomainrequestrequesttypedef)
+  - [DeleteDomainResultTypeDef](#deletedomainresulttypedef)
+  - [DeletePackageVersionsRequestRequestTypeDef](#deletepackageversionsrequestrequesttypedef)
+  - [DeletePackageVersionsResultTypeDef](#deletepackageversionsresulttypedef)
+  - [DeleteRepositoryPermissionsPolicyRequestRequestTypeDef](#deleterepositorypermissionspolicyrequestrequesttypedef)
+  - [DeleteRepositoryPermissionsPolicyResultTypeDef](#deleterepositorypermissionspolicyresulttypedef)
+  - [DeleteRepositoryRequestRequestTypeDef](#deleterepositoryrequestrequesttypedef)
+  - [DeleteRepositoryResultTypeDef](#deleterepositoryresulttypedef)
+  - [DescribeDomainRequestRequestTypeDef](#describedomainrequestrequesttypedef)
+  - [DescribeDomainResultTypeDef](#describedomainresulttypedef)
+  - [DescribePackageVersionRequestRequestTypeDef](#describepackageversionrequestrequesttypedef)
+  - [DescribePackageVersionResultTypeDef](#describepackageversionresulttypedef)
+  - [DescribeRepositoryRequestRequestTypeDef](#describerepositoryrequestrequesttypedef)
+  - [DescribeRepositoryResultTypeDef](#describerepositoryresulttypedef)
+  - [DisassociateExternalConnectionRequestRequestTypeDef](#disassociateexternalconnectionrequestrequesttypedef)
+  - [DisassociateExternalConnectionResultTypeDef](#disassociateexternalconnectionresulttypedef)
+  - [DisposePackageVersionsRequestRequestTypeDef](#disposepackageversionsrequestrequesttypedef)
+  - [DisposePackageVersionsResultTypeDef](#disposepackageversionsresulttypedef)
   - [DomainDescriptionTypeDef](#domaindescriptiontypedef)
   - [DomainSummaryTypeDef](#domainsummarytypedef)
-  - [GetAuthorizationTokenRequestTypeDef](#getauthorizationtokenrequesttypedef)
-  - [GetAuthorizationTokenResultResponseTypeDef](#getauthorizationtokenresultresponsetypedef)
-  - [GetDomainPermissionsPolicyRequestTypeDef](#getdomainpermissionspolicyrequesttypedef)
-  - [GetDomainPermissionsPolicyResultResponseTypeDef](#getdomainpermissionspolicyresultresponsetypedef)
-  - [GetPackageVersionAssetRequestTypeDef](#getpackageversionassetrequesttypedef)
-  - [GetPackageVersionAssetResultResponseTypeDef](#getpackageversionassetresultresponsetypedef)
-  - [GetPackageVersionReadmeRequestTypeDef](#getpackageversionreadmerequesttypedef)
-  - [GetPackageVersionReadmeResultResponseTypeDef](#getpackageversionreadmeresultresponsetypedef)
-  - [GetRepositoryEndpointRequestTypeDef](#getrepositoryendpointrequesttypedef)
-  - [GetRepositoryEndpointResultResponseTypeDef](#getrepositoryendpointresultresponsetypedef)
-  - [GetRepositoryPermissionsPolicyRequestTypeDef](#getrepositorypermissionspolicyrequesttypedef)
-  - [GetRepositoryPermissionsPolicyResultResponseTypeDef](#getrepositorypermissionspolicyresultresponsetypedef)
+  - [GetAuthorizationTokenRequestRequestTypeDef](#getauthorizationtokenrequestrequesttypedef)
+  - [GetAuthorizationTokenResultTypeDef](#getauthorizationtokenresulttypedef)
+  - [GetDomainPermissionsPolicyRequestRequestTypeDef](#getdomainpermissionspolicyrequestrequesttypedef)
+  - [GetDomainPermissionsPolicyResultTypeDef](#getdomainpermissionspolicyresulttypedef)
+  - [GetPackageVersionAssetRequestRequestTypeDef](#getpackageversionassetrequestrequesttypedef)
+  - [GetPackageVersionAssetResultTypeDef](#getpackageversionassetresulttypedef)
+  - [GetPackageVersionReadmeRequestRequestTypeDef](#getpackageversionreadmerequestrequesttypedef)
+  - [GetPackageVersionReadmeResultTypeDef](#getpackageversionreadmeresulttypedef)
+  - [GetRepositoryEndpointRequestRequestTypeDef](#getrepositoryendpointrequestrequesttypedef)
+  - [GetRepositoryEndpointResultTypeDef](#getrepositoryendpointresulttypedef)
+  - [GetRepositoryPermissionsPolicyRequestRequestTypeDef](#getrepositorypermissionspolicyrequestrequesttypedef)
+  - [GetRepositoryPermissionsPolicyResultTypeDef](#getrepositorypermissionspolicyresulttypedef)
   - [LicenseInfoTypeDef](#licenseinfotypedef)
-  - [ListDomainsRequestTypeDef](#listdomainsrequesttypedef)
-  - [ListDomainsResultResponseTypeDef](#listdomainsresultresponsetypedef)
-  - [ListPackageVersionAssetsRequestTypeDef](#listpackageversionassetsrequesttypedef)
-  - [ListPackageVersionAssetsResultResponseTypeDef](#listpackageversionassetsresultresponsetypedef)
-  - [ListPackageVersionDependenciesRequestTypeDef](#listpackageversiondependenciesrequesttypedef)
-  - [ListPackageVersionDependenciesResultResponseTypeDef](#listpackageversiondependenciesresultresponsetypedef)
-  - [ListPackageVersionsRequestTypeDef](#listpackageversionsrequesttypedef)
-  - [ListPackageVersionsResultResponseTypeDef](#listpackageversionsresultresponsetypedef)
-  - [ListPackagesRequestTypeDef](#listpackagesrequesttypedef)
-  - [ListPackagesResultResponseTypeDef](#listpackagesresultresponsetypedef)
-  - [ListRepositoriesInDomainRequestTypeDef](#listrepositoriesindomainrequesttypedef)
-  - [ListRepositoriesInDomainResultResponseTypeDef](#listrepositoriesindomainresultresponsetypedef)
-  - [ListRepositoriesRequestTypeDef](#listrepositoriesrequesttypedef)
-  - [ListRepositoriesResultResponseTypeDef](#listrepositoriesresultresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResultResponseTypeDef](#listtagsforresourceresultresponsetypedef)
+  - [ListDomainsRequestRequestTypeDef](#listdomainsrequestrequesttypedef)
+  - [ListDomainsResultTypeDef](#listdomainsresulttypedef)
+  - [ListPackageVersionAssetsRequestRequestTypeDef](#listpackageversionassetsrequestrequesttypedef)
+  - [ListPackageVersionAssetsResultTypeDef](#listpackageversionassetsresulttypedef)
+  - [ListPackageVersionDependenciesRequestRequestTypeDef](#listpackageversiondependenciesrequestrequesttypedef)
+  - [ListPackageVersionDependenciesResultTypeDef](#listpackageversiondependenciesresulttypedef)
+  - [ListPackageVersionsRequestRequestTypeDef](#listpackageversionsrequestrequesttypedef)
+  - [ListPackageVersionsResultTypeDef](#listpackageversionsresulttypedef)
+  - [ListPackagesRequestRequestTypeDef](#listpackagesrequestrequesttypedef)
+  - [ListPackagesResultTypeDef](#listpackagesresulttypedef)
+  - [ListRepositoriesInDomainRequestRequestTypeDef](#listrepositoriesindomainrequestrequesttypedef)
+  - [ListRepositoriesInDomainResultTypeDef](#listrepositoriesindomainresulttypedef)
+  - [ListRepositoriesRequestRequestTypeDef](#listrepositoriesrequestrequesttypedef)
+  - [ListRepositoriesResultTypeDef](#listrepositoriesresulttypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
   - [PackageDependencyTypeDef](#packagedependencytypedef)
   - [PackageSummaryTypeDef](#packagesummarytypedef)
   - [PackageVersionDescriptionTypeDef](#packageversiondescriptiontypedef)
   - [PackageVersionErrorTypeDef](#packageversionerrortypedef)
   - [PackageVersionSummaryTypeDef](#packageversionsummarytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutDomainPermissionsPolicyRequestTypeDef](#putdomainpermissionspolicyrequesttypedef)
-  - [PutDomainPermissionsPolicyResultResponseTypeDef](#putdomainpermissionspolicyresultresponsetypedef)
-  - [PutRepositoryPermissionsPolicyRequestTypeDef](#putrepositorypermissionspolicyrequesttypedef)
-  - [PutRepositoryPermissionsPolicyResultResponseTypeDef](#putrepositorypermissionspolicyresultresponsetypedef)
+  - [PutDomainPermissionsPolicyRequestRequestTypeDef](#putdomainpermissionspolicyrequestrequesttypedef)
+  - [PutDomainPermissionsPolicyResultTypeDef](#putdomainpermissionspolicyresulttypedef)
+  - [PutRepositoryPermissionsPolicyRequestRequestTypeDef](#putrepositorypermissionspolicyrequestrequesttypedef)
+  - [PutRepositoryPermissionsPolicyResultTypeDef](#putrepositorypermissionspolicyresulttypedef)
   - [RepositoryDescriptionTypeDef](#repositorydescriptiontypedef)
   - [RepositoryExternalConnectionInfoTypeDef](#repositoryexternalconnectioninfotypedef)
   - [RepositorySummaryTypeDef](#repositorysummarytypedef)
   - [ResourcePolicyTypeDef](#resourcepolicytypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SuccessfulPackageVersionInfoTypeDef](#successfulpackageversioninfotypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdatePackageVersionsStatusRequestTypeDef](#updatepackageversionsstatusrequesttypedef)
-  - [UpdatePackageVersionsStatusResultResponseTypeDef](#updatepackageversionsstatusresultresponsetypedef)
-  - [UpdateRepositoryRequestTypeDef](#updaterepositoryrequesttypedef)
-  - [UpdateRepositoryResultResponseTypeDef](#updaterepositoryresultresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdatePackageVersionsStatusRequestRequestTypeDef](#updatepackageversionsstatusrequestrequesttypedef)
+  - [UpdatePackageVersionsStatusResultTypeDef](#updatepackageversionsstatusresulttypedef)
+  - [UpdateRepositoryRequestRequestTypeDef](#updaterepositoryrequestrequesttypedef)
+  - [UpdateRepositoryResultTypeDef](#updaterepositoryresulttypedef)
   - [UpstreamRepositoryInfoTypeDef](#upstreamrepositoryinfotypedef)
   - [UpstreamRepositoryTypeDef](#upstreamrepositorytypedef)
 
@@ -110,10 +110,10 @@ Optional fields:
 - `hashes`: `Dict`\[[HashAlgorithmType](./literals.md#hashalgorithmtype),
   `str`\]
 
-## AssociateExternalConnectionRequestTypeDef
+## AssociateExternalConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import AssociateExternalConnectionRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import AssociateExternalConnectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -126,10 +126,10 @@ Optional fields:
 
 - `domainOwner`: `str`
 
-## AssociateExternalConnectionResultResponseTypeDef
+## AssociateExternalConnectionResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import AssociateExternalConnectionResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import AssociateExternalConnectionResultTypeDef
 ```
 
 Required fields:
@@ -139,10 +139,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CopyPackageVersionsRequestTypeDef
+## CopyPackageVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import CopyPackageVersionsRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import CopyPackageVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -162,10 +162,10 @@ Optional fields:
 - `allowOverwrite`: `bool`
 - `includeFromUpstream`: `bool`
 
-## CopyPackageVersionsResultResponseTypeDef
+## CopyPackageVersionsResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import CopyPackageVersionsResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import CopyPackageVersionsResultTypeDef
 ```
 
 Required fields:
@@ -177,10 +177,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateDomainRequestTypeDef
+## CreateDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import CreateDomainRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import CreateDomainRequestRequestTypeDef
 ```
 
 Required fields:
@@ -192,10 +192,10 @@ Optional fields:
 - `encryptionKey`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateDomainResultResponseTypeDef
+## CreateDomainResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import CreateDomainResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import CreateDomainResultTypeDef
 ```
 
 Required fields:
@@ -204,10 +204,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRepositoryRequestTypeDef
+## CreateRepositoryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import CreateRepositoryRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import CreateRepositoryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -223,10 +223,10 @@ Optional fields:
   `List`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateRepositoryResultResponseTypeDef
+## CreateRepositoryResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import CreateRepositoryResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import CreateRepositoryResultTypeDef
 ```
 
 Required fields:
@@ -236,10 +236,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDomainPermissionsPolicyRequestTypeDef
+## DeleteDomainPermissionsPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DeleteDomainPermissionsPolicyRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import DeleteDomainPermissionsPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -251,10 +251,10 @@ Optional fields:
 - `domainOwner`: `str`
 - `policyRevision`: `str`
 
-## DeleteDomainPermissionsPolicyResultResponseTypeDef
+## DeleteDomainPermissionsPolicyResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DeleteDomainPermissionsPolicyResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import DeleteDomainPermissionsPolicyResultTypeDef
 ```
 
 Required fields:
@@ -263,10 +263,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteDomainRequestTypeDef
+## DeleteDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DeleteDomainRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import DeleteDomainRequestRequestTypeDef
 ```
 
 Required fields:
@@ -277,10 +277,10 @@ Optional fields:
 
 - `domainOwner`: `str`
 
-## DeleteDomainResultResponseTypeDef
+## DeleteDomainResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DeleteDomainResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import DeleteDomainResultTypeDef
 ```
 
 Required fields:
@@ -289,10 +289,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeletePackageVersionsRequestTypeDef
+## DeletePackageVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DeletePackageVersionsRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import DeletePackageVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -310,10 +310,10 @@ Optional fields:
 - `expectedStatus`:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
-## DeletePackageVersionsResultResponseTypeDef
+## DeletePackageVersionsResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DeletePackageVersionsResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import DeletePackageVersionsResultTypeDef
 ```
 
 Required fields:
@@ -325,10 +325,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRepositoryPermissionsPolicyRequestTypeDef
+## DeleteRepositoryPermissionsPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DeleteRepositoryPermissionsPolicyRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import DeleteRepositoryPermissionsPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -341,10 +341,10 @@ Optional fields:
 - `domainOwner`: `str`
 - `policyRevision`: `str`
 
-## DeleteRepositoryPermissionsPolicyResultResponseTypeDef
+## DeleteRepositoryPermissionsPolicyResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DeleteRepositoryPermissionsPolicyResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import DeleteRepositoryPermissionsPolicyResultTypeDef
 ```
 
 Required fields:
@@ -353,10 +353,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteRepositoryRequestTypeDef
+## DeleteRepositoryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DeleteRepositoryRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import DeleteRepositoryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -368,10 +368,10 @@ Optional fields:
 
 - `domainOwner`: `str`
 
-## DeleteRepositoryResultResponseTypeDef
+## DeleteRepositoryResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DeleteRepositoryResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import DeleteRepositoryResultTypeDef
 ```
 
 Required fields:
@@ -381,10 +381,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeDomainRequestTypeDef
+## DescribeDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DescribeDomainRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import DescribeDomainRequestRequestTypeDef
 ```
 
 Required fields:
@@ -395,10 +395,10 @@ Optional fields:
 
 - `domainOwner`: `str`
 
-## DescribeDomainResultResponseTypeDef
+## DescribeDomainResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DescribeDomainResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import DescribeDomainResultTypeDef
 ```
 
 Required fields:
@@ -407,10 +407,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribePackageVersionRequestTypeDef
+## DescribePackageVersionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DescribePackageVersionRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import DescribePackageVersionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -426,10 +426,10 @@ Optional fields:
 - `domainOwner`: `str`
 - `namespace`: `str`
 
-## DescribePackageVersionResultResponseTypeDef
+## DescribePackageVersionResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DescribePackageVersionResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import DescribePackageVersionResultTypeDef
 ```
 
 Required fields:
@@ -439,10 +439,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRepositoryRequestTypeDef
+## DescribeRepositoryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DescribeRepositoryRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import DescribeRepositoryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -454,10 +454,10 @@ Optional fields:
 
 - `domainOwner`: `str`
 
-## DescribeRepositoryResultResponseTypeDef
+## DescribeRepositoryResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DescribeRepositoryResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import DescribeRepositoryResultTypeDef
 ```
 
 Required fields:
@@ -467,10 +467,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateExternalConnectionRequestTypeDef
+## DisassociateExternalConnectionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DisassociateExternalConnectionRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import DisassociateExternalConnectionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -483,10 +483,10 @@ Optional fields:
 
 - `domainOwner`: `str`
 
-## DisassociateExternalConnectionResultResponseTypeDef
+## DisassociateExternalConnectionResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DisassociateExternalConnectionResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import DisassociateExternalConnectionResultTypeDef
 ```
 
 Required fields:
@@ -496,10 +496,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisposePackageVersionsRequestTypeDef
+## DisposePackageVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DisposePackageVersionsRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import DisposePackageVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -518,10 +518,10 @@ Optional fields:
 - `expectedStatus`:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
-## DisposePackageVersionsResultResponseTypeDef
+## DisposePackageVersionsResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import DisposePackageVersionsResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import DisposePackageVersionsResultTypeDef
 ```
 
 Required fields:
@@ -566,10 +566,10 @@ Optional fields:
 - `createdTime`: `datetime`
 - `encryptionKey`: `str`
 
-## GetAuthorizationTokenRequestTypeDef
+## GetAuthorizationTokenRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import GetAuthorizationTokenRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import GetAuthorizationTokenRequestRequestTypeDef
 ```
 
 Required fields:
@@ -581,10 +581,10 @@ Optional fields:
 - `domainOwner`: `str`
 - `durationSeconds`: `int`
 
-## GetAuthorizationTokenResultResponseTypeDef
+## GetAuthorizationTokenResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import GetAuthorizationTokenResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import GetAuthorizationTokenResultTypeDef
 ```
 
 Required fields:
@@ -594,10 +594,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetDomainPermissionsPolicyRequestTypeDef
+## GetDomainPermissionsPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import GetDomainPermissionsPolicyRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import GetDomainPermissionsPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -608,10 +608,10 @@ Optional fields:
 
 - `domainOwner`: `str`
 
-## GetDomainPermissionsPolicyResultResponseTypeDef
+## GetDomainPermissionsPolicyResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import GetDomainPermissionsPolicyResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import GetDomainPermissionsPolicyResultTypeDef
 ```
 
 Required fields:
@@ -620,10 +620,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPackageVersionAssetRequestTypeDef
+## GetPackageVersionAssetRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import GetPackageVersionAssetRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import GetPackageVersionAssetRequestRequestTypeDef
 ```
 
 Required fields:
@@ -641,10 +641,10 @@ Optional fields:
 - `namespace`: `str`
 - `packageVersionRevision`: `str`
 
-## GetPackageVersionAssetResultResponseTypeDef
+## GetPackageVersionAssetResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import GetPackageVersionAssetResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import GetPackageVersionAssetResultTypeDef
 ```
 
 Required fields:
@@ -656,10 +656,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPackageVersionReadmeRequestTypeDef
+## GetPackageVersionReadmeRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import GetPackageVersionReadmeRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import GetPackageVersionReadmeRequestRequestTypeDef
 ```
 
 Required fields:
@@ -675,10 +675,10 @@ Optional fields:
 - `domainOwner`: `str`
 - `namespace`: `str`
 
-## GetPackageVersionReadmeResultResponseTypeDef
+## GetPackageVersionReadmeResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import GetPackageVersionReadmeResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import GetPackageVersionReadmeResultTypeDef
 ```
 
 Required fields:
@@ -692,10 +692,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRepositoryEndpointRequestTypeDef
+## GetRepositoryEndpointRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import GetRepositoryEndpointRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import GetRepositoryEndpointRequestRequestTypeDef
 ```
 
 Required fields:
@@ -708,10 +708,10 @@ Optional fields:
 
 - `domainOwner`: `str`
 
-## GetRepositoryEndpointResultResponseTypeDef
+## GetRepositoryEndpointResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import GetRepositoryEndpointResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import GetRepositoryEndpointResultTypeDef
 ```
 
 Required fields:
@@ -720,10 +720,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetRepositoryPermissionsPolicyRequestTypeDef
+## GetRepositoryPermissionsPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import GetRepositoryPermissionsPolicyRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import GetRepositoryPermissionsPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -735,10 +735,10 @@ Optional fields:
 
 - `domainOwner`: `str`
 
-## GetRepositoryPermissionsPolicyResultResponseTypeDef
+## GetRepositoryPermissionsPolicyResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import GetRepositoryPermissionsPolicyResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import GetRepositoryPermissionsPolicyResultTypeDef
 ```
 
 Required fields:
@@ -758,10 +758,10 @@ Optional fields:
 - `name`: `str`
 - `url`: `str`
 
-## ListDomainsRequestTypeDef
+## ListDomainsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListDomainsRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import ListDomainsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -769,10 +769,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListDomainsResultResponseTypeDef
+## ListDomainsResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListDomainsResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import ListDomainsResultTypeDef
 ```
 
 Required fields:
@@ -783,10 +783,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPackageVersionAssetsRequestTypeDef
+## ListPackageVersionAssetsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListPackageVersionAssetsRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import ListPackageVersionAssetsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -804,10 +804,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListPackageVersionAssetsResultResponseTypeDef
+## ListPackageVersionAssetsResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListPackageVersionAssetsResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import ListPackageVersionAssetsResultTypeDef
 ```
 
 Required fields:
@@ -822,10 +822,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPackageVersionDependenciesRequestTypeDef
+## ListPackageVersionDependenciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListPackageVersionDependenciesRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import ListPackageVersionDependenciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -842,10 +842,10 @@ Optional fields:
 - `namespace`: `str`
 - `nextToken`: `str`
 
-## ListPackageVersionDependenciesResultResponseTypeDef
+## ListPackageVersionDependenciesResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListPackageVersionDependenciesResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import ListPackageVersionDependenciesResultTypeDef
 ```
 
 Required fields:
@@ -861,10 +861,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPackageVersionsRequestTypeDef
+## ListPackageVersionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListPackageVersionsRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import ListPackageVersionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -884,10 +884,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListPackageVersionsResultResponseTypeDef
+## ListPackageVersionsResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListPackageVersionsResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import ListPackageVersionsResultTypeDef
 ```
 
 Required fields:
@@ -902,10 +902,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPackagesRequestTypeDef
+## ListPackagesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListPackagesRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import ListPackagesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -922,10 +922,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListPackagesResultResponseTypeDef
+## ListPackagesResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListPackagesResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import ListPackagesResultTypeDef
 ```
 
 Required fields:
@@ -936,10 +936,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRepositoriesInDomainRequestTypeDef
+## ListRepositoriesInDomainRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListRepositoriesInDomainRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import ListRepositoriesInDomainRequestRequestTypeDef
 ```
 
 Required fields:
@@ -954,10 +954,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListRepositoriesInDomainResultResponseTypeDef
+## ListRepositoriesInDomainResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListRepositoriesInDomainResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import ListRepositoriesInDomainResultTypeDef
 ```
 
 Required fields:
@@ -968,10 +968,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListRepositoriesRequestTypeDef
+## ListRepositoriesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListRepositoriesRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import ListRepositoriesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -980,10 +980,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListRepositoriesResultResponseTypeDef
+## ListRepositoriesResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListRepositoriesResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import ListRepositoriesResultTypeDef
 ```
 
 Required fields:
@@ -994,20 +994,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceArn`: `str`
 
-## ListTagsForResourceResultResponseTypeDef
+## ListTagsForResourceResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import ListTagsForResourceResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import ListTagsForResourceResultTypeDef
 ```
 
 Required fields:
@@ -1101,10 +1101,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## PutDomainPermissionsPolicyRequestTypeDef
+## PutDomainPermissionsPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import PutDomainPermissionsPolicyRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import PutDomainPermissionsPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1117,10 +1117,10 @@ Optional fields:
 - `domainOwner`: `str`
 - `policyRevision`: `str`
 
-## PutDomainPermissionsPolicyResultResponseTypeDef
+## PutDomainPermissionsPolicyResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import PutDomainPermissionsPolicyResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import PutDomainPermissionsPolicyResultTypeDef
 ```
 
 Required fields:
@@ -1129,10 +1129,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PutRepositoryPermissionsPolicyRequestTypeDef
+## PutRepositoryPermissionsPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import PutRepositoryPermissionsPolicyRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import PutRepositoryPermissionsPolicyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1146,10 +1146,10 @@ Optional fields:
 - `domainOwner`: `str`
 - `policyRevision`: `str`
 
-## PutRepositoryPermissionsPolicyResultResponseTypeDef
+## PutRepositoryPermissionsPolicyResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import PutRepositoryPermissionsPolicyResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import PutRepositoryPermissionsPolicyResultTypeDef
 ```
 
 Required fields:
@@ -1242,10 +1242,10 @@ Optional fields:
 - `revision`: `str`
 - `status`: [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1264,10 +1264,10 @@ Required fields:
 - `key`: `str`
 - `value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1275,10 +1275,10 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdatePackageVersionsStatusRequestTypeDef
+## UpdatePackageVersionsStatusRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import UpdatePackageVersionsStatusRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import UpdatePackageVersionsStatusRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1299,10 +1299,10 @@ Optional fields:
 - `expectedStatus`:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
-## UpdatePackageVersionsStatusResultResponseTypeDef
+## UpdatePackageVersionsStatusResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import UpdatePackageVersionsStatusResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import UpdatePackageVersionsStatusResultTypeDef
 ```
 
 Required fields:
@@ -1314,10 +1314,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateRepositoryRequestTypeDef
+## UpdateRepositoryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import UpdateRepositoryRequestTypeDef
+from mypy_boto3_codeartifact.type_defs import UpdateRepositoryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -1332,10 +1332,10 @@ Optional fields:
 - `upstreams`:
   `List`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
 
-## UpdateRepositoryResultResponseTypeDef
+## UpdateRepositoryResultTypeDef
 
 ```python
-from mypy_boto3_codeartifact.type_defs import UpdateRepositoryResultResponseTypeDef
+from mypy_boto3_codeartifact.type_defs import UpdateRepositoryResultTypeDef
 ```
 
 Required fields:

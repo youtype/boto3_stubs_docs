@@ -485,8 +485,7 @@ Keyword-only arguments:
 
 - `range`: `str`
 
-Returns
-[GetJobOutputOutputResponseTypeDef](./type_defs.md#getjoboutputoutputresponsetypedef).
+Returns [GetJobOutputOutputTypeDef](./type_defs.md#getjoboutputoutputtypedef).
 
 #### Job.load method
 
@@ -577,7 +576,7 @@ Keyword-only arguments:
 - `checksum`: `str`
 
 Returns
-[ArchiveCreationOutputResponseTypeDef](./type_defs.md#archivecreationoutputresponsetypedef).
+[ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef).
 
 #### MultipartUpload.get_available_subresources method
 
@@ -609,8 +608,7 @@ Keyword-only arguments:
 - `marker`: `str`
 - `limit`: `str`
 
-Returns
-[ListPartsOutputResponseTypeDef](./type_defs.md#listpartsoutputresponsetypedef).
+Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
 
 #### MultipartUpload.upload_part method
 
@@ -631,7 +629,7 @@ Keyword-only arguments:
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
-[UploadMultipartPartOutputResponseTypeDef](./type_defs.md#uploadmultipartpartoutputresponsetypedef).
+[UploadMultipartPartOutputTypeDef](./type_defs.md#uploadmultipartpartoutputtypedef).
 
 ## Notification
 
@@ -995,8 +993,7 @@ Type annotations for `boto3.resource("glacier").create` method.
 Boto3 documentation:
 [Glacier.Vault.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.create)
 
-Returns
-[CreateVaultOutputResponseTypeDef](./type_defs.md#createvaultoutputresponsetypedef).
+Returns [CreateVaultOutputTypeDef](./type_defs.md#createvaultoutputtypedef).
 
 #### Vault.delete method
 

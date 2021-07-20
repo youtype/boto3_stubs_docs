@@ -8,24 +8,24 @@ type annotations stubs module
 [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 - [Typed dictionaries for boto3 Transfer module](#typed-dictionaries-for-boto3-transfer-module)
-  - [CreateAccessRequestTypeDef](#createaccessrequesttypedef)
-  - [CreateAccessResponseResponseTypeDef](#createaccessresponseresponsetypedef)
-  - [CreateServerRequestTypeDef](#createserverrequesttypedef)
-  - [CreateServerResponseResponseTypeDef](#createserverresponseresponsetypedef)
-  - [CreateUserRequestTypeDef](#createuserrequesttypedef)
-  - [CreateUserResponseResponseTypeDef](#createuserresponseresponsetypedef)
-  - [DeleteAccessRequestTypeDef](#deleteaccessrequesttypedef)
-  - [DeleteServerRequestTypeDef](#deleteserverrequesttypedef)
-  - [DeleteSshPublicKeyRequestTypeDef](#deletesshpublickeyrequesttypedef)
-  - [DeleteUserRequestTypeDef](#deleteuserrequesttypedef)
-  - [DescribeAccessRequestTypeDef](#describeaccessrequesttypedef)
-  - [DescribeAccessResponseResponseTypeDef](#describeaccessresponseresponsetypedef)
-  - [DescribeSecurityPolicyRequestTypeDef](#describesecuritypolicyrequesttypedef)
-  - [DescribeSecurityPolicyResponseResponseTypeDef](#describesecuritypolicyresponseresponsetypedef)
-  - [DescribeServerRequestTypeDef](#describeserverrequesttypedef)
-  - [DescribeServerResponseResponseTypeDef](#describeserverresponseresponsetypedef)
-  - [DescribeUserRequestTypeDef](#describeuserrequesttypedef)
-  - [DescribeUserResponseResponseTypeDef](#describeuserresponseresponsetypedef)
+  - [CreateAccessRequestRequestTypeDef](#createaccessrequestrequesttypedef)
+  - [CreateAccessResponseTypeDef](#createaccessresponsetypedef)
+  - [CreateServerRequestRequestTypeDef](#createserverrequestrequesttypedef)
+  - [CreateServerResponseTypeDef](#createserverresponsetypedef)
+  - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
+  - [CreateUserResponseTypeDef](#createuserresponsetypedef)
+  - [DeleteAccessRequestRequestTypeDef](#deleteaccessrequestrequesttypedef)
+  - [DeleteServerRequestRequestTypeDef](#deleteserverrequestrequesttypedef)
+  - [DeleteSshPublicKeyRequestRequestTypeDef](#deletesshpublickeyrequestrequesttypedef)
+  - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
+  - [DescribeAccessRequestRequestTypeDef](#describeaccessrequestrequesttypedef)
+  - [DescribeAccessResponseTypeDef](#describeaccessresponsetypedef)
+  - [DescribeSecurityPolicyRequestRequestTypeDef](#describesecuritypolicyrequestrequesttypedef)
+  - [DescribeSecurityPolicyResponseTypeDef](#describesecuritypolicyresponsetypedef)
+  - [DescribeServerRequestRequestTypeDef](#describeserverrequestrequesttypedef)
+  - [DescribeServerResponseTypeDef](#describeserverresponsetypedef)
+  - [DescribeUserRequestRequestTypeDef](#describeuserrequestrequesttypedef)
+  - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
   - [DescribedAccessTypeDef](#describedaccesstypedef)
   - [DescribedSecurityPolicyTypeDef](#describedsecuritypolicytypedef)
   - [DescribedServerTypeDef](#describedservertypedef)
@@ -33,18 +33,18 @@ type annotations stubs module
   - [EndpointDetailsTypeDef](#endpointdetailstypedef)
   - [HomeDirectoryMapEntryTypeDef](#homedirectorymapentrytypedef)
   - [IdentityProviderDetailsTypeDef](#identityproviderdetailstypedef)
-  - [ImportSshPublicKeyRequestTypeDef](#importsshpublickeyrequesttypedef)
-  - [ImportSshPublicKeyResponseResponseTypeDef](#importsshpublickeyresponseresponsetypedef)
-  - [ListAccessesRequestTypeDef](#listaccessesrequesttypedef)
-  - [ListAccessesResponseResponseTypeDef](#listaccessesresponseresponsetypedef)
-  - [ListSecurityPoliciesRequestTypeDef](#listsecuritypoliciesrequesttypedef)
-  - [ListSecurityPoliciesResponseResponseTypeDef](#listsecuritypoliciesresponseresponsetypedef)
-  - [ListServersRequestTypeDef](#listserversrequesttypedef)
-  - [ListServersResponseResponseTypeDef](#listserversresponseresponsetypedef)
-  - [ListTagsForResourceRequestTypeDef](#listtagsforresourcerequesttypedef)
-  - [ListTagsForResourceResponseResponseTypeDef](#listtagsforresourceresponseresponsetypedef)
-  - [ListUsersRequestTypeDef](#listusersrequesttypedef)
-  - [ListUsersResponseResponseTypeDef](#listusersresponseresponsetypedef)
+  - [ImportSshPublicKeyRequestRequestTypeDef](#importsshpublickeyrequestrequesttypedef)
+  - [ImportSshPublicKeyResponseTypeDef](#importsshpublickeyresponsetypedef)
+  - [ListAccessesRequestRequestTypeDef](#listaccessesrequestrequesttypedef)
+  - [ListAccessesResponseTypeDef](#listaccessesresponsetypedef)
+  - [ListSecurityPoliciesRequestRequestTypeDef](#listsecuritypoliciesrequestrequesttypedef)
+  - [ListSecurityPoliciesResponseTypeDef](#listsecuritypoliciesresponsetypedef)
+  - [ListServersRequestRequestTypeDef](#listserversrequestrequesttypedef)
+  - [ListServersResponseTypeDef](#listserversresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
+  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
   - [ListedAccessTypeDef](#listedaccesstypedef)
   - [ListedServerTypeDef](#listedservertypedef)
   - [ListedUserTypeDef](#listedusertypedef)
@@ -53,24 +53,24 @@ type annotations stubs module
   - [ProtocolDetailsTypeDef](#protocoldetailstypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SshPublicKeyTypeDef](#sshpublickeytypedef)
-  - [StartServerRequestTypeDef](#startserverrequesttypedef)
-  - [StopServerRequestTypeDef](#stopserverrequesttypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [StartServerRequestRequestTypeDef](#startserverrequestrequesttypedef)
+  - [StopServerRequestRequestTypeDef](#stopserverrequestrequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [TestIdentityProviderRequestTypeDef](#testidentityproviderrequesttypedef)
-  - [TestIdentityProviderResponseResponseTypeDef](#testidentityproviderresponseresponsetypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateAccessRequestTypeDef](#updateaccessrequesttypedef)
-  - [UpdateAccessResponseResponseTypeDef](#updateaccessresponseresponsetypedef)
-  - [UpdateServerRequestTypeDef](#updateserverrequesttypedef)
-  - [UpdateServerResponseResponseTypeDef](#updateserverresponseresponsetypedef)
-  - [UpdateUserRequestTypeDef](#updateuserrequesttypedef)
-  - [UpdateUserResponseResponseTypeDef](#updateuserresponseresponsetypedef)
+  - [TestIdentityProviderRequestRequestTypeDef](#testidentityproviderrequestrequesttypedef)
+  - [TestIdentityProviderResponseTypeDef](#testidentityproviderresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAccessRequestRequestTypeDef](#updateaccessrequestrequesttypedef)
+  - [UpdateAccessResponseTypeDef](#updateaccessresponsetypedef)
+  - [UpdateServerRequestRequestTypeDef](#updateserverrequestrequesttypedef)
+  - [UpdateServerResponseTypeDef](#updateserverresponsetypedef)
+  - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
+  - [UpdateUserResponseTypeDef](#updateuserresponsetypedef)
 
-## CreateAccessRequestTypeDef
+## CreateAccessRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import CreateAccessRequestTypeDef
+from mypy_boto3_transfer.type_defs import CreateAccessRequestRequestTypeDef
 ```
 
 Required fields:
@@ -89,10 +89,10 @@ Optional fields:
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 
-## CreateAccessResponseResponseTypeDef
+## CreateAccessResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import CreateAccessResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import CreateAccessResponseTypeDef
 ```
 
 Required fields:
@@ -102,10 +102,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateServerRequestTypeDef
+## CreateServerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import CreateServerRequestTypeDef
+from mypy_boto3_transfer.type_defs import CreateServerRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -125,10 +125,10 @@ Optional fields:
 - `SecurityPolicyName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateServerResponseResponseTypeDef
+## CreateServerResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import CreateServerResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import CreateServerResponseTypeDef
 ```
 
 Required fields:
@@ -137,10 +137,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateUserRequestTypeDef
+## CreateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import CreateUserRequestTypeDef
+from mypy_boto3_transfer.type_defs import CreateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -161,10 +161,10 @@ Optional fields:
 - `SshPublicKeyBody`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateUserResponseResponseTypeDef
+## CreateUserResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import CreateUserResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import CreateUserResponseTypeDef
 ```
 
 Required fields:
@@ -174,10 +174,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteAccessRequestTypeDef
+## DeleteAccessRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import DeleteAccessRequestTypeDef
+from mypy_boto3_transfer.type_defs import DeleteAccessRequestRequestTypeDef
 ```
 
 Required fields:
@@ -185,20 +185,20 @@ Required fields:
 - `ServerId`: `str`
 - `ExternalId`: `str`
 
-## DeleteServerRequestTypeDef
+## DeleteServerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import DeleteServerRequestTypeDef
+from mypy_boto3_transfer.type_defs import DeleteServerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ServerId`: `str`
 
-## DeleteSshPublicKeyRequestTypeDef
+## DeleteSshPublicKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import DeleteSshPublicKeyRequestTypeDef
+from mypy_boto3_transfer.type_defs import DeleteSshPublicKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -207,10 +207,10 @@ Required fields:
 - `SshPublicKeyId`: `str`
 - `UserName`: `str`
 
-## DeleteUserRequestTypeDef
+## DeleteUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import DeleteUserRequestTypeDef
+from mypy_boto3_transfer.type_defs import DeleteUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -218,10 +218,10 @@ Required fields:
 - `ServerId`: `str`
 - `UserName`: `str`
 
-## DescribeAccessRequestTypeDef
+## DescribeAccessRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import DescribeAccessRequestTypeDef
+from mypy_boto3_transfer.type_defs import DescribeAccessRequestRequestTypeDef
 ```
 
 Required fields:
@@ -229,10 +229,10 @@ Required fields:
 - `ServerId`: `str`
 - `ExternalId`: `str`
 
-## DescribeAccessResponseResponseTypeDef
+## DescribeAccessResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import DescribeAccessResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import DescribeAccessResponseTypeDef
 ```
 
 Required fields:
@@ -242,20 +242,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSecurityPolicyRequestTypeDef
+## DescribeSecurityPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import DescribeSecurityPolicyRequestTypeDef
+from mypy_boto3_transfer.type_defs import DescribeSecurityPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `SecurityPolicyName`: `str`
 
-## DescribeSecurityPolicyResponseResponseTypeDef
+## DescribeSecurityPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import DescribeSecurityPolicyResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import DescribeSecurityPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -265,20 +265,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeServerRequestTypeDef
+## DescribeServerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import DescribeServerRequestTypeDef
+from mypy_boto3_transfer.type_defs import DescribeServerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ServerId`: `str`
 
-## DescribeServerResponseResponseTypeDef
+## DescribeServerResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import DescribeServerResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import DescribeServerResponseTypeDef
 ```
 
 Required fields:
@@ -287,10 +287,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeUserRequestTypeDef
+## DescribeUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import DescribeUserRequestTypeDef
+from mypy_boto3_transfer.type_defs import DescribeUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -298,10 +298,10 @@ Required fields:
 - `ServerId`: `str`
 - `UserName`: `str`
 
-## DescribeUserResponseResponseTypeDef
+## DescribeUserResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import DescribeUserResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import DescribeUserResponseTypeDef
 ```
 
 Required fields:
@@ -441,10 +441,10 @@ Optional fields:
 - `InvocationRole`: `str`
 - `DirectoryId`: `str`
 
-## ImportSshPublicKeyRequestTypeDef
+## ImportSshPublicKeyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import ImportSshPublicKeyRequestTypeDef
+from mypy_boto3_transfer.type_defs import ImportSshPublicKeyRequestRequestTypeDef
 ```
 
 Required fields:
@@ -453,10 +453,10 @@ Required fields:
 - `SshPublicKeyBody`: `str`
 - `UserName`: `str`
 
-## ImportSshPublicKeyResponseResponseTypeDef
+## ImportSshPublicKeyResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import ImportSshPublicKeyResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import ImportSshPublicKeyResponseTypeDef
 ```
 
 Required fields:
@@ -467,10 +467,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListAccessesRequestTypeDef
+## ListAccessesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import ListAccessesRequestTypeDef
+from mypy_boto3_transfer.type_defs import ListAccessesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -482,10 +482,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListAccessesResponseResponseTypeDef
+## ListAccessesResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import ListAccessesResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import ListAccessesResponseTypeDef
 ```
 
 Required fields:
@@ -497,10 +497,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListSecurityPoliciesRequestTypeDef
+## ListSecurityPoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import ListSecurityPoliciesRequestTypeDef
+from mypy_boto3_transfer.type_defs import ListSecurityPoliciesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -508,10 +508,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListSecurityPoliciesResponseResponseTypeDef
+## ListSecurityPoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import ListSecurityPoliciesResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import ListSecurityPoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -521,10 +521,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListServersRequestTypeDef
+## ListServersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import ListServersRequestTypeDef
+from mypy_boto3_transfer.type_defs import ListServersRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -532,10 +532,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListServersResponseResponseTypeDef
+## ListServersResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import ListServersResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import ListServersResponseTypeDef
 ```
 
 Required fields:
@@ -546,10 +546,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListTagsForResourceRequestTypeDef
+## ListTagsForResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import ListTagsForResourceRequestTypeDef
+from mypy_boto3_transfer.type_defs import ListTagsForResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -561,10 +561,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListTagsForResourceResponseResponseTypeDef
+## ListTagsForResourceResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import ListTagsForResourceResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import ListTagsForResourceResponseTypeDef
 ```
 
 Required fields:
@@ -575,10 +575,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListUsersRequestTypeDef
+## ListUsersRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import ListUsersRequestTypeDef
+from mypy_boto3_transfer.type_defs import ListUsersRequestRequestTypeDef
 ```
 
 Required fields:
@@ -590,10 +590,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListUsersResponseResponseTypeDef
+## ListUsersResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import ListUsersResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import ListUsersResponseTypeDef
 ```
 
 Required fields:
@@ -721,30 +721,30 @@ Required fields:
 - `SshPublicKeyBody`: `str`
 - `SshPublicKeyId`: `str`
 
-## StartServerRequestTypeDef
+## StartServerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import StartServerRequestTypeDef
+from mypy_boto3_transfer.type_defs import StartServerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ServerId`: `str`
 
-## StopServerRequestTypeDef
+## StopServerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import StopServerRequestTypeDef
+from mypy_boto3_transfer.type_defs import StopServerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ServerId`: `str`
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_transfer.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -763,10 +763,10 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
-## TestIdentityProviderRequestTypeDef
+## TestIdentityProviderRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import TestIdentityProviderRequestTypeDef
+from mypy_boto3_transfer.type_defs import TestIdentityProviderRequestRequestTypeDef
 ```
 
 Required fields:
@@ -780,10 +780,10 @@ Optional fields:
 - `SourceIp`: `str`
 - `UserPassword`: `str`
 
-## TestIdentityProviderResponseResponseTypeDef
+## TestIdentityProviderResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import TestIdentityProviderResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import TestIdentityProviderResponseTypeDef
 ```
 
 Required fields:
@@ -795,10 +795,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_transfer.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -806,10 +806,10 @@ Required fields:
 - `Arn`: `str`
 - `TagKeys`: `List`\[`str`\]
 
-## UpdateAccessRequestTypeDef
+## UpdateAccessRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import UpdateAccessRequestTypeDef
+from mypy_boto3_transfer.type_defs import UpdateAccessRequestRequestTypeDef
 ```
 
 Required fields:
@@ -828,10 +828,10 @@ Optional fields:
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`
 
-## UpdateAccessResponseResponseTypeDef
+## UpdateAccessResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import UpdateAccessResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import UpdateAccessResponseTypeDef
 ```
 
 Required fields:
@@ -841,10 +841,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateServerRequestTypeDef
+## UpdateServerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import UpdateServerRequestTypeDef
+from mypy_boto3_transfer.type_defs import UpdateServerRequestRequestTypeDef
 ```
 
 Required fields:
@@ -866,10 +866,10 @@ Optional fields:
 - `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
 
-## UpdateServerResponseResponseTypeDef
+## UpdateServerResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import UpdateServerResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import UpdateServerResponseTypeDef
 ```
 
 Required fields:
@@ -878,10 +878,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## UpdateUserRequestTypeDef
+## UpdateUserRequestRequestTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import UpdateUserRequestTypeDef
+from mypy_boto3_transfer.type_defs import UpdateUserRequestRequestTypeDef
 ```
 
 Required fields:
@@ -900,10 +900,10 @@ Optional fields:
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`
 
-## UpdateUserResponseResponseTypeDef
+## UpdateUserResponseTypeDef
 
 ```python
-from mypy_boto3_transfer.type_defs import UpdateUserResponseResponseTypeDef
+from mypy_boto3_transfer.type_defs import UpdateUserResponseTypeDef
 ```
 
 Required fields:

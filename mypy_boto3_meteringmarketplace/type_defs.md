@@ -8,24 +8,24 @@ type annotations stubs module
 [mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 
 - [Typed dictionaries for boto3 MarketplaceMetering module](#typed-dictionaries-for-boto3-marketplacemetering-module)
-  - [BatchMeterUsageRequestTypeDef](#batchmeterusagerequesttypedef)
-  - [BatchMeterUsageResultResponseTypeDef](#batchmeterusageresultresponsetypedef)
-  - [MeterUsageRequestTypeDef](#meterusagerequesttypedef)
-  - [MeterUsageResultResponseTypeDef](#meterusageresultresponsetypedef)
-  - [RegisterUsageRequestTypeDef](#registerusagerequesttypedef)
-  - [RegisterUsageResultResponseTypeDef](#registerusageresultresponsetypedef)
-  - [ResolveCustomerRequestTypeDef](#resolvecustomerrequesttypedef)
-  - [ResolveCustomerResultResponseTypeDef](#resolvecustomerresultresponsetypedef)
+  - [BatchMeterUsageRequestRequestTypeDef](#batchmeterusagerequestrequesttypedef)
+  - [BatchMeterUsageResultTypeDef](#batchmeterusageresulttypedef)
+  - [MeterUsageRequestRequestTypeDef](#meterusagerequestrequesttypedef)
+  - [MeterUsageResultTypeDef](#meterusageresulttypedef)
+  - [RegisterUsageRequestRequestTypeDef](#registerusagerequestrequesttypedef)
+  - [RegisterUsageResultTypeDef](#registerusageresulttypedef)
+  - [ResolveCustomerRequestRequestTypeDef](#resolvecustomerrequestrequesttypedef)
+  - [ResolveCustomerResultTypeDef](#resolvecustomerresulttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagTypeDef](#tagtypedef)
   - [UsageAllocationTypeDef](#usageallocationtypedef)
   - [UsageRecordResultTypeDef](#usagerecordresulttypedef)
   - [UsageRecordTypeDef](#usagerecordtypedef)
 
-## BatchMeterUsageRequestTypeDef
+## BatchMeterUsageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageRequestTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -34,10 +34,10 @@ Required fields:
   `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
 - `ProductCode`: `str`
 
-## BatchMeterUsageResultResponseTypeDef
+## BatchMeterUsageResultTypeDef
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageResultResponseTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageResultTypeDef
 ```
 
 Required fields:
@@ -49,10 +49,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## MeterUsageRequestTypeDef
+## MeterUsageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import MeterUsageRequestTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import MeterUsageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -68,10 +68,10 @@ Optional fields:
 - `UsageAllocations`:
   `List`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
 
-## MeterUsageResultResponseTypeDef
+## MeterUsageResultTypeDef
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import MeterUsageResultResponseTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import MeterUsageResultTypeDef
 ```
 
 Required fields:
@@ -80,10 +80,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RegisterUsageRequestTypeDef
+## RegisterUsageRequestRequestTypeDef
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import RegisterUsageRequestTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import RegisterUsageRequestRequestTypeDef
 ```
 
 Required fields:
@@ -95,10 +95,10 @@ Optional fields:
 
 - `Nonce`: `str`
 
-## RegisterUsageResultResponseTypeDef
+## RegisterUsageResultTypeDef
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import RegisterUsageResultResponseTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import RegisterUsageResultTypeDef
 ```
 
 Required fields:
@@ -108,20 +108,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ResolveCustomerRequestTypeDef
+## ResolveCustomerRequestRequestTypeDef
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import ResolveCustomerRequestTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import ResolveCustomerRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `RegistrationToken`: `str`
 
-## ResolveCustomerResultResponseTypeDef
+## ResolveCustomerResultTypeDef
 
 ```python
-from mypy_boto3_meteringmarketplace.type_defs import ResolveCustomerResultResponseTypeDef
+from mypy_boto3_meteringmarketplace.type_defs import ResolveCustomerResultTypeDef
 ```
 
 Required fields:

@@ -8,35 +8,35 @@ type annotations stubs module
 [mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 - [Typed dictionaries for boto3 TimestreamQuery module](#typed-dictionaries-for-boto3-timestreamquery-module)
-  - [CancelQueryRequestTypeDef](#cancelqueryrequesttypedef)
-  - [CancelQueryResponseResponseTypeDef](#cancelqueryresponseresponsetypedef)
+  - [CancelQueryRequestRequestTypeDef](#cancelqueryrequestrequesttypedef)
+  - [CancelQueryResponseTypeDef](#cancelqueryresponsetypedef)
   - [ColumnInfoTypeDef](#columninfotypedef)
   - [DatumTypeDef](#datumtypedef)
-  - [DescribeEndpointsResponseResponseTypeDef](#describeendpointsresponseresponsetypedef)
+  - [DescribeEndpointsResponseTypeDef](#describeendpointsresponsetypedef)
   - [EndpointTypeDef](#endpointtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [QueryRequestTypeDef](#queryrequesttypedef)
-  - [QueryResponseResponseTypeDef](#queryresponseresponsetypedef)
+  - [QueryRequestRequestTypeDef](#queryrequestrequesttypedef)
+  - [QueryResponseTypeDef](#queryresponsetypedef)
   - [QueryStatusTypeDef](#querystatustypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RowTypeDef](#rowtypedef)
   - [TimeSeriesDataPointTypeDef](#timeseriesdatapointtypedef)
   - [TypeTypeDef](#typetypedef)
 
-## CancelQueryRequestTypeDef
+## CancelQueryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_query.type_defs import CancelQueryRequestTypeDef
+from mypy_boto3_timestream_query.type_defs import CancelQueryRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `QueryId`: `str`
 
-## CancelQueryResponseResponseTypeDef
+## CancelQueryResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_query.type_defs import CancelQueryResponseResponseTypeDef
+from mypy_boto3_timestream_query.type_defs import CancelQueryResponseTypeDef
 ```
 
 Required fields:
@@ -74,10 +74,10 @@ Optional fields:
 - `RowValue`: [RowTypeDef](./type_defs.md#rowtypedef)
 - `NullValue`: `bool`
 
-## DescribeEndpointsResponseResponseTypeDef
+## DescribeEndpointsResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_query.type_defs import DescribeEndpointsResponseResponseTypeDef
+from mypy_boto3_timestream_query.type_defs import DescribeEndpointsResponseTypeDef
 ```
 
 Required fields:
@@ -109,10 +109,10 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
-## QueryRequestTypeDef
+## QueryRequestRequestTypeDef
 
 ```python
-from mypy_boto3_timestream_query.type_defs import QueryRequestTypeDef
+from mypy_boto3_timestream_query.type_defs import QueryRequestRequestTypeDef
 ```
 
 Required fields:
@@ -125,10 +125,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxRows`: `int`
 
-## QueryResponseResponseTypeDef
+## QueryResponseTypeDef
 
 ```python
-from mypy_boto3_timestream_query.type_defs import QueryResponseResponseTypeDef
+from mypy_boto3_timestream_query.type_defs import QueryResponseTypeDef
 ```
 
 Required fields:

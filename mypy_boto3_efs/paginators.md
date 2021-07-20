@@ -37,7 +37,7 @@ Arguments for `DescribeFileSystemsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFileSystemsPaginator.paginate` returns
-`Iterator`\[[DescribeFileSystemsResponseResponseTypeDef](./type_defs.md#describefilesystemsresponseresponsetypedef)\].
+`Iterator`\[[DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef)\].
 
 ## DescribeMountTargetsPaginator
 
@@ -65,7 +65,7 @@ Arguments for `DescribeMountTargetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMountTargetsPaginator.paginate` returns
-`Iterator`\[[DescribeMountTargetsResponseResponseTypeDef](./type_defs.md#describemounttargetsresponseresponsetypedef)\].
+`Iterator`\[[DescribeMountTargetsResponseTypeDef](./type_defs.md#describemounttargetsresponsetypedef)\].
 
 ## DescribeTagsPaginator
 
@@ -90,4 +90,4 @@ Arguments for `DescribeTagsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTagsPaginator.paginate` returns
-`Iterator`\[[DescribeTagsResponseResponseTypeDef](./type_defs.md#describetagsresponseresponsetypedef)\].
+`Iterator`\[[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef)\].

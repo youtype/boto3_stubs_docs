@@ -8,73 +8,73 @@ type annotations stubs module
 [mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 - [Typed dictionaries for boto3 LakeFormation module](#typed-dictionaries-for-boto3-lakeformation-module)
-  - [AddLFTagsToResourceRequestTypeDef](#addlftagstoresourcerequesttypedef)
-  - [AddLFTagsToResourceResponseResponseTypeDef](#addlftagstoresourceresponseresponsetypedef)
-  - [BatchGrantPermissionsRequestTypeDef](#batchgrantpermissionsrequesttypedef)
-  - [BatchGrantPermissionsResponseResponseTypeDef](#batchgrantpermissionsresponseresponsetypedef)
+  - [AddLFTagsToResourceRequestRequestTypeDef](#addlftagstoresourcerequestrequesttypedef)
+  - [AddLFTagsToResourceResponseTypeDef](#addlftagstoresourceresponsetypedef)
+  - [BatchGrantPermissionsRequestRequestTypeDef](#batchgrantpermissionsrequestrequesttypedef)
+  - [BatchGrantPermissionsResponseTypeDef](#batchgrantpermissionsresponsetypedef)
   - [BatchPermissionsFailureEntryTypeDef](#batchpermissionsfailureentrytypedef)
   - [BatchPermissionsRequestEntryTypeDef](#batchpermissionsrequestentrytypedef)
-  - [BatchRevokePermissionsRequestTypeDef](#batchrevokepermissionsrequesttypedef)
-  - [BatchRevokePermissionsResponseResponseTypeDef](#batchrevokepermissionsresponseresponsetypedef)
+  - [BatchRevokePermissionsRequestRequestTypeDef](#batchrevokepermissionsrequestrequesttypedef)
+  - [BatchRevokePermissionsResponseTypeDef](#batchrevokepermissionsresponsetypedef)
   - [ColumnLFTagTypeDef](#columnlftagtypedef)
   - [ColumnWildcardTypeDef](#columnwildcardtypedef)
-  - [CreateLFTagRequestTypeDef](#createlftagrequesttypedef)
+  - [CreateLFTagRequestRequestTypeDef](#createlftagrequestrequesttypedef)
   - [DataLakePrincipalTypeDef](#datalakeprincipaltypedef)
   - [DataLakeSettingsTypeDef](#datalakesettingstypedef)
   - [DataLocationResourceTypeDef](#datalocationresourcetypedef)
   - [DatabaseResourceTypeDef](#databaseresourcetypedef)
-  - [DeleteLFTagRequestTypeDef](#deletelftagrequesttypedef)
-  - [DeregisterResourceRequestTypeDef](#deregisterresourcerequesttypedef)
-  - [DescribeResourceRequestTypeDef](#describeresourcerequesttypedef)
-  - [DescribeResourceResponseResponseTypeDef](#describeresourceresponseresponsetypedef)
+  - [DeleteLFTagRequestRequestTypeDef](#deletelftagrequestrequesttypedef)
+  - [DeregisterResourceRequestRequestTypeDef](#deregisterresourcerequestrequesttypedef)
+  - [DescribeResourceRequestRequestTypeDef](#describeresourcerequestrequesttypedef)
+  - [DescribeResourceResponseTypeDef](#describeresourceresponsetypedef)
   - [DetailsMapTypeDef](#detailsmaptypedef)
   - [ErrorDetailTypeDef](#errordetailtypedef)
   - [FilterConditionTypeDef](#filterconditiontypedef)
-  - [GetDataLakeSettingsRequestTypeDef](#getdatalakesettingsrequesttypedef)
-  - [GetDataLakeSettingsResponseResponseTypeDef](#getdatalakesettingsresponseresponsetypedef)
-  - [GetEffectivePermissionsForPathRequestTypeDef](#geteffectivepermissionsforpathrequesttypedef)
-  - [GetEffectivePermissionsForPathResponseResponseTypeDef](#geteffectivepermissionsforpathresponseresponsetypedef)
-  - [GetLFTagRequestTypeDef](#getlftagrequesttypedef)
-  - [GetLFTagResponseResponseTypeDef](#getlftagresponseresponsetypedef)
-  - [GetResourceLFTagsRequestTypeDef](#getresourcelftagsrequesttypedef)
-  - [GetResourceLFTagsResponseResponseTypeDef](#getresourcelftagsresponseresponsetypedef)
-  - [GrantPermissionsRequestTypeDef](#grantpermissionsrequesttypedef)
+  - [GetDataLakeSettingsRequestRequestTypeDef](#getdatalakesettingsrequestrequesttypedef)
+  - [GetDataLakeSettingsResponseTypeDef](#getdatalakesettingsresponsetypedef)
+  - [GetEffectivePermissionsForPathRequestRequestTypeDef](#geteffectivepermissionsforpathrequestrequesttypedef)
+  - [GetEffectivePermissionsForPathResponseTypeDef](#geteffectivepermissionsforpathresponsetypedef)
+  - [GetLFTagRequestRequestTypeDef](#getlftagrequestrequesttypedef)
+  - [GetLFTagResponseTypeDef](#getlftagresponsetypedef)
+  - [GetResourceLFTagsRequestRequestTypeDef](#getresourcelftagsrequestrequesttypedef)
+  - [GetResourceLFTagsResponseTypeDef](#getresourcelftagsresponsetypedef)
+  - [GrantPermissionsRequestRequestTypeDef](#grantpermissionsrequestrequesttypedef)
   - [LFTagErrorTypeDef](#lftagerrortypedef)
   - [LFTagKeyResourceTypeDef](#lftagkeyresourcetypedef)
   - [LFTagPairTypeDef](#lftagpairtypedef)
   - [LFTagPolicyResourceTypeDef](#lftagpolicyresourcetypedef)
   - [LFTagTypeDef](#lftagtypedef)
-  - [ListLFTagsRequestTypeDef](#listlftagsrequesttypedef)
-  - [ListLFTagsResponseResponseTypeDef](#listlftagsresponseresponsetypedef)
-  - [ListPermissionsRequestTypeDef](#listpermissionsrequesttypedef)
-  - [ListPermissionsResponseResponseTypeDef](#listpermissionsresponseresponsetypedef)
-  - [ListResourcesRequestTypeDef](#listresourcesrequesttypedef)
-  - [ListResourcesResponseResponseTypeDef](#listresourcesresponseresponsetypedef)
+  - [ListLFTagsRequestRequestTypeDef](#listlftagsrequestrequesttypedef)
+  - [ListLFTagsResponseTypeDef](#listlftagsresponsetypedef)
+  - [ListPermissionsRequestRequestTypeDef](#listpermissionsrequestrequesttypedef)
+  - [ListPermissionsResponseTypeDef](#listpermissionsresponsetypedef)
+  - [ListResourcesRequestRequestTypeDef](#listresourcesrequestrequesttypedef)
+  - [ListResourcesResponseTypeDef](#listresourcesresponsetypedef)
   - [PrincipalPermissionsTypeDef](#principalpermissionstypedef)
   - [PrincipalResourcePermissionsTypeDef](#principalresourcepermissionstypedef)
-  - [PutDataLakeSettingsRequestTypeDef](#putdatalakesettingsrequesttypedef)
-  - [RegisterResourceRequestTypeDef](#registerresourcerequesttypedef)
-  - [RemoveLFTagsFromResourceRequestTypeDef](#removelftagsfromresourcerequesttypedef)
-  - [RemoveLFTagsFromResourceResponseResponseTypeDef](#removelftagsfromresourceresponseresponsetypedef)
+  - [PutDataLakeSettingsRequestRequestTypeDef](#putdatalakesettingsrequestrequesttypedef)
+  - [RegisterResourceRequestRequestTypeDef](#registerresourcerequestrequesttypedef)
+  - [RemoveLFTagsFromResourceRequestRequestTypeDef](#removelftagsfromresourcerequestrequesttypedef)
+  - [RemoveLFTagsFromResourceResponseTypeDef](#removelftagsfromresourceresponsetypedef)
   - [ResourceInfoTypeDef](#resourceinfotypedef)
   - [ResourceTypeDef](#resourcetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RevokePermissionsRequestTypeDef](#revokepermissionsrequesttypedef)
-  - [SearchDatabasesByLFTagsRequestTypeDef](#searchdatabasesbylftagsrequesttypedef)
-  - [SearchDatabasesByLFTagsResponseResponseTypeDef](#searchdatabasesbylftagsresponseresponsetypedef)
-  - [SearchTablesByLFTagsRequestTypeDef](#searchtablesbylftagsrequesttypedef)
-  - [SearchTablesByLFTagsResponseResponseTypeDef](#searchtablesbylftagsresponseresponsetypedef)
+  - [RevokePermissionsRequestRequestTypeDef](#revokepermissionsrequestrequesttypedef)
+  - [SearchDatabasesByLFTagsRequestRequestTypeDef](#searchdatabasesbylftagsrequestrequesttypedef)
+  - [SearchDatabasesByLFTagsResponseTypeDef](#searchdatabasesbylftagsresponsetypedef)
+  - [SearchTablesByLFTagsRequestRequestTypeDef](#searchtablesbylftagsrequestrequesttypedef)
+  - [SearchTablesByLFTagsResponseTypeDef](#searchtablesbylftagsresponsetypedef)
   - [TableResourceTypeDef](#tableresourcetypedef)
   - [TableWithColumnsResourceTypeDef](#tablewithcolumnsresourcetypedef)
   - [TaggedDatabaseTypeDef](#taggeddatabasetypedef)
   - [TaggedTableTypeDef](#taggedtabletypedef)
-  - [UpdateLFTagRequestTypeDef](#updatelftagrequesttypedef)
-  - [UpdateResourceRequestTypeDef](#updateresourcerequesttypedef)
+  - [UpdateLFTagRequestRequestTypeDef](#updatelftagrequestrequesttypedef)
+  - [UpdateResourceRequestRequestTypeDef](#updateresourcerequestrequesttypedef)
 
-## AddLFTagsToResourceRequestTypeDef
+## AddLFTagsToResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -86,10 +86,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## AddLFTagsToResourceResponseResponseTypeDef
+## AddLFTagsToResourceResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceResponseTypeDef
 ```
 
 Required fields:
@@ -98,10 +98,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## BatchGrantPermissionsRequestTypeDef
+## BatchGrantPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import BatchGrantPermissionsRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import BatchGrantPermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -113,10 +113,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## BatchGrantPermissionsResponseResponseTypeDef
+## BatchGrantPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import BatchGrantPermissionsResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import BatchGrantPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -157,10 +157,10 @@ Optional fields:
 - `PermissionsWithGrantOption`:
   `List`\[[PermissionType](./literals.md#permissiontype)\]
 
-## BatchRevokePermissionsRequestTypeDef
+## BatchRevokePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import BatchRevokePermissionsRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import BatchRevokePermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -172,10 +172,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## BatchRevokePermissionsResponseResponseTypeDef
+## BatchRevokePermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import BatchRevokePermissionsResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import BatchRevokePermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -206,10 +206,10 @@ Optional fields:
 
 - `ExcludedColumnNames`: `List`\[`str`\]
 
-## CreateLFTagRequestTypeDef
+## CreateLFTagRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import CreateLFTagRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import CreateLFTagRequestRequestTypeDef
 ```
 
 Required fields:
@@ -275,10 +275,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## DeleteLFTagRequestTypeDef
+## DeleteLFTagRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import DeleteLFTagRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import DeleteLFTagRequestRequestTypeDef
 ```
 
 Required fields:
@@ -289,30 +289,30 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## DeregisterResourceRequestTypeDef
+## DeregisterResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import DeregisterResourceRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import DeregisterResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## DescribeResourceRequestTypeDef
+## DescribeResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import DescribeResourceRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import DescribeResourceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArn`: `str`
 
-## DescribeResourceResponseResponseTypeDef
+## DescribeResourceResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import DescribeResourceResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import DescribeResourceResponseTypeDef
 ```
 
 Required fields:
@@ -355,20 +355,20 @@ Optional fields:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `StringValueList`: `List`\[`str`\]
 
-## GetDataLakeSettingsRequestTypeDef
+## GetDataLakeSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import GetDataLakeSettingsRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import GetDataLakeSettingsRequestRequestTypeDef
 ```
 
 Optional fields:
 
 - `CatalogId`: `str`
 
-## GetDataLakeSettingsResponseResponseTypeDef
+## GetDataLakeSettingsResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import GetDataLakeSettingsResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import GetDataLakeSettingsResponseTypeDef
 ```
 
 Required fields:
@@ -378,10 +378,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetEffectivePermissionsForPathRequestTypeDef
+## GetEffectivePermissionsForPathRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import GetEffectivePermissionsForPathRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import GetEffectivePermissionsForPathRequestRequestTypeDef
 ```
 
 Required fields:
@@ -394,10 +394,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## GetEffectivePermissionsForPathResponseResponseTypeDef
+## GetEffectivePermissionsForPathResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import GetEffectivePermissionsForPathResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import GetEffectivePermissionsForPathResponseTypeDef
 ```
 
 Required fields:
@@ -408,10 +408,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetLFTagRequestTypeDef
+## GetLFTagRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import GetLFTagRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import GetLFTagRequestRequestTypeDef
 ```
 
 Required fields:
@@ -422,10 +422,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## GetLFTagResponseResponseTypeDef
+## GetLFTagResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import GetLFTagResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import GetLFTagResponseTypeDef
 ```
 
 Required fields:
@@ -436,10 +436,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourceLFTagsRequestTypeDef
+## GetResourceLFTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import GetResourceLFTagsRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import GetResourceLFTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -451,10 +451,10 @@ Optional fields:
 - `CatalogId`: `str`
 - `ShowAssignedLFTags`: `bool`
 
-## GetResourceLFTagsResponseResponseTypeDef
+## GetResourceLFTagsResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import GetResourceLFTagsResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import GetResourceLFTagsResponseTypeDef
 ```
 
 Required fields:
@@ -468,10 +468,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GrantPermissionsRequestTypeDef
+## GrantPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import GrantPermissionsRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import GrantPermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -554,10 +554,10 @@ Required fields:
 - `TagKey`: `str`
 - `TagValues`: `List`\[`str`\]
 
-## ListLFTagsRequestTypeDef
+## ListLFTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import ListLFTagsRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import ListLFTagsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -568,10 +568,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListLFTagsResponseResponseTypeDef
+## ListLFTagsResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import ListLFTagsResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import ListLFTagsResponseTypeDef
 ```
 
 Required fields:
@@ -581,10 +581,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPermissionsRequestTypeDef
+## ListPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import ListPermissionsRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import ListPermissionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -598,10 +598,10 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-## ListPermissionsResponseResponseTypeDef
+## ListPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import ListPermissionsResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import ListPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -612,10 +612,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourcesRequestTypeDef
+## ListResourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import ListResourcesRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import ListResourcesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -625,10 +625,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-## ListResourcesResponseResponseTypeDef
+## ListResourcesResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import ListResourcesResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import ListResourcesResponseTypeDef
 ```
 
 Required fields:
@@ -667,10 +667,10 @@ Optional fields:
   `List`\[[PermissionType](./literals.md#permissiontype)\]
 - `AdditionalDetails`: [DetailsMapTypeDef](./type_defs.md#detailsmaptypedef)
 
-## PutDataLakeSettingsRequestTypeDef
+## PutDataLakeSettingsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import PutDataLakeSettingsRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import PutDataLakeSettingsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -682,10 +682,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## RegisterResourceRequestTypeDef
+## RegisterResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import RegisterResourceRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import RegisterResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -697,10 +697,10 @@ Optional fields:
 - `UseServiceLinkedRole`: `bool`
 - `RoleArn`: `str`
 
-## RemoveLFTagsFromResourceRequestTypeDef
+## RemoveLFTagsFromResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import RemoveLFTagsFromResourceRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import RemoveLFTagsFromResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -712,10 +712,10 @@ Optional fields:
 
 - `CatalogId`: `str`
 
-## RemoveLFTagsFromResourceResponseResponseTypeDef
+## RemoveLFTagsFromResourceResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import RemoveLFTagsFromResourceResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import RemoveLFTagsFromResourceResponseTypeDef
 ```
 
 Required fields:
@@ -769,10 +769,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## RevokePermissionsRequestTypeDef
+## RevokePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import RevokePermissionsRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import RevokePermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -788,10 +788,10 @@ Optional fields:
 - `PermissionsWithGrantOption`:
   `List`\[[PermissionType](./literals.md#permissiontype)\]
 
-## SearchDatabasesByLFTagsRequestTypeDef
+## SearchDatabasesByLFTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import SearchDatabasesByLFTagsRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import SearchDatabasesByLFTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -804,10 +804,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `CatalogId`: `str`
 
-## SearchDatabasesByLFTagsResponseResponseTypeDef
+## SearchDatabasesByLFTagsResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import SearchDatabasesByLFTagsResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import SearchDatabasesByLFTagsResponseTypeDef
 ```
 
 Required fields:
@@ -818,10 +818,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SearchTablesByLFTagsRequestTypeDef
+## SearchTablesByLFTagsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import SearchTablesByLFTagsRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import SearchTablesByLFTagsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -834,10 +834,10 @@ Optional fields:
 - `MaxResults`: `int`
 - `CatalogId`: `str`
 
-## SearchTablesByLFTagsResponseResponseTypeDef
+## SearchTablesByLFTagsResponseTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import SearchTablesByLFTagsResponseResponseTypeDef
+from mypy_boto3_lakeformation.type_defs import SearchTablesByLFTagsResponseTypeDef
 ```
 
 Required fields:
@@ -909,10 +909,10 @@ Optional fields:
 - `LFTagsOnColumns`:
   `List`\[[ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef)\]
 
-## UpdateLFTagRequestTypeDef
+## UpdateLFTagRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import UpdateLFTagRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import UpdateLFTagRequestRequestTypeDef
 ```
 
 Required fields:
@@ -925,10 +925,10 @@ Optional fields:
 - `TagValuesToDelete`: `List`\[`str`\]
 - `TagValuesToAdd`: `List`\[`str`\]
 
-## UpdateResourceRequestTypeDef
+## UpdateResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lakeformation.type_defs import UpdateResourceRequestTypeDef
+from mypy_boto3_lakeformation.type_defs import UpdateResourceRequestRequestTypeDef
 ```
 
 Required fields:

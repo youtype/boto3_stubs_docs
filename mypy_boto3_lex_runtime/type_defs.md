@@ -11,21 +11,21 @@ type annotations stubs module
   - [ActiveContextTimeToLiveTypeDef](#activecontexttimetolivetypedef)
   - [ActiveContextTypeDef](#activecontexttypedef)
   - [ButtonTypeDef](#buttontypedef)
-  - [DeleteSessionRequestTypeDef](#deletesessionrequesttypedef)
-  - [DeleteSessionResponseResponseTypeDef](#deletesessionresponseresponsetypedef)
+  - [DeleteSessionRequestRequestTypeDef](#deletesessionrequestrequesttypedef)
+  - [DeleteSessionResponseTypeDef](#deletesessionresponsetypedef)
   - [DialogActionTypeDef](#dialogactiontypedef)
   - [GenericAttachmentTypeDef](#genericattachmenttypedef)
-  - [GetSessionRequestTypeDef](#getsessionrequesttypedef)
-  - [GetSessionResponseResponseTypeDef](#getsessionresponseresponsetypedef)
+  - [GetSessionRequestRequestTypeDef](#getsessionrequestrequesttypedef)
+  - [GetSessionResponseTypeDef](#getsessionresponsetypedef)
   - [IntentConfidenceTypeDef](#intentconfidencetypedef)
   - [IntentSummaryTypeDef](#intentsummarytypedef)
-  - [PostContentRequestTypeDef](#postcontentrequesttypedef)
-  - [PostContentResponseResponseTypeDef](#postcontentresponseresponsetypedef)
-  - [PostTextRequestTypeDef](#posttextrequesttypedef)
-  - [PostTextResponseResponseTypeDef](#posttextresponseresponsetypedef)
+  - [PostContentRequestRequestTypeDef](#postcontentrequestrequesttypedef)
+  - [PostContentResponseTypeDef](#postcontentresponsetypedef)
+  - [PostTextRequestRequestTypeDef](#posttextrequestrequesttypedef)
+  - [PostTextResponseTypeDef](#posttextresponsetypedef)
   - [PredictedIntentTypeDef](#predictedintenttypedef)
-  - [PutSessionRequestTypeDef](#putsessionrequesttypedef)
-  - [PutSessionResponseResponseTypeDef](#putsessionresponseresponsetypedef)
+  - [PutSessionRequestRequestTypeDef](#putsessionrequestrequesttypedef)
+  - [PutSessionResponseTypeDef](#putsessionresponsetypedef)
   - [ResponseCardTypeDef](#responsecardtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SentimentResponseTypeDef](#sentimentresponsetypedef)
@@ -65,10 +65,10 @@ Required fields:
 - `text`: `str`
 - `value`: `str`
 
-## DeleteSessionRequestTypeDef
+## DeleteSessionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import DeleteSessionRequestTypeDef
+from mypy_boto3_lex_runtime.type_defs import DeleteSessionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -77,10 +77,10 @@ Required fields:
 - `botAlias`: `str`
 - `userId`: `str`
 
-## DeleteSessionResponseResponseTypeDef
+## DeleteSessionResponseTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import DeleteSessionResponseResponseTypeDef
+from mypy_boto3_lex_runtime.type_defs import DeleteSessionResponseTypeDef
 ```
 
 Required fields:
@@ -126,10 +126,10 @@ Optional fields:
 - `imageUrl`: `str`
 - `buttons`: `List`\[[ButtonTypeDef](./type_defs.md#buttontypedef)\]
 
-## GetSessionRequestTypeDef
+## GetSessionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import GetSessionRequestTypeDef
+from mypy_boto3_lex_runtime.type_defs import GetSessionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -142,10 +142,10 @@ Optional fields:
 
 - `checkpointLabelFilter`: `str`
 
-## GetSessionResponseResponseTypeDef
+## GetSessionResponseTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import GetSessionResponseResponseTypeDef
+from mypy_boto3_lex_runtime.type_defs import GetSessionResponseTypeDef
 ```
 
 Required fields:
@@ -192,10 +192,10 @@ Optional fields:
   [FulfillmentStateType](./literals.md#fulfillmentstatetype)
 - `slotToElicit`: `str`
 
-## PostContentRequestTypeDef
+## PostContentRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import PostContentRequestTypeDef
+from mypy_boto3_lex_runtime.type_defs import PostContentRequestRequestTypeDef
 ```
 
 Required fields:
@@ -213,10 +213,10 @@ Optional fields:
 - `accept`: `str`
 - `activeContexts`: `str`
 
-## PostContentResponseResponseTypeDef
+## PostContentResponseTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import PostContentResponseResponseTypeDef
+from mypy_boto3_lex_runtime.type_defs import PostContentResponseTypeDef
 ```
 
 Required fields:
@@ -242,10 +242,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## PostTextRequestTypeDef
+## PostTextRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import PostTextRequestTypeDef
+from mypy_boto3_lex_runtime.type_defs import PostTextRequestRequestTypeDef
 ```
 
 Required fields:
@@ -262,10 +262,10 @@ Optional fields:
 - `activeContexts`:
   `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
-## PostTextResponseResponseTypeDef
+## PostTextResponseTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import PostTextResponseResponseTypeDef
+from mypy_boto3_lex_runtime.type_defs import PostTextResponseTypeDef
 ```
 
 Required fields:
@@ -304,10 +304,10 @@ Optional fields:
   [IntentConfidenceTypeDef](./type_defs.md#intentconfidencetypedef)
 - `slots`: `Dict`\[`str`, `str`\]
 
-## PutSessionRequestTypeDef
+## PutSessionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import PutSessionRequestTypeDef
+from mypy_boto3_lex_runtime.type_defs import PutSessionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -326,10 +326,10 @@ Optional fields:
 - `activeContexts`:
   `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
-## PutSessionResponseResponseTypeDef
+## PutSessionResponseTypeDef
 
 ```python
-from mypy_boto3_lex_runtime.type_defs import PutSessionResponseResponseTypeDef
+from mypy_boto3_lex_runtime.type_defs import PutSessionResponseTypeDef
 ```
 
 Required fields:

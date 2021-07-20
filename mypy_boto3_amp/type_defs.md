@@ -8,24 +8,24 @@ type annotations stubs module
 [mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
 
 - [Typed dictionaries for boto3 PrometheusService module](#typed-dictionaries-for-boto3-prometheusservice-module)
-  - [CreateWorkspaceRequestTypeDef](#createworkspacerequesttypedef)
-  - [CreateWorkspaceResponseResponseTypeDef](#createworkspaceresponseresponsetypedef)
-  - [DeleteWorkspaceRequestTypeDef](#deleteworkspacerequesttypedef)
-  - [DescribeWorkspaceRequestTypeDef](#describeworkspacerequesttypedef)
-  - [DescribeWorkspaceResponseResponseTypeDef](#describeworkspaceresponseresponsetypedef)
-  - [ListWorkspacesRequestTypeDef](#listworkspacesrequesttypedef)
-  - [ListWorkspacesResponseResponseTypeDef](#listworkspacesresponseresponsetypedef)
+  - [CreateWorkspaceRequestRequestTypeDef](#createworkspacerequestrequesttypedef)
+  - [CreateWorkspaceResponseTypeDef](#createworkspaceresponsetypedef)
+  - [DeleteWorkspaceRequestRequestTypeDef](#deleteworkspacerequestrequesttypedef)
+  - [DescribeWorkspaceRequestRequestTypeDef](#describeworkspacerequestrequesttypedef)
+  - [DescribeWorkspaceResponseTypeDef](#describeworkspaceresponsetypedef)
+  - [ListWorkspacesRequestRequestTypeDef](#listworkspacesrequestrequesttypedef)
+  - [ListWorkspacesResponseTypeDef](#listworkspacesresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [UpdateWorkspaceAliasRequestTypeDef](#updateworkspacealiasrequesttypedef)
+  - [UpdateWorkspaceAliasRequestRequestTypeDef](#updateworkspacealiasrequestrequesttypedef)
   - [WorkspaceDescriptionTypeDef](#workspacedescriptiontypedef)
   - [WorkspaceStatusTypeDef](#workspacestatustypedef)
   - [WorkspaceSummaryTypeDef](#workspacesummarytypedef)
 
-## CreateWorkspaceRequestTypeDef
+## CreateWorkspaceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_amp.type_defs import CreateWorkspaceRequestTypeDef
+from mypy_boto3_amp.type_defs import CreateWorkspaceRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -33,10 +33,10 @@ Optional fields:
 - `alias`: `str`
 - `clientToken`: `str`
 
-## CreateWorkspaceResponseResponseTypeDef
+## CreateWorkspaceResponseTypeDef
 
 ```python
-from mypy_boto3_amp.type_defs import CreateWorkspaceResponseResponseTypeDef
+from mypy_boto3_amp.type_defs import CreateWorkspaceResponseTypeDef
 ```
 
 Required fields:
@@ -47,10 +47,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteWorkspaceRequestTypeDef
+## DeleteWorkspaceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_amp.type_defs import DeleteWorkspaceRequestTypeDef
+from mypy_boto3_amp.type_defs import DeleteWorkspaceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -61,20 +61,20 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## DescribeWorkspaceRequestTypeDef
+## DescribeWorkspaceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_amp.type_defs import DescribeWorkspaceRequestTypeDef
+from mypy_boto3_amp.type_defs import DescribeWorkspaceRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `workspaceId`: `str`
 
-## DescribeWorkspaceResponseResponseTypeDef
+## DescribeWorkspaceResponseTypeDef
 
 ```python
-from mypy_boto3_amp.type_defs import DescribeWorkspaceResponseResponseTypeDef
+from mypy_boto3_amp.type_defs import DescribeWorkspaceResponseTypeDef
 ```
 
 Required fields:
@@ -84,10 +84,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListWorkspacesRequestTypeDef
+## ListWorkspacesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_amp.type_defs import ListWorkspacesRequestTypeDef
+from mypy_boto3_amp.type_defs import ListWorkspacesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -96,10 +96,10 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
-## ListWorkspacesResponseResponseTypeDef
+## ListWorkspacesResponseTypeDef
 
 ```python
-from mypy_boto3_amp.type_defs import ListWorkspacesResponseResponseTypeDef
+from mypy_boto3_amp.type_defs import ListWorkspacesResponseTypeDef
 ```
 
 Required fields:
@@ -136,10 +136,10 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
-## UpdateWorkspaceAliasRequestTypeDef
+## UpdateWorkspaceAliasRequestRequestTypeDef
 
 ```python
-from mypy_boto3_amp.type_defs import UpdateWorkspaceAliasRequestTypeDef
+from mypy_boto3_amp.type_defs import UpdateWorkspaceAliasRequestRequestTypeDef
 ```
 
 Required fields:

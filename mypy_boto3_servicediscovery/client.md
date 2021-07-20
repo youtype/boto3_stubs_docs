@@ -11,6 +11,7 @@ type annotations stubs module
   - [ServiceDiscoveryClient](#servicediscoveryclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_http_namespace](#create_http_namespace)
     - [create_private_dns_namespace](#create_private_dns_namespace)
@@ -34,7 +35,10 @@ type annotations stubs module
     - [register_instance](#register_instance)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_http_namespace](#update_http_namespace)
     - [update_instance_custom_health_status](#update_instance_custom_health_status)
+    - [update_private_dns_namespace](#update_private_dns_namespace)
+    - [update_public_dns_namespace](#update_public_dns_namespace)
     - [update_service](#update_service)
     - [get_paginator](#get_paginator)
 
@@ -86,6 +90,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ServiceDiscoveryClient exceptions.
+
+Type annotations for `boto3.client("servicediscovery").exceptions` method.
+
+Boto3 documentation:
+[ServiceDiscovery.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -112,7 +127,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.create_http_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_http_namespace)
 
 Arguments mapping described in
-[CreateHttpNamespaceRequestTypeDef](./type_defs.md#createhttpnamespacerequesttypedef).
+[CreateHttpNamespaceRequestRequestTypeDef](./type_defs.md#createhttpnamespacerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -122,7 +137,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateHttpNamespaceResponseResponseTypeDef](./type_defs.md#createhttpnamespaceresponseresponsetypedef).
+[CreateHttpNamespaceResponseTypeDef](./type_defs.md#createhttpnamespaceresponsetypedef).
 
 ### create_private_dns_namespace
 
@@ -136,7 +151,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.create_private_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_private_dns_namespace)
 
 Arguments mapping described in
-[CreatePrivateDnsNamespaceRequestTypeDef](./type_defs.md#createprivatednsnamespacerequesttypedef).
+[CreatePrivateDnsNamespaceRequestRequestTypeDef](./type_defs.md#createprivatednsnamespacerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -145,9 +160,11 @@ Keyword-only arguments:
 - `CreatorRequestId`: `str`
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Properties`:
+  [PrivateDnsNamespacePropertiesTypeDef](./type_defs.md#privatednsnamespacepropertiestypedef)
 
 Returns
-[CreatePrivateDnsNamespaceResponseResponseTypeDef](./type_defs.md#createprivatednsnamespaceresponseresponsetypedef).
+[CreatePrivateDnsNamespaceResponseTypeDef](./type_defs.md#createprivatednsnamespaceresponsetypedef).
 
 ### create_public_dns_namespace
 
@@ -160,7 +177,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.create_public_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_public_dns_namespace)
 
 Arguments mapping described in
-[CreatePublicDnsNamespaceRequestTypeDef](./type_defs.md#createpublicdnsnamespacerequesttypedef).
+[CreatePublicDnsNamespaceRequestRequestTypeDef](./type_defs.md#createpublicdnsnamespacerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -168,9 +185,11 @@ Keyword-only arguments:
 - `CreatorRequestId`: `str`
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Properties`:
+  [PublicDnsNamespacePropertiesTypeDef](./type_defs.md#publicdnsnamespacepropertiestypedef)
 
 Returns
-[CreatePublicDnsNamespaceResponseResponseTypeDef](./type_defs.md#createpublicdnsnamespaceresponseresponsetypedef).
+[CreatePublicDnsNamespaceResponseTypeDef](./type_defs.md#createpublicdnsnamespaceresponsetypedef).
 
 ### create_service
 
@@ -182,7 +201,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_service)
 
 Arguments mapping described in
-[CreateServiceRequestTypeDef](./type_defs.md#createservicerequesttypedef).
+[CreateServiceRequestRequestTypeDef](./type_defs.md#createservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -200,7 +219,7 @@ Keyword-only arguments:
   [ServiceTypeOptionType](./literals.md#servicetypeoptiontype))
 
 Returns
-[CreateServiceResponseResponseTypeDef](./type_defs.md#createserviceresponseresponsetypedef).
+[CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
 
 ### delete_namespace
 
@@ -213,14 +232,14 @@ Boto3 documentation:
 [ServiceDiscovery.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_namespace)
 
 Arguments mapping described in
-[DeleteNamespaceRequestTypeDef](./type_defs.md#deletenamespacerequesttypedef).
+[DeleteNamespaceRequestRequestTypeDef](./type_defs.md#deletenamespacerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[DeleteNamespaceResponseResponseTypeDef](./type_defs.md#deletenamespaceresponseresponsetypedef).
+[DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef).
 
 ### delete_service
 
@@ -232,7 +251,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_service)
 
 Arguments mapping described in
-[DeleteServiceRequestTypeDef](./type_defs.md#deleteservicerequesttypedef).
+[DeleteServiceRequestRequestTypeDef](./type_defs.md#deleteservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -242,8 +261,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_instance
 
-Deletes the Amazon Route 53 DNS records and health check, if any, that AWS
-Cloud Map created for the specified instance.
+Deletes the Amazon Route 53 DNS records and health check, if any, that Cloud
+Map created for the specified instance.
 
 Type annotations for `boto3.client("servicediscovery").deregister_instance`
 method.
@@ -252,7 +271,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.deregister_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.deregister_instance)
 
 Arguments mapping described in
-[DeregisterInstanceRequestTypeDef](./type_defs.md#deregisterinstancerequesttypedef).
+[DeregisterInstanceRequestRequestTypeDef](./type_defs.md#deregisterinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -260,7 +279,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 
 Returns
-[DeregisterInstanceResponseResponseTypeDef](./type_defs.md#deregisterinstanceresponseresponsetypedef).
+[DeregisterInstanceResponseTypeDef](./type_defs.md#deregisterinstanceresponsetypedef).
 
 ### discover_instances
 
@@ -273,7 +292,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.discover_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.discover_instances)
 
 Arguments mapping described in
-[DiscoverInstancesRequestTypeDef](./type_defs.md#discoverinstancesrequesttypedef).
+[DiscoverInstancesRequestRequestTypeDef](./type_defs.md#discoverinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -286,7 +305,7 @@ Keyword-only arguments:
   [HealthStatusFilterType](./literals.md#healthstatusfiltertype)
 
 Returns
-[DiscoverInstancesResponseResponseTypeDef](./type_defs.md#discoverinstancesresponseresponsetypedef).
+[DiscoverInstancesResponseTypeDef](./type_defs.md#discoverinstancesresponsetypedef).
 
 ### generate_presigned_url
 
@@ -317,7 +336,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.get_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instance)
 
 Arguments mapping described in
-[GetInstanceRequestTypeDef](./type_defs.md#getinstancerequesttypedef).
+[GetInstanceRequestRequestTypeDef](./type_defs.md#getinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -325,7 +344,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 
 Returns
-[GetInstanceResponseResponseTypeDef](./type_defs.md#getinstanceresponseresponsetypedef).
+[GetInstanceResponseTypeDef](./type_defs.md#getinstanceresponsetypedef).
 
 ### get_instances_health_status
 
@@ -339,7 +358,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.get_instances_health_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instances_health_status)
 
 Arguments mapping described in
-[GetInstancesHealthStatusRequestTypeDef](./type_defs.md#getinstanceshealthstatusrequesttypedef).
+[GetInstancesHealthStatusRequestRequestTypeDef](./type_defs.md#getinstanceshealthstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -349,7 +368,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetInstancesHealthStatusResponseResponseTypeDef](./type_defs.md#getinstanceshealthstatusresponseresponsetypedef).
+[GetInstancesHealthStatusResponseTypeDef](./type_defs.md#getinstanceshealthstatusresponsetypedef).
 
 ### get_namespace
 
@@ -361,14 +380,14 @@ Boto3 documentation:
 [ServiceDiscovery.Client.get_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_namespace)
 
 Arguments mapping described in
-[GetNamespaceRequestTypeDef](./type_defs.md#getnamespacerequesttypedef).
+[GetNamespaceRequestRequestTypeDef](./type_defs.md#getnamespacerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetNamespaceResponseResponseTypeDef](./type_defs.md#getnamespaceresponseresponsetypedef).
+[GetNamespaceResponseTypeDef](./type_defs.md#getnamespaceresponsetypedef).
 
 ### get_operation
 
@@ -381,14 +400,14 @@ Boto3 documentation:
 [ServiceDiscovery.Client.get_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_operation)
 
 Arguments mapping described in
-[GetOperationRequestTypeDef](./type_defs.md#getoperationrequesttypedef).
+[GetOperationRequestRequestTypeDef](./type_defs.md#getoperationrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `OperationId`: `str` *(required)*
 
 Returns
-[GetOperationResponseResponseTypeDef](./type_defs.md#getoperationresponseresponsetypedef).
+[GetOperationResponseTypeDef](./type_defs.md#getoperationresponsetypedef).
 
 ### get_service
 
@@ -400,14 +419,13 @@ Boto3 documentation:
 [ServiceDiscovery.Client.get_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_service)
 
 Arguments mapping described in
-[GetServiceRequestTypeDef](./type_defs.md#getservicerequesttypedef).
+[GetServiceRequestRequestTypeDef](./type_defs.md#getservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
-Returns
-[GetServiceResponseResponseTypeDef](./type_defs.md#getserviceresponseresponsetypedef).
+Returns [GetServiceResponseTypeDef](./type_defs.md#getserviceresponsetypedef).
 
 ### list_instances
 
@@ -420,7 +438,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_instances)
 
 Arguments mapping described in
-[ListInstancesRequestTypeDef](./type_defs.md#listinstancesrequesttypedef).
+[ListInstancesRequestRequestTypeDef](./type_defs.md#listinstancesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -429,12 +447,12 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListInstancesResponseResponseTypeDef](./type_defs.md#listinstancesresponseresponsetypedef).
+[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef).
 
 ### list_namespaces
 
 Lists summary information about the namespaces that were created by the current
-AWS account.
+account.
 
 Type annotations for `boto3.client("servicediscovery").list_namespaces` method.
 
@@ -442,7 +460,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.list_namespaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_namespaces)
 
 Arguments mapping described in
-[ListNamespacesRequestTypeDef](./type_defs.md#listnamespacesrequesttypedef).
+[ListNamespacesRequestRequestTypeDef](./type_defs.md#listnamespacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -452,7 +470,7 @@ Keyword-only arguments:
   `List`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
 
 Returns
-[ListNamespacesResponseResponseTypeDef](./type_defs.md#listnamespacesresponseresponsetypedef).
+[ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef).
 
 ### list_operations
 
@@ -464,7 +482,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.list_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_operations)
 
 Arguments mapping described in
-[ListOperationsRequestTypeDef](./type_defs.md#listoperationsrequesttypedef).
+[ListOperationsRequestRequestTypeDef](./type_defs.md#listoperationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -474,7 +492,7 @@ Keyword-only arguments:
   `List`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
 
 Returns
-[ListOperationsResponseResponseTypeDef](./type_defs.md#listoperationsresponseresponsetypedef).
+[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
 
 ### list_services
 
@@ -487,7 +505,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_services)
 
 Arguments mapping described in
-[ListServicesRequestTypeDef](./type_defs.md#listservicesrequesttypedef).
+[ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -497,7 +515,7 @@ Keyword-only arguments:
   `List`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
 
 Returns
-[ListServicesResponseResponseTypeDef](./type_defs.md#listservicesresponseresponsetypedef).
+[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -510,14 +528,14 @@ Boto3 documentation:
 [ServiceDiscovery.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### register_instance
 
@@ -531,7 +549,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.register_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.register_instance)
 
 Arguments mapping described in
-[RegisterInstanceRequestTypeDef](./type_defs.md#registerinstancerequesttypedef).
+[RegisterInstanceRequestRequestTypeDef](./type_defs.md#registerinstancerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -541,7 +559,7 @@ Keyword-only arguments:
 - `CreatorRequestId`: `str`
 
 Returns
-[RegisterInstanceResponseResponseTypeDef](./type_defs.md#registerinstanceresponseresponsetypedef).
+[RegisterInstanceResponseTypeDef](./type_defs.md#registerinstanceresponsetypedef).
 
 ### tag_resource
 
@@ -553,7 +571,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -572,7 +590,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -580,6 +598,30 @@ Keyword-only arguments:
 - `TagKeys`: `List`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### update_http_namespace
+
+Updates an HTTP namespace.
+
+Type annotations for `boto3.client("servicediscovery").update_http_namespace`
+method.
+
+Boto3 documentation:
+[ServiceDiscovery.Client.update_http_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_http_namespace)
+
+Arguments mapping described in
+[UpdateHttpNamespaceRequestRequestTypeDef](./type_defs.md#updatehttpnamespacerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `Namespace`:
+  [HttpNamespaceChangeTypeDef](./type_defs.md#httpnamespacechangetypedef)
+  *(required)*
+- `UpdaterRequestId`: `str`
+
+Returns
+[UpdateHttpNamespaceResponseTypeDef](./type_defs.md#updatehttpnamespaceresponsetypedef).
 
 ### update_instance_custom_health_status
 
@@ -593,7 +635,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.update_instance_custom_health_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_instance_custom_health_status)
 
 Arguments mapping described in
-[UpdateInstanceCustomHealthStatusRequestTypeDef](./type_defs.md#updateinstancecustomhealthstatusrequesttypedef).
+[UpdateInstanceCustomHealthStatusRequestRequestTypeDef](./type_defs.md#updateinstancecustomhealthstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -601,6 +643,54 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `Status`: [CustomHealthStatusType](./literals.md#customhealthstatustype)
   *(required)*
+
+### update_private_dns_namespace
+
+Updates a private DNS namespace.
+
+Type annotations for
+`boto3.client("servicediscovery").update_private_dns_namespace` method.
+
+Boto3 documentation:
+[ServiceDiscovery.Client.update_private_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_private_dns_namespace)
+
+Arguments mapping described in
+[UpdatePrivateDnsNamespaceRequestRequestTypeDef](./type_defs.md#updateprivatednsnamespacerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `Namespace`:
+  [PrivateDnsNamespaceChangeTypeDef](./type_defs.md#privatednsnamespacechangetypedef)
+  *(required)*
+- `UpdaterRequestId`: `str`
+
+Returns
+[UpdatePrivateDnsNamespaceResponseTypeDef](./type_defs.md#updateprivatednsnamespaceresponsetypedef).
+
+### update_public_dns_namespace
+
+Updates a public DNS namespace.
+
+Type annotations for
+`boto3.client("servicediscovery").update_public_dns_namespace` method.
+
+Boto3 documentation:
+[ServiceDiscovery.Client.update_public_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_public_dns_namespace)
+
+Arguments mapping described in
+[UpdatePublicDnsNamespaceRequestRequestTypeDef](./type_defs.md#updatepublicdnsnamespacerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `Namespace`:
+  [PublicDnsNamespaceChangeTypeDef](./type_defs.md#publicdnsnamespacechangetypedef)
+  *(required)*
+- `UpdaterRequestId`: `str`
+
+Returns
+[UpdatePublicDnsNamespaceResponseTypeDef](./type_defs.md#updatepublicdnsnamespaceresponsetypedef).
 
 ### update_service
 
@@ -614,7 +704,7 @@ Boto3 documentation:
 [ServiceDiscovery.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_service)
 
 Arguments mapping described in
-[UpdateServiceRequestTypeDef](./type_defs.md#updateservicerequesttypedef).
+[UpdateServiceRequestRequestTypeDef](./type_defs.md#updateservicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -623,7 +713,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateServiceResponseResponseTypeDef](./type_defs.md#updateserviceresponseresponsetypedef).
+[UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef).
 
 ### get_paginator
 

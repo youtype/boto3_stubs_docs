@@ -11,6 +11,7 @@ type annotations stubs module
   - [SnowballClient](#snowballclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [cancel_cluster](#cancel_cluster)
     - [cancel_job](#cancel_job)
@@ -85,6 +86,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+SnowballClient exceptions.
+
+Type annotations for `boto3.client("snowball").exceptions` method.
+
+Boto3 documentation:
+[Snowball.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -110,7 +122,7 @@ Boto3 documentation:
 [Snowball.Client.cancel_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_cluster)
 
 Arguments mapping described in
-[CancelClusterRequestTypeDef](./type_defs.md#cancelclusterrequesttypedef).
+[CancelClusterRequestRequestTypeDef](./type_defs.md#cancelclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -128,7 +140,7 @@ Boto3 documentation:
 [Snowball.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_job)
 
 Arguments mapping described in
-[CancelJobRequestTypeDef](./type_defs.md#canceljobrequesttypedef).
+[CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -146,14 +158,14 @@ Boto3 documentation:
 [Snowball.Client.create_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_address)
 
 Arguments mapping described in
-[CreateAddressRequestTypeDef](./type_defs.md#createaddressrequesttypedef).
+[CreateAddressRequestRequestTypeDef](./type_defs.md#createaddressrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Address`: [AddressTypeDef](./type_defs.md#addresstypedef) *(required)*
 
 Returns
-[CreateAddressResultResponseTypeDef](./type_defs.md#createaddressresultresponsetypedef).
+[CreateAddressResultTypeDef](./type_defs.md#createaddressresulttypedef).
 
 ### create_cluster
 
@@ -165,7 +177,7 @@ Boto3 documentation:
 [Snowball.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_cluster)
 
 Arguments mapping described in
-[CreateClusterRequestTypeDef](./type_defs.md#createclusterrequesttypedef).
+[CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -189,7 +201,7 @@ Keyword-only arguments:
   [RemoteManagementType](./literals.md#remotemanagementtype)
 
 Returns
-[CreateClusterResultResponseTypeDef](./type_defs.md#createclusterresultresponsetypedef).
+[CreateClusterResultTypeDef](./type_defs.md#createclusterresulttypedef).
 
 ### create_job
 
@@ -202,7 +214,7 @@ Boto3 documentation:
 [Snowball.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_job)
 
 Arguments mapping described in
-[CreateJobRequestTypeDef](./type_defs.md#createjobrequesttypedef).
+[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -228,8 +240,7 @@ Keyword-only arguments:
   [RemoteManagementType](./literals.md#remotemanagementtype)
 - `LongTermPricingId`: `str`
 
-Returns
-[CreateJobResultResponseTypeDef](./type_defs.md#createjobresultresponsetypedef).
+Returns [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef).
 
 ### create_long_term_pricing
 
@@ -242,7 +253,7 @@ Boto3 documentation:
 [Snowball.Client.create_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_long_term_pricing)
 
 Arguments mapping described in
-[CreateLongTermPricingRequestTypeDef](./type_defs.md#createlongtermpricingrequesttypedef).
+[CreateLongTermPricingRequestRequestTypeDef](./type_defs.md#createlongtermpricingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,7 +263,7 @@ Keyword-only arguments:
 - `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
 
 Returns
-[CreateLongTermPricingResultResponseTypeDef](./type_defs.md#createlongtermpricingresultresponsetypedef).
+[CreateLongTermPricingResultTypeDef](./type_defs.md#createlongtermpricingresulttypedef).
 
 ### create_return_shipping_label
 
@@ -265,7 +276,7 @@ Boto3 documentation:
 [Snowball.Client.create_return_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_return_shipping_label)
 
 Arguments mapping described in
-[CreateReturnShippingLabelRequestTypeDef](./type_defs.md#createreturnshippinglabelrequesttypedef).
+[CreateReturnShippingLabelRequestRequestTypeDef](./type_defs.md#createreturnshippinglabelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,7 +284,7 @@ Keyword-only arguments:
 - `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
 
 Returns
-[CreateReturnShippingLabelResultResponseTypeDef](./type_defs.md#createreturnshippinglabelresultresponsetypedef).
+[CreateReturnShippingLabelResultTypeDef](./type_defs.md#createreturnshippinglabelresulttypedef).
 
 ### describe_address
 
@@ -286,14 +297,14 @@ Boto3 documentation:
 [Snowball.Client.describe_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_address)
 
 Arguments mapping described in
-[DescribeAddressRequestTypeDef](./type_defs.md#describeaddressrequesttypedef).
+[DescribeAddressRequestRequestTypeDef](./type_defs.md#describeaddressrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AddressId`: `str` *(required)*
 
 Returns
-[DescribeAddressResultResponseTypeDef](./type_defs.md#describeaddressresultresponsetypedef).
+[DescribeAddressResultTypeDef](./type_defs.md#describeaddressresulttypedef).
 
 ### describe_addresses
 
@@ -305,7 +316,7 @@ Boto3 documentation:
 [Snowball.Client.describe_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_addresses)
 
 Arguments mapping described in
-[DescribeAddressesRequestTypeDef](./type_defs.md#describeaddressesrequesttypedef).
+[DescribeAddressesRequestRequestTypeDef](./type_defs.md#describeaddressesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -313,7 +324,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeAddressesResultResponseTypeDef](./type_defs.md#describeaddressesresultresponsetypedef).
+[DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef).
 
 ### describe_cluster
 
@@ -326,14 +337,14 @@ Boto3 documentation:
 [Snowball.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_cluster)
 
 Arguments mapping described in
-[DescribeClusterRequestTypeDef](./type_defs.md#describeclusterrequesttypedef).
+[DescribeClusterRequestRequestTypeDef](./type_defs.md#describeclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 
 Returns
-[DescribeClusterResultResponseTypeDef](./type_defs.md#describeclusterresultresponsetypedef).
+[DescribeClusterResultTypeDef](./type_defs.md#describeclusterresulttypedef).
 
 ### describe_job
 
@@ -346,14 +357,13 @@ Boto3 documentation:
 [Snowball.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_job)
 
 Arguments mapping described in
-[DescribeJobRequestTypeDef](./type_defs.md#describejobrequesttypedef).
+[DescribeJobRequestRequestTypeDef](./type_defs.md#describejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
-Returns
-[DescribeJobResultResponseTypeDef](./type_defs.md#describejobresultresponsetypedef).
+Returns [DescribeJobResultTypeDef](./type_defs.md#describejobresulttypedef).
 
 ### describe_return_shipping_label
 
@@ -367,14 +377,14 @@ Boto3 documentation:
 [Snowball.Client.describe_return_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_return_shipping_label)
 
 Arguments mapping described in
-[DescribeReturnShippingLabelRequestTypeDef](./type_defs.md#describereturnshippinglabelrequesttypedef).
+[DescribeReturnShippingLabelRequestRequestTypeDef](./type_defs.md#describereturnshippinglabelrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeReturnShippingLabelResultResponseTypeDef](./type_defs.md#describereturnshippinglabelresultresponsetypedef).
+[DescribeReturnShippingLabelResultTypeDef](./type_defs.md#describereturnshippinglabelresulttypedef).
 
 ### generate_presigned_url
 
@@ -405,14 +415,14 @@ Boto3 documentation:
 [Snowball.Client.get_job_manifest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_manifest)
 
 Arguments mapping described in
-[GetJobManifestRequestTypeDef](./type_defs.md#getjobmanifestrequesttypedef).
+[GetJobManifestRequestRequestTypeDef](./type_defs.md#getjobmanifestrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[GetJobManifestResultResponseTypeDef](./type_defs.md#getjobmanifestresultresponsetypedef).
+[GetJobManifestResultTypeDef](./type_defs.md#getjobmanifestresulttypedef).
 
 ### get_job_unlock_code
 
@@ -424,14 +434,14 @@ Boto3 documentation:
 [Snowball.Client.get_job_unlock_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_unlock_code)
 
 Arguments mapping described in
-[GetJobUnlockCodeRequestTypeDef](./type_defs.md#getjobunlockcoderequesttypedef).
+[GetJobUnlockCodeRequestRequestTypeDef](./type_defs.md#getjobunlockcoderequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[GetJobUnlockCodeResultResponseTypeDef](./type_defs.md#getjobunlockcoderesultresponsetypedef).
+[GetJobUnlockCodeResultTypeDef](./type_defs.md#getjobunlockcoderesulttypedef).
 
 ### get_snowball_usage
 
@@ -444,7 +454,7 @@ Boto3 documentation:
 [Snowball.Client.get_snowball_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_snowball_usage)
 
 Returns
-[GetSnowballUsageResultResponseTypeDef](./type_defs.md#getsnowballusageresultresponsetypedef).
+[GetSnowballUsageResultTypeDef](./type_defs.md#getsnowballusageresulttypedef).
 
 ### get_software_updates
 
@@ -457,14 +467,14 @@ Boto3 documentation:
 [Snowball.Client.get_software_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_software_updates)
 
 Arguments mapping described in
-[GetSoftwareUpdatesRequestTypeDef](./type_defs.md#getsoftwareupdatesrequesttypedef).
+[GetSoftwareUpdatesRequestRequestTypeDef](./type_defs.md#getsoftwareupdatesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
 
 Returns
-[GetSoftwareUpdatesResultResponseTypeDef](./type_defs.md#getsoftwareupdatesresultresponsetypedef).
+[GetSoftwareUpdatesResultTypeDef](./type_defs.md#getsoftwareupdatesresulttypedef).
 
 ### list_cluster_jobs
 
@@ -476,7 +486,7 @@ Boto3 documentation:
 [Snowball.Client.list_cluster_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_cluster_jobs)
 
 Arguments mapping described in
-[ListClusterJobsRequestTypeDef](./type_defs.md#listclusterjobsrequesttypedef).
+[ListClusterJobsRequestRequestTypeDef](./type_defs.md#listclusterjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -485,7 +495,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListClusterJobsResultResponseTypeDef](./type_defs.md#listclusterjobsresultresponsetypedef).
+[ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef).
 
 ### list_clusters
 
@@ -497,15 +507,14 @@ Boto3 documentation:
 [Snowball.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_clusters)
 
 Arguments mapping described in
-[ListClustersRequestTypeDef](./type_defs.md#listclustersrequesttypedef).
+[ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListClustersResultResponseTypeDef](./type_defs.md#listclustersresultresponsetypedef).
+Returns [ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef).
 
 ### list_compatible_images
 
@@ -519,7 +528,7 @@ Boto3 documentation:
 [Snowball.Client.list_compatible_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_compatible_images)
 
 Arguments mapping described in
-[ListCompatibleImagesRequestTypeDef](./type_defs.md#listcompatibleimagesrequesttypedef).
+[ListCompatibleImagesRequestRequestTypeDef](./type_defs.md#listcompatibleimagesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -527,7 +536,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListCompatibleImagesResultResponseTypeDef](./type_defs.md#listcompatibleimagesresultresponsetypedef).
+[ListCompatibleImagesResultTypeDef](./type_defs.md#listcompatibleimagesresulttypedef).
 
 ### list_jobs
 
@@ -539,15 +548,14 @@ Boto3 documentation:
 [Snowball.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_jobs)
 
 Arguments mapping described in
-[ListJobsRequestTypeDef](./type_defs.md#listjobsrequesttypedef).
+[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListJobsResultResponseTypeDef](./type_defs.md#listjobsresultresponsetypedef).
+Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
 
 ### list_long_term_pricing
 
@@ -559,7 +567,7 @@ Boto3 documentation:
 [Snowball.Client.list_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_long_term_pricing)
 
 Arguments mapping described in
-[ListLongTermPricingRequestTypeDef](./type_defs.md#listlongtermpricingrequesttypedef).
+[ListLongTermPricingRequestRequestTypeDef](./type_defs.md#listlongtermpricingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -567,7 +575,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListLongTermPricingResultResponseTypeDef](./type_defs.md#listlongtermpricingresultresponsetypedef).
+[ListLongTermPricingResultTypeDef](./type_defs.md#listlongtermpricingresulttypedef).
 
 ### update_cluster
 
@@ -580,7 +588,7 @@ Boto3 documentation:
 [Snowball.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_cluster)
 
 Arguments mapping described in
-[UpdateClusterRequestTypeDef](./type_defs.md#updateclusterrequesttypedef).
+[UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -608,7 +616,7 @@ Boto3 documentation:
 [Snowball.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job)
 
 Arguments mapping described in
-[UpdateJobRequestTypeDef](./type_defs.md#updatejobrequesttypedef).
+[UpdateJobRequestRequestTypeDef](./type_defs.md#updatejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -638,7 +646,7 @@ Boto3 documentation:
 [Snowball.Client.update_job_shipment_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job_shipment_state)
 
 Arguments mapping described in
-[UpdateJobShipmentStateRequestTypeDef](./type_defs.md#updatejobshipmentstaterequesttypedef).
+[UpdateJobShipmentStateRequestRequestTypeDef](./type_defs.md#updatejobshipmentstaterequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -659,7 +667,7 @@ Boto3 documentation:
 [Snowball.Client.update_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_long_term_pricing)
 
 Arguments mapping described in
-[UpdateLongTermPricingRequestTypeDef](./type_defs.md#updatelongtermpricingrequesttypedef).
+[UpdateLongTermPricingRequestRequestTypeDef](./type_defs.md#updatelongtermpricingrequestrequesttypedef).
 
 Keyword-only arguments:
 

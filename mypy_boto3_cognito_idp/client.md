@@ -11,6 +11,7 @@ type annotations stubs module
   - [CognitoIdentityProviderClient](#cognitoidentityproviderclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_custom_attributes](#add_custom_attributes)
     - [admin_add_user_to_group](#admin_add_user_to_group)
     - [admin_confirm_sign_up](#admin_confirm_sign_up)
@@ -190,6 +191,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CognitoIdentityProviderClient exceptions.
+
+Type annotations for `boto3.client("cognito-idp").exceptions` method.
+
+Boto3 documentation:
+[CognitoIdentityProvider.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_custom_attributes
 
 Adds additional user attributes to the user pool schema.
@@ -201,7 +213,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.add_custom_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.add_custom_attributes)
 
 Arguments mapping described in
-[AddCustomAttributesRequestTypeDef](./type_defs.md#addcustomattributesrequesttypedef).
+[AddCustomAttributesRequestRequestTypeDef](./type_defs.md#addcustomattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,7 +235,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_add_user_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_add_user_to_group)
 
 Arguments mapping described in
-[AdminAddUserToGroupRequestTypeDef](./type_defs.md#adminaddusertogrouprequesttypedef).
+[AdminAddUserToGroupRequestRequestTypeDef](./type_defs.md#adminaddusertogrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -242,7 +254,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_confirm_sign_up](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_confirm_sign_up)
 
 Arguments mapping described in
-[AdminConfirmSignUpRequestTypeDef](./type_defs.md#adminconfirmsignuprequesttypedef).
+[AdminConfirmSignUpRequestRequestTypeDef](./type_defs.md#adminconfirmsignuprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -262,7 +274,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_create_user)
 
 Arguments mapping described in
-[AdminCreateUserRequestTypeDef](./type_defs.md#admincreateuserrequesttypedef).
+[AdminCreateUserRequestRequestTypeDef](./type_defs.md#admincreateuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -280,7 +292,7 @@ Keyword-only arguments:
 - `ClientMetadata`: `Dict`\[`str`, `str`\]
 
 Returns
-[AdminCreateUserResponseResponseTypeDef](./type_defs.md#admincreateuserresponseresponsetypedef).
+[AdminCreateUserResponseTypeDef](./type_defs.md#admincreateuserresponsetypedef).
 
 ### admin_delete_user
 
@@ -292,7 +304,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_delete_user)
 
 Arguments mapping described in
-[AdminDeleteUserRequestTypeDef](./type_defs.md#admindeleteuserrequesttypedef).
+[AdminDeleteUserRequestRequestTypeDef](./type_defs.md#admindeleteuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -310,7 +322,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_delete_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_delete_user_attributes)
 
 Arguments mapping described in
-[AdminDeleteUserAttributesRequestTypeDef](./type_defs.md#admindeleteuserattributesrequesttypedef).
+[AdminDeleteUserAttributesRequestRequestTypeDef](./type_defs.md#admindeleteuserattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -332,7 +344,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_disable_provider_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_provider_for_user)
 
 Arguments mapping described in
-[AdminDisableProviderForUserRequestTypeDef](./type_defs.md#admindisableproviderforuserrequesttypedef).
+[AdminDisableProviderForUserRequestRequestTypeDef](./type_defs.md#admindisableproviderforuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -353,7 +365,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_disable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_user)
 
 Arguments mapping described in
-[AdminDisableUserRequestTypeDef](./type_defs.md#admindisableuserrequesttypedef).
+[AdminDisableUserRequestRequestTypeDef](./type_defs.md#admindisableuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -372,7 +384,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_enable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_enable_user)
 
 Arguments mapping described in
-[AdminEnableUserRequestTypeDef](./type_defs.md#adminenableuserrequesttypedef).
+[AdminEnableUserRequestRequestTypeDef](./type_defs.md#adminenableuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -391,7 +403,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_forget_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_forget_device)
 
 Arguments mapping described in
-[AdminForgetDeviceRequestTypeDef](./type_defs.md#adminforgetdevicerequesttypedef).
+[AdminForgetDeviceRequestRequestTypeDef](./type_defs.md#adminforgetdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -409,7 +421,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_get_device)
 
 Arguments mapping described in
-[AdminGetDeviceRequestTypeDef](./type_defs.md#admingetdevicerequesttypedef).
+[AdminGetDeviceRequestRequestTypeDef](./type_defs.md#admingetdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -418,7 +430,7 @@ Keyword-only arguments:
 - `Username`: `str` *(required)*
 
 Returns
-[AdminGetDeviceResponseResponseTypeDef](./type_defs.md#admingetdeviceresponseresponsetypedef).
+[AdminGetDeviceResponseTypeDef](./type_defs.md#admingetdeviceresponsetypedef).
 
 ### admin_get_user
 
@@ -430,7 +442,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_get_user)
 
 Arguments mapping described in
-[AdminGetUserRequestTypeDef](./type_defs.md#admingetuserrequesttypedef).
+[AdminGetUserRequestRequestTypeDef](./type_defs.md#admingetuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -438,7 +450,7 @@ Keyword-only arguments:
 - `Username`: `str` *(required)*
 
 Returns
-[AdminGetUserResponseResponseTypeDef](./type_defs.md#admingetuserresponseresponsetypedef).
+[AdminGetUserResponseTypeDef](./type_defs.md#admingetuserresponsetypedef).
 
 ### admin_initiate_auth
 
@@ -450,7 +462,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_initiate_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_initiate_auth)
 
 Arguments mapping described in
-[AdminInitiateAuthRequestTypeDef](./type_defs.md#admininitiateauthrequesttypedef).
+[AdminInitiateAuthRequestRequestTypeDef](./type_defs.md#admininitiateauthrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -465,7 +477,7 @@ Keyword-only arguments:
   [ContextDataTypeTypeDef](./type_defs.md#contextdatatypetypedef)
 
 Returns
-[AdminInitiateAuthResponseResponseTypeDef](./type_defs.md#admininitiateauthresponseresponsetypedef).
+[AdminInitiateAuthResponseTypeDef](./type_defs.md#admininitiateauthresponsetypedef).
 
 ### admin_link_provider_for_user
 
@@ -480,7 +492,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_link_provider_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_link_provider_for_user)
 
 Arguments mapping described in
-[AdminLinkProviderForUserRequestTypeDef](./type_defs.md#adminlinkproviderforuserrequesttypedef).
+[AdminLinkProviderForUserRequestRequestTypeDef](./type_defs.md#adminlinkproviderforuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -504,7 +516,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_devices)
 
 Arguments mapping described in
-[AdminListDevicesRequestTypeDef](./type_defs.md#adminlistdevicesrequesttypedef).
+[AdminListDevicesRequestRequestTypeDef](./type_defs.md#adminlistdevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -514,7 +526,7 @@ Keyword-only arguments:
 - `PaginationToken`: `str`
 
 Returns
-[AdminListDevicesResponseResponseTypeDef](./type_defs.md#adminlistdevicesresponseresponsetypedef).
+[AdminListDevicesResponseTypeDef](./type_defs.md#adminlistdevicesresponsetypedef).
 
 ### admin_list_groups_for_user
 
@@ -527,7 +539,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_list_groups_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_groups_for_user)
 
 Arguments mapping described in
-[AdminListGroupsForUserRequestTypeDef](./type_defs.md#adminlistgroupsforuserrequesttypedef).
+[AdminListGroupsForUserRequestRequestTypeDef](./type_defs.md#adminlistgroupsforuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -537,7 +549,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[AdminListGroupsForUserResponseResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponseresponsetypedef).
+[AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef).
 
 ### admin_list_user_auth_events
 
@@ -551,7 +563,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_list_user_auth_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_user_auth_events)
 
 Arguments mapping described in
-[AdminListUserAuthEventsRequestTypeDef](./type_defs.md#adminlistuserautheventsrequesttypedef).
+[AdminListUserAuthEventsRequestRequestTypeDef](./type_defs.md#adminlistuserautheventsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -561,7 +573,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[AdminListUserAuthEventsResponseResponseTypeDef](./type_defs.md#adminlistuserautheventsresponseresponsetypedef).
+[AdminListUserAuthEventsResponseTypeDef](./type_defs.md#adminlistuserautheventsresponsetypedef).
 
 ### admin_remove_user_from_group
 
@@ -574,7 +586,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_remove_user_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_remove_user_from_group)
 
 Arguments mapping described in
-[AdminRemoveUserFromGroupRequestTypeDef](./type_defs.md#adminremoveuserfromgrouprequesttypedef).
+[AdminRemoveUserFromGroupRequestRequestTypeDef](./type_defs.md#adminremoveuserfromgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -593,7 +605,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_reset_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_reset_user_password)
 
 Arguments mapping described in
-[AdminResetUserPasswordRequestTypeDef](./type_defs.md#adminresetuserpasswordrequesttypedef).
+[AdminResetUserPasswordRequestRequestTypeDef](./type_defs.md#adminresetuserpasswordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -614,7 +626,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_respond_to_auth_challenge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_respond_to_auth_challenge)
 
 Arguments mapping described in
-[AdminRespondToAuthChallengeRequestTypeDef](./type_defs.md#adminrespondtoauthchallengerequesttypedef).
+[AdminRespondToAuthChallengeRequestRequestTypeDef](./type_defs.md#adminrespondtoauthchallengerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -631,7 +643,7 @@ Keyword-only arguments:
 - `ClientMetadata`: `Dict`\[`str`, `str`\]
 
 Returns
-[AdminRespondToAuthChallengeResponseResponseTypeDef](./type_defs.md#adminrespondtoauthchallengeresponseresponsetypedef).
+[AdminRespondToAuthChallengeResponseTypeDef](./type_defs.md#adminrespondtoauthchallengeresponsetypedef).
 
 ### admin_set_user_mfa_preference
 
@@ -645,7 +657,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_set_user_mfa_preference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_mfa_preference)
 
 Arguments mapping described in
-[AdminSetUserMFAPreferenceRequestTypeDef](./type_defs.md#adminsetusermfapreferencerequesttypedef).
+[AdminSetUserMFAPreferenceRequestRequestTypeDef](./type_defs.md#adminsetusermfapreferencerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -669,7 +681,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_set_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_password)
 
 Arguments mapping described in
-[AdminSetUserPasswordRequestTypeDef](./type_defs.md#adminsetuserpasswordrequesttypedef).
+[AdminSetUserPasswordRequestRequestTypeDef](./type_defs.md#adminsetuserpasswordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -691,7 +703,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_set_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_settings)
 
 Arguments mapping described in
-[AdminSetUserSettingsRequestTypeDef](./type_defs.md#adminsetusersettingsrequesttypedef).
+[AdminSetUserSettingsRequestRequestTypeDef](./type_defs.md#adminsetusersettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -715,7 +727,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_update_auth_event_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_auth_event_feedback)
 
 Arguments mapping described in
-[AdminUpdateAuthEventFeedbackRequestTypeDef](./type_defs.md#adminupdateautheventfeedbackrequesttypedef).
+[AdminUpdateAuthEventFeedbackRequestRequestTypeDef](./type_defs.md#adminupdateautheventfeedbackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -738,7 +750,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_update_device_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_device_status)
 
 Arguments mapping described in
-[AdminUpdateDeviceStatusRequestTypeDef](./type_defs.md#adminupdatedevicestatusrequesttypedef).
+[AdminUpdateDeviceStatusRequestRequestTypeDef](./type_defs.md#adminupdatedevicestatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -762,7 +774,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_update_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_user_attributes)
 
 Arguments mapping described in
-[AdminUpdateUserAttributesRequestTypeDef](./type_defs.md#adminupdateuserattributesrequesttypedef).
+[AdminUpdateUserAttributesRequestRequestTypeDef](./type_defs.md#adminupdateuserattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -786,7 +798,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.admin_user_global_sign_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_user_global_sign_out)
 
 Arguments mapping described in
-[AdminUserGlobalSignOutRequestTypeDef](./type_defs.md#adminuserglobalsignoutrequesttypedef).
+[AdminUserGlobalSignOutRequestRequestTypeDef](./type_defs.md#adminuserglobalsignoutrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -806,7 +818,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.associate_software_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.associate_software_token)
 
 Arguments mapping described in
-[AssociateSoftwareTokenRequestTypeDef](./type_defs.md#associatesoftwaretokenrequesttypedef).
+[AssociateSoftwareTokenRequestRequestTypeDef](./type_defs.md#associatesoftwaretokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -814,7 +826,7 @@ Keyword-only arguments:
 - `Session`: `str`
 
 Returns
-[AssociateSoftwareTokenResponseResponseTypeDef](./type_defs.md#associatesoftwaretokenresponseresponsetypedef).
+[AssociateSoftwareTokenResponseTypeDef](./type_defs.md#associatesoftwaretokenresponsetypedef).
 
 ### can_paginate
 
@@ -841,7 +853,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.change_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.change_password)
 
 Arguments mapping described in
-[ChangePasswordRequestTypeDef](./type_defs.md#changepasswordrequesttypedef).
+[ChangePasswordRequestRequestTypeDef](./type_defs.md#changepasswordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -861,7 +873,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.confirm_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_device)
 
 Arguments mapping described in
-[ConfirmDeviceRequestTypeDef](./type_defs.md#confirmdevicerequesttypedef).
+[ConfirmDeviceRequestRequestTypeDef](./type_defs.md#confirmdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -872,7 +884,7 @@ Keyword-only arguments:
 - `DeviceName`: `str`
 
 Returns
-[ConfirmDeviceResponseResponseTypeDef](./type_defs.md#confirmdeviceresponseresponsetypedef).
+[ConfirmDeviceResponseTypeDef](./type_defs.md#confirmdeviceresponsetypedef).
 
 ### confirm_forgot_password
 
@@ -885,7 +897,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.confirm_forgot_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_forgot_password)
 
 Arguments mapping described in
-[ConfirmForgotPasswordRequestTypeDef](./type_defs.md#confirmforgotpasswordrequesttypedef).
+[ConfirmForgotPasswordRequestRequestTypeDef](./type_defs.md#confirmforgotpasswordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -913,7 +925,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.confirm_sign_up](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_sign_up)
 
 Arguments mapping described in
-[ConfirmSignUpRequestTypeDef](./type_defs.md#confirmsignuprequesttypedef).
+[ConfirmSignUpRequestRequestTypeDef](./type_defs.md#confirmsignuprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -940,7 +952,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_group)
 
 Arguments mapping described in
-[CreateGroupRequestTypeDef](./type_defs.md#creategrouprequesttypedef).
+[CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -951,7 +963,7 @@ Keyword-only arguments:
 - `Precedence`: `int`
 
 Returns
-[CreateGroupResponseResponseTypeDef](./type_defs.md#creategroupresponseresponsetypedef).
+[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
 
 ### create_identity_provider
 
@@ -964,7 +976,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.create_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_identity_provider)
 
 Arguments mapping described in
-[CreateIdentityProviderRequestTypeDef](./type_defs.md#createidentityproviderrequesttypedef).
+[CreateIdentityProviderRequestRequestTypeDef](./type_defs.md#createidentityproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -978,7 +990,7 @@ Keyword-only arguments:
 - `IdpIdentifiers`: `List`\[`str`\]
 
 Returns
-[CreateIdentityProviderResponseResponseTypeDef](./type_defs.md#createidentityproviderresponseresponsetypedef).
+[CreateIdentityProviderResponseTypeDef](./type_defs.md#createidentityproviderresponsetypedef).
 
 ### create_resource_server
 
@@ -991,7 +1003,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.create_resource_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_resource_server)
 
 Arguments mapping described in
-[CreateResourceServerRequestTypeDef](./type_defs.md#createresourceserverrequesttypedef).
+[CreateResourceServerRequestRequestTypeDef](./type_defs.md#createresourceserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1002,7 +1014,7 @@ Keyword-only arguments:
   `List`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
 
 Returns
-[CreateResourceServerResponseResponseTypeDef](./type_defs.md#createresourceserverresponseresponsetypedef).
+[CreateResourceServerResponseTypeDef](./type_defs.md#createresourceserverresponsetypedef).
 
 ### create_user_import_job
 
@@ -1015,7 +1027,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.create_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_import_job)
 
 Arguments mapping described in
-[CreateUserImportJobRequestTypeDef](./type_defs.md#createuserimportjobrequesttypedef).
+[CreateUserImportJobRequestRequestTypeDef](./type_defs.md#createuserimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1024,7 +1036,7 @@ Keyword-only arguments:
 - `CloudWatchLogsRoleArn`: `str` *(required)*
 
 Returns
-[CreateUserImportJobResponseResponseTypeDef](./type_defs.md#createuserimportjobresponseresponsetypedef).
+[CreateUserImportJobResponseTypeDef](./type_defs.md#createuserimportjobresponsetypedef).
 
 ### create_user_pool
 
@@ -1037,7 +1049,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.create_user_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool)
 
 Arguments mapping described in
-[CreateUserPoolRequestTypeDef](./type_defs.md#createuserpoolrequesttypedef).
+[CreateUserPoolRequestRequestTypeDef](./type_defs.md#createuserpoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1078,7 +1090,7 @@ Keyword-only arguments:
   [AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef)
 
 Returns
-[CreateUserPoolResponseResponseTypeDef](./type_defs.md#createuserpoolresponseresponsetypedef).
+[CreateUserPoolResponseTypeDef](./type_defs.md#createuserpoolresponsetypedef).
 
 ### create_user_pool_client
 
@@ -1091,7 +1103,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.create_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool_client)
 
 Arguments mapping described in
-[CreateUserPoolClientRequestTypeDef](./type_defs.md#createuserpoolclientrequesttypedef).
+[CreateUserPoolClientRequestRequestTypeDef](./type_defs.md#createuserpoolclientrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1122,7 +1134,7 @@ Keyword-only arguments:
 - `EnableTokenRevocation`: `bool`
 
 Returns
-[CreateUserPoolClientResponseResponseTypeDef](./type_defs.md#createuserpoolclientresponseresponsetypedef).
+[CreateUserPoolClientResponseTypeDef](./type_defs.md#createuserpoolclientresponsetypedef).
 
 ### create_user_pool_domain
 
@@ -1135,7 +1147,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.create_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool_domain)
 
 Arguments mapping described in
-[CreateUserPoolDomainRequestTypeDef](./type_defs.md#createuserpooldomainrequesttypedef).
+[CreateUserPoolDomainRequestRequestTypeDef](./type_defs.md#createuserpooldomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1145,7 +1157,7 @@ Keyword-only arguments:
   [CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef)
 
 Returns
-[CreateUserPoolDomainResponseResponseTypeDef](./type_defs.md#createuserpooldomainresponseresponsetypedef).
+[CreateUserPoolDomainResponseTypeDef](./type_defs.md#createuserpooldomainresponsetypedef).
 
 ### delete_group
 
@@ -1157,7 +1169,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_group)
 
 Arguments mapping described in
-[DeleteGroupRequestTypeDef](./type_defs.md#deletegrouprequesttypedef).
+[DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1175,7 +1187,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_identity_provider)
 
 Arguments mapping described in
-[DeleteIdentityProviderRequestTypeDef](./type_defs.md#deleteidentityproviderrequesttypedef).
+[DeleteIdentityProviderRequestRequestTypeDef](./type_defs.md#deleteidentityproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1193,7 +1205,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_resource_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_resource_server)
 
 Arguments mapping described in
-[DeleteResourceServerRequestTypeDef](./type_defs.md#deleteresourceserverrequesttypedef).
+[DeleteResourceServerRequestRequestTypeDef](./type_defs.md#deleteresourceserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1210,7 +1222,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user)
 
 Arguments mapping described in
-[DeleteUserRequestTypeDef](./type_defs.md#deleteuserrequesttypedef).
+[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1227,7 +1239,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_attributes)
 
 Arguments mapping described in
-[DeleteUserAttributesRequestTypeDef](./type_defs.md#deleteuserattributesrequesttypedef).
+[DeleteUserAttributesRequestRequestTypeDef](./type_defs.md#deleteuserattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1246,7 +1258,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_user_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool)
 
 Arguments mapping described in
-[DeleteUserPoolRequestTypeDef](./type_defs.md#deleteuserpoolrequesttypedef).
+[DeleteUserPoolRequestRequestTypeDef](./type_defs.md#deleteuserpoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1263,7 +1275,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool_client)
 
 Arguments mapping described in
-[DeleteUserPoolClientRequestTypeDef](./type_defs.md#deleteuserpoolclientrequesttypedef).
+[DeleteUserPoolClientRequestRequestTypeDef](./type_defs.md#deleteuserpoolclientrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1281,7 +1293,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.delete_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool_domain)
 
 Arguments mapping described in
-[DeleteUserPoolDomainRequestTypeDef](./type_defs.md#deleteuserpooldomainrequesttypedef).
+[DeleteUserPoolDomainRequestRequestTypeDef](./type_defs.md#deleteuserpooldomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1301,7 +1313,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_identity_provider)
 
 Arguments mapping described in
-[DescribeIdentityProviderRequestTypeDef](./type_defs.md#describeidentityproviderrequesttypedef).
+[DescribeIdentityProviderRequestRequestTypeDef](./type_defs.md#describeidentityproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1309,7 +1321,7 @@ Keyword-only arguments:
 - `ProviderName`: `str` *(required)*
 
 Returns
-[DescribeIdentityProviderResponseResponseTypeDef](./type_defs.md#describeidentityproviderresponseresponsetypedef).
+[DescribeIdentityProviderResponseTypeDef](./type_defs.md#describeidentityproviderresponsetypedef).
 
 ### describe_resource_server
 
@@ -1322,7 +1334,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_resource_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_resource_server)
 
 Arguments mapping described in
-[DescribeResourceServerRequestTypeDef](./type_defs.md#describeresourceserverrequesttypedef).
+[DescribeResourceServerRequestRequestTypeDef](./type_defs.md#describeresourceserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1330,7 +1342,7 @@ Keyword-only arguments:
 - `Identifier`: `str` *(required)*
 
 Returns
-[DescribeResourceServerResponseResponseTypeDef](./type_defs.md#describeresourceserverresponseresponsetypedef).
+[DescribeResourceServerResponseTypeDef](./type_defs.md#describeresourceserverresponsetypedef).
 
 ### describe_risk_configuration
 
@@ -1343,7 +1355,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_risk_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_risk_configuration)
 
 Arguments mapping described in
-[DescribeRiskConfigurationRequestTypeDef](./type_defs.md#describeriskconfigurationrequesttypedef).
+[DescribeRiskConfigurationRequestRequestTypeDef](./type_defs.md#describeriskconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1351,7 +1363,7 @@ Keyword-only arguments:
 - `ClientId`: `str`
 
 Returns
-[DescribeRiskConfigurationResponseResponseTypeDef](./type_defs.md#describeriskconfigurationresponseresponsetypedef).
+[DescribeRiskConfigurationResponseTypeDef](./type_defs.md#describeriskconfigurationresponsetypedef).
 
 ### describe_user_import_job
 
@@ -1364,7 +1376,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_import_job)
 
 Arguments mapping described in
-[DescribeUserImportJobRequestTypeDef](./type_defs.md#describeuserimportjobrequesttypedef).
+[DescribeUserImportJobRequestRequestTypeDef](./type_defs.md#describeuserimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1372,7 +1384,7 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[DescribeUserImportJobResponseResponseTypeDef](./type_defs.md#describeuserimportjobresponseresponsetypedef).
+[DescribeUserImportJobResponseTypeDef](./type_defs.md#describeuserimportjobresponsetypedef).
 
 ### describe_user_pool
 
@@ -1384,14 +1396,14 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_user_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool)
 
 Arguments mapping described in
-[DescribeUserPoolRequestTypeDef](./type_defs.md#describeuserpoolrequesttypedef).
+[DescribeUserPoolRequestRequestTypeDef](./type_defs.md#describeuserpoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 
 Returns
-[DescribeUserPoolResponseResponseTypeDef](./type_defs.md#describeuserpoolresponseresponsetypedef).
+[DescribeUserPoolResponseTypeDef](./type_defs.md#describeuserpoolresponsetypedef).
 
 ### describe_user_pool_client
 
@@ -1405,7 +1417,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool_client)
 
 Arguments mapping described in
-[DescribeUserPoolClientRequestTypeDef](./type_defs.md#describeuserpoolclientrequesttypedef).
+[DescribeUserPoolClientRequestRequestTypeDef](./type_defs.md#describeuserpoolclientrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1413,7 +1425,7 @@ Keyword-only arguments:
 - `ClientId`: `str` *(required)*
 
 Returns
-[DescribeUserPoolClientResponseResponseTypeDef](./type_defs.md#describeuserpoolclientresponseresponsetypedef).
+[DescribeUserPoolClientResponseTypeDef](./type_defs.md#describeuserpoolclientresponsetypedef).
 
 ### describe_user_pool_domain
 
@@ -1426,14 +1438,14 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.describe_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool_domain)
 
 Arguments mapping described in
-[DescribeUserPoolDomainRequestTypeDef](./type_defs.md#describeuserpooldomainrequesttypedef).
+[DescribeUserPoolDomainRequestRequestTypeDef](./type_defs.md#describeuserpooldomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Domain`: `str` *(required)*
 
 Returns
-[DescribeUserPoolDomainResponseResponseTypeDef](./type_defs.md#describeuserpooldomainresponseresponsetypedef).
+[DescribeUserPoolDomainResponseTypeDef](./type_defs.md#describeuserpooldomainresponsetypedef).
 
 ### forget_device
 
@@ -1445,7 +1457,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.forget_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.forget_device)
 
 Arguments mapping described in
-[ForgetDeviceRequestTypeDef](./type_defs.md#forgetdevicerequesttypedef).
+[ForgetDeviceRequestRequestTypeDef](./type_defs.md#forgetdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1463,7 +1475,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.forgot_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.forgot_password)
 
 Arguments mapping described in
-[ForgotPasswordRequestTypeDef](./type_defs.md#forgotpasswordrequesttypedef).
+[ForgotPasswordRequestRequestTypeDef](./type_defs.md#forgotpasswordrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1477,7 +1489,7 @@ Keyword-only arguments:
 - `ClientMetadata`: `Dict`\[`str`, `str`\]
 
 Returns
-[ForgotPasswordResponseResponseTypeDef](./type_defs.md#forgotpasswordresponseresponsetypedef).
+[ForgotPasswordResponseTypeDef](./type_defs.md#forgotpasswordresponsetypedef).
 
 ### generate_presigned_url
 
@@ -1509,14 +1521,14 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.get_csv_header](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_csv_header)
 
 Arguments mapping described in
-[GetCSVHeaderRequestTypeDef](./type_defs.md#getcsvheaderrequesttypedef).
+[GetCSVHeaderRequestRequestTypeDef](./type_defs.md#getcsvheaderrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 
 Returns
-[GetCSVHeaderResponseResponseTypeDef](./type_defs.md#getcsvheaderresponseresponsetypedef).
+[GetCSVHeaderResponseTypeDef](./type_defs.md#getcsvheaderresponsetypedef).
 
 ### get_device
 
@@ -1528,15 +1540,14 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_device)
 
 Arguments mapping described in
-[GetDeviceRequestTypeDef](./type_defs.md#getdevicerequesttypedef).
+[GetDeviceRequestRequestTypeDef](./type_defs.md#getdevicerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `DeviceKey`: `str` *(required)*
 - `AccessToken`: `str`
 
-Returns
-[GetDeviceResponseResponseTypeDef](./type_defs.md#getdeviceresponseresponsetypedef).
+Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
 
 ### get_group
 
@@ -1548,15 +1559,14 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_group)
 
 Arguments mapping described in
-[GetGroupRequestTypeDef](./type_defs.md#getgrouprequesttypedef).
+[GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `UserPoolId`: `str` *(required)*
 
-Returns
-[GetGroupResponseResponseTypeDef](./type_defs.md#getgroupresponseresponsetypedef).
+Returns [GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef).
 
 ### get_identity_provider_by_identifier
 
@@ -1569,7 +1579,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.get_identity_provider_by_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_identity_provider_by_identifier)
 
 Arguments mapping described in
-[GetIdentityProviderByIdentifierRequestTypeDef](./type_defs.md#getidentityproviderbyidentifierrequesttypedef).
+[GetIdentityProviderByIdentifierRequestRequestTypeDef](./type_defs.md#getidentityproviderbyidentifierrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1577,7 +1587,7 @@ Keyword-only arguments:
 - `IdpIdentifier`: `str` *(required)*
 
 Returns
-[GetIdentityProviderByIdentifierResponseResponseTypeDef](./type_defs.md#getidentityproviderbyidentifierresponseresponsetypedef).
+[GetIdentityProviderByIdentifierResponseTypeDef](./type_defs.md#getidentityproviderbyidentifierresponsetypedef).
 
 ### get_signing_certificate
 
@@ -1590,14 +1600,14 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.get_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_signing_certificate)
 
 Arguments mapping described in
-[GetSigningCertificateRequestTypeDef](./type_defs.md#getsigningcertificaterequesttypedef).
+[GetSigningCertificateRequestRequestTypeDef](./type_defs.md#getsigningcertificaterequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 
 Returns
-[GetSigningCertificateResponseResponseTypeDef](./type_defs.md#getsigningcertificateresponseresponsetypedef).
+[GetSigningCertificateResponseTypeDef](./type_defs.md#getsigningcertificateresponsetypedef).
 
 ### get_ui_customization
 
@@ -1610,7 +1620,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.get_ui_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_ui_customization)
 
 Arguments mapping described in
-[GetUICustomizationRequestTypeDef](./type_defs.md#getuicustomizationrequesttypedef).
+[GetUICustomizationRequestRequestTypeDef](./type_defs.md#getuicustomizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1618,7 +1628,7 @@ Keyword-only arguments:
 - `ClientId`: `str`
 
 Returns
-[GetUICustomizationResponseResponseTypeDef](./type_defs.md#getuicustomizationresponseresponsetypedef).
+[GetUICustomizationResponseTypeDef](./type_defs.md#getuicustomizationresponsetypedef).
 
 ### get_user
 
@@ -1630,14 +1640,13 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user)
 
 Arguments mapping described in
-[GetUserRequestTypeDef](./type_defs.md#getuserrequesttypedef).
+[GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccessToken`: `str` *(required)*
 
-Returns
-[GetUserResponseResponseTypeDef](./type_defs.md#getuserresponseresponsetypedef).
+Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
 
 ### get_user_attribute_verification_code
 
@@ -1650,7 +1659,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.get_user_attribute_verification_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user_attribute_verification_code)
 
 Arguments mapping described in
-[GetUserAttributeVerificationCodeRequestTypeDef](./type_defs.md#getuserattributeverificationcoderequesttypedef).
+[GetUserAttributeVerificationCodeRequestRequestTypeDef](./type_defs.md#getuserattributeverificationcoderequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1659,7 +1668,7 @@ Keyword-only arguments:
 - `ClientMetadata`: `Dict`\[`str`, `str`\]
 
 Returns
-[GetUserAttributeVerificationCodeResponseResponseTypeDef](./type_defs.md#getuserattributeverificationcoderesponseresponsetypedef).
+[GetUserAttributeVerificationCodeResponseTypeDef](./type_defs.md#getuserattributeverificationcoderesponsetypedef).
 
 ### get_user_pool_mfa_config
 
@@ -1672,14 +1681,14 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.get_user_pool_mfa_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user_pool_mfa_config)
 
 Arguments mapping described in
-[GetUserPoolMfaConfigRequestTypeDef](./type_defs.md#getuserpoolmfaconfigrequesttypedef).
+[GetUserPoolMfaConfigRequestRequestTypeDef](./type_defs.md#getuserpoolmfaconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 
 Returns
-[GetUserPoolMfaConfigResponseResponseTypeDef](./type_defs.md#getuserpoolmfaconfigresponseresponsetypedef).
+[GetUserPoolMfaConfigResponseTypeDef](./type_defs.md#getuserpoolmfaconfigresponsetypedef).
 
 ### global_sign_out
 
@@ -1691,7 +1700,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.global_sign_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.global_sign_out)
 
 Arguments mapping described in
-[GlobalSignOutRequestTypeDef](./type_defs.md#globalsignoutrequesttypedef).
+[GlobalSignOutRequestRequestTypeDef](./type_defs.md#globalsignoutrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1709,7 +1718,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.initiate_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.initiate_auth)
 
 Arguments mapping described in
-[InitiateAuthRequestTypeDef](./type_defs.md#initiateauthrequesttypedef).
+[InitiateAuthRequestRequestTypeDef](./type_defs.md#initiateauthrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1723,7 +1732,7 @@ Keyword-only arguments:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
 
 Returns
-[InitiateAuthResponseResponseTypeDef](./type_defs.md#initiateauthresponseresponsetypedef).
+[InitiateAuthResponseTypeDef](./type_defs.md#initiateauthresponsetypedef).
 
 ### list_devices
 
@@ -1735,7 +1744,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_devices)
 
 Arguments mapping described in
-[ListDevicesRequestTypeDef](./type_defs.md#listdevicesrequesttypedef).
+[ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1744,7 +1753,7 @@ Keyword-only arguments:
 - `PaginationToken`: `str`
 
 Returns
-[ListDevicesResponseResponseTypeDef](./type_defs.md#listdevicesresponseresponsetypedef).
+[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
 
 ### list_groups
 
@@ -1756,7 +1765,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_groups)
 
 Arguments mapping described in
-[ListGroupsRequestTypeDef](./type_defs.md#listgroupsrequesttypedef).
+[ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1764,8 +1773,7 @@ Keyword-only arguments:
 - `Limit`: `int`
 - `NextToken`: `str`
 
-Returns
-[ListGroupsResponseResponseTypeDef](./type_defs.md#listgroupsresponseresponsetypedef).
+Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
 ### list_identity_providers
 
@@ -1778,7 +1786,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.list_identity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_identity_providers)
 
 Arguments mapping described in
-[ListIdentityProvidersRequestTypeDef](./type_defs.md#listidentityprovidersrequesttypedef).
+[ListIdentityProvidersRequestRequestTypeDef](./type_defs.md#listidentityprovidersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1787,7 +1795,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListIdentityProvidersResponseResponseTypeDef](./type_defs.md#listidentityprovidersresponseresponsetypedef).
+[ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef).
 
 ### list_resource_servers
 
@@ -1800,7 +1808,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.list_resource_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_resource_servers)
 
 Arguments mapping described in
-[ListResourceServersRequestTypeDef](./type_defs.md#listresourceserversrequesttypedef).
+[ListResourceServersRequestRequestTypeDef](./type_defs.md#listresourceserversrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1809,7 +1817,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListResourceServersResponseResponseTypeDef](./type_defs.md#listresourceserversresponseresponsetypedef).
+[ListResourceServersResponseTypeDef](./type_defs.md#listresourceserversresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -1822,14 +1830,14 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### list_user_import_jobs
 
@@ -1842,7 +1850,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.list_user_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_import_jobs)
 
 Arguments mapping described in
-[ListUserImportJobsRequestTypeDef](./type_defs.md#listuserimportjobsrequesttypedef).
+[ListUserImportJobsRequestRequestTypeDef](./type_defs.md#listuserimportjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1851,7 +1859,7 @@ Keyword-only arguments:
 - `PaginationToken`: `str`
 
 Returns
-[ListUserImportJobsResponseResponseTypeDef](./type_defs.md#listuserimportjobsresponseresponsetypedef).
+[ListUserImportJobsResponseTypeDef](./type_defs.md#listuserimportjobsresponsetypedef).
 
 ### list_user_pool_clients
 
@@ -1864,7 +1872,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.list_user_pool_clients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_pool_clients)
 
 Arguments mapping described in
-[ListUserPoolClientsRequestTypeDef](./type_defs.md#listuserpoolclientsrequesttypedef).
+[ListUserPoolClientsRequestRequestTypeDef](./type_defs.md#listuserpoolclientsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1873,7 +1881,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListUserPoolClientsResponseResponseTypeDef](./type_defs.md#listuserpoolclientsresponseresponsetypedef).
+[ListUserPoolClientsResponseTypeDef](./type_defs.md#listuserpoolclientsresponsetypedef).
 
 ### list_user_pools
 
@@ -1885,7 +1893,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.list_user_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_pools)
 
 Arguments mapping described in
-[ListUserPoolsRequestTypeDef](./type_defs.md#listuserpoolsrequesttypedef).
+[ListUserPoolsRequestRequestTypeDef](./type_defs.md#listuserpoolsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1893,7 +1901,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListUserPoolsResponseResponseTypeDef](./type_defs.md#listuserpoolsresponseresponsetypedef).
+[ListUserPoolsResponseTypeDef](./type_defs.md#listuserpoolsresponsetypedef).
 
 ### list_users
 
@@ -1905,7 +1913,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_users)
 
 Arguments mapping described in
-[ListUsersRequestTypeDef](./type_defs.md#listusersrequesttypedef).
+[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1915,8 +1923,7 @@ Keyword-only arguments:
 - `PaginationToken`: `str`
 - `Filter`: `str`
 
-Returns
-[ListUsersResponseResponseTypeDef](./type_defs.md#listusersresponseresponsetypedef).
+Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
 ### list_users_in_group
 
@@ -1928,7 +1935,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.list_users_in_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_users_in_group)
 
 Arguments mapping described in
-[ListUsersInGroupRequestTypeDef](./type_defs.md#listusersingrouprequesttypedef).
+[ListUsersInGroupRequestRequestTypeDef](./type_defs.md#listusersingrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1938,7 +1945,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListUsersInGroupResponseResponseTypeDef](./type_defs.md#listusersingroupresponseresponsetypedef).
+[ListUsersInGroupResponseTypeDef](./type_defs.md#listusersingroupresponsetypedef).
 
 ### resend_confirmation_code
 
@@ -1952,7 +1959,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.resend_confirmation_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.resend_confirmation_code)
 
 Arguments mapping described in
-[ResendConfirmationCodeRequestTypeDef](./type_defs.md#resendconfirmationcoderequesttypedef).
+[ResendConfirmationCodeRequestRequestTypeDef](./type_defs.md#resendconfirmationcoderequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1966,7 +1973,7 @@ Keyword-only arguments:
 - `ClientMetadata`: `Dict`\[`str`, `str`\]
 
 Returns
-[ResendConfirmationCodeResponseResponseTypeDef](./type_defs.md#resendconfirmationcoderesponseresponsetypedef).
+[ResendConfirmationCodeResponseTypeDef](./type_defs.md#resendconfirmationcoderesponsetypedef).
 
 ### respond_to_auth_challenge
 
@@ -1979,7 +1986,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.respond_to_auth_challenge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.respond_to_auth_challenge)
 
 Arguments mapping described in
-[RespondToAuthChallengeRequestTypeDef](./type_defs.md#respondtoauthchallengerequesttypedef).
+[RespondToAuthChallengeRequestRequestTypeDef](./type_defs.md#respondtoauthchallengerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1995,7 +2002,7 @@ Keyword-only arguments:
 - `ClientMetadata`: `Dict`\[`str`, `str`\]
 
 Returns
-[RespondToAuthChallengeResponseResponseTypeDef](./type_defs.md#respondtoauthchallengeresponseresponsetypedef).
+[RespondToAuthChallengeResponseTypeDef](./type_defs.md#respondtoauthchallengeresponsetypedef).
 
 ### revoke_token
 
@@ -2007,7 +2014,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.revoke_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.revoke_token)
 
 Arguments mapping described in
-[RevokeTokenRequestTypeDef](./type_defs.md#revoketokenrequesttypedef).
+[RevokeTokenRequestRequestTypeDef](./type_defs.md#revoketokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2028,7 +2035,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.set_risk_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_risk_configuration)
 
 Arguments mapping described in
-[SetRiskConfigurationRequestTypeDef](./type_defs.md#setriskconfigurationrequesttypedef).
+[SetRiskConfigurationRequestRequestTypeDef](./type_defs.md#setriskconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2042,7 +2049,7 @@ Keyword-only arguments:
   [RiskExceptionConfigurationTypeTypeDef](./type_defs.md#riskexceptionconfigurationtypetypedef)
 
 Returns
-[SetRiskConfigurationResponseResponseTypeDef](./type_defs.md#setriskconfigurationresponseresponsetypedef).
+[SetRiskConfigurationResponseTypeDef](./type_defs.md#setriskconfigurationresponsetypedef).
 
 ### set_ui_customization
 
@@ -2054,7 +2061,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.set_ui_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_ui_customization)
 
 Arguments mapping described in
-[SetUICustomizationRequestTypeDef](./type_defs.md#setuicustomizationrequesttypedef).
+[SetUICustomizationRequestRequestTypeDef](./type_defs.md#setuicustomizationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2064,7 +2071,7 @@ Keyword-only arguments:
 - `ImageFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 Returns
-[SetUICustomizationResponseResponseTypeDef](./type_defs.md#setuicustomizationresponseresponsetypedef).
+[SetUICustomizationResponseTypeDef](./type_defs.md#setuicustomizationresponsetypedef).
 
 ### set_user_mfa_preference
 
@@ -2078,7 +2085,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.set_user_mfa_preference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_mfa_preference)
 
 Arguments mapping described in
-[SetUserMFAPreferenceRequestTypeDef](./type_defs.md#setusermfapreferencerequesttypedef).
+[SetUserMFAPreferenceRequestRequestTypeDef](./type_defs.md#setusermfapreferencerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2101,7 +2108,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.set_user_pool_mfa_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_pool_mfa_config)
 
 Arguments mapping described in
-[SetUserPoolMfaConfigRequestTypeDef](./type_defs.md#setuserpoolmfaconfigrequesttypedef).
+[SetUserPoolMfaConfigRequestRequestTypeDef](./type_defs.md#setuserpoolmfaconfigrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2113,7 +2120,7 @@ Keyword-only arguments:
 - `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
 
 Returns
-[SetUserPoolMfaConfigResponseResponseTypeDef](./type_defs.md#setuserpoolmfaconfigresponseresponsetypedef).
+[SetUserPoolMfaConfigResponseTypeDef](./type_defs.md#setuserpoolmfaconfigresponsetypedef).
 
 ### set_user_settings
 
@@ -2125,7 +2132,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.set_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_settings)
 
 Arguments mapping described in
-[SetUserSettingsRequestTypeDef](./type_defs.md#setusersettingsrequesttypedef).
+[SetUserSettingsRequestRequestTypeDef](./type_defs.md#setusersettingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2147,7 +2154,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.sign_up](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.sign_up)
 
 Arguments mapping described in
-[SignUpRequestTypeDef](./type_defs.md#signuprequesttypedef).
+[SignUpRequestRequestTypeDef](./type_defs.md#signuprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2165,8 +2172,7 @@ Keyword-only arguments:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
 - `ClientMetadata`: `Dict`\[`str`, `str`\]
 
-Returns
-[SignUpResponseResponseTypeDef](./type_defs.md#signupresponseresponsetypedef).
+Returns [SignUpResponseTypeDef](./type_defs.md#signupresponsetypedef).
 
 ### start_user_import_job
 
@@ -2179,7 +2185,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.start_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.start_user_import_job)
 
 Arguments mapping described in
-[StartUserImportJobRequestTypeDef](./type_defs.md#startuserimportjobrequesttypedef).
+[StartUserImportJobRequestRequestTypeDef](./type_defs.md#startuserimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2187,7 +2193,7 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[StartUserImportJobResponseResponseTypeDef](./type_defs.md#startuserimportjobresponseresponsetypedef).
+[StartUserImportJobResponseTypeDef](./type_defs.md#startuserimportjobresponsetypedef).
 
 ### stop_user_import_job
 
@@ -2199,7 +2205,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.stop_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.stop_user_import_job)
 
 Arguments mapping described in
-[StopUserImportJobRequestTypeDef](./type_defs.md#stopuserimportjobrequesttypedef).
+[StopUserImportJobRequestRequestTypeDef](./type_defs.md#stopuserimportjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2207,7 +2213,7 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[StopUserImportJobResponseResponseTypeDef](./type_defs.md#stopuserimportjobresponseresponsetypedef).
+[StopUserImportJobResponseTypeDef](./type_defs.md#stopuserimportjobresponsetypedef).
 
 ### tag_resource
 
@@ -2219,7 +2225,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2238,7 +2244,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2259,7 +2265,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.update_auth_event_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_auth_event_feedback)
 
 Arguments mapping described in
-[UpdateAuthEventFeedbackRequestTypeDef](./type_defs.md#updateautheventfeedbackrequesttypedef).
+[UpdateAuthEventFeedbackRequestRequestTypeDef](./type_defs.md#updateautheventfeedbackrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2282,7 +2288,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.update_device_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_device_status)
 
 Arguments mapping described in
-[UpdateDeviceStatusRequestTypeDef](./type_defs.md#updatedevicestatusrequesttypedef).
+[UpdateDeviceStatusRequestRequestTypeDef](./type_defs.md#updatedevicestatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2303,7 +2309,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_group)
 
 Arguments mapping described in
-[UpdateGroupRequestTypeDef](./type_defs.md#updategrouprequesttypedef).
+[UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2314,7 +2320,7 @@ Keyword-only arguments:
 - `Precedence`: `int`
 
 Returns
-[UpdateGroupResponseResponseTypeDef](./type_defs.md#updategroupresponseresponsetypedef).
+[UpdateGroupResponseTypeDef](./type_defs.md#updategroupresponsetypedef).
 
 ### update_identity_provider
 
@@ -2327,7 +2333,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.update_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_identity_provider)
 
 Arguments mapping described in
-[UpdateIdentityProviderRequestTypeDef](./type_defs.md#updateidentityproviderrequesttypedef).
+[UpdateIdentityProviderRequestRequestTypeDef](./type_defs.md#updateidentityproviderrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2338,7 +2344,7 @@ Keyword-only arguments:
 - `IdpIdentifiers`: `List`\[`str`\]
 
 Returns
-[UpdateIdentityProviderResponseResponseTypeDef](./type_defs.md#updateidentityproviderresponseresponsetypedef).
+[UpdateIdentityProviderResponseTypeDef](./type_defs.md#updateidentityproviderresponsetypedef).
 
 ### update_resource_server
 
@@ -2351,7 +2357,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.update_resource_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_resource_server)
 
 Arguments mapping described in
-[UpdateResourceServerRequestTypeDef](./type_defs.md#updateresourceserverrequesttypedef).
+[UpdateResourceServerRequestRequestTypeDef](./type_defs.md#updateresourceserverrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2362,7 +2368,7 @@ Keyword-only arguments:
   `List`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
 
 Returns
-[UpdateResourceServerResponseResponseTypeDef](./type_defs.md#updateresourceserverresponseresponsetypedef).
+[UpdateResourceServerResponseTypeDef](./type_defs.md#updateresourceserverresponsetypedef).
 
 ### update_user_attributes
 
@@ -2375,7 +2381,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.update_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_attributes)
 
 Arguments mapping described in
-[UpdateUserAttributesRequestTypeDef](./type_defs.md#updateuserattributesrequesttypedef).
+[UpdateUserAttributesRequestRequestTypeDef](./type_defs.md#updateuserattributesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2386,7 +2392,7 @@ Keyword-only arguments:
 - `ClientMetadata`: `Dict`\[`str`, `str`\]
 
 Returns
-[UpdateUserAttributesResponseResponseTypeDef](./type_defs.md#updateuserattributesresponseresponsetypedef).
+[UpdateUserAttributesResponseTypeDef](./type_defs.md#updateuserattributesresponsetypedef).
 
 ### update_user_pool
 
@@ -2398,7 +2404,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.update_user_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool)
 
 Arguments mapping described in
-[UpdateUserPoolRequestTypeDef](./type_defs.md#updateuserpoolrequesttypedef).
+[UpdateUserPoolRequestRequestTypeDef](./type_defs.md#updateuserpoolrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2443,7 +2449,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.update_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool_client)
 
 Arguments mapping described in
-[UpdateUserPoolClientRequestTypeDef](./type_defs.md#updateuserpoolclientrequesttypedef).
+[UpdateUserPoolClientRequestRequestTypeDef](./type_defs.md#updateuserpoolclientrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2474,7 +2480,7 @@ Keyword-only arguments:
 - `EnableTokenRevocation`: `bool`
 
 Returns
-[UpdateUserPoolClientResponseResponseTypeDef](./type_defs.md#updateuserpoolclientresponseresponsetypedef).
+[UpdateUserPoolClientResponseTypeDef](./type_defs.md#updateuserpoolclientresponsetypedef).
 
 ### update_user_pool_domain
 
@@ -2488,7 +2494,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.update_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool_domain)
 
 Arguments mapping described in
-[UpdateUserPoolDomainRequestTypeDef](./type_defs.md#updateuserpooldomainrequesttypedef).
+[UpdateUserPoolDomainRequestRequestTypeDef](./type_defs.md#updateuserpooldomainrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2499,7 +2505,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[UpdateUserPoolDomainResponseResponseTypeDef](./type_defs.md#updateuserpooldomainresponseresponsetypedef).
+[UpdateUserPoolDomainResponseTypeDef](./type_defs.md#updateuserpooldomainresponsetypedef).
 
 ### verify_software_token
 
@@ -2513,7 +2519,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.verify_software_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.verify_software_token)
 
 Arguments mapping described in
-[VerifySoftwareTokenRequestTypeDef](./type_defs.md#verifysoftwaretokenrequesttypedef).
+[VerifySoftwareTokenRequestRequestTypeDef](./type_defs.md#verifysoftwaretokenrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -2523,7 +2529,7 @@ Keyword-only arguments:
 - `FriendlyDeviceName`: `str`
 
 Returns
-[VerifySoftwareTokenResponseResponseTypeDef](./type_defs.md#verifysoftwaretokenresponseresponsetypedef).
+[VerifySoftwareTokenResponseTypeDef](./type_defs.md#verifysoftwaretokenresponsetypedef).
 
 ### verify_user_attribute
 
@@ -2536,7 +2542,7 @@ Boto3 documentation:
 [CognitoIdentityProvider.Client.verify_user_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.verify_user_attribute)
 
 Arguments mapping described in
-[VerifyUserAttributeRequestTypeDef](./type_defs.md#verifyuserattributerequesttypedef).
+[VerifyUserAttributeRequestRequestTypeDef](./type_defs.md#verifyuserattributerequestrequesttypedef).
 
 Keyword-only arguments:
 

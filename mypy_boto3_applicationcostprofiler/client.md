@@ -11,6 +11,7 @@ type annotations stubs module
   - [ApplicationCostProfilerClient](#applicationcostprofilerclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [delete_report_definition](#delete_report_definition)
     - [generate_presigned_url](#generate_presigned_url)
@@ -60,6 +61,18 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ApplicationCostProfilerClient exceptions.
+
+Type annotations for `boto3.client("applicationcostprofiler").exceptions`
+method.
+
+Boto3 documentation:
+[ApplicationCostProfiler.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -87,14 +100,14 @@ Boto3 documentation:
 [ApplicationCostProfiler.Client.delete_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.delete_report_definition)
 
 Arguments mapping described in
-[DeleteReportDefinitionRequestTypeDef](./type_defs.md#deletereportdefinitionrequesttypedef).
+[DeleteReportDefinitionRequestRequestTypeDef](./type_defs.md#deletereportdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `reportId`: `str` *(required)*
 
 Returns
-[DeleteReportDefinitionResultResponseTypeDef](./type_defs.md#deletereportdefinitionresultresponsetypedef).
+[DeleteReportDefinitionResultTypeDef](./type_defs.md#deletereportdefinitionresulttypedef).
 
 ### generate_presigned_url
 
@@ -127,14 +140,14 @@ Boto3 documentation:
 [ApplicationCostProfiler.Client.get_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.get_report_definition)
 
 Arguments mapping described in
-[GetReportDefinitionRequestTypeDef](./type_defs.md#getreportdefinitionrequesttypedef).
+[GetReportDefinitionRequestRequestTypeDef](./type_defs.md#getreportdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `reportId`: `str` *(required)*
 
 Returns
-[GetReportDefinitionResultResponseTypeDef](./type_defs.md#getreportdefinitionresultresponsetypedef).
+[GetReportDefinitionResultTypeDef](./type_defs.md#getreportdefinitionresulttypedef).
 
 ### import_application_usage
 
@@ -147,7 +160,7 @@ Boto3 documentation:
 [ApplicationCostProfiler.Client.import_application_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.import_application_usage)
 
 Arguments mapping described in
-[ImportApplicationUsageRequestTypeDef](./type_defs.md#importapplicationusagerequesttypedef).
+[ImportApplicationUsageRequestRequestTypeDef](./type_defs.md#importapplicationusagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -156,7 +169,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ImportApplicationUsageResultResponseTypeDef](./type_defs.md#importapplicationusageresultresponsetypedef).
+[ImportApplicationUsageResultTypeDef](./type_defs.md#importapplicationusageresulttypedef).
 
 ### list_report_definitions
 
@@ -169,7 +182,7 @@ Boto3 documentation:
 [ApplicationCostProfiler.Client.list_report_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.list_report_definitions)
 
 Arguments mapping described in
-[ListReportDefinitionsRequestTypeDef](./type_defs.md#listreportdefinitionsrequesttypedef).
+[ListReportDefinitionsRequestRequestTypeDef](./type_defs.md#listreportdefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -177,7 +190,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListReportDefinitionsResultResponseTypeDef](./type_defs.md#listreportdefinitionsresultresponsetypedef).
+[ListReportDefinitionsResultTypeDef](./type_defs.md#listreportdefinitionsresulttypedef).
 
 ### put_report_definition
 
@@ -190,7 +203,7 @@ Boto3 documentation:
 [ApplicationCostProfiler.Client.put_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.put_report_definition)
 
 Arguments mapping described in
-[PutReportDefinitionRequestTypeDef](./type_defs.md#putreportdefinitionrequesttypedef).
+[PutReportDefinitionRequestRequestTypeDef](./type_defs.md#putreportdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -203,7 +216,7 @@ Keyword-only arguments:
   [S3LocationTypeDef](./type_defs.md#s3locationtypedef) *(required)*
 
 Returns
-[PutReportDefinitionResultResponseTypeDef](./type_defs.md#putreportdefinitionresultresponsetypedef).
+[PutReportDefinitionResultTypeDef](./type_defs.md#putreportdefinitionresulttypedef).
 
 ### update_report_definition
 
@@ -216,7 +229,7 @@ Boto3 documentation:
 [ApplicationCostProfiler.Client.update_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.update_report_definition)
 
 Arguments mapping described in
-[UpdateReportDefinitionRequestTypeDef](./type_defs.md#updatereportdefinitionrequesttypedef).
+[UpdateReportDefinitionRequestRequestTypeDef](./type_defs.md#updatereportdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -229,7 +242,7 @@ Keyword-only arguments:
   [S3LocationTypeDef](./type_defs.md#s3locationtypedef) *(required)*
 
 Returns
-[UpdateReportDefinitionResultResponseTypeDef](./type_defs.md#updatereportdefinitionresultresponsetypedef).
+[UpdateReportDefinitionResultTypeDef](./type_defs.md#updatereportdefinitionresulttypedef).
 
 ### get_paginator
 

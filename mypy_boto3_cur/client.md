@@ -12,6 +12,7 @@ type annotations stubs module
   - [CostandUsageReportServiceClient](#costandusagereportserviceclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [delete_report_definition](#delete_report_definition)
     - [describe_report_definitions](#describe_report_definitions)
@@ -58,6 +59,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CostandUsageReportServiceClient exceptions.
+
+Type annotations for `boto3.client("cur").exceptions` method.
+
+Boto3 documentation:
+[CostandUsageReportService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -83,14 +95,14 @@ Boto3 documentation:
 [CostandUsageReportService.Client.delete_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.delete_report_definition)
 
 Arguments mapping described in
-[DeleteReportDefinitionRequestTypeDef](./type_defs.md#deletereportdefinitionrequesttypedef).
+[DeleteReportDefinitionRequestRequestTypeDef](./type_defs.md#deletereportdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ReportName`: `str`
 
 Returns
-[DeleteReportDefinitionResponseResponseTypeDef](./type_defs.md#deletereportdefinitionresponseresponsetypedef).
+[DeleteReportDefinitionResponseTypeDef](./type_defs.md#deletereportdefinitionresponsetypedef).
 
 ### describe_report_definitions
 
@@ -102,7 +114,7 @@ Boto3 documentation:
 [CostandUsageReportService.Client.describe_report_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.describe_report_definitions)
 
 Arguments mapping described in
-[DescribeReportDefinitionsRequestTypeDef](./type_defs.md#describereportdefinitionsrequesttypedef).
+[DescribeReportDefinitionsRequestRequestTypeDef](./type_defs.md#describereportdefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -110,7 +122,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeReportDefinitionsResponseResponseTypeDef](./type_defs.md#describereportdefinitionsresponseresponsetypedef).
+[DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -140,7 +152,7 @@ Boto3 documentation:
 [CostandUsageReportService.Client.modify_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.modify_report_definition)
 
 Arguments mapping described in
-[ModifyReportDefinitionRequestTypeDef](./type_defs.md#modifyreportdefinitionrequesttypedef).
+[ModifyReportDefinitionRequestRequestTypeDef](./type_defs.md#modifyreportdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -161,7 +173,7 @@ Boto3 documentation:
 [CostandUsageReportService.Client.put_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.put_report_definition)
 
 Arguments mapping described in
-[PutReportDefinitionRequestTypeDef](./type_defs.md#putreportdefinitionrequesttypedef).
+[PutReportDefinitionRequestRequestTypeDef](./type_defs.md#putreportdefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 

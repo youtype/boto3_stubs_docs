@@ -11,6 +11,7 @@ type annotations stubs module
   - [ElasticLoadBalancingClient](#elasticloadbalancingclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [add_tags](#add_tags)
     - [apply_security_groups_to_load_balancer](#apply_security_groups_to_load_balancer)
     - [attach_load_balancer_to_subnets](#attach_load_balancer_to_subnets)
@@ -101,6 +102,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+ElasticLoadBalancingClient exceptions.
+
+Type annotations for `boto3.client("elb").exceptions` method.
+
+Boto3 documentation:
+[ElasticLoadBalancing.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### add_tags
 
 Adds the specified tags to the specified load balancer.
@@ -111,7 +123,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.add_tags)
 
 Arguments mapping described in
-[AddTagsInputTypeDef](./type_defs.md#addtagsinputtypedef).
+[AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -132,7 +144,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.apply_security_groups_to_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.apply_security_groups_to_load_balancer)
 
 Arguments mapping described in
-[ApplySecurityGroupsToLoadBalancerInputTypeDef](./type_defs.md#applysecuritygroupstoloadbalancerinputtypedef).
+[ApplySecurityGroupsToLoadBalancerInputRequestTypeDef](./type_defs.md#applysecuritygroupstoloadbalancerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -140,7 +152,7 @@ Keyword-only arguments:
 - `SecurityGroups`: `List`\[`str`\] *(required)*
 
 Returns
-[ApplySecurityGroupsToLoadBalancerOutputResponseTypeDef](./type_defs.md#applysecuritygroupstoloadbalanceroutputresponsetypedef).
+[ApplySecurityGroupsToLoadBalancerOutputTypeDef](./type_defs.md#applysecuritygroupstoloadbalanceroutputtypedef).
 
 ### attach_load_balancer_to_subnets
 
@@ -154,7 +166,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.attach_load_balancer_to_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.attach_load_balancer_to_subnets)
 
 Arguments mapping described in
-[AttachLoadBalancerToSubnetsInputTypeDef](./type_defs.md#attachloadbalancertosubnetsinputtypedef).
+[AttachLoadBalancerToSubnetsInputRequestTypeDef](./type_defs.md#attachloadbalancertosubnetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -162,7 +174,7 @@ Keyword-only arguments:
 - `Subnets`: `List`\[`str`\] *(required)*
 
 Returns
-[AttachLoadBalancerToSubnetsOutputResponseTypeDef](./type_defs.md#attachloadbalancertosubnetsoutputresponsetypedef).
+[AttachLoadBalancerToSubnetsOutputTypeDef](./type_defs.md#attachloadbalancertosubnetsoutputtypedef).
 
 ### can_paginate
 
@@ -190,7 +202,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.configure_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.configure_health_check)
 
 Arguments mapping described in
-[ConfigureHealthCheckInputTypeDef](./type_defs.md#configurehealthcheckinputtypedef).
+[ConfigureHealthCheckInputRequestTypeDef](./type_defs.md#configurehealthcheckinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -199,7 +211,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ConfigureHealthCheckOutputResponseTypeDef](./type_defs.md#configurehealthcheckoutputresponsetypedef).
+[ConfigureHealthCheckOutputTypeDef](./type_defs.md#configurehealthcheckoutputtypedef).
 
 ### create_app_cookie_stickiness_policy
 
@@ -213,7 +225,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.create_app_cookie_stickiness_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_app_cookie_stickiness_policy)
 
 Arguments mapping described in
-[CreateAppCookieStickinessPolicyInputTypeDef](./type_defs.md#createappcookiestickinesspolicyinputtypedef).
+[CreateAppCookieStickinessPolicyInputRequestTypeDef](./type_defs.md#createappcookiestickinesspolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -235,7 +247,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.create_lb_cookie_stickiness_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_lb_cookie_stickiness_policy)
 
 Arguments mapping described in
-[CreateLBCookieStickinessPolicyInputTypeDef](./type_defs.md#createlbcookiestickinesspolicyinputtypedef).
+[CreateLBCookieStickinessPolicyInputRequestTypeDef](./type_defs.md#createlbcookiestickinesspolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -255,7 +267,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer)
 
 Arguments mapping described in
-[CreateAccessPointInputTypeDef](./type_defs.md#createaccesspointinputtypedef).
+[CreateAccessPointInputRequestTypeDef](./type_defs.md#createaccesspointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -269,7 +281,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateAccessPointOutputResponseTypeDef](./type_defs.md#createaccesspointoutputresponsetypedef).
+[CreateAccessPointOutputTypeDef](./type_defs.md#createaccesspointoutputtypedef).
 
 ### create_load_balancer_listeners
 
@@ -282,7 +294,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.create_load_balancer_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer_listeners)
 
 Arguments mapping described in
-[CreateLoadBalancerListenerInputTypeDef](./type_defs.md#createloadbalancerlistenerinputtypedef).
+[CreateLoadBalancerListenerInputRequestTypeDef](./type_defs.md#createloadbalancerlistenerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -302,7 +314,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.create_load_balancer_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer_policy)
 
 Arguments mapping described in
-[CreateLoadBalancerPolicyInputTypeDef](./type_defs.md#createloadbalancerpolicyinputtypedef).
+[CreateLoadBalancerPolicyInputRequestTypeDef](./type_defs.md#createloadbalancerpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -324,7 +336,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.delete_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer)
 
 Arguments mapping described in
-[DeleteAccessPointInputTypeDef](./type_defs.md#deleteaccesspointinputtypedef).
+[DeleteAccessPointInputRequestTypeDef](./type_defs.md#deleteaccesspointinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -343,7 +355,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.delete_load_balancer_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer_listeners)
 
 Arguments mapping described in
-[DeleteLoadBalancerListenerInputTypeDef](./type_defs.md#deleteloadbalancerlistenerinputtypedef).
+[DeleteLoadBalancerListenerInputRequestTypeDef](./type_defs.md#deleteloadbalancerlistenerinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -362,7 +374,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.delete_load_balancer_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer_policy)
 
 Arguments mapping described in
-[DeleteLoadBalancerPolicyInputTypeDef](./type_defs.md#deleteloadbalancerpolicyinputtypedef).
+[DeleteLoadBalancerPolicyInputRequestTypeDef](./type_defs.md#deleteloadbalancerpolicyinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -382,7 +394,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.deregister_instances_from_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.deregister_instances_from_load_balancer)
 
 Arguments mapping described in
-[DeregisterEndPointsInputTypeDef](./type_defs.md#deregisterendpointsinputtypedef).
+[DeregisterEndPointsInputRequestTypeDef](./type_defs.md#deregisterendpointsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -391,7 +403,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[DeregisterEndPointsOutputResponseTypeDef](./type_defs.md#deregisterendpointsoutputresponsetypedef).
+[DeregisterEndPointsOutputTypeDef](./type_defs.md#deregisterendpointsoutputtypedef).
 
 ### describe_account_limits
 
@@ -404,7 +416,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_account_limits)
 
 Arguments mapping described in
-[DescribeAccountLimitsInputTypeDef](./type_defs.md#describeaccountlimitsinputtypedef).
+[DescribeAccountLimitsInputRequestTypeDef](./type_defs.md#describeaccountlimitsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -412,7 +424,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeAccountLimitsOutputResponseTypeDef](./type_defs.md#describeaccountlimitsoutputresponsetypedef).
+[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef).
 
 ### describe_instance_health
 
@@ -425,7 +437,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_instance_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_instance_health)
 
 Arguments mapping described in
-[DescribeEndPointStateInputTypeDef](./type_defs.md#describeendpointstateinputtypedef).
+[DescribeEndPointStateInputRequestTypeDef](./type_defs.md#describeendpointstateinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -433,7 +445,7 @@ Keyword-only arguments:
 - `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 
 Returns
-[DescribeEndPointStateOutputResponseTypeDef](./type_defs.md#describeendpointstateoutputresponsetypedef).
+[DescribeEndPointStateOutputTypeDef](./type_defs.md#describeendpointstateoutputtypedef).
 
 ### describe_load_balancer_attributes
 
@@ -446,14 +458,14 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_attributes)
 
 Arguments mapping described in
-[DescribeLoadBalancerAttributesInputTypeDef](./type_defs.md#describeloadbalancerattributesinputtypedef).
+[DescribeLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#describeloadbalancerattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 
 Returns
-[DescribeLoadBalancerAttributesOutputResponseTypeDef](./type_defs.md#describeloadbalancerattributesoutputresponsetypedef).
+[DescribeLoadBalancerAttributesOutputTypeDef](./type_defs.md#describeloadbalancerattributesoutputtypedef).
 
 ### describe_load_balancer_policies
 
@@ -466,7 +478,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_load_balancer_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_policies)
 
 Arguments mapping described in
-[DescribeLoadBalancerPoliciesInputTypeDef](./type_defs.md#describeloadbalancerpoliciesinputtypedef).
+[DescribeLoadBalancerPoliciesInputRequestTypeDef](./type_defs.md#describeloadbalancerpoliciesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -474,7 +486,7 @@ Keyword-only arguments:
 - `PolicyNames`: `List`\[`str`\]
 
 Returns
-[DescribeLoadBalancerPoliciesOutputResponseTypeDef](./type_defs.md#describeloadbalancerpoliciesoutputresponsetypedef).
+[DescribeLoadBalancerPoliciesOutputTypeDef](./type_defs.md#describeloadbalancerpoliciesoutputtypedef).
 
 ### describe_load_balancer_policy_types
 
@@ -488,14 +500,14 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_load_balancer_policy_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_policy_types)
 
 Arguments mapping described in
-[DescribeLoadBalancerPolicyTypesInputTypeDef](./type_defs.md#describeloadbalancerpolicytypesinputtypedef).
+[DescribeLoadBalancerPolicyTypesInputRequestTypeDef](./type_defs.md#describeloadbalancerpolicytypesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `PolicyTypeNames`: `List`\[`str`\]
 
 Returns
-[DescribeLoadBalancerPolicyTypesOutputResponseTypeDef](./type_defs.md#describeloadbalancerpolicytypesoutputresponsetypedef).
+[DescribeLoadBalancerPolicyTypesOutputTypeDef](./type_defs.md#describeloadbalancerpolicytypesoutputtypedef).
 
 ### describe_load_balancers
 
@@ -507,7 +519,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancers)
 
 Arguments mapping described in
-[DescribeAccessPointsInputTypeDef](./type_defs.md#describeaccesspointsinputtypedef).
+[DescribeAccessPointsInputRequestTypeDef](./type_defs.md#describeaccesspointsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -516,7 +528,7 @@ Keyword-only arguments:
 - `PageSize`: `int`
 
 Returns
-[DescribeAccessPointsOutputResponseTypeDef](./type_defs.md#describeaccesspointsoutputresponsetypedef).
+[DescribeAccessPointsOutputTypeDef](./type_defs.md#describeaccesspointsoutputtypedef).
 
 ### describe_tags
 
@@ -528,14 +540,13 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_tags)
 
 Arguments mapping described in
-[DescribeTagsInputTypeDef](./type_defs.md#describetagsinputtypedef).
+[DescribeTagsInputRequestTypeDef](./type_defs.md#describetagsinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `LoadBalancerNames`: `List`\[`str`\] *(required)*
 
-Returns
-[DescribeTagsOutputResponseTypeDef](./type_defs.md#describetagsoutputresponsetypedef).
+Returns [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef).
 
 ### detach_load_balancer_from_subnets
 
@@ -549,7 +560,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.detach_load_balancer_from_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.detach_load_balancer_from_subnets)
 
 Arguments mapping described in
-[DetachLoadBalancerFromSubnetsInputTypeDef](./type_defs.md#detachloadbalancerfromsubnetsinputtypedef).
+[DetachLoadBalancerFromSubnetsInputRequestTypeDef](./type_defs.md#detachloadbalancerfromsubnetsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -557,7 +568,7 @@ Keyword-only arguments:
 - `Subnets`: `List`\[`str`\] *(required)*
 
 Returns
-[DetachLoadBalancerFromSubnetsOutputResponseTypeDef](./type_defs.md#detachloadbalancerfromsubnetsoutputresponsetypedef).
+[DetachLoadBalancerFromSubnetsOutputTypeDef](./type_defs.md#detachloadbalancerfromsubnetsoutputtypedef).
 
 ### disable_availability_zones_for_load_balancer
 
@@ -571,7 +582,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.disable_availability_zones_for_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.disable_availability_zones_for_load_balancer)
 
 Arguments mapping described in
-[RemoveAvailabilityZonesInputTypeDef](./type_defs.md#removeavailabilityzonesinputtypedef).
+[RemoveAvailabilityZonesInputRequestTypeDef](./type_defs.md#removeavailabilityzonesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -579,7 +590,7 @@ Keyword-only arguments:
 - `AvailabilityZones`: `List`\[`str`\] *(required)*
 
 Returns
-[RemoveAvailabilityZonesOutputResponseTypeDef](./type_defs.md#removeavailabilityzonesoutputresponsetypedef).
+[RemoveAvailabilityZonesOutputTypeDef](./type_defs.md#removeavailabilityzonesoutputtypedef).
 
 ### enable_availability_zones_for_load_balancer
 
@@ -593,7 +604,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.enable_availability_zones_for_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.enable_availability_zones_for_load_balancer)
 
 Arguments mapping described in
-[AddAvailabilityZonesInputTypeDef](./type_defs.md#addavailabilityzonesinputtypedef).
+[AddAvailabilityZonesInputRequestTypeDef](./type_defs.md#addavailabilityzonesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -601,7 +612,7 @@ Keyword-only arguments:
 - `AvailabilityZones`: `List`\[`str`\] *(required)*
 
 Returns
-[AddAvailabilityZonesOutputResponseTypeDef](./type_defs.md#addavailabilityzonesoutputresponsetypedef).
+[AddAvailabilityZonesOutputTypeDef](./type_defs.md#addavailabilityzonesoutputtypedef).
 
 ### generate_presigned_url
 
@@ -632,7 +643,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.modify_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.modify_load_balancer_attributes)
 
 Arguments mapping described in
-[ModifyLoadBalancerAttributesInputTypeDef](./type_defs.md#modifyloadbalancerattributesinputtypedef).
+[ModifyLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#modifyloadbalancerattributesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -642,7 +653,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[ModifyLoadBalancerAttributesOutputResponseTypeDef](./type_defs.md#modifyloadbalancerattributesoutputresponsetypedef).
+[ModifyLoadBalancerAttributesOutputTypeDef](./type_defs.md#modifyloadbalancerattributesoutputtypedef).
 
 ### register_instances_with_load_balancer
 
@@ -655,7 +666,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.register_instances_with_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.register_instances_with_load_balancer)
 
 Arguments mapping described in
-[RegisterEndPointsInputTypeDef](./type_defs.md#registerendpointsinputtypedef).
+[RegisterEndPointsInputRequestTypeDef](./type_defs.md#registerendpointsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -664,7 +675,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[RegisterEndPointsOutputResponseTypeDef](./type_defs.md#registerendpointsoutputresponsetypedef).
+[RegisterEndPointsOutputTypeDef](./type_defs.md#registerendpointsoutputtypedef).
 
 ### remove_tags
 
@@ -676,7 +687,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.remove_tags)
 
 Arguments mapping described in
-[RemoveTagsInputTypeDef](./type_defs.md#removetagsinputtypedef).
+[RemoveTagsInputRequestTypeDef](./type_defs.md#removetagsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -697,7 +708,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.set_load_balancer_listener_ssl_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_listener_ssl_certificate)
 
 Arguments mapping described in
-[SetLoadBalancerListenerSSLCertificateInputTypeDef](./type_defs.md#setloadbalancerlistenersslcertificateinputtypedef).
+[SetLoadBalancerListenerSSLCertificateInputRequestTypeDef](./type_defs.md#setloadbalancerlistenersslcertificateinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -719,7 +730,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.set_load_balancer_policies_for_backend_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_policies_for_backend_server)
 
 Arguments mapping described in
-[SetLoadBalancerPoliciesForBackendServerInputTypeDef](./type_defs.md#setloadbalancerpoliciesforbackendserverinputtypedef).
+[SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef](./type_defs.md#setloadbalancerpoliciesforbackendserverinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -741,7 +752,7 @@ Boto3 documentation:
 [ElasticLoadBalancing.Client.set_load_balancer_policies_of_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_policies_of_listener)
 
 Arguments mapping described in
-[SetLoadBalancerPoliciesOfListenerInputTypeDef](./type_defs.md#setloadbalancerpoliciesoflistenerinputtypedef).
+[SetLoadBalancerPoliciesOfListenerInputRequestTypeDef](./type_defs.md#setloadbalancerpoliciesoflistenerinputrequesttypedef).
 
 Keyword-only arguments:
 

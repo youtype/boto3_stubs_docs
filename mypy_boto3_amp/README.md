@@ -36,6 +36,7 @@ from mypy_boto3_amp.client import PrometheusServiceClient
 - [create_workspace](./client.md#create_workspace)
 - [delete_workspace](./client.md#delete_workspace)
 - [describe_workspace](./client.md#describe_workspace)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 - [list_workspaces](./client.md#list_workspaces)
@@ -88,19 +89,19 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_amp.type_defs import CreateWorkspaceRequestTypeDef, ...
+from mypy_boto3_amp.type_defs import CreateWorkspaceRequestRequestTypeDef, ...
 ```
 
-- [CreateWorkspaceRequestTypeDef](./type_defs.md#createworkspacerequesttypedef)
-- [CreateWorkspaceResponseResponseTypeDef](./type_defs.md#createworkspaceresponseresponsetypedef)
-- [DeleteWorkspaceRequestTypeDef](./type_defs.md#deleteworkspacerequesttypedef)
-- [DescribeWorkspaceRequestTypeDef](./type_defs.md#describeworkspacerequesttypedef)
-- [DescribeWorkspaceResponseResponseTypeDef](./type_defs.md#describeworkspaceresponseresponsetypedef)
-- [ListWorkspacesRequestTypeDef](./type_defs.md#listworkspacesrequesttypedef)
-- [ListWorkspacesResponseResponseTypeDef](./type_defs.md#listworkspacesresponseresponsetypedef)
+- [CreateWorkspaceRequestRequestTypeDef](./type_defs.md#createworkspacerequestrequesttypedef)
+- [CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef)
+- [DeleteWorkspaceRequestRequestTypeDef](./type_defs.md#deleteworkspacerequestrequesttypedef)
+- [DescribeWorkspaceRequestRequestTypeDef](./type_defs.md#describeworkspacerequestrequesttypedef)
+- [DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef)
+- [ListWorkspacesRequestRequestTypeDef](./type_defs.md#listworkspacesrequestrequesttypedef)
+- [ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [UpdateWorkspaceAliasRequestTypeDef](./type_defs.md#updateworkspacealiasrequesttypedef)
+- [UpdateWorkspaceAliasRequestRequestTypeDef](./type_defs.md#updateworkspacealiasrequestrequesttypedef)
 - [WorkspaceDescriptionTypeDef](./type_defs.md#workspacedescriptiontypedef)
 - [WorkspaceStatusTypeDef](./type_defs.md#workspacestatustypedef)
 - [WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef)

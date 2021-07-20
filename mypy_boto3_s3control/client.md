@@ -11,6 +11,7 @@ type annotations stubs module
   - [S3ControlClient](#s3controlclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_access_point](#create_access_point)
     - [create_access_point_for_object_lambda](#create_access_point_for_object_lambda)
@@ -110,6 +111,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+S3ControlClient exceptions.
+
+Type annotations for `boto3.client("s3control").exceptions` method.
+
+Boto3 documentation:
+[S3Control.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -135,7 +147,7 @@ Boto3 documentation:
 [S3Control.Client.create_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point)
 
 Arguments mapping described in
-[CreateAccessPointRequestTypeDef](./type_defs.md#createaccesspointrequesttypedef).
+[CreateAccessPointRequestRequestTypeDef](./type_defs.md#createaccesspointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -148,7 +160,7 @@ Keyword-only arguments:
   [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
 
 Returns
-[CreateAccessPointResultResponseTypeDef](./type_defs.md#createaccesspointresultresponsetypedef).
+[CreateAccessPointResultTypeDef](./type_defs.md#createaccesspointresulttypedef).
 
 ### create_access_point_for_object_lambda
 
@@ -161,7 +173,7 @@ Boto3 documentation:
 [S3Control.Client.create_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point_for_object_lambda)
 
 Arguments mapping described in
-[CreateAccessPointForObjectLambdaRequestTypeDef](./type_defs.md#createaccesspointforobjectlambdarequesttypedef).
+[CreateAccessPointForObjectLambdaRequestRequestTypeDef](./type_defs.md#createaccesspointforobjectlambdarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -172,7 +184,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[CreateAccessPointForObjectLambdaResultResponseTypeDef](./type_defs.md#createaccesspointforobjectlambdaresultresponsetypedef).
+[CreateAccessPointForObjectLambdaResultTypeDef](./type_defs.md#createaccesspointforobjectlambdaresulttypedef).
 
 ### create_bucket
 
@@ -184,7 +196,7 @@ Boto3 documentation:
 [S3Control.Client.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_bucket)
 
 Arguments mapping described in
-[CreateBucketRequestTypeDef](./type_defs.md#createbucketrequesttypedef).
+[CreateBucketRequestRequestTypeDef](./type_defs.md#createbucketrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -200,8 +212,7 @@ Keyword-only arguments:
 - `ObjectLockEnabledForBucket`: `bool`
 - `OutpostId`: `str`
 
-Returns
-[CreateBucketResultResponseTypeDef](./type_defs.md#createbucketresultresponsetypedef).
+Returns [CreateBucketResultTypeDef](./type_defs.md#createbucketresulttypedef).
 
 ### create_job
 
@@ -214,7 +225,7 @@ Boto3 documentation:
 [S3Control.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_job)
 
 Arguments mapping described in
-[CreateJobRequestTypeDef](./type_defs.md#createjobrequesttypedef).
+[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -231,8 +242,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 
-Returns
-[CreateJobResultResponseTypeDef](./type_defs.md#createjobresultresponsetypedef).
+Returns [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef).
 
 ### delete_access_point
 
@@ -244,7 +254,7 @@ Boto3 documentation:
 [S3Control.Client.delete_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point)
 
 Arguments mapping described in
-[DeleteAccessPointRequestTypeDef](./type_defs.md#deleteaccesspointrequesttypedef).
+[DeleteAccessPointRequestRequestTypeDef](./type_defs.md#deleteaccesspointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -262,7 +272,7 @@ Boto3 documentation:
 [S3Control.Client.delete_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_for_object_lambda)
 
 Arguments mapping described in
-[DeleteAccessPointForObjectLambdaRequestTypeDef](./type_defs.md#deleteaccesspointforobjectlambdarequesttypedef).
+[DeleteAccessPointForObjectLambdaRequestRequestTypeDef](./type_defs.md#deleteaccesspointforobjectlambdarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -280,7 +290,7 @@ Boto3 documentation:
 [S3Control.Client.delete_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy)
 
 Arguments mapping described in
-[DeleteAccessPointPolicyRequestTypeDef](./type_defs.md#deleteaccesspointpolicyrequesttypedef).
+[DeleteAccessPointPolicyRequestRequestTypeDef](./type_defs.md#deleteaccesspointpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -299,7 +309,7 @@ Boto3 documentation:
 [S3Control.Client.delete_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy_for_object_lambda)
 
 Arguments mapping described in
-[DeleteAccessPointPolicyForObjectLambdaRequestTypeDef](./type_defs.md#deleteaccesspointpolicyforobjectlambdarequesttypedef).
+[DeleteAccessPointPolicyForObjectLambdaRequestRequestTypeDef](./type_defs.md#deleteaccesspointpolicyforobjectlambdarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -316,7 +326,7 @@ Boto3 documentation:
 [S3Control.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket)
 
 Arguments mapping described in
-[DeleteBucketRequestTypeDef](./type_defs.md#deletebucketrequesttypedef).
+[DeleteBucketRequestRequestTypeDef](./type_defs.md#deletebucketrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -334,7 +344,7 @@ Boto3 documentation:
 [S3Control.Client.delete_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_lifecycle_configuration)
 
 Arguments mapping described in
-[DeleteBucketLifecycleConfigurationRequestTypeDef](./type_defs.md#deletebucketlifecycleconfigurationrequesttypedef).
+[DeleteBucketLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#deletebucketlifecycleconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -351,7 +361,7 @@ Boto3 documentation:
 [S3Control.Client.delete_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_policy)
 
 Arguments mapping described in
-[DeleteBucketPolicyRequestTypeDef](./type_defs.md#deletebucketpolicyrequesttypedef).
+[DeleteBucketPolicyRequestRequestTypeDef](./type_defs.md#deletebucketpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -368,7 +378,7 @@ Boto3 documentation:
 [S3Control.Client.delete_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_tagging)
 
 Arguments mapping described in
-[DeleteBucketTaggingRequestTypeDef](./type_defs.md#deletebuckettaggingrequesttypedef).
+[DeleteBucketTaggingRequestRequestTypeDef](./type_defs.md#deletebuckettaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -385,7 +395,7 @@ Boto3 documentation:
 [S3Control.Client.delete_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_job_tagging)
 
 Arguments mapping described in
-[DeleteJobTaggingRequestTypeDef](./type_defs.md#deletejobtaggingrequesttypedef).
+[DeleteJobTaggingRequestRequestTypeDef](./type_defs.md#deletejobtaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -405,7 +415,7 @@ Boto3 documentation:
 [S3Control.Client.delete_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_public_access_block)
 
 Arguments mapping described in
-[DeletePublicAccessBlockRequestTypeDef](./type_defs.md#deletepublicaccessblockrequesttypedef).
+[DeletePublicAccessBlockRequestRequestTypeDef](./type_defs.md#deletepublicaccessblockrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -422,7 +432,7 @@ Boto3 documentation:
 [S3Control.Client.delete_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration)
 
 Arguments mapping described in
-[DeleteStorageLensConfigurationRequestTypeDef](./type_defs.md#deletestoragelensconfigurationrequesttypedef).
+[DeleteStorageLensConfigurationRequestRequestTypeDef](./type_defs.md#deletestoragelensconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -440,7 +450,7 @@ Boto3 documentation:
 [S3Control.Client.delete_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration_tagging)
 
 Arguments mapping described in
-[DeleteStorageLensConfigurationTaggingRequestTypeDef](./type_defs.md#deletestoragelensconfigurationtaggingrequesttypedef).
+[DeleteStorageLensConfigurationTaggingRequestRequestTypeDef](./type_defs.md#deletestoragelensconfigurationtaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -459,15 +469,14 @@ Boto3 documentation:
 [S3Control.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.describe_job)
 
 Arguments mapping described in
-[DescribeJobRequestTypeDef](./type_defs.md#describejobrequesttypedef).
+[DescribeJobRequestRequestTypeDef](./type_defs.md#describejobrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `JobId`: `str` *(required)*
 
-Returns
-[DescribeJobResultResponseTypeDef](./type_defs.md#describejobresultresponsetypedef).
+Returns [DescribeJobResultTypeDef](./type_defs.md#describejobresulttypedef).
 
 ### generate_presigned_url
 
@@ -497,7 +506,7 @@ Boto3 documentation:
 [S3Control.Client.get_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point)
 
 Arguments mapping described in
-[GetAccessPointRequestTypeDef](./type_defs.md#getaccesspointrequesttypedef).
+[GetAccessPointRequestRequestTypeDef](./type_defs.md#getaccesspointrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -505,7 +514,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointResultResponseTypeDef](./type_defs.md#getaccesspointresultresponsetypedef).
+[GetAccessPointResultTypeDef](./type_defs.md#getaccesspointresulttypedef).
 
 ### get_access_point_configuration_for_object_lambda
 
@@ -519,7 +528,7 @@ Boto3 documentation:
 [S3Control.Client.get_access_point_configuration_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_configuration_for_object_lambda)
 
 Arguments mapping described in
-[GetAccessPointConfigurationForObjectLambdaRequestTypeDef](./type_defs.md#getaccesspointconfigurationforobjectlambdarequesttypedef).
+[GetAccessPointConfigurationForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointconfigurationforobjectlambdarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -527,7 +536,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointConfigurationForObjectLambdaResultResponseTypeDef](./type_defs.md#getaccesspointconfigurationforobjectlambdaresultresponsetypedef).
+[GetAccessPointConfigurationForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointconfigurationforobjectlambdaresulttypedef).
 
 ### get_access_point_for_object_lambda
 
@@ -542,7 +551,7 @@ Boto3 documentation:
 [S3Control.Client.get_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_for_object_lambda)
 
 Arguments mapping described in
-[GetAccessPointForObjectLambdaRequestTypeDef](./type_defs.md#getaccesspointforobjectlambdarequesttypedef).
+[GetAccessPointForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointforobjectlambdarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -550,7 +559,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointForObjectLambdaResultResponseTypeDef](./type_defs.md#getaccesspointforobjectlambdaresultresponsetypedef).
+[GetAccessPointForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointforobjectlambdaresulttypedef).
 
 ### get_access_point_policy
 
@@ -563,7 +572,7 @@ Boto3 documentation:
 [S3Control.Client.get_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy)
 
 Arguments mapping described in
-[GetAccessPointPolicyRequestTypeDef](./type_defs.md#getaccesspointpolicyrequesttypedef).
+[GetAccessPointPolicyRequestRequestTypeDef](./type_defs.md#getaccesspointpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -571,7 +580,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointPolicyResultResponseTypeDef](./type_defs.md#getaccesspointpolicyresultresponsetypedef).
+[GetAccessPointPolicyResultTypeDef](./type_defs.md#getaccesspointpolicyresulttypedef).
 
 ### get_access_point_policy_for_object_lambda
 
@@ -584,7 +593,7 @@ Boto3 documentation:
 [S3Control.Client.get_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_for_object_lambda)
 
 Arguments mapping described in
-[GetAccessPointPolicyForObjectLambdaRequestTypeDef](./type_defs.md#getaccesspointpolicyforobjectlambdarequesttypedef).
+[GetAccessPointPolicyForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointpolicyforobjectlambdarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -592,7 +601,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointPolicyForObjectLambdaResultResponseTypeDef](./type_defs.md#getaccesspointpolicyforobjectlambdaresultresponsetypedef).
+[GetAccessPointPolicyForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointpolicyforobjectlambdaresulttypedef).
 
 ### get_access_point_policy_status
 
@@ -606,7 +615,7 @@ Boto3 documentation:
 [S3Control.Client.get_access_point_policy_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status)
 
 Arguments mapping described in
-[GetAccessPointPolicyStatusRequestTypeDef](./type_defs.md#getaccesspointpolicystatusrequesttypedef).
+[GetAccessPointPolicyStatusRequestRequestTypeDef](./type_defs.md#getaccesspointpolicystatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -614,7 +623,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointPolicyStatusResultResponseTypeDef](./type_defs.md#getaccesspointpolicystatusresultresponsetypedef).
+[GetAccessPointPolicyStatusResultTypeDef](./type_defs.md#getaccesspointpolicystatusresulttypedef).
 
 ### get_access_point_policy_status_for_object_lambda
 
@@ -629,7 +638,7 @@ Boto3 documentation:
 [S3Control.Client.get_access_point_policy_status_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status_for_object_lambda)
 
 Arguments mapping described in
-[GetAccessPointPolicyStatusForObjectLambdaRequestTypeDef](./type_defs.md#getaccesspointpolicystatusforobjectlambdarequesttypedef).
+[GetAccessPointPolicyStatusForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointpolicystatusforobjectlambdarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -637,7 +646,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns
-[GetAccessPointPolicyStatusForObjectLambdaResultResponseTypeDef](./type_defs.md#getaccesspointpolicystatusforobjectlambdaresultresponsetypedef).
+[GetAccessPointPolicyStatusForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointpolicystatusforobjectlambdaresulttypedef).
 
 ### get_bucket
 
@@ -649,15 +658,14 @@ Boto3 documentation:
 [S3Control.Client.get_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket)
 
 Arguments mapping described in
-[GetBucketRequestTypeDef](./type_defs.md#getbucketrequesttypedef).
+[GetBucketRequestRequestTypeDef](./type_defs.md#getbucketrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
 
-Returns
-[GetBucketResultResponseTypeDef](./type_defs.md#getbucketresultresponsetypedef).
+Returns [GetBucketResultTypeDef](./type_defs.md#getbucketresulttypedef).
 
 ### get_bucket_lifecycle_configuration
 
@@ -670,7 +678,7 @@ Boto3 documentation:
 [S3Control.Client.get_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_lifecycle_configuration)
 
 Arguments mapping described in
-[GetBucketLifecycleConfigurationRequestTypeDef](./type_defs.md#getbucketlifecycleconfigurationrequesttypedef).
+[GetBucketLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#getbucketlifecycleconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -678,7 +686,7 @@ Keyword-only arguments:
 - `Bucket`: `str` *(required)*
 
 Returns
-[GetBucketLifecycleConfigurationResultResponseTypeDef](./type_defs.md#getbucketlifecycleconfigurationresultresponsetypedef).
+[GetBucketLifecycleConfigurationResultTypeDef](./type_defs.md#getbucketlifecycleconfigurationresulttypedef).
 
 ### get_bucket_policy
 
@@ -690,7 +698,7 @@ Boto3 documentation:
 [S3Control.Client.get_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_policy)
 
 Arguments mapping described in
-[GetBucketPolicyRequestTypeDef](./type_defs.md#getbucketpolicyrequesttypedef).
+[GetBucketPolicyRequestRequestTypeDef](./type_defs.md#getbucketpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -698,7 +706,7 @@ Keyword-only arguments:
 - `Bucket`: `str` *(required)*
 
 Returns
-[GetBucketPolicyResultResponseTypeDef](./type_defs.md#getbucketpolicyresultresponsetypedef).
+[GetBucketPolicyResultTypeDef](./type_defs.md#getbucketpolicyresulttypedef).
 
 ### get_bucket_tagging
 
@@ -710,7 +718,7 @@ Boto3 documentation:
 [S3Control.Client.get_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_tagging)
 
 Arguments mapping described in
-[GetBucketTaggingRequestTypeDef](./type_defs.md#getbuckettaggingrequesttypedef).
+[GetBucketTaggingRequestRequestTypeDef](./type_defs.md#getbuckettaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -718,7 +726,7 @@ Keyword-only arguments:
 - `Bucket`: `str` *(required)*
 
 Returns
-[GetBucketTaggingResultResponseTypeDef](./type_defs.md#getbuckettaggingresultresponsetypedef).
+[GetBucketTaggingResultTypeDef](./type_defs.md#getbuckettaggingresulttypedef).
 
 ### get_job_tagging
 
@@ -730,7 +738,7 @@ Boto3 documentation:
 [S3Control.Client.get_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_job_tagging)
 
 Arguments mapping described in
-[GetJobTaggingRequestTypeDef](./type_defs.md#getjobtaggingrequesttypedef).
+[GetJobTaggingRequestRequestTypeDef](./type_defs.md#getjobtaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -738,7 +746,7 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns
-[GetJobTaggingResultResponseTypeDef](./type_defs.md#getjobtaggingresultresponsetypedef).
+[GetJobTaggingResultTypeDef](./type_defs.md#getjobtaggingresulttypedef).
 
 ### get_public_access_block
 
@@ -751,14 +759,14 @@ Boto3 documentation:
 [S3Control.Client.get_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_public_access_block)
 
 Arguments mapping described in
-[GetPublicAccessBlockRequestTypeDef](./type_defs.md#getpublicaccessblockrequesttypedef).
+[GetPublicAccessBlockRequestRequestTypeDef](./type_defs.md#getpublicaccessblockrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
 Returns
-[GetPublicAccessBlockOutputResponseTypeDef](./type_defs.md#getpublicaccessblockoutputresponsetypedef).
+[GetPublicAccessBlockOutputTypeDef](./type_defs.md#getpublicaccessblockoutputtypedef).
 
 ### get_storage_lens_configuration
 
@@ -771,7 +779,7 @@ Boto3 documentation:
 [S3Control.Client.get_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration)
 
 Arguments mapping described in
-[GetStorageLensConfigurationRequestTypeDef](./type_defs.md#getstoragelensconfigurationrequesttypedef).
+[GetStorageLensConfigurationRequestRequestTypeDef](./type_defs.md#getstoragelensconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -779,7 +787,7 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 
 Returns
-[GetStorageLensConfigurationResultResponseTypeDef](./type_defs.md#getstoragelensconfigurationresultresponsetypedef).
+[GetStorageLensConfigurationResultTypeDef](./type_defs.md#getstoragelensconfigurationresulttypedef).
 
 ### get_storage_lens_configuration_tagging
 
@@ -792,7 +800,7 @@ Boto3 documentation:
 [S3Control.Client.get_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration_tagging)
 
 Arguments mapping described in
-[GetStorageLensConfigurationTaggingRequestTypeDef](./type_defs.md#getstoragelensconfigurationtaggingrequesttypedef).
+[GetStorageLensConfigurationTaggingRequestRequestTypeDef](./type_defs.md#getstoragelensconfigurationtaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -800,7 +808,7 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 
 Returns
-[GetStorageLensConfigurationTaggingResultResponseTypeDef](./type_defs.md#getstoragelensconfigurationtaggingresultresponsetypedef).
+[GetStorageLensConfigurationTaggingResultTypeDef](./type_defs.md#getstoragelensconfigurationtaggingresulttypedef).
 
 ### list_access_points
 
@@ -813,7 +821,7 @@ Boto3 documentation:
 [S3Control.Client.list_access_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points)
 
 Arguments mapping described in
-[ListAccessPointsRequestTypeDef](./type_defs.md#listaccesspointsrequesttypedef).
+[ListAccessPointsRequestRequestTypeDef](./type_defs.md#listaccesspointsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -823,7 +831,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccessPointsResultResponseTypeDef](./type_defs.md#listaccesspointsresultresponsetypedef).
+[ListAccessPointsResultTypeDef](./type_defs.md#listaccesspointsresulttypedef).
 
 ### list_access_points_for_object_lambda
 
@@ -837,7 +845,7 @@ Boto3 documentation:
 [S3Control.Client.list_access_points_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points_for_object_lambda)
 
 Arguments mapping described in
-[ListAccessPointsForObjectLambdaRequestTypeDef](./type_defs.md#listaccesspointsforobjectlambdarequesttypedef).
+[ListAccessPointsForObjectLambdaRequestRequestTypeDef](./type_defs.md#listaccesspointsforobjectlambdarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -846,7 +854,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListAccessPointsForObjectLambdaResultResponseTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresultresponsetypedef).
+[ListAccessPointsForObjectLambdaResultTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresulttypedef).
 
 ### list_jobs
 
@@ -859,7 +867,7 @@ Boto3 documentation:
 [S3Control.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_jobs)
 
 Arguments mapping described in
-[ListJobsRequestTypeDef](./type_defs.md#listjobsrequesttypedef).
+[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -868,8 +876,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListJobsResultResponseTypeDef](./type_defs.md#listjobsresultresponsetypedef).
+Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
 
 ### list_regional_buckets
 
@@ -882,7 +889,7 @@ Boto3 documentation:
 [S3Control.Client.list_regional_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_regional_buckets)
 
 Arguments mapping described in
-[ListRegionalBucketsRequestTypeDef](./type_defs.md#listregionalbucketsrequesttypedef).
+[ListRegionalBucketsRequestRequestTypeDef](./type_defs.md#listregionalbucketsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -892,7 +899,7 @@ Keyword-only arguments:
 - `OutpostId`: `str`
 
 Returns
-[ListRegionalBucketsResultResponseTypeDef](./type_defs.md#listregionalbucketsresultresponsetypedef).
+[ListRegionalBucketsResultTypeDef](./type_defs.md#listregionalbucketsresulttypedef).
 
 ### list_storage_lens_configurations
 
@@ -905,7 +912,7 @@ Boto3 documentation:
 [S3Control.Client.list_storage_lens_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_storage_lens_configurations)
 
 Arguments mapping described in
-[ListStorageLensConfigurationsRequestTypeDef](./type_defs.md#liststoragelensconfigurationsrequesttypedef).
+[ListStorageLensConfigurationsRequestRequestTypeDef](./type_defs.md#liststoragelensconfigurationsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -913,7 +920,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListStorageLensConfigurationsResultResponseTypeDef](./type_defs.md#liststoragelensconfigurationsresultresponsetypedef).
+[ListStorageLensConfigurationsResultTypeDef](./type_defs.md#liststoragelensconfigurationsresulttypedef).
 
 ### put_access_point_configuration_for_object_lambda
 
@@ -927,7 +934,7 @@ Boto3 documentation:
 [S3Control.Client.put_access_point_configuration_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_configuration_for_object_lambda)
 
 Arguments mapping described in
-[PutAccessPointConfigurationForObjectLambdaRequestTypeDef](./type_defs.md#putaccesspointconfigurationforobjectlambdarequesttypedef).
+[PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef](./type_defs.md#putaccesspointconfigurationforobjectlambdarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -948,7 +955,7 @@ Boto3 documentation:
 [S3Control.Client.put_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy)
 
 Arguments mapping described in
-[PutAccessPointPolicyRequestTypeDef](./type_defs.md#putaccesspointpolicyrequesttypedef).
+[PutAccessPointPolicyRequestRequestTypeDef](./type_defs.md#putaccesspointpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -967,7 +974,7 @@ Boto3 documentation:
 [S3Control.Client.put_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy_for_object_lambda)
 
 Arguments mapping described in
-[PutAccessPointPolicyForObjectLambdaRequestTypeDef](./type_defs.md#putaccesspointpolicyforobjectlambdarequesttypedef).
+[PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef](./type_defs.md#putaccesspointpolicyforobjectlambdarequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -986,7 +993,7 @@ Boto3 documentation:
 [S3Control.Client.put_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_lifecycle_configuration)
 
 Arguments mapping described in
-[PutBucketLifecycleConfigurationRequestTypeDef](./type_defs.md#putbucketlifecycleconfigurationrequesttypedef).
+[PutBucketLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#putbucketlifecycleconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1005,7 +1012,7 @@ Boto3 documentation:
 [S3Control.Client.put_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_policy)
 
 Arguments mapping described in
-[PutBucketPolicyRequestTypeDef](./type_defs.md#putbucketpolicyrequesttypedef).
+[PutBucketPolicyRequestRequestTypeDef](./type_defs.md#putbucketpolicyrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1024,7 +1031,7 @@ Boto3 documentation:
 [S3Control.Client.put_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_tagging)
 
 Arguments mapping described in
-[PutBucketTaggingRequestTypeDef](./type_defs.md#putbuckettaggingrequesttypedef).
+[PutBucketTaggingRequestRequestTypeDef](./type_defs.md#putbuckettaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1042,7 +1049,7 @@ Boto3 documentation:
 [S3Control.Client.put_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_job_tagging)
 
 Arguments mapping described in
-[PutJobTaggingRequestTypeDef](./type_defs.md#putjobtaggingrequesttypedef).
+[PutJobTaggingRequestRequestTypeDef](./type_defs.md#putjobtaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1063,7 +1070,7 @@ Boto3 documentation:
 [S3Control.Client.put_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_public_access_block)
 
 Arguments mapping described in
-[PutPublicAccessBlockRequestTypeDef](./type_defs.md#putpublicaccessblockrequesttypedef).
+[PutPublicAccessBlockRequestRequestTypeDef](./type_defs.md#putpublicaccessblockrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1083,7 +1090,7 @@ Boto3 documentation:
 [S3Control.Client.put_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration)
 
 Arguments mapping described in
-[PutStorageLensConfigurationRequestTypeDef](./type_defs.md#putstoragelensconfigurationrequesttypedef).
+[PutStorageLensConfigurationRequestRequestTypeDef](./type_defs.md#putstoragelensconfigurationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1106,7 +1113,7 @@ Boto3 documentation:
 [S3Control.Client.put_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration_tagging)
 
 Arguments mapping described in
-[PutStorageLensConfigurationTaggingRequestTypeDef](./type_defs.md#putstoragelensconfigurationtaggingrequesttypedef).
+[PutStorageLensConfigurationTaggingRequestRequestTypeDef](./type_defs.md#putstoragelensconfigurationtaggingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1128,7 +1135,7 @@ Boto3 documentation:
 [S3Control.Client.update_job_priority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_priority)
 
 Arguments mapping described in
-[UpdateJobPriorityRequestTypeDef](./type_defs.md#updatejobpriorityrequesttypedef).
+[UpdateJobPriorityRequestRequestTypeDef](./type_defs.md#updatejobpriorityrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1137,7 +1144,7 @@ Keyword-only arguments:
 - `Priority`: `int` *(required)*
 
 Returns
-[UpdateJobPriorityResultResponseTypeDef](./type_defs.md#updatejobpriorityresultresponsetypedef).
+[UpdateJobPriorityResultTypeDef](./type_defs.md#updatejobpriorityresulttypedef).
 
 ### update_job_status
 
@@ -1149,7 +1156,7 @@ Boto3 documentation:
 [S3Control.Client.update_job_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_status)
 
 Arguments mapping described in
-[UpdateJobStatusRequestTypeDef](./type_defs.md#updatejobstatusrequesttypedef).
+[UpdateJobStatusRequestRequestTypeDef](./type_defs.md#updatejobstatusrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1160,7 +1167,7 @@ Keyword-only arguments:
 - `StatusUpdateReason`: `str`
 
 Returns
-[UpdateJobStatusResultResponseTypeDef](./type_defs.md#updatejobstatusresultresponsetypedef).
+[UpdateJobStatusResultTypeDef](./type_defs.md#updatejobstatusresulttypedef).
 
 ### get_paginator
 

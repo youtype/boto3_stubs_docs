@@ -8,9 +8,36 @@ type annotations stubs module
 [mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
 
 - [Paginators for boto3 FMS module](#paginators-for-boto3-fms-module)
+  - [ListAppsListsPaginator](#listappslistspaginator)
   - [ListComplianceStatusPaginator](#listcompliancestatuspaginator)
   - [ListMemberAccountsPaginator](#listmemberaccountspaginator)
   - [ListPoliciesPaginator](#listpoliciespaginator)
+  - [ListProtocolsListsPaginator](#listprotocolslistspaginator)
+
+## ListAppsListsPaginator
+
+Type annotations for `boto3.client("fms").get_paginator("list_apps_lists")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_fms.paginator import ListAppsListsPaginator
+
+def get_list_apps_lists_paginator() -> ListAppsListsPaginator:
+    return boto3.client("fms").get_paginator("list_apps_lists")
+```
+
+Boto3 documentation:
+[FMS.Paginator.ListAppsLists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListAppsLists)
+
+Arguments for `ListAppsListsPaginator.paginate` method:
+
+- `DefaultLists`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListAppsListsPaginator.paginate` returns
+`Iterator`\[[ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef)\].
 
 ## ListComplianceStatusPaginator
 
@@ -36,7 +63,7 @@ Arguments for `ListComplianceStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListComplianceStatusPaginator.paginate` returns
-`Iterator`\[[ListComplianceStatusResponseResponseTypeDef](./type_defs.md#listcompliancestatusresponseresponsetypedef)\].
+`Iterator`\[[ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef)\].
 
 ## ListMemberAccountsPaginator
 
@@ -61,7 +88,7 @@ Arguments for `ListMemberAccountsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMemberAccountsPaginator.paginate` returns
-`Iterator`\[[ListMemberAccountsResponseResponseTypeDef](./type_defs.md#listmemberaccountsresponseresponsetypedef)\].
+`Iterator`\[[ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef)\].
 
 ## ListPoliciesPaginator
 
@@ -85,4 +112,30 @@ Arguments for `ListPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPoliciesPaginator.paginate` returns
-`Iterator`\[[ListPoliciesResponseResponseTypeDef](./type_defs.md#listpoliciesresponseresponsetypedef)\].
+`Iterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
+
+## ListProtocolsListsPaginator
+
+Type annotations for
+`boto3.client("fms").get_paginator("list_protocols_lists")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_fms.paginator import ListProtocolsListsPaginator
+
+def get_list_protocols_lists_paginator() -> ListProtocolsListsPaginator:
+    return boto3.client("fms").get_paginator("list_protocols_lists")
+```
+
+Boto3 documentation:
+[FMS.Paginator.ListProtocolsLists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListProtocolsLists)
+
+Arguments for `ListProtocolsListsPaginator.paginate` method:
+
+- `DefaultLists`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListProtocolsListsPaginator.paginate` returns
+`Iterator`\[[ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef)\].

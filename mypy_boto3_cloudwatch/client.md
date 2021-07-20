@@ -11,6 +11,7 @@ type annotations stubs module
   - [CloudWatchClient](#cloudwatchclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [delete_alarms](#delete_alarms)
     - [delete_anomaly_detector](#delete_anomaly_detector)
@@ -99,6 +100,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+CloudWatchClient exceptions.
+
+Type annotations for `boto3.client("cloudwatch").exceptions` method.
+
+Boto3 documentation:
+[CloudWatch.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -124,7 +136,7 @@ Boto3 documentation:
 [CloudWatch.Client.delete_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_alarms)
 
 Arguments mapping described in
-[DeleteAlarmsInputTypeDef](./type_defs.md#deletealarmsinputtypedef).
+[DeleteAlarmsInputRequestTypeDef](./type_defs.md#deletealarmsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -141,7 +153,7 @@ Boto3 documentation:
 [CloudWatch.Client.delete_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_anomaly_detector)
 
 Arguments mapping described in
-[DeleteAnomalyDetectorInputTypeDef](./type_defs.md#deleteanomalydetectorinputtypedef).
+[DeleteAnomalyDetectorInputRequestTypeDef](./type_defs.md#deleteanomalydetectorinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -162,7 +174,7 @@ Boto3 documentation:
 [CloudWatch.Client.delete_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_dashboards)
 
 Arguments mapping described in
-[DeleteDashboardsInputTypeDef](./type_defs.md#deletedashboardsinputtypedef).
+[DeleteDashboardsInputRequestTypeDef](./type_defs.md#deletedashboardsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -180,14 +192,14 @@ Boto3 documentation:
 [CloudWatch.Client.delete_insight_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_insight_rules)
 
 Arguments mapping described in
-[DeleteInsightRulesInputTypeDef](./type_defs.md#deleteinsightrulesinputtypedef).
+[DeleteInsightRulesInputRequestTypeDef](./type_defs.md#deleteinsightrulesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `RuleNames`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteInsightRulesOutputResponseTypeDef](./type_defs.md#deleteinsightrulesoutputresponsetypedef).
+[DeleteInsightRulesOutputTypeDef](./type_defs.md#deleteinsightrulesoutputtypedef).
 
 ### delete_metric_stream
 
@@ -199,7 +211,7 @@ Boto3 documentation:
 [CloudWatch.Client.delete_metric_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.delete_metric_stream)
 
 Arguments mapping described in
-[DeleteMetricStreamInputTypeDef](./type_defs.md#deletemetricstreaminputtypedef).
+[DeleteMetricStreamInputRequestTypeDef](./type_defs.md#deletemetricstreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -218,7 +230,7 @@ Boto3 documentation:
 [CloudWatch.Client.describe_alarm_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarm_history)
 
 Arguments mapping described in
-[DescribeAlarmHistoryInputTypeDef](./type_defs.md#describealarmhistoryinputtypedef).
+[DescribeAlarmHistoryInputRequestTypeDef](./type_defs.md#describealarmhistoryinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -232,7 +244,7 @@ Keyword-only arguments:
 - `ScanBy`: [ScanByType](./literals.md#scanbytype)
 
 Returns
-[DescribeAlarmHistoryOutputResponseTypeDef](./type_defs.md#describealarmhistoryoutputresponsetypedef).
+[DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef).
 
 ### describe_alarms
 
@@ -244,7 +256,7 @@ Boto3 documentation:
 [CloudWatch.Client.describe_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarms)
 
 Arguments mapping described in
-[DescribeAlarmsInputTypeDef](./type_defs.md#describealarmsinputtypedef).
+[DescribeAlarmsInputRequestTypeDef](./type_defs.md#describealarmsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -259,7 +271,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[DescribeAlarmsOutputResponseTypeDef](./type_defs.md#describealarmsoutputresponsetypedef).
+[DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef).
 
 ### describe_alarms_for_metric
 
@@ -272,7 +284,7 @@ Boto3 documentation:
 [CloudWatch.Client.describe_alarms_for_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_alarms_for_metric)
 
 Arguments mapping described in
-[DescribeAlarmsForMetricInputTypeDef](./type_defs.md#describealarmsformetricinputtypedef).
+[DescribeAlarmsForMetricInputRequestTypeDef](./type_defs.md#describealarmsformetricinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -285,7 +297,7 @@ Keyword-only arguments:
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 
 Returns
-[DescribeAlarmsForMetricOutputResponseTypeDef](./type_defs.md#describealarmsformetricoutputresponsetypedef).
+[DescribeAlarmsForMetricOutputTypeDef](./type_defs.md#describealarmsformetricoutputtypedef).
 
 ### describe_anomaly_detectors
 
@@ -298,7 +310,7 @@ Boto3 documentation:
 [CloudWatch.Client.describe_anomaly_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_anomaly_detectors)
 
 Arguments mapping described in
-[DescribeAnomalyDetectorsInputTypeDef](./type_defs.md#describeanomalydetectorsinputtypedef).
+[DescribeAnomalyDetectorsInputRequestTypeDef](./type_defs.md#describeanomalydetectorsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -309,7 +321,7 @@ Keyword-only arguments:
 - `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 
 Returns
-[DescribeAnomalyDetectorsOutputResponseTypeDef](./type_defs.md#describeanomalydetectorsoutputresponsetypedef).
+[DescribeAnomalyDetectorsOutputTypeDef](./type_defs.md#describeanomalydetectorsoutputtypedef).
 
 ### describe_insight_rules
 
@@ -322,7 +334,7 @@ Boto3 documentation:
 [CloudWatch.Client.describe_insight_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.describe_insight_rules)
 
 Arguments mapping described in
-[DescribeInsightRulesInputTypeDef](./type_defs.md#describeinsightrulesinputtypedef).
+[DescribeInsightRulesInputRequestTypeDef](./type_defs.md#describeinsightrulesinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -330,7 +342,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeInsightRulesOutputResponseTypeDef](./type_defs.md#describeinsightrulesoutputresponsetypedef).
+[DescribeInsightRulesOutputTypeDef](./type_defs.md#describeinsightrulesoutputtypedef).
 
 ### disable_alarm_actions
 
@@ -342,7 +354,7 @@ Boto3 documentation:
 [CloudWatch.Client.disable_alarm_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.disable_alarm_actions)
 
 Arguments mapping described in
-[DisableAlarmActionsInputTypeDef](./type_defs.md#disablealarmactionsinputtypedef).
+[DisableAlarmActionsInputRequestTypeDef](./type_defs.md#disablealarmactionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -358,14 +370,14 @@ Boto3 documentation:
 [CloudWatch.Client.disable_insight_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.disable_insight_rules)
 
 Arguments mapping described in
-[DisableInsightRulesInputTypeDef](./type_defs.md#disableinsightrulesinputtypedef).
+[DisableInsightRulesInputRequestTypeDef](./type_defs.md#disableinsightrulesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `RuleNames`: `List`\[`str`\] *(required)*
 
 Returns
-[DisableInsightRulesOutputResponseTypeDef](./type_defs.md#disableinsightrulesoutputresponsetypedef).
+[DisableInsightRulesOutputTypeDef](./type_defs.md#disableinsightrulesoutputtypedef).
 
 ### enable_alarm_actions
 
@@ -377,7 +389,7 @@ Boto3 documentation:
 [CloudWatch.Client.enable_alarm_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.enable_alarm_actions)
 
 Arguments mapping described in
-[EnableAlarmActionsInputTypeDef](./type_defs.md#enablealarmactionsinputtypedef).
+[EnableAlarmActionsInputRequestTypeDef](./type_defs.md#enablealarmactionsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -393,14 +405,14 @@ Boto3 documentation:
 [CloudWatch.Client.enable_insight_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.enable_insight_rules)
 
 Arguments mapping described in
-[EnableInsightRulesInputTypeDef](./type_defs.md#enableinsightrulesinputtypedef).
+[EnableInsightRulesInputRequestTypeDef](./type_defs.md#enableinsightrulesinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `RuleNames`: `List`\[`str`\] *(required)*
 
 Returns
-[EnableInsightRulesOutputResponseTypeDef](./type_defs.md#enableinsightrulesoutputresponsetypedef).
+[EnableInsightRulesOutputTypeDef](./type_defs.md#enableinsightrulesoutputtypedef).
 
 ### generate_presigned_url
 
@@ -431,14 +443,13 @@ Boto3 documentation:
 [CloudWatch.Client.get_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_dashboard)
 
 Arguments mapping described in
-[GetDashboardInputTypeDef](./type_defs.md#getdashboardinputtypedef).
+[GetDashboardInputRequestTypeDef](./type_defs.md#getdashboardinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `DashboardName`: `str` *(required)*
 
-Returns
-[GetDashboardOutputResponseTypeDef](./type_defs.md#getdashboardoutputresponsetypedef).
+Returns [GetDashboardOutputTypeDef](./type_defs.md#getdashboardoutputtypedef).
 
 ### get_insight_rule_report
 
@@ -452,7 +463,7 @@ Boto3 documentation:
 [CloudWatch.Client.get_insight_rule_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_insight_rule_report)
 
 Arguments mapping described in
-[GetInsightRuleReportInputTypeDef](./type_defs.md#getinsightrulereportinputtypedef).
+[GetInsightRuleReportInputRequestTypeDef](./type_defs.md#getinsightrulereportinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -465,7 +476,7 @@ Keyword-only arguments:
 - `OrderBy`: `str`
 
 Returns
-[GetInsightRuleReportOutputResponseTypeDef](./type_defs.md#getinsightrulereportoutputresponsetypedef).
+[GetInsightRuleReportOutputTypeDef](./type_defs.md#getinsightrulereportoutputtypedef).
 
 ### get_metric_data
 
@@ -478,7 +489,7 @@ Boto3 documentation:
 [CloudWatch.Client.get_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_data)
 
 Arguments mapping described in
-[GetMetricDataInputTypeDef](./type_defs.md#getmetricdatainputtypedef).
+[GetMetricDataInputRequestTypeDef](./type_defs.md#getmetricdatainputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -493,7 +504,7 @@ Keyword-only arguments:
 - `LabelOptions`: [LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef)
 
 Returns
-[GetMetricDataOutputResponseTypeDef](./type_defs.md#getmetricdataoutputresponsetypedef).
+[GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef).
 
 ### get_metric_statistics
 
@@ -505,7 +516,7 @@ Boto3 documentation:
 [CloudWatch.Client.get_metric_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_statistics)
 
 Arguments mapping described in
-[GetMetricStatisticsInputTypeDef](./type_defs.md#getmetricstatisticsinputtypedef).
+[GetMetricStatisticsInputRequestTypeDef](./type_defs.md#getmetricstatisticsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -520,7 +531,7 @@ Keyword-only arguments:
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 
 Returns
-[GetMetricStatisticsOutputResponseTypeDef](./type_defs.md#getmetricstatisticsoutputresponsetypedef).
+[GetMetricStatisticsOutputTypeDef](./type_defs.md#getmetricstatisticsoutputtypedef).
 
 ### get_metric_stream
 
@@ -532,14 +543,14 @@ Boto3 documentation:
 [CloudWatch.Client.get_metric_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_stream)
 
 Arguments mapping described in
-[GetMetricStreamInputTypeDef](./type_defs.md#getmetricstreaminputtypedef).
+[GetMetricStreamInputRequestTypeDef](./type_defs.md#getmetricstreaminputrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[GetMetricStreamOutputResponseTypeDef](./type_defs.md#getmetricstreamoutputresponsetypedef).
+[GetMetricStreamOutputTypeDef](./type_defs.md#getmetricstreamoutputtypedef).
 
 ### get_metric_widget_image
 
@@ -553,7 +564,7 @@ Boto3 documentation:
 [CloudWatch.Client.get_metric_widget_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.get_metric_widget_image)
 
 Arguments mapping described in
-[GetMetricWidgetImageInputTypeDef](./type_defs.md#getmetricwidgetimageinputtypedef).
+[GetMetricWidgetImageInputRequestTypeDef](./type_defs.md#getmetricwidgetimageinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -561,7 +572,7 @@ Keyword-only arguments:
 - `OutputFormat`: `str`
 
 Returns
-[GetMetricWidgetImageOutputResponseTypeDef](./type_defs.md#getmetricwidgetimageoutputresponsetypedef).
+[GetMetricWidgetImageOutputTypeDef](./type_defs.md#getmetricwidgetimageoutputtypedef).
 
 ### list_dashboards
 
@@ -573,7 +584,7 @@ Boto3 documentation:
 [CloudWatch.Client.list_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_dashboards)
 
 Arguments mapping described in
-[ListDashboardsInputTypeDef](./type_defs.md#listdashboardsinputtypedef).
+[ListDashboardsInputRequestTypeDef](./type_defs.md#listdashboardsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -581,7 +592,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[ListDashboardsOutputResponseTypeDef](./type_defs.md#listdashboardsoutputresponsetypedef).
+[ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef).
 
 ### list_metric_streams
 
@@ -593,7 +604,7 @@ Boto3 documentation:
 [CloudWatch.Client.list_metric_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_metric_streams)
 
 Arguments mapping described in
-[ListMetricStreamsInputTypeDef](./type_defs.md#listmetricstreamsinputtypedef).
+[ListMetricStreamsInputRequestTypeDef](./type_defs.md#listmetricstreamsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -601,7 +612,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListMetricStreamsOutputResponseTypeDef](./type_defs.md#listmetricstreamsoutputresponsetypedef).
+[ListMetricStreamsOutputTypeDef](./type_defs.md#listmetricstreamsoutputtypedef).
 
 ### list_metrics
 
@@ -613,7 +624,7 @@ Boto3 documentation:
 [CloudWatch.Client.list_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_metrics)
 
 Arguments mapping described in
-[ListMetricsInputTypeDef](./type_defs.md#listmetricsinputtypedef).
+[ListMetricsInputRequestTypeDef](./type_defs.md#listmetricsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -625,8 +636,7 @@ Keyword-only arguments:
 - `RecentlyActive`: `Literal['PT3H']` (see
   [RecentlyActiveType](./literals.md#recentlyactivetype))
 
-Returns
-[ListMetricsOutputResponseTypeDef](./type_defs.md#listmetricsoutputresponsetypedef).
+Returns [ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef).
 
 ### list_tags_for_resource
 
@@ -639,14 +649,14 @@ Boto3 documentation:
 [CloudWatch.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceInputTypeDef](./type_defs.md#listtagsforresourceinputtypedef).
+[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 
 Returns
-[ListTagsForResourceOutputResponseTypeDef](./type_defs.md#listtagsforresourceoutputresponsetypedef).
+[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
 ### put_anomaly_detector
 
@@ -658,7 +668,7 @@ Boto3 documentation:
 [CloudWatch.Client.put_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_anomaly_detector)
 
 Arguments mapping described in
-[PutAnomalyDetectorInputTypeDef](./type_defs.md#putanomalydetectorinputtypedef).
+[PutAnomalyDetectorInputRequestTypeDef](./type_defs.md#putanomalydetectorinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -681,7 +691,7 @@ Boto3 documentation:
 [CloudWatch.Client.put_composite_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_composite_alarm)
 
 Arguments mapping described in
-[PutCompositeAlarmInputTypeDef](./type_defs.md#putcompositealarminputtypedef).
+[PutCompositeAlarmInputRequestTypeDef](./type_defs.md#putcompositealarminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -705,15 +715,14 @@ Boto3 documentation:
 [CloudWatch.Client.put_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_dashboard)
 
 Arguments mapping described in
-[PutDashboardInputTypeDef](./type_defs.md#putdashboardinputtypedef).
+[PutDashboardInputRequestTypeDef](./type_defs.md#putdashboardinputrequesttypedef).
 
 Keyword-only arguments:
 
 - `DashboardName`: `str` *(required)*
 - `DashboardBody`: `str` *(required)*
 
-Returns
-[PutDashboardOutputResponseTypeDef](./type_defs.md#putdashboardoutputresponsetypedef).
+Returns [PutDashboardOutputTypeDef](./type_defs.md#putdashboardoutputtypedef).
 
 ### put_insight_rule
 
@@ -725,7 +734,7 @@ Boto3 documentation:
 [CloudWatch.Client.put_insight_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_insight_rule)
 
 Arguments mapping described in
-[PutInsightRuleInputTypeDef](./type_defs.md#putinsightruleinputtypedef).
+[PutInsightRuleInputRequestTypeDef](./type_defs.md#putinsightruleinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -747,7 +756,7 @@ Boto3 documentation:
 [CloudWatch.Client.put_metric_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_alarm)
 
 Arguments mapping described in
-[PutMetricAlarmInputTypeDef](./type_defs.md#putmetricalarminputtypedef).
+[PutMetricAlarmInputRequestTypeDef](./type_defs.md#putmetricalarminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -786,7 +795,7 @@ Boto3 documentation:
 [CloudWatch.Client.put_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_data)
 
 Arguments mapping described in
-[PutMetricDataInputTypeDef](./type_defs.md#putmetricdatainputtypedef).
+[PutMetricDataInputRequestTypeDef](./type_defs.md#putmetricdatainputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -805,7 +814,7 @@ Boto3 documentation:
 [CloudWatch.Client.put_metric_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.put_metric_stream)
 
 Arguments mapping described in
-[PutMetricStreamInputTypeDef](./type_defs.md#putmetricstreaminputtypedef).
+[PutMetricStreamInputRequestTypeDef](./type_defs.md#putmetricstreaminputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -822,7 +831,7 @@ Keyword-only arguments:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[PutMetricStreamOutputResponseTypeDef](./type_defs.md#putmetricstreamoutputresponsetypedef).
+[PutMetricStreamOutputTypeDef](./type_defs.md#putmetricstreamoutputtypedef).
 
 ### set_alarm_state
 
@@ -834,7 +843,7 @@ Boto3 documentation:
 [CloudWatch.Client.set_alarm_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.set_alarm_state)
 
 Arguments mapping described in
-[SetAlarmStateInputTypeDef](./type_defs.md#setalarmstateinputtypedef).
+[SetAlarmStateInputRequestTypeDef](./type_defs.md#setalarmstateinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -853,7 +862,7 @@ Boto3 documentation:
 [CloudWatch.Client.start_metric_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.start_metric_streams)
 
 Arguments mapping described in
-[StartMetricStreamsInputTypeDef](./type_defs.md#startmetricstreamsinputtypedef).
+[StartMetricStreamsInputRequestTypeDef](./type_defs.md#startmetricstreamsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -871,7 +880,7 @@ Boto3 documentation:
 [CloudWatch.Client.stop_metric_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.stop_metric_streams)
 
 Arguments mapping described in
-[StopMetricStreamsInputTypeDef](./type_defs.md#stopmetricstreamsinputtypedef).
+[StopMetricStreamsInputRequestTypeDef](./type_defs.md#stopmetricstreamsinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -890,7 +899,7 @@ Boto3 documentation:
 [CloudWatch.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceInputTypeDef](./type_defs.md#tagresourceinputtypedef).
+[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -909,7 +918,7 @@ Boto3 documentation:
 [CloudWatch.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceInputTypeDef](./type_defs.md#untagresourceinputtypedef).
+[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
 Keyword-only arguments:
 

@@ -9,49 +9,49 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 ElasticLoadBalancingv2 module](#typed-dictionaries-for-boto3-elasticloadbalancingv2-module)
   - [ActionTypeDef](#actiontypedef)
-  - [AddListenerCertificatesInputTypeDef](#addlistenercertificatesinputtypedef)
-  - [AddListenerCertificatesOutputResponseTypeDef](#addlistenercertificatesoutputresponsetypedef)
-  - [AddTagsInputTypeDef](#addtagsinputtypedef)
+  - [AddListenerCertificatesInputRequestTypeDef](#addlistenercertificatesinputrequesttypedef)
+  - [AddListenerCertificatesOutputTypeDef](#addlistenercertificatesoutputtypedef)
+  - [AddTagsInputRequestTypeDef](#addtagsinputrequesttypedef)
   - [AuthenticateCognitoActionConfigTypeDef](#authenticatecognitoactionconfigtypedef)
   - [AuthenticateOidcActionConfigTypeDef](#authenticateoidcactionconfigtypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
   - [CertificateTypeDef](#certificatetypedef)
   - [CipherTypeDef](#ciphertypedef)
-  - [CreateListenerInputTypeDef](#createlistenerinputtypedef)
-  - [CreateListenerOutputResponseTypeDef](#createlisteneroutputresponsetypedef)
-  - [CreateLoadBalancerInputTypeDef](#createloadbalancerinputtypedef)
-  - [CreateLoadBalancerOutputResponseTypeDef](#createloadbalanceroutputresponsetypedef)
-  - [CreateRuleInputTypeDef](#createruleinputtypedef)
-  - [CreateRuleOutputResponseTypeDef](#createruleoutputresponsetypedef)
-  - [CreateTargetGroupInputTypeDef](#createtargetgroupinputtypedef)
-  - [CreateTargetGroupOutputResponseTypeDef](#createtargetgroupoutputresponsetypedef)
-  - [DeleteListenerInputTypeDef](#deletelistenerinputtypedef)
-  - [DeleteLoadBalancerInputTypeDef](#deleteloadbalancerinputtypedef)
-  - [DeleteRuleInputTypeDef](#deleteruleinputtypedef)
-  - [DeleteTargetGroupInputTypeDef](#deletetargetgroupinputtypedef)
-  - [DeregisterTargetsInputTypeDef](#deregistertargetsinputtypedef)
-  - [DescribeAccountLimitsInputTypeDef](#describeaccountlimitsinputtypedef)
-  - [DescribeAccountLimitsOutputResponseTypeDef](#describeaccountlimitsoutputresponsetypedef)
-  - [DescribeListenerCertificatesInputTypeDef](#describelistenercertificatesinputtypedef)
-  - [DescribeListenerCertificatesOutputResponseTypeDef](#describelistenercertificatesoutputresponsetypedef)
-  - [DescribeListenersInputTypeDef](#describelistenersinputtypedef)
-  - [DescribeListenersOutputResponseTypeDef](#describelistenersoutputresponsetypedef)
-  - [DescribeLoadBalancerAttributesInputTypeDef](#describeloadbalancerattributesinputtypedef)
-  - [DescribeLoadBalancerAttributesOutputResponseTypeDef](#describeloadbalancerattributesoutputresponsetypedef)
-  - [DescribeLoadBalancersInputTypeDef](#describeloadbalancersinputtypedef)
-  - [DescribeLoadBalancersOutputResponseTypeDef](#describeloadbalancersoutputresponsetypedef)
-  - [DescribeRulesInputTypeDef](#describerulesinputtypedef)
-  - [DescribeRulesOutputResponseTypeDef](#describerulesoutputresponsetypedef)
-  - [DescribeSSLPoliciesInputTypeDef](#describesslpoliciesinputtypedef)
-  - [DescribeSSLPoliciesOutputResponseTypeDef](#describesslpoliciesoutputresponsetypedef)
-  - [DescribeTagsInputTypeDef](#describetagsinputtypedef)
-  - [DescribeTagsOutputResponseTypeDef](#describetagsoutputresponsetypedef)
-  - [DescribeTargetGroupAttributesInputTypeDef](#describetargetgroupattributesinputtypedef)
-  - [DescribeTargetGroupAttributesOutputResponseTypeDef](#describetargetgroupattributesoutputresponsetypedef)
-  - [DescribeTargetGroupsInputTypeDef](#describetargetgroupsinputtypedef)
-  - [DescribeTargetGroupsOutputResponseTypeDef](#describetargetgroupsoutputresponsetypedef)
-  - [DescribeTargetHealthInputTypeDef](#describetargethealthinputtypedef)
-  - [DescribeTargetHealthOutputResponseTypeDef](#describetargethealthoutputresponsetypedef)
+  - [CreateListenerInputRequestTypeDef](#createlistenerinputrequesttypedef)
+  - [CreateListenerOutputTypeDef](#createlisteneroutputtypedef)
+  - [CreateLoadBalancerInputRequestTypeDef](#createloadbalancerinputrequesttypedef)
+  - [CreateLoadBalancerOutputTypeDef](#createloadbalanceroutputtypedef)
+  - [CreateRuleInputRequestTypeDef](#createruleinputrequesttypedef)
+  - [CreateRuleOutputTypeDef](#createruleoutputtypedef)
+  - [CreateTargetGroupInputRequestTypeDef](#createtargetgroupinputrequesttypedef)
+  - [CreateTargetGroupOutputTypeDef](#createtargetgroupoutputtypedef)
+  - [DeleteListenerInputRequestTypeDef](#deletelistenerinputrequesttypedef)
+  - [DeleteLoadBalancerInputRequestTypeDef](#deleteloadbalancerinputrequesttypedef)
+  - [DeleteRuleInputRequestTypeDef](#deleteruleinputrequesttypedef)
+  - [DeleteTargetGroupInputRequestTypeDef](#deletetargetgroupinputrequesttypedef)
+  - [DeregisterTargetsInputRequestTypeDef](#deregistertargetsinputrequesttypedef)
+  - [DescribeAccountLimitsInputRequestTypeDef](#describeaccountlimitsinputrequesttypedef)
+  - [DescribeAccountLimitsOutputTypeDef](#describeaccountlimitsoutputtypedef)
+  - [DescribeListenerCertificatesInputRequestTypeDef](#describelistenercertificatesinputrequesttypedef)
+  - [DescribeListenerCertificatesOutputTypeDef](#describelistenercertificatesoutputtypedef)
+  - [DescribeListenersInputRequestTypeDef](#describelistenersinputrequesttypedef)
+  - [DescribeListenersOutputTypeDef](#describelistenersoutputtypedef)
+  - [DescribeLoadBalancerAttributesInputRequestTypeDef](#describeloadbalancerattributesinputrequesttypedef)
+  - [DescribeLoadBalancerAttributesOutputTypeDef](#describeloadbalancerattributesoutputtypedef)
+  - [DescribeLoadBalancersInputRequestTypeDef](#describeloadbalancersinputrequesttypedef)
+  - [DescribeLoadBalancersOutputTypeDef](#describeloadbalancersoutputtypedef)
+  - [DescribeRulesInputRequestTypeDef](#describerulesinputrequesttypedef)
+  - [DescribeRulesOutputTypeDef](#describerulesoutputtypedef)
+  - [DescribeSSLPoliciesInputRequestTypeDef](#describesslpoliciesinputrequesttypedef)
+  - [DescribeSSLPoliciesOutputTypeDef](#describesslpoliciesoutputtypedef)
+  - [DescribeTagsInputRequestTypeDef](#describetagsinputrequesttypedef)
+  - [DescribeTagsOutputTypeDef](#describetagsoutputtypedef)
+  - [DescribeTargetGroupAttributesInputRequestTypeDef](#describetargetgroupattributesinputrequesttypedef)
+  - [DescribeTargetGroupAttributesOutputTypeDef](#describetargetgroupattributesoutputtypedef)
+  - [DescribeTargetGroupsInputRequestTypeDef](#describetargetgroupsinputrequesttypedef)
+  - [DescribeTargetGroupsOutputTypeDef](#describetargetgroupsoutputtypedef)
+  - [DescribeTargetHealthInputRequestTypeDef](#describetargethealthinputrequesttypedef)
+  - [DescribeTargetHealthOutputTypeDef](#describetargethealthoutputtypedef)
   - [FixedResponseActionConfigTypeDef](#fixedresponseactionconfigtypedef)
   - [ForwardActionConfigTypeDef](#forwardactionconfigtypedef)
   - [HostHeaderConditionConfigTypeDef](#hostheaderconditionconfigtypedef)
@@ -64,36 +64,36 @@ type annotations stubs module
   - [LoadBalancerStateTypeDef](#loadbalancerstatetypedef)
   - [LoadBalancerTypeDef](#loadbalancertypedef)
   - [MatcherTypeDef](#matchertypedef)
-  - [ModifyListenerInputTypeDef](#modifylistenerinputtypedef)
-  - [ModifyListenerOutputResponseTypeDef](#modifylisteneroutputresponsetypedef)
-  - [ModifyLoadBalancerAttributesInputTypeDef](#modifyloadbalancerattributesinputtypedef)
-  - [ModifyLoadBalancerAttributesOutputResponseTypeDef](#modifyloadbalancerattributesoutputresponsetypedef)
-  - [ModifyRuleInputTypeDef](#modifyruleinputtypedef)
-  - [ModifyRuleOutputResponseTypeDef](#modifyruleoutputresponsetypedef)
-  - [ModifyTargetGroupAttributesInputTypeDef](#modifytargetgroupattributesinputtypedef)
-  - [ModifyTargetGroupAttributesOutputResponseTypeDef](#modifytargetgroupattributesoutputresponsetypedef)
-  - [ModifyTargetGroupInputTypeDef](#modifytargetgroupinputtypedef)
-  - [ModifyTargetGroupOutputResponseTypeDef](#modifytargetgroupoutputresponsetypedef)
+  - [ModifyListenerInputRequestTypeDef](#modifylistenerinputrequesttypedef)
+  - [ModifyListenerOutputTypeDef](#modifylisteneroutputtypedef)
+  - [ModifyLoadBalancerAttributesInputRequestTypeDef](#modifyloadbalancerattributesinputrequesttypedef)
+  - [ModifyLoadBalancerAttributesOutputTypeDef](#modifyloadbalancerattributesoutputtypedef)
+  - [ModifyRuleInputRequestTypeDef](#modifyruleinputrequesttypedef)
+  - [ModifyRuleOutputTypeDef](#modifyruleoutputtypedef)
+  - [ModifyTargetGroupAttributesInputRequestTypeDef](#modifytargetgroupattributesinputrequesttypedef)
+  - [ModifyTargetGroupAttributesOutputTypeDef](#modifytargetgroupattributesoutputtypedef)
+  - [ModifyTargetGroupInputRequestTypeDef](#modifytargetgroupinputrequesttypedef)
+  - [ModifyTargetGroupOutputTypeDef](#modifytargetgroupoutputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PathPatternConditionConfigTypeDef](#pathpatternconditionconfigtypedef)
   - [QueryStringConditionConfigTypeDef](#querystringconditionconfigtypedef)
   - [QueryStringKeyValuePairTypeDef](#querystringkeyvaluepairtypedef)
   - [RedirectActionConfigTypeDef](#redirectactionconfigtypedef)
-  - [RegisterTargetsInputTypeDef](#registertargetsinputtypedef)
-  - [RemoveListenerCertificatesInputTypeDef](#removelistenercertificatesinputtypedef)
-  - [RemoveTagsInputTypeDef](#removetagsinputtypedef)
+  - [RegisterTargetsInputRequestTypeDef](#registertargetsinputrequesttypedef)
+  - [RemoveListenerCertificatesInputRequestTypeDef](#removelistenercertificatesinputrequesttypedef)
+  - [RemoveTagsInputRequestTypeDef](#removetagsinputrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RuleConditionTypeDef](#ruleconditiontypedef)
   - [RulePriorityPairTypeDef](#ruleprioritypairtypedef)
   - [RuleTypeDef](#ruletypedef)
-  - [SetIpAddressTypeInputTypeDef](#setipaddresstypeinputtypedef)
-  - [SetIpAddressTypeOutputResponseTypeDef](#setipaddresstypeoutputresponsetypedef)
-  - [SetRulePrioritiesInputTypeDef](#setruleprioritiesinputtypedef)
-  - [SetRulePrioritiesOutputResponseTypeDef](#setruleprioritiesoutputresponsetypedef)
-  - [SetSecurityGroupsInputTypeDef](#setsecuritygroupsinputtypedef)
-  - [SetSecurityGroupsOutputResponseTypeDef](#setsecuritygroupsoutputresponsetypedef)
-  - [SetSubnetsInputTypeDef](#setsubnetsinputtypedef)
-  - [SetSubnetsOutputResponseTypeDef](#setsubnetsoutputresponsetypedef)
+  - [SetIpAddressTypeInputRequestTypeDef](#setipaddresstypeinputrequesttypedef)
+  - [SetIpAddressTypeOutputTypeDef](#setipaddresstypeoutputtypedef)
+  - [SetRulePrioritiesInputRequestTypeDef](#setruleprioritiesinputrequesttypedef)
+  - [SetRulePrioritiesOutputTypeDef](#setruleprioritiesoutputtypedef)
+  - [SetSecurityGroupsInputRequestTypeDef](#setsecuritygroupsinputrequesttypedef)
+  - [SetSecurityGroupsOutputTypeDef](#setsecuritygroupsoutputtypedef)
+  - [SetSubnetsInputRequestTypeDef](#setsubnetsinputrequesttypedef)
+  - [SetSubnetsOutputTypeDef](#setsubnetsoutputtypedef)
   - [SourceIpConditionConfigTypeDef](#sourceipconditionconfigtypedef)
   - [SslPolicyTypeDef](#sslpolicytypedef)
   - [SubnetMappingTypeDef](#subnetmappingtypedef)
@@ -133,10 +133,10 @@ Optional fields:
 - `ForwardConfig`:
   [ForwardActionConfigTypeDef](./type_defs.md#forwardactionconfigtypedef)
 
-## AddListenerCertificatesInputTypeDef
+## AddListenerCertificatesInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import AddListenerCertificatesInputTypeDef
+from mypy_boto3_elbv2.type_defs import AddListenerCertificatesInputRequestTypeDef
 ```
 
 Required fields:
@@ -145,10 +145,10 @@ Required fields:
 - `Certificates`:
   `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
 
-## AddListenerCertificatesOutputResponseTypeDef
+## AddListenerCertificatesOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import AddListenerCertificatesOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import AddListenerCertificatesOutputTypeDef
 ```
 
 Required fields:
@@ -158,10 +158,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AddTagsInputTypeDef
+## AddTagsInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import AddTagsInputTypeDef
+from mypy_boto3_elbv2.type_defs import AddTagsInputRequestTypeDef
 ```
 
 Required fields:
@@ -251,10 +251,10 @@ Optional fields:
 - `Name`: `str`
 - `Priority`: `int`
 
-## CreateListenerInputTypeDef
+## CreateListenerInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import CreateListenerInputTypeDef
+from mypy_boto3_elbv2.type_defs import CreateListenerInputRequestTypeDef
 ```
 
 Required fields:
@@ -272,10 +272,10 @@ Optional fields:
 - `AlpnPolicy`: `List`\[`str`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateListenerOutputResponseTypeDef
+## CreateListenerOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import CreateListenerOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import CreateListenerOutputTypeDef
 ```
 
 Required fields:
@@ -284,10 +284,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateLoadBalancerInputTypeDef
+## CreateLoadBalancerInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import CreateLoadBalancerInputTypeDef
+from mypy_boto3_elbv2.type_defs import CreateLoadBalancerInputRequestTypeDef
 ```
 
 Required fields:
@@ -307,10 +307,10 @@ Optional fields:
 - `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `CustomerOwnedIpv4Pool`: `str`
 
-## CreateLoadBalancerOutputResponseTypeDef
+## CreateLoadBalancerOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import CreateLoadBalancerOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import CreateLoadBalancerOutputTypeDef
 ```
 
 Required fields:
@@ -320,10 +320,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateRuleInputTypeDef
+## CreateRuleInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import CreateRuleInputTypeDef
+from mypy_boto3_elbv2.type_defs import CreateRuleInputRequestTypeDef
 ```
 
 Required fields:
@@ -338,10 +338,10 @@ Optional fields:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateRuleOutputResponseTypeDef
+## CreateRuleOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import CreateRuleOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import CreateRuleOutputTypeDef
 ```
 
 Required fields:
@@ -350,10 +350,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateTargetGroupInputTypeDef
+## CreateTargetGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import CreateTargetGroupInputTypeDef
+from mypy_boto3_elbv2.type_defs import CreateTargetGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -378,10 +378,10 @@ Optional fields:
 - `TargetType`: [TargetTypeEnumType](./literals.md#targettypeenumtype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-## CreateTargetGroupOutputResponseTypeDef
+## CreateTargetGroupOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import CreateTargetGroupOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import CreateTargetGroupOutputTypeDef
 ```
 
 Required fields:
@@ -391,50 +391,50 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteListenerInputTypeDef
+## DeleteListenerInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DeleteListenerInputTypeDef
+from mypy_boto3_elbv2.type_defs import DeleteListenerInputRequestTypeDef
 ```
 
 Required fields:
 
 - `ListenerArn`: `str`
 
-## DeleteLoadBalancerInputTypeDef
+## DeleteLoadBalancerInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DeleteLoadBalancerInputTypeDef
+from mypy_boto3_elbv2.type_defs import DeleteLoadBalancerInputRequestTypeDef
 ```
 
 Required fields:
 
 - `LoadBalancerArn`: `str`
 
-## DeleteRuleInputTypeDef
+## DeleteRuleInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DeleteRuleInputTypeDef
+from mypy_boto3_elbv2.type_defs import DeleteRuleInputRequestTypeDef
 ```
 
 Required fields:
 
 - `RuleArn`: `str`
 
-## DeleteTargetGroupInputTypeDef
+## DeleteTargetGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DeleteTargetGroupInputTypeDef
+from mypy_boto3_elbv2.type_defs import DeleteTargetGroupInputRequestTypeDef
 ```
 
 Required fields:
 
 - `TargetGroupArn`: `str`
 
-## DeregisterTargetsInputTypeDef
+## DeregisterTargetsInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DeregisterTargetsInputTypeDef
+from mypy_boto3_elbv2.type_defs import DeregisterTargetsInputRequestTypeDef
 ```
 
 Required fields:
@@ -443,10 +443,10 @@ Required fields:
 - `Targets`:
   `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
 
-## DescribeAccountLimitsInputTypeDef
+## DescribeAccountLimitsInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeAccountLimitsInputTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeAccountLimitsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -454,10 +454,10 @@ Optional fields:
 - `Marker`: `str`
 - `PageSize`: `int`
 
-## DescribeAccountLimitsOutputResponseTypeDef
+## DescribeAccountLimitsOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeAccountLimitsOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeAccountLimitsOutputTypeDef
 ```
 
 Required fields:
@@ -467,10 +467,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeListenerCertificatesInputTypeDef
+## DescribeListenerCertificatesInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeListenerCertificatesInputTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeListenerCertificatesInputRequestTypeDef
 ```
 
 Required fields:
@@ -482,10 +482,10 @@ Optional fields:
 - `Marker`: `str`
 - `PageSize`: `int`
 
-## DescribeListenerCertificatesOutputResponseTypeDef
+## DescribeListenerCertificatesOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeListenerCertificatesOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeListenerCertificatesOutputTypeDef
 ```
 
 Required fields:
@@ -496,10 +496,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeListenersInputTypeDef
+## DescribeListenersInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeListenersInputTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeListenersInputRequestTypeDef
 ```
 
 Optional fields:
@@ -509,10 +509,10 @@ Optional fields:
 - `Marker`: `str`
 - `PageSize`: `int`
 
-## DescribeListenersOutputResponseTypeDef
+## DescribeListenersOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeListenersOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeListenersOutputTypeDef
 ```
 
 Required fields:
@@ -522,20 +522,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLoadBalancerAttributesInputTypeDef
+## DescribeLoadBalancerAttributesInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeLoadBalancerAttributesInputTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeLoadBalancerAttributesInputRequestTypeDef
 ```
 
 Required fields:
 
 - `LoadBalancerArn`: `str`
 
-## DescribeLoadBalancerAttributesOutputResponseTypeDef
+## DescribeLoadBalancerAttributesOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeLoadBalancerAttributesOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeLoadBalancerAttributesOutputTypeDef
 ```
 
 Required fields:
@@ -545,10 +545,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeLoadBalancersInputTypeDef
+## DescribeLoadBalancersInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeLoadBalancersInputTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeLoadBalancersInputRequestTypeDef
 ```
 
 Optional fields:
@@ -558,10 +558,10 @@ Optional fields:
 - `Marker`: `str`
 - `PageSize`: `int`
 
-## DescribeLoadBalancersOutputResponseTypeDef
+## DescribeLoadBalancersOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeLoadBalancersOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeLoadBalancersOutputTypeDef
 ```
 
 Required fields:
@@ -572,10 +572,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeRulesInputTypeDef
+## DescribeRulesInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeRulesInputTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeRulesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -585,10 +585,10 @@ Optional fields:
 - `Marker`: `str`
 - `PageSize`: `int`
 
-## DescribeRulesOutputResponseTypeDef
+## DescribeRulesOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeRulesOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeRulesOutputTypeDef
 ```
 
 Required fields:
@@ -598,10 +598,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeSSLPoliciesInputTypeDef
+## DescribeSSLPoliciesInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeSSLPoliciesInputTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeSSLPoliciesInputRequestTypeDef
 ```
 
 Optional fields:
@@ -610,10 +610,10 @@ Optional fields:
 - `Marker`: `str`
 - `PageSize`: `int`
 
-## DescribeSSLPoliciesOutputResponseTypeDef
+## DescribeSSLPoliciesOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeSSLPoliciesOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeSSLPoliciesOutputTypeDef
 ```
 
 Required fields:
@@ -623,20 +623,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTagsInputTypeDef
+## DescribeTagsInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeTagsInputTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeTagsInputRequestTypeDef
 ```
 
 Required fields:
 
 - `ResourceArns`: `List`\[`str`\]
 
-## DescribeTagsOutputResponseTypeDef
+## DescribeTagsOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeTagsOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeTagsOutputTypeDef
 ```
 
 Required fields:
@@ -646,20 +646,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTargetGroupAttributesInputTypeDef
+## DescribeTargetGroupAttributesInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeTargetGroupAttributesInputTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeTargetGroupAttributesInputRequestTypeDef
 ```
 
 Required fields:
 
 - `TargetGroupArn`: `str`
 
-## DescribeTargetGroupAttributesOutputResponseTypeDef
+## DescribeTargetGroupAttributesOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeTargetGroupAttributesOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeTargetGroupAttributesOutputTypeDef
 ```
 
 Required fields:
@@ -669,10 +669,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTargetGroupsInputTypeDef
+## DescribeTargetGroupsInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeTargetGroupsInputTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeTargetGroupsInputRequestTypeDef
 ```
 
 Optional fields:
@@ -683,10 +683,10 @@ Optional fields:
 - `Marker`: `str`
 - `PageSize`: `int`
 
-## DescribeTargetGroupsOutputResponseTypeDef
+## DescribeTargetGroupsOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeTargetGroupsOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeTargetGroupsOutputTypeDef
 ```
 
 Required fields:
@@ -697,10 +697,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DescribeTargetHealthInputTypeDef
+## DescribeTargetHealthInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeTargetHealthInputTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeTargetHealthInputRequestTypeDef
 ```
 
 Required fields:
@@ -712,10 +712,10 @@ Optional fields:
 - `Targets`:
   `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
 
-## DescribeTargetHealthOutputResponseTypeDef
+## DescribeTargetHealthOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import DescribeTargetHealthOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import DescribeTargetHealthOutputTypeDef
 ```
 
 Required fields:
@@ -883,10 +883,10 @@ Optional fields:
 - `HttpCode`: `str`
 - `GrpcCode`: `str`
 
-## ModifyListenerInputTypeDef
+## ModifyListenerInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import ModifyListenerInputTypeDef
+from mypy_boto3_elbv2.type_defs import ModifyListenerInputRequestTypeDef
 ```
 
 Required fields:
@@ -903,10 +903,10 @@ Optional fields:
 - `DefaultActions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `AlpnPolicy`: `List`\[`str`\]
 
-## ModifyListenerOutputResponseTypeDef
+## ModifyListenerOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import ModifyListenerOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import ModifyListenerOutputTypeDef
 ```
 
 Required fields:
@@ -915,10 +915,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyLoadBalancerAttributesInputTypeDef
+## ModifyLoadBalancerAttributesInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import ModifyLoadBalancerAttributesInputTypeDef
+from mypy_boto3_elbv2.type_defs import ModifyLoadBalancerAttributesInputRequestTypeDef
 ```
 
 Required fields:
@@ -927,10 +927,10 @@ Required fields:
 - `Attributes`:
   `List`\[[LoadBalancerAttributeTypeDef](./type_defs.md#loadbalancerattributetypedef)\]
 
-## ModifyLoadBalancerAttributesOutputResponseTypeDef
+## ModifyLoadBalancerAttributesOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import ModifyLoadBalancerAttributesOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import ModifyLoadBalancerAttributesOutputTypeDef
 ```
 
 Required fields:
@@ -940,10 +940,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyRuleInputTypeDef
+## ModifyRuleInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import ModifyRuleInputTypeDef
+from mypy_boto3_elbv2.type_defs import ModifyRuleInputRequestTypeDef
 ```
 
 Required fields:
@@ -956,10 +956,10 @@ Optional fields:
   `List`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
 - `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
-## ModifyRuleOutputResponseTypeDef
+## ModifyRuleOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import ModifyRuleOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import ModifyRuleOutputTypeDef
 ```
 
 Required fields:
@@ -968,10 +968,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyTargetGroupAttributesInputTypeDef
+## ModifyTargetGroupAttributesInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import ModifyTargetGroupAttributesInputTypeDef
+from mypy_boto3_elbv2.type_defs import ModifyTargetGroupAttributesInputRequestTypeDef
 ```
 
 Required fields:
@@ -980,10 +980,10 @@ Required fields:
 - `Attributes`:
   `List`\[[TargetGroupAttributeTypeDef](./type_defs.md#targetgroupattributetypedef)\]
 
-## ModifyTargetGroupAttributesOutputResponseTypeDef
+## ModifyTargetGroupAttributesOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import ModifyTargetGroupAttributesOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import ModifyTargetGroupAttributesOutputTypeDef
 ```
 
 Required fields:
@@ -993,10 +993,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ModifyTargetGroupInputTypeDef
+## ModifyTargetGroupInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import ModifyTargetGroupInputTypeDef
+from mypy_boto3_elbv2.type_defs import ModifyTargetGroupInputRequestTypeDef
 ```
 
 Required fields:
@@ -1015,10 +1015,10 @@ Optional fields:
 - `UnhealthyThresholdCount`: `int`
 - `Matcher`: [MatcherTypeDef](./type_defs.md#matchertypedef)
 
-## ModifyTargetGroupOutputResponseTypeDef
+## ModifyTargetGroupOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import ModifyTargetGroupOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import ModifyTargetGroupOutputTypeDef
 ```
 
 Required fields:
@@ -1091,10 +1091,10 @@ Optional fields:
 - `Path`: `str`
 - `Query`: `str`
 
-## RegisterTargetsInputTypeDef
+## RegisterTargetsInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import RegisterTargetsInputTypeDef
+from mypy_boto3_elbv2.type_defs import RegisterTargetsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1103,10 +1103,10 @@ Required fields:
 - `Targets`:
   `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
 
-## RemoveListenerCertificatesInputTypeDef
+## RemoveListenerCertificatesInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import RemoveListenerCertificatesInputTypeDef
+from mypy_boto3_elbv2.type_defs import RemoveListenerCertificatesInputRequestTypeDef
 ```
 
 Required fields:
@@ -1115,10 +1115,10 @@ Required fields:
 - `Certificates`:
   `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
 
-## RemoveTagsInputTypeDef
+## RemoveTagsInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import RemoveTagsInputTypeDef
+from mypy_boto3_elbv2.type_defs import RemoveTagsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1189,10 +1189,10 @@ Optional fields:
 - `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `IsDefault`: `bool`
 
-## SetIpAddressTypeInputTypeDef
+## SetIpAddressTypeInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import SetIpAddressTypeInputTypeDef
+from mypy_boto3_elbv2.type_defs import SetIpAddressTypeInputRequestTypeDef
 ```
 
 Required fields:
@@ -1200,10 +1200,10 @@ Required fields:
 - `LoadBalancerArn`: `str`
 - `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
-## SetIpAddressTypeOutputResponseTypeDef
+## SetIpAddressTypeOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import SetIpAddressTypeOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import SetIpAddressTypeOutputTypeDef
 ```
 
 Required fields:
@@ -1212,10 +1212,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SetRulePrioritiesInputTypeDef
+## SetRulePrioritiesInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import SetRulePrioritiesInputTypeDef
+from mypy_boto3_elbv2.type_defs import SetRulePrioritiesInputRequestTypeDef
 ```
 
 Required fields:
@@ -1223,10 +1223,10 @@ Required fields:
 - `RulePriorities`:
   `List`\[[RulePriorityPairTypeDef](./type_defs.md#ruleprioritypairtypedef)\]
 
-## SetRulePrioritiesOutputResponseTypeDef
+## SetRulePrioritiesOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import SetRulePrioritiesOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import SetRulePrioritiesOutputTypeDef
 ```
 
 Required fields:
@@ -1235,10 +1235,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SetSecurityGroupsInputTypeDef
+## SetSecurityGroupsInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import SetSecurityGroupsInputTypeDef
+from mypy_boto3_elbv2.type_defs import SetSecurityGroupsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1246,10 +1246,10 @@ Required fields:
 - `LoadBalancerArn`: `str`
 - `SecurityGroups`: `List`\[`str`\]
 
-## SetSecurityGroupsOutputResponseTypeDef
+## SetSecurityGroupsOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import SetSecurityGroupsOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import SetSecurityGroupsOutputTypeDef
 ```
 
 Required fields:
@@ -1258,10 +1258,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## SetSubnetsInputTypeDef
+## SetSubnetsInputRequestTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import SetSubnetsInputTypeDef
+from mypy_boto3_elbv2.type_defs import SetSubnetsInputRequestTypeDef
 ```
 
 Required fields:
@@ -1275,10 +1275,10 @@ Optional fields:
   `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
 - `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
-## SetSubnetsOutputResponseTypeDef
+## SetSubnetsOutputTypeDef
 
 ```python
-from mypy_boto3_elbv2.type_defs import SetSubnetsOutputResponseTypeDef
+from mypy_boto3_elbv2.type_defs import SetSubnetsOutputTypeDef
 ```
 
 Required fields:

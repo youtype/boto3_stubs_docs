@@ -11,6 +11,7 @@ type annotations stubs module
   - [IoTEventsClient](#ioteventsclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_alarm_model](#create_alarm_model)
     - [create_detector_model](#create_detector_model)
@@ -83,6 +84,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IoTEventsClient exceptions.
+
+Type annotations for `boto3.client("iotevents").exceptions` method.
+
+Boto3 documentation:
+[IoTEvents.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -108,7 +120,7 @@ Boto3 documentation:
 [IoTEvents.Client.create_alarm_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_alarm_model)
 
 Arguments mapping described in
-[CreateAlarmModelRequestTypeDef](./type_defs.md#createalarmmodelrequesttypedef).
+[CreateAlarmModelRequestRequestTypeDef](./type_defs.md#createalarmmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -127,7 +139,7 @@ Keyword-only arguments:
   [AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef)
 
 Returns
-[CreateAlarmModelResponseResponseTypeDef](./type_defs.md#createalarmmodelresponseresponsetypedef).
+[CreateAlarmModelResponseTypeDef](./type_defs.md#createalarmmodelresponsetypedef).
 
 ### create_detector_model
 
@@ -139,7 +151,7 @@ Boto3 documentation:
 [IoTEvents.Client.create_detector_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_detector_model)
 
 Arguments mapping described in
-[CreateDetectorModelRequestTypeDef](./type_defs.md#createdetectormodelrequesttypedef).
+[CreateDetectorModelRequestRequestTypeDef](./type_defs.md#createdetectormodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -155,7 +167,7 @@ Keyword-only arguments:
   [EvaluationMethodType](./literals.md#evaluationmethodtype)
 
 Returns
-[CreateDetectorModelResponseResponseTypeDef](./type_defs.md#createdetectormodelresponseresponsetypedef).
+[CreateDetectorModelResponseTypeDef](./type_defs.md#createdetectormodelresponsetypedef).
 
 ### create_input
 
@@ -167,7 +179,7 @@ Boto3 documentation:
 [IoTEvents.Client.create_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.create_input)
 
 Arguments mapping described in
-[CreateInputRequestTypeDef](./type_defs.md#createinputrequesttypedef).
+[CreateInputRequestRequestTypeDef](./type_defs.md#createinputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -178,7 +190,7 @@ Keyword-only arguments:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
-[CreateInputResponseResponseTypeDef](./type_defs.md#createinputresponseresponsetypedef).
+[CreateInputResponseTypeDef](./type_defs.md#createinputresponsetypedef).
 
 ### delete_alarm_model
 
@@ -190,7 +202,7 @@ Boto3 documentation:
 [IoTEvents.Client.delete_alarm_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.delete_alarm_model)
 
 Arguments mapping described in
-[DeleteAlarmModelRequestTypeDef](./type_defs.md#deletealarmmodelrequesttypedef).
+[DeleteAlarmModelRequestRequestTypeDef](./type_defs.md#deletealarmmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -208,7 +220,7 @@ Boto3 documentation:
 [IoTEvents.Client.delete_detector_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.delete_detector_model)
 
 Arguments mapping described in
-[DeleteDetectorModelRequestTypeDef](./type_defs.md#deletedetectormodelrequesttypedef).
+[DeleteDetectorModelRequestRequestTypeDef](./type_defs.md#deletedetectormodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -226,7 +238,7 @@ Boto3 documentation:
 [IoTEvents.Client.delete_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.delete_input)
 
 Arguments mapping described in
-[DeleteInputRequestTypeDef](./type_defs.md#deleteinputrequesttypedef).
+[DeleteInputRequestRequestTypeDef](./type_defs.md#deleteinputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -244,7 +256,7 @@ Boto3 documentation:
 [IoTEvents.Client.describe_alarm_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_alarm_model)
 
 Arguments mapping described in
-[DescribeAlarmModelRequestTypeDef](./type_defs.md#describealarmmodelrequesttypedef).
+[DescribeAlarmModelRequestRequestTypeDef](./type_defs.md#describealarmmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -252,7 +264,7 @@ Keyword-only arguments:
 - `alarmModelVersion`: `str`
 
 Returns
-[DescribeAlarmModelResponseResponseTypeDef](./type_defs.md#describealarmmodelresponseresponsetypedef).
+[DescribeAlarmModelResponseTypeDef](./type_defs.md#describealarmmodelresponsetypedef).
 
 ### describe_detector_model
 
@@ -265,7 +277,7 @@ Boto3 documentation:
 [IoTEvents.Client.describe_detector_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_detector_model)
 
 Arguments mapping described in
-[DescribeDetectorModelRequestTypeDef](./type_defs.md#describedetectormodelrequesttypedef).
+[DescribeDetectorModelRequestRequestTypeDef](./type_defs.md#describedetectormodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -273,7 +285,7 @@ Keyword-only arguments:
 - `detectorModelVersion`: `str`
 
 Returns
-[DescribeDetectorModelResponseResponseTypeDef](./type_defs.md#describedetectormodelresponseresponsetypedef).
+[DescribeDetectorModelResponseTypeDef](./type_defs.md#describedetectormodelresponsetypedef).
 
 ### describe_detector_model_analysis
 
@@ -286,14 +298,14 @@ Boto3 documentation:
 [IoTEvents.Client.describe_detector_model_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_detector_model_analysis)
 
 Arguments mapping described in
-[DescribeDetectorModelAnalysisRequestTypeDef](./type_defs.md#describedetectormodelanalysisrequesttypedef).
+[DescribeDetectorModelAnalysisRequestRequestTypeDef](./type_defs.md#describedetectormodelanalysisrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `analysisId`: `str` *(required)*
 
 Returns
-[DescribeDetectorModelAnalysisResponseResponseTypeDef](./type_defs.md#describedetectormodelanalysisresponseresponsetypedef).
+[DescribeDetectorModelAnalysisResponseTypeDef](./type_defs.md#describedetectormodelanalysisresponsetypedef).
 
 ### describe_input
 
@@ -305,14 +317,14 @@ Boto3 documentation:
 [IoTEvents.Client.describe_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_input)
 
 Arguments mapping described in
-[DescribeInputRequestTypeDef](./type_defs.md#describeinputrequesttypedef).
+[DescribeInputRequestRequestTypeDef](./type_defs.md#describeinputrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `inputName`: `str` *(required)*
 
 Returns
-[DescribeInputResponseResponseTypeDef](./type_defs.md#describeinputresponseresponsetypedef).
+[DescribeInputResponseTypeDef](./type_defs.md#describeinputresponsetypedef).
 
 ### describe_logging_options
 
@@ -325,7 +337,7 @@ Boto3 documentation:
 [IoTEvents.Client.describe_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.describe_logging_options)
 
 Returns
-[DescribeLoggingOptionsResponseResponseTypeDef](./type_defs.md#describeloggingoptionsresponseresponsetypedef).
+[DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
 
 ### generate_presigned_url
 
@@ -356,7 +368,7 @@ Boto3 documentation:
 [IoTEvents.Client.get_detector_model_analysis_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.get_detector_model_analysis_results)
 
 Arguments mapping described in
-[GetDetectorModelAnalysisResultsRequestTypeDef](./type_defs.md#getdetectormodelanalysisresultsrequesttypedef).
+[GetDetectorModelAnalysisResultsRequestRequestTypeDef](./type_defs.md#getdetectormodelanalysisresultsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -365,7 +377,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[GetDetectorModelAnalysisResultsResponseResponseTypeDef](./type_defs.md#getdetectormodelanalysisresultsresponseresponsetypedef).
+[GetDetectorModelAnalysisResultsResponseTypeDef](./type_defs.md#getdetectormodelanalysisresultsresponsetypedef).
 
 ### list_alarm_model_versions
 
@@ -378,7 +390,7 @@ Boto3 documentation:
 [IoTEvents.Client.list_alarm_model_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_alarm_model_versions)
 
 Arguments mapping described in
-[ListAlarmModelVersionsRequestTypeDef](./type_defs.md#listalarmmodelversionsrequesttypedef).
+[ListAlarmModelVersionsRequestRequestTypeDef](./type_defs.md#listalarmmodelversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -387,7 +399,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAlarmModelVersionsResponseResponseTypeDef](./type_defs.md#listalarmmodelversionsresponseresponsetypedef).
+[ListAlarmModelVersionsResponseTypeDef](./type_defs.md#listalarmmodelversionsresponsetypedef).
 
 ### list_alarm_models
 
@@ -399,7 +411,7 @@ Boto3 documentation:
 [IoTEvents.Client.list_alarm_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_alarm_models)
 
 Arguments mapping described in
-[ListAlarmModelsRequestTypeDef](./type_defs.md#listalarmmodelsrequesttypedef).
+[ListAlarmModelsRequestRequestTypeDef](./type_defs.md#listalarmmodelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -407,7 +419,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListAlarmModelsResponseResponseTypeDef](./type_defs.md#listalarmmodelsresponseresponsetypedef).
+[ListAlarmModelsResponseTypeDef](./type_defs.md#listalarmmodelsresponsetypedef).
 
 ### list_detector_model_versions
 
@@ -420,7 +432,7 @@ Boto3 documentation:
 [IoTEvents.Client.list_detector_model_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_detector_model_versions)
 
 Arguments mapping described in
-[ListDetectorModelVersionsRequestTypeDef](./type_defs.md#listdetectormodelversionsrequesttypedef).
+[ListDetectorModelVersionsRequestRequestTypeDef](./type_defs.md#listdetectormodelversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -429,7 +441,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDetectorModelVersionsResponseResponseTypeDef](./type_defs.md#listdetectormodelversionsresponseresponsetypedef).
+[ListDetectorModelVersionsResponseTypeDef](./type_defs.md#listdetectormodelversionsresponsetypedef).
 
 ### list_detector_models
 
@@ -441,7 +453,7 @@ Boto3 documentation:
 [IoTEvents.Client.list_detector_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_detector_models)
 
 Arguments mapping described in
-[ListDetectorModelsRequestTypeDef](./type_defs.md#listdetectormodelsrequesttypedef).
+[ListDetectorModelsRequestRequestTypeDef](./type_defs.md#listdetectormodelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -449,7 +461,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns
-[ListDetectorModelsResponseResponseTypeDef](./type_defs.md#listdetectormodelsresponseresponsetypedef).
+[ListDetectorModelsResponseTypeDef](./type_defs.md#listdetectormodelsresponsetypedef).
 
 ### list_input_routings
 
@@ -461,7 +473,7 @@ Boto3 documentation:
 [IoTEvents.Client.list_input_routings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_input_routings)
 
 Arguments mapping described in
-[ListInputRoutingsRequestTypeDef](./type_defs.md#listinputroutingsrequesttypedef).
+[ListInputRoutingsRequestRequestTypeDef](./type_defs.md#listinputroutingsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -471,7 +483,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListInputRoutingsResponseResponseTypeDef](./type_defs.md#listinputroutingsresponseresponsetypedef).
+[ListInputRoutingsResponseTypeDef](./type_defs.md#listinputroutingsresponsetypedef).
 
 ### list_inputs
 
@@ -483,15 +495,14 @@ Boto3 documentation:
 [IoTEvents.Client.list_inputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_inputs)
 
 Arguments mapping described in
-[ListInputsRequestTypeDef](./type_defs.md#listinputsrequesttypedef).
+[ListInputsRequestRequestTypeDef](./type_defs.md#listinputsrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-Returns
-[ListInputsResponseResponseTypeDef](./type_defs.md#listinputsresponseresponsetypedef).
+Returns [ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -503,14 +514,14 @@ Boto3 documentation:
 [IoTEvents.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### put_logging_options
 
@@ -522,7 +533,7 @@ Boto3 documentation:
 [IoTEvents.Client.put_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.put_logging_options)
 
 Arguments mapping described in
-[PutLoggingOptionsRequestTypeDef](./type_defs.md#putloggingoptionsrequesttypedef).
+[PutLoggingOptionsRequestRequestTypeDef](./type_defs.md#putloggingoptionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -540,7 +551,7 @@ Boto3 documentation:
 [IoTEvents.Client.start_detector_model_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.start_detector_model_analysis)
 
 Arguments mapping described in
-[StartDetectorModelAnalysisRequestTypeDef](./type_defs.md#startdetectormodelanalysisrequesttypedef).
+[StartDetectorModelAnalysisRequestRequestTypeDef](./type_defs.md#startdetectormodelanalysisrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -549,7 +560,7 @@ Keyword-only arguments:
   *(required)*
 
 Returns
-[StartDetectorModelAnalysisResponseResponseTypeDef](./type_defs.md#startdetectormodelanalysisresponseresponsetypedef).
+[StartDetectorModelAnalysisResponseTypeDef](./type_defs.md#startdetectormodelanalysisresponsetypedef).
 
 ### tag_resource
 
@@ -561,7 +572,7 @@ Boto3 documentation:
 [IoTEvents.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -580,7 +591,7 @@ Boto3 documentation:
 [IoTEvents.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -599,7 +610,7 @@ Boto3 documentation:
 [IoTEvents.Client.update_alarm_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_alarm_model)
 
 Arguments mapping described in
-[UpdateAlarmModelRequestTypeDef](./type_defs.md#updatealarmmodelrequesttypedef).
+[UpdateAlarmModelRequestRequestTypeDef](./type_defs.md#updatealarmmodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -616,7 +627,7 @@ Keyword-only arguments:
   [AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef)
 
 Returns
-[UpdateAlarmModelResponseResponseTypeDef](./type_defs.md#updatealarmmodelresponseresponsetypedef).
+[UpdateAlarmModelResponseTypeDef](./type_defs.md#updatealarmmodelresponsetypedef).
 
 ### update_detector_model
 
@@ -628,7 +639,7 @@ Boto3 documentation:
 [IoTEvents.Client.update_detector_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_detector_model)
 
 Arguments mapping described in
-[UpdateDetectorModelRequestTypeDef](./type_defs.md#updatedetectormodelrequesttypedef).
+[UpdateDetectorModelRequestRequestTypeDef](./type_defs.md#updatedetectormodelrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -642,7 +653,7 @@ Keyword-only arguments:
   [EvaluationMethodType](./literals.md#evaluationmethodtype)
 
 Returns
-[UpdateDetectorModelResponseResponseTypeDef](./type_defs.md#updatedetectormodelresponseresponsetypedef).
+[UpdateDetectorModelResponseTypeDef](./type_defs.md#updatedetectormodelresponsetypedef).
 
 ### update_input
 
@@ -654,7 +665,7 @@ Boto3 documentation:
 [IoTEvents.Client.update_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.update_input)
 
 Arguments mapping described in
-[UpdateInputRequestTypeDef](./type_defs.md#updateinputrequesttypedef).
+[UpdateInputRequestRequestTypeDef](./type_defs.md#updateinputrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -664,4 +675,4 @@ Keyword-only arguments:
 - `inputDescription`: `str`
 
 Returns
-[UpdateInputResponseResponseTypeDef](./type_defs.md#updateinputresponseresponsetypedef).
+[UpdateInputResponseTypeDef](./type_defs.md#updateinputresponsetypedef).

@@ -8,49 +8,49 @@ type annotations stubs module
 [mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
 
 - [Typed dictionaries for boto3 RAM module](#typed-dictionaries-for-boto3-ram-module)
-  - [AcceptResourceShareInvitationRequestTypeDef](#acceptresourceshareinvitationrequesttypedef)
-  - [AcceptResourceShareInvitationResponseResponseTypeDef](#acceptresourceshareinvitationresponseresponsetypedef)
-  - [AssociateResourceSharePermissionRequestTypeDef](#associateresourcesharepermissionrequesttypedef)
-  - [AssociateResourceSharePermissionResponseResponseTypeDef](#associateresourcesharepermissionresponseresponsetypedef)
-  - [AssociateResourceShareRequestTypeDef](#associateresourcesharerequesttypedef)
-  - [AssociateResourceShareResponseResponseTypeDef](#associateresourceshareresponseresponsetypedef)
-  - [CreateResourceShareRequestTypeDef](#createresourcesharerequesttypedef)
-  - [CreateResourceShareResponseResponseTypeDef](#createresourceshareresponseresponsetypedef)
-  - [DeleteResourceShareRequestTypeDef](#deleteresourcesharerequesttypedef)
-  - [DeleteResourceShareResponseResponseTypeDef](#deleteresourceshareresponseresponsetypedef)
-  - [DisassociateResourceSharePermissionRequestTypeDef](#disassociateresourcesharepermissionrequesttypedef)
-  - [DisassociateResourceSharePermissionResponseResponseTypeDef](#disassociateresourcesharepermissionresponseresponsetypedef)
-  - [DisassociateResourceShareRequestTypeDef](#disassociateresourcesharerequesttypedef)
-  - [DisassociateResourceShareResponseResponseTypeDef](#disassociateresourceshareresponseresponsetypedef)
-  - [EnableSharingWithAwsOrganizationResponseResponseTypeDef](#enablesharingwithawsorganizationresponseresponsetypedef)
-  - [GetPermissionRequestTypeDef](#getpermissionrequesttypedef)
-  - [GetPermissionResponseResponseTypeDef](#getpermissionresponseresponsetypedef)
-  - [GetResourcePoliciesRequestTypeDef](#getresourcepoliciesrequesttypedef)
-  - [GetResourcePoliciesResponseResponseTypeDef](#getresourcepoliciesresponseresponsetypedef)
-  - [GetResourceShareAssociationsRequestTypeDef](#getresourceshareassociationsrequesttypedef)
-  - [GetResourceShareAssociationsResponseResponseTypeDef](#getresourceshareassociationsresponseresponsetypedef)
-  - [GetResourceShareInvitationsRequestTypeDef](#getresourceshareinvitationsrequesttypedef)
-  - [GetResourceShareInvitationsResponseResponseTypeDef](#getresourceshareinvitationsresponseresponsetypedef)
-  - [GetResourceSharesRequestTypeDef](#getresourcesharesrequesttypedef)
-  - [GetResourceSharesResponseResponseTypeDef](#getresourcesharesresponseresponsetypedef)
-  - [ListPendingInvitationResourcesRequestTypeDef](#listpendinginvitationresourcesrequesttypedef)
-  - [ListPendingInvitationResourcesResponseResponseTypeDef](#listpendinginvitationresourcesresponseresponsetypedef)
-  - [ListPermissionsRequestTypeDef](#listpermissionsrequesttypedef)
-  - [ListPermissionsResponseResponseTypeDef](#listpermissionsresponseresponsetypedef)
-  - [ListPrincipalsRequestTypeDef](#listprincipalsrequesttypedef)
-  - [ListPrincipalsResponseResponseTypeDef](#listprincipalsresponseresponsetypedef)
-  - [ListResourceSharePermissionsRequestTypeDef](#listresourcesharepermissionsrequesttypedef)
-  - [ListResourceSharePermissionsResponseResponseTypeDef](#listresourcesharepermissionsresponseresponsetypedef)
-  - [ListResourceTypesRequestTypeDef](#listresourcetypesrequesttypedef)
-  - [ListResourceTypesResponseResponseTypeDef](#listresourcetypesresponseresponsetypedef)
-  - [ListResourcesRequestTypeDef](#listresourcesrequesttypedef)
-  - [ListResourcesResponseResponseTypeDef](#listresourcesresponseresponsetypedef)
+  - [AcceptResourceShareInvitationRequestRequestTypeDef](#acceptresourceshareinvitationrequestrequesttypedef)
+  - [AcceptResourceShareInvitationResponseTypeDef](#acceptresourceshareinvitationresponsetypedef)
+  - [AssociateResourceSharePermissionRequestRequestTypeDef](#associateresourcesharepermissionrequestrequesttypedef)
+  - [AssociateResourceSharePermissionResponseTypeDef](#associateresourcesharepermissionresponsetypedef)
+  - [AssociateResourceShareRequestRequestTypeDef](#associateresourcesharerequestrequesttypedef)
+  - [AssociateResourceShareResponseTypeDef](#associateresourceshareresponsetypedef)
+  - [CreateResourceShareRequestRequestTypeDef](#createresourcesharerequestrequesttypedef)
+  - [CreateResourceShareResponseTypeDef](#createresourceshareresponsetypedef)
+  - [DeleteResourceShareRequestRequestTypeDef](#deleteresourcesharerequestrequesttypedef)
+  - [DeleteResourceShareResponseTypeDef](#deleteresourceshareresponsetypedef)
+  - [DisassociateResourceSharePermissionRequestRequestTypeDef](#disassociateresourcesharepermissionrequestrequesttypedef)
+  - [DisassociateResourceSharePermissionResponseTypeDef](#disassociateresourcesharepermissionresponsetypedef)
+  - [DisassociateResourceShareRequestRequestTypeDef](#disassociateresourcesharerequestrequesttypedef)
+  - [DisassociateResourceShareResponseTypeDef](#disassociateresourceshareresponsetypedef)
+  - [EnableSharingWithAwsOrganizationResponseTypeDef](#enablesharingwithawsorganizationresponsetypedef)
+  - [GetPermissionRequestRequestTypeDef](#getpermissionrequestrequesttypedef)
+  - [GetPermissionResponseTypeDef](#getpermissionresponsetypedef)
+  - [GetResourcePoliciesRequestRequestTypeDef](#getresourcepoliciesrequestrequesttypedef)
+  - [GetResourcePoliciesResponseTypeDef](#getresourcepoliciesresponsetypedef)
+  - [GetResourceShareAssociationsRequestRequestTypeDef](#getresourceshareassociationsrequestrequesttypedef)
+  - [GetResourceShareAssociationsResponseTypeDef](#getresourceshareassociationsresponsetypedef)
+  - [GetResourceShareInvitationsRequestRequestTypeDef](#getresourceshareinvitationsrequestrequesttypedef)
+  - [GetResourceShareInvitationsResponseTypeDef](#getresourceshareinvitationsresponsetypedef)
+  - [GetResourceSharesRequestRequestTypeDef](#getresourcesharesrequestrequesttypedef)
+  - [GetResourceSharesResponseTypeDef](#getresourcesharesresponsetypedef)
+  - [ListPendingInvitationResourcesRequestRequestTypeDef](#listpendinginvitationresourcesrequestrequesttypedef)
+  - [ListPendingInvitationResourcesResponseTypeDef](#listpendinginvitationresourcesresponsetypedef)
+  - [ListPermissionsRequestRequestTypeDef](#listpermissionsrequestrequesttypedef)
+  - [ListPermissionsResponseTypeDef](#listpermissionsresponsetypedef)
+  - [ListPrincipalsRequestRequestTypeDef](#listprincipalsrequestrequesttypedef)
+  - [ListPrincipalsResponseTypeDef](#listprincipalsresponsetypedef)
+  - [ListResourceSharePermissionsRequestRequestTypeDef](#listresourcesharepermissionsrequestrequesttypedef)
+  - [ListResourceSharePermissionsResponseTypeDef](#listresourcesharepermissionsresponsetypedef)
+  - [ListResourceTypesRequestRequestTypeDef](#listresourcetypesrequestrequesttypedef)
+  - [ListResourceTypesResponseTypeDef](#listresourcetypesresponsetypedef)
+  - [ListResourcesRequestRequestTypeDef](#listresourcesrequestrequesttypedef)
+  - [ListResourcesResponseTypeDef](#listresourcesresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PrincipalTypeDef](#principaltypedef)
-  - [PromoteResourceShareCreatedFromPolicyRequestTypeDef](#promoteresourcesharecreatedfrompolicyrequesttypedef)
-  - [PromoteResourceShareCreatedFromPolicyResponseResponseTypeDef](#promoteresourcesharecreatedfrompolicyresponseresponsetypedef)
-  - [RejectResourceShareInvitationRequestTypeDef](#rejectresourceshareinvitationrequesttypedef)
-  - [RejectResourceShareInvitationResponseResponseTypeDef](#rejectresourceshareinvitationresponseresponsetypedef)
+  - [PromoteResourceShareCreatedFromPolicyRequestRequestTypeDef](#promoteresourcesharecreatedfrompolicyrequestrequesttypedef)
+  - [PromoteResourceShareCreatedFromPolicyResponseTypeDef](#promoteresourcesharecreatedfrompolicyresponsetypedef)
+  - [RejectResourceShareInvitationRequestRequestTypeDef](#rejectresourceshareinvitationrequestrequesttypedef)
+  - [RejectResourceShareInvitationResponseTypeDef](#rejectresourceshareinvitationresponsetypedef)
   - [ResourceShareAssociationTypeDef](#resourceshareassociationtypedef)
   - [ResourceShareInvitationTypeDef](#resourceshareinvitationtypedef)
   - [ResourceSharePermissionDetailTypeDef](#resourcesharepermissiondetailtypedef)
@@ -60,16 +60,16 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ServiceNameAndResourceTypeTypeDef](#servicenameandresourcetypetypedef)
   - [TagFilterTypeDef](#tagfiltertypedef)
-  - [TagResourceRequestTypeDef](#tagresourcerequesttypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestTypeDef](#untagresourcerequesttypedef)
-  - [UpdateResourceShareRequestTypeDef](#updateresourcesharerequesttypedef)
-  - [UpdateResourceShareResponseResponseTypeDef](#updateresourceshareresponseresponsetypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateResourceShareRequestRequestTypeDef](#updateresourcesharerequestrequesttypedef)
+  - [UpdateResourceShareResponseTypeDef](#updateresourceshareresponsetypedef)
 
-## AcceptResourceShareInvitationRequestTypeDef
+## AcceptResourceShareInvitationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import AcceptResourceShareInvitationRequestTypeDef
+from mypy_boto3_ram.type_defs import AcceptResourceShareInvitationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -80,10 +80,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## AcceptResourceShareInvitationResponseResponseTypeDef
+## AcceptResourceShareInvitationResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import AcceptResourceShareInvitationResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import AcceptResourceShareInvitationResponseTypeDef
 ```
 
 Required fields:
@@ -94,10 +94,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateResourceSharePermissionRequestTypeDef
+## AssociateResourceSharePermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import AssociateResourceSharePermissionRequestTypeDef
+from mypy_boto3_ram.type_defs import AssociateResourceSharePermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -111,10 +111,10 @@ Optional fields:
 - `clientToken`: `str`
 - `permissionVersion`: `int`
 
-## AssociateResourceSharePermissionResponseResponseTypeDef
+## AssociateResourceSharePermissionResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import AssociateResourceSharePermissionResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import AssociateResourceSharePermissionResponseTypeDef
 ```
 
 Required fields:
@@ -124,10 +124,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## AssociateResourceShareRequestTypeDef
+## AssociateResourceShareRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import AssociateResourceShareRequestTypeDef
+from mypy_boto3_ram.type_defs import AssociateResourceShareRequestRequestTypeDef
 ```
 
 Required fields:
@@ -140,10 +140,10 @@ Optional fields:
 - `principals`: `List`\[`str`\]
 - `clientToken`: `str`
 
-## AssociateResourceShareResponseResponseTypeDef
+## AssociateResourceShareResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import AssociateResourceShareResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import AssociateResourceShareResponseTypeDef
 ```
 
 Required fields:
@@ -154,10 +154,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## CreateResourceShareRequestTypeDef
+## CreateResourceShareRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import CreateResourceShareRequestTypeDef
+from mypy_boto3_ram.type_defs import CreateResourceShareRequestRequestTypeDef
 ```
 
 Required fields:
@@ -173,10 +173,10 @@ Optional fields:
 - `clientToken`: `str`
 - `permissionArns`: `List`\[`str`\]
 
-## CreateResourceShareResponseResponseTypeDef
+## CreateResourceShareResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import CreateResourceShareResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import CreateResourceShareResponseTypeDef
 ```
 
 Required fields:
@@ -186,10 +186,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DeleteResourceShareRequestTypeDef
+## DeleteResourceShareRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import DeleteResourceShareRequestTypeDef
+from mypy_boto3_ram.type_defs import DeleteResourceShareRequestRequestTypeDef
 ```
 
 Required fields:
@@ -200,10 +200,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## DeleteResourceShareResponseResponseTypeDef
+## DeleteResourceShareResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import DeleteResourceShareResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import DeleteResourceShareResponseTypeDef
 ```
 
 Required fields:
@@ -213,10 +213,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateResourceSharePermissionRequestTypeDef
+## DisassociateResourceSharePermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import DisassociateResourceSharePermissionRequestTypeDef
+from mypy_boto3_ram.type_defs import DisassociateResourceSharePermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -228,10 +228,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## DisassociateResourceSharePermissionResponseResponseTypeDef
+## DisassociateResourceSharePermissionResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import DisassociateResourceSharePermissionResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import DisassociateResourceSharePermissionResponseTypeDef
 ```
 
 Required fields:
@@ -241,10 +241,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## DisassociateResourceShareRequestTypeDef
+## DisassociateResourceShareRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import DisassociateResourceShareRequestTypeDef
+from mypy_boto3_ram.type_defs import DisassociateResourceShareRequestRequestTypeDef
 ```
 
 Required fields:
@@ -257,10 +257,10 @@ Optional fields:
 - `principals`: `List`\[`str`\]
 - `clientToken`: `str`
 
-## DisassociateResourceShareResponseResponseTypeDef
+## DisassociateResourceShareResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import DisassociateResourceShareResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import DisassociateResourceShareResponseTypeDef
 ```
 
 Required fields:
@@ -271,10 +271,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## EnableSharingWithAwsOrganizationResponseResponseTypeDef
+## EnableSharingWithAwsOrganizationResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import EnableSharingWithAwsOrganizationResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import EnableSharingWithAwsOrganizationResponseTypeDef
 ```
 
 Required fields:
@@ -283,10 +283,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetPermissionRequestTypeDef
+## GetPermissionRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import GetPermissionRequestTypeDef
+from mypy_boto3_ram.type_defs import GetPermissionRequestRequestTypeDef
 ```
 
 Required fields:
@@ -297,10 +297,10 @@ Optional fields:
 
 - `permissionVersion`: `int`
 
-## GetPermissionResponseResponseTypeDef
+## GetPermissionResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import GetPermissionResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import GetPermissionResponseTypeDef
 ```
 
 Required fields:
@@ -310,10 +310,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourcePoliciesRequestTypeDef
+## GetResourcePoliciesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import GetResourcePoliciesRequestTypeDef
+from mypy_boto3_ram.type_defs import GetResourcePoliciesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -326,10 +326,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetResourcePoliciesResponseResponseTypeDef
+## GetResourcePoliciesResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import GetResourcePoliciesResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import GetResourcePoliciesResponseTypeDef
 ```
 
 Required fields:
@@ -339,10 +339,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourceShareAssociationsRequestTypeDef
+## GetResourceShareAssociationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import GetResourceShareAssociationsRequestTypeDef
+from mypy_boto3_ram.type_defs import GetResourceShareAssociationsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -360,10 +360,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetResourceShareAssociationsResponseResponseTypeDef
+## GetResourceShareAssociationsResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import GetResourceShareAssociationsResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import GetResourceShareAssociationsResponseTypeDef
 ```
 
 Required fields:
@@ -374,10 +374,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourceShareInvitationsRequestTypeDef
+## GetResourceShareInvitationsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import GetResourceShareInvitationsRequestTypeDef
+from mypy_boto3_ram.type_defs import GetResourceShareInvitationsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -387,10 +387,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## GetResourceShareInvitationsResponseResponseTypeDef
+## GetResourceShareInvitationsResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import GetResourceShareInvitationsResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import GetResourceShareInvitationsResponseTypeDef
 ```
 
 Required fields:
@@ -401,10 +401,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## GetResourceSharesRequestTypeDef
+## GetResourceSharesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import GetResourceSharesRequestTypeDef
+from mypy_boto3_ram.type_defs import GetResourceSharesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -422,10 +422,10 @@ Optional fields:
 - `maxResults`: `int`
 - `permissionArn`: `str`
 
-## GetResourceSharesResponseResponseTypeDef
+## GetResourceSharesResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import GetResourceSharesResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import GetResourceSharesResponseTypeDef
 ```
 
 Required fields:
@@ -436,10 +436,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPendingInvitationResourcesRequestTypeDef
+## ListPendingInvitationResourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import ListPendingInvitationResourcesRequestTypeDef
+from mypy_boto3_ram.type_defs import ListPendingInvitationResourcesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -451,10 +451,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListPendingInvitationResourcesResponseResponseTypeDef
+## ListPendingInvitationResourcesResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import ListPendingInvitationResourcesResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import ListPendingInvitationResourcesResponseTypeDef
 ```
 
 Required fields:
@@ -464,10 +464,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPermissionsRequestTypeDef
+## ListPermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import ListPermissionsRequestTypeDef
+from mypy_boto3_ram.type_defs import ListPermissionsRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -476,10 +476,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListPermissionsResponseResponseTypeDef
+## ListPermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import ListPermissionsResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import ListPermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -490,10 +490,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListPrincipalsRequestTypeDef
+## ListPrincipalsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import ListPrincipalsRequestTypeDef
+from mypy_boto3_ram.type_defs import ListPrincipalsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -509,10 +509,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListPrincipalsResponseResponseTypeDef
+## ListPrincipalsResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import ListPrincipalsResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import ListPrincipalsResponseTypeDef
 ```
 
 Required fields:
@@ -522,10 +522,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourceSharePermissionsRequestTypeDef
+## ListResourceSharePermissionsRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import ListResourceSharePermissionsRequestTypeDef
+from mypy_boto3_ram.type_defs import ListResourceSharePermissionsRequestRequestTypeDef
 ```
 
 Required fields:
@@ -537,10 +537,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListResourceSharePermissionsResponseResponseTypeDef
+## ListResourceSharePermissionsResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import ListResourceSharePermissionsResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import ListResourceSharePermissionsResponseTypeDef
 ```
 
 Required fields:
@@ -551,10 +551,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourceTypesRequestTypeDef
+## ListResourceTypesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import ListResourceTypesRequestTypeDef
+from mypy_boto3_ram.type_defs import ListResourceTypesRequestRequestTypeDef
 ```
 
 Optional fields:
@@ -562,10 +562,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListResourceTypesResponseResponseTypeDef
+## ListResourceTypesResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import ListResourceTypesResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import ListResourceTypesResponseTypeDef
 ```
 
 Required fields:
@@ -576,10 +576,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## ListResourcesRequestTypeDef
+## ListResourcesRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import ListResourcesRequestTypeDef
+from mypy_boto3_ram.type_defs import ListResourcesRequestRequestTypeDef
 ```
 
 Required fields:
@@ -595,10 +595,10 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
-## ListResourcesResponseResponseTypeDef
+## ListResourcesResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import ListResourcesResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import ListResourcesResponseTypeDef
 ```
 
 Required fields:
@@ -634,20 +634,20 @@ Optional fields:
 - `lastUpdatedTime`: `datetime`
 - `external`: `bool`
 
-## PromoteResourceShareCreatedFromPolicyRequestTypeDef
+## PromoteResourceShareCreatedFromPolicyRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import PromoteResourceShareCreatedFromPolicyRequestTypeDef
+from mypy_boto3_ram.type_defs import PromoteResourceShareCreatedFromPolicyRequestRequestTypeDef
 ```
 
 Required fields:
 
 - `resourceShareArn`: `str`
 
-## PromoteResourceShareCreatedFromPolicyResponseResponseTypeDef
+## PromoteResourceShareCreatedFromPolicyResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import PromoteResourceShareCreatedFromPolicyResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import PromoteResourceShareCreatedFromPolicyResponseTypeDef
 ```
 
 Required fields:
@@ -656,10 +656,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## RejectResourceShareInvitationRequestTypeDef
+## RejectResourceShareInvitationRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import RejectResourceShareInvitationRequestTypeDef
+from mypy_boto3_ram.type_defs import RejectResourceShareInvitationRequestRequestTypeDef
 ```
 
 Required fields:
@@ -670,10 +670,10 @@ Optional fields:
 
 - `clientToken`: `str`
 
-## RejectResourceShareInvitationResponseResponseTypeDef
+## RejectResourceShareInvitationResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import RejectResourceShareInvitationResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import RejectResourceShareInvitationResponseTypeDef
 ```
 
 Required fields:
@@ -833,10 +833,10 @@ Optional fields:
 - `tagKey`: `str`
 - `tagValues`: `List`\[`str`\]
 
-## TagResourceRequestTypeDef
+## TagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import TagResourceRequestTypeDef
+from mypy_boto3_ram.type_defs import TagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -855,10 +855,10 @@ Optional fields:
 - `key`: `str`
 - `value`: `str`
 
-## UntagResourceRequestTypeDef
+## UntagResourceRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import UntagResourceRequestTypeDef
+from mypy_boto3_ram.type_defs import UntagResourceRequestRequestTypeDef
 ```
 
 Required fields:
@@ -866,10 +866,10 @@ Required fields:
 - `resourceShareArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
-## UpdateResourceShareRequestTypeDef
+## UpdateResourceShareRequestRequestTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import UpdateResourceShareRequestTypeDef
+from mypy_boto3_ram.type_defs import UpdateResourceShareRequestRequestTypeDef
 ```
 
 Required fields:
@@ -882,10 +882,10 @@ Optional fields:
 - `allowExternalPrincipals`: `bool`
 - `clientToken`: `str`
 
-## UpdateResourceShareResponseResponseTypeDef
+## UpdateResourceShareResponseTypeDef
 
 ```python
-from mypy_boto3_ram.type_defs import UpdateResourceShareResponseResponseTypeDef
+from mypy_boto3_ram.type_defs import UpdateResourceShareResponseTypeDef
 ```
 
 Required fields:

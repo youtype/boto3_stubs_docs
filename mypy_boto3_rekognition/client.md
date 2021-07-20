@@ -11,6 +11,7 @@ type annotations stubs module
   - [RekognitionClient](#rekognitionclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [compare_faces](#compare_faces)
     - [create_collection](#create_collection)
@@ -119,6 +120,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+RekognitionClient exceptions.
+
+Type annotations for `boto3.client("rekognition").exceptions` method.
+
+Boto3 documentation:
+[Rekognition.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -145,7 +157,7 @@ Boto3 documentation:
 [Rekognition.Client.compare_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.compare_faces)
 
 Arguments mapping described in
-[CompareFacesRequestTypeDef](./type_defs.md#comparefacesrequesttypedef).
+[CompareFacesRequestRequestTypeDef](./type_defs.md#comparefacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -155,7 +167,7 @@ Keyword-only arguments:
 - `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
 
 Returns
-[CompareFacesResponseResponseTypeDef](./type_defs.md#comparefacesresponseresponsetypedef).
+[CompareFacesResponseTypeDef](./type_defs.md#comparefacesresponsetypedef).
 
 ### create_collection
 
@@ -167,7 +179,7 @@ Boto3 documentation:
 [Rekognition.Client.create_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_collection)
 
 Arguments mapping described in
-[CreateCollectionRequestTypeDef](./type_defs.md#createcollectionrequesttypedef).
+[CreateCollectionRequestRequestTypeDef](./type_defs.md#createcollectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -175,7 +187,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateCollectionResponseResponseTypeDef](./type_defs.md#createcollectionresponseresponsetypedef).
+[CreateCollectionResponseTypeDef](./type_defs.md#createcollectionresponsetypedef).
 
 ### create_project
 
@@ -187,14 +199,14 @@ Boto3 documentation:
 [Rekognition.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project)
 
 Arguments mapping described in
-[CreateProjectRequestTypeDef](./type_defs.md#createprojectrequesttypedef).
+[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
 
 Returns
-[CreateProjectResponseResponseTypeDef](./type_defs.md#createprojectresponseresponsetypedef).
+[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
 ### create_project_version
 
@@ -207,7 +219,7 @@ Boto3 documentation:
 [Rekognition.Client.create_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project_version)
 
 Arguments mapping described in
-[CreateProjectVersionRequestTypeDef](./type_defs.md#createprojectversionrequesttypedef).
+[CreateProjectVersionRequestRequestTypeDef](./type_defs.md#createprojectversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -223,7 +235,7 @@ Keyword-only arguments:
 - `KmsKeyId`: `str`
 
 Returns
-[CreateProjectVersionResponseResponseTypeDef](./type_defs.md#createprojectversionresponseresponsetypedef).
+[CreateProjectVersionResponseTypeDef](./type_defs.md#createprojectversionresponsetypedef).
 
 ### create_stream_processor
 
@@ -237,7 +249,7 @@ Boto3 documentation:
 [Rekognition.Client.create_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_stream_processor)
 
 Arguments mapping described in
-[CreateStreamProcessorRequestTypeDef](./type_defs.md#createstreamprocessorrequesttypedef).
+[CreateStreamProcessorRequestRequestTypeDef](./type_defs.md#createstreamprocessorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -255,7 +267,7 @@ Keyword-only arguments:
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateStreamProcessorResponseResponseTypeDef](./type_defs.md#createstreamprocessorresponseresponsetypedef).
+[CreateStreamProcessorResponseTypeDef](./type_defs.md#createstreamprocessorresponsetypedef).
 
 ### delete_collection
 
@@ -267,14 +279,14 @@ Boto3 documentation:
 [Rekognition.Client.delete_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_collection)
 
 Arguments mapping described in
-[DeleteCollectionRequestTypeDef](./type_defs.md#deletecollectionrequesttypedef).
+[DeleteCollectionRequestRequestTypeDef](./type_defs.md#deletecollectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CollectionId`: `str` *(required)*
 
 Returns
-[DeleteCollectionResponseResponseTypeDef](./type_defs.md#deletecollectionresponseresponsetypedef).
+[DeleteCollectionResponseTypeDef](./type_defs.md#deletecollectionresponsetypedef).
 
 ### delete_faces
 
@@ -286,7 +298,7 @@ Boto3 documentation:
 [Rekognition.Client.delete_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_faces)
 
 Arguments mapping described in
-[DeleteFacesRequestTypeDef](./type_defs.md#deletefacesrequesttypedef).
+[DeleteFacesRequestRequestTypeDef](./type_defs.md#deletefacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -294,7 +306,7 @@ Keyword-only arguments:
 - `FaceIds`: `List`\[`str`\] *(required)*
 
 Returns
-[DeleteFacesResponseResponseTypeDef](./type_defs.md#deletefacesresponseresponsetypedef).
+[DeleteFacesResponseTypeDef](./type_defs.md#deletefacesresponsetypedef).
 
 ### delete_project
 
@@ -306,14 +318,14 @@ Boto3 documentation:
 [Rekognition.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project)
 
 Arguments mapping described in
-[DeleteProjectRequestTypeDef](./type_defs.md#deleteprojectrequesttypedef).
+[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ProjectArn`: `str` *(required)*
 
 Returns
-[DeleteProjectResponseResponseTypeDef](./type_defs.md#deleteprojectresponseresponsetypedef).
+[DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
 
 ### delete_project_version
 
@@ -326,14 +338,14 @@ Boto3 documentation:
 [Rekognition.Client.delete_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project_version)
 
 Arguments mapping described in
-[DeleteProjectVersionRequestTypeDef](./type_defs.md#deleteprojectversionrequesttypedef).
+[DeleteProjectVersionRequestRequestTypeDef](./type_defs.md#deleteprojectversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ProjectVersionArn`: `str` *(required)*
 
 Returns
-[DeleteProjectVersionResponseResponseTypeDef](./type_defs.md#deleteprojectversionresponseresponsetypedef).
+[DeleteProjectVersionResponseTypeDef](./type_defs.md#deleteprojectversionresponsetypedef).
 
 ### delete_stream_processor
 
@@ -346,7 +358,7 @@ Boto3 documentation:
 [Rekognition.Client.delete_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_stream_processor)
 
 Arguments mapping described in
-[DeleteStreamProcessorRequestTypeDef](./type_defs.md#deletestreamprocessorrequesttypedef).
+[DeleteStreamProcessorRequestRequestTypeDef](./type_defs.md#deletestreamprocessorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -364,14 +376,14 @@ Boto3 documentation:
 [Rekognition.Client.describe_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_collection)
 
 Arguments mapping described in
-[DescribeCollectionRequestTypeDef](./type_defs.md#describecollectionrequesttypedef).
+[DescribeCollectionRequestRequestTypeDef](./type_defs.md#describecollectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `CollectionId`: `str` *(required)*
 
 Returns
-[DescribeCollectionResponseResponseTypeDef](./type_defs.md#describecollectionresponseresponsetypedef).
+[DescribeCollectionResponseTypeDef](./type_defs.md#describecollectionresponsetypedef).
 
 ### describe_project_versions
 
@@ -384,7 +396,7 @@ Boto3 documentation:
 [Rekognition.Client.describe_project_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_project_versions)
 
 Arguments mapping described in
-[DescribeProjectVersionsRequestTypeDef](./type_defs.md#describeprojectversionsrequesttypedef).
+[DescribeProjectVersionsRequestRequestTypeDef](./type_defs.md#describeprojectversionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -394,7 +406,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeProjectVersionsResponseResponseTypeDef](./type_defs.md#describeprojectversionsresponseresponsetypedef).
+[DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef).
 
 ### describe_projects
 
@@ -407,7 +419,7 @@ Boto3 documentation:
 [Rekognition.Client.describe_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_projects)
 
 Arguments mapping described in
-[DescribeProjectsRequestTypeDef](./type_defs.md#describeprojectsrequesttypedef).
+[DescribeProjectsRequestRequestTypeDef](./type_defs.md#describeprojectsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -415,7 +427,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[DescribeProjectsResponseResponseTypeDef](./type_defs.md#describeprojectsresponseresponsetypedef).
+[DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef).
 
 ### describe_stream_processor
 
@@ -428,14 +440,14 @@ Boto3 documentation:
 [Rekognition.Client.describe_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_stream_processor)
 
 Arguments mapping described in
-[DescribeStreamProcessorRequestTypeDef](./type_defs.md#describestreamprocessorrequesttypedef).
+[DescribeStreamProcessorRequestRequestTypeDef](./type_defs.md#describestreamprocessorrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
 Returns
-[DescribeStreamProcessorResponseResponseTypeDef](./type_defs.md#describestreamprocessorresponseresponsetypedef).
+[DescribeStreamProcessorResponseTypeDef](./type_defs.md#describestreamprocessorresponsetypedef).
 
 ### detect_custom_labels
 
@@ -448,7 +460,7 @@ Boto3 documentation:
 [Rekognition.Client.detect_custom_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_custom_labels)
 
 Arguments mapping described in
-[DetectCustomLabelsRequestTypeDef](./type_defs.md#detectcustomlabelsrequesttypedef).
+[DetectCustomLabelsRequestRequestTypeDef](./type_defs.md#detectcustomlabelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -458,7 +470,7 @@ Keyword-only arguments:
 - `MinConfidence`: `float`
 
 Returns
-[DetectCustomLabelsResponseResponseTypeDef](./type_defs.md#detectcustomlabelsresponseresponsetypedef).
+[DetectCustomLabelsResponseTypeDef](./type_defs.md#detectcustomlabelsresponsetypedef).
 
 ### detect_faces
 
@@ -470,7 +482,7 @@ Boto3 documentation:
 [Rekognition.Client.detect_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_faces)
 
 Arguments mapping described in
-[DetectFacesRequestTypeDef](./type_defs.md#detectfacesrequesttypedef).
+[DetectFacesRequestRequestTypeDef](./type_defs.md#detectfacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -478,7 +490,7 @@ Keyword-only arguments:
 - `Attributes`: `List`\[[AttributeType](./literals.md#attributetype)\]
 
 Returns
-[DetectFacesResponseResponseTypeDef](./type_defs.md#detectfacesresponseresponsetypedef).
+[DetectFacesResponseTypeDef](./type_defs.md#detectfacesresponsetypedef).
 
 ### detect_labels
 
@@ -491,7 +503,7 @@ Boto3 documentation:
 [Rekognition.Client.detect_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_labels)
 
 Arguments mapping described in
-[DetectLabelsRequestTypeDef](./type_defs.md#detectlabelsrequesttypedef).
+[DetectLabelsRequestRequestTypeDef](./type_defs.md#detectlabelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -500,7 +512,7 @@ Keyword-only arguments:
 - `MinConfidence`: `float`
 
 Returns
-[DetectLabelsResponseResponseTypeDef](./type_defs.md#detectlabelsresponseresponsetypedef).
+[DetectLabelsResponseTypeDef](./type_defs.md#detectlabelsresponsetypedef).
 
 ### detect_moderation_labels
 
@@ -513,7 +525,7 @@ Boto3 documentation:
 [Rekognition.Client.detect_moderation_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_moderation_labels)
 
 Arguments mapping described in
-[DetectModerationLabelsRequestTypeDef](./type_defs.md#detectmoderationlabelsrequesttypedef).
+[DetectModerationLabelsRequestRequestTypeDef](./type_defs.md#detectmoderationlabelsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -523,7 +535,7 @@ Keyword-only arguments:
   [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
 
 Returns
-[DetectModerationLabelsResponseResponseTypeDef](./type_defs.md#detectmoderationlabelsresponseresponsetypedef).
+[DetectModerationLabelsResponseTypeDef](./type_defs.md#detectmoderationlabelsresponsetypedef).
 
 ### detect_protective_equipment
 
@@ -537,7 +549,7 @@ Boto3 documentation:
 [Rekognition.Client.detect_protective_equipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_protective_equipment)
 
 Arguments mapping described in
-[DetectProtectiveEquipmentRequestTypeDef](./type_defs.md#detectprotectiveequipmentrequesttypedef).
+[DetectProtectiveEquipmentRequestRequestTypeDef](./type_defs.md#detectprotectiveequipmentrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -546,7 +558,7 @@ Keyword-only arguments:
   [ProtectiveEquipmentSummarizationAttributesTypeDef](./type_defs.md#protectiveequipmentsummarizationattributestypedef)
 
 Returns
-[DetectProtectiveEquipmentResponseResponseTypeDef](./type_defs.md#detectprotectiveequipmentresponseresponsetypedef).
+[DetectProtectiveEquipmentResponseTypeDef](./type_defs.md#detectprotectiveequipmentresponsetypedef).
 
 ### detect_text
 
@@ -558,7 +570,7 @@ Boto3 documentation:
 [Rekognition.Client.detect_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_text)
 
 Arguments mapping described in
-[DetectTextRequestTypeDef](./type_defs.md#detecttextrequesttypedef).
+[DetectTextRequestRequestTypeDef](./type_defs.md#detecttextrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -566,8 +578,7 @@ Keyword-only arguments:
 - `Filters`:
   [DetectTextFiltersTypeDef](./type_defs.md#detecttextfilterstypedef)
 
-Returns
-[DetectTextResponseResponseTypeDef](./type_defs.md#detecttextresponseresponsetypedef).
+Returns [DetectTextResponseTypeDef](./type_defs.md#detecttextresponsetypedef).
 
 ### generate_presigned_url
 
@@ -599,14 +610,14 @@ Boto3 documentation:
 [Rekognition.Client.get_celebrity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_info)
 
 Arguments mapping described in
-[GetCelebrityInfoRequestTypeDef](./type_defs.md#getcelebrityinforequesttypedef).
+[GetCelebrityInfoRequestRequestTypeDef](./type_defs.md#getcelebrityinforequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
 Returns
-[GetCelebrityInfoResponseResponseTypeDef](./type_defs.md#getcelebrityinforesponseresponsetypedef).
+[GetCelebrityInfoResponseTypeDef](./type_defs.md#getcelebrityinforesponsetypedef).
 
 ### get_celebrity_recognition
 
@@ -620,7 +631,7 @@ Boto3 documentation:
 [Rekognition.Client.get_celebrity_recognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_recognition)
 
 Arguments mapping described in
-[GetCelebrityRecognitionRequestTypeDef](./type_defs.md#getcelebrityrecognitionrequesttypedef).
+[GetCelebrityRecognitionRequestRequestTypeDef](./type_defs.md#getcelebrityrecognitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -631,7 +642,7 @@ Keyword-only arguments:
   [CelebrityRecognitionSortByType](./literals.md#celebrityrecognitionsortbytype)
 
 Returns
-[GetCelebrityRecognitionResponseResponseTypeDef](./type_defs.md#getcelebrityrecognitionresponseresponsetypedef).
+[GetCelebrityRecognitionResponseTypeDef](./type_defs.md#getcelebrityrecognitionresponsetypedef).
 
 ### get_content_moderation
 
@@ -645,7 +656,7 @@ Boto3 documentation:
 [Rekognition.Client.get_content_moderation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_content_moderation)
 
 Arguments mapping described in
-[GetContentModerationRequestTypeDef](./type_defs.md#getcontentmoderationrequesttypedef).
+[GetContentModerationRequestRequestTypeDef](./type_defs.md#getcontentmoderationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -656,7 +667,7 @@ Keyword-only arguments:
   [ContentModerationSortByType](./literals.md#contentmoderationsortbytype)
 
 Returns
-[GetContentModerationResponseResponseTypeDef](./type_defs.md#getcontentmoderationresponseresponsetypedef).
+[GetContentModerationResponseTypeDef](./type_defs.md#getcontentmoderationresponsetypedef).
 
 ### get_face_detection
 
@@ -669,7 +680,7 @@ Boto3 documentation:
 [Rekognition.Client.get_face_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_detection)
 
 Arguments mapping described in
-[GetFaceDetectionRequestTypeDef](./type_defs.md#getfacedetectionrequesttypedef).
+[GetFaceDetectionRequestRequestTypeDef](./type_defs.md#getfacedetectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -678,7 +689,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetFaceDetectionResponseResponseTypeDef](./type_defs.md#getfacedetectionresponseresponsetypedef).
+[GetFaceDetectionResponseTypeDef](./type_defs.md#getfacedetectionresponsetypedef).
 
 ### get_face_search
 
@@ -691,7 +702,7 @@ Boto3 documentation:
 [Rekognition.Client.get_face_search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_search)
 
 Arguments mapping described in
-[GetFaceSearchRequestTypeDef](./type_defs.md#getfacesearchrequesttypedef).
+[GetFaceSearchRequestRequestTypeDef](./type_defs.md#getfacesearchrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -701,7 +712,7 @@ Keyword-only arguments:
 - `SortBy`: [FaceSearchSortByType](./literals.md#facesearchsortbytype)
 
 Returns
-[GetFaceSearchResponseResponseTypeDef](./type_defs.md#getfacesearchresponseresponsetypedef).
+[GetFaceSearchResponseTypeDef](./type_defs.md#getfacesearchresponsetypedef).
 
 ### get_label_detection
 
@@ -714,7 +725,7 @@ Boto3 documentation:
 [Rekognition.Client.get_label_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_label_detection)
 
 Arguments mapping described in
-[GetLabelDetectionRequestTypeDef](./type_defs.md#getlabeldetectionrequesttypedef).
+[GetLabelDetectionRequestRequestTypeDef](./type_defs.md#getlabeldetectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -724,7 +735,7 @@ Keyword-only arguments:
 - `SortBy`: [LabelDetectionSortByType](./literals.md#labeldetectionsortbytype)
 
 Returns
-[GetLabelDetectionResponseResponseTypeDef](./type_defs.md#getlabeldetectionresponseresponsetypedef).
+[GetLabelDetectionResponseTypeDef](./type_defs.md#getlabeldetectionresponsetypedef).
 
 ### get_person_tracking
 
@@ -737,7 +748,7 @@ Boto3 documentation:
 [Rekognition.Client.get_person_tracking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_person_tracking)
 
 Arguments mapping described in
-[GetPersonTrackingRequestTypeDef](./type_defs.md#getpersontrackingrequesttypedef).
+[GetPersonTrackingRequestRequestTypeDef](./type_defs.md#getpersontrackingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -747,7 +758,7 @@ Keyword-only arguments:
 - `SortBy`: [PersonTrackingSortByType](./literals.md#persontrackingsortbytype)
 
 Returns
-[GetPersonTrackingResponseResponseTypeDef](./type_defs.md#getpersontrackingresponseresponsetypedef).
+[GetPersonTrackingResponseTypeDef](./type_defs.md#getpersontrackingresponsetypedef).
 
 ### get_segment_detection
 
@@ -761,7 +772,7 @@ Boto3 documentation:
 [Rekognition.Client.get_segment_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_segment_detection)
 
 Arguments mapping described in
-[GetSegmentDetectionRequestTypeDef](./type_defs.md#getsegmentdetectionrequesttypedef).
+[GetSegmentDetectionRequestRequestTypeDef](./type_defs.md#getsegmentdetectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -770,7 +781,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetSegmentDetectionResponseResponseTypeDef](./type_defs.md#getsegmentdetectionresponseresponsetypedef).
+[GetSegmentDetectionResponseTypeDef](./type_defs.md#getsegmentdetectionresponsetypedef).
 
 ### get_text_detection
 
@@ -783,7 +794,7 @@ Boto3 documentation:
 [Rekognition.Client.get_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_text_detection)
 
 Arguments mapping described in
-[GetTextDetectionRequestTypeDef](./type_defs.md#gettextdetectionrequesttypedef).
+[GetTextDetectionRequestRequestTypeDef](./type_defs.md#gettextdetectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -792,7 +803,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns
-[GetTextDetectionResponseResponseTypeDef](./type_defs.md#gettextdetectionresponseresponsetypedef).
+[GetTextDetectionResponseTypeDef](./type_defs.md#gettextdetectionresponsetypedef).
 
 ### index_faces
 
@@ -804,7 +815,7 @@ Boto3 documentation:
 [Rekognition.Client.index_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.index_faces)
 
 Arguments mapping described in
-[IndexFacesRequestTypeDef](./type_defs.md#indexfacesrequesttypedef).
+[IndexFacesRequestRequestTypeDef](./type_defs.md#indexfacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -815,8 +826,7 @@ Keyword-only arguments:
 - `MaxFaces`: `int`
 - `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
 
-Returns
-[IndexFacesResponseResponseTypeDef](./type_defs.md#indexfacesresponseresponsetypedef).
+Returns [IndexFacesResponseTypeDef](./type_defs.md#indexfacesresponsetypedef).
 
 ### list_collections
 
@@ -828,7 +838,7 @@ Boto3 documentation:
 [Rekognition.Client.list_collections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_collections)
 
 Arguments mapping described in
-[ListCollectionsRequestTypeDef](./type_defs.md#listcollectionsrequesttypedef).
+[ListCollectionsRequestRequestTypeDef](./type_defs.md#listcollectionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -836,7 +846,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListCollectionsResponseResponseTypeDef](./type_defs.md#listcollectionsresponseresponsetypedef).
+[ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef).
 
 ### list_faces
 
@@ -848,7 +858,7 @@ Boto3 documentation:
 [Rekognition.Client.list_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_faces)
 
 Arguments mapping described in
-[ListFacesRequestTypeDef](./type_defs.md#listfacesrequesttypedef).
+[ListFacesRequestRequestTypeDef](./type_defs.md#listfacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -856,8 +866,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
-Returns
-[ListFacesResponseResponseTypeDef](./type_defs.md#listfacesresponseresponsetypedef).
+Returns [ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef).
 
 ### list_stream_processors
 
@@ -871,7 +880,7 @@ Boto3 documentation:
 [Rekognition.Client.list_stream_processors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_stream_processors)
 
 Arguments mapping described in
-[ListStreamProcessorsRequestTypeDef](./type_defs.md#liststreamprocessorsrequesttypedef).
+[ListStreamProcessorsRequestRequestTypeDef](./type_defs.md#liststreamprocessorsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -879,7 +888,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns
-[ListStreamProcessorsResponseResponseTypeDef](./type_defs.md#liststreamprocessorsresponseresponsetypedef).
+[ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -893,14 +902,14 @@ Boto3 documentation:
 [Rekognition.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### recognize_celebrities
 
@@ -913,14 +922,14 @@ Boto3 documentation:
 [Rekognition.Client.recognize_celebrities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.recognize_celebrities)
 
 Arguments mapping described in
-[RecognizeCelebritiesRequestTypeDef](./type_defs.md#recognizecelebritiesrequesttypedef).
+[RecognizeCelebritiesRequestRequestTypeDef](./type_defs.md#recognizecelebritiesrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 
 Returns
-[RecognizeCelebritiesResponseResponseTypeDef](./type_defs.md#recognizecelebritiesresponseresponsetypedef).
+[RecognizeCelebritiesResponseTypeDef](./type_defs.md#recognizecelebritiesresponsetypedef).
 
 ### search_faces
 
@@ -933,7 +942,7 @@ Boto3 documentation:
 [Rekognition.Client.search_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces)
 
 Arguments mapping described in
-[SearchFacesRequestTypeDef](./type_defs.md#searchfacesrequesttypedef).
+[SearchFacesRequestRequestTypeDef](./type_defs.md#searchfacesrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -943,7 +952,7 @@ Keyword-only arguments:
 - `FaceMatchThreshold`: `float`
 
 Returns
-[SearchFacesResponseResponseTypeDef](./type_defs.md#searchfacesresponseresponsetypedef).
+[SearchFacesResponseTypeDef](./type_defs.md#searchfacesresponsetypedef).
 
 ### search_faces_by_image
 
@@ -957,7 +966,7 @@ Boto3 documentation:
 [Rekognition.Client.search_faces_by_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces_by_image)
 
 Arguments mapping described in
-[SearchFacesByImageRequestTypeDef](./type_defs.md#searchfacesbyimagerequesttypedef).
+[SearchFacesByImageRequestRequestTypeDef](./type_defs.md#searchfacesbyimagerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -968,7 +977,7 @@ Keyword-only arguments:
 - `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
 
 Returns
-[SearchFacesByImageResponseResponseTypeDef](./type_defs.md#searchfacesbyimageresponseresponsetypedef).
+[SearchFacesByImageResponseTypeDef](./type_defs.md#searchfacesbyimageresponsetypedef).
 
 ### start_celebrity_recognition
 
@@ -981,7 +990,7 @@ Boto3 documentation:
 [Rekognition.Client.start_celebrity_recognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_celebrity_recognition)
 
 Arguments mapping described in
-[StartCelebrityRecognitionRequestTypeDef](./type_defs.md#startcelebrityrecognitionrequesttypedef).
+[StartCelebrityRecognitionRequestRequestTypeDef](./type_defs.md#startcelebrityrecognitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -992,7 +1001,7 @@ Keyword-only arguments:
 - `JobTag`: `str`
 
 Returns
-[StartCelebrityRecognitionResponseResponseTypeDef](./type_defs.md#startcelebrityrecognitionresponseresponsetypedef).
+[StartCelebrityRecognitionResponseTypeDef](./type_defs.md#startcelebrityrecognitionresponsetypedef).
 
 ### start_content_moderation
 
@@ -1005,7 +1014,7 @@ Boto3 documentation:
 [Rekognition.Client.start_content_moderation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_content_moderation)
 
 Arguments mapping described in
-[StartContentModerationRequestTypeDef](./type_defs.md#startcontentmoderationrequesttypedef).
+[StartContentModerationRequestRequestTypeDef](./type_defs.md#startcontentmoderationrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1017,7 +1026,7 @@ Keyword-only arguments:
 - `JobTag`: `str`
 
 Returns
-[StartContentModerationResponseResponseTypeDef](./type_defs.md#startcontentmoderationresponseresponsetypedef).
+[StartContentModerationResponseTypeDef](./type_defs.md#startcontentmoderationresponsetypedef).
 
 ### start_face_detection
 
@@ -1029,7 +1038,7 @@ Boto3 documentation:
 [Rekognition.Client.start_face_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_detection)
 
 Arguments mapping described in
-[StartFaceDetectionRequestTypeDef](./type_defs.md#startfacedetectionrequesttypedef).
+[StartFaceDetectionRequestRequestTypeDef](./type_defs.md#startfacedetectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1041,7 +1050,7 @@ Keyword-only arguments:
 - `JobTag`: `str`
 
 Returns
-[StartFaceDetectionResponseResponseTypeDef](./type_defs.md#startfacedetectionresponseresponsetypedef).
+[StartFaceDetectionResponseTypeDef](./type_defs.md#startfacedetectionresponsetypedef).
 
 ### start_face_search
 
@@ -1054,7 +1063,7 @@ Boto3 documentation:
 [Rekognition.Client.start_face_search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_search)
 
 Arguments mapping described in
-[StartFaceSearchRequestTypeDef](./type_defs.md#startfacesearchrequesttypedef).
+[StartFaceSearchRequestRequestTypeDef](./type_defs.md#startfacesearchrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1067,7 +1076,7 @@ Keyword-only arguments:
 - `JobTag`: `str`
 
 Returns
-[StartFaceSearchResponseResponseTypeDef](./type_defs.md#startfacesearchresponseresponsetypedef).
+[StartFaceSearchResponseTypeDef](./type_defs.md#startfacesearchresponsetypedef).
 
 ### start_label_detection
 
@@ -1080,7 +1089,7 @@ Boto3 documentation:
 [Rekognition.Client.start_label_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_label_detection)
 
 Arguments mapping described in
-[StartLabelDetectionRequestTypeDef](./type_defs.md#startlabeldetectionrequesttypedef).
+[StartLabelDetectionRequestRequestTypeDef](./type_defs.md#startlabeldetectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1092,7 +1101,7 @@ Keyword-only arguments:
 - `JobTag`: `str`
 
 Returns
-[StartLabelDetectionResponseResponseTypeDef](./type_defs.md#startlabeldetectionresponseresponsetypedef).
+[StartLabelDetectionResponseTypeDef](./type_defs.md#startlabeldetectionresponsetypedef).
 
 ### start_person_tracking
 
@@ -1105,7 +1114,7 @@ Boto3 documentation:
 [Rekognition.Client.start_person_tracking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_person_tracking)
 
 Arguments mapping described in
-[StartPersonTrackingRequestTypeDef](./type_defs.md#startpersontrackingrequesttypedef).
+[StartPersonTrackingRequestRequestTypeDef](./type_defs.md#startpersontrackingrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1116,7 +1125,7 @@ Keyword-only arguments:
 - `JobTag`: `str`
 
 Returns
-[StartPersonTrackingResponseResponseTypeDef](./type_defs.md#startpersontrackingresponseresponsetypedef).
+[StartPersonTrackingResponseTypeDef](./type_defs.md#startpersontrackingresponsetypedef).
 
 ### start_project_version
 
@@ -1129,7 +1138,7 @@ Boto3 documentation:
 [Rekognition.Client.start_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_project_version)
 
 Arguments mapping described in
-[StartProjectVersionRequestTypeDef](./type_defs.md#startprojectversionrequesttypedef).
+[StartProjectVersionRequestRequestTypeDef](./type_defs.md#startprojectversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1137,7 +1146,7 @@ Keyword-only arguments:
 - `MinInferenceUnits`: `int` *(required)*
 
 Returns
-[StartProjectVersionResponseResponseTypeDef](./type_defs.md#startprojectversionresponseresponsetypedef).
+[StartProjectVersionResponseTypeDef](./type_defs.md#startprojectversionresponsetypedef).
 
 ### start_segment_detection
 
@@ -1150,7 +1159,7 @@ Boto3 documentation:
 [Rekognition.Client.start_segment_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_segment_detection)
 
 Arguments mapping described in
-[StartSegmentDetectionRequestTypeDef](./type_defs.md#startsegmentdetectionrequesttypedef).
+[StartSegmentDetectionRequestRequestTypeDef](./type_defs.md#startsegmentdetectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1165,7 +1174,7 @@ Keyword-only arguments:
   [StartSegmentDetectionFiltersTypeDef](./type_defs.md#startsegmentdetectionfilterstypedef)
 
 Returns
-[StartSegmentDetectionResponseResponseTypeDef](./type_defs.md#startsegmentdetectionresponseresponsetypedef).
+[StartSegmentDetectionResponseTypeDef](./type_defs.md#startsegmentdetectionresponsetypedef).
 
 ### start_stream_processor
 
@@ -1178,7 +1187,7 @@ Boto3 documentation:
 [Rekognition.Client.start_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_stream_processor)
 
 Arguments mapping described in
-[StartStreamProcessorRequestTypeDef](./type_defs.md#startstreamprocessorrequesttypedef).
+[StartStreamProcessorRequestRequestTypeDef](./type_defs.md#startstreamprocessorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1196,7 +1205,7 @@ Boto3 documentation:
 [Rekognition.Client.start_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_text_detection)
 
 Arguments mapping described in
-[StartTextDetectionRequestTypeDef](./type_defs.md#starttextdetectionrequesttypedef).
+[StartTextDetectionRequestRequestTypeDef](./type_defs.md#starttextdetectionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1209,7 +1218,7 @@ Keyword-only arguments:
   [StartTextDetectionFiltersTypeDef](./type_defs.md#starttextdetectionfilterstypedef)
 
 Returns
-[StartTextDetectionResponseResponseTypeDef](./type_defs.md#starttextdetectionresponseresponsetypedef).
+[StartTextDetectionResponseTypeDef](./type_defs.md#starttextdetectionresponsetypedef).
 
 ### stop_project_version
 
@@ -1221,14 +1230,14 @@ Boto3 documentation:
 [Rekognition.Client.stop_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_project_version)
 
 Arguments mapping described in
-[StopProjectVersionRequestTypeDef](./type_defs.md#stopprojectversionrequesttypedef).
+[StopProjectVersionRequestRequestTypeDef](./type_defs.md#stopprojectversionrequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `ProjectVersionArn`: `str` *(required)*
 
 Returns
-[StopProjectVersionResponseResponseTypeDef](./type_defs.md#stopprojectversionresponseresponsetypedef).
+[StopProjectVersionResponseTypeDef](./type_defs.md#stopprojectversionresponsetypedef).
 
 ### stop_stream_processor
 
@@ -1241,7 +1250,7 @@ Boto3 documentation:
 [Rekognition.Client.stop_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_stream_processor)
 
 Arguments mapping described in
-[StopStreamProcessorRequestTypeDef](./type_defs.md#stopstreamprocessorrequesttypedef).
+[StopStreamProcessorRequestRequestTypeDef](./type_defs.md#stopstreamprocessorrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1260,7 +1269,7 @@ Boto3 documentation:
 [Rekognition.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1280,7 +1289,7 @@ Boto3 documentation:
 [Rekognition.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 

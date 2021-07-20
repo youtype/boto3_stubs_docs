@@ -35,6 +35,7 @@ from mypy_boto3_sagemaker_a2i_runtime.client import AugmentedAIRuntimeClient
 - [can_paginate](./client.md#can_paginate)
 - [delete_human_loop](./client.md#delete_human_loop)
 - [describe_human_loop](./client.md#describe_human_loop)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 - [list_human_loops](./client.md#list_human_loops)
@@ -89,20 +90,20 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker_a2i_runtime.type_defs import DeleteHumanLoopRequestTypeDef, ...
+from mypy_boto3_sagemaker_a2i_runtime.type_defs import DeleteHumanLoopRequestRequestTypeDef, ...
 ```
 
-- [DeleteHumanLoopRequestTypeDef](./type_defs.md#deletehumanlooprequesttypedef)
-- [DescribeHumanLoopRequestTypeDef](./type_defs.md#describehumanlooprequesttypedef)
-- [DescribeHumanLoopResponseResponseTypeDef](./type_defs.md#describehumanloopresponseresponsetypedef)
+- [DeleteHumanLoopRequestRequestTypeDef](./type_defs.md#deletehumanlooprequestrequesttypedef)
+- [DescribeHumanLoopRequestRequestTypeDef](./type_defs.md#describehumanlooprequestrequesttypedef)
+- [DescribeHumanLoopResponseTypeDef](./type_defs.md#describehumanloopresponsetypedef)
 - [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
 - [HumanLoopInputTypeDef](./type_defs.md#humanloopinputtypedef)
 - [HumanLoopOutputTypeDef](./type_defs.md#humanloopoutputtypedef)
 - [HumanLoopSummaryTypeDef](./type_defs.md#humanloopsummarytypedef)
-- [ListHumanLoopsRequestTypeDef](./type_defs.md#listhumanloopsrequesttypedef)
-- [ListHumanLoopsResponseResponseTypeDef](./type_defs.md#listhumanloopsresponseresponsetypedef)
+- [ListHumanLoopsRequestRequestTypeDef](./type_defs.md#listhumanloopsrequestrequesttypedef)
+- [ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-- [StartHumanLoopRequestTypeDef](./type_defs.md#starthumanlooprequesttypedef)
-- [StartHumanLoopResponseResponseTypeDef](./type_defs.md#starthumanloopresponseresponsetypedef)
-- [StopHumanLoopRequestTypeDef](./type_defs.md#stophumanlooprequesttypedef)
+- [StartHumanLoopRequestRequestTypeDef](./type_defs.md#starthumanlooprequestrequesttypedef)
+- [StartHumanLoopResponseTypeDef](./type_defs.md#starthumanloopresponsetypedef)
+- [StopHumanLoopRequestRequestTypeDef](./type_defs.md#stophumanlooprequestrequesttypedef)

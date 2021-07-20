@@ -11,6 +11,7 @@ type annotations stubs module
   - [IoTDeviceAdvisorClient](#iotdeviceadvisorclient)
   - [Exceptions](#exceptions)
   - [Methods](#methods)
+    - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
     - [create_suite_definition](#create_suite_definition)
     - [delete_suite_definition](#delete_suite_definition)
@@ -65,6 +66,17 @@ Exceptions:
 
 ## Methods
 
+### exceptions
+
+IoTDeviceAdvisorClient exceptions.
+
+Type annotations for `boto3.client("iotdeviceadvisor").exceptions` method.
+
+Boto3 documentation:
+[IoTDeviceAdvisor.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -91,7 +103,7 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.create_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.create_suite_definition)
 
 Arguments mapping described in
-[CreateSuiteDefinitionRequestTypeDef](./type_defs.md#createsuitedefinitionrequesttypedef).
+[CreateSuiteDefinitionRequestRequestTypeDef](./type_defs.md#createsuitedefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -100,7 +112,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[CreateSuiteDefinitionResponseResponseTypeDef](./type_defs.md#createsuitedefinitionresponseresponsetypedef).
+[CreateSuiteDefinitionResponseTypeDef](./type_defs.md#createsuitedefinitionresponsetypedef).
 
 ### delete_suite_definition
 
@@ -113,7 +125,7 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.delete_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.delete_suite_definition)
 
 Arguments mapping described in
-[DeleteSuiteDefinitionRequestTypeDef](./type_defs.md#deletesuitedefinitionrequesttypedef).
+[DeleteSuiteDefinitionRequestRequestTypeDef](./type_defs.md#deletesuitedefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -151,7 +163,7 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.get_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_definition)
 
 Arguments mapping described in
-[GetSuiteDefinitionRequestTypeDef](./type_defs.md#getsuitedefinitionrequesttypedef).
+[GetSuiteDefinitionRequestRequestTypeDef](./type_defs.md#getsuitedefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -159,7 +171,7 @@ Keyword-only arguments:
 - `suiteDefinitionVersion`: `str`
 
 Returns
-[GetSuiteDefinitionResponseResponseTypeDef](./type_defs.md#getsuitedefinitionresponseresponsetypedef).
+[GetSuiteDefinitionResponseTypeDef](./type_defs.md#getsuitedefinitionresponsetypedef).
 
 ### get_suite_run
 
@@ -171,7 +183,7 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.get_suite_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run)
 
 Arguments mapping described in
-[GetSuiteRunRequestTypeDef](./type_defs.md#getsuiterunrequesttypedef).
+[GetSuiteRunRequestRequestTypeDef](./type_defs.md#getsuiterunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -179,7 +191,7 @@ Keyword-only arguments:
 - `suiteRunId`: `str` *(required)*
 
 Returns
-[GetSuiteRunResponseResponseTypeDef](./type_defs.md#getsuiterunresponseresponsetypedef).
+[GetSuiteRunResponseTypeDef](./type_defs.md#getsuiterunresponsetypedef).
 
 ### get_suite_run_report
 
@@ -193,7 +205,7 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.get_suite_run_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run_report)
 
 Arguments mapping described in
-[GetSuiteRunReportRequestTypeDef](./type_defs.md#getsuiterunreportrequesttypedef).
+[GetSuiteRunReportRequestRequestTypeDef](./type_defs.md#getsuiterunreportrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -201,7 +213,7 @@ Keyword-only arguments:
 - `suiteRunId`: `str` *(required)*
 
 Returns
-[GetSuiteRunReportResponseResponseTypeDef](./type_defs.md#getsuiterunreportresponseresponsetypedef).
+[GetSuiteRunReportResponseTypeDef](./type_defs.md#getsuiterunreportresponsetypedef).
 
 ### list_suite_definitions
 
@@ -214,7 +226,7 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.list_suite_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_definitions)
 
 Arguments mapping described in
-[ListSuiteDefinitionsRequestTypeDef](./type_defs.md#listsuitedefinitionsrequesttypedef).
+[ListSuiteDefinitionsRequestRequestTypeDef](./type_defs.md#listsuitedefinitionsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -222,7 +234,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListSuiteDefinitionsResponseResponseTypeDef](./type_defs.md#listsuitedefinitionsresponseresponsetypedef).
+[ListSuiteDefinitionsResponseTypeDef](./type_defs.md#listsuitedefinitionsresponsetypedef).
 
 ### list_suite_runs
 
@@ -234,7 +246,7 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.list_suite_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_runs)
 
 Arguments mapping described in
-[ListSuiteRunsRequestTypeDef](./type_defs.md#listsuiterunsrequesttypedef).
+[ListSuiteRunsRequestRequestTypeDef](./type_defs.md#listsuiterunsrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -244,7 +256,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns
-[ListSuiteRunsResponseResponseTypeDef](./type_defs.md#listsuiterunsresponseresponsetypedef).
+[ListSuiteRunsResponseTypeDef](./type_defs.md#listsuiterunsresponsetypedef).
 
 ### list_tags_for_resource
 
@@ -257,14 +269,14 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_tags_for_resource)
 
 Arguments mapping described in
-[ListTagsForResourceRequestTypeDef](./type_defs.md#listtagsforresourcerequesttypedef).
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 
 Returns
-[ListTagsForResourceResponseResponseTypeDef](./type_defs.md#listtagsforresourceresponseresponsetypedef).
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### start_suite_run
 
@@ -276,7 +288,7 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.start_suite_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.start_suite_run)
 
 Arguments mapping described in
-[StartSuiteRunRequestTypeDef](./type_defs.md#startsuiterunrequesttypedef).
+[StartSuiteRunRequestRequestTypeDef](./type_defs.md#startsuiterunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -287,7 +299,7 @@ Keyword-only arguments:
 - `tags`: `Dict`\[`str`, `str`\]
 
 Returns
-[StartSuiteRunResponseResponseTypeDef](./type_defs.md#startsuiterunresponseresponsetypedef).
+[StartSuiteRunResponseTypeDef](./type_defs.md#startsuiterunresponsetypedef).
 
 ### stop_suite_run
 
@@ -299,7 +311,7 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.stop_suite_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.stop_suite_run)
 
 Arguments mapping described in
-[StopSuiteRunRequestTypeDef](./type_defs.md#stopsuiterunrequesttypedef).
+[StopSuiteRunRequestRequestTypeDef](./type_defs.md#stopsuiterunrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -318,7 +330,7 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.tag_resource)
 
 Arguments mapping described in
-[TagResourceRequestTypeDef](./type_defs.md#tagresourcerequesttypedef).
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -337,7 +349,7 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.untag_resource)
 
 Arguments mapping described in
-[UntagResourceRequestTypeDef](./type_defs.md#untagresourcerequesttypedef).
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -357,7 +369,7 @@ Boto3 documentation:
 [IoTDeviceAdvisor.Client.update_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.update_suite_definition)
 
 Arguments mapping described in
-[UpdateSuiteDefinitionRequestTypeDef](./type_defs.md#updatesuitedefinitionrequesttypedef).
+[UpdateSuiteDefinitionRequestRequestTypeDef](./type_defs.md#updatesuitedefinitionrequestrequesttypedef).
 
 Keyword-only arguments:
 
@@ -366,4 +378,4 @@ Keyword-only arguments:
   [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
 
 Returns
-[UpdateSuiteDefinitionResponseResponseTypeDef](./type_defs.md#updatesuitedefinitionresponseresponsetypedef).
+[UpdateSuiteDefinitionResponseTypeDef](./type_defs.md#updatesuitedefinitionresponsetypedef).

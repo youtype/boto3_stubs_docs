@@ -35,6 +35,7 @@ from mypy_boto3_mediastore_data.client import MediaStoreDataClient
 - [can_paginate](./client.md#can_paginate)
 - [delete_object](./client.md#delete_object)
 - [describe_object](./client.md#describe_object)
+- [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_object](./client.md#get_object)
 - [get_paginator](./client.md#get_paginator)
@@ -87,18 +88,18 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mediastore_data.type_defs import DeleteObjectRequestTypeDef, ...
+from mypy_boto3_mediastore_data.type_defs import DeleteObjectRequestRequestTypeDef, ...
 ```
 
-- [DeleteObjectRequestTypeDef](./type_defs.md#deleteobjectrequesttypedef)
-- [DescribeObjectRequestTypeDef](./type_defs.md#describeobjectrequesttypedef)
-- [DescribeObjectResponseResponseTypeDef](./type_defs.md#describeobjectresponseresponsetypedef)
-- [GetObjectRequestTypeDef](./type_defs.md#getobjectrequesttypedef)
-- [GetObjectResponseResponseTypeDef](./type_defs.md#getobjectresponseresponsetypedef)
+- [DeleteObjectRequestRequestTypeDef](./type_defs.md#deleteobjectrequestrequesttypedef)
+- [DescribeObjectRequestRequestTypeDef](./type_defs.md#describeobjectrequestrequesttypedef)
+- [DescribeObjectResponseTypeDef](./type_defs.md#describeobjectresponsetypedef)
+- [GetObjectRequestRequestTypeDef](./type_defs.md#getobjectrequestrequesttypedef)
+- [GetObjectResponseTypeDef](./type_defs.md#getobjectresponsetypedef)
 - [ItemTypeDef](./type_defs.md#itemtypedef)
-- [ListItemsRequestTypeDef](./type_defs.md#listitemsrequesttypedef)
-- [ListItemsResponseResponseTypeDef](./type_defs.md#listitemsresponseresponsetypedef)
+- [ListItemsRequestRequestTypeDef](./type_defs.md#listitemsrequestrequesttypedef)
+- [ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-- [PutObjectRequestTypeDef](./type_defs.md#putobjectrequesttypedef)
-- [PutObjectResponseResponseTypeDef](./type_defs.md#putobjectresponseresponsetypedef)
+- [PutObjectRequestRequestTypeDef](./type_defs.md#putobjectrequestrequesttypedef)
+- [PutObjectResponseTypeDef](./type_defs.md#putobjectresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
