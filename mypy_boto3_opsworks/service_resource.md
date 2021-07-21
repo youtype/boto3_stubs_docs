@@ -48,6 +48,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [OpsWorksResourceMeta](#opsworksresourcemeta)
+
 - `stacks`: [ServiceResourceStacksCollection](#serviceresourcestackscollection)
 
 ## Collections

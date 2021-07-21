@@ -247,6 +247,7 @@ Values:
 - `de-DE`
 - `en-AU`
 - `en-GB`
+- `en-IN`
 - `en-US`
 - `es-419`
 - `es-ES`

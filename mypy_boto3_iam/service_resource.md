@@ -142,6 +142,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [IAMResourceMeta](#iamresourcemeta)
+
 - `groups`: [ServiceResourceGroupsCollection](#serviceresourcegroupscollection)
 
 - `instance_profiles`:

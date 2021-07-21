@@ -176,6 +176,7 @@ type annotations stubs module
   - [UserContextTypeDef](#usercontexttypedef)
   - [UserTokenConfigurationTypeDef](#usertokenconfigurationtypedef)
   - [WebCrawlerConfigurationTypeDef](#webcrawlerconfigurationtypedef)
+  - [WorkDocsConfigurationTypeDef](#workdocsconfigurationtypedef)
 
 ## AccessControlListConfigurationTypeDef
 
@@ -774,6 +775,8 @@ Optional fields:
   [GoogleDriveConfigurationTypeDef](./type_defs.md#googledriveconfigurationtypedef)
 - `WebCrawlerConfiguration`:
   [WebCrawlerConfigurationTypeDef](./type_defs.md#webcrawlerconfigurationtypedef)
+- `WorkDocsConfiguration`:
+  [WorkDocsConfigurationTypeDef](./type_defs.md#workdocsconfigurationtypedef)
 
 ## DataSourceGroupTypeDef
 
@@ -2675,3 +2678,22 @@ Optional fields:
   [ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef)
 - `AuthenticationConfiguration`:
   [AuthenticationConfigurationTypeDef](./type_defs.md#authenticationconfigurationtypedef)
+
+## WorkDocsConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import WorkDocsConfigurationTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+
+Optional fields:
+
+- `CrawlComments`: `bool`
+- `UseChangeLog`: `bool`
+- `InclusionPatterns`: `List`\[`str`\]
+- `ExclusionPatterns`: `List`\[`str`\]
+- `FieldMappings`:
+  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]

@@ -905,7 +905,7 @@ Keyword-only arguments:
 ### submit_feedback
 
 Enables you to provide feedback to Amazon Kendra to improve the performance of
-the service.
+your index.
 
 Type annotations for `boto3.client("kendra").submit_feedback` method.
 

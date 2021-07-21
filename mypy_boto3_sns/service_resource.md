@@ -56,6 +56,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [SNSResourceMeta](#snsresourcemeta)
+
 - `platform_applications`:
   [ServiceResourcePlatformApplicationsCollection](#serviceresourceplatformapplicationscollection)
 

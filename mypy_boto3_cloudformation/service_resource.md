@@ -52,6 +52,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [CloudFormationResourceMeta](#cloudformationresourcemeta)
+
 - `stacks`: [ServiceResourceStacksCollection](#serviceresourcestackscollection)
 
 ## Collections

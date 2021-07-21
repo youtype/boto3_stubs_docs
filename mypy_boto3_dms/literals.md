@@ -38,6 +38,7 @@ type annotations stubs module
   - [MigrationTypeValueType](#migrationtypevaluetype)
   - [NestingLevelValueType](#nestinglevelvaluetype)
   - [ParquetVersionValueType](#parquetversionvaluetype)
+  - [PluginNameValueType](#pluginnamevaluetype)
   - [RefreshSchemasStatusTypeValueType](#refreshschemasstatustypevaluetype)
   - [ReleaseStatusValuesType](#releasestatusvaluestype)
   - [ReloadOptionValueType](#reloadoptionvaluetype)
@@ -384,6 +385,18 @@ Values:
 
 - `parquet-1-0`
 - `parquet-2-0`
+
+## PluginNameValueType
+
+```python
+from mypy_boto3_dms.literals import PluginNameValueType
+```
+
+Values:
+
+- `no-preference`
+- `pglogical`
+- `test-decoding`
 
 ## RefreshSchemasStatusTypeValueType
 

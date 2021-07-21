@@ -248,7 +248,7 @@ Returns
 
 Create an environment account connection in an environment account so that
 environment infrastructure resources can be provisioned in the environment
-account from the management account.
+account from a management account.
 
 Type annotations for
 `boto3.client("proton").create_environment_account_connection` method.

@@ -316,8 +316,8 @@ Returns
 
 ### create_webhook
 
-For an existing CodeBuild build project that has its source code stored in a
-GitHub or Bitbucket repository, enables CodeBuild to start rebuilding the
+For an existing AWS CodeBuild build project that has its source code stored in
+a GitHub or Bitbucket repository, enables AWS CodeBuild to start rebuilding the
 source code every time a code change is pushed to the repository.
 
 Type annotations for `boto3.client("codebuild").create_webhook` method.
@@ -453,9 +453,9 @@ Returns
 
 ### delete_webhook
 
-For an existing CodeBuild build project that has its source code stored in a
-GitHub or Bitbucket repository, stops CodeBuild from rebuilding the source code
-every time a code change is pushed to the repository.
+For an existing AWS CodeBuild build project that has its source code stored in
+a GitHub or Bitbucket repository, stops AWS CodeBuild from rebuilding the
+source code every time a code change is pushed to the repository.
 
 Type annotations for `boto3.client("codebuild").delete_webhook` method.
 
@@ -582,8 +582,8 @@ Returns
 
 ### import_source_credentials
 
-Imports the source repository credentials for an CodeBuild project that has its
-source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository.
+Imports the source repository credentials for an AWS CodeBuild project that has
+its source code stored in a GitHub, GitHub Enterprise, or Bitbucket repository.
 
 Type annotations for `boto3.client("codebuild").import_source_credentials`
 method.
@@ -714,7 +714,7 @@ Returns
 
 ### list_curated_environment_images
 
-Gets information about Docker images that are managed by CodeBuild.
+Gets information about Docker images that are managed by AWS CodeBuild.
 
 Type annotations for
 `boto3.client("codebuild").list_curated_environment_images` method.
@@ -748,8 +748,7 @@ Returns [ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef).
 
 ### list_report_groups
 
-Gets a list ARNs for the report groups in the current Amazon Web Services
-account.
+Gets a list ARNs for the report groups in the current AWS account.
 
 Type annotations for `boto3.client("codebuild").list_report_groups` method.
 
@@ -772,8 +771,7 @@ Returns
 
 ### list_reports
 
-Returns a list of ARNs for the reports in the current Amazon Web Services
-account.
+Returns a list of ARNs for the reports in the current AWS account.
 
 Type annotations for `boto3.client("codebuild").list_reports` method.
 
@@ -818,8 +816,7 @@ Returns
 
 ### list_shared_projects
 
-Gets a list of projects that are shared with other Amazon Web Services accounts
-or users.
+Gets a list of projects that are shared with other AWS accounts or users.
 
 Type annotations for `boto3.client("codebuild").list_shared_projects` method.
 
@@ -842,8 +839,7 @@ Returns
 
 ### list_shared_report_groups
 
-Gets a list of report groups that are shared with other Amazon Web Services
-accounts or users.
+Gets a list of report groups that are shared with other AWS accounts or users.
 
 Type annotations for `boto3.client("codebuild").list_shared_report_groups`
 method.
@@ -1162,7 +1158,7 @@ Returns
 
 ### update_webhook
 
-Updates the webhook associated with an CodeBuild build project.
+Updates the webhook associated with an AWS CodeBuild build project.
 
 Type annotations for `boto3.client("codebuild").update_webhook` method.
 

@@ -205,6 +205,7 @@ Values:
 - `SERVICENOW`
 - `SHAREPOINT`
 - `WEBCRAWLER`
+- `WORKDOCS`
 
 ## DatabaseEngineTypeType
 

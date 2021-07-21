@@ -11,7 +11,10 @@ type annotations stubs module
   - [AnswerSummaryTypeDef](#answersummarytypedef)
   - [AnswerTypeDef](#answertypedef)
   - [AssociateLensesInputRequestTypeDef](#associatelensesinputrequesttypedef)
+  - [ChoiceAnswerSummaryTypeDef](#choiceanswersummarytypedef)
+  - [ChoiceAnswerTypeDef](#choiceanswertypedef)
   - [ChoiceTypeDef](#choicetypedef)
+  - [ChoiceUpdateTypeDef](#choiceupdatetypedef)
   - [CreateMilestoneInputRequestTypeDef](#createmilestoneinputrequesttypedef)
   - [CreateMilestoneOutputTypeDef](#createmilestoneoutputtypedef)
   - [CreateWorkloadInputRequestTypeDef](#createworkloadinputrequesttypedef)
@@ -100,8 +103,11 @@ Optional fields:
 - `QuestionTitle`: `str`
 - `Choices`: `List`\[[ChoiceTypeDef](./type_defs.md#choicetypedef)\]
 - `SelectedChoices`: `List`\[`str`\]
+- `ChoiceAnswerSummaries`:
+  `List`\[[ChoiceAnswerSummaryTypeDef](./type_defs.md#choiceanswersummarytypedef)\]
 - `IsApplicable`: `bool`
 - `Risk`: [RiskType](./literals.md#risktype)
+- `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
 
 ## AnswerTypeDef
 
@@ -119,9 +125,12 @@ Optional fields:
 - `HelpfulResourceUrl`: `str`
 - `Choices`: `List`\[[ChoiceTypeDef](./type_defs.md#choicetypedef)\]
 - `SelectedChoices`: `List`\[`str`\]
+- `ChoiceAnswers`:
+  `List`\[[ChoiceAnswerTypeDef](./type_defs.md#choiceanswertypedef)\]
 - `IsApplicable`: `bool`
 - `Risk`: [RiskType](./literals.md#risktype)
 - `Notes`: `str`
+- `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
 
 ## AssociateLensesInputRequestTypeDef
 
@@ -134,6 +143,31 @@ Required fields:
 - `WorkloadId`: `str`
 - `LensAliases`: `List`\[`str`\]
 
+## ChoiceAnswerSummaryTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ChoiceAnswerSummaryTypeDef
+```
+
+Optional fields:
+
+- `ChoiceId`: `str`
+- `Status`: [ChoiceStatusType](./literals.md#choicestatustype)
+- `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
+
+## ChoiceAnswerTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ChoiceAnswerTypeDef
+```
+
+Optional fields:
+
+- `ChoiceId`: `str`
+- `Status`: [ChoiceStatusType](./literals.md#choicestatustype)
+- `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
+- `Notes`: `str`
+
 ## ChoiceTypeDef
 
 ```python
@@ -145,6 +179,21 @@ Optional fields:
 - `ChoiceId`: `str`
 - `Title`: `str`
 - `Description`: `str`
+
+## ChoiceUpdateTypeDef
+
+```python
+from mypy_boto3_wellarchitected.type_defs import ChoiceUpdateTypeDef
+```
+
+Required fields:
+
+- `Status`: [ChoiceStatusType](./literals.md#choicestatustype)
+
+Optional fields:
+
+- `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
+- `Notes`: `str`
 
 ## CreateMilestoneInputRequestTypeDef
 
@@ -965,8 +1014,11 @@ Required fields:
 Optional fields:
 
 - `SelectedChoices`: `List`\[`str`\]
+- `ChoiceUpdates`: `Dict`\[`str`,
+  [ChoiceUpdateTypeDef](./type_defs.md#choiceupdatetypedef)\]
 - `Notes`: `str`
 - `IsApplicable`: `bool`
+- `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
 
 ## UpdateAnswerOutputTypeDef
 

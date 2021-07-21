@@ -86,9 +86,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_wellarchitected.literals import DifferenceStatusType, ...
+from mypy_boto3_wellarchitected.literals import AnswerReasonType, ...
 ```
 
+- [AnswerReasonType](./literals.md#answerreasontype)
+- [ChoiceReasonType](./literals.md#choicereasontype)
+- [ChoiceStatusType](./literals.md#choicestatustype)
 - [DifferenceStatusType](./literals.md#differencestatustype)
 - [LensStatusType](./literals.md#lensstatustype)
 - [NotificationTypeType](./literals.md#notificationtypetype)
@@ -113,7 +116,10 @@ from mypy_boto3_wellarchitected.type_defs import AnswerSummaryTypeDef, ...
 - [AnswerSummaryTypeDef](./type_defs.md#answersummarytypedef)
 - [AnswerTypeDef](./type_defs.md#answertypedef)
 - [AssociateLensesInputRequestTypeDef](./type_defs.md#associatelensesinputrequesttypedef)
+- [ChoiceAnswerSummaryTypeDef](./type_defs.md#choiceanswersummarytypedef)
+- [ChoiceAnswerTypeDef](./type_defs.md#choiceanswertypedef)
 - [ChoiceTypeDef](./type_defs.md#choicetypedef)
+- [ChoiceUpdateTypeDef](./type_defs.md#choiceupdatetypedef)
 - [CreateMilestoneInputRequestTypeDef](./type_defs.md#createmilestoneinputrequesttypedef)
 - [CreateMilestoneOutputTypeDef](./type_defs.md#createmilestoneoutputtypedef)
 - [CreateWorkloadInputRequestTypeDef](./type_defs.md#createworkloadinputrequesttypedef)

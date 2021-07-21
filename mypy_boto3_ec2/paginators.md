@@ -33,6 +33,7 @@ type annotations stubs module
   - [DescribeImportImageTasksPaginator](#describeimportimagetaskspaginator)
   - [DescribeImportSnapshotTasksPaginator](#describeimportsnapshottaskspaginator)
   - [DescribeInstanceCreditSpecificationsPaginator](#describeinstancecreditspecificationspaginator)
+  - [DescribeInstanceEventWindowsPaginator](#describeinstanceeventwindowspaginator)
   - [DescribeInstanceStatusPaginator](#describeinstancestatuspaginator)
   - [DescribeInstanceTypeOfferingsPaginator](#describeinstancetypeofferingspaginator)
   - [DescribeInstanceTypesPaginator](#describeinstancetypespaginator)
@@ -805,6 +806,34 @@ Arguments for `DescribeInstanceCreditSpecificationsPaginator.paginate` method:
 
 `DescribeInstanceCreditSpecificationsPaginator.paginate` returns
 `Iterator`\[[DescribeInstanceCreditSpecificationsResultTypeDef](./type_defs.md#describeinstancecreditspecificationsresulttypedef)\].
+
+## DescribeInstanceEventWindowsPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_instance_event_windows")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeInstanceEventWindowsPaginator
+
+def get_describe_instance_event_windows_paginator() -> DescribeInstanceEventWindowsPaginator:
+    return boto3.client("ec2").get_paginator("describe_instance_event_windows")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeInstanceEventWindows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeInstanceEventWindows)
+
+Arguments for `DescribeInstanceEventWindowsPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `InstanceEventWindowIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeInstanceEventWindowsPaginator.paginate` returns
+`Iterator`\[[DescribeInstanceEventWindowsResultTypeDef](./type_defs.md#describeinstanceeventwindowsresulttypedef)\].
 
 ## DescribeInstanceStatusPaginator
 

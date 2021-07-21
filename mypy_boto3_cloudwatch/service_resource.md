@@ -44,6 +44,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [CloudWatchResourceMeta](#cloudwatchresourcemeta)
+
 - `alarms`: [ServiceResourceAlarmsCollection](#serviceresourcealarmscollection)
 
 - `metrics`:

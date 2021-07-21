@@ -262,9 +262,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_chime.literals import AccountTypeType, ...
+from mypy_boto3_chime.literals import AccountStatusType, ...
 ```
 
+- [AccountStatusType](./literals.md#accountstatustype)
 - [AccountTypeType](./literals.md#accounttypetype)
 - [AppInstanceDataTypeType](./literals.md#appinstancedatatypetype)
 - [BotTypeType](./literals.md#bottypetype)

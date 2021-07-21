@@ -50,6 +50,8 @@ type annotations stubs module
   - [DescribeJobFlowsOutputTypeDef](#describejobflowsoutputtypedef)
   - [DescribeNotebookExecutionInputRequestTypeDef](#describenotebookexecutioninputrequesttypedef)
   - [DescribeNotebookExecutionOutputTypeDef](#describenotebookexecutionoutputtypedef)
+  - [DescribeReleaseLabelInputRequestTypeDef](#describereleaselabelinputrequesttypedef)
+  - [DescribeReleaseLabelOutputTypeDef](#describereleaselabeloutputtypedef)
   - [DescribeSecurityConfigurationInputRequestTypeDef](#describesecurityconfigurationinputrequesttypedef)
   - [DescribeSecurityConfigurationOutputTypeDef](#describesecurityconfigurationoutputtypedef)
   - [DescribeStepInputRequestTypeDef](#describestepinputrequesttypedef)
@@ -109,6 +111,8 @@ type annotations stubs module
   - [ListInstancesOutputTypeDef](#listinstancesoutputtypedef)
   - [ListNotebookExecutionsInputRequestTypeDef](#listnotebookexecutionsinputrequesttypedef)
   - [ListNotebookExecutionsOutputTypeDef](#listnotebookexecutionsoutputtypedef)
+  - [ListReleaseLabelsInputRequestTypeDef](#listreleaselabelsinputrequesttypedef)
+  - [ListReleaseLabelsOutputTypeDef](#listreleaselabelsoutputtypedef)
   - [ListSecurityConfigurationsInputRequestTypeDef](#listsecurityconfigurationsinputrequesttypedef)
   - [ListSecurityConfigurationsOutputTypeDef](#listsecurityconfigurationsoutputtypedef)
   - [ListStepsInputRequestTypeDef](#liststepsinputrequesttypedef)
@@ -135,6 +139,7 @@ type annotations stubs module
   - [PutAutoScalingPolicyOutputTypeDef](#putautoscalingpolicyoutputtypedef)
   - [PutBlockPublicAccessConfigurationInputRequestTypeDef](#putblockpublicaccessconfigurationinputrequesttypedef)
   - [PutManagedScalingPolicyInputRequestTypeDef](#putmanagedscalingpolicyinputrequesttypedef)
+  - [ReleaseLabelFilterTypeDef](#releaselabelfiltertypedef)
   - [RemoveAutoScalingPolicyInputRequestTypeDef](#removeautoscalingpolicyinputrequesttypedef)
   - [RemoveManagedScalingPolicyInputRequestTypeDef](#removemanagedscalingpolicyinputrequesttypedef)
   - [RemoveTagsInputRequestTypeDef](#removetagsinputrequesttypedef)
@@ -153,6 +158,7 @@ type annotations stubs module
   - [SetVisibleToAllUsersInputRequestTypeDef](#setvisibletoallusersinputrequesttypedef)
   - [ShrinkPolicyTypeDef](#shrinkpolicytypedef)
   - [SimpleScalingPolicyConfigurationTypeDef](#simplescalingpolicyconfigurationtypedef)
+  - [SimplifiedApplicationTypeDef](#simplifiedapplicationtypedef)
   - [SpotProvisioningSpecificationTypeDef](#spotprovisioningspecificationtypedef)
   - [StartNotebookExecutionInputRequestTypeDef](#startnotebookexecutioninputrequesttypedef)
   - [StartNotebookExecutionOutputTypeDef](#startnotebookexecutionoutputtypedef)
@@ -763,6 +769,33 @@ Required fields:
 
 - `NotebookExecution`:
   [NotebookExecutionTypeDef](./type_defs.md#notebookexecutiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeReleaseLabelInputRequestTypeDef
+
+```python
+from mypy_boto3_emr.type_defs import DescribeReleaseLabelInputRequestTypeDef
+```
+
+Optional fields:
+
+- `ReleaseLabel`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## DescribeReleaseLabelOutputTypeDef
+
+```python
+from mypy_boto3_emr.type_defs import DescribeReleaseLabelOutputTypeDef
+```
+
+Required fields:
+
+- `ReleaseLabel`: `str`
+- `Applications`:
+  `List`\[[SimplifiedApplicationTypeDef](./type_defs.md#simplifiedapplicationtypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1690,6 +1723,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListReleaseLabelsInputRequestTypeDef
+
+```python
+from mypy_boto3_emr.type_defs import ListReleaseLabelsInputRequestTypeDef
+```
+
+Optional fields:
+
+- `Filters`:
+  [ReleaseLabelFilterTypeDef](./type_defs.md#releaselabelfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListReleaseLabelsOutputTypeDef
+
+```python
+from mypy_boto3_emr.type_defs import ListReleaseLabelsOutputTypeDef
+```
+
+Required fields:
+
+- `ReleaseLabels`: `List`\[`str`\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListSecurityConfigurationsInputRequestTypeDef
 
 ```python
@@ -2038,6 +2097,17 @@ Required fields:
 - `ManagedScalingPolicy`:
   [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
 
+## ReleaseLabelFilterTypeDef
+
+```python
+from mypy_boto3_emr.type_defs import ReleaseLabelFilterTypeDef
+```
+
+Optional fields:
+
+- `Prefix`: `str`
+- `Application`: `str`
+
 ## RemoveAutoScalingPolicyInputRequestTypeDef
 
 ```python
@@ -2303,6 +2373,17 @@ Optional fields:
 
 - `AdjustmentType`: [AdjustmentTypeType](./literals.md#adjustmenttypetype)
 - `CoolDown`: `int`
+
+## SimplifiedApplicationTypeDef
+
+```python
+from mypy_boto3_emr.type_defs import SimplifiedApplicationTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Version`: `str`
 
 ## SpotProvisioningSpecificationTypeDef
 

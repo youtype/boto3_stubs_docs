@@ -361,6 +361,8 @@ Optional fields:
 - `createdAt`: `datetime`
 - `securityGroup`: `str`
 - `subnetIds`: `List`\[`str`\]
+- `stateDetails`: `str`
+- `failureReason`: [FailureReasonType](./literals.md#failurereasontype)
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## JobDriverTypeDef

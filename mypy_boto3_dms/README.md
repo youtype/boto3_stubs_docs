@@ -208,6 +208,7 @@ from mypy_boto3_dms.literals import AuthMechanismValueType, ...
 - [MigrationTypeValueType](./literals.md#migrationtypevaluetype)
 - [NestingLevelValueType](./literals.md#nestinglevelvaluetype)
 - [ParquetVersionValueType](./literals.md#parquetversionvaluetype)
+- [PluginNameValueType](./literals.md#pluginnamevaluetype)
 - [RefreshSchemasStatusTypeValueType](./literals.md#refreshschemasstatustypevaluetype)
 - [ReleaseStatusValuesType](./literals.md#releasestatusvaluestype)
 - [ReloadOptionValueType](./literals.md#reloadoptionvaluetype)

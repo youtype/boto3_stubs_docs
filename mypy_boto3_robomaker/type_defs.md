@@ -1233,6 +1233,7 @@ Required fields:
 - `template`: `str`
 - `createdAt`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
+- `worldDescriptionBody`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1260,6 +1261,7 @@ Required fields:
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
+- `version`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2218,6 +2220,7 @@ Optional fields:
 - `createdAt`: `datetime`
 - `lastUpdatedAt`: `datetime`
 - `name`: `str`
+- `version`: `str`
 
 ## ToolTypeDef
 

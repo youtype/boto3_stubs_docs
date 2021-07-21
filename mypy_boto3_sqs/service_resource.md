@@ -45,6 +45,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [SQSResourceMeta](#sqsresourcemeta)
+
 - `queues`: [ServiceResourceQueuesCollection](#serviceresourcequeuescollection)
 
 ## Collections

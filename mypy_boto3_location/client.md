@@ -59,6 +59,11 @@ type annotations stubs module
     - [search_place_index_for_text](#search_place_index_for_text)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_geofence_collection](#update_geofence_collection)
+    - [update_map](#update_map)
+    - [update_place_index](#update_place_index)
+    - [update_route_calculator](#update_route_calculator)
+    - [update_tracker](#update_tracker)
     - [get_paginator](#get_paginator)
 
 ## LocationServiceClient
@@ -96,6 +101,7 @@ Exceptions:
 - `Exceptions.ConflictException`
 - `Exceptions.InternalServerException`
 - `Exceptions.ResourceNotFoundException`
+- `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
@@ -199,7 +205,7 @@ Returns
 
 ### batch_get_device_position
 
-A batch request to retrieve all device positions.
+Lists the latest device positions for requested devices.
 
 Type annotations for `boto3.client("location").batch_get_device_position`
 method.
@@ -812,7 +818,7 @@ Returns [GetMapTileResponseTypeDef](./type_defs.md#getmaptileresponsetypedef).
 
 ### list_device_positions
 
-Lists the latest device positions for requested devices.
+A batch request to retrieve all device positions.
 
 Type annotations for `boto3.client("location").list_device_positions` method.
 
@@ -933,7 +939,8 @@ Returns
 
 ### list_tags_for_resource
 
-Returns the tags for the specified Amazon Location Service resource.
+Returns a list of tags that are applied to the specified Amazon Location
+resource.
 
 Type annotations for `boto3.client("location").list_tags_for_resource` method.
 
@@ -1084,7 +1091,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes one or more tags from the specified Amazon Location Service resource.
+Removes one or more tags from the specified Amazon Location resource.
 
 Type annotations for `boto3.client("location").untag_resource` method.
 
@@ -1100,6 +1107,115 @@ Keyword-only arguments:
 - `TagKeys`: `List`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### update_geofence_collection
+
+Updates the specified properties of a given geofence collection.
+
+Type annotations for `boto3.client("location").update_geofence_collection`
+method.
+
+Boto3 documentation:
+[LocationService.Client.update_geofence_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.update_geofence_collection)
+
+Arguments mapping described in
+[UpdateGeofenceCollectionRequestRequestTypeDef](./type_defs.md#updategeofencecollectionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CollectionName`: `str` *(required)*
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+- `PricingPlanDataSource`: `str`
+
+Returns
+[UpdateGeofenceCollectionResponseTypeDef](./type_defs.md#updategeofencecollectionresponsetypedef).
+
+### update_map
+
+Updates the specified properties of a given map resource.
+
+Type annotations for `boto3.client("location").update_map` method.
+
+Boto3 documentation:
+[LocationService.Client.update_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.update_map)
+
+Arguments mapping described in
+[UpdateMapRequestRequestTypeDef](./type_defs.md#updatemaprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MapName`: `str` *(required)*
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+
+Returns [UpdateMapResponseTypeDef](./type_defs.md#updatemapresponsetypedef).
+
+### update_place_index
+
+Updates the specified properties of a given place index resource.
+
+Type annotations for `boto3.client("location").update_place_index` method.
+
+Boto3 documentation:
+[LocationService.Client.update_place_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.update_place_index)
+
+Arguments mapping described in
+[UpdatePlaceIndexRequestRequestTypeDef](./type_defs.md#updateplaceindexrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `IndexName`: `str` *(required)*
+- `DataSourceConfiguration`:
+  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+
+Returns
+[UpdatePlaceIndexResponseTypeDef](./type_defs.md#updateplaceindexresponsetypedef).
+
+### update_route_calculator
+
+Updates the specified properties for a given route calculator resource.
+
+Type annotations for `boto3.client("location").update_route_calculator` method.
+
+Boto3 documentation:
+[LocationService.Client.update_route_calculator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.update_route_calculator)
+
+Arguments mapping described in
+[UpdateRouteCalculatorRequestRequestTypeDef](./type_defs.md#updateroutecalculatorrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CalculatorName`: `str` *(required)*
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+
+Returns
+[UpdateRouteCalculatorResponseTypeDef](./type_defs.md#updateroutecalculatorresponsetypedef).
+
+### update_tracker
+
+Updates the specified properties of a given tracker resource.
+
+Type annotations for `boto3.client("location").update_tracker` method.
+
+Boto3 documentation:
+[LocationService.Client.update_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client.update_tracker)
+
+Arguments mapping described in
+[UpdateTrackerRequestRequestTypeDef](./type_defs.md#updatetrackerrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `TrackerName`: `str` *(required)*
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+- `PricingPlanDataSource`: `str`
+
+Returns
+[UpdateTrackerResponseTypeDef](./type_defs.md#updatetrackerresponsetypedef).
 
 ### get_paginator
 

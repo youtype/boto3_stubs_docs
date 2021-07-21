@@ -284,7 +284,7 @@ Returns `str`.
 
 ### get_answer
 
-Get lens review.
+Get the answer to a specific question in a workload review.
 
 Type annotations for `boto3.client("wellarchitected").get_answer` method.
 
@@ -679,8 +679,11 @@ Keyword-only arguments:
 - `LensAlias`: `str` *(required)*
 - `QuestionId`: `str` *(required)*
 - `SelectedChoices`: `List`\[`str`\]
+- `ChoiceUpdates`: `Dict`\[`str`,
+  [ChoiceUpdateTypeDef](./type_defs.md#choiceupdatetypedef)\]
 - `Notes`: `str`
 - `IsApplicable`: `bool`
+- `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
 
 Returns [UpdateAnswerOutputTypeDef](./type_defs.md#updateansweroutputtypedef).
 

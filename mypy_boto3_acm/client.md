@@ -202,7 +202,8 @@ Returns `str`.
 
 ### get_account_configuration
 
-Returns the account configuration options associated with an AWS account.
+Returns the account configuration options associated with an Amazon Web
+Services account.
 
 Type annotations for `boto3.client("acm").get_account_configuration` method.
 
@@ -233,8 +234,8 @@ Returns
 
 ### import_certificate
 
-Imports a certificate into AWS Certificate Manager (ACM) to use with services
-that are integrated with ACM.
+Imports a certificate into Amazon Web Services Certificate Manager (ACM) to use
+with services that are integrated with ACM.
 
 Type annotations for `boto3.client("acm").import_certificate` method.
 
@@ -352,7 +353,7 @@ Keyword-only arguments:
 
 ### request_certificate
 
-Requests an ACM certificate for use with other AWS services.
+Requests an ACM certificate for use with other Amazon Web Services services.
 
 Type annotations for `boto3.client("acm").request_certificate` method.
 

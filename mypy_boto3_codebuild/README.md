@@ -130,6 +130,7 @@ from mypy_boto3_codebuild.literals import ArtifactNamespaceType, ...
 - [ArtifactPackagingType](./literals.md#artifactpackagingtype)
 - [ArtifactsTypeType](./literals.md#artifactstypetype)
 - [AuthTypeType](./literals.md#authtypetype)
+- [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 - [BuildBatchPhaseTypeType](./literals.md#buildbatchphasetypetype)
 - [BuildPhaseTypeType](./literals.md#buildphasetypetype)
 - [CacheModeType](./literals.md#cachemodetype)

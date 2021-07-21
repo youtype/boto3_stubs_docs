@@ -41,6 +41,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [DynamoDBResourceMeta](#dynamodbresourcemeta)
+
 - `tables`: [ServiceResourceTablesCollection](#serviceresourcetablescollection)
 
 ## Collections

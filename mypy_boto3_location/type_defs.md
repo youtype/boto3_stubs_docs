@@ -126,6 +126,16 @@ type annotations stubs module
   - [TruckDimensionsTypeDef](#truckdimensionstypedef)
   - [TruckWeightTypeDef](#truckweighttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateGeofenceCollectionRequestRequestTypeDef](#updategeofencecollectionrequestrequesttypedef)
+  - [UpdateGeofenceCollectionResponseTypeDef](#updategeofencecollectionresponsetypedef)
+  - [UpdateMapRequestRequestTypeDef](#updatemaprequestrequesttypedef)
+  - [UpdateMapResponseTypeDef](#updatemapresponsetypedef)
+  - [UpdatePlaceIndexRequestRequestTypeDef](#updateplaceindexrequestrequesttypedef)
+  - [UpdatePlaceIndexResponseTypeDef](#updateplaceindexresponsetypedef)
+  - [UpdateRouteCalculatorRequestRequestTypeDef](#updateroutecalculatorrequestrequesttypedef)
+  - [UpdateRouteCalculatorResponseTypeDef](#updateroutecalculatorresponsetypedef)
+  - [UpdateTrackerRequestRequestTypeDef](#updatetrackerrequestrequesttypedef)
+  - [UpdateTrackerResponseTypeDef](#updatetrackerresponsetypedef)
 
 ## AssociateTrackerConsumerRequestRequestTypeDef
 
@@ -1710,3 +1720,152 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `List`\[`str`\]
+
+## UpdateGeofenceCollectionRequestRequestTypeDef
+
+```python
+from mypy_boto3_location.type_defs import UpdateGeofenceCollectionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CollectionName`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+- `PricingPlanDataSource`: `str`
+
+## UpdateGeofenceCollectionResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import UpdateGeofenceCollectionResponseTypeDef
+```
+
+Required fields:
+
+- `CollectionArn`: `str`
+- `CollectionName`: `str`
+- `UpdateTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateMapRequestRequestTypeDef
+
+```python
+from mypy_boto3_location.type_defs import UpdateMapRequestRequestTypeDef
+```
+
+Required fields:
+
+- `MapName`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+
+## UpdateMapResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import UpdateMapResponseTypeDef
+```
+
+Required fields:
+
+- `MapArn`: `str`
+- `MapName`: `str`
+- `UpdateTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdatePlaceIndexRequestRequestTypeDef
+
+```python
+from mypy_boto3_location.type_defs import UpdatePlaceIndexRequestRequestTypeDef
+```
+
+Required fields:
+
+- `IndexName`: `str`
+
+Optional fields:
+
+- `DataSourceConfiguration`:
+  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+
+## UpdatePlaceIndexResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import UpdatePlaceIndexResponseTypeDef
+```
+
+Required fields:
+
+- `IndexArn`: `str`
+- `IndexName`: `str`
+- `UpdateTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateRouteCalculatorRequestRequestTypeDef
+
+```python
+from mypy_boto3_location.type_defs import UpdateRouteCalculatorRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CalculatorName`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+
+## UpdateRouteCalculatorResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import UpdateRouteCalculatorResponseTypeDef
+```
+
+Required fields:
+
+- `CalculatorArn`: `str`
+- `CalculatorName`: `str`
+- `UpdateTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateTrackerRequestRequestTypeDef
+
+```python
+from mypy_boto3_location.type_defs import UpdateTrackerRequestRequestTypeDef
+```
+
+Required fields:
+
+- `TrackerName`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+- `PricingPlanDataSource`: `str`
+
+## UpdateTrackerResponseTypeDef
+
+```python
+from mypy_boto3_location.type_defs import UpdateTrackerResponseTypeDef
+```
+
+Required fields:
+
+- `TrackerArn`: `str`
+- `TrackerName`: `str`
+- `UpdateTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

@@ -1885,7 +1885,7 @@ Returns
 
 ### list_user_pools
 
-Lists the user pools associated with an AWS account.
+Lists the user pools associated with an account.
 
 Type annotations for `boto3.client("cognito-idp").list_user_pools` method.
 

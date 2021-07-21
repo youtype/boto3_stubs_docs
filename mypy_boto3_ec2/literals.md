@@ -90,6 +90,7 @@ type annotations stubs module
   - [DescribeImportImageTasksPaginatorName](#describeimportimagetaskspaginatorname)
   - [DescribeImportSnapshotTasksPaginatorName](#describeimportsnapshottaskspaginatorname)
   - [DescribeInstanceCreditSpecificationsPaginatorName](#describeinstancecreditspecificationspaginatorname)
+  - [DescribeInstanceEventWindowsPaginatorName](#describeinstanceeventwindowspaginatorname)
   - [DescribeInstanceStatusPaginatorName](#describeinstancestatuspaginatorname)
   - [DescribeInstanceTypeOfferingsPaginatorName](#describeinstancetypeofferingspaginatorname)
   - [DescribeInstanceTypesPaginatorName](#describeinstancetypespaginatorname)
@@ -210,6 +211,7 @@ type annotations stubs module
   - [ImageStateType](#imagestatetype)
   - [ImageTypeValuesType](#imagetypevaluestype)
   - [InstanceAttributeNameType](#instanceattributenametype)
+  - [InstanceEventWindowStateType](#instanceeventwindowstatetype)
   - [InstanceExistsWaiterName](#instanceexistswaitername)
   - [InstanceHealthStatusType](#instancehealthstatustype)
   - [InstanceInterruptionBehaviorType](#instanceinterruptionbehaviortype)
@@ -364,6 +366,7 @@ type annotations stubs module
   - [VpnProtocolType](#vpnprotocoltype)
   - [VpnStateType](#vpnstatetype)
   - [VpnStaticRouteSourceType](#vpnstaticroutesourcetype)
+  - [WeekDayType](#weekdaytype)
   - [scopeType](#scopetype)
 
 ## AccountAttributeNameType
@@ -1299,6 +1302,16 @@ from mypy_boto3_ec2.literals import DescribeInstanceCreditSpecificationsPaginato
 Values:
 
 - `describe_instance_credit_specifications`
+
+## DescribeInstanceEventWindowsPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeInstanceEventWindowsPaginatorName
+```
+
+Values:
+
+- `describe_instance_event_windows`
 
 ## DescribeInstanceStatusPaginatorName
 
@@ -2596,6 +2609,19 @@ Values:
 - `sriovNetSupport`
 - `userData`
 
+## InstanceEventWindowStateType
+
+```python
+from mypy_boto3_ec2.literals import InstanceEventWindowStateType
+```
+
+Values:
+
+- `active`
+- `creating`
+- `deleted`
+- `deleting`
+
 ## InstanceExistsWaiterName
 
 ```python
@@ -3853,6 +3879,7 @@ Values:
 - `import-image-task`
 - `import-snapshot-task`
 - `instance`
+- `instance-event-window`
 - `internet-gateway`
 - `key-pair`
 - `launch-template`
@@ -4884,6 +4911,22 @@ from mypy_boto3_ec2.literals import VpnStaticRouteSourceType
 Values:
 
 - `Static`
+
+## WeekDayType
+
+```python
+from mypy_boto3_ec2.literals import WeekDayType
+```
+
+Values:
+
+- `friday`
+- `monday`
+- `saturday`
+- `sunday`
+- `thursday`
+- `tuesday`
+- `wednesday`
 
 ## scopeType
 

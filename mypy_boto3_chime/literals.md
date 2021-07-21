@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
 
 - [Literals for boto3 Chime module](#literals-for-boto3-chime-module)
+  - [AccountStatusType](#accountstatustype)
   - [AccountTypeType](#accounttypetype)
   - [AppInstanceDataTypeType](#appinstancedatatypetype)
   - [BotTypeType](#bottypetype)
@@ -45,6 +46,17 @@ type annotations stubs module
   - [SortOrderType](#sortordertype)
   - [UserTypeType](#usertypetype)
   - [VoiceConnectorAwsRegionType](#voiceconnectorawsregiontype)
+
+## AccountStatusType
+
+```python
+from mypy_boto3_chime.literals import AccountStatusType
+```
+
+Values:
+
+- `Active`
+- `Suspended`
 
 ## AccountTypeType
 

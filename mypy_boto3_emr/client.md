@@ -27,6 +27,7 @@ type annotations stubs module
     - [describe_cluster](#describe_cluster)
     - [describe_job_flows](#describe_job_flows)
     - [describe_notebook_execution](#describe_notebook_execution)
+    - [describe_release_label](#describe_release_label)
     - [describe_security_configuration](#describe_security_configuration)
     - [describe_step](#describe_step)
     - [describe_studio](#describe_studio)
@@ -40,6 +41,7 @@ type annotations stubs module
     - [list_instance_groups](#list_instance_groups)
     - [list_instances](#list_instances)
     - [list_notebook_executions](#list_notebook_executions)
+    - [list_release_labels](#list_release_labels)
     - [list_security_configurations](#list_security_configurations)
     - [list_steps](#list_steps)
     - [list_studio_session_mappings](#list_studio_session_mappings)
@@ -423,6 +425,29 @@ Keyword-only arguments:
 Returns
 [DescribeNotebookExecutionOutputTypeDef](./type_defs.md#describenotebookexecutionoutputtypedef).
 
+### describe_release_label
+
+Provides EMR release label details, such as releases available the region where
+the API request is run, and the available applications for a specific EMR
+release label.
+
+Type annotations for `boto3.client("emr").describe_release_label` method.
+
+Boto3 documentation:
+[EMR.Client.describe_release_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_release_label)
+
+Arguments mapping described in
+[DescribeReleaseLabelInputRequestTypeDef](./type_defs.md#describereleaselabelinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ReleaseLabel`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeReleaseLabelOutputTypeDef](./type_defs.md#describereleaselabeloutputtypedef).
+
 ### describe_security_configuration
 
 Provides the details of a security configuration by returning the configuration
@@ -503,8 +528,8 @@ Returns `str`.
 
 ### get_block_public_access_configuration
 
-Returns the Amazon EMR block public access configuration for your AWS account
-in the current Region.
+Returns the Amazon EMR block public access configuration for your account in
+the current Region.
 
 Type annotations for
 `boto3.client("emr").get_block_public_access_configuration` method.
@@ -580,7 +605,7 @@ Returns
 
 ### list_clusters
 
-Provides the status of all clusters visible to this AWS account.
+Provides the status of all clusters visible to this account.
 
 Type annotations for `boto3.client("emr").list_clusters` method.
 
@@ -692,6 +717,28 @@ Keyword-only arguments:
 Returns
 [ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef).
 
+### list_release_labels
+
+Retrieves release labels of EMR services in the region where the API is called.
+
+Type annotations for `boto3.client("emr").list_release_labels` method.
+
+Boto3 documentation:
+[EMR.Client.list_release_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_release_labels)
+
+Arguments mapping described in
+[ListReleaseLabelsInputRequestTypeDef](./type_defs.md#listreleaselabelsinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `Filters`:
+  [ReleaseLabelFilterTypeDef](./type_defs.md#releaselabelfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListReleaseLabelsOutputTypeDef](./type_defs.md#listreleaselabelsoutputtypedef).
+
 ### list_security_configurations
 
 Lists all the security configurations visible to this account, providing their
@@ -715,7 +762,7 @@ Returns
 ### list_steps
 
 Provides a list of steps for the cluster in reverse order unless you specify
-`stepIds` with the request of filter by `StepStates`.
+`stepIds` with the request or filter by `StepStates`.
 
 Type annotations for `boto3.client("emr").list_steps` method.
 
@@ -758,7 +805,7 @@ Returns
 
 ### list_studios
 
-Returns a list of all Amazon EMR Studios associated with the AWS account.
+Returns a list of all Amazon EMR Studios associated with the account.
 
 Type annotations for `boto3.client("emr").list_studios` method.
 
@@ -861,7 +908,7 @@ Returns
 
 ### put_block_public_access_configuration
 
-Creates or updates an Amazon EMR block public access configuration for your AWS
+Creates or updates an Amazon EMR block public access configuration for your
 account in the current Region.
 
 Type annotations for
@@ -1036,8 +1083,7 @@ Keyword-only arguments:
 
 ### set_visible_to_all_users
 
-Sets the Cluster$VisibleToAllUsers value, which determines whether the cluster
-is visible to all IAM users of the AWS account associated with the cluster.
+Sets the Cluster$VisibleToAllUsers value for an EMR cluster.
 
 Type annotations for `boto3.client("emr").set_visible_to_all_users` method.
 

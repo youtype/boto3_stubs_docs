@@ -63,6 +63,8 @@ type annotations stubs module
   - [AssociateEnclaveCertificateIamRoleResultTypeDef](#associateenclavecertificateiamroleresulttypedef)
   - [AssociateIamInstanceProfileRequestRequestTypeDef](#associateiaminstanceprofilerequestrequesttypedef)
   - [AssociateIamInstanceProfileResultTypeDef](#associateiaminstanceprofileresulttypedef)
+  - [AssociateInstanceEventWindowRequestRequestTypeDef](#associateinstanceeventwindowrequestrequesttypedef)
+  - [AssociateInstanceEventWindowResultTypeDef](#associateinstanceeventwindowresulttypedef)
   - [AssociateRouteTableRequestRequestTypeDef](#associateroutetablerequestrequesttypedef)
   - [AssociateRouteTableRequestRouteTableTypeDef](#associateroutetablerequestroutetabletypedef)
   - [AssociateRouteTableResultTypeDef](#associateroutetableresulttypedef)
@@ -212,6 +214,8 @@ type annotations stubs module
   - [CreateImageRequestInstanceTypeDef](#createimagerequestinstancetypedef)
   - [CreateImageRequestRequestTypeDef](#createimagerequestrequesttypedef)
   - [CreateImageResultTypeDef](#createimageresulttypedef)
+  - [CreateInstanceEventWindowRequestRequestTypeDef](#createinstanceeventwindowrequestrequesttypedef)
+  - [CreateInstanceEventWindowResultTypeDef](#createinstanceeventwindowresulttypedef)
   - [CreateInstanceExportTaskRequestRequestTypeDef](#createinstanceexporttaskrequestrequesttypedef)
   - [CreateInstanceExportTaskResultTypeDef](#createinstanceexporttaskresulttypedef)
   - [CreateInternetGatewayRequestRequestTypeDef](#createinternetgatewayrequestrequesttypedef)
@@ -366,6 +370,8 @@ type annotations stubs module
   - [DeleteFlowLogsResultTypeDef](#deleteflowlogsresulttypedef)
   - [DeleteFpgaImageRequestRequestTypeDef](#deletefpgaimagerequestrequesttypedef)
   - [DeleteFpgaImageResultTypeDef](#deletefpgaimageresulttypedef)
+  - [DeleteInstanceEventWindowRequestRequestTypeDef](#deleteinstanceeventwindowrequestrequesttypedef)
+  - [DeleteInstanceEventWindowResultTypeDef](#deleteinstanceeventwindowresulttypedef)
   - [DeleteInternetGatewayRequestInternetGatewayTypeDef](#deleteinternetgatewayrequestinternetgatewaytypedef)
   - [DeleteInternetGatewayRequestRequestTypeDef](#deleteinternetgatewayrequestrequesttypedef)
   - [DeleteKeyPairRequestKeyPairInfoTypeDef](#deletekeypairrequestkeypairinfotypedef)
@@ -557,6 +563,8 @@ type annotations stubs module
   - [DescribeInstanceCreditSpecificationsResultTypeDef](#describeinstancecreditspecificationsresulttypedef)
   - [DescribeInstanceEventNotificationAttributesRequestRequestTypeDef](#describeinstanceeventnotificationattributesrequestrequesttypedef)
   - [DescribeInstanceEventNotificationAttributesResultTypeDef](#describeinstanceeventnotificationattributesresulttypedef)
+  - [DescribeInstanceEventWindowsRequestRequestTypeDef](#describeinstanceeventwindowsrequestrequesttypedef)
+  - [DescribeInstanceEventWindowsResultTypeDef](#describeinstanceeventwindowsresulttypedef)
   - [DescribeInstanceStatusRequestRequestTypeDef](#describeinstancestatusrequestrequesttypedef)
   - [DescribeInstanceStatusResultTypeDef](#describeinstancestatusresulttypedef)
   - [DescribeInstanceTypeOfferingsRequestRequestTypeDef](#describeinstancetypeofferingsrequestrequesttypedef)
@@ -770,6 +778,8 @@ type annotations stubs module
   - [DisassociateEnclaveCertificateIamRoleResultTypeDef](#disassociateenclavecertificateiamroleresulttypedef)
   - [DisassociateIamInstanceProfileRequestRequestTypeDef](#disassociateiaminstanceprofilerequestrequesttypedef)
   - [DisassociateIamInstanceProfileResultTypeDef](#disassociateiaminstanceprofileresulttypedef)
+  - [DisassociateInstanceEventWindowRequestRequestTypeDef](#disassociateinstanceeventwindowrequestrequesttypedef)
+  - [DisassociateInstanceEventWindowResultTypeDef](#disassociateinstanceeventwindowresulttypedef)
   - [DisassociateRouteTableRequestRequestTypeDef](#disassociateroutetablerequestrequesttypedef)
   - [DisassociateRouteTableRequestRouteTableAssociationTypeDef](#disassociateroutetablerequestroutetableassociationtypedef)
   - [DisassociateRouteTableRequestServiceResourceTypeDef](#disassociateroutetablerequestserviceresourcetypedef)
@@ -968,6 +978,13 @@ type annotations stubs module
   - [InstanceCreditSpecificationRequestTypeDef](#instancecreditspecificationrequesttypedef)
   - [InstanceCreditSpecificationTypeDef](#instancecreditspecificationtypedef)
   - [InstanceDeleteTagsRequestTypeDef](#instancedeletetagsrequesttypedef)
+  - [InstanceEventWindowAssociationRequestTypeDef](#instanceeventwindowassociationrequesttypedef)
+  - [InstanceEventWindowAssociationTargetTypeDef](#instanceeventwindowassociationtargettypedef)
+  - [InstanceEventWindowDisassociationRequestTypeDef](#instanceeventwindowdisassociationrequesttypedef)
+  - [InstanceEventWindowStateChangeTypeDef](#instanceeventwindowstatechangetypedef)
+  - [InstanceEventWindowTimeRangeRequestTypeDef](#instanceeventwindowtimerangerequesttypedef)
+  - [InstanceEventWindowTimeRangeTypeDef](#instanceeventwindowtimerangetypedef)
+  - [InstanceEventWindowTypeDef](#instanceeventwindowtypedef)
   - [InstanceExportDetailsTypeDef](#instanceexportdetailstypedef)
   - [InstanceFamilyCreditSpecificationTypeDef](#instancefamilycreditspecificationtypedef)
   - [InstanceIpv6AddressRequestTypeDef](#instanceipv6addressrequesttypedef)
@@ -1092,6 +1109,8 @@ type annotations stubs module
   - [ModifyInstanceCreditSpecificationResultTypeDef](#modifyinstancecreditspecificationresulttypedef)
   - [ModifyInstanceEventStartTimeRequestRequestTypeDef](#modifyinstanceeventstarttimerequestrequesttypedef)
   - [ModifyInstanceEventStartTimeResultTypeDef](#modifyinstanceeventstarttimeresulttypedef)
+  - [ModifyInstanceEventWindowRequestRequestTypeDef](#modifyinstanceeventwindowrequestrequesttypedef)
+  - [ModifyInstanceEventWindowResultTypeDef](#modifyinstanceeventwindowresulttypedef)
   - [ModifyInstanceMetadataOptionsRequestRequestTypeDef](#modifyinstancemetadataoptionsrequestrequesttypedef)
   - [ModifyInstanceMetadataOptionsResultTypeDef](#modifyinstancemetadataoptionsresulttypedef)
   - [ModifyInstancePlacementRequestRequestTypeDef](#modifyinstanceplacementrequestrequesttypedef)
@@ -2313,6 +2332,35 @@ Required fields:
 
 - `IamInstanceProfileAssociation`:
   [IamInstanceProfileAssociationTypeDef](./type_defs.md#iaminstanceprofileassociationtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AssociateInstanceEventWindowRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateInstanceEventWindowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceEventWindowId`: `str`
+- `AssociationTarget`:
+  [InstanceEventWindowAssociationRequestTypeDef](./type_defs.md#instanceeventwindowassociationrequesttypedef)
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## AssociateInstanceEventWindowResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AssociateInstanceEventWindowResultTypeDef
+```
+
+Required fields:
+
+- `InstanceEventWindow`:
+  [InstanceEventWindowTypeDef](./type_defs.md#instanceeventwindowtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4542,6 +4590,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateInstanceEventWindowRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateInstanceEventWindowRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Name`: `str`
+- `TimeRanges`:
+  `List`\[[InstanceEventWindowTimeRangeRequestTypeDef](./type_defs.md#instanceeventwindowtimerangerequesttypedef)\]
+- `CronExpression`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+## CreateInstanceEventWindowResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateInstanceEventWindowResultTypeDef
+```
+
+Required fields:
+
+- `InstanceEventWindow`:
+  [InstanceEventWindowTypeDef](./type_defs.md#instanceeventwindowtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateInstanceExportTaskRequestRequestTypeDef
 
 ```python
@@ -6328,6 +6405,7 @@ Optional fields:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MultiAttachEnabled`: `bool`
 - `Throughput`: `int`
+- `ClientToken`: `str`
 
 ## CreateVolumeRequestServiceResourceTypeDef
 
@@ -6353,6 +6431,7 @@ Optional fields:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MultiAttachEnabled`: `bool`
 - `Throughput`: `int`
+- `ClientToken`: `str`
 
 ## CreateVpcEndpointConnectionNotificationRequestRequestTypeDef
 
@@ -6941,6 +7020,34 @@ from mypy_boto3_ec2.type_defs import DeleteFpgaImageResultTypeDef
 Required fields:
 
 - `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteInstanceEventWindowRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteInstanceEventWindowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceEventWindowId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `ForceDelete`: `bool`
+
+## DeleteInstanceEventWindowResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DeleteInstanceEventWindowResultTypeDef
+```
+
+Required fields:
+
+- `InstanceEventWindowState`:
+  [InstanceEventWindowStateChangeTypeDef](./type_defs.md#instanceeventwindowstatechangetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -9499,6 +9606,34 @@ Required fields:
 
 - `InstanceTagAttribute`:
   [InstanceTagNotificationAttributeTypeDef](./type_defs.md#instancetagnotificationattributetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeInstanceEventWindowsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeInstanceEventWindowsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `InstanceEventWindowIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeInstanceEventWindowsResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeInstanceEventWindowsResultTypeDef
+```
+
+Required fields:
+
+- `InstanceEventWindows`:
+  `List`\[[InstanceEventWindowTypeDef](./type_defs.md#instanceeventwindowtypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -12470,6 +12605,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DisassociateInstanceEventWindowRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateInstanceEventWindowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceEventWindowId`: `str`
+- `AssociationTarget`:
+  [InstanceEventWindowDisassociationRequestTypeDef](./type_defs.md#instanceeventwindowdisassociationrequesttypedef)
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## DisassociateInstanceEventWindowResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DisassociateInstanceEventWindowResultTypeDef
+```
+
+Required fields:
+
+- `InstanceEventWindow`:
+  [InstanceEventWindowTypeDef](./type_defs.md#instanceeventwindowtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DisassociateRouteTableRequestRequestTypeDef
 
 ```python
@@ -15377,6 +15541,99 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
 
+## InstanceEventWindowAssociationRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceEventWindowAssociationRequestTypeDef
+```
+
+Optional fields:
+
+- `InstanceIds`: `List`\[`str`\]
+- `InstanceTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DedicatedHostIds`: `List`\[`str`\]
+
+## InstanceEventWindowAssociationTargetTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceEventWindowAssociationTargetTypeDef
+```
+
+Optional fields:
+
+- `InstanceIds`: `List`\[`str`\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DedicatedHostIds`: `List`\[`str`\]
+
+## InstanceEventWindowDisassociationRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceEventWindowDisassociationRequestTypeDef
+```
+
+Optional fields:
+
+- `InstanceIds`: `List`\[`str`\]
+- `InstanceTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DedicatedHostIds`: `List`\[`str`\]
+
+## InstanceEventWindowStateChangeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceEventWindowStateChangeTypeDef
+```
+
+Optional fields:
+
+- `InstanceEventWindowId`: `str`
+- `State`:
+  [InstanceEventWindowStateType](./literals.md#instanceeventwindowstatetype)
+
+## InstanceEventWindowTimeRangeRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceEventWindowTimeRangeRequestTypeDef
+```
+
+Optional fields:
+
+- `StartWeekDay`: [WeekDayType](./literals.md#weekdaytype)
+- `StartHour`: `int`
+- `EndWeekDay`: [WeekDayType](./literals.md#weekdaytype)
+- `EndHour`: `int`
+
+## InstanceEventWindowTimeRangeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceEventWindowTimeRangeTypeDef
+```
+
+Optional fields:
+
+- `StartWeekDay`: [WeekDayType](./literals.md#weekdaytype)
+- `StartHour`: `int`
+- `EndWeekDay`: [WeekDayType](./literals.md#weekdaytype)
+- `EndHour`: `int`
+
+## InstanceEventWindowTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import InstanceEventWindowTypeDef
+```
+
+Optional fields:
+
+- `InstanceEventWindowId`: `str`
+- `TimeRanges`:
+  `List`\[[InstanceEventWindowTimeRangeTypeDef](./type_defs.md#instanceeventwindowtimerangetypedef)\]
+- `Name`: `str`
+- `CronExpression`: `str`
+- `AssociationTarget`:
+  [InstanceEventWindowAssociationTargetTypeDef](./type_defs.md#instanceeventwindowassociationtargettypedef)
+- `State`:
+  [InstanceEventWindowStateType](./literals.md#instanceeventwindowstatetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## InstanceExportDetailsTypeDef
 
 ```python
@@ -17265,6 +17522,37 @@ Required fields:
 
 - `Event`:
   [InstanceStatusEventTypeDef](./type_defs.md#instancestatuseventtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ModifyInstanceEventWindowRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyInstanceEventWindowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceEventWindowId`: `str`
+
+Optional fields:
+
+- `DryRun`: `bool`
+- `Name`: `str`
+- `TimeRanges`:
+  `List`\[[InstanceEventWindowTimeRangeRequestTypeDef](./type_defs.md#instanceeventwindowtimerangerequesttypedef)\]
+- `CronExpression`: `str`
+
+## ModifyInstanceEventWindowResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyInstanceEventWindowResultTypeDef
+```
+
+Required fields:
+
+- `InstanceEventWindow`:
+  [InstanceEventWindowTypeDef](./type_defs.md#instanceeventwindowtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

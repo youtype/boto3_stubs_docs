@@ -283,7 +283,7 @@ Returns
 
 ### create_event_subscription
 
-Creates an AWS DMS event notification subscription.
+Creates an DMS event notification subscription.
 
 Type annotations for `boto3.client("dms").create_event_subscription` method.
 
@@ -454,7 +454,7 @@ Returns
 
 ### delete_event_subscription
 
-Deletes an AWS DMS event subscription.
+Deletes an DMS event subscription.
 
 Type annotations for `boto3.client("dms").delete_event_subscription` method.
 
@@ -550,7 +550,7 @@ Returns
 
 ### describe_account_attributes
 
-Lists all of the AWS DMS attributes for a customer account.
+Lists all of the DMS attributes for a customer account.
 
 Type annotations for `boto3.client("dms").describe_account_attributes` method.
 
@@ -902,7 +902,8 @@ Returns
 
 ### describe_replication_task_assessment_results
 
-Returns the task assessment results from Amazon S3.
+Returns the task assessment results from the Amazon S3 bucket that DMS creates
+in your account.
 
 Type annotations for
 `boto3.client("dms").describe_replication_task_assessment_results` method.
@@ -1149,13 +1150,14 @@ Keyword-only arguments:
 - `IBMDb2Settings`:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+- `ExactSettings`: `bool`
 
 Returns
 [ModifyEndpointResponseTypeDef](./type_defs.md#modifyendpointresponsetypedef).
 
 ### modify_event_subscription
 
-Modifies an existing AWS DMS event notification subscription.
+Modifies an existing DMS event notification subscription.
 
 Type annotations for `boto3.client("dms").modify_event_subscription` method.
 

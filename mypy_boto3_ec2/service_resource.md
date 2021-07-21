@@ -160,6 +160,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [EC2ResourceMeta](#ec2resourcemeta)
+
 - `classic_addresses`:
   [ServiceResourceClassicAddressesCollection](#serviceresourceclassicaddressescollection)
 
@@ -1253,6 +1255,7 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MultiAttachEnabled`: `bool`
 - `Throughput`: `int`
+- `ClientToken`: `str`
 
 Returns [Volume](#volume).
 

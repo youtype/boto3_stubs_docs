@@ -962,6 +962,8 @@ Keyword-only arguments:
 - `Description`: `str`
 - `StartOnCreation`: `bool`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `EventBatchingCondition`:
+  [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
 
 Returns
 [CreateTriggerResponseTypeDef](./type_defs.md#createtriggerresponsetypedef).

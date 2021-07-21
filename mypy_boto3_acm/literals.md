@@ -145,6 +145,7 @@ Values:
 - `EC_secp521r1`
 - `RSA_1024`
 - `RSA_2048`
+- `RSA_3072`
 - `RSA_4096`
 
 ## KeyUsageNameType

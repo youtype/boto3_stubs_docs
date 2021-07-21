@@ -109,6 +109,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [S3ResourceMeta](#s3resourcemeta)
+
 - `buckets`:
   [ServiceResourceBucketsCollection](#serviceresourcebucketscollection)
 

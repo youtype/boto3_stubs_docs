@@ -81,6 +81,11 @@ from mypy_boto3_location.client import LocationServiceClient
 - [search_place_index_for_text](./client.md#search_place_index_for_text)
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
+- [update_geofence_collection](./client.md#update_geofence_collection)
+- [update_map](./client.md#update_map)
+- [update_place_index](./client.md#update_place_index)
+- [update_route_calculator](./client.md#update_route_calculator)
+- [update_tracker](./client.md#update_tracker)
 
 ### Exceptions
 
@@ -91,6 +96,7 @@ LocationServiceClient [exceptions](./client.md#exceptions)
 - ConflictException
 - InternalServerException
 - ResourceNotFoundException
+- ServiceQuotaExceededException
 - ThrottlingException
 - ValidationException
 
@@ -271,3 +277,13 @@ from mypy_boto3_location.type_defs import AssociateTrackerConsumerRequestRequest
 - [TruckDimensionsTypeDef](./type_defs.md#truckdimensionstypedef)
 - [TruckWeightTypeDef](./type_defs.md#truckweighttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [UpdateGeofenceCollectionRequestRequestTypeDef](./type_defs.md#updategeofencecollectionrequestrequesttypedef)
+- [UpdateGeofenceCollectionResponseTypeDef](./type_defs.md#updategeofencecollectionresponsetypedef)
+- [UpdateMapRequestRequestTypeDef](./type_defs.md#updatemaprequestrequesttypedef)
+- [UpdateMapResponseTypeDef](./type_defs.md#updatemapresponsetypedef)
+- [UpdatePlaceIndexRequestRequestTypeDef](./type_defs.md#updateplaceindexrequestrequesttypedef)
+- [UpdatePlaceIndexResponseTypeDef](./type_defs.md#updateplaceindexresponsetypedef)
+- [UpdateRouteCalculatorRequestRequestTypeDef](./type_defs.md#updateroutecalculatorrequestrequesttypedef)
+- [UpdateRouteCalculatorResponseTypeDef](./type_defs.md#updateroutecalculatorresponsetypedef)
+- [UpdateTrackerRequestRequestTypeDef](./type_defs.md#updatetrackerrequestrequesttypedef)
+- [UpdateTrackerResponseTypeDef](./type_defs.md#updatetrackerresponsetypedef)

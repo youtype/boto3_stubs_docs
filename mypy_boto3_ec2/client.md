@@ -29,6 +29,7 @@ type annotations stubs module
     - [associate_dhcp_options](#associate_dhcp_options)
     - [associate_enclave_certificate_iam_role](#associate_enclave_certificate_iam_role)
     - [associate_iam_instance_profile](#associate_iam_instance_profile)
+    - [associate_instance_event_window](#associate_instance_event_window)
     - [associate_route_table](#associate_route_table)
     - [associate_subnet_cidr_block](#associate_subnet_cidr_block)
     - [associate_transit_gateway_multicast_domain](#associate_transit_gateway_multicast_domain)
@@ -70,6 +71,7 @@ type annotations stubs module
     - [create_flow_logs](#create_flow_logs)
     - [create_fpga_image](#create_fpga_image)
     - [create_image](#create_image)
+    - [create_instance_event_window](#create_instance_event_window)
     - [create_instance_export_task](#create_instance_export_task)
     - [create_internet_gateway](#create_internet_gateway)
     - [create_key_pair](#create_key_pair)
@@ -128,6 +130,7 @@ type annotations stubs module
     - [delete_fleets](#delete_fleets)
     - [delete_flow_logs](#delete_flow_logs)
     - [delete_fpga_image](#delete_fpga_image)
+    - [delete_instance_event_window](#delete_instance_event_window)
     - [delete_internet_gateway](#delete_internet_gateway)
     - [delete_key_pair](#delete_key_pair)
     - [delete_launch_template](#delete_launch_template)
@@ -221,6 +224,7 @@ type annotations stubs module
     - [describe_instance_attribute](#describe_instance_attribute)
     - [describe_instance_credit_specifications](#describe_instance_credit_specifications)
     - [describe_instance_event_notification_attributes](#describe_instance_event_notification_attributes)
+    - [describe_instance_event_windows](#describe_instance_event_windows)
     - [describe_instance_status](#describe_instance_status)
     - [describe_instance_type_offerings](#describe_instance_type_offerings)
     - [describe_instance_types](#describe_instance_types)
@@ -319,6 +323,7 @@ type annotations stubs module
     - [disassociate_client_vpn_target_network](#disassociate_client_vpn_target_network)
     - [disassociate_enclave_certificate_iam_role](#disassociate_enclave_certificate_iam_role)
     - [disassociate_iam_instance_profile](#disassociate_iam_instance_profile)
+    - [disassociate_instance_event_window](#disassociate_instance_event_window)
     - [disassociate_route_table](#disassociate_route_table)
     - [disassociate_subnet_cidr_block](#disassociate_subnet_cidr_block)
     - [disassociate_transit_gateway_multicast_domain](#disassociate_transit_gateway_multicast_domain)
@@ -384,6 +389,7 @@ type annotations stubs module
     - [modify_instance_capacity_reservation_attributes](#modify_instance_capacity_reservation_attributes)
     - [modify_instance_credit_specification](#modify_instance_credit_specification)
     - [modify_instance_event_start_time](#modify_instance_event_start_time)
+    - [modify_instance_event_window](#modify_instance_event_window)
     - [modify_instance_metadata_options](#modify_instance_metadata_options)
     - [modify_instance_placement](#modify_instance_placement)
     - [modify_launch_template](#modify_launch_template)
@@ -908,6 +914,30 @@ Keyword-only arguments:
 
 Returns
 [AssociateIamInstanceProfileResultTypeDef](./type_defs.md#associateiaminstanceprofileresulttypedef).
+
+### associate_instance_event_window
+
+Associates one or more targets with an event window.
+
+Type annotations for `boto3.client("ec2").associate_instance_event_window`
+method.
+
+Boto3 documentation:
+[EC2.Client.associate_instance_event_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.associate_instance_event_window)
+
+Arguments mapping described in
+[AssociateInstanceEventWindowRequestRequestTypeDef](./type_defs.md#associateinstanceeventwindowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceEventWindowId`: `str` *(required)*
+- `AssociationTarget`:
+  [InstanceEventWindowAssociationRequestTypeDef](./type_defs.md#instanceeventwindowassociationrequesttypedef)
+  *(required)*
+- `DryRun`: `bool`
+
+Returns
+[AssociateInstanceEventWindowResultTypeDef](./type_defs.md#associateinstanceeventwindowresulttypedef).
 
 ### associate_route_table
 
@@ -1905,6 +1935,32 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 Returns [CreateImageResultTypeDef](./type_defs.md#createimageresulttypedef).
+
+### create_instance_event_window
+
+Creates an event window in which scheduled events for the associated Amazon EC2
+instances can run.
+
+Type annotations for `boto3.client("ec2").create_instance_event_window` method.
+
+Boto3 documentation:
+[EC2.Client.create_instance_event_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_instance_event_window)
+
+Arguments mapping described in
+[CreateInstanceEventWindowRequestRequestTypeDef](./type_defs.md#createinstanceeventwindowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DryRun`: `bool`
+- `Name`: `str`
+- `TimeRanges`:
+  `List`\[[InstanceEventWindowTimeRangeRequestTypeDef](./type_defs.md#instanceeventwindowtimerangerequesttypedef)\]
+- `CronExpression`: `str`
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+
+Returns
+[CreateInstanceEventWindowResultTypeDef](./type_defs.md#createinstanceeventwindowresulttypedef).
 
 ### create_instance_export_task
 
@@ -2961,6 +3017,7 @@ Keyword-only arguments:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MultiAttachEnabled`: `bool`
 - `Throughput`: `int`
+- `ClientToken`: `str`
 
 Returns
 [VolumeResponseMetadataTypeDef](./type_defs.md#volumeresponsemetadatatypedef).
@@ -3349,6 +3406,27 @@ Keyword-only arguments:
 
 Returns
 [DeleteFpgaImageResultTypeDef](./type_defs.md#deletefpgaimageresulttypedef).
+
+### delete_instance_event_window
+
+Deletes the specified event window.
+
+Type annotations for `boto3.client("ec2").delete_instance_event_window` method.
+
+Boto3 documentation:
+[EC2.Client.delete_instance_event_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_instance_event_window)
+
+Arguments mapping described in
+[DeleteInstanceEventWindowRequestRequestTypeDef](./type_defs.md#deleteinstanceeventwindowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceEventWindowId`: `str` *(required)*
+- `DryRun`: `bool`
+- `ForceDelete`: `bool`
+
+Returns
+[DeleteInstanceEventWindowResultTypeDef](./type_defs.md#deleteinstanceeventwindowresulttypedef).
 
 ### delete_internet_gateway
 
@@ -4272,7 +4350,7 @@ Keyword-only arguments:
 
 ### deregister_instance_event_notification_attributes
 
-Deregisters tag keys to prevent tags that have the specified tag keys from
+c Deregisters tag keys to prevent tags that have the specified tag keys from
 being included in scheduled event notifications for resources in the Region.
 
 Type annotations for
@@ -5329,6 +5407,30 @@ Keyword-only arguments:
 
 Returns
 [DescribeInstanceEventNotificationAttributesResultTypeDef](./type_defs.md#describeinstanceeventnotificationattributesresulttypedef).
+
+### describe_instance_event_windows
+
+Describes the specified event windows or all event windows.
+
+Type annotations for `boto3.client("ec2").describe_instance_event_windows`
+method.
+
+Boto3 documentation:
+[EC2.Client.describe_instance_event_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_instance_event_windows)
+
+Arguments mapping described in
+[DescribeInstanceEventWindowsRequestRequestTypeDef](./type_defs.md#describeinstanceeventwindowsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `DryRun`: `bool`
+- `InstanceEventWindowIds`: `List`\[`str`\]
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[DescribeInstanceEventWindowsResultTypeDef](./type_defs.md#describeinstanceeventwindowsresulttypedef).
 
 ### describe_instance_status
 
@@ -7601,6 +7703,30 @@ Keyword-only arguments:
 Returns
 [DisassociateIamInstanceProfileResultTypeDef](./type_defs.md#disassociateiaminstanceprofileresulttypedef).
 
+### disassociate_instance_event_window
+
+Disassociates one or more targets from an event window.
+
+Type annotations for `boto3.client("ec2").disassociate_instance_event_window`
+method.
+
+Boto3 documentation:
+[EC2.Client.disassociate_instance_event_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.disassociate_instance_event_window)
+
+Arguments mapping described in
+[DisassociateInstanceEventWindowRequestRequestTypeDef](./type_defs.md#disassociateinstanceeventwindowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceEventWindowId`: `str` *(required)*
+- `AssociationTarget`:
+  [InstanceEventWindowDisassociationRequestTypeDef](./type_defs.md#instanceeventwindowdisassociationrequesttypedef)
+  *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DisassociateInstanceEventWindowResultTypeDef](./type_defs.md#disassociateinstanceeventwindowresulttypedef).
+
 ### disassociate_route_table
 
 Disassociates a subnet or gateway from a route table.
@@ -8184,8 +8310,8 @@ Returns
 
 ### get_ebs_default_kms_key_id
 
-Describes the default customer master key (CMK) for EBS encryption by default
-for your account in this Region.
+Describes the default KMS key for EBS encryption by default for your account in
+this Region.
 
 Type annotations for `boto3.client("ec2").get_ebs_default_kms_key_id` method.
 
@@ -8846,8 +8972,8 @@ Returns
 
 ### modify_ebs_default_kms_key_id
 
-Changes the default customer master key (CMK) for EBS encryption by default for
-your account in this Region.
+Changes the default KMS key for EBS encryption by default for your account in
+this Region.
 
 Type annotations for `boto3.client("ec2").modify_ebs_default_kms_key_id`
 method.
@@ -9118,6 +9244,30 @@ Keyword-only arguments:
 
 Returns
 [ModifyInstanceEventStartTimeResultTypeDef](./type_defs.md#modifyinstanceeventstarttimeresulttypedef).
+
+### modify_instance_event_window
+
+Modifies the specified event window.
+
+Type annotations for `boto3.client("ec2").modify_instance_event_window` method.
+
+Boto3 documentation:
+[EC2.Client.modify_instance_event_window](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_instance_event_window)
+
+Arguments mapping described in
+[ModifyInstanceEventWindowRequestRequestTypeDef](./type_defs.md#modifyinstanceeventwindowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceEventWindowId`: `str` *(required)*
+- `DryRun`: `bool`
+- `Name`: `str`
+- `TimeRanges`:
+  `List`\[[InstanceEventWindowTimeRangeRequestTypeDef](./type_defs.md#instanceeventwindowtimerangerequesttypedef)\]
+- `CronExpression`: `str`
+
+Returns
+[ModifyInstanceEventWindowResultTypeDef](./type_defs.md#modifyinstanceeventwindowresulttypedef).
 
 ### modify_instance_metadata_options
 
@@ -10505,8 +10655,8 @@ Returns
 
 ### reset_ebs_default_kms_key_id
 
-Resets the default customer master key (CMK) for EBS encryption for your
-account in this Region to the AWS managed CMK for EBS.
+Resets the default KMS key for EBS encryption for your account in this Region
+to the Amazon Web Services managed KMS key for EBS.
 
 Type annotations for `boto3.client("ec2").reset_ebs_default_kms_key_id` method.
 
@@ -11258,6 +11408,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [DescribeImportSnapshotTasksPaginator](./paginators.md#describeimportsnapshottaskspaginator)
 - `client.get_paginator("describe_instance_credit_specifications")` ->
   [DescribeInstanceCreditSpecificationsPaginator](./paginators.md#describeinstancecreditspecificationspaginator)
+- `client.get_paginator("describe_instance_event_windows")` ->
+  [DescribeInstanceEventWindowsPaginator](./paginators.md#describeinstanceeventwindowspaginator)
 - `client.get_paginator("describe_instance_status")` ->
   [DescribeInstanceStatusPaginator](./paginators.md#describeinstancestatuspaginator)
 - `client.get_paginator("describe_instance_type_offerings")` ->

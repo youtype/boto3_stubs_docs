@@ -324,3 +324,4 @@ from mypy_boto3_kendra.type_defs import AccessControlListConfigurationTypeDef, .
 - [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - [UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)
 - [WebCrawlerConfigurationTypeDef](./type_defs.md#webcrawlerconfigurationtypedef)
+- [WorkDocsConfigurationTypeDef](./type_defs.md#workdocsconfigurationtypedef)

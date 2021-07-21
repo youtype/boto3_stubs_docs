@@ -1312,6 +1312,7 @@ Optional fields:
 - `Applicability`: `str`
 - `IntValueMin`: `int`
 - `IntValueMax`: `int`
+- `DefaultValue`: `str`
 
 ## EndpointTypeDef
 
@@ -1497,6 +1498,7 @@ Optional fields:
 - `SslCaCertificateArn`: `str`
 - `SaslUsername`: `str`
 - `SaslPassword`: `str`
+- `NoHexPrefix`: `bool`
 
 ## KinesisSettingsTypeDef
 
@@ -1516,6 +1518,7 @@ Optional fields:
 - `IncludeTableAlterOperations`: `bool`
 - `IncludeControlDetails`: `bool`
 - `IncludeNullAndEmpty`: `bool`
+- `NoHexPrefix`: `bool`
 
 ## ListTagsForResourceMessageRequestTypeDef
 
@@ -1616,6 +1619,7 @@ Optional fields:
 - `IBMDb2Settings`:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+- `ExactSettings`: `bool`
 
 ## ModifyEndpointResponseTypeDef
 
@@ -1887,7 +1891,11 @@ Optional fields:
 - `SecurityDbEncryptionName`: `str`
 - `ServerName`: `str`
 - `SpatialDataOptionToGeoJsonFunctionName`: `str`
+- `StandbyDelayTime`: `int`
 - `Username`: `str`
+- `UseBFile`: `bool`
+- `UseDirectPathFullLoad`: `bool`
+- `UseLogminerReader`: `bool`
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 - `SecretsManagerOracleAsmAccessRoleArn`: `str`
@@ -1954,11 +1962,15 @@ Optional fields:
 - `DdlArtifactsSchema`: `str`
 - `ExecuteTimeout`: `int`
 - `FailTasksOnLobTruncation`: `bool`
+- `HeartbeatEnable`: `bool`
+- `HeartbeatSchema`: `str`
+- `HeartbeatFrequency`: `int`
 - `Password`: `str`
 - `Port`: `int`
 - `ServerName`: `str`
 - `Username`: `str`
 - `SlotName`: `str`
+- `PluginName`: [PluginNameValueType](./literals.md#pluginnamevaluetype)
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 

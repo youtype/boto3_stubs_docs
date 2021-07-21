@@ -177,7 +177,7 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `solutionVersionArn`: `str` *(required)*
-- `minProvisionedTPS`: `int` *(required)*
+- `minProvisionedTPS`: `int`
 - `campaignConfig`:
   [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 

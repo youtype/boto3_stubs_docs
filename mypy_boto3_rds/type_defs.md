@@ -2258,6 +2258,7 @@ Optional fields:
   `List`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
 - `DbiResourceId`: `str`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OriginalSnapshotCreateTime`: `datetime`
 
 ## DBSubnetGroupMessageTypeDef
 

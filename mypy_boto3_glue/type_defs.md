@@ -148,6 +148,7 @@ type annotations stubs module
   - [ErrorDetailTypeDef](#errordetailtypedef)
   - [ErrorDetailsTypeDef](#errordetailstypedef)
   - [EvaluationMetricsTypeDef](#evaluationmetricstypedef)
+  - [EventBatchingConditionTypeDef](#eventbatchingconditiontypedef)
   - [ExecutionPropertyTypeDef](#executionpropertytypedef)
   - [ExportLabelsTaskRunPropertiesTypeDef](#exportlabelstaskrunpropertiestypedef)
   - [FindMatchesMetricsTypeDef](#findmatchesmetricstypedef)
@@ -373,6 +374,7 @@ type annotations stubs module
   - [StartTriggerResponseTypeDef](#starttriggerresponsetypedef)
   - [StartWorkflowRunRequestRequestTypeDef](#startworkflowrunrequestrequesttypedef)
   - [StartWorkflowRunResponseTypeDef](#startworkflowrunresponsetypedef)
+  - [StartingEventBatchConditionTypeDef](#startingeventbatchconditiontypedef)
   - [StopCrawlerRequestRequestTypeDef](#stopcrawlerrequestrequesttypedef)
   - [StopCrawlerScheduleRequestRequestTypeDef](#stopcrawlerschedulerequestrequesttypedef)
   - [StopTriggerRequestRequestTypeDef](#stoptriggerrequestrequesttypedef)
@@ -1776,6 +1778,8 @@ Optional fields:
 - `Description`: `str`
 - `StartOnCreation`: `bool`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `EventBatchingCondition`:
+  [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
 
 ## CreateTriggerResponseTypeDef
 
@@ -2491,6 +2495,20 @@ Optional fields:
 
 - `FindMatchesMetrics`:
   [FindMatchesMetricsTypeDef](./type_defs.md#findmatchesmetricstypedef)
+
+## EventBatchingConditionTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import EventBatchingConditionTypeDef
+```
+
+Required fields:
+
+- `BatchSize`: `int`
+
+Optional fields:
+
+- `BatchWindow`: `int`
 
 ## ExecutionPropertyTypeDef
 
@@ -5557,6 +5575,17 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## StartingEventBatchConditionTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import StartingEventBatchConditionTypeDef
+```
+
+Optional fields:
+
+- `BatchSize`: `int`
+- `BatchWindow`: `int`
+
 ## StopCrawlerRequestRequestTypeDef
 
 ```python
@@ -5912,6 +5941,8 @@ Optional fields:
 - `Schedule`: `str`
 - `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
+- `EventBatchingCondition`:
+  [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
 
 ## TriggerUpdateTypeDef
 
@@ -5926,6 +5957,8 @@ Optional fields:
 - `Schedule`: `str`
 - `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
+- `EventBatchingCondition`:
+  [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -6467,6 +6500,8 @@ Optional fields:
 - `Statistics`:
   [WorkflowRunStatisticsTypeDef](./type_defs.md#workflowrunstatisticstypedef)
 - `Graph`: [WorkflowGraphTypeDef](./type_defs.md#workflowgraphtypedef)
+- `StartingEventBatchCondition`:
+  [StartingEventBatchConditionTypeDef](./type_defs.md#startingeventbatchconditiontypedef)
 
 ## WorkflowTypeDef
 

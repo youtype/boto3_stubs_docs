@@ -9,11 +9,13 @@ type annotations stubs module
 
 - [Literals for boto3 Lightsail module](#literals-for-boto3-lightsail-module)
   - [AccessDirectionType](#accessdirectiontype)
+  - [AccessTypeType](#accesstypetype)
   - [AddOnTypeType](#addontypetype)
   - [AlarmStateType](#alarmstatetype)
   - [AutoSnapshotStatusType](#autosnapshotstatustype)
   - [BehaviorEnumType](#behaviorenumtype)
   - [BlueprintTypeType](#blueprinttypetype)
+  - [BucketMetricNameType](#bucketmetricnametype)
   - [CertificateStatusType](#certificatestatustype)
   - [CloudFormationStackRecordSourceTypeType](#cloudformationstackrecordsourcetypetype)
   - [ComparisonOperatorType](#comparisonoperatortype)
@@ -84,7 +86,9 @@ type annotations stubs module
   - [RelationalDatabaseMetricNameType](#relationaldatabasemetricnametype)
   - [RelationalDatabasePasswordVersionType](#relationaldatabasepasswordversiontype)
   - [RenewalStatusType](#renewalstatustype)
+  - [ResourceBucketAccessType](#resourcebucketaccesstype)
   - [ResourceTypeType](#resourcetypetype)
+  - [StatusTypeType](#statustypetype)
   - [TreatMissingDataType](#treatmissingdatatype)
 
 ## AccessDirectionType
@@ -97,6 +101,17 @@ Values:
 
 - `inbound`
 - `outbound`
+
+## AccessTypeType
+
+```python
+from mypy_boto3_lightsail.literals import AccessTypeType
+```
+
+Values:
+
+- `private`
+- `public`
 
 ## AddOnTypeType
 
@@ -154,6 +169,17 @@ Values:
 
 - `app`
 - `os`
+
+## BucketMetricNameType
+
+```python
+from mypy_boto3_lightsail.literals import BucketMetricNameType
+```
+
+Values:
+
+- `BucketSizeBytes`
+- `NumberOfObjects`
 
 ## CertificateStatusType
 
@@ -958,6 +984,8 @@ Values:
 - `AttachLoadBalancerTlsCertificate`
 - `AttachStaticIp`
 - `CloseInstancePublicPorts`
+- `CreateBucket`
+- `CreateBucketAccessKey`
 - `CreateCertificate`
 - `CreateContactMethod`
 - `CreateContainerService`
@@ -977,6 +1005,8 @@ Values:
 - `CreateRelationalDatabaseFromSnapshot`
 - `CreateRelationalDatabaseSnapshot`
 - `DeleteAlarm`
+- `DeleteBucket`
+- `DeleteBucketAccessKey`
 - `DeleteCertificate`
 - `DeleteContactMethod`
 - `DeleteContainerImage`
@@ -1011,11 +1041,14 @@ Values:
 - `ResetDistributionCache`
 - `SendContactMethodVerification`
 - `SetIpAddressType`
+- `SetResourceAccessForBucket`
 - `StartInstance`
 - `StartRelationalDatabase`
 - `StopInstance`
 - `StopRelationalDatabase`
 - `TestAlarm`
+- `UpdateBucket`
+- `UpdateBucketBundle`
 - `UpdateContainerService`
 - `UpdateDistribution`
 - `UpdateDistributionBundle`
@@ -1097,6 +1130,7 @@ Values:
 - `ap-southeast-2`
 - `ca-central-1`
 - `eu-central-1`
+- `eu-north-1`
 - `eu-west-1`
 - `eu-west-2`
 - `eu-west-3`
@@ -1155,6 +1189,17 @@ Values:
 - `PendingValidation`
 - `Success`
 
+## ResourceBucketAccessType
+
+```python
+from mypy_boto3_lightsail.literals import ResourceBucketAccessType
+```
+
+Values:
+
+- `allow`
+- `deny`
+
 ## ResourceTypeType
 
 ```python
@@ -1164,6 +1209,7 @@ from mypy_boto3_lightsail.literals import ResourceTypeType
 Values:
 
 - `Alarm`
+- `Bucket`
 - `Certificate`
 - `CloudFormationStackRecord`
 - `ContactMethod`
@@ -1182,6 +1228,17 @@ Values:
 - `RelationalDatabase`
 - `RelationalDatabaseSnapshot`
 - `StaticIp`
+
+## StatusTypeType
+
+```python
+from mypy_boto3_lightsail.literals import StatusTypeType
+```
+
+Values:
+
+- `Active`
+- `Inactive`
 
 ## TreatMissingDataType
 

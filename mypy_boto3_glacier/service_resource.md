@@ -61,6 +61,8 @@ Boto3 documentation:
 
 ## Attributes
 
+- `meta`: [GlacierResourceMeta](#glacierresourcemeta)
+
 - `vaults`: [ServiceResourceVaultsCollection](#serviceresourcevaultscollection)
 
 ## Collections

@@ -867,6 +867,7 @@ from mypy_boto3_glue.literals import TriggerTypeType
 Values:
 
 - `CONDITIONAL`
+- `EVENT`
 - `ON_DEMAND`
 - `SCHEDULED`
 

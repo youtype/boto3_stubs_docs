@@ -93,8 +93,9 @@ Returns `bool`.
 
 ### create_event_integration
 
-The Amazon AppIntegrations APIs are in preview release and are subject to
-change.
+Creates an EventIntegration, given a specified name, description, and a
+reference to an Amazon EventBridge bus in your account and a partner event
+source that pushes events to that bus.
 
 Type annotations for `boto3.client("appintegrations").create_event_integration`
 method.
@@ -120,8 +121,7 @@ Returns
 
 ### delete_event_integration
 
-The Amazon AppIntegrations APIs are in preview release and are subject to
-change.
+Deletes the specified existing event integration.
 
 Type annotations for `boto3.client("appintegrations").delete_event_integration`
 method.
@@ -159,8 +159,7 @@ Returns `str`.
 
 ### get_event_integration
 
-The Amazon AppIntegrations APIs are in preview release and are subject to
-change.
+Return information about the event integration.
 
 Type annotations for `boto3.client("appintegrations").get_event_integration`
 method.
@@ -180,8 +179,7 @@ Returns
 
 ### list_event_integration_associations
 
-The Amazon AppIntegrations APIs are in preview release and are subject to
-change.
+Returns a paginated list of event integration associations in the account.
 
 Type annotations for
 `boto3.client("appintegrations").list_event_integration_associations` method.
@@ -203,8 +201,7 @@ Returns
 
 ### list_event_integrations
 
-The Amazon AppIntegrations APIs are in preview release and are subject to
-change.
+Returns a paginated list of event integrations in the account.
 
 Type annotations for `boto3.client("appintegrations").list_event_integrations`
 method.
@@ -225,8 +222,7 @@ Returns
 
 ### list_tags_for_resource
 
-The Amazon AppIntegrations APIs are in preview release and are subject to
-change.
+Lists the tags for the specified resource.
 
 Type annotations for `boto3.client("appintegrations").list_tags_for_resource`
 method.
@@ -246,8 +242,7 @@ Returns
 
 ### tag_resource
 
-The Amazon AppIntegrations APIs are in preview release and are subject to
-change.
+Adds the specified tags to the specified resource.
 
 Type annotations for `boto3.client("appintegrations").tag_resource` method.
 
@@ -266,8 +261,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-The Amazon AppIntegrations APIs are in preview release and are subject to
-change.
+Removes the specified tags from the specified resource.
 
 Type annotations for `boto3.client("appintegrations").untag_resource` method.
 
@@ -286,8 +280,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_event_integration
 
-The Amazon AppIntegrations APIs are in preview release and are subject to
-change.
+Updates the description of an event integration.
 
 Type annotations for `boto3.client("appintegrations").update_event_integration`
 method.

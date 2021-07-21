@@ -407,10 +407,10 @@ Required fields:
 
 - `name`: `str`
 - `solutionVersionArn`: `str`
-- `minProvisionedTPS`: `int`
 
 Optional fields:
 
+- `minProvisionedTPS`: `int`
 - `campaignConfig`:
   [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 

@@ -8,10 +8,22 @@ type annotations stubs module
 [mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 - [Literals for boto3 HealthLake module](#literals-for-boto3-healthlake-module)
+  - [CmkTypeType](#cmktypetype)
   - [DatastoreStatusType](#datastorestatustype)
   - [FHIRVersionType](#fhirversiontype)
   - [JobStatusType](#jobstatustype)
   - [PreloadDataTypeType](#preloaddatatypetype)
+
+## CmkTypeType
+
+```python
+from mypy_boto3_healthlake.literals import CmkTypeType
+```
+
+Values:
+
+- `AWS_OWNED_KMS_KEY`
+- `CUSTOMER_MANAGED_KMS_KEY`
 
 ## DatastoreStatusType
 
@@ -45,6 +57,7 @@ from mypy_boto3_healthlake.literals import JobStatusType
 Values:
 
 - `COMPLETED`
+- `COMPLETED_WITH_ERRORS`
 - `FAILED`
 - `IN_PROGRESS`
 - `SUBMITTED`

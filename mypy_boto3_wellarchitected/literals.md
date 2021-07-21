@@ -8,6 +8,9 @@ type annotations stubs module
 [mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 - [Literals for boto3 WellArchitected module](#literals-for-boto3-wellarchitected-module)
+  - [AnswerReasonType](#answerreasontype)
+  - [ChoiceReasonType](#choicereasontype)
+  - [ChoiceStatusType](#choicestatustype)
   - [DifferenceStatusType](#differencestatustype)
   - [LensStatusType](#lensstatustype)
   - [NotificationTypeType](#notificationtypetype)
@@ -17,6 +20,46 @@ type annotations stubs module
   - [ShareStatusType](#sharestatustype)
   - [WorkloadEnvironmentType](#workloadenvironmenttype)
   - [WorkloadImprovementStatusType](#workloadimprovementstatustype)
+
+## AnswerReasonType
+
+```python
+from mypy_boto3_wellarchitected.literals import AnswerReasonType
+```
+
+Values:
+
+- `ARCHITECTURE_CONSTRAINTS`
+- `BUSINESS_PRIORITIES`
+- `NONE`
+- `OTHER`
+- `OUT_OF_SCOPE`
+
+## ChoiceReasonType
+
+```python
+from mypy_boto3_wellarchitected.literals import ChoiceReasonType
+```
+
+Values:
+
+- `ARCHITECTURE_CONSTRAINTS`
+- `BUSINESS_PRIORITIES`
+- `NONE`
+- `OTHER`
+- `OUT_OF_SCOPE`
+
+## ChoiceStatusType
+
+```python
+from mypy_boto3_wellarchitected.literals import ChoiceStatusType
+```
+
+Values:
+
+- `NOT_APPLICABLE`
+- `SELECTED`
+- `UNSELECTED`
 
 ## DifferenceStatusType
 

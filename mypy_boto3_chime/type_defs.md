@@ -454,6 +454,7 @@ Optional fields:
 - `CreatedTimestamp`: `datetime`
 - `DefaultLicense`: [LicenseType](./literals.md#licensetype)
 - `SupportedLicenses`: `List`\[[LicenseType](./literals.md#licensetype)\]
+- `AccountStatus`: [AccountStatusType](./literals.md#accountstatustype)
 - `SigninDelegateGroups`:
   `List`\[[SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef)\]
 
