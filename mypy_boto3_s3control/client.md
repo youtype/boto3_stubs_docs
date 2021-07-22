@@ -406,7 +406,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_public_access_block
 
-Removes the `PublicAccessBlock` configuration for an AWS account.
+Removes the `PublicAccessBlock` configuration for an account.
 
 Type annotations for `boto3.client("s3control").delete_public_access_block`
 method.
@@ -750,7 +750,7 @@ Returns
 
 ### get_public_access_block
 
-Retrieves the `PublicAccessBlock` configuration for an AWS account.
+Retrieves the `PublicAccessBlock` configuration for an account.
 
 Type annotations for `boto3.client("s3control").get_public_access_block`
 method.
@@ -859,7 +859,7 @@ Returns
 ### list_jobs
 
 Lists current S3 Batch Operations jobs and jobs that have ended within the last
-30 days for the AWS account making the request.
+30 days for the account making the request.
 
 Type annotations for `boto3.client("s3control").list_jobs` method.
 
@@ -1061,7 +1061,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_public_access_block
 
-Creates or modifies the `PublicAccessBlock` configuration for an AWS account.
+Creates or modifies the `PublicAccessBlock` configuration for an account.
 
 Type annotations for `boto3.client("s3control").put_public_access_block`
 method.

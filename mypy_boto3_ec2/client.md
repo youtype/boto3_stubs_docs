@@ -98,6 +98,7 @@ type annotations stubs module
     - [create_spot_datafeed_subscription](#create_spot_datafeed_subscription)
     - [create_store_image_task](#create_store_image_task)
     - [create_subnet](#create_subnet)
+    - [create_subnet_cidr_reservation](#create_subnet_cidr_reservation)
     - [create_tags](#create_tags)
     - [create_traffic_mirror_filter](#create_traffic_mirror_filter)
     - [create_traffic_mirror_filter_rule](#create_traffic_mirror_filter_rule)
@@ -153,6 +154,7 @@ type annotations stubs module
     - [delete_snapshot](#delete_snapshot)
     - [delete_spot_datafeed_subscription](#delete_spot_datafeed_subscription)
     - [delete_subnet](#delete_subnet)
+    - [delete_subnet_cidr_reservation](#delete_subnet_cidr_reservation)
     - [delete_tags](#delete_tags)
     - [delete_traffic_mirror_filter](#delete_traffic_mirror_filter)
     - [delete_traffic_mirror_filter_rule](#delete_traffic_mirror_filter_rule)
@@ -362,6 +364,7 @@ type annotations stubs module
     - [get_password_data](#get_password_data)
     - [get_reserved_instances_exchange_quote](#get_reserved_instances_exchange_quote)
     - [get_serial_console_access_status](#get_serial_console_access_status)
+    - [get_subnet_cidr_reservations](#get_subnet_cidr_reservations)
     - [get_transit_gateway_attachment_propagations](#get_transit_gateway_attachment_propagations)
     - [get_transit_gateway_multicast_domain_associations](#get_transit_gateway_multicast_domain_associations)
     - [get_transit_gateway_prefix_list_references](#get_transit_gateway_prefix_list_references)
@@ -774,6 +777,8 @@ Keyword-only arguments:
 - `NetworkInterfaceId`: `str` *(required)*
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`: `List`\[`str`\]
+- `Ipv6PrefixCount`: `int`
+- `Ipv6Prefixes`: `List`\[`str`\]
 
 Returns
 [AssignIpv6AddressesResultTypeDef](./type_defs.md#assignipv6addressesresulttypedef).
@@ -797,6 +802,8 @@ Keyword-only arguments:
 - `AllowReassignment`: `bool`
 - `PrivateIpAddresses`: `List`\[`str`\]
 - `SecondaryPrivateIpAddressCount`: `int`
+- `Ipv4Prefixes`: `List`\[`str`\]
+- `Ipv4PrefixCount`: `int`
 
 Returns
 [AssignPrivateIpAddressesResultTypeDef](./type_defs.md#assignprivateipaddressesresulttypedef).
@@ -2285,6 +2292,12 @@ Keyword-only arguments:
 - `PrivateIpAddresses`:
   `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
+- `Ipv4Prefixes`:
+  `List`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
+- `Ipv4PrefixCount`: `int`
+- `Ipv6Prefixes`:
+  `List`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
+- `Ipv6PrefixCount`: `int`
 - `InterfaceType`:
   [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
 - `TagSpecifications`:
@@ -2614,8 +2627,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CidrBlock`: `str` *(required)*
 - `VpcId`: `str` *(required)*
+- `CidrBlock`: `str` *(required)*
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
@@ -2625,6 +2638,34 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns [CreateSubnetResultTypeDef](./type_defs.md#createsubnetresulttypedef).
+
+### create_subnet_cidr_reservation
+
+Creates a subnet CIDR reservation.
+
+Type annotations for `boto3.client("ec2").create_subnet_cidr_reservation`
+method.
+
+Boto3 documentation:
+[EC2.Client.create_subnet_cidr_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_subnet_cidr_reservation)
+
+Arguments mapping described in
+[CreateSubnetCidrReservationRequestRequestTypeDef](./type_defs.md#createsubnetcidrreservationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SubnetId`: `str` *(required)*
+- `Cidr`: `str` *(required)*
+- `ReservationType`:
+  [SubnetCidrReservationTypeType](./literals.md#subnetcidrreservationtypetype)
+  *(required)*
+- `TagSpecifications`:
+  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `Description`: `str`
+- `DryRun`: `bool`
+
+Returns
+[CreateSubnetCidrReservationResultTypeDef](./type_defs.md#createsubnetcidrreservationresulttypedef).
 
 ### create_tags
 
@@ -3849,6 +3890,27 @@ Keyword-only arguments:
 
 - `SubnetId`: `str` *(required)*
 - `DryRun`: `bool`
+
+### delete_subnet_cidr_reservation
+
+Deletes a subnet CIDR reservation.
+
+Type annotations for `boto3.client("ec2").delete_subnet_cidr_reservation`
+method.
+
+Boto3 documentation:
+[EC2.Client.delete_subnet_cidr_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.delete_subnet_cidr_reservation)
+
+Arguments mapping described in
+[DeleteSubnetCidrReservationRequestRequestTypeDef](./type_defs.md#deletesubnetcidrreservationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SubnetCidrReservationId`: `str` *(required)*
+- `DryRun`: `bool`
+
+Returns
+[DeleteSubnetCidrReservationResultTypeDef](./type_defs.md#deletesubnetcidrreservationresulttypedef).
 
 ### delete_tags
 
@@ -8553,6 +8615,29 @@ Keyword-only arguments:
 Returns
 [GetSerialConsoleAccessStatusResultTypeDef](./type_defs.md#getserialconsoleaccessstatusresulttypedef).
 
+### get_subnet_cidr_reservations
+
+Gets information about the subnet CIDR reservations.
+
+Type annotations for `boto3.client("ec2").get_subnet_cidr_reservations` method.
+
+Boto3 documentation:
+[EC2.Client.get_subnet_cidr_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_subnet_cidr_reservations)
+
+Arguments mapping described in
+[GetSubnetCidrReservationsRequestRequestTypeDef](./type_defs.md#getsubnetcidrreservationsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SubnetId`: `str` *(required)*
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetSubnetCidrReservationsResultTypeDef](./type_defs.md#getsubnetcidrreservationsresulttypedef).
+
 ### get_transit_gateway_attachment_propagations
 
 Lists the route tables to which the specified resource attachment propagates
@@ -11228,7 +11313,8 @@ Returns
 
 ### unassign_ipv6_addresses
 
-Unassigns one or more IPv6 addresses from a network interface.
+Unassigns one or more IPv6 addresses IPv4 Prefix Delegation prefixes from a
+network interface.
 
 Type annotations for `boto3.client("ec2").unassign_ipv6_addresses` method.
 
@@ -11241,14 +11327,16 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
-- `Ipv6Addresses`: `List`\[`str`\] *(required)*
+- `Ipv6Addresses`: `List`\[`str`\]
+- `Ipv6Prefixes`: `List`\[`str`\]
 
 Returns
 [UnassignIpv6AddressesResultTypeDef](./type_defs.md#unassignipv6addressesresulttypedef).
 
 ### unassign_private_ip_addresses
 
-Unassigns one or more secondary private IP addresses from a network interface.
+Unassigns one or more secondary private IP addresses, or IPv4 Prefix Delegation
+prefixes from a network interface.
 
 Type annotations for `boto3.client("ec2").unassign_private_ip_addresses`
 method.
@@ -11262,7 +11350,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `NetworkInterfaceId`: `str` *(required)*
-- `PrivateIpAddresses`: `List`\[`str`\] *(required)*
+- `PrivateIpAddresses`: `List`\[`str`\]
+- `Ipv4Prefixes`: `List`\[`str`\]
 
 ### unmonitor_instances
 

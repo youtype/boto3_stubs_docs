@@ -1087,6 +1087,12 @@ Keyword-only arguments:
 - `PrivateIpAddresses`:
   `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
+- `Ipv4Prefixes`:
+  `List`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
+- `Ipv4PrefixCount`: `int`
+- `Ipv6Prefixes`:
+  `List`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
+- `Ipv6PrefixCount`: `int`
 - `InterfaceType`:
   [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
 - `TagSpecifications`:
@@ -1199,8 +1205,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CidrBlock`: `str` *(required)*
 - `VpcId`: `str` *(required)*
+- `CidrBlock`: `str` *(required)*
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
@@ -2956,6 +2962,8 @@ Boto3 documentation:
 - `private_dns_name`: `str`
 - `private_ip_address`: `str`
 - `private_ip_addresses`: `List`\[`Any`\]
+- `ipv4_prefixes`: `List`\[`Any`\]
+- `ipv6_prefixes`: `List`\[`Any`\]
 - `requester_id`: `str`
 - `requester_managed`: `bool`
 - `source_dest_check`: `bool`
@@ -2989,6 +2997,8 @@ Keyword-only arguments:
 - `AllowReassignment`: `bool`
 - `PrivateIpAddresses`: `List`\[`str`\]
 - `SecondaryPrivateIpAddressCount`: `int`
+- `Ipv4Prefixes`: `List`\[`str`\]
+- `Ipv4PrefixCount`: `int`
 
 Returns
 [AssignPrivateIpAddressesResultTypeDef](./type_defs.md#assignprivateipaddressesresulttypedef).
@@ -3163,7 +3173,8 @@ Keyword-only arguments:
 
 #### NetworkInterface.unassign_private_ip_addresses method
 
-Unassigns one or more secondary private IP addresses from a network interface.
+Unassigns one or more secondary private IP addresses, or IPv4 Prefix Delegation
+prefixes from a network interface.
 
 Type annotations for `boto3.resource("ec2").unassign_private_ip_addresses`
 method.
@@ -3176,7 +3187,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `PrivateIpAddresses`: `List`\[`str`\] *(required)*
+- `PrivateIpAddresses`: `List`\[`str`\]
+- `Ipv4Prefixes`: `List`\[`str`\]
 
 ## NetworkInterfaceAssociation
 
@@ -4285,6 +4297,12 @@ Keyword-only arguments:
 - `PrivateIpAddresses`:
   `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
+- `Ipv4Prefixes`:
+  `List`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
+- `Ipv4PrefixCount`: `int`
+- `Ipv6Prefixes`:
+  `List`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
+- `Ipv6PrefixCount`: `int`
 - `InterfaceType`:
   [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
 - `TagSpecifications`:

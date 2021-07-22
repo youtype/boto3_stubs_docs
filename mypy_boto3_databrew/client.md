@@ -190,6 +190,8 @@ Keyword-only arguments:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
+- `Configuration`:
+  [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Timeout`: `int`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
@@ -272,6 +274,8 @@ Keyword-only arguments:
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `DataCatalogOutputs`:
   `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+- `DatabaseOutputs`:
+  `List`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `ProjectName`: `str`
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
@@ -883,6 +887,8 @@ Keyword-only arguments:
 - `OutputLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
+- `Configuration`:
+  [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
 - `EncryptionKeyArn`: `str`
 - `EncryptionMode`: [EncryptionModeType](./literals.md#encryptionmodetype)
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
@@ -960,6 +966,8 @@ Keyword-only arguments:
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `DataCatalogOutputs`:
   `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+- `DatabaseOutputs`:
+  `List`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `Timeout`: `int`
 
 Returns

@@ -20,6 +20,7 @@ type annotations stubs module
   - [AudioChannelMappingTypeDef](#audiochannelmappingtypedef)
   - [AudioCodecSettingsTypeDef](#audiocodecsettingstypedef)
   - [AudioDescriptionTypeDef](#audiodescriptiontypedef)
+  - [AudioHlsRenditionSelectionTypeDef](#audiohlsrenditionselectiontypedef)
   - [AudioLanguageSelectionTypeDef](#audiolanguageselectiontypedef)
   - [AudioNormalizationSettingsTypeDef](#audionormalizationsettingstypedef)
   - [AudioOnlyHlsSettingsTypeDef](#audioonlyhlssettingstypedef)
@@ -312,6 +313,7 @@ type annotations stubs module
   - [VpcOutputSettingsTypeDef](#vpcoutputsettingstypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WavSettingsTypeDef](#wavsettingstypedef)
+  - [WebvttDestinationSettingsTypeDef](#webvttdestinationsettingstypedef)
 
 ## AacSettingsTypeDef
 
@@ -487,6 +489,17 @@ Optional fields:
 - `RemixSettings`: [RemixSettingsTypeDef](./type_defs.md#remixsettingstypedef)
 - `StreamName`: `str`
 
+## AudioHlsRenditionSelectionTypeDef
+
+```python
+from mypy_boto3_medialive.type_defs import AudioHlsRenditionSelectionTypeDef
+```
+
+Required fields:
+
+- `GroupId`: `str`
+- `Name`: `str`
+
 ## AudioLanguageSelectionTypeDef
 
 ```python
@@ -549,6 +562,8 @@ from mypy_boto3_medialive.type_defs import AudioSelectorSettingsTypeDef
 
 Optional fields:
 
+- `AudioHlsRenditionSelection`:
+  [AudioHlsRenditionSelectionTypeDef](./type_defs.md#audiohlsrenditionselectiontypedef)
 - `AudioLanguageSelection`:
   [AudioLanguageSelectionTypeDef](./type_defs.md#audiolanguageselectiontypedef)
 - `AudioPidSelection`:
@@ -935,7 +950,8 @@ Optional fields:
 - `TeletextDestinationSettings`: `Dict`\[`str`, `Any`\]
 - `TtmlDestinationSettings`:
   [TtmlDestinationSettingsTypeDef](./type_defs.md#ttmldestinationsettingstypedef)
-- `WebvttDestinationSettings`: `Dict`\[`str`, `Any`\]
+- `WebvttDestinationSettings`:
+  [WebvttDestinationSettingsTypeDef](./type_defs.md#webvttdestinationsettingstypedef)
 
 ## CaptionLanguageMappingTypeDef
 
@@ -5130,3 +5146,14 @@ Optional fields:
 - `BitDepth`: `float`
 - `CodingMode`: [WavCodingModeType](./literals.md#wavcodingmodetype)
 - `SampleRate`: `float`
+
+## WebvttDestinationSettingsTypeDef
+
+```python
+from mypy_boto3_medialive.type_defs import WebvttDestinationSettingsTypeDef
+```
+
+Optional fields:
+
+- `StyleControl`:
+  [WebvttDestinationStyleControlType](./literals.md#webvttdestinationstylecontroltype)

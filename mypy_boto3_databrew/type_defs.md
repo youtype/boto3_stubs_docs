@@ -10,6 +10,8 @@ type annotations stubs module
 - [Typed dictionaries for boto3 GlueDataBrew module](#typed-dictionaries-for-boto3-gluedatabrew-module)
   - [BatchDeleteRecipeVersionRequestRequestTypeDef](#batchdeleterecipeversionrequestrequesttypedef)
   - [BatchDeleteRecipeVersionResponseTypeDef](#batchdeleterecipeversionresponsetypedef)
+  - [ColumnSelectorTypeDef](#columnselectortypedef)
+  - [ColumnStatisticsConfigurationTypeDef](#columnstatisticsconfigurationtypedef)
   - [ConditionExpressionTypeDef](#conditionexpressiontypedef)
   - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
   - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
@@ -28,6 +30,7 @@ type annotations stubs module
   - [DataCatalogInputDefinitionTypeDef](#datacataloginputdefinitiontypedef)
   - [DataCatalogOutputTypeDef](#datacatalogoutputtypedef)
   - [DatabaseInputDefinitionTypeDef](#databaseinputdefinitiontypedef)
+  - [DatabaseOutputTypeDef](#databaseoutputtypedef)
   - [DatabaseTableOutputOptionsTypeDef](#databasetableoutputoptionstypedef)
   - [DatasetParameterTypeDef](#datasetparametertypedef)
   - [DatasetTypeDef](#datasettypedef)
@@ -83,6 +86,7 @@ type annotations stubs module
   - [OutputTypeDef](#outputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PathOptionsTypeDef](#pathoptionstypedef)
+  - [ProfileConfigurationTypeDef](#profileconfigurationtypedef)
   - [ProjectTypeDef](#projecttypedef)
   - [PublishRecipeRequestRequestTypeDef](#publishreciperequestrequesttypedef)
   - [PublishRecipeResponseTypeDef](#publishreciperesponsetypedef)
@@ -102,6 +106,8 @@ type annotations stubs module
   - [StartJobRunResponseTypeDef](#startjobrunresponsetypedef)
   - [StartProjectSessionRequestRequestTypeDef](#startprojectsessionrequestrequesttypedef)
   - [StartProjectSessionResponseTypeDef](#startprojectsessionresponsetypedef)
+  - [StatisticOverrideTypeDef](#statisticoverridetypedef)
+  - [StatisticsConfigurationTypeDef](#statisticsconfigurationtypedef)
   - [StopJobRunRequestRequestTypeDef](#stopjobrunrequestrequesttypedef)
   - [StopJobRunResponseTypeDef](#stopjobrunresponsetypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
@@ -144,6 +150,33 @@ Required fields:
   `List`\[[RecipeVersionErrorDetailTypeDef](./type_defs.md#recipeversionerrordetailtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ColumnSelectorTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import ColumnSelectorTypeDef
+```
+
+Optional fields:
+
+- `Regex`: `str`
+- `Name`: `str`
+
+## ColumnStatisticsConfigurationTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import ColumnStatisticsConfigurationTypeDef
+```
+
+Required fields:
+
+- `Statistics`:
+  [StatisticsConfigurationTypeDef](./type_defs.md#statisticsconfigurationtypedef)
+
+Optional fields:
+
+- `Selectors`:
+  `List`\[[ColumnSelectorTypeDef](./type_defs.md#columnselectortypedef)\]
 
 ## ConditionExpressionTypeDef
 
@@ -210,6 +243,8 @@ Optional fields:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
+- `Configuration`:
+  [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Timeout`: `int`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
@@ -278,6 +313,8 @@ Optional fields:
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `DataCatalogOutputs`:
   `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+- `DatabaseOutputs`:
+  `List`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `ProjectName`: `str`
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
@@ -423,6 +460,23 @@ Required fields:
 Optional fields:
 
 - `TempDirectory`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+## DatabaseOutputTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import DatabaseOutputTypeDef
+```
+
+Required fields:
+
+- `GlueConnectionName`: `str`
+- `DatabaseOptions`:
+  [DatabaseTableOutputOptionsTypeDef](./type_defs.md#databasetableoutputoptionstypedef)
+
+Optional fields:
+
+- `DatabaseOutputMode`: `Literal['NEW_TABLE']` (see
+  [DatabaseOutputModeType](./literals.md#databaseoutputmodetype))
 
 ## DatabaseTableOutputOptionsTypeDef
 
@@ -674,7 +728,11 @@ Required fields:
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `DataCatalogOutputs`:
   `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+- `DatabaseOutputs`:
+  `List`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `ProjectName`: `str`
+- `ProfileConfiguration`:
+  [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
 - `ResourceArn`: `str`
@@ -710,6 +768,8 @@ Required fields:
 - `ErrorMessage`: `str`
 - `ExecutionTime`: `int`
 - `JobName`: `str`
+- `ProfileConfiguration`:
+  [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
 - `RunId`: `str`
 - `State`: [JobRunStateType](./literals.md#jobrunstatetype)
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
@@ -717,6 +777,8 @@ Required fields:
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `DataCatalogOutputs`:
   `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+- `DatabaseOutputs`:
+  `List`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
 - `StartedBy`: `str`
@@ -914,6 +976,8 @@ Optional fields:
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `DataCatalogOutputs`:
   `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+- `DatabaseOutputs`:
+  `List`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
 - `StartedBy`: `str`
@@ -958,6 +1022,8 @@ Optional fields:
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `DataCatalogOutputs`:
   `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+- `DatabaseOutputs`:
+  `List`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `ProjectName`: `str`
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
@@ -1234,6 +1300,21 @@ Optional fields:
 - `FilesLimit`: [FilesLimitTypeDef](./type_defs.md#fileslimittypedef)
 - `Parameters`: `Dict`\[`str`,
   [DatasetParameterTypeDef](./type_defs.md#datasetparametertypedef)\]
+
+## ProfileConfigurationTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import ProfileConfigurationTypeDef
+```
+
+Optional fields:
+
+- `DatasetStatisticsConfiguration`:
+  [StatisticsConfigurationTypeDef](./type_defs.md#statisticsconfigurationtypedef)
+- `ProfileColumns`:
+  `List`\[[ColumnSelectorTypeDef](./type_defs.md#columnselectortypedef)\]
+- `ColumnStatisticsConfigurations`:
+  `List`\[[ColumnStatisticsConfigurationTypeDef](./type_defs.md#columnstatisticsconfigurationtypedef)\]
 
 ## ProjectTypeDef
 
@@ -1522,6 +1603,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## StatisticOverrideTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import StatisticOverrideTypeDef
+```
+
+Required fields:
+
+- `Statistic`: `str`
+- `Parameters`: `Dict`\[`str`, `str`\]
+
+## StatisticsConfigurationTypeDef
+
+```python
+from mypy_boto3_databrew.type_defs import StatisticsConfigurationTypeDef
+```
+
+Optional fields:
+
+- `IncludedStatistics`: `List`\[`str`\]
+- `Overrides`:
+  `List`\[[StatisticOverrideTypeDef](./type_defs.md#statisticoverridetypedef)\]
+
 ## StopJobRunRequestRequestTypeDef
 
 ```python
@@ -1610,6 +1714,8 @@ Required fields:
 
 Optional fields:
 
+- `Configuration`:
+  [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
 - `EncryptionKeyArn`: `str`
 - `EncryptionMode`: [EncryptionModeType](./literals.md#encryptionmodetype)
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
@@ -1679,6 +1785,8 @@ Optional fields:
 - `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `DataCatalogOutputs`:
   `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+- `DatabaseOutputs`:
+  `List`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `Timeout`: `int`
 
 ## UpdateRecipeJobResponseTypeDef

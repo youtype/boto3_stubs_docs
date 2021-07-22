@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Literals for boto3 GlueDataBrew module](#literals-for-boto3-gluedatabrew-module)
   - [CompressionFormatType](#compressionformattype)
+  - [DatabaseOutputModeType](#databaseoutputmodetype)
   - [EncryptionModeType](#encryptionmodetype)
   - [InputFormatType](#inputformattype)
   - [JobRunStateType](#jobrunstatetype)
@@ -47,6 +48,16 @@ Values:
 - `SNAPPY`
 - `ZLIB`
 - `ZSTD`
+
+## DatabaseOutputModeType
+
+```python
+from mypy_boto3_databrew.literals import DatabaseOutputModeType
+```
+
+Values:
+
+- `NEW_TABLE`
 
 ## EncryptionModeType
 

@@ -310,6 +310,7 @@ type annotations stubs module
   - [StatusTypeType](#statustypetype)
   - [SubnetAvailableWaiterName](#subnetavailablewaitername)
   - [SubnetCidrBlockStateCodeType](#subnetcidrblockstatecodetype)
+  - [SubnetCidrReservationTypeType](#subnetcidrreservationtypetype)
   - [SubnetStateType](#subnetstatetype)
   - [SummaryStatusType](#summarystatustype)
   - [SystemStatusOkWaiterName](#systemstatusokwaitername)
@@ -4230,6 +4231,17 @@ Values:
 - `disassociating`
 - `failed`
 - `failing`
+
+## SubnetCidrReservationTypeType
+
+```python
+from mypy_boto3_ec2.literals import SubnetCidrReservationTypeType
+```
+
+Values:
+
+- `explicit`
+- `prefix`
 
 ## SubnetStateType
 

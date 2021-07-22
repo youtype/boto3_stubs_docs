@@ -118,6 +118,7 @@ from mypy_boto3_databrew.literals import CompressionFormatType, ...
 ```
 
 - [CompressionFormatType](./literals.md#compressionformattype)
+- [DatabaseOutputModeType](./literals.md#databaseoutputmodetype)
 - [EncryptionModeType](./literals.md#encryptionmodetype)
 - [InputFormatType](./literals.md#inputformattype)
 - [JobRunStateType](./literals.md#jobrunstatetype)
@@ -152,6 +153,8 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequest
 
 - [BatchDeleteRecipeVersionRequestRequestTypeDef](./type_defs.md#batchdeleterecipeversionrequestrequesttypedef)
 - [BatchDeleteRecipeVersionResponseTypeDef](./type_defs.md#batchdeleterecipeversionresponsetypedef)
+- [ColumnSelectorTypeDef](./type_defs.md#columnselectortypedef)
+- [ColumnStatisticsConfigurationTypeDef](./type_defs.md#columnstatisticsconfigurationtypedef)
 - [ConditionExpressionTypeDef](./type_defs.md#conditionexpressiontypedef)
 - [CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef)
 - [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef)
@@ -170,6 +173,7 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequest
 - [DataCatalogInputDefinitionTypeDef](./type_defs.md#datacataloginputdefinitiontypedef)
 - [DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)
 - [DatabaseInputDefinitionTypeDef](./type_defs.md#databaseinputdefinitiontypedef)
+- [DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)
 - [DatabaseTableOutputOptionsTypeDef](./type_defs.md#databasetableoutputoptionstypedef)
 - [DatasetParameterTypeDef](./type_defs.md#datasetparametertypedef)
 - [DatasetTypeDef](./type_defs.md#datasettypedef)
@@ -225,6 +229,7 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequest
 - [OutputTypeDef](./type_defs.md#outputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
+- [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
 - [ProjectTypeDef](./type_defs.md#projecttypedef)
 - [PublishRecipeRequestRequestTypeDef](./type_defs.md#publishreciperequestrequesttypedef)
 - [PublishRecipeResponseTypeDef](./type_defs.md#publishreciperesponsetypedef)
@@ -244,6 +249,8 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequest
 - [StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef)
 - [StartProjectSessionRequestRequestTypeDef](./type_defs.md#startprojectsessionrequestrequesttypedef)
 - [StartProjectSessionResponseTypeDef](./type_defs.md#startprojectsessionresponsetypedef)
+- [StatisticOverrideTypeDef](./type_defs.md#statisticoverridetypedef)
+- [StatisticsConfigurationTypeDef](./type_defs.md#statisticsconfigurationtypedef)
 - [StopJobRunRequestRequestTypeDef](./type_defs.md#stopjobrunrequestrequesttypedef)
 - [StopJobRunResponseTypeDef](./type_defs.md#stopjobrunresponsetypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)

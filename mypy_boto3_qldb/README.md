@@ -73,9 +73,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_qldb.literals import ErrorCauseType, ...
+from mypy_boto3_qldb.literals import EncryptionStatusType, ...
 ```
 
+- [EncryptionStatusType](./literals.md#encryptionstatustype)
 - [ErrorCauseType](./literals.md#errorcausetype)
 - [ExportStatusType](./literals.md#exportstatustype)
 - [LedgerStateType](./literals.md#ledgerstatetype)
@@ -116,6 +117,7 @@ from mypy_boto3_qldb.type_defs import CancelJournalKinesisStreamRequestRequestTy
 - [JournalKinesisStreamDescriptionTypeDef](./type_defs.md#journalkinesisstreamdescriptiontypedef)
 - [JournalS3ExportDescriptionTypeDef](./type_defs.md#journals3exportdescriptiontypedef)
 - [KinesisConfigurationTypeDef](./type_defs.md#kinesisconfigurationtypedef)
+- [LedgerEncryptionDescriptionTypeDef](./type_defs.md#ledgerencryptiondescriptiontypedef)
 - [LedgerSummaryTypeDef](./type_defs.md#ledgersummarytypedef)
 - [ListJournalKinesisStreamsForLedgerRequestRequestTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerrequestrequesttypedef)
 - [ListJournalKinesisStreamsForLedgerResponseTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerresponsetypedef)

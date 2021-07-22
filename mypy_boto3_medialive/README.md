@@ -435,6 +435,7 @@ from mypy_boto3_medialive.literals import AacCodingModeType, ...
 - [VideoSelectorColorSpaceType](./literals.md#videoselectorcolorspacetype)
 - [VideoSelectorColorSpaceUsageType](./literals.md#videoselectorcolorspaceusagetype)
 - [WavCodingModeType](./literals.md#wavcodingmodetype)
+- [WebvttDestinationStyleControlType](./literals.md#webvttdestinationstylecontroltype)
 
 ## Typed dictionaries
 
@@ -459,6 +460,7 @@ from mypy_boto3_medialive.type_defs import AacSettingsTypeDef, ...
 - [AudioChannelMappingTypeDef](./type_defs.md#audiochannelmappingtypedef)
 - [AudioCodecSettingsTypeDef](./type_defs.md#audiocodecsettingstypedef)
 - [AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef)
+- [AudioHlsRenditionSelectionTypeDef](./type_defs.md#audiohlsrenditionselectiontypedef)
 - [AudioLanguageSelectionTypeDef](./type_defs.md#audiolanguageselectiontypedef)
 - [AudioNormalizationSettingsTypeDef](./type_defs.md#audionormalizationsettingstypedef)
 - [AudioOnlyHlsSettingsTypeDef](./type_defs.md#audioonlyhlssettingstypedef)
@@ -751,3 +753,4 @@ from mypy_boto3_medialive.type_defs import AacSettingsTypeDef, ...
 - [VpcOutputSettingsTypeDef](./type_defs.md#vpcoutputsettingstypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [WavSettingsTypeDef](./type_defs.md#wavsettingstypedef)
+- [WebvttDestinationSettingsTypeDef](./type_defs.md#webvttdestinationsettingstypedef)

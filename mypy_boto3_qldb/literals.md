@@ -8,12 +8,25 @@ type annotations stubs module
 [mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
 - [Literals for boto3 QLDB module](#literals-for-boto3-qldb-module)
+  - [EncryptionStatusType](#encryptionstatustype)
   - [ErrorCauseType](#errorcausetype)
   - [ExportStatusType](#exportstatustype)
   - [LedgerStateType](#ledgerstatetype)
   - [PermissionsModeType](#permissionsmodetype)
   - [S3ObjectEncryptionTypeType](#s3objectencryptiontypetype)
   - [StreamStatusType](#streamstatustype)
+
+## EncryptionStatusType
+
+```python
+from mypy_boto3_qldb.literals import EncryptionStatusType
+```
+
+Values:
+
+- `ENABLED`
+- `KMS_KEY_INACCESSIBLE`
+- `UPDATING`
 
 ## ErrorCauseType
 

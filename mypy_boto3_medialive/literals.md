@@ -278,6 +278,7 @@ type annotations stubs module
   - [VideoSelectorColorSpaceType](#videoselectorcolorspacetype)
   - [VideoSelectorColorSpaceUsageType](#videoselectorcolorspaceusagetype)
   - [WavCodingModeType](#wavcodingmodetype)
+  - [WebvttDestinationStyleControlType](#webvttdestinationstylecontroltype)
 
 ## AacCodingModeType
 
@@ -3436,3 +3437,14 @@ Values:
 - `CODING_MODE_2_0`
 - `CODING_MODE_4_0`
 - `CODING_MODE_8_0`
+
+## WebvttDestinationStyleControlType
+
+```python
+from mypy_boto3_medialive.literals import WebvttDestinationStyleControlType
+```
+
+Values:
+
+- `NO_STYLE_DATA`
+- `PASSTHROUGH`
