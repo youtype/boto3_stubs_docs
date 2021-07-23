@@ -398,7 +398,8 @@ Returns
 
 ### delete_invitations
 
-Deletes invitations received by the AWS account to become a member account.
+Deletes invitations received by the Amazon Web Services account to become a
+member account.
 
 Type annotations for `boto3.client("securityhub").delete_invitations` method.
 
@@ -870,8 +871,8 @@ Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 
 ### invite_members
 
-Invites other AWS accounts to become member accounts for the Security Hub
-administrator account that the invitation is sent from.
+Invites other Amazon Web Services accounts to become member accounts for the
+Security Hub administrator account that the invitation is sent from.
 
 Type annotations for `boto3.client("securityhub").invite_members` method.
 
@@ -912,8 +913,8 @@ Returns
 
 ### list_invitations
 
-Lists all Security Hub membership invitations that were sent to the current AWS
-account.
+Lists all Security Hub membership invitations that were sent to the current
+Amazon Web Services account.
 
 Type annotations for `boto3.client("securityhub").list_invitations` method.
 

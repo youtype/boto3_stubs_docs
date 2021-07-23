@@ -98,6 +98,17 @@ type annotations stubs module
   - [AwsEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationDetailsTypeDef](#awsecsclusterconfigurationexecutecommandconfigurationlogconfigurationdetailstypedef)
   - [AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef](#awsecsclusterdefaultcapacityproviderstrategydetailstypedef)
   - [AwsEcsClusterDetailsTypeDef](#awsecsclusterdetailstypedef)
+  - [AwsEcsServiceCapacityProviderStrategyDetailsTypeDef](#awsecsservicecapacityproviderstrategydetailstypedef)
+  - [AwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerDetailsTypeDef](#awsecsservicedeploymentconfigurationdeploymentcircuitbreakerdetailstypedef)
+  - [AwsEcsServiceDeploymentConfigurationDetailsTypeDef](#awsecsservicedeploymentconfigurationdetailstypedef)
+  - [AwsEcsServiceDeploymentControllerDetailsTypeDef](#awsecsservicedeploymentcontrollerdetailstypedef)
+  - [AwsEcsServiceDetailsTypeDef](#awsecsservicedetailstypedef)
+  - [AwsEcsServiceLoadBalancersDetailsTypeDef](#awsecsserviceloadbalancersdetailstypedef)
+  - [AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef](#awsecsservicenetworkconfigurationawsvpcconfigurationdetailstypedef)
+  - [AwsEcsServiceNetworkConfigurationDetailsTypeDef](#awsecsservicenetworkconfigurationdetailstypedef)
+  - [AwsEcsServicePlacementConstraintsDetailsTypeDef](#awsecsserviceplacementconstraintsdetailstypedef)
+  - [AwsEcsServicePlacementStrategiesDetailsTypeDef](#awsecsserviceplacementstrategiesdetailstypedef)
+  - [AwsEcsServiceServiceRegistriesDetailsTypeDef](#awsecsserviceserviceregistriesdetailstypedef)
   - [AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsdependsondetailstypedef)
   - [AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsdetailstypedef)
   - [AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef](#awsecstaskdefinitioncontainerdefinitionsenvironmentdetailstypedef)
@@ -135,6 +146,8 @@ type annotations stubs module
   - [AwsElasticBeanstalkEnvironmentTierTypeDef](#awselasticbeanstalkenvironmenttiertypedef)
   - [AwsElasticsearchDomainDetailsTypeDef](#awselasticsearchdomaindetailstypedef)
   - [AwsElasticsearchDomainDomainEndpointOptionsTypeDef](#awselasticsearchdomaindomainendpointoptionstypedef)
+  - [AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef](#awselasticsearchdomainelasticsearchclusterconfigdetailstypedef)
+  - [AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef](#awselasticsearchdomainelasticsearchclusterconfigzoneawarenessconfigdetailstypedef)
   - [AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef](#awselasticsearchdomainencryptionatrestoptionstypedef)
   - [AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](#awselasticsearchdomainlogpublishingoptionslogconfigtypedef)
   - [AwsElasticsearchDomainLogPublishingOptionsTypeDef](#awselasticsearchdomainlogpublishingoptionstypedef)
@@ -202,6 +215,7 @@ type annotations stubs module
   - [AwsRdsDbSubnetGroupSubnetAvailabilityZoneTypeDef](#awsrdsdbsubnetgroupsubnetavailabilityzonetypedef)
   - [AwsRdsDbSubnetGroupSubnetTypeDef](#awsrdsdbsubnetgroupsubnettypedef)
   - [AwsRdsDbSubnetGroupTypeDef](#awsrdsdbsubnetgrouptypedef)
+  - [AwsRdsEventSubscriptionDetailsTypeDef](#awsrdseventsubscriptiondetailstypedef)
   - [AwsRdsPendingCloudWatchLogsExportsTypeDef](#awsrdspendingcloudwatchlogsexportstypedef)
   - [AwsRedshiftClusterClusterNodeTypeDef](#awsredshiftclusterclusternodetypedef)
   - [AwsRedshiftClusterClusterParameterGroupTypeDef](#awsredshiftclusterclusterparametergrouptypedef)
@@ -1706,6 +1720,162 @@ Optional fields:
 - `DefaultCapacityProviderStrategy`:
   `List`\[[AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef](./type_defs.md#awsecsclusterdefaultcapacityproviderstrategydetailstypedef)\]
 
+## AwsEcsServiceCapacityProviderStrategyDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceCapacityProviderStrategyDetailsTypeDef
+```
+
+Optional fields:
+
+- `Base`: `int`
+- `CapacityProvider`: `str`
+- `Weight`: `int`
+
+## AwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerDetailsTypeDef
+```
+
+Optional fields:
+
+- `Enable`: `bool`
+- `Rollback`: `bool`
+
+## AwsEcsServiceDeploymentConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceDeploymentConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `DeploymentCircuitBreaker`:
+  [AwsEcsServiceDeploymentConfigurationDeploymentCircuitBreakerDetailsTypeDef](./type_defs.md#awsecsservicedeploymentconfigurationdeploymentcircuitbreakerdetailstypedef)
+- `MaximumPercent`: `int`
+- `MinimumHealthyPercent`: `int`
+
+## AwsEcsServiceDeploymentControllerDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceDeploymentControllerDetailsTypeDef
+```
+
+Optional fields:
+
+- `Type`: `str`
+
+## AwsEcsServiceDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceDetailsTypeDef
+```
+
+Optional fields:
+
+- `CapacityProviderStrategy`:
+  `List`\[[AwsEcsServiceCapacityProviderStrategyDetailsTypeDef](./type_defs.md#awsecsservicecapacityproviderstrategydetailstypedef)\]
+- `Cluster`: `str`
+- `DeploymentConfiguration`:
+  [AwsEcsServiceDeploymentConfigurationDetailsTypeDef](./type_defs.md#awsecsservicedeploymentconfigurationdetailstypedef)
+- `DeploymentController`:
+  [AwsEcsServiceDeploymentControllerDetailsTypeDef](./type_defs.md#awsecsservicedeploymentcontrollerdetailstypedef)
+- `DesiredCount`: `int`
+- `EnableEcsManagedTags`: `bool`
+- `EnableExecuteCommand`: `bool`
+- `HealthCheckGracePeriodSeconds`: `int`
+- `LaunchType`: `str`
+- `LoadBalancers`:
+  `List`\[[AwsEcsServiceLoadBalancersDetailsTypeDef](./type_defs.md#awsecsserviceloadbalancersdetailstypedef)\]
+- `Name`: `str`
+- `NetworkConfiguration`:
+  [AwsEcsServiceNetworkConfigurationDetailsTypeDef](./type_defs.md#awsecsservicenetworkconfigurationdetailstypedef)
+- `PlacementConstraints`:
+  `List`\[[AwsEcsServicePlacementConstraintsDetailsTypeDef](./type_defs.md#awsecsserviceplacementconstraintsdetailstypedef)\]
+- `PlacementStrategies`:
+  `List`\[[AwsEcsServicePlacementStrategiesDetailsTypeDef](./type_defs.md#awsecsserviceplacementstrategiesdetailstypedef)\]
+- `PlatformVersion`: `str`
+- `PropagateTags`: `str`
+- `Role`: `str`
+- `SchedulingStrategy`: `str`
+- `ServiceArn`: `str`
+- `ServiceName`: `str`
+- `ServiceRegistries`:
+  `List`\[[AwsEcsServiceServiceRegistriesDetailsTypeDef](./type_defs.md#awsecsserviceserviceregistriesdetailstypedef)\]
+- `TaskDefinition`: `str`
+
+## AwsEcsServiceLoadBalancersDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceLoadBalancersDetailsTypeDef
+```
+
+Optional fields:
+
+- `ContainerName`: `str`
+- `ContainerPort`: `int`
+- `LoadBalancerName`: `str`
+- `TargetGroupArn`: `str`
+
+## AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `AssignPublicIp`: `str`
+- `SecurityGroups`: `List`\[`str`\]
+- `Subnets`: `List`\[`str`\]
+
+## AwsEcsServiceNetworkConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceNetworkConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `AwsVpcConfiguration`:
+  [AwsEcsServiceNetworkConfigurationAwsVpcConfigurationDetailsTypeDef](./type_defs.md#awsecsservicenetworkconfigurationawsvpcconfigurationdetailstypedef)
+
+## AwsEcsServicePlacementConstraintsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsServicePlacementConstraintsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Expression`: `str`
+- `Type`: `str`
+
+## AwsEcsServicePlacementStrategiesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsServicePlacementStrategiesDetailsTypeDef
+```
+
+Optional fields:
+
+- `Field`: `str`
+- `Type`: `str`
+
+## AwsEcsServiceServiceRegistriesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcsServiceServiceRegistriesDetailsTypeDef
+```
+
+Optional fields:
+
+- `ContainerName`: `str`
+- `ContainerPort`: `int`
+- `Port`: `int`
+- `RegistryArn`: `str`
+
 ## AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef
 
 ```python
@@ -2227,6 +2397,8 @@ Optional fields:
 - `Endpoint`: `str`
 - `Endpoints`: `Dict`\[`str`, `str`\]
 - `ElasticsearchVersion`: `str`
+- `ElasticsearchClusterConfig`:
+  [AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef](./type_defs.md#awselasticsearchdomainelasticsearchclusterconfigdetailstypedef)
 - `EncryptionAtRestOptions`:
   [AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef](./type_defs.md#awselasticsearchdomainencryptionatrestoptionstypedef)
 - `LogPublishingOptions`:
@@ -2248,6 +2420,33 @@ Optional fields:
 
 - `EnforceHTTPS`: `bool`
 - `TLSSecurityPolicy`: `str`
+
+## AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef
+```
+
+Optional fields:
+
+- `DedicatedMasterCount`: `int`
+- `DedicatedMasterEnabled`: `bool`
+- `DedicatedMasterType`: `str`
+- `InstanceCount`: `int`
+- `InstanceType`: `str`
+- `ZoneAwarenessConfig`:
+  [AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef](./type_defs.md#awselasticsearchdomainelasticsearchclusterconfigzoneawarenessconfigdetailstypedef)
+- `ZoneAwarenessEnabled`: `bool`
+
+## AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetailsTypeDef
+```
+
+Optional fields:
+
+- `AvailabilityZoneCount`: `int`
 
 ## AwsElasticsearchDomainEncryptionAtRestOptionsTypeDef
 
@@ -2282,6 +2481,8 @@ Optional fields:
 - `IndexSlowLogs`:
   [AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionslogconfigtypedef)
 - `SearchSlowLogs`:
+  [AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionslogconfigtypedef)
+- `AuditLogs`:
   [AwsElasticsearchDomainLogPublishingOptionsLogConfigTypeDef](./type_defs.md#awselasticsearchdomainlogpublishingoptionslogconfigtypedef)
 
 ## AwsElasticsearchDomainNodeToNodeEncryptionOptionsTypeDef
@@ -3305,6 +3506,25 @@ Optional fields:
   `List`\[[AwsRdsDbSubnetGroupSubnetTypeDef](./type_defs.md#awsrdsdbsubnetgroupsubnettypedef)\]
 - `DbSubnetGroupArn`: `str`
 
+## AwsRdsEventSubscriptionDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsRdsEventSubscriptionDetailsTypeDef
+```
+
+Optional fields:
+
+- `CustSubscriptionId`: `str`
+- `CustomerAwsId`: `str`
+- `Enabled`: `bool`
+- `EventCategoriesList`: `List`\[`str`\]
+- `EventSubscriptionArn`: `str`
+- `SnsTopicArn`: `str`
+- `SourceIdsList`: `List`\[`str`\]
+- `SourceType`: `str`
+- `Status`: `str`
+- `SubscriptionCreationTime`: `str`
+
 ## AwsRdsPendingCloudWatchLogsExportsTypeDef
 
 ```python
@@ -3807,6 +4027,7 @@ Optional fields:
 - `Id`: `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `GeneratorId`:
   `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+- `Region`: `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `Type`: `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `FirstObservedAt`:
   `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
@@ -3926,10 +4147,14 @@ Optional fields:
   `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsIamAccessKeyUserName`:
   `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+- `ResourceAwsIamAccessKeyPrincipalName`:
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsIamAccessKeyStatus`:
   `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsIamAccessKeyCreatedAt`:
   `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+- `ResourceAwsIamUserUserName`:
+  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceContainerName`:
   `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceContainerImageId`:
@@ -4009,6 +4234,9 @@ Required fields:
 
 Optional fields:
 
+- `ProductName`: `str`
+- `CompanyName`: `str`
+- `Region`: `str`
 - `Types`: `List`\[`str`\]
 - `FirstObservedAt`: `str`
 - `LastObservedAt`: `str`
@@ -5807,6 +6035,10 @@ Optional fields:
 - `Container`:
   [ContainerDetailsTypeDef](./type_defs.md#containerdetailstypedef)
 - `Other`: `Dict`\[`str`, `str`\]
+- `AwsRdsEventSubscription`:
+  [AwsRdsEventSubscriptionDetailsTypeDef](./type_defs.md#awsrdseventsubscriptiondetailstypedef)
+- `AwsEcsService`:
+  [AwsEcsServiceDetailsTypeDef](./type_defs.md#awsecsservicedetailstypedef)
 
 ## ResourceTypeDef
 

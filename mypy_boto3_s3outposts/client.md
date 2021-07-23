@@ -86,8 +86,8 @@ Returns `bool`.
 
 ### create_endpoint
 
-S3 on Outposts access points simplify managing data access at scale for shared
-datasets in Amazon S3 on Outposts.
+Amazon S3 on Outposts Access Points simplify managing data access at scale for
+shared datasets in S3 on Outposts.
 
 Type annotations for `boto3.client("s3outposts").create_endpoint` method.
 
@@ -102,14 +102,16 @@ Keyword-only arguments:
 - `OutpostId`: `str` *(required)*
 - `SubnetId`: `str` *(required)*
 - `SecurityGroupId`: `str` *(required)*
+- `AccessType`: [EndpointAccessTypeType](./literals.md#endpointaccesstypetype)
+- `CustomerOwnedIpv4Pool`: `str`
 
 Returns
 [CreateEndpointResultTypeDef](./type_defs.md#createendpointresulttypedef).
 
 ### delete_endpoint
 
-S3 on Outposts access points simplify managing data access at scale for shared
-datasets in Amazon S3 on Outposts.
+Amazon S3 on Outposts Access Points simplify managing data access at scale for
+shared datasets in S3 on Outposts.
 
 Type annotations for `boto3.client("s3outposts").delete_endpoint` method.
 
@@ -145,8 +147,8 @@ Returns `str`.
 
 ### list_endpoints
 
-S3 on Outposts access points simplify managing data access at scale for shared
-datasets in Amazon S3 on Outposts.
+Amazon S3 on Outposts Access Points simplify managing data access at scale for
+shared datasets in S3 on Outposts.
 
 Type annotations for `boto3.client("s3outposts").list_endpoints` method.
 

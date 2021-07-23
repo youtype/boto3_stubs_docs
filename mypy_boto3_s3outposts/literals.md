@@ -8,8 +8,20 @@ type annotations stubs module
 [mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
 - [Literals for boto3 S3Outposts module](#literals-for-boto3-s3outposts-module)
+  - [EndpointAccessTypeType](#endpointaccesstypetype)
   - [EndpointStatusType](#endpointstatustype)
   - [ListEndpointsPaginatorName](#listendpointspaginatorname)
+
+## EndpointAccessTypeType
+
+```python
+from mypy_boto3_s3outposts.literals import EndpointAccessTypeType
+```
+
+Values:
+
+- `CustomerOwnedIp`
+- `Private`
 
 ## EndpointStatusType
 
@@ -19,8 +31,9 @@ from mypy_boto3_s3outposts.literals import EndpointStatusType
 
 Values:
 
-- `AVAILABLE`
-- `PENDING`
+- `Available`
+- `Deleting`
+- `Pending`
 
 ## ListEndpointsPaginatorName
 
