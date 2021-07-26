@@ -977,6 +977,7 @@ Optional fields:
 - `Label`: `str`
 - `ReturnData`: `bool`
 - `Period`: `int`
+- `AccountId`: `str`
 
 ## MetricDataResultTypeDef
 

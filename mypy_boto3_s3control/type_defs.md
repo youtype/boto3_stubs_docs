@@ -176,6 +176,7 @@ Optional fields:
 - `VpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 - `AccessPointArn`: `str`
+- `Alias`: `str`
 
 ## AccountLevelTypeDef
 
@@ -281,6 +282,7 @@ from mypy_boto3_s3control.type_defs import CreateAccessPointResultTypeDef
 Required fields:
 
 - `AccessPointArn`: `str`
+- `Alias`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -699,6 +701,9 @@ Required fields:
 - `PublicAccessBlockConfiguration`:
   [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
 - `CreationDate`: `datetime`
+- `Alias`: `str`
+- `AccessPointArn`: `str`
+- `Endpoints`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

@@ -32,6 +32,7 @@ from mypy_boto3_textract.client import TextractClient
 ### Methods
 
 - [analyze_document](./client.md#analyze_document)
+- [analyze_expense](./client.md#analyze_expense)
 - [can_paginate](./client.md#can_paginate)
 - [detect_document_text](./client.md#detect_document_text)
 - [exceptions](./client.md#exceptions)
@@ -93,6 +94,8 @@ from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestRequestTypeDef, 
 
 - [AnalyzeDocumentRequestRequestTypeDef](./type_defs.md#analyzedocumentrequestrequesttypedef)
 - [AnalyzeDocumentResponseTypeDef](./type_defs.md#analyzedocumentresponsetypedef)
+- [AnalyzeExpenseRequestRequestTypeDef](./type_defs.md#analyzeexpenserequestrequesttypedef)
+- [AnalyzeExpenseResponseTypeDef](./type_defs.md#analyzeexpenseresponsetypedef)
 - [BlockTypeDef](./type_defs.md#blocktypedef)
 - [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - [DetectDocumentTextRequestRequestTypeDef](./type_defs.md#detectdocumenttextrequestrequesttypedef)
@@ -100,6 +103,10 @@ from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestRequestTypeDef, 
 - [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)
 - [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
 - [DocumentTypeDef](./type_defs.md#documenttypedef)
+- [ExpenseDetectionTypeDef](./type_defs.md#expensedetectiontypedef)
+- [ExpenseDocumentTypeDef](./type_defs.md#expensedocumenttypedef)
+- [ExpenseFieldTypeDef](./type_defs.md#expensefieldtypedef)
+- [ExpenseTypeTypeDef](./type_defs.md#expensetypetypedef)
 - [GeometryTypeDef](./type_defs.md#geometrytypedef)
 - [GetDocumentAnalysisRequestRequestTypeDef](./type_defs.md#getdocumentanalysisrequestrequesttypedef)
 - [GetDocumentAnalysisResponseTypeDef](./type_defs.md#getdocumentanalysisresponsetypedef)
@@ -108,6 +115,8 @@ from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestRequestTypeDef, 
 - [HumanLoopActivationOutputTypeDef](./type_defs.md#humanloopactivationoutputtypedef)
 - [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
 - [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
+- [LineItemFieldsTypeDef](./type_defs.md#lineitemfieldstypedef)
+- [LineItemGroupTypeDef](./type_defs.md#lineitemgrouptypedef)
 - [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
 - [PointTypeDef](./type_defs.md#pointtypedef)

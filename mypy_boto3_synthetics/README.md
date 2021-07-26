@@ -81,9 +81,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_synthetics.type_defs import CanaryCodeInputTypeDef, ...
+from mypy_boto3_synthetics.type_defs import BaseScreenshotTypeDef, ...
 ```
 
+- [BaseScreenshotTypeDef](./type_defs.md#basescreenshottypedef)
 - [CanaryCodeInputTypeDef](./type_defs.md#canarycodeinputtypedef)
 - [CanaryCodeOutputTypeDef](./type_defs.md#canarycodeoutputtypedef)
 - [CanaryLastRunTypeDef](./type_defs.md#canarylastruntypedef)
@@ -119,5 +120,7 @@ from mypy_boto3_synthetics.type_defs import CanaryCodeInputTypeDef, ...
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateCanaryRequestRequestTypeDef](./type_defs.md#updatecanaryrequestrequesttypedef)
+- [VisualReferenceInputTypeDef](./type_defs.md#visualreferenceinputtypedef)
+- [VisualReferenceOutputTypeDef](./type_defs.md#visualreferenceoutputtypedef)
 - [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
 - [VpcConfigOutputTypeDef](./type_defs.md#vpcconfigoutputtypedef)

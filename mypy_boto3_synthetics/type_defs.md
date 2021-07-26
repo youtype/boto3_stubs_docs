@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 - [Typed dictionaries for boto3 Synthetics module](#typed-dictionaries-for-boto3-synthetics-module)
+  - [BaseScreenshotTypeDef](#basescreenshottypedef)
   - [CanaryCodeInputTypeDef](#canarycodeinputtypedef)
   - [CanaryCodeOutputTypeDef](#canarycodeoutputtypedef)
   - [CanaryLastRunTypeDef](#canarylastruntypedef)
@@ -43,8 +44,24 @@ type annotations stubs module
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateCanaryRequestRequestTypeDef](#updatecanaryrequestrequesttypedef)
+  - [VisualReferenceInputTypeDef](#visualreferenceinputtypedef)
+  - [VisualReferenceOutputTypeDef](#visualreferenceoutputtypedef)
   - [VpcConfigInputTypeDef](#vpcconfiginputtypedef)
   - [VpcConfigOutputTypeDef](#vpcconfigoutputtypedef)
+
+## BaseScreenshotTypeDef
+
+```python
+from mypy_boto3_synthetics.type_defs import BaseScreenshotTypeDef
+```
+
+Required fields:
+
+- `ScreenshotName`: `str`
+
+Optional fields:
+
+- `IgnoreCoordinates`: `List`\[`str`\]
 
 ## CanaryCodeInputTypeDef
 
@@ -224,6 +241,8 @@ Optional fields:
 - `EngineArn`: `str`
 - `RuntimeVersion`: `str`
 - `VpcConfig`: [VpcConfigOutputTypeDef](./type_defs.md#vpcconfigoutputtypedef)
+- `VisualReference`:
+  [VisualReferenceOutputTypeDef](./type_defs.md#visualreferenceoutputtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateCanaryRequestRequestTypeDef
@@ -510,6 +529,35 @@ Optional fields:
 - `SuccessRetentionPeriodInDays`: `int`
 - `FailureRetentionPeriodInDays`: `int`
 - `VpcConfig`: [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
+- `VisualReference`:
+  [VisualReferenceInputTypeDef](./type_defs.md#visualreferenceinputtypedef)
+
+## VisualReferenceInputTypeDef
+
+```python
+from mypy_boto3_synthetics.type_defs import VisualReferenceInputTypeDef
+```
+
+Required fields:
+
+- `BaseCanaryRunId`: `str`
+
+Optional fields:
+
+- `BaseScreenshots`:
+  `List`\[[BaseScreenshotTypeDef](./type_defs.md#basescreenshottypedef)\]
+
+## VisualReferenceOutputTypeDef
+
+```python
+from mypy_boto3_synthetics.type_defs import VisualReferenceOutputTypeDef
+```
+
+Optional fields:
+
+- `BaseScreenshots`:
+  `List`\[[BaseScreenshotTypeDef](./type_defs.md#basescreenshottypedef)\]
+- `BaseCanaryRunId`: `str`
 
 ## VpcConfigInputTypeDef
 

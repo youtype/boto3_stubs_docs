@@ -385,5 +385,7 @@ Keyword-only arguments:
 - `SuccessRetentionPeriodInDays`: `int`
 - `FailureRetentionPeriodInDays`: `int`
 - `VpcConfig`: [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
+- `VisualReference`:
+  [VisualReferenceInputTypeDef](./type_defs.md#visualreferenceinputtypedef)
 
 Returns `Dict`\[`str`, `Any`\].

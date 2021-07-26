@@ -13,6 +13,7 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [analyze_document](#analyze_document)
+    - [analyze_expense](#analyze_expense)
     - [can_paginate](#can_paginate)
     - [detect_document_text](#detect_document_text)
     - [generate_presigned_url](#generate_presigned_url)
@@ -102,6 +103,25 @@ Keyword-only arguments:
 
 Returns
 [AnalyzeDocumentResponseTypeDef](./type_defs.md#analyzedocumentresponsetypedef).
+
+### analyze_expense
+
+Analyzes an input document for financially related relationships between text.
+
+Type annotations for `boto3.client("textract").analyze_expense` method.
+
+Boto3 documentation:
+[Textract.Client.analyze_expense](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_expense)
+
+Arguments mapping described in
+[AnalyzeExpenseRequestRequestTypeDef](./type_defs.md#analyzeexpenserequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef) *(required)*
+
+Returns
+[AnalyzeExpenseResponseTypeDef](./type_defs.md#analyzeexpenseresponsetypedef).
 
 ### can_paginate
 
