@@ -115,6 +115,8 @@ Arguments for `ListJobsPaginator.paginate` method:
 - `arrayJobId`: `str`
 - `multiNodeJobId`: `str`
 - `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `filters`:
+  `List`\[[KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

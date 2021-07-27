@@ -1266,6 +1266,7 @@ Optional fields:
   [AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef)
 - `InsufficientDataHealthStatus`:
   [InsufficientDataHealthStatusType](./literals.md#insufficientdatahealthstatustype)
+- `RoutingControlArn`: `str`
 
 ## HealthCheckObservationTypeDef
 

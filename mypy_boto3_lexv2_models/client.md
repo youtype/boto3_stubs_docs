@@ -70,6 +70,7 @@ type annotations stubs module
     - [update_resource_policy](#update_resource_policy)
     - [update_slot](#update_slot)
     - [update_slot_type](#update_slot_type)
+    - [get_waiter](#get_waiter)
 
 ## LexModelsV2Client
 
@@ -1467,3 +1468,25 @@ Keyword-only arguments:
 
 Returns
 [UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef).
+
+### get_waiter
+
+Type annotations for `boto3.client("lexv2-models").get_waiter` method with
+overloads.
+
+- `client.get_waiter("bot_alias_available")` ->
+  [BotAliasAvailableWaiter](./waiters.md#botaliasavailablewaiter)
+- `client.get_waiter("bot_available")` ->
+  [BotAvailableWaiter](./waiters.md#botavailablewaiter)
+- `client.get_waiter("bot_export_completed")` ->
+  [BotExportCompletedWaiter](./waiters.md#botexportcompletedwaiter)
+- `client.get_waiter("bot_import_completed")` ->
+  [BotImportCompletedWaiter](./waiters.md#botimportcompletedwaiter)
+- `client.get_waiter("bot_locale_built")` ->
+  [BotLocaleBuiltWaiter](./waiters.md#botlocalebuiltwaiter)
+- `client.get_waiter("bot_locale_created")` ->
+  [BotLocaleCreatedWaiter](./waiters.md#botlocalecreatedwaiter)
+- `client.get_waiter("bot_locale_express_testing_available")` ->
+  [BotLocaleExpressTestingAvailableWaiter](./waiters.md#botlocaleexpresstestingavailablewaiter)
+- `client.get_waiter("bot_version_available")` ->
+  [BotVersionAvailableWaiter](./waiters.md#botversionavailablewaiter)

@@ -93,7 +93,7 @@ Boto3 documentation:
 Arguments for `ListDatabasesPaginator.paginate` method:
 
 - `ClusterIdentifier`: `str` *(required)*
-- `Database`: `str`
+- `Database`: `str` *(required)*
 - `DbUser`: `str`
 - `SecretArn`: `str`
 - `PaginationConfig`:

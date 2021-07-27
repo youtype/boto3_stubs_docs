@@ -48,6 +48,8 @@ type annotations stubs module
   - [DatasetTriggerTypeDef](#datasettriggertypedef)
   - [DatasetTypeDef](#datasettypedef)
   - [DatastoreActivityTypeDef](#datastoreactivitytypedef)
+  - [DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef](#datastoreiotsitewisemultilayerstoragesummarytypedef)
+  - [DatastoreIotSiteWiseMultiLayerStorageTypeDef](#datastoreiotsitewisemultilayerstoragetypedef)
   - [DatastorePartitionTypeDef](#datastorepartitiontypedef)
   - [DatastorePartitionsTypeDef](#datastorepartitionstypedef)
   - [DatastoreStatisticsTypeDef](#datastorestatisticstypedef)
@@ -80,6 +82,8 @@ type annotations stubs module
   - [GetDatasetContentResponseTypeDef](#getdatasetcontentresponsetypedef)
   - [GlueConfigurationTypeDef](#glueconfigurationtypedef)
   - [IotEventsDestinationConfigurationTypeDef](#ioteventsdestinationconfigurationtypedef)
+  - [IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef](#iotsitewisecustomermanageddatastores3storagesummarytypedef)
+  - [IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef](#iotsitewisecustomermanageddatastores3storagetypedef)
   - [LambdaActivityTypeDef](#lambdaactivitytypedef)
   - [LateDataRuleConfigurationTypeDef](#latedataruleconfigurationtypedef)
   - [LateDataRuleTypeDef](#latedataruletypedef)
@@ -705,6 +709,28 @@ Required fields:
 - `name`: `str`
 - `datastoreName`: `str`
 
+## DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef
+
+```python
+from mypy_boto3_iotanalytics.type_defs import DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef
+```
+
+Optional fields:
+
+- `customerManagedS3Storage`:
+  [IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef](./type_defs.md#iotsitewisecustomermanageddatastores3storagesummarytypedef)
+
+## DatastoreIotSiteWiseMultiLayerStorageTypeDef
+
+```python
+from mypy_boto3_iotanalytics.type_defs import DatastoreIotSiteWiseMultiLayerStorageTypeDef
+```
+
+Required fields:
+
+- `customerManagedS3Storage`:
+  [IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef](./type_defs.md#iotsitewisecustomermanageddatastores3storagetypedef)
+
 ## DatastorePartitionTypeDef
 
 ```python
@@ -750,6 +776,8 @@ Optional fields:
 - `serviceManagedS3`: `Dict`\[`str`, `Any`\]
 - `customerManagedS3`:
   [CustomerManagedDatastoreS3StorageSummaryTypeDef](./type_defs.md#customermanageddatastores3storagesummarytypedef)
+- `iotSiteWiseMultiLayerStorage`:
+  [DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef](./type_defs.md#datastoreiotsitewisemultilayerstoragesummarytypedef)
 
 ## DatastoreStorageTypeDef
 
@@ -762,6 +790,8 @@ Optional fields:
 - `serviceManagedS3`: `Dict`\[`str`, `Any`\]
 - `customerManagedS3`:
   [CustomerManagedDatastoreS3StorageTypeDef](./type_defs.md#customermanageddatastores3storagetypedef)
+- `iotSiteWiseMultiLayerStorage`:
+  [DatastoreIotSiteWiseMultiLayerStorageTypeDef](./type_defs.md#datastoreiotsitewisemultilayerstoragetypedef)
 
 ## DatastoreSummaryTypeDef
 
@@ -1115,6 +1145,31 @@ Required fields:
 
 - `inputName`: `str`
 - `roleArn`: `str`
+
+## IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef
+
+```python
+from mypy_boto3_iotanalytics.type_defs import IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef
+```
+
+Optional fields:
+
+- `bucket`: `str`
+- `keyPrefix`: `str`
+
+## IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef
+
+```python
+from mypy_boto3_iotanalytics.type_defs import IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef
+```
+
+Required fields:
+
+- `bucket`: `str`
+
+Optional fields:
+
+- `keyPrefix`: `str`
 
 ## LambdaActivityTypeDef
 

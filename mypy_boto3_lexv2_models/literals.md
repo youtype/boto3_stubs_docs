@@ -8,15 +8,23 @@ type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 - [Literals for boto3 LexModelsV2 module](#literals-for-boto3-lexmodelsv2-module)
+  - [BotAliasAvailableWaiterName](#botaliasavailablewaitername)
   - [BotAliasStatusType](#botaliasstatustype)
+  - [BotAvailableWaiterName](#botavailablewaitername)
+  - [BotExportCompletedWaiterName](#botexportcompletedwaitername)
   - [BotFilterNameType](#botfilternametype)
   - [BotFilterOperatorType](#botfilteroperatortype)
+  - [BotImportCompletedWaiterName](#botimportcompletedwaitername)
+  - [BotLocaleBuiltWaiterName](#botlocalebuiltwaitername)
+  - [BotLocaleCreatedWaiterName](#botlocalecreatedwaitername)
+  - [BotLocaleExpressTestingAvailableWaiterName](#botlocaleexpresstestingavailablewaitername)
   - [BotLocaleFilterNameType](#botlocalefilternametype)
   - [BotLocaleFilterOperatorType](#botlocalefilteroperatortype)
   - [BotLocaleSortAttributeType](#botlocalesortattributetype)
   - [BotLocaleStatusType](#botlocalestatustype)
   - [BotSortAttributeType](#botsortattributetype)
   - [BotStatusType](#botstatustype)
+  - [BotVersionAvailableWaiterName](#botversionavailablewaitername)
   - [BotVersionSortAttributeType](#botversionsortattributetype)
   - [BuiltInIntentSortAttributeType](#builtinintentsortattributetype)
   - [BuiltInSlotTypeSortAttributeType](#builtinslottypesortattributetype)
@@ -45,6 +53,16 @@ type annotations stubs module
   - [SlotValueResolutionStrategyType](#slotvalueresolutionstrategytype)
   - [SortOrderType](#sortordertype)
 
+## BotAliasAvailableWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotAliasAvailableWaiterName
+```
+
+Values:
+
+- `bot_alias_available`
+
 ## BotAliasStatusType
 
 ```python
@@ -57,6 +75,26 @@ Values:
 - `Creating`
 - `Deleting`
 - `Failed`
+
+## BotAvailableWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotAvailableWaiterName
+```
+
+Values:
+
+- `bot_available`
+
+## BotExportCompletedWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotExportCompletedWaiterName
+```
+
+Values:
+
+- `bot_export_completed`
 
 ## BotFilterNameType
 
@@ -78,6 +116,46 @@ Values:
 
 - `CO`
 - `EQ`
+
+## BotImportCompletedWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotImportCompletedWaiterName
+```
+
+Values:
+
+- `bot_import_completed`
+
+## BotLocaleBuiltWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotLocaleBuiltWaiterName
+```
+
+Values:
+
+- `bot_locale_built`
+
+## BotLocaleCreatedWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotLocaleCreatedWaiterName
+```
+
+Values:
+
+- `bot_locale_created`
+
+## BotLocaleExpressTestingAvailableWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotLocaleExpressTestingAvailableWaiterName
+```
+
+Values:
+
+- `bot_locale_express_testing_available`
 
 ## BotLocaleFilterNameType
 
@@ -152,6 +230,16 @@ Values:
 - `Importing`
 - `Inactive`
 - `Versioning`
+
+## BotVersionAvailableWaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import BotVersionAvailableWaiterName
+```
+
+Values:
+
+- `bot_version_available`
 
 ## BotVersionSortAttributeType
 

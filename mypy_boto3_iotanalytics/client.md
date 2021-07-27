@@ -160,7 +160,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_channel
 
-Creates a channel.
+Used to create a channel.
 
 Type annotations for `boto3.client("iotanalytics").create_channel` method.
 
@@ -184,7 +184,7 @@ Returns
 
 ### create_dataset
 
-Creates a dataset.
+Used to create a dataset.
 
 Type annotations for `boto3.client("iotanalytics").create_dataset` method.
 
@@ -217,8 +217,8 @@ Returns
 
 ### create_dataset_content
 
-Creates the content of a data set by applying a `queryAction` (a SQL query) or
-a `containerAction` (executing a containerized application).
+Creates the content of a dataset by applying a `queryAction` (a SQL query) or a
+`containerAction` (executing a containerized application).
 
 Type annotations for `boto3.client("iotanalytics").create_dataset_content`
 method.
@@ -431,7 +431,7 @@ Returns
 
 ### describe_logging_options
 
-Retrieves the current settings of the AWS IoT Analytics logging options.
+Retrieves the current settings of the IoT Analytics logging options.
 
 Type annotations for `boto3.client("iotanalytics").describe_logging_options`
 method.
@@ -482,7 +482,7 @@ Returns `str`.
 
 ### get_dataset_content
 
-Retrieves the contents of a data set as presigned URIs.
+Retrieves the contents of a dataset as presigned URIs.
 
 Type annotations for `boto3.client("iotanalytics").get_dataset_content` method.
 
@@ -522,7 +522,7 @@ Returns
 
 ### list_dataset_contents
 
-Lists information about data set contents that have been created.
+Lists information about dataset contents that have been created.
 
 Type annotations for `boto3.client("iotanalytics").list_dataset_contents`
 method.
@@ -546,7 +546,7 @@ Returns
 
 ### list_datasets
 
-Retrieves information about data sets.
+Retrieves information about datasets.
 
 Type annotations for `boto3.client("iotanalytics").list_datasets` method.
 
@@ -626,7 +626,7 @@ Returns
 
 ### put_logging_options
 
-Sets or updates the AWS IoT Analytics logging options.
+Sets or updates the IoT Analytics logging options.
 
 Type annotations for `boto3.client("iotanalytics").put_logging_options` method.
 
@@ -752,7 +752,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_channel
 
-Updates the settings of a channel.
+Used to update the settings of a channel.
 
 Type annotations for `boto3.client("iotanalytics").update_channel` method.
 
@@ -772,7 +772,7 @@ Keyword-only arguments:
 
 ### update_dataset
 
-Updates the settings of a data set.
+Updates the settings of a dataset.
 
 Type annotations for `boto3.client("iotanalytics").update_dataset` method.
 
@@ -801,7 +801,7 @@ Keyword-only arguments:
 
 ### update_datastore
 
-Updates the settings of a data store.
+Used to update the settings of a data store.
 
 Type annotations for `boto3.client("iotanalytics").update_datastore` method.
 

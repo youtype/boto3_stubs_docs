@@ -166,6 +166,7 @@ from mypy_boto3_batch.type_defs import ArrayPropertiesDetailTypeDef, ...
 - [JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)
 - [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
 - [KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)
+- [KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)
 - [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - [LinuxParametersTypeDef](./type_defs.md#linuxparameterstypedef)
 - [ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef)

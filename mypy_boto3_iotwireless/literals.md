@@ -157,6 +157,7 @@ from mypy_boto3_iotwireless.literals import WirelessDeviceIdTypeType
 Values:
 
 - `DevEui`
+- `SidewalkManufacturingSn`
 - `ThingName`
 - `WirelessDeviceId`
 

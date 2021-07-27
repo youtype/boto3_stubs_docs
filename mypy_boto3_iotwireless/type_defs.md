@@ -1556,6 +1556,7 @@ from mypy_boto3_iotwireless.type_defs import SidewalkDeviceTypeDef
 
 Optional fields:
 
+- `AmazonId`: `str`
 - `SidewalkId`: `str`
 - `SidewalkManufacturingSn`: `str`
 - `DeviceCertificates`:

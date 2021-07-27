@@ -195,6 +195,7 @@ type annotations stubs module
   - [UpdateSlotTypeResponseTypeDef](#updateslottyperesponsetypedef)
   - [VoiceSettingsTypeDef](#voicesettingstypedef)
   - [WaitAndContinueSpecificationTypeDef](#waitandcontinuespecificationtypedef)
+  - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 ## AudioLogDestinationTypeDef
 
@@ -3102,3 +3103,14 @@ Optional fields:
 
 - `stillWaitingResponse`:
   [StillWaitingResponseSpecificationTypeDef](./type_defs.md#stillwaitingresponsespecificationtypedef)
+
+## WaiterConfigTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import WaiterConfigTypeDef
+```
+
+Optional fields:
+
+- `Delay`: `int`
+- `MaxAttempts`: `int`

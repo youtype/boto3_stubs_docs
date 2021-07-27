@@ -669,8 +669,7 @@ Returns
 
 ### get_log_levels_by_resource_types
 
-Returns current default log-levels, or log levels by resource types, could be
-for wireless device log options or wireless gateway log options.
+Returns current default log levels or log levels by resource types.
 
 Type annotations for
 `boto3.client("iotwireless").get_log_levels_by_resource_types` method.
@@ -704,8 +703,8 @@ Returns
 
 ### get_resource_log_level
 
-Fetches the log-level override if any for a given resource-ID and
-resource-type, coulde be a wireless device or a wireless gateway.
+Fetches the log-level override, if any, for a given resource-ID and resource-
+type.
 
 Type annotations for `boto3.client("iotwireless").get_resource_log_level`
 method.
@@ -1103,8 +1102,7 @@ Returns
 
 ### put_resource_log_level
 
-Sets the log-level override for a resource-ID and resource-type, could be a
-wireless gateway or a wireless device.
+Sets the log-level override for a resource-ID and resource-type.
 
 Type annotations for `boto3.client("iotwireless").put_resource_log_level`
 method.
@@ -1125,8 +1123,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### reset_all_resource_log_levels
 
-Remove log-level overrides if any for all resources (both wireless devices and
-wireless gateways).
+Removes the log-level overrides for all resources; both wireless devices and
+wireless gateways.
 
 Type annotations for
 `boto3.client("iotwireless").reset_all_resource_log_levels` method.
@@ -1138,8 +1136,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### reset_resource_log_level
 
-Remove log-level override if any for a specific resource-ID and resource-type,
-could be a wireless device or a wireless gateway.
+Removes the log-level override, if any, for a specific resource-ID and
+resource- type.
 
 Type annotations for `boto3.client("iotwireless").reset_resource_log_level`
 method.
@@ -1262,8 +1260,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_log_levels_by_resource_types
 
-Set default log level, or log levels by resource types, could be for wireless
-device log options or wireless gateways log options.
+Set default log level, or log levels by resource types.
 
 Type annotations for
 `boto3.client("iotwireless").update_log_levels_by_resource_types` method.

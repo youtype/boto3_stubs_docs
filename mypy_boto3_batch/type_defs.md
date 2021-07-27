@@ -51,6 +51,7 @@ type annotations stubs module
   - [JobSummaryTypeDef](#jobsummarytypedef)
   - [JobTimeoutTypeDef](#jobtimeouttypedef)
   - [KeyValuePairTypeDef](#keyvaluepairtypedef)
+  - [KeyValuesPairTypeDef](#keyvaluespairtypedef)
   - [LaunchTemplateSpecificationTypeDef](#launchtemplatespecificationtypedef)
   - [LinuxParametersTypeDef](#linuxparameterstypedef)
   - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
@@ -764,6 +765,7 @@ Optional fields:
   [ArrayPropertiesSummaryTypeDef](./type_defs.md#arraypropertiessummarytypedef)
 - `nodeProperties`:
   [NodePropertiesSummaryTypeDef](./type_defs.md#nodepropertiessummarytypedef)
+- `jobDefinition`: `str`
 
 ## JobTimeoutTypeDef
 
@@ -785,6 +787,17 @@ Optional fields:
 
 - `name`: `str`
 - `value`: `str`
+
+## KeyValuesPairTypeDef
+
+```python
+from mypy_boto3_batch.type_defs import KeyValuesPairTypeDef
+```
+
+Optional fields:
+
+- `name`: `str`
+- `values`: `List`\[`str`\]
 
 ## LaunchTemplateSpecificationTypeDef
 
@@ -827,6 +840,8 @@ Optional fields:
 - `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `filters`:
+  `List`\[[KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)\]
 
 ## ListJobsResponseTypeDef
 

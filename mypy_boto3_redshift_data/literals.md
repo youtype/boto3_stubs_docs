@@ -14,6 +14,7 @@ type annotations stubs module
   - [ListSchemasPaginatorName](#listschemaspaginatorname)
   - [ListStatementsPaginatorName](#liststatementspaginatorname)
   - [ListTablesPaginatorName](#listtablespaginatorname)
+  - [StatementStatusStringType](#statementstatusstringtype)
   - [StatusStringType](#statusstringtype)
 
 ## DescribeTablePaginatorName
@@ -75,6 +76,21 @@ from mypy_boto3_redshift_data.literals import ListTablesPaginatorName
 Values:
 
 - `list_tables`
+
+## StatementStatusStringType
+
+```python
+from mypy_boto3_redshift_data.literals import StatementStatusStringType
+```
+
+Values:
+
+- `ABORTED`
+- `FAILED`
+- `FINISHED`
+- `PICKED`
+- `STARTED`
+- `SUBMITTED`
 
 ## StatusStringType
 

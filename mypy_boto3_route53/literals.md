@@ -149,6 +149,7 @@ Values:
 - `HTTP_STR_MATCH`
 - `HTTPS`
 - `HTTPS_STR_MATCH`
+- `RECOVERY_CONTROL`
 - `TCP`
 
 ## HostedZoneLimitTypeType

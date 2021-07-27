@@ -19,6 +19,8 @@ type annotations stubs module
   - [AnalysisSourceTemplateTypeDef](#analysissourcetemplatetypedef)
   - [AnalysisSummaryTypeDef](#analysissummarytypedef)
   - [AnalysisTypeDef](#analysistypedef)
+  - [AnonymousUserDashboardEmbeddingConfigurationTypeDef](#anonymoususerdashboardembeddingconfigurationtypedef)
+  - [AnonymousUserEmbeddingExperienceConfigurationTypeDef](#anonymoususerembeddingexperienceconfigurationtypedef)
   - [AthenaParametersTypeDef](#athenaparameterstypedef)
   - [AuroraParametersTypeDef](#auroraparameterstypedef)
   - [AuroraPostgreSqlParametersTypeDef](#aurorapostgresqlparameterstypedef)
@@ -181,6 +183,10 @@ type annotations stubs module
   - [FolderSearchFilterTypeDef](#foldersearchfiltertypedef)
   - [FolderSummaryTypeDef](#foldersummarytypedef)
   - [FolderTypeDef](#foldertypedef)
+  - [GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef](#generateembedurlforanonymoususerrequestrequesttypedef)
+  - [GenerateEmbedUrlForAnonymousUserResponseTypeDef](#generateembedurlforanonymoususerresponsetypedef)
+  - [GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef](#generateembedurlforregistereduserrequestrequesttypedef)
+  - [GenerateEmbedUrlForRegisteredUserResponseTypeDef](#generateembedurlforregistereduserresponsetypedef)
   - [GeoSpatialColumnGroupTypeDef](#geospatialcolumngrouptypedef)
   - [GetDashboardEmbedUrlRequestRequestTypeDef](#getdashboardembedurlrequestrequesttypedef)
   - [GetDashboardEmbedUrlResponseTypeDef](#getdashboardembedurlresponsetypedef)
@@ -263,6 +269,9 @@ type annotations stubs module
   - [RedshiftParametersTypeDef](#redshiftparameterstypedef)
   - [RegisterUserRequestRequestTypeDef](#registeruserrequestrequesttypedef)
   - [RegisterUserResponseTypeDef](#registeruserresponsetypedef)
+  - [RegisteredUserDashboardEmbeddingConfigurationTypeDef](#registereduserdashboardembeddingconfigurationtypedef)
+  - [RegisteredUserEmbeddingExperienceConfigurationTypeDef](#registereduserembeddingexperienceconfigurationtypedef)
+  - [RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef](#registereduserquicksightconsoleembeddingconfigurationtypedef)
   - [RelationalTableTypeDef](#relationaltabletypedef)
   - [RenameColumnOperationTypeDef](#renamecolumnoperationtypedef)
   - [ResourcePermissionTypeDef](#resourcepermissiontypedef)
@@ -271,6 +280,8 @@ type annotations stubs module
   - [RestoreAnalysisResponseTypeDef](#restoreanalysisresponsetypedef)
   - [RowInfoTypeDef](#rowinfotypedef)
   - [RowLevelPermissionDataSetTypeDef](#rowlevelpermissiondatasettypedef)
+  - [RowLevelPermissionTagConfigurationTypeDef](#rowlevelpermissiontagconfigurationtypedef)
+  - [RowLevelPermissionTagRuleTypeDef](#rowlevelpermissiontagruletypedef)
   - [S3ParametersTypeDef](#s3parameterstypedef)
   - [S3SourceTypeDef](#s3sourcetypedef)
   - [SearchAnalysesRequestRequestTypeDef](#searchanalysesrequestrequesttypedef)
@@ -280,6 +291,7 @@ type annotations stubs module
   - [SearchFoldersRequestRequestTypeDef](#searchfoldersrequestrequesttypedef)
   - [SearchFoldersResponseTypeDef](#searchfoldersresponsetypedef)
   - [ServiceNowParametersTypeDef](#servicenowparameterstypedef)
+  - [SessionTagTypeDef](#sessiontagtypedef)
   - [SheetControlsOptionTypeDef](#sheetcontrolsoptiontypedef)
   - [SheetStyleTypeDef](#sheetstyletypedef)
   - [SheetTypeDef](#sheettypedef)
@@ -501,6 +513,27 @@ Optional fields:
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 - `Sheets`: `List`\[[SheetTypeDef](./type_defs.md#sheettypedef)\]
+
+## AnonymousUserDashboardEmbeddingConfigurationTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import AnonymousUserDashboardEmbeddingConfigurationTypeDef
+```
+
+Required fields:
+
+- `InitialDashboardId`: `str`
+
+## AnonymousUserEmbeddingExperienceConfigurationTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import AnonymousUserEmbeddingExperienceConfigurationTypeDef
+```
+
+Optional fields:
+
+- `Dashboard`:
+  [AnonymousUserDashboardEmbeddingConfigurationTypeDef](./type_defs.md#anonymoususerdashboardembeddingconfigurationtypedef)
 
 ## AthenaParametersTypeDef
 
@@ -842,6 +875,8 @@ Optional fields:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
+- `RowLevelPermissionTagConfiguration`:
+  [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -1486,6 +1521,7 @@ Optional fields:
 - `ImportMode`: [DataSetImportModeType](./literals.md#datasetimportmodetype)
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
+- `RowLevelPermissionTagConfigurationApplied`: `bool`
 - `ColumnLevelPermissionRulesApplied`: `bool`
 
 ## DataSetTypeDef
@@ -1515,6 +1551,8 @@ Optional fields:
   [FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef)\]
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
+- `RowLevelPermissionTagConfiguration`:
+  [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 
@@ -2851,6 +2889,71 @@ Optional fields:
 - `CreatedTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 
+## GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AwsAccountId`: `str`
+- `Namespace`: `str`
+- `AuthorizedResourceArns`: `List`\[`str`\]
+- `ExperienceConfiguration`:
+  [AnonymousUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#anonymoususerembeddingexperienceconfigurationtypedef)
+
+Optional fields:
+
+- `SessionLifetimeInMinutes`: `int`
+- `SessionTags`:
+  `List`\[[SessionTagTypeDef](./type_defs.md#sessiontagtypedef)\]
+
+## GenerateEmbedUrlForAnonymousUserResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForAnonymousUserResponseTypeDef
+```
+
+Required fields:
+
+- `EmbedUrl`: `str`
+- `Status`: `int`
+- `RequestId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AwsAccountId`: `str`
+- `UserArn`: `str`
+- `ExperienceConfiguration`:
+  [RegisteredUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#registereduserembeddingexperienceconfigurationtypedef)
+
+Optional fields:
+
+- `SessionLifetimeInMinutes`: `int`
+
+## GenerateEmbedUrlForRegisteredUserResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import GenerateEmbedUrlForRegisteredUserResponseTypeDef
+```
+
+Required fields:
+
+- `EmbedUrl`: `str`
+- `Status`: `int`
+- `RequestId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GeoSpatialColumnGroupTypeDef
 
 ```python
@@ -4060,6 +4163,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## RegisteredUserDashboardEmbeddingConfigurationTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import RegisteredUserDashboardEmbeddingConfigurationTypeDef
+```
+
+Required fields:
+
+- `InitialDashboardId`: `str`
+
+## RegisteredUserEmbeddingExperienceConfigurationTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import RegisteredUserEmbeddingExperienceConfigurationTypeDef
+```
+
+Optional fields:
+
+- `Dashboard`:
+  [RegisteredUserDashboardEmbeddingConfigurationTypeDef](./type_defs.md#registereduserdashboardembeddingconfigurationtypedef)
+- `QuickSightConsole`:
+  [RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef](./type_defs.md#registereduserquicksightconsoleembeddingconfigurationtypedef)
+
+## RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import RegisteredUserQuickSightConsoleEmbeddingConfigurationTypeDef
+```
+
+Optional fields:
+
+- `InitialPath`: `str`
+
 ## RelationalTableTypeDef
 
 ```python
@@ -4168,6 +4304,38 @@ Optional fields:
 - `Namespace`: `str`
 - `FormatVersion`:
   [RowLevelPermissionFormatVersionType](./literals.md#rowlevelpermissionformatversiontype)
+- `Status`: [StatusType](./literals.md#statustype)
+
+## RowLevelPermissionTagConfigurationTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import RowLevelPermissionTagConfigurationTypeDef
+```
+
+Required fields:
+
+- `TagRules`:
+  `List`\[[RowLevelPermissionTagRuleTypeDef](./type_defs.md#rowlevelpermissiontagruletypedef)\]
+
+Optional fields:
+
+- `Status`: [StatusType](./literals.md#statustype)
+
+## RowLevelPermissionTagRuleTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import RowLevelPermissionTagRuleTypeDef
+```
+
+Required fields:
+
+- `TagKey`: `str`
+- `ColumnName`: `str`
+
+Optional fields:
+
+- `TagMultiValueDelimiter`: `str`
+- `MatchAllValue`: `str`
 
 ## S3ParametersTypeDef
 
@@ -4305,6 +4473,17 @@ from mypy_boto3_quicksight.type_defs import ServiceNowParametersTypeDef
 Required fields:
 
 - `SiteBaseUrl`: `str`
+
+## SessionTagTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import SessionTagTypeDef
+```
+
+Required fields:
+
+- `Key`: `str`
+- `Value`: `str`
 
 ## SheetControlsOptionTypeDef
 
@@ -5068,6 +5247,8 @@ Optional fields:
   [FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef)\]
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
+- `RowLevelPermissionTagConfiguration`:
+  [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 

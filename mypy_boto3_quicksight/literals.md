@@ -55,6 +55,7 @@ type annotations stubs module
   - [RowLevelPermissionPolicyType](#rowlevelpermissionpolicytype)
   - [SearchAnalysesPaginatorName](#searchanalysespaginatorname)
   - [SearchDashboardsPaginatorName](#searchdashboardspaginatorname)
+  - [StatusType](#statustype)
   - [TemplateErrorTypeType](#templateerrortypetype)
   - [TextQualifierType](#textqualifiertype)
   - [ThemeErrorTypeType](#themeerrortypetype)
@@ -672,6 +673,17 @@ from mypy_boto3_quicksight.literals import SearchDashboardsPaginatorName
 Values:
 
 - `search_dashboards`
+
+## StatusType
+
+```python
+from mypy_boto3_quicksight.literals import StatusType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
 
 ## TemplateErrorTypeType
 

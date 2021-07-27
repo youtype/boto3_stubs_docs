@@ -99,7 +99,7 @@ Returns `bool`.
 
 ### cancel_job
 
-Cancels a job in an AWS Batch job queue.
+Cancels a job in an Batch job queue.
 
 Type annotations for `boto3.client("batch").cancel_job` method.
 
@@ -118,7 +118,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_compute_environment
 
-Creates an AWS Batch compute environment.
+Creates an Batch compute environment.
 
 Type annotations for `boto3.client("batch").create_compute_environment` method.
 
@@ -143,7 +143,7 @@ Returns
 
 ### create_job_queue
 
-Creates an AWS Batch job queue.
+Creates an Batch job queue.
 
 Type annotations for `boto3.client("batch").create_job_queue` method.
 
@@ -168,7 +168,7 @@ Returns
 
 ### delete_compute_environment
 
-Deletes an AWS Batch compute environment.
+Deletes an Batch compute environment.
 
 Type annotations for `boto3.client("batch").delete_compute_environment` method.
 
@@ -204,7 +204,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### deregister_job_definition
 
-Deregisters an AWS Batch job definition.
+Deregisters an Batch job definition.
 
 Type annotations for `boto3.client("batch").deregister_job_definition` method.
 
@@ -325,7 +325,7 @@ Returns `str`.
 
 ### list_jobs
 
-Returns a list of AWS Batch jobs.
+Returns a list of Batch jobs.
 
 Type annotations for `boto3.client("batch").list_jobs` method.
 
@@ -343,12 +343,14 @@ Keyword-only arguments:
 - `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `filters`:
+  `List`\[[KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)\]
 
 Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
 ### list_tags_for_resource
 
-Lists the tags for an AWS Batch resource.
+Lists the tags for an Batch resource.
 
 Type annotations for `boto3.client("batch").list_tags_for_resource` method.
 
@@ -367,7 +369,7 @@ Returns
 
 ### register_job_definition
 
-Registers an AWS Batch job definition.
+Registers an Batch job definition.
 
 Type annotations for `boto3.client("batch").register_job_definition` method.
 
@@ -399,7 +401,7 @@ Returns
 
 ### submit_job
 
-Submits an AWS Batch job from a job definition.
+Submits an Batch job from a job definition.
 
 Type annotations for `boto3.client("batch").submit_job` method.
 
@@ -469,7 +471,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Deletes specified tags from an AWS Batch resource.
+Deletes specified tags from an Batch resource.
 
 Type annotations for `boto3.client("batch").untag_resource` method.
 
@@ -488,7 +490,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_compute_environment
 
-Updates an AWS Batch compute environment.
+Updates an Batch compute environment.
 
 Type annotations for `boto3.client("batch").update_compute_environment` method.
 

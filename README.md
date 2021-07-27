@@ -880,6 +880,21 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
   service
 
+- [mypy-boto3-route53-recovery-cluster](./mypy_boto3_route53_recovery_cluster)
+  for
+  [Route53RecoveryCluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster)
+  service
+
+- [mypy-boto3-route53-recovery-control-config](./mypy_boto3_route53_recovery_control_config)
+  for
+  [Route53RecoveryControlConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig)
+  service
+
+- [mypy-boto3-route53-recovery-readiness](./mypy_boto3_route53_recovery_readiness)
+  for
+  [Route53RecoveryReadiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness)
+  service
+
 - [mypy-boto3-route53domains](./mypy_boto3_route53domains) for
   [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
   service

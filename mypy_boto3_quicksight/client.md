@@ -71,6 +71,8 @@ type annotations stubs module
     - [describe_theme_alias](#describe_theme_alias)
     - [describe_theme_permissions](#describe_theme_permissions)
     - [describe_user](#describe_user)
+    - [generate_embed_url_for_anonymous_user](#generate_embed_url_for_anonymous_user)
+    - [generate_embed_url_for_registered_user](#generate_embed_url_for_registered_user)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_dashboard_embed_url](#get_dashboard_embed_url)
     - [get_session_embed_url](#get_session_embed_url)
@@ -228,7 +230,7 @@ Returns
 
 ### create_account_customization
 
-Creates Amazon QuickSight customizations the current AWS Region.
+Creates Amazon QuickSight customizations the current Region;.
 
 Type annotations for `boto3.client("quicksight").create_account_customization`
 method.
@@ -343,6 +345,8 @@ Keyword-only arguments:
   `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
+- `RowLevelPermissionTagConfiguration`:
+  [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -553,7 +557,7 @@ Returns
 
 ### create_template
 
-Creates a template from an existing QuickSight analysis or template.
+Creates a template from an existing Amazon QuickSight analysis or template.
 
 Type annotations for `boto3.client("quicksight").create_template` method.
 
@@ -654,8 +658,8 @@ Returns
 
 ### delete_account_customization
 
-Deletes all Amazon QuickSight customizations in this AWS Region for the
-specified AWS account and QuickSight namespace.
+Deletes all Amazon QuickSight customizations in this Region; for the specified
+Amazon Web Services account; and QuickSight namespace.
 
 Type annotations for `boto3.client("quicksight").delete_account_customization`
 method.
@@ -975,7 +979,7 @@ Returns
 ### delete_user
 
 Deletes the Amazon QuickSight user that is associated with the identity of the
-AWS Identity and Access Management (IAM) user or role that's making the call.
+Identity and Access Management (IAM) user or role that's making the call.
 
 Type annotations for `boto3.client("quicksight").delete_user` method.
 
@@ -1017,8 +1021,8 @@ Returns
 
 ### describe_account_customization
 
-Describes the customizations associated with the provided AWS account and
-Amazon QuickSight namespace in an AWS Region.
+Describes the customizations associated with the provided Amazon Web Services
+account; and Amazon QuickSight namespace in an Region;.
 
 Type annotations for
 `boto3.client("quicksight").describe_account_customization` method.
@@ -1041,7 +1045,7 @@ Returns
 ### describe_account_settings
 
 Describes the settings that were used when your QuickSight subscription was
-first created in this AWS account.
+first created in this Amazon Web Services account;.
 
 Type annotations for `boto3.client("quicksight").describe_account_settings`
 method.
@@ -1523,6 +1527,61 @@ Keyword-only arguments:
 Returns
 [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
+### generate_embed_url_for_anonymous_user
+
+Generates an embed URL that you can use to embed an Amazon QuickSight dashboard
+in your website, without having to register any reader users.
+
+Type annotations for
+`boto3.client("quicksight").generate_embed_url_for_anonymous_user` method.
+
+Boto3 documentation:
+[QuickSight.Client.generate_embed_url_for_anonymous_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_embed_url_for_anonymous_user)
+
+Arguments mapping described in
+[GenerateEmbedUrlForAnonymousUserRequestRequestTypeDef](./type_defs.md#generateembedurlforanonymoususerrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `Namespace`: `str` *(required)*
+- `AuthorizedResourceArns`: `List`\[`str`\] *(required)*
+- `ExperienceConfiguration`:
+  [AnonymousUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#anonymoususerembeddingexperienceconfigurationtypedef)
+  *(required)*
+- `SessionLifetimeInMinutes`: `int`
+- `SessionTags`:
+  `List`\[[SessionTagTypeDef](./type_defs.md#sessiontagtypedef)\]
+
+Returns
+[GenerateEmbedUrlForAnonymousUserResponseTypeDef](./type_defs.md#generateembedurlforanonymoususerresponsetypedef).
+
+### generate_embed_url_for_registered_user
+
+Generates an embed URL that you can use to embed an Amazon QuickSight
+experience in your website.
+
+Type annotations for
+`boto3.client("quicksight").generate_embed_url_for_registered_user` method.
+
+Boto3 documentation:
+[QuickSight.Client.generate_embed_url_for_registered_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.generate_embed_url_for_registered_user)
+
+Arguments mapping described in
+[GenerateEmbedUrlForRegisteredUserRequestRequestTypeDef](./type_defs.md#generateembedurlforregistereduserrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `UserArn`: `str` *(required)*
+- `ExperienceConfiguration`:
+  [RegisteredUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#registereduserembeddingexperienceconfigurationtypedef)
+  *(required)*
+- `SessionLifetimeInMinutes`: `int`
+
+Returns
+[GenerateEmbedUrlForRegisteredUserResponseTypeDef](./type_defs.md#generateembedurlforregistereduserresponsetypedef).
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1599,7 +1658,8 @@ Returns
 
 ### list_analyses
 
-Lists Amazon QuickSight analyses that exist in the specified AWS account.
+Lists Amazon QuickSight analyses that exist in the specified Amazon Web
+Services account;.
 
 Type annotations for `boto3.client("quicksight").list_analyses` method.
 
@@ -1643,7 +1703,7 @@ Returns
 
 ### list_dashboards
 
-Lists dashboards in an AWS account.
+Lists dashboards in an Amazon Web Services account;.
 
 Type annotations for `boto3.client("quicksight").list_dashboards` method.
 
@@ -1664,8 +1724,8 @@ Returns
 
 ### list_data_sets
 
-Lists all of the datasets belonging to the current AWS account in an AWS
-Region.
+Lists all of the datasets belonging to the current Amazon Web Services account;
+in an Region;.
 
 Type annotations for `boto3.client("quicksight").list_data_sets` method.
 
@@ -1686,7 +1746,8 @@ Returns
 
 ### list_data_sources
 
-Lists data sources in current AWS Region that belong to this AWS account.
+Lists data sources in current Region; that belong to this Amazon Web Services
+account;.
 
 Type annotations for `boto3.client("quicksight").list_data_sources` method.
 
@@ -1868,7 +1929,7 @@ Returns
 
 ### list_namespaces
 
-Lists the namespaces for the specified AWS account.
+Lists the namespaces for the specified Amazon Web Services account;.
 
 Type annotations for `boto3.client("quicksight").list_namespaces` method.
 
@@ -1998,7 +2059,8 @@ Returns
 
 ### list_theme_versions
 
-Lists all the versions of the themes in the current AWS account.
+Lists all the versions of the themes in the current Amazon Web Services
+account;.
 
 Type annotations for `boto3.client("quicksight").list_theme_versions` method.
 
@@ -2020,7 +2082,7 @@ Returns
 
 ### list_themes
 
-Lists all the themes in the current AWS account.
+Lists all the themes in the current Amazon Web Services account;.
 
 Type annotations for `boto3.client("quicksight").list_themes` method.
 
@@ -2250,7 +2312,7 @@ Returns
 
 ### update_account_customization
 
-Updates Amazon QuickSight customizations the current AWS Region.
+Updates Amazon QuickSight customizations the current Region;.
 
 Type annotations for `boto3.client("quicksight").update_account_customization`
 method.
@@ -2274,7 +2336,7 @@ Returns
 
 ### update_account_settings
 
-Updates the Amazon QuickSight settings in your AWS account.
+Updates the Amazon QuickSight settings in your Amazon Web Services account;.
 
 Type annotations for `boto3.client("quicksight").update_account_settings`
 method.
@@ -2350,7 +2412,7 @@ Returns
 
 ### update_dashboard
 
-Updates a dashboard in an AWS account.
+Updates a dashboard in an Amazon Web Services account;.
 
 Type annotations for `boto3.client("quicksight").update_dashboard` method.
 
@@ -2453,6 +2515,8 @@ Keyword-only arguments:
   [FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef)\]
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
+- `RowLevelPermissionTagConfiguration`:
+  [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 

@@ -15,6 +15,7 @@ pip install mypy-boto3-lexv2-models
   - [LexModelsV2Client](#lexmodelsv2client)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Waiters](#waiters)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
@@ -67,6 +68,7 @@ from mypy_boto3_lexv2_models.client import LexModelsV2Client
 - [describe_slot_type](./client.md#describe_slot_type)
 - [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
+- [get_waiter](./client.md#get_waiter)
 - [list_bot_aliases](./client.md#list_bot_aliases)
 - [list_bot_locales](./client.md#list_bot_locales)
 - [list_bot_versions](./client.md#list_bot_versions)
@@ -104,6 +106,26 @@ LexModelsV2Client [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+## Waiters
+
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("lexv2-models").get_waiter("...")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_lexv2_models.waiters import BotAliasAvailableWaiter, ...
+```
+
+- [BotAliasAvailableWaiter](./waiters.md#botaliasavailablewaiter)
+- [BotAvailableWaiter](./waiters.md#botavailablewaiter)
+- [BotExportCompletedWaiter](./waiters.md#botexportcompletedwaiter)
+- [BotImportCompletedWaiter](./waiters.md#botimportcompletedwaiter)
+- [BotLocaleBuiltWaiter](./waiters.md#botlocalebuiltwaiter)
+- [BotLocaleCreatedWaiter](./waiters.md#botlocalecreatedwaiter)
+- [BotLocaleExpressTestingAvailableWaiter](./waiters.md#botlocaleexpresstestingavailablewaiter)
+- [BotVersionAvailableWaiter](./waiters.md#botversionavailablewaiter)
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -111,18 +133,26 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lexv2_models.literals import BotAliasStatusType, ...
+from mypy_boto3_lexv2_models.literals import BotAliasAvailableWaiterName, ...
 ```
 
+- [BotAliasAvailableWaiterName](./literals.md#botaliasavailablewaitername)
 - [BotAliasStatusType](./literals.md#botaliasstatustype)
+- [BotAvailableWaiterName](./literals.md#botavailablewaitername)
+- [BotExportCompletedWaiterName](./literals.md#botexportcompletedwaitername)
 - [BotFilterNameType](./literals.md#botfilternametype)
 - [BotFilterOperatorType](./literals.md#botfilteroperatortype)
+- [BotImportCompletedWaiterName](./literals.md#botimportcompletedwaitername)
+- [BotLocaleBuiltWaiterName](./literals.md#botlocalebuiltwaitername)
+- [BotLocaleCreatedWaiterName](./literals.md#botlocalecreatedwaitername)
+- [BotLocaleExpressTestingAvailableWaiterName](./literals.md#botlocaleexpresstestingavailablewaitername)
 - [BotLocaleFilterNameType](./literals.md#botlocalefilternametype)
 - [BotLocaleFilterOperatorType](./literals.md#botlocalefilteroperatortype)
 - [BotLocaleSortAttributeType](./literals.md#botlocalesortattributetype)
 - [BotLocaleStatusType](./literals.md#botlocalestatustype)
 - [BotSortAttributeType](./literals.md#botsortattributetype)
 - [BotStatusType](./literals.md#botstatustype)
+- [BotVersionAvailableWaiterName](./literals.md#botversionavailablewaitername)
 - [BotVersionSortAttributeType](./literals.md#botversionsortattributetype)
 - [BuiltInIntentSortAttributeType](./literals.md#builtinintentsortattributetype)
 - [BuiltInSlotTypeSortAttributeType](./literals.md#builtinslottypesortattributetype)
@@ -349,3 +379,4 @@ from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef, ...
 - [UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef)
 - [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
 - [WaitAndContinueSpecificationTypeDef](./type_defs.md#waitandcontinuespecificationtypedef)
+- [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
