@@ -137,8 +137,8 @@ Returns `bool`.
 
 ### create_account_assignment
 
-Assigns access to a principal for a specified AWS account using a specified
-permission set.
+Assigns access to a principal for a specified Amazon Web Services account using
+a specified permission set.
 
 Type annotations for `boto3.client("sso-admin").create_account_assignment`
 method.
@@ -166,7 +166,7 @@ Returns
 ### create_instance_access_control_attribute_configuration
 
 Enables the attributes-based access control (ABAC) feature for the specified
-AWS SSO instance.
+Amazon Web Services SSO instance.
 
 Type annotations for
 `boto3.client("sso-admin").create_instance_access_control_attribute_configuration`
@@ -213,8 +213,8 @@ Returns
 
 ### delete_account_assignment
 
-Deletes a principal's access from a specified AWS account using a specified
-permission set.
+Deletes a principal's access from a specified Amazon Web Services account using
+a specified permission set.
 
 Type annotations for `boto3.client("sso-admin").delete_account_assignment`
 method.
@@ -262,8 +262,8 @@ Returns `Dict`\[`str`, `Any`\].
 ### delete_instance_access_control_attribute_configuration
 
 Disables the attributes-based access control (ABAC) feature for the specified
-AWS SSO instance and deletes all of the attribute mappings that have been
-configured.
+Amazon Web Services SSO instance and deletes all of the attribute mappings that
+have been configured.
 
 Type annotations for
 `boto3.client("sso-admin").delete_instance_access_control_attribute_configuration`
@@ -344,9 +344,9 @@ Returns
 
 ### describe_instance_access_control_attribute_configuration
 
-Returns the list of AWS SSO identity store attributes that have been configured
-to work with attributes-based access control (ABAC) for the specified AWS SSO
-instance.
+Returns the list of Amazon Web Services SSO identity store attributes that have
+been configured to work with attributes-based access control (ABAC) for the
+specified Amazon Web Services SSO instance.
 
 Type annotations for
 `boto3.client("sso-admin").describe_instance_access_control_attribute_configuration`
@@ -469,8 +469,8 @@ Returns
 
 ### list_account_assignment_creation_status
 
-Lists the status of the AWS account assignment creation requests for a
-specified SSO instance.
+Lists the status of the Amazon Web Services account assignment creation
+requests for a specified SSO instance.
 
 Type annotations for
 `boto3.client("sso-admin").list_account_assignment_creation_status` method.
@@ -494,8 +494,8 @@ Returns
 
 ### list_account_assignment_deletion_status
 
-Lists the status of the AWS account assignment deletion requests for a
-specified SSO instance.
+Lists the status of the Amazon Web Services account assignment deletion
+requests for a specified SSO instance.
 
 Type annotations for
 `boto3.client("sso-admin").list_account_assignment_deletion_status` method.
@@ -519,8 +519,8 @@ Returns
 
 ### list_account_assignments
 
-Lists the assignee of the specified AWS account with the specified permission
-set.
+Lists the assignee of the specified Amazon Web Services account with the
+specified permission set.
 
 Type annotations for `boto3.client("sso-admin").list_account_assignments`
 method.
@@ -544,7 +544,8 @@ Returns
 
 ### list_accounts_for_provisioned_permission_set
 
-Lists all the AWS accounts where the specified permission set is provisioned.
+Lists all the Amazon Web Services accounts where the specified permission set
+is provisioned.
 
 Type annotations for
 `boto3.client("sso-admin").list_accounts_for_provisioned_permission_set`
@@ -659,7 +660,8 @@ Returns
 
 ### list_permission_sets_provisioned_to_account
 
-Lists all the permission sets that are provisioned to a specified AWS account.
+Lists all the permission sets that are provisioned to a specified Amazon Web
+Services account.
 
 Type annotations for
 `boto3.client("sso-admin").list_permission_sets_provisioned_to_account` method.
@@ -791,8 +793,9 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_instance_access_control_attribute_configuration
 
-Updates the AWS SSO identity store attributes to use with the AWS SSO instance
-for attributes-based access control (ABAC).
+Updates the Amazon Web Services SSO identity store attributes that you can use
+with the Amazon Web Services SSO instance for attributes-based access control
+(ABAC).
 
 Type annotations for
 `boto3.client("sso-admin").update_instance_access_control_attribute_configuration`

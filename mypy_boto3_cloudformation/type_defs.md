@@ -83,6 +83,8 @@ type annotations stubs module
   - [GetTemplateOutputTypeDef](#gettemplateoutputtypedef)
   - [GetTemplateSummaryInputRequestTypeDef](#gettemplatesummaryinputrequesttypedef)
   - [GetTemplateSummaryOutputTypeDef](#gettemplatesummaryoutputtypedef)
+  - [ImportStacksToStackSetInputRequestTypeDef](#importstackstostacksetinputrequesttypedef)
+  - [ImportStacksToStackSetOutputTypeDef](#importstackstostacksetoutputtypedef)
   - [ListChangeSetsInputRequestTypeDef](#listchangesetsinputrequesttypedef)
   - [ListChangeSetsOutputTypeDef](#listchangesetsoutputtypedef)
   - [ListExportsInputRequestTypeDef](#listexportsinputrequesttypedef)
@@ -532,6 +534,7 @@ Optional fields:
 - `Description`: `str`
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
+- `StackId`: `str`
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -1312,6 +1315,36 @@ Required fields:
 - `DeclaredTransforms`: `List`\[`str`\]
 - `ResourceIdentifierSummaries`:
   `List`\[[ResourceIdentifierSummaryTypeDef](./type_defs.md#resourceidentifiersummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ImportStacksToStackSetInputRequestTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ImportStacksToStackSetInputRequestTypeDef
+```
+
+Required fields:
+
+- `StackSetName`: `str`
+- `StackIds`: `List`\[`str`\]
+
+Optional fields:
+
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
+- `OperationId`: `str`
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+## ImportStacksToStackSetOutputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ImportStacksToStackSetOutputTypeDef
+```
+
+Required fields:
+
+- `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

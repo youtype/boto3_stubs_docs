@@ -50,6 +50,7 @@ type annotations stubs module
     - [get_stack_policy](#get_stack_policy)
     - [get_template](#get_template)
     - [get_template_summary](#get_template_summary)
+    - [import_stacks_to_stack_set](#import_stacks_to_stack_set)
     - [list_change_sets](#list_change_sets)
     - [list_exports](#list_exports)
     - [list_imports](#list_imports)
@@ -126,6 +127,7 @@ Exceptions:
 - `Exceptions.OperationNotFoundException`
 - `Exceptions.OperationStatusCheckFailedException`
 - `Exceptions.StackInstanceNotFoundException`
+- `Exceptions.StackNotFoundException`
 - `Exceptions.StackSetNotEmptyException`
 - `Exceptions.StackSetNotFoundException`
 - `Exceptions.StaleRequestException`
@@ -374,6 +376,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
+- `StackId`: `str`
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -519,8 +522,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### describe_account_limits
 
-Retrieves your account's AWS CloudFormation limits, such as the maximum number
-of stacks that you can create in your account.
+Retrieves your account's CloudFormation limits, such as the maximum number of
+stacks that you can create in your account.
 
 Type annotations for `boto3.client("cloudformation").describe_account_limits`
 method.
@@ -540,8 +543,8 @@ Returns
 
 ### describe_change_set
 
-Returns the inputs for the change set and a list of changes that AWS
-CloudFormation will make if you execute the change set.
+Returns the inputs for the change set and a list of changes that CloudFormation
+will make if you execute the change set.
 
 Type annotations for `boto3.client("cloudformation").describe_change_set`
 method.
@@ -625,7 +628,7 @@ Returns
 
 ### describe_stack_instance
 
-Returns the stack instance that's associated with the specified stack set, AWS
+Returns the stack instance that's associated with the specified stack set,
 account, and Region.
 
 Type annotations for `boto3.client("cloudformation").describe_stack_instance`
@@ -695,7 +698,8 @@ Returns
 
 ### describe_stack_resources
 
-Returns AWS resource descriptions for running and deleted stacks.
+Returns Amazon Web Services resource descriptions for running and deleted
+stacks.
 
 Type annotations for `boto3.client("cloudformation").describe_stack_resources`
 method.
@@ -1018,6 +1022,31 @@ Keyword-only arguments:
 
 Returns
 [GetTemplateSummaryOutputTypeDef](./type_defs.md#gettemplatesummaryoutputtypedef).
+
+### import_stacks_to_stack_set
+
+Import existing stacks into a new stack sets.
+
+Type annotations for
+`boto3.client("cloudformation").import_stacks_to_stack_set` method.
+
+Boto3 documentation:
+[CloudFormation.Client.import_stacks_to_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.import_stacks_to_stack_set)
+
+Arguments mapping described in
+[ImportStacksToStackSetInputRequestTypeDef](./type_defs.md#importstackstostacksetinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `StackSetName`: `str` *(required)*
+- `StackIds`: `List`\[`str`\] *(required)*
+- `OperationPreferences`:
+  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
+- `OperationId`: `str`
+- `CallAs`: [CallAsType](./literals.md#callastype)
+
+Returns
+[ImportStacksToStackSetOutputTypeDef](./type_defs.md#importstackstostacksetoutputtypedef).
 
 ### list_change_sets
 

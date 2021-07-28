@@ -77,6 +77,7 @@ from mypy_boto3_cloudformation.client import CloudFormationClient
 - [get_template](./client.md#get_template)
 - [get_template_summary](./client.md#get_template_summary)
 - [get_waiter](./client.md#get_waiter)
+- [import_stacks_to_stack_set](./client.md#import_stacks_to_stack_set)
 - [list_change_sets](./client.md#list_change_sets)
 - [list_exports](./client.md#list_exports)
 - [list_imports](./client.md#list_imports)
@@ -125,6 +126,7 @@ CloudFormationClient [exceptions](./client.md#exceptions)
 - OperationNotFoundException
 - OperationStatusCheckFailedException
 - StackInstanceNotFoundException
+- StackNotFoundException
 - StackSetNotEmptyException
 - StackSetNotFoundException
 - StaleRequestException
@@ -382,6 +384,8 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [GetTemplateOutputTypeDef](./type_defs.md#gettemplateoutputtypedef)
 - [GetTemplateSummaryInputRequestTypeDef](./type_defs.md#gettemplatesummaryinputrequesttypedef)
 - [GetTemplateSummaryOutputTypeDef](./type_defs.md#gettemplatesummaryoutputtypedef)
+- [ImportStacksToStackSetInputRequestTypeDef](./type_defs.md#importstackstostacksetinputrequesttypedef)
+- [ImportStacksToStackSetOutputTypeDef](./type_defs.md#importstackstostacksetoutputtypedef)
 - [ListChangeSetsInputRequestTypeDef](./type_defs.md#listchangesetsinputrequesttypedef)
 - [ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef)
 - [ListExportsInputRequestTypeDef](./type_defs.md#listexportsinputrequesttypedef)
