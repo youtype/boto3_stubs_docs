@@ -684,7 +684,7 @@ Returns
 
 ### allocate_address
 
-Allocates an Elastic IP address to your account.
+Allocates an Elastic IP address to your Amazon Web Services account.
 
 Type annotations for `boto3.client("ec2").allocate_address` method.
 

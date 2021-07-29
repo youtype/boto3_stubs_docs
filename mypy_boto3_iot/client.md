@@ -402,7 +402,8 @@ Returns
 
 ### attach_policy
 
-Attaches a policy to the specified target.
+Attaches the specified policy to the specified principal (certificate or other
+credential).
 
 Type annotations for `boto3.client("iot").attach_policy` method.
 

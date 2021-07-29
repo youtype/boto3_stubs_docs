@@ -90,9 +90,11 @@ type annotations stubs module
   - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
   - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
   - [DescribeStorageConfigurationResponseTypeDef](#describestorageconfigurationresponsetypedef)
+  - [DetailedErrorTypeDef](#detailederrortypedef)
   - [DisassociateAssetsRequestRequestTypeDef](#disassociateassetsrequestrequesttypedef)
   - [ErrorDetailsTypeDef](#errordetailstypedef)
   - [ExpressionVariableTypeDef](#expressionvariabletypedef)
+  - [ForwardingConfigTypeDef](#forwardingconfigtypedef)
   - [GatewayCapabilitySummaryTypeDef](#gatewaycapabilitysummarytypedef)
   - [GatewayPlatformTypeDef](#gatewayplatformtypedef)
   - [GatewaySummaryTypeDef](#gatewaysummarytypedef)
@@ -105,6 +107,7 @@ type annotations stubs module
   - [GetInterpolatedAssetPropertyValuesRequestRequestTypeDef](#getinterpolatedassetpropertyvaluesrequestrequesttypedef)
   - [GetInterpolatedAssetPropertyValuesResponseTypeDef](#getinterpolatedassetpropertyvaluesresponsetypedef)
   - [GreengrassTypeDef](#greengrasstypedef)
+  - [GreengrassV2TypeDef](#greengrassv2typedef)
   - [GroupIdentityTypeDef](#groupidentitytypedef)
   - [IAMRoleIdentityTypeDef](#iamroleidentitytypedef)
   - [IAMUserIdentityTypeDef](#iamuseridentitytypedef)
@@ -136,6 +139,9 @@ type annotations stubs module
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LoggingOptionsTypeDef](#loggingoptionstypedef)
+  - [MeasurementProcessingConfigTypeDef](#measurementprocessingconfigtypedef)
+  - [MeasurementTypeDef](#measurementtypedef)
+  - [MetricProcessingConfigTypeDef](#metricprocessingconfigtypedef)
   - [MetricTypeDef](#metrictypedef)
   - [MetricWindowTypeDef](#metricwindowtypedef)
   - [MonitorErrorDetailsTypeDef](#monitorerrordetailstypedef)
@@ -159,6 +165,7 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TimeInNanosTypeDef](#timeinnanostypedef)
+  - [TransformProcessingConfigTypeDef](#transformprocessingconfigtypedef)
   - [TransformTypeDef](#transformtypedef)
   - [TumblingWindowTypeDef](#tumblingwindowtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
@@ -1398,6 +1405,17 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DetailedErrorTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import DetailedErrorTypeDef
+```
+
+Required fields:
+
+- `code`: [DetailedErrorCodeType](./literals.md#detailederrorcodetype)
+- `message`: `str`
+
 ## DisassociateAssetsRequestRequestTypeDef
 
 ```python
@@ -1425,6 +1443,11 @@ Required fields:
 - `code`: [ErrorCodeType](./literals.md#errorcodetype)
 - `message`: `str`
 
+Optional fields:
+
+- `details`:
+  `List`\[[DetailedErrorTypeDef](./type_defs.md#detailederrortypedef)\]
+
 ## ExpressionVariableTypeDef
 
 ```python
@@ -1435,6 +1458,16 @@ Required fields:
 
 - `name`: `str`
 - `value`: [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
+
+## ForwardingConfigTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import ForwardingConfigTypeDef
+```
+
+Required fields:
+
+- `state`: [ForwardingConfigStateType](./literals.md#forwardingconfigstatetype)
 
 ## GatewayCapabilitySummaryTypeDef
 
@@ -1454,9 +1487,10 @@ Required fields:
 from mypy_boto3_iotsitewise.type_defs import GatewayPlatformTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `greengrass`: [GreengrassTypeDef](./type_defs.md#greengrasstypedef)
+- `greengrassV2`: [GreengrassV2TypeDef](./type_defs.md#greengrassv2typedef)
 
 ## GatewaySummaryTypeDef
 
@@ -1473,6 +1507,8 @@ Required fields:
 
 Optional fields:
 
+- `gatewayPlatform`:
+  [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef)
 - `gatewayCapabilitySummaries`:
   `List`\[[GatewayCapabilitySummaryTypeDef](./type_defs.md#gatewaycapabilitysummarytypedef)\]
 
@@ -1618,6 +1654,16 @@ from mypy_boto3_iotsitewise.type_defs import GreengrassTypeDef
 Required fields:
 
 - `groupArn`: `str`
+
+## GreengrassV2TypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import GreengrassV2TypeDef
+```
+
+Required fields:
+
+- `coreDeviceThingName`: `str`
 
 ## GroupIdentityTypeDef
 
@@ -2020,6 +2066,38 @@ Required fields:
 
 - `level`: [LoggingLevelType](./literals.md#loggingleveltype)
 
+## MeasurementProcessingConfigTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import MeasurementProcessingConfigTypeDef
+```
+
+Required fields:
+
+- `forwardingConfig`:
+  [ForwardingConfigTypeDef](./type_defs.md#forwardingconfigtypedef)
+
+## MeasurementTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import MeasurementTypeDef
+```
+
+Optional fields:
+
+- `processingConfig`:
+  [MeasurementProcessingConfigTypeDef](./type_defs.md#measurementprocessingconfigtypedef)
+
+## MetricProcessingConfigTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import MetricProcessingConfigTypeDef
+```
+
+Required fields:
+
+- `computeLocation`: [ComputeLocationType](./literals.md#computelocationtype)
+
 ## MetricTypeDef
 
 ```python
@@ -2032,6 +2110,11 @@ Required fields:
 - `variables`:
   `List`\[[ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef)\]
 - `window`: [MetricWindowTypeDef](./type_defs.md#metricwindowtypedef)
+
+Optional fields:
+
+- `processingConfig`:
+  [MetricProcessingConfigTypeDef](./type_defs.md#metricprocessingconfigtypedef)
 
 ## MetricWindowTypeDef
 
@@ -2190,7 +2273,7 @@ from mypy_boto3_iotsitewise.type_defs import PropertyTypeTypeDef
 Optional fields:
 
 - `attribute`: [AttributeTypeDef](./type_defs.md#attributetypedef)
-- `measurement`: `Dict`\[`str`, `Any`\]
+- `measurement`: [MeasurementTypeDef](./type_defs.md#measurementtypedef)
 - `transform`: [TransformTypeDef](./type_defs.md#transformtypedef)
 - `metric`: [MetricTypeDef](./type_defs.md#metrictypedef)
 
@@ -2333,6 +2416,21 @@ Optional fields:
 
 - `offsetInNanos`: `int`
 
+## TransformProcessingConfigTypeDef
+
+```python
+from mypy_boto3_iotsitewise.type_defs import TransformProcessingConfigTypeDef
+```
+
+Required fields:
+
+- `computeLocation`: [ComputeLocationType](./literals.md#computelocationtype)
+
+Optional fields:
+
+- `forwardingConfig`:
+  [ForwardingConfigTypeDef](./type_defs.md#forwardingconfigtypedef)
+
 ## TransformTypeDef
 
 ```python
@@ -2344,6 +2442,11 @@ Required fields:
 - `expression`: `str`
 - `variables`:
   `List`\[[ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef)\]
+
+Optional fields:
+
+- `processingConfig`:
+  [TransformProcessingConfigTypeDef](./type_defs.md#transformprocessingconfigtypedef)
 
 ## TumblingWindowTypeDef
 

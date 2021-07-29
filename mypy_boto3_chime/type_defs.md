@@ -166,6 +166,8 @@ type annotations stubs module
   - [DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef](#disassociatephonenumbersfromvoiceconnectorresponsetypedef)
   - [DisassociateSigninDelegateGroupsFromAccountRequestRequestTypeDef](#disassociatesignindelegategroupsfromaccountrequestrequesttypedef)
   - [EmergencyCallingConfigurationTypeDef](#emergencycallingconfigurationtypedef)
+  - [EngineTranscribeMedicalSettingsTypeDef](#enginetranscribemedicalsettingstypedef)
+  - [EngineTranscribeSettingsTypeDef](#enginetranscribesettingstypedef)
   - [EventsConfigurationTypeDef](#eventsconfigurationtypedef)
   - [GeoMatchParamsTypeDef](#geomatchparamstypedef)
   - [GetAccountRequestRequestTypeDef](#getaccountrequestrequesttypedef)
@@ -365,6 +367,8 @@ type annotations stubs module
   - [SipMediaApplicationTypeDef](#sipmediaapplicationtypedef)
   - [SipRuleTargetApplicationTypeDef](#sipruletargetapplicationtypedef)
   - [SipRuleTypeDef](#sipruletypedef)
+  - [StartMeetingTranscriptionRequestRequestTypeDef](#startmeetingtranscriptionrequestrequesttypedef)
+  - [StopMeetingTranscriptionRequestRequestTypeDef](#stopmeetingtranscriptionrequestrequesttypedef)
   - [StreamingConfigurationTypeDef](#streamingconfigurationtypedef)
   - [StreamingNotificationTargetTypeDef](#streamingnotificationtargettypedef)
   - [TagAttendeeRequestRequestTypeDef](#tagattendeerequestrequesttypedef)
@@ -374,6 +378,7 @@ type annotations stubs module
   - [TelephonySettingsTypeDef](#telephonysettingstypedef)
   - [TerminationHealthTypeDef](#terminationhealthtypedef)
   - [TerminationTypeDef](#terminationtypedef)
+  - [TranscriptionConfigurationTypeDef](#transcriptionconfigurationtypedef)
   - [UntagAttendeeRequestRequestTypeDef](#untagattendeerequestrequesttypedef)
   - [UntagMeetingRequestRequestTypeDef](#untagmeetingrequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
@@ -2467,6 +2472,45 @@ Optional fields:
 
 - `DNIS`:
   `List`\[[DNISEmergencyCallingConfigurationTypeDef](./type_defs.md#dnisemergencycallingconfigurationtypedef)\]
+
+## EngineTranscribeMedicalSettingsTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import EngineTranscribeMedicalSettingsTypeDef
+```
+
+Required fields:
+
+- `LanguageCode`: `Literal['en-US']` (see
+  [TranscribeMedicalLanguageCodeType](./literals.md#transcribemedicallanguagecodetype))
+- `Specialty`:
+  [TranscribeMedicalSpecialtyType](./literals.md#transcribemedicalspecialtytype)
+- `Type`: [TranscribeMedicalTypeType](./literals.md#transcribemedicaltypetype)
+
+Optional fields:
+
+- `VocabularyName`: `str`
+- `Region`:
+  [TranscribeMedicalRegionType](./literals.md#transcribemedicalregiontype)
+
+## EngineTranscribeSettingsTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import EngineTranscribeSettingsTypeDef
+```
+
+Required fields:
+
+- `LanguageCode`:
+  [TranscribeLanguageCodeType](./literals.md#transcribelanguagecodetype)
+
+Optional fields:
+
+- `VocabularyFilterMethod`:
+  [TranscribeVocabularyFilterMethodType](./literals.md#transcribevocabularyfiltermethodtype)
+- `VocabularyFilterName`: `str`
+- `VocabularyName`: `str`
+- `Region`: [TranscribeRegionType](./literals.md#transcriberegiontype)
 
 ## EventsConfigurationTypeDef
 
@@ -5027,6 +5071,28 @@ Optional fields:
 - `CreatedTimestamp`: `datetime`
 - `UpdatedTimestamp`: `datetime`
 
+## StartMeetingTranscriptionRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import StartMeetingTranscriptionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `MeetingId`: `str`
+- `TranscriptionConfiguration`:
+  [TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef)
+
+## StopMeetingTranscriptionRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import StopMeetingTranscriptionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `MeetingId`: `str`
+
 ## StreamingConfigurationTypeDef
 
 ```python
@@ -5135,6 +5201,19 @@ Optional fields:
 - `CallingRegions`: `List`\[`str`\]
 - `CidrAllowedList`: `List`\[`str`\]
 - `Disabled`: `bool`
+
+## TranscriptionConfigurationTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import TranscriptionConfigurationTypeDef
+```
+
+Optional fields:
+
+- `EngineTranscribeSettings`:
+  [EngineTranscribeSettingsTypeDef](./type_defs.md#enginetranscribesettingstypedef)
+- `EngineTranscribeMedicalSettings`:
+  [EngineTranscribeMedicalSettingsTypeDef](./type_defs.md#enginetranscribemedicalsettingstypedef)
 
 ## UntagAttendeeRequestRequestTypeDef
 

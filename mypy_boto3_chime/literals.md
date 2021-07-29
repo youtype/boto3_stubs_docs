@@ -44,6 +44,13 @@ type annotations stubs module
   - [RoomMembershipRoleType](#roommembershiproletype)
   - [SipRuleTriggerTypeType](#sipruletriggertypetype)
   - [SortOrderType](#sortordertype)
+  - [TranscribeLanguageCodeType](#transcribelanguagecodetype)
+  - [TranscribeMedicalLanguageCodeType](#transcribemedicallanguagecodetype)
+  - [TranscribeMedicalRegionType](#transcribemedicalregiontype)
+  - [TranscribeMedicalSpecialtyType](#transcribemedicalspecialtytype)
+  - [TranscribeMedicalTypeType](#transcribemedicaltypetype)
+  - [TranscribeRegionType](#transcriberegiontype)
+  - [TranscribeVocabularyFilterMethodType](#transcribevocabularyfiltermethodtype)
   - [UserTypeType](#usertypetype)
   - [VoiceConnectorAwsRegionType](#voiceconnectorawsregiontype)
 
@@ -478,6 +485,110 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+## TranscribeLanguageCodeType
+
+```python
+from mypy_boto3_chime.literals import TranscribeLanguageCodeType
+```
+
+Values:
+
+- `de-DE`
+- `en-AU`
+- `en-GB`
+- `en-US`
+- `es-US`
+- `fr-CA`
+- `fr-FR`
+- `it-IT`
+- `ja-JP`
+- `ko-KR`
+- `pt-BR`
+- `zh-CN`
+
+## TranscribeMedicalLanguageCodeType
+
+```python
+from mypy_boto3_chime.literals import TranscribeMedicalLanguageCodeType
+```
+
+Values:
+
+- `en-US`
+
+## TranscribeMedicalRegionType
+
+```python
+from mypy_boto3_chime.literals import TranscribeMedicalRegionType
+```
+
+Values:
+
+- `ap-southeast-2`
+- `ca-central-1`
+- `eu-west-1`
+- `us-east-1`
+- `us-east-2`
+- `us-west-2`
+
+## TranscribeMedicalSpecialtyType
+
+```python
+from mypy_boto3_chime.literals import TranscribeMedicalSpecialtyType
+```
+
+Values:
+
+- `CARDIOLOGY`
+- `NEUROLOGY`
+- `ONCOLOGY`
+- `PRIMARYCARE`
+- `RADIOLOGY`
+- `UROLOGY`
+
+## TranscribeMedicalTypeType
+
+```python
+from mypy_boto3_chime.literals import TranscribeMedicalTypeType
+```
+
+Values:
+
+- `CONVERSATION`
+- `DICTATION`
+
+## TranscribeRegionType
+
+```python
+from mypy_boto3_chime.literals import TranscribeRegionType
+```
+
+Values:
+
+- `ap-northeast-1`
+- `ap-northeast-2`
+- `ap-southeast-2`
+- `ca-central-1`
+- `eu-central-1`
+- `eu-west-1`
+- `eu-west-2`
+- `sa-east-1`
+- `us-east-1`
+- `us-east-2`
+- `us-west-2`
+
+## TranscribeVocabularyFilterMethodType
+
+```python
+from mypy_boto3_chime.literals import TranscribeVocabularyFilterMethodType
+```
+
+Values:
+
+- `mask`
+- `remove`
+- `tag`
 
 ## UserTypeType
 

@@ -175,6 +175,8 @@ type annotations stubs module
     - [restore_phone_number](#restore_phone_number)
     - [search_available_phone_numbers](#search_available_phone_numbers)
     - [send_channel_message](#send_channel_message)
+    - [start_meeting_transcription](#start_meeting_transcription)
+    - [stop_meeting_transcription](#stop_meeting_transcription)
     - [tag_attendee](#tag_attendee)
     - [tag_meeting](#tag_meeting)
     - [tag_resource](#tag_resource)
@@ -3644,6 +3646,46 @@ Keyword-only arguments:
 
 Returns
 [SendChannelMessageResponseTypeDef](./type_defs.md#sendchannelmessageresponsetypedef).
+
+### start_meeting_transcription
+
+Start transcription for the specified `meetingId` .
+
+Type annotations for `boto3.client("chime").start_meeting_transcription`
+method.
+
+Boto3 documentation:
+[Chime.Client.start_meeting_transcription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.start_meeting_transcription)
+
+Arguments mapping described in
+[StartMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#startmeetingtranscriptionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MeetingId`: `str` *(required)*
+- `TranscriptionConfiguration`:
+  [TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef)
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### stop_meeting_transcription
+
+Stops transcription for the specified `meetingId` .
+
+Type annotations for `boto3.client("chime").stop_meeting_transcription` method.
+
+Boto3 documentation:
+[Chime.Client.stop_meeting_transcription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.stop_meeting_transcription)
+
+Arguments mapping described in
+[StopMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#stopmeetingtranscriptionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MeetingId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### tag_attendee
 

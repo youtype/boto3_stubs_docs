@@ -20,9 +20,12 @@ type annotations stubs module
   - [AuthModeType](#authmodetype)
   - [BatchPutAssetPropertyValueErrorCodeType](#batchputassetpropertyvalueerrorcodetype)
   - [CapabilitySyncStatusType](#capabilitysyncstatustype)
+  - [ComputeLocationType](#computelocationtype)
   - [ConfigurationStateType](#configurationstatetype)
+  - [DetailedErrorCodeType](#detailederrorcodetype)
   - [EncryptionTypeType](#encryptiontypetype)
   - [ErrorCodeType](#errorcodetype)
+  - [ForwardingConfigStateType](#forwardingconfigstatetype)
   - [GetAssetPropertyAggregatesPaginatorName](#getassetpropertyaggregatespaginatorname)
   - [GetAssetPropertyValueHistoryPaginatorName](#getassetpropertyvaluehistorypaginatorname)
   - [GetInterpolatedAssetPropertyValuesPaginatorName](#getinterpolatedassetpropertyvaluespaginatorname)
@@ -198,6 +201,18 @@ Values:
 - `IN_SYNC`
 - `OUT_OF_SYNC`
 - `SYNC_FAILED`
+- `UNKNOWN`
+
+## ComputeLocationType
+
+```python
+from mypy_boto3_iotsitewise.literals import ComputeLocationType
+```
+
+Values:
+
+- `CLOUD`
+- `EDGE`
 
 ## ConfigurationStateType
 
@@ -210,6 +225,17 @@ Values:
 - `ACTIVE`
 - `UPDATE_FAILED`
 - `UPDATE_IN_PROGRESS`
+
+## DetailedErrorCodeType
+
+```python
+from mypy_boto3_iotsitewise.literals import DetailedErrorCodeType
+```
+
+Values:
+
+- `INCOMPATIBLE_COMPUTE_LOCATION`
+- `INCOMPATIBLE_FORWARDING_CONFIGURATION`
 
 ## EncryptionTypeType
 
@@ -232,6 +258,17 @@ Values:
 
 - `INTERNAL_FAILURE`
 - `VALIDATION_ERROR`
+
+## ForwardingConfigStateType
+
+```python
+from mypy_boto3_iotsitewise.literals import ForwardingConfigStateType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
 
 ## GetAssetPropertyAggregatesPaginatorName
 
