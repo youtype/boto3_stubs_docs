@@ -60,6 +60,7 @@ type annotations stubs module
   - [GetTypeResponseTypeDef](#gettyperesponsetypedef)
   - [GraphqlApiTypeDef](#graphqlapitypedef)
   - [HttpDataSourceConfigTypeDef](#httpdatasourceconfigtypedef)
+  - [LambdaAuthorizerConfigTypeDef](#lambdaauthorizerconfigtypedef)
   - [LambdaConflictHandlerConfigTypeDef](#lambdaconflicthandlerconfigtypedef)
   - [LambdaDataSourceConfigTypeDef](#lambdadatasourceconfigtypedef)
   - [ListApiKeysRequestRequestTypeDef](#listapikeysrequestrequesttypedef)
@@ -122,6 +123,8 @@ Optional fields:
   [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
 - `userPoolConfig`:
   [CognitoUserPoolConfigTypeDef](./type_defs.md#cognitouserpoolconfigtypedef)
+- `lambdaAuthorizerConfig`:
+  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
 ## ApiCacheTypeDef
 
@@ -357,6 +360,8 @@ Optional fields:
 - `additionalAuthenticationProviders`:
   `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
+- `lambdaAuthorizerConfig`:
+  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
 ## CreateGraphqlApiResponseTypeDef
 
@@ -811,6 +816,8 @@ Optional fields:
   `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
 - `wafWebAclArn`: `str`
+- `lambdaAuthorizerConfig`:
+  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
 ## HttpDataSourceConfigTypeDef
 
@@ -823,6 +830,21 @@ Optional fields:
 - `endpoint`: `str`
 - `authorizationConfig`:
   [AuthorizationConfigTypeDef](./type_defs.md#authorizationconfigtypedef)
+
+## LambdaAuthorizerConfigTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import LambdaAuthorizerConfigTypeDef
+```
+
+Required fields:
+
+- `authorizerUri`: `str`
+
+Optional fields:
+
+- `authorizerResultTtlInSeconds`: `int`
+- `identityValidationExpression`: `str`
 
 ## LambdaConflictHandlerConfigTypeDef
 
@@ -1402,6 +1424,8 @@ Optional fields:
 - `additionalAuthenticationProviders`:
   `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
+- `lambdaAuthorizerConfig`:
+  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
 ## UpdateGraphqlApiResponseTypeDef
 

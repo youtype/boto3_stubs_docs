@@ -639,6 +639,7 @@ Optional fields:
 - `VersionStages`: `List`\[`str`\]
 - `LastAccessedDate`: `datetime`
 - `CreatedDate`: `datetime`
+- `KmsKeyIds`: `List`\[`str`\]
 
 ## StopReplicationToReplicaRequestRequestTypeDef
 

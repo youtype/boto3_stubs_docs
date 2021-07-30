@@ -260,6 +260,8 @@ Keyword-only arguments:
 - `additionalAuthenticationProviders`:
   `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
+- `lambdaAuthorizerConfig`:
+  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
 Returns
 [CreateGraphqlApiResponseTypeDef](./type_defs.md#creategraphqlapiresponsetypedef).
@@ -1002,6 +1004,8 @@ Keyword-only arguments:
 - `additionalAuthenticationProviders`:
   `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
+- `lambdaAuthorizerConfig`:
+  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 
 Returns
 [UpdateGraphqlApiResponseTypeDef](./type_defs.md#updategraphqlapiresponsetypedef).

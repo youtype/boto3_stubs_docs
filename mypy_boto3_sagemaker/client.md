@@ -5853,6 +5853,16 @@ overloads.
   [EndpointDeletedWaiter](./waiters.md#endpointdeletedwaiter)
 - `client.get_waiter("endpoint_in_service")` ->
   [EndpointInServiceWaiter](./waiters.md#endpointinservicewaiter)
+- `client.get_waiter("image_created")` ->
+  [ImageCreatedWaiter](./waiters.md#imagecreatedwaiter)
+- `client.get_waiter("image_deleted")` ->
+  [ImageDeletedWaiter](./waiters.md#imagedeletedwaiter)
+- `client.get_waiter("image_updated")` ->
+  [ImageUpdatedWaiter](./waiters.md#imageupdatedwaiter)
+- `client.get_waiter("image_version_created")` ->
+  [ImageVersionCreatedWaiter](./waiters.md#imageversioncreatedwaiter)
+- `client.get_waiter("image_version_deleted")` ->
+  [ImageVersionDeletedWaiter](./waiters.md#imageversiondeletedwaiter)
 - `client.get_waiter("notebook_instance_deleted")` ->
   [NotebookInstanceDeletedWaiter](./waiters.md#notebookinstancedeletedwaiter)
 - `client.get_waiter("notebook_instance_in_service")` ->

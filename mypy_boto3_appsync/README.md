@@ -209,6 +209,7 @@ from mypy_boto3_appsync.type_defs import AdditionalAuthenticationProviderTypeDef
 - [GetTypeResponseTypeDef](./type_defs.md#gettyperesponsetypedef)
 - [GraphqlApiTypeDef](./type_defs.md#graphqlapitypedef)
 - [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
+- [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
 - [LambdaConflictHandlerConfigTypeDef](./type_defs.md#lambdaconflicthandlerconfigtypedef)
 - [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - [ListApiKeysRequestRequestTypeDef](./type_defs.md#listapikeysrequestrequesttypedef)

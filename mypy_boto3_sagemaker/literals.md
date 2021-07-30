@@ -75,9 +75,14 @@ type annotations stubs module
   - [HyperParameterTuningJobStatusType](#hyperparametertuningjobstatustype)
   - [HyperParameterTuningJobStrategyTypeType](#hyperparametertuningjobstrategytypetype)
   - [HyperParameterTuningJobWarmStartTypeType](#hyperparametertuningjobwarmstarttypetype)
+  - [ImageCreatedWaiterName](#imagecreatedwaitername)
+  - [ImageDeletedWaiterName](#imagedeletedwaitername)
   - [ImageSortByType](#imagesortbytype)
   - [ImageSortOrderType](#imagesortordertype)
   - [ImageStatusType](#imagestatustype)
+  - [ImageUpdatedWaiterName](#imageupdatedwaitername)
+  - [ImageVersionCreatedWaiterName](#imageversioncreatedwaitername)
+  - [ImageVersionDeletedWaiterName](#imageversiondeletedwaitername)
   - [ImageVersionSortByType](#imageversionsortbytype)
   - [ImageVersionSortOrderType](#imageversionsortordertype)
   - [ImageVersionStatusType](#imageversionstatustype)
@@ -318,9 +323,26 @@ Values:
 - `ml.m5.8xlarge`
 - `ml.m5.large`
 - `ml.m5.xlarge`
+- `ml.m5d.12xlarge`
+- `ml.m5d.16xlarge`
+- `ml.m5d.24xlarge`
+- `ml.m5d.2xlarge`
+- `ml.m5d.4xlarge`
+- `ml.m5d.8xlarge`
+- `ml.m5d.large`
+- `ml.m5d.xlarge`
 - `ml.p3.16xlarge`
 - `ml.p3.2xlarge`
 - `ml.p3.8xlarge`
+- `ml.p3dn.24xlarge`
+- `ml.r5.12xlarge`
+- `ml.r5.16xlarge`
+- `ml.r5.24xlarge`
+- `ml.r5.2xlarge`
+- `ml.r5.4xlarge`
+- `ml.r5.8xlarge`
+- `ml.r5.large`
+- `ml.r5.xlarge`
 - `ml.t3.2xlarge`
 - `ml.t3.large`
 - `ml.t3.medium`
@@ -1095,6 +1117,26 @@ Values:
 - `IdenticalDataAndAlgorithm`
 - `TransferLearning`
 
+## ImageCreatedWaiterName
+
+```python
+from mypy_boto3_sagemaker.literals import ImageCreatedWaiterName
+```
+
+Values:
+
+- `image_created`
+
+## ImageDeletedWaiterName
+
+```python
+from mypy_boto3_sagemaker.literals import ImageDeletedWaiterName
+```
+
+Values:
+
+- `image_deleted`
+
 ## ImageSortByType
 
 ```python
@@ -1133,6 +1175,36 @@ Values:
 - `DELETING`
 - `UPDATE_FAILED`
 - `UPDATING`
+
+## ImageUpdatedWaiterName
+
+```python
+from mypy_boto3_sagemaker.literals import ImageUpdatedWaiterName
+```
+
+Values:
+
+- `image_updated`
+
+## ImageVersionCreatedWaiterName
+
+```python
+from mypy_boto3_sagemaker.literals import ImageVersionCreatedWaiterName
+```
+
+Values:
+
+- `image_version_created`
+
+## ImageVersionDeletedWaiterName
+
+```python
+from mypy_boto3_sagemaker.literals import ImageVersionDeletedWaiterName
+```
+
+Values:
+
+- `image_version_deleted`
 
 ## ImageVersionSortByType
 

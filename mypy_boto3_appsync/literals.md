@@ -91,6 +91,7 @@ Values:
 - `AMAZON_COGNITO_USER_POOLS`
 - `API_KEY`
 - `AWS_IAM`
+- `AWS_LAMBDA`
 - `OPENID_CONNECT`
 
 ## AuthorizationTypeType

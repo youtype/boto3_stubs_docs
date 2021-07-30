@@ -333,7 +333,8 @@ Returns
 
 ### list_secrets
 
-Lists all of the secrets that are stored by Secrets Manager in the AWS account.
+Lists all of the secrets that are stored by Secrets Manager in the Amazon Web
+Services account.
 
 Type annotations for `boto3.client("secretsmanager").list_secrets` method.
 

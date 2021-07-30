@@ -395,6 +395,7 @@ type annotations stubs module
   - [LabelingJobSnsDataSourceTypeDef](#labelingjobsnsdatasourcetypedef)
   - [LabelingJobStoppingConditionsTypeDef](#labelingjobstoppingconditionstypedef)
   - [LabelingJobSummaryTypeDef](#labelingjobsummarytypedef)
+  - [LambdaStepMetadataTypeDef](#lambdastepmetadatatypedef)
   - [ListActionsRequestRequestTypeDef](#listactionsrequestrequesttypedef)
   - [ListActionsResponseTypeDef](#listactionsresponsetypedef)
   - [ListAlgorithmsInputRequestTypeDef](#listalgorithmsinputrequesttypedef)
@@ -6794,6 +6795,18 @@ Optional fields:
 - `InputConfig`:
   [LabelingJobInputConfigTypeDef](./type_defs.md#labelingjobinputconfigtypedef)
 
+## LambdaStepMetadataTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import LambdaStepMetadataTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `OutputParameters`:
+  `List`\[[OutputParameterTypeDef](./type_defs.md#outputparametertypedef)\]
+
 ## ListActionsRequestRequestTypeDef
 
 ```python
@@ -9586,6 +9599,8 @@ Optional fields:
   [ConditionStepMetadataTypeDef](./type_defs.md#conditionstepmetadatatypedef)
 - `Callback`:
   [CallbackStepMetadataTypeDef](./type_defs.md#callbackstepmetadatatypedef)
+- `Lambda`:
+  [LambdaStepMetadataTypeDef](./type_defs.md#lambdastepmetadatatypedef)
 
 ## PipelineExecutionStepTypeDef
 
