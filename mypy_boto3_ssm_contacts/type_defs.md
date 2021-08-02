@@ -82,6 +82,8 @@ Optional fields:
 
 - `ContactChannelId`: `str`
 - `Note`: `str`
+- `AcceptCodeValidation`:
+  [AcceptCodeValidationType](./literals.md#acceptcodevalidationtype)
 
 ## ActivateContactChannelRequestRequestTypeDef
 

@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_ssm_contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
 
 - [Literals for boto3 SSMContacts module](#literals-for-boto3-ssmcontacts-module)
+  - [AcceptCodeValidationType](#acceptcodevalidationtype)
   - [AcceptTypeType](#accepttypetype)
   - [ActivationStatusType](#activationstatustype)
   - [ChannelTypeType](#channeltypetype)
@@ -19,6 +20,17 @@ type annotations stubs module
   - [ListPagesByContactPaginatorName](#listpagesbycontactpaginatorname)
   - [ListPagesByEngagementPaginatorName](#listpagesbyengagementpaginatorname)
   - [ReceiptTypeType](#receipttypetype)
+
+## AcceptCodeValidationType
+
+```python
+from mypy_boto3_ssm_contacts.literals import AcceptCodeValidationType
+```
+
+Values:
+
+- `ENFORCE`
+- `IGNORE`
 
 ## AcceptTypeType
 

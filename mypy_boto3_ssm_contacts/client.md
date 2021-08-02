@@ -115,6 +115,8 @@ Keyword-only arguments:
 - `AcceptCode`: `str` *(required)*
 - `ContactChannelId`: `str`
 - `Note`: `str`
+- `AcceptCodeValidation`:
+  [AcceptCodeValidationType](./literals.md#acceptcodevalidationtype)
 
 Returns `Dict`\[`str`, `Any`\].
 

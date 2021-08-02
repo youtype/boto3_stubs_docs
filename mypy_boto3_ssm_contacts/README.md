@@ -103,9 +103,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm_contacts.literals import AcceptTypeType, ...
+from mypy_boto3_ssm_contacts.literals import AcceptCodeValidationType, ...
 ```
 
+- [AcceptCodeValidationType](./literals.md#acceptcodevalidationtype)
 - [AcceptTypeType](./literals.md#accepttypetype)
 - [ActivationStatusType](./literals.md#activationstatustype)
 - [ChannelTypeType](./literals.md#channeltypetype)

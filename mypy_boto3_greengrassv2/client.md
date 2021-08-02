@@ -73,6 +73,7 @@ Exceptions:
 - `Exceptions.ClientError`
 - `Exceptions.ConflictException`
 - `Exceptions.InternalServerException`
+- `Exceptions.RequestAlreadyInProgressException`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ThrottlingException`
@@ -190,14 +191,15 @@ Keyword-only arguments:
 - `lambdaFunction`:
   [LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef)
 - `tags`: `Dict`\[`str`, `str`\]
+- `clientToken`: `str`
 
 Returns
 [CreateComponentVersionResponseTypeDef](./type_defs.md#createcomponentversionresponsetypedef).
 
 ### create_deployment
 
-Creates a continuous deployment for a target, which is a AWS IoT Greengrass
-core device or group of core devices.
+Creates a continuous deployment for a target, which is a Greengrass core device
+or group of core devices.
 
 Type annotations for `boto3.client("greengrassv2").create_deployment` method.
 
@@ -218,13 +220,14 @@ Keyword-only arguments:
 - `deploymentPolicies`:
   [DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef)
 - `tags`: `Dict`\[`str`, `str`\]
+- `clientToken`: `str`
 
 Returns
 [CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef).
 
 ### delete_component
 
-Deletes a version of a component from AWS IoT Greengrass.
+Deletes a version of a component from IoT Greengrass.
 
 Type annotations for `boto3.client("greengrassv2").delete_component` method.
 
@@ -240,7 +243,7 @@ Keyword-only arguments:
 
 ### delete_core_device
 
-Deletes a AWS IoT Greengrass core device, which is an AWS IoT thing.
+Deletes a Greengrass core device, which is an IoT thing.
 
 Type annotations for `boto3.client("greengrassv2").delete_core_device` method.
 
@@ -336,7 +339,7 @@ Returns
 
 ### get_core_device
 
-Retrieves metadata for a AWS IoT Greengrass core device.
+Retrieves metadata for a Greengrass core device.
 
 Type annotations for `boto3.client("greengrassv2").get_core_device` method.
 
@@ -442,7 +445,7 @@ Returns
 
 ### list_core_devices
 
-Retrieves a paginated list of AWS IoT Greengrass core devices.
+Retrieves a paginated list of Greengrass core devices.
 
 Type annotations for `boto3.client("greengrassv2").list_core_devices` method.
 
@@ -487,8 +490,8 @@ Returns
 
 ### list_effective_deployments
 
-Retrieves a paginated list of deployment jobs that AWS IoT Greengrass sends to
-AWS IoT Greengrass core devices.
+Retrieves a paginated list of deployment jobs that IoT Greengrass sends to
+Greengrass core devices.
 
 Type annotations for `boto3.client("greengrassv2").list_effective_deployments`
 method.
@@ -510,8 +513,8 @@ Returns
 
 ### list_installed_components
 
-Retrieves a paginated list of the components that a AWS IoT Greengrass core
-device runs.
+Retrieves a paginated list of the components that a Greengrass core device
+runs.
 
 Type annotations for `boto3.client("greengrassv2").list_installed_components`
 method.
@@ -533,7 +536,7 @@ Returns
 
 ### list_tags_for_resource
 
-Retrieves the list of tags for an AWS IoT Greengrass resource.
+Retrieves the list of tags for an IoT Greengrass resource.
 
 Type annotations for `boto3.client("greengrassv2").list_tags_for_resource`
 method.
@@ -579,7 +582,7 @@ Returns
 
 ### tag_resource
 
-Adds tags to an AWS IoT Greengrass resource.
+Adds tags to an IoT Greengrass resource.
 
 Type annotations for `boto3.client("greengrassv2").tag_resource` method.
 
@@ -598,7 +601,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes a tag from an AWS IoT Greengrass resource.
+Removes a tag from an IoT Greengrass resource.
 
 Type annotations for `boto3.client("greengrassv2").untag_resource` method.
 

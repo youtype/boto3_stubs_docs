@@ -87,6 +87,7 @@ type annotations stubs module
   - [ResolveComponentCandidatesResponseTypeDef](#resolvecomponentcandidatesresponsetypedef)
   - [ResolvedComponentVersionTypeDef](#resolvedcomponentversiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [SystemResourceLimitsTypeDef](#systemresourcelimitstypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
@@ -298,6 +299,8 @@ from mypy_boto3_greengrassv2.type_defs import ComponentRunWithTypeDef
 Optional fields:
 
 - `posixUser`: `str`
+- `systemResourceLimits`:
+  [SystemResourceLimitsTypeDef](./type_defs.md#systemresourcelimitstypedef)
 
 ## ComponentTypeDef
 
@@ -348,6 +351,7 @@ Optional fields:
 - `lambdaFunction`:
   [LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef)
 - `tags`: `Dict`\[`str`, `str`\]
+- `clientToken`: `str`
 
 ## CreateComponentVersionResponseTypeDef
 
@@ -386,6 +390,7 @@ Optional fields:
 - `deploymentPolicies`:
   [DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef)
 - `tags`: `Dict`\[`str`, `str`\]
+- `clientToken`: `str`
 
 ## CreateDeploymentResponseTypeDef
 
@@ -1172,6 +1177,17 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
+
+## SystemResourceLimitsTypeDef
+
+```python
+from mypy_boto3_greengrassv2.type_defs import SystemResourceLimitsTypeDef
+```
+
+Optional fields:
+
+- `memory`: `int`
+- `cpus`: `float`
 
 ## TagResourceRequestRequestTypeDef
 
