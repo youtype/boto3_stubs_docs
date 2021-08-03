@@ -76,6 +76,7 @@ type annotations stubs module
   - [EsamManifestConfirmConditionNotificationTypeDef](#esammanifestconfirmconditionnotificationtypedef)
   - [EsamSettingsTypeDef](#esamsettingstypedef)
   - [EsamSignalProcessingNotificationTypeDef](#esamsignalprocessingnotificationtypedef)
+  - [ExtendedDataServicesTypeDef](#extendeddataservicestypedef)
   - [F4vSettingsTypeDef](#f4vsettingstypedef)
   - [FileGroupSettingsTypeDef](#filegroupsettingstypedef)
   - [FileSourceSettingsTypeDef](#filesourcesettingstypedef)
@@ -1345,6 +1346,18 @@ Optional fields:
 
 - `SccXml`: `str`
 
+## ExtendedDataServicesTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import ExtendedDataServicesTypeDef
+```
+
+Optional fields:
+
+- `CopyProtectionAction`:
+  [CopyProtectionActionType](./literals.md#copyprotectionactiontype)
+- `VchipAction`: [VchipActionType](./literals.md#vchipactiontype)
+
 ## F4vSettingsTypeDef
 
 ```python
@@ -1977,6 +1990,8 @@ Optional fields:
 - `AdAvailOffset`: `int`
 - `AvailBlanking`: [AvailBlankingTypeDef](./type_defs.md#availblankingtypedef)
 - `Esam`: [EsamSettingsTypeDef](./type_defs.md#esamsettingstypedef)
+- `ExtendedDataServices`:
+  [ExtendedDataServicesTypeDef](./type_defs.md#extendeddataservicestypedef)
 - `Inputs`: `List`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
 - `KantarWatermark`:
   [KantarWatermarkSettingsTypeDef](./type_defs.md#kantarwatermarksettingstypedef)
@@ -2004,6 +2019,8 @@ Optional fields:
 - `AdAvailOffset`: `int`
 - `AvailBlanking`: [AvailBlankingTypeDef](./type_defs.md#availblankingtypedef)
 - `Esam`: [EsamSettingsTypeDef](./type_defs.md#esamsettingstypedef)
+- `ExtendedDataServices`:
+  [ExtendedDataServicesTypeDef](./type_defs.md#extendeddataservicestypedef)
 - `Inputs`:
   `List`\[[InputTemplateTypeDef](./type_defs.md#inputtemplatetypedef)\]
 - `KantarWatermark`:

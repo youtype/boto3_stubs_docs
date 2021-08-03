@@ -89,6 +89,7 @@ type annotations stubs module
   - [ColorSpaceUsageType](#colorspaceusagetype)
   - [CommitmentType](#commitmenttype)
   - [ContainerTypeType](#containertypetype)
+  - [CopyProtectionActionType](#copyprotectionactiontype)
   - [DashIsoGroupAudioChannelConfigSchemeIdUriType](#dashisogroupaudiochannelconfigschemeiduritype)
   - [DashIsoHbbtvComplianceType](#dashisohbbtvcompliancetype)
   - [DashIsoImageBasedTrickPlayType](#dashisoimagebasedtrickplaytype)
@@ -334,6 +335,7 @@ type annotations stubs module
   - [Vc3ScanTypeConversionModeType](#vc3scantypeconversionmodetype)
   - [Vc3SlowPalType](#vc3slowpaltype)
   - [Vc3TelecineType](#vc3telecinetype)
+  - [VchipActionType](#vchipactiontype)
   - [VideoCodecType](#videocodectype)
   - [VideoTimecodeInsertionType](#videotimecodeinsertiontype)
   - [Vp8FramerateControlType](#vp8frameratecontroltype)
@@ -1372,6 +1374,17 @@ Values:
 - `MXF`
 - `RAW`
 - `WEBM`
+
+## CopyProtectionActionType
+
+```python
+from mypy_boto3_mediaconvert.literals import CopyProtectionActionType
+```
+
+Values:
+
+- `PASSTHROUGH`
+- `STRIP`
 
 ## DashIsoGroupAudioChannelConfigSchemeIdUriType
 
@@ -4451,6 +4464,17 @@ Values:
 
 - `HARD`
 - `NONE`
+
+## VchipActionType
+
+```python
+from mypy_boto3_mediaconvert.literals import VchipActionType
+```
+
+Values:
+
+- `PASSTHROUGH`
+- `STRIP`
 
 ## VideoCodecType
 

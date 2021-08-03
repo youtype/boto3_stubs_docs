@@ -2458,6 +2458,10 @@ Required fields:
 
 - `interval`: `str`
 
+Optional fields:
+
+- `offset`: `str`
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python

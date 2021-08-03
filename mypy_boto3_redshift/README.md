@@ -35,7 +35,9 @@ from mypy_boto3_redshift.client import RedshiftClient
 
 - [accept_reserved_node_exchange](./client.md#accept_reserved_node_exchange)
 - [add_partner](./client.md#add_partner)
+- [associate_data_share_consumer](./client.md#associate_data_share_consumer)
 - [authorize_cluster_security_group_ingress](./client.md#authorize_cluster_security_group_ingress)
+- [authorize_data_share](./client.md#authorize_data_share)
 - [authorize_endpoint_access](./client.md#authorize_endpoint_access)
 - [authorize_snapshot_access](./client.md#authorize_snapshot_access)
 - [batch_delete_cluster_snapshots](./client.md#batch_delete_cluster_snapshots)
@@ -58,6 +60,7 @@ from mypy_boto3_redshift.client import RedshiftClient
 - [create_snapshot_schedule](./client.md#create_snapshot_schedule)
 - [create_tags](./client.md#create_tags)
 - [create_usage_limit](./client.md#create_usage_limit)
+- [deauthorize_data_share](./client.md#deauthorize_data_share)
 - [delete_authentication_profile](./client.md#delete_authentication_profile)
 - [delete_cluster](./client.md#delete_cluster)
 - [delete_cluster_parameter_group](./client.md#delete_cluster_parameter_group)
@@ -85,6 +88,9 @@ from mypy_boto3_redshift.client import RedshiftClient
 - [describe_cluster_tracks](./client.md#describe_cluster_tracks)
 - [describe_cluster_versions](./client.md#describe_cluster_versions)
 - [describe_clusters](./client.md#describe_clusters)
+- [describe_data_shares](./client.md#describe_data_shares)
+- [describe_data_shares_for_consumer](./client.md#describe_data_shares_for_consumer)
+- [describe_data_shares_for_producer](./client.md#describe_data_shares_for_producer)
 - [describe_default_cluster_parameters](./client.md#describe_default_cluster_parameters)
 - [describe_endpoint_access](./client.md#describe_endpoint_access)
 - [describe_endpoint_authorization](./client.md#describe_endpoint_authorization)
@@ -109,6 +115,7 @@ from mypy_boto3_redshift.client import RedshiftClient
 - [describe_usage_limits](./client.md#describe_usage_limits)
 - [disable_logging](./client.md#disable_logging)
 - [disable_snapshot_copy](./client.md#disable_snapshot_copy)
+- [disassociate_data_share_consumer](./client.md#disassociate_data_share_consumer)
 - [enable_logging](./client.md#enable_logging)
 - [enable_snapshot_copy](./client.md#enable_snapshot_copy)
 - [exceptions](./client.md#exceptions)
@@ -136,6 +143,7 @@ from mypy_boto3_redshift.client import RedshiftClient
 - [pause_cluster](./client.md#pause_cluster)
 - [purchase_reserved_node_offering](./client.md#purchase_reserved_node_offering)
 - [reboot_cluster](./client.md#reboot_cluster)
+- [reject_data_share](./client.md#reject_data_share)
 - [reset_cluster_parameter_group](./client.md#reset_cluster_parameter_group)
 - [resize_cluster](./client.md#resize_cluster)
 - [restore_from_cluster_snapshot](./client.md#restore_from_cluster_snapshot)
@@ -211,10 +219,12 @@ RedshiftClient [exceptions](./client.md#exceptions)
 - InvalidClusterSubnetGroupStateFault
 - InvalidClusterSubnetStateFault
 - InvalidClusterTrackFault
+- InvalidDataShareFault
 - InvalidElasticIpFault
 - InvalidEndpointStateFault
 - InvalidHsmClientCertificateStateFault
 - InvalidHsmConfigurationStateFault
+- InvalidNamespaceFault
 - InvalidReservedNodeStateFault
 - InvalidRestoreFault
 - InvalidRetentionPeriodFault
@@ -348,6 +358,9 @@ from mypy_boto3_redshift.literals import ActionTypeType, ...
 - [ClusterAvailableWaiterName](./literals.md#clusteravailablewaitername)
 - [ClusterDeletedWaiterName](./literals.md#clusterdeletedwaitername)
 - [ClusterRestoredWaiterName](./literals.md#clusterrestoredwaitername)
+- [DataShareStatusForConsumerType](./literals.md#datasharestatusforconsumertype)
+- [DataShareStatusForProducerType](./literals.md#datasharestatusforproducertype)
+- [DataShareStatusType](./literals.md#datasharestatustype)
 - [DescribeClusterDbRevisionsPaginatorName](./literals.md#describeclusterdbrevisionspaginatorname)
 - [DescribeClusterParameterGroupsPaginatorName](./literals.md#describeclusterparametergroupspaginatorname)
 - [DescribeClusterParametersPaginatorName](./literals.md#describeclusterparameterspaginatorname)
@@ -412,10 +425,12 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [AccountAttributeTypeDef](./type_defs.md#accountattributetypedef)
 - [AccountWithRestoreAccessTypeDef](./type_defs.md#accountwithrestoreaccesstypedef)
 - [AquaConfigurationTypeDef](./type_defs.md#aquaconfigurationtypedef)
+- [AssociateDataShareConsumerMessageRequestTypeDef](./type_defs.md#associatedatashareconsumermessagerequesttypedef)
 - [AttributeValueTargetTypeDef](./type_defs.md#attributevaluetargettypedef)
 - [AuthenticationProfileTypeDef](./type_defs.md#authenticationprofiletypedef)
 - [AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef](./type_defs.md#authorizeclustersecuritygroupingressmessagerequesttypedef)
 - [AuthorizeClusterSecurityGroupIngressResultTypeDef](./type_defs.md#authorizeclustersecuritygroupingressresulttypedef)
+- [AuthorizeDataShareMessageRequestTypeDef](./type_defs.md#authorizedatasharemessagerequesttypedef)
 - [AuthorizeEndpointAccessMessageRequestTypeDef](./type_defs.md#authorizeendpointaccessmessagerequesttypedef)
 - [AuthorizeSnapshotAccessMessageRequestTypeDef](./type_defs.md#authorizesnapshotaccessmessagerequesttypedef)
 - [AuthorizeSnapshotAccessResultTypeDef](./type_defs.md#authorizesnapshotaccessresulttypedef)
@@ -475,7 +490,11 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [CreateTagsMessageRequestTypeDef](./type_defs.md#createtagsmessagerequesttypedef)
 - [CreateUsageLimitMessageRequestTypeDef](./type_defs.md#createusagelimitmessagerequesttypedef)
 - [CustomerStorageMessageTypeDef](./type_defs.md#customerstoragemessagetypedef)
+- [DataShareAssociationTypeDef](./type_defs.md#datashareassociationtypedef)
+- [DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef)
+- [DataShareTypeDef](./type_defs.md#datasharetypedef)
 - [DataTransferProgressTypeDef](./type_defs.md#datatransferprogresstypedef)
+- [DeauthorizeDataShareMessageRequestTypeDef](./type_defs.md#deauthorizedatasharemessagerequesttypedef)
 - [DefaultClusterParametersTypeDef](./type_defs.md#defaultclusterparameterstypedef)
 - [DeferredMaintenanceWindowTypeDef](./type_defs.md#deferredmaintenancewindowtypedef)
 - [DeleteAuthenticationProfileMessageRequestTypeDef](./type_defs.md#deleteauthenticationprofilemessagerequesttypedef)
@@ -509,6 +528,12 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [DescribeClusterTracksMessageRequestTypeDef](./type_defs.md#describeclustertracksmessagerequesttypedef)
 - [DescribeClusterVersionsMessageRequestTypeDef](./type_defs.md#describeclusterversionsmessagerequesttypedef)
 - [DescribeClustersMessageRequestTypeDef](./type_defs.md#describeclustersmessagerequesttypedef)
+- [DescribeDataSharesForConsumerMessageRequestTypeDef](./type_defs.md#describedatasharesforconsumermessagerequesttypedef)
+- [DescribeDataSharesForConsumerResultTypeDef](./type_defs.md#describedatasharesforconsumerresulttypedef)
+- [DescribeDataSharesForProducerMessageRequestTypeDef](./type_defs.md#describedatasharesforproducermessagerequesttypedef)
+- [DescribeDataSharesForProducerResultTypeDef](./type_defs.md#describedatasharesforproducerresulttypedef)
+- [DescribeDataSharesMessageRequestTypeDef](./type_defs.md#describedatasharesmessagerequesttypedef)
+- [DescribeDataSharesResultTypeDef](./type_defs.md#describedatasharesresulttypedef)
 - [DescribeDefaultClusterParametersMessageRequestTypeDef](./type_defs.md#describedefaultclusterparametersmessagerequesttypedef)
 - [DescribeDefaultClusterParametersResultTypeDef](./type_defs.md#describedefaultclusterparametersresulttypedef)
 - [DescribeEndpointAccessMessageRequestTypeDef](./type_defs.md#describeendpointaccessmessagerequesttypedef)
@@ -536,6 +561,7 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [DisableLoggingMessageRequestTypeDef](./type_defs.md#disableloggingmessagerequesttypedef)
 - [DisableSnapshotCopyMessageRequestTypeDef](./type_defs.md#disablesnapshotcopymessagerequesttypedef)
 - [DisableSnapshotCopyResultTypeDef](./type_defs.md#disablesnapshotcopyresulttypedef)
+- [DisassociateDataShareConsumerMessageRequestTypeDef](./type_defs.md#disassociatedatashareconsumermessagerequesttypedef)
 - [EC2SecurityGroupTypeDef](./type_defs.md#ec2securitygrouptypedef)
 - [ElasticIpStatusTypeDef](./type_defs.md#elasticipstatustypedef)
 - [EnableLoggingMessageRequestTypeDef](./type_defs.md#enableloggingmessagerequesttypedef)
@@ -612,6 +638,7 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [RebootClusterMessageRequestTypeDef](./type_defs.md#rebootclustermessagerequesttypedef)
 - [RebootClusterResultTypeDef](./type_defs.md#rebootclusterresulttypedef)
 - [RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)
+- [RejectDataShareMessageRequestTypeDef](./type_defs.md#rejectdatasharemessagerequesttypedef)
 - [ReservedNodeOfferingTypeDef](./type_defs.md#reservednodeofferingtypedef)
 - [ReservedNodeOfferingsMessageTypeDef](./type_defs.md#reservednodeofferingsmessagetypedef)
 - [ReservedNodeTypeDef](./type_defs.md#reservednodetypedef)

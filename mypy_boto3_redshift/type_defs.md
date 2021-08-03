@@ -14,10 +14,12 @@ type annotations stubs module
   - [AccountAttributeTypeDef](#accountattributetypedef)
   - [AccountWithRestoreAccessTypeDef](#accountwithrestoreaccesstypedef)
   - [AquaConfigurationTypeDef](#aquaconfigurationtypedef)
+  - [AssociateDataShareConsumerMessageRequestTypeDef](#associatedatashareconsumermessagerequesttypedef)
   - [AttributeValueTargetTypeDef](#attributevaluetargettypedef)
   - [AuthenticationProfileTypeDef](#authenticationprofiletypedef)
   - [AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef](#authorizeclustersecuritygroupingressmessagerequesttypedef)
   - [AuthorizeClusterSecurityGroupIngressResultTypeDef](#authorizeclustersecuritygroupingressresulttypedef)
+  - [AuthorizeDataShareMessageRequestTypeDef](#authorizedatasharemessagerequesttypedef)
   - [AuthorizeEndpointAccessMessageRequestTypeDef](#authorizeendpointaccessmessagerequesttypedef)
   - [AuthorizeSnapshotAccessMessageRequestTypeDef](#authorizesnapshotaccessmessagerequesttypedef)
   - [AuthorizeSnapshotAccessResultTypeDef](#authorizesnapshotaccessresulttypedef)
@@ -77,7 +79,11 @@ type annotations stubs module
   - [CreateTagsMessageRequestTypeDef](#createtagsmessagerequesttypedef)
   - [CreateUsageLimitMessageRequestTypeDef](#createusagelimitmessagerequesttypedef)
   - [CustomerStorageMessageTypeDef](#customerstoragemessagetypedef)
+  - [DataShareAssociationTypeDef](#datashareassociationtypedef)
+  - [DataShareResponseMetadataTypeDef](#datashareresponsemetadatatypedef)
+  - [DataShareTypeDef](#datasharetypedef)
   - [DataTransferProgressTypeDef](#datatransferprogresstypedef)
+  - [DeauthorizeDataShareMessageRequestTypeDef](#deauthorizedatasharemessagerequesttypedef)
   - [DefaultClusterParametersTypeDef](#defaultclusterparameterstypedef)
   - [DeferredMaintenanceWindowTypeDef](#deferredmaintenancewindowtypedef)
   - [DeleteAuthenticationProfileMessageRequestTypeDef](#deleteauthenticationprofilemessagerequesttypedef)
@@ -111,6 +117,12 @@ type annotations stubs module
   - [DescribeClusterTracksMessageRequestTypeDef](#describeclustertracksmessagerequesttypedef)
   - [DescribeClusterVersionsMessageRequestTypeDef](#describeclusterversionsmessagerequesttypedef)
   - [DescribeClustersMessageRequestTypeDef](#describeclustersmessagerequesttypedef)
+  - [DescribeDataSharesForConsumerMessageRequestTypeDef](#describedatasharesforconsumermessagerequesttypedef)
+  - [DescribeDataSharesForConsumerResultTypeDef](#describedatasharesforconsumerresulttypedef)
+  - [DescribeDataSharesForProducerMessageRequestTypeDef](#describedatasharesforproducermessagerequesttypedef)
+  - [DescribeDataSharesForProducerResultTypeDef](#describedatasharesforproducerresulttypedef)
+  - [DescribeDataSharesMessageRequestTypeDef](#describedatasharesmessagerequesttypedef)
+  - [DescribeDataSharesResultTypeDef](#describedatasharesresulttypedef)
   - [DescribeDefaultClusterParametersMessageRequestTypeDef](#describedefaultclusterparametersmessagerequesttypedef)
   - [DescribeDefaultClusterParametersResultTypeDef](#describedefaultclusterparametersresulttypedef)
   - [DescribeEndpointAccessMessageRequestTypeDef](#describeendpointaccessmessagerequesttypedef)
@@ -138,6 +150,7 @@ type annotations stubs module
   - [DisableLoggingMessageRequestTypeDef](#disableloggingmessagerequesttypedef)
   - [DisableSnapshotCopyMessageRequestTypeDef](#disablesnapshotcopymessagerequesttypedef)
   - [DisableSnapshotCopyResultTypeDef](#disablesnapshotcopyresulttypedef)
+  - [DisassociateDataShareConsumerMessageRequestTypeDef](#disassociatedatashareconsumermessagerequesttypedef)
   - [EC2SecurityGroupTypeDef](#ec2securitygrouptypedef)
   - [ElasticIpStatusTypeDef](#elasticipstatustypedef)
   - [EnableLoggingMessageRequestTypeDef](#enableloggingmessagerequesttypedef)
@@ -214,6 +227,7 @@ type annotations stubs module
   - [RebootClusterMessageRequestTypeDef](#rebootclustermessagerequesttypedef)
   - [RebootClusterResultTypeDef](#rebootclusterresulttypedef)
   - [RecurringChargeTypeDef](#recurringchargetypedef)
+  - [RejectDataShareMessageRequestTypeDef](#rejectdatasharemessagerequesttypedef)
   - [ReservedNodeOfferingTypeDef](#reservednodeofferingtypedef)
   - [ReservedNodeOfferingsMessageTypeDef](#reservednodeofferingsmessagetypedef)
   - [ReservedNodeTypeDef](#reservednodetypedef)
@@ -344,6 +358,21 @@ Optional fields:
 - `AquaConfigurationStatus`:
   [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
 
+## AssociateDataShareConsumerMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import AssociateDataShareConsumerMessageRequestTypeDef
+```
+
+Required fields:
+
+- `DataShareArn`: `str`
+
+Optional fields:
+
+- `AssociateEntireAccount`: `bool`
+- `ConsumerArn`: `str`
+
 ## AttributeValueTargetTypeDef
 
 ```python
@@ -393,6 +422,17 @@ Required fields:
   [ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## AuthorizeDataShareMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import AuthorizeDataShareMessageRequestTypeDef
+```
+
+Required fields:
+
+- `DataShareArn`: `str`
+- `ConsumerIdentifier`: `str`
 
 ## AuthorizeEndpointAccessMessageRequestTypeDef
 
@@ -1299,6 +1339,49 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DataShareAssociationTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DataShareAssociationTypeDef
+```
+
+Optional fields:
+
+- `ConsumerIdentifier`: `str`
+- `Status`: [DataShareStatusType](./literals.md#datasharestatustype)
+- `CreatedDate`: `datetime`
+- `StatusChangeDate`: `datetime`
+
+## DataShareResponseMetadataTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DataShareResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `DataShareArn`: `str`
+- `ProducerArn`: `str`
+- `AllowPubliclyAccessibleConsumers`: `bool`
+- `DataShareAssociations`:
+  `List`\[[DataShareAssociationTypeDef](./type_defs.md#datashareassociationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DataShareTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DataShareTypeDef
+```
+
+Optional fields:
+
+- `DataShareArn`: `str`
+- `ProducerArn`: `str`
+- `AllowPubliclyAccessibleConsumers`: `bool`
+- `DataShareAssociations`:
+  `List`\[[DataShareAssociationTypeDef](./type_defs.md#datashareassociationtypedef)\]
+
 ## DataTransferProgressTypeDef
 
 ```python
@@ -1313,6 +1396,17 @@ Optional fields:
 - `DataTransferredInMegaBytes`: `int`
 - `EstimatedTimeToCompletionInSeconds`: `int`
 - `ElapsedTimeInSeconds`: `int`
+
+## DeauthorizeDataShareMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DeauthorizeDataShareMessageRequestTypeDef
+```
+
+Required fields:
+
+- `DataShareArn`: `str`
+- `ConsumerIdentifier`: `str`
 
 ## DefaultClusterParametersTypeDef
 
@@ -1713,6 +1807,85 @@ Optional fields:
 - `TagKeys`: `List`\[`str`\]
 - `TagValues`: `List`\[`str`\]
 
+## DescribeDataSharesForConsumerMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DescribeDataSharesForConsumerMessageRequestTypeDef
+```
+
+Optional fields:
+
+- `ConsumerArn`: `str`
+- `Status`:
+  [DataShareStatusForConsumerType](./literals.md#datasharestatusforconsumertype)
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeDataSharesForConsumerResultTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DescribeDataSharesForConsumerResultTypeDef
+```
+
+Required fields:
+
+- `DataShares`: `List`\[[DataShareTypeDef](./type_defs.md#datasharetypedef)\]
+- `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeDataSharesForProducerMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DescribeDataSharesForProducerMessageRequestTypeDef
+```
+
+Optional fields:
+
+- `ProducerArn`: `str`
+- `Status`:
+  [DataShareStatusForProducerType](./literals.md#datasharestatusforproducertype)
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeDataSharesForProducerResultTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DescribeDataSharesForProducerResultTypeDef
+```
+
+Required fields:
+
+- `DataShares`: `List`\[[DataShareTypeDef](./type_defs.md#datasharetypedef)\]
+- `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeDataSharesMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DescribeDataSharesMessageRequestTypeDef
+```
+
+Optional fields:
+
+- `DataShareArn`: `str`
+- `MaxRecords`: `int`
+- `Marker`: `str`
+
+## DescribeDataSharesResultTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DescribeDataSharesResultTypeDef
+```
+
+Required fields:
+
+- `DataShares`: `List`\[[DataShareTypeDef](./type_defs.md#datasharetypedef)\]
+- `Marker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeDefaultClusterParametersMessageRequestTypeDef
 
 ```python
@@ -2082,6 +2255,21 @@ Required fields:
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DisassociateDataShareConsumerMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import DisassociateDataShareConsumerMessageRequestTypeDef
+```
+
+Required fields:
+
+- `DataShareArn`: `str`
+
+Optional fields:
+
+- `DisassociateEntireAccount`: `bool`
+- `ConsumerArn`: `str`
 
 ## EC2SecurityGroupTypeDef
 
@@ -3173,6 +3361,16 @@ Optional fields:
 
 - `RecurringChargeAmount`: `float`
 - `RecurringChargeFrequency`: `str`
+
+## RejectDataShareMessageRequestTypeDef
+
+```python
+from mypy_boto3_redshift.type_defs import RejectDataShareMessageRequestTypeDef
+```
+
+Required fields:
+
+- `DataShareArn`: `str`
 
 ## ReservedNodeOfferingTypeDef
 

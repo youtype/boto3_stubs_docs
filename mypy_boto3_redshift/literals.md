@@ -15,6 +15,9 @@ type annotations stubs module
   - [ClusterAvailableWaiterName](#clusteravailablewaitername)
   - [ClusterDeletedWaiterName](#clusterdeletedwaitername)
   - [ClusterRestoredWaiterName](#clusterrestoredwaitername)
+  - [DataShareStatusForConsumerType](#datasharestatusforconsumertype)
+  - [DataShareStatusForProducerType](#datasharestatusforproducertype)
+  - [DataShareStatusType](#datasharestatustype)
   - [DescribeClusterDbRevisionsPaginatorName](#describeclusterdbrevisionspaginatorname)
   - [DescribeClusterParameterGroupsPaginatorName](#describeclusterparametergroupspaginatorname)
   - [DescribeClusterParametersPaginatorName](#describeclusterparameterspaginatorname)
@@ -138,6 +141,46 @@ from mypy_boto3_redshift.literals import ClusterRestoredWaiterName
 Values:
 
 - `cluster_restored`
+
+## DataShareStatusForConsumerType
+
+```python
+from mypy_boto3_redshift.literals import DataShareStatusForConsumerType
+```
+
+Values:
+
+- `ACTIVE`
+- `AVAILABLE`
+
+## DataShareStatusForProducerType
+
+```python
+from mypy_boto3_redshift.literals import DataShareStatusForProducerType
+```
+
+Values:
+
+- `ACTIVE`
+- `AUTHORIZED`
+- `DEAUTHORIZED`
+- `PENDING_AUTHORIZATION`
+- `REJECTED`
+
+## DataShareStatusType
+
+```python
+from mypy_boto3_redshift.literals import DataShareStatusType
+```
+
+Values:
+
+- `ACTIVE`
+- `AUTHORIZED`
+- `AVAILABLE`
+- `DEAUTHORIZED`
+- `PENDING_AUTHORIZATION`
+- `REJECTED`
 
 ## DescribeClusterDbRevisionsPaginatorName
 
