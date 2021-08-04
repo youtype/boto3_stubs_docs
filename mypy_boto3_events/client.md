@@ -734,7 +734,7 @@ Returns
 ### list_event_sources
 
 You can use this to see all the partner event sources that have been shared
-with your AWS account.
+with your Amazon Web Services account.
 
 Type annotations for `boto3.client("events").list_event_sources` method.
 
@@ -755,8 +755,8 @@ Returns
 
 ### list_partner_event_source_accounts
 
-An SaaS partner can use this operation to display the AWS account ID that a
-particular partner event source name is associated with.
+An SaaS partner can use this operation to display the Amazon Web Services
+account ID that a particular partner event source name is associated with.
 
 Type annotations for
 `boto3.client("events").list_partner_event_source_accounts` method.
@@ -950,8 +950,8 @@ Returns
 
 ### put_permission
 
-Running `PutPermission` permits the specified AWS account or AWS organization
-to put events to the specified *event bus*.
+Running `PutPermission` permits the specified Amazon Web Services account or
+Amazon Web Services organization to put events to the specified *event bus*.
 
 Type annotations for `boto3.client("events").put_permission` method.
 
@@ -1019,8 +1019,8 @@ Returns [PutTargetsResponseTypeDef](./type_defs.md#puttargetsresponsetypedef).
 
 ### remove_permission
 
-Revokes the permission of another AWS account to be able to put events to the
-specified event bus.
+Revokes the permission of another Amazon Web Services account to be able to put
+events to the specified event bus.
 
 Type annotations for `boto3.client("events").remove_permission` method.
 

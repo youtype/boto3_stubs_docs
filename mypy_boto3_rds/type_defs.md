@@ -1703,6 +1703,7 @@ Optional fields:
 - `DBClusterParameterGroup`: `str`
 - `DBSubnetGroup`: `str`
 - `Status`: `str`
+- `AutomaticRestartTime`: `datetime`
 - `PercentProgress`: `str`
 - `EarliestRestorableTime`: `datetime`
 - `Endpoint`: `str`
@@ -1918,6 +1919,7 @@ Optional fields:
 - `DBInstanceClass`: `str`
 - `Engine`: `str`
 - `DBInstanceStatus`: `str`
+- `AutomaticRestartTime`: `datetime`
 - `MasterUsername`: `str`
 - `DBName`: `str`
 - `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)

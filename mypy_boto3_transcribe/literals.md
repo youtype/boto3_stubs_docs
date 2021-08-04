@@ -10,14 +10,18 @@ type annotations stubs module
 - [Literals for boto3 TranscribeService module](#literals-for-boto3-transcribeservice-module)
   - [BaseModelNameType](#basemodelnametype)
   - [CLMLanguageCodeType](#clmlanguagecodetype)
+  - [CallAnalyticsJobStatusType](#callanalyticsjobstatustype)
   - [LanguageCodeType](#languagecodetype)
   - [MediaFormatType](#mediaformattype)
   - [MedicalContentIdentificationTypeType](#medicalcontentidentificationtypetype)
   - [ModelStatusType](#modelstatustype)
   - [OutputLocationTypeType](#outputlocationtypetype)
+  - [ParticipantRoleType](#participantroletype)
   - [RedactionOutputType](#redactionoutputtype)
   - [RedactionTypeType](#redactiontypetype)
+  - [SentimentValueType](#sentimentvaluetype)
   - [SpecialtyType](#specialtytype)
+  - [TranscriptFilterTypeType](#transcriptfiltertypetype)
   - [TranscriptionJobStatusType](#transcriptionjobstatustype)
   - [TypeType](#typetype)
   - [VocabularyFilterMethodType](#vocabularyfiltermethodtype)
@@ -47,6 +51,19 @@ Values:
 - `en-US`
 - `es-US`
 - `hi-IN`
+
+## CallAnalyticsJobStatusType
+
+```python
+from mypy_boto3_transcribe.literals import CallAnalyticsJobStatusType
+```
+
+Values:
+
+- `COMPLETED`
+- `FAILED`
+- `IN_PROGRESS`
+- `QUEUED`
 
 ## LanguageCodeType
 
@@ -142,6 +159,17 @@ Values:
 - `CUSTOMER_BUCKET`
 - `SERVICE_BUCKET`
 
+## ParticipantRoleType
+
+```python
+from mypy_boto3_transcribe.literals import ParticipantRoleType
+```
+
+Values:
+
+- `AGENT`
+- `CUSTOMER`
+
 ## RedactionOutputType
 
 ```python
@@ -163,6 +191,19 @@ Values:
 
 - `PII`
 
+## SentimentValueType
+
+```python
+from mypy_boto3_transcribe.literals import SentimentValueType
+```
+
+Values:
+
+- `MIXED`
+- `NEGATIVE`
+- `NEUTRAL`
+- `POSITIVE`
+
 ## SpecialtyType
 
 ```python
@@ -172,6 +213,16 @@ from mypy_boto3_transcribe.literals import SpecialtyType
 Values:
 
 - `PRIMARYCARE`
+
+## TranscriptFilterTypeType
+
+```python
+from mypy_boto3_transcribe.literals import TranscriptFilterTypeType
+```
+
+Values:
+
+- `EXACT`
 
 ## TranscriptionJobStatusType
 

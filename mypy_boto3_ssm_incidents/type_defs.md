@@ -221,11 +221,14 @@ from mypy_boto3_ssm_incidents.type_defs import CreateTimelineEventInputRequestTy
 
 Required fields:
 
-- `clientToken`: `str`
 - `eventData`: `str`
 - `eventTime`: `Union`\[`datetime`, `str`\]
 - `eventType`: `str`
 - `incidentRecordArn`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
 
 ## CreateTimelineEventOutputTypeDef
 
@@ -832,6 +835,10 @@ Required fields:
   [RegionInfoTypeDef](./type_defs.md#regioninfotypedef)\]
 - `status`: [ReplicationSetStatusType](./literals.md#replicationsetstatustype)
 
+Optional fields:
+
+- `arn`: `str`
+
 ## ResourcePolicyTypeDef
 
 ```python
@@ -1088,12 +1095,12 @@ from mypy_boto3_ssm_incidents.type_defs import UpdateTimelineEventInputRequestTy
 
 Required fields:
 
-- `clientToken`: `str`
 - `eventId`: `str`
 - `incidentRecordArn`: `str`
 
 Optional fields:
 
+- `clientToken`: `str`
 - `eventData`: `str`
 - `eventTime`: `Union`\[`datetime`, `str`\]
 - `eventType`: `str`

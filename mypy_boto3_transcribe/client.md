@@ -13,10 +13,13 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
+    - [create_call_analytics_category](#create_call_analytics_category)
     - [create_language_model](#create_language_model)
     - [create_medical_vocabulary](#create_medical_vocabulary)
     - [create_vocabulary](#create_vocabulary)
     - [create_vocabulary_filter](#create_vocabulary_filter)
+    - [delete_call_analytics_category](#delete_call_analytics_category)
+    - [delete_call_analytics_job](#delete_call_analytics_job)
     - [delete_language_model](#delete_language_model)
     - [delete_medical_transcription_job](#delete_medical_transcription_job)
     - [delete_medical_vocabulary](#delete_medical_vocabulary)
@@ -25,19 +28,25 @@ type annotations stubs module
     - [delete_vocabulary_filter](#delete_vocabulary_filter)
     - [describe_language_model](#describe_language_model)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_call_analytics_category](#get_call_analytics_category)
+    - [get_call_analytics_job](#get_call_analytics_job)
     - [get_medical_transcription_job](#get_medical_transcription_job)
     - [get_medical_vocabulary](#get_medical_vocabulary)
     - [get_transcription_job](#get_transcription_job)
     - [get_vocabulary](#get_vocabulary)
     - [get_vocabulary_filter](#get_vocabulary_filter)
+    - [list_call_analytics_categories](#list_call_analytics_categories)
+    - [list_call_analytics_jobs](#list_call_analytics_jobs)
     - [list_language_models](#list_language_models)
     - [list_medical_transcription_jobs](#list_medical_transcription_jobs)
     - [list_medical_vocabularies](#list_medical_vocabularies)
     - [list_transcription_jobs](#list_transcription_jobs)
     - [list_vocabularies](#list_vocabularies)
     - [list_vocabulary_filters](#list_vocabulary_filters)
+    - [start_call_analytics_job](#start_call_analytics_job)
     - [start_medical_transcription_job](#start_medical_transcription_job)
     - [start_transcription_job](#start_transcription_job)
+    - [update_call_analytics_category](#update_call_analytics_category)
     - [update_medical_vocabulary](#update_medical_vocabulary)
     - [update_vocabulary](#update_vocabulary)
     - [update_vocabulary_filter](#update_vocabulary_filter)
@@ -106,6 +115,27 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+### create_call_analytics_category
+
+Creates an analytics category.
+
+Type annotations for
+`boto3.client("transcribe").create_call_analytics_category` method.
+
+Boto3 documentation:
+[TranscribeService.Client.create_call_analytics_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_call_analytics_category)
+
+Arguments mapping described in
+[CreateCallAnalyticsCategoryRequestRequestTypeDef](./type_defs.md#createcallanalyticscategoryrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CategoryName`: `str` *(required)*
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+
+Returns
+[CreateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#createcallanalyticscategoryresponsetypedef).
 
 ### create_language_model
 
@@ -204,6 +234,44 @@ Keyword-only arguments:
 
 Returns
 [CreateVocabularyFilterResponseTypeDef](./type_defs.md#createvocabularyfilterresponsetypedef).
+
+### delete_call_analytics_category
+
+Deletes a call analytics category using its name.
+
+Type annotations for
+`boto3.client("transcribe").delete_call_analytics_category` method.
+
+Boto3 documentation:
+[TranscribeService.Client.delete_call_analytics_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_call_analytics_category)
+
+Arguments mapping described in
+[DeleteCallAnalyticsCategoryRequestRequestTypeDef](./type_defs.md#deletecallanalyticscategoryrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CategoryName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### delete_call_analytics_job
+
+Deletes a call analytics job using its name.
+
+Type annotations for `boto3.client("transcribe").delete_call_analytics_job`
+method.
+
+Boto3 documentation:
+[TranscribeService.Client.delete_call_analytics_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_call_analytics_job)
+
+Arguments mapping described in
+[DeleteCallAnalyticsJobRequestRequestTypeDef](./type_defs.md#deletecallanalyticsjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CallAnalyticsJobName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### delete_language_model
 
@@ -346,6 +414,46 @@ Arguments:
 
 Returns `str`.
 
+### get_call_analytics_category
+
+Retrieves information about a call analytics category.
+
+Type annotations for `boto3.client("transcribe").get_call_analytics_category`
+method.
+
+Boto3 documentation:
+[TranscribeService.Client.get_call_analytics_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_call_analytics_category)
+
+Arguments mapping described in
+[GetCallAnalyticsCategoryRequestRequestTypeDef](./type_defs.md#getcallanalyticscategoryrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CategoryName`: `str` *(required)*
+
+Returns
+[GetCallAnalyticsCategoryResponseTypeDef](./type_defs.md#getcallanalyticscategoryresponsetypedef).
+
+### get_call_analytics_job
+
+Returns information about a call analytics job.
+
+Type annotations for `boto3.client("transcribe").get_call_analytics_job`
+method.
+
+Boto3 documentation:
+[TranscribeService.Client.get_call_analytics_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_call_analytics_job)
+
+Arguments mapping described in
+[GetCallAnalyticsJobRequestRequestTypeDef](./type_defs.md#getcallanalyticsjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CallAnalyticsJobName`: `str` *(required)*
+
+Returns
+[GetCallAnalyticsJobResponseTypeDef](./type_defs.md#getcallanalyticsjobresponsetypedef).
+
 ### get_medical_transcription_job
 
 Returns information about a transcription job from Amazon Transcribe Medical.
@@ -442,6 +550,53 @@ Keyword-only arguments:
 
 Returns
 [GetVocabularyFilterResponseTypeDef](./type_defs.md#getvocabularyfilterresponsetypedef).
+
+### list_call_analytics_categories
+
+Provides more information about the call analytics categories that you've
+created.
+
+Type annotations for
+`boto3.client("transcribe").list_call_analytics_categories` method.
+
+Boto3 documentation:
+[TranscribeService.Client.list_call_analytics_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_call_analytics_categories)
+
+Arguments mapping described in
+[ListCallAnalyticsCategoriesRequestRequestTypeDef](./type_defs.md#listcallanalyticscategoriesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListCallAnalyticsCategoriesResponseTypeDef](./type_defs.md#listcallanalyticscategoriesresponsetypedef).
+
+### list_call_analytics_jobs
+
+List call analytics jobs with a specified status or substring that matches
+their names.
+
+Type annotations for `boto3.client("transcribe").list_call_analytics_jobs`
+method.
+
+Boto3 documentation:
+[TranscribeService.Client.list_call_analytics_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_call_analytics_jobs)
+
+Arguments mapping described in
+[ListCallAnalyticsJobsRequestRequestTypeDef](./type_defs.md#listcallanalyticsjobsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Status`:
+  [CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype)
+- `JobNameContains`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListCallAnalyticsJobsResponseTypeDef](./type_defs.md#listcallanalyticsjobsresponsetypedef).
 
 ### list_language_models
 
@@ -581,6 +736,35 @@ Keyword-only arguments:
 Returns
 [ListVocabularyFiltersResponseTypeDef](./type_defs.md#listvocabularyfiltersresponsetypedef).
 
+### start_call_analytics_job
+
+Starts an asynchronous analytics job that not only transcribes the audio
+recording of a caller and agent, but also returns additional insights.
+
+Type annotations for `boto3.client("transcribe").start_call_analytics_job`
+method.
+
+Boto3 documentation:
+[TranscribeService.Client.start_call_analytics_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_call_analytics_job)
+
+Arguments mapping described in
+[StartCallAnalyticsJobRequestRequestTypeDef](./type_defs.md#startcallanalyticsjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CallAnalyticsJobName`: `str` *(required)*
+- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef) *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `OutputLocation`: `str`
+- `OutputEncryptionKMSKeyId`: `str`
+- `Settings`:
+  [CallAnalyticsJobSettingsTypeDef](./type_defs.md#callanalyticsjobsettingstypedef)
+- `ChannelDefinitions`:
+  `List`\[[ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef)\]
+
+Returns
+[StartCallAnalyticsJobResponseTypeDef](./type_defs.md#startcallanalyticsjobresponsetypedef).
+
 ### start_medical_transcription_job
 
 Starts a batch job to transcribe medical speech to text.
@@ -651,6 +835,27 @@ Keyword-only arguments:
 
 Returns
 [StartTranscriptionJobResponseTypeDef](./type_defs.md#starttranscriptionjobresponsetypedef).
+
+### update_call_analytics_category
+
+Updates the call analytics category with new values.
+
+Type annotations for
+`boto3.client("transcribe").update_call_analytics_category` method.
+
+Boto3 documentation:
+[TranscribeService.Client.update_call_analytics_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_call_analytics_category)
+
+Arguments mapping described in
+[UpdateCallAnalyticsCategoryRequestRequestTypeDef](./type_defs.md#updatecallanalyticscategoryrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CategoryName`: `str` *(required)*
+- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+
+Returns
+[UpdateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#updatecallanalyticscategoryresponsetypedef).
 
 ### update_medical_vocabulary
 

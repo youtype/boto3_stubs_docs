@@ -182,11 +182,11 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `clientToken`: `str` *(required)*
 - `eventData`: `str` *(required)*
 - `eventTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `eventType`: `str` *(required)*
 - `incidentRecordArn`: `str` *(required)*
+- `clientToken`: `str`
 
 Returns
 [CreateTimelineEventOutputTypeDef](./type_defs.md#createtimelineeventoutputtypedef).
@@ -766,9 +766,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `clientToken`: `str` *(required)*
 - `eventId`: `str` *(required)*
 - `incidentRecordArn`: `str` *(required)*
+- `clientToken`: `str`
 - `eventData`: `str`
 - `eventTime`: `Union`\[`datetime`, `str`\]
 - `eventType`: `str`
