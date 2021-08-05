@@ -64,6 +64,7 @@ type annotations stubs module
   - [DescribeTerminationPolicyTypesAnswerTypeDef](#describeterminationpolicytypesanswertypedef)
   - [DescribeWarmPoolAnswerTypeDef](#describewarmpoolanswertypedef)
   - [DescribeWarmPoolTypeRequestTypeDef](#describewarmpooltyperequesttypedef)
+  - [DesiredConfigurationTypeDef](#desiredconfigurationtypedef)
   - [DetachInstancesAnswerTypeDef](#detachinstancesanswertypedef)
   - [DetachInstancesQueryRequestTypeDef](#detachinstancesqueryrequesttypedef)
   - [DetachLoadBalancerTargetGroupsTypeRequestTypeDef](#detachloadbalancertargetgroupstyperequesttypedef)
@@ -982,6 +983,19 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
+## DesiredConfigurationTypeDef
+
+```python
+from mypy_boto3_autoscaling.type_defs import DesiredConfigurationTypeDef
+```
+
+Optional fields:
+
+- `LaunchTemplate`:
+  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
+- `MixedInstancesPolicy`:
+  [MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef)
+
 ## DetachInstancesAnswerTypeDef
 
 ```python
@@ -1279,6 +1293,10 @@ Optional fields:
 - `InstancesToUpdate`: `int`
 - `ProgressDetails`:
   [InstanceRefreshProgressDetailsTypeDef](./type_defs.md#instancerefreshprogressdetailstypedef)
+- `Preferences`:
+  [RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef)
+- `DesiredConfiguration`:
+  [DesiredConfigurationTypeDef](./type_defs.md#desiredconfigurationtypedef)
 
 ## InstanceRefreshWarmPoolProgressTypeDef
 
@@ -1851,6 +1869,7 @@ Optional fields:
 - `InstanceWarmup`: `int`
 - `CheckpointPercentages`: `List`\[`int`\]
 - `CheckpointDelay`: `int`
+- `SkipMatching`: `bool`
 
 ## ResponseMetadataTypeDef
 
@@ -2030,6 +2049,8 @@ Optional fields:
 
 - `Strategy`: `Literal['Rolling']` (see
   [RefreshStrategyType](./literals.md#refreshstrategytype))
+- `DesiredConfiguration`:
+  [DesiredConfigurationTypeDef](./type_defs.md#desiredconfigurationtypedef)
 - `Preferences`:
   [RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef)
 

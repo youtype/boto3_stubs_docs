@@ -1797,6 +1797,10 @@ Required fields:
 - `closingResponse`:
   [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
 
+Optional fields:
+
+- `active`: `bool`
+
 ## IntentConfirmationSettingTypeDef
 
 ```python
@@ -1809,6 +1813,10 @@ Required fields:
   [PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef)
 - `declinationResponse`:
   [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
+
+Optional fields:
+
+- `active`: `bool`
 
 ## IntentFilterTypeDef
 
@@ -3103,6 +3111,7 @@ Optional fields:
 
 - `stillWaitingResponse`:
   [StillWaitingResponseSpecificationTypeDef](./type_defs.md#stillwaitingresponsespecificationtypedef)
+- `active`: `bool`
 
 ## WaiterConfigTypeDef
 

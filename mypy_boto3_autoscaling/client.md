@@ -1345,9 +1345,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_instance_refresh
 
-Starts a new instance refresh operation, which triggers a rolling replacement
-of previously launched instances in the Auto Scaling group with a new group of
-instances.
+Starts a new instance refresh operation.
 
 Type annotations for `boto3.client("autoscaling").start_instance_refresh`
 method.
@@ -1363,6 +1361,8 @@ Keyword-only arguments:
 - `AutoScalingGroupName`: `str` *(required)*
 - `Strategy`: `Literal['Rolling']` (see
   [RefreshStrategyType](./literals.md#refreshstrategytype))
+- `DesiredConfiguration`:
+  [DesiredConfigurationTypeDef](./type_defs.md#desiredconfigurationtypedef)
 - `Preferences`:
   [RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef)
 
