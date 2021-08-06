@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Paginators for boto3 Connect module](#paginators-for-boto3-connect-module)
   - [GetMetricDataPaginator](#getmetricdatapaginator)
+  - [ListAgentStatusesPaginator](#listagentstatusespaginator)
   - [ListApprovedOriginsPaginator](#listapprovedoriginspaginator)
   - [ListBotsPaginator](#listbotspaginator)
   - [ListContactFlowsPaginator](#listcontactflowspaginator)
@@ -64,6 +65,34 @@ Arguments for `GetMetricDataPaginator.paginate` method:
 
 `GetMetricDataPaginator.paginate` returns
 `Iterator`\[[GetMetricDataResponseTypeDef](./type_defs.md#getmetricdataresponsetypedef)\].
+
+## ListAgentStatusesPaginator
+
+Type annotations for
+`boto3.client("connect").get_paginator("list_agent_statuses")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_connect.paginator import ListAgentStatusesPaginator
+
+def get_list_agent_statuses_paginator() -> ListAgentStatusesPaginator:
+    return boto3.client("connect").get_paginator("list_agent_statuses")
+```
+
+Boto3 documentation:
+[Connect.Paginator.ListAgentStatuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListAgentStatuses)
+
+Arguments for `ListAgentStatusesPaginator.paginate` method:
+
+- `InstanceId`: `str` *(required)*
+- `AgentStatusTypes`:
+  `List`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListAgentStatusesPaginator.paginate` returns
+`Iterator`\[[ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef)\].
 
 ## ListApprovedOriginsPaginator
 

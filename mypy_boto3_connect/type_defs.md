@@ -8,6 +8,8 @@ type annotations stubs module
 [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
 - [Typed dictionaries for boto3 Connect module](#typed-dictionaries-for-boto3-connect-module)
+  - [AgentStatusSummaryTypeDef](#agentstatussummarytypedef)
+  - [AgentStatusTypeDef](#agentstatustypedef)
   - [AssociateApprovedOriginRequestRequestTypeDef](#associateapprovedoriginrequestrequesttypedef)
   - [AssociateBotRequestRequestTypeDef](#associatebotrequestrequesttypedef)
   - [AssociateInstanceStorageConfigRequestRequestTypeDef](#associateinstancestorageconfigrequestrequesttypedef)
@@ -22,8 +24,12 @@ type annotations stubs module
   - [ChatMessageTypeDef](#chatmessagetypedef)
   - [ContactFlowSummaryTypeDef](#contactflowsummarytypedef)
   - [ContactFlowTypeDef](#contactflowtypedef)
+  - [CreateAgentStatusRequestRequestTypeDef](#createagentstatusrequestrequesttypedef)
+  - [CreateAgentStatusResponseTypeDef](#createagentstatusresponsetypedef)
   - [CreateContactFlowRequestRequestTypeDef](#createcontactflowrequestrequesttypedef)
   - [CreateContactFlowResponseTypeDef](#createcontactflowresponsetypedef)
+  - [CreateHoursOfOperationRequestRequestTypeDef](#createhoursofoperationrequestrequesttypedef)
+  - [CreateHoursOfOperationResponseTypeDef](#createhoursofoperationresponsetypedef)
   - [CreateInstanceRequestRequestTypeDef](#createinstancerequestrequesttypedef)
   - [CreateInstanceResponseTypeDef](#createinstanceresponsetypedef)
   - [CreateIntegrationAssociationRequestRequestTypeDef](#createintegrationassociationrequestrequesttypedef)
@@ -44,12 +50,15 @@ type annotations stubs module
   - [CurrentMetricDataTypeDef](#currentmetricdatatypedef)
   - [CurrentMetricResultTypeDef](#currentmetricresulttypedef)
   - [CurrentMetricTypeDef](#currentmetrictypedef)
+  - [DeleteHoursOfOperationRequestRequestTypeDef](#deletehoursofoperationrequestrequesttypedef)
   - [DeleteInstanceRequestRequestTypeDef](#deleteinstancerequestrequesttypedef)
   - [DeleteIntegrationAssociationRequestRequestTypeDef](#deleteintegrationassociationrequestrequesttypedef)
   - [DeleteQuickConnectRequestRequestTypeDef](#deletequickconnectrequestrequesttypedef)
   - [DeleteUseCaseRequestRequestTypeDef](#deleteusecaserequestrequesttypedef)
   - [DeleteUserHierarchyGroupRequestRequestTypeDef](#deleteuserhierarchygrouprequestrequesttypedef)
   - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
+  - [DescribeAgentStatusRequestRequestTypeDef](#describeagentstatusrequestrequesttypedef)
+  - [DescribeAgentStatusResponseTypeDef](#describeagentstatusresponsetypedef)
   - [DescribeContactFlowRequestRequestTypeDef](#describecontactflowrequestrequesttypedef)
   - [DescribeContactFlowResponseTypeDef](#describecontactflowresponsetypedef)
   - [DescribeHoursOfOperationRequestRequestTypeDef](#describehoursofoperationrequestrequesttypedef)
@@ -116,6 +125,8 @@ type annotations stubs module
   - [LexBotConfigTypeDef](#lexbotconfigtypedef)
   - [LexBotTypeDef](#lexbottypedef)
   - [LexV2BotTypeDef](#lexv2bottypedef)
+  - [ListAgentStatusRequestRequestTypeDef](#listagentstatusrequestrequesttypedef)
+  - [ListAgentStatusResponseTypeDef](#listagentstatusresponsetypedef)
   - [ListApprovedOriginsRequestRequestTypeDef](#listapprovedoriginsrequestrequesttypedef)
   - [ListApprovedOriginsResponseTypeDef](#listapprovedoriginsresponsetypedef)
   - [ListBotsRequestRequestTypeDef](#listbotsrequestrequesttypedef)
@@ -200,9 +211,11 @@ type annotations stubs module
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [ThresholdTypeDef](#thresholdtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateAgentStatusRequestRequestTypeDef](#updateagentstatusrequestrequesttypedef)
   - [UpdateContactAttributesRequestRequestTypeDef](#updatecontactattributesrequestrequesttypedef)
   - [UpdateContactFlowContentRequestRequestTypeDef](#updatecontactflowcontentrequestrequesttypedef)
   - [UpdateContactFlowNameRequestRequestTypeDef](#updatecontactflownamerequestrequesttypedef)
+  - [UpdateHoursOfOperationRequestRequestTypeDef](#updatehoursofoperationrequestrequesttypedef)
   - [UpdateInstanceAttributeRequestRequestTypeDef](#updateinstanceattributerequestrequesttypedef)
   - [UpdateInstanceStorageConfigRequestRequestTypeDef](#updateinstancestorageconfigrequestrequesttypedef)
   - [UpdateQueueHoursOfOperationRequestRequestTypeDef](#updatequeuehoursofoperationrequestrequesttypedef)
@@ -230,6 +243,36 @@ type annotations stubs module
   - [UserSummaryTypeDef](#usersummarytypedef)
   - [UserTypeDef](#usertypedef)
   - [VoiceRecordingConfigurationTypeDef](#voicerecordingconfigurationtypedef)
+
+## AgentStatusSummaryTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import AgentStatusSummaryTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `Arn`: `str`
+- `Name`: `str`
+- `Type`: [AgentStatusTypeType](./literals.md#agentstatustypetype)
+
+## AgentStatusTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import AgentStatusTypeDef
+```
+
+Optional fields:
+
+- `AgentStatusARN`: `str`
+- `AgentStatusId`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `Type`: [AgentStatusTypeType](./literals.md#agentstatustypetype)
+- `DisplayOrder`: `int`
+- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
+- `Tags`: `Dict`\[`str`, `str`\]
 
 ## AssociateApprovedOriginRequestRequestTypeDef
 
@@ -405,6 +448,37 @@ Optional fields:
 - `Content`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
+## CreateAgentStatusRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateAgentStatusRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `Name`: `str`
+- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
+
+Optional fields:
+
+- `Description`: `str`
+- `DisplayOrder`: `int`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateAgentStatusResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateAgentStatusResponseTypeDef
+```
+
+Required fields:
+
+- `AgentStatusARN`: `str`
+- `AgentStatusId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateContactFlowRequestRequestTypeDef
 
 ```python
@@ -433,6 +507,38 @@ Required fields:
 
 - `ContactFlowId`: `str`
 - `ContactFlowArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateHoursOfOperationRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateHoursOfOperationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `Name`: `str`
+- `TimeZone`: `str`
+- `Config`:
+  `List`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
+
+Optional fields:
+
+- `Description`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateHoursOfOperationResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import CreateHoursOfOperationResponseTypeDef
+```
+
+Required fields:
+
+- `HoursOfOperationId`: `str`
+- `HoursOfOperationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -742,6 +848,17 @@ Optional fields:
 - `Name`: [CurrentMetricNameType](./literals.md#currentmetricnametype)
 - `Unit`: [UnitType](./literals.md#unittype)
 
+## DeleteHoursOfOperationRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DeleteHoursOfOperationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `HoursOfOperationId`: `str`
+
 ## DeleteInstanceRequestRequestTypeDef
 
 ```python
@@ -807,6 +924,29 @@ Required fields:
 
 - `InstanceId`: `str`
 - `UserId`: `str`
+
+## DescribeAgentStatusRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DescribeAgentStatusRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `AgentStatusId`: `str`
+
+## DescribeAgentStatusResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import DescribeAgentStatusResponseTypeDef
+```
+
+Required fields:
+
+- `AgentStatus`: [AgentStatusTypeDef](./type_defs.md#agentstatustypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DescribeContactFlowRequestRequestTypeDef
 
@@ -1455,7 +1595,7 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HoursOfOperationConfigTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Day`: [HoursOfOperationDaysType](./literals.md#hoursofoperationdaystype)
 - `StartTime`:
@@ -1481,7 +1621,7 @@ Optional fields:
 from mypy_boto3_connect.type_defs import HoursOfOperationTimeSliceTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `Hours`: `int`
 - `Minutes`: `int`
@@ -1656,6 +1796,37 @@ from mypy_boto3_connect.type_defs import LexV2BotTypeDef
 Optional fields:
 
 - `AliasArn`: `str`
+
+## ListAgentStatusRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListAgentStatusRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `AgentStatusTypes`:
+  `List`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
+
+## ListAgentStatusResponseTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import ListAgentStatusResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `AgentStatusSummaryList`:
+  `List`\[[AgentStatusSummaryTypeDef](./type_defs.md#agentstatussummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListApprovedOriginsRequestRequestTypeDef
 
@@ -2837,6 +3008,25 @@ Required fields:
 - `resourceArn`: `str`
 - `tagKeys`: `List`\[`str`\]
 
+## UpdateAgentStatusRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import UpdateAgentStatusRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `AgentStatusId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
+- `DisplayOrder`: `int`
+- `ResetOrderNumber`: `bool`
+
 ## UpdateContactAttributesRequestRequestTypeDef
 
 ```python
@@ -2876,6 +3066,25 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
+
+## UpdateHoursOfOperationRequestRequestTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import UpdateHoursOfOperationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceId`: `str`
+- `HoursOfOperationId`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `TimeZone`: `str`
+- `Config`:
+  `List`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
 
 ## UpdateInstanceAttributeRequestRequestTypeDef
 

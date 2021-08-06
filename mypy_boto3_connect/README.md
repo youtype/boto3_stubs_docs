@@ -40,7 +40,9 @@ from mypy_boto3_connect.client import ConnectClient
 - [associate_routing_profile_queues](./client.md#associate_routing_profile_queues)
 - [associate_security_key](./client.md#associate_security_key)
 - [can_paginate](./client.md#can_paginate)
+- [create_agent_status](./client.md#create_agent_status)
 - [create_contact_flow](./client.md#create_contact_flow)
+- [create_hours_of_operation](./client.md#create_hours_of_operation)
 - [create_instance](./client.md#create_instance)
 - [create_integration_association](./client.md#create_integration_association)
 - [create_queue](./client.md#create_queue)
@@ -49,12 +51,14 @@ from mypy_boto3_connect.client import ConnectClient
 - [create_use_case](./client.md#create_use_case)
 - [create_user](./client.md#create_user)
 - [create_user_hierarchy_group](./client.md#create_user_hierarchy_group)
+- [delete_hours_of_operation](./client.md#delete_hours_of_operation)
 - [delete_instance](./client.md#delete_instance)
 - [delete_integration_association](./client.md#delete_integration_association)
 - [delete_quick_connect](./client.md#delete_quick_connect)
 - [delete_use_case](./client.md#delete_use_case)
 - [delete_user](./client.md#delete_user)
 - [delete_user_hierarchy_group](./client.md#delete_user_hierarchy_group)
+- [describe_agent_status](./client.md#describe_agent_status)
 - [describe_contact_flow](./client.md#describe_contact_flow)
 - [describe_hours_of_operation](./client.md#describe_hours_of_operation)
 - [describe_instance](./client.md#describe_instance)
@@ -81,6 +85,7 @@ from mypy_boto3_connect.client import ConnectClient
 - [get_federation_token](./client.md#get_federation_token)
 - [get_metric_data](./client.md#get_metric_data)
 - [get_paginator](./client.md#get_paginator)
+- [list_agent_statuses](./client.md#list_agent_statuses)
 - [list_approved_origins](./client.md#list_approved_origins)
 - [list_bots](./client.md#list_bots)
 - [list_contact_flows](./client.md#list_contact_flows)
@@ -114,9 +119,11 @@ from mypy_boto3_connect.client import ConnectClient
 - [suspend_contact_recording](./client.md#suspend_contact_recording)
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
+- [update_agent_status](./client.md#update_agent_status)
 - [update_contact_attributes](./client.md#update_contact_attributes)
 - [update_contact_flow_content](./client.md#update_contact_flow_content)
 - [update_contact_flow_name](./client.md#update_contact_flow_name)
+- [update_hours_of_operation](./client.md#update_hours_of_operation)
 - [update_instance_attribute](./client.md#update_instance_attribute)
 - [update_instance_storage_config](./client.md#update_instance_storage_config)
 - [update_queue_hours_of_operation](./client.md#update_queue_hours_of_operation)
@@ -172,6 +179,7 @@ from mypy_boto3_connect.paginators import GetMetricDataPaginator, ...
 ```
 
 - [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
+- [ListAgentStatusesPaginator](./paginators.md#listagentstatusespaginator)
 - [ListApprovedOriginsPaginator](./paginators.md#listapprovedoriginspaginator)
 - [ListBotsPaginator](./paginators.md#listbotspaginator)
 - [ListContactFlowsPaginator](./paginators.md#listcontactflowspaginator)
@@ -202,9 +210,11 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.literals import ChannelType, ...
+from mypy_boto3_connect.literals import AgentStatusStateType, ...
 ```
 
+- [AgentStatusStateType](./literals.md#agentstatusstatetype)
+- [AgentStatusTypeType](./literals.md#agentstatustypetype)
 - [ChannelType](./literals.md#channeltype)
 - [ComparisonType](./literals.md#comparisontype)
 - [ContactFlowTypeType](./literals.md#contactflowtypetype)
@@ -220,6 +230,7 @@ from mypy_boto3_connect.literals import ChannelType, ...
 - [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
 - [IntegrationTypeType](./literals.md#integrationtypetype)
 - [LexVersionType](./literals.md#lexversiontype)
+- [ListAgentStatusesPaginatorName](./literals.md#listagentstatusespaginatorname)
 - [ListApprovedOriginsPaginatorName](./literals.md#listapprovedoriginspaginatorname)
 - [ListBotsPaginatorName](./literals.md#listbotspaginatorname)
 - [ListContactFlowsPaginatorName](./literals.md#listcontactflowspaginatorname)
@@ -264,9 +275,11 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.type_defs import AssociateApprovedOriginRequestRequestTypeDef, ...
+from mypy_boto3_connect.type_defs import AgentStatusSummaryTypeDef, ...
 ```
 
+- [AgentStatusSummaryTypeDef](./type_defs.md#agentstatussummarytypedef)
+- [AgentStatusTypeDef](./type_defs.md#agentstatustypedef)
 - [AssociateApprovedOriginRequestRequestTypeDef](./type_defs.md#associateapprovedoriginrequestrequesttypedef)
 - [AssociateBotRequestRequestTypeDef](./type_defs.md#associatebotrequestrequesttypedef)
 - [AssociateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#associateinstancestorageconfigrequestrequesttypedef)
@@ -281,8 +294,12 @@ from mypy_boto3_connect.type_defs import AssociateApprovedOriginRequestRequestTy
 - [ChatMessageTypeDef](./type_defs.md#chatmessagetypedef)
 - [ContactFlowSummaryTypeDef](./type_defs.md#contactflowsummarytypedef)
 - [ContactFlowTypeDef](./type_defs.md#contactflowtypedef)
+- [CreateAgentStatusRequestRequestTypeDef](./type_defs.md#createagentstatusrequestrequesttypedef)
+- [CreateAgentStatusResponseTypeDef](./type_defs.md#createagentstatusresponsetypedef)
 - [CreateContactFlowRequestRequestTypeDef](./type_defs.md#createcontactflowrequestrequesttypedef)
 - [CreateContactFlowResponseTypeDef](./type_defs.md#createcontactflowresponsetypedef)
+- [CreateHoursOfOperationRequestRequestTypeDef](./type_defs.md#createhoursofoperationrequestrequesttypedef)
+- [CreateHoursOfOperationResponseTypeDef](./type_defs.md#createhoursofoperationresponsetypedef)
 - [CreateInstanceRequestRequestTypeDef](./type_defs.md#createinstancerequestrequesttypedef)
 - [CreateInstanceResponseTypeDef](./type_defs.md#createinstanceresponsetypedef)
 - [CreateIntegrationAssociationRequestRequestTypeDef](./type_defs.md#createintegrationassociationrequestrequesttypedef)
@@ -303,12 +320,15 @@ from mypy_boto3_connect.type_defs import AssociateApprovedOriginRequestRequestTy
 - [CurrentMetricDataTypeDef](./type_defs.md#currentmetricdatatypedef)
 - [CurrentMetricResultTypeDef](./type_defs.md#currentmetricresulttypedef)
 - [CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef)
+- [DeleteHoursOfOperationRequestRequestTypeDef](./type_defs.md#deletehoursofoperationrequestrequesttypedef)
 - [DeleteInstanceRequestRequestTypeDef](./type_defs.md#deleteinstancerequestrequesttypedef)
 - [DeleteIntegrationAssociationRequestRequestTypeDef](./type_defs.md#deleteintegrationassociationrequestrequesttypedef)
 - [DeleteQuickConnectRequestRequestTypeDef](./type_defs.md#deletequickconnectrequestrequesttypedef)
 - [DeleteUseCaseRequestRequestTypeDef](./type_defs.md#deleteusecaserequestrequesttypedef)
 - [DeleteUserHierarchyGroupRequestRequestTypeDef](./type_defs.md#deleteuserhierarchygrouprequestrequesttypedef)
 - [DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef)
+- [DescribeAgentStatusRequestRequestTypeDef](./type_defs.md#describeagentstatusrequestrequesttypedef)
+- [DescribeAgentStatusResponseTypeDef](./type_defs.md#describeagentstatusresponsetypedef)
 - [DescribeContactFlowRequestRequestTypeDef](./type_defs.md#describecontactflowrequestrequesttypedef)
 - [DescribeContactFlowResponseTypeDef](./type_defs.md#describecontactflowresponsetypedef)
 - [DescribeHoursOfOperationRequestRequestTypeDef](./type_defs.md#describehoursofoperationrequestrequesttypedef)
@@ -375,6 +395,8 @@ from mypy_boto3_connect.type_defs import AssociateApprovedOriginRequestRequestTy
 - [LexBotConfigTypeDef](./type_defs.md#lexbotconfigtypedef)
 - [LexBotTypeDef](./type_defs.md#lexbottypedef)
 - [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
+- [ListAgentStatusRequestRequestTypeDef](./type_defs.md#listagentstatusrequestrequesttypedef)
+- [ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef)
 - [ListApprovedOriginsRequestRequestTypeDef](./type_defs.md#listapprovedoriginsrequestrequesttypedef)
 - [ListApprovedOriginsResponseTypeDef](./type_defs.md#listapprovedoriginsresponsetypedef)
 - [ListBotsRequestRequestTypeDef](./type_defs.md#listbotsrequestrequesttypedef)
@@ -459,9 +481,11 @@ from mypy_boto3_connect.type_defs import AssociateApprovedOriginRequestRequestTy
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [ThresholdTypeDef](./type_defs.md#thresholdtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [UpdateAgentStatusRequestRequestTypeDef](./type_defs.md#updateagentstatusrequestrequesttypedef)
 - [UpdateContactAttributesRequestRequestTypeDef](./type_defs.md#updatecontactattributesrequestrequesttypedef)
 - [UpdateContactFlowContentRequestRequestTypeDef](./type_defs.md#updatecontactflowcontentrequestrequesttypedef)
 - [UpdateContactFlowNameRequestRequestTypeDef](./type_defs.md#updatecontactflownamerequestrequesttypedef)
+- [UpdateHoursOfOperationRequestRequestTypeDef](./type_defs.md#updatehoursofoperationrequestrequesttypedef)
 - [UpdateInstanceAttributeRequestRequestTypeDef](./type_defs.md#updateinstanceattributerequestrequesttypedef)
 - [UpdateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#updateinstancestorageconfigrequestrequesttypedef)
 - [UpdateQueueHoursOfOperationRequestRequestTypeDef](./type_defs.md#updatequeuehoursofoperationrequestrequesttypedef)

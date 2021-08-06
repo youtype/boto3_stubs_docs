@@ -21,7 +21,9 @@ type annotations stubs module
     - [associate_routing_profile_queues](#associate_routing_profile_queues)
     - [associate_security_key](#associate_security_key)
     - [can_paginate](#can_paginate)
+    - [create_agent_status](#create_agent_status)
     - [create_contact_flow](#create_contact_flow)
+    - [create_hours_of_operation](#create_hours_of_operation)
     - [create_instance](#create_instance)
     - [create_integration_association](#create_integration_association)
     - [create_queue](#create_queue)
@@ -30,12 +32,14 @@ type annotations stubs module
     - [create_use_case](#create_use_case)
     - [create_user](#create_user)
     - [create_user_hierarchy_group](#create_user_hierarchy_group)
+    - [delete_hours_of_operation](#delete_hours_of_operation)
     - [delete_instance](#delete_instance)
     - [delete_integration_association](#delete_integration_association)
     - [delete_quick_connect](#delete_quick_connect)
     - [delete_use_case](#delete_use_case)
     - [delete_user](#delete_user)
     - [delete_user_hierarchy_group](#delete_user_hierarchy_group)
+    - [describe_agent_status](#describe_agent_status)
     - [describe_contact_flow](#describe_contact_flow)
     - [describe_hours_of_operation](#describe_hours_of_operation)
     - [describe_instance](#describe_instance)
@@ -60,6 +64,7 @@ type annotations stubs module
     - [get_current_metric_data](#get_current_metric_data)
     - [get_federation_token](#get_federation_token)
     - [get_metric_data](#get_metric_data)
+    - [list_agent_statuses](#list_agent_statuses)
     - [list_approved_origins](#list_approved_origins)
     - [list_bots](#list_bots)
     - [list_contact_flows](#list_contact_flows)
@@ -93,9 +98,11 @@ type annotations stubs module
     - [suspend_contact_recording](#suspend_contact_recording)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_agent_status](#update_agent_status)
     - [update_contact_attributes](#update_contact_attributes)
     - [update_contact_flow_content](#update_contact_flow_content)
     - [update_contact_flow_name](#update_contact_flow_name)
+    - [update_hours_of_operation](#update_hours_of_operation)
     - [update_instance_attribute](#update_instance_attribute)
     - [update_instance_storage_config](#update_instance_storage_config)
     - [update_queue_hours_of_operation](#update_queue_hours_of_operation)
@@ -351,6 +358,31 @@ Arguments:
 
 Returns `bool`.
 
+### create_agent_status
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").create_agent_status` method.
+
+Boto3 documentation:
+[Connect.Client.create_agent_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_agent_status)
+
+Arguments mapping described in
+[CreateAgentStatusRequestRequestTypeDef](./type_defs.md#createagentstatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
+  *(required)*
+- `Description`: `str`
+- `DisplayOrder`: `int`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateAgentStatusResponseTypeDef](./type_defs.md#createagentstatusresponsetypedef).
+
 ### create_contact_flow
 
 Creates a contact flow for the specified Amazon Connect instance.
@@ -374,6 +406,33 @@ Keyword-only arguments:
 
 Returns
 [CreateContactFlowResponseTypeDef](./type_defs.md#createcontactflowresponsetypedef).
+
+### create_hours_of_operation
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").create_hours_of_operation`
+method.
+
+Boto3 documentation:
+[Connect.Client.create_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_hours_of_operation)
+
+Arguments mapping described in
+[CreateHoursOfOperationRequestRequestTypeDef](./type_defs.md#createhoursofoperationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `TimeZone`: `str` *(required)*
+- `Config`:
+  `List`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
+  *(required)*
+- `Description`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateHoursOfOperationResponseTypeDef](./type_defs.md#createhoursofoperationresponsetypedef).
 
 ### create_instance
 
@@ -581,6 +640,24 @@ Keyword-only arguments:
 Returns
 [CreateUserHierarchyGroupResponseTypeDef](./type_defs.md#createuserhierarchygroupresponsetypedef).
 
+### delete_hours_of_operation
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").delete_hours_of_operation`
+method.
+
+Boto3 documentation:
+[Connect.Client.delete_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_hours_of_operation)
+
+Arguments mapping described in
+[DeleteHoursOfOperationRequestRequestTypeDef](./type_defs.md#deletehoursofoperationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `HoursOfOperationId`: `str` *(required)*
+
 ### delete_instance
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -684,6 +761,26 @@ Keyword-only arguments:
 
 - `HierarchyGroupId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
+
+### describe_agent_status
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").describe_agent_status` method.
+
+Boto3 documentation:
+[Connect.Client.describe_agent_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_agent_status)
+
+Arguments mapping described in
+[DescribeAgentStatusRequestRequestTypeDef](./type_defs.md#describeagentstatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `AgentStatusId`: `str` *(required)*
+
+Returns
+[DescribeAgentStatusResponseTypeDef](./type_defs.md#describeagentstatusresponsetypedef).
 
 ### describe_contact_flow
 
@@ -1174,6 +1271,29 @@ Keyword-only arguments:
 
 Returns
 [GetMetricDataResponseTypeDef](./type_defs.md#getmetricdataresponsetypedef).
+
+### list_agent_statuses
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").list_agent_statuses` method.
+
+Boto3 documentation:
+[Connect.Client.list_agent_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_agent_statuses)
+
+Arguments mapping described in
+[ListAgentStatusRequestRequestTypeDef](./type_defs.md#listagentstatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `AgentStatusTypes`:
+  `List`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
+
+Returns
+[ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef).
 
 ### list_approved_origins
 
@@ -1901,6 +2021,28 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `List`\[`str`\] *(required)*
 
+### update_agent_status
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").update_agent_status` method.
+
+Boto3 documentation:
+[Connect.Client.update_agent_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_agent_status)
+
+Arguments mapping described in
+[UpdateAgentStatusRequestRequestTypeDef](./type_defs.md#updateagentstatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `AgentStatusId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
+- `DisplayOrder`: `int`
+- `ResetOrderNumber`: `bool`
+
 ### update_contact_attributes
 
 Creates or updates user-defined contact attributes associated with the
@@ -1960,6 +2102,29 @@ Keyword-only arguments:
 - `ContactFlowId`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
+
+### update_hours_of_operation
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations for `boto3.client("connect").update_hours_of_operation`
+method.
+
+Boto3 documentation:
+[Connect.Client.update_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_hours_of_operation)
+
+Arguments mapping described in
+[UpdateHoursOfOperationRequestRequestTypeDef](./type_defs.md#updatehoursofoperationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceId`: `str` *(required)*
+- `HoursOfOperationId`: `str` *(required)*
+- `Name`: `str`
+- `Description`: `str`
+- `TimeZone`: `str`
+- `Config`:
+  `List`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
 
 ### update_instance_attribute
 
@@ -2368,6 +2533,8 @@ overloads.
 
 - `client.get_paginator("get_metric_data")` ->
   [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
+- `client.get_paginator("list_agent_statuses")` ->
+  [ListAgentStatusesPaginator](./paginators.md#listagentstatusespaginator)
 - `client.get_paginator("list_approved_origins")` ->
   [ListApprovedOriginsPaginator](./paginators.md#listapprovedoriginspaginator)
 - `client.get_paginator("list_bots")` ->

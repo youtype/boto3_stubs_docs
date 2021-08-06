@@ -336,9 +336,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lightsail.type_defs import AccessKeyTypeDef, ...
+from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef, ...
 ```
 
+- [AccessKeyLastUsedTypeDef](./type_defs.md#accesskeylastusedtypedef)
 - [AccessKeyTypeDef](./type_defs.md#accesskeytypedef)
 - [AccessRulesTypeDef](./type_defs.md#accessrulestypedef)
 - [AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)

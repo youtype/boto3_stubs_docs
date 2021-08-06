@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
 - [Typed dictionaries for boto3 Lightsail module](#typed-dictionaries-for-boto3-lightsail-module)
+  - [AccessKeyLastUsedTypeDef](#accesskeylastusedtypedef)
   - [AccessKeyTypeDef](#accesskeytypedef)
   - [AccessRulesTypeDef](#accessrulestypedef)
   - [AddOnRequestTypeDef](#addonrequesttypedef)
@@ -402,6 +403,18 @@ type annotations stubs module
   - [UpdateRelationalDatabaseRequestRequestTypeDef](#updaterelationaldatabaserequestrequesttypedef)
   - [UpdateRelationalDatabaseResultTypeDef](#updaterelationaldatabaseresulttypedef)
 
+## AccessKeyLastUsedTypeDef
+
+```python
+from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef
+```
+
+Optional fields:
+
+- `lastUsedDate`: `datetime`
+- `region`: `str`
+- `serviceName`: `str`
+
 ## AccessKeyTypeDef
 
 ```python
@@ -414,6 +427,8 @@ Optional fields:
 - `secretAccessKey`: `str`
 - `status`: [StatusTypeType](./literals.md#statustypetype)
 - `createdAt`: `datetime`
+- `lastUsed`:
+  [AccessKeyLastUsedTypeDef](./type_defs.md#accesskeylastusedtypedef)
 
 ## AccessRulesTypeDef
 

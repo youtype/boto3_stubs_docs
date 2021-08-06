@@ -499,7 +499,7 @@ Returns [GetWorkGroupOutputTypeDef](./type_defs.md#getworkgroupoutputtypedef).
 
 ### list_data_catalogs
 
-Lists the data catalogs in the current AWS account.
+Lists the data catalogs in the current Amazon Web Services account.
 
 Type annotations for `boto3.client("athena").list_data_catalogs` method.
 

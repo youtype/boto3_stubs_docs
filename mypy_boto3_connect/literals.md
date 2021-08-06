@@ -8,6 +8,8 @@ type annotations stubs module
 [mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
 
 - [Literals for boto3 Connect module](#literals-for-boto3-connect-module)
+  - [AgentStatusStateType](#agentstatusstatetype)
+  - [AgentStatusTypeType](#agentstatustypetype)
   - [ChannelType](#channeltype)
   - [ComparisonType](#comparisontype)
   - [ContactFlowTypeType](#contactflowtypetype)
@@ -23,6 +25,7 @@ type annotations stubs module
   - [InstanceStorageResourceTypeType](#instancestorageresourcetypetype)
   - [IntegrationTypeType](#integrationtypetype)
   - [LexVersionType](#lexversiontype)
+  - [ListAgentStatusesPaginatorName](#listagentstatusespaginatorname)
   - [ListApprovedOriginsPaginatorName](#listapprovedoriginspaginatorname)
   - [ListBotsPaginatorName](#listbotspaginatorname)
   - [ListContactFlowsPaginatorName](#listcontactflowspaginatorname)
@@ -58,6 +61,29 @@ type annotations stubs module
   - [UnitType](#unittype)
   - [UseCaseTypeType](#usecasetypetype)
   - [VoiceRecordingTrackType](#voicerecordingtracktype)
+
+## AgentStatusStateType
+
+```python
+from mypy_boto3_connect.literals import AgentStatusStateType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## AgentStatusTypeType
+
+```python
+from mypy_boto3_connect.literals import AgentStatusTypeType
+```
+
+Values:
+
+- `CUSTOM`
+- `OFFLINE`
+- `ROUTABLE`
 
 ## ChannelType
 
@@ -277,6 +303,16 @@ Values:
 
 - `V1`
 - `V2`
+
+## ListAgentStatusesPaginatorName
+
+```python
+from mypy_boto3_connect.literals import ListAgentStatusesPaginatorName
+```
+
+Values:
+
+- `list_agent_statuses`
 
 ## ListApprovedOriginsPaginatorName
 

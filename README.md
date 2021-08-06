@@ -143,6 +143,14 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
   service
 
+- [mypy-boto3-chime-sdk-identity](./mypy_boto3_chime_sdk_identity) for
+  [ChimeSDKIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity)
+  service
+
+- [mypy-boto3-chime-sdk-messaging](./mypy_boto3_chime_sdk_messaging) for
+  [ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging)
+  service
+
 - [mypy-boto3-cloud9](./mypy_boto3_cloud9) for
   [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
   service
