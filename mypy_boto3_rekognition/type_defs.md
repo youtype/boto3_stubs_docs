@@ -12,6 +12,7 @@ type annotations stubs module
   - [AssetTypeDef](#assettypedef)
   - [AudioMetadataTypeDef](#audiometadatatypedef)
   - [BeardTypeDef](#beardtypedef)
+  - [BlackFrameTypeDef](#blackframetypedef)
   - [BoundingBoxTypeDef](#boundingboxtypedef)
   - [CelebrityDetailTypeDef](#celebritydetailtypedef)
   - [CelebrityRecognitionTypeDef](#celebrityrecognitiontypedef)
@@ -239,6 +240,17 @@ Optional fields:
 
 - `Value`: `bool`
 - `Confidence`: `float`
+
+## BlackFrameTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import BlackFrameTypeDef
+```
+
+Optional fields:
+
+- `MaxPixelThreshold`: `float`
+- `MinCoveragePercentage`: `float`
 
 ## BoundingBoxTypeDef
 
@@ -2033,6 +2045,9 @@ Optional fields:
 - `TechnicalCueSegment`:
   [TechnicalCueSegmentTypeDef](./type_defs.md#technicalcuesegmenttypedef)
 - `ShotSegment`: [ShotSegmentTypeDef](./type_defs.md#shotsegmenttypedef)
+- `StartFrameNumber`: `int`
+- `EndFrameNumber`: `int`
+- `DurationFrames`: `int`
 
 ## SegmentTypeInfoTypeDef
 
@@ -2343,6 +2358,7 @@ from mypy_boto3_rekognition.type_defs import StartTechnicalCueDetectionFilterTyp
 Optional fields:
 
 - `MinSegmentConfidence`: `float`
+- `BlackFrame`: [BlackFrameTypeDef](./type_defs.md#blackframetypedef)
 
 ## StartTextDetectionFiltersTypeDef
 
@@ -2624,6 +2640,7 @@ Optional fields:
 - `FrameRate`: `float`
 - `FrameHeight`: `int`
 - `FrameWidth`: `int`
+- `ColorRange`: [VideoColorRangeType](./literals.md#videocolorrangetype)
 
 ## VideoTypeDef
 

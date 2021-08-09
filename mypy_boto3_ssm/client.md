@@ -1514,7 +1514,7 @@ Returns
 
 ### describe_maintenance_windows
 
-Retrieves the maintenance windows in an account.
+Retrieves the maintenance windows in an Amazon Web Services account.
 
 Type annotations for `boto3.client("ssm").describe_maintenance_windows` method.
 
@@ -1609,7 +1609,7 @@ Returns
 
 ### describe_patch_baselines
 
-Lists the patch baselines in your account.
+Lists the patch baselines in your Amazon Web Services account.
 
 Type annotations for `boto3.client("ssm").describe_patch_baselines` method.
 
@@ -2124,7 +2124,7 @@ Returns
 
 ### get_parameter
 
-Get information about a parameter by using the parameter name.
+Get information about a single parameter by specifying the parameter name.
 
 Type annotations for `boto3.client("ssm").get_parameter` method.
 
@@ -2165,7 +2165,8 @@ Returns
 
 ### get_parameters
 
-Get details of a parameter.
+Get information about one or more parameters by specifying multiple parameter
+names.
 
 Type annotations for `boto3.client("ssm").get_parameters` method.
 
@@ -2313,7 +2314,8 @@ Returns
 
 ### list_associations
 
-Returns all State Manager associations in the current account and Region.
+Returns all State Manager associations in the current Amazon Web Services
+account and Amazon Web Services Region.
 
 Type annotations for `boto3.client("ssm").list_associations` method.
 
@@ -2360,7 +2362,7 @@ Returns
 
 ### list_commands
 
-Lists the commands requested by users of the account.
+Lists the commands requested by users of the Amazon Web Services account.
 
 Type annotations for `boto3.client("ssm").list_commands` method.
 
@@ -2431,7 +2433,8 @@ Returns
 
 ### list_document_metadata_history
 
-Information about approval reviews for a version of an SSM document.
+Information about approval reviews for a version of a change template in Change
+Manager.
 
 Type annotations for `boto3.client("ssm").list_document_metadata_history`
 method.
@@ -2478,7 +2481,8 @@ Returns
 
 ### list_documents
 
-Returns all Systems Manager (SSM) documents in the current account and Region.
+Returns all Systems Manager (SSM) documents in the current Amazon Web Services
+account and Amazon Web Services Region.
 
 Type annotations for `boto3.client("ssm").list_documents` method.
 
@@ -2526,7 +2530,8 @@ Returns
 
 ### list_ops_item_events
 
-Returns a list of all OpsItem events in the current Region and account.
+Returns a list of all OpsItem events in the current Amazon Web Services Region
+and Amazon Web Services account.
 
 Type annotations for `boto3.client("ssm").list_ops_item_events` method.
 
@@ -3263,7 +3268,7 @@ Returns
 ### update_document_metadata
 
 Updates information related to approval reviews for a specific version of a
-document.
+change template in Change Manager.
 
 Type annotations for `boto3.client("ssm").update_document_metadata` method.
 

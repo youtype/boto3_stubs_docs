@@ -31,6 +31,7 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [get_ip_set](#get_ip_set)
     - [get_logging_configuration](#get_logging_configuration)
+    - [get_managed_rule_set](#get_managed_rule_set)
     - [get_permission_policy](#get_permission_policy)
     - [get_rate_based_statement_managed_keys](#get_rate_based_statement_managed_keys)
     - [get_regex_pattern_set](#get_regex_pattern_set)
@@ -38,19 +39,23 @@ type annotations stubs module
     - [get_sampled_requests](#get_sampled_requests)
     - [get_web_acl](#get_web_acl)
     - [get_web_acl_for_resource](#get_web_acl_for_resource)
+    - [list_available_managed_rule_group_versions](#list_available_managed_rule_group_versions)
     - [list_available_managed_rule_groups](#list_available_managed_rule_groups)
     - [list_ip_sets](#list_ip_sets)
     - [list_logging_configurations](#list_logging_configurations)
+    - [list_managed_rule_sets](#list_managed_rule_sets)
     - [list_regex_pattern_sets](#list_regex_pattern_sets)
     - [list_resources_for_web_acl](#list_resources_for_web_acl)
     - [list_rule_groups](#list_rule_groups)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_web_acls](#list_web_acls)
     - [put_logging_configuration](#put_logging_configuration)
+    - [put_managed_rule_set_versions](#put_managed_rule_set_versions)
     - [put_permission_policy](#put_permission_policy)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_ip_set](#update_ip_set)
+    - [update_managed_rule_set_version_expiry_date](#update_managed_rule_set_version_expiry_date)
     - [update_regex_pattern_set](#update_regex_pattern_set)
     - [update_rule_group](#update_rule_group)
     - [update_web_acl](#update_web_acl)
@@ -88,6 +93,7 @@ Exceptions:
 - `Exceptions.ClientError`
 - `Exceptions.WAFAssociatedItemException`
 - `Exceptions.WAFDuplicateItemException`
+- `Exceptions.WAFExpiredManagedRuleGroupVersionException`
 - `Exceptions.WAFInternalErrorException`
 - `Exceptions.WAFInvalidOperationException`
 - `Exceptions.WAFInvalidParameterException`
@@ -444,6 +450,7 @@ Keyword-only arguments:
 - `VendorName`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
+- `VersionName`: `str`
 
 Returns
 [DescribeManagedRuleGroupResponseTypeDef](./type_defs.md#describemanagedrulegroupresponsetypedef).
@@ -522,6 +529,27 @@ Keyword-only arguments:
 
 Returns
 [GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef).
+
+### get_managed_rule_set
+
+Retrieves the specified managed rule set.
+
+Type annotations for `boto3.client("wafv2").get_managed_rule_set` method.
+
+Boto3 documentation:
+[WAFV2.Client.get_managed_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_managed_rule_set)
+
+Arguments mapping described in
+[GetManagedRuleSetRequestRequestTypeDef](./type_defs.md#getmanagedrulesetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
+- `Id`: `str` *(required)*
+
+Returns
+[GetManagedRuleSetResponseTypeDef](./type_defs.md#getmanagedrulesetresponsetypedef).
 
 ### get_permission_policy
 
@@ -673,6 +701,30 @@ Keyword-only arguments:
 Returns
 [GetWebACLForResourceResponseTypeDef](./type_defs.md#getwebaclforresourceresponsetypedef).
 
+### list_available_managed_rule_group_versions
+
+Returns a list of the available versions for the specified managed rule group.
+
+Type annotations for
+`boto3.client("wafv2").list_available_managed_rule_group_versions` method.
+
+Boto3 documentation:
+[WAFV2.Client.list_available_managed_rule_group_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_group_versions)
+
+Arguments mapping described in
+[ListAvailableManagedRuleGroupVersionsRequestRequestTypeDef](./type_defs.md#listavailablemanagedrulegroupversionsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `VendorName`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListAvailableManagedRuleGroupVersionsResponseTypeDef](./type_defs.md#listavailablemanagedrulegroupversionsresponsetypedef).
+
 ### list_available_managed_rule_groups
 
 Retrieves an array of managed rule groups that are available for you to use.
@@ -736,6 +788,27 @@ Keyword-only arguments:
 
 Returns
 [ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef).
+
+### list_managed_rule_sets
+
+Retrieves the managed rule sets that you own.
+
+Type annotations for `boto3.client("wafv2").list_managed_rule_sets` method.
+
+Boto3 documentation:
+[WAFV2.Client.list_managed_rule_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_managed_rule_sets)
+
+Arguments mapping described in
+[ListManagedRuleSetsRequestRequestTypeDef](./type_defs.md#listmanagedrulesetsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+Returns
+[ListManagedRuleSetsResponseTypeDef](./type_defs.md#listmanagedrulesetsresponsetypedef).
 
 ### list_regex_pattern_sets
 
@@ -866,6 +939,33 @@ Keyword-only arguments:
 Returns
 [PutLoggingConfigurationResponseTypeDef](./type_defs.md#putloggingconfigurationresponsetypedef).
 
+### put_managed_rule_set_versions
+
+Defines the versions of your managed rule set that you are offering to the
+customers.
+
+Type annotations for `boto3.client("wafv2").put_managed_rule_set_versions`
+method.
+
+Boto3 documentation:
+[WAFV2.Client.put_managed_rule_set_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_managed_rule_set_versions)
+
+Arguments mapping described in
+[PutManagedRuleSetVersionsRequestRequestTypeDef](./type_defs.md#putmanagedrulesetversionsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
+- `Id`: `str` *(required)*
+- `LockToken`: `str` *(required)*
+- `RecommendedVersion`: `str`
+- `VersionsToPublish`: `Dict`\[`str`,
+  [VersionToPublishTypeDef](./type_defs.md#versiontopublishtypedef)\]
+
+Returns
+[PutManagedRuleSetVersionsResponseTypeDef](./type_defs.md#putmanagedrulesetversionsresponsetypedef).
+
 ### put_permission_policy
 
 Attaches an IAM policy to the specified resource.
@@ -946,6 +1046,31 @@ Keyword-only arguments:
 
 Returns
 [UpdateIPSetResponseTypeDef](./type_defs.md#updateipsetresponsetypedef).
+
+### update_managed_rule_set_version_expiry_date
+
+Updates the expiration information for your managed rule set.
+
+Type annotations for
+`boto3.client("wafv2").update_managed_rule_set_version_expiry_date` method.
+
+Boto3 documentation:
+[WAFV2.Client.update_managed_rule_set_version_expiry_date](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_managed_rule_set_version_expiry_date)
+
+Arguments mapping described in
+[UpdateManagedRuleSetVersionExpiryDateRequestRequestTypeDef](./type_defs.md#updatemanagedrulesetversionexpirydaterequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
+- `Id`: `str` *(required)*
+- `LockToken`: `str` *(required)*
+- `VersionToExpire`: `str` *(required)*
+- `ExpiryTimestamp`: `Union`\[`datetime`, `str`\] *(required)*
+
+Returns
+[UpdateManagedRuleSetVersionExpiryDateResponseTypeDef](./type_defs.md#updatemanagedrulesetversionexpirydateresponsetypedef).
 
 ### update_regex_pattern_set
 

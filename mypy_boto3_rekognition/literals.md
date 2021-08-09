@@ -37,6 +37,7 @@ type annotations stubs module
   - [StreamProcessorStatusType](#streamprocessorstatustype)
   - [TechnicalCueTypeType](#technicalcuetypetype)
   - [TextTypesType](#texttypestype)
+  - [VideoColorRangeType](#videocolorrangetype)
   - [VideoJobStatusType](#videojobstatustype)
 
 ## AttributeType
@@ -398,7 +399,11 @@ Values:
 
 - `BlackFrames`
 - `ColorBars`
+- `Content`
 - `EndCredits`
+- `OpeningCredits`
+- `Slate`
+- `StudioLogo`
 
 ## TextTypesType
 
@@ -410,6 +415,17 @@ Values:
 
 - `LINE`
 - `WORD`
+
+## VideoColorRangeType
+
+```python
+from mypy_boto3_rekognition.literals import VideoColorRangeType
+```
+
+Values:
+
+- `FULL`
+- `LIMITED`
 
 ## VideoJobStatusType
 

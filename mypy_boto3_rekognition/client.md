@@ -646,8 +646,8 @@ Returns
 
 ### get_content_moderation
 
-Gets the unsafe content analysis results for a Amazon Rekognition Video
-analysis started by StartContentModeration .
+Gets the inappropriate, unwanted, or offensive content analysis results for a
+Amazon Rekognition Video analysis started by StartContentModeration.
 
 Type annotations for `boto3.client("rekognition").get_content_moderation`
 method.
@@ -1005,7 +1005,8 @@ Returns
 
 ### start_content_moderation
 
-Starts asynchronous detection of unsafe content in a stored video.
+Starts asynchronous detection of inappropriate, unwanted, or offensive content
+in a stored video.
 
 Type annotations for `boto3.client("rekognition").start_content_moderation`
 method.

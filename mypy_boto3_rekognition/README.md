@@ -184,6 +184,7 @@ from mypy_boto3_rekognition.literals import AttributeType, ...
 - [StreamProcessorStatusType](./literals.md#streamprocessorstatustype)
 - [TechnicalCueTypeType](./literals.md#technicalcuetypetype)
 - [TextTypesType](./literals.md#texttypestype)
+- [VideoColorRangeType](./literals.md#videocolorrangetype)
 - [VideoJobStatusType](./literals.md#videojobstatustype)
 
 ## Typed dictionaries
@@ -201,6 +202,7 @@ from mypy_boto3_rekognition.type_defs import AgeRangeTypeDef, ...
 - [AssetTypeDef](./type_defs.md#assettypedef)
 - [AudioMetadataTypeDef](./type_defs.md#audiometadatatypedef)
 - [BeardTypeDef](./type_defs.md#beardtypedef)
+- [BlackFrameTypeDef](./type_defs.md#blackframetypedef)
 - [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - [CelebrityDetailTypeDef](./type_defs.md#celebritydetailtypedef)
 - [CelebrityRecognitionTypeDef](./type_defs.md#celebrityrecognitiontypedef)
