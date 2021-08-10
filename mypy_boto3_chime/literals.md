@@ -526,6 +526,7 @@ from mypy_boto3_chime.literals import TranscribeMedicalRegionType
 Values:
 
 - `ap-southeast-2`
+- `auto`
 - `ca-central-1`
 - `eu-west-1`
 - `us-east-1`
@@ -569,6 +570,7 @@ Values:
 - `ap-northeast-1`
 - `ap-northeast-2`
 - `ap-southeast-2`
+- `auto`
 - `ca-central-1`
 - `eu-central-1`
 - `eu-west-1`
