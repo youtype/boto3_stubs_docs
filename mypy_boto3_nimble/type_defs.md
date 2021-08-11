@@ -267,6 +267,7 @@ Optional fields:
 - `ec2InstanceType`:
   [StreamingInstanceTypeType](./literals.md#streaminginstancetypetype)
 - `launchProfileId`: `str`
+- `ownedBy`: `str`
 - `streamingImageId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
@@ -1101,6 +1102,7 @@ Optional fields:
 
 - `createdBy`: `str`
 - `nextToken`: `str`
+- `ownedBy`: `str`
 - `sessionIds`: `str`
 
 ## ListStreamingSessionsResponseTypeDef
@@ -1441,6 +1443,7 @@ Optional fields:
 - `createdAt`: `datetime`
 - `createdBy`: `str`
 - `expiresAt`: `datetime`
+- `ownedBy`: `str`
 - `state`:
   [StreamingSessionStreamStateType](./literals.md#streamingsessionstreamstatetype)
 - `statusCode`:
@@ -1461,6 +1464,7 @@ Optional fields:
 - `createdBy`: `str`
 - `ec2InstanceType`: `str`
 - `launchProfileId`: `str`
+- `ownedBy`: `str`
 - `sessionId`: `str`
 - `state`: [StreamingSessionStateType](./literals.md#streamingsessionstatetype)
 - `statusCode`:

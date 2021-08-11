@@ -136,6 +136,8 @@ type annotations stubs module
   - [TestReportSummaryTypeDef](#testreportsummarytypedef)
   - [UpdateProjectInputRequestTypeDef](#updateprojectinputrequesttypedef)
   - [UpdateProjectOutputTypeDef](#updateprojectoutputtypedef)
+  - [UpdateProjectVisibilityInputRequestTypeDef](#updateprojectvisibilityinputrequesttypedef)
+  - [UpdateProjectVisibilityOutputTypeDef](#updateprojectvisibilityoutputtypedef)
   - [UpdateReportGroupInputRequestTypeDef](#updatereportgroupinputrequesttypedef)
   - [UpdateReportGroupOutputTypeDef](#updatereportgroupoutputtypedef)
   - [UpdateWebhookInputRequestTypeDef](#updatewebhookinputrequesttypedef)
@@ -1536,6 +1538,10 @@ Optional fields:
 - `buildBatchConfig`:
   [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `concurrentBuildLimit`: `int`
+- `projectVisibility`:
+  [ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype)
+- `publicProjectAlias`: `str`
+- `resourceAccessRole`: `str`
 
 ## PutResourcePolicyInputRequestTypeDef
 
@@ -2067,6 +2073,37 @@ from mypy_boto3_codebuild.type_defs import UpdateProjectOutputTypeDef
 Required fields:
 
 - `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateProjectVisibilityInputRequestTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import UpdateProjectVisibilityInputRequestTypeDef
+```
+
+Required fields:
+
+- `projectArn`: `str`
+- `projectVisibility`:
+  [ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype)
+
+Optional fields:
+
+- `resourceAccessRole`: `str`
+
+## UpdateProjectVisibilityOutputTypeDef
+
+```python
+from mypy_boto3_codebuild.type_defs import UpdateProjectVisibilityOutputTypeDef
+```
+
+Required fields:
+
+- `projectArn`: `str`
+- `publicProjectAlias`: `str`
+- `projectVisibility`:
+  [ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

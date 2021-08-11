@@ -173,6 +173,7 @@ Arguments for `ListStreamingSessionsPaginator.paginate` method:
 
 - `studioId`: `str` *(required)*
 - `createdBy`: `str`
+- `ownedBy`: `str`
 - `sessionIds`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

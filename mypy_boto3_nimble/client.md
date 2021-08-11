@@ -221,6 +221,7 @@ Keyword-only arguments:
 - `ec2InstanceType`:
   [StreamingInstanceTypeType](./literals.md#streaminginstancetypetype)
 - `launchProfileId`: `str`
+- `ownedBy`: `str`
 - `streamingImageId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
@@ -823,6 +824,7 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 - `createdBy`: `str`
 - `nextToken`: `str`
+- `ownedBy`: `str`
 - `sessionIds`: `str`
 
 Returns
@@ -874,7 +876,8 @@ Returns
 
 ### list_studios
 
-List studios in your AWS account in the requested AWS Region.
+List studios in your Amazon Web Services account in the requested Amazon Web
+Services Region.
 
 Type annotations for `boto3.client("nimble").list_studios` method.
 

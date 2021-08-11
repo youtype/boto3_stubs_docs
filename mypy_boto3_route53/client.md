@@ -384,7 +384,8 @@ Returns
 ### create_reusable_delegation_set
 
 Creates a delegation set (a group of four name servers) that can be reused by
-multiple hosted zones that were created by the same account.
+multiple hosted zones that were created by the same Amazon Web Services
+account.
 
 Type annotations for `boto3.client("route53").create_reusable_delegation_set`
 method.
@@ -475,9 +476,9 @@ Returns
 
 ### create_vpc_association_authorization
 
-Authorizes the account that created a specified VPC to submit an
-`AssociateVPCWithHostedZone` request to associate the VPC with a specified
-hosted zone that was created by a different account.
+Authorizes the Amazon Web Services account that created a specified VPC to
+submit an `AssociateVPCWithHostedZone` request to associate the VPC with a
+specified hosted zone that was created by a different account.
 
 Type annotations for
 `boto3.client("route53").create_vpc_association_authorization` method.
@@ -870,7 +871,7 @@ Returns
 ### get_health_check_count
 
 Retrieves the number of health checks that are associated with the current
-account.
+Amazon Web Services account.
 
 Type annotations for `boto3.client("route53").get_health_check_count` method.
 
@@ -942,7 +943,7 @@ Returns
 ### get_hosted_zone_count
 
 Retrieves the number of hosted zones that are associated with the current
-account.
+Amazon Web Services account.
 
 Type annotations for `boto3.client("route53").get_hosted_zone_count` method.
 
@@ -1081,7 +1082,7 @@ Returns
 ### get_traffic_policy_instance_count
 
 Gets the number of traffic policy instances that are associated with the
-current account.
+current Amazon Web Services account.
 
 Type annotations for
 `boto3.client("route53").get_traffic_policy_instance_count` method.
@@ -1117,7 +1118,7 @@ Returns
 ### list_health_checks
 
 Retrieve a list of the health checks that are associated with the current
-account.
+Amazon Web Services account.
 
 Type annotations for `boto3.client("route53").list_health_checks` method.
 
@@ -1138,7 +1139,7 @@ Returns
 ### list_hosted_zones
 
 Retrieves a list of the public and private hosted zones that are associated
-with the current account.
+with the current Amazon Web Services account.
 
 Type annotations for `boto3.client("route53").list_hosted_zones` method.
 
@@ -1182,8 +1183,8 @@ Returns
 ### list_hosted_zones_by_vpc
 
 Lists all the private hosted zones that a specified VPC is associated with,
-regardless of which account or Amazon Web Services service owns the hosted
-zones.
+regardless of which Amazon Web Services account or Amazon Web Services service
+owns the hosted zones.
 
 Type annotations for `boto3.client("route53").list_hosted_zones_by_vpc` method.
 
@@ -1206,8 +1207,8 @@ Returns
 ### list_query_logging_configs
 
 Lists the configurations for DNS query logging that are associated with the
-current account or the configuration that is associated with a specified hosted
-zone.
+current Amazon Web Services account or the configuration that is associated
+with a specified hosted zone.
 
 Type annotations for `boto3.client("route53").list_query_logging_configs`
 method.
@@ -1254,7 +1255,7 @@ Returns
 ### list_reusable_delegation_sets
 
 Retrieves a list of the reusable delegation sets that are associated with the
-current account.
+current Amazon Web Services account.
 
 Type annotations for `boto3.client("route53").list_reusable_delegation_sets`
 method.
@@ -1318,7 +1319,7 @@ Returns
 ### list_traffic_policies
 
 Gets information about the latest version for every traffic policy that is
-associated with the current account.
+associated with the current Amazon Web Services account.
 
 Type annotations for `boto3.client("route53").list_traffic_policies` method.
 
@@ -1339,7 +1340,7 @@ Returns
 ### list_traffic_policy_instances
 
 Gets information about the traffic policy instances that you created by using
-the current account.
+the current Amazon Web Services account.
 
 Type annotations for `boto3.client("route53").list_traffic_policy_instances`
 method.

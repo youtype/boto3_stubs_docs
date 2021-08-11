@@ -1009,6 +1009,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice)
   service
 
+- [mypy-boto3-snow-device-management](./mypy_boto3_snow_device_management) for
+  [SnowDeviceManagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement)
+  service
+
 - [mypy-boto3-snowball](./mypy_boto3_snowball) for
   [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
   service

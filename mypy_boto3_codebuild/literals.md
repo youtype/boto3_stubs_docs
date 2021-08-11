@@ -39,6 +39,7 @@ type annotations stubs module
   - [LogsConfigStatusTypeType](#logsconfigstatustypetype)
   - [PlatformTypeType](#platformtypetype)
   - [ProjectSortByTypeType](#projectsortbytypetype)
+  - [ProjectVisibilityTypeType](#projectvisibilitytypetype)
   - [ReportCodeCoverageSortByTypeType](#reportcodecoveragesortbytypetype)
   - [ReportExportConfigTypeType](#reportexportconfigtypetype)
   - [ReportGroupSortByTypeType](#reportgroupsortbytypetype)
@@ -419,6 +420,17 @@ Values:
 - `CREATED_TIME`
 - `LAST_MODIFIED_TIME`
 - `NAME`
+
+## ProjectVisibilityTypeType
+
+```python
+from mypy_boto3_codebuild.literals import ProjectVisibilityTypeType
+```
+
+Values:
+
+- `PRIVATE`
+- `PUBLIC_READ`
 
 ## ReportCodeCoverageSortByTypeType
 
