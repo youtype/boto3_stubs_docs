@@ -609,6 +609,7 @@ Optional fields:
 - `securityPolicy`: [SecurityPolicyType](./literals.md#securitypolicytype)
 - `mutualTlsAuthentication`:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
+- `ownershipVerificationCertificateArn`: `str`
 
 ## CreateModelRequestRequestTypeDef
 
@@ -1176,6 +1177,7 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `mutualTlsAuthentication`:
   [MutualTlsAuthenticationTypeDef](./type_defs.md#mutualtlsauthenticationtypedef)
+- `ownershipVerificationCertificateArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1206,6 +1208,7 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `mutualTlsAuthentication`:
   [MutualTlsAuthenticationTypeDef](./type_defs.md#mutualtlsauthenticationtypedef)
+- `ownershipVerificationCertificateArn`: `str`
 
 ## DomainNamesTypeDef
 

@@ -102,6 +102,8 @@ from mypy_boto3_apigatewayv2.literals import DomainNameStatusType
 Values:
 
 - `AVAILABLE`
+- `PENDING_CERTIFICATE_REIMPORT`
+- `PENDING_OWNERSHIP_VERIFICATION`
 - `UPDATING`
 
 ## EndpointTypeType

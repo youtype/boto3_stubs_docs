@@ -505,6 +505,7 @@ type annotations stubs module
   - [MemberDefinitionTypeDef](#memberdefinitiontypedef)
   - [MetadataPropertiesTypeDef](#metadatapropertiestypedef)
   - [MetricDataTypeDef](#metricdatatypedef)
+  - [MetricDatumTypeDef](#metricdatumtypedef)
   - [MetricDefinitionTypeDef](#metricdefinitiontypedef)
   - [MetricsSourceTypeDef](#metricssourcetypedef)
   - [ModelArtifactsTypeDef](#modelartifactstypedef)
@@ -1393,6 +1394,8 @@ Optional fields:
 
 - `CandidateArtifactLocations`:
   [CandidateArtifactLocationsTypeDef](./type_defs.md#candidateartifactlocationstypedef)
+- `CandidateMetrics`:
+  `List`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
 
 ## CapacitySizeTypeDef
 
@@ -8536,6 +8539,18 @@ Optional fields:
 - `MetricName`: `str`
 - `Value`: `float`
 - `Timestamp`: `datetime`
+
+## MetricDatumTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import MetricDatumTypeDef
+```
+
+Optional fields:
+
+- `MetricName`: [AutoMLMetricEnumType](./literals.md#automlmetricenumtype)
+- `Value`: `float`
+- `Set`: [MetricSetSourceType](./literals.md#metricsetsourcetype)
 
 ## MetricDefinitionTypeDef
 

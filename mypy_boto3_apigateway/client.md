@@ -392,6 +392,7 @@ Keyword-only arguments:
 - `securityPolicy`: [SecurityPolicyType](./literals.md#securitypolicytype)
 - `mutualTlsAuthentication`:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
+- `ownershipVerificationCertificateArn`: `str`
 
 Returns
 [DomainNameResponseMetadataTypeDef](./type_defs.md#domainnameresponsemetadatatypedef).

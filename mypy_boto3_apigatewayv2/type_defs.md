@@ -976,6 +976,7 @@ Optional fields:
 - `EndpointType`: [EndpointTypeType](./literals.md#endpointtypetype)
 - `HostedZoneId`: `str`
 - `SecurityPolicy`: [SecurityPolicyType](./literals.md#securitypolicytype)
+- `OwnershipVerificationCertificateArn`: `str`
 
 ## DomainNameTypeDef
 

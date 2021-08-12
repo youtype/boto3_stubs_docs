@@ -226,6 +226,7 @@ Values:
 - `JSON`
 - `ORC`
 - `PARQUET`
+- `TABLEAUHYPER`
 - `XML`
 
 ## ParameterTypeType

@@ -149,6 +149,7 @@ type annotations stubs module
   - [ListWorkforcesSortByOptionsType](#listworkforcessortbyoptionstype)
   - [ListWorkteamsPaginatorName](#listworkteamspaginatorname)
   - [ListWorkteamsSortByOptionsType](#listworkteamssortbyoptionstype)
+  - [MetricSetSourceType](#metricsetsourcetype)
   - [ModelApprovalStatusType](#modelapprovalstatustype)
   - [ModelCacheSettingType](#modelcachesettingtype)
   - [ModelPackageGroupSortByType](#modelpackagegroupsortbytype)
@@ -1927,6 +1928,18 @@ Values:
 
 - `CreateDate`
 - `Name`
+
+## MetricSetSourceType
+
+```python
+from mypy_boto3_sagemaker.literals import MetricSetSourceType
+```
+
+Values:
+
+- `Test`
+- `Train`
+- `Validation`
 
 ## ModelApprovalStatusType
 
