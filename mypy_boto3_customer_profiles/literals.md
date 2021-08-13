@@ -231,6 +231,8 @@ from mypy_boto3_customer_profiles.literals import StandardIdentifierType
 
 Values:
 
+- `ASSET`
+- `CASE`
 - `LOOKUP_ONLY`
 - `NEW_ONLY`
 - `PROFILE`

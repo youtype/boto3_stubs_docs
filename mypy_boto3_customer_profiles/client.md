@@ -575,6 +575,7 @@ Keyword-only arguments:
 - `ProfileId`: `str` *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `ObjectFilter`: [ObjectFilterTypeDef](./type_defs.md#objectfiltertypedef)
 
 Returns
 [ListProfileObjectsResponseTypeDef](./type_defs.md#listprofileobjectsresponsetypedef).

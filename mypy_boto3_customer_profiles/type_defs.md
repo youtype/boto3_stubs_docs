@@ -67,6 +67,7 @@ type annotations stubs module
   - [MatchingResponseTypeDef](#matchingresponsetypedef)
   - [MergeProfilesRequestRequestTypeDef](#mergeprofilesrequestrequesttypedef)
   - [MergeProfilesResponseTypeDef](#mergeprofilesresponsetypedef)
+  - [ObjectFilterTypeDef](#objectfiltertypedef)
   - [ObjectTypeFieldTypeDef](#objecttypefieldtypedef)
   - [ObjectTypeKeyTypeDef](#objecttypekeytypedef)
   - [ProfileTypeDef](#profiletypedef)
@@ -836,6 +837,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `ObjectFilter`: [ObjectFilterTypeDef](./type_defs.md#objectfiltertypedef)
 
 ## ListProfileObjectsResponseTypeDef
 
@@ -942,6 +944,17 @@ Required fields:
 - `Message`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ObjectFilterTypeDef
+
+```python
+from mypy_boto3_customer_profiles.type_defs import ObjectFilterTypeDef
+```
+
+Required fields:
+
+- `KeyName`: `str`
+- `Values`: `List`\[`str`\]
 
 ## ObjectTypeFieldTypeDef
 

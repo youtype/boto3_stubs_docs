@@ -1195,6 +1195,7 @@ Optional fields:
   [EbsConfigurationTypeDef](./type_defs.md#ebsconfigurationtypedef)
 - `AutoScalingPolicy`:
   [AutoScalingPolicyTypeDef](./type_defs.md#autoscalingpolicytypedef)
+- `CustomAmiId`: `str`
 
 ## InstanceGroupDetailTypeDef
 
@@ -1221,6 +1222,7 @@ Optional fields:
 - `StartDateTime`: `datetime`
 - `ReadyDateTime`: `datetime`
 - `EndDateTime`: `datetime`
+- `CustomAmiId`: `str`
 
 ## InstanceGroupModifyConfigTypeDef
 
@@ -1309,6 +1311,7 @@ Optional fields:
 - `ShrinkPolicy`: [ShrinkPolicyTypeDef](./type_defs.md#shrinkpolicytypedef)
 - `AutoScalingPolicy`:
   [AutoScalingPolicyDescriptionTypeDef](./type_defs.md#autoscalingpolicydescriptiontypedef)
+- `CustomAmiId`: `str`
 
 ## InstanceResizePolicyTypeDef
 
@@ -1378,6 +1381,7 @@ Optional fields:
   [EbsConfigurationTypeDef](./type_defs.md#ebsconfigurationtypedef)
 - `Configurations`:
   `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+- `CustomAmiId`: `str`
 
 ## InstanceTypeDef
 
@@ -1417,6 +1421,7 @@ Optional fields:
 - `EbsBlockDevices`:
   `List`\[[EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef)\]
 - `EbsOptimized`: `bool`
+- `CustomAmiId`: `str`
 
 ## JobFlowDetailTypeDef
 

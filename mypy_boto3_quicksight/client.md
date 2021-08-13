@@ -230,7 +230,8 @@ Returns
 
 ### create_account_customization
 
-Creates Amazon QuickSight customizations the current Region;.
+Creates Amazon QuickSight customizations the current Amazon Web Services
+Region;.
 
 Type annotations for `boto3.client("quicksight").create_account_customization`
 method.
@@ -658,8 +659,9 @@ Returns
 
 ### delete_account_customization
 
-Deletes all Amazon QuickSight customizations in this Region; for the specified
-Amazon Web Services account; and QuickSight namespace.
+Deletes all Amazon QuickSight customizations in this Amazon Web Services
+Region; for the specified Amazon Web Services account; and QuickSight
+namespace.
 
 Type annotations for `boto3.client("quicksight").delete_account_customization`
 method.
@@ -1022,7 +1024,7 @@ Returns
 ### describe_account_customization
 
 Describes the customizations associated with the provided Amazon Web Services
-account; and Amazon QuickSight namespace in an Region;.
+account; and Amazon QuickSight namespace in an Amazon Web Services Region;.
 
 Type annotations for
 `boto3.client("quicksight").describe_account_customization` method.
@@ -1725,7 +1727,7 @@ Returns
 ### list_data_sets
 
 Lists all of the datasets belonging to the current Amazon Web Services account;
-in an Region;.
+in an Amazon Web Services Region;.
 
 Type annotations for `boto3.client("quicksight").list_data_sets` method.
 
@@ -1746,8 +1748,8 @@ Returns
 
 ### list_data_sources
 
-Lists data sources in current Region; that belong to this Amazon Web Services
-account;.
+Lists data sources in current Amazon Web Services Region; that belong to this
+Amazon Web Services account;.
 
 Type annotations for `boto3.client("quicksight").list_data_sources` method.
 
@@ -2312,7 +2314,8 @@ Returns
 
 ### update_account_customization
 
-Updates Amazon QuickSight customizations the current Region;.
+Updates Amazon QuickSight customizations the current Amazon Web Services
+Region;.
 
 Type annotations for `boto3.client("quicksight").update_account_customization`
 method.

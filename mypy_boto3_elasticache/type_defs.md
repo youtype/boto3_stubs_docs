@@ -2422,6 +2422,7 @@ Optional fields:
 - `UserGroupIds`: `List`\[`str`\]
 - `LogDeliveryConfigurations`:
   `List`\[[LogDeliveryConfigurationTypeDef](./type_defs.md#logdeliveryconfigurationtypedef)\]
+- `ReplicationGroupCreateTime`: `datetime`
 
 ## ReservedCacheNodeMessageTypeDef
 
