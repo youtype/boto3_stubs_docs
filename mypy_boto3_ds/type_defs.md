@@ -17,6 +17,7 @@ type annotations stubs module
   - [CancelSchemaExtensionRequestRequestTypeDef](#cancelschemaextensionrequestrequesttypedef)
   - [CertificateInfoTypeDef](#certificateinfotypedef)
   - [CertificateTypeDef](#certificatetypedef)
+  - [ClientAuthenticationSettingInfoTypeDef](#clientauthenticationsettinginfotypedef)
   - [ClientCertAuthSettingsTypeDef](#clientcertauthsettingstypedef)
   - [ComputerTypeDef](#computertypedef)
   - [ConditionalForwarderTypeDef](#conditionalforwardertypedef)
@@ -48,6 +49,8 @@ type annotations stubs module
   - [DeregisterEventTopicRequestRequestTypeDef](#deregistereventtopicrequestrequesttypedef)
   - [DescribeCertificateRequestRequestTypeDef](#describecertificaterequestrequesttypedef)
   - [DescribeCertificateResultTypeDef](#describecertificateresulttypedef)
+  - [DescribeClientAuthenticationSettingsRequestRequestTypeDef](#describeclientauthenticationsettingsrequestrequesttypedef)
+  - [DescribeClientAuthenticationSettingsResultTypeDef](#describeclientauthenticationsettingsresulttypedef)
   - [DescribeConditionalForwardersRequestRequestTypeDef](#describeconditionalforwardersrequestrequesttypedef)
   - [DescribeConditionalForwardersResultTypeDef](#describeconditionalforwardersresulttypedef)
   - [DescribeDirectoriesRequestRequestTypeDef](#describedirectoriesrequestrequesttypedef)
@@ -252,6 +255,20 @@ Optional fields:
 - `Type`: [CertificateTypeType](./literals.md#certificatetypetype)
 - `ClientCertAuthSettings`:
   [ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef)
+
+## ClientAuthenticationSettingInfoTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import ClientAuthenticationSettingInfoTypeDef
+```
+
+Optional fields:
+
+- `Type`: `Literal['SmartCard']` (see
+  [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
+- `Status`:
+  [ClientAuthenticationStatusType](./literals.md#clientauthenticationstatustype)
+- `LastUpdatedDateTime`: `datetime`
 
 ## ClientCertAuthSettingsTypeDef
 
@@ -652,6 +669,37 @@ from mypy_boto3_ds.type_defs import DescribeCertificateResultTypeDef
 Required fields:
 
 - `Certificate`: [CertificateTypeDef](./type_defs.md#certificatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeClientAuthenticationSettingsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeClientAuthenticationSettingsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DirectoryId`: `str`
+
+Optional fields:
+
+- `Type`: `Literal['SmartCard']` (see
+  [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
+- `NextToken`: `str`
+- `Limit`: `int`
+
+## DescribeClientAuthenticationSettingsResultTypeDef
+
+```python
+from mypy_boto3_ds.type_defs import DescribeClientAuthenticationSettingsResultTypeDef
+```
+
+Required fields:
+
+- `ClientAuthenticationSettingsInfo`:
+  `List`\[[ClientAuthenticationSettingInfoTypeDef](./type_defs.md#clientauthenticationsettinginfotypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

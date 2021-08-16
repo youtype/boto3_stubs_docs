@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 DirectoryService module](#literals-for-boto3-directoryservice-module)
   - [CertificateStateType](#certificatestatetype)
   - [CertificateTypeType](#certificatetypetype)
+  - [ClientAuthenticationStatusType](#clientauthenticationstatustype)
   - [ClientAuthenticationTypeType](#clientauthenticationtypetype)
   - [DescribeDirectoriesPaginatorName](#describedirectoriespaginatorname)
   - [DescribeDomainControllersPaginatorName](#describedomaincontrollerspaginatorname)
@@ -69,6 +70,17 @@ Values:
 
 - `ClientCertAuth`
 - `ClientLDAPS`
+
+## ClientAuthenticationStatusType
+
+```python
+from mypy_boto3_ds.literals import ClientAuthenticationStatusType
+```
+
+Values:
+
+- `Disabled`
+- `Enabled`
 
 ## ClientAuthenticationTypeType
 

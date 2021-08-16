@@ -688,6 +688,10 @@ Values:
 - `AWS::AutoScaling::LaunchConfiguration`
 - `AWS::AutoScaling::ScalingPolicy`
 - `AWS::AutoScaling::ScheduledAction`
+- `AWS::Backup::BackupPlan`
+- `AWS::Backup::BackupSelection`
+- `AWS::Backup::BackupVault`
+- `AWS::Backup::RecoveryPoint`
 - `AWS::CloudFormation::Stack`
 - `AWS::CloudFront::Distribution`
 - `AWS::CloudFront::StreamingDistribution`
@@ -719,6 +723,13 @@ Values:
 - `AWS::EC2::VPCPeeringConnection`
 - `AWS::EC2::VPNConnection`
 - `AWS::EC2::VPNGateway`
+- `AWS::ECR::Repository`
+- `AWS::ECS::Cluster`
+- `AWS::ECS::Service`
+- `AWS::ECS::TaskDefinition`
+- `AWS::EFS::AccessPoint`
+- `AWS::EFS::FileSystem`
+- `AWS::EKS::Cluster`
 - `AWS::ElasticBeanstalk::Application`
 - `AWS::ElasticBeanstalk::ApplicationVersion`
 - `AWS::ElasticBeanstalk::Environment`

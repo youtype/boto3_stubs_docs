@@ -908,6 +908,7 @@ Keyword-only arguments:
 - `endTimeOffsetInNanos`: `int`
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `intervalWindowInSeconds`: `int`
 
 Returns
 [GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef).

@@ -55,6 +55,7 @@ from mypy_boto3_license_manager.literals import CheckoutTypeType
 
 Values:
 
+- `PERPETUAL`
 - `PROVISIONAL`
 
 ## DigitalSignatureMethodType

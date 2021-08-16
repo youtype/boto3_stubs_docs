@@ -221,8 +221,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ProductSKU`: `str` *(required)*
-- `CheckoutType`: `Literal['PROVISIONAL']` (see
-  [CheckoutTypeType](./literals.md#checkouttypetype)) *(required)*
+- `CheckoutType`: [CheckoutTypeType](./literals.md#checkouttypetype)
+  *(required)*
 - `KeyFingerprint`: `str` *(required)*
 - `Entitlements`:
   `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]

@@ -1630,6 +1630,7 @@ Optional fields:
 - `endTimeOffsetInNanos`: `int`
 - `nextToken`: `str`
 - `maxResults`: `int`
+- `intervalWindowInSeconds`: `int`
 
 ## GetInterpolatedAssetPropertyValuesResponseTypeDef
 

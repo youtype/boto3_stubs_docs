@@ -235,8 +235,7 @@ from mypy_boto3_license_manager.type_defs import CheckoutLicenseRequestRequestTy
 Required fields:
 
 - `ProductSKU`: `str`
-- `CheckoutType`: `Literal['PROVISIONAL']` (see
-  [CheckoutTypeType](./literals.md#checkouttypetype))
+- `CheckoutType`: [CheckoutTypeType](./literals.md#checkouttypetype)
 - `KeyFingerprint`: `str`
 - `Entitlements`:
   `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
@@ -255,8 +254,7 @@ from mypy_boto3_license_manager.type_defs import CheckoutLicenseResponseTypeDef
 
 Required fields:
 
-- `CheckoutType`: `Literal['PROVISIONAL']` (see
-  [CheckoutTypeType](./literals.md#checkouttypetype))
+- `CheckoutType`: [CheckoutTypeType](./literals.md#checkouttypetype)
 - `LicenseConsumptionToken`: `str`
 - `EntitlementsAllowed`:
   `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]

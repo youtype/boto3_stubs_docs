@@ -12,6 +12,7 @@ type annotations stubs module
   - [ArtifactPackagingType](#artifactpackagingtype)
   - [ArtifactsTypeType](#artifactstypetype)
   - [AuthTypeType](#authtypetype)
+  - [BatchReportModeTypeType](#batchreportmodetypetype)
   - [BucketOwnerAccessType](#bucketowneraccesstype)
   - [BuildBatchPhaseTypeType](#buildbatchphasetypetype)
   - [BuildPhaseTypeType](#buildphasetypetype)
@@ -103,6 +104,17 @@ Values:
 - `BASIC_AUTH`
 - `OAUTH`
 - `PERSONAL_ACCESS_TOKEN`
+
+## BatchReportModeTypeType
+
+```python
+from mypy_boto3_codebuild.literals import BatchReportModeTypeType
+```
+
+Values:
+
+- `REPORT_AGGREGATED_BATCH`
+- `REPORT_INDIVIDUAL_BUILDS`
 
 ## BucketOwnerAccessType
 

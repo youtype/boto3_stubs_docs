@@ -118,6 +118,7 @@ Arguments for `GetInterpolatedAssetPropertyValuesPaginator.paginate` method:
 - `propertyAlias`: `str`
 - `startTimeOffsetInNanos`: `int`
 - `endTimeOffsetInNanos`: `int`
+- `intervalWindowInSeconds`: `int`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
