@@ -180,6 +180,8 @@ Keyword-only arguments:
   `List`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
   *(required)*
 - `DefaultValue`: `str`
+- `SplitChargeRules`:
+  `List`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
 
 Returns
 [CreateCostCategoryDefinitionResponseTypeDef](./type_defs.md#createcostcategorydefinitionresponsetypedef).
@@ -282,8 +284,8 @@ Returns `str`.
 
 ### get_anomalies
 
-Retrieves all of the cost anomalies detected on your account, during the time
-period specified by the `DateInterval` object.
+Retrieves all of the cost anomalies detected on your account during the time
+period that's specified by the `DateInterval` object.
 
 Type annotations for `boto3.client("ce").get_anomalies` method.
 
@@ -874,6 +876,8 @@ Keyword-only arguments:
   `List`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
   *(required)*
 - `DefaultValue`: `str`
+- `SplitChargeRules`:
+  `List`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
 
 Returns
 [UpdateCostCategoryDefinitionResponseTypeDef](./type_defs.md#updatecostcategorydefinitionresponsetypedef).

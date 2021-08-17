@@ -15,6 +15,8 @@ type annotations stubs module
   - [CostCategoryInheritedValueDimensionNameType](#costcategoryinheritedvaluedimensionnametype)
   - [CostCategoryRuleTypeType](#costcategoryruletypetype)
   - [CostCategoryRuleVersionType](#costcategoryruleversiontype)
+  - [CostCategorySplitChargeMethodType](#costcategorysplitchargemethodtype)
+  - [CostCategorySplitChargeRuleParameterTypeType](#costcategorysplitchargeruleparametertypetype)
   - [CostCategoryStatusComponentType](#costcategorystatuscomponenttype)
   - [CostCategoryStatusType](#costcategorystatustype)
   - [DimensionType](#dimensiontype)
@@ -117,6 +119,28 @@ from mypy_boto3_ce.literals import CostCategoryRuleVersionType
 Values:
 
 - `CostCategoryExpression.v1`
+
+## CostCategorySplitChargeMethodType
+
+```python
+from mypy_boto3_ce.literals import CostCategorySplitChargeMethodType
+```
+
+Values:
+
+- `EVEN`
+- `FIXED`
+- `PROPORTIONAL`
+
+## CostCategorySplitChargeRuleParameterTypeType
+
+```python
+from mypy_boto3_ce.literals import CostCategorySplitChargeRuleParameterTypeType
+```
+
+Values:
+
+- `ALLOCATION_PERCENTAGES`
 
 ## CostCategoryStatusComponentType
 

@@ -57,6 +57,7 @@ Optional fields:
 - `ownerArn`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
+- `dryRun`: `bool`
 
 ## CreateEnvironmentEC2ResultTypeDef
 
@@ -387,3 +388,5 @@ Optional fields:
 
 - `name`: `str`
 - `description`: `str`
+- `managedCredentialsAction`:
+  [ManagedCredentialsActionType](./literals.md#managedcredentialsactiontype)

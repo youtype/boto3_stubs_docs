@@ -116,8 +116,8 @@ Returns [Exceptions](#exceptions).
 
 ### associate_kms_key
 
-Associates the specified AWS Key Management Service (AWS KMS) customer master
-key (CMK) with the specified log group.
+Associates the specified Key Management Service customer master key (CMK) with
+the specified log group.
 
 Type annotations for `boto3.client("logs").associate_kms_key` method.
 
@@ -564,8 +564,8 @@ Returns
 
 ### disassociate_kms_key
 
-Disassociates the associated AWS Key Management Service (AWS KMS) customer
-master key (CMK) from the specified log group.
+Disassociates the associated Key Management Service customer master key (CMK)
+from the specified log group.
 
 Type annotations for `boto3.client("logs").disassociate_kms_key` method.
 
@@ -835,8 +835,8 @@ Returns
 
 ### put_resource_policy
 
-Creates or updates a resource policy allowing other AWS services to put log
-events to this account, such as Amazon Route 53.
+Creates or updates a resource policy allowing other Amazon Web Services
+services to put log events to this account, such as Amazon Route 53.
 
 Type annotations for `boto3.client("logs").put_resource_policy` method.
 

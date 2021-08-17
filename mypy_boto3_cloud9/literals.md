@@ -14,6 +14,7 @@ type annotations stubs module
   - [EnvironmentStatusType](#environmentstatustype)
   - [EnvironmentTypeType](#environmenttypetype)
   - [ListEnvironmentsPaginatorName](#listenvironmentspaginatorname)
+  - [ManagedCredentialsActionType](#managedcredentialsactiontype)
   - [ManagedCredentialsStatusType](#managedcredentialsstatustype)
   - [MemberPermissionsType](#memberpermissionstype)
   - [PermissionsType](#permissionstype)
@@ -89,6 +90,17 @@ from mypy_boto3_cloud9.literals import ListEnvironmentsPaginatorName
 Values:
 
 - `list_environments`
+
+## ManagedCredentialsActionType
+
+```python
+from mypy_boto3_cloud9.literals import ManagedCredentialsActionType
+```
+
+Values:
+
+- `DISABLE`
+- `ENABLE`
 
 ## ManagedCredentialsStatusType
 

@@ -123,6 +123,7 @@ Keyword-only arguments:
 - `ownerArn`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
+- `dryRun`: `bool`
 
 Returns
 [CreateEnvironmentEC2ResultTypeDef](./type_defs.md#createenvironmentec2resulttypedef).
@@ -364,6 +365,8 @@ Keyword-only arguments:
 - `environmentId`: `str` *(required)*
 - `name`: `str`
 - `description`: `str`
+- `managedCredentialsAction`:
+  [ManagedCredentialsActionType](./literals.md#managedcredentialsactiontype)
 
 Returns `Dict`\[`str`, `Any`\].
 

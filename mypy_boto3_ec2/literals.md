@@ -231,6 +231,7 @@ type annotations stubs module
   - [InterfaceProtocolTypeType](#interfaceprotocoltypetype)
   - [Ipv6SupportValueType](#ipv6supportvaluetype)
   - [KeyPairExistsWaiterName](#keypairexistswaitername)
+  - [KeyTypeType](#keytypetype)
   - [LaunchTemplateErrorCodeType](#launchtemplateerrorcodetype)
   - [LaunchTemplateHttpTokensStateType](#launchtemplatehttptokensstatetype)
   - [LaunchTemplateInstanceMetadataEndpointStateType](#launchtemplateinstancemetadataendpointstatetype)
@@ -3236,6 +3237,17 @@ from mypy_boto3_ec2.literals import KeyPairExistsWaiterName
 Values:
 
 - `key_pair_exists`
+
+## KeyTypeType
+
+```python
+from mypy_boto3_ec2.literals import KeyTypeType
+```
+
+Values:
+
+- `ed25519`
+- `rsa`
 
 ## LaunchTemplateErrorCodeType
 

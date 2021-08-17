@@ -4725,6 +4725,7 @@ Required fields:
 Optional fields:
 
 - `DryRun`: `bool`
+- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
@@ -4741,6 +4742,7 @@ Required fields:
 Optional fields:
 
 - `DryRun`: `bool`
+- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
@@ -16431,6 +16433,7 @@ Optional fields:
 - `KeyPairId`: `str`
 - `KeyFingerprint`: `str`
 - `KeyName`: `str`
+- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## KeyPairTypeDef

@@ -975,6 +975,7 @@ from mypy_boto3_ec2.literals import AccountAttributeNameType, ...
 - [InterfaceProtocolTypeType](./literals.md#interfaceprotocoltypetype)
 - [Ipv6SupportValueType](./literals.md#ipv6supportvaluetype)
 - [KeyPairExistsWaiterName](./literals.md#keypairexistswaitername)
+- [KeyTypeType](./literals.md#keytypetype)
 - [LaunchTemplateErrorCodeType](./literals.md#launchtemplateerrorcodetype)
 - [LaunchTemplateHttpTokensStateType](./literals.md#launchtemplatehttptokensstatetype)
 - [LaunchTemplateInstanceMetadataEndpointStateType](./literals.md#launchtemplateinstancemetadataendpointstatetype)

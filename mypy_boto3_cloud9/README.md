@@ -93,6 +93,7 @@ from mypy_boto3_cloud9.literals import ConnectionTypeType, ...
 - [EnvironmentStatusType](./literals.md#environmentstatustype)
 - [EnvironmentTypeType](./literals.md#environmenttypetype)
 - [ListEnvironmentsPaginatorName](./literals.md#listenvironmentspaginatorname)
+- [ManagedCredentialsActionType](./literals.md#managedcredentialsactiontype)
 - [ManagedCredentialsStatusType](./literals.md#managedcredentialsstatustype)
 - [MemberPermissionsType](./literals.md#memberpermissionstype)
 - [PermissionsType](./literals.md#permissionstype)

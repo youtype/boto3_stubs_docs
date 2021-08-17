@@ -17,6 +17,8 @@ type annotations stubs module
   - [CostCategoryProcessingStatusTypeDef](#costcategoryprocessingstatustypedef)
   - [CostCategoryReferenceTypeDef](#costcategoryreferencetypedef)
   - [CostCategoryRuleTypeDef](#costcategoryruletypedef)
+  - [CostCategorySplitChargeRuleParameterTypeDef](#costcategorysplitchargeruleparametertypedef)
+  - [CostCategorySplitChargeRuleTypeDef](#costcategorysplitchargeruletypedef)
   - [CostCategoryTypeDef](#costcategorytypedef)
   - [CostCategoryValuesTypeDef](#costcategoryvaluestypedef)
   - [CoverageByTimeTypeDef](#coveragebytimetypedef)
@@ -288,6 +290,36 @@ Optional fields:
   [CostCategoryInheritedValueDimensionTypeDef](./type_defs.md#costcategoryinheritedvaluedimensiontypedef)
 - `Type`: [CostCategoryRuleTypeType](./literals.md#costcategoryruletypetype)
 
+## CostCategorySplitChargeRuleParameterTypeDef
+
+```python
+from mypy_boto3_ce.type_defs import CostCategorySplitChargeRuleParameterTypeDef
+```
+
+Required fields:
+
+- `Type`: `Literal['ALLOCATION_PERCENTAGES']` (see
+  [CostCategorySplitChargeRuleParameterTypeType](./literals.md#costcategorysplitchargeruleparametertypetype))
+- `Values`: `List`\[`str`\]
+
+## CostCategorySplitChargeRuleTypeDef
+
+```python
+from mypy_boto3_ce.type_defs import CostCategorySplitChargeRuleTypeDef
+```
+
+Required fields:
+
+- `Source`: `str`
+- `Targets`: `List`\[`str`\]
+- `Method`:
+  [CostCategorySplitChargeMethodType](./literals.md#costcategorysplitchargemethodtype)
+
+Optional fields:
+
+- `Parameters`:
+  `List`\[[CostCategorySplitChargeRuleParameterTypeDef](./type_defs.md#costcategorysplitchargeruleparametertypedef)\]
+
 ## CostCategoryTypeDef
 
 ```python
@@ -307,6 +339,8 @@ Required fields:
 Optional fields:
 
 - `EffectiveEnd`: `str`
+- `SplitChargeRules`:
+  `List`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
 - `ProcessingStatus`:
   `List`\[[CostCategoryProcessingStatusTypeDef](./type_defs.md#costcategoryprocessingstatustypedef)\]
 - `DefaultValue`: `str`
@@ -448,6 +482,8 @@ Required fields:
 Optional fields:
 
 - `DefaultValue`: `str`
+- `SplitChargeRules`:
+  `List`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
 
 ## CreateCostCategoryDefinitionResponseTypeDef
 
@@ -2145,6 +2181,8 @@ Required fields:
 Optional fields:
 
 - `DefaultValue`: `str`
+- `SplitChargeRules`:
+  `List`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
 
 ## UpdateCostCategoryDefinitionResponseTypeDef
 

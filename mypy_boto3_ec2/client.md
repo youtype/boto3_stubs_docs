@@ -2019,7 +2019,7 @@ Returns
 
 ### create_key_pair
 
-Creates a 2048-bit RSA key pair with the specified name.
+Creates an ED25519 or 2048-bit RSA key pair with the specified name.
 
 Type annotations for `boto3.client("ec2").create_key_pair` method.
 
@@ -2033,6 +2033,7 @@ Keyword-only arguments:
 
 - `KeyName`: `str` *(required)*
 - `DryRun`: `bool`
+- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
@@ -8849,8 +8850,8 @@ Returns
 
 ### import_key_pair
 
-Imports the public key from an RSA key pair that you created with a third-party
-tool.
+Imports the public key from an RSA or ED25519 key pair that you created with a
+third-party tool.
 
 Type annotations for `boto3.client("ec2").import_key_pair` method.
 
