@@ -15,6 +15,7 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [generate_presigned_url](#generate_presigned_url)
     - [invoke_endpoint](#invoke_endpoint)
+    - [invoke_endpoint_async](#invoke_endpoint_async)
 
 ## SageMakerRuntimeClient
 
@@ -128,3 +129,29 @@ Keyword-only arguments:
 
 Returns
 [InvokeEndpointOutputTypeDef](./type_defs.md#invokeendpointoutputtypedef).
+
+### invoke_endpoint_async
+
+.
+
+Type annotations for `boto3.client("sagemaker-runtime").invoke_endpoint_async`
+method.
+
+Boto3 documentation:
+[SageMakerRuntime.Client.invoke_endpoint_async](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.invoke_endpoint_async)
+
+Arguments mapping described in
+[InvokeEndpointAsyncInputRequestTypeDef](./type_defs.md#invokeendpointasyncinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `EndpointName`: `str` *(required)*
+- `InputLocation`: `str` *(required)*
+- `ContentType`: `str`
+- `Accept`: `str`
+- `CustomAttributes`: `str`
+- `InferenceId`: `str`
+- `RequestTTLSeconds`: `int`
+
+Returns
+[InvokeEndpointAsyncOutputTypeDef](./type_defs.md#invokeendpointasyncoutputtypedef).

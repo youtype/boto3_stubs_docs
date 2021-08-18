@@ -716,8 +716,8 @@ Returns
 
 ### get_firewall_rule_group_policy
 
-Returns the AWS Identity and Access Management (AWS IAM) policy for sharing the
-specified rule group.
+Returns the Identity and Access Management (Amazon Web Services IAM) policy for
+sharing the specified rule group.
 
 Type annotations for
 `boto3.client("route53resolver").get_firewall_rule_group_policy` method.
@@ -1070,7 +1070,7 @@ Returns
 ### list_resolver_dnssec_configs
 
 Lists the configurations for DNSSEC validation that are associated with the
-current AWS account.
+current Amazon Web Services account.
 
 Type annotations for
 `boto3.client("route53resolver").list_resolver_dnssec_configs` method.
@@ -1114,8 +1114,8 @@ Returns
 
 ### list_resolver_endpoints
 
-Lists all the Resolver endpoints that were created using the current AWS
-account.
+Lists all the Resolver endpoints that were created using the current Amazon Web
+Services account.
 
 Type annotations for `boto3.client("route53resolver").list_resolver_endpoints`
 method.
@@ -1188,7 +1188,7 @@ Returns
 ### list_resolver_rule_associations
 
 Lists the associations that were created between Resolver rules and VPCs using
-the current AWS account.
+the current Amazon Web Services account.
 
 Type annotations for
 `boto3.client("route53resolver").list_resolver_rule_associations` method.
@@ -1210,7 +1210,8 @@ Returns
 
 ### list_resolver_rules
 
-Lists the Resolver rules that were created using the current AWS account.
+Lists the Resolver rules that were created using the current Amazon Web
+Services account.
 
 Type annotations for `boto3.client("route53resolver").list_resolver_rules`
 method.
@@ -1254,8 +1255,8 @@ Returns
 
 ### put_firewall_rule_group_policy
 
-Attaches an AWS Identity and Access Management (AWS IAM) policy for sharing the
-rule group.
+Attaches an Identity and Access Management (Amazon Web Services IAM) policy for
+sharing the rule group.
 
 Type annotations for
 `boto3.client("route53resolver").put_firewall_rule_group_policy` method.
@@ -1276,9 +1277,9 @@ Returns
 
 ### put_resolver_query_log_config_policy
 
-Specifies an AWS account that you want to share a query logging configuration
-with, the query logging configuration that you want to share, and the
-operations that you want the account to be able to perform on the
+Specifies an Amazon Web Services account that you want to share a query logging
+configuration with, the query logging configuration that you want to share, and
+the operations that you want the account to be able to perform on the
 configuration.
 
 Type annotations for
@@ -1300,9 +1301,9 @@ Returns
 
 ### put_resolver_rule_policy
 
-Specifies an AWS rule that you want to share with another account, the account
-that you want to share the rule with, and the operations that you want the
-account to be able to perform on the rule.
+Specifies an Amazon Web Services rule that you want to share with another
+account, the account that you want to share the rule with, and the operations
+that you want the account to be able to perform on the rule.
 
 Type annotations for `boto3.client("route53resolver").put_resolver_rule_policy`
 method.

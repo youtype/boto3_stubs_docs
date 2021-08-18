@@ -32,6 +32,10 @@ type annotations stubs module
   - [AssociateTrialComponentRequestRequestTypeDef](#associatetrialcomponentrequestrequesttypedef)
   - [AssociateTrialComponentResponseTypeDef](#associatetrialcomponentresponsetypedef)
   - [AssociationSummaryTypeDef](#associationsummarytypedef)
+  - [AsyncInferenceClientConfigTypeDef](#asyncinferenceclientconfigtypedef)
+  - [AsyncInferenceConfigTypeDef](#asyncinferenceconfigtypedef)
+  - [AsyncInferenceNotificationConfigTypeDef](#asyncinferencenotificationconfigtypedef)
+  - [AsyncInferenceOutputConfigTypeDef](#asyncinferenceoutputconfigtypedef)
   - [AthenaDatasetDefinitionTypeDef](#athenadatasetdefinitiontypedef)
   - [AutoMLCandidateStepTypeDef](#automlcandidatesteptypedef)
   - [AutoMLCandidateTypeDef](#automlcandidatetypedef)
@@ -1095,6 +1099,59 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 
+## AsyncInferenceClientConfigTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import AsyncInferenceClientConfigTypeDef
+```
+
+Optional fields:
+
+- `MaxConcurrentInvocationsPerInstance`: `int`
+
+## AsyncInferenceConfigTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import AsyncInferenceConfigTypeDef
+```
+
+Required fields:
+
+- `OutputConfig`:
+  [AsyncInferenceOutputConfigTypeDef](./type_defs.md#asyncinferenceoutputconfigtypedef)
+
+Optional fields:
+
+- `ClientConfig`:
+  [AsyncInferenceClientConfigTypeDef](./type_defs.md#asyncinferenceclientconfigtypedef)
+
+## AsyncInferenceNotificationConfigTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import AsyncInferenceNotificationConfigTypeDef
+```
+
+Optional fields:
+
+- `SuccessTopic`: `str`
+- `ErrorTopic`: `str`
+
+## AsyncInferenceOutputConfigTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import AsyncInferenceOutputConfigTypeDef
+```
+
+Required fields:
+
+- `S3OutputPath`: `str`
+
+Optional fields:
+
+- `KmsKeyId`: `str`
+- `NotificationConfig`:
+  [AsyncInferenceNotificationConfigTypeDef](./type_defs.md#asyncinferencenotificationconfigtypedef)
+
 ## AthenaDatasetDefinitionTypeDef
 
 ```python
@@ -2086,6 +2143,8 @@ Optional fields:
   [DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
+- `AsyncInferenceConfig`:
+  [AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef)
 
 ## CreateEndpointConfigOutputTypeDef
 
@@ -2656,6 +2715,7 @@ Optional fields:
 - `DefaultCodeRepository`: `str`
 - `AdditionalCodeRepositories`: `List`\[`str`\]
 - `RootAccess`: [RootAccessType](./literals.md#rootaccesstype)
+- `PlatformIdentifier`: `str`
 
 ## CreateNotebookInstanceLifecycleConfigInputRequestTypeDef
 
@@ -4367,6 +4427,8 @@ Required fields:
   [DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef)
 - `KmsKeyId`: `str`
 - `CreationTime`: `datetime`
+- `AsyncInferenceConfig`:
+  [AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4401,6 +4463,8 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `LastDeploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
+- `AsyncInferenceConfig`:
+  [AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -5026,6 +5090,7 @@ Required fields:
 - `DefaultCodeRepository`: `str`
 - `AdditionalCodeRepositories`: `List`\[`str`\]
 - `RootAccess`: [RootAccessType](./literals.md#rootaccesstype)
+- `PlatformIdentifier`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

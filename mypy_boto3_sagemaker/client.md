@@ -780,6 +780,8 @@ Keyword-only arguments:
   [DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
+- `AsyncInferenceConfig`:
+  [AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef)
 
 Returns
 [CreateEndpointConfigOutputTypeDef](./type_defs.md#createendpointconfigoutputtypedef).
@@ -1262,6 +1264,7 @@ Keyword-only arguments:
 - `DefaultCodeRepository`: `str`
 - `AdditionalCodeRepositories`: `List`\[`str`\]
 - `RootAccess`: [RootAccessType](./literals.md#rootaccesstype)
+- `PlatformIdentifier`: `str`
 
 Returns
 [CreateNotebookInstanceOutputTypeDef](./type_defs.md#createnotebookinstanceoutputtypedef).
@@ -2596,7 +2599,7 @@ Returns
 
 ### describe_endpoint
 
-Returns the description of an endpoint.
+.
 
 Type annotations for `boto3.client("sagemaker").describe_endpoint` method.
 
@@ -2615,8 +2618,7 @@ Returns
 
 ### describe_endpoint_config
 
-Returns the description of an endpoint configuration created using the
-`CreateEndpointConfig` API.
+.
 
 Type annotations for `boto3.client("sagemaker").describe_endpoint_config`
 method.

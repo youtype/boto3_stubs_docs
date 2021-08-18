@@ -8,9 +8,43 @@ type annotations stubs module
 [mypy_boto3_sagemaker_runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
 
 - [Typed dictionaries for boto3 SageMakerRuntime module](#typed-dictionaries-for-boto3-sagemakerruntime-module)
+  - [InvokeEndpointAsyncInputRequestTypeDef](#invokeendpointasyncinputrequesttypedef)
+  - [InvokeEndpointAsyncOutputTypeDef](#invokeendpointasyncoutputtypedef)
   - [InvokeEndpointInputRequestTypeDef](#invokeendpointinputrequesttypedef)
   - [InvokeEndpointOutputTypeDef](#invokeendpointoutputtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+
+## InvokeEndpointAsyncInputRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointAsyncInputRequestTypeDef
+```
+
+Required fields:
+
+- `EndpointName`: `str`
+- `InputLocation`: `str`
+
+Optional fields:
+
+- `ContentType`: `str`
+- `Accept`: `str`
+- `CustomAttributes`: `str`
+- `InferenceId`: `str`
+- `RequestTTLSeconds`: `int`
+
+## InvokeEndpointAsyncOutputTypeDef
+
+```python
+from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointAsyncOutputTypeDef
+```
+
+Required fields:
+
+- `InferenceId`: `str`
+- `OutputLocation`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## InvokeEndpointInputRequestTypeDef
 

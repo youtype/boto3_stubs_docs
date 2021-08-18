@@ -1409,8 +1409,6 @@ Optional fields:
 - `restrictions`:
   [BatchRestrictionsTypeDef](./type_defs.md#batchrestrictionstypedef)
 - `timeoutInMins`: `int`
-- `batchReportMode`:
-  [BatchReportModeTypeType](./literals.md#batchreportmodetypetype)
 
 ## ProjectCacheTypeDef
 
