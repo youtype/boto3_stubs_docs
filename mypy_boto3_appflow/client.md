@@ -103,7 +103,8 @@ Returns `bool`.
 
 ### create_connector_profile
 
-Creates a new connector profile associated with your AWS account.
+Creates a new connector profile associated with your Amazon Web Services
+account.
 
 Type annotations for `boto3.client("appflow").create_connector_profile` method.
 
@@ -498,12 +499,13 @@ Keyword-only arguments:
 - `flowName`: `str` *(required)*
 - `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
   *(required)*
+- `sourceFlowConfig`:
+  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
+  *(required)*
 - `destinationFlowConfigList`:
   `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
   *(required)*
 - `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\] *(required)*
 - `description`: `str`
-- `sourceFlowConfig`:
-  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
 
 Returns [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef).

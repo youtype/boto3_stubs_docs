@@ -731,6 +731,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
   service
 
+- [mypy-boto3-memorydb](./mypy_boto3_memorydb) for
+  [MemoryDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB)
+  service
+
 - [mypy-boto3-meteringmarketplace](./mypy_boto3_meteringmarketplace) for
   [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
   service

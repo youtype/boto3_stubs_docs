@@ -8820,6 +8820,7 @@ Keyword-only arguments:
   `List`\[[ImportImageLicenseConfigurationRequestTypeDef](./type_defs.md#importimagelicenseconfigurationrequesttypedef)\]
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `UsageOperation`: `str`
 
 Returns [ImportImageResultTypeDef](./type_defs.md#importimageresulttypedef).
 

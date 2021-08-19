@@ -15248,6 +15248,7 @@ Optional fields:
   `List`\[[ImportImageLicenseConfigurationRequestTypeDef](./type_defs.md#importimagelicenseconfigurationrequesttypedef)\]
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `UsageOperation`: `str`
 
 ## ImportImageResultTypeDef
 
@@ -15274,6 +15275,7 @@ Required fields:
 - `LicenseSpecifications`:
   `List`\[[ImportImageLicenseConfigurationResponseTypeDef](./type_defs.md#importimagelicenseconfigurationresponsetypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `UsageOperation`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -15302,6 +15304,7 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `LicenseSpecifications`:
   `List`\[[ImportImageLicenseConfigurationResponseTypeDef](./type_defs.md#importimagelicenseconfigurationresponsetypedef)\]
+- `UsageOperation`: `str`
 
 ## ImportInstanceLaunchSpecificationTypeDef
 

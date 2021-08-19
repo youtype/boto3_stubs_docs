@@ -119,6 +119,9 @@ Values:
 - `EC2SpotFleetRequestAverageNetworkOut`
 - `ECSServiceAverageCPUUtilization`
 - `ECSServiceAverageMemoryUtilization`
+- `ElastiCacheDatabaseMemoryUsageCountedForEvictPercentage`
+- `ElastiCachePrimaryEngineCPUUtilization`
+- `ElastiCacheReplicaEngineCPUUtilization`
 - `KafkaBrokerStorageUtilization`
 - `LambdaProvisionedConcurrencyUtilization`
 - `RDSReaderAverageCPUUtilization`
@@ -156,6 +159,8 @@ Values:
 - `dynamodb:table:WriteCapacityUnits`
 - `ec2:spot-fleet-request:TargetCapacity`
 - `ecs:service:DesiredCount`
+- `elasticache:replication-group:NodeGroups`
+- `elasticache:replication-group:Replicas`
 - `elasticmapreduce:instancegroup:InstanceCount`
 - `kafka:broker-storage:VolumeSize`
 - `lambda:function:ProvisionedConcurrency`
@@ -192,6 +197,7 @@ Values:
 - `dynamodb`
 - `ec2`
 - `ecs`
+- `elasticache`
 - `elasticmapreduce`
 - `kafka`
 - `lambda`

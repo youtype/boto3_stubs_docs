@@ -25,7 +25,10 @@ type annotations stubs module
   - [OperatorType](#operatortype)
   - [PrefixFormatType](#prefixformattype)
   - [PrefixTypeType](#prefixtypetype)
+  - [PrivateConnectionProvisioningFailureCauseType](#privateconnectionprovisioningfailurecausetype)
+  - [PrivateConnectionProvisioningStatusType](#privateconnectionprovisioningstatustype)
   - [S3ConnectorOperatorType](#s3connectoroperatortype)
+  - [SAPODataConnectorOperatorType](#sapodataconnectoroperatortype)
   - [SalesforceConnectorOperatorType](#salesforceconnectoroperatortype)
   - [ScheduleFrequencyTypeType](#schedulefrequencytypetype)
   - [ServiceNowConnectorOperatorType](#servicenowconnectoroperatortype)
@@ -91,6 +94,7 @@ Values:
 - `Redshift`
 - `S3`
 - `Salesforce`
+- `SAPOData`
 - `Servicenow`
 - `Singular`
 - `Slack`
@@ -338,6 +342,32 @@ Values:
 - `PATH`
 - `PATH_AND_FILENAME`
 
+## PrivateConnectionProvisioningFailureCauseType
+
+```python
+from mypy_boto3_appflow.literals import PrivateConnectionProvisioningFailureCauseType
+```
+
+Values:
+
+- `ACCESS_DENIED`
+- `CONNECTOR_AUTHENTICATION`
+- `CONNECTOR_SERVER`
+- `INTERNAL_SERVER`
+- `VALIDATION`
+
+## PrivateConnectionProvisioningStatusType
+
+```python
+from mypy_boto3_appflow.literals import PrivateConnectionProvisioningStatusType
+```
+
+Values:
+
+- `CREATED`
+- `FAILED`
+- `PENDING`
+
 ## S3ConnectorOperatorType
 
 ```python
@@ -348,6 +378,36 @@ Values:
 
 - `ADDITION`
 - `BETWEEN`
+- `DIVISION`
+- `EQUAL_TO`
+- `GREATER_THAN`
+- `GREATER_THAN_OR_EQUAL_TO`
+- `LESS_THAN`
+- `LESS_THAN_OR_EQUAL_TO`
+- `MASK_ALL`
+- `MASK_FIRST_N`
+- `MASK_LAST_N`
+- `MULTIPLICATION`
+- `NO_OP`
+- `NOT_EQUAL_TO`
+- `PROJECTION`
+- `SUBTRACTION`
+- `VALIDATE_NON_NEGATIVE`
+- `VALIDATE_NON_NULL`
+- `VALIDATE_NON_ZERO`
+- `VALIDATE_NUMERIC`
+
+## SAPODataConnectorOperatorType
+
+```python
+from mypy_boto3_appflow.literals import SAPODataConnectorOperatorType
+```
+
+Values:
+
+- `ADDITION`
+- `BETWEEN`
+- `CONTAINS`
 - `DIVISION`
 - `EQUAL_TO`
 - `GREATER_THAN`
