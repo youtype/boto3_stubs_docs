@@ -11609,6 +11609,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [DescribeTransitGatewayVpcAttachmentsPaginator](./paginators.md#describetransitgatewayvpcattachmentspaginator)
 - `client.get_paginator("describe_transit_gateways")` ->
   [DescribeTransitGatewaysPaginator](./paginators.md#describetransitgatewayspaginator)
+- `client.get_paginator("describe_trunk_interface_associations")` ->
+  [DescribeTrunkInterfaceAssociationsPaginator](./paginators.md#describetrunkinterfaceassociationspaginator)
 - `client.get_paginator("describe_volume_status")` ->
   [DescribeVolumeStatusPaginator](./paginators.md#describevolumestatuspaginator)
 - `client.get_paginator("describe_volumes")` ->

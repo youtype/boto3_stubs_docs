@@ -144,6 +144,7 @@ type annotations stubs module
   - [DescribeTransitGatewayRouteTablesPaginatorName](#describetransitgatewayroutetablespaginatorname)
   - [DescribeTransitGatewayVpcAttachmentsPaginatorName](#describetransitgatewayvpcattachmentspaginatorname)
   - [DescribeTransitGatewaysPaginatorName](#describetransitgatewayspaginatorname)
+  - [DescribeTrunkInterfaceAssociationsPaginatorName](#describetrunkinterfaceassociationspaginatorname)
   - [DescribeVolumeStatusPaginatorName](#describevolumestatuspaginatorname)
   - [DescribeVolumesModificationsPaginatorName](#describevolumesmodificationspaginatorname)
   - [DescribeVolumesPaginatorName](#describevolumespaginatorname)
@@ -1845,6 +1846,16 @@ Values:
 
 - `describe_transit_gateways`
 
+## DescribeTrunkInterfaceAssociationsPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeTrunkInterfaceAssociationsPaginatorName
+```
+
+Values:
+
+- `describe_trunk_interface_associations`
+
 ## DescribeVolumeStatusPaginatorName
 
 ```python
@@ -3033,6 +3044,15 @@ Values:
 - `m6gd.medium`
 - `m6gd.metal`
 - `m6gd.xlarge`
+- `m6i.12xlarge`
+- `m6i.16xlarge`
+- `m6i.24xlarge`
+- `m6i.2xlarge`
+- `m6i.32xlarge`
+- `m6i.4xlarge`
+- `m6i.8xlarge`
+- `m6i.large`
+- `m6i.xlarge`
 - `mac1.metal`
 - `p2.16xlarge`
 - `p2.8xlarge`

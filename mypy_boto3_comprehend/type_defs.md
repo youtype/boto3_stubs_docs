@@ -1039,6 +1039,7 @@ from mypy_boto3_comprehend.type_defs import DocumentClassificationJobPropertiesT
 Optional fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
@@ -1153,6 +1154,7 @@ from mypy_boto3_comprehend.type_defs import DominantLanguageDetectionJobProperti
 Optional fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
@@ -1230,6 +1232,7 @@ from mypy_boto3_comprehend.type_defs import EntitiesDetectionJobPropertiesTypeDe
 Optional fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
@@ -1445,6 +1448,7 @@ from mypy_boto3_comprehend.type_defs import EventsDetectionJobPropertiesTypeDef
 Optional fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
@@ -1507,6 +1511,7 @@ from mypy_boto3_comprehend.type_defs import KeyPhrasesDetectionJobPropertiesType
 Optional fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
@@ -1899,6 +1904,7 @@ from mypy_boto3_comprehend.type_defs import PiiEntitiesDetectionJobPropertiesTyp
 Optional fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
@@ -1992,6 +1998,7 @@ from mypy_boto3_comprehend.type_defs import SentimentDetectionJobPropertiesTypeD
 Optional fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`
@@ -2040,6 +2047,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartDocumentClassificationJobResponseTypeDef
 
@@ -2050,6 +2058,7 @@ from mypy_boto3_comprehend.type_defs import StartDocumentClassificationJobRespon
 Required fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2074,6 +2083,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartDominantLanguageDetectionJobResponseTypeDef
 
@@ -2084,6 +2094,7 @@ from mypy_boto3_comprehend.type_defs import StartDominantLanguageDetectionJobRes
 Required fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2110,6 +2121,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartEntitiesDetectionJobResponseTypeDef
 
@@ -2120,6 +2132,7 @@ from mypy_boto3_comprehend.type_defs import StartEntitiesDetectionJobResponseTyp
 Required fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2144,6 +2157,7 @@ Optional fields:
 
 - `JobName`: `str`
 - `ClientRequestToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartEventsDetectionJobResponseTypeDef
 
@@ -2154,6 +2168,7 @@ from mypy_boto3_comprehend.type_defs import StartEventsDetectionJobResponseTypeD
 Required fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2179,6 +2194,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartKeyPhrasesDetectionJobResponseTypeDef
 
@@ -2189,6 +2205,7 @@ from mypy_boto3_comprehend.type_defs import StartKeyPhrasesDetectionJobResponseT
 Required fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2216,6 +2233,7 @@ Optional fields:
   [RedactionConfigTypeDef](./type_defs.md#redactionconfigtypedef)
 - `JobName`: `str`
 - `ClientRequestToken`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartPiiEntitiesDetectionJobResponseTypeDef
 
@@ -2226,6 +2244,7 @@ from mypy_boto3_comprehend.type_defs import StartPiiEntitiesDetectionJobResponse
 Required fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2251,6 +2270,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartSentimentDetectionJobResponseTypeDef
 
@@ -2261,6 +2281,7 @@ from mypy_boto3_comprehend.type_defs import StartSentimentDetectionJobResponseTy
 Required fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2286,6 +2307,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartTopicsDetectionJobResponseTypeDef
 
@@ -2296,6 +2318,7 @@ from mypy_boto3_comprehend.type_defs import StartTopicsDetectionJobResponseTypeD
 Required fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2520,6 +2543,7 @@ from mypy_boto3_comprehend.type_defs import TopicsDetectionJobPropertiesTypeDef
 Optional fields:
 
 - `JobId`: `str`
+- `JobArn`: `str`
 - `JobName`: `str`
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `Message`: `str`

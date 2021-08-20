@@ -87,6 +87,7 @@ Values:
 - `ConfigurationConflict`
 - `InsufficientNumberOfReplicas`
 - `InternalFailure`
+- `K8sResourceNotFound`
 - `UnsupportedAddonModification`
 
 ## AddonStatusType
@@ -176,6 +177,7 @@ Values:
 - `InsufficientFreeAddresses`
 - `InsufficientNumberOfReplicas`
 - `IpNotAvailable`
+- `K8sResourceNotFound`
 - `NodeCreationFailure`
 - `OperationNotPermitted`
 - `PodEvictionFailure`

@@ -457,6 +457,10 @@ Required fields:
 - `clusterName`: `str`
 - `addonName`: `str`
 
+Optional fields:
+
+- `preserve`: `bool`
+
 ## DeleteAddonResponseTypeDef
 
 ```python

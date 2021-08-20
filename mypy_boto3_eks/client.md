@@ -307,6 +307,7 @@ Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `addonName`: `str` *(required)*
+- `preserve`: `bool`
 
 Returns
 [DeleteAddonResponseTypeDef](./type_defs.md#deleteaddonresponsetypedef).

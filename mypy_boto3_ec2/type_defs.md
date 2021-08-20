@@ -18963,6 +18963,7 @@ Optional fields:
 - `EnaSupport`: [EnaSupportType](./literals.md#enasupporttype)
 - `EfaSupported`: `bool`
 - `EfaInfo`: [EfaInfoTypeDef](./type_defs.md#efainfotypedef)
+- `EncryptionInTransitSupported`: `bool`
 
 ## NetworkInsightsAnalysisTypeDef
 

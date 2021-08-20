@@ -87,6 +87,7 @@ type annotations stubs module
   - [DescribeTransitGatewayRouteTablesPaginator](#describetransitgatewayroutetablespaginator)
   - [DescribeTransitGatewayVpcAttachmentsPaginator](#describetransitgatewayvpcattachmentspaginator)
   - [DescribeTransitGatewaysPaginator](#describetransitgatewayspaginator)
+  - [DescribeTrunkInterfaceAssociationsPaginator](#describetrunkinterfaceassociationspaginator)
   - [DescribeVolumeStatusPaginator](#describevolumestatuspaginator)
   - [DescribeVolumesPaginator](#describevolumespaginator)
   - [DescribeVolumesModificationsPaginator](#describevolumesmodificationspaginator)
@@ -2351,6 +2352,34 @@ Arguments for `DescribeTransitGatewaysPaginator.paginate` method:
 
 `DescribeTransitGatewaysPaginator.paginate` returns
 `Iterator`\[[DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef)\].
+
+## DescribeTrunkInterfaceAssociationsPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_trunk_interface_associations")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeTrunkInterfaceAssociationsPaginator
+
+def get_describe_trunk_interface_associations_paginator() -> DescribeTrunkInterfaceAssociationsPaginator:
+    return boto3.client("ec2").get_paginator("describe_trunk_interface_associations")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeTrunkInterfaceAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeTrunkInterfaceAssociations)
+
+Arguments for `DescribeTrunkInterfaceAssociationsPaginator.paginate` method:
+
+- `AssociationIds`: `List`\[`str`\]
+- `DryRun`: `bool`
+- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeTrunkInterfaceAssociationsPaginator.paginate` returns
+`Iterator`\[[DescribeTrunkInterfaceAssociationsResultTypeDef](./type_defs.md#describetrunkinterfaceassociationsresulttypedef)\].
 
 ## DescribeVolumeStatusPaginator
 
