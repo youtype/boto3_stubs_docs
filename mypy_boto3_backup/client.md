@@ -16,19 +16,26 @@ type annotations stubs module
     - [create_backup_plan](#create_backup_plan)
     - [create_backup_selection](#create_backup_selection)
     - [create_backup_vault](#create_backup_vault)
+    - [create_framework](#create_framework)
+    - [create_report_plan](#create_report_plan)
     - [delete_backup_plan](#delete_backup_plan)
     - [delete_backup_selection](#delete_backup_selection)
     - [delete_backup_vault](#delete_backup_vault)
     - [delete_backup_vault_access_policy](#delete_backup_vault_access_policy)
     - [delete_backup_vault_notifications](#delete_backup_vault_notifications)
+    - [delete_framework](#delete_framework)
     - [delete_recovery_point](#delete_recovery_point)
+    - [delete_report_plan](#delete_report_plan)
     - [describe_backup_job](#describe_backup_job)
     - [describe_backup_vault](#describe_backup_vault)
     - [describe_copy_job](#describe_copy_job)
+    - [describe_framework](#describe_framework)
     - [describe_global_settings](#describe_global_settings)
     - [describe_protected_resource](#describe_protected_resource)
     - [describe_recovery_point](#describe_recovery_point)
     - [describe_region_settings](#describe_region_settings)
+    - [describe_report_job](#describe_report_job)
+    - [describe_report_plan](#describe_report_plan)
     - [describe_restore_job](#describe_restore_job)
     - [disassociate_recovery_point](#disassociate_recovery_point)
     - [export_backup_plan_template](#export_backup_plan_template)
@@ -48,23 +55,29 @@ type annotations stubs module
     - [list_backup_selections](#list_backup_selections)
     - [list_backup_vaults](#list_backup_vaults)
     - [list_copy_jobs](#list_copy_jobs)
+    - [list_frameworks](#list_frameworks)
     - [list_protected_resources](#list_protected_resources)
     - [list_recovery_points_by_backup_vault](#list_recovery_points_by_backup_vault)
     - [list_recovery_points_by_resource](#list_recovery_points_by_resource)
+    - [list_report_jobs](#list_report_jobs)
+    - [list_report_plans](#list_report_plans)
     - [list_restore_jobs](#list_restore_jobs)
     - [list_tags](#list_tags)
     - [put_backup_vault_access_policy](#put_backup_vault_access_policy)
     - [put_backup_vault_notifications](#put_backup_vault_notifications)
     - [start_backup_job](#start_backup_job)
     - [start_copy_job](#start_copy_job)
+    - [start_report_job](#start_report_job)
     - [start_restore_job](#start_restore_job)
     - [stop_backup_job](#stop_backup_job)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_backup_plan](#update_backup_plan)
+    - [update_framework](#update_framework)
     - [update_global_settings](#update_global_settings)
     - [update_recovery_point_lifecycle](#update_recovery_point_lifecycle)
     - [update_region_settings](#update_region_settings)
+    - [update_report_plan](#update_report_plan)
 
 ## BackupClient
 
@@ -98,6 +111,7 @@ Exceptions:
 
 - `Exceptions.AlreadyExistsException`
 - `Exceptions.ClientError`
+- `Exceptions.ConflictException`
 - `Exceptions.DependencyFailureException`
 - `Exceptions.InvalidParameterValueException`
 - `Exceptions.InvalidRequestException`
@@ -202,6 +216,58 @@ Keyword-only arguments:
 Returns
 [CreateBackupVaultOutputTypeDef](./type_defs.md#createbackupvaultoutputtypedef).
 
+### create_framework
+
+Creates a framework with one or more controls.
+
+Type annotations for `boto3.client("backup").create_framework` method.
+
+Boto3 documentation:
+[Backup.Client.create_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_framework)
+
+Arguments mapping described in
+[CreateFrameworkInputRequestTypeDef](./type_defs.md#createframeworkinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `FrameworkName`: `str` *(required)*
+- `FrameworkControls`:
+  `List`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
+  *(required)*
+- `FrameworkDescription`: `str`
+- `IdempotencyToken`: `str`
+- `FrameworkTags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateFrameworkOutputTypeDef](./type_defs.md#createframeworkoutputtypedef).
+
+### create_report_plan
+
+Creates a report plan.
+
+Type annotations for `boto3.client("backup").create_report_plan` method.
+
+Boto3 documentation:
+[Backup.Client.create_report_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_report_plan)
+
+Arguments mapping described in
+[CreateReportPlanInputRequestTypeDef](./type_defs.md#createreportplaninputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ReportPlanName`: `str` *(required)*
+- `ReportDeliveryChannel`:
+  [ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef)
+  *(required)*
+- `ReportSetting`: [ReportSettingTypeDef](./type_defs.md#reportsettingtypedef)
+  *(required)*
+- `ReportPlanDescription`: `str`
+- `ReportPlanTags`: `Dict`\[`str`, `str`\]
+- `IdempotencyToken`: `str`
+
+Returns
+[CreateReportPlanOutputTypeDef](./type_defs.md#createreportplanoutputtypedef).
+
 ### delete_backup_plan
 
 Deletes a backup plan.
@@ -289,6 +355,22 @@ Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
+### delete_framework
+
+Deletes the framework specified by a framework name.
+
+Type annotations for `boto3.client("backup").delete_framework` method.
+
+Boto3 documentation:
+[Backup.Client.delete_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_framework)
+
+Arguments mapping described in
+[DeleteFrameworkInputRequestTypeDef](./type_defs.md#deleteframeworkinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `FrameworkName`: `str` *(required)*
+
 ### delete_recovery_point
 
 Deletes the recovery point specified by a recovery point ID.
@@ -305,6 +387,22 @@ Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `RecoveryPointArn`: `str` *(required)*
+
+### delete_report_plan
+
+Deletes the report plan specified by a report plan name.
+
+Type annotations for `boto3.client("backup").delete_report_plan` method.
+
+Boto3 documentation:
+[Backup.Client.delete_report_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_report_plan)
+
+Arguments mapping described in
+[DeleteReportPlanInputRequestTypeDef](./type_defs.md#deletereportplaninputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ReportPlanName`: `str` *(required)*
 
 ### describe_backup_job
 
@@ -363,10 +461,29 @@ Keyword-only arguments:
 Returns
 [DescribeCopyJobOutputTypeDef](./type_defs.md#describecopyjoboutputtypedef).
 
+### describe_framework
+
+Returns the framework details for the specified `FrameworkName` .
+
+Type annotations for `boto3.client("backup").describe_framework` method.
+
+Boto3 documentation:
+[Backup.Client.describe_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_framework)
+
+Arguments mapping described in
+[DescribeFrameworkInputRequestTypeDef](./type_defs.md#describeframeworkinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `FrameworkName`: `str` *(required)*
+
+Returns
+[DescribeFrameworkOutputTypeDef](./type_defs.md#describeframeworkoutputtypedef).
+
 ### describe_global_settings
 
-Describes the global settings of the AWS account, including whether it is opted
-in to cross-account backup.
+Describes whether the Amazon Web Services account is opted in to cross-account
+backup.
 
 Type annotations for `boto3.client("backup").describe_global_settings` method.
 
@@ -379,8 +496,8 @@ Returns
 ### describe_protected_resource
 
 Returns information about a saved resource, including the last time it was
-backed up, its Amazon Resource Name (ARN), and the AWS service type of the
-saved resource.
+backed up, its Amazon Resource Name (ARN), and the Amazon Web Services service
+type of the saved resource.
 
 Type annotations for `boto3.client("backup").describe_protected_resource`
 method.
@@ -431,6 +548,46 @@ Boto3 documentation:
 Returns
 [DescribeRegionSettingsOutputTypeDef](./type_defs.md#describeregionsettingsoutputtypedef).
 
+### describe_report_job
+
+Returns the details associated with creating a report as specified by its
+`ReportJobId` .
+
+Type annotations for `boto3.client("backup").describe_report_job` method.
+
+Boto3 documentation:
+[Backup.Client.describe_report_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_report_job)
+
+Arguments mapping described in
+[DescribeReportJobInputRequestTypeDef](./type_defs.md#describereportjobinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ReportJobId`: `str` *(required)*
+
+Returns
+[DescribeReportJobOutputTypeDef](./type_defs.md#describereportjoboutputtypedef).
+
+### describe_report_plan
+
+Returns a list of all report plans for an Amazon Web Services account and
+Amazon Web Services Region.
+
+Type annotations for `boto3.client("backup").describe_report_plan` method.
+
+Boto3 documentation:
+[Backup.Client.describe_report_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_report_plan)
+
+Arguments mapping described in
+[DescribeReportPlanInputRequestTypeDef](./type_defs.md#describereportplaninputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ReportPlanName`: `str` *(required)*
+
+Returns
+[DescribeReportPlanOutputTypeDef](./type_defs.md#describereportplanoutputtypedef).
+
 ### describe_restore_job
 
 Returns metadata associated with a restore job that is specified by a job ID.
@@ -452,9 +609,8 @@ Returns
 
 ### disassociate_recovery_point
 
-Deletes the specified continuous backup recovery point from AWS Backup and
-releases control of that continuous backup to the source service, such as
-Amazon RDS.
+Deletes the specified continuous backup recovery point from Backup and releases
+control of that continuous backup to the source service, such as Amazon RDS.
 
 Type annotations for `boto3.client("backup").disassociate_recovery_point`
 method.
@@ -652,7 +808,7 @@ Returns
 
 ### get_supported_resource_types
 
-Returns the AWS resource types supported by AWS Backup.
+Returns the Amazon Web Services resource types supported by Backup.
 
 Type annotations for `boto3.client("backup").get_supported_resource_types`
 method.
@@ -738,7 +894,7 @@ Returns
 
 ### list_backup_plans
 
-Returns a list of existing backup plans for an authenticated account.
+Returns a list of all active backup plans for an authenticated account.
 
 Type annotations for `boto3.client("backup").list_backup_plans` method.
 
@@ -826,11 +982,32 @@ Keyword-only arguments:
 
 Returns [ListCopyJobsOutputTypeDef](./type_defs.md#listcopyjobsoutputtypedef).
 
+### list_frameworks
+
+Returns a list of all frameworks for an Amazon Web Services account and Amazon
+Web Services Region.
+
+Type annotations for `boto3.client("backup").list_frameworks` method.
+
+Boto3 documentation:
+[Backup.Client.list_frameworks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_frameworks)
+
+Arguments mapping described in
+[ListFrameworksInputRequestTypeDef](./type_defs.md#listframeworksinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListFrameworksOutputTypeDef](./type_defs.md#listframeworksoutputtypedef).
+
 ### list_protected_resources
 
-Returns an array of resources successfully backed up by AWS Backup, including
-the time the resource was saved, an Amazon Resource Name (ARN) of the resource,
-and a resource type.
+Returns an array of resources successfully backed up by Backup, including the
+time the resource was saved, an Amazon Resource Name (ARN) of the resource, and
+a resource type.
 
 Type annotations for `boto3.client("backup").list_protected_resources` method.
 
@@ -878,8 +1055,8 @@ Returns
 
 ### list_recovery_points_by_resource
 
-Returns detailed information about recovery points of the type specified by a
-resource Amazon Resource Name (ARN).
+Returns detailed information about all the recovery points of the type
+specified by a resource Amazon Resource Name (ARN).
 
 Type annotations for `boto3.client("backup").list_recovery_points_by_resource`
 method.
@@ -899,10 +1076,54 @@ Keyword-only arguments:
 Returns
 [ListRecoveryPointsByResourceOutputTypeDef](./type_defs.md#listrecoverypointsbyresourceoutputtypedef).
 
+### list_report_jobs
+
+Returns details about your report jobs.
+
+Type annotations for `boto3.client("backup").list_report_jobs` method.
+
+Boto3 documentation:
+[Backup.Client.list_report_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_report_jobs)
+
+Arguments mapping described in
+[ListReportJobsInputRequestTypeDef](./type_defs.md#listreportjobsinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ByReportPlanName`: `str`
+- `ByCreationBefore`: `Union`\[`datetime`, `str`\]
+- `ByCreationAfter`: `Union`\[`datetime`, `str`\]
+- `ByStatus`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListReportJobsOutputTypeDef](./type_defs.md#listreportjobsoutputtypedef).
+
+### list_report_plans
+
+Returns a list of your report plans.
+
+Type annotations for `boto3.client("backup").list_report_plans` method.
+
+Boto3 documentation:
+[Backup.Client.list_report_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_report_plans)
+
+Arguments mapping described in
+[ListReportPlansInputRequestTypeDef](./type_defs.md#listreportplansinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListReportPlansOutputTypeDef](./type_defs.md#listreportplansoutputtypedef).
+
 ### list_restore_jobs
 
-Returns a list of jobs that AWS Backup initiated to restore a saved resource,
-including metadata about the recovery process.
+Returns a list of jobs that Backup initiated to restore a saved resource,
+including details about the recovery process.
 
 Type annotations for `boto3.client("backup").list_restore_jobs` method.
 
@@ -1035,6 +1256,26 @@ Keyword-only arguments:
 
 Returns [StartCopyJobOutputTypeDef](./type_defs.md#startcopyjoboutputtypedef).
 
+### start_report_job
+
+Starts an on-demand report job for the specified report plan.
+
+Type annotations for `boto3.client("backup").start_report_job` method.
+
+Boto3 documentation:
+[Backup.Client.start_report_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_report_job)
+
+Arguments mapping described in
+[StartReportJobInputRequestTypeDef](./type_defs.md#startreportjobinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ReportPlanName`: `str` *(required)*
+- `IdempotencyToken`: `str`
+
+Returns
+[StartReportJobOutputTypeDef](./type_defs.md#startreportjoboutputtypedef).
+
 ### start_restore_job
 
 Recovers the saved resource identified by an Amazon Resource Name (ARN).
@@ -1134,9 +1375,34 @@ Keyword-only arguments:
 Returns
 [UpdateBackupPlanOutputTypeDef](./type_defs.md#updatebackupplanoutputtypedef).
 
+### update_framework
+
+Updates an existing framework identified by its `FrameworkName` with the input
+document in JSON format.
+
+Type annotations for `boto3.client("backup").update_framework` method.
+
+Boto3 documentation:
+[Backup.Client.update_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_framework)
+
+Arguments mapping described in
+[UpdateFrameworkInputRequestTypeDef](./type_defs.md#updateframeworkinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `FrameworkName`: `str` *(required)*
+- `FrameworkDescription`: `str`
+- `FrameworkControls`:
+  `List`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
+- `IdempotencyToken`: `str`
+
+Returns
+[UpdateFrameworkOutputTypeDef](./type_defs.md#updateframeworkoutputtypedef).
+
 ### update_global_settings
 
-Updates the current global settings for the AWS account.
+Updates whether the Amazon Web Services account is opted in to cross-account
+backup.
 
 Type annotations for `boto3.client("backup").update_global_settings` method.
 
@@ -1187,3 +1453,28 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceTypeOptInPreference`: `Dict`\[`str`, `bool`\]
+
+### update_report_plan
+
+Updates an existing report plan identified by its `ReportPlanName` with the
+input document in JSON format.
+
+Type annotations for `boto3.client("backup").update_report_plan` method.
+
+Boto3 documentation:
+[Backup.Client.update_report_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_report_plan)
+
+Arguments mapping described in
+[UpdateReportPlanInputRequestTypeDef](./type_defs.md#updatereportplaninputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ReportPlanName`: `str` *(required)*
+- `ReportPlanDescription`: `str`
+- `ReportDeliveryChannel`:
+  [ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef)
+- `ReportSetting`: [ReportSettingTypeDef](./type_defs.md#reportsettingtypedef)
+- `IdempotencyToken`: `str`
+
+Returns
+[UpdateReportPlanOutputTypeDef](./type_defs.md#updatereportplanoutputtypedef).

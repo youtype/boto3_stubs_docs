@@ -125,6 +125,7 @@ type annotations stubs module
   - [PostgreSQLSettingsTypeDef](#postgresqlsettingstypedef)
   - [RebootReplicationInstanceMessageRequestTypeDef](#rebootreplicationinstancemessagerequesttypedef)
   - [RebootReplicationInstanceResponseTypeDef](#rebootreplicationinstanceresponsetypedef)
+  - [RedisSettingsTypeDef](#redissettingstypedef)
   - [RedshiftSettingsTypeDef](#redshiftsettingstypedef)
   - [RefreshSchemasMessageRequestTypeDef](#refreshschemasmessagerequesttypedef)
   - [RefreshSchemasResponseTypeDef](#refreshschemasresponsetypedef)
@@ -335,6 +336,7 @@ Optional fields:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `ResourceIdentifier`: `str`
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+- `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
 
 ## CreateEndpointResponseTypeDef
 
@@ -1368,6 +1370,7 @@ Optional fields:
 - `IBMDb2Settings`:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+- `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
 
 ## EventCategoryGroupTypeDef
 
@@ -1526,9 +1529,10 @@ Optional fields:
 from mypy_boto3_dms.type_defs import ListTagsForResourceMessageRequestTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `ResourceArn`: `str`
+- `ResourceArnList`: `List`\[`str`\]
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1619,6 +1623,7 @@ Optional fields:
 - `IBMDb2Settings`:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+- `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
 - `ExactSettings`: `bool`
 
 ## ModifyEndpointResponseTypeDef
@@ -1863,6 +1868,7 @@ Optional fields:
 - `AddSupplementalLogging`: `bool`
 - `ArchivedLogDestId`: `int`
 - `AdditionalArchivedLogDestId`: `int`
+- `ExtraArchivedLogDestIds`: `List`\[`int`\]
 - `AllowSelectNestedTables`: `bool`
 - `ParallelAsmReadThreads`: `int`
 - `ReadAheadBlocks`: `int`
@@ -2000,6 +2006,26 @@ Required fields:
   [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## RedisSettingsTypeDef
+
+```python
+from mypy_boto3_dms.type_defs import RedisSettingsTypeDef
+```
+
+Required fields:
+
+- `ServerName`: `str`
+- `Port`: `int`
+
+Optional fields:
+
+- `SslSecurityProtocol`:
+  [SslSecurityProtocolValueType](./literals.md#sslsecurityprotocolvaluetype)
+- `AuthType`: [RedisAuthTypeValueType](./literals.md#redisauthtypevaluetype)
+- `AuthUserName`: `str`
+- `AuthPassword`: `str`
+- `SslCaCertificateArn`: `str`
 
 ## RedshiftSettingsTypeDef
 
@@ -2373,6 +2399,15 @@ Optional fields:
 - `CsvNoSupValue`: `str`
 - `PreserveTransactions`: `bool`
 - `CdcPath`: `str`
+- `CannedAclForObjects`:
+  [CannedAclForObjectsValueType](./literals.md#cannedaclforobjectsvaluetype)
+- `AddColumnName`: `bool`
+- `CdcMaxBatchInterval`: `int`
+- `CdcMinFileSize`: `int`
+- `CsvNullValue`: `str`
+- `IgnoreHeaderRows`: `int`
+- `MaxFileSize`: `int`
+- `Rfc4180`: `bool`
 
 ## StartReplicationTaskAssessmentMessageRequestTypeDef
 
@@ -2578,6 +2613,7 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+- `ResourceArn`: `str`
 
 ## TestConnectionMessageRequestTypeDef
 

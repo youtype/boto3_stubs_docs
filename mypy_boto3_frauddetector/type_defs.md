@@ -84,7 +84,7 @@ type annotations stubs module
   - [LabelTypeDef](#labeltypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
-  - [LogitMetricTypeDef](#logitmetrictypedef)
+  - [LogOddsMetricTypeDef](#logoddsmetrictypedef)
   - [MetricDataPointTypeDef](#metricdatapointtypedef)
   - [ModelEndpointDataBlobTypeDef](#modelendpointdatablobtypedef)
   - [ModelInputConfigurationTypeDef](#modelinputconfigurationtypedef)
@@ -1182,10 +1182,10 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-## LogitMetricTypeDef
+## LogOddsMetricTypeDef
 
 ```python
-from mypy_boto3_frauddetector.type_defs import LogitMetricTypeDef
+from mypy_boto3_frauddetector.type_defs import LogOddsMetricTypeDef
 ```
 
 Required fields:
@@ -1767,8 +1767,8 @@ from mypy_boto3_frauddetector.type_defs import VariableImportanceMetricsTypeDef
 
 Optional fields:
 
-- `LogitMetrics`:
-  `List`\[[LogitMetricTypeDef](./type_defs.md#logitmetrictypedef)\]
+- `logOddsMetrics`:
+  `List`\[[LogOddsMetricTypeDef](./type_defs.md#logoddsmetrictypedef)\]
 
 ## VariableTypeDef
 

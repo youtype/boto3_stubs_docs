@@ -17,6 +17,7 @@ type annotations stubs module
     - [batch_delete_partition](#batch_delete_partition)
     - [batch_delete_table](#batch_delete_table)
     - [batch_delete_table_version](#batch_delete_table_version)
+    - [batch_get_blueprints](#batch_get_blueprints)
     - [batch_get_crawlers](#batch_get_crawlers)
     - [batch_get_dev_endpoints](#batch_get_dev_endpoints)
     - [batch_get_jobs](#batch_get_jobs)
@@ -28,6 +29,7 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [cancel_ml_task_run](#cancel_ml_task_run)
     - [check_schema_version_validity](#check_schema_version_validity)
+    - [create_blueprint](#create_blueprint)
     - [create_classifier](#create_classifier)
     - [create_connection](#create_connection)
     - [create_crawler](#create_crawler)
@@ -45,6 +47,7 @@ type annotations stubs module
     - [create_trigger](#create_trigger)
     - [create_user_defined_function](#create_user_defined_function)
     - [create_workflow](#create_workflow)
+    - [delete_blueprint](#delete_blueprint)
     - [delete_classifier](#delete_classifier)
     - [delete_column_statistics_for_partition](#delete_column_statistics_for_partition)
     - [delete_column_statistics_for_table](#delete_column_statistics_for_table)
@@ -67,6 +70,9 @@ type annotations stubs module
     - [delete_user_defined_function](#delete_user_defined_function)
     - [delete_workflow](#delete_workflow)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_blueprint](#get_blueprint)
+    - [get_blueprint_run](#get_blueprint_run)
+    - [get_blueprint_runs](#get_blueprint_runs)
     - [get_catalog_import_status](#get_catalog_import_status)
     - [get_classifier](#get_classifier)
     - [get_classifiers](#get_classifiers)
@@ -120,6 +126,7 @@ type annotations stubs module
     - [get_workflow_run_properties](#get_workflow_run_properties)
     - [get_workflow_runs](#get_workflow_runs)
     - [import_catalog_to_glue](#import_catalog_to_glue)
+    - [list_blueprints](#list_blueprints)
     - [list_crawlers](#list_crawlers)
     - [list_dev_endpoints](#list_dev_endpoints)
     - [list_jobs](#list_jobs)
@@ -139,6 +146,7 @@ type annotations stubs module
     - [reset_job_bookmark](#reset_job_bookmark)
     - [resume_workflow_run](#resume_workflow_run)
     - [search_tables](#search_tables)
+    - [start_blueprint_run](#start_blueprint_run)
     - [start_crawler](#start_crawler)
     - [start_crawler_schedule](#start_crawler_schedule)
     - [start_export_labels_task_run](#start_export_labels_task_run)
@@ -154,6 +162,7 @@ type annotations stubs module
     - [stop_workflow_run](#stop_workflow_run)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_blueprint](#update_blueprint)
     - [update_classifier](#update_classifier)
     - [update_column_statistics_for_partition](#update_column_statistics_for_partition)
     - [update_column_statistics_for_table](#update_column_statistics_for_table)
@@ -216,6 +225,7 @@ Exceptions:
 - `Exceptions.EntityNotFoundException`
 - `Exceptions.GlueEncryptionException`
 - `Exceptions.IdempotentParameterMismatchException`
+- `Exceptions.IllegalBlueprintStateException`
 - `Exceptions.IllegalWorkflowStateException`
 - `Exceptions.InternalServiceException`
 - `Exceptions.InvalidInputException`
@@ -352,6 +362,27 @@ Keyword-only arguments:
 
 Returns
 [BatchDeleteTableVersionResponseTypeDef](./type_defs.md#batchdeletetableversionresponsetypedef).
+
+### batch_get_blueprints
+
+Retrieves information about a list of blueprints.
+
+Type annotations for `boto3.client("glue").batch_get_blueprints` method.
+
+Boto3 documentation:
+[Glue.Client.batch_get_blueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_blueprints)
+
+Arguments mapping described in
+[BatchGetBlueprintsRequestRequestTypeDef](./type_defs.md#batchgetblueprintsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Names`: `List`\[`str`\] *(required)*
+- `IncludeBlueprint`: `bool`
+- `IncludeParameterSpec`: `bool`
+
+Returns
+[BatchGetBlueprintsResponseTypeDef](./type_defs.md#batchgetblueprintsresponsetypedef).
 
 ### batch_get_crawlers
 
@@ -573,6 +604,28 @@ Keyword-only arguments:
 
 Returns
 [CheckSchemaVersionValidityResponseTypeDef](./type_defs.md#checkschemaversionvalidityresponsetypedef).
+
+### create_blueprint
+
+Registers a blueprint with Glue.
+
+Type annotations for `boto3.client("glue").create_blueprint` method.
+
+Boto3 documentation:
+[Glue.Client.create_blueprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_blueprint)
+
+Arguments mapping described in
+[CreateBlueprintRequestRequestTypeDef](./type_defs.md#createblueprintrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `BlueprintLocation`: `str` *(required)*
+- `Description`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[CreateBlueprintResponseTypeDef](./type_defs.md#createblueprintresponsetypedef).
 
 ### create_classifier
 
@@ -1014,6 +1067,25 @@ Keyword-only arguments:
 Returns
 [CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef).
 
+### delete_blueprint
+
+Deletes an existing blueprint.
+
+Type annotations for `boto3.client("glue").delete_blueprint` method.
+
+Boto3 documentation:
+[Glue.Client.delete_blueprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_blueprint)
+
+Arguments mapping described in
+[DeleteBlueprintRequestRequestTypeDef](./type_defs.md#deleteblueprintrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+
+Returns
+[DeleteBlueprintResponseTypeDef](./type_defs.md#deleteblueprintresponsetypedef).
+
 ### delete_classifier
 
 Removes a classifier from the Data Catalog.
@@ -1446,6 +1518,68 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+### get_blueprint
+
+Retrieves the details of a blueprint.
+
+Type annotations for `boto3.client("glue").get_blueprint` method.
+
+Boto3 documentation:
+[Glue.Client.get_blueprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_blueprint)
+
+Arguments mapping described in
+[GetBlueprintRequestRequestTypeDef](./type_defs.md#getblueprintrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `IncludeBlueprint`: `bool`
+- `IncludeParameterSpec`: `bool`
+
+Returns
+[GetBlueprintResponseTypeDef](./type_defs.md#getblueprintresponsetypedef).
+
+### get_blueprint_run
+
+Retrieves the details of a blueprint run.
+
+Type annotations for `boto3.client("glue").get_blueprint_run` method.
+
+Boto3 documentation:
+[Glue.Client.get_blueprint_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_blueprint_run)
+
+Arguments mapping described in
+[GetBlueprintRunRequestRequestTypeDef](./type_defs.md#getblueprintrunrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `BlueprintName`: `str` *(required)*
+- `RunId`: `str` *(required)*
+
+Returns
+[GetBlueprintRunResponseTypeDef](./type_defs.md#getblueprintrunresponsetypedef).
+
+### get_blueprint_runs
+
+Retrieves the details of blueprint runs for a specified blueprint.
+
+Type annotations for `boto3.client("glue").get_blueprint_runs` method.
+
+Boto3 documentation:
+[Glue.Client.get_blueprint_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_blueprint_runs)
+
+Arguments mapping described in
+[GetBlueprintRunsRequestRequestTypeDef](./type_defs.md#getblueprintrunsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `BlueprintName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[GetBlueprintRunsResponseTypeDef](./type_defs.md#getblueprintrunsresponsetypedef).
 
 ### get_catalog_import_status
 
@@ -2558,6 +2692,27 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### list_blueprints
+
+Lists all the blueprint names in an account.
+
+Type annotations for `boto3.client("glue").list_blueprints` method.
+
+Boto3 documentation:
+[Glue.Client.list_blueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_blueprints)
+
+Arguments mapping described in
+[ListBlueprintsRequestRequestTypeDef](./type_defs.md#listblueprintsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+Returns
+[ListBlueprintsResponseTypeDef](./type_defs.md#listblueprintsresponsetypedef).
+
 ### list_crawlers
 
 Retrieves the names of all crawler resources in this Amazon Web Services
@@ -2994,6 +3149,27 @@ Keyword-only arguments:
 Returns
 [SearchTablesResponseTypeDef](./type_defs.md#searchtablesresponsetypedef).
 
+### start_blueprint_run
+
+Starts a new run of the specified blueprint.
+
+Type annotations for `boto3.client("glue").start_blueprint_run` method.
+
+Boto3 documentation:
+[Glue.Client.start_blueprint_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_blueprint_run)
+
+Arguments mapping described in
+[StartBlueprintRunRequestRequestTypeDef](./type_defs.md#startblueprintrunrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `BlueprintName`: `str` *(required)*
+- `RoleArn`: `str` *(required)*
+- `Parameters`: `str`
+
+Returns
+[StartBlueprintRunResponseTypeDef](./type_defs.md#startblueprintrunresponsetypedef).
+
 ### start_crawler
 
 Starts a crawl using the specified crawler, regardless of what is scheduled.
@@ -3297,6 +3473,27 @@ Keyword-only arguments:
 - `TagsToRemove`: `List`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### update_blueprint
+
+Updates a registered blueprint.
+
+Type annotations for `boto3.client("glue").update_blueprint` method.
+
+Boto3 documentation:
+[Glue.Client.update_blueprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_blueprint)
+
+Arguments mapping described in
+[UpdateBlueprintRequestRequestTypeDef](./type_defs.md#updateblueprintrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `BlueprintLocation`: `str` *(required)*
+- `Description`: `str`
+
+Returns
+[UpdateBlueprintResponseTypeDef](./type_defs.md#updateblueprintresponsetypedef).
 
 ### update_classifier
 

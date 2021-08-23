@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 DatabaseMigrationService module](#literals-for-boto3-databasemigrationservice-module)
   - [AuthMechanismValueType](#authmechanismvaluetype)
   - [AuthTypeValueType](#authtypevaluetype)
+  - [CannedAclForObjectsValueType](#cannedaclforobjectsvaluetype)
   - [CharLengthSemanticsType](#charlengthsemanticstype)
   - [CompressionTypeValueType](#compressiontypevaluetype)
   - [DataFormatValueType](#dataformatvaluetype)
@@ -39,6 +40,7 @@ type annotations stubs module
   - [NestingLevelValueType](#nestinglevelvaluetype)
   - [ParquetVersionValueType](#parquetversionvaluetype)
   - [PluginNameValueType](#pluginnamevaluetype)
+  - [RedisAuthTypeValueType](#redisauthtypevaluetype)
   - [RefreshSchemasStatusTypeValueType](#refreshschemasstatustypevaluetype)
   - [ReleaseStatusValuesType](#releasestatusvaluestype)
   - [ReloadOptionValueType](#reloadoptionvaluetype)
@@ -51,6 +53,7 @@ type annotations stubs module
   - [ReplicationTaskStoppedWaiterName](#replicationtaskstoppedwaitername)
   - [SafeguardPolicyType](#safeguardpolicytype)
   - [SourceTypeType](#sourcetypetype)
+  - [SslSecurityProtocolValueType](#sslsecurityprotocolvaluetype)
   - [StartReplicationTaskTypeValueType](#startreplicationtasktypevaluetype)
   - [TargetDbTypeType](#targetdbtypetype)
   - [TestConnectionSucceedsWaiterName](#testconnectionsucceedswaitername)
@@ -77,6 +80,23 @@ Values:
 
 - `no`
 - `password`
+
+## CannedAclForObjectsValueType
+
+```python
+from mypy_boto3_dms.literals import CannedAclForObjectsValueType
+```
+
+Values:
+
+- `authenticated-read`
+- `aws-exec-read`
+- `bucket-owner-full-control`
+- `bucket-owner-read`
+- `none`
+- `private`
+- `public-read`
+- `public-read-write`
 
 ## CharLengthSemanticsType
 
@@ -398,6 +418,18 @@ Values:
 - `pglogical`
 - `test-decoding`
 
+## RedisAuthTypeValueType
+
+```python
+from mypy_boto3_dms.literals import RedisAuthTypeValueType
+```
+
+Values:
+
+- `auth-role`
+- `auth-token`
+- `none`
+
 ## RefreshSchemasStatusTypeValueType
 
 ```python
@@ -523,6 +555,17 @@ from mypy_boto3_dms.literals import SourceTypeType
 Values:
 
 - `replication-instance`
+
+## SslSecurityProtocolValueType
+
+```python
+from mypy_boto3_dms.literals import SslSecurityProtocolValueType
+```
+
+Values:
+
+- `plaintext`
+- `ssl-encryption`
 
 ## StartReplicationTaskTypeValueType
 

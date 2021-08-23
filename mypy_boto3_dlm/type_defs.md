@@ -13,9 +13,11 @@ type annotations stubs module
   - [CreateLifecyclePolicyResponseTypeDef](#createlifecyclepolicyresponsetypedef)
   - [CreateRuleTypeDef](#createruletypedef)
   - [CrossRegionCopyActionTypeDef](#crossregioncopyactiontypedef)
+  - [CrossRegionCopyDeprecateRuleTypeDef](#crossregioncopydeprecateruletypedef)
   - [CrossRegionCopyRetainRuleTypeDef](#crossregioncopyretainruletypedef)
   - [CrossRegionCopyRuleTypeDef](#crossregioncopyruletypedef)
   - [DeleteLifecyclePolicyRequestRequestTypeDef](#deletelifecyclepolicyrequestrequesttypedef)
+  - [DeprecateRuleTypeDef](#deprecateruletypedef)
   - [EncryptionConfigurationTypeDef](#encryptionconfigurationtypedef)
   - [EventParametersTypeDef](#eventparameterstypedef)
   - [EventSourceTypeDef](#eventsourcetypedef)
@@ -113,6 +115,18 @@ Optional fields:
 - `RetainRule`:
   [CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef)
 
+## CrossRegionCopyDeprecateRuleTypeDef
+
+```python
+from mypy_boto3_dlm.type_defs import CrossRegionCopyDeprecateRuleTypeDef
+```
+
+Optional fields:
+
+- `Interval`: `int`
+- `IntervalUnit`:
+  [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
+
 ## CrossRegionCopyRetainRuleTypeDef
 
 ```python
@@ -143,6 +157,8 @@ Optional fields:
 - `CopyTags`: `bool`
 - `RetainRule`:
   [CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef)
+- `DeprecateRule`:
+  [CrossRegionCopyDeprecateRuleTypeDef](./type_defs.md#crossregioncopydeprecateruletypedef)
 
 ## DeleteLifecyclePolicyRequestRequestTypeDef
 
@@ -153,6 +169,19 @@ from mypy_boto3_dlm.type_defs import DeleteLifecyclePolicyRequestRequestTypeDef
 Required fields:
 
 - `PolicyId`: `str`
+
+## DeprecateRuleTypeDef
+
+```python
+from mypy_boto3_dlm.type_defs import DeprecateRuleTypeDef
+```
+
+Optional fields:
+
+- `Count`: `int`
+- `Interval`: `int`
+- `IntervalUnit`:
+  [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 
 ## EncryptionConfigurationTypeDef
 
@@ -397,6 +426,7 @@ Optional fields:
 - `CrossRegionCopyRules`:
   `List`\[[CrossRegionCopyRuleTypeDef](./type_defs.md#crossregioncopyruletypedef)\]
 - `ShareRules`: `List`\[[ShareRuleTypeDef](./type_defs.md#shareruletypedef)\]
+- `DeprecateRule`: [DeprecateRuleTypeDef](./type_defs.md#deprecateruletypedef)
 
 ## ShareRuleTypeDef
 

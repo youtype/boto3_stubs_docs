@@ -9,6 +9,8 @@ type annotations stubs module
 
 - [Literals for boto3 Glue module](#literals-for-boto3-glue-module)
   - [BackfillErrorCodeType](#backfillerrorcodetype)
+  - [BlueprintRunStateType](#blueprintrunstatetype)
+  - [BlueprintStatusType](#blueprintstatustype)
   - [CatalogEncryptionModeType](#catalogencryptionmodetype)
   - [CloudWatchEncryptionModeType](#cloudwatchencryptionmodetype)
   - [ColumnStatisticsTypeType](#columnstatisticstypetype)
@@ -90,6 +92,32 @@ Values:
 - `INVALID_PARTITION_TYPE_DATA_ERROR`
 - `MISSING_PARTITION_VALUE_ERROR`
 - `UNSUPPORTED_PARTITION_CHARACTER_ERROR`
+
+## BlueprintRunStateType
+
+```python
+from mypy_boto3_glue.literals import BlueprintRunStateType
+```
+
+Values:
+
+- `FAILED`
+- `ROLLING_BACK`
+- `RUNNING`
+- `SUCCEEDED`
+
+## BlueprintStatusType
+
+```python
+from mypy_boto3_glue.literals import BlueprintStatusType
+```
+
+Values:
+
+- `ACTIVE`
+- `CREATING`
+- `FAILED`
+- `UPDATING`
 
 ## CatalogEncryptionModeType
 

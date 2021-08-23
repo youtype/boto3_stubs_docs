@@ -20,6 +20,8 @@ type annotations stubs module
   - [BatchDeleteTableResponseTypeDef](#batchdeletetableresponsetypedef)
   - [BatchDeleteTableVersionRequestRequestTypeDef](#batchdeletetableversionrequestrequesttypedef)
   - [BatchDeleteTableVersionResponseTypeDef](#batchdeletetableversionresponsetypedef)
+  - [BatchGetBlueprintsRequestRequestTypeDef](#batchgetblueprintsrequestrequesttypedef)
+  - [BatchGetBlueprintsResponseTypeDef](#batchgetblueprintsresponsetypedef)
   - [BatchGetCrawlersRequestRequestTypeDef](#batchgetcrawlersrequestrequesttypedef)
   - [BatchGetCrawlersResponseTypeDef](#batchgetcrawlersresponsetypedef)
   - [BatchGetDevEndpointsRequestRequestTypeDef](#batchgetdevendpointsrequestrequesttypedef)
@@ -41,6 +43,9 @@ type annotations stubs module
   - [BatchUpdatePartitionRequestRequestTypeDef](#batchupdatepartitionrequestrequesttypedef)
   - [BatchUpdatePartitionResponseTypeDef](#batchupdatepartitionresponsetypedef)
   - [BinaryColumnStatisticsDataTypeDef](#binarycolumnstatisticsdatatypedef)
+  - [BlueprintDetailsTypeDef](#blueprintdetailstypedef)
+  - [BlueprintRunTypeDef](#blueprintruntypedef)
+  - [BlueprintTypeDef](#blueprinttypedef)
   - [BooleanColumnStatisticsDataTypeDef](#booleancolumnstatisticsdatatypedef)
   - [CancelMLTaskRunRequestRequestTypeDef](#cancelmltaskrunrequestrequesttypedef)
   - [CancelMLTaskRunResponseTypeDef](#cancelmltaskrunresponsetypedef)
@@ -71,6 +76,8 @@ type annotations stubs module
   - [CrawlerNodeDetailsTypeDef](#crawlernodedetailstypedef)
   - [CrawlerTargetsTypeDef](#crawlertargetstypedef)
   - [CrawlerTypeDef](#crawlertypedef)
+  - [CreateBlueprintRequestRequestTypeDef](#createblueprintrequestrequesttypedef)
+  - [CreateBlueprintResponseTypeDef](#createblueprintresponsetypedef)
   - [CreateClassifierRequestRequestTypeDef](#createclassifierrequestrequesttypedef)
   - [CreateConnectionRequestRequestTypeDef](#createconnectionrequestrequesttypedef)
   - [CreateCrawlerRequestRequestTypeDef](#createcrawlerrequestrequesttypedef)
@@ -110,6 +117,8 @@ type annotations stubs module
   - [DateColumnStatisticsDataTypeDef](#datecolumnstatisticsdatatypedef)
   - [DecimalColumnStatisticsDataTypeDef](#decimalcolumnstatisticsdatatypedef)
   - [DecimalNumberTypeDef](#decimalnumbertypedef)
+  - [DeleteBlueprintRequestRequestTypeDef](#deleteblueprintrequestrequesttypedef)
+  - [DeleteBlueprintResponseTypeDef](#deleteblueprintresponsetypedef)
   - [DeleteClassifierRequestRequestTypeDef](#deleteclassifierrequestrequesttypedef)
   - [DeleteColumnStatisticsForPartitionRequestRequestTypeDef](#deletecolumnstatisticsforpartitionrequestrequesttypedef)
   - [DeleteColumnStatisticsForTableRequestRequestTypeDef](#deletecolumnstatisticsfortablerequestrequesttypedef)
@@ -154,6 +163,12 @@ type annotations stubs module
   - [FindMatchesMetricsTypeDef](#findmatchesmetricstypedef)
   - [FindMatchesParametersTypeDef](#findmatchesparameterstypedef)
   - [FindMatchesTaskRunPropertiesTypeDef](#findmatchestaskrunpropertiestypedef)
+  - [GetBlueprintRequestRequestTypeDef](#getblueprintrequestrequesttypedef)
+  - [GetBlueprintResponseTypeDef](#getblueprintresponsetypedef)
+  - [GetBlueprintRunRequestRequestTypeDef](#getblueprintrunrequestrequesttypedef)
+  - [GetBlueprintRunResponseTypeDef](#getblueprintrunresponsetypedef)
+  - [GetBlueprintRunsRequestRequestTypeDef](#getblueprintrunsrequestrequesttypedef)
+  - [GetBlueprintRunsResponseTypeDef](#getblueprintrunsresponsetypedef)
   - [GetCatalogImportStatusRequestRequestTypeDef](#getcatalogimportstatusrequestrequesttypedef)
   - [GetCatalogImportStatusResponseTypeDef](#getcatalogimportstatusresponsetypedef)
   - [GetClassifierRequestRequestTypeDef](#getclassifierrequestrequesttypedef)
@@ -275,8 +290,11 @@ type annotations stubs module
   - [JsonClassifierTypeDef](#jsonclassifiertypedef)
   - [KeySchemaElementTypeDef](#keyschemaelementtypedef)
   - [LabelingSetGenerationTaskRunPropertiesTypeDef](#labelingsetgenerationtaskrunpropertiestypedef)
+  - [LastActiveDefinitionTypeDef](#lastactivedefinitiontypedef)
   - [LastCrawlInfoTypeDef](#lastcrawlinfotypedef)
   - [LineageConfigurationTypeDef](#lineageconfigurationtypedef)
+  - [ListBlueprintsRequestRequestTypeDef](#listblueprintsrequestrequesttypedef)
+  - [ListBlueprintsResponseTypeDef](#listblueprintsresponsetypedef)
   - [ListCrawlersRequestRequestTypeDef](#listcrawlersrequestrequesttypedef)
   - [ListCrawlersResponseTypeDef](#listcrawlersresponsetypedef)
   - [ListDevEndpointsRequestRequestTypeDef](#listdevendpointsrequestrequesttypedef)
@@ -358,6 +376,8 @@ type annotations stubs module
   - [SerDeInfoTypeDef](#serdeinfotypedef)
   - [SkewedInfoTypeDef](#skewedinfotypedef)
   - [SortCriterionTypeDef](#sortcriteriontypedef)
+  - [StartBlueprintRunRequestRequestTypeDef](#startblueprintrunrequestrequesttypedef)
+  - [StartBlueprintRunResponseTypeDef](#startblueprintrunresponsetypedef)
   - [StartCrawlerRequestRequestTypeDef](#startcrawlerrequestrequesttypedef)
   - [StartCrawlerScheduleRequestRequestTypeDef](#startcrawlerschedulerequestrequesttypedef)
   - [StartExportLabelsTaskRunRequestRequestTypeDef](#startexportlabelstaskrunrequestrequesttypedef)
@@ -401,6 +421,8 @@ type annotations stubs module
   - [TriggerTypeDef](#triggertypedef)
   - [TriggerUpdateTypeDef](#triggerupdatetypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateBlueprintRequestRequestTypeDef](#updateblueprintrequestrequesttypedef)
+  - [UpdateBlueprintResponseTypeDef](#updateblueprintresponsetypedef)
   - [UpdateClassifierRequestRequestTypeDef](#updateclassifierrequestrequesttypedef)
   - [UpdateColumnStatisticsForPartitionRequestRequestTypeDef](#updatecolumnstatisticsforpartitionrequestrequesttypedef)
   - [UpdateColumnStatisticsForPartitionResponseTypeDef](#updatecolumnstatisticsforpartitionresponsetypedef)
@@ -607,6 +629,34 @@ Required fields:
 
 - `Errors`:
   `List`\[[TableVersionErrorTypeDef](./type_defs.md#tableversionerrortypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## BatchGetBlueprintsRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import BatchGetBlueprintsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Names`: `List`\[`str`\]
+
+Optional fields:
+
+- `IncludeBlueprint`: `bool`
+- `IncludeParameterSpec`: `bool`
+
+## BatchGetBlueprintsResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import BatchGetBlueprintsResponseTypeDef
+```
+
+Required fields:
+
+- `Blueprints`: `List`\[[BlueprintTypeDef](./type_defs.md#blueprinttypedef)\]
+- `MissingBlueprints`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -874,6 +924,56 @@ Required fields:
 - `MaximumLength`: `int`
 - `AverageLength`: `float`
 - `NumberOfNulls`: `int`
+
+## BlueprintDetailsTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import BlueprintDetailsTypeDef
+```
+
+Optional fields:
+
+- `BlueprintName`: `str`
+- `RunId`: `str`
+
+## BlueprintRunTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import BlueprintRunTypeDef
+```
+
+Optional fields:
+
+- `BlueprintName`: `str`
+- `RunId`: `str`
+- `WorkflowName`: `str`
+- `State`: [BlueprintRunStateType](./literals.md#blueprintrunstatetype)
+- `StartedOn`: `datetime`
+- `CompletedOn`: `datetime`
+- `ErrorMessage`: `str`
+- `RollbackErrorMessage`: `str`
+- `Parameters`: `str`
+- `RoleArn`: `str`
+
+## BlueprintTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import BlueprintTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `CreatedOn`: `datetime`
+- `LastModifiedOn`: `datetime`
+- `ParameterSpec`: `str`
+- `BlueprintLocation`: `str`
+- `BlueprintServiceLocation`: `str`
+- `Status`: [BlueprintStatusType](./literals.md#blueprintstatustype)
+- `ErrorMessage`: `str`
+- `LastActiveDefinition`:
+  [LastActiveDefinitionTypeDef](./type_defs.md#lastactivedefinitiontypedef)
 
 ## BooleanColumnStatisticsDataTypeDef
 
@@ -1318,6 +1418,34 @@ Optional fields:
 - `Version`: `int`
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
+
+## CreateBlueprintRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import CreateBlueprintRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `BlueprintLocation`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## CreateBlueprintResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import CreateBlueprintResponseTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateClassifierRequestRequestTypeDef
 
@@ -1994,6 +2122,28 @@ Required fields:
 - `UnscaledValue`: `bytes`
 - `Scale`: `int`
 
+## DeleteBlueprintRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import DeleteBlueprintRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+## DeleteBlueprintResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import DeleteBlueprintResponseTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DeleteClassifierRequestRequestTypeDef
 
 ```python
@@ -2571,6 +2721,85 @@ Optional fields:
 - `JobId`: `str`
 - `JobName`: `str`
 - `JobRunId`: `str`
+
+## GetBlueprintRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import GetBlueprintRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `IncludeBlueprint`: `bool`
+- `IncludeParameterSpec`: `bool`
+
+## GetBlueprintResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import GetBlueprintResponseTypeDef
+```
+
+Required fields:
+
+- `Blueprint`: [BlueprintTypeDef](./type_defs.md#blueprinttypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetBlueprintRunRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import GetBlueprintRunRequestRequestTypeDef
+```
+
+Required fields:
+
+- `BlueprintName`: `str`
+- `RunId`: `str`
+
+## GetBlueprintRunResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import GetBlueprintRunResponseTypeDef
+```
+
+Required fields:
+
+- `BlueprintRun`: [BlueprintRunTypeDef](./type_defs.md#blueprintruntypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetBlueprintRunsRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import GetBlueprintRunsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `BlueprintName`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## GetBlueprintRunsResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import GetBlueprintRunsResponseTypeDef
+```
+
+Required fields:
+
+- `BlueprintRuns`:
+  `List`\[[BlueprintRunTypeDef](./type_defs.md#blueprintruntypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetCatalogImportStatusRequestRequestTypeDef
 
@@ -4262,6 +4491,20 @@ Optional fields:
 
 - `OutputS3Path`: `str`
 
+## LastActiveDefinitionTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import LastActiveDefinitionTypeDef
+```
+
+Optional fields:
+
+- `Description`: `str`
+- `LastModifiedOn`: `datetime`
+- `ParameterSpec`: `str`
+- `BlueprintLocation`: `str`
+- `BlueprintServiceLocation`: `str`
+
 ## LastCrawlInfoTypeDef
 
 ```python
@@ -4287,6 +4530,31 @@ Optional fields:
 
 - `CrawlerLineageSettings`:
   [CrawlerLineageSettingsType](./literals.md#crawlerlineagesettingstype)
+
+## ListBlueprintsRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import ListBlueprintsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Tags`: `Dict`\[`str`, `str`\]
+
+## ListBlueprintsResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import ListBlueprintsResponseTypeDef
+```
+
+Required fields:
+
+- `Blueprints`: `List`\[`str`\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListCrawlersRequestRequestTypeDef
 
@@ -5381,6 +5649,33 @@ Optional fields:
 - `FieldName`: `str`
 - `Sort`: [SortType](./literals.md#sorttype)
 
+## StartBlueprintRunRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import StartBlueprintRunRequestRequestTypeDef
+```
+
+Required fields:
+
+- `BlueprintName`: `str`
+- `RoleArn`: `str`
+
+Optional fields:
+
+- `Parameters`: `str`
+
+## StartBlueprintRunResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import StartBlueprintRunResponseTypeDef
+```
+
+Required fields:
+
+- `RunId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## StartCrawlerRequestRequestTypeDef
 
 ```python
@@ -5971,6 +6266,33 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagsToRemove`: `List`\[`str`\]
 
+## UpdateBlueprintRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import UpdateBlueprintRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `BlueprintLocation`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+
+## UpdateBlueprintResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import UpdateBlueprintResponseTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## UpdateClassifierRequestRequestTypeDef
 
 ```python
@@ -6519,6 +6841,8 @@ Optional fields:
 - `LastRun`: [WorkflowRunTypeDef](./type_defs.md#workflowruntypedef)
 - `Graph`: [WorkflowGraphTypeDef](./type_defs.md#workflowgraphtypedef)
 - `MaxConcurrentRuns`: `int`
+- `BlueprintDetails`:
+  [BlueprintDetailsTypeDef](./type_defs.md#blueprintdetailstypedef)
 
 ## XMLClassifierTypeDef
 

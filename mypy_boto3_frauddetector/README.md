@@ -101,6 +101,7 @@ FraudDetectorClient [exceptions](./client.md#exceptions)
 - ConflictException
 - InternalServerException
 - ResourceNotFoundException
+- ResourceUnavailableException
 - ThrottlingException
 - ValidationException
 
@@ -215,7 +216,7 @@ from mypy_boto3_frauddetector.type_defs import BatchCreateVariableErrorTypeDef, 
 - [LabelTypeDef](./type_defs.md#labeltypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef)
-- [LogitMetricTypeDef](./type_defs.md#logitmetrictypedef)
+- [LogOddsMetricTypeDef](./type_defs.md#logoddsmetrictypedef)
 - [MetricDataPointTypeDef](./type_defs.md#metricdatapointtypedef)
 - [ModelEndpointDataBlobTypeDef](./type_defs.md#modelendpointdatablobtypedef)
 - [ModelInputConfigurationTypeDef](./type_defs.md#modelinputconfigurationtypedef)

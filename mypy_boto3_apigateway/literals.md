@@ -207,6 +207,7 @@ Values:
 - `THROTTLED`
 - `UNAUTHORIZED`
 - `UNSUPPORTED_MEDIA_TYPE`
+- `WAF_FILTERED`
 
 ## GetApiKeysPaginatorName
 

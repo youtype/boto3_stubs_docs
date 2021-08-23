@@ -107,6 +107,7 @@ Exceptions:
 - `Exceptions.ConflictException`
 - `Exceptions.InternalServerException`
 - `Exceptions.ResourceNotFoundException`
+- `Exceptions.ResourceUnavailableException`
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 

@@ -277,6 +277,7 @@ Keyword-only arguments:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `ResourceIdentifier`: `str`
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+- `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
 
 Returns
 [CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
@@ -903,7 +904,7 @@ Returns
 ### describe_replication_task_assessment_results
 
 Returns the task assessment results from the Amazon S3 bucket that DMS creates
-in your account.
+in your Amazon Web Services account.
 
 Type annotations for
 `boto3.client("dms").describe_replication_task_assessment_results` method.
@@ -1088,7 +1089,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+- `ResourceArn`: `str`
+- `ResourceArnList`: `List`\[`str`\]
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
@@ -1150,6 +1152,7 @@ Keyword-only arguments:
 - `IBMDb2Settings`:
   [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
 - `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
+- `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
 - `ExactSettings`: `bool`
 
 Returns

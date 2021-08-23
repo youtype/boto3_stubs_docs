@@ -89,7 +89,8 @@ Returns `bool`.
 
 ### create_lifecycle_policy
 
-Creates a policy to manage the lifecycle of the specified AWS resources.
+Creates a policy to manage the lifecycle of the specified Amazon Web Services
+resources.
 
 Type annotations for `boto3.client("dlm").create_lifecycle_policy` method.
 
