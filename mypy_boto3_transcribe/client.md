@@ -40,12 +40,15 @@ type annotations stubs module
     - [list_language_models](#list_language_models)
     - [list_medical_transcription_jobs](#list_medical_transcription_jobs)
     - [list_medical_vocabularies](#list_medical_vocabularies)
+    - [list_tags_for_resource](#list_tags_for_resource)
     - [list_transcription_jobs](#list_transcription_jobs)
     - [list_vocabularies](#list_vocabularies)
     - [list_vocabulary_filters](#list_vocabulary_filters)
     - [start_call_analytics_job](#start_call_analytics_job)
     - [start_medical_transcription_job](#start_medical_transcription_job)
     - [start_transcription_job](#start_transcription_job)
+    - [tag_resource](#tag_resource)
+    - [untag_resource](#untag_resource)
     - [update_call_analytics_category](#update_call_analytics_category)
     - [update_medical_vocabulary](#update_medical_vocabulary)
     - [update_vocabulary](#update_vocabulary)
@@ -158,13 +161,14 @@ Keyword-only arguments:
 - `ModelName`: `str` *(required)*
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateLanguageModelResponseTypeDef](./type_defs.md#createlanguagemodelresponsetypedef).
 
 ### create_medical_vocabulary
 
-Creates a new custom vocabulary that you can use to change how Amazon
+Creates a new custom vocabulary that you can use to modify how Amazon
 Transcribe Medical transcribes your audio file.
 
 Type annotations for `boto3.client("transcribe").create_medical_vocabulary`
@@ -182,6 +186,7 @@ Keyword-only arguments:
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
 - `VocabularyFileUri`: `str` *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateMedicalVocabularyResponseTypeDef](./type_defs.md#createmedicalvocabularyresponsetypedef).
@@ -206,6 +211,7 @@ Keyword-only arguments:
   *(required)*
 - `Phrases`: `List`\[`str`\]
 - `VocabularyFileUri`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateVocabularyResponseTypeDef](./type_defs.md#createvocabularyresponsetypedef).
@@ -231,6 +237,7 @@ Keyword-only arguments:
   *(required)*
 - `Words`: `List`\[`str`\]
 - `VocabularyFilterFileUri`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateVocabularyFilterResponseTypeDef](./type_defs.md#createvocabularyfilterresponsetypedef).
@@ -668,6 +675,27 @@ Keyword-only arguments:
 Returns
 [ListMedicalVocabulariesResponseTypeDef](./type_defs.md#listmedicalvocabulariesresponsetypedef).
 
+### list_tags_for_resource
+
+Lists all tags associated with a given transcription job, vocabulary, or
+resource.
+
+Type annotations for `boto3.client("transcribe").list_tags_for_resource`
+method.
+
+Boto3 documentation:
+[TranscribeService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
 ### list_transcription_jobs
 
 Lists transcription jobs with the specified status.
@@ -796,6 +824,7 @@ Keyword-only arguments:
   [MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef)
 - `ContentIdentificationType`: `Literal['PHI']` (see
   [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype))
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartMedicalTranscriptionJobResponseTypeDef](./type_defs.md#startmedicaltranscriptionjobresponsetypedef).
@@ -832,9 +861,48 @@ Keyword-only arguments:
 - `IdentifyLanguage`: `bool`
 - `LanguageOptions`:
   `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartTranscriptionJobResponseTypeDef](./type_defs.md#starttranscriptionjobresponsetypedef).
+
+### tag_resource
+
+Tags a Amazon Transcribe resource with the given list of tags.
+
+Type annotations for `boto3.client("transcribe").tag_resource` method.
+
+Boto3 documentation:
+[TranscribeService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### untag_resource
+
+Removes specified tags from a specified Amazon Transcribe resource.
+
+Type annotations for `boto3.client("transcribe").untag_resource` method.
+
+Boto3 documentation:
+[TranscribeService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `TagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_call_analytics_category
 

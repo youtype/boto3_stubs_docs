@@ -69,6 +69,7 @@ Values:
 - `en-GB`
 - `en-GB-WLS`
 - `en-IN`
+- `en-NZ`
 - `en-US`
 - `es-ES`
 - `es-MX`
@@ -170,6 +171,7 @@ Values:
 
 - `Aditi`
 - `Amy`
+- `Aria`
 - `Astrid`
 - `Bianca`
 - `Brian`

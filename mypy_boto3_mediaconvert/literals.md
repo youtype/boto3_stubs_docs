@@ -72,6 +72,7 @@ type annotations stubs module
   - [CmafMpdProfileType](#cmafmpdprofiletype)
   - [CmafPtsOffsetHandlingForBFramesType](#cmafptsoffsethandlingforbframestype)
   - [CmafSegmentControlType](#cmafsegmentcontroltype)
+  - [CmafSegmentLengthControlType](#cmafsegmentlengthcontroltype)
   - [CmafStreamInfResolutionType](#cmafstreaminfresolutiontype)
   - [CmafTargetDurationCompatibilityModeType](#cmaftargetdurationcompatibilitymodetype)
   - [CmafWriteDASHManifestType](#cmafwritedashmanifesttype)
@@ -97,6 +98,7 @@ type annotations stubs module
   - [DashIsoPlaybackDeviceCompatibilityType](#dashisoplaybackdevicecompatibilitytype)
   - [DashIsoPtsOffsetHandlingForBFramesType](#dashisoptsoffsethandlingforbframestype)
   - [DashIsoSegmentControlType](#dashisosegmentcontroltype)
+  - [DashIsoSegmentLengthControlType](#dashisosegmentlengthcontroltype)
   - [DashIsoWriteSegmentTimelineInRepresentationType](#dashisowritesegmenttimelineinrepresentationtype)
   - [DecryptionModeType](#decryptionmodetype)
   - [DeinterlaceAlgorithmType](#deinterlacealgorithmtype)
@@ -213,6 +215,7 @@ type annotations stubs module
   - [HlsOutputSelectionType](#hlsoutputselectiontype)
   - [HlsProgramDateTimeType](#hlsprogramdatetimetype)
   - [HlsSegmentControlType](#hlssegmentcontroltype)
+  - [HlsSegmentLengthControlType](#hlssegmentlengthcontroltype)
   - [HlsStreamInfResolutionType](#hlsstreaminfresolutiontype)
   - [HlsTargetDurationCompatibilityModeType](#hlstargetdurationcompatibilitymodetype)
   - [HlsTimedMetadataId3FrameType](#hlstimedmetadataid3frametype)
@@ -236,6 +239,7 @@ type annotations stubs module
   - [M2tsAudioBufferModelType](#m2tsaudiobuffermodeltype)
   - [M2tsAudioDurationType](#m2tsaudiodurationtype)
   - [M2tsBufferModelType](#m2tsbuffermodeltype)
+  - [M2tsDataPtsControlType](#m2tsdataptscontroltype)
   - [M2tsEbpAudioIntervalType](#m2tsebpaudiointervaltype)
   - [M2tsEbpPlacementType](#m2tsebpplacementtype)
   - [M2tsEsRateInPesType](#m2tsesrateinpestype)
@@ -247,6 +251,7 @@ type annotations stubs module
   - [M2tsSegmentationMarkersType](#m2tssegmentationmarkerstype)
   - [M2tsSegmentationStyleType](#m2tssegmentationstyletype)
   - [M3u8AudioDurationType](#m3u8audiodurationtype)
+  - [M3u8DataPtsControlType](#m3u8dataptscontroltype)
   - [M3u8NielsenId3Type](#m3u8nielsenid3type)
   - [M3u8PcrControlType](#m3u8pcrcontroltype)
   - [M3u8Scte35SourceType](#m3u8scte35sourcetype)
@@ -286,6 +291,7 @@ type annotations stubs module
   - [Mpeg2TelecineType](#mpeg2telecinetype)
   - [Mpeg2TemporalAdaptiveQuantizationType](#mpeg2temporaladaptivequantizationtype)
   - [MsSmoothAudioDeduplicationType](#mssmoothaudiodeduplicationtype)
+  - [MsSmoothFragmentLengthControlType](#mssmoothfragmentlengthcontroltype)
   - [MsSmoothManifestEncodingType](#mssmoothmanifestencodingtype)
   - [MxfAfdSignalingType](#mxfafdsignalingtype)
   - [MxfProfileType](#mxfprofiletype)
@@ -1173,6 +1179,17 @@ Values:
 - `SEGMENTED_FILES`
 - `SINGLE_FILE`
 
+## CmafSegmentLengthControlType
+
+```python
+from mypy_boto3_mediaconvert.literals import CmafSegmentLengthControlType
+```
+
+Values:
+
+- `EXACT`
+- `GOP_MULTIPLE`
+
 ## CmafStreamInfResolutionType
 
 ```python
@@ -1463,6 +1480,17 @@ Values:
 
 - `SEGMENTED_FILES`
 - `SINGLE_FILE`
+
+## DashIsoSegmentLengthControlType
+
+```python
+from mypy_boto3_mediaconvert.literals import DashIsoSegmentLengthControlType
+```
+
+Values:
+
+- `EXACT`
+- `GOP_MULTIPLE`
 
 ## DashIsoWriteSegmentTimelineInRepresentationType
 
@@ -2115,6 +2143,7 @@ from mypy_boto3_mediaconvert.literals import H264FieldEncodingType
 Values:
 
 - `FORCE_FIELD`
+- `MBAFF`
 - `PAFF`
 
 ## H264FlickerAdaptiveQuantizationType
@@ -2853,6 +2882,17 @@ Values:
 - `SEGMENTED_FILES`
 - `SINGLE_FILE`
 
+## HlsSegmentLengthControlType
+
+```python
+from mypy_boto3_mediaconvert.literals import HlsSegmentLengthControlType
+```
+
+Values:
+
+- `EXACT`
+- `GOP_MULTIPLE`
+
 ## HlsStreamInfResolutionType
 
 ```python
@@ -3303,6 +3343,17 @@ Values:
 - `MULTIPLEX`
 - `NONE`
 
+## M2tsDataPtsControlType
+
+```python
+from mypy_boto3_mediaconvert.literals import M2tsDataPtsControlType
+```
+
+Values:
+
+- `ALIGN_TO_VIDEO`
+- `AUTO`
+
 ## M2tsEbpAudioIntervalType
 
 ```python
@@ -3427,6 +3478,17 @@ Values:
 
 - `DEFAULT_CODEC_DURATION`
 - `MATCH_VIDEO_DURATION`
+
+## M3u8DataPtsControlType
+
+```python
+from mypy_boto3_mediaconvert.literals import M3u8DataPtsControlType
+```
+
+Values:
+
+- `ALIGN_TO_VIDEO`
+- `AUTO`
 
 ## M3u8NielsenId3Type
 
@@ -3869,6 +3931,17 @@ Values:
 
 - `COMBINE_DUPLICATE_STREAMS`
 - `NONE`
+
+## MsSmoothFragmentLengthControlType
+
+```python
+from mypy_boto3_mediaconvert.literals import MsSmoothFragmentLengthControlType
+```
+
+Values:
+
+- `EXACT`
+- `GOP_MULTIPLE`
 
 ## MsSmoothManifestEncodingType
 

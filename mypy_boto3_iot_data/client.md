@@ -15,10 +15,13 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [delete_thing_shadow](#delete_thing_shadow)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_retained_message](#get_retained_message)
     - [get_thing_shadow](#get_thing_shadow)
     - [list_named_shadows_for_thing](#list_named_shadows_for_thing)
+    - [list_retained_messages](#list_retained_messages)
     - [publish](#publish)
     - [update_thing_shadow](#update_thing_shadow)
+    - [get_paginator](#get_paginator)
 
 ## IoTDataPlaneClient
 
@@ -128,6 +131,25 @@ Arguments:
 
 Returns `str`.
 
+### get_retained_message
+
+Gets the details of a single retained message for the specified topic.
+
+Type annotations for `boto3.client("iot-data").get_retained_message` method.
+
+Boto3 documentation:
+[IoTDataPlane.Client.get_retained_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.get_retained_message)
+
+Arguments mapping described in
+[GetRetainedMessageRequestRequestTypeDef](./type_defs.md#getretainedmessagerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `topic`: `str` *(required)*
+
+Returns
+[GetRetainedMessageResponseTypeDef](./type_defs.md#getretainedmessageresponsetypedef).
+
 ### get_thing_shadow
 
 Gets the shadow for the specified thing.
@@ -170,9 +192,29 @@ Keyword-only arguments:
 Returns
 [ListNamedShadowsForThingResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponsetypedef).
 
+### list_retained_messages
+
+Lists summary information about the retained messages stored for the account.
+
+Type annotations for `boto3.client("iot-data").list_retained_messages` method.
+
+Boto3 documentation:
+[IoTDataPlane.Client.list_retained_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.list_retained_messages)
+
+Arguments mapping described in
+[ListRetainedMessagesRequestRequestTypeDef](./type_defs.md#listretainedmessagesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[ListRetainedMessagesResponseTypeDef](./type_defs.md#listretainedmessagesresponsetypedef).
+
 ### publish
 
-Publishes state information.
+Publishes an MQTT message.
 
 Type annotations for `boto3.client("iot-data").publish` method.
 
@@ -186,6 +228,7 @@ Keyword-only arguments:
 
 - `topic`: `str` *(required)*
 - `qos`: `int`
+- `retain`: `bool`
 - `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ### update_thing_shadow
@@ -208,3 +251,11 @@ Keyword-only arguments:
 
 Returns
 [UpdateThingShadowResponseTypeDef](./type_defs.md#updatethingshadowresponsetypedef).
+
+### get_paginator
+
+Type annotations for `boto3.client("iot-data").get_paginator` method with
+overloads.
+
+- `client.get_paginator("list_retained_messages")` ->
+  [ListRetainedMessagesPaginator](./paginators.md#listretainedmessagespaginator)

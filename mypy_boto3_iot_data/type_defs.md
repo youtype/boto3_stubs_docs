@@ -10,12 +10,18 @@ type annotations stubs module
 - [Typed dictionaries for boto3 IoTDataPlane module](#typed-dictionaries-for-boto3-iotdataplane-module)
   - [DeleteThingShadowRequestRequestTypeDef](#deletethingshadowrequestrequesttypedef)
   - [DeleteThingShadowResponseTypeDef](#deletethingshadowresponsetypedef)
+  - [GetRetainedMessageRequestRequestTypeDef](#getretainedmessagerequestrequesttypedef)
+  - [GetRetainedMessageResponseTypeDef](#getretainedmessageresponsetypedef)
   - [GetThingShadowRequestRequestTypeDef](#getthingshadowrequestrequesttypedef)
   - [GetThingShadowResponseTypeDef](#getthingshadowresponsetypedef)
   - [ListNamedShadowsForThingRequestRequestTypeDef](#listnamedshadowsforthingrequestrequesttypedef)
   - [ListNamedShadowsForThingResponseTypeDef](#listnamedshadowsforthingresponsetypedef)
+  - [ListRetainedMessagesRequestRequestTypeDef](#listretainedmessagesrequestrequesttypedef)
+  - [ListRetainedMessagesResponseTypeDef](#listretainedmessagesresponsetypedef)
+  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PublishRequestRequestTypeDef](#publishrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RetainedMessageSummaryTypeDef](#retainedmessagesummarytypedef)
   - [UpdateThingShadowRequestRequestTypeDef](#updatethingshadowrequestrequesttypedef)
   - [UpdateThingShadowResponseTypeDef](#updatethingshadowresponsetypedef)
 
@@ -42,6 +48,31 @@ from mypy_boto3_iot_data.type_defs import DeleteThingShadowResponseTypeDef
 Required fields:
 
 - `payload`: `bytes`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetRetainedMessageRequestRequestTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import GetRetainedMessageRequestRequestTypeDef
+```
+
+Required fields:
+
+- `topic`: `str`
+
+## GetRetainedMessageResponseTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import GetRetainedMessageResponseTypeDef
+```
+
+Required fields:
+
+- `topic`: `str`
+- `payload`: `bytes`
+- `qos`: `int`
+- `lastModifiedTime`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -100,6 +131,43 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListRetainedMessagesRequestRequestTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import ListRetainedMessagesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListRetainedMessagesResponseTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import ListRetainedMessagesResponseTypeDef
+```
+
+Required fields:
+
+- `retainedTopics`:
+  `List`\[[RetainedMessageSummaryTypeDef](./type_defs.md#retainedmessagesummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## PaginatorConfigTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import PaginatorConfigTypeDef
+```
+
+Optional fields:
+
+- `MaxItems`: `int`
+- `PageSize`: `int`
+- `StartingToken`: `str`
+
 ## PublishRequestRequestTypeDef
 
 ```python
@@ -113,6 +181,7 @@ Required fields:
 Optional fields:
 
 - `qos`: `int`
+- `retain`: `bool`
 - `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
 ## ResponseMetadataTypeDef
@@ -128,6 +197,19 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
+
+## RetainedMessageSummaryTypeDef
+
+```python
+from mypy_boto3_iot_data.type_defs import RetainedMessageSummaryTypeDef
+```
+
+Optional fields:
+
+- `topic`: `str`
+- `payloadSize`: `int`
+- `qos`: `int`
+- `lastModifiedTime`: `int`
 
 ## UpdateThingShadowRequestRequestTypeDef
 

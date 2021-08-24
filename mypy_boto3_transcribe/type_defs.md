@@ -63,6 +63,8 @@ type annotations stubs module
   - [ListMedicalTranscriptionJobsResponseTypeDef](#listmedicaltranscriptionjobsresponsetypedef)
   - [ListMedicalVocabulariesRequestRequestTypeDef](#listmedicalvocabulariesrequestrequesttypedef)
   - [ListMedicalVocabulariesResponseTypeDef](#listmedicalvocabulariesresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListTranscriptionJobsRequestRequestTypeDef](#listtranscriptionjobsrequestrequesttypedef)
   - [ListTranscriptionJobsResponseTypeDef](#listtranscriptionjobsresponsetypedef)
   - [ListVocabulariesRequestRequestTypeDef](#listvocabulariesrequestrequesttypedef)
@@ -87,10 +89,13 @@ type annotations stubs module
   - [StartMedicalTranscriptionJobResponseTypeDef](#startmedicaltranscriptionjobresponsetypedef)
   - [StartTranscriptionJobRequestRequestTypeDef](#starttranscriptionjobrequestrequesttypedef)
   - [StartTranscriptionJobResponseTypeDef](#starttranscriptionjobresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [TagTypeDef](#tagtypedef)
   - [TranscriptFilterTypeDef](#transcriptfiltertypedef)
   - [TranscriptTypeDef](#transcripttypedef)
   - [TranscriptionJobSummaryTypeDef](#transcriptionjobsummarytypedef)
   - [TranscriptionJobTypeDef](#transcriptionjobtypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateCallAnalyticsCategoryRequestRequestTypeDef](#updatecallanalyticscategoryrequestrequesttypedef)
   - [UpdateCallAnalyticsCategoryResponseTypeDef](#updatecallanalyticscategoryresponsetypedef)
   - [UpdateMedicalVocabularyRequestRequestTypeDef](#updatemedicalvocabularyrequestrequesttypedef)
@@ -251,6 +256,10 @@ Required fields:
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## CreateLanguageModelResponseTypeDef
 
 ```python
@@ -279,6 +288,10 @@ Required fields:
 - `VocabularyName`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `VocabularyFileUri`: `str`
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateMedicalVocabularyResponseTypeDef
 
@@ -311,6 +324,7 @@ Optional fields:
 
 - `Words`: `List`\[`str`\]
 - `VocabularyFilterFileUri`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateVocabularyFilterResponseTypeDef
 
@@ -341,6 +355,7 @@ Optional fields:
 
 - `Phrases`: `List`\[`str`\]
 - `VocabularyFileUri`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateVocabularyResponseTypeDef
 
@@ -832,6 +847,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListTagsForResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+## ListTagsForResourceResponseTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import ListTagsForResourceResponseTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListTranscriptionJobsRequestRequestTypeDef
 
 ```python
@@ -989,6 +1027,7 @@ Optional fields:
 - `Specialty`: `Literal['PRIMARYCARE']` (see
   [SpecialtyType](./literals.md#specialtytype))
 - `Type`: [TypeType](./literals.md#typetype)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## MedicalTranscriptionSettingTypeDef
 
@@ -1172,6 +1211,7 @@ Optional fields:
   [MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef)
 - `ContentIdentificationType`: `Literal['PHI']` (see
   [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype))
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartMedicalTranscriptionJobResponseTypeDef
 
@@ -1214,6 +1254,7 @@ Optional fields:
 - `IdentifyLanguage`: `bool`
 - `LanguageOptions`:
   `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartTranscriptionJobResponseTypeDef
 
@@ -1227,6 +1268,28 @@ Required fields:
   [TranscriptionJobTypeDef](./type_defs.md#transcriptionjobtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import TagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## TagTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import TagTypeDef
+```
+
+Required fields:
+
+- `Key`: `str`
+- `Value`: `str`
 
 ## TranscriptFilterTypeDef
 
@@ -1314,6 +1377,18 @@ Optional fields:
 - `LanguageOptions`:
   `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
 - `IdentifiedLanguageScore`: `float`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## UntagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import UntagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `TagKeys`: `List`\[`str`\]
 
 ## UpdateCallAnalyticsCategoryRequestRequestTypeDef
 

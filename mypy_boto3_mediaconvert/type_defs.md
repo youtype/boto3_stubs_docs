@@ -740,6 +740,8 @@ Optional fields:
 - `SegmentControl`:
   [CmafSegmentControlType](./literals.md#cmafsegmentcontroltype)
 - `SegmentLength`: `int`
+- `SegmentLengthControl`:
+  [CmafSegmentLengthControlType](./literals.md#cmafsegmentlengthcontroltype)
 - `StreamInfResolution`:
   [CmafStreamInfResolutionType](./literals.md#cmafstreaminfresolutiontype)
 - `TargetDurationCompatibilityMode`:
@@ -1002,6 +1004,8 @@ Optional fields:
 - `SegmentControl`:
   [DashIsoSegmentControlType](./literals.md#dashisosegmentcontroltype)
 - `SegmentLength`: `int`
+- `SegmentLengthControl`:
+  [DashIsoSegmentLengthControlType](./literals.md#dashisosegmentlengthcontroltype)
 - `WriteSegmentTimelineInRepresentation`:
   [DashIsoWriteSegmentTimelineInRepresentationType](./literals.md#dashisowritesegmenttimelineinrepresentationtype)
 
@@ -1767,6 +1771,8 @@ Optional fields:
 - `SegmentControl`:
   [HlsSegmentControlType](./literals.md#hlssegmentcontroltype)
 - `SegmentLength`: `int`
+- `SegmentLengthControl`:
+  [HlsSegmentLengthControlType](./literals.md#hlssegmentlengthcontroltype)
 - `SegmentsPerSubdirectory`: `int`
 - `StreamInfResolution`:
   [HlsStreamInfResolutionType](./literals.md#hlsstreaminfresolutiontype)
@@ -2289,6 +2295,8 @@ Optional fields:
 - `AudioPids`: `List`\[`int`\]
 - `Bitrate`: `int`
 - `BufferModel`: [M2tsBufferModelType](./literals.md#m2tsbuffermodeltype)
+- `DataPTSControl`:
+  [M2tsDataPtsControlType](./literals.md#m2tsdataptscontroltype)
 - `DvbNitSettings`:
   [DvbNitSettingsTypeDef](./type_defs.md#dvbnitsettingstypedef)
 - `DvbSdtSettings`:
@@ -2339,6 +2347,8 @@ Optional fields:
 - `AudioDuration`: [M3u8AudioDurationType](./literals.md#m3u8audiodurationtype)
 - `AudioFramesPerPes`: `int`
 - `AudioPids`: `List`\[`int`\]
+- `DataPTSControl`:
+  [M3u8DataPtsControlType](./literals.md#m3u8dataptscontroltype)
 - `MaxPcrInterval`: `int`
 - `NielsenId3`: [M3u8NielsenId3Type](./literals.md#m3u8nielsenid3type)
 - `PatInterval`: `int`
@@ -2562,6 +2572,8 @@ Optional fields:
 - `Encryption`:
   [MsSmoothEncryptionSettingsTypeDef](./type_defs.md#mssmoothencryptionsettingstypedef)
 - `FragmentLength`: `int`
+- `FragmentLengthControl`:
+  [MsSmoothFragmentLengthControlType](./literals.md#mssmoothfragmentlengthcontroltype)
 - `ManifestEncoding`:
   [MsSmoothManifestEncodingType](./literals.md#mssmoothmanifestencodingtype)
 
@@ -3041,6 +3053,7 @@ Optional fields:
 
 - `EncryptionType`:
   [S3ServerSideEncryptionTypeType](./literals.md#s3serversideencryptiontypetype)
+- `KmsEncryptionContext`: `str`
 - `KmsKeyArn`: `str`
 
 ## SccDestinationSettingsTypeDef
