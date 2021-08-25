@@ -221,6 +221,7 @@ type annotations stubs module
   - [InstanceMatchCriteriaType](#instancematchcriteriatype)
   - [InstanceMetadataEndpointStateType](#instancemetadataendpointstatetype)
   - [InstanceMetadataOptionsStateType](#instancemetadataoptionsstatetype)
+  - [InstanceMetadataProtocolStateType](#instancemetadataprotocolstatetype)
   - [InstanceRunningWaiterName](#instancerunningwaitername)
   - [InstanceStateNameType](#instancestatenametype)
   - [InstanceStatusOkWaiterName](#instancestatusokwaitername)
@@ -2722,6 +2723,17 @@ Values:
 
 - `applied`
 - `pending`
+
+## InstanceMetadataProtocolStateType
+
+```python
+from mypy_boto3_ec2.literals import InstanceMetadataProtocolStateType
+```
+
+Values:
+
+- `disabled`
+- `enabled`
 
 ## InstanceRunningWaiterName
 

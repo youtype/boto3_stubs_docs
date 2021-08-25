@@ -343,6 +343,7 @@ Optional fields:
 - `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 - `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 ## CreateTaskResponseTypeDef
 
@@ -646,6 +647,7 @@ Required fields:
 - `ErrorCode`: `str`
 - `ErrorDetail`: `str`
 - `CreationTime`: `datetime`
+- `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -946,6 +948,7 @@ Optional fields:
 
 - `OverrideOptions`: [OptionsTypeDef](./type_defs.md#optionstypedef)
 - `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 ## StartTaskExecutionResponseTypeDef
 
@@ -1157,3 +1160,4 @@ Optional fields:
 - `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
 - `Name`: `str`
 - `CloudWatchLogGroupArn`: `str`
+- `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]

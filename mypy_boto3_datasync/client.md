@@ -133,7 +133,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_agent
 
-Activates an AWS DataSync agent that you have deployed on your host.
+Activates an DataSync agent that you have deployed on your host.
 
 Type annotations for `boto3.client("datasync").create_agent` method.
 
@@ -332,6 +332,7 @@ Keyword-only arguments:
 - `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 - `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
 - `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 Returns [CreateTaskResponseTypeDef](./type_defs.md#createtaskresponsetypedef).
 
@@ -355,7 +356,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_location
 
-Deletes the configuration of a location used by AWS DataSync.
+Deletes the configuration of a location used by DataSync.
 
 Type annotations for `boto3.client("datasync").delete_location` method.
 
@@ -584,8 +585,8 @@ Returns `str`.
 
 ### list_agents
 
-Returns a list of agents owned by an AWS account in the AWS Region specified in
-the request.
+Returns a list of agents owned by an Amazon Web Services account in the Amazon
+Web Services Region specified in the request.
 
 Type annotations for `boto3.client("datasync").list_agents` method.
 
@@ -703,13 +704,14 @@ Keyword-only arguments:
 - `TaskArn`: `str` *(required)*
 - `OverrideOptions`: [OptionsTypeDef](./type_defs.md#optionstypedef)
 - `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 Returns
 [StartTaskExecutionResponseTypeDef](./type_defs.md#starttaskexecutionresponsetypedef).
 
 ### tag_resource
 
-Applies a key-value pair to an AWS resource.
+Applies a key-value pair to an Amazon Web Services resource.
 
 Type annotations for `boto3.client("datasync").tag_resource` method.
 
@@ -729,7 +731,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes a tag from an AWS resource.
+Removes a tag from an Amazon Web Services resource.
 
 Type annotations for `boto3.client("datasync").untag_resource` method.
 
@@ -861,6 +863,7 @@ Keyword-only arguments:
 - `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
 - `Name`: `str`
 - `CloudWatchLogGroupArn`: `str`
+- `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 

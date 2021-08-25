@@ -1038,7 +1038,7 @@ Returns
 
 ### associate_trunk_interface
 
-Associates a branch network interface with a trunk network interface.
+.
 
 Type annotations for `boto3.client("ec2").associate_trunk_interface` method.
 
@@ -7004,7 +7004,7 @@ Returns
 
 ### describe_trunk_interface_associations
 
-Describes one or more network interface trunk associations.
+.
 
 Type annotations for
 `boto3.client("ec2").describe_trunk_interface_associations` method.
@@ -7874,8 +7874,7 @@ Returns
 
 ### disassociate_trunk_interface
 
-Removes an association between a branch network interface with a trunk network
-interface.
+.
 
 Type annotations for `boto3.client("ec2").disassociate_trunk_interface` method.
 
@@ -9377,6 +9376,8 @@ Keyword-only arguments:
 - `HttpEndpoint`:
   [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 - `DryRun`: `bool`
+- `HttpProtocolIpv6`:
+  [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
 
 Returns
 [ModifyInstanceMetadataOptionsResultTypeDef](./type_defs.md#modifyinstancemetadataoptionsresulttypedef).

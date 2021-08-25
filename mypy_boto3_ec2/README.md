@@ -966,6 +966,7 @@ from mypy_boto3_ec2.literals import AccountAttributeNameType, ...
 - [InstanceMatchCriteriaType](./literals.md#instancematchcriteriatype)
 - [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 - [InstanceMetadataOptionsStateType](./literals.md#instancemetadataoptionsstatetype)
+- [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
 - [InstanceRunningWaiterName](./literals.md#instancerunningwaitername)
 - [InstanceStateNameType](./literals.md#instancestatenametype)
 - [InstanceStatusOkWaiterName](./literals.md#instancestatusokwaitername)

@@ -140,6 +140,7 @@ from mypy_boto3_events.literals import LaunchTypeType
 Values:
 
 - `EC2`
+- `EXTERNAL`
 - `FARGATE`
 
 ## ListRuleNamesByTargetPaginatorName

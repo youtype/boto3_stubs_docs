@@ -1033,6 +1033,7 @@ Optional fields:
 - `SecurityServiceType`:
   [SecurityServiceTypeType](./literals.md#securityservicetypetype)
 - `RemediationEnabled`: `bool`
+- `DeleteUnusedFMManagedResources`: `bool`
 
 ## PolicyTypeDef
 
@@ -1056,6 +1057,7 @@ Optional fields:
 - `ResourceTypeList`: `List`\[`str`\]
 - `ResourceTags`:
   `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+- `DeleteUnusedFMManagedResources`: `bool`
 - `IncludeMap`:
   `Dict`\[[CustomerPolicyScopeIdTypeType](./literals.md#customerpolicyscopeidtypetype),
   `List`\[`str`\]\]

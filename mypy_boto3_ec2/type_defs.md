@@ -15863,6 +15863,8 @@ Optional fields:
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
   [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
+- `HttpProtocolIpv6`:
+  [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
 
 ## InstanceMetadataOptionsResponseTypeDef
 
@@ -15878,6 +15880,8 @@ Optional fields:
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
   [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
+- `HttpProtocolIpv6`:
+  [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
 
 ## InstanceMonitoringTypeDef
 
@@ -17816,6 +17820,8 @@ Optional fields:
 - `HttpEndpoint`:
   [InstanceMetadataEndpointStateType](./literals.md#instancemetadataendpointstatetype)
 - `DryRun`: `bool`
+- `HttpProtocolIpv6`:
+  [InstanceMetadataProtocolStateType](./literals.md#instancemetadataprotocolstatetype)
 
 ## ModifyInstanceMetadataOptionsResultTypeDef
 
