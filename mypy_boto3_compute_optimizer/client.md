@@ -24,6 +24,7 @@ type annotations stubs module
     - [get_ec2_instance_recommendations](#get_ec2_instance_recommendations)
     - [get_ec2_recommendation_projected_metrics](#get_ec2_recommendation_projected_metrics)
     - [get_enrollment_status](#get_enrollment_status)
+    - [get_enrollment_statuses_for_organization](#get_enrollment_statuses_for_organization)
     - [get_lambda_function_recommendations](#get_lambda_function_recommendations)
     - [get_recommendation_summaries](#get_recommendation_summaries)
     - [update_enrollment_status](#update_enrollment_status)
@@ -146,6 +147,8 @@ Keyword-only arguments:
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 Returns
 [ExportAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsresponsetypedef).
@@ -204,13 +207,15 @@ Keyword-only arguments:
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 Returns
 [ExportEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#exportec2instancerecommendationsresponsetypedef).
 
 ### export_lambda_function_recommendations
 
-Exports optimization recommendations for AWS Lambda functions.
+Exports optimization recommendations for Lambda functions.
 
 Type annotations for
 `boto3.client("compute-optimizer").export_lambda_function_recommendations`
@@ -279,6 +284,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 Returns
 [GetAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#getautoscalinggrouprecommendationsresponsetypedef).
@@ -327,6 +334,8 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `accountIds`: `List`\[`str`\]
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 Returns
 [GetEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#getec2instancerecommendationsresponsetypedef).
@@ -353,14 +362,16 @@ Keyword-only arguments:
 - `period`: `int` *(required)*
 - `startTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 Returns
 [GetEC2RecommendationProjectedMetricsResponseTypeDef](./type_defs.md#getec2recommendationprojectedmetricsresponsetypedef).
 
 ### get_enrollment_status
 
-Returns the enrollment (opt in) status of an account to the AWS Compute
-Optimizer service.
+Returns the enrollment (opt in) status of an account to the Compute Optimizer
+service.
 
 Type annotations for `boto3.client("compute-optimizer").get_enrollment_status`
 method.
@@ -371,9 +382,34 @@ Boto3 documentation:
 Returns
 [GetEnrollmentStatusResponseTypeDef](./type_defs.md#getenrollmentstatusresponsetypedef).
 
+### get_enrollment_statuses_for_organization
+
+Returns the Compute Optimizer enrollment (opt-in) status of organization member
+accounts, if your account is an organization management account.
+
+Type annotations for
+`boto3.client("compute-optimizer").get_enrollment_statuses_for_organization`
+method.
+
+Boto3 documentation:
+[ComputeOptimizer.Client.get_enrollment_statuses_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client.get_enrollment_statuses_for_organization)
+
+Arguments mapping described in
+[GetEnrollmentStatusesForOrganizationRequestRequestTypeDef](./type_defs.md#getenrollmentstatusesfororganizationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `filters`:
+  `List`\[[EnrollmentFilterTypeDef](./type_defs.md#enrollmentfiltertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+Returns
+[GetEnrollmentStatusesForOrganizationResponseTypeDef](./type_defs.md#getenrollmentstatusesfororganizationresponsetypedef).
+
 ### get_lambda_function_recommendations
 
-Returns AWS Lambda function recommendations.
+Returns Lambda function recommendations.
 
 Type annotations for
 `boto3.client("compute-optimizer").get_lambda_function_recommendations` method.
@@ -420,8 +456,8 @@ Returns
 
 ### update_enrollment_status
 
-Updates the enrollment (opt in and opt out) status of an account to the AWS
-Compute Optimizer service.
+Updates the enrollment (opt in and opt out) status of an account to the Compute
+Optimizer service.
 
 Type annotations for
 `boto3.client("compute-optimizer").update_enrollment_status` method.

@@ -106,6 +106,7 @@ type annotations stubs module
   - [InstanceTypeDef](#instancetypedef)
   - [KinesisDataStreamTypeDef](#kinesisdatastreamtypedef)
   - [KinesisVideoStreamTypeDef](#kinesisvideostreamtypedef)
+  - [KnownGenderTypeDef](#knowngendertypedef)
   - [LabelDetectionTypeDef](#labeldetectiontypedef)
   - [LabelTypeDef](#labeltypedef)
   - [LandmarkTypeDef](#landmarktypedef)
@@ -304,6 +305,7 @@ Optional fields:
 - `Id`: `str`
 - `Face`: [ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)
 - `MatchConfidence`: `float`
+- `KnownGender`: [KnownGenderTypeDef](./type_defs.md#knowngendertypedef)
 
 ## CompareFacesMatchTypeDef
 
@@ -366,6 +368,8 @@ Optional fields:
 - `Landmarks`: `List`\[[LandmarkTypeDef](./type_defs.md#landmarktypedef)\]
 - `Pose`: [PoseTypeDef](./type_defs.md#posetypedef)
 - `Quality`: [ImageQualityTypeDef](./type_defs.md#imagequalitytypedef)
+- `Emotions`: `List`\[[EmotionTypeDef](./type_defs.md#emotiontypedef)\]
+- `Smile`: [SmileTypeDef](./type_defs.md#smiletypedef)
 
 ## ComparedSourceImageFaceTypeDef
 
@@ -1128,6 +1132,7 @@ Required fields:
 
 - `Urls`: `List`\[`str`\]
 - `Name`: `str`
+- `KnownGender`: [KnownGenderTypeDef](./type_defs.md#knowngendertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1538,6 +1543,16 @@ from mypy_boto3_rekognition.type_defs import KinesisVideoStreamTypeDef
 Optional fields:
 
 - `Arn`: `str`
+
+## KnownGenderTypeDef
+
+```python
+from mypy_boto3_rekognition.type_defs import KnownGenderTypeDef
+```
+
+Optional fields:
+
+- `Type`: [KnownGenderTypeType](./literals.md#knowngendertypetype)
 
 ## LabelDetectionTypeDef
 

@@ -17914,6 +17914,7 @@ Optional fields:
   `List`\[[AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef)\]
 - `RemoveEntries`:
   `List`\[[RemovePrefixListEntryTypeDef](./type_defs.md#removeprefixlistentrytypedef)\]
+- `MaxEntries`: `int`
 
 ## ModifyManagedPrefixListResultTypeDef
 

@@ -19,6 +19,7 @@ type annotations stubs module
   - [FaceAttributesType](#faceattributestype)
   - [FaceSearchSortByType](#facesearchsortbytype)
   - [GenderTypeType](#gendertypetype)
+  - [KnownGenderTypeType](#knowngendertypetype)
   - [LabelDetectionSortByType](#labeldetectionsortbytype)
   - [LandmarkTypeType](#landmarktypetype)
   - [ListCollectionsPaginatorName](#listcollectionspaginatorname)
@@ -161,6 +162,17 @@ Values:
 
 ```python
 from mypy_boto3_rekognition.literals import GenderTypeType
+```
+
+Values:
+
+- `Female`
+- `Male`
+
+## KnownGenderTypeType
+
+```python
+from mypy_boto3_rekognition.literals import KnownGenderTypeType
 ```
 
 Values:

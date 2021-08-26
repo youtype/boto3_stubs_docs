@@ -8,9 +8,11 @@ type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
 - [Literals for boto3 ComputeOptimizer module](#literals-for-boto3-computeoptimizer-module)
+  - [CpuVendorArchitectureType](#cpuvendorarchitecturetype)
   - [EBSFilterNameType](#ebsfilternametype)
   - [EBSFindingType](#ebsfindingtype)
   - [EBSMetricNameType](#ebsmetricnametype)
+  - [EnrollmentFilterNameType](#enrollmentfilternametype)
   - [ExportableAutoScalingGroupFieldType](#exportableautoscalinggroupfieldtype)
   - [ExportableInstanceFieldType](#exportableinstancefieldtype)
   - [ExportableLambdaFunctionFieldType](#exportablelambdafunctionfieldtype)
@@ -35,6 +37,17 @@ type annotations stubs module
   - [RecommendationSourceTypeType](#recommendationsourcetypetype)
   - [ResourceTypeType](#resourcetypetype)
   - [StatusType](#statustype)
+
+## CpuVendorArchitectureType
+
+```python
+from mypy_boto3_compute_optimizer.literals import CpuVendorArchitectureType
+```
+
+Values:
+
+- `AWS_ARM64`
+- `CURRENT`
 
 ## EBSFilterNameType
 
@@ -69,6 +82,16 @@ Values:
 - `VolumeReadOpsPerSecond`
 - `VolumeWriteBytesPerSecond`
 - `VolumeWriteOpsPerSecond`
+
+## EnrollmentFilterNameType
+
+```python
+from mypy_boto3_compute_optimizer.literals import EnrollmentFilterNameType
+```
+
+Values:
+
+- `Status`
 
 ## ExportableAutoScalingGroupFieldType
 
@@ -457,6 +480,7 @@ from mypy_boto3_compute_optimizer.literals import PlatformDifferenceType
 
 Values:
 
+- `Architecture`
 - `Hypervisor`
 - `InstanceStoreAvailability`
 - `NetworkInterface`

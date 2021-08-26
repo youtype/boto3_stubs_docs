@@ -85,8 +85,10 @@ Values:
 - `en-GB`
 - `en-IE`
 - `en-IN`
+- `en-NZ`
 - `en-US`
 - `en-WL`
+- `en-ZA`
 - `es-ES`
 - `es-US`
 - `fa-IR`
@@ -107,8 +109,10 @@ Values:
 - `ru-RU`
 - `ta-IN`
 - `te-IN`
+- `th-TH`
 - `tr-TR`
 - `zh-CN`
+- `zh-TW`
 
 ## MediaFormatType
 

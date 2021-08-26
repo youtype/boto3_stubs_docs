@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
 - [Typed dictionaries for boto3 ComputeOptimizer module](#typed-dictionaries-for-boto3-computeoptimizer-module)
+  - [AccountEnrollmentStatusTypeDef](#accountenrollmentstatustypedef)
   - [AutoScalingGroupConfigurationTypeDef](#autoscalinggroupconfigurationtypedef)
   - [AutoScalingGroupRecommendationOptionTypeDef](#autoscalinggrouprecommendationoptiontypedef)
   - [AutoScalingGroupRecommendationTypeDef](#autoscalinggrouprecommendationtypedef)
@@ -15,6 +16,7 @@ type annotations stubs module
   - [DescribeRecommendationExportJobsResponseTypeDef](#describerecommendationexportjobsresponsetypedef)
   - [EBSFilterTypeDef](#ebsfiltertypedef)
   - [EBSUtilizationMetricTypeDef](#ebsutilizationmetrictypedef)
+  - [EnrollmentFilterTypeDef](#enrollmentfiltertypedef)
   - [ExportAutoScalingGroupRecommendationsRequestRequestTypeDef](#exportautoscalinggrouprecommendationsrequestrequesttypedef)
   - [ExportAutoScalingGroupRecommendationsResponseTypeDef](#exportautoscalinggrouprecommendationsresponsetypedef)
   - [ExportDestinationTypeDef](#exportdestinationtypedef)
@@ -34,6 +36,8 @@ type annotations stubs module
   - [GetEC2RecommendationProjectedMetricsRequestRequestTypeDef](#getec2recommendationprojectedmetricsrequestrequesttypedef)
   - [GetEC2RecommendationProjectedMetricsResponseTypeDef](#getec2recommendationprojectedmetricsresponsetypedef)
   - [GetEnrollmentStatusResponseTypeDef](#getenrollmentstatusresponsetypedef)
+  - [GetEnrollmentStatusesForOrganizationRequestRequestTypeDef](#getenrollmentstatusesfororganizationrequestrequesttypedef)
+  - [GetEnrollmentStatusesForOrganizationResponseTypeDef](#getenrollmentstatusesfororganizationresponsetypedef)
   - [GetLambdaFunctionRecommendationsRequestRequestTypeDef](#getlambdafunctionrecommendationsrequestrequesttypedef)
   - [GetLambdaFunctionRecommendationsResponseTypeDef](#getlambdafunctionrecommendationsresponsetypedef)
   - [GetRecommendationErrorTypeDef](#getrecommendationerrortypedef)
@@ -50,6 +54,7 @@ type annotations stubs module
   - [ProjectedMetricTypeDef](#projectedmetrictypedef)
   - [ReasonCodeSummaryTypeDef](#reasoncodesummarytypedef)
   - [RecommendationExportJobTypeDef](#recommendationexportjobtypedef)
+  - [RecommendationPreferencesTypeDef](#recommendationpreferencestypedef)
   - [RecommendationSourceTypeDef](#recommendationsourcetypedef)
   - [RecommendationSummaryTypeDef](#recommendationsummarytypedef)
   - [RecommendedOptionProjectedMetricTypeDef](#recommendedoptionprojectedmetrictypedef)
@@ -63,6 +68,19 @@ type annotations stubs module
   - [VolumeConfigurationTypeDef](#volumeconfigurationtypedef)
   - [VolumeRecommendationOptionTypeDef](#volumerecommendationoptiontypedef)
   - [VolumeRecommendationTypeDef](#volumerecommendationtypedef)
+
+## AccountEnrollmentStatusTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import AccountEnrollmentStatusTypeDef
+```
+
+Optional fields:
+
+- `accountId`: `str`
+- `status`: [StatusType](./literals.md#statustype)
+- `statusReason`: `str`
+- `lastUpdatedTimestamp`: `datetime`
 
 ## AutoScalingGroupConfigurationTypeDef
 
@@ -164,6 +182,18 @@ Optional fields:
 - `statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
 - `value`: `float`
 
+## EnrollmentFilterTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import EnrollmentFilterTypeDef
+```
+
+Optional fields:
+
+- `name`: `Literal['Status']` (see
+  [EnrollmentFilterNameType](./literals.md#enrollmentfilternametype))
+- `values`: `List`\[`str`\]
+
 ## ExportAutoScalingGroupRecommendationsRequestRequestTypeDef
 
 ```python
@@ -184,6 +214,8 @@ Optional fields:
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 ## ExportAutoScalingGroupRecommendationsResponseTypeDef
 
@@ -262,6 +294,8 @@ Optional fields:
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 ## ExportEC2InstanceRecommendationsResponseTypeDef
 
@@ -335,6 +369,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 ## GetAutoScalingGroupRecommendationsResponseTypeDef
 
@@ -395,6 +431,8 @@ Optional fields:
 - `maxResults`: `int`
 - `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `accountIds`: `List`\[`str`\]
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
 ## GetEC2InstanceRecommendationsResponseTypeDef
 
@@ -426,6 +464,11 @@ Required fields:
 - `startTime`: `Union`\[`datetime`, `str`\]
 - `endTime`: `Union`\[`datetime`, `str`\]
 
+Optional fields:
+
+- `recommendationPreferences`:
+  [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
+
 ## GetEC2RecommendationProjectedMetricsResponseTypeDef
 
 ```python
@@ -450,6 +493,35 @@ Required fields:
 - `status`: [StatusType](./literals.md#statustype)
 - `statusReason`: `str`
 - `memberAccountsEnrolled`: `bool`
+- `lastUpdatedTimestamp`: `datetime`
+- `numberOfMemberAccountsOptedIn`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetEnrollmentStatusesForOrganizationRequestRequestTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import GetEnrollmentStatusesForOrganizationRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `filters`:
+  `List`\[[EnrollmentFilterTypeDef](./type_defs.md#enrollmentfiltertypedef)\]
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## GetEnrollmentStatusesForOrganizationResponseTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import GetEnrollmentStatusesForOrganizationResponseTypeDef
+```
+
+Required fields:
+
+- `accountEnrollmentStatuses`:
+  `List`\[[AccountEnrollmentStatusTypeDef](./type_defs.md#accountenrollmentstatustypedef)\]
+- `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -687,6 +759,17 @@ Optional fields:
 - `creationTimestamp`: `datetime`
 - `lastUpdatedTimestamp`: `datetime`
 - `failureReason`: `str`
+
+## RecommendationPreferencesTypeDef
+
+```python
+from mypy_boto3_compute_optimizer.type_defs import RecommendationPreferencesTypeDef
+```
+
+Optional fields:
+
+- `cpuVendorArchitectures`:
+  `List`\[[CpuVendorArchitectureType](./literals.md#cpuvendorarchitecturetype)\]
 
 ## RecommendationSourceTypeDef
 

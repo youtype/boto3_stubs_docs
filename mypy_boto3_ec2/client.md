@@ -9452,6 +9452,7 @@ Keyword-only arguments:
   `List`\[[AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef)\]
 - `RemoveEntries`:
   `List`\[[RemovePrefixListEntryTypeDef](./type_defs.md#removeprefixlistentrytypedef)\]
+- `MaxEntries`: `int`
 
 Returns
 [ModifyManagedPrefixListResultTypeDef](./type_defs.md#modifymanagedprefixlistresulttypedef).

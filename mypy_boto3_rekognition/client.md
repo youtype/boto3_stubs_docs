@@ -601,7 +601,7 @@ Returns `str`.
 
 ### get_celebrity_info
 
-Gets the name and additional information about a celebrity based on his or her
+Gets the name and additional information about a celebrity based on their
 Amazon Rekognition ID.
 
 Type annotations for `boto3.client("rekognition").get_celebrity_info` method.
