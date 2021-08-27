@@ -15249,6 +15249,7 @@ Optional fields:
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `UsageOperation`: `str`
+- `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
 
 ## ImportImageResultTypeDef
 
@@ -15305,6 +15306,7 @@ Optional fields:
 - `LicenseSpecifications`:
   `List`\[[ImportImageLicenseConfigurationResponseTypeDef](./type_defs.md#importimagelicenseconfigurationresponsetypedef)\]
 - `UsageOperation`: `str`
+- `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
 
 ## ImportInstanceLaunchSpecificationTypeDef
 

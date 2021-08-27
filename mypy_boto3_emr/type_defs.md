@@ -20,6 +20,7 @@ type annotations stubs module
   - [AutoScalingPolicyStateChangeReasonTypeDef](#autoscalingpolicystatechangereasontypedef)
   - [AutoScalingPolicyStatusTypeDef](#autoscalingpolicystatustypedef)
   - [AutoScalingPolicyTypeDef](#autoscalingpolicytypedef)
+  - [AutoTerminationPolicyTypeDef](#autoterminationpolicytypedef)
   - [BlockPublicAccessConfigurationMetadataTypeDef](#blockpublicaccessconfigurationmetadatatypedef)
   - [BlockPublicAccessConfigurationTypeDef](#blockpublicaccessconfigurationtypedef)
   - [BootstrapActionConfigTypeDef](#bootstrapactionconfigtypedef)
@@ -65,6 +66,8 @@ type annotations stubs module
   - [Ec2InstanceAttributesTypeDef](#ec2instanceattributestypedef)
   - [ExecutionEngineConfigTypeDef](#executionengineconfigtypedef)
   - [FailureDetailsTypeDef](#failuredetailstypedef)
+  - [GetAutoTerminationPolicyInputRequestTypeDef](#getautoterminationpolicyinputrequesttypedef)
+  - [GetAutoTerminationPolicyOutputTypeDef](#getautoterminationpolicyoutputtypedef)
   - [GetBlockPublicAccessConfigurationOutputTypeDef](#getblockpublicaccessconfigurationoutputtypedef)
   - [GetManagedScalingPolicyInputRequestTypeDef](#getmanagedscalingpolicyinputrequesttypedef)
   - [GetManagedScalingPolicyOutputTypeDef](#getmanagedscalingpolicyoutputtypedef)
@@ -137,10 +140,12 @@ type annotations stubs module
   - [PortRangeTypeDef](#portrangetypedef)
   - [PutAutoScalingPolicyInputRequestTypeDef](#putautoscalingpolicyinputrequesttypedef)
   - [PutAutoScalingPolicyOutputTypeDef](#putautoscalingpolicyoutputtypedef)
+  - [PutAutoTerminationPolicyInputRequestTypeDef](#putautoterminationpolicyinputrequesttypedef)
   - [PutBlockPublicAccessConfigurationInputRequestTypeDef](#putblockpublicaccessconfigurationinputrequesttypedef)
   - [PutManagedScalingPolicyInputRequestTypeDef](#putmanagedscalingpolicyinputrequesttypedef)
   - [ReleaseLabelFilterTypeDef](#releaselabelfiltertypedef)
   - [RemoveAutoScalingPolicyInputRequestTypeDef](#removeautoscalingpolicyinputrequesttypedef)
+  - [RemoveAutoTerminationPolicyInputRequestTypeDef](#removeautoterminationpolicyinputrequesttypedef)
   - [RemoveManagedScalingPolicyInputRequestTypeDef](#removemanagedscalingpolicyinputrequesttypedef)
   - [RemoveTagsInputRequestTypeDef](#removetagsinputrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
@@ -330,6 +335,16 @@ Required fields:
 - `Constraints`:
   [ScalingConstraintsTypeDef](./type_defs.md#scalingconstraintstypedef)
 - `Rules`: `List`\[[ScalingRuleTypeDef](./type_defs.md#scalingruletypedef)\]
+
+## AutoTerminationPolicyTypeDef
+
+```python
+from mypy_boto3_emr.type_defs import AutoTerminationPolicyTypeDef
+```
+
+Optional fields:
+
+- `IdleTimeout`: `int`
 
 ## BlockPublicAccessConfigurationMetadataTypeDef
 
@@ -965,6 +980,29 @@ Optional fields:
 - `Reason`: `str`
 - `Message`: `str`
 - `LogFile`: `str`
+
+## GetAutoTerminationPolicyInputRequestTypeDef
+
+```python
+from mypy_boto3_emr.type_defs import GetAutoTerminationPolicyInputRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterId`: `str`
+
+## GetAutoTerminationPolicyOutputTypeDef
+
+```python
+from mypy_boto3_emr.type_defs import GetAutoTerminationPolicyOutputTypeDef
+```
+
+Required fields:
+
+- `AutoTerminationPolicy`:
+  [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## GetBlockPublicAccessConfigurationOutputTypeDef
 
@@ -2079,6 +2117,21 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## PutAutoTerminationPolicyInputRequestTypeDef
+
+```python
+from mypy_boto3_emr.type_defs import PutAutoTerminationPolicyInputRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterId`: `str`
+
+Optional fields:
+
+- `AutoTerminationPolicy`:
+  [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
+
 ## PutBlockPublicAccessConfigurationInputRequestTypeDef
 
 ```python
@@ -2123,6 +2176,16 @@ Required fields:
 
 - `ClusterId`: `str`
 - `InstanceGroupId`: `str`
+
+## RemoveAutoTerminationPolicyInputRequestTypeDef
+
+```python
+from mypy_boto3_emr.type_defs import RemoveAutoTerminationPolicyInputRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterId`: `str`
 
 ## RemoveManagedScalingPolicyInputRequestTypeDef
 
@@ -2207,6 +2270,8 @@ Optional fields:
   [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
 - `PlacementGroupConfigs`:
   `List`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
+- `AutoTerminationPolicy`:
+  [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
 
 ## RunJobFlowOutputTypeDef
 

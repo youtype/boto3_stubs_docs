@@ -32,6 +32,7 @@ type annotations stubs module
     - [describe_step](#describe_step)
     - [describe_studio](#describe_studio)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_auto_termination_policy](#get_auto_termination_policy)
     - [get_block_public_access_configuration](#get_block_public_access_configuration)
     - [get_managed_scaling_policy](#get_managed_scaling_policy)
     - [get_studio_session_mapping](#get_studio_session_mapping)
@@ -50,9 +51,11 @@ type annotations stubs module
     - [modify_instance_fleet](#modify_instance_fleet)
     - [modify_instance_groups](#modify_instance_groups)
     - [put_auto_scaling_policy](#put_auto_scaling_policy)
+    - [put_auto_termination_policy](#put_auto_termination_policy)
     - [put_block_public_access_configuration](#put_block_public_access_configuration)
     - [put_managed_scaling_policy](#put_managed_scaling_policy)
     - [remove_auto_scaling_policy](#remove_auto_scaling_policy)
+    - [remove_auto_termination_policy](#remove_auto_termination_policy)
     - [remove_managed_scaling_policy](#remove_managed_scaling_policy)
     - [remove_tags](#remove_tags)
     - [run_job_flow](#run_job_flow)
@@ -526,10 +529,29 @@ Arguments:
 
 Returns `str`.
 
+### get_auto_termination_policy
+
+Returns the auto-termination policy for an Amazon EMR cluster.
+
+Type annotations for `boto3.client("emr").get_auto_termination_policy` method.
+
+Boto3 documentation:
+[EMR.Client.get_auto_termination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_auto_termination_policy)
+
+Arguments mapping described in
+[GetAutoTerminationPolicyInputRequestTypeDef](./type_defs.md#getautoterminationpolicyinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClusterId`: `str` *(required)*
+
+Returns
+[GetAutoTerminationPolicyOutputTypeDef](./type_defs.md#getautoterminationpolicyoutputtypedef).
+
 ### get_block_public_access_configuration
 
-Returns the Amazon EMR block public access configuration for your account in
-the current Region.
+Returns the Amazon EMR block public access configuration for your Amazon Web
+Services account in the current Region.
 
 Type annotations for
 `boto3.client("emr").get_block_public_access_configuration` method.
@@ -605,7 +627,8 @@ Returns
 
 ### list_clusters
 
-Provides the status of all clusters visible to this account.
+Provides the status of all clusters visible to this Amazon Web Services
+account.
 
 Type annotations for `boto3.client("emr").list_clusters` method.
 
@@ -805,7 +828,8 @@ Returns
 
 ### list_studios
 
-Returns a list of all Amazon EMR Studios associated with the account.
+Returns a list of all Amazon EMR Studios associated with the Amazon Web
+Services account.
 
 Type annotations for `boto3.client("emr").list_studios` method.
 
@@ -906,10 +930,30 @@ Keyword-only arguments:
 Returns
 [PutAutoScalingPolicyOutputTypeDef](./type_defs.md#putautoscalingpolicyoutputtypedef).
 
+### put_auto_termination_policy
+
+Creates or updates an auto-termination policy for an Amazon EMR cluster.
+
+Type annotations for `boto3.client("emr").put_auto_termination_policy` method.
+
+Boto3 documentation:
+[EMR.Client.put_auto_termination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_termination_policy)
+
+Arguments mapping described in
+[PutAutoTerminationPolicyInputRequestTypeDef](./type_defs.md#putautoterminationpolicyinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClusterId`: `str` *(required)*
+- `AutoTerminationPolicy`:
+  [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### put_block_public_access_configuration
 
 Creates or updates an Amazon EMR block public access configuration for your
-account in the current Region.
+Amazon Web Services account in the current Region.
 
 Type annotations for
 `boto3.client("emr").put_block_public_access_configuration` method.
@@ -966,6 +1010,25 @@ Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
 - `InstanceGroupId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### remove_auto_termination_policy
+
+Removes an auto-termination policy from an Amazon EMR cluster.
+
+Type annotations for `boto3.client("emr").remove_auto_termination_policy`
+method.
+
+Boto3 documentation:
+[EMR.Client.remove_auto_termination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_termination_policy)
+
+Arguments mapping described in
+[RemoveAutoTerminationPolicyInputRequestTypeDef](./type_defs.md#removeautoterminationpolicyinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClusterId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1059,6 +1122,8 @@ Keyword-only arguments:
   [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
 - `PlacementGroupConfigs`:
   `List`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
+- `AutoTerminationPolicy`:
+  [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
 
 Returns [RunJobFlowOutputTypeDef](./type_defs.md#runjobflowoutputtypedef).
 

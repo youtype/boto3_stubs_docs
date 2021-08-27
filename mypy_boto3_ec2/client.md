@@ -8820,6 +8820,7 @@ Keyword-only arguments:
 - `TagSpecifications`:
   `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `UsageOperation`: `str`
+- `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
 
 Returns [ImportImageResultTypeDef](./type_defs.md#importimageresulttypedef).
 
