@@ -43,7 +43,7 @@ Arguments for `ListAliasesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAliasesPaginator.paginate` returns
-`Iterator`\[[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)\].
+`_PageIterator`\[[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)\].
 
 ## ListCodeSigningConfigsPaginator
 
@@ -68,7 +68,7 @@ Arguments for `ListCodeSigningConfigsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCodeSigningConfigsPaginator.paginate` returns
-`Iterator`\[[ListCodeSigningConfigsResponseTypeDef](./type_defs.md#listcodesigningconfigsresponsetypedef)\].
+`_PageIterator`\[[ListCodeSigningConfigsResponseTypeDef](./type_defs.md#listcodesigningconfigsresponsetypedef)\].
 
 ## ListEventSourceMappingsPaginator
 
@@ -95,7 +95,7 @@ Arguments for `ListEventSourceMappingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEventSourceMappingsPaginator.paginate` returns
-`Iterator`\[[ListEventSourceMappingsResponseTypeDef](./type_defs.md#listeventsourcemappingsresponsetypedef)\].
+`_PageIterator`\[[ListEventSourceMappingsResponseTypeDef](./type_defs.md#listeventsourcemappingsresponsetypedef)\].
 
 ## ListFunctionEventInvokeConfigsPaginator
 
@@ -121,7 +121,7 @@ Arguments for `ListFunctionEventInvokeConfigsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFunctionEventInvokeConfigsPaginator.paginate` returns
-`Iterator`\[[ListFunctionEventInvokeConfigsResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponsetypedef)\].
+`_PageIterator`\[[ListFunctionEventInvokeConfigsResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponsetypedef)\].
 
 ## ListFunctionsPaginator
 
@@ -148,7 +148,7 @@ Arguments for `ListFunctionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFunctionsPaginator.paginate` returns
-`Iterator`\[[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef)\].
+`_PageIterator`\[[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef)\].
 
 ## ListFunctionsByCodeSigningConfigPaginator
 
@@ -174,7 +174,7 @@ Arguments for `ListFunctionsByCodeSigningConfigPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFunctionsByCodeSigningConfigPaginator.paginate` returns
-`Iterator`\[[ListFunctionsByCodeSigningConfigResponseTypeDef](./type_defs.md#listfunctionsbycodesigningconfigresponsetypedef)\].
+`_PageIterator`\[[ListFunctionsByCodeSigningConfigResponseTypeDef](./type_defs.md#listfunctionsbycodesigningconfigresponsetypedef)\].
 
 ## ListLayerVersionsPaginator
 
@@ -201,7 +201,7 @@ Arguments for `ListLayerVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLayerVersionsPaginator.paginate` returns
-`Iterator`\[[ListLayerVersionsResponseTypeDef](./type_defs.md#listlayerversionsresponsetypedef)\].
+`_PageIterator`\[[ListLayerVersionsResponseTypeDef](./type_defs.md#listlayerversionsresponsetypedef)\].
 
 ## ListLayersPaginator
 
@@ -226,7 +226,7 @@ Arguments for `ListLayersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLayersPaginator.paginate` returns
-`Iterator`\[[ListLayersResponseTypeDef](./type_defs.md#listlayersresponsetypedef)\].
+`_PageIterator`\[[ListLayersResponseTypeDef](./type_defs.md#listlayersresponsetypedef)\].
 
 ## ListProvisionedConcurrencyConfigsPaginator
 
@@ -252,7 +252,7 @@ Arguments for `ListProvisionedConcurrencyConfigsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProvisionedConcurrencyConfigsPaginator.paginate` returns
-`Iterator`\[[ListProvisionedConcurrencyConfigsResponseTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsresponsetypedef)\].
+`_PageIterator`\[[ListProvisionedConcurrencyConfigsResponseTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsresponsetypedef)\].
 
 ## ListVersionsByFunctionPaginator
 
@@ -278,4 +278,4 @@ Arguments for `ListVersionsByFunctionPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVersionsByFunctionPaginator.paginate` returns
-`Iterator`\[[ListVersionsByFunctionResponseTypeDef](./type_defs.md#listversionsbyfunctionresponsetypedef)\].
+`_PageIterator`\[[ListVersionsByFunctionResponseTypeDef](./type_defs.md#listversionsbyfunctionresponsetypedef)\].

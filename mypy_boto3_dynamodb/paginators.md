@@ -40,7 +40,7 @@ Arguments for `ListBackupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBackupsPaginator.paginate` returns
-`Iterator`\[[ListBackupsOutputTypeDef](./type_defs.md#listbackupsoutputtypedef)\].
+`_PageIterator`\[[ListBackupsOutputTypeDef](./type_defs.md#listbackupsoutputtypedef)\].
 
 ## ListTablesPaginator
 
@@ -64,7 +64,7 @@ Arguments for `ListTablesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTablesPaginator.paginate` returns
-`Iterator`\[[ListTablesOutputTypeDef](./type_defs.md#listtablesoutputtypedef)\].
+`_PageIterator`\[[ListTablesOutputTypeDef](./type_defs.md#listtablesoutputtypedef)\].
 
 ## ListTagsOfResourcePaginator
 
@@ -90,7 +90,7 @@ Arguments for `ListTagsOfResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsOfResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsOfResourceOutputTypeDef](./type_defs.md#listtagsofresourceoutputtypedef)\].
+`_PageIterator`\[[ListTagsOfResourceOutputTypeDef](./type_defs.md#listtagsofresourceoutputtypedef)\].
 
 ## QueryPaginator
 
@@ -136,7 +136,7 @@ Arguments for `QueryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `QueryPaginator.paginate` returns
-`Iterator`\[[QueryOutputTypeDef](./type_defs.md#queryoutputtypedef)\].
+`_PageIterator`\[[QueryOutputTypeDef](./type_defs.md#queryoutputtypedef)\].
 
 ## ScanPaginator
 
@@ -180,4 +180,4 @@ Arguments for `ScanPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ScanPaginator.paginate` returns
-`Iterator`\[[ScanOutputTypeDef](./type_defs.md#scanoutputtypedef)\].
+`_PageIterator`\[[ScanOutputTypeDef](./type_defs.md#scanoutputtypedef)\].

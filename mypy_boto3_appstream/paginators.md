@@ -43,7 +43,7 @@ Arguments for `DescribeDirectoryConfigsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDirectoryConfigsPaginator.paginate` returns
-`Iterator`\[[DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef)\].
+`_PageIterator`\[[DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef)\].
 
 ## DescribeFleetsPaginator
 
@@ -69,7 +69,7 @@ Arguments for `DescribeFleetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeFleetsPaginator.paginate` returns
-`Iterator`\[[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)\].
+`_PageIterator`\[[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)\].
 
 ## DescribeImageBuildersPaginator
 
@@ -95,7 +95,7 @@ Arguments for `DescribeImageBuildersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImageBuildersPaginator.paginate` returns
-`Iterator`\[[DescribeImageBuildersResultTypeDef](./type_defs.md#describeimagebuildersresulttypedef)\].
+`_PageIterator`\[[DescribeImageBuildersResultTypeDef](./type_defs.md#describeimagebuildersresulttypedef)\].
 
 ## DescribeImagesPaginator
 
@@ -123,7 +123,7 @@ Arguments for `DescribeImagesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeImagesPaginator.paginate` returns
-`Iterator`\[[DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef)\].
+`_PageIterator`\[[DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef)\].
 
 ## DescribeSessionsPaginator
 
@@ -153,7 +153,7 @@ Arguments for `DescribeSessionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSessionsPaginator.paginate` returns
-`Iterator`\[[DescribeSessionsResultTypeDef](./type_defs.md#describesessionsresulttypedef)\].
+`_PageIterator`\[[DescribeSessionsResultTypeDef](./type_defs.md#describesessionsresulttypedef)\].
 
 ## DescribeStacksPaginator
 
@@ -179,7 +179,7 @@ Arguments for `DescribeStacksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeStacksPaginator.paginate` returns
-`Iterator`\[[DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef)\].
+`_PageIterator`\[[DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef)\].
 
 ## DescribeUserStackAssociationsPaginator
 
@@ -208,7 +208,7 @@ Arguments for `DescribeUserStackAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUserStackAssociationsPaginator.paginate` returns
-`Iterator`\[[DescribeUserStackAssociationsResultTypeDef](./type_defs.md#describeuserstackassociationsresulttypedef)\].
+`_PageIterator`\[[DescribeUserStackAssociationsResultTypeDef](./type_defs.md#describeuserstackassociationsresulttypedef)\].
 
 ## DescribeUsersPaginator
 
@@ -235,7 +235,7 @@ Arguments for `DescribeUsersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeUsersPaginator.paginate` returns
-`Iterator`\[[DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef)\].
+`_PageIterator`\[[DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef)\].
 
 ## ListAssociatedFleetsPaginator
 
@@ -261,7 +261,7 @@ Arguments for `ListAssociatedFleetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociatedFleetsPaginator.paginate` returns
-`Iterator`\[[ListAssociatedFleetsResultTypeDef](./type_defs.md#listassociatedfleetsresulttypedef)\].
+`_PageIterator`\[[ListAssociatedFleetsResultTypeDef](./type_defs.md#listassociatedfleetsresulttypedef)\].
 
 ## ListAssociatedStacksPaginator
 
@@ -287,4 +287,4 @@ Arguments for `ListAssociatedStacksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAssociatedStacksPaginator.paginate` returns
-`Iterator`\[[ListAssociatedStacksResultTypeDef](./type_defs.md#listassociatedstacksresulttypedef)\].
+`_PageIterator`\[[ListAssociatedStacksResultTypeDef](./type_defs.md#listassociatedstacksresulttypedef)\].

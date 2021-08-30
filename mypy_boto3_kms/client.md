@@ -159,7 +159,7 @@ Returns `bool`.
 
 ### cancel_key_deletion
 
-Cancels the deletion of a customer master key (CMK).
+Cancels the deletion of a KMS key.
 
 Type annotations for `boto3.client("kms").cancel_key_deletion` method.
 
@@ -180,7 +180,7 @@ Returns
 
 Connects or reconnects a
 `custom key store <https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store- overview.html>`\_\_
-to its associated AWS CloudHSM cluster.
+to its associated CloudHSM cluster.
 
 Type annotations for `boto3.client("kms").connect_custom_key_store` method.
 
@@ -198,7 +198,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_alias
 
-Creates a friendly name for a customer master key (CMK).
+Creates a friendly name for a KMS key.
 
 Type annotations for `boto3.client("kms").create_alias` method.
 
@@ -218,7 +218,7 @@ Keyword-only arguments:
 Creates a
 `custom key store <https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store- overview.html>`\_\_
 that is associated with an
-`AWS CloudHSM cluster <https://docs.aws.amazon.com/cloudhsm/latest/userguide/clusters.html>`\_\_
+`CloudHSM cluster <https://docs.aws.amazon.com/cloudhsm/latest/userguide/clusters.html>`\_\_
 that you own and manage.
 
 Type annotations for `boto3.client("kms").create_custom_key_store` method.
@@ -241,7 +241,7 @@ Returns
 
 ### create_grant
 
-Adds a grant to a customer master key (CMK).
+Adds a grant to a KMS key.
 
 Type annotations for `boto3.client("kms").create_grant` method.
 
@@ -269,8 +269,8 @@ Returns
 ### create_key
 
 Creates a unique customer managed
-`customer master key <https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#master- keys>`\_\_
-(CMK) in your AWS account and Region.
+`KMS key <https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#kms- keys>`\_\_
+in your Amazon Web Services account and Region.
 
 Type annotations for `boto3.client("kms").create_key` method.
 
@@ -287,6 +287,7 @@ Keyword-only arguments:
 - `KeyUsage`: [KeyUsageTypeType](./literals.md#keyusagetypetype)
 - `CustomerMasterKeySpec`:
   [CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype)
+- `KeySpec`: [KeySpecType](./literals.md#keyspectype)
 - `Origin`: [OriginTypeType](./literals.md#origintypetype)
 - `CustomKeyStoreId`: `str`
 - `BypassPolicyLockoutSafetyCheck`: `bool`
@@ -297,10 +298,10 @@ Returns [CreateKeyResponseTypeDef](./type_defs.md#createkeyresponsetypedef).
 
 ### decrypt
 
-Decrypts ciphertext that was encrypted by a AWS KMS customer master key (CMK)
-using any of the following operations * Encrypt * GenerateDataKey \*
-GenerateDataKeyPair * GenerateDataKeyWithoutPlaintext \*
-GenerateDataKeyPairWithoutPlaintext You can use this o...
+Decrypts ciphertext that was encrypted by a KMS key using any of the following
+operations * Encrypt * GenerateDataKey * GenerateDataKeyPair \*
+GenerateDataKeyWithoutPlaintext * GenerateDataKeyPairWithoutPlaintext You can
+use this operation to decrypt cipher...
 
 Type annotations for `boto3.client("kms").decrypt` method.
 
@@ -399,7 +400,7 @@ Returns
 
 ### describe_key
 
-Provides detailed information about a customer master key (CMK).
+Provides detailed information about a KMS key.
 
 Type annotations for `boto3.client("kms").describe_key` method.
 
@@ -419,7 +420,7 @@ Returns
 
 ### disable_key
 
-Sets the state of a customer master key (CMK) to disabled.
+Sets the state of a KMS key to disabled.
 
 Type annotations for `boto3.client("kms").disable_key` method.
 
@@ -437,7 +438,7 @@ Keyword-only arguments:
 
 Disables
 `automatic rotation of the key material <https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html>`\_\_
-for the specified symmetric customer master key (CMK).
+for the specified symmetric KMS key.
 
 Type annotations for `boto3.client("kms").disable_key_rotation` method.
 
@@ -455,7 +456,7 @@ Keyword-only arguments:
 
 Disconnects the
 `custom key store <https://docs.aws.amazon.com/kms/latest/developerguide/custom-key-store- overview.html>`\_\_
-from its associated AWS CloudHSM cluster.
+from its associated CloudHSM cluster.
 
 Type annotations for `boto3.client("kms").disconnect_custom_key_store` method.
 
@@ -473,7 +474,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### enable_key
 
-Sets the key state of a customer master key (CMK) to enabled.
+Sets the key state of a KMS key to enabled.
 
 Type annotations for `boto3.client("kms").enable_key` method.
 
@@ -491,7 +492,7 @@ Keyword-only arguments:
 
 Enables
 `automatic rotation of the key material <https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html>`\_\_
-for the specified symmetric customer master key (CMK).
+for the specified symmetric KMS key.
 
 Type annotations for `boto3.client("kms").enable_key_rotation` method.
 
@@ -507,7 +508,7 @@ Keyword-only arguments:
 
 ### encrypt
 
-Encrypts plaintext into ciphertext by using a customer master key (CMK).
+Encrypts plaintext into ciphertext by using a KMS key.
 
 Type annotations for `boto3.client("kms").encrypt` method.
 
@@ -663,7 +664,7 @@ Returns
 
 ### get_key_policy
 
-Gets a key policy attached to the specified customer master key (CMK).
+Gets a key policy attached to the specified KMS key.
 
 Type annotations for `boto3.client("kms").get_key_policy` method.
 
@@ -685,7 +686,7 @@ Returns
 
 Gets a Boolean value that indicates whether
 `automatic rotation of the key material <https://docs.aws.amazon.com/kms/latest/developerguide/rotate- keys.html>`\_\_
-is enabled for the specified customer master key (CMK).
+is enabled for the specified KMS key.
 
 Type annotations for `boto3.client("kms").get_key_rotation_status` method.
 
@@ -705,7 +706,7 @@ Returns
 ### get_parameters_for_import
 
 Returns the items you need to import key material into a symmetric, customer
-managed customer master key (CMK).
+managed KMS key.
 
 Type annotations for `boto3.client("kms").get_parameters_for_import` method.
 
@@ -728,7 +729,7 @@ Returns
 
 ### get_public_key
 
-Returns the public key of an asymmetric CMK.
+Returns the public key of an asymmetric KMS key.
 
 Type annotations for `boto3.client("kms").get_public_key` method.
 
@@ -748,8 +749,8 @@ Returns
 
 ### import_key_material
 
-Imports key material into an existing symmetric AWS KMS customer master key
-(CMK) that was created without key material.
+Imports key material into an existing symmetric KMS KMS key that was created
+without key material.
 
 Type annotations for `boto3.client("kms").import_key_material` method.
 
@@ -774,7 +775,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### list_aliases
 
-Gets a list of aliases in the caller's AWS account and region.
+Gets a list of aliases in the caller's Amazon Web Services account and region.
 
 Type annotations for `boto3.client("kms").list_aliases` method.
 
@@ -795,7 +796,7 @@ Returns
 
 ### list_grants
 
-Gets a list of all grants for the specified customer master key (CMK).
+Gets a list of all grants for the specified KMS key.
 
 Type annotations for `boto3.client("kms").list_grants` method.
 
@@ -817,8 +818,7 @@ Returns [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef).
 
 ### list_key_policies
 
-Gets the names of the key policies that are attached to a customer master key
-(CMK).
+Gets the names of the key policies that are attached to a KMS key.
 
 Type annotations for `boto3.client("kms").list_key_policies` method.
 
@@ -839,7 +839,7 @@ Returns
 
 ### list_keys
 
-Gets a list of all customer master keys (CMKs) in the caller's AWS account and
+Gets a list of all KMS keys in the caller's Amazon Web Services account and
 Region.
 
 Type annotations for `boto3.client("kms").list_keys` method.
@@ -859,7 +859,7 @@ Returns [ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef).
 
 ### list_resource_tags
 
-Returns all tags on the specified customer master key (CMK).
+Returns all tags on the specified KMS key.
 
 Type annotations for `boto3.client("kms").list_resource_tags` method.
 
@@ -880,8 +880,8 @@ Returns
 
 ### list_retirable_grants
 
-Returns information about all grants in the AWS account and Region that have
-the specified retiring principal.
+Returns information about all grants in the Amazon Web Services account and
+Region that have the specified retiring principal.
 
 Type annotations for `boto3.client("kms").list_retirable_grants` method.
 
@@ -901,7 +901,7 @@ Returns [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef).
 
 ### put_key_policy
 
-Attaches a key policy to the specified customer master key (CMK).
+Attaches a key policy to the specified KMS key.
 
 Type annotations for `boto3.client("kms").put_key_policy` method.
 
@@ -920,7 +920,7 @@ Keyword-only arguments:
 
 ### re_encrypt
 
-Decrypts ciphertext and then reencrypts it entirely within AWS KMS.
+Decrypts ciphertext and then reencrypts it entirely within KMS.
 
 Type annotations for `boto3.client("kms").re_encrypt` method.
 
@@ -1007,7 +1007,7 @@ Keyword-only arguments:
 
 ### schedule_key_deletion
 
-Schedules the deletion of a customer master key (CMK).
+Schedules the deletion of a KMS key.
 
 Type annotations for `boto3.client("kms").schedule_key_deletion` method.
 
@@ -1029,7 +1029,7 @@ Returns
 
 Creates a
 `digital signature <https://en.wikipedia.org/wiki/Digital_signature>`\_\_ for a
-message or message digest by using the private key in an asymmetric CMK.
+message or message digest by using the private key in an asymmetric KMS key.
 
 Type annotations for `boto3.client("kms").sign` method.
 
@@ -1054,7 +1054,7 @@ Returns [SignResponseTypeDef](./type_defs.md#signresponsetypedef).
 ### tag_resource
 
 Adds or edits tags on a
-`customer managed CMK <https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer- cmk>`\_\_
+`customer managed key <https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer- cmk>`\_\_
 .
 
 Type annotations for `boto3.client("kms").tag_resource` method.
@@ -1073,7 +1073,7 @@ Keyword-only arguments:
 ### untag_resource
 
 Deletes tags from a
-`customer managed CMK <https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer- cmk>`\_\_.
+`customer managed key <https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer- cmk>`\_\_.
 
 Type annotations for `boto3.client("kms").untag_resource` method.
 
@@ -1090,8 +1090,7 @@ Keyword-only arguments:
 
 ### update_alias
 
-Associates an existing AWS KMS alias with a different customer master key
-(CMK).
+Associates an existing KMS alias with a different KMS key.
 
 Type annotations for `boto3.client("kms").update_alias` method.
 
@@ -1129,7 +1128,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_key_description
 
-Updates the description of a customer master key (CMK).
+Updates the description of a KMS key.
 
 Type annotations for `boto3.client("kms").update_key_description` method.
 

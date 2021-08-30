@@ -133,6 +133,8 @@ type annotations stubs module
   - [ResourceToImportTypeDef](#resourcetoimporttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RollbackConfigurationTypeDef](#rollbackconfigurationtypedef)
+  - [RollbackStackInputRequestTypeDef](#rollbackstackinputrequesttypedef)
+  - [RollbackStackOutputTypeDef](#rollbackstackoutputtypedef)
   - [RollbackTriggerTypeDef](#rollbacktriggertypedef)
   - [ServiceResourceEventRequestTypeDef](#serviceresourceeventrequesttypedef)
   - [ServiceResourceStackRequestTypeDef](#serviceresourcestackrequesttypedef)
@@ -1221,6 +1223,7 @@ Optional fields:
 
 - `StackName`: `str`
 - `ClientRequestToken`: `str`
+- `DisableRollback`: `bool`
 
 ## ExportTypeDef
 
@@ -2012,6 +2015,33 @@ Optional fields:
   `List`\[[RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)\]
 - `MonitoringTimeInMinutes`: `int`
 
+## RollbackStackInputRequestTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import RollbackStackInputRequestTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `RoleARN`: `str`
+- `ClientRequestToken`: `str`
+
+## RollbackStackOutputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import RollbackStackOutputTypeDef
+```
+
+Required fields:
+
+- `StackId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## RollbackTriggerTypeDef
 
 ```python
@@ -2761,6 +2791,7 @@ Optional fields:
 - `StackPolicyURL`: `str`
 - `NotificationARNs`: `List`\[`str`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DisableRollback`: `bool`
 - `ClientRequestToken`: `str`
 
 ## UpdateStackInputStackTypeDef
@@ -2786,6 +2817,7 @@ Optional fields:
 - `StackPolicyURL`: `str`
 - `NotificationARNs`: `List`\[`str`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DisableRollback`: `bool`
 - `ClientRequestToken`: `str`
 
 ## UpdateStackInstancesInputRequestTypeDef

@@ -37,7 +37,7 @@ Arguments for `ListHealthChecksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHealthChecksPaginator.paginate` returns
-`Iterator`\[[ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef)\].
+`_PageIterator`\[[ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef)\].
 
 ## ListHostedZonesPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListHostedZonesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListHostedZonesPaginator.paginate` returns
-`Iterator`\[[ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef)\].
+`_PageIterator`\[[ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef)\].
 
 ## ListQueryLoggingConfigsPaginator
 
@@ -89,7 +89,7 @@ Arguments for `ListQueryLoggingConfigsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListQueryLoggingConfigsPaginator.paginate` returns
-`Iterator`\[[ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef)\].
+`_PageIterator`\[[ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef)\].
 
 ## ListResourceRecordSetsPaginator
 
@@ -115,7 +115,7 @@ Arguments for `ListResourceRecordSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceRecordSetsPaginator.paginate` returns
-`Iterator`\[[ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef)\].
+`_PageIterator`\[[ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef)\].
 
 ## ListVPCAssociationAuthorizationsPaginator
 
@@ -142,4 +142,4 @@ Arguments for `ListVPCAssociationAuthorizationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVPCAssociationAuthorizationsPaginator.paginate` returns
-`Iterator`\[[ListVPCAssociationAuthorizationsResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponsetypedef)\].
+`_PageIterator`\[[ListVPCAssociationAuthorizationsResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponsetypedef)\].

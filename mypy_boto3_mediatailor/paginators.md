@@ -40,7 +40,7 @@ Arguments for `GetChannelSchedulePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetChannelSchedulePaginator.paginate` returns
-`Iterator`\[[GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef)\].
+`_PageIterator`\[[GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef)\].
 
 ## ListAlertsPaginator
 
@@ -66,7 +66,7 @@ Arguments for `ListAlertsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAlertsPaginator.paginate` returns
-`Iterator`\[[ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef)\].
+`_PageIterator`\[[ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef)\].
 
 ## ListChannelsPaginator
 
@@ -91,7 +91,7 @@ Arguments for `ListChannelsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListChannelsPaginator.paginate` returns
-`Iterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
+`_PageIterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
 
 ## ListPlaybackConfigurationsPaginator
 
@@ -116,7 +116,7 @@ Arguments for `ListPlaybackConfigurationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPlaybackConfigurationsPaginator.paginate` returns
-`Iterator`\[[ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef)\].
+`_PageIterator`\[[ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef)\].
 
 ## ListSourceLocationsPaginator
 
@@ -141,7 +141,7 @@ Arguments for `ListSourceLocationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSourceLocationsPaginator.paginate` returns
-`Iterator`\[[ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef)\].
+`_PageIterator`\[[ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef)\].
 
 ## ListVodSourcesPaginator
 
@@ -167,4 +167,4 @@ Arguments for `ListVodSourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListVodSourcesPaginator.paginate` returns
-`Iterator`\[[ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef)\].
+`_PageIterator`\[[ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef)\].

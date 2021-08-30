@@ -249,7 +249,7 @@ Boto3 documentation:
 Arguments mapping described in
 [ClientCopyRequestTypeDef](./type_defs.md#clientcopyrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
   *(required)*
@@ -737,7 +737,7 @@ Boto3 documentation:
 Arguments mapping described in
 [ClientDownloadFileRequestTypeDef](./type_defs.md#clientdownloadfilerequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
@@ -758,7 +758,7 @@ Boto3 documentation:
 Arguments mapping described in
 [ClientDownloadFileobjRequestTypeDef](./type_defs.md#clientdownloadfileobjrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
@@ -779,7 +779,7 @@ Boto3 documentation:
 Arguments mapping described in
 [ClientGeneratePresignedPostRequestTypeDef](./type_defs.md#clientgeneratepresignedpostrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Bucket`: `str` *(required)*
 - `Key`: `str` *(required)*
@@ -2459,7 +2459,7 @@ Boto3 documentation:
 Arguments mapping described in
 [ClientUploadFileRequestTypeDef](./type_defs.md#clientuploadfilerequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Filename`: `str` *(required)*
 - `Bucket`: `str` *(required)*
@@ -2480,7 +2480,7 @@ Boto3 documentation:
 Arguments mapping described in
 [ClientUploadFileobjRequestTypeDef](./type_defs.md#clientuploadfileobjrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Fileobj`: `IO`\[`Any`\] *(required)*
 - `Bucket`: `str` *(required)*

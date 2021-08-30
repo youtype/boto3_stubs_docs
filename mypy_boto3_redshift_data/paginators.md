@@ -45,7 +45,7 @@ Arguments for `DescribeTablePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeTablePaginator.paginate` returns
-`Iterator`\[[DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef)\].
+`_PageIterator`\[[DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef)\].
 
 ## GetStatementResultPaginator
 
@@ -71,7 +71,7 @@ Arguments for `GetStatementResultPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetStatementResultPaginator.paginate` returns
-`Iterator`\[[GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef)\].
+`_PageIterator`\[[GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef)\].
 
 ## ListDatabasesPaginator
 
@@ -100,7 +100,7 @@ Arguments for `ListDatabasesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDatabasesPaginator.paginate` returns
-`Iterator`\[[ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef)\].
+`_PageIterator`\[[ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef)\].
 
 ## ListSchemasPaginator
 
@@ -131,7 +131,7 @@ Arguments for `ListSchemasPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSchemasPaginator.paginate` returns
-`Iterator`\[[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)\].
+`_PageIterator`\[[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)\].
 
 ## ListStatementsPaginator
 
@@ -159,7 +159,7 @@ Arguments for `ListStatementsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStatementsPaginator.paginate` returns
-`Iterator`\[[ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef)\].
+`_PageIterator`\[[ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef)\].
 
 ## ListTablesPaginator
 
@@ -191,4 +191,4 @@ Arguments for `ListTablesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTablesPaginator.paginate` returns
-`Iterator`\[[ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef)\].
+`_PageIterator`\[[ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef)\].

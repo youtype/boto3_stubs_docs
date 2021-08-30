@@ -2080,7 +2080,7 @@ Boto3 documentation:
 Arguments mapping described in
 [InstanceDeleteTagsRequestTypeDef](./type_defs.md#instancedeletetagsrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`

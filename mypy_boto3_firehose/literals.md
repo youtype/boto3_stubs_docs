@@ -243,9 +243,13 @@ Values:
 
 - `BufferIntervalInSeconds`
 - `BufferSizeInMBs`
+- `Delimiter`
+- `JsonParsingEngine`
 - `LambdaArn`
+- `MetadataExtractionQuery`
 - `NumberOfRetries`
 - `RoleArn`
+- `SubRecordType`
 
 ## ProcessorTypeType
 
@@ -255,7 +259,10 @@ from mypy_boto3_firehose.literals import ProcessorTypeType
 
 Values:
 
+- `AppendDelimiterToRecord`
 - `Lambda`
+- `MetadataExtraction`
+- `RecordDeAggregation`
 
 ## RedshiftS3BackupModeType
 

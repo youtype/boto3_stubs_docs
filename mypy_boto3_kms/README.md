@@ -159,6 +159,7 @@ from mypy_boto3_kms.literals import AlgorithmSpecType, ...
 - [ExpirationModelTypeType](./literals.md#expirationmodeltypetype)
 - [GrantOperationType](./literals.md#grantoperationtype)
 - [KeyManagerTypeType](./literals.md#keymanagertypetype)
+- [KeySpecType](./literals.md#keyspectype)
 - [KeyStateType](./literals.md#keystatetype)
 - [KeyUsageTypeType](./literals.md#keyusagetypetype)
 - [ListAliasesPaginatorName](./literals.md#listaliasespaginatorname)

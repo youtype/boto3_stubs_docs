@@ -35,4 +35,4 @@ Arguments for `DescribeAcceleratorsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeAcceleratorsPaginator.paginate` returns
-`Iterator`\[[DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef)\].
+`_PageIterator`\[[DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef)\].

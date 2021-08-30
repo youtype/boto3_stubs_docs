@@ -237,7 +237,7 @@ Boto3 documentation:
 Arguments mapping described in
 [TableBatchWriterRequestTypeDef](./type_defs.md#tablebatchwriterrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `overwrite_by_pkeys`: `List`\[`str`\]
 

@@ -2451,7 +2451,7 @@ Boto3 documentation:
 Arguments mapping described in
 [ClientGenerateDbAuthTokenRequestTypeDef](./type_defs.md#clientgeneratedbauthtokenrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `DBHostname`: `str` *(required)*
 - `Port`: `int` *(required)*

@@ -42,7 +42,7 @@ Arguments for `DescribeDestinationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeDestinationsPaginator.paginate` returns
-`Iterator`\[[DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef)\].
+`_PageIterator`\[[DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef)\].
 
 ## DescribeExportTasksPaginator
 
@@ -70,7 +70,7 @@ Arguments for `DescribeExportTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeExportTasksPaginator.paginate` returns
-`Iterator`\[[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef)\].
+`_PageIterator`\[[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef)\].
 
 ## DescribeLogGroupsPaginator
 
@@ -96,7 +96,7 @@ Arguments for `DescribeLogGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLogGroupsPaginator.paginate` returns
-`Iterator`\[[DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef)\].
+`_PageIterator`\[[DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef)\].
 
 ## DescribeLogStreamsPaginator
 
@@ -125,7 +125,7 @@ Arguments for `DescribeLogStreamsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeLogStreamsPaginator.paginate` returns
-`Iterator`\[[DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef)\].
+`_PageIterator`\[[DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef)\].
 
 ## DescribeMetricFiltersPaginator
 
@@ -154,7 +154,7 @@ Arguments for `DescribeMetricFiltersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeMetricFiltersPaginator.paginate` returns
-`Iterator`\[[DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef)\].
+`_PageIterator`\[[DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef)\].
 
 ## DescribeQueriesPaginator
 
@@ -180,7 +180,7 @@ Arguments for `DescribeQueriesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeQueriesPaginator.paginate` returns
-`Iterator`\[[DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef)\].
+`_PageIterator`\[[DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef)\].
 
 ## DescribeResourcePoliciesPaginator
 
@@ -205,7 +205,7 @@ Arguments for `DescribeResourcePoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeResourcePoliciesPaginator.paginate` returns
-`Iterator`\[[DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef)\].
+`_PageIterator`\[[DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef)\].
 
 ## DescribeSubscriptionFiltersPaginator
 
@@ -232,7 +232,7 @@ Arguments for `DescribeSubscriptionFiltersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeSubscriptionFiltersPaginator.paginate` returns
-`Iterator`\[[DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef)\].
+`_PageIterator`\[[DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef)\].
 
 ## FilterLogEventsPaginator
 
@@ -263,4 +263,4 @@ Arguments for `FilterLogEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `FilterLogEventsPaginator.paginate` returns
-`Iterator`\[[FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef)\].
+`_PageIterator`\[[FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef)\].

@@ -447,6 +447,7 @@ Keyword-only arguments:
 - `StackPolicyURL`: `str`
 - `NotificationARNs`: `List`\[`str`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DisableRollback`: `bool`
 - `ClientRequestToken`: `str`
 
 Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).

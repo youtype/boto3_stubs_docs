@@ -38,7 +38,7 @@ Arguments for `ListDeviceResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDeviceResourcesPaginator.paginate` returns
-`Iterator`\[[ListDeviceResourcesOutputTypeDef](./type_defs.md#listdeviceresourcesoutputtypedef)\].
+`_PageIterator`\[[ListDeviceResourcesOutputTypeDef](./type_defs.md#listdeviceresourcesoutputtypedef)\].
 
 ## ListDevicesPaginator
 
@@ -64,7 +64,7 @@ Arguments for `ListDevicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDevicesPaginator.paginate` returns
-`Iterator`\[[ListDevicesOutputTypeDef](./type_defs.md#listdevicesoutputtypedef)\].
+`_PageIterator`\[[ListDevicesOutputTypeDef](./type_defs.md#listdevicesoutputtypedef)\].
 
 ## ListExecutionsPaginator
 
@@ -91,7 +91,7 @@ Arguments for `ListExecutionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListExecutionsPaginator.paginate` returns
-`Iterator`\[[ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef)\].
+`_PageIterator`\[[ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef)\].
 
 ## ListTasksPaginator
 
@@ -117,4 +117,4 @@ Arguments for `ListTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTasksPaginator.paginate` returns
-`Iterator`\[[ListTasksOutputTypeDef](./type_defs.md#listtasksoutputtypedef)\].
+`_PageIterator`\[[ListTasksOutputTypeDef](./type_defs.md#listtasksoutputtypedef)\].

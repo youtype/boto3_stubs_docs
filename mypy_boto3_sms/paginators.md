@@ -36,7 +36,7 @@ Arguments for `GetConnectorsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetConnectorsPaginator.paginate` returns
-`Iterator`\[[GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef)\].
+`_PageIterator`\[[GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef)\].
 
 ## GetReplicationJobsPaginator
 
@@ -62,7 +62,7 @@ Arguments for `GetReplicationJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetReplicationJobsPaginator.paginate` returns
-`Iterator`\[[GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef)\].
+`_PageIterator`\[[GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef)\].
 
 ## GetReplicationRunsPaginator
 
@@ -88,7 +88,7 @@ Arguments for `GetReplicationRunsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetReplicationRunsPaginator.paginate` returns
-`Iterator`\[[GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef)\].
+`_PageIterator`\[[GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef)\].
 
 ## GetServersPaginator
 
@@ -114,7 +114,7 @@ Arguments for `GetServersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetServersPaginator.paginate` returns
-`Iterator`\[[GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef)\].
+`_PageIterator`\[[GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef)\].
 
 ## ListAppsPaginator
 
@@ -139,4 +139,4 @@ Arguments for `ListAppsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppsPaginator.paginate` returns
-`Iterator`\[[ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef)\].
+`_PageIterator`\[[ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef)\].

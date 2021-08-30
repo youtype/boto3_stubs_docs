@@ -39,7 +39,7 @@ Arguments for `GetEnabledStandardsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetEnabledStandardsPaginator.paginate` returns
-`Iterator`\[[GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef)\].
+`_PageIterator`\[[GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef)\].
 
 ## GetFindingsPaginator
 
@@ -68,7 +68,7 @@ Arguments for `GetFindingsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetFindingsPaginator.paginate` returns
-`Iterator`\[[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef)\].
+`_PageIterator`\[[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef)\].
 
 ## GetInsightsPaginator
 
@@ -94,7 +94,7 @@ Arguments for `GetInsightsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetInsightsPaginator.paginate` returns
-`Iterator`\[[GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef)\].
+`_PageIterator`\[[GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef)\].
 
 ## ListEnabledProductsForImportPaginator
 
@@ -119,7 +119,7 @@ Arguments for `ListEnabledProductsForImportPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEnabledProductsForImportPaginator.paginate` returns
-`Iterator`\[[ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef)\].
+`_PageIterator`\[[ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef)\].
 
 ## ListInvitationsPaginator
 
@@ -144,7 +144,7 @@ Arguments for `ListInvitationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListInvitationsPaginator.paginate` returns
-`Iterator`\[[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)\].
+`_PageIterator`\[[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)\].
 
 ## ListMembersPaginator
 
@@ -170,4 +170,4 @@ Arguments for `ListMembersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMembersPaginator.paginate` returns
-`Iterator`\[[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)\].
+`_PageIterator`\[[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)\].

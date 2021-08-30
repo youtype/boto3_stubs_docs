@@ -32,4 +32,4 @@ Arguments for `ListBrokersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListBrokersPaginator.paginate` returns
-`Iterator`\[[ListBrokersResponseTypeDef](./type_defs.md#listbrokersresponsetypedef)\].
+`_PageIterator`\[[ListBrokersResponseTypeDef](./type_defs.md#listbrokersresponsetypedef)\].

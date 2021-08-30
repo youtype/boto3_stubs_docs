@@ -22,6 +22,7 @@ type annotations stubs module
   - [DescribeDeliveryStreamOutputTypeDef](#describedeliverystreamoutputtypedef)
   - [DeserializerTypeDef](#deserializertypedef)
   - [DestinationDescriptionTypeDef](#destinationdescriptiontypedef)
+  - [DynamicPartitioningConfigurationTypeDef](#dynamicpartitioningconfigurationtypedef)
   - [ElasticsearchBufferingHintsTypeDef](#elasticsearchbufferinghintstypedef)
   - [ElasticsearchDestinationConfigurationTypeDef](#elasticsearchdestinationconfigurationtypedef)
   - [ElasticsearchDestinationDescriptionTypeDef](#elasticsearchdestinationdescriptiontypedef)
@@ -68,6 +69,7 @@ type annotations stubs module
   - [RedshiftDestinationUpdateTypeDef](#redshiftdestinationupdatetypedef)
   - [RedshiftRetryOptionsTypeDef](#redshiftretryoptionstypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RetryOptionsTypeDef](#retryoptionstypedef)
   - [S3DestinationConfigurationTypeDef](#s3destinationconfigurationtypedef)
   - [S3DestinationDescriptionTypeDef](#s3destinationdescriptiontypedef)
   - [S3DestinationUpdateTypeDef](#s3destinationupdatetypedef)
@@ -322,6 +324,17 @@ Optional fields:
 - `HttpEndpointDestinationDescription`:
   [HttpEndpointDestinationDescriptionTypeDef](./type_defs.md#httpendpointdestinationdescriptiontypedef)
 
+## DynamicPartitioningConfigurationTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import DynamicPartitioningConfigurationTypeDef
+```
+
+Optional fields:
+
+- `RetryOptions`: [RetryOptionsTypeDef](./type_defs.md#retryoptionstypedef)
+- `Enabled`: `bool`
+
 ## ElasticsearchBufferingHintsTypeDef
 
 ```python
@@ -475,6 +488,8 @@ Optional fields:
   [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
 - `DataFormatConversionConfiguration`:
   [DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef)
+- `DynamicPartitioningConfiguration`:
+  [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
 
 ## ExtendedS3DestinationDescriptionTypeDef
 
@@ -506,6 +521,8 @@ Optional fields:
   [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
 - `DataFormatConversionConfiguration`:
   [DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef)
+- `DynamicPartitioningConfiguration`:
+  [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
 
 ## ExtendedS3DestinationUpdateTypeDef
 
@@ -534,6 +551,8 @@ Optional fields:
   [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
 - `DataFormatConversionConfiguration`:
   [DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef)
+- `DynamicPartitioningConfiguration`:
+  [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
 
 ## FailureDescriptionTypeDef
 
@@ -893,8 +912,7 @@ from mypy_boto3_firehose.type_defs import ProcessorTypeDef
 
 Required fields:
 
-- `Type`: `Literal['Lambda']` (see
-  [ProcessorTypeType](./literals.md#processortypetype))
+- `Type`: [ProcessorTypeType](./literals.md#processortypetype)
 
 Optional fields:
 
@@ -1079,6 +1097,16 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
+
+## RetryOptionsTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import RetryOptionsTypeDef
+```
+
+Optional fields:
+
+- `DurationInSeconds`: `int`
 
 ## S3DestinationConfigurationTypeDef
 

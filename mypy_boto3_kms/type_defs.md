@@ -224,6 +224,7 @@ Optional fields:
 - `KeyUsage`: [KeyUsageTypeType](./literals.md#keyusagetypetype)
 - `CustomerMasterKeySpec`:
   [CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype)
+- `KeySpec`: [KeySpecType](./literals.md#keyspectype)
 - `Origin`: [OriginTypeType](./literals.md#origintypetype)
 - `CustomKeyStoreId`: `str`
 - `BypassPolicyLockoutSafetyCheck`: `bool`
@@ -706,6 +707,7 @@ Required fields:
 - `PublicKey`: `bytes`
 - `CustomerMasterKeySpec`:
   [CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype)
+- `KeySpec`: [KeySpecType](./literals.md#keyspectype)
 - `KeyUsage`: [KeyUsageTypeType](./literals.md#keyusagetypetype)
 - `EncryptionAlgorithms`:
   `List`\[[EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)\]
@@ -803,6 +805,7 @@ Optional fields:
 - `KeyManager`: [KeyManagerTypeType](./literals.md#keymanagertypetype)
 - `CustomerMasterKeySpec`:
   [CustomerMasterKeySpecType](./literals.md#customermasterkeyspectype)
+- `KeySpec`: [KeySpecType](./literals.md#keyspectype)
 - `EncryptionAlgorithms`:
   `List`\[[EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)\]
 - `SigningAlgorithms`:

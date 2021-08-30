@@ -67,6 +67,7 @@ type annotations stubs module
     - [record_handler_progress](#record_handler_progress)
     - [register_publisher](#register_publisher)
     - [register_type](#register_type)
+    - [rollback_stack](#rollback_stack)
     - [set_stack_policy](#set_stack_policy)
     - [set_type_configuration](#set_type_configuration)
     - [set_type_default_version](#set_type_default_version)
@@ -629,7 +630,7 @@ Returns
 ### describe_stack_instance
 
 Returns the stack instance that's associated with the specified stack set,
-account, and Region.
+Amazon Web Services account, and Region.
 
 Type annotations for `boto3.client("cloudformation").describe_stack_instance`
 method.
@@ -938,6 +939,7 @@ Keyword-only arguments:
 - `ChangeSetName`: `str` *(required)*
 - `StackName`: `str`
 - `ClientRequestToken`: `str`
+- `DisableRollback`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1418,6 +1420,28 @@ Keyword-only arguments:
 
 Returns [RegisterTypeOutputTypeDef](./type_defs.md#registertypeoutputtypedef).
 
+### rollback_stack
+
+When specifying `RollbackStack` , you preserve the state of previously
+provisioned resources when an operation fails.
+
+Type annotations for `boto3.client("cloudformation").rollback_stack` method.
+
+Boto3 documentation:
+[CloudFormation.Client.rollback_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.rollback_stack)
+
+Arguments mapping described in
+[RollbackStackInputRequestTypeDef](./type_defs.md#rollbackstackinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `StackName`: `str` *(required)*
+- `RoleARN`: `str`
+- `ClientRequestToken`: `str`
+
+Returns
+[RollbackStackOutputTypeDef](./type_defs.md#rollbackstackoutputtypedef).
+
 ### set_stack_policy
 
 Sets a stack policy for a specified stack.
@@ -1578,6 +1602,7 @@ Keyword-only arguments:
 - `StackPolicyURL`: `str`
 - `NotificationARNs`: `List`\[`str`\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DisableRollback`: `bool`
 - `ClientRequestToken`: `str`
 
 Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).

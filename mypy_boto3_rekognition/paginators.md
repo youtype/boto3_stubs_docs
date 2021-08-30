@@ -39,7 +39,7 @@ Arguments for `DescribeProjectVersionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeProjectVersionsPaginator.paginate` returns
-`Iterator`\[[DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef)\].
+`_PageIterator`\[[DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef)\].
 
 ## DescribeProjectsPaginator
 
@@ -64,7 +64,7 @@ Arguments for `DescribeProjectsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeProjectsPaginator.paginate` returns
-`Iterator`\[[DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef)\].
+`_PageIterator`\[[DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef)\].
 
 ## ListCollectionsPaginator
 
@@ -89,7 +89,7 @@ Arguments for `ListCollectionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCollectionsPaginator.paginate` returns
-`Iterator`\[[ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef)\].
+`_PageIterator`\[[ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef)\].
 
 ## ListFacesPaginator
 
@@ -114,7 +114,7 @@ Arguments for `ListFacesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFacesPaginator.paginate` returns
-`Iterator`\[[ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef)\].
+`_PageIterator`\[[ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef)\].
 
 ## ListStreamProcessorsPaginator
 
@@ -139,4 +139,4 @@ Arguments for `ListStreamProcessorsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListStreamProcessorsPaginator.paginate` returns
-`Iterator`\[[ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef)\].
+`_PageIterator`\[[ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef)\].

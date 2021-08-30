@@ -18,6 +18,7 @@ type annotations stubs module
   - [ExpirationModelTypeType](#expirationmodeltypetype)
   - [GrantOperationType](#grantoperationtype)
   - [KeyManagerTypeType](#keymanagertypetype)
+  - [KeySpecType](#keyspectype)
   - [KeyStateType](#keystatetype)
   - [KeyUsageTypeType](#keyusagetypetype)
   - [ListAliasesPaginatorName](#listaliasespaginatorname)
@@ -174,6 +175,23 @@ Values:
 
 - `AWS`
 - `CUSTOMER`
+
+## KeySpecType
+
+```python
+from mypy_boto3_kms.literals import KeySpecType
+```
+
+Values:
+
+- `ECC_NIST_P256`
+- `ECC_NIST_P384`
+- `ECC_NIST_P521`
+- `ECC_SECG_P256K1`
+- `RSA_2048`
+- `RSA_3072`
+- `RSA_4096`
+- `SYMMETRIC_DEFAULT`
 
 ## KeyStateType
 

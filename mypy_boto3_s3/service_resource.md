@@ -749,7 +749,7 @@ Boto3 documentation:
 Arguments mapping described in
 [BucketCopyRequestTypeDef](./type_defs.md#bucketcopyrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
   *(required)*
@@ -838,7 +838,7 @@ Boto3 documentation:
 Arguments mapping described in
 [BucketDownloadFileRequestTypeDef](./type_defs.md#bucketdownloadfilerequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Key`: `str` *(required)*
 - `Filename`: `str` *(required)*
@@ -858,7 +858,7 @@ Boto3 documentation:
 Arguments mapping described in
 [BucketDownloadFileobjRequestTypeDef](./type_defs.md#bucketdownloadfileobjrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Key`: `str` *(required)*
 - `Fileobj`: `IO`\[`Any`\] *(required)*
@@ -949,7 +949,7 @@ Boto3 documentation:
 Arguments mapping described in
 [BucketUploadFileRequestTypeDef](./type_defs.md#bucketuploadfilerequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Filename`: `str` *(required)*
 - `Key`: `str` *(required)*
@@ -969,7 +969,7 @@ Boto3 documentation:
 Arguments mapping described in
 [BucketUploadFileobjRequestTypeDef](./type_defs.md#bucketuploadfileobjrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Fileobj`: `IO`\[`Any`\] *(required)*
 - `Key`: `str` *(required)*
@@ -2436,7 +2436,7 @@ Boto3 documentation:
 Arguments mapping described in
 [ObjectCopyRequestTypeDef](./type_defs.md#objectcopyrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
   *(required)*
@@ -2541,7 +2541,7 @@ Boto3 documentation:
 Arguments mapping described in
 [ObjectDownloadFileRequestTypeDef](./type_defs.md#objectdownloadfilerequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Filename`: `str` *(required)*
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]
@@ -2560,7 +2560,7 @@ Boto3 documentation:
 Arguments mapping described in
 [ObjectDownloadFileobjRequestTypeDef](./type_defs.md#objectdownloadfileobjrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Fileobj`: `IO`\[`Any`\] *(required)*
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]
@@ -2768,7 +2768,7 @@ Boto3 documentation:
 Arguments mapping described in
 [ObjectUploadFileRequestTypeDef](./type_defs.md#objectuploadfilerequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Filename`: `str` *(required)*
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]
@@ -2787,7 +2787,7 @@ Boto3 documentation:
 Arguments mapping described in
 [ObjectUploadFileobjRequestTypeDef](./type_defs.md#objectuploadfileobjrequesttypedef).
 
-Keyword-only arguments:
+Arguments:
 
 - `Fileobj`: `IO`\[`Any`\] *(required)*
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]

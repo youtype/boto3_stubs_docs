@@ -43,7 +43,7 @@ Arguments for `GetCellReadinessSummaryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCellReadinessSummaryPaginator.paginate` returns
-`Iterator`\[[GetCellReadinessSummaryResponseTypeDef](./type_defs.md#getcellreadinesssummaryresponsetypedef)\].
+`_PageIterator`\[[GetCellReadinessSummaryResponseTypeDef](./type_defs.md#getcellreadinesssummaryresponsetypedef)\].
 
 ## GetReadinessCheckResourceStatusPaginator
 
@@ -70,7 +70,7 @@ Arguments for `GetReadinessCheckResourceStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetReadinessCheckResourceStatusPaginator.paginate` returns
-`Iterator`\[[GetReadinessCheckResourceStatusResponseTypeDef](./type_defs.md#getreadinesscheckresourcestatusresponsetypedef)\].
+`_PageIterator`\[[GetReadinessCheckResourceStatusResponseTypeDef](./type_defs.md#getreadinesscheckresourcestatusresponsetypedef)\].
 
 ## GetReadinessCheckStatusPaginator
 
@@ -96,7 +96,7 @@ Arguments for `GetReadinessCheckStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetReadinessCheckStatusPaginator.paginate` returns
-`Iterator`\[[GetReadinessCheckStatusResponseTypeDef](./type_defs.md#getreadinesscheckstatusresponsetypedef)\].
+`_PageIterator`\[[GetReadinessCheckStatusResponseTypeDef](./type_defs.md#getreadinesscheckstatusresponsetypedef)\].
 
 ## GetRecoveryGroupReadinessSummaryPaginator
 
@@ -122,7 +122,7 @@ Arguments for `GetRecoveryGroupReadinessSummaryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRecoveryGroupReadinessSummaryPaginator.paginate` returns
-`Iterator`\[[GetRecoveryGroupReadinessSummaryResponseTypeDef](./type_defs.md#getrecoverygroupreadinesssummaryresponsetypedef)\].
+`_PageIterator`\[[GetRecoveryGroupReadinessSummaryResponseTypeDef](./type_defs.md#getrecoverygroupreadinesssummaryresponsetypedef)\].
 
 ## ListCellsPaginator
 
@@ -147,7 +147,7 @@ Arguments for `ListCellsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCellsPaginator.paginate` returns
-`Iterator`\[[ListCellsResponseTypeDef](./type_defs.md#listcellsresponsetypedef)\].
+`_PageIterator`\[[ListCellsResponseTypeDef](./type_defs.md#listcellsresponsetypedef)\].
 
 ## ListCrossAccountAuthorizationsPaginator
 
@@ -172,7 +172,7 @@ Arguments for `ListCrossAccountAuthorizationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCrossAccountAuthorizationsPaginator.paginate` returns
-`Iterator`\[[ListCrossAccountAuthorizationsResponseTypeDef](./type_defs.md#listcrossaccountauthorizationsresponsetypedef)\].
+`_PageIterator`\[[ListCrossAccountAuthorizationsResponseTypeDef](./type_defs.md#listcrossaccountauthorizationsresponsetypedef)\].
 
 ## ListReadinessChecksPaginator
 
@@ -197,7 +197,7 @@ Arguments for `ListReadinessChecksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReadinessChecksPaginator.paginate` returns
-`Iterator`\[[ListReadinessChecksResponseTypeDef](./type_defs.md#listreadinesschecksresponsetypedef)\].
+`_PageIterator`\[[ListReadinessChecksResponseTypeDef](./type_defs.md#listreadinesschecksresponsetypedef)\].
 
 ## ListRecoveryGroupsPaginator
 
@@ -222,7 +222,7 @@ Arguments for `ListRecoveryGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRecoveryGroupsPaginator.paginate` returns
-`Iterator`\[[ListRecoveryGroupsResponseTypeDef](./type_defs.md#listrecoverygroupsresponsetypedef)\].
+`_PageIterator`\[[ListRecoveryGroupsResponseTypeDef](./type_defs.md#listrecoverygroupsresponsetypedef)\].
 
 ## ListResourceSetsPaginator
 
@@ -247,7 +247,7 @@ Arguments for `ListResourceSetsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResourceSetsPaginator.paginate` returns
-`Iterator`\[[ListResourceSetsResponseTypeDef](./type_defs.md#listresourcesetsresponsetypedef)\].
+`_PageIterator`\[[ListResourceSetsResponseTypeDef](./type_defs.md#listresourcesetsresponsetypedef)\].
 
 ## ListRulesPaginator
 
@@ -273,4 +273,4 @@ Arguments for `ListRulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListRulesPaginator.paginate` returns
-`Iterator`\[[ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)\].
+`_PageIterator`\[[ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)\].

@@ -52,7 +52,7 @@ Arguments for `GetActiveNamesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetActiveNamesPaginator.paginate` returns
-`Iterator`\[[GetActiveNamesResultTypeDef](./type_defs.md#getactivenamesresulttypedef)\].
+`_PageIterator`\[[GetActiveNamesResultTypeDef](./type_defs.md#getactivenamesresulttypedef)\].
 
 ## GetBlueprintsPaginator
 
@@ -78,7 +78,7 @@ Arguments for `GetBlueprintsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBlueprintsPaginator.paginate` returns
-`Iterator`\[[GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef)\].
+`_PageIterator`\[[GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef)\].
 
 ## GetBundlesPaginator
 
@@ -103,7 +103,7 @@ Arguments for `GetBundlesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetBundlesPaginator.paginate` returns
-`Iterator`\[[GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef)\].
+`_PageIterator`\[[GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef)\].
 
 ## GetCloudFormationStackRecordsPaginator
 
@@ -128,7 +128,7 @@ Arguments for `GetCloudFormationStackRecordsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCloudFormationStackRecordsPaginator.paginate` returns
-`Iterator`\[[GetCloudFormationStackRecordsResultTypeDef](./type_defs.md#getcloudformationstackrecordsresulttypedef)\].
+`_PageIterator`\[[GetCloudFormationStackRecordsResultTypeDef](./type_defs.md#getcloudformationstackrecordsresulttypedef)\].
 
 ## GetDiskSnapshotsPaginator
 
@@ -153,7 +153,7 @@ Arguments for `GetDiskSnapshotsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDiskSnapshotsPaginator.paginate` returns
-`Iterator`\[[GetDiskSnapshotsResultTypeDef](./type_defs.md#getdisksnapshotsresulttypedef)\].
+`_PageIterator`\[[GetDiskSnapshotsResultTypeDef](./type_defs.md#getdisksnapshotsresulttypedef)\].
 
 ## GetDisksPaginator
 
@@ -177,7 +177,7 @@ Arguments for `GetDisksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDisksPaginator.paginate` returns
-`Iterator`\[[GetDisksResultTypeDef](./type_defs.md#getdisksresulttypedef)\].
+`_PageIterator`\[[GetDisksResultTypeDef](./type_defs.md#getdisksresulttypedef)\].
 
 ## GetDomainsPaginator
 
@@ -201,7 +201,7 @@ Arguments for `GetDomainsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDomainsPaginator.paginate` returns
-`Iterator`\[[GetDomainsResultTypeDef](./type_defs.md#getdomainsresulttypedef)\].
+`_PageIterator`\[[GetDomainsResultTypeDef](./type_defs.md#getdomainsresulttypedef)\].
 
 ## GetExportSnapshotRecordsPaginator
 
@@ -226,7 +226,7 @@ Arguments for `GetExportSnapshotRecordsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetExportSnapshotRecordsPaginator.paginate` returns
-`Iterator`\[[GetExportSnapshotRecordsResultTypeDef](./type_defs.md#getexportsnapshotrecordsresulttypedef)\].
+`_PageIterator`\[[GetExportSnapshotRecordsResultTypeDef](./type_defs.md#getexportsnapshotrecordsresulttypedef)\].
 
 ## GetInstanceSnapshotsPaginator
 
@@ -251,7 +251,7 @@ Arguments for `GetInstanceSnapshotsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetInstanceSnapshotsPaginator.paginate` returns
-`Iterator`\[[GetInstanceSnapshotsResultTypeDef](./type_defs.md#getinstancesnapshotsresulttypedef)\].
+`_PageIterator`\[[GetInstanceSnapshotsResultTypeDef](./type_defs.md#getinstancesnapshotsresulttypedef)\].
 
 ## GetInstancesPaginator
 
@@ -276,7 +276,7 @@ Arguments for `GetInstancesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetInstancesPaginator.paginate` returns
-`Iterator`\[[GetInstancesResultTypeDef](./type_defs.md#getinstancesresulttypedef)\].
+`_PageIterator`\[[GetInstancesResultTypeDef](./type_defs.md#getinstancesresulttypedef)\].
 
 ## GetKeyPairsPaginator
 
@@ -301,7 +301,7 @@ Arguments for `GetKeyPairsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetKeyPairsPaginator.paginate` returns
-`Iterator`\[[GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef)\].
+`_PageIterator`\[[GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef)\].
 
 ## GetLoadBalancersPaginator
 
@@ -326,7 +326,7 @@ Arguments for `GetLoadBalancersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetLoadBalancersPaginator.paginate` returns
-`Iterator`\[[GetLoadBalancersResultTypeDef](./type_defs.md#getloadbalancersresulttypedef)\].
+`_PageIterator`\[[GetLoadBalancersResultTypeDef](./type_defs.md#getloadbalancersresulttypedef)\].
 
 ## GetOperationsPaginator
 
@@ -351,7 +351,7 @@ Arguments for `GetOperationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetOperationsPaginator.paginate` returns
-`Iterator`\[[GetOperationsResultTypeDef](./type_defs.md#getoperationsresulttypedef)\].
+`_PageIterator`\[[GetOperationsResultTypeDef](./type_defs.md#getoperationsresulttypedef)\].
 
 ## GetRelationalDatabaseBlueprintsPaginator
 
@@ -376,7 +376,7 @@ Arguments for `GetRelationalDatabaseBlueprintsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRelationalDatabaseBlueprintsPaginator.paginate` returns
-`Iterator`\[[GetRelationalDatabaseBlueprintsResultTypeDef](./type_defs.md#getrelationaldatabaseblueprintsresulttypedef)\].
+`_PageIterator`\[[GetRelationalDatabaseBlueprintsResultTypeDef](./type_defs.md#getrelationaldatabaseblueprintsresulttypedef)\].
 
 ## GetRelationalDatabaseBundlesPaginator
 
@@ -401,7 +401,7 @@ Arguments for `GetRelationalDatabaseBundlesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRelationalDatabaseBundlesPaginator.paginate` returns
-`Iterator`\[[GetRelationalDatabaseBundlesResultTypeDef](./type_defs.md#getrelationaldatabasebundlesresulttypedef)\].
+`_PageIterator`\[[GetRelationalDatabaseBundlesResultTypeDef](./type_defs.md#getrelationaldatabasebundlesresulttypedef)\].
 
 ## GetRelationalDatabaseEventsPaginator
 
@@ -428,7 +428,7 @@ Arguments for `GetRelationalDatabaseEventsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRelationalDatabaseEventsPaginator.paginate` returns
-`Iterator`\[[GetRelationalDatabaseEventsResultTypeDef](./type_defs.md#getrelationaldatabaseeventsresulttypedef)\].
+`_PageIterator`\[[GetRelationalDatabaseEventsResultTypeDef](./type_defs.md#getrelationaldatabaseeventsresulttypedef)\].
 
 ## GetRelationalDatabaseParametersPaginator
 
@@ -454,7 +454,7 @@ Arguments for `GetRelationalDatabaseParametersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRelationalDatabaseParametersPaginator.paginate` returns
-`Iterator`\[[GetRelationalDatabaseParametersResultTypeDef](./type_defs.md#getrelationaldatabaseparametersresulttypedef)\].
+`_PageIterator`\[[GetRelationalDatabaseParametersResultTypeDef](./type_defs.md#getrelationaldatabaseparametersresulttypedef)\].
 
 ## GetRelationalDatabaseSnapshotsPaginator
 
@@ -479,7 +479,7 @@ Arguments for `GetRelationalDatabaseSnapshotsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRelationalDatabaseSnapshotsPaginator.paginate` returns
-`Iterator`\[[GetRelationalDatabaseSnapshotsResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotsresulttypedef)\].
+`_PageIterator`\[[GetRelationalDatabaseSnapshotsResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotsresulttypedef)\].
 
 ## GetRelationalDatabasesPaginator
 
@@ -504,7 +504,7 @@ Arguments for `GetRelationalDatabasesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetRelationalDatabasesPaginator.paginate` returns
-`Iterator`\[[GetRelationalDatabasesResultTypeDef](./type_defs.md#getrelationaldatabasesresulttypedef)\].
+`_PageIterator`\[[GetRelationalDatabasesResultTypeDef](./type_defs.md#getrelationaldatabasesresulttypedef)\].
 
 ## GetStaticIpsPaginator
 
@@ -529,4 +529,4 @@ Arguments for `GetStaticIpsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetStaticIpsPaginator.paginate` returns
-`Iterator`\[[GetStaticIpsResultTypeDef](./type_defs.md#getstaticipsresulttypedef)\].
+`_PageIterator`\[[GetStaticIpsResultTypeDef](./type_defs.md#getstaticipsresulttypedef)\].

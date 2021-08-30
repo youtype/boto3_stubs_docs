@@ -38,7 +38,7 @@ Arguments for `ListApplicationStatesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApplicationStatesPaginator.paginate` returns
-`Iterator`\[[ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef)\].
+`_PageIterator`\[[ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef)\].
 
 ## ListCreatedArtifactsPaginator
 
@@ -65,7 +65,7 @@ Arguments for `ListCreatedArtifactsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListCreatedArtifactsPaginator.paginate` returns
-`Iterator`\[[ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef)\].
+`_PageIterator`\[[ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef)\].
 
 ## ListDiscoveredResourcesPaginator
 
@@ -92,7 +92,7 @@ Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDiscoveredResourcesPaginator.paginate` returns
-`Iterator`\[[ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef)\].
+`_PageIterator`\[[ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef)\].
 
 ## ListMigrationTasksPaginator
 
@@ -118,7 +118,7 @@ Arguments for `ListMigrationTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMigrationTasksPaginator.paginate` returns
-`Iterator`\[[ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef)\].
+`_PageIterator`\[[ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef)\].
 
 ## ListProgressUpdateStreamsPaginator
 
@@ -143,4 +143,4 @@ Arguments for `ListProgressUpdateStreamsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProgressUpdateStreamsPaginator.paginate` returns
-`Iterator`\[[ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef)\].
+`_PageIterator`\[[ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef)\].

@@ -46,7 +46,7 @@ Arguments for `ListFirewallConfigsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFirewallConfigsPaginator.paginate` returns
-`Iterator`\[[ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef)\].
+`_PageIterator`\[[ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef)\].
 
 ## ListFirewallDomainListsPaginator
 
@@ -71,7 +71,7 @@ Arguments for `ListFirewallDomainListsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFirewallDomainListsPaginator.paginate` returns
-`Iterator`\[[ListFirewallDomainListsResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponsetypedef)\].
+`_PageIterator`\[[ListFirewallDomainListsResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponsetypedef)\].
 
 ## ListFirewallDomainsPaginator
 
@@ -97,7 +97,7 @@ Arguments for `ListFirewallDomainsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFirewallDomainsPaginator.paginate` returns
-`Iterator`\[[ListFirewallDomainsResponseTypeDef](./type_defs.md#listfirewalldomainsresponsetypedef)\].
+`_PageIterator`\[[ListFirewallDomainsResponseTypeDef](./type_defs.md#listfirewalldomainsresponsetypedef)\].
 
 ## ListFirewallRuleGroupAssociationsPaginator
 
@@ -127,7 +127,7 @@ Arguments for `ListFirewallRuleGroupAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFirewallRuleGroupAssociationsPaginator.paginate` returns
-`Iterator`\[[ListFirewallRuleGroupAssociationsResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponsetypedef)\].
+`_PageIterator`\[[ListFirewallRuleGroupAssociationsResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponsetypedef)\].
 
 ## ListFirewallRuleGroupsPaginator
 
@@ -152,7 +152,7 @@ Arguments for `ListFirewallRuleGroupsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFirewallRuleGroupsPaginator.paginate` returns
-`Iterator`\[[ListFirewallRuleGroupsResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponsetypedef)\].
+`_PageIterator`\[[ListFirewallRuleGroupsResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponsetypedef)\].
 
 ## ListFirewallRulesPaginator
 
@@ -180,7 +180,7 @@ Arguments for `ListFirewallRulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFirewallRulesPaginator.paginate` returns
-`Iterator`\[[ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef)\].
+`_PageIterator`\[[ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef)\].
 
 ## ListResolverDnssecConfigsPaginator
 
@@ -206,7 +206,7 @@ Arguments for `ListResolverDnssecConfigsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResolverDnssecConfigsPaginator.paginate` returns
-`Iterator`\[[ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef)\].
+`_PageIterator`\[[ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef)\].
 
 ## ListResolverEndpointIpAddressesPaginator
 
@@ -232,7 +232,7 @@ Arguments for `ListResolverEndpointIpAddressesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResolverEndpointIpAddressesPaginator.paginate` returns
-`Iterator`\[[ListResolverEndpointIpAddressesResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponsetypedef)\].
+`_PageIterator`\[[ListResolverEndpointIpAddressesResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponsetypedef)\].
 
 ## ListResolverEndpointsPaginator
 
@@ -258,7 +258,7 @@ Arguments for `ListResolverEndpointsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResolverEndpointsPaginator.paginate` returns
-`Iterator`\[[ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef)\].
+`_PageIterator`\[[ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef)\].
 
 ## ListResolverQueryLogConfigAssociationsPaginator
 
@@ -287,7 +287,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResolverQueryLogConfigAssociationsPaginator.paginate` returns
-`Iterator`\[[ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef)\].
+`_PageIterator`\[[ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef)\].
 
 ## ListResolverQueryLogConfigsPaginator
 
@@ -315,7 +315,7 @@ Arguments for `ListResolverQueryLogConfigsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResolverQueryLogConfigsPaginator.paginate` returns
-`Iterator`\[[ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef)\].
+`_PageIterator`\[[ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef)\].
 
 ## ListResolverRuleAssociationsPaginator
 
@@ -341,7 +341,7 @@ Arguments for `ListResolverRuleAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResolverRuleAssociationsPaginator.paginate` returns
-`Iterator`\[[ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef)\].
+`_PageIterator`\[[ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef)\].
 
 ## ListResolverRulesPaginator
 
@@ -367,7 +367,7 @@ Arguments for `ListResolverRulesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResolverRulesPaginator.paginate` returns
-`Iterator`\[[ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef)\].
+`_PageIterator`\[[ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef)\].
 
 ## ListTagsForResourcePaginator
 
@@ -393,4 +393,4 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTagsForResourcePaginator.paginate` returns
-`Iterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
+`_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].

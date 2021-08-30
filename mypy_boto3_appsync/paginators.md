@@ -39,7 +39,7 @@ Arguments for `ListApiKeysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListApiKeysPaginator.paginate` returns
-`Iterator`\[[ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef)\].
+`_PageIterator`\[[ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef)\].
 
 ## ListDataSourcesPaginator
 
@@ -65,7 +65,7 @@ Arguments for `ListDataSourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDataSourcesPaginator.paginate` returns
-`Iterator`\[[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef)\].
+`_PageIterator`\[[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef)\].
 
 ## ListFunctionsPaginator
 
@@ -90,7 +90,7 @@ Arguments for `ListFunctionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListFunctionsPaginator.paginate` returns
-`Iterator`\[[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef)\].
+`_PageIterator`\[[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef)\].
 
 ## ListGraphqlApisPaginator
 
@@ -115,7 +115,7 @@ Arguments for `ListGraphqlApisPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListGraphqlApisPaginator.paginate` returns
-`Iterator`\[[ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef)\].
+`_PageIterator`\[[ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef)\].
 
 ## ListResolversPaginator
 
@@ -141,7 +141,7 @@ Arguments for `ListResolversPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResolversPaginator.paginate` returns
-`Iterator`\[[ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef)\].
+`_PageIterator`\[[ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef)\].
 
 ## ListResolversByFunctionPaginator
 
@@ -168,7 +168,7 @@ Arguments for `ListResolversByFunctionPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListResolversByFunctionPaginator.paginate` returns
-`Iterator`\[[ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef)\].
+`_PageIterator`\[[ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef)\].
 
 ## ListTypesPaginator
 
@@ -195,4 +195,4 @@ Arguments for `ListTypesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTypesPaginator.paginate` returns
-`Iterator`\[[ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef)\].
+`_PageIterator`\[[ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef)\].

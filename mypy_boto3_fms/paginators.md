@@ -37,7 +37,7 @@ Arguments for `ListAppsListsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListAppsListsPaginator.paginate` returns
-`Iterator`\[[ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef)\].
+`_PageIterator`\[[ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef)\].
 
 ## ListComplianceStatusPaginator
 
@@ -63,7 +63,7 @@ Arguments for `ListComplianceStatusPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListComplianceStatusPaginator.paginate` returns
-`Iterator`\[[ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef)\].
+`_PageIterator`\[[ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef)\].
 
 ## ListMemberAccountsPaginator
 
@@ -88,7 +88,7 @@ Arguments for `ListMemberAccountsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListMemberAccountsPaginator.paginate` returns
-`Iterator`\[[ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef)\].
+`_PageIterator`\[[ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef)\].
 
 ## ListPoliciesPaginator
 
@@ -112,7 +112,7 @@ Arguments for `ListPoliciesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListPoliciesPaginator.paginate` returns
-`Iterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
+`_PageIterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
 
 ## ListProtocolsListsPaginator
 
@@ -138,4 +138,4 @@ Arguments for `ListProtocolsListsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListProtocolsListsPaginator.paginate` returns
-`Iterator`\[[ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef)\].
+`_PageIterator`\[[ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef)\].

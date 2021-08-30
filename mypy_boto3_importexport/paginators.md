@@ -33,4 +33,4 @@ Arguments for `ListJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListJobsPaginator.paginate` returns
-`Iterator`\[[ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef)\].
+`_PageIterator`\[[ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef)\].

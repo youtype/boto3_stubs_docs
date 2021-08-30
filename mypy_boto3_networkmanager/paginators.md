@@ -42,7 +42,7 @@ Arguments for `DescribeGlobalNetworksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeGlobalNetworksPaginator.paginate` returns
-`Iterator`\[[DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef)\].
+`_PageIterator`\[[DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef)\].
 
 ## GetConnectionsPaginator
 
@@ -70,7 +70,7 @@ Arguments for `GetConnectionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetConnectionsPaginator.paginate` returns
-`Iterator`\[[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef)\].
+`_PageIterator`\[[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef)\].
 
 ## GetCustomerGatewayAssociationsPaginator
 
@@ -97,7 +97,7 @@ Arguments for `GetCustomerGatewayAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetCustomerGatewayAssociationsPaginator.paginate` returns
-`Iterator`\[[GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef)\].
+`_PageIterator`\[[GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef)\].
 
 ## GetDevicesPaginator
 
@@ -125,7 +125,7 @@ Arguments for `GetDevicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetDevicesPaginator.paginate` returns
-`Iterator`\[[GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef)\].
+`_PageIterator`\[[GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef)\].
 
 ## GetLinkAssociationsPaginator
 
@@ -153,7 +153,7 @@ Arguments for `GetLinkAssociationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetLinkAssociationsPaginator.paginate` returns
-`Iterator`\[[GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef)\].
+`_PageIterator`\[[GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef)\].
 
 ## GetLinksPaginator
 
@@ -183,7 +183,7 @@ Arguments for `GetLinksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetLinksPaginator.paginate` returns
-`Iterator`\[[GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef)\].
+`_PageIterator`\[[GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef)\].
 
 ## GetSitesPaginator
 
@@ -210,7 +210,7 @@ Arguments for `GetSitesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetSitesPaginator.paginate` returns
-`Iterator`\[[GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef)\].
+`_PageIterator`\[[GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef)\].
 
 ## GetTransitGatewayConnectPeerAssociationsPaginator
 
@@ -238,7 +238,7 @@ method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayConnectPeerAssociationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef)\].
+`_PageIterator`\[[GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef)\].
 
 ## GetTransitGatewayRegistrationsPaginator
 
@@ -265,4 +265,4 @@ Arguments for `GetTransitGatewayRegistrationsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTransitGatewayRegistrationsPaginator.paginate` returns
-`Iterator`\[[GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef)\].
+`_PageIterator`\[[GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef)\].

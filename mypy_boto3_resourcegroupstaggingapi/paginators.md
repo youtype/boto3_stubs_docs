@@ -42,7 +42,7 @@ Arguments for `GetComplianceSummaryPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetComplianceSummaryPaginator.paginate` returns
-`Iterator`\[[GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef)\].
+`_PageIterator`\[[GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef)\].
 
 ## GetResourcesPaginator
 
@@ -73,7 +73,7 @@ Arguments for `GetResourcesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetResourcesPaginator.paginate` returns
-`Iterator`\[[GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef)\].
+`_PageIterator`\[[GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef)\].
 
 ## GetTagKeysPaginator
 
@@ -98,7 +98,7 @@ Arguments for `GetTagKeysPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTagKeysPaginator.paginate` returns
-`Iterator`\[[GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef)\].
+`_PageIterator`\[[GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef)\].
 
 ## GetTagValuesPaginator
 
@@ -124,4 +124,4 @@ Arguments for `GetTagValuesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `GetTagValuesPaginator.paginate` returns
-`Iterator`\[[GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef)\].
+`_PageIterator`\[[GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef)\].

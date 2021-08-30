@@ -42,7 +42,7 @@ Arguments for `ListDocumentClassificationJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDocumentClassificationJobsPaginator.paginate` returns
-`Iterator`\[[ListDocumentClassificationJobsResponseTypeDef](./type_defs.md#listdocumentclassificationjobsresponsetypedef)\].
+`_PageIterator`\[[ListDocumentClassificationJobsResponseTypeDef](./type_defs.md#listdocumentclassificationjobsresponsetypedef)\].
 
 ## ListDocumentClassifiersPaginator
 
@@ -69,7 +69,7 @@ Arguments for `ListDocumentClassifiersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDocumentClassifiersPaginator.paginate` returns
-`Iterator`\[[ListDocumentClassifiersResponseTypeDef](./type_defs.md#listdocumentclassifiersresponsetypedef)\].
+`_PageIterator`\[[ListDocumentClassifiersResponseTypeDef](./type_defs.md#listdocumentclassifiersresponsetypedef)\].
 
 ## ListDominantLanguageDetectionJobsPaginator
 
@@ -96,7 +96,7 @@ Arguments for `ListDominantLanguageDetectionJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListDominantLanguageDetectionJobsPaginator.paginate` returns
-`Iterator`\[[ListDominantLanguageDetectionJobsResponseTypeDef](./type_defs.md#listdominantlanguagedetectionjobsresponsetypedef)\].
+`_PageIterator`\[[ListDominantLanguageDetectionJobsResponseTypeDef](./type_defs.md#listdominantlanguagedetectionjobsresponsetypedef)\].
 
 ## ListEntitiesDetectionJobsPaginator
 
@@ -123,7 +123,7 @@ Arguments for `ListEntitiesDetectionJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEntitiesDetectionJobsPaginator.paginate` returns
-`Iterator`\[[ListEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listentitiesdetectionjobsresponsetypedef)\].
+`_PageIterator`\[[ListEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listentitiesdetectionjobsresponsetypedef)\].
 
 ## ListEntityRecognizersPaginator
 
@@ -150,7 +150,7 @@ Arguments for `ListEntityRecognizersPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListEntityRecognizersPaginator.paginate` returns
-`Iterator`\[[ListEntityRecognizersResponseTypeDef](./type_defs.md#listentityrecognizersresponsetypedef)\].
+`_PageIterator`\[[ListEntityRecognizersResponseTypeDef](./type_defs.md#listentityrecognizersresponsetypedef)\].
 
 ## ListKeyPhrasesDetectionJobsPaginator
 
@@ -177,7 +177,7 @@ Arguments for `ListKeyPhrasesDetectionJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListKeyPhrasesDetectionJobsPaginator.paginate` returns
-`Iterator`\[[ListKeyPhrasesDetectionJobsResponseTypeDef](./type_defs.md#listkeyphrasesdetectionjobsresponsetypedef)\].
+`_PageIterator`\[[ListKeyPhrasesDetectionJobsResponseTypeDef](./type_defs.md#listkeyphrasesdetectionjobsresponsetypedef)\].
 
 ## ListSentimentDetectionJobsPaginator
 
@@ -204,7 +204,7 @@ Arguments for `ListSentimentDetectionJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSentimentDetectionJobsPaginator.paginate` returns
-`Iterator`\[[ListSentimentDetectionJobsResponseTypeDef](./type_defs.md#listsentimentdetectionjobsresponsetypedef)\].
+`_PageIterator`\[[ListSentimentDetectionJobsResponseTypeDef](./type_defs.md#listsentimentdetectionjobsresponsetypedef)\].
 
 ## ListTopicsDetectionJobsPaginator
 
@@ -231,4 +231,4 @@ Arguments for `ListTopicsDetectionJobsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListTopicsDetectionJobsPaginator.paginate` returns
-`Iterator`\[[ListTopicsDetectionJobsResponseTypeDef](./type_defs.md#listtopicsdetectionjobsresponsetypedef)\].
+`_PageIterator`\[[ListTopicsDetectionJobsResponseTypeDef](./type_defs.md#listtopicsdetectionjobsresponsetypedef)\].

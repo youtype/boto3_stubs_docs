@@ -37,7 +37,7 @@ Arguments for `DescribeVoicesPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `DescribeVoicesPaginator.paginate` returns
-`Iterator`\[[DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef)\].
+`_PageIterator`\[[DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef)\].
 
 ## ListLexiconsPaginator
 
@@ -61,7 +61,7 @@ Arguments for `ListLexiconsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListLexiconsPaginator.paginate` returns
-`Iterator`\[[ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef)\].
+`_PageIterator`\[[ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef)\].
 
 ## ListSpeechSynthesisTasksPaginator
 
@@ -87,4 +87,4 @@ Arguments for `ListSpeechSynthesisTasksPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListSpeechSynthesisTasksPaginator.paginate` returns
-`Iterator`\[[ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef)\].
+`_PageIterator`\[[ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef)\].

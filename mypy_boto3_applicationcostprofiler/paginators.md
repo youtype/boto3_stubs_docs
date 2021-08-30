@@ -33,4 +33,4 @@ Arguments for `ListReportDefinitionsPaginator.paginate` method:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
 `ListReportDefinitionsPaginator.paginate` returns
-`Iterator`\[[ListReportDefinitionsResultTypeDef](./type_defs.md#listreportdefinitionsresulttypedef)\].
+`_PageIterator`\[[ListReportDefinitionsResultTypeDef](./type_defs.md#listreportdefinitionsresulttypedef)\].
