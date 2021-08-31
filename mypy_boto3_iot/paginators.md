@@ -26,9 +26,11 @@ type annotations stubs module
   - [ListDetectMitigationActionsTasksPaginator](#listdetectmitigationactionstaskspaginator)
   - [ListDimensionsPaginator](#listdimensionspaginator)
   - [ListDomainConfigurationsPaginator](#listdomainconfigurationspaginator)
+  - [ListFleetMetricsPaginator](#listfleetmetricspaginator)
   - [ListIndicesPaginator](#listindicespaginator)
   - [ListJobExecutionsForJobPaginator](#listjobexecutionsforjobpaginator)
   - [ListJobExecutionsForThingPaginator](#listjobexecutionsforthingpaginator)
+  - [ListJobTemplatesPaginator](#listjobtemplatespaginator)
   - [ListJobsPaginator](#listjobspaginator)
   - [ListMitigationActionsPaginator](#listmitigationactionspaginator)
   - [ListOTAUpdatesPaginator](#listotaupdatespaginator)
@@ -555,6 +557,30 @@ Arguments for `ListDomainConfigurationsPaginator.paginate` method:
 `ListDomainConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[ListDomainConfigurationsResponseTypeDef](./type_defs.md#listdomainconfigurationsresponsetypedef)\].
 
+## ListFleetMetricsPaginator
+
+Type annotations for `boto3.client("iot").get_paginator("list_fleet_metrics")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_iot.paginator import ListFleetMetricsPaginator
+
+def get_list_fleet_metrics_paginator() -> ListFleetMetricsPaginator:
+    return boto3.client("iot").get_paginator("list_fleet_metrics")
+```
+
+Boto3 documentation:
+[IoT.Paginator.ListFleetMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListFleetMetrics)
+
+Arguments for `ListFleetMetricsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListFleetMetricsPaginator.paginate` returns
+`_PageIterator`\[[ListFleetMetricsResponseTypeDef](./type_defs.md#listfleetmetricsresponsetypedef)\].
+
 ## ListIndicesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_indices")`.
@@ -633,6 +659,30 @@ Arguments for `ListJobExecutionsForThingPaginator.paginate` method:
 
 `ListJobExecutionsForThingPaginator.paginate` returns
 `_PageIterator`\[[ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef)\].
+
+## ListJobTemplatesPaginator
+
+Type annotations for `boto3.client("iot").get_paginator("list_job_templates")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_iot.paginator import ListJobTemplatesPaginator
+
+def get_list_job_templates_paginator() -> ListJobTemplatesPaginator:
+    return boto3.client("iot").get_paginator("list_job_templates")
+```
+
+Boto3 documentation:
+[IoT.Paginator.ListJobTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Paginator.ListJobTemplates)
+
+Arguments for `ListJobTemplatesPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListJobTemplatesPaginator.paginate` returns
+`_PageIterator`\[[ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef)\].
 
 ## ListJobsPaginator
 

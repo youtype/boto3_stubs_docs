@@ -16,6 +16,7 @@ type annotations stubs module
   - [AddThingToBillingGroupRequestRequestTypeDef](#addthingtobillinggrouprequestrequesttypedef)
   - [AddThingToThingGroupRequestRequestTypeDef](#addthingtothinggrouprequestrequesttypedef)
   - [AddThingsToThingGroupParamsTypeDef](#addthingstothinggroupparamstypedef)
+  - [AggregationTypeTypeDef](#aggregationtypetypedef)
   - [AlertTargetTypeDef](#alerttargettypedef)
   - [AllowedTypeDef](#allowedtypedef)
   - [AssetPropertyTimestampTypeDef](#assetpropertytimestamptypedef)
@@ -54,6 +55,8 @@ type annotations stubs module
   - [BehaviorTypeDef](#behaviortypedef)
   - [BillingGroupMetadataTypeDef](#billinggroupmetadatatypedef)
   - [BillingGroupPropertiesTypeDef](#billinggrouppropertiestypedef)
+  - [BucketTypeDef](#buckettypedef)
+  - [BucketsAggregationTypeTypeDef](#bucketsaggregationtypetypedef)
   - [CACertificateDescriptionTypeDef](#cacertificatedescriptiontypedef)
   - [CACertificateTypeDef](#cacertificatetypedef)
   - [CancelAuditMitigationActionsTaskRequestRequestTypeDef](#cancelauditmitigationactionstaskrequestrequesttypedef)
@@ -89,6 +92,8 @@ type annotations stubs module
   - [CreateDomainConfigurationResponseTypeDef](#createdomainconfigurationresponsetypedef)
   - [CreateDynamicThingGroupRequestRequestTypeDef](#createdynamicthinggrouprequestrequesttypedef)
   - [CreateDynamicThingGroupResponseTypeDef](#createdynamicthinggroupresponsetypedef)
+  - [CreateFleetMetricRequestRequestTypeDef](#createfleetmetricrequestrequesttypedef)
+  - [CreateFleetMetricResponseTypeDef](#createfleetmetricresponsetypedef)
   - [CreateJobRequestRequestTypeDef](#createjobrequestrequesttypedef)
   - [CreateJobResponseTypeDef](#createjobresponsetypedef)
   - [CreateJobTemplateRequestRequestTypeDef](#createjobtemplaterequestrequesttypedef)
@@ -137,6 +142,7 @@ type annotations stubs module
   - [DeleteDimensionRequestRequestTypeDef](#deletedimensionrequestrequesttypedef)
   - [DeleteDomainConfigurationRequestRequestTypeDef](#deletedomainconfigurationrequestrequesttypedef)
   - [DeleteDynamicThingGroupRequestRequestTypeDef](#deletedynamicthinggrouprequestrequesttypedef)
+  - [DeleteFleetMetricRequestRequestTypeDef](#deletefleetmetricrequestrequesttypedef)
   - [DeleteJobExecutionRequestRequestTypeDef](#deletejobexecutionrequestrequesttypedef)
   - [DeleteJobRequestRequestTypeDef](#deletejobrequestrequesttypedef)
   - [DeleteJobTemplateRequestRequestTypeDef](#deletejobtemplaterequestrequesttypedef)
@@ -187,6 +193,8 @@ type annotations stubs module
   - [DescribeEndpointRequestRequestTypeDef](#describeendpointrequestrequesttypedef)
   - [DescribeEndpointResponseTypeDef](#describeendpointresponsetypedef)
   - [DescribeEventConfigurationsResponseTypeDef](#describeeventconfigurationsresponsetypedef)
+  - [DescribeFleetMetricRequestRequestTypeDef](#describefleetmetricrequestrequesttypedef)
+  - [DescribeFleetMetricResponseTypeDef](#describefleetmetricresponsetypedef)
   - [DescribeIndexRequestRequestTypeDef](#describeindexrequestrequesttypedef)
   - [DescribeIndexResponseTypeDef](#describeindexresponsetypedef)
   - [DescribeJobExecutionRequestRequestTypeDef](#describejobexecutionrequestrequesttypedef)
@@ -240,8 +248,11 @@ type annotations stubs module
   - [FieldTypeDef](#fieldtypedef)
   - [FileLocationTypeDef](#filelocationtypedef)
   - [FirehoseActionTypeDef](#firehoseactiontypedef)
+  - [FleetMetricNameAndArnTypeDef](#fleetmetricnameandarntypedef)
   - [GetBehaviorModelTrainingSummariesRequestRequestTypeDef](#getbehaviormodeltrainingsummariesrequestrequesttypedef)
   - [GetBehaviorModelTrainingSummariesResponseTypeDef](#getbehaviormodeltrainingsummariesresponsetypedef)
+  - [GetBucketsAggregationRequestRequestTypeDef](#getbucketsaggregationrequestrequesttypedef)
+  - [GetBucketsAggregationResponseTypeDef](#getbucketsaggregationresponsetypedef)
   - [GetCardinalityRequestRequestTypeDef](#getcardinalityrequestrequesttypedef)
   - [GetCardinalityResponseTypeDef](#getcardinalityresponsetypedef)
   - [GetEffectivePoliciesRequestRequestTypeDef](#geteffectivepoliciesrequestrequesttypedef)
@@ -326,6 +337,8 @@ type annotations stubs module
   - [ListDimensionsResponseTypeDef](#listdimensionsresponsetypedef)
   - [ListDomainConfigurationsRequestRequestTypeDef](#listdomainconfigurationsrequestrequesttypedef)
   - [ListDomainConfigurationsResponseTypeDef](#listdomainconfigurationsresponsetypedef)
+  - [ListFleetMetricsRequestRequestTypeDef](#listfleetmetricsrequestrequesttypedef)
+  - [ListFleetMetricsResponseTypeDef](#listfleetmetricsresponsetypedef)
   - [ListIndicesRequestRequestTypeDef](#listindicesrequestrequesttypedef)
   - [ListIndicesResponseTypeDef](#listindicesresponsetypedef)
   - [ListJobExecutionsForJobRequestRequestTypeDef](#listjobexecutionsforjobrequestrequesttypedef)
@@ -488,6 +501,7 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [TaskStatisticsForAuditCheckTypeDef](#taskstatisticsforauditchecktypedef)
   - [TaskStatisticsTypeDef](#taskstatisticstypedef)
+  - [TermsAggregationTypeDef](#termsaggregationtypedef)
   - [TestAuthorizationRequestRequestTypeDef](#testauthorizationrequestrequesttypedef)
   - [TestAuthorizationResponseTypeDef](#testauthorizationresponsetypedef)
   - [TestInvokeAuthorizerRequestRequestTypeDef](#testinvokeauthorizerrequestrequesttypedef)
@@ -537,6 +551,7 @@ type annotations stubs module
   - [UpdateDynamicThingGroupRequestRequestTypeDef](#updatedynamicthinggrouprequestrequesttypedef)
   - [UpdateDynamicThingGroupResponseTypeDef](#updatedynamicthinggroupresponsetypedef)
   - [UpdateEventConfigurationsRequestRequestTypeDef](#updateeventconfigurationsrequestrequesttypedef)
+  - [UpdateFleetMetricRequestRequestTypeDef](#updatefleetmetricrequestrequesttypedef)
   - [UpdateIndexingConfigurationRequestRequestTypeDef](#updateindexingconfigurationrequestrequesttypedef)
   - [UpdateJobRequestRequestTypeDef](#updatejobrequestrequesttypedef)
   - [UpdateMitigationActionRequestRequestTypeDef](#updatemitigationactionrequestrequesttypedef)
@@ -703,6 +718,20 @@ Required fields:
 Optional fields:
 
 - `overrideDynamicGroups`: `bool`
+
+## AggregationTypeTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import AggregationTypeTypeDef
+```
+
+Required fields:
+
+- `name`: [AggregationTypeNameType](./literals.md#aggregationtypenametype)
+
+Optional fields:
+
+- `values`: `List`\[`str`\]
 
 ## AlertTargetTypeDef
 
@@ -1212,6 +1241,28 @@ Optional fields:
 
 - `billingGroupDescription`: `str`
 
+## BucketTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import BucketTypeDef
+```
+
+Optional fields:
+
+- `keyValue`: `str`
+- `count`: `int`
+
+## BucketsAggregationTypeTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import BucketsAggregationTypeTypeDef
+```
+
+Optional fields:
+
+- `termsAggregation`:
+  [TermsAggregationTypeDef](./type_defs.md#termsaggregationtypedef)
+
 ## CACertificateDescriptionTypeDef
 
 ```python
@@ -1716,6 +1767,42 @@ Required fields:
 - `indexName`: `str`
 - `queryString`: `str`
 - `queryVersion`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateFleetMetricRequestRequestTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import CreateFleetMetricRequestRequestTypeDef
+```
+
+Required fields:
+
+- `metricName`: `str`
+- `queryString`: `str`
+- `aggregationType`:
+  [AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef)
+- `period`: `int`
+- `aggregationField`: `str`
+
+Optional fields:
+
+- `description`: `str`
+- `queryVersion`: `str`
+- `indexName`: `str`
+- `unit`: [FleetMetricUnitType](./literals.md#fleetmetricunittype)
+- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateFleetMetricResponseTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import CreateFleetMetricResponseTypeDef
+```
+
+Required fields:
+
+- `metricName`: `str`
+- `metricArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2434,6 +2521,20 @@ Optional fields:
 
 - `expectedVersion`: `int`
 
+## DeleteFleetMetricRequestRequestTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import DeleteFleetMetricRequestRequestTypeDef
+```
+
+Required fields:
+
+- `metricName`: `str`
+
+Optional fields:
+
+- `expectedVersion`: `int`
+
 ## DeleteJobExecutionRequestRequestTypeDef
 
 ```python
@@ -3068,6 +3169,41 @@ Required fields:
   [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `creationDate`: `datetime`
 - `lastModifiedDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeFleetMetricRequestRequestTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import DescribeFleetMetricRequestRequestTypeDef
+```
+
+Required fields:
+
+- `metricName`: `str`
+
+## DescribeFleetMetricResponseTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import DescribeFleetMetricResponseTypeDef
+```
+
+Required fields:
+
+- `metricName`: `str`
+- `queryString`: `str`
+- `aggregationType`:
+  [AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef)
+- `period`: `int`
+- `aggregationField`: `str`
+- `description`: `str`
+- `queryVersion`: `str`
+- `indexName`: `str`
+- `creationDate`: `datetime`
+- `lastModifiedDate`: `datetime`
+- `unit`: [FleetMetricUnitType](./literals.md#fleetmetricunittype)
+- `version`: `int`
+- `metricArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -3791,6 +3927,17 @@ Optional fields:
 - `separator`: `str`
 - `batchMode`: `bool`
 
+## FleetMetricNameAndArnTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import FleetMetricNameAndArnTypeDef
+```
+
+Optional fields:
+
+- `metricName`: `str`
+- `metricArn`: `str`
+
 ## GetBehaviorModelTrainingSummariesRequestRequestTypeDef
 
 ```python
@@ -3814,6 +3961,37 @@ Required fields:
 - `summaries`:
   `List`\[[BehaviorModelTrainingSummaryTypeDef](./type_defs.md#behaviormodeltrainingsummarytypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetBucketsAggregationRequestRequestTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import GetBucketsAggregationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `queryString`: `str`
+- `aggregationField`: `str`
+- `bucketsAggregationType`:
+  [BucketsAggregationTypeTypeDef](./type_defs.md#bucketsaggregationtypetypedef)
+
+Optional fields:
+
+- `indexName`: `str`
+- `queryVersion`: `str`
+
+## GetBucketsAggregationResponseTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import GetBucketsAggregationResponseTypeDef
+```
+
+Required fields:
+
+- `totalCount`: `int`
+- `buckets`: `List`\[[BucketTypeDef](./type_defs.md#buckettypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4969,6 +5147,31 @@ Required fields:
 - `domainConfigurations`:
   `List`\[[DomainConfigurationSummaryTypeDef](./type_defs.md#domainconfigurationsummarytypedef)\]
 - `nextMarker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListFleetMetricsRequestRequestTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import ListFleetMetricsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+## ListFleetMetricsResponseTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import ListFleetMetricsResponseTypeDef
+```
+
+Required fields:
+
+- `fleetMetrics`:
+  `List`\[[FleetMetricNameAndArnTypeDef](./type_defs.md#fleetmetricnameandarntypedef)\]
+- `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -7164,6 +7367,16 @@ Optional fields:
 - `failedChecks`: `int`
 - `canceledChecks`: `int`
 
+## TermsAggregationTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import TermsAggregationTypeDef
+```
+
+Optional fields:
+
+- `maxBuckets`: `int`
+
 ## TestAuthorizationRequestRequestTypeDef
 
 ```python
@@ -7253,6 +7466,7 @@ Optional fields:
 
 - `connected`: `bool`
 - `timestamp`: `int`
+- `disconnectReason`: `str`
 
 ## ThingDocumentTypeDef
 
@@ -7867,6 +8081,29 @@ Optional fields:
 
 - `eventConfigurations`: `Dict`\[[EventTypeType](./literals.md#eventtypetype),
   [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+
+## UpdateFleetMetricRequestRequestTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import UpdateFleetMetricRequestRequestTypeDef
+```
+
+Required fields:
+
+- `metricName`: `str`
+- `indexName`: `str`
+
+Optional fields:
+
+- `queryString`: `str`
+- `aggregationType`:
+  [AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef)
+- `period`: `int`
+- `aggregationField`: `str`
+- `description`: `str`
+- `queryVersion`: `str`
+- `unit`: [FleetMetricUnitType](./literals.md#fleetmetricunittype)
+- `expectedVersion`: `int`
 
 ## UpdateIndexingConfigurationRequestRequestTypeDef
 

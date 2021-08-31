@@ -71,6 +71,7 @@ Values:
 - `en-IN`
 - `en-NZ`
 - `en-US`
+- `en-ZA`
 - `es-ES`
 - `es-MX`
 - `es-US`
@@ -173,6 +174,7 @@ Values:
 - `Amy`
 - `Aria`
 - `Astrid`
+- `Ayanda`
 - `Bianca`
 - `Brian`
 - `Camila`

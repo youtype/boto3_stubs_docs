@@ -87,5 +87,6 @@ Values:
 - `Policy`
 - `QueueArn`
 - `ReceiveMessageWaitTimeSeconds`
+- `RedriveAllowPolicy`
 - `RedrivePolicy`
 - `VisibilityTimeout`

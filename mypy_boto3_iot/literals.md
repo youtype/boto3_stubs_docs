@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 IoT module](#literals-for-boto3-iot-module)
   - [AbortActionType](#abortactiontype)
   - [ActionTypeType](#actiontypetype)
+  - [AggregationTypeNameType](#aggregationtypenametype)
   - [AlertTargetTypeType](#alerttargettypetype)
   - [AuditCheckRunStatusType](#auditcheckrunstatustype)
   - [AuditFindingSeverityType](#auditfindingseveritytype)
@@ -45,6 +46,7 @@ type annotations stubs module
   - [DynamoKeyTypeType](#dynamokeytypetype)
   - [EventTypeType](#eventtypetype)
   - [FieldTypeType](#fieldtypetype)
+  - [FleetMetricUnitType](#fleetmetricunittype)
   - [GetBehaviorModelTrainingSummariesPaginatorName](#getbehaviormodeltrainingsummariespaginatorname)
   - [IndexStatusType](#indexstatustype)
   - [JobExecutionFailureTypeType](#jobexecutionfailuretypetype)
@@ -67,9 +69,11 @@ type annotations stubs module
   - [ListDetectMitigationActionsTasksPaginatorName](#listdetectmitigationactionstaskspaginatorname)
   - [ListDimensionsPaginatorName](#listdimensionspaginatorname)
   - [ListDomainConfigurationsPaginatorName](#listdomainconfigurationspaginatorname)
+  - [ListFleetMetricsPaginatorName](#listfleetmetricspaginatorname)
   - [ListIndicesPaginatorName](#listindicespaginatorname)
   - [ListJobExecutionsForJobPaginatorName](#listjobexecutionsforjobpaginatorname)
   - [ListJobExecutionsForThingPaginatorName](#listjobexecutionsforthingpaginatorname)
+  - [ListJobTemplatesPaginatorName](#listjobtemplatespaginatorname)
   - [ListJobsPaginatorName](#listjobspaginatorname)
   - [ListMitigationActionsPaginatorName](#listmitigationactionspaginatorname)
   - [ListOTAUpdatesPaginatorName](#listotaupdatespaginatorname)
@@ -143,6 +147,18 @@ Values:
 - `PUBLISH`
 - `RECEIVE`
 - `SUBSCRIBE`
+
+## AggregationTypeNameType
+
+```python
+from mypy_boto3_iot.literals import AggregationTypeNameType
+```
+
+Values:
+
+- `Cardinality`
+- `Percentiles`
+- `Statistics`
 
 ## AlertTargetTypeType
 
@@ -585,6 +601,42 @@ Values:
 - `Number`
 - `String`
 
+## FleetMetricUnitType
+
+```python
+from mypy_boto3_iot.literals import FleetMetricUnitType
+```
+
+Values:
+
+- `Bits`
+- `Bits/Second`
+- `Bytes`
+- `Bytes/Second`
+- `Count`
+- `Count/Second`
+- `Gigabits`
+- `Gigabits/Second`
+- `Gigabytes`
+- `Gigabytes/Second`
+- `Kilobits`
+- `Kilobits/Second`
+- `Kilobytes`
+- `Kilobytes/Second`
+- `Megabits`
+- `Megabits/Second`
+- `Megabytes`
+- `Megabytes/Second`
+- `Microseconds`
+- `Milliseconds`
+- `None`
+- `Percent`
+- `Seconds`
+- `Terabits`
+- `Terabits/Second`
+- `Terabytes`
+- `Terabytes/Second`
+
 ## GetBehaviorModelTrainingSummariesPaginatorName
 
 ```python
@@ -820,6 +872,16 @@ Values:
 
 - `list_domain_configurations`
 
+## ListFleetMetricsPaginatorName
+
+```python
+from mypy_boto3_iot.literals import ListFleetMetricsPaginatorName
+```
+
+Values:
+
+- `list_fleet_metrics`
+
 ## ListIndicesPaginatorName
 
 ```python
@@ -849,6 +911,16 @@ from mypy_boto3_iot.literals import ListJobExecutionsForThingPaginatorName
 Values:
 
 - `list_job_executions_for_thing`
+
+## ListJobTemplatesPaginatorName
+
+```python
+from mypy_boto3_iot.literals import ListJobTemplatesPaginatorName
+```
+
+Values:
+
+- `list_job_templates`
 
 ## ListJobsPaginatorName
 
