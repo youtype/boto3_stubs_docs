@@ -196,6 +196,7 @@ Required fields:
 Optional fields:
 
 - `CreationTime`: `datetime`
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - `LastModifiedTime`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
 
@@ -210,11 +211,11 @@ Required fields:
 - `ChannelName`: `str`
 - `Outputs`:
   `List`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
-- `PlaybackMode`: `Literal['LOOP']` (see
-  [PlaybackModeType](./literals.md#playbackmodetype))
+- `PlaybackMode`: [PlaybackModeType](./literals.md#playbackmodetype)
 
 Optional fields:
 
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateChannelResponseTypeDef
@@ -229,6 +230,7 @@ Required fields:
 - `ChannelName`: `str`
 - `ChannelState`: [ChannelStateType](./literals.md#channelstatetype)
 - `CreationTime`: `datetime`
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - `LastModifiedTime`: `datetime`
 - `Outputs`:
   `List`\[[ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef)\]
@@ -269,6 +271,7 @@ Required fields:
 - `ChannelName`: `str`
 - `CreationTime`: `datetime`
 - `ProgramName`: `str`
+- `ScheduledStartTime`: `datetime`
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
 - `ResponseMetadata`:
@@ -484,6 +487,7 @@ Required fields:
 - `ChannelName`: `str`
 - `ChannelState`: [ChannelStateType](./literals.md#channelstatetype)
 - `CreationTime`: `datetime`
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - `LastModifiedTime`: `datetime`
 - `Outputs`:
   `List`\[[ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef)\]
@@ -516,6 +520,7 @@ Required fields:
 - `ChannelName`: `str`
 - `CreationTime`: `datetime`
 - `ProgramName`: `str`
+- `ScheduledStartTime`: `datetime`
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
 - `ResponseMetadata`:
@@ -1109,6 +1114,8 @@ Optional fields:
 - `ApproximateStartTime`: `datetime`
 - `ScheduleAdBreaks`:
   `List`\[[ScheduleAdBreakTypeDef](./type_defs.md#scheduleadbreaktypedef)\]
+- `ScheduleEntryType`:
+  [ScheduleEntryTypeType](./literals.md#scheduleentrytypetype)
 
 ## SecretsManagerAccessTokenConfigurationTypeDef
 
@@ -1215,6 +1222,7 @@ Required fields:
 Optional fields:
 
 - `RelativeProgram`: `str`
+- `ScheduledStartTimeMillis`: `int`
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1251,6 +1259,7 @@ Required fields:
 - `ChannelName`: `str`
 - `ChannelState`: [ChannelStateType](./literals.md#channelstatetype)
 - `CreationTime`: `datetime`
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - `LastModifiedTime`: `datetime`
 - `Outputs`:
   `List`\[[ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef)\]

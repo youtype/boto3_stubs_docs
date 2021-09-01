@@ -983,6 +983,7 @@ from mypy_boto3_ec2.literals import AccountAttributeNameType, ...
 - [LaunchTemplateHttpTokensStateType](./literals.md#launchtemplatehttptokensstatetype)
 - [LaunchTemplateInstanceMetadataEndpointStateType](./literals.md#launchtemplateinstancemetadataendpointstatetype)
 - [LaunchTemplateInstanceMetadataOptionsStateType](./literals.md#launchtemplateinstancemetadataoptionsstatetype)
+- [LaunchTemplateInstanceMetadataProtocolIpv6Type](./literals.md#launchtemplateinstancemetadataprotocolipv6type)
 - [ListingStateType](./literals.md#listingstatetype)
 - [ListingStatusType](./literals.md#listingstatustype)
 - [LocalGatewayRouteStateType](./literals.md#localgatewayroutestatetype)

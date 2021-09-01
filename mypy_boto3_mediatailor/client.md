@@ -127,8 +127,9 @@ Keyword-only arguments:
 - `Outputs`:
   `List`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
   *(required)*
-- `PlaybackMode`: `Literal['LOOP']` (see
-  [PlaybackModeType](./literals.md#playbackmodetype)) *(required)*
+- `PlaybackMode`: [PlaybackModeType](./literals.md#playbackmodetype)
+  *(required)*
+- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns

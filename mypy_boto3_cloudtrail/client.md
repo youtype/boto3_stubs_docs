@@ -478,7 +478,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### start_logging
 
-Starts the recording of AWS API calls and log file delivery for a trail.
+Starts the recording of Amazon Web Services API calls and log file delivery for
+a trail.
 
 Type annotations for `boto3.client("cloudtrail").start_logging` method.
 
@@ -496,8 +497,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### stop_logging
 
-Suspends the recording of AWS API calls and log file delivery for the specified
-trail.
+Suspends the recording of Amazon Web Services API calls and log file delivery
+for the specified trail.
 
 Type annotations for `boto3.client("cloudtrail").stop_logging` method.
 
@@ -515,7 +516,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_trail
 
-Updates the settings that specify delivery of log files.
+Updates trail settings that control what events you are logging, and how to
+handle log files.
 
 Type annotations for `boto3.client("cloudtrail").update_trail` method.
 

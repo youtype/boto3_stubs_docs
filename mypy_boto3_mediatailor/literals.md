@@ -21,6 +21,7 @@ type annotations stubs module
   - [OriginManifestTypeType](#originmanifesttypetype)
   - [PlaybackModeType](#playbackmodetype)
   - [RelativePositionType](#relativepositiontype)
+  - [ScheduleEntryTypeType](#scheduleentrytypetype)
   - [TypeType](#typetype)
 
 ## AccessTypeType
@@ -145,6 +146,7 @@ from mypy_boto3_mediatailor.literals import PlaybackModeType
 
 Values:
 
+- `LINEAR`
 - `LOOP`
 
 ## RelativePositionType
@@ -157,6 +159,17 @@ Values:
 
 - `AFTER_PROGRAM`
 - `BEFORE_PROGRAM`
+
+## ScheduleEntryTypeType
+
+```python
+from mypy_boto3_mediatailor.literals import ScheduleEntryTypeType
+```
+
+Values:
+
+- `FILLER_SLATE`
+- `PROGRAM`
 
 ## TypeType
 

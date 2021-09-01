@@ -23,6 +23,7 @@ type annotations stubs module
     - [disassociate_resource](#disassociate_resource)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_application](#get_application)
+    - [get_associated_resource](#get_associated_resource)
     - [get_attribute_group](#get_attribute_group)
     - [list_applications](#list_applications)
     - [list_associated_attribute_groups](#list_associated_attribute_groups)
@@ -321,6 +322,29 @@ Keyword-only arguments:
 Returns
 [GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef).
 
+### get_associated_resource
+
+Gets the resource associated with the application.
+
+Type annotations for
+`boto3.client("servicecatalog-appregistry").get_associated_resource` method.
+
+Boto3 documentation:
+[AppRegistry.Client.get_associated_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client.get_associated_resource)
+
+Arguments mapping described in
+[GetAssociatedResourceRequestRequestTypeDef](./type_defs.md#getassociatedresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `application`: `str` *(required)*
+- `resourceType`: `Literal['CFN_STACK']` (see
+  [ResourceTypeType](./literals.md#resourcetypetype)) *(required)*
+- `resource`: `str` *(required)*
+
+Returns
+[GetAssociatedResourceResponseTypeDef](./type_defs.md#getassociatedresourceresponsetypedef).
+
 ### get_attribute_group
 
 Retrieves an attribute group, either by its name or its ID.
@@ -450,7 +474,7 @@ Returns
 
 ### sync_resource
 
-Syncs the resource with what is currently recorded in App registry.
+Syncs the resource with current AppRegistry records.
 
 Type annotations for `boto3.client("servicecatalog-appregistry").sync_resource`
 method.

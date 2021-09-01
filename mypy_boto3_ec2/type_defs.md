@@ -16788,6 +16788,8 @@ Optional fields:
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
   [LaunchTemplateInstanceMetadataEndpointStateType](./literals.md#launchtemplateinstancemetadataendpointstatetype)
+- `HttpProtocolIpv6`:
+  [LaunchTemplateInstanceMetadataProtocolIpv6Type](./literals.md#launchtemplateinstancemetadataprotocolipv6type)
 
 ## LaunchTemplateInstanceMetadataOptionsTypeDef
 
@@ -16804,6 +16806,8 @@ Optional fields:
 - `HttpPutResponseHopLimit`: `int`
 - `HttpEndpoint`:
   [LaunchTemplateInstanceMetadataEndpointStateType](./literals.md#launchtemplateinstancemetadataendpointstatetype)
+- `HttpProtocolIpv6`:
+  [LaunchTemplateInstanceMetadataProtocolIpv6Type](./literals.md#launchtemplateinstancemetadataprotocolipv6type)
 
 ## LaunchTemplateInstanceNetworkInterfaceSpecificationRequestTypeDef
 

@@ -238,6 +238,7 @@ type annotations stubs module
   - [LaunchTemplateHttpTokensStateType](#launchtemplatehttptokensstatetype)
   - [LaunchTemplateInstanceMetadataEndpointStateType](#launchtemplateinstancemetadataendpointstatetype)
   - [LaunchTemplateInstanceMetadataOptionsStateType](#launchtemplateinstancemetadataoptionsstatetype)
+  - [LaunchTemplateInstanceMetadataProtocolIpv6Type](#launchtemplateinstancemetadataprotocolipv6type)
   - [ListingStateType](#listingstatetype)
   - [ListingStatusType](#listingstatustype)
   - [LocalGatewayRouteStateType](#localgatewayroutestatetype)
@@ -3328,6 +3329,17 @@ Values:
 
 - `applied`
 - `pending`
+
+## LaunchTemplateInstanceMetadataProtocolIpv6Type
+
+```python
+from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataProtocolIpv6Type
+```
+
+Values:
+
+- `disabled`
+- `enabled`
 
 ## ListingStateType
 

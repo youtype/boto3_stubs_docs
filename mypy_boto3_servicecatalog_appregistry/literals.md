@@ -12,6 +12,7 @@ type annotations stubs module
   - [ListAssociatedAttributeGroupsPaginatorName](#listassociatedattributegroupspaginatorname)
   - [ListAssociatedResourcesPaginatorName](#listassociatedresourcespaginatorname)
   - [ListAttributeGroupsPaginatorName](#listattributegroupspaginatorname)
+  - [ResourceGroupStateType](#resourcegroupstatetype)
   - [ResourceTypeType](#resourcetypetype)
   - [SyncActionType](#syncactiontype)
 
@@ -54,6 +55,21 @@ from mypy_boto3_servicecatalog_appregistry.literals import ListAttributeGroupsPa
 Values:
 
 - `list_attribute_groups`
+
+## ResourceGroupStateType
+
+```python
+from mypy_boto3_servicecatalog_appregistry.literals import ResourceGroupStateType
+```
+
+Values:
+
+- `CREATE_COMPLETE`
+- `CREATE_FAILED`
+- `CREATING`
+- `UPDATE_COMPLETE`
+- `UPDATE_FAILED`
+- `UPDATING`
 
 ## ResourceTypeType
 

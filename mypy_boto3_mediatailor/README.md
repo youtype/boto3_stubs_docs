@@ -117,6 +117,7 @@ from mypy_boto3_mediatailor.literals import AccessTypeType, ...
 - [OriginManifestTypeType](./literals.md#originmanifesttypetype)
 - [PlaybackModeType](./literals.md#playbackmodetype)
 - [RelativePositionType](./literals.md#relativepositiontype)
+- [ScheduleEntryTypeType](./literals.md#scheduleentrytypetype)
 - [TypeType](./literals.md#typetype)
 
 ## Typed dictionaries
