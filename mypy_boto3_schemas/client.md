@@ -134,6 +134,7 @@ Keyword-only arguments:
 
 - `SourceArn`: `str` *(required)*
 - `Description`: `str`
+- `CrossAccount`: `bool`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 Returns
@@ -714,7 +715,7 @@ Keyword-only arguments:
 Updates the discoverer See also:
 `AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/UpdateDiscoverer>`\_
 **Request Syntax** response = client.update_discoverer( Description='string',
-DiscovererId='string' ).
+DiscovererId='string', CrossAccount=True|False ).
 
 Type annotations for `boto3.client("schemas").update_discoverer` method.
 
@@ -728,6 +729,7 @@ Keyword-only arguments:
 
 - `DiscovererId`: `str` *(required)*
 - `Description`: `str`
+- `CrossAccount`: `bool`
 
 Returns
 [UpdateDiscovererResponseTypeDef](./type_defs.md#updatediscovererresponsetypedef).

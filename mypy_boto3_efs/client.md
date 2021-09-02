@@ -326,10 +326,9 @@ Returns
 
 ### describe_account_preferences
 
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/elasti cfilesystem-2015-02-01/DescribeAccountPreferences>`\_
-**Request Syntax** response = client.describe_account_preferences(
-NextToken='string', MaxResults=123 ).
+Returns the account preferences settings for the Amazon Web Services account
+associated with the user making the request, in the current Amazon Web Services
+Region.
 
 Type annotations for `boto3.client("efs").describe_account_preferences` method.
 
@@ -553,10 +552,9 @@ Keyword-only arguments:
 
 ### put_account_preferences
 
-See also:
-`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/elasti cfilesystem-2015-02-01/PutAccountPreferences>`\_
-**Request Syntax** response = client.put_account_preferences(
-ResourceIdType='LONG_ID'|'SHORT_ID' ).
+Use this operation to set the account preference in the current Amazon Web
+Services Region to use either long 17 character (63 bit) or short 8 character
+(32 bit) IDs for new EFS file systems and mount targets created.
 
 Type annotations for `boto3.client("efs").put_account_preferences` method.
 

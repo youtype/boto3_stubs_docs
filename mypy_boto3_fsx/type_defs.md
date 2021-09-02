@@ -28,9 +28,18 @@ type annotations stubs module
   - [CreateFileSystemFromBackupRequestRequestTypeDef](#createfilesystemfrombackuprequestrequesttypedef)
   - [CreateFileSystemFromBackupResponseTypeDef](#createfilesystemfrombackupresponsetypedef)
   - [CreateFileSystemLustreConfigurationTypeDef](#createfilesystemlustreconfigurationtypedef)
+  - [CreateFileSystemOntapConfigurationTypeDef](#createfilesystemontapconfigurationtypedef)
   - [CreateFileSystemRequestRequestTypeDef](#createfilesystemrequestrequesttypedef)
   - [CreateFileSystemResponseTypeDef](#createfilesystemresponsetypedef)
   - [CreateFileSystemWindowsConfigurationTypeDef](#createfilesystemwindowsconfigurationtypedef)
+  - [CreateOntapVolumeConfigurationTypeDef](#createontapvolumeconfigurationtypedef)
+  - [CreateStorageVirtualMachineRequestRequestTypeDef](#createstoragevirtualmachinerequestrequesttypedef)
+  - [CreateStorageVirtualMachineResponseTypeDef](#createstoragevirtualmachineresponsetypedef)
+  - [CreateSvmActiveDirectoryConfigurationTypeDef](#createsvmactivedirectoryconfigurationtypedef)
+  - [CreateVolumeFromBackupRequestRequestTypeDef](#createvolumefrombackuprequestrequesttypedef)
+  - [CreateVolumeFromBackupResponseTypeDef](#createvolumefrombackupresponsetypedef)
+  - [CreateVolumeRequestRequestTypeDef](#createvolumerequestrequesttypedef)
+  - [CreateVolumeResponseTypeDef](#createvolumeresponsetypedef)
   - [DataRepositoryConfigurationTypeDef](#datarepositoryconfigurationtypedef)
   - [DataRepositoryFailureDetailsTypeDef](#datarepositoryfailuredetailstypedef)
   - [DataRepositoryTaskFailureDetailsTypeDef](#datarepositorytaskfailuredetailstypedef)
@@ -45,6 +54,12 @@ type annotations stubs module
   - [DeleteFileSystemResponseTypeDef](#deletefilesystemresponsetypedef)
   - [DeleteFileSystemWindowsConfigurationTypeDef](#deletefilesystemwindowsconfigurationtypedef)
   - [DeleteFileSystemWindowsResponseTypeDef](#deletefilesystemwindowsresponsetypedef)
+  - [DeleteStorageVirtualMachineRequestRequestTypeDef](#deletestoragevirtualmachinerequestrequesttypedef)
+  - [DeleteStorageVirtualMachineResponseTypeDef](#deletestoragevirtualmachineresponsetypedef)
+  - [DeleteVolumeOntapConfigurationTypeDef](#deletevolumeontapconfigurationtypedef)
+  - [DeleteVolumeOntapResponseTypeDef](#deletevolumeontapresponsetypedef)
+  - [DeleteVolumeRequestRequestTypeDef](#deletevolumerequestrequesttypedef)
+  - [DeleteVolumeResponseTypeDef](#deletevolumeresponsetypedef)
   - [DescribeBackupsRequestRequestTypeDef](#describebackupsrequestrequesttypedef)
   - [DescribeBackupsResponseTypeDef](#describebackupsresponsetypedef)
   - [DescribeDataRepositoryTasksRequestRequestTypeDef](#describedatarepositorytasksrequestrequesttypedef)
@@ -53,26 +68,51 @@ type annotations stubs module
   - [DescribeFileSystemAliasesResponseTypeDef](#describefilesystemaliasesresponsetypedef)
   - [DescribeFileSystemsRequestRequestTypeDef](#describefilesystemsrequestrequesttypedef)
   - [DescribeFileSystemsResponseTypeDef](#describefilesystemsresponsetypedef)
+  - [DescribeStorageVirtualMachinesRequestRequestTypeDef](#describestoragevirtualmachinesrequestrequesttypedef)
+  - [DescribeStorageVirtualMachinesResponseTypeDef](#describestoragevirtualmachinesresponsetypedef)
+  - [DescribeVolumesRequestRequestTypeDef](#describevolumesrequestrequesttypedef)
+  - [DescribeVolumesResponseTypeDef](#describevolumesresponsetypedef)
   - [DisassociateFileSystemAliasesRequestRequestTypeDef](#disassociatefilesystemaliasesrequestrequesttypedef)
   - [DisassociateFileSystemAliasesResponseTypeDef](#disassociatefilesystemaliasesresponsetypedef)
+  - [DiskIopsConfigurationTypeDef](#diskiopsconfigurationtypedef)
+  - [FileSystemEndpointTypeDef](#filesystemendpointtypedef)
+  - [FileSystemEndpointsTypeDef](#filesystemendpointstypedef)
   - [FileSystemFailureDetailsTypeDef](#filesystemfailuredetailstypedef)
   - [FileSystemTypeDef](#filesystemtypedef)
   - [FilterTypeDef](#filtertypedef)
+  - [LifecycleTransitionReasonTypeDef](#lifecycletransitionreasontypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [LustreFileSystemConfigurationTypeDef](#lustrefilesystemconfigurationtypedef)
+  - [OntapFileSystemConfigurationTypeDef](#ontapfilesystemconfigurationtypedef)
+  - [OntapVolumeConfigurationTypeDef](#ontapvolumeconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SelfManagedActiveDirectoryAttributesTypeDef](#selfmanagedactivedirectoryattributestypedef)
   - [SelfManagedActiveDirectoryConfigurationTypeDef](#selfmanagedactivedirectoryconfigurationtypedef)
   - [SelfManagedActiveDirectoryConfigurationUpdatesTypeDef](#selfmanagedactivedirectoryconfigurationupdatestypedef)
+  - [StorageVirtualMachineFilterTypeDef](#storagevirtualmachinefiltertypedef)
+  - [StorageVirtualMachineTypeDef](#storagevirtualmachinetypedef)
+  - [SvmActiveDirectoryConfigurationTypeDef](#svmactivedirectoryconfigurationtypedef)
+  - [SvmEndpointTypeDef](#svmendpointtypedef)
+  - [SvmEndpointsTypeDef](#svmendpointstypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
+  - [TieringPolicyTypeDef](#tieringpolicytypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateFileSystemLustreConfigurationTypeDef](#updatefilesystemlustreconfigurationtypedef)
+  - [UpdateFileSystemOntapConfigurationTypeDef](#updatefilesystemontapconfigurationtypedef)
   - [UpdateFileSystemRequestRequestTypeDef](#updatefilesystemrequestrequesttypedef)
   - [UpdateFileSystemResponseTypeDef](#updatefilesystemresponsetypedef)
   - [UpdateFileSystemWindowsConfigurationTypeDef](#updatefilesystemwindowsconfigurationtypedef)
+  - [UpdateOntapVolumeConfigurationTypeDef](#updateontapvolumeconfigurationtypedef)
+  - [UpdateStorageVirtualMachineRequestRequestTypeDef](#updatestoragevirtualmachinerequestrequesttypedef)
+  - [UpdateStorageVirtualMachineResponseTypeDef](#updatestoragevirtualmachineresponsetypedef)
+  - [UpdateSvmActiveDirectoryConfigurationTypeDef](#updatesvmactivedirectoryconfigurationtypedef)
+  - [UpdateVolumeRequestRequestTypeDef](#updatevolumerequestrequesttypedef)
+  - [UpdateVolumeResponseTypeDef](#updatevolumeresponsetypedef)
+  - [VolumeFilterTypeDef](#volumefiltertypedef)
+  - [VolumeTypeDef](#volumetypedef)
   - [WindowsAuditLogConfigurationTypeDef](#windowsauditlogconfigurationtypedef)
   - [WindowsAuditLogCreateConfigurationTypeDef](#windowsauditlogcreateconfigurationtypedef)
   - [WindowsFileSystemConfigurationTypeDef](#windowsfilesystemconfigurationtypedef)
@@ -116,6 +156,7 @@ Optional fields:
   [FileSystemTypeDef](./type_defs.md#filesystemtypedef)
 - `FailureDetails`:
   [AdministrativeActionFailureDetailsTypeDef](./type_defs.md#administrativeactionfailuredetailstypedef)
+- `TargetVolumeValues`: [VolumeTypeDef](./type_defs.md#volumetypedef)
 
 ## AliasTypeDef
 
@@ -192,6 +233,8 @@ Optional fields:
 - `OwnerId`: `str`
 - `SourceBackupId`: `str`
 - `SourceBackupRegion`: `str`
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+- `Volume`: [VolumeTypeDef](./type_defs.md#volumetypedef)
 
 ## CancelDataRepositoryTaskRequestRequestTypeDef
 
@@ -271,14 +314,12 @@ Required fields:
 from mypy_boto3_fsx.type_defs import CreateBackupRequestRequestTypeDef
 ```
 
-Required fields:
-
-- `FileSystemId`: `str`
-
 Optional fields:
 
+- `FileSystemId`: `str`
 - `ClientRequestToken`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VolumeId`: `str`
 
 ## CreateBackupResponseTypeDef
 
@@ -383,6 +424,30 @@ Optional fields:
 - `DataCompressionType`:
   [DataCompressionTypeType](./literals.md#datacompressiontypetype)
 
+## CreateFileSystemOntapConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateFileSystemOntapConfigurationTypeDef
+```
+
+Required fields:
+
+- `DeploymentType`: `Literal['MULTI_AZ_1']` (see
+  [OntapDeploymentTypeType](./literals.md#ontapdeploymenttypetype))
+- `ThroughputCapacity`: `int`
+
+Optional fields:
+
+- `AutomaticBackupRetentionDays`: `int`
+- `DailyAutomaticBackupStartTime`: `str`
+- `EndpointIpAddressRange`: `str`
+- `FsxAdminPassword`: `str`
+- `DiskIopsConfiguration`:
+  [DiskIopsConfigurationTypeDef](./type_defs.md#diskiopsconfigurationtypedef)
+- `PreferredSubnetId`: `str`
+- `RouteTableIds`: `List`\[`str`\]
+- `WeeklyMaintenanceStartTime`: `str`
+
 ## CreateFileSystemRequestRequestTypeDef
 
 ```python
@@ -406,6 +471,8 @@ Optional fields:
   [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
   [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
+- `OntapConfiguration`:
+  [CreateFileSystemOntapConfigurationTypeDef](./type_defs.md#createfilesystemontapconfigurationtypedef)
 
 ## CreateFileSystemResponseTypeDef
 
@@ -444,6 +511,134 @@ Optional fields:
 - `Aliases`: `List`\[`str`\]
 - `AuditLogConfiguration`:
   [WindowsAuditLogCreateConfigurationTypeDef](./type_defs.md#windowsauditlogcreateconfigurationtypedef)
+
+## CreateOntapVolumeConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateOntapVolumeConfigurationTypeDef
+```
+
+Required fields:
+
+- `JunctionPath`: `str`
+- `SizeInMegabytes`: `int`
+- `StorageEfficiencyEnabled`: `bool`
+- `StorageVirtualMachineId`: `str`
+
+Optional fields:
+
+- `SecurityStyle`: [SecurityStyleType](./literals.md#securitystyletype)
+- `TieringPolicy`: [TieringPolicyTypeDef](./type_defs.md#tieringpolicytypedef)
+
+## CreateStorageVirtualMachineRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateStorageVirtualMachineRequestRequestTypeDef
+```
+
+Required fields:
+
+- `FileSystemId`: `str`
+- `Name`: `str`
+
+Optional fields:
+
+- `ActiveDirectoryConfiguration`:
+  [CreateSvmActiveDirectoryConfigurationTypeDef](./type_defs.md#createsvmactivedirectoryconfigurationtypedef)
+- `ClientRequestToken`: `str`
+- `SvmAdminPassword`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RootVolumeSecurityStyle`:
+  [StorageVirtualMachineRootVolumeSecurityStyleType](./literals.md#storagevirtualmachinerootvolumesecuritystyletype)
+
+## CreateStorageVirtualMachineResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateStorageVirtualMachineResponseTypeDef
+```
+
+Required fields:
+
+- `StorageVirtualMachine`:
+  [StorageVirtualMachineTypeDef](./type_defs.md#storagevirtualmachinetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateSvmActiveDirectoryConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateSvmActiveDirectoryConfigurationTypeDef
+```
+
+Required fields:
+
+- `NetBiosName`: `str`
+
+Optional fields:
+
+- `SelfManagedActiveDirectoryConfiguration`:
+  [SelfManagedActiveDirectoryConfigurationTypeDef](./type_defs.md#selfmanagedactivedirectoryconfigurationtypedef)
+
+## CreateVolumeFromBackupRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateVolumeFromBackupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `BackupId`: `str`
+- `Name`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+- `OntapConfiguration`:
+  [CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateVolumeFromBackupResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateVolumeFromBackupResponseTypeDef
+```
+
+Required fields:
+
+- `Volume`: [VolumeTypeDef](./type_defs.md#volumetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateVolumeRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateVolumeRequestRequestTypeDef
+```
+
+Required fields:
+
+- `VolumeType`: `Literal['ONTAP']` (see
+  [VolumeTypeType](./literals.md#volumetypetype))
+- `Name`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+- `OntapConfiguration`:
+  [CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef)
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateVolumeResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import CreateVolumeResponseTypeDef
+```
+
+Required fields:
+
+- `Volume`: [VolumeTypeDef](./type_defs.md#volumetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DataRepositoryConfigurationTypeDef
 
@@ -643,6 +838,87 @@ Optional fields:
 - `FinalBackupId`: `str`
 - `FinalBackupTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+## DeleteStorageVirtualMachineRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteStorageVirtualMachineRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StorageVirtualMachineId`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+
+## DeleteStorageVirtualMachineResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteStorageVirtualMachineResponseTypeDef
+```
+
+Required fields:
+
+- `StorageVirtualMachineId`: `str`
+- `Lifecycle`:
+  [StorageVirtualMachineLifecycleType](./literals.md#storagevirtualmachinelifecycletype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeleteVolumeOntapConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteVolumeOntapConfigurationTypeDef
+```
+
+Optional fields:
+
+- `SkipFinalBackup`: `bool`
+- `FinalBackupTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## DeleteVolumeOntapResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteVolumeOntapResponseTypeDef
+```
+
+Optional fields:
+
+- `FinalBackupId`: `str`
+- `FinalBackupTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## DeleteVolumeRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteVolumeRequestRequestTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+- `OntapConfiguration`:
+  [DeleteVolumeOntapConfigurationTypeDef](./type_defs.md#deletevolumeontapconfigurationtypedef)
+
+## DeleteVolumeResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DeleteVolumeResponseTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+- `Lifecycle`: [VolumeLifecycleType](./literals.md#volumelifecycletype)
+- `OntapResponse`:
+  [DeleteVolumeOntapResponseTypeDef](./type_defs.md#deletevolumeontapresponsetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeBackupsRequestRequestTypeDef
 
 ```python
@@ -752,6 +1028,61 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeStorageVirtualMachinesRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DescribeStorageVirtualMachinesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `StorageVirtualMachineIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[StorageVirtualMachineFilterTypeDef](./type_defs.md#storagevirtualmachinefiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeStorageVirtualMachinesResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DescribeStorageVirtualMachinesResponseTypeDef
+```
+
+Required fields:
+
+- `StorageVirtualMachines`:
+  `List`\[[StorageVirtualMachineTypeDef](./type_defs.md#storagevirtualmachinetypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeVolumesRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DescribeVolumesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `VolumeIds`: `List`\[`str`\]
+- `Filters`:
+  `List`\[[VolumeFilterTypeDef](./type_defs.md#volumefiltertypedef)\]
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## DescribeVolumesResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DescribeVolumesResponseTypeDef
+```
+
+Required fields:
+
+- `Volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DisassociateFileSystemAliasesRequestRequestTypeDef
 
 ```python
@@ -778,6 +1109,42 @@ Required fields:
 - `Aliases`: `List`\[[AliasTypeDef](./type_defs.md#aliastypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DiskIopsConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import DiskIopsConfigurationTypeDef
+```
+
+Optional fields:
+
+- `Mode`:
+  [DiskIopsConfigurationModeType](./literals.md#diskiopsconfigurationmodetype)
+- `Iops`: `int`
+
+## FileSystemEndpointTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import FileSystemEndpointTypeDef
+```
+
+Optional fields:
+
+- `DNSName`: `str`
+- `IpAddresses`: `List`\[`str`\]
+
+## FileSystemEndpointsTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import FileSystemEndpointsTypeDef
+```
+
+Optional fields:
+
+- `Intercluster`:
+  [FileSystemEndpointTypeDef](./type_defs.md#filesystemendpointtypedef)
+- `Management`:
+  [FileSystemEndpointTypeDef](./type_defs.md#filesystemendpointtypedef)
 
 ## FileSystemFailureDetailsTypeDef
 
@@ -819,6 +1186,8 @@ Optional fields:
   [LustreFileSystemConfigurationTypeDef](./type_defs.md#lustrefilesystemconfigurationtypedef)
 - `AdministrativeActions`:
   `List`\[[AdministrativeActionTypeDef](./type_defs.md#administrativeactiontypedef)\]
+- `OntapConfiguration`:
+  [OntapFileSystemConfigurationTypeDef](./type_defs.md#ontapfilesystemconfigurationtypedef)
 
 ## FilterTypeDef
 
@@ -830,6 +1199,16 @@ Optional fields:
 
 - `Name`: [FilterNameType](./literals.md#filternametype)
 - `Values`: `List`\[`str`\]
+
+## LifecycleTransitionReasonTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import LifecycleTransitionReasonTypeDef
+```
+
+Optional fields:
+
+- `Message`: `str`
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -880,6 +1259,48 @@ Optional fields:
 - `DriveCacheType`: [DriveCacheTypeType](./literals.md#drivecachetypetype)
 - `DataCompressionType`:
   [DataCompressionTypeType](./literals.md#datacompressiontypetype)
+
+## OntapFileSystemConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import OntapFileSystemConfigurationTypeDef
+```
+
+Optional fields:
+
+- `AutomaticBackupRetentionDays`: `int`
+- `DailyAutomaticBackupStartTime`: `str`
+- `DeploymentType`: `Literal['MULTI_AZ_1']` (see
+  [OntapDeploymentTypeType](./literals.md#ontapdeploymenttypetype))
+- `EndpointIpAddressRange`: `str`
+- `Endpoints`:
+  [FileSystemEndpointsTypeDef](./type_defs.md#filesystemendpointstypedef)
+- `DiskIopsConfiguration`:
+  [DiskIopsConfigurationTypeDef](./type_defs.md#diskiopsconfigurationtypedef)
+- `PreferredSubnetId`: `str`
+- `RouteTableIds`: `List`\[`str`\]
+- `ThroughputCapacity`: `int`
+- `WeeklyMaintenanceStartTime`: `str`
+
+## OntapVolumeConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import OntapVolumeConfigurationTypeDef
+```
+
+Optional fields:
+
+- `FlexCacheEndpointType`:
+  [FlexCacheEndpointTypeType](./literals.md#flexcacheendpointtypetype)
+- `JunctionPath`: `str`
+- `SecurityStyle`: [SecurityStyleType](./literals.md#securitystyletype)
+- `SizeInMegabytes`: `int`
+- `StorageEfficiencyEnabled`: `bool`
+- `StorageVirtualMachineId`: `str`
+- `StorageVirtualMachineRoot`: `bool`
+- `TieringPolicy`: [TieringPolicyTypeDef](./type_defs.md#tieringpolicytypedef)
+- `UUID`: `str`
+- `OntapVolumeType`: [OntapVolumeTypeType](./literals.md#ontapvolumetypetype)
 
 ## PaginatorConfigTypeDef
 
@@ -951,6 +1372,81 @@ Optional fields:
 - `Password`: `str`
 - `DnsIps`: `List`\[`str`\]
 
+## StorageVirtualMachineFilterTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import StorageVirtualMachineFilterTypeDef
+```
+
+Optional fields:
+
+- `Name`: `Literal['file-system-id']` (see
+  [StorageVirtualMachineFilterNameType](./literals.md#storagevirtualmachinefilternametype))
+- `Values`: `List`\[`str`\]
+
+## StorageVirtualMachineTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import StorageVirtualMachineTypeDef
+```
+
+Optional fields:
+
+- `ActiveDirectoryConfiguration`:
+  [SvmActiveDirectoryConfigurationTypeDef](./type_defs.md#svmactivedirectoryconfigurationtypedef)
+- `CreationTime`: `datetime`
+- `Endpoints`: [SvmEndpointsTypeDef](./type_defs.md#svmendpointstypedef)
+- `FileSystemId`: `str`
+- `Lifecycle`:
+  [StorageVirtualMachineLifecycleType](./literals.md#storagevirtualmachinelifecycletype)
+- `Name`: `str`
+- `ResourceARN`: `str`
+- `StorageVirtualMachineId`: `str`
+- `Subtype`:
+  [StorageVirtualMachineSubtypeType](./literals.md#storagevirtualmachinesubtypetype)
+- `UUID`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `LifecycleTransitionReason`:
+  [LifecycleTransitionReasonTypeDef](./type_defs.md#lifecycletransitionreasontypedef)
+- `RootVolumeSecurityStyle`:
+  [StorageVirtualMachineRootVolumeSecurityStyleType](./literals.md#storagevirtualmachinerootvolumesecuritystyletype)
+
+## SvmActiveDirectoryConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import SvmActiveDirectoryConfigurationTypeDef
+```
+
+Optional fields:
+
+- `NetBiosName`: `str`
+- `SelfManagedActiveDirectoryConfiguration`:
+  [SelfManagedActiveDirectoryAttributesTypeDef](./type_defs.md#selfmanagedactivedirectoryattributestypedef)
+
+## SvmEndpointTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import SvmEndpointTypeDef
+```
+
+Optional fields:
+
+- `DNSName`: `str`
+- `IpAddresses`: `List`\[`str`\]
+
+## SvmEndpointsTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import SvmEndpointsTypeDef
+```
+
+Optional fields:
+
+- `Iscsi`: [SvmEndpointTypeDef](./type_defs.md#svmendpointtypedef)
+- `Management`: [SvmEndpointTypeDef](./type_defs.md#svmendpointtypedef)
+- `Nfs`: [SvmEndpointTypeDef](./type_defs.md#svmendpointtypedef)
+- `Smb`: [SvmEndpointTypeDef](./type_defs.md#svmendpointtypedef)
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -972,6 +1468,17 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+## TieringPolicyTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import TieringPolicyTypeDef
+```
+
+Optional fields:
+
+- `CoolingPeriod`: `int`
+- `Name`: [TieringPolicyNameType](./literals.md#tieringpolicynametype)
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1000,6 +1507,19 @@ Optional fields:
 - `DataCompressionType`:
   [DataCompressionTypeType](./literals.md#datacompressiontypetype)
 
+## UpdateFileSystemOntapConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateFileSystemOntapConfigurationTypeDef
+```
+
+Optional fields:
+
+- `AutomaticBackupRetentionDays`: `int`
+- `DailyAutomaticBackupStartTime`: `str`
+- `FsxAdminPassword`: `str`
+- `WeeklyMaintenanceStartTime`: `str`
+
 ## UpdateFileSystemRequestRequestTypeDef
 
 ```python
@@ -1018,6 +1538,8 @@ Optional fields:
   [UpdateFileSystemWindowsConfigurationTypeDef](./type_defs.md#updatefilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
   [UpdateFileSystemLustreConfigurationTypeDef](./type_defs.md#updatefilesystemlustreconfigurationtypedef)
+- `OntapConfiguration`:
+  [UpdateFileSystemOntapConfigurationTypeDef](./type_defs.md#updatefilesystemontapconfigurationtypedef)
 
 ## UpdateFileSystemResponseTypeDef
 
@@ -1047,6 +1569,122 @@ Optional fields:
   [SelfManagedActiveDirectoryConfigurationUpdatesTypeDef](./type_defs.md#selfmanagedactivedirectoryconfigurationupdatestypedef)
 - `AuditLogConfiguration`:
   [WindowsAuditLogCreateConfigurationTypeDef](./type_defs.md#windowsauditlogcreateconfigurationtypedef)
+
+## UpdateOntapVolumeConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateOntapVolumeConfigurationTypeDef
+```
+
+Optional fields:
+
+- `JunctionPath`: `str`
+- `SecurityStyle`: [SecurityStyleType](./literals.md#securitystyletype)
+- `SizeInMegabytes`: `int`
+- `StorageEfficiencyEnabled`: `bool`
+- `TieringPolicy`: [TieringPolicyTypeDef](./type_defs.md#tieringpolicytypedef)
+
+## UpdateStorageVirtualMachineRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateStorageVirtualMachineRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StorageVirtualMachineId`: `str`
+
+Optional fields:
+
+- `ActiveDirectoryConfiguration`:
+  [UpdateSvmActiveDirectoryConfigurationTypeDef](./type_defs.md#updatesvmactivedirectoryconfigurationtypedef)
+- `ClientRequestToken`: `str`
+- `SvmAdminPassword`: `str`
+
+## UpdateStorageVirtualMachineResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateStorageVirtualMachineResponseTypeDef
+```
+
+Required fields:
+
+- `StorageVirtualMachine`:
+  [StorageVirtualMachineTypeDef](./type_defs.md#storagevirtualmachinetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateSvmActiveDirectoryConfigurationTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateSvmActiveDirectoryConfigurationTypeDef
+```
+
+Optional fields:
+
+- `SelfManagedActiveDirectoryConfiguration`:
+  [SelfManagedActiveDirectoryConfigurationUpdatesTypeDef](./type_defs.md#selfmanagedactivedirectoryconfigurationupdatestypedef)
+
+## UpdateVolumeRequestRequestTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateVolumeRequestRequestTypeDef
+```
+
+Required fields:
+
+- `VolumeId`: `str`
+
+Optional fields:
+
+- `ClientRequestToken`: `str`
+- `OntapConfiguration`:
+  [UpdateOntapVolumeConfigurationTypeDef](./type_defs.md#updateontapvolumeconfigurationtypedef)
+
+## UpdateVolumeResponseTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import UpdateVolumeResponseTypeDef
+```
+
+Required fields:
+
+- `Volume`: [VolumeTypeDef](./type_defs.md#volumetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## VolumeFilterTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import VolumeFilterTypeDef
+```
+
+Optional fields:
+
+- `Name`: [VolumeFilterNameType](./literals.md#volumefilternametype)
+- `Values`: `List`\[`str`\]
+
+## VolumeTypeDef
+
+```python
+from mypy_boto3_fsx.type_defs import VolumeTypeDef
+```
+
+Optional fields:
+
+- `CreationTime`: `datetime`
+- `FileSystemId`: `str`
+- `Lifecycle`: [VolumeLifecycleType](./literals.md#volumelifecycletype)
+- `Name`: `str`
+- `OntapConfiguration`:
+  [OntapVolumeConfigurationTypeDef](./type_defs.md#ontapvolumeconfigurationtypedef)
+- `ResourceARN`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VolumeId`: `str`
+- `VolumeType`: `Literal['ONTAP']` (see
+  [VolumeTypeType](./literals.md#volumetypetype))
+- `LifecycleTransitionReason`:
+  [LifecycleTransitionReasonTypeDef](./type_defs.md#lifecycletransitionreasontypedef)
 
 ## WindowsAuditLogConfigurationTypeDef
 

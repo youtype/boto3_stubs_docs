@@ -12,6 +12,7 @@ type annotations stubs module
   - [AnalysisFilterAttributeType](#analysisfilterattributetype)
   - [AssignmentStatusType](#assignmentstatustype)
   - [ColumnDataTypeType](#columndatatypetype)
+  - [ColumnTagNameType](#columntagnametype)
   - [DashboardBehaviorType](#dashboardbehaviortype)
   - [DashboardErrorTypeType](#dashboarderrortypetype)
   - [DashboardFilterAttributeType](#dashboardfilterattributetype)
@@ -115,6 +116,17 @@ Values:
 - `DECIMAL`
 - `INTEGER`
 - `STRING`
+
+## ColumnTagNameType
+
+```python
+from mypy_boto3_quicksight.literals import ColumnTagNameType
+```
+
+Values:
+
+- `COLUMN_DESCRIPTION`
+- `COLUMN_GEOGRAPHIC_ROLE`
 
 ## DashboardBehaviorType
 

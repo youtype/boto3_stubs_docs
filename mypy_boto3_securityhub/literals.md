@@ -10,9 +10,14 @@ type annotations stubs module
 - [Literals for boto3 SecurityHub module](#literals-for-boto3-securityhub-module)
   - [AdminStatusType](#adminstatustype)
   - [AwsIamAccessKeyStatusType](#awsiamaccesskeystatustype)
+  - [AwsS3BucketNotificationConfigurationS3KeyFilterRuleNameType](#awss3bucketnotificationconfigurations3keyfilterrulenametype)
   - [ComplianceStatusType](#compliancestatustype)
   - [ControlStatusType](#controlstatustype)
   - [DateRangeUnitType](#daterangeunittype)
+  - [DescribeActionTargetsPaginatorName](#describeactiontargetspaginatorname)
+  - [DescribeProductsPaginatorName](#describeproductspaginatorname)
+  - [DescribeStandardsControlsPaginatorName](#describestandardscontrolspaginatorname)
+  - [DescribeStandardsPaginatorName](#describestandardspaginatorname)
   - [GetEnabledStandardsPaginatorName](#getenabledstandardspaginatorname)
   - [GetFindingsPaginatorName](#getfindingspaginatorname)
   - [GetInsightsPaginatorName](#getinsightspaginatorname)
@@ -20,6 +25,7 @@ type annotations stubs module
   - [ListEnabledProductsForImportPaginatorName](#listenabledproductsforimportpaginatorname)
   - [ListInvitationsPaginatorName](#listinvitationspaginatorname)
   - [ListMembersPaginatorName](#listmemberspaginatorname)
+  - [ListOrganizationAdminAccountsPaginatorName](#listorganizationadminaccountspaginatorname)
   - [MalwareStateType](#malwarestatetype)
   - [MalwareTypeType](#malwaretypetype)
   - [MapFilterComparisonType](#mapfiltercomparisontype)
@@ -59,6 +65,17 @@ Values:
 - `Active`
 - `Inactive`
 
+## AwsS3BucketNotificationConfigurationS3KeyFilterRuleNameType
+
+```python
+from mypy_boto3_securityhub.literals import AwsS3BucketNotificationConfigurationS3KeyFilterRuleNameType
+```
+
+Values:
+
+- `Prefix`
+- `Suffix`
+
 ## ComplianceStatusType
 
 ```python
@@ -92,6 +109,46 @@ from mypy_boto3_securityhub.literals import DateRangeUnitType
 Values:
 
 - `DAYS`
+
+## DescribeActionTargetsPaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import DescribeActionTargetsPaginatorName
+```
+
+Values:
+
+- `describe_action_targets`
+
+## DescribeProductsPaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import DescribeProductsPaginatorName
+```
+
+Values:
+
+- `describe_products`
+
+## DescribeStandardsControlsPaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import DescribeStandardsControlsPaginatorName
+```
+
+Values:
+
+- `describe_standards_controls`
+
+## DescribeStandardsPaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import DescribeStandardsPaginatorName
+```
+
+Values:
+
+- `describe_standards`
 
 ## GetEnabledStandardsPaginatorName
 
@@ -164,6 +221,16 @@ from mypy_boto3_securityhub.literals import ListMembersPaginatorName
 Values:
 
 - `list_members`
+
+## ListOrganizationAdminAccountsPaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import ListOrganizationAdminAccountsPaginatorName
+```
+
+Values:
+
+- `list_organization_admin_accounts`
 
 ## MalwareStateType
 

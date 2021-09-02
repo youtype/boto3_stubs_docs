@@ -8,12 +8,120 @@ type annotations stubs module
 [mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
 - [Paginators for boto3 SecurityHub module](#paginators-for-boto3-securityhub-module)
+  - [DescribeActionTargetsPaginator](#describeactiontargetspaginator)
+  - [DescribeProductsPaginator](#describeproductspaginator)
+  - [DescribeStandardsPaginator](#describestandardspaginator)
+  - [DescribeStandardsControlsPaginator](#describestandardscontrolspaginator)
   - [GetEnabledStandardsPaginator](#getenabledstandardspaginator)
   - [GetFindingsPaginator](#getfindingspaginator)
   - [GetInsightsPaginator](#getinsightspaginator)
   - [ListEnabledProductsForImportPaginator](#listenabledproductsforimportpaginator)
   - [ListInvitationsPaginator](#listinvitationspaginator)
   - [ListMembersPaginator](#listmemberspaginator)
+  - [ListOrganizationAdminAccountsPaginator](#listorganizationadminaccountspaginator)
+
+## DescribeActionTargetsPaginator
+
+Type annotations for
+`boto3.client("securityhub").get_paginator("describe_action_targets")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_securityhub.paginator import DescribeActionTargetsPaginator
+
+def get_describe_action_targets_paginator() -> DescribeActionTargetsPaginator:
+    return boto3.client("securityhub").get_paginator("describe_action_targets")
+```
+
+Boto3 documentation:
+[SecurityHub.Paginator.DescribeActionTargets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.DescribeActionTargets)
+
+Arguments for `DescribeActionTargetsPaginator.paginate` method:
+
+- `ActionTargetArns`: `List`\[`str`\]
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeActionTargetsPaginator.paginate` returns
+`_PageIterator`\[[DescribeActionTargetsResponseTypeDef](./type_defs.md#describeactiontargetsresponsetypedef)\].
+
+## DescribeProductsPaginator
+
+Type annotations for
+`boto3.client("securityhub").get_paginator("describe_products")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_securityhub.paginator import DescribeProductsPaginator
+
+def get_describe_products_paginator() -> DescribeProductsPaginator:
+    return boto3.client("securityhub").get_paginator("describe_products")
+```
+
+Boto3 documentation:
+[SecurityHub.Paginator.DescribeProducts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.DescribeProducts)
+
+Arguments for `DescribeProductsPaginator.paginate` method:
+
+- `ProductArn`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeProductsPaginator.paginate` returns
+`_PageIterator`\[[DescribeProductsResponseTypeDef](./type_defs.md#describeproductsresponsetypedef)\].
+
+## DescribeStandardsPaginator
+
+Type annotations for
+`boto3.client("securityhub").get_paginator("describe_standards")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_securityhub.paginator import DescribeStandardsPaginator
+
+def get_describe_standards_paginator() -> DescribeStandardsPaginator:
+    return boto3.client("securityhub").get_paginator("describe_standards")
+```
+
+Boto3 documentation:
+[SecurityHub.Paginator.DescribeStandards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.DescribeStandards)
+
+Arguments for `DescribeStandardsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeStandardsPaginator.paginate` returns
+`_PageIterator`\[[DescribeStandardsResponseTypeDef](./type_defs.md#describestandardsresponsetypedef)\].
+
+## DescribeStandardsControlsPaginator
+
+Type annotations for
+`boto3.client("securityhub").get_paginator("describe_standards_controls")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_securityhub.paginator import DescribeStandardsControlsPaginator
+
+def get_describe_standards_controls_paginator() -> DescribeStandardsControlsPaginator:
+    return boto3.client("securityhub").get_paginator("describe_standards_controls")
+```
+
+Boto3 documentation:
+[SecurityHub.Paginator.DescribeStandardsControls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.DescribeStandardsControls)
+
+Arguments for `DescribeStandardsControlsPaginator.paginate` method:
+
+- `StandardsSubscriptionArn`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeStandardsControlsPaginator.paginate` returns
+`_PageIterator`\[[DescribeStandardsControlsResponseTypeDef](./type_defs.md#describestandardscontrolsresponsetypedef)\].
 
 ## GetEnabledStandardsPaginator
 
@@ -171,3 +279,28 @@ Arguments for `ListMembersPaginator.paginate` method:
 
 `ListMembersPaginator.paginate` returns
 `_PageIterator`\[[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)\].
+
+## ListOrganizationAdminAccountsPaginator
+
+Type annotations for
+`boto3.client("securityhub").get_paginator("list_organization_admin_accounts")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_securityhub.paginator import ListOrganizationAdminAccountsPaginator
+
+def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAccountsPaginator:
+    return boto3.client("securityhub").get_paginator("list_organization_admin_accounts")
+```
+
+Boto3 documentation:
+[SecurityHub.Paginator.ListOrganizationAdminAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListOrganizationAdminAccounts)
+
+Arguments for `ListOrganizationAdminAccountsPaginator.paginate` method:
+
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListOrganizationAdminAccountsPaginator.paginate` returns
+`_PageIterator`\[[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)\].

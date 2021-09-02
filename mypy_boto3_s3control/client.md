@@ -17,6 +17,7 @@ type annotations stubs module
     - [create_access_point_for_object_lambda](#create_access_point_for_object_lambda)
     - [create_bucket](#create_bucket)
     - [create_job](#create_job)
+    - [create_multi_region_access_point](#create_multi_region_access_point)
     - [delete_access_point](#delete_access_point)
     - [delete_access_point_for_object_lambda](#delete_access_point_for_object_lambda)
     - [delete_access_point_policy](#delete_access_point_policy)
@@ -26,10 +27,12 @@ type annotations stubs module
     - [delete_bucket_policy](#delete_bucket_policy)
     - [delete_bucket_tagging](#delete_bucket_tagging)
     - [delete_job_tagging](#delete_job_tagging)
+    - [delete_multi_region_access_point](#delete_multi_region_access_point)
     - [delete_public_access_block](#delete_public_access_block)
     - [delete_storage_lens_configuration](#delete_storage_lens_configuration)
     - [delete_storage_lens_configuration_tagging](#delete_storage_lens_configuration_tagging)
     - [describe_job](#describe_job)
+    - [describe_multi_region_access_point_operation](#describe_multi_region_access_point_operation)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_access_point](#get_access_point)
     - [get_access_point_configuration_for_object_lambda](#get_access_point_configuration_for_object_lambda)
@@ -43,12 +46,16 @@ type annotations stubs module
     - [get_bucket_policy](#get_bucket_policy)
     - [get_bucket_tagging](#get_bucket_tagging)
     - [get_job_tagging](#get_job_tagging)
+    - [get_multi_region_access_point](#get_multi_region_access_point)
+    - [get_multi_region_access_point_policy](#get_multi_region_access_point_policy)
+    - [get_multi_region_access_point_policy_status](#get_multi_region_access_point_policy_status)
     - [get_public_access_block](#get_public_access_block)
     - [get_storage_lens_configuration](#get_storage_lens_configuration)
     - [get_storage_lens_configuration_tagging](#get_storage_lens_configuration_tagging)
     - [list_access_points](#list_access_points)
     - [list_access_points_for_object_lambda](#list_access_points_for_object_lambda)
     - [list_jobs](#list_jobs)
+    - [list_multi_region_access_points](#list_multi_region_access_points)
     - [list_regional_buckets](#list_regional_buckets)
     - [list_storage_lens_configurations](#list_storage_lens_configurations)
     - [put_access_point_configuration_for_object_lambda](#put_access_point_configuration_for_object_lambda)
@@ -58,6 +65,7 @@ type annotations stubs module
     - [put_bucket_policy](#put_bucket_policy)
     - [put_bucket_tagging](#put_bucket_tagging)
     - [put_job_tagging](#put_job_tagging)
+    - [put_multi_region_access_point_policy](#put_multi_region_access_point_policy)
     - [put_public_access_block](#put_public_access_block)
     - [put_storage_lens_configuration](#put_storage_lens_configuration)
     - [put_storage_lens_configuration_tagging](#put_storage_lens_configuration_tagging)
@@ -244,6 +252,31 @@ Keyword-only arguments:
 
 Returns [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef).
 
+### create_multi_region_access_point
+
+Creates a Multi-Region Access Point and associates it with the specified
+buckets.
+
+Type annotations for
+`boto3.client("s3control").create_multi_region_access_point` method.
+
+Boto3 documentation:
+[S3Control.Client.create_multi_region_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_multi_region_access_point)
+
+Arguments mapping described in
+[CreateMultiRegionAccessPointRequestRequestTypeDef](./type_defs.md#createmultiregionaccesspointrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccountId`: `str` *(required)*
+- `ClientToken`: `str` *(required)*
+- `Details`:
+  [CreateMultiRegionAccessPointInputTypeDef](./type_defs.md#createmultiregionaccesspointinputtypedef)
+  *(required)*
+
+Returns
+[CreateMultiRegionAccessPointResultTypeDef](./type_defs.md#createmultiregionaccesspointresulttypedef).
+
 ### delete_access_point
 
 Deletes the specified access point.
@@ -404,9 +437,34 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### delete_multi_region_access_point
+
+Deletes a Multi-Region Access Point.
+
+Type annotations for
+`boto3.client("s3control").delete_multi_region_access_point` method.
+
+Boto3 documentation:
+[S3Control.Client.delete_multi_region_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_multi_region_access_point)
+
+Arguments mapping described in
+[DeleteMultiRegionAccessPointRequestRequestTypeDef](./type_defs.md#deletemultiregionaccesspointrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccountId`: `str` *(required)*
+- `ClientToken`: `str` *(required)*
+- `Details`:
+  [DeleteMultiRegionAccessPointInputTypeDef](./type_defs.md#deletemultiregionaccesspointinputtypedef)
+  *(required)*
+
+Returns
+[DeleteMultiRegionAccessPointResultTypeDef](./type_defs.md#deletemultiregionaccesspointresulttypedef).
+
 ### delete_public_access_block
 
-Removes the `PublicAccessBlock` configuration for an account.
+Removes the `PublicAccessBlock` configuration for an Amazon Web Services
+account.
 
 Type annotations for `boto3.client("s3control").delete_public_access_block`
 method.
@@ -477,6 +535,29 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns [DescribeJobResultTypeDef](./type_defs.md#describejobresulttypedef).
+
+### describe_multi_region_access_point_operation
+
+Retrieves the status of an asynchronous request to manage a Multi-Region Access
+Point.
+
+Type annotations for
+`boto3.client("s3control").describe_multi_region_access_point_operation`
+method.
+
+Boto3 documentation:
+[S3Control.Client.describe_multi_region_access_point_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.describe_multi_region_access_point_operation)
+
+Arguments mapping described in
+[DescribeMultiRegionAccessPointOperationRequestRequestTypeDef](./type_defs.md#describemultiregionaccesspointoperationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccountId`: `str` *(required)*
+- `RequestTokenARN`: `str` *(required)*
+
+Returns
+[DescribeMultiRegionAccessPointOperationResultTypeDef](./type_defs.md#describemultiregionaccesspointoperationresulttypedef).
 
 ### generate_presigned_url
 
@@ -748,9 +829,75 @@ Keyword-only arguments:
 Returns
 [GetJobTaggingResultTypeDef](./type_defs.md#getjobtaggingresulttypedef).
 
+### get_multi_region_access_point
+
+Returns configuration information about the specified Multi-Region Access
+Point.
+
+Type annotations for `boto3.client("s3control").get_multi_region_access_point`
+method.
+
+Boto3 documentation:
+[S3Control.Client.get_multi_region_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_multi_region_access_point)
+
+Arguments mapping described in
+[GetMultiRegionAccessPointRequestRequestTypeDef](./type_defs.md#getmultiregionaccesspointrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[GetMultiRegionAccessPointResultTypeDef](./type_defs.md#getmultiregionaccesspointresulttypedef).
+
+### get_multi_region_access_point_policy
+
+Returns the access control policy of the specified Multi-Region Access Point.
+
+Type annotations for
+`boto3.client("s3control").get_multi_region_access_point_policy` method.
+
+Boto3 documentation:
+[S3Control.Client.get_multi_region_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_multi_region_access_point_policy)
+
+Arguments mapping described in
+[GetMultiRegionAccessPointPolicyRequestRequestTypeDef](./type_defs.md#getmultiregionaccesspointpolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[GetMultiRegionAccessPointPolicyResultTypeDef](./type_defs.md#getmultiregionaccesspointpolicyresulttypedef).
+
+### get_multi_region_access_point_policy_status
+
+Indicates whether the specified Multi-Region Access Point has an access control
+policy that allows public access.
+
+Type annotations for
+`boto3.client("s3control").get_multi_region_access_point_policy_status` method.
+
+Boto3 documentation:
+[S3Control.Client.get_multi_region_access_point_policy_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_multi_region_access_point_policy_status)
+
+Arguments mapping described in
+[GetMultiRegionAccessPointPolicyStatusRequestRequestTypeDef](./type_defs.md#getmultiregionaccesspointpolicystatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccountId`: `str` *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[GetMultiRegionAccessPointPolicyStatusResultTypeDef](./type_defs.md#getmultiregionaccesspointpolicystatusresulttypedef).
+
 ### get_public_access_block
 
-Retrieves the `PublicAccessBlock` configuration for an account.
+Retrieves the `PublicAccessBlock` configuration for an Amazon Web Services
+account.
 
 Type annotations for `boto3.client("s3control").get_public_access_block`
 method.
@@ -859,7 +1006,7 @@ Returns
 ### list_jobs
 
 Lists current S3 Batch Operations jobs and jobs that have ended within the last
-30 days for the account making the request.
+30 days for the Amazon Web Services account making the request.
 
 Type annotations for `boto3.client("s3control").list_jobs` method.
 
@@ -877,6 +1024,29 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
+
+### list_multi_region_access_points
+
+Returns a list of the Multi-Region Access Points currently associated with the
+specified Amazon Web Services account.
+
+Type annotations for
+`boto3.client("s3control").list_multi_region_access_points` method.
+
+Boto3 documentation:
+[S3Control.Client.list_multi_region_access_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_multi_region_access_points)
+
+Arguments mapping described in
+[ListMultiRegionAccessPointsRequestRequestTypeDef](./type_defs.md#listmultiregionaccesspointsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccountId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMultiRegionAccessPointsResultTypeDef](./type_defs.md#listmultiregionaccesspointsresulttypedef).
 
 ### list_regional_buckets
 
@@ -1059,9 +1229,35 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### put_multi_region_access_point_policy
+
+Associates an access control policy with the specified Multi-Region Access
+Point.
+
+Type annotations for
+`boto3.client("s3control").put_multi_region_access_point_policy` method.
+
+Boto3 documentation:
+[S3Control.Client.put_multi_region_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_multi_region_access_point_policy)
+
+Arguments mapping described in
+[PutMultiRegionAccessPointPolicyRequestRequestTypeDef](./type_defs.md#putmultiregionaccesspointpolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccountId`: `str` *(required)*
+- `ClientToken`: `str` *(required)*
+- `Details`:
+  [PutMultiRegionAccessPointPolicyInputTypeDef](./type_defs.md#putmultiregionaccesspointpolicyinputtypedef)
+  *(required)*
+
+Returns
+[PutMultiRegionAccessPointPolicyResultTypeDef](./type_defs.md#putmultiregionaccesspointpolicyresulttypedef).
+
 ### put_public_access_block
 
-Creates or modifies the `PublicAccessBlock` configuration for an account.
+Creates or modifies the `PublicAccessBlock` configuration for an Amazon Web
+Services account.
 
 Type annotations for `boto3.client("s3control").put_public_access_block`
 method.

@@ -256,6 +256,7 @@ Values:
 - `fr-FR`
 - `it-IT`
 - `ja-JP`
+- `ko-KR`
 
 ## LogTypeType
 

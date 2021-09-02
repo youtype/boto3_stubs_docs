@@ -552,6 +552,8 @@ Optional fields:
 
 - `TransitionToIA`:
   [TransitionToIARulesType](./literals.md#transitiontoiarulestype)
+- `TransitionToPrimaryStorageClass`: `Literal['AFTER_1_ACCESS']` (see
+  [TransitionToPrimaryStorageClassRulesType](./literals.md#transitiontoprimarystorageclassrulestype))
 
 ## ListTagsForResourceRequestRequestTypeDef
 

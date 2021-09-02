@@ -202,6 +202,7 @@ from mypy_boto3_acm_pca.type_defs import ASN1SubjectTypeDef, ...
 - [ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef)
 - [ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef)
 - [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)
+- [OcspConfigurationTypeDef](./type_defs.md#ocspconfigurationtypedef)
 - [OtherNameTypeDef](./type_defs.md#othernametypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PermissionTypeDef](./type_defs.md#permissiontypedef)

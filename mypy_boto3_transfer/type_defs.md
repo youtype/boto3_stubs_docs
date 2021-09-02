@@ -8,35 +8,55 @@ type annotations stubs module
 [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 - [Typed dictionaries for boto3 Transfer module](#typed-dictionaries-for-boto3-transfer-module)
+  - [CopyStepDetailsTypeDef](#copystepdetailstypedef)
   - [CreateAccessRequestRequestTypeDef](#createaccessrequestrequesttypedef)
   - [CreateAccessResponseTypeDef](#createaccessresponsetypedef)
   - [CreateServerRequestRequestTypeDef](#createserverrequestrequesttypedef)
   - [CreateServerResponseTypeDef](#createserverresponsetypedef)
   - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
   - [CreateUserResponseTypeDef](#createuserresponsetypedef)
+  - [CreateWorkflowRequestRequestTypeDef](#createworkflowrequestrequesttypedef)
+  - [CreateWorkflowResponseTypeDef](#createworkflowresponsetypedef)
+  - [CustomStepDetailsTypeDef](#customstepdetailstypedef)
   - [DeleteAccessRequestRequestTypeDef](#deleteaccessrequestrequesttypedef)
   - [DeleteServerRequestRequestTypeDef](#deleteserverrequestrequesttypedef)
   - [DeleteSshPublicKeyRequestRequestTypeDef](#deletesshpublickeyrequestrequesttypedef)
+  - [DeleteStepDetailsTypeDef](#deletestepdetailstypedef)
   - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
+  - [DeleteWorkflowRequestRequestTypeDef](#deleteworkflowrequestrequesttypedef)
   - [DescribeAccessRequestRequestTypeDef](#describeaccessrequestrequesttypedef)
   - [DescribeAccessResponseTypeDef](#describeaccessresponsetypedef)
+  - [DescribeExecutionRequestRequestTypeDef](#describeexecutionrequestrequesttypedef)
+  - [DescribeExecutionResponseTypeDef](#describeexecutionresponsetypedef)
   - [DescribeSecurityPolicyRequestRequestTypeDef](#describesecuritypolicyrequestrequesttypedef)
   - [DescribeSecurityPolicyResponseTypeDef](#describesecuritypolicyresponsetypedef)
   - [DescribeServerRequestRequestTypeDef](#describeserverrequestrequesttypedef)
   - [DescribeServerResponseTypeDef](#describeserverresponsetypedef)
   - [DescribeUserRequestRequestTypeDef](#describeuserrequestrequesttypedef)
   - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
+  - [DescribeWorkflowRequestRequestTypeDef](#describeworkflowrequestrequesttypedef)
+  - [DescribeWorkflowResponseTypeDef](#describeworkflowresponsetypedef)
   - [DescribedAccessTypeDef](#describedaccesstypedef)
+  - [DescribedExecutionTypeDef](#describedexecutiontypedef)
   - [DescribedSecurityPolicyTypeDef](#describedsecuritypolicytypedef)
   - [DescribedServerTypeDef](#describedservertypedef)
   - [DescribedUserTypeDef](#describedusertypedef)
+  - [DescribedWorkflowTypeDef](#describedworkflowtypedef)
+  - [EfsFileLocationTypeDef](#efsfilelocationtypedef)
   - [EndpointDetailsTypeDef](#endpointdetailstypedef)
+  - [ExecutionErrorTypeDef](#executionerrortypedef)
+  - [ExecutionResultsTypeDef](#executionresultstypedef)
+  - [ExecutionStepResultTypeDef](#executionstepresulttypedef)
+  - [FileLocationTypeDef](#filelocationtypedef)
   - [HomeDirectoryMapEntryTypeDef](#homedirectorymapentrytypedef)
   - [IdentityProviderDetailsTypeDef](#identityproviderdetailstypedef)
   - [ImportSshPublicKeyRequestRequestTypeDef](#importsshpublickeyrequestrequesttypedef)
   - [ImportSshPublicKeyResponseTypeDef](#importsshpublickeyresponsetypedef)
+  - [InputFileLocationTypeDef](#inputfilelocationtypedef)
   - [ListAccessesRequestRequestTypeDef](#listaccessesrequestrequesttypedef)
   - [ListAccessesResponseTypeDef](#listaccessesresponsetypedef)
+  - [ListExecutionsRequestRequestTypeDef](#listexecutionsrequestrequesttypedef)
+  - [ListExecutionsResponseTypeDef](#listexecutionsresponsetypedef)
   - [ListSecurityPoliciesRequestRequestTypeDef](#listsecuritypoliciesrequestrequesttypedef)
   - [ListSecurityPoliciesResponseTypeDef](#listsecuritypoliciesresponsetypedef)
   - [ListServersRequestRequestTypeDef](#listserversrequestrequesttypedef)
@@ -45,17 +65,28 @@ type annotations stubs module
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
   - [ListUsersResponseTypeDef](#listusersresponsetypedef)
+  - [ListWorkflowsRequestRequestTypeDef](#listworkflowsrequestrequesttypedef)
+  - [ListWorkflowsResponseTypeDef](#listworkflowsresponsetypedef)
   - [ListedAccessTypeDef](#listedaccesstypedef)
+  - [ListedExecutionTypeDef](#listedexecutiontypedef)
   - [ListedServerTypeDef](#listedservertypedef)
   - [ListedUserTypeDef](#listedusertypedef)
+  - [ListedWorkflowTypeDef](#listedworkflowtypedef)
+  - [LoggingConfigurationTypeDef](#loggingconfigurationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PosixProfileTypeDef](#posixprofiletypedef)
   - [ProtocolDetailsTypeDef](#protocoldetailstypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [S3FileLocationTypeDef](#s3filelocationtypedef)
+  - [S3InputFileLocationTypeDef](#s3inputfilelocationtypedef)
+  - [S3TagTypeDef](#s3tagtypedef)
+  - [SendWorkflowStepStateRequestRequestTypeDef](#sendworkflowstepstaterequestrequesttypedef)
+  - [ServiceMetadataTypeDef](#servicemetadatatypedef)
   - [SshPublicKeyTypeDef](#sshpublickeytypedef)
   - [StartServerRequestRequestTypeDef](#startserverrequestrequesttypedef)
   - [StopServerRequestRequestTypeDef](#stopserverrequestrequesttypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [TagStepDetailsTypeDef](#tagstepdetailstypedef)
   - [TagTypeDef](#tagtypedef)
   - [TestIdentityProviderRequestRequestTypeDef](#testidentityproviderrequestrequesttypedef)
   - [TestIdentityProviderResponseTypeDef](#testidentityproviderresponsetypedef)
@@ -66,6 +97,24 @@ type annotations stubs module
   - [UpdateServerResponseTypeDef](#updateserverresponsetypedef)
   - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
   - [UpdateUserResponseTypeDef](#updateuserresponsetypedef)
+  - [UserDetailsTypeDef](#userdetailstypedef)
+  - [WorkflowDetailTypeDef](#workflowdetailtypedef)
+  - [WorkflowDetailsTypeDef](#workflowdetailstypedef)
+  - [WorkflowStepTypeDef](#workflowsteptypedef)
+
+## CopyStepDetailsTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import CopyStepDetailsTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `DestinationFileLocation`:
+  [InputFileLocationTypeDef](./type_defs.md#inputfilelocationtypedef)
+- `OverwriteExisting`:
+  [OverwriteExistingType](./literals.md#overwriteexistingtype)
 
 ## CreateAccessRequestRequestTypeDef
 
@@ -124,6 +173,8 @@ Optional fields:
 - `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `WorkflowDetails`:
+  [WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef)
 
 ## CreateServerResponseTypeDef
 
@@ -174,6 +225,47 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateWorkflowRequestRequestTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import CreateWorkflowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Steps`: `List`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
+
+Optional fields:
+
+- `Description`: `str`
+- `OnExceptionSteps`:
+  `List`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateWorkflowResponseTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import CreateWorkflowResponseTypeDef
+```
+
+Required fields:
+
+- `WorkflowId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CustomStepDetailsTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import CustomStepDetailsTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Target`: `str`
+- `TimeoutSeconds`: `int`
+
 ## DeleteAccessRequestRequestTypeDef
 
 ```python
@@ -207,6 +299,16 @@ Required fields:
 - `SshPublicKeyId`: `str`
 - `UserName`: `str`
 
+## DeleteStepDetailsTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import DeleteStepDetailsTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+
 ## DeleteUserRequestRequestTypeDef
 
 ```python
@@ -217,6 +319,16 @@ Required fields:
 
 - `ServerId`: `str`
 - `UserName`: `str`
+
+## DeleteWorkflowRequestRequestTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import DeleteWorkflowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `WorkflowId`: `str`
 
 ## DescribeAccessRequestRequestTypeDef
 
@@ -239,6 +351,31 @@ Required fields:
 
 - `ServerId`: `str`
 - `Access`: [DescribedAccessTypeDef](./type_defs.md#describedaccesstypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeExecutionRequestRequestTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import DescribeExecutionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ExecutionId`: `str`
+- `WorkflowId`: `str`
+
+## DescribeExecutionResponseTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import DescribeExecutionResponseTypeDef
+```
+
+Required fields:
+
+- `WorkflowId`: `str`
+- `Execution`:
+  [DescribedExecutionTypeDef](./type_defs.md#describedexecutiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -311,6 +448,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeWorkflowRequestRequestTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import DescribeWorkflowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `WorkflowId`: `str`
+
+## DescribeWorkflowResponseTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import DescribeWorkflowResponseTypeDef
+```
+
+Required fields:
+
+- `Workflow`:
+  [DescribedWorkflowTypeDef](./type_defs.md#describedworkflowtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribedAccessTypeDef
 
 ```python
@@ -328,6 +488,26 @@ Optional fields:
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`
 - `ExternalId`: `str`
+
+## DescribedExecutionTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import DescribedExecutionTypeDef
+```
+
+Optional fields:
+
+- `ExecutionId`: `str`
+- `InitialFileLocation`:
+  [FileLocationTypeDef](./type_defs.md#filelocationtypedef)
+- `ServiceMetadata`:
+  [ServiceMetadataTypeDef](./type_defs.md#servicemetadatatypedef)
+- `ExecutionRole`: `str`
+- `LoggingConfiguration`:
+  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+- `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
+- `Status`: [ExecutionStatusType](./literals.md#executionstatustype)
+- `Results`: [ExecutionResultsTypeDef](./type_defs.md#executionresultstypedef)
 
 ## DescribedSecurityPolicyTypeDef
 
@@ -378,6 +558,8 @@ Optional fields:
 - `State`: [StateType](./literals.md#statetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UserCount`: `int`
+- `WorkflowDetails`:
+  [WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef)
 
 ## DescribedUserTypeDef
 
@@ -404,6 +586,36 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UserName`: `str`
 
+## DescribedWorkflowTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import DescribedWorkflowTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `Steps`: `List`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
+- `OnExceptionSteps`:
+  `List`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
+- `WorkflowId`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## EfsFileLocationTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import EfsFileLocationTypeDef
+```
+
+Optional fields:
+
+- `FileSystemId`: `str`
+- `Path`: `str`
+
 ## EndpointDetailsTypeDef
 
 ```python
@@ -417,6 +629,56 @@ Optional fields:
 - `VpcEndpointId`: `str`
 - `VpcId`: `str`
 - `SecurityGroupIds`: `List`\[`str`\]
+
+## ExecutionErrorTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ExecutionErrorTypeDef
+```
+
+Required fields:
+
+- `Type`: `Literal['PERMISSION_DENIED']` (see
+  [ExecutionErrorTypeType](./literals.md#executionerrortypetype))
+- `Message`: `str`
+
+## ExecutionResultsTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ExecutionResultsTypeDef
+```
+
+Optional fields:
+
+- `Steps`:
+  `List`\[[ExecutionStepResultTypeDef](./type_defs.md#executionstepresulttypedef)\]
+- `OnExceptionSteps`:
+  `List`\[[ExecutionStepResultTypeDef](./type_defs.md#executionstepresulttypedef)\]
+
+## ExecutionStepResultTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ExecutionStepResultTypeDef
+```
+
+Optional fields:
+
+- `StepType`: [WorkflowStepTypeType](./literals.md#workflowsteptypetype)
+- `Outputs`: `str`
+- `Error`: [ExecutionErrorTypeDef](./type_defs.md#executionerrortypedef)
+
+## FileLocationTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import FileLocationTypeDef
+```
+
+Optional fields:
+
+- `S3FileLocation`:
+  [S3FileLocationTypeDef](./type_defs.md#s3filelocationtypedef)
+- `EfsFileLocation`:
+  [EfsFileLocationTypeDef](./type_defs.md#efsfilelocationtypedef)
 
 ## HomeDirectoryMapEntryTypeDef
 
@@ -467,6 +729,19 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## InputFileLocationTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import InputFileLocationTypeDef
+```
+
+Optional fields:
+
+- `S3FileLocation`:
+  [S3InputFileLocationTypeDef](./type_defs.md#s3inputfilelocationtypedef)
+- `EfsFileLocation`:
+  [EfsFileLocationTypeDef](./type_defs.md#efsfilelocationtypedef)
+
 ## ListAccessesRequestRequestTypeDef
 
 ```python
@@ -494,6 +769,36 @@ Required fields:
 - `ServerId`: `str`
 - `Accesses`:
   `List`\[[ListedAccessTypeDef](./type_defs.md#listedaccesstypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListExecutionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ListExecutionsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `WorkflowId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListExecutionsResponseTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ListExecutionsResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `WorkflowId`: `str`
+- `Executions`:
+  `List`\[[ListedExecutionTypeDef](./type_defs.md#listedexecutiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -604,6 +909,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListWorkflowsRequestRequestTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ListWorkflowsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListWorkflowsResponseTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ListWorkflowsResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `Workflows`:
+  `List`\[[ListedWorkflowTypeDef](./type_defs.md#listedworkflowtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListedAccessTypeDef
 
 ```python
@@ -617,6 +947,21 @@ Optional fields:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `Role`: `str`
 - `ExternalId`: `str`
+
+## ListedExecutionTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ListedExecutionTypeDef
+```
+
+Optional fields:
+
+- `ExecutionId`: `str`
+- `InitialFileLocation`:
+  [FileLocationTypeDef](./type_defs.md#filelocationtypedef)
+- `ServiceMetadata`:
+  [ServiceMetadataTypeDef](./type_defs.md#servicemetadatatypedef)
+- `Status`: [ExecutionStatusType](./literals.md#executionstatustype)
 
 ## ListedServerTypeDef
 
@@ -657,6 +1002,29 @@ Optional fields:
 - `Role`: `str`
 - `SshPublicKeyCount`: `int`
 - `UserName`: `str`
+
+## ListedWorkflowTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ListedWorkflowTypeDef
+```
+
+Optional fields:
+
+- `WorkflowId`: `str`
+- `Description`: `str`
+- `Arn`: `str`
+
+## LoggingConfigurationTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import LoggingConfigurationTypeDef
+```
+
+Optional fields:
+
+- `LoggingRole`: `str`
+- `LogGroupName`: `str`
 
 ## PaginatorConfigTypeDef
 
@@ -709,6 +1077,64 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
+## S3FileLocationTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import S3FileLocationTypeDef
+```
+
+Optional fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+- `VersionId`: `str`
+- `Etag`: `str`
+
+## S3InputFileLocationTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import S3InputFileLocationTypeDef
+```
+
+Optional fields:
+
+- `Bucket`: `str`
+- `Key`: `str`
+
+## S3TagTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import S3TagTypeDef
+```
+
+Required fields:
+
+- `Key`: `str`
+- `Value`: `str`
+
+## SendWorkflowStepStateRequestRequestTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import SendWorkflowStepStateRequestRequestTypeDef
+```
+
+Required fields:
+
+- `WorkflowId`: `str`
+- `ExecutionId`: `str`
+- `Token`: `str`
+- `Status`: [CustomStepStatusType](./literals.md#customstepstatustype)
+
+## ServiceMetadataTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import ServiceMetadataTypeDef
+```
+
+Required fields:
+
+- `UserDetails`: [UserDetailsTypeDef](./type_defs.md#userdetailstypedef)
+
 ## SshPublicKeyTypeDef
 
 ```python
@@ -751,6 +1177,17 @@ Required fields:
 
 - `Arn`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## TagStepDetailsTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import TagStepDetailsTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 
 ## TagTypeDef
 
@@ -865,6 +1302,8 @@ Optional fields:
 - `LoggingRole`: `str`
 - `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
+- `WorkflowDetails`:
+  [WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef)
 
 ## UpdateServerResponseTypeDef
 
@@ -912,3 +1351,58 @@ Required fields:
 - `UserName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UserDetailsTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import UserDetailsTypeDef
+```
+
+Required fields:
+
+- `UserName`: `str`
+- `ServerId`: `str`
+
+Optional fields:
+
+- `SessionId`: `str`
+
+## WorkflowDetailTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import WorkflowDetailTypeDef
+```
+
+Required fields:
+
+- `WorkflowId`: `str`
+- `ExecutionRole`: `str`
+
+## WorkflowDetailsTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import WorkflowDetailsTypeDef
+```
+
+Required fields:
+
+- `OnUpload`:
+  `List`\[[WorkflowDetailTypeDef](./type_defs.md#workflowdetailtypedef)\]
+
+## WorkflowStepTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import WorkflowStepTypeDef
+```
+
+Optional fields:
+
+- `Type`: [WorkflowStepTypeType](./literals.md#workflowsteptypetype)
+- `CopyStepDetails`:
+  [CopyStepDetailsTypeDef](./type_defs.md#copystepdetailstypedef)
+- `CustomStepDetails`:
+  [CustomStepDetailsTypeDef](./type_defs.md#customstepdetailstypedef)
+- `DeleteStepDetails`:
+  [DeleteStepDetailsTypeDef](./type_defs.md#deletestepdetailstypedef)
+- `TagStepDetails`:
+  [TagStepDetailsTypeDef](./type_defs.md#tagstepdetailstypedef)

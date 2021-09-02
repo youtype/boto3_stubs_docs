@@ -1162,6 +1162,14 @@ Returns `Dict`\[`str`, `Any`\].
 Type annotations for `boto3.client("securityhub").get_paginator` method with
 overloads.
 
+- `client.get_paginator("describe_action_targets")` ->
+  [DescribeActionTargetsPaginator](./paginators.md#describeactiontargetspaginator)
+- `client.get_paginator("describe_products")` ->
+  [DescribeProductsPaginator](./paginators.md#describeproductspaginator)
+- `client.get_paginator("describe_standards")` ->
+  [DescribeStandardsPaginator](./paginators.md#describestandardspaginator)
+- `client.get_paginator("describe_standards_controls")` ->
+  [DescribeStandardsControlsPaginator](./paginators.md#describestandardscontrolspaginator)
 - `client.get_paginator("get_enabled_standards")` ->
   [GetEnabledStandardsPaginator](./paginators.md#getenabledstandardspaginator)
 - `client.get_paginator("get_findings")` ->
@@ -1174,3 +1182,5 @@ overloads.
   [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
 - `client.get_paginator("list_members")` ->
   [ListMembersPaginator](./paginators.md#listmemberspaginator)
+- `client.get_paginator("list_organization_admin_accounts")` ->
+  [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)

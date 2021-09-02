@@ -50,6 +50,7 @@ type annotations stubs module
   - [ListPermissionsResponseTypeDef](#listpermissionsresponsetypedef)
   - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
   - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
+  - [OcspConfigurationTypeDef](#ocspconfigurationtypedef)
   - [OtherNameTypeDef](#othernametypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PermissionTypeDef](#permissiontypedef)
@@ -664,6 +665,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## OcspConfigurationTypeDef
+
+```python
+from mypy_boto3_acm_pca.type_defs import OcspConfigurationTypeDef
+```
+
+Required fields:
+
+- `Enabled`: `bool`
+
+Optional fields:
+
+- `OcspCustomCname`: `str`
+
 ## OtherNameTypeDef
 
 ```python
@@ -784,6 +799,8 @@ Optional fields:
 
 - `CrlConfiguration`:
   [CrlConfigurationTypeDef](./type_defs.md#crlconfigurationtypedef)
+- `OcspConfiguration`:
+  [OcspConfigurationTypeDef](./type_defs.md#ocspconfigurationtypedef)
 
 ## RevokeCertificateRequestRequestTypeDef
 

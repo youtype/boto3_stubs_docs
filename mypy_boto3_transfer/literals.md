@@ -8,13 +8,29 @@ type annotations stubs module
 [mypy_boto3_transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 - [Literals for boto3 Transfer module](#literals-for-boto3-transfer-module)
+  - [CustomStepStatusType](#customstepstatustype)
   - [DomainType](#domaintype)
   - [EndpointTypeType](#endpointtypetype)
+  - [ExecutionErrorTypeType](#executionerrortypetype)
+  - [ExecutionStatusType](#executionstatustype)
   - [HomeDirectoryTypeType](#homedirectorytypetype)
   - [IdentityProviderTypeType](#identityprovidertypetype)
   - [ListServersPaginatorName](#listserverspaginatorname)
+  - [OverwriteExistingType](#overwriteexistingtype)
   - [ProtocolType](#protocoltype)
   - [StateType](#statetype)
+  - [WorkflowStepTypeType](#workflowsteptypetype)
+
+## CustomStepStatusType
+
+```python
+from mypy_boto3_transfer.literals import CustomStepStatusType
+```
+
+Values:
+
+- `FAILURE`
+- `SUCCESS`
 
 ## DomainType
 
@@ -38,6 +54,29 @@ Values:
 - `PUBLIC`
 - `VPC`
 - `VPC_ENDPOINT`
+
+## ExecutionErrorTypeType
+
+```python
+from mypy_boto3_transfer.literals import ExecutionErrorTypeType
+```
+
+Values:
+
+- `PERMISSION_DENIED`
+
+## ExecutionStatusType
+
+```python
+from mypy_boto3_transfer.literals import ExecutionStatusType
+```
+
+Values:
+
+- `COMPLETED`
+- `EXCEPTION`
+- `HANDLING_EXCEPTION`
+- `IN_PROGRESS`
 
 ## HomeDirectoryTypeType
 
@@ -72,6 +111,17 @@ Values:
 
 - `list_servers`
 
+## OverwriteExistingType
+
+```python
+from mypy_boto3_transfer.literals import OverwriteExistingType
+```
+
+Values:
+
+- `FALSE`
+- `TRUE`
+
 ## ProtocolType
 
 ```python
@@ -98,3 +148,16 @@ Values:
 - `STARTING`
 - `STOP_FAILED`
 - `STOPPING`
+
+## WorkflowStepTypeType
+
+```python
+from mypy_boto3_transfer.literals import WorkflowStepTypeType
+```
+
+Values:
+
+- `COPY`
+- `CUSTOM`
+- `DELETE`
+- `TAG`

@@ -20,17 +20,31 @@ type annotations stubs module
   - [DataRepositoryTaskTypeType](#datarepositorytasktypetype)
   - [DescribeBackupsPaginatorName](#describebackupspaginatorname)
   - [DescribeFileSystemsPaginatorName](#describefilesystemspaginatorname)
+  - [DiskIopsConfigurationModeType](#diskiopsconfigurationmodetype)
   - [DriveCacheTypeType](#drivecachetypetype)
   - [FileSystemLifecycleType](#filesystemlifecycletype)
   - [FileSystemMaintenanceOperationType](#filesystemmaintenanceoperationtype)
   - [FileSystemTypeType](#filesystemtypetype)
   - [FilterNameType](#filternametype)
+  - [FlexCacheEndpointTypeType](#flexcacheendpointtypetype)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
   - [LustreDeploymentTypeType](#lustredeploymenttypetype)
+  - [OntapDeploymentTypeType](#ontapdeploymenttypetype)
+  - [OntapVolumeTypeType](#ontapvolumetypetype)
   - [ReportFormatType](#reportformattype)
   - [ReportScopeType](#reportscopetype)
+  - [ResourceTypeType](#resourcetypetype)
+  - [SecurityStyleType](#securitystyletype)
   - [StatusType](#statustype)
   - [StorageTypeType](#storagetypetype)
+  - [StorageVirtualMachineFilterNameType](#storagevirtualmachinefilternametype)
+  - [StorageVirtualMachineLifecycleType](#storagevirtualmachinelifecycletype)
+  - [StorageVirtualMachineRootVolumeSecurityStyleType](#storagevirtualmachinerootvolumesecuritystyletype)
+  - [StorageVirtualMachineSubtypeType](#storagevirtualmachinesubtypetype)
+  - [TieringPolicyNameType](#tieringpolicynametype)
+  - [VolumeFilterNameType](#volumefilternametype)
+  - [VolumeLifecycleType](#volumelifecycletype)
+  - [VolumeTypeType](#volumetypetype)
   - [WindowsAccessAuditLogLevelType](#windowsaccessauditlogleveltype)
   - [WindowsDeploymentTypeType](#windowsdeploymenttypetype)
 
@@ -182,6 +196,17 @@ Values:
 
 - `describe_file_systems`
 
+## DiskIopsConfigurationModeType
+
+```python
+from mypy_boto3_fsx.literals import DiskIopsConfigurationModeType
+```
+
+Values:
+
+- `AUTOMATIC`
+- `USER_PROVISIONED`
+
 ## DriveCacheTypeType
 
 ```python
@@ -228,6 +253,7 @@ from mypy_boto3_fsx.literals import FileSystemTypeType
 Values:
 
 - `LUSTRE`
+- `ONTAP`
 - `WINDOWS`
 
 ## FilterNameType
@@ -241,6 +267,19 @@ Values:
 - `backup-type`
 - `file-system-id`
 - `file-system-type`
+- `volume-id`
+
+## FlexCacheEndpointTypeType
+
+```python
+from mypy_boto3_fsx.literals import FlexCacheEndpointTypeType
+```
+
+Values:
+
+- `CACHE`
+- `NONE`
+- `ORIGIN`
 
 ## ListTagsForResourcePaginatorName
 
@@ -264,6 +303,28 @@ Values:
 - `SCRATCH_1`
 - `SCRATCH_2`
 
+## OntapDeploymentTypeType
+
+```python
+from mypy_boto3_fsx.literals import OntapDeploymentTypeType
+```
+
+Values:
+
+- `MULTI_AZ_1`
+
+## OntapVolumeTypeType
+
+```python
+from mypy_boto3_fsx.literals import OntapVolumeTypeType
+```
+
+Values:
+
+- `DP`
+- `LS`
+- `RW`
+
 ## ReportFormatType
 
 ```python
@@ -283,6 +344,29 @@ from mypy_boto3_fsx.literals import ReportScopeType
 Values:
 
 - `FAILED_FILES_ONLY`
+
+## ResourceTypeType
+
+```python
+from mypy_boto3_fsx.literals import ResourceTypeType
+```
+
+Values:
+
+- `FILE_SYSTEM`
+- `VOLUME`
+
+## SecurityStyleType
+
+```python
+from mypy_boto3_fsx.literals import SecurityStyleType
+```
+
+Values:
+
+- `MIXED`
+- `NTFS`
+- `UNIX`
 
 ## StatusType
 
@@ -308,6 +392,105 @@ Values:
 
 - `HDD`
 - `SSD`
+
+## StorageVirtualMachineFilterNameType
+
+```python
+from mypy_boto3_fsx.literals import StorageVirtualMachineFilterNameType
+```
+
+Values:
+
+- `file-system-id`
+
+## StorageVirtualMachineLifecycleType
+
+```python
+from mypy_boto3_fsx.literals import StorageVirtualMachineLifecycleType
+```
+
+Values:
+
+- `CREATED`
+- `CREATING`
+- `DELETING`
+- `FAILED`
+- `MISCONFIGURED`
+- `PENDING`
+
+## StorageVirtualMachineRootVolumeSecurityStyleType
+
+```python
+from mypy_boto3_fsx.literals import StorageVirtualMachineRootVolumeSecurityStyleType
+```
+
+Values:
+
+- `MIXED`
+- `NTFS`
+- `UNIX`
+
+## StorageVirtualMachineSubtypeType
+
+```python
+from mypy_boto3_fsx.literals import StorageVirtualMachineSubtypeType
+```
+
+Values:
+
+- `DEFAULT`
+- `DP_DESTINATION`
+- `SYNC_DESTINATION`
+- `SYNC_SOURCE`
+
+## TieringPolicyNameType
+
+```python
+from mypy_boto3_fsx.literals import TieringPolicyNameType
+```
+
+Values:
+
+- `ALL`
+- `AUTO`
+- `NONE`
+- `SNAPSHOT_ONLY`
+
+## VolumeFilterNameType
+
+```python
+from mypy_boto3_fsx.literals import VolumeFilterNameType
+```
+
+Values:
+
+- `file-system-id`
+- `storage-virtual-machine-id`
+
+## VolumeLifecycleType
+
+```python
+from mypy_boto3_fsx.literals import VolumeLifecycleType
+```
+
+Values:
+
+- `CREATED`
+- `CREATING`
+- `DELETING`
+- `FAILED`
+- `MISCONFIGURED`
+- `PENDING`
+
+## VolumeTypeType
+
+```python
+from mypy_boto3_fsx.literals import VolumeTypeType
+```
+
+Values:
+
+- `ONTAP`
 
 ## WindowsAccessAuditLogLevelType
 

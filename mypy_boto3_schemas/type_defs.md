@@ -86,6 +86,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+- `CrossAccount`: `bool`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## CreateDiscovererResponseTypeDef
@@ -101,6 +102,7 @@ Required fields:
 - `DiscovererId`: `str`
 - `SourceArn`: `str`
 - `State`: [DiscovererStateType](./literals.md#discovererstatetype)
+- `CrossAccount`: `bool`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -279,6 +281,7 @@ Required fields:
 - `DiscovererId`: `str`
 - `SourceArn`: `str`
 - `State`: [DiscovererStateType](./literals.md#discovererstatetype)
+- `CrossAccount`: `bool`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -355,6 +358,7 @@ Optional fields:
 - `DiscovererId`: `str`
 - `SourceArn`: `str`
 - `State`: [DiscovererStateType](./literals.md#discovererstatetype)
+- `CrossAccount`: `bool`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 ## ExportSchemaRequestRequestTypeDef
@@ -860,6 +864,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+- `CrossAccount`: `bool`
 
 ## UpdateDiscovererResponseTypeDef
 
@@ -874,6 +879,7 @@ Required fields:
 - `DiscovererId`: `str`
 - `SourceArn`: `str`
 - `State`: [DiscovererStateType](./literals.md#discovererstatetype)
+- `CrossAccount`: `bool`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

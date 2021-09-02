@@ -18,6 +18,7 @@ type annotations stubs module
   - [StatusType](#statustype)
   - [ThroughputModeType](#throughputmodetype)
   - [TransitionToIARulesType](#transitiontoiarulestype)
+  - [TransitionToPrimaryStorageClassRulesType](#transitiontoprimarystorageclassrulestype)
 
 ## DescribeFileSystemsPaginatorName
 
@@ -134,3 +135,13 @@ Values:
 - `AFTER_60_DAYS`
 - `AFTER_7_DAYS`
 - `AFTER_90_DAYS`
+
+## TransitionToPrimaryStorageClassRulesType
+
+```python
+from mypy_boto3_efs.literals import TransitionToPrimaryStorageClassRulesType
+```
+
+Values:
+
+- `AFTER_1_ACCESS`

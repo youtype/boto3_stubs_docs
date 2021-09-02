@@ -87,6 +87,7 @@ type annotations stubs module
   - [DataSetSchemaTypeDef](#datasetschematypedef)
   - [DataSetSummaryTypeDef](#datasetsummarytypedef)
   - [DataSetTypeDef](#datasettypedef)
+  - [DataSetUsageConfigurationTypeDef](#datasetusageconfigurationtypedef)
   - [DataSourceCredentialsTypeDef](#datasourcecredentialstypedef)
   - [DataSourceErrorInfoTypeDef](#datasourceerrorinfotypedef)
   - [DataSourceParametersTypeDef](#datasourceparameterstypedef)
@@ -326,6 +327,7 @@ type annotations stubs module
   - [TransformOperationTypeDef](#transformoperationtypedef)
   - [TwitterParametersTypeDef](#twitterparameterstypedef)
   - [UIColorPaletteTypeDef](#uicolorpalettetypedef)
+  - [UntagColumnOperationTypeDef](#untagcolumnoperationtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UntagResourceResponseTypeDef](#untagresourceresponsetypedef)
   - [UpdateAccountCustomizationRequestRequestTypeDef](#updateaccountcustomizationrequestrequesttypedef)
@@ -880,6 +882,8 @@ Optional fields:
 - `ColumnLevelPermissionRules`:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DataSetUsageConfiguration`:
+  [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
 
 ## CreateDataSetResponseTypeDef
 
@@ -1555,6 +1559,19 @@ Optional fields:
   [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
+- `DataSetUsageConfiguration`:
+  [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
+
+## DataSetUsageConfigurationTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import DataSetUsageConfigurationTypeDef
+```
+
+Optional fields:
+
+- `DisableUseAsDirectQuerySource`: `bool`
+- `DisableUseAsImportedSource`: `bool`
 
 ## DataSourceCredentialsTypeDef
 
@@ -3884,6 +3901,7 @@ Optional fields:
 - `JoinInstruction`:
   [JoinInstructionTypeDef](./type_defs.md#joininstructiontypedef)
 - `PhysicalTableId`: `str`
+- `DataSetArn`: `str`
 
 ## LogicalTableTypeDef
 
@@ -4895,6 +4913,8 @@ Optional fields:
   [CastColumnTypeOperationTypeDef](./type_defs.md#castcolumntypeoperationtypedef)
 - `TagColumnOperation`:
   [TagColumnOperationTypeDef](./type_defs.md#tagcolumnoperationtypedef)
+- `UntagColumnOperation`:
+  [UntagColumnOperationTypeDef](./type_defs.md#untagcolumnoperationtypedef)
 
 ## TwitterParametersTypeDef
 
@@ -4931,6 +4951,17 @@ Optional fields:
 - `DimensionForeground`: `str`
 - `Measure`: `str`
 - `MeasureForeground`: `str`
+
+## UntagColumnOperationTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import UntagColumnOperationTypeDef
+```
+
+Required fields:
+
+- `ColumnName`: `str`
+- `TagNames`: `List`\[[ColumnTagNameType](./literals.md#columntagnametype)\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -5251,6 +5282,8 @@ Optional fields:
   [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
+- `DataSetUsageConfiguration`:
+  [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
 
 ## UpdateDataSetResponseTypeDef
 

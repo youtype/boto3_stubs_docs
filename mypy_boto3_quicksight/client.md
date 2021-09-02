@@ -351,6 +351,8 @@ Keyword-only arguments:
 - `ColumnLevelPermissionRules`:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DataSetUsageConfiguration`:
+  [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
 
 Returns
 [CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
@@ -484,7 +486,7 @@ Returns
 
 ### create_iam_policy_assignment
 
-Creates an assignment with one specified IAM policy, identified by its Amazon
+Creates an assignment with one specified IAMpolicy, identified by its Amazon
 Resource Name (ARN).
 
 Type annotations for `boto3.client("quicksight").create_iam_policy_assignment`
@@ -660,7 +662,7 @@ Returns
 ### delete_account_customization
 
 Deletes all Amazon QuickSight customizations in this Amazon Web Services
-Region; for the specified Amazon Web Services account; and QuickSight
+Region; for the specified Amazon Web Services account and Amazon QuickSight
 namespace.
 
 Type annotations for `boto3.client("quicksight").delete_account_customization`
@@ -853,7 +855,7 @@ Returns
 
 ### delete_iam_policy_assignment
 
-Deletes an existing IAM policy assignment.
+Deletes an existing IAMpolicy assignment.
 
 Type annotations for `boto3.client("quicksight").delete_iam_policy_assignment`
 method.
@@ -1024,7 +1026,8 @@ Returns
 ### describe_account_customization
 
 Describes the customizations associated with the provided Amazon Web Services
-account; and Amazon QuickSight namespace in an Amazon Web Services Region;.
+account and Amazon Amazon QuickSight namespace in an Amazon Web Services
+Region;.
 
 Type annotations for
 `boto3.client("quicksight").describe_account_customization` method.
@@ -1046,8 +1049,8 @@ Returns
 
 ### describe_account_settings
 
-Describes the settings that were used when your QuickSight subscription was
-first created in this Amazon Web Services account;.
+Describes the settings that were used when your Amazon QuickSight subscription
+was first created in this Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").describe_account_settings`
 method.
@@ -1317,7 +1320,7 @@ Returns
 
 ### describe_iam_policy_assignment
 
-Describes an existing IAM policy assignment, as specified by the assignment
+Describes an existing IAMpolicy assignment, as specified by the assignment
 name.
 
 Type annotations for
@@ -1606,7 +1609,7 @@ Returns `str`.
 ### get_dashboard_embed_url
 
 Generates a session URL and authorization code that you can use to embed an
-Amazon QuickSight read-only dashboard in your web server code.
+Amazon Amazon QuickSight read-only dashboard in your web server code.
 
 Type annotations for `boto3.client("quicksight").get_dashboard_embed_url`
 method.
@@ -1638,7 +1641,7 @@ Returns
 ### get_session_embed_url
 
 Generates a session URL and authorization code that you can use to embed the
-Amazon QuickSight console in your web server code.
+Amazon Amazon QuickSight console in your web server code.
 
 Type annotations for `boto3.client("quicksight").get_session_embed_url` method.
 
@@ -1661,7 +1664,7 @@ Returns
 ### list_analyses
 
 Lists Amazon QuickSight analyses that exist in the specified Amazon Web
-Services account;.
+Services account.
 
 Type annotations for `boto3.client("quicksight").list_analyses` method.
 
@@ -1682,7 +1685,7 @@ Returns
 
 ### list_dashboard_versions
 
-Lists all the versions of the dashboards in the QuickSight subscription.
+Lists all the versions of the dashboards in the Amazon QuickSight subscription.
 
 Type annotations for `boto3.client("quicksight").list_dashboard_versions`
 method.
@@ -1705,7 +1708,7 @@ Returns
 
 ### list_dashboards
 
-Lists dashboards in an Amazon Web Services account;.
+Lists dashboards in an Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").list_dashboards` method.
 
@@ -1726,7 +1729,7 @@ Returns
 
 ### list_data_sets
 
-Lists all of the datasets belonging to the current Amazon Web Services account;
+Lists all of the datasets belonging to the current Amazon Web Services account
 in an Amazon Web Services Region;.
 
 Type annotations for `boto3.client("quicksight").list_data_sets` method.
@@ -1749,7 +1752,7 @@ Returns
 ### list_data_sources
 
 Lists data sources in current Amazon Web Services Region; that belong to this
-Amazon Web Services account;.
+Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").list_data_sources` method.
 
@@ -1858,7 +1861,7 @@ Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
 ### list_iam_policy_assignments
 
-Lists IAM policy assignments in the current Amazon QuickSight account.
+Lists IAMpolicy assignments in the current Amazon QuickSight account.
 
 Type annotations for `boto3.client("quicksight").list_iam_policy_assignments`
 method.
@@ -1883,9 +1886,9 @@ Returns
 
 ### list_iam_policy_assignments_for_user
 
-Lists all the IAM policy assignments, including the Amazon Resource Names
-(ARNs) for the IAM policies assigned to the specified user and group or groups
-that the user belongs to.
+Lists all the IAMpolicy assignments, including the Amazon Resource Names (ARNs)
+for the IAM policies assigned to the specified user and group or groups that
+the user belongs to.
 
 Type annotations for
 `boto3.client("quicksight").list_iam_policy_assignments_for_user` method.
@@ -1931,7 +1934,7 @@ Returns
 
 ### list_namespaces
 
-Lists the namespaces for the specified Amazon Web Services account;.
+Lists the namespaces for the specified Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").list_namespaces` method.
 
@@ -2062,7 +2065,7 @@ Returns
 ### list_theme_versions
 
 Lists all the versions of the themes in the current Amazon Web Services
-account;.
+account.
 
 Type annotations for `boto3.client("quicksight").list_theme_versions` method.
 
@@ -2084,7 +2087,7 @@ Returns
 
 ### list_themes
 
-Lists all the themes in the current Amazon Web Services account;.
+Lists all the themes in the current Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").list_themes` method.
 
@@ -2273,7 +2276,7 @@ Returns
 
 ### tag_resource
 
-Assigns one or more tags (key-value pairs) to the specified QuickSight
+Assigns one or more tags (key-value pairs) to the specified Amazon QuickSight
 resource.
 
 Type annotations for `boto3.client("quicksight").tag_resource` method.
@@ -2339,7 +2342,7 @@ Returns
 
 ### update_account_settings
 
-Updates the Amazon QuickSight settings in your Amazon Web Services account;.
+Updates the Amazon QuickSight settings in your Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").update_account_settings`
 method.
@@ -2415,7 +2418,7 @@ Returns
 
 ### update_dashboard
 
-Updates a dashboard in an Amazon Web Services account;.
+Updates a dashboard in an Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").update_dashboard` method.
 
@@ -2522,6 +2525,8 @@ Keyword-only arguments:
   [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
   `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
+- `DataSetUsageConfiguration`:
+  [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
 
 Returns
 [UpdateDataSetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
@@ -2674,7 +2679,7 @@ Returns
 
 ### update_iam_policy_assignment
 
-Updates an existing IAM policy assignment.
+Updates an existing IAMpolicy assignment.
 
 Type annotations for `boto3.client("quicksight").update_iam_policy_assignment`
 method.

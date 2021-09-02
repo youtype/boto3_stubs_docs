@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 - [Literals for boto3 S3Control module](#literals-for-boto3-s3control-module)
+  - [AsyncOperationNameType](#asyncoperationnametype)
   - [BucketCannedACLType](#bucketcannedacltype)
   - [BucketLocationConstraintType](#bucketlocationconstrainttype)
   - [ExpirationStatusType](#expirationstatustype)
@@ -18,6 +19,7 @@ type annotations stubs module
   - [JobReportScopeType](#jobreportscopetype)
   - [JobStatusType](#jobstatustype)
   - [ListAccessPointsForObjectLambdaPaginatorName](#listaccesspointsforobjectlambdapaginatorname)
+  - [MultiRegionAccessPointStatusType](#multiregionaccesspointstatustype)
   - [NetworkOriginType](#networkorigintype)
   - [ObjectLambdaAllowedFeatureType](#objectlambdaallowedfeaturetype)
   - [ObjectLambdaTransformationConfigurationActionType](#objectlambdatransformationconfigurationactiontype)
@@ -35,6 +37,18 @@ type annotations stubs module
   - [S3SSEAlgorithmType](#s3ssealgorithmtype)
   - [S3StorageClassType](#s3storageclasstype)
   - [TransitionStorageClassType](#transitionstorageclasstype)
+
+## AsyncOperationNameType
+
+```python
+from mypy_boto3_s3control.literals import AsyncOperationNameType
+```
+
+Values:
+
+- `CreateMultiRegionAccessPoint`
+- `DeleteMultiRegionAccessPoint`
+- `PutMultiRegionAccessPointPolicy`
 
 ## BucketCannedACLType
 
@@ -167,6 +181,21 @@ from mypy_boto3_s3control.literals import ListAccessPointsForObjectLambdaPaginat
 Values:
 
 - `list_access_points_for_object_lambda`
+
+## MultiRegionAccessPointStatusType
+
+```python
+from mypy_boto3_s3control.literals import MultiRegionAccessPointStatusType
+```
+
+Values:
+
+- `CREATING`
+- `DELETING`
+- `INCONSISTENT_ACROSS_REGIONS`
+- `PARTIALLY_CREATED`
+- `PARTIALLY_DELETED`
+- `READY`
 
 ## NetworkOriginType
 

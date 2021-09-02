@@ -152,8 +152,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### create_access_preview
 
-Creates an access preview that allows you to preview Access Analyzer findings
-for your resource before deploying resource permissions.
+Creates an access preview that allows you to preview IAM Access Analyzer
+findings for your resource before deploying resource permissions.
 
 Type annotations for `boto3.client("accessanalyzer").create_access_preview`
 method.

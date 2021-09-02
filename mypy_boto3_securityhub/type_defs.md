@@ -17,6 +17,7 @@ type annotations stubs module
   - [ActionRemotePortDetailsTypeDef](#actionremoteportdetailstypedef)
   - [ActionTargetTypeDef](#actiontargettypedef)
   - [ActionTypeDef](#actiontypedef)
+  - [AdjustmentTypeDef](#adjustmenttypedef)
   - [AdminAccountTypeDef](#adminaccounttypedef)
   - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
   - [AwsApiCallActionDomainDetailsTypeDef](#awsapicallactiondomaindetailstypedef)
@@ -31,6 +32,10 @@ type annotations stubs module
   - [AwsApiGatewayV2RouteSettingsTypeDef](#awsapigatewayv2routesettingstypedef)
   - [AwsApiGatewayV2StageDetailsTypeDef](#awsapigatewayv2stagedetailstypedef)
   - [AwsAutoScalingAutoScalingGroupDetailsTypeDef](#awsautoscalingautoscalinggroupdetailstypedef)
+  - [AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef](#awsautoscalinglaunchconfigurationblockdevicemappingsdetailstypedef)
+  - [AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetailsTypeDef](#awsautoscalinglaunchconfigurationblockdevicemappingsebsdetailstypedef)
+  - [AwsAutoScalingLaunchConfigurationDetailsTypeDef](#awsautoscalinglaunchconfigurationdetailstypedef)
+  - [AwsAutoScalingLaunchConfigurationInstanceMonitoringDetailsTypeDef](#awsautoscalinglaunchconfigurationinstancemonitoringdetailstypedef)
   - [AwsCertificateManagerCertificateDetailsTypeDef](#awscertificatemanagercertificatedetailstypedef)
   - [AwsCertificateManagerCertificateDomainValidationOptionTypeDef](#awscertificatemanagercertificatedomainvalidationoptiontypedef)
   - [AwsCertificateManagerCertificateExtendedKeyUsageTypeDef](#awscertificatemanagercertificateextendedkeyusagetypedef)
@@ -92,6 +97,12 @@ type annotations stubs module
   - [AwsEc2VolumeAttachmentTypeDef](#awsec2volumeattachmenttypedef)
   - [AwsEc2VolumeDetailsTypeDef](#awsec2volumedetailstypedef)
   - [AwsEc2VpcDetailsTypeDef](#awsec2vpcdetailstypedef)
+  - [AwsEc2VpnConnectionDetailsTypeDef](#awsec2vpnconnectiondetailstypedef)
+  - [AwsEc2VpnConnectionOptionsDetailsTypeDef](#awsec2vpnconnectionoptionsdetailstypedef)
+  - [AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef](#awsec2vpnconnectionoptionstunneloptionsdetailstypedef)
+  - [AwsEc2VpnConnectionRoutesDetailsTypeDef](#awsec2vpnconnectionroutesdetailstypedef)
+  - [AwsEc2VpnConnectionVgwTelemetryDetailsTypeDef](#awsec2vpnconnectionvgwtelemetrydetailstypedef)
+  - [AwsEcrContainerImageDetailsTypeDef](#awsecrcontainerimagedetailstypedef)
   - [AwsEcsClusterClusterSettingsDetailsTypeDef](#awsecsclusterclustersettingsdetailstypedef)
   - [AwsEcsClusterConfigurationDetailsTypeDef](#awsecsclusterconfigurationdetailstypedef)
   - [AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef](#awsecsclusterconfigurationexecutecommandconfigurationdetailstypedef)
@@ -244,9 +255,20 @@ type annotations stubs module
   - [AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulesnoncurrentversiontransitionsdetailstypedef)
   - [AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef](#awss3bucketbucketlifecycleconfigurationrulestransitionsdetailstypedef)
   - [AwsS3BucketDetailsTypeDef](#awss3bucketdetailstypedef)
+  - [AwsS3BucketLoggingConfigurationTypeDef](#awss3bucketloggingconfigurationtypedef)
+  - [AwsS3BucketNotificationConfigurationDetailTypeDef](#awss3bucketnotificationconfigurationdetailtypedef)
+  - [AwsS3BucketNotificationConfigurationFilterTypeDef](#awss3bucketnotificationconfigurationfiltertypedef)
+  - [AwsS3BucketNotificationConfigurationS3KeyFilterRuleTypeDef](#awss3bucketnotificationconfigurations3keyfilterruletypedef)
+  - [AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef](#awss3bucketnotificationconfigurations3keyfiltertypedef)
+  - [AwsS3BucketNotificationConfigurationTypeDef](#awss3bucketnotificationconfigurationtypedef)
   - [AwsS3BucketServerSideEncryptionByDefaultTypeDef](#awss3bucketserversideencryptionbydefaulttypedef)
   - [AwsS3BucketServerSideEncryptionConfigurationTypeDef](#awss3bucketserversideencryptionconfigurationtypedef)
   - [AwsS3BucketServerSideEncryptionRuleTypeDef](#awss3bucketserversideencryptionruletypedef)
+  - [AwsS3BucketWebsiteConfigurationRedirectToTypeDef](#awss3bucketwebsiteconfigurationredirecttotypedef)
+  - [AwsS3BucketWebsiteConfigurationRoutingRuleConditionTypeDef](#awss3bucketwebsiteconfigurationroutingruleconditiontypedef)
+  - [AwsS3BucketWebsiteConfigurationRoutingRuleRedirectTypeDef](#awss3bucketwebsiteconfigurationroutingruleredirecttypedef)
+  - [AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef](#awss3bucketwebsiteconfigurationroutingruletypedef)
+  - [AwsS3BucketWebsiteConfigurationTypeDef](#awss3bucketwebsiteconfigurationtypedef)
   - [AwsS3ObjectDetailsTypeDef](#awss3objectdetailstypedef)
   - [AwsSecretsManagerSecretDetailsTypeDef](#awssecretsmanagersecretdetailstypedef)
   - [AwsSecretsManagerSecretRotationRulesTypeDef](#awssecretsmanagersecretrotationrulestypedef)
@@ -530,6 +552,17 @@ Optional fields:
 - `PortProbeAction`:
   [PortProbeActionTypeDef](./type_defs.md#portprobeactiontypedef)
 
+## AdjustmentTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AdjustmentTypeDef
+```
+
+Optional fields:
+
+- `Metric`: `str`
+- `Reason`: `str`
+
 ## AdminAccountTypeDef
 
 ```python
@@ -755,6 +788,74 @@ Optional fields:
 - `HealthCheckType`: `str`
 - `HealthCheckGracePeriod`: `int`
 - `CreatedTime`: `str`
+
+## AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef
+```
+
+Optional fields:
+
+- `DeviceName`: `str`
+- `Ebs`:
+  [AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationblockdevicemappingsebsdetailstypedef)
+- `NoDevice`: `bool`
+- `VirtualName`: `str`
+
+## AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingLaunchConfigurationBlockDeviceMappingsEbsDetailsTypeDef
+```
+
+Optional fields:
+
+- `DeleteOnTermination`: `bool`
+- `Encrypted`: `bool`
+- `Iops`: `int`
+- `SnapshotId`: `str`
+- `VolumeSize`: `int`
+- `VolumeType`: `str`
+
+## AwsAutoScalingLaunchConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingLaunchConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `AssociatePublicIpAddress`: `bool`
+- `BlockDeviceMappings`:
+  `List`\[[AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationblockdevicemappingsdetailstypedef)\]
+- `ClassicLinkVpcId`: `str`
+- `ClassicLinkVpcSecurityGroups`: `List`\[`str`\]
+- `CreatedTime`: `str`
+- `EbsOptimized`: `bool`
+- `IamInstanceProfile`: `str`
+- `ImageId`: `str`
+- `InstanceMonitoring`:
+  [AwsAutoScalingLaunchConfigurationInstanceMonitoringDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationinstancemonitoringdetailstypedef)
+- `InstanceType`: `str`
+- `KernelId`: `str`
+- `KeyName`: `str`
+- `LaunchConfigurationName`: `str`
+- `PlacementTenancy`: `str`
+- `RamdiskId`: `str`
+- `SecurityGroups`: `List`\[`str`\]
+- `SpotPrice`: `str`
+- `UserData`: `str`
+
+## AwsAutoScalingLaunchConfigurationInstanceMonitoringDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsAutoScalingLaunchConfigurationInstanceMonitoringDetailsTypeDef
+```
+
+Optional fields:
+
+- `Enabled`: `bool`
 
 ## AwsCertificateManagerCertificateDetailsTypeDef
 
@@ -1642,6 +1743,107 @@ Optional fields:
   `List`\[[Ipv6CidrBlockAssociationTypeDef](./type_defs.md#ipv6cidrblockassociationtypedef)\]
 - `DhcpOptionsId`: `str`
 - `State`: `str`
+
+## AwsEc2VpnConnectionDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEc2VpnConnectionDetailsTypeDef
+```
+
+Optional fields:
+
+- `VpnConnectionId`: `str`
+- `State`: `str`
+- `CustomerGatewayId`: `str`
+- `CustomerGatewayConfiguration`: `str`
+- `Type`: `str`
+- `VpnGatewayId`: `str`
+- `Category`: `str`
+- `VgwTelemetry`:
+  `List`\[[AwsEc2VpnConnectionVgwTelemetryDetailsTypeDef](./type_defs.md#awsec2vpnconnectionvgwtelemetrydetailstypedef)\]
+- `Options`:
+  [AwsEc2VpnConnectionOptionsDetailsTypeDef](./type_defs.md#awsec2vpnconnectionoptionsdetailstypedef)
+- `Routes`:
+  `List`\[[AwsEc2VpnConnectionRoutesDetailsTypeDef](./type_defs.md#awsec2vpnconnectionroutesdetailstypedef)\]
+- `TransitGatewayId`: `str`
+
+## AwsEc2VpnConnectionOptionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEc2VpnConnectionOptionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `StaticRoutesOnly`: `bool`
+- `TunnelOptions`:
+  `List`\[[AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef](./type_defs.md#awsec2vpnconnectionoptionstunneloptionsdetailstypedef)\]
+
+## AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `DpdTimeoutSeconds`: `int`
+- `IkeVersions`: `List`\[`str`\]
+- `OutsideIpAddress`: `str`
+- `Phase1DhGroupNumbers`: `List`\[`int`\]
+- `Phase1EncryptionAlgorithms`: `List`\[`str`\]
+- `Phase1IntegrityAlgorithms`: `List`\[`str`\]
+- `Phase1LifetimeSeconds`: `int`
+- `Phase2DhGroupNumbers`: `List`\[`int`\]
+- `Phase2EncryptionAlgorithms`: `List`\[`str`\]
+- `Phase2IntegrityAlgorithms`: `List`\[`str`\]
+- `Phase2LifetimeSeconds`: `int`
+- `PreSharedKey`: `str`
+- `RekeyFuzzPercentage`: `int`
+- `RekeyMarginTimeSeconds`: `int`
+- `ReplayWindowSize`: `int`
+- `TunnelInsideCidr`: `str`
+
+## AwsEc2VpnConnectionRoutesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEc2VpnConnectionRoutesDetailsTypeDef
+```
+
+Optional fields:
+
+- `DestinationCidrBlock`: `str`
+- `State`: `str`
+
+## AwsEc2VpnConnectionVgwTelemetryDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEc2VpnConnectionVgwTelemetryDetailsTypeDef
+```
+
+Optional fields:
+
+- `AcceptedRouteCount`: `int`
+- `CertificateArn`: `str`
+- `LastStatusChange`: `str`
+- `OutsideIpAddress`: `str`
+- `Status`: `str`
+- `StatusMessage`: `str`
+
+## AwsEcrContainerImageDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcrContainerImageDetailsTypeDef
+```
+
+Optional fields:
+
+- `RegistryId`: `str`
+- `RepositoryName`: `str`
+- `Architecture`: `str`
+- `ImageDigest`: `str`
+- `ImageTags`: `List`\[`str`\]
+- `ImagePublishedAt`: `str`
 
 ## AwsEcsClusterClusterSettingsDetailsTypeDef
 
@@ -2995,6 +3197,7 @@ Optional fields:
 - `KeyState`: `str`
 - `Origin`: `str`
 - `Description`: `str`
+- `KeyRotationStatus`: `bool`
 
 ## AwsLambdaFunctionCodeTypeDef
 
@@ -3935,6 +4138,83 @@ Optional fields:
   [AwsS3BucketBucketLifecycleConfigurationDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationdetailstypedef)
 - `PublicAccessBlockConfiguration`:
   [AwsS3AccountPublicAccessBlockDetailsTypeDef](./type_defs.md#awss3accountpublicaccessblockdetailstypedef)
+- `AccessControlList`: `str`
+- `BucketLoggingConfiguration`:
+  [AwsS3BucketLoggingConfigurationTypeDef](./type_defs.md#awss3bucketloggingconfigurationtypedef)
+- `BucketWebsiteConfiguration`:
+  [AwsS3BucketWebsiteConfigurationTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationtypedef)
+- `BucketNotificationConfiguration`:
+  [AwsS3BucketNotificationConfigurationTypeDef](./type_defs.md#awss3bucketnotificationconfigurationtypedef)
+
+## AwsS3BucketLoggingConfigurationTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketLoggingConfigurationTypeDef
+```
+
+Optional fields:
+
+- `DestinationBucketName`: `str`
+- `LogFilePrefix`: `str`
+
+## AwsS3BucketNotificationConfigurationDetailTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationDetailTypeDef
+```
+
+Optional fields:
+
+- `Events`: `List`\[`str`\]
+- `Filter`:
+  [AwsS3BucketNotificationConfigurationFilterTypeDef](./type_defs.md#awss3bucketnotificationconfigurationfiltertypedef)
+- `Destination`: `str`
+- `Type`: `str`
+
+## AwsS3BucketNotificationConfigurationFilterTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationFilterTypeDef
+```
+
+Optional fields:
+
+- `S3KeyFilter`:
+  [AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef](./type_defs.md#awss3bucketnotificationconfigurations3keyfiltertypedef)
+
+## AwsS3BucketNotificationConfigurationS3KeyFilterRuleTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationS3KeyFilterRuleTypeDef
+```
+
+Optional fields:
+
+- `Name`:
+  [AwsS3BucketNotificationConfigurationS3KeyFilterRuleNameType](./literals.md#awss3bucketnotificationconfigurations3keyfilterrulenametype)
+- `Value`: `str`
+
+## AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationS3KeyFilterTypeDef
+```
+
+Optional fields:
+
+- `FilterRules`:
+  `List`\[[AwsS3BucketNotificationConfigurationS3KeyFilterRuleTypeDef](./type_defs.md#awss3bucketnotificationconfigurations3keyfilterruletypedef)\]
+
+## AwsS3BucketNotificationConfigurationTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfigurationTypeDef
+```
+
+Optional fields:
+
+- `Configurations`:
+  `List`\[[AwsS3BucketNotificationConfigurationDetailTypeDef](./type_defs.md#awss3bucketnotificationconfigurationdetailtypedef)\]
 
 ## AwsS3BucketServerSideEncryptionByDefaultTypeDef
 
@@ -3968,6 +4248,70 @@ Optional fields:
 
 - `ApplyServerSideEncryptionByDefault`:
   [AwsS3BucketServerSideEncryptionByDefaultTypeDef](./type_defs.md#awss3bucketserversideencryptionbydefaulttypedef)
+
+## AwsS3BucketWebsiteConfigurationRedirectToTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketWebsiteConfigurationRedirectToTypeDef
+```
+
+Optional fields:
+
+- `Hostname`: `str`
+- `Protocol`: `str`
+
+## AwsS3BucketWebsiteConfigurationRoutingRuleConditionTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketWebsiteConfigurationRoutingRuleConditionTypeDef
+```
+
+Optional fields:
+
+- `HttpErrorCodeReturnedEquals`: `str`
+- `KeyPrefixEquals`: `str`
+
+## AwsS3BucketWebsiteConfigurationRoutingRuleRedirectTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketWebsiteConfigurationRoutingRuleRedirectTypeDef
+```
+
+Optional fields:
+
+- `Hostname`: `str`
+- `HttpRedirectCode`: `str`
+- `Protocol`: `str`
+- `ReplaceKeyPrefixWith`: `str`
+- `ReplaceKeyWith`: `str`
+
+## AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef
+```
+
+Optional fields:
+
+- `Condition`:
+  [AwsS3BucketWebsiteConfigurationRoutingRuleConditionTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruleconditiontypedef)
+- `Redirect`:
+  [AwsS3BucketWebsiteConfigurationRoutingRuleRedirectTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruleredirecttypedef)
+
+## AwsS3BucketWebsiteConfigurationTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsS3BucketWebsiteConfigurationTypeDef
+```
+
+Optional fields:
+
+- `ErrorDocument`: `str`
+- `IndexDocumentSuffix`: `str`
+- `RedirectAllRequestsTo`:
+  [AwsS3BucketWebsiteConfigurationRedirectToTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationredirecttotypedef)
+- `RoutingRules`:
+  `List`\[[AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruletypedef)\]
 
 ## AwsS3ObjectDetailsTypeDef
 
@@ -4723,6 +5067,9 @@ Optional fields:
 - `Version`: `str`
 - `BaseScore`: `float`
 - `BaseVector`: `str`
+- `Source`: `str`
+- `Adjustments`:
+  `List`\[[AdjustmentTypeDef](./type_defs.md#adjustmenttypedef)\]
 
 ## DataClassificationDetailsTypeDef
 
@@ -6039,6 +6386,12 @@ Optional fields:
   [AwsRdsEventSubscriptionDetailsTypeDef](./type_defs.md#awsrdseventsubscriptiondetailstypedef)
 - `AwsEcsService`:
   [AwsEcsServiceDetailsTypeDef](./type_defs.md#awsecsservicedetailstypedef)
+- `AwsAutoScalingLaunchConfiguration`:
+  [AwsAutoScalingLaunchConfigurationDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationdetailstypedef)
+- `AwsEc2VpnConnection`:
+  [AwsEc2VpnConnectionDetailsTypeDef](./type_defs.md#awsec2vpnconnectiondetailstypedef)
+- `AwsEcrContainerImage`:
+  [AwsEcrContainerImageDetailsTypeDef](./type_defs.md#awsecrcontainerimagedetailstypedef)
 
 ## ResourceTypeDef
 
@@ -6149,6 +6502,8 @@ Optional fields:
 - `Epoch`: `str`
 - `Release`: `str`
 - `Architecture`: `str`
+- `PackageManager`: `str`
+- `FilePath`: `str`
 
 ## SortCriterionTypeDef
 
