@@ -49,6 +49,8 @@ type annotations stubs module
   - [EntityTypeTypeDef](#entitytypetypedef)
   - [EventTypeTypeDef](#eventtypetypedef)
   - [ExternalEventsDetailTypeDef](#externaleventsdetailtypedef)
+  - [ExternalModelOutputsTypeDef](#externalmodeloutputstypedef)
+  - [ExternalModelSummaryTypeDef](#externalmodelsummarytypedef)
   - [ExternalModelTypeDef](#externalmodeltypedef)
   - [FieldValidationMessageTypeDef](#fieldvalidationmessagetypedef)
   - [FileValidationMessageTypeDef](#filevalidationmessagetypedef)
@@ -691,6 +693,30 @@ Required fields:
 - `dataLocation`: `str`
 - `dataAccessRoleArn`: `str`
 
+## ExternalModelOutputsTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import ExternalModelOutputsTypeDef
+```
+
+Optional fields:
+
+- `externalModel`:
+  [ExternalModelSummaryTypeDef](./type_defs.md#externalmodelsummarytypedef)
+- `outputs`: `Dict`\[`str`, `str`\]
+
+## ExternalModelSummaryTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import ExternalModelSummaryTypeDef
+```
+
+Optional fields:
+
+- `modelEndpoint`: `str`
+- `modelSource`: `Literal['SAGEMAKER']` (see
+  [ModelSourceType](./literals.md#modelsourcetype))
+
 ## ExternalModelTypeDef
 
 ```python
@@ -885,6 +911,8 @@ Required fields:
   `List`\[[ModelScoresTypeDef](./type_defs.md#modelscorestypedef)\]
 - `ruleResults`:
   `List`\[[RuleResultTypeDef](./type_defs.md#ruleresulttypedef)\]
+- `externalModelOutputs`:
+  `List`\[[ExternalModelOutputsTypeDef](./type_defs.md#externalmodeloutputstypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

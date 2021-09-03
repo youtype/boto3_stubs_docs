@@ -13,6 +13,7 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
+    - [create_order](#create_order)
     - [create_outpost](#create_outpost)
     - [delete_outpost](#delete_outpost)
     - [delete_site](#delete_site)
@@ -90,6 +91,31 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+### create_order
+
+Creates an order for an Outpost.
+
+Type annotations for `boto3.client("outposts").create_order` method.
+
+Boto3 documentation:
+[Outposts.Client.create_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_order)
+
+Arguments mapping described in
+[CreateOrderInputRequestTypeDef](./type_defs.md#createorderinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `OutpostIdentifier`: `str` *(required)*
+- `LineItems`:
+  `List`\[[LineItemRequestTypeDef](./type_defs.md#lineitemrequesttypedef)\]
+  *(required)*
+- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
+  *(required)*
+- `PaymentTerm`: `Literal['THREE_YEARS']` (see
+  [PaymentTermType](./literals.md#paymenttermtype))
+
+Returns [CreateOrderOutputTypeDef](./type_defs.md#createorderoutputtypedef).
 
 ### create_outpost
 

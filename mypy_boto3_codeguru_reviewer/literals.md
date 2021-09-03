@@ -111,6 +111,7 @@ Values:
 
 - `AWSBestPractices`
 - `AWSCloudFormationIssues`
+- `CodeInconsistencies`
 - `CodeMaintenanceIssues`
 - `ConcurrencyIssues`
 - `DuplicateCode`

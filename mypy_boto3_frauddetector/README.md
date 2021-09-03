@@ -181,6 +181,8 @@ from mypy_boto3_frauddetector.type_defs import BatchCreateVariableErrorTypeDef, 
 - [EntityTypeTypeDef](./type_defs.md#entitytypetypedef)
 - [EventTypeTypeDef](./type_defs.md#eventtypetypedef)
 - [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
+- [ExternalModelOutputsTypeDef](./type_defs.md#externalmodeloutputstypedef)
+- [ExternalModelSummaryTypeDef](./type_defs.md#externalmodelsummarytypedef)
 - [ExternalModelTypeDef](./type_defs.md#externalmodeltypedef)
 - [FieldValidationMessageTypeDef](./type_defs.md#fieldvalidationmessagetypedef)
 - [FileValidationMessageTypeDef](./type_defs.md#filevalidationmessagetypedef)
