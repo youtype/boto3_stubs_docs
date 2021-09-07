@@ -526,8 +526,8 @@ Returns
 
 ### list_tags_for_resource
 
-Returns a list of tags that are applied to the specified AWS X-Ray group or
-sampling rule.
+Returns a list of tags that are applied to the specified Amazon Web Services
+X-Ray group or sampling rule.
 
 Type annotations for `boto3.client("xray").list_tags_for_resource` method.
 
@@ -567,7 +567,7 @@ Returns
 
 ### put_telemetry_records
 
-Used by the AWS X-Ray daemon to upload telemetry.
+Used by the Amazon Web Services X-Ray daemon to upload telemetry.
 
 Type annotations for `boto3.client("xray").put_telemetry_records` method.
 
@@ -590,7 +590,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_trace_segments
 
-Uploads segment documents to AWS X-Ray.
+Uploads segment documents to Amazon Web Services X-Ray.
 
 Type annotations for `boto3.client("xray").put_trace_segments` method.
 
@@ -609,7 +609,7 @@ Returns
 
 ### tag_resource
 
-Applies tags to an existing AWS X-Ray group or sampling rule.
+Applies tags to an existing Amazon Web Services X-Ray group or sampling rule.
 
 Type annotations for `boto3.client("xray").tag_resource` method.
 
@@ -628,7 +628,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes tags from an AWS X-Ray group or sampling rule.
+Removes tags from an Amazon Web Services X-Ray group or sampling rule.
 
 Type annotations for `boto3.client("xray").untag_resource` method.
 

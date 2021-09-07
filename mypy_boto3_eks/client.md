@@ -23,6 +23,7 @@ type annotations stubs module
     - [delete_cluster](#delete_cluster)
     - [delete_fargate_profile](#delete_fargate_profile)
     - [delete_nodegroup](#delete_nodegroup)
+    - [deregister_cluster](#deregister_cluster)
     - [describe_addon](#describe_addon)
     - [describe_addon_versions](#describe_addon_versions)
     - [describe_cluster](#describe_cluster)
@@ -39,6 +40,7 @@ type annotations stubs module
     - [list_nodegroups](#list_nodegroups)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_updates](#list_updates)
+    - [register_cluster](#register_cluster)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_addon](#update_addon)
@@ -371,6 +373,25 @@ Keyword-only arguments:
 Returns
 [DeleteNodegroupResponseTypeDef](./type_defs.md#deletenodegroupresponsetypedef).
 
+### deregister_cluster
+
+Deregisters a connected cluster to remove it from the Amazon EKS control plane.
+
+Type annotations for `boto3.client("eks").deregister_cluster` method.
+
+Boto3 documentation:
+[EKS.Client.deregister_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.deregister_cluster)
+
+Arguments mapping described in
+[DeregisterClusterRequestRequestTypeDef](./type_defs.md#deregisterclusterrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `name`: `str` *(required)*
+
+Returns
+[DeregisterClusterResponseTypeDef](./type_defs.md#deregisterclusterresponsetypedef).
+
 ### describe_addon
 
 .
@@ -596,6 +617,7 @@ Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `include`: `List`\[`str`\]
 
 Returns
 [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
@@ -708,6 +730,29 @@ Keyword-only arguments:
 
 Returns
 [ListUpdatesResponseTypeDef](./type_defs.md#listupdatesresponsetypedef).
+
+### register_cluster
+
+Connects a Kubernetes cluster to the Amazon EKS control plane.
+
+Type annotations for `boto3.client("eks").register_cluster` method.
+
+Boto3 documentation:
+[EKS.Client.register_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.register_cluster)
+
+Arguments mapping described in
+[RegisterClusterRequestRequestTypeDef](./type_defs.md#registerclusterrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `name`: `str` *(required)*
+- `connectorConfig`:
+  [ConnectorConfigRequestTypeDef](./type_defs.md#connectorconfigrequesttypedef)
+  *(required)*
+- `clientRequestToken`: `str`
+
+Returns
+[RegisterClusterResponseTypeDef](./type_defs.md#registerclusterresponsetypedef).
 
 ### tag_resource
 

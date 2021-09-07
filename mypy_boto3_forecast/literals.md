@@ -22,6 +22,7 @@ type annotations stubs module
   - [ListForecastsPaginatorName](#listforecastspaginatorname)
   - [ListPredictorBacktestExportJobsPaginatorName](#listpredictorbacktestexportjobspaginatorname)
   - [ListPredictorsPaginatorName](#listpredictorspaginatorname)
+  - [OptimizationMetricType](#optimizationmetrictype)
   - [ScalingTypeType](#scalingtypetype)
 
 ## AttributeTypeType
@@ -177,6 +178,20 @@ from mypy_boto3_forecast.literals import ListPredictorsPaginatorName
 Values:
 
 - `list_predictors`
+
+## OptimizationMetricType
+
+```python
+from mypy_boto3_forecast.literals import OptimizationMetricType
+```
+
+Values:
+
+- `AverageWeightedQuantileLoss`
+- `MAPE`
+- `MASE`
+- `RMSE`
+- `WAPE`
 
 ## ScalingTypeType
 

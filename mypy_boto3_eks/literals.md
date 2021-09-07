@@ -17,6 +17,7 @@ type annotations stubs module
   - [ClusterActiveWaiterName](#clusteractivewaitername)
   - [ClusterDeletedWaiterName](#clusterdeletedwaitername)
   - [ClusterStatusType](#clusterstatustype)
+  - [ConnectorConfigProviderType](#connectorconfigprovidertype)
   - [DescribeAddonVersionsPaginatorName](#describeaddonversionspaginatorname)
   - [ErrorCodeType](#errorcodetype)
   - [FargateProfileActiveWaiterName](#fargateprofileactivewaitername)
@@ -149,7 +150,26 @@ Values:
 - `CREATING`
 - `DELETING`
 - `FAILED`
+- `PENDING`
 - `UPDATING`
+
+## ConnectorConfigProviderType
+
+```python
+from mypy_boto3_eks.literals import ConnectorConfigProviderType
+```
+
+Values:
+
+- `AKS`
+- `ANTHOS`
+- `EC2`
+- `EKS_ANYWHERE`
+- `GKE`
+- `OPENSHIFT`
+- `OTHER`
+- `RANCHER`
+- `TANZU`
 
 ## DescribeAddonVersionsPaginatorName
 

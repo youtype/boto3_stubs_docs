@@ -13,10 +13,14 @@ type annotations stubs module
   - [DeleteWorkspaceRequestRequestTypeDef](#deleteworkspacerequestrequesttypedef)
   - [DescribeWorkspaceRequestRequestTypeDef](#describeworkspacerequestrequesttypedef)
   - [DescribeWorkspaceResponseTypeDef](#describeworkspaceresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListWorkspacesRequestRequestTypeDef](#listworkspacesrequestrequesttypedef)
   - [ListWorkspacesResponseTypeDef](#listworkspacesresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateWorkspaceAliasRequestRequestTypeDef](#updateworkspacealiasrequestrequesttypedef)
   - [WorkspaceDescriptionTypeDef](#workspacedescriptiontypedef)
   - [WorkspaceStatusTypeDef](#workspacestatustypedef)
@@ -32,6 +36,7 @@ Optional fields:
 
 - `alias`: `str`
 - `clientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## CreateWorkspaceResponseTypeDef
 
@@ -43,6 +48,7 @@ Required fields:
 
 - `arn`: `str`
 - `status`: [WorkspaceStatusTypeDef](./type_defs.md#workspacestatustypedef)
+- `tags`: `Dict`\[`str`, `str`\]
 - `workspaceId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -81,6 +87,28 @@ Required fields:
 
 - `workspace`:
   [WorkspaceDescriptionTypeDef](./type_defs.md#workspacedescriptiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_amp.type_defs import ListTagsForResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+
+## ListTagsForResourceResponseTypeDef
+
+```python
+from mypy_boto3_amp.type_defs import ListTagsForResourceResponseTypeDef
+```
+
+Required fields:
+
+- `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -136,6 +164,28 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
+## TagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_amp.type_defs import TagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
+
+## UntagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_amp.type_defs import UntagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `List`\[`str`\]
+
 ## UpdateWorkspaceAliasRequestRequestTypeDef
 
 ```python
@@ -168,6 +218,7 @@ Optional fields:
 
 - `alias`: `str`
 - `prometheusEndpoint`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
 ## WorkspaceStatusTypeDef
 
@@ -196,3 +247,4 @@ Required fields:
 Optional fields:
 
 - `alias`: `str`
+- `tags`: `Dict`\[`str`, `str`\]

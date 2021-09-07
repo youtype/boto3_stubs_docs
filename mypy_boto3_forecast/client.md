@@ -276,6 +276,8 @@ Keyword-only arguments:
 - `EncryptionConfig`:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OptimizationMetric`:
+  [OptimizationMetricType](./literals.md#optimizationmetrictype)
 
 Returns
 [CreatePredictorResponseTypeDef](./type_defs.md#createpredictorresponsetypedef).

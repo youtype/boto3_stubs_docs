@@ -21,6 +21,8 @@ type annotations stubs module
   - [CertificateTypeDef](#certificatetypedef)
   - [ClusterTypeDef](#clustertypedef)
   - [CompatibilityTypeDef](#compatibilitytypedef)
+  - [ConnectorConfigRequestTypeDef](#connectorconfigrequesttypedef)
+  - [ConnectorConfigResponseTypeDef](#connectorconfigresponsetypedef)
   - [CreateAddonRequestRequestTypeDef](#createaddonrequestrequesttypedef)
   - [CreateAddonResponseTypeDef](#createaddonresponsetypedef)
   - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
@@ -37,6 +39,8 @@ type annotations stubs module
   - [DeleteFargateProfileResponseTypeDef](#deletefargateprofileresponsetypedef)
   - [DeleteNodegroupRequestRequestTypeDef](#deletenodegrouprequestrequesttypedef)
   - [DeleteNodegroupResponseTypeDef](#deletenodegroupresponsetypedef)
+  - [DeregisterClusterRequestRequestTypeDef](#deregisterclusterrequestrequesttypedef)
+  - [DeregisterClusterResponseTypeDef](#deregisterclusterresponsetypedef)
   - [DescribeAddonRequestRequestTypeDef](#describeaddonrequestrequesttypedef)
   - [DescribeAddonResponseTypeDef](#describeaddonresponsetypedef)
   - [DescribeAddonVersionsRequestRequestTypeDef](#describeaddonversionsrequestrequesttypedef)
@@ -90,6 +94,8 @@ type annotations stubs module
   - [OidcIdentityProviderConfigTypeDef](#oidcidentityproviderconfigtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ProviderTypeDef](#providertypedef)
+  - [RegisterClusterRequestRequestTypeDef](#registerclusterrequestrequesttypedef)
+  - [RegisterClusterResponseTypeDef](#registerclusterresponsetypedef)
   - [RemoteAccessConfigTypeDef](#remoteaccessconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
@@ -286,6 +292,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `encryptionConfig`:
   `List`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
+- `connectorConfig`:
+  [ConnectorConfigResponseTypeDef](./type_defs.md#connectorconfigresponsetypedef)
 
 ## CompatibilityTypeDef
 
@@ -298,6 +306,32 @@ Optional fields:
 - `clusterVersion`: `str`
 - `platformVersions`: `List`\[`str`\]
 - `defaultVersion`: `bool`
+
+## ConnectorConfigRequestTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import ConnectorConfigRequestTypeDef
+```
+
+Required fields:
+
+- `roleArn`: `str`
+- `provider`:
+  [ConnectorConfigProviderType](./literals.md#connectorconfigprovidertype)
+
+## ConnectorConfigResponseTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import ConnectorConfigResponseTypeDef
+```
+
+Optional fields:
+
+- `activationId`: `str`
+- `activationCode`: `str`
+- `activationExpiry`: `datetime`
+- `provider`: `str`
+- `roleArn`: `str`
 
 ## CreateAddonRequestRequestTypeDef
 
@@ -539,6 +573,28 @@ from mypy_boto3_eks.type_defs import DeleteNodegroupResponseTypeDef
 Required fields:
 
 - `nodegroup`: [NodegroupTypeDef](./type_defs.md#nodegrouptypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DeregisterClusterRequestRequestTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import DeregisterClusterRequestRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+
+## DeregisterClusterResponseTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import DeregisterClusterResponseTypeDef
+```
+
+Required fields:
+
+- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -908,6 +964,7 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `include`: `List`\[`str`\]
 
 ## ListClustersResponseTypeDef
 
@@ -1234,6 +1291,34 @@ from mypy_boto3_eks.type_defs import ProviderTypeDef
 Optional fields:
 
 - `keyArn`: `str`
+
+## RegisterClusterRequestRequestTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import RegisterClusterRequestRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `connectorConfig`:
+  [ConnectorConfigRequestTypeDef](./type_defs.md#connectorconfigrequesttypedef)
+
+Optional fields:
+
+- `clientRequestToken`: `str`
+
+## RegisterClusterResponseTypeDef
+
+```python
+from mypy_boto3_eks.type_defs import RegisterClusterResponseTypeDef
+```
+
+Required fields:
+
+- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## RemoteAccessConfigTypeDef
 

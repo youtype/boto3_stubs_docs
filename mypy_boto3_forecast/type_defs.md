@@ -340,6 +340,8 @@ Optional fields:
 - `EncryptionConfig`:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OptimizationMetric`:
+  [OptimizationMetricType](./literals.md#optimizationmetrictype)
 
 ## CreatePredictorResponseTypeDef
 
@@ -732,6 +734,8 @@ Required fields:
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
+- `OptimizationMetric`:
+  [OptimizationMetricType](./literals.md#optimizationmetrictype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -757,6 +761,8 @@ Optional fields:
 - `ForecastType`: `str`
 - `WAPE`: `float`
 - `RMSE`: `float`
+- `MASE`: `float`
+- `MAPE`: `float`
 
 ## EvaluationParametersTypeDef
 
@@ -896,6 +902,8 @@ Required fields:
   `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
 - `AutoMLOverrideStrategy`: `Literal['LatencyOptimized']` (see
   [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype))
+- `OptimizationMetric`:
+  [OptimizationMetricType](./literals.md#optimizationmetrictype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1156,6 +1164,7 @@ Optional fields:
   `List`\[[WeightedQuantileLossTypeDef](./type_defs.md#weightedquantilelosstypedef)\]
 - `ErrorMetrics`:
   `List`\[[ErrorMetricTypeDef](./type_defs.md#errormetrictypedef)\]
+- `AverageWeightedQuantileLoss`: `float`
 
 ## PaginatorConfigTypeDef
 

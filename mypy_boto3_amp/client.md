@@ -17,7 +17,10 @@ type annotations stubs module
     - [delete_workspace](#delete_workspace)
     - [describe_workspace](#describe_workspace)
     - [generate_presigned_url](#generate_presigned_url)
+    - [list_tags_for_resource](#list_tags_for_resource)
     - [list_workspaces](#list_workspaces)
+    - [tag_resource](#tag_resource)
+    - [untag_resource](#untag_resource)
     - [update_workspace_alias](#update_workspace_alias)
     - [get_paginator](#get_paginator)
 
@@ -104,6 +107,7 @@ Keyword-only arguments:
 
 - `alias`: `str`
 - `clientToken`: `str`
+- `tags`: `Dict`\[`str`, `str`\]
 
 Returns
 [CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef).
@@ -162,6 +166,25 @@ Arguments:
 
 Returns `str`.
 
+### list_tags_for_resource
+
+Lists the tags you have assigned to the resource.
+
+Type annotations for `boto3.client("amp").list_tags_for_resource` method.
+
+Boto3 documentation:
+[PrometheusService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `resourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
 ### list_workspaces
 
 Lists all AMP workspaces, including workspaces being created or deleted.
@@ -182,6 +205,44 @@ Keyword-only arguments:
 
 Returns
 [ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef).
+
+### tag_resource
+
+Creates tags for the specified resource.
+
+Type annotations for `boto3.client("amp").tag_resource` method.
+
+Boto3 documentation:
+[PrometheusService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tags`: `Dict`\[`str`, `str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### untag_resource
+
+Deletes tags from the specified resource.
+
+Type annotations for `boto3.client("amp").untag_resource` method.
+
+Boto3 documentation:
+[PrometheusService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `resourceArn`: `str` *(required)*
+- `tagKeys`: `List`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### update_workspace_alias
 
