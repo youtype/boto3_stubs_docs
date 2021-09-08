@@ -44,6 +44,7 @@ type annotations stubs module
     - [update_cluster_kafka_version](#update_cluster_kafka_version)
     - [update_configuration](#update_configuration)
     - [update_monitoring](#update_monitoring)
+    - [update_security](#update_security)
     - [get_paginator](#get_paginator)
 
 ## KafkaClient
@@ -770,6 +771,30 @@ Keyword-only arguments:
 
 Returns
 [UpdateMonitoringResponseTypeDef](./type_defs.md#updatemonitoringresponsetypedef).
+
+### update_security
+
+Updates the security settings for the cluster.
+
+Type annotations for `boto3.client("kafka").update_security` method.
+
+Boto3 documentation:
+[Kafka.Client.update_security](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client.update_security)
+
+Arguments mapping described in
+[UpdateSecurityRequestRequestTypeDef](./type_defs.md#updatesecurityrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClusterArn`: `str` *(required)*
+- `CurrentVersion`: `str` *(required)*
+- `ClientAuthentication`:
+  [ClientAuthenticationTypeDef](./type_defs.md#clientauthenticationtypedef)
+- `EncryptionInfo`:
+  [EncryptionInfoTypeDef](./type_defs.md#encryptioninfotypedef)
+
+Returns
+[UpdateSecurityResponseTypeDef](./type_defs.md#updatesecurityresponsetypedef).
 
 ### get_paginator
 

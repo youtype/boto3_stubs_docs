@@ -65,6 +65,7 @@ from mypy_boto3_kafka.client import KafkaClient
 - [update_cluster_kafka_version](./client.md#update_cluster_kafka_version)
 - [update_configuration](./client.md#update_configuration)
 - [update_monitoring](./client.md#update_monitoring)
+- [update_security](./client.md#update_security)
 
 ### Exceptions
 
@@ -220,6 +221,7 @@ from mypy_boto3_kafka.type_defs import BatchAssociateScramSecretRequestRequestTy
 - [StorageInfoTypeDef](./type_defs.md#storageinfotypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TlsTypeDef](./type_defs.md#tlstypedef)
+- [UnauthenticatedTypeDef](./type_defs.md#unauthenticatedtypedef)
 - [UnprocessedScramSecretTypeDef](./type_defs.md#unprocessedscramsecrettypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateBrokerCountRequestRequestTypeDef](./type_defs.md#updatebrokercountrequestrequesttypedef)
@@ -236,4 +238,6 @@ from mypy_boto3_kafka.type_defs import BatchAssociateScramSecretRequestRequestTy
 - [UpdateConfigurationResponseTypeDef](./type_defs.md#updateconfigurationresponsetypedef)
 - [UpdateMonitoringRequestRequestTypeDef](./type_defs.md#updatemonitoringrequestrequesttypedef)
 - [UpdateMonitoringResponseTypeDef](./type_defs.md#updatemonitoringresponsetypedef)
+- [UpdateSecurityRequestRequestTypeDef](./type_defs.md#updatesecurityrequestrequesttypedef)
+- [UpdateSecurityResponseTypeDef](./type_defs.md#updatesecurityresponsetypedef)
 - [ZookeeperNodeInfoTypeDef](./type_defs.md#zookeepernodeinfotypedef)

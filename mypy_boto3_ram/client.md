@@ -108,7 +108,8 @@ Returns [Exceptions](#exceptions).
 
 ### accept_resource_share_invitation
 
-Accepts an invitation to a resource share from another AWS account.
+Accepts an invitation to a resource share from another Amazon Web Services
+account.
 
 Type annotations for `boto3.client("ram").accept_resource_share_invitation`
 method.
@@ -259,7 +260,7 @@ Returns
 
 ### disassociate_resource_share_permission
 
-Disassociates an AWS RAM permission from a resource share.
+Disassociates an RAM permission from a resource share.
 
 Type annotations for
 `boto3.client("ram").disassociate_resource_share_permission` method.
@@ -281,7 +282,7 @@ Returns
 
 ### enable_sharing_with_aws_organization
 
-Enables resource sharing within your AWS Organization.
+Enables resource sharing within your organization in Organizations.
 
 Type annotations for `boto3.client("ram").enable_sharing_with_aws_organization`
 method.
@@ -312,7 +313,7 @@ Returns `str`.
 
 ### get_permission
 
-Gets the contents of an AWS RAM permission in JSON format.
+Gets the contents of an RAM permission in JSON format.
 
 Type annotations for `boto3.client("ram").get_permission` method.
 
@@ -458,7 +459,7 @@ Returns
 
 ### list_permissions
 
-Lists the AWS RAM permissions.
+Lists the RAM permissions.
 
 Type annotations for `boto3.client("ram").list_permissions` method.
 
@@ -506,7 +507,7 @@ Returns
 
 ### list_resource_share_permissions
 
-Lists the AWS RAM permissions that are associated with a resource share.
+Lists the RAM permissions that are associated with a resource share.
 
 Type annotations for `boto3.client("ram").list_resource_share_permissions`
 method.
@@ -528,7 +529,7 @@ Returns
 
 ### list_resource_types
 
-Lists the shareable resource types supported by AWS RAM.
+Lists the shareable resource types supported by RAM.
 
 Type annotations for `boto3.client("ram").list_resource_types` method.
 
@@ -577,7 +578,7 @@ Returns
 
 Resource shares that were created by attaching a policy to a resource are
 visible only to the resource share owner, and the resource share cannot be
-modified in AWS RAM.
+modified in RAM.
 
 Type annotations for
 `boto3.client("ram").promote_resource_share_created_from_policy` method.
@@ -597,7 +598,8 @@ Returns
 
 ### reject_resource_share_invitation
 
-Rejects an invitation to a resource share from another AWS account.
+Rejects an invitation to a resource share from another Amazon Web Services
+account.
 
 Type annotations for `boto3.client("ram").reject_resource_share_invitation`
 method.

@@ -93,6 +93,7 @@ type annotations stubs module
   - [StorageInfoTypeDef](#storageinfotypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TlsTypeDef](#tlstypedef)
+  - [UnauthenticatedTypeDef](#unauthenticatedtypedef)
   - [UnprocessedScramSecretTypeDef](#unprocessedscramsecrettypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateBrokerCountRequestRequestTypeDef](#updatebrokercountrequestrequesttypedef)
@@ -109,6 +110,8 @@ type annotations stubs module
   - [UpdateConfigurationResponseTypeDef](#updateconfigurationresponsetypedef)
   - [UpdateMonitoringRequestRequestTypeDef](#updatemonitoringrequestrequesttypedef)
   - [UpdateMonitoringResponseTypeDef](#updatemonitoringresponsetypedef)
+  - [UpdateSecurityRequestRequestTypeDef](#updatesecurityrequestrequesttypedef)
+  - [UpdateSecurityResponseTypeDef](#updatesecurityresponsetypedef)
   - [ZookeeperNodeInfoTypeDef](#zookeepernodeinfotypedef)
 
 ## BatchAssociateScramSecretRequestRequestTypeDef
@@ -241,6 +244,8 @@ Optional fields:
 
 - `Sasl`: [SaslTypeDef](./type_defs.md#sasltypedef)
 - `Tls`: [TlsTypeDef](./type_defs.md#tlstypedef)
+- `Unauthenticated`:
+  [UnauthenticatedTypeDef](./type_defs.md#unauthenticatedtypedef)
 
 ## CloudWatchLogsTypeDef
 
@@ -1015,6 +1020,10 @@ Optional fields:
 - `KafkaVersion`: `str`
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 - `InstanceType`: `str`
+- `ClientAuthentication`:
+  [ClientAuthenticationTypeDef](./type_defs.md#clientauthenticationtypedef)
+- `EncryptionInfo`:
+  [EncryptionInfoTypeDef](./type_defs.md#encryptioninfotypedef)
 
 ## NodeExporterInfoTypeDef
 
@@ -1226,6 +1235,17 @@ from mypy_boto3_kafka.type_defs import TlsTypeDef
 Optional fields:
 
 - `CertificateAuthorityArnList`: `List`\[`str`\]
+- `Enabled`: `bool`
+
+## UnauthenticatedTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import UnauthenticatedTypeDef
+```
+
+Optional fields:
+
+- `Enabled`: `bool`
 
 ## UnprocessedScramSecretTypeDef
 
@@ -1434,6 +1454,37 @@ Optional fields:
 
 ```python
 from mypy_boto3_kafka.type_defs import UpdateMonitoringResponseTypeDef
+```
+
+Required fields:
+
+- `ClusterArn`: `str`
+- `ClusterOperationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateSecurityRequestRequestTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import UpdateSecurityRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ClusterArn`: `str`
+- `CurrentVersion`: `str`
+
+Optional fields:
+
+- `ClientAuthentication`:
+  [ClientAuthenticationTypeDef](./type_defs.md#clientauthenticationtypedef)
+- `EncryptionInfo`:
+  [EncryptionInfoTypeDef](./type_defs.md#encryptioninfotypedef)
+
+## UpdateSecurityResponseTypeDef
+
+```python
+from mypy_boto3_kafka.type_defs import UpdateSecurityResponseTypeDef
 ```
 
 Required fields:

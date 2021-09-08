@@ -783,6 +783,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
   service
 
+- [mypy-boto3-opensearch](./mypy_boto3_opensearch) for
+  [OpenSearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService)
+  service
+
 - [mypy-boto3-opsworks](./mypy_boto3_opsworks) for
   [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
   service
