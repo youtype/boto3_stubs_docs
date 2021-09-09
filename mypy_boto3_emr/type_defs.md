@@ -639,7 +639,6 @@ Required fields:
 - `VpcId`: `str`
 - `SubnetIds`: `List`\[`str`\]
 - `ServiceRole`: `str`
-- `UserRole`: `str`
 - `WorkspaceSecurityGroupId`: `str`
 - `EngineSecurityGroupId`: `str`
 - `DefaultS3Location`: `str`
@@ -647,6 +646,9 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+- `UserRole`: `str`
+- `IdpAuthUrl`: `str`
+- `IdpRelayStateParameterName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateStudioOutputTypeDef
@@ -2641,6 +2643,7 @@ Optional fields:
 - `VpcId`: `str`
 - `Description`: `str`
 - `Url`: `str`
+- `AuthMode`: [AuthModeType](./literals.md#authmodetype)
 - `CreationTime`: `datetime`
 
 ## StudioTypeDef
@@ -2665,6 +2668,8 @@ Optional fields:
 - `Url`: `str`
 - `CreationTime`: `datetime`
 - `DefaultS3Location`: `str`
+- `IdpAuthUrl`: `str`
+- `IdpRelayStateParameterName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## SupportedProductConfigTypeDef

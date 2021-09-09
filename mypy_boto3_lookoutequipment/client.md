@@ -191,6 +191,7 @@ Keyword-only arguments:
   [DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef)
 - `ServerSideKmsKeyId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OffCondition`: `str`
 
 Returns
 [CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
@@ -267,8 +268,8 @@ Returns
 
 ### describe_dataset
 
-Provides information on a specified dataset such as the schema location,
-status, and so on.
+Provides a JSON description of the data that is in each time series dataset,
+including names, column names, and data types.
 
 Type annotations for `boto3.client("lookoutequipment").describe_dataset`
 method.
@@ -311,8 +312,9 @@ Returns
 
 ### describe_model
 
-Provides overall information about a specific ML model, including model name
-and ARN, dataset, training and evaluation information, status, and so on.
+Provides a JSON containing the overall information about a specific ML model,
+including model name and ARN, dataset, training and evaluation information,
+status, and so on.
 
 Type annotations for `boto3.client("lookoutequipment").describe_model` method.
 

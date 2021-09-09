@@ -18,6 +18,7 @@ type annotations stubs module
   - [RecommendationCategoryType](#recommendationcategorytype)
   - [RepositoryAssociationStateType](#repositoryassociationstatetype)
   - [RepositoryAssociationSucceededWaiterName](#repositoryassociationsucceededwaitername)
+  - [SeverityType](#severitytype)
   - [TypeType](#typetype)
   - [VendorNameType](#vendornametype)
 
@@ -144,6 +145,20 @@ from mypy_boto3_codeguru_reviewer.literals import RepositoryAssociationSucceeded
 Values:
 
 - `repository_association_succeeded`
+
+## SeverityType
+
+```python
+from mypy_boto3_codeguru_reviewer.literals import SeverityType
+```
+
+Values:
+
+- `Critical`
+- `High`
+- `Info`
+- `Low`
+- `Medium`
 
 ## TypeType
 

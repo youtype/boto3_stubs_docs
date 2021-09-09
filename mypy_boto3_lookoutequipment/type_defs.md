@@ -163,6 +163,7 @@ Optional fields:
   [DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef)
 - `ServerSideKmsKeyId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `OffCondition`: `str`
 
 ## CreateModelResponseTypeDef
 
@@ -393,6 +394,7 @@ Required fields:
 - `LastUpdatedTime`: `datetime`
 - `CreatedAt`: `datetime`
 - `ServerSideKmsKeyId`: `str`
+- `OffCondition`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

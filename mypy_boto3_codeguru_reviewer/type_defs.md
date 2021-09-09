@@ -53,6 +53,7 @@ type annotations stubs module
   - [RepositoryTypeDef](#repositorytypedef)
   - [RequestMetadataTypeDef](#requestmetadatatypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RuleMetadataTypeDef](#rulemetadatatypedef)
   - [S3BucketRepositoryTypeDef](#s3bucketrepositorytypedef)
   - [S3RepositoryDetailsTypeDef](#s3repositorydetailstypedef)
   - [S3RepositoryTypeDef](#s3repositorytypedef)
@@ -583,6 +584,8 @@ Optional fields:
 - `Description`: `str`
 - `RecommendationCategory`:
   [RecommendationCategoryType](./literals.md#recommendationcategorytype)
+- `RuleMetadata`: [RuleMetadataTypeDef](./type_defs.md#rulemetadatatypedef)
+- `Severity`: [SeverityType](./literals.md#severitytype)
 
 ## RepositoryAnalysisTypeDef
 
@@ -690,6 +693,20 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
+
+## RuleMetadataTypeDef
+
+```python
+from mypy_boto3_codeguru_reviewer.type_defs import RuleMetadataTypeDef
+```
+
+Optional fields:
+
+- `RuleId`: `str`
+- `RuleName`: `str`
+- `ShortDescription`: `str`
+- `LongDescription`: `str`
+- `RuleTags`: `List`\[`str`\]
 
 ## S3BucketRepositoryTypeDef
 

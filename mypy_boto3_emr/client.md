@@ -184,7 +184,7 @@ Returns
 
 ### add_tags
 
-Adds tags to an Amazon EMR resource.
+Adds tags to an Amazon EMR resource, such as a cluster or an Amazon EMR Studio.
 
 Type annotations for `boto3.client("emr").add_tags` method.
 
@@ -278,11 +278,13 @@ Keyword-only arguments:
 - `VpcId`: `str` *(required)*
 - `SubnetIds`: `List`\[`str`\] *(required)*
 - `ServiceRole`: `str` *(required)*
-- `UserRole`: `str` *(required)*
 - `WorkspaceSecurityGroupId`: `str` *(required)*
 - `EngineSecurityGroupId`: `str` *(required)*
 - `DefaultS3Location`: `str` *(required)*
 - `Description`: `str`
+- `UserRole`: `str`
+- `IdpAuthUrl`: `str`
+- `IdpRelayStateParameterName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateStudioOutputTypeDef](./type_defs.md#createstudiooutputtypedef).
@@ -1053,7 +1055,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### remove_tags
 
-Removes tags from an Amazon EMR resource.
+Removes tags from an Amazon EMR resource, such as a cluster or Amazon EMR
+Studio.
 
 Type annotations for `boto3.client("emr").remove_tags` method.
 
