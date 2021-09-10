@@ -149,6 +149,8 @@ type annotations stubs module
   - [CreateProcessingJobResponseTypeDef](#createprocessingjobresponsetypedef)
   - [CreateProjectInputRequestTypeDef](#createprojectinputrequesttypedef)
   - [CreateProjectOutputTypeDef](#createprojectoutputtypedef)
+  - [CreateStudioLifecycleConfigRequestRequestTypeDef](#createstudiolifecycleconfigrequestrequesttypedef)
+  - [CreateStudioLifecycleConfigResponseTypeDef](#createstudiolifecycleconfigresponsetypedef)
   - [CreateTrainingJobRequestRequestTypeDef](#createtrainingjobrequestrequesttypedef)
   - [CreateTrainingJobResponseTypeDef](#createtrainingjobresponsetypedef)
   - [CreateTransformJobRequestRequestTypeDef](#createtransformjobrequestrequesttypedef)
@@ -213,6 +215,7 @@ type annotations stubs module
   - [DeletePipelineRequestRequestTypeDef](#deletepipelinerequestrequesttypedef)
   - [DeletePipelineResponseTypeDef](#deletepipelineresponsetypedef)
   - [DeleteProjectInputRequestTypeDef](#deleteprojectinputrequesttypedef)
+  - [DeleteStudioLifecycleConfigRequestRequestTypeDef](#deletestudiolifecycleconfigrequestrequesttypedef)
   - [DeleteTagsInputRequestTypeDef](#deletetagsinputrequesttypedef)
   - [DeleteTrialComponentRequestRequestTypeDef](#deletetrialcomponentrequestrequesttypedef)
   - [DeleteTrialComponentResponseTypeDef](#deletetrialcomponentresponsetypedef)
@@ -301,6 +304,8 @@ type annotations stubs module
   - [DescribeProcessingJobResponseTypeDef](#describeprocessingjobresponsetypedef)
   - [DescribeProjectInputRequestTypeDef](#describeprojectinputrequesttypedef)
   - [DescribeProjectOutputTypeDef](#describeprojectoutputtypedef)
+  - [DescribeStudioLifecycleConfigRequestRequestTypeDef](#describestudiolifecycleconfigrequestrequesttypedef)
+  - [DescribeStudioLifecycleConfigResponseTypeDef](#describestudiolifecycleconfigresponsetypedef)
   - [DescribeSubscribedWorkteamRequestRequestTypeDef](#describesubscribedworkteamrequestrequesttypedef)
   - [DescribeSubscribedWorkteamResponseTypeDef](#describesubscribedworkteamresponsetypedef)
   - [DescribeTrainingJobRequestRequestTypeDef](#describetrainingjobrequestrequesttypedef)
@@ -486,6 +491,8 @@ type annotations stubs module
   - [ListProcessingJobsResponseTypeDef](#listprocessingjobsresponsetypedef)
   - [ListProjectsInputRequestTypeDef](#listprojectsinputrequesttypedef)
   - [ListProjectsOutputTypeDef](#listprojectsoutputtypedef)
+  - [ListStudioLifecycleConfigsRequestRequestTypeDef](#liststudiolifecycleconfigsrequestrequesttypedef)
+  - [ListStudioLifecycleConfigsResponseTypeDef](#liststudiolifecycleconfigsresponsetypedef)
   - [ListSubscribedWorkteamsRequestRequestTypeDef](#listsubscribedworkteamsrequestrequesttypedef)
   - [ListSubscribedWorkteamsResponseTypeDef](#listsubscribedworkteamsresponsetypedef)
   - [ListTagsInputRequestTypeDef](#listtagsinputrequesttypedef)
@@ -668,6 +675,7 @@ type annotations stubs module
   - [StopTrainingJobRequestRequestTypeDef](#stoptrainingjobrequestrequesttypedef)
   - [StopTransformJobRequestRequestTypeDef](#stoptransformjobrequestrequesttypedef)
   - [StoppingConditionTypeDef](#stoppingconditiontypedef)
+  - [StudioLifecycleConfigDetailsTypeDef](#studiolifecycleconfigdetailstypedef)
   - [SubscribedWorkteamTypeDef](#subscribedworkteamtypedef)
   - [SuggestionQueryTypeDef](#suggestionquerytypedef)
   - [TagTypeDef](#tagtypedef)
@@ -2914,6 +2922,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CreateStudioLifecycleConfigRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import CreateStudioLifecycleConfigRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StudioLifecycleConfigName`: `str`
+- `StudioLifecycleConfigContent`: `str`
+- `StudioLifecycleConfigAppType`:
+  [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
+
+Optional fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateStudioLifecycleConfigResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import CreateStudioLifecycleConfigResponseTypeDef
+```
+
+Required fields:
+
+- `StudioLifecycleConfigArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CreateTrainingJobRequestRequestTypeDef
 
 ```python
@@ -3765,6 +3802,16 @@ from mypy_boto3_sagemaker.type_defs import DeleteProjectInputRequestTypeDef
 Required fields:
 
 - `ProjectName`: `str`
+
+## DeleteStudioLifecycleConfigRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DeleteStudioLifecycleConfigRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StudioLifecycleConfigName`: `str`
 
 ## DeleteTagsInputRequestTypeDef
 
@@ -5266,6 +5313,34 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DescribeStudioLifecycleConfigRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DescribeStudioLifecycleConfigRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StudioLifecycleConfigName`: `str`
+
+## DescribeStudioLifecycleConfigResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import DescribeStudioLifecycleConfigResponseTypeDef
+```
+
+Required fields:
+
+- `StudioLifecycleConfigArn`: `str`
+- `StudioLifecycleConfigName`: `str`
+- `CreationTime`: `datetime`
+- `LastModifiedTime`: `datetime`
+- `StudioLifecycleConfigContent`: `str`
+- `StudioLifecycleConfigAppType`:
+  [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## DescribeSubscribedWorkteamRequestRequestTypeDef
 
 ```python
@@ -6621,6 +6696,7 @@ Optional fields:
 
 - `DefaultResourceSpec`:
   [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
+- `LifecycleConfigArns`: `List`\[`str`\]
 
 ## KernelGatewayAppSettingsTypeDef
 
@@ -6634,6 +6710,7 @@ Optional fields:
   [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
 - `CustomImages`:
   `List`\[[CustomImageTypeDef](./type_defs.md#customimagetypedef)\]
+- `LifecycleConfigArns`: `List`\[`str`\]
 
 ## KernelGatewayImageConfigTypeDef
 
@@ -8261,6 +8338,41 @@ Required fields:
 - `ProjectSummaryList`:
   `List`\[[ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListStudioLifecycleConfigsRequestRequestTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ListStudioLifecycleConfigsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `NameContains`: `str`
+- `AppTypeEquals`:
+  [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `ModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `ModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `SortBy`:
+  [StudioLifecycleConfigSortKeyType](./literals.md#studiolifecycleconfigsortkeytype)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+## ListStudioLifecycleConfigsResponseTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ListStudioLifecycleConfigsResponseTypeDef
+```
+
+Required fields:
+
+- `NextToken`: `str`
+- `StudioLifecycleConfigs`:
+  `List`\[[StudioLifecycleConfigDetailsTypeDef](./type_defs.md#studiolifecycleconfigdetailstypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -10354,6 +10466,7 @@ Optional fields:
 - `SageMakerImageArn`: `str`
 - `SageMakerImageVersionArn`: `str`
 - `InstanceType`: [AppInstanceTypeType](./literals.md#appinstancetypetype)
+- `LifecycleConfigArn`: `str`
 
 ## ResponseMetadataTypeDef
 
@@ -10841,6 +10954,21 @@ Optional fields:
 
 - `MaxRuntimeInSeconds`: `int`
 - `MaxWaitTimeInSeconds`: `int`
+
+## StudioLifecycleConfigDetailsTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import StudioLifecycleConfigDetailsTypeDef
+```
+
+Optional fields:
+
+- `StudioLifecycleConfigArn`: `str`
+- `StudioLifecycleConfigName`: `str`
+- `CreationTime`: `datetime`
+- `LastModifiedTime`: `datetime`
+- `StudioLifecycleConfigAppType`:
+  [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
 
 ## SubscribedWorkteamTypeDef
 

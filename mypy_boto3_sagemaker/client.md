@@ -53,6 +53,7 @@ type annotations stubs module
     - [create_presigned_notebook_instance_url](#create_presigned_notebook_instance_url)
     - [create_processing_job](#create_processing_job)
     - [create_project](#create_project)
+    - [create_studio_lifecycle_config](#create_studio_lifecycle_config)
     - [create_training_job](#create_training_job)
     - [create_transform_job](#create_transform_job)
     - [create_trial](#create_trial)
@@ -91,6 +92,7 @@ type annotations stubs module
     - [delete_notebook_instance_lifecycle_config](#delete_notebook_instance_lifecycle_config)
     - [delete_pipeline](#delete_pipeline)
     - [delete_project](#delete_project)
+    - [delete_studio_lifecycle_config](#delete_studio_lifecycle_config)
     - [delete_tags](#delete_tags)
     - [delete_trial](#delete_trial)
     - [delete_trial_component](#delete_trial_component)
@@ -136,6 +138,7 @@ type annotations stubs module
     - [describe_pipeline_execution](#describe_pipeline_execution)
     - [describe_processing_job](#describe_processing_job)
     - [describe_project](#describe_project)
+    - [describe_studio_lifecycle_config](#describe_studio_lifecycle_config)
     - [describe_subscribed_workteam](#describe_subscribed_workteam)
     - [describe_training_job](#describe_training_job)
     - [describe_transform_job](#describe_transform_job)
@@ -195,6 +198,7 @@ type annotations stubs module
     - [list_pipelines](#list_pipelines)
     - [list_processing_jobs](#list_processing_jobs)
     - [list_projects](#list_projects)
+    - [list_studio_lifecycle_configs](#list_studio_lifecycle_configs)
     - [list_subscribed_workteams](#list_subscribed_workteams)
     - [list_tags](#list_tags)
     - [list_training_jobs](#list_training_jobs)
@@ -1426,6 +1430,31 @@ Keyword-only arguments:
 Returns
 [CreateProjectOutputTypeDef](./type_defs.md#createprojectoutputtypedef).
 
+### create_studio_lifecycle_config
+
+Creates a new Studio Lifecycle Configuration.
+
+Type annotations for `boto3.client("sagemaker").create_studio_lifecycle_config`
+method.
+
+Boto3 documentation:
+[SageMaker.Client.create_studio_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_studio_lifecycle_config)
+
+Arguments mapping described in
+[CreateStudioLifecycleConfigRequestRequestTypeDef](./type_defs.md#createstudiolifecycleconfigrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `StudioLifecycleConfigName`: `str` *(required)*
+- `StudioLifecycleConfigContent`: `str` *(required)*
+- `StudioLifecycleConfigAppType`:
+  [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
+  *(required)*
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateStudioLifecycleConfigResponseTypeDef](./type_defs.md#createstudiolifecycleconfigresponsetypedef).
+
 ### create_training_job
 
 Starts a model training job.
@@ -2192,6 +2221,23 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
+
+### delete_studio_lifecycle_config
+
+Deletes the Studio Lifecycle Configuration.
+
+Type annotations for `boto3.client("sagemaker").delete_studio_lifecycle_config`
+method.
+
+Boto3 documentation:
+[SageMaker.Client.delete_studio_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.delete_studio_lifecycle_config)
+
+Arguments mapping described in
+[DeleteStudioLifecycleConfigRequestRequestTypeDef](./type_defs.md#deletestudiolifecycleconfigrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `StudioLifecycleConfigName`: `str` *(required)*
 
 ### delete_tags
 
@@ -3070,6 +3116,26 @@ Keyword-only arguments:
 
 Returns
 [DescribeProjectOutputTypeDef](./type_defs.md#describeprojectoutputtypedef).
+
+### describe_studio_lifecycle_config
+
+Describes the Studio Lifecycle Configuration.
+
+Type annotations for
+`boto3.client("sagemaker").describe_studio_lifecycle_config` method.
+
+Boto3 documentation:
+[SageMaker.Client.describe_studio_lifecycle_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.describe_studio_lifecycle_config)
+
+Arguments mapping described in
+[DescribeStudioLifecycleConfigRequestRequestTypeDef](./type_defs.md#describestudiolifecycleconfigrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `StudioLifecycleConfigName`: `str` *(required)*
+
+Returns
+[DescribeStudioLifecycleConfigResponseTypeDef](./type_defs.md#describestudiolifecycleconfigresponsetypedef).
 
 ### describe_subscribed_workteam
 
@@ -4545,6 +4611,37 @@ Keyword-only arguments:
 
 Returns [ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef).
 
+### list_studio_lifecycle_configs
+
+Lists the Studio Lifecycle Configurations in your Amazon Web Services Account.
+
+Type annotations for `boto3.client("sagemaker").list_studio_lifecycle_configs`
+method.
+
+Boto3 documentation:
+[SageMaker.Client.list_studio_lifecycle_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.list_studio_lifecycle_configs)
+
+Arguments mapping described in
+[ListStudioLifecycleConfigsRequestRequestTypeDef](./type_defs.md#liststudiolifecycleconfigsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `NameContains`: `str`
+- `AppTypeEquals`:
+  [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `ModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `ModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `SortBy`:
+  [StudioLifecycleConfigSortKeyType](./literals.md#studiolifecycleconfigsortkeytype)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+Returns
+[ListStudioLifecycleConfigsResponseTypeDef](./type_defs.md#liststudiolifecycleconfigsresponsetypedef).
+
 ### list_subscribed_workteams
 
 Gets a list of the work teams that you are subscribed to in the Amazon Web
@@ -5822,6 +5919,8 @@ overloads.
   [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
 - `client.get_paginator("list_processing_jobs")` ->
   [ListProcessingJobsPaginator](./paginators.md#listprocessingjobspaginator)
+- `client.get_paginator("list_studio_lifecycle_configs")` ->
+  [ListStudioLifecycleConfigsPaginator](./paginators.md#liststudiolifecycleconfigspaginator)
 - `client.get_paginator("list_subscribed_workteams")` ->
   [ListSubscribedWorkteamsPaginator](./paginators.md#listsubscribedworkteamspaginator)
 - `client.get_paginator("list_tags")` ->

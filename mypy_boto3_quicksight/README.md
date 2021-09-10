@@ -281,6 +281,7 @@ from mypy_boto3_quicksight.type_defs import AccountCustomizationTypeDef, ...
 - [ActiveIAMPolicyAssignmentTypeDef](./type_defs.md#activeiampolicyassignmenttypedef)
 - [AdHocFilteringOptionTypeDef](./type_defs.md#adhocfilteringoptiontypedef)
 - [AmazonElasticsearchParametersTypeDef](./type_defs.md#amazonelasticsearchparameterstypedef)
+- [AmazonOpenSearchParametersTypeDef](./type_defs.md#amazonopensearchparameterstypedef)
 - [AnalysisErrorTypeDef](./type_defs.md#analysiserrortypedef)
 - [AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef)
 - [AnalysisSourceEntityTypeDef](./type_defs.md#analysissourceentitytypedef)

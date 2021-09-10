@@ -13,6 +13,7 @@ type annotations stubs module
   - [ActiveIAMPolicyAssignmentTypeDef](#activeiampolicyassignmenttypedef)
   - [AdHocFilteringOptionTypeDef](#adhocfilteringoptiontypedef)
   - [AmazonElasticsearchParametersTypeDef](#amazonelasticsearchparameterstypedef)
+  - [AmazonOpenSearchParametersTypeDef](#amazonopensearchparameterstypedef)
   - [AnalysisErrorTypeDef](#analysiserrortypedef)
   - [AnalysisSearchFilterTypeDef](#analysissearchfiltertypedef)
   - [AnalysisSourceEntityTypeDef](#analysissourceentitytypedef)
@@ -427,6 +428,16 @@ Optional fields:
 
 ```python
 from mypy_boto3_quicksight.type_defs import AmazonElasticsearchParametersTypeDef
+```
+
+Required fields:
+
+- `Domain`: `str`
+
+## AmazonOpenSearchParametersTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import AmazonOpenSearchParametersTypeDef
 ```
 
 Required fields:
@@ -1643,6 +1654,8 @@ Optional fields:
   [TeradataParametersTypeDef](./type_defs.md#teradataparameterstypedef)
 - `TwitterParameters`:
   [TwitterParametersTypeDef](./type_defs.md#twitterparameterstypedef)
+- `AmazonOpenSearchParameters`:
+  [AmazonOpenSearchParametersTypeDef](./type_defs.md#amazonopensearchparameterstypedef)
 
 ## DataSourceTypeDef
 

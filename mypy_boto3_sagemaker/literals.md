@@ -137,6 +137,7 @@ type annotations stubs module
   - [ListPipelineParametersForExecutionPaginatorName](#listpipelineparametersforexecutionpaginatorname)
   - [ListPipelinesPaginatorName](#listpipelinespaginatorname)
   - [ListProcessingJobsPaginatorName](#listprocessingjobspaginatorname)
+  - [ListStudioLifecycleConfigsPaginatorName](#liststudiolifecycleconfigspaginatorname)
   - [ListSubscribedWorkteamsPaginatorName](#listsubscribedworkteamspaginatorname)
   - [ListTagsPaginatorName](#listtagspaginatorname)
   - [ListTrainingJobsForHyperParameterTuningJobPaginatorName](#listtrainingjobsforhyperparametertuningjobpaginatorname)
@@ -223,6 +224,8 @@ type annotations stubs module
   - [SortTrialsByType](#sorttrialsbytype)
   - [SplitTypeType](#splittypetype)
   - [StepStatusType](#stepstatustype)
+  - [StudioLifecycleConfigAppTypeType](#studiolifecycleconfigapptypetype)
+  - [StudioLifecycleConfigSortKeyType](#studiolifecycleconfigsortkeytype)
   - [TargetDeviceType](#targetdevicetype)
   - [TargetPlatformAcceleratorType](#targetplatformacceleratortype)
   - [TargetPlatformArchType](#targetplatformarchtype)
@@ -1830,6 +1833,16 @@ Values:
 
 - `list_processing_jobs`
 
+## ListStudioLifecycleConfigsPaginatorName
+
+```python
+from mypy_boto3_sagemaker.literals import ListStudioLifecycleConfigsPaginatorName
+```
+
+Values:
+
+- `list_studio_lifecycle_configs`
+
 ## ListSubscribedWorkteamsPaginatorName
 
 ```python
@@ -2961,6 +2974,29 @@ Values:
 - `Stopping`
 - `Succeeded`
 
+## StudioLifecycleConfigAppTypeType
+
+```python
+from mypy_boto3_sagemaker.literals import StudioLifecycleConfigAppTypeType
+```
+
+Values:
+
+- `JupyterServer`
+- `KernelGateway`
+
+## StudioLifecycleConfigSortKeyType
+
+```python
+from mypy_boto3_sagemaker.literals import StudioLifecycleConfigSortKeyType
+```
+
+Values:
+
+- `CreationTime`
+- `LastModifiedTime`
+- `Name`
+
 ## TargetDeviceType
 
 ```python
@@ -2974,6 +3010,7 @@ Values:
 - `amba_cv25`
 - `coreml`
 - `deeplens`
+- `imx8mplus`
 - `imx8qm`
 - `jacinto_tda4vm`
 - `jetson_nano`

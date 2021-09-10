@@ -820,6 +820,7 @@ Keyword-only arguments:
 - `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
 - `OutputKey`: `str`
 - `OutputEncryptionKMSKeyId`: `str`
+- `KMSEncryptionContext`: `Dict`\[`str`, `str`\]
 - `Settings`:
   [MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef)
 - `ContentIdentificationType`: `Literal['PHI']` (see
@@ -852,6 +853,7 @@ Keyword-only arguments:
 - `OutputBucketName`: `str`
 - `OutputKey`: `str`
 - `OutputEncryptionKMSKeyId`: `str`
+- `KMSEncryptionContext`: `Dict`\[`str`, `str`\]
 - `Settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
 - `ModelSettings`: [ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef)
 - `JobExecutionSettings`:

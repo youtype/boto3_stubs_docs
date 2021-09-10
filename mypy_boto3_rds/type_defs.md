@@ -5397,6 +5397,7 @@ Optional fields:
 - `AutoPause`: `bool`
 - `SecondsUntilAutoPause`: `int`
 - `TimeoutAction`: `str`
+- `SecondsBeforeTimeout`: `int`
 
 ## ScalingConfigurationTypeDef
 
@@ -5411,6 +5412,7 @@ Optional fields:
 - `AutoPause`: `bool`
 - `SecondsUntilAutoPause`: `int`
 - `TimeoutAction`: `str`
+- `SecondsBeforeTimeout`: `int`
 
 ## SourceRegionMessageTypeDef
 

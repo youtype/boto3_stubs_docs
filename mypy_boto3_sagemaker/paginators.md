@@ -50,6 +50,7 @@ type annotations stubs module
   - [ListPipelineParametersForExecutionPaginator](#listpipelineparametersforexecutionpaginator)
   - [ListPipelinesPaginator](#listpipelinespaginator)
   - [ListProcessingJobsPaginator](#listprocessingjobspaginator)
+  - [ListStudioLifecycleConfigsPaginator](#liststudiolifecycleconfigspaginator)
   - [ListSubscribedWorkteamsPaginator](#listsubscribedworkteamspaginator)
   - [ListTagsPaginator](#listtagspaginator)
   - [ListTrainingJobsPaginator](#listtrainingjobspaginator)
@@ -1402,6 +1403,41 @@ Arguments for `ListProcessingJobsPaginator.paginate` method:
 
 `ListProcessingJobsPaginator.paginate` returns
 `_PageIterator`\[[ListProcessingJobsResponseTypeDef](./type_defs.md#listprocessingjobsresponsetypedef)\].
+
+## ListStudioLifecycleConfigsPaginator
+
+Type annotations for
+`boto3.client("sagemaker").get_paginator("list_studio_lifecycle_configs")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sagemaker.paginator import ListStudioLifecycleConfigsPaginator
+
+def get_list_studio_lifecycle_configs_paginator() -> ListStudioLifecycleConfigsPaginator:
+    return boto3.client("sagemaker").get_paginator("list_studio_lifecycle_configs")
+```
+
+Boto3 documentation:
+[SageMaker.Paginator.ListStudioLifecycleConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Paginator.ListStudioLifecycleConfigs)
+
+Arguments for `ListStudioLifecycleConfigsPaginator.paginate` method:
+
+- `NameContains`: `str`
+- `AppTypeEquals`:
+  [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
+- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
+- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+- `ModifiedTimeBefore`: `Union`\[`datetime`, `str`\]
+- `ModifiedTimeAfter`: `Union`\[`datetime`, `str`\]
+- `SortBy`:
+  [StudioLifecycleConfigSortKeyType](./literals.md#studiolifecycleconfigsortkeytype)
+- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListStudioLifecycleConfigsPaginator.paginate` returns
+`_PageIterator`\[[ListStudioLifecycleConfigsResponseTypeDef](./type_defs.md#liststudiolifecycleconfigsresponsetypedef)\].
 
 ## ListSubscribedWorkteamsPaginator
 
