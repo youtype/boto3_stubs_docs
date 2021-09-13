@@ -927,6 +927,7 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef)
 - [OTAUpdateInfoTypeDef](./type_defs.md#otaupdateinfotypedef)
 - [OTAUpdateSummaryTypeDef](./type_defs.md#otaupdatesummarytypedef)
+- [OpenSearchActionTypeDef](./type_defs.md#opensearchactiontypedef)
 - [OutgoingCertificateTypeDef](./type_defs.md#outgoingcertificatetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PercentPairTypeDef](./type_defs.md#percentpairtypedef)

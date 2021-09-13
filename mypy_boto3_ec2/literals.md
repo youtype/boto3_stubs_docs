@@ -504,6 +504,7 @@ Values:
 - `arm64`
 - `i386`
 - `x86_64`
+- `x86_64_mac`
 
 ## AssociatedNetworkTypeType
 
@@ -3922,6 +3923,8 @@ from mypy_boto3_ec2.literals import ResourceTypeType
 
 Values:
 
+- `capacity-reservation`
+- `carrier-gateway`
 - `client-vpn-endpoint`
 - `customer-gateway`
 - `dedicated-host`
@@ -3940,15 +3943,24 @@ Values:
 - `instance`
 - `instance-event-window`
 - `internet-gateway`
+- `ipv4pool-ec2`
+- `ipv6pool-ec2`
 - `key-pair`
 - `launch-template`
+- `local-gateway`
+- `local-gateway-route-table`
+- `local-gateway-route-table-virtual-interface-group-association`
 - `local-gateway-route-table-vpc-association`
+- `local-gateway-virtual-interface`
+- `local-gateway-virtual-interface-group`
 - `natgateway`
 - `network-acl`
 - `network-insights-analysis`
 - `network-insights-path`
 - `network-interface`
 - `placement-group`
+- `prefix-list`
+- `replace-root-volume-task`
 - `reserved-instances`
 - `route-table`
 - `security-group`
@@ -3967,6 +3979,8 @@ Values:
 - `transit-gateway-route-table`
 - `volume`
 - `vpc`
+- `vpc-endpoint`
+- `vpc-endpoint-service`
 - `vpc-flow-log`
 - `vpc-peering-connection`
 - `vpn-connection`

@@ -2412,9 +2412,9 @@ Returns
 
 ### create_restore_image_task
 
-Starts a task that restores an AMI from an S3 object that was previously
+Starts a task that restores an AMI from an Amazon S3 object that was previously
 created by using
-`CreateStoreImageTask <https://docs.aws.amazon.com/AWSEC2/latest/APIRef erence/API_CreateStoreImageTask.html>`\_\_
+`CreateStoreImageTask <https://docs.aws.amazon.com/AWSEC2/lates t/APIReference/API_CreateStoreImageTask.html>`\_\_
 .
 
 Type annotations for `boto3.client("ec2").create_restore_image_task` method.
@@ -2593,7 +2593,7 @@ Returns
 
 ### create_store_image_task
 
-Stores an AMI as a single object in an S3 bucket.
+Stores an AMI as a single object in an Amazon S3 bucket.
 
 Type annotations for `boto3.client("ec2").create_store_image_task` method.
 

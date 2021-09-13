@@ -426,6 +426,7 @@ type annotations stubs module
   - [OTAUpdateFileTypeDef](#otaupdatefiletypedef)
   - [OTAUpdateInfoTypeDef](#otaupdateinfotypedef)
   - [OTAUpdateSummaryTypeDef](#otaupdatesummarytypedef)
+  - [OpenSearchActionTypeDef](#opensearchactiontypedef)
   - [OutgoingCertificateTypeDef](#outgoingcertificatetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PercentPairTypeDef](#percentpairtypedef)
@@ -659,6 +660,8 @@ Optional fields:
   [TimestreamActionTypeDef](./type_defs.md#timestreamactiontypedef)
 - `http`: [HttpActionTypeDef](./type_defs.md#httpactiontypedef)
 - `kafka`: [KafkaActionTypeDef](./type_defs.md#kafkaactiontypedef)
+- `openSearch`:
+  [OpenSearchActionTypeDef](./type_defs.md#opensearchactiontypedef)
 
 ## ActiveViolationTypeDef
 
@@ -6383,6 +6386,20 @@ Optional fields:
 - `otaUpdateId`: `str`
 - `otaUpdateArn`: `str`
 - `creationDate`: `datetime`
+
+## OpenSearchActionTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import OpenSearchActionTypeDef
+```
+
+Required fields:
+
+- `roleArn`: `str`
+- `endpoint`: `str`
+- `index`: `str`
+- `type`: `str`
+- `id`: `str`
 
 ## OutgoingCertificateTypeDef
 
