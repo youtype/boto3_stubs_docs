@@ -1247,6 +1247,7 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)
 - [ProfilerRuleEvaluationStatusTypeDef](./type_defs.md#profilerruleevaluationstatustypedef)
 - [ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)
+- [ProjectTypeDef](./type_defs.md#projecttypedef)
 - [PropertyNameQueryTypeDef](./type_defs.md#propertynamequerytypedef)
 - [PropertyNameSuggestionTypeDef](./type_defs.md#propertynamesuggestiontypedef)
 - [ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)

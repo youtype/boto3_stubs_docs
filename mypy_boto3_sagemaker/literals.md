@@ -2690,6 +2690,7 @@ Values:
 - `ModelPackageGroup`
 - `Pipeline`
 - `PipelineExecution`
+- `Project`
 - `TrainingJob`
 
 ## RetentionTypeType

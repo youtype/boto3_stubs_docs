@@ -147,11 +147,15 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_comprehend.literals import DocumentClassifierDataFormatType, ...
+from mypy_boto3_comprehend.literals import AugmentedManifestsDocumentTypeFormatType, ...
 ```
 
+- [AugmentedManifestsDocumentTypeFormatType](./literals.md#augmentedmanifestsdocumenttypeformattype)
 - [DocumentClassifierDataFormatType](./literals.md#documentclassifierdataformattype)
 - [DocumentClassifierModeType](./literals.md#documentclassifiermodetype)
+- [DocumentReadActionType](./literals.md#documentreadactiontype)
+- [DocumentReadFeatureTypesType](./literals.md#documentreadfeaturetypestype)
+- [DocumentReadModeType](./literals.md#documentreadmodetype)
 - [EndpointStatusType](./literals.md#endpointstatustype)
 - [EntityRecognizerDataFormatType](./literals.md#entityrecognizerdataformattype)
 - [EntityTypeType](./literals.md#entitytypetype)
@@ -259,6 +263,7 @@ from mypy_boto3_comprehend.type_defs import AugmentedManifestsListItemTypeDef, .
 - [DocumentClassifierOutputDataConfigTypeDef](./type_defs.md#documentclassifieroutputdataconfigtypedef)
 - [DocumentClassifierPropertiesTypeDef](./type_defs.md#documentclassifierpropertiestypedef)
 - [DocumentLabelTypeDef](./type_defs.md#documentlabeltypedef)
+- [DocumentReaderConfigTypeDef](./type_defs.md#documentreaderconfigtypedef)
 - [DominantLanguageDetectionJobFilterTypeDef](./type_defs.md#dominantlanguagedetectionjobfiltertypedef)
 - [DominantLanguageDetectionJobPropertiesTypeDef](./type_defs.md#dominantlanguagedetectionjobpropertiestypedef)
 - [DominantLanguageTypeDef](./type_defs.md#dominantlanguagetypedef)

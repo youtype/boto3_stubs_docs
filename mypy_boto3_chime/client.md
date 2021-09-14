@@ -1001,6 +1001,7 @@ Keyword-only arguments:
 - `FromPhoneNumber`: `str` *(required)*
 - `ToPhoneNumber`: `str` *(required)*
 - `SipMediaApplicationId`: `str` *(required)*
+- `SipHeaders`: `Dict`\[`str`, `str`\]
 
 Returns
 [CreateSipMediaApplicationCallResponseTypeDef](./type_defs.md#createsipmediaapplicationcallresponsetypedef).
@@ -3649,7 +3650,7 @@ Returns
 
 ### start_meeting_transcription
 
-Start transcription for the specified `meetingId` .
+Starts transcription for the specified `meetingId` .
 
 Type annotations for `boto3.client("chime").start_meeting_transcription`
 method.

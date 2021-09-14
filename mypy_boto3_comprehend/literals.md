@@ -8,8 +8,12 @@ type annotations stubs module
 [mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
 - [Literals for boto3 Comprehend module](#literals-for-boto3-comprehend-module)
+  - [AugmentedManifestsDocumentTypeFormatType](#augmentedmanifestsdocumenttypeformattype)
   - [DocumentClassifierDataFormatType](#documentclassifierdataformattype)
   - [DocumentClassifierModeType](#documentclassifiermodetype)
+  - [DocumentReadActionType](#documentreadactiontype)
+  - [DocumentReadFeatureTypesType](#documentreadfeaturetypestype)
+  - [DocumentReadModeType](#documentreadmodetype)
   - [EndpointStatusType](#endpointstatustype)
   - [EntityRecognizerDataFormatType](#entityrecognizerdataformattype)
   - [EntityTypeType](#entitytypetype)
@@ -32,6 +36,17 @@ type annotations stubs module
   - [SentimentTypeType](#sentimenttypetype)
   - [SyntaxLanguageCodeType](#syntaxlanguagecodetype)
 
+## AugmentedManifestsDocumentTypeFormatType
+
+```python
+from mypy_boto3_comprehend.literals import AugmentedManifestsDocumentTypeFormatType
+```
+
+Values:
+
+- `PLAIN_TEXT_DOCUMENT`
+- `SEMI_STRUCTURED_DOCUMENT`
+
 ## DocumentClassifierDataFormatType
 
 ```python
@@ -53,6 +68,39 @@ Values:
 
 - `MULTI_CLASS`
 - `MULTI_LABEL`
+
+## DocumentReadActionType
+
+```python
+from mypy_boto3_comprehend.literals import DocumentReadActionType
+```
+
+Values:
+
+- `TEXTRACT_ANALYZE_DOCUMENT`
+- `TEXTRACT_DETECT_DOCUMENT_TEXT`
+
+## DocumentReadFeatureTypesType
+
+```python
+from mypy_boto3_comprehend.literals import DocumentReadFeatureTypesType
+```
+
+Values:
+
+- `FORMS`
+- `TABLES`
+
+## DocumentReadModeType
+
+```python
+from mypy_boto3_comprehend.literals import DocumentReadModeType
+```
+
+Values:
+
+- `FORCE_DOCUMENT_READ_ACTION`
+- `SERVICE_DEFAULT`
 
 ## EndpointStatusType
 

@@ -1666,6 +1666,10 @@ Required fields:
 - `ToPhoneNumber`: `str`
 - `SipMediaApplicationId`: `str`
 
+Optional fields:
+
+- `SipHeaders`: `Dict`\[`str`, `str`\]
+
 ## CreateSipMediaApplicationCallResponseTypeDef
 
 ```python

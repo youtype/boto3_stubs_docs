@@ -618,6 +618,7 @@ type annotations stubs module
   - [ProfilerRuleConfigurationTypeDef](#profilerruleconfigurationtypedef)
   - [ProfilerRuleEvaluationStatusTypeDef](#profilerruleevaluationstatustypedef)
   - [ProjectSummaryTypeDef](#projectsummarytypedef)
+  - [ProjectTypeDef](#projecttypedef)
   - [PropertyNameQueryTypeDef](#propertynamequerytypedef)
   - [PropertyNameSuggestionTypeDef](#propertynamesuggestiontypedef)
   - [ProvisioningParameterTypeDef](#provisioningparametertypedef)
@@ -10240,6 +10241,27 @@ Optional fields:
 
 - `ProjectDescription`: `str`
 
+## ProjectTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import ProjectTypeDef
+```
+
+Optional fields:
+
+- `ProjectArn`: `str`
+- `ProjectName`: `str`
+- `ProjectId`: `str`
+- `ProjectDescription`: `str`
+- `ServiceCatalogProvisioningDetails`:
+  [ServiceCatalogProvisioningDetailsTypeDef](./type_defs.md#servicecatalogprovisioningdetailstypedef)
+- `ServiceCatalogProvisionedProductDetails`:
+  [ServiceCatalogProvisionedProductDetailsTypeDef](./type_defs.md#servicecatalogprovisionedproductdetailstypedef)
+- `ProjectStatus`: [ProjectStatusType](./literals.md#projectstatustype)
+- `CreatedBy`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
+- `CreationTime`: `datetime`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## PropertyNameQueryTypeDef
 
 ```python
@@ -10580,6 +10602,7 @@ Optional fields:
 - `PipelineExecution`:
   [PipelineExecutionTypeDef](./type_defs.md#pipelineexecutiontypedef)
 - `FeatureGroup`: [FeatureGroupTypeDef](./type_defs.md#featuregrouptypedef)
+- `Project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 
 ## SearchRequestRequestTypeDef
 

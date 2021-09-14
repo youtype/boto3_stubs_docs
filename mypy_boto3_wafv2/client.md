@@ -572,7 +572,7 @@ Returns
 
 ### get_rate_based_statement_managed_keys
 
-Retrieves the keys that are currently blocked by a rate-based rule.
+Retrieves the keys that are currently blocked by a rate-based rule instance.
 
 Type annotations for
 `boto3.client("wafv2").get_rate_based_statement_managed_keys` method.
@@ -589,6 +589,7 @@ Keyword-only arguments:
 - `WebACLName`: `str` *(required)*
 - `WebACLId`: `str` *(required)*
 - `RuleName`: `str` *(required)*
+- `RuleGroupRuleName`: `str`
 
 Returns
 [GetRateBasedStatementManagedKeysResponseTypeDef](./type_defs.md#getratebasedstatementmanagedkeysresponsetypedef).

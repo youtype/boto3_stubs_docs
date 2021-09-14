@@ -808,6 +808,10 @@ Required fields:
 - `WebACLId`: `str`
 - `RuleName`: `str`
 
+Optional fields:
+
+- `RuleGroupRuleName`: `str`
+
 ## GetRateBasedStatementManagedKeysResponseTypeDef
 
 ```python

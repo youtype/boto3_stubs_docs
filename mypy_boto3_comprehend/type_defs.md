@@ -82,6 +82,7 @@ type annotations stubs module
   - [DocumentClassifierOutputDataConfigTypeDef](#documentclassifieroutputdataconfigtypedef)
   - [DocumentClassifierPropertiesTypeDef](#documentclassifierpropertiestypedef)
   - [DocumentLabelTypeDef](#documentlabeltypedef)
+  - [DocumentReaderConfigTypeDef](#documentreaderconfigtypedef)
   - [DominantLanguageDetectionJobFilterTypeDef](#dominantlanguagedetectionjobfiltertypedef)
   - [DominantLanguageDetectionJobPropertiesTypeDef](#dominantlanguagedetectionjobpropertiestypedef)
   - [DominantLanguageTypeDef](#dominantlanguagetypedef)
@@ -193,6 +194,13 @@ Required fields:
 
 - `S3Uri`: `str`
 - `AttributeNames`: `List`\[`str`\]
+
+Optional fields:
+
+- `AnnotationDataS3Uri`: `str`
+- `SourceDocumentsS3Uri`: `str`
+- `DocumentType`:
+  [AugmentedManifestsDocumentTypeFormatType](./literals.md#augmentedmanifestsdocumenttypeformattype)
 
 ## BatchDetectDominantLanguageItemResultTypeDef
 
@@ -1132,6 +1140,24 @@ Optional fields:
 - `Name`: `str`
 - `Score`: `float`
 
+## DocumentReaderConfigTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DocumentReaderConfigTypeDef
+```
+
+Required fields:
+
+- `DocumentReadAction`:
+  [DocumentReadActionType](./literals.md#documentreadactiontype)
+
+Optional fields:
+
+- `DocumentReadMode`:
+  [DocumentReadModeType](./literals.md#documentreadmodetype)
+- `FeatureTypes`:
+  `List`\[[DocumentReadFeatureTypesType](./literals.md#documentreadfeaturetypestype)\]
+
 ## DominantLanguageDetectionJobFilterTypeDef
 
 ```python
@@ -1475,6 +1501,8 @@ Required fields:
 Optional fields:
 
 - `InputFormat`: [InputFormatType](./literals.md#inputformattype)
+- `DocumentReaderConfig`:
+  [DocumentReaderConfigTypeDef](./type_defs.md#documentreaderconfigtypedef)
 
 ## KeyPhraseTypeDef
 

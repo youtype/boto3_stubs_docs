@@ -3204,6 +3204,9 @@ Values:
 - `u-6tb1.metal`
 - `u-9tb1.112xlarge`
 - `u-9tb1.metal`
+- `vt1.24xlarge`
+- `vt1.3xlarge`
+- `vt1.6xlarge`
 - `x1.16xlarge`
 - `x1.32xlarge`
 - `x1e.16xlarge`
