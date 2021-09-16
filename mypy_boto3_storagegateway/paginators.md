@@ -39,7 +39,7 @@ Boto3 documentation:
 
 Arguments for `DescribeTapeArchivesPaginator.paginate` method:
 
-- `TapeARNs`: `List`\[`str`\]
+- `TapeARNs`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -92,7 +92,7 @@ Boto3 documentation:
 Arguments for `DescribeTapesPaginator.paginate` method:
 
 - `GatewayARN`: `str` *(required)*
-- `TapeARNs`: `List`\[`str`\]
+- `TapeARNs`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -119,7 +119,7 @@ Boto3 documentation:
 Arguments for `DescribeVTLDevicesPaginator.paginate` method:
 
 - `GatewayARN`: `str` *(required)*
-- `VTLDeviceARNs`: `List`\[`str`\]
+- `VTLDeviceARNs`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -248,7 +248,7 @@ Boto3 documentation:
 
 Arguments for `ListTapePoolsPaginator.paginate` method:
 
-- `PoolARNs`: `List`\[`str`\]
+- `PoolARNs`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -274,7 +274,7 @@ Boto3 documentation:
 
 Arguments for `ListTapesPaginator.paginate` method:
 
-- `TapeARNs`: `List`\[`str`\]
+- `TapeARNs`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

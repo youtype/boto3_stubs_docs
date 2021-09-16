@@ -181,7 +181,7 @@ from mypy_boto3_xray.type_defs import BatchGetTracesRequestRequestTypeDef
 
 Required fields:
 
-- `TraceIds`: `List`\[`str`\]
+- `TraceIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -216,7 +216,7 @@ Optional fields:
 - `FilterExpression`: `str`
 - `InsightsConfiguration`:
   [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateGroupResultTypeDef
 
@@ -242,7 +242,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSamplingRuleResultTypeDef
 
@@ -611,7 +611,7 @@ Required fields:
 
 Optional fields:
 
-- `States`: `List`\[[InsightStateType](./literals.md#insightstatetype)\]
+- `States`: `Sequence`\[[InsightStateType](./literals.md#insightstatetype)\]
 - `GroupARN`: `str`
 - `GroupName`: `str`
 - `MaxResults`: `int`
@@ -688,7 +688,7 @@ from mypy_boto3_xray.type_defs import GetSamplingTargetsRequestRequestTypeDef
 Required fields:
 
 - `SamplingStatisticsDocuments`:
-  `List`\[[SamplingStatisticsDocumentTypeDef](./type_defs.md#samplingstatisticsdocumenttypedef)\]
+  `Sequence`\[[SamplingStatisticsDocumentTypeDef](./type_defs.md#samplingstatisticsdocumenttypedef)\]
 
 ## GetSamplingTargetsResultTypeDef
 
@@ -782,7 +782,7 @@ from mypy_boto3_xray.type_defs import GetTraceGraphRequestRequestTypeDef
 
 Required fields:
 
-- `TraceIds`: `List`\[`str`\]
+- `TraceIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1080,7 +1080,7 @@ from mypy_boto3_xray.type_defs import PutTelemetryRecordsRequestRequestTypeDef
 Required fields:
 
 - `TelemetryRecords`:
-  `List`\[[TelemetryRecordTypeDef](./type_defs.md#telemetryrecordtypedef)\]
+  `Sequence`\[[TelemetryRecordTypeDef](./type_defs.md#telemetryrecordtypedef)\]
 
 Optional fields:
 
@@ -1096,7 +1096,7 @@ from mypy_boto3_xray.type_defs import PutTraceSegmentsRequestRequestTypeDef
 
 Required fields:
 
-- `TraceSegmentDocuments`: `List`\[`str`\]
+- `TraceSegmentDocuments`: `Sequence`\[`str`\]
 
 ## PutTraceSegmentsResultTypeDef
 
@@ -1233,7 +1233,7 @@ Optional fields:
 
 - `RuleName`: `str`
 - `RuleARN`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## SamplingRuleUpdateTypeDef
 
@@ -1254,7 +1254,7 @@ Optional fields:
 - `ServiceType`: `str`
 - `HTTPMethod`: `str`
 - `URLPath`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## SamplingStatisticSummaryTypeDef
 
@@ -1387,7 +1387,7 @@ from mypy_boto3_xray.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1530,7 +1530,7 @@ from mypy_boto3_xray.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateGroupRequestRequestTypeDef
 

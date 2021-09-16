@@ -135,7 +135,7 @@ from mypy_boto3_databrew.type_defs import BatchDeleteRecipeVersionRequestRequest
 Required fields:
 
 - `Name`: `str`
-- `RecipeVersions`: `List`\[`str`\]
+- `RecipeVersions`: `Sequence`\[`str`\]
 
 ## BatchDeleteRecipeVersionResponseTypeDef
 
@@ -176,7 +176,7 @@ Required fields:
 Optional fields:
 
 - `Selectors`:
-  `List`\[[ColumnSelectorTypeDef](./type_defs.md#columnselectortypedef)\]
+  `Sequence`\[[ColumnSelectorTypeDef](./type_defs.md#columnselectortypedef)\]
 
 ## ConditionExpressionTypeDef
 
@@ -209,7 +209,7 @@ Optional fields:
 - `Format`: [InputFormatType](./literals.md#inputformattype)
 - `FormatOptions`: [FormatOptionsTypeDef](./type_defs.md#formatoptionstypedef)
 - `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDatasetResponseTypeDef
 
@@ -245,7 +245,7 @@ Optional fields:
 - `MaxRetries`: `int`
 - `Configuration`:
   [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Timeout`: `int`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 
@@ -277,7 +277,7 @@ Required fields:
 Optional fields:
 
 - `Sample`: [SampleTypeDef](./type_defs.md#sampletypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateProjectResponseTypeDef
 
@@ -310,15 +310,15 @@ Optional fields:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `DataCatalogOutputs`:
-  `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+  `Sequence`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
 - `DatabaseOutputs`:
-  `List`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
+  `Sequence`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `ProjectName`: `str`
 - `RecipeReference`:
   [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Timeout`: `int`
 
 ## CreateRecipeJobResponseTypeDef
@@ -342,12 +342,12 @@ from mypy_boto3_databrew.type_defs import CreateRecipeRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Steps`: `List`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
+- `Steps`: `Sequence`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
 
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRecipeResponseTypeDef
 
@@ -374,8 +374,8 @@ Required fields:
 
 Optional fields:
 
-- `JobNames`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `JobNames`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateScheduleResponseTypeDef
 
@@ -898,8 +898,8 @@ from mypy_boto3_databrew.type_defs import ExcelOptionsTypeDef
 
 Optional fields:
 
-- `SheetNames`: `List`\[`str`\]
-- `SheetIndexes`: `List`\[`int`\]
+- `SheetNames`: `Sequence`\[`str`\]
+- `SheetIndexes`: `Sequence`\[`int`\]
 - `HeaderRow`: `bool`
 
 ## FilesLimitTypeDef
@@ -927,7 +927,7 @@ from mypy_boto3_databrew.type_defs import FilterExpressionTypeDef
 Required fields:
 
 - `Expression`: `str`
-- `ValuesMap`: `Dict`\[`str`, `str`\]
+- `ValuesMap`: `Mapping`\[`str`, `str`\]
 
 ## FormatOptionsTypeDef
 
@@ -1270,7 +1270,7 @@ Optional fields:
 - `CompressionFormat`:
   [CompressionFormatType](./literals.md#compressionformattype)
 - `Format`: [OutputFormatType](./literals.md#outputformattype)
-- `PartitionColumns`: `List`\[`str`\]
+- `PartitionColumns`: `Sequence`\[`str`\]
 - `Overwrite`: `bool`
 - `FormatOptions`:
   [OutputFormatOptionsTypeDef](./type_defs.md#outputformatoptionstypedef)
@@ -1298,7 +1298,7 @@ Optional fields:
 - `LastModifiedDateCondition`:
   [FilterExpressionTypeDef](./type_defs.md#filterexpressiontypedef)
 - `FilesLimit`: [FilesLimitTypeDef](./type_defs.md#fileslimittypedef)
-- `Parameters`: `Dict`\[`str`,
+- `Parameters`: `Mapping`\[`str`,
   [DatasetParameterTypeDef](./type_defs.md#datasetparametertypedef)\]
 
 ## ProfileConfigurationTypeDef
@@ -1312,9 +1312,9 @@ Optional fields:
 - `DatasetStatisticsConfiguration`:
   [StatisticsConfigurationTypeDef](./type_defs.md#statisticsconfigurationtypedef)
 - `ProfileColumns`:
-  `List`\[[ColumnSelectorTypeDef](./type_defs.md#columnselectortypedef)\]
+  `Sequence`\[[ColumnSelectorTypeDef](./type_defs.md#columnselectortypedef)\]
 - `ColumnStatisticsConfigurations`:
-  `List`\[[ColumnStatisticsConfigurationTypeDef](./type_defs.md#columnstatisticsconfigurationtypedef)\]
+  `Sequence`\[[ColumnStatisticsConfigurationTypeDef](./type_defs.md#columnstatisticsconfigurationtypedef)\]
 
 ## ProjectTypeDef
 
@@ -1380,7 +1380,7 @@ Required fields:
 
 Optional fields:
 
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 
 ## RecipeReferenceTypeDef
 
@@ -1409,7 +1409,7 @@ Required fields:
 Optional fields:
 
 - `ConditionExpressions`:
-  `List`\[[ConditionExpressionTypeDef](./type_defs.md#conditionexpressiontypedef)\]
+  `Sequence`\[[ConditionExpressionTypeDef](./type_defs.md#conditionexpressiontypedef)\]
 
 ## RecipeTypeDef
 
@@ -1612,7 +1612,7 @@ from mypy_boto3_databrew.type_defs import StatisticOverrideTypeDef
 Required fields:
 
 - `Statistic`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 
 ## StatisticsConfigurationTypeDef
 
@@ -1622,9 +1622,9 @@ from mypy_boto3_databrew.type_defs import StatisticsConfigurationTypeDef
 
 Optional fields:
 
-- `IncludedStatistics`: `List`\[`str`\]
+- `IncludedStatistics`: `Sequence`\[`str`\]
 - `Overrides`:
-  `List`\[[StatisticOverrideTypeDef](./type_defs.md#statisticoverridetypedef)\]
+  `Sequence`\[[StatisticOverrideTypeDef](./type_defs.md#statisticoverridetypedef)\]
 
 ## StopJobRunRequestRequestTypeDef
 
@@ -1658,7 +1658,7 @@ from mypy_boto3_databrew.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1669,7 +1669,7 @@ from mypy_boto3_databrew.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDatasetRequestRequestTypeDef
 
@@ -1782,11 +1782,11 @@ Optional fields:
 - `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
 - `MaxCapacity`: `int`
 - `MaxRetries`: `int`
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `DataCatalogOutputs`:
-  `List`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
+  `Sequence`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
 - `DatabaseOutputs`:
-  `List`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
+  `Sequence`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `Timeout`: `int`
 
 ## UpdateRecipeJobResponseTypeDef
@@ -1814,7 +1814,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Steps`: `List`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
+- `Steps`: `Sequence`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
 
 ## UpdateRecipeResponseTypeDef
 
@@ -1841,7 +1841,7 @@ Required fields:
 
 Optional fields:
 
-- `JobNames`: `List`\[`str`\]
+- `JobNames`: `Sequence`\[`str`\]
 
 ## UpdateScheduleResponseTypeDef
 
@@ -1868,4 +1868,4 @@ Required fields:
 Optional fields:
 
 - `ColumnRange`: `int`
-- `HiddenColumns`: `List`\[`str`\]
+- `HiddenColumns`: `Sequence`\[`str`\]

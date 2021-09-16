@@ -15,6 +15,7 @@ pip install mypy-boto3-qldb-session
   - [QLDBSessionClient](#qldbsessionclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## QLDBSessionClient
@@ -46,6 +47,18 @@ QLDBSessionClient [exceptions](./client.md#exceptions)
 - LimitExceededException
 - OccConflictException
 - RateExceededException
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_qldb_session.literals import ServiceName, ...
+```
+
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -243,7 +243,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### apply_pending_maintenance_action
 
@@ -301,7 +301,7 @@ Keyword-only arguments:
 - `SourceDBClusterParameterGroupIdentifier`: `str` *(required)*
 - `TargetDBClusterParameterGroupIdentifier`: `str` *(required)*
 - `TargetDBClusterParameterGroupDescription`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CopyDBClusterParameterGroupResultTypeDef](./type_defs.md#copydbclusterparametergroupresulttypedef).
@@ -325,7 +325,7 @@ Keyword-only arguments:
 - `KmsKeyId`: `str`
 - `PreSignedUrl`: `str`
 - `CopyTags`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SourceRegion`: `str`
 
 Returns
@@ -348,7 +348,7 @@ Keyword-only arguments:
 - `SourceDBParameterGroupIdentifier`: `str` *(required)*
 - `TargetDBParameterGroupIdentifier`: `str` *(required)*
 - `TargetDBParameterGroupDescription`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CopyDBParameterGroupResultTypeDef](./type_defs.md#copydbparametergroupresulttypedef).
@@ -369,13 +369,13 @@ Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str` *(required)*
 - `Engine`: `str` *(required)*
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `BackupRetentionPeriod`: `int`
 - `CharacterSetName`: `str`
 - `CopyTagsToSnapshot`: `bool`
 - `DatabaseName`: `str`
 - `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `DBSubnetGroupName`: `str`
 - `EngineVersion`: `str`
 - `Port`: `int`
@@ -385,12 +385,12 @@ Keyword-only arguments:
 - `PreferredBackupWindow`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `ReplicationSourceIdentifier`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
 - `PreSignedUrl`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DeletionProtection`: `bool`
 - `SourceRegion`: `str`
 
@@ -416,9 +416,9 @@ Keyword-only arguments:
 - `DBClusterIdentifier`: `str` *(required)*
 - `DBClusterEndpointIdentifier`: `str` *(required)*
 - `EndpointType`: `str` *(required)*
-- `StaticMembers`: `List`\[`str`\]
-- `ExcludedMembers`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `StaticMembers`: `Sequence`\[`str`\]
+- `ExcludedMembers`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDBClusterEndpointOutputTypeDef](./type_defs.md#createdbclusterendpointoutputtypedef).
@@ -441,7 +441,7 @@ Keyword-only arguments:
 - `DBClusterParameterGroupName`: `str` *(required)*
 - `DBParameterGroupFamily`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDBClusterParameterGroupResultTypeDef](./type_defs.md#createdbclusterparametergroupresulttypedef).
@@ -463,7 +463,7 @@ Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 - `DBClusterIdentifier`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDBClusterSnapshotResultTypeDef](./type_defs.md#createdbclustersnapshotresulttypedef).
@@ -489,8 +489,8 @@ Keyword-only arguments:
 - `AllocatedStorage`: `int`
 - `MasterUsername`: `str`
 - `MasterUserPassword`: `str`
-- `DBSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `DBSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `AvailabilityZone`: `str`
 - `DBSubnetGroupName`: `str`
 - `PreferredMaintenanceWindow`: `str`
@@ -506,7 +506,7 @@ Keyword-only arguments:
 - `OptionGroupName`: `str`
 - `CharacterSetName`: `str`
 - `PubliclyAccessible`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DBClusterIdentifier`: `str`
 - `StorageType`: `str`
 - `TdeCredentialArn`: `str`
@@ -523,7 +523,7 @@ Keyword-only arguments:
 - `EnableIAMDatabaseAuthentication`: `bool`
 - `EnablePerformanceInsights`: `bool`
 - `PerformanceInsightsKMSKeyId`: `str`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DeletionProtection`: `bool`
 
 Returns
@@ -547,7 +547,7 @@ Keyword-only arguments:
 - `DBParameterGroupName`: `str` *(required)*
 - `DBParameterGroupFamily`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDBParameterGroupResultTypeDef](./type_defs.md#createdbparametergroupresulttypedef).
@@ -568,8 +568,8 @@ Keyword-only arguments:
 
 - `DBSubnetGroupName`: `str` *(required)*
 - `DBSubnetGroupDescription`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDBSubnetGroupResultTypeDef](./type_defs.md#createdbsubnetgroupresulttypedef).
@@ -592,10 +592,10 @@ Keyword-only arguments:
 - `SubscriptionName`: `str` *(required)*
 - `SnsTopicArn`: `str` *(required)*
 - `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
-- `SourceIds`: `List`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
+- `SourceIds`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
@@ -769,7 +769,7 @@ Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str`
 - `DBClusterEndpointIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -792,7 +792,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -817,7 +817,7 @@ Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 - `Source`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -863,7 +863,7 @@ Keyword-only arguments:
 - `DBClusterIdentifier`: `str`
 - `DBClusterSnapshotIdentifier`: `str`
 - `SnapshotType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `IncludeShared`: `bool`
@@ -887,7 +887,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBClusterIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -911,7 +911,7 @@ Keyword-only arguments:
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `DBParameterGroupFamily`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `DefaultOnly`: `bool`
@@ -936,7 +936,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBInstanceIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -958,7 +958,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBParameterGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -981,7 +981,7 @@ Keyword-only arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
 - `Source`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1004,7 +1004,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBSubnetGroupName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1028,7 +1028,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBParameterGroupFamily`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1052,7 +1052,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBParameterGroupFamily`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1076,7 +1076,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SourceType`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [EventCategoriesMessageTypeDef](./type_defs.md#eventcategoriesmessagetypedef).
@@ -1097,7 +1097,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SubscriptionName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1124,8 +1124,8 @@ Keyword-only arguments:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Duration`: `int`
-- `EventCategories`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `EventCategories`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1151,7 +1151,7 @@ Keyword-only arguments:
 - `DBInstanceClass`: `str`
 - `LicenseModel`: `str`
 - `Vpc`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1175,7 +1175,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceIdentifier`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -1235,7 +1235,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1256,7 +1256,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
@@ -1279,7 +1279,7 @@ Keyword-only arguments:
 - `ApplyImmediately`: `bool`
 - `BackupRetentionPeriod`: `int`
 - `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `Port`: `int`
 - `MasterUserPassword`: `str`
 - `OptionGroupName`: `str`
@@ -1312,8 +1312,8 @@ Keyword-only arguments:
 
 - `DBClusterEndpointIdentifier`: `str` *(required)*
 - `EndpointType`: `str`
-- `StaticMembers`: `List`\[`str`\]
-- `ExcludedMembers`: `List`\[`str`\]
+- `StaticMembers`: `Sequence`\[`str`\]
+- `ExcludedMembers`: `Sequence`\[`str`\]
 
 Returns
 [ModifyDBClusterEndpointOutputTypeDef](./type_defs.md#modifydbclusterendpointoutputtypedef).
@@ -1334,7 +1334,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
   *(required)*
 
 Returns
@@ -1358,8 +1359,8 @@ Keyword-only arguments:
 
 - `DBClusterSnapshotIdentifier`: `str` *(required)*
 - `AttributeName`: `str` *(required)*
-- `ValuesToAdd`: `List`\[`str`\]
-- `ValuesToRemove`: `List`\[`str`\]
+- `ValuesToAdd`: `Sequence`\[`str`\]
+- `ValuesToRemove`: `Sequence`\[`str`\]
 
 Returns
 [ModifyDBClusterSnapshotAttributeResultTypeDef](./type_defs.md#modifydbclustersnapshotattributeresulttypedef).
@@ -1382,8 +1383,8 @@ Keyword-only arguments:
 - `AllocatedStorage`: `int`
 - `DBInstanceClass`: `str`
 - `DBSubnetGroupName`: `str`
-- `DBSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `DBSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `ApplyImmediately`: `bool`
 - `MasterUserPassword`: `str`
 - `DBParameterGroupName`: `str`
@@ -1436,7 +1437,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
   *(required)*
 
 Returns
@@ -1457,7 +1459,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBSubnetGroupName`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `DBSubnetGroupDescription`: `str`
 
 Returns
@@ -1481,7 +1483,7 @@ Keyword-only arguments:
 - `SubscriptionName`: `str` *(required)*
 - `SnsTopicArn`: `str`
 - `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
 
 Returns
@@ -1583,7 +1585,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### reset_db_cluster_parameter_group
 
@@ -1602,7 +1604,8 @@ Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
 - `ResetAllParameters`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
 [DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
@@ -1624,7 +1627,8 @@ Keyword-only arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
 - `ResetAllParameters`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
 [DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef).
@@ -1647,17 +1651,17 @@ Keyword-only arguments:
 - `DBClusterIdentifier`: `str` *(required)*
 - `SnapshotIdentifier`: `str` *(required)*
 - `Engine`: `str` *(required)*
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `EngineVersion`: `str`
 - `Port`: `int`
 - `DBSubnetGroupName`: `str`
 - `DatabaseName`: `str`
 - `OptionGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DBClusterParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 - `CopyTagsToSnapshot`: `bool`
@@ -1688,11 +1692,11 @@ Keyword-only arguments:
 - `Port`: `int`
 - `DBSubnetGroupName`: `str`
 - `OptionGroupName`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `EnableIAMDatabaseAuthentication`: `bool`
-- `EnableCloudwatchLogsExports`: `List`\[`str`\]
+- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DBClusterParameterGroupName`: `str`
 - `DeletionProtection`: `bool`
 

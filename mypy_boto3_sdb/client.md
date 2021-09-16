@@ -105,7 +105,7 @@ Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Items`:
-  `List`\[[DeletableItemTypeDef](./type_defs.md#deletableitemtypedef)\]
+  `Sequence`\[[DeletableItemTypeDef](./type_defs.md#deletableitemtypedef)\]
   *(required)*
 
 ### batch_put_attributes
@@ -125,7 +125,7 @@ Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Items`:
-  `List`\[[ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef)\]
+  `Sequence`\[[ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef)\]
   *(required)*
 
 ### can_paginate
@@ -175,7 +175,8 @@ Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ItemName`: `str` *(required)*
-- `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `Attributes`:
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
 
 ### delete_domain
@@ -227,7 +228,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -249,7 +250,7 @@ Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `ItemName`: `str` *(required)*
-- `AttributeNames`: `List`\[`str`\]
+- `AttributeNames`: `Sequence`\[`str`\]
 - `ConsistentRead`: `bool`
 
 Returns
@@ -292,7 +293,7 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 - `ItemName`: `str` *(required)*
 - `Attributes`:
-  `List`\[[ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef)\]
+  `Sequence`\[[ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef)\]
   *(required)*
 - `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
 

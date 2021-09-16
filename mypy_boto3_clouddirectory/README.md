@@ -214,6 +214,7 @@ from mypy_boto3_clouddirectory.literals import BatchReadExceptionTypeType, ...
 - [RequiredAttributeBehaviorType](./literals.md#requiredattributebehaviortype)
 - [RuleTypeType](./literals.md#ruletypetype)
 - [UpdateActionTypeType](./literals.md#updateactiontypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

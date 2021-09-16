@@ -124,6 +124,7 @@ from mypy_boto3_snowball.literals import ClusterStateType, ...
 - [SnowballTypeType](./literals.md#snowballtypetype)
 - [StorageUnitType](./literals.md#storageunittype)
 - [TransferOptionType](./literals.md#transferoptiontype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

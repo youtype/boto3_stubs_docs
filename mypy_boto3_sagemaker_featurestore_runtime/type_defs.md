@@ -42,11 +42,11 @@ from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordId
 Required fields:
 
 - `FeatureGroupName`: `str`
-- `RecordIdentifiersValueAsString`: `List`\[`str`\]
+- `RecordIdentifiersValueAsString`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `FeatureNames`: `List`\[`str`\]
+- `FeatureNames`: `Sequence`\[`str`\]
 
 ## BatchGetRecordRequestRequestTypeDef
 
@@ -57,7 +57,7 @@ from mypy_boto3_sagemaker_featurestore_runtime.type_defs import BatchGetRecordRe
 Required fields:
 
 - `Identifiers`:
-  `List`\[[BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef)\]
+  `Sequence`\[[BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef)\]
 
 ## BatchGetRecordResponseTypeDef
 
@@ -124,7 +124,7 @@ Required fields:
 
 Optional fields:
 
-- `FeatureNames`: `List`\[`str`\]
+- `FeatureNames`: `Sequence`\[`str`\]
 
 ## GetRecordResponseTypeDef
 
@@ -147,7 +147,8 @@ from mypy_boto3_sagemaker_featurestore_runtime.type_defs import PutRecordRequest
 Required fields:
 
 - `FeatureGroupName`: `str`
-- `Record`: `List`\[[FeatureValueTypeDef](./type_defs.md#featurevaluetypedef)\]
+- `Record`:
+  `Sequence`\[[FeatureValueTypeDef](./type_defs.md#featurevaluetypedef)\]
 
 ## ResponseMetadataTypeDef
 

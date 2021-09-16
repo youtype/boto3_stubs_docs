@@ -55,7 +55,7 @@ Boto3 documentation:
 
 Arguments for `GetAccountAuthorizationDetailsPaginator.paginate` method:
 
-- `Filter`: `List`\[[EntityTypeType](./literals.md#entitytypetype)\]
+- `Filter`: `Sequence`\[[EntityTypeType](./literals.md#entitytypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -704,15 +704,15 @@ Boto3 documentation:
 
 Arguments for `SimulateCustomPolicyPaginator.paginate` method:
 
-- `PolicyInputList`: `List`\[`str`\] *(required)*
-- `ActionNames`: `List`\[`str`\] *(required)*
-- `PermissionsBoundaryPolicyInputList`: `List`\[`str`\]
-- `ResourceArns`: `List`\[`str`\]
+- `PolicyInputList`: `Sequence`\[`str`\] *(required)*
+- `ActionNames`: `Sequence`\[`str`\] *(required)*
+- `PermissionsBoundaryPolicyInputList`: `Sequence`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 - `ResourcePolicy`: `str`
 - `ResourceOwner`: `str`
 - `CallerArn`: `str`
 - `ContextEntries`:
-  `List`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
+  `Sequence`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
 - `ResourceHandlingOption`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -740,15 +740,15 @@ Boto3 documentation:
 Arguments for `SimulatePrincipalPolicyPaginator.paginate` method:
 
 - `PolicySourceArn`: `str` *(required)*
-- `ActionNames`: `List`\[`str`\] *(required)*
-- `PolicyInputList`: `List`\[`str`\]
-- `PermissionsBoundaryPolicyInputList`: `List`\[`str`\]
-- `ResourceArns`: `List`\[`str`\]
+- `ActionNames`: `Sequence`\[`str`\] *(required)*
+- `PolicyInputList`: `Sequence`\[`str`\]
+- `PermissionsBoundaryPolicyInputList`: `Sequence`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 - `ResourcePolicy`: `str`
 - `ResourceOwner`: `str`
 - `CallerArn`: `str`
 - `ContextEntries`:
-  `List`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
+  `Sequence`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
 - `ResourceHandlingOption`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

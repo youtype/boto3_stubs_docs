@@ -337,7 +337,7 @@ Keyword-only arguments:
   [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
   *(required)*
 - `ResourceId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -394,7 +394,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CommandId`: `str` *(required)*
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -440,7 +440,7 @@ Keyword-only arguments:
 - `DefaultInstanceName`: `str`
 - `RegistrationLimit`: `int`
 - `ExpirationDate`: `Union`\[`datetime`, `str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateActivationResultTypeDef](./type_defs.md#createactivationresulttypedef).
@@ -463,8 +463,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `DocumentVersion`: `str`
 - `InstanceId`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `ScheduleExpression`: `str`
 - `OutputLocation`:
   [InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef)
@@ -477,9 +477,9 @@ Keyword-only arguments:
 - `SyncCompliance`:
   [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
 - `ApplyOnlyAtCronInterval`: `bool`
-- `CalendarNames`: `List`\[`str`\]
+- `CalendarNames`: `Sequence`\[`str`\]
 - `TargetLocations`:
-  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
+  `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 
 Returns
 [CreateAssociationResultTypeDef](./type_defs.md#createassociationresulttypedef).
@@ -500,7 +500,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Entries`:
-  `List`\[[CreateAssociationBatchRequestEntryTypeDef](./type_defs.md#createassociationbatchrequestentrytypedef)\]
+  `Sequence`\[[CreateAssociationBatchRequestEntryTypeDef](./type_defs.md#createassociationbatchrequestentrytypedef)\]
   *(required)*
 
 Returns
@@ -523,15 +523,15 @@ Keyword-only arguments:
 - `Content`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Requires`:
-  `List`\[[DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef)\]
+  `Sequence`\[[DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef)\]
 - `Attachments`:
-  `List`\[[AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef)\]
+  `Sequence`\[[AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef)\]
 - `DisplayName`: `str`
 - `VersionName`: `str`
 - `DocumentType`: [DocumentTypeType](./literals.md#documenttypetype)
 - `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
 - `TargetType`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDocumentResultTypeDef](./type_defs.md#createdocumentresulttypedef).
@@ -561,7 +561,7 @@ Keyword-only arguments:
 - `ScheduleTimezone`: `str`
 - `ScheduleOffset`: `int`
 - `ClientToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateMaintenanceWindowResultTypeDef](./type_defs.md#createmaintenancewindowresulttypedef).
@@ -584,14 +584,14 @@ Keyword-only arguments:
 - `Source`: `str` *(required)*
 - `Title`: `str` *(required)*
 - `OpsItemType`: `str`
-- `OperationalData`: `Dict`\[`str`,
+- `OperationalData`: `Mapping`\[`str`,
   [OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef)\]
 - `Notifications`:
-  `List`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
+  `Sequence`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
 - `Priority`: `int`
 - `RelatedOpsItems`:
-  `List`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Category`: `str`
 - `Severity`: `str`
 - `ActualStartTime`: `Union`\[`datetime`, `str`\]
@@ -619,9 +619,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Metadata`: `Dict`\[`str`,
+- `Metadata`: `Mapping`\[`str`,
   [MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateOpsMetadataResultTypeDef](./type_defs.md#createopsmetadataresulttypedef).
@@ -646,16 +646,17 @@ Keyword-only arguments:
   [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
 - `ApprovalRules`:
   [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
-- `ApprovedPatches`: `List`\[`str`\]
+- `ApprovedPatches`: `Sequence`\[`str`\]
 - `ApprovedPatchesComplianceLevel`:
   [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
 - `ApprovedPatchesEnableNonSecurity`: `bool`
-- `RejectedPatches`: `List`\[`str`\]
+- `RejectedPatches`: `Sequence`\[`str`\]
 - `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
 - `Description`: `str`
-- `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
+- `Sources`:
+  `Sequence`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
 - `ClientToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreatePatchBaselineResultTypeDef](./type_defs.md#createpatchbaselineresulttypedef).
@@ -838,7 +839,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\] *(required)*
+- `Names`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteParametersResultTypeDef](./type_defs.md#deleteparametersresulttypedef).
@@ -981,7 +982,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef)\]
+  `Sequence`\[[DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1028,7 +1029,7 @@ Keyword-only arguments:
 - `AssociationId`: `str` *(required)*
 - `ExecutionId`: `str` *(required)*
 - `Filters`:
-  `List`\[[AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef)\]
+  `Sequence`\[[AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1052,7 +1053,7 @@ Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
 - `Filters`:
-  `List`\[[AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef)\]
+  `Sequence`\[[AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1075,7 +1076,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef)\]
+  `Sequence`\[[AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1100,7 +1101,7 @@ Keyword-only arguments:
 
 - `AutomationExecutionId`: `str` *(required)*
 - `Filters`:
-  `List`\[[StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef)\]
+  `Sequence`\[[StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `ReverseOrder`: `bool`
@@ -1123,7 +1124,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1262,9 +1263,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceInformationFilterList`:
-  `List`\[[InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef)\]
+  `Sequence`\[[InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef)\]
 - `Filters`:
-  `List`\[[InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef)\]
+  `Sequence`\[[InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1286,7 +1287,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `InstanceIds`: `List`\[`str`\] *(required)*
+- `InstanceIds`: `Sequence`\[`str`\] *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1310,7 +1311,7 @@ Keyword-only arguments:
 
 - `PatchGroup`: `str` *(required)*
 - `Filters`:
-  `List`\[[InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef)\]
+  `Sequence`\[[InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1334,7 +1335,7 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1382,7 +1383,7 @@ Keyword-only arguments:
 - `WindowExecutionId`: `str` *(required)*
 - `TaskId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1406,7 +1407,7 @@ Keyword-only arguments:
 
 - `WindowExecutionId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1430,7 +1431,7 @@ Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1453,11 +1454,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `WindowId`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `ResourceType`:
   [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1481,7 +1482,7 @@ Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1505,7 +1506,7 @@ Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1527,7 +1528,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1550,7 +1551,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
   *(required)*
 - `ResourceType`:
   [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
@@ -1576,7 +1577,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `OpsItemFilters`:
-  `List`\[[OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef)\]
+  `Sequence`\[[OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1598,9 +1599,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef)\]
+  `Sequence`\[[ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef)\]
 - `ParameterFilters`:
-  `List`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
+  `Sequence`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1622,7 +1623,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1665,7 +1666,7 @@ Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `NextToken`: `str`
 
 Returns
@@ -1715,7 +1716,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef)\]
+  `Sequence`\[[SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef)\]
 
 Returns
 [DescribeSessionsResponseTypeDef](./type_defs.md#describesessionsresponsetypedef).
@@ -1752,7 +1753,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1792,7 +1793,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CalendarNames`: `List`\[`str`\] *(required)*
+- `CalendarNames`: `Sequence`\[`str`\] *(required)*
 - `AtTime`: `str`
 
 Returns
@@ -1919,11 +1920,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
 - `Aggregators`:
-  `List`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
+  `Sequence`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
 - `ResultAttributes`:
-  `List`\[[ResultAttributeTypeDef](./type_defs.md#resultattributetypedef)\]
+  `Sequence`\[[ResultAttributeTypeDef](./type_defs.md#resultattributetypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2111,11 +2112,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SyncName`: `str`
-- `Filters`: `List`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
+- `Filters`: `Sequence`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
 - `Aggregators`:
-  `List`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
+  `Sequence`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
 - `ResultAttributes`:
-  `List`\[[OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef)\]
+  `Sequence`\[[OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2178,7 +2179,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\] *(required)*
+- `Names`: `Sequence`\[`str`\] *(required)*
 - `WithDecryption`: `bool`
 
 Returns
@@ -2201,7 +2202,7 @@ Keyword-only arguments:
 - `Path`: `str` *(required)*
 - `Recursive`: `bool`
 - `ParameterFilters`:
-  `List`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
+  `Sequence`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
 - `WithDecryption`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -2285,7 +2286,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
-- `Labels`: `List`\[`str`\] *(required)*
+- `Labels`: `Sequence`\[`str`\] *(required)*
 - `ParameterVersion`: `int`
 
 Returns
@@ -2328,7 +2329,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AssociationFilterList`:
-  `List`\[[AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef)\]
+  `Sequence`\[[AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2354,7 +2355,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
+  `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
 - `Details`: `bool`
 
 Returns
@@ -2379,7 +2380,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
+  `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
 
 Returns [ListCommandsResultTypeDef](./type_defs.md#listcommandsresulttypedef).
 
@@ -2399,9 +2400,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
-- `ResourceIds`: `List`\[`str`\]
-- `ResourceTypes`: `List`\[`str`\]
+  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
+- `ResourceIds`: `Sequence`\[`str`\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2424,7 +2425,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
+  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2495,9 +2496,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DocumentFilterList`:
-  `List`\[[DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef)\]
+  `Sequence`\[[DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef)\]
 - `Filters`:
-  `List`\[[DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef)\]
+  `Sequence`\[[DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2521,7 +2522,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `TypeName`: `str` *(required)*
 - `Filters`:
-  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2544,7 +2545,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef)\]
+  `Sequence`\[[OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2567,7 +2568,7 @@ Keyword-only arguments:
 
 - `OpsItemId`: `str`
 - `Filters`:
-  `List`\[[OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef)\]
+  `Sequence`\[[OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2590,7 +2591,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef)\]
+  `Sequence`\[[OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2613,7 +2614,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
+  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2682,8 +2683,8 @@ Keyword-only arguments:
 - `PermissionType`: `Literal['Share']` (see
   [DocumentPermissionTypeType](./literals.md#documentpermissiontypetype))
   *(required)*
-- `AccountIdsToAdd`: `List`\[`str`\]
-- `AccountIdsToRemove`: `List`\[`str`\]
+- `AccountIdsToAdd`: `Sequence`\[`str`\]
+- `AccountIdsToRemove`: `Sequence`\[`str`\]
 - `SharedDocumentVersion`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -2710,7 +2711,7 @@ Keyword-only arguments:
   [ComplianceExecutionSummaryTypeDef](./type_defs.md#complianceexecutionsummarytypedef)
   *(required)*
 - `Items`:
-  `List`\[[ComplianceItemEntryTypeDef](./type_defs.md#complianceitementrytypedef)\]
+  `Sequence`\[[ComplianceItemEntryTypeDef](./type_defs.md#complianceitementrytypedef)\]
   *(required)*
 - `ItemContentHash`: `str`
 - `UploadType`:
@@ -2734,7 +2735,7 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `Items`:
-  `List`\[[InventoryItemTypeDef](./type_defs.md#inventoryitemtypedef)\]
+  `Sequence`\[[InventoryItemTypeDef](./type_defs.md#inventoryitemtypedef)\]
   *(required)*
 
 Returns [PutInventoryResultTypeDef](./type_defs.md#putinventoryresulttypedef).
@@ -2760,7 +2761,7 @@ Keyword-only arguments:
 - `KeyId`: `str`
 - `Overwrite`: `bool`
 - `AllowedPattern`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Tier`: [ParameterTierType](./literals.md#parametertiertype)
 - `Policies`: `str`
 - `DataType`: `str`
@@ -2827,7 +2828,7 @@ Keyword-only arguments:
 - `ResourceType`:
   [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
   *(required)*
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
   *(required)*
 - `OwnerInformation`: `str`
 - `Name`: `str`
@@ -2857,9 +2858,9 @@ Keyword-only arguments:
 - `TaskType`:
   [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
   *(required)*
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `ServiceRoleArn`: `str`
-- `TaskParameters`: `Dict`\[`str`,
+- `TaskParameters`: `Mapping`\[`str`,
   [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
 - `TaskInvocationParameters`:
   [MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef)
@@ -2892,7 +2893,7 @@ Keyword-only arguments:
   [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
   *(required)*
 - `ResourceId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2952,7 +2953,7 @@ Keyword-only arguments:
 
 - `AutomationExecutionId`: `str` *(required)*
 - `SignalType`: [SignalTypeType](./literals.md#signaltypetype) *(required)*
-- `Payload`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Payload`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2971,15 +2972,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DocumentName`: `str` *(required)*
-- `InstanceIds`: `List`\[`str`\]
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `DocumentVersion`: `str`
 - `DocumentHash`: `str`
 - `DocumentHashType`:
   [DocumentHashTypeType](./literals.md#documenthashtypetype)
 - `TimeoutSeconds`: `int`
 - `Comment`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `OutputS3Region`: `str`
 - `OutputS3BucketName`: `str`
 - `OutputS3KeyPrefix`: `str`
@@ -3007,7 +3008,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AssociationIds`: `List`\[`str`\] *(required)*
+- `AssociationIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -3027,17 +3028,17 @@ Keyword-only arguments:
 
 - `DocumentName`: `str` *(required)*
 - `DocumentVersion`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `ClientToken`: `str`
 - `Mode`: [ExecutionModeType](./literals.md#executionmodetype)
 - `TargetParameterName`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `TargetMaps`: `List`\[`Dict`\[`str`, `List`\[`str`\]\]\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `TargetMaps`: `Sequence`\[`Mapping`\[`str`, `Sequence`\[`str`\]\]\]
 - `MaxConcurrency`: `str`
 - `MaxErrors`: `str`
 - `TargetLocations`:
-  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartAutomationExecutionResultTypeDef](./type_defs.md#startautomationexecutionresulttypedef).
@@ -3058,14 +3059,14 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DocumentName`: `str` *(required)*
-- `Runbooks`: `List`\[[RunbookTypeDef](./type_defs.md#runbooktypedef)\]
+- `Runbooks`: `Sequence`\[[RunbookTypeDef](./type_defs.md#runbooktypedef)\]
   *(required)*
 - `ScheduledTime`: `Union`\[`datetime`, `str`\]
 - `DocumentVersion`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `ChangeRequestName`: `str`
 - `ClientToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ScheduledEndTime`: `Union`\[`datetime`, `str`\]
 - `ChangeDetails`: `str`
 
@@ -3089,7 +3090,7 @@ Keyword-only arguments:
 
 - `Target`: `str` *(required)*
 - `DocumentName`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 Returns
 [StartSessionResponseTypeDef](./type_defs.md#startsessionresponsetypedef).
@@ -3149,7 +3150,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ParameterVersion`: `int` *(required)*
-- `Labels`: `List`\[`str`\] *(required)*
+- `Labels`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [UnlabelParameterVersionResultTypeDef](./type_defs.md#unlabelparameterversionresulttypedef).
@@ -3169,13 +3170,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AssociationId`: `str` *(required)*
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `DocumentVersion`: `str`
 - `ScheduleExpression`: `str`
 - `OutputLocation`:
   [InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef)
 - `Name`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `AssociationName`: `str`
 - `AssociationVersion`: `str`
 - `AutomationTargetParameterName`: `str`
@@ -3186,9 +3187,9 @@ Keyword-only arguments:
 - `SyncCompliance`:
   [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
 - `ApplyOnlyAtCronInterval`: `bool`
-- `CalendarNames`: `List`\[`str`\]
+- `CalendarNames`: `Sequence`\[`str`\]
 - `TargetLocations`:
-  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
+  `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 
 Returns
 [UpdateAssociationResultTypeDef](./type_defs.md#updateassociationresulttypedef).
@@ -3234,7 +3235,7 @@ Keyword-only arguments:
 - `Content`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Attachments`:
-  `List`\[[AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef)\]
+  `Sequence`\[[AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef)\]
 - `DisplayName`: `str`
 - `VersionName`: `str`
 - `DocumentVersion`: `str`
@@ -3335,7 +3336,7 @@ Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `WindowTargetId`: `str` *(required)*
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `OwnerInformation`: `str`
 - `Name`: `str`
 - `Description`: `str`
@@ -3361,10 +3362,10 @@ Keyword-only arguments:
 
 - `WindowId`: `str` *(required)*
 - `WindowTaskId`: `str` *(required)*
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `TaskArn`: `str`
 - `ServiceRoleArn`: `str`
-- `TaskParameters`: `Dict`\[`str`,
+- `TaskParameters`: `Mapping`\[`str`,
   [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
 - `TaskInvocationParameters`:
   [MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef)
@@ -3415,14 +3416,14 @@ Keyword-only arguments:
 
 - `OpsItemId`: `str` *(required)*
 - `Description`: `str`
-- `OperationalData`: `Dict`\[`str`,
+- `OperationalData`: `Mapping`\[`str`,
   [OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef)\]
-- `OperationalDataToDelete`: `List`\[`str`\]
+- `OperationalDataToDelete`: `Sequence`\[`str`\]
 - `Notifications`:
-  `List`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
+  `Sequence`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
 - `Priority`: `int`
 - `RelatedOpsItems`:
-  `List`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
+  `Sequence`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
 - `Status`: [OpsItemStatusType](./literals.md#opsitemstatustype)
 - `Title`: `str`
 - `Category`: `str`
@@ -3450,9 +3451,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `OpsMetadataArn`: `str` *(required)*
-- `MetadataToUpdate`: `Dict`\[`str`,
+- `MetadataToUpdate`: `Mapping`\[`str`,
   [MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef)\]
-- `KeysToDelete`: `List`\[`str`\]
+- `KeysToDelete`: `Sequence`\[`str`\]
 
 Returns
 [UpdateOpsMetadataResultTypeDef](./type_defs.md#updateopsmetadataresulttypedef).
@@ -3477,14 +3478,15 @@ Keyword-only arguments:
   [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
 - `ApprovalRules`:
   [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
-- `ApprovedPatches`: `List`\[`str`\]
+- `ApprovedPatches`: `Sequence`\[`str`\]
 - `ApprovedPatchesComplianceLevel`:
   [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
 - `ApprovedPatchesEnableNonSecurity`: `bool`
-- `RejectedPatches`: `List`\[`str`\]
+- `RejectedPatches`: `Sequence`\[`str`\]
 - `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
 - `Description`: `str`
-- `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
+- `Sources`:
+  `Sequence`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
 - `Replace`: `bool`
 
 Returns

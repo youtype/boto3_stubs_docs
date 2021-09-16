@@ -139,7 +139,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
   *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `DeletionProtection`: `bool`
 - `KmsKey`: `str`
 
@@ -263,7 +263,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -458,7 +458,7 @@ Keyword-only arguments:
   [KinesisConfigurationTypeDef](./type_defs.md#kinesisconfigurationtypedef)
   *(required)*
 - `StreamName`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `ExclusiveEndTime`: `Union`\[`datetime`, `str`\]
 
 Returns
@@ -479,7 +479,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -498,7 +498,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

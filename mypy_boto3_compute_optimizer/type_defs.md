@@ -139,8 +139,8 @@ from mypy_boto3_compute_optimizer.type_defs import DescribeRecommendationExportJ
 
 Optional fields:
 
-- `jobIds`: `List`\[`str`\]
-- `filters`: `List`\[[JobFilterTypeDef](./type_defs.md#jobfiltertypedef)\]
+- `jobIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[JobFilterTypeDef](./type_defs.md#jobfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -168,7 +168,7 @@ Optional fields:
 
 - `name`: `Literal['Finding']` (see
   [EBSFilterNameType](./literals.md#ebsfilternametype))
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## EBSUtilizationMetricTypeDef
 
@@ -192,7 +192,7 @@ Optional fields:
 
 - `name`: `Literal['Status']` (see
   [EnrollmentFilterNameType](./literals.md#enrollmentfilternametype))
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## ExportAutoScalingGroupRecommendationsRequestRequestTypeDef
 
@@ -207,10 +207,10 @@ Required fields:
 
 Optional fields:
 
-- `accountIds`: `List`\[`str`\]
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableAutoScalingGroupFieldType](./literals.md#exportableautoscalinggroupfieldtype)\]
+  `Sequence`\[[ExportableAutoScalingGroupFieldType](./literals.md#exportableautoscalinggroupfieldtype)\]
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
@@ -253,10 +253,10 @@ Required fields:
 
 Optional fields:
 
-- `accountIds`: `List`\[`str`\]
-- `filters`: `List`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableVolumeFieldType](./literals.md#exportablevolumefieldtype)\]
+  `Sequence`\[[ExportableVolumeFieldType](./literals.md#exportablevolumefieldtype)\]
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
@@ -287,10 +287,10 @@ Required fields:
 
 Optional fields:
 
-- `accountIds`: `List`\[`str`\]
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableInstanceFieldType](./literals.md#exportableinstancefieldtype)\]
+  `Sequence`\[[ExportableInstanceFieldType](./literals.md#exportableinstancefieldtype)\]
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
@@ -323,11 +323,11 @@ Required fields:
 
 Optional fields:
 
-- `accountIds`: `List`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
+  `Sequence`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableLambdaFunctionFieldType](./literals.md#exportablelambdafunctionfieldtype)\]
+  `Sequence`\[[ExportableLambdaFunctionFieldType](./literals.md#exportablelambdafunctionfieldtype)\]
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
@@ -354,7 +354,7 @@ from mypy_boto3_compute_optimizer.type_defs import FilterTypeDef
 Optional fields:
 
 - `name`: [FilterNameType](./literals.md#filternametype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## GetAutoScalingGroupRecommendationsRequestRequestTypeDef
 
@@ -364,11 +364,11 @@ from mypy_boto3_compute_optimizer.type_defs import GetAutoScalingGroupRecommenda
 
 Optional fields:
 
-- `accountIds`: `List`\[`str`\]
-- `autoScalingGroupArns`: `List`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
+- `autoScalingGroupArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `recommendationPreferences`:
   [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
@@ -396,11 +396,11 @@ from mypy_boto3_compute_optimizer.type_defs import GetEBSVolumeRecommendationsRe
 
 Optional fields:
 
-- `volumeArns`: `List`\[`str`\]
+- `volumeArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
-- `accountIds`: `List`\[`str`\]
+- `filters`: `Sequence`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
 
 ## GetEBSVolumeRecommendationsResponseTypeDef
 
@@ -426,11 +426,11 @@ from mypy_boto3_compute_optimizer.type_defs import GetEC2InstanceRecommendations
 
 Optional fields:
 
-- `instanceArns`: `List`\[`str`\]
+- `instanceArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `accountIds`: `List`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
 - `recommendationPreferences`:
   [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
@@ -507,7 +507,7 @@ from mypy_boto3_compute_optimizer.type_defs import GetEnrollmentStatusesForOrgan
 Optional fields:
 
 - `filters`:
-  `List`\[[EnrollmentFilterTypeDef](./type_defs.md#enrollmentfiltertypedef)\]
+  `Sequence`\[[EnrollmentFilterTypeDef](./type_defs.md#enrollmentfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -533,10 +533,10 @@ from mypy_boto3_compute_optimizer.type_defs import GetLambdaFunctionRecommendati
 
 Optional fields:
 
-- `functionArns`: `List`\[`str`\]
-- `accountIds`: `List`\[`str`\]
+- `functionArns`: `Sequence`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
+  `Sequence`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -574,7 +574,7 @@ from mypy_boto3_compute_optimizer.type_defs import GetRecommendationSummariesReq
 
 Optional fields:
 
-- `accountIds`: `List`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -641,7 +641,7 @@ from mypy_boto3_compute_optimizer.type_defs import JobFilterTypeDef
 Optional fields:
 
 - `name`: [JobFilterNameType](./literals.md#jobfilternametype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## LambdaFunctionMemoryProjectedMetricTypeDef
 
@@ -680,7 +680,7 @@ Optional fields:
 
 - `name`:
   [LambdaFunctionRecommendationFilterNameType](./literals.md#lambdafunctionrecommendationfilternametype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## LambdaFunctionRecommendationTypeDef
 
@@ -769,7 +769,7 @@ from mypy_boto3_compute_optimizer.type_defs import RecommendationPreferencesType
 Optional fields:
 
 - `cpuVendorArchitectures`:
-  `List`\[[CpuVendorArchitectureType](./literals.md#cpuvendorarchitecturetype)\]
+  `Sequence`\[[CpuVendorArchitectureType](./literals.md#cpuvendorarchitecturetype)\]
 
 ## RecommendationSourceTypeDef
 

@@ -141,9 +141,9 @@ Boto3 documentation:
 
 Arguments for `DescribeComplianceByConfigRulePaginator.paginate` method:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -172,7 +172,7 @@ Arguments for `DescribeComplianceByResourcePaginator.paginate` method:
 - `ResourceType`: `str`
 - `ResourceId`: `str`
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -198,7 +198,7 @@ Boto3 documentation:
 
 Arguments for `DescribeConfigRuleEvaluationStatusPaginator.paginate` method:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -224,7 +224,7 @@ Boto3 documentation:
 
 Arguments for `DescribeConfigRulesPaginator.paginate` method:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -253,7 +253,7 @@ method:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `UpdateStatus`:
-  `List`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
+  `Sequence`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -279,7 +279,7 @@ Boto3 documentation:
 
 Arguments for `DescribeConfigurationAggregatorsPaginator.paginate` method:
 
-- `ConfigurationAggregatorNames`: `List`\[`str`\]
+- `ConfigurationAggregatorNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -305,7 +305,7 @@ Boto3 documentation:
 
 Arguments for `DescribeConformancePackStatusPaginator.paginate` method:
 
-- `ConformancePackNames`: `List`\[`str`\]
+- `ConformancePackNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -331,7 +331,7 @@ Boto3 documentation:
 
 Arguments for `DescribeConformancePacksPaginator.paginate` method:
 
-- `ConformancePackNames`: `List`\[`str`\]
+- `ConformancePackNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -358,7 +358,7 @@ Boto3 documentation:
 Arguments for `DescribeOrganizationConfigRuleStatusesPaginator.paginate`
 method:
 
-- `OrganizationConfigRuleNames`: `List`\[`str`\]
+- `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -384,7 +384,7 @@ Boto3 documentation:
 
 Arguments for `DescribeOrganizationConfigRulesPaginator.paginate` method:
 
-- `OrganizationConfigRuleNames`: `List`\[`str`\]
+- `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -411,7 +411,7 @@ Boto3 documentation:
 Arguments for `DescribeOrganizationConformancePackStatusesPaginator.paginate`
 method:
 
-- `OrganizationConformancePackNames`: `List`\[`str`\]
+- `OrganizationConformancePackNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -437,7 +437,7 @@ Boto3 documentation:
 
 Arguments for `DescribeOrganizationConformancePacksPaginator.paginate` method:
 
-- `OrganizationConformancePackNames`: `List`\[`str`\]
+- `OrganizationConformancePackNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -490,7 +490,7 @@ Arguments for `DescribeRemediationExecutionStatusPaginator.paginate` method:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -516,7 +516,7 @@ Boto3 documentation:
 
 Arguments for `DescribeRetentionConfigurationsPaginator.paginate` method:
 
-- `RetentionConfigurationNames`: `List`\[`str`\]
+- `RetentionConfigurationNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -575,7 +575,7 @@ Arguments for `GetComplianceDetailsByConfigRulePaginator.paginate` method:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -604,7 +604,7 @@ Arguments for `GetComplianceDetailsByResourcePaginator.paginate` method:
 - `ResourceType`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -630,7 +630,7 @@ Boto3 documentation:
 
 Arguments for `GetConformancePackComplianceSummaryPaginator.paginate` method:
 
-- `ConformancePackNames`: `List`\[`str`\] *(required)*
+- `ConformancePackNames`: `Sequence`\[`str`\] *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -777,7 +777,7 @@ Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
 
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
   *(required)*
-- `resourceIds`: `List`\[`str`\]
+- `resourceIds`: `Sequence`\[`str`\]
 - `resourceName`: `str`
 - `includeDeletedResources`: `bool`
 - `PaginationConfig`:

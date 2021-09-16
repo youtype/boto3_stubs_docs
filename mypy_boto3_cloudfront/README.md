@@ -324,6 +324,7 @@ from mypy_boto3_cloudfront.literals import CachePolicyCookieBehaviorType, ...
 - [SslProtocolType](./literals.md#sslprotocoltype)
 - [StreamingDistributionDeployedWaiterName](./literals.md#streamingdistributiondeployedwaitername)
 - [ViewerProtocolPolicyType](./literals.md#viewerprotocolpolicytype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

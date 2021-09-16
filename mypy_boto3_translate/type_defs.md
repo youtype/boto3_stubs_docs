@@ -450,14 +450,14 @@ Required fields:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
 - `DataAccessRoleArn`: `str`
 - `SourceLanguageCode`: `str`
-- `TargetLanguageCodes`: `List`\[`str`\]
+- `TargetLanguageCodes`: `Sequence`\[`str`\]
 - `ClientToken`: `str`
 
 Optional fields:
 
 - `JobName`: `str`
-- `TerminologyNames`: `List`\[`str`\]
-- `ParallelDataNames`: `List`\[`str`\]
+- `TerminologyNames`: `Sequence`\[`str`\]
+- `ParallelDataNames`: `Sequence`\[`str`\]
 
 ## StartTextTranslationJobResponseTypeDef
 
@@ -600,7 +600,7 @@ Required fields:
 
 Optional fields:
 
-- `TerminologyNames`: `List`\[`str`\]
+- `TerminologyNames`: `Sequence`\[`str`\]
 
 ## TranslateTextResponseTypeDef
 

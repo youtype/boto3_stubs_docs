@@ -89,7 +89,7 @@ from mypy_boto3_ecr_public.type_defs import BatchCheckLayerAvailabilityRequestRe
 Required fields:
 
 - `repositoryName`: `str`
-- `layerDigests`: `List`\[`str`\]
+- `layerDigests`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -119,7 +119,7 @@ Required fields:
 
 - `repositoryName`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 
 Optional fields:
 
@@ -150,7 +150,7 @@ Required fields:
 
 - `repositoryName`: `str`
 - `uploadId`: `str`
-- `layerDigests`: `List`\[`str`\]
+- `layerDigests`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -185,7 +185,7 @@ Optional fields:
 
 - `catalogData`:
   [RepositoryCatalogDataInputTypeDef](./type_defs.md#repositorycatalogdatainputtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRepositoryResponseTypeDef
 
@@ -300,7 +300,7 @@ Optional fields:
 
 - `registryId`: `str`
 - `imageIds`:
-  `List`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
+  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -351,7 +351,7 @@ from mypy_boto3_ecr_public.type_defs import DescribeRepositoriesRequestRequestTy
 Optional fields:
 
 - `registryId`: `str`
-- `repositoryNames`: `List`\[`str`\]
+- `repositoryNames`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -747,8 +747,8 @@ from mypy_boto3_ecr_public.type_defs import RepositoryCatalogDataInputTypeDef
 Optional fields:
 
 - `description`: `str`
-- `architectures`: `List`\[`str`\]
-- `operatingSystems`: `List`\[`str`\]
+- `architectures`: `Sequence`\[`str`\]
+- `operatingSystems`: `Sequence`\[`str`\]
 - `logoImageBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `aboutText`: `str`
 - `usageText`: `str`
@@ -836,7 +836,7 @@ from mypy_boto3_ecr_public.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -858,7 +858,7 @@ from mypy_boto3_ecr_public.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UploadLayerPartRequestRequestTypeDef
 

@@ -148,6 +148,7 @@ from mypy_boto3_acm_pca.literals import AccessMethodTypeType, ...
 - [S3ObjectAclType](./literals.md#s3objectacltype)
 - [SigningAlgorithmType](./literals.md#signingalgorithmtype)
 - [ValidityPeriodTypeType](./literals.md#validityperiodtypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

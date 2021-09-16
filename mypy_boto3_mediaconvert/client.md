@@ -168,7 +168,7 @@ Keyword-only arguments:
   [BillingTagsSourceType](./literals.md#billingtagssourcetype)
 - `ClientRequestToken`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
+  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `JobTemplate`: `str`
 - `Priority`: `int`
 - `Queue`: `str`
@@ -176,8 +176,8 @@ Keyword-only arguments:
   [SimulateReservedQueueType](./literals.md#simulatereservedqueuetype)
 - `StatusUpdateInterval`:
   [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `UserMetadata`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `UserMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
@@ -204,12 +204,12 @@ Keyword-only arguments:
 - `Category`: `str`
 - `Description`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
+  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `Priority`: `int`
 - `Queue`: `str`
 - `StatusUpdateInterval`:
   [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
@@ -233,7 +233,7 @@ Keyword-only arguments:
   *(required)*
 - `Category`: `str`
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreatePresetResponseTypeDef](./type_defs.md#createpresetresponsetypedef).
@@ -258,7 +258,7 @@ Keyword-only arguments:
 - `ReservationPlanSettings`:
   [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
 - `Status`: [QueueStatusType](./literals.md#queuestatustype)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef).
@@ -373,7 +373,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -576,7 +576,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -595,7 +595,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -619,7 +619,7 @@ Keyword-only arguments:
 - `Category`: `str`
 - `Description`: `str`
 - `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
+  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
 - `Priority`: `int`
 - `Queue`: `str`
 - `Settings`:

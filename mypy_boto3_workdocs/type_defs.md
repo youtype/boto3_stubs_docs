@@ -170,7 +170,7 @@ Required fields:
 
 - `ResourceId`: `str`
 - `Principals`:
-  `List`\[[SharePrincipalTypeDef](./type_defs.md#shareprincipaltypedef)\]
+  `Sequence`\[[SharePrincipalTypeDef](./type_defs.md#shareprincipaltypedef)\]
 
 Optional fields:
 
@@ -269,7 +269,7 @@ from mypy_boto3_workdocs.type_defs import CreateCustomMetadataRequestRequestType
 Required fields:
 
 - `ResourceId`: `str`
-- `CustomMetadata`: `Dict`\[`str`, `str`\]
+- `CustomMetadata`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
@@ -312,7 +312,7 @@ from mypy_boto3_workdocs.type_defs import CreateLabelsRequestRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `Labels`: `List`\[`str`\]
+- `Labels`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -423,7 +423,7 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 - `VersionId`: `str`
-- `Keys`: `List`\[`str`\]
+- `Keys`: `Sequence`\[`str`\]
 - `DeleteAll`: `bool`
 
 ## DeleteDocumentRequestRequestTypeDef
@@ -481,7 +481,7 @@ Required fields:
 Optional fields:
 
 - `AuthenticationToken`: `str`
-- `Labels`: `List`\[`str`\]
+- `Labels`: `Sequence`\[`str`\]
 - `DeleteAll`: `bool`
 
 ## DeleteNotificationSubscriptionRequestRequestTypeDef

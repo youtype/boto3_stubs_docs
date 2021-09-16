@@ -141,6 +141,7 @@ from mypy_boto3_memorydb.literals import AZStatusType, ...
 - [ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)
 - [ServiceUpdateTypeType](./literals.md#serviceupdatetypetype)
 - [SourceTypeType](./literals.md#sourcetypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

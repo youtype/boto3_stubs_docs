@@ -178,8 +178,8 @@ Optional fields:
 - `roleName`: `str`
 - `clientToken`: `str`
 - `serverGroups`:
-  `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAppResponseTypeDef
 
@@ -553,7 +553,7 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `vmServerAddressList`:
-  `List`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
+  `Sequence`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
 
 ## GetServersResponseTypeDef
 
@@ -611,7 +611,7 @@ from mypy_boto3_sms.type_defs import ListAppsRequestRequestTypeDef
 
 Optional fields:
 
-- `appIds`: `List`\[`str`\]
+- `appIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -679,7 +679,7 @@ Optional fields:
 - `roleName`: `str`
 - `autoLaunch`: `bool`
 - `serverGroupLaunchConfigurations`:
-  `List`\[[ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef)\]
+  `Sequence`\[[ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef)\]
 
 ## PutAppReplicationConfigurationRequestRequestTypeDef
 
@@ -691,7 +691,7 @@ Optional fields:
 
 - `appId`: `str`
 - `serverGroupReplicationConfigurations`:
-  `List`\[[ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef)\]
+  `Sequence`\[[ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef)\]
 
 ## PutAppValidationConfigurationRequestRequestTypeDef
 
@@ -706,9 +706,9 @@ Required fields:
 Optional fields:
 
 - `appValidationConfigurations`:
-  `List`\[[AppValidationConfigurationTypeDef](./type_defs.md#appvalidationconfigurationtypedef)\]
+  `Sequence`\[[AppValidationConfigurationTypeDef](./type_defs.md#appvalidationconfigurationtypedef)\]
 - `serverGroupValidationConfigurations`:
-  `List`\[[ServerGroupValidationConfigurationTypeDef](./type_defs.md#servergroupvalidationconfigurationtypedef)\]
+  `Sequence`\[[ServerGroupValidationConfigurationTypeDef](./type_defs.md#servergroupvalidationconfigurationtypedef)\]
 
 ## ReplicationJobTypeDef
 
@@ -856,7 +856,7 @@ Optional fields:
 
 - `serverGroupId`: `str`
 - `name`: `str`
-- `serverList`: `List`\[[ServerTypeDef](./type_defs.md#servertypedef)\]
+- `serverList`: `Sequence`\[[ServerTypeDef](./type_defs.md#servertypedef)\]
 
 ## ServerGroupValidationConfigurationTypeDef
 
@@ -1064,8 +1064,8 @@ Optional fields:
 - `description`: `str`
 - `roleName`: `str`
 - `serverGroups`:
-  `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UpdateAppResponseTypeDef
 

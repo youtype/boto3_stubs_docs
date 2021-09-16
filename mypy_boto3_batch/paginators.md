@@ -32,7 +32,7 @@ Boto3 documentation:
 
 Arguments for `DescribeComputeEnvironmentsPaginator.paginate` method:
 
-- `computeEnvironments`: `List`\[`str`\]
+- `computeEnvironments`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -58,7 +58,7 @@ Boto3 documentation:
 
 Arguments for `DescribeJobDefinitionsPaginator.paginate` method:
 
-- `jobDefinitions`: `List`\[`str`\]
+- `jobDefinitions`: `Sequence`\[`str`\]
 - `jobDefinitionName`: `str`
 - `status`: `str`
 - `PaginationConfig`:
@@ -86,7 +86,7 @@ Boto3 documentation:
 
 Arguments for `DescribeJobQueuesPaginator.paginate` method:
 
-- `jobQueues`: `List`\[`str`\]
+- `jobQueues`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -116,7 +116,7 @@ Arguments for `ListJobsPaginator.paginate` method:
 - `multiNodeJobId`: `str`
 - `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `filters`:
-  `List`\[[KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)\]
+  `Sequence`\[[KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

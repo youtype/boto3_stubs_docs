@@ -355,7 +355,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -805,7 +805,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `botName`: `str` *(required)*
-- `botVersions`: `List`\[`str`\] *(required)*
+- `botVersions`: `Sequence`\[`str`\] *(required)*
 - `statusType`: [StatusTypeType](./literals.md#statustypetype) *(required)*
 
 Returns
@@ -849,7 +849,7 @@ Keyword-only arguments:
 - `locale`: [LocaleType](./literals.md#localetype) *(required)*
 - `childDirected`: `bool` *(required)*
 - `description`: `str`
-- `intents`: `List`\[[IntentTypeDef](./type_defs.md#intenttypedef)\]
+- `intents`: `Sequence`\[[IntentTypeDef](./type_defs.md#intenttypedef)\]
 - `enableModelImprovements`: `bool`
 - `nluIntentConfidenceThreshold`: `float`
 - `clarificationPrompt`: [PromptTypeDef](./type_defs.md#prompttypedef)
@@ -860,7 +860,7 @@ Keyword-only arguments:
 - `processBehavior`: [ProcessBehaviorType](./literals.md#processbehaviortype)
 - `detectSentiment`: `bool`
 - `createVersion`: `bool`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [PutBotResponseTypeDef](./type_defs.md#putbotresponsetypedef).
 
@@ -886,7 +886,7 @@ Keyword-only arguments:
 - `checksum`: `str`
 - `conversationLogs`:
   [ConversationLogsRequestTypeDef](./type_defs.md#conversationlogsrequesttypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [PutBotAliasResponseTypeDef](./type_defs.md#putbotaliasresponsetypedef).
@@ -907,8 +907,8 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
-- `slots`: `List`\[[SlotTypeDef](./type_defs.md#slottypedef)\]
-- `sampleUtterances`: `List`\[`str`\]
+- `slots`: `Sequence`\[[SlotTypeDef](./type_defs.md#slottypedef)\]
+- `sampleUtterances`: `Sequence`\[`str`\]
 - `confirmationPrompt`: [PromptTypeDef](./type_defs.md#prompttypedef)
 - `rejectionStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
 - `followUpPrompt`:
@@ -923,9 +923,9 @@ Keyword-only arguments:
 - `kendraConfiguration`:
   [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 - `inputContexts`:
-  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
+  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
 - `outputContexts`:
-  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
+  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
 
 Returns [PutIntentResponseTypeDef](./type_defs.md#putintentresponsetypedef).
 
@@ -946,14 +946,14 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `description`: `str`
 - `enumerationValues`:
-  `List`\[[EnumerationValueTypeDef](./type_defs.md#enumerationvaluetypedef)\]
+  `Sequence`\[[EnumerationValueTypeDef](./type_defs.md#enumerationvaluetypedef)\]
 - `checksum`: `str`
 - `valueSelectionStrategy`:
   [SlotValueSelectionStrategyType](./literals.md#slotvalueselectionstrategytype)
 - `createVersion`: `bool`
 - `parentSlotTypeSignature`: `str`
 - `slotTypeConfigurations`:
-  `List`\[[SlotTypeConfigurationTypeDef](./type_defs.md#slottypeconfigurationtypedef)\]
+  `Sequence`\[[SlotTypeConfigurationTypeDef](./type_defs.md#slottypeconfigurationtypedef)\]
 
 Returns
 [PutSlotTypeResponseTypeDef](./type_defs.md#putslottyperesponsetypedef).
@@ -977,7 +977,7 @@ Keyword-only arguments:
   *(required)*
 - `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
   *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef).
@@ -1021,7 +1021,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1040,7 +1040,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

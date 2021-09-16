@@ -142,8 +142,8 @@ Keyword-only arguments:
 - `roleName`: `str`
 - `clientToken`: `str`
 - `serverGroups`:
-  `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
 
@@ -332,7 +332,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -537,7 +537,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `vmServerAddressList`:
-  `List`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
+  `Sequence`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
 
 Returns [GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef).
 
@@ -602,7 +602,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `appIds`: `List`\[`str`\]
+- `appIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -647,7 +647,7 @@ Keyword-only arguments:
 - `roleName`: `str`
 - `autoLaunch`: `bool`
 - `serverGroupLaunchConfigurations`:
-  `List`\[[ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef)\]
+  `Sequence`\[[ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -668,7 +668,7 @@ Keyword-only arguments:
 
 - `appId`: `str`
 - `serverGroupReplicationConfigurations`:
-  `List`\[[ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef)\]
+  `Sequence`\[[ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -689,9 +689,9 @@ Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `appValidationConfigurations`:
-  `List`\[[AppValidationConfigurationTypeDef](./type_defs.md#appvalidationconfigurationtypedef)\]
+  `Sequence`\[[AppValidationConfigurationTypeDef](./type_defs.md#appvalidationconfigurationtypedef)\]
 - `serverGroupValidationConfigurations`:
-  `List`\[[ServerGroupValidationConfigurationTypeDef](./type_defs.md#servergroupvalidationconfigurationtypedef)\]
+  `Sequence`\[[ServerGroupValidationConfigurationTypeDef](./type_defs.md#servergroupvalidationconfigurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -811,8 +811,8 @@ Keyword-only arguments:
 - `description`: `str`
 - `roleName`: `str`
 - `serverGroups`:
-  `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef).
 

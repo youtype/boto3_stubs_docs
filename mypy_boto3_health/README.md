@@ -99,6 +99,7 @@ from mypy_boto3_health.literals import DescribeAffectedAccountsForOrganizationPa
 - [eventScopeCodeType](./literals.md#eventscopecodetype)
 - [eventStatusCodeType](./literals.md#eventstatuscodetype)
 - [eventTypeCategoryType](./literals.md#eventtypecategorytype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -183,7 +183,7 @@ Keyword-only arguments:
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `ObjectAttributeList`:
-  `List`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
+  `Sequence`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -300,7 +300,7 @@ Keyword-only arguments:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
   *(required)*
 - `Attributes`:
-  `List`\[[AttributeNameAndValueTypeDef](./type_defs.md#attributenameandvaluetypedef)\]
+  `Sequence`\[[AttributeNameAndValueTypeDef](./type_defs.md#attributenameandvaluetypedef)\]
   *(required)*
 
 Returns
@@ -322,7 +322,7 @@ Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `Operations`:
-  `List`\[[BatchReadOperationTypeDef](./type_defs.md#batchreadoperationtypedef)\]
+  `Sequence`\[[BatchReadOperationTypeDef](./type_defs.md#batchreadoperationtypedef)\]
   *(required)*
 - `ConsistencyLevel`:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
@@ -345,7 +345,7 @@ Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `Operations`:
-  `List`\[[BatchWriteOperationTypeDef](./type_defs.md#batchwriteoperationtypedef)\]
+  `Sequence`\[[BatchWriteOperationTypeDef](./type_defs.md#batchwriteoperationtypedef)\]
   *(required)*
 
 Returns [BatchWriteResponseTypeDef](./type_defs.md#batchwriteresponsetypedef).
@@ -402,7 +402,7 @@ Keyword-only arguments:
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Attributes`:
-  `List`\[[FacetAttributeTypeDef](./type_defs.md#facetattributetypedef)\]
+  `Sequence`\[[FacetAttributeTypeDef](./type_defs.md#facetattributetypedef)\]
 - `ObjectType`: [ObjectTypeType](./literals.md#objecttypetype)
 - `FacetStyle`: [FacetStyleType](./literals.md#facetstyletype)
 
@@ -424,7 +424,7 @@ Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `OrderedIndexedAttributeList`:
-  `List`\[[AttributeKeyTypeDef](./type_defs.md#attributekeytypedef)\]
+  `Sequence`\[[AttributeKeyTypeDef](./type_defs.md#attributekeytypedef)\]
   *(required)*
 - `IsUnique`: `bool` *(required)*
 - `ParentReference`:
@@ -450,10 +450,10 @@ Keyword-only arguments:
 
 - `DirectoryArn`: `str` *(required)*
 - `SchemaFacets`:
-  `List`\[[SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)\]
+  `Sequence`\[[SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)\]
   *(required)*
 - `ObjectAttributeList`:
-  `List`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
+  `Sequence`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
 - `ParentReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef)
 - `LinkName`: `str`
@@ -735,7 +735,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -819,7 +819,7 @@ Keyword-only arguments:
 - `TypedLinkSpecifier`:
   [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
   *(required)*
-- `AttributeNames`: `List`\[`str`\] *(required)*
+- `AttributeNames`: `Sequence`\[`str`\] *(required)*
 - `ConsistencyLevel`:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
@@ -846,7 +846,7 @@ Keyword-only arguments:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `SchemaFacet`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
   *(required)*
-- `AttributeNames`: `List`\[`str`\] *(required)*
+- `AttributeNames`: `Sequence`\[`str`\] *(required)*
 - `ConsistencyLevel`:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 
@@ -1073,7 +1073,7 @@ Keyword-only arguments:
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `FilterAttributeRanges`:
-  `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
+  `Sequence`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
 - `NextToken`: `str`
@@ -1102,7 +1102,7 @@ Keyword-only arguments:
 - `IndexReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `RangesOnIndexedValues`:
-  `List`\[[ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef)\]
+  `Sequence`\[[ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `ConsistencyLevel`:
@@ -1285,7 +1285,7 @@ Keyword-only arguments:
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `FilterAttributeRanges`:
-  `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
+  `Sequence`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
 - `NextToken`: `str`
@@ -1517,7 +1517,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1536,7 +1536,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1557,7 +1557,7 @@ Keyword-only arguments:
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `AttributeUpdates`:
-  `List`\[[FacetAttributeUpdateTypeDef](./type_defs.md#facetattributeupdatetypedef)\]
+  `Sequence`\[[FacetAttributeUpdateTypeDef](./type_defs.md#facetattributeupdatetypedef)\]
 - `ObjectType`: [ObjectTypeType](./literals.md#objecttypetype)
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1582,7 +1582,7 @@ Keyword-only arguments:
   [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
   *(required)*
 - `AttributeUpdates`:
-  `List`\[[LinkAttributeUpdateTypeDef](./type_defs.md#linkattributeupdatetypedef)\]
+  `Sequence`\[[LinkAttributeUpdateTypeDef](./type_defs.md#linkattributeupdatetypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1606,7 +1606,7 @@ Keyword-only arguments:
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `AttributeUpdates`:
-  `List`\[[ObjectAttributeUpdateTypeDef](./type_defs.md#objectattributeupdatetypedef)\]
+  `Sequence`\[[ObjectAttributeUpdateTypeDef](./type_defs.md#objectattributeupdatetypedef)\]
   *(required)*
 
 Returns
@@ -1650,9 +1650,9 @@ Keyword-only arguments:
 - `SchemaArn`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `AttributeUpdates`:
-  `List`\[[TypedLinkFacetAttributeUpdateTypeDef](./type_defs.md#typedlinkfacetattributeupdatetypedef)\]
+  `Sequence`\[[TypedLinkFacetAttributeUpdateTypeDef](./type_defs.md#typedlinkfacetattributeupdatetypedef)\]
   *(required)*
-- `IdentityAttributeOrder`: `List`\[`str`\] *(required)*
+- `IdentityAttributeOrder`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

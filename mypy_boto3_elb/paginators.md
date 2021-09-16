@@ -55,7 +55,7 @@ Boto3 documentation:
 
 Arguments for `DescribeLoadBalancersPaginator.paginate` method:
 
-- `LoadBalancerNames`: `List`\[`str`\]
+- `LoadBalancerNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

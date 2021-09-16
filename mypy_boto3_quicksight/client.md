@@ -249,7 +249,7 @@ Keyword-only arguments:
   [AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef)
   *(required)*
 - `Namespace`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAccountCustomizationResponseTypeDef](./type_defs.md#createaccountcustomizationresponsetypedef).
@@ -276,9 +276,9 @@ Keyword-only arguments:
   *(required)*
 - `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `ThemeArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAnalysisResponseTypeDef](./type_defs.md#createanalysisresponsetypedef).
@@ -305,8 +305,8 @@ Keyword-only arguments:
   *(required)*
 - `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VersionDescription`: `str`
 - `DashboardPublishOptions`:
   [DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef)
@@ -332,25 +332,25 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `PhysicalTableMap`: `Dict`\[`str`,
+- `PhysicalTableMap`: `Mapping`\[`str`,
   [PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef)\] *(required)*
 - `ImportMode`: [DataSetImportModeType](./literals.md#datasetimportmodetype)
   *(required)*
-- `LogicalTableMap`: `Dict`\[`str`,
+- `LogicalTableMap`: `Mapping`\[`str`,
   [LogicalTableTypeDef](./type_defs.md#logicaltabletypedef)\]
 - `ColumnGroups`:
-  `List`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
-- `FieldFolders`: `Dict`\[`str`,
+  `Sequence`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
+- `FieldFolders`: `Mapping`\[`str`,
   [FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef)\]
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
 - `RowLevelPermissionTagConfiguration`:
   [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
-  `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DataSetUsageConfiguration`:
   [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
 
@@ -380,11 +380,11 @@ Keyword-only arguments:
 - `Credentials`:
   [DataSourceCredentialsTypeDef](./type_defs.md#datasourcecredentialstypedef)
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `VpcConnectionProperties`:
   [VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef)
 - `SslProperties`: [SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
@@ -410,8 +410,8 @@ Keyword-only arguments:
   [FolderTypeType](./literals.md#foldertypetype))
 - `ParentFolderArn`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef).
@@ -506,7 +506,7 @@ Keyword-only arguments:
   [AssignmentStatusType](./literals.md#assignmentstatustype) *(required)*
 - `Namespace`: `str` *(required)*
 - `PolicyArn`: `str`
-- `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Identities`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 Returns
 [CreateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#createiampolicyassignmentresponsetypedef).
@@ -553,7 +553,7 @@ Keyword-only arguments:
 - `Namespace`: `str` *(required)*
 - `IdentityStore`: `Literal['QUICKSIGHT']` (see
   [IdentityStoreType](./literals.md#identitystoretype)) *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateNamespaceResponseTypeDef](./type_defs.md#createnamespaceresponsetypedef).
@@ -579,8 +579,8 @@ Keyword-only arguments:
   *(required)*
 - `Name`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VersionDescription`: `str`
 
 Returns
@@ -631,8 +631,8 @@ Keyword-only arguments:
   *(required)*
 - `VersionDescription`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateThemeResponseTypeDef](./type_defs.md#createthemeresponsetypedef).
@@ -1550,13 +1550,13 @@ Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `Namespace`: `str` *(required)*
-- `AuthorizedResourceArns`: `List`\[`str`\] *(required)*
+- `AuthorizedResourceArns`: `Sequence`\[`str`\] *(required)*
 - `ExperienceConfiguration`:
   [AnonymousUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#anonymoususerembeddingexperienceconfigurationtypedef)
   *(required)*
 - `SessionLifetimeInMinutes`: `int`
 - `SessionTags`:
-  `List`\[[SessionTagTypeDef](./type_defs.md#sessiontagtypedef)\]
+  `Sequence`\[[SessionTagTypeDef](./type_defs.md#sessiontagtypedef)\]
 
 Returns
 [GenerateEmbedUrlForAnonymousUserResponseTypeDef](./type_defs.md#generateembedurlforanonymoususerresponsetypedef).
@@ -1600,7 +1600,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1633,7 +1633,7 @@ Keyword-only arguments:
 - `StatePersistenceEnabled`: `bool`
 - `UserArn`: `str`
 - `Namespace`: `str`
-- `AdditionalDashboardIds`: `List`\[`str`\]
+- `AdditionalDashboardIds`: `Sequence`\[`str`\]
 
 Returns
 [GetDashboardEmbedUrlResponseTypeDef](./type_defs.md#getdashboardembedurlresponsetypedef).
@@ -2218,7 +2218,7 @@ Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `Filters`:
-  `List`\[[AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef)\]
+  `Sequence`\[[AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef)\]
   *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2242,7 +2242,7 @@ Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `Filters`:
-  `List`\[[DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef)\]
+  `Sequence`\[[DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef)\]
   *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2266,7 +2266,7 @@ Keyword-only arguments:
 
 - `AwsAccountId`: `str` *(required)*
 - `Filters`:
-  `List`\[[FolderSearchFilterTypeDef](./type_defs.md#foldersearchfiltertypedef)\]
+  `Sequence`\[[FolderSearchFilterTypeDef](./type_defs.md#foldersearchfiltertypedef)\]
   *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -2290,7 +2290,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns
 [TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef).
@@ -2310,7 +2310,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef).
@@ -2409,9 +2409,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `AnalysisId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateAnalysisPermissionsResponseTypeDef](./type_defs.md#updateanalysispermissionsresponsetypedef).
@@ -2463,9 +2463,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `DashboardId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateDashboardPermissionsResponseTypeDef](./type_defs.md#updatedashboardpermissionsresponsetypedef).
@@ -2509,22 +2509,22 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
 - `Name`: `str` *(required)*
-- `PhysicalTableMap`: `Dict`\[`str`,
+- `PhysicalTableMap`: `Mapping`\[`str`,
   [PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef)\] *(required)*
 - `ImportMode`: [DataSetImportModeType](./literals.md#datasetimportmodetype)
   *(required)*
-- `LogicalTableMap`: `Dict`\[`str`,
+- `LogicalTableMap`: `Mapping`\[`str`,
   [LogicalTableTypeDef](./type_defs.md#logicaltabletypedef)\]
 - `ColumnGroups`:
-  `List`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
-- `FieldFolders`: `Dict`\[`str`,
+  `Sequence`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
+- `FieldFolders`: `Mapping`\[`str`,
   [FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef)\]
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
 - `RowLevelPermissionTagConfiguration`:
   [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
-  `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
+  `Sequence`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 - `DataSetUsageConfiguration`:
   [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
 
@@ -2549,9 +2549,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `DataSetId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateDataSetPermissionsResponseTypeDef](./type_defs.md#updatedatasetpermissionsresponsetypedef).
@@ -2602,9 +2602,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `DataSourceId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateDataSourcePermissionsResponseTypeDef](./type_defs.md#updatedatasourcepermissionsresponsetypedef).
@@ -2648,9 +2648,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `FolderId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateFolderPermissionsResponseTypeDef](./type_defs.md#updatefolderpermissionsresponsetypedef).
@@ -2698,7 +2698,7 @@ Keyword-only arguments:
 - `AssignmentStatus`:
   [AssignmentStatusType](./literals.md#assignmentstatustype)
 - `PolicyArn`: `str`
-- `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Identities`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 Returns
 [UpdateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#updateiampolicyassignmentresponsetypedef).
@@ -2769,9 +2769,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `TemplateId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateTemplatePermissionsResponseTypeDef](./type_defs.md#updatetemplatepermissionsresponsetypedef).
@@ -2841,9 +2841,9 @@ Keyword-only arguments:
 - `AwsAccountId`: `str` *(required)*
 - `ThemeId`: `str` *(required)*
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 Returns
 [UpdateThemePermissionsResponseTypeDef](./type_defs.md#updatethemepermissionsresponsetypedef).

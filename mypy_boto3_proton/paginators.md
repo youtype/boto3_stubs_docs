@@ -42,7 +42,7 @@ Arguments for `ListEnvironmentAccountConnectionsPaginator.paginate` method:
   *(required)*
 - `environmentName`: `str`
 - `statuses`:
-  `List`\[[EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)\]
+  `Sequence`\[[EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -121,7 +121,7 @@ Boto3 documentation:
 Arguments for `ListEnvironmentsPaginator.paginate` method:
 
 - `environmentTemplates`:
-  `List`\[[EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef)\]
+  `Sequence`\[[EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

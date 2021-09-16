@@ -38,7 +38,7 @@ Boto3 documentation:
 Arguments for `ListEulaAcceptancesPaginator.paginate` method:
 
 - `studioId`: `str` *(required)*
-- `eulaIds`: `List`\[`str`\]
+- `eulaIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -63,7 +63,7 @@ Boto3 documentation:
 
 Arguments for `ListEulasPaginator.paginate` method:
 
-- `eulaIds`: `List`\[`str`\]
+- `eulaIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -118,7 +118,7 @@ Arguments for `ListLaunchProfilesPaginator.paginate` method:
 
 - `studioId`: `str` *(required)*
 - `principalId`: `str`
-- `states`: `List`\[`str`\]
+- `states`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -201,8 +201,8 @@ Boto3 documentation:
 Arguments for `ListStudioComponentsPaginator.paginate` method:
 
 - `studioId`: `str` *(required)*
-- `states`: `List`\[`str`\]
-- `types`: `List`\[`str`\]
+- `states`: `Sequence`\[`str`\]
+- `types`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

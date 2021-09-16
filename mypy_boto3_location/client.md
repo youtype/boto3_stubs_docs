@@ -153,7 +153,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DeviceIds`: `List`\[`str`\] *(required)*
+- `DeviceIds`: `Sequence`\[`str`\] *(required)*
 - `TrackerName`: `str` *(required)*
 
 Returns
@@ -174,7 +174,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CollectionName`: `str` *(required)*
-- `GeofenceIds`: `List`\[`str`\] *(required)*
+- `GeofenceIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDeleteGeofenceResponseTypeDef](./type_defs.md#batchdeletegeofenceresponsetypedef).
@@ -197,7 +197,7 @@ Keyword-only arguments:
 
 - `CollectionName`: `str` *(required)*
 - `DevicePositionUpdates`:
-  `List`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
+  `Sequence`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
   *(required)*
 
 Returns
@@ -218,7 +218,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DeviceIds`: `List`\[`str`\] *(required)*
+- `DeviceIds`: `Sequence`\[`str`\] *(required)*
 - `TrackerName`: `str` *(required)*
 
 Returns
@@ -242,7 +242,7 @@ Keyword-only arguments:
 
 - `CollectionName`: `str` *(required)*
 - `Entries`:
-  `List`\[[BatchPutGeofenceRequestEntryTypeDef](./type_defs.md#batchputgeofencerequestentrytypedef)\]
+  `Sequence`\[[BatchPutGeofenceRequestEntryTypeDef](./type_defs.md#batchputgeofencerequestentrytypedef)\]
   *(required)*
 
 Returns
@@ -265,7 +265,7 @@ Keyword-only arguments:
 
 - `TrackerName`: `str` *(required)*
 - `Updates`:
-  `List`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
+  `Sequence`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
   *(required)*
 
 Returns
@@ -288,8 +288,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CalculatorName`: `str` *(required)*
-- `DeparturePosition`: `List`\[`float`\] *(required)*
-- `DestinationPosition`: `List`\[`float`\] *(required)*
+- `DeparturePosition`: `Sequence`\[`float`\] *(required)*
+- `DestinationPosition`: `Sequence`\[`float`\] *(required)*
 - `CarModeOptions`:
   [CalculateRouteCarModeOptionsTypeDef](./type_defs.md#calculateroutecarmodeoptionstypedef)
 - `DepartNow`: `bool`
@@ -299,7 +299,7 @@ Keyword-only arguments:
 - `TravelMode`: [TravelModeType](./literals.md#travelmodetype)
 - `TruckModeOptions`:
   [CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef)
-- `WaypointPositions`: `List`\[`List`\[`float`\]\]
+- `WaypointPositions`: `Sequence`\[`Sequence`\[`float`\]\]
 
 Returns
 [CalculateRouteResponseTypeDef](./type_defs.md#calculaterouteresponsetypedef).
@@ -339,7 +339,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `KmsKeyId`: `str`
 - `PricingPlanDataSource`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateGeofenceCollectionResponseTypeDef](./type_defs.md#creategeofencecollectionresponsetypedef).
@@ -365,7 +365,7 @@ Keyword-only arguments:
 - `MapName`: `str` *(required)*
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype) *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateMapResponseTypeDef](./type_defs.md#createmapresponsetypedef).
 
@@ -390,7 +390,7 @@ Keyword-only arguments:
 - `DataSourceConfiguration`:
   [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreatePlaceIndexResponseTypeDef](./type_defs.md#createplaceindexresponsetypedef).
@@ -413,7 +413,7 @@ Keyword-only arguments:
 - `DataSource`: `str` *(required)*
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype) *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateRouteCalculatorResponseTypeDef](./type_defs.md#createroutecalculatorresponsetypedef).
@@ -438,7 +438,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `KmsKeyId`: `str`
 - `PricingPlanDataSource`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateTrackerResponseTypeDef](./type_defs.md#createtrackerresponsetypedef).
@@ -663,7 +663,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1037,7 +1037,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IndexName`: `str` *(required)*
-- `Position`: `List`\[`float`\] *(required)*
+- `Position`: `Sequence`\[`float`\] *(required)*
 - `MaxResults`: `int`
 
 Returns
@@ -1061,9 +1061,9 @@ Keyword-only arguments:
 
 - `IndexName`: `str` *(required)*
 - `Text`: `str` *(required)*
-- `BiasPosition`: `List`\[`float`\]
-- `FilterBBox`: `List`\[`float`\]
-- `FilterCountries`: `List`\[`str`\]
+- `BiasPosition`: `Sequence`\[`float`\]
+- `FilterBBox`: `Sequence`\[`float`\]
+- `FilterCountries`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 
 Returns
@@ -1085,7 +1085,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1104,7 +1104,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

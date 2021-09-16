@@ -461,7 +461,7 @@ Required fields:
 
 - `ConfigurationAggregatorName`: `str`
 - `ResourceIdentifiers`:
-  `List`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
+  `Sequence`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
 
 ## BatchGetAggregateResourceConfigResponseTypeDef
 
@@ -487,7 +487,7 @@ from mypy_boto3_config.type_defs import BatchGetResourceConfigRequestRequestType
 Required fields:
 
 - `resourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
 
 ## BatchGetResourceConfigResponseTypeDef
 
@@ -768,7 +768,7 @@ from mypy_boto3_config.type_defs import ConformancePackComplianceFiltersTypeDef
 
 Optional fields:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `ComplianceType`:
   [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
 
@@ -813,11 +813,11 @@ from mypy_boto3_config.type_defs import ConformancePackEvaluationFiltersTypeDef
 
 Optional fields:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `ComplianceType`:
   [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
 - `ResourceType`: `str`
-- `ResourceIds`: `List`\[`str`\]
+- `ResourceIds`: `Sequence`\[`str`\]
 
 ## ConformancePackEvaluationResultTypeDef
 
@@ -1009,7 +1009,7 @@ Required fields:
 
 - `ConfigRuleName`: `str`
 - `ResourceKeys`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+  `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
 
 ## DeleteRemediationExceptionsResponseTypeDef
 
@@ -1204,9 +1204,9 @@ from mypy_boto3_config.type_defs import DescribeComplianceByConfigRuleRequestReq
 
 Optional fields:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `NextToken`: `str`
 
 ## DescribeComplianceByConfigRuleResponseTypeDef
@@ -1234,7 +1234,7 @@ Optional fields:
 - `ResourceType`: `str`
 - `ResourceId`: `str`
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1260,7 +1260,7 @@ from mypy_boto3_config.type_defs import DescribeConfigRuleEvaluationStatusReques
 
 Optional fields:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -1286,7 +1286,7 @@ from mypy_boto3_config.type_defs import DescribeConfigRulesRequestRequestTypeDef
 
 Optional fields:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 ## DescribeConfigRulesResponseTypeDef
@@ -1316,7 +1316,7 @@ Required fields:
 Optional fields:
 
 - `UpdateStatus`:
-  `List`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
+  `Sequence`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -1342,7 +1342,7 @@ from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorsRequestR
 
 Optional fields:
 
-- `ConfigurationAggregatorNames`: `List`\[`str`\]
+- `ConfigurationAggregatorNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -1368,7 +1368,7 @@ from mypy_boto3_config.type_defs import DescribeConfigurationRecorderStatusReque
 
 Optional fields:
 
-- `ConfigurationRecorderNames`: `List`\[`str`\]
+- `ConfigurationRecorderNames`: `Sequence`\[`str`\]
 
 ## DescribeConfigurationRecorderStatusResponseTypeDef
 
@@ -1391,7 +1391,7 @@ from mypy_boto3_config.type_defs import DescribeConfigurationRecordersRequestReq
 
 Optional fields:
 
-- `ConfigurationRecorderNames`: `List`\[`str`\]
+- `ConfigurationRecorderNames`: `Sequence`\[`str`\]
 
 ## DescribeConfigurationRecordersResponseTypeDef
 
@@ -1446,7 +1446,7 @@ from mypy_boto3_config.type_defs import DescribeConformancePackStatusRequestRequ
 
 Optional fields:
 
-- `ConformancePackNames`: `List`\[`str`\]
+- `ConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1472,7 +1472,7 @@ from mypy_boto3_config.type_defs import DescribeConformancePacksRequestRequestTy
 
 Optional fields:
 
-- `ConformancePackNames`: `List`\[`str`\]
+- `ConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1498,7 +1498,7 @@ from mypy_boto3_config.type_defs import DescribeDeliveryChannelStatusRequestRequ
 
 Optional fields:
 
-- `DeliveryChannelNames`: `List`\[`str`\]
+- `DeliveryChannelNames`: `Sequence`\[`str`\]
 
 ## DescribeDeliveryChannelStatusResponseTypeDef
 
@@ -1521,7 +1521,7 @@ from mypy_boto3_config.type_defs import DescribeDeliveryChannelsRequestRequestTy
 
 Optional fields:
 
-- `DeliveryChannelNames`: `List`\[`str`\]
+- `DeliveryChannelNames`: `Sequence`\[`str`\]
 
 ## DescribeDeliveryChannelsResponseTypeDef
 
@@ -1544,7 +1544,7 @@ from mypy_boto3_config.type_defs import DescribeOrganizationConfigRuleStatusesRe
 
 Optional fields:
 
-- `OrganizationConfigRuleNames`: `List`\[`str`\]
+- `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1570,7 +1570,7 @@ from mypy_boto3_config.type_defs import DescribeOrganizationConfigRulesRequestRe
 
 Optional fields:
 
-- `OrganizationConfigRuleNames`: `List`\[`str`\]
+- `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1596,7 +1596,7 @@ from mypy_boto3_config.type_defs import DescribeOrganizationConformancePackStatu
 
 Optional fields:
 
-- `OrganizationConformancePackNames`: `List`\[`str`\]
+- `OrganizationConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1622,7 +1622,7 @@ from mypy_boto3_config.type_defs import DescribeOrganizationConformancePacksRequ
 
 Optional fields:
 
-- `OrganizationConformancePackNames`: `List`\[`str`\]
+- `OrganizationConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1673,7 +1673,7 @@ from mypy_boto3_config.type_defs import DescribeRemediationConfigurationsRequest
 
 Required fields:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 
 ## DescribeRemediationConfigurationsResponseTypeDef
 
@@ -1701,7 +1701,7 @@ Required fields:
 Optional fields:
 
 - `ResourceKeys`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+  `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1732,7 +1732,7 @@ Required fields:
 Optional fields:
 
 - `ResourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1758,7 +1758,7 @@ from mypy_boto3_config.type_defs import DescribeRetentionConfigurationsRequestRe
 
 Optional fields:
 
-- `RetentionConfigurationNames`: `List`\[`str`\]
+- `RetentionConfigurationNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 ## DescribeRetentionConfigurationsResponseTypeDef
@@ -2079,7 +2079,7 @@ Required fields:
 Optional fields:
 
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -2111,7 +2111,7 @@ Required fields:
 Optional fields:
 
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `NextToken`: `str`
 
 ## GetComplianceDetailsByResourceResponseTypeDef
@@ -2149,7 +2149,7 @@ from mypy_boto3_config.type_defs import GetComplianceSummaryByResourceTypeReques
 
 Optional fields:
 
-- `ResourceTypes`: `List`\[`str`\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 
 ## GetComplianceSummaryByResourceTypeResponseTypeDef
 
@@ -2204,7 +2204,7 @@ from mypy_boto3_config.type_defs import GetConformancePackComplianceSummaryReque
 
 Required fields:
 
-- `ConformancePackNames`: `List`\[`str`\]
+- `ConformancePackNames`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2233,7 +2233,7 @@ from mypy_boto3_config.type_defs import GetDiscoveredResourceCountsRequestReques
 
 Optional fields:
 
-- `resourceTypes`: `List`\[`str`\]
+- `resourceTypes`: `Sequence`\[`str`\]
 - `limit`: `int`
 - `nextToken`: `str`
 
@@ -2424,7 +2424,7 @@ Required fields:
 
 Optional fields:
 
-- `resourceIds`: `List`\[`str`\]
+- `resourceIds`: `Sequence`\[`str`\]
 - `resourceName`: `str`
 - `limit`: `int`
 - `includeDeletedResources`: `bool`
@@ -2718,7 +2718,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutAggregationAuthorizationResponseTypeDef
 
@@ -2745,7 +2745,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutConfigurationAggregatorRequestRequestTypeDef
 
@@ -2760,10 +2760,10 @@ Required fields:
 Optional fields:
 
 - `AccountAggregationSources`:
-  `List`\[[AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef)\]
+  `Sequence`\[[AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef)\]
 - `OrganizationAggregationSource`:
   [OrganizationAggregationSourceTypeDef](./type_defs.md#organizationaggregationsourcetypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutConfigurationAggregatorResponseTypeDef
 
@@ -2806,7 +2806,7 @@ Optional fields:
 - `DeliveryS3Bucket`: `str`
 - `DeliveryS3KeyPrefix`: `str`
 - `ConformancePackInputParameters`:
-  `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
+  `Sequence`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
 
 ## PutConformancePackResponseTypeDef
 
@@ -2844,7 +2844,7 @@ Required fields:
 Optional fields:
 
 - `Evaluations`:
-  `List`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
+  `Sequence`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
 - `TestMode`: `bool`
 
 ## PutEvaluationsResponseTypeDef
@@ -2888,7 +2888,7 @@ Optional fields:
   [OrganizationManagedRuleMetadataTypeDef](./type_defs.md#organizationmanagedrulemetadatatypedef)
 - `OrganizationCustomRuleMetadata`:
   [OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef)
-- `ExcludedAccounts`: `List`\[`str`\]
+- `ExcludedAccounts`: `Sequence`\[`str`\]
 
 ## PutOrganizationConfigRuleResponseTypeDef
 
@@ -2919,8 +2919,8 @@ Optional fields:
 - `DeliveryS3Bucket`: `str`
 - `DeliveryS3KeyPrefix`: `str`
 - `ConformancePackInputParameters`:
-  `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
-- `ExcludedAccounts`: `List`\[`str`\]
+  `Sequence`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
+- `ExcludedAccounts`: `Sequence`\[`str`\]
 
 ## PutOrganizationConformancePackResponseTypeDef
 
@@ -2943,7 +2943,7 @@ from mypy_boto3_config.type_defs import PutRemediationConfigurationsRequestReque
 Required fields:
 
 - `RemediationConfigurations`:
-  `List`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
+  `Sequence`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
 
 ## PutRemediationConfigurationsResponseTypeDef
 
@@ -2968,7 +2968,7 @@ Required fields:
 
 - `ConfigRuleName`: `str`
 - `ResourceKeys`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+  `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
 
 Optional fields:
 
@@ -3004,7 +3004,7 @@ Required fields:
 Optional fields:
 
 - `ResourceName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## PutRetentionConfigurationRequestRequestTypeDef
 
@@ -3041,7 +3041,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutStoredQueryResponseTypeDef
 
@@ -3405,7 +3405,7 @@ from mypy_boto3_config.type_defs import StartConfigRulesEvaluationRequestRequest
 
 Optional fields:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 
 ## StartConfigurationRecorderRequestRequestTypeDef
 
@@ -3427,7 +3427,7 @@ Required fields:
 
 - `ConfigRuleName`: `str`
 - `ResourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
 
 ## StartRemediationExecutionResponseTypeDef
 
@@ -3517,7 +3517,7 @@ from mypy_boto3_config.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -3539,4 +3539,4 @@ from mypy_boto3_config.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]

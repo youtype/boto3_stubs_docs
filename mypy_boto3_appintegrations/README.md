@@ -15,6 +15,7 @@ pip install mypy-boto3-appintegrations
   - [AppIntegrationsServiceClient](#appintegrationsserviceclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## AppIntegrationsServiceClient
@@ -55,6 +56,18 @@ AppIntegrationsServiceClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ResourceQuotaExceededException
 - ThrottlingException
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_appintegrations.literals import ServiceName, ...
+```
+
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

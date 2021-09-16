@@ -32,7 +32,7 @@ Arguments for `DescribeEnvironmentMembershipsPaginator.paginate` method:
 
 - `userArn`: `str`
 - `environmentId`: `str`
-- `permissions`: `List`\[[PermissionsType](./literals.md#permissionstype)\]
+- `permissions`: `Sequence`\[[PermissionsType](./literals.md#permissionstype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

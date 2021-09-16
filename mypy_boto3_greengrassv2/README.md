@@ -127,6 +127,7 @@ from mypy_boto3_greengrassv2.literals import CloudComponentStateType, ...
 - [ListEffectiveDeploymentsPaginatorName](./literals.md#listeffectivedeploymentspaginatorname)
 - [ListInstalledComponentsPaginatorName](./literals.md#listinstalledcomponentspaginatorname)
 - [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

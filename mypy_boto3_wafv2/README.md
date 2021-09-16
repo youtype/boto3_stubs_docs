@@ -128,6 +128,7 @@ from mypy_boto3_wafv2.literals import ActionValueType, ...
 - [ResponseContentTypeType](./literals.md#responsecontenttypetype)
 - [ScopeType](./literals.md#scopetype)
 - [TextTransformationTypeType](./literals.md#texttransformationtypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -132,8 +132,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CellName`: `str` *(required)*
-- `Cells`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Cells`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateCellResponseTypeDef](./type_defs.md#createcellresponsetypedef).
 
@@ -175,7 +175,7 @@ Keyword-only arguments:
 
 - `ReadinessCheckName`: `str` *(required)*
 - `ResourceSetName`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateReadinessCheckResponseTypeDef](./type_defs.md#createreadinesscheckresponsetypedef).
@@ -196,8 +196,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RecoveryGroupName`: `str` *(required)*
-- `Cells`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Cells`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateRecoveryGroupResponseTypeDef](./type_defs.md#createrecoverygroupresponsetypedef).
@@ -219,9 +219,9 @@ Keyword-only arguments:
 
 - `ResourceSetName`: `str` *(required)*
 - `ResourceSetType`: `str` *(required)*
-- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
   *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateResourceSetResponseTypeDef](./type_defs.md#createresourcesetresponsetypedef).
@@ -330,7 +330,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -693,7 +693,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -713,7 +713,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_cell
 
@@ -731,7 +731,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CellName`: `str` *(required)*
-- `Cells`: `List`\[`str`\] *(required)*
+- `Cells`: `Sequence`\[`str`\] *(required)*
 
 Returns [UpdateCellResponseTypeDef](./type_defs.md#updatecellresponsetypedef).
 
@@ -771,7 +771,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Cells`: `List`\[`str`\] *(required)*
+- `Cells`: `Sequence`\[`str`\] *(required)*
 - `RecoveryGroupName`: `str` *(required)*
 
 Returns
@@ -794,7 +794,7 @@ Keyword-only arguments:
 
 - `ResourceSetName`: `str` *(required)*
 - `ResourceSetType`: `str` *(required)*
-- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
   *(required)*
 
 Returns

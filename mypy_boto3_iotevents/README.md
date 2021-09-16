@@ -95,6 +95,7 @@ from mypy_boto3_iotevents.literals import AlarmModelVersionStatusType, ...
 - [InputStatusType](./literals.md#inputstatustype)
 - [LoggingLevelType](./literals.md#loggingleveltype)
 - [PayloadTypeType](./literals.md#payloadtypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -148,9 +148,9 @@ Arguments for `ListDeploymentInstancesPaginator.paginate` method:
 
 - `deploymentId`: `str` *(required)*
 - `instanceStatusFilter`:
-  `List`\[[InstanceStatusType](./literals.md#instancestatustype)\]
+  `Sequence`\[[InstanceStatusType](./literals.md#instancestatustype)\]
 - `instanceTypeFilter`:
-  `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
+  `Sequence`\[[InstanceTypeType](./literals.md#instancetypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -178,8 +178,8 @@ Arguments for `ListDeploymentTargetsPaginator.paginate` method:
 
 - `deploymentId`: `str`
 - `targetFilters`:
-  `Dict`\[[TargetFilterNameType](./literals.md#targetfilternametype),
-  `List`\[`str`\]\]
+  `Mapping`\[[TargetFilterNameType](./literals.md#targetfilternametype),
+  `Sequence`\[`str`\]\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -209,7 +209,7 @@ Arguments for `ListDeploymentsPaginator.paginate` method:
 - `deploymentGroupName`: `str`
 - `externalId`: `str`
 - `includeOnlyStatuses`:
-  `List`\[[DeploymentStatusType](./literals.md#deploymentstatustype)\]
+  `Sequence`\[[DeploymentStatusType](./literals.md#deploymentstatustype)\]
 - `createTimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -263,7 +263,8 @@ Arguments for `ListOnPremisesInstancesPaginator.paginate` method:
 
 - `registrationStatus`:
   [RegistrationStatusType](./literals.md#registrationstatustype)
-- `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `tagFilters`:
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

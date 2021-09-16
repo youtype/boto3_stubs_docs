@@ -133,6 +133,7 @@ from mypy_boto3_iotwireless.literals import BatteryLevelType, ...
 - [WirelessGatewayTaskDefinitionTypeType](./literals.md#wirelessgatewaytaskdefinitiontypetype)
 - [WirelessGatewayTaskStatusType](./literals.md#wirelessgatewaytaskstatustype)
 - [WirelessGatewayTypeType](./literals.md#wirelessgatewaytypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

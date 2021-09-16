@@ -214,7 +214,7 @@ Optional fields:
 - `RoleName`: `str`
 - `IamUserAccessToBilling`:
   [IAMUserAccessToBillingType](./literals.md#iamuseraccesstobillingtype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAccountResponseTypeDef
 
@@ -263,7 +263,7 @@ Optional fields:
 - `RoleName`: `str`
 - `IamUserAccessToBilling`:
   [IAMUserAccessToBillingType](./literals.md#iamuseraccesstobillingtype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateGovCloudAccountResponseTypeDef
 
@@ -314,7 +314,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateOrganizationalUnitResponseTypeDef
 
@@ -344,7 +344,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePolicyResponseTypeDef
 
@@ -773,7 +773,7 @@ Required fields:
 Optional fields:
 
 - `Notes`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## InviteAccountToOrganizationResponseTypeDef
 
@@ -902,7 +902,7 @@ from mypy_boto3_organizations.type_defs import ListCreateAccountStatusRequestReq
 Optional fields:
 
 - `States`:
-  `List`\[[CreateAccountStateType](./literals.md#createaccountstatetype)\]
+  `Sequence`\[[CreateAccountStateType](./literals.md#createaccountstatetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1394,7 +1394,7 @@ from mypy_boto3_organizations.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1416,7 +1416,7 @@ from mypy_boto3_organizations.type_defs import UntagResourceRequestRequestTypeDe
 Required fields:
 
 - `ResourceId`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateOrganizationalUnitRequestRequestTypeDef
 

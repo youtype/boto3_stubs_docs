@@ -193,7 +193,7 @@ from mypy_boto3_comprehend.type_defs import AugmentedManifestsListItemTypeDef
 Required fields:
 
 - `S3Uri`: `str`
-- `AttributeNames`: `List`\[`str`\]
+- `AttributeNames`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -222,7 +222,7 @@ from mypy_boto3_comprehend.type_defs import BatchDetectDominantLanguageRequestRe
 
 Required fields:
 
-- `TextList`: `List`\[`str`\]
+- `TextList`: `Sequence`\[`str`\]
 
 ## BatchDetectDominantLanguageResponseTypeDef
 
@@ -258,7 +258,7 @@ from mypy_boto3_comprehend.type_defs import BatchDetectEntitiesRequestRequestTyp
 
 Required fields:
 
-- `TextList`: `List`\[`str`\]
+- `TextList`: `Sequence`\[`str`\]
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 
 ## BatchDetectEntitiesResponseTypeDef
@@ -295,7 +295,7 @@ from mypy_boto3_comprehend.type_defs import BatchDetectKeyPhrasesRequestRequestT
 
 Required fields:
 
-- `TextList`: `List`\[`str`\]
+- `TextList`: `Sequence`\[`str`\]
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 
 ## BatchDetectKeyPhrasesResponseTypeDef
@@ -334,7 +334,7 @@ from mypy_boto3_comprehend.type_defs import BatchDetectSentimentRequestRequestTy
 
 Required fields:
 
-- `TextList`: `List`\[`str`\]
+- `TextList`: `Sequence`\[`str`\]
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 
 ## BatchDetectSentimentResponseTypeDef
@@ -372,7 +372,7 @@ from mypy_boto3_comprehend.type_defs import BatchDetectSyntaxRequestRequestTypeD
 
 Required fields:
 
-- `TextList`: `List`\[`str`\]
+- `TextList`: `Sequence`\[`str`\]
 - `LanguageCode`:
   [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype)
 
@@ -499,7 +499,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OutputDataConfig`:
   [DocumentClassifierOutputDataConfigTypeDef](./type_defs.md#documentclassifieroutputdataconfigtypedef)
 - `ClientRequestToken`: `str`
@@ -536,7 +536,7 @@ Required fields:
 Optional fields:
 
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DataAccessRoleArn`: `str`
 
 ## CreateEndpointResponseTypeDef
@@ -567,7 +567,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
@@ -1087,7 +1087,7 @@ Optional fields:
 - `S3Uri`: `str`
 - `LabelDelimiter`: `str`
 - `AugmentedManifests`:
-  `List`\[[AugmentedManifestsListItemTypeDef](./type_defs.md#augmentedmanifestslistitemtypedef)\]
+  `Sequence`\[[AugmentedManifestsListItemTypeDef](./type_defs.md#augmentedmanifestslistitemtypedef)\]
 
 ## DocumentClassifierOutputDataConfigTypeDef
 
@@ -1348,7 +1348,7 @@ from mypy_boto3_comprehend.type_defs import EntityRecognizerInputDataConfigTypeD
 Required fields:
 
 - `EntityTypes`:
-  `List`\[[EntityTypesListItemTypeDef](./type_defs.md#entitytypeslistitemtypedef)\]
+  `Sequence`\[[EntityTypesListItemTypeDef](./type_defs.md#entitytypeslistitemtypedef)\]
 
 Optional fields:
 
@@ -1361,7 +1361,7 @@ Optional fields:
 - `EntityList`:
   [EntityRecognizerEntityListTypeDef](./type_defs.md#entityrecognizerentitylisttypedef)
 - `AugmentedManifests`:
-  `List`\[[AugmentedManifestsListItemTypeDef](./type_defs.md#augmentedmanifestslistitemtypedef)\]
+  `Sequence`\[[AugmentedManifestsListItemTypeDef](./type_defs.md#augmentedmanifestslistitemtypedef)\]
 
 ## EntityRecognizerMetadataEntityTypesListItemTypeDef
 
@@ -2075,7 +2075,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartDocumentClassificationJobResponseTypeDef
 
@@ -2111,7 +2111,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartDominantLanguageDetectionJobResponseTypeDef
 
@@ -2149,7 +2149,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartEntitiesDetectionJobResponseTypeDef
 
@@ -2179,13 +2179,13 @@ Required fields:
   [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
 - `DataAccessRoleArn`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `TargetEventTypes`: `List`\[`str`\]
+- `TargetEventTypes`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `JobName`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartEventsDetectionJobResponseTypeDef
 
@@ -2222,7 +2222,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartKeyPhrasesDetectionJobResponseTypeDef
 
@@ -2261,7 +2261,7 @@ Optional fields:
   [RedactionConfigTypeDef](./type_defs.md#redactionconfigtypedef)
 - `JobName`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartPiiEntitiesDetectionJobResponseTypeDef
 
@@ -2298,7 +2298,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartSentimentDetectionJobResponseTypeDef
 
@@ -2335,7 +2335,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartTopicsDetectionJobResponseTypeDef
 
@@ -2533,7 +2533,7 @@ from mypy_boto3_comprehend.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -2595,7 +2595,7 @@ from mypy_boto3_comprehend.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateEndpointRequestRequestTypeDef
 
@@ -2616,5 +2616,5 @@ from mypy_boto3_comprehend.type_defs import VpcConfigTypeDef
 
 Required fields:
 
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Subnets`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]

@@ -92,7 +92,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -114,11 +114,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `campaignArn`: `str` *(required)*
-- `inputList`: `List`\[`str`\] *(required)*
+- `inputList`: `Sequence`\[`str`\] *(required)*
 - `userId`: `str` *(required)*
-- `context`: `Dict`\[`str`, `str`\]
+- `context`: `Mapping`\[`str`, `str`\]
 - `filterArn`: `str`
-- `filterValues`: `Dict`\[`str`, `str`\]
+- `filterValues`: `Mapping`\[`str`, `str`\]
 
 Returns
 [GetPersonalizedRankingResponseTypeDef](./type_defs.md#getpersonalizedrankingresponsetypedef).
@@ -142,9 +142,9 @@ Keyword-only arguments:
 - `itemId`: `str`
 - `userId`: `str`
 - `numResults`: `int`
-- `context`: `Dict`\[`str`, `str`\]
+- `context`: `Mapping`\[`str`, `str`\]
 - `filterArn`: `str`
-- `filterValues`: `Dict`\[`str`, `str`\]
+- `filterValues`: `Mapping`\[`str`, `str`\]
 
 Returns
 [GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef).

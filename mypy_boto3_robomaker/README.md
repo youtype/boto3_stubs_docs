@@ -173,6 +173,7 @@ from mypy_boto3_robomaker.literals import ArchitectureType, ...
 - [WorldExportJobStatusType](./literals.md#worldexportjobstatustype)
 - [WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype)
 - [WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 
@@ -254,6 +255,7 @@ from mypy_boto3_robomaker.type_defs import BatchDeleteWorldsRequestRequestTypeDe
 - [DescribeWorldResponseTypeDef](./type_defs.md#describeworldresponsetypedef)
 - [DescribeWorldTemplateRequestRequestTypeDef](./type_defs.md#describeworldtemplaterequestrequesttypedef)
 - [DescribeWorldTemplateResponseTypeDef](./type_defs.md#describeworldtemplateresponsetypedef)
+- [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - [FailedCreateSimulationJobRequestTypeDef](./type_defs.md#failedcreatesimulationjobrequesttypedef)
 - [FailureSummaryTypeDef](./type_defs.md#failuresummarytypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)

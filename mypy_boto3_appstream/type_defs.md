@@ -196,7 +196,7 @@ from mypy_boto3_appstream.type_defs import BatchAssociateUserStackRequestRequest
 Required fields:
 
 - `UserStackAssociations`:
-  `List`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
+  `Sequence`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
 
 ## BatchAssociateUserStackResultTypeDef
 
@@ -220,7 +220,7 @@ from mypy_boto3_appstream.type_defs import BatchDisassociateUserStackRequestRequ
 Required fields:
 
 - `UserStackAssociations`:
-  `List`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
+  `Sequence`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
 
 ## BatchDisassociateUserStackResultTypeDef
 
@@ -298,7 +298,7 @@ from mypy_boto3_appstream.type_defs import CreateDirectoryConfigRequestRequestTy
 Required fields:
 
 - `DirectoryName`: `str`
-- `OrganizationalUnitDistinguishedNames`: `List`\[`str`\]
+- `OrganizationalUnitDistinguishedNames`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -344,7 +344,7 @@ Optional fields:
 - `EnableDefaultInternetAccess`: `bool`
 - `DomainJoinInfo`:
   [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `IdleDisconnectTimeoutInSeconds`: `int`
 - `IamRoleArn`: `str`
 - `StreamView`: [StreamViewType](./literals.md#streamviewtype)
@@ -384,9 +384,9 @@ Optional fields:
 - `DomainJoinInfo`:
   [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
 - `AppstreamAgentVersion`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `AccessEndpoints`:
-  `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
+  `Sequence`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
 
 ## CreateImageBuilderResultTypeDef
 
@@ -442,17 +442,17 @@ Optional fields:
 - `Description`: `str`
 - `DisplayName`: `str`
 - `StorageConnectors`:
-  `List`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
+  `Sequence`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
 - `RedirectURL`: `str`
 - `FeedbackURL`: `str`
 - `UserSettings`:
-  `List`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
+  `Sequence`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
 - `ApplicationSettings`:
   [ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `AccessEndpoints`:
-  `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
-- `EmbedHostDomains`: `List`\[`str`\]
+  `Sequence`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
+- `EmbedHostDomains`: `Sequence`\[`str`\]
 
 ## CreateStackResultTypeDef
 
@@ -512,7 +512,7 @@ Optional fields:
 
 - `newImageDescription`: `str`
 - `newImageDisplayName`: `str`
-- `newImageTags`: `Dict`\[`str`, `str`\]
+- `newImageTags`: `Mapping`\[`str`, `str`\]
 - `dryRun`: `bool`
 
 ## CreateUpdatedImageResultTypeDef
@@ -665,7 +665,7 @@ from mypy_boto3_appstream.type_defs import DescribeDirectoryConfigsRequestReques
 
 Optional fields:
 
-- `DirectoryNames`: `List`\[`str`\]
+- `DirectoryNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -691,7 +691,7 @@ from mypy_boto3_appstream.type_defs import DescribeFleetsRequestRequestTypeDef
 
 Optional fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 ## DescribeFleetsResultTypeDef
@@ -715,7 +715,7 @@ from mypy_boto3_appstream.type_defs import DescribeImageBuildersRequestRequestTy
 
 Optional fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -746,7 +746,7 @@ Required fields:
 Optional fields:
 
 - `MaxResults`: `int`
-- `SharedAwsAccountIds`: `List`\[`str`\]
+- `SharedAwsAccountIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 ## DescribeImagePermissionsResultTypeDef
@@ -772,8 +772,8 @@ from mypy_boto3_appstream.type_defs import DescribeImagesRequestRequestTypeDef
 
 Optional fields:
 
-- `Names`: `List`\[`str`\]
-- `Arns`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
+- `Arns`: `Sequence`\[`str`\]
 - `Type`: [VisibilityTypeType](./literals.md#visibilitytypetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -831,7 +831,7 @@ from mypy_boto3_appstream.type_defs import DescribeStacksRequestRequestTypeDef
 
 Optional fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 ## DescribeStacksResultTypeDef
@@ -1460,7 +1460,7 @@ Required fields:
 Optional fields:
 
 - `ResourceIdentifier`: `str`
-- `Domains`: `List`\[`str`\]
+- `Domains`: `Sequence`\[`str`\]
 
 ## TagResourceRequestRequestTypeDef
 
@@ -1471,7 +1471,7 @@ from mypy_boto3_appstream.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1482,7 +1482,7 @@ from mypy_boto3_appstream.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDirectoryConfigRequestRequestTypeDef
 
@@ -1496,7 +1496,7 @@ Required fields:
 
 Optional fields:
 
-- `OrganizationalUnitDistinguishedNames`: `List`\[`str`\]
+- `OrganizationalUnitDistinguishedNames`: `Sequence`\[`str`\]
 - `ServiceAccountCredentials`:
   [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
 
@@ -1538,7 +1538,7 @@ Optional fields:
   [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
 - `IdleDisconnectTimeoutInSeconds`: `int`
 - `AttributesToDelete`:
-  `List`\[[FleetAttributeType](./literals.md#fleetattributetype)\]
+  `Sequence`\[[FleetAttributeType](./literals.md#fleetattributetype)\]
 - `IamRoleArn`: `str`
 - `StreamView`: [StreamViewType](./literals.md#streamviewtype)
 
@@ -1582,19 +1582,19 @@ Optional fields:
 - `DisplayName`: `str`
 - `Description`: `str`
 - `StorageConnectors`:
-  `List`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
+  `Sequence`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
 - `DeleteStorageConnectors`: `bool`
 - `RedirectURL`: `str`
 - `FeedbackURL`: `str`
 - `AttributesToDelete`:
-  `List`\[[StackAttributeType](./literals.md#stackattributetype)\]
+  `Sequence`\[[StackAttributeType](./literals.md#stackattributetype)\]
 - `UserSettings`:
-  `List`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
+  `Sequence`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
 - `ApplicationSettings`:
   [ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef)
 - `AccessEndpoints`:
-  `List`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
-- `EmbedHostDomains`: `List`\[`str`\]
+  `Sequence`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
+- `EmbedHostDomains`: `Sequence`\[`str`\]
 
 ## UpdateStackResultTypeDef
 
@@ -1694,8 +1694,8 @@ from mypy_boto3_appstream.type_defs import VpcConfigTypeDef
 
 Optional fields:
 
-- `SubnetIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## WaiterConfigTypeDef
 

@@ -59,6 +59,7 @@ from mypy_boto3_kinesis_video_media.literals import StartSelectorTypeType, ...
 ```
 
 - [StartSelectorTypeType](./literals.md#startselectortypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

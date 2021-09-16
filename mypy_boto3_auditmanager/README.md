@@ -124,6 +124,7 @@ from mypy_boto3_auditmanager.literals import AccountStatusType, ...
 - [SourceFrequencyType](./literals.md#sourcefrequencytype)
 - [SourceSetUpOptionType](./literals.md#sourcesetupoptiontype)
 - [SourceTypeType](./literals.md#sourcetypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

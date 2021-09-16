@@ -39,7 +39,7 @@ Arguments for `ListAssignmentsForHITPaginator.paginate` method:
 
 - `HITId`: `str` *(required)*
 - `AssignmentStatuses`:
-  `List`\[[AssignmentStatusType](./literals.md#assignmentstatustype)\]
+  `Sequence`\[[AssignmentStatusType](./literals.md#assignmentstatustype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

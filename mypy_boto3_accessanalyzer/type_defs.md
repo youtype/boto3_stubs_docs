@@ -297,7 +297,7 @@ Required fields:
 
 - `accessRole`: `str`
 - `startTime`: `Union`\[`datetime`, `str`\]
-- `trails`: `List`\[[TrailTypeDef](./type_defs.md#trailtypedef)\]
+- `trails`: `Sequence`\[[TrailTypeDef](./type_defs.md#trailtypedef)\]
 
 Optional fields:
 
@@ -344,7 +344,7 @@ from mypy_boto3_accessanalyzer.type_defs import CreateAccessPreviewRequestReques
 Required fields:
 
 - `analyzerArn`: `str`
-- `configurations`: `Dict`\[`str`,
+- `configurations`: `Mapping`\[`str`,
   [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 
 Optional fields:
@@ -377,9 +377,9 @@ Required fields:
 Optional fields:
 
 - `archiveRules`:
-  `List`\[[InlineArchiveRuleTypeDef](./type_defs.md#inlinearchiveruletypedef)\]
+  `Sequence`\[[InlineArchiveRuleTypeDef](./type_defs.md#inlinearchiveruletypedef)\]
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAnalyzerResponseTypeDef
 
@@ -402,7 +402,7 @@ from mypy_boto3_accessanalyzer.type_defs import CreateArchiveRuleRequestRequestT
 Required fields:
 
 - `analyzerName`: `str`
-- `filter`: `Dict`\[`str`,
+- `filter`: `Mapping`\[`str`,
   [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `ruleName`: `str`
 
@@ -418,10 +418,10 @@ from mypy_boto3_accessanalyzer.type_defs import CriterionTypeDef
 
 Optional fields:
 
-- `contains`: `List`\[`str`\]
-- `eq`: `List`\[`str`\]
+- `contains`: `Sequence`\[`str`\]
+- `eq`: `Sequence`\[`str`\]
 - `exists`: `bool`
-- `neq`: `List`\[`str`\]
+- `neq`: `Sequence`\[`str`\]
 
 ## DeleteAnalyzerRequestRequestTypeDef
 
@@ -735,7 +735,7 @@ from mypy_boto3_accessanalyzer.type_defs import InlineArchiveRuleTypeDef
 
 Required fields:
 
-- `filter`: `Dict`\[`str`,
+- `filter`: `Mapping`\[`str`,
   [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `ruleName`: `str`
 
@@ -778,7 +778,7 @@ Required fields:
 - `granteePrincipal`: `str`
 - `issuingAccount`: `str`
 - `operations`:
-  `List`\[[KmsGrantOperationType](./literals.md#kmsgrantoperationtype)\]
+  `Sequence`\[[KmsGrantOperationType](./literals.md#kmsgrantoperationtype)\]
 
 Optional fields:
 
@@ -794,8 +794,8 @@ from mypy_boto3_accessanalyzer.type_defs import KmsGrantConstraintsTypeDef
 
 Optional fields:
 
-- `encryptionContextEquals`: `Dict`\[`str`, `str`\]
-- `encryptionContextSubset`: `Dict`\[`str`, `str`\]
+- `encryptionContextEquals`: `Mapping`\[`str`, `str`\]
+- `encryptionContextSubset`: `Mapping`\[`str`, `str`\]
 
 ## KmsKeyConfigurationTypeDef
 
@@ -806,8 +806,8 @@ from mypy_boto3_accessanalyzer.type_defs import KmsKeyConfigurationTypeDef
 Optional fields:
 
 - `grants`:
-  `List`\[[KmsGrantConfigurationTypeDef](./type_defs.md#kmsgrantconfigurationtypedef)\]
-- `keyPolicies`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[KmsGrantConfigurationTypeDef](./type_defs.md#kmsgrantconfigurationtypedef)\]
+- `keyPolicies`: `Mapping`\[`str`, `str`\]
 
 ## ListAccessPreviewFindingsRequestRequestTypeDef
 
@@ -822,7 +822,7 @@ Required fields:
 
 Optional fields:
 
-- `filter`: `Dict`\[`str`,
+- `filter`: `Mapping`\[`str`,
   [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -967,7 +967,7 @@ Required fields:
 
 Optional fields:
 
-- `filter`: `Dict`\[`str`,
+- `filter`: `Mapping`\[`str`,
   [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -1054,7 +1054,7 @@ from mypy_boto3_accessanalyzer.type_defs import NetworkOriginConfigurationTypeDe
 
 Optional fields:
 
-- `internetConfiguration`: `Dict`\[`str`, `Any`\]
+- `internetConfiguration`: `Mapping`\[`str`, `Any`\]
 - `vpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 
@@ -1169,10 +1169,10 @@ from mypy_boto3_accessanalyzer.type_defs import S3BucketConfigurationTypeDef
 
 Optional fields:
 
-- `accessPoints`: `Dict`\[`str`,
+- `accessPoints`: `Mapping`\[`str`,
   [S3AccessPointConfigurationTypeDef](./type_defs.md#s3accesspointconfigurationtypedef)\]
 - `bucketAclGrants`:
-  `List`\[[S3BucketAclGrantConfigurationTypeDef](./type_defs.md#s3bucketaclgrantconfigurationtypedef)\]
+  `Sequence`\[[S3BucketAclGrantConfigurationTypeDef](./type_defs.md#s3bucketaclgrantconfigurationtypedef)\]
 - `bucketPolicy`: `str`
 - `bucketPublicAccessBlock`:
   [S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef)
@@ -1301,7 +1301,7 @@ from mypy_boto3_accessanalyzer.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TrailPropertiesTypeDef
 
@@ -1331,7 +1331,7 @@ Required fields:
 Optional fields:
 
 - `allRegions`: `bool`
-- `regions`: `List`\[`str`\]
+- `regions`: `Sequence`\[`str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1342,7 +1342,7 @@ from mypy_boto3_accessanalyzer.type_defs import UntagResourceRequestRequestTypeD
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateArchiveRuleRequestRequestTypeDef
 
@@ -1353,7 +1353,7 @@ from mypy_boto3_accessanalyzer.type_defs import UpdateArchiveRuleRequestRequestT
 Required fields:
 
 - `analyzerName`: `str`
-- `filter`: `Dict`\[`str`,
+- `filter`: `Mapping`\[`str`,
   [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `ruleName`: `str`
 
@@ -1375,7 +1375,7 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
-- `ids`: `List`\[`str`\]
+- `ids`: `Sequence`\[`str`\]
 - `resourceArn`: `str`
 
 ## ValidatePolicyFindingTypeDef

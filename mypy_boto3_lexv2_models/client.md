@@ -180,8 +180,8 @@ Keyword-only arguments:
   *(required)*
 - `idleSessionTTLInSeconds`: `int` *(required)*
 - `description`: `str`
-- `botTags`: `Dict`\[`str`, `str`\]
-- `testBotAliasTags`: `Dict`\[`str`, `str`\]
+- `botTags`: `Mapping`\[`str`, `str`\]
+- `testBotAliasTags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
 
@@ -203,13 +203,13 @@ Keyword-only arguments:
 - `botId`: `str` *(required)*
 - `description`: `str`
 - `botVersion`: `str`
-- `botAliasLocaleSettings`: `Dict`\[`str`,
+- `botAliasLocaleSettings`: `Mapping`\[`str`,
   [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
 - `conversationLogSettings`:
   [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
 - `sentimentAnalysisSettings`:
   [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateBotAliasResponseTypeDef](./type_defs.md#createbotaliasresponsetypedef).
@@ -253,7 +253,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `botId`: `str` *(required)*
-- `botVersionLocaleSpecification`: `Dict`\[`str`,
+- `botVersionLocaleSpecification`: `Mapping`\[`str`,
   [BotVersionLocaleDetailsTypeDef](./type_defs.md#botversionlocaledetailstypedef)\]
   *(required)*
 - `description`: `str`
@@ -307,7 +307,7 @@ Keyword-only arguments:
 - `description`: `str`
 - `parentIntentSignature`: `str`
 - `sampleUtterances`:
-  `List`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
+  `Sequence`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
 - `dialogCodeHook`:
   [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
 - `fulfillmentCodeHook`:
@@ -317,9 +317,9 @@ Keyword-only arguments:
 - `intentClosingSetting`:
   [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
 - `inputContexts`:
-  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
+  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
 - `outputContexts`:
-  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
+  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
 - `kendraConfiguration`:
   [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 
@@ -365,10 +365,11 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 - `statementId`: `str` *(required)*
 - `effect`: [EffectType](./literals.md#effecttype) *(required)*
-- `principal`: `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
+- `principal`:
+  `Sequence`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
   *(required)*
-- `action`: `List`\[`str`\] *(required)*
-- `condition`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `action`: `Sequence`\[`str`\] *(required)*
+- `condition`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
 - `expectedRevisionId`: `str`
 
 Returns
@@ -430,7 +431,7 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `description`: `str`
 - `slotTypeValues`:
-  `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
+  `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
 - `parentSlotTypeSignature`: `str`
 
 Returns
@@ -890,7 +891,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -935,7 +936,7 @@ Keyword-only arguments:
 - `botVersion`: `str` *(required)*
 - `sortBy`: [BotLocaleSortByTypeDef](./type_defs.md#botlocalesortbytypedef)
 - `filters`:
-  `List`\[[BotLocaleFilterTypeDef](./type_defs.md#botlocalefiltertypedef)\]
+  `Sequence`\[[BotLocaleFilterTypeDef](./type_defs.md#botlocalefiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -979,7 +980,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `sortBy`: [BotSortByTypeDef](./type_defs.md#botsortbytypedef)
-- `filters`: `List`\[[BotFilterTypeDef](./type_defs.md#botfiltertypedef)\]
+- `filters`: `Sequence`\[[BotFilterTypeDef](./type_defs.md#botfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1052,7 +1053,7 @@ Keyword-only arguments:
 - `botVersion`: `str`
 - `sortBy`: [ExportSortByTypeDef](./type_defs.md#exportsortbytypedef)
 - `filters`:
-  `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
+  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1077,7 +1078,7 @@ Keyword-only arguments:
 - `botVersion`: `str`
 - `sortBy`: [ImportSortByTypeDef](./type_defs.md#importsortbytypedef)
 - `filters`:
-  `List`\[[ImportFilterTypeDef](./type_defs.md#importfiltertypedef)\]
+  `Sequence`\[[ImportFilterTypeDef](./type_defs.md#importfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1103,7 +1104,7 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `sortBy`: [IntentSortByTypeDef](./type_defs.md#intentsortbytypedef)
 - `filters`:
-  `List`\[[IntentFilterTypeDef](./type_defs.md#intentfiltertypedef)\]
+  `Sequence`\[[IntentFilterTypeDef](./type_defs.md#intentfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1129,7 +1130,7 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `sortBy`: [SlotTypeSortByTypeDef](./type_defs.md#slottypesortbytypedef)
 - `filters`:
-  `List`\[[SlotTypeFilterTypeDef](./type_defs.md#slottypefiltertypedef)\]
+  `Sequence`\[[SlotTypeFilterTypeDef](./type_defs.md#slottypefiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1155,7 +1156,8 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `intentId`: `str` *(required)*
 - `sortBy`: [SlotSortByTypeDef](./type_defs.md#slotsortbytypedef)
-- `filters`: `List`\[[SlotFilterTypeDef](./type_defs.md#slotfiltertypedef)\]
+- `filters`:
+  `Sequence`\[[SlotFilterTypeDef](./type_defs.md#slotfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1222,7 +1224,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1241,7 +1243,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1288,7 +1290,7 @@ Keyword-only arguments:
 - `botId`: `str` *(required)*
 - `description`: `str`
 - `botVersion`: `str`
-- `botAliasLocaleSettings`: `Dict`\[`str`,
+- `botAliasLocaleSettings`: `Mapping`\[`str`,
   [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
 - `conversationLogSettings`:
   [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
@@ -1364,21 +1366,21 @@ Keyword-only arguments:
 - `description`: `str`
 - `parentIntentSignature`: `str`
 - `sampleUtterances`:
-  `List`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
+  `Sequence`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
 - `dialogCodeHook`:
   [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
 - `fulfillmentCodeHook`:
   [FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef)
 - `slotPriorities`:
-  `List`\[[SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef)\]
+  `Sequence`\[[SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef)\]
 - `intentConfirmationSetting`:
   [IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef)
 - `intentClosingSetting`:
   [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
 - `inputContexts`:
-  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
+  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
 - `outputContexts`:
-  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
+  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
 - `kendraConfiguration`:
   [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 
@@ -1463,7 +1465,7 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `description`: `str`
 - `slotTypeValues`:
-  `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
+  `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
 - `parentSlotTypeSignature`: `str`
 
 Returns

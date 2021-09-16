@@ -109,7 +109,7 @@ Keyword-only arguments:
   *(required)*
 - `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
   *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef).
@@ -145,7 +145,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -165,13 +165,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `PolicyIds`: `List`\[`str`\]
+- `PolicyIds`: `Sequence`\[`str`\]
 - `State`:
   [GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype)
 - `ResourceTypes`:
-  `List`\[[ResourceTypeValuesType](./literals.md#resourcetypevaluestype)\]
-- `TargetTags`: `List`\[`str`\]
-- `TagsToAdd`: `List`\[`str`\]
+  `Sequence`\[[ResourceTypeValuesType](./literals.md#resourcetypevaluestype)\]
+- `TargetTags`: `Sequence`\[`str`\]
+- `TagsToAdd`: `Sequence`\[`str`\]
 
 Returns
 [GetLifecyclePoliciesResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponsetypedef).
@@ -229,7 +229,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -248,7 +248,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

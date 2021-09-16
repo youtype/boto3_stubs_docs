@@ -32,7 +32,7 @@ Boto3 documentation:
 Arguments for `DescribeObjectsPaginator.paginate` method:
 
 - `pipelineId`: `str` *(required)*
-- `objectIds`: `List`\[`str`\] *(required)*
+- `objectIds`: `Sequence`\[`str`\] *(required)*
 - `evaluateExpressions`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

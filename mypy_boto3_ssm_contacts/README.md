@@ -118,6 +118,7 @@ from mypy_boto3_ssm_contacts.literals import AcceptCodeValidationType, ...
 - [ListPagesByContactPaginatorName](./literals.md#listpagesbycontactpaginatorname)
 - [ListPagesByEngagementPaginatorName](./literals.md#listpagesbyengagementpaginatorname)
 - [ReceiptTypeType](./literals.md#receipttypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

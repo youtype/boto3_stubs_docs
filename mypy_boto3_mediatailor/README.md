@@ -119,6 +119,7 @@ from mypy_boto3_mediatailor.literals import AccessTypeType, ...
 - [RelativePositionType](./literals.md#relativepositiontype)
 - [ScheduleEntryTypeType](./literals.md#scheduleentrytypetype)
 - [TypeType](./literals.md#typetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

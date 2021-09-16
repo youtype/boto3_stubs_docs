@@ -163,6 +163,7 @@ from mypy_boto3_fsx.literals import AdministrativeActionTypeType, ...
 - [VolumeTypeType](./literals.md#volumetypetype)
 - [WindowsAccessAuditLogLevelType](./literals.md#windowsaccessauditlogleveltype)
 - [WindowsDeploymentTypeType](./literals.md#windowsdeploymenttypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

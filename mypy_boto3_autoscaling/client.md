@@ -146,7 +146,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 ### attach_load_balancer_target_groups
 
@@ -164,7 +164,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `TargetGroupARNs`: `List`\[`str`\] *(required)*
+- `TargetGroupARNs`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -184,7 +184,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `LoadBalancerNames`: `List`\[`str`\] *(required)*
+- `LoadBalancerNames`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -204,7 +204,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `ScheduledActionNames`: `List`\[`str`\] *(required)*
+- `ScheduledActionNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDeleteScheduledActionAnswerTypeDef](./type_defs.md#batchdeletescheduledactionanswertypedef).
@@ -227,7 +227,7 @@ Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ScheduledUpdateGroupActions`:
-  `List`\[[ScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#scheduledupdategroupactionrequesttypedef)\]
+  `Sequence`\[[ScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#scheduledupdategroupactionrequesttypedef)\]
   *(required)*
 
 Returns
@@ -320,19 +320,19 @@ Keyword-only arguments:
 - `InstanceId`: `str`
 - `DesiredCapacity`: `int`
 - `DefaultCooldown`: `int`
-- `AvailabilityZones`: `List`\[`str`\]
-- `LoadBalancerNames`: `List`\[`str`\]
-- `TargetGroupARNs`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
+- `LoadBalancerNames`: `Sequence`\[`str`\]
+- `TargetGroupARNs`: `Sequence`\[`str`\]
 - `HealthCheckType`: `str`
 - `HealthCheckGracePeriod`: `int`
 - `PlacementGroup`: `str`
 - `VPCZoneIdentifier`: `str`
-- `TerminationPolicies`: `List`\[`str`\]
+- `TerminationPolicies`: `Sequence`\[`str`\]
 - `NewInstancesProtectedFromScaleIn`: `bool`
 - `CapacityRebalance`: `bool`
 - `LifecycleHookSpecificationList`:
-  `List`\[[LifecycleHookSpecificationTypeDef](./type_defs.md#lifecyclehookspecificationtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[LifecycleHookSpecificationTypeDef](./type_defs.md#lifecyclehookspecificationtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ServiceLinkedRoleARN`: `str`
 - `MaxInstanceLifetime`: `int`
 - `Context`: `str`
@@ -355,16 +355,16 @@ Keyword-only arguments:
 - `LaunchConfigurationName`: `str` *(required)*
 - `ImageId`: `str`
 - `KeyName`: `str`
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `ClassicLinkVPCId`: `str`
-- `ClassicLinkVPCSecurityGroups`: `List`\[`str`\]
+- `ClassicLinkVPCSecurityGroups`: `Sequence`\[`str`\]
 - `UserData`: `str`
 - `InstanceId`: `str`
 - `InstanceType`: `str`
 - `KernelId`: `str`
 - `RamdiskId`: `str`
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `InstanceMonitoring`:
   [InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef)
 - `SpotPrice`: `str`
@@ -390,7 +390,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### delete_auto_scaling_group
 
@@ -514,7 +514,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### delete_warm_pool
 
@@ -577,7 +577,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AutoScalingGroupNames`: `List`\[`str`\]
+- `AutoScalingGroupNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
@@ -599,7 +599,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
@@ -636,7 +636,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `InstanceRefreshIds`: `List`\[`str`\]
+- `InstanceRefreshIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
@@ -658,7 +658,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LaunchConfigurationNames`: `List`\[`str`\]
+- `LaunchConfigurationNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
@@ -695,7 +695,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `LifecycleHookNames`: `List`\[`str`\]
+- `LifecycleHookNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeLifecycleHooksAnswerTypeDef](./type_defs.md#describelifecyclehooksanswertypedef).
@@ -774,7 +774,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AutoScalingGroupNames`: `List`\[`str`\]
+- `AutoScalingGroupNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
@@ -796,8 +796,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str`
-- `PolicyNames`: `List`\[`str`\]
-- `PolicyTypes`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
+- `PolicyTypes`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
@@ -818,7 +818,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ActivityIds`: `List`\[`str`\]
+- `ActivityIds`: `Sequence`\[`str`\]
 - `AutoScalingGroupName`: `str`
 - `IncludeDeletedGroups`: `bool`
 - `MaxRecords`: `int`
@@ -856,7 +856,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str`
-- `ScheduledActionNames`: `List`\[`str`\]
+- `ScheduledActionNames`: `Sequence`\[`str`\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `NextToken`: `str`
@@ -879,7 +879,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
@@ -935,7 +935,7 @@ Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ShouldDecrementDesiredCapacity`: `bool` *(required)*
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 Returns
 [DetachInstancesAnswerTypeDef](./type_defs.md#detachinstancesanswertypedef).
@@ -956,7 +956,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `TargetGroupARNs`: `List`\[`str`\] *(required)*
+- `TargetGroupARNs`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -977,7 +977,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `LoadBalancerNames`: `List`\[`str`\] *(required)*
+- `LoadBalancerNames`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -997,7 +997,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 
 ### enable_metrics_collection
 
@@ -1016,7 +1016,7 @@ Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `Granularity`: `str` *(required)*
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 
 ### enter_standby
 
@@ -1034,7 +1034,7 @@ Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `ShouldDecrementDesiredCapacity`: `bool` *(required)*
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 Returns [EnterStandbyAnswerTypeDef](./type_defs.md#enterstandbyanswertypedef).
 
@@ -1073,7 +1073,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 Returns [ExitStandbyAnswerTypeDef](./type_defs.md#exitstandbyanswertypedef).
 
@@ -1090,7 +1090,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1162,7 +1162,7 @@ Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
 - `TopicARN`: `str` *(required)*
-- `NotificationTypes`: `List`\[`str`\] *(required)*
+- `NotificationTypes`: `Sequence`\[`str`\] *(required)*
 
 ### put_scaling_policy
 
@@ -1188,7 +1188,7 @@ Keyword-only arguments:
 - `Cooldown`: `int`
 - `MetricAggregationType`: `str`
 - `StepAdjustments`:
-  `List`\[[StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef)\]
+  `Sequence`\[[StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef)\]
 - `EstimatedInstanceWarmup`: `int`
 - `TargetTrackingConfiguration`:
   [TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef)
@@ -1284,7 +1284,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `ScalingProcesses`: `List`\[`str`\]
+- `ScalingProcesses`: `Sequence`\[`str`\]
 
 ### set_desired_capacity
 
@@ -1337,7 +1337,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `InstanceIds`: `List`\[`str`\] *(required)*
+- `InstanceIds`: `Sequence`\[`str`\] *(required)*
 - `AutoScalingGroupName`: `str` *(required)*
 - `ProtectedFromScaleIn`: `bool` *(required)*
 
@@ -1385,7 +1385,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoScalingGroupName`: `str` *(required)*
-- `ScalingProcesses`: `List`\[`str`\]
+- `ScalingProcesses`: `Sequence`\[`str`\]
 
 ### terminate_instance_in_auto_scaling_group
 
@@ -1435,12 +1435,12 @@ Keyword-only arguments:
 - `MaxSize`: `int`
 - `DesiredCapacity`: `int`
 - `DefaultCooldown`: `int`
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `HealthCheckType`: `str`
 - `HealthCheckGracePeriod`: `int`
 - `PlacementGroup`: `str`
 - `VPCZoneIdentifier`: `str`
-- `TerminationPolicies`: `List`\[`str`\]
+- `TerminationPolicies`: `Sequence`\[`str`\]
 - `NewInstancesProtectedFromScaleIn`: `bool`
 - `ServiceLinkedRoleARN`: `str`
 - `MaxInstanceLifetime`: `int`

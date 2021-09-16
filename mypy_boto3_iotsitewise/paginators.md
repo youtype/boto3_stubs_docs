@@ -42,14 +42,15 @@ Boto3 documentation:
 Arguments for `GetAssetPropertyAggregatesPaginator.paginate` method:
 
 - `aggregateTypes`:
-  `List`\[[AggregateTypeType](./literals.md#aggregatetypetype)\] *(required)*
+  `Sequence`\[[AggregateTypeType](./literals.md#aggregatetypetype)\]
+  *(required)*
 - `resolution`: `str` *(required)*
 - `startDate`: `Union`\[`datetime`, `str`\] *(required)*
 - `endDate`: `Union`\[`datetime`, `str`\] *(required)*
 - `assetId`: `str`
 - `propertyId`: `str`
 - `propertyAlias`: `str`
-- `qualities`: `List`\[[QualityType](./literals.md#qualitytype)\]
+- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
 - `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -81,7 +82,7 @@ Arguments for `GetAssetPropertyValueHistoryPaginator.paginate` method:
 - `propertyAlias`: `str`
 - `startDate`: `Union`\[`datetime`, `str`\]
 - `endDate`: `Union`\[`datetime`, `str`\]
-- `qualities`: `List`\[[QualityType](./literals.md#qualitytype)\]
+- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
 - `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

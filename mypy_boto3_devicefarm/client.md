@@ -181,7 +181,7 @@ Keyword-only arguments:
 
 - `projectArn`: `str` *(required)*
 - `name`: `str` *(required)*
-- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+- `rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
 - `description`: `str`
 - `maxDevices`: `int`
 
@@ -207,7 +207,7 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `description`: `str`
 - `packageCleanup`: `bool`
-- `excludeAppPackagesFromCleanup`: `List`\[`str`\]
+- `excludeAppPackagesFromCleanup`: `Sequence`\[`str`\]
 - `rebootAfterUse`: `bool`
 
 Returns
@@ -565,7 +565,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1016,7 +1016,7 @@ Keyword-only arguments:
 - `arn`: `str`
 - `nextToken`: `str`
 - `filters`:
-  `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
+  `Sequence`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 
 Returns [ListDevicesResultTypeDef](./type_defs.md#listdevicesresulttypedef).
 
@@ -1577,7 +1577,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1596,7 +1596,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1617,7 +1617,7 @@ Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 - `profileArn`: `str`
-- `labels`: `List`\[`str`\]
+- `labels`: `Sequence`\[`str`\]
 
 Returns
 [UpdateDeviceInstanceResultTypeDef](./type_defs.md#updatedeviceinstanceresulttypedef).
@@ -1640,7 +1640,7 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 - `name`: `str`
 - `description`: `str`
-- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `maxDevices`: `int`
 - `clearMaxDevices`: `bool`
 
@@ -1666,7 +1666,7 @@ Keyword-only arguments:
 - `name`: `str`
 - `description`: `str`
 - `packageCleanup`: `bool`
-- `excludeAppPackagesFromCleanup`: `List`\[`str`\]
+- `excludeAppPackagesFromCleanup`: `Sequence`\[`str`\]
 - `rebootAfterUse`: `bool`
 
 Returns

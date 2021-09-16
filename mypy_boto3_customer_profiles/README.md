@@ -100,6 +100,7 @@ from mypy_boto3_customer_profiles.literals import DataPullModeType, ...
 - [TaskTypeType](./literals.md#tasktypetype)
 - [TriggerTypeType](./literals.md#triggertypetype)
 - [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

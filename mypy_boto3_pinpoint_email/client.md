@@ -152,7 +152,7 @@ Keyword-only arguments:
   [ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef)
 - `SendingOptions`:
   [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -196,7 +196,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PoolName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -219,7 +219,7 @@ Keyword-only arguments:
 - `Content`: [EmailContentTypeDef](./type_defs.md#emailcontenttypedef)
   *(required)*
 - `ReportName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDeliverabilityTestReportResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponsetypedef).
@@ -240,7 +240,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateEmailIdentityResponseTypeDef](./type_defs.md#createemailidentityresponsetypedef).
@@ -337,7 +337,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -370,7 +370,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `BlacklistItemNames`: `List`\[`str`\] *(required)*
+- `BlacklistItemNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [GetBlacklistReportsResponseTypeDef](./type_defs.md#getblacklistreportsresponsetypedef).
@@ -880,7 +880,7 @@ Keyword-only arguments:
 
 - `DashboardEnabled`: `bool` *(required)*
 - `SubscribedDomains`:
-  `List`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
+  `Sequence`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -967,9 +967,10 @@ Keyword-only arguments:
 - `Content`: [EmailContentTypeDef](./type_defs.md#emailcontenttypedef)
   *(required)*
 - `FromEmailAddress`: `str`
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `FeedbackForwardingEmailAddress`: `str`
-- `EmailTags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+- `EmailTags`:
+  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
 Returns [SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef).
@@ -989,7 +990,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1008,7 +1009,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

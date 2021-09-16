@@ -590,7 +590,7 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef
 Required fields:
 
 - `criteriaList`:
-  `List`\[[AbortCriteriaTypeDef](./type_defs.md#abortcriteriatypedef)\]
+  `Sequence`\[[AbortCriteriaTypeDef](./type_defs.md#abortcriteriatypedef)\]
 
 ## AbortCriteriaTypeDef
 
@@ -716,7 +716,7 @@ from mypy_boto3_iot.type_defs import AddThingsToThingGroupParamsTypeDef
 
 Required fields:
 
-- `thingGroupNames`: `List`\[`str`\]
+- `thingGroupNames`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -734,7 +734,7 @@ Required fields:
 
 Optional fields:
 
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## AlertTargetTypeDef
 
@@ -809,7 +809,7 @@ from mypy_boto3_iot.type_defs import AssociateTargetsWithJobRequestRequestTypeDe
 
 Required fields:
 
-- `targets`: `List`\[`str`\]
+- `targets`: `Sequence`\[`str`\]
 - `jobId`: `str`
 
 Optional fields:
@@ -883,7 +883,7 @@ from mypy_boto3_iot.type_defs import AttributePayloadTypeDef
 
 Optional fields:
 
-- `attributes`: `Dict`\[`str`, `str`\]
+- `attributes`: `Mapping`\[`str`, `str`\]
 - `merge`: `bool`
 
 ## AuditCheckConfigurationTypeDef
@@ -1030,7 +1030,7 @@ from mypy_boto3_iot.type_defs import AuthInfoTypeDef
 
 Required fields:
 
-- `resources`: `List`\[`str`\]
+- `resources`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1099,7 +1099,7 @@ from mypy_boto3_iot.type_defs import AwsJobAbortConfigTypeDef
 Required fields:
 
 - `abortCriteriaList`:
-  `List`\[[AwsJobAbortCriteriaTypeDef](./type_defs.md#awsjobabortcriteriatypedef)\]
+  `Sequence`\[[AwsJobAbortCriteriaTypeDef](./type_defs.md#awsjobabortcriteriatypedef)\]
 
 ## AwsJobAbortCriteriaTypeDef
 
@@ -1356,7 +1356,7 @@ Optional fields:
 
 - `force`: `bool`
 - `expectedVersion`: `int`
-- `statusDetails`: `Dict`\[`str`, `str`\]
+- `statusDetails`: `Mapping`\[`str`, `str`\]
 
 ## CancelJobRequestRequestTypeDef
 
@@ -1567,9 +1567,9 @@ Required fields:
 Optional fields:
 
 - `tokenKeyName`: `str`
-- `tokenSigningPublicKeys`: `Dict`\[`str`, `str`\]
+- `tokenSigningPublicKeys`: `Mapping`\[`str`, `str`\]
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `signingDisabled`: `bool`
 
 ## CreateAuthorizerResponseTypeDef
@@ -1599,7 +1599,7 @@ Optional fields:
 
 - `billingGroupProperties`:
   [BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateBillingGroupResponseTypeDef
 
@@ -1658,7 +1658,7 @@ Required fields:
 Optional fields:
 
 - `displayName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateCustomMetricResponseTypeDef
 
@@ -1684,12 +1684,12 @@ Required fields:
 - `name`: `str`
 - `type`: `Literal['TOPIC_FILTER']` (see
   [DimensionTypeType](./literals.md#dimensiontypetype))
-- `stringValues`: `List`\[`str`\]
+- `stringValues`: `Sequence`\[`str`\]
 - `clientRequestToken`: `str`
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDimensionResponseTypeDef
 
@@ -1717,12 +1717,12 @@ Required fields:
 Optional fields:
 
 - `domainName`: `str`
-- `serverCertificateArns`: `List`\[`str`\]
+- `serverCertificateArns`: `Sequence`\[`str`\]
 - `validationCertificateArn`: `str`
 - `authorizerConfig`:
   [AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef)
 - `serviceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDomainConfigurationResponseTypeDef
 
@@ -1754,7 +1754,7 @@ Optional fields:
   [ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef)
 - `indexName`: `str`
 - `queryVersion`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDynamicThingGroupResponseTypeDef
 
@@ -1794,7 +1794,7 @@ Optional fields:
 - `queryVersion`: `str`
 - `indexName`: `str`
 - `unit`: [FleetMetricUnitType](./literals.md#fleetmetricunittype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateFleetMetricResponseTypeDef
 
@@ -1818,7 +1818,7 @@ from mypy_boto3_iot.type_defs import CreateJobRequestRequestTypeDef
 Required fields:
 
 - `jobId`: `str`
-- `targets`: `List`\[`str`\]
+- `targets`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1832,7 +1832,7 @@ Optional fields:
   [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
 - `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `namespaceId`: `str`
 - `jobTemplateArn`: `str`
 
@@ -1872,7 +1872,7 @@ Optional fields:
   [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
 - `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateJobTemplateResponseTypeDef
 
@@ -1927,7 +1927,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateMitigationActionResponseTypeDef
 
@@ -1951,15 +1951,15 @@ from mypy_boto3_iot.type_defs import CreateOTAUpdateRequestRequestTypeDef
 Required fields:
 
 - `otaUpdateId`: `str`
-- `targets`: `List`\[`str`\]
+- `targets`: `Sequence`\[`str`\]
 - `files`:
-  `List`\[[OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef)\]
+  `Sequence`\[[OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef)\]
 - `roleArn`: `str`
 
 Optional fields:
 
 - `description`: `str`
-- `protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
+- `protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `targetSelection`: [TargetSelectionType](./literals.md#targetselectiontype)
 - `awsJobExecutionsRolloutConfig`:
   [AwsJobExecutionsRolloutConfigTypeDef](./type_defs.md#awsjobexecutionsrolloutconfigtypedef)
@@ -1969,8 +1969,8 @@ Optional fields:
   [AwsJobAbortConfigTypeDef](./type_defs.md#awsjobabortconfigtypedef)
 - `awsJobTimeoutConfig`:
   [AwsJobTimeoutConfigTypeDef](./type_defs.md#awsjobtimeoutconfigtypedef)
-- `additionalParameters`: `Dict`\[`str`, `str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `additionalParameters`: `Mapping`\[`str`, `str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateOTAUpdateResponseTypeDef
 
@@ -2001,7 +2001,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePolicyResponseTypeDef
 
@@ -2091,7 +2091,7 @@ Optional fields:
 - `enabled`: `bool`
 - `preProvisioningHook`:
   [ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateProvisioningTemplateResponseTypeDef
 
@@ -2151,7 +2151,7 @@ Required fields:
 Optional fields:
 
 - `credentialDurationSeconds`: `int`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRoleAliasResponseTypeDef
 
@@ -2175,14 +2175,14 @@ from mypy_boto3_iot.type_defs import CreateScheduledAuditRequestRequestTypeDef
 Required fields:
 
 - `frequency`: [AuditFrequencyType](./literals.md#auditfrequencytype)
-- `targetCheckNames`: `List`\[`str`\]
+- `targetCheckNames`: `Sequence`\[`str`\]
 - `scheduledAuditName`: `str`
 
 Optional fields:
 
 - `dayOfMonth`: `str`
 - `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateScheduledAuditResponseTypeDef
 
@@ -2209,14 +2209,14 @@ Required fields:
 Optional fields:
 
 - `securityProfileDescription`: `str`
-- `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
-- `alertTargets`: `Dict`\[`Literal['SNS']` (see
+- `behaviors`: `Sequence`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
+- `alertTargets`: `Mapping`\[`Literal['SNS']` (see
   [AlertTargetTypeType](./literals.md#alerttargettypetype)),
   [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
-- `additionalMetricsToRetain`: `List`\[`str`\]
+- `additionalMetricsToRetain`: `Sequence`\[`str`\]
 - `additionalMetricsToRetainV2`:
-  `List`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSecurityProfileResponseTypeDef
 
@@ -2240,13 +2240,13 @@ from mypy_boto3_iot.type_defs import CreateStreamRequestRequestTypeDef
 Required fields:
 
 - `streamId`: `str`
-- `files`: `List`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
+- `files`: `Sequence`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
 - `roleArn`: `str`
 
 Optional fields:
 
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateStreamResponseTypeDef
 
@@ -2278,7 +2278,7 @@ Optional fields:
 - `parentGroupName`: `str`
 - `thingGroupProperties`:
   [ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateThingGroupResponseTypeDef
 
@@ -2339,7 +2339,7 @@ Optional fields:
 
 - `thingTypeProperties`:
   [ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateThingTypeResponseTypeDef
 
@@ -4138,7 +4138,7 @@ Optional fields:
 - `indexName`: `str`
 - `aggregationField`: `str`
 - `queryVersion`: `str`
-- `percents`: `List`\[`float`\]
+- `percents`: `Sequence`\[`float`\]
 
 ## GetPercentilesResponseTypeDef
 
@@ -4347,7 +4347,7 @@ Optional fields:
 
 - `confirmationUrl`: `str`
 - `headers`:
-  `List`\[[HttpActionHeaderTypeDef](./type_defs.md#httpactionheadertypedef)\]
+  `Sequence`\[[HttpActionHeaderTypeDef](./type_defs.md#httpactionheadertypedef)\]
 - `auth`: [HttpAuthorizationTypeDef](./type_defs.md#httpauthorizationtypedef)
 
 ## HttpAuthorizationTypeDef
@@ -4369,7 +4369,7 @@ from mypy_boto3_iot.type_defs import HttpContextTypeDef
 
 Optional fields:
 
-- `headers`: `Dict`\[`str`, `str`\]
+- `headers`: `Mapping`\[`str`, `str`\]
 - `queryString`: `str`
 
 ## HttpUrlDestinationConfigurationTypeDef
@@ -4450,7 +4450,7 @@ from mypy_boto3_iot.type_defs import IotSiteWiseActionTypeDef
 Required fields:
 
 - `putAssetPropertyValueEntries`:
-  `List`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
+  `Sequence`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
 - `roleArn`: `str`
 
 ## JobExecutionStatusDetailsTypeDef
@@ -4623,7 +4623,7 @@ Required fields:
 
 - `destinationArn`: `str`
 - `topic`: `str`
-- `clientProperties`: `Dict`\[`str`, `str`\]
+- `clientProperties`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
@@ -6254,11 +6254,11 @@ from mypy_boto3_iot.type_defs import MetricValueTypeDef
 Optional fields:
 
 - `count`: `int`
-- `cidrs`: `List`\[`str`\]
-- `ports`: `List`\[`int`\]
+- `cidrs`: `Sequence`\[`str`\]
+- `ports`: `Sequence`\[`int`\]
 - `number`: `float`
-- `numbers`: `List`\[`float`\]
-- `strings`: `List`\[`str`\]
+- `numbers`: `Sequence`\[`float`\]
+- `strings`: `Sequence`\[`str`\]
 
 ## MitigationActionIdentifierTypeDef
 
@@ -6345,7 +6345,7 @@ Optional fields:
 - `fileVersion`: `str`
 - `fileLocation`: [FileLocationTypeDef](./type_defs.md#filelocationtypedef)
 - `codeSigning`: [CodeSigningTypeDef](./type_defs.md#codesigningtypedef)
-- `attributes`: `Dict`\[`str`, `str`\]
+- `attributes`: `Mapping`\[`str`, `str`\]
 
 ## OTAUpdateInfoTypeDef
 
@@ -6544,7 +6544,7 @@ from mypy_boto3_iot.type_defs import PutAssetPropertyValueEntryTypeDef
 Required fields:
 
 - `propertyValues`:
-  `List`\[[AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)\]
+  `Sequence`\[[AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)\]
 
 Optional fields:
 
@@ -6591,7 +6591,7 @@ Optional fields:
 - `allowAutoRegistration`: `bool`
 - `registrationConfig`:
   [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## RegisterCACertificateResponseTypeDef
 
@@ -6674,7 +6674,7 @@ Required fields:
 
 Optional fields:
 
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 
 ## RegisterThingResponseTypeDef
 
@@ -7117,7 +7117,7 @@ Required fields:
 - `taskId`: `str`
 - `target`:
   [AuditMitigationActionsTaskTargetTypeDef](./type_defs.md#auditmitigationactionstasktargettypedef)
-- `auditCheckToActionsMapping`: `Dict`\[`str`, `List`\[`str`\]\]
+- `auditCheckToActionsMapping`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `clientRequestToken`: `str`
 
 ## StartAuditMitigationActionsTaskResponseTypeDef
@@ -7143,7 +7143,7 @@ Required fields:
 - `taskId`: `str`
 - `target`:
   [DetectMitigationActionsTaskTargetTypeDef](./type_defs.md#detectmitigationactionstasktargettypedef)
-- `actions`: `List`\[`str`\]
+- `actions`: `Sequence`\[`str`\]
 - `clientRequestToken`: `str`
 
 Optional fields:
@@ -7173,7 +7173,7 @@ from mypy_boto3_iot.type_defs import StartOnDemandAuditTaskRequestRequestTypeDef
 
 Required fields:
 
-- `targetCheckNames`: `List`\[`str`\]
+- `targetCheckNames`: `Sequence`\[`str`\]
 
 ## StartOnDemandAuditTaskResponseTypeDef
 
@@ -7338,7 +7338,7 @@ from mypy_boto3_iot.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -7402,15 +7402,15 @@ from mypy_boto3_iot.type_defs import TestAuthorizationRequestRequestTypeDef
 
 Required fields:
 
-- `authInfos`: `List`\[[AuthInfoTypeDef](./type_defs.md#authinfotypedef)\]
+- `authInfos`: `Sequence`\[[AuthInfoTypeDef](./type_defs.md#authinfotypedef)\]
 
 Optional fields:
 
 - `principal`: `str`
 - `cognitoIdentityPoolId`: `str`
 - `clientId`: `str`
-- `policyNamesToAdd`: `List`\[`str`\]
-- `policyNamesToSkip`: `List`\[`str`\]
+- `policyNamesToAdd`: `Sequence`\[`str`\]
+- `policyNamesToSkip`: `Sequence`\[`str`\]
 
 ## TestAuthorizationResponseTypeDef
 
@@ -7611,7 +7611,7 @@ from mypy_boto3_iot.type_defs import ThingTypePropertiesTypeDef
 Optional fields:
 
 - `thingTypeDescription`: `str`
-- `searchableAttributes`: `List`\[`str`\]
+- `searchableAttributes`: `Sequence`\[`str`\]
 
 ## TimeoutConfigTypeDef
 
@@ -7635,7 +7635,7 @@ Required fields:
 - `databaseName`: `str`
 - `tableName`: `str`
 - `dimensions`:
-  `List`\[[TimestreamDimensionTypeDef](./type_defs.md#timestreamdimensiontypedef)\]
+  `Sequence`\[[TimestreamDimensionTypeDef](./type_defs.md#timestreamdimensiontypedef)\]
 
 Optional fields:
 
@@ -7748,7 +7748,7 @@ from mypy_boto3_iot.type_defs import TopicRulePayloadTypeDef
 Required fields:
 
 - `sql`: `str`
-- `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 Optional fields:
 
@@ -7824,7 +7824,7 @@ from mypy_boto3_iot.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAccountAuditConfigurationRequestRequestTypeDef
 
@@ -7835,10 +7835,10 @@ from mypy_boto3_iot.type_defs import UpdateAccountAuditConfigurationRequestReque
 Optional fields:
 
 - `roleArn`: `str`
-- `auditNotificationTargetConfigurations`: `Dict`\[`Literal['SNS']` (see
+- `auditNotificationTargetConfigurations`: `Mapping`\[`Literal['SNS']` (see
   [AuditNotificationTypeType](./literals.md#auditnotificationtypetype)),
   [AuditNotificationTargetTypeDef](./type_defs.md#auditnotificationtargettypedef)\]
-- `auditCheckConfigurations`: `Dict`\[`str`,
+- `auditCheckConfigurations`: `Mapping`\[`str`,
   [AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef)\]
 
 ## UpdateAuditSuppressionRequestRequestTypeDef
@@ -7873,7 +7873,7 @@ Optional fields:
 
 - `authorizerFunctionArn`: `str`
 - `tokenKeyName`: `str`
-- `tokenSigningPublicKeys`: `Dict`\[`str`, `str`\]
+- `tokenSigningPublicKeys`: `Mapping`\[`str`, `str`\]
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 
 ## UpdateAuthorizerResponseTypeDef
@@ -8006,7 +8006,7 @@ from mypy_boto3_iot.type_defs import UpdateDimensionRequestRequestTypeDef
 Required fields:
 
 - `name`: `str`
-- `stringValues`: `List`\[`str`\]
+- `stringValues`: `Sequence`\[`str`\]
 
 ## UpdateDimensionResponseTypeDef
 
@@ -8096,7 +8096,8 @@ from mypy_boto3_iot.type_defs import UpdateEventConfigurationsRequestRequestType
 
 Optional fields:
 
-- `eventConfigurations`: `Dict`\[[EventTypeType](./literals.md#eventtypetype),
+- `eventConfigurations`:
+  `Mapping`\[[EventTypeType](./literals.md#eventtypetype),
   [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 
 ## UpdateFleetMetricRequestRequestTypeDef
@@ -8248,7 +8249,7 @@ Optional fields:
 - `frequency`: [AuditFrequencyType](./literals.md#auditfrequencytype)
 - `dayOfMonth`: `str`
 - `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
-- `targetCheckNames`: `List`\[`str`\]
+- `targetCheckNames`: `Sequence`\[`str`\]
 
 ## UpdateScheduledAuditResponseTypeDef
 
@@ -8275,13 +8276,13 @@ Required fields:
 Optional fields:
 
 - `securityProfileDescription`: `str`
-- `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
-- `alertTargets`: `Dict`\[`Literal['SNS']` (see
+- `behaviors`: `Sequence`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
+- `alertTargets`: `Mapping`\[`Literal['SNS']` (see
   [AlertTargetTypeType](./literals.md#alerttargettypetype)),
   [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
-- `additionalMetricsToRetain`: `List`\[`str`\]
+- `additionalMetricsToRetain`: `Sequence`\[`str`\]
 - `additionalMetricsToRetainV2`:
-  `List`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
+  `Sequence`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
 - `deleteBehaviors`: `bool`
 - `deleteAlertTargets`: `bool`
 - `deleteAdditionalMetricsToRetain`: `bool`
@@ -8324,7 +8325,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `files`: `List`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
+- `files`: `Sequence`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
 - `roleArn`: `str`
 
 ## UpdateStreamResponseTypeDef
@@ -8379,8 +8380,8 @@ from mypy_boto3_iot.type_defs import UpdateThingGroupsForThingRequestRequestType
 Optional fields:
 
 - `thingName`: `str`
-- `thingGroupsToAdd`: `List`\[`str`\]
-- `thingGroupsToRemove`: `List`\[`str`\]
+- `thingGroupsToAdd`: `Sequence`\[`str`\]
+- `thingGroupsToRemove`: `Sequence`\[`str`\]
 - `overrideDynamicGroups`: `bool`
 
 ## UpdateThingRequestRequestTypeDef
@@ -8421,7 +8422,7 @@ from mypy_boto3_iot.type_defs import ValidateSecurityProfileBehaviorsRequestRequ
 
 Required fields:
 
-- `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
+- `behaviors`: `Sequence`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
 
 ## ValidateSecurityProfileBehaviorsResponseTypeDef
 
@@ -8495,13 +8496,13 @@ from mypy_boto3_iot.type_defs import VpcDestinationConfigurationTypeDef
 
 Required fields:
 
-- `subnetIds`: `List`\[`str`\]
+- `subnetIds`: `Sequence`\[`str`\]
 - `vpcId`: `str`
 - `roleArn`: `str`
 
 Optional fields:
 
-- `securityGroups`: `List`\[`str`\]
+- `securityGroups`: `Sequence`\[`str`\]
 
 ## VpcDestinationPropertiesTypeDef
 

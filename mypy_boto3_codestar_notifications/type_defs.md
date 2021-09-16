@@ -50,15 +50,15 @@ from mypy_boto3_codestar_notifications.type_defs import CreateNotificationRuleRe
 Required fields:
 
 - `Name`: `str`
-- `EventTypeIds`: `List`\[`str`\]
+- `EventTypeIds`: `Sequence`\[`str`\]
 - `Resource`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `DetailType`: [DetailTypeType](./literals.md#detailtypetype)
 
 Optional fields:
 
 - `ClientRequestToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Status`:
   [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
 
@@ -179,7 +179,7 @@ from mypy_boto3_codestar_notifications.type_defs import ListEventTypesRequestReq
 Optional fields:
 
 - `Filters`:
-  `List`\[[ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef)\]
+  `Sequence`\[[ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -218,7 +218,7 @@ from mypy_boto3_codestar_notifications.type_defs import ListNotificationRulesReq
 Optional fields:
 
 - `Filters`:
-  `List`\[[ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef)\]
+  `Sequence`\[[ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -278,7 +278,7 @@ from mypy_boto3_codestar_notifications.type_defs import ListTargetsRequestReques
 Optional fields:
 
 - `Filters`:
-  `List`\[[ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)\]
+  `Sequence`\[[ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -369,7 +369,7 @@ from mypy_boto3_codestar_notifications.type_defs import TagResourceRequestReques
 Required fields:
 
 - `Arn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TagResourceResultTypeDef
 
@@ -438,7 +438,7 @@ from mypy_boto3_codestar_notifications.type_defs import UntagResourceRequestRequ
 Required fields:
 
 - `Arn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateNotificationRuleRequestRequestTypeDef
 
@@ -455,6 +455,6 @@ Optional fields:
 - `Name`: `str`
 - `Status`:
   [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
-- `EventTypeIds`: `List`\[`str`\]
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `EventTypeIds`: `Sequence`\[`str`\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `DetailType`: [DetailTypeType](./literals.md#detailtypetype)

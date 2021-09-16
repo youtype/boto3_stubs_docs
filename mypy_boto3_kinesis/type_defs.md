@@ -90,7 +90,7 @@ from mypy_boto3_kinesis.type_defs import AddTagsToStreamInputRequestTypeDef
 Required fields:
 
 - `StreamName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## ChildShardTypeDef
 
@@ -278,7 +278,7 @@ Required fields:
 
 - `StreamName`: `str`
 - `ShardLevelMetrics`:
-  `List`\[[MetricsNameType](./literals.md#metricsnametype)\]
+  `Sequence`\[[MetricsNameType](./literals.md#metricsnametype)\]
 
 ## EnableEnhancedMonitoringInputRequestTypeDef
 
@@ -290,7 +290,7 @@ Required fields:
 
 - `StreamName`: `str`
 - `ShardLevelMetrics`:
-  `List`\[[MetricsNameType](./literals.md#metricsnametype)\]
+  `Sequence`\[[MetricsNameType](./literals.md#metricsnametype)\]
 
 ## EnhancedMetricsTypeDef
 
@@ -644,7 +644,7 @@ from mypy_boto3_kinesis.type_defs import PutRecordsInputRequestTypeDef
 Required fields:
 
 - `Records`:
-  `List`\[[PutRecordsRequestEntryTypeDef](./type_defs.md#putrecordsrequestentrytypedef)\]
+  `Sequence`\[[PutRecordsRequestEntryTypeDef](./type_defs.md#putrecordsrequestentrytypedef)\]
 - `StreamName`: `str`
 
 ## PutRecordsOutputTypeDef
@@ -739,7 +739,7 @@ from mypy_boto3_kinesis.type_defs import RemoveTagsFromStreamInputRequestTypeDef
 Required fields:
 
 - `StreamName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ResourceInUseExceptionTypeDef
 

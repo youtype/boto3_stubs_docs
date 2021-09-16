@@ -210,13 +210,13 @@ Required fields:
 
 - `ChannelName`: `str`
 - `Outputs`:
-  `List`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
+  `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
 - `PlaybackMode`: [PlaybackModeType](./literals.md#playbackmodetype)
 
 Optional fields:
 
 - `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateChannelResponseTypeDef
 
@@ -256,7 +256,7 @@ Required fields:
 
 Optional fields:
 
-- `AdBreaks`: `List`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
+- `AdBreaks`: `Sequence`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
 
 ## CreateProgramResponseTypeDef
 
@@ -295,7 +295,7 @@ Optional fields:
   [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
 - `DefaultSegmentDeliveryConfiguration`:
   [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateSourceLocationResponseTypeDef
 
@@ -328,13 +328,13 @@ from mypy_boto3_mediatailor.type_defs import CreateVodSourceRequestRequestTypeDe
 Required fields:
 
 - `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
+  `Sequence`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateVodSourceResponseTypeDef
 
@@ -971,7 +971,7 @@ Optional fields:
 - `Bumper`: [BumperTypeDef](./type_defs.md#bumpertypedef)
 - `CdnConfiguration`:
   [CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef)
-- `ConfigurationAliases`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `ConfigurationAliases`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
 - `DashConfiguration`:
   [DashConfigurationForPutTypeDef](./type_defs.md#dashconfigurationforputtypedef)
 - `LivePreRollConfiguration`:
@@ -981,7 +981,7 @@ Optional fields:
 - `Name`: `str`
 - `PersonalizationThresholdSeconds`: `int`
 - `SlateAdUrl`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `TranscodeProfileName`: `str`
 - `VideoContentSourceUrl`: `str`
 
@@ -1205,7 +1205,7 @@ from mypy_boto3_mediatailor.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TransitionTypeDef
 
@@ -1233,7 +1233,7 @@ from mypy_boto3_mediatailor.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateChannelRequestRequestTypeDef
 
@@ -1245,7 +1245,7 @@ Required fields:
 
 - `ChannelName`: `str`
 - `Outputs`:
-  `List`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
+  `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
 
 ## UpdateChannelResponseTypeDef
 
@@ -1318,7 +1318,7 @@ from mypy_boto3_mediatailor.type_defs import UpdateVodSourceRequestRequestTypeDe
 Required fields:
 
 - `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
+  `Sequence`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
 - `SourceLocationName`: `str`
 - `VodSourceName`: `str`
 

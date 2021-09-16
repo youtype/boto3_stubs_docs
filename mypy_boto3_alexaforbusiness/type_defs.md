@@ -470,9 +470,9 @@ from mypy_boto3_alexaforbusiness.type_defs import ContentTypeDef
 
 Optional fields:
 
-- `TextList`: `List`\[[TextTypeDef](./type_defs.md#texttypedef)\]
-- `SsmlList`: `List`\[[SsmlTypeDef](./type_defs.md#ssmltypedef)\]
-- `AudioList`: `List`\[[AudioTypeDef](./type_defs.md#audiotypedef)\]
+- `TextList`: `Sequence`\[[TextTypeDef](./type_defs.md#texttypedef)\]
+- `SsmlList`: `Sequence`\[[SsmlTypeDef](./type_defs.md#ssmltypedef)\]
+- `AudioList`: `Sequence`\[[AudioTypeDef](./type_defs.md#audiotypedef)\]
 
 ## CreateAddressBookRequestRequestTypeDef
 
@@ -488,7 +488,7 @@ Optional fields:
 
 - `Description`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAddressBookResponseTypeDef
 
@@ -522,7 +522,7 @@ Optional fields:
 - `Recurrence`:
   [BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef)
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateBusinessReportScheduleResponseTypeDef
 
@@ -555,7 +555,7 @@ Optional fields:
 - `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
 - `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateConferenceProviderResponseTypeDef
 
@@ -585,11 +585,11 @@ Optional fields:
 - `LastName`: `str`
 - `PhoneNumber`: `str`
 - `PhoneNumbers`:
-  `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
+  `Sequence`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
 - `SipAddresses`:
-  `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
+  `Sequence`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateContactResponseTypeDef
 
@@ -611,7 +611,7 @@ from mypy_boto3_alexaforbusiness.type_defs import CreateEndOfMeetingReminderType
 
 Required fields:
 
-- `ReminderAtMinutes`: `List`\[`int`\]
+- `ReminderAtMinutes`: `Sequence`\[`int`\]
 - `ReminderType`:
   [EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype)
 - `Enabled`: `bool`
@@ -630,7 +630,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateGatewayGroupResponseTypeDef
 
@@ -693,8 +693,8 @@ Optional fields:
 - `CurrentPassword`: `str`
 - `NextPassword`: `str`
 - `CertificateAuthorityArn`: `str`
-- `TrustAnchors`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TrustAnchors`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateNetworkProfileResponseTypeDef
 
@@ -733,7 +733,7 @@ Optional fields:
 - `DataRetentionOptIn`: `bool`
 - `MeetingRoomConfiguration`:
   [CreateMeetingRoomConfigurationTypeDef](./type_defs.md#createmeetingroomconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateProfileResponseTypeDef
 
@@ -774,7 +774,7 @@ Optional fields:
 - `ProfileArn`: `str`
 - `ProviderCalendarId`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRoomResponseTypeDef
 
@@ -802,7 +802,7 @@ Optional fields:
 
 - `Description`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSkillGroupResponseTypeDef
 
@@ -832,7 +832,7 @@ Optional fields:
 - `LastName`: `str`
 - `Email`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateUserResponseTypeDef
 
@@ -1186,7 +1186,7 @@ from mypy_boto3_alexaforbusiness.type_defs import FilterTypeDef
 Required fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## ForgetSmartHomeAppliancesRequestRequestTypeDef
 
@@ -1987,7 +1987,7 @@ Required fields:
 Optional fields:
 
 - `ContactEmail`: `str`
-- `PrivateSkillIds`: `List`\[`str`\]
+- `PrivateSkillIds`: `Sequence`\[`str`\]
 
 ## PutRoomSkillParameterRequestRequestTypeDef
 
@@ -2013,7 +2013,7 @@ from mypy_boto3_alexaforbusiness.type_defs import PutSkillAuthorizationRequestRe
 
 Required fields:
 
-- `AuthorizationResult`: `Dict`\[`str`, `str`\]
+- `AuthorizationResult`: `Mapping`\[`str`, `str`\]
 - `SkillId`: `str`
 
 Optional fields:
@@ -2037,7 +2037,7 @@ Optional fields:
 
 - `DeviceSerialNumber`: `str`
 - `RoomArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## RegisterAVSDeviceResponseTypeDef
 
@@ -2171,8 +2171,8 @@ from mypy_boto3_alexaforbusiness.type_defs import SearchAddressBooksRequestReque
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2199,8 +2199,8 @@ from mypy_boto3_alexaforbusiness.type_defs import SearchContactsRequestRequestTy
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2228,8 +2228,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 ## SearchDevicesResponseTypeDef
 
@@ -2255,8 +2255,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 ## SearchNetworkProfilesResponseTypeDef
 
@@ -2283,8 +2283,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 ## SearchProfilesResponseTypeDef
 
@@ -2310,8 +2310,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 ## SearchRoomsResponseTypeDef
 
@@ -2337,8 +2337,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 ## SearchSkillGroupsResponseTypeDef
 
@@ -2365,8 +2365,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `List`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 
 ## SearchUsersResponseTypeDef
 
@@ -2390,7 +2390,7 @@ from mypy_boto3_alexaforbusiness.type_defs import SendAnnouncementRequestRequest
 
 Required fields:
 
-- `RoomFilters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `RoomFilters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Content`: [ContentTypeDef](./type_defs.md#contenttypedef)
 - `ClientRequestToken`: `str`
 
@@ -2546,7 +2546,7 @@ from mypy_boto3_alexaforbusiness.type_defs import StartDeviceSyncRequestRequestT
 
 Required fields:
 
-- `Features`: `List`\[[FeatureType](./literals.md#featuretype)\]
+- `Features`: `Sequence`\[[FeatureType](./literals.md#featuretype)\]
 
 Optional fields:
 
@@ -2572,7 +2572,7 @@ from mypy_boto3_alexaforbusiness.type_defs import TagResourceRequestRequestTypeD
 Required fields:
 
 - `Arn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -2605,7 +2605,7 @@ from mypy_boto3_alexaforbusiness.type_defs import UntagResourceRequestRequestTyp
 Required fields:
 
 - `Arn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAddressBookRequestRequestTypeDef
 
@@ -2677,9 +2677,9 @@ Optional fields:
 - `LastName`: `str`
 - `PhoneNumber`: `str`
 - `PhoneNumbers`:
-  `List`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
+  `Sequence`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
 - `SipAddresses`:
-  `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
+  `Sequence`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 
 ## UpdateDeviceRequestRequestTypeDef
 
@@ -2700,7 +2700,7 @@ from mypy_boto3_alexaforbusiness.type_defs import UpdateEndOfMeetingReminderType
 
 Optional fields:
 
-- `ReminderAtMinutes`: `List`\[`int`\]
+- `ReminderAtMinutes`: `Sequence`\[`int`\]
 - `ReminderType`:
   [EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype)
 - `Enabled`: `bool`
@@ -2780,7 +2780,7 @@ Optional fields:
 - `CurrentPassword`: `str`
 - `NextPassword`: `str`
 - `CertificateAuthorityArn`: `str`
-- `TrustAnchors`: `List`\[`str`\]
+- `TrustAnchors`: `Sequence`\[`str`\]
 
 ## UpdateProfileRequestRequestTypeDef
 

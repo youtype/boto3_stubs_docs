@@ -138,7 +138,7 @@ method.
 Boto3 documentation:
 [CloudWatch.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## Alarm
 
@@ -213,7 +213,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
+- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `HistoryItemType`: [HistoryItemTypeType](./literals.md#historyitemtypetype)
 - `StartDate`: `Union`\[`datetime`, `str`\]
 - `EndDate`: `Union`\[`datetime`, `str`\]
@@ -252,7 +252,7 @@ method.
 Boto3 documentation:
 [CloudWatch.Alarm.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Alarm.load method
 
@@ -350,7 +350,7 @@ method.
 Boto3 documentation:
 [CloudWatch.Metric.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Metric.get_statistics method
 
@@ -369,9 +369,10 @@ Keyword-only arguments:
 - `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `Period`: `int` *(required)*
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `Statistics`: `List`\[[StatisticType](./literals.md#statistictype)\]
-- `ExtendedStatistics`: `List`\[`str`\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Statistics`: `Sequence`\[[StatisticType](./literals.md#statistictype)\]
+- `ExtendedStatistics`: `Sequence`\[`str`\]
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 
 Returns
@@ -408,12 +409,13 @@ Keyword-only arguments:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype) *(required)*
 - `AlarmDescription`: `str`
 - `ActionsEnabled`: `bool`
-- `OKActions`: `List`\[`str`\]
-- `AlarmActions`: `List`\[`str`\]
-- `InsufficientDataActions`: `List`\[`str`\]
+- `OKActions`: `Sequence`\[`str`\]
+- `AlarmActions`: `Sequence`\[`str`\]
+- `InsufficientDataActions`: `Sequence`\[`str`\]
 - `Statistic`: [StatisticType](./literals.md#statistictype)
 - `ExtendedStatistic`: `str`
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `Period`: `int`
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 - `DatapointsToAlarm`: `int`
@@ -421,8 +423,8 @@ Keyword-only arguments:
 - `TreatMissingData`: `str`
 - `EvaluateLowSampleCountPercentile`: `str`
 - `Metrics`:
-  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ThresholdMetricId`: `str`
 
 Returns [Alarm](#alarm).

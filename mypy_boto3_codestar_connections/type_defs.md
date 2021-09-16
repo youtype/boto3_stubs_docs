@@ -62,7 +62,7 @@ Required fields:
 Optional fields:
 
 - `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `HostArn`: `str`
 
 ## CreateConnectionOutputTypeDef
@@ -94,7 +94,7 @@ Optional fields:
 
 - `VpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateHostOutputTypeDef
 
@@ -291,7 +291,7 @@ from mypy_boto3_codestar_connections.type_defs import TagResourceInputRequestTyp
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -313,7 +313,7 @@ from mypy_boto3_codestar_connections.type_defs import UntagResourceInputRequestT
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateHostInputRequestTypeDef
 
@@ -340,8 +340,8 @@ from mypy_boto3_codestar_connections.type_defs import VpcConfigurationTypeDef
 Required fields:
 
 - `VpcId`: `str`
-- `SubnetIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 Optional fields:
 

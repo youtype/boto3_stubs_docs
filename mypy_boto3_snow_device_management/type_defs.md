@@ -94,8 +94,8 @@ from mypy_boto3_snow_device_management.type_defs import CommandTypeDef
 
 Optional fields:
 
-- `reboot`: `Dict`\[`str`, `Any`\]
-- `unlock`: `Dict`\[`str`, `Any`\]
+- `reboot`: `Mapping`\[`str`, `Any`\]
+- `unlock`: `Mapping`\[`str`, `Any`\]
 
 ## CpuOptionsTypeDef
 
@@ -117,13 +117,13 @@ from mypy_boto3_snow_device_management.type_defs import CreateTaskInputRequestTy
 Required fields:
 
 - `command`: [CommandTypeDef](./type_defs.md#commandtypedef)
-- `targets`: `List`\[`str`\]
+- `targets`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `clientToken`: `str`
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateTaskOutputTypeDef
 
@@ -146,7 +146,7 @@ from mypy_boto3_snow_device_management.type_defs import DescribeDeviceEc2InputRe
 
 Required fields:
 
-- `instanceIds`: `List`\[`str`\]
+- `instanceIds`: `Sequence`\[`str`\]
 - `managedDeviceId`: `str`
 
 ## DescribeDeviceEc2OutputTypeDef
@@ -576,7 +576,7 @@ from mypy_boto3_snow_device_management.type_defs import TagResourceInputRequestT
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TaskSummaryTypeDef
 
@@ -603,4 +603,4 @@ from mypy_boto3_snow_device_management.type_defs import UntagResourceInputReques
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]

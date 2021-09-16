@@ -108,7 +108,7 @@ Keyword-only arguments:
 
 - `OutpostIdentifier`: `str` *(required)*
 - `LineItems`:
-  `List`\[[LineItemRequestTypeDef](./type_defs.md#lineitemrequesttypedef)\]
+  `Sequence`\[[LineItemRequestTypeDef](./type_defs.md#lineitemrequesttypedef)\]
   *(required)*
 - `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
   *(required)*
@@ -136,7 +136,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateOutpostOutputTypeDef](./type_defs.md#createoutpostoutputtypedef).
@@ -189,7 +189,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -251,9 +251,9 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `LifeCycleStatusFilter`: `List`\[`str`\]
-- `AvailabilityZoneFilter`: `List`\[`str`\]
-- `AvailabilityZoneIdFilter`: `List`\[`str`\]
+- `LifeCycleStatusFilter`: `Sequence`\[`str`\]
+- `AvailabilityZoneFilter`: `Sequence`\[`str`\]
+- `AvailabilityZoneIdFilter`: `Sequence`\[`str`\]
 
 Returns [ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef).
 
@@ -310,7 +310,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -329,6 +329,6 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

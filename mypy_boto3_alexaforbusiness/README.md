@@ -227,6 +227,7 @@ from mypy_boto3_alexaforbusiness.literals import BusinessReportFailureCodeType, 
 - [SortValueType](./literals.md#sortvaluetype)
 - [TemperatureUnitType](./literals.md#temperatureunittype)
 - [WakeWordType](./literals.md#wakewordtype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -86,7 +86,7 @@ Boto3 documentation:
 
 Arguments for `ListClustersPaginator.paginate` method:
 
-- `include`: `List`\[`str`\]
+- `include`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

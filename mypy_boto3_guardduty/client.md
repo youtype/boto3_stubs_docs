@@ -156,7 +156,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `FindingIds`: `List`\[`str`\] *(required)*
+- `FindingIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -195,7 +195,7 @@ Keyword-only arguments:
   [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
 - `DataSources`:
   [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDetectorResponseTypeDef](./type_defs.md#createdetectorresponsetypedef).
@@ -222,7 +222,7 @@ Keyword-only arguments:
 - `Action`: [FilterActionType](./literals.md#filteractiontype)
 - `Rank`: `int`
 - `ClientToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef).
@@ -248,7 +248,7 @@ Keyword-only arguments:
 - `Location`: `str` *(required)*
 - `Activate`: `bool` *(required)*
 - `ClientToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
@@ -269,7 +269,7 @@ Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
 - `AccountDetails`:
-  `List`\[[AccountDetailTypeDef](./type_defs.md#accountdetailtypedef)\]
+  `Sequence`\[[AccountDetailTypeDef](./type_defs.md#accountdetailtypedef)\]
   *(required)*
 
 Returns
@@ -316,7 +316,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `FindingTypes`: `List`\[`str`\]
+- `FindingTypes`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -342,7 +342,7 @@ Keyword-only arguments:
 - `Location`: `str` *(required)*
 - `Activate`: `bool` *(required)*
 - `ClientToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateThreatIntelSetResponseTypeDef](./type_defs.md#createthreatintelsetresponsetypedef).
@@ -362,7 +362,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
@@ -419,7 +419,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
@@ -459,7 +459,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
@@ -603,7 +603,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DisassociateMembersResponseTypeDef](./type_defs.md#disassociatemembersresponsetypedef).
@@ -640,7 +640,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -699,7 +699,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `FindingIds`: `List`\[`str`\] *(required)*
+- `FindingIds`: `Sequence`\[`str`\] *(required)*
 - `SortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
 Returns
@@ -721,7 +721,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `FindingStatisticTypes`: `List`\[`Literal['COUNT_BY_SEVERITY']` (see
+- `FindingStatisticTypes`: `Sequence`\[`Literal['COUNT_BY_SEVERITY']` (see
   [FindingStatisticTypeType](./literals.md#findingstatistictypetype))\]
   *(required)*
 - `FindingCriteria`:
@@ -797,7 +797,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [GetMemberDetectorsResponseTypeDef](./type_defs.md#getmemberdetectorsresponsetypedef).
@@ -818,7 +818,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 
@@ -887,7 +887,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 - `DisableEmailNotification`: `bool`
 - `Message`: `str`
 
@@ -1124,7 +1124,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [StartMonitoringMembersResponseTypeDef](./type_defs.md#startmonitoringmembersresponsetypedef).
@@ -1145,7 +1145,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [StopMonitoringMembersResponseTypeDef](./type_defs.md#stopmonitoringmembersresponsetypedef).
@@ -1165,7 +1165,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1184,7 +1184,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `FindingIds`: `List`\[`str`\] *(required)*
+- `FindingIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1203,7 +1203,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1271,7 +1271,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `FindingIds`: `List`\[`str`\] *(required)*
+- `FindingIds`: `Sequence`\[`str`\] *(required)*
 - `Feedback`: [FeedbackType](./literals.md#feedbacktype) *(required)*
 - `Comments`: `str`
 
@@ -1315,7 +1315,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DetectorId`: `str` *(required)*
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 - `DataSources`:
   [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
 

@@ -143,7 +143,7 @@ Keyword-only arguments:
 - `SourceArn`: `str` *(required)*
 - `SourceRoleArn`: `str` *(required)*
 - `ResourceId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAssetResponseTypeDef](./type_defs.md#createassetresponsetypedef).
@@ -169,7 +169,7 @@ Keyword-only arguments:
 - `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
 - `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
 - `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreatePackagingConfigurationResponseTypeDef](./type_defs.md#createpackagingconfigurationresponsetypedef).
@@ -193,7 +193,7 @@ Keyword-only arguments:
 - `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
 - `EgressAccessLogs`:
   [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreatePackagingGroupResponseTypeDef](./type_defs.md#createpackaginggroupresponsetypedef).
@@ -326,7 +326,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -430,7 +430,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -447,7 +447,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_packaging_group
 

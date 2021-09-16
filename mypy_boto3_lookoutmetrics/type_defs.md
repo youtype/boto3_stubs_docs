@@ -313,7 +313,7 @@ Required fields:
 Optional fields:
 
 - `AlertDescription`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAlertResponseTypeDef
 
@@ -343,7 +343,7 @@ Optional fields:
 
 - `AnomalyDetectorDescription`: `str`
 - `KmsKeyArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAnomalyDetectorResponseTypeDef
 
@@ -367,7 +367,7 @@ Required fields:
 
 - `AnomalyDetectorArn`: `str`
 - `MetricSetName`: `str`
-- `MetricList`: `List`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
+- `MetricList`: `Sequence`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
 - `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
 
 Optional fields:
@@ -376,10 +376,10 @@ Optional fields:
 - `Offset`: `int`
 - `TimestampColumn`:
   [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
-- `DimensionList`: `List`\[`str`\]
+- `DimensionList`: `Sequence`\[`str`\]
 - `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
 - `Timezone`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateMetricSetResponseTypeDef
 
@@ -406,7 +406,7 @@ Optional fields:
 - `Charset`: `str`
 - `ContainsHeader`: `bool`
 - `Delimiter`: `str`
-- `HeaderList`: `List`\[`str`\]
+- `HeaderList`: `Sequence`\[`str`\]
 - `QuoteSymbol`: `str`
 
 ## DeleteAlertRequestRequestTypeDef
@@ -1022,8 +1022,8 @@ Required fields:
 
 Optional fields:
 
-- `TemplatedPathList`: `List`\[`str`\]
-- `HistoricalDataPathList`: `List`\[`str`\]
+- `TemplatedPathList`: `Sequence`\[`str`\]
+- `HistoricalDataPathList`: `Sequence`\[`str`\]
 - `FileFormatDescriptor`:
   [FileFormatDescriptorTypeDef](./type_defs.md#fileformatdescriptortypedef)
 
@@ -1052,8 +1052,8 @@ Required fields:
 
 Optional fields:
 
-- `TemplatedPathList`: `List`\[`str`\]
-- `HistoricalDataPathList`: `List`\[`str`\]
+- `TemplatedPathList`: `Sequence`\[`str`\]
+- `HistoricalDataPathList`: `Sequence`\[`str`\]
 
 ## TagResourceRequestRequestTypeDef
 
@@ -1064,7 +1064,7 @@ from mypy_boto3_lookoutmetrics.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TimeSeriesFeedbackTypeDef
 
@@ -1110,7 +1110,7 @@ from mypy_boto3_lookoutmetrics.type_defs import UntagResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAnomalyDetectorRequestRequestTypeDef
 
@@ -1154,11 +1154,11 @@ Required fields:
 Optional fields:
 
 - `MetricSetDescription`: `str`
-- `MetricList`: `List`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
+- `MetricList`: `Sequence`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
 - `Offset`: `int`
 - `TimestampColumn`:
   [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
-- `DimensionList`: `List`\[`str`\]
+- `DimensionList`: `Sequence`\[`str`\]
 - `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
 - `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
 
@@ -1182,5 +1182,5 @@ from mypy_boto3_lookoutmetrics.type_defs import VpcConfigurationTypeDef
 
 Required fields:
 
-- `SubnetIdList`: `List`\[`str`\]
-- `SecurityGroupIdList`: `List`\[`str`\]
+- `SubnetIdList`: `Sequence`\[`str`\]
+- `SecurityGroupIdList`: `Sequence`\[`str`\]

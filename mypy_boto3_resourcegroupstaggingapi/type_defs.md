@@ -77,12 +77,12 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryIn
 
 Optional fields:
 
-- `TargetIdFilters`: `List`\[`str`\]
-- `RegionFilters`: `List`\[`str`\]
-- `ResourceTypeFilters`: `List`\[`str`\]
-- `TagKeyFilters`: `List`\[`str`\]
+- `TargetIdFilters`: `Sequence`\[`str`\]
+- `RegionFilters`: `Sequence`\[`str`\]
+- `ResourceTypeFilters`: `Sequence`\[`str`\]
+- `TagKeyFilters`: `Sequence`\[`str`\]
 - `GroupBy`:
-  `List`\[[GroupByAttributeType](./literals.md#groupbyattributetype)\]
+  `Sequence`\[[GroupByAttributeType](./literals.md#groupbyattributetype)\]
 - `MaxResults`: `int`
 - `PaginationToken`: `str`
 
@@ -108,13 +108,14 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import GetResourcesInputReque
 Optional fields:
 
 - `PaginationToken`: `str`
-- `TagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `TagFilters`:
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `ResourcesPerPage`: `int`
 - `TagsPerPage`: `int`
-- `ResourceTypeFilters`: `List`\[`str`\]
+- `ResourceTypeFilters`: `Sequence`\[`str`\]
 - `IncludeComplianceDetails`: `bool`
 - `ExcludeCompliantResources`: `bool`
-- `ResourceARNList`: `List`\[`str`\]
+- `ResourceARNList`: `Sequence`\[`str`\]
 
 ## GetResourcesOutputTypeDef
 
@@ -253,7 +254,7 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import TagFilterTypeDef
 Optional fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## TagResourcesInputRequestTypeDef
 
@@ -263,8 +264,8 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import TagResourcesInputReque
 
 Required fields:
 
-- `ResourceARNList`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `ResourceARNList`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TagResourcesOutputTypeDef
 
@@ -298,8 +299,8 @@ from mypy_boto3_resourcegroupstaggingapi.type_defs import UntagResourcesInputReq
 
 Required fields:
 
-- `ResourceARNList`: `List`\[`str`\]
-- `TagKeys`: `List`\[`str`\]
+- `ResourceARNList`: `Sequence`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagResourcesOutputTypeDef
 

@@ -184,6 +184,7 @@ from mypy_boto3_glacier.literals import ActionCodeType, ...
 - [TypeType](./literals.md#typetype)
 - [VaultExistsWaiterName](./literals.md#vaultexistswaitername)
 - [VaultNotExistsWaiterName](./literals.md#vaultnotexistswaitername)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

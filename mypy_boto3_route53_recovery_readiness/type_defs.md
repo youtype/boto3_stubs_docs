@@ -112,8 +112,8 @@ Required fields:
 
 Optional fields:
 
-- `Cells`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Cells`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateCellResponseTypeDef
 
@@ -166,7 +166,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateReadinessCheckResponseTypeDef
 
@@ -195,8 +195,8 @@ Required fields:
 
 Optional fields:
 
-- `Cells`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Cells`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRecoveryGroupResponseTypeDef
 
@@ -223,11 +223,11 @@ Required fields:
 
 - `ResourceSetName`: `str`
 - `ResourceSetType`: `str`
-- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateResourceSetResponseTypeDef
 
@@ -886,7 +886,7 @@ Optional fields:
 - `ComponentId`: `str`
 - `DnsTargetResource`:
   [DNSTargetResourceTypeDef](./type_defs.md#dnstargetresourcetypedef)
-- `ReadinessScopes`: `List`\[`str`\]
+- `ReadinessScopes`: `Sequence`\[`str`\]
 - `ResourceArn`: `str`
 
 ## ResponseMetadataTypeDef
@@ -925,7 +925,7 @@ from mypy_boto3_route53_recovery_readiness.type_defs import TagResourceRequestRe
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TargetResourceTypeDef
 
@@ -948,7 +948,7 @@ from mypy_boto3_route53_recovery_readiness.type_defs import UntagResourceRequest
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateCellRequestRequestTypeDef
 
@@ -959,7 +959,7 @@ from mypy_boto3_route53_recovery_readiness.type_defs import UpdateCellRequestReq
 Required fields:
 
 - `CellName`: `str`
-- `Cells`: `List`\[`str`\]
+- `Cells`: `Sequence`\[`str`\]
 
 ## UpdateCellResponseTypeDef
 
@@ -1011,7 +1011,7 @@ from mypy_boto3_route53_recovery_readiness.type_defs import UpdateRecoveryGroupR
 
 Required fields:
 
-- `Cells`: `List`\[`str`\]
+- `Cells`: `Sequence`\[`str`\]
 - `RecoveryGroupName`: `str`
 
 ## UpdateRecoveryGroupResponseTypeDef
@@ -1039,7 +1039,7 @@ Required fields:
 
 - `ResourceSetName`: `str`
 - `ResourceSetType`: `str`
-- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
 ## UpdateResourceSetResponseTypeDef
 

@@ -358,7 +358,7 @@ Required fields:
 
 - `InstanceId`: `str`
 - `QueueId`: `str`
-- `QuickConnectIds`: `List`\[`str`\]
+- `QuickConnectIds`: `Sequence`\[`str`\]
 
 ## AssociateRoutingProfileQueuesRequestRequestTypeDef
 
@@ -371,7 +371,7 @@ Required fields:
 - `InstanceId`: `str`
 - `RoutingProfileId`: `str`
 - `QueueConfigs`:
-  `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
 
 ## AssociateSecurityKeyRequestRequestTypeDef
 
@@ -464,7 +464,7 @@ Optional fields:
 
 - `Description`: `str`
 - `DisplayOrder`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAgentStatusResponseTypeDef
 
@@ -495,7 +495,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateContactFlowResponseTypeDef
 
@@ -522,12 +522,12 @@ Required fields:
 - `Name`: `str`
 - `TimeZone`: `str`
 - `Config`:
-  `List`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
+  `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
 
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateHoursOfOperationResponseTypeDef
 
@@ -592,7 +592,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateIntegrationAssociationResponseTypeDef
 
@@ -625,8 +625,8 @@ Optional fields:
 - `OutboundCallerConfig`:
   [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
 - `MaxContacts`: `int`
-- `QuickConnectIds`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `QuickConnectIds`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateQueueResponseTypeDef
 
@@ -657,7 +657,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateQuickConnectResponseTypeDef
 
@@ -685,13 +685,13 @@ Required fields:
 - `Description`: `str`
 - `DefaultOutboundQueueId`: `str`
 - `MediaConcurrencies`:
-  `List`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
+  `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
 
 Optional fields:
 
 - `QueueConfigs`:
-  `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
-- `Tags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRoutingProfileResponseTypeDef
 
@@ -721,7 +721,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateUseCaseResponseTypeDef
 
@@ -775,7 +775,7 @@ Required fields:
 - `Username`: `str`
 - `PhoneConfig`:
   [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef)
-- `SecurityProfileIds`: `List`\[`str`\]
+- `SecurityProfileIds`: `Sequence`\[`str`\]
 - `RoutingProfileId`: `str`
 - `InstanceId`: `str`
 
@@ -786,7 +786,7 @@ Optional fields:
   [UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef)
 - `DirectoryUserId`: `str`
 - `HierarchyGroupId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateUserResponseTypeDef
 
@@ -1290,7 +1290,7 @@ Required fields:
 
 - `InstanceId`: `str`
 - `QueueId`: `str`
-- `QuickConnectIds`: `List`\[`str`\]
+- `QuickConnectIds`: `Sequence`\[`str`\]
 
 ## DisassociateRoutingProfileQueuesRequestRequestTypeDef
 
@@ -1303,7 +1303,7 @@ Required fields:
 - `InstanceId`: `str`
 - `RoutingProfileId`: `str`
 - `QueueReferences`:
-  `List`\[[RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)\]
+  `Sequence`\[[RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)\]
 
 ## DisassociateSecurityKeyRequestRequestTypeDef
 
@@ -1336,8 +1336,8 @@ from mypy_boto3_connect.type_defs import FiltersTypeDef
 
 Optional fields:
 
-- `Queues`: `List`\[`str`\]
-- `Channels`: `List`\[[ChannelType](./literals.md#channeltype)\]
+- `Queues`: `Sequence`\[`str`\]
+- `Channels`: `Sequence`\[[ChannelType](./literals.md#channeltype)\]
 
 ## GetContactAttributesRequestRequestTypeDef
 
@@ -1373,11 +1373,11 @@ Required fields:
 - `InstanceId`: `str`
 - `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef)
 - `CurrentMetrics`:
-  `List`\[[CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef)\]
+  `Sequence`\[[CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef)\]
 
 Optional fields:
 
-- `Groupings`: `List`\[[GroupingType](./literals.md#groupingtype)\]
+- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1431,11 +1431,11 @@ Required fields:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef)
 - `HistoricalMetrics`:
-  `List`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
+  `Sequence`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
 
 Optional fields:
 
-- `Groupings`: `List`\[[GroupingType](./literals.md#groupingtype)\]
+- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1812,7 +1812,7 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `AgentStatusTypes`:
-  `List`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
+  `Sequence`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
 
 ## ListAgentStatusResponseTypeDef
 
@@ -1899,7 +1899,7 @@ Required fields:
 Optional fields:
 
 - `ContactFlowTypes`:
-  `List`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
+  `Sequence`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2128,9 +2128,9 @@ Required fields:
 Optional fields:
 
 - `PhoneNumberTypes`:
-  `List`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
+  `Sequence`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
 - `PhoneNumberCountryCodes`:
-  `List`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
+  `Sequence`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2219,7 +2219,7 @@ Required fields:
 
 Optional fields:
 
-- `QueueTypes`: `List`\[[QueueTypeType](./literals.md#queuetypetype)\]
+- `QueueTypes`: `Sequence`\[[QueueTypeType](./literals.md#queuetypetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2252,7 +2252,7 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `QuickConnectTypes`:
-  `List`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
+  `Sequence`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
 
 ## ListQuickConnectsResponseTypeDef
 
@@ -2843,7 +2843,7 @@ Required fields:
 
 Optional fields:
 
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 - `InitialMessage`: [ChatMessageTypeDef](./type_defs.md#chatmessagetypedef)
 - `ClientToken`: `str`
 
@@ -2892,7 +2892,7 @@ Optional fields:
 - `ClientToken`: `str`
 - `SourcePhoneNumber`: `str`
 - `QueueId`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## StartOutboundVoiceContactResponseTypeDef
 
@@ -2921,8 +2921,8 @@ Required fields:
 Optional fields:
 
 - `PreviousContactId`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `References`: `Dict`\[`str`,
+- `Attributes`: `Mapping`\[`str`, `str`\]
+- `References`: `Mapping`\[`str`,
   [ReferenceTypeDef](./type_defs.md#referencetypedef)\]
 - `Description`: `str`
 - `ClientToken`: `str`
@@ -2983,7 +2983,7 @@ from mypy_boto3_connect.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## ThresholdTypeDef
 
@@ -3006,7 +3006,7 @@ from mypy_boto3_connect.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAgentStatusRequestRequestTypeDef
 
@@ -3037,7 +3037,7 @@ Required fields:
 
 - `InitialContactId`: `str`
 - `InstanceId`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 ## UpdateContactFlowContentRequestRequestTypeDef
 
@@ -3084,7 +3084,7 @@ Optional fields:
 - `Description`: `str`
 - `TimeZone`: `str`
 - `Config`:
-  `List`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
+  `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
 
 ## UpdateInstanceAttributeRequestRequestTypeDef
 
@@ -3222,7 +3222,7 @@ Required fields:
 - `InstanceId`: `str`
 - `RoutingProfileId`: `str`
 - `MediaConcurrencies`:
-  `List`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
+  `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
 
 ## UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef
 
@@ -3263,7 +3263,7 @@ Required fields:
 - `InstanceId`: `str`
 - `RoutingProfileId`: `str`
 - `QueueConfigs`:
-  `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
 
 ## UpdateUserHierarchyGroupNameRequestRequestTypeDef
 
@@ -3350,7 +3350,7 @@ from mypy_boto3_connect.type_defs import UpdateUserSecurityProfilesRequestReques
 
 Required fields:
 
-- `SecurityProfileIds`: `List`\[`str`\]
+- `SecurityProfileIds`: `Sequence`\[`str`\]
 - `UserId`: `str`
 - `InstanceId`: `str`
 

@@ -58,7 +58,7 @@ Boto3 documentation:
 
 Arguments for `ListTagsPaginator.paginate` method:
 
-- `ResourceIdList`: `List`\[`str`\] *(required)*
+- `ResourceIdList`: `Sequence`\[`str`\] *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -109,7 +109,7 @@ Boto3 documentation:
 Arguments for `LookupEventsPaginator.paginate` method:
 
 - `LookupAttributes`:
-  `List`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
+  `Sequence`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `EventCategory`: `Literal['insight']` (see

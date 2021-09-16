@@ -129,7 +129,7 @@ Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
 - `clientToken`: `str`
-- `eulaIds`: `List`\[`str`\]
+- `eulaIds`: `Sequence`\[`str`\]
 
 Returns
 [AcceptEulasResponseTypeDef](./type_defs.md#accepteulasresponsetypedef).
@@ -163,17 +163,17 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ec2SubnetIds`: `List`\[`str`\] *(required)*
-- `launchProfileProtocolVersions`: `List`\[`str`\] *(required)*
+- `ec2SubnetIds`: `Sequence`\[`str`\] *(required)*
+- `launchProfileProtocolVersions`: `Sequence`\[`str`\] *(required)*
 - `name`: `str` *(required)*
 - `streamConfiguration`:
   [StreamConfigurationCreateTypeDef](./type_defs.md#streamconfigurationcreatetypedef)
   *(required)*
-- `studioComponentIds`: `List`\[`str`\] *(required)*
+- `studioComponentIds`: `Sequence`\[`str`\] *(required)*
 - `studioId`: `str` *(required)*
 - `clientToken`: `str`
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateLaunchProfileResponseTypeDef](./type_defs.md#createlaunchprofileresponsetypedef).
@@ -197,7 +197,7 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 - `clientToken`: `str`
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateStreamingImageResponseTypeDef](./type_defs.md#createstreamingimageresponsetypedef).
@@ -223,7 +223,7 @@ Keyword-only arguments:
 - `launchProfileId`: `str`
 - `ownedBy`: `str`
 - `streamingImageId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateStreamingSessionResponseTypeDef](./type_defs.md#createstreamingsessionresponsetypedef).
@@ -272,7 +272,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 - `studioEncryptionConfiguration`:
   [StudioEncryptionConfigurationTypeDef](./type_defs.md#studioencryptionconfigurationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateStudioResponseTypeDef](./type_defs.md#createstudioresponsetypedef).
@@ -299,14 +299,14 @@ Keyword-only arguments:
 - `configuration`:
   [StudioComponentConfigurationTypeDef](./type_defs.md#studiocomponentconfigurationtypedef)
 - `description`: `str`
-- `ec2SecurityGroupIds`: `List`\[`str`\]
+- `ec2SecurityGroupIds`: `Sequence`\[`str`\]
 - `initializationScripts`:
-  `List`\[[StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef)\]
+  `Sequence`\[[StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef)\]
 - `scriptParameters`:
-  `List`\[[ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)\]
+  `Sequence`\[[ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)\]
 - `subtype`:
   [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateStudioComponentResponseTypeDef](./type_defs.md#createstudiocomponentresponsetypedef).
@@ -469,7 +469,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -551,7 +551,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `launchProfileId`: `str` *(required)*
-- `launchProfileProtocolVersions`: `List`\[`str`\] *(required)*
+- `launchProfileProtocolVersions`: `Sequence`\[`str`\] *(required)*
 - `launchPurpose`: `str` *(required)*
 - `platform`: `str` *(required)*
 - `studioId`: `str` *(required)*
@@ -715,7 +715,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `studioId`: `str` *(required)*
-- `eulaIds`: `List`\[`str`\]
+- `eulaIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 
 Returns
@@ -735,7 +735,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `eulaIds`: `List`\[`str`\]
+- `eulaIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 
 Returns [ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef).
@@ -781,7 +781,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `principalId`: `str`
-- `states`: `List`\[`str`\]
+- `states`: `Sequence`\[`str`\]
 
 Returns
 [ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef).
@@ -847,8 +847,8 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `states`: `List`\[`str`\]
-- `types`: `List`\[`str`\]
+- `states`: `Sequence`\[`str`\]
+- `types`: `Sequence`\[`str`\]
 
 Returns
 [ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef).
@@ -931,7 +931,7 @@ Keyword-only arguments:
 - `identityStoreId`: `str` *(required)*
 - `launchProfileId`: `str` *(required)*
 - `members`:
-  `List`\[[NewLaunchProfileMemberTypeDef](./type_defs.md#newlaunchprofilemembertypedef)\]
+  `Sequence`\[[NewLaunchProfileMemberTypeDef](./type_defs.md#newlaunchprofilemembertypedef)\]
   *(required)*
 - `studioId`: `str` *(required)*
 - `clientToken`: `str`
@@ -954,7 +954,7 @@ Keyword-only arguments:
 
 - `identityStoreId`: `str` *(required)*
 - `members`:
-  `List`\[[NewStudioMemberTypeDef](./type_defs.md#newstudiomembertypedef)\]
+  `Sequence`\[[NewStudioMemberTypeDef](./type_defs.md#newstudiomembertypedef)\]
   *(required)*
 - `studioId`: `str` *(required)*
 - `clientToken`: `str`
@@ -997,7 +997,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1016,7 +1016,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1038,11 +1038,11 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 - `clientToken`: `str`
 - `description`: `str`
-- `launchProfileProtocolVersions`: `List`\[`str`\]
+- `launchProfileProtocolVersions`: `Sequence`\[`str`\]
 - `name`: `str`
 - `streamConfiguration`:
   [StreamConfigurationCreateTypeDef](./type_defs.md#streamconfigurationcreatetypedef)
-- `studioComponentIds`: `List`\[`str`\]
+- `studioComponentIds`: `Sequence`\[`str`\]
 
 Returns
 [UpdateLaunchProfileResponseTypeDef](./type_defs.md#updatelaunchprofileresponsetypedef).
@@ -1139,12 +1139,12 @@ Keyword-only arguments:
 - `configuration`:
   [StudioComponentConfigurationTypeDef](./type_defs.md#studiocomponentconfigurationtypedef)
 - `description`: `str`
-- `ec2SecurityGroupIds`: `List`\[`str`\]
+- `ec2SecurityGroupIds`: `Sequence`\[`str`\]
 - `initializationScripts`:
-  `List`\[[StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef)\]
+  `Sequence`\[[StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef)\]
 - `name`: `str`
 - `scriptParameters`:
-  `List`\[[ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)\]
+  `Sequence`\[[ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)\]
 - `subtype`:
   [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
 - `type`: [StudioComponentTypeType](./literals.md#studiocomponenttypetype)

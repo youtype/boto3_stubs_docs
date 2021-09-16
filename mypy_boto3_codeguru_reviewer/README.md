@@ -116,6 +116,7 @@ from mypy_boto3_codeguru_reviewer.literals import AnalysisTypeType, ...
 - [SeverityType](./literals.md#severitytype)
 - [TypeType](./literals.md#typetype)
 - [VendorNameType](./literals.md#vendornametype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

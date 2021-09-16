@@ -54,7 +54,8 @@ from mypy_boto3_textract.type_defs import AnalyzeDocumentRequestRequestTypeDef
 Required fields:
 
 - `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef)
-- `FeatureTypes`: `List`\[[FeatureTypeType](./literals.md#featuretypetype)\]
+- `FeatureTypes`:
+  `Sequence`\[[FeatureTypeType](./literals.md#featuretypetype)\]
 
 Optional fields:
 
@@ -364,7 +365,7 @@ from mypy_boto3_textract.type_defs import HumanLoopDataAttributesTypeDef
 Optional fields:
 
 - `ContentClassifiers`:
-  `List`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
+  `Sequence`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
 
 ## LineItemFieldsTypeDef
 
@@ -472,7 +473,8 @@ Required fields:
 
 - `DocumentLocation`:
   [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)
-- `FeatureTypes`: `List`\[[FeatureTypeType](./literals.md#featuretypetype)\]
+- `FeatureTypes`:
+  `Sequence`\[[FeatureTypeType](./literals.md#featuretypetype)\]
 
 Optional fields:
 

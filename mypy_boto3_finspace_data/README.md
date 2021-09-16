@@ -65,6 +65,7 @@ from mypy_boto3_finspace_data.literals import ChangeTypeType, ...
 - [FormatTypeType](./literals.md#formattypetype)
 - [SourceTypeType](./literals.md#sourcetypetype)
 - [locationTypeType](./literals.md#locationtypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

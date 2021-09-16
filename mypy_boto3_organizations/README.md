@@ -208,6 +208,7 @@ from mypy_boto3_organizations.literals import AccountJoinedMethodType, ...
 - [PolicyTypeStatusType](./literals.md#policytypestatustype)
 - [PolicyTypeType](./literals.md#policytypetype)
 - [TargetTypeType](./literals.md#targettypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

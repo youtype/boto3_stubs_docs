@@ -537,7 +537,7 @@ from mypy_boto3_route53_recovery_control_config.type_defs import NewAssertionRul
 
 Required fields:
 
-- `AssertedControls`: `List`\[`str`\]
+- `AssertedControls`: `Sequence`\[`str`\]
 - `ControlPanelArn`: `str`
 - `Name`: `str`
 - `RuleConfig`: [RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef)
@@ -552,10 +552,10 @@ from mypy_boto3_route53_recovery_control_config.type_defs import NewGatingRuleTy
 Required fields:
 
 - `ControlPanelArn`: `str`
-- `GatingControls`: `List`\[`str`\]
+- `GatingControls`: `Sequence`\[`str`\]
 - `Name`: `str`
 - `RuleConfig`: [RuleConfigTypeDef](./type_defs.md#ruleconfigtypedef)
-- `TargetControls`: `List`\[`str`\]
+- `TargetControls`: `Sequence`\[`str`\]
 - `WaitPeriodMs`: `int`
 
 ## ResponseMetadataTypeDef

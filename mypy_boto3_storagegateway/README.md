@@ -190,6 +190,7 @@ from mypy_boto3_storagegateway.literals import ActiveDirectoryStatusType, ...
 - [RetentionLockTypeType](./literals.md#retentionlocktypetype)
 - [SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype)
 - [TapeStorageClassType](./literals.md#tapestorageclasstype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

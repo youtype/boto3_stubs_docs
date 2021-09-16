@@ -33,7 +33,7 @@ Boto3 documentation:
 
 Arguments for `ListApplicationStatesPaginator.paginate` method:
 
-- `ApplicationIds`: `List`\[`str`\]
+- `ApplicationIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -159,7 +159,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDataSetResponseTypeDef
 
@@ -227,7 +227,7 @@ Required fields:
 Optional fields:
 
 - `Comment`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRevisionResponseTypeDef
 
@@ -356,7 +356,7 @@ from mypy_boto3_dataexchange.type_defs import ExportAssetsToS3RequestDetailsType
 Required fields:
 
 - `AssetDestinations`:
-  `List`\[[AssetDestinationEntryTypeDef](./type_defs.md#assetdestinationentrytypedef)\]
+  `Sequence`\[[AssetDestinationEntryTypeDef](./type_defs.md#assetdestinationentrytypedef)\]
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
@@ -393,7 +393,7 @@ Required fields:
 
 - `DataSetId`: `str`
 - `RevisionDestinations`:
-  `List`\[[RevisionDestinationEntryTypeDef](./type_defs.md#revisiondestinationentrytypedef)\]
+  `Sequence`\[[RevisionDestinationEntryTypeDef](./type_defs.md#revisiondestinationentrytypedef)\]
 
 Optional fields:
 
@@ -609,7 +609,7 @@ from mypy_boto3_dataexchange.type_defs import ImportAssetsFromS3RequestDetailsTy
 Required fields:
 
 - `AssetSources`:
-  `List`\[[AssetSourceEntryTypeDef](./type_defs.md#assetsourceentrytypedef)\]
+  `Sequence`\[[AssetSourceEntryTypeDef](./type_defs.md#assetsourceentrytypedef)\]
 - `DataSetId`: `str`
 - `RevisionId`: `str`
 
@@ -936,7 +936,7 @@ from mypy_boto3_dataexchange.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -947,7 +947,7 @@ from mypy_boto3_dataexchange.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAssetRequestRequestTypeDef
 

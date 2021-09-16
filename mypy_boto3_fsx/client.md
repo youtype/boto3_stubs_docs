@@ -135,7 +135,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
-- `Aliases`: `List`\[`str`\] *(required)*
+- `Aliases`: `Sequence`\[`str`\] *(required)*
 - `ClientRequestToken`: `str`
 
 Returns
@@ -197,7 +197,7 @@ Keyword-only arguments:
 - `SourceRegion`: `str`
 - `KmsKeyId`: `str`
 - `CopyTags`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CopyBackupResponseTypeDef](./type_defs.md#copybackupresponsetypedef).
 
@@ -218,7 +218,7 @@ Keyword-only arguments:
 
 - `FileSystemId`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VolumeId`: `str`
 
 Returns
@@ -244,9 +244,9 @@ Keyword-only arguments:
 - `FileSystemId`: `str` *(required)*
 - `Report`: [CompletionReportTypeDef](./type_defs.md#completionreporttypedef)
   *(required)*
-- `Paths`: `List`\[`str`\]
+- `Paths`: `Sequence`\[`str`\]
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDataRepositoryTaskResponseTypeDef](./type_defs.md#createdatarepositorytaskresponsetypedef).
@@ -268,11 +268,11 @@ Keyword-only arguments:
 - `FileSystemType`: [FileSystemTypeType](./literals.md#filesystemtypetype)
   *(required)*
 - `StorageCapacity`: `int` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `ClientRequestToken`: `str`
 - `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `WindowsConfiguration`:
   [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
@@ -301,10 +301,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `BackupId`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `ClientRequestToken`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `WindowsConfiguration`:
   [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
@@ -337,7 +337,7 @@ Keyword-only arguments:
   [CreateSvmActiveDirectoryConfigurationTypeDef](./type_defs.md#createsvmactivedirectoryconfigurationtypedef)
 - `ClientRequestToken`: `str`
 - `SvmAdminPassword`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `RootVolumeSecurityStyle`:
   [StorageVirtualMachineRootVolumeSecurityStyleType](./literals.md#storagevirtualmachinerootvolumesecuritystyletype)
 
@@ -364,7 +364,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `OntapConfiguration`:
   [CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateVolumeResponseTypeDef](./type_defs.md#createvolumeresponsetypedef).
@@ -389,7 +389,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `OntapConfiguration`:
   [CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateVolumeFromBackupResponseTypeDef](./type_defs.md#createvolumefrombackupresponsetypedef).
@@ -496,8 +496,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `BackupIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `BackupIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -521,9 +521,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TaskIds`: `List`\[`str`\]
+- `TaskIds`: `Sequence`\[`str`\]
 - `Filters`:
-  `List`\[[DataRepositoryTaskFilterTypeDef](./type_defs.md#datarepositorytaskfiltertypedef)\]
+  `Sequence`\[[DataRepositoryTaskFilterTypeDef](./type_defs.md#datarepositorytaskfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -568,7 +568,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `FileSystemIds`: `List`\[`str`\]
+- `FileSystemIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -591,9 +591,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `StorageVirtualMachineIds`: `List`\[`str`\]
+- `StorageVirtualMachineIds`: `Sequence`\[`str`\]
 - `Filters`:
-  `List`\[[StorageVirtualMachineFilterTypeDef](./type_defs.md#storagevirtualmachinefiltertypedef)\]
+  `Sequence`\[[StorageVirtualMachineFilterTypeDef](./type_defs.md#storagevirtualmachinefiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -614,9 +614,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `VolumeIds`: `List`\[`str`\]
+- `VolumeIds`: `Sequence`\[`str`\]
 - `Filters`:
-  `List`\[[VolumeFilterTypeDef](./type_defs.md#volumefiltertypedef)\]
+  `Sequence`\[[VolumeFilterTypeDef](./type_defs.md#volumefiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -640,7 +640,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
-- `Aliases`: `List`\[`str`\] *(required)*
+- `Aliases`: `Sequence`\[`str`\] *(required)*
 - `ClientRequestToken`: `str`
 
 Returns
@@ -658,7 +658,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -701,7 +701,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -720,7 +720,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

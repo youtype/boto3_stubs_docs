@@ -305,14 +305,14 @@ Keyword-only arguments:
 - `BisectBatchOnFunctionError`: `bool`
 - `MaximumRetryAttempts`: `int`
 - `TumblingWindowInSeconds`: `int`
-- `Topics`: `List`\[`str`\]
-- `Queues`: `List`\[`str`\]
+- `Topics`: `Sequence`\[`str`\]
+- `Queues`: `Sequence`\[`str`\]
 - `SourceAccessConfigurations`:
-  `List`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
+  `Sequence`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
 - `SelfManagedEventSource`:
   [SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef)
-- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
-  [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
+- `FunctionResponseTypes`: `Sequence`\[`Literal['ReportBatchItemFailures']`
+  (see [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
 Returns
 [EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
@@ -348,10 +348,10 @@ Keyword-only arguments:
 - `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `KMSKeyArn`: `str`
 - `TracingConfig`: [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `Layers`: `List`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `Layers`: `Sequence`\[`str`\]
 - `FileSystemConfigs`:
-  `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
+  `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 - `CodeSigningConfigArn`: `str`
 
@@ -535,7 +535,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1135,7 +1135,7 @@ Keyword-only arguments:
   [LayerVersionContentInputTypeDef](./type_defs.md#layerversioncontentinputtypedef)
   *(required)*
 - `Description`: `str`
-- `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
+- `CompatibleRuntimes`: `Sequence`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
 
 Returns
@@ -1313,7 +1313,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -1331,7 +1331,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Resource`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_alias
 
@@ -1412,10 +1412,10 @@ Keyword-only arguments:
 - `MaximumRetryAttempts`: `int`
 - `ParallelizationFactor`: `int`
 - `SourceAccessConfigurations`:
-  `List`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
+  `Sequence`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
 - `TumblingWindowInSeconds`: `int`
-- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
-  [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
+- `FunctionResponseTypes`: `Sequence`\[`Literal['ReportBatchItemFailures']`
+  (see [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
 Returns
 [EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
@@ -1476,9 +1476,9 @@ Keyword-only arguments:
 - `KMSKeyArn`: `str`
 - `TracingConfig`: [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
 - `RevisionId`: `str`
-- `Layers`: `List`\[`str`\]
+- `Layers`: `Sequence`\[`str`\]
 - `FileSystemConfigs`:
-  `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
+  `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 
 Returns

@@ -88,7 +88,7 @@ from mypy_boto3_ivs.type_defs import BatchGetChannelRequestRequestTypeDef
 
 Required fields:
 
-- `arns`: `List`\[`str`\]
+- `arns`: `Sequence`\[`str`\]
 
 ## BatchGetChannelResponseTypeDef
 
@@ -111,7 +111,7 @@ from mypy_boto3_ivs.type_defs import BatchGetStreamKeyRequestRequestTypeDef
 
 Required fields:
 
-- `arns`: `List`\[`str`\]
+- `arns`: `Sequence`\[`str`\]
 
 ## BatchGetStreamKeyResponseTypeDef
 
@@ -172,7 +172,7 @@ Optional fields:
 - `type`: [ChannelTypeType](./literals.md#channeltypetype)
 - `authorized`: `bool`
 - `recordingConfigurationArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateChannelResponseTypeDef
 
@@ -201,7 +201,7 @@ Required fields:
 Optional fields:
 
 - `name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRecordingConfigurationResponseTypeDef
 
@@ -228,7 +228,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateStreamKeyResponseTypeDef
 
@@ -417,7 +417,7 @@ Required fields:
 Optional fields:
 
 - `name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## ImportPlaybackKeyPairResponseTypeDef
 
@@ -773,7 +773,7 @@ from mypy_boto3_ivs.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -784,7 +784,7 @@ from mypy_boto3_ivs.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateChannelRequestRequestTypeDef
 

@@ -75,7 +75,7 @@ Boto3 documentation:
 Arguments for `DescribeActivationsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef)\]
+  `Sequence`\[[DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -104,7 +104,7 @@ Arguments for `DescribeAssociationExecutionTargetsPaginator.paginate` method:
 - `AssociationId`: `str` *(required)*
 - `ExecutionId`: `str` *(required)*
 - `Filters`:
-  `List`\[[AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef)\]
+  `Sequence`\[[AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -132,7 +132,7 @@ Arguments for `DescribeAssociationExecutionsPaginator.paginate` method:
 
 - `AssociationId`: `str` *(required)*
 - `Filters`:
-  `List`\[[AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef)\]
+  `Sequence`\[[AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -159,7 +159,7 @@ Boto3 documentation:
 Arguments for `DescribeAutomationExecutionsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef)\]
+  `Sequence`\[[AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -187,7 +187,7 @@ Arguments for `DescribeAutomationStepExecutionsPaginator.paginate` method:
 
 - `AutomationExecutionId`: `str` *(required)*
 - `Filters`:
-  `List`\[[StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef)\]
+  `Sequence`\[[StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef)\]
 - `ReverseOrder`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -215,7 +215,7 @@ Boto3 documentation:
 Arguments for `DescribeAvailablePatchesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -321,9 +321,9 @@ Boto3 documentation:
 Arguments for `DescribeInstanceInformationPaginator.paginate` method:
 
 - `InstanceInformationFilterList`:
-  `List`\[[InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef)\]
+  `Sequence`\[[InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef)\]
 - `Filters`:
-  `List`\[[InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef)\]
+  `Sequence`\[[InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -349,7 +349,7 @@ Boto3 documentation:
 
 Arguments for `DescribeInstancePatchStatesPaginator.paginate` method:
 
-- `InstanceIds`: `List`\[`str`\] *(required)*
+- `InstanceIds`: `Sequence`\[`str`\] *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -378,7 +378,7 @@ method:
 
 - `PatchGroup`: `str` *(required)*
 - `Filters`:
-  `List`\[[InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef)\]
+  `Sequence`\[[InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -406,7 +406,7 @@ Arguments for `DescribeInstancePatchesPaginator.paginate` method:
 
 - `InstanceId`: `str` *(required)*
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -462,7 +462,7 @@ Arguments for
 - `WindowExecutionId`: `str` *(required)*
 - `TaskId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -491,7 +491,7 @@ method:
 
 - `WindowExecutionId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -519,7 +519,7 @@ Arguments for `DescribeMaintenanceWindowExecutionsPaginator.paginate` method:
 
 - `WindowId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -546,11 +546,11 @@ Boto3 documentation:
 Arguments for `DescribeMaintenanceWindowSchedulePaginator.paginate` method:
 
 - `WindowId`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `ResourceType`:
   [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -578,7 +578,7 @@ Arguments for `DescribeMaintenanceWindowTargetsPaginator.paginate` method:
 
 - `WindowId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -606,7 +606,7 @@ Arguments for `DescribeMaintenanceWindowTasksPaginator.paginate` method:
 
 - `WindowId`: `str` *(required)*
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -633,7 +633,7 @@ Boto3 documentation:
 Arguments for `DescribeMaintenanceWindowsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -659,7 +659,7 @@ Boto3 documentation:
 
 Arguments for `DescribeMaintenanceWindowsForTargetPaginator.paginate` method:
 
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
   *(required)*
 - `ResourceType`:
   [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
@@ -689,7 +689,7 @@ Boto3 documentation:
 Arguments for `DescribeOpsItemsPaginator.paginate` method:
 
 - `OpsItemFilters`:
-  `List`\[[OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef)\]
+  `Sequence`\[[OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -716,9 +716,9 @@ Boto3 documentation:
 Arguments for `DescribeParametersPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef)\]
+  `Sequence`\[[ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef)\]
 - `ParameterFilters`:
-  `List`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
+  `Sequence`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -745,7 +745,7 @@ Boto3 documentation:
 Arguments for `DescribePatchBaselinesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -772,7 +772,7 @@ Boto3 documentation:
 Arguments for `DescribePatchGroupsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -828,7 +828,7 @@ Arguments for `DescribeSessionsPaginator.paginate` method:
 
 - `State`: [SessionStateType](./literals.md#sessionstatetype) *(required)*
 - `Filters`:
-  `List`\[[SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef)\]
+  `Sequence`\[[SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -854,11 +854,11 @@ Boto3 documentation:
 Arguments for `GetInventoryPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
 - `Aggregators`:
-  `List`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
+  `Sequence`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
 - `ResultAttributes`:
-  `List`\[[ResultAttributeTypeDef](./type_defs.md#resultattributetypedef)\]
+  `Sequence`\[[ResultAttributeTypeDef](./type_defs.md#resultattributetypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -912,11 +912,11 @@ Boto3 documentation:
 Arguments for `GetOpsSummaryPaginator.paginate` method:
 
 - `SyncName`: `str`
-- `Filters`: `List`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
+- `Filters`: `Sequence`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
 - `Aggregators`:
-  `List`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
+  `Sequence`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
 - `ResultAttributes`:
-  `List`\[[OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef)\]
+  `Sequence`\[[OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -972,7 +972,7 @@ Arguments for `GetParametersByPathPaginator.paginate` method:
 - `Path`: `str` *(required)*
 - `Recursive`: `bool`
 - `ParameterFilters`:
-  `List`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
+  `Sequence`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
 - `WithDecryption`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -1025,7 +1025,7 @@ Boto3 documentation:
 Arguments for `ListAssociationsPaginator.paginate` method:
 
 - `AssociationFilterList`:
-  `List`\[[AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef)\]
+  `Sequence`\[[AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -1054,7 +1054,7 @@ Arguments for `ListCommandInvocationsPaginator.paginate` method:
 - `CommandId`: `str`
 - `InstanceId`: `str`
 - `Filters`:
-  `List`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
+  `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
 - `Details`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -1083,7 +1083,7 @@ Arguments for `ListCommandsPaginator.paginate` method:
 - `CommandId`: `str`
 - `InstanceId`: `str`
 - `Filters`:
-  `List`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
+  `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -1110,9 +1110,9 @@ Boto3 documentation:
 Arguments for `ListComplianceItemsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
-- `ResourceIds`: `List`\[`str`\]
-- `ResourceTypes`: `List`\[`str`\]
+  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
+- `ResourceIds`: `Sequence`\[`str`\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -1139,7 +1139,7 @@ Boto3 documentation:
 Arguments for `ListComplianceSummariesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
+  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -1191,9 +1191,9 @@ Boto3 documentation:
 Arguments for `ListDocumentsPaginator.paginate` method:
 
 - `DocumentFilterList`:
-  `List`\[[DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef)\]
+  `Sequence`\[[DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef)\]
 - `Filters`:
-  `List`\[[DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef)\]
+  `Sequence`\[[DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -1220,7 +1220,7 @@ Boto3 documentation:
 Arguments for `ListOpsItemEventsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef)\]
+  `Sequence`\[[OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -1248,7 +1248,7 @@ Arguments for `ListOpsItemRelatedItemsPaginator.paginate` method:
 
 - `OpsItemId`: `str`
 - `Filters`:
-  `List`\[[OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef)\]
+  `Sequence`\[[OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -1274,7 +1274,7 @@ Boto3 documentation:
 Arguments for `ListOpsMetadataPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef)\]
+  `Sequence`\[[OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -1301,7 +1301,7 @@ Boto3 documentation:
 Arguments for `ListResourceComplianceSummariesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
+  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

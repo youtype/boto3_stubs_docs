@@ -455,7 +455,7 @@ Required fields:
 
 Optional fields:
 
-- `AnalysisSchemeNames`: `List`\[`str`\]
+- `AnalysisSchemeNames`: `Sequence`\[`str`\]
 - `Deployed`: `bool`
 
 ## DescribeAnalysisSchemesResponseTypeDef
@@ -533,7 +533,7 @@ from mypy_boto3_cloudsearch.type_defs import DescribeDomainsRequestRequestTypeDe
 
 Optional fields:
 
-- `DomainNames`: `List`\[`str`\]
+- `DomainNames`: `Sequence`\[`str`\]
 
 ## DescribeDomainsResponseTypeDef
 
@@ -560,7 +560,7 @@ Required fields:
 
 Optional fields:
 
-- `ExpressionNames`: `List`\[`str`\]
+- `ExpressionNames`: `Sequence`\[`str`\]
 - `Deployed`: `bool`
 
 ## DescribeExpressionsResponseTypeDef
@@ -588,7 +588,7 @@ Required fields:
 
 Optional fields:
 
-- `FieldNames`: `List`\[`str`\]
+- `FieldNames`: `Sequence`\[`str`\]
 - `Deployed`: `bool`
 
 ## DescribeIndexFieldsResponseTypeDef
@@ -666,7 +666,7 @@ Required fields:
 
 Optional fields:
 
-- `SuggesterNames`: `List`\[`str`\]
+- `SuggesterNames`: `Sequence`\[`str`\]
 - `Deployed`: `bool`
 
 ## DescribeSuggestersResponseTypeDef

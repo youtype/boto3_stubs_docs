@@ -146,7 +146,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## FinalizeDeviceClaimResponseTypeDef
 
@@ -345,7 +345,7 @@ from mypy_boto3_iot1click_devices.type_defs import TagResourceRequestRequestType
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UnclaimDeviceRequestRequestTypeDef
 
@@ -378,7 +378,7 @@ from mypy_boto3_iot1click_devices.type_defs import UntagResourceRequestRequestTy
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDeviceStateRequestRequestTypeDef
 

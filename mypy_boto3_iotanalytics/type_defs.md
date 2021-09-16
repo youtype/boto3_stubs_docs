@@ -148,7 +148,7 @@ from mypy_boto3_iotanalytics.type_defs import AddAttributesActivityTypeDef
 Required fields:
 
 - `name`: `str`
-- `attributes`: `Dict`\[`str`, `str`\]
+- `attributes`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
@@ -175,7 +175,7 @@ from mypy_boto3_iotanalytics.type_defs import BatchPutMessageRequestRequestTypeD
 Required fields:
 
 - `channelName`: `str`
-- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
+- `messages`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
 
 ## BatchPutMessageResponseTypeDef
 
@@ -224,7 +224,7 @@ from mypy_boto3_iotanalytics.type_defs import ChannelMessagesTypeDef
 
 Optional fields:
 
-- `s3Paths`: `List`\[`str`\]
+- `s3Paths`: `Sequence`\[`str`\]
 
 ## ChannelStatisticsTypeDef
 
@@ -257,7 +257,7 @@ from mypy_boto3_iotanalytics.type_defs import ChannelStorageTypeDef
 
 Optional fields:
 
-- `serviceManagedS3`: `Dict`\[`str`, `Any`\]
+- `serviceManagedS3`: `Mapping`\[`str`, `Any`\]
 - `customerManagedS3`:
   [CustomerManagedChannelS3StorageTypeDef](./type_defs.md#customermanagedchannels3storagetypedef)
 
@@ -321,7 +321,7 @@ Required fields:
 
 Optional fields:
 
-- `variables`: `List`\[[VariableTypeDef](./type_defs.md#variabletypedef)\]
+- `variables`: `Sequence`\[[VariableTypeDef](./type_defs.md#variabletypedef)\]
 
 ## CreateChannelRequestRequestTypeDef
 
@@ -339,7 +339,7 @@ Optional fields:
   [ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef)
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateChannelResponseTypeDef
 
@@ -392,21 +392,21 @@ Required fields:
 
 - `datasetName`: `str`
 - `actions`:
-  `List`\[[DatasetActionTypeDef](./type_defs.md#datasetactiontypedef)\]
+  `Sequence`\[[DatasetActionTypeDef](./type_defs.md#datasetactiontypedef)\]
 
 Optional fields:
 
 - `triggers`:
-  `List`\[[DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef)\]
+  `Sequence`\[[DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef)\]
 - `contentDeliveryRules`:
-  `List`\[[DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef)\]
+  `Sequence`\[[DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef)\]
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `versioningConfiguration`:
   [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `lateDataRules`:
-  `List`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
+  `Sequence`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
 ## CreateDatasetResponseTypeDef
 
@@ -439,7 +439,7 @@ Optional fields:
   [DatastoreStorageTypeDef](./type_defs.md#datastorestoragetypedef)
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `fileFormatConfiguration`:
   [FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef)
 - `datastorePartitions`:
@@ -470,11 +470,11 @@ Required fields:
 
 - `pipelineName`: `str`
 - `pipelineActivities`:
-  `List`\[[PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)\]
+  `Sequence`\[[PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)\]
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePipelineResponseTypeDef
 
@@ -752,7 +752,7 @@ from mypy_boto3_iotanalytics.type_defs import DatastorePartitionsTypeDef
 Optional fields:
 
 - `partitions`:
-  `List`\[[DatastorePartitionTypeDef](./type_defs.md#datastorepartitiontypedef)\]
+  `Sequence`\[[DatastorePartitionTypeDef](./type_defs.md#datastorepartitiontypedef)\]
 
 ## DatastoreStatisticsTypeDef
 
@@ -787,7 +787,7 @@ from mypy_boto3_iotanalytics.type_defs import DatastoreStorageTypeDef
 
 Optional fields:
 
-- `serviceManagedS3`: `Dict`\[`str`, `Any`\]
+- `serviceManagedS3`: `Mapping`\[`str`, `Any`\]
 - `customerManagedS3`:
   [CustomerManagedDatastoreS3StorageTypeDef](./type_defs.md#customermanageddatastores3storagetypedef)
 - `iotSiteWiseMultiLayerStorage`:
@@ -1075,7 +1075,7 @@ from mypy_boto3_iotanalytics.type_defs import FileFormatConfigurationTypeDef
 
 Optional fields:
 
-- `jsonConfiguration`: `Dict`\[`str`, `Any`\]
+- `jsonConfiguration`: `Mapping`\[`str`, `Any`\]
 - `parquetConfiguration`:
   [ParquetConfigurationTypeDef](./type_defs.md#parquetconfigurationtypedef)
 
@@ -1535,7 +1535,7 @@ from mypy_boto3_iotanalytics.type_defs import RemoveAttributesActivityTypeDef
 Required fields:
 
 - `name`: `str`
-- `attributes`: `List`\[`str`\]
+- `attributes`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1599,7 +1599,8 @@ Required fields:
 
 - `pipelineActivity`:
   [PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)
-- `payloads`: `List`\[`Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]\]
+- `payloads`: `Sequence`\[`Union`\[`bytes`, `IO`\[`bytes`\],
+  `StreamingBody`\]\]
 
 ## RunPipelineActivityResponseTypeDef
 
@@ -1677,7 +1678,7 @@ from mypy_boto3_iotanalytics.type_defs import SchemaDefinitionTypeDef
 
 Optional fields:
 
-- `columns`: `List`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
+- `columns`: `Sequence`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
 
 ## SelectAttributesActivityTypeDef
 
@@ -1688,7 +1689,7 @@ from mypy_boto3_iotanalytics.type_defs import SelectAttributesActivityTypeDef
 Required fields:
 
 - `name`: `str`
-- `attributes`: `List`\[`str`\]
+- `attributes`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1706,7 +1707,8 @@ Required fields:
 
 Optional fields:
 
-- `filters`: `List`\[[QueryFilterTypeDef](./type_defs.md#queryfiltertypedef)\]
+- `filters`:
+  `Sequence`\[[QueryFilterTypeDef](./type_defs.md#queryfiltertypedef)\]
 
 ## StartPipelineReprocessingRequestRequestTypeDef
 
@@ -1746,7 +1748,7 @@ from mypy_boto3_iotanalytics.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1792,7 +1794,7 @@ from mypy_boto3_iotanalytics.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateChannelRequestRequestTypeDef
 
@@ -1821,20 +1823,20 @@ Required fields:
 
 - `datasetName`: `str`
 - `actions`:
-  `List`\[[DatasetActionTypeDef](./type_defs.md#datasetactiontypedef)\]
+  `Sequence`\[[DatasetActionTypeDef](./type_defs.md#datasetactiontypedef)\]
 
 Optional fields:
 
 - `triggers`:
-  `List`\[[DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef)\]
+  `Sequence`\[[DatasetTriggerTypeDef](./type_defs.md#datasettriggertypedef)\]
 - `contentDeliveryRules`:
-  `List`\[[DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef)\]
+  `Sequence`\[[DatasetContentDeliveryRuleTypeDef](./type_defs.md#datasetcontentdeliveryruletypedef)\]
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `versioningConfiguration`:
   [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
 - `lateDataRules`:
-  `List`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
+  `Sequence`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
 ## UpdateDatastoreRequestRequestTypeDef
 
@@ -1865,7 +1867,7 @@ Required fields:
 
 - `pipelineName`: `str`
 - `pipelineActivities`:
-  `List`\[[PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)\]
+  `Sequence`\[[PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)\]
 
 ## VariableTypeDef
 

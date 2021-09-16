@@ -167,7 +167,7 @@ from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryReques
 
 Required fields:
 
-- `DeviceIds`: `List`\[`str`\]
+- `DeviceIds`: `Sequence`\[`str`\]
 - `TrackerName`: `str`
 
 ## BatchDeleteDevicePositionHistoryResponseTypeDef
@@ -203,7 +203,7 @@ from mypy_boto3_location.type_defs import BatchDeleteGeofenceRequestRequestTypeD
 Required fields:
 
 - `CollectionName`: `str`
-- `GeofenceIds`: `List`\[`str`\]
+- `GeofenceIds`: `Sequence`\[`str`\]
 
 ## BatchDeleteGeofenceResponseTypeDef
 
@@ -240,7 +240,7 @@ Required fields:
 
 - `CollectionName`: `str`
 - `DevicePositionUpdates`:
-  `List`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
+  `Sequence`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
 
 ## BatchEvaluateGeofencesResponseTypeDef
 
@@ -274,7 +274,7 @@ from mypy_boto3_location.type_defs import BatchGetDevicePositionRequestRequestTy
 
 Required fields:
 
-- `DeviceIds`: `List`\[`str`\]
+- `DeviceIds`: `Sequence`\[`str`\]
 - `TrackerName`: `str`
 
 ## BatchGetDevicePositionResponseTypeDef
@@ -335,7 +335,7 @@ Required fields:
 
 - `CollectionName`: `str`
 - `Entries`:
-  `List`\[[BatchPutGeofenceRequestEntryTypeDef](./type_defs.md#batchputgeofencerequestentrytypedef)\]
+  `Sequence`\[[BatchPutGeofenceRequestEntryTypeDef](./type_defs.md#batchputgeofencerequestentrytypedef)\]
 
 ## BatchPutGeofenceResponseTypeDef
 
@@ -386,7 +386,7 @@ Required fields:
 
 - `TrackerName`: `str`
 - `Updates`:
-  `List`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
+  `Sequence`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
 
 ## BatchUpdateDevicePositionResponseTypeDef
 
@@ -421,8 +421,8 @@ from mypy_boto3_location.type_defs import CalculateRouteRequestRequestTypeDef
 Required fields:
 
 - `CalculatorName`: `str`
-- `DeparturePosition`: `List`\[`float`\]
-- `DestinationPosition`: `List`\[`float`\]
+- `DeparturePosition`: `Sequence`\[`float`\]
+- `DestinationPosition`: `Sequence`\[`float`\]
 
 Optional fields:
 
@@ -435,7 +435,7 @@ Optional fields:
 - `TravelMode`: [TravelModeType](./literals.md#travelmodetype)
 - `TruckModeOptions`:
   [CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef)
-- `WaypointPositions`: `List`\[`List`\[`float`\]\]
+- `WaypointPositions`: `Sequence`\[`Sequence`\[`float`\]\]
 
 ## CalculateRouteResponseTypeDef
 
@@ -494,7 +494,7 @@ Optional fields:
 - `Description`: `str`
 - `KmsKeyId`: `str`
 - `PricingPlanDataSource`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateGeofenceCollectionResponseTypeDef
 
@@ -526,7 +526,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateMapResponseTypeDef
 
@@ -559,7 +559,7 @@ Optional fields:
 - `DataSourceConfiguration`:
   [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreatePlaceIndexResponseTypeDef
 
@@ -590,7 +590,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRouteCalculatorResponseTypeDef
 
@@ -622,7 +622,7 @@ Optional fields:
 - `Description`: `str`
 - `KmsKeyId`: `str`
 - `PricingPlanDataSource`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateTrackerResponseTypeDef
 
@@ -874,7 +874,7 @@ from mypy_boto3_location.type_defs import DevicePositionUpdateTypeDef
 Required fields:
 
 - `DeviceId`: `str`
-- `Position`: `List`\[`float`\]
+- `Position`: `Sequence`\[`float`\]
 - `SampleTime`: `Union`\[`datetime`, `str`\]
 
 ## DisassociateTrackerConsumerRequestRequestTypeDef
@@ -896,7 +896,7 @@ from mypy_boto3_location.type_defs import GeofenceGeometryTypeDef
 
 Optional fields:
 
-- `Polygon`: `List`\[`List`\[`List`\[`float`\]\]\]
+- `Polygon`: `Sequence`\[`Sequence`\[`Sequence`\[`float`\]\]\]
 
 ## GetDevicePositionHistoryRequestRequestTypeDef
 
@@ -1570,7 +1570,7 @@ from mypy_boto3_location.type_defs import SearchPlaceIndexForPositionRequestRequ
 Required fields:
 
 - `IndexName`: `str`
-- `Position`: `List`\[`float`\]
+- `Position`: `Sequence`\[`float`\]
 
 Optional fields:
 
@@ -1619,9 +1619,9 @@ Required fields:
 
 Optional fields:
 
-- `BiasPosition`: `List`\[`float`\]
-- `FilterBBox`: `List`\[`float`\]
-- `FilterCountries`: `List`\[`str`\]
+- `BiasPosition`: `Sequence`\[`float`\]
+- `FilterBBox`: `Sequence`\[`float`\]
+- `FilterCountries`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 
 ## SearchPlaceIndexForTextResponseTypeDef
@@ -1684,7 +1684,7 @@ from mypy_boto3_location.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TruckDimensionsTypeDef
 
@@ -1719,7 +1719,7 @@ from mypy_boto3_location.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateGeofenceCollectionRequestRequestTypeDef
 

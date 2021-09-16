@@ -431,7 +431,7 @@ Keyword-only arguments:
 
 - `Account`: `str` *(required)*
 - `ClusterIdentifier`: `str`
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 
 Returns
 [EndpointAuthorizationResponseMetadataTypeDef](./type_defs.md#endpointauthorizationresponsemetadatatypedef).
@@ -475,7 +475,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Identifiers`:
-  `List`\[[DeleteClusterSnapshotMessageTypeDef](./type_defs.md#deleteclustersnapshotmessagetypedef)\]
+  `Sequence`\[[DeleteClusterSnapshotMessageTypeDef](./type_defs.md#deleteclustersnapshotmessagetypedef)\]
   *(required)*
 
 Returns
@@ -496,7 +496,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `SnapshotIdentifierList`: `List`\[`str`\] *(required)*
+- `SnapshotIdentifierList`: `Sequence`\[`str`\] *(required)*
 - `ManualSnapshotRetentionPeriod`: `int`
 - `Force`: `bool`
 
@@ -601,8 +601,8 @@ Keyword-only arguments:
 - `MasterUserPassword`: `str` *(required)*
 - `DBName`: `str`
 - `ClusterType`: `str`
-- `ClusterSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `ClusterSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `ClusterSubnetGroupName`: `str`
 - `AvailabilityZone`: `str`
 - `PreferredMaintenanceWindow`: `str`
@@ -618,11 +618,11 @@ Keyword-only arguments:
 - `HsmClientCertificateIdentifier`: `str`
 - `HsmConfigurationIdentifier`: `str`
 - `ElasticIp`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `EnhancedVpcRouting`: `bool`
 - `AdditionalInfo`: `str`
-- `IamRoles`: `List`\[`str`\]
+- `IamRoles`: `Sequence`\[`str`\]
 - `MaintenanceTrackName`: `str`
 - `SnapshotScheduleIdentifier`: `str`
 - `AvailabilityZoneRelocation`: `bool`
@@ -650,7 +650,7 @@ Keyword-only arguments:
 - `ParameterGroupName`: `str` *(required)*
 - `ParameterGroupFamily`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateClusterParameterGroupResultTypeDef](./type_defs.md#createclusterparametergroupresulttypedef).
@@ -672,7 +672,7 @@ Keyword-only arguments:
 
 - `ClusterSecurityGroupName`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateClusterSecurityGroupResultTypeDef](./type_defs.md#createclustersecuritygroupresulttypedef).
@@ -694,7 +694,7 @@ Keyword-only arguments:
 - `SnapshotIdentifier`: `str` *(required)*
 - `ClusterIdentifier`: `str` *(required)*
 - `ManualSnapshotRetentionPeriod`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateClusterSnapshotResultTypeDef](./type_defs.md#createclustersnapshotresulttypedef).
@@ -716,8 +716,8 @@ Keyword-only arguments:
 
 - `ClusterSubnetGroupName`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateClusterSubnetGroupResultTypeDef](./type_defs.md#createclustersubnetgroupresulttypedef).
@@ -740,7 +740,7 @@ Keyword-only arguments:
 - `SubnetGroupName`: `str` *(required)*
 - `ClusterIdentifier`: `str`
 - `ResourceOwner`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 
 Returns
 [EndpointAccessResponseMetadataTypeDef](./type_defs.md#endpointaccessresponsemetadatatypedef).
@@ -763,11 +763,11 @@ Keyword-only arguments:
 - `SubscriptionName`: `str` *(required)*
 - `SnsTopicArn`: `str` *(required)*
 - `SourceType`: `str`
-- `SourceIds`: `List`\[`str`\]
-- `EventCategories`: `List`\[`str`\]
+- `SourceIds`: `Sequence`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
 - `Severity`: `str`
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
@@ -790,7 +790,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `HsmClientCertificateIdentifier`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateHsmClientCertificateResultTypeDef](./type_defs.md#createhsmclientcertificateresulttypedef).
@@ -818,7 +818,7 @@ Keyword-only arguments:
 - `HsmPartitionName`: `str` *(required)*
 - `HsmPartitionPassword`: `str` *(required)*
 - `HsmServerPublicCertificate`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateHsmConfigurationResultTypeDef](./type_defs.md#createhsmconfigurationresulttypedef).
@@ -870,7 +870,7 @@ Keyword-only arguments:
 
 - `SnapshotCopyGrantName`: `str` *(required)*
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSnapshotCopyGrantResultTypeDef](./type_defs.md#createsnapshotcopygrantresulttypedef).
@@ -891,10 +891,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ScheduleDefinitions`: `List`\[`str`\]
+- `ScheduleDefinitions`: `Sequence`\[`str`\]
 - `ScheduleIdentifier`: `str`
 - `ScheduleDescription`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
 - `NextInvocations`: `int`
 
@@ -916,7 +916,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### create_usage_limit
 
@@ -942,7 +942,7 @@ Keyword-only arguments:
 - `Period`: [UsageLimitPeriodType](./literals.md#usagelimitperiodtype)
 - `BreachAction`:
   [UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [UsageLimitResponseMetadataTypeDef](./type_defs.md#usagelimitresponsemetadatatypedef).
@@ -1238,7 +1238,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### delete_usage_limit
 
@@ -1274,7 +1274,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AttributeNames`: `List`\[`str`\]
+- `AttributeNames`: `Sequence`\[`str`\]
 
 Returns
 [AccountAttributeListTypeDef](./type_defs.md#accountattributelisttypedef).
@@ -1340,8 +1340,8 @@ Keyword-only arguments:
 - `ParameterGroupName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [ClusterParameterGroupsMessageTypeDef](./type_defs.md#clusterparametergroupsmessagetypedef).
@@ -1388,8 +1388,8 @@ Keyword-only arguments:
 - `ClusterSecurityGroupName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [ClusterSecurityGroupMessageTypeDef](./type_defs.md#clustersecuritygroupmessagetypedef).
@@ -1418,11 +1418,11 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `OwnerAccount`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `ClusterExists`: `bool`
 - `SortingEntities`:
-  `List`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
+  `Sequence`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
 
 Returns [SnapshotMessageTypeDef](./type_defs.md#snapshotmessagetypedef).
 
@@ -1445,8 +1445,8 @@ Keyword-only arguments:
 - `ClusterSubnetGroupName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [ClusterSubnetGroupMessageTypeDef](./type_defs.md#clustersubnetgroupmessagetypedef).
@@ -1513,8 +1513,8 @@ Keyword-only arguments:
 - `ClusterIdentifier`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns [ClustersMessageTypeDef](./type_defs.md#clustersmessagetypedef).
 
@@ -1700,8 +1700,8 @@ Keyword-only arguments:
 - `SubscriptionName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef).
@@ -1749,8 +1749,8 @@ Keyword-only arguments:
 - `HsmClientCertificateIdentifier`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [HsmClientCertificateMessageTypeDef](./type_defs.md#hsmclientcertificatemessagetypedef).
@@ -1773,8 +1773,8 @@ Keyword-only arguments:
 - `HsmConfigurationIdentifier`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [HsmConfigurationMessageTypeDef](./type_defs.md#hsmconfigurationmessagetypedef).
@@ -1819,7 +1819,7 @@ Keyword-only arguments:
 - `SnapshotIdentifier`: `str`
 - `OwnerAccount`: `str`
 - `Filters`:
-  `List`\[[NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef)\]
+  `Sequence`\[[NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -1957,7 +1957,7 @@ Keyword-only arguments:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Active`: `bool`
 - `Filters`:
-  `List`\[[ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef)\]
+  `Sequence`\[[ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -1983,8 +1983,8 @@ Keyword-only arguments:
 - `SnapshotCopyGrantName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [SnapshotCopyGrantMessageTypeDef](./type_defs.md#snapshotcopygrantmessagetypedef).
@@ -2006,8 +2006,8 @@ Keyword-only arguments:
 
 - `ClusterIdentifier`: `str`
 - `ScheduleIdentifier`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -2068,8 +2068,8 @@ Keyword-only arguments:
 - `ResourceType`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns
 [TaggedResourceListMessageTypeDef](./type_defs.md#taggedresourcelistmessagetypedef).
@@ -2094,8 +2094,8 @@ Keyword-only arguments:
   [UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype)
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 Returns [UsageLimitListTypeDef](./type_defs.md#usagelimitlisttypedef).
 
@@ -2217,7 +2217,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -2243,7 +2243,7 @@ Keyword-only arguments:
 - `DbName`: `str`
 - `DurationSeconds`: `int`
 - `AutoCreate`: `bool`
-- `DbGroups`: `List`\[`str`\]
+- `DbGroups`: `Sequence`\[`str`\]
 
 Returns [ClusterCredentialsTypeDef](./type_defs.md#clustercredentialstypedef).
 
@@ -2331,8 +2331,8 @@ Keyword-only arguments:
 - `ClusterType`: `str`
 - `NodeType`: `str`
 - `NumberOfNodes`: `int`
-- `ClusterSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `ClusterSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `MasterUserPassword`: `str`
 - `ClusterParameterGroupName`: `str`
 - `AutomatedSnapshotRetentionPeriod`: `int`
@@ -2394,8 +2394,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
-- `AddIamRoles`: `List`\[`str`\]
-- `RemoveIamRoles`: `List`\[`str`\]
+- `AddIamRoles`: `Sequence`\[`str`\]
+- `RemoveIamRoles`: `Sequence`\[`str`\]
 
 Returns
 [ModifyClusterIamRolesResultTypeDef](./type_defs.md#modifyclusteriamrolesresulttypedef).
@@ -2441,7 +2441,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
   *(required)*
 
 Returns
@@ -2503,7 +2504,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClusterSubnetGroupName`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `Description`: `str`
 
 Returns
@@ -2524,7 +2525,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 
 Returns
 [EndpointAccessResponseMetadataTypeDef](./type_defs.md#endpointaccessresponsemetadatatypedef).
@@ -2547,8 +2548,8 @@ Keyword-only arguments:
 - `SubscriptionName`: `str` *(required)*
 - `SnsTopicArn`: `str`
 - `SourceType`: `str`
-- `SourceIds`: `List`\[`str`\]
-- `EventCategories`: `List`\[`str`\]
+- `SourceIds`: `Sequence`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
 - `Severity`: `str`
 - `Enabled`: `bool`
 
@@ -2622,7 +2623,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ScheduleIdentifier`: `str` *(required)*
-- `ScheduleDefinitions`: `List`\[`str`\] *(required)*
+- `ScheduleDefinitions`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [SnapshotScheduleResponseMetadataTypeDef](./type_defs.md#snapshotscheduleresponsemetadatatypedef).
@@ -2744,7 +2745,8 @@ Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 - `ResetAllParameters`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 Returns
 [ClusterParameterGroupNameMessageTypeDef](./type_defs.md#clusterparametergroupnamemessagetypedef).
@@ -2800,8 +2802,8 @@ Keyword-only arguments:
 - `HsmConfigurationIdentifier`: `str`
 - `ElasticIp`: `str`
 - `ClusterParameterGroupName`: `str`
-- `ClusterSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `ClusterSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `PreferredMaintenanceWindow`: `str`
 - `AutomatedSnapshotRetentionPeriod`: `int`
 - `ManualSnapshotRetentionPeriod`: `int`
@@ -2809,7 +2811,7 @@ Keyword-only arguments:
 - `NodeType`: `str`
 - `EnhancedVpcRouting`: `bool`
 - `AdditionalInfo`: `str`
-- `IamRoles`: `List`\[`str`\]
+- `IamRoles`: `Sequence`\[`str`\]
 - `MaintenanceTrackName`: `str`
 - `SnapshotScheduleIdentifier`: `str`
 - `NumberOfNodes`: `int`
@@ -2907,7 +2909,7 @@ Keyword-only arguments:
 
 - `ClusterIdentifier`: `str`
 - `Account`: `str`
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 - `Force`: `bool`
 
 Returns

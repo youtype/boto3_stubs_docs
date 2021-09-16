@@ -248,7 +248,7 @@ Keyword-only arguments:
 - `RoleArn`: `str` *(required)*
 - `ConfirmationRequired`: `bool`
 - `Description`: `str`
-- `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+- `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 
 Returns [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef).
 
@@ -571,7 +571,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1019,7 +1019,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
-- `JobStatuses`: `List`\[[JobStatusType](./literals.md#jobstatustype)\]
+- `JobStatuses`: `Sequence`\[[JobStatusType](./literals.md#jobstatustype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1225,7 +1225,8 @@ Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `JobId`: `str` *(required)*
-- `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1296,7 +1297,7 @@ Keyword-only arguments:
   [StorageLensConfigurationTypeDef](./type_defs.md#storagelensconfigurationtypedef)
   *(required)*
 - `Tags`:
-  `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
+  `Sequence`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
 
 ### put_storage_lens_configuration_tagging
 
@@ -1316,7 +1317,7 @@ Keyword-only arguments:
 - `ConfigId`: `str` *(required)*
 - `AccountId`: `str` *(required)*
 - `Tags`:
-  `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
+  `Sequence`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

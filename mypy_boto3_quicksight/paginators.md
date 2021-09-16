@@ -361,7 +361,7 @@ Arguments for `SearchAnalysesPaginator.paginate` method:
 
 - `AwsAccountId`: `str` *(required)*
 - `Filters`:
-  `List`\[[AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef)\]
+  `Sequence`\[[AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef)\]
   *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -390,7 +390,7 @@ Arguments for `SearchDashboardsPaginator.paginate` method:
 
 - `AwsAccountId`: `str` *(required)*
 - `Filters`:
-  `List`\[[DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef)\]
+  `Sequence`\[[DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef)\]
   *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

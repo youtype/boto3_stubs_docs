@@ -154,7 +154,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceGroups`:
-  `List`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
+  `Sequence`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
   *(required)*
 - `JobFlowId`: `str` *(required)*
 
@@ -176,7 +176,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `JobFlowId`: `str` *(required)*
-- `Steps`: `List`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
+- `Steps`: `Sequence`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
   *(required)*
 
 Returns
@@ -197,7 +197,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -231,7 +231,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
-- `StepIds`: `List`\[`str`\] *(required)*
+- `StepIds`: `Sequence`\[`str`\] *(required)*
 - `StepCancellationOption`:
   [StepCancellationOptionType](./literals.md#stepcancellationoptiontype)
 
@@ -276,7 +276,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `AuthMode`: [AuthModeType](./literals.md#authmodetype) *(required)*
 - `VpcId`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `ServiceRole`: `str` *(required)*
 - `WorkspaceSecurityGroupId`: `str` *(required)*
 - `EngineSecurityGroupId`: `str` *(required)*
@@ -285,7 +285,7 @@ Keyword-only arguments:
 - `UserRole`: `str`
 - `IdpAuthUrl`: `str`
 - `IdpRelayStateParameterName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateStudioOutputTypeDef](./type_defs.md#createstudiooutputtypedef).
 
@@ -404,9 +404,9 @@ Keyword-only arguments:
 
 - `CreatedAfter`: `Union`\[`datetime`, `str`\]
 - `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `JobFlowIds`: `List`\[`str`\]
+- `JobFlowIds`: `Sequence`\[`str`\]
 - `JobFlowStates`:
-  `List`\[[JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)\]
+  `Sequence`\[[JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)\]
 
 Returns
 [DescribeJobFlowsOutputTypeDef](./type_defs.md#describejobflowsoutputtypedef).
@@ -525,7 +525,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -644,7 +644,8 @@ Keyword-only arguments:
 
 - `CreatedAfter`: `Union`\[`datetime`, `str`\]
 - `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ClusterStates`: `List`\[[ClusterStateType](./literals.md#clusterstatetype)\]
+- `ClusterStates`:
+  `Sequence`\[[ClusterStateType](./literals.md#clusterstatetype)\]
 - `Marker`: `str`
 
 Returns [ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef).
@@ -707,12 +708,12 @@ Keyword-only arguments:
 - `ClusterId`: `str` *(required)*
 - `InstanceGroupId`: `str`
 - `InstanceGroupTypes`:
-  `List`\[[InstanceGroupTypeType](./literals.md#instancegrouptypetype)\]
+  `Sequence`\[[InstanceGroupTypeType](./literals.md#instancegrouptypetype)\]
 - `InstanceFleetId`: `str`
 - `InstanceFleetType`:
   [InstanceFleetTypeType](./literals.md#instancefleettypetype)
 - `InstanceStates`:
-  `List`\[[InstanceStateType](./literals.md#instancestatetype)\]
+  `Sequence`\[[InstanceStateType](./literals.md#instancestatetype)\]
 - `Marker`: `str`
 
 Returns
@@ -800,8 +801,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClusterId`: `str` *(required)*
-- `StepStates`: `List`\[[StepStateType](./literals.md#stepstatetype)\]
-- `StepIds`: `List`\[`str`\]
+- `StepStates`: `Sequence`\[[StepStateType](./literals.md#stepstatetype)\]
+- `StepIds`: `Sequence`\[`str`\]
 - `Marker`: `str`
 
 Returns [ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef).
@@ -906,7 +907,7 @@ Keyword-only arguments:
 
 - `ClusterId`: `str`
 - `InstanceGroups`:
-  `List`\[[InstanceGroupModifyConfigTypeDef](./type_defs.md#instancegroupmodifyconfigtypedef)\]
+  `Sequence`\[[InstanceGroupModifyConfigTypeDef](./type_defs.md#instancegroupmodifyconfigtypedef)\]
 
 ### put_auto_scaling_policy
 
@@ -1069,7 +1070,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1096,20 +1097,20 @@ Keyword-only arguments:
 - `AdditionalInfo`: `str`
 - `AmiVersion`: `str`
 - `ReleaseLabel`: `str`
-- `Steps`: `List`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
+- `Steps`: `Sequence`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
 - `BootstrapActions`:
-  `List`\[[BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef)\]
-- `SupportedProducts`: `List`\[`str`\]
+  `Sequence`\[[BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef)\]
+- `SupportedProducts`: `Sequence`\[`str`\]
 - `NewSupportedProducts`:
-  `List`\[[SupportedProductConfigTypeDef](./type_defs.md#supportedproductconfigtypedef)\]
+  `Sequence`\[[SupportedProductConfigTypeDef](./type_defs.md#supportedproductconfigtypedef)\]
 - `Applications`:
-  `List`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
+  `Sequence`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
 - `Configurations`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `VisibleToAllUsers`: `bool`
 - `JobFlowRole`: `str`
 - `ServiceRole`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SecurityConfiguration`: `str`
 - `AutoScalingRole`: `str`
 - `ScaleDownBehavior`:
@@ -1124,7 +1125,7 @@ Keyword-only arguments:
 - `ManagedScalingPolicy`:
   [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
 - `PlacementGroupConfigs`:
-  `List`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
+  `Sequence`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
 - `AutoTerminationPolicy`:
   [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
 
@@ -1146,7 +1147,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `JobFlowIds`: `List`\[`str`\] *(required)*
+- `JobFlowIds`: `Sequence`\[`str`\] *(required)*
 - `TerminationProtected`: `bool` *(required)*
 
 ### set_visible_to_all_users
@@ -1163,7 +1164,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `JobFlowIds`: `List`\[`str`\] *(required)*
+- `JobFlowIds`: `Sequence`\[`str`\] *(required)*
 - `VisibleToAllUsers`: `bool` *(required)*
 
 ### start_notebook_execution
@@ -1189,7 +1190,7 @@ Keyword-only arguments:
 - `NotebookExecutionName`: `str`
 - `NotebookParams`: `str`
 - `NotebookInstanceSecurityGroupId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartNotebookExecutionOutputTypeDef](./type_defs.md#startnotebookexecutionoutputtypedef).
@@ -1224,7 +1225,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `JobFlowIds`: `List`\[`str`\] *(required)*
+- `JobFlowIds`: `Sequence`\[`str`\] *(required)*
 
 ### update_studio
 
@@ -1244,7 +1245,7 @@ Keyword-only arguments:
 - `StudioId`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DefaultS3Location`: `str`
 
 ### update_studio_session_mapping

@@ -135,7 +135,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CategoryName`: `str` *(required)*
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
 
 Returns
 [CreateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#createcallanalyticscategoryresponsetypedef).
@@ -161,7 +161,7 @@ Keyword-only arguments:
 - `ModelName`: `str` *(required)*
 - `InputDataConfig`:
   [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateLanguageModelResponseTypeDef](./type_defs.md#createlanguagemodelresponsetypedef).
@@ -186,7 +186,7 @@ Keyword-only arguments:
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
 - `VocabularyFileUri`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateMedicalVocabularyResponseTypeDef](./type_defs.md#createmedicalvocabularyresponsetypedef).
@@ -209,9 +209,9 @@ Keyword-only arguments:
 - `VocabularyName`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
-- `Phrases`: `List`\[`str`\]
+- `Phrases`: `Sequence`\[`str`\]
 - `VocabularyFileUri`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateVocabularyResponseTypeDef](./type_defs.md#createvocabularyresponsetypedef).
@@ -235,9 +235,9 @@ Keyword-only arguments:
 - `VocabularyFilterName`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
-- `Words`: `List`\[`str`\]
+- `Words`: `Sequence`\[`str`\]
 - `VocabularyFilterFileUri`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateVocabularyFilterResponseTypeDef](./type_defs.md#createvocabularyfilterresponsetypedef).
@@ -415,7 +415,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -788,7 +788,7 @@ Keyword-only arguments:
 - `Settings`:
   [CallAnalyticsJobSettingsTypeDef](./type_defs.md#callanalyticsjobsettingstypedef)
 - `ChannelDefinitions`:
-  `List`\[[ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef)\]
+  `Sequence`\[[ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef)\]
 
 Returns
 [StartCallAnalyticsJobResponseTypeDef](./type_defs.md#startcallanalyticsjobresponsetypedef).
@@ -820,12 +820,12 @@ Keyword-only arguments:
 - `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
 - `OutputKey`: `str`
 - `OutputEncryptionKMSKeyId`: `str`
-- `KMSEncryptionContext`: `Dict`\[`str`, `str`\]
+- `KMSEncryptionContext`: `Mapping`\[`str`, `str`\]
 - `Settings`:
   [MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef)
 - `ContentIdentificationType`: `Literal['PHI']` (see
   [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype))
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartMedicalTranscriptionJobResponseTypeDef](./type_defs.md#startmedicaltranscriptionjobresponsetypedef).
@@ -853,7 +853,7 @@ Keyword-only arguments:
 - `OutputBucketName`: `str`
 - `OutputKey`: `str`
 - `OutputEncryptionKMSKeyId`: `str`
-- `KMSEncryptionContext`: `Dict`\[`str`, `str`\]
+- `KMSEncryptionContext`: `Mapping`\[`str`, `str`\]
 - `Settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
 - `ModelSettings`: [ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef)
 - `JobExecutionSettings`:
@@ -862,8 +862,9 @@ Keyword-only arguments:
   [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
 - `IdentifyLanguage`: `bool`
 - `LanguageOptions`:
-  `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[LanguageCodeType](./literals.md#languagecodetype)\]
+- `Subtitles`: [SubtitlesTypeDef](./type_defs.md#subtitlestypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartTranscriptionJobResponseTypeDef](./type_defs.md#starttranscriptionjobresponsetypedef).
@@ -883,7 +884,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -902,7 +903,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -922,7 +923,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CategoryName`: `str` *(required)*
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
 
 Returns
 [UpdateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#updatecallanalyticscategoryresponsetypedef).
@@ -968,7 +969,7 @@ Keyword-only arguments:
 - `VocabularyName`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
-- `Phrases`: `List`\[`str`\]
+- `Phrases`: `Sequence`\[`str`\]
 - `VocabularyFileUri`: `str`
 
 Returns
@@ -990,7 +991,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VocabularyFilterName`: `str` *(required)*
-- `Words`: `List`\[`str`\]
+- `Words`: `Sequence`\[`str`\]
 - `VocabularyFilterFileUri`: `str`
 
 Returns

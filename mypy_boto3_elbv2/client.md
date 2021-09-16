@@ -150,7 +150,7 @@ Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `Certificates`:
-  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
+  `Sequence`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
   *(required)*
 
 Returns
@@ -170,8 +170,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceArns`: `List`\[`str`\] *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `ResourceArns`: `Sequence`\[`str`\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -206,15 +206,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerArn`: `str` *(required)*
-- `DefaultActions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `DefaultActions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
   *(required)*
 - `Protocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
 - `Port`: `int`
 - `SslPolicy`: `str`
 - `Certificates`:
-  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
-- `AlpnPolicy`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
+- `AlpnPolicy`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateListenerOutputTypeDef](./type_defs.md#createlisteneroutputtypedef).
@@ -235,13 +235,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
-- `Subnets`: `List`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
 - `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
-- `SecurityGroups`: `List`\[`str`\]
+  `Sequence`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `Scheme`:
   [LoadBalancerSchemeEnumType](./literals.md#loadbalancerschemeenumtype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Type`: [LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype)
 - `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `CustomerOwnedIpv4Pool`: `str`
@@ -265,12 +265,12 @@ Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `Conditions`:
-  `List`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
+  `Sequence`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
   *(required)*
 - `Priority`: `int` *(required)*
-- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
   *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateRuleOutputTypeDef](./type_defs.md#createruleoutputtypedef).
 
@@ -303,7 +303,7 @@ Keyword-only arguments:
 - `UnhealthyThresholdCount`: `int`
 - `Matcher`: [MatcherTypeDef](./type_defs.md#matchertypedef)
 - `TargetType`: [TargetTypeEnumType](./literals.md#targettypeenumtype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateTargetGroupOutputTypeDef](./type_defs.md#createtargetgroupoutputtypedef).
@@ -397,7 +397,7 @@ Keyword-only arguments:
 
 - `TargetGroupArn`: `str` *(required)*
 - `Targets`:
-  `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
+  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -462,7 +462,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerArn`: `str`
-- `ListenerArns`: `List`\[`str`\]
+- `ListenerArns`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 
@@ -504,8 +504,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LoadBalancerArns`: `List`\[`str`\]
-- `Names`: `List`\[`str`\]
+- `LoadBalancerArns`: `Sequence`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 
@@ -527,7 +527,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ListenerArn`: `str`
-- `RuleArns`: `List`\[`str`\]
+- `RuleArns`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 
@@ -548,7 +548,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 
@@ -569,7 +569,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceArns`: `List`\[`str`\] *(required)*
+- `ResourceArns`: `Sequence`\[`str`\] *(required)*
 
 Returns [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef).
 
@@ -608,8 +608,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerArn`: `str`
-- `TargetGroupArns`: `List`\[`str`\]
-- `Names`: `List`\[`str`\]
+- `TargetGroupArns`: `Sequence`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 
@@ -632,7 +632,7 @@ Keyword-only arguments:
 
 - `TargetGroupArn`: `str` *(required)*
 - `Targets`:
-  `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
+  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
 
 Returns
 [DescribeTargetHealthOutputTypeDef](./type_defs.md#describetargethealthoutputtypedef).
@@ -649,7 +649,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -674,9 +674,9 @@ Keyword-only arguments:
 - `Protocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
 - `SslPolicy`: `str`
 - `Certificates`:
-  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
-- `DefaultActions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-- `AlpnPolicy`: `List`\[`str`\]
+  `Sequence`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
+- `DefaultActions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `AlpnPolicy`: `Sequence`\[`str`\]
 
 Returns
 [ModifyListenerOutputTypeDef](./type_defs.md#modifylisteneroutputtypedef).
@@ -699,7 +699,7 @@ Keyword-only arguments:
 
 - `LoadBalancerArn`: `str` *(required)*
 - `Attributes`:
-  `List`\[[LoadBalancerAttributeTypeDef](./type_defs.md#loadbalancerattributetypedef)\]
+  `Sequence`\[[LoadBalancerAttributeTypeDef](./type_defs.md#loadbalancerattributetypedef)\]
   *(required)*
 
 Returns
@@ -721,8 +721,8 @@ Keyword-only arguments:
 
 - `RuleArn`: `str` *(required)*
 - `Conditions`:
-  `List`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
-- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+  `Sequence`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
+- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 Returns [ModifyRuleOutputTypeDef](./type_defs.md#modifyruleoutputtypedef).
 
@@ -772,7 +772,7 @@ Keyword-only arguments:
 
 - `TargetGroupArn`: `str` *(required)*
 - `Attributes`:
-  `List`\[[TargetGroupAttributeTypeDef](./type_defs.md#targetgroupattributetypedef)\]
+  `Sequence`\[[TargetGroupAttributeTypeDef](./type_defs.md#targetgroupattributetypedef)\]
   *(required)*
 
 Returns
@@ -794,7 +794,7 @@ Keyword-only arguments:
 
 - `TargetGroupArn`: `str` *(required)*
 - `Targets`:
-  `List`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
+  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -817,7 +817,7 @@ Keyword-only arguments:
 
 - `ListenerArn`: `str` *(required)*
 - `Certificates`:
-  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
+  `Sequence`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -836,8 +836,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceArns`: `List`\[`str`\] *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `ResourceArns`: `Sequence`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -878,7 +878,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RulePriorities`:
-  `List`\[[RulePriorityPairTypeDef](./type_defs.md#ruleprioritypairtypedef)\]
+  `Sequence`\[[RulePriorityPairTypeDef](./type_defs.md#ruleprioritypairtypedef)\]
   *(required)*
 
 Returns
@@ -900,7 +900,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerArn`: `str` *(required)*
-- `SecurityGroups`: `List`\[`str`\] *(required)*
+- `SecurityGroups`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [SetSecurityGroupsOutputTypeDef](./type_defs.md#setsecuritygroupsoutputtypedef).
@@ -921,9 +921,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerArn`: `str` *(required)*
-- `Subnets`: `List`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
 - `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
+  `Sequence`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
 - `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 Returns [SetSubnetsOutputTypeDef](./type_defs.md#setsubnetsoutputtypedef).

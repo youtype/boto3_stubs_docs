@@ -220,7 +220,7 @@ Boto3 documentation:
 Arguments for `ListUsersPaginator.paginate` method:
 
 - `UserPoolId`: `str` *(required)*
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `Filter`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

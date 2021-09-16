@@ -229,14 +229,14 @@ Keyword-only arguments:
 - `Question`: `str`
 - `RequesterAnnotation`: `str`
 - `QualificationRequirements`:
-  `List`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
+  `Sequence`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
 - `UniqueRequestToken`: `str`
 - `AssignmentReviewPolicy`:
   [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
 - `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
 - `HITLayoutId`: `str`
 - `HITLayoutParameters`:
-  `List`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
+  `Sequence`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
 
 Returns [CreateHITResponseTypeDef](./type_defs.md#createhitresponsetypedef).
 
@@ -261,7 +261,7 @@ Keyword-only arguments:
 - `AutoApprovalDelayInSeconds`: `int`
 - `Keywords`: `str`
 - `QualificationRequirements`:
-  `List`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
+  `Sequence`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
 
 Returns
 [CreateHITTypeResponseTypeDef](./type_defs.md#createhittyperesponsetypedef).
@@ -292,7 +292,7 @@ Keyword-only arguments:
 - `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
 - `HITLayoutId`: `str`
 - `HITLayoutParameters`:
-  `List`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
+  `Sequence`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
 
 Returns
 [CreateHITWithHITTypeResponseTypeDef](./type_defs.md#createhitwithhittyperesponsetypedef).
@@ -439,7 +439,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -576,7 +576,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `AssignmentStatuses`:
-  `List`\[[AssignmentStatusType](./literals.md#assignmentstatustype)\]
+  `Sequence`\[[AssignmentStatusType](./literals.md#assignmentstatustype)\]
 
 Returns
 [ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef).
@@ -712,7 +712,7 @@ Keyword-only arguments:
 
 - `HITId`: `str` *(required)*
 - `PolicyLevels`:
-  `List`\[[ReviewPolicyLevelType](./literals.md#reviewpolicyleveltype)\]
+  `Sequence`\[[ReviewPolicyLevelType](./literals.md#reviewpolicyleveltype)\]
 - `RetrieveActions`: `bool`
 - `RetrieveResults`: `bool`
 - `NextToken`: `str`
@@ -807,7 +807,7 @@ Keyword-only arguments:
 
 - `Subject`: `str` *(required)*
 - `MessageText`: `str` *(required)*
-- `WorkerIds`: `List`\[`str`\] *(required)*
+- `WorkerIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [NotifyWorkersResponseTypeDef](./type_defs.md#notifyworkersresponsetypedef).

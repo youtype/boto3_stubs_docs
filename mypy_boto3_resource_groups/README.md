@@ -100,6 +100,7 @@ from mypy_boto3_resource_groups.literals import GroupConfigurationStatusType, ..
 - [ResourceFilterNameType](./literals.md#resourcefilternametype)
 - [ResourceStatusValueType](./literals.md#resourcestatusvaluetype)
 - [SearchResourcesPaginatorName](./literals.md#searchresourcespaginatorname)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

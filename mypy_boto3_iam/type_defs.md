@@ -643,7 +643,7 @@ from mypy_boto3_iam.type_defs import ContextEntryTypeDef
 Optional fields:
 
 - `ContextKeyName`: `str`
-- `ContextKeyValues`: `List`\[`str`\]
+- `ContextKeyValues`: `Sequence`\[`str`\]
 - `ContextKeyType`:
   [ContextKeyTypeEnumType](./literals.md#contextkeytypeenumtype)
 
@@ -752,7 +752,7 @@ Required fields:
 Optional fields:
 
 - `Path`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateInstanceProfileRequestServiceResourceTypeDef
 
@@ -767,7 +767,7 @@ Required fields:
 Optional fields:
 
 - `Path`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateInstanceProfileResponseTypeDef
 
@@ -846,12 +846,12 @@ from mypy_boto3_iam.type_defs import CreateOpenIDConnectProviderRequestRequestTy
 Required fields:
 
 - `Url`: `str`
-- `ThumbprintList`: `List`\[`str`\]
+- `ThumbprintList`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `ClientIDList`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ClientIDList`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateOpenIDConnectProviderResponseTypeDef
 
@@ -881,7 +881,7 @@ Optional fields:
 
 - `Path`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePolicyRequestServiceResourceTypeDef
 
@@ -898,7 +898,7 @@ Optional fields:
 
 - `Path`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePolicyResponseTypeDef
 
@@ -970,7 +970,7 @@ Optional fields:
 - `Description`: `str`
 - `MaxSessionDuration`: `int`
 - `PermissionsBoundary`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRoleRequestServiceResourceTypeDef
 
@@ -989,7 +989,7 @@ Optional fields:
 - `Description`: `str`
 - `MaxSessionDuration`: `int`
 - `PermissionsBoundary`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRoleResponseTypeDef
 
@@ -1016,7 +1016,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSAMLProviderRequestServiceResourceTypeDef
 
@@ -1031,7 +1031,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSAMLProviderResponseTypeDef
 
@@ -1111,7 +1111,7 @@ Optional fields:
 
 - `Path`: `str`
 - `PermissionsBoundary`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateUserRequestServiceResourceTypeDef
 
@@ -1127,7 +1127,7 @@ Optional fields:
 
 - `Path`: `str`
 - `PermissionsBoundary`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateUserRequestUserTypeDef
 
@@ -1139,7 +1139,7 @@ Optional fields:
 
 - `Path`: `str`
 - `PermissionsBoundary`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateUserResponseTypeDef
 
@@ -1166,7 +1166,7 @@ Required fields:
 Optional fields:
 
 - `Path`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateVirtualMFADeviceRequestServiceResourceTypeDef
 
@@ -1181,7 +1181,7 @@ Required fields:
 Optional fields:
 
 - `Path`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateVirtualMFADeviceResponseTypeDef
 
@@ -1764,7 +1764,7 @@ from mypy_boto3_iam.type_defs import GetAccountAuthorizationDetailsRequestReques
 
 Optional fields:
 
-- `Filter`: `List`\[[EntityTypeType](./literals.md#entitytypetype)\]
+- `Filter`: `Sequence`\[[EntityTypeType](./literals.md#entitytypetype)\]
 - `MaxItems`: `int`
 - `Marker`: `str`
 
@@ -1823,7 +1823,7 @@ from mypy_boto3_iam.type_defs import GetContextKeysForCustomPolicyRequestRequest
 
 Required fields:
 
-- `PolicyInputList`: `List`\[`str`\]
+- `PolicyInputList`: `Sequence`\[`str`\]
 
 ## GetContextKeysForPolicyResponseTypeDef
 
@@ -1849,7 +1849,7 @@ Required fields:
 
 Optional fields:
 
-- `PolicyInputList`: `List`\[`str`\]
+- `PolicyInputList`: `Sequence`\[`str`\]
 
 ## GetCredentialReportResponseTypeDef
 
@@ -2867,7 +2867,7 @@ from mypy_boto3_iam.type_defs import ListPoliciesGrantingServiceAccessRequestReq
 Required fields:
 
 - `Arn`: `str`
-- `ServiceNamespaces`: `List`\[`str`\]
+- `ServiceNamespaces`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -4271,18 +4271,18 @@ from mypy_boto3_iam.type_defs import SimulateCustomPolicyRequestRequestTypeDef
 
 Required fields:
 
-- `PolicyInputList`: `List`\[`str`\]
-- `ActionNames`: `List`\[`str`\]
+- `PolicyInputList`: `Sequence`\[`str`\]
+- `ActionNames`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `PermissionsBoundaryPolicyInputList`: `List`\[`str`\]
-- `ResourceArns`: `List`\[`str`\]
+- `PermissionsBoundaryPolicyInputList`: `Sequence`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 - `ResourcePolicy`: `str`
 - `ResourceOwner`: `str`
 - `CallerArn`: `str`
 - `ContextEntries`:
-  `List`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
+  `Sequence`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
 - `ResourceHandlingOption`: `str`
 - `MaxItems`: `int`
 - `Marker`: `str`
@@ -4311,18 +4311,18 @@ from mypy_boto3_iam.type_defs import SimulatePrincipalPolicyRequestRequestTypeDe
 Required fields:
 
 - `PolicySourceArn`: `str`
-- `ActionNames`: `List`\[`str`\]
+- `ActionNames`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `PolicyInputList`: `List`\[`str`\]
-- `PermissionsBoundaryPolicyInputList`: `List`\[`str`\]
-- `ResourceArns`: `List`\[`str`\]
+- `PolicyInputList`: `Sequence`\[`str`\]
+- `PermissionsBoundaryPolicyInputList`: `Sequence`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 - `ResourcePolicy`: `str`
 - `ResourceOwner`: `str`
 - `CallerArn`: `str`
 - `ContextEntries`:
-  `List`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
+  `Sequence`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
 - `ResourceHandlingOption`: `str`
 - `MaxItems`: `int`
 - `Marker`: `str`
@@ -4350,7 +4350,7 @@ from mypy_boto3_iam.type_defs import TagInstanceProfileRequestRequestTypeDef
 Required fields:
 
 - `InstanceProfileName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagMFADeviceRequestRequestTypeDef
 
@@ -4361,7 +4361,7 @@ from mypy_boto3_iam.type_defs import TagMFADeviceRequestRequestTypeDef
 Required fields:
 
 - `SerialNumber`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagOpenIDConnectProviderRequestRequestTypeDef
 
@@ -4372,7 +4372,7 @@ from mypy_boto3_iam.type_defs import TagOpenIDConnectProviderRequestRequestTypeD
 Required fields:
 
 - `OpenIDConnectProviderArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagPolicyRequestRequestTypeDef
 
@@ -4383,7 +4383,7 @@ from mypy_boto3_iam.type_defs import TagPolicyRequestRequestTypeDef
 Required fields:
 
 - `PolicyArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagRoleRequestRequestTypeDef
 
@@ -4394,7 +4394,7 @@ from mypy_boto3_iam.type_defs import TagRoleRequestRequestTypeDef
 Required fields:
 
 - `RoleName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagSAMLProviderRequestRequestTypeDef
 
@@ -4405,7 +4405,7 @@ from mypy_boto3_iam.type_defs import TagSAMLProviderRequestRequestTypeDef
 Required fields:
 
 - `SAMLProviderArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagServerCertificateRequestRequestTypeDef
 
@@ -4416,7 +4416,7 @@ from mypy_boto3_iam.type_defs import TagServerCertificateRequestRequestTypeDef
 Required fields:
 
 - `ServerCertificateName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -4438,7 +4438,7 @@ from mypy_boto3_iam.type_defs import TagUserRequestRequestTypeDef
 Required fields:
 
 - `UserName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TrackedActionLastAccessedTypeDef
 
@@ -4462,7 +4462,7 @@ from mypy_boto3_iam.type_defs import UntagInstanceProfileRequestRequestTypeDef
 Required fields:
 
 - `InstanceProfileName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagMFADeviceRequestRequestTypeDef
 
@@ -4473,7 +4473,7 @@ from mypy_boto3_iam.type_defs import UntagMFADeviceRequestRequestTypeDef
 Required fields:
 
 - `SerialNumber`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagOpenIDConnectProviderRequestRequestTypeDef
 
@@ -4484,7 +4484,7 @@ from mypy_boto3_iam.type_defs import UntagOpenIDConnectProviderRequestRequestTyp
 Required fields:
 
 - `OpenIDConnectProviderArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagPolicyRequestRequestTypeDef
 
@@ -4495,7 +4495,7 @@ from mypy_boto3_iam.type_defs import UntagPolicyRequestRequestTypeDef
 Required fields:
 
 - `PolicyArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagRoleRequestRequestTypeDef
 
@@ -4506,7 +4506,7 @@ from mypy_boto3_iam.type_defs import UntagRoleRequestRequestTypeDef
 Required fields:
 
 - `RoleName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagSAMLProviderRequestRequestTypeDef
 
@@ -4517,7 +4517,7 @@ from mypy_boto3_iam.type_defs import UntagSAMLProviderRequestRequestTypeDef
 Required fields:
 
 - `SAMLProviderArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagServerCertificateRequestRequestTypeDef
 
@@ -4528,7 +4528,7 @@ from mypy_boto3_iam.type_defs import UntagServerCertificateRequestRequestTypeDef
 Required fields:
 
 - `ServerCertificateName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagUserRequestRequestTypeDef
 
@@ -4539,7 +4539,7 @@ from mypy_boto3_iam.type_defs import UntagUserRequestRequestTypeDef
 Required fields:
 
 - `UserName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAccessKeyRequestAccessKeyPairTypeDef
 
@@ -4712,7 +4712,7 @@ from mypy_boto3_iam.type_defs import UpdateOpenIDConnectProviderThumbprintReques
 Required fields:
 
 - `OpenIDConnectProviderArn`: `str`
-- `ThumbprintList`: `List`\[`str`\]
+- `ThumbprintList`: `Sequence`\[`str`\]
 
 ## UpdateRoleDescriptionRequestRequestTypeDef
 
@@ -4928,7 +4928,7 @@ Optional fields:
 
 - `Path`: `str`
 - `CertificateChain`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UploadServerCertificateRequestServiceResourceTypeDef
 
@@ -4946,7 +4946,7 @@ Optional fields:
 
 - `Path`: `str`
 - `CertificateChain`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UploadServerCertificateResponseTypeDef
 

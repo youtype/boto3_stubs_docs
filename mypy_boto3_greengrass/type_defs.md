@@ -324,7 +324,8 @@ from mypy_boto3_greengrass.type_defs import ConnectorDefinitionVersionTypeDef
 
 Optional fields:
 
-- `Connectors`: `List`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
+- `Connectors`:
+  `Sequence`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
 
 ## ConnectorTypeDef
 
@@ -339,7 +340,7 @@ Required fields:
 
 Optional fields:
 
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 
 ## CoreDefinitionVersionTypeDef
 
@@ -349,7 +350,7 @@ from mypy_boto3_greengrass.type_defs import CoreDefinitionVersionTypeDef
 
 Optional fields:
 
-- `Cores`: `List`\[[CoreTypeDef](./type_defs.md#coretypedef)\]
+- `Cores`: `Sequence`\[[CoreTypeDef](./type_defs.md#coretypedef)\]
 
 ## CoreTypeDef
 
@@ -379,7 +380,7 @@ Optional fields:
 - `InitialVersion`:
   [ConnectorDefinitionVersionTypeDef](./type_defs.md#connectordefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateConnectorDefinitionResponseTypeDef
 
@@ -412,7 +413,8 @@ Required fields:
 Optional fields:
 
 - `AmznClientToken`: `str`
-- `Connectors`: `List`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
+- `Connectors`:
+  `Sequence`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
 
 ## CreateConnectorDefinitionVersionResponseTypeDef
 
@@ -441,7 +443,7 @@ Optional fields:
 - `InitialVersion`:
   [CoreDefinitionVersionTypeDef](./type_defs.md#coredefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateCoreDefinitionResponseTypeDef
 
@@ -474,7 +476,7 @@ Required fields:
 Optional fields:
 
 - `AmznClientToken`: `str`
-- `Cores`: `List`\[[CoreTypeDef](./type_defs.md#coretypedef)\]
+- `Cores`: `Sequence`\[[CoreTypeDef](./type_defs.md#coretypedef)\]
 
 ## CreateCoreDefinitionVersionResponseTypeDef
 
@@ -533,7 +535,7 @@ Optional fields:
 - `InitialVersion`:
   [DeviceDefinitionVersionTypeDef](./type_defs.md#devicedefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDeviceDefinitionResponseTypeDef
 
@@ -566,7 +568,7 @@ Required fields:
 Optional fields:
 
 - `AmznClientToken`: `str`
-- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
+- `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
 
 ## CreateDeviceDefinitionVersionResponseTypeDef
 
@@ -595,7 +597,7 @@ Optional fields:
 - `InitialVersion`:
   [FunctionDefinitionVersionTypeDef](./type_defs.md#functiondefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateFunctionDefinitionResponseTypeDef
 
@@ -630,7 +632,7 @@ Optional fields:
 - `AmznClientToken`: `str`
 - `DefaultConfig`:
   [FunctionDefaultConfigTypeDef](./type_defs.md#functiondefaultconfigtypedef)
-- `Functions`: `List`\[[FunctionTypeDef](./type_defs.md#functiontypedef)\]
+- `Functions`: `Sequence`\[[FunctionTypeDef](./type_defs.md#functiontypedef)\]
 
 ## CreateFunctionDefinitionVersionResponseTypeDef
 
@@ -687,7 +689,7 @@ Optional fields:
 
 - `AmznClientToken`: `str`
 - `InitialVersion`: [GroupVersionTypeDef](./type_defs.md#groupversiontypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateGroupResponseTypeDef
 
@@ -755,7 +757,7 @@ Optional fields:
 - `InitialVersion`:
   [LoggerDefinitionVersionTypeDef](./type_defs.md#loggerdefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateLoggerDefinitionResponseTypeDef
 
@@ -788,7 +790,7 @@ Required fields:
 Optional fields:
 
 - `AmznClientToken`: `str`
-- `Loggers`: `List`\[[LoggerTypeDef](./type_defs.md#loggertypedef)\]
+- `Loggers`: `Sequence`\[[LoggerTypeDef](./type_defs.md#loggertypedef)\]
 
 ## CreateLoggerDefinitionVersionResponseTypeDef
 
@@ -817,7 +819,7 @@ Optional fields:
 - `InitialVersion`:
   [ResourceDefinitionVersionTypeDef](./type_defs.md#resourcedefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateResourceDefinitionResponseTypeDef
 
@@ -850,7 +852,7 @@ Required fields:
 Optional fields:
 
 - `AmznClientToken`: `str`
-- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
 ## CreateResourceDefinitionVersionResponseTypeDef
 
@@ -878,7 +880,7 @@ Required fields:
 - `S3UrlSignerRole`: `str`
 - `SoftwareToUpdate`:
   [SoftwareToUpdateType](./literals.md#softwaretoupdatetype)
-- `UpdateTargets`: `List`\[`str`\]
+- `UpdateTargets`: `Sequence`\[`str`\]
 - `UpdateTargetsArchitecture`:
   [UpdateTargetsArchitectureType](./literals.md#updatetargetsarchitecturetype)
 - `UpdateTargetsOperatingSystem`:
@@ -916,7 +918,7 @@ Optional fields:
 - `InitialVersion`:
   [SubscriptionDefinitionVersionTypeDef](./type_defs.md#subscriptiondefinitionversiontypedef)
 - `Name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateSubscriptionDefinitionResponseTypeDef
 
@@ -950,7 +952,7 @@ Optional fields:
 
 - `AmznClientToken`: `str`
 - `Subscriptions`:
-  `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
+  `Sequence`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
 
 ## CreateSubscriptionDefinitionVersionResponseTypeDef
 
@@ -1086,7 +1088,7 @@ from mypy_boto3_greengrass.type_defs import DeviceDefinitionVersionTypeDef
 
 Optional fields:
 
-- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
+- `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
 
 ## DeviceTypeDef
 
@@ -1161,8 +1163,8 @@ Optional fields:
 - `Execution`:
   [FunctionExecutionConfigTypeDef](./type_defs.md#functionexecutionconfigtypedef)
 - `ResourceAccessPolicies`:
-  `List`\[[ResourceAccessPolicyTypeDef](./type_defs.md#resourceaccesspolicytypedef)\]
-- `Variables`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[ResourceAccessPolicyTypeDef](./type_defs.md#resourceaccesspolicytypedef)\]
+- `Variables`: `Mapping`\[`str`, `str`\]
 
 ## FunctionConfigurationTypeDef
 
@@ -1215,7 +1217,7 @@ Optional fields:
 
 - `DefaultConfig`:
   [FunctionDefaultConfigTypeDef](./type_defs.md#functiondefaultconfigtypedef)
-- `Functions`: `List`\[[FunctionTypeDef](./type_defs.md#functiontypedef)\]
+- `Functions`: `Sequence`\[[FunctionTypeDef](./type_defs.md#functiontypedef)\]
 
 ## FunctionExecutionConfigTypeDef
 
@@ -2574,7 +2576,7 @@ from mypy_boto3_greengrass.type_defs import LoggerDefinitionVersionTypeDef
 
 Optional fields:
 
-- `Loggers`: `List`\[[LoggerTypeDef](./type_defs.md#loggertypedef)\]
+- `Loggers`: `Sequence`\[[LoggerTypeDef](./type_defs.md#loggertypedef)\]
 
 ## LoggerTypeDef
 
@@ -2674,7 +2676,7 @@ from mypy_boto3_greengrass.type_defs import ResourceDefinitionVersionTypeDef
 
 Optional fields:
 
-- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
 ## ResourceDownloadOwnerSettingTypeDef
 
@@ -2760,7 +2762,7 @@ from mypy_boto3_greengrass.type_defs import SecretsManagerSecretResourceDataType
 Optional fields:
 
 - `ARN`: `str`
-- `AdditionalStagingLabelsToDownload`: `List`\[`str`\]
+- `AdditionalStagingLabelsToDownload`: `Sequence`\[`str`\]
 
 ## StartBulkDeploymentRequestRequestTypeDef
 
@@ -2776,7 +2778,7 @@ Required fields:
 Optional fields:
 
 - `AmznClientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## StartBulkDeploymentResponseTypeDef
 
@@ -2810,7 +2812,7 @@ from mypy_boto3_greengrass.type_defs import SubscriptionDefinitionVersionTypeDef
 Optional fields:
 
 - `Subscriptions`:
-  `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
+  `Sequence`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
 
 ## SubscriptionTypeDef
 
@@ -2837,7 +2839,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TelemetryConfigurationTypeDef
 
@@ -2873,7 +2875,7 @@ from mypy_boto3_greengrass.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateConnectivityInfoRequestRequestTypeDef
 
@@ -2888,7 +2890,7 @@ Required fields:
 Optional fields:
 
 - `ConnectivityInfo`:
-  `List`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
+  `Sequence`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
 
 ## UpdateConnectivityInfoResponseTypeDef
 

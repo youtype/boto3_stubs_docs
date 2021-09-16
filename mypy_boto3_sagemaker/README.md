@@ -236,6 +236,7 @@ from mypy_boto3_sagemaker.client import SageMakerClient
 - [put_model_package_group_policy](./client.md#put_model_package_group_policy)
 - [register_devices](./client.md#register_devices)
 - [render_ui_template](./client.md#render_ui_template)
+- [retry_pipeline_execution](./client.md#retry_pipeline_execution)
 - [search](./client.md#search)
 - [send_pipeline_execution_step_failure](./client.md#send_pipeline_execution_step_failure)
 - [send_pipeline_execution_step_success](./client.md#send_pipeline_execution_step_success)
@@ -625,6 +626,7 @@ from mypy_boto3_sagemaker.literals import ActionStatusType, ...
 - [UserProfileSortKeyType](./literals.md#userprofilesortkeytype)
 - [UserProfileStatusType](./literals.md#userprofilestatustype)
 - [VariantPropertyTypeType](./literals.md#variantpropertytypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 
@@ -1268,6 +1270,8 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [RetentionPolicyTypeDef](./type_defs.md#retentionpolicytypedef)
+- [RetryPipelineExecutionRequestRequestTypeDef](./type_defs.md#retrypipelineexecutionrequestrequesttypedef)
+- [RetryPipelineExecutionResponseTypeDef](./type_defs.md#retrypipelineexecutionresponsetypedef)
 - [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - [S3DataSourceTypeDef](./type_defs.md#s3datasourcetypedef)
 - [S3StorageConfigTypeDef](./type_defs.md#s3storageconfigtypedef)

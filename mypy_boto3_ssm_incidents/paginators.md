@@ -60,7 +60,7 @@ Boto3 documentation:
 
 Arguments for `ListIncidentRecordsPaginator.paginate` method:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -163,7 +163,7 @@ Boto3 documentation:
 Arguments for `ListTimelineEventsPaginator.paginate` method:
 
 - `incidentRecordArn`: `str` *(required)*
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `sortBy`: `Literal['EVENT_TIME']` (see
   [TimelineEventSortType](./literals.md#timelineeventsorttype))
 - `sortOrder`: [SortOrderType](./literals.md#sortordertype)

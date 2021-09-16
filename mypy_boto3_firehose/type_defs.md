@@ -157,7 +157,7 @@ Optional fields:
   [SplunkDestinationConfigurationTypeDef](./type_defs.md#splunkdestinationconfigurationtypedef)
 - `HttpEndpointDestinationConfiguration`:
   [HttpEndpointDestinationConfigurationTypeDef](./type_defs.md#httpendpointdestinationconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDeliveryStreamOutputTypeDef
 
@@ -574,7 +574,7 @@ from mypy_boto3_firehose.type_defs import HiveJsonSerDeTypeDef
 
 Optional fields:
 
-- `TimestampFormats`: `List`\[`str`\]
+- `TimestampFormats`: `Sequence`\[`str`\]
 
 ## HttpEndpointBufferingHintsTypeDef
 
@@ -715,7 +715,7 @@ Optional fields:
 
 - `ContentEncoding`: [ContentEncodingType](./literals.md#contentencodingtype)
 - `CommonAttributes`:
-  `List`\[[HttpEndpointCommonAttributeTypeDef](./type_defs.md#httpendpointcommonattributetypedef)\]
+  `Sequence`\[[HttpEndpointCommonAttributeTypeDef](./type_defs.md#httpendpointcommonattributetypedef)\]
 
 ## HttpEndpointRetryOptionsTypeDef
 
@@ -834,7 +834,7 @@ Optional fields:
 
 - `ConvertDotsInJsonKeysToUnderscores`: `bool`
 - `CaseInsensitive`: `bool`
-- `ColumnToJsonKeyMappings`: `Dict`\[`str`, `str`\]
+- `ColumnToJsonKeyMappings`: `Mapping`\[`str`, `str`\]
 
 ## OrcSerDeTypeDef
 
@@ -850,7 +850,7 @@ Optional fields:
 - `EnablePadding`: `bool`
 - `PaddingTolerance`: `float`
 - `Compression`: [OrcCompressionType](./literals.md#orccompressiontype)
-- `BloomFilterColumns`: `List`\[`str`\]
+- `BloomFilterColumns`: `Sequence`\[`str`\]
 - `BloomFilterFalsePositiveProbability`: `float`
 - `DictionaryKeyThreshold`: `float`
 - `FormatVersion`: [OrcFormatVersionType](./literals.md#orcformatversiontype)
@@ -890,7 +890,8 @@ from mypy_boto3_firehose.type_defs import ProcessingConfigurationTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
-- `Processors`: `List`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
+- `Processors`:
+  `Sequence`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
 
 ## ProcessorParameterTypeDef
 
@@ -917,7 +918,7 @@ Required fields:
 Optional fields:
 
 - `Parameters`:
-  `List`\[[ProcessorParameterTypeDef](./type_defs.md#processorparametertypedef)\]
+  `Sequence`\[[ProcessorParameterTypeDef](./type_defs.md#processorparametertypedef)\]
 
 ## PutRecordBatchInputRequestTypeDef
 
@@ -928,7 +929,7 @@ from mypy_boto3_firehose.type_defs import PutRecordBatchInputRequestTypeDef
 Required fields:
 
 - `DeliveryStreamName`: `str`
-- `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
+- `Records`: `Sequence`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
 
 ## PutRecordBatchOutputTypeDef
 
@@ -1330,7 +1331,7 @@ from mypy_boto3_firehose.type_defs import TagDeliveryStreamInputRequestTypeDef
 Required fields:
 
 - `DeliveryStreamName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1355,7 +1356,7 @@ from mypy_boto3_firehose.type_defs import UntagDeliveryStreamInputRequestTypeDef
 Required fields:
 
 - `DeliveryStreamName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDestinationInputRequestTypeDef
 
@@ -1405,6 +1406,6 @@ from mypy_boto3_firehose.type_defs import VpcConfigurationTypeDef
 
 Required fields:
 
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]

@@ -38,7 +38,7 @@ Arguments for `ListAccessPreviewFindingsPaginator.paginate` method:
 
 - `accessPreviewId`: `str` *(required)*
 - `analyzerArn`: `str` *(required)*
-- `filter`: `Dict`\[`str`,
+- `filter`: `Mapping`\[`str`,
   [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -171,7 +171,7 @@ Boto3 documentation:
 Arguments for `ListFindingsPaginator.paginate` method:
 
 - `analyzerArn`: `str` *(required)*
-- `filter`: `Dict`\[`str`,
+- `filter`: `Mapping`\[`str`,
   [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `sort`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 - `PaginationConfig`:

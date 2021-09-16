@@ -165,7 +165,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `GroupIds`: `List`\[`str`\] *(required)*
+- `GroupIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -184,7 +184,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GroupId`: `str` *(required)*
-- `UserRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
+- `UserRules`:
+  `Sequence`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -222,7 +223,7 @@ Keyword-only arguments:
 - `SourceImageId`: `str` *(required)*
 - `SourceRegion`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CopyWorkspaceImageResultTypeDef](./type_defs.md#copyworkspaceimageresulttypedef).
@@ -243,7 +244,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ConnectionString`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateConnectionAliasResultTypeDef](./type_defs.md#createconnectionaliasresulttypedef).
@@ -264,8 +265,9 @@ Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `GroupDesc`: `str`
-- `UserRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `UserRules`:
+  `Sequence`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateIpGroupResultTypeDef](./type_defs.md#createipgroupresulttypedef).
@@ -285,7 +287,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -312,7 +314,7 @@ Keyword-only arguments:
 - `UserStorage`: [UserStorageTypeDef](./type_defs.md#userstoragetypedef)
   *(required)*
 - `RootStorage`: [RootStorageTypeDef](./type_defs.md#rootstoragetypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateWorkspaceBundleResultTypeDef](./type_defs.md#createworkspacebundleresulttypedef).
@@ -332,7 +334,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Workspaces`:
-  `List`\[[WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef)\]
+  `Sequence`\[[WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef)\]
   *(required)*
 
 Returns
@@ -390,7 +392,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -501,7 +503,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceIds`: `List`\[`str`\] *(required)*
+- `ResourceIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeClientPropertiesResultTypeDef](./type_defs.md#describeclientpropertiesresulttypedef).
@@ -545,7 +547,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AliasIds`: `List`\[`str`\]
+- `AliasIds`: `Sequence`\[`str`\]
 - `ResourceId`: `str`
 - `Limit`: `int`
 - `NextToken`: `str`
@@ -567,7 +569,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `GroupIds`: `List`\[`str`\]
+- `GroupIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -607,7 +609,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `BundleIds`: `List`\[`str`\]
+- `BundleIds`: `Sequence`\[`str`\]
 - `Owner`: `str`
 - `NextToken`: `str`
 
@@ -629,7 +631,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DirectoryIds`: `List`\[`str`\]
+- `DirectoryIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -675,7 +677,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ImageIds`: `List`\[`str`\]
+- `ImageIds`: `Sequence`\[`str`\]
 - `ImageType`: [ImageTypeType](./literals.md#imagetypetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -717,7 +719,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `WorkspaceIds`: `List`\[`str`\]
+- `WorkspaceIds`: `Sequence`\[`str`\]
 - `DirectoryId`: `str`
 - `UserName`: `str`
 - `BundleId`: `str`
@@ -742,7 +744,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `WorkspaceIds`: `List`\[`str`\]
+- `WorkspaceIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 Returns
@@ -784,7 +786,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `GroupIds`: `List`\[`str`\] *(required)*
+- `GroupIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -801,7 +803,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -829,8 +831,9 @@ Keyword-only arguments:
   *(required)*
 - `ImageName`: `str` *(required)*
 - `ImageDescription`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Applications`: `List`\[[ApplicationType](./literals.md#applicationtype)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Applications`:
+  `Sequence`\[[ApplicationType](./literals.md#applicationtype)\]
 
 Returns
 [ImportWorkspaceImageResultTypeDef](./type_defs.md#importworkspaceimageresulttypedef).
@@ -1049,7 +1052,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RebootWorkspaceRequests`:
-  `List`\[[RebootRequestTypeDef](./type_defs.md#rebootrequesttypedef)\]
+  `Sequence`\[[RebootRequestTypeDef](./type_defs.md#rebootrequesttypedef)\]
   *(required)*
 
 Returns
@@ -1070,7 +1073,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RebuildWorkspaceRequests`:
-  `List`\[[RebuildRequestTypeDef](./type_defs.md#rebuildrequesttypedef)\]
+  `Sequence`\[[RebuildRequestTypeDef](./type_defs.md#rebuildrequesttypedef)\]
   *(required)*
 
 Returns
@@ -1093,10 +1096,10 @@ Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `EnableWorkDocs`: `bool` *(required)*
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `EnableSelfService`: `bool`
 - `Tenancy`: [TenancyType](./literals.md#tenancytype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1133,7 +1136,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GroupId`: `str` *(required)*
-- `UserRules`: `List`\[`str`\] *(required)*
+- `UserRules`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1152,7 +1155,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StartWorkspaceRequests`:
-  `List`\[[StartRequestTypeDef](./type_defs.md#startrequesttypedef)\]
+  `Sequence`\[[StartRequestTypeDef](./type_defs.md#startrequesttypedef)\]
   *(required)*
 
 Returns
@@ -1173,7 +1176,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StopWorkspaceRequests`:
-  `List`\[[StopRequestTypeDef](./type_defs.md#stoprequesttypedef)\]
+  `Sequence`\[[StopRequestTypeDef](./type_defs.md#stoprequesttypedef)\]
   *(required)*
 
 Returns
@@ -1194,7 +1197,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TerminateWorkspaceRequests`:
-  `List`\[[TerminateRequestTypeDef](./type_defs.md#terminaterequesttypedef)\]
+  `Sequence`\[[TerminateRequestTypeDef](./type_defs.md#terminaterequesttypedef)\]
   *(required)*
 
 Returns
@@ -1240,7 +1243,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GroupId`: `str` *(required)*
-- `UserRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
+- `UserRules`:
+  `Sequence`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

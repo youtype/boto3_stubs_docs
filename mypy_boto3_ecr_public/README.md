@@ -123,6 +123,7 @@ from mypy_boto3_ecr_public.literals import DescribeImageTagsPaginatorName, ...
 - [LayerAvailabilityType](./literals.md#layeravailabilitytype)
 - [LayerFailureCodeType](./literals.md#layerfailurecodetype)
 - [RegistryAliasStatusType](./literals.md#registryaliasstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

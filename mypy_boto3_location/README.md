@@ -147,6 +147,7 @@ from mypy_boto3_location.literals import BatchItemErrorCodeType, ...
 - [PricingPlanType](./literals.md#pricingplantype)
 - [TravelModeType](./literals.md#travelmodetype)
 - [VehicleWeightUnitType](./literals.md#vehicleweightunittype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

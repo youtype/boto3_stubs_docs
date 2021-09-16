@@ -99,7 +99,7 @@ from mypy_boto3_emr_containers.type_defs import ConfigurationOverridesTypeDef
 Optional fields:
 
 - `applicationConfiguration`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `monitoringConfiguration`:
   [MonitoringConfigurationTypeDef](./type_defs.md#monitoringconfigurationtypedef)
 
@@ -115,9 +115,9 @@ Required fields:
 
 Optional fields:
 
-- `properties`: `Dict`\[`str`, `str`\]
+- `properties`: `Mapping`\[`str`, `str`\]
 - `configurations`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 
 ## ContainerInfoTypeDef
 
@@ -165,7 +165,7 @@ Optional fields:
 
 - `configurationOverrides`:
   [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateManagedEndpointResponseTypeDef
 
@@ -197,7 +197,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateVirtualClusterResponseTypeDef
 
@@ -417,7 +417,7 @@ Optional fields:
 - `createdBefore`: `Union`\[`datetime`, `str`\]
 - `createdAfter`: `Union`\[`datetime`, `str`\]
 - `name`: `str`
-- `states`: `List`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
+- `states`: `Sequence`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -448,8 +448,8 @@ Optional fields:
 
 - `createdBefore`: `Union`\[`datetime`, `str`\]
 - `createdAfter`: `Union`\[`datetime`, `str`\]
-- `types`: `List`\[`str`\]
-- `states`: `List`\[[EndpointStateType](./literals.md#endpointstatetype)\]
+- `types`: `Sequence`\[`str`\]
+- `states`: `Sequence`\[[EndpointStateType](./literals.md#endpointstatetype)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -502,7 +502,7 @@ Optional fields:
 - `createdAfter`: `Union`\[`datetime`, `str`\]
 - `createdBefore`: `Union`\[`datetime`, `str`\]
 - `states`:
-  `List`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
+  `Sequence`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -604,7 +604,7 @@ Optional fields:
 - `name`: `str`
 - `configurationOverrides`:
   [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## StartJobRunResponseTypeDef
 
@@ -630,7 +630,7 @@ from mypy_boto3_emr_containers.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -641,7 +641,7 @@ from mypy_boto3_emr_containers.type_defs import UntagResourceRequestRequestTypeD
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## VirtualClusterTypeDef
 

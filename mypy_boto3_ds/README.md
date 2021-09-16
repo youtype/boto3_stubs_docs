@@ -207,6 +207,7 @@ from mypy_boto3_ds.literals import CertificateStateType, ...
 - [TrustDirectionType](./literals.md#trustdirectiontype)
 - [TrustStateType](./literals.md#truststatetype)
 - [TrustTypeType](./literals.md#trusttypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

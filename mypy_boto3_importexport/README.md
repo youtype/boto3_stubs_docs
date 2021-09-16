@@ -94,6 +94,7 @@ from mypy_boto3_importexport.literals import JobTypeType, ...
 
 - [JobTypeType](./literals.md#jobtypetype)
 - [ListJobsPaginatorName](./literals.md#listjobspaginatorname)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

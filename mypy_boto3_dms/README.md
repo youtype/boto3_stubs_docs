@@ -227,6 +227,7 @@ from mypy_boto3_dms.literals import AuthMechanismValueType, ...
 - [StartReplicationTaskTypeValueType](./literals.md#startreplicationtasktypevaluetype)
 - [TargetDbTypeType](./literals.md#targetdbtypetype)
 - [TestConnectionSucceedsWaiterName](./literals.md#testconnectionsucceedswaitername)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

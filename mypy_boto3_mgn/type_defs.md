@@ -131,15 +131,15 @@ Required fields:
 - `ebsEncryption`:
   [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
 - `replicationServerInstanceType`: `str`
-- `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
+- `replicationServersSecurityGroupsIDs`: `Sequence`\[`str`\]
 - `stagingAreaSubnetId`: `str`
-- `stagingAreaTags`: `Dict`\[`str`, `str`\]
+- `stagingAreaTags`: `Mapping`\[`str`, `str`\]
 - `useDedicatedReplicationServer`: `bool`
 
 Optional fields:
 
 - `ebsEncryptionKeyArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## DataReplicationErrorTypeDef
 
@@ -279,7 +279,7 @@ from mypy_boto3_mgn.type_defs import DescribeJobsRequestFiltersTypeDef
 Optional fields:
 
 - `fromDate`: `str`
-- `jobIDs`: `List`\[`str`\]
+- `jobIDs`: `Sequence`\[`str`\]
 - `toDate`: `str`
 
 ## DescribeJobsRequestRequestTypeDef
@@ -319,7 +319,7 @@ from mypy_boto3_mgn.type_defs import DescribeReplicationConfigurationTemplatesRe
 
 Required fields:
 
-- `replicationConfigurationTemplateIDs`: `List`\[`str`\]
+- `replicationConfigurationTemplateIDs`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -349,7 +349,7 @@ from mypy_boto3_mgn.type_defs import DescribeSourceServersRequestFiltersTypeDef
 Optional fields:
 
 - `isArchived`: `bool`
-- `sourceServerIDs`: `List`\[`str`\]
+- `sourceServerIDs`: `Sequence`\[`str`\]
 
 ## DescribeSourceServersRequestRequestTypeDef
 
@@ -917,11 +917,11 @@ from mypy_boto3_mgn.type_defs import StartCutoverRequestRequestTypeDef
 
 Required fields:
 
-- `sourceServerIDs`: `List`\[`str`\]
+- `sourceServerIDs`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## StartCutoverResponseTypeDef
 
@@ -943,11 +943,11 @@ from mypy_boto3_mgn.type_defs import StartTestRequestRequestTypeDef
 
 Required fields:
 
-- `sourceServerIDs`: `List`\[`str`\]
+- `sourceServerIDs`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## StartTestResponseTypeDef
 
@@ -970,7 +970,7 @@ from mypy_boto3_mgn.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TerminateTargetInstancesRequestRequestTypeDef
 
@@ -980,11 +980,11 @@ from mypy_boto3_mgn.type_defs import TerminateTargetInstancesRequestRequestTypeD
 
 Required fields:
 
-- `sourceServerIDs`: `List`\[`str`\]
+- `sourceServerIDs`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TerminateTargetInstancesResponseTypeDef
 
@@ -1007,7 +1007,7 @@ from mypy_boto3_mgn.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateLaunchConfigurationRequestRequestTypeDef
 
@@ -1054,11 +1054,11 @@ Optional fields:
 - `ebsEncryptionKeyArn`: `str`
 - `name`: `str`
 - `replicatedDisks`:
-  `List`\[[ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef)\]
+  `Sequence`\[[ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef)\]
 - `replicationServerInstanceType`: `str`
-- `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
+- `replicationServersSecurityGroupsIDs`: `Sequence`\[`str`\]
 - `stagingAreaSubnetId`: `str`
-- `stagingAreaTags`: `Dict`\[`str`, `str`\]
+- `stagingAreaTags`: `Mapping`\[`str`, `str`\]
 - `useDedicatedReplicationServer`: `bool`
 
 ## UpdateReplicationConfigurationTemplateRequestRequestTypeDef
@@ -1085,7 +1085,7 @@ Optional fields:
   [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
 - `ebsEncryptionKeyArn`: `str`
 - `replicationServerInstanceType`: `str`
-- `replicationServersSecurityGroupsIDs`: `List`\[`str`\]
+- `replicationServersSecurityGroupsIDs`: `Sequence`\[`str`\]
 - `stagingAreaSubnetId`: `str`
-- `stagingAreaTags`: `Dict`\[`str`, `str`\]
+- `stagingAreaTags`: `Mapping`\[`str`, `str`\]
 - `useDedicatedReplicationServer`: `bool`

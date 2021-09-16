@@ -656,11 +656,11 @@ from mypy_boto3_snowball.type_defs import JobResourceTypeDef
 Optional fields:
 
 - `S3Resources`:
-  `List`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\]
+  `Sequence`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\]
 - `LambdaResources`:
-  `List`\[[LambdaResourceTypeDef](./type_defs.md#lambdaresourcetypedef)\]
+  `Sequence`\[[LambdaResourceTypeDef](./type_defs.md#lambdaresourcetypedef)\]
 - `Ec2AmiResources`:
-  `List`\[[Ec2AmiResourceTypeDef](./type_defs.md#ec2amiresourcetypedef)\]
+  `Sequence`\[[Ec2AmiResourceTypeDef](./type_defs.md#ec2amiresourcetypedef)\]
 
 ## KeyRangeTypeDef
 
@@ -683,7 +683,7 @@ Optional fields:
 
 - `LambdaArn`: `str`
 - `EventTriggers`:
-  `List`\[[EventTriggerDefinitionTypeDef](./type_defs.md#eventtriggerdefinitiontypedef)\]
+  `Sequence`\[[EventTriggerDefinitionTypeDef](./type_defs.md#eventtriggerdefinitiontypedef)\]
 
 ## ListClusterJobsRequestRequestTypeDef
 
@@ -855,7 +855,7 @@ from mypy_boto3_snowball.type_defs import NotificationTypeDef
 Optional fields:
 
 - `SnsTopicARN`: `str`
-- `JobStatesToNotify`: `List`\[[JobStateType](./literals.md#jobstatetype)\]
+- `JobStatesToNotify`: `Sequence`\[[JobStateType](./literals.md#jobstatetype)\]
 - `NotifyAll`: `bool`
 
 ## OnDeviceServiceConfigurationTypeDef
@@ -906,7 +906,7 @@ Optional fields:
 - `BucketArn`: `str`
 - `KeyRange`: [KeyRangeTypeDef](./type_defs.md#keyrangetypedef)
 - `TargetOnDeviceServices`:
-  `List`\[[TargetOnDeviceServiceTypeDef](./type_defs.md#targetondeviceservicetypedef)\]
+  `Sequence`\[[TargetOnDeviceServiceTypeDef](./type_defs.md#targetondeviceservicetypedef)\]
 
 ## ShipmentTypeDef
 

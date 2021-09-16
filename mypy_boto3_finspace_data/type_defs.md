@@ -55,13 +55,13 @@ Required fields:
 - `changeType`: [ChangeTypeType](./literals.md#changetypetype)
 - `sourceType`: `Literal['S3']` (see
   [SourceTypeType](./literals.md#sourcetypetype))
-- `sourceParams`: `Dict`\[`str`, `str`\]
+- `sourceParams`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
 - `formatType`: [FormatTypeType](./literals.md#formattypetype)
-- `formatParams`: `Dict`\[`str`, `str`\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `formatParams`: `Mapping`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateChangesetResponseTypeDef
 

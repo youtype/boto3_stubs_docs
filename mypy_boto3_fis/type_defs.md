@@ -125,9 +125,9 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `parameters`: `Dict`\[`str`, `str`\]
-- `targets`: `Dict`\[`str`, `str`\]
-- `startAfter`: `List`\[`str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
+- `targets`: `Mapping`\[`str`, `str`\]
+- `startAfter`: `Sequence`\[`str`\]
 
 ## CreateExperimentTemplateRequestRequestTypeDef
 
@@ -140,16 +140,16 @@ Required fields:
 - `clientToken`: `str`
 - `description`: `str`
 - `stopConditions`:
-  `List`\[[CreateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#createexperimenttemplatestopconditioninputtypedef)\]
-- `actions`: `Dict`\[`str`,
+  `Sequence`\[[CreateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#createexperimenttemplatestopconditioninputtypedef)\]
+- `actions`: `Mapping`\[`str`,
   [CreateExperimentTemplateActionInputTypeDef](./type_defs.md#createexperimenttemplateactioninputtypedef)\]
 - `roleArn`: `str`
 
 Optional fields:
 
-- `targets`: `Dict`\[`str`,
+- `targets`: `Mapping`\[`str`,
   [CreateExperimentTemplateTargetInputTypeDef](./type_defs.md#createexperimenttemplatetargetinputtypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateExperimentTemplateResponseTypeDef
 
@@ -191,10 +191,10 @@ Required fields:
 
 Optional fields:
 
-- `resourceArns`: `List`\[`str`\]
-- `resourceTags`: `Dict`\[`str`, `str`\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `resourceTags`: `Mapping`\[`str`, `str`\]
 - `filters`:
-  `List`\[[ExperimentTemplateTargetInputFilterTypeDef](./type_defs.md#experimenttemplatetargetinputfiltertypedef)\]
+  `Sequence`\[[ExperimentTemplateTargetInputFilterTypeDef](./type_defs.md#experimenttemplatetargetinputfiltertypedef)\]
 
 ## DeleteExperimentTemplateRequestRequestTypeDef
 
@@ -368,7 +368,7 @@ from mypy_boto3_fis.type_defs import ExperimentTemplateTargetInputFilterTypeDef
 Required fields:
 
 - `path`: `str`
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## ExperimentTemplateTargetTypeDef
 
@@ -620,7 +620,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## StartExperimentResponseTypeDef
 
@@ -665,7 +665,7 @@ from mypy_boto3_fis.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -679,7 +679,7 @@ Required fields:
 
 Optional fields:
 
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateExperimentTemplateActionInputItemTypeDef
 
@@ -691,9 +691,9 @@ Optional fields:
 
 - `actionId`: `str`
 - `description`: `str`
-- `parameters`: `Dict`\[`str`, `str`\]
-- `targets`: `Dict`\[`str`, `str`\]
-- `startAfter`: `List`\[`str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
+- `targets`: `Mapping`\[`str`, `str`\]
+- `startAfter`: `Sequence`\[`str`\]
 
 ## UpdateExperimentTemplateRequestRequestTypeDef
 
@@ -709,10 +709,10 @@ Optional fields:
 
 - `description`: `str`
 - `stopConditions`:
-  `List`\[[UpdateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#updateexperimenttemplatestopconditioninputtypedef)\]
-- `targets`: `Dict`\[`str`,
+  `Sequence`\[[UpdateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#updateexperimenttemplatestopconditioninputtypedef)\]
+- `targets`: `Mapping`\[`str`,
   [UpdateExperimentTemplateTargetInputTypeDef](./type_defs.md#updateexperimenttemplatetargetinputtypedef)\]
-- `actions`: `Dict`\[`str`,
+- `actions`: `Mapping`\[`str`,
   [UpdateExperimentTemplateActionInputItemTypeDef](./type_defs.md#updateexperimenttemplateactioninputitemtypedef)\]
 - `roleArn`: `str`
 
@@ -756,7 +756,7 @@ Required fields:
 
 Optional fields:
 
-- `resourceArns`: `List`\[`str`\]
-- `resourceTags`: `Dict`\[`str`, `str`\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `resourceTags`: `Mapping`\[`str`, `str`\]
 - `filters`:
-  `List`\[[ExperimentTemplateTargetInputFilterTypeDef](./type_defs.md#experimenttemplatetargetinputfiltertypedef)\]
+  `Sequence`\[[ExperimentTemplateTargetInputFilterTypeDef](./type_defs.md#experimenttemplatetargetinputfiltertypedef)\]

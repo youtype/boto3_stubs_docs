@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Literals for boto3 MediaPackage module](#literals-for-boto3-mediapackage-module)
   - [AdMarkersType](#admarkerstype)
+  - [AdTriggersElementType](#adtriggerselementtype)
   - [AdsOnDeliveryRestrictionsType](#adsondeliveryrestrictionstype)
   - [EncryptionMethodType](#encryptionmethodtype)
   - [ListChannelsPaginatorName](#listchannelspaginatorname)
@@ -16,6 +17,7 @@ type annotations stubs module
   - [ListOriginEndpointsPaginatorName](#listoriginendpointspaginatorname)
   - [ManifestLayoutType](#manifestlayouttype)
   - [OriginationType](#originationtype)
+  - [PeriodTriggersElementType](#periodtriggerselementtype)
   - [PlaylistTypeType](#playlisttypetype)
   - [PresetSpeke20AudioType](#presetspeke20audiotype)
   - [PresetSpeke20VideoType](#presetspeke20videotype)
@@ -24,8 +26,7 @@ type annotations stubs module
   - [StatusType](#statustype)
   - [StreamOrderType](#streamordertype)
   - [UtcTimingType](#utctimingtype)
-  - [\_\_AdTriggersElementType](#__adtriggerselementtype)
-  - [\_\_PeriodTriggersElementType](#__periodtriggerselementtype)
+  - [ServiceName](#servicename)
 
 ## AdMarkersType
 
@@ -39,6 +40,23 @@ Values:
 - `NONE`
 - `PASSTHROUGH`
 - `SCTE35_ENHANCED`
+
+## AdTriggersElementType
+
+```python
+from mypy_boto3_mediapackage.literals import AdTriggersElementType
+```
+
+Values:
+
+- `BREAK`
+- `DISTRIBUTOR_ADVERTISEMENT`
+- `DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY`
+- `DISTRIBUTOR_PLACEMENT_OPPORTUNITY`
+- `PROVIDER_ADVERTISEMENT`
+- `PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY`
+- `PROVIDER_PLACEMENT_OPPORTUNITY`
+- `SPLICE_INSERT`
 
 ## AdsOnDeliveryRestrictionsType
 
@@ -115,6 +133,16 @@ Values:
 
 - `ALLOW`
 - `DENY`
+
+## PeriodTriggersElementType
+
+```python
+from mypy_boto3_mediapackage.literals import PeriodTriggersElementType
+```
+
+Values:
+
+- `ADS`
 
 ## PlaylistTypeType
 
@@ -207,29 +235,290 @@ Values:
 - `HTTP-ISO`
 - `NONE`
 
-## \_\_AdTriggersElementType
+## ServiceName
 
 ```python
-from mypy_boto3_mediapackage.literals import __AdTriggersElementType
+from mypy_boto3_mediapackage.literals import ServiceName
 ```
 
 Values:
 
-- `BREAK`
-- `DISTRIBUTOR_ADVERTISEMENT`
-- `DISTRIBUTOR_OVERLAY_PLACEMENT_OPPORTUNITY`
-- `DISTRIBUTOR_PLACEMENT_OPPORTUNITY`
-- `PROVIDER_ADVERTISEMENT`
-- `PROVIDER_OVERLAY_PLACEMENT_OPPORTUNITY`
-- `PROVIDER_PLACEMENT_OPPORTUNITY`
-- `SPLICE_INSERT`
-
-## \_\_PeriodTriggersElementType
-
-```python
-from mypy_boto3_mediapackage.literals import __PeriodTriggersElementType
-```
-
-Values:
-
-- `ADS`
+- `accessanalyzer`
+- `acm`
+- `acm-pca`
+- `alexaforbusiness`
+- `amp`
+- `amplify`
+- `amplifybackend`
+- `apigateway`
+- `apigatewaymanagementapi`
+- `apigatewayv2`
+- `appconfig`
+- `appflow`
+- `appintegrations`
+- `application-autoscaling`
+- `application-insights`
+- `applicationcostprofiler`
+- `appmesh`
+- `apprunner`
+- `appstream`
+- `appsync`
+- `athena`
+- `auditmanager`
+- `autoscaling`
+- `autoscaling-plans`
+- `backup`
+- `batch`
+- `braket`
+- `budgets`
+- `ce`
+- `chime`
+- `chime-sdk-identity`
+- `chime-sdk-messaging`
+- `cloud9`
+- `clouddirectory`
+- `cloudformation`
+- `cloudfront`
+- `cloudhsm`
+- `cloudhsmv2`
+- `cloudsearch`
+- `cloudsearchdomain`
+- `cloudtrail`
+- `cloudwatch`
+- `codeartifact`
+- `codebuild`
+- `codecommit`
+- `codedeploy`
+- `codeguru-reviewer`
+- `codeguruprofiler`
+- `codepipeline`
+- `codestar`
+- `codestar-connections`
+- `codestar-notifications`
+- `cognito-identity`
+- `cognito-idp`
+- `cognito-sync`
+- `comprehend`
+- `comprehendmedical`
+- `compute-optimizer`
+- `config`
+- `connect`
+- `connect-contact-lens`
+- `connectparticipant`
+- `cur`
+- `customer-profiles`
+- `databrew`
+- `dataexchange`
+- `datapipeline`
+- `datasync`
+- `dax`
+- `detective`
+- `devicefarm`
+- `devops-guru`
+- `directconnect`
+- `discovery`
+- `dlm`
+- `dms`
+- `docdb`
+- `ds`
+- `dynamodb`
+- `dynamodbstreams`
+- `ebs`
+- `ec2`
+- `ec2-instance-connect`
+- `ecr`
+- `ecr-public`
+- `ecs`
+- `efs`
+- `eks`
+- `elastic-inference`
+- `elasticache`
+- `elasticbeanstalk`
+- `elastictranscoder`
+- `elb`
+- `elbv2`
+- `emr`
+- `emr-containers`
+- `es`
+- `events`
+- `finspace`
+- `finspace-data`
+- `firehose`
+- `fis`
+- `fms`
+- `forecast`
+- `forecastquery`
+- `frauddetector`
+- `fsx`
+- `gamelift`
+- `glacier`
+- `globalaccelerator`
+- `glue`
+- `greengrass`
+- `greengrassv2`
+- `groundstation`
+- `guardduty`
+- `health`
+- `healthlake`
+- `honeycode`
+- `iam`
+- `identitystore`
+- `imagebuilder`
+- `importexport`
+- `inspector`
+- `iot`
+- `iot-data`
+- `iot-jobs-data`
+- `iot1click-devices`
+- `iot1click-projects`
+- `iotanalytics`
+- `iotdeviceadvisor`
+- `iotevents`
+- `iotevents-data`
+- `iotfleethub`
+- `iotsecuretunneling`
+- `iotsitewise`
+- `iotthingsgraph`
+- `iotwireless`
+- `ivs`
+- `kafka`
+- `kafkaconnect`
+- `kendra`
+- `kinesis`
+- `kinesis-video-archived-media`
+- `kinesis-video-media`
+- `kinesis-video-signaling`
+- `kinesisanalytics`
+- `kinesisanalyticsv2`
+- `kinesisvideo`
+- `kms`
+- `lakeformation`
+- `lambda`
+- `lex-models`
+- `lex-runtime`
+- `lexv2-models`
+- `lexv2-runtime`
+- `license-manager`
+- `lightsail`
+- `location`
+- `logs`
+- `lookoutequipment`
+- `lookoutmetrics`
+- `lookoutvision`
+- `machinelearning`
+- `macie`
+- `macie2`
+- `managedblockchain`
+- `marketplace-catalog`
+- `marketplace-entitlement`
+- `marketplacecommerceanalytics`
+- `mediaconnect`
+- `mediaconvert`
+- `medialive`
+- `mediapackage`
+- `mediapackage-vod`
+- `mediastore`
+- `mediastore-data`
+- `mediatailor`
+- `memorydb`
+- `meteringmarketplace`
+- `mgh`
+- `mgn`
+- `migrationhub-config`
+- `mobile`
+- `mq`
+- `mturk`
+- `mwaa`
+- `neptune`
+- `network-firewall`
+- `networkmanager`
+- `nimble`
+- `opensearch`
+- `opsworks`
+- `opsworkscm`
+- `organizations`
+- `outposts`
+- `personalize`
+- `personalize-events`
+- `personalize-runtime`
+- `pi`
+- `pinpoint`
+- `pinpoint-email`
+- `pinpoint-sms-voice`
+- `polly`
+- `pricing`
+- `proton`
+- `qldb`
+- `qldb-session`
+- `quicksight`
+- `ram`
+- `rds`
+- `rds-data`
+- `redshift`
+- `redshift-data`
+- `rekognition`
+- `resource-groups`
+- `resourcegroupstaggingapi`
+- `robomaker`
+- `route53`
+- `route53-recovery-cluster`
+- `route53-recovery-control-config`
+- `route53-recovery-readiness`
+- `route53domains`
+- `route53resolver`
+- `s3`
+- `s3control`
+- `s3outposts`
+- `sagemaker`
+- `sagemaker-a2i-runtime`
+- `sagemaker-edge`
+- `sagemaker-featurestore-runtime`
+- `sagemaker-runtime`
+- `savingsplans`
+- `schemas`
+- `sdb`
+- `secretsmanager`
+- `securityhub`
+- `serverlessrepo`
+- `service-quotas`
+- `servicecatalog`
+- `servicecatalog-appregistry`
+- `servicediscovery`
+- `ses`
+- `sesv2`
+- `shield`
+- `signer`
+- `sms`
+- `sms-voice`
+- `snow-device-management`
+- `snowball`
+- `sns`
+- `sqs`
+- `ssm`
+- `ssm-contacts`
+- `ssm-incidents`
+- `sso`
+- `sso-admin`
+- `sso-oidc`
+- `stepfunctions`
+- `storagegateway`
+- `sts`
+- `support`
+- `swf`
+- `synthetics`
+- `textract`
+- `timestream-query`
+- `timestream-write`
+- `transcribe`
+- `transfer`
+- `translate`
+- `waf`
+- `waf-regional`
+- `wafv2`
+- `wellarchitected`
+- `workdocs`
+- `worklink`
+- `workmail`
+- `workmailmessageflow`
+- `workspaces`
+- `xray`

@@ -91,7 +91,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -136,5 +136,5 @@ Keyword-only arguments:
 - `DeviceName`: `str` *(required)*
 - `DeviceFleetName`: `str` *(required)*
 - `AgentMetrics`:
-  `List`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]
-- `Models`: `List`\[[ModelTypeDef](./type_defs.md#modeltypedef)\]
+  `Sequence`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]
+- `Models`: `Sequence`\[[ModelTypeDef](./type_defs.md#modeltypedef)\]

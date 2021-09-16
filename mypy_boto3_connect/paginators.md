@@ -57,9 +57,9 @@ Arguments for `GetMetricDataPaginator.paginate` method:
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef) *(required)*
 - `HistoricalMetrics`:
-  `List`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
+  `Sequence`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
   *(required)*
-- `Groupings`: `List`\[[GroupingType](./literals.md#groupingtype)\]
+- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -87,7 +87,7 @@ Arguments for `ListAgentStatusesPaginator.paginate` method:
 
 - `InstanceId`: `str` *(required)*
 - `AgentStatusTypes`:
-  `List`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
+  `Sequence`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -167,7 +167,7 @@ Arguments for `ListContactFlowsPaginator.paginate` method:
 
 - `InstanceId`: `str` *(required)*
 - `ContactFlowTypes`:
-  `List`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
+  `Sequence`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -377,9 +377,9 @@ Arguments for `ListPhoneNumbersPaginator.paginate` method:
 
 - `InstanceId`: `str` *(required)*
 - `PhoneNumberTypes`:
-  `List`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
+  `Sequence`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
 - `PhoneNumberCountryCodes`:
-  `List`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
+  `Sequence`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -457,7 +457,7 @@ Boto3 documentation:
 Arguments for `ListQueuesPaginator.paginate` method:
 
 - `InstanceId`: `str` *(required)*
-- `QueueTypes`: `List`\[[QueueTypeType](./literals.md#queuetypetype)\]
+- `QueueTypes`: `Sequence`\[[QueueTypeType](./literals.md#queuetypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -485,7 +485,7 @@ Arguments for `ListQuickConnectsPaginator.paginate` method:
 
 - `InstanceId`: `str` *(required)*
 - `QuickConnectTypes`:
-  `List`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
+  `Sequence`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

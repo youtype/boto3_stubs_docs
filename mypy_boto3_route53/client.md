@@ -286,8 +286,8 @@ Keyword-only arguments:
 - `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
   *(required)*
 - `ResourceId`: `str` *(required)*
-- `AddTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RemoveTagKeys`: `List`\[`str`\]
+- `AddTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RemoveTagKeys`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -750,7 +750,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1311,7 +1311,7 @@ Keyword-only arguments:
 
 - `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
   *(required)*
-- `ResourceIds`: `List`\[`str`\] *(required)*
+- `ResourceIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [ListTagsForResourcesResponseTypeDef](./type_defs.md#listtagsforresourcesresponsetypedef).
@@ -1507,16 +1507,16 @@ Keyword-only arguments:
 - `Inverted`: `bool`
 - `Disabled`: `bool`
 - `HealthThreshold`: `int`
-- `ChildHealthChecks`: `List`\[`str`\]
+- `ChildHealthChecks`: `Sequence`\[`str`\]
 - `EnableSNI`: `bool`
 - `Regions`:
-  `List`\[[HealthCheckRegionType](./literals.md#healthcheckregiontype)\]
+  `Sequence`\[[HealthCheckRegionType](./literals.md#healthcheckregiontype)\]
 - `AlarmIdentifier`:
   [AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef)
 - `InsufficientDataHealthStatus`:
   [InsufficientDataHealthStatusType](./literals.md#insufficientdatahealthstatustype)
 - `ResetElements`:
-  `List`\[[ResettableElementNameType](./literals.md#resettableelementnametype)\]
+  `Sequence`\[[ResettableElementNameType](./literals.md#resettableelementnametype)\]
 
 Returns
 [UpdateHealthCheckResponseTypeDef](./type_defs.md#updatehealthcheckresponsetypedef).

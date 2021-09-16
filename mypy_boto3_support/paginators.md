@@ -29,7 +29,7 @@ Boto3 documentation:
 
 Arguments for `DescribeCasesPaginator.paginate` method:
 
-- `caseIdList`: `List`\[`str`\]
+- `caseIdList`: `Sequence`\[`str`\]
 - `displayId`: `str`
 - `afterTime`: `str`
 - `beforeTime`: `str`

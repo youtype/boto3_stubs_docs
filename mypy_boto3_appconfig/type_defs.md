@@ -179,7 +179,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateConfigurationProfileRequestRequestTypeDef
 
@@ -197,8 +197,9 @@ Optional fields:
 
 - `Description`: `str`
 - `RetrievalRoleArn`: `str`
-- `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Validators`:
+  `Sequence`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDeploymentStrategyRequestRequestTypeDef
 
@@ -218,7 +219,7 @@ Optional fields:
 - `Description`: `str`
 - `FinalBakeTimeInMinutes`: `int`
 - `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateEnvironmentRequestRequestTypeDef
 
@@ -234,8 +235,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Monitors`: `Sequence`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateHostedConfigurationVersionRequestRequestTypeDef
 
@@ -757,7 +758,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## StopDeploymentRequestRequestTypeDef
 
@@ -780,7 +781,7 @@ from mypy_boto3_appconfig.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -791,7 +792,7 @@ from mypy_boto3_appconfig.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApplicationRequestRequestTypeDef
 
@@ -824,7 +825,8 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `RetrievalRoleArn`: `str`
-- `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
+- `Validators`:
+  `Sequence`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
 
 ## UpdateDeploymentStrategyRequestRequestTypeDef
 
@@ -859,7 +861,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
-- `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
+- `Monitors`: `Sequence`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
 
 ## ValidateConfigurationRequestRequestTypeDef
 

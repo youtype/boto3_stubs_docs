@@ -107,7 +107,7 @@ Keyword-only arguments:
 - `upfrontPaymentAmount`: `str`
 - `purchaseTime`: `Union`\[`datetime`, `str`\]
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateSavingsPlanResponseTypeDef](./type_defs.md#createsavingsplanresponsetypedef).
@@ -148,7 +148,7 @@ Keyword-only arguments:
 
 - `savingsPlanId`: `str` *(required)*
 - `filters`:
-  `List`\[[SavingsPlanRateFilterTypeDef](./type_defs.md#savingsplanratefiltertypedef)\]
+  `Sequence`\[[SavingsPlanRateFilterTypeDef](./type_defs.md#savingsplanratefiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -170,14 +170,14 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `savingsPlanArns`: `List`\[`str`\]
-- `savingsPlanIds`: `List`\[`str`\]
+- `savingsPlanArns`: `Sequence`\[`str`\]
+- `savingsPlanIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `states`:
-  `List`\[[SavingsPlanStateType](./literals.md#savingsplanstatetype)\]
+  `Sequence`\[[SavingsPlanStateType](./literals.md#savingsplanstatetype)\]
 - `filters`:
-  `List`\[[SavingsPlanFilterTypeDef](./type_defs.md#savingsplanfiltertypedef)\]
+  `Sequence`\[[SavingsPlanFilterTypeDef](./type_defs.md#savingsplanfiltertypedef)\]
 
 Returns
 [DescribeSavingsPlansResponseTypeDef](./type_defs.md#describesavingsplansresponsetypedef).
@@ -197,19 +197,19 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `savingsPlanOfferingIds`: `List`\[`str`\]
+- `savingsPlanOfferingIds`: `Sequence`\[`str`\]
 - `savingsPlanPaymentOptions`:
-  `List`\[[SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)\]
+  `Sequence`\[[SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)\]
 - `savingsPlanTypes`:
-  `List`\[[SavingsPlanTypeType](./literals.md#savingsplantypetype)\]
+  `Sequence`\[[SavingsPlanTypeType](./literals.md#savingsplantypetype)\]
 - `products`:
-  `List`\[[SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)\]
+  `Sequence`\[[SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)\]
 - `serviceCodes`:
-  `List`\[[SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype)\]
-- `usageTypes`: `List`\[`str`\]
-- `operations`: `List`\[`str`\]
+  `Sequence`\[[SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype)\]
+- `usageTypes`: `Sequence`\[`str`\]
+- `operations`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[SavingsPlanOfferingRateFilterElementTypeDef](./type_defs.md#savingsplanofferingratefilterelementtypedef)\]
+  `Sequence`\[[SavingsPlanOfferingRateFilterElementTypeDef](./type_defs.md#savingsplanofferingratefilterelementtypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -231,21 +231,22 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `offeringIds`: `List`\[`str`\]
+- `offeringIds`: `Sequence`\[`str`\]
 - `paymentOptions`:
-  `List`\[[SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)\]
+  `Sequence`\[[SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)\]
 - `productType`:
   [SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)
 - `planTypes`:
-  `List`\[[SavingsPlanTypeType](./literals.md#savingsplantypetype)\]
-- `durations`: `List`\[`int`\]
-- `currencies`: `List`\[[CurrencyCodeType](./literals.md#currencycodetype)\]
-- `descriptions`: `List`\[`str`\]
-- `serviceCodes`: `List`\[`str`\]
-- `usageTypes`: `List`\[`str`\]
-- `operations`: `List`\[`str`\]
+  `Sequence`\[[SavingsPlanTypeType](./literals.md#savingsplantypetype)\]
+- `durations`: `Sequence`\[`int`\]
+- `currencies`:
+  `Sequence`\[[CurrencyCodeType](./literals.md#currencycodetype)\]
+- `descriptions`: `Sequence`\[`str`\]
+- `serviceCodes`: `Sequence`\[`str`\]
+- `usageTypes`: `Sequence`\[`str`\]
+- `operations`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[SavingsPlanOfferingFilterElementTypeDef](./type_defs.md#savingsplanofferingfilterelementtypedef)\]
+  `Sequence`\[[SavingsPlanOfferingFilterElementTypeDef](./type_defs.md#savingsplanofferingfilterelementtypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -265,7 +266,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -306,7 +307,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -325,6 +326,6 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].

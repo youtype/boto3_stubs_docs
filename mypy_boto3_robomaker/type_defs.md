@@ -77,6 +77,7 @@ type annotations stubs module
   - [DescribeWorldResponseTypeDef](#describeworldresponsetypedef)
   - [DescribeWorldTemplateRequestRequestTypeDef](#describeworldtemplaterequestrequesttypedef)
   - [DescribeWorldTemplateResponseTypeDef](#describeworldtemplateresponsetypedef)
+  - [EnvironmentTypeDef](#environmenttypedef)
   - [FailedCreateSimulationJobRequestTypeDef](#failedcreatesimulationjobrequesttypedef)
   - [FailureSummaryTypeDef](#failuresummarytypedef)
   - [FilterTypeDef](#filtertypedef)
@@ -170,7 +171,7 @@ from mypy_boto3_robomaker.type_defs import BatchDeleteWorldsRequestRequestTypeDe
 
 Required fields:
 
-- `worlds`: `List`\[`str`\]
+- `worlds`: `Sequence`\[`str`\]
 
 ## BatchDeleteWorldsResponseTypeDef
 
@@ -192,7 +193,7 @@ from mypy_boto3_robomaker.type_defs import BatchDescribeSimulationJobRequestRequ
 
 Required fields:
 
-- `jobs`: `List`\[`str`\]
+- `jobs`: `Sequence`\[`str`\]
 
 ## BatchDescribeSimulationJobResponseTypeDef
 
@@ -299,13 +300,13 @@ Required fields:
 - `clientRequestToken`: `str`
 - `fleet`: `str`
 - `deploymentApplicationConfigs`:
-  `List`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
+  `Sequence`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
 
 Optional fields:
 
 - `deploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDeploymentJobResponseTypeDef
 
@@ -342,7 +343,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateFleetResponseTypeDef
 
@@ -368,14 +369,15 @@ from mypy_boto3_robomaker.type_defs import CreateRobotApplicationRequestRequestT
 Required fields:
 
 - `name`: `str`
-- `sources`:
-  `List`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
 - `robotSoftwareSuite`:
   [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `sources`:
+  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
+- `tags`: `Mapping`\[`str`, `str`\]
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 
 ## CreateRobotApplicationResponseTypeDef
 
@@ -394,6 +396,7 @@ Required fields:
 - `lastUpdatedAt`: `datetime`
 - `revisionId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -410,6 +413,8 @@ Required fields:
 Optional fields:
 
 - `currentRevisionId`: `str`
+- `s3Etags`: `Sequence`\[`str`\]
+- `imageDigest`: `str`
 
 ## CreateRobotApplicationVersionResponseTypeDef
 
@@ -427,6 +432,7 @@ Required fields:
   [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
 - `lastUpdatedAt`: `datetime`
 - `revisionId`: `str`
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -444,7 +450,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRobotResponseTypeDef
 
@@ -472,8 +478,6 @@ from mypy_boto3_robomaker.type_defs import CreateSimulationApplicationRequestReq
 Required fields:
 
 - `name`: `str`
-- `sources`:
-  `List`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
 - `simulationSoftwareSuite`:
   [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
 - `robotSoftwareSuite`:
@@ -481,9 +485,12 @@ Required fields:
 
 Optional fields:
 
+- `sources`:
+  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
 - `renderingEngine`:
   [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 
 ## CreateSimulationApplicationResponseTypeDef
 
@@ -506,6 +513,7 @@ Required fields:
 - `lastUpdatedAt`: `datetime`
 - `revisionId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -522,6 +530,8 @@ Required fields:
 Optional fields:
 
 - `currentRevisionId`: `str`
+- `s3Etags`: `Sequence`\[`str`\]
+- `imageDigest`: `str`
 
 ## CreateSimulationApplicationVersionResponseTypeDef
 
@@ -543,6 +553,7 @@ Required fields:
   [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
 - `lastUpdatedAt`: `datetime`
 - `revisionId`: `str`
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -565,12 +576,12 @@ Optional fields:
 - `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
 - `failureBehavior`: [FailureBehaviorType](./literals.md#failurebehaviortype)
 - `robotApplications`:
-  `List`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
+  `Sequence`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
 - `simulationApplications`:
-  `List`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
+  `Sequence`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
 - `dataSources`:
-  `List`\[[DataSourceConfigTypeDef](./type_defs.md#datasourceconfigtypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[DataSourceConfigTypeDef](./type_defs.md#datasourceconfigtypedef)\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `vpcConfig`: [VPCConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `compute`: [ComputeTypeDef](./type_defs.md#computetypedef)
 
@@ -617,7 +628,7 @@ from mypy_boto3_robomaker.type_defs import CreateWorldExportJobRequestRequestTyp
 
 Required fields:
 
-- `worlds`: `List`\[`str`\]
+- `worlds`: `Sequence`\[`str`\]
 - `outputLocation`:
   [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 - `iamRole`: `str`
@@ -625,7 +636,7 @@ Required fields:
 Optional fields:
 
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateWorldExportJobResponseTypeDef
 
@@ -662,8 +673,8 @@ Required fields:
 Optional fields:
 
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `worldTags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
+- `worldTags`: `Mapping`\[`str`, `str`\]
 
 ## CreateWorldGenerationJobResponseTypeDef
 
@@ -700,7 +711,7 @@ Optional fields:
 - `templateBody`: `str`
 - `templateLocation`:
   [TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateWorldTemplateResponseTypeDef
 
@@ -728,7 +739,7 @@ Required fields:
 
 - `name`: `str`
 - `s3Bucket`: `str`
-- `s3Keys`: `List`\[`str`\]
+- `s3Keys`: `Sequence`\[`str`\]
 
 ## DataSourceTypeDef
 
@@ -861,7 +872,7 @@ Optional fields:
 
 - `preLaunchFile`: `str`
 - `postLaunchFile`: `str`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
+- `environmentVariables`: `Mapping`\[`str`, `str`\]
 
 ## DeregisterRobotRequestRequestTypeDef
 
@@ -983,6 +994,8 @@ Required fields:
 - `revisionId`: `str`
 - `lastUpdatedAt`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+- `imageDigest`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1052,6 +1065,8 @@ Required fields:
 - `revisionId`: `str`
 - `lastUpdatedAt`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+- `imageDigest`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1265,6 +1280,16 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## EnvironmentTypeDef
+
+```python
+from mypy_boto3_robomaker.type_defs import EnvironmentTypeDef
+```
+
+Optional fields:
+
+- `uri`: `str`
+
 ## FailedCreateSimulationJobRequestTypeDef
 
 ```python
@@ -1301,7 +1326,7 @@ from mypy_boto3_robomaker.type_defs import FilterTypeDef
 Optional fields:
 
 - `name`: `str`
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## FinishedWorldsSummaryTypeDef
 
@@ -1381,7 +1406,7 @@ from mypy_boto3_robomaker.type_defs import ListDeploymentJobsRequestRequestTypeD
 
 Optional fields:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -1409,7 +1434,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListFleetsResponseTypeDef
 
@@ -1435,7 +1460,7 @@ Optional fields:
 - `versionQualifier`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListRobotApplicationsResponseTypeDef
 
@@ -1461,7 +1486,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListRobotsResponseTypeDef
 
@@ -1487,7 +1512,7 @@ Optional fields:
 - `versionQualifier`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListSimulationApplicationsResponseTypeDef
 
@@ -1513,7 +1538,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListSimulationJobBatchesResponseTypeDef
 
@@ -1539,7 +1564,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListSimulationJobsResponseTypeDef
 
@@ -1587,7 +1612,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListWorldExportJobsResponseTypeDef
 
@@ -1613,7 +1638,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListWorldGenerationJobsResponseTypeDef
 
@@ -1664,7 +1689,7 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListWorldsResponseTypeDef
 
@@ -2118,13 +2143,13 @@ from mypy_boto3_robomaker.type_defs import StartSimulationJobBatchRequestRequest
 Required fields:
 
 - `createSimulationJobRequests`:
-  `List`\[[SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef)\]
+  `Sequence`\[[SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef)\]
 
 Optional fields:
 
 - `clientRequestToken`: `str`
 - `batchPolicy`: [BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## StartSimulationJobBatchResponseTypeDef
 
@@ -2195,7 +2220,7 @@ from mypy_boto3_robomaker.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TemplateLocationTypeDef
 
@@ -2248,7 +2273,7 @@ from mypy_boto3_robomaker.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateRobotApplicationRequestRequestTypeDef
 
@@ -2259,14 +2284,15 @@ from mypy_boto3_robomaker.type_defs import UpdateRobotApplicationRequestRequestT
 Required fields:
 
 - `application`: `str`
-- `sources`:
-  `List`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
 - `robotSoftwareSuite`:
   [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
 
 Optional fields:
 
+- `sources`:
+  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
 - `currentRevisionId`: `str`
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 
 ## UpdateRobotApplicationResponseTypeDef
 
@@ -2284,6 +2310,7 @@ Required fields:
   [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
 - `lastUpdatedAt`: `datetime`
 - `revisionId`: `str`
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2296,8 +2323,6 @@ from mypy_boto3_robomaker.type_defs import UpdateSimulationApplicationRequestReq
 Required fields:
 
 - `application`: `str`
-- `sources`:
-  `List`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
 - `simulationSoftwareSuite`:
   [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
 - `robotSoftwareSuite`:
@@ -2305,9 +2330,12 @@ Required fields:
 
 Optional fields:
 
+- `sources`:
+  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
 - `renderingEngine`:
   [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
 - `currentRevisionId`: `str`
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 
 ## UpdateSimulationApplicationResponseTypeDef
 
@@ -2329,6 +2357,7 @@ Required fields:
   [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
 - `lastUpdatedAt`: `datetime`
 - `revisionId`: `str`
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2397,11 +2426,11 @@ from mypy_boto3_robomaker.type_defs import VPCConfigTypeDef
 
 Required fields:
 
-- `subnets`: `List`\[`str`\]
+- `subnets`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `securityGroups`: `List`\[`str`\]
+- `securityGroups`: `Sequence`\[`str`\]
 - `assignPublicIp`: `bool`
 
 ## WorldConfigTypeDef

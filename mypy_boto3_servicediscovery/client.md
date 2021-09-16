@@ -134,7 +134,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `CreatorRequestId`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateHttpNamespaceResponseTypeDef](./type_defs.md#createhttpnamespaceresponsetypedef).
@@ -159,7 +159,7 @@ Keyword-only arguments:
 - `Vpc`: `str` *(required)*
 - `CreatorRequestId`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Properties`:
   [PrivateDnsNamespacePropertiesTypeDef](./type_defs.md#privatednsnamespacepropertiestypedef)
 
@@ -184,7 +184,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `CreatorRequestId`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Properties`:
   [PublicDnsNamespacePropertiesTypeDef](./type_defs.md#publicdnsnamespacepropertiestypedef)
 
@@ -214,7 +214,7 @@ Keyword-only arguments:
   [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
 - `HealthCheckCustomConfig`:
   [HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Type`: `Literal['HTTP']` (see
   [ServiceTypeOptionType](./literals.md#servicetypeoptiontype))
 
@@ -299,8 +299,8 @@ Keyword-only arguments:
 - `NamespaceName`: `str` *(required)*
 - `ServiceName`: `str` *(required)*
 - `MaxResults`: `int`
-- `QueryParameters`: `Dict`\[`str`, `str`\]
-- `OptionalParameters`: `Dict`\[`str`, `str`\]
+- `QueryParameters`: `Mapping`\[`str`, `str`\]
+- `OptionalParameters`: `Mapping`\[`str`, `str`\]
 - `HealthStatus`:
   [HealthStatusFilterType](./literals.md#healthstatusfiltertype)
 
@@ -320,7 +320,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -363,7 +363,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
-- `Instances`: `List`\[`str`\]
+- `Instances`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -467,7 +467,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
+  `Sequence`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
 
 Returns
 [ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef).
@@ -489,7 +489,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
+  `Sequence`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
 
 Returns
 [ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
@@ -512,7 +512,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
+  `Sequence`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
 
 Returns
 [ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
@@ -555,7 +555,7 @@ Keyword-only arguments:
 
 - `ServiceId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
-- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
+- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 - `CreatorRequestId`: `str`
 
 Returns
@@ -576,7 +576,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -595,7 +595,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

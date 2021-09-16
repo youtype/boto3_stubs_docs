@@ -190,7 +190,7 @@ Optional fields:
 - `BuildCommand`: `str`
 - `StartCommand`: `str`
 - `Port`: `str`
-- `RuntimeEnvironmentVariables`: `Dict`\[`str`, `str`\]
+- `RuntimeEnvironmentVariables`: `Mapping`\[`str`, `str`\]
 
 ## CodeRepositoryTypeDef
 
@@ -254,7 +254,7 @@ Optional fields:
 - `MaxConcurrency`: `int`
 - `MinSize`: `int`
 - `MaxSize`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAutoScalingConfigurationResponseTypeDef
 
@@ -283,7 +283,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateConnectionResponseTypeDef
 
@@ -313,7 +313,7 @@ Optional fields:
 
 - `InstanceConfiguration`:
   [InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - `HealthCheckConfiguration`:
@@ -553,7 +553,7 @@ from mypy_boto3_apprunner.type_defs import ImageConfigurationTypeDef
 
 Optional fields:
 
-- `RuntimeEnvironmentVariables`: `Dict`\[`str`, `str`\]
+- `RuntimeEnvironmentVariables`: `Mapping`\[`str`, `str`\]
 - `StartCommand`: `str`
 - `Port`: `str`
 
@@ -896,7 +896,7 @@ from mypy_boto3_apprunner.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -918,7 +918,7 @@ from mypy_boto3_apprunner.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateServiceRequestRequestTypeDef
 

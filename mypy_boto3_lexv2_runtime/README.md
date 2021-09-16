@@ -70,6 +70,7 @@ from mypy_boto3_lexv2_runtime.literals import ConfirmationStateType, ...
 - [MessageContentTypeType](./literals.md#messagecontenttypetype)
 - [SentimentTypeType](./literals.md#sentimenttypetype)
 - [ShapeType](./literals.md#shapetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

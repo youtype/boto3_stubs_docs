@@ -138,7 +138,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -183,7 +183,7 @@ Keyword-only arguments:
 - `CloudWatchLogsRoleArn`: `str`
 - `KmsKeyId`: `str`
 - `IsOrganizationTrail`: `bool`
-- `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateTrailResponseTypeDef](./type_defs.md#createtrailresponsetypedef).
@@ -221,7 +221,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `trailNameList`: `List`\[`str`\]
+- `trailNameList`: `Sequence`\[`str`\]
 - `includeShadowTrails`: `bool`
 
 Returns
@@ -240,7 +240,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -359,7 +359,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceIdList`: `List`\[`str`\] *(required)*
+- `ResourceIdList`: `Sequence`\[`str`\] *(required)*
 - `NextToken`: `str`
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
@@ -400,7 +400,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LookupAttributes`:
-  `List`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
+  `Sequence`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `EventCategory`: `Literal['insight']` (see
@@ -427,9 +427,9 @@ Keyword-only arguments:
 
 - `TrailName`: `str` *(required)*
 - `EventSelectors`:
-  `List`\[[EventSelectorTypeDef](./type_defs.md#eventselectortypedef)\]
+  `Sequence`\[[EventSelectorTypeDef](./type_defs.md#eventselectortypedef)\]
 - `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
+  `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
 
 Returns
 [PutEventSelectorsResponseTypeDef](./type_defs.md#puteventselectorsresponsetypedef).
@@ -451,7 +451,7 @@ Keyword-only arguments:
 
 - `TrailName`: `str` *(required)*
 - `InsightSelectors`:
-  `List`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
+  `Sequence`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
   *(required)*
 
 Returns
@@ -472,7 +472,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 

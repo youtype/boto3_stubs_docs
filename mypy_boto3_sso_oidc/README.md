@@ -15,6 +15,7 @@ pip install mypy-boto3-sso-oidc
   - [SSOOIDCClient](#ssooidcclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## SSOOIDCClient
@@ -53,6 +54,18 @@ SSOOIDCClient [exceptions](./client.md#exceptions)
 - SlowDownException
 - UnauthorizedClientException
 - UnsupportedGrantTypeException
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sso_oidc.literals import ServiceName, ...
+```
+
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

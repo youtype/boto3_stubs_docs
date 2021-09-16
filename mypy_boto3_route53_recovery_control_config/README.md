@@ -106,6 +106,7 @@ from mypy_boto3_route53_recovery_control_config.literals import ClusterCreatedWa
 - [RoutingControlDeletedWaiterName](./literals.md#routingcontroldeletedwaitername)
 - [RuleTypeType](./literals.md#ruletypetype)
 - [StatusType](./literals.md#statustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

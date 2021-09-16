@@ -216,7 +216,7 @@ from mypy_boto3_opensearch.type_defs import AddTagsRequestRequestTypeDef
 Required fields:
 
 - `ARN`: `str`
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AdditionalLimitTypeDef
 
@@ -338,7 +338,7 @@ Optional fields:
 - `DesiredState`:
   [AutoTuneDesiredStateType](./literals.md#autotunedesiredstatetype)
 - `MaintenanceSchedules`:
-  `List`\[[AutoTuneMaintenanceScheduleTypeDef](./type_defs.md#autotunemaintenancescheduletypedef)\]
+  `Sequence`\[[AutoTuneMaintenanceScheduleTypeDef](./type_defs.md#autotunemaintenancescheduletypedef)\]
 
 ## AutoTuneOptionsOutputTypeDef
 
@@ -537,14 +537,14 @@ Optional fields:
   [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
 - `NodeToNodeEncryptionOptions`:
   [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
-- `AdvancedOptions`: `Dict`\[`str`, `str`\]
-- `LogPublishingOptions`: `Dict`\[[LogTypeType](./literals.md#logtypetype),
+- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
+- `LogPublishingOptions`: `Mapping`\[[LogTypeType](./literals.md#logtypetype),
   [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
 - `DomainEndpointOptions`:
   [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
 - `AdvancedSecurityOptions`:
   [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AutoTuneOptions`:
   [AutoTuneOptionsInputTypeDef](./type_defs.md#autotuneoptionsinputtypedef)
 
@@ -794,7 +794,7 @@ from mypy_boto3_opensearch.type_defs import DescribeDomainsRequestRequestTypeDef
 
 Required fields:
 
-- `DomainNames`: `List`\[`str`\]
+- `DomainNames`: `Sequence`\[`str`\]
 
 ## DescribeDomainsResponseTypeDef
 
@@ -817,7 +817,7 @@ from mypy_boto3_opensearch.type_defs import DescribeInboundConnectionsRequestReq
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -872,7 +872,7 @@ from mypy_boto3_opensearch.type_defs import DescribeOutboundConnectionsRequestRe
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -900,7 +900,7 @@ Optional fields:
 
 - `Name`:
   [DescribePackagesFilterNameType](./literals.md#describepackagesfilternametype)
-- `Value`: `List`\[`str`\]
+- `Value`: `Sequence`\[`str`\]
 
 ## DescribePackagesRequestRequestTypeDef
 
@@ -911,7 +911,7 @@ from mypy_boto3_opensearch.type_defs import DescribePackagesRequestRequestTypeDe
 Optional fields:
 
 - `Filters`:
-  `List`\[[DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)\]
+  `Sequence`\[[DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1232,7 +1232,7 @@ from mypy_boto3_opensearch.type_defs import FilterTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## GetCompatibleVersionsRequestRequestTypeDef
 
@@ -1785,7 +1785,7 @@ from mypy_boto3_opensearch.type_defs import RemoveTagsRequestRequestTypeDef
 Required fields:
 
 - `ARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ReservedInstanceOfferingTypeDef
 
@@ -2018,9 +2018,9 @@ Optional fields:
 - `VPCOptions`: [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
 - `CognitoOptions`:
   [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
-- `AdvancedOptions`: `Dict`\[`str`, `str`\]
+- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
 - `AccessPolicies`: `str`
-- `LogPublishingOptions`: `Dict`\[[LogTypeType](./literals.md#logtypetype),
+- `LogPublishingOptions`: `Mapping`\[[LogTypeType](./literals.md#logtypetype),
   [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
 - `EncryptionAtRestOptions`:
   [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
@@ -2088,7 +2088,7 @@ Required fields:
 Optional fields:
 
 - `PerformCheckOnly`: `bool`
-- `AdvancedOptions`: `Dict`\[`str`, `str`\]
+- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
 
 ## UpgradeDomainResponseTypeDef
 
@@ -2165,8 +2165,8 @@ from mypy_boto3_opensearch.type_defs import VPCOptionsTypeDef
 
 Optional fields:
 
-- `SubnetIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## VersionStatusTypeDef
 

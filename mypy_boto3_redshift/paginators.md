@@ -82,8 +82,8 @@ Boto3 documentation:
 Arguments for `DescribeClusterParameterGroupsPaginator.paginate` method:
 
 - `ParameterGroupName`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -137,8 +137,8 @@ Boto3 documentation:
 Arguments for `DescribeClusterSecurityGroupsPaginator.paginate` method:
 
 - `ClusterSecurityGroupName`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -170,11 +170,11 @@ Arguments for `DescribeClusterSnapshotsPaginator.paginate` method:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `OwnerAccount`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `ClusterExists`: `bool`
 - `SortingEntities`:
-  `List`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
+  `Sequence`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -201,8 +201,8 @@ Boto3 documentation:
 Arguments for `DescribeClusterSubnetGroupsPaginator.paginate` method:
 
 - `ClusterSubnetGroupName`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -282,8 +282,8 @@ Boto3 documentation:
 Arguments for `DescribeClustersPaginator.paginate` method:
 
 - `ClusterIdentifier`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -393,8 +393,8 @@ Boto3 documentation:
 Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
 
 - `SubscriptionName`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -451,8 +451,8 @@ Boto3 documentation:
 Arguments for `DescribeHsmClientCertificatesPaginator.paginate` method:
 
 - `HsmClientCertificateIdentifier`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -479,8 +479,8 @@ Boto3 documentation:
 Arguments for `DescribeHsmConfigurationsPaginator.paginate` method:
 
 - `HsmConfigurationIdentifier`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -511,7 +511,7 @@ Arguments for `DescribeNodeConfigurationOptionsPaginator.paginate` method:
 - `SnapshotIdentifier`: `str`
 - `OwnerAccount`: `str`
 - `Filters`:
-  `List`\[[NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef)\]
+  `Sequence`\[[NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -623,7 +623,7 @@ Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Active`: `bool`
 - `Filters`:
-  `List`\[[ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef)\]
+  `Sequence`\[[ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -650,8 +650,8 @@ Boto3 documentation:
 Arguments for `DescribeSnapshotCopyGrantsPaginator.paginate` method:
 
 - `SnapshotCopyGrantName`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -679,8 +679,8 @@ Arguments for `DescribeSnapshotSchedulesPaginator.paginate` method:
 
 - `ClusterIdentifier`: `str`
 - `ScheduleIdentifier`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -734,8 +734,8 @@ Arguments for `DescribeTagsPaginator.paginate` method:
 
 - `ResourceName`: `str`
 - `ResourceType`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -765,8 +765,8 @@ Arguments for `DescribeUsageLimitsPaginator.paginate` method:
 - `ClusterIdentifier`: `str`
 - `FeatureType`:
   [UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype)
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

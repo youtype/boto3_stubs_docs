@@ -34,7 +34,7 @@ Boto3 documentation:
 Arguments for `DescribeApplicationVersionsPaginator.paginate` method:
 
 - `ApplicationName`: `str`
-- `VersionLabels`: `List`\[`str`\]
+- `VersionLabels`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -90,8 +90,8 @@ Arguments for `DescribeEnvironmentsPaginator.paginate` method:
 
 - `ApplicationName`: `str`
 - `VersionLabel`: `str`
-- `EnvironmentIds`: `List`\[`str`\]
-- `EnvironmentNames`: `List`\[`str`\]
+- `EnvironmentIds`: `Sequence`\[`str`\]
+- `EnvironmentNames`: `Sequence`\[`str`\]
 - `IncludeDeleted`: `bool`
 - `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
@@ -155,7 +155,7 @@ Boto3 documentation:
 Arguments for `ListPlatformVersionsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
+  `Sequence`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

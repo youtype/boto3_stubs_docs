@@ -449,7 +449,7 @@ Required fields:
 - `ResourceType`:
   [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
 - `ResourceId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AssociateOpsItemRelatedItemRequestRequestTypeDef
 
@@ -698,7 +698,7 @@ from mypy_boto3_ssm.type_defs import AttachmentsSourceTypeDef
 Optional fields:
 
 - `Key`: [AttachmentsSourceKeyType](./literals.md#attachmentssourcekeytype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `Name`: `str`
 
 ## AutomationExecutionFilterTypeDef
@@ -711,7 +711,7 @@ Required fields:
 
 - `Key`:
   [AutomationExecutionFilterKeyType](./literals.md#automationexecutionfilterkeytype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## AutomationExecutionMetadataTypeDef
 
@@ -812,13 +812,14 @@ Optional fields:
   [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
 - `ApprovalRules`:
   [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
-- `ApprovedPatches`: `List`\[`str`\]
+- `ApprovedPatches`: `Sequence`\[`str`\]
 - `ApprovedPatchesComplianceLevel`:
   [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
-- `RejectedPatches`: `List`\[`str`\]
+- `RejectedPatches`: `Sequence`\[`str`\]
 - `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
 - `ApprovedPatchesEnableNonSecurity`: `bool`
-- `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
+- `Sources`:
+  `Sequence`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
 
 ## CancelCommandRequestRequestTypeDef
 
@@ -832,7 +833,7 @@ Required fields:
 
 Optional fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 ## CancelMaintenanceWindowExecutionRequestRequestTypeDef
 
@@ -993,7 +994,7 @@ Optional fields:
 
 - `Id`: `str`
 - `Title`: `str`
-- `Details`: `Dict`\[`str`, `str`\]
+- `Details`: `Mapping`\[`str`, `str`\]
 
 ## ComplianceItemTypeDef
 
@@ -1023,7 +1024,7 @@ from mypy_boto3_ssm.type_defs import ComplianceStringFilterTypeDef
 Optional fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `Type`:
   [ComplianceQueryOperatorTypeType](./literals.md#compliancequeryoperatortypetype)
 
@@ -1069,7 +1070,7 @@ Optional fields:
 - `DefaultInstanceName`: `str`
 - `RegistrationLimit`: `int`
 - `ExpirationDate`: `Union`\[`datetime`, `str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateActivationResultTypeDef
 
@@ -1097,10 +1098,10 @@ Required fields:
 Optional fields:
 
 - `InstanceId`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `AutomationTargetParameterName`: `str`
 - `DocumentVersion`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `ScheduleExpression`: `str`
 - `OutputLocation`:
   [InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef)
@@ -1112,9 +1113,9 @@ Optional fields:
 - `SyncCompliance`:
   [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
 - `ApplyOnlyAtCronInterval`: `bool`
-- `CalendarNames`: `List`\[`str`\]
+- `CalendarNames`: `Sequence`\[`str`\]
 - `TargetLocations`:
-  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
+  `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 
 ## CreateAssociationBatchRequestRequestTypeDef
 
@@ -1125,7 +1126,7 @@ from mypy_boto3_ssm.type_defs import CreateAssociationBatchRequestRequestTypeDef
 Required fields:
 
 - `Entries`:
-  `List`\[[CreateAssociationBatchRequestEntryTypeDef](./type_defs.md#createassociationbatchrequestentrytypedef)\]
+  `Sequence`\[[CreateAssociationBatchRequestEntryTypeDef](./type_defs.md#createassociationbatchrequestentrytypedef)\]
 
 ## CreateAssociationBatchResultTypeDef
 
@@ -1156,8 +1157,8 @@ Optional fields:
 
 - `DocumentVersion`: `str`
 - `InstanceId`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `ScheduleExpression`: `str`
 - `OutputLocation`:
   [InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef)
@@ -1170,9 +1171,9 @@ Optional fields:
 - `SyncCompliance`:
   [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
 - `ApplyOnlyAtCronInterval`: `bool`
-- `CalendarNames`: `List`\[`str`\]
+- `CalendarNames`: `Sequence`\[`str`\]
 - `TargetLocations`:
-  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
+  `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 
 ## CreateAssociationResultTypeDef
 
@@ -1201,15 +1202,15 @@ Required fields:
 Optional fields:
 
 - `Requires`:
-  `List`\[[DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef)\]
+  `Sequence`\[[DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef)\]
 - `Attachments`:
-  `List`\[[AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef)\]
+  `Sequence`\[[AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef)\]
 - `DisplayName`: `str`
 - `VersionName`: `str`
 - `DocumentType`: [DocumentTypeType](./literals.md#documenttypetype)
 - `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
 - `TargetType`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDocumentResultTypeDef
 
@@ -1246,7 +1247,7 @@ Optional fields:
 - `ScheduleTimezone`: `str`
 - `ScheduleOffset`: `int`
 - `ClientToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateMaintenanceWindowResultTypeDef
 
@@ -1275,14 +1276,14 @@ Required fields:
 Optional fields:
 
 - `OpsItemType`: `str`
-- `OperationalData`: `Dict`\[`str`,
+- `OperationalData`: `Mapping`\[`str`,
   [OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef)\]
 - `Notifications`:
-  `List`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
+  `Sequence`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
 - `Priority`: `int`
 - `RelatedOpsItems`:
-  `List`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Category`: `str`
 - `Severity`: `str`
 - `ActualStartTime`: `Union`\[`datetime`, `str`\]
@@ -1314,9 +1315,9 @@ Required fields:
 
 Optional fields:
 
-- `Metadata`: `Dict`\[`str`,
+- `Metadata`: `Mapping`\[`str`,
   [MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateOpsMetadataResultTypeDef
 
@@ -1347,16 +1348,17 @@ Optional fields:
   [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
 - `ApprovalRules`:
   [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
-- `ApprovedPatches`: `List`\[`str`\]
+- `ApprovedPatches`: `Sequence`\[`str`\]
 - `ApprovedPatchesComplianceLevel`:
   [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
 - `ApprovedPatchesEnableNonSecurity`: `bool`
-- `RejectedPatches`: `List`\[`str`\]
+- `RejectedPatches`: `Sequence`\[`str`\]
 - `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
 - `Description`: `str`
-- `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
+- `Sources`:
+  `Sequence`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
 - `ClientToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePatchBaselineResultTypeDef
 
@@ -1508,7 +1510,7 @@ from mypy_boto3_ssm.type_defs import DeleteParametersRequestRequestTypeDef
 
 Required fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 
 ## DeleteParametersResultTypeDef
 
@@ -1655,7 +1657,7 @@ Optional fields:
 
 - `FilterKey`:
   [DescribeActivationsFilterKeysType](./literals.md#describeactivationsfilterkeystype)
-- `FilterValues`: `List`\[`str`\]
+- `FilterValues`: `Sequence`\[`str`\]
 
 ## DescribeActivationsRequestRequestTypeDef
 
@@ -1666,7 +1668,7 @@ from mypy_boto3_ssm.type_defs import DescribeActivationsRequestRequestTypeDef
 Optional fields:
 
 - `Filters`:
-  `List`\[[DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef)\]
+  `Sequence`\[[DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1698,7 +1700,7 @@ Required fields:
 Optional fields:
 
 - `Filters`:
-  `List`\[[AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef)\]
+  `Sequence`\[[AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1729,7 +1731,7 @@ Required fields:
 Optional fields:
 
 - `Filters`:
-  `List`\[[AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef)\]
+  `Sequence`\[[AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1782,7 +1784,7 @@ from mypy_boto3_ssm.type_defs import DescribeAutomationExecutionsRequestRequestT
 Optional fields:
 
 - `Filters`:
-  `List`\[[AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef)\]
+  `Sequence`\[[AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1813,7 +1815,7 @@ Required fields:
 Optional fields:
 
 - `Filters`:
-  `List`\[[StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef)\]
+  `Sequence`\[[StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `ReverseOrder`: `bool`
@@ -1841,7 +1843,7 @@ from mypy_boto3_ssm.type_defs import DescribeAvailablePatchesRequestRequestTypeD
 Optional fields:
 
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2014,9 +2016,9 @@ from mypy_boto3_ssm.type_defs import DescribeInstanceInformationRequestRequestTy
 Optional fields:
 
 - `InstanceInformationFilterList`:
-  `List`\[[InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef)\]
+  `Sequence`\[[InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef)\]
 - `Filters`:
-  `List`\[[InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef)\]
+  `Sequence`\[[InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2047,7 +2049,7 @@ Required fields:
 Optional fields:
 
 - `Filters`:
-  `List`\[[InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef)\]
+  `Sequence`\[[InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2073,7 +2075,7 @@ from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesRequestRequestTy
 
 Required fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2107,7 +2109,7 @@ Required fields:
 Optional fields:
 
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2165,7 +2167,7 @@ Required fields:
 Optional fields:
 
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2196,7 +2198,7 @@ Required fields:
 Optional fields:
 
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2227,7 +2229,7 @@ Required fields:
 Optional fields:
 
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2254,11 +2256,11 @@ from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowScheduleRequestReq
 Optional fields:
 
 - `WindowId`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `ResourceType`:
   [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2289,7 +2291,7 @@ Required fields:
 Optional fields:
 
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2320,7 +2322,7 @@ Required fields:
 Optional fields:
 
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2346,7 +2348,7 @@ from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsForTargetRequestR
 
 Required fields:
 
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `ResourceType`:
   [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
 
@@ -2378,7 +2380,7 @@ from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsRequestRequestTyp
 Optional fields:
 
 - `Filters`:
-  `List`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
+  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2405,7 +2407,7 @@ from mypy_boto3_ssm.type_defs import DescribeOpsItemsRequestRequestTypeDef
 Optional fields:
 
 - `OpsItemFilters`:
-  `List`\[[OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef)\]
+  `Sequence`\[[OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2432,9 +2434,9 @@ from mypy_boto3_ssm.type_defs import DescribeParametersRequestRequestTypeDef
 Optional fields:
 
 - `Filters`:
-  `List`\[[ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef)\]
+  `Sequence`\[[ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef)\]
 - `ParameterFilters`:
-  `List`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
+  `Sequence`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2461,7 +2463,7 @@ from mypy_boto3_ssm.type_defs import DescribePatchBaselinesRequestRequestTypeDef
 Optional fields:
 
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2522,7 +2524,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
+  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `NextToken`: `str`
 
 ## DescribePatchGroupsResultTypeDef
@@ -2584,7 +2586,7 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef)\]
+  `Sequence`\[[SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef)\]
 
 ## DescribeSessionsResponseTypeDef
 
@@ -2708,7 +2710,7 @@ from mypy_boto3_ssm.type_defs import DocumentKeyValuesFilterTypeDef
 Optional fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## DocumentMetadataResponseInfoTypeDef
 
@@ -2788,7 +2790,7 @@ Required fields:
 Optional fields:
 
 - `Comment`:
-  `List`\[[DocumentReviewCommentSourceTypeDef](./type_defs.md#documentreviewcommentsourcetypedef)\]
+  `Sequence`\[[DocumentReviewCommentSourceTypeDef](./type_defs.md#documentreviewcommentsourcetypedef)\]
 
 ## DocumentVersionInfoTypeDef
 
@@ -2876,7 +2878,7 @@ from mypy_boto3_ssm.type_defs import GetCalendarStateRequestRequestTypeDef
 
 Required fields:
 
-- `CalendarNames`: `List`\[`str`\]
+- `CalendarNames`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -3069,11 +3071,11 @@ from mypy_boto3_ssm.type_defs import GetInventoryRequestRequestTypeDef
 Optional fields:
 
 - `Filters`:
-  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
 - `Aggregators`:
-  `List`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
+  `Sequence`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
 - `ResultAttributes`:
-  `List`\[[ResultAttributeTypeDef](./type_defs.md#resultattributetypedef)\]
+  `Sequence`\[[ResultAttributeTypeDef](./type_defs.md#resultattributetypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -3358,11 +3360,11 @@ from mypy_boto3_ssm.type_defs import GetOpsSummaryRequestRequestTypeDef
 Optional fields:
 
 - `SyncName`: `str`
-- `Filters`: `List`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
+- `Filters`: `Sequence`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
 - `Aggregators`:
-  `List`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
+  `Sequence`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
 - `ResultAttributes`:
-  `List`\[[OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef)\]
+  `Sequence`\[[OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -3449,7 +3451,7 @@ Optional fields:
 
 - `Recursive`: `bool`
 - `ParameterFilters`:
-  `List`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
+  `Sequence`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
 - `WithDecryption`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -3475,7 +3477,7 @@ from mypy_boto3_ssm.type_defs import GetParametersRequestRequestTypeDef
 
 Required fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -3661,7 +3663,7 @@ Required fields:
 
 - `key`:
   [InstanceInformationFilterKeyType](./literals.md#instanceinformationfilterkeytype)
-- `valueSet`: `List`\[`str`\]
+- `valueSet`: `Sequence`\[`str`\]
 
 ## InstanceInformationStringFilterTypeDef
 
@@ -3672,7 +3674,7 @@ from mypy_boto3_ssm.type_defs import InstanceInformationStringFilterTypeDef
 Required fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## InstanceInformationTypeDef
 
@@ -3712,7 +3714,7 @@ from mypy_boto3_ssm.type_defs import InstancePatchStateFilterTypeDef
 Required fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `Type`:
   [InstancePatchStateOperatorTypeType](./literals.md#instancepatchstateoperatortypetype)
 
@@ -3760,9 +3762,9 @@ Optional fields:
 
 - `Expression`: `str`
 - `Aggregators`:
-  `List`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
+  `Sequence`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
 - `Groups`:
-  `List`\[[InventoryGroupTypeDef](./type_defs.md#inventorygrouptypedef)\]
+  `Sequence`\[[InventoryGroupTypeDef](./type_defs.md#inventorygrouptypedef)\]
 
 ## InventoryDeletionStatusItemTypeDef
 
@@ -3816,7 +3818,7 @@ from mypy_boto3_ssm.type_defs import InventoryFilterTypeDef
 Required fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -3833,7 +3835,7 @@ Required fields:
 
 - `Name`: `str`
 - `Filters`:
-  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
 
 ## InventoryItemAttributeTypeDef
 
@@ -3879,8 +3881,8 @@ Required fields:
 Optional fields:
 
 - `ContentHash`: `str`
-- `Content`: `List`\[`Dict`\[`str`, `str`\]\]
-- `Context`: `Dict`\[`str`, `str`\]
+- `Content`: `Sequence`\[`Mapping`\[`str`, `str`\]\]
+- `Context`: `Mapping`\[`str`, `str`\]
 
 ## InventoryResultEntityTypeDef
 
@@ -3920,7 +3922,7 @@ from mypy_boto3_ssm.type_defs import LabelParameterVersionRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Labels`: `List`\[`str`\]
+- `Labels`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -3977,7 +3979,7 @@ from mypy_boto3_ssm.type_defs import ListAssociationsRequestRequestTypeDef
 Optional fields:
 
 - `AssociationFilterList`:
-  `List`\[[AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef)\]
+  `Sequence`\[[AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -4008,7 +4010,7 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
+  `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
 - `Details`: `bool`
 
 ## ListCommandInvocationsResultTypeDef
@@ -4038,7 +4040,7 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
+  `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
 
 ## ListCommandsResultTypeDef
 
@@ -4062,9 +4064,9 @@ from mypy_boto3_ssm.type_defs import ListComplianceItemsRequestRequestTypeDef
 Optional fields:
 
 - `Filters`:
-  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
-- `ResourceIds`: `List`\[`str`\]
-- `ResourceTypes`: `List`\[`str`\]
+  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
+- `ResourceIds`: `Sequence`\[`str`\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -4091,7 +4093,7 @@ from mypy_boto3_ssm.type_defs import ListComplianceSummariesRequestRequestTypeDe
 Optional fields:
 
 - `Filters`:
-  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
+  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -4182,9 +4184,9 @@ from mypy_boto3_ssm.type_defs import ListDocumentsRequestRequestTypeDef
 Optional fields:
 
 - `DocumentFilterList`:
-  `List`\[[DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef)\]
+  `Sequence`\[[DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef)\]
 - `Filters`:
-  `List`\[[DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef)\]
+  `Sequence`\[[DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -4216,7 +4218,7 @@ Required fields:
 Optional fields:
 
 - `Filters`:
-  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -4246,7 +4248,7 @@ from mypy_boto3_ssm.type_defs import ListOpsItemEventsRequestRequestTypeDef
 Optional fields:
 
 - `Filters`:
-  `List`\[[OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef)\]
+  `Sequence`\[[OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -4274,7 +4276,7 @@ Optional fields:
 
 - `OpsItemId`: `str`
 - `Filters`:
-  `List`\[[OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef)\]
+  `Sequence`\[[OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -4301,7 +4303,7 @@ from mypy_boto3_ssm.type_defs import ListOpsMetadataRequestRequestTypeDef
 Optional fields:
 
 - `Filters`:
-  `List`\[[OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef)\]
+  `Sequence`\[[OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -4328,7 +4330,7 @@ from mypy_boto3_ssm.type_defs import ListResourceComplianceSummariesRequestReque
 Optional fields:
 
 - `Filters`:
-  `List`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
+  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -4489,7 +4491,7 @@ from mypy_boto3_ssm.type_defs import MaintenanceWindowFilterTypeDef
 Optional fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## MaintenanceWindowIdentityForTargetTypeDef
 
@@ -4661,8 +4663,8 @@ Required fields:
 
 Optional fields:
 
-- `AccountIdsToAdd`: `List`\[`str`\]
-- `AccountIdsToRemove`: `List`\[`str`\]
+- `AccountIdsToAdd`: `Sequence`\[`str`\]
+- `AccountIdsToRemove`: `Sequence`\[`str`\]
 - `SharedDocumentVersion`: `str`
 
 ## NonCompliantSummaryTypeDef
@@ -4702,10 +4704,10 @@ Optional fields:
 - `AggregatorType`: `str`
 - `TypeName`: `str`
 - `AttributeName`: `str`
-- `Values`: `Dict`\[`str`, `str`\]
-- `Filters`: `List`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
+- `Values`: `Mapping`\[`str`, `str`\]
+- `Filters`: `Sequence`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
 - `Aggregators`:
-  `List`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
+  `Sequence`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
 
 ## OpsEntityItemTypeDef
 
@@ -4739,7 +4741,7 @@ from mypy_boto3_ssm.type_defs import OpsFilterTypeDef
 Required fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -4766,7 +4768,7 @@ Required fields:
 
 - `Key`: `Literal['OpsItemId']` (see
   [OpsItemEventFilterKeyType](./literals.md#opsitemeventfilterkeytype))
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `Operator`: `Literal['Equal']` (see
   [OpsItemEventFilterOperatorType](./literals.md#opsitemeventfilteroperatortype))
 
@@ -4795,7 +4797,7 @@ from mypy_boto3_ssm.type_defs import OpsItemFilterTypeDef
 Required fields:
 
 - `Key`: [OpsItemFilterKeyType](./literals.md#opsitemfilterkeytype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `Operator`:
   [OpsItemFilterOperatorType](./literals.md#opsitemfilteroperatortype)
 
@@ -4848,7 +4850,7 @@ Required fields:
 
 - `Key`:
   [OpsItemRelatedItemsFilterKeyType](./literals.md#opsitemrelateditemsfilterkeytype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `Operator`: `Literal['Equal']` (see
   [OpsItemRelatedItemsFilterOperatorType](./literals.md#opsitemrelateditemsfilteroperatortype))
 
@@ -4921,7 +4923,7 @@ from mypy_boto3_ssm.type_defs import OpsMetadataFilterTypeDef
 Required fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## OpsMetadataTypeDef
 
@@ -5039,7 +5041,7 @@ Required fields:
 Optional fields:
 
 - `Option`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## ParameterTypeDef
 
@@ -5068,7 +5070,7 @@ from mypy_boto3_ssm.type_defs import ParametersFilterTypeDef
 Required fields:
 
 - `Key`: [ParametersFilterKeyType](./literals.md#parametersfilterkeytype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## PatchBaselineIdentityTypeDef
 
@@ -5113,7 +5115,7 @@ from mypy_boto3_ssm.type_defs import PatchFilterGroupTypeDef
 Required fields:
 
 - `PatchFilters`:
-  `List`\[[PatchFilterTypeDef](./type_defs.md#patchfiltertypedef)\]
+  `Sequence`\[[PatchFilterTypeDef](./type_defs.md#patchfiltertypedef)\]
 
 ## PatchFilterTypeDef
 
@@ -5124,7 +5126,7 @@ from mypy_boto3_ssm.type_defs import PatchFilterTypeDef
 Required fields:
 
 - `Key`: [PatchFilterKeyType](./literals.md#patchfilterkeytype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## PatchGroupPatchBaselineMappingTypeDef
 
@@ -5147,7 +5149,7 @@ from mypy_boto3_ssm.type_defs import PatchOrchestratorFilterTypeDef
 Optional fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## PatchRuleGroupTypeDef
 
@@ -5157,7 +5159,8 @@ from mypy_boto3_ssm.type_defs import PatchRuleGroupTypeDef
 
 Required fields:
 
-- `PatchRules`: `List`\[[PatchRuleTypeDef](./type_defs.md#patchruletypedef)\]
+- `PatchRules`:
+  `Sequence`\[[PatchRuleTypeDef](./type_defs.md#patchruletypedef)\]
 
 ## PatchRuleTypeDef
 
@@ -5187,7 +5190,7 @@ from mypy_boto3_ssm.type_defs import PatchSourceTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Products`: `List`\[`str`\]
+- `Products`: `Sequence`\[`str`\]
 - `Configuration`: `str`
 
 ## PatchStatusTypeDef
@@ -5264,7 +5267,7 @@ Required fields:
 - `ExecutionSummary`:
   [ComplianceExecutionSummaryTypeDef](./type_defs.md#complianceexecutionsummarytypedef)
 - `Items`:
-  `List`\[[ComplianceItemEntryTypeDef](./type_defs.md#complianceitementrytypedef)\]
+  `Sequence`\[[ComplianceItemEntryTypeDef](./type_defs.md#complianceitementrytypedef)\]
 
 Optional fields:
 
@@ -5282,7 +5285,7 @@ Required fields:
 
 - `InstanceId`: `str`
 - `Items`:
-  `List`\[[InventoryItemTypeDef](./type_defs.md#inventoryitemtypedef)\]
+  `Sequence`\[[InventoryItemTypeDef](./type_defs.md#inventoryitemtypedef)\]
 
 ## PutInventoryResultTypeDef
 
@@ -5314,7 +5317,7 @@ Optional fields:
 - `KeyId`: `str`
 - `Overwrite`: `bool`
 - `AllowedPattern`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Tier`: [ParameterTierType](./literals.md#parametertiertype)
 - `Policies`: `str`
 - `DataType`: `str`
@@ -5389,7 +5392,7 @@ Required fields:
 - `WindowId`: `str`
 - `ResourceType`:
   [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 
 Optional fields:
 
@@ -5425,9 +5428,9 @@ Required fields:
 
 Optional fields:
 
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `ServiceRoleArn`: `str`
-- `TaskParameters`: `Dict`\[`str`,
+- `TaskParameters`: `Mapping`\[`str`,
   [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
 - `TaskInvocationParameters`:
   [MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef)
@@ -5472,7 +5475,7 @@ Required fields:
 - `ResourceType`:
   [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
 - `ResourceId`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ResetServiceSettingRequestRequestTypeDef
 
@@ -5542,7 +5545,7 @@ Required fields:
 Optional fields:
 
 - `OrganizationalUnits`:
-  `List`\[[ResourceDataSyncOrganizationalUnitTypeDef](./type_defs.md#resourcedatasyncorganizationalunittypedef)\]
+  `Sequence`\[[ResourceDataSyncOrganizationalUnitTypeDef](./type_defs.md#resourcedatasyncorganizationalunittypedef)\]
 
 ## ResourceDataSyncDestinationDataSharingTypeDef
 
@@ -5615,7 +5618,7 @@ from mypy_boto3_ssm.type_defs import ResourceDataSyncSourceTypeDef
 Required fields:
 
 - `SourceType`: `str`
-- `SourceRegions`: `List`\[`str`\]
+- `SourceRegions`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -5768,7 +5771,7 @@ Required fields:
 
 Optional fields:
 
-- `Payload`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Payload`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 ## SendCommandRequestRequestTypeDef
 
@@ -5782,15 +5785,15 @@ Required fields:
 
 Optional fields:
 
-- `InstanceIds`: `List`\[`str`\]
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `DocumentVersion`: `str`
 - `DocumentHash`: `str`
 - `DocumentHashType`:
   [DocumentHashTypeType](./literals.md#documenthashtypetype)
 - `TimeoutSeconds`: `int`
 - `Comment`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `OutputS3Region`: `str`
 - `OutputS3BucketName`: `str`
 - `OutputS3KeyPrefix`: `str`
@@ -5893,7 +5896,7 @@ from mypy_boto3_ssm.type_defs import StartAssociationsOnceRequestRequestTypeDef
 
 Required fields:
 
-- `AssociationIds`: `List`\[`str`\]
+- `AssociationIds`: `Sequence`\[`str`\]
 
 ## StartAutomationExecutionRequestRequestTypeDef
 
@@ -5908,17 +5911,17 @@ Required fields:
 Optional fields:
 
 - `DocumentVersion`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `ClientToken`: `str`
 - `Mode`: [ExecutionModeType](./literals.md#executionmodetype)
 - `TargetParameterName`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `TargetMaps`: `List`\[`Dict`\[`str`, `List`\[`str`\]\]\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `TargetMaps`: `Sequence`\[`Mapping`\[`str`, `Sequence`\[`str`\]\]\]
 - `MaxConcurrency`: `str`
 - `MaxErrors`: `str`
 - `TargetLocations`:
-  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartAutomationExecutionResultTypeDef
 
@@ -5941,16 +5944,16 @@ from mypy_boto3_ssm.type_defs import StartChangeRequestExecutionRequestRequestTy
 Required fields:
 
 - `DocumentName`: `str`
-- `Runbooks`: `List`\[[RunbookTypeDef](./type_defs.md#runbooktypedef)\]
+- `Runbooks`: `Sequence`\[[RunbookTypeDef](./type_defs.md#runbooktypedef)\]
 
 Optional fields:
 
 - `ScheduledTime`: `Union`\[`datetime`, `str`\]
 - `DocumentVersion`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `ChangeRequestName`: `str`
 - `ClientToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ScheduledEndTime`: `Union`\[`datetime`, `str`\]
 - `ChangeDetails`: `str`
 
@@ -5979,7 +5982,7 @@ Required fields:
 Optional fields:
 
 - `DocumentName`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 ## StartSessionResponseTypeDef
 
@@ -6004,7 +6007,7 @@ from mypy_boto3_ssm.type_defs import StepExecutionFilterTypeDef
 Required fields:
 
 - `Key`: [StepExecutionFilterKeyType](./literals.md#stepexecutionfilterkeytype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## StepExecutionTypeDef
 
@@ -6073,8 +6076,8 @@ from mypy_boto3_ssm.type_defs import TargetLocationTypeDef
 
 Optional fields:
 
-- `Accounts`: `List`\[`str`\]
-- `Regions`: `List`\[`str`\]
+- `Accounts`: `Sequence`\[`str`\]
+- `Regions`: `Sequence`\[`str`\]
 - `TargetLocationMaxConcurrency`: `str`
 - `TargetLocationMaxErrors`: `str`
 - `ExecutionRoleName`: `str`
@@ -6088,7 +6091,7 @@ from mypy_boto3_ssm.type_defs import TargetTypeDef
 Optional fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## TerminateSessionRequestRequestTypeDef
 
@@ -6122,7 +6125,7 @@ Required fields:
 
 - `Name`: `str`
 - `ParameterVersion`: `int`
-- `Labels`: `List`\[`str`\]
+- `Labels`: `Sequence`\[`str`\]
 
 ## UnlabelParameterVersionResultTypeDef
 
@@ -6149,13 +6152,13 @@ Required fields:
 
 Optional fields:
 
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `DocumentVersion`: `str`
 - `ScheduleExpression`: `str`
 - `OutputLocation`:
   [InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef)
 - `Name`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `AssociationName`: `str`
 - `AssociationVersion`: `str`
 - `AutomationTargetParameterName`: `str`
@@ -6166,9 +6169,9 @@ Optional fields:
 - `SyncCompliance`:
   [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
 - `ApplyOnlyAtCronInterval`: `bool`
-- `CalendarNames`: `List`\[`str`\]
+- `CalendarNames`: `Sequence`\[`str`\]
 - `TargetLocations`:
-  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
+  `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 
 ## UpdateAssociationResultTypeDef
 
@@ -6263,7 +6266,7 @@ Required fields:
 Optional fields:
 
 - `Attachments`:
-  `List`\[[AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef)\]
+  `Sequence`\[[AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef)\]
 - `DisplayName`: `str`
 - `VersionName`: `str`
 - `DocumentVersion`: `str`
@@ -6344,7 +6347,7 @@ Required fields:
 
 Optional fields:
 
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `OwnerInformation`: `str`
 - `Name`: `str`
 - `Description`: `str`
@@ -6380,10 +6383,10 @@ Required fields:
 
 Optional fields:
 
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `TaskArn`: `str`
 - `ServiceRoleArn`: `str`
-- `TaskParameters`: `Dict`\[`str`,
+- `TaskParameters`: `Mapping`\[`str`,
   [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
 - `TaskInvocationParameters`:
   [MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef)
@@ -6445,14 +6448,14 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `OperationalData`: `Dict`\[`str`,
+- `OperationalData`: `Mapping`\[`str`,
   [OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef)\]
-- `OperationalDataToDelete`: `List`\[`str`\]
+- `OperationalDataToDelete`: `Sequence`\[`str`\]
 - `Notifications`:
-  `List`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
+  `Sequence`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
 - `Priority`: `int`
 - `RelatedOpsItems`:
-  `List`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
+  `Sequence`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
 - `Status`: [OpsItemStatusType](./literals.md#opsitemstatustype)
 - `Title`: `str`
 - `Category`: `str`
@@ -6474,9 +6477,9 @@ Required fields:
 
 Optional fields:
 
-- `MetadataToUpdate`: `Dict`\[`str`,
+- `MetadataToUpdate`: `Mapping`\[`str`,
   [MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef)\]
-- `KeysToDelete`: `List`\[`str`\]
+- `KeysToDelete`: `Sequence`\[`str`\]
 
 ## UpdateOpsMetadataResultTypeDef
 
@@ -6507,14 +6510,15 @@ Optional fields:
   [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
 - `ApprovalRules`:
   [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
-- `ApprovedPatches`: `List`\[`str`\]
+- `ApprovedPatches`: `Sequence`\[`str`\]
 - `ApprovedPatchesComplianceLevel`:
   [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
 - `ApprovedPatchesEnableNonSecurity`: `bool`
-- `RejectedPatches`: `List`\[`str`\]
+- `RejectedPatches`: `Sequence`\[`str`\]
 - `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
 - `Description`: `str`
-- `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
+- `Sources`:
+  `Sequence`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
 - `Replace`: `bool`
 
 ## UpdatePatchBaselineResultTypeDef

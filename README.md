@@ -579,6 +579,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
   service
 
+- [mypy-boto3-kafkaconnect](./mypy_boto3_kafkaconnect) for
+  [KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
+  service
+
 - [mypy-boto3-kendra](./mypy_boto3_kendra) for
   [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
   service

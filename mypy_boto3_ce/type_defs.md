@@ -200,9 +200,9 @@ from mypy_boto3_ce.type_defs import AnomalySubscriptionTypeDef
 
 Required fields:
 
-- `MonitorArnList`: `List`\[`str`\]
+- `MonitorArnList`: `Sequence`\[`str`\]
 - `Subscribers`:
-  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 - `Threshold`: `float`
 - `Frequency`:
   [AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype)
@@ -300,7 +300,7 @@ Required fields:
 
 - `Type`: `Literal['ALLOCATION_PERCENTAGES']` (see
   [CostCategorySplitChargeRuleParameterTypeType](./literals.md#costcategorysplitchargeruleparametertypetype))
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## CostCategorySplitChargeRuleTypeDef
 
@@ -311,14 +311,14 @@ from mypy_boto3_ce.type_defs import CostCategorySplitChargeRuleTypeDef
 Required fields:
 
 - `Source`: `str`
-- `Targets`: `List`\[`str`\]
+- `Targets`: `Sequence`\[`str`\]
 - `Method`:
   [CostCategorySplitChargeMethodType](./literals.md#costcategorysplitchargemethodtype)
 
 Optional fields:
 
 - `Parameters`:
-  `List`\[[CostCategorySplitChargeRuleParameterTypeDef](./type_defs.md#costcategorysplitchargeruleparametertypedef)\]
+  `Sequence`\[[CostCategorySplitChargeRuleParameterTypeDef](./type_defs.md#costcategorysplitchargeruleparametertypedef)\]
 
 ## CostCategoryTypeDef
 
@@ -354,8 +354,9 @@ from mypy_boto3_ce.type_defs import CostCategoryValuesTypeDef
 Optional fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
-- `MatchOptions`: `List`\[[MatchOptionType](./literals.md#matchoptiontype)\]
+- `Values`: `Sequence`\[`str`\]
+- `MatchOptions`:
+  `Sequence`\[[MatchOptionType](./literals.md#matchoptiontype)\]
 
 ## CoverageByTimeTypeDef
 
@@ -477,13 +478,13 @@ Required fields:
 - `RuleVersion`: `Literal['CostCategoryExpression.v1']` (see
   [CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype))
 - `Rules`:
-  `List`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
+  `Sequence`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
 
 Optional fields:
 
 - `DefaultValue`: `str`
 - `SplitChargeRules`:
-  `List`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
+  `Sequence`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
 
 ## CreateCostCategoryDefinitionResponseTypeDef
 
@@ -609,8 +610,9 @@ from mypy_boto3_ce.type_defs import DimensionValuesTypeDef
 Optional fields:
 
 - `Key`: [DimensionType](./literals.md#dimensiontype)
-- `Values`: `List`\[`str`\]
-- `MatchOptions`: `List`\[[MatchOptionType](./literals.md#matchoptiontype)\]
+- `Values`: `Sequence`\[`str`\]
+- `MatchOptions`:
+  `Sequence`\[[MatchOptionType](./literals.md#matchoptiontype)\]
 
 ## DimensionValuesWithAttributesTypeDef
 
@@ -749,8 +751,8 @@ from mypy_boto3_ce.type_defs import ExpressionTypeDef
 
 Optional fields:
 
-- `Or`: `List`\[[ExpressionTypeDef](./type_defs.md#expressiontypedef)\]
-- `And`: `List`\[[ExpressionTypeDef](./type_defs.md#expressiontypedef)\]
+- `Or`: `Sequence`\[[ExpressionTypeDef](./type_defs.md#expressiontypedef)\]
+- `And`: `Sequence`\[[ExpressionTypeDef](./type_defs.md#expressiontypedef)\]
 - `Not`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `Dimensions`: [DimensionValuesTypeDef](./type_defs.md#dimensionvaluestypedef)
 - `Tags`: [TagValuesTypeDef](./type_defs.md#tagvaluestypedef)
@@ -811,7 +813,7 @@ from mypy_boto3_ce.type_defs import GetAnomalyMonitorsRequestRequestTypeDef
 
 Optional fields:
 
-- `MonitorArnList`: `List`\[`str`\]
+- `MonitorArnList`: `Sequence`\[`str`\]
 - `NextPageToken`: `str`
 - `MaxResults`: `int`
 
@@ -837,7 +839,7 @@ from mypy_boto3_ce.type_defs import GetAnomalySubscriptionsRequestRequestTypeDef
 
 Optional fields:
 
-- `SubscriptionArnList`: `List`\[`str`\]
+- `SubscriptionArnList`: `Sequence`\[`str`\]
 - `MonitorArn`: `str`
 - `NextPageToken`: `str`
 - `MaxResults`: `int`
@@ -866,13 +868,13 @@ Required fields:
 
 - `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
 - `Granularity`: [GranularityType](./literals.md#granularitytype)
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `GroupBy`:
-  `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
+  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `NextPageToken`: `str`
 
 ## GetCostAndUsageResponseTypeDef
@@ -907,9 +909,9 @@ Required fields:
 
 Optional fields:
 
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 - `GroupBy`:
-  `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
+  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `NextPageToken`: `str`
 
 ## GetCostAndUsageWithResourcesResponseTypeDef
@@ -946,7 +948,7 @@ Optional fields:
 - `CostCategoryName`: `str`
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `SortBy`:
-  `List`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
+  `Sequence`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
@@ -1014,7 +1016,7 @@ Optional fields:
 - `Context`: [ContextType](./literals.md#contexttype)
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `SortBy`:
-  `List`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
+  `Sequence`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
@@ -1047,10 +1049,10 @@ Required fields:
 Optional fields:
 
 - `GroupBy`:
-  `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
+  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `Granularity`: [GranularityType](./literals.md#granularitytype)
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 - `NextPageToken`: `str`
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 - `MaxResults`: `int`
@@ -1123,7 +1125,7 @@ Required fields:
 Optional fields:
 
 - `GroupBy`:
-  `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
+  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `Granularity`: [GranularityType](./literals.md#granularitytype)
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
@@ -1197,10 +1199,10 @@ Required fields:
 Optional fields:
 
 - `GroupBy`:
-  `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
+  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `Granularity`: [GranularityType](./literals.md#granularitytype)
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
@@ -1271,7 +1273,7 @@ Optional fields:
 
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `DataType`:
-  `List`\[[SavingsPlansDataTypeType](./literals.md#savingsplansdatatypetype)\]
+  `Sequence`\[[SavingsPlansDataTypeType](./literals.md#savingsplansdatatypetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
@@ -1340,7 +1342,7 @@ Optional fields:
 - `TagKey`: `str`
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `SortBy`:
-  `List`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
+  `Sequence`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
@@ -2058,8 +2060,9 @@ from mypy_boto3_ce.type_defs import TagValuesTypeDef
 Optional fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
-- `MatchOptions`: `List`\[[MatchOptionType](./literals.md#matchoptiontype)\]
+- `Values`: `Sequence`\[`str`\]
+- `MatchOptions`:
+  `Sequence`\[[MatchOptionType](./literals.md#matchoptiontype)\]
 
 ## TargetInstanceTypeDef
 
@@ -2147,9 +2150,9 @@ Optional fields:
 - `Threshold`: `float`
 - `Frequency`:
   [AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype)
-- `MonitorArnList`: `List`\[`str`\]
+- `MonitorArnList`: `Sequence`\[`str`\]
 - `Subscribers`:
-  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 - `SubscriptionName`: `str`
 
 ## UpdateAnomalySubscriptionResponseTypeDef
@@ -2176,13 +2179,13 @@ Required fields:
 - `RuleVersion`: `Literal['CostCategoryExpression.v1']` (see
   [CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype))
 - `Rules`:
-  `List`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
+  `Sequence`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
 
 Optional fields:
 
 - `DefaultValue`: `str`
 - `SplitChargeRules`:
-  `List`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
+  `Sequence`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
 
 ## UpdateCostCategoryDefinitionResponseTypeDef
 

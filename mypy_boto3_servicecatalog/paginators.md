@@ -464,8 +464,8 @@ Arguments for `SearchProductsAsAdminPaginator.paginate` method:
 - `AcceptLanguage`: `str`
 - `PortfolioId`: `str`
 - `Filters`:
-  `Dict`\[[ProductViewFilterByType](./literals.md#productviewfilterbytype),
-  `List`\[`str`\]\]
+  `Mapping`\[[ProductViewFilterByType](./literals.md#productviewfilterbytype),
+  `Sequence`\[`str`\]\]
 - `SortBy`: [ProductViewSortByType](./literals.md#productviewsortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `ProductSource`: `Literal['ACCOUNT']` (see

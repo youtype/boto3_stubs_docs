@@ -29,11 +29,12 @@ Boto3 documentation:
 
 Arguments for `ListRepositoryAssociationsPaginator.paginate` method:
 
-- `ProviderTypes`: `List`\[[ProviderTypeType](./literals.md#providertypetype)\]
+- `ProviderTypes`:
+  `Sequence`\[[ProviderTypeType](./literals.md#providertypetype)\]
 - `States`:
-  `List`\[[RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)\]
-- `Names`: `List`\[`str`\]
-- `Owners`: `List`\[`str`\]
+  `Sequence`\[[RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)\]
+- `Names`: `Sequence`\[`str`\]
+- `Owners`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

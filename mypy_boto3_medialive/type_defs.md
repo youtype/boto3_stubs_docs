@@ -391,7 +391,7 @@ from mypy_boto3_medialive.type_defs import ArchiveContainerSettingsTypeDef
 Optional fields:
 
 - `M2tsSettings`: [M2tsSettingsTypeDef](./type_defs.md#m2tssettingstypedef)
-- `RawSettings`: `Dict`\[`str`, `Any`\]
+- `RawSettings`: `Mapping`\[`str`, `Any`\]
 
 ## ArchiveGroupSettingsTypeDef
 
@@ -445,7 +445,7 @@ from mypy_boto3_medialive.type_defs import AudioChannelMappingTypeDef
 Required fields:
 
 - `InputChannelLevels`:
-  `List`\[[InputChannelLevelTypeDef](./type_defs.md#inputchannelleveltypedef)\]
+  `Sequence`\[[InputChannelLevelTypeDef](./type_defs.md#inputchannelleveltypedef)\]
 - `OutputChannel`: `int`
 
 ## AudioCodecSettingsTypeDef
@@ -460,7 +460,7 @@ Optional fields:
 - `Ac3Settings`: [Ac3SettingsTypeDef](./type_defs.md#ac3settingstypedef)
 - `Eac3Settings`: [Eac3SettingsTypeDef](./type_defs.md#eac3settingstypedef)
 - `Mp2Settings`: [Mp2SettingsTypeDef](./type_defs.md#mp2settingstypedef)
-- `PassThroughSettings`: `Dict`\[`str`, `Any`\]
+- `PassThroughSettings`: `Mapping`\[`str`, `Any`\]
 - `WavSettings`: [WavSettingsTypeDef](./type_defs.md#wavsettingstypedef)
 
 ## AudioDescriptionTypeDef
@@ -608,7 +608,7 @@ from mypy_boto3_medialive.type_defs import AudioTrackSelectionTypeDef
 
 Required fields:
 
-- `Tracks`: `List`\[[AudioTrackTypeDef](./type_defs.md#audiotracktypedef)\]
+- `Tracks`: `Sequence`\[[AudioTrackTypeDef](./type_defs.md#audiotracktypedef)\]
 
 ## AudioTrackTypeDef
 
@@ -634,7 +634,7 @@ Optional fields:
 
 - `ErrorClearTimeMsec`: `int`
 - `FailoverConditions`:
-  `List`\[[FailoverConditionTypeDef](./type_defs.md#failoverconditiontypedef)\]
+  `Sequence`\[[FailoverConditionTypeDef](./type_defs.md#failoverconditiontypedef)\]
 - `InputPreference`: [InputPreferenceType](./literals.md#inputpreferencetype)
 
 ## AvailBlankingTypeDef
@@ -680,10 +680,10 @@ from mypy_boto3_medialive.type_defs import BatchDeleteRequestRequestTypeDef
 
 Optional fields:
 
-- `ChannelIds`: `List`\[`str`\]
-- `InputIds`: `List`\[`str`\]
-- `InputSecurityGroupIds`: `List`\[`str`\]
-- `MultiplexIds`: `List`\[`str`\]
+- `ChannelIds`: `Sequence`\[`str`\]
+- `InputIds`: `Sequence`\[`str`\]
+- `InputSecurityGroupIds`: `Sequence`\[`str`\]
+- `MultiplexIds`: `Sequence`\[`str`\]
 
 ## BatchDeleteResponseTypeDef
 
@@ -722,7 +722,7 @@ from mypy_boto3_medialive.type_defs import BatchScheduleActionCreateRequestTypeD
 Required fields:
 
 - `ScheduleActions`:
-  `List`\[[ScheduleActionTypeDef](./type_defs.md#scheduleactiontypedef)\]
+  `Sequence`\[[ScheduleActionTypeDef](./type_defs.md#scheduleactiontypedef)\]
 
 ## BatchScheduleActionCreateResultTypeDef
 
@@ -743,7 +743,7 @@ from mypy_boto3_medialive.type_defs import BatchScheduleActionDeleteRequestTypeD
 
 Required fields:
 
-- `ActionNames`: `List`\[`str`\]
+- `ActionNames`: `Sequence`\[`str`\]
 
 ## BatchScheduleActionDeleteResultTypeDef
 
@@ -764,8 +764,8 @@ from mypy_boto3_medialive.type_defs import BatchStartRequestRequestTypeDef
 
 Optional fields:
 
-- `ChannelIds`: `List`\[`str`\]
-- `MultiplexIds`: `List`\[`str`\]
+- `ChannelIds`: `Sequence`\[`str`\]
+- `MultiplexIds`: `Sequence`\[`str`\]
 
 ## BatchStartResponseTypeDef
 
@@ -790,8 +790,8 @@ from mypy_boto3_medialive.type_defs import BatchStopRequestRequestTypeDef
 
 Optional fields:
 
-- `ChannelIds`: `List`\[`str`\]
-- `MultiplexIds`: `List`\[`str`\]
+- `ChannelIds`: `Sequence`\[`str`\]
+- `MultiplexIds`: `Sequence`\[`str`\]
 
 ## BatchStopResponseTypeDef
 
@@ -934,20 +934,20 @@ from mypy_boto3_medialive.type_defs import CaptionDestinationSettingsTypeDef
 
 Optional fields:
 
-- `AribDestinationSettings`: `Dict`\[`str`, `Any`\]
+- `AribDestinationSettings`: `Mapping`\[`str`, `Any`\]
 - `BurnInDestinationSettings`:
   [BurnInDestinationSettingsTypeDef](./type_defs.md#burnindestinationsettingstypedef)
 - `DvbSubDestinationSettings`:
   [DvbSubDestinationSettingsTypeDef](./type_defs.md#dvbsubdestinationsettingstypedef)
 - `EbuTtDDestinationSettings`:
   [EbuTtDDestinationSettingsTypeDef](./type_defs.md#ebuttddestinationsettingstypedef)
-- `EmbeddedDestinationSettings`: `Dict`\[`str`, `Any`\]
-- `EmbeddedPlusScte20DestinationSettings`: `Dict`\[`str`, `Any`\]
-- `RtmpCaptionInfoDestinationSettings`: `Dict`\[`str`, `Any`\]
-- `Scte20PlusEmbeddedDestinationSettings`: `Dict`\[`str`, `Any`\]
-- `Scte27DestinationSettings`: `Dict`\[`str`, `Any`\]
-- `SmpteTtDestinationSettings`: `Dict`\[`str`, `Any`\]
-- `TeletextDestinationSettings`: `Dict`\[`str`, `Any`\]
+- `EmbeddedDestinationSettings`: `Mapping`\[`str`, `Any`\]
+- `EmbeddedPlusScte20DestinationSettings`: `Mapping`\[`str`, `Any`\]
+- `RtmpCaptionInfoDestinationSettings`: `Mapping`\[`str`, `Any`\]
+- `Scte20PlusEmbeddedDestinationSettings`: `Mapping`\[`str`, `Any`\]
+- `Scte27DestinationSettings`: `Mapping`\[`str`, `Any`\]
+- `SmpteTtDestinationSettings`: `Mapping`\[`str`, `Any`\]
+- `TeletextDestinationSettings`: `Mapping`\[`str`, `Any`\]
 - `TtmlDestinationSettings`:
   [TtmlDestinationSettingsTypeDef](./type_defs.md#ttmldestinationsettingstypedef)
 - `WebvttDestinationSettings`:
@@ -988,7 +988,7 @@ Optional fields:
 
 - `AncillarySourceSettings`:
   [AncillarySourceSettingsTypeDef](./type_defs.md#ancillarysourcesettingstypedef)
-- `AribSourceSettings`: `Dict`\[`str`, `Any`\]
+- `AribSourceSettings`: `Mapping`\[`str`, `Any`\]
 - `DvbSubSourceSettings`:
   [DvbSubSourceSettingsTypeDef](./type_defs.md#dvbsubsourcesettingstypedef)
 - `EmbeddedSourceSettings`:
@@ -1112,11 +1112,11 @@ Optional fields:
   [CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef)
 - `ChannelClass`: [ChannelClassType](./literals.md#channelclasstype)
 - `Destinations`:
-  `List`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
+  `Sequence`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
 - `EncoderSettings`:
   [EncoderSettingsTypeDef](./type_defs.md#encodersettingstypedef)
 - `InputAttachments`:
-  `List`\[[InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef)\]
+  `Sequence`\[[InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef)\]
 - `InputSpecification`:
   [InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef)
 - `LogLevel`: [LogLevelType](./literals.md#logleveltype)
@@ -1124,7 +1124,7 @@ Optional fields:
 - `RequestId`: `str`
 - `Reserved`: `str`
 - `RoleArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Vpc`: [VpcOutputSettingsTypeDef](./type_defs.md#vpcoutputsettingstypedef)
 
 ## CreateChannelResponseTypeDef
@@ -1148,18 +1148,18 @@ from mypy_boto3_medialive.type_defs import CreateInputRequestRequestTypeDef
 Optional fields:
 
 - `Destinations`:
-  `List`\[[InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef)\]
+  `Sequence`\[[InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef)\]
 - `InputDevices`:
-  `List`\[[InputDeviceSettingsTypeDef](./type_defs.md#inputdevicesettingstypedef)\]
-- `InputSecurityGroups`: `List`\[`str`\]
+  `Sequence`\[[InputDeviceSettingsTypeDef](./type_defs.md#inputdevicesettingstypedef)\]
+- `InputSecurityGroups`: `Sequence`\[`str`\]
 - `MediaConnectFlows`:
-  `List`\[[MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef)\]
+  `Sequence`\[[MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef)\]
 - `Name`: `str`
 - `RequestId`: `str`
 - `RoleArn`: `str`
 - `Sources`:
-  `List`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
-- `Tags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Type`: [InputTypeType](./literals.md#inputtypetype)
 - `Vpc`: [InputVpcRequestTypeDef](./type_defs.md#inputvpcrequesttypedef)
 
@@ -1183,9 +1183,9 @@ from mypy_boto3_medialive.type_defs import CreateInputSecurityGroupRequestReques
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `WhitelistRules`:
-  `List`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
+  `Sequence`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
 
 ## CreateInputSecurityGroupResponseTypeDef
 
@@ -1235,7 +1235,7 @@ from mypy_boto3_medialive.type_defs import CreateMultiplexRequestRequestTypeDef
 
 Required fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `MultiplexSettings`:
   [MultiplexSettingsTypeDef](./type_defs.md#multiplexsettingstypedef)
 - `Name`: `str`
@@ -1243,7 +1243,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateMultiplexResponseTypeDef
 
@@ -1270,7 +1270,7 @@ Required fields:
 Optional fields:
 
 - `RequestId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreatePartnerInputResponseTypeDef
 
@@ -1296,7 +1296,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## DeleteChannelRequestRequestTypeDef
 
@@ -1488,7 +1488,7 @@ from mypy_boto3_medialive.type_defs import DeleteTagsRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## DescribeChannelRequestRequestTypeDef
 
@@ -1996,13 +1996,13 @@ from mypy_boto3_medialive.type_defs import EncoderSettingsTypeDef
 Required fields:
 
 - `AudioDescriptions`:
-  `List`\[[AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef)\]
+  `Sequence`\[[AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef)\]
 - `OutputGroups`:
-  `List`\[[OutputGroupTypeDef](./type_defs.md#outputgrouptypedef)\]
+  `Sequence`\[[OutputGroupTypeDef](./type_defs.md#outputgrouptypedef)\]
 - `TimecodeConfig`:
   [TimecodeConfigTypeDef](./type_defs.md#timecodeconfigtypedef)
 - `VideoDescriptions`:
-  `List`\[[VideoDescriptionTypeDef](./type_defs.md#videodescriptiontypedef)\]
+  `Sequence`\[[VideoDescriptionTypeDef](./type_defs.md#videodescriptiontypedef)\]
 
 Optional fields:
 
@@ -2011,7 +2011,7 @@ Optional fields:
   [AvailConfigurationTypeDef](./type_defs.md#availconfigurationtypedef)
 - `BlackoutSlate`: [BlackoutSlateTypeDef](./type_defs.md#blackoutslatetypedef)
 - `CaptionDescriptions`:
-  `List`\[[CaptionDescriptionTypeDef](./type_defs.md#captiondescriptiontypedef)\]
+  `Sequence`\[[CaptionDescriptionTypeDef](./type_defs.md#captiondescriptiontypedef)\]
 - `FeatureActivations`:
   [FeatureActivationsTypeDef](./type_defs.md#featureactivationstypedef)
 - `GlobalConfiguration`:
@@ -2193,9 +2193,9 @@ from mypy_boto3_medialive.type_defs import H264ColorSpaceSettingsTypeDef
 
 Optional fields:
 
-- `ColorSpacePassthroughSettings`: `Dict`\[`str`, `Any`\]
-- `Rec601Settings`: `Dict`\[`str`, `Any`\]
-- `Rec709Settings`: `Dict`\[`str`, `Any`\]
+- `ColorSpacePassthroughSettings`: `Mapping`\[`str`, `Any`\]
+- `Rec601Settings`: `Mapping`\[`str`, `Any`\]
+- `Rec709Settings`: `Mapping`\[`str`, `Any`\]
 
 ## H264FilterSettingsTypeDef
 
@@ -2276,10 +2276,10 @@ from mypy_boto3_medialive.type_defs import H265ColorSpaceSettingsTypeDef
 
 Optional fields:
 
-- `ColorSpacePassthroughSettings`: `Dict`\[`str`, `Any`\]
+- `ColorSpacePassthroughSettings`: `Mapping`\[`str`, `Any`\]
 - `Hdr10Settings`: [Hdr10SettingsTypeDef](./type_defs.md#hdr10settingstypedef)
-- `Rec601Settings`: `Dict`\[`str`, `Any`\]
-- `Rec709Settings`: `Dict`\[`str`, `Any`\]
+- `Rec601Settings`: `Mapping`\[`str`, `Any`\]
+- `Rec709Settings`: `Mapping`\[`str`, `Any`\]
 
 ## H265FilterSettingsTypeDef
 
@@ -2413,13 +2413,13 @@ Required fields:
 
 Optional fields:
 
-- `AdMarkers`: `List`\[[HlsAdMarkersType](./literals.md#hlsadmarkerstype)\]
+- `AdMarkers`: `Sequence`\[[HlsAdMarkersType](./literals.md#hlsadmarkerstype)\]
 - `BaseUrlContent`: `str`
 - `BaseUrlContent1`: `str`
 - `BaseUrlManifest`: `str`
 - `BaseUrlManifest1`: `str`
 - `CaptionLanguageMappings`:
-  `List`\[[CaptionLanguageMappingTypeDef](./type_defs.md#captionlanguagemappingtypedef)\]
+  `Sequence`\[[CaptionLanguageMappingTypeDef](./type_defs.md#captionlanguagemappingtypedef)\]
 - `CaptionLanguageSetting`:
   [HlsCaptionLanguageSettingType](./literals.md#hlscaptionlanguagesettingtype)
 - `ClientCache`: [HlsClientCacheType](./literals.md#hlsclientcachetype)
@@ -2554,7 +2554,7 @@ Optional fields:
   [AudioOnlyHlsSettingsTypeDef](./type_defs.md#audioonlyhlssettingstypedef)
 - `Fmp4HlsSettings`:
   [Fmp4HlsSettingsTypeDef](./type_defs.md#fmp4hlssettingstypedef)
-- `FrameCaptureHlsSettings`: `Dict`\[`str`, `Any`\]
+- `FrameCaptureHlsSettings`: `Mapping`\[`str`, `Any`\]
 - `StandardHlsSettings`:
   [StandardHlsSettingsTypeDef](./type_defs.md#standardhlssettingstypedef)
 
@@ -2823,7 +2823,7 @@ Optional fields:
 - `InputAttachmentNameReference`: `str`
 - `InputClippingSettings`:
   [InputClippingSettingsTypeDef](./type_defs.md#inputclippingsettingstypedef)
-- `UrlPath`: `List`\[`str`\]
+- `UrlPath`: `Sequence`\[`str`\]
 
 ## InputSecurityGroupTypeDef
 
@@ -2851,9 +2851,9 @@ from mypy_boto3_medialive.type_defs import InputSettingsTypeDef
 Optional fields:
 
 - `AudioSelectors`:
-  `List`\[[AudioSelectorTypeDef](./type_defs.md#audioselectortypedef)\]
+  `Sequence`\[[AudioSelectorTypeDef](./type_defs.md#audioselectortypedef)\]
 - `CaptionSelectors`:
-  `List`\[[CaptionSelectorTypeDef](./type_defs.md#captionselectortypedef)\]
+  `Sequence`\[[CaptionSelectorTypeDef](./type_defs.md#captionselectortypedef)\]
 - `DeblockFilter`:
   [InputDeblockFilterType](./literals.md#inputdeblockfiltertype)
 - `DenoiseFilter`:
@@ -2919,7 +2919,7 @@ Optional fields:
 
 - `InputClippingSettings`:
   [InputClippingSettingsTypeDef](./type_defs.md#inputclippingsettingstypedef)
-- `UrlPath`: `List`\[`str`\]
+- `UrlPath`: `Sequence`\[`str`\]
 
 ## InputTypeDef
 
@@ -2957,11 +2957,11 @@ from mypy_boto3_medialive.type_defs import InputVpcRequestTypeDef
 
 Required fields:
 
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## InputWhitelistRuleCidrTypeDef
 
@@ -3440,7 +3440,7 @@ from mypy_boto3_medialive.type_defs import MotionGraphicsSettingsTypeDef
 
 Optional fields:
 
-- `HtmlMotionGraphicsSettings`: `Dict`\[`str`, `Any`\]
+- `HtmlMotionGraphicsSettings`: `Mapping`\[`str`, `Any`\]
 
 ## Mp2SettingsTypeDef
 
@@ -3846,11 +3846,11 @@ Optional fields:
 
 - `Id`: `str`
 - `MediaPackageSettings`:
-  `List`\[[MediaPackageOutputDestinationSettingsTypeDef](./type_defs.md#mediapackageoutputdestinationsettingstypedef)\]
+  `Sequence`\[[MediaPackageOutputDestinationSettingsTypeDef](./type_defs.md#mediapackageoutputdestinationsettingstypedef)\]
 - `MultiplexSettings`:
   [MultiplexProgramChannelDestinationSettingsTypeDef](./type_defs.md#multiplexprogramchanneldestinationsettingstypedef)
 - `Settings`:
-  `List`\[[OutputDestinationSettingsTypeDef](./type_defs.md#outputdestinationsettingstypedef)\]
+  `Sequence`\[[OutputDestinationSettingsTypeDef](./type_defs.md#outputdestinationsettingstypedef)\]
 
 ## OutputGroupSettingsTypeDef
 
@@ -3870,7 +3870,7 @@ Optional fields:
   [MediaPackageGroupSettingsTypeDef](./type_defs.md#mediapackagegroupsettingstypedef)
 - `MsSmoothGroupSettings`:
   [MsSmoothGroupSettingsTypeDef](./type_defs.md#mssmoothgroupsettingstypedef)
-- `MultiplexGroupSettings`: `Dict`\[`str`, `Any`\]
+- `MultiplexGroupSettings`: `Mapping`\[`str`, `Any`\]
 - `RtmpGroupSettings`:
   [RtmpGroupSettingsTypeDef](./type_defs.md#rtmpgroupsettingstypedef)
 - `UdpGroupSettings`:
@@ -3886,7 +3886,7 @@ Required fields:
 
 - `OutputGroupSettings`:
   [OutputGroupSettingsTypeDef](./type_defs.md#outputgroupsettingstypedef)
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 
 Optional fields:
 
@@ -3916,7 +3916,7 @@ Optional fields:
   [FrameCaptureOutputSettingsTypeDef](./type_defs.md#framecaptureoutputsettingstypedef)
 - `HlsOutputSettings`:
   [HlsOutputSettingsTypeDef](./type_defs.md#hlsoutputsettingstypedef)
-- `MediaPackageOutputSettings`: `Dict`\[`str`, `Any`\]
+- `MediaPackageOutputSettings`: `Mapping`\[`str`, `Any`\]
 - `MsSmoothOutputSettings`:
   [MsSmoothOutputSettingsTypeDef](./type_defs.md#mssmoothoutputsettingstypedef)
 - `MultiplexOutputSettings`:
@@ -3939,8 +3939,8 @@ Required fields:
 
 Optional fields:
 
-- `AudioDescriptionNames`: `List`\[`str`\]
-- `CaptionDescriptionNames`: `List`\[`str`\]
+- `AudioDescriptionNames`: `Sequence`\[`str`\]
+- `CaptionDescriptionNames`: `Sequence`\[`str`\]
 - `OutputName`: `str`
 - `VideoDescriptionName`: `str`
 
@@ -3965,7 +3965,7 @@ from mypy_boto3_medialive.type_defs import PauseStateScheduleActionSettingsTypeD
 Optional fields:
 
 - `Pipelines`:
-  `List`\[[PipelinePauseStateSettingsTypeDef](./type_defs.md#pipelinepausestatesettingstypedef)\]
+  `Sequence`\[[PipelinePauseStateSettingsTypeDef](./type_defs.md#pipelinepausestatesettingstypedef)\]
 
 ## PipelineDetailTypeDef
 
@@ -4007,7 +4007,7 @@ Optional fields:
 - `Name`: `str`
 - `RequestId`: `str`
 - `Start`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## PurchaseOfferingResponseTypeDef
 
@@ -4040,7 +4040,7 @@ from mypy_boto3_medialive.type_defs import RemixSettingsTypeDef
 Required fields:
 
 - `ChannelMappings`:
-  `List`\[[AudioChannelMappingTypeDef](./type_defs.md#audiochannelmappingtypedef)\]
+  `Sequence`\[[AudioChannelMappingTypeDef](./type_defs.md#audiochannelmappingtypedef)\]
 
 Optional fields:
 
@@ -4122,7 +4122,7 @@ from mypy_boto3_medialive.type_defs import RtmpGroupSettingsTypeDef
 
 Optional fields:
 
-- `AdMarkers`: `List`\[`Literal['ON_CUE_POINT_SCTE35']` (see
+- `AdMarkers`: `Sequence`\[`Literal['ON_CUE_POINT_SCTE35']` (see
   [RtmpAdMarkersType](./literals.md#rtmpadmarkerstype))\]
 - `AuthenticationScheme`:
   [AuthenticationSchemeType](./literals.md#authenticationschemetype)
@@ -4170,7 +4170,7 @@ Optional fields:
   [InputSwitchScheduleActionSettingsTypeDef](./type_defs.md#inputswitchscheduleactionsettingstypedef)
 - `MotionGraphicsImageActivateSettings`:
   [MotionGraphicsActivateScheduleActionSettingsTypeDef](./type_defs.md#motiongraphicsactivatescheduleactionsettingstypedef)
-- `MotionGraphicsImageDeactivateSettings`: `Dict`\[`str`, `Any`\]
+- `MotionGraphicsImageDeactivateSettings`: `Mapping`\[`str`, `Any`\]
 - `PauseStateSettings`:
   [PauseStateScheduleActionSettingsTypeDef](./type_defs.md#pausestatescheduleactionsettingstypedef)
 - `Scte35ReturnToNetworkSettings`:
@@ -4196,7 +4196,7 @@ Optional fields:
   [FixedModeScheduleActionStartSettingsTypeDef](./type_defs.md#fixedmodescheduleactionstartsettingstypedef)
 - `FollowModeScheduleActionStartSettings`:
   [FollowModeScheduleActionStartSettingsTypeDef](./type_defs.md#followmodescheduleactionstartsettingstypedef)
-- `ImmediateModeScheduleActionStartSettings`: `Dict`\[`str`, `Any`\]
+- `ImmediateModeScheduleActionStartSettings`: `Mapping`\[`str`, `Any`\]
 
 ## ScheduleActionTypeDef
 
@@ -4360,7 +4360,7 @@ from mypy_boto3_medialive.type_defs import Scte35TimeSignalScheduleActionSetting
 Required fields:
 
 - `Scte35Descriptors`:
-  `List`\[[Scte35DescriptorTypeDef](./type_defs.md#scte35descriptortypedef)\]
+  `Sequence`\[[Scte35DescriptorTypeDef](./type_defs.md#scte35descriptortypedef)\]
 
 ## StandardHlsSettingsTypeDef
 
@@ -4741,7 +4741,7 @@ Required fields:
 Optional fields:
 
 - `Destinations`:
-  `List`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
+  `Sequence`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
 
 ## UpdateChannelClassResponseTypeDef
 
@@ -4770,11 +4770,11 @@ Optional fields:
 - `CdiInputSpecification`:
   [CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef)
 - `Destinations`:
-  `List`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
+  `Sequence`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
 - `EncoderSettings`:
   [EncoderSettingsTypeDef](./type_defs.md#encodersettingstypedef)
 - `InputAttachments`:
-  `List`\[[InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef)\]
+  `Sequence`\[[InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef)\]
 - `InputSpecification`:
   [InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef)
 - `LogLevel`: [LogLevelType](./literals.md#logleveltype)
@@ -4854,16 +4854,16 @@ Required fields:
 Optional fields:
 
 - `Destinations`:
-  `List`\[[InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef)\]
+  `Sequence`\[[InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef)\]
 - `InputDevices`:
-  `List`\[[InputDeviceRequestTypeDef](./type_defs.md#inputdevicerequesttypedef)\]
-- `InputSecurityGroups`: `List`\[`str`\]
+  `Sequence`\[[InputDeviceRequestTypeDef](./type_defs.md#inputdevicerequesttypedef)\]
+- `InputSecurityGroups`: `Sequence`\[`str`\]
 - `MediaConnectFlows`:
-  `List`\[[MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef)\]
+  `Sequence`\[[MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef)\]
 - `Name`: `str`
 - `RoleArn`: `str`
 - `Sources`:
-  `List`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
+  `Sequence`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
 
 ## UpdateInputResponseTypeDef
 
@@ -4889,9 +4889,9 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `WhitelistRules`:
-  `List`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
+  `Sequence`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
 
 ## UpdateInputSecurityGroupResponseTypeDef
 
@@ -5117,12 +5117,12 @@ from mypy_boto3_medialive.type_defs import VpcOutputSettingsTypeDef
 
 Required fields:
 
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `PublicAddressAllocationIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `PublicAddressAllocationIds`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## WaiterConfigTypeDef
 

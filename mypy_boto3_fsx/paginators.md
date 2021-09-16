@@ -30,8 +30,8 @@ Boto3 documentation:
 
 Arguments for `DescribeBackupsPaginator.paginate` method:
 
-- `BackupIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `BackupIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -57,7 +57,7 @@ Boto3 documentation:
 
 Arguments for `DescribeFileSystemsPaginator.paginate` method:
 
-- `FileSystemIds`: `List`\[`str`\]
+- `FileSystemIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

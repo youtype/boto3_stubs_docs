@@ -219,7 +219,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateActivityOutputTypeDef
 
@@ -251,7 +251,7 @@ Optional fields:
 - `type`: [StateMachineTypeType](./literals.md#statemachinetypetype)
 - `loggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `tracingConfiguration`:
   [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
 
@@ -828,7 +828,7 @@ Optional fields:
 - `level`: [LogLevelType](./literals.md#logleveltype)
 - `includeExecutionData`: `bool`
 - `destinations`:
-  `List`\[[LogDestinationTypeDef](./type_defs.md#logdestinationtypedef)\]
+  `Sequence`\[[LogDestinationTypeDef](./type_defs.md#logdestinationtypedef)\]
 
 ## MapIterationEventDetailsTypeDef
 
@@ -1067,7 +1067,7 @@ from mypy_boto3_stepfunctions.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1226,7 +1226,7 @@ from mypy_boto3_stepfunctions.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateStateMachineInputRequestTypeDef
 

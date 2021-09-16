@@ -109,7 +109,7 @@ Required fields:
 Optional fields:
 
 - `HomePageUrl`: `str`
-- `Labels`: `List`\[`str`\]
+- `Labels`: `Sequence`\[`str`\]
 - `LicenseBody`: `str`
 - `LicenseUrl`: `str`
 - `ReadmeBody`: `str`
@@ -198,18 +198,18 @@ Required fields:
 
 Optional fields:
 
-- `Capabilities`: `List`\[`str`\]
+- `Capabilities`: `Sequence`\[`str`\]
 - `ChangeSetName`: `str`
 - `ClientToken`: `str`
 - `Description`: `str`
-- `NotificationArns`: `List`\[`str`\]
+- `NotificationArns`: `Sequence`\[`str`\]
 - `ParameterOverrides`:
-  `List`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
-- `ResourceTypes`: `List`\[`str`\]
+  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `SemanticVersion`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TemplateId`: `str`
 
 ## CreateCloudFormationChangeSetResponseTypeDef
@@ -501,7 +501,7 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `Statements`:
-  `List`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
+  `Sequence`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
 
 ## PutApplicationPolicyResponseTypeDef
 
@@ -540,7 +540,7 @@ Optional fields:
 
 - `MonitoringTimeInMinutes`: `int`
 - `RollbackTriggers`:
-  `List`\[[RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)\]
+  `Sequence`\[[RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)\]
 
 ## RollbackTriggerTypeDef
 
@@ -590,7 +590,7 @@ Optional fields:
 - `Author`: `str`
 - `Description`: `str`
 - `HomePageUrl`: `str`
-- `Labels`: `List`\[`str`\]
+- `Labels`: `Sequence`\[`str`\]
 - `ReadmeBody`: `str`
 - `ReadmeUrl`: `str`
 

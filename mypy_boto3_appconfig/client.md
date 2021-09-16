@@ -131,7 +131,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef).
@@ -156,8 +156,9 @@ Keyword-only arguments:
 - `LocationUri`: `str` *(required)*
 - `Description`: `str`
 - `RetrievalRoleArn`: `str`
-- `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Validators`:
+  `Sequence`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
@@ -185,7 +186,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `FinalBakeTimeInMinutes`: `int`
 - `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef).
@@ -207,8 +208,8 @@ Keyword-only arguments:
 - `ApplicationId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Monitors`: `Sequence`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef).
@@ -337,7 +338,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -652,7 +653,7 @@ Keyword-only arguments:
 - `ConfigurationProfileId`: `str` *(required)*
 - `ConfigurationVersion`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 
@@ -691,7 +692,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -708,7 +709,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_application
 
@@ -751,7 +752,8 @@ Keyword-only arguments:
 - `Name`: `str`
 - `Description`: `str`
 - `RetrievalRoleArn`: `str`
-- `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
+- `Validators`:
+  `Sequence`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
 
 Returns
 [ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
@@ -799,7 +801,7 @@ Keyword-only arguments:
 - `EnvironmentId`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
-- `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
+- `Monitors`: `Sequence`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
 
 Returns
 [EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef).

@@ -170,19 +170,20 @@ Keyword-only arguments:
 - `StackName`: `str` *(required)*
 - `TemplateBody`: `str`
 - `TemplateURL`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `DisableRollback`: `bool`
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `TimeoutInMinutes`: `int`
-- `NotificationARNs`: `List`\[`str`\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `List`\[`str`\]
+- `NotificationARNs`: `Sequence`\[`str`\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `OnFailure`: [OnFailureType](./literals.md#onfailuretype)
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 - `EnableTerminationProtection`: `bool`
 
@@ -198,7 +199,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFormation.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## Event
 
@@ -243,7 +244,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFormation.Event.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Event.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## Stack
 
@@ -382,7 +383,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `RetainResources`: `List`\[`str`\]
+- `RetainResources`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `ClientRequestToken`: `str`
 
@@ -396,7 +397,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFormation.Stack.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Stack.load method
 
@@ -437,16 +438,17 @@ Keyword-only arguments:
 - `UsePreviousTemplate`: `bool`
 - `StackPolicyDuringUpdateBody`: `str`
 - `StackPolicyDuringUpdateURL`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `List`\[`str`\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 - `RoleARN`: `str`
 - `RollbackConfiguration`:
   [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
-- `NotificationARNs`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `NotificationARNs`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DisableRollback`: `bool`
 - `ClientRequestToken`: `str`
 
@@ -507,7 +509,7 @@ Type annotations for
 Boto3 documentation:
 [CloudFormation.StackResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResource.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### StackResource.load method
 
@@ -582,4 +584,4 @@ Type annotations for
 Boto3 documentation:
 [CloudFormation.StackResourceSummary.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResourceSummary.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].

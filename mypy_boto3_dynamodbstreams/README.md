@@ -65,6 +65,7 @@ from mypy_boto3_dynamodbstreams.literals import KeyTypeType, ...
 - [ShardIteratorTypeType](./literals.md#sharditeratortypetype)
 - [StreamStatusType](./literals.md#streamstatustype)
 - [StreamViewTypeType](./literals.md#streamviewtypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

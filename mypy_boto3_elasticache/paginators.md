@@ -379,7 +379,7 @@ Arguments for `DescribeServiceUpdatesPaginator.paginate` method:
 
 - `ServiceUpdateName`: `str`
 - `ServiceUpdateStatus`:
-  `List`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
+  `Sequence`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -436,15 +436,15 @@ Boto3 documentation:
 Arguments for `DescribeUpdateActionsPaginator.paginate` method:
 
 - `ServiceUpdateName`: `str`
-- `ReplicationGroupIds`: `List`\[`str`\]
-- `CacheClusterIds`: `List`\[`str`\]
+- `ReplicationGroupIds`: `Sequence`\[`str`\]
+- `CacheClusterIds`: `Sequence`\[`str`\]
 - `Engine`: `str`
 - `ServiceUpdateStatus`:
-  `List`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
+  `Sequence`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
 - `ServiceUpdateTimeRange`:
   [TimeRangeFilterTypeDef](./type_defs.md#timerangefiltertypedef)
 - `UpdateActionStatus`:
-  `List`\[[UpdateActionStatusType](./literals.md#updateactionstatustype)\]
+  `Sequence`\[[UpdateActionStatusType](./literals.md#updateactionstatustype)\]
 - `ShowNodeLevelUpdateStatus`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -499,7 +499,7 @@ Arguments for `DescribeUsersPaginator.paginate` method:
 
 - `Engine`: `str`
 - `UserId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

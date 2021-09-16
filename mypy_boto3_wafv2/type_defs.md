@@ -187,7 +187,8 @@ from mypy_boto3_wafv2.type_defs import AndStatementTypeDef
 
 Required fields:
 
-- `Statements`: `List`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
+- `Statements`:
+  `Sequence`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
 
 ## AssociateWebACLRequestRequestTypeDef
 
@@ -222,7 +223,7 @@ Required fields:
 - `SearchString`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
 - `TextTransformations`:
-  `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+  `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
 - `PositionalConstraint`:
   [PositionalConstraintType](./literals.md#positionalconstrainttype)
 
@@ -235,7 +236,7 @@ from mypy_boto3_wafv2.type_defs import CheckCapacityRequestRequestTypeDef
 Required fields:
 
 - `Scope`: [ScopeType](./literals.md#scopetype)
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 
 ## CheckCapacityResponseTypeDef
 
@@ -285,12 +286,12 @@ Required fields:
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `IPAddressVersion`:
   [IPAddressVersionType](./literals.md#ipaddressversiontype)
-- `Addresses`: `List`\[`str`\]
+- `Addresses`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateIPSetResponseTypeDef
 
@@ -315,12 +316,12 @@ Required fields:
 - `Name`: `str`
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `RegularExpressionList`:
-  `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
+  `Sequence`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
 
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRegexPatternSetResponseTypeDef
 
@@ -352,9 +353,9 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CustomResponseBodies`: `Dict`\[`str`,
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 ## CreateRuleGroupResponseTypeDef
@@ -386,9 +387,9 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CustomResponseBodies`: `Dict`\[`str`,
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 ## CreateWebACLResponseTypeDef
@@ -423,7 +424,7 @@ from mypy_boto3_wafv2.type_defs import CustomRequestHandlingTypeDef
 Required fields:
 
 - `InsertHeaders`:
-  `List`\[[CustomHTTPHeaderTypeDef](./type_defs.md#customhttpheadertypedef)\]
+  `Sequence`\[[CustomHTTPHeaderTypeDef](./type_defs.md#customhttpheadertypedef)\]
 
 ## CustomResponseBodyTypeDef
 
@@ -451,7 +452,7 @@ Optional fields:
 
 - `CustomResponseBodyKey`: `str`
 - `ResponseHeaders`:
-  `List`\[[CustomHTTPHeaderTypeDef](./type_defs.md#customhttpheadertypedef)\]
+  `Sequence`\[[CustomHTTPHeaderTypeDef](./type_defs.md#customhttpheadertypedef)\]
 
 ## DefaultActionTypeDef
 
@@ -626,11 +627,11 @@ Optional fields:
 - `SingleHeader`: [SingleHeaderTypeDef](./type_defs.md#singleheadertypedef)
 - `SingleQueryArgument`:
   [SingleQueryArgumentTypeDef](./type_defs.md#singlequeryargumenttypedef)
-- `AllQueryArguments`: `Dict`\[`str`, `Any`\]
-- `UriPath`: `Dict`\[`str`, `Any`\]
-- `QueryString`: `Dict`\[`str`, `Any`\]
-- `Body`: `Dict`\[`str`, `Any`\]
-- `Method`: `Dict`\[`str`, `Any`\]
+- `AllQueryArguments`: `Mapping`\[`str`, `Any`\]
+- `UriPath`: `Mapping`\[`str`, `Any`\]
+- `QueryString`: `Mapping`\[`str`, `Any`\]
+- `Body`: `Mapping`\[`str`, `Any`\]
+- `Method`: `Mapping`\[`str`, `Any`\]
 - `JsonBody`: [JsonBodyTypeDef](./type_defs.md#jsonbodytypedef)
 
 ## FilterTypeDef
@@ -695,7 +696,8 @@ from mypy_boto3_wafv2.type_defs import GeoMatchStatementTypeDef
 
 Optional fields:
 
-- `CountryCodes`: `List`\[[CountryCodeType](./literals.md#countrycodetype)\]
+- `CountryCodes`:
+  `Sequence`\[[CountryCodeType](./literals.md#countrycodetype)\]
 - `ForwardedIPConfig`:
   [ForwardedIPConfigTypeDef](./type_defs.md#forwardedipconfigtypedef)
 
@@ -1067,8 +1069,8 @@ from mypy_boto3_wafv2.type_defs import JsonMatchPatternTypeDef
 
 Optional fields:
 
-- `All`: `Dict`\[`str`, `Any`\]
-- `IncludedPaths`: `List`\[`str`\]
+- `All`: `Mapping`\[`str`, `Any`\]
+- `IncludedPaths`: `Sequence`\[`str`\]
 
 ## LabelMatchStatementTypeDef
 
@@ -1440,7 +1442,7 @@ Optional fields:
 
 - `Version`: `str`
 - `ExcludedRules`:
-  `List`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
+  `Sequence`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
 - `ScopeDownStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
 
 ## ManagedRuleGroupSummaryTypeDef
@@ -1534,7 +1536,8 @@ from mypy_boto3_wafv2.type_defs import OrStatementTypeDef
 
 Required fields:
 
-- `Statements`: `List`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
+- `Statements`:
+  `Sequence`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
 
 ## OverrideActionTypeDef
 
@@ -1545,7 +1548,7 @@ from mypy_boto3_wafv2.type_defs import OverrideActionTypeDef
 Optional fields:
 
 - `Count`: [CountActionTypeDef](./type_defs.md#countactiontypedef)
-- `None`: `Dict`\[`str`, `Any`\]
+- `None`: `Mapping`\[`str`, `Any`\]
 
 ## PutLoggingConfigurationRequestRequestTypeDef
 
@@ -1587,7 +1590,7 @@ Required fields:
 Optional fields:
 
 - `RecommendedVersion`: `str`
-- `VersionsToPublish`: `Dict`\[`str`,
+- `VersionsToPublish`: `Mapping`\[`str`,
   [VersionToPublishTypeDef](./type_defs.md#versiontopublishtypedef)\]
 
 ## PutManagedRuleSetVersionsResponseTypeDef
@@ -1654,7 +1657,7 @@ Required fields:
 - `ARN`: `str`
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
 - `TextTransformations`:
-  `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+  `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
 
 ## RegexPatternSetSummaryTypeDef
 
@@ -1734,7 +1737,7 @@ Required fields:
 Optional fields:
 
 - `ExcludedRules`:
-  `List`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
+  `Sequence`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
 
 ## RuleGroupSummaryTypeDef
 
@@ -1807,7 +1810,7 @@ Optional fields:
 - `Action`: [RuleActionTypeDef](./type_defs.md#ruleactiontypedef)
 - `OverrideAction`:
   [OverrideActionTypeDef](./type_defs.md#overrideactiontypedef)
-- `RuleLabels`: `List`\[[LabelTypeDef](./type_defs.md#labeltypedef)\]
+- `RuleLabels`: `Sequence`\[[LabelTypeDef](./type_defs.md#labeltypedef)\]
 
 ## SampledHTTPRequestTypeDef
 
@@ -1863,7 +1866,7 @@ Required fields:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `Size`: `int`
 - `TextTransformations`:
-  `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+  `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
 
 ## SqliMatchStatementTypeDef
 
@@ -1875,7 +1878,7 @@ Required fields:
 
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
 - `TextTransformations`:
-  `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+  `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
 
 ## StatementTypeDef
 
@@ -1931,7 +1934,7 @@ from mypy_boto3_wafv2.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1976,7 +1979,7 @@ from mypy_boto3_wafv2.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateIPSetRequestRequestTypeDef
 
@@ -1989,7 +1992,7 @@ Required fields:
 - `Name`: `str`
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `Id`: `str`
-- `Addresses`: `List`\[`str`\]
+- `Addresses`: `Sequence`\[`str`\]
 - `LockToken`: `str`
 
 Optional fields:
@@ -2049,7 +2052,7 @@ Required fields:
 - `Scope`: [ScopeType](./literals.md#scopetype)
 - `Id`: `str`
 - `RegularExpressionList`:
-  `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
+  `Sequence`\[[RegexTypeDef](./type_defs.md#regextypedef)\]
 - `LockToken`: `str`
 
 Optional fields:
@@ -2086,8 +2089,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `CustomResponseBodies`: `Dict`\[`str`,
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 ## UpdateRuleGroupResponseTypeDef
@@ -2121,8 +2124,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `CustomResponseBodies`: `Dict`\[`str`,
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 ## UpdateWebACLResponseTypeDef
@@ -2213,4 +2216,4 @@ Required fields:
 
 - `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
 - `TextTransformations`:
-  `List`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+  `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]

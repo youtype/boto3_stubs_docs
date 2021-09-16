@@ -209,7 +209,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
@@ -251,8 +251,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServiceUpdateName`: `str` *(required)*
-- `ReplicationGroupIds`: `List`\[`str`\]
-- `CacheClusterIds`: `List`\[`str`\]
+- `ReplicationGroupIds`: `Sequence`\[`str`\]
+- `CacheClusterIds`: `Sequence`\[`str`\]
 
 Returns
 [UpdateActionResultsMessageTypeDef](./type_defs.md#updateactionresultsmessagetypedef).
@@ -273,8 +273,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServiceUpdateName`: `str` *(required)*
-- `ReplicationGroupIds`: `List`\[`str`\]
-- `CacheClusterIds`: `List`\[`str`\]
+- `ReplicationGroupIds`: `Sequence`\[`str`\]
+- `CacheClusterIds`: `Sequence`\[`str`\]
 
 Returns
 [UpdateActionResultsMessageTypeDef](./type_defs.md#updateactionresultsmessagetypedef).
@@ -332,7 +332,7 @@ Keyword-only arguments:
 - `TargetSnapshotName`: `str` *(required)*
 - `TargetBucket`: `str`
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
 
@@ -354,17 +354,17 @@ Keyword-only arguments:
 - `ReplicationGroupId`: `str`
 - `AZMode`: [AZModeType](./literals.md#azmodetype)
 - `PreferredAvailabilityZone`: `str`
-- `PreferredAvailabilityZones`: `List`\[`str`\]
+- `PreferredAvailabilityZones`: `Sequence`\[`str`\]
 - `NumCacheNodes`: `int`
 - `CacheNodeType`: `str`
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `CacheParameterGroupName`: `str`
 - `CacheSubnetGroupName`: `str`
-- `CacheSecurityGroupNames`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SnapshotArns`: `List`\[`str`\]
+- `CacheSecurityGroupNames`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SnapshotArns`: `Sequence`\[`str`\]
 - `SnapshotName`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `Port`: `int`
@@ -375,9 +375,9 @@ Keyword-only arguments:
 - `AuthToken`: `str`
 - `OutpostMode`: [OutpostModeType](./literals.md#outpostmodetype)
 - `PreferredOutpostArn`: `str`
-- `PreferredOutpostArns`: `List`\[`str`\]
+- `PreferredOutpostArns`: `Sequence`\[`str`\]
 - `LogDeliveryConfigurations`:
-  `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
+  `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 Returns
 [CreateCacheClusterResultTypeDef](./type_defs.md#createcacheclusterresulttypedef).
@@ -400,7 +400,7 @@ Keyword-only arguments:
 - `CacheParameterGroupName`: `str` *(required)*
 - `CacheParameterGroupFamily`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCacheParameterGroupResultTypeDef](./type_defs.md#createcacheparametergroupresulttypedef).
@@ -422,7 +422,7 @@ Keyword-only arguments:
 
 - `CacheSecurityGroupName`: `str` *(required)*
 - `Description`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCacheSecurityGroupResultTypeDef](./type_defs.md#createcachesecuritygroupresulttypedef).
@@ -444,8 +444,8 @@ Keyword-only arguments:
 
 - `CacheSubnetGroupName`: `str` *(required)*
 - `CacheSubnetGroupDescription`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCacheSubnetGroupResultTypeDef](./type_defs.md#createcachesubnetgroupresulttypedef).
@@ -496,20 +496,20 @@ Keyword-only arguments:
 - `AutomaticFailoverEnabled`: `bool`
 - `MultiAZEnabled`: `bool`
 - `NumCacheClusters`: `int`
-- `PreferredCacheClusterAZs`: `List`\[`str`\]
+- `PreferredCacheClusterAZs`: `Sequence`\[`str`\]
 - `NumNodeGroups`: `int`
 - `ReplicasPerNodeGroup`: `int`
 - `NodeGroupConfiguration`:
-  `List`\[[NodeGroupConfigurationTypeDef](./type_defs.md#nodegroupconfigurationtypedef)\]
+  `Sequence`\[[NodeGroupConfigurationTypeDef](./type_defs.md#nodegroupconfigurationtypedef)\]
 - `CacheNodeType`: `str`
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `CacheParameterGroupName`: `str`
 - `CacheSubnetGroupName`: `str`
-- `CacheSecurityGroupNames`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SnapshotArns`: `List`\[`str`\]
+- `CacheSecurityGroupNames`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SnapshotArns`: `Sequence`\[`str`\]
 - `SnapshotName`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `Port`: `int`
@@ -521,9 +521,9 @@ Keyword-only arguments:
 - `TransitEncryptionEnabled`: `bool`
 - `AtRestEncryptionEnabled`: `bool`
 - `KmsKeyId`: `str`
-- `UserGroupIds`: `List`\[`str`\]
+- `UserGroupIds`: `Sequence`\[`str`\]
 - `LogDeliveryConfigurations`:
-  `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
+  `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 Returns
 [CreateReplicationGroupResultTypeDef](./type_defs.md#createreplicationgroupresulttypedef).
@@ -547,7 +547,7 @@ Keyword-only arguments:
 - `ReplicationGroupId`: `str`
 - `CacheClusterId`: `str`
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef).
@@ -570,9 +570,9 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `Engine`: `str` *(required)*
 - `AccessString`: `str` *(required)*
-- `Passwords`: `List`\[`str`\]
+- `Passwords`: `Sequence`\[`str`\]
 - `NoPasswordRequired`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef).
@@ -593,8 +593,8 @@ Keyword-only arguments:
 
 - `UserGroupId`: `str` *(required)*
 - `Engine`: `str` *(required)*
-- `UserIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `UserIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [UserGroupResponseMetadataTypeDef](./type_defs.md#usergroupresponsemetadatatypedef).
@@ -621,8 +621,8 @@ Keyword-only arguments:
 - `GlobalReplicationGroupId`: `str` *(required)*
 - `NodeGroupCount`: `int` *(required)*
 - `ApplyImmediately`: `bool` *(required)*
-- `GlobalNodeGroupsToRemove`: `List`\[`str`\]
-- `GlobalNodeGroupsToRetain`: `List`\[`str`\]
+- `GlobalNodeGroupsToRemove`: `Sequence`\[`str`\]
+- `GlobalNodeGroupsToRetain`: `Sequence`\[`str`\]
 
 Returns
 [DecreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](./type_defs.md#decreasenodegroupsinglobalreplicationgroupresulttypedef).
@@ -648,8 +648,8 @@ Keyword-only arguments:
 - `ApplyImmediately`: `bool` *(required)*
 - `NewReplicaCount`: `int`
 - `ReplicaConfiguration`:
-  `List`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
-- `ReplicasToRemove`: `List`\[`str`\]
+  `Sequence`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
+- `ReplicasToRemove`: `Sequence`\[`str`\]
 
 Returns
 [DecreaseReplicaCountResultTypeDef](./type_defs.md#decreasereplicacountresulttypedef).
@@ -1134,7 +1134,7 @@ Keyword-only arguments:
 
 - `ServiceUpdateName`: `str`
 - `ServiceUpdateStatus`:
-  `List`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
+  `Sequence`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1185,15 +1185,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServiceUpdateName`: `str`
-- `ReplicationGroupIds`: `List`\[`str`\]
-- `CacheClusterIds`: `List`\[`str`\]
+- `ReplicationGroupIds`: `Sequence`\[`str`\]
+- `CacheClusterIds`: `Sequence`\[`str`\]
 - `Engine`: `str`
 - `ServiceUpdateStatus`:
-  `List`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
+  `Sequence`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
 - `ServiceUpdateTimeRange`:
   [TimeRangeFilterTypeDef](./type_defs.md#timerangefiltertypedef)
 - `UpdateActionStatus`:
-  `List`\[[UpdateActionStatusType](./literals.md#updateactionstatustype)\]
+  `Sequence`\[[UpdateActionStatusType](./literals.md#updateactionstatustype)\]
 - `ShowNodeLevelUpdateStatus`: `bool`
 - `MaxRecords`: `int`
 - `Marker`: `str`
@@ -1238,7 +1238,7 @@ Keyword-only arguments:
 
 - `Engine`: `str`
 - `UserId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1303,7 +1303,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1332,7 +1332,7 @@ Keyword-only arguments:
 - `NodeGroupCount`: `int` *(required)*
 - `ApplyImmediately`: `bool` *(required)*
 - `RegionalConfigurations`:
-  `List`\[[RegionalConfigurationTypeDef](./type_defs.md#regionalconfigurationtypedef)\]
+  `Sequence`\[[RegionalConfigurationTypeDef](./type_defs.md#regionalconfigurationtypedef)\]
 
 Returns
 [IncreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](./type_defs.md#increasenodegroupsinglobalreplicationgroupresulttypedef).
@@ -1358,7 +1358,7 @@ Keyword-only arguments:
 - `ApplyImmediately`: `bool` *(required)*
 - `NewReplicaCount`: `int`
 - `ReplicaConfiguration`:
-  `List`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
+  `Sequence`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
 
 Returns
 [IncreaseReplicaCountResultTypeDef](./type_defs.md#increasereplicacountresulttypedef).
@@ -1420,11 +1420,11 @@ Keyword-only arguments:
 
 - `CacheClusterId`: `str` *(required)*
 - `NumCacheNodes`: `int`
-- `CacheNodeIdsToRemove`: `List`\[`str`\]
+- `CacheNodeIdsToRemove`: `Sequence`\[`str`\]
 - `AZMode`: [AZModeType](./literals.md#azmodetype)
-- `NewAvailabilityZones`: `List`\[`str`\]
-- `CacheSecurityGroupNames`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `NewAvailabilityZones`: `Sequence`\[`str`\]
+- `CacheSecurityGroupNames`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `PreferredMaintenanceWindow`: `str`
 - `NotificationTopicArn`: `str`
 - `CacheParameterGroupName`: `str`
@@ -1439,7 +1439,7 @@ Keyword-only arguments:
 - `AuthTokenUpdateStrategy`:
   [AuthTokenUpdateStrategyTypeType](./literals.md#authtokenupdatestrategytypetype)
 - `LogDeliveryConfigurations`:
-  `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
+  `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 Returns
 [ModifyCacheClusterResultTypeDef](./type_defs.md#modifycacheclusterresulttypedef).
@@ -1461,7 +1461,7 @@ Keyword-only arguments:
 
 - `CacheParameterGroupName`: `str` *(required)*
 - `ParameterNameValues`:
-  `List`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
+  `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
   *(required)*
 
 Returns
@@ -1484,7 +1484,7 @@ Keyword-only arguments:
 
 - `CacheSubnetGroupName`: `str` *(required)*
 - `CacheSubnetGroupDescription`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Returns
 [ModifyCacheSubnetGroupResultTypeDef](./type_defs.md#modifycachesubnetgroupresulttypedef).
@@ -1537,8 +1537,8 @@ Keyword-only arguments:
 - `AutomaticFailoverEnabled`: `bool`
 - `MultiAZEnabled`: `bool`
 - `NodeGroupId`: `str`
-- `CacheSecurityGroupNames`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `CacheSecurityGroupNames`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `PreferredMaintenanceWindow`: `str`
 - `NotificationTopicArn`: `str`
 - `CacheParameterGroupName`: `str`
@@ -1552,11 +1552,11 @@ Keyword-only arguments:
 - `AuthToken`: `str`
 - `AuthTokenUpdateStrategy`:
   [AuthTokenUpdateStrategyTypeType](./literals.md#authtokenupdatestrategytypetype)
-- `UserGroupIdsToAdd`: `List`\[`str`\]
-- `UserGroupIdsToRemove`: `List`\[`str`\]
+- `UserGroupIdsToAdd`: `Sequence`\[`str`\]
+- `UserGroupIdsToRemove`: `Sequence`\[`str`\]
 - `RemoveUserGroups`: `bool`
 - `LogDeliveryConfigurations`:
-  `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
+  `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 Returns
 [ModifyReplicationGroupResultTypeDef](./type_defs.md#modifyreplicationgroupresulttypedef).
@@ -1582,9 +1582,9 @@ Keyword-only arguments:
 - `NodeGroupCount`: `int` *(required)*
 - `ApplyImmediately`: `bool` *(required)*
 - `ReshardingConfiguration`:
-  `List`\[[ReshardingConfigurationTypeDef](./type_defs.md#reshardingconfigurationtypedef)\]
-- `NodeGroupsToRemove`: `List`\[`str`\]
-- `NodeGroupsToRetain`: `List`\[`str`\]
+  `Sequence`\[[ReshardingConfigurationTypeDef](./type_defs.md#reshardingconfigurationtypedef)\]
+- `NodeGroupsToRemove`: `Sequence`\[`str`\]
+- `NodeGroupsToRetain`: `Sequence`\[`str`\]
 
 Returns
 [ModifyReplicationGroupShardConfigurationResultTypeDef](./type_defs.md#modifyreplicationgroupshardconfigurationresulttypedef).
@@ -1606,7 +1606,7 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 - `AccessString`: `str`
 - `AppendAccessString`: `str`
-- `Passwords`: `List`\[`str`\]
+- `Passwords`: `Sequence`\[`str`\]
 - `NoPasswordRequired`: `bool`
 
 Returns
@@ -1627,8 +1627,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `UserGroupId`: `str` *(required)*
-- `UserIdsToAdd`: `List`\[`str`\]
-- `UserIdsToRemove`: `List`\[`str`\]
+- `UserIdsToAdd`: `Sequence`\[`str`\]
+- `UserIdsToRemove`: `Sequence`\[`str`\]
 
 Returns
 [UserGroupResponseMetadataTypeDef](./type_defs.md#usergroupresponsemetadatatypedef).
@@ -1651,7 +1651,7 @@ Keyword-only arguments:
 - `ReservedCacheNodesOfferingId`: `str` *(required)*
 - `ReservedCacheNodeId`: `str`
 - `CacheNodeCount`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [PurchaseReservedCacheNodesOfferingResultTypeDef](./type_defs.md#purchasereservedcachenodesofferingresulttypedef).
@@ -1694,7 +1694,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CacheClusterId`: `str` *(required)*
-- `CacheNodeIdsToReboot`: `List`\[`str`\] *(required)*
+- `CacheNodeIdsToReboot`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [RebootCacheClusterResultTypeDef](./type_defs.md#rebootcacheclusterresulttypedef).
@@ -1715,7 +1715,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
@@ -1738,7 +1738,7 @@ Keyword-only arguments:
 - `CacheParameterGroupName`: `str` *(required)*
 - `ResetAllParameters`: `bool`
 - `ParameterNameValues`:
-  `List`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
+  `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
 
 Returns
 [CacheParameterGroupNameMessageTypeDef](./type_defs.md#cacheparametergroupnamemessagetypedef).
@@ -1781,7 +1781,7 @@ Keyword-only arguments:
 
 - `ReplicationGroupId`: `str` *(required)*
 - `CustomerNodeEndpointList`:
-  `List`\[[CustomerNodeEndpointTypeDef](./type_defs.md#customernodeendpointtypedef)\]
+  `Sequence`\[[CustomerNodeEndpointTypeDef](./type_defs.md#customernodeendpointtypedef)\]
   *(required)*
 
 Returns

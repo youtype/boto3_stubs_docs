@@ -187,6 +187,7 @@ from mypy_boto3_appstream.literals import AccessEndpointTypeType, ...
 - [UsageReportScheduleType](./literals.md#usagereportscheduletype)
 - [UserStackAssociationErrorCodeType](./literals.md#userstackassociationerrorcodetype)
 - [VisibilityTypeType](./literals.md#visibilitytypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

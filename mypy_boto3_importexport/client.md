@@ -157,7 +157,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -178,7 +178,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `jobIds`: `List`\[`str`\] *(required)*
+- `jobIds`: `Sequence`\[`str`\] *(required)*
 - `name`: `str`
 - `company`: `str`
 - `phoneNumber`: `str`

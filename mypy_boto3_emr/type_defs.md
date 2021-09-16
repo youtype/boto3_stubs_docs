@@ -221,7 +221,7 @@ from mypy_boto3_emr.type_defs import AddInstanceGroupsInputRequestTypeDef
 Required fields:
 
 - `InstanceGroups`:
-  `List`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
+  `Sequence`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
 - `JobFlowId`: `str`
 
 ## AddInstanceGroupsOutputTypeDef
@@ -247,7 +247,7 @@ from mypy_boto3_emr.type_defs import AddJobFlowStepsInputRequestTypeDef
 Required fields:
 
 - `JobFlowId`: `str`
-- `Steps`: `List`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
+- `Steps`: `Sequence`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
 
 ## AddJobFlowStepsOutputTypeDef
 
@@ -270,7 +270,7 @@ from mypy_boto3_emr.type_defs import AddTagsInputRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ApplicationTypeDef
 
@@ -334,7 +334,8 @@ Required fields:
 
 - `Constraints`:
   [ScalingConstraintsTypeDef](./type_defs.md#scalingconstraintstypedef)
-- `Rules`: `List`\[[ScalingRuleTypeDef](./type_defs.md#scalingruletypedef)\]
+- `Rules`:
+  `Sequence`\[[ScalingRuleTypeDef](./type_defs.md#scalingruletypedef)\]
 
 ## AutoTerminationPolicyTypeDef
 
@@ -417,7 +418,7 @@ from mypy_boto3_emr.type_defs import CancelStepsInputRequestTypeDef
 Required fields:
 
 - `ClusterId`: `str`
-- `StepIds`: `List`\[`str`\]
+- `StepIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -458,7 +459,7 @@ Optional fields:
 - `Statistic`: [StatisticType](./literals.md#statistictype)
 - `Unit`: [UnitType](./literals.md#unittype)
 - `Dimensions`:
-  `List`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
+  `Sequence`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 
 ## ClusterStateChangeReasonTypeDef
 
@@ -599,8 +600,8 @@ Optional fields:
 
 - `Classification`: `str`
 - `Configurations`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-- `Properties`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+- `Properties`: `Mapping`\[`str`, `str`\]
 
 ## CreateSecurityConfigurationInputRequestTypeDef
 
@@ -637,7 +638,7 @@ Required fields:
 - `Name`: `str`
 - `AuthMode`: [AuthModeType](./literals.md#authmodetype)
 - `VpcId`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `ServiceRole`: `str`
 - `WorkspaceSecurityGroupId`: `str`
 - `EngineSecurityGroupId`: `str`
@@ -649,7 +650,7 @@ Optional fields:
 - `UserRole`: `str`
 - `IdpAuthUrl`: `str`
 - `IdpRelayStateParameterName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateStudioOutputTypeDef
 
@@ -749,9 +750,9 @@ Optional fields:
 
 - `CreatedAfter`: `Union`\[`datetime`, `str`\]
 - `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `JobFlowIds`: `List`\[`str`\]
+- `JobFlowIds`: `Sequence`\[`str`\]
 - `JobFlowStates`:
-  `List`\[[JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)\]
+  `Sequence`\[[JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)\]
 
 ## DescribeJobFlowsOutputTypeDef
 
@@ -921,7 +922,7 @@ from mypy_boto3_emr.type_defs import EbsConfigurationTypeDef
 Optional fields:
 
 - `EbsBlockDeviceConfigs`:
-  `List`\[[EbsBlockDeviceConfigTypeDef](./type_defs.md#ebsblockdeviceconfigtypedef)\]
+  `Sequence`\[[EbsBlockDeviceConfigTypeDef](./type_defs.md#ebsblockdeviceconfigtypedef)\]
 - `EbsOptimized`: `bool`
 
 ## EbsVolumeTypeDef
@@ -1085,9 +1086,9 @@ Required fields:
 
 Optional fields:
 
-- `Properties`: `List`\[[KeyValueTypeDef](./type_defs.md#keyvaluetypedef)\]
+- `Properties`: `Sequence`\[[KeyValueTypeDef](./type_defs.md#keyvaluetypedef)\]
 - `MainClass`: `str`
-- `Args`: `List`\[`str`\]
+- `Args`: `Sequence`\[`str`\]
 
 ## HadoopStepConfigTypeDef
 
@@ -1119,7 +1120,7 @@ Optional fields:
 - `TargetOnDemandCapacity`: `int`
 - `TargetSpotCapacity`: `int`
 - `InstanceTypeConfigs`:
-  `List`\[[InstanceTypeConfigTypeDef](./type_defs.md#instancetypeconfigtypedef)\]
+  `Sequence`\[[InstanceTypeConfigTypeDef](./type_defs.md#instancetypeconfigtypedef)\]
 - `LaunchSpecifications`:
   [InstanceFleetProvisioningSpecificationsTypeDef](./type_defs.md#instancefleetprovisioningspecificationstypedef)
 
@@ -1230,7 +1231,7 @@ Optional fields:
 - `Market`: [MarketTypeType](./literals.md#markettypetype)
 - `BidPrice`: `str`
 - `Configurations`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `EbsConfiguration`:
   [EbsConfigurationTypeDef](./type_defs.md#ebsconfigurationtypedef)
 - `AutoScalingPolicy`:
@@ -1277,10 +1278,10 @@ Required fields:
 Optional fields:
 
 - `InstanceCount`: `int`
-- `EC2InstanceIdsToTerminate`: `List`\[`str`\]
+- `EC2InstanceIdsToTerminate`: `Sequence`\[`str`\]
 - `ShrinkPolicy`: [ShrinkPolicyTypeDef](./type_defs.md#shrinkpolicytypedef)
 - `Configurations`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 
 ## InstanceGroupStateChangeReasonTypeDef
 
@@ -1420,7 +1421,7 @@ Optional fields:
 - `EbsConfiguration`:
   [EbsConfigurationTypeDef](./type_defs.md#ebsconfigurationtypedef)
 - `Configurations`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `CustomAmiId`: `str`
 
 ## InstanceTypeDef
@@ -1524,21 +1525,21 @@ Optional fields:
 - `SlaveInstanceType`: `str`
 - `InstanceCount`: `int`
 - `InstanceGroups`:
-  `List`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
+  `Sequence`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
 - `InstanceFleets`:
-  `List`\[[InstanceFleetConfigTypeDef](./type_defs.md#instancefleetconfigtypedef)\]
+  `Sequence`\[[InstanceFleetConfigTypeDef](./type_defs.md#instancefleetconfigtypedef)\]
 - `Ec2KeyName`: `str`
 - `Placement`: [PlacementTypeTypeDef](./type_defs.md#placementtypetypedef)
 - `KeepJobFlowAliveWhenNoSteps`: `bool`
 - `TerminationProtected`: `bool`
 - `HadoopVersion`: `str`
 - `Ec2SubnetId`: `str`
-- `Ec2SubnetIds`: `List`\[`str`\]
+- `Ec2SubnetIds`: `Sequence`\[`str`\]
 - `EmrManagedMasterSecurityGroup`: `str`
 - `EmrManagedSlaveSecurityGroup`: `str`
 - `ServiceAccessSecurityGroup`: `str`
-- `AdditionalMasterSecurityGroups`: `List`\[`str`\]
-- `AdditionalSlaveSecurityGroups`: `List`\[`str`\]
+- `AdditionalMasterSecurityGroups`: `Sequence`\[`str`\]
+- `AdditionalSlaveSecurityGroups`: `Sequence`\[`str`\]
 
 ## JobFlowInstancesDetailTypeDef
 
@@ -1631,7 +1632,8 @@ Optional fields:
 
 - `CreatedAfter`: `Union`\[`datetime`, `str`\]
 - `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ClusterStates`: `List`\[[ClusterStateType](./literals.md#clusterstatetype)\]
+- `ClusterStates`:
+  `Sequence`\[[ClusterStateType](./literals.md#clusterstatetype)\]
 - `Marker`: `str`
 
 ## ListClustersOutputTypeDef
@@ -1718,12 +1720,12 @@ Optional fields:
 
 - `InstanceGroupId`: `str`
 - `InstanceGroupTypes`:
-  `List`\[[InstanceGroupTypeType](./literals.md#instancegrouptypetype)\]
+  `Sequence`\[[InstanceGroupTypeType](./literals.md#instancegrouptypetype)\]
 - `InstanceFleetId`: `str`
 - `InstanceFleetType`:
   [InstanceFleetTypeType](./literals.md#instancefleettypetype)
 - `InstanceStates`:
-  `List`\[[InstanceStateType](./literals.md#instancestatetype)\]
+  `Sequence`\[[InstanceStateType](./literals.md#instancestatetype)\]
 - `Marker`: `str`
 
 ## ListInstancesOutputTypeDef
@@ -1830,8 +1832,8 @@ Required fields:
 
 Optional fields:
 
-- `StepStates`: `List`\[[StepStateType](./literals.md#stepstatetype)\]
-- `StepIds`: `List`\[`str`\]
+- `StepStates`: `Sequence`\[[StepStateType](./literals.md#stepstatetype)\]
+- `StepIds`: `Sequence`\[`str`\]
 - `Marker`: `str`
 
 ## ListStepsOutputTypeDef
@@ -1966,7 +1968,7 @@ Optional fields:
 
 - `ClusterId`: `str`
 - `InstanceGroups`:
-  `List`\[[InstanceGroupModifyConfigTypeDef](./type_defs.md#instancegroupmodifyconfigtypedef)\]
+  `Sequence`\[[InstanceGroupModifyConfigTypeDef](./type_defs.md#instancegroupmodifyconfigtypedef)\]
 
 ## NotebookExecutionSummaryTypeDef
 
@@ -2208,7 +2210,7 @@ from mypy_boto3_emr.type_defs import RemoveTagsInputRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ResponseMetadataTypeDef
 
@@ -2243,20 +2245,20 @@ Optional fields:
 - `AdditionalInfo`: `str`
 - `AmiVersion`: `str`
 - `ReleaseLabel`: `str`
-- `Steps`: `List`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
+- `Steps`: `Sequence`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
 - `BootstrapActions`:
-  `List`\[[BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef)\]
-- `SupportedProducts`: `List`\[`str`\]
+  `Sequence`\[[BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef)\]
+- `SupportedProducts`: `Sequence`\[`str`\]
 - `NewSupportedProducts`:
-  `List`\[[SupportedProductConfigTypeDef](./type_defs.md#supportedproductconfigtypedef)\]
+  `Sequence`\[[SupportedProductConfigTypeDef](./type_defs.md#supportedproductconfigtypedef)\]
 - `Applications`:
-  `List`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
+  `Sequence`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
 - `Configurations`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `VisibleToAllUsers`: `bool`
 - `JobFlowRole`: `str`
 - `ServiceRole`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SecurityConfiguration`: `str`
 - `AutoScalingRole`: `str`
 - `ScaleDownBehavior`:
@@ -2271,7 +2273,7 @@ Optional fields:
 - `ManagedScalingPolicy`:
   [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
 - `PlacementGroupConfigs`:
-  `List`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
+  `Sequence`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
 - `AutoTerminationPolicy`:
   [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
 
@@ -2405,7 +2407,7 @@ from mypy_boto3_emr.type_defs import SetTerminationProtectionInputRequestTypeDef
 
 Required fields:
 
-- `JobFlowIds`: `List`\[`str`\]
+- `JobFlowIds`: `Sequence`\[`str`\]
 - `TerminationProtected`: `bool`
 
 ## SetVisibleToAllUsersInputRequestTypeDef
@@ -2416,7 +2418,7 @@ from mypy_boto3_emr.type_defs import SetVisibleToAllUsersInputRequestTypeDef
 
 Required fields:
 
-- `JobFlowIds`: `List`\[`str`\]
+- `JobFlowIds`: `Sequence`\[`str`\]
 - `VisibleToAllUsers`: `bool`
 
 ## ShrinkPolicyTypeDef
@@ -2494,7 +2496,7 @@ Optional fields:
 - `NotebookExecutionName`: `str`
 - `NotebookParams`: `str`
 - `NotebookInstanceSecurityGroupId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartNotebookExecutionOutputTypeDef
 
@@ -2681,7 +2683,7 @@ from mypy_boto3_emr.type_defs import SupportedProductConfigTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Args`: `List`\[`str`\]
+- `Args`: `Sequence`\[`str`\]
 
 ## TagTypeDef
 
@@ -2702,7 +2704,7 @@ from mypy_boto3_emr.type_defs import TerminateJobFlowsInputRequestTypeDef
 
 Required fields:
 
-- `JobFlowIds`: `List`\[`str`\]
+- `JobFlowIds`: `Sequence`\[`str`\]
 
 ## UpdateStudioInputRequestTypeDef
 
@@ -2718,7 +2720,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DefaultS3Location`: `str`
 
 ## UpdateStudioSessionMappingInputRequestTypeDef

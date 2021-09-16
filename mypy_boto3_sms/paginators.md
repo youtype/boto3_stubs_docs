@@ -109,7 +109,7 @@ Boto3 documentation:
 Arguments for `GetServersPaginator.paginate` method:
 
 - `vmServerAddressList`:
-  `List`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
+  `Sequence`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -134,7 +134,7 @@ Boto3 documentation:
 
 Arguments for `ListAppsPaginator.paginate` method:
 
-- `appIds`: `List`\[`str`\]
+- `appIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

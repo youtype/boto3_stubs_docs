@@ -34,8 +34,8 @@ Boto3 documentation:
 
 Arguments for `DescribeAgentsPaginator.paginate` method:
 
-- `agentIds`: `List`\[`str`\]
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `agentIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -61,7 +61,7 @@ Boto3 documentation:
 
 Arguments for `DescribeContinuousExportsPaginator.paginate` method:
 
-- `exportIds`: `List`\[`str`\]
+- `exportIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -87,7 +87,7 @@ Boto3 documentation:
 
 Arguments for `DescribeExportConfigurationsPaginator.paginate` method:
 
-- `exportIds`: `List`\[`str`\]
+- `exportIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -113,9 +113,9 @@ Boto3 documentation:
 
 Arguments for `DescribeExportTasksPaginator.paginate` method:
 
-- `exportIds`: `List`\[`str`\]
+- `exportIds`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
+  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -141,7 +141,7 @@ Boto3 documentation:
 
 Arguments for `DescribeTagsPaginator.paginate` method:
 
-- `filters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `filters`: `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -170,9 +170,9 @@ Arguments for `ListConfigurationsPaginator.paginate` method:
 - `configurationType`:
   [ConfigurationItemTypeType](./literals.md#configurationitemtypetype)
   *(required)*
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `orderBy`:
-  `List`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
+  `Sequence`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

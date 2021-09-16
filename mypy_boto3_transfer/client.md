@@ -140,7 +140,7 @@ Keyword-only arguments:
 - `HomeDirectoryType`:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 
@@ -173,9 +173,9 @@ Keyword-only arguments:
 - `IdentityProviderType`:
   [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `LoggingRole`: `str`
-- `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
+- `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `WorkflowDetails`:
   [WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef)
 
@@ -204,11 +204,11 @@ Keyword-only arguments:
 - `HomeDirectoryType`:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `SshPublicKeyBody`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
@@ -227,12 +227,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Steps`: `List`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
+- `Steps`:
+  `Sequence`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
   *(required)*
 - `Description`: `str`
 - `OnExceptionSteps`:
-  `List`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef).
@@ -458,7 +459,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -707,7 +708,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### test_identity_provider
 
@@ -750,7 +751,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_access
 
@@ -773,7 +774,7 @@ Keyword-only arguments:
 - `HomeDirectoryType`:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`
@@ -807,7 +808,7 @@ Keyword-only arguments:
 - `IdentityProviderDetails`:
   [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
 - `LoggingRole`: `str`
-- `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
+- `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
 - `WorkflowDetails`:
   [WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef)
@@ -835,7 +836,7 @@ Keyword-only arguments:
 - `HomeDirectoryType`:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`

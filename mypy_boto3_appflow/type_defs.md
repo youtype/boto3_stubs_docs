@@ -384,13 +384,13 @@ from mypy_boto3_appflow.type_defs import ConnectorProfilePropertiesTypeDef
 
 Optional fields:
 
-- `Amplitude`: `Dict`\[`str`, `Any`\]
+- `Amplitude`: `Mapping`\[`str`, `Any`\]
 - `Datadog`:
   [DatadogConnectorProfilePropertiesTypeDef](./type_defs.md#datadogconnectorprofilepropertiestypedef)
 - `Dynatrace`:
   [DynatraceConnectorProfilePropertiesTypeDef](./type_defs.md#dynatraceconnectorprofilepropertiestypedef)
-- `GoogleAnalytics`: `Dict`\[`str`, `Any`\]
-- `Honeycode`: `Dict`\[`str`, `Any`\]
+- `GoogleAnalytics`: `Mapping`\[`str`, `Any`\]
+- `Honeycode`: `Mapping`\[`str`, `Any`\]
 - `InforNexus`:
   [InforNexusConnectorProfilePropertiesTypeDef](./type_defs.md#infornexusconnectorprofilepropertiestypedef)
 - `Marketo`:
@@ -401,12 +401,12 @@ Optional fields:
   [SalesforceConnectorProfilePropertiesTypeDef](./type_defs.md#salesforceconnectorprofilepropertiestypedef)
 - `ServiceNow`:
   [ServiceNowConnectorProfilePropertiesTypeDef](./type_defs.md#servicenowconnectorprofilepropertiestypedef)
-- `Singular`: `Dict`\[`str`, `Any`\]
+- `Singular`: `Mapping`\[`str`, `Any`\]
 - `Slack`:
   [SlackConnectorProfilePropertiesTypeDef](./type_defs.md#slackconnectorprofilepropertiestypedef)
 - `Snowflake`:
   [SnowflakeConnectorProfilePropertiesTypeDef](./type_defs.md#snowflakeconnectorprofilepropertiestypedef)
-- `Trendmicro`: `Dict`\[`str`, `Any`\]
+- `Trendmicro`: `Mapping`\[`str`, `Any`\]
 - `Veeva`:
   [VeevaConnectorProfilePropertiesTypeDef](./type_defs.md#veevaconnectorprofilepropertiestypedef)
 - `Zendesk`:
@@ -477,14 +477,14 @@ Required fields:
 - `sourceFlowConfig`:
   [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
 - `destinationFlowConfigList`:
-  `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
-- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
+  `Sequence`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
+- `tasks`: `Sequence`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
 
 Optional fields:
 
 - `description`: `str`
 - `kmsArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateFlowResponseTypeDef
 
@@ -608,7 +608,7 @@ from mypy_boto3_appflow.type_defs import DescribeConnectorProfilesRequestRequest
 
 Optional fields:
 
-- `connectorProfileNames`: `List`\[`str`\]
+- `connectorProfileNames`: `Sequence`\[`str`\]
 - `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -636,7 +636,7 @@ from mypy_boto3_appflow.type_defs import DescribeConnectorsRequestRequestTypeDef
 Optional fields:
 
 - `connectorTypes`:
-  `List`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
+  `Sequence`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
 - `nextToken`: `str`
 
 ## DescribeConnectorsResponseTypeDef
@@ -741,7 +741,7 @@ Optional fields:
   [SnowflakeDestinationPropertiesTypeDef](./type_defs.md#snowflakedestinationpropertiestypedef)
 - `EventBridge`:
   [EventBridgeDestinationPropertiesTypeDef](./type_defs.md#eventbridgedestinationpropertiestypedef)
-- `LookoutMetrics`: `Dict`\[`str`, `Any`\]
+- `LookoutMetrics`: `Mapping`\[`str`, `Any`\]
 - `Upsolver`:
   [UpsolverDestinationPropertiesTypeDef](./type_defs.md#upsolverdestinationpropertiestypedef)
 - `Honeycode`:
@@ -1188,7 +1188,7 @@ Required fields:
 
 - `tokenUrl`: `str`
 - `authCodeUrl`: `str`
-- `oAuthScopes`: `List`\[`str`\]
+- `oAuthScopes`: `Sequence`\[`str`\]
 
 ## PrefixConfigTypeDef
 
@@ -1396,7 +1396,7 @@ Required fields:
 
 Optional fields:
 
-- `idFieldNames`: `List`\[`str`\]
+- `idFieldNames`: `Sequence`\[`str`\]
 - `errorHandlingConfig`:
   [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
 - `writeOperationType`:
@@ -1734,7 +1734,7 @@ from mypy_boto3_appflow.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TaskTypeDef
 
@@ -1744,7 +1744,7 @@ from mypy_boto3_appflow.type_defs import TaskTypeDef
 
 Required fields:
 
-- `sourceFields`: `List`\[`str`\]
+- `sourceFields`: `Sequence`\[`str`\]
 - `taskType`: [TaskTypeType](./literals.md#tasktypetype)
 
 Optional fields:
@@ -1753,7 +1753,7 @@ Optional fields:
   [ConnectorOperatorTypeDef](./type_defs.md#connectoroperatortypedef)
 - `destinationField`: `str`
 - `taskProperties`:
-  `Dict`\[[OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype),
+  `Mapping`\[[OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype),
   `str`\]
 
 ## TrendmicroConnectorProfileCredentialsTypeDef
@@ -1811,7 +1811,7 @@ from mypy_boto3_appflow.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateConnectorProfileRequestRequestTypeDef
 
@@ -1851,8 +1851,8 @@ Required fields:
 - `sourceFlowConfig`:
   [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
 - `destinationFlowConfigList`:
-  `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
-- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
+  `Sequence`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
+- `tasks`: `Sequence`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
 
 Optional fields:
 
@@ -1979,7 +1979,7 @@ Required fields:
 
 Optional fields:
 
-- `idFieldNames`: `List`\[`str`\]
+- `idFieldNames`: `Sequence`\[`str`\]
 - `errorHandlingConfig`:
   [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
 - `writeOperationType`:

@@ -66,7 +66,7 @@ from mypy_boto3_detective.type_defs import CreateGraphRequestRequestTypeDef
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateGraphResponseTypeDef
 
@@ -89,7 +89,7 @@ from mypy_boto3_detective.type_defs import CreateMembersRequestRequestTypeDef
 Required fields:
 
 - `GraphArn`: `str`
-- `Accounts`: `List`\[[AccountTypeDef](./type_defs.md#accounttypedef)\]
+- `Accounts`: `Sequence`\[[AccountTypeDef](./type_defs.md#accounttypedef)\]
 
 Optional fields:
 
@@ -130,7 +130,7 @@ from mypy_boto3_detective.type_defs import DeleteMembersRequestRequestTypeDef
 Required fields:
 
 - `GraphArn`: `str`
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## DeleteMembersResponseTypeDef
 
@@ -165,7 +165,7 @@ from mypy_boto3_detective.type_defs import GetMembersRequestRequestTypeDef
 Required fields:
 
 - `GraphArn`: `str`
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## GetMembersResponseTypeDef
 
@@ -360,7 +360,7 @@ from mypy_boto3_detective.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UnprocessedAccountTypeDef
 
@@ -382,4 +382,4 @@ from mypy_boto3_detective.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]

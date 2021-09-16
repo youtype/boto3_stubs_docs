@@ -63,6 +63,7 @@ from mypy_boto3_iot_jobs_data.literals import JobExecutionStatusType, ...
 ```
 
 - [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -61,7 +61,7 @@ Arguments for `ListTableRowsPaginator.paginate` method:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
-- `rowIds`: `List`\[`str`\]
+- `rowIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

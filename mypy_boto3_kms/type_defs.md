@@ -188,14 +188,14 @@ Required fields:
 - `KeyId`: `str`
 - `GranteePrincipal`: `str`
 - `Operations`:
-  `List`\[[GrantOperationType](./literals.md#grantoperationtype)\]
+  `Sequence`\[[GrantOperationType](./literals.md#grantoperationtype)\]
 
 Optional fields:
 
 - `RetiringPrincipal`: `str`
 - `Constraints`:
   [GrantConstraintsTypeDef](./type_defs.md#grantconstraintstypedef)
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 - `Name`: `str`
 
 ## CreateGrantResponseTypeDef
@@ -228,7 +228,7 @@ Optional fields:
 - `Origin`: [OriginTypeType](./literals.md#origintypetype)
 - `CustomKeyStoreId`: `str`
 - `BypassPolicyLockoutSafetyCheck`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `MultiRegion`: `bool`
 
 ## CreateKeyResponseTypeDef
@@ -273,8 +273,8 @@ Required fields:
 
 Optional fields:
 
-- `EncryptionContext`: `Dict`\[`str`, `str`\]
-- `GrantTokens`: `List`\[`str`\]
+- `EncryptionContext`: `Mapping`\[`str`, `str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 - `KeyId`: `str`
 - `EncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
@@ -364,7 +364,7 @@ Required fields:
 
 Optional fields:
 
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 ## DescribeKeyResponseTypeDef
 
@@ -441,8 +441,8 @@ Required fields:
 
 Optional fields:
 
-- `EncryptionContext`: `Dict`\[`str`, `str`\]
-- `GrantTokens`: `List`\[`str`\]
+- `EncryptionContext`: `Mapping`\[`str`, `str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 - `EncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
@@ -474,8 +474,8 @@ Required fields:
 
 Optional fields:
 
-- `EncryptionContext`: `Dict`\[`str`, `str`\]
-- `GrantTokens`: `List`\[`str`\]
+- `EncryptionContext`: `Mapping`\[`str`, `str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 ## GenerateDataKeyPairResponseTypeDef
 
@@ -506,8 +506,8 @@ Required fields:
 
 Optional fields:
 
-- `EncryptionContext`: `Dict`\[`str`, `str`\]
-- `GrantTokens`: `List`\[`str`\]
+- `EncryptionContext`: `Mapping`\[`str`, `str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 ## GenerateDataKeyPairWithoutPlaintextResponseTypeDef
 
@@ -536,10 +536,10 @@ Required fields:
 
 Optional fields:
 
-- `EncryptionContext`: `Dict`\[`str`, `str`\]
+- `EncryptionContext`: `Mapping`\[`str`, `str`\]
 - `NumberOfBytes`: `int`
 - `KeySpec`: [DataKeySpecType](./literals.md#datakeyspectype)
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 ## GenerateDataKeyResponseTypeDef
 
@@ -567,10 +567,10 @@ Required fields:
 
 Optional fields:
 
-- `EncryptionContext`: `Dict`\[`str`, `str`\]
+- `EncryptionContext`: `Mapping`\[`str`, `str`\]
 - `KeySpec`: [DataKeySpecType](./literals.md#datakeyspectype)
 - `NumberOfBytes`: `int`
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 ## GenerateDataKeyWithoutPlaintextResponseTypeDef
 
@@ -693,7 +693,7 @@ Required fields:
 
 Optional fields:
 
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 ## GetPublicKeyResponseTypeDef
 
@@ -724,8 +724,8 @@ from mypy_boto3_kms.type_defs import GrantConstraintsTypeDef
 
 Optional fields:
 
-- `EncryptionContextSubset`: `Dict`\[`str`, `str`\]
-- `EncryptionContextEquals`: `Dict`\[`str`, `str`\]
+- `EncryptionContextSubset`: `Mapping`\[`str`, `str`\]
+- `EncryptionContextEquals`: `Mapping`\[`str`, `str`\]
 
 ## GrantListEntryTypeDef
 
@@ -1038,14 +1038,14 @@ Required fields:
 
 Optional fields:
 
-- `SourceEncryptionContext`: `Dict`\[`str`, `str`\]
+- `SourceEncryptionContext`: `Mapping`\[`str`, `str`\]
 - `SourceKeyId`: `str`
-- `DestinationEncryptionContext`: `Dict`\[`str`, `str`\]
+- `DestinationEncryptionContext`: `Mapping`\[`str`, `str`\]
 - `SourceEncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 - `DestinationEncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 ## ReEncryptResponseTypeDef
 
@@ -1081,7 +1081,7 @@ Optional fields:
 - `Policy`: `str`
 - `BypassPolicyLockoutSafetyCheck`: `bool`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ReplicateKeyResponseTypeDef
 
@@ -1179,7 +1179,7 @@ Required fields:
 Optional fields:
 
 - `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 ## SignResponseTypeDef
 
@@ -1205,7 +1205,7 @@ from mypy_boto3_kms.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `KeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1227,7 +1227,7 @@ from mypy_boto3_kms.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `KeyId`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAliasRequestRequestTypeDef
 
@@ -1295,7 +1295,7 @@ Required fields:
 Optional fields:
 
 - `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 ## VerifyResponseTypeDef
 

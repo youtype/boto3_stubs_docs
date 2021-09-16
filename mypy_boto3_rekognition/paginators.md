@@ -34,7 +34,7 @@ Boto3 documentation:
 Arguments for `DescribeProjectVersionsPaginator.paginate` method:
 
 - `ProjectArn`: `str` *(required)*
-- `VersionNames`: `List`\[`str`\]
+- `VersionNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

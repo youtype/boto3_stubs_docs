@@ -127,7 +127,7 @@ from mypy_boto3_chime_sdk_messaging.type_defs import BatchCreateChannelMembershi
 Required fields:
 
 - `ChannelArn`: `str`
-- `MemberArns`: `List`\[`str`\]
+- `MemberArns`: `Sequence`\[`str`\]
 - `ChimeBearer`: `str`
 
 Optional fields:
@@ -410,7 +410,7 @@ Optional fields:
 - `Mode`: [ChannelModeType](./literals.md#channelmodetype)
 - `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
 - `Metadata`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateChannelResponseTypeDef
 

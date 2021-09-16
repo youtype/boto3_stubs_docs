@@ -113,8 +113,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `jobIds`: `List`\[`str`\]
-- `filters`: `List`\[[JobFilterTypeDef](./type_defs.md#jobfiltertypedef)\]
+- `jobIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[JobFilterTypeDef](./type_defs.md#jobfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -140,10 +140,10 @@ Keyword-only arguments:
 - `s3DestinationConfig`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
   *(required)*
-- `accountIds`: `List`\[`str`\]
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableAutoScalingGroupFieldType](./literals.md#exportableautoscalinggroupfieldtype)\]
+  `Sequence`\[[ExportableAutoScalingGroupFieldType](./literals.md#exportableautoscalinggroupfieldtype)\]
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
@@ -171,10 +171,10 @@ Keyword-only arguments:
 - `s3DestinationConfig`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
   *(required)*
-- `accountIds`: `List`\[`str`\]
-- `filters`: `List`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableVolumeFieldType](./literals.md#exportablevolumefieldtype)\]
+  `Sequence`\[[ExportableVolumeFieldType](./literals.md#exportablevolumefieldtype)\]
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
@@ -200,10 +200,10 @@ Keyword-only arguments:
 - `s3DestinationConfig`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
   *(required)*
-- `accountIds`: `List`\[`str`\]
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableInstanceFieldType](./literals.md#exportableinstancefieldtype)\]
+  `Sequence`\[[ExportableInstanceFieldType](./literals.md#exportableinstancefieldtype)\]
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
@@ -232,11 +232,11 @@ Keyword-only arguments:
 - `s3DestinationConfig`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
   *(required)*
-- `accountIds`: `List`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
+  `Sequence`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
 - `fieldsToExport`:
-  `List`\[[ExportableLambdaFunctionFieldType](./literals.md#exportablelambdafunctionfieldtype)\]
+  `Sequence`\[[ExportableLambdaFunctionFieldType](./literals.md#exportablelambdafunctionfieldtype)\]
 - `fileFormat`: `Literal['Csv']` (see
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
@@ -257,7 +257,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -279,11 +279,11 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `accountIds`: `List`\[`str`\]
-- `autoScalingGroupArns`: `List`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
+- `autoScalingGroupArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `recommendationPreferences`:
   [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
@@ -305,11 +305,11 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `volumeArns`: `List`\[`str`\]
+- `volumeArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
-- `accountIds`: `List`\[`str`\]
+- `filters`: `Sequence`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
 
 Returns
 [GetEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#getebsvolumerecommendationsresponsetypedef).
@@ -329,11 +329,11 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `instanceArns`: `List`\[`str`\]
+- `instanceArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `accountIds`: `List`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `accountIds`: `Sequence`\[`str`\]
 - `recommendationPreferences`:
   [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
@@ -400,7 +400,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `filters`:
-  `List`\[[EnrollmentFilterTypeDef](./type_defs.md#enrollmentfiltertypedef)\]
+  `Sequence`\[[EnrollmentFilterTypeDef](./type_defs.md#enrollmentfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -422,10 +422,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `functionArns`: `List`\[`str`\]
-- `accountIds`: `List`\[`str`\]
+- `functionArns`: `Sequence`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
 - `filters`:
-  `List`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
+  `Sequence`\[[LambdaFunctionRecommendationFilterTypeDef](./type_defs.md#lambdafunctionrecommendationfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -447,7 +447,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `accountIds`: `List`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 

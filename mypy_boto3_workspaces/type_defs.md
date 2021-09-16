@@ -174,7 +174,7 @@ from mypy_boto3_workspaces.type_defs import AssociateIpGroupsRequestRequestTypeD
 Required fields:
 
 - `DirectoryId`: `str`
-- `GroupIds`: `List`\[`str`\]
+- `GroupIds`: `Sequence`\[`str`\]
 
 ## AuthorizeIpRulesRequestRequestTypeDef
 
@@ -185,7 +185,8 @@ from mypy_boto3_workspaces.type_defs import AuthorizeIpRulesRequestRequestTypeDe
 Required fields:
 
 - `GroupId`: `str`
-- `UserRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
+- `UserRules`:
+  `Sequence`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
 
 ## ClientPropertiesResultTypeDef
 
@@ -274,7 +275,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CopyWorkspaceImageResultTypeDef
 
@@ -300,7 +301,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateConnectionAliasResultTypeDef
 
@@ -327,8 +328,9 @@ Required fields:
 Optional fields:
 
 - `GroupDesc`: `str`
-- `UserRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `UserRules`:
+  `Sequence`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateIpGroupResultTypeDef
 
@@ -351,7 +353,7 @@ from mypy_boto3_workspaces.type_defs import CreateTagsRequestRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateWorkspaceBundleRequestRequestTypeDef
 
@@ -370,7 +372,7 @@ Required fields:
 Optional fields:
 
 - `RootStorage`: [RootStorageTypeDef](./type_defs.md#rootstoragetypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateWorkspaceBundleResultTypeDef
 
@@ -394,7 +396,7 @@ from mypy_boto3_workspaces.type_defs import CreateWorkspacesRequestRequestTypeDe
 Required fields:
 
 - `Workspaces`:
-  `List`\[[WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef)\]
+  `Sequence`\[[WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef)\]
 
 ## CreateWorkspacesResultTypeDef
 
@@ -455,7 +457,7 @@ from mypy_boto3_workspaces.type_defs import DeleteTagsRequestRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## DeleteWorkspaceBundleRequestRequestTypeDef
 
@@ -533,7 +535,7 @@ from mypy_boto3_workspaces.type_defs import DescribeClientPropertiesRequestReque
 
 Required fields:
 
-- `ResourceIds`: `List`\[`str`\]
+- `ResourceIds`: `Sequence`\[`str`\]
 
 ## DescribeClientPropertiesResultTypeDef
 
@@ -586,7 +588,7 @@ from mypy_boto3_workspaces.type_defs import DescribeConnectionAliasesRequestRequ
 
 Optional fields:
 
-- `AliasIds`: `List`\[`str`\]
+- `AliasIds`: `Sequence`\[`str`\]
 - `ResourceId`: `str`
 - `Limit`: `int`
 - `NextToken`: `str`
@@ -613,7 +615,7 @@ from mypy_boto3_workspaces.type_defs import DescribeIpGroupsRequestRequestTypeDe
 
 Optional fields:
 
-- `GroupIds`: `List`\[`str`\]
+- `GroupIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -661,7 +663,7 @@ from mypy_boto3_workspaces.type_defs import DescribeWorkspaceBundlesRequestReque
 
 Optional fields:
 
-- `BundleIds`: `List`\[`str`\]
+- `BundleIds`: `Sequence`\[`str`\]
 - `Owner`: `str`
 - `NextToken`: `str`
 
@@ -687,7 +689,7 @@ from mypy_boto3_workspaces.type_defs import DescribeWorkspaceDirectoriesRequestR
 
 Optional fields:
 
-- `DirectoryIds`: `List`\[`str`\]
+- `DirectoryIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -743,7 +745,7 @@ from mypy_boto3_workspaces.type_defs import DescribeWorkspaceImagesRequestReques
 
 Optional fields:
 
-- `ImageIds`: `List`\[`str`\]
+- `ImageIds`: `Sequence`\[`str`\]
 - `ImageType`: [ImageTypeType](./literals.md#imagetypetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -795,7 +797,7 @@ from mypy_boto3_workspaces.type_defs import DescribeWorkspacesConnectionStatusRe
 
 Optional fields:
 
-- `WorkspaceIds`: `List`\[`str`\]
+- `WorkspaceIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 ## DescribeWorkspacesConnectionStatusResultTypeDef
@@ -820,7 +822,7 @@ from mypy_boto3_workspaces.type_defs import DescribeWorkspacesRequestRequestType
 
 Optional fields:
 
-- `WorkspaceIds`: `List`\[`str`\]
+- `WorkspaceIds`: `Sequence`\[`str`\]
 - `DirectoryId`: `str`
 - `UserName`: `str`
 - `BundleId`: `str`
@@ -859,7 +861,7 @@ from mypy_boto3_workspaces.type_defs import DisassociateIpGroupsRequestRequestTy
 Required fields:
 
 - `DirectoryId`: `str`
-- `GroupIds`: `List`\[`str`\]
+- `GroupIds`: `Sequence`\[`str`\]
 
 ## FailedCreateWorkspaceRequestTypeDef
 
@@ -912,8 +914,9 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Applications`: `List`\[[ApplicationType](./literals.md#applicationtype)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Applications`:
+  `Sequence`\[[ApplicationType](./literals.md#applicationtype)\]
 
 ## ImportWorkspaceImageResultTypeDef
 
@@ -1127,7 +1130,7 @@ from mypy_boto3_workspaces.type_defs import RebootWorkspacesRequestRequestTypeDe
 Required fields:
 
 - `RebootWorkspaceRequests`:
-  `List`\[[RebootRequestTypeDef](./type_defs.md#rebootrequesttypedef)\]
+  `Sequence`\[[RebootRequestTypeDef](./type_defs.md#rebootrequesttypedef)\]
 
 ## RebootWorkspacesResultTypeDef
 
@@ -1161,7 +1164,7 @@ from mypy_boto3_workspaces.type_defs import RebuildWorkspacesRequestRequestTypeD
 Required fields:
 
 - `RebuildWorkspaceRequests`:
-  `List`\[[RebuildRequestTypeDef](./type_defs.md#rebuildrequesttypedef)\]
+  `Sequence`\[[RebuildRequestTypeDef](./type_defs.md#rebuildrequesttypedef)\]
 
 ## RebuildWorkspacesResultTypeDef
 
@@ -1189,10 +1192,10 @@ Required fields:
 
 Optional fields:
 
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `EnableSelfService`: `bool`
 - `Tenancy`: [TenancyType](./literals.md#tenancytype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ResponseMetadataTypeDef
 
@@ -1227,7 +1230,7 @@ from mypy_boto3_workspaces.type_defs import RevokeIpRulesRequestRequestTypeDef
 Required fields:
 
 - `GroupId`: `str`
-- `UserRules`: `List`\[`str`\]
+- `UserRules`: `Sequence`\[`str`\]
 
 ## RootStorageTypeDef
 
@@ -1282,7 +1285,7 @@ from mypy_boto3_workspaces.type_defs import StartWorkspacesRequestRequestTypeDef
 Required fields:
 
 - `StartWorkspaceRequests`:
-  `List`\[[StartRequestTypeDef](./type_defs.md#startrequesttypedef)\]
+  `Sequence`\[[StartRequestTypeDef](./type_defs.md#startrequesttypedef)\]
 
 ## StartWorkspacesResultTypeDef
 
@@ -1316,7 +1319,7 @@ from mypy_boto3_workspaces.type_defs import StopWorkspacesRequestRequestTypeDef
 Required fields:
 
 - `StopWorkspaceRequests`:
-  `List`\[[StopRequestTypeDef](./type_defs.md#stoprequesttypedef)\]
+  `Sequence`\[[StopRequestTypeDef](./type_defs.md#stoprequesttypedef)\]
 
 ## StopWorkspacesResultTypeDef
 
@@ -1364,7 +1367,7 @@ from mypy_boto3_workspaces.type_defs import TerminateWorkspacesRequestRequestTyp
 Required fields:
 
 - `TerminateWorkspaceRequests`:
-  `List`\[[TerminateRequestTypeDef](./type_defs.md#terminaterequesttypedef)\]
+  `Sequence`\[[TerminateRequestTypeDef](./type_defs.md#terminaterequesttypedef)\]
 
 ## TerminateWorkspacesResultTypeDef
 
@@ -1400,7 +1403,8 @@ from mypy_boto3_workspaces.type_defs import UpdateRulesOfIpGroupRequestRequestTy
 Required fields:
 
 - `GroupId`: `str`
-- `UserRules`: `List`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
+- `UserRules`:
+  `Sequence`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
 
 ## UpdateWorkspaceBundleRequestRequestTypeDef
 
@@ -1591,7 +1595,7 @@ Optional fields:
 - `RootVolumeEncryptionEnabled`: `bool`
 - `WorkspaceProperties`:
   [WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## WorkspaceTypeDef
 

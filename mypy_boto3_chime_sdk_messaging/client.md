@@ -115,7 +115,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
-- `MemberArns`: `List`\[`str`\] *(required)*
+- `MemberArns`: `Sequence`\[`str`\] *(required)*
 - `ChimeBearer`: `str` *(required)*
 - `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
 
@@ -159,7 +159,7 @@ Keyword-only arguments:
 - `Mode`: [ChannelModeType](./literals.md#channelmodetype)
 - `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
 - `Metadata`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
@@ -475,7 +475,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

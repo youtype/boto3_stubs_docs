@@ -95,6 +95,7 @@ from mypy_boto3_redshift_data.literals import DescribeTablePaginatorName, ...
 - [ListTablesPaginatorName](./literals.md#listtablespaginatorname)
 - [StatementStatusStringType](./literals.md#statementstatusstringtype)
 - [StatusStringType](./literals.md#statusstringtype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

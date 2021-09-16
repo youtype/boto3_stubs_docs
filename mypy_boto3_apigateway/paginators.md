@@ -337,7 +337,7 @@ Boto3 documentation:
 Arguments for `GetResourcesPaginator.paginate` method:
 
 - `restApiId`: `str` *(required)*
-- `embed`: `List`\[`str`\]
+- `embed`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

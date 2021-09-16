@@ -134,6 +134,7 @@ from mypy_boto3_schemas.literals import CodeBindingExistsWaiterName, ...
 - [ListSchemasPaginatorName](./literals.md#listschemaspaginatorname)
 - [SearchSchemasPaginatorName](./literals.md#searchschemaspaginatorname)
 - [TypeType](./literals.md#typetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

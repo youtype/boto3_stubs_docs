@@ -149,11 +149,11 @@ from mypy_boto3_frauddetector.type_defs import BatchCreateVariableRequestRequest
 Required fields:
 
 - `variableEntries`:
-  `List`\[[VariableEntryTypeDef](./type_defs.md#variableentrytypedef)\]
+  `Sequence`\[[VariableEntryTypeDef](./type_defs.md#variableentrytypedef)\]
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## BatchCreateVariableResultTypeDef
 
@@ -188,7 +188,7 @@ from mypy_boto3_frauddetector.type_defs import BatchGetVariableRequestRequestTyp
 
 Required fields:
 
-- `names`: `List`\[`str`\]
+- `names`: `Sequence`\[`str`\]
 
 ## BatchGetVariableResultTypeDef
 
@@ -256,7 +256,7 @@ Required fields:
 Optional fields:
 
 - `detectorVersion`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDetectorVersionRequestRequestTypeDef
 
@@ -267,17 +267,17 @@ from mypy_boto3_frauddetector.type_defs import CreateDetectorVersionRequestReque
 Required fields:
 
 - `detectorId`: `str`
-- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 
 Optional fields:
 
 - `description`: `str`
-- `externalModelEndpoints`: `List`\[`str`\]
+- `externalModelEndpoints`: `Sequence`\[`str`\]
 - `modelVersions`:
-  `List`\[[ModelVersionTypeDef](./type_defs.md#modelversiontypedef)\]
+  `Sequence`\[[ModelVersionTypeDef](./type_defs.md#modelversiontypedef)\]
 - `ruleExecutionMode`:
   [RuleExecutionModeType](./literals.md#ruleexecutionmodetype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDetectorVersionResultTypeDef
 
@@ -310,7 +310,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateModelVersionRequestRequestTypeDef
 
@@ -332,7 +332,7 @@ Optional fields:
 
 - `externalEventsDetail`:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateModelVersionResultTypeDef
 
@@ -363,12 +363,12 @@ Required fields:
 - `expression`: `str`
 - `language`: `Literal['DETECTORPL']` (see
   [LanguageType](./literals.md#languagetype))
-- `outcomes`: `List`\[`str`\]
+- `outcomes`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRuleResultTypeDef
 
@@ -399,7 +399,7 @@ Optional fields:
 
 - `description`: `str`
 - `variableType`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DataValidationMetricsTypeDef
 
@@ -889,14 +889,14 @@ Required fields:
 - `detectorId`: `str`
 - `eventId`: `str`
 - `eventTypeName`: `str`
-- `entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
+- `entities`: `Sequence`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
 - `eventTimestamp`: `str`
-- `eventVariables`: `Dict`\[`str`, `str`\]
+- `eventVariables`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
 - `detectorVersionId`: `str`
-- `externalModelEndpointDataBlobs`: `Dict`\[`str`,
+- `externalModelEndpointDataBlobs`: `Mapping`\[`str`,
   [ModelEndpointDataBlobTypeDef](./type_defs.md#modelendpointdatablobtypedef)\]
 
 ## GetEventPredictionResultTypeDef
@@ -1166,7 +1166,7 @@ from mypy_boto3_frauddetector.type_defs import LabelSchemaTypeDef
 
 Required fields:
 
-- `labelMapper`: `Dict`\[`str`, `List`\[`str`\]\]
+- `labelMapper`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 ## LabelTypeDef
 
@@ -1377,7 +1377,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutEntityTypeRequestRequestTypeDef
 
@@ -1392,7 +1392,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutEventTypeRequestRequestTypeDef
 
@@ -1403,14 +1403,14 @@ from mypy_boto3_frauddetector.type_defs import PutEventTypeRequestRequestTypeDef
 Required fields:
 
 - `name`: `str`
-- `eventVariables`: `List`\[`str`\]
-- `entityTypes`: `List`\[`str`\]
+- `eventVariables`: `Sequence`\[`str`\]
+- `entityTypes`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `description`: `str`
-- `labels`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `labels`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutExternalModelRequestRequestTypeDef
 
@@ -1433,7 +1433,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutKMSEncryptionKeyRequestRequestTypeDef
 
@@ -1458,7 +1458,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutOutcomeRequestRequestTypeDef
 
@@ -1473,7 +1473,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ResponseMetadataTypeDef
 
@@ -1541,7 +1541,7 @@ from mypy_boto3_frauddetector.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceARN`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1562,7 +1562,7 @@ from mypy_boto3_frauddetector.type_defs import TrainingDataSchemaTypeDef
 
 Required fields:
 
-- `modelVariables`: `List`\[`str`\]
+- `modelVariables`: `Sequence`\[`str`\]
 - `labelSchema`: [LabelSchemaTypeDef](./type_defs.md#labelschematypedef)
 
 ## TrainingMetricsTypeDef
@@ -1601,7 +1601,7 @@ from mypy_boto3_frauddetector.type_defs import UntagResourceRequestRequestTypeDe
 Required fields:
 
 - `resourceARN`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDetectorVersionMetadataRequestRequestTypeDef
 
@@ -1625,14 +1625,14 @@ Required fields:
 
 - `detectorId`: `str`
 - `detectorVersionId`: `str`
-- `externalModelEndpoints`: `List`\[`str`\]
-- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `externalModelEndpoints`: `Sequence`\[`str`\]
+- `rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 
 Optional fields:
 
 - `description`: `str`
 - `modelVersions`:
-  `List`\[[ModelVersionTypeDef](./type_defs.md#modelversiontypedef)\]
+  `Sequence`\[[ModelVersionTypeDef](./type_defs.md#modelversiontypedef)\]
 - `ruleExecutionMode`:
   [RuleExecutionModeType](./literals.md#ruleexecutionmodetype)
 
@@ -1682,7 +1682,7 @@ Optional fields:
 
 - `externalEventsDetail`:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UpdateModelVersionResultTypeDef
 
@@ -1737,12 +1737,12 @@ Required fields:
 - `expression`: `str`
 - `language`: `Literal['DETECTORPL']` (see
   [LanguageType](./literals.md#languagetype))
-- `outcomes`: `List`\[`str`\]
+- `outcomes`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UpdateRuleVersionResultTypeDef
 

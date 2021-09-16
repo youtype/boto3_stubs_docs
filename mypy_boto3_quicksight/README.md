@@ -264,6 +264,7 @@ from mypy_boto3_quicksight.literals import AnalysisErrorTypeType, ...
 - [ThemeErrorTypeType](./literals.md#themeerrortypetype)
 - [ThemeTypeType](./literals.md#themetypetype)
 - [UserRoleType](./literals.md#userroletype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

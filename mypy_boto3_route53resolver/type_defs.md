@@ -167,7 +167,7 @@ Optional fields:
 
 - `MutationProtection`:
   [MutationProtectionStatusType](./literals.md#mutationprotectionstatustype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AssociateFirewallRuleGroupResponseTypeDef
 
@@ -271,7 +271,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateFirewallDomainListResponseTypeDef
 
@@ -299,7 +299,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateFirewallRuleGroupResponseTypeDef
 
@@ -358,16 +358,16 @@ from mypy_boto3_route53resolver.type_defs import CreateResolverEndpointRequestRe
 Required fields:
 
 - `CreatorRequestId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `Direction`:
   [ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype)
 - `IpAddresses`:
-  `List`\[[IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef)\]
+  `Sequence`\[[IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef)\]
 
 Optional fields:
 
 - `Name`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateResolverEndpointResponseTypeDef
 
@@ -396,7 +396,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateResolverQueryLogConfigResponseTypeDef
 
@@ -427,9 +427,9 @@ Optional fields:
 
 - `Name`: `str`
 - `TargetIps`:
-  `List`\[[TargetAddressTypeDef](./type_defs.md#targetaddresstypedef)\]
+  `Sequence`\[[TargetAddressTypeDef](./type_defs.md#targetaddresstypedef)\]
 - `ResolverEndpointId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateResolverRuleResponseTypeDef
 
@@ -684,7 +684,7 @@ from mypy_boto3_route53resolver.type_defs import FilterTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## FirewallConfigTypeDef
 
@@ -1356,7 +1356,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListResolverDnssecConfigsResponseTypeDef
 
@@ -1412,7 +1412,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListResolverEndpointsResponseTypeDef
 
@@ -1439,7 +1439,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortBy`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
@@ -1469,7 +1469,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortBy`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
@@ -1499,7 +1499,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListResolverRuleAssociationsResponseTypeDef
 
@@ -1526,7 +1526,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## ListResolverRulesResponseTypeDef
 
@@ -1753,7 +1753,7 @@ Optional fields:
 
 - `Name`: `str`
 - `TargetIps`:
-  `List`\[[TargetAddressTypeDef](./type_defs.md#targetaddresstypedef)\]
+  `Sequence`\[[TargetAddressTypeDef](./type_defs.md#targetaddresstypedef)\]
 - `ResolverEndpointId`: `str`
 
 ## ResolverRuleTypeDef
@@ -1803,7 +1803,7 @@ from mypy_boto3_route53resolver.type_defs import TagResourceRequestRequestTypeDe
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1839,7 +1839,7 @@ from mypy_boto3_route53resolver.type_defs import UntagResourceRequestRequestType
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateFirewallConfigRequestRequestTypeDef
 
@@ -1877,7 +1877,7 @@ Required fields:
 - `FirewallDomainListId`: `str`
 - `Operation`:
   [FirewallDomainUpdateOperationType](./literals.md#firewalldomainupdateoperationtype)
-- `Domains`: `List`\[`str`\]
+- `Domains`: `Sequence`\[`str`\]
 
 ## UpdateFirewallDomainsResponseTypeDef
 

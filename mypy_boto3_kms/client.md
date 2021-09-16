@@ -256,11 +256,12 @@ Keyword-only arguments:
 - `KeyId`: `str` *(required)*
 - `GranteePrincipal`: `str` *(required)*
 - `Operations`:
-  `List`\[[GrantOperationType](./literals.md#grantoperationtype)\] *(required)*
+  `Sequence`\[[GrantOperationType](./literals.md#grantoperationtype)\]
+  *(required)*
 - `RetiringPrincipal`: `str`
 - `Constraints`:
   [GrantConstraintsTypeDef](./type_defs.md#grantconstraintstypedef)
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 - `Name`: `str`
 
 Returns
@@ -291,7 +292,7 @@ Keyword-only arguments:
 - `Origin`: [OriginTypeType](./literals.md#origintypetype)
 - `CustomKeyStoreId`: `str`
 - `BypassPolicyLockoutSafetyCheck`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `MultiRegion`: `bool`
 
 Returns [CreateKeyResponseTypeDef](./type_defs.md#createkeyresponsetypedef).
@@ -315,8 +316,8 @@ Keyword-only arguments:
 
 - `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
   *(required)*
-- `EncryptionContext`: `Dict`\[`str`, `str`\]
-- `GrantTokens`: `List`\[`str`\]
+- `EncryptionContext`: `Mapping`\[`str`, `str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 - `KeyId`: `str`
 - `EncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
@@ -413,7 +414,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 Returns
 [DescribeKeyResponseTypeDef](./type_defs.md#describekeyresponsetypedef).
@@ -523,8 +524,8 @@ Keyword-only arguments:
 - `KeyId`: `str` *(required)*
 - `Plaintext`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
   *(required)*
-- `EncryptionContext`: `Dict`\[`str`, `str`\]
-- `GrantTokens`: `List`\[`str`\]
+- `EncryptionContext`: `Mapping`\[`str`, `str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 - `EncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
@@ -545,10 +546,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
-- `EncryptionContext`: `Dict`\[`str`, `str`\]
+- `EncryptionContext`: `Mapping`\[`str`, `str`\]
 - `NumberOfBytes`: `int`
 - `KeySpec`: [DataKeySpecType](./literals.md#datakeyspectype)
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 Returns
 [GenerateDataKeyResponseTypeDef](./type_defs.md#generatedatakeyresponsetypedef).
@@ -570,8 +571,8 @@ Keyword-only arguments:
 - `KeyId`: `str` *(required)*
 - `KeyPairSpec`: [DataKeyPairSpecType](./literals.md#datakeypairspectype)
   *(required)*
-- `EncryptionContext`: `Dict`\[`str`, `str`\]
-- `GrantTokens`: `List`\[`str`\]
+- `EncryptionContext`: `Mapping`\[`str`, `str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 Returns
 [GenerateDataKeyPairResponseTypeDef](./type_defs.md#generatedatakeypairresponsetypedef).
@@ -594,8 +595,8 @@ Keyword-only arguments:
 - `KeyId`: `str` *(required)*
 - `KeyPairSpec`: [DataKeyPairSpecType](./literals.md#datakeypairspectype)
   *(required)*
-- `EncryptionContext`: `Dict`\[`str`, `str`\]
-- `GrantTokens`: `List`\[`str`\]
+- `EncryptionContext`: `Mapping`\[`str`, `str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 Returns
 [GenerateDataKeyPairWithoutPlaintextResponseTypeDef](./type_defs.md#generatedatakeypairwithoutplaintextresponsetypedef).
@@ -616,10 +617,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
-- `EncryptionContext`: `Dict`\[`str`, `str`\]
+- `EncryptionContext`: `Mapping`\[`str`, `str`\]
 - `KeySpec`: [DataKeySpecType](./literals.md#datakeyspectype)
 - `NumberOfBytes`: `int`
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 Returns
 [GenerateDataKeyWithoutPlaintextResponseTypeDef](./type_defs.md#generatedatakeywithoutplaintextresponsetypedef).
@@ -636,7 +637,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -742,7 +743,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 Returns
 [GetPublicKeyResponseTypeDef](./type_defs.md#getpublickeyresponsetypedef).
@@ -935,14 +936,14 @@ Keyword-only arguments:
 - `CiphertextBlob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
   *(required)*
 - `DestinationKeyId`: `str` *(required)*
-- `SourceEncryptionContext`: `Dict`\[`str`, `str`\]
+- `SourceEncryptionContext`: `Mapping`\[`str`, `str`\]
 - `SourceKeyId`: `str`
-- `DestinationEncryptionContext`: `Dict`\[`str`, `str`\]
+- `DestinationEncryptionContext`: `Mapping`\[`str`, `str`\]
 - `SourceEncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 - `DestinationEncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 Returns [ReEncryptResponseTypeDef](./type_defs.md#reencryptresponsetypedef).
 
@@ -965,7 +966,7 @@ Keyword-only arguments:
 - `Policy`: `str`
 - `BypassPolicyLockoutSafetyCheck`: `bool`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [ReplicateKeyResponseTypeDef](./type_defs.md#replicatekeyresponsetypedef).
@@ -1047,7 +1048,7 @@ Keyword-only arguments:
   [SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)
   *(required)*
 - `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 Returns [SignResponseTypeDef](./type_defs.md#signresponsetypedef).
 
@@ -1068,7 +1069,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_resource
 
@@ -1086,7 +1087,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_alias
 
@@ -1182,7 +1183,7 @@ Keyword-only arguments:
   [SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)
   *(required)*
 - `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
-- `GrantTokens`: `List`\[`str`\]
+- `GrantTokens`: `Sequence`\[`str`\]
 
 Returns [VerifyResponseTypeDef](./type_defs.md#verifyresponsetypedef).
 

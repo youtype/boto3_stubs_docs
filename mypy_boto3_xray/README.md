@@ -118,6 +118,7 @@ from mypy_boto3_xray.literals import BatchGetTracesPaginatorName, ...
 - [InsightStateType](./literals.md#insightstatetype)
 - [SamplingStrategyNameType](./literals.md#samplingstrategynametype)
 - [TimeRangeTypeType](./literals.md#timerangetypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

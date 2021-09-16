@@ -146,7 +146,7 @@ from mypy_boto3_iotevents_data.type_defs import BatchAcknowledgeAlarmRequestRequ
 Required fields:
 
 - `acknowledgeActionRequests`:
-  `List`\[[AcknowledgeAlarmActionRequestTypeDef](./type_defs.md#acknowledgealarmactionrequesttypedef)\]
+  `Sequence`\[[AcknowledgeAlarmActionRequestTypeDef](./type_defs.md#acknowledgealarmactionrequesttypedef)\]
 
 ## BatchAcknowledgeAlarmResponseTypeDef
 
@@ -182,7 +182,7 @@ from mypy_boto3_iotevents_data.type_defs import BatchDisableAlarmRequestRequestT
 Required fields:
 
 - `disableActionRequests`:
-  `List`\[[DisableAlarmActionRequestTypeDef](./type_defs.md#disablealarmactionrequesttypedef)\]
+  `Sequence`\[[DisableAlarmActionRequestTypeDef](./type_defs.md#disablealarmactionrequesttypedef)\]
 
 ## BatchDisableAlarmResponseTypeDef
 
@@ -206,7 +206,7 @@ from mypy_boto3_iotevents_data.type_defs import BatchEnableAlarmRequestRequestTy
 Required fields:
 
 - `enableActionRequests`:
-  `List`\[[EnableAlarmActionRequestTypeDef](./type_defs.md#enablealarmactionrequesttypedef)\]
+  `Sequence`\[[EnableAlarmActionRequestTypeDef](./type_defs.md#enablealarmactionrequesttypedef)\]
 
 ## BatchEnableAlarmResponseTypeDef
 
@@ -241,7 +241,7 @@ from mypy_boto3_iotevents_data.type_defs import BatchPutMessageRequestRequestTyp
 
 Required fields:
 
-- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
+- `messages`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
 
 ## BatchPutMessageResponseTypeDef
 
@@ -265,7 +265,7 @@ from mypy_boto3_iotevents_data.type_defs import BatchResetAlarmRequestRequestTyp
 Required fields:
 
 - `resetActionRequests`:
-  `List`\[[ResetAlarmActionRequestTypeDef](./type_defs.md#resetalarmactionrequesttypedef)\]
+  `Sequence`\[[ResetAlarmActionRequestTypeDef](./type_defs.md#resetalarmactionrequesttypedef)\]
 
 ## BatchResetAlarmResponseTypeDef
 
@@ -289,7 +289,7 @@ from mypy_boto3_iotevents_data.type_defs import BatchSnoozeAlarmRequestRequestTy
 Required fields:
 
 - `snoozeActionRequests`:
-  `List`\[[SnoozeAlarmActionRequestTypeDef](./type_defs.md#snoozealarmactionrequesttypedef)\]
+  `Sequence`\[[SnoozeAlarmActionRequestTypeDef](./type_defs.md#snoozealarmactionrequesttypedef)\]
 
 ## BatchSnoozeAlarmResponseTypeDef
 
@@ -325,7 +325,7 @@ from mypy_boto3_iotevents_data.type_defs import BatchUpdateDetectorRequestReques
 Required fields:
 
 - `detectors`:
-  `List`\[[UpdateDetectorRequestTypeDef](./type_defs.md#updatedetectorrequesttypedef)\]
+  `Sequence`\[[UpdateDetectorRequestTypeDef](./type_defs.md#updatedetectorrequesttypedef)\]
 
 ## BatchUpdateDetectorResponseTypeDef
 
@@ -422,9 +422,9 @@ Required fields:
 
 - `stateName`: `str`
 - `variables`:
-  `List`\[[VariableDefinitionTypeDef](./type_defs.md#variabledefinitiontypedef)\]
+  `Sequence`\[[VariableDefinitionTypeDef](./type_defs.md#variabledefinitiontypedef)\]
 - `timers`:
-  `List`\[[TimerDefinitionTypeDef](./type_defs.md#timerdefinitiontypedef)\]
+  `Sequence`\[[TimerDefinitionTypeDef](./type_defs.md#timerdefinitiontypedef)\]
 
 ## DetectorStateSummaryTypeDef
 

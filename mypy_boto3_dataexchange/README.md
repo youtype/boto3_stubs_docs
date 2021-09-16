@@ -110,6 +110,7 @@ from mypy_boto3_dataexchange.literals import AssetTypeType, ...
 - [ServerSideEncryptionTypesType](./literals.md#serversideencryptiontypestype)
 - [StateType](./literals.md#statetype)
 - [TypeType](./literals.md#typetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

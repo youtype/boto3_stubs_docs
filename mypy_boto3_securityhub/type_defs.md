@@ -610,7 +610,7 @@ Optional fields:
   [ActionRemoteIpDetailsTypeDef](./type_defs.md#actionremoteipdetailstypedef)
 - `DomainDetails`:
   [AwsApiCallActionDomainDetailsTypeDef](./type_defs.md#awsapicallactiondomaindetailstypedef)
-- `AffectedResources`: `Dict`\[`str`, `str`\]
+- `AffectedResources`: `Mapping`\[`str`, `str`\]
 - `FirstSeen`: `str`
 - `LastSeen`: `str`
 
@@ -635,7 +635,7 @@ Optional fields:
 
 - `PercentTraffic`: `float`
 - `DeploymentId`: `str`
-- `StageVariableOverrides`: `Dict`\[`str`, `str`\]
+- `StageVariableOverrides`: `Mapping`\[`str`, `str`\]
 - `UseStageCache`: `bool`
 
 ## AwsApiGatewayEndpointConfigurationTypeDef
@@ -646,7 +646,7 @@ from mypy_boto3_securityhub.type_defs import AwsApiGatewayEndpointConfigurationT
 
 Optional fields:
 
-- `Types`: `List`\[`str`\]
+- `Types`: `Sequence`\[`str`\]
 
 ## AwsApiGatewayMethodSettingsTypeDef
 
@@ -682,7 +682,7 @@ Optional fields:
 - `Description`: `str`
 - `CreatedDate`: `str`
 - `Version`: `str`
-- `BinaryMediaTypes`: `List`\[`str`\]
+- `BinaryMediaTypes`: `Sequence`\[`str`\]
 - `MinimumCompressionSize`: `int`
 - `ApiKeySource`: `str`
 - `EndpointConfiguration`:
@@ -704,8 +704,8 @@ Optional fields:
 - `CacheClusterSize`: `str`
 - `CacheClusterStatus`: `str`
 - `MethodSettings`:
-  `List`\[[AwsApiGatewayMethodSettingsTypeDef](./type_defs.md#awsapigatewaymethodsettingstypedef)\]
-- `Variables`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[AwsApiGatewayMethodSettingsTypeDef](./type_defs.md#awsapigatewaymethodsettingstypedef)\]
+- `Variables`: `Mapping`\[`str`, `str`\]
 - `DocumentationVersion`: `str`
 - `AccessLogSettings`:
   [AwsApiGatewayAccessLogSettingsTypeDef](./type_defs.md#awsapigatewayaccesslogsettingstypedef)
@@ -768,7 +768,7 @@ Optional fields:
 - `RouteSettings`:
   [AwsApiGatewayV2RouteSettingsTypeDef](./type_defs.md#awsapigatewayv2routesettingstypedef)
 - `StageName`: `str`
-- `StageVariables`: `Dict`\[`str`, `str`\]
+- `StageVariables`: `Mapping`\[`str`, `str`\]
 - `AccessLogSettings`:
   [AwsApiGatewayAccessLogSettingsTypeDef](./type_defs.md#awsapigatewayaccesslogsettingstypedef)
 - `AutoDeploy`: `bool`
@@ -784,7 +784,7 @@ from mypy_boto3_securityhub.type_defs import AwsAutoScalingAutoScalingGroupDetai
 Optional fields:
 
 - `LaunchConfigurationName`: `str`
-- `LoadBalancerNames`: `List`\[`str`\]
+- `LoadBalancerNames`: `Sequence`\[`str`\]
 - `HealthCheckType`: `str`
 - `HealthCheckGracePeriod`: `int`
 - `CreatedTime`: `str`
@@ -828,9 +828,9 @@ Optional fields:
 
 - `AssociatePublicIpAddress`: `bool`
 - `BlockDeviceMappings`:
-  `List`\[[AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationblockdevicemappingsdetailstypedef)\]
+  `Sequence`\[[AwsAutoScalingLaunchConfigurationBlockDeviceMappingsDetailsTypeDef](./type_defs.md#awsautoscalinglaunchconfigurationblockdevicemappingsdetailstypedef)\]
 - `ClassicLinkVpcId`: `str`
-- `ClassicLinkVpcSecurityGroups`: `List`\[`str`\]
+- `ClassicLinkVpcSecurityGroups`: `Sequence`\[`str`\]
 - `CreatedTime`: `str`
 - `EbsOptimized`: `bool`
 - `IamInstanceProfile`: `str`
@@ -843,7 +843,7 @@ Optional fields:
 - `LaunchConfigurationName`: `str`
 - `PlacementTenancy`: `str`
 - `RamdiskId`: `str`
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `SpotPrice`: `str`
 - `UserData`: `str`
 
@@ -869,17 +869,17 @@ Optional fields:
 - `CreatedAt`: `str`
 - `DomainName`: `str`
 - `DomainValidationOptions`:
-  `List`\[[AwsCertificateManagerCertificateDomainValidationOptionTypeDef](./type_defs.md#awscertificatemanagercertificatedomainvalidationoptiontypedef)\]
+  `Sequence`\[[AwsCertificateManagerCertificateDomainValidationOptionTypeDef](./type_defs.md#awscertificatemanagercertificatedomainvalidationoptiontypedef)\]
 - `ExtendedKeyUsages`:
-  `List`\[[AwsCertificateManagerCertificateExtendedKeyUsageTypeDef](./type_defs.md#awscertificatemanagercertificateextendedkeyusagetypedef)\]
+  `Sequence`\[[AwsCertificateManagerCertificateExtendedKeyUsageTypeDef](./type_defs.md#awscertificatemanagercertificateextendedkeyusagetypedef)\]
 - `FailureReason`: `str`
 - `ImportedAt`: `str`
-- `InUseBy`: `List`\[`str`\]
+- `InUseBy`: `Sequence`\[`str`\]
 - `IssuedAt`: `str`
 - `Issuer`: `str`
 - `KeyAlgorithm`: `str`
 - `KeyUsages`:
-  `List`\[[AwsCertificateManagerCertificateKeyUsageTypeDef](./type_defs.md#awscertificatemanagercertificatekeyusagetypedef)\]
+  `Sequence`\[[AwsCertificateManagerCertificateKeyUsageTypeDef](./type_defs.md#awscertificatemanagercertificatekeyusagetypedef)\]
 - `NotAfter`: `str`
 - `NotBefore`: `str`
 - `Options`:
@@ -891,7 +891,7 @@ Optional fields:
 - `SignatureAlgorithm`: `str`
 - `Status`: `str`
 - `Subject`: `str`
-- `SubjectAlternativeNames`: `List`\[`str`\]
+- `SubjectAlternativeNames`: `Sequence`\[`str`\]
 - `Type`: `str`
 
 ## AwsCertificateManagerCertificateDomainValidationOptionTypeDef
@@ -906,7 +906,7 @@ Optional fields:
 - `ResourceRecord`:
   [AwsCertificateManagerCertificateResourceRecordTypeDef](./type_defs.md#awscertificatemanagercertificateresourcerecordtypedef)
 - `ValidationDomain`: `str`
-- `ValidationEmails`: `List`\[`str`\]
+- `ValidationEmails`: `Sequence`\[`str`\]
 - `ValidationMethod`: `str`
 - `ValidationStatus`: `str`
 
@@ -950,7 +950,7 @@ from mypy_boto3_securityhub.type_defs import AwsCertificateManagerCertificateRen
 Optional fields:
 
 - `DomainValidationOptions`:
-  `List`\[[AwsCertificateManagerCertificateDomainValidationOptionTypeDef](./type_defs.md#awscertificatemanagercertificatedomainvalidationoptiontypedef)\]
+  `Sequence`\[[AwsCertificateManagerCertificateDomainValidationOptionTypeDef](./type_defs.md#awscertificatemanagercertificatedomainvalidationoptiontypedef)\]
 - `RenewalStatus`: `str`
 - `RenewalStatusReason`: `str`
 - `UpdatedAt`: `str`
@@ -986,7 +986,7 @@ from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionCacheBehav
 Optional fields:
 
 - `Items`:
-  `List`\[[AwsCloudFrontDistributionCacheBehaviorTypeDef](./type_defs.md#awscloudfrontdistributioncachebehaviortypedef)\]
+  `Sequence`\[[AwsCloudFrontDistributionCacheBehaviorTypeDef](./type_defs.md#awscloudfrontdistributioncachebehaviortypedef)\]
 
 ## AwsCloudFrontDistributionDefaultCacheBehaviorTypeDef
 
@@ -1044,7 +1044,7 @@ from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGrou
 
 Optional fields:
 
-- `Items`: `List`\[`int`\]
+- `Items`: `Sequence`\[`int`\]
 - `Quantity`: `int`
 
 ## AwsCloudFrontDistributionOriginGroupFailoverTypeDef
@@ -1078,7 +1078,7 @@ from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginGrou
 Optional fields:
 
 - `Items`:
-  `List`\[[AwsCloudFrontDistributionOriginGroupTypeDef](./type_defs.md#awscloudfrontdistributionorigingrouptypedef)\]
+  `Sequence`\[[AwsCloudFrontDistributionOriginGroupTypeDef](./type_defs.md#awscloudfrontdistributionorigingrouptypedef)\]
 
 ## AwsCloudFrontDistributionOriginItemTypeDef
 
@@ -1113,7 +1113,7 @@ from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionOriginsTyp
 Optional fields:
 
 - `Items`:
-  `List`\[[AwsCloudFrontDistributionOriginItemTypeDef](./type_defs.md#awscloudfrontdistributionoriginitemtypedef)\]
+  `Sequence`\[[AwsCloudFrontDistributionOriginItemTypeDef](./type_defs.md#awscloudfrontdistributionoriginitemtypedef)\]
 
 ## AwsCloudTrailTrailDetailsTypeDef
 
@@ -1204,8 +1204,8 @@ from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectVpcConfigTypeDef
 Optional fields:
 
 - `VpcId`: `str`
-- `Subnets`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## AwsCorsConfigurationTypeDef
 
@@ -1215,12 +1215,12 @@ from mypy_boto3_securityhub.type_defs import AwsCorsConfigurationTypeDef
 
 Optional fields:
 
-- `AllowOrigins`: `List`\[`str`\]
+- `AllowOrigins`: `Sequence`\[`str`\]
 - `AllowCredentials`: `bool`
-- `ExposeHeaders`: `List`\[`str`\]
+- `ExposeHeaders`: `Sequence`\[`str`\]
 - `MaxAge`: `int`
-- `AllowMethods`: `List`\[`str`\]
-- `AllowHeaders`: `List`\[`str`\]
+- `AllowMethods`: `Sequence`\[`str`\]
+- `AllowHeaders`: `Sequence`\[`str`\]
 
 ## AwsDynamoDbTableAttributeDefinitionTypeDef
 
@@ -1253,24 +1253,24 @@ from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableDetailsTypeDef
 Optional fields:
 
 - `AttributeDefinitions`:
-  `List`\[[AwsDynamoDbTableAttributeDefinitionTypeDef](./type_defs.md#awsdynamodbtableattributedefinitiontypedef)\]
+  `Sequence`\[[AwsDynamoDbTableAttributeDefinitionTypeDef](./type_defs.md#awsdynamodbtableattributedefinitiontypedef)\]
 - `BillingModeSummary`:
   [AwsDynamoDbTableBillingModeSummaryTypeDef](./type_defs.md#awsdynamodbtablebillingmodesummarytypedef)
 - `CreationDateTime`: `str`
 - `GlobalSecondaryIndexes`:
-  `List`\[[AwsDynamoDbTableGlobalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtableglobalsecondaryindextypedef)\]
+  `Sequence`\[[AwsDynamoDbTableGlobalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtableglobalsecondaryindextypedef)\]
 - `GlobalTableVersion`: `str`
 - `ItemCount`: `int`
 - `KeySchema`:
-  `List`\[[AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef)\]
+  `Sequence`\[[AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef)\]
 - `LatestStreamArn`: `str`
 - `LatestStreamLabel`: `str`
 - `LocalSecondaryIndexes`:
-  `List`\[[AwsDynamoDbTableLocalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtablelocalsecondaryindextypedef)\]
+  `Sequence`\[[AwsDynamoDbTableLocalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtablelocalsecondaryindextypedef)\]
 - `ProvisionedThroughput`:
   [AwsDynamoDbTableProvisionedThroughputTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputtypedef)
 - `Replicas`:
-  `List`\[[AwsDynamoDbTableReplicaTypeDef](./type_defs.md#awsdynamodbtablereplicatypedef)\]
+  `Sequence`\[[AwsDynamoDbTableReplicaTypeDef](./type_defs.md#awsdynamodbtablereplicatypedef)\]
 - `RestoreSummary`:
   [AwsDynamoDbTableRestoreSummaryTypeDef](./type_defs.md#awsdynamodbtablerestoresummarytypedef)
 - `SseDescription`:
@@ -1297,7 +1297,7 @@ Optional fields:
 - `IndexStatus`: `str`
 - `ItemCount`: `int`
 - `KeySchema`:
-  `List`\[[AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef)\]
+  `Sequence`\[[AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef)\]
 - `Projection`:
   [AwsDynamoDbTableProjectionTypeDef](./type_defs.md#awsdynamodbtableprojectiontypedef)
 - `ProvisionedThroughput`:
@@ -1325,7 +1325,7 @@ Optional fields:
 - `IndexArn`: `str`
 - `IndexName`: `str`
 - `KeySchema`:
-  `List`\[[AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef)\]
+  `Sequence`\[[AwsDynamoDbTableKeySchemaTypeDef](./type_defs.md#awsdynamodbtablekeyschematypedef)\]
 - `Projection`:
   [AwsDynamoDbTableProjectionTypeDef](./type_defs.md#awsdynamodbtableprojectiontypedef)
 
@@ -1337,7 +1337,7 @@ from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableProjectionTypeDef
 
 Optional fields:
 
-- `NonKeyAttributes`: `List`\[`str`\]
+- `NonKeyAttributes`: `Sequence`\[`str`\]
 - `ProjectionType`: `str`
 
 ## AwsDynamoDbTableProvisionedThroughputOverrideTypeDef
@@ -1385,7 +1385,7 @@ from mypy_boto3_securityhub.type_defs import AwsDynamoDbTableReplicaTypeDef
 Optional fields:
 
 - `GlobalSecondaryIndexes`:
-  `List`\[[AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtablereplicaglobalsecondaryindextypedef)\]
+  `Sequence`\[[AwsDynamoDbTableReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#awsdynamodbtablereplicaglobalsecondaryindextypedef)\]
 - `KmsMasterKeyId`: `str`
 - `ProvisionedThroughputOverride`:
   [AwsDynamoDbTableProvisionedThroughputOverrideTypeDef](./type_defs.md#awsdynamodbtableprovisionedthroughputoverridetypedef)
@@ -1459,15 +1459,15 @@ Optional fields:
 
 - `Type`: `str`
 - `ImageId`: `str`
-- `IpV4Addresses`: `List`\[`str`\]
-- `IpV6Addresses`: `List`\[`str`\]
+- `IpV4Addresses`: `Sequence`\[`str`\]
+- `IpV6Addresses`: `Sequence`\[`str`\]
 - `KeyName`: `str`
 - `IamInstanceProfileArn`: `str`
 - `VpcId`: `str`
 - `SubnetId`: `str`
 - `LaunchedAt`: `str`
 - `NetworkInterfaces`:
-  `List`\[[AwsEc2InstanceNetworkInterfacesDetailsTypeDef](./type_defs.md#awsec2instancenetworkinterfacesdetailstypedef)\]
+  `Sequence`\[[AwsEc2InstanceNetworkInterfacesDetailsTypeDef](./type_defs.md#awsec2instancenetworkinterfacesdetailstypedef)\]
 
 ## AwsEc2InstanceNetworkInterfacesDetailsTypeDef
 
@@ -1504,9 +1504,9 @@ Optional fields:
 - `OwnerId`: `str`
 - `VpcId`: `str`
 - `Associations`:
-  `List`\[[AwsEc2NetworkAclAssociationTypeDef](./type_defs.md#awsec2networkaclassociationtypedef)\]
+  `Sequence`\[[AwsEc2NetworkAclAssociationTypeDef](./type_defs.md#awsec2networkaclassociationtypedef)\]
 - `Entries`:
-  `List`\[[AwsEc2NetworkAclEntryTypeDef](./type_defs.md#awsec2networkaclentrytypedef)\]
+  `Sequence`\[[AwsEc2NetworkAclEntryTypeDef](./type_defs.md#awsec2networkaclentrytypedef)\]
 
 ## AwsEc2NetworkAclEntryTypeDef
 
@@ -1553,12 +1553,12 @@ Optional fields:
   [AwsEc2NetworkInterfaceAttachmentTypeDef](./type_defs.md#awsec2networkinterfaceattachmenttypedef)
 - `NetworkInterfaceId`: `str`
 - `SecurityGroups`:
-  `List`\[[AwsEc2NetworkInterfaceSecurityGroupTypeDef](./type_defs.md#awsec2networkinterfacesecuritygrouptypedef)\]
+  `Sequence`\[[AwsEc2NetworkInterfaceSecurityGroupTypeDef](./type_defs.md#awsec2networkinterfacesecuritygrouptypedef)\]
 - `SourceDestCheck`: `bool`
 - `IpV6Addresses`:
-  `List`\[[AwsEc2NetworkInterfaceIpV6AddressDetailTypeDef](./type_defs.md#awsec2networkinterfaceipv6addressdetailtypedef)\]
+  `Sequence`\[[AwsEc2NetworkInterfaceIpV6AddressDetailTypeDef](./type_defs.md#awsec2networkinterfaceipv6addressdetailtypedef)\]
 - `PrivateIpAddresses`:
-  `List`\[[AwsEc2NetworkInterfacePrivateIpAddressDetailTypeDef](./type_defs.md#awsec2networkinterfaceprivateipaddressdetailtypedef)\]
+  `Sequence`\[[AwsEc2NetworkInterfacePrivateIpAddressDetailTypeDef](./type_defs.md#awsec2networkinterfaceprivateipaddressdetailtypedef)\]
 - `PublicDnsName`: `str`
 - `PublicIp`: `str`
 
@@ -1607,9 +1607,9 @@ Optional fields:
 - `OwnerId`: `str`
 - `VpcId`: `str`
 - `IpPermissions`:
-  `List`\[[AwsEc2SecurityGroupIpPermissionTypeDef](./type_defs.md#awsec2securitygroupippermissiontypedef)\]
+  `Sequence`\[[AwsEc2SecurityGroupIpPermissionTypeDef](./type_defs.md#awsec2securitygroupippermissiontypedef)\]
 - `IpPermissionsEgress`:
-  `List`\[[AwsEc2SecurityGroupIpPermissionTypeDef](./type_defs.md#awsec2securitygroupippermissiontypedef)\]
+  `Sequence`\[[AwsEc2SecurityGroupIpPermissionTypeDef](./type_defs.md#awsec2securitygroupippermissiontypedef)\]
 
 ## AwsEc2SecurityGroupIpPermissionTypeDef
 
@@ -1623,13 +1623,13 @@ Optional fields:
 - `FromPort`: `int`
 - `ToPort`: `int`
 - `UserIdGroupPairs`:
-  `List`\[[AwsEc2SecurityGroupUserIdGroupPairTypeDef](./type_defs.md#awsec2securitygroupuseridgrouppairtypedef)\]
+  `Sequence`\[[AwsEc2SecurityGroupUserIdGroupPairTypeDef](./type_defs.md#awsec2securitygroupuseridgrouppairtypedef)\]
 - `IpRanges`:
-  `List`\[[AwsEc2SecurityGroupIpRangeTypeDef](./type_defs.md#awsec2securitygroupiprangetypedef)\]
+  `Sequence`\[[AwsEc2SecurityGroupIpRangeTypeDef](./type_defs.md#awsec2securitygroupiprangetypedef)\]
 - `Ipv6Ranges`:
-  `List`\[[AwsEc2SecurityGroupIpv6RangeTypeDef](./type_defs.md#awsec2securitygroupipv6rangetypedef)\]
+  `Sequence`\[[AwsEc2SecurityGroupIpv6RangeTypeDef](./type_defs.md#awsec2securitygroupipv6rangetypedef)\]
 - `PrefixListIds`:
-  `List`\[[AwsEc2SecurityGroupPrefixListIdTypeDef](./type_defs.md#awsec2securitygroupprefixlistidtypedef)\]
+  `Sequence`\[[AwsEc2SecurityGroupPrefixListIdTypeDef](./type_defs.md#awsec2securitygroupprefixlistidtypedef)\]
 
 ## AwsEc2SecurityGroupIpRangeTypeDef
 
@@ -1697,7 +1697,7 @@ Optional fields:
 - `SubnetId`: `str`
 - `VpcId`: `str`
 - `Ipv6CidrBlockAssociationSet`:
-  `List`\[[Ipv6CidrBlockAssociationTypeDef](./type_defs.md#ipv6cidrblockassociationtypedef)\]
+  `Sequence`\[[Ipv6CidrBlockAssociationTypeDef](./type_defs.md#ipv6cidrblockassociationtypedef)\]
 
 ## AwsEc2VolumeAttachmentTypeDef
 
@@ -1727,7 +1727,7 @@ Optional fields:
 - `Status`: `str`
 - `KmsKeyId`: `str`
 - `Attachments`:
-  `List`\[[AwsEc2VolumeAttachmentTypeDef](./type_defs.md#awsec2volumeattachmenttypedef)\]
+  `Sequence`\[[AwsEc2VolumeAttachmentTypeDef](./type_defs.md#awsec2volumeattachmenttypedef)\]
 
 ## AwsEc2VpcDetailsTypeDef
 
@@ -1738,9 +1738,9 @@ from mypy_boto3_securityhub.type_defs import AwsEc2VpcDetailsTypeDef
 Optional fields:
 
 - `CidrBlockAssociationSet`:
-  `List`\[[CidrBlockAssociationTypeDef](./type_defs.md#cidrblockassociationtypedef)\]
+  `Sequence`\[[CidrBlockAssociationTypeDef](./type_defs.md#cidrblockassociationtypedef)\]
 - `Ipv6CidrBlockAssociationSet`:
-  `List`\[[Ipv6CidrBlockAssociationTypeDef](./type_defs.md#ipv6cidrblockassociationtypedef)\]
+  `Sequence`\[[Ipv6CidrBlockAssociationTypeDef](./type_defs.md#ipv6cidrblockassociationtypedef)\]
 - `DhcpOptionsId`: `str`
 - `State`: `str`
 
@@ -1760,11 +1760,11 @@ Optional fields:
 - `VpnGatewayId`: `str`
 - `Category`: `str`
 - `VgwTelemetry`:
-  `List`\[[AwsEc2VpnConnectionVgwTelemetryDetailsTypeDef](./type_defs.md#awsec2vpnconnectionvgwtelemetrydetailstypedef)\]
+  `Sequence`\[[AwsEc2VpnConnectionVgwTelemetryDetailsTypeDef](./type_defs.md#awsec2vpnconnectionvgwtelemetrydetailstypedef)\]
 - `Options`:
   [AwsEc2VpnConnectionOptionsDetailsTypeDef](./type_defs.md#awsec2vpnconnectionoptionsdetailstypedef)
 - `Routes`:
-  `List`\[[AwsEc2VpnConnectionRoutesDetailsTypeDef](./type_defs.md#awsec2vpnconnectionroutesdetailstypedef)\]
+  `Sequence`\[[AwsEc2VpnConnectionRoutesDetailsTypeDef](./type_defs.md#awsec2vpnconnectionroutesdetailstypedef)\]
 - `TransitGatewayId`: `str`
 
 ## AwsEc2VpnConnectionOptionsDetailsTypeDef
@@ -1777,7 +1777,7 @@ Optional fields:
 
 - `StaticRoutesOnly`: `bool`
 - `TunnelOptions`:
-  `List`\[[AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef](./type_defs.md#awsec2vpnconnectionoptionstunneloptionsdetailstypedef)\]
+  `Sequence`\[[AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef](./type_defs.md#awsec2vpnconnectionoptionstunneloptionsdetailstypedef)\]
 
 ## AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef
 
@@ -1788,15 +1788,15 @@ from mypy_boto3_securityhub.type_defs import AwsEc2VpnConnectionOptionsTunnelOpt
 Optional fields:
 
 - `DpdTimeoutSeconds`: `int`
-- `IkeVersions`: `List`\[`str`\]
+- `IkeVersions`: `Sequence`\[`str`\]
 - `OutsideIpAddress`: `str`
-- `Phase1DhGroupNumbers`: `List`\[`int`\]
-- `Phase1EncryptionAlgorithms`: `List`\[`str`\]
-- `Phase1IntegrityAlgorithms`: `List`\[`str`\]
+- `Phase1DhGroupNumbers`: `Sequence`\[`int`\]
+- `Phase1EncryptionAlgorithms`: `Sequence`\[`str`\]
+- `Phase1IntegrityAlgorithms`: `Sequence`\[`str`\]
 - `Phase1LifetimeSeconds`: `int`
-- `Phase2DhGroupNumbers`: `List`\[`int`\]
-- `Phase2EncryptionAlgorithms`: `List`\[`str`\]
-- `Phase2IntegrityAlgorithms`: `List`\[`str`\]
+- `Phase2DhGroupNumbers`: `Sequence`\[`int`\]
+- `Phase2EncryptionAlgorithms`: `Sequence`\[`str`\]
+- `Phase2IntegrityAlgorithms`: `Sequence`\[`str`\]
 - `Phase2LifetimeSeconds`: `int`
 - `PreSharedKey`: `str`
 - `RekeyFuzzPercentage`: `int`
@@ -1842,7 +1842,7 @@ Optional fields:
 - `RepositoryName`: `str`
 - `Architecture`: `str`
 - `ImageDigest`: `str`
-- `ImageTags`: `List`\[`str`\]
+- `ImageTags`: `Sequence`\[`str`\]
 - `ImagePublishedAt`: `str`
 
 ## AwsEcsClusterClusterSettingsDetailsTypeDef
@@ -1914,13 +1914,13 @@ from mypy_boto3_securityhub.type_defs import AwsEcsClusterDetailsTypeDef
 
 Optional fields:
 
-- `CapacityProviders`: `List`\[`str`\]
+- `CapacityProviders`: `Sequence`\[`str`\]
 - `ClusterSettings`:
-  `List`\[[AwsEcsClusterClusterSettingsDetailsTypeDef](./type_defs.md#awsecsclusterclustersettingsdetailstypedef)\]
+  `Sequence`\[[AwsEcsClusterClusterSettingsDetailsTypeDef](./type_defs.md#awsecsclusterclustersettingsdetailstypedef)\]
 - `Configuration`:
   [AwsEcsClusterConfigurationDetailsTypeDef](./type_defs.md#awsecsclusterconfigurationdetailstypedef)
 - `DefaultCapacityProviderStrategy`:
-  `List`\[[AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef](./type_defs.md#awsecsclusterdefaultcapacityproviderstrategydetailstypedef)\]
+  `Sequence`\[[AwsEcsClusterDefaultCapacityProviderStrategyDetailsTypeDef](./type_defs.md#awsecsclusterdefaultcapacityproviderstrategydetailstypedef)\]
 
 ## AwsEcsServiceCapacityProviderStrategyDetailsTypeDef
 
@@ -1977,7 +1977,7 @@ from mypy_boto3_securityhub.type_defs import AwsEcsServiceDetailsTypeDef
 Optional fields:
 
 - `CapacityProviderStrategy`:
-  `List`\[[AwsEcsServiceCapacityProviderStrategyDetailsTypeDef](./type_defs.md#awsecsservicecapacityproviderstrategydetailstypedef)\]
+  `Sequence`\[[AwsEcsServiceCapacityProviderStrategyDetailsTypeDef](./type_defs.md#awsecsservicecapacityproviderstrategydetailstypedef)\]
 - `Cluster`: `str`
 - `DeploymentConfiguration`:
   [AwsEcsServiceDeploymentConfigurationDetailsTypeDef](./type_defs.md#awsecsservicedeploymentconfigurationdetailstypedef)
@@ -1989,14 +1989,14 @@ Optional fields:
 - `HealthCheckGracePeriodSeconds`: `int`
 - `LaunchType`: `str`
 - `LoadBalancers`:
-  `List`\[[AwsEcsServiceLoadBalancersDetailsTypeDef](./type_defs.md#awsecsserviceloadbalancersdetailstypedef)\]
+  `Sequence`\[[AwsEcsServiceLoadBalancersDetailsTypeDef](./type_defs.md#awsecsserviceloadbalancersdetailstypedef)\]
 - `Name`: `str`
 - `NetworkConfiguration`:
   [AwsEcsServiceNetworkConfigurationDetailsTypeDef](./type_defs.md#awsecsservicenetworkconfigurationdetailstypedef)
 - `PlacementConstraints`:
-  `List`\[[AwsEcsServicePlacementConstraintsDetailsTypeDef](./type_defs.md#awsecsserviceplacementconstraintsdetailstypedef)\]
+  `Sequence`\[[AwsEcsServicePlacementConstraintsDetailsTypeDef](./type_defs.md#awsecsserviceplacementconstraintsdetailstypedef)\]
 - `PlacementStrategies`:
-  `List`\[[AwsEcsServicePlacementStrategiesDetailsTypeDef](./type_defs.md#awsecsserviceplacementstrategiesdetailstypedef)\]
+  `Sequence`\[[AwsEcsServicePlacementStrategiesDetailsTypeDef](./type_defs.md#awsecsserviceplacementstrategiesdetailstypedef)\]
 - `PlatformVersion`: `str`
 - `PropagateTags`: `str`
 - `Role`: `str`
@@ -2004,7 +2004,7 @@ Optional fields:
 - `ServiceArn`: `str`
 - `ServiceName`: `str`
 - `ServiceRegistries`:
-  `List`\[[AwsEcsServiceServiceRegistriesDetailsTypeDef](./type_defs.md#awsecsserviceserviceregistriesdetailstypedef)\]
+  `Sequence`\[[AwsEcsServiceServiceRegistriesDetailsTypeDef](./type_defs.md#awsecsserviceserviceregistriesdetailstypedef)\]
 - `TaskDefinition`: `str`
 
 ## AwsEcsServiceLoadBalancersDetailsTypeDef
@@ -2029,8 +2029,8 @@ from mypy_boto3_securityhub.type_defs import AwsEcsServiceNetworkConfigurationAw
 Optional fields:
 
 - `AssignPublicIp`: `str`
-- `SecurityGroups`: `List`\[`str`\]
-- `Subnets`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
 
 ## AwsEcsServiceNetworkConfigurationDetailsTypeDef
 
@@ -2097,23 +2097,23 @@ from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefini
 
 Optional fields:
 
-- `Command`: `List`\[`str`\]
+- `Command`: `Sequence`\[`str`\]
 - `Cpu`: `int`
 - `DependsOn`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsdependsondetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsDependsOnDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsdependsondetailstypedef)\]
 - `DisableNetworking`: `bool`
-- `DnsSearchDomains`: `List`\[`str`\]
-- `DnsServers`: `List`\[`str`\]
-- `DockerLabels`: `Dict`\[`str`, `str`\]
-- `DockerSecurityOptions`: `List`\[`str`\]
-- `EntryPoint`: `List`\[`str`\]
+- `DnsSearchDomains`: `Sequence`\[`str`\]
+- `DnsServers`: `Sequence`\[`str`\]
+- `DockerLabels`: `Mapping`\[`str`, `str`\]
+- `DockerSecurityOptions`: `Sequence`\[`str`\]
+- `EntryPoint`: `Sequence`\[`str`\]
 - `Environment`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsenvironmentdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsenvironmentdetailstypedef)\]
 - `EnvironmentFiles`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsenvironmentfilesdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsEnvironmentFilesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsenvironmentfilesdetailstypedef)\]
 - `Essential`: `bool`
 - `ExtraHosts`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsextrahostsdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsExtraHostsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsextrahostsdetailstypedef)\]
 - `FirelensConfiguration`:
   [AwsEcsTaskDefinitionContainerDefinitionsFirelensConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsfirelensconfigurationdetailstypedef)
 - `HealthCheck`:
@@ -2121,7 +2121,7 @@ Optional fields:
 - `Hostname`: `str`
 - `Image`: `str`
 - `Interactive`: `bool`
-- `Links`: `List`\[`str`\]
+- `Links`: `Sequence`\[`str`\]
 - `LinuxParameters`:
   [AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparametersdetailstypedef)
 - `LogConfiguration`:
@@ -2129,28 +2129,28 @@ Optional fields:
 - `Memory`: `int`
 - `MemoryReservation`: `int`
 - `MountPoints`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsmountpointsdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsMountPointsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsmountpointsdetailstypedef)\]
 - `Name`: `str`
 - `PortMappings`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsportmappingsdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsPortMappingsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsportmappingsdetailstypedef)\]
 - `Privileged`: `bool`
 - `PseudoTerminal`: `bool`
 - `ReadonlyRootFilesystem`: `bool`
 - `RepositoryCredentials`:
   [AwsEcsTaskDefinitionContainerDefinitionsRepositoryCredentialsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsrepositorycredentialsdetailstypedef)
 - `ResourceRequirements`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsresourcerequirementsdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsResourceRequirementsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsresourcerequirementsdetailstypedef)\]
 - `Secrets`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsSecretsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionssecretsdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsSecretsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionssecretsdetailstypedef)\]
 - `StartTimeout`: `int`
 - `StopTimeout`: `int`
 - `SystemControls`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionssystemcontrolsdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsSystemControlsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionssystemcontrolsdetailstypedef)\]
 - `Ulimits`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsulimitsdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsUlimitsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsulimitsdetailstypedef)\]
 - `User`: `str`
 - `VolumesFrom`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsvolumesfromdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsVolumesFromDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsvolumesfromdetailstypedef)\]
 - `WorkingDirectory`: `str`
 
 ## AwsEcsTaskDefinitionContainerDefinitionsEnvironmentDetailsTypeDef
@@ -2194,7 +2194,7 @@ from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefini
 
 Optional fields:
 
-- `Options`: `Dict`\[`str`, `str`\]
+- `Options`: `Mapping`\[`str`, `str`\]
 - `Type`: `str`
 
 ## AwsEcsTaskDefinitionContainerDefinitionsHealthCheckDetailsTypeDef
@@ -2205,7 +2205,7 @@ from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefini
 
 Optional fields:
 
-- `Command`: `List`\[`str`\]
+- `Command`: `Sequence`\[`str`\]
 - `Interval`: `int`
 - `Retries`: `int`
 - `StartPeriod`: `int`
@@ -2219,8 +2219,8 @@ from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefini
 
 Optional fields:
 
-- `Add`: `List`\[`str`\]
-- `Drop`: `List`\[`str`\]
+- `Add`: `Sequence`\[`str`\]
+- `Drop`: `Sequence`\[`str`\]
 
 ## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDetailsTypeDef
 
@@ -2233,13 +2233,13 @@ Optional fields:
 - `Capabilities`:
   [AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersCapabilitiesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparameterscapabilitiesdetailstypedef)
 - `Devices`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparametersdevicesdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparametersdevicesdetailstypedef)\]
 - `InitProcessEnabled`: `bool`
 - `MaxSwap`: `int`
 - `SharedMemorySize`: `int`
 - `Swappiness`: `int`
 - `Tmpfs`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparameterstmpfsdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslinuxparameterstmpfsdetailstypedef)\]
 
 ## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersDevicesDetailsTypeDef
 
@@ -2251,7 +2251,7 @@ Optional fields:
 
 - `ContainerPath`: `str`
 - `HostPath`: `str`
-- `Permissions`: `List`\[`str`\]
+- `Permissions`: `Sequence`\[`str`\]
 
 ## AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetailsTypeDef
 
@@ -2262,7 +2262,7 @@ from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefini
 Optional fields:
 
 - `ContainerPath`: `str`
-- `MountOptions`: `List`\[`str`\]
+- `MountOptions`: `Sequence`\[`str`\]
 - `Size`: `int`
 
 ## AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationDetailsTypeDef
@@ -2274,9 +2274,9 @@ from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionContainerDefini
 Optional fields:
 
 - `LogDriver`: `str`
-- `Options`: `Dict`\[`str`, `str`\]
+- `Options`: `Mapping`\[`str`, `str`\]
 - `SecretOptions`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslogconfigurationsecretoptionsdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionslogconfigurationsecretoptionsdetailstypedef)\]
 
 ## AwsEcsTaskDefinitionContainerDefinitionsLogConfigurationSecretOptionsDetailsTypeDef
 
@@ -2388,24 +2388,24 @@ from mypy_boto3_securityhub.type_defs import AwsEcsTaskDefinitionDetailsTypeDef
 Optional fields:
 
 - `ContainerDefinitions`:
-  `List`\[[AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionContainerDefinitionsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioncontainerdefinitionsdetailstypedef)\]
 - `Cpu`: `str`
 - `ExecutionRoleArn`: `str`
 - `Family`: `str`
 - `InferenceAccelerators`:
-  `List`\[[AwsEcsTaskDefinitionInferenceAcceleratorsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioninferenceacceleratorsdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionInferenceAcceleratorsDetailsTypeDef](./type_defs.md#awsecstaskdefinitioninferenceacceleratorsdetailstypedef)\]
 - `IpcMode`: `str`
 - `Memory`: `str`
 - `NetworkMode`: `str`
 - `PidMode`: `str`
 - `PlacementConstraints`:
-  `List`\[[AwsEcsTaskDefinitionPlacementConstraintsDetailsTypeDef](./type_defs.md#awsecstaskdefinitionplacementconstraintsdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionPlacementConstraintsDetailsTypeDef](./type_defs.md#awsecstaskdefinitionplacementconstraintsdetailstypedef)\]
 - `ProxyConfiguration`:
   [AwsEcsTaskDefinitionProxyConfigurationDetailsTypeDef](./type_defs.md#awsecstaskdefinitionproxyconfigurationdetailstypedef)
-- `RequiresCompatibilities`: `List`\[`str`\]
+- `RequiresCompatibilities`: `Sequence`\[`str`\]
 - `TaskRoleArn`: `str`
 - `Volumes`:
-  `List`\[[AwsEcsTaskDefinitionVolumesDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionVolumesDetailsTypeDef](./type_defs.md#awsecstaskdefinitionvolumesdetailstypedef)\]
 
 ## AwsEcsTaskDefinitionInferenceAcceleratorsDetailsTypeDef
 
@@ -2439,7 +2439,7 @@ Optional fields:
 
 - `ContainerName`: `str`
 - `ProxyConfigurationProperties`:
-  `List`\[[AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsTypeDef](./type_defs.md#awsecstaskdefinitionproxyconfigurationproxyconfigurationpropertiesdetailstypedef)\]
+  `Sequence`\[[AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsTypeDef](./type_defs.md#awsecstaskdefinitionproxyconfigurationproxyconfigurationpropertiesdetailstypedef)\]
 - `Type`: `str`
 
 ## AwsEcsTaskDefinitionProxyConfigurationProxyConfigurationPropertiesDetailsTypeDef
@@ -2479,8 +2479,8 @@ Optional fields:
 
 - `Autoprovision`: `bool`
 - `Driver`: `str`
-- `DriverOpts`: `Dict`\[`str`, `str`\]
-- `Labels`: `Dict`\[`str`, `str`\]
+- `DriverOpts`: `Mapping`\[`str`, `str`\]
+- `Labels`: `Mapping`\[`str`, `str`\]
 - `Scope`: `str`
 
 ## AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef
@@ -2536,10 +2536,10 @@ Optional fields:
 - `EnvironmentArn`: `str`
 - `EnvironmentId`: `str`
 - `EnvironmentLinks`:
-  `List`\[[AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef](./type_defs.md#awselasticbeanstalkenvironmentenvironmentlinktypedef)\]
+  `Sequence`\[[AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef](./type_defs.md#awselasticbeanstalkenvironmentenvironmentlinktypedef)\]
 - `EnvironmentName`: `str`
 - `OptionSettings`:
-  `List`\[[AwsElasticBeanstalkEnvironmentOptionSettingTypeDef](./type_defs.md#awselasticbeanstalkenvironmentoptionsettingtypedef)\]
+  `Sequence`\[[AwsElasticBeanstalkEnvironmentOptionSettingTypeDef](./type_defs.md#awselasticbeanstalkenvironmentoptionsettingtypedef)\]
 - `PlatformArn`: `str`
 - `SolutionStackName`: `str`
 - `Status`: `str`
@@ -2597,7 +2597,7 @@ Optional fields:
 - `DomainId`: `str`
 - `DomainName`: `str`
 - `Endpoint`: `str`
-- `Endpoints`: `Dict`\[`str`, `str`\]
+- `Endpoints`: `Mapping`\[`str`, `str`\]
 - `ElasticsearchVersion`: `str`
 - `ElasticsearchClusterConfig`:
   [AwsElasticsearchDomainElasticsearchClusterConfigDetailsTypeDef](./type_defs.md#awselasticsearchdomainelasticsearchclusterconfigdetailstypedef)
@@ -2721,9 +2721,9 @@ from mypy_boto3_securityhub.type_defs import AwsElasticsearchDomainVPCOptionsTyp
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SubnetIds`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `VPCId`: `str`
 
 ## AwsElbAppCookieStickinessPolicyTypeDef
@@ -2787,7 +2787,7 @@ from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerBackendServerDesc
 Optional fields:
 
 - `InstancePort`: `int`
-- `PolicyNames`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
 
 ## AwsElbLoadBalancerConnectionDrainingTypeDef
 
@@ -2828,9 +2828,9 @@ from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerDetailsTypeDef
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `BackendServerDescriptions`:
-  `List`\[[AwsElbLoadBalancerBackendServerDescriptionTypeDef](./type_defs.md#awselbloadbalancerbackendserverdescriptiontypedef)\]
+  `Sequence`\[[AwsElbLoadBalancerBackendServerDescriptionTypeDef](./type_defs.md#awselbloadbalancerbackendserverdescriptiontypedef)\]
 - `CanonicalHostedZoneName`: `str`
 - `CanonicalHostedZoneNameID`: `str`
 - `CreatedTime`: `str`
@@ -2838,19 +2838,19 @@ Optional fields:
 - `HealthCheck`:
   [AwsElbLoadBalancerHealthCheckTypeDef](./type_defs.md#awselbloadbalancerhealthchecktypedef)
 - `Instances`:
-  `List`\[[AwsElbLoadBalancerInstanceTypeDef](./type_defs.md#awselbloadbalancerinstancetypedef)\]
+  `Sequence`\[[AwsElbLoadBalancerInstanceTypeDef](./type_defs.md#awselbloadbalancerinstancetypedef)\]
 - `ListenerDescriptions`:
-  `List`\[[AwsElbLoadBalancerListenerDescriptionTypeDef](./type_defs.md#awselbloadbalancerlistenerdescriptiontypedef)\]
+  `Sequence`\[[AwsElbLoadBalancerListenerDescriptionTypeDef](./type_defs.md#awselbloadbalancerlistenerdescriptiontypedef)\]
 - `LoadBalancerAttributes`:
   [AwsElbLoadBalancerAttributesTypeDef](./type_defs.md#awselbloadbalancerattributestypedef)
 - `LoadBalancerName`: `str`
 - `Policies`:
   [AwsElbLoadBalancerPoliciesTypeDef](./type_defs.md#awselbloadbalancerpoliciestypedef)
 - `Scheme`: `str`
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `SourceSecurityGroup`:
   [AwsElbLoadBalancerSourceSecurityGroupTypeDef](./type_defs.md#awselbloadbalancersourcesecuritygrouptypedef)
-- `Subnets`: `List`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
 - `VpcId`: `str`
 
 ## AwsElbLoadBalancerHealthCheckTypeDef
@@ -2887,7 +2887,7 @@ Optional fields:
 
 - `Listener`:
   [AwsElbLoadBalancerListenerTypeDef](./type_defs.md#awselbloadbalancerlistenertypedef)
-- `PolicyNames`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
 
 ## AwsElbLoadBalancerListenerTypeDef
 
@@ -2912,10 +2912,10 @@ from mypy_boto3_securityhub.type_defs import AwsElbLoadBalancerPoliciesTypeDef
 Optional fields:
 
 - `AppCookieStickinessPolicies`:
-  `List`\[[AwsElbAppCookieStickinessPolicyTypeDef](./type_defs.md#awselbappcookiestickinesspolicytypedef)\]
+  `Sequence`\[[AwsElbAppCookieStickinessPolicyTypeDef](./type_defs.md#awselbappcookiestickinesspolicytypedef)\]
 - `LbCookieStickinessPolicies`:
-  `List`\[[AwsElbLbCookieStickinessPolicyTypeDef](./type_defs.md#awselblbcookiestickinesspolicytypedef)\]
-- `OtherPolicies`: `List`\[`str`\]
+  `Sequence`\[[AwsElbLbCookieStickinessPolicyTypeDef](./type_defs.md#awselblbcookiestickinesspolicytypedef)\]
+- `OtherPolicies`: `Sequence`\[`str`\]
 
 ## AwsElbLoadBalancerSourceSecurityGroupTypeDef
 
@@ -2937,13 +2937,13 @@ from mypy_boto3_securityhub.type_defs import AwsElbv2LoadBalancerDetailsTypeDef
 Optional fields:
 
 - `AvailabilityZones`:
-  `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
+  `Sequence`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
 - `CanonicalHostedZoneId`: `str`
 - `CreatedTime`: `str`
 - `DNSName`: `str`
 - `IpAddressType`: `str`
 - `Scheme`: `str`
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `State`: [LoadBalancerStateTypeDef](./type_defs.md#loadbalancerstatetypedef)
 - `Type`: `str`
 - `VpcId`: `str`
@@ -3026,12 +3026,12 @@ from mypy_boto3_securityhub.type_defs import AwsIamGroupDetailsTypeDef
 Optional fields:
 
 - `AttachedManagedPolicies`:
-  `List`\[[AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef)\]
+  `Sequence`\[[AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef)\]
 - `CreateDate`: `str`
 - `GroupId`: `str`
 - `GroupName`: `str`
 - `GroupPolicyList`:
-  `List`\[[AwsIamGroupPolicyTypeDef](./type_defs.md#awsiamgrouppolicytypedef)\]
+  `Sequence`\[[AwsIamGroupPolicyTypeDef](./type_defs.md#awsiamgrouppolicytypedef)\]
 - `Path`: `str`
 
 ## AwsIamGroupPolicyTypeDef
@@ -3073,7 +3073,7 @@ Optional fields:
 - `InstanceProfileName`: `str`
 - `Path`: `str`
 - `Roles`:
-  `List`\[[AwsIamInstanceProfileRoleTypeDef](./type_defs.md#awsiaminstanceprofileroletypedef)\]
+  `Sequence`\[[AwsIamInstanceProfileRoleTypeDef](./type_defs.md#awsiaminstanceprofileroletypedef)\]
 
 ## AwsIamPermissionsBoundaryTypeDef
 
@@ -3104,7 +3104,7 @@ Optional fields:
 - `PolicyId`: `str`
 - `PolicyName`: `str`
 - `PolicyVersionList`:
-  `List`\[[AwsIamPolicyVersionTypeDef](./type_defs.md#awsiampolicyversiontypedef)\]
+  `Sequence`\[[AwsIamPolicyVersionTypeDef](./type_defs.md#awsiampolicyversiontypedef)\]
 - `UpdateDate`: `str`
 
 ## AwsIamPolicyVersionTypeDef
@@ -3129,16 +3129,16 @@ Optional fields:
 
 - `AssumeRolePolicyDocument`: `str`
 - `AttachedManagedPolicies`:
-  `List`\[[AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef)\]
+  `Sequence`\[[AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef)\]
 - `CreateDate`: `str`
 - `InstanceProfileList`:
-  `List`\[[AwsIamInstanceProfileTypeDef](./type_defs.md#awsiaminstanceprofiletypedef)\]
+  `Sequence`\[[AwsIamInstanceProfileTypeDef](./type_defs.md#awsiaminstanceprofiletypedef)\]
 - `PermissionsBoundary`:
   [AwsIamPermissionsBoundaryTypeDef](./type_defs.md#awsiampermissionsboundarytypedef)
 - `RoleId`: `str`
 - `RoleName`: `str`
 - `RolePolicyList`:
-  `List`\[[AwsIamRolePolicyTypeDef](./type_defs.md#awsiamrolepolicytypedef)\]
+  `Sequence`\[[AwsIamRolePolicyTypeDef](./type_defs.md#awsiamrolepolicytypedef)\]
 - `MaxSessionDuration`: `int`
 - `Path`: `str`
 
@@ -3161,16 +3161,16 @@ from mypy_boto3_securityhub.type_defs import AwsIamUserDetailsTypeDef
 Optional fields:
 
 - `AttachedManagedPolicies`:
-  `List`\[[AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef)\]
+  `Sequence`\[[AwsIamAttachedManagedPolicyTypeDef](./type_defs.md#awsiamattachedmanagedpolicytypedef)\]
 - `CreateDate`: `str`
-- `GroupList`: `List`\[`str`\]
+- `GroupList`: `Sequence`\[`str`\]
 - `Path`: `str`
 - `PermissionsBoundary`:
   [AwsIamPermissionsBoundaryTypeDef](./type_defs.md#awsiampermissionsboundarytypedef)
 - `UserId`: `str`
 - `UserName`: `str`
 - `UserPolicyList`:
-  `List`\[[AwsIamUserPolicyTypeDef](./type_defs.md#awsiamuserpolicytypedef)\]
+  `Sequence`\[[AwsIamUserPolicyTypeDef](./type_defs.md#awsiamuserpolicytypedef)\]
 
 ## AwsIamUserPolicyTypeDef
 
@@ -3242,7 +3242,7 @@ Optional fields:
 - `KmsKeyArn`: `str`
 - `LastModified`: `str`
 - `Layers`:
-  `List`\[[AwsLambdaFunctionLayerTypeDef](./type_defs.md#awslambdafunctionlayertypedef)\]
+  `Sequence`\[[AwsLambdaFunctionLayerTypeDef](./type_defs.md#awslambdafunctionlayertypedef)\]
 - `MasterArn`: `str`
 - `MemorySize`: `int`
 - `RevisionId`: `str`
@@ -3274,7 +3274,7 @@ from mypy_boto3_securityhub.type_defs import AwsLambdaFunctionEnvironmentTypeDef
 
 Optional fields:
 
-- `Variables`: `Dict`\[`str`, `str`\]
+- `Variables`: `Mapping`\[`str`, `str`\]
 - `Error`:
   [AwsLambdaFunctionEnvironmentErrorTypeDef](./type_defs.md#awslambdafunctionenvironmenterrortypedef)
 
@@ -3307,8 +3307,8 @@ from mypy_boto3_securityhub.type_defs import AwsLambdaFunctionVpcConfigTypeDef
 
 Optional fields:
 
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SubnetIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `VpcId`: `str`
 
 ## AwsLambdaLayerVersionDetailsTypeDef
@@ -3320,7 +3320,7 @@ from mypy_boto3_securityhub.type_defs import AwsLambdaLayerVersionDetailsTypeDef
 Optional fields:
 
 - `Version`: `int`
-- `CompatibleRuntimes`: `List`\[`str`\]
+- `CompatibleRuntimes`: `Sequence`\[`str`\]
 - `CreatedDate`: `str`
 
 ## AwsRdsDbClusterAssociatedRoleTypeDef
@@ -3343,13 +3343,13 @@ from mypy_boto3_securityhub.type_defs import AwsRdsDbClusterDetailsTypeDef
 Optional fields:
 
 - `AllocatedStorage`: `int`
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `BackupRetentionPeriod`: `int`
 - `DatabaseName`: `str`
 - `Status`: `str`
 - `Endpoint`: `str`
 - `ReaderEndpoint`: `str`
-- `CustomEndpoints`: `List`\[`str`\]
+- `CustomEndpoints`: `Sequence`\[`str`\]
 - `MultiAz`: `bool`
 - `Engine`: `str`
 - `EngineVersion`: `str`
@@ -3357,17 +3357,17 @@ Optional fields:
 - `MasterUsername`: `str`
 - `PreferredBackupWindow`: `str`
 - `PreferredMaintenanceWindow`: `str`
-- `ReadReplicaIdentifiers`: `List`\[`str`\]
+- `ReadReplicaIdentifiers`: `Sequence`\[`str`\]
 - `VpcSecurityGroups`:
-  `List`\[[AwsRdsDbInstanceVpcSecurityGroupTypeDef](./type_defs.md#awsrdsdbinstancevpcsecuritygrouptypedef)\]
+  `Sequence`\[[AwsRdsDbInstanceVpcSecurityGroupTypeDef](./type_defs.md#awsrdsdbinstancevpcsecuritygrouptypedef)\]
 - `HostedZoneId`: `str`
 - `StorageEncrypted`: `bool`
 - `KmsKeyId`: `str`
 - `DbClusterResourceId`: `str`
 - `AssociatedRoles`:
-  `List`\[[AwsRdsDbClusterAssociatedRoleTypeDef](./type_defs.md#awsrdsdbclusterassociatedroletypedef)\]
+  `Sequence`\[[AwsRdsDbClusterAssociatedRoleTypeDef](./type_defs.md#awsrdsdbclusterassociatedroletypedef)\]
 - `ClusterCreateTime`: `str`
-- `EnabledCloudWatchLogsExports`: `List`\[`str`\]
+- `EnabledCloudWatchLogsExports`: `Sequence`\[`str`\]
 - `EngineMode`: `str`
 - `DeletionProtection`: `bool`
 - `HttpEndpointEnabled`: `bool`
@@ -3375,14 +3375,14 @@ Optional fields:
 - `CopyTagsToSnapshot`: `bool`
 - `CrossAccountClone`: `bool`
 - `DomainMemberships`:
-  `List`\[[AwsRdsDbDomainMembershipTypeDef](./type_defs.md#awsrdsdbdomainmembershiptypedef)\]
+  `Sequence`\[[AwsRdsDbDomainMembershipTypeDef](./type_defs.md#awsrdsdbdomainmembershiptypedef)\]
 - `DbClusterParameterGroup`: `str`
 - `DbSubnetGroup`: `str`
 - `DbClusterOptionGroupMemberships`:
-  `List`\[[AwsRdsDbClusterOptionGroupMembershipTypeDef](./type_defs.md#awsrdsdbclusteroptiongroupmembershiptypedef)\]
+  `Sequence`\[[AwsRdsDbClusterOptionGroupMembershipTypeDef](./type_defs.md#awsrdsdbclusteroptiongroupmembershiptypedef)\]
 - `DbClusterIdentifier`: `str`
 - `DbClusterMembers`:
-  `List`\[[AwsRdsDbClusterMemberTypeDef](./type_defs.md#awsrdsdbclustermembertypedef)\]
+  `Sequence`\[[AwsRdsDbClusterMemberTypeDef](./type_defs.md#awsrdsdbclustermembertypedef)\]
 - `IamDatabaseAuthenticationEnabled`: `bool`
 
 ## AwsRdsDbClusterMemberTypeDef
@@ -3417,7 +3417,7 @@ from mypy_boto3_securityhub.type_defs import AwsRdsDbClusterSnapshotDetailsTypeD
 
 Optional fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `SnapshotCreateTime`: `str`
 - `Engine`: `str`
 - `AllocatedStorage`: `int`
@@ -3470,7 +3470,7 @@ from mypy_boto3_securityhub.type_defs import AwsRdsDbInstanceDetailsTypeDef
 Optional fields:
 
 - `AssociatedRoles`:
-  `List`\[[AwsRdsDbInstanceAssociatedRoleTypeDef](./type_defs.md#awsrdsdbinstanceassociatedroletypedef)\]
+  `Sequence`\[[AwsRdsDbInstanceAssociatedRoleTypeDef](./type_defs.md#awsrdsdbinstanceassociatedroletypedef)\]
 - `CACertificateIdentifier`: `str`
 - `DBClusterIdentifier`: `str`
 - `DBInstanceIdentifier`: `str`
@@ -3490,7 +3490,7 @@ Optional fields:
 - `StorageEncrypted`: `bool`
 - `TdeCredentialArn`: `str`
 - `VpcSecurityGroups`:
-  `List`\[[AwsRdsDbInstanceVpcSecurityGroupTypeDef](./type_defs.md#awsrdsdbinstancevpcsecuritygrouptypedef)\]
+  `Sequence`\[[AwsRdsDbInstanceVpcSecurityGroupTypeDef](./type_defs.md#awsrdsdbinstancevpcsecuritygrouptypedef)\]
 - `MultiAz`: `bool`
 - `EnhancedMonitoringResourceArn`: `str`
 - `DbInstanceStatus`: `str`
@@ -3498,9 +3498,9 @@ Optional fields:
 - `AllocatedStorage`: `int`
 - `PreferredBackupWindow`: `str`
 - `BackupRetentionPeriod`: `int`
-- `DbSecurityGroups`: `List`\[`str`\]
+- `DbSecurityGroups`: `Sequence`\[`str`\]
 - `DbParameterGroups`:
-  `List`\[[AwsRdsDbParameterGroupTypeDef](./type_defs.md#awsrdsdbparametergrouptypedef)\]
+  `Sequence`\[[AwsRdsDbParameterGroupTypeDef](./type_defs.md#awsrdsdbparametergrouptypedef)\]
 - `AvailabilityZone`: `str`
 - `DbSubnetGroup`:
   [AwsRdsDbSubnetGroupTypeDef](./type_defs.md#awsrdsdbsubnetgrouptypedef)
@@ -3510,19 +3510,19 @@ Optional fields:
 - `LatestRestorableTime`: `str`
 - `AutoMinorVersionUpgrade`: `bool`
 - `ReadReplicaSourceDBInstanceIdentifier`: `str`
-- `ReadReplicaDBInstanceIdentifiers`: `List`\[`str`\]
-- `ReadReplicaDBClusterIdentifiers`: `List`\[`str`\]
+- `ReadReplicaDBInstanceIdentifiers`: `Sequence`\[`str`\]
+- `ReadReplicaDBClusterIdentifiers`: `Sequence`\[`str`\]
 - `LicenseModel`: `str`
 - `Iops`: `int`
 - `OptionGroupMemberships`:
-  `List`\[[AwsRdsDbOptionGroupMembershipTypeDef](./type_defs.md#awsrdsdboptiongroupmembershiptypedef)\]
+  `Sequence`\[[AwsRdsDbOptionGroupMembershipTypeDef](./type_defs.md#awsrdsdboptiongroupmembershiptypedef)\]
 - `CharacterSetName`: `str`
 - `SecondaryAvailabilityZone`: `str`
 - `StatusInfos`:
-  `List`\[[AwsRdsDbStatusInfoTypeDef](./type_defs.md#awsrdsdbstatusinfotypedef)\]
+  `Sequence`\[[AwsRdsDbStatusInfoTypeDef](./type_defs.md#awsrdsdbstatusinfotypedef)\]
 - `StorageType`: `str`
 - `DomainMemberships`:
-  `List`\[[AwsRdsDbDomainMembershipTypeDef](./type_defs.md#awsrdsdbdomainmembershiptypedef)\]
+  `Sequence`\[[AwsRdsDbDomainMembershipTypeDef](./type_defs.md#awsrdsdbdomainmembershiptypedef)\]
 - `CopyTagsToSnapshot`: `bool`
 - `MonitoringInterval`: `int`
 - `MonitoringRoleArn`: `str`
@@ -3531,9 +3531,9 @@ Optional fields:
 - `PerformanceInsightsEnabled`: `bool`
 - `PerformanceInsightsKmsKeyId`: `str`
 - `PerformanceInsightsRetentionPeriod`: `int`
-- `EnabledCloudWatchLogsExports`: `List`\[`str`\]
+- `EnabledCloudWatchLogsExports`: `Sequence`\[`str`\]
 - `ProcessorFeatures`:
-  `List`\[[AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef)\]
+  `Sequence`\[[AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef)\]
 - `ListenerEndpoint`:
   [AwsRdsDbInstanceEndpointTypeDef](./type_defs.md#awsrdsdbinstanceendpointtypedef)
 - `MaxAllocatedStorage`: `int`
@@ -3607,7 +3607,7 @@ Optional fields:
 - `PendingCloudWatchLogsExports`:
   [AwsRdsPendingCloudWatchLogsExportsTypeDef](./type_defs.md#awsrdspendingcloudwatchlogsexportstypedef)
 - `ProcessorFeatures`:
-  `List`\[[AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef)\]
+  `Sequence`\[[AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef)\]
 
 ## AwsRdsDbProcessorFeatureTypeDef
 
@@ -3654,7 +3654,7 @@ Optional fields:
 - `Timezone`: `str`
 - `IamDatabaseAuthenticationEnabled`: `bool`
 - `ProcessorFeatures`:
-  `List`\[[AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef)\]
+  `Sequence`\[[AwsRdsDbProcessorFeatureTypeDef](./type_defs.md#awsrdsdbprocessorfeaturetypedef)\]
 - `DbiResourceId`: `str`
 
 ## AwsRdsDbStatusInfoTypeDef
@@ -3706,7 +3706,7 @@ Optional fields:
 - `VpcId`: `str`
 - `SubnetGroupStatus`: `str`
 - `Subnets`:
-  `List`\[[AwsRdsDbSubnetGroupSubnetTypeDef](./type_defs.md#awsrdsdbsubnetgroupsubnettypedef)\]
+  `Sequence`\[[AwsRdsDbSubnetGroupSubnetTypeDef](./type_defs.md#awsrdsdbsubnetgroupsubnettypedef)\]
 - `DbSubnetGroupArn`: `str`
 
 ## AwsRdsEventSubscriptionDetailsTypeDef
@@ -3720,10 +3720,10 @@ Optional fields:
 - `CustSubscriptionId`: `str`
 - `CustomerAwsId`: `str`
 - `Enabled`: `bool`
-- `EventCategoriesList`: `List`\[`str`\]
+- `EventCategoriesList`: `Sequence`\[`str`\]
 - `EventSubscriptionArn`: `str`
 - `SnsTopicArn`: `str`
-- `SourceIdsList`: `List`\[`str`\]
+- `SourceIdsList`: `Sequence`\[`str`\]
 - `SourceType`: `str`
 - `Status`: `str`
 - `SubscriptionCreationTime`: `str`
@@ -3736,8 +3736,8 @@ from mypy_boto3_securityhub.type_defs import AwsRdsPendingCloudWatchLogsExportsT
 
 Optional fields:
 
-- `LogTypesToEnable`: `List`\[`str`\]
-- `LogTypesToDisable`: `List`\[`str`\]
+- `LogTypesToEnable`: `Sequence`\[`str`\]
+- `LogTypesToDisable`: `Sequence`\[`str`\]
 
 ## AwsRedshiftClusterClusterNodeTypeDef
 
@@ -3760,7 +3760,7 @@ from mypy_boto3_securityhub.type_defs import AwsRedshiftClusterClusterParameterG
 Optional fields:
 
 - `ClusterParameterStatusList`:
-  `List`\[[AwsRedshiftClusterClusterParameterStatusTypeDef](./type_defs.md#awsredshiftclusterclusterparameterstatustypedef)\]
+  `Sequence`\[[AwsRedshiftClusterClusterParameterStatusTypeDef](./type_defs.md#awsredshiftclusterclusterparameterstatustypedef)\]
 - `ParameterApplyStatus`: `str`
 - `ParameterGroupName`: `str`
 
@@ -3827,13 +3827,13 @@ Optional fields:
 - `ClusterCreateTime`: `str`
 - `ClusterIdentifier`: `str`
 - `ClusterNodes`:
-  `List`\[[AwsRedshiftClusterClusterNodeTypeDef](./type_defs.md#awsredshiftclusterclusternodetypedef)\]
+  `Sequence`\[[AwsRedshiftClusterClusterNodeTypeDef](./type_defs.md#awsredshiftclusterclusternodetypedef)\]
 - `ClusterParameterGroups`:
-  `List`\[[AwsRedshiftClusterClusterParameterGroupTypeDef](./type_defs.md#awsredshiftclusterclusterparametergrouptypedef)\]
+  `Sequence`\[[AwsRedshiftClusterClusterParameterGroupTypeDef](./type_defs.md#awsredshiftclusterclusterparametergrouptypedef)\]
 - `ClusterPublicKey`: `str`
 - `ClusterRevisionNumber`: `str`
 - `ClusterSecurityGroups`:
-  `List`\[[AwsRedshiftClusterClusterSecurityGroupTypeDef](./type_defs.md#awsredshiftclusterclustersecuritygrouptypedef)\]
+  `Sequence`\[[AwsRedshiftClusterClusterSecurityGroupTypeDef](./type_defs.md#awsredshiftclusterclustersecuritygrouptypedef)\]
 - `ClusterSnapshotCopyStatus`:
   [AwsRedshiftClusterClusterSnapshotCopyStatusTypeDef](./type_defs.md#awsredshiftclusterclustersnapshotcopystatustypedef)
 - `ClusterStatus`: `str`
@@ -3841,7 +3841,7 @@ Optional fields:
 - `ClusterVersion`: `str`
 - `DBName`: `str`
 - `DeferredMaintenanceWindows`:
-  `List`\[[AwsRedshiftClusterDeferredMaintenanceWindowTypeDef](./type_defs.md#awsredshiftclusterdeferredmaintenancewindowtypedef)\]
+  `Sequence`\[[AwsRedshiftClusterDeferredMaintenanceWindowTypeDef](./type_defs.md#awsredshiftclusterdeferredmaintenancewindowtypedef)\]
 - `ElasticIpStatus`:
   [AwsRedshiftClusterElasticIpStatusTypeDef](./type_defs.md#awsredshiftclusterelasticipstatustypedef)
 - `ElasticResizeNumberOfNodeOptions`: `str`
@@ -3854,7 +3854,7 @@ Optional fields:
 - `HsmStatus`:
   [AwsRedshiftClusterHsmStatusTypeDef](./type_defs.md#awsredshiftclusterhsmstatustypedef)
 - `IamRoles`:
-  `List`\[[AwsRedshiftClusterIamRoleTypeDef](./type_defs.md#awsredshiftclusteriamroletypedef)\]
+  `Sequence`\[[AwsRedshiftClusterIamRoleTypeDef](./type_defs.md#awsredshiftclusteriamroletypedef)\]
 - `KmsKeyId`: `str`
 - `MaintenanceTrackName`: `str`
 - `ManualSnapshotRetentionPeriod`: `int`
@@ -3862,7 +3862,7 @@ Optional fields:
 - `NextMaintenanceWindowStartTime`: `str`
 - `NodeType`: `str`
 - `NumberOfNodes`: `int`
-- `PendingActions`: `List`\[`str`\]
+- `PendingActions`: `Sequence`\[`str`\]
 - `PendingModifiedValues`:
   [AwsRedshiftClusterPendingModifiedValuesTypeDef](./type_defs.md#awsredshiftclusterpendingmodifiedvaluestypedef)
 - `PreferredMaintenanceWindow`: `str`
@@ -3875,7 +3875,7 @@ Optional fields:
 - `SnapshotScheduleState`: `str`
 - `VpcId`: `str`
 - `VpcSecurityGroups`:
-  `List`\[[AwsRedshiftClusterVpcSecurityGroupTypeDef](./type_defs.md#awsredshiftclustervpcsecuritygrouptypedef)\]
+  `Sequence`\[[AwsRedshiftClusterVpcSecurityGroupTypeDef](./type_defs.md#awsredshiftclustervpcsecuritygrouptypedef)\]
 
 ## AwsRedshiftClusterElasticIpStatusTypeDef
 
@@ -4001,7 +4001,7 @@ from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigura
 Optional fields:
 
 - `Rules`:
-  `List`\[[AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesdetailstypedef)\]
+  `Sequence`\[[AwsS3BucketBucketLifecycleConfigurationRulesDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesdetailstypedef)\]
 
 ## AwsS3BucketBucketLifecycleConfigurationRulesAbortIncompleteMultipartUploadDetailsTypeDef
 
@@ -4031,11 +4031,11 @@ Optional fields:
 - `ID`: `str`
 - `NoncurrentVersionExpirationInDays`: `int`
 - `NoncurrentVersionTransitions`:
-  `List`\[[AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesnoncurrentversiontransitionsdetailstypedef)\]
+  `Sequence`\[[AwsS3BucketBucketLifecycleConfigurationRulesNoncurrentVersionTransitionsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesnoncurrentversiontransitionsdetailstypedef)\]
 - `Prefix`: `str`
 - `Status`: `str`
 - `Transitions`:
-  `List`\[[AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulestransitionsdetailstypedef)\]
+  `Sequence`\[[AwsS3BucketBucketLifecycleConfigurationRulesTransitionsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulestransitionsdetailstypedef)\]
 
 ## AwsS3BucketBucketLifecycleConfigurationRulesFilterDetailsTypeDef
 
@@ -4057,7 +4057,7 @@ from mypy_boto3_securityhub.type_defs import AwsS3BucketBucketLifecycleConfigura
 Optional fields:
 
 - `Operands`:
-  `List`\[[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicateoperandsdetailstypedef)\]
+  `Sequence`\[[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicateoperandsdetailstypedef)\]
 - `Prefix`: `str`
 - `Tag`:
   [AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateTagDetailsTypeDef](./type_defs.md#awss3bucketbucketlifecycleconfigurationrulesfilterpredicatetagdetailstypedef)
@@ -4165,7 +4165,7 @@ from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfiguratio
 
 Optional fields:
 
-- `Events`: `List`\[`str`\]
+- `Events`: `Sequence`\[`str`\]
 - `Filter`:
   [AwsS3BucketNotificationConfigurationFilterTypeDef](./type_defs.md#awss3bucketnotificationconfigurationfiltertypedef)
 - `Destination`: `str`
@@ -4203,7 +4203,7 @@ from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfiguratio
 Optional fields:
 
 - `FilterRules`:
-  `List`\[[AwsS3BucketNotificationConfigurationS3KeyFilterRuleTypeDef](./type_defs.md#awss3bucketnotificationconfigurations3keyfilterruletypedef)\]
+  `Sequence`\[[AwsS3BucketNotificationConfigurationS3KeyFilterRuleTypeDef](./type_defs.md#awss3bucketnotificationconfigurations3keyfilterruletypedef)\]
 
 ## AwsS3BucketNotificationConfigurationTypeDef
 
@@ -4214,7 +4214,7 @@ from mypy_boto3_securityhub.type_defs import AwsS3BucketNotificationConfiguratio
 Optional fields:
 
 - `Configurations`:
-  `List`\[[AwsS3BucketNotificationConfigurationDetailTypeDef](./type_defs.md#awss3bucketnotificationconfigurationdetailtypedef)\]
+  `Sequence`\[[AwsS3BucketNotificationConfigurationDetailTypeDef](./type_defs.md#awss3bucketnotificationconfigurationdetailtypedef)\]
 
 ## AwsS3BucketServerSideEncryptionByDefaultTypeDef
 
@@ -4236,7 +4236,7 @@ from mypy_boto3_securityhub.type_defs import AwsS3BucketServerSideEncryptionConf
 Optional fields:
 
 - `Rules`:
-  `List`\[[AwsS3BucketServerSideEncryptionRuleTypeDef](./type_defs.md#awss3bucketserversideencryptionruletypedef)\]
+  `Sequence`\[[AwsS3BucketServerSideEncryptionRuleTypeDef](./type_defs.md#awss3bucketserversideencryptionruletypedef)\]
 
 ## AwsS3BucketServerSideEncryptionRuleTypeDef
 
@@ -4311,7 +4311,7 @@ Optional fields:
 - `RedirectAllRequestsTo`:
   [AwsS3BucketWebsiteConfigurationRedirectToTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationredirecttotypedef)
 - `RoutingRules`:
-  `List`\[[AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruletypedef)\]
+  `Sequence`\[[AwsS3BucketWebsiteConfigurationRoutingRuleTypeDef](./type_defs.md#awss3bucketwebsiteconfigurationroutingruletypedef)\]
 
 ## AwsS3ObjectDetailsTypeDef
 
@@ -4365,186 +4365,192 @@ from mypy_boto3_securityhub.type_defs import AwsSecurityFindingFiltersTypeDef
 Optional fields:
 
 - `ProductArn`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `AwsAccountId`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `Id`: `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+- `Id`: `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `GeneratorId`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `Region`: `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `Type`: `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+- `Region`:
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+- `Type`:
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `FirstObservedAt`:
-  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `LastObservedAt`:
-  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
-- `CreatedAt`: `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
-- `UpdatedAt`: `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+- `CreatedAt`:
+  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+- `UpdatedAt`:
+  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `SeverityProduct`:
-  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
+  `Sequence`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `SeverityNormalized`:
-  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
+  `Sequence`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `SeverityLabel`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `Confidence`:
-  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
+  `Sequence`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `Criticality`:
-  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
-- `Title`: `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
+- `Title`:
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `Description`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `RecommendationText`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `SourceUrl`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ProductFields`:
-  `List`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
+  `Sequence`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
 - `ProductName`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `CompanyName`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `UserDefinedFields`:
-  `List`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
+  `Sequence`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
 - `MalwareName`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `MalwareType`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `MalwarePath`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `MalwareState`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NetworkDirection`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NetworkProtocol`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NetworkSourceIpV4`:
-  `List`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
+  `Sequence`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
 - `NetworkSourceIpV6`:
-  `List`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
+  `Sequence`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
 - `NetworkSourcePort`:
-  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
+  `Sequence`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `NetworkSourceDomain`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NetworkSourceMac`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NetworkDestinationIpV4`:
-  `List`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
+  `Sequence`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
 - `NetworkDestinationIpV6`:
-  `List`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
+  `Sequence`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
 - `NetworkDestinationPort`:
-  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
+  `Sequence`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `NetworkDestinationDomain`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ProcessName`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ProcessPath`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ProcessPid`:
-  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
+  `Sequence`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `ProcessParentPid`:
-  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
+  `Sequence`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `ProcessLaunchedAt`:
-  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `ProcessTerminatedAt`:
-  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `ThreatIntelIndicatorType`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ThreatIntelIndicatorValue`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ThreatIntelIndicatorCategory`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ThreatIntelIndicatorLastObservedAt`:
-  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `ThreatIntelIndicatorSource`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ThreatIntelIndicatorSourceUrl`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceType`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceId`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourcePartition`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceRegion`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `ResourceTags`: `List`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+- `ResourceTags`:
+  `Sequence`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
 - `ResourceAwsEc2InstanceType`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsEc2InstanceImageId`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsEc2InstanceIpV4Addresses`:
-  `List`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
+  `Sequence`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
 - `ResourceAwsEc2InstanceIpV6Addresses`:
-  `List`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
+  `Sequence`\[[IpFilterTypeDef](./type_defs.md#ipfiltertypedef)\]
 - `ResourceAwsEc2InstanceKeyName`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsEc2InstanceIamInstanceProfileArn`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsEc2InstanceVpcId`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsEc2InstanceSubnetId`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsEc2InstanceLaunchedAt`:
-  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `ResourceAwsS3BucketOwnerId`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsS3BucketOwnerName`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsIamAccessKeyUserName`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsIamAccessKeyPrincipalName`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsIamAccessKeyStatus`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceAwsIamAccessKeyCreatedAt`:
-  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `ResourceAwsIamUserUserName`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceContainerName`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceContainerImageId`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceContainerImageName`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `ResourceContainerLaunchedAt`:
-  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `ResourceDetailsOther`:
-  `List`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
+  `Sequence`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
 - `ComplianceStatus`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `VerificationState`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `WorkflowState`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `WorkflowStatus`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `RecordState`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `RelatedFindingsProductArn`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `RelatedFindingsId`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NoteText`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `NoteUpdatedAt`:
-  `List`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
+  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
 - `NoteUpdatedBy`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `Keyword`:
-  `List`\[[KeywordFilterTypeDef](./type_defs.md#keywordfiltertypedef)\]
+  `Sequence`\[[KeywordFilterTypeDef](./type_defs.md#keywordfiltertypedef)\]
 - `FindingProviderFieldsConfidence`:
-  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
+  `Sequence`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `FindingProviderFieldsCriticality`:
-  `List`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
+  `Sequence`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
 - `FindingProviderFieldsRelatedFindingsId`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `FindingProviderFieldsRelatedFindingsProductArn`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `FindingProviderFieldsSeverityLabel`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `FindingProviderFieldsSeverityOriginal`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `FindingProviderFieldsTypes`:
-  `List`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
+  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 
 ## AwsSecurityFindingIdentifierTypeDef
 
@@ -4574,14 +4580,14 @@ Required fields:
 - `UpdatedAt`: `str`
 - `Title`: `str`
 - `Description`: `str`
-- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
 Optional fields:
 
 - `ProductName`: `str`
 - `CompanyName`: `str`
 - `Region`: `str`
-- `Types`: `List`\[`str`\]
+- `Types`: `Sequence`\[`str`\]
 - `FirstObservedAt`: `str`
 - `LastObservedAt`: `str`
 - `Severity`: [SeverityTypeDef](./type_defs.md#severitytypedef)
@@ -4589,15 +4595,15 @@ Optional fields:
 - `Criticality`: `int`
 - `Remediation`: [RemediationTypeDef](./type_defs.md#remediationtypedef)
 - `SourceUrl`: `str`
-- `ProductFields`: `Dict`\[`str`, `str`\]
-- `UserDefinedFields`: `Dict`\[`str`, `str`\]
-- `Malware`: `List`\[[MalwareTypeDef](./type_defs.md#malwaretypedef)\]
+- `ProductFields`: `Mapping`\[`str`, `str`\]
+- `UserDefinedFields`: `Mapping`\[`str`, `str`\]
+- `Malware`: `Sequence`\[[MalwareTypeDef](./type_defs.md#malwaretypedef)\]
 - `Network`: [NetworkTypeDef](./type_defs.md#networktypedef)
 - `NetworkPath`:
-  `List`\[[NetworkPathComponentTypeDef](./type_defs.md#networkpathcomponenttypedef)\]
+  `Sequence`\[[NetworkPathComponentTypeDef](./type_defs.md#networkpathcomponenttypedef)\]
 - `Process`: [ProcessDetailsTypeDef](./type_defs.md#processdetailstypedef)
 - `ThreatIntelIndicators`:
-  `List`\[[ThreatIntelIndicatorTypeDef](./type_defs.md#threatintelindicatortypedef)\]
+  `Sequence`\[[ThreatIntelIndicatorTypeDef](./type_defs.md#threatintelindicatortypedef)\]
 - `Compliance`: [ComplianceTypeDef](./type_defs.md#compliancetypedef)
 - `VerificationState`:
   [VerificationStateType](./literals.md#verificationstatetype)
@@ -4605,10 +4611,10 @@ Optional fields:
 - `Workflow`: [WorkflowTypeDef](./type_defs.md#workflowtypedef)
 - `RecordState`: [RecordStateType](./literals.md#recordstatetype)
 - `RelatedFindings`:
-  `List`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
+  `Sequence`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
 - `Note`: [NoteTypeDef](./type_defs.md#notetypedef)
 - `Vulnerabilities`:
-  `List`\[[VulnerabilityTypeDef](./type_defs.md#vulnerabilitytypedef)\]
+  `Sequence`\[[VulnerabilityTypeDef](./type_defs.md#vulnerabilitytypedef)\]
 - `PatchSummary`: [PatchSummaryTypeDef](./type_defs.md#patchsummarytypedef)
 - `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
 - `FindingProviderFields`:
@@ -4624,7 +4630,7 @@ Optional fields:
 
 - `KmsMasterKeyId`: `str`
 - `Subscription`:
-  `List`\[[AwsSnsTopicSubscriptionTypeDef](./type_defs.md#awssnstopicsubscriptiontypedef)\]
+  `Sequence`\[[AwsSnsTopicSubscriptionTypeDef](./type_defs.md#awssnstopicsubscriptiontypedef)\]
 - `TopicName`: `str`
 - `Owner`: `str`
 
@@ -4711,7 +4717,7 @@ Optional fields:
 - `Name`: `str`
 - `DefaultAction`: `str`
 - `Rules`:
-  `List`\[[AwsWafWebAclRuleTypeDef](./type_defs.md#awswafwebaclruletypedef)\]
+  `Sequence`\[[AwsWafWebAclRuleTypeDef](./type_defs.md#awswafwebaclruletypedef)\]
 - `WebAclId`: `str`
 
 ## AwsWafWebAclRuleTypeDef
@@ -4724,7 +4730,7 @@ Optional fields:
 
 - `Action`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
 - `ExcludedRules`:
-  `List`\[[WafExcludedRuleTypeDef](./type_defs.md#wafexcludedruletypedef)\]
+  `Sequence`\[[WafExcludedRuleTypeDef](./type_defs.md#wafexcludedruletypedef)\]
 - `OverrideAction`:
   [WafOverrideActionTypeDef](./type_defs.md#wafoverrideactiontypedef)
 - `Priority`: `int`
@@ -4739,7 +4745,7 @@ from mypy_boto3_securityhub.type_defs import BatchDisableStandardsRequestRequest
 
 Required fields:
 
-- `StandardsSubscriptionArns`: `List`\[`str`\]
+- `StandardsSubscriptionArns`: `Sequence`\[`str`\]
 
 ## BatchDisableStandardsResponseTypeDef
 
@@ -4763,7 +4769,7 @@ from mypy_boto3_securityhub.type_defs import BatchEnableStandardsRequestRequestT
 Required fields:
 
 - `StandardsSubscriptionRequests`:
-  `List`\[[StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef)\]
+  `Sequence`\[[StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef)\]
 
 ## BatchEnableStandardsResponseTypeDef
 
@@ -4787,7 +4793,7 @@ from mypy_boto3_securityhub.type_defs import BatchImportFindingsRequestRequestTy
 Required fields:
 
 - `Findings`:
-  `List`\[[AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef)\]
+  `Sequence`\[[AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef)\]
 
 ## BatchImportFindingsResponseTypeDef
 
@@ -4813,7 +4819,7 @@ from mypy_boto3_securityhub.type_defs import BatchUpdateFindingsRequestRequestTy
 Required fields:
 
 - `FindingIdentifiers`:
-  `List`\[[AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef)\]
+  `Sequence`\[[AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef)\]
 
 Optional fields:
 
@@ -4823,11 +4829,11 @@ Optional fields:
   [VerificationStateType](./literals.md#verificationstatetype)
 - `Confidence`: `int`
 - `Criticality`: `int`
-- `Types`: `List`\[`str`\]
-- `UserDefinedFields`: `Dict`\[`str`, `str`\]
+- `Types`: `Sequence`\[`str`\]
+- `UserDefinedFields`: `Mapping`\[`str`, `str`\]
 - `Workflow`: [WorkflowUpdateTypeDef](./type_defs.md#workflowupdatetypedef)
 - `RelatedFindings`:
-  `List`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
+  `Sequence`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
 
 ## BatchUpdateFindingsResponseTypeDef
 
@@ -4906,7 +4912,7 @@ Optional fields:
 - `Status`:
   [ClassificationStatusTypeDef](./type_defs.md#classificationstatustypedef)
 - `SensitiveData`:
-  `List`\[[SensitiveDataResultTypeDef](./type_defs.md#sensitivedataresulttypedef)\]
+  `Sequence`\[[SensitiveDataResultTypeDef](./type_defs.md#sensitivedataresulttypedef)\]
 - `CustomDataIdentifiers`:
   [CustomDataIdentifiersResultTypeDef](./type_defs.md#customdataidentifiersresulttypedef)
 
@@ -4930,9 +4936,9 @@ from mypy_boto3_securityhub.type_defs import ComplianceTypeDef
 Optional fields:
 
 - `Status`: [ComplianceStatusType](./literals.md#compliancestatustype)
-- `RelatedRequirements`: `List`\[`str`\]
+- `RelatedRequirements`: `Sequence`\[`str`\]
 - `StatusReasons`:
-  `List`\[[StatusReasonTypeDef](./type_defs.md#statusreasontypedef)\]
+  `Sequence`\[[StatusReasonTypeDef](./type_defs.md#statusreasontypedef)\]
 
 ## ContainerDetailsTypeDef
 
@@ -5016,7 +5022,7 @@ from mypy_boto3_securityhub.type_defs import CreateMembersRequestRequestTypeDef
 Required fields:
 
 - `AccountDetails`:
-  `List`\[[AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef)\]
+  `Sequence`\[[AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef)\]
 
 ## CreateMembersResponseTypeDef
 
@@ -5053,7 +5059,7 @@ from mypy_boto3_securityhub.type_defs import CustomDataIdentifiersResultTypeDef
 Optional fields:
 
 - `Detections`:
-  `List`\[[CustomDataIdentifiersDetectionsTypeDef](./type_defs.md#customdataidentifiersdetectionstypedef)\]
+  `Sequence`\[[CustomDataIdentifiersDetectionsTypeDef](./type_defs.md#customdataidentifiersdetectionstypedef)\]
 - `TotalCount`: `int`
 
 ## CvssTypeDef
@@ -5069,7 +5075,7 @@ Optional fields:
 - `BaseVector`: `str`
 - `Source`: `str`
 - `Adjustments`:
-  `List`\[[AdjustmentTypeDef](./type_defs.md#adjustmenttypedef)\]
+  `Sequence`\[[AdjustmentTypeDef](./type_defs.md#adjustmenttypedef)\]
 
 ## DataClassificationDetailsTypeDef
 
@@ -5115,7 +5121,7 @@ from mypy_boto3_securityhub.type_defs import DeclineInvitationsRequestRequestTyp
 
 Required fields:
 
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## DeclineInvitationsResponseTypeDef
 
@@ -5182,7 +5188,7 @@ from mypy_boto3_securityhub.type_defs import DeleteInvitationsRequestRequestType
 
 Required fields:
 
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## DeleteInvitationsResponseTypeDef
 
@@ -5205,7 +5211,7 @@ from mypy_boto3_securityhub.type_defs import DeleteMembersRequestRequestTypeDef
 
 Required fields:
 
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## DeleteMembersResponseTypeDef
 
@@ -5228,7 +5234,7 @@ from mypy_boto3_securityhub.type_defs import DescribeActionTargetsRequestRequest
 
 Optional fields:
 
-- `ActionTargetArns`: `List`\[`str`\]
+- `ActionTargetArns`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -5389,7 +5395,7 @@ from mypy_boto3_securityhub.type_defs import DisassociateMembersRequestRequestTy
 
 Required fields:
 
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## DnsRequestActionTypeDef
 
@@ -5443,7 +5449,7 @@ from mypy_boto3_securityhub.type_defs import EnableSecurityHubRequestRequestType
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `EnableDefaultStandards`: `bool`
 
 ## FindingProviderFieldsTypeDef
@@ -5457,10 +5463,10 @@ Optional fields:
 - `Confidence`: `int`
 - `Criticality`: `int`
 - `RelatedFindings`:
-  `List`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
+  `Sequence`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
 - `Severity`:
   [FindingProviderSeverityTypeDef](./type_defs.md#findingproviderseveritytypedef)
-- `Types`: `List`\[`str`\]
+- `Types`: `Sequence`\[`str`\]
 
 ## FindingProviderSeverityTypeDef
 
@@ -5504,7 +5510,7 @@ from mypy_boto3_securityhub.type_defs import GetEnabledStandardsRequestRequestTy
 
 Optional fields:
 
-- `StandardsSubscriptionArns`: `List`\[`str`\]
+- `StandardsSubscriptionArns`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -5533,7 +5539,7 @@ Optional fields:
 - `Filters`:
   [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
 - `SortCriteria`:
-  `List`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
+  `Sequence`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -5582,7 +5588,7 @@ from mypy_boto3_securityhub.type_defs import GetInsightsRequestRequestTypeDef
 
 Optional fields:
 
-- `InsightArns`: `List`\[`str`\]
+- `InsightArns`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -5631,7 +5637,7 @@ from mypy_boto3_securityhub.type_defs import GetMembersRequestRequestTypeDef
 
 Required fields:
 
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## GetMembersResponseTypeDef
 
@@ -5729,7 +5735,7 @@ from mypy_boto3_securityhub.type_defs import InviteMembersRequestRequestTypeDef
 
 Required fields:
 
-- `AccountIds`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
 
 ## InviteMembersResponseTypeDef
 
@@ -6006,8 +6012,9 @@ from mypy_boto3_securityhub.type_defs import NetworkPathComponentDetailsTypeDef
 
 Optional fields:
 
-- `Address`: `List`\[`str`\]
-- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+- `Address`: `Sequence`\[`str`\]
+- `PortRanges`:
+  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 
 ## NetworkPathComponentTypeDef
 
@@ -6086,11 +6093,11 @@ from mypy_boto3_securityhub.type_defs import OccurrencesTypeDef
 
 Optional fields:
 
-- `LineRanges`: `List`\[[RangeTypeDef](./type_defs.md#rangetypedef)\]
-- `OffsetRanges`: `List`\[[RangeTypeDef](./type_defs.md#rangetypedef)\]
-- `Pages`: `List`\[[PageTypeDef](./type_defs.md#pagetypedef)\]
-- `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
-- `Cells`: `List`\[[CellTypeDef](./type_defs.md#celltypedef)\]
+- `LineRanges`: `Sequence`\[[RangeTypeDef](./type_defs.md#rangetypedef)\]
+- `OffsetRanges`: `Sequence`\[[RangeTypeDef](./type_defs.md#rangetypedef)\]
+- `Pages`: `Sequence`\[[PageTypeDef](./type_defs.md#pagetypedef)\]
+- `Records`: `Sequence`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
+- `Cells`: `Sequence`\[[CellTypeDef](./type_defs.md#celltypedef)\]
 
 ## PageTypeDef
 
@@ -6148,7 +6155,7 @@ from mypy_boto3_securityhub.type_defs import PortProbeActionTypeDef
 Optional fields:
 
 - `PortProbeDetails`:
-  `List`\[[PortProbeDetailTypeDef](./type_defs.md#portprobedetailtypedef)\]
+  `Sequence`\[[PortProbeDetailTypeDef](./type_defs.md#portprobedetailtypedef)\]
 - `Blocked`: `bool`
 
 ## PortProbeDetailTypeDef
@@ -6381,7 +6388,7 @@ Optional fields:
   [AwsEcsTaskDefinitionDetailsTypeDef](./type_defs.md#awsecstaskdefinitiondetailstypedef)
 - `Container`:
   [ContainerDetailsTypeDef](./type_defs.md#containerdetailstypedef)
-- `Other`: `Dict`\[`str`, `str`\]
+- `Other`: `Mapping`\[`str`, `str`\]
 - `AwsRdsEventSubscription`:
   [AwsRdsEventSubscriptionDetailsTypeDef](./type_defs.md#awsrdseventsubscriptiondetailstypedef)
 - `AwsEcsService`:
@@ -6409,7 +6416,7 @@ Optional fields:
 - `Partition`: [PartitionType](./literals.md#partitiontype)
 - `Region`: `str`
 - `ResourceRole`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `DataClassification`:
   [DataClassificationDetailsTypeDef](./type_defs.md#dataclassificationdetailstypedef)
 - `Details`: [ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef)
@@ -6461,7 +6468,7 @@ Optional fields:
 
 - `Category`: `str`
 - `Detections`:
-  `List`\[[SensitiveDataDetectionsTypeDef](./type_defs.md#sensitivedatadetectionstypedef)\]
+  `Sequence`\[[SensitiveDataDetectionsTypeDef](./type_defs.md#sensitivedatadetectionstypedef)\]
 - `TotalCount`: `int`
 
 ## SeverityTypeDef
@@ -6560,7 +6567,7 @@ Required fields:
 
 Optional fields:
 
-- `StandardsInput`: `Dict`\[`str`, `str`\]
+- `StandardsInput`: `Mapping`\[`str`, `str`\]
 
 ## StandardsSubscriptionTypeDef
 
@@ -6610,7 +6617,7 @@ from mypy_boto3_securityhub.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## ThreatIntelIndicatorTypeDef
 
@@ -6638,7 +6645,7 @@ from mypy_boto3_securityhub.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateActionTargetRequestRequestTypeDef
 
@@ -6736,12 +6743,12 @@ Required fields:
 Optional fields:
 
 - `VulnerablePackages`:
-  `List`\[[SoftwarePackageTypeDef](./type_defs.md#softwarepackagetypedef)\]
-- `Cvss`: `List`\[[CvssTypeDef](./type_defs.md#cvsstypedef)\]
-- `RelatedVulnerabilities`: `List`\[`str`\]
+  `Sequence`\[[SoftwarePackageTypeDef](./type_defs.md#softwarepackagetypedef)\]
+- `Cvss`: `Sequence`\[[CvssTypeDef](./type_defs.md#cvsstypedef)\]
+- `RelatedVulnerabilities`: `Sequence`\[`str`\]
 - `Vendor`:
   [VulnerabilityVendorTypeDef](./type_defs.md#vulnerabilityvendortypedef)
-- `ReferenceUrls`: `List`\[`str`\]
+- `ReferenceUrls`: `Sequence`\[`str`\]
 
 ## VulnerabilityVendorTypeDef
 

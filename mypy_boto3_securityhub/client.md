@@ -174,7 +174,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `StandardsSubscriptionArns`: `List`\[`str`\] *(required)*
+- `StandardsSubscriptionArns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDisableStandardsResponseTypeDef](./type_defs.md#batchdisablestandardsresponsetypedef).
@@ -195,7 +195,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StandardsSubscriptionRequests`:
-  `List`\[[StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef)\]
+  `Sequence`\[[StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef)\]
   *(required)*
 
 Returns
@@ -218,7 +218,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Findings`:
-  `List`\[[AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef)\]
+  `Sequence`\[[AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef)\]
   *(required)*
 
 Returns
@@ -241,7 +241,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FindingIdentifiers`:
-  `List`\[[AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef)\]
+  `Sequence`\[[AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef)\]
   *(required)*
 - `Note`: [NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef)
 - `Severity`: [SeverityUpdateTypeDef](./type_defs.md#severityupdatetypedef)
@@ -249,11 +249,11 @@ Keyword-only arguments:
   [VerificationStateType](./literals.md#verificationstatetype)
 - `Confidence`: `int`
 - `Criticality`: `int`
-- `Types`: `List`\[`str`\]
-- `UserDefinedFields`: `Dict`\[`str`, `str`\]
+- `Types`: `Sequence`\[`str`\]
+- `UserDefinedFields`: `Mapping`\[`str`, `str`\]
 - `Workflow`: [WorkflowUpdateTypeDef](./type_defs.md#workflowupdatetypedef)
 - `RelatedFindings`:
-  `List`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
+  `Sequence`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
 
 Returns
 [BatchUpdateFindingsResponseTypeDef](./type_defs.md#batchupdatefindingsresponsetypedef).
@@ -333,7 +333,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AccountDetails`:
-  `List`\[[AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef)\]
+  `Sequence`\[[AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef)\]
   *(required)*
 
 Returns
@@ -353,7 +353,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
@@ -411,7 +411,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
@@ -430,7 +430,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
@@ -450,7 +450,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ActionTargetArns`: `List`\[`str`\]
+- `ActionTargetArns`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -642,7 +642,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -700,7 +700,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `EnableDefaultStandards`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -718,7 +718,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -753,7 +753,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `StandardsSubscriptionArns`: `List`\[`str`\]
+- `StandardsSubscriptionArns`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -777,7 +777,7 @@ Keyword-only arguments:
 - `Filters`:
   [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
 - `SortCriteria`:
-  `List`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
+  `Sequence`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -817,7 +817,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `InsightArns`: `List`\[`str`\]
+- `InsightArns`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -865,7 +865,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 
@@ -884,7 +884,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AccountIds`: `List`\[`str`\] *(required)*
+- `AccountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [InviteMembersResponseTypeDef](./type_defs.md#invitemembersresponsetypedef).
@@ -1010,7 +1010,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1029,7 +1029,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

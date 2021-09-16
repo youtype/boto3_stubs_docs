@@ -191,7 +191,7 @@ Keyword-only arguments:
   [ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef)
 - `SendingOptions`:
   [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SuppressionOptions`:
   [SuppressionOptionsTypeDef](./type_defs.md#suppressionoptionstypedef)
 
@@ -238,7 +238,7 @@ Keyword-only arguments:
 - `ContactListName`: `str` *(required)*
 - `EmailAddress`: `str` *(required)*
 - `TopicPreferences`:
-  `List`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
+  `Sequence`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
 - `UnsubscribeAll`: `bool`
 - `AttributesData`: `str`
 
@@ -259,9 +259,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ContactListName`: `str` *(required)*
-- `Topics`: `List`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
+- `Topics`: `Sequence`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -304,7 +304,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PoolName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -327,7 +327,7 @@ Keyword-only arguments:
 - `Content`: [EmailContentTypeDef](./type_defs.md#emailcontenttypedef)
   *(required)*
 - `ReportName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDeliverabilityTestReportResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponsetypedef).
@@ -347,7 +347,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EmailIdentity`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DkimSigningAttributes`:
   [DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef)
 - `ConfigurationSetName`: `str`
@@ -622,7 +622,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -654,7 +654,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `BlacklistItemNames`: `List`\[`str`\] *(required)*
+- `BlacklistItemNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [GetBlacklistReportsResponseTypeDef](./type_defs.md#getblacklistreportsresponsetypedef).
@@ -1215,7 +1215,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Reasons`:
-  `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 - `StartDate`: `Union`\[`datetime`, `str`\]
 - `EndDate`: `Union`\[`datetime`, `str`\]
 - `NextToken`: `str`
@@ -1281,7 +1281,7 @@ Keyword-only arguments:
 - `WebsiteURL`: `str` *(required)*
 - `UseCaseDescription`: `str` *(required)*
 - `ContactLanguage`: [ContactLanguageType](./literals.md#contactlanguagetype)
-- `AdditionalContactEmailAddresses`: `List`\[`str`\]
+- `AdditionalContactEmailAddresses`: `Sequence`\[`str`\]
 - `ProductionAccessEnabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1321,7 +1321,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SuppressedReasons`:
-  `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1405,7 +1405,7 @@ Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `SuppressedReasons`:
-  `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1489,7 +1489,7 @@ Keyword-only arguments:
 
 - `DashboardEnabled`: `bool` *(required)*
 - `SubscribedDomains`:
-  `List`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
+  `Sequence`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1641,15 +1641,15 @@ Keyword-only arguments:
   [BulkEmailContentTypeDef](./type_defs.md#bulkemailcontenttypedef)
   *(required)*
 - `BulkEmailEntries`:
-  `List`\[[BulkEmailEntryTypeDef](./type_defs.md#bulkemailentrytypedef)\]
+  `Sequence`\[[BulkEmailEntryTypeDef](./type_defs.md#bulkemailentrytypedef)\]
   *(required)*
 - `FromEmailAddress`: `str`
 - `FromEmailAddressIdentityArn`: `str`
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `FeedbackForwardingEmailAddress`: `str`
 - `FeedbackForwardingEmailAddressIdentityArn`: `str`
 - `DefaultEmailTags`:
-  `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
 Returns
@@ -1697,10 +1697,11 @@ Keyword-only arguments:
 - `FromEmailAddress`: `str`
 - `FromEmailAddressIdentityArn`: `str`
 - `Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `FeedbackForwardingEmailAddress`: `str`
 - `FeedbackForwardingEmailAddressIdentityArn`: `str`
-- `EmailTags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+- `EmailTags`:
+  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 - `ListManagementOptions`:
   [ListManagementOptionsTypeDef](./type_defs.md#listmanagementoptionstypedef)
@@ -1722,7 +1723,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1762,7 +1763,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1806,7 +1807,7 @@ Keyword-only arguments:
 - `ContactListName`: `str` *(required)*
 - `EmailAddress`: `str` *(required)*
 - `TopicPreferences`:
-  `List`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
+  `Sequence`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
 - `UnsubscribeAll`: `bool`
 - `AttributesData`: `str`
 
@@ -1827,7 +1828,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ContactListName`: `str` *(required)*
-- `Topics`: `List`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
+- `Topics`: `Sequence`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
 - `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].

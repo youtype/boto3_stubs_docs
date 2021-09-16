@@ -91,6 +91,7 @@ from mypy_boto3_firehose.literals import CompressionFormatType, ...
 - [RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype)
 - [S3BackupModeType](./literals.md#s3backupmodetype)
 - [SplunkS3BackupModeType](./literals.md#splunks3backupmodetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

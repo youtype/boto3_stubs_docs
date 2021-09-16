@@ -442,7 +442,7 @@ Optional fields:
 
 - `ConfirmationRequired`: `bool`
 - `Description`: `str`
-- `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+- `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 
 ## CreateJobResultTypeDef
 
@@ -465,7 +465,7 @@ from mypy_boto3_s3control.type_defs import CreateMultiRegionAccessPointInputType
 Required fields:
 
 - `Name`: `str`
-- `Regions`: `List`\[[RegionTypeDef](./type_defs.md#regiontypedef)\]
+- `Regions`: `Sequence`\[[RegionTypeDef](./type_defs.md#regiontypedef)\]
 
 Optional fields:
 
@@ -1262,7 +1262,7 @@ Required fields:
 Optional fields:
 
 - `Fields`:
-  `List`\[[JobManifestFieldNameType](./literals.md#jobmanifestfieldnametype)\]
+  `Sequence`\[[JobManifestFieldNameType](./literals.md#jobmanifestfieldnametype)\]
 
 ## JobManifestTypeDef
 
@@ -1292,7 +1292,7 @@ Optional fields:
   [S3SetObjectAclOperationTypeDef](./type_defs.md#s3setobjectacloperationtypedef)
 - `S3PutObjectTagging`:
   [S3SetObjectTaggingOperationTypeDef](./type_defs.md#s3setobjecttaggingoperationtypedef)
-- `S3DeleteObjectTagging`: `Dict`\[`str`, `Any`\]
+- `S3DeleteObjectTagging`: `Mapping`\[`str`, `Any`\]
 - `S3InitiateRestoreObject`:
   [S3InitiateRestoreObjectOperationTypeDef](./type_defs.md#s3initiaterestoreobjectoperationtypedef)
 - `S3PutObjectLegalHold`:
@@ -1349,7 +1349,7 @@ from mypy_boto3_s3control.type_defs import LifecycleConfigurationTypeDef
 Optional fields:
 
 - `Rules`:
-  `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
+  `Sequence`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
 
 ## LifecycleExpirationTypeDef
 
@@ -1484,7 +1484,7 @@ Required fields:
 
 Optional fields:
 
-- `JobStatuses`: `List`\[[JobStatusType](./literals.md#jobstatustype)\]
+- `JobStatuses`: `Sequence`\[[JobStatusType](./literals.md#jobstatustype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1704,13 +1704,13 @@ Required fields:
 
 - `SupportingAccessPoint`: `str`
 - `TransformationConfigurations`:
-  `List`\[[ObjectLambdaTransformationConfigurationTypeDef](./type_defs.md#objectlambdatransformationconfigurationtypedef)\]
+  `Sequence`\[[ObjectLambdaTransformationConfigurationTypeDef](./type_defs.md#objectlambdatransformationconfigurationtypedef)\]
 
 Optional fields:
 
 - `CloudWatchMetricsEnabled`: `bool`
 - `AllowedFeatures`:
-  `List`\[[ObjectLambdaAllowedFeatureType](./literals.md#objectlambdaallowedfeaturetype)\]
+  `Sequence`\[[ObjectLambdaAllowedFeatureType](./literals.md#objectlambdaallowedfeaturetype)\]
 
 ## ObjectLambdaContentTransformationTypeDef
 
@@ -1731,7 +1731,7 @@ from mypy_boto3_s3control.type_defs import ObjectLambdaTransformationConfigurati
 
 Required fields:
 
-- `Actions`: `List`\[`Literal['GetObject']` (see
+- `Actions`: `Sequence`\[`Literal['GetObject']` (see
   [ObjectLambdaTransformationConfigurationActionType](./literals.md#objectlambdatransformationconfigurationactiontype))\]
 - `ContentTransformation`:
   [ObjectLambdaContentTransformationTypeDef](./type_defs.md#objectlambdacontenttransformationtypedef)
@@ -1895,7 +1895,7 @@ Required fields:
 
 - `AccountId`: `str`
 - `JobId`: `str`
-- `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+- `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 
 ## PutMultiRegionAccessPointPolicyInputTypeDef
 
@@ -1961,7 +1961,7 @@ Required fields:
 Optional fields:
 
 - `Tags`:
-  `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
+  `Sequence`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
 
 ## PutStorageLensConfigurationTaggingRequestRequestTypeDef
 
@@ -1974,7 +1974,7 @@ Required fields:
 - `ConfigId`: `str`
 - `AccountId`: `str`
 - `Tags`:
-  `List`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
+  `Sequence`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
 
 ## RegionReportTypeDef
 
@@ -2040,7 +2040,7 @@ Required fields:
 
 Optional fields:
 
-- `Grants`: `List`\[[S3GrantTypeDef](./type_defs.md#s3granttypedef)\]
+- `Grants`: `Sequence`\[[S3GrantTypeDef](./type_defs.md#s3granttypedef)\]
 
 ## S3AccessControlPolicyTypeDef
 
@@ -2087,13 +2087,13 @@ Optional fields:
 - `CannedAccessControlList`:
   [S3CannedAccessControlListType](./literals.md#s3cannedaccesscontrollisttype)
 - `AccessControlGrants`:
-  `List`\[[S3GrantTypeDef](./type_defs.md#s3granttypedef)\]
+  `Sequence`\[[S3GrantTypeDef](./type_defs.md#s3granttypedef)\]
 - `MetadataDirective`:
   [S3MetadataDirectiveType](./literals.md#s3metadatadirectivetype)
 - `ModifiedSinceConstraint`: `Union`\[`datetime`, `str`\]
 - `NewObjectMetadata`:
   [S3ObjectMetadataTypeDef](./type_defs.md#s3objectmetadatatypedef)
-- `NewObjectTagging`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+- `NewObjectTagging`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 - `RedirectLocation`: `str`
 - `RequesterPays`: `bool`
 - `StorageClass`: [S3StorageClassType](./literals.md#s3storageclasstype)
@@ -2164,7 +2164,7 @@ Optional fields:
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
 - `ContentLanguage`: `str`
-- `UserMetadata`: `Dict`\[`str`, `str`\]
+- `UserMetadata`: `Mapping`\[`str`, `str`\]
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
 - `ContentType`: `str`
@@ -2239,7 +2239,7 @@ from mypy_boto3_s3control.type_defs import S3SetObjectTaggingOperationTypeDef
 
 Optional fields:
 
-- `TagSet`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+- `TagSet`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 
 ## S3TagTypeDef
 
@@ -2346,7 +2346,7 @@ from mypy_boto3_s3control.type_defs import TaggingTypeDef
 
 Required fields:
 
-- `TagSet`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+- `TagSet`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 
 ## TransitionTypeDef
 

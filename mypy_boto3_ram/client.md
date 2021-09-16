@@ -144,8 +144,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
-- `resourceArns`: `List`\[`str`\]
-- `principals`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
 - `clientToken`: `str`
 
 Returns
@@ -205,12 +205,12 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
-- `resourceArns`: `List`\[`str`\]
-- `principals`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `allowExternalPrincipals`: `bool`
 - `clientToken`: `str`
-- `permissionArns`: `List`\[`str`\]
+- `permissionArns`: `Sequence`\[`str`\]
 
 Returns
 [CreateResourceShareResponseTypeDef](./type_defs.md#createresourceshareresponsetypedef).
@@ -251,8 +251,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
-- `resourceArns`: `List`\[`str`\]
-- `principals`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
 - `clientToken`: `str`
 
 Returns
@@ -305,7 +305,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -345,7 +345,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `resourceArns`: `List`\[`str`\] *(required)*
+- `resourceArns`: `Sequence`\[`str`\] *(required)*
 - `principal`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -371,7 +371,7 @@ Keyword-only arguments:
 - `associationType`:
   [ResourceShareAssociationTypeType](./literals.md#resourceshareassociationtypetype)
   *(required)*
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `resourceArn`: `str`
 - `principal`: `str`
 - `associationStatus`:
@@ -397,8 +397,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `resourceShareInvitationArns`: `List`\[`str`\]
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareInvitationArns`: `Sequence`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -422,11 +422,12 @@ Keyword-only arguments:
 
 - `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
   *(required)*
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `resourceShareStatus`:
   [ResourceShareStatusType](./literals.md#resourcesharestatustype)
 - `name`: `str`
-- `tagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `tagFilters`:
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `permissionArn`: `str`
@@ -496,9 +497,9 @@ Keyword-only arguments:
 - `resourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
   *(required)*
 - `resourceArn`: `str`
-- `principals`: `List`\[`str`\]
+- `principals`: `Sequence`\[`str`\]
 - `resourceType`: `str`
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -566,8 +567,8 @@ Keyword-only arguments:
   *(required)*
 - `principal`: `str`
 - `resourceType`: `str`
-- `resourceArns`: `List`\[`str`\]
-- `resourceShareArns`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
+- `resourceShareArns`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -633,7 +634,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -652,7 +653,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceShareArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

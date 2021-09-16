@@ -125,8 +125,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `findingArns`: `List`\[`str`\] *(required)*
-- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `findingArns`: `Sequence`\[`str`\] *(required)*
+- `attributes`:
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
   *(required)*
 
 Returns
@@ -188,9 +189,9 @@ Keyword-only arguments:
 - `assessmentTargetArn`: `str` *(required)*
 - `assessmentTemplateName`: `str` *(required)*
 - `durationInSeconds`: `int` *(required)*
-- `rulesPackageArns`: `List`\[`str`\] *(required)*
+- `rulesPackageArns`: `Sequence`\[`str`\] *(required)*
 - `userAttributesForFindings`:
-  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 Returns
 [CreateAssessmentTemplateResponseTypeDef](./type_defs.md#createassessmenttemplateresponsetypedef).
@@ -233,7 +234,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceGroupTags`:
-  `List`\[[ResourceGroupTagTypeDef](./type_defs.md#resourcegrouptagtypedef)\]
+  `Sequence`\[[ResourceGroupTagTypeDef](./type_defs.md#resourcegrouptagtypedef)\]
   *(required)*
 
 Returns
@@ -307,7 +308,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `assessmentRunArns`: `List`\[`str`\] *(required)*
+- `assessmentRunArns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeAssessmentRunsResponseTypeDef](./type_defs.md#describeassessmentrunsresponsetypedef).
@@ -328,7 +329,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `assessmentTargetArns`: `List`\[`str`\] *(required)*
+- `assessmentTargetArns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeAssessmentTargetsResponseTypeDef](./type_defs.md#describeassessmenttargetsresponsetypedef).
@@ -349,7 +350,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `assessmentTemplateArns`: `List`\[`str`\] *(required)*
+- `assessmentTemplateArns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeAssessmentTemplatesResponseTypeDef](./type_defs.md#describeassessmenttemplatesresponsetypedef).
@@ -382,7 +383,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `exclusionArns`: `List`\[`str`\] *(required)*
+- `exclusionArns`: `Sequence`\[`str`\] *(required)*
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
 Returns
@@ -402,7 +403,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `findingArns`: `List`\[`str`\] *(required)*
+- `findingArns`: `Sequence`\[`str`\] *(required)*
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
 Returns
@@ -424,7 +425,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `resourceGroupArns`: `List`\[`str`\] *(required)*
+- `resourceGroupArns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeResourceGroupsResponseTypeDef](./type_defs.md#describeresourcegroupsresponsetypedef).
@@ -445,7 +446,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `rulesPackageArns`: `List`\[`str`\] *(required)*
+- `rulesPackageArns`: `Sequence`\[`str`\] *(required)*
 - `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
 
 Returns
@@ -463,7 +464,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -574,7 +575,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `assessmentTemplateArns`: `List`\[`str`\]
+- `assessmentTemplateArns`: `Sequence`\[`str`\]
 - `filter`:
   [AssessmentRunFilterTypeDef](./type_defs.md#assessmentrunfiltertypedef)
 - `nextToken`: `str`
@@ -622,7 +623,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `assessmentTargetArns`: `List`\[`str`\]
+- `assessmentTargetArns`: `Sequence`\[`str`\]
 - `filter`:
   [AssessmentTemplateFilterTypeDef](./type_defs.md#assessmenttemplatefiltertypedef)
 - `nextToken`: `str`
@@ -690,7 +691,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `assessmentRunArns`: `List`\[`str`\]
+- `assessmentRunArns`: `Sequence`\[`str`\]
 - `filter`: [FindingFilterTypeDef](./type_defs.md#findingfiltertypedef)
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -794,8 +795,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `findingArns`: `List`\[`str`\] *(required)*
-- `attributeKeys`: `List`\[`str`\] *(required)*
+- `findingArns`: `Sequence`\[`str`\] *(required)*
+- `attributeKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [RemoveAttributesFromFindingsResponseTypeDef](./type_defs.md#removeattributesfromfindingsresponsetypedef).
@@ -816,7 +817,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ### start_assessment_run
 

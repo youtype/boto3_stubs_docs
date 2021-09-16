@@ -257,11 +257,11 @@ Required fields:
 Optional fields:
 
 - `runOrder`: `int`
-- `configuration`: `Dict`\[`str`, `str`\]
+- `configuration`: `Mapping`\[`str`, `str`\]
 - `outputArtifacts`:
-  `List`\[[OutputArtifactTypeDef](./type_defs.md#outputartifacttypedef)\]
+  `Sequence`\[[OutputArtifactTypeDef](./type_defs.md#outputartifacttypedef)\]
 - `inputArtifacts`:
-  `List`\[[InputArtifactTypeDef](./type_defs.md#inputartifacttypedef)\]
+  `Sequence`\[[InputArtifactTypeDef](./type_defs.md#inputartifacttypedef)\]
 - `roleArn`: `str`
 - `region`: `str`
 - `namespace`: `str`
@@ -666,8 +666,8 @@ Optional fields:
 - `settings`:
   [ActionTypeSettingsTypeDef](./type_defs.md#actiontypesettingstypedef)
 - `configurationProperties`:
-  `List`\[[ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateCustomActionTypeOutputTypeDef
 
@@ -695,7 +695,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePipelineOutputTypeDef
 
@@ -1329,12 +1329,12 @@ Required fields:
 - `name`: `str`
 - `roleArn`: `str`
 - `stages`:
-  `List`\[[StageDeclarationTypeDef](./type_defs.md#stagedeclarationtypedef)\]
+  `Sequence`\[[StageDeclarationTypeDef](./type_defs.md#stagedeclarationtypedef)\]
 
 Optional fields:
 
 - `artifactStore`: [ArtifactStoreTypeDef](./type_defs.md#artifactstoretypedef)
-- `artifactStores`: `Dict`\[`str`,
+- `artifactStores`: `Mapping`\[`str`,
   [ArtifactStoreTypeDef](./type_defs.md#artifactstoretypedef)\]
 - `version`: `int`
 
@@ -1412,7 +1412,7 @@ Required fields:
 Optional fields:
 
 - `maxBatchSize`: `int`
-- `queryParam`: `Dict`\[`str`, `str`\]
+- `queryParam`: `Mapping`\[`str`, `str`\]
 
 ## PollForJobsOutputTypeDef
 
@@ -1534,7 +1534,7 @@ Optional fields:
 - `continuationToken`: `str`
 - `executionDetails`:
   [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
-- `outputVariables`: `Dict`\[`str`, `str`\]
+- `outputVariables`: `Mapping`\[`str`, `str`\]
 
 ## PutThirdPartyJobFailureResultInputRequestTypeDef
 
@@ -1581,7 +1581,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutWebhookOutputTypeDef
 
@@ -1703,12 +1703,12 @@ Required fields:
 
 - `name`: `str`
 - `actions`:
-  `List`\[[ActionDeclarationTypeDef](./type_defs.md#actiondeclarationtypedef)\]
+  `Sequence`\[[ActionDeclarationTypeDef](./type_defs.md#actiondeclarationtypedef)\]
 
 Optional fields:
 
 - `blockers`:
-  `List`\[[BlockerDeclarationTypeDef](./type_defs.md#blockerdeclarationtypedef)\]
+  `Sequence`\[[BlockerDeclarationTypeDef](./type_defs.md#blockerdeclarationtypedef)\]
 
 ## StageExecutionTypeDef
 
@@ -1812,7 +1812,7 @@ from mypy_boto3_codepipeline.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1891,7 +1891,7 @@ from mypy_boto3_codepipeline.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateActionTypeInputRequestTypeDef
 

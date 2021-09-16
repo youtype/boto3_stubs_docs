@@ -130,12 +130,15 @@ type annotations stubs module
   - [ListJobsFilterCriteriaTypeDef](#listjobsfiltercriteriatypedef)
   - [ListJobsFilterTermTypeDef](#listjobsfiltertermtypedef)
   - [ListJobsSortCriteriaTypeDef](#listjobssortcriteriatypedef)
+  - [ListManagedDataIdentifiersRequestRequestTypeDef](#listmanageddataidentifiersrequestrequesttypedef)
+  - [ListManagedDataIdentifiersResponseTypeDef](#listmanageddataidentifiersresponsetypedef)
   - [ListMembersRequestRequestTypeDef](#listmembersrequestrequesttypedef)
   - [ListMembersResponseTypeDef](#listmembersresponsetypedef)
   - [ListOrganizationAdminAccountsRequestRequestTypeDef](#listorganizationadminaccountsrequestrequesttypedef)
   - [ListOrganizationAdminAccountsResponseTypeDef](#listorganizationadminaccountsresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ManagedDataIdentifierSummaryTypeDef](#manageddataidentifiersummarytypedef)
   - [MatchingBucketTypeDef](#matchingbuckettypedef)
   - [MatchingResourceTypeDef](#matchingresourcetypedef)
   - [MemberTypeDef](#membertypedef)
@@ -339,7 +342,7 @@ from mypy_boto3_macie2.type_defs import BatchGetCustomDataIdentifiersRequestRequ
 
 Optional fields:
 
-- `ids`: `List`\[`str`\]
+- `ids`: `Sequence`\[`str`\]
 
 ## BatchGetCustomDataIdentifiersResponseTypeDef
 
@@ -427,12 +430,12 @@ from mypy_boto3_macie2.type_defs import BucketCriteriaAdditionalPropertiesTypeDe
 
 Optional fields:
 
-- `eq`: `List`\[`str`\]
+- `eq`: `Sequence`\[`str`\]
 - `gt`: `int`
 - `gte`: `int`
 - `lt`: `int`
 - `lte`: `int`
-- `neq`: `List`\[`str`\]
+- `neq`: `Sequence`\[`str`\]
 - `prefix`: `str`
 
 ## BucketLevelPermissionsTypeDef
@@ -628,13 +631,16 @@ Required fields:
 
 Optional fields:
 
-- `customDataIdentifierIds`: `List`\[`str`\]
+- `customDataIdentifierIds`: `Sequence`\[`str`\]
 - `description`: `str`
 - `initialRun`: `bool`
+- `managedDataIdentifierIds`: `Sequence`\[`str`\]
+- `managedDataIdentifierSelector`:
+  [ManagedDataIdentifierSelectorType](./literals.md#manageddataidentifierselectortype)
 - `samplingPercentage`: `int`
 - `scheduleFrequency`:
   [JobScheduleFrequencyTypeDef](./type_defs.md#jobschedulefrequencytypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateClassificationJobResponseTypeDef
 
@@ -659,12 +665,12 @@ Optional fields:
 
 - `clientToken`: `str`
 - `description`: `str`
-- `ignoreWords`: `List`\[`str`\]
-- `keywords`: `List`\[`str`\]
+- `ignoreWords`: `Sequence`\[`str`\]
+- `keywords`: `Sequence`\[`str`\]
 - `maximumMatchDistance`: `int`
 - `name`: `str`
 - `regex`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateCustomDataIdentifierResponseTypeDef
 
@@ -696,7 +702,7 @@ Optional fields:
 - `clientToken`: `str`
 - `description`: `str`
 - `position`: `int`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateFindingsFilterResponseTypeDef
 
@@ -719,7 +725,7 @@ from mypy_boto3_macie2.type_defs import CreateInvitationsRequestRequestTypeDef
 
 Required fields:
 
-- `accountIds`: `List`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -751,7 +757,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateMemberResponseTypeDef
 
@@ -773,7 +779,8 @@ from mypy_boto3_macie2.type_defs import CreateSampleFindingsRequestRequestTypeDe
 
 Optional fields:
 
-- `findingTypes`: `List`\[[FindingTypeType](./literals.md#findingtypetype)\]
+- `findingTypes`:
+  `Sequence`\[[FindingTypeType](./literals.md#findingtypetype)\]
 
 ## CriteriaBlockForJobTypeDef
 
@@ -784,7 +791,7 @@ from mypy_boto3_macie2.type_defs import CriteriaBlockForJobTypeDef
 Optional fields:
 
 - `and`:
-  `List`\[[CriteriaForJobTypeDef](./type_defs.md#criteriaforjobtypedef)\]
+  `Sequence`\[[CriteriaForJobTypeDef](./type_defs.md#criteriaforjobtypedef)\]
 
 ## CriteriaForJobTypeDef
 
@@ -807,13 +814,13 @@ from mypy_boto3_macie2.type_defs import CriterionAdditionalPropertiesTypeDef
 
 Optional fields:
 
-- `eq`: `List`\[`str`\]
-- `eqExactMatch`: `List`\[`str`\]
+- `eq`: `Sequence`\[`str`\]
+- `eqExactMatch`: `Sequence`\[`str`\]
 - `gt`: `int`
 - `gte`: `int`
 - `lt`: `int`
 - `lte`: `int`
-- `neq`: `List`\[`str`\]
+- `neq`: `Sequence`\[`str`\]
 
 ## CustomDataIdentifierSummaryTypeDef
 
@@ -862,7 +869,7 @@ from mypy_boto3_macie2.type_defs import DeclineInvitationsRequestRequestTypeDef
 
 Required fields:
 
-- `accountIds`: `List`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
 
 ## DeclineInvitationsResponseTypeDef
 
@@ -917,7 +924,7 @@ from mypy_boto3_macie2.type_defs import DeleteInvitationsRequestRequestTypeDef
 
 Required fields:
 
-- `accountIds`: `List`\[`str`\]
+- `accountIds`: `Sequence`\[`str`\]
 
 ## DeleteInvitationsResponseTypeDef
 
@@ -950,7 +957,7 @@ from mypy_boto3_macie2.type_defs import DescribeBucketsRequestRequestTypeDef
 
 Optional fields:
 
-- `criteria`: `Dict`\[`str`,
+- `criteria`: `Mapping`\[`str`,
   [BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -1001,6 +1008,9 @@ Required fields:
 - `lastRunErrorStatus`:
   [LastRunErrorStatusTypeDef](./type_defs.md#lastrunerrorstatustypedef)
 - `lastRunTime`: `datetime`
+- `managedDataIdentifierIds`: `List`\[`str`\]
+- `managedDataIdentifierSelector`:
+  [ManagedDataIdentifierSelectorType](./literals.md#manageddataidentifierselectortype)
 - `name`: `str`
 - `s3JobDefinition`:
   [S3JobDefinitionTypeDef](./type_defs.md#s3jobdefinitiontypedef)
@@ -1133,7 +1143,7 @@ from mypy_boto3_macie2.type_defs import FindingCriteriaTypeDef
 
 Optional fields:
 
-- `criterion`: `Dict`\[`str`,
+- `criterion`: `Mapping`\[`str`,
   [CriterionAdditionalPropertiesTypeDef](./type_defs.md#criterionadditionalpropertiestypedef)\]
 
 ## FindingStatisticsSortCriteriaTypeDef
@@ -1370,7 +1380,7 @@ from mypy_boto3_macie2.type_defs import GetFindingsRequestRequestTypeDef
 
 Required fields:
 
-- `findingIds`: `List`\[`str`\]
+- `findingIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1469,7 +1479,7 @@ from mypy_boto3_macie2.type_defs import GetUsageStatisticsRequestRequestTypeDef
 Optional fields:
 
 - `filterBy`:
-  `List`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
+  `Sequence`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `sortBy`:
@@ -1633,7 +1643,7 @@ from mypy_boto3_macie2.type_defs import JobScheduleFrequencyTypeDef
 
 Optional fields:
 
-- `dailySchedule`: `Dict`\[`str`, `Any`\]
+- `dailySchedule`: `Mapping`\[`str`, `Any`\]
 - `monthlySchedule`:
   [MonthlyScheduleTypeDef](./type_defs.md#monthlyscheduletypedef)
 - `weeklySchedule`:
@@ -1659,7 +1669,8 @@ from mypy_boto3_macie2.type_defs import JobScopingBlockTypeDef
 
 Optional fields:
 
-- `and`: `List`\[[JobScopeTermTypeDef](./type_defs.md#jobscopetermtypedef)\]
+- `and`:
+  `Sequence`\[[JobScopeTermTypeDef](./type_defs.md#jobscopetermtypedef)\]
 
 ## JobSummaryTypeDef
 
@@ -1844,9 +1855,9 @@ from mypy_boto3_macie2.type_defs import ListJobsFilterCriteriaTypeDef
 Optional fields:
 
 - `excludes`:
-  `List`\[[ListJobsFilterTermTypeDef](./type_defs.md#listjobsfiltertermtypedef)\]
+  `Sequence`\[[ListJobsFilterTermTypeDef](./type_defs.md#listjobsfiltertermtypedef)\]
 - `includes`:
-  `List`\[[ListJobsFilterTermTypeDef](./type_defs.md#listjobsfiltertermtypedef)\]
+  `Sequence`\[[ListJobsFilterTermTypeDef](./type_defs.md#listjobsfiltertermtypedef)\]
 
 ## ListJobsFilterTermTypeDef
 
@@ -1858,7 +1869,7 @@ Optional fields:
 
 - `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
 - `key`: [ListJobsFilterKeyType](./literals.md#listjobsfilterkeytype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## ListJobsSortCriteriaTypeDef
 
@@ -1871,6 +1882,30 @@ Optional fields:
 - `attributeName`:
   [ListJobsSortAttributeNameType](./literals.md#listjobssortattributenametype)
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
+
+## ListManagedDataIdentifiersRequestRequestTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import ListManagedDataIdentifiersRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `nextToken`: `str`
+
+## ListManagedDataIdentifiersResponseTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import ListManagedDataIdentifiersResponseTypeDef
+```
+
+Required fields:
+
+- `items`:
+  `List`\[[ManagedDataIdentifierSummaryTypeDef](./type_defs.md#manageddataidentifiersummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## ListMembersRequestRequestTypeDef
 
@@ -1943,6 +1978,18 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ManagedDataIdentifierSummaryTypeDef
+
+```python
+from mypy_boto3_macie2.type_defs import ManagedDataIdentifierSummaryTypeDef
+```
+
+Optional fields:
+
+- `category`:
+  [SensitiveDataItemCategoryType](./literals.md#sensitivedataitemcategorytype)
+- `id`: `str`
 
 ## MatchingBucketTypeDef
 
@@ -2200,7 +2247,7 @@ from mypy_boto3_macie2.type_defs import S3BucketDefinitionForJobTypeDef
 Required fields:
 
 - `accountId`: `str`
-- `buckets`: `List`\[`str`\]
+- `buckets`: `Sequence`\[`str`\]
 
 ## S3BucketOwnerTypeDef
 
@@ -2257,7 +2304,7 @@ from mypy_boto3_macie2.type_defs import S3JobDefinitionTypeDef
 Optional fields:
 
 - `bucketDefinitions`:
-  `List`\[[S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef)\]
+  `Sequence`\[[S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef)\]
 - `scoping`: [ScopingTypeDef](./type_defs.md#scopingtypedef)
 - `bucketCriteria`:
   [S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef)
@@ -2317,7 +2364,7 @@ from mypy_boto3_macie2.type_defs import SearchResourcesCriteriaBlockTypeDef
 Optional fields:
 
 - `and`:
-  `List`\[[SearchResourcesCriteriaTypeDef](./type_defs.md#searchresourcescriteriatypedef)\]
+  `Sequence`\[[SearchResourcesCriteriaTypeDef](./type_defs.md#searchresourcescriteriatypedef)\]
 
 ## SearchResourcesCriteriaTypeDef
 
@@ -2373,7 +2420,7 @@ Optional fields:
   [SearchResourcesComparatorType](./literals.md#searchresourcescomparatortype)
 - `key`:
   [SearchResourcesSimpleCriterionKeyType](./literals.md#searchresourcessimplecriterionkeytype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## SearchResourcesSortCriteriaTypeDef
 
@@ -2409,7 +2456,7 @@ Optional fields:
 - `comparator`:
   [SearchResourcesComparatorType](./literals.md#searchresourcescomparatortype)
 - `tagValues`:
-  `List`\[[SearchResourcesTagCriterionPairTypeDef](./type_defs.md#searchresourcestagcriterionpairtypedef)\]
+  `Sequence`\[[SearchResourcesTagCriterionPairTypeDef](./type_defs.md#searchresourcestagcriterionpairtypedef)\]
 
 ## SecurityHubConfigurationTypeDef
 
@@ -2519,7 +2566,7 @@ Optional fields:
 - `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
 - `key`:
   [SimpleCriterionKeyForJobType](./literals.md#simplecriterionkeyforjobtype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## SimpleScopeTermTypeDef
 
@@ -2531,7 +2578,7 @@ Optional fields:
 
 - `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
 - `key`: [ScopeFilterKeyType](./literals.md#scopefilterkeytype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## SortCriteriaTypeDef
 
@@ -2565,7 +2612,7 @@ Optional fields:
 
 - `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
 - `tagValues`:
-  `List`\[[TagCriterionPairForJobTypeDef](./type_defs.md#tagcriterionpairforjobtypedef)\]
+  `Sequence`\[[TagCriterionPairForJobTypeDef](./type_defs.md#tagcriterionpairforjobtypedef)\]
 
 ## TagCriterionPairForJobTypeDef
 
@@ -2587,7 +2634,7 @@ from mypy_boto3_macie2.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TagScopeTermTypeDef
 
@@ -2600,7 +2647,7 @@ Optional fields:
 - `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
 - `key`: `str`
 - `tagValues`:
-  `List`\[[TagValuePairTypeDef](./type_defs.md#tagvaluepairtypedef)\]
+  `Sequence`\[[TagValuePairTypeDef](./type_defs.md#tagvaluepairtypedef)\]
 - `target`: `Literal['S3_OBJECT']` (see
   [TagTargetType](./literals.md#tagtargettype))
 
@@ -2628,8 +2675,8 @@ Required fields:
 
 Optional fields:
 
-- `ignoreWords`: `List`\[`str`\]
-- `keywords`: `List`\[`str`\]
+- `ignoreWords`: `Sequence`\[`str`\]
+- `keywords`: `Sequence`\[`str`\]
 - `maximumMatchDistance`: `int`
 
 ## TestCustomDataIdentifierResponseTypeDef
@@ -2665,7 +2712,7 @@ from mypy_boto3_macie2.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateClassificationJobRequestRequestTypeDef
 
@@ -2782,7 +2829,7 @@ Optional fields:
   [UsageStatisticsFilterComparatorType](./literals.md#usagestatisticsfiltercomparatortype)
 - `key`:
   [UsageStatisticsFilterKeyType](./literals.md#usagestatisticsfilterkeytype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## UsageStatisticsSortByTypeDef
 

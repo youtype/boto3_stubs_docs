@@ -183,7 +183,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EmergencyContactList`:
-  `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
+  `Sequence`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -219,7 +219,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateProtectionResponseTypeDef](./type_defs.md#createprotectionresponsetypedef).
@@ -248,8 +248,8 @@ Keyword-only arguments:
   *(required)*
 - `ResourceType`:
   [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
-- `Members`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Members`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -516,7 +516,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -549,7 +549,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceArns`: `List`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 - `StartTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `EndTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `NextToken`: `str`
@@ -655,7 +655,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -674,7 +674,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -697,7 +697,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EmergencyContactList`:
-  `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
+  `Sequence`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -724,7 +724,7 @@ Keyword-only arguments:
   *(required)*
 - `ResourceType`:
   [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
-- `Members`: `List`\[`str`\]
+- `Members`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 

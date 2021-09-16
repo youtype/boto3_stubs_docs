@@ -130,7 +130,7 @@ Keyword-only arguments:
 - `OpsCenterEnabled`: `bool`
 - `CWEMonitorEnabled`: `bool`
 - `OpsItemSNSTopicArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
@@ -152,7 +152,7 @@ Keyword-only arguments:
 
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
-- `ResourceList`: `List`\[`str`\] *(required)*
+- `ResourceList`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -421,7 +421,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -603,7 +603,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -623,7 +623,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -670,7 +670,7 @@ Keyword-only arguments:
 - `ResourceGroupName`: `str` *(required)*
 - `ComponentName`: `str` *(required)*
 - `NewComponentName`: `str`
-- `ResourceList`: `List`\[`str`\]
+- `ResourceList`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 

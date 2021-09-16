@@ -29,7 +29,7 @@ Boto3 documentation:
 
 Arguments for `FleetStartedWaiter.wait` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
@@ -51,6 +51,6 @@ Boto3 documentation:
 
 Arguments for `FleetStoppedWaiter.wait` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

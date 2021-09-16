@@ -111,6 +111,7 @@ from mypy_boto3_batch.literals import ArrayJobDependencyType, ...
 - [PlatformCapabilityType](./literals.md#platformcapabilitytype)
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [RetryActionType](./literals.md#retryactiontype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

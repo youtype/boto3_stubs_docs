@@ -379,11 +379,11 @@ from mypy_boto3_events.type_defs import ConnectionHttpParametersTypeDef
 Optional fields:
 
 - `HeaderParameters`:
-  `List`\[[ConnectionHeaderParameterTypeDef](./type_defs.md#connectionheaderparametertypedef)\]
+  `Sequence`\[[ConnectionHeaderParameterTypeDef](./type_defs.md#connectionheaderparametertypedef)\]
 - `QueryStringParameters`:
-  `List`\[[ConnectionQueryStringParameterTypeDef](./type_defs.md#connectionquerystringparametertypedef)\]
+  `Sequence`\[[ConnectionQueryStringParameterTypeDef](./type_defs.md#connectionquerystringparametertypedef)\]
 - `BodyParameters`:
-  `List`\[[ConnectionBodyParameterTypeDef](./type_defs.md#connectionbodyparametertypedef)\]
+  `Sequence`\[[ConnectionBodyParameterTypeDef](./type_defs.md#connectionbodyparametertypedef)\]
 
 ## ConnectionOAuthClientResponseParametersTypeDef
 
@@ -623,7 +623,7 @@ Required fields:
 Optional fields:
 
 - `EventSourceName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEventBusResponseTypeDef
 
@@ -1555,7 +1555,7 @@ Optional fields:
 
 - `Time`: `Union`\[`datetime`, `str`\]
 - `Source`: `str`
-- `Resources`: `List`\[`str`\]
+- `Resources`: `Sequence`\[`str`\]
 - `DetailType`: `str`
 - `Detail`: `str`
 - `EventBusName`: `str`
@@ -1570,7 +1570,7 @@ from mypy_boto3_events.type_defs import PutEventsRequestRequestTypeDef
 Required fields:
 
 - `Entries`:
-  `List`\[[PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef)\]
+  `Sequence`\[[PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef)\]
 
 ## PutEventsResponseTypeDef
 
@@ -1608,7 +1608,7 @@ Optional fields:
 
 - `Time`: `Union`\[`datetime`, `str`\]
 - `Source`: `str`
-- `Resources`: `List`\[`str`\]
+- `Resources`: `Sequence`\[`str`\]
 - `DetailType`: `str`
 - `Detail`: `str`
 
@@ -1621,7 +1621,7 @@ from mypy_boto3_events.type_defs import PutPartnerEventsRequestRequestTypeDef
 Required fields:
 
 - `Entries`:
-  `List`\[[PutPartnerEventsRequestEntryTypeDef](./type_defs.md#putpartnereventsrequestentrytypedef)\]
+  `Sequence`\[[PutPartnerEventsRequestEntryTypeDef](./type_defs.md#putpartnereventsrequestentrytypedef)\]
 
 ## PutPartnerEventsResponseTypeDef
 
@@ -1681,7 +1681,7 @@ Optional fields:
 - `State`: [RuleStateType](./literals.md#rulestatetype)
 - `Description`: `str`
 - `RoleArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EventBusName`: `str`
 
 ## PutRuleResponseTypeDef
@@ -1705,7 +1705,7 @@ from mypy_boto3_events.type_defs import PutTargetsRequestRequestTypeDef
 Required fields:
 
 - `Rule`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 
 Optional fields:
 
@@ -1776,7 +1776,7 @@ from mypy_boto3_events.type_defs import RemoveTargetsRequestRequestTypeDef
 Required fields:
 
 - `Rule`: `str`
-- `Ids`: `List`\[`str`\]
+- `Ids`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1981,7 +1981,7 @@ from mypy_boto3_events.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -2062,7 +2062,7 @@ from mypy_boto3_events.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApiDestinationRequestRequestTypeDef
 

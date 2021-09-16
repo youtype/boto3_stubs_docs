@@ -507,7 +507,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## Bucket
 
@@ -875,7 +875,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.Bucket.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Bucket.load method
 
@@ -915,7 +915,7 @@ Keyword-only arguments:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -1039,7 +1039,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.BucketAcl.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### BucketAcl.load method
 
@@ -1144,7 +1144,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.BucketCors.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### BucketCors.load method
 
@@ -1244,7 +1244,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.BucketLifecycle.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### BucketLifecycle.load method
 
@@ -1343,7 +1343,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.BucketLifecycleConfiguration.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### BucketLifecycleConfiguration.load method
 
@@ -1427,7 +1427,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.BucketLogging.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### BucketLogging.load method
 
@@ -1514,7 +1514,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.BucketNotification.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### BucketNotification.load method
 
@@ -1615,7 +1615,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.BucketPolicy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### BucketPolicy.load method
 
@@ -1698,7 +1698,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.BucketRequestPayment.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### BucketRequestPayment.load method
 
@@ -1798,7 +1798,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.BucketTagging.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### BucketTagging.load method
 
@@ -1901,7 +1901,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.BucketVersioning.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### BucketVersioning.load method
 
@@ -2025,7 +2025,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.BucketWebsite.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### BucketWebsite.load method
 
@@ -2201,7 +2201,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.MultipartUpload.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## MultipartUploadPart
 
@@ -2285,7 +2285,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.MultipartUploadPart.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### MultipartUploadPart.upload method
 
@@ -2475,7 +2475,7 @@ Keyword-only arguments:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `MetadataDirective`:
   [MetadataDirectiveType](./literals.md#metadatadirectivetype)
 - `TaggingDirective`:
@@ -2612,7 +2612,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.Object.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Object.initiate_multipart_upload method
 
@@ -2639,7 +2639,7 @@ Keyword-only arguments:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -2699,7 +2699,7 @@ Keyword-only arguments:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -2858,7 +2858,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.ObjectAcl.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### ObjectAcl.load method
 
@@ -3037,7 +3037,7 @@ Keyword-only arguments:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `MetadataDirective`:
   [MetadataDirectiveType](./literals.md#metadatadirectivetype)
 - `TaggingDirective`:
@@ -3136,7 +3136,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.ObjectSummary.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### ObjectSummary.initiate_multipart_upload method
 
@@ -3163,7 +3163,7 @@ Keyword-only arguments:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -3223,7 +3223,7 @@ Keyword-only arguments:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -3398,7 +3398,7 @@ Type annotations for `boto3.resource("s3").get_available_subresources` method.
 Boto3 documentation:
 [S3.ObjectVersion.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### ObjectVersion.head method
 

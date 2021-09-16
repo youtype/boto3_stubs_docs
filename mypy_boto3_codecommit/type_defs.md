@@ -322,7 +322,7 @@ from mypy_boto3_codecommit.type_defs import BatchAssociateApprovalRuleTemplateWi
 Required fields:
 
 - `approvalRuleTemplateName`: `str`
-- `repositoryNames`: `List`\[`str`\]
+- `repositoryNames`: `Sequence`\[`str`\]
 
 ## BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef
 
@@ -368,7 +368,7 @@ Optional fields:
 
 - `maxMergeHunks`: `int`
 - `maxConflictFiles`: `int`
-- `filePaths`: `List`\[`str`\]
+- `filePaths`: `Sequence`\[`str`\]
 - `conflictDetailLevel`:
   [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
 - `conflictResolutionStrategy`:
@@ -414,7 +414,7 @@ from mypy_boto3_codecommit.type_defs import BatchDisassociateApprovalRuleTemplat
 Required fields:
 
 - `approvalRuleTemplateName`: `str`
-- `repositoryNames`: `List`\[`str`\]
+- `repositoryNames`: `Sequence`\[`str`\]
 
 ## BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef
 
@@ -450,7 +450,7 @@ from mypy_boto3_codecommit.type_defs import BatchGetCommitsInputRequestTypeDef
 
 Required fields:
 
-- `commitIds`: `List`\[`str`\]
+- `commitIds`: `Sequence`\[`str`\]
 - `repositoryName`: `str`
 
 ## BatchGetCommitsOutputTypeDef
@@ -475,7 +475,7 @@ from mypy_boto3_codecommit.type_defs import BatchGetRepositoriesInputRequestType
 
 Required fields:
 
-- `repositoryNames`: `List`\[`str`\]
+- `repositoryNames`: `Sequence`\[`str`\]
 
 ## BatchGetRepositoriesOutputTypeDef
 
@@ -611,11 +611,11 @@ from mypy_boto3_codecommit.type_defs import ConflictResolutionTypeDef
 Optional fields:
 
 - `replaceContents`:
-  `List`\[[ReplaceContentEntryTypeDef](./type_defs.md#replacecontententrytypedef)\]
+  `Sequence`\[[ReplaceContentEntryTypeDef](./type_defs.md#replacecontententrytypedef)\]
 - `deleteFiles`:
-  `List`\[[DeleteFileEntryTypeDef](./type_defs.md#deletefileentrytypedef)\]
+  `Sequence`\[[DeleteFileEntryTypeDef](./type_defs.md#deletefileentrytypedef)\]
 - `setFileModes`:
-  `List`\[[SetFileModeEntryTypeDef](./type_defs.md#setfilemodeentrytypedef)\]
+  `Sequence`\[[SetFileModeEntryTypeDef](./type_defs.md#setfilemodeentrytypedef)\]
 
 ## ConflictTypeDef
 
@@ -688,11 +688,11 @@ Optional fields:
 - `commitMessage`: `str`
 - `keepEmptyFolders`: `bool`
 - `putFiles`:
-  `List`\[[PutFileEntryTypeDef](./type_defs.md#putfileentrytypedef)\]
+  `Sequence`\[[PutFileEntryTypeDef](./type_defs.md#putfileentrytypedef)\]
 - `deleteFiles`:
-  `List`\[[DeleteFileEntryTypeDef](./type_defs.md#deletefileentrytypedef)\]
+  `Sequence`\[[DeleteFileEntryTypeDef](./type_defs.md#deletefileentrytypedef)\]
 - `setFileModes`:
-  `List`\[[SetFileModeEntryTypeDef](./type_defs.md#setfilemodeentrytypedef)\]
+  `Sequence`\[[SetFileModeEntryTypeDef](./type_defs.md#setfilemodeentrytypedef)\]
 
 ## CreateCommitOutputTypeDef
 
@@ -746,7 +746,7 @@ from mypy_boto3_codecommit.type_defs import CreatePullRequestInputRequestTypeDef
 Required fields:
 
 - `title`: `str`
-- `targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 
 Optional fields:
 
@@ -778,7 +778,7 @@ Required fields:
 Optional fields:
 
 - `repositoryDescription`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRepositoryOutputTypeDef
 
@@ -2528,7 +2528,7 @@ Required fields:
 
 - `repositoryName`: `str`
 - `triggers`:
-  `List`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
+  `Sequence`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
 
 ## PutRepositoryTriggersOutputTypeDef
 
@@ -2716,7 +2716,7 @@ from mypy_boto3_codecommit.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TargetTypeDef
 
@@ -2743,7 +2743,7 @@ Required fields:
 
 - `repositoryName`: `str`
 - `triggers`:
-  `List`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
+  `Sequence`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
 
 ## TestRepositoryTriggersOutputTypeDef
 
@@ -2768,7 +2768,7 @@ from mypy_boto3_codecommit.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApprovalRuleTemplateContentInputRequestTypeDef
 

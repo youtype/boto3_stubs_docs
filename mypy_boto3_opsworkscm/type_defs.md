@@ -74,7 +74,7 @@ Required fields:
 - `ServerName`: `str`
 - `NodeName`: `str`
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 ## AssociateNodeResponseTypeDef
 
@@ -134,7 +134,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateBackupResponseTypeDef
 
@@ -172,14 +172,14 @@ Optional fields:
 - `EngineModel`: `str`
 - `EngineVersion`: `str`
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 - `BackupRetentionCount`: `int`
 - `KeyPair`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `PreferredBackupWindow`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SubnetIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `BackupId`: `str`
 
 ## CreateServerResponseTypeDef
@@ -347,7 +347,7 @@ Required fields:
 Optional fields:
 
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 ## DisassociateNodeResponseTypeDef
 
@@ -386,7 +386,7 @@ Required fields:
 Optional fields:
 
 - `InputAttributes`:
-  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 ## ExportServerEngineAttributeResponseTypeDef
 
@@ -545,7 +545,7 @@ Required fields:
 Optional fields:
 
 - `EngineAttributes`:
-  `List`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
+  `Sequence`\[[EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)\]
 
 ## StartMaintenanceResponseTypeDef
 
@@ -568,7 +568,7 @@ from mypy_boto3_opsworkscm.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -590,7 +590,7 @@ from mypy_boto3_opsworkscm.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateServerEngineAttributesRequestRequestTypeDef
 

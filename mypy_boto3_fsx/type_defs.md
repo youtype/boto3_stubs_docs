@@ -178,7 +178,7 @@ from mypy_boto3_fsx.type_defs import AssociateFileSystemAliasesRequestRequestTyp
 Required fields:
 
 - `FileSystemId`: `str`
-- `Aliases`: `List`\[`str`\]
+- `Aliases`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -294,7 +294,7 @@ Optional fields:
 - `SourceRegion`: `str`
 - `KmsKeyId`: `str`
 - `CopyTags`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CopyBackupResponseTypeDef
 
@@ -318,7 +318,7 @@ Optional fields:
 
 - `FileSystemId`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VolumeId`: `str`
 
 ## CreateBackupResponseTypeDef
@@ -348,9 +348,9 @@ Required fields:
 
 Optional fields:
 
-- `Paths`: `List`\[`str`\]
+- `Paths`: `Sequence`\[`str`\]
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDataRepositoryTaskResponseTypeDef
 
@@ -374,13 +374,13 @@ from mypy_boto3_fsx.type_defs import CreateFileSystemFromBackupRequestRequestTyp
 Required fields:
 
 - `BackupId`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `ClientRequestToken`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `WindowsConfiguration`:
   [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
 - `LustreConfiguration`:
@@ -445,7 +445,7 @@ Optional fields:
 - `DiskIopsConfiguration`:
   [DiskIopsConfigurationTypeDef](./type_defs.md#diskiopsconfigurationtypedef)
 - `PreferredSubnetId`: `str`
-- `RouteTableIds`: `List`\[`str`\]
+- `RouteTableIds`: `Sequence`\[`str`\]
 - `WeeklyMaintenanceStartTime`: `str`
 
 ## CreateFileSystemRequestRequestTypeDef
@@ -458,14 +458,14 @@ Required fields:
 
 - `FileSystemType`: [FileSystemTypeType](./literals.md#filesystemtypetype)
 - `StorageCapacity`: `int`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `ClientRequestToken`: `str`
 - `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `WindowsConfiguration`:
   [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
@@ -508,7 +508,7 @@ Optional fields:
 - `DailyAutomaticBackupStartTime`: `str`
 - `AutomaticBackupRetentionDays`: `int`
 - `CopyTagsToBackups`: `bool`
-- `Aliases`: `List`\[`str`\]
+- `Aliases`: `Sequence`\[`str`\]
 - `AuditLogConfiguration`:
   [WindowsAuditLogCreateConfigurationTypeDef](./type_defs.md#windowsauditlogcreateconfigurationtypedef)
 
@@ -547,7 +547,7 @@ Optional fields:
   [CreateSvmActiveDirectoryConfigurationTypeDef](./type_defs.md#createsvmactivedirectoryconfigurationtypedef)
 - `ClientRequestToken`: `str`
 - `SvmAdminPassword`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `RootVolumeSecurityStyle`:
   [StorageVirtualMachineRootVolumeSecurityStyleType](./literals.md#storagevirtualmachinerootvolumesecuritystyletype)
 
@@ -595,7 +595,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `OntapConfiguration`:
   [CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateVolumeFromBackupResponseTypeDef
 
@@ -626,7 +626,7 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `OntapConfiguration`:
   [CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateVolumeResponseTypeDef
 
@@ -688,7 +688,7 @@ Optional fields:
 
 - `Name`:
   [DataRepositoryTaskFilterNameType](./literals.md#datarepositorytaskfilternametype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## DataRepositoryTaskStatusTypeDef
 
@@ -768,7 +768,7 @@ from mypy_boto3_fsx.type_defs import DeleteFileSystemLustreConfigurationTypeDef
 Optional fields:
 
 - `SkipFinalBackup`: `bool`
-- `FinalBackupTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `FinalBackupTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DeleteFileSystemLustreResponseTypeDef
 
@@ -825,7 +825,7 @@ from mypy_boto3_fsx.type_defs import DeleteFileSystemWindowsConfigurationTypeDef
 Optional fields:
 
 - `SkipFinalBackup`: `bool`
-- `FinalBackupTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `FinalBackupTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DeleteFileSystemWindowsResponseTypeDef
 
@@ -875,7 +875,7 @@ from mypy_boto3_fsx.type_defs import DeleteVolumeOntapConfigurationTypeDef
 Optional fields:
 
 - `SkipFinalBackup`: `bool`
-- `FinalBackupTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `FinalBackupTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DeleteVolumeOntapResponseTypeDef
 
@@ -927,8 +927,8 @@ from mypy_boto3_fsx.type_defs import DescribeBackupsRequestRequestTypeDef
 
 Optional fields:
 
-- `BackupIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `BackupIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -953,9 +953,9 @@ from mypy_boto3_fsx.type_defs import DescribeDataRepositoryTasksRequestRequestTy
 
 Optional fields:
 
-- `TaskIds`: `List`\[`str`\]
+- `TaskIds`: `Sequence`\[`str`\]
 - `Filters`:
-  `List`\[[DataRepositoryTaskFilterTypeDef](./type_defs.md#datarepositorytaskfiltertypedef)\]
+  `Sequence`\[[DataRepositoryTaskFilterTypeDef](./type_defs.md#datarepositorytaskfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1010,7 +1010,7 @@ from mypy_boto3_fsx.type_defs import DescribeFileSystemsRequestRequestTypeDef
 
 Optional fields:
 
-- `FileSystemIds`: `List`\[`str`\]
+- `FileSystemIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1036,9 +1036,9 @@ from mypy_boto3_fsx.type_defs import DescribeStorageVirtualMachinesRequestReques
 
 Optional fields:
 
-- `StorageVirtualMachineIds`: `List`\[`str`\]
+- `StorageVirtualMachineIds`: `Sequence`\[`str`\]
 - `Filters`:
-  `List`\[[StorageVirtualMachineFilterTypeDef](./type_defs.md#storagevirtualmachinefiltertypedef)\]
+  `Sequence`\[[StorageVirtualMachineFilterTypeDef](./type_defs.md#storagevirtualmachinefiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1064,9 +1064,9 @@ from mypy_boto3_fsx.type_defs import DescribeVolumesRequestRequestTypeDef
 
 Optional fields:
 
-- `VolumeIds`: `List`\[`str`\]
+- `VolumeIds`: `Sequence`\[`str`\]
 - `Filters`:
-  `List`\[[VolumeFilterTypeDef](./type_defs.md#volumefiltertypedef)\]
+  `Sequence`\[[VolumeFilterTypeDef](./type_defs.md#volumefiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1092,7 +1092,7 @@ from mypy_boto3_fsx.type_defs import DisassociateFileSystemAliasesRequestRequest
 Required fields:
 
 - `FileSystemId`: `str`
-- `Aliases`: `List`\[`str`\]
+- `Aliases`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1198,7 +1198,7 @@ from mypy_boto3_fsx.type_defs import FilterTypeDef
 Optional fields:
 
 - `Name`: [FilterNameType](./literals.md#filternametype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## LifecycleTransitionReasonTypeDef
 
@@ -1353,7 +1353,7 @@ Required fields:
 - `DomainName`: `str`
 - `UserName`: `str`
 - `Password`: `str`
-- `DnsIps`: `List`\[`str`\]
+- `DnsIps`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1370,7 +1370,7 @@ Optional fields:
 
 - `UserName`: `str`
 - `Password`: `str`
-- `DnsIps`: `List`\[`str`\]
+- `DnsIps`: `Sequence`\[`str`\]
 
 ## StorageVirtualMachineFilterTypeDef
 
@@ -1382,7 +1382,7 @@ Optional fields:
 
 - `Name`: `Literal['file-system-id']` (see
   [StorageVirtualMachineFilterNameType](./literals.md#storagevirtualmachinefilternametype))
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## StorageVirtualMachineTypeDef
 
@@ -1456,7 +1456,7 @@ from mypy_boto3_fsx.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1489,7 +1489,7 @@ from mypy_boto3_fsx.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateFileSystemLustreConfigurationTypeDef
 
@@ -1662,7 +1662,7 @@ from mypy_boto3_fsx.type_defs import VolumeFilterTypeDef
 Optional fields:
 
 - `Name`: [VolumeFilterNameType](./literals.md#volumefilternametype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## VolumeTypeDef
 

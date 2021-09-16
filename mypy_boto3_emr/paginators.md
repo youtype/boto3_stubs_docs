@@ -65,7 +65,8 @@ Arguments for `ListClustersPaginator.paginate` method:
 
 - `CreatedAfter`: `Union`\[`datetime`, `str`\]
 - `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ClusterStates`: `List`\[[ClusterStateType](./literals.md#clusterstatetype)\]
+- `ClusterStates`:
+  `Sequence`\[[ClusterStateType](./literals.md#clusterstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -145,12 +146,12 @@ Arguments for `ListInstancesPaginator.paginate` method:
 - `ClusterId`: `str` *(required)*
 - `InstanceGroupId`: `str`
 - `InstanceGroupTypes`:
-  `List`\[[InstanceGroupTypeType](./literals.md#instancegrouptypetype)\]
+  `Sequence`\[[InstanceGroupTypeType](./literals.md#instancegrouptypetype)\]
 - `InstanceFleetId`: `str`
 - `InstanceFleetType`:
   [InstanceFleetTypeType](./literals.md#instancefleettypetype)
 - `InstanceStates`:
-  `List`\[[InstanceStateType](./literals.md#instancestatetype)\]
+  `Sequence`\[[InstanceStateType](./literals.md#instancestatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -231,8 +232,8 @@ Boto3 documentation:
 Arguments for `ListStepsPaginator.paginate` method:
 
 - `ClusterId`: `str` *(required)*
-- `StepStates`: `List`\[[StepStateType](./literals.md#stepstatetype)\]
-- `StepIds`: `List`\[`str`\]
+- `StepStates`: `Sequence`\[[StepStateType](./literals.md#stepstatetype)\]
+- `StepIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

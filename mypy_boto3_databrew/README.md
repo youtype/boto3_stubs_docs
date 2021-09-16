@@ -139,6 +139,7 @@ from mypy_boto3_databrew.literals import CompressionFormatType, ...
 - [SampleTypeType](./literals.md#sampletypetype)
 - [SessionStatusType](./literals.md#sessionstatustype)
 - [SourceType](./literals.md#sourcetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

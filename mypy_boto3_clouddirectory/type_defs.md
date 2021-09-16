@@ -232,7 +232,7 @@ Required fields:
 Optional fields:
 
 - `ObjectAttributeList`:
-  `List`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
+  `Sequence`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
 
 ## ApplySchemaRequestRequestTypeDef
 
@@ -341,7 +341,7 @@ Required fields:
 - `TypedLinkFacet`:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
 - `Attributes`:
-  `List`\[[AttributeNameAndValueTypeDef](./type_defs.md#attributenameandvaluetypedef)\]
+  `Sequence`\[[AttributeNameAndValueTypeDef](./type_defs.md#attributenameandvaluetypedef)\]
 
 ## AttachTypedLinkResponseTypeDef
 
@@ -402,7 +402,7 @@ Required fields:
 
 - `SchemaFacet`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
 - `ObjectAttributeList`:
-  `List`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
+  `Sequence`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef)
 
@@ -492,7 +492,7 @@ Required fields:
 - `TypedLinkFacet`:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
 - `Attributes`:
-  `List`\[[AttributeNameAndValueTypeDef](./type_defs.md#attributenameandvaluetypedef)\]
+  `Sequence`\[[AttributeNameAndValueTypeDef](./type_defs.md#attributenameandvaluetypedef)\]
 
 ## BatchCreateIndexResponseTypeDef
 
@@ -513,7 +513,7 @@ from mypy_boto3_clouddirectory.type_defs import BatchCreateIndexTypeDef
 Required fields:
 
 - `OrderedIndexedAttributeList`:
-  `List`\[[AttributeKeyTypeDef](./type_defs.md#attributekeytypedef)\]
+  `Sequence`\[[AttributeKeyTypeDef](./type_defs.md#attributekeytypedef)\]
 - `IsUnique`: `bool`
 
 Optional fields:
@@ -542,9 +542,9 @@ from mypy_boto3_clouddirectory.type_defs import BatchCreateObjectTypeDef
 Required fields:
 
 - `SchemaFacet`:
-  `List`\[[SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)\]
+  `Sequence`\[[SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)\]
 - `ObjectAttributeList`:
-  `List`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
+  `Sequence`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
 
 Optional fields:
 
@@ -658,7 +658,7 @@ Required fields:
 
 - `TypedLinkSpecifier`:
   [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
-- `AttributeNames`: `List`\[`str`\]
+- `AttributeNames`: `Sequence`\[`str`\]
 
 ## BatchGetObjectAttributesResponseTypeDef
 
@@ -682,7 +682,7 @@ Required fields:
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef)
 - `SchemaFacet`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
-- `AttributeNames`: `List`\[`str`\]
+- `AttributeNames`: `Sequence`\[`str`\]
 
 ## BatchGetObjectInformationResponseTypeDef
 
@@ -761,7 +761,7 @@ Required fields:
 Optional fields:
 
 - `FilterAttributeRanges`:
-  `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
+  `Sequence`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
 - `NextToken`: `str`
@@ -793,7 +793,7 @@ Required fields:
 Optional fields:
 
 - `RangesOnIndexedValues`:
-  `List`\[[ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef)\]
+  `Sequence`\[[ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -962,7 +962,7 @@ Required fields:
 Optional fields:
 
 - `FilterAttributeRanges`:
-  `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
+  `Sequence`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
 - `NextToken`: `str`
@@ -1094,7 +1094,7 @@ Required fields:
 
 - `DirectoryArn`: `str`
 - `Operations`:
-  `List`\[[BatchReadOperationTypeDef](./type_defs.md#batchreadoperationtypedef)\]
+  `Sequence`\[[BatchReadOperationTypeDef](./type_defs.md#batchreadoperationtypedef)\]
 
 Optional fields:
 
@@ -1174,7 +1174,7 @@ Required fields:
 - `TypedLinkSpecifier`:
   [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
 - `AttributeUpdates`:
-  `List`\[[LinkAttributeUpdateTypeDef](./type_defs.md#linkattributeupdatetypedef)\]
+  `Sequence`\[[LinkAttributeUpdateTypeDef](./type_defs.md#linkattributeupdatetypedef)\]
 
 ## BatchUpdateObjectAttributesResponseTypeDef
 
@@ -1197,7 +1197,7 @@ Required fields:
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef)
 - `AttributeUpdates`:
-  `List`\[[ObjectAttributeUpdateTypeDef](./type_defs.md#objectattributeupdatetypedef)\]
+  `Sequence`\[[ObjectAttributeUpdateTypeDef](./type_defs.md#objectattributeupdatetypedef)\]
 
 ## BatchWriteOperationResponseTypeDef
 
@@ -1280,7 +1280,7 @@ Required fields:
 
 - `DirectoryArn`: `str`
 - `Operations`:
-  `List`\[[BatchWriteOperationTypeDef](./type_defs.md#batchwriteoperationtypedef)\]
+  `Sequence`\[[BatchWriteOperationTypeDef](./type_defs.md#batchwriteoperationtypedef)\]
 
 ## BatchWriteResponseTypeDef
 
@@ -1335,7 +1335,7 @@ Required fields:
 Optional fields:
 
 - `Attributes`:
-  `List`\[[FacetAttributeTypeDef](./type_defs.md#facetattributetypedef)\]
+  `Sequence`\[[FacetAttributeTypeDef](./type_defs.md#facetattributetypedef)\]
 - `ObjectType`: [ObjectTypeType](./literals.md#objecttypetype)
 - `FacetStyle`: [FacetStyleType](./literals.md#facetstyletype)
 
@@ -1349,7 +1349,7 @@ Required fields:
 
 - `DirectoryArn`: `str`
 - `OrderedIndexedAttributeList`:
-  `List`\[[AttributeKeyTypeDef](./type_defs.md#attributekeytypedef)\]
+  `Sequence`\[[AttributeKeyTypeDef](./type_defs.md#attributekeytypedef)\]
 - `IsUnique`: `bool`
 
 Optional fields:
@@ -1380,12 +1380,12 @@ Required fields:
 
 - `DirectoryArn`: `str`
 - `SchemaFacets`:
-  `List`\[[SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)\]
+  `Sequence`\[[SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)\]
 
 Optional fields:
 
 - `ObjectAttributeList`:
-  `List`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
+  `Sequence`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
 - `ParentReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef)
 - `LinkName`: `str`
@@ -1662,7 +1662,7 @@ Optional fields:
 - `DefaultValue`:
   [TypedAttributeValueTypeDef](./type_defs.md#typedattributevaluetypedef)
 - `IsImmutable`: `bool`
-- `Rules`: `Dict`\[`str`, [RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Rules`: `Mapping`\[`str`, [RuleTypeDef](./type_defs.md#ruletypedef)\]
 
 ## FacetAttributeReferenceTypeDef
 
@@ -1795,7 +1795,7 @@ Required fields:
 - `DirectoryArn`: `str`
 - `TypedLinkSpecifier`:
   [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
-- `AttributeNames`: `List`\[`str`\]
+- `AttributeNames`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1827,7 +1827,7 @@ Required fields:
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef)
 - `SchemaFacet`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
-- `AttributeNames`: `List`\[`str`\]
+- `AttributeNames`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2145,7 +2145,7 @@ Required fields:
 Optional fields:
 
 - `FilterAttributeRanges`:
-  `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
+  `Sequence`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
 - `NextToken`: `str`
@@ -2182,7 +2182,7 @@ Required fields:
 Optional fields:
 
 - `RangesOnIndexedValues`:
-  `List`\[[ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef)\]
+  `Sequence`\[[ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `ConsistencyLevel`:
@@ -2406,7 +2406,7 @@ Required fields:
 Optional fields:
 
 - `FilterAttributeRanges`:
-  `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
+  `Sequence`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
 - `NextToken`: `str`
@@ -2795,7 +2795,7 @@ from mypy_boto3_clouddirectory.type_defs import RuleTypeDef
 Optional fields:
 
 - `Type`: [RuleTypeType](./literals.md#ruletypetype)
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 
 ## SchemaFacetTypeDef
 
@@ -2817,7 +2817,7 @@ from mypy_boto3_clouddirectory.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -2880,7 +2880,7 @@ Optional fields:
 - `DefaultValue`:
   [TypedAttributeValueTypeDef](./type_defs.md#typedattributevaluetypedef)
 - `IsImmutable`: `bool`
-- `Rules`: `Dict`\[`str`, [RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Rules`: `Mapping`\[`str`, [RuleTypeDef](./type_defs.md#ruletypedef)\]
 
 ## TypedLinkAttributeRangeTypeDef
 
@@ -2919,8 +2919,8 @@ Required fields:
 
 - `Name`: `str`
 - `Attributes`:
-  `List`\[[TypedLinkAttributeDefinitionTypeDef](./type_defs.md#typedlinkattributedefinitiontypedef)\]
-- `IdentityAttributeOrder`: `List`\[`str`\]
+  `Sequence`\[[TypedLinkAttributeDefinitionTypeDef](./type_defs.md#typedlinkattributedefinitiontypedef)\]
+- `IdentityAttributeOrder`: `Sequence`\[`str`\]
 
 ## TypedLinkSchemaAndFacetNameTypeDef
 
@@ -2959,7 +2959,7 @@ from mypy_boto3_clouddirectory.type_defs import UntagResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateFacetRequestRequestTypeDef
 
@@ -2975,7 +2975,7 @@ Required fields:
 Optional fields:
 
 - `AttributeUpdates`:
-  `List`\[[FacetAttributeUpdateTypeDef](./type_defs.md#facetattributeupdatetypedef)\]
+  `Sequence`\[[FacetAttributeUpdateTypeDef](./type_defs.md#facetattributeupdatetypedef)\]
 - `ObjectType`: [ObjectTypeType](./literals.md#objecttypetype)
 
 ## UpdateLinkAttributesRequestRequestTypeDef
@@ -2990,7 +2990,7 @@ Required fields:
 - `TypedLinkSpecifier`:
   [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
 - `AttributeUpdates`:
-  `List`\[[LinkAttributeUpdateTypeDef](./type_defs.md#linkattributeupdatetypedef)\]
+  `Sequence`\[[LinkAttributeUpdateTypeDef](./type_defs.md#linkattributeupdatetypedef)\]
 
 ## UpdateObjectAttributesRequestRequestTypeDef
 
@@ -3004,7 +3004,7 @@ Required fields:
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef)
 - `AttributeUpdates`:
-  `List`\[[ObjectAttributeUpdateTypeDef](./type_defs.md#objectattributeupdatetypedef)\]
+  `Sequence`\[[ObjectAttributeUpdateTypeDef](./type_defs.md#objectattributeupdatetypedef)\]
 
 ## UpdateObjectAttributesResponseTypeDef
 
@@ -3052,8 +3052,8 @@ Required fields:
 - `SchemaArn`: `str`
 - `Name`: `str`
 - `AttributeUpdates`:
-  `List`\[[TypedLinkFacetAttributeUpdateTypeDef](./type_defs.md#typedlinkfacetattributeupdatetypedef)\]
-- `IdentityAttributeOrder`: `List`\[`str`\]
+  `Sequence`\[[TypedLinkFacetAttributeUpdateTypeDef](./type_defs.md#typedlinkfacetattributeupdatetypedef)\]
+- `IdentityAttributeOrder`: `Sequence`\[`str`\]
 
 ## UpgradeAppliedSchemaRequestRequestTypeDef
 

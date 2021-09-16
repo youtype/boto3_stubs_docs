@@ -175,7 +175,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -310,7 +310,7 @@ Keyword-only arguments:
 - `nextToken`: `str`
 - `platformId`: `str`
 - `statuses`:
-  `List`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
+  `Sequence`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
 
 Returns
 [ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef).
@@ -356,8 +356,8 @@ Keyword-only arguments:
   [SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef)
 - `overrides`:
   [SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef)
-- `signingParameters`: `Dict`\[`str`, `str`\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `signingParameters`: `Mapping`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [PutSigningProfileResponseTypeDef](./type_defs.md#putsigningprofileresponsetypedef).
@@ -459,7 +459,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -478,7 +478,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

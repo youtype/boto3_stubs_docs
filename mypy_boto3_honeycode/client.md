@@ -102,7 +102,7 @@ Keyword-only arguments:
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
 - `rowsToCreate`:
-  `List`\[[CreateRowDataTypeDef](./type_defs.md#createrowdatatypedef)\]
+  `Sequence`\[[CreateRowDataTypeDef](./type_defs.md#createrowdatatypedef)\]
   *(required)*
 - `clientRequestToken`: `str`
 
@@ -127,7 +127,7 @@ Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
-- `rowIds`: `List`\[`str`\] *(required)*
+- `rowIds`: `Sequence`\[`str`\] *(required)*
 - `clientRequestToken`: `str`
 
 Returns
@@ -152,7 +152,7 @@ Keyword-only arguments:
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
 - `rowsToUpdate`:
-  `List`\[[UpdateRowDataTypeDef](./type_defs.md#updaterowdatatypedef)\]
+  `Sequence`\[[UpdateRowDataTypeDef](./type_defs.md#updaterowdatatypedef)\]
   *(required)*
 - `clientRequestToken`: `str`
 
@@ -177,7 +177,7 @@ Keyword-only arguments:
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
 - `rowsToUpsert`:
-  `List`\[[UpsertRowDataTypeDef](./type_defs.md#upsertrowdatatypedef)\]
+  `Sequence`\[[UpsertRowDataTypeDef](./type_defs.md#upsertrowdatatypedef)\]
   *(required)*
 - `clientRequestToken`: `str`
 
@@ -234,7 +234,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -258,7 +258,7 @@ Keyword-only arguments:
 - `workbookId`: `str` *(required)*
 - `appId`: `str` *(required)*
 - `screenId`: `str` *(required)*
-- `variables`: `Dict`\[`str`,
+- `variables`: `Mapping`\[`str`,
   [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -286,7 +286,7 @@ Keyword-only arguments:
 - `appId`: `str` *(required)*
 - `screenId`: `str` *(required)*
 - `screenAutomationId`: `str` *(required)*
-- `variables`: `Dict`\[`str`,
+- `variables`: `Mapping`\[`str`,
   [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)\]
 - `rowId`: `str`
 - `clientRequestToken`: `str`
@@ -333,7 +333,7 @@ Keyword-only arguments:
 
 - `workbookId`: `str` *(required)*
 - `tableId`: `str` *(required)*
-- `rowIds`: `List`\[`str`\]
+- `rowIds`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 

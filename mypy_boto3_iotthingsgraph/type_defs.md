@@ -145,7 +145,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `greengrassGroupName`: `str`
 - `s3BucketName`: `str`
 - `metricsConfiguration`:
@@ -364,7 +364,7 @@ from mypy_boto3_iotthingsgraph.type_defs import EntityFilterTypeDef
 Optional fields:
 
 - `name`: [EntityFilterNameType](./literals.md#entityfilternametype)
-- `value`: `List`\[`str`\]
+- `value`: `Sequence`\[`str`\]
 
 ## FlowExecutionMessageTypeDef
 
@@ -419,7 +419,7 @@ Required fields:
 
 - `name`: `Literal['DEVICE_MODEL_ID']` (see
   [FlowTemplateFilterNameType](./literals.md#flowtemplatefilternametype))
-- `value`: `List`\[`str`\]
+- `value`: `Sequence`\[`str`\]
 
 ## FlowTemplateSummaryTypeDef
 
@@ -442,7 +442,7 @@ from mypy_boto3_iotthingsgraph.type_defs import GetEntitiesRequestRequestTypeDef
 
 Required fields:
 
-- `ids`: `List`\[`str`\]
+- `ids`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -744,12 +744,12 @@ from mypy_boto3_iotthingsgraph.type_defs import SearchEntitiesRequestRequestType
 
 Required fields:
 
-- `entityTypes`: `List`\[[EntityTypeType](./literals.md#entitytypetype)\]
+- `entityTypes`: `Sequence`\[[EntityTypeType](./literals.md#entitytypetype)\]
 
 Optional fields:
 
 - `filters`:
-  `List`\[[EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)\]
+  `Sequence`\[[EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `namespaceVersion`: `int`
@@ -809,7 +809,7 @@ from mypy_boto3_iotthingsgraph.type_defs import SearchFlowTemplatesRequestReques
 Optional fields:
 
 - `filters`:
-  `List`\[[FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef)\]
+  `Sequence`\[[FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -836,7 +836,7 @@ from mypy_boto3_iotthingsgraph.type_defs import SearchSystemInstancesRequestRequ
 Optional fields:
 
 - `filters`:
-  `List`\[[SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)\]
+  `Sequence`\[[SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -863,7 +863,7 @@ from mypy_boto3_iotthingsgraph.type_defs import SearchSystemTemplatesRequestRequ
 Optional fields:
 
 - `filters`:
-  `List`\[[SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef)\]
+  `Sequence`\[[SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -940,7 +940,7 @@ Optional fields:
 
 - `name`:
   [SystemInstanceFilterNameType](./literals.md#systeminstancefilternametype)
-- `value`: `List`\[`str`\]
+- `value`: `Sequence`\[`str`\]
 
 ## SystemInstanceSummaryTypeDef
 
@@ -985,7 +985,7 @@ Required fields:
 
 - `name`: `Literal['FLOW_TEMPLATE_ID']` (see
   [SystemTemplateFilterNameType](./literals.md#systemtemplatefilternametype))
-- `value`: `List`\[`str`\]
+- `value`: `Sequence`\[`str`\]
 
 ## SystemTemplateSummaryTypeDef
 
@@ -1009,7 +1009,7 @@ from mypy_boto3_iotthingsgraph.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1065,7 +1065,7 @@ from mypy_boto3_iotthingsgraph.type_defs import UntagResourceRequestRequestTypeD
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateFlowTemplateRequestRequestTypeDef
 

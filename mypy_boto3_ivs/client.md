@@ -111,7 +111,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `arns`: `List`\[`str`\] *(required)*
+- `arns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetChannelResponseTypeDef](./type_defs.md#batchgetchannelresponsetypedef).
@@ -130,7 +130,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `arns`: `List`\[`str`\] *(required)*
+- `arns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetStreamKeyResponseTypeDef](./type_defs.md#batchgetstreamkeyresponsetypedef).
@@ -169,7 +169,7 @@ Keyword-only arguments:
 - `type`: [ChannelTypeType](./literals.md#channeltypetype)
 - `authorized`: `bool`
 - `recordingConfigurationArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
@@ -193,7 +193,7 @@ Keyword-only arguments:
   [DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef)
   *(required)*
 - `name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateRecordingConfigurationResponseTypeDef](./type_defs.md#createrecordingconfigurationresponsetypedef).
@@ -213,7 +213,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `channelArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateStreamKeyResponseTypeDef](./type_defs.md#createstreamkeyresponsetypedef).
@@ -298,7 +298,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -415,7 +415,7 @@ Keyword-only arguments:
 
 - `publicKeyMaterial`: `str` *(required)*
 - `name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ImportPlaybackKeyPairResponseTypeDef](./type_defs.md#importplaybackkeypairresponsetypedef).
@@ -598,7 +598,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -617,7 +617,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

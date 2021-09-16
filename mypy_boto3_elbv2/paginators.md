@@ -87,7 +87,7 @@ Boto3 documentation:
 Arguments for `DescribeListenersPaginator.paginate` method:
 
 - `LoadBalancerArn`: `str`
-- `ListenerArns`: `List`\[`str`\]
+- `ListenerArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -113,8 +113,8 @@ Boto3 documentation:
 
 Arguments for `DescribeLoadBalancersPaginator.paginate` method:
 
-- `LoadBalancerArns`: `List`\[`str`\]
-- `Names`: `List`\[`str`\]
+- `LoadBalancerArns`: `Sequence`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -140,7 +140,7 @@ Boto3 documentation:
 Arguments for `DescribeRulesPaginator.paginate` method:
 
 - `ListenerArn`: `str`
-- `RuleArns`: `List`\[`str`\]
+- `RuleArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -166,7 +166,7 @@ Boto3 documentation:
 
 Arguments for `DescribeSSLPoliciesPaginator.paginate` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -193,8 +193,8 @@ Boto3 documentation:
 Arguments for `DescribeTargetGroupsPaginator.paginate` method:
 
 - `LoadBalancerArn`: `str`
-- `TargetGroupArns`: `List`\[`str`\]
-- `Names`: `List`\[`str`\]
+- `TargetGroupArns`: `Sequence`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

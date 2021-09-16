@@ -171,6 +171,7 @@ from mypy_boto3_workspaces.literals import AccessPropertyValueType, ...
 - [WorkspaceImageRequiredTenancyType](./literals.md#workspaceimagerequiredtenancytype)
 - [WorkspaceImageStateType](./literals.md#workspaceimagestatetype)
 - [WorkspaceStateType](./literals.md#workspacestatetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

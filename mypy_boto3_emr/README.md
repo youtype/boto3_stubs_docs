@@ -198,6 +198,7 @@ from mypy_boto3_emr.literals import ActionOnFailureType, ...
 - [StepStateChangeReasonCodeType](./literals.md#stepstatechangereasoncodetype)
 - [StepStateType](./literals.md#stepstatetype)
 - [UnitType](./literals.md#unittype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

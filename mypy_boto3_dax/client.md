@@ -143,13 +143,13 @@ Keyword-only arguments:
 - `ReplicationFactor`: `int` *(required)*
 - `IamRoleArn`: `str` *(required)*
 - `Description`: `str`
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `SubnetGroupName`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `PreferredMaintenanceWindow`: `str`
 - `NotificationTopicArn`: `str`
 - `ParameterGroupName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SSESpecification`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `ClusterEndpointEncryptionType`:
@@ -193,7 +193,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SubnetGroupName`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `Description`: `str`
 
 Returns
@@ -215,8 +215,8 @@ Keyword-only arguments:
 
 - `ClusterName`: `str` *(required)*
 - `NewReplicationFactor`: `int` *(required)*
-- `AvailabilityZones`: `List`\[`str`\]
-- `NodeIdsToRemove`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
+- `NodeIdsToRemove`: `Sequence`\[`str`\]
 
 Returns
 [DecreaseReplicationFactorResponseTypeDef](./type_defs.md#decreasereplicationfactorresponsetypedef).
@@ -294,7 +294,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ClusterNames`: `List`\[`str`\]
+- `ClusterNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -360,7 +360,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ParameterGroupNames`: `List`\[`str`\]
+- `ParameterGroupNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -403,7 +403,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `SubnetGroupNames`: `List`\[`str`\]
+- `SubnetGroupNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -422,7 +422,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -444,7 +444,7 @@ Keyword-only arguments:
 
 - `ClusterName`: `str` *(required)*
 - `NewReplicationFactor`: `int` *(required)*
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 
 Returns
 [IncreaseReplicationFactorResponseTypeDef](./type_defs.md#increasereplicationfactorresponsetypedef).
@@ -502,7 +502,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns
 [TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef).
@@ -522,7 +522,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef).
@@ -547,7 +547,7 @@ Keyword-only arguments:
 - `NotificationTopicArn`: `str`
 - `NotificationTopicStatus`: `str`
 - `ParameterGroupName`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 Returns
 [UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef).
@@ -568,7 +568,7 @@ Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 - `ParameterNameValues`:
-  `List`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
+  `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
   *(required)*
 
 Returns
@@ -590,7 +590,7 @@ Keyword-only arguments:
 
 - `SubnetGroupName`: `str` *(required)*
 - `Description`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Returns
 [UpdateSubnetGroupResponseTypeDef](./type_defs.md#updatesubnetgroupresponsetypedef).

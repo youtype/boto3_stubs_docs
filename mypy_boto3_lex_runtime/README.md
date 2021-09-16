@@ -73,6 +73,7 @@ from mypy_boto3_lex_runtime.literals import ConfirmationStatusType, ...
 - [DialogStateType](./literals.md#dialogstatetype)
 - [FulfillmentStateType](./literals.md#fulfillmentstatetype)
 - [MessageFormatTypeType](./literals.md#messageformattypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

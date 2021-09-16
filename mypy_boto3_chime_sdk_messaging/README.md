@@ -97,6 +97,7 @@ from mypy_boto3_chime_sdk_messaging.literals import ChannelMembershipTypeType, .
 - [ChannelPrivacyType](./literals.md#channelprivacytype)
 - [ErrorCodeType](./literals.md#errorcodetype)
 - [SortOrderType](./literals.md#sortordertype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

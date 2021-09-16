@@ -72,7 +72,7 @@ from mypy_boto3_sagemaker_a2i_runtime.type_defs import HumanLoopDataAttributesTy
 Required fields:
 
 - `ContentClassifiers`:
-  `List`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
+  `Sequence`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
 
 ## HumanLoopInputTypeDef
 

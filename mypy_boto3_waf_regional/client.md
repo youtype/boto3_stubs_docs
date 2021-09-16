@@ -278,7 +278,7 @@ Keyword-only arguments:
   *(required)*
 - `RateLimit`: `int` *(required)*
 - `ChangeToken`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRateBasedRuleResponseTypeDef](./type_defs.md#createratebasedruleresponsetypedef).
@@ -342,7 +342,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `MetricName`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef).
 
@@ -363,7 +363,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `MetricName`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef).
@@ -429,7 +429,7 @@ Keyword-only arguments:
 - `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
   *(required)*
 - `ChangeToken`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef).
@@ -795,7 +795,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1574,7 +1574,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1593,7 +1593,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1615,7 +1615,7 @@ Keyword-only arguments:
 - `ByteMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 - `Updates`:
-  `List`\[[ByteMatchSetUpdateTypeDef](./type_defs.md#bytematchsetupdatetypedef)\]
+  `Sequence`\[[ByteMatchSetUpdateTypeDef](./type_defs.md#bytematchsetupdatetypedef)\]
   *(required)*
 
 Returns
@@ -1639,7 +1639,7 @@ Keyword-only arguments:
 - `GeoMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 - `Updates`:
-  `List`\[[GeoMatchSetUpdateTypeDef](./type_defs.md#geomatchsetupdatetypedef)\]
+  `Sequence`\[[GeoMatchSetUpdateTypeDef](./type_defs.md#geomatchsetupdatetypedef)\]
   *(required)*
 
 Returns
@@ -1661,7 +1661,8 @@ Keyword-only arguments:
 
 - `IPSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
-- `Updates`: `List`\[[IPSetUpdateTypeDef](./type_defs.md#ipsetupdatetypedef)\]
+- `Updates`:
+  `Sequence`\[[IPSetUpdateTypeDef](./type_defs.md#ipsetupdatetypedef)\]
   *(required)*
 
 Returns
@@ -1684,7 +1685,8 @@ Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
-- `Updates`: `List`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
+- `Updates`:
+  `Sequence`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
   *(required)*
 - `RateLimit`: `int` *(required)*
 
@@ -1708,7 +1710,7 @@ Keyword-only arguments:
 
 - `RegexMatchSetId`: `str` *(required)*
 - `Updates`:
-  `List`\[[RegexMatchSetUpdateTypeDef](./type_defs.md#regexmatchsetupdatetypedef)\]
+  `Sequence`\[[RegexMatchSetUpdateTypeDef](./type_defs.md#regexmatchsetupdatetypedef)\]
   *(required)*
 - `ChangeToken`: `str` *(required)*
 
@@ -1732,7 +1734,7 @@ Keyword-only arguments:
 
 - `RegexPatternSetId`: `str` *(required)*
 - `Updates`:
-  `List`\[[RegexPatternSetUpdateTypeDef](./type_defs.md#regexpatternsetupdatetypedef)\]
+  `Sequence`\[[RegexPatternSetUpdateTypeDef](./type_defs.md#regexpatternsetupdatetypedef)\]
   *(required)*
 - `ChangeToken`: `str` *(required)*
 
@@ -1755,7 +1757,8 @@ Keyword-only arguments:
 
 - `RuleId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
-- `Updates`: `List`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
+- `Updates`:
+  `Sequence`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
   *(required)*
 
 Returns [UpdateRuleResponseTypeDef](./type_defs.md#updateruleresponsetypedef).
@@ -1776,7 +1779,7 @@ Keyword-only arguments:
 
 - `RuleGroupId`: `str` *(required)*
 - `Updates`:
-  `List`\[[RuleGroupUpdateTypeDef](./type_defs.md#rulegroupupdatetypedef)\]
+  `Sequence`\[[RuleGroupUpdateTypeDef](./type_defs.md#rulegroupupdatetypedef)\]
   *(required)*
 - `ChangeToken`: `str` *(required)*
 
@@ -1801,7 +1804,7 @@ Keyword-only arguments:
 - `SizeConstraintSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 - `Updates`:
-  `List`\[[SizeConstraintSetUpdateTypeDef](./type_defs.md#sizeconstraintsetupdatetypedef)\]
+  `Sequence`\[[SizeConstraintSetUpdateTypeDef](./type_defs.md#sizeconstraintsetupdatetypedef)\]
   *(required)*
 
 Returns
@@ -1825,7 +1828,7 @@ Keyword-only arguments:
 - `SqlInjectionMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 - `Updates`:
-  `List`\[[SqlInjectionMatchSetUpdateTypeDef](./type_defs.md#sqlinjectionmatchsetupdatetypedef)\]
+  `Sequence`\[[SqlInjectionMatchSetUpdateTypeDef](./type_defs.md#sqlinjectionmatchsetupdatetypedef)\]
   *(required)*
 
 Returns
@@ -1848,7 +1851,7 @@ Keyword-only arguments:
 - `WebACLId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 - `Updates`:
-  `List`\[[WebACLUpdateTypeDef](./type_defs.md#webaclupdatetypedef)\]
+  `Sequence`\[[WebACLUpdateTypeDef](./type_defs.md#webaclupdatetypedef)\]
 - `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
 
 Returns
@@ -1872,7 +1875,7 @@ Keyword-only arguments:
 - `XssMatchSetId`: `str` *(required)*
 - `ChangeToken`: `str` *(required)*
 - `Updates`:
-  `List`\[[XssMatchSetUpdateTypeDef](./type_defs.md#xssmatchsetupdatetypedef)\]
+  `Sequence`\[[XssMatchSetUpdateTypeDef](./type_defs.md#xssmatchsetupdatetypedef)\]
   *(required)*
 
 Returns

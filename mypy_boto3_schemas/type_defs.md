@@ -87,7 +87,7 @@ Optional fields:
 
 - `Description`: `str`
 - `CrossAccount`: `bool`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDiscovererResponseTypeDef
 
@@ -120,7 +120,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRegistryResponseTypeDef
 
@@ -153,7 +153,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateSchemaResponseTypeDef
 
@@ -429,7 +429,7 @@ from mypy_boto3_schemas.type_defs import GetDiscoveredSchemaRequestRequestTypeDe
 
 Required fields:
 
-- `Events`: `List`\[`str`\]
+- `Events`: `Sequence`\[`str`\]
 - `Type`: [TypeType](./literals.md#typetype)
 
 ## GetDiscoveredSchemaResponseTypeDef
@@ -838,7 +838,7 @@ from mypy_boto3_schemas.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -849,7 +849,7 @@ from mypy_boto3_schemas.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDiscovererRequestRequestTypeDef
 

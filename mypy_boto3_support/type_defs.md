@@ -64,7 +64,7 @@ from mypy_boto3_support.type_defs import AddAttachmentsToSetRequestRequestTypeDe
 Required fields:
 
 - `attachments`:
-  `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
+  `Sequence`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
 
 Optional fields:
 
@@ -96,7 +96,7 @@ Required fields:
 Optional fields:
 
 - `caseId`: `str`
-- `ccEmailAddresses`: `List`\[`str`\]
+- `ccEmailAddresses`: `Sequence`\[`str`\]
 - `attachmentSetId`: `str`
 
 ## AddCommunicationToCaseResponseTypeDef
@@ -197,7 +197,7 @@ Optional fields:
 - `serviceCode`: `str`
 - `severityCode`: `str`
 - `categoryCode`: `str`
-- `ccEmailAddresses`: `List`\[`str`\]
+- `ccEmailAddresses`: `Sequence`\[`str`\]
 - `language`: `str`
 - `issueType`: `str`
 - `attachmentSetId`: `str`
@@ -244,7 +244,7 @@ from mypy_boto3_support.type_defs import DescribeCasesRequestRequestTypeDef
 
 Optional fields:
 
-- `caseIdList`: `List`\[`str`\]
+- `caseIdList`: `Sequence`\[`str`\]
 - `displayId`: `str`
 - `afterTime`: `str`
 - `beforeTime`: `str`
@@ -306,7 +306,7 @@ from mypy_boto3_support.type_defs import DescribeServicesRequestRequestTypeDef
 
 Optional fields:
 
-- `serviceCodeList`: `List`\[`str`\]
+- `serviceCodeList`: `Sequence`\[`str`\]
 - `language`: `str`
 
 ## DescribeServicesResponseTypeDef
@@ -352,7 +352,7 @@ from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckRefreshStatu
 
 Required fields:
 
-- `checkIds`: `List`\[`str`\]
+- `checkIds`: `Sequence`\[`str`\]
 
 ## DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef
 
@@ -402,7 +402,7 @@ from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckSummariesReq
 
 Required fields:
 
-- `checkIds`: `List`\[`str`\]
+- `checkIds`: `Sequence`\[`str`\]
 
 ## DescribeTrustedAdvisorCheckSummariesResponseTypeDef
 

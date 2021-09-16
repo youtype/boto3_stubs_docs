@@ -215,7 +215,7 @@ from mypy_boto3_cloudwatch.type_defs import DeleteAlarmsInputRequestTypeDef
 
 Required fields:
 
-- `AlarmNames`: `List`\[`str`\]
+- `AlarmNames`: `Sequence`\[`str`\]
 
 ## DeleteAnomalyDetectorInputRequestTypeDef
 
@@ -231,7 +231,8 @@ Required fields:
 
 Optional fields:
 
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 
 ## DeleteDashboardsInputRequestTypeDef
 
@@ -241,7 +242,7 @@ from mypy_boto3_cloudwatch.type_defs import DeleteDashboardsInputRequestTypeDef
 
 Required fields:
 
-- `DashboardNames`: `List`\[`str`\]
+- `DashboardNames`: `Sequence`\[`str`\]
 
 ## DeleteInsightRulesInputRequestTypeDef
 
@@ -251,7 +252,7 @@ from mypy_boto3_cloudwatch.type_defs import DeleteInsightRulesInputRequestTypeDe
 
 Required fields:
 
-- `RuleNames`: `List`\[`str`\]
+- `RuleNames`: `Sequence`\[`str`\]
 
 ## DeleteInsightRulesOutputTypeDef
 
@@ -284,7 +285,7 @@ from mypy_boto3_cloudwatch.type_defs import DescribeAlarmHistoryInputAlarmTypeDe
 
 Optional fields:
 
-- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
+- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `HistoryItemType`: [HistoryItemTypeType](./literals.md#historyitemtypetype)
 - `StartDate`: `Union`\[`datetime`, `str`\]
 - `EndDate`: `Union`\[`datetime`, `str`\]
@@ -301,7 +302,7 @@ from mypy_boto3_cloudwatch.type_defs import DescribeAlarmHistoryInputRequestType
 Optional fields:
 
 - `AlarmName`: `str`
-- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
+- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `HistoryItemType`: [HistoryItemTypeType](./literals.md#historyitemtypetype)
 - `StartDate`: `Union`\[`datetime`, `str`\]
 - `EndDate`: `Union`\[`datetime`, `str`\]
@@ -338,7 +339,8 @@ Optional fields:
 
 - `Statistic`: [StatisticType](./literals.md#statistictype)
 - `ExtendedStatistic`: `str`
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `Period`: `int`
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 
@@ -363,9 +365,9 @@ from mypy_boto3_cloudwatch.type_defs import DescribeAlarmsInputRequestTypeDef
 
 Optional fields:
 
-- `AlarmNames`: `List`\[`str`\]
+- `AlarmNames`: `Sequence`\[`str`\]
 - `AlarmNamePrefix`: `str`
-- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
+- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `ChildrenOfAlarmName`: `str`
 - `ParentsOfAlarmName`: `str`
 - `StateValue`: [StateValueType](./literals.md#statevaluetype)
@@ -401,7 +403,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `Namespace`: `str`
 - `MetricName`: `str`
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 
 ## DescribeAnomalyDetectorsOutputTypeDef
 
@@ -475,7 +478,7 @@ from mypy_boto3_cloudwatch.type_defs import DisableAlarmActionsInputRequestTypeD
 
 Required fields:
 
-- `AlarmNames`: `List`\[`str`\]
+- `AlarmNames`: `Sequence`\[`str`\]
 
 ## DisableInsightRulesInputRequestTypeDef
 
@@ -485,7 +488,7 @@ from mypy_boto3_cloudwatch.type_defs import DisableInsightRulesInputRequestTypeD
 
 Required fields:
 
-- `RuleNames`: `List`\[`str`\]
+- `RuleNames`: `Sequence`\[`str`\]
 
 ## DisableInsightRulesOutputTypeDef
 
@@ -508,7 +511,7 @@ from mypy_boto3_cloudwatch.type_defs import EnableAlarmActionsInputRequestTypeDe
 
 Required fields:
 
-- `AlarmNames`: `List`\[`str`\]
+- `AlarmNames`: `Sequence`\[`str`\]
 
 ## EnableInsightRulesInputRequestTypeDef
 
@@ -518,7 +521,7 @@ from mypy_boto3_cloudwatch.type_defs import EnableInsightRulesInputRequestTypeDe
 
 Required fields:
 
-- `RuleNames`: `List`\[`str`\]
+- `RuleNames`: `Sequence`\[`str`\]
 
 ## EnableInsightRulesOutputTypeDef
 
@@ -573,7 +576,7 @@ Required fields:
 Optional fields:
 
 - `MaxContributorCount`: `int`
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 - `OrderBy`: `str`
 
 ## GetInsightRuleReportOutputTypeDef
@@ -604,7 +607,7 @@ from mypy_boto3_cloudwatch.type_defs import GetMetricDataInputRequestTypeDef
 Required fields:
 
 - `MetricDataQueries`:
-  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 
@@ -644,9 +647,10 @@ Required fields:
 
 Optional fields:
 
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `Statistics`: `List`\[[StatisticType](./literals.md#statistictype)\]
-- `ExtendedStatistics`: `List`\[`str`\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Statistics`: `Sequence`\[[StatisticType](./literals.md#statistictype)\]
+- `ExtendedStatistics`: `Sequence`\[`str`\]
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 
 ## GetMetricStatisticsInputRequestTypeDef
@@ -665,9 +669,10 @@ Required fields:
 
 Optional fields:
 
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `Statistics`: `List`\[[StatisticType](./literals.md#statistictype)\]
-- `ExtendedStatistics`: `List`\[`str`\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Statistics`: `Sequence`\[[StatisticType](./literals.md#statistictype)\]
+- `ExtendedStatistics`: `Sequence`\[`str`\]
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 
 ## GetMetricStatisticsOutputTypeDef
@@ -871,7 +876,7 @@ Optional fields:
 - `Namespace`: `str`
 - `MetricName`: `str`
 - `Dimensions`:
-  `List`\[[DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef)\]
+  `Sequence`\[[DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef)\]
 - `NextToken`: `str`
 - `RecentlyActive`: `Literal['PT3H']` (see
   [RecentlyActiveType](./literals.md#recentlyactivetype))
@@ -1006,12 +1011,13 @@ Required fields:
 
 Optional fields:
 
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `Timestamp`: `Union`\[`datetime`, `str`\]
 - `Value`: `float`
 - `StatisticValues`: [StatisticSetTypeDef](./type_defs.md#statisticsettypedef)
-- `Values`: `List`\[`float`\]
-- `Counts`: `List`\[`float`\]
+- `Values`: `Sequence`\[`float`\]
+- `Counts`: `Sequence`\[`float`\]
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 - `StorageResolution`: `int`
 
@@ -1109,7 +1115,8 @@ Required fields:
 
 Optional fields:
 
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `Configuration`:
   [AnomalyDetectorConfigurationTypeDef](./type_defs.md#anomalydetectorconfigurationtypedef)
 
@@ -1127,11 +1134,11 @@ Required fields:
 Optional fields:
 
 - `ActionsEnabled`: `bool`
-- `AlarmActions`: `List`\[`str`\]
+- `AlarmActions`: `Sequence`\[`str`\]
 - `AlarmDescription`: `str`
-- `InsufficientDataActions`: `List`\[`str`\]
-- `OKActions`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `InsufficientDataActions`: `Sequence`\[`str`\]
+- `OKActions`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutDashboardInputRequestTypeDef
 
@@ -1171,7 +1178,7 @@ Required fields:
 Optional fields:
 
 - `RuleState`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutMetricAlarmInputMetricTypeDef
 
@@ -1190,12 +1197,13 @@ Optional fields:
 
 - `AlarmDescription`: `str`
 - `ActionsEnabled`: `bool`
-- `OKActions`: `List`\[`str`\]
-- `AlarmActions`: `List`\[`str`\]
-- `InsufficientDataActions`: `List`\[`str`\]
+- `OKActions`: `Sequence`\[`str`\]
+- `AlarmActions`: `Sequence`\[`str`\]
+- `InsufficientDataActions`: `Sequence`\[`str`\]
 - `Statistic`: [StatisticType](./literals.md#statistictype)
 - `ExtendedStatistic`: `str`
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `Period`: `int`
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 - `DatapointsToAlarm`: `int`
@@ -1203,8 +1211,8 @@ Optional fields:
 - `TreatMissingData`: `str`
 - `EvaluateLowSampleCountPercentile`: `str`
 - `Metrics`:
-  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ThresholdMetricId`: `str`
 
 ## PutMetricAlarmInputRequestTypeDef
@@ -1224,14 +1232,15 @@ Optional fields:
 
 - `AlarmDescription`: `str`
 - `ActionsEnabled`: `bool`
-- `OKActions`: `List`\[`str`\]
-- `AlarmActions`: `List`\[`str`\]
-- `InsufficientDataActions`: `List`\[`str`\]
+- `OKActions`: `Sequence`\[`str`\]
+- `AlarmActions`: `Sequence`\[`str`\]
+- `InsufficientDataActions`: `Sequence`\[`str`\]
 - `MetricName`: `str`
 - `Namespace`: `str`
 - `Statistic`: [StatisticType](./literals.md#statistictype)
 - `ExtendedStatistic`: `str`
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `Dimensions`:
+  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `Period`: `int`
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 - `DatapointsToAlarm`: `int`
@@ -1239,8 +1248,8 @@ Optional fields:
 - `TreatMissingData`: `str`
 - `EvaluateLowSampleCountPercentile`: `str`
 - `Metrics`:
-  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ThresholdMetricId`: `str`
 
 ## PutMetricDataInputRequestTypeDef
@@ -1253,7 +1262,7 @@ Required fields:
 
 - `Namespace`: `str`
 - `MetricData`:
-  `List`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
+  `Sequence`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
 
 ## PutMetricStreamInputRequestTypeDef
 
@@ -1272,10 +1281,10 @@ Required fields:
 Optional fields:
 
 - `IncludeFilters`:
-  `List`\[[MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef)\]
+  `Sequence`\[[MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef)\]
 - `ExcludeFilters`:
-  `List`\[[MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutMetricStreamOutputTypeDef
 
@@ -1374,7 +1383,7 @@ from mypy_boto3_cloudwatch.type_defs import StartMetricStreamsInputRequestTypeDe
 
 Required fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 
 ## StatisticSetTypeDef
 
@@ -1397,7 +1406,7 @@ from mypy_boto3_cloudwatch.type_defs import StopMetricStreamsInputRequestTypeDef
 
 Required fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 
 ## TagResourceInputRequestTypeDef
 
@@ -1408,7 +1417,7 @@ from mypy_boto3_cloudwatch.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1430,7 +1439,7 @@ from mypy_boto3_cloudwatch.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## WaiterConfigTypeDef
 

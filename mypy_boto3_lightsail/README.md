@@ -327,6 +327,7 @@ from mypy_boto3_lightsail.literals import AccessDirectionType, ...
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [StatusTypeType](./literals.md#statustypetype)
 - [TreatMissingDataType](./literals.md#treatmissingdatatype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

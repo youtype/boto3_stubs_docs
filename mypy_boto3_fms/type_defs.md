@@ -1137,7 +1137,7 @@ Required fields:
 
 Optional fields:
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutAppsListResponseTypeDef
 
@@ -1175,7 +1175,7 @@ Required fields:
 
 Optional fields:
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutPolicyResponseTypeDef
 
@@ -1203,7 +1203,7 @@ Required fields:
 
 Optional fields:
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutProtocolsListResponseTypeDef
 
@@ -1415,7 +1415,7 @@ from mypy_boto3_fms.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1437,7 +1437,7 @@ from mypy_boto3_fms.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ViolationDetailTypeDef
 

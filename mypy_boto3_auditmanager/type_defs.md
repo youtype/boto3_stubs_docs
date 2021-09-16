@@ -401,7 +401,7 @@ Required fields:
 
 - `assessmentId`: `str`
 - `evidenceFolderId`: `str`
-- `evidenceIds`: `List`\[`str`\]
+- `evidenceIds`: `Sequence`\[`str`\]
 
 ## BatchAssociateAssessmentReportEvidenceResponseTypeDef
 
@@ -439,7 +439,7 @@ from mypy_boto3_auditmanager.type_defs import BatchCreateDelegationByAssessmentR
 Required fields:
 
 - `createDelegationRequests`:
-  `List`\[[CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)\]
+  `Sequence`\[[CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)\]
 - `assessmentId`: `str`
 
 ## BatchCreateDelegationByAssessmentResponseTypeDef
@@ -477,7 +477,7 @@ from mypy_boto3_auditmanager.type_defs import BatchDeleteDelegationByAssessmentR
 
 Required fields:
 
-- `delegationIds`: `List`\[`str`\]
+- `delegationIds`: `Sequence`\[`str`\]
 - `assessmentId`: `str`
 
 ## BatchDeleteDelegationByAssessmentResponseTypeDef
@@ -503,7 +503,7 @@ Required fields:
 
 - `assessmentId`: `str`
 - `evidenceFolderId`: `str`
-- `evidenceIds`: `List`\[`str`\]
+- `evidenceIds`: `Sequence`\[`str`\]
 
 ## BatchDisassociateAssessmentReportEvidenceResponseTypeDef
 
@@ -544,7 +544,7 @@ Required fields:
 - `controlSetId`: `str`
 - `controlId`: `str`
 - `manualEvidence`:
-  `List`\[[ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)\]
+  `Sequence`\[[ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)\]
 
 ## BatchImportEvidenceToAssessmentControlResponseTypeDef
 
@@ -668,7 +668,7 @@ Required fields:
 Optional fields:
 
 - `controls`:
-  `List`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
+  `Sequence`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
 
 ## CreateAssessmentFrameworkControlTypeDef
 
@@ -690,13 +690,13 @@ Required fields:
 
 - `name`: `str`
 - `controlSets`:
-  `List`\[[CreateAssessmentFrameworkControlSetTypeDef](./type_defs.md#createassessmentframeworkcontrolsettypedef)\]
+  `Sequence`\[[CreateAssessmentFrameworkControlSetTypeDef](./type_defs.md#createassessmentframeworkcontrolsettypedef)\]
 
 Optional fields:
 
 - `description`: `str`
 - `complianceType`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAssessmentFrameworkResponseTypeDef
 
@@ -750,13 +750,13 @@ Required fields:
 - `assessmentReportsDestination`:
   [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
 - `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
-- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
+- `roles`: `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 - `frameworkId`: `str`
 
 Optional fields:
 
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAssessmentResponseTypeDef
 
@@ -797,7 +797,7 @@ Required fields:
 
 - `name`: `str`
 - `controlMappingSources`:
-  `List`\[[CreateControlMappingSourceTypeDef](./type_defs.md#createcontrolmappingsourcetypedef)\]
+  `Sequence`\[[CreateControlMappingSourceTypeDef](./type_defs.md#createcontrolmappingsourcetypedef)\]
 
 Optional fields:
 
@@ -805,7 +805,7 @@ Optional fields:
 - `testingInformation`: `str`
 - `actionPlanTitle`: `str`
 - `actionPlanInstructions`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateControlResponseTypeDef
 
@@ -1650,9 +1650,9 @@ from mypy_boto3_auditmanager.type_defs import ScopeTypeDef
 Optional fields:
 
 - `awsAccounts`:
-  `List`\[[AWSAccountTypeDef](./type_defs.md#awsaccounttypedef)\]
+  `Sequence`\[[AWSAccountTypeDef](./type_defs.md#awsaccounttypedef)\]
 - `awsServices`:
-  `List`\[[AWSServiceTypeDef](./type_defs.md#awsservicetypedef)\]
+  `Sequence`\[[AWSServiceTypeDef](./type_defs.md#awsservicetypedef)\]
 
 ## ServiceMetadataTypeDef
 
@@ -1703,7 +1703,7 @@ from mypy_boto3_auditmanager.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## URLTypeDef
 
@@ -1725,7 +1725,7 @@ from mypy_boto3_auditmanager.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAssessmentControlRequestRequestTypeDef
 
@@ -1797,7 +1797,7 @@ Optional fields:
 
 - `id`: `str`
 - `controls`:
-  `List`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
+  `Sequence`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
 
 ## UpdateAssessmentFrameworkRequestRequestTypeDef
 
@@ -1810,7 +1810,7 @@ Required fields:
 - `frameworkId`: `str`
 - `name`: `str`
 - `controlSets`:
-  `List`\[[UpdateAssessmentFrameworkControlSetTypeDef](./type_defs.md#updateassessmentframeworkcontrolsettypedef)\]
+  `Sequence`\[[UpdateAssessmentFrameworkControlSetTypeDef](./type_defs.md#updateassessmentframeworkcontrolsettypedef)\]
 
 Optional fields:
 
@@ -1846,7 +1846,7 @@ Optional fields:
 - `assessmentDescription`: `str`
 - `assessmentReportsDestination`:
   [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
+- `roles`: `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 
 ## UpdateAssessmentResponseTypeDef
 
@@ -1894,7 +1894,7 @@ Required fields:
 - `controlId`: `str`
 - `name`: `str`
 - `controlMappingSources`:
-  `List`\[[ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef)\]
+  `Sequence`\[[ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef)\]
 
 Optional fields:
 
@@ -1926,7 +1926,8 @@ Optional fields:
 - `snsTopic`: `str`
 - `defaultAssessmentReportsDestination`:
   [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `defaultProcessOwners`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
+- `defaultProcessOwners`:
+  `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 - `kmsKey`: `str`
 
 ## UpdateSettingsResponseTypeDef

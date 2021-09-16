@@ -158,7 +158,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `organizationEntityFilters`:
-  `List`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
+  `Sequence`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
   *(required)*
 - `locale`: `str`
 - `nextToken`: `str`
@@ -183,7 +183,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `eventArns`: `List`\[`str`\]
+- `eventArns`: `Sequence`\[`str`\]
 
 Returns
 [DescribeEntityAggregatesResponseTypeDef](./type_defs.md#describeentityaggregatesresponsetypedef).
@@ -227,7 +227,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `eventArns`: `List`\[`str`\] *(required)*
+- `eventArns`: `Sequence`\[`str`\] *(required)*
 - `locale`: `str`
 
 Returns
@@ -250,7 +250,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `organizationEventDetailFilters`:
-  `List`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
+  `Sequence`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
   *(required)*
 - `locale`: `str`
 
@@ -372,7 +372,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

@@ -149,6 +149,7 @@ from mypy_boto3_directconnect.literals import AddressFamilyType, ...
 - [LagStateType](./literals.md#lagstatetype)
 - [LoaContentTypeType](./literals.md#loacontenttypetype)
 - [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

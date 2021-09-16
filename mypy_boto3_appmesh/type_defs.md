@@ -258,7 +258,7 @@ Required fields:
 Optional fields:
 
 - `attributes`:
-  `List`\[[AwsCloudMapInstanceAttributeTypeDef](./type_defs.md#awscloudmapinstanceattributetypedef)\]
+  `Sequence`\[[AwsCloudMapInstanceAttributeTypeDef](./type_defs.md#awscloudmapinstanceattributetypedef)\]
 
 ## BackendDefaultsTypeDef
 
@@ -297,7 +297,7 @@ Optional fields:
 - `certificate`:
   [ClientTlsCertificateTypeDef](./type_defs.md#clienttlscertificatetypedef)
 - `enforce`: `bool`
-- `ports`: `List`\[`int`\]
+- `ports`: `Sequence`\[`int`\]
 
 ## ClientPolicyTypeDef
 
@@ -339,7 +339,7 @@ Optional fields:
 
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 ## CreateGatewayRouteOutputTypeDef
 
@@ -368,7 +368,7 @@ Optional fields:
 
 - `clientToken`: `str`
 - `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 ## CreateMeshOutputTypeDef
 
@@ -399,7 +399,7 @@ Optional fields:
 
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 ## CreateRouteOutputTypeDef
 
@@ -429,7 +429,7 @@ Optional fields:
 
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 ## CreateVirtualGatewayOutputTypeDef
 
@@ -460,7 +460,7 @@ Optional fields:
 
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 ## CreateVirtualNodeOutputTypeDef
 
@@ -491,7 +491,7 @@ Optional fields:
 
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 ## CreateVirtualRouterOutputTypeDef
 
@@ -522,7 +522,7 @@ Optional fields:
 
 - `clientToken`: `str`
 - `meshOwner`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 ## CreateVirtualServiceOutputTypeDef
 
@@ -1099,7 +1099,7 @@ Optional fields:
 - `hostname`:
   [GatewayRouteHostnameMatchTypeDef](./type_defs.md#gatewayroutehostnamematchtypedef)
 - `metadata`:
-  `List`\[[GrpcGatewayRouteMetadataTypeDef](./type_defs.md#grpcgatewayroutemetadatatypedef)\]
+  `Sequence`\[[GrpcGatewayRouteMetadataTypeDef](./type_defs.md#grpcgatewayroutemetadatatypedef)\]
 - `serviceName`: `str`
 
 ## GrpcGatewayRouteMetadataTypeDef
@@ -1170,9 +1170,9 @@ Required fields:
 Optional fields:
 
 - `grpcRetryEvents`:
-  `List`\[[GrpcRetryPolicyEventType](./literals.md#grpcretrypolicyeventtype)\]
-- `httpRetryEvents`: `List`\[`str`\]
-- `tcpRetryEvents`: `List`\[`Literal['connection-error']` (see
+  `Sequence`\[[GrpcRetryPolicyEventType](./literals.md#grpcretrypolicyeventtype)\]
+- `httpRetryEvents`: `Sequence`\[`str`\]
+- `tcpRetryEvents`: `Sequence`\[`Literal['connection-error']` (see
   [TcpRetryPolicyEventType](./literals.md#tcpretrypolicyeventtype))\]
 
 ## GrpcRouteActionTypeDef
@@ -1184,7 +1184,7 @@ from mypy_boto3_appmesh.type_defs import GrpcRouteActionTypeDef
 Required fields:
 
 - `weightedTargets`:
-  `List`\[[WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)\]
+  `Sequence`\[[WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)\]
 
 ## GrpcRouteMatchTypeDef
 
@@ -1195,7 +1195,7 @@ from mypy_boto3_appmesh.type_defs import GrpcRouteMatchTypeDef
 Optional fields:
 
 - `metadata`:
-  `List`\[[GrpcRouteMetadataTypeDef](./type_defs.md#grpcroutemetadatatypedef)\]
+  `Sequence`\[[GrpcRouteMetadataTypeDef](./type_defs.md#grpcroutemetadatatypedef)\]
 - `methodName`: `str`
 - `serviceName`: `str`
 
@@ -1330,14 +1330,14 @@ from mypy_boto3_appmesh.type_defs import HttpGatewayRouteMatchTypeDef
 Optional fields:
 
 - `headers`:
-  `List`\[[HttpGatewayRouteHeaderTypeDef](./type_defs.md#httpgatewayrouteheadertypedef)\]
+  `Sequence`\[[HttpGatewayRouteHeaderTypeDef](./type_defs.md#httpgatewayrouteheadertypedef)\]
 - `hostname`:
   [GatewayRouteHostnameMatchTypeDef](./type_defs.md#gatewayroutehostnamematchtypedef)
 - `method`: [HttpMethodType](./literals.md#httpmethodtype)
 - `path`: [HttpPathMatchTypeDef](./type_defs.md#httppathmatchtypedef)
 - `prefix`: `str`
 - `queryParameters`:
-  `List`\[[HttpQueryParameterTypeDef](./type_defs.md#httpqueryparametertypedef)\]
+  `Sequence`\[[HttpQueryParameterTypeDef](./type_defs.md#httpqueryparametertypedef)\]
 
 ## HttpGatewayRoutePathRewriteTypeDef
 
@@ -1428,8 +1428,8 @@ Required fields:
 
 Optional fields:
 
-- `httpRetryEvents`: `List`\[`str`\]
-- `tcpRetryEvents`: `List`\[`Literal['connection-error']` (see
+- `httpRetryEvents`: `Sequence`\[`str`\]
+- `tcpRetryEvents`: `Sequence`\[`Literal['connection-error']` (see
   [TcpRetryPolicyEventType](./literals.md#tcpretrypolicyeventtype))\]
 
 ## HttpRouteActionTypeDef
@@ -1441,7 +1441,7 @@ from mypy_boto3_appmesh.type_defs import HttpRouteActionTypeDef
 Required fields:
 
 - `weightedTargets`:
-  `List`\[[WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)\]
+  `Sequence`\[[WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)\]
 
 ## HttpRouteHeaderTypeDef
 
@@ -1467,12 +1467,12 @@ from mypy_boto3_appmesh.type_defs import HttpRouteMatchTypeDef
 Optional fields:
 
 - `headers`:
-  `List`\[[HttpRouteHeaderTypeDef](./type_defs.md#httprouteheadertypedef)\]
+  `Sequence`\[[HttpRouteHeaderTypeDef](./type_defs.md#httprouteheadertypedef)\]
 - `method`: [HttpMethodType](./literals.md#httpmethodtype)
 - `path`: [HttpPathMatchTypeDef](./type_defs.md#httppathmatchtypedef)
 - `prefix`: `str`
 - `queryParameters`:
-  `List`\[[HttpQueryParameterTypeDef](./type_defs.md#httpqueryparametertypedef)\]
+  `Sequence`\[[HttpQueryParameterTypeDef](./type_defs.md#httpqueryparametertypedef)\]
 - `scheme`: [HttpSchemeType](./literals.md#httpschemetype)
 
 ## HttpRouteTypeDef
@@ -2086,7 +2086,7 @@ from mypy_boto3_appmesh.type_defs import SubjectAlternativeNameMatchersTypeDef
 
 Required fields:
 
-- `exact`: `List`\[`str`\]
+- `exact`: `Sequence`\[`str`\]
 
 ## SubjectAlternativeNamesTypeDef
 
@@ -2119,7 +2119,7 @@ from mypy_boto3_appmesh.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 ## TcpRouteActionTypeDef
 
@@ -2130,7 +2130,7 @@ from mypy_boto3_appmesh.type_defs import TcpRouteActionTypeDef
 Required fields:
 
 - `weightedTargets`:
-  `List`\[[WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)\]
+  `Sequence`\[[WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)\]
 
 ## TcpRouteTypeDef
 
@@ -2164,7 +2164,7 @@ from mypy_boto3_appmesh.type_defs import TlsValidationContextAcmTrustTypeDef
 
 Required fields:
 
-- `certificateAuthorityArns`: `List`\[`str`\]
+- `certificateAuthorityArns`: `Sequence`\[`str`\]
 
 ## TlsValidationContextFileTrustTypeDef
 
@@ -2226,7 +2226,7 @@ from mypy_boto3_appmesh.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateGatewayRouteInputRequestTypeDef
 
@@ -2474,7 +2474,7 @@ Optional fields:
 - `certificate`:
   [VirtualGatewayClientTlsCertificateTypeDef](./type_defs.md#virtualgatewayclienttlscertificatetypedef)
 - `enforce`: `bool`
-- `ports`: `List`\[`int`\]
+- `ports`: `Sequence`\[`int`\]
 
 ## VirtualGatewayClientPolicyTypeDef
 
@@ -2756,7 +2756,7 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewaySpecTypeDef
 Required fields:
 
 - `listeners`:
-  `List`\[[VirtualGatewayListenerTypeDef](./type_defs.md#virtualgatewaylistenertypedef)\]
+  `Sequence`\[[VirtualGatewayListenerTypeDef](./type_defs.md#virtualgatewaylistenertypedef)\]
 
 Optional fields:
 
@@ -2784,7 +2784,7 @@ from mypy_boto3_appmesh.type_defs import VirtualGatewayTlsValidationContextAcmTr
 
 Required fields:
 
-- `certificateAuthorityArns`: `List`\[`str`\]
+- `certificateAuthorityArns`: `Sequence`\[`str`\]
 
 ## VirtualGatewayTlsValidationContextFileTrustTypeDef
 
@@ -2939,8 +2939,8 @@ Optional fields:
 
 - `backendDefaults`:
   [BackendDefaultsTypeDef](./type_defs.md#backenddefaultstypedef)
-- `backends`: `List`\[[BackendTypeDef](./type_defs.md#backendtypedef)\]
-- `listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
+- `backends`: `Sequence`\[[BackendTypeDef](./type_defs.md#backendtypedef)\]
+- `listeners`: `Sequence`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
 - `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `serviceDiscovery`:
   [ServiceDiscoveryTypeDef](./type_defs.md#servicediscoverytypedef)
@@ -3027,7 +3027,7 @@ from mypy_boto3_appmesh.type_defs import VirtualRouterSpecTypeDef
 Optional fields:
 
 - `listeners`:
-  `List`\[[VirtualRouterListenerTypeDef](./type_defs.md#virtualrouterlistenertypedef)\]
+  `Sequence`\[[VirtualRouterListenerTypeDef](./type_defs.md#virtualrouterlistenertypedef)\]
 
 ## VirtualRouterStatusTypeDef
 

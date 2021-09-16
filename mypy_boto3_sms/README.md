@@ -140,6 +140,7 @@ from mypy_boto3_sms.literals import AppLaunchConfigurationStatusType, ...
 - [ServerValidationStrategyType](./literals.md#servervalidationstrategytype)
 - [ValidationStatusType](./literals.md#validationstatustype)
 - [VmManagerTypeType](./literals.md#vmmanagertypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

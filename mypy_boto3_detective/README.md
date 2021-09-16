@@ -73,6 +73,7 @@ from mypy_boto3_detective.literals import MemberDisabledReasonType, ...
 
 - [MemberDisabledReasonType](./literals.md#memberdisabledreasontype)
 - [MemberStatusType](./literals.md#memberstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

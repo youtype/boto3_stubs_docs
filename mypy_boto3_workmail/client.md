@@ -277,14 +277,14 @@ Keyword-only arguments:
   *(required)*
 - `ClientToken`: `str`
 - `Description`: `str`
-- `DeviceTypes`: `List`\[`str`\]
-- `NotDeviceTypes`: `List`\[`str`\]
-- `DeviceModels`: `List`\[`str`\]
-- `NotDeviceModels`: `List`\[`str`\]
-- `DeviceOperatingSystems`: `List`\[`str`\]
-- `NotDeviceOperatingSystems`: `List`\[`str`\]
-- `DeviceUserAgents`: `List`\[`str`\]
-- `NotDeviceUserAgents`: `List`\[`str`\]
+- `DeviceTypes`: `Sequence`\[`str`\]
+- `NotDeviceTypes`: `Sequence`\[`str`\]
+- `DeviceModels`: `Sequence`\[`str`\]
+- `NotDeviceModels`: `Sequence`\[`str`\]
+- `DeviceOperatingSystems`: `Sequence`\[`str`\]
+- `NotDeviceOperatingSystems`: `Sequence`\[`str`\]
+- `DeviceUserAgents`: `Sequence`\[`str`\]
+- `NotDeviceUserAgents`: `Sequence`\[`str`\]
 
 Returns
 [CreateMobileDeviceAccessRuleResponseTypeDef](./type_defs.md#createmobiledeviceaccessruleresponsetypedef).
@@ -306,7 +306,7 @@ Keyword-only arguments:
 - `Alias`: `str` *(required)*
 - `DirectoryId`: `str`
 - `ClientToken`: `str`
-- `Domains`: `List`\[[DomainTypeDef](./type_defs.md#domaintypedef)\]
+- `Domains`: `Sequence`\[[DomainTypeDef](./type_defs.md#domaintypedef)\]
 - `KmsKeyArn`: `str`
 - `EnableInteroperability`: `bool`
 
@@ -711,7 +711,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1080,12 +1080,12 @@ Keyword-only arguments:
   *(required)*
 - `Description`: `str` *(required)*
 - `OrganizationId`: `str` *(required)*
-- `IpRanges`: `List`\[`str`\]
-- `NotIpRanges`: `List`\[`str`\]
-- `Actions`: `List`\[`str`\]
-- `NotActions`: `List`\[`str`\]
-- `UserIds`: `List`\[`str`\]
-- `NotUserIds`: `List`\[`str`\]
+- `IpRanges`: `Sequence`\[`str`\]
+- `NotIpRanges`: `Sequence`\[`str`\]
+- `Actions`: `Sequence`\[`str`\]
+- `NotActions`: `Sequence`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
+- `NotUserIds`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1107,7 +1107,8 @@ Keyword-only arguments:
 - `EntityId`: `str` *(required)*
 - `GranteeId`: `str` *(required)*
 - `PermissionValues`:
-  `List`\[[PermissionTypeType](./literals.md#permissiontypetype)\] *(required)*
+  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1128,7 +1129,7 @@ Keyword-only arguments:
 - `OrganizationId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `FolderConfigurations`:
-  `List`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
+  `Sequence`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
   *(required)*
 - `Id`: `str`
 - `Description`: `str`
@@ -1221,7 +1222,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1241,7 +1242,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1288,14 +1289,14 @@ Keyword-only arguments:
   [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
   *(required)*
 - `Description`: `str`
-- `DeviceTypes`: `List`\[`str`\]
-- `NotDeviceTypes`: `List`\[`str`\]
-- `DeviceModels`: `List`\[`str`\]
-- `NotDeviceModels`: `List`\[`str`\]
-- `DeviceOperatingSystems`: `List`\[`str`\]
-- `NotDeviceOperatingSystems`: `List`\[`str`\]
-- `DeviceUserAgents`: `List`\[`str`\]
-- `NotDeviceUserAgents`: `List`\[`str`\]
+- `DeviceTypes`: `Sequence`\[`str`\]
+- `NotDeviceTypes`: `Sequence`\[`str`\]
+- `DeviceModels`: `Sequence`\[`str`\]
+- `NotDeviceModels`: `Sequence`\[`str`\]
+- `DeviceOperatingSystems`: `Sequence`\[`str`\]
+- `NotDeviceOperatingSystems`: `Sequence`\[`str`\]
+- `DeviceUserAgents`: `Sequence`\[`str`\]
+- `NotDeviceUserAgents`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 

@@ -95,7 +95,7 @@ Keyword-only arguments:
 
 - `ClusterIdentifier`: `str` *(required)*
 - `Database`: `str` *(required)*
-- `Sqls`: `List`\[`str`\] *(required)*
+- `Sqls`: `Sequence`\[`str`\] *(required)*
 - `DbUser`: `str`
 - `SecretArn`: `str`
 - `StatementName`: `str`
@@ -205,7 +205,7 @@ Keyword-only arguments:
 - `Sql`: `str` *(required)*
 - `DbUser`: `str`
 - `Parameters`:
-  `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
+  `Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
 - `SecretArn`: `str`
 - `StatementName`: `str`
 - `WithEvent`: `bool`
@@ -226,7 +226,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

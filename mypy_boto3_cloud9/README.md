@@ -97,6 +97,7 @@ from mypy_boto3_cloud9.literals import ConnectionTypeType, ...
 - [ManagedCredentialsStatusType](./literals.md#managedcredentialsstatustype)
 - [MemberPermissionsType](./literals.md#memberpermissionstype)
 - [PermissionsType](./literals.md#permissionstype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

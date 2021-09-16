@@ -37,7 +37,7 @@ Boto3 documentation:
 
 Arguments for `DescribeGlobalNetworksPaginator.paginate` method:
 
-- `GlobalNetworkIds`: `List`\[`str`\]
+- `GlobalNetworkIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -64,7 +64,7 @@ Boto3 documentation:
 Arguments for `GetConnectionsPaginator.paginate` method:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `ConnectionIds`: `List`\[`str`\]
+- `ConnectionIds`: `Sequence`\[`str`\]
 - `DeviceId`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -92,7 +92,7 @@ Boto3 documentation:
 Arguments for `GetCustomerGatewayAssociationsPaginator.paginate` method:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `CustomerGatewayArns`: `List`\[`str`\]
+- `CustomerGatewayArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -119,7 +119,7 @@ Boto3 documentation:
 Arguments for `GetDevicesPaginator.paginate` method:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `DeviceIds`: `List`\[`str`\]
+- `DeviceIds`: `Sequence`\[`str`\]
 - `SiteId`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -175,7 +175,7 @@ Boto3 documentation:
 Arguments for `GetLinksPaginator.paginate` method:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `LinkIds`: `List`\[`str`\]
+- `LinkIds`: `Sequence`\[`str`\]
 - `SiteId`: `str`
 - `Type`: `str`
 - `Provider`: `str`
@@ -205,7 +205,7 @@ Boto3 documentation:
 Arguments for `GetSitesPaginator.paginate` method:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `SiteIds`: `List`\[`str`\]
+- `SiteIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -233,7 +233,7 @@ Arguments for `GetTransitGatewayConnectPeerAssociationsPaginator.paginate`
 method:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `TransitGatewayConnectPeerArns`: `List`\[`str`\]
+- `TransitGatewayConnectPeerArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -260,7 +260,7 @@ Boto3 documentation:
 Arguments for `GetTransitGatewayRegistrationsPaginator.paginate` method:
 
 - `GlobalNetworkId`: `str` *(required)*
-- `TransitGatewayArns`: `List`\[`str`\]
+- `TransitGatewayArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -94,6 +94,7 @@ from mypy_boto3_managedblockchain.literals import EditionType, ...
 - [StateDBTypeType](./literals.md#statedbtypetype)
 - [ThresholdComparatorType](./literals.md#thresholdcomparatortype)
 - [VoteValueType](./literals.md#votevaluetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -104,7 +104,7 @@ from mypy_boto3_importexport.type_defs import GetShippingLabelInputRequestTypeDe
 
 Required fields:
 
-- `jobIds`: `List`\[`str`\]
+- `jobIds`: `Sequence`\[`str`\]
 
 Optional fields:
 

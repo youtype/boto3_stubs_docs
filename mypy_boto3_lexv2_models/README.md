@@ -180,6 +180,7 @@ from mypy_boto3_lexv2_models.literals import BotAliasAvailableWaiterName, ...
 - [SlotTypeSortAttributeType](./literals.md#slottypesortattributetype)
 - [SlotValueResolutionStrategyType](./literals.md#slotvalueresolutionstrategytype)
 - [SortOrderType](./literals.md#sortordertype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

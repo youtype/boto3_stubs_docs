@@ -163,8 +163,8 @@ Keyword-only arguments:
 - `package`: `str` *(required)*
 - `domainOwner`: `str`
 - `namespace`: `str`
-- `versions`: `List`\[`str`\]
-- `versionRevisions`: `Dict`\[`str`, `str`\]
+- `versions`: `Sequence`\[`str`\]
+- `versionRevisions`: `Mapping`\[`str`, `str`\]
 - `allowOverwrite`: `bool`
 - `includeFromUpstream`: `bool`
 
@@ -187,7 +187,7 @@ Keyword-only arguments:
 
 - `domain`: `str` *(required)*
 - `encryptionKey`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef).
 
@@ -210,8 +210,8 @@ Keyword-only arguments:
 - `domainOwner`: `str`
 - `description`: `str`
 - `upstreams`:
-  `List`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRepositoryResultTypeDef](./type_defs.md#createrepositoryresulttypedef).
@@ -276,7 +276,7 @@ Keyword-only arguments:
 - `repository`: `str` *(required)*
 - `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
 - `package`: `str` *(required)*
-- `versions`: `List`\[`str`\] *(required)*
+- `versions`: `Sequence`\[`str`\] *(required)*
 - `domainOwner`: `str`
 - `namespace`: `str`
 - `expectedStatus`:
@@ -444,10 +444,10 @@ Keyword-only arguments:
 - `repository`: `str` *(required)*
 - `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
 - `package`: `str` *(required)*
-- `versions`: `List`\[`str`\] *(required)*
+- `versions`: `Sequence`\[`str`\] *(required)*
 - `domainOwner`: `str`
 - `namespace`: `str`
-- `versionRevisions`: `Dict`\[`str`, `str`\]
+- `versionRevisions`: `Mapping`\[`str`, `str`\]
 - `expectedStatus`:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
@@ -467,7 +467,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -887,7 +887,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -906,7 +906,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -929,13 +929,13 @@ Keyword-only arguments:
 - `repository`: `str` *(required)*
 - `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
 - `package`: `str` *(required)*
-- `versions`: `List`\[`str`\] *(required)*
+- `versions`: `Sequence`\[`str`\] *(required)*
 - `targetStatus`:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
   *(required)*
 - `domainOwner`: `str`
 - `namespace`: `str`
-- `versionRevisions`: `Dict`\[`str`, `str`\]
+- `versionRevisions`: `Mapping`\[`str`, `str`\]
 - `expectedStatus`:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
@@ -961,7 +961,7 @@ Keyword-only arguments:
 - `domainOwner`: `str`
 - `description`: `str`
 - `upstreams`:
-  `List`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
+  `Sequence`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
 
 Returns
 [UpdateRepositoryResultTypeDef](./type_defs.md#updaterepositoryresulttypedef).

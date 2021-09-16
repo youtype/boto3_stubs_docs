@@ -112,7 +112,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 - `ResourceId`: `str` *(required)*
 - `ResourceType`:
   [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
@@ -277,7 +277,7 @@ Keyword-only arguments:
 - `MLModelType`: [MLModelTypeType](./literals.md#mlmodeltypetype) *(required)*
 - `TrainingDataSourceId`: `str` *(required)*
 - `MLModelName`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 - `Recipe`: `str`
 - `RecipeUri`: `str`
 
@@ -417,7 +417,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 - `ResourceId`: `str` *(required)*
 - `ResourceType`:
   [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
@@ -585,7 +585,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -688,7 +688,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `MLModelId`: `str` *(required)*
-- `Record`: `Dict`\[`str`, `str`\] *(required)*
+- `Record`: `Mapping`\[`str`, `str`\] *(required)*
 - `PredictEndpoint`: `str` *(required)*
 
 Returns [PredictOutputTypeDef](./type_defs.md#predictoutputtypedef).

@@ -186,6 +186,7 @@ from mypy_boto3_elbv2.literals import ActionTypeEnumType, ...
 - [TargetHealthStateEnumType](./literals.md#targethealthstateenumtype)
 - [TargetInServiceWaiterName](./literals.md#targetinservicewaitername)
 - [TargetTypeEnumType](./literals.md#targettypeenumtype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

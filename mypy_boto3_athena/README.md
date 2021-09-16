@@ -123,6 +123,7 @@ from mypy_boto3_athena.literals import ColumnNullableType, ...
 - [QueryExecutionStateType](./literals.md#queryexecutionstatetype)
 - [StatementTypeType](./literals.md#statementtypetype)
 - [WorkGroupStateType](./literals.md#workgroupstatetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

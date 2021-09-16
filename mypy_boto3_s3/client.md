@@ -293,7 +293,7 @@ Keyword-only arguments:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `MetadataDirective`:
   [MetadataDirectiveType](./literals.md#metadatadirectivetype)
 - `TaggingDirective`:
@@ -377,7 +377,7 @@ Keyword-only arguments:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -801,7 +801,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -2200,7 +2200,7 @@ Keyword-only arguments:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -2561,7 +2561,7 @@ Returns
 ### write_get_object_response
 
 Passes transformed objects to a `GetObject` operation when using Object Lambda
-Access Points.
+access points.
 
 Type annotations for `boto3.client("s3").write_get_object_response` method.
 
@@ -2593,7 +2593,7 @@ Keyword-only arguments:
 - `Expiration`: `str`
 - `LastModified`: `Union`\[`datetime`, `str`\]
 - `MissingMeta`: `int`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
 - `ObjectLockLegalHoldStatus`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)

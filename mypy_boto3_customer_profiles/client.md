@@ -113,7 +113,7 @@ Keyword-only arguments:
 
 - `ProfileId`: `str` *(required)*
 - `KeyName`: `str` *(required)*
-- `Values`: `List`\[`str`\] *(required)*
+- `Values`: `Sequence`\[`str`\] *(required)*
 - `DomainName`: `str` *(required)*
 
 Returns
@@ -154,7 +154,7 @@ Keyword-only arguments:
 - `DefaultEncryptionKey`: `str`
 - `DeadLetterQueueUrl`: `str`
 - `Matching`: [MatchingRequestTypeDef](./type_defs.md#matchingrequesttypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
@@ -194,7 +194,7 @@ Keyword-only arguments:
 - `ShippingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
 - `MailingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
 - `BillingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateProfileResponseTypeDef](./type_defs.md#createprofileresponsetypedef).
@@ -277,7 +277,7 @@ Keyword-only arguments:
 
 - `ProfileId`: `str` *(required)*
 - `KeyName`: `str` *(required)*
-- `Values`: `List`\[`str`\] *(required)*
+- `Values`: `Sequence`\[`str`\] *(required)*
 - `DomainName`: `str` *(required)*
 
 Returns
@@ -341,7 +341,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -616,7 +616,7 @@ Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `MainProfileId`: `str` *(required)*
-- `ProfileIdsToBeMerged`: `List`\[`str`\] *(required)*
+- `ProfileIdsToBeMerged`: `Sequence`\[`str`\] *(required)*
 - `FieldSourceProfileIds`:
   [FieldSourceProfileIdsTypeDef](./type_defs.md#fieldsourceprofileidstypedef)
 
@@ -642,7 +642,7 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 - `ObjectTypeName`: `str` *(required)*
 - `Uri`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `FlowDefinition`:
   [FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)
 
@@ -693,11 +693,11 @@ Keyword-only arguments:
 - `ExpirationDays`: `int`
 - `EncryptionKey`: `str`
 - `AllowProfileCreation`: `bool`
-- `Fields`: `Dict`\[`str`,
+- `Fields`: `Mapping`\[`str`,
   [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)\]
-- `Keys`: `Dict`\[`str`,
-  `List`\[[ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef)\]\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Keys`: `Mapping`\[`str`,
+  `Sequence`\[[ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef)\]\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [PutProfileObjectTypeResponseTypeDef](./type_defs.md#putprofileobjecttyperesponsetypedef).
@@ -720,7 +720,7 @@ Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `KeyName`: `str` *(required)*
-- `Values`: `List`\[`str`\] *(required)*
+- `Values`: `Sequence`\[`str`\] *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -743,7 +743,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -763,7 +763,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -787,7 +787,7 @@ Keyword-only arguments:
 - `DefaultEncryptionKey`: `str`
 - `DeadLetterQueueUrl`: `str`
 - `Matching`: [MatchingRequestTypeDef](./type_defs.md#matchingrequesttypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef).
@@ -829,7 +829,7 @@ Keyword-only arguments:
   [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
 - `MailingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
 - `BillingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 Returns
 [UpdateProfileResponseTypeDef](./type_defs.md#updateprofileresponsetypedef).

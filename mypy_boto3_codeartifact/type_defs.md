@@ -157,8 +157,8 @@ Optional fields:
 
 - `domainOwner`: `str`
 - `namespace`: `str`
-- `versions`: `List`\[`str`\]
-- `versionRevisions`: `Dict`\[`str`, `str`\]
+- `versions`: `Sequence`\[`str`\]
+- `versionRevisions`: `Mapping`\[`str`, `str`\]
 - `allowOverwrite`: `bool`
 - `includeFromUpstream`: `bool`
 
@@ -190,7 +190,7 @@ Required fields:
 Optional fields:
 
 - `encryptionKey`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDomainResultTypeDef
 
@@ -220,8 +220,8 @@ Optional fields:
 - `domainOwner`: `str`
 - `description`: `str`
 - `upstreams`:
-  `List`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateRepositoryResultTypeDef
 
@@ -301,7 +301,7 @@ Required fields:
 - `repository`: `str`
 - `format`: [PackageFormatType](./literals.md#packageformattype)
 - `package`: `str`
-- `versions`: `List`\[`str`\]
+- `versions`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -508,13 +508,13 @@ Required fields:
 - `repository`: `str`
 - `format`: [PackageFormatType](./literals.md#packageformattype)
 - `package`: `str`
-- `versions`: `List`\[`str`\]
+- `versions`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `domainOwner`: `str`
 - `namespace`: `str`
-- `versionRevisions`: `Dict`\[`str`, `str`\]
+- `versionRevisions`: `Mapping`\[`str`, `str`\]
 - `expectedStatus`:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
@@ -1251,7 +1251,7 @@ from mypy_boto3_codeartifact.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1273,7 +1273,7 @@ from mypy_boto3_codeartifact.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdatePackageVersionsStatusRequestRequestTypeDef
 
@@ -1287,7 +1287,7 @@ Required fields:
 - `repository`: `str`
 - `format`: [PackageFormatType](./literals.md#packageformattype)
 - `package`: `str`
-- `versions`: `List`\[`str`\]
+- `versions`: `Sequence`\[`str`\]
 - `targetStatus`:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
@@ -1295,7 +1295,7 @@ Optional fields:
 
 - `domainOwner`: `str`
 - `namespace`: `str`
-- `versionRevisions`: `Dict`\[`str`, `str`\]
+- `versionRevisions`: `Mapping`\[`str`, `str`\]
 - `expectedStatus`:
   [PackageVersionStatusType](./literals.md#packageversionstatustype)
 
@@ -1330,7 +1330,7 @@ Optional fields:
 - `domainOwner`: `str`
 - `description`: `str`
 - `upstreams`:
-  `List`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
+  `Sequence`\[[UpstreamRepositoryTypeDef](./type_defs.md#upstreamrepositorytypedef)\]
 
 ## UpdateRepositoryResultTypeDef
 

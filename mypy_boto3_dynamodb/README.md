@@ -242,6 +242,7 @@ from mypy_boto3_dynamodb.literals import AttributeActionType, ...
 - [TableNotExistsWaiterName](./literals.md#tablenotexistswaitername)
 - [TableStatusType](./literals.md#tablestatustype)
 - [TimeToLiveStatusType](./literals.md#timetolivestatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -213,7 +213,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
-- `TagsToDelete`: `List`\[`str`\] *(required)*
+- `TagsToDelete`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -312,7 +312,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -609,7 +609,7 @@ Keyword-only arguments:
   *(required)*
 - `IdnLangCode`: `str`
 - `Nameservers`:
-  `List`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
+  `Sequence`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
 - `AuthCode`: `str`
 - `AutoRenew`: `bool`
 - `PrivacyProtectAdminContact`: `bool`
@@ -705,7 +705,8 @@ Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 - `Nameservers`:
-  `List`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\] *(required)*
+  `Sequence`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
+  *(required)*
 - `FIAuthKey`: `str`
 
 Returns
@@ -727,7 +728,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
-- `TagsToUpdate`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagsToUpdate`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 

@@ -356,6 +356,7 @@ from mypy_boto3_codecommit.literals import ApprovalStateType, ...
 - [ReplacementTypeEnumType](./literals.md#replacementtypeenumtype)
 - [RepositoryTriggerEventEnumType](./literals.md#repositorytriggereventenumtype)
 - [SortByEnumType](./literals.md#sortbyenumtype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

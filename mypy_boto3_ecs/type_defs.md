@@ -271,11 +271,11 @@ from mypy_boto3_ecs.type_defs import AwsVpcConfigurationTypeDef
 
 Required fields:
 
-- `subnets`: `List`\[`str`\]
+- `subnets`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `securityGroups`: `List`\[`str`\]
+- `securityGroups`: `Sequence`\[`str`\]
 - `assignPublicIp`: [AssignPublicIpType](./literals.md#assignpubliciptype)
 
 ## CapacityProviderStrategyItemTypeDef
@@ -498,7 +498,7 @@ Optional fields:
 - `runtimeId`: `str`
 - `exitCode`: `int`
 - `networkBindings`:
-  `List`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
+  `Sequence`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
 - `reason`: `str`
 - `status`: `str`
 
@@ -545,7 +545,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateCapacityProviderResponseTypeDef
 
@@ -569,14 +569,14 @@ from mypy_boto3_ecs.type_defs import CreateClusterRequestRequestTypeDef
 Optional fields:
 
 - `clusterName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `settings`:
-  `List`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
+  `Sequence`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
 - `configuration`:
   [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
-- `capacityProviders`: `List`\[`str`\]
+- `capacityProviders`: `Sequence`\[`str`\]
 - `defaultCapacityProviderStrategy`:
-  `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
+  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 
 ## CreateClusterResponseTypeDef
 
@@ -605,22 +605,22 @@ Optional fields:
 - `cluster`: `str`
 - `taskDefinition`: `str`
 - `loadBalancers`:
-  `List`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
+  `Sequence`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
 - `serviceRegistries`:
-  `List`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
+  `Sequence`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
 - `desiredCount`: `int`
 - `clientToken`: `str`
 - `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
 - `capacityProviderStrategy`:
-  `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
+  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 - `platformVersion`: `str`
 - `role`: `str`
 - `deploymentConfiguration`:
   [DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef)
 - `placementConstraints`:
-  `List`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
+  `Sequence`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
 - `placementStrategy`:
-  `List`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
+  `Sequence`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
 - `networkConfiguration`:
   [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `healthCheckGracePeriodSeconds`: `int`
@@ -628,7 +628,7 @@ Optional fields:
   [SchedulingStrategyType](./literals.md#schedulingstrategytype)
 - `deploymentController`:
   [DeploymentControllerTypeDef](./type_defs.md#deploymentcontrollertypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `enableECSManagedTags`: `bool`
 - `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
 - `enableExecuteCommand`: `bool`
@@ -663,16 +663,16 @@ Optional fields:
 - `networkConfiguration`:
   [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `loadBalancers`:
-  `List`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
+  `Sequence`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
 - `serviceRegistries`:
-  `List`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
+  `Sequence`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
 - `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
 - `capacityProviderStrategy`:
-  `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
+  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 - `platformVersion`: `str`
 - `scale`: [ScaleTypeDef](./type_defs.md#scaletypedef)
 - `clientToken`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateTaskSetResponseTypeDef
 
@@ -720,7 +720,8 @@ from mypy_boto3_ecs.type_defs import DeleteAttributesRequestRequestTypeDef
 
 Required fields:
 
-- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `attributes`:
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 Optional fields:
 
@@ -959,8 +960,8 @@ from mypy_boto3_ecs.type_defs import DescribeCapacityProvidersRequestRequestType
 
 Optional fields:
 
-- `capacityProviders`: `List`\[`str`\]
-- `include`: `List`\[`Literal['TAGS']` (see
+- `capacityProviders`: `Sequence`\[`str`\]
+- `include`: `Sequence`\[`Literal['TAGS']` (see
   [CapacityProviderFieldType](./literals.md#capacityproviderfieldtype))\]
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -988,8 +989,8 @@ from mypy_boto3_ecs.type_defs import DescribeClustersRequestRequestTypeDef
 
 Optional fields:
 
-- `clusters`: `List`\[`str`\]
-- `include`: `List`\[[ClusterFieldType](./literals.md#clusterfieldtype)\]
+- `clusters`: `Sequence`\[`str`\]
+- `include`: `Sequence`\[[ClusterFieldType](./literals.md#clusterfieldtype)\]
 
 ## DescribeClustersResponseTypeDef
 
@@ -1012,12 +1013,12 @@ from mypy_boto3_ecs.type_defs import DescribeContainerInstancesRequestRequestTyp
 
 Required fields:
 
-- `containerInstances`: `List`\[`str`\]
+- `containerInstances`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `cluster`: `str`
-- `include`: `List`\[`Literal['TAGS']` (see
+- `include`: `Sequence`\[`Literal['TAGS']` (see
   [ContainerInstanceFieldType](./literals.md#containerinstancefieldtype))\]
 
 ## DescribeContainerInstancesResponseTypeDef
@@ -1042,12 +1043,12 @@ from mypy_boto3_ecs.type_defs import DescribeServicesRequestRequestTypeDef
 
 Required fields:
 
-- `services`: `List`\[`str`\]
+- `services`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `cluster`: `str`
-- `include`: `List`\[`Literal['TAGS']` (see
+- `include`: `Sequence`\[`Literal['TAGS']` (see
   [ServiceFieldType](./literals.md#servicefieldtype))\]
 
 ## DescribeServicesResponseTypeDef
@@ -1075,7 +1076,7 @@ Required fields:
 
 Optional fields:
 
-- `include`: `List`\[`Literal['TAGS']` (see
+- `include`: `Sequence`\[`Literal['TAGS']` (see
   [TaskDefinitionFieldType](./literals.md#taskdefinitionfieldtype))\]
 
 ## DescribeTaskDefinitionResponseTypeDef
@@ -1105,8 +1106,8 @@ Required fields:
 
 Optional fields:
 
-- `taskSets`: `List`\[`str`\]
-- `include`: `List`\[`Literal['TAGS']` (see
+- `taskSets`: `Sequence`\[`str`\]
+- `include`: `Sequence`\[`Literal['TAGS']` (see
   [TaskSetFieldType](./literals.md#tasksetfieldtype))\]
 
 ## DescribeTaskSetsResponseTypeDef
@@ -1130,12 +1131,12 @@ from mypy_boto3_ecs.type_defs import DescribeTasksRequestRequestTypeDef
 
 Required fields:
 
-- `tasks`: `List`\[`str`\]
+- `tasks`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `cluster`: `str`
-- `include`: `List`\[`Literal['TAGS']` (see
+- `include`: `Sequence`\[`Literal['TAGS']` (see
   [TaskFieldType](./literals.md#taskfieldtype))\]
 
 ## DescribeTasksResponseTypeDef
@@ -1972,7 +1973,8 @@ from mypy_boto3_ecs.type_defs import PutAttributesRequestRequestTypeDef
 
 Required fields:
 
-- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `attributes`:
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 Optional fields:
 
@@ -1999,9 +2001,9 @@ from mypy_boto3_ecs.type_defs import PutClusterCapacityProvidersRequestRequestTy
 Required fields:
 
 - `cluster`: `str`
-- `capacityProviders`: `List`\[`str`\]
+- `capacityProviders`: `Sequence`\[`str`\]
 - `defaultCapacityProviderStrategy`:
-  `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
+  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 
 ## PutClusterCapacityProvidersResponseTypeDef
 
@@ -2026,13 +2028,15 @@ Optional fields:
 - `cluster`: `str`
 - `instanceIdentityDocument`: `str`
 - `instanceIdentityDocumentSignature`: `str`
-- `totalResources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `totalResources`:
+  `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `versionInfo`: [VersionInfoTypeDef](./type_defs.md#versioninfotypedef)
 - `containerInstanceArn`: `str`
-- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `attributes`:
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `platformDevices`:
-  `List`\[[PlatformDeviceTypeDef](./type_defs.md#platformdevicetypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[PlatformDeviceTypeDef](./type_defs.md#platformdevicetypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## RegisterContainerInstanceResponseTypeDef
 
@@ -2057,27 +2061,27 @@ Required fields:
 
 - `family`: `str`
 - `containerDefinitions`:
-  `List`\[[ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)\]
+  `Sequence`\[[ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)\]
 
 Optional fields:
 
 - `taskRoleArn`: `str`
 - `executionRoleArn`: `str`
 - `networkMode`: [NetworkModeType](./literals.md#networkmodetype)
-- `volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
+- `volumes`: `Sequence`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
 - `placementConstraints`:
-  `List`\[[TaskDefinitionPlacementConstraintTypeDef](./type_defs.md#taskdefinitionplacementconstrainttypedef)\]
+  `Sequence`\[[TaskDefinitionPlacementConstraintTypeDef](./type_defs.md#taskdefinitionplacementconstrainttypedef)\]
 - `requiresCompatibilities`:
-  `List`\[[CompatibilityType](./literals.md#compatibilitytype)\]
+  `Sequence`\[[CompatibilityType](./literals.md#compatibilitytype)\]
 - `cpu`: `str`
 - `memory`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `pidMode`: [PidModeType](./literals.md#pidmodetype)
 - `ipcMode`: [IpcModeType](./literals.md#ipcmodetype)
 - `proxyConfiguration`:
   [ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef)
 - `inferenceAccelerators`:
-  `List`\[[InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef)\]
+  `Sequence`\[[InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef)\]
 - `ephemeralStorage`:
   [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 
@@ -2158,7 +2162,7 @@ Required fields:
 Optional fields:
 
 - `capacityProviderStrategy`:
-  `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
+  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 - `cluster`: `str`
 - `count`: `int`
 - `enableECSManagedTags`: `bool`
@@ -2169,14 +2173,14 @@ Optional fields:
   [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `overrides`: [TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef)
 - `placementConstraints`:
-  `List`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
+  `Sequence`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
 - `placementStrategy`:
-  `List`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
+  `Sequence`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
 - `platformVersion`: `str`
 - `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
 - `referenceId`: `str`
 - `startedBy`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## RunTaskResponseTypeDef
 
@@ -2320,7 +2324,7 @@ from mypy_boto3_ecs.type_defs import StartTaskRequestRequestTypeDef
 
 Required fields:
 
-- `containerInstances`: `List`\[`str`\]
+- `containerInstances`: `Sequence`\[`str`\]
 - `taskDefinition`: `str`
 
 Optional fields:
@@ -2335,7 +2339,7 @@ Optional fields:
 - `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
 - `referenceId`: `str`
 - `startedBy`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartTaskResponseTypeDef
 
@@ -2386,7 +2390,7 @@ from mypy_boto3_ecs.type_defs import SubmitAttachmentStateChangesRequestRequestT
 Required fields:
 
 - `attachments`:
-  `List`\[[AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef)\]
+  `Sequence`\[[AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef)\]
 
 Optional fields:
 
@@ -2420,7 +2424,7 @@ Optional fields:
 - `exitCode`: `int`
 - `reason`: `str`
 - `networkBindings`:
-  `List`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
+  `Sequence`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
 
 ## SubmitContainerStateChangeResponseTypeDef
 
@@ -2447,11 +2451,11 @@ Optional fields:
 - `status`: `str`
 - `reason`: `str`
 - `containers`:
-  `List`\[[ContainerStateChangeTypeDef](./type_defs.md#containerstatechangetypedef)\]
+  `Sequence`\[[ContainerStateChangeTypeDef](./type_defs.md#containerstatechangetypedef)\]
 - `attachments`:
-  `List`\[[AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef)\]
+  `Sequence`\[[AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef)\]
 - `managedAgents`:
-  `List`\[[ManagedAgentStateChangeTypeDef](./type_defs.md#managedagentstatechangetypedef)\]
+  `Sequence`\[[ManagedAgentStateChangeTypeDef](./type_defs.md#managedagentstatechangetypedef)\]
 - `pullStartedAt`: `Union`\[`datetime`, `str`\]
 - `pullStoppedAt`: `Union`\[`datetime`, `str`\]
 - `executionStoppedAt`: `Union`\[`datetime`, `str`\]
@@ -2488,7 +2492,7 @@ from mypy_boto3_ecs.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -2691,7 +2695,7 @@ from mypy_boto3_ecs.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateCapacityProviderRequestRequestTypeDef
 
@@ -2731,7 +2735,7 @@ Required fields:
 Optional fields:
 
 - `settings`:
-  `List`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
+  `Sequence`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
 - `configuration`:
   [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
 
@@ -2757,7 +2761,7 @@ Required fields:
 
 - `cluster`: `str`
 - `settings`:
-  `List`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
+  `Sequence`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
 
 ## UpdateClusterSettingsResponseTypeDef
 
@@ -2806,7 +2810,7 @@ from mypy_boto3_ecs.type_defs import UpdateContainerInstancesStateRequestRequest
 
 Required fields:
 
-- `containerInstances`: `List`\[`str`\]
+- `containerInstances`: `Sequence`\[`str`\]
 - `status`:
   [ContainerInstanceStatusType](./literals.md#containerinstancestatustype)
 
@@ -2868,15 +2872,15 @@ Optional fields:
 - `desiredCount`: `int`
 - `taskDefinition`: `str`
 - `capacityProviderStrategy`:
-  `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
+  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 - `deploymentConfiguration`:
   [DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef)
 - `networkConfiguration`:
   [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 - `placementConstraints`:
-  `List`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
+  `Sequence`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
 - `placementStrategy`:
-  `List`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
+  `Sequence`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
 - `platformVersion`: `str`
 - `forceNewDeployment`: `bool`
 - `healthCheckGracePeriodSeconds`: `int`

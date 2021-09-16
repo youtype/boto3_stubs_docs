@@ -300,7 +300,7 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
-- `QuickConnectIds`: `List`\[`str`\] *(required)*
+- `QuickConnectIds`: `Sequence`\[`str`\] *(required)*
 
 ### associate_routing_profile_queues
 
@@ -320,7 +320,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
 - `QueueConfigs`:
-  `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
   *(required)*
 
 ### associate_security_key
@@ -378,7 +378,7 @@ Keyword-only arguments:
   *(required)*
 - `Description`: `str`
 - `DisplayOrder`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAgentStatusResponseTypeDef](./type_defs.md#createagentstatusresponsetypedef).
@@ -402,7 +402,7 @@ Keyword-only arguments:
 - `Type`: [ContactFlowTypeType](./literals.md#contactflowtypetype) *(required)*
 - `Content`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateContactFlowResponseTypeDef](./type_defs.md#createcontactflowresponsetypedef).
@@ -426,10 +426,10 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `TimeZone`: `str` *(required)*
 - `Config`:
-  `List`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
+  `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
   *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateHoursOfOperationResponseTypeDef](./type_defs.md#createhoursofoperationresponsetypedef).
@@ -481,7 +481,7 @@ Keyword-only arguments:
 - `SourceApplicationUrl`: `str` *(required)*
 - `SourceApplicationName`: `str` *(required)*
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype) *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateIntegrationAssociationResponseTypeDef](./type_defs.md#createintegrationassociationresponsetypedef).
@@ -507,8 +507,8 @@ Keyword-only arguments:
 - `OutboundCallerConfig`:
   [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
 - `MaxContacts`: `int`
-- `QuickConnectIds`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `QuickConnectIds`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef).
@@ -533,7 +533,7 @@ Keyword-only arguments:
   [QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef)
   *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateQuickConnectResponseTypeDef](./type_defs.md#createquickconnectresponsetypedef).
@@ -557,11 +557,11 @@ Keyword-only arguments:
 - `Description`: `str` *(required)*
 - `DefaultOutboundQueueId`: `str` *(required)*
 - `MediaConcurrencies`:
-  `List`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
+  `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
   *(required)*
 - `QueueConfigs`:
-  `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
-- `Tags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateRoutingProfileResponseTypeDef](./type_defs.md#createroutingprofileresponsetypedef).
@@ -584,7 +584,7 @@ Keyword-only arguments:
 - `IntegrationAssociationId`: `str` *(required)*
 - `UseCaseType`: `Literal['RULES_EVALUATION']` (see
   [UseCaseTypeType](./literals.md#usecasetypetype)) *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateUseCaseResponseTypeDef](./type_defs.md#createusecaseresponsetypedef).
@@ -606,7 +606,7 @@ Keyword-only arguments:
 - `Username`: `str` *(required)*
 - `PhoneConfig`:
   [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef) *(required)*
-- `SecurityProfileIds`: `List`\[`str`\] *(required)*
+- `SecurityProfileIds`: `Sequence`\[`str`\] *(required)*
 - `RoutingProfileId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
 - `Password`: `str`
@@ -614,7 +614,7 @@ Keyword-only arguments:
   [UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef)
 - `DirectoryUserId`: `str`
 - `HierarchyGroupId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
@@ -1120,7 +1120,7 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
-- `QuickConnectIds`: `List`\[`str`\] *(required)*
+- `QuickConnectIds`: `Sequence`\[`str`\] *(required)*
 
 ### disassociate_routing_profile_queues
 
@@ -1140,7 +1140,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
 - `QueueReferences`:
-  `List`\[[RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)\]
+  `Sequence`\[[RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)\]
   *(required)*
 
 ### disassociate_security_key
@@ -1173,7 +1173,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1216,9 +1216,9 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef) *(required)*
 - `CurrentMetrics`:
-  `List`\[[CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef)\]
+  `Sequence`\[[CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef)\]
   *(required)*
-- `Groupings`: `List`\[[GroupingType](./literals.md#groupingtype)\]
+- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1263,9 +1263,9 @@ Keyword-only arguments:
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef) *(required)*
 - `HistoricalMetrics`:
-  `List`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
+  `Sequence`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
   *(required)*
-- `Groupings`: `List`\[[GroupingType](./literals.md#groupingtype)\]
+- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1290,7 +1290,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `AgentStatusTypes`:
-  `List`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
+  `Sequence`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
 
 Returns
 [ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef).
@@ -1354,7 +1354,7 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactFlowTypes`:
-  `List`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
+  `Sequence`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1531,9 +1531,9 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `PhoneNumberTypes`:
-  `List`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
+  `Sequence`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
 - `PhoneNumberCountryCodes`:
-  `List`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
+  `Sequence`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1601,7 +1601,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
-- `QueueTypes`: `List`\[[QueueTypeType](./literals.md#queuetypetype)\]
+- `QueueTypes`: `Sequence`\[[QueueTypeType](./literals.md#queuetypetype)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1626,7 +1626,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `QuickConnectTypes`:
-  `List`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
+  `Sequence`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
 
 Returns
 [ListQuickConnectsResponseTypeDef](./type_defs.md#listquickconnectsresponsetypedef).
@@ -1844,7 +1844,7 @@ Keyword-only arguments:
 - `ParticipantDetails`:
   [ParticipantDetailsTypeDef](./type_defs.md#participantdetailstypedef)
   *(required)*
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 - `InitialMessage`: [ChatMessageTypeDef](./type_defs.md#chatmessagetypedef)
 - `ClientToken`: `str`
 
@@ -1895,7 +1895,7 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 - `SourcePhoneNumber`: `str`
 - `QueueId`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 Returns
 [StartOutboundVoiceContactResponseTypeDef](./type_defs.md#startoutboundvoicecontactresponsetypedef).
@@ -1918,8 +1918,8 @@ Keyword-only arguments:
 - `ContactFlowId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `PreviousContactId`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `References`: `Dict`\[`str`,
+- `Attributes`: `Mapping`\[`str`, `str`\]
+- `References`: `Mapping`\[`str`,
   [ReferenceTypeDef](./type_defs.md#referencetypedef)\]
 - `Description`: `str`
 - `ClientToken`: `str`
@@ -2002,7 +2002,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -2019,7 +2019,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_agent_status
 
@@ -2061,7 +2061,7 @@ Keyword-only arguments:
 
 - `InitialContactId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
-- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
+- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2124,7 +2124,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `TimeZone`: `str`
 - `Config`:
-  `List`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
+  `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
 
 ### update_instance_attribute
 
@@ -2327,7 +2327,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
 - `MediaConcurrencies`:
-  `List`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
+  `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
   *(required)*
 
 ### update_routing_profile_default_outbound_queue
@@ -2387,7 +2387,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
 - `QueueConfigs`:
-  `List`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
+  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
   *(required)*
 
 ### update_user_hierarchy
@@ -2522,7 +2522,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `SecurityProfileIds`: `List`\[`str`\] *(required)*
+- `SecurityProfileIds`: `Sequence`\[`str`\] *(required)*
 - `UserId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
 

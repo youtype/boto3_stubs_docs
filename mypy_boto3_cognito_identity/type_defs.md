@@ -83,13 +83,13 @@ Required fields:
 Optional fields:
 
 - `AllowClassicFlow`: `bool`
-- `SupportedLoginProviders`: `Dict`\[`str`, `str`\]
+- `SupportedLoginProviders`: `Mapping`\[`str`, `str`\]
 - `DeveloperProviderName`: `str`
-- `OpenIdConnectProviderARNs`: `List`\[`str`\]
+- `OpenIdConnectProviderARNs`: `Sequence`\[`str`\]
 - `CognitoIdentityProviders`:
-  `List`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
-- `SamlProviderARNs`: `List`\[`str`\]
-- `IdentityPoolTags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
+- `SamlProviderARNs`: `Sequence`\[`str`\]
+- `IdentityPoolTags`: `Mapping`\[`str`, `str`\]
 
 ## CredentialsTypeDef
 
@@ -112,7 +112,7 @@ from mypy_boto3_cognito_identity.type_defs import DeleteIdentitiesInputRequestTy
 
 Required fields:
 
-- `IdentityIdsToDelete`: `List`\[`str`\]
+- `IdentityIdsToDelete`: `Sequence`\[`str`\]
 
 ## DeleteIdentitiesResponseTypeDef
 
@@ -169,7 +169,7 @@ Required fields:
 
 Optional fields:
 
-- `Logins`: `Dict`\[`str`, `str`\]
+- `Logins`: `Mapping`\[`str`, `str`\]
 - `CustomRoleArn`: `str`
 
 ## GetCredentialsForIdentityResponseTypeDef
@@ -198,7 +198,7 @@ Required fields:
 Optional fields:
 
 - `AccountId`: `str`
-- `Logins`: `Dict`\[`str`, `str`\]
+- `Logins`: `Mapping`\[`str`, `str`\]
 
 ## GetIdResponseTypeDef
 
@@ -246,12 +246,12 @@ from mypy_boto3_cognito_identity.type_defs import GetOpenIdTokenForDeveloperIden
 Required fields:
 
 - `IdentityPoolId`: `str`
-- `Logins`: `Dict`\[`str`, `str`\]
+- `Logins`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
 - `IdentityId`: `str`
-- `PrincipalTags`: `Dict`\[`str`, `str`\]
+- `PrincipalTags`: `Mapping`\[`str`, `str`\]
 - `TokenDuration`: `int`
 
 ## GetOpenIdTokenForDeveloperIdentityResponseTypeDef
@@ -279,7 +279,7 @@ Required fields:
 
 Optional fields:
 
-- `Logins`: `Dict`\[`str`, `str`\]
+- `Logins`: `Mapping`\[`str`, `str`\]
 
 ## GetOpenIdTokenResponseTypeDef
 
@@ -363,13 +363,13 @@ Required fields:
 Optional fields:
 
 - `AllowClassicFlow`: `bool`
-- `SupportedLoginProviders`: `Dict`\[`str`, `str`\]
+- `SupportedLoginProviders`: `Mapping`\[`str`, `str`\]
 - `DeveloperProviderName`: `str`
-- `OpenIdConnectProviderARNs`: `List`\[`str`\]
+- `OpenIdConnectProviderARNs`: `Sequence`\[`str`\]
 - `CognitoIdentityProviders`:
-  `List`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
-- `SamlProviderARNs`: `List`\[`str`\]
-- `IdentityPoolTags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
+- `SamlProviderARNs`: `Sequence`\[`str`\]
+- `IdentityPoolTags`: `Mapping`\[`str`, `str`\]
 
 ## IdentityPoolShortDescriptionTypeDef
 
@@ -617,11 +617,11 @@ from mypy_boto3_cognito_identity.type_defs import SetIdentityPoolRolesInputReque
 Required fields:
 
 - `IdentityPoolId`: `str`
-- `Roles`: `Dict`\[`str`, `str`\]
+- `Roles`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
-- `RoleMappings`: `Dict`\[`str`,
+- `RoleMappings`: `Mapping`\[`str`,
   [RoleMappingTypeDef](./type_defs.md#rolemappingtypedef)\]
 
 ## SetPrincipalTagAttributeMapInputRequestTypeDef
@@ -638,7 +638,7 @@ Required fields:
 Optional fields:
 
 - `UseDefaults`: `bool`
-- `PrincipalTags`: `Dict`\[`str`, `str`\]
+- `PrincipalTags`: `Mapping`\[`str`, `str`\]
 
 ## SetPrincipalTagAttributeMapResponseTypeDef
 
@@ -664,7 +664,7 @@ from mypy_boto3_cognito_identity.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UnlinkDeveloperIdentityInputRequestTypeDef
 
@@ -688,8 +688,8 @@ from mypy_boto3_cognito_identity.type_defs import UnlinkIdentityInputRequestType
 Required fields:
 
 - `IdentityId`: `str`
-- `Logins`: `Dict`\[`str`, `str`\]
-- `LoginsToRemove`: `List`\[`str`\]
+- `Logins`: `Mapping`\[`str`, `str`\]
+- `LoginsToRemove`: `Sequence`\[`str`\]
 
 ## UnprocessedIdentityIdTypeDef
 
@@ -711,4 +711,4 @@ from mypy_boto3_cognito_identity.type_defs import UntagResourceInputRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]

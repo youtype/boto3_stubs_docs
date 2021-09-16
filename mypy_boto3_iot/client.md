@@ -398,7 +398,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `targets`: `List`\[`str`\] *(required)*
+- `targets`: `Sequence`\[`str`\] *(required)*
 - `jobId`: `str` *(required)*
 - `comment`: `str`
 - `namespaceId`: `str`
@@ -607,7 +607,7 @@ Keyword-only arguments:
 - `thingName`: `str` *(required)*
 - `force`: `bool`
 - `expectedVersion`: `int`
-- `statusDetails`: `Dict`\[`str`, `str`\]
+- `statusDetails`: `Mapping`\[`str`, `str`\]
 
 ### clear_default_authorizer
 
@@ -681,9 +681,9 @@ Keyword-only arguments:
 - `authorizerName`: `str` *(required)*
 - `authorizerFunctionArn`: `str` *(required)*
 - `tokenKeyName`: `str`
-- `tokenSigningPublicKeys`: `Dict`\[`str`, `str`\]
+- `tokenSigningPublicKeys`: `Mapping`\[`str`, `str`\]
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `signingDisabled`: `bool`
 
 Returns
@@ -706,7 +706,7 @@ Keyword-only arguments:
 - `billingGroupName`: `str` *(required)*
 - `billingGroupProperties`:
   [BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateBillingGroupResponseTypeDef](./type_defs.md#createbillinggroupresponsetypedef).
@@ -751,7 +751,7 @@ Keyword-only arguments:
   *(required)*
 - `clientRequestToken`: `str` *(required)*
 - `displayName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCustomMetricResponseTypeDef](./type_defs.md#createcustommetricresponsetypedef).
@@ -774,9 +774,9 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `type`: `Literal['TOPIC_FILTER']` (see
   [DimensionTypeType](./literals.md#dimensiontypetype)) *(required)*
-- `stringValues`: `List`\[`str`\] *(required)*
+- `stringValues`: `Sequence`\[`str`\] *(required)*
 - `clientRequestToken`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDimensionResponseTypeDef](./type_defs.md#createdimensionresponsetypedef).
@@ -797,12 +797,12 @@ Keyword-only arguments:
 
 - `domainConfigurationName`: `str` *(required)*
 - `domainName`: `str`
-- `serverCertificateArns`: `List`\[`str`\]
+- `serverCertificateArns`: `Sequence`\[`str`\]
 - `validationCertificateArn`: `str`
 - `authorizerConfig`:
   [AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef)
 - `serviceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDomainConfigurationResponseTypeDef](./type_defs.md#createdomainconfigurationresponsetypedef).
@@ -827,7 +827,7 @@ Keyword-only arguments:
   [ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef)
 - `indexName`: `str`
 - `queryVersion`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDynamicThingGroupResponseTypeDef](./type_defs.md#createdynamicthinggroupresponsetypedef).
@@ -856,7 +856,7 @@ Keyword-only arguments:
 - `queryVersion`: `str`
 - `indexName`: `str`
 - `unit`: [FleetMetricUnitType](./literals.md#fleetmetricunittype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateFleetMetricResponseTypeDef](./type_defs.md#createfleetmetricresponsetypedef).
@@ -876,7 +876,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
-- `targets`: `List`\[`str`\] *(required)*
+- `targets`: `Sequence`\[`str`\] *(required)*
 - `documentSource`: `str`
 - `document`: `str`
 - `description`: `str`
@@ -887,7 +887,7 @@ Keyword-only arguments:
   [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
 - `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `namespaceId`: `str`
 - `jobTemplateArn`: `str`
 
@@ -918,7 +918,7 @@ Keyword-only arguments:
   [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
 - `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
@@ -963,7 +963,7 @@ Keyword-only arguments:
 - `actionParams`:
   [MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef)
   *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateMitigationActionResponseTypeDef](./type_defs.md#createmitigationactionresponsetypedef).
@@ -983,13 +983,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `otaUpdateId`: `str` *(required)*
-- `targets`: `List`\[`str`\] *(required)*
+- `targets`: `Sequence`\[`str`\] *(required)*
 - `files`:
-  `List`\[[OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef)\]
+  `Sequence`\[[OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef)\]
   *(required)*
 - `roleArn`: `str` *(required)*
 - `description`: `str`
-- `protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
+- `protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `targetSelection`: [TargetSelectionType](./literals.md#targetselectiontype)
 - `awsJobExecutionsRolloutConfig`:
   [AwsJobExecutionsRolloutConfigTypeDef](./type_defs.md#awsjobexecutionsrolloutconfigtypedef)
@@ -999,8 +999,8 @@ Keyword-only arguments:
   [AwsJobAbortConfigTypeDef](./type_defs.md#awsjobabortconfigtypedef)
 - `awsJobTimeoutConfig`:
   [AwsJobTimeoutConfigTypeDef](./type_defs.md#awsjobtimeoutconfigtypedef)
-- `additionalParameters`: `Dict`\[`str`, `str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `additionalParameters`: `Mapping`\[`str`, `str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateOTAUpdateResponseTypeDef](./type_defs.md#createotaupdateresponsetypedef).
@@ -1021,7 +1021,7 @@ Keyword-only arguments:
 
 - `policyName`: `str` *(required)*
 - `policyDocument`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
@@ -1087,7 +1087,7 @@ Keyword-only arguments:
 - `enabled`: `bool`
 - `preProvisioningHook`:
   [ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateProvisioningTemplateResponseTypeDef](./type_defs.md#createprovisioningtemplateresponsetypedef).
@@ -1131,7 +1131,7 @@ Keyword-only arguments:
 - `roleAlias`: `str` *(required)*
 - `roleArn`: `str` *(required)*
 - `credentialDurationSeconds`: `int`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRoleAliasResponseTypeDef](./type_defs.md#createrolealiasresponsetypedef).
@@ -1152,11 +1152,11 @@ Keyword-only arguments:
 
 - `frequency`: [AuditFrequencyType](./literals.md#auditfrequencytype)
   *(required)*
-- `targetCheckNames`: `List`\[`str`\] *(required)*
+- `targetCheckNames`: `Sequence`\[`str`\] *(required)*
 - `scheduledAuditName`: `str` *(required)*
 - `dayOfMonth`: `str`
 - `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateScheduledAuditResponseTypeDef](./type_defs.md#createscheduledauditresponsetypedef).
@@ -1177,14 +1177,14 @@ Keyword-only arguments:
 
 - `securityProfileName`: `str` *(required)*
 - `securityProfileDescription`: `str`
-- `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
-- `alertTargets`: `Dict`\[`Literal['SNS']` (see
+- `behaviors`: `Sequence`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
+- `alertTargets`: `Mapping`\[`Literal['SNS']` (see
   [AlertTargetTypeType](./literals.md#alerttargettypetype)),
   [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
-- `additionalMetricsToRetain`: `List`\[`str`\]
+- `additionalMetricsToRetain`: `Sequence`\[`str`\]
 - `additionalMetricsToRetainV2`:
-  `List`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSecurityProfileResponseTypeDef](./type_defs.md#createsecurityprofileresponsetypedef).
@@ -1204,11 +1204,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `streamId`: `str` *(required)*
-- `files`: `List`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
+- `files`: `Sequence`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
   *(required)*
 - `roleArn`: `str` *(required)*
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateStreamResponseTypeDef](./type_defs.md#createstreamresponsetypedef).
@@ -1254,7 +1254,7 @@ Keyword-only arguments:
 - `parentGroupName`: `str`
 - `thingGroupProperties`:
   [ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateThingGroupResponseTypeDef](./type_defs.md#createthinggroupresponsetypedef).
@@ -1276,7 +1276,7 @@ Keyword-only arguments:
 - `thingTypeName`: `str` *(required)*
 - `thingTypeProperties`:
   [ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateThingTypeResponseTypeDef](./type_defs.md#createthingtyperesponsetypedef).
@@ -2623,7 +2623,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -2800,7 +2800,7 @@ Keyword-only arguments:
 - `indexName`: `str`
 - `aggregationField`: `str`
 - `queryVersion`: `str`
-- `percents`: `List`\[`float`\]
+- `percents`: `Sequence`\[`float`\]
 
 Returns
 [GetPercentilesResponseTypeDef](./type_defs.md#getpercentilesresponsetypedef).
@@ -4144,7 +4144,7 @@ Keyword-only arguments:
 - `allowAutoRegistration`: `bool`
 - `registrationConfig`:
   [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [RegisterCACertificateResponseTypeDef](./type_defs.md#registercacertificateresponsetypedef).
@@ -4207,7 +4207,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `templateBody`: `str` *(required)*
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 
 Returns
 [RegisterThingResponseTypeDef](./type_defs.md#registerthingresponsetypedef).
@@ -4424,7 +4424,8 @@ Keyword-only arguments:
 - `target`:
   [AuditMitigationActionsTaskTargetTypeDef](./type_defs.md#auditmitigationactionstasktargettypedef)
   *(required)*
-- `auditCheckToActionsMapping`: `Dict`\[`str`, `List`\[`str`\]\] *(required)*
+- `auditCheckToActionsMapping`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+  *(required)*
 - `clientRequestToken`: `str` *(required)*
 
 Returns
@@ -4449,7 +4450,7 @@ Keyword-only arguments:
 - `target`:
   [DetectMitigationActionsTaskTargetTypeDef](./type_defs.md#detectmitigationactionstasktargettypedef)
   *(required)*
-- `actions`: `List`\[`str`\] *(required)*
+- `actions`: `Sequence`\[`str`\] *(required)*
 - `clientRequestToken`: `str` *(required)*
 - `violationEventOccurrenceRange`:
   [ViolationEventOccurrenceRangeTypeDef](./type_defs.md#violationeventoccurrencerangetypedef)
@@ -4473,7 +4474,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `targetCheckNames`: `List`\[`str`\] *(required)*
+- `targetCheckNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [StartOnDemandAuditTaskResponseTypeDef](./type_defs.md#startondemandaudittaskresponsetypedef).
@@ -4534,7 +4535,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -4553,13 +4554,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `authInfos`: `List`\[[AuthInfoTypeDef](./type_defs.md#authinfotypedef)\]
+- `authInfos`: `Sequence`\[[AuthInfoTypeDef](./type_defs.md#authinfotypedef)\]
   *(required)*
 - `principal`: `str`
 - `cognitoIdentityPoolId`: `str`
 - `clientId`: `str`
-- `policyNamesToAdd`: `List`\[`str`\]
-- `policyNamesToSkip`: `List`\[`str`\]
+- `policyNamesToAdd`: `Sequence`\[`str`\]
+- `policyNamesToSkip`: `Sequence`\[`str`\]
 
 Returns
 [TestAuthorizationResponseTypeDef](./type_defs.md#testauthorizationresponsetypedef).
@@ -4626,7 +4627,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -4646,10 +4647,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `roleArn`: `str`
-- `auditNotificationTargetConfigurations`: `Dict`\[`Literal['SNS']` (see
+- `auditNotificationTargetConfigurations`: `Mapping`\[`Literal['SNS']` (see
   [AuditNotificationTypeType](./literals.md#auditnotificationtypetype)),
   [AuditNotificationTargetTypeDef](./type_defs.md#auditnotificationtargettypedef)\]
-- `auditCheckConfigurations`: `Dict`\[`str`,
+- `auditCheckConfigurations`: `Mapping`\[`str`,
   [AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
@@ -4695,7 +4696,7 @@ Keyword-only arguments:
 - `authorizerName`: `str` *(required)*
 - `authorizerFunctionArn`: `str`
 - `tokenKeyName`: `str`
-- `tokenSigningPublicKeys`: `Dict`\[`str`, `str`\]
+- `tokenSigningPublicKeys`: `Mapping`\[`str`, `str`\]
 - `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
 
 Returns
@@ -4799,7 +4800,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
-- `stringValues`: `List`\[`str`\] *(required)*
+- `stringValues`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [UpdateDimensionResponseTypeDef](./type_defs.md#updatedimensionresponsetypedef).
@@ -4868,7 +4869,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `eventConfigurations`: `Dict`\[[EventTypeType](./literals.md#eventtypetype),
+- `eventConfigurations`:
+  `Mapping`\[[EventTypeType](./literals.md#eventtypetype),
   [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
@@ -5032,7 +5034,7 @@ Keyword-only arguments:
 - `frequency`: [AuditFrequencyType](./literals.md#auditfrequencytype)
 - `dayOfMonth`: `str`
 - `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
-- `targetCheckNames`: `List`\[`str`\]
+- `targetCheckNames`: `Sequence`\[`str`\]
 
 Returns
 [UpdateScheduledAuditResponseTypeDef](./type_defs.md#updatescheduledauditresponsetypedef).
@@ -5053,13 +5055,13 @@ Keyword-only arguments:
 
 - `securityProfileName`: `str` *(required)*
 - `securityProfileDescription`: `str`
-- `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
-- `alertTargets`: `Dict`\[`Literal['SNS']` (see
+- `behaviors`: `Sequence`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
+- `alertTargets`: `Mapping`\[`Literal['SNS']` (see
   [AlertTargetTypeType](./literals.md#alerttargettypetype)),
   [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
-- `additionalMetricsToRetain`: `List`\[`str`\]
+- `additionalMetricsToRetain`: `Sequence`\[`str`\]
 - `additionalMetricsToRetainV2`:
-  `List`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
+  `Sequence`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
 - `deleteBehaviors`: `bool`
 - `deleteAlertTargets`: `bool`
 - `deleteAdditionalMetricsToRetain`: `bool`
@@ -5084,7 +5086,7 @@ Keyword-only arguments:
 
 - `streamId`: `str` *(required)*
 - `description`: `str`
-- `files`: `List`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
+- `files`: `Sequence`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
 - `roleArn`: `str`
 
 Returns
@@ -5152,8 +5154,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `thingName`: `str`
-- `thingGroupsToAdd`: `List`\[`str`\]
-- `thingGroupsToRemove`: `List`\[`str`\]
+- `thingGroupsToAdd`: `Sequence`\[`str`\]
+- `thingGroupsToRemove`: `Sequence`\[`str`\]
 - `overrideDynamicGroups`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -5195,7 +5197,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `behaviors`: `List`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
+- `behaviors`: `Sequence`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
   *(required)*
 
 Returns

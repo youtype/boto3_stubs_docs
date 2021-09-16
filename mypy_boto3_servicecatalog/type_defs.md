@@ -321,7 +321,7 @@ from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithP
 Required fields:
 
 - `ServiceActionAssociations`:
-  `List`\[[ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef)\]
+  `Sequence`\[[ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef)\]
 
 Optional fields:
 
@@ -349,7 +349,7 @@ from mypy_boto3_servicecatalog.type_defs import BatchDisassociateServiceActionFr
 Required fields:
 
 - `ServiceActionAssociations`:
-  `List`\[[ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef)\]
+  `Sequence`\[[ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef)\]
 
 Optional fields:
 
@@ -430,10 +430,11 @@ Optional fields:
 - `AcceptLanguage`: `str`
 - `TargetProductId`: `str`
 - `TargetProductName`: `str`
-- `SourceProvisioningArtifactIdentifiers`: `List`\[`Dict`\[`Literal['Id']` (see
+- `SourceProvisioningArtifactIdentifiers`:
+  `Sequence`\[`Mapping`\[`Literal['Id']` (see
   [ProvisioningArtifactPropertyNameType](./literals.md#provisioningartifactpropertynametype)),
   `str`\]\]
-- `CopyOptions`: `List`\[`Literal['CopyTags']` (see
+- `CopyOptions`: `Sequence`\[`Literal['CopyTags']` (see
   [CopyOptionType](./literals.md#copyoptiontype))\]
 
 ## CopyProductOutputTypeDef
@@ -498,7 +499,7 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePortfolioOutputTypeDef
 
@@ -567,7 +568,7 @@ Optional fields:
 - `SupportDescription`: `str`
 - `SupportEmail`: `str`
 - `SupportUrl`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateProductOutputTypeDef
 
@@ -604,11 +605,11 @@ Required fields:
 Optional fields:
 
 - `AcceptLanguage`: `str`
-- `NotificationArns`: `List`\[`str`\]
+- `NotificationArns`: `Sequence`\[`str`\]
 - `PathId`: `str`
 - `ProvisioningParameters`:
-  `List`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateProvisionedProductPlanOutputTypeDef
 
@@ -670,7 +671,7 @@ Required fields:
 - `DefinitionType`: `Literal['SSM_AUTOMATION']` (see
   [ServiceActionDefinitionTypeType](./literals.md#serviceactiondefinitiontypetype))
 - `Definition`:
-  `Dict`\[[ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype),
+  `Mapping`\[[ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype),
   `str`\]
 - `IdempotencyToken`: `str`
 
@@ -1428,7 +1429,7 @@ Required fields:
 Optional fields:
 
 - `AcceptLanguage`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 ## ExecuteProvisionedProductServiceActionOutputTypeDef
 
@@ -1492,7 +1493,7 @@ Optional fields:
 - `AcceptLanguage`: `str`
 - `ProvisionedProductId`: `str`
 - `ProvisionedProductName`: `str`
-- `OutputKeys`: `List`\[`str`\]
+- `OutputKeys`: `Sequence`\[`str`\]
 - `PageSize`: `int`
 - `PageToken`: `str`
 
@@ -2261,11 +2262,11 @@ Optional fields:
 - `PathId`: `str`
 - `PathName`: `str`
 - `ProvisioningParameters`:
-  `List`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
+  `Sequence`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
 - `ProvisioningPreferences`:
   [ProvisioningPreferencesTypeDef](./type_defs.md#provisioningpreferencestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NotificationArns`: `List`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `NotificationArns`: `Sequence`\[`str`\]
 
 ## ProvisionProductOutputTypeDef
 
@@ -2439,7 +2440,7 @@ from mypy_boto3_servicecatalog.type_defs import ProvisioningArtifactPropertiesTy
 
 Required fields:
 
-- `Info`: `Dict`\[`str`, `str`\]
+- `Info`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
@@ -2510,8 +2511,8 @@ from mypy_boto3_servicecatalog.type_defs import ProvisioningPreferencesTypeDef
 
 Optional fields:
 
-- `StackSetAccounts`: `List`\[`str`\]
-- `StackSetRegions`: `List`\[`str`\]
+- `StackSetAccounts`: `Sequence`\[`str`\]
+- `StackSetRegions`: `Sequence`\[`str`\]
 - `StackSetFailureToleranceCount`: `int`
 - `StackSetFailureTolerancePercentage`: `int`
 - `StackSetMaxConcurrencyCount`: `int`
@@ -2702,8 +2703,8 @@ Optional fields:
 - `AcceptLanguage`: `str`
 - `PortfolioId`: `str`
 - `Filters`:
-  `Dict`\[[ProductViewFilterByType](./literals.md#productviewfilterbytype),
-  `List`\[`str`\]\]
+  `Mapping`\[[ProductViewFilterByType](./literals.md#productviewfilterbytype),
+  `Sequence`\[`str`\]\]
 - `SortBy`: [ProductViewSortByType](./literals.md#productviewsortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PageToken`: `str`
@@ -2735,8 +2736,8 @@ Optional fields:
 
 - `AcceptLanguage`: `str`
 - `Filters`:
-  `Dict`\[[ProductViewFilterByType](./literals.md#productviewfilterbytype),
-  `List`\[`str`\]\]
+  `Mapping`\[[ProductViewFilterByType](./literals.md#productviewfilterbytype),
+  `Sequence`\[`str`\]\]
 - `PageSize`: `int`
 - `SortBy`: [ProductViewSortByType](./literals.md#productviewsortbytype)
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
@@ -2769,9 +2770,9 @@ Optional fields:
 - `AcceptLanguage`: `str`
 - `AccessLevelFilter`:
   [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
-- `Filters`: `Dict`\[`Literal['SearchQuery']` (see
+- `Filters`: `Mapping`\[`Literal['SearchQuery']` (see
   [ProvisionedProductViewFilterByType](./literals.md#provisionedproductviewfilterbytype)),
-  `List`\[`str`\]\]
+  `Sequence`\[`str`\]\]
 - `SortBy`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 - `PageSize`: `int`
@@ -2982,8 +2983,8 @@ Optional fields:
 - `DisplayName`: `str`
 - `Description`: `str`
 - `ProviderName`: `str`
-- `AddTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RemoveTags`: `List`\[`str`\]
+- `AddTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RemoveTags`: `Sequence`\[`str`\]
 
 ## UpdatePortfolioOutputTypeDef
 
@@ -3050,8 +3051,8 @@ Optional fields:
 - `SupportDescription`: `str`
 - `SupportEmail`: `str`
 - `SupportUrl`: `str`
-- `AddTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RemoveTags`: `List`\[`str`\]
+- `AddTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RemoveTags`: `Sequence`\[`str`\]
 
 ## UpdateProductOutputTypeDef
 
@@ -3089,10 +3090,10 @@ Optional fields:
 - `PathId`: `str`
 - `PathName`: `str`
 - `ProvisioningParameters`:
-  `List`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
+  `Sequence`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
 - `ProvisioningPreferences`:
   [UpdateProvisioningPreferencesTypeDef](./type_defs.md#updateprovisioningpreferencestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UpdateProvisionedProductOutputTypeDef
 
@@ -3116,7 +3117,7 @@ Required fields:
 
 - `ProvisionedProductId`: `str`
 - `ProvisionedProductProperties`:
-  `Dict`\[[PropertyKeyType](./literals.md#propertykeytype), `str`\]
+  `Mapping`\[[PropertyKeyType](./literals.md#propertykeytype), `str`\]
 - `IdempotencyToken`: `str`
 
 Optional fields:
@@ -3194,8 +3195,8 @@ from mypy_boto3_servicecatalog.type_defs import UpdateProvisioningPreferencesTyp
 
 Optional fields:
 
-- `StackSetAccounts`: `List`\[`str`\]
-- `StackSetRegions`: `List`\[`str`\]
+- `StackSetAccounts`: `Sequence`\[`str`\]
+- `StackSetRegions`: `Sequence`\[`str`\]
 - `StackSetFailureToleranceCount`: `int`
 - `StackSetFailureTolerancePercentage`: `int`
 - `StackSetMaxConcurrencyCount`: `int`
@@ -3217,7 +3218,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Definition`:
-  `Dict`\[[ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype),
+  `Mapping`\[[ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype),
   `str`\]
 - `Description`: `str`
 - `AcceptLanguage`: `str`

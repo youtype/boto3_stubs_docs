@@ -368,7 +368,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -663,7 +663,7 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `workflowExecutionRetentionPeriodInDays`: `str` *(required)*
 - `description`: `str`
-- `tags`: `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+- `tags`: `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
 ### register_workflow_type
 
@@ -785,7 +785,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `taskToken`: `str` *(required)*
-- `decisions`: `List`\[[DecisionTypeDef](./type_defs.md#decisiontypedef)\]
+- `decisions`: `Sequence`\[[DecisionTypeDef](./type_defs.md#decisiontypedef)\]
 - `executionContext`: `str`
 
 ### signal_workflow_execution
@@ -833,7 +833,7 @@ Keyword-only arguments:
 - `taskPriority`: `str`
 - `input`: `str`
 - `executionStartToCloseTimeout`: `str`
-- `tagList`: `List`\[`str`\]
+- `tagList`: `Sequence`\[`str`\]
 - `taskStartToCloseTimeout`: `str`
 - `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `lambdaRole`: `str`
@@ -855,7 +855,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+- `tags`: `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
   *(required)*
 
 ### terminate_workflow_execution
@@ -947,7 +947,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### get_paginator
 

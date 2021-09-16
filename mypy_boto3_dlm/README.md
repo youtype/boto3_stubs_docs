@@ -72,6 +72,7 @@ from mypy_boto3_dlm.literals import EventSourceValuesType, ...
 - [ResourceTypeValuesType](./literals.md#resourcetypevaluestype)
 - [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 - [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

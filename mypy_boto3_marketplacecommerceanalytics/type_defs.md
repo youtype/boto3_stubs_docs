@@ -31,7 +31,7 @@ Required fields:
 Optional fields:
 
 - `destinationS3Prefix`: `str`
-- `customerDefinedValues`: `Dict`\[`str`, `str`\]
+- `customerDefinedValues`: `Mapping`\[`str`, `str`\]
 
 ## GenerateDataSetResultTypeDef
 
@@ -76,7 +76,7 @@ Required fields:
 Optional fields:
 
 - `destinationS3Prefix`: `str`
-- `customerDefinedValues`: `Dict`\[`str`, `str`\]
+- `customerDefinedValues`: `Mapping`\[`str`, `str`\]
 
 ## StartSupportDataExportResultTypeDef
 

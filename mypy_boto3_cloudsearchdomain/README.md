@@ -58,6 +58,7 @@ from mypy_boto3_cloudsearchdomain.literals import ContentTypeType, ...
 
 - [ContentTypeType](./literals.md#contenttypetype)
 - [QueryParserType](./literals.md#queryparsertype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

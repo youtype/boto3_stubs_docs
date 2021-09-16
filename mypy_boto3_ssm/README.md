@@ -511,6 +511,7 @@ from mypy_boto3_ssm.literals import AssociationComplianceSeverityType, ...
 - [SignalTypeType](./literals.md#signaltypetype)
 - [StepExecutionFilterKeyType](./literals.md#stepexecutionfilterkeytype)
 - [StopTypeType](./literals.md#stoptypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

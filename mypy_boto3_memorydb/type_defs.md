@@ -162,7 +162,7 @@ Optional fields:
 
 - `Type`: `Literal['password']` (see
   [InputAuthenticationTypeType](./literals.md#inputauthenticationtypetype))
-- `Passwords`: `List`\[`str`\]
+- `Passwords`: `Sequence`\[`str`\]
 
 ## AuthenticationTypeDef
 
@@ -193,7 +193,7 @@ from mypy_boto3_memorydb.type_defs import BatchUpdateClusterRequestRequestTypeDe
 
 Required fields:
 
-- `ClusterNames`: `List`\[`str`\]
+- `ClusterNames`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -303,7 +303,7 @@ Optional fields:
 
 - `TargetBucket`: `str`
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CopySnapshotResponseTypeDef
 
@@ -329,8 +329,8 @@ Required fields:
 
 Optional fields:
 
-- `UserNames`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `UserNames`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateACLResponseTypeDef
 
@@ -363,16 +363,16 @@ Optional fields:
 - `NumShards`: `int`
 - `NumReplicasPerShard`: `int`
 - `SubnetGroupName`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `MaintenanceWindow`: `str`
 - `Port`: `int`
 - `SnsTopicArn`: `str`
 - `TLSEnabled`: `bool`
 - `KmsKeyId`: `str`
-- `SnapshotArns`: `List`\[`str`\]
+- `SnapshotArns`: `Sequence`\[`str`\]
 - `SnapshotName`: `str`
 - `SnapshotRetentionLimit`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SnapshotWindow`: `str`
 - `EngineVersion`: `str`
 - `AutoMinorVersionUpgrade`: `bool`
@@ -403,7 +403,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateParameterGroupResponseTypeDef
 
@@ -432,7 +432,7 @@ Required fields:
 Optional fields:
 
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSnapshotResponseTypeDef
 
@@ -455,12 +455,12 @@ from mypy_boto3_memorydb.type_defs import CreateSubnetGroupRequestRequestTypeDef
 Required fields:
 
 - `SubnetGroupName`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSubnetGroupResponseTypeDef
 
@@ -489,7 +489,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateUserResponseTypeDef
 
@@ -811,9 +811,9 @@ from mypy_boto3_memorydb.type_defs import DescribeServiceUpdatesRequestRequestTy
 Optional fields:
 
 - `ServiceUpdateName`: `str`
-- `ClusterNames`: `List`\[`str`\]
+- `ClusterNames`: `Sequence`\[`str`\]
 - `Status`:
-  `List`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
+  `Sequence`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -894,7 +894,7 @@ from mypy_boto3_memorydb.type_defs import DescribeUsersRequestRequestTypeDef
 Optional fields:
 
 - `UserName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -979,7 +979,7 @@ from mypy_boto3_memorydb.type_defs import FilterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## ListAllowedNodeTypeUpdatesRequestRequestTypeDef
 
@@ -1113,7 +1113,7 @@ Required fields:
 Optional fields:
 
 - `AllParameters`: `bool`
-- `ParameterNames`: `List`\[`str`\]
+- `ParameterNames`: `Sequence`\[`str`\]
 
 ## ResetParameterGroupResponseTypeDef
 
@@ -1301,7 +1301,7 @@ from mypy_boto3_memorydb.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagResourceResponseTypeDef
 
@@ -1347,7 +1347,7 @@ from mypy_boto3_memorydb.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagResourceResponseTypeDef
 
@@ -1373,8 +1373,8 @@ Required fields:
 
 Optional fields:
 
-- `UserNamesToAdd`: `List`\[`str`\]
-- `UserNamesToRemove`: `List`\[`str`\]
+- `UserNamesToAdd`: `Sequence`\[`str`\]
+- `UserNamesToRemove`: `Sequence`\[`str`\]
 
 ## UpdateACLResponseTypeDef
 
@@ -1401,7 +1401,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `MaintenanceWindow`: `str`
 - `SnsTopicArn`: `str`
 - `SnsTopicStatus`: `str`
@@ -1438,7 +1438,7 @@ Required fields:
 
 - `ParameterGroupName`: `str`
 - `ParameterNameValues`:
-  `List`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
+  `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
 
 ## UpdateParameterGroupResponseTypeDef
 
@@ -1466,7 +1466,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 ## UpdateSubnetGroupResponseTypeDef
 

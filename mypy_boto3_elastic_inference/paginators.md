@@ -29,8 +29,8 @@ Boto3 documentation:
 
 Arguments for `DescribeAcceleratorsPaginator.paginate` method:
 
-- `acceleratorIds`: `List`\[`str`\]
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `acceleratorIds`: `Sequence`\[`str`\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

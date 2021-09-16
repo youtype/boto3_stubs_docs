@@ -232,9 +232,9 @@ from mypy_boto3_kendra.type_defs import AttributeFilterTypeDef
 Optional fields:
 
 - `AndAllFilters`:
-  `List`\[[AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)\]
+  `Sequence`\[[AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)\]
 - `OrAllFilters`:
-  `List`\[[AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)\]
+  `Sequence`\[[AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)\]
 - `NotFilter`: [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
 - `EqualsTo`:
   [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
@@ -260,7 +260,7 @@ from mypy_boto3_kendra.type_defs import AuthenticationConfigurationTypeDef
 Optional fields:
 
 - `BasicAuthentication`:
-  `List`\[[BasicAuthenticationConfigurationTypeDef](./type_defs.md#basicauthenticationconfigurationtypedef)\]
+  `Sequence`\[[BasicAuthenticationConfigurationTypeDef](./type_defs.md#basicauthenticationconfigurationtypedef)\]
 
 ## BasicAuthenticationConfigurationTypeDef
 
@@ -283,7 +283,7 @@ from mypy_boto3_kendra.type_defs import BatchDeleteDocumentRequestRequestTypeDef
 Required fields:
 
 - `IndexId`: `str`
-- `DocumentIdList`: `List`\[`str`\]
+- `DocumentIdList`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -325,7 +325,7 @@ Required fields:
 
 - `IndexId`: `str`
 - `DocumentInfoList`:
-  `List`\[[DocumentInfoTypeDef](./type_defs.md#documentinfotypedef)\]
+  `Sequence`\[[DocumentInfoTypeDef](./type_defs.md#documentinfotypedef)\]
 
 ## BatchGetDocumentStatusResponseErrorTypeDef
 
@@ -362,7 +362,7 @@ from mypy_boto3_kendra.type_defs import BatchPutDocumentRequestRequestTypeDef
 Required fields:
 
 - `IndexId`: `str`
-- `Documents`: `List`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\]
+- `Documents`: `Sequence`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\]
 
 Optional fields:
 
@@ -435,13 +435,13 @@ Required fields:
 
 - `DocumentIdColumnName`: `str`
 - `DocumentDataColumnName`: `str`
-- `ChangeDetectingColumns`: `List`\[`str`\]
+- `ChangeDetectingColumns`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `DocumentTitleColumnName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 ## ConfluenceAttachmentConfigurationTypeDef
 
@@ -453,7 +453,7 @@ Optional fields:
 
 - `CrawlAttachments`: `bool`
 - `AttachmentFieldMappings`:
-  `List`\[[ConfluenceAttachmentToIndexFieldMappingTypeDef](./type_defs.md#confluenceattachmenttoindexfieldmappingtypedef)\]
+  `Sequence`\[[ConfluenceAttachmentToIndexFieldMappingTypeDef](./type_defs.md#confluenceattachmenttoindexfieldmappingtypedef)\]
 
 ## ConfluenceAttachmentToIndexFieldMappingTypeDef
 
@@ -477,7 +477,7 @@ from mypy_boto3_kendra.type_defs import ConfluenceBlogConfigurationTypeDef
 Optional fields:
 
 - `BlogFieldMappings`:
-  `List`\[[ConfluenceBlogToIndexFieldMappingTypeDef](./type_defs.md#confluenceblogtoindexfieldmappingtypedef)\]
+  `Sequence`\[[ConfluenceBlogToIndexFieldMappingTypeDef](./type_defs.md#confluenceblogtoindexfieldmappingtypedef)\]
 
 ## ConfluenceBlogToIndexFieldMappingTypeDef
 
@@ -516,8 +516,8 @@ Optional fields:
   [ConfluenceAttachmentConfigurationTypeDef](./type_defs.md#confluenceattachmentconfigurationtypedef)
 - `VpcConfiguration`:
   [DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef)
-- `InclusionPatterns`: `List`\[`str`\]
-- `ExclusionPatterns`: `List`\[`str`\]
+- `InclusionPatterns`: `Sequence`\[`str`\]
+- `ExclusionPatterns`: `Sequence`\[`str`\]
 
 ## ConfluencePageConfigurationTypeDef
 
@@ -528,7 +528,7 @@ from mypy_boto3_kendra.type_defs import ConfluencePageConfigurationTypeDef
 Optional fields:
 
 - `PageFieldMappings`:
-  `List`\[[ConfluencePageToIndexFieldMappingTypeDef](./type_defs.md#confluencepagetoindexfieldmappingtypedef)\]
+  `Sequence`\[[ConfluencePageToIndexFieldMappingTypeDef](./type_defs.md#confluencepagetoindexfieldmappingtypedef)\]
 
 ## ConfluencePageToIndexFieldMappingTypeDef
 
@@ -553,10 +553,10 @@ Optional fields:
 
 - `CrawlPersonalSpaces`: `bool`
 - `CrawlArchivedSpaces`: `bool`
-- `IncludeSpaces`: `List`\[`str`\]
-- `ExcludeSpaces`: `List`\[`str`\]
+- `IncludeSpaces`: `Sequence`\[`str`\]
+- `ExcludeSpaces`: `Sequence`\[`str`\]
 - `SpaceFieldMappings`:
-  `List`\[[ConfluenceSpaceToIndexFieldMappingTypeDef](./type_defs.md#confluencespacetoindexfieldmappingtypedef)\]
+  `Sequence`\[[ConfluenceSpaceToIndexFieldMappingTypeDef](./type_defs.md#confluencespacetoindexfieldmappingtypedef)\]
 
 ## ConfluenceSpaceToIndexFieldMappingTypeDef
 
@@ -604,7 +604,7 @@ Optional fields:
 - `Description`: `str`
 - `Schedule`: `str`
 - `RoleArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 
 ## CreateDataSourceResponseTypeDef
@@ -635,7 +635,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 - `ClientToken`: `str`
 
@@ -669,9 +669,9 @@ Optional fields:
   [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - `Description`: `str`
 - `ClientToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UserTokenConfigurations`:
-  `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
+  `Sequence`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
 
@@ -704,7 +704,7 @@ Optional fields:
 
 - `Description`: `str`
 - `ClientToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateQuerySuggestionsBlockListResponseTypeDef
 
@@ -734,7 +734,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 
 ## CreateThesaurusResponseTypeDef
@@ -874,8 +874,8 @@ from mypy_boto3_kendra.type_defs import DataSourceVpcConfigurationTypeDef
 
 Required fields:
 
-- `SubnetIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## DatabaseConfigurationTypeDef
 
@@ -1246,7 +1246,7 @@ from mypy_boto3_kendra.type_defs import DocumentAttributeValueTypeDef
 Optional fields:
 
 - `StringValue`: `str`
-- `StringListValue`: `List`\[`str`\]
+- `StringListValue`: `Sequence`\[`str`\]
 - `LongValue`: `int`
 - `DateValue`: `Union`\[`datetime`, `str`\]
 
@@ -1263,7 +1263,7 @@ Required fields:
 Optional fields:
 
 - `Attributes`:
-  `List`\[[DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)\]
+  `Sequence`\[[DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)\]
 
 ## DocumentMetadataConfigurationTypeDef
 
@@ -1309,11 +1309,11 @@ Optional fields:
 - `Blob`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `S3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 - `Attributes`:
-  `List`\[[DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)\]
+  `Sequence`\[[DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)\]
 - `AccessControlList`:
-  `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
+  `Sequence`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
 - `HierarchicalAccessControlList`:
-  `List`\[[HierarchicalPrincipalTypeDef](./type_defs.md#hierarchicalprincipaltypedef)\]
+  `Sequence`\[[HierarchicalPrincipalTypeDef](./type_defs.md#hierarchicalprincipaltypedef)\]
 - `ContentType`: [ContentTypeType](./literals.md#contenttypetype)
 
 ## DocumentsMetadataConfigurationTypeDef
@@ -1416,13 +1416,13 @@ Required fields:
 
 Optional fields:
 
-- `InclusionPatterns`: `List`\[`str`\]
-- `ExclusionPatterns`: `List`\[`str`\]
+- `InclusionPatterns`: `Sequence`\[`str`\]
+- `ExclusionPatterns`: `Sequence`\[`str`\]
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
-- `ExcludeMimeTypes`: `List`\[`str`\]
-- `ExcludeUserAccounts`: `List`\[`str`\]
-- `ExcludeSharedDrives`: `List`\[`str`\]
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+- `ExcludeMimeTypes`: `Sequence`\[`str`\]
+- `ExcludeUserAccounts`: `Sequence`\[`str`\]
+- `ExcludeSharedDrives`: `Sequence`\[`str`\]
 
 ## GroupMembersTypeDef
 
@@ -1433,9 +1433,9 @@ from mypy_boto3_kendra.type_defs import GroupMembersTypeDef
 Optional fields:
 
 - `MemberGroups`:
-  `List`\[[MemberGroupTypeDef](./type_defs.md#membergrouptypedef)\]
+  `Sequence`\[[MemberGroupTypeDef](./type_defs.md#membergrouptypedef)\]
 - `MemberUsers`:
-  `List`\[[MemberUserTypeDef](./type_defs.md#memberusertypedef)\]
+  `Sequence`\[[MemberUserTypeDef](./type_defs.md#memberusertypedef)\]
 - `S3PathforGroupMembers`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 
 ## GroupOrderingIdSummaryTypeDef
@@ -1473,7 +1473,7 @@ from mypy_boto3_kendra.type_defs import HierarchicalPrincipalTypeDef
 Required fields:
 
 - `PrincipalList`:
-  `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
+  `Sequence`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
 
 ## HighlightTypeDef
 
@@ -1816,10 +1816,10 @@ Required fields:
 
 Optional fields:
 
-- `InclusionPatterns`: `List`\[`str`\]
-- `ExclusionPatterns`: `List`\[`str`\]
+- `InclusionPatterns`: `Sequence`\[`str`\]
+- `ExclusionPatterns`: `Sequence`\[`str`\]
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `DisableLocalGroups`: `bool`
 
 ## OneDriveUsersTypeDef
@@ -1830,7 +1830,7 @@ from mypy_boto3_kendra.type_defs import OneDriveUsersTypeDef
 
 Optional fields:
 
-- `OneDriveUserList`: `List`\[`str`\]
+- `OneDriveUserList`: `Sequence`\[`str`\]
 - `OneDriveUserS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 
 ## PrincipalTypeDef
@@ -1897,12 +1897,12 @@ Optional fields:
 
 - `AttributeFilter`:
   [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
-- `Facets`: `List`\[[FacetTypeDef](./type_defs.md#facettypedef)\]
-- `RequestedDocumentAttributes`: `List`\[`str`\]
+- `Facets`: `Sequence`\[[FacetTypeDef](./type_defs.md#facettypedef)\]
+- `RequestedDocumentAttributes`: `Sequence`\[`str`\]
 - `QueryResultTypeFilter`:
   [QueryResultTypeType](./literals.md#queryresulttypetype)
 - `DocumentRelevanceOverrideConfigurations`:
-  `List`\[[DocumentRelevanceConfigurationTypeDef](./type_defs.md#documentrelevanceconfigurationtypedef)\]
+  `Sequence`\[[DocumentRelevanceConfigurationTypeDef](./type_defs.md#documentrelevanceconfigurationtypedef)\]
 - `PageNumber`: `int`
 - `PageSize`: `int`
 - `SortingConfiguration`:
@@ -2018,9 +2018,9 @@ Required fields:
 
 Optional fields:
 
-- `InclusionPrefixes`: `List`\[`str`\]
-- `InclusionPatterns`: `List`\[`str`\]
-- `ExclusionPatterns`: `List`\[`str`\]
+- `InclusionPrefixes`: `Sequence`\[`str`\]
+- `InclusionPatterns`: `Sequence`\[`str`\]
+- `ExclusionPatterns`: `Sequence`\[`str`\]
 - `DocumentsMetadataConfiguration`:
   [DocumentsMetadataConfigurationTypeDef](./type_defs.md#documentsmetadataconfigurationtypedef)
 - `AccessControlListConfiguration`:
@@ -2051,9 +2051,9 @@ Optional fields:
 
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `IncludeFilterTypes`:
-  `List`\[[SalesforceChatterFeedIncludeFilterTypeType](./literals.md#salesforcechatterfeedincludefiltertypetype)\]
+  `Sequence`\[[SalesforceChatterFeedIncludeFilterTypeType](./literals.md#salesforcechatterfeedincludefiltertypetype)\]
 
 ## SalesforceConfigurationTypeDef
 
@@ -2069,7 +2069,7 @@ Required fields:
 Optional fields:
 
 - `StandardObjectConfigurations`:
-  `List`\[[SalesforceStandardObjectConfigurationTypeDef](./type_defs.md#salesforcestandardobjectconfigurationtypedef)\]
+  `Sequence`\[[SalesforceStandardObjectConfigurationTypeDef](./type_defs.md#salesforcestandardobjectconfigurationtypedef)\]
 - `KnowledgeArticleConfiguration`:
   [SalesforceKnowledgeArticleConfigurationTypeDef](./type_defs.md#salesforceknowledgearticleconfigurationtypedef)
 - `ChatterFeedConfiguration`:
@@ -2077,8 +2077,8 @@ Optional fields:
 - `CrawlAttachments`: `bool`
 - `StandardObjectAttachmentConfiguration`:
   [SalesforceStandardObjectAttachmentConfigurationTypeDef](./type_defs.md#salesforcestandardobjectattachmentconfigurationtypedef)
-- `IncludeAttachmentFilePatterns`: `List`\[`str`\]
-- `ExcludeAttachmentFilePatterns`: `List`\[`str`\]
+- `IncludeAttachmentFilePatterns`: `Sequence`\[`str`\]
+- `ExcludeAttachmentFilePatterns`: `Sequence`\[`str`\]
 
 ## SalesforceCustomKnowledgeArticleTypeConfigurationTypeDef
 
@@ -2095,7 +2095,7 @@ Optional fields:
 
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 ## SalesforceKnowledgeArticleConfigurationTypeDef
 
@@ -2106,14 +2106,14 @@ from mypy_boto3_kendra.type_defs import SalesforceKnowledgeArticleConfigurationT
 Required fields:
 
 - `IncludedStates`:
-  `List`\[[SalesforceKnowledgeArticleStateType](./literals.md#salesforceknowledgearticlestatetype)\]
+  `Sequence`\[[SalesforceKnowledgeArticleStateType](./literals.md#salesforceknowledgearticlestatetype)\]
 
 Optional fields:
 
 - `StandardKnowledgeArticleTypeConfiguration`:
   [SalesforceStandardKnowledgeArticleTypeConfigurationTypeDef](./type_defs.md#salesforcestandardknowledgearticletypeconfigurationtypedef)
 - `CustomKnowledgeArticleTypeConfigurations`:
-  `List`\[[SalesforceCustomKnowledgeArticleTypeConfigurationTypeDef](./type_defs.md#salesforcecustomknowledgearticletypeconfigurationtypedef)\]
+  `Sequence`\[[SalesforceCustomKnowledgeArticleTypeConfigurationTypeDef](./type_defs.md#salesforcecustomknowledgearticletypeconfigurationtypedef)\]
 
 ## SalesforceStandardKnowledgeArticleTypeConfigurationTypeDef
 
@@ -2129,7 +2129,7 @@ Optional fields:
 
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 ## SalesforceStandardObjectAttachmentConfigurationTypeDef
 
@@ -2141,7 +2141,7 @@ Optional fields:
 
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 ## SalesforceStandardObjectConfigurationTypeDef
 
@@ -2159,7 +2159,7 @@ Optional fields:
 
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 ## ScoreAttributesTypeDef
 
@@ -2192,7 +2192,7 @@ from mypy_boto3_kendra.type_defs import SeedUrlConfigurationTypeDef
 
 Required fields:
 
-- `SeedUrls`: `List`\[`str`\]
+- `SeedUrls`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2243,11 +2243,11 @@ Required fields:
 Optional fields:
 
 - `CrawlAttachments`: `bool`
-- `IncludeAttachmentFilePatterns`: `List`\[`str`\]
-- `ExcludeAttachmentFilePatterns`: `List`\[`str`\]
+- `IncludeAttachmentFilePatterns`: `Sequence`\[`str`\]
+- `ExcludeAttachmentFilePatterns`: `Sequence`\[`str`\]
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `FilterQuery`: `str`
 
 ## ServiceNowServiceCatalogConfigurationTypeDef
@@ -2263,11 +2263,11 @@ Required fields:
 Optional fields:
 
 - `CrawlAttachments`: `bool`
-- `IncludeAttachmentFilePatterns`: `List`\[`str`\]
-- `ExcludeAttachmentFilePatterns`: `List`\[`str`\]
+- `IncludeAttachmentFilePatterns`: `Sequence`\[`str`\]
+- `ExcludeAttachmentFilePatterns`: `Sequence`\[`str`\]
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 ## SharePointConfigurationTypeDef
 
@@ -2279,19 +2279,19 @@ Required fields:
 
 - `SharePointVersion`:
   [SharePointVersionType](./literals.md#sharepointversiontype)
-- `Urls`: `List`\[`str`\]
+- `Urls`: `Sequence`\[`str`\]
 - `SecretArn`: `str`
 
 Optional fields:
 
 - `CrawlAttachments`: `bool`
 - `UseChangeLog`: `bool`
-- `InclusionPatterns`: `List`\[`str`\]
-- `ExclusionPatterns`: `List`\[`str`\]
+- `InclusionPatterns`: `Sequence`\[`str`\]
+- `ExclusionPatterns`: `Sequence`\[`str`\]
 - `VpcConfiguration`:
   [DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef)
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `DocumentTitleFieldName`: `str`
 - `DisableLocalGroups`: `bool`
 - `SslCertificateS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
@@ -2304,7 +2304,7 @@ from mypy_boto3_kendra.type_defs import SiteMapsConfigurationTypeDef
 
 Required fields:
 
-- `SiteMaps`: `List`\[`str`\]
+- `SiteMaps`: `Sequence`\[`str`\]
 
 ## SortingConfigurationTypeDef
 
@@ -2389,9 +2389,9 @@ Required fields:
 Optional fields:
 
 - `ClickFeedbackItems`:
-  `List`\[[ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef)\]
+  `Sequence`\[[ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef)\]
 - `RelevanceFeedbackItems`:
-  `List`\[[RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)\]
+  `Sequence`\[[RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)\]
 
 ## SuggestionHighlightTypeDef
 
@@ -2447,7 +2447,7 @@ from mypy_boto3_kendra.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -2516,7 +2516,7 @@ from mypy_boto3_kendra.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDataSourceRequestRequestTypeDef
 
@@ -2554,11 +2554,11 @@ Optional fields:
 - `RoleArn`: `str`
 - `Description`: `str`
 - `DocumentMetadataConfigurationUpdates`:
-  `List`\[[DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef)\]
+  `Sequence`\[[DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef)\]
 - `CapacityUnits`:
   [CapacityUnitsConfigurationTypeDef](./type_defs.md#capacityunitsconfigurationtypedef)
 - `UserTokenConfigurations`:
-  `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
+  `Sequence`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
 
@@ -2639,9 +2639,9 @@ Optional fields:
 
 - `Token`: `str`
 - `UserId`: `str`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `DataSourceGroups`:
-  `List`\[[DataSourceGroupTypeDef](./type_defs.md#datasourcegrouptypedef)\]
+  `Sequence`\[[DataSourceGroupTypeDef](./type_defs.md#datasourcegrouptypedef)\]
 
 ## UserTokenConfigurationTypeDef
 
@@ -2672,8 +2672,8 @@ Optional fields:
 - `MaxLinksPerPage`: `int`
 - `MaxContentSizePerPageInMegaBytes`: `float`
 - `MaxUrlsPerMinuteCrawlRate`: `int`
-- `UrlInclusionPatterns`: `List`\[`str`\]
-- `UrlExclusionPatterns`: `List`\[`str`\]
+- `UrlInclusionPatterns`: `Sequence`\[`str`\]
+- `UrlExclusionPatterns`: `Sequence`\[`str`\]
 - `ProxyConfiguration`:
   [ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef)
 - `AuthenticationConfiguration`:
@@ -2693,7 +2693,7 @@ Optional fields:
 
 - `CrawlComments`: `bool`
 - `UseChangeLog`: `bool`
-- `InclusionPatterns`: `List`\[`str`\]
-- `ExclusionPatterns`: `List`\[`str`\]
+- `InclusionPatterns`: `Sequence`\[`str`\]
+- `ExclusionPatterns`: `Sequence`\[`str`\]
 - `FieldMappings`:
-  `List`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]

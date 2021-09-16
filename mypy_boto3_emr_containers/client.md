@@ -138,7 +138,7 @@ Keyword-only arguments:
 - `clientToken`: `str` *(required)*
 - `configurationOverrides`:
   [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateManagedEndpointResponseTypeDef](./type_defs.md#createmanagedendpointresponsetypedef).
@@ -163,7 +163,7 @@ Keyword-only arguments:
   [ContainerProviderTypeDef](./type_defs.md#containerprovidertypedef)
   *(required)*
 - `clientToken`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateVirtualClusterResponseTypeDef](./type_defs.md#createvirtualclusterresponsetypedef).
@@ -283,7 +283,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -307,7 +307,7 @@ Keyword-only arguments:
 - `createdBefore`: `Union`\[`datetime`, `str`\]
 - `createdAfter`: `Union`\[`datetime`, `str`\]
 - `name`: `str`
-- `states`: `List`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
+- `states`: `Sequence`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -332,8 +332,8 @@ Keyword-only arguments:
 - `virtualClusterId`: `str` *(required)*
 - `createdBefore`: `Union`\[`datetime`, `str`\]
 - `createdAfter`: `Union`\[`datetime`, `str`\]
-- `types`: `List`\[`str`\]
-- `states`: `List`\[[EndpointStateType](./literals.md#endpointstatetype)\]
+- `types`: `Sequence`\[`str`\]
+- `states`: `Sequence`\[[EndpointStateType](./literals.md#endpointstatetype)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -381,7 +381,7 @@ Keyword-only arguments:
 - `createdAfter`: `Union`\[`datetime`, `str`\]
 - `createdBefore`: `Union`\[`datetime`, `str`\]
 - `states`:
-  `List`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
+  `Sequence`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -410,7 +410,7 @@ Keyword-only arguments:
 - `name`: `str`
 - `configurationOverrides`:
   [ConfigurationOverridesTypeDef](./type_defs.md#configurationoverridestypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
@@ -430,7 +430,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -449,7 +449,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

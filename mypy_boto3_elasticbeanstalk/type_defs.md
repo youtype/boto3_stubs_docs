@@ -421,7 +421,7 @@ Optional fields:
 
 - `ApplicationName`: `str`
 - `GroupName`: `str`
-- `VersionLabels`: `List`\[`str`\]
+- `VersionLabels`: `Sequence`\[`str`\]
 
 ## ConfigurationOptionDescriptionTypeDef
 
@@ -558,7 +558,7 @@ Optional fields:
 - `Description`: `str`
 - `ResourceLifecycleConfig`:
   [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateApplicationVersionMessageRequestTypeDef
 
@@ -581,7 +581,7 @@ Optional fields:
   [BuildConfigurationTypeDef](./type_defs.md#buildconfigurationtypedef)
 - `AutoCreateApplication`: `bool`
 - `Process`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateConfigurationTemplateMessageRequestTypeDef
 
@@ -603,8 +603,8 @@ Optional fields:
 - `EnvironmentId`: `str`
 - `Description`: `str`
 - `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEnvironmentMessageRequestTypeDef
 
@@ -623,15 +623,15 @@ Optional fields:
 - `Description`: `str`
 - `CNAMEPrefix`: `str`
 - `Tier`: [EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VersionLabel`: `str`
 - `TemplateName`: `str`
 - `SolutionStackName`: `str`
 - `PlatformArn`: `str`
 - `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 - `OptionsToRemove`:
-  `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
+  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 - `OperationsRole`: `str`
 
 ## CreatePlatformVersionRequestRequestTypeDef
@@ -651,8 +651,8 @@ Optional fields:
 
 - `EnvironmentName`: `str`
 - `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreatePlatformVersionResultTypeDef
 
@@ -800,7 +800,7 @@ from mypy_boto3_elasticbeanstalk.type_defs import DescribeApplicationVersionsMes
 Optional fields:
 
 - `ApplicationName`: `str`
-- `VersionLabels`: `List`\[`str`\]
+- `VersionLabels`: `Sequence`\[`str`\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
@@ -812,7 +812,7 @@ from mypy_boto3_elasticbeanstalk.type_defs import DescribeApplicationsMessageReq
 
 Optional fields:
 
-- `ApplicationNames`: `List`\[`str`\]
+- `ApplicationNames`: `Sequence`\[`str`\]
 
 ## DescribeConfigurationOptionsMessageRequestTypeDef
 
@@ -828,7 +828,7 @@ Optional fields:
 - `SolutionStackName`: `str`
 - `PlatformArn`: `str`
 - `Options`:
-  `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
+  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
 ## DescribeConfigurationSettingsMessageRequestTypeDef
 
@@ -856,7 +856,7 @@ Optional fields:
 - `EnvironmentName`: `str`
 - `EnvironmentId`: `str`
 - `AttributeNames`:
-  `List`\[[EnvironmentHealthAttributeType](./literals.md#environmenthealthattributetype)\]
+  `Sequence`\[[EnvironmentHealthAttributeType](./literals.md#environmenthealthattributetype)\]
 
 ## DescribeEnvironmentHealthResultTypeDef
 
@@ -952,8 +952,8 @@ Optional fields:
 
 - `ApplicationName`: `str`
 - `VersionLabel`: `str`
-- `EnvironmentIds`: `List`\[`str`\]
-- `EnvironmentNames`: `List`\[`str`\]
+- `EnvironmentIds`: `Sequence`\[`str`\]
+- `EnvironmentNames`: `Sequence`\[`str`\]
 - `IncludeDeleted`: `bool`
 - `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
 - `MaxRecords`: `int`
@@ -991,7 +991,7 @@ Optional fields:
 - `EnvironmentName`: `str`
 - `EnvironmentId`: `str`
 - `AttributeNames`:
-  `List`\[[InstancesHealthAttributeType](./literals.md#instanceshealthattributetype)\]
+  `Sequence`\[[InstancesHealthAttributeType](./literals.md#instanceshealthattributetype)\]
 - `NextToken`: `str`
 
 ## DescribeInstancesHealthResultTypeDef
@@ -1324,7 +1324,7 @@ from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformBranchesRequestReq
 Optional fields:
 
 - `Filters`:
-  `List`\[[SearchFilterTypeDef](./type_defs.md#searchfiltertypedef)\]
+  `Sequence`\[[SearchFilterTypeDef](./type_defs.md#searchfiltertypedef)\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
@@ -1351,7 +1351,7 @@ from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformVersionsRequestReq
 Optional fields:
 
 - `Filters`:
-  `List`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
+  `Sequence`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
@@ -1565,7 +1565,7 @@ Optional fields:
 
 - `Type`: `str`
 - `Operator`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## PlatformFrameworkTypeDef
 
@@ -1763,7 +1763,7 @@ Optional fields:
 
 - `Attribute`: `str`
 - `Operator`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## SingleInstanceHealthTypeDef
 
@@ -1948,9 +1948,9 @@ Optional fields:
 
 - `Description`: `str`
 - `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 - `OptionsToRemove`:
-  `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
+  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
 ## UpdateEnvironmentMessageRequestTypeDef
 
@@ -1971,9 +1971,9 @@ Optional fields:
 - `SolutionStackName`: `str`
 - `PlatformArn`: `str`
 - `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 - `OptionsToRemove`:
-  `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
+  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
 ## UpdateTagsForResourceMessageRequestTypeDef
 
@@ -1987,8 +1987,8 @@ Required fields:
 
 Optional fields:
 
-- `TagsToAdd`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TagsToRemove`: `List`\[`str`\]
+- `TagsToAdd`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagsToRemove`: `Sequence`\[`str`\]
 
 ## ValidateConfigurationSettingsMessageRequestTypeDef
 
@@ -2000,7 +2000,7 @@ Required fields:
 
 - `ApplicationName`: `str`
 - `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 
 Optional fields:
 

@@ -146,7 +146,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ARN`: `str` *(required)*
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### associate_package
 
@@ -232,14 +232,14 @@ Keyword-only arguments:
   [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
 - `NodeToNodeEncryptionOptions`:
   [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
-- `AdvancedOptions`: `Dict`\[`str`, `str`\]
-- `LogPublishingOptions`: `Dict`\[[LogTypeType](./literals.md#logtypetype),
+- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
+- `LogPublishingOptions`: `Mapping`\[[LogTypeType](./literals.md#logtypetype),
   [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
 - `DomainEndpointOptions`:
   [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
 - `AdvancedSecurityOptions`:
   [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AutoTuneOptions`:
   [AutoTuneOptionsInputTypeDef](./type_defs.md#autotuneoptionsinputtypedef)
 
@@ -456,7 +456,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DomainNames`: `List`\[`str`\] *(required)*
+- `DomainNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeDomainsResponseTypeDef](./type_defs.md#describedomainsresponsetypedef).
@@ -476,7 +476,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -523,7 +523,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -545,7 +545,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)\]
+  `Sequence`\[[DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -629,7 +629,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -897,7 +897,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### start_service_software_update
 
@@ -942,9 +942,9 @@ Keyword-only arguments:
 - `VPCOptions`: [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
 - `CognitoOptions`:
   [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
-- `AdvancedOptions`: `Dict`\[`str`, `str`\]
+- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
 - `AccessPolicies`: `str`
-- `LogPublishingOptions`: `Dict`\[[LogTypeType](./literals.md#logtypetype),
+- `LogPublishingOptions`: `Mapping`\[[LogTypeType](./literals.md#logtypetype),
   [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
 - `EncryptionAtRestOptions`:
   [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
@@ -1001,7 +1001,7 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 - `TargetVersion`: `str` *(required)*
 - `PerformCheckOnly`: `bool`
-- `AdvancedOptions`: `Dict`\[`str`, `str`\]
+- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
 
 Returns
 [UpgradeDomainResponseTypeDef](./type_defs.md#upgradedomainresponsetypedef).

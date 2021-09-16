@@ -348,7 +348,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
-- `AnalysisSchemeNames`: `List`\[`str`\]
+- `AnalysisSchemeNames`: `Sequence`\[`str`\]
 - `Deployed`: `bool`
 
 Returns
@@ -411,7 +411,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DomainNames`: `List`\[`str`\]
+- `DomainNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeDomainsResponseTypeDef](./type_defs.md#describedomainsresponsetypedef).
@@ -431,7 +431,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
-- `ExpressionNames`: `List`\[`str`\]
+- `ExpressionNames`: `Sequence`\[`str`\]
 - `Deployed`: `bool`
 
 Returns
@@ -453,7 +453,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
-- `FieldNames`: `List`\[`str`\]
+- `FieldNames`: `Sequence`\[`str`\]
 - `Deployed`: `bool`
 
 Returns
@@ -516,7 +516,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
-- `SuggesterNames`: `List`\[`str`\]
+- `SuggesterNames`: `Sequence`\[`str`\]
 - `Deployed`: `bool`
 
 Returns
@@ -535,7 +535,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

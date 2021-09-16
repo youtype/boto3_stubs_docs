@@ -29,7 +29,7 @@ Boto3 documentation:
 Arguments for `ListCertificatesPaginator.paginate` method:
 
 - `CertificateStatuses`:
-  `List`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
+  `Sequence`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
 - `Includes`: [FiltersTypeDef](./type_defs.md#filterstypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

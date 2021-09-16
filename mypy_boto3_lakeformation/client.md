@@ -108,7 +108,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
-- `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
+- `LFTags`: `Sequence`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -131,7 +131,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Entries`:
-  `List`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
+  `Sequence`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -154,7 +154,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Entries`:
-  `List`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
+  `Sequence`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -191,7 +191,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TagKey`: `str` *(required)*
-- `TagValues`: `List`\[`str`\] *(required)*
+- `TagValues`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -267,7 +267,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -378,11 +378,11 @@ Keyword-only arguments:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
   *(required)*
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
-- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
+- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
   *(required)*
 - `CatalogId`: `str`
 - `PermissionsWithGrantOption`:
-  `List`\[[PermissionType](./literals.md#permissiontype)\]
+  `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -450,7 +450,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FilterConditionList`:
-  `List`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
+  `Sequence`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -516,7 +516,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
-- `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
+- `LFTags`: `Sequence`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -542,11 +542,11 @@ Keyword-only arguments:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
   *(required)*
 - `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
-- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
+- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
   *(required)*
 - `CatalogId`: `str`
 - `PermissionsWithGrantOption`:
-  `List`\[[PermissionType](./literals.md#permissiontype)\]
+  `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -565,7 +565,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Expression`: `List`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
+- `Expression`: `Sequence`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
   *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -589,7 +589,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Expression`: `List`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
+- `Expression`: `Sequence`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
   *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -614,8 +614,8 @@ Keyword-only arguments:
 
 - `TagKey`: `str` *(required)*
 - `CatalogId`: `str`
-- `TagValuesToDelete`: `List`\[`str`\]
-- `TagValuesToAdd`: `List`\[`str`\]
+- `TagValuesToDelete`: `Sequence`\[`str`\]
+- `TagValuesToAdd`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 

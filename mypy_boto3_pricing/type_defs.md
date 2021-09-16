@@ -109,7 +109,7 @@ from mypy_boto3_pricing.type_defs import GetProductsRequestRequestTypeDef
 Optional fields:
 
 - `ServiceCode`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `FormatVersion`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`

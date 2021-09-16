@@ -361,7 +361,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
-- `repositoryNames`: `List`\[`str`\] *(required)*
+- `repositoryNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef](./type_defs.md#batchassociateapprovalruletemplatewithrepositoriesoutputtypedef).
@@ -389,7 +389,7 @@ Keyword-only arguments:
   [MergeOptionTypeEnumType](./literals.md#mergeoptiontypeenumtype) *(required)*
 - `maxMergeHunks`: `int`
 - `maxConflictFiles`: `int`
-- `filePaths`: `List`\[`str`\]
+- `filePaths`: `Sequence`\[`str`\]
 - `conflictDetailLevel`:
   [ConflictDetailLevelTypeEnumType](./literals.md#conflictdetailleveltypeenumtype)
 - `conflictResolutionStrategy`:
@@ -417,7 +417,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `approvalRuleTemplateName`: `str` *(required)*
-- `repositoryNames`: `List`\[`str`\] *(required)*
+- `repositoryNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef](./type_defs.md#batchdisassociateapprovalruletemplatefromrepositoriesoutputtypedef).
@@ -436,7 +436,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `commitIds`: `List`\[`str`\] *(required)*
+- `commitIds`: `Sequence`\[`str`\] *(required)*
 - `repositoryName`: `str` *(required)*
 
 Returns
@@ -457,7 +457,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `repositoryNames`: `List`\[`str`\] *(required)*
+- `repositoryNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetRepositoriesOutputTypeDef](./type_defs.md#batchgetrepositoriesoutputtypedef).
@@ -540,11 +540,11 @@ Keyword-only arguments:
 - `commitMessage`: `str`
 - `keepEmptyFolders`: `bool`
 - `putFiles`:
-  `List`\[[PutFileEntryTypeDef](./type_defs.md#putfileentrytypedef)\]
+  `Sequence`\[[PutFileEntryTypeDef](./type_defs.md#putfileentrytypedef)\]
 - `deleteFiles`:
-  `List`\[[DeleteFileEntryTypeDef](./type_defs.md#deletefileentrytypedef)\]
+  `Sequence`\[[DeleteFileEntryTypeDef](./type_defs.md#deletefileentrytypedef)\]
 - `setFileModes`:
-  `List`\[[SetFileModeEntryTypeDef](./type_defs.md#setfilemodeentrytypedef)\]
+  `Sequence`\[[SetFileModeEntryTypeDef](./type_defs.md#setfilemodeentrytypedef)\]
 
 Returns [CreateCommitOutputTypeDef](./type_defs.md#createcommitoutputtypedef).
 
@@ -563,7 +563,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `title`: `str` *(required)*
-- `targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
   *(required)*
 - `description`: `str`
 - `clientRequestToken`: `str`
@@ -609,7 +609,7 @@ Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `repositoryDescription`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateRepositoryOutputTypeDef](./type_defs.md#createrepositoryoutputtypedef).
@@ -888,7 +888,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1806,7 +1806,7 @@ Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `triggers`:
-  `List`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
+  `Sequence`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
   *(required)*
 
 Returns
@@ -1827,7 +1827,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### test_repository_triggers
 
@@ -1847,7 +1847,7 @@ Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
 - `triggers`:
-  `List`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
+  `Sequence`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
   *(required)*
 
 Returns
@@ -1868,7 +1868,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_approval_rule_template_content
 

@@ -38,7 +38,7 @@ Boto3 documentation:
 
 Arguments for `DescribeBucketsPaginator.paginate` method:
 
-- `criteria`: `Dict`\[`str`,
+- `criteria`: `Mapping`\[`str`,
   [BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef)\]
 - `sortCriteria`:
   [BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef)
@@ -68,7 +68,7 @@ Boto3 documentation:
 Arguments for `GetUsageStatisticsPaginator.paginate` method:
 
 - `filterBy`:
-  `List`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
+  `Sequence`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
 - `sortBy`:
   [UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef)
 - `timeRange`: [TimeRangeType](./literals.md#timerangetype)

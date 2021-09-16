@@ -59,7 +59,7 @@ Optional fields:
 
 - `applicationDescription`: `str`
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateApplicationResponseTypeDef
 
@@ -203,7 +203,7 @@ from mypy_boto3_iotfleethub.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -214,7 +214,7 @@ from mypy_boto3_iotfleethub.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApplicationRequestRequestTypeDef
 

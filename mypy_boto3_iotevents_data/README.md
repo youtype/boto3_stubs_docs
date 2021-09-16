@@ -73,6 +73,7 @@ from mypy_boto3_iotevents_data.literals import AlarmStateNameType, ...
 - [ErrorCodeType](./literals.md#errorcodetype)
 - [EventTypeType](./literals.md#eventtypetype)
 - [TriggerTypeType](./literals.md#triggertypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

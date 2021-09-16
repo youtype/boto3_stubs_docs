@@ -143,7 +143,7 @@ Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
@@ -199,9 +199,9 @@ Keyword-only arguments:
 - `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
 - `Origination`: [OriginationType](./literals.md#originationtype)
 - `StartoverWindowSeconds`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `TimeDelaySeconds`: `int`
-- `Whitelist`: `List`\[`str`\]
+- `Whitelist`: `Sequence`\[`str`\]
 
 Returns
 [CreateOriginEndpointResponseTypeDef](./type_defs.md#createoriginendpointresponsetypedef).
@@ -315,7 +315,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -468,7 +468,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -488,7 +488,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_channel
 
@@ -537,7 +537,7 @@ Keyword-only arguments:
 - `Origination`: [OriginationType](./literals.md#originationtype)
 - `StartoverWindowSeconds`: `int`
 - `TimeDelaySeconds`: `int`
-- `Whitelist`: `List`\[`str`\]
+- `Whitelist`: `Sequence`\[`str`\]
 
 Returns
 [UpdateOriginEndpointResponseTypeDef](./type_defs.md#updateoriginendpointresponsetypedef).

@@ -100,6 +100,7 @@ from mypy_boto3_translate.literals import EncryptionKeyTypeType, ...
 - [ParallelDataFormatType](./literals.md#paralleldataformattype)
 - [ParallelDataStatusType](./literals.md#paralleldatastatustype)
 - [TerminologyDataFormatType](./literals.md#terminologydataformattype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

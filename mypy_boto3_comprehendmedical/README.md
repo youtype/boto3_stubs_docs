@@ -95,6 +95,7 @@ from mypy_boto3_comprehendmedical.literals import AttributeNameType, ...
 - [RxNormEntityCategoryType](./literals.md#rxnormentitycategorytype)
 - [RxNormEntityTypeType](./literals.md#rxnormentitytypetype)
 - [RxNormTraitNameType](./literals.md#rxnormtraitnametype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

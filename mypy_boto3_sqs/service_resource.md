@@ -124,9 +124,9 @@ Keyword-only arguments:
 
 - `QueueName`: `str` *(required)*
 - `Attributes`:
-  `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
+  `Mapping`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns [Queue](#queue).
 
@@ -139,7 +139,7 @@ Type annotations for `boto3.resource("sqs").get_available_subresources` method.
 Boto3 documentation:
 [SQS.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ### SQSServiceResource.get_queue_by_name method
 
@@ -235,7 +235,7 @@ Type annotations for `boto3.resource("sqs").get_available_subresources` method.
 Boto3 documentation:
 [SQS.Message.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Message.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## Queue
 
@@ -318,8 +318,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Label`: `str` *(required)*
-- `AWSAccountIds`: `List`\[`str`\] *(required)*
-- `Actions`: `List`\[`str`\] *(required)*
+- `AWSAccountIds`: `Sequence`\[`str`\] *(required)*
+- `Actions`: `Sequence`\[`str`\] *(required)*
 
 #### Queue.change_message_visibility_batch method
 
@@ -337,7 +337,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Entries`:
-  `List`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
+  `Sequence`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
   *(required)*
 
 Returns
@@ -368,7 +368,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Entries`:
-  `List`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
+  `Sequence`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
   *(required)*
 
 Returns
@@ -383,7 +383,7 @@ Type annotations for `boto3.resource("sqs").get_available_subresources` method.
 Boto3 documentation:
 [SQS.Queue.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Queue.load method
 
@@ -419,8 +419,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AttributeNames`:
-  `List`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
-- `MessageAttributeNames`: `List`\[`str`\]
+  `Sequence`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
+- `MessageAttributeNames`: `Sequence`\[`str`\]
 - `MaxNumberOfMessages`: `int`
 - `VisibilityTimeout`: `int`
 - `WaitTimeSeconds`: `int`
@@ -471,9 +471,9 @@ Keyword-only arguments:
 
 - `MessageBody`: `str` *(required)*
 - `DelaySeconds`: `int`
-- `MessageAttributes`: `Dict`\[`str`,
+- `MessageAttributes`: `Mapping`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-- `MessageSystemAttributes`: `Dict`\[`Literal['AWSTraceHeader']` (see
+- `MessageSystemAttributes`: `Mapping`\[`Literal['AWSTraceHeader']` (see
   [MessageSystemAttributeNameForSendsType](./literals.md#messagesystemattributenameforsendstype)),
   [MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
@@ -496,7 +496,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Entries`:
-  `List`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
+  `Sequence`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
   *(required)*
 
 Returns
@@ -517,5 +517,5 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Attributes`:
-  `Dict`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
+  `Mapping`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\] *(required)*

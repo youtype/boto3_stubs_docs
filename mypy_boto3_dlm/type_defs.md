@@ -51,7 +51,7 @@ Required fields:
 
 - `Name`: `str`
 - `CrossRegionCopy`:
-  `List`\[[CrossRegionCopyActionTypeDef](./type_defs.md#crossregioncopyactiontypedef)\]
+  `Sequence`\[[CrossRegionCopyActionTypeDef](./type_defs.md#crossregioncopyactiontypedef)\]
 
 ## CreateLifecyclePolicyRequestRequestTypeDef
 
@@ -69,7 +69,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateLifecyclePolicyResponseTypeDef
 
@@ -95,7 +95,7 @@ Optional fields:
 - `Interval`: `int`
 - `IntervalUnit`: `Literal['HOURS']` (see
   [IntervalUnitValuesType](./literals.md#intervalunitvaluestype))
-- `Times`: `List`\[`str`\]
+- `Times`: `Sequence`\[`str`\]
 - `CronExpression`: `str`
 
 ## CrossRegionCopyActionTypeDef
@@ -207,7 +207,7 @@ Required fields:
 
 - `EventType`: `Literal['shareSnapshot']` (see
   [EventTypeValuesType](./literals.md#eventtypevaluestype))
-- `SnapshotOwner`: `List`\[`str`\]
+- `SnapshotOwner`: `Sequence`\[`str`\]
 - `DescriptionRegex`: `str`
 
 ## EventSourceTypeDef
@@ -233,7 +233,7 @@ from mypy_boto3_dlm.type_defs import FastRestoreRuleTypeDef
 
 Required fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -250,13 +250,13 @@ from mypy_boto3_dlm.type_defs import GetLifecyclePoliciesRequestRequestTypeDef
 
 Optional fields:
 
-- `PolicyIds`: `List`\[`str`\]
+- `PolicyIds`: `Sequence`\[`str`\]
 - `State`:
   [GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype)
 - `ResourceTypes`:
-  `List`\[[ResourceTypeValuesType](./literals.md#resourcetypevaluestype)\]
-- `TargetTags`: `List`\[`str`\]
-- `TagsToAdd`: `List`\[`str`\]
+  `Sequence`\[[ResourceTypeValuesType](./literals.md#resourcetypevaluestype)\]
+- `TargetTags`: `Sequence`\[`str`\]
+- `TagsToAdd`: `Sequence`\[`str`\]
 
 ## GetLifecyclePoliciesResponseTypeDef
 
@@ -371,14 +371,14 @@ Optional fields:
 
 - `PolicyType`: [PolicyTypeValuesType](./literals.md#policytypevaluestype)
 - `ResourceTypes`:
-  `List`\[[ResourceTypeValuesType](./literals.md#resourcetypevaluestype)\]
+  `Sequence`\[[ResourceTypeValuesType](./literals.md#resourcetypevaluestype)\]
 - `ResourceLocations`:
-  `List`\[[ResourceLocationValuesType](./literals.md#resourcelocationvaluestype)\]
-- `TargetTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Schedules`: `List`\[[ScheduleTypeDef](./type_defs.md#scheduletypedef)\]
+  `Sequence`\[[ResourceLocationValuesType](./literals.md#resourcelocationvaluestype)\]
+- `TargetTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Schedules`: `Sequence`\[[ScheduleTypeDef](./type_defs.md#scheduletypedef)\]
 - `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
 - `EventSource`: [EventSourceTypeDef](./type_defs.md#eventsourcetypedef)
-- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 ## ResponseMetadataTypeDef
 
@@ -417,15 +417,16 @@ Optional fields:
 
 - `Name`: `str`
 - `CopyTags`: `bool`
-- `TagsToAdd`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VariableTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagsToAdd`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `VariableTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CreateRule`: [CreateRuleTypeDef](./type_defs.md#createruletypedef)
 - `RetainRule`: [RetainRuleTypeDef](./type_defs.md#retainruletypedef)
 - `FastRestoreRule`:
   [FastRestoreRuleTypeDef](./type_defs.md#fastrestoreruletypedef)
 - `CrossRegionCopyRules`:
-  `List`\[[CrossRegionCopyRuleTypeDef](./type_defs.md#crossregioncopyruletypedef)\]
-- `ShareRules`: `List`\[[ShareRuleTypeDef](./type_defs.md#shareruletypedef)\]
+  `Sequence`\[[CrossRegionCopyRuleTypeDef](./type_defs.md#crossregioncopyruletypedef)\]
+- `ShareRules`:
+  `Sequence`\[[ShareRuleTypeDef](./type_defs.md#shareruletypedef)\]
 - `DeprecateRule`: [DeprecateRuleTypeDef](./type_defs.md#deprecateruletypedef)
 
 ## ShareRuleTypeDef
@@ -436,7 +437,7 @@ from mypy_boto3_dlm.type_defs import ShareRuleTypeDef
 
 Required fields:
 
-- `TargetAccounts`: `List`\[`str`\]
+- `TargetAccounts`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -453,7 +454,7 @@ from mypy_boto3_dlm.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TagTypeDef
 
@@ -475,7 +476,7 @@ from mypy_boto3_dlm.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateLifecyclePolicyRequestRequestTypeDef
 

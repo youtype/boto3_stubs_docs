@@ -269,7 +269,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `PartitionInputList`:
-  `List`\[[PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)\]
+  `Sequence`\[[PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -290,7 +290,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConnectionNameList`: `List`\[`str`\] *(required)*
+- `ConnectionNameList`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns
@@ -313,7 +313,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `PartitionsToDelete`:
-  `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
+  `Sequence`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -335,7 +335,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
-- `TablesToDelete`: `List`\[`str`\] *(required)*
+- `TablesToDelete`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns
@@ -357,7 +357,7 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `VersionIds`: `List`\[`str`\] *(required)*
+- `VersionIds`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns
@@ -377,7 +377,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\] *(required)*
+- `Names`: `Sequence`\[`str`\] *(required)*
 - `IncludeBlueprint`: `bool`
 - `IncludeParameterSpec`: `bool`
 
@@ -398,7 +398,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CrawlerNames`: `List`\[`str`\] *(required)*
+- `CrawlerNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetCrawlersResponseTypeDef](./type_defs.md#batchgetcrawlersresponsetypedef).
@@ -418,7 +418,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DevEndpointNames`: `List`\[`str`\] *(required)*
+- `DevEndpointNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetDevEndpointsResponseTypeDef](./type_defs.md#batchgetdevendpointsresponsetypedef).
@@ -437,7 +437,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `JobNames`: `List`\[`str`\] *(required)*
+- `JobNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetJobsResponseTypeDef](./type_defs.md#batchgetjobsresponsetypedef).
@@ -459,7 +459,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `PartitionsToGet`:
-  `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
+  `Sequence`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -480,7 +480,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TriggerNames`: `List`\[`str`\] *(required)*
+- `TriggerNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetTriggersResponseTypeDef](./type_defs.md#batchgettriggersresponsetypedef).
@@ -499,7 +499,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Names`: `List`\[`str`\] *(required)*
+- `Names`: `Sequence`\[`str`\] *(required)*
 - `IncludeGraph`: `bool`
 
 Returns
@@ -520,7 +520,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `JobName`: `str` *(required)*
-- `JobRunIds`: `List`\[`str`\] *(required)*
+- `JobRunIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchStopJobRunResponseTypeDef](./type_defs.md#batchstopjobrunresponsetypedef).
@@ -542,7 +542,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `Entries`:
-  `List`\[[BatchUpdatePartitionRequestEntryTypeDef](./type_defs.md#batchupdatepartitionrequestentrytypedef)\]
+  `Sequence`\[[BatchUpdatePartitionRequestEntryTypeDef](./type_defs.md#batchupdatepartitionrequestentrytypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -622,7 +622,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `BlueprintLocation`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateBlueprintResponseTypeDef](./type_defs.md#createblueprintresponsetypedef).
@@ -694,7 +694,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str`
 - `Description`: `str`
 - `Schedule`: `str`
-- `Classifiers`: `List`\[`str`\]
+- `Classifiers`: `Sequence`\[`str`\]
 - `TablePrefix`: `str`
 - `SchemaChangePolicy`:
   [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
@@ -703,7 +703,7 @@ Keyword-only arguments:
   [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -743,10 +743,10 @@ Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `SubnetId`: `str`
 - `PublicKey`: `str`
-- `PublicKeys`: `List`\[`str`\]
+- `PublicKeys`: `Sequence`\[`str`\]
 - `NumberOfNodes`: `int`
 - `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 - `GlueVersion`: `str`
@@ -754,8 +754,8 @@ Keyword-only arguments:
 - `ExtraPythonLibsS3Path`: `str`
 - `ExtraJarsS3Path`: `str`
 - `SecurityConfiguration`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `Arguments`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `Arguments`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDevEndpointResponseTypeDef](./type_defs.md#createdevendpointresponsetypedef).
@@ -781,8 +781,8 @@ Keyword-only arguments:
 - `LogUri`: `str`
 - `ExecutionProperty`:
   [ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef)
-- `DefaultArguments`: `Dict`\[`str`, `str`\]
-- `NonOverridableArguments`: `Dict`\[`str`, `str`\]
+- `DefaultArguments`: `Mapping`\[`str`, `str`\]
+- `NonOverridableArguments`: `Mapping`\[`str`, `str`\]
 - `Connections`:
   [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
 - `MaxRetries`: `int`
@@ -790,7 +790,7 @@ Keyword-only arguments:
 - `Timeout`: `int`
 - `MaxCapacity`: `float`
 - `SecurityConfiguration`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `NotificationProperty`:
   [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
 - `GlueVersion`: `str`
@@ -815,7 +815,8 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `InputRecordTables`:
-  `List`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\] *(required)*
+  `Sequence`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\]
+  *(required)*
 - `Parameters`:
   [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
   *(required)*
@@ -827,7 +828,7 @@ Keyword-only arguments:
 - `NumberOfWorkers`: `int`
 - `Timeout`: `int`
 - `MaxRetries`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `TransformEncryption`:
   [TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef)
 
@@ -894,7 +895,7 @@ Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
@@ -918,7 +919,7 @@ Keyword-only arguments:
 - `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
 - `Compatibility`: [CompatibilityType](./literals.md#compatibilitytype)
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `SchemaDefinition`: `str`
 
 Returns
@@ -938,8 +939,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DagNodes`: `List`\[[CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)\]
-- `DagEdges`: `List`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
+- `DagNodes`:
+  `Sequence`\[[CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)\]
+- `DagEdges`:
+  `Sequence`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
 - `Language`: [LanguageType](./literals.md#languagetype)
 
 Returns
@@ -987,7 +990,7 @@ Keyword-only arguments:
   *(required)*
 - `CatalogId`: `str`
 - `PartitionIndexes`:
-  `List`\[[PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)\]
+  `Sequence`\[[PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1007,14 +1010,14 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Type`: [TriggerTypeType](./literals.md#triggertypetype) *(required)*
-- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
   *(required)*
 - `WorkflowName`: `str`
 - `Schedule`: `str`
 - `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
 - `Description`: `str`
 - `StartOnCreation`: `bool`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `EventBatchingCondition`:
   [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
 
@@ -1060,8 +1063,8 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `DefaultRunProperties`: `Dict`\[`str`, `str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `DefaultRunProperties`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `MaxConcurrentRuns`: `int`
 
 Returns
@@ -1121,7 +1124,7 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionValues`: `List`\[`str`\] *(required)*
+- `PartitionValues`: `Sequence`\[`str`\] *(required)*
 - `ColumnName`: `str` *(required)*
 - `CatalogId`: `str`
 
@@ -1277,7 +1280,7 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionValues`: `List`\[`str`\] *(required)*
+- `PartitionValues`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1513,7 +1516,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1656,8 +1659,8 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionValues`: `List`\[`str`\] *(required)*
-- `ColumnNames`: `List`\[`str`\] *(required)*
+- `PartitionValues`: `Sequence`\[`str`\] *(required)*
+- `ColumnNames`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns
@@ -1680,7 +1683,7 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `ColumnNames`: `List`\[`str`\] *(required)*
+- `ColumnNames`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns
@@ -1763,7 +1766,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `CrawlerNameList`: `List`\[`str`\]
+- `CrawlerNameList`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -2024,7 +2027,8 @@ Keyword-only arguments:
 
 - `Source`: [CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)
   *(required)*
-- `Sinks`: `List`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
+- `Sinks`:
+  `Sequence`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 
 Returns [GetMappingResponseTypeDef](./type_defs.md#getmappingresponsetypedef).
@@ -2134,7 +2138,7 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionValues`: `List`\[`str`\] *(required)*
+- `PartitionValues`: `Sequence`\[`str`\] *(required)*
 - `CatalogId`: `str`
 
 Returns
@@ -2203,14 +2207,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Mapping`:
-  `List`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
+  `Sequence`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
   *(required)*
 - `Source`: [CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)
   *(required)*
-- `Sinks`: `List`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
+- `Sinks`:
+  `Sequence`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `Language`: [LanguageType](./literals.md#languagetype)
-- `AdditionalPlanOptionsMap`: `Dict`\[`str`, `str`\]
+- `AdditionalPlanOptionsMap`: `Mapping`\[`str`, `str`\]
 
 Returns [GetPlanResponseTypeDef](./type_defs.md#getplanresponsetypedef).
 
@@ -2708,7 +2713,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ListBlueprintsResponseTypeDef](./type_defs.md#listblueprintsresponsetypedef).
@@ -2730,7 +2735,7 @@ Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ListCrawlersResponseTypeDef](./type_defs.md#listcrawlersresponsetypedef).
@@ -2752,7 +2757,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ListDevEndpointsResponseTypeDef](./type_defs.md#listdevendpointsresponsetypedef).
@@ -2774,7 +2779,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
@@ -2800,7 +2805,7 @@ Keyword-only arguments:
   [TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef)
 - `Sort`:
   [TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ListMLTransformsResponseTypeDef](./type_defs.md#listmltransformsresponsetypedef).
@@ -2887,7 +2892,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `DependentJobName`: `str`
 - `MaxResults`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ListTriggersResponseTypeDef](./type_defs.md#listtriggersresponsetypedef).
@@ -3000,7 +3005,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RunId`: `str` *(required)*
-- `RunProperties`: `Dict`\[`str`, `str`\] *(required)*
+- `RunProperties`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -3024,7 +3029,7 @@ Keyword-only arguments:
   [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
 - `SchemaVersionId`: `str`
 - `MetadataList`:
-  `List`\[[MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)\]
+  `Sequence`\[[MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -3115,7 +3120,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `RunId`: `str` *(required)*
-- `NodeIds`: `List`\[`str`\] *(required)*
+- `NodeIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [ResumeWorkflowRunResponseTypeDef](./type_defs.md#resumeworkflowrunresponsetypedef).
@@ -3138,10 +3143,10 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[PropertyPredicateTypeDef](./type_defs.md#propertypredicatetypedef)\]
+  `Sequence`\[[PropertyPredicateTypeDef](./type_defs.md#propertypredicatetypedef)\]
 - `SearchText`: `str`
 - `SortCriteria`:
-  `List`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
+  `Sequence`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
 - `MaxResults`: `int`
 - `ResourceShareType`:
   [ResourceShareTypeType](./literals.md#resourcesharetypetype)
@@ -3268,7 +3273,7 @@ Keyword-only arguments:
 
 - `JobName`: `str` *(required)*
 - `JobRunId`: `str`
-- `Arguments`: `Dict`\[`str`, `str`\]
+- `Arguments`: `Mapping`\[`str`, `str`\]
 - `AllocatedCapacity`: `int`
 - `Timeout`: `int`
 - `MaxCapacity`: `float`
@@ -3451,7 +3456,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagsToAdd`: `Dict`\[`str`, `str`\] *(required)*
+- `TagsToAdd`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -3470,7 +3475,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagsToRemove`: `List`\[`str`\] *(required)*
+- `TagsToRemove`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -3538,9 +3543,9 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionValues`: `List`\[`str`\] *(required)*
+- `PartitionValues`: `Sequence`\[`str`\] *(required)*
 - `ColumnStatisticsList`:
-  `List`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
+  `Sequence`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -3565,7 +3570,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 - `ColumnStatisticsList`:
-  `List`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
+  `Sequence`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
   *(required)*
 - `CatalogId`: `str`
 
@@ -3613,7 +3618,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Targets`: [CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef)
 - `Schedule`: `str`
-- `Classifiers`: `List`\[`str`\]
+- `Classifiers`: `Sequence`\[`str`\]
 - `TablePrefix`: `str`
 - `SchemaChangePolicy`:
   [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
@@ -3681,13 +3686,13 @@ Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `PublicKey`: `str`
-- `AddPublicKeys`: `List`\[`str`\]
-- `DeletePublicKeys`: `List`\[`str`\]
+- `AddPublicKeys`: `Sequence`\[`str`\]
+- `DeletePublicKeys`: `Sequence`\[`str`\]
 - `CustomLibraries`:
   [DevEndpointCustomLibrariesTypeDef](./type_defs.md#devendpointcustomlibrariestypedef)
 - `UpdateEtlLibraries`: `bool`
-- `DeleteArguments`: `List`\[`str`\]
-- `AddArguments`: `Dict`\[`str`, `str`\]
+- `DeleteArguments`: `Sequence`\[`str`\]
+- `AddArguments`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -3756,7 +3761,7 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `PartitionValueList`: `List`\[`str`\] *(required)*
+- `PartitionValueList`: `Sequence`\[`str`\] *(required)*
 - `PartitionInput`:
   [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef) *(required)*
 - `CatalogId`: `str`
@@ -3891,7 +3896,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `DefaultRunProperties`: `Dict`\[`str`, `str`\]
+- `DefaultRunProperties`: `Mapping`\[`str`, `str`\]
 - `MaxConcurrentRuns`: `int`
 
 Returns

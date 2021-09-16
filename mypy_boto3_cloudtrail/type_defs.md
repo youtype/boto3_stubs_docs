@@ -67,7 +67,7 @@ Required fields:
 
 Optional fields:
 
-- `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AdvancedEventSelectorTypeDef
 
@@ -125,7 +125,7 @@ Optional fields:
 - `CloudWatchLogsRoleArn`: `str`
 - `KmsKeyId`: `str`
 - `IsOrganizationTrail`: `bool`
-- `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateTrailResponseTypeDef
 
@@ -180,7 +180,7 @@ from mypy_boto3_cloudtrail.type_defs import DescribeTrailsRequestRequestTypeDef
 
 Optional fields:
 
-- `trailNameList`: `List`\[`str`\]
+- `trailNameList`: `Sequence`\[`str`\]
 - `includeShadowTrails`: `bool`
 
 ## DescribeTrailsResponseTypeDef
@@ -382,7 +382,7 @@ from mypy_boto3_cloudtrail.type_defs import ListTagsRequestRequestTypeDef
 
 Required fields:
 
-- `ResourceIdList`: `List`\[`str`\]
+- `ResourceIdList`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -446,7 +446,7 @@ from mypy_boto3_cloudtrail.type_defs import LookupEventsRequestRequestTypeDef
 Optional fields:
 
 - `LookupAttributes`:
-  `List`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
+  `Sequence`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `EventCategory`: `Literal['insight']` (see
@@ -505,9 +505,9 @@ Required fields:
 Optional fields:
 
 - `EventSelectors`:
-  `List`\[[EventSelectorTypeDef](./type_defs.md#eventselectortypedef)\]
+  `Sequence`\[[EventSelectorTypeDef](./type_defs.md#eventselectortypedef)\]
 - `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
+  `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
 
 ## PutEventSelectorsResponseTypeDef
 
@@ -535,7 +535,7 @@ Required fields:
 
 - `TrailName`: `str`
 - `InsightSelectors`:
-  `List`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
+  `Sequence`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
 
 ## PutInsightSelectorsResponseTypeDef
 
@@ -563,7 +563,7 @@ Required fields:
 
 Optional fields:
 
-- `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ResourceTagTypeDef
 

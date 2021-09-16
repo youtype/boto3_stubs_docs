@@ -75,6 +75,7 @@ from mypy_boto3_healthlake.literals import CmkTypeType, ...
 - [FHIRVersionType](./literals.md#fhirversiontype)
 - [JobStatusType](./literals.md#jobstatustype)
 - [PreloadDataTypeType](./literals.md#preloaddatatypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -60,6 +60,7 @@ from mypy_boto3_kinesis_video_signaling.literals import ServiceType, ...
 ```
 
 - [ServiceType](./literals.md#servicetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -206,7 +206,7 @@ Required fields:
 
 - `type`: [CRTypeType](./literals.md#crtypetype)
 - `maxvCpus`: `int`
-- `subnets`: `List`\[`str`\]
+- `subnets`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -214,19 +214,19 @@ Optional fields:
   [CRAllocationStrategyType](./literals.md#crallocationstrategytype)
 - `minvCpus`: `int`
 - `desiredvCpus`: `int`
-- `instanceTypes`: `List`\[`str`\]
+- `instanceTypes`: `Sequence`\[`str`\]
 - `imageId`: `str`
-- `securityGroupIds`: `List`\[`str`\]
+- `securityGroupIds`: `Sequence`\[`str`\]
 - `ec2KeyPair`: `str`
 - `instanceRole`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `placementGroup`: `str`
 - `bidPercentage`: `int`
 - `spotIamFleetRole`: `str`
 - `launchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `ec2Configuration`:
-  `List`\[[Ec2ConfigurationTypeDef](./type_defs.md#ec2configurationtypedef)\]
+  `Sequence`\[[Ec2ConfigurationTypeDef](./type_defs.md#ec2configurationtypedef)\]
 
 ## ComputeResourceUpdateTypeDef
 
@@ -239,8 +239,8 @@ Optional fields:
 - `minvCpus`: `int`
 - `maxvCpus`: `int`
 - `desiredvCpus`: `int`
-- `subnets`: `List`\[`str`\]
-- `securityGroupIds`: `List`\[`str`\]
+- `subnets`: `Sequence`\[`str`\]
+- `securityGroupIds`: `Sequence`\[`str`\]
 
 ## ContainerDetailTypeDef
 
@@ -295,12 +295,12 @@ Optional fields:
 
 - `vcpus`: `int`
 - `memory`: `int`
-- `command`: `List`\[`str`\]
+- `command`: `Sequence`\[`str`\]
 - `instanceType`: `str`
 - `environment`:
-  `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
+  `Sequence`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
 - `resourceRequirements`:
-  `List`\[[ResourceRequirementTypeDef](./type_defs.md#resourcerequirementtypedef)\]
+  `Sequence`\[[ResourceRequirementTypeDef](./type_defs.md#resourcerequirementtypedef)\]
 
 ## ContainerPropertiesTypeDef
 
@@ -366,7 +366,7 @@ Optional fields:
 - `computeResources`:
   [ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef)
 - `serviceRole`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateComputeEnvironmentResponseTypeDef
 
@@ -392,12 +392,12 @@ Required fields:
 - `jobQueueName`: `str`
 - `priority`: `int`
 - `computeEnvironmentOrder`:
-  `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
+  `Sequence`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
 
 Optional fields:
 
 - `state`: [JQStateType](./literals.md#jqstatetype)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateJobQueueResponseTypeDef
 
@@ -450,7 +450,7 @@ from mypy_boto3_batch.type_defs import DescribeComputeEnvironmentsRequestRequest
 
 Optional fields:
 
-- `computeEnvironments`: `List`\[`str`\]
+- `computeEnvironments`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -476,7 +476,7 @@ from mypy_boto3_batch.type_defs import DescribeJobDefinitionsRequestRequestTypeD
 
 Optional fields:
 
-- `jobDefinitions`: `List`\[`str`\]
+- `jobDefinitions`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `jobDefinitionName`: `str`
 - `status`: `str`
@@ -504,7 +504,7 @@ from mypy_boto3_batch.type_defs import DescribeJobQueuesRequestRequestTypeDef
 
 Optional fields:
 
-- `jobQueues`: `List`\[`str`\]
+- `jobQueues`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -530,7 +530,7 @@ from mypy_boto3_batch.type_defs import DescribeJobsRequestRequestTypeDef
 
 Required fields:
 
-- `jobs`: `List`\[`str`\]
+- `jobs`: `Sequence`\[`str`\]
 
 ## DescribeJobsResponseTypeDef
 
@@ -797,7 +797,7 @@ from mypy_boto3_batch.type_defs import KeyValuesPairTypeDef
 Optional fields:
 
 - `name`: `str`
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## LaunchTemplateSpecificationTypeDef
 
@@ -841,7 +841,7 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `filters`:
-  `List`\[[KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)\]
+  `Sequence`\[[KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)\]
 
 ## ListJobsResponseTypeDef
 
@@ -949,7 +949,7 @@ Optional fields:
 
 - `numNodes`: `int`
 - `nodePropertyOverrides`:
-  `List`\[[NodePropertyOverrideTypeDef](./type_defs.md#nodepropertyoverridetypedef)\]
+  `Sequence`\[[NodePropertyOverrideTypeDef](./type_defs.md#nodepropertyoverridetypedef)\]
 
 ## NodePropertiesSummaryTypeDef
 
@@ -1031,7 +1031,7 @@ Required fields:
 
 Optional fields:
 
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 - `containerProperties`:
   [ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef)
 - `nodeProperties`:
@@ -1039,9 +1039,9 @@ Optional fields:
 - `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `propagateTags`: `bool`
 - `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `platformCapabilities`:
-  `List`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
+  `Sequence`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
 
 ## RegisterJobDefinitionResponseTypeDef
 
@@ -1122,15 +1122,15 @@ Optional fields:
 - `arrayProperties`:
   [ArrayPropertiesTypeDef](./type_defs.md#arraypropertiestypedef)
 - `dependsOn`:
-  `List`\[[JobDependencyTypeDef](./type_defs.md#jobdependencytypedef)\]
-- `parameters`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[JobDependencyTypeDef](./type_defs.md#jobdependencytypedef)\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 - `containerOverrides`:
   [ContainerOverridesTypeDef](./type_defs.md#containeroverridestypedef)
 - `nodeOverrides`: [NodeOverridesTypeDef](./type_defs.md#nodeoverridestypedef)
 - `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `propagateTags`: `bool`
 - `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## SubmitJobResponseTypeDef
 
@@ -1155,7 +1155,7 @@ from mypy_boto3_batch.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TerminateJobRequestRequestTypeDef
 
@@ -1204,7 +1204,7 @@ from mypy_boto3_batch.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateComputeEnvironmentRequestRequestTypeDef
 
@@ -1251,7 +1251,7 @@ Optional fields:
 - `state`: [JQStateType](./literals.md#jqstatetype)
 - `priority`: `int`
 - `computeEnvironmentOrder`:
-  `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
+  `Sequence`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
 
 ## UpdateJobQueueResponseTypeDef
 

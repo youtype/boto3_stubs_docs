@@ -140,9 +140,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `variableEntries`:
-  `List`\[[VariableEntryTypeDef](./type_defs.md#variableentrytypedef)\]
+  `Sequence`\[[VariableEntryTypeDef](./type_defs.md#variableentrytypedef)\]
   *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [BatchCreateVariableResultTypeDef](./type_defs.md#batchcreatevariableresulttypedef).
@@ -161,7 +161,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `names`: `List`\[`str`\] *(required)*
+- `names`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchGetVariableResultTypeDef](./type_defs.md#batchgetvariableresulttypedef).
@@ -222,7 +222,7 @@ Keyword-only arguments:
 - `detectorName`: `str` *(required)*
 - `iamRoleArn`: `str` *(required)*
 - `detectorVersion`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -242,14 +242,14 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
-- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+- `rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
 - `description`: `str`
-- `externalModelEndpoints`: `List`\[`str`\]
+- `externalModelEndpoints`: `Sequence`\[`str`\]
 - `modelVersions`:
-  `List`\[[ModelVersionTypeDef](./type_defs.md#modelversiontypedef)\]
+  `Sequence`\[[ModelVersionTypeDef](./type_defs.md#modelversiontypedef)\]
 - `ruleExecutionMode`:
   [RuleExecutionModeType](./literals.md#ruleexecutionmodetype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDetectorVersionResultTypeDef](./type_defs.md#createdetectorversionresulttypedef).
@@ -273,7 +273,7 @@ Keyword-only arguments:
   [ModelTypeEnumType](./literals.md#modeltypeenumtype)) *(required)*
 - `eventTypeName`: `str` *(required)*
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -303,7 +303,7 @@ Keyword-only arguments:
   *(required)*
 - `externalEventsDetail`:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateModelVersionResultTypeDef](./type_defs.md#createmodelversionresulttypedef).
@@ -327,9 +327,9 @@ Keyword-only arguments:
 - `expression`: `str` *(required)*
 - `language`: `Literal['DETECTORPL']` (see
   [LanguageType](./literals.md#languagetype)) *(required)*
-- `outcomes`: `List`\[`str`\] *(required)*
+- `outcomes`: `Sequence`\[`str`\] *(required)*
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateRuleResultTypeDef](./type_defs.md#createruleresulttypedef).
 
@@ -353,7 +353,7 @@ Keyword-only arguments:
 - `defaultValue`: `str` *(required)*
 - `description`: `str`
 - `variableType`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -662,7 +662,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -770,12 +770,12 @@ Keyword-only arguments:
 - `detectorId`: `str` *(required)*
 - `eventId`: `str` *(required)*
 - `eventTypeName`: `str` *(required)*
-- `entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
+- `entities`: `Sequence`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
   *(required)*
 - `eventTimestamp`: `str` *(required)*
-- `eventVariables`: `Dict`\[`str`, `str`\] *(required)*
+- `eventVariables`: `Mapping`\[`str`, `str`\] *(required)*
 - `detectorVersionId`: `str`
-- `externalModelEndpointDataBlobs`: `Dict`\[`str`,
+- `externalModelEndpointDataBlobs`: `Mapping`\[`str`,
   [ModelEndpointDataBlobTypeDef](./type_defs.md#modelendpointdatablobtypedef)\]
 
 Returns
@@ -1006,7 +1006,7 @@ Keyword-only arguments:
 - `detectorId`: `str` *(required)*
 - `eventTypeName`: `str` *(required)*
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1026,7 +1026,7 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1045,11 +1045,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
-- `eventVariables`: `List`\[`str`\] *(required)*
-- `entityTypes`: `List`\[`str`\] *(required)*
+- `eventVariables`: `Sequence`\[`str`\] *(required)*
+- `entityTypes`: `Sequence`\[`str`\] *(required)*
 - `description`: `str`
-- `labels`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `labels`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1079,7 +1079,7 @@ Keyword-only arguments:
   *(required)*
 - `modelEndpointStatus`:
   [ModelEndpointStatusType](./literals.md#modelendpointstatustype) *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1119,7 +1119,7 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1139,7 +1139,7 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1158,7 +1158,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1177,7 +1177,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceARN`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1198,11 +1198,11 @@ Keyword-only arguments:
 
 - `detectorId`: `str` *(required)*
 - `detectorVersionId`: `str` *(required)*
-- `externalModelEndpoints`: `List`\[`str`\] *(required)*
-- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+- `externalModelEndpoints`: `Sequence`\[`str`\] *(required)*
+- `rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
 - `description`: `str`
 - `modelVersions`:
-  `List`\[[ModelVersionTypeDef](./type_defs.md#modelversiontypedef)\]
+  `Sequence`\[[ModelVersionTypeDef](./type_defs.md#modelversiontypedef)\]
 - `ruleExecutionMode`:
   [RuleExecutionModeType](./literals.md#ruleexecutionmodetype)
 
@@ -1294,7 +1294,7 @@ Keyword-only arguments:
 - `majorVersionNumber`: `str` *(required)*
 - `externalEventsDetail`:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [UpdateModelVersionResultTypeDef](./type_defs.md#updatemodelversionresulttypedef).
@@ -1362,9 +1362,9 @@ Keyword-only arguments:
 - `expression`: `str` *(required)*
 - `language`: `Literal['DETECTORPL']` (see
   [LanguageType](./literals.md#languagetype)) *(required)*
-- `outcomes`: `List`\[`str`\] *(required)*
+- `outcomes`: `Sequence`\[`str`\] *(required)*
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [UpdateRuleVersionResultTypeDef](./type_defs.md#updateruleversionresulttypedef).

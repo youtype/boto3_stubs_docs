@@ -128,6 +128,7 @@ from mypy_boto3_frauddetector.literals import AsyncJobStatusType, ...
 - [ModelVersionStatusType](./literals.md#modelversionstatustype)
 - [RuleExecutionModeType](./literals.md#ruleexecutionmodetype)
 - [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -155,7 +155,7 @@ Arguments for `ListDevicesPaginator.paginate` method:
 
 - `arn`: `str`
 - `filters`:
-  `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
+  `Sequence`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

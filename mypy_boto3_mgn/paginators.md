@@ -86,7 +86,7 @@ Boto3 documentation:
 Arguments for `DescribeReplicationConfigurationTemplatesPaginator.paginate`
 method:
 
-- `replicationConfigurationTemplateIDs`: `List`\[`str`\] *(required)*
+- `replicationConfigurationTemplateIDs`: `Sequence`\[`str`\] *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

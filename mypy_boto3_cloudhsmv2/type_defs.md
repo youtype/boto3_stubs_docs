@@ -134,7 +134,7 @@ Required fields:
 
 Optional fields:
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CopyBackupToRegionResponseTypeDef
 
@@ -158,14 +158,14 @@ from mypy_boto3_cloudhsmv2.type_defs import CreateClusterRequestRequestTypeDef
 Required fields:
 
 - `HsmType`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `BackupRetentionPolicy`:
   [BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef)
 - `SourceBackupId`: `str`
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateClusterResponseTypeDef
 
@@ -288,7 +288,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Filters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `SortAscending`: `bool`
 
 ## DescribeBackupsResponseTypeDef
@@ -312,7 +312,7 @@ from mypy_boto3_cloudhsmv2.type_defs import DescribeClustersRequestRequestTypeDe
 
 Optional fields:
 
-- `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Filters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -519,7 +519,7 @@ from mypy_boto3_cloudhsmv2.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -541,4 +541,4 @@ from mypy_boto3_cloudhsmv2.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceId`: `str`
-- `TagKeyList`: `List`\[`str`\]
+- `TagKeyList`: `Sequence`\[`str`\]

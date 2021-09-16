@@ -218,7 +218,7 @@ from mypy_boto3_route53domains.type_defs import DeleteTagsForDomainRequestReques
 Required fields:
 
 - `DomainName`: `str`
-- `TagsToDelete`: `List`\[`str`\]
+- `TagsToDelete`: `Sequence`\[`str`\]
 
 ## DisableDomainAutoRenewRequestRequestTypeDef
 
@@ -737,7 +737,7 @@ Optional fields:
 
 - `IdnLangCode`: `str`
 - `Nameservers`:
-  `List`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
+  `Sequence`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
 - `AuthCode`: `str`
 - `AutoRenew`: `bool`
 - `PrivacyProtectAdminContact`: `bool`
@@ -847,7 +847,7 @@ Required fields:
 
 - `DomainName`: `str`
 - `Nameservers`:
-  `List`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
+  `Sequence`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
 
 Optional fields:
 
@@ -877,7 +877,7 @@ Required fields:
 
 Optional fields:
 
-- `TagsToUpdate`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagsToUpdate`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## ViewBillingRequestRequestTypeDef
 

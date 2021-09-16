@@ -118,7 +118,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -140,12 +140,12 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TargetIdFilters`: `List`\[`str`\]
-- `RegionFilters`: `List`\[`str`\]
-- `ResourceTypeFilters`: `List`\[`str`\]
-- `TagKeyFilters`: `List`\[`str`\]
+- `TargetIdFilters`: `Sequence`\[`str`\]
+- `RegionFilters`: `Sequence`\[`str`\]
+- `ResourceTypeFilters`: `Sequence`\[`str`\]
+- `TagKeyFilters`: `Sequence`\[`str`\]
 - `GroupBy`:
-  `List`\[[GroupByAttributeType](./literals.md#groupbyattributetype)\]
+  `Sequence`\[[GroupByAttributeType](./literals.md#groupbyattributetype)\]
 - `MaxResults`: `int`
 - `PaginationToken`: `str`
 
@@ -169,13 +169,14 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PaginationToken`: `str`
-- `TagFilters`: `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
+- `TagFilters`:
+  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
 - `ResourcesPerPage`: `int`
 - `TagsPerPage`: `int`
-- `ResourceTypeFilters`: `List`\[`str`\]
+- `ResourceTypeFilters`: `Sequence`\[`str`\]
 - `IncludeComplianceDetails`: `bool`
 - `ExcludeCompliantResources`: `bool`
-- `ResourceARNList`: `List`\[`str`\]
+- `ResourceARNList`: `Sequence`\[`str`\]
 
 Returns [GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef).
 
@@ -256,8 +257,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceARNList`: `List`\[`str`\] *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `ResourceARNList`: `Sequence`\[`str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns [TagResourcesOutputTypeDef](./type_defs.md#tagresourcesoutputtypedef).
 
@@ -276,8 +277,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceARNList`: `List`\[`str`\] *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `ResourceARNList`: `Sequence`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [UntagResourcesOutputTypeDef](./type_defs.md#untagresourcesoutputtypedef).

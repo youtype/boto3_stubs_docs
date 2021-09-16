@@ -116,7 +116,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
-- `SecretArnList`: `List`\[`str`\] *(required)*
+- `SecretArnList`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchAssociateScramSecretResponseTypeDef](./type_defs.md#batchassociatescramsecretresponsetypedef).
@@ -137,7 +137,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ClusterArn`: `str` *(required)*
-- `SecretArnList`: `List`\[`str`\] *(required)*
+- `SecretArnList`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDisassociateScramSecretResponseTypeDef](./type_defs.md#batchdisassociatescramsecretresponsetypedef).
@@ -188,7 +188,7 @@ Keyword-only arguments:
 - `OpenMonitoring`:
   [OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef)
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
@@ -211,7 +211,7 @@ Keyword-only arguments:
 - `ServerProperties`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
   *(required)*
 - `Description`: `str`
-- `KafkaVersions`: `List`\[`str`\]
+- `KafkaVersions`: `Sequence`\[`str`\]
 
 Returns
 [CreateConfigurationResponseTypeDef](./type_defs.md#createconfigurationresponsetypedef).
@@ -347,7 +347,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -571,7 +571,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `BrokerIds`: `List`\[`str`\] *(required)*
+- `BrokerIds`: `Sequence`\[`str`\] *(required)*
 - `ClusterArn`: `str` *(required)*
 
 Returns
@@ -592,7 +592,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -609,7 +609,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_broker_count
 
@@ -649,7 +649,7 @@ Keyword-only arguments:
 - `ClusterArn`: `str` *(required)*
 - `CurrentVersion`: `str` *(required)*
 - `TargetBrokerEBSVolumeInfo`:
-  `List`\[[BrokerEBSVolumeInfoTypeDef](./type_defs.md#brokerebsvolumeinfotypedef)\]
+  `Sequence`\[[BrokerEBSVolumeInfoTypeDef](./type_defs.md#brokerebsvolumeinfotypedef)\]
   *(required)*
 
 Returns

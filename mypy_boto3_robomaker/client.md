@@ -141,7 +141,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `worlds`: `List`\[`str`\] *(required)*
+- `worlds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDeleteWorldsResponseTypeDef](./type_defs.md#batchdeleteworldsresponsetypedef).
@@ -161,7 +161,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `jobs`: `List`\[`str`\] *(required)*
+- `jobs`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDescribeSimulationJobResponseTypeDef](./type_defs.md#batchdescribesimulationjobresponsetypedef).
@@ -291,11 +291,11 @@ Keyword-only arguments:
 - `clientRequestToken`: `str` *(required)*
 - `fleet`: `str` *(required)*
 - `deploymentApplicationConfigs`:
-  `List`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
+  `Sequence`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
   *(required)*
 - `deploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDeploymentJobResponseTypeDef](./type_defs.md#createdeploymentjobresponsetypedef).
@@ -315,7 +315,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateFleetResponseTypeDef](./type_defs.md#createfleetresponsetypedef).
@@ -338,7 +338,7 @@ Keyword-only arguments:
 - `architecture`: [ArchitectureType](./literals.md#architecturetype)
   *(required)*
 - `greengrassGroupId`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateRobotResponseTypeDef](./type_defs.md#createrobotresponsetypedef).
@@ -359,13 +359,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
-- `sources`:
-  `List`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
-  *(required)*
 - `robotSoftwareSuite`:
   [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
   *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `sources`:
+  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
+- `tags`: `Mapping`\[`str`, `str`\]
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 
 Returns
 [CreateRobotApplicationResponseTypeDef](./type_defs.md#createrobotapplicationresponsetypedef).
@@ -387,6 +387,8 @@ Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `currentRevisionId`: `str`
+- `s3Etags`: `Sequence`\[`str`\]
+- `imageDigest`: `str`
 
 Returns
 [CreateRobotApplicationVersionResponseTypeDef](./type_defs.md#createrobotapplicationversionresponsetypedef).
@@ -407,18 +409,18 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
-- `sources`:
-  `List`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
-  *(required)*
 - `simulationSoftwareSuite`:
   [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
   *(required)*
 - `robotSoftwareSuite`:
   [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
   *(required)*
+- `sources`:
+  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
 - `renderingEngine`:
   [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 
 Returns
 [CreateSimulationApplicationResponseTypeDef](./type_defs.md#createsimulationapplicationresponsetypedef).
@@ -440,6 +442,8 @@ Keyword-only arguments:
 
 - `application`: `str` *(required)*
 - `currentRevisionId`: `str`
+- `s3Etags`: `Sequence`\[`str`\]
+- `imageDigest`: `str`
 
 Returns
 [CreateSimulationApplicationVersionResponseTypeDef](./type_defs.md#createsimulationapplicationversionresponsetypedef).
@@ -466,12 +470,12 @@ Keyword-only arguments:
 - `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
 - `failureBehavior`: [FailureBehaviorType](./literals.md#failurebehaviortype)
 - `robotApplications`:
-  `List`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
+  `Sequence`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
 - `simulationApplications`:
-  `List`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
+  `Sequence`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
 - `dataSources`:
-  `List`\[[DataSourceConfigTypeDef](./type_defs.md#datasourceconfigtypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[DataSourceConfigTypeDef](./type_defs.md#datasourceconfigtypedef)\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `vpcConfig`: [VPCConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `compute`: [ComputeTypeDef](./type_defs.md#computetypedef)
 
@@ -493,12 +497,12 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `worlds`: `List`\[`str`\] *(required)*
+- `worlds`: `Sequence`\[`str`\] *(required)*
 - `outputLocation`:
   [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) *(required)*
 - `iamRole`: `str` *(required)*
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateWorldExportJobResponseTypeDef](./type_defs.md#createworldexportjobresponsetypedef).
@@ -522,8 +526,8 @@ Keyword-only arguments:
 - `worldCount`: [WorldCountTypeDef](./type_defs.md#worldcounttypedef)
   *(required)*
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `worldTags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
+- `worldTags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateWorldGenerationJobResponseTypeDef](./type_defs.md#createworldgenerationjobresponsetypedef).
@@ -547,7 +551,7 @@ Keyword-only arguments:
 - `templateBody`: `str`
 - `templateLocation`:
   [TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateWorldTemplateResponseTypeDef](./type_defs.md#createworldtemplateresponsetypedef).
@@ -897,7 +901,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -938,7 +942,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -961,7 +965,7 @@ Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns [ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef).
 
@@ -983,7 +987,7 @@ Keyword-only arguments:
 - `versionQualifier`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef).
@@ -1004,7 +1008,7 @@ Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns [ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef).
 
@@ -1026,7 +1030,7 @@ Keyword-only arguments:
 - `versionQualifier`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef).
@@ -1048,7 +1052,7 @@ Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef).
@@ -1069,7 +1073,7 @@ Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef).
@@ -1109,7 +1113,7 @@ Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef).
@@ -1131,7 +1135,7 @@ Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef).
@@ -1172,7 +1176,7 @@ Keyword-only arguments:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns [ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef).
 
@@ -1230,11 +1234,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `createSimulationJobRequests`:
-  `List`\[[SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef)\]
+  `Sequence`\[[SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef)\]
   *(required)*
 - `clientRequestToken`: `str`
 - `batchPolicy`: [BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [StartSimulationJobBatchResponseTypeDef](./type_defs.md#startsimulationjobbatchresponsetypedef).
@@ -1274,7 +1278,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1293,7 +1297,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1313,13 +1317,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `application`: `str` *(required)*
-- `sources`:
-  `List`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
-  *(required)*
 - `robotSoftwareSuite`:
   [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
   *(required)*
+- `sources`:
+  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
 - `currentRevisionId`: `str`
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 
 Returns
 [UpdateRobotApplicationResponseTypeDef](./type_defs.md#updaterobotapplicationresponsetypedef).
@@ -1340,18 +1344,18 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `application`: `str` *(required)*
-- `sources`:
-  `List`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
-  *(required)*
 - `simulationSoftwareSuite`:
   [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
   *(required)*
 - `robotSoftwareSuite`:
   [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
   *(required)*
+- `sources`:
+  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
 - `renderingEngine`:
   [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
 - `currentRevisionId`: `str`
+- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 
 Returns
 [UpdateSimulationApplicationResponseTypeDef](./type_defs.md#updatesimulationapplicationresponsetypedef).

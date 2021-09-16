@@ -86,6 +86,7 @@ from mypy_boto3_kinesisanalytics.literals import ApplicationStatusType, ...
 - [ApplicationStatusType](./literals.md#applicationstatustype)
 - [InputStartingPositionType](./literals.md#inputstartingpositiontype)
 - [RecordFormatTypeType](./literals.md#recordformattypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

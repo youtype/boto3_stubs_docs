@@ -57,10 +57,10 @@ Boto3 documentation:
 
 Arguments for `DescribeScalingPlansPaginator.paginate` method:
 
-- `ScalingPlanNames`: `List`\[`str`\]
+- `ScalingPlanNames`: `Sequence`\[`str`\]
 - `ScalingPlanVersion`: `int`
 - `ApplicationSources`:
-  `List`\[[ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)\]
+  `Sequence`\[[ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

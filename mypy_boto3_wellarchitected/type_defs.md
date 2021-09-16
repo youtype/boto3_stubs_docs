@@ -141,7 +141,7 @@ from mypy_boto3_wellarchitected.type_defs import AssociateLensesInputRequestType
 Required fields:
 
 - `WorkloadId`: `str`
-- `LensAliases`: `List`\[`str`\]
+- `LensAliases`: `Sequence`\[`str`\]
 
 ## ChoiceAnswerSummaryTypeDef
 
@@ -233,20 +233,20 @@ Required fields:
 - `Environment`:
   [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype)
 - `ReviewOwner`: `str`
-- `Lenses`: `List`\[`str`\]
+- `Lenses`: `Sequence`\[`str`\]
 - `ClientRequestToken`: `str`
 
 Optional fields:
 
-- `AccountIds`: `List`\[`str`\]
-- `AwsRegions`: `List`\[`str`\]
-- `NonAwsRegions`: `List`\[`str`\]
-- `PillarPriorities`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
+- `AwsRegions`: `Sequence`\[`str`\]
+- `NonAwsRegions`: `Sequence`\[`str`\]
+- `PillarPriorities`: `Sequence`\[`str`\]
 - `ArchitecturalDesign`: `str`
 - `IndustryType`: `str`
 - `Industry`: `str`
 - `Notes`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateWorkloadOutputTypeDef
 
@@ -319,7 +319,7 @@ from mypy_boto3_wellarchitected.type_defs import DisassociateLensesInputRequestT
 Required fields:
 
 - `WorkloadId`: `str`
-- `LensAliases`: `List`\[`str`\]
+- `LensAliases`: `Sequence`\[`str`\]
 
 ## GetAnswerInputRequestTypeDef
 
@@ -986,7 +986,7 @@ from mypy_boto3_wellarchitected.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `WorkloadArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceInputRequestTypeDef
 
@@ -997,7 +997,7 @@ from mypy_boto3_wellarchitected.type_defs import UntagResourceInputRequestTypeDe
 Required fields:
 
 - `WorkloadArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAnswerInputRequestTypeDef
 
@@ -1013,8 +1013,8 @@ Required fields:
 
 Optional fields:
 
-- `SelectedChoices`: `List`\[`str`\]
-- `ChoiceUpdates`: `Dict`\[`str`,
+- `SelectedChoices`: `Sequence`\[`str`\]
+- `ChoiceUpdates`: `Mapping`\[`str`,
   [ChoiceUpdateTypeDef](./type_defs.md#choiceupdatetypedef)\]
 - `Notes`: `str`
 - `IsApplicable`: `bool`
@@ -1048,7 +1048,7 @@ Required fields:
 Optional fields:
 
 - `LensNotes`: `str`
-- `PillarNotes`: `Dict`\[`str`, `str`\]
+- `PillarNotes`: `Mapping`\[`str`, `str`\]
 
 ## UpdateLensReviewOutputTypeDef
 
@@ -1104,10 +1104,10 @@ Optional fields:
 - `Description`: `str`
 - `Environment`:
   [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype)
-- `AccountIds`: `List`\[`str`\]
-- `AwsRegions`: `List`\[`str`\]
-- `NonAwsRegions`: `List`\[`str`\]
-- `PillarPriorities`: `List`\[`str`\]
+- `AccountIds`: `Sequence`\[`str`\]
+- `AwsRegions`: `Sequence`\[`str`\]
+- `NonAwsRegions`: `Sequence`\[`str`\]
+- `PillarPriorities`: `Sequence`\[`str`\]
 - `ArchitecturalDesign`: `str`
 - `ReviewOwner`: `str`
 - `IsReviewOwnerUpdateAcknowledged`: `bool`

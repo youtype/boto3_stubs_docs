@@ -182,7 +182,7 @@ Required fields:
 Optional fields:
 
 - `Metadata`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAppInstanceResponseTypeDef
 
@@ -212,7 +212,7 @@ Required fields:
 Optional fields:
 
 - `Metadata`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAppInstanceUserResponseTypeDef
 

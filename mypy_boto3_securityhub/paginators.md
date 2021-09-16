@@ -39,7 +39,7 @@ Boto3 documentation:
 
 Arguments for `DescribeActionTargetsPaginator.paginate` method:
 
-- `ActionTargetArns`: `List`\[`str`\]
+- `ActionTargetArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -142,7 +142,7 @@ Boto3 documentation:
 
 Arguments for `GetEnabledStandardsPaginator.paginate` method:
 
-- `StandardsSubscriptionArns`: `List`\[`str`\]
+- `StandardsSubscriptionArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -171,7 +171,7 @@ Arguments for `GetFindingsPaginator.paginate` method:
 - `Filters`:
   [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
 - `SortCriteria`:
-  `List`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
+  `Sequence`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -197,7 +197,7 @@ Boto3 documentation:
 
 Arguments for `GetInsightsPaginator.paginate` method:
 
-- `InsightArns`: `List`\[`str`\]
+- `InsightArns`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

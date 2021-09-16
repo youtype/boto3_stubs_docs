@@ -153,9 +153,9 @@ Required fields:
 Optional fields:
 
 - `BudgetLimit`: [SpendTypeDef](./type_defs.md#spendtypedef)
-- `PlannedBudgetLimits`: `Dict`\[`str`,
+- `PlannedBudgetLimits`: `Mapping`\[`str`,
   [SpendTypeDef](./type_defs.md#spendtypedef)\]
-- `CostFilters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `CostFilters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `CostTypes`: [CostTypesTypeDef](./type_defs.md#costtypestypedef)
 - `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
 - `CalculatedSpend`:
@@ -227,7 +227,7 @@ Required fields:
 - `ExecutionRoleArn`: `str`
 - `ApprovalModel`: [ApprovalModelType](./literals.md#approvalmodeltype)
 - `Subscribers`:
-  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
 ## CreateBudgetActionResponseTypeDef
 
@@ -257,7 +257,7 @@ Required fields:
 Optional fields:
 
 - `NotificationsWithSubscribers`:
-  `List`\[[NotificationWithSubscribersTypeDef](./type_defs.md#notificationwithsubscriberstypedef)\]
+  `Sequence`\[[NotificationWithSubscribersTypeDef](./type_defs.md#notificationwithsubscriberstypedef)\]
 
 ## CreateNotificationRequestRequestTypeDef
 
@@ -271,7 +271,7 @@ Required fields:
 - `BudgetName`: `str`
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `Subscribers`:
-  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
 ## CreateSubscriberRequestRequestTypeDef
 
@@ -661,9 +661,9 @@ Required fields:
 
 Optional fields:
 
-- `Roles`: `List`\[`str`\]
-- `Groups`: `List`\[`str`\]
-- `Users`: `List`\[`str`\]
+- `Roles`: `Sequence`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
+- `Users`: `Sequence`\[`str`\]
 
 ## NotificationTypeDef
 
@@ -695,7 +695,7 @@ Required fields:
 
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `Subscribers`:
-  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -732,7 +732,7 @@ from mypy_boto3_budgets.type_defs import ScpActionDefinitionTypeDef
 Required fields:
 
 - `PolicyId`: `str`
-- `TargetIds`: `List`\[`str`\]
+- `TargetIds`: `Sequence`\[`str`\]
 
 ## SpendTypeDef
 
@@ -755,7 +755,7 @@ Required fields:
 
 - `ActionSubType`: [ActionSubTypeType](./literals.md#actionsubtypetype)
 - `Region`: `str`
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 ## SubscriberTypeDef
 
@@ -802,7 +802,7 @@ Optional fields:
 - `ExecutionRoleArn`: `str`
 - `ApprovalModel`: [ApprovalModelType](./literals.md#approvalmodeltype)
 - `Subscribers`:
-  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
 ## UpdateBudgetActionResponseTypeDef
 

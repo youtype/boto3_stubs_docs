@@ -144,7 +144,7 @@ Keyword-only arguments:
   [SidewalkAccountInfoTypeDef](./type_defs.md#sidewalkaccountinfotypedef)
   *(required)*
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [AssociateAwsAccountWithPartnerAccountResponseTypeDef](./type_defs.md#associateawsaccountwithpartneraccountresponsetypedef).
@@ -246,7 +246,7 @@ Keyword-only arguments:
 - `Expression`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
 Returns
@@ -270,7 +270,7 @@ Keyword-only arguments:
 - `Name`: `str`
 - `LoRaWAN`:
   [LoRaWANDeviceProfileTypeDef](./type_defs.md#lorawandeviceprofiletypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
 Returns
@@ -294,7 +294,7 @@ Keyword-only arguments:
 - `Name`: `str`
 - `LoRaWAN`:
   [LoRaWANServiceProfileTypeDef](./type_defs.md#lorawanserviceprofiletypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
 Returns
@@ -322,7 +322,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `ClientRequestToken`: `str`
 - `LoRaWAN`: [LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateWirelessDeviceResponseTypeDef](./type_defs.md#createwirelessdeviceresponsetypedef).
@@ -346,7 +346,7 @@ Keyword-only arguments:
   *(required)*
 - `Name`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 
 Returns
@@ -393,7 +393,7 @@ Keyword-only arguments:
 - `Update`:
   [UpdateWirelessGatewayTaskCreateTypeDef](./type_defs.md#updatewirelessgatewaytaskcreatetypedef)
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateWirelessGatewayTaskDefinitionResponseTypeDef](./type_defs.md#createwirelessgatewaytaskdefinitionresponsetypedef).
@@ -623,7 +623,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1194,7 +1194,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1232,7 +1232,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1275,9 +1275,9 @@ Keyword-only arguments:
 
 - `DefaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
 - `WirelessDeviceLogOptions`:
-  `List`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
+  `Sequence`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
 - `WirelessGatewayLogOptions`:
-  `List`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
+  `Sequence`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1347,7 +1347,7 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
-- `JoinEuiFilters`: `List`\[`List`\[`str`\]\]
-- `NetIdFilters`: `List`\[`str`\]
+- `JoinEuiFilters`: `Sequence`\[`Sequence`\[`str`\]\]
+- `NetIdFilters`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].

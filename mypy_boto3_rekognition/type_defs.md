@@ -417,7 +417,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateCollectionResponseTypeDef
 
@@ -471,7 +471,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `KmsKeyId`: `str`
 
 ## CreateProjectVersionResponseTypeDef
@@ -505,7 +505,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateStreamProcessorResponseTypeDef
 
@@ -562,7 +562,7 @@ from mypy_boto3_rekognition.type_defs import DeleteFacesRequestRequestTypeDef
 Required fields:
 
 - `CollectionId`: `str`
-- `FaceIds`: `List`\[`str`\]
+- `FaceIds`: `Sequence`\[`str`\]
 
 ## DeleteFacesResponseTypeDef
 
@@ -667,7 +667,7 @@ Required fields:
 
 Optional fields:
 
-- `VersionNames`: `List`\[`str`\]
+- `VersionNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -786,7 +786,7 @@ Required fields:
 
 Optional fields:
 
-- `Attributes`: `List`\[[AttributeType](./literals.md#attributetype)\]
+- `Attributes`: `Sequence`\[[AttributeType](./literals.md#attributetype)\]
 
 ## DetectFacesResponseTypeDef
 
@@ -906,7 +906,7 @@ Optional fields:
 
 - `WordFilter`: [DetectionFilterTypeDef](./type_defs.md#detectionfiltertypedef)
 - `RegionsOfInterest`:
-  `List`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
+  `Sequence`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
 
 ## DetectTextRequestRequestTypeDef
 
@@ -1453,7 +1453,7 @@ from mypy_boto3_rekognition.type_defs import HumanLoopDataAttributesTypeDef
 Optional fields:
 
 - `ContentClassifiers`:
-  `List`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
+  `Sequence`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
 
 ## ImageQualityTypeDef
 
@@ -1491,7 +1491,8 @@ Required fields:
 Optional fields:
 
 - `ExternalImageId`: `str`
-- `DetectionAttributes`: `List`\[[AttributeType](./literals.md#attributetype)\]
+- `DetectionAttributes`:
+  `Sequence`\[[AttributeType](./literals.md#attributetype)\]
 - `MaxFaces`: `int`
 - `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
 
@@ -1902,7 +1903,7 @@ Required fields:
 
 - `MinConfidence`: `float`
 - `RequiredEquipmentTypes`:
-  `List`\[[ProtectiveEquipmentTypeType](./literals.md#protectiveequipmenttypetype)\]
+  `Sequence`\[[ProtectiveEquipmentTypeType](./literals.md#protectiveequipmenttypetype)\]
 
 ## ProtectiveEquipmentSummaryTypeDef
 
@@ -2321,7 +2322,8 @@ from mypy_boto3_rekognition.type_defs import StartSegmentDetectionRequestRequest
 Required fields:
 
 - `Video`: [VideoTypeDef](./type_defs.md#videotypedef)
-- `SegmentTypes`: `List`\[[SegmentTypeType](./literals.md#segmenttypetype)\]
+- `SegmentTypes`:
+  `Sequence`\[[SegmentTypeType](./literals.md#segmenttypetype)\]
 
 Optional fields:
 
@@ -2385,7 +2387,7 @@ Optional fields:
 
 - `WordFilter`: [DetectionFilterTypeDef](./type_defs.md#detectionfiltertypedef)
 - `RegionsOfInterest`:
-  `List`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
+  `Sequence`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
 
 ## StartTextDetectionRequestRequestTypeDef
 
@@ -2525,7 +2527,7 @@ from mypy_boto3_rekognition.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TechnicalCueSegmentTypeDef
 
@@ -2558,7 +2560,7 @@ from mypy_boto3_rekognition.type_defs import TestingDataTypeDef
 
 Optional fields:
 
-- `Assets`: `List`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
+- `Assets`: `Sequence`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
 - `AutoCreate`: `bool`
 
 ## TextDetectionResultTypeDef
@@ -2607,7 +2609,7 @@ from mypy_boto3_rekognition.type_defs import TrainingDataTypeDef
 
 Optional fields:
 
-- `Assets`: `List`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
+- `Assets`: `Sequence`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
 
 ## UnindexedFaceTypeDef
 
@@ -2629,7 +2631,7 @@ from mypy_boto3_rekognition.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ValidationDataTypeDef
 

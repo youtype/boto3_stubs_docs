@@ -148,7 +148,7 @@ Boto3 documentation:
 Arguments for `ListCreateAccountStatusPaginator.paginate` method:
 
 - `States`:
-  `List`\[[CreateAccountStateType](./literals.md#createaccountstatetype)\]
+  `Sequence`\[[CreateAccountStateType](./literals.md#createaccountstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -81,6 +81,7 @@ from mypy_boto3_applicationcostprofiler.literals import FormatType, ...
 - [ListReportDefinitionsPaginatorName](./literals.md#listreportdefinitionspaginatorname)
 - [ReportFrequencyType](./literals.md#reportfrequencytype)
 - [S3BucketRegionType](./literals.md#s3bucketregiontype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -253,7 +253,7 @@ Boto3 documentation:
 Arguments for `FilterLogEventsPaginator.paginate` method:
 
 - `logGroupName`: `str` *(required)*
-- `logStreamNames`: `List`\[`str`\]
+- `logStreamNames`: `Sequence`\[`str`\]
 - `logStreamNamePrefix`: `str`
 - `startTime`: `int`
 - `endTime`: `int`

@@ -129,6 +129,7 @@ from mypy_boto3_forecast.literals import AttributeTypeType, ...
 - [ListPredictorsPaginatorName](./literals.md#listpredictorspaginatorname)
 - [OptimizationMetricType](./literals.md#optimizationmetrictype)
 - [ScalingTypeType](./literals.md#scalingtypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

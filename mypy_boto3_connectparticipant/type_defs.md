@@ -51,7 +51,7 @@ from mypy_boto3_connectparticipant.type_defs import CompleteAttachmentUploadRequ
 
 Required fields:
 
-- `AttachmentIds`: `List`\[`str`\]
+- `AttachmentIds`: `Sequence`\[`str`\]
 - `ClientToken`: `str`
 - `ConnectionToken`: `str`
 
@@ -74,7 +74,7 @@ from mypy_boto3_connectparticipant.type_defs import CreateParticipantConnectionR
 
 Required fields:
 
-- `Type`: `List`\[[ConnectionTypeType](./literals.md#connectiontypetype)\]
+- `Type`: `Sequence`\[[ConnectionTypeType](./literals.md#connectiontypetype)\]
 - `ParticipantToken`: `str`
 
 ## CreateParticipantConnectionResponseTypeDef

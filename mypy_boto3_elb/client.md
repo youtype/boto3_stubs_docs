@@ -127,8 +127,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LoadBalancerNames`: `List`\[`str`\] *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `LoadBalancerNames`: `Sequence`\[`str`\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -149,7 +149,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `SecurityGroups`: `List`\[`str`\] *(required)*
+- `SecurityGroups`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [ApplySecurityGroupsToLoadBalancerOutputTypeDef](./type_defs.md#applysecuritygroupstoloadbalanceroutputtypedef).
@@ -171,7 +171,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Subnets`: `List`\[`str`\] *(required)*
+- `Subnets`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [AttachLoadBalancerToSubnetsOutputTypeDef](./type_defs.md#attachloadbalancertosubnetsoutputtypedef).
@@ -272,13 +272,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
+- `Listeners`: `Sequence`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
   *(required)*
-- `AvailabilityZones`: `List`\[`str`\]
-- `Subnets`: `List`\[`str`\]
-- `SecurityGroups`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
+- `Subnets`: `Sequence`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `Scheme`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAccessPointOutputTypeDef](./type_defs.md#createaccesspointoutputtypedef).
@@ -299,7 +299,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
+- `Listeners`: `Sequence`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -322,7 +322,7 @@ Keyword-only arguments:
 - `PolicyName`: `str` *(required)*
 - `PolicyTypeName`: `str` *(required)*
 - `PolicyAttributes`:
-  `List`\[[PolicyAttributeTypeDef](./type_defs.md#policyattributetypedef)\]
+  `Sequence`\[[PolicyAttributeTypeDef](./type_defs.md#policyattributetypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -360,7 +360,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `LoadBalancerPorts`: `List`\[`int`\] *(required)*
+- `LoadBalancerPorts`: `Sequence`\[`int`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -399,7 +399,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
   *(required)*
 
 Returns
@@ -442,7 +442,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 
 Returns
 [DescribeEndPointStateOutputTypeDef](./type_defs.md#describeendpointstateoutputtypedef).
@@ -483,7 +483,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str`
-- `PolicyNames`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeLoadBalancerPoliciesOutputTypeDef](./type_defs.md#describeloadbalancerpoliciesoutputtypedef).
@@ -504,7 +504,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `PolicyTypeNames`: `List`\[`str`\]
+- `PolicyTypeNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeLoadBalancerPolicyTypesOutputTypeDef](./type_defs.md#describeloadbalancerpolicytypesoutputtypedef).
@@ -523,7 +523,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LoadBalancerNames`: `List`\[`str`\]
+- `LoadBalancerNames`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
 
@@ -544,7 +544,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LoadBalancerNames`: `List`\[`str`\] *(required)*
+- `LoadBalancerNames`: `Sequence`\[`str`\] *(required)*
 
 Returns [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef).
 
@@ -565,7 +565,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Subnets`: `List`\[`str`\] *(required)*
+- `Subnets`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DetachLoadBalancerFromSubnetsOutputTypeDef](./type_defs.md#detachloadbalancerfromsubnetsoutputtypedef).
@@ -587,7 +587,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `AvailabilityZones`: `List`\[`str`\] *(required)*
+- `AvailabilityZones`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [RemoveAvailabilityZonesOutputTypeDef](./type_defs.md#removeavailabilityzonesoutputtypedef).
@@ -609,7 +609,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `AvailabilityZones`: `List`\[`str`\] *(required)*
+- `AvailabilityZones`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [AddAvailabilityZonesOutputTypeDef](./type_defs.md#addavailabilityzonesoutputtypedef).
@@ -626,7 +626,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -671,7 +671,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
   *(required)*
 
 Returns
@@ -691,8 +691,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LoadBalancerNames`: `List`\[`str`\] *(required)*
-- `Tags`: `List`\[[TagKeyOnlyTypeDef](./type_defs.md#tagkeyonlytypedef)\]
+- `LoadBalancerNames`: `Sequence`\[`str`\] *(required)*
+- `Tags`: `Sequence`\[[TagKeyOnlyTypeDef](./type_defs.md#tagkeyonlytypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -736,7 +736,7 @@ Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `InstancePort`: `int` *(required)*
-- `PolicyNames`: `List`\[`str`\] *(required)*
+- `PolicyNames`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -758,7 +758,7 @@ Keyword-only arguments:
 
 - `LoadBalancerName`: `str` *(required)*
 - `LoadBalancerPort`: `int` *(required)*
-- `PolicyNames`: `List`\[`str`\] *(required)*
+- `PolicyNames`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

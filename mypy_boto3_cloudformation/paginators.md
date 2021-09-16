@@ -225,7 +225,7 @@ Arguments for `ListStackInstancesPaginator.paginate` method:
 
 - `StackSetName`: `str` *(required)*
 - `Filters`:
-  `List`\[[StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef)\]
+  `Sequence`\[[StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef)\]
 - `StackInstanceAccount`: `str`
 - `StackInstanceRegion`: `str`
 - `CallAs`: [CallAsType](./literals.md#callastype)
@@ -363,7 +363,7 @@ Boto3 documentation:
 Arguments for `ListStacksPaginator.paginate` method:
 
 - `StackStatusFilter`:
-  `List`\[[StackStatusType](./literals.md#stackstatustype)\]
+  `Sequence`\[[StackStatusType](./literals.md#stackstatustype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

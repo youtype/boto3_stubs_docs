@@ -29,7 +29,7 @@ Boto3 documentation:
 
 Arguments for `ListAttacksPaginator.paginate` method:
 
-- `ResourceArns`: `List`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 - `StartTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `EndTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
 - `PaginationConfig`:

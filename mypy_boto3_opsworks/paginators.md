@@ -29,7 +29,7 @@ Boto3 documentation:
 
 Arguments for `DescribeEcsClustersPaginator.paginate` method:
 
-- `EcsClusterArns`: `List`\[`str`\]
+- `EcsClusterArns`: `Sequence`\[`str`\]
 - `StackId`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

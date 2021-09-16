@@ -95,7 +95,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -118,11 +118,11 @@ Keyword-only arguments:
 - `SessionToken`: `str`
 - `StartSession`:
   [StartSessionRequestTypeDef](./type_defs.md#startsessionrequesttypedef)
-- `StartTransaction`: `Dict`\[`str`, `Any`\]
-- `EndSession`: `Dict`\[`str`, `Any`\]
+- `StartTransaction`: `Mapping`\[`str`, `Any`\]
+- `EndSession`: `Mapping`\[`str`, `Any`\]
 - `CommitTransaction`:
   [CommitTransactionRequestTypeDef](./type_defs.md#committransactionrequesttypedef)
-- `AbortTransaction`: `Dict`\[`str`, `Any`\]
+- `AbortTransaction`: `Mapping`\[`str`, `Any`\]
 - `ExecuteStatement`:
   [ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef)
 - `FetchPage`:

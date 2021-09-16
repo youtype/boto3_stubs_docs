@@ -85,7 +85,7 @@ Boto3 documentation:
 Arguments for `GetProductsPaginator.paginate` method:
 
 - `ServiceCode`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `FormatVersion`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

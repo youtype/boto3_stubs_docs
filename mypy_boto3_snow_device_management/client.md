@@ -132,10 +132,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `command`: [CommandTypeDef](./type_defs.md#commandtypedef) *(required)*
-- `targets`: `List`\[`str`\] *(required)*
+- `targets`: `Sequence`\[`str`\] *(required)*
 - `clientToken`: `str`
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateTaskOutputTypeDef](./type_defs.md#createtaskoutputtypedef).
 
@@ -175,7 +175,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `instanceIds`: `List`\[`str`\] *(required)*
+- `instanceIds`: `Sequence`\[`str`\] *(required)*
 - `managedDeviceId`: `str` *(required)*
 
 Returns
@@ -234,7 +234,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -366,7 +366,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -384,7 +384,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### get_paginator
 

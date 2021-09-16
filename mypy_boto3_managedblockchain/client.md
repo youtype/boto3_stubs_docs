@@ -157,7 +157,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `FrameworkConfiguration`:
   [NetworkFrameworkConfigurationTypeDef](./type_defs.md#networkframeworkconfigurationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateNetworkOutputTypeDef](./type_defs.md#createnetworkoutputtypedef).
@@ -182,7 +182,7 @@ Keyword-only arguments:
   [NodeConfigurationTypeDef](./type_defs.md#nodeconfigurationtypedef)
   *(required)*
 - `MemberId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateNodeOutputTypeDef](./type_defs.md#createnodeoutputtypedef).
 
@@ -209,7 +209,7 @@ Keyword-only arguments:
 - `Actions`: [ProposalActionsTypeDef](./type_defs.md#proposalactionstypedef)
   *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateProposalOutputTypeDef](./type_defs.md#createproposaloutputtypedef).
@@ -266,7 +266,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -538,7 +538,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -557,7 +557,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

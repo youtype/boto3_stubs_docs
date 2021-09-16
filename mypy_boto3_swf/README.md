@@ -151,6 +151,7 @@ from mypy_boto3_swf.literals import ActivityTaskTimeoutTypeType, ...
 - [WorkflowExecutionCancelRequestedCauseType](./literals.md#workflowexecutioncancelrequestedcausetype)
 - [WorkflowExecutionTerminatedCauseType](./literals.md#workflowexecutionterminatedcausetype)
 - [WorkflowExecutionTimeoutTypeType](./literals.md#workflowexecutiontimeouttypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

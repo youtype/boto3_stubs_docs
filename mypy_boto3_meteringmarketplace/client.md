@@ -98,7 +98,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `UsageRecords`:
-  `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
+  `Sequence`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
   *(required)*
 - `ProductCode`: `str` *(required)*
 
@@ -133,7 +133,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -159,7 +159,7 @@ Keyword-only arguments:
 - `UsageQuantity`: `int`
 - `DryRun`: `bool`
 - `UsageAllocations`:
-  `List`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
+  `Sequence`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
 
 Returns [MeterUsageResultTypeDef](./type_defs.md#meterusageresulttypedef).
 

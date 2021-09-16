@@ -234,7 +234,7 @@ Required fields:
 Optional fields:
 
 - `ParentSnapshotId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Description`: `str`
 - `ClientToken`: `str`
 - `Encrypted`: `bool`

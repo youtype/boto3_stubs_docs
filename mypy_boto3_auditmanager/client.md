@@ -156,7 +156,7 @@ Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `evidenceFolderId`: `str` *(required)*
-- `evidenceIds`: `List`\[`str`\] *(required)*
+- `evidenceIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchAssociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchassociateassessmentreportevidenceresponsetypedef).
@@ -177,7 +177,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `createDelegationRequests`:
-  `List`\[[CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)\]
+  `Sequence`\[[CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)\]
   *(required)*
 - `assessmentId`: `str` *(required)*
 
@@ -199,7 +199,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `delegationIds`: `List`\[`str`\] *(required)*
+- `delegationIds`: `Sequence`\[`str`\] *(required)*
 - `assessmentId`: `str` *(required)*
 
 Returns
@@ -224,7 +224,7 @@ Keyword-only arguments:
 
 - `assessmentId`: `str` *(required)*
 - `evidenceFolderId`: `str` *(required)*
-- `evidenceIds`: `List`\[`str`\] *(required)*
+- `evidenceIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDisassociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchdisassociateassessmentreportevidenceresponsetypedef).
@@ -250,7 +250,7 @@ Keyword-only arguments:
 - `controlSetId`: `str` *(required)*
 - `controlId`: `str` *(required)*
 - `manualEvidence`:
-  `List`\[[ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)\]
+  `Sequence`\[[ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)\]
   *(required)*
 
 Returns
@@ -290,10 +290,10 @@ Keyword-only arguments:
   [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
   *(required)*
 - `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef) *(required)*
-- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\] *(required)*
+- `roles`: `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\] *(required)*
 - `frameworkId`: `str` *(required)*
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAssessmentResponseTypeDef](./type_defs.md#createassessmentresponsetypedef).
@@ -315,11 +315,11 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `controlSets`:
-  `List`\[[CreateAssessmentFrameworkControlSetTypeDef](./type_defs.md#createassessmentframeworkcontrolsettypedef)\]
+  `Sequence`\[[CreateAssessmentFrameworkControlSetTypeDef](./type_defs.md#createassessmentframeworkcontrolsettypedef)\]
   *(required)*
 - `description`: `str`
 - `complianceType`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAssessmentFrameworkResponseTypeDef](./type_defs.md#createassessmentframeworkresponsetypedef).
@@ -362,13 +362,13 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `controlMappingSources`:
-  `List`\[[CreateControlMappingSourceTypeDef](./type_defs.md#createcontrolmappingsourcetypedef)\]
+  `Sequence`\[[CreateControlMappingSourceTypeDef](./type_defs.md#createcontrolmappingsourcetypedef)\]
   *(required)*
 - `description`: `str`
 - `testingInformation`: `str`
 - `actionPlanTitle`: `str`
 - `actionPlanInstructions`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateControlResponseTypeDef](./type_defs.md#createcontrolresponsetypedef).
@@ -515,7 +515,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1022,7 +1022,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1041,7 +1041,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1065,7 +1065,7 @@ Keyword-only arguments:
 - `assessmentDescription`: `str`
 - `assessmentReportsDestination`:
   [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
+- `roles`: `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 
 Returns
 [UpdateAssessmentResponseTypeDef](./type_defs.md#updateassessmentresponsetypedef).
@@ -1136,7 +1136,7 @@ Keyword-only arguments:
 - `frameworkId`: `str` *(required)*
 - `name`: `str` *(required)*
 - `controlSets`:
-  `List`\[[UpdateAssessmentFrameworkControlSetTypeDef](./type_defs.md#updateassessmentframeworkcontrolsettypedef)\]
+  `Sequence`\[[UpdateAssessmentFrameworkControlSetTypeDef](./type_defs.md#updateassessmentframeworkcontrolsettypedef)\]
   *(required)*
 - `description`: `str`
 - `complianceType`: `str`
@@ -1183,7 +1183,7 @@ Keyword-only arguments:
 - `controlId`: `str` *(required)*
 - `name`: `str` *(required)*
 - `controlMappingSources`:
-  `List`\[[ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef)\]
+  `Sequence`\[[ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef)\]
   *(required)*
 - `description`: `str`
 - `testingInformation`: `str`
@@ -1210,7 +1210,8 @@ Keyword-only arguments:
 - `snsTopic`: `str`
 - `defaultAssessmentReportsDestination`:
   [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `defaultProcessOwners`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
+- `defaultProcessOwners`:
+  `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
 - `kmsKey`: `str`
 
 Returns

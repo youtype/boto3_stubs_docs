@@ -122,7 +122,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -165,7 +165,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `thingName`: `str` *(required)*
-- `statusDetails`: `Dict`\[`str`, `str`\]
+- `statusDetails`: `Mapping`\[`str`, `str`\]
 - `stepTimeoutInMinutes`: `int`
 
 Returns
@@ -190,7 +190,7 @@ Keyword-only arguments:
 - `thingName`: `str` *(required)*
 - `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
   *(required)*
-- `statusDetails`: `Dict`\[`str`, `str`\]
+- `statusDetails`: `Mapping`\[`str`, `str`\]
 - `stepTimeoutInMinutes`: `int`
 - `expectedVersion`: `int`
 - `includeJobExecutionState`: `bool`

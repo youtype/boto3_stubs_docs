@@ -31,7 +31,7 @@ Boto3 documentation:
 
 Arguments for `DescribeBackupsPaginator.paginate` method:
 
-- `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Filters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `SortAscending`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -58,7 +58,7 @@ Boto3 documentation:
 
 Arguments for `DescribeClustersPaginator.paginate` method:
 
-- `Filters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Filters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

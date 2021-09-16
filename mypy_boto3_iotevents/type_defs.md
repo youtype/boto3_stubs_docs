@@ -200,7 +200,7 @@ from mypy_boto3_iotevents.type_defs import AlarmEventActionsTypeDef
 Optional fields:
 
 - `alarmActions`:
-  `List`\[[AlarmActionTypeDef](./type_defs.md#alarmactiontypedef)\]
+  `Sequence`\[[AlarmActionTypeDef](./type_defs.md#alarmactiontypedef)\]
 
 ## AlarmModelSummaryTypeDef
 
@@ -241,7 +241,7 @@ from mypy_boto3_iotevents.type_defs import AlarmNotificationTypeDef
 Optional fields:
 
 - `notificationActions`:
-  `List`\[[NotificationActionTypeDef](./type_defs.md#notificationactiontypedef)\]
+  `Sequence`\[[NotificationActionTypeDef](./type_defs.md#notificationactiontypedef)\]
 
 ## AlarmRuleTypeDef
 
@@ -353,7 +353,7 @@ Required fields:
 Optional fields:
 
 - `alarmModelDescription`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `key`: `str`
 - `severity`: `int`
 - `alarmNotification`:
@@ -397,7 +397,7 @@ Optional fields:
 
 - `detectorModelDescription`: `str`
 - `key`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `evaluationMethod`:
   [EvaluationMethodType](./literals.md#evaluationmethodtype)
 
@@ -429,7 +429,7 @@ Required fields:
 Optional fields:
 
 - `inputDescription`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateInputResponseTypeDef
 
@@ -644,7 +644,7 @@ from mypy_boto3_iotevents.type_defs import DetectorModelDefinitionTypeDef
 
 Required fields:
 
-- `states`: `List`\[[StateTypeDef](./type_defs.md#statetypedef)\]
+- `states`: `Sequence`\[[StateTypeDef](./type_defs.md#statetypedef)\]
 - `initialStateName`: `str`
 
 ## DetectorModelSummaryTypeDef
@@ -762,7 +762,7 @@ from mypy_boto3_iotevents.type_defs import EmailRecipientsTypeDef
 Optional fields:
 
 - `to`:
-  `List`\[[RecipientDetailTypeDef](./type_defs.md#recipientdetailtypedef)\]
+  `Sequence`\[[RecipientDetailTypeDef](./type_defs.md#recipientdetailtypedef)\]
 
 ## EventTypeDef
 
@@ -777,7 +777,7 @@ Required fields:
 Optional fields:
 
 - `condition`: `str`
-- `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 ## FirehoseActionTypeDef
 
@@ -859,7 +859,8 @@ from mypy_boto3_iotevents.type_defs import InputDefinitionTypeDef
 
 Required fields:
 
-- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `attributes`:
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 ## InputIdentifierTypeDef
 
@@ -1207,9 +1208,9 @@ Required fields:
 Optional fields:
 
 - `smsConfigurations`:
-  `List`\[[SMSConfigurationTypeDef](./type_defs.md#smsconfigurationtypedef)\]
+  `Sequence`\[[SMSConfigurationTypeDef](./type_defs.md#smsconfigurationtypedef)\]
 - `emailConfigurations`:
-  `List`\[[EmailConfigurationTypeDef](./type_defs.md#emailconfigurationtypedef)\]
+  `Sequence`\[[EmailConfigurationTypeDef](./type_defs.md#emailconfigurationtypedef)\]
 
 ## NotificationTargetActionsTypeDef
 
@@ -1229,7 +1230,7 @@ from mypy_boto3_iotevents.type_defs import OnEnterLifecycleTypeDef
 
 Optional fields:
 
-- `events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
+- `events`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
 
 ## OnExitLifecycleTypeDef
 
@@ -1239,7 +1240,7 @@ from mypy_boto3_iotevents.type_defs import OnExitLifecycleTypeDef
 
 Optional fields:
 
-- `events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
+- `events`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
 
 ## OnInputLifecycleTypeDef
 
@@ -1249,9 +1250,9 @@ from mypy_boto3_iotevents.type_defs import OnInputLifecycleTypeDef
 
 Optional fields:
 
-- `events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
+- `events`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
 - `transitionEvents`:
-  `List`\[[TransitionEventTypeDef](./type_defs.md#transitioneventtypedef)\]
+  `Sequence`\[[TransitionEventTypeDef](./type_defs.md#transitioneventtypedef)\]
 
 ## PayloadTypeDef
 
@@ -1329,7 +1330,7 @@ from mypy_boto3_iotevents.type_defs import SMSConfigurationTypeDef
 Required fields:
 
 - `recipients`:
-  `List`\[[RecipientDetailTypeDef](./type_defs.md#recipientdetailtypedef)\]
+  `Sequence`\[[RecipientDetailTypeDef](./type_defs.md#recipientdetailtypedef)\]
 
 Optional fields:
 
@@ -1466,7 +1467,7 @@ from mypy_boto3_iotevents.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1493,7 +1494,7 @@ Required fields:
 
 Optional fields:
 
-- `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1504,7 +1505,7 @@ from mypy_boto3_iotevents.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAlarmModelRequestRequestTypeDef
 

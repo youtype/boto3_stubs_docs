@@ -103,6 +103,7 @@ from mypy_boto3_compute_optimizer.literals import CpuVendorArchitectureType, ...
 - [RecommendationSourceTypeType](./literals.md#recommendationsourcetypetype)
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [StatusType](./literals.md#statustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -175,6 +175,7 @@ from mypy_boto3_proton.literals import DeploymentStatusType, ...
 - [ServiceTemplateVersionRegisteredWaiterName](./literals.md#servicetemplateversionregisteredwaitername)
 - [ServiceUpdatedWaiterName](./literals.md#serviceupdatedwaitername)
 - [TemplateVersionStatusType](./literals.md#templateversionstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

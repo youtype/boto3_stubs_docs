@@ -43,7 +43,7 @@ Optional fields:
 
 - `Description`: `str`
 - `ClientToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateEventIntegrationResponseTypeDef
 
@@ -233,7 +233,7 @@ from mypy_boto3_appintegrations.type_defs import TagResourceRequestRequestTypeDe
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -244,7 +244,7 @@ from mypy_boto3_appintegrations.type_defs import UntagResourceRequestRequestType
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateEventIntegrationRequestRequestTypeDef
 

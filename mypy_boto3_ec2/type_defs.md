@@ -1594,13 +1594,13 @@ from mypy_boto3_ec2.type_defs import AcceptReservedInstancesExchangeQuoteRequest
 
 Required fields:
 
-- `ReservedInstanceIds`: `List`\[`str`\]
+- `ReservedInstanceIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `DryRun`: `bool`
 - `TargetConfigurations`:
-  `List`\[[TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef)\]
+  `Sequence`\[[TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef)\]
 
 ## AcceptReservedInstancesExchangeQuoteResultTypeDef
 
@@ -1624,7 +1624,7 @@ Optional fields:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `TransitGatewayAttachmentId`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## AcceptTransitGatewayMulticastDomainAssociationsResultTypeDef
@@ -1703,7 +1703,7 @@ from mypy_boto3_ec2.type_defs import AcceptVpcEndpointConnectionsRequestRequestT
 Required fields:
 
 - `ServiceId`: `str`
-- `VpcEndpointIds`: `List`\[`str`\]
+- `VpcEndpointIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1884,7 +1884,7 @@ Optional fields:
 - `CustomerOwnedIpv4Pool`: `str`
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## AllocateAddressResultTypeDef
 
@@ -1923,7 +1923,7 @@ Optional fields:
 - `InstanceType`: `str`
 - `InstanceFamily`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `HostRecovery`: [HostRecoveryType](./literals.md#hostrecoverytype)
 
 ## AllocateHostsResultTypeDef
@@ -2071,7 +2071,7 @@ Required fields:
 
 - `ClientVpnEndpointId`: `str`
 - `VpcId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2102,9 +2102,9 @@ Required fields:
 Optional fields:
 
 - `Ipv6AddressCount`: `int`
-- `Ipv6Addresses`: `List`\[`str`\]
+- `Ipv6Addresses`: `Sequence`\[`str`\]
 - `Ipv6PrefixCount`: `int`
-- `Ipv6Prefixes`: `List`\[`str`\]
+- `Ipv6Prefixes`: `Sequence`\[`str`\]
 
 ## AssignIpv6AddressesResultTypeDef
 
@@ -2129,9 +2129,9 @@ from mypy_boto3_ec2.type_defs import AssignPrivateIpAddressesRequestNetworkInter
 Optional fields:
 
 - `AllowReassignment`: `bool`
-- `PrivateIpAddresses`: `List`\[`str`\]
+- `PrivateIpAddresses`: `Sequence`\[`str`\]
 - `SecondaryPrivateIpAddressCount`: `int`
-- `Ipv4Prefixes`: `List`\[`str`\]
+- `Ipv4Prefixes`: `Sequence`\[`str`\]
 - `Ipv4PrefixCount`: `int`
 
 ## AssignPrivateIpAddressesRequestRequestTypeDef
@@ -2147,9 +2147,9 @@ Required fields:
 Optional fields:
 
 - `AllowReassignment`: `bool`
-- `PrivateIpAddresses`: `List`\[`str`\]
+- `PrivateIpAddresses`: `Sequence`\[`str`\]
 - `SecondaryPrivateIpAddressCount`: `int`
-- `Ipv4Prefixes`: `List`\[`str`\]
+- `Ipv4Prefixes`: `Sequence`\[`str`\]
 - `Ipv4PrefixCount`: `int`
 
 ## AssignPrivateIpAddressesResultTypeDef
@@ -2465,7 +2465,7 @@ Optional fields:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `TransitGatewayAttachmentId`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## AssociateTransitGatewayMulticastDomainResultTypeDef
@@ -2636,7 +2636,7 @@ from mypy_boto3_ec2.type_defs import AttachClassicLinkVpcRequestInstanceTypeDef
 
 Required fields:
 
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `VpcId`: `str`
 
 Optional fields:
@@ -2651,7 +2651,7 @@ from mypy_boto3_ec2.type_defs import AttachClassicLinkVpcRequestRequestTypeDef
 
 Required fields:
 
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `InstanceId`: `str`
 - `VpcId`: `str`
 
@@ -2667,7 +2667,7 @@ from mypy_boto3_ec2.type_defs import AttachClassicLinkVpcRequestVpcTypeDef
 
 Required fields:
 
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `InstanceId`: `str`
 
 Optional fields:
@@ -2930,9 +2930,9 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -2950,9 +2950,9 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -2987,14 +2987,14 @@ Optional fields:
 - `GroupId`: `str`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `IpProtocol`: `str`
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## AuthorizeSecurityGroupIngressRequestSecurityGroupTypeDef
 
@@ -3008,14 +3008,14 @@ Optional fields:
 - `FromPort`: `int`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `IpProtocol`: `str`
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## AuthorizeSecurityGroupIngressResultTypeDef
 
@@ -3324,7 +3324,7 @@ from mypy_boto3_ec2.type_defs import CancelSpotFleetRequestsRequestRequestTypeDe
 
 Required fields:
 
-- `SpotFleetRequestIds`: `List`\[`str`\]
+- `SpotFleetRequestIds`: `Sequence`\[`str`\]
 - `TerminateInstances`: `bool`
 
 Optional fields:
@@ -3368,7 +3368,7 @@ from mypy_boto3_ec2.type_defs import CancelSpotInstanceRequestsRequestRequestTyp
 
 Required fields:
 
-- `SpotInstanceRequestIds`: `List`\[`str`\]
+- `SpotInstanceRequestIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -4033,7 +4033,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `PresignedUrl`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CopySnapshotRequestSnapshotTypeDef
@@ -4055,7 +4055,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `PresignedUrl`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CopySnapshotResultTypeDef
@@ -4120,7 +4120,7 @@ Optional fields:
 - `InstanceMatchCriteria`:
   [InstanceMatchCriteriaType](./literals.md#instancematchcriteriatype)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `OutpostArn`: `str`
 
@@ -4150,7 +4150,7 @@ Required fields:
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `ClientToken`: `str`
 
@@ -4178,13 +4178,13 @@ Required fields:
 - `ClientCidrBlock`: `str`
 - `ServerCertificateArn`: `str`
 - `AuthenticationOptions`:
-  `List`\[[ClientVpnAuthenticationRequestTypeDef](./type_defs.md#clientvpnauthenticationrequesttypedef)\]
+  `Sequence`\[[ClientVpnAuthenticationRequestTypeDef](./type_defs.md#clientvpnauthenticationrequesttypedef)\]
 - `ConnectionLogOptions`:
   [ConnectionLogOptionsTypeDef](./type_defs.md#connectionlogoptionstypedef)
 
 Optional fields:
 
-- `DnsServers`: `List`\[`str`\]
+- `DnsServers`: `Sequence`\[`str`\]
 - `TransportProtocol`:
   [TransportProtocolType](./literals.md#transportprotocoltype)
 - `VpnPort`: `int`
@@ -4193,8 +4193,8 @@ Optional fields:
 - `DryRun`: `bool`
 - `ClientToken`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
-- `SecurityGroupIds`: `List`\[`str`\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `VpcId`: `str`
 - `SelfServicePortal`:
   [SelfServicePortalType](./literals.md#selfserviceportaltype)
@@ -4264,7 +4264,7 @@ Optional fields:
 - `PublicIp`: `str`
 - `CertificateArn`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DeviceName`: `str`
 - `DryRun`: `bool`
 
@@ -4338,12 +4338,12 @@ from mypy_boto3_ec2.type_defs import CreateDhcpOptionsRequestRequestTypeDef
 Required fields:
 
 - `DhcpConfigurations`:
-  `List`\[[NewDhcpConfigurationTypeDef](./type_defs.md#newdhcpconfigurationtypedef)\]
+  `Sequence`\[[NewDhcpConfigurationTypeDef](./type_defs.md#newdhcpconfigurationtypedef)\]
 
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateDhcpOptionsRequestServiceResourceTypeDef
@@ -4355,12 +4355,12 @@ from mypy_boto3_ec2.type_defs import CreateDhcpOptionsRequestServiceResourceType
 Required fields:
 
 - `DhcpConfigurations`:
-  `List`\[[NewDhcpConfigurationTypeDef](./type_defs.md#newdhcpconfigurationtypedef)\]
+  `Sequence`\[[NewDhcpConfigurationTypeDef](./type_defs.md#newdhcpconfigurationtypedef)\]
 
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateDhcpOptionsResultTypeDef
@@ -4390,7 +4390,7 @@ Optional fields:
 - `ClientToken`: `str`
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateEgressOnlyInternetGatewayResultTypeDef
 
@@ -4445,7 +4445,7 @@ from mypy_boto3_ec2.type_defs import CreateFleetRequestRequestTypeDef
 Required fields:
 
 - `LaunchTemplateConfigs`:
-  `List`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
+  `Sequence`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
 - `TargetCapacitySpecification`:
   [TargetCapacitySpecificationRequestTypeDef](./type_defs.md#targetcapacityspecificationrequesttypedef)
 
@@ -4465,7 +4465,7 @@ Optional fields:
 - `ValidUntil`: `Union`\[`datetime`, `str`\]
 - `ReplaceUnhealthyInstances`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `Context`: `str`
 
 ## CreateFleetResultTypeDef
@@ -4492,7 +4492,7 @@ from mypy_boto3_ec2.type_defs import CreateFlowLogsRequestRequestTypeDef
 
 Required fields:
 
-- `ResourceIds`: `List`\[`str`\]
+- `ResourceIds`: `Sequence`\[`str`\]
 - `ResourceType`:
   [FlowLogsResourceTypeType](./literals.md#flowlogsresourcetypetype)
 - `TrafficType`: [TrafficTypeType](./literals.md#traffictypetype)
@@ -4508,7 +4508,7 @@ Optional fields:
 - `LogDestination`: `str`
 - `LogFormat`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MaxAggregationInterval`: `int`
 
 ## CreateFlowLogsResultTypeDef
@@ -4546,7 +4546,7 @@ Optional fields:
 - `Name`: `str`
 - `ClientToken`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateFpgaImageResultTypeDef
 
@@ -4574,12 +4574,12 @@ Required fields:
 Optional fields:
 
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `Description`: `str`
 - `DryRun`: `bool`
 - `NoReboot`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateImageRequestRequestTypeDef
 
@@ -4595,12 +4595,12 @@ Required fields:
 Optional fields:
 
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `Description`: `str`
 - `DryRun`: `bool`
 - `NoReboot`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateImageResultTypeDef
 
@@ -4625,10 +4625,10 @@ Optional fields:
 - `DryRun`: `bool`
 - `Name`: `str`
 - `TimeRanges`:
-  `List`\[[InstanceEventWindowTimeRangeRequestTypeDef](./type_defs.md#instanceeventwindowtimerangerequesttypedef)\]
+  `Sequence`\[[InstanceEventWindowTimeRangeRequestTypeDef](./type_defs.md#instanceeventwindowtimerangerequesttypedef)\]
 - `CronExpression`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateInstanceEventWindowResultTypeDef
 
@@ -4661,7 +4661,7 @@ Optional fields:
 
 - `Description`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateInstanceExportTaskResultTypeDef
 
@@ -4684,7 +4684,7 @@ from mypy_boto3_ec2.type_defs import CreateInternetGatewayRequestRequestTypeDef
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateInternetGatewayRequestServiceResourceTypeDef
@@ -4696,7 +4696,7 @@ from mypy_boto3_ec2.type_defs import CreateInternetGatewayRequestServiceResource
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateInternetGatewayResultTypeDef
@@ -4727,7 +4727,7 @@ Optional fields:
 - `DryRun`: `bool`
 - `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateKeyPairRequestServiceResourceTypeDef
 
@@ -4744,7 +4744,7 @@ Optional fields:
 - `DryRun`: `bool`
 - `KeyType`: [KeyTypeType](./literals.md#keytypetype)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateLaunchTemplateRequestRequestTypeDef
 
@@ -4764,7 +4764,7 @@ Optional fields:
 - `ClientToken`: `str`
 - `VersionDescription`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateLaunchTemplateResultTypeDef
 
@@ -4858,7 +4858,7 @@ Required fields:
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateLocalGatewayRouteTableVpcAssociationResultTypeDef
@@ -4890,9 +4890,9 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `Entries`:
-  `List`\[[AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef)\]
+  `Sequence`\[[AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ClientToken`: `str`
 
 ## CreateManagedPrefixListResultTypeDef
@@ -4924,7 +4924,7 @@ Optional fields:
 - `ClientToken`: `str`
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ConnectivityType`:
   [ConnectivityTypeType](./literals.md#connectivitytypetype)
 
@@ -4998,7 +4998,7 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateNetworkAclRequestServiceResourceTypeDef
 
@@ -5014,7 +5014,7 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateNetworkAclRequestVpcTypeDef
 
@@ -5026,7 +5026,7 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateNetworkAclResultTypeDef
 
@@ -5059,7 +5059,7 @@ Optional fields:
 - `DestinationIp`: `str`
 - `DestinationPort`: `int`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateNetworkInsightsPathResultTypeDef
@@ -5120,24 +5120,24 @@ Optional fields:
 
 - `Description`: `str`
 - `DryRun`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+  `Sequence`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
+  `Sequence`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
 - `Ipv4Prefixes`:
-  `List`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
+  `Sequence`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
 - `Ipv4PrefixCount`: `int`
 - `Ipv6Prefixes`:
-  `List`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
+  `Sequence`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
 - `Ipv6PrefixCount`: `int`
 - `InterfaceType`:
   [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ClientToken`: `str`
 
 ## CreateNetworkInterfaceRequestServiceResourceTypeDef
@@ -5154,24 +5154,24 @@ Optional fields:
 
 - `Description`: `str`
 - `DryRun`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+  `Sequence`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
+  `Sequence`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
 - `Ipv4Prefixes`:
-  `List`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
+  `Sequence`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
 - `Ipv4PrefixCount`: `int`
 - `Ipv6Prefixes`:
-  `List`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
+  `Sequence`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
 - `Ipv6PrefixCount`: `int`
 - `InterfaceType`:
   [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ClientToken`: `str`
 
 ## CreateNetworkInterfaceRequestSubnetTypeDef
@@ -5184,24 +5184,24 @@ Optional fields:
 
 - `Description`: `str`
 - `DryRun`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+  `Sequence`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
+  `Sequence`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
 - `Ipv4Prefixes`:
-  `List`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
+  `Sequence`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
 - `Ipv4PrefixCount`: `int`
 - `Ipv6Prefixes`:
-  `List`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
+  `Sequence`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
 - `Ipv6PrefixCount`: `int`
 - `InterfaceType`:
   [NetworkInterfaceCreationTypeType](./literals.md#networkinterfacecreationtypetype)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `ClientToken`: `str`
 
 ## CreateNetworkInterfaceResultTypeDef
@@ -5231,7 +5231,7 @@ Optional fields:
 - `Strategy`: [PlacementStrategyType](./literals.md#placementstrategytype)
 - `PartitionCount`: `int`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreatePlacementGroupRequestServiceResourceTypeDef
 
@@ -5246,7 +5246,7 @@ Optional fields:
 - `Strategy`: [PlacementStrategyType](./literals.md#placementstrategytype)
 - `PartitionCount`: `int`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreatePlacementGroupResultTypeDef
 
@@ -5277,7 +5277,7 @@ Optional fields:
 - `ClientToken`: `str`
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateReplaceRootVolumeTaskResultTypeDef
 
@@ -5303,7 +5303,7 @@ Required fields:
 - `ClientToken`: `str`
 - `InstanceCount`: `int`
 - `PriceSchedules`:
-  `List`\[[PriceScheduleSpecificationTypeDef](./type_defs.md#priceschedulespecificationtypedef)\]
+  `Sequence`\[[PriceScheduleSpecificationTypeDef](./type_defs.md#priceschedulespecificationtypedef)\]
 - `ReservedInstancesId`: `str`
 
 ## CreateReservedInstancesListingResultTypeDef
@@ -5334,7 +5334,7 @@ Optional fields:
 
 - `Name`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateRestoreImageTaskResultTypeDef
@@ -5425,7 +5425,7 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateRouteTableRequestServiceResourceTypeDef
 
@@ -5441,7 +5441,7 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateRouteTableRequestVpcTypeDef
 
@@ -5453,7 +5453,7 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateRouteTableResultTypeDef
 
@@ -5482,7 +5482,7 @@ Optional fields:
 
 - `VpcId`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateSecurityGroupRequestServiceResourceTypeDef
@@ -5500,7 +5500,7 @@ Optional fields:
 
 - `VpcId`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateSecurityGroupRequestVpcTypeDef
@@ -5517,7 +5517,7 @@ Required fields:
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateSecurityGroupResultTypeDef
@@ -5548,7 +5548,7 @@ Optional fields:
 - `Description`: `str`
 - `OutpostArn`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateSnapshotRequestServiceResourceTypeDef
@@ -5566,7 +5566,7 @@ Optional fields:
 - `Description`: `str`
 - `OutpostArn`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateSnapshotRequestVolumeTypeDef
@@ -5580,7 +5580,7 @@ Optional fields:
 - `Description`: `str`
 - `OutpostArn`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateSnapshotsRequestRequestTypeDef
@@ -5599,7 +5599,7 @@ Optional fields:
 - `Description`: `str`
 - `OutpostArn`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `CopyTagsFromSource`: `Literal['volume']` (see
   [CopyTagsFromSourceType](./literals.md#copytagsfromsourcetype))
@@ -5659,7 +5659,7 @@ Required fields:
 Optional fields:
 
 - `S3ObjectTags`:
-  `List`\[[S3ObjectTagTypeDef](./type_defs.md#s3objecttagtypedef)\]
+  `Sequence`\[[S3ObjectTagTypeDef](./type_defs.md#s3objecttagtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateStoreImageTaskResultTypeDef
@@ -5690,7 +5690,7 @@ Required fields:
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `Description`: `str`
 - `DryRun`: `bool`
 
@@ -5721,7 +5721,7 @@ Required fields:
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
 - `Ipv6CidrBlock`: `str`
@@ -5742,7 +5742,7 @@ Required fields:
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
 - `Ipv6CidrBlock`: `str`
@@ -5762,7 +5762,7 @@ Required fields:
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
 - `Ipv6CidrBlock`: `str`
@@ -5789,7 +5789,7 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestDhcpOptionsTypeDef
 
 Required fields:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5803,7 +5803,7 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestImageTypeDef
 
 Required fields:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5817,7 +5817,7 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestInstanceTypeDef
 
 Required fields:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5831,7 +5831,7 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestInternetGatewayTypeDef
 
 Required fields:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5845,7 +5845,7 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestNetworkAclTypeDef
 
 Required fields:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5859,7 +5859,7 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestNetworkInterfaceTypeDef
 
 Required fields:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5873,8 +5873,8 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestRequestTypeDef
 
 Required fields:
 
-- `Resources`: `List`\[`Any`\]
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Resources`: `Sequence`\[`Any`\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5888,7 +5888,7 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestRouteTableTypeDef
 
 Required fields:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5902,7 +5902,7 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestSecurityGroupTypeDef
 
 Required fields:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5916,8 +5916,8 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestServiceResourceTypeDef
 
 Required fields:
 
-- `Resources`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Resources`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Optional fields:
 
@@ -5931,7 +5931,7 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestSnapshotTypeDef
 
 Required fields:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5945,7 +5945,7 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestSubnetTypeDef
 
 Required fields:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5959,7 +5959,7 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestVolumeTypeDef
 
 Required fields:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5973,7 +5973,7 @@ from mypy_boto3_ec2.type_defs import CreateTagsRequestVpcTypeDef
 
 Required fields:
 
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 Optional fields:
 
@@ -5989,7 +5989,7 @@ Optional fields:
 
 - `Description`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `ClientToken`: `str`
 
@@ -6068,7 +6068,7 @@ Optional fields:
 - `VirtualNetworkId`: `int`
 - `Description`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `ClientToken`: `str`
 
@@ -6098,7 +6098,7 @@ Optional fields:
 - `NetworkLoadBalancerArn`: `str`
 - `Description`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 - `ClientToken`: `str`
 
@@ -6126,7 +6126,7 @@ Required fields:
 
 - `TransitGatewayAttachmentId`: `str`
 - `PeerAddress`: `str`
-- `InsideCidrBlocks`: `List`\[`str`\]
+- `InsideCidrBlocks`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -6134,7 +6134,7 @@ Optional fields:
 - `BgpOptions`:
   [TransitGatewayConnectRequestBgpOptionsTypeDef](./type_defs.md#transitgatewayconnectrequestbgpoptionstypedef)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateTransitGatewayConnectPeerResultTypeDef
@@ -6176,7 +6176,7 @@ Required fields:
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateTransitGatewayConnectResultTypeDef
@@ -6222,7 +6222,7 @@ Optional fields:
 - `Options`:
   [CreateTransitGatewayMulticastDomainRequestOptionsTypeDef](./type_defs.md#createtransitgatewaymulticastdomainrequestoptionstypedef)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateTransitGatewayMulticastDomainResultTypeDef
@@ -6254,7 +6254,7 @@ Required fields:
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateTransitGatewayPeeringAttachmentResultTypeDef
@@ -6312,7 +6312,7 @@ Optional fields:
 - `Options`:
   [TransitGatewayRequestOptionsTypeDef](./type_defs.md#transitgatewayrequestoptionstypedef)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateTransitGatewayResultTypeDef
@@ -6371,7 +6371,7 @@ Required fields:
 Optional fields:
 
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateTransitGatewayRouteTableResultTypeDef
@@ -6410,14 +6410,14 @@ Required fields:
 
 - `TransitGatewayId`: `str`
 - `VpcId`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `Options`:
   [CreateTransitGatewayVpcAttachmentRequestOptionsTypeDef](./type_defs.md#createtransitgatewayvpcattachmentrequestoptionstypedef)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `DryRun`: `bool`
 
 ## CreateTransitGatewayVpcAttachmentResultTypeDef
@@ -6442,9 +6442,9 @@ from mypy_boto3_ec2.type_defs import CreateVolumePermissionModificationsTypeDef
 Optional fields:
 
 - `Add`:
-  `List`\[[CreateVolumePermissionTypeDef](./type_defs.md#createvolumepermissiontypedef)\]
+  `Sequence`\[[CreateVolumePermissionTypeDef](./type_defs.md#createvolumepermissiontypedef)\]
 - `Remove`:
-  `List`\[[CreateVolumePermissionTypeDef](./type_defs.md#createvolumepermissiontypedef)\]
+  `Sequence`\[[CreateVolumePermissionTypeDef](./type_defs.md#createvolumepermissiontypedef)\]
 
 ## CreateVolumePermissionTypeDef
 
@@ -6479,7 +6479,7 @@ Optional fields:
 - `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MultiAttachEnabled`: `bool`
 - `Throughput`: `int`
 - `ClientToken`: `str`
@@ -6505,7 +6505,7 @@ Optional fields:
 - `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MultiAttachEnabled`: `bool`
 - `Throughput`: `int`
 - `ClientToken`: `str`
@@ -6519,7 +6519,7 @@ from mypy_boto3_ec2.type_defs import CreateVpcEndpointConnectionNotificationRequ
 Required fields:
 
 - `ConnectionNotificationArn`: `str`
-- `ConnectionEvents`: `List`\[`str`\]
+- `ConnectionEvents`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -6558,13 +6558,13 @@ Optional fields:
 - `DryRun`: `bool`
 - `VpcEndpointType`: [VpcEndpointTypeType](./literals.md#vpcendpointtypetype)
 - `PolicyDocument`: `str`
-- `RouteTableIds`: `List`\[`str`\]
-- `SubnetIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `RouteTableIds`: `Sequence`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `ClientToken`: `str`
 - `PrivateDnsEnabled`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateVpcEndpointResultTypeDef
 
@@ -6590,11 +6590,11 @@ Optional fields:
 - `DryRun`: `bool`
 - `AcceptanceRequired`: `bool`
 - `PrivateDnsName`: `str`
-- `NetworkLoadBalancerArns`: `List`\[`str`\]
-- `GatewayLoadBalancerArns`: `List`\[`str`\]
+- `NetworkLoadBalancerArns`: `Sequence`\[`str`\]
+- `GatewayLoadBalancerArns`: `Sequence`\[`str`\]
 - `ClientToken`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateVpcEndpointServiceConfigurationResultTypeDef
 
@@ -6624,7 +6624,7 @@ Optional fields:
 - `VpcId`: `str`
 - `PeerRegion`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateVpcPeeringConnectionRequestServiceResourceTypeDef
 
@@ -6640,7 +6640,7 @@ Optional fields:
 - `VpcId`: `str`
 - `PeerRegion`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateVpcPeeringConnectionRequestVpcTypeDef
 
@@ -6655,7 +6655,7 @@ Optional fields:
 - `PeerVpcId`: `str`
 - `PeerRegion`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateVpcPeeringConnectionResultTypeDef
 
@@ -6689,7 +6689,7 @@ Optional fields:
 - `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `Ipv6CidrBlockNetworkBorderGroup`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateVpcRequestServiceResourceTypeDef
 
@@ -6710,7 +6710,7 @@ Optional fields:
 - `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `Ipv6CidrBlockNetworkBorderGroup`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateVpcResultTypeDef
 
@@ -6743,7 +6743,7 @@ Optional fields:
 - `Options`:
   [VpnConnectionOptionsSpecificationTypeDef](./type_defs.md#vpnconnectionoptionsspecificationtypedef)
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## CreateVpnConnectionResultTypeDef
 
@@ -6783,7 +6783,7 @@ Optional fields:
 
 - `AvailabilityZone`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AmazonSideAsn`: `int`
 - `DryRun`: `bool`
 
@@ -7025,7 +7025,7 @@ from mypy_boto3_ec2.type_defs import DeleteFleetsRequestRequestTypeDef
 
 Required fields:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `TerminateInstances`: `bool`
 
 Optional fields:
@@ -7055,7 +7055,7 @@ from mypy_boto3_ec2.type_defs import DeleteFlowLogsRequestRequestTypeDef
 
 Required fields:
 
-- `FlowLogIds`: `List`\[`str`\]
+- `FlowLogIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -7219,7 +7219,7 @@ from mypy_boto3_ec2.type_defs import DeleteLaunchTemplateVersionsRequestRequestT
 
 Required fields:
 
-- `Versions`: `List`\[`str`\]
+- `Versions`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -7576,7 +7576,7 @@ from mypy_boto3_ec2.type_defs import DeleteQueuedReservedInstancesRequestRequest
 
 Required fields:
 
-- `ReservedInstancesIds`: `List`\[`str`\]
+- `ReservedInstancesIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -7766,12 +7766,12 @@ from mypy_boto3_ec2.type_defs import DeleteTagsRequestRequestTypeDef
 
 Required fields:
 
-- `Resources`: `List`\[`Any`\]
+- `Resources`: `Sequence`\[`Any`\]
 
 Optional fields:
 
 - `DryRun`: `bool`
-- `Tags`: `Optional`\[`List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
+- `Tags`: `Optional`\[`Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]\]
 
 ## DeleteTagsRequestTagTypeDef
 
@@ -8164,7 +8164,7 @@ from mypy_boto3_ec2.type_defs import DeleteVpcEndpointConnectionNotificationsReq
 
 Required fields:
 
-- `ConnectionNotificationIds`: `List`\[`str`\]
+- `ConnectionNotificationIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -8191,7 +8191,7 @@ from mypy_boto3_ec2.type_defs import DeleteVpcEndpointServiceConfigurationsReque
 
 Required fields:
 
-- `ServiceIds`: `List`\[`str`\]
+- `ServiceIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -8218,7 +8218,7 @@ from mypy_boto3_ec2.type_defs import DeleteVpcEndpointsRequestRequestTypeDef
 
 Required fields:
 
-- `VpcEndpointIds`: `List`\[`str`\]
+- `VpcEndpointIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -8420,7 +8420,7 @@ from mypy_boto3_ec2.type_defs import DeregisterInstanceTagAttributeRequestTypeDe
 Optional fields:
 
 - `IncludeAllTagsOfInstance`: `bool`
-- `InstanceTagKeys`: `List`\[`str`\]
+- `InstanceTagKeys`: `Sequence`\[`str`\]
 
 ## DeregisterTransitGatewayMulticastGroupMembersRequestRequestTypeDef
 
@@ -8432,7 +8432,7 @@ Optional fields:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `GroupIpAddress`: `str`
-- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## DeregisterTransitGatewayMulticastGroupMembersResultTypeDef
@@ -8458,7 +8458,7 @@ Optional fields:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `GroupIpAddress`: `str`
-- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## DeregisterTransitGatewayMulticastGroupSourcesResultTypeDef
@@ -8483,7 +8483,7 @@ from mypy_boto3_ec2.type_defs import DescribeAccountAttributesRequestRequestType
 Optional fields:
 
 - `AttributeNames`:
-  `List`\[[AccountAttributeNameType](./literals.md#accountattributenametype)\]
+  `Sequence`\[[AccountAttributeNameType](./literals.md#accountattributenametype)\]
 - `DryRun`: `bool`
 
 ## DescribeAccountAttributesResultTypeDef
@@ -8507,7 +8507,7 @@ from mypy_boto3_ec2.type_defs import DescribeAddressesAttributeRequestRequestTyp
 
 Optional fields:
 
-- `AllocationIds`: `List`\[`str`\]
+- `AllocationIds`: `Sequence`\[`str`\]
 - `Attribute`: `Literal['domain-name']` (see
   [AddressAttributeNameType](./literals.md#addressattributenametype))
 - `NextToken`: `str`
@@ -8536,9 +8536,9 @@ from mypy_boto3_ec2.type_defs import DescribeAddressesRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PublicIps`: `List`\[`str`\]
-- `AllocationIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PublicIps`: `Sequence`\[`str`\]
+- `AllocationIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## DescribeAddressesResultTypeDef
@@ -8584,9 +8584,9 @@ from mypy_boto3_ec2.type_defs import DescribeAvailabilityZonesRequestRequestType
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ZoneNames`: `List`\[`str`\]
-- `ZoneIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ZoneNames`: `Sequence`\[`str`\]
+- `ZoneIds`: `Sequence`\[`str`\]
 - `AllAvailabilityZones`: `bool`
 - `DryRun`: `bool`
 
@@ -8611,8 +8611,8 @@ from mypy_boto3_ec2.type_defs import DescribeBundleTasksRequestRequestTypeDef
 
 Optional fields:
 
-- `BundleIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `BundleIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 
 ## DescribeBundleTasksResultTypeDef
@@ -8664,10 +8664,10 @@ from mypy_boto3_ec2.type_defs import DescribeCapacityReservationsRequestRequestT
 
 Optional fields:
 
-- `CapacityReservationIds`: `List`\[`str`\]
+- `CapacityReservationIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 
 ## DescribeCapacityReservationsResultTypeDef
@@ -8692,8 +8692,8 @@ from mypy_boto3_ec2.type_defs import DescribeCarrierGatewaysRequestRequestTypeDe
 
 Optional fields:
 
-- `CarrierGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `CarrierGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -8720,9 +8720,9 @@ from mypy_boto3_ec2.type_defs import DescribeClassicLinkInstancesRequestRequestT
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -8754,7 +8754,7 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 
 ## DescribeClientVpnAuthorizationRulesResultTypeDef
@@ -8783,7 +8783,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `DryRun`: `bool`
@@ -8810,10 +8810,10 @@ from mypy_boto3_ec2.type_defs import DescribeClientVpnEndpointsRequestRequestTyp
 
 Optional fields:
 
-- `ClientVpnEndpointIds`: `List`\[`str`\]
+- `ClientVpnEndpointIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 
 ## DescribeClientVpnEndpointsResultTypeDef
@@ -8842,7 +8842,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -8873,10 +8873,10 @@ Required fields:
 
 Optional fields:
 
-- `AssociationIds`: `List`\[`str`\]
+- `AssociationIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 
 ## DescribeClientVpnTargetNetworksResultTypeDef
@@ -8901,8 +8901,8 @@ from mypy_boto3_ec2.type_defs import DescribeCoipPoolsRequestRequestTypeDef
 
 Optional fields:
 
-- `PoolIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `PoolIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -8928,7 +8928,7 @@ from mypy_boto3_ec2.type_defs import DescribeConversionTasksRequestRequestTypeDe
 
 Optional fields:
 
-- `ConversionTaskIds`: `List`\[`str`\]
+- `ConversionTaskIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## DescribeConversionTasksResultTypeDef
@@ -8952,8 +8952,8 @@ from mypy_boto3_ec2.type_defs import DescribeCustomerGatewaysRequestRequestTypeD
 
 Optional fields:
 
-- `CustomerGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `CustomerGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 
 ## DescribeCustomerGatewaysResultTypeDef
@@ -8977,8 +8977,8 @@ from mypy_boto3_ec2.type_defs import DescribeDhcpOptionsRequestRequestTypeDef
 
 Optional fields:
 
-- `DhcpOptionsIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DhcpOptionsIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -9006,10 +9006,10 @@ from mypy_boto3_ec2.type_defs import DescribeEgressOnlyInternetGatewaysRequestRe
 Optional fields:
 
 - `DryRun`: `bool`
-- `EgressOnlyInternetGatewayIds`: `List`\[`str`\]
+- `EgressOnlyInternetGatewayIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribeEgressOnlyInternetGatewaysResultTypeDef
 
@@ -9033,9 +9033,9 @@ from mypy_boto3_ec2.type_defs import DescribeElasticGpusRequestRequestTypeDef
 
 Optional fields:
 
-- `ElasticGpuIds`: `List`\[`str`\]
+- `ElasticGpuIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -9063,8 +9063,8 @@ from mypy_boto3_ec2.type_defs import DescribeExportImageTasksRequestRequestTypeD
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ExportImageTaskIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ExportImageTaskIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -9090,8 +9090,8 @@ from mypy_boto3_ec2.type_defs import DescribeExportTasksRequestRequestTypeDef
 
 Optional fields:
 
-- `ExportTaskIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ExportTaskIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribeExportTasksResultTypeDef
 
@@ -9135,7 +9135,7 @@ from mypy_boto3_ec2.type_defs import DescribeFastSnapshotRestoresRequestRequestT
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -9218,7 +9218,7 @@ Optional fields:
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribeFleetInstancesResultTypeDef
 
@@ -9262,8 +9262,8 @@ Optional fields:
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `FleetIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FleetIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribeFleetsResultTypeDef
 
@@ -9287,8 +9287,8 @@ from mypy_boto3_ec2.type_defs import DescribeFlowLogsRequestRequestTypeDef
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `FlowLogIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FlowLogIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -9343,9 +9343,9 @@ from mypy_boto3_ec2.type_defs import DescribeFpgaImagesRequestRequestTypeDef
 Optional fields:
 
 - `DryRun`: `bool`
-- `FpgaImageIds`: `List`\[`str`\]
-- `Owners`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FpgaImageIds`: `Sequence`\[`str`\]
+- `Owners`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -9370,7 +9370,7 @@ from mypy_boto3_ec2.type_defs import DescribeHostReservationOfferingsRequestRequ
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxDuration`: `int`
 - `MaxResults`: `int`
 - `MinDuration`: `int`
@@ -9399,8 +9399,8 @@ from mypy_boto3_ec2.type_defs import DescribeHostReservationsRequestRequestTypeD
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `HostReservationIdSet`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `HostReservationIdSet`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -9426,8 +9426,8 @@ from mypy_boto3_ec2.type_defs import DescribeHostsRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `HostIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `HostIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -9452,8 +9452,8 @@ from mypy_boto3_ec2.type_defs import DescribeIamInstanceProfileAssociationsReque
 
 Optional fields:
 
-- `AssociationIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `AssociationIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -9556,10 +9556,10 @@ from mypy_boto3_ec2.type_defs import DescribeImagesRequestRequestTypeDef
 
 Optional fields:
 
-- `ExecutableUsers`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImageIds`: `List`\[`str`\]
-- `Owners`: `List`\[`str`\]
+- `ExecutableUsers`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImageIds`: `Sequence`\[`str`\]
+- `Owners`: `Sequence`\[`str`\]
 - `IncludeDeprecated`: `bool`
 - `DryRun`: `bool`
 
@@ -9584,8 +9584,8 @@ from mypy_boto3_ec2.type_defs import DescribeImportImageTasksRequestRequestTypeD
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImportTaskIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImportTaskIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -9612,8 +9612,8 @@ from mypy_boto3_ec2.type_defs import DescribeImportSnapshotTasksRequestRequestTy
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImportTaskIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ImportTaskIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -9671,8 +9671,8 @@ from mypy_boto3_ec2.type_defs import DescribeInstanceCreditSpecificationsRequest
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -9722,8 +9722,8 @@ from mypy_boto3_ec2.type_defs import DescribeInstanceEventWindowsRequestRequestT
 Optional fields:
 
 - `DryRun`: `bool`
-- `InstanceEventWindowIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceEventWindowIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -9749,8 +9749,8 @@ from mypy_boto3_ec2.type_defs import DescribeInstanceStatusRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -9780,7 +9780,7 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `LocationType`: [LocationTypeType](./literals.md#locationtypetype)
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -9807,8 +9807,9 @@ from mypy_boto3_ec2.type_defs import DescribeInstanceTypesRequestRequestTypeDef
 Optional fields:
 
 - `DryRun`: `bool`
-- `InstanceTypes`: `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceTypes`:
+  `Sequence`\[[InstanceTypeType](./literals.md#instancetypetype)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -9834,8 +9835,8 @@ from mypy_boto3_ec2.type_defs import DescribeInstancesRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -9862,9 +9863,9 @@ from mypy_boto3_ec2.type_defs import DescribeInternetGatewaysRequestRequestTypeD
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `InternetGatewayIds`: `List`\[`str`\]
+- `InternetGatewayIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -9890,11 +9891,11 @@ from mypy_boto3_ec2.type_defs import DescribeIpv6PoolsRequestRequestTypeDef
 
 Optional fields:
 
-- `PoolIds`: `List`\[`str`\]
+- `PoolIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribeIpv6PoolsResultTypeDef
 
@@ -9917,9 +9918,9 @@ from mypy_boto3_ec2.type_defs import DescribeKeyPairsRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `KeyNames`: `List`\[`str`\]
-- `KeyPairIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `KeyNames`: `Sequence`\[`str`\]
+- `KeyPairIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## DescribeKeyPairsResultTypeDef
@@ -9945,12 +9946,12 @@ Optional fields:
 - `DryRun`: `bool`
 - `LaunchTemplateId`: `str`
 - `LaunchTemplateName`: `str`
-- `Versions`: `List`\[`str`\]
+- `Versions`: `Sequence`\[`str`\]
 - `MinVersion`: `str`
 - `MaxVersion`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribeLaunchTemplateVersionsResultTypeDef
 
@@ -9975,9 +9976,9 @@ from mypy_boto3_ec2.type_defs import DescribeLaunchTemplatesRequestRequestTypeDe
 Optional fields:
 
 - `DryRun`: `bool`
-- `LaunchTemplateIds`: `List`\[`str`\]
-- `LaunchTemplateNames`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LaunchTemplateIds`: `Sequence`\[`str`\]
+- `LaunchTemplateNames`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -10003,8 +10004,9 @@ from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTableVirtualInterf
 
 Optional fields:
 
-- `LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayRouteTableVirtualInterfaceGroupAssociationIds`:
+  `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -10031,8 +10033,8 @@ from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTableVpcAssociatio
 
 Optional fields:
 
-- `LocalGatewayRouteTableVpcAssociationIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayRouteTableVpcAssociationIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -10059,8 +10061,8 @@ from mypy_boto3_ec2.type_defs import DescribeLocalGatewayRouteTablesRequestReque
 
 Optional fields:
 
-- `LocalGatewayRouteTableIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayRouteTableIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -10087,8 +10089,8 @@ from mypy_boto3_ec2.type_defs import DescribeLocalGatewayVirtualInterfaceGroupsR
 
 Optional fields:
 
-- `LocalGatewayVirtualInterfaceGroupIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayVirtualInterfaceGroupIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -10115,8 +10117,8 @@ from mypy_boto3_ec2.type_defs import DescribeLocalGatewayVirtualInterfacesReques
 
 Optional fields:
 
-- `LocalGatewayVirtualInterfaceIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayVirtualInterfaceIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -10143,8 +10145,8 @@ from mypy_boto3_ec2.type_defs import DescribeLocalGatewaysRequestRequestTypeDef
 
 Optional fields:
 
-- `LocalGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LocalGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -10172,10 +10174,10 @@ from mypy_boto3_ec2.type_defs import DescribeManagedPrefixListsRequestRequestTyp
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `PrefixListIds`: `List`\[`str`\]
+- `PrefixListIds`: `Sequence`\[`str`\]
 
 ## DescribeManagedPrefixListsResultTypeDef
 
@@ -10199,11 +10201,11 @@ from mypy_boto3_ec2.type_defs import DescribeMovingAddressesRequestRequestTypeDe
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `PublicIps`: `List`\[`str`\]
+- `PublicIps`: `Sequence`\[`str`\]
 
 ## DescribeMovingAddressesResultTypeDef
 
@@ -10228,9 +10230,9 @@ from mypy_boto3_ec2.type_defs import DescribeNatGatewaysRequestRequestTypeDef
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
-- `NatGatewayIds`: `List`\[`str`\]
+- `NatGatewayIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 ## DescribeNatGatewaysResultTypeDef
@@ -10255,9 +10257,9 @@ from mypy_boto3_ec2.type_defs import DescribeNetworkAclsRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `NetworkAclIds`: `List`\[`str`\]
+- `NetworkAclIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -10283,11 +10285,11 @@ from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsAnalysesRequestReque
 
 Optional fields:
 
-- `NetworkInsightsAnalysisIds`: `List`\[`str`\]
+- `NetworkInsightsAnalysisIds`: `Sequence`\[`str`\]
 - `NetworkInsightsPathId`: `str`
 - `AnalysisStartTime`: `Union`\[`datetime`, `str`\]
 - `AnalysisEndTime`: `Union`\[`datetime`, `str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `DryRun`: `bool`
 - `NextToken`: `str`
@@ -10314,8 +10316,8 @@ from mypy_boto3_ec2.type_defs import DescribeNetworkInsightsPathsRequestRequestT
 
 Optional fields:
 
-- `NetworkInsightsPathIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NetworkInsightsPathIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `DryRun`: `bool`
 - `NextToken`: `str`
@@ -10389,8 +10391,8 @@ from mypy_boto3_ec2.type_defs import DescribeNetworkInterfacePermissionsRequestR
 
 Optional fields:
 
-- `NetworkInterfacePermissionIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `NetworkInterfacePermissionIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -10416,9 +10418,9 @@ from mypy_boto3_ec2.type_defs import DescribeNetworkInterfacesRequestRequestType
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -10444,10 +10446,10 @@ from mypy_boto3_ec2.type_defs import DescribePlacementGroupsRequestRequestTypeDe
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `GroupNames`: `List`\[`str`\]
-- `GroupIds`: `List`\[`str`\]
+- `GroupNames`: `Sequence`\[`str`\]
+- `GroupIds`: `Sequence`\[`str`\]
 
 ## DescribePlacementGroupsResultTypeDef
 
@@ -10471,10 +10473,10 @@ from mypy_boto3_ec2.type_defs import DescribePrefixListsRequestRequestTypeDef
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `PrefixListIds`: `List`\[`str`\]
+- `PrefixListIds`: `Sequence`\[`str`\]
 
 ## DescribePrefixListsResultTypeDef
 
@@ -10499,7 +10501,7 @@ from mypy_boto3_ec2.type_defs import DescribePrincipalIdFormatRequestRequestType
 Optional fields:
 
 - `DryRun`: `bool`
-- `Resources`: `List`\[`str`\]
+- `Resources`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -10525,10 +10527,10 @@ from mypy_boto3_ec2.type_defs import DescribePublicIpv4PoolsRequestRequestTypeDe
 
 Optional fields:
 
-- `PoolIds`: `List`\[`str`\]
+- `PoolIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## DescribePublicIpv4PoolsResultTypeDef
 
@@ -10552,8 +10554,8 @@ from mypy_boto3_ec2.type_defs import DescribeRegionsRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `RegionNames`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `RegionNames`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `AllRegions`: `bool`
 
@@ -10577,8 +10579,8 @@ from mypy_boto3_ec2.type_defs import DescribeReplaceRootVolumeTasksRequestReques
 
 Optional fields:
 
-- `ReplaceRootVolumeTaskIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ReplaceRootVolumeTaskIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -10605,7 +10607,7 @@ from mypy_boto3_ec2.type_defs import DescribeReservedInstancesListingsRequestReq
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `ReservedInstancesId`: `str`
 - `ReservedInstancesListingId`: `str`
 
@@ -10630,8 +10632,8 @@ from mypy_boto3_ec2.type_defs import DescribeReservedInstancesModificationsReque
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ReservedInstancesModificationIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ReservedInstancesModificationIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 ## DescribeReservedInstancesModificationsResultTypeDef
@@ -10657,7 +10659,7 @@ from mypy_boto3_ec2.type_defs import DescribeReservedInstancesOfferingsRequestRe
 Optional fields:
 
 - `AvailabilityZone`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `IncludeMarketplace`: `bool`
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `MaxDuration`: `int`
@@ -10666,7 +10668,7 @@ Optional fields:
 - `OfferingClass`: [OfferingClassTypeType](./literals.md#offeringclasstypetype)
 - `ProductDescription`:
   [RIProductDescriptionType](./literals.md#riproductdescriptiontype)
-- `ReservedInstancesOfferingIds`: `List`\[`str`\]
+- `ReservedInstancesOfferingIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `InstanceTenancy`: [TenancyType](./literals.md#tenancytype)
 - `MaxResults`: `int`
@@ -10696,9 +10698,9 @@ from mypy_boto3_ec2.type_defs import DescribeReservedInstancesRequestRequestType
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `OfferingClass`: [OfferingClassTypeType](./literals.md#offeringclasstypetype)
-- `ReservedInstancesIds`: `List`\[`str`\]
+- `ReservedInstancesIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `OfferingType`:
   [OfferingTypeValuesType](./literals.md#offeringtypevaluestype)
@@ -10724,9 +10726,9 @@ from mypy_boto3_ec2.type_defs import DescribeRouteTablesRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `RouteTableIds`: `List`\[`str`\]
+- `RouteTableIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -10760,7 +10762,7 @@ Required fields:
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `MaxSlotDurationInHours`: `int`
 - `MinSlotDurationInHours`: `int`
@@ -10789,10 +10791,10 @@ from mypy_boto3_ec2.type_defs import DescribeScheduledInstancesRequestRequestTyp
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `ScheduledInstanceIds`: `List`\[`str`\]
+- `ScheduledInstanceIds`: `Sequence`\[`str`\]
 - `SlotStartTimeRange`:
   [SlotStartTimeRangeRequestTypeDef](./type_defs.md#slotstarttimerangerequesttypedef)
 
@@ -10818,7 +10820,7 @@ from mypy_boto3_ec2.type_defs import DescribeSecurityGroupReferencesRequestReque
 
 Required fields:
 
-- `GroupId`: `List`\[`str`\]
+- `GroupId`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -10845,8 +10847,8 @@ from mypy_boto3_ec2.type_defs import DescribeSecurityGroupRulesRequestRequestTyp
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SecurityGroupRuleIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SecurityGroupRuleIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -10873,9 +10875,9 @@ from mypy_boto3_ec2.type_defs import DescribeSecurityGroupsRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `GroupIds`: `List`\[`str`\]
-- `GroupNames`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `GroupIds`: `Sequence`\[`str`\]
+- `GroupNames`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -10949,12 +10951,12 @@ from mypy_boto3_ec2.type_defs import DescribeSnapshotsRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `OwnerIds`: `List`\[`str`\]
-- `RestorableByUserIds`: `List`\[`str`\]
-- `SnapshotIds`: `List`\[`str`\]
+- `OwnerIds`: `Sequence`\[`str`\]
+- `RestorableByUserIds`: `Sequence`\[`str`\]
+- `SnapshotIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## DescribeSnapshotsResultTypeDef
@@ -11070,7 +11072,7 @@ Optional fields:
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `SpotFleetRequestIds`: `List`\[`str`\]
+- `SpotFleetRequestIds`: `Sequence`\[`str`\]
 
 ## DescribeSpotFleetRequestsResponseTypeDef
 
@@ -11094,9 +11096,9 @@ from mypy_boto3_ec2.type_defs import DescribeSpotInstanceRequestsRequestRequestT
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `SpotInstanceRequestIds`: `List`\[`str`\]
+- `SpotInstanceRequestIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -11122,14 +11124,15 @@ from mypy_boto3_ec2.type_defs import DescribeSpotPriceHistoryRequestRequestTypeD
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `AvailabilityZone`: `str`
 - `DryRun`: `bool`
 - `EndTime`: `Union`\[`datetime`, `str`\]
-- `InstanceTypes`: `List`\[[InstanceTypeType](./literals.md#instancetypetype)\]
+- `InstanceTypes`:
+  `Sequence`\[[InstanceTypeType](./literals.md#instancetypetype)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `ProductDescriptions`: `List`\[`str`\]
+- `ProductDescriptions`: `Sequence`\[`str`\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 
 ## DescribeSpotPriceHistoryResultTypeDef
@@ -11184,9 +11187,9 @@ from mypy_boto3_ec2.type_defs import DescribeStoreImageTasksRequestRequestTypeDe
 
 Optional fields:
 
-- `ImageIds`: `List`\[`str`\]
+- `ImageIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -11212,8 +11215,8 @@ from mypy_boto3_ec2.type_defs import DescribeSubnetsRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SubnetIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -11240,7 +11243,7 @@ from mypy_boto3_ec2.type_defs import DescribeTagsRequestRequestTypeDef
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -11266,9 +11269,9 @@ from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorFiltersRequestRequestT
 
 Optional fields:
 
-- `TrafficMirrorFilterIds`: `List`\[`str`\]
+- `TrafficMirrorFilterIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -11294,9 +11297,9 @@ from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorSessionsRequestRequest
 
 Optional fields:
 
-- `TrafficMirrorSessionIds`: `List`\[`str`\]
+- `TrafficMirrorSessionIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -11322,9 +11325,9 @@ from mypy_boto3_ec2.type_defs import DescribeTrafficMirrorTargetsRequestRequestT
 
 Optional fields:
 
-- `TrafficMirrorTargetIds`: `List`\[`str`\]
+- `TrafficMirrorTargetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -11350,8 +11353,8 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayAttachmentsRequestReq
 
 Optional fields:
 
-- `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -11378,8 +11381,8 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayConnectPeersRequestRe
 
 Optional fields:
 
-- `TransitGatewayConnectPeerIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayConnectPeerIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -11406,8 +11409,8 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayConnectsRequestReques
 
 Optional fields:
 
-- `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -11434,8 +11437,8 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayMulticastDomainsReque
 
 Optional fields:
 
-- `TransitGatewayMulticastDomainIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayMulticastDomainIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -11462,8 +11465,8 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayPeeringAttachmentsReq
 
 Optional fields:
 
-- `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -11490,8 +11493,8 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayRouteTablesRequestReq
 
 Optional fields:
 
-- `TransitGatewayRouteTableIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayRouteTableIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -11518,8 +11521,8 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewayVpcAttachmentsRequest
 
 Optional fields:
 
-- `TransitGatewayAttachmentIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayAttachmentIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -11546,8 +11549,8 @@ from mypy_boto3_ec2.type_defs import DescribeTransitGatewaysRequestRequestTypeDe
 
 Optional fields:
 
-- `TransitGatewayIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TransitGatewayIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -11574,9 +11577,9 @@ from mypy_boto3_ec2.type_defs import DescribeTrunkInterfaceAssociationsRequestRe
 
 Optional fields:
 
-- `AssociationIds`: `List`\[`str`\]
+- `AssociationIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -11647,10 +11650,10 @@ from mypy_boto3_ec2.type_defs import DescribeVolumeStatusRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `VolumeIds`: `List`\[`str`\]
+- `VolumeIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## DescribeVolumeStatusRequestVolumeTypeDef
@@ -11661,7 +11664,7 @@ from mypy_boto3_ec2.type_defs import DescribeVolumeStatusRequestVolumeTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -11689,8 +11692,8 @@ from mypy_boto3_ec2.type_defs import DescribeVolumesModificationsRequestRequestT
 Optional fields:
 
 - `DryRun`: `bool`
-- `VolumeIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VolumeIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -11716,8 +11719,8 @@ from mypy_boto3_ec2.type_defs import DescribeVolumesRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VolumeIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VolumeIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -11790,7 +11793,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 
 ## DescribeVpcClassicLinkDnsSupportResultTypeDef
 
@@ -11814,9 +11817,9 @@ from mypy_boto3_ec2.type_defs import DescribeVpcClassicLinkRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 
 ## DescribeVpcClassicLinkResultTypeDef
 
@@ -11841,7 +11844,7 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `ConnectionNotificationId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -11868,7 +11871,7 @@ from mypy_boto3_ec2.type_defs import DescribeVpcEndpointConnectionsRequestReques
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -11895,8 +11898,8 @@ from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServiceConfigurationsReq
 Optional fields:
 
 - `DryRun`: `bool`
-- `ServiceIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ServiceIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -11927,7 +11930,7 @@ Required fields:
 Optional fields:
 
 - `DryRun`: `bool`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -11954,8 +11957,8 @@ from mypy_boto3_ec2.type_defs import DescribeVpcEndpointServicesRequestRequestTy
 Optional fields:
 
 - `DryRun`: `bool`
-- `ServiceNames`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `ServiceNames`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -11983,8 +11986,8 @@ from mypy_boto3_ec2.type_defs import DescribeVpcEndpointsRequestRequestTypeDef
 Optional fields:
 
 - `DryRun`: `bool`
-- `VpcEndpointIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpcEndpointIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -12010,9 +12013,9 @@ from mypy_boto3_ec2.type_defs import DescribeVpcPeeringConnectionsRequestRequest
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
-- `VpcPeeringConnectionIds`: `List`\[`str`\]
+- `VpcPeeringConnectionIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -12038,8 +12041,8 @@ from mypy_boto3_ec2.type_defs import DescribeVpcsRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpcIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpcIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -12065,8 +12068,8 @@ from mypy_boto3_ec2.type_defs import DescribeVpnConnectionsRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpnConnectionIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpnConnectionIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## DescribeVpnConnectionsResultTypeDef
@@ -12090,8 +12093,8 @@ from mypy_boto3_ec2.type_defs import DescribeVpnGatewaysRequestRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpnGatewayIds`: `List`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `VpnGatewayIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## DescribeVpnGatewaysResultTypeDef
@@ -12428,8 +12431,8 @@ from mypy_boto3_ec2.type_defs import DisableFastSnapshotRestoresRequestRequestTy
 
 Required fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
-- `SourceSnapshotIds`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
+- `SourceSnapshotIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -12810,7 +12813,7 @@ Optional fields:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `TransitGatewayAttachmentId`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## DisassociateTransitGatewayMulticastDomainResultTypeDef
@@ -12987,7 +12990,7 @@ from mypy_boto3_ec2.type_defs import DnsServersOptionsModifyStructureTypeDef
 
 Optional fields:
 
-- `CustomDnsServers`: `List`\[`str`\]
+- `CustomDnsServers`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
 
 ## EbsBlockDeviceTypeDef
@@ -13260,8 +13263,8 @@ from mypy_boto3_ec2.type_defs import EnableFastSnapshotRestoresRequestRequestTyp
 
 Required fields:
 
-- `AvailabilityZones`: `List`\[`str`\]
-- `SourceSnapshotIds`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
+- `SourceSnapshotIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -13642,7 +13645,7 @@ Optional fields:
 - `DryRun`: `bool`
 - `RoleName`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## ExportImageResultTypeDef
 
@@ -13768,7 +13771,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 
 ## ExportTransitGatewayRoutesResultTypeDef
@@ -13826,7 +13829,7 @@ from mypy_boto3_ec2.type_defs import FilterTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## FleetDataTypeDef
 
@@ -13876,7 +13879,7 @@ Optional fields:
 - `LaunchTemplateSpecification`:
   [FleetLaunchTemplateSpecificationRequestTypeDef](./type_defs.md#fleetlaunchtemplatespecificationrequesttypedef)
 - `Overrides`:
-  `List`\[[FleetLaunchTemplateOverridesRequestTypeDef](./type_defs.md#fleetlaunchtemplateoverridesrequesttypedef)\]
+  `Sequence`\[[FleetLaunchTemplateOverridesRequestTypeDef](./type_defs.md#fleetlaunchtemplateoverridesrequesttypedef)\]
 
 ## FleetLaunchTemplateConfigTypeDef
 
@@ -14206,7 +14209,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -14433,7 +14436,7 @@ from mypy_boto3_ec2.type_defs import GetHostReservationPurchasePreviewRequestReq
 
 Required fields:
 
-- `HostIdSet`: `List`\[`str`\]
+- `HostIdSet`: `Sequence`\[`str`\]
 - `OfferingId`: `str`
 
 ## GetHostReservationPurchasePreviewResultTypeDef
@@ -14586,13 +14589,13 @@ from mypy_boto3_ec2.type_defs import GetReservedInstancesExchangeQuoteRequestReq
 
 Required fields:
 
-- `ReservedInstanceIds`: `List`\[`str`\]
+- `ReservedInstanceIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `DryRun`: `bool`
 - `TargetConfigurations`:
-  `List`\[[TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef)\]
+  `Sequence`\[[TargetConfigurationRequestTypeDef](./type_defs.md#targetconfigurationrequesttypedef)\]
 
 ## GetReservedInstancesExchangeQuoteResultTypeDef
 
@@ -14652,7 +14655,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DryRun`: `bool`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -14685,7 +14688,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -14713,7 +14716,7 @@ from mypy_boto3_ec2.type_defs import GetTransitGatewayMulticastDomainAssociation
 Optional fields:
 
 - `TransitGatewayMulticastDomainId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -14744,7 +14747,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -14775,7 +14778,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -14806,7 +14809,7 @@ Required fields:
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -15236,7 +15239,7 @@ Optional fields:
 - `ClientToken`: `str`
 - `Description`: `str`
 - `DiskContainers`:
-  `List`\[[ImageDiskContainerTypeDef](./type_defs.md#imagediskcontainertypedef)\]
+  `Sequence`\[[ImageDiskContainerTypeDef](./type_defs.md#imagediskcontainertypedef)\]
 - `DryRun`: `bool`
 - `Encrypted`: `bool`
 - `Hypervisor`: `str`
@@ -15245,9 +15248,9 @@ Optional fields:
 - `Platform`: `str`
 - `RoleName`: `str`
 - `LicenseSpecifications`:
-  `List`\[[ImportImageLicenseConfigurationRequestTypeDef](./type_defs.md#importimagelicenseconfigurationrequesttypedef)\]
+  `Sequence`\[[ImportImageLicenseConfigurationRequestTypeDef](./type_defs.md#importimagelicenseconfigurationrequesttypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `UsageOperation`: `str`
 - `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
 
@@ -15319,8 +15322,8 @@ Optional fields:
 - `AdditionalInfo`: `str`
 - `Architecture`:
   [ArchitectureValuesType](./literals.md#architecturevaluestype)
-- `GroupIds`: `List`\[`str`\]
-- `GroupNames`: `List`\[`str`\]
+- `GroupIds`: `Sequence`\[`str`\]
+- `GroupNames`: `Sequence`\[`str`\]
 - `InstanceInitiatedShutdownBehavior`:
   [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
@@ -15344,7 +15347,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `DiskImages`: `List`\[[DiskImageTypeDef](./type_defs.md#diskimagetypedef)\]
+- `DiskImages`:
+  `Sequence`\[[DiskImageTypeDef](./type_defs.md#diskimagetypedef)\]
 - `DryRun`: `bool`
 - `LaunchSpecification`:
   [ImportInstanceLaunchSpecificationTypeDef](./type_defs.md#importinstancelaunchspecificationtypedef)
@@ -15410,7 +15414,7 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## ImportKeyPairRequestServiceResourceTypeDef
 
@@ -15427,7 +15431,7 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## ImportKeyPairResultTypeDef
 
@@ -15462,7 +15466,7 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `RoleName`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## ImportSnapshotResultTypeDef
 
@@ -15680,7 +15684,7 @@ from mypy_boto3_ec2.type_defs import InstanceDeleteTagsRequestTypeDef
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
 
 ## InstanceEventWindowAssociationRequestTypeDef
@@ -15691,9 +15695,9 @@ from mypy_boto3_ec2.type_defs import InstanceEventWindowAssociationRequestTypeDe
 
 Optional fields:
 
-- `InstanceIds`: `List`\[`str`\]
-- `InstanceTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DedicatedHostIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
+- `InstanceTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DedicatedHostIds`: `Sequence`\[`str`\]
 
 ## InstanceEventWindowAssociationTargetTypeDef
 
@@ -15715,9 +15719,9 @@ from mypy_boto3_ec2.type_defs import InstanceEventWindowDisassociationRequestTyp
 
 Optional fields:
 
-- `InstanceIds`: `List`\[`str`\]
-- `InstanceTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DedicatedHostIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
+- `InstanceTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `DedicatedHostIds`: `Sequence`\[`str`\]
 
 ## InstanceEventWindowStateChangeTypeDef
 
@@ -16269,7 +16273,7 @@ from mypy_boto3_ec2.type_defs import IntegrateServicesTypeDef
 Optional fields:
 
 - `AthenaIntegrations`:
-  `List`\[[AthenaIntegrationTypeDef](./type_defs.md#athenaintegrationtypedef)\]
+  `Sequence`\[[AthenaIntegrationTypeDef](./type_defs.md#athenaintegrationtypedef)\]
 
 ## InternetGatewayAttachmentTypeDef
 
@@ -16306,13 +16310,14 @@ Optional fields:
 
 - `FromPort`: `int`
 - `IpProtocol`: `str`
-- `IpRanges`: `List`\[[IpRangeTypeDef](./type_defs.md#iprangetypedef)\]
-- `Ipv6Ranges`: `List`\[[Ipv6RangeTypeDef](./type_defs.md#ipv6rangetypedef)\]
+- `IpRanges`: `Sequence`\[[IpRangeTypeDef](./type_defs.md#iprangetypedef)\]
+- `Ipv6Ranges`:
+  `Sequence`\[[Ipv6RangeTypeDef](./type_defs.md#ipv6rangetypedef)\]
 - `PrefixListIds`:
-  `List`\[[PrefixListIdTypeDef](./type_defs.md#prefixlistidtypedef)\]
+  `Sequence`\[[PrefixListIdTypeDef](./type_defs.md#prefixlistidtypedef)\]
 - `ToPort`: `int`
 - `UserIdGroupPairs`:
-  `List`\[[UserIdGroupPairTypeDef](./type_defs.md#useridgrouppairtypedef)\]
+  `Sequence`\[[UserIdGroupPairTypeDef](./type_defs.md#useridgrouppairtypedef)\]
 
 ## IpRangeTypeDef
 
@@ -16481,9 +16486,9 @@ from mypy_boto3_ec2.type_defs import LaunchPermissionModificationsTypeDef
 Optional fields:
 
 - `Add`:
-  `List`\[[LaunchPermissionTypeDef](./type_defs.md#launchpermissiontypedef)\]
+  `Sequence`\[[LaunchPermissionTypeDef](./type_defs.md#launchpermissiontypedef)\]
 - `Remove`:
-  `List`\[[LaunchPermissionTypeDef](./type_defs.md#launchpermissiontypedef)\]
+  `Sequence`\[[LaunchPermissionTypeDef](./type_defs.md#launchpermissiontypedef)\]
 
 ## LaunchPermissionTypeDef
 
@@ -16822,23 +16827,23 @@ Optional fields:
 - `DeleteOnTermination`: `bool`
 - `Description`: `str`
 - `DeviceIndex`: `int`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `InterfaceType`: `str`
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressRequestTypeDef](./type_defs.md#instanceipv6addressrequesttypedef)\]
+  `Sequence`\[[InstanceIpv6AddressRequestTypeDef](./type_defs.md#instanceipv6addressrequesttypedef)\]
 - `NetworkInterfaceId`: `str`
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddresses`:
-  `List`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
+  `Sequence`\[[PrivateIpAddressSpecificationTypeDef](./type_defs.md#privateipaddressspecificationtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
 - `SubnetId`: `str`
 - `NetworkCardIndex`: `int`
 - `Ipv4Prefixes`:
-  `List`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
+  `Sequence`\[[Ipv4PrefixSpecificationRequestTypeDef](./type_defs.md#ipv4prefixspecificationrequesttypedef)\]
 - `Ipv4PrefixCount`: `int`
 - `Ipv6Prefixes`:
-  `List`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
+  `Sequence`\[[Ipv6PrefixSpecificationRequestTypeDef](./type_defs.md#ipv6prefixspecificationrequesttypedef)\]
 - `Ipv6PrefixCount`: `int`
 
 ## LaunchTemplateInstanceNetworkInterfaceSpecificationTypeDef
@@ -16995,7 +17000,7 @@ from mypy_boto3_ec2.type_defs import LaunchTemplateTagSpecificationRequestTypeDe
 Optional fields:
 
 - `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## LaunchTemplateTagSpecificationTypeDef
 
@@ -17104,9 +17109,9 @@ from mypy_boto3_ec2.type_defs import LoadPermissionModificationsTypeDef
 Optional fields:
 
 - `Add`:
-  `List`\[[LoadPermissionRequestTypeDef](./type_defs.md#loadpermissionrequesttypedef)\]
+  `Sequence`\[[LoadPermissionRequestTypeDef](./type_defs.md#loadpermissionrequesttypedef)\]
 - `Remove`:
-  `List`\[[LoadPermissionRequestTypeDef](./type_defs.md#loadpermissionrequesttypedef)\]
+  `Sequence`\[[LoadPermissionRequestTypeDef](./type_defs.md#loadpermissionrequesttypedef)\]
 
 ## LoadPermissionRequestTypeDef
 
@@ -17380,7 +17385,7 @@ Optional fields:
 - `Description`: `str`
 - `SplitTunnel`: `bool`
 - `DryRun`: `bool`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `VpcId`: `str`
 - `SelfServicePortal`:
   [SelfServicePortalType](./literals.md#selfserviceportaltype)
@@ -17470,7 +17475,7 @@ Optional fields:
 - `ExcessCapacityTerminationPolicy`:
   [FleetExcessCapacityTerminationPolicyType](./literals.md#fleetexcesscapacityterminationpolicytype)
 - `LaunchTemplateConfigs`:
-  `List`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
+  `Sequence`\[[FleetLaunchTemplateConfigRequestTypeDef](./type_defs.md#fleetlaunchtemplateconfigrequesttypedef)\]
 - `TargetCapacitySpecification`:
   [TargetCapacitySpecificationRequestTypeDef](./type_defs.md#targetcapacityspecificationrequesttypedef)
 - `Context`: `str`
@@ -17503,9 +17508,9 @@ Optional fields:
 - `Attribute`:
   [FpgaImageAttributeNameType](./literals.md#fpgaimageattributenametype)
 - `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
-- `UserIds`: `List`\[`str`\]
-- `UserGroups`: `List`\[`str`\]
-- `ProductCodes`: `List`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
+- `UserGroups`: `Sequence`\[`str`\]
+- `ProductCodes`: `Sequence`\[`str`\]
 - `LoadPermission`:
   [LoadPermissionModificationsTypeDef](./type_defs.md#loadpermissionmodificationstypedef)
 - `Description`: `str`
@@ -17532,7 +17537,7 @@ from mypy_boto3_ec2.type_defs import ModifyHostsRequestRequestTypeDef
 
 Required fields:
 
-- `HostIds`: `List`\[`str`\]
+- `HostIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -17591,9 +17596,9 @@ Optional fields:
 - `LaunchPermission`:
   [LaunchPermissionModificationsTypeDef](./type_defs.md#launchpermissionmodificationstypedef)
 - `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
-- `ProductCodes`: `List`\[`str`\]
-- `UserGroups`: `List`\[`str`\]
-- `UserIds`: `List`\[`str`\]
+- `ProductCodes`: `Sequence`\[`str`\]
+- `UserGroups`: `Sequence`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
 - `Value`: `str`
 - `DryRun`: `bool`
 
@@ -17614,9 +17619,9 @@ Optional fields:
 - `LaunchPermission`:
   [LaunchPermissionModificationsTypeDef](./type_defs.md#launchpermissionmodificationstypedef)
 - `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
-- `ProductCodes`: `List`\[`str`\]
-- `UserGroups`: `List`\[`str`\]
-- `UserIds`: `List`\[`str`\]
+- `ProductCodes`: `Sequence`\[`str`\]
+- `UserGroups`: `Sequence`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
 - `Value`: `str`
 - `DryRun`: `bool`
 
@@ -17633,7 +17638,7 @@ Optional fields:
 - `Attribute`:
   [InstanceAttributeNameType](./literals.md#instanceattributenametype)
 - `BlockDeviceMappings`:
-  `List`\[[InstanceBlockDeviceMappingSpecificationTypeDef](./type_defs.md#instanceblockdevicemappingspecificationtypedef)\]
+  `Sequence`\[[InstanceBlockDeviceMappingSpecificationTypeDef](./type_defs.md#instanceblockdevicemappingspecificationtypedef)\]
 - `DisableApiTermination`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `DryRun`: `bool`
@@ -17641,7 +17646,7 @@ Optional fields:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `EnaSupport`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `InstanceInitiatedShutdownBehavior`:
   [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `InstanceType`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
@@ -17670,7 +17675,7 @@ Optional fields:
 - `Attribute`:
   [InstanceAttributeNameType](./literals.md#instanceattributenametype)
 - `BlockDeviceMappings`:
-  `List`\[[InstanceBlockDeviceMappingSpecificationTypeDef](./type_defs.md#instanceblockdevicemappingspecificationtypedef)\]
+  `Sequence`\[[InstanceBlockDeviceMappingSpecificationTypeDef](./type_defs.md#instanceblockdevicemappingspecificationtypedef)\]
 - `DisableApiTermination`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `DryRun`: `bool`
@@ -17678,7 +17683,7 @@ Optional fields:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 - `EnaSupport`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `InstanceInitiatedShutdownBehavior`:
   [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `InstanceType`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
@@ -17727,7 +17732,7 @@ from mypy_boto3_ec2.type_defs import ModifyInstanceCreditSpecificationRequestReq
 Required fields:
 
 - `InstanceCreditSpecifications`:
-  `List`\[[InstanceCreditSpecificationRequestTypeDef](./type_defs.md#instancecreditspecificationrequesttypedef)\]
+  `Sequence`\[[InstanceCreditSpecificationRequestTypeDef](./type_defs.md#instancecreditspecificationrequesttypedef)\]
 
 Optional fields:
 
@@ -17793,7 +17798,7 @@ Optional fields:
 - `DryRun`: `bool`
 - `Name`: `str`
 - `TimeRanges`:
-  `List`\[[InstanceEventWindowTimeRangeRequestTypeDef](./type_defs.md#instanceeventwindowtimerangerequesttypedef)\]
+  `Sequence`\[[InstanceEventWindowTimeRangeRequestTypeDef](./type_defs.md#instanceeventwindowtimerangerequesttypedef)\]
 - `CronExpression`: `str`
 
 ## ModifyInstanceEventWindowResultTypeDef
@@ -17917,9 +17922,9 @@ Optional fields:
 - `CurrentVersion`: `int`
 - `PrefixListName`: `str`
 - `AddEntries`:
-  `List`\[[AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef)\]
+  `Sequence`\[[AddPrefixListEntryTypeDef](./type_defs.md#addprefixlistentrytypedef)\]
 - `RemoveEntries`:
-  `List`\[[RemovePrefixListEntryTypeDef](./type_defs.md#removeprefixlistentrytypedef)\]
+  `Sequence`\[[RemovePrefixListEntryTypeDef](./type_defs.md#removeprefixlistentrytypedef)\]
 - `MaxEntries`: `int`
 
 ## ModifyManagedPrefixListResultTypeDef
@@ -17947,7 +17952,7 @@ Optional fields:
   [NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef)
 - `Description`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `DryRun`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `SourceDestCheck`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
@@ -17967,7 +17972,7 @@ Optional fields:
   [NetworkInterfaceAttachmentChangesTypeDef](./type_defs.md#networkinterfaceattachmentchangestypedef)
 - `Description`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `DryRun`: `bool`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `SourceDestCheck`:
   [AttributeBooleanValueTypeDef](./type_defs.md#attributebooleanvaluetypedef)
 
@@ -17979,9 +17984,9 @@ from mypy_boto3_ec2.type_defs import ModifyReservedInstancesRequestRequestTypeDe
 
 Required fields:
 
-- `ReservedInstancesIds`: `List`\[`str`\]
+- `ReservedInstancesIds`: `Sequence`\[`str`\]
 - `TargetConfigurations`:
-  `List`\[[ReservedInstancesConfigurationTypeDef](./type_defs.md#reservedinstancesconfigurationtypedef)\]
+  `Sequence`\[[ReservedInstancesConfigurationTypeDef](./type_defs.md#reservedinstancesconfigurationtypedef)\]
 
 Optional fields:
 
@@ -18009,7 +18014,7 @@ Required fields:
 
 - `GroupId`: `str`
 - `SecurityGroupRules`:
-  `List`\[[SecurityGroupRuleUpdateTypeDef](./type_defs.md#securitygroupruleupdatetypedef)\]
+  `Sequence`\[[SecurityGroupRuleUpdateTypeDef](./type_defs.md#securitygroupruleupdatetypedef)\]
 
 Optional fields:
 
@@ -18043,9 +18048,9 @@ Optional fields:
   [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
 - `CreateVolumePermission`:
   [CreateVolumePermissionModificationsTypeDef](./type_defs.md#createvolumepermissionmodificationstypedef)
-- `GroupNames`: `List`\[`str`\]
+- `GroupNames`: `Sequence`\[`str`\]
 - `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
-- `UserIds`: `List`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## ModifySnapshotAttributeRequestSnapshotTypeDef
@@ -18060,9 +18065,9 @@ Optional fields:
   [SnapshotAttributeNameType](./literals.md#snapshotattributenametype)
 - `CreateVolumePermission`:
   [CreateVolumePermissionModificationsTypeDef](./type_defs.md#createvolumepermissionmodificationstypedef)
-- `GroupNames`: `List`\[`str`\]
+- `GroupNames`: `Sequence`\[`str`\]
 - `OperationType`: [OperationTypeType](./literals.md#operationtypetype)
-- `UserIds`: `List`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## ModifySpotFleetRequestRequestRequestTypeDef
@@ -18080,7 +18085,7 @@ Optional fields:
 - `ExcessCapacityTerminationPolicy`:
   [ExcessCapacityTerminationPolicyType](./literals.md#excesscapacityterminationpolicytype)
 - `LaunchTemplateConfigs`:
-  `List`\[[LaunchTemplateConfigTypeDef](./type_defs.md#launchtemplateconfigtypedef)\]
+  `Sequence`\[[LaunchTemplateConfigTypeDef](./type_defs.md#launchtemplateconfigtypedef)\]
 - `TargetCapacity`: `int`
 - `OnDemandTargetCapacity`: `int`
 - `Context`: `str`
@@ -18129,9 +18134,9 @@ Required fields:
 
 Optional fields:
 
-- `AddNetworkServices`: `List`\[`Literal['amazon-dns']` (see
+- `AddNetworkServices`: `Sequence`\[`Literal['amazon-dns']` (see
   [TrafficMirrorNetworkServiceType](./literals.md#trafficmirrornetworkservicetype))\]
-- `RemoveNetworkServices`: `List`\[`Literal['amazon-dns']` (see
+- `RemoveNetworkServices`: `Sequence`\[`Literal['amazon-dns']` (see
   [TrafficMirrorNetworkServiceType](./literals.md#trafficmirrornetworkservicetype))\]
 - `DryRun`: `bool`
 
@@ -18174,7 +18179,7 @@ Optional fields:
 - `SourceCidrBlock`: `str`
 - `Description`: `str`
 - `RemoveFields`:
-  `List`\[[TrafficMirrorFilterRuleFieldType](./literals.md#trafficmirrorfilterrulefieldtype)\]
+  `Sequence`\[[TrafficMirrorFilterRuleFieldType](./literals.md#trafficmirrorfilterrulefieldtype)\]
 - `DryRun`: `bool`
 
 ## ModifyTrafficMirrorFilterRuleResultTypeDef
@@ -18209,7 +18214,7 @@ Optional fields:
 - `VirtualNetworkId`: `int`
 - `Description`: `str`
 - `RemoveFields`:
-  `List`\[[TrafficMirrorSessionFieldType](./literals.md#trafficmirrorsessionfieldtype)\]
+  `Sequence`\[[TrafficMirrorSessionFieldType](./literals.md#trafficmirrorsessionfieldtype)\]
 - `DryRun`: `bool`
 
 ## ModifyTrafficMirrorSessionResultTypeDef
@@ -18233,8 +18238,8 @@ from mypy_boto3_ec2.type_defs import ModifyTransitGatewayOptionsTypeDef
 
 Optional fields:
 
-- `AddTransitGatewayCidrBlocks`: `List`\[`str`\]
-- `RemoveTransitGatewayCidrBlocks`: `List`\[`str`\]
+- `AddTransitGatewayCidrBlocks`: `Sequence`\[`str`\]
+- `RemoveTransitGatewayCidrBlocks`: `Sequence`\[`str`\]
 - `VpnEcmpSupport`:
   [VpnEcmpSupportValueType](./literals.md#vpnecmpsupportvaluetype)
 - `DnsSupport`: [DnsSupportValueType](./literals.md#dnssupportvaluetype)
@@ -18332,8 +18337,8 @@ Required fields:
 
 Optional fields:
 
-- `AddSubnetIds`: `List`\[`str`\]
-- `RemoveSubnetIds`: `List`\[`str`\]
+- `AddSubnetIds`: `Sequence`\[`str`\]
+- `RemoveSubnetIds`: `Sequence`\[`str`\]
 - `Options`:
   [ModifyTransitGatewayVpcAttachmentRequestOptionsTypeDef](./type_defs.md#modifytransitgatewayvpcattachmentrequestoptionstypedef)
 - `DryRun`: `bool`
@@ -18455,7 +18460,7 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `ConnectionNotificationArn`: `str`
-- `ConnectionEvents`: `List`\[`str`\]
+- `ConnectionEvents`: `Sequence`\[`str`\]
 
 ## ModifyVpcEndpointConnectionNotificationResultTypeDef
 
@@ -18484,12 +18489,12 @@ Optional fields:
 - `DryRun`: `bool`
 - `ResetPolicy`: `bool`
 - `PolicyDocument`: `str`
-- `AddRouteTableIds`: `List`\[`str`\]
-- `RemoveRouteTableIds`: `List`\[`str`\]
-- `AddSubnetIds`: `List`\[`str`\]
-- `RemoveSubnetIds`: `List`\[`str`\]
-- `AddSecurityGroupIds`: `List`\[`str`\]
-- `RemoveSecurityGroupIds`: `List`\[`str`\]
+- `AddRouteTableIds`: `Sequence`\[`str`\]
+- `RemoveRouteTableIds`: `Sequence`\[`str`\]
+- `AddSubnetIds`: `Sequence`\[`str`\]
+- `RemoveSubnetIds`: `Sequence`\[`str`\]
+- `AddSecurityGroupIds`: `Sequence`\[`str`\]
+- `RemoveSecurityGroupIds`: `Sequence`\[`str`\]
 - `PrivateDnsEnabled`: `bool`
 
 ## ModifyVpcEndpointResultTypeDef
@@ -18520,10 +18525,10 @@ Optional fields:
 - `PrivateDnsName`: `str`
 - `RemovePrivateDnsName`: `bool`
 - `AcceptanceRequired`: `bool`
-- `AddNetworkLoadBalancerArns`: `List`\[`str`\]
-- `RemoveNetworkLoadBalancerArns`: `List`\[`str`\]
-- `AddGatewayLoadBalancerArns`: `List`\[`str`\]
-- `RemoveGatewayLoadBalancerArns`: `List`\[`str`\]
+- `AddNetworkLoadBalancerArns`: `Sequence`\[`str`\]
+- `RemoveNetworkLoadBalancerArns`: `Sequence`\[`str`\]
+- `AddGatewayLoadBalancerArns`: `Sequence`\[`str`\]
+- `RemoveGatewayLoadBalancerArns`: `Sequence`\[`str`\]
 
 ## ModifyVpcEndpointServiceConfigurationResultTypeDef
 
@@ -18550,8 +18555,8 @@ Required fields:
 Optional fields:
 
 - `DryRun`: `bool`
-- `AddAllowedPrincipals`: `List`\[`str`\]
-- `RemoveAllowedPrincipals`: `List`\[`str`\]
+- `AddAllowedPrincipals`: `Sequence`\[`str`\]
+- `RemoveAllowedPrincipals`: `Sequence`\[`str`\]
 
 ## ModifyVpcEndpointServicePermissionsResultTypeDef
 
@@ -18760,19 +18765,19 @@ Optional fields:
 - `DPDTimeoutSeconds`: `int`
 - `DPDTimeoutAction`: `str`
 - `Phase1EncryptionAlgorithms`:
-  `List`\[[Phase1EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1encryptionalgorithmsrequestlistvaluetypedef)\]
+  `Sequence`\[[Phase1EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1encryptionalgorithmsrequestlistvaluetypedef)\]
 - `Phase2EncryptionAlgorithms`:
-  `List`\[[Phase2EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2encryptionalgorithmsrequestlistvaluetypedef)\]
+  `Sequence`\[[Phase2EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2encryptionalgorithmsrequestlistvaluetypedef)\]
 - `Phase1IntegrityAlgorithms`:
-  `List`\[[Phase1IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1integrityalgorithmsrequestlistvaluetypedef)\]
+  `Sequence`\[[Phase1IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1integrityalgorithmsrequestlistvaluetypedef)\]
 - `Phase2IntegrityAlgorithms`:
-  `List`\[[Phase2IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2integrityalgorithmsrequestlistvaluetypedef)\]
+  `Sequence`\[[Phase2IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2integrityalgorithmsrequestlistvaluetypedef)\]
 - `Phase1DHGroupNumbers`:
-  `List`\[[Phase1DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase1dhgroupnumbersrequestlistvaluetypedef)\]
+  `Sequence`\[[Phase1DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase1dhgroupnumbersrequestlistvaluetypedef)\]
 - `Phase2DHGroupNumbers`:
-  `List`\[[Phase2DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase2dhgroupnumbersrequestlistvaluetypedef)\]
+  `Sequence`\[[Phase2DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase2dhgroupnumbersrequestlistvaluetypedef)\]
 - `IKEVersions`:
-  `List`\[[IKEVersionsRequestListValueTypeDef](./type_defs.md#ikeversionsrequestlistvaluetypedef)\]
+  `Sequence`\[[IKEVersionsRequestListValueTypeDef](./type_defs.md#ikeversionsrequestlistvaluetypedef)\]
 - `StartupAction`: `str`
 
 ## MonitorInstancesRequestInstanceTypeDef
@@ -18793,7 +18798,7 @@ from mypy_boto3_ec2.type_defs import MonitorInstancesRequestRequestTypeDef
 
 Required fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -19170,7 +19175,7 @@ from mypy_boto3_ec2.type_defs import NewDhcpConfigurationTypeDef
 Optional fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## OnDemandOptionsRequestTypeDef
 
@@ -19679,7 +19684,7 @@ Optional fields:
 - `Description`: `str`
 - `DryRun`: `bool`
 - `PoolTagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MultiRegion`: `bool`
 
 ## ProvisionByoipCidrResultTypeDef
@@ -19758,7 +19763,7 @@ from mypy_boto3_ec2.type_defs import PurchaseHostReservationRequestRequestTypeDe
 
 Required fields:
 
-- `HostIdSet`: `List`\[`str`\]
+- `HostIdSet`: `Sequence`\[`str`\]
 - `OfferingId`: `str`
 
 Optional fields:
@@ -19768,7 +19773,7 @@ Optional fields:
   [CurrencyCodeValuesType](./literals.md#currencycodevaluestype))
 - `LimitPrice`: `str`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## PurchaseHostReservationResultTypeDef
 
@@ -19837,7 +19842,7 @@ from mypy_boto3_ec2.type_defs import PurchaseScheduledInstancesRequestRequestTyp
 Required fields:
 
 - `PurchaseRequests`:
-  `List`\[[PurchaseRequestTypeDef](./type_defs.md#purchaserequesttypedef)\]
+  `Sequence`\[[PurchaseRequestTypeDef](./type_defs.md#purchaserequesttypedef)\]
 
 Optional fields:
 
@@ -19893,7 +19898,7 @@ from mypy_boto3_ec2.type_defs import RebootInstancesRequestRequestTypeDef
 
 Required fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -19953,12 +19958,12 @@ Optional fields:
 - `Architecture`:
   [ArchitectureValuesType](./literals.md#architecturevaluestype)
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `Description`: `str`
 - `DryRun`: `bool`
 - `EnaSupport`: `bool`
 - `KernelId`: `str`
-- `BillingProducts`: `List`\[`str`\]
+- `BillingProducts`: `Sequence`\[`str`\]
 - `RamdiskId`: `str`
 - `RootDeviceName`: `str`
 - `SriovNetSupport`: `str`
@@ -19981,12 +19986,12 @@ Optional fields:
 - `Architecture`:
   [ArchitectureValuesType](./literals.md#architecturevaluestype)
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `Description`: `str`
 - `DryRun`: `bool`
 - `EnaSupport`: `bool`
 - `KernelId`: `str`
-- `BillingProducts`: `List`\[`str`\]
+- `BillingProducts`: `Sequence`\[`str`\]
 - `RamdiskId`: `str`
 - `RootDeviceName`: `str`
 - `SriovNetSupport`: `str`
@@ -20039,7 +20044,7 @@ from mypy_boto3_ec2.type_defs import RegisterInstanceTagAttributeRequestTypeDef
 Optional fields:
 
 - `IncludeAllTagsOfInstance`: `bool`
-- `InstanceTagKeys`: `List`\[`str`\]
+- `InstanceTagKeys`: `Sequence`\[`str`\]
 
 ## RegisterTransitGatewayMulticastGroupMembersRequestRequestTypeDef
 
@@ -20051,7 +20056,7 @@ Optional fields:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `GroupIpAddress`: `str`
-- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## RegisterTransitGatewayMulticastGroupMembersResultTypeDef
@@ -20077,7 +20082,7 @@ Optional fields:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `GroupIpAddress`: `str`
-- `NetworkInterfaceIds`: `List`\[`str`\]
+- `NetworkInterfaceIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## RegisterTransitGatewayMulticastGroupSourcesResultTypeDef
@@ -20103,7 +20108,7 @@ Optional fields:
 
 - `TransitGatewayMulticastDomainId`: `str`
 - `TransitGatewayAttachmentId`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 
 ## RejectTransitGatewayMulticastDomainAssociationsResultTypeDef
@@ -20182,7 +20187,7 @@ from mypy_boto3_ec2.type_defs import RejectVpcEndpointConnectionsRequestRequestT
 Required fields:
 
 - `ServiceId`: `str`
-- `VpcEndpointIds`: `List`\[`str`\]
+- `VpcEndpointIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -20284,7 +20289,7 @@ from mypy_boto3_ec2.type_defs import ReleaseHostsRequestRequestTypeDef
 
 Required fields:
 
-- `HostIds`: `List`\[`str`\]
+- `HostIds`: `Sequence`\[`str`\]
 
 ## ReleaseHostsResultTypeDef
 
@@ -20568,7 +20573,7 @@ from mypy_boto3_ec2.type_defs import ReportInstanceStatusRequestInstanceTypeDef
 Required fields:
 
 - `ReasonCodes`:
-  `List`\[[ReportInstanceReasonCodesType](./literals.md#reportinstancereasoncodestype)\]
+  `Sequence`\[[ReportInstanceReasonCodesType](./literals.md#reportinstancereasoncodestype)\]
 - `Status`: [ReportStatusTypeType](./literals.md#reportstatustypetype)
 
 Optional fields:
@@ -20586,9 +20591,9 @@ from mypy_boto3_ec2.type_defs import ReportInstanceStatusRequestRequestTypeDef
 
 Required fields:
 
-- `Instances`: `List`\[`str`\]
+- `Instances`: `Sequence`\[`str`\]
 - `ReasonCodes`:
-  `List`\[[ReportInstanceReasonCodesType](./literals.md#reportinstancereasoncodestype)\]
+  `Sequence`\[[ReportInstanceReasonCodesType](./literals.md#reportinstancereasoncodestype)\]
 - `Status`: [ReportStatusTypeType](./literals.md#reportstatustypetype)
 
 Optional fields:
@@ -20611,9 +20616,9 @@ Optional fields:
 - `IamInstanceProfile`:
   [LaunchTemplateIamInstanceProfileSpecificationRequestTypeDef](./type_defs.md#launchtemplateiaminstanceprofilespecificationrequesttypedef)
 - `BlockDeviceMappings`:
-  `List`\[[LaunchTemplateBlockDeviceMappingRequestTypeDef](./type_defs.md#launchtemplateblockdevicemappingrequesttypedef)\]
+  `Sequence`\[[LaunchTemplateBlockDeviceMappingRequestTypeDef](./type_defs.md#launchtemplateblockdevicemappingrequesttypedef)\]
 - `NetworkInterfaces`:
-  `List`\[[LaunchTemplateInstanceNetworkInterfaceSpecificationRequestTypeDef](./type_defs.md#launchtemplateinstancenetworkinterfacespecificationrequesttypedef)\]
+  `Sequence`\[[LaunchTemplateInstanceNetworkInterfaceSpecificationRequestTypeDef](./type_defs.md#launchtemplateinstancenetworkinterfacespecificationrequesttypedef)\]
 - `ImageId`: `str`
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `KeyName`: `str`
@@ -20627,13 +20632,13 @@ Optional fields:
   [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
 - `UserData`: `str`
 - `TagSpecifications`:
-  `List`\[[LaunchTemplateTagSpecificationRequestTypeDef](./type_defs.md#launchtemplatetagspecificationrequesttypedef)\]
+  `Sequence`\[[LaunchTemplateTagSpecificationRequestTypeDef](./type_defs.md#launchtemplatetagspecificationrequesttypedef)\]
 - `ElasticGpuSpecifications`:
-  `List`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
+  `Sequence`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
 - `ElasticInferenceAccelerators`:
-  `List`\[[LaunchTemplateElasticInferenceAcceleratorTypeDef](./type_defs.md#launchtemplateelasticinferenceacceleratortypedef)\]
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SecurityGroups`: `List`\[`str`\]
+  `Sequence`\[[LaunchTemplateElasticInferenceAcceleratorTypeDef](./type_defs.md#launchtemplateelasticinferenceacceleratortypedef)\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `InstanceMarketOptions`:
   [LaunchTemplateInstanceMarketOptionsRequestTypeDef](./type_defs.md#launchtemplateinstancemarketoptionsrequesttypedef)
 - `CreditSpecification`:
@@ -20643,7 +20648,7 @@ Optional fields:
 - `CapacityReservationSpecification`:
   [LaunchTemplateCapacityReservationSpecificationRequestTypeDef](./type_defs.md#launchtemplatecapacityreservationspecificationrequesttypedef)
 - `LicenseSpecifications`:
-  `List`\[[LaunchTemplateLicenseConfigurationRequestTypeDef](./type_defs.md#launchtemplatelicenseconfigurationrequesttypedef)\]
+  `Sequence`\[[LaunchTemplateLicenseConfigurationRequestTypeDef](./type_defs.md#launchtemplatelicenseconfigurationrequesttypedef)\]
 - `HibernationOptions`:
   [LaunchTemplateHibernationOptionsRequestTypeDef](./type_defs.md#launchtemplatehibernationoptionsrequesttypedef)
 - `MetadataOptions`:
@@ -20699,7 +20704,7 @@ Optional fields:
 - `ValidFrom`: `Union`\[`datetime`, `str`\]
 - `ValidUntil`: `Union`\[`datetime`, `str`\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `InstanceInterruptionBehavior`:
   [InstanceInterruptionBehaviorType](./literals.md#instanceinterruptionbehaviortype)
 
@@ -20724,11 +20729,11 @@ from mypy_boto3_ec2.type_defs import RequestSpotLaunchSpecificationTypeDef
 
 Optional fields:
 
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `AddressingType`: `str`
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `EbsOptimized`: `bool`
 - `IamInstanceProfile`:
   [IamInstanceProfileSpecificationTypeDef](./type_defs.md#iaminstanceprofilespecificationtypedef)
@@ -20739,7 +20744,7 @@ Optional fields:
 - `Monitoring`:
   [RunInstancesMonitoringEnabledTypeDef](./type_defs.md#runinstancesmonitoringenabledtypedef)
 - `NetworkInterfaces`:
-  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+  `Sequence`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
 - `Placement`: [SpotPlacementTypeDef](./type_defs.md#spotplacementtypedef)
 - `RamdiskId`: `str`
 - `SubnetId`: `str`
@@ -21326,8 +21331,8 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-- `SecurityGroupRuleIds`: `List`\[`str`\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleIds`: `Sequence`\[`str`\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -21345,8 +21350,8 @@ Optional fields:
 
 - `DryRun`: `bool`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-- `SecurityGroupRuleIds`: `List`\[`str`\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+- `SecurityGroupRuleIds`: `Sequence`\[`str`\]
 - `CidrIp`: `str`
 - `FromPort`: `int`
 - `IpProtocol`: `str`
@@ -21381,13 +21386,13 @@ Optional fields:
 - `GroupId`: `str`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `IpProtocol`: `str`
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
-- `SecurityGroupRuleIds`: `List`\[`str`\]
+- `SecurityGroupRuleIds`: `Sequence`\[`str`\]
 
 ## RevokeSecurityGroupIngressRequestSecurityGroupTypeDef
 
@@ -21401,13 +21406,13 @@ Optional fields:
 - `FromPort`: `int`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `IpProtocol`: `str`
 - `SourceSecurityGroupName`: `str`
 - `SourceSecurityGroupOwnerId`: `str`
 - `ToPort`: `int`
 - `DryRun`: `bool`
-- `SecurityGroupRuleIds`: `List`\[`str`\]
+- `SecurityGroupRuleIds`: `Sequence`\[`str`\]
 
 ## RevokeSecurityGroupIngressResultTypeDef
 
@@ -21517,20 +21522,20 @@ Required fields:
 Optional fields:
 
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `ImageId`: `str`
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+  `Sequence`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `Monitoring`:
   [RunInstancesMonitoringEnabledTypeDef](./type_defs.md#runinstancesmonitoringenabledtypedef)
 - `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
 - `RamdiskId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `SubnetId`: `str`
 - `UserData`: `str`
 - `AdditionalInfo`: `str`
@@ -21543,14 +21548,14 @@ Optional fields:
 - `InstanceInitiatedShutdownBehavior`:
   [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
 - `NetworkInterfaces`:
-  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+  `Sequence`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
 - `PrivateIpAddress`: `str`
 - `ElasticGpuSpecification`:
-  `List`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
+  `Sequence`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
 - `ElasticInferenceAccelerators`:
-  `List`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
+  `Sequence`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `LaunchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `InstanceMarketOptions`:
@@ -21564,7 +21569,7 @@ Optional fields:
 - `HibernationOptions`:
   [HibernationOptionsRequestTypeDef](./type_defs.md#hibernationoptionsrequesttypedef)
 - `LicenseSpecifications`:
-  `List`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
+  `Sequence`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
 - `MetadataOptions`:
   [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
@@ -21584,20 +21589,20 @@ Required fields:
 Optional fields:
 
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `ImageId`: `str`
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+  `Sequence`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `Monitoring`:
   [RunInstancesMonitoringEnabledTypeDef](./type_defs.md#runinstancesmonitoringenabledtypedef)
 - `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
 - `RamdiskId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `SubnetId`: `str`
 - `UserData`: `str`
 - `AdditionalInfo`: `str`
@@ -21610,14 +21615,14 @@ Optional fields:
 - `InstanceInitiatedShutdownBehavior`:
   [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
 - `NetworkInterfaces`:
-  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+  `Sequence`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
 - `PrivateIpAddress`: `str`
 - `ElasticGpuSpecification`:
-  `List`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
+  `Sequence`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
 - `ElasticInferenceAccelerators`:
-  `List`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
+  `Sequence`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `LaunchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `InstanceMarketOptions`:
@@ -21631,7 +21636,7 @@ Optional fields:
 - `HibernationOptions`:
   [HibernationOptionsRequestTypeDef](./type_defs.md#hibernationoptionsrequesttypedef)
 - `LicenseSpecifications`:
-  `List`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
+  `Sequence`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
 - `MetadataOptions`:
   [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
@@ -21651,20 +21656,20 @@ Required fields:
 Optional fields:
 
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `ImageId`: `str`
 - `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
+  `Sequence`\[[InstanceIpv6AddressTypeDef](./type_defs.md#instanceipv6addresstypedef)\]
 - `KernelId`: `str`
 - `KeyName`: `str`
 - `Monitoring`:
   [RunInstancesMonitoringEnabledTypeDef](./type_defs.md#runinstancesmonitoringenabledtypedef)
 - `Placement`: [PlacementTypeDef](./type_defs.md#placementtypedef)
 - `RamdiskId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `UserData`: `str`
 - `AdditionalInfo`: `str`
 - `ClientToken`: `str`
@@ -21676,14 +21681,14 @@ Optional fields:
 - `InstanceInitiatedShutdownBehavior`:
   [ShutdownBehaviorType](./literals.md#shutdownbehaviortype)
 - `NetworkInterfaces`:
-  `List`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
+  `Sequence`\[[InstanceNetworkInterfaceSpecificationTypeDef](./type_defs.md#instancenetworkinterfacespecificationtypedef)\]
 - `PrivateIpAddress`: `str`
 - `ElasticGpuSpecification`:
-  `List`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
+  `Sequence`\[[ElasticGpuSpecificationTypeDef](./type_defs.md#elasticgpuspecificationtypedef)\]
 - `ElasticInferenceAccelerators`:
-  `List`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
+  `Sequence`\[[ElasticInferenceAcceleratorTypeDef](./type_defs.md#elasticinferenceacceleratortypedef)\]
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `LaunchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `InstanceMarketOptions`:
@@ -21697,7 +21702,7 @@ Optional fields:
 - `HibernationOptions`:
   [HibernationOptionsRequestTypeDef](./type_defs.md#hibernationoptionsrequesttypedef)
 - `LicenseSpecifications`:
-  `List`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
+  `Sequence`\[[LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)\]
 - `MetadataOptions`:
   [InstanceMetadataOptionsRequestTypeDef](./type_defs.md#instancemetadataoptionsrequesttypedef)
 - `EnclaveOptions`:
@@ -21791,7 +21796,7 @@ Optional fields:
 
 - `Frequency`: `str`
 - `Interval`: `int`
-- `OccurrenceDays`: `List`\[`int`\]
+- `OccurrenceDays`: `Sequence`\[`int`\]
 - `OccurrenceRelativeToEnd`: `bool`
 - `OccurrenceUnit`: `str`
 
@@ -21897,7 +21902,7 @@ Required fields:
 Optional fields:
 
 - `BlockDeviceMappings`:
-  `List`\[[ScheduledInstancesBlockDeviceMappingTypeDef](./type_defs.md#scheduledinstancesblockdevicemappingtypedef)\]
+  `Sequence`\[[ScheduledInstancesBlockDeviceMappingTypeDef](./type_defs.md#scheduledinstancesblockdevicemappingtypedef)\]
 - `EbsOptimized`: `bool`
 - `IamInstanceProfile`:
   [ScheduledInstancesIamInstanceProfileTypeDef](./type_defs.md#scheduledinstancesiaminstanceprofiletypedef)
@@ -21907,11 +21912,11 @@ Optional fields:
 - `Monitoring`:
   [ScheduledInstancesMonitoringTypeDef](./type_defs.md#scheduledinstancesmonitoringtypedef)
 - `NetworkInterfaces`:
-  `List`\[[ScheduledInstancesNetworkInterfaceTypeDef](./type_defs.md#scheduledinstancesnetworkinterfacetypedef)\]
+  `Sequence`\[[ScheduledInstancesNetworkInterfaceTypeDef](./type_defs.md#scheduledinstancesnetworkinterfacetypedef)\]
 - `Placement`:
   [ScheduledInstancesPlacementTypeDef](./type_defs.md#scheduledinstancesplacementtypedef)
 - `RamdiskId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `SubnetId`: `str`
 - `UserData`: `str`
 
@@ -21937,14 +21942,14 @@ Optional fields:
 - `DeleteOnTermination`: `bool`
 - `Description`: `str`
 - `DeviceIndex`: `int`
-- `Groups`: `List`\[`str`\]
+- `Groups`: `Sequence`\[`str`\]
 - `Ipv6AddressCount`: `int`
 - `Ipv6Addresses`:
-  `List`\[[ScheduledInstancesIpv6AddressTypeDef](./type_defs.md#scheduledinstancesipv6addresstypedef)\]
+  `Sequence`\[[ScheduledInstancesIpv6AddressTypeDef](./type_defs.md#scheduledinstancesipv6addresstypedef)\]
 - `NetworkInterfaceId`: `str`
 - `PrivateIpAddress`: `str`
 - `PrivateIpAddressConfigs`:
-  `List`\[[ScheduledInstancesPrivateIpAddressConfigTypeDef](./type_defs.md#scheduledinstancesprivateipaddressconfigtypedef)\]
+  `Sequence`\[[ScheduledInstancesPrivateIpAddressConfigTypeDef](./type_defs.md#scheduledinstancesprivateipaddressconfigtypedef)\]
 - `SecondaryPrivateIpAddressCount`: `int`
 - `SubnetId`: `str`
 
@@ -21979,7 +21984,7 @@ from mypy_boto3_ec2.type_defs import SearchLocalGatewayRoutesRequestRequestTypeD
 Required fields:
 
 - `LocalGatewayRouteTableId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Optional fields:
 
@@ -22010,7 +22015,7 @@ from mypy_boto3_ec2.type_defs import SearchTransitGatewayMulticastGroupsRequestR
 Optional fields:
 
 - `TransitGatewayMulticastDomainId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`
@@ -22038,7 +22043,7 @@ from mypy_boto3_ec2.type_defs import SearchTransitGatewayRoutesRequestRequestTyp
 Required fields:
 
 - `TransitGatewayRouteTableId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Optional fields:
 
@@ -22941,7 +22946,7 @@ from mypy_boto3_ec2.type_defs import StartInstancesRequestRequestTypeDef
 
 Required fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -22974,10 +22979,10 @@ Required fields:
 
 Optional fields:
 
-- `FilterInArns`: `List`\[`str`\]
+- `FilterInArns`: `Sequence`\[`str`\]
 - `DryRun`: `bool`
 - `TagSpecifications`:
-  `List`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 
 ## StartNetworkInsightsAnalysisResultTypeDef
 
@@ -23049,7 +23054,7 @@ from mypy_boto3_ec2.type_defs import StopInstancesRequestRequestTypeDef
 
 Required fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -23230,7 +23235,7 @@ from mypy_boto3_ec2.type_defs import TagSpecificationTypeDef
 Optional fields:
 
 - `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -23414,7 +23419,7 @@ from mypy_boto3_ec2.type_defs import TerminateInstancesRequestRequestTypeDef
 
 Required fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -23926,7 +23931,7 @@ Optional fields:
 - `DnsSupport`: [DnsSupportValueType](./literals.md#dnssupportvaluetype)
 - `MulticastSupport`:
   [MulticastSupportValueType](./literals.md#multicastsupportvaluetype)
-- `TransitGatewayCidrBlocks`: `List`\[`str`\]
+- `TransitGatewayCidrBlocks`: `Sequence`\[`str`\]
 
 ## TransitGatewayRouteAttachmentTypeDef
 
@@ -24120,8 +24125,8 @@ Required fields:
 
 Optional fields:
 
-- `Ipv6Addresses`: `List`\[`str`\]
-- `Ipv6Prefixes`: `List`\[`str`\]
+- `Ipv6Addresses`: `Sequence`\[`str`\]
+- `Ipv6Prefixes`: `Sequence`\[`str`\]
 
 ## UnassignIpv6AddressesResultTypeDef
 
@@ -24145,8 +24150,8 @@ from mypy_boto3_ec2.type_defs import UnassignPrivateIpAddressesRequestNetworkInt
 
 Optional fields:
 
-- `PrivateIpAddresses`: `List`\[`str`\]
-- `Ipv4Prefixes`: `List`\[`str`\]
+- `PrivateIpAddresses`: `Sequence`\[`str`\]
+- `Ipv4Prefixes`: `Sequence`\[`str`\]
 
 ## UnassignPrivateIpAddressesRequestRequestTypeDef
 
@@ -24160,8 +24165,8 @@ Required fields:
 
 Optional fields:
 
-- `PrivateIpAddresses`: `List`\[`str`\]
-- `Ipv4Prefixes`: `List`\[`str`\]
+- `PrivateIpAddresses`: `Sequence`\[`str`\]
+- `Ipv4Prefixes`: `Sequence`\[`str`\]
 
 ## UnmonitorInstancesRequestInstanceTypeDef
 
@@ -24181,7 +24186,7 @@ from mypy_boto3_ec2.type_defs import UnmonitorInstancesRequestRequestTypeDef
 
 Required fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -24259,9 +24264,9 @@ Optional fields:
 - `GroupId`: `str`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `SecurityGroupRuleDescriptions`:
-  `List`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
+  `Sequence`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
 
 ## UpdateSecurityGroupRuleDescriptionsEgressResultTypeDef
 
@@ -24287,9 +24292,9 @@ Optional fields:
 - `GroupId`: `str`
 - `GroupName`: `str`
 - `IpPermissions`:
-  `List`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
 - `SecurityGroupRuleDescriptions`:
-  `List`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
+  `Sequence`\[[SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)\]
 
 ## UpdateSecurityGroupRuleDescriptionsIngressResultTypeDef
 
@@ -24807,7 +24812,7 @@ Optional fields:
 - `TunnelInsideIpVersion`:
   [TunnelInsideIpVersionType](./literals.md#tunnelinsideipversiontype)
 - `TunnelOptions`:
-  `List`\[[VpnTunnelOptionsSpecificationTypeDef](./type_defs.md#vpntunneloptionsspecificationtypedef)\]
+  `Sequence`\[[VpnTunnelOptionsSpecificationTypeDef](./type_defs.md#vpntunneloptionsspecificationtypedef)\]
 - `LocalIpv4NetworkCidr`: `str`
 - `RemoteIpv4NetworkCidr`: `str`
 - `LocalIpv6NetworkCidr`: `str`
@@ -24907,19 +24912,19 @@ Optional fields:
 - `DPDTimeoutSeconds`: `int`
 - `DPDTimeoutAction`: `str`
 - `Phase1EncryptionAlgorithms`:
-  `List`\[[Phase1EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1encryptionalgorithmsrequestlistvaluetypedef)\]
+  `Sequence`\[[Phase1EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1encryptionalgorithmsrequestlistvaluetypedef)\]
 - `Phase2EncryptionAlgorithms`:
-  `List`\[[Phase2EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2encryptionalgorithmsrequestlistvaluetypedef)\]
+  `Sequence`\[[Phase2EncryptionAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2encryptionalgorithmsrequestlistvaluetypedef)\]
 - `Phase1IntegrityAlgorithms`:
-  `List`\[[Phase1IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1integrityalgorithmsrequestlistvaluetypedef)\]
+  `Sequence`\[[Phase1IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase1integrityalgorithmsrequestlistvaluetypedef)\]
 - `Phase2IntegrityAlgorithms`:
-  `List`\[[Phase2IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2integrityalgorithmsrequestlistvaluetypedef)\]
+  `Sequence`\[[Phase2IntegrityAlgorithmsRequestListValueTypeDef](./type_defs.md#phase2integrityalgorithmsrequestlistvaluetypedef)\]
 - `Phase1DHGroupNumbers`:
-  `List`\[[Phase1DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase1dhgroupnumbersrequestlistvaluetypedef)\]
+  `Sequence`\[[Phase1DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase1dhgroupnumbersrequestlistvaluetypedef)\]
 - `Phase2DHGroupNumbers`:
-  `List`\[[Phase2DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase2dhgroupnumbersrequestlistvaluetypedef)\]
+  `Sequence`\[[Phase2DHGroupNumbersRequestListValueTypeDef](./type_defs.md#phase2dhgroupnumbersrequestlistvaluetypedef)\]
 - `IKEVersions`:
-  `List`\[[IKEVersionsRequestListValueTypeDef](./type_defs.md#ikeversionsrequestlistvaluetypedef)\]
+  `Sequence`\[[IKEVersionsRequestListValueTypeDef](./type_defs.md#ikeversionsrequestlistvaluetypedef)\]
 - `StartupAction`: `str`
 
 ## WaiterConfigTypeDef

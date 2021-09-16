@@ -116,8 +116,8 @@ from mypy_boto3_ssm_incidents.type_defs import AttributeValueListTypeDef
 
 Optional fields:
 
-- `integerValues`: `List`\[`int`\]
-- `stringValues`: `List`\[`str`\]
+- `integerValues`: `Sequence`\[`int`\]
+- `stringValues`: `Sequence`\[`str`\]
 
 ## AutomationExecutionTypeDef
 
@@ -137,8 +137,8 @@ from mypy_boto3_ssm_incidents.type_defs import ChatChannelTypeDef
 
 Optional fields:
 
-- `chatbotSns`: `List`\[`str`\]
-- `empty`: `Dict`\[`str`, `Any`\]
+- `chatbotSns`: `Sequence`\[`str`\]
+- `empty`: `Mapping`\[`str`, `Any`\]
 
 ## ConditionTypeDef
 
@@ -161,7 +161,7 @@ from mypy_boto3_ssm_incidents.type_defs import CreateReplicationSetInputRequestT
 
 Required fields:
 
-- `regions`: `Dict`\[`str`,
+- `regions`: `Mapping`\[`str`,
   [RegionMapInputValueTypeDef](./type_defs.md#regionmapinputvaluetypedef)\]
 
 Optional fields:
@@ -194,12 +194,12 @@ Required fields:
 
 Optional fields:
 
-- `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
 - `clientToken`: `str`
 - `displayName`: `str`
-- `engagements`: `List`\[`str`\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `engagements`: `Sequence`\[`str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateResponsePlanOutputTypeDef
 
@@ -537,7 +537,7 @@ Optional fields:
 
 - `dedupeString`: `str`
 - `notificationTargets`:
-  `List`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
+  `Sequence`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
 - `summary`: `str`
 
 ## ItemIdentifierTypeDef
@@ -571,7 +571,7 @@ from mypy_boto3_ssm_incidents.type_defs import ListIncidentRecordsInputRequestTy
 
 Optional fields:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -701,7 +701,7 @@ Required fields:
 
 Optional fields:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `sortBy`: `Literal['EVENT_TIME']` (see
@@ -894,7 +894,7 @@ Required fields:
 Optional fields:
 
 - `documentVersion`: `str`
-- `parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+- `parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `targetAccount`: [SsmTargetAccountType](./literals.md#ssmtargetaccounttype)
 
 ## StartIncidentInputRequestTypeDef
@@ -912,7 +912,7 @@ Optional fields:
 - `clientToken`: `str`
 - `impact`: `int`
 - `relatedItems`:
-  `List`\[[RelatedItemTypeDef](./type_defs.md#relateditemtypedef)\]
+  `Sequence`\[[RelatedItemTypeDef](./type_defs.md#relateditemtypedef)\]
 - `title`: `str`
 - `triggerDetails`:
   [TriggerDetailsTypeDef](./type_defs.md#triggerdetailstypedef)
@@ -938,7 +938,7 @@ from mypy_boto3_ssm_incidents.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TimelineEventTypeDef
 
@@ -980,7 +980,7 @@ from mypy_boto3_ssm_incidents.type_defs import UntagResourceRequestRequestTypeDe
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateDeletionProtectionInputRequestTypeDef
 
@@ -1013,7 +1013,7 @@ Optional fields:
 - `clientToken`: `str`
 - `impact`: `int`
 - `notificationTargets`:
-  `List`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
+  `Sequence`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
 - `status`: [IncidentRecordStatusType](./literals.md#incidentrecordstatustype)
 - `summary`: `str`
 - `title`: `str`
@@ -1056,7 +1056,7 @@ from mypy_boto3_ssm_incidents.type_defs import UpdateReplicationSetInputRequestT
 Required fields:
 
 - `actions`:
-  `List`\[[UpdateReplicationSetActionTypeDef](./type_defs.md#updatereplicationsetactiontypedef)\]
+  `Sequence`\[[UpdateReplicationSetActionTypeDef](./type_defs.md#updatereplicationsetactiontypedef)\]
 - `arn`: `str`
 
 Optional fields:
@@ -1075,15 +1075,15 @@ Required fields:
 
 Optional fields:
 
-- `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
 - `clientToken`: `str`
 - `displayName`: `str`
-- `engagements`: `List`\[`str`\]
+- `engagements`: `Sequence`\[`str`\]
 - `incidentTemplateDedupeString`: `str`
 - `incidentTemplateImpact`: `int`
 - `incidentTemplateNotificationTargets`:
-  `List`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
+  `Sequence`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
 - `incidentTemplateSummary`: `str`
 - `incidentTemplateTitle`: `str`
 

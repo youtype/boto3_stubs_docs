@@ -55,7 +55,7 @@ Optional fields:
 - `imageId`: `str`
 - `automaticStopTimeMinutes`: `int`
 - `ownerArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `dryRun`: `bool`
 
@@ -127,7 +127,7 @@ Optional fields:
 
 - `userArn`: `str`
 - `environmentId`: `str`
-- `permissions`: `List`\[[PermissionsType](./literals.md#permissionstype)\]
+- `permissions`: `Sequence`\[[PermissionsType](./literals.md#permissionstype)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -176,7 +176,7 @@ from mypy_boto3_cloud9.type_defs import DescribeEnvironmentsRequestRequestTypeDe
 
 Required fields:
 
-- `environmentIds`: `List`\[`str`\]
+- `environmentIds`: `Sequence`\[`str`\]
 
 ## DescribeEnvironmentsResultTypeDef
 
@@ -325,7 +325,7 @@ from mypy_boto3_cloud9.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -347,7 +347,7 @@ from mypy_boto3_cloud9.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateEnvironmentMembershipRequestRequestTypeDef
 

@@ -108,7 +108,7 @@ Optional fields:
 
 - `CreatorRequestId`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateHttpNamespaceResponseTypeDef
 
@@ -137,7 +137,7 @@ Optional fields:
 
 - `CreatorRequestId`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Properties`:
   [PrivateDnsNamespacePropertiesTypeDef](./type_defs.md#privatednsnamespacepropertiestypedef)
 
@@ -167,7 +167,7 @@ Optional fields:
 
 - `CreatorRequestId`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Properties`:
   [PublicDnsNamespacePropertiesTypeDef](./type_defs.md#publicdnsnamespacepropertiestypedef)
 
@@ -203,7 +203,7 @@ Optional fields:
   [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
 - `HealthCheckCustomConfig`:
   [HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Type`: `Literal['HTTP']` (see
   [ServiceTypeOptionType](./literals.md#servicetypeoptiontype))
 
@@ -288,8 +288,8 @@ Required fields:
 Optional fields:
 
 - `MaxResults`: `int`
-- `QueryParameters`: `Dict`\[`str`, `str`\]
-- `OptionalParameters`: `Dict`\[`str`, `str`\]
+- `QueryParameters`: `Mapping`\[`str`, `str`\]
+- `OptionalParameters`: `Mapping`\[`str`, `str`\]
 - `HealthStatus`:
   [HealthStatusFilterType](./literals.md#healthstatusfiltertype)
 
@@ -314,7 +314,8 @@ from mypy_boto3_servicediscovery.type_defs import DnsConfigChangeTypeDef
 
 Required fields:
 
-- `DnsRecords`: `List`\[[DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef)\]
+- `DnsRecords`:
+  `Sequence`\[[DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef)\]
 
 ## DnsConfigTypeDef
 
@@ -324,7 +325,8 @@ from mypy_boto3_servicediscovery.type_defs import DnsConfigTypeDef
 
 Required fields:
 
-- `DnsRecords`: `List`\[[DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef)\]
+- `DnsRecords`:
+  `Sequence`\[[DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef)\]
 
 Optional fields:
 
@@ -388,7 +390,7 @@ Required fields:
 
 Optional fields:
 
-- `Instances`: `List`\[`str`\]
+- `Instances`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -596,7 +598,7 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
+  `Sequence`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
 
 ## ListNamespacesResponseTypeDef
 
@@ -623,7 +625,7 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
+  `Sequence`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
 
 ## ListOperationsResponseTypeDef
 
@@ -650,7 +652,7 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`:
-  `List`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
+  `Sequence`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
 
 ## ListServicesResponseTypeDef
 
@@ -698,7 +700,7 @@ Required fields:
 
 - `Name`: `Literal['TYPE']` (see
   [NamespaceFilterNameType](./literals.md#namespacefilternametype))
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -762,7 +764,7 @@ from mypy_boto3_servicediscovery.type_defs import OperationFilterTypeDef
 Required fields:
 
 - `Name`: [OperationFilterNameType](./literals.md#operationfilternametype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -928,7 +930,7 @@ Required fields:
 
 - `ServiceId`: `str`
 - `InstanceId`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
@@ -1003,7 +1005,7 @@ Required fields:
 
 - `Name`: `Literal['NAMESPACE_ID']` (see
   [ServiceFilterNameType](./literals.md#servicefilternametype))
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1062,7 +1064,7 @@ from mypy_boto3_servicediscovery.type_defs import TagResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1084,7 +1086,7 @@ from mypy_boto3_servicediscovery.type_defs import UntagResourceRequestRequestTyp
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateHttpNamespaceRequestRequestTypeDef
 

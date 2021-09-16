@@ -86,4 +86,4 @@ from mypy_boto3_route53_recovery_cluster.type_defs import UpdateRoutingControlSt
 Required fields:
 
 - `UpdateRoutingControlStateEntries`:
-  `List`\[[UpdateRoutingControlStateEntryTypeDef](./type_defs.md#updateroutingcontrolstateentrytypedef)\]
+  `Sequence`\[[UpdateRoutingControlStateEntryTypeDef](./type_defs.md#updateroutingcontrolstateentrytypedef)\]

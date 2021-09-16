@@ -59,7 +59,7 @@ Boto3 documentation:
 Arguments for `ListNamespacesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
+  `Sequence`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -86,7 +86,7 @@ Boto3 documentation:
 Arguments for `ListOperationsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
+  `Sequence`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -113,7 +113,7 @@ Boto3 documentation:
 Arguments for `ListServicesPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
+  `Sequence`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

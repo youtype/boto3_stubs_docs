@@ -95,6 +95,7 @@ from mypy_boto3_emr_containers.literals import ContainerProviderTypeType, ...
 - [ListVirtualClustersPaginatorName](./literals.md#listvirtualclusterspaginatorname)
 - [PersistentAppUIType](./literals.md#persistentappuitype)
 - [VirtualClusterStateType](./literals.md#virtualclusterstatetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

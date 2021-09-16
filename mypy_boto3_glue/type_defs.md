@@ -499,7 +499,7 @@ Required fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 - `PartitionInputList`:
-  `List`\[[PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)\]
+  `Sequence`\[[PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)\]
 
 Optional fields:
 
@@ -526,7 +526,7 @@ from mypy_boto3_glue.type_defs import BatchDeleteConnectionRequestRequestTypeDef
 
 Required fields:
 
-- `ConnectionNameList`: `List`\[`str`\]
+- `ConnectionNameList`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -557,7 +557,7 @@ Required fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 - `PartitionsToDelete`:
-  `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
+  `Sequence`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
 
 Optional fields:
 
@@ -585,7 +585,7 @@ from mypy_boto3_glue.type_defs import BatchDeleteTableRequestRequestTypeDef
 Required fields:
 
 - `DatabaseName`: `str`
-- `TablesToDelete`: `List`\[`str`\]
+- `TablesToDelete`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -613,7 +613,7 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
-- `VersionIds`: `List`\[`str`\]
+- `VersionIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -640,7 +640,7 @@ from mypy_boto3_glue.type_defs import BatchGetBlueprintsRequestRequestTypeDef
 
 Required fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -668,7 +668,7 @@ from mypy_boto3_glue.type_defs import BatchGetCrawlersRequestRequestTypeDef
 
 Required fields:
 
-- `CrawlerNames`: `List`\[`str`\]
+- `CrawlerNames`: `Sequence`\[`str`\]
 
 ## BatchGetCrawlersResponseTypeDef
 
@@ -691,7 +691,7 @@ from mypy_boto3_glue.type_defs import BatchGetDevEndpointsRequestRequestTypeDef
 
 Required fields:
 
-- `DevEndpointNames`: `List`\[`str`\]
+- `DevEndpointNames`: `Sequence`\[`str`\]
 
 ## BatchGetDevEndpointsResponseTypeDef
 
@@ -715,7 +715,7 @@ from mypy_boto3_glue.type_defs import BatchGetJobsRequestRequestTypeDef
 
 Required fields:
 
-- `JobNames`: `List`\[`str`\]
+- `JobNames`: `Sequence`\[`str`\]
 
 ## BatchGetJobsResponseTypeDef
 
@@ -741,7 +741,7 @@ Required fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 - `PartitionsToGet`:
-  `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
+  `Sequence`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
 
 Optional fields:
 
@@ -769,7 +769,7 @@ from mypy_boto3_glue.type_defs import BatchGetTriggersRequestRequestTypeDef
 
 Required fields:
 
-- `TriggerNames`: `List`\[`str`\]
+- `TriggerNames`: `Sequence`\[`str`\]
 
 ## BatchGetTriggersResponseTypeDef
 
@@ -792,7 +792,7 @@ from mypy_boto3_glue.type_defs import BatchGetWorkflowsRequestRequestTypeDef
 
 Required fields:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -832,7 +832,7 @@ from mypy_boto3_glue.type_defs import BatchStopJobRunRequestRequestTypeDef
 Required fields:
 
 - `JobName`: `str`
-- `JobRunIds`: `List`\[`str`\]
+- `JobRunIds`: `Sequence`\[`str`\]
 
 ## BatchStopJobRunResponseTypeDef
 
@@ -879,7 +879,7 @@ from mypy_boto3_glue.type_defs import BatchUpdatePartitionRequestEntryTypeDef
 
 Required fields:
 
-- `PartitionValueList`: `List`\[`str`\]
+- `PartitionValueList`: `Sequence`\[`str`\]
 - `PartitionInput`:
   [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)
 
@@ -894,7 +894,7 @@ Required fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 - `Entries`:
-  `List`\[[BatchUpdatePartitionRequestEntryTypeDef](./type_defs.md#batchupdatepartitionrequestentrytypedef)\]
+  `Sequence`\[[BatchUpdatePartitionRequestEntryTypeDef](./type_defs.md#batchupdatepartitionrequestentrytypedef)\]
 
 Optional fields:
 
@@ -1138,7 +1138,7 @@ Required fields:
 - `Id`: `str`
 - `NodeType`: `str`
 - `Args`:
-  `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
+  `Sequence`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
 
 Optional fields:
 
@@ -1233,7 +1233,7 @@ Optional fields:
 
 - `Type`: `str`
 - `Comment`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 
 ## ConditionTypeDef
 
@@ -1274,13 +1274,13 @@ Required fields:
 - `Name`: `str`
 - `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `ConnectionProperties`:
-  `Dict`\[[ConnectionPropertyKeyType](./literals.md#connectionpropertykeytype),
+  `Mapping`\[[ConnectionPropertyKeyType](./literals.md#connectionpropertykeytype),
   `str`\]
 
 Optional fields:
 
 - `Description`: `str`
-- `MatchCriteria`: `List`\[`str`\]
+- `MatchCriteria`: `Sequence`\[`str`\]
 - `PhysicalConnectionRequirements`:
   [PhysicalConnectionRequirementsTypeDef](./type_defs.md#physicalconnectionrequirementstypedef)
 
@@ -1433,7 +1433,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateBlueprintResponseTypeDef
 
@@ -1496,7 +1496,7 @@ Optional fields:
 - `DatabaseName`: `str`
 - `Description`: `str`
 - `Schedule`: `str`
-- `Classifiers`: `List`\[`str`\]
+- `Classifiers`: `Sequence`\[`str`\]
 - `TablePrefix`: `str`
 - `SchemaChangePolicy`:
   [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
@@ -1505,7 +1505,7 @@ Optional fields:
   [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateCsvClassifierRequestTypeDef
 
@@ -1522,7 +1522,7 @@ Optional fields:
 - `Delimiter`: `str`
 - `QuoteSymbol`: `str`
 - `ContainsHeader`: [CsvHeaderOptionType](./literals.md#csvheaderoptiontype)
-- `Header`: `List`\[`str`\]
+- `Header`: `Sequence`\[`str`\]
 - `DisableValueTrimming`: `bool`
 - `AllowSingleColumn`: `bool`
 
@@ -1553,10 +1553,10 @@ Required fields:
 
 Optional fields:
 
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `SubnetId`: `str`
 - `PublicKey`: `str`
-- `PublicKeys`: `List`\[`str`\]
+- `PublicKeys`: `Sequence`\[`str`\]
 - `NumberOfNodes`: `int`
 - `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
 - `GlueVersion`: `str`
@@ -1564,8 +1564,8 @@ Optional fields:
 - `ExtraPythonLibsS3Path`: `str`
 - `ExtraJarsS3Path`: `str`
 - `SecurityConfiguration`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `Arguments`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `Arguments`: `Mapping`\[`str`, `str`\]
 
 ## CreateDevEndpointResponseTypeDef
 
@@ -1631,8 +1631,8 @@ Optional fields:
 - `LogUri`: `str`
 - `ExecutionProperty`:
   [ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef)
-- `DefaultArguments`: `Dict`\[`str`, `str`\]
-- `NonOverridableArguments`: `Dict`\[`str`, `str`\]
+- `DefaultArguments`: `Mapping`\[`str`, `str`\]
+- `NonOverridableArguments`: `Mapping`\[`str`, `str`\]
 - `Connections`:
   [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
 - `MaxRetries`: `int`
@@ -1640,7 +1640,7 @@ Optional fields:
 - `Timeout`: `int`
 - `MaxCapacity`: `float`
 - `SecurityConfiguration`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `NotificationProperty`:
   [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
 - `GlueVersion`: `str`
@@ -1680,7 +1680,7 @@ Required fields:
 
 - `Name`: `str`
 - `InputRecordTables`:
-  `List`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\]
+  `Sequence`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\]
 - `Parameters`:
   [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
 - `Role`: `str`
@@ -1694,7 +1694,7 @@ Optional fields:
 - `NumberOfWorkers`: `int`
 - `Timeout`: `int`
 - `MaxRetries`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `TransformEncryption`:
   [TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef)
 
@@ -1757,7 +1757,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateRegistryResponseTypeDef
 
@@ -1790,7 +1790,7 @@ Optional fields:
 - `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
 - `Compatibility`: [CompatibilityType](./literals.md#compatibilitytype)
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `SchemaDefinition`: `str`
 
 ## CreateSchemaResponseTypeDef
@@ -1827,8 +1827,10 @@ from mypy_boto3_glue.type_defs import CreateScriptRequestRequestTypeDef
 
 Optional fields:
 
-- `DagNodes`: `List`\[[CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)\]
-- `DagEdges`: `List`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
+- `DagNodes`:
+  `Sequence`\[[CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)\]
+- `DagEdges`:
+  `Sequence`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
 - `Language`: [LanguageType](./literals.md#languagetype)
 
 ## CreateScriptResponseTypeDef
@@ -1884,7 +1886,7 @@ Optional fields:
 
 - `CatalogId`: `str`
 - `PartitionIndexes`:
-  `List`\[[PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)\]
+  `Sequence`\[[PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)\]
 
 ## CreateTriggerRequestRequestTypeDef
 
@@ -1896,7 +1898,7 @@ Required fields:
 
 - `Name`: `str`
 - `Type`: [TriggerTypeType](./literals.md#triggertypetype)
-- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 
 Optional fields:
 
@@ -1905,7 +1907,7 @@ Optional fields:
 - `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
 - `Description`: `str`
 - `StartOnCreation`: `bool`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `EventBatchingCondition`:
   [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
 
@@ -1950,8 +1952,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `DefaultRunProperties`: `Dict`\[`str`, `str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `DefaultRunProperties`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `MaxConcurrentRuns`: `int`
 
 ## CreateWorkflowResponseTypeDef
@@ -2051,9 +2053,9 @@ Optional fields:
 
 - `Description`: `str`
 - `LocationUri`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 - `CreateTableDefaultPermissions`:
-  `List`\[[PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef)\]
+  `Sequence`\[[PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef)\]
 - `TargetDatabase`:
   [DatabaseIdentifierTypeDef](./type_defs.md#databaseidentifiertypedef)
 
@@ -2164,7 +2166,7 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
-- `PartitionValues`: `List`\[`str`\]
+- `PartitionValues`: `Sequence`\[`str`\]
 - `ColumnName`: `str`
 
 Optional fields:
@@ -2305,7 +2307,7 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
-- `PartitionValues`: `List`\[`str`\]
+- `PartitionValues`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2602,7 +2604,7 @@ from mypy_boto3_glue.type_defs import EncryptionConfigurationTypeDef
 Optional fields:
 
 - `S3Encryption`:
-  `List`\[[S3EncryptionTypeDef](./type_defs.md#s3encryptiontypedef)\]
+  `Sequence`\[[S3EncryptionTypeDef](./type_defs.md#s3encryptiontypedef)\]
 - `CloudWatchEncryption`:
   [CloudWatchEncryptionTypeDef](./type_defs.md#cloudwatchencryptiontypedef)
 - `JobBookmarksEncryption`:
@@ -2881,8 +2883,8 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
-- `PartitionValues`: `List`\[`str`\]
-- `ColumnNames`: `List`\[`str`\]
+- `PartitionValues`: `Sequence`\[`str`\]
+- `ColumnNames`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2912,7 +2914,7 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
-- `ColumnNames`: `List`\[`str`\]
+- `ColumnNames`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2967,7 +2969,7 @@ from mypy_boto3_glue.type_defs import GetConnectionsFilterTypeDef
 
 Optional fields:
 
-- `MatchCriteria`: `List`\[`str`\]
+- `MatchCriteria`: `Sequence`\[`str`\]
 - `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 
 ## GetConnectionsRequestRequestTypeDef
@@ -3007,7 +3009,7 @@ from mypy_boto3_glue.type_defs import GetCrawlerMetricsRequestRequestTypeDef
 
 Optional fields:
 
-- `CrawlerNameList`: `List`\[`str`\]
+- `CrawlerNameList`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -3495,7 +3497,8 @@ Required fields:
 
 Optional fields:
 
-- `Sinks`: `List`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
+- `Sinks`:
+  `Sequence`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 
 ## GetMappingResponseTypeDef
@@ -3551,7 +3554,7 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
-- `PartitionValues`: `List`\[`str`\]
+- `PartitionValues`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -3611,15 +3614,16 @@ from mypy_boto3_glue.type_defs import GetPlanRequestRequestTypeDef
 Required fields:
 
 - `Mapping`:
-  `List`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
+  `Sequence`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
 - `Source`: [CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)
 
 Optional fields:
 
-- `Sinks`: `List`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
+- `Sinks`:
+  `Sequence`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `Language`: [LanguageType](./literals.md#languagetype)
-- `AdditionalPlanOptionsMap`: `Dict`\[`str`, `str`\]
+- `AdditionalPlanOptionsMap`: `Mapping`\[`str`, `str`\]
 
 ## GetPlanResponseTypeDef
 
@@ -4438,8 +4442,8 @@ Optional fields:
 - `ExecutionProperty`:
   [ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef)
 - `Command`: [JobCommandTypeDef](./type_defs.md#jobcommandtypedef)
-- `DefaultArguments`: `Dict`\[`str`, `str`\]
-- `NonOverridableArguments`: `Dict`\[`str`, `str`\]
+- `DefaultArguments`: `Mapping`\[`str`, `str`\]
+- `NonOverridableArguments`: `Mapping`\[`str`, `str`\]
 - `Connections`:
   [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
 - `MaxRetries`: `int`
@@ -4541,7 +4545,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## ListBlueprintsResponseTypeDef
 
@@ -4566,7 +4570,7 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## ListCrawlersResponseTypeDef
 
@@ -4591,7 +4595,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## ListDevEndpointsResponseTypeDef
 
@@ -4616,7 +4620,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## ListJobsResponseTypeDef
 
@@ -4645,7 +4649,7 @@ Optional fields:
   [TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef)
 - `Sort`:
   [TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## ListMLTransformsResponseTypeDef
 
@@ -4751,7 +4755,7 @@ Optional fields:
 - `NextToken`: `str`
 - `DependentJobName`: `str`
 - `MaxResults`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## ListTriggersResponseTypeDef
 
@@ -4799,10 +4803,11 @@ from mypy_boto3_glue.type_defs import LocationTypeDef
 Optional fields:
 
 - `Jdbc`:
-  `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
-- `S3`: `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
+  `Sequence`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
+- `S3`:
+  `Sequence`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
 - `DynamoDB`:
-  `List`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
+  `Sequence`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
 
 ## LongColumnStatisticsDataTypeDef
 
@@ -5017,7 +5022,7 @@ from mypy_boto3_glue.type_defs import PartitionIndexTypeDef
 
 Required fields:
 
-- `Keys`: `List`\[`str`\]
+- `Keys`: `Sequence`\[`str`\]
 - `IndexName`: `str`
 
 ## PartitionInputTypeDef
@@ -5028,11 +5033,11 @@ from mypy_boto3_glue.type_defs import PartitionInputTypeDef
 
 Optional fields:
 
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `LastAccessTime`: `Union`\[`datetime`, `str`\]
 - `StorageDescriptor`:
   [StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef)
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 - `LastAnalyzedTime`: `Union`\[`datetime`, `str`\]
 
 ## PartitionTypeDef
@@ -5062,7 +5067,7 @@ from mypy_boto3_glue.type_defs import PartitionValueListTypeDef
 
 Required fields:
 
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## PhysicalConnectionRequirementsTypeDef
 
@@ -5073,7 +5078,7 @@ from mypy_boto3_glue.type_defs import PhysicalConnectionRequirementsTypeDef
 Optional fields:
 
 - `SubnetId`: `str`
-- `SecurityGroupIdList`: `List`\[`str`\]
+- `SecurityGroupIdList`: `Sequence`\[`str`\]
 - `AvailabilityZone`: `str`
 
 ## PredecessorTypeDef
@@ -5108,7 +5113,7 @@ Optional fields:
 
 - `Principal`:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
+- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
 
 ## PropertyPredicateTypeDef
 
@@ -5215,7 +5220,7 @@ Required fields:
 
 - `Name`: `str`
 - `RunId`: `str`
-- `RunProperties`: `Dict`\[`str`, `str`\]
+- `RunProperties`: `Mapping`\[`str`, `str`\]
 
 ## QuerySchemaVersionMetadataInputRequestTypeDef
 
@@ -5230,7 +5235,7 @@ Optional fields:
   [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
 - `SchemaVersionId`: `str`
 - `MetadataList`:
-  `List`\[[MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)\]
+  `Sequence`\[[MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -5409,7 +5414,7 @@ Required fields:
 
 - `Name`: `str`
 - `RunId`: `str`
-- `NodeIds`: `List`\[`str`\]
+- `NodeIds`: `Sequence`\[`str`\]
 
 ## ResumeWorkflowRunResponseTypeDef
 
@@ -5569,10 +5574,10 @@ Optional fields:
 - `CatalogId`: `str`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[PropertyPredicateTypeDef](./type_defs.md#propertypredicatetypedef)\]
+  `Sequence`\[[PropertyPredicateTypeDef](./type_defs.md#propertypredicatetypedef)\]
 - `SearchText`: `str`
 - `SortCriteria`:
-  `List`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
+  `Sequence`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
 - `MaxResults`: `int`
 - `ResourceShareType`:
   [ResourceShareTypeType](./literals.md#resourcesharetypetype)
@@ -5624,7 +5629,7 @@ Optional fields:
 
 - `Name`: `str`
 - `SerializationLibrary`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 
 ## SkewedInfoTypeDef
 
@@ -5634,9 +5639,9 @@ from mypy_boto3_glue.type_defs import SkewedInfoTypeDef
 
 Optional fields:
 
-- `SkewedColumnNames`: `List`\[`str`\]
-- `SkewedColumnValues`: `List`\[`str`\]
-- `SkewedColumnValueLocationMaps`: `Dict`\[`str`, `str`\]
+- `SkewedColumnNames`: `Sequence`\[`str`\]
+- `SkewedColumnValues`: `Sequence`\[`str`\]
+- `SkewedColumnValueLocationMaps`: `Mapping`\[`str`, `str`\]
 
 ## SortCriterionTypeDef
 
@@ -5759,7 +5764,7 @@ Required fields:
 Optional fields:
 
 - `JobRunId`: `str`
-- `Arguments`: `Dict`\[`str`, `str`\]
+- `Arguments`: `Mapping`\[`str`, `str`\]
 - `AllocatedCapacity`: `int`
 - `Timeout`: `int`
 - `MaxCapacity`: `float`
@@ -5942,16 +5947,16 @@ from mypy_boto3_glue.type_defs import StorageDescriptorTypeDef
 
 Optional fields:
 
-- `Columns`: `List`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
+- `Columns`: `Sequence`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
 - `Location`: `str`
 - `InputFormat`: `str`
 - `OutputFormat`: `str`
 - `Compressed`: `bool`
 - `NumberOfBuckets`: `int`
 - `SerdeInfo`: [SerDeInfoTypeDef](./type_defs.md#serdeinfotypedef)
-- `BucketColumns`: `List`\[`str`\]
-- `SortColumns`: `List`\[[OrderTypeDef](./type_defs.md#ordertypedef)\]
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `BucketColumns`: `Sequence`\[`str`\]
+- `SortColumns`: `Sequence`\[[OrderTypeDef](./type_defs.md#ordertypedef)\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 - `SkewedInfo`: [SkewedInfoTypeDef](./type_defs.md#skewedinfotypedef)
 - `StoredAsSubDirectories`: `bool`
 - `SchemaReference`:
@@ -6012,11 +6017,11 @@ Optional fields:
 - `Retention`: `int`
 - `StorageDescriptor`:
   [StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef)
-- `PartitionKeys`: `List`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
+- `PartitionKeys`: `Sequence`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
 - `ViewOriginalText`: `str`
 - `ViewExpandedText`: `str`
 - `TableType`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
+- `Parameters`: `Mapping`\[`str`, `str`\]
 - `TargetTable`:
   [TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef)
 
@@ -6085,7 +6090,7 @@ from mypy_boto3_glue.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagsToAdd`: `Dict`\[`str`, `str`\]
+- `TagsToAdd`: `Mapping`\[`str`, `str`\]
 
 ## TaskRunFilterCriteriaTypeDef
 
@@ -6179,7 +6184,8 @@ Optional fields:
 - `CreatedAfter`: `Union`\[`datetime`, `str`\]
 - `LastModifiedBefore`: `Union`\[`datetime`, `str`\]
 - `LastModifiedAfter`: `Union`\[`datetime`, `str`\]
-- `Schema`: `List`\[[SchemaColumnTypeDef](./type_defs.md#schemacolumntypedef)\]
+- `Schema`:
+  `Sequence`\[[SchemaColumnTypeDef](./type_defs.md#schemacolumntypedef)\]
 
 ## TransformParametersTypeDef
 
@@ -6250,7 +6256,7 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `Schedule`: `str`
-- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
 - `EventBatchingCondition`:
   [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
@@ -6264,7 +6270,7 @@ from mypy_boto3_glue.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagsToRemove`: `List`\[`str`\]
+- `TagsToRemove`: `Sequence`\[`str`\]
 
 ## UpdateBlueprintRequestRequestTypeDef
 
@@ -6320,9 +6326,9 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
-- `PartitionValues`: `List`\[`str`\]
+- `PartitionValues`: `Sequence`\[`str`\]
 - `ColumnStatisticsList`:
-  `List`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
+  `Sequence`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
 
 Optional fields:
 
@@ -6352,7 +6358,7 @@ Required fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 - `ColumnStatisticsList`:
-  `List`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
+  `Sequence`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
 
 Optional fields:
 
@@ -6404,7 +6410,7 @@ Optional fields:
 - `Description`: `str`
 - `Targets`: [CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef)
 - `Schedule`: `str`
-- `Classifiers`: `List`\[`str`\]
+- `Classifiers`: `Sequence`\[`str`\]
 - `TablePrefix`: `str`
 - `SchemaChangePolicy`:
   [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
@@ -6443,7 +6449,7 @@ Optional fields:
 - `Delimiter`: `str`
 - `QuoteSymbol`: `str`
 - `ContainsHeader`: [CsvHeaderOptionType](./literals.md#csvheaderoptiontype)
-- `Header`: `List`\[`str`\]
+- `Header`: `Sequence`\[`str`\]
 - `DisableValueTrimming`: `bool`
 - `AllowSingleColumn`: `bool`
 
@@ -6475,13 +6481,13 @@ Required fields:
 Optional fields:
 
 - `PublicKey`: `str`
-- `AddPublicKeys`: `List`\[`str`\]
-- `DeletePublicKeys`: `List`\[`str`\]
+- `AddPublicKeys`: `Sequence`\[`str`\]
+- `DeletePublicKeys`: `Sequence`\[`str`\]
 - `CustomLibraries`:
   [DevEndpointCustomLibrariesTypeDef](./type_defs.md#devendpointcustomlibrariestypedef)
 - `UpdateEtlLibraries`: `bool`
-- `DeleteArguments`: `List`\[`str`\]
-- `AddArguments`: `Dict`\[`str`, `str`\]
+- `DeleteArguments`: `Sequence`\[`str`\]
+- `AddArguments`: `Mapping`\[`str`, `str`\]
 
 ## UpdateGrokClassifierRequestTypeDef
 
@@ -6582,7 +6588,7 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
-- `PartitionValueList`: `List`\[`str`\]
+- `PartitionValueList`: `Sequence`\[`str`\]
 - `PartitionInput`:
   [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)
 
@@ -6714,7 +6720,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `DefaultRunProperties`: `Dict`\[`str`, `str`\]
+- `DefaultRunProperties`: `Mapping`\[`str`, `str`\]
 - `MaxConcurrentRuns`: `int`
 
 ## UpdateWorkflowResponseTypeDef
@@ -6757,7 +6763,7 @@ Optional fields:
 - `OwnerName`: `str`
 - `OwnerType`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `ResourceUris`:
-  `List`\[[ResourceUriTypeDef](./type_defs.md#resourceuritypedef)\]
+  `Sequence`\[[ResourceUriTypeDef](./type_defs.md#resourceuritypedef)\]
 
 ## UserDefinedFunctionTypeDef
 

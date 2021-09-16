@@ -139,6 +139,7 @@ from mypy_boto3_kinesis.literals import ConsumerStatusType, ...
 - [StreamExistsWaiterName](./literals.md#streamexistswaitername)
 - [StreamNotExistsWaiterName](./literals.md#streamnotexistswaitername)
 - [StreamStatusType](./literals.md#streamstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

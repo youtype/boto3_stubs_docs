@@ -597,7 +597,7 @@ Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `ConfigurationSetAttributeNames`:
-  `List`\[[ConfigurationSetAttributeType](./literals.md#configurationsetattributetype)\]
+  `Sequence`\[[ConfigurationSetAttributeType](./literals.md#configurationsetattributetype)\]
 
 Returns
 [DescribeConfigurationSetResponseTypeDef](./type_defs.md#describeconfigurationsetresponsetypedef).
@@ -653,7 +653,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -707,7 +707,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Identities`: `List`\[`str`\] *(required)*
+- `Identities`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [GetIdentityDkimAttributesResponseTypeDef](./type_defs.md#getidentitydkimattributesresponsetypedef).
@@ -728,7 +728,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Identities`: `List`\[`str`\] *(required)*
+- `Identities`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [GetIdentityMailFromDomainAttributesResponseTypeDef](./type_defs.md#getidentitymailfromdomainattributesresponsetypedef).
@@ -749,7 +749,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Identities`: `List`\[`str`\] *(required)*
+- `Identities`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [GetIdentityNotificationAttributesResponseTypeDef](./type_defs.md#getidentitynotificationattributesresponsetypedef).
@@ -770,7 +770,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Identity`: `str` *(required)*
-- `PolicyNames`: `List`\[`str`\] *(required)*
+- `PolicyNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [GetIdentityPoliciesResponseTypeDef](./type_defs.md#getidentitypoliciesresponsetypedef).
@@ -792,7 +792,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Identities`: `List`\[`str`\] *(required)*
+- `Identities`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [GetIdentityVerificationAttributesResponseTypeDef](./type_defs.md#getidentityverificationattributesresponsetypedef).
@@ -1051,7 +1051,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RuleSetName`: `str` *(required)*
-- `RuleNames`: `List`\[`str`\] *(required)*
+- `RuleNames`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1073,7 +1073,7 @@ Keyword-only arguments:
 - `OriginalMessageId`: `str` *(required)*
 - `BounceSender`: `str` *(required)*
 - `BouncedRecipientInfoList`:
-  `List`\[[BouncedRecipientInfoTypeDef](./type_defs.md#bouncedrecipientinfotypedef)\]
+  `Sequence`\[[BouncedRecipientInfoTypeDef](./type_defs.md#bouncedrecipientinfotypedef)\]
   *(required)*
 - `Explanation`: `str`
 - `MessageDsn`: [MessageDsnTypeDef](./type_defs.md#messagedsntypedef)
@@ -1098,15 +1098,15 @@ Keyword-only arguments:
 - `Source`: `str` *(required)*
 - `Template`: `str` *(required)*
 - `Destinations`:
-  `List`\[[BulkEmailDestinationTypeDef](./type_defs.md#bulkemaildestinationtypedef)\]
+  `Sequence`\[[BulkEmailDestinationTypeDef](./type_defs.md#bulkemaildestinationtypedef)\]
   *(required)*
 - `SourceArn`: `str`
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `ReturnPath`: `str`
 - `ReturnPathArn`: `str`
 - `ConfigurationSetName`: `str`
 - `DefaultTags`:
-  `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `TemplateArn`: `str`
 - `DefaultTemplateData`: `str`
 
@@ -1154,11 +1154,11 @@ Keyword-only arguments:
 - `Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
   *(required)*
 - `Message`: [MessageTypeDef](./type_defs.md#messagetypedef) *(required)*
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `ReturnPath`: `str`
 - `SourceArn`: `str`
 - `ReturnPathArn`: `str`
-- `Tags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+- `Tags`: `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
 Returns [SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef).
@@ -1180,11 +1180,11 @@ Keyword-only arguments:
 - `RawMessage`: [RawMessageTypeDef](./type_defs.md#rawmessagetypedef)
   *(required)*
 - `Source`: `str`
-- `Destinations`: `List`\[`str`\]
+- `Destinations`: `Sequence`\[`str`\]
 - `FromArn`: `str`
 - `SourceArn`: `str`
 - `ReturnPathArn`: `str`
-- `Tags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+- `Tags`: `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
 Returns
@@ -1210,11 +1210,11 @@ Keyword-only arguments:
   *(required)*
 - `Template`: `str` *(required)*
 - `TemplateData`: `str` *(required)*
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `ReturnPath`: `str`
 - `SourceArn`: `str`
 - `ReturnPathArn`: `str`
-- `Tags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+- `Tags`: `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 - `TemplateArn`: `str`
 

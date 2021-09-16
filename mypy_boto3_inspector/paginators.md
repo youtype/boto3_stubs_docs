@@ -64,7 +64,7 @@ Boto3 documentation:
 
 Arguments for `ListAssessmentRunsPaginator.paginate` method:
 
-- `assessmentTemplateArns`: `List`\[`str`\]
+- `assessmentTemplateArns`: `Sequence`\[`str`\]
 - `filter`:
   [AssessmentRunFilterTypeDef](./type_defs.md#assessmentrunfiltertypedef)
 - `PaginationConfig`:
@@ -119,7 +119,7 @@ Boto3 documentation:
 
 Arguments for `ListAssessmentTemplatesPaginator.paginate` method:
 
-- `assessmentTargetArns`: `List`\[`str`\]
+- `assessmentTargetArns`: `Sequence`\[`str`\]
 - `filter`:
   [AssessmentTemplateFilterTypeDef](./type_defs.md#assessmenttemplatefiltertypedef)
 - `PaginationConfig`:
@@ -199,7 +199,7 @@ Boto3 documentation:
 
 Arguments for `ListFindingsPaginator.paginate` method:
 
-- `assessmentRunArns`: `List`\[`str`\]
+- `assessmentRunArns`: `Sequence`\[`str`\]
 - `filter`: [FindingFilterTypeDef](./type_defs.md#findingfiltertypedef)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

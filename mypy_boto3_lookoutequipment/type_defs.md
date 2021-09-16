@@ -81,7 +81,7 @@ Required fields:
 Optional fields:
 
 - `ServerSideKmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDatasetResponseTypeDef
 
@@ -120,7 +120,7 @@ Optional fields:
 
 - `DataDelayOffsetInMinutes`: `int`
 - `ServerSideKmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateInferenceSchedulerResponseTypeDef
 
@@ -162,7 +162,7 @@ Optional fields:
 - `DataPreProcessingConfiguration`:
   [DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef)
 - `ServerSideKmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OffCondition`: `str`
 
 ## CreateModelResponseTypeDef
@@ -851,7 +851,7 @@ from mypy_boto3_lookoutequipment.type_defs import TagResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -873,7 +873,7 @@ from mypy_boto3_lookoutequipment.type_defs import UntagResourceRequestRequestTyp
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateInferenceSchedulerRequestRequestTypeDef
 

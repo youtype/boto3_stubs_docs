@@ -34,7 +34,7 @@ Boto3 documentation:
 Arguments for `AppExistsWaiter.wait` method:
 
 - `StackId`: `str`
-- `AppIds`: `List`\[`str`\]
+- `AppIds`: `Sequence`\[`str`\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## DeploymentSuccessfulWaiter
@@ -58,7 +58,7 @@ Arguments for `DeploymentSuccessfulWaiter.wait` method:
 
 - `StackId`: `str`
 - `AppId`: `str`
-- `DeploymentIds`: `List`\[`str`\]
+- `DeploymentIds`: `Sequence`\[`str`\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceOnlineWaiter
@@ -81,7 +81,7 @@ Arguments for `InstanceOnlineWaiter.wait` method:
 
 - `StackId`: `str`
 - `LayerId`: `str`
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceRegisteredWaiter
@@ -105,7 +105,7 @@ Arguments for `InstanceRegisteredWaiter.wait` method:
 
 - `StackId`: `str`
 - `LayerId`: `str`
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceStoppedWaiter
@@ -128,7 +128,7 @@ Arguments for `InstanceStoppedWaiter.wait` method:
 
 - `StackId`: `str`
 - `LayerId`: `str`
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## InstanceTerminatedWaiter
@@ -152,5 +152,5 @@ Arguments for `InstanceTerminatedWaiter.wait` method:
 
 - `StackId`: `str`
 - `LayerId`: `str`
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

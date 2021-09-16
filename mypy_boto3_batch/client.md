@@ -136,7 +136,7 @@ Keyword-only arguments:
 - `computeResources`:
   [ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef)
 - `serviceRole`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateComputeEnvironmentResponseTypeDef](./type_defs.md#createcomputeenvironmentresponsetypedef).
@@ -158,10 +158,10 @@ Keyword-only arguments:
 - `jobQueueName`: `str` *(required)*
 - `priority`: `int` *(required)*
 - `computeEnvironmentOrder`:
-  `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
+  `Sequence`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
   *(required)*
 - `state`: [JQStateType](./literals.md#jqstatetype)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateJobQueueResponseTypeDef](./type_defs.md#createjobqueueresponsetypedef).
@@ -235,7 +235,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `computeEnvironments`: `List`\[`str`\]
+- `computeEnvironments`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -256,7 +256,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `jobDefinitions`: `List`\[`str`\]
+- `jobDefinitions`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `jobDefinitionName`: `str`
 - `status`: `str`
@@ -279,7 +279,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `jobQueues`: `List`\[`str`\]
+- `jobQueues`: `Sequence`\[`str`\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -300,7 +300,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `jobs`: `List`\[`str`\] *(required)*
+- `jobs`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
@@ -317,7 +317,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -344,7 +344,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `filters`:
-  `List`\[[KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)\]
+  `Sequence`\[[KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)\]
 
 Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
@@ -384,7 +384,7 @@ Keyword-only arguments:
 - `jobDefinitionName`: `str` *(required)*
 - `type`: [JobDefinitionTypeType](./literals.md#jobdefinitiontypetype)
   *(required)*
-- `parameters`: `Dict`\[`str`, `str`\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 - `containerProperties`:
   [ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef)
 - `nodeProperties`:
@@ -392,9 +392,9 @@ Keyword-only arguments:
 - `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `propagateTags`: `bool`
 - `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `platformCapabilities`:
-  `List`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
+  `Sequence`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
 
 Returns
 [RegisterJobDefinitionResponseTypeDef](./type_defs.md#registerjobdefinitionresponsetypedef).
@@ -419,15 +419,15 @@ Keyword-only arguments:
 - `arrayProperties`:
   [ArrayPropertiesTypeDef](./type_defs.md#arraypropertiestypedef)
 - `dependsOn`:
-  `List`\[[JobDependencyTypeDef](./type_defs.md#jobdependencytypedef)\]
-- `parameters`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[JobDependencyTypeDef](./type_defs.md#jobdependencytypedef)\]
+- `parameters`: `Mapping`\[`str`, `str`\]
 - `containerOverrides`:
   [ContainerOverridesTypeDef](./type_defs.md#containeroverridestypedef)
 - `nodeOverrides`: [NodeOverridesTypeDef](./type_defs.md#nodeoverridestypedef)
 - `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 - `propagateTags`: `bool`
 - `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns [SubmitJobResponseTypeDef](./type_defs.md#submitjobresponsetypedef).
 
@@ -446,7 +446,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -484,7 +484,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -529,7 +529,7 @@ Keyword-only arguments:
 - `state`: [JQStateType](./literals.md#jqstatetype)
 - `priority`: `int`
 - `computeEnvironmentOrder`:
-  `List`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
+  `Sequence`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
 
 Returns
 [UpdateJobQueueResponseTypeDef](./type_defs.md#updatejobqueueresponsetypedef).

@@ -135,7 +135,7 @@ Keyword-only arguments:
 - `outputS3KeyPrefix`: `str` *(required)*
 - `shots`: `int` *(required)*
 - `deviceParameters`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateQuantumTaskResponseTypeDef](./type_defs.md#createquantumtaskresponsetypedef).
@@ -152,7 +152,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -229,7 +229,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `filters`:
-  `List`\[[SearchDevicesFilterTypeDef](./type_defs.md#searchdevicesfiltertypedef)\]
+  `Sequence`\[[SearchDevicesFilterTypeDef](./type_defs.md#searchdevicesfiltertypedef)\]
   *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -252,7 +252,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `filters`:
-  `List`\[[SearchQuantumTasksFilterTypeDef](./type_defs.md#searchquantumtasksfiltertypedef)\]
+  `Sequence`\[[SearchQuantumTasksFilterTypeDef](./type_defs.md#searchquantumtasksfiltertypedef)\]
   *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -275,7 +275,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -294,7 +294,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

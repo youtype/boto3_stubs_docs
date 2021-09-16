@@ -136,14 +136,14 @@ Keyword-only arguments:
 
 - `PipelineId`: `str` *(required)*
 - `Input`: [JobInputTypeDef](./type_defs.md#jobinputtypedef)
-- `Inputs`: `List`\[[JobInputTypeDef](./type_defs.md#jobinputtypedef)\]
+- `Inputs`: `Sequence`\[[JobInputTypeDef](./type_defs.md#jobinputtypedef)\]
 - `Output`: [CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)
 - `Outputs`:
-  `List`\[[CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)\]
+  `Sequence`\[[CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)\]
 - `OutputKeyPrefix`: `str`
 - `Playlists`:
-  `List`\[[CreateJobPlaylistTypeDef](./type_defs.md#createjobplaylisttypedef)\]
-- `UserMetadata`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[CreateJobPlaylistTypeDef](./type_defs.md#createjobplaylisttypedef)\]
+- `UserMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
@@ -250,7 +250,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -416,7 +416,7 @@ Keyword-only arguments:
 - `Role`: `str` *(required)*
 - `InputBucket`: `str` *(required)*
 - `OutputBucket`: `str` *(required)*
-- `Topics`: `List`\[`str`\] *(required)*
+- `Topics`: `Sequence`\[`str`\] *(required)*
 
 Returns [TestRoleResponseTypeDef](./type_defs.md#testroleresponsetypedef).
 

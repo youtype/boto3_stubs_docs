@@ -92,7 +92,7 @@ Arguments for `DescribeAffectedEntitiesForOrganizationPaginator.paginate`
 method:
 
 - `organizationEntityFilters`:
-  `List`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
+  `Sequence`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
   *(required)*
 - `locale`: `str`
 - `PaginationConfig`:

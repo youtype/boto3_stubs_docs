@@ -110,7 +110,7 @@ Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
 - `entries`:
-  `List`\[[AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)\]
+  `Sequence`\[[AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)\]
 
 Returns
 [BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef](./type_defs.md#batchassociateclientdevicewithcoredeviceresponsetypedef).
@@ -133,7 +133,7 @@ Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
 - `entries`:
-  `List`\[[DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef)\]
+  `Sequence`\[[DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef)\]
 
 Returns
 [BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredeviceresponsetypedef).
@@ -190,7 +190,7 @@ Keyword-only arguments:
 - `inlineRecipe`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `lambdaFunction`:
   [LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `clientToken`: `str`
 
 Returns
@@ -213,13 +213,13 @@ Keyword-only arguments:
 
 - `targetArn`: `str` *(required)*
 - `deploymentName`: `str`
-- `components`: `Dict`\[`str`,
+- `components`: `Mapping`\[`str`,
   [ComponentDeploymentSpecificationTypeDef](./type_defs.md#componentdeploymentspecificationtypedef)\]
 - `iotJobConfiguration`:
   [DeploymentIoTJobConfigurationTypeDef](./type_defs.md#deploymentiotjobconfigurationtypedef)
 - `deploymentPolicies`:
   [DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `clientToken`: `str`
 
 Returns
@@ -289,7 +289,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -574,7 +574,7 @@ Keyword-only arguments:
   [ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)
   *(required)*
 - `componentCandidates`:
-  `List`\[[ComponentCandidateTypeDef](./type_defs.md#componentcandidatetypedef)\]
+  `Sequence`\[[ComponentCandidateTypeDef](./type_defs.md#componentcandidatetypedef)\]
   *(required)*
 
 Returns
@@ -595,7 +595,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -614,7 +614,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

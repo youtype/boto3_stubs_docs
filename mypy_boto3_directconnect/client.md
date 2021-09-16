@@ -145,7 +145,7 @@ Keyword-only arguments:
 - `proposalId`: `str` *(required)*
 - `associatedGatewayOwnerAccount`: `str` *(required)*
 - `overrideAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 Returns
 [AcceptDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#acceptdirectconnectgatewayassociationproposalresulttypedef).
@@ -195,7 +195,7 @@ Keyword-only arguments:
 - `bandwidth`: `str` *(required)*
 - `connectionName`: `str` *(required)*
 - `vlan`: `int` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
@@ -497,7 +497,7 @@ Keyword-only arguments:
 - `bandwidth`: `str` *(required)*
 - `connectionName`: `str` *(required)*
 - `lagId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 - `requestMACSec`: `bool`
 
@@ -546,7 +546,7 @@ Keyword-only arguments:
 - `directConnectGatewayId`: `str` *(required)*
 - `gatewayId`: `str`
 - `addAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `virtualGatewayId`: `str`
 
 Returns
@@ -573,9 +573,9 @@ Keyword-only arguments:
 - `directConnectGatewayOwnerAccount`: `str` *(required)*
 - `gatewayId`: `str` *(required)*
 - `addAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `removeAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 Returns
 [CreateDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#createdirectconnectgatewayassociationproposalresulttypedef).
@@ -600,7 +600,7 @@ Keyword-only arguments:
 - `bandwidth`: `str` *(required)*
 - `location`: `str` *(required)*
 - `lagId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 
 Returns
@@ -627,8 +627,8 @@ Keyword-only arguments:
 - `connectionsBandwidth`: `str` *(required)*
 - `lagName`: `str` *(required)*
 - `connectionId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `childConnectionTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `childConnectionTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 - `requestMACSec`: `bool`
 
@@ -1162,7 +1162,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `resourceArns`: `List`\[`str`\] *(required)*
+- `resourceArns`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
@@ -1255,7 +1255,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1278,7 +1278,7 @@ Keyword-only arguments:
 
 - `testId`: `str`
 - `virtualInterfaceId`: `str`
-- `bgpPeers`: `List`\[`str`\]
+- `bgpPeers`: `Sequence`\[`str`\]
 - `status`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -1304,7 +1304,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `virtualInterfaceId`: `str` *(required)*
-- `bgpPeers`: `List`\[`str`\]
+- `bgpPeers`: `Sequence`\[`str`\]
 - `testDurationInMinutes`: `int`
 
 Returns
@@ -1345,7 +1345,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1364,7 +1364,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1407,9 +1407,9 @@ Keyword-only arguments:
 
 - `associationId`: `str`
 - `addAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `removeAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 Returns
 [UpdateDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#updatedirectconnectgatewayassociationresulttypedef).

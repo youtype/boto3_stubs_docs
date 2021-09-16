@@ -82,6 +82,7 @@ from mypy_boto3_cur.literals import AWSRegionType, ...
 - [ReportVersioningType](./literals.md#reportversioningtype)
 - [SchemaElementType](./literals.md#schemaelementtype)
 - [TimeUnitType](./literals.md#timeunittype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

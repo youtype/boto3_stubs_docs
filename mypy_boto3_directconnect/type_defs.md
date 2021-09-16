@@ -149,7 +149,7 @@ Required fields:
 Optional fields:
 
 - `overrideAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 ## AcceptDirectConnectGatewayAssociationProposalResultTypeDef
 
@@ -194,7 +194,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AllocatePrivateVirtualInterfaceRequestRequestTypeDef
 
@@ -557,7 +557,7 @@ Required fields:
 Optional fields:
 
 - `lagId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 - `requestMACSec`: `bool`
 
@@ -576,9 +576,9 @@ Required fields:
 Optional fields:
 
 - `addAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `removeAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 ## CreateDirectConnectGatewayAssociationProposalResultTypeDef
 
@@ -607,7 +607,7 @@ Optional fields:
 
 - `gatewayId`: `str`
 - `addAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `virtualGatewayId`: `str`
 
 ## CreateDirectConnectGatewayAssociationResultTypeDef
@@ -665,7 +665,7 @@ Required fields:
 Optional fields:
 
 - `lagId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 
 ## CreateLagRequestRequestTypeDef
@@ -684,8 +684,8 @@ Required fields:
 Optional fields:
 
 - `connectionId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `childConnectionTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `childConnectionTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `providerName`: `str`
 - `requestMACSec`: `bool`
 
@@ -1141,7 +1141,7 @@ from mypy_boto3_directconnect.type_defs import DescribeTagsRequestRequestTypeDef
 
 Required fields:
 
-- `resourceArns`: `List`\[`str`\]
+- `resourceArns`: `Sequence`\[`str`\]
 
 ## DescribeTagsResponseTypeDef
 
@@ -1433,7 +1433,7 @@ Optional fields:
 
 - `testId`: `str`
 - `virtualInterfaceId`: `str`
-- `bgpPeers`: `List`\[`str`\]
+- `bgpPeers`: `Sequence`\[`str`\]
 - `status`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -1551,7 +1551,7 @@ Optional fields:
 - `amazonAddress`: `str`
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `customerAddress`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewPrivateVirtualInterfaceTypeDef
 
@@ -1574,7 +1574,7 @@ Optional fields:
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `virtualGatewayId`: `str`
 - `directConnectGatewayId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewPublicVirtualInterfaceAllocationTypeDef
 
@@ -1595,8 +1595,8 @@ Optional fields:
 - `customerAddress`: `str`
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `routeFilterPrefixes`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewPublicVirtualInterfaceTypeDef
 
@@ -1617,8 +1617,8 @@ Optional fields:
 - `customerAddress`: `str`
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `routeFilterPrefixes`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewTransitVirtualInterfaceAllocationTypeDef
 
@@ -1636,7 +1636,7 @@ Optional fields:
 - `amazonAddress`: `str`
 - `customerAddress`: `str`
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## NewTransitVirtualInterfaceTypeDef
 
@@ -1655,7 +1655,7 @@ Optional fields:
 - `customerAddress`: `str`
 - `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `directConnectGatewayId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -1716,7 +1716,7 @@ Required fields:
 
 Optional fields:
 
-- `bgpPeers`: `List`\[`str`\]
+- `bgpPeers`: `Sequence`\[`str`\]
 - `testDurationInMinutes`: `int`
 
 ## StartBgpFailoverTestResponseTypeDef
@@ -1764,7 +1764,7 @@ from mypy_boto3_directconnect.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1789,7 +1789,7 @@ from mypy_boto3_directconnect.type_defs import UntagResourceRequestRequestTypeDe
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateConnectionRequestRequestTypeDef
 
@@ -1816,9 +1816,9 @@ Optional fields:
 
 - `associationId`: `str`
 - `addAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 - `removeAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
+  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
 
 ## UpdateDirectConnectGatewayAssociationResultTypeDef
 

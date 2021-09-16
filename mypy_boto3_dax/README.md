@@ -132,6 +132,7 @@ from mypy_boto3_dax.literals import ChangeTypeType, ...
 - [ParameterTypeType](./literals.md#parametertypetype)
 - [SSEStatusType](./literals.md#ssestatustype)
 - [SourceTypeType](./literals.md#sourcetypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

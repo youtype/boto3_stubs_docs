@@ -192,7 +192,7 @@ from mypy_boto3_personalize.type_defs import AutoMLConfigTypeDef
 Optional fields:
 
 - `metricName`: `str`
-- `recipeList`: `List`\[`str`\]
+- `recipeList`: `Sequence`\[`str`\]
 
 ## AutoMLResultTypeDef
 
@@ -212,7 +212,7 @@ from mypy_boto3_personalize.type_defs import BatchInferenceJobConfigTypeDef
 
 Optional fields:
 
-- `itemExplorationConfig`: `Dict`\[`str`, `str`\]
+- `itemExplorationConfig`: `Mapping`\[`str`, `str`\]
 
 ## BatchInferenceJobInputTypeDef
 
@@ -284,7 +284,7 @@ from mypy_boto3_personalize.type_defs import CampaignConfigTypeDef
 
 Optional fields:
 
-- `itemExplorationConfig`: `Dict`\[`str`, `str`\]
+- `itemExplorationConfig`: `Mapping`\[`str`, `str`\]
 
 ## CampaignSummaryTypeDef
 
@@ -348,7 +348,7 @@ from mypy_boto3_personalize.type_defs import CategoricalHyperParameterRangeTypeD
 Optional fields:
 
 - `name`: `str`
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## ContinuousHyperParameterRangeTypeDef
 
@@ -1426,11 +1426,11 @@ from mypy_boto3_personalize.type_defs import HyperParameterRangesTypeDef
 Optional fields:
 
 - `integerHyperParameterRanges`:
-  `List`\[[IntegerHyperParameterRangeTypeDef](./type_defs.md#integerhyperparameterrangetypedef)\]
+  `Sequence`\[[IntegerHyperParameterRangeTypeDef](./type_defs.md#integerhyperparameterrangetypedef)\]
 - `continuousHyperParameterRanges`:
-  `List`\[[ContinuousHyperParameterRangeTypeDef](./type_defs.md#continuoushyperparameterrangetypedef)\]
+  `Sequence`\[[ContinuousHyperParameterRangeTypeDef](./type_defs.md#continuoushyperparameterrangetypedef)\]
 - `categoricalHyperParameterRanges`:
-  `List`\[[CategoricalHyperParameterRangeTypeDef](./type_defs.md#categoricalhyperparameterrangetypedef)\]
+  `Sequence`\[[CategoricalHyperParameterRangeTypeDef](./type_defs.md#categoricalhyperparameterrangetypedef)\]
 
 ## IntegerHyperParameterRangeTypeDef
 
@@ -1849,8 +1849,8 @@ Optional fields:
 
 - `eventValueThreshold`: `str`
 - `hpoConfig`: [HPOConfigTypeDef](./type_defs.md#hpoconfigtypedef)
-- `algorithmHyperParameters`: `Dict`\[`str`, `str`\]
-- `featureTransformationParameters`: `Dict`\[`str`, `str`\]
+- `algorithmHyperParameters`: `Mapping`\[`str`, `str`\]
+- `featureTransformationParameters`: `Mapping`\[`str`, `str`\]
 - `autoMLConfig`: [AutoMLConfigTypeDef](./type_defs.md#automlconfigtypedef)
 - `optimizationObjective`:
   [OptimizationObjectiveTypeDef](./type_defs.md#optimizationobjectivetypedef)

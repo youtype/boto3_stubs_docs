@@ -100,6 +100,7 @@ from mypy_boto3_lookoutvision.literals import DatasetStatusType, ...
 - [ListProjectsPaginatorName](./literals.md#listprojectspaginatorname)
 - [ModelHostingStatusType](./literals.md#modelhostingstatustype)
 - [ModelStatusType](./literals.md#modelstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

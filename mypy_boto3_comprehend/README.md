@@ -177,6 +177,7 @@ from mypy_boto3_comprehend.literals import AugmentedManifestsDocumentTypeFormatT
 - [PiiEntityTypeType](./literals.md#piientitytypetype)
 - [SentimentTypeType](./literals.md#sentimenttypetype)
 - [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

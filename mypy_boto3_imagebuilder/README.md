@@ -128,6 +128,7 @@ from mypy_boto3_imagebuilder.literals import ComponentFormatType, ...
 - [PipelineExecutionStartConditionType](./literals.md#pipelineexecutionstartconditiontype)
 - [PipelineStatusType](./literals.md#pipelinestatustype)
 - [PlatformType](./literals.md#platformtype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

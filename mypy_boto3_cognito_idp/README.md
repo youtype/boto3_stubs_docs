@@ -260,6 +260,7 @@ from mypy_boto3_cognito_idp.literals import AccountTakeoverEventActionTypeType, 
 - [UsernameAttributeTypeType](./literals.md#usernameattributetypetype)
 - [VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)
 - [VerifySoftwareTokenResponseTypeType](./literals.md#verifysoftwaretokenresponsetypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

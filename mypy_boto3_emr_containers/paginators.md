@@ -35,7 +35,7 @@ Arguments for `ListJobRunsPaginator.paginate` method:
 - `createdBefore`: `Union`\[`datetime`, `str`\]
 - `createdAfter`: `Union`\[`datetime`, `str`\]
 - `name`: `str`
-- `states`: `List`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
+- `states`: `Sequence`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -64,8 +64,8 @@ Arguments for `ListManagedEndpointsPaginator.paginate` method:
 - `virtualClusterId`: `str` *(required)*
 - `createdBefore`: `Union`\[`datetime`, `str`\]
 - `createdAfter`: `Union`\[`datetime`, `str`\]
-- `types`: `List`\[`str`\]
-- `states`: `List`\[[EndpointStateType](./literals.md#endpointstatetype)\]
+- `types`: `Sequence`\[`str`\]
+- `states`: `Sequence`\[[EndpointStateType](./literals.md#endpointstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -97,7 +97,7 @@ Arguments for `ListVirtualClustersPaginator.paginate` method:
 - `createdAfter`: `Union`\[`datetime`, `str`\]
 - `createdBefore`: `Union`\[`datetime`, `str`\]
 - `states`:
-  `List`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
+  `Sequence`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

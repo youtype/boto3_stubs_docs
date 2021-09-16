@@ -165,7 +165,7 @@ Keyword-only arguments:
 
 - `BackupPlan`: [BackupPlanInputTypeDef](./type_defs.md#backupplaninputtypedef)
   *(required)*
-- `BackupPlanTags`: `Dict`\[`str`, `str`\]
+- `BackupPlanTags`: `Mapping`\[`str`, `str`\]
 - `CreatorRequestId`: `str`
 
 Returns
@@ -209,7 +209,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
-- `BackupVaultTags`: `Dict`\[`str`, `str`\]
+- `BackupVaultTags`: `Mapping`\[`str`, `str`\]
 - `EncryptionKeyArn`: `str`
 - `CreatorRequestId`: `str`
 
@@ -232,11 +232,11 @@ Keyword-only arguments:
 
 - `FrameworkName`: `str` *(required)*
 - `FrameworkControls`:
-  `List`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
+  `Sequence`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
   *(required)*
 - `FrameworkDescription`: `str`
 - `IdempotencyToken`: `str`
-- `FrameworkTags`: `Dict`\[`str`, `str`\]
+- `FrameworkTags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateFrameworkOutputTypeDef](./type_defs.md#createframeworkoutputtypedef).
@@ -262,7 +262,7 @@ Keyword-only arguments:
 - `ReportSetting`: [ReportSettingTypeDef](./type_defs.md#reportsettingtypedef)
   *(required)*
 - `ReportPlanDescription`: `str`
-- `ReportPlanTags`: `Dict`\[`str`, `str`\]
+- `ReportPlanTags`: `Mapping`\[`str`, `str`\]
 - `IdempotencyToken`: `str`
 
 Returns
@@ -658,7 +658,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1203,7 +1203,7 @@ Keyword-only arguments:
 - `BackupVaultName`: `str` *(required)*
 - `SNSTopicArn`: `str` *(required)*
 - `BackupVaultEvents`:
-  `List`\[[BackupVaultEventType](./literals.md#backupvaulteventtype)\]
+  `Sequence`\[[BackupVaultEventType](./literals.md#backupvaulteventtype)\]
   *(required)*
 
 ### start_backup_job
@@ -1227,8 +1227,8 @@ Keyword-only arguments:
 - `StartWindowMinutes`: `int`
 - `CompleteWindowMinutes`: `int`
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-- `RecoveryPointTags`: `Dict`\[`str`, `str`\]
-- `BackupOptions`: `Dict`\[`str`, `str`\]
+- `RecoveryPointTags`: `Mapping`\[`str`, `str`\]
+- `BackupOptions`: `Mapping`\[`str`, `str`\]
 
 Returns
 [StartBackupJobOutputTypeDef](./type_defs.md#startbackupjoboutputtypedef).
@@ -1291,7 +1291,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RecoveryPointArn`: `str` *(required)*
-- `Metadata`: `Dict`\[`str`, `str`\] *(required)*
+- `Metadata`: `Mapping`\[`str`, `str`\] *(required)*
 - `IamRoleArn`: `str` *(required)*
 - `IdempotencyToken`: `str`
 - `ResourceType`: `str`
@@ -1331,7 +1331,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -1351,7 +1351,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeyList`: `List`\[`str`\] *(required)*
+- `TagKeyList`: `Sequence`\[`str`\] *(required)*
 
 ### update_backup_plan
 
@@ -1393,7 +1393,7 @@ Keyword-only arguments:
 - `FrameworkName`: `str` *(required)*
 - `FrameworkDescription`: `str`
 - `FrameworkControls`:
-  `List`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
+  `Sequence`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
 - `IdempotencyToken`: `str`
 
 Returns
@@ -1414,7 +1414,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `GlobalSettings`: `Dict`\[`str`, `str`\]
+- `GlobalSettings`: `Mapping`\[`str`, `str`\]
 
 ### update_recovery_point_lifecycle
 
@@ -1452,7 +1452,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceTypeOptInPreference`: `Dict`\[`str`, `bool`\]
+- `ResourceTypeOptInPreference`: `Mapping`\[`str`, `bool`\]
 
 ### update_report_plan
 

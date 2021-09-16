@@ -83,6 +83,7 @@ from mypy_boto3_qldb.literals import EncryptionStatusType, ...
 - [PermissionsModeType](./literals.md#permissionsmodetype)
 - [S3ObjectEncryptionTypeType](./literals.md#s3objectencryptiontypetype)
 - [StreamStatusType](./literals.md#streamstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

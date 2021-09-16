@@ -165,7 +165,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -188,7 +188,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Catalog`: `str` *(required)*
-- `FilterList`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FilterList`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Sort`: [SortTypeDef](./type_defs.md#sorttypedef)
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -213,7 +213,7 @@ Keyword-only arguments:
 
 - `Catalog`: `str` *(required)*
 - `EntityType`: `str` *(required)*
-- `FilterList`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `FilterList`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Sort`: [SortTypeDef](./type_defs.md#sorttypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -237,7 +237,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Catalog`: `str` *(required)*
-- `ChangeSet`: `List`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
+- `ChangeSet`: `Sequence`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
   *(required)*
 - `ChangeSetName`: `str`
 - `ClientRequestToken`: `str`

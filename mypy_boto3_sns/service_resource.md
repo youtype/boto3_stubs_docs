@@ -215,7 +215,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Platform`: `str` *(required)*
-- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
+- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns [PlatformApplication](#platformapplication).
 
@@ -234,8 +234,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [Topic](#topic).
 
@@ -248,7 +248,7 @@ Type annotations for `boto3.resource("sns").get_available_subresources` method.
 Boto3 documentation:
 [SNS.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 ## PlatformApplication
 
@@ -314,7 +314,7 @@ Keyword-only arguments:
 
 - `Token`: `str` *(required)*
 - `CustomUserData`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 Returns [PlatformEndpoint](#platformendpoint).
 
@@ -337,7 +337,7 @@ Type annotations for `boto3.resource("sns").get_available_subresources` method.
 Boto3 documentation:
 [SNS.PlatformApplication.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### PlatformApplication.load method
 
@@ -374,7 +374,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
+- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
 ## PlatformEndpoint
 
@@ -417,7 +417,7 @@ Type annotations for `boto3.resource("sns").get_available_subresources` method.
 Boto3 documentation:
 [SNS.PlatformEndpoint.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### PlatformEndpoint.load method
 
@@ -450,7 +450,7 @@ Keyword-only arguments:
 - `PhoneNumber`: `str`
 - `Subject`: `str`
 - `MessageStructure`: `str`
-- `MessageAttributes`: `Dict`\[`str`,
+- `MessageAttributes`: `Mapping`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
@@ -482,7 +482,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
+- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
 ## Subscription
 
@@ -525,7 +525,7 @@ Type annotations for `boto3.resource("sns").get_available_subresources` method.
 Boto3 documentation:
 [SNS.Subscription.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Subscription.load method
 
@@ -628,8 +628,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Label`: `str` *(required)*
-- `AWSAccountId`: `List`\[`str`\] *(required)*
-- `ActionName`: `List`\[`str`\] *(required)*
+- `AWSAccountId`: `Sequence`\[`str`\] *(required)*
+- `ActionName`: `Sequence`\[`str`\] *(required)*
 
 #### Topic.confirm_subscription method
 
@@ -669,7 +669,7 @@ Type annotations for `boto3.resource("sns").get_available_subresources` method.
 Boto3 documentation:
 [SNS.Topic.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.get_available_subresources)
 
-Returns `List`\[`str`\].
+Returns `Sequence`\[`str`\].
 
 #### Topic.load method
 
@@ -702,7 +702,7 @@ Keyword-only arguments:
 - `PhoneNumber`: `str`
 - `Subject`: `str`
 - `MessageStructure`: `str`
-- `MessageAttributes`: `Dict`\[`str`,
+- `MessageAttributes`: `Mapping`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
@@ -768,7 +768,7 @@ Keyword-only arguments:
 
 - `Protocol`: `str` *(required)*
 - `Endpoint`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 - `ReturnSubscriptionArn`: `bool`
 
 Returns [Subscription](#subscription).

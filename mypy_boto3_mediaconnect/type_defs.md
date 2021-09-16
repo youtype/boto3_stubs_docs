@@ -120,7 +120,7 @@ Required fields:
 
 - `FlowArn`: `str`
 - `MediaStreams`:
-  `List`\[[AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef)\]
+  `Sequence`\[[AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef)\]
 
 ## AddFlowMediaStreamsResponseTypeDef
 
@@ -146,7 +146,7 @@ Required fields:
 
 - `FlowArn`: `str`
 - `Outputs`:
-  `List`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
+  `Sequence`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
 
 ## AddFlowOutputsResponseTypeDef
 
@@ -171,7 +171,7 @@ Required fields:
 
 - `FlowArn`: `str`
 - `Sources`:
-  `List`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
+  `Sequence`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
 
 ## AddFlowSourcesResponseTypeDef
 
@@ -196,7 +196,7 @@ Required fields:
 
 - `FlowArn`: `str`
 - `VpcInterfaces`:
-  `List`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
+  `Sequence`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
 
 ## AddFlowVpcInterfacesResponseTypeDef
 
@@ -244,13 +244,13 @@ Required fields:
 
 Optional fields:
 
-- `CidrAllowList`: `List`\[`str`\]
+- `CidrAllowList`: `Sequence`\[`str`\]
 - `Description`: `str`
 - `Destination`: `str`
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 - `MaxLatency`: `int`
 - `MediaStreamOutputConfigurations`:
-  `List`\[[MediaStreamOutputConfigurationRequestTypeDef](./type_defs.md#mediastreamoutputconfigurationrequesttypedef)\]
+  `Sequence`\[[MediaStreamOutputConfigurationRequestTypeDef](./type_defs.md#mediastreamoutputconfigurationrequesttypedef)\]
 - `MinLatency`: `int`
 - `Name`: `str`
 - `Port`: `int`
@@ -274,18 +274,18 @@ Optional fields:
 
 - `AvailabilityZone`: `str`
 - `Entitlements`:
-  `List`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
+  `Sequence`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
 - `MediaStreams`:
-  `List`\[[AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef)\]
+  `Sequence`\[[AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef)\]
 - `Outputs`:
-  `List`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
+  `Sequence`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
 - `Source`: [SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)
 - `SourceFailoverConfig`:
   [FailoverConfigTypeDef](./type_defs.md#failoverconfigtypedef)
 - `Sources`:
-  `List`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
+  `Sequence`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
 - `VpcInterfaces`:
-  `List`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
+  `Sequence`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
 
 ## CreateFlowResponseTypeDef
 
@@ -561,7 +561,7 @@ from mypy_boto3_mediaconnect.type_defs import GrantEntitlementRequestTypeDef
 
 Required fields:
 
-- `Subscribers`: `List`\[`str`\]
+- `Subscribers`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -581,7 +581,7 @@ from mypy_boto3_mediaconnect.type_defs import GrantFlowEntitlementsRequestReques
 Required fields:
 
 - `Entitlements`:
-  `List`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
+  `Sequence`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
 - `FlowArn`: `str`
 
 ## GrantFlowEntitlementsResponseTypeDef
@@ -831,7 +831,7 @@ Required fields:
 Optional fields:
 
 - `DestinationConfigurations`:
-  `List`\[[DestinationConfigurationRequestTypeDef](./type_defs.md#destinationconfigurationrequesttypedef)\]
+  `Sequence`\[[DestinationConfigurationRequestTypeDef](./type_defs.md#destinationconfigurationrequesttypedef)\]
 - `EncodingParameters`:
   [EncodingParametersRequestTypeDef](./type_defs.md#encodingparametersrequesttypedef)
 
@@ -867,7 +867,7 @@ Required fields:
 Optional fields:
 
 - `InputConfigurations`:
-  `List`\[[InputConfigurationRequestTypeDef](./type_defs.md#inputconfigurationrequesttypedef)\]
+  `Sequence`\[[InputConfigurationRequestTypeDef](./type_defs.md#inputconfigurationrequesttypedef)\]
 
 ## MediaStreamSourceConfigurationTypeDef
 
@@ -1191,7 +1191,7 @@ Optional fields:
 - `MaxLatency`: `int`
 - `MaxSyncBuffer`: `int`
 - `MediaStreamSourceConfigurations`:
-  `List`\[[MediaStreamSourceConfigurationRequestTypeDef](./type_defs.md#mediastreamsourceconfigurationrequesttypedef)\]
+  `Sequence`\[[MediaStreamSourceConfigurationRequestTypeDef](./type_defs.md#mediastreamsourceconfigurationrequesttypedef)\]
 - `MinLatency`: `int`
 - `Name`: `str`
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
@@ -1289,7 +1289,7 @@ from mypy_boto3_mediaconnect.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TransportTypeDef
 
@@ -1321,7 +1321,7 @@ from mypy_boto3_mediaconnect.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateEncryptionTypeDef
 
@@ -1373,7 +1373,7 @@ Optional fields:
   [UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef)
 - `EntitlementStatus`:
   [EntitlementStatusType](./literals.md#entitlementstatustype)
-- `Subscribers`: `List`\[`str`\]
+- `Subscribers`: `Sequence`\[`str`\]
 
 ## UpdateFlowEntitlementResponseTypeDef
 
@@ -1434,14 +1434,14 @@ Required fields:
 
 Optional fields:
 
-- `CidrAllowList`: `List`\[`str`\]
+- `CidrAllowList`: `Sequence`\[`str`\]
 - `Description`: `str`
 - `Destination`: `str`
 - `Encryption`:
   [UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef)
 - `MaxLatency`: `int`
 - `MediaStreamOutputConfigurations`:
-  `List`\[[MediaStreamOutputConfigurationRequestTypeDef](./type_defs.md#mediastreamoutputconfigurationrequesttypedef)\]
+  `Sequence`\[[MediaStreamOutputConfigurationRequestTypeDef](./type_defs.md#mediastreamoutputconfigurationrequesttypedef)\]
 - `MinLatency`: `int`
 - `Port`: `int`
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
@@ -1513,7 +1513,7 @@ Optional fields:
 - `MaxLatency`: `int`
 - `MaxSyncBuffer`: `int`
 - `MediaStreamSourceConfigurations`:
-  `List`\[[MediaStreamSourceConfigurationRequestTypeDef](./type_defs.md#mediastreamsourceconfigurationrequesttypedef)\]
+  `Sequence`\[[MediaStreamSourceConfigurationRequestTypeDef](./type_defs.md#mediastreamsourceconfigurationrequesttypedef)\]
 - `MinLatency`: `int`
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `StreamId`: `str`
@@ -1553,7 +1553,7 @@ Required fields:
 
 - `Name`: `str`
 - `RoleArn`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `SubnetId`: `str`
 
 Optional fields:

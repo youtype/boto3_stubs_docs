@@ -436,6 +436,7 @@ from mypy_boto3_medialive.literals import AacCodingModeType, ...
 - [VideoSelectorColorSpaceUsageType](./literals.md#videoselectorcolorspaceusagetype)
 - [WavCodingModeType](./literals.md#wavcodingmodetype)
 - [WebvttDestinationStyleControlType](./literals.md#webvttdestinationstylecontroltype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

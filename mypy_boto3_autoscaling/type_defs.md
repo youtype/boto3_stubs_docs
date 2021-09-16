@@ -229,7 +229,7 @@ Required fields:
 
 Optional fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 ## AttachLoadBalancerTargetGroupsTypeRequestTypeDef
 
@@ -240,7 +240,7 @@ from mypy_boto3_autoscaling.type_defs import AttachLoadBalancerTargetGroupsTypeR
 Required fields:
 
 - `AutoScalingGroupName`: `str`
-- `TargetGroupARNs`: `List`\[`str`\]
+- `TargetGroupARNs`: `Sequence`\[`str`\]
 
 ## AttachLoadBalancersTypeRequestTypeDef
 
@@ -251,7 +251,7 @@ from mypy_boto3_autoscaling.type_defs import AttachLoadBalancersTypeRequestTypeD
 Required fields:
 
 - `AutoScalingGroupName`: `str`
-- `LoadBalancerNames`: `List`\[`str`\]
+- `LoadBalancerNames`: `Sequence`\[`str`\]
 
 ## AutoScalingGroupNamesTypeRequestTypeDef
 
@@ -261,7 +261,7 @@ from mypy_boto3_autoscaling.type_defs import AutoScalingGroupNamesTypeRequestTyp
 
 Optional fields:
 
-- `AutoScalingGroupNames`: `List`\[`str`\]
+- `AutoScalingGroupNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
@@ -387,7 +387,7 @@ from mypy_boto3_autoscaling.type_defs import BatchDeleteScheduledActionTypeReque
 Required fields:
 
 - `AutoScalingGroupName`: `str`
-- `ScheduledActionNames`: `List`\[`str`\]
+- `ScheduledActionNames`: `Sequence`\[`str`\]
 
 ## BatchPutScheduledUpdateGroupActionAnswerTypeDef
 
@@ -412,7 +412,7 @@ Required fields:
 
 - `AutoScalingGroupName`: `str`
 - `ScheduledUpdateGroupActions`:
-  `List`\[[ScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#scheduledupdategroupactionrequesttypedef)\]
+  `Sequence`\[[ScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#scheduledupdategroupactionrequesttypedef)\]
 
 ## BlockDeviceMappingTypeDef
 
@@ -502,19 +502,19 @@ Optional fields:
 - `InstanceId`: `str`
 - `DesiredCapacity`: `int`
 - `DefaultCooldown`: `int`
-- `AvailabilityZones`: `List`\[`str`\]
-- `LoadBalancerNames`: `List`\[`str`\]
-- `TargetGroupARNs`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
+- `LoadBalancerNames`: `Sequence`\[`str`\]
+- `TargetGroupARNs`: `Sequence`\[`str`\]
 - `HealthCheckType`: `str`
 - `HealthCheckGracePeriod`: `int`
 - `PlacementGroup`: `str`
 - `VPCZoneIdentifier`: `str`
-- `TerminationPolicies`: `List`\[`str`\]
+- `TerminationPolicies`: `Sequence`\[`str`\]
 - `NewInstancesProtectedFromScaleIn`: `bool`
 - `CapacityRebalance`: `bool`
 - `LifecycleHookSpecificationList`:
-  `List`\[[LifecycleHookSpecificationTypeDef](./type_defs.md#lifecyclehookspecificationtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[LifecycleHookSpecificationTypeDef](./type_defs.md#lifecyclehookspecificationtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ServiceLinkedRoleARN`: `str`
 - `MaxInstanceLifetime`: `int`
 - `Context`: `str`
@@ -533,16 +533,16 @@ Optional fields:
 
 - `ImageId`: `str`
 - `KeyName`: `str`
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `ClassicLinkVPCId`: `str`
-- `ClassicLinkVPCSecurityGroups`: `List`\[`str`\]
+- `ClassicLinkVPCSecurityGroups`: `Sequence`\[`str`\]
 - `UserData`: `str`
 - `InstanceId`: `str`
 - `InstanceType`: `str`
 - `KernelId`: `str`
 - `RamdiskId`: `str`
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `InstanceMonitoring`:
   [InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef)
 - `SpotPrice`: `str`
@@ -561,7 +561,7 @@ from mypy_boto3_autoscaling.type_defs import CreateOrUpdateTagsTypeRequestTypeDe
 
 Required fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CustomizedMetricSpecificationTypeDef
 
@@ -650,7 +650,7 @@ from mypy_boto3_autoscaling.type_defs import DeleteTagsTypeRequestTypeDef
 
 Required fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## DeleteWarmPoolTypeRequestTypeDef
 
@@ -702,7 +702,7 @@ from mypy_boto3_autoscaling.type_defs import DescribeAutoScalingInstancesTypeReq
 
 Optional fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
@@ -744,7 +744,7 @@ Required fields:
 
 Optional fields:
 
-- `InstanceRefreshIds`: `List`\[`str`\]
+- `InstanceRefreshIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
@@ -785,7 +785,7 @@ Required fields:
 
 Optional fields:
 
-- `LifecycleHookNames`: `List`\[`str`\]
+- `LifecycleHookNames`: `Sequence`\[`str`\]
 
 ## DescribeLoadBalancerTargetGroupsRequestRequestTypeDef
 
@@ -882,7 +882,7 @@ from mypy_boto3_autoscaling.type_defs import DescribeNotificationConfigurationsT
 
 Optional fields:
 
-- `AutoScalingGroupNames`: `List`\[`str`\]
+- `AutoScalingGroupNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
@@ -895,8 +895,8 @@ from mypy_boto3_autoscaling.type_defs import DescribePoliciesTypeRequestTypeDef
 Optional fields:
 
 - `AutoScalingGroupName`: `str`
-- `PolicyNames`: `List`\[`str`\]
-- `PolicyTypes`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
+- `PolicyTypes`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
@@ -908,7 +908,7 @@ from mypy_boto3_autoscaling.type_defs import DescribeScalingActivitiesTypeReques
 
 Optional fields:
 
-- `ActivityIds`: `List`\[`str`\]
+- `ActivityIds`: `Sequence`\[`str`\]
 - `AutoScalingGroupName`: `str`
 - `IncludeDeletedGroups`: `bool`
 - `MaxRecords`: `int`
@@ -923,7 +923,7 @@ from mypy_boto3_autoscaling.type_defs import DescribeScheduledActionsTypeRequest
 Optional fields:
 
 - `AutoScalingGroupName`: `str`
-- `ScheduledActionNames`: `List`\[`str`\]
+- `ScheduledActionNames`: `Sequence`\[`str`\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `NextToken`: `str`
@@ -937,7 +937,7 @@ from mypy_boto3_autoscaling.type_defs import DescribeTagsTypeRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
@@ -1021,7 +1021,7 @@ Required fields:
 
 Optional fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 ## DetachLoadBalancerTargetGroupsTypeRequestTypeDef
 
@@ -1032,7 +1032,7 @@ from mypy_boto3_autoscaling.type_defs import DetachLoadBalancerTargetGroupsTypeR
 Required fields:
 
 - `AutoScalingGroupName`: `str`
-- `TargetGroupARNs`: `List`\[`str`\]
+- `TargetGroupARNs`: `Sequence`\[`str`\]
 
 ## DetachLoadBalancersTypeRequestTypeDef
 
@@ -1043,7 +1043,7 @@ from mypy_boto3_autoscaling.type_defs import DetachLoadBalancersTypeRequestTypeD
 Required fields:
 
 - `AutoScalingGroupName`: `str`
-- `LoadBalancerNames`: `List`\[`str`\]
+- `LoadBalancerNames`: `Sequence`\[`str`\]
 
 ## DisableMetricsCollectionQueryRequestTypeDef
 
@@ -1057,7 +1057,7 @@ Required fields:
 
 Optional fields:
 
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 
 ## EbsTypeDef
 
@@ -1088,7 +1088,7 @@ Required fields:
 
 Optional fields:
 
-- `Metrics`: `List`\[`str`\]
+- `Metrics`: `Sequence`\[`str`\]
 
 ## EnabledMetricTypeDef
 
@@ -1126,7 +1126,7 @@ Required fields:
 
 Optional fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 ## ExecutePolicyTypeRequestTypeDef
 
@@ -1169,7 +1169,7 @@ Required fields:
 
 Optional fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 ## FailedScheduledUpdateGroupActionRequestTypeDef
 
@@ -1195,7 +1195,7 @@ from mypy_boto3_autoscaling.type_defs import FilterTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## GetPredictiveScalingForecastAnswerTypeDef
 
@@ -1364,7 +1364,7 @@ from mypy_boto3_autoscaling.type_defs import LaunchConfigurationNamesTypeRequest
 
 Optional fields:
 
-- `LaunchConfigurationNames`: `List`\[`str`\]
+- `LaunchConfigurationNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
 
@@ -1453,7 +1453,7 @@ Optional fields:
 - `LaunchTemplateSpecification`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - `Overrides`:
-  `List`\[[LaunchTemplateOverridesTypeDef](./type_defs.md#launchtemplateoverridestypedef)\]
+  `Sequence`\[[LaunchTemplateOverridesTypeDef](./type_defs.md#launchtemplateoverridestypedef)\]
 
 ## LifecycleHookSpecificationTypeDef
 
@@ -1772,7 +1772,7 @@ Required fields:
 
 - `AutoScalingGroupName`: `str`
 - `TopicARN`: `str`
-- `NotificationTypes`: `List`\[`str`\]
+- `NotificationTypes`: `Sequence`\[`str`\]
 
 ## PutScalingPolicyTypeRequestTypeDef
 
@@ -1795,7 +1795,7 @@ Optional fields:
 - `Cooldown`: `int`
 - `MetricAggregationType`: `str`
 - `StepAdjustments`:
-  `List`\[[StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef)\]
+  `Sequence`\[[StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef)\]
 - `EstimatedInstanceWarmup`: `int`
 - `TargetTrackingConfiguration`:
   [TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef)
@@ -1925,7 +1925,7 @@ Required fields:
 
 Optional fields:
 
-- `ScalingProcesses`: `List`\[`str`\]
+- `ScalingProcesses`: `Sequence`\[`str`\]
 
 ## ScheduledActionsTypeTypeDef
 
@@ -2019,7 +2019,7 @@ from mypy_boto3_autoscaling.type_defs import SetInstanceProtectionQueryRequestTy
 
 Required fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `AutoScalingGroupName`: `str`
 - `ProtectedFromScaleIn`: `bool`
 
@@ -2175,12 +2175,12 @@ Optional fields:
 - `MaxSize`: `int`
 - `DesiredCapacity`: `int`
 - `DefaultCooldown`: `int`
-- `AvailabilityZones`: `List`\[`str`\]
+- `AvailabilityZones`: `Sequence`\[`str`\]
 - `HealthCheckType`: `str`
 - `HealthCheckGracePeriod`: `int`
 - `PlacementGroup`: `str`
 - `VPCZoneIdentifier`: `str`
-- `TerminationPolicies`: `List`\[`str`\]
+- `TerminationPolicies`: `Sequence`\[`str`\]
 - `NewInstancesProtectedFromScaleIn`: `bool`
 - `ServiceLinkedRoleARN`: `str`
 - `MaxInstanceLifetime`: `int`

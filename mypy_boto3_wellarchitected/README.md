@@ -101,6 +101,7 @@ from mypy_boto3_wellarchitected.literals import AnswerReasonType, ...
 - [ShareStatusType](./literals.md#sharestatustype)
 - [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype)
 - [WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

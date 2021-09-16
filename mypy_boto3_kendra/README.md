@@ -144,6 +144,7 @@ from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType, .
 - [ThesaurusStatusType](./literals.md#thesaurusstatustype)
 - [UserContextPolicyType](./literals.md#usercontextpolicytype)
 - [WebCrawlerModeType](./literals.md#webcrawlermodetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

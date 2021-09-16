@@ -34,7 +34,7 @@ Boto3 documentation:
 
 Arguments for `DescribeClustersPaginator.paginate` method:
 
-- `ClusterNames`: `List`\[`str`\]
+- `ClusterNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -114,7 +114,7 @@ Boto3 documentation:
 
 Arguments for `DescribeParameterGroupsPaginator.paginate` method:
 
-- `ParameterGroupNames`: `List`\[`str`\]
+- `ParameterGroupNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -167,7 +167,7 @@ Boto3 documentation:
 
 Arguments for `DescribeSubnetGroupsPaginator.paginate` method:
 
-- `SubnetGroupNames`: `List`\[`str`\]
+- `SubnetGroupNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

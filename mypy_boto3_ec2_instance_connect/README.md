@@ -15,6 +15,7 @@ pip install mypy-boto3-ec2-instance-connect
   - [EC2InstanceConnectClient](#ec2instanceconnectclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## EC2InstanceConnectClient
@@ -50,6 +51,18 @@ EC2InstanceConnectClient [exceptions](./client.md#exceptions)
 - SerialConsoleSessionUnavailableException
 - ServiceException
 - ThrottlingException
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2_instance_connect.literals import ServiceName, ...
+```
+
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

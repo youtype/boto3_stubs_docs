@@ -128,7 +128,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
-- `DocumentIdList`: `List`\[`str`\] *(required)*
+- `DocumentIdList`: `Sequence`\[`str`\] *(required)*
 - `DataSourceSyncJobMetricTarget`:
   [DataSourceSyncJobMetricTargetTypeDef](./type_defs.md#datasourcesyncjobmetrictargettypedef)
 
@@ -153,7 +153,7 @@ Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
 - `DocumentInfoList`:
-  `List`\[[DocumentInfoTypeDef](./type_defs.md#documentinfotypedef)\]
+  `Sequence`\[[DocumentInfoTypeDef](./type_defs.md#documentinfotypedef)\]
   *(required)*
 
 Returns
@@ -174,7 +174,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
-- `Documents`: `List`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\]
+- `Documents`: `Sequence`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\]
   *(required)*
 - `RoleArn`: `str`
 
@@ -234,7 +234,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Schedule`: `str`
 - `RoleArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 
 Returns
@@ -259,7 +259,7 @@ Keyword-only arguments:
 - `S3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef) *(required)*
 - `RoleArn`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 - `ClientToken`: `str`
 
@@ -286,9 +286,9 @@ Keyword-only arguments:
   [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - `Description`: `str`
 - `ClientToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UserTokenConfigurations`:
-  `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
+  `Sequence`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
 
@@ -316,7 +316,7 @@ Keyword-only arguments:
 - `RoleArn`: `str` *(required)*
 - `Description`: `str`
 - `ClientToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#createquerysuggestionsblocklistresponsetypedef).
@@ -340,7 +340,7 @@ Keyword-only arguments:
 - `RoleArn`: `str` *(required)*
 - `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef) *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 
 Returns
@@ -608,7 +608,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -849,12 +849,12 @@ Keyword-only arguments:
 - `QueryText`: `str` *(required)*
 - `AttributeFilter`:
   [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
-- `Facets`: `List`\[[FacetTypeDef](./type_defs.md#facettypedef)\]
-- `RequestedDocumentAttributes`: `List`\[`str`\]
+- `Facets`: `Sequence`\[[FacetTypeDef](./type_defs.md#facettypedef)\]
+- `RequestedDocumentAttributes`: `Sequence`\[`str`\]
 - `QueryResultTypeFilter`:
   [QueryResultTypeType](./literals.md#queryresulttypetype)
 - `DocumentRelevanceOverrideConfigurations`:
-  `List`\[[DocumentRelevanceConfigurationTypeDef](./type_defs.md#documentrelevanceconfigurationtypedef)\]
+  `Sequence`\[[DocumentRelevanceConfigurationTypeDef](./type_defs.md#documentrelevanceconfigurationtypedef)\]
 - `PageNumber`: `int`
 - `PageSize`: `int`
 - `SortingConfiguration`:
@@ -920,9 +920,9 @@ Keyword-only arguments:
 - `IndexId`: `str` *(required)*
 - `QueryId`: `str` *(required)*
 - `ClickFeedbackItems`:
-  `List`\[[ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef)\]
+  `Sequence`\[[ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef)\]
 - `RelevanceFeedbackItems`:
-  `List`\[[RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)\]
+  `Sequence`\[[RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)\]
 
 ### tag_resource
 
@@ -939,7 +939,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -958,7 +958,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1004,11 +1004,11 @@ Keyword-only arguments:
 - `RoleArn`: `str`
 - `Description`: `str`
 - `DocumentMetadataConfigurationUpdates`:
-  `List`\[[DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef)\]
+  `Sequence`\[[DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef)\]
 - `CapacityUnits`:
   [CapacityUnitsConfigurationTypeDef](./type_defs.md#capacityunitsconfigurationtypedef)
 - `UserTokenConfigurations`:
-  `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
+  `Sequence`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
 

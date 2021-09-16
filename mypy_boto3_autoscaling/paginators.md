@@ -38,7 +38,7 @@ Boto3 documentation:
 
 Arguments for `DescribeAutoScalingGroupsPaginator.paginate` method:
 
-- `AutoScalingGroupNames`: `List`\[`str`\]
+- `AutoScalingGroupNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -64,7 +64,7 @@ Boto3 documentation:
 
 Arguments for `DescribeAutoScalingInstancesPaginator.paginate` method:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -90,7 +90,7 @@ Boto3 documentation:
 
 Arguments for `DescribeLaunchConfigurationsPaginator.paginate` method:
 
-- `LaunchConfigurationNames`: `List`\[`str`\]
+- `LaunchConfigurationNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -168,7 +168,7 @@ Boto3 documentation:
 
 Arguments for `DescribeNotificationConfigurationsPaginator.paginate` method:
 
-- `AutoScalingGroupNames`: `List`\[`str`\]
+- `AutoScalingGroupNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -195,8 +195,8 @@ Boto3 documentation:
 Arguments for `DescribePoliciesPaginator.paginate` method:
 
 - `AutoScalingGroupName`: `str`
-- `PolicyNames`: `List`\[`str`\]
-- `PolicyTypes`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
+- `PolicyTypes`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -222,7 +222,7 @@ Boto3 documentation:
 
 Arguments for `DescribeScalingActivitiesPaginator.paginate` method:
 
-- `ActivityIds`: `List`\[`str`\]
+- `ActivityIds`: `Sequence`\[`str`\]
 - `AutoScalingGroupName`: `str`
 - `IncludeDeletedGroups`: `bool`
 - `PaginationConfig`:
@@ -251,7 +251,7 @@ Boto3 documentation:
 Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 
 - `AutoScalingGroupName`: `str`
-- `ScheduledActionNames`: `List`\[`str`\]
+- `ScheduledActionNames`: `Sequence`\[`str`\]
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `PaginationConfig`:
@@ -279,7 +279,7 @@ Boto3 documentation:
 
 Arguments for `DescribeTagsPaginator.paginate` method:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

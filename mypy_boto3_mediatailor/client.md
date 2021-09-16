@@ -125,12 +125,12 @@ Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 - `Outputs`:
-  `List`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
+  `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
   *(required)*
 - `PlaybackMode`: [PlaybackModeType](./literals.md#playbackmodetype)
   *(required)*
 - `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
@@ -156,7 +156,7 @@ Keyword-only arguments:
   *(required)*
 - `SourceLocationName`: `str` *(required)*
 - `VodSourceName`: `str` *(required)*
-- `AdBreaks`: `List`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
+- `AdBreaks`: `Sequence`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
 
 Returns
 [CreateProgramResponseTypeDef](./type_defs.md#createprogramresponsetypedef).
@@ -184,7 +184,7 @@ Keyword-only arguments:
   [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
 - `DefaultSegmentDeliveryConfiguration`:
   [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateSourceLocationResponseTypeDef](./type_defs.md#createsourcelocationresponsetypedef).
@@ -204,11 +204,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
+  `Sequence`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
   *(required)*
 - `SourceLocationName`: `str` *(required)*
 - `VodSourceName`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateVodSourceResponseTypeDef](./type_defs.md#createvodsourceresponsetypedef).
@@ -418,7 +418,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -650,7 +650,7 @@ Keyword-only arguments:
 - `Bumper`: [BumperTypeDef](./type_defs.md#bumpertypedef)
 - `CdnConfiguration`:
   [CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef)
-- `ConfigurationAliases`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `ConfigurationAliases`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
 - `DashConfiguration`:
   [DashConfigurationForPutTypeDef](./type_defs.md#dashconfigurationforputtypedef)
 - `LivePreRollConfiguration`:
@@ -660,7 +660,7 @@ Keyword-only arguments:
 - `Name`: `str`
 - `PersonalizationThresholdSeconds`: `int`
 - `SlateAdUrl`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `TranscodeProfileName`: `str`
 - `VideoContentSourceUrl`: `str`
 
@@ -718,7 +718,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -735,7 +735,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_channel
 
@@ -753,7 +753,7 @@ Keyword-only arguments:
 
 - `ChannelName`: `str` *(required)*
 - `Outputs`:
-  `List`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
+  `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
   *(required)*
 
 Returns
@@ -801,7 +801,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
+  `Sequence`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
   *(required)*
 - `SourceLocationName`: `str` *(required)*
 - `VodSourceName`: `str` *(required)*

@@ -96,8 +96,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef) *(required)*
-- `FeatureTypes`: `List`\[[FeatureTypeType](./literals.md#featuretypetype)\]
-  *(required)*
+- `FeatureTypes`:
+  `Sequence`\[[FeatureTypeType](./literals.md#featuretypetype)\] *(required)*
 - `HumanLoopConfig`:
   [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
 
@@ -169,7 +169,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -238,8 +238,8 @@ Keyword-only arguments:
 - `DocumentLocation`:
   [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)
   *(required)*
-- `FeatureTypes`: `List`\[[FeatureTypeType](./literals.md#featuretypetype)\]
-  *(required)*
+- `FeatureTypes`:
+  `Sequence`\[[FeatureTypeType](./literals.md#featuretypetype)\] *(required)*
 - `ClientRequestToken`: `str`
 - `JobTag`: `str`
 - `NotificationChannel`:

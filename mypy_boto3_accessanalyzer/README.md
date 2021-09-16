@@ -134,6 +134,7 @@ from mypy_boto3_accessanalyzer.literals import AccessPreviewStatusReasonCodeType
 - [TypeType](./literals.md#typetype)
 - [ValidatePolicyFindingTypeType](./literals.md#validatepolicyfindingtypetype)
 - [ValidatePolicyPaginatorName](./literals.md#validatepolicypaginatorname)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

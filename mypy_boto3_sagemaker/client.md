@@ -212,6 +212,7 @@ type annotations stubs module
     - [put_model_package_group_policy](#put_model_package_group_policy)
     - [register_devices](#register_devices)
     - [render_ui_template](#render_ui_template)
+    - [retry_pipeline_execution](#retry_pipeline_execution)
     - [search](#search)
     - [send_pipeline_execution_step_failure](#send_pipeline_execution_step_failure)
     - [send_pipeline_execution_step_success](#send_pipeline_execution_step_success)
@@ -343,7 +344,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns [AddTagsOutputTypeDef](./type_defs.md#addtagsoutputtypedef).
 
@@ -403,10 +404,10 @@ Keyword-only arguments:
 - `ActionType`: `str` *(required)*
 - `Description`: `str`
 - `Status`: [ActionStatusType](./literals.md#actionstatustype)
-- `Properties`: `Dict`\[`str`, `str`\]
+- `Properties`: `Mapping`\[`str`, `str`\]
 - `MetadataProperties`:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateActionResponseTypeDef](./type_defs.md#createactionresponsetypedef).
@@ -436,7 +437,7 @@ Keyword-only arguments:
 - `ValidationSpecification`:
   [AlgorithmValidationSpecificationTypeDef](./type_defs.md#algorithmvalidationspecificationtypedef)
 - `CertifyForMarketplace`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAlgorithmOutputTypeDef](./type_defs.md#createalgorithmoutputtypedef).
@@ -459,7 +460,7 @@ Keyword-only arguments:
 - `UserProfileName`: `str` *(required)*
 - `AppType`: [AppTypeType](./literals.md#apptypetype) *(required)*
 - `AppName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResourceSpec`: [ResourceSpecTypeDef](./type_defs.md#resourcespectypedef)
 
 Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
@@ -480,7 +481,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AppImageConfigName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KernelGatewayImageConfig`:
   [KernelGatewayImageConfigTypeDef](./type_defs.md#kernelgatewayimageconfigtypedef)
 
@@ -505,10 +506,10 @@ Keyword-only arguments:
   *(required)*
 - `ArtifactType`: `str` *(required)*
 - `ArtifactName`: `str`
-- `Properties`: `Dict`\[`str`, `str`\]
+- `Properties`: `Mapping`\[`str`, `str`\]
 - `MetadataProperties`:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateArtifactResponseTypeDef](./type_defs.md#createartifactresponsetypedef).
@@ -529,7 +530,7 @@ Keyword-only arguments:
 
 - `AutoMLJobName`: `str` *(required)*
 - `InputDataConfig`:
-  `List`\[[AutoMLChannelTypeDef](./type_defs.md#automlchanneltypedef)\]
+  `Sequence`\[[AutoMLChannelTypeDef](./type_defs.md#automlchanneltypedef)\]
   *(required)*
 - `OutputDataConfig`:
   [AutoMLOutputDataConfigTypeDef](./type_defs.md#automloutputdataconfigtypedef)
@@ -541,7 +542,7 @@ Keyword-only arguments:
 - `AutoMLJobConfig`:
   [AutoMLJobConfigTypeDef](./type_defs.md#automljobconfigtypedef)
 - `GenerateCandidateDefinitionsOnly`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ModelDeployConfig`:
   [ModelDeployConfigTypeDef](./type_defs.md#modeldeployconfigtypedef)
 
@@ -564,7 +565,7 @@ Keyword-only arguments:
 
 - `CodeRepositoryName`: `str` *(required)*
 - `GitConfig`: [GitConfigTypeDef](./type_defs.md#gitconfigtypedef) *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCodeRepositoryOutputTypeDef](./type_defs.md#createcoderepositoryoutputtypedef).
@@ -593,7 +594,7 @@ Keyword-only arguments:
   [StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef)
   *(required)*
 - `VpcConfig`: [NeoVpcConfigTypeDef](./type_defs.md#neovpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCompilationJobResponseTypeDef](./type_defs.md#createcompilationjobresponsetypedef).
@@ -617,8 +618,8 @@ Keyword-only arguments:
   *(required)*
 - `ContextType`: `str` *(required)*
 - `Description`: `str`
-- `Properties`: `Dict`\[`str`, `str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Properties`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateContextResponseTypeDef](./type_defs.md#createcontextresponsetypedef).
@@ -658,7 +659,7 @@ Keyword-only arguments:
   [MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef)
 - `StoppingCondition`:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDataQualityJobDefinitionResponseTypeDef](./type_defs.md#createdataqualityjobdefinitionresponsetypedef).
@@ -683,7 +684,7 @@ Keyword-only arguments:
   *(required)*
 - `RoleArn`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EnableIotRoleAlias`: `bool`
 
 ### create_domain
@@ -704,9 +705,9 @@ Keyword-only arguments:
 - `AuthMode`: [AuthModeType](./literals.md#authmodetype) *(required)*
 - `DefaultUserSettings`:
   [UserSettingsTypeDef](./type_defs.md#usersettingstypedef) *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `VpcId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AppNetworkAccessType`:
   [AppNetworkAccessTypeType](./literals.md#appnetworkaccesstypetype)
 - `HomeEfsFileSystemKmsKeyId`: `str`
@@ -739,7 +740,7 @@ Keyword-only arguments:
   [EdgeOutputConfigTypeDef](./type_defs.md#edgeoutputconfigtypedef)
   *(required)*
 - `ResourceKey`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ### create_endpoint
 
@@ -757,7 +758,7 @@ Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `EndpointConfigName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateEndpointOutputTypeDef](./type_defs.md#createendpointoutputtypedef).
@@ -778,11 +779,11 @@ Keyword-only arguments:
 
 - `EndpointConfigName`: `str` *(required)*
 - `ProductionVariants`:
-  `List`\[[ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef)\]
+  `Sequence`\[[ProductionVariantTypeDef](./type_defs.md#productionvarianttypedef)\]
   *(required)*
 - `DataCaptureConfig`:
   [DataCaptureConfigTypeDef](./type_defs.md#datacaptureconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `AsyncInferenceConfig`:
   [AsyncInferenceConfigTypeDef](./type_defs.md#asyncinferenceconfigtypedef)
@@ -807,7 +808,7 @@ Keyword-only arguments:
 - `ExperimentName`: `str` *(required)*
 - `DisplayName`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateExperimentResponseTypeDef](./type_defs.md#createexperimentresponsetypedef).
@@ -830,7 +831,7 @@ Keyword-only arguments:
 - `RecordIdentifierFeatureName`: `str` *(required)*
 - `EventTimeFeatureName`: `str` *(required)*
 - `FeatureDefinitions`:
-  `List`\[[FeatureDefinitionTypeDef](./type_defs.md#featuredefinitiontypedef)\]
+  `Sequence`\[[FeatureDefinitionTypeDef](./type_defs.md#featuredefinitiontypedef)\]
   *(required)*
 - `OnlineStoreConfig`:
   [OnlineStoreConfigTypeDef](./type_defs.md#onlinestoreconfigtypedef)
@@ -838,7 +839,7 @@ Keyword-only arguments:
   [OfflineStoreConfigTypeDef](./type_defs.md#offlinestoreconfigtypedef)
 - `RoleArn`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateFeatureGroupResponseTypeDef](./type_defs.md#createfeaturegroupresponsetypedef).
@@ -868,7 +869,7 @@ Keyword-only arguments:
   [HumanLoopRequestSourceTypeDef](./type_defs.md#humanlooprequestsourcetypedef)
 - `HumanLoopActivationConfig`:
   [HumanLoopActivationConfigTypeDef](./type_defs.md#humanloopactivationconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateFlowDefinitionResponseTypeDef](./type_defs.md#createflowdefinitionresponsetypedef).
@@ -890,7 +891,7 @@ Keyword-only arguments:
 - `HumanTaskUiName`: `str` *(required)*
 - `UiTemplate`: [UiTemplateTypeDef](./type_defs.md#uitemplatetypedef)
   *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateHumanTaskUiResponseTypeDef](./type_defs.md#createhumantaskuiresponsetypedef).
@@ -917,10 +918,10 @@ Keyword-only arguments:
 - `TrainingJobDefinition`:
   [HyperParameterTrainingJobDefinitionTypeDef](./type_defs.md#hyperparametertrainingjobdefinitiontypedef)
 - `TrainingJobDefinitions`:
-  `List`\[[HyperParameterTrainingJobDefinitionTypeDef](./type_defs.md#hyperparametertrainingjobdefinitiontypedef)\]
+  `Sequence`\[[HyperParameterTrainingJobDefinitionTypeDef](./type_defs.md#hyperparametertrainingjobdefinitiontypedef)\]
 - `WarmStartConfig`:
   [HyperParameterTuningJobWarmStartConfigTypeDef](./type_defs.md#hyperparametertuningjobwarmstartconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateHyperParameterTuningJobResponseTypeDef](./type_defs.md#createhyperparametertuningjobresponsetypedef).
@@ -943,7 +944,7 @@ Keyword-only arguments:
 - `RoleArn`: `str` *(required)*
 - `Description`: `str`
 - `DisplayName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateImageResponseTypeDef](./type_defs.md#createimageresponsetypedef).
@@ -999,7 +1000,7 @@ Keyword-only arguments:
   [LabelingJobStoppingConditionsTypeDef](./type_defs.md#labelingjobstoppingconditionstypedef)
 - `LabelingJobAlgorithmsConfig`:
   [LabelingJobAlgorithmsConfigTypeDef](./type_defs.md#labelingjobalgorithmsconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateLabelingJobResponseTypeDef](./type_defs.md#createlabelingjobresponsetypedef).
@@ -1023,10 +1024,10 @@ Keyword-only arguments:
 - `PrimaryContainer`:
   [ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)
 - `Containers`:
-  `List`\[[ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)\]
+  `Sequence`\[[ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)\]
 - `InferenceExecutionConfig`:
   [InferenceExecutionConfigTypeDef](./type_defs.md#inferenceexecutionconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `EnableNetworkIsolation`: `bool`
 
@@ -1067,7 +1068,7 @@ Keyword-only arguments:
   [MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef)
 - `StoppingCondition`:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateModelBiasJobDefinitionResponseTypeDef](./type_defs.md#createmodelbiasjobdefinitionresponsetypedef).
@@ -1107,7 +1108,7 @@ Keyword-only arguments:
   [MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef)
 - `StoppingCondition`:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateModelExplainabilityJobDefinitionResponseTypeDef](./type_defs.md#createmodelexplainabilityjobdefinitionresponsetypedef).
@@ -1138,7 +1139,7 @@ Keyword-only arguments:
 - `SourceAlgorithmSpecification`:
   [SourceAlgorithmSpecificationTypeDef](./type_defs.md#sourcealgorithmspecificationtypedef)
 - `CertifyForMarketplace`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ModelApprovalStatus`:
   [ModelApprovalStatusType](./literals.md#modelapprovalstatustype)
 - `MetadataProperties`:
@@ -1166,7 +1167,7 @@ Keyword-only arguments:
 
 - `ModelPackageGroupName`: `str` *(required)*
 - `ModelPackageGroupDescription`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateModelPackageGroupOutputTypeDef](./type_defs.md#createmodelpackagegroupoutputtypedef).
@@ -1206,7 +1207,7 @@ Keyword-only arguments:
   [MonitoringNetworkConfigTypeDef](./type_defs.md#monitoringnetworkconfigtypedef)
 - `StoppingCondition`:
   [MonitoringStoppingConditionTypeDef](./type_defs.md#monitoringstoppingconditiontypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateModelQualityJobDefinitionResponseTypeDef](./type_defs.md#createmodelqualityjobdefinitionresponsetypedef).
@@ -1231,7 +1232,7 @@ Keyword-only arguments:
 - `MonitoringScheduleConfig`:
   [MonitoringScheduleConfigTypeDef](./type_defs.md#monitoringscheduleconfigtypedef)
   *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateMonitoringScheduleResponseTypeDef](./type_defs.md#createmonitoringscheduleresponsetypedef).
@@ -1256,17 +1257,17 @@ Keyword-only arguments:
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `SubnetId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `LifecycleConfigName`: `str`
 - `DirectInternetAccess`:
   [DirectInternetAccessType](./literals.md#directinternetaccesstype)
 - `VolumeSizeInGB`: `int`
 - `AcceleratorTypes`:
-  `List`\[[NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype)\]
+  `Sequence`\[[NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype)\]
 - `DefaultCodeRepository`: `str`
-- `AdditionalCodeRepositories`: `List`\[`str`\]
+- `AdditionalCodeRepositories`: `Sequence`\[`str`\]
 - `RootAccess`: [RootAccessType](./literals.md#rootaccesstype)
 - `PlatformIdentifier`: `str`
 
@@ -1291,9 +1292,9 @@ Keyword-only arguments:
 
 - `NotebookInstanceLifecycleConfigName`: `str` *(required)*
 - `OnCreate`:
-  `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
+  `Sequence`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 - `OnStart`:
-  `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
+  `Sequence`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 
 Returns
 [CreateNotebookInstanceLifecycleConfigOutputTypeDef](./type_defs.md#createnotebookinstancelifecycleconfigoutputtypedef).
@@ -1318,7 +1319,7 @@ Keyword-only arguments:
 - `RoleArn`: `str` *(required)*
 - `PipelineDisplayName`: `str`
 - `PipelineDescription`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
@@ -1391,14 +1392,14 @@ Keyword-only arguments:
   *(required)*
 - `RoleArn`: `str` *(required)*
 - `ProcessingInputs`:
-  `List`\[[ProcessingInputTypeDef](./type_defs.md#processinginputtypedef)\]
+  `Sequence`\[[ProcessingInputTypeDef](./type_defs.md#processinginputtypedef)\]
 - `ProcessingOutputConfig`:
   [ProcessingOutputConfigTypeDef](./type_defs.md#processingoutputconfigtypedef)
 - `StoppingCondition`:
   [ProcessingStoppingConditionTypeDef](./type_defs.md#processingstoppingconditiontypedef)
-- `Environment`: `Dict`\[`str`, `str`\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 - `NetworkConfig`: [NetworkConfigTypeDef](./type_defs.md#networkconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ExperimentConfig`:
   [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 
@@ -1425,7 +1426,7 @@ Keyword-only arguments:
   [ServiceCatalogProvisioningDetailsTypeDef](./type_defs.md#servicecatalogprovisioningdetailstypedef)
   *(required)*
 - `ProjectDescription`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateProjectOutputTypeDef](./type_defs.md#createprojectoutputtypedef).
@@ -1450,7 +1451,7 @@ Keyword-only arguments:
 - `StudioLifecycleConfigAppType`:
   [StudioLifecycleConfigAppTypeType](./literals.md#studiolifecycleconfigapptypetype)
   *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateStudioLifecycleConfigResponseTypeDef](./type_defs.md#createstudiolifecycleconfigresponsetypedef).
@@ -1482,10 +1483,11 @@ Keyword-only arguments:
 - `StoppingCondition`:
   [StoppingConditionTypeDef](./type_defs.md#stoppingconditiontypedef)
   *(required)*
-- `HyperParameters`: `Dict`\[`str`, `str`\]
-- `InputDataConfig`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
+- `HyperParameters`: `Mapping`\[`str`, `str`\]
+- `InputDataConfig`:
+  `Sequence`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EnableNetworkIsolation`: `bool`
 - `EnableInterContainerTrafficEncryption`: `bool`
 - `EnableManagedSpotTraining`: `bool`
@@ -1494,7 +1496,7 @@ Keyword-only arguments:
 - `DebugHookConfig`:
   [DebugHookConfigTypeDef](./type_defs.md#debughookconfigtypedef)
 - `DebugRuleConfigurations`:
-  `List`\[[DebugRuleConfigurationTypeDef](./type_defs.md#debugruleconfigurationtypedef)\]
+  `Sequence`\[[DebugRuleConfigurationTypeDef](./type_defs.md#debugruleconfigurationtypedef)\]
 - `TensorBoardOutputConfig`:
   [TensorBoardOutputConfigTypeDef](./type_defs.md#tensorboardoutputconfigtypedef)
 - `ExperimentConfig`:
@@ -1502,8 +1504,8 @@ Keyword-only arguments:
 - `ProfilerConfig`:
   [ProfilerConfigTypeDef](./type_defs.md#profilerconfigtypedef)
 - `ProfilerRuleConfigurations`:
-  `List`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
-- `Environment`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 - `RetryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
 
 Returns
@@ -1537,10 +1539,10 @@ Keyword-only arguments:
   [ModelClientConfigTypeDef](./type_defs.md#modelclientconfigtypedef)
 - `MaxPayloadInMB`: `int`
 - `BatchStrategy`: [BatchStrategyType](./literals.md#batchstrategytype)
-- `Environment`: `Dict`\[`str`, `str`\]
+- `Environment`: `Mapping`\[`str`, `str`\]
 - `DataProcessing`:
   [DataProcessingTypeDef](./type_defs.md#dataprocessingtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ExperimentConfig`:
   [ExperimentConfigTypeDef](./type_defs.md#experimentconfigtypedef)
 
@@ -1566,7 +1568,7 @@ Keyword-only arguments:
 - `DisplayName`: `str`
 - `MetadataProperties`:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateTrialResponseTypeDef](./type_defs.md#createtrialresponsetypedef).
@@ -1591,15 +1593,15 @@ Keyword-only arguments:
   [TrialComponentStatusTypeDef](./type_defs.md#trialcomponentstatustypedef)
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
-- `Parameters`: `Dict`\[`str`,
+- `Parameters`: `Mapping`\[`str`,
   [TrialComponentParameterValueTypeDef](./type_defs.md#trialcomponentparametervaluetypedef)\]
-- `InputArtifacts`: `Dict`\[`str`,
+- `InputArtifacts`: `Mapping`\[`str`,
   [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
-- `OutputArtifacts`: `Dict`\[`str`,
+- `OutputArtifacts`: `Mapping`\[`str`,
   [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
 - `MetadataProperties`:
   [MetadataPropertiesTypeDef](./type_defs.md#metadatapropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateTrialComponentResponseTypeDef](./type_defs.md#createtrialcomponentresponsetypedef).
@@ -1622,7 +1624,7 @@ Keyword-only arguments:
 - `UserProfileName`: `str` *(required)*
 - `SingleSignOnUserIdentifier`: `str`
 - `SingleSignOnUserValue`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `UserSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 
 Returns
@@ -1647,7 +1649,7 @@ Keyword-only arguments:
 - `OidcConfig`: [OidcConfigTypeDef](./type_defs.md#oidcconfigtypedef)
 - `SourceIpConfig`:
   [SourceIpConfigTypeDef](./type_defs.md#sourceipconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateWorkforceResponseTypeDef](./type_defs.md#createworkforceresponsetypedef).
@@ -1668,13 +1670,13 @@ Keyword-only arguments:
 
 - `WorkteamName`: `str` *(required)*
 - `MemberDefinitions`:
-  `List`\[[MemberDefinitionTypeDef](./type_defs.md#memberdefinitiontypedef)\]
+  `Sequence`\[[MemberDefinitionTypeDef](./type_defs.md#memberdefinitiontypedef)\]
   *(required)*
 - `Description`: `str` *(required)*
 - `WorkforceName`: `str`
 - `NotificationConfiguration`:
   [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateWorkteamResponseTypeDef](./type_defs.md#createworkteamresponsetypedef).
@@ -2254,7 +2256,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2365,7 +2367,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DeviceFleetName`: `str` *(required)*
-- `DeviceNames`: `List`\[`str`\] *(required)*
+- `DeviceNames`: `Sequence`\[`str`\] *(required)*
 
 ### describe_action
 
@@ -3352,7 +3354,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -4932,9 +4934,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DeviceFleetName`: `str` *(required)*
-- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
+- `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
   *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ### render_ui_template
 
@@ -4958,6 +4960,27 @@ Keyword-only arguments:
 
 Returns
 [RenderUiTemplateResponseTypeDef](./type_defs.md#renderuitemplateresponsetypedef).
+
+### retry_pipeline_execution
+
+Retry the execution of the pipeline.
+
+Type annotations for `boto3.client("sagemaker").retry_pipeline_execution`
+method.
+
+Boto3 documentation:
+[SageMaker.Client.retry_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.retry_pipeline_execution)
+
+Arguments mapping described in
+[RetryPipelineExecutionRequestRequestTypeDef](./type_defs.md#retrypipelineexecutionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `PipelineExecutionArn`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+
+Returns
+[RetryPipelineExecutionResponseTypeDef](./type_defs.md#retrypipelineexecutionresponsetypedef).
 
 ### search
 
@@ -5024,7 +5047,7 @@ Keyword-only arguments:
 
 - `CallbackToken`: `str` *(required)*
 - `OutputParameters`:
-  `List`\[[OutputParameterTypeDef](./type_defs.md#outputparametertypedef)\]
+  `Sequence`\[[OutputParameterTypeDef](./type_defs.md#outputparametertypedef)\]
 - `ClientRequestToken`: `str`
 
 Returns
@@ -5084,7 +5107,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str` *(required)*
 - `PipelineExecutionDisplayName`: `str`
 - `PipelineParameters`:
-  `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `PipelineExecutionDescription`: `str`
 
 Returns
@@ -5292,8 +5315,8 @@ Keyword-only arguments:
 - `ActionName`: `str` *(required)*
 - `Description`: `str`
 - `Status`: [ActionStatusType](./literals.md#actionstatustype)
-- `Properties`: `Dict`\[`str`, `str`\]
-- `PropertiesToRemove`: `List`\[`str`\]
+- `Properties`: `Mapping`\[`str`, `str`\]
+- `PropertiesToRemove`: `Sequence`\[`str`\]
 
 Returns
 [UpdateActionResponseTypeDef](./type_defs.md#updateactionresponsetypedef).
@@ -5336,8 +5359,8 @@ Keyword-only arguments:
 
 - `ArtifactArn`: `str` *(required)*
 - `ArtifactName`: `str`
-- `Properties`: `Dict`\[`str`, `str`\]
-- `PropertiesToRemove`: `List`\[`str`\]
+- `Properties`: `Mapping`\[`str`, `str`\]
+- `PropertiesToRemove`: `Sequence`\[`str`\]
 
 Returns
 [UpdateArtifactResponseTypeDef](./type_defs.md#updateartifactresponsetypedef).
@@ -5379,8 +5402,8 @@ Keyword-only arguments:
 
 - `ContextName`: `str` *(required)*
 - `Description`: `str`
-- `Properties`: `Dict`\[`str`, `str`\]
-- `PropertiesToRemove`: `List`\[`str`\]
+- `Properties`: `Mapping`\[`str`, `str`\]
+- `PropertiesToRemove`: `Sequence`\[`str`\]
 
 Returns
 [UpdateContextResponseTypeDef](./type_defs.md#updatecontextresponsetypedef).
@@ -5422,7 +5445,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DeviceFleetName`: `str` *(required)*
-- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
+- `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
   *(required)*
 
 ### update_domain
@@ -5466,7 +5489,7 @@ Keyword-only arguments:
 - `EndpointConfigName`: `str` *(required)*
 - `RetainAllVariantProperties`: `bool`
 - `ExcludeRetainedVariantProperties`:
-  `List`\[[VariantPropertyTypeDef](./type_defs.md#variantpropertytypedef)\]
+  `Sequence`\[[VariantPropertyTypeDef](./type_defs.md#variantpropertytypedef)\]
 - `DeploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 
@@ -5491,7 +5514,7 @@ Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 - `DesiredWeightsAndCapacities`:
-  `List`\[[DesiredWeightAndCapacityTypeDef](./type_defs.md#desiredweightandcapacitytypedef)\]
+  `Sequence`\[[DesiredWeightAndCapacityTypeDef](./type_defs.md#desiredweightandcapacitytypedef)\]
   *(required)*
 
 Returns
@@ -5533,7 +5556,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ImageName`: `str` *(required)*
-- `DeleteProperties`: `List`\[`str`\]
+- `DeleteProperties`: `Sequence`\[`str`\]
 - `Description`: `str`
 - `DisplayName`: `str`
 - `RoleArn`: `str`
@@ -5608,9 +5631,9 @@ Keyword-only arguments:
 - `DisassociateLifecycleConfig`: `bool`
 - `VolumeSizeInGB`: `int`
 - `DefaultCodeRepository`: `str`
-- `AdditionalCodeRepositories`: `List`\[`str`\]
+- `AdditionalCodeRepositories`: `Sequence`\[`str`\]
 - `AcceleratorTypes`:
-  `List`\[[NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype)\]
+  `Sequence`\[[NotebookInstanceAcceleratorTypeType](./literals.md#notebookinstanceacceleratortypetype)\]
 - `DisassociateAcceleratorTypes`: `bool`
 - `DisassociateDefaultCodeRepository`: `bool`
 - `DisassociateAdditionalCodeRepositories`: `bool`
@@ -5636,9 +5659,9 @@ Keyword-only arguments:
 
 - `NotebookInstanceLifecycleConfigName`: `str` *(required)*
 - `OnCreate`:
-  `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
+  `Sequence`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 - `OnStart`:
-  `List`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
+  `Sequence`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -5705,7 +5728,7 @@ Keyword-only arguments:
 - `ProfilerConfig`:
   [ProfilerConfigForUpdateTypeDef](./type_defs.md#profilerconfigforupdatetypedef)
 - `ProfilerRuleConfigurations`:
-  `List`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
+  `Sequence`\[[ProfilerRuleConfigurationTypeDef](./type_defs.md#profilerruleconfigurationtypedef)\]
 
 Returns
 [UpdateTrainingJobResponseTypeDef](./type_defs.md#updatetrainingjobresponsetypedef).
@@ -5750,15 +5773,15 @@ Keyword-only arguments:
   [TrialComponentStatusTypeDef](./type_defs.md#trialcomponentstatustypedef)
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
-- `Parameters`: `Dict`\[`str`,
+- `Parameters`: `Mapping`\[`str`,
   [TrialComponentParameterValueTypeDef](./type_defs.md#trialcomponentparametervaluetypedef)\]
-- `ParametersToRemove`: `List`\[`str`\]
-- `InputArtifacts`: `Dict`\[`str`,
+- `ParametersToRemove`: `Sequence`\[`str`\]
+- `InputArtifacts`: `Mapping`\[`str`,
   [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
-- `InputArtifactsToRemove`: `List`\[`str`\]
-- `OutputArtifacts`: `Dict`\[`str`,
+- `InputArtifactsToRemove`: `Sequence`\[`str`\]
+- `OutputArtifacts`: `Mapping`\[`str`,
   [TrialComponentArtifactTypeDef](./type_defs.md#trialcomponentartifacttypedef)\]
-- `OutputArtifactsToRemove`: `List`\[`str`\]
+- `OutputArtifactsToRemove`: `Sequence`\[`str`\]
 
 Returns
 [UpdateTrialComponentResponseTypeDef](./type_defs.md#updatetrialcomponentresponsetypedef).
@@ -5822,7 +5845,7 @@ Keyword-only arguments:
 
 - `WorkteamName`: `str` *(required)*
 - `MemberDefinitions`:
-  `List`\[[MemberDefinitionTypeDef](./type_defs.md#memberdefinitiontypedef)\]
+  `Sequence`\[[MemberDefinitionTypeDef](./type_defs.md#memberdefinitiontypedef)\]
 - `Description`: `str`
 - `NotificationConfiguration`:
   [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)

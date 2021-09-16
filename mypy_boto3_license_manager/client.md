@@ -193,7 +193,7 @@ Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 - `Entitlements`:
-  `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
+  `Sequence`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
   *(required)*
 - `DigitalSignatureMethod`: `Literal['JWT_PS384']` (see
   [DigitalSignatureMethodType](./literals.md#digitalsignaturemethodtype))
@@ -201,7 +201,7 @@ Keyword-only arguments:
 - `ClientToken`: `str` *(required)*
 - `NodeId`: `str`
 - `CheckoutMetadata`:
-  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+  `Sequence`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 
 Returns
 [CheckoutBorrowLicenseResponseTypeDef](./type_defs.md#checkoutborrowlicenseresponsetypedef).
@@ -225,7 +225,7 @@ Keyword-only arguments:
   *(required)*
 - `KeyFingerprint`: `str` *(required)*
 - `Entitlements`:
-  `List`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
+  `Sequence`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
   *(required)*
 - `ClientToken`: `str` *(required)*
 - `Beneficiary`: `str`
@@ -251,10 +251,10 @@ Keyword-only arguments:
 - `ClientToken`: `str` *(required)*
 - `GrantName`: `str` *(required)*
 - `LicenseArn`: `str` *(required)*
-- `Principals`: `List`\[`str`\] *(required)*
+- `Principals`: `Sequence`\[`str`\] *(required)*
 - `HomeRegion`: `str` *(required)*
 - `AllowedOperations`:
-  `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
+  `Sequence`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
   *(required)*
 
 Returns
@@ -279,7 +279,7 @@ Keyword-only arguments:
 - `GrantArn`: `str` *(required)*
 - `GrantName`: `str`
 - `AllowedOperations`:
-  `List`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
+  `Sequence`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
 - `Status`: [GrantStatusType](./literals.md#grantstatustype)
 - `StatusReason`: `str`
 - `SourceVersion`: `str`
@@ -309,7 +309,7 @@ Keyword-only arguments:
 - `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
   *(required)*
 - `Entitlements`:
-  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
+  `Sequence`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
   *(required)*
 - `Beneficiary`: `str` *(required)*
 - `ConsumptionConfiguration`:
@@ -317,7 +317,7 @@ Keyword-only arguments:
   *(required)*
 - `ClientToken`: `str` *(required)*
 - `LicenseMetadata`:
-  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+  `Sequence`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 
 Returns
 [CreateLicenseResponseTypeDef](./type_defs.md#createlicenseresponsetypedef).
@@ -343,11 +343,11 @@ Keyword-only arguments:
 - `Description`: `str`
 - `LicenseCount`: `int`
 - `LicenseCountHardLimit`: `bool`
-- `LicenseRules`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `LicenseRules`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DisassociateWhenNotFound`: `bool`
 - `ProductInformationList`:
-  `List`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
+  `Sequence`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
 
 Returns
 [CreateLicenseConfigurationResponseTypeDef](./type_defs.md#createlicenseconfigurationresponsetypedef).
@@ -369,14 +369,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ReportGeneratorName`: `str` *(required)*
-- `Type`: `List`\[[ReportTypeType](./literals.md#reporttypetype)\] *(required)*
+- `Type`: `Sequence`\[[ReportTypeType](./literals.md#reporttypetype)\]
+  *(required)*
 - `ReportContext`: [ReportContextTypeDef](./type_defs.md#reportcontexttypedef)
   *(required)*
 - `ReportFrequency`:
   [ReportFrequencyTypeDef](./type_defs.md#reportfrequencytypedef) *(required)*
 - `ClientToken`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateLicenseManagerReportGeneratorResponseTypeDef](./type_defs.md#createlicensemanagerreportgeneratorresponsetypedef).
@@ -404,7 +405,7 @@ Keyword-only arguments:
 - `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
   *(required)*
 - `Entitlements`:
-  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
+  `Sequence`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
   *(required)*
 - `ConsumptionConfiguration`:
   [ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef)
@@ -412,7 +413,7 @@ Keyword-only arguments:
 - `Status`: [LicenseStatusType](./literals.md#licensestatustype) *(required)*
 - `ClientToken`: `str` *(required)*
 - `LicenseMetadata`:
-  `List`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+  `Sequence`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
 - `SourceVersion`: `str`
 
 Returns
@@ -434,9 +435,9 @@ Keyword-only arguments:
 
 - `LicenseArn`: `str` *(required)*
 - `ClientToken`: `str` *(required)*
-- `RoleArns`: `List`\[`str`\]
+- `RoleArns`: `Sequence`\[`str`\]
 - `ExpirationInDays`: `int`
-- `TokenProperties`: `List`\[`str`\]
+- `TokenProperties`: `Sequence`\[`str`\]
 
 Returns
 [CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
@@ -573,7 +574,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -594,7 +595,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Token`: `str` *(required)*
-- `TokenProperties`: `List`\[`str`\]
+- `TokenProperties`: `Sequence`\[`str`\]
 
 Returns
 [GetAccessTokenResponseTypeDef](./type_defs.md#getaccesstokenresponsetypedef).
@@ -748,8 +749,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `GrantArns`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `GrantArns`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -794,10 +795,10 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LicenseConfigurationArns`: `List`\[`str`\]
+- `LicenseConfigurationArns`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListLicenseConfigurationsResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponsetypedef).
@@ -818,7 +819,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -884,8 +885,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LicenseArns`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LicenseArns`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -907,8 +908,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `GrantArns`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `GrantArns`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -930,8 +931,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `LicenseArns`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `LicenseArns`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -956,7 +957,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
 
 Returns
 [ListResourceInventoryResponseTypeDef](./type_defs.md#listresourceinventoryresponsetypedef).
@@ -995,8 +996,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TokenIds`: `List`\[`str`\]
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `TokenIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1021,7 +1022,7 @@ Keyword-only arguments:
 - `LicenseConfigurationArn`: `str` *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [ListUsageForLicenseConfigurationResponseTypeDef](./type_defs.md#listusageforlicenseconfigurationresponsetypedef).
@@ -1060,7 +1061,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1079,7 +1080,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1101,13 +1102,13 @@ Keyword-only arguments:
 - `LicenseConfigurationArn`: `str` *(required)*
 - `LicenseConfigurationStatus`:
   [LicenseConfigurationStatusType](./literals.md#licenseconfigurationstatustype)
-- `LicenseRules`: `List`\[`str`\]
+- `LicenseRules`: `Sequence`\[`str`\]
 - `LicenseCount`: `int`
 - `LicenseCountHardLimit`: `bool`
 - `Name`: `str`
 - `Description`: `str`
 - `ProductInformationList`:
-  `List`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
+  `Sequence`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
 - `DisassociateWhenNotFound`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1130,7 +1131,8 @@ Keyword-only arguments:
 
 - `LicenseManagerReportGeneratorArn`: `str` *(required)*
 - `ReportGeneratorName`: `str` *(required)*
-- `Type`: `List`\[[ReportTypeType](./literals.md#reporttypetype)\] *(required)*
+- `Type`: `Sequence`\[[ReportTypeType](./literals.md#reporttypetype)\]
+  *(required)*
 - `ReportContext`: [ReportContextTypeDef](./type_defs.md#reportcontexttypedef)
   *(required)*
 - `ReportFrequency`:
@@ -1159,9 +1161,9 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `AddLicenseSpecifications`:
-  `List`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
+  `Sequence`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
 - `RemoveLicenseSpecifications`:
-  `List`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
+  `Sequence`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 

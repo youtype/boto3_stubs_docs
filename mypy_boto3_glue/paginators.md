@@ -99,7 +99,7 @@ Boto3 documentation:
 
 Arguments for `GetCrawlerMetricsPaginator.paginate` method:
 
-- `CrawlerNameList`: `List`\[`str`\]
+- `CrawlerNameList`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

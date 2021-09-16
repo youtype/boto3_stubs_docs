@@ -47,7 +47,7 @@ Required fields:
 
 - `ClusterIdentifier`: `str`
 - `Database`: `str`
-- `Sqls`: `List`\[`str`\]
+- `Sqls`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -210,7 +210,7 @@ Optional fields:
 
 - `DbUser`: `str`
 - `Parameters`:
-  `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
+  `Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
 - `SecretArn`: `str`
 - `StatementName`: `str`
 - `WithEvent`: `bool`

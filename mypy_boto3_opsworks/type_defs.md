@@ -216,7 +216,7 @@ from mypy_boto3_opsworks.type_defs import AssignInstanceRequestRequestTypeDef
 Required fields:
 
 - `InstanceId`: `str`
-- `LayerIds`: `List`\[`str`\]
+- `LayerIds`: `Sequence`\[`str`\]
 
 ## AssignVolumeRequestRequestTypeDef
 
@@ -313,7 +313,7 @@ Optional fields:
 - `Name`: `str`
 - `Region`: `str`
 - `VpcId`: `str`
-- `Attributes`: `Dict`\[`Literal['Color']` (see
+- `Attributes`: `Mapping`\[`Literal['Color']` (see
   [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
 - `DefaultInstanceProfileArn`: `str`
 - `DefaultOs`: `str`
@@ -330,7 +330,7 @@ Optional fields:
 - `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
 - `DefaultSshKeyName`: `str`
 - `ClonePermissions`: `bool`
-- `CloneAppIds`: `List`\[`str`\]
+- `CloneAppIds`: `Sequence`\[`str`\]
 - `DefaultRootDeviceType`:
   [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `AgentVersion`: `str`
@@ -357,7 +357,7 @@ Optional fields:
 
 - `Enabled`: `bool`
 - `LogStreams`:
-  `List`\[[CloudWatchLogsLogStreamTypeDef](./type_defs.md#cloudwatchlogslogstreamtypedef)\]
+  `Sequence`\[[CloudWatchLogsLogStreamTypeDef](./type_defs.md#cloudwatchlogslogstreamtypedef)\]
 
 ## CloudWatchLogsLogStreamTypeDef
 
@@ -418,16 +418,17 @@ Optional fields:
 - `Shortname`: `str`
 - `Description`: `str`
 - `DataSources`:
-  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
+  `Sequence`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
 - `AppSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `Domains`: `List`\[`str`\]
+- `Domains`: `Sequence`\[`str`\]
 - `EnableSsl`: `bool`
 - `SslConfiguration`:
   [SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef)
 - `Attributes`:
-  `Dict`\[[AppAttributesKeysType](./literals.md#appattributeskeystype), `str`\]
+  `Mapping`\[[AppAttributesKeysType](./literals.md#appattributeskeystype),
+  `str`\]
 - `Environment`:
-  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
+  `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
 ## CreateAppResultTypeDef
 
@@ -456,8 +457,8 @@ Required fields:
 Optional fields:
 
 - `AppId`: `str`
-- `InstanceIds`: `List`\[`str`\]
-- `LayerIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
+- `LayerIds`: `Sequence`\[`str`\]
 - `Comment`: `str`
 - `CustomJson`: `str`
 
@@ -482,7 +483,7 @@ from mypy_boto3_opsworks.type_defs import CreateInstanceRequestRequestTypeDef
 Required fields:
 
 - `StackId`: `str`
-- `LayerIds`: `List`\[`str`\]
+- `LayerIds`: `Sequence`\[`str`\]
 - `InstanceType`: `str`
 
 Optional fields:
@@ -498,7 +499,7 @@ Optional fields:
 - `Architecture`: [ArchitectureType](./literals.md#architecturetype)
 - `RootDeviceType`: [RootDeviceTypeType](./literals.md#rootdevicetypetype)
 - `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
+  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
 - `InstallUpdatesOnBoot`: `bool`
 - `EbsOptimized`: `bool`
 - `AgentVersion`: `str`
@@ -532,16 +533,16 @@ Required fields:
 Optional fields:
 
 - `Attributes`:
-  `Dict`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
+  `Mapping`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
   `str`\]
 - `CloudWatchLogsConfiguration`:
   [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
 - `CustomInstanceProfileArn`: `str`
 - `CustomJson`: `str`
-- `CustomSecurityGroupIds`: `List`\[`str`\]
-- `Packages`: `List`\[`str`\]
+- `CustomSecurityGroupIds`: `Sequence`\[`str`\]
+- `Packages`: `Sequence`\[`str`\]
 - `VolumeConfigurations`:
-  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
+  `Sequence`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
 - `EnableAutoHealing`: `bool`
 - `AutoAssignElasticIps`: `bool`
 - `AutoAssignPublicIps`: `bool`
@@ -566,16 +567,16 @@ Required fields:
 Optional fields:
 
 - `Attributes`:
-  `Dict`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
+  `Mapping`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
   `str`\]
 - `CloudWatchLogsConfiguration`:
   [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
 - `CustomInstanceProfileArn`: `str`
 - `CustomJson`: `str`
-- `CustomSecurityGroupIds`: `List`\[`str`\]
-- `Packages`: `List`\[`str`\]
+- `CustomSecurityGroupIds`: `Sequence`\[`str`\]
+- `Packages`: `Sequence`\[`str`\]
 - `VolumeConfigurations`:
-  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
+  `Sequence`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
 - `EnableAutoHealing`: `bool`
 - `AutoAssignElasticIps`: `bool`
 - `AutoAssignPublicIps`: `bool`
@@ -613,7 +614,7 @@ Required fields:
 Optional fields:
 
 - `VpcId`: `str`
-- `Attributes`: `Dict`\[`Literal['Color']` (see
+- `Attributes`: `Mapping`\[`Literal['Color']` (see
   [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
 - `DefaultOs`: `str`
 - `HostnameTheme`: `str`
@@ -648,7 +649,7 @@ Required fields:
 Optional fields:
 
 - `VpcId`: `str`
-- `Attributes`: `Dict`\[`Literal['Color']` (see
+- `Attributes`: `Mapping`\[`Literal['Color']` (see
   [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
 - `DefaultOs`: `str`
 - `HostnameTheme`: `str`
@@ -786,7 +787,7 @@ Required fields:
 
 Optional fields:
 
-- `Args`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Args`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 ## DeploymentTypeDef
 
@@ -894,7 +895,7 @@ from mypy_boto3_opsworks.type_defs import DescribeAppsRequestRequestTypeDef
 Optional fields:
 
 - `StackId`: `str`
-- `AppIds`: `List`\[`str`\]
+- `AppIds`: `Sequence`\[`str`\]
 
 ## DescribeAppsResultTypeDef
 
@@ -918,7 +919,7 @@ Optional fields:
 
 - `DeploymentId`: `str`
 - `InstanceId`: `str`
-- `CommandIds`: `List`\[`str`\]
+- `CommandIds`: `Sequence`\[`str`\]
 
 ## DescribeCommandsResultTypeDef
 
@@ -942,7 +943,7 @@ Optional fields:
 
 - `StackId`: `str`
 - `AppId`: `str`
-- `DeploymentIds`: `List`\[`str`\]
+- `DeploymentIds`: `Sequence`\[`str`\]
 
 ## DescribeDeploymentsResultTypeDef
 
@@ -965,7 +966,7 @@ from mypy_boto3_opsworks.type_defs import DescribeEcsClustersRequestRequestTypeD
 
 Optional fields:
 
-- `EcsClusterArns`: `List`\[`str`\]
+- `EcsClusterArns`: `Sequence`\[`str`\]
 - `StackId`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
@@ -994,7 +995,7 @@ Optional fields:
 
 - `InstanceId`: `str`
 - `StackId`: `str`
-- `Ips`: `List`\[`str`\]
+- `Ips`: `Sequence`\[`str`\]
 
 ## DescribeElasticIpsResultTypeDef
 
@@ -1017,7 +1018,7 @@ from mypy_boto3_opsworks.type_defs import DescribeElasticLoadBalancersRequestReq
 Optional fields:
 
 - `StackId`: `str`
-- `LayerIds`: `List`\[`str`\]
+- `LayerIds`: `Sequence`\[`str`\]
 
 ## DescribeElasticLoadBalancersResultTypeDef
 
@@ -1042,7 +1043,7 @@ Optional fields:
 
 - `StackId`: `str`
 - `LayerId`: `str`
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 ## DescribeInstancesResultTypeDef
 
@@ -1065,7 +1066,7 @@ from mypy_boto3_opsworks.type_defs import DescribeLayersRequestRequestTypeDef
 Optional fields:
 
 - `StackId`: `str`
-- `LayerIds`: `List`\[`str`\]
+- `LayerIds`: `Sequence`\[`str`\]
 
 ## DescribeLayersResultTypeDef
 
@@ -1087,7 +1088,7 @@ from mypy_boto3_opsworks.type_defs import DescribeLoadBasedAutoScalingRequestReq
 
 Required fields:
 
-- `LayerIds`: `List`\[`str`\]
+- `LayerIds`: `Sequence`\[`str`\]
 
 ## DescribeLoadBasedAutoScalingResultTypeDef
 
@@ -1162,7 +1163,7 @@ Optional fields:
 
 - `InstanceId`: `str`
 - `StackId`: `str`
-- `RaidArrayIds`: `List`\[`str`\]
+- `RaidArrayIds`: `Sequence`\[`str`\]
 
 ## DescribeRaidArraysResultTypeDef
 
@@ -1188,7 +1189,7 @@ Required fields:
 
 Optional fields:
 
-- `RdsDbInstanceArns`: `List`\[`str`\]
+- `RdsDbInstanceArns`: `Sequence`\[`str`\]
 
 ## DescribeRdsDbInstancesResultTypeDef
 
@@ -1213,7 +1214,7 @@ Optional fields:
 
 - `StackId`: `str`
 - `InstanceId`: `str`
-- `ServiceErrorIds`: `List`\[`str`\]
+- `ServiceErrorIds`: `Sequence`\[`str`\]
 
 ## DescribeServiceErrorsResultTypeDef
 
@@ -1281,7 +1282,7 @@ from mypy_boto3_opsworks.type_defs import DescribeStacksRequestRequestTypeDef
 
 Optional fields:
 
-- `StackIds`: `List`\[`str`\]
+- `StackIds`: `Sequence`\[`str`\]
 
 ## DescribeStacksResultTypeDef
 
@@ -1303,7 +1304,7 @@ from mypy_boto3_opsworks.type_defs import DescribeTimeBasedAutoScalingRequestReq
 
 Required fields:
 
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 
 ## DescribeTimeBasedAutoScalingResultTypeDef
 
@@ -1326,7 +1327,7 @@ from mypy_boto3_opsworks.type_defs import DescribeUserProfilesRequestRequestType
 
 Optional fields:
 
-- `IamUserArns`: `List`\[`str`\]
+- `IamUserArns`: `Sequence`\[`str`\]
 
 ## DescribeUserProfilesResultTypeDef
 
@@ -1352,7 +1353,7 @@ Optional fields:
 - `InstanceId`: `str`
 - `StackId`: `str`
 - `RaidArrayId`: `str`
-- `VolumeIds`: `List`\[`str`\]
+- `VolumeIds`: `Sequence`\[`str`\]
 
 ## DescribeVolumesResultTypeDef
 
@@ -1806,11 +1807,11 @@ from mypy_boto3_opsworks.type_defs import RecipesTypeDef
 
 Optional fields:
 
-- `Setup`: `List`\[`str`\]
-- `Configure`: `List`\[`str`\]
-- `Deploy`: `List`\[`str`\]
-- `Undeploy`: `List`\[`str`\]
-- `Shutdown`: `List`\[`str`\]
+- `Setup`: `Sequence`\[`str`\]
+- `Configure`: `Sequence`\[`str`\]
+- `Deploy`: `Sequence`\[`str`\]
+- `Undeploy`: `Sequence`\[`str`\]
+- `Shutdown`: `Sequence`\[`str`\]
 
 ## RegisterEcsClusterRequestRequestTypeDef
 
@@ -2219,7 +2220,7 @@ from mypy_boto3_opsworks.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TemporaryCredentialTypeDef
 
@@ -2275,7 +2276,7 @@ from mypy_boto3_opsworks.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAppRequestRequestTypeDef
 
@@ -2292,17 +2293,18 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `DataSources`:
-  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
+  `Sequence`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
 - `Type`: [AppTypeType](./literals.md#apptypetype)
 - `AppSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `Domains`: `List`\[`str`\]
+- `Domains`: `Sequence`\[`str`\]
 - `EnableSsl`: `bool`
 - `SslConfiguration`:
   [SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef)
 - `Attributes`:
-  `Dict`\[[AppAttributesKeysType](./literals.md#appattributeskeystype), `str`\]
+  `Mapping`\[[AppAttributesKeysType](./literals.md#appattributeskeystype),
+  `str`\]
 - `Environment`:
-  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
+  `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
 
 ## UpdateElasticIpRequestRequestTypeDef
 
@@ -2330,7 +2332,7 @@ Required fields:
 
 Optional fields:
 
-- `LayerIds`: `List`\[`str`\]
+- `LayerIds`: `Sequence`\[`str`\]
 - `InstanceType`: `str`
 - `AutoScalingType`: [AutoScalingTypeType](./literals.md#autoscalingtypetype)
 - `Hostname`: `str`
@@ -2357,16 +2359,16 @@ Optional fields:
 - `Name`: `str`
 - `Shortname`: `str`
 - `Attributes`:
-  `Dict`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
+  `Mapping`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
   `str`\]
 - `CloudWatchLogsConfiguration`:
   [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
 - `CustomInstanceProfileArn`: `str`
 - `CustomJson`: `str`
-- `CustomSecurityGroupIds`: `List`\[`str`\]
-- `Packages`: `List`\[`str`\]
+- `CustomSecurityGroupIds`: `Sequence`\[`str`\]
+- `Packages`: `Sequence`\[`str`\]
 - `VolumeConfigurations`:
-  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
+  `Sequence`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
 - `EnableAutoHealing`: `bool`
 - `AutoAssignElasticIps`: `bool`
 - `AutoAssignPublicIps`: `bool`
@@ -2414,7 +2416,7 @@ Required fields:
 Optional fields:
 
 - `Name`: `str`
-- `Attributes`: `Dict`\[`Literal['Color']` (see
+- `Attributes`: `Mapping`\[`Literal['Color']` (see
   [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
 - `ServiceRoleArn`: `str`
 - `DefaultInstanceProfileArn`: `str`

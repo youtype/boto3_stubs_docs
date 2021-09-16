@@ -447,7 +447,7 @@ Required fields:
 Optional fields:
 
 - `ClusterIdentifier`: `str`
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 
 ## AuthorizeSnapshotAccessMessageRequestTypeDef
 
@@ -497,7 +497,7 @@ from mypy_boto3_redshift.type_defs import BatchDeleteClusterSnapshotsRequestRequ
 Required fields:
 
 - `Identifiers`:
-  `List`\[[DeleteClusterSnapshotMessageTypeDef](./type_defs.md#deleteclustersnapshotmessagetypedef)\]
+  `Sequence`\[[DeleteClusterSnapshotMessageTypeDef](./type_defs.md#deleteclustersnapshotmessagetypedef)\]
 
 ## BatchDeleteClusterSnapshotsResultTypeDef
 
@@ -521,7 +521,7 @@ from mypy_boto3_redshift.type_defs import BatchModifyClusterSnapshotsMessageRequ
 
 Required fields:
 
-- `SnapshotIdentifierList`: `List`\[`str`\]
+- `SnapshotIdentifierList`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -967,8 +967,8 @@ Optional fields:
 
 - `DBName`: `str`
 - `ClusterType`: `str`
-- `ClusterSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `ClusterSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `ClusterSubnetGroupName`: `str`
 - `AvailabilityZone`: `str`
 - `PreferredMaintenanceWindow`: `str`
@@ -984,11 +984,11 @@ Optional fields:
 - `HsmClientCertificateIdentifier`: `str`
 - `HsmConfigurationIdentifier`: `str`
 - `ElasticIp`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 - `EnhancedVpcRouting`: `bool`
 - `AdditionalInfo`: `str`
-- `IamRoles`: `List`\[`str`\]
+- `IamRoles`: `Sequence`\[`str`\]
 - `MaintenanceTrackName`: `str`
 - `SnapshotScheduleIdentifier`: `str`
 - `AvailabilityZoneRelocation`: `bool`
@@ -1009,7 +1009,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateClusterParameterGroupResultTypeDef
 
@@ -1049,7 +1049,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateClusterSecurityGroupResultTypeDef
 
@@ -1078,7 +1078,7 @@ Required fields:
 Optional fields:
 
 - `ManualSnapshotRetentionPeriod`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateClusterSnapshotResultTypeDef
 
@@ -1102,11 +1102,11 @@ Required fields:
 
 - `ClusterSubnetGroupName`: `str`
 - `Description`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateClusterSubnetGroupResultTypeDef
 
@@ -1136,7 +1136,7 @@ Optional fields:
 
 - `ClusterIdentifier`: `str`
 - `ResourceOwner`: `str`
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 
 ## CreateEventSubscriptionMessageRequestTypeDef
 
@@ -1152,11 +1152,11 @@ Required fields:
 Optional fields:
 
 - `SourceType`: `str`
-- `SourceIds`: `List`\[`str`\]
-- `EventCategories`: `List`\[`str`\]
+- `SourceIds`: `Sequence`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
 - `Severity`: `str`
 - `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEventSubscriptionResultTypeDef
 
@@ -1183,7 +1183,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateHsmClientCertificateResultTypeDef
 
@@ -1215,7 +1215,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateHsmConfigurationResultTypeDef
 
@@ -1264,7 +1264,7 @@ Required fields:
 Optional fields:
 
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSnapshotCopyGrantResultTypeDef
 
@@ -1287,10 +1287,10 @@ from mypy_boto3_redshift.type_defs import CreateSnapshotScheduleMessageRequestTy
 
 Optional fields:
 
-- `ScheduleDefinitions`: `List`\[`str`\]
+- `ScheduleDefinitions`: `Sequence`\[`str`\]
 - `ScheduleIdentifier`: `str`
 - `ScheduleDescription`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
 - `NextInvocations`: `int`
 
@@ -1303,7 +1303,7 @@ from mypy_boto3_redshift.type_defs import CreateTagsMessageRequestTypeDef
 Required fields:
 
 - `ResourceName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateUsageLimitMessageRequestTypeDef
 
@@ -1324,7 +1324,7 @@ Optional fields:
 - `Period`: [UsageLimitPeriodType](./literals.md#usagelimitperiodtype)
 - `BreachAction`:
   [UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CustomerStorageMessageTypeDef
 
@@ -1631,7 +1631,7 @@ from mypy_boto3_redshift.type_defs import DeleteTagsMessageRequestTypeDef
 Required fields:
 
 - `ResourceName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## DeleteUsageLimitMessageRequestTypeDef
 
@@ -1651,7 +1651,7 @@ from mypy_boto3_redshift.type_defs import DescribeAccountAttributesMessageReques
 
 Optional fields:
 
-- `AttributeNames`: `List`\[`str`\]
+- `AttributeNames`: `Sequence`\[`str`\]
 
 ## DescribeAuthenticationProfilesMessageRequestTypeDef
 
@@ -1699,8 +1699,8 @@ Optional fields:
 - `ParameterGroupName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 ## DescribeClusterParametersMessageRequestTypeDef
 
@@ -1729,8 +1729,8 @@ Optional fields:
 - `ClusterSecurityGroupName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 ## DescribeClusterSnapshotsMessageRequestTypeDef
 
@@ -1748,11 +1748,11 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `OwnerAccount`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `ClusterExists`: `bool`
 - `SortingEntities`:
-  `List`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
+  `Sequence`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
 
 ## DescribeClusterSubnetGroupsMessageRequestTypeDef
 
@@ -1765,8 +1765,8 @@ Optional fields:
 - `ClusterSubnetGroupName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 ## DescribeClusterTracksMessageRequestTypeDef
 
@@ -1804,8 +1804,8 @@ Optional fields:
 - `ClusterIdentifier`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 ## DescribeDataSharesForConsumerMessageRequestTypeDef
 
@@ -1964,8 +1964,8 @@ Optional fields:
 - `SubscriptionName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 ## DescribeEventsMessageRequestTypeDef
 
@@ -1994,8 +1994,8 @@ Optional fields:
 - `HsmClientCertificateIdentifier`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 ## DescribeHsmConfigurationsMessageRequestTypeDef
 
@@ -2008,8 +2008,8 @@ Optional fields:
 - `HsmConfigurationIdentifier`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 ## DescribeLoggingStatusMessageRequestTypeDef
 
@@ -2037,7 +2037,7 @@ Optional fields:
 - `SnapshotIdentifier`: `str`
 - `OwnerAccount`: `str`
 - `Filters`:
-  `List`\[[NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef)\]
+  `Sequence`\[[NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -2132,7 +2132,7 @@ Optional fields:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `Active`: `bool`
 - `Filters`:
-  `List`\[[ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef)\]
+  `Sequence`\[[ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -2147,8 +2147,8 @@ Optional fields:
 - `SnapshotCopyGrantName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 ## DescribeSnapshotSchedulesMessageRequestTypeDef
 
@@ -2160,8 +2160,8 @@ Optional fields:
 
 - `ClusterIdentifier`: `str`
 - `ScheduleIdentifier`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
@@ -2204,8 +2204,8 @@ Optional fields:
 - `ResourceType`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 ## DescribeUsageLimitsMessageRequestTypeDef
 
@@ -2221,8 +2221,8 @@ Optional fields:
   [UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype)
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 
 ## DisableLoggingMessageRequestTypeDef
 
@@ -2576,7 +2576,7 @@ Optional fields:
 - `DbName`: `str`
 - `DurationSeconds`: `int`
 - `AutoCreate`: `bool`
-- `DbGroups`: `List`\[`str`\]
+- `DbGroups`: `Sequence`\[`str`\]
 
 ## GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef
 
@@ -2802,8 +2802,8 @@ Required fields:
 
 Optional fields:
 
-- `AddIamRoles`: `List`\[`str`\]
-- `RemoveIamRoles`: `List`\[`str`\]
+- `AddIamRoles`: `Sequence`\[`str`\]
+- `RemoveIamRoles`: `Sequence`\[`str`\]
 
 ## ModifyClusterIamRolesResultTypeDef
 
@@ -2862,8 +2862,8 @@ Optional fields:
 - `ClusterType`: `str`
 - `NodeType`: `str`
 - `NumberOfNodes`: `int`
-- `ClusterSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `ClusterSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `MasterUserPassword`: `str`
 - `ClusterParameterGroupName`: `str`
 - `AutomatedSnapshotRetentionPeriod`: `int`
@@ -2893,7 +2893,8 @@ from mypy_boto3_redshift.type_defs import ModifyClusterParameterGroupMessageRequ
 Required fields:
 
 - `ParameterGroupName`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## ModifyClusterResultTypeDef
 
@@ -2958,7 +2959,7 @@ from mypy_boto3_redshift.type_defs import ModifyClusterSubnetGroupMessageRequest
 Required fields:
 
 - `ClusterSubnetGroupName`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2989,7 +2990,7 @@ Required fields:
 
 Optional fields:
 
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 
 ## ModifyEventSubscriptionMessageRequestTypeDef
 
@@ -3005,8 +3006,8 @@ Optional fields:
 
 - `SnsTopicArn`: `str`
 - `SourceType`: `str`
-- `SourceIds`: `List`\[`str`\]
-- `EventCategories`: `List`\[`str`\]
+- `SourceIds`: `Sequence`\[`str`\]
+- `EventCategories`: `Sequence`\[`str`\]
 - `Severity`: `str`
 - `Enabled`: `bool`
 
@@ -3080,7 +3081,7 @@ from mypy_boto3_redshift.type_defs import ModifySnapshotScheduleMessageRequestTy
 Required fields:
 
 - `ScheduleIdentifier`: `str`
-- `ScheduleDefinitions`: `List`\[`str`\]
+- `ScheduleDefinitions`: `Sequence`\[`str`\]
 
 ## ModifyUsageLimitMessageRequestTypeDef
 
@@ -3135,7 +3136,7 @@ Optional fields:
 - `Name`:
   [NodeConfigurationOptionsFilterNameType](./literals.md#nodeconfigurationoptionsfilternametype)
 - `Operator`: [OperatorTypeType](./literals.md#operatortypetype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## NodeConfigurationOptionsMessageTypeDef
 
@@ -3457,7 +3458,8 @@ Required fields:
 Optional fields:
 
 - `ResetAllParameters`: `bool`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `Parameters`:
+  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
 ## ResizeClusterMessageRequestTypeDef
 
@@ -3581,8 +3583,8 @@ Optional fields:
 - `HsmConfigurationIdentifier`: `str`
 - `ElasticIp`: `str`
 - `ClusterParameterGroupName`: `str`
-- `ClusterSecurityGroups`: `List`\[`str`\]
-- `VpcSecurityGroupIds`: `List`\[`str`\]
+- `ClusterSecurityGroups`: `Sequence`\[`str`\]
+- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
 - `PreferredMaintenanceWindow`: `str`
 - `AutomatedSnapshotRetentionPeriod`: `int`
 - `ManualSnapshotRetentionPeriod`: `int`
@@ -3590,7 +3592,7 @@ Optional fields:
 - `NodeType`: `str`
 - `EnhancedVpcRouting`: `bool`
 - `AdditionalInfo`: `str`
-- `IamRoles`: `List`\[`str`\]
+- `IamRoles`: `Sequence`\[`str`\]
 - `MaintenanceTrackName`: `str`
 - `SnapshotScheduleIdentifier`: `str`
 - `NumberOfNodes`: `int`
@@ -3742,7 +3744,7 @@ Optional fields:
 
 - `ClusterIdentifier`: `str`
 - `Account`: `str`
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 - `Force`: `bool`
 
 ## RevokeSnapshotAccessMessageRequestTypeDef
@@ -3804,7 +3806,7 @@ Required fields:
 
 - `Name`:
   [ScheduledActionFilterNameType](./literals.md#scheduledactionfilternametype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## ScheduledActionResponseMetadataTypeDef
 

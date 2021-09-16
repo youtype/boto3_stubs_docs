@@ -176,6 +176,7 @@ from mypy_boto3_codebuild.literals import ArtifactNamespaceType, ...
 - [StatusTypeType](./literals.md#statustypetype)
 - [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
 - [WebhookFilterTypeType](./literals.md#webhookfiltertypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

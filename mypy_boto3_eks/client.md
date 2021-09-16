@@ -123,7 +123,7 @@ Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `encryptionConfig`:
-  `List`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
+  `Sequence`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
   *(required)*
 - `clientRequestToken`: `str`
 
@@ -149,7 +149,7 @@ Keyword-only arguments:
 - `oidc`:
   [OidcIdentityProviderConfigRequestTypeDef](./type_defs.md#oidcidentityproviderconfigrequesttypedef)
   *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `clientRequestToken`: `str`
 
 Returns
@@ -191,7 +191,7 @@ Keyword-only arguments:
 - `resolveConflicts`:
   [ResolveConflictsType](./literals.md#resolveconflictstype)
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateAddonResponseTypeDef](./type_defs.md#createaddonresponsetypedef).
@@ -220,9 +220,9 @@ Keyword-only arguments:
   [KubernetesNetworkConfigRequestTypeDef](./type_defs.md#kubernetesnetworkconfigrequesttypedef)
 - `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `encryptionConfig`:
-  `List`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
+  `Sequence`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
 
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
@@ -244,11 +244,11 @@ Keyword-only arguments:
 - `fargateProfileName`: `str` *(required)*
 - `clusterName`: `str` *(required)*
 - `podExecutionRoleArn`: `str` *(required)*
-- `subnets`: `List`\[`str`\]
+- `subnets`: `Sequence`\[`str`\]
 - `selectors`:
-  `List`\[[FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef)\]
+  `Sequence`\[[FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef)\]
 - `clientRequestToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateFargateProfileResponseTypeDef](./type_defs.md#createfargateprofileresponsetypedef).
@@ -269,18 +269,18 @@ Keyword-only arguments:
 
 - `clusterName`: `str` *(required)*
 - `nodegroupName`: `str` *(required)*
-- `subnets`: `List`\[`str`\] *(required)*
+- `subnets`: `Sequence`\[`str`\] *(required)*
 - `nodeRole`: `str` *(required)*
 - `scalingConfig`:
   [NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef)
 - `diskSize`: `int`
-- `instanceTypes`: `List`\[`str`\]
+- `instanceTypes`: `Sequence`\[`str`\]
 - `amiType`: [AMITypesType](./literals.md#amitypestype)
 - `remoteAccess`:
   [RemoteAccessConfigTypeDef](./type_defs.md#remoteaccessconfigtypedef)
-- `labels`: `Dict`\[`str`, `str`\]
-- `taints`: `List`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `labels`: `Mapping`\[`str`, `str`\]
+- `taints`: `Sequence`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `clientRequestToken`: `str`
 - `launchTemplate`:
   [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
@@ -574,7 +574,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -617,7 +617,7 @@ Keyword-only arguments:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `include`: `List`\[`str`\]
+- `include`: `Sequence`\[`str`\]
 
 Returns
 [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
@@ -769,7 +769,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -788,7 +788,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

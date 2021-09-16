@@ -74,7 +74,7 @@ Required fields:
 Optional fields:
 
 - `deviceParameters`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateQuantumTaskResponseTypeDef
 
@@ -239,7 +239,7 @@ from mypy_boto3_braket.type_defs import SearchDevicesFilterTypeDef
 Required fields:
 
 - `name`: `str`
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## SearchDevicesRequestRequestTypeDef
 
@@ -250,7 +250,7 @@ from mypy_boto3_braket.type_defs import SearchDevicesRequestRequestTypeDef
 Required fields:
 
 - `filters`:
-  `List`\[[SearchDevicesFilterTypeDef](./type_defs.md#searchdevicesfiltertypedef)\]
+  `Sequence`\[[SearchDevicesFilterTypeDef](./type_defs.md#searchdevicesfiltertypedef)\]
 
 Optional fields:
 
@@ -282,7 +282,7 @@ Required fields:
 - `name`: `str`
 - `operator`:
   [SearchQuantumTasksFilterOperatorType](./literals.md#searchquantumtasksfilteroperatortype)
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 
 ## SearchQuantumTasksRequestRequestTypeDef
 
@@ -293,7 +293,7 @@ from mypy_boto3_braket.type_defs import SearchQuantumTasksRequestRequestTypeDef
 Required fields:
 
 - `filters`:
-  `List`\[[SearchQuantumTasksFilterTypeDef](./type_defs.md#searchquantumtasksfiltertypedef)\]
+  `Sequence`\[[SearchQuantumTasksFilterTypeDef](./type_defs.md#searchquantumtasksfiltertypedef)\]
 
 Optional fields:
 
@@ -323,7 +323,7 @@ from mypy_boto3_braket.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -334,4 +334,4 @@ from mypy_boto3_braket.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]

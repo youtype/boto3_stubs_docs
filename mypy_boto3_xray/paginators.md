@@ -35,7 +35,7 @@ Boto3 documentation:
 
 Arguments for `BatchGetTracesPaginator.paginate` method:
 
-- `TraceIds`: `List`\[`str`\] *(required)*
+- `TraceIds`: `Sequence`\[`str`\] *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -194,7 +194,7 @@ Boto3 documentation:
 
 Arguments for `GetTraceGraphPaginator.paginate` method:
 
-- `TraceIds`: `List`\[`str`\] *(required)*
+- `TraceIds`: `Sequence`\[`str`\] *(required)*
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

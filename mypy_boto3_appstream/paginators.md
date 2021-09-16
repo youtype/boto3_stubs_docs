@@ -38,7 +38,7 @@ Boto3 documentation:
 
 Arguments for `DescribeDirectoryConfigsPaginator.paginate` method:
 
-- `DirectoryNames`: `List`\[`str`\]
+- `DirectoryNames`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -64,7 +64,7 @@ Boto3 documentation:
 
 Arguments for `DescribeFleetsPaginator.paginate` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -90,7 +90,7 @@ Boto3 documentation:
 
 Arguments for `DescribeImageBuildersPaginator.paginate` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -116,8 +116,8 @@ Boto3 documentation:
 
 Arguments for `DescribeImagesPaginator.paginate` method:
 
-- `Names`: `List`\[`str`\]
-- `Arns`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
+- `Arns`: `Sequence`\[`str`\]
 - `Type`: [VisibilityTypeType](./literals.md#visibilitytypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -174,7 +174,7 @@ Boto3 documentation:
 
 Arguments for `DescribeStacksPaginator.paginate` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

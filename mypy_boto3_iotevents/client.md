@@ -128,7 +128,7 @@ Keyword-only arguments:
 - `roleArn`: `str` *(required)*
 - `alarmRule`: [AlarmRuleTypeDef](./type_defs.md#alarmruletypedef) *(required)*
 - `alarmModelDescription`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `key`: `str`
 - `severity`: `int`
 - `alarmNotification`:
@@ -162,7 +162,7 @@ Keyword-only arguments:
 - `roleArn`: `str` *(required)*
 - `detectorModelDescription`: `str`
 - `key`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `evaluationMethod`:
   [EvaluationMethodType](./literals.md#evaluationmethodtype)
 
@@ -187,7 +187,7 @@ Keyword-only arguments:
 - `inputDefinition`:
   [InputDefinitionTypeDef](./type_defs.md#inputdefinitiontypedef) *(required)*
 - `inputDescription`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateInputResponseTypeDef](./type_defs.md#createinputresponsetypedef).
@@ -351,7 +351,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -577,7 +577,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -596,7 +596,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

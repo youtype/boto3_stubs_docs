@@ -76,6 +76,7 @@ from mypy_boto3_sso.literals import ListAccountRolesPaginatorName, ...
 
 - [ListAccountRolesPaginatorName](./literals.md#listaccountrolespaginatorname)
 - [ListAccountsPaginatorName](./literals.md#listaccountspaginatorname)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

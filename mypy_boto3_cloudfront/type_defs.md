@@ -343,7 +343,7 @@ Required fields:
 
 Optional fields:
 
-- `Items`: `List`\[`str`\]
+- `Items`: `Sequence`\[`str`\]
 
 ## AllowedMethodsTypeDef
 
@@ -354,7 +354,7 @@ from mypy_boto3_cloudfront.type_defs import AllowedMethodsTypeDef
 Required fields:
 
 - `Quantity`: `int`
-- `Items`: `List`\[[MethodType](./literals.md#methodtype)\]
+- `Items`: `Sequence`\[[MethodType](./literals.md#methodtype)\]
 
 Optional fields:
 
@@ -421,7 +421,7 @@ Required fields:
 Optional fields:
 
 - `Items`:
-  `List`\[[CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef)\]
+  `Sequence`\[[CacheBehaviorTypeDef](./type_defs.md#cachebehaviortypedef)\]
 
 ## CachePolicyConfigTypeDef
 
@@ -538,7 +538,7 @@ from mypy_boto3_cloudfront.type_defs import CachedMethodsTypeDef
 Required fields:
 
 - `Quantity`: `int`
-- `Items`: `List`\[[MethodType](./literals.md#methodtype)\]
+- `Items`: `Sequence`\[[MethodType](./literals.md#methodtype)\]
 
 ## CloudFrontOriginAccessIdentityConfigTypeDef
 
@@ -668,7 +668,7 @@ Required fields:
 Optional fields:
 
 - `Items`:
-  `List`\[[ContentTypeProfileTypeDef](./type_defs.md#contenttypeprofiletypedef)\]
+  `Sequence`\[[ContentTypeProfileTypeDef](./type_defs.md#contenttypeprofiletypedef)\]
 
 ## CookieNamesTypeDef
 
@@ -682,7 +682,7 @@ Required fields:
 
 Optional fields:
 
-- `Items`: `List`\[`str`\]
+- `Items`: `Sequence`\[`str`\]
 
 ## CookiePreferenceTypeDef
 
@@ -1013,8 +1013,8 @@ from mypy_boto3_cloudfront.type_defs import CreateRealtimeLogConfigRequestReques
 
 Required fields:
 
-- `EndPoints`: `List`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
-- `Fields`: `List`\[`str`\]
+- `EndPoints`: `Sequence`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
+- `Fields`: `Sequence`\[`str`\]
 - `Name`: `str`
 - `SamplingRate`: `int`
 
@@ -1112,7 +1112,7 @@ Required fields:
 Optional fields:
 
 - `Items`:
-  `List`\[[CustomErrorResponseTypeDef](./type_defs.md#customerrorresponsetypedef)\]
+  `Sequence`\[[CustomErrorResponseTypeDef](./type_defs.md#customerrorresponsetypedef)\]
 
 ## CustomHeadersTypeDef
 
@@ -1127,7 +1127,7 @@ Required fields:
 Optional fields:
 
 - `Items`:
-  `List`\[[OriginCustomHeaderTypeDef](./type_defs.md#origincustomheadertypedef)\]
+  `Sequence`\[[OriginCustomHeaderTypeDef](./type_defs.md#origincustomheadertypedef)\]
 
 ## CustomOriginConfigTypeDef
 
@@ -1529,7 +1529,7 @@ Required fields:
 Optional fields:
 
 - `Items`:
-  `List`\[[EncryptionEntityTypeDef](./type_defs.md#encryptionentitytypedef)\]
+  `Sequence`\[[EncryptionEntityTypeDef](./type_defs.md#encryptionentitytypedef)\]
 
 ## EncryptionEntityTypeDef
 
@@ -1702,7 +1702,7 @@ Required fields:
 
 Optional fields:
 
-- `Items`: `List`\[`str`\]
+- `Items`: `Sequence`\[`str`\]
 
 ## ForwardedValuesTypeDef
 
@@ -1745,7 +1745,7 @@ Required fields:
 Optional fields:
 
 - `Items`:
-  `List`\[[FunctionAssociationTypeDef](./type_defs.md#functionassociationtypedef)\]
+  `Sequence`\[[FunctionAssociationTypeDef](./type_defs.md#functionassociationtypedef)\]
 
 ## FunctionConfigTypeDef
 
@@ -1824,7 +1824,7 @@ Required fields:
 
 Optional fields:
 
-- `Items`: `List`\[`str`\]
+- `Items`: `Sequence`\[`str`\]
 
 ## GetCachePolicyConfigRequestRequestTypeDef
 
@@ -2364,7 +2364,7 @@ Required fields:
 
 Optional fields:
 
-- `Items`: `List`\[`str`\]
+- `Items`: `Sequence`\[`str`\]
 
 ## InvalidationBatchTypeDef
 
@@ -2442,7 +2442,7 @@ from mypy_boto3_cloudfront.type_defs import KeyGroupConfigTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Items`: `List`\[`str`\]
+- `Items`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -2541,7 +2541,7 @@ Required fields:
 Optional fields:
 
 - `Items`:
-  `List`\[[LambdaFunctionAssociationTypeDef](./type_defs.md#lambdafunctionassociationtypedef)\]
+  `Sequence`\[[LambdaFunctionAssociationTypeDef](./type_defs.md#lambdafunctionassociationtypedef)\]
 
 ## ListCachePoliciesRequestRequestTypeDef
 
@@ -3090,7 +3090,7 @@ Required fields:
 
 - `Quantity`: `int`
 - `Items`:
-  `List`\[[OriginGroupMemberTypeDef](./type_defs.md#origingroupmembertypedef)\]
+  `Sequence`\[[OriginGroupMemberTypeDef](./type_defs.md#origingroupmembertypedef)\]
 
 ## OriginGroupTypeDef
 
@@ -3118,7 +3118,8 @@ Required fields:
 
 Optional fields:
 
-- `Items`: `List`\[[OriginGroupTypeDef](./type_defs.md#origingrouptypedef)\]
+- `Items`:
+  `Sequence`\[[OriginGroupTypeDef](./type_defs.md#origingrouptypedef)\]
 
 ## OriginRequestPolicyConfigTypeDef
 
@@ -3252,7 +3253,7 @@ from mypy_boto3_cloudfront.type_defs import OriginSslProtocolsTypeDef
 Required fields:
 
 - `Quantity`: `int`
-- `Items`: `List`\[[SslProtocolType](./literals.md#sslprotocoltype)\]
+- `Items`: `Sequence`\[[SslProtocolType](./literals.md#sslprotocoltype)\]
 
 ## OriginTypeDef
 
@@ -3286,7 +3287,7 @@ from mypy_boto3_cloudfront.type_defs import OriginsTypeDef
 Required fields:
 
 - `Quantity`: `int`
-- `Items`: `List`\[[OriginTypeDef](./type_defs.md#origintypedef)\]
+- `Items`: `Sequence`\[[OriginTypeDef](./type_defs.md#origintypedef)\]
 
 ## PaginatorConfigTypeDef
 
@@ -3332,7 +3333,7 @@ Required fields:
 
 Optional fields:
 
-- `Items`: `List`\[`str`\]
+- `Items`: `Sequence`\[`str`\]
 
 ## PublicKeyConfigTypeDef
 
@@ -3460,7 +3461,7 @@ Required fields:
 Optional fields:
 
 - `Items`:
-  `List`\[[QueryArgProfileTypeDef](./type_defs.md#queryargprofiletypedef)\]
+  `Sequence`\[[QueryArgProfileTypeDef](./type_defs.md#queryargprofiletypedef)\]
 
 ## QueryStringCacheKeysTypeDef
 
@@ -3474,7 +3475,7 @@ Required fields:
 
 Optional fields:
 
-- `Items`: `List`\[`str`\]
+- `Items`: `Sequence`\[`str`\]
 
 ## QueryStringNamesTypeDef
 
@@ -3488,7 +3489,7 @@ Required fields:
 
 Optional fields:
 
-- `Items`: `List`\[`str`\]
+- `Items`: `Sequence`\[`str`\]
 
 ## RealtimeLogConfigTypeDef
 
@@ -3599,7 +3600,7 @@ from mypy_boto3_cloudfront.type_defs import StatusCodesTypeDef
 Required fields:
 
 - `Quantity`: `int`
-- `Items`: `List`\[`int`\]
+- `Items`: `Sequence`\[`int`\]
 
 ## StreamingDistributionConfigTypeDef
 
@@ -3716,7 +3717,7 @@ from mypy_boto3_cloudfront.type_defs import TagKeysTypeDef
 
 Optional fields:
 
-- `Items`: `List`\[`str`\]
+- `Items`: `Sequence`\[`str`\]
 
 ## TagResourceRequestRequestTypeDef
 
@@ -3751,7 +3752,7 @@ from mypy_boto3_cloudfront.type_defs import TagsTypeDef
 
 Optional fields:
 
-- `Items`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Items`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TestFunctionRequestRequestTypeDef
 
@@ -3809,7 +3810,7 @@ Required fields:
 
 Optional fields:
 
-- `Items`: `List`\[`str`\]
+- `Items`: `Sequence`\[`str`\]
 
 ## TrustedSignersTypeDef
 
@@ -3824,7 +3825,7 @@ Required fields:
 
 Optional fields:
 
-- `Items`: `List`\[`str`\]
+- `Items`: `Sequence`\[`str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -4109,8 +4110,8 @@ from mypy_boto3_cloudfront.type_defs import UpdateRealtimeLogConfigRequestReques
 
 Optional fields:
 
-- `EndPoints`: `List`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
-- `Fields`: `List`\[`str`\]
+- `EndPoints`: `Sequence`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
+- `Fields`: `Sequence`\[`str`\]
 - `Name`: `str`
 - `ARN`: `str`
 - `SamplingRate`: `int`

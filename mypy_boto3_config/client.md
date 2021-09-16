@@ -218,7 +218,7 @@ Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `ResourceIdentifiers`:
-  `List`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
+  `Sequence`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
   *(required)*
 
 Returns
@@ -239,7 +239,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
   *(required)*
 
 Returns
@@ -473,7 +473,7 @@ Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+  `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
   *(required)*
 
 Returns
@@ -641,9 +641,9 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `NextToken`: `str`
 
 Returns
@@ -667,7 +667,7 @@ Keyword-only arguments:
 - `ResourceType`: `str`
 - `ResourceId`: `str`
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -689,7 +689,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -710,7 +710,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 Returns
@@ -734,7 +734,7 @@ Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `UpdateStatus`:
-  `List`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
+  `Sequence`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -756,7 +756,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigurationAggregatorNames`: `List`\[`str`\]
+- `ConfigurationAggregatorNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -778,7 +778,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigurationRecorderNames`: `List`\[`str`\]
+- `ConfigurationRecorderNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeConfigurationRecorderStatusResponseTypeDef](./type_defs.md#describeconfigurationrecorderstatusresponsetypedef).
@@ -798,7 +798,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigurationRecorderNames`: `List`\[`str`\]
+- `ConfigurationRecorderNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeConfigurationRecordersResponseTypeDef](./type_defs.md#describeconfigurationrecordersresponsetypedef).
@@ -842,7 +842,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConformancePackNames`: `List`\[`str`\]
+- `ConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -864,7 +864,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConformancePackNames`: `List`\[`str`\]
+- `ConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -886,7 +886,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DeliveryChannelNames`: `List`\[`str`\]
+- `DeliveryChannelNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeDeliveryChannelStatusResponseTypeDef](./type_defs.md#describedeliverychannelstatusresponsetypedef).
@@ -906,7 +906,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DeliveryChannelNames`: `List`\[`str`\]
+- `DeliveryChannelNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeDeliveryChannelsResponseTypeDef](./type_defs.md#describedeliverychannelsresponsetypedef).
@@ -926,7 +926,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `OrganizationConfigRuleNames`: `List`\[`str`\]
+- `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -948,7 +948,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `OrganizationConfigRuleNames`: `List`\[`str`\]
+- `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -971,7 +971,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `OrganizationConformancePackNames`: `List`\[`str`\]
+- `OrganizationConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -993,7 +993,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `OrganizationConformancePackNames`: `List`\[`str`\]
+- `OrganizationConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1036,7 +1036,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigRuleNames`: `List`\[`str`\] *(required)*
+- `ConfigRuleNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DescribeRemediationConfigurationsResponseTypeDef](./type_defs.md#describeremediationconfigurationsresponsetypedef).
@@ -1058,7 +1058,7 @@ Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+  `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1084,7 +1084,7 @@ Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1106,7 +1106,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `RetentionConfigurationNames`: `List`\[`str`\]
+- `RetentionConfigurationNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 
 Returns
@@ -1124,7 +1124,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1281,7 +1281,7 @@ Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1306,7 +1306,7 @@ Keyword-only arguments:
 - `ResourceType`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
 - `ComplianceTypes`:
-  `List`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
+  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `NextToken`: `str`
 
 Returns
@@ -1342,7 +1342,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceTypes`: `List`\[`str`\]
+- `ResourceTypes`: `Sequence`\[`str`\]
 
 Returns
 [GetComplianceSummaryByResourceTypeResponseTypeDef](./type_defs.md#getcompliancesummarybyresourcetyperesponsetypedef).
@@ -1388,7 +1388,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConformancePackNames`: `List`\[`str`\] *(required)*
+- `ConformancePackNames`: `Sequence`\[`str`\] *(required)*
 - `Limit`: `int`
 - `NextToken`: `str`
 
@@ -1412,7 +1412,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `resourceTypes`: `List`\[`str`\]
+- `resourceTypes`: `Sequence`\[`str`\]
 - `limit`: `int`
 - `nextToken`: `str`
 
@@ -1560,7 +1560,7 @@ Keyword-only arguments:
 
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
   *(required)*
-- `resourceIds`: `List`\[`str`\]
+- `resourceIds`: `Sequence`\[`str`\]
 - `resourceName`: `str`
 - `limit`: `int`
 - `includeDeletedResources`: `bool`
@@ -1629,7 +1629,7 @@ Keyword-only arguments:
 
 - `AuthorizedAccountId`: `str` *(required)*
 - `AuthorizedAwsRegion`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [PutAggregationAuthorizationResponseTypeDef](./type_defs.md#putaggregationauthorizationresponsetypedef).
@@ -1651,7 +1651,7 @@ Keyword-only arguments:
 
 - `ConfigRule`: [ConfigRuleTypeDef](./type_defs.md#configruletypedef)
   *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ### put_configuration_aggregator
 
@@ -1671,10 +1671,10 @@ Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 - `AccountAggregationSources`:
-  `List`\[[AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef)\]
+  `Sequence`\[[AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef)\]
 - `OrganizationAggregationSource`:
   [OrganizationAggregationSourceTypeDef](./type_defs.md#organizationaggregationsourcetypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [PutConfigurationAggregatorResponseTypeDef](./type_defs.md#putconfigurationaggregatorresponsetypedef).
@@ -1719,7 +1719,7 @@ Keyword-only arguments:
 - `DeliveryS3Bucket`: `str`
 - `DeliveryS3KeyPrefix`: `str`
 - `ConformancePackInputParameters`:
-  `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
+  `Sequence`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
 
 Returns
 [PutConformancePackResponseTypeDef](./type_defs.md#putconformancepackresponsetypedef).
@@ -1758,7 +1758,7 @@ Keyword-only arguments:
 
 - `ResultToken`: `str` *(required)*
 - `Evaluations`:
-  `List`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
+  `Sequence`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
 - `TestMode`: `bool`
 
 Returns
@@ -1807,7 +1807,7 @@ Keyword-only arguments:
   [OrganizationManagedRuleMetadataTypeDef](./type_defs.md#organizationmanagedrulemetadatatypedef)
 - `OrganizationCustomRuleMetadata`:
   [OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef)
-- `ExcludedAccounts`: `List`\[`str`\]
+- `ExcludedAccounts`: `Sequence`\[`str`\]
 
 Returns
 [PutOrganizationConfigRuleResponseTypeDef](./type_defs.md#putorganizationconfigruleresponsetypedef).
@@ -1834,8 +1834,8 @@ Keyword-only arguments:
 - `DeliveryS3Bucket`: `str`
 - `DeliveryS3KeyPrefix`: `str`
 - `ConformancePackInputParameters`:
-  `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
-- `ExcludedAccounts`: `List`\[`str`\]
+  `Sequence`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
+- `ExcludedAccounts`: `Sequence`\[`str`\]
 
 Returns
 [PutOrganizationConformancePackResponseTypeDef](./type_defs.md#putorganizationconformancepackresponsetypedef).
@@ -1857,7 +1857,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RemediationConfigurations`:
-  `List`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
+  `Sequence`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
   *(required)*
 
 Returns
@@ -1881,7 +1881,7 @@ Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+  `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
   *(required)*
 - `Message`: `str`
 - `ExpirationTime`: `Union`\[`datetime`, `str`\]
@@ -1908,7 +1908,7 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 - `Configuration`: `str` *(required)*
 - `ResourceName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ### put_retention_configuration
 
@@ -1947,7 +1947,7 @@ Keyword-only arguments:
 
 - `StoredQuery`: [StoredQueryTypeDef](./type_defs.md#storedquerytypedef)
   *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [PutStoredQueryResponseTypeDef](./type_defs.md#putstoredqueryresponsetypedef).
@@ -2013,7 +2013,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ConfigRuleNames`: `List`\[`str`\]
+- `ConfigRuleNames`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2053,7 +2053,7 @@ Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
 - `ResourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
   *(required)*
 
 Returns
@@ -2092,7 +2092,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_resource
 
@@ -2109,7 +2109,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### get_paginator
 

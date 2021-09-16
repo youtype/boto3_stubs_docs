@@ -489,7 +489,7 @@ from mypy_boto3_quicksight.type_defs import AnalysisSourceTemplateTypeDef
 Required fields:
 
 - `DataSetReferences`:
-  `List`\[[DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef)\]
+  `Sequence`\[[DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef)\]
 - `Arn`: `str`
 
 ## AnalysisSummaryTypeDef
@@ -707,8 +707,8 @@ from mypy_boto3_quicksight.type_defs import ColumnLevelPermissionRuleTypeDef
 
 Optional fields:
 
-- `Principals`: `List`\[`str`\]
-- `ColumnNames`: `List`\[`str`\]
+- `Principals`: `Sequence`\[`str`\]
+- `ColumnNames`: `Sequence`\[`str`\]
 
 ## ColumnSchemaTypeDef
 
@@ -750,7 +750,7 @@ Required fields:
 Optional fields:
 
 - `Namespace`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAccountCustomizationResponseTypeDef
 
@@ -788,9 +788,9 @@ Optional fields:
 
 - `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `ThemeArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAnalysisResponseTypeDef
 
@@ -817,7 +817,7 @@ from mypy_boto3_quicksight.type_defs import CreateColumnsOperationTypeDef
 Required fields:
 
 - `Columns`:
-  `List`\[[CalculatedColumnTypeDef](./type_defs.md#calculatedcolumntypedef)\]
+  `Sequence`\[[CalculatedColumnTypeDef](./type_defs.md#calculatedcolumntypedef)\]
 
 ## CreateDashboardRequestRequestTypeDef
 
@@ -837,8 +837,8 @@ Optional fields:
 
 - `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VersionDescription`: `str`
 - `DashboardPublishOptions`:
   [DashboardPublishOptionsTypeDef](./type_defs.md#dashboardpublishoptionstypedef)
@@ -872,27 +872,27 @@ Required fields:
 - `AwsAccountId`: `str`
 - `DataSetId`: `str`
 - `Name`: `str`
-- `PhysicalTableMap`: `Dict`\[`str`,
+- `PhysicalTableMap`: `Mapping`\[`str`,
   [PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef)\]
 - `ImportMode`: [DataSetImportModeType](./literals.md#datasetimportmodetype)
 
 Optional fields:
 
-- `LogicalTableMap`: `Dict`\[`str`,
+- `LogicalTableMap`: `Mapping`\[`str`,
   [LogicalTableTypeDef](./type_defs.md#logicaltabletypedef)\]
 - `ColumnGroups`:
-  `List`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
-- `FieldFolders`: `Dict`\[`str`,
+  `Sequence`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
+- `FieldFolders`: `Mapping`\[`str`,
   [FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef)\]
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
 - `RowLevelPermissionTagConfiguration`:
   [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
-  `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DataSetUsageConfiguration`:
   [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
 
@@ -933,11 +933,11 @@ Optional fields:
 - `Credentials`:
   [DataSourceCredentialsTypeDef](./type_defs.md#datasourcecredentialstypedef)
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `VpcConnectionProperties`:
   [VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef)
 - `SslProperties`: [SslPropertiesTypeDef](./type_defs.md#sslpropertiestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDataSourceResponseTypeDef
 
@@ -1000,8 +1000,8 @@ Optional fields:
   [FolderTypeType](./literals.md#foldertypetype))
 - `ParentFolderArn`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateFolderResponseTypeDef
 
@@ -1092,7 +1092,7 @@ Required fields:
 Optional fields:
 
 - `PolicyArn`: `str`
-- `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Identities`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 ## CreateIAMPolicyAssignmentResponseTypeDef
 
@@ -1156,7 +1156,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateNamespaceResponseTypeDef
 
@@ -1221,8 +1221,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VersionDescription`: `str`
 
 ## CreateTemplateResponseTypeDef
@@ -1288,8 +1288,8 @@ Optional fields:
 
 - `VersionDescription`: `str`
 - `Permissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateThemeResponseTypeDef
 
@@ -1322,7 +1322,7 @@ Required fields:
 Optional fields:
 
 - `AlternateDataSourceParameters`:
-  `List`\[[DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef)\]
+  `Sequence`\[[DataSourceParametersTypeDef](./type_defs.md#datasourceparameterstypedef)\]
 
 ## CustomSqlTypeDef
 
@@ -1338,7 +1338,8 @@ Required fields:
 
 Optional fields:
 
-- `Columns`: `List`\[[InputColumnTypeDef](./type_defs.md#inputcolumntypedef)\]
+- `Columns`:
+  `Sequence`\[[InputColumnTypeDef](./type_defs.md#inputcolumntypedef)\]
 
 ## DashboardErrorTypeDef
 
@@ -1403,7 +1404,7 @@ from mypy_boto3_quicksight.type_defs import DashboardSourceTemplateTypeDef
 Required fields:
 
 - `DataSetReferences`:
-  `List`\[[DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef)\]
+  `Sequence`\[[DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef)\]
 - `Arn`: `str`
 
 ## DashboardSummaryTypeDef
@@ -1481,8 +1482,8 @@ from mypy_boto3_quicksight.type_defs import DataColorPaletteTypeDef
 
 Optional fields:
 
-- `Colors`: `List`\[`str`\]
-- `MinMaxGradient`: `List`\[`str`\]
+- `Colors`: `Sequence`\[`str`\]
+- `MinMaxGradient`: `Sequence`\[`str`\]
 - `EmptyFillColor`: `str`
 
 ## DataSetConfigurationTypeDef
@@ -1691,7 +1692,7 @@ from mypy_boto3_quicksight.type_defs import DateTimeParameterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`Union`\[`datetime`, `str`\]\]
+- `Values`: `Sequence`\[`Union`\[`datetime`, `str`\]\]
 
 ## DecimalParameterTypeDef
 
@@ -1702,7 +1703,7 @@ from mypy_boto3_quicksight.type_defs import DecimalParameterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`float`\]
+- `Values`: `Sequence`\[`float`\]
 
 ## DeleteAccountCustomizationRequestRequestTypeDef
 
@@ -2849,7 +2850,7 @@ from mypy_boto3_quicksight.type_defs import FieldFolderTypeDef
 Optional fields:
 
 - `description`: `str`
-- `columns`: `List`\[`str`\]
+- `columns`: `Sequence`\[`str`\]
 
 ## FilterOperationTypeDef
 
@@ -2929,7 +2930,7 @@ Required fields:
 
 - `AwsAccountId`: `str`
 - `Namespace`: `str`
-- `AuthorizedResourceArns`: `List`\[`str`\]
+- `AuthorizedResourceArns`: `Sequence`\[`str`\]
 - `ExperienceConfiguration`:
   [AnonymousUserEmbeddingExperienceConfigurationTypeDef](./type_defs.md#anonymoususerembeddingexperienceconfigurationtypedef)
 
@@ -2937,7 +2938,7 @@ Optional fields:
 
 - `SessionLifetimeInMinutes`: `int`
 - `SessionTags`:
-  `List`\[[SessionTagTypeDef](./type_defs.md#sessiontagtypedef)\]
+  `Sequence`\[[SessionTagTypeDef](./type_defs.md#sessiontagtypedef)\]
 
 ## GenerateEmbedUrlForAnonymousUserResponseTypeDef
 
@@ -2995,7 +2996,7 @@ Required fields:
 - `Name`: `str`
 - `CountryCode`: `Literal['US']` (see
   [GeoSpatialCountryCodeType](./literals.md#geospatialcountrycodetype))
-- `Columns`: `List`\[`str`\]
+- `Columns`: `Sequence`\[`str`\]
 
 ## GetDashboardEmbedUrlRequestRequestTypeDef
 
@@ -3018,7 +3019,7 @@ Optional fields:
 - `StatePersistenceEnabled`: `bool`
 - `UserArn`: `str`
 - `Namespace`: `str`
-- `AdditionalDashboardIds`: `List`\[`str`\]
+- `AdditionalDashboardIds`: `Sequence`\[`str`\]
 
 ## GetDashboardEmbedUrlResponseTypeDef
 
@@ -3171,7 +3172,7 @@ from mypy_boto3_quicksight.type_defs import IntegerParameterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`int`\]
+- `Values`: `Sequence`\[`int`\]
 
 ## JiraParametersTypeDef
 
@@ -3931,7 +3932,7 @@ Required fields:
 Optional fields:
 
 - `DataTransforms`:
-  `List`\[[TransformOperationTypeDef](./type_defs.md#transformoperationtypedef)\]
+  `Sequence`\[[TransformOperationTypeDef](./type_defs.md#transformoperationtypedef)\]
 
 ## ManifestFileLocationTypeDef
 
@@ -4062,13 +4063,13 @@ from mypy_boto3_quicksight.type_defs import ParametersTypeDef
 Optional fields:
 
 - `StringParameters`:
-  `List`\[[StringParameterTypeDef](./type_defs.md#stringparametertypedef)\]
+  `Sequence`\[[StringParameterTypeDef](./type_defs.md#stringparametertypedef)\]
 - `IntegerParameters`:
-  `List`\[[IntegerParameterTypeDef](./type_defs.md#integerparametertypedef)\]
+  `Sequence`\[[IntegerParameterTypeDef](./type_defs.md#integerparametertypedef)\]
 - `DecimalParameters`:
-  `List`\[[DecimalParameterTypeDef](./type_defs.md#decimalparametertypedef)\]
+  `Sequence`\[[DecimalParameterTypeDef](./type_defs.md#decimalparametertypedef)\]
 - `DateTimeParameters`:
-  `List`\[[DateTimeParameterTypeDef](./type_defs.md#datetimeparametertypedef)\]
+  `Sequence`\[[DateTimeParameterTypeDef](./type_defs.md#datetimeparametertypedef)\]
 
 ## PhysicalTableTypeDef
 
@@ -4115,7 +4116,7 @@ from mypy_boto3_quicksight.type_defs import ProjectOperationTypeDef
 
 Required fields:
 
-- `ProjectedColumns`: `List`\[`str`\]
+- `ProjectedColumns`: `Sequence`\[`str`\]
 
 ## QueueInfoTypeDef
 
@@ -4238,7 +4239,7 @@ Required fields:
 - `DataSourceArn`: `str`
 - `Name`: `str`
 - `InputColumns`:
-  `List`\[[InputColumnTypeDef](./type_defs.md#inputcolumntypedef)\]
+  `Sequence`\[[InputColumnTypeDef](./type_defs.md#inputcolumntypedef)\]
 
 Optional fields:
 
@@ -4265,7 +4266,7 @@ from mypy_boto3_quicksight.type_defs import ResourcePermissionTypeDef
 Required fields:
 
 - `Principal`: `str`
-- `Actions`: `List`\[`str`\]
+- `Actions`: `Sequence`\[`str`\]
 
 ## ResponseMetadataTypeDef
 
@@ -4346,7 +4347,7 @@ from mypy_boto3_quicksight.type_defs import RowLevelPermissionTagConfigurationTy
 Required fields:
 
 - `TagRules`:
-  `List`\[[RowLevelPermissionTagRuleTypeDef](./type_defs.md#rowlevelpermissiontagruletypedef)\]
+  `Sequence`\[[RowLevelPermissionTagRuleTypeDef](./type_defs.md#rowlevelpermissiontagruletypedef)\]
 
 Optional fields:
 
@@ -4389,7 +4390,7 @@ Required fields:
 
 - `DataSourceArn`: `str`
 - `InputColumns`:
-  `List`\[[InputColumnTypeDef](./type_defs.md#inputcolumntypedef)\]
+  `Sequence`\[[InputColumnTypeDef](./type_defs.md#inputcolumntypedef)\]
 
 Optional fields:
 
@@ -4406,7 +4407,7 @@ Required fields:
 
 - `AwsAccountId`: `str`
 - `Filters`:
-  `List`\[[AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef)\]
+  `Sequence`\[[AnalysisSearchFilterTypeDef](./type_defs.md#analysissearchfiltertypedef)\]
 
 Optional fields:
 
@@ -4439,7 +4440,7 @@ Required fields:
 
 - `AwsAccountId`: `str`
 - `Filters`:
-  `List`\[[DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef)\]
+  `Sequence`\[[DashboardSearchFilterTypeDef](./type_defs.md#dashboardsearchfiltertypedef)\]
 
 Optional fields:
 
@@ -4472,7 +4473,7 @@ Required fields:
 
 - `AwsAccountId`: `str`
 - `Filters`:
-  `List`\[[FolderSearchFilterTypeDef](./type_defs.md#foldersearchfiltertypedef)\]
+  `Sequence`\[[FolderSearchFilterTypeDef](./type_defs.md#foldersearchfiltertypedef)\]
 
 Optional fields:
 
@@ -4602,7 +4603,7 @@ from mypy_boto3_quicksight.type_defs import StringParameterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## TagColumnOperationTypeDef
 
@@ -4613,7 +4614,7 @@ from mypy_boto3_quicksight.type_defs import TagColumnOperationTypeDef
 Required fields:
 
 - `ColumnName`: `str`
-- `Tags`: `List`\[[ColumnTagTypeDef](./type_defs.md#columntagtypedef)\]
+- `Tags`: `Sequence`\[[ColumnTagTypeDef](./type_defs.md#columntagtypedef)\]
 
 ## TagResourceRequestRequestTypeDef
 
@@ -4624,7 +4625,7 @@ from mypy_boto3_quicksight.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagResourceResponseTypeDef
 
@@ -4683,7 +4684,7 @@ Required fields:
 
 - `Arn`: `str`
 - `DataSetReferences`:
-  `List`\[[DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef)\]
+  `Sequence`\[[DataSetReferenceTypeDef](./type_defs.md#datasetreferencetypedef)\]
 
 ## TemplateSourceEntityTypeDef
 
@@ -4974,7 +4975,8 @@ from mypy_boto3_quicksight.type_defs import UntagColumnOperationTypeDef
 Required fields:
 
 - `ColumnName`: `str`
-- `TagNames`: `List`\[[ColumnTagNameType](./literals.md#columntagnametype)\]
+- `TagNames`:
+  `Sequence`\[[ColumnTagNameType](./literals.md#columntagnametype)\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -4985,7 +4987,7 @@ from mypy_boto3_quicksight.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagResourceResponseTypeDef
 
@@ -5076,9 +5078,9 @@ Required fields:
 Optional fields:
 
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 ## UpdateAnalysisPermissionsResponseTypeDef
 
@@ -5146,9 +5148,9 @@ Required fields:
 Optional fields:
 
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 ## UpdateDashboardPermissionsResponseTypeDef
 
@@ -5247,9 +5249,9 @@ Required fields:
 Optional fields:
 
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 ## UpdateDataSetPermissionsResponseTypeDef
 
@@ -5277,24 +5279,24 @@ Required fields:
 - `AwsAccountId`: `str`
 - `DataSetId`: `str`
 - `Name`: `str`
-- `PhysicalTableMap`: `Dict`\[`str`,
+- `PhysicalTableMap`: `Mapping`\[`str`,
   [PhysicalTableTypeDef](./type_defs.md#physicaltabletypedef)\]
 - `ImportMode`: [DataSetImportModeType](./literals.md#datasetimportmodetype)
 
 Optional fields:
 
-- `LogicalTableMap`: `Dict`\[`str`,
+- `LogicalTableMap`: `Mapping`\[`str`,
   [LogicalTableTypeDef](./type_defs.md#logicaltabletypedef)\]
 - `ColumnGroups`:
-  `List`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
-- `FieldFolders`: `Dict`\[`str`,
+  `Sequence`\[[ColumnGroupTypeDef](./type_defs.md#columngrouptypedef)\]
+- `FieldFolders`: `Mapping`\[`str`,
   [FieldFolderTypeDef](./type_defs.md#fieldfoldertypedef)\]
 - `RowLevelPermissionDataSet`:
   [RowLevelPermissionDataSetTypeDef](./type_defs.md#rowlevelpermissiondatasettypedef)
 - `RowLevelPermissionTagConfiguration`:
   [RowLevelPermissionTagConfigurationTypeDef](./type_defs.md#rowlevelpermissiontagconfigurationtypedef)
 - `ColumnLevelPermissionRules`:
-  `List`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
+  `Sequence`\[[ColumnLevelPermissionRuleTypeDef](./type_defs.md#columnlevelpermissionruletypedef)\]
 - `DataSetUsageConfiguration`:
   [DataSetUsageConfigurationTypeDef](./type_defs.md#datasetusageconfigurationtypedef)
 
@@ -5329,9 +5331,9 @@ Required fields:
 Optional fields:
 
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 ## UpdateDataSourcePermissionsResponseTypeDef
 
@@ -5400,9 +5402,9 @@ Required fields:
 Optional fields:
 
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 ## UpdateFolderPermissionsResponseTypeDef
 
@@ -5495,7 +5497,7 @@ Optional fields:
 - `AssignmentStatus`:
   [AssignmentStatusType](./literals.md#assignmentstatustype)
 - `PolicyArn`: `str`
-- `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
+- `Identities`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 ## UpdateIAMPolicyAssignmentResponseTypeDef
 
@@ -5557,9 +5559,9 @@ Required fields:
 Optional fields:
 
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 ## UpdateTemplatePermissionsResponseTypeDef
 
@@ -5654,9 +5656,9 @@ Required fields:
 Optional fields:
 
 - `GrantPermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 - `RevokePermissions`:
-  `List`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+  `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
 
 ## UpdateThemePermissionsResponseTypeDef
 

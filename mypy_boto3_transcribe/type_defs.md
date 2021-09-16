@@ -89,6 +89,8 @@ type annotations stubs module
   - [StartMedicalTranscriptionJobResponseTypeDef](#startmedicaltranscriptionjobresponsetypedef)
   - [StartTranscriptionJobRequestRequestTypeDef](#starttranscriptionjobrequestrequesttypedef)
   - [StartTranscriptionJobResponseTypeDef](#starttranscriptionjobresponsetypedef)
+  - [SubtitlesOutputTypeDef](#subtitlesoutputtypedef)
+  - [SubtitlesTypeDef](#subtitlestypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TranscriptFilterTypeDef](#transcriptfiltertypedef)
@@ -227,7 +229,7 @@ from mypy_boto3_transcribe.type_defs import CreateCallAnalyticsCategoryRequestRe
 Required fields:
 
 - `CategoryName`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 
 ## CreateCallAnalyticsCategoryResponseTypeDef
 
@@ -258,7 +260,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateLanguageModelResponseTypeDef
 
@@ -291,7 +293,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateMedicalVocabularyResponseTypeDef
 
@@ -322,9 +324,9 @@ Required fields:
 
 Optional fields:
 
-- `Words`: `List`\[`str`\]
+- `Words`: `Sequence`\[`str`\]
 - `VocabularyFilterFileUri`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateVocabularyFilterResponseTypeDef
 
@@ -353,9 +355,9 @@ Required fields:
 
 Optional fields:
 
-- `Phrases`: `List`\[`str`\]
+- `Phrases`: `Sequence`\[`str`\]
 - `VocabularyFileUri`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateVocabularyResponseTypeDef
 
@@ -1122,7 +1124,7 @@ from mypy_boto3_transcribe.type_defs import SentimentFilterTypeDef
 Required fields:
 
 - `Sentiments`:
-  `List`\[[SentimentValueType](./literals.md#sentimentvaluetype)\]
+  `Sequence`\[[SentimentValueType](./literals.md#sentimentvaluetype)\]
 
 Optional fields:
 
@@ -1170,7 +1172,7 @@ Optional fields:
 - `Settings`:
   [CallAnalyticsJobSettingsTypeDef](./type_defs.md#callanalyticsjobsettingstypedef)
 - `ChannelDefinitions`:
-  `List`\[[ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef)\]
+  `Sequence`\[[ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef)\]
 
 ## StartCallAnalyticsJobResponseTypeDef
 
@@ -1207,12 +1209,12 @@ Optional fields:
 - `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
 - `OutputKey`: `str`
 - `OutputEncryptionKMSKeyId`: `str`
-- `KMSEncryptionContext`: `Dict`\[`str`, `str`\]
+- `KMSEncryptionContext`: `Mapping`\[`str`, `str`\]
 - `Settings`:
   [MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef)
 - `ContentIdentificationType`: `Literal['PHI']` (see
   [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype))
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartMedicalTranscriptionJobResponseTypeDef
 
@@ -1246,7 +1248,7 @@ Optional fields:
 - `OutputBucketName`: `str`
 - `OutputKey`: `str`
 - `OutputEncryptionKMSKeyId`: `str`
-- `KMSEncryptionContext`: `Dict`\[`str`, `str`\]
+- `KMSEncryptionContext`: `Mapping`\[`str`, `str`\]
 - `Settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
 - `ModelSettings`: [ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef)
 - `JobExecutionSettings`:
@@ -1255,8 +1257,9 @@ Optional fields:
   [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
 - `IdentifyLanguage`: `bool`
 - `LanguageOptions`:
-  `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[LanguageCodeType](./literals.md#languagecodetype)\]
+- `Subtitles`: [SubtitlesTypeDef](./type_defs.md#subtitlestypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartTranscriptionJobResponseTypeDef
 
@@ -1271,6 +1274,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## SubtitlesOutputTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import SubtitlesOutputTypeDef
+```
+
+Optional fields:
+
+- `Formats`: `List`\[[SubtitleFormatType](./literals.md#subtitleformattype)\]
+- `SubtitleFileUris`: `List`\[`str`\]
+
+## SubtitlesTypeDef
+
+```python
+from mypy_boto3_transcribe.type_defs import SubtitlesTypeDef
+```
+
+Optional fields:
+
+- `Formats`:
+  `Sequence`\[[SubtitleFormatType](./literals.md#subtitleformattype)\]
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1280,7 +1305,7 @@ from mypy_boto3_transcribe.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1303,7 +1328,7 @@ Required fields:
 
 - `TranscriptFilterType`: `Literal['EXACT']` (see
   [TranscriptFilterTypeType](./literals.md#transcriptfiltertypetype))
-- `Targets`: `List`\[`str`\]
+- `Targets`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -1380,6 +1405,7 @@ Optional fields:
   `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
 - `IdentifiedLanguageScore`: `float`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Subtitles`: [SubtitlesOutputTypeDef](./type_defs.md#subtitlesoutputtypedef)
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1390,7 +1416,7 @@ from mypy_boto3_transcribe.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateCallAnalyticsCategoryRequestRequestTypeDef
 
@@ -1401,7 +1427,7 @@ from mypy_boto3_transcribe.type_defs import UpdateCallAnalyticsCategoryRequestRe
 Required fields:
 
 - `CategoryName`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 
 ## UpdateCallAnalyticsCategoryResponseTypeDef
 
@@ -1458,7 +1484,7 @@ Required fields:
 
 Optional fields:
 
-- `Words`: `List`\[`str`\]
+- `Words`: `Sequence`\[`str`\]
 - `VocabularyFilterFileUri`: `str`
 
 ## UpdateVocabularyFilterResponseTypeDef
@@ -1488,7 +1514,7 @@ Required fields:
 
 Optional fields:
 
-- `Phrases`: `List`\[`str`\]
+- `Phrases`: `Sequence`\[`str`\]
 - `VocabularyFileUri`: `str`
 
 ## UpdateVocabularyResponseTypeDef

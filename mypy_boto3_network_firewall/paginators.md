@@ -57,7 +57,7 @@ Boto3 documentation:
 
 Arguments for `ListFirewallsPaginator.paginate` method:
 
-- `VpcIds`: `List`\[`str`\]
+- `VpcIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

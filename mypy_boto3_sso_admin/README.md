@@ -129,6 +129,7 @@ from mypy_boto3_sso_admin.literals import InstanceAccessControlAttributeConfigur
 - [ProvisioningStatusType](./literals.md#provisioningstatustype)
 - [StatusValuesType](./literals.md#statusvaluestype)
 - [TargetTypeType](./literals.md#targettypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

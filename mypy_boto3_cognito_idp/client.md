@@ -219,7 +219,7 @@ Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `CustomAttributes`:
-  `List`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
+  `Sequence`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -260,7 +260,7 @@ Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -281,15 +281,15 @@ Keyword-only arguments:
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
 - `UserAttributes`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
+  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 - `ValidationData`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
+  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 - `TemporaryPassword`: `str`
 - `ForceAliasCreation`: `bool`
 - `MessageAction`: [MessageActionTypeType](./literals.md#messageactiontypetype)
 - `DesiredDeliveryMediums`:
-  `List`\[[DeliveryMediumTypeType](./literals.md#deliverymediumtypetype)\]
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[DeliveryMediumTypeType](./literals.md#deliverymediumtypetype)\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns
 [AdminCreateUserResponseTypeDef](./type_defs.md#admincreateuserresponsetypedef).
@@ -328,7 +328,7 @@ Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
-- `UserAttributeNames`: `List`\[`str`\] *(required)*
+- `UserAttributeNames`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -469,8 +469,8 @@ Keyword-only arguments:
 - `UserPoolId`: `str` *(required)*
 - `ClientId`: `str` *(required)*
 - `AuthFlow`: [AuthFlowTypeType](./literals.md#authflowtypetype) *(required)*
-- `AuthParameters`: `Dict`\[`str`, `str`\]
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `AuthParameters`: `Mapping`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `ContextData`:
@@ -611,7 +611,7 @@ Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -634,13 +634,13 @@ Keyword-only arguments:
 - `ClientId`: `str` *(required)*
 - `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
   *(required)*
-- `ChallengeResponses`: `Dict`\[`str`, `str`\]
+- `ChallengeResponses`: `Mapping`\[`str`, `str`\]
 - `Session`: `str`
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `ContextData`:
   [ContextDataTypeTypeDef](./type_defs.md#contextdatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns
 [AdminRespondToAuthChallengeResponseTypeDef](./type_defs.md#adminrespondtoauthchallengeresponsetypedef).
@@ -710,7 +710,7 @@ Keyword-only arguments:
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
 - `MFAOptions`:
-  `List`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
+  `Sequence`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -781,9 +781,9 @@ Keyword-only arguments:
 - `UserPoolId`: `str` *(required)*
 - `Username`: `str` *(required)*
 - `UserAttributes`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
+  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
   *(required)*
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -910,7 +910,7 @@ Keyword-only arguments:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `UserContextData`:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -938,7 +938,7 @@ Keyword-only arguments:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `UserContextData`:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -985,9 +985,9 @@ Keyword-only arguments:
 - `ProviderType`:
   [IdentityProviderTypeTypeType](./literals.md#identityprovidertypetypetype)
   *(required)*
-- `ProviderDetails`: `Dict`\[`str`, `str`\] *(required)*
-- `AttributeMapping`: `Dict`\[`str`, `str`\]
-- `IdpIdentifiers`: `List`\[`str`\]
+- `ProviderDetails`: `Mapping`\[`str`, `str`\] *(required)*
+- `AttributeMapping`: `Mapping`\[`str`, `str`\]
+- `IdpIdentifiers`: `Sequence`\[`str`\]
 
 Returns
 [CreateIdentityProviderResponseTypeDef](./type_defs.md#createidentityproviderresponsetypedef).
@@ -1011,7 +1011,7 @@ Keyword-only arguments:
 - `Identifier`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Scopes`:
-  `List`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
+  `Sequence`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
 
 Returns
 [CreateResourceServerResponseTypeDef](./type_defs.md#createresourceserverresponsetypedef).
@@ -1059,11 +1059,11 @@ Keyword-only arguments:
 - `LambdaConfig`:
   [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
 - `AutoVerifiedAttributes`:
-  `List`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
+  `Sequence`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
 - `AliasAttributes`:
-  `List`\[[AliasAttributeTypeType](./literals.md#aliasattributetypetype)\]
+  `Sequence`\[[AliasAttributeTypeType](./literals.md#aliasattributetypetype)\]
 - `UsernameAttributes`:
-  `List`\[[UsernameAttributeTypeType](./literals.md#usernameattributetypetype)\]
+  `Sequence`\[[UsernameAttributeTypeType](./literals.md#usernameattributetypetype)\]
 - `SmsVerificationMessage`: `str`
 - `EmailVerificationMessage`: `str`
 - `EmailVerificationSubject`: `str`
@@ -1077,11 +1077,11 @@ Keyword-only arguments:
   [EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef)
 - `SmsConfiguration`:
   [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
-- `UserPoolTags`: `Dict`\[`str`, `str`\]
+- `UserPoolTags`: `Mapping`\[`str`, `str`\]
 - `AdminCreateUserConfig`:
   [AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef)
 - `Schema`:
-  `List`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
+  `Sequence`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
 - `UserPoolAddOns`:
   [UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef)
 - `UsernameConfiguration`:
@@ -1115,17 +1115,17 @@ Keyword-only arguments:
 - `IdTokenValidity`: `int`
 - `TokenValidityUnits`:
   [TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef)
-- `ReadAttributes`: `List`\[`str`\]
-- `WriteAttributes`: `List`\[`str`\]
+- `ReadAttributes`: `Sequence`\[`str`\]
+- `WriteAttributes`: `Sequence`\[`str`\]
 - `ExplicitAuthFlows`:
-  `List`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
-- `SupportedIdentityProviders`: `List`\[`str`\]
-- `CallbackURLs`: `List`\[`str`\]
-- `LogoutURLs`: `List`\[`str`\]
+  `Sequence`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
+- `SupportedIdentityProviders`: `Sequence`\[`str`\]
+- `CallbackURLs`: `Sequence`\[`str`\]
+- `LogoutURLs`: `Sequence`\[`str`\]
 - `DefaultRedirectURI`: `str`
 - `AllowedOAuthFlows`:
-  `List`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
-- `AllowedOAuthScopes`: `List`\[`str`\]
+  `Sequence`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
+- `AllowedOAuthScopes`: `Sequence`\[`str`\]
 - `AllowedOAuthFlowsUserPoolClient`: `bool`
 - `AnalyticsConfiguration`:
   [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
@@ -1243,7 +1243,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `UserAttributeNames`: `List`\[`str`\] *(required)*
+- `UserAttributeNames`: `Sequence`\[`str`\] *(required)*
 - `AccessToken`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1486,7 +1486,7 @@ Keyword-only arguments:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ForgotPasswordResponseTypeDef](./type_defs.md#forgotpasswordresponsetypedef).
@@ -1504,7 +1504,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1665,7 +1665,7 @@ Keyword-only arguments:
 
 - `AccessToken`: `str` *(required)*
 - `AttributeName`: `str` *(required)*
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns
 [GetUserAttributeVerificationCodeResponseTypeDef](./type_defs.md#getuserattributeverificationcoderesponsetypedef).
@@ -1724,8 +1724,8 @@ Keyword-only arguments:
 
 - `AuthFlow`: [AuthFlowTypeType](./literals.md#authflowtypetype) *(required)*
 - `ClientId`: `str` *(required)*
-- `AuthParameters`: `Dict`\[`str`, `str`\]
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `AuthParameters`: `Mapping`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `UserContextData`:
@@ -1918,7 +1918,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `PaginationToken`: `str`
 - `Filter`: `str`
@@ -1970,7 +1970,7 @@ Keyword-only arguments:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ResendConfirmationCodeResponseTypeDef](./type_defs.md#resendconfirmationcoderesponsetypedef).
@@ -1994,12 +1994,12 @@ Keyword-only arguments:
 - `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
   *(required)*
 - `Session`: `str`
-- `ChallengeResponses`: `Dict`\[`str`, `str`\]
+- `ChallengeResponses`: `Mapping`\[`str`, `str`\]
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `UserContextData`:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns
 [RespondToAuthChallengeResponseTypeDef](./type_defs.md#respondtoauthchallengeresponsetypedef).
@@ -2138,7 +2138,7 @@ Keyword-only arguments:
 
 - `AccessToken`: `str` *(required)*
 - `MFAOptions`:
-  `List`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
+  `Sequence`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -2163,14 +2163,14 @@ Keyword-only arguments:
 - `Password`: `str` *(required)*
 - `SecretHash`: `str`
 - `UserAttributes`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
+  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 - `ValidationData`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
+  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
 - `AnalyticsMetadata`:
   [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
 - `UserContextData`:
   [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns [SignUpResponseTypeDef](./type_defs.md#signupresponsetypedef).
 
@@ -2230,7 +2230,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2249,7 +2249,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -2339,9 +2339,9 @@ Keyword-only arguments:
 
 - `UserPoolId`: `str` *(required)*
 - `ProviderName`: `str` *(required)*
-- `ProviderDetails`: `Dict`\[`str`, `str`\]
-- `AttributeMapping`: `Dict`\[`str`, `str`\]
-- `IdpIdentifiers`: `List`\[`str`\]
+- `ProviderDetails`: `Mapping`\[`str`, `str`\]
+- `AttributeMapping`: `Mapping`\[`str`, `str`\]
+- `IdpIdentifiers`: `Sequence`\[`str`\]
 
 Returns
 [UpdateIdentityProviderResponseTypeDef](./type_defs.md#updateidentityproviderresponsetypedef).
@@ -2365,7 +2365,7 @@ Keyword-only arguments:
 - `Identifier`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Scopes`:
-  `List`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
+  `Sequence`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
 
 Returns
 [UpdateResourceServerResponseTypeDef](./type_defs.md#updateresourceserverresponsetypedef).
@@ -2386,10 +2386,10 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `UserAttributes`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
+  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
   *(required)*
 - `AccessToken`: `str` *(required)*
-- `ClientMetadata`: `Dict`\[`str`, `str`\]
+- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
 Returns
 [UpdateUserAttributesResponseTypeDef](./type_defs.md#updateuserattributesresponsetypedef).
@@ -2414,7 +2414,7 @@ Keyword-only arguments:
 - `LambdaConfig`:
   [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
 - `AutoVerifiedAttributes`:
-  `List`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
+  `Sequence`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
 - `SmsVerificationMessage`: `str`
 - `EmailVerificationMessage`: `str`
 - `EmailVerificationSubject`: `str`
@@ -2428,7 +2428,7 @@ Keyword-only arguments:
   [EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef)
 - `SmsConfiguration`:
   [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
-- `UserPoolTags`: `Dict`\[`str`, `str`\]
+- `UserPoolTags`: `Mapping`\[`str`, `str`\]
 - `AdminCreateUserConfig`:
   [AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef)
 - `UserPoolAddOns`:
@@ -2461,17 +2461,17 @@ Keyword-only arguments:
 - `IdTokenValidity`: `int`
 - `TokenValidityUnits`:
   [TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef)
-- `ReadAttributes`: `List`\[`str`\]
-- `WriteAttributes`: `List`\[`str`\]
+- `ReadAttributes`: `Sequence`\[`str`\]
+- `WriteAttributes`: `Sequence`\[`str`\]
 - `ExplicitAuthFlows`:
-  `List`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
-- `SupportedIdentityProviders`: `List`\[`str`\]
-- `CallbackURLs`: `List`\[`str`\]
-- `LogoutURLs`: `List`\[`str`\]
+  `Sequence`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
+- `SupportedIdentityProviders`: `Sequence`\[`str`\]
+- `CallbackURLs`: `Sequence`\[`str`\]
+- `LogoutURLs`: `Sequence`\[`str`\]
 - `DefaultRedirectURI`: `str`
 - `AllowedOAuthFlows`:
-  `List`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
-- `AllowedOAuthScopes`: `List`\[`str`\]
+  `Sequence`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
+- `AllowedOAuthScopes`: `Sequence`\[`str`\]
 - `AllowedOAuthFlowsUserPoolClient`: `bool`
 - `AnalyticsConfiguration`:
   [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)

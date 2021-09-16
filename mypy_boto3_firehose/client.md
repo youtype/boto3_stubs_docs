@@ -127,7 +127,7 @@ Keyword-only arguments:
   [SplunkDestinationConfigurationTypeDef](./type_defs.md#splunkdestinationconfigurationtypedef)
 - `HttpEndpointDestinationConfiguration`:
   [HttpEndpointDestinationConfigurationTypeDef](./type_defs.md#httpendpointdestinationconfigurationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDeliveryStreamOutputTypeDef](./type_defs.md#createdeliverystreamoutputtypedef).
@@ -185,7 +185,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -271,7 +271,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
-- `Records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
+- `Records`: `Sequence`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
   *(required)*
 
 Returns
@@ -332,7 +332,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -351,7 +351,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DeliveryStreamName`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

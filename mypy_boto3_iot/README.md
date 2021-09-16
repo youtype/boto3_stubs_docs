@@ -497,6 +497,7 @@ from mypy_boto3_iot.literals import AbortActionType, ...
 - [ThingIndexingModeType](./literals.md#thingindexingmodetype)
 - [TopicRuleDestinationStatusType](./literals.md#topicruledestinationstatustype)
 - [ViolationEventTypeType](./literals.md#violationeventtypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

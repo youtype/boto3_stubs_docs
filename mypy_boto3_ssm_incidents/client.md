@@ -129,7 +129,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `regions`: `Dict`\[`str`,
+- `regions`: `Mapping`\[`str`,
   [RegionMapInputValueTypeDef](./type_defs.md#regionmapinputvaluetypedef)\]
   *(required)*
 - `clientToken`: `str`
@@ -156,12 +156,12 @@ Keyword-only arguments:
   [IncidentTemplateTypeDef](./type_defs.md#incidenttemplatetypedef)
   *(required)*
 - `name`: `str` *(required)*
-- `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
 - `clientToken`: `str`
 - `displayName`: `str`
-- `engagements`: `List`\[`str`\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `engagements`: `Sequence`\[`str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateResponsePlanOutputTypeDef](./type_defs.md#createresponseplanoutputtypedef).
@@ -302,7 +302,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -424,7 +424,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -530,7 +530,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `incidentRecordArn`: `str` *(required)*
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `sortBy`: `Literal['EVENT_TIME']` (see
@@ -580,7 +580,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 - `impact`: `int`
 - `relatedItems`:
-  `List`\[[RelatedItemTypeDef](./type_defs.md#relateditemtypedef)\]
+  `Sequence`\[[RelatedItemTypeDef](./type_defs.md#relateditemtypedef)\]
 - `title`: `str`
 - `triggerDetails`:
   [TriggerDetailsTypeDef](./type_defs.md#triggerdetailstypedef)
@@ -603,7 +603,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -622,7 +622,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -668,7 +668,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 - `impact`: `int`
 - `notificationTargets`:
-  `List`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
+  `Sequence`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
 - `status`: [IncidentRecordStatusType](./literals.md#incidentrecordstatustype)
 - `summary`: `str`
 - `title`: `str`
@@ -714,7 +714,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `actions`:
-  `List`\[[UpdateReplicationSetActionTypeDef](./type_defs.md#updatereplicationsetactiontypedef)\]
+  `Sequence`\[[UpdateReplicationSetActionTypeDef](./type_defs.md#updatereplicationsetactiontypedef)\]
   *(required)*
 - `arn`: `str` *(required)*
 - `clientToken`: `str`
@@ -737,15 +737,15 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
-- `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+- `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
 - `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
 - `clientToken`: `str`
 - `displayName`: `str`
-- `engagements`: `List`\[`str`\]
+- `engagements`: `Sequence`\[`str`\]
 - `incidentTemplateDedupeString`: `str`
 - `incidentTemplateImpact`: `int`
 - `incidentTemplateNotificationTargets`:
-  `List`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
+  `Sequence`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
 - `incidentTemplateSummary`: `str`
 - `incidentTemplateTitle`: `str`
 

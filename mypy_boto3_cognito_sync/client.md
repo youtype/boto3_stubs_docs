@@ -223,7 +223,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -395,7 +395,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
-- `Events`: `Dict`\[`str`, `str`\] *(required)*
+- `Events`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### set_identity_pool_configuration
 
@@ -486,7 +486,7 @@ Keyword-only arguments:
 - `SyncSessionToken`: `str` *(required)*
 - `DeviceId`: `str`
 - `RecordPatches`:
-  `List`\[[RecordPatchTypeDef](./type_defs.md#recordpatchtypedef)\]
+  `Sequence`\[[RecordPatchTypeDef](./type_defs.md#recordpatchtypedef)\]
 - `ClientContext`: `str`
 
 Returns

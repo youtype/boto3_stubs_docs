@@ -43,11 +43,11 @@ from mypy_boto3_rds_data.type_defs import ArrayValueTypeDef
 Optional fields:
 
 - `arrayValues`:
-  `List`\[[ArrayValueTypeDef](./type_defs.md#arrayvaluetypedef)\]
-- `booleanValues`: `List`\[`bool`\]
-- `doubleValues`: `List`\[`float`\]
-- `longValues`: `List`\[`int`\]
-- `stringValues`: `List`\[`str`\]
+  `Sequence`\[[ArrayValueTypeDef](./type_defs.md#arrayvaluetypedef)\]
+- `booleanValues`: `Sequence`\[`bool`\]
+- `doubleValues`: `Sequence`\[`float`\]
+- `longValues`: `Sequence`\[`int`\]
+- `stringValues`: `Sequence`\[`str`\]
 
 ## BatchExecuteStatementRequestRequestTypeDef
 
@@ -65,7 +65,7 @@ Optional fields:
 
 - `database`: `str`
 - `parameterSets`:
-  `List`\[`List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]\]
+  `Sequence`\[`Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]\]
 - `schema`: `str`
 - `transactionId`: `str`
 
@@ -205,7 +205,7 @@ Optional fields:
 - `database`: `str`
 - `includeResultMetadata`: `bool`
 - `parameters`:
-  `List`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
+  `Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
 - `resultSetOptions`:
   [ResultSetOptionsTypeDef](./type_defs.md#resultsetoptionstypedef)
 - `schema`: `str`

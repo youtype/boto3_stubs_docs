@@ -15,6 +15,7 @@ pip install mypy-boto3-personalize-events
   - [PersonalizeEventsClient](#personalizeeventsclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## PersonalizeEventsClient
@@ -45,6 +46,18 @@ PersonalizeEventsClient [exceptions](./client.md#exceptions)
 - InvalidInputException
 - ResourceInUseException
 - ResourceNotFoundException
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_personalize_events.literals import ServiceName, ...
+```
+
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

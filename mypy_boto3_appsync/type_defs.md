@@ -190,7 +190,7 @@ from mypy_boto3_appsync.type_defs import CachingConfigTypeDef
 Optional fields:
 
 - `ttl`: `int`
-- `cachingKeys`: `List`\[`str`\]
+- `cachingKeys`: `Sequence`\[`str`\]
 
 ## CognitoUserPoolConfigTypeDef
 
@@ -356,9 +356,9 @@ Optional fields:
   [UserPoolConfigTypeDef](./type_defs.md#userpoolconfigtypedef)
 - `openIDConnectConfig`:
   [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `additionalAuthenticationProviders`:
-  `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
+  `Sequence`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
 - `lambdaAuthorizerConfig`:
   [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
@@ -1137,7 +1137,7 @@ from mypy_boto3_appsync.type_defs import PipelineConfigTypeDef
 
 Optional fields:
 
-- `functions`: `List`\[`str`\]
+- `functions`: `Sequence`\[`str`\]
 
 ## RdsHttpEndpointConfigTypeDef
 
@@ -1247,7 +1247,7 @@ from mypy_boto3_appsync.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TypeTypeDef
 
@@ -1272,7 +1272,7 @@ from mypy_boto3_appsync.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApiCacheRequestRequestTypeDef
 
@@ -1422,7 +1422,7 @@ Optional fields:
 - `openIDConnectConfig`:
   [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
 - `additionalAuthenticationProviders`:
-  `List`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
+  `Sequence`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
 - `xrayEnabled`: `bool`
 - `lambdaAuthorizerConfig`:
   [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)

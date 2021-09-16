@@ -172,7 +172,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
 
 Returns
 [CheckCapacityResponseTypeDef](./type_defs.md#checkcapacityresponsetypedef).
@@ -196,9 +196,9 @@ Keyword-only arguments:
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `IPAddressVersion`:
   [IPAddressVersionType](./literals.md#ipaddressversiontype) *(required)*
-- `Addresses`: `List`\[`str`\] *(required)*
+- `Addresses`: `Sequence`\[`str`\] *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
@@ -222,9 +222,9 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `RegularExpressionList`:
-  `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\] *(required)*
+  `Sequence`\[[RegexTypeDef](./type_defs.md#regextypedef)\] *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRegexPatternSetResponseTypeDef](./type_defs.md#createregexpatternsetresponsetypedef).
@@ -250,9 +250,9 @@ Keyword-only arguments:
   [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef)
   *(required)*
 - `Description`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CustomResponseBodies`: `Dict`\[`str`,
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 Returns
@@ -280,9 +280,9 @@ Keyword-only arguments:
   [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef)
   *(required)*
 - `Description`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CustomResponseBodies`: `Dict`\[`str`,
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 Returns
@@ -485,7 +485,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -961,7 +961,7 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `LockToken`: `str` *(required)*
 - `RecommendedVersion`: `str`
-- `VersionsToPublish`: `Dict`\[`str`,
+- `VersionsToPublish`: `Mapping`\[`str`,
   [VersionToPublishTypeDef](./type_defs.md#versiontopublishtypedef)\]
 
 Returns
@@ -1001,7 +1001,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1020,7 +1020,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1041,7 +1041,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `Id`: `str` *(required)*
-- `Addresses`: `List`\[`str`\] *(required)*
+- `Addresses`: `Sequence`\[`str`\] *(required)*
 - `LockToken`: `str` *(required)*
 - `Description`: `str`
 
@@ -1091,7 +1091,7 @@ Keyword-only arguments:
 - `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
 - `Id`: `str` *(required)*
 - `RegularExpressionList`:
-  `List`\[[RegexTypeDef](./type_defs.md#regextypedef)\] *(required)*
+  `Sequence`\[[RegexTypeDef](./type_defs.md#regextypedef)\] *(required)*
 - `LockToken`: `str` *(required)*
 - `Description`: `str`
 
@@ -1120,8 +1120,8 @@ Keyword-only arguments:
   *(required)*
 - `LockToken`: `str` *(required)*
 - `Description`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `CustomResponseBodies`: `Dict`\[`str`,
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 Returns
@@ -1151,8 +1151,8 @@ Keyword-only arguments:
   *(required)*
 - `LockToken`: `str` *(required)*
 - `Description`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `CustomResponseBodies`: `Dict`\[`str`,
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `CustomResponseBodies`: `Mapping`\[`str`,
   [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
 
 Returns

@@ -195,7 +195,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `IpRoutes`: `List`\[[IpRouteTypeDef](./type_defs.md#iproutetypedef)\]
+- `IpRoutes`: `Sequence`\[[IpRouteTypeDef](./type_defs.md#iproutetypedef)\]
   *(required)*
 - `UpdateSecurityGroupForDirectoryControllers`: `bool`
 
@@ -239,7 +239,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -299,7 +299,7 @@ Keyword-only arguments:
   *(required)*
 - `ShortName`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [ConnectDirectoryResultTypeDef](./type_defs.md#connectdirectoryresulttypedef).
@@ -342,7 +342,7 @@ Keyword-only arguments:
 - `Password`: `str` *(required)*
 - `OrganizationalUnitDistinguishedName`: `str`
 - `ComputerAttributes`:
-  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 Returns
 [CreateComputerResultTypeDef](./type_defs.md#createcomputerresulttypedef).
@@ -364,7 +364,7 @@ Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `RemoteDomainName`: `str` *(required)*
-- `DnsIpAddrs`: `List`\[`str`\] *(required)*
+- `DnsIpAddrs`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -389,7 +389,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `VpcSettings`:
   [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDirectoryResultTypeDef](./type_defs.md#createdirectoryresulttypedef).
@@ -437,7 +437,7 @@ Keyword-only arguments:
 - `ShortName`: `str`
 - `Description`: `str`
 - `Edition`: [DirectoryEditionType](./literals.md#directoryeditiontype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateMicrosoftADResultTypeDef](./type_defs.md#createmicrosoftadresulttypedef).
@@ -484,7 +484,7 @@ Keyword-only arguments:
 - `TrustDirection`: [TrustDirectionType](./literals.md#trustdirectiontype)
   *(required)*
 - `TrustType`: [TrustTypeType](./literals.md#trusttypetype)
-- `ConditionalForwarderIpAddrs`: `List`\[`str`\]
+- `ConditionalForwarderIpAddrs`: `Sequence`\[`str`\]
 - `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
 
 Returns [CreateTrustResultTypeDef](./type_defs.md#createtrustresulttypedef).
@@ -687,7 +687,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `RemoteDomainNames`: `List`\[`str`\]
+- `RemoteDomainNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeConditionalForwardersResultTypeDef](./type_defs.md#describeconditionalforwardersresulttypedef).
@@ -706,7 +706,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `DirectoryIds`: `List`\[`str`\]
+- `DirectoryIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -728,7 +728,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `DomainControllerIds`: `List`\[`str`\]
+- `DomainControllerIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -751,7 +751,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str`
-- `TopicNames`: `List`\[`str`\]
+- `TopicNames`: `Sequence`\[`str`\]
 
 Returns
 [DescribeEventTopicsResultTypeDef](./type_defs.md#describeeventtopicsresulttypedef).
@@ -816,7 +816,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `OwnerDirectoryId`: `str` *(required)*
-- `SharedDirectoryIds`: `List`\[`str`\]
+- `SharedDirectoryIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -838,7 +838,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str`
-- `SnapshotIds`: `List`\[`str`\]
+- `SnapshotIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -860,7 +860,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str`
-- `TrustIds`: `List`\[`str`\]
+- `TrustIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
 
@@ -1042,7 +1042,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1261,7 +1261,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
-- `CidrIps`: `List`\[`str`\] *(required)*
+- `CidrIps`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1299,7 +1299,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1427,7 +1427,7 @@ Keyword-only arguments:
 
 - `DirectoryId`: `str` *(required)*
 - `RemoteDomainName`: `str` *(required)*
-- `DnsIpAddrs`: `List`\[`str`\] *(required)*
+- `DnsIpAddrs`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

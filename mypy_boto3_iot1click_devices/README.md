@@ -89,6 +89,7 @@ from mypy_boto3_iot1click_devices.literals import ListDeviceEventsPaginatorName,
 
 - [ListDeviceEventsPaginatorName](./literals.md#listdeviceeventspaginatorname)
 - [ListDevicesPaginatorName](./literals.md#listdevicespaginatorname)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

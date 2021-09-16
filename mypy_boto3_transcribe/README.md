@@ -108,11 +108,13 @@ from mypy_boto3_transcribe.literals import BaseModelNameType, ...
 - [RedactionTypeType](./literals.md#redactiontypetype)
 - [SentimentValueType](./literals.md#sentimentvaluetype)
 - [SpecialtyType](./literals.md#specialtytype)
+- [SubtitleFormatType](./literals.md#subtitleformattype)
 - [TranscriptFilterTypeType](./literals.md#transcriptfiltertypetype)
 - [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
 - [TypeType](./literals.md#typetype)
 - [VocabularyFilterMethodType](./literals.md#vocabularyfiltermethodtype)
 - [VocabularyStateType](./literals.md#vocabularystatetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 
@@ -206,6 +208,8 @@ from mypy_boto3_transcribe.type_defs import AbsoluteTimeRangeTypeDef, ...
 - [StartMedicalTranscriptionJobResponseTypeDef](./type_defs.md#startmedicaltranscriptionjobresponsetypedef)
 - [StartTranscriptionJobRequestRequestTypeDef](./type_defs.md#starttranscriptionjobrequestrequesttypedef)
 - [StartTranscriptionJobResponseTypeDef](./type_defs.md#starttranscriptionjobresponsetypedef)
+- [SubtitlesOutputTypeDef](./type_defs.md#subtitlesoutputtypedef)
+- [SubtitlesTypeDef](./type_defs.md#subtitlestypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [TranscriptFilterTypeDef](./type_defs.md#transcriptfiltertypedef)

@@ -126,6 +126,7 @@ from mypy_boto3_kinesisanalyticsv2.literals import ApplicationModeType, ...
 - [RuntimeEnvironmentType](./literals.md#runtimeenvironmenttype)
 - [SnapshotStatusType](./literals.md#snapshotstatustype)
 - [UrlTypeType](./literals.md#urltypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

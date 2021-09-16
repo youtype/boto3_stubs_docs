@@ -254,6 +254,7 @@ from mypy_boto3_gamelift.literals import AcceptanceTypeType, ...
 - [ScalingStatusTypeType](./literals.md#scalingstatustypetype)
 - [SearchGameSessionsPaginatorName](./literals.md#searchgamesessionspaginatorname)
 - [SortOrderType](./literals.md#sortordertype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

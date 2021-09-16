@@ -15,6 +15,7 @@ pip install mypy-boto3-sts
   - [STSClient](#stsclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## STSClient
@@ -54,6 +55,18 @@ STSClient [exceptions](./client.md#exceptions)
 - MalformedPolicyDocumentException
 - PackedPolicyTooLargeException
 - RegionDisabledException
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_sts.literals import ServiceName, ...
+```
+
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

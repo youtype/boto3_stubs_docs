@@ -229,14 +229,14 @@ Optional fields:
 
 - `ClientToken`: `str`
 - `Description`: `str`
-- `DeviceTypes`: `List`\[`str`\]
-- `NotDeviceTypes`: `List`\[`str`\]
-- `DeviceModels`: `List`\[`str`\]
-- `NotDeviceModels`: `List`\[`str`\]
-- `DeviceOperatingSystems`: `List`\[`str`\]
-- `NotDeviceOperatingSystems`: `List`\[`str`\]
-- `DeviceUserAgents`: `List`\[`str`\]
-- `NotDeviceUserAgents`: `List`\[`str`\]
+- `DeviceTypes`: `Sequence`\[`str`\]
+- `NotDeviceTypes`: `Sequence`\[`str`\]
+- `DeviceModels`: `Sequence`\[`str`\]
+- `NotDeviceModels`: `Sequence`\[`str`\]
+- `DeviceOperatingSystems`: `Sequence`\[`str`\]
+- `NotDeviceOperatingSystems`: `Sequence`\[`str`\]
+- `DeviceUserAgents`: `Sequence`\[`str`\]
+- `NotDeviceUserAgents`: `Sequence`\[`str`\]
 
 ## CreateMobileDeviceAccessRuleResponseTypeDef
 
@@ -264,7 +264,7 @@ Optional fields:
 
 - `DirectoryId`: `str`
 - `ClientToken`: `str`
-- `Domains`: `List`\[[DomainTypeDef](./type_defs.md#domaintypedef)\]
+- `Domains`: `Sequence`\[[DomainTypeDef](./type_defs.md#domaintypedef)\]
 - `KmsKeyArn`: `str`
 - `EnableInteroperability`: `bool`
 
@@ -1242,12 +1242,12 @@ Required fields:
 
 Optional fields:
 
-- `IpRanges`: `List`\[`str`\]
-- `NotIpRanges`: `List`\[`str`\]
-- `Actions`: `List`\[`str`\]
-- `NotActions`: `List`\[`str`\]
-- `UserIds`: `List`\[`str`\]
-- `NotUserIds`: `List`\[`str`\]
+- `IpRanges`: `Sequence`\[`str`\]
+- `NotIpRanges`: `Sequence`\[`str`\]
+- `Actions`: `Sequence`\[`str`\]
+- `NotActions`: `Sequence`\[`str`\]
+- `UserIds`: `Sequence`\[`str`\]
+- `NotUserIds`: `Sequence`\[`str`\]
 
 ## PutMailboxPermissionsRequestRequestTypeDef
 
@@ -1261,7 +1261,7 @@ Required fields:
 - `EntityId`: `str`
 - `GranteeId`: `str`
 - `PermissionValues`:
-  `List`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
 
 ## PutRetentionPolicyRequestRequestTypeDef
 
@@ -1274,7 +1274,7 @@ Required fields:
 - `OrganizationId`: `str`
 - `Name`: `str`
 - `FolderConfigurations`:
-  `List`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
+  `Sequence`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
 
 Optional fields:
 
@@ -1376,7 +1376,7 @@ from mypy_boto3_workmail.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1398,7 +1398,7 @@ from mypy_boto3_workmail.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateMailboxQuotaRequestRequestTypeDef
 
@@ -1429,14 +1429,14 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `DeviceTypes`: `List`\[`str`\]
-- `NotDeviceTypes`: `List`\[`str`\]
-- `DeviceModels`: `List`\[`str`\]
-- `NotDeviceModels`: `List`\[`str`\]
-- `DeviceOperatingSystems`: `List`\[`str`\]
-- `NotDeviceOperatingSystems`: `List`\[`str`\]
-- `DeviceUserAgents`: `List`\[`str`\]
-- `NotDeviceUserAgents`: `List`\[`str`\]
+- `DeviceTypes`: `Sequence`\[`str`\]
+- `NotDeviceTypes`: `Sequence`\[`str`\]
+- `DeviceModels`: `Sequence`\[`str`\]
+- `NotDeviceModels`: `Sequence`\[`str`\]
+- `DeviceOperatingSystems`: `Sequence`\[`str`\]
+- `NotDeviceOperatingSystems`: `Sequence`\[`str`\]
+- `DeviceUserAgents`: `Sequence`\[`str`\]
+- `NotDeviceUserAgents`: `Sequence`\[`str`\]
 
 ## UpdatePrimaryEmailAddressRequestRequestTypeDef
 

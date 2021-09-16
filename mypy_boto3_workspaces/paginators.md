@@ -61,7 +61,7 @@ Boto3 documentation:
 
 Arguments for `DescribeIpGroupsPaginator.paginate` method:
 
-- `GroupIds`: `List`\[`str`\]
+- `GroupIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -87,7 +87,7 @@ Boto3 documentation:
 
 Arguments for `DescribeWorkspaceBundlesPaginator.paginate` method:
 
-- `BundleIds`: `List`\[`str`\]
+- `BundleIds`: `Sequence`\[`str`\]
 - `Owner`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -114,7 +114,7 @@ Boto3 documentation:
 
 Arguments for `DescribeWorkspaceDirectoriesPaginator.paginate` method:
 
-- `DirectoryIds`: `List`\[`str`\]
+- `DirectoryIds`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -141,7 +141,7 @@ Boto3 documentation:
 
 Arguments for `DescribeWorkspaceImagesPaginator.paginate` method:
 
-- `ImageIds`: `List`\[`str`\]
+- `ImageIds`: `Sequence`\[`str`\]
 - `ImageType`: [ImageTypeType](./literals.md#imagetypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -168,7 +168,7 @@ Boto3 documentation:
 
 Arguments for `DescribeWorkspacesPaginator.paginate` method:
 
-- `WorkspaceIds`: `List`\[`str`\]
+- `WorkspaceIds`: `Sequence`\[`str`\]
 - `DirectoryId`: `str`
 - `UserName`: `str`
 - `BundleId`: `str`
@@ -197,7 +197,7 @@ Boto3 documentation:
 
 Arguments for `DescribeWorkspacesConnectionStatusPaginator.paginate` method:
 
-- `WorkspaceIds`: `List`\[`str`\]
+- `WorkspaceIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -149,6 +149,7 @@ from mypy_boto3_es.literals import AutoTuneDesiredStateType, ...
 - [UpgradeStatusType](./literals.md#upgradestatustype)
 - [UpgradeStepType](./literals.md#upgradesteptype)
 - [VolumeTypeType](./literals.md#volumetypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

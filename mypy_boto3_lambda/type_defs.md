@@ -271,7 +271,7 @@ from mypy_boto3_lambda.type_defs import AliasRoutingConfigurationTypeDef
 
 Optional fields:
 
-- `AdditionalVersionWeights`: `Dict`\[`str`, `float`\]
+- `AdditionalVersionWeights`: `Mapping`\[`str`, `float`\]
 
 ## AllowedPublishersTypeDef
 
@@ -281,7 +281,7 @@ from mypy_boto3_lambda.type_defs import AllowedPublishersTypeDef
 
 Required fields:
 
-- `SigningProfileVersionArns`: `List`\[`str`\]
+- `SigningProfileVersionArns`: `Sequence`\[`str`\]
 
 ## CodeSigningConfigTypeDef
 
@@ -410,14 +410,14 @@ Optional fields:
 - `BisectBatchOnFunctionError`: `bool`
 - `MaximumRetryAttempts`: `int`
 - `TumblingWindowInSeconds`: `int`
-- `Topics`: `List`\[`str`\]
-- `Queues`: `List`\[`str`\]
+- `Topics`: `Sequence`\[`str`\]
+- `Queues`: `Sequence`\[`str`\]
 - `SourceAccessConfigurations`:
-  `List`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
+  `Sequence`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
 - `SelfManagedEventSource`:
   [SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef)
-- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
-  [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
+- `FunctionResponseTypes`: `Sequence`\[`Literal['ReportBatchItemFailures']`
+  (see [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
 ## CreateFunctionRequestRequestTypeDef
 
@@ -446,10 +446,10 @@ Optional fields:
 - `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `KMSKeyArn`: `str`
 - `TracingConfig`: [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `Layers`: `List`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `Layers`: `Sequence`\[`str`\]
 - `FileSystemConfigs`:
-  `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
+  `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 - `CodeSigningConfigArn`: `str`
 
@@ -605,7 +605,7 @@ from mypy_boto3_lambda.type_defs import EnvironmentTypeDef
 
 Optional fields:
 
-- `Variables`: `Dict`\[`str`, `str`\]
+- `Variables`: `Mapping`\[`str`, `str`\]
 
 ## EventSourceMappingConfigurationResponseMetadataTypeDef
 
@@ -1161,8 +1161,8 @@ from mypy_boto3_lambda.type_defs import ImageConfigTypeDef
 
 Optional fields:
 
-- `EntryPoint`: `List`\[`str`\]
-- `Command`: `List`\[`str`\]
+- `EntryPoint`: `Sequence`\[`str`\]
+- `Command`: `Sequence`\[`str`\]
 - `WorkingDirectory`: `str`
 
 ## InvocationRequestRequestTypeDef
@@ -1655,7 +1655,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
+- `CompatibleRuntimes`: `Sequence`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
 
 ## PublishLayerVersionResponseTypeDef
@@ -1831,8 +1831,8 @@ from mypy_boto3_lambda.type_defs import SelfManagedEventSourceTypeDef
 
 Optional fields:
 
-- `Endpoints`: `Dict`\[`Literal['KAFKA_BOOTSTRAP_SERVERS']` (see
-  [EndPointTypeType](./literals.md#endpointtypetype)), `List`\[`str`\]\]
+- `Endpoints`: `Mapping`\[`Literal['KAFKA_BOOTSTRAP_SERVERS']` (see
+  [EndPointTypeType](./literals.md#endpointtypetype)), `Sequence`\[`str`\]\]
 
 ## SourceAccessConfigurationTypeDef
 
@@ -1854,7 +1854,7 @@ from mypy_boto3_lambda.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `Resource`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TracingConfigResponseTypeDef
 
@@ -1885,7 +1885,7 @@ from mypy_boto3_lambda.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `Resource`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAliasRequestRequestTypeDef
 
@@ -1960,10 +1960,10 @@ Optional fields:
 - `MaximumRetryAttempts`: `int`
 - `ParallelizationFactor`: `int`
 - `SourceAccessConfigurations`:
-  `List`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
+  `Sequence`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
 - `TumblingWindowInSeconds`: `int`
-- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
-  [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
+- `FunctionResponseTypes`: `Sequence`\[`Literal['ReportBatchItemFailures']`
+  (see [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
 
 ## UpdateFunctionCodeRequestRequestTypeDef
 
@@ -2011,9 +2011,9 @@ Optional fields:
 - `KMSKeyArn`: `str`
 - `TracingConfig`: [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
 - `RevisionId`: `str`
-- `Layers`: `List`\[`str`\]
+- `Layers`: `Sequence`\[`str`\]
 - `FileSystemConfigs`:
-  `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
+  `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 
 ## UpdateFunctionEventInvokeConfigRequestRequestTypeDef
@@ -2054,8 +2054,8 @@ from mypy_boto3_lambda.type_defs import VpcConfigTypeDef
 
 Optional fields:
 
-- `SubnetIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## WaiterConfigTypeDef
 

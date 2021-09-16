@@ -126,6 +126,7 @@ from mypy_boto3_stepfunctions.literals import ExecutionStatusType, ...
 - [StateMachineStatusType](./literals.md#statemachinestatustype)
 - [StateMachineTypeType](./literals.md#statemachinetypetype)
 - [SyncExecutionStatusType](./literals.md#syncexecutionstatustype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

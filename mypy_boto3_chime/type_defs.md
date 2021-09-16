@@ -603,7 +603,7 @@ from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorGr
 Required fields:
 
 - `VoiceConnectorGroupId`: `str`
-- `E164PhoneNumbers`: `List`\[`str`\]
+- `E164PhoneNumbers`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -631,7 +631,7 @@ from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorRe
 Required fields:
 
 - `VoiceConnectorId`: `str`
-- `E164PhoneNumbers`: `List`\[`str`\]
+- `E164PhoneNumbers`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -660,7 +660,7 @@ Required fields:
 
 - `AccountId`: `str`
 - `SigninDelegateGroups`:
-  `List`\[[SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef)\]
+  `Sequence`\[[SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef)\]
 
 ## AttendeeTypeDef
 
@@ -697,7 +697,7 @@ Required fields:
 
 - `MeetingId`: `str`
 - `Attendees`:
-  `List`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
+  `Sequence`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
 
 ## BatchCreateAttendeeResponseTypeDef
 
@@ -734,7 +734,7 @@ from mypy_boto3_chime.type_defs import BatchCreateChannelMembershipRequestReques
 Required fields:
 
 - `ChannelArn`: `str`
-- `MemberArns`: `List`\[`str`\]
+- `MemberArns`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -767,7 +767,7 @@ Required fields:
 - `AccountId`: `str`
 - `RoomId`: `str`
 - `MembershipItemList`:
-  `List`\[[MembershipItemTypeDef](./type_defs.md#membershipitemtypedef)\]
+  `Sequence`\[[MembershipItemTypeDef](./type_defs.md#membershipitemtypedef)\]
 
 ## BatchCreateRoomMembershipResponseTypeDef
 
@@ -789,7 +789,7 @@ from mypy_boto3_chime.type_defs import BatchDeletePhoneNumberRequestRequestTypeD
 
 Required fields:
 
-- `PhoneNumberIds`: `List`\[`str`\]
+- `PhoneNumberIds`: `Sequence`\[`str`\]
 
 ## BatchDeletePhoneNumberResponseTypeDef
 
@@ -813,7 +813,7 @@ from mypy_boto3_chime.type_defs import BatchSuspendUserRequestRequestTypeDef
 Required fields:
 
 - `AccountId`: `str`
-- `UserIdList`: `List`\[`str`\]
+- `UserIdList`: `Sequence`\[`str`\]
 
 ## BatchSuspendUserResponseTypeDef
 
@@ -836,7 +836,7 @@ from mypy_boto3_chime.type_defs import BatchUnsuspendUserRequestRequestTypeDef
 Required fields:
 
 - `AccountId`: `str`
-- `UserIdList`: `List`\[`str`\]
+- `UserIdList`: `Sequence`\[`str`\]
 
 ## BatchUnsuspendUserResponseTypeDef
 
@@ -859,7 +859,7 @@ from mypy_boto3_chime.type_defs import BatchUpdatePhoneNumberRequestRequestTypeD
 Required fields:
 
 - `UpdatePhoneNumberRequestItems`:
-  `List`\[[UpdatePhoneNumberRequestItemTypeDef](./type_defs.md#updatephonenumberrequestitemtypedef)\]
+  `Sequence`\[[UpdatePhoneNumberRequestItemTypeDef](./type_defs.md#updatephonenumberrequestitemtypedef)\]
 
 ## BatchUpdatePhoneNumberResponseTypeDef
 
@@ -884,7 +884,7 @@ Required fields:
 
 - `AccountId`: `str`
 - `UpdateUserRequestItems`:
-  `List`\[[UpdateUserRequestItemTypeDef](./type_defs.md#updateuserrequestitemtypedef)\]
+  `Sequence`\[[UpdateUserRequestItemTypeDef](./type_defs.md#updateuserrequestitemtypedef)\]
 
 ## BatchUpdateUserResponseTypeDef
 
@@ -1174,7 +1174,7 @@ Required fields:
 Optional fields:
 
 - `Metadata`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAppInstanceResponseTypeDef
 
@@ -1204,7 +1204,7 @@ Required fields:
 Optional fields:
 
 - `Metadata`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAppInstanceUserResponseTypeDef
 
@@ -1242,7 +1242,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAttendeeRequestRequestTypeDef
 
@@ -1257,7 +1257,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateAttendeeResponseTypeDef
 
@@ -1400,7 +1400,7 @@ Optional fields:
 - `Mode`: [ChannelModeType](./literals.md#channelmodetype)
 - `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
 - `Metadata`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ChimeBearer`: `str`
 
 ## CreateChannelResponseTypeDef
@@ -1487,7 +1487,7 @@ Optional fields:
 - `ExternalMeetingId`: `str`
 - `MeetingHostId`: `str`
 - `MediaRegion`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NotificationsConfiguration`:
   [MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef)
 
@@ -1518,11 +1518,11 @@ Optional fields:
 - `ExternalMeetingId`: `str`
 - `MeetingHostId`: `str`
 - `MediaRegion`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NotificationsConfiguration`:
   [MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef)
 - `Attendees`:
-  `List`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
+  `Sequence`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
 
 ## CreateMeetingWithAttendeesResponseTypeDef
 
@@ -1549,7 +1549,7 @@ Required fields:
 
 - `ProductType`:
   [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
-- `E164PhoneNumbers`: `List`\[`str`\]
+- `E164PhoneNumbers`: `Sequence`\[`str`\]
 
 ## CreatePhoneNumberOrderResponseTypeDef
 
@@ -1573,8 +1573,8 @@ from mypy_boto3_chime.type_defs import CreateProxySessionRequestRequestTypeDef
 Required fields:
 
 - `VoiceConnectorId`: `str`
-- `ParticipantPhoneNumbers`: `List`\[`str`\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ParticipantPhoneNumbers`: `Sequence`\[`str`\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
 
 Optional fields:
 
@@ -1668,7 +1668,7 @@ Required fields:
 
 Optional fields:
 
-- `SipHeaders`: `Dict`\[`str`, `str`\]
+- `SipHeaders`: `Mapping`\[`str`, `str`\]
 
 ## CreateSipMediaApplicationCallResponseTypeDef
 
@@ -1694,7 +1694,7 @@ Required fields:
 - `AwsRegion`: `str`
 - `Name`: `str`
 - `Endpoints`:
-  `List`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
+  `Sequence`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
 
 ## CreateSipMediaApplicationResponseTypeDef
 
@@ -1721,7 +1721,7 @@ Required fields:
 - `TriggerType`: [SipRuleTriggerTypeType](./literals.md#sipruletriggertypetype)
 - `TriggerValue`: `str`
 - `TargetApplications`:
-  `List`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
+  `Sequence`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
 
 Optional fields:
 
@@ -1780,7 +1780,7 @@ Required fields:
 Optional fields:
 
 - `VoiceConnectorItems`:
-  `List`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
+  `Sequence`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
 
 ## CreateVoiceConnectorGroupResponseTypeDef
 
@@ -2150,7 +2150,7 @@ from mypy_boto3_chime.type_defs import DeleteVoiceConnectorTerminationCredential
 Required fields:
 
 - `VoiceConnectorId`: `str`
-- `Usernames`: `List`\[`str`\]
+- `Usernames`: `Sequence`\[`str`\]
 
 ## DeleteVoiceConnectorTerminationRequestRequestTypeDef
 
@@ -2416,7 +2416,7 @@ from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnecto
 Required fields:
 
 - `VoiceConnectorGroupId`: `str`
-- `E164PhoneNumbers`: `List`\[`str`\]
+- `E164PhoneNumbers`: `Sequence`\[`str`\]
 
 ## DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef
 
@@ -2440,7 +2440,7 @@ from mypy_boto3_chime.type_defs import DisassociatePhoneNumbersFromVoiceConnecto
 Required fields:
 
 - `VoiceConnectorId`: `str`
-- `E164PhoneNumbers`: `List`\[`str`\]
+- `E164PhoneNumbers`: `Sequence`\[`str`\]
 
 ## DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef
 
@@ -2464,7 +2464,7 @@ from mypy_boto3_chime.type_defs import DisassociateSigninDelegateGroupsFromAccou
 Required fields:
 
 - `AccountId`: `str`
-- `GroupNames`: `List`\[`str`\]
+- `GroupNames`: `Sequence`\[`str`\]
 
 ## EmergencyCallingConfigurationTypeDef
 
@@ -3281,7 +3281,7 @@ from mypy_boto3_chime.type_defs import InviteUsersRequestRequestTypeDef
 Required fields:
 
 - `AccountId`: `str`
-- `UserEmailList`: `List`\[`str`\]
+- `UserEmailList`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -4477,7 +4477,7 @@ Required fields:
 
 - `AppInstanceArn`: `str`
 - `AppInstanceStreamingConfigurations`:
-  `List`\[[AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef)\]
+  `Sequence`\[[AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef)\]
 
 ## PutAppInstanceStreamingConfigurationsResponseTypeDef
 
@@ -4658,7 +4658,7 @@ Required fields:
 
 - `VoiceConnectorId`: `str`
 - `DefaultSessionExpiryMinutes`: `int`
-- `PhoneNumberPoolCountries`: `List`\[`str`\]
+- `PhoneNumberPoolCountries`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -4715,7 +4715,7 @@ Required fields:
 Optional fields:
 
 - `Credentials`:
-  `List`\[[CredentialTypeDef](./type_defs.md#credentialtypedef)\]
+  `Sequence`\[[CredentialTypeDef](./type_defs.md#credentialtypedef)\]
 
 ## PutVoiceConnectorTerminationRequestRequestTypeDef
 
@@ -5134,7 +5134,7 @@ Required fields:
 
 - `MeetingId`: `str`
 - `AttendeeId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagMeetingRequestRequestTypeDef
 
@@ -5145,7 +5145,7 @@ from mypy_boto3_chime.type_defs import TagMeetingRequestRequestTypeDef
 Required fields:
 
 - `MeetingId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagResourceRequestRequestTypeDef
 
@@ -5156,7 +5156,7 @@ from mypy_boto3_chime.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -5229,7 +5229,7 @@ Required fields:
 
 - `MeetingId`: `str`
 - `AttendeeId`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagMeetingRequestRequestTypeDef
 
@@ -5240,7 +5240,7 @@ from mypy_boto3_chime.type_defs import UntagMeetingRequestRequestTypeDef
 Required fields:
 
 - `MeetingId`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -5251,7 +5251,7 @@ from mypy_boto3_chime.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAccountRequestRequestTypeDef
 
@@ -5535,7 +5535,7 @@ Required fields:
 
 - `VoiceConnectorId`: `str`
 - `ProxySessionId`: `str`
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
 
 Optional fields:
 
@@ -5619,7 +5619,7 @@ Required fields:
 
 - `SipMediaApplicationId`: `str`
 - `TransactionId`: `str`
-- `Arguments`: `Dict`\[`str`, `str`\]
+- `Arguments`: `Mapping`\[`str`, `str`\]
 
 ## UpdateSipMediaApplicationCallResponseTypeDef
 
@@ -5648,7 +5648,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Endpoints`:
-  `List`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
+  `Sequence`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
 
 ## UpdateSipMediaApplicationResponseTypeDef
 
@@ -5678,7 +5678,7 @@ Optional fields:
 
 - `Disabled`: `bool`
 - `TargetApplications`:
-  `List`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
+  `Sequence`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
 
 ## UpdateSipRuleResponseTypeDef
 
@@ -5762,7 +5762,7 @@ Required fields:
 - `VoiceConnectorGroupId`: `str`
 - `Name`: `str`
 - `VoiceConnectorItems`:
-  `List`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
+  `Sequence`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
 
 ## UpdateVoiceConnectorGroupResponseTypeDef
 

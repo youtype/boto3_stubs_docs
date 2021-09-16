@@ -217,7 +217,7 @@ Optional fields:
 - `IdempotencyToken`: `str`
 - `KeyStorageSecurityStandard`:
   [KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateCertificateAuthorityResponseTypeDef
 
@@ -241,7 +241,7 @@ Required fields:
 
 - `CertificateAuthorityArn`: `str`
 - `Principal`: `str`
-- `Actions`: `List`\[[ActionTypeType](./literals.md#actiontypetype)\]
+- `Actions`: `Sequence`\[[ActionTypeType](./literals.md#actiontypetype)\]
 
 Optional fields:
 
@@ -274,7 +274,7 @@ Optional fields:
 
 - `KeyUsage`: [KeyUsageTypeDef](./type_defs.md#keyusagetypedef)
 - `SubjectInformationAccess`:
-  `List`\[[AccessDescriptionTypeDef](./type_defs.md#accessdescriptiontypedef)\]
+  `Sequence`\[[AccessDescriptionTypeDef](./type_defs.md#accessdescriptiontypedef)\]
 
 ## DeleteCertificateAuthorityRequestRequestTypeDef
 
@@ -400,12 +400,12 @@ from mypy_boto3_acm_pca.type_defs import ExtensionsTypeDef
 Optional fields:
 
 - `CertificatePolicies`:
-  `List`\[[PolicyInformationTypeDef](./type_defs.md#policyinformationtypedef)\]
+  `Sequence`\[[PolicyInformationTypeDef](./type_defs.md#policyinformationtypedef)\]
 - `ExtendedKeyUsage`:
-  `List`\[[ExtendedKeyUsageTypeDef](./type_defs.md#extendedkeyusagetypedef)\]
+  `Sequence`\[[ExtendedKeyUsageTypeDef](./type_defs.md#extendedkeyusagetypedef)\]
 - `KeyUsage`: [KeyUsageTypeDef](./type_defs.md#keyusagetypedef)
 - `SubjectAlternativeNames`:
-  `List`\[[GeneralNameTypeDef](./type_defs.md#generalnametypedef)\]
+  `Sequence`\[[GeneralNameTypeDef](./type_defs.md#generalnametypedef)\]
 
 ## GeneralNameTypeDef
 
@@ -730,7 +730,7 @@ Required fields:
 Optional fields:
 
 - `PolicyQualifiers`:
-  `List`\[[PolicyQualifierInfoTypeDef](./type_defs.md#policyqualifierinfotypedef)\]
+  `Sequence`\[[PolicyQualifierInfoTypeDef](./type_defs.md#policyqualifierinfotypedef)\]
 
 ## PolicyQualifierInfoTypeDef
 
@@ -824,7 +824,7 @@ from mypy_boto3_acm_pca.type_defs import TagCertificateAuthorityRequestRequestTy
 Required fields:
 
 - `CertificateAuthorityArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -849,7 +849,7 @@ from mypy_boto3_acm_pca.type_defs import UntagCertificateAuthorityRequestRequest
 Required fields:
 
 - `CertificateAuthorityArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UpdateCertificateAuthorityRequestRequestTypeDef
 

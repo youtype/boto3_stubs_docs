@@ -71,6 +71,7 @@ from mypy_boto3_connectparticipant.literals import ArtifactStatusType, ...
 - [ParticipantRoleType](./literals.md#participantroletype)
 - [ScanDirectionType](./literals.md#scandirectiontype)
 - [SortKeyType](./literals.md#sortkeytype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

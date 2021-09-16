@@ -108,7 +108,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### can_paginate
 
@@ -194,7 +194,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -253,7 +253,7 @@ Keyword-only arguments:
   *(required)*
 - `CertificateArn`: `str`
 - `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef).
@@ -273,7 +273,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CertificateStatuses`:
-  `List`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
+  `Sequence`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
 - `Includes`: [FiltersTypeDef](./type_defs.md#filterstypedef)
 - `NextToken`: `str`
 - `MaxItems`: `int`
@@ -333,7 +333,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### renew_certificate
 
@@ -368,14 +368,14 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 - `ValidationMethod`:
   [ValidationMethodType](./literals.md#validationmethodtype)
-- `SubjectAlternativeNames`: `List`\[`str`\]
+- `SubjectAlternativeNames`: `Sequence`\[`str`\]
 - `IdempotencyToken`: `str`
 - `DomainValidationOptions`:
-  `List`\[[DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef)\]
+  `Sequence`\[[DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef)\]
 - `Options`:
   [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
 - `CertificateAuthorityArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [RequestCertificateResponseTypeDef](./type_defs.md#requestcertificateresponsetypedef).

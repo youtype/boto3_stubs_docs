@@ -71,6 +71,7 @@ from mypy_boto3_outposts.literals import OrderStatusType, ...
 - [OrderStatusType](./literals.md#orderstatustype)
 - [PaymentOptionType](./literals.md#paymentoptiontype)
 - [PaymentTermType](./literals.md#paymenttermtype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

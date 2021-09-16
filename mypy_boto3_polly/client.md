@@ -160,7 +160,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -287,12 +287,12 @@ Keyword-only arguments:
 - `VoiceId`: [VoiceIdType](./literals.md#voiceidtype) *(required)*
 - `Engine`: [EngineType](./literals.md#enginetype)
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LexiconNames`: `List`\[`str`\]
+- `LexiconNames`: `Sequence`\[`str`\]
 - `OutputS3KeyPrefix`: `str`
 - `SampleRate`: `str`
 - `SnsTopicArn`: `str`
 - `SpeechMarkTypes`:
-  `List`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
+  `Sequence`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
 - `TextType`: [TextTypeType](./literals.md#texttypetype)
 
 Returns
@@ -318,10 +318,10 @@ Keyword-only arguments:
 - `VoiceId`: [VoiceIdType](./literals.md#voiceidtype) *(required)*
 - `Engine`: [EngineType](./literals.md#enginetype)
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LexiconNames`: `List`\[`str`\]
+- `LexiconNames`: `Sequence`\[`str`\]
 - `SampleRate`: `str`
 - `SpeechMarkTypes`:
-  `List`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
+  `Sequence`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
 - `TextType`: [TextTypeType](./literals.md#texttypetype)
 
 Returns

@@ -123,7 +123,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -171,8 +171,8 @@ Keyword-only arguments:
 - `sessionId`: `str` *(required)*
 - `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
   *(required)*
-- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
-- `requestAttributes`: `Dict`\[`str`, `str`\]
+- `messages`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
+- `requestAttributes`: `Mapping`\[`str`, `str`\]
 - `responseContentType`: `str`
 
 Returns [PutSessionResponseTypeDef](./type_defs.md#putsessionresponsetypedef).
@@ -197,7 +197,7 @@ Keyword-only arguments:
 - `sessionId`: `str` *(required)*
 - `text`: `str` *(required)*
 - `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
-- `requestAttributes`: `Dict`\[`str`, `str`\]
+- `requestAttributes`: `Mapping`\[`str`, `str`\]
 
 Returns
 [RecognizeTextResponseTypeDef](./type_defs.md#recognizetextresponsetypedef).

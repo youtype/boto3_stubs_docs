@@ -147,6 +147,7 @@ from mypy_boto3_appmesh.literals import DefaultGatewayRouteRewriteType, ...
 - [VirtualNodeStatusCodeType](./literals.md#virtualnodestatuscodetype)
 - [VirtualRouterStatusCodeType](./literals.md#virtualrouterstatuscodetype)
 - [VirtualServiceStatusCodeType](./literals.md#virtualservicestatuscodetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

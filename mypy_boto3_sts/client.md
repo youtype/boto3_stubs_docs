@@ -94,11 +94,11 @@ Keyword-only arguments:
 - `RoleArn`: `str` *(required)*
 - `RoleSessionName`: `str` *(required)*
 - `PolicyArns`:
-  `List`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
+  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `Policy`: `str`
 - `DurationSeconds`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TransitiveTagKeys`: `List`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TransitiveTagKeys`: `Sequence`\[`str`\]
 - `ExternalId`: `str`
 - `SerialNumber`: `str`
 - `TokenCode`: `str`
@@ -125,7 +125,7 @@ Keyword-only arguments:
 - `PrincipalArn`: `str` *(required)*
 - `SAMLAssertion`: `str` *(required)*
 - `PolicyArns`:
-  `List`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
+  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `Policy`: `str`
 - `DurationSeconds`: `int`
 
@@ -153,7 +153,7 @@ Keyword-only arguments:
 - `WebIdentityToken`: `str` *(required)*
 - `ProviderId`: `str`
 - `PolicyArns`:
-  `List`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
+  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `Policy`: `str`
 - `DurationSeconds`: `int`
 
@@ -207,7 +207,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -263,9 +263,9 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Policy`: `str`
 - `PolicyArns`:
-  `List`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
+  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
 - `DurationSeconds`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef).

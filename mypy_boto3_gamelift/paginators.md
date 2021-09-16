@@ -48,7 +48,7 @@ Boto3 documentation:
 
 Arguments for `DescribeFleetAttributesPaginator.paginate` method:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -74,7 +74,7 @@ Boto3 documentation:
 
 Arguments for `DescribeFleetCapacityPaginator.paginate` method:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -128,7 +128,7 @@ Boto3 documentation:
 
 Arguments for `DescribeFleetUtilizationPaginator.paginate` method:
 
-- `FleetIds`: `List`\[`str`\]
+- `FleetIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -155,7 +155,7 @@ Boto3 documentation:
 Arguments for `DescribeGameServerInstancesPaginator.paginate` method:
 
 - `GameServerGroupName`: `str` *(required)*
-- `InstanceIds`: `List`\[`str`\]
+- `InstanceIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -211,7 +211,7 @@ Boto3 documentation:
 
 Arguments for `DescribeGameSessionQueuesPaginator.paginate` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -295,7 +295,7 @@ Boto3 documentation:
 
 Arguments for `DescribeMatchmakingConfigurationsPaginator.paginate` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `RuleSetName`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -322,7 +322,7 @@ Boto3 documentation:
 
 Arguments for `DescribeMatchmakingRuleSetsPaginator.paginate` method:
 
-- `Names`: `List`\[`str`\]
+- `Names`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -184,7 +184,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CollectionId`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateCollectionResponseTypeDef](./type_defs.md#createcollectionresponsetypedef).
@@ -231,7 +231,7 @@ Keyword-only arguments:
   *(required)*
 - `TestingData`: [TestingDataTypeDef](./type_defs.md#testingdatatypedef)
   *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `KmsKeyId`: `str`
 
 Returns
@@ -264,7 +264,7 @@ Keyword-only arguments:
   [StreamProcessorSettingsTypeDef](./type_defs.md#streamprocessorsettingstypedef)
   *(required)*
 - `RoleArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateStreamProcessorResponseTypeDef](./type_defs.md#createstreamprocessorresponsetypedef).
@@ -303,7 +303,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CollectionId`: `str` *(required)*
-- `FaceIds`: `List`\[`str`\] *(required)*
+- `FaceIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteFacesResponseTypeDef](./type_defs.md#deletefacesresponsetypedef).
@@ -401,7 +401,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ProjectArn`: `str` *(required)*
-- `VersionNames`: `List`\[`str`\]
+- `VersionNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -487,7 +487,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
-- `Attributes`: `List`\[[AttributeType](./literals.md#attributetype)\]
+- `Attributes`: `Sequence`\[[AttributeType](./literals.md#attributetype)\]
 
 Returns
 [DetectFacesResponseTypeDef](./type_defs.md#detectfacesresponsetypedef).
@@ -593,7 +593,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -822,7 +822,8 @@ Keyword-only arguments:
 - `CollectionId`: `str` *(required)*
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
 - `ExternalImageId`: `str`
-- `DetectionAttributes`: `List`\[[AttributeType](./literals.md#attributetype)\]
+- `DetectionAttributes`:
+  `Sequence`\[[AttributeType](./literals.md#attributetype)\]
 - `MaxFaces`: `int`
 - `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
 
@@ -1165,8 +1166,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
-- `SegmentTypes`: `List`\[[SegmentTypeType](./literals.md#segmenttypetype)\]
-  *(required)*
+- `SegmentTypes`:
+  `Sequence`\[[SegmentTypeType](./literals.md#segmenttypetype)\] *(required)*
 - `ClientRequestToken`: `str`
 - `NotificationChannel`:
   [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
@@ -1275,7 +1276,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1295,7 +1296,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

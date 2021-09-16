@@ -56,6 +56,7 @@ from mypy_boto3_marketplacecommerceanalytics.literals import DataSetTypeType, ..
 
 - [DataSetTypeType](./literals.md#datasettypetype)
 - [SupportDataSetTypeType](./literals.md#supportdatasettypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -135,7 +135,7 @@ Keyword-only arguments:
 - `SourceArn`: `str` *(required)*
 - `Description`: `str`
 - `CrossAccount`: `bool`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDiscovererResponseTypeDef](./type_defs.md#creatediscovererresponsetypedef).
@@ -156,7 +156,7 @@ Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
@@ -180,7 +180,7 @@ Keyword-only arguments:
 - `SchemaName`: `str` *(required)*
 - `Type`: [TypeType](./literals.md#typetype) *(required)*
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
@@ -389,7 +389,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -431,7 +431,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Events`: `List`\[`str`\] *(required)*
+- `Events`: `Sequence`\[`str`\] *(required)*
 - `Type`: [TypeType](./literals.md#typetype) *(required)*
 
 Returns
@@ -691,7 +691,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### untag_resource
 
@@ -708,7 +708,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_discoverer
 

@@ -246,10 +246,10 @@ from mypy_boto3_apigatewayv2.type_defs import CorsTypeDef
 Optional fields:
 
 - `AllowCredentials`: `bool`
-- `AllowHeaders`: `List`\[`str`\]
-- `AllowMethods`: `List`\[`str`\]
-- `AllowOrigins`: `List`\[`str`\]
-- `ExposeHeaders`: `List`\[`str`\]
+- `AllowHeaders`: `Sequence`\[`str`\]
+- `AllowMethods`: `Sequence`\[`str`\]
+- `AllowOrigins`: `Sequence`\[`str`\]
+- `ExposeHeaders`: `Sequence`\[`str`\]
 - `MaxAge`: `int`
 
 ## CreateApiMappingRequestRequestTypeDef
@@ -304,7 +304,7 @@ Optional fields:
 - `DisableExecuteApiEndpoint`: `bool`
 - `RouteKey`: `str`
 - `RouteSelectionExpression`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Target`: `str`
 - `Version`: `str`
 
@@ -345,7 +345,7 @@ Required fields:
 
 - `ApiId`: `str`
 - `AuthorizerType`: [AuthorizerTypeType](./literals.md#authorizertypetype)
-- `IdentitySource`: `List`\[`str`\]
+- `IdentitySource`: `Sequence`\[`str`\]
 - `Name`: `str`
 
 Optional fields:
@@ -428,10 +428,10 @@ Required fields:
 Optional fields:
 
 - `DomainNameConfigurations`:
-  `List`\[[DomainNameConfigurationTypeDef](./type_defs.md#domainnameconfigurationtypedef)\]
+  `Sequence`\[[DomainNameConfigurationTypeDef](./type_defs.md#domainnameconfigurationtypedef)\]
 - `MutualTlsAuthentication`:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDomainNameResponseTypeDef
 
@@ -476,9 +476,9 @@ Optional fields:
 - `PassthroughBehavior`:
   [PassthroughBehaviorType](./literals.md#passthroughbehaviortype)
 - `PayloadFormatVersion`: `str`
-- `RequestParameters`: `Dict`\[`str`, `str`\]
-- `RequestTemplates`: `Dict`\[`str`, `str`\]
-- `ResponseParameters`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `RequestParameters`: `Mapping`\[`str`, `str`\]
+- `RequestTemplates`: `Mapping`\[`str`, `str`\]
+- `ResponseParameters`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
 - `TemplateSelectionExpression`: `str`
 - `TimeoutInMillis`: `int`
 - `TlsConfig`: [TlsConfigInputTypeDef](./type_defs.md#tlsconfiginputtypedef)
@@ -499,8 +499,8 @@ Optional fields:
 
 - `ContentHandlingStrategy`:
   [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
-- `ResponseParameters`: `Dict`\[`str`, `str`\]
-- `ResponseTemplates`: `Dict`\[`str`, `str`\]
+- `ResponseParameters`: `Mapping`\[`str`, `str`\]
+- `ResponseTemplates`: `Mapping`\[`str`, `str`\]
 - `TemplateSelectionExpression`: `str`
 
 ## CreateIntegrationResponseResponseTypeDef
@@ -601,14 +601,14 @@ Required fields:
 Optional fields:
 
 - `ApiKeyRequired`: `bool`
-- `AuthorizationScopes`: `List`\[`str`\]
+- `AuthorizationScopes`: `Sequence`\[`str`\]
 - `AuthorizationType`:
   [AuthorizationTypeType](./literals.md#authorizationtypetype)
 - `AuthorizerId`: `str`
 - `ModelSelectionExpression`: `str`
 - `OperationName`: `str`
-- `RequestModels`: `Dict`\[`str`, `str`\]
-- `RequestParameters`: `Dict`\[`str`,
+- `RequestModels`: `Mapping`\[`str`, `str`\]
+- `RequestParameters`: `Mapping`\[`str`,
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)\]
 - `RouteResponseSelectionExpression`: `str`
 - `Target`: `str`
@@ -628,8 +628,8 @@ Required fields:
 Optional fields:
 
 - `ModelSelectionExpression`: `str`
-- `ResponseModels`: `Dict`\[`str`, `str`\]
-- `ResponseParameters`: `Dict`\[`str`,
+- `ResponseModels`: `Mapping`\[`str`, `str`\]
+- `ResponseParameters`: `Mapping`\[`str`,
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)\]
 
 ## CreateRouteResponseResponseTypeDef
@@ -696,10 +696,10 @@ Optional fields:
   [RouteSettingsTypeDef](./type_defs.md#routesettingstypedef)
 - `DeploymentId`: `str`
 - `Description`: `str`
-- `RouteSettings`: `Dict`\[`str`,
+- `RouteSettings`: `Mapping`\[`str`,
   [RouteSettingsTypeDef](./type_defs.md#routesettingstypedef)\]
-- `StageVariables`: `Dict`\[`str`, `str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `StageVariables`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateStageResponseTypeDef
 
@@ -738,12 +738,12 @@ from mypy_boto3_apigatewayv2.type_defs import CreateVpcLinkRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateVpcLinkResponseTypeDef
 
@@ -1892,7 +1892,7 @@ from mypy_boto3_apigatewayv2.type_defs import JWTConfigurationTypeDef
 
 Optional fields:
 
-- `Audience`: `List`\[`str`\]
+- `Audience`: `Sequence`\[`str`\]
 - `Issuer`: `str`
 
 ## ModelTypeDef
@@ -2125,7 +2125,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TlsConfigInputTypeDef
 
@@ -2156,7 +2156,7 @@ from mypy_boto3_apigatewayv2.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApiMappingRequestRequestTypeDef
 
@@ -2260,7 +2260,7 @@ Optional fields:
 - `AuthorizerType`: [AuthorizerTypeType](./literals.md#authorizertypetype)
 - `AuthorizerUri`: `str`
 - `EnableSimpleResponses`: `bool`
-- `IdentitySource`: `List`\[`str`\]
+- `IdentitySource`: `Sequence`\[`str`\]
 - `IdentityValidationExpression`: `str`
 - `JwtConfiguration`:
   [JWTConfigurationTypeDef](./type_defs.md#jwtconfigurationtypedef)
@@ -2335,7 +2335,7 @@ Required fields:
 Optional fields:
 
 - `DomainNameConfigurations`:
-  `List`\[[DomainNameConfigurationTypeDef](./type_defs.md#domainnameconfigurationtypedef)\]
+  `Sequence`\[[DomainNameConfigurationTypeDef](./type_defs.md#domainnameconfigurationtypedef)\]
 - `MutualTlsAuthentication`:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
 
@@ -2383,9 +2383,9 @@ Optional fields:
 - `PassthroughBehavior`:
   [PassthroughBehaviorType](./literals.md#passthroughbehaviortype)
 - `PayloadFormatVersion`: `str`
-- `RequestParameters`: `Dict`\[`str`, `str`\]
-- `RequestTemplates`: `Dict`\[`str`, `str`\]
-- `ResponseParameters`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `RequestParameters`: `Mapping`\[`str`, `str`\]
+- `RequestTemplates`: `Mapping`\[`str`, `str`\]
+- `ResponseParameters`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
 - `TemplateSelectionExpression`: `str`
 - `TimeoutInMillis`: `int`
 - `TlsConfig`: [TlsConfigInputTypeDef](./type_defs.md#tlsconfiginputtypedef)
@@ -2407,8 +2407,8 @@ Optional fields:
 - `ContentHandlingStrategy`:
   [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
 - `IntegrationResponseKey`: `str`
-- `ResponseParameters`: `Dict`\[`str`, `str`\]
-- `ResponseTemplates`: `Dict`\[`str`, `str`\]
+- `ResponseParameters`: `Mapping`\[`str`, `str`\]
+- `ResponseTemplates`: `Mapping`\[`str`, `str`\]
 - `TemplateSelectionExpression`: `str`
 
 ## UpdateIntegrationResponseResponseTypeDef
@@ -2510,14 +2510,14 @@ Required fields:
 Optional fields:
 
 - `ApiKeyRequired`: `bool`
-- `AuthorizationScopes`: `List`\[`str`\]
+- `AuthorizationScopes`: `Sequence`\[`str`\]
 - `AuthorizationType`:
   [AuthorizationTypeType](./literals.md#authorizationtypetype)
 - `AuthorizerId`: `str`
 - `ModelSelectionExpression`: `str`
 - `OperationName`: `str`
-- `RequestModels`: `Dict`\[`str`, `str`\]
-- `RequestParameters`: `Dict`\[`str`,
+- `RequestModels`: `Mapping`\[`str`, `str`\]
+- `RequestParameters`: `Mapping`\[`str`,
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)\]
 - `RouteKey`: `str`
 - `RouteResponseSelectionExpression`: `str`
@@ -2538,8 +2538,8 @@ Required fields:
 Optional fields:
 
 - `ModelSelectionExpression`: `str`
-- `ResponseModels`: `Dict`\[`str`, `str`\]
-- `ResponseParameters`: `Dict`\[`str`,
+- `ResponseModels`: `Mapping`\[`str`, `str`\]
+- `ResponseParameters`: `Mapping`\[`str`,
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)\]
 - `RouteResponseKey`: `str`
 
@@ -2607,9 +2607,9 @@ Optional fields:
   [RouteSettingsTypeDef](./type_defs.md#routesettingstypedef)
 - `DeploymentId`: `str`
 - `Description`: `str`
-- `RouteSettings`: `Dict`\[`str`,
+- `RouteSettings`: `Mapping`\[`str`,
   [RouteSettingsTypeDef](./type_defs.md#routesettingstypedef)\]
-- `StageVariables`: `Dict`\[`str`, `str`\]
+- `StageVariables`: `Mapping`\[`str`, `str`\]
 
 ## UpdateStageResponseTypeDef
 

@@ -230,7 +230,7 @@ Required fields:
 Optional fields:
 
 - `ReplacementTags`:
-  `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ReplacementTemplateData`: `str`
 
 ## CloneReceiptRuleSetRequestRequestTypeDef
@@ -253,7 +253,7 @@ from mypy_boto3_ses.type_defs import CloudWatchDestinationTypeDef
 Required fields:
 
 - `DimensionConfigurations`:
-  `List`\[[CloudWatchDimensionConfigurationTypeDef](./type_defs.md#cloudwatchdimensionconfigurationtypedef)\]
+  `Sequence`\[[CloudWatchDimensionConfigurationTypeDef](./type_defs.md#cloudwatchdimensionconfigurationtypedef)\]
 
 ## CloudWatchDimensionConfigurationTypeDef
 
@@ -551,7 +551,7 @@ Required fields:
 Optional fields:
 
 - `ConfigurationSetAttributeNames`:
-  `List`\[[ConfigurationSetAttributeType](./literals.md#configurationsetattributetype)\]
+  `Sequence`\[[ConfigurationSetAttributeType](./literals.md#configurationsetattributetype)\]
 
 ## DescribeConfigurationSetResponseTypeDef
 
@@ -629,9 +629,9 @@ from mypy_boto3_ses.type_defs import DestinationTypeDef
 
 Optional fields:
 
-- `ToAddresses`: `List`\[`str`\]
-- `CcAddresses`: `List`\[`str`\]
-- `BccAddresses`: `List`\[`str`\]
+- `ToAddresses`: `Sequence`\[`str`\]
+- `CcAddresses`: `Sequence`\[`str`\]
+- `BccAddresses`: `Sequence`\[`str`\]
 
 ## EventDestinationTypeDef
 
@@ -642,7 +642,8 @@ from mypy_boto3_ses.type_defs import EventDestinationTypeDef
 Required fields:
 
 - `Name`: `str`
-- `MatchingEventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
+- `MatchingEventTypes`:
+  `Sequence`\[[EventTypeType](./literals.md#eventtypetype)\]
 
 Optional fields:
 
@@ -712,7 +713,7 @@ from mypy_boto3_ses.type_defs import GetIdentityDkimAttributesRequestRequestType
 
 Required fields:
 
-- `Identities`: `List`\[`str`\]
+- `Identities`: `Sequence`\[`str`\]
 
 ## GetIdentityDkimAttributesResponseTypeDef
 
@@ -735,7 +736,7 @@ from mypy_boto3_ses.type_defs import GetIdentityMailFromDomainAttributesRequestR
 
 Required fields:
 
-- `Identities`: `List`\[`str`\]
+- `Identities`: `Sequence`\[`str`\]
 
 ## GetIdentityMailFromDomainAttributesResponseTypeDef
 
@@ -758,7 +759,7 @@ from mypy_boto3_ses.type_defs import GetIdentityNotificationAttributesRequestReq
 
 Required fields:
 
-- `Identities`: `List`\[`str`\]
+- `Identities`: `Sequence`\[`str`\]
 
 ## GetIdentityNotificationAttributesResponseTypeDef
 
@@ -782,7 +783,7 @@ from mypy_boto3_ses.type_defs import GetIdentityPoliciesRequestRequestTypeDef
 Required fields:
 
 - `Identity`: `str`
-- `PolicyNames`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
 
 ## GetIdentityPoliciesResponseTypeDef
 
@@ -804,7 +805,7 @@ from mypy_boto3_ses.type_defs import GetIdentityVerificationAttributesRequestReq
 
 Required fields:
 
-- `Identities`: `List`\[`str`\]
+- `Identities`: `Sequence`\[`str`\]
 
 ## GetIdentityVerificationAttributesResponseTypeDef
 
@@ -1143,7 +1144,7 @@ Optional fields:
 
 - `ArrivalDate`: `Union`\[`datetime`, `str`\]
 - `ExtensionFields`:
-  `List`\[[ExtensionFieldTypeDef](./type_defs.md#extensionfieldtypedef)\]
+  `Sequence`\[[ExtensionFieldTypeDef](./type_defs.md#extensionfieldtypedef)\]
 
 ## MessageTagTypeDef
 
@@ -1281,9 +1282,9 @@ Optional fields:
 
 - `Enabled`: `bool`
 - `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
-- `Recipients`: `List`\[`str`\]
+- `Recipients`: `Sequence`\[`str`\]
 - `Actions`:
-  `List`\[[ReceiptActionTypeDef](./type_defs.md#receiptactiontypedef)\]
+  `Sequence`\[[ReceiptActionTypeDef](./type_defs.md#receiptactiontypedef)\]
 - `ScanEnabled`: `bool`
 
 ## RecipientDsnFieldsTypeDef
@@ -1304,7 +1305,7 @@ Optional fields:
 - `DiagnosticCode`: `str`
 - `LastAttemptDate`: `Union`\[`datetime`, `str`\]
 - `ExtensionFields`:
-  `List`\[[ExtensionFieldTypeDef](./type_defs.md#extensionfieldtypedef)\]
+  `Sequence`\[[ExtensionFieldTypeDef](./type_defs.md#extensionfieldtypedef)\]
 
 ## ReorderReceiptRuleSetRequestRequestTypeDef
 
@@ -1315,7 +1316,7 @@ from mypy_boto3_ses.type_defs import ReorderReceiptRuleSetRequestRequestTypeDef
 Required fields:
 
 - `RuleSetName`: `str`
-- `RuleNames`: `List`\[`str`\]
+- `RuleNames`: `Sequence`\[`str`\]
 
 ## ReputationOptionsTypeDef
 
@@ -1394,7 +1395,7 @@ Required fields:
 - `OriginalMessageId`: `str`
 - `BounceSender`: `str`
 - `BouncedRecipientInfoList`:
-  `List`\[[BouncedRecipientInfoTypeDef](./type_defs.md#bouncedrecipientinfotypedef)\]
+  `Sequence`\[[BouncedRecipientInfoTypeDef](./type_defs.md#bouncedrecipientinfotypedef)\]
 
 Optional fields:
 
@@ -1425,17 +1426,17 @@ Required fields:
 - `Source`: `str`
 - `Template`: `str`
 - `Destinations`:
-  `List`\[[BulkEmailDestinationTypeDef](./type_defs.md#bulkemaildestinationtypedef)\]
+  `Sequence`\[[BulkEmailDestinationTypeDef](./type_defs.md#bulkemaildestinationtypedef)\]
 
 Optional fields:
 
 - `SourceArn`: `str`
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `ReturnPath`: `str`
 - `ReturnPathArn`: `str`
 - `ConfigurationSetName`: `str`
 - `DefaultTags`:
-  `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `TemplateArn`: `str`
 - `DefaultTemplateData`: `str`
 
@@ -1507,11 +1508,11 @@ Required fields:
 
 Optional fields:
 
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `ReturnPath`: `str`
 - `SourceArn`: `str`
 - `ReturnPathArn`: `str`
-- `Tags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+- `Tags`: `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
 ## SendEmailResponseTypeDef
@@ -1539,11 +1540,11 @@ Required fields:
 Optional fields:
 
 - `Source`: `str`
-- `Destinations`: `List`\[`str`\]
+- `Destinations`: `Sequence`\[`str`\]
 - `FromArn`: `str`
 - `SourceArn`: `str`
 - `ReturnPathArn`: `str`
-- `Tags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+- `Tags`: `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
 ## SendRawEmailResponseTypeDef
@@ -1573,11 +1574,11 @@ Required fields:
 
 Optional fields:
 
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `ReturnPath`: `str`
 - `SourceArn`: `str`
 - `ReturnPathArn`: `str`
-- `Tags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+- `Tags`: `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 - `TemplateArn`: `str`
 

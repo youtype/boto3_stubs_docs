@@ -105,7 +105,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `s3Resources`:
-  `List`\[[S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)\]
+  `Sequence`\[[S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)\]
   *(required)*
 - `memberAccountId`: `str`
 
@@ -159,7 +159,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `associatedS3Resources`:
-  `List`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\] *(required)*
+  `Sequence`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\]
+  *(required)*
 - `memberAccountId`: `str`
 
 Returns
@@ -177,7 +178,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -240,7 +241,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `s3ResourcesUpdate`:
-  `List`\[[S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef)\]
+  `Sequence`\[[S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef)\]
   *(required)*
 - `memberAccountId`: `str`
 

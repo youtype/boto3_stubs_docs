@@ -140,7 +140,7 @@ Keyword-only arguments:
 - `configData`: [ConfigTypeDataTypeDef](./type_defs.md#configtypedatatypedef)
   *(required)*
 - `name`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
 
@@ -161,9 +161,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `endpointDetails`:
-  `List`\[[EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)\]
+  `Sequence`\[[EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)\]
   *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [DataflowEndpointGroupIdResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponsetypedef).
@@ -183,13 +183,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `dataflowEdges`: `List`\[`List`\[`str`\]\] *(required)*
+- `dataflowEdges`: `Sequence`\[`Sequence`\[`str`\]\] *(required)*
 - `minimumViableContactDurationSeconds`: `int` *(required)*
 - `name`: `str` *(required)*
 - `trackingConfigArn`: `str` *(required)*
 - `contactPostPassDurationSeconds`: `int`
 - `contactPrePassDurationSeconds`: `int`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
@@ -287,7 +287,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -429,7 +429,8 @@ Keyword-only arguments:
 
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `statusList`: `List`\[[ContactStatusType](./literals.md#contactstatustype)\]
+- `statusList`:
+  `Sequence`\[[ContactStatusType](./literals.md#contactstatustype)\]
   *(required)*
 - `groundStation`: `str`
 - `maxResults`: `int`
@@ -563,7 +564,7 @@ Keyword-only arguments:
 - `missionProfileArn`: `str` *(required)*
 - `satelliteArn`: `str` *(required)*
 - `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns [ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef).
 
@@ -582,7 +583,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -601,7 +602,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -647,7 +648,7 @@ Keyword-only arguments:
 - `missionProfileId`: `str` *(required)*
 - `contactPostPassDurationSeconds`: `int`
 - `contactPrePassDurationSeconds`: `int`
-- `dataflowEdges`: `List`\[`List`\[`str`\]\]
+- `dataflowEdges`: `Sequence`\[`Sequence`\[`str`\]\]
 - `minimumViableContactDurationSeconds`: `int`
 - `name`: `str`
 - `trackingConfigArn`: `str`

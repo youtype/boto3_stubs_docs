@@ -186,7 +186,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateApplicationResponseTypeDef
 
@@ -215,7 +215,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAttributeGroupResponseTypeDef
 
@@ -657,7 +657,7 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import TagResourceRequestRe
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -668,7 +668,7 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import UntagResourceRequest
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApplicationRequestRequestTypeDef
 

@@ -447,7 +447,7 @@ Optional fields:
 - `ApplicationSnapshotConfiguration`:
   [ApplicationSnapshotConfigurationTypeDef](./type_defs.md#applicationsnapshotconfigurationtypedef)
 - `VpcConfigurations`:
-  `List`\[[VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)\]
+  `Sequence`\[[VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)\]
 - `ZeppelinApplicationConfiguration`:
   [ZeppelinApplicationConfigurationTypeDef](./type_defs.md#zeppelinapplicationconfigurationtypedef)
 
@@ -470,7 +470,7 @@ Optional fields:
 - `ApplicationSnapshotConfigurationUpdate`:
   [ApplicationSnapshotConfigurationUpdateTypeDef](./type_defs.md#applicationsnapshotconfigurationupdatetypedef)
 - `VpcConfigurationUpdates`:
-  `List`\[[VpcConfigurationUpdateTypeDef](./type_defs.md#vpcconfigurationupdatetypedef)\]
+  `Sequence`\[[VpcConfigurationUpdateTypeDef](./type_defs.md#vpcconfigurationupdatetypedef)\]
 - `ZeppelinApplicationConfigurationUpdate`:
   [ZeppelinApplicationConfigurationUpdateTypeDef](./type_defs.md#zeppelinapplicationconfigurationupdatetypedef)
 
@@ -820,8 +820,8 @@ Optional fields:
 - `ApplicationConfiguration`:
   [ApplicationConfigurationTypeDef](./type_defs.md#applicationconfigurationtypedef)
 - `CloudWatchLoggingOptions`:
-  `List`\[[CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ApplicationMode`: [ApplicationModeType](./literals.md#applicationmodetype)
 
 ## CreateApplicationResponseTypeDef
@@ -1200,7 +1200,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import EnvironmentPropertiesTypeDef
 Required fields:
 
 - `PropertyGroups`:
-  `List`\[[PropertyGroupTypeDef](./type_defs.md#propertygrouptypedef)\]
+  `Sequence`\[[PropertyGroupTypeDef](./type_defs.md#propertygrouptypedef)\]
 
 ## EnvironmentPropertyDescriptionsTypeDef
 
@@ -1222,7 +1222,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import EnvironmentPropertyUpdatesTy
 Required fields:
 
 - `PropertyGroups`:
-  `List`\[[PropertyGroupTypeDef](./type_defs.md#propertygrouptypedef)\]
+  `Sequence`\[[PropertyGroupTypeDef](./type_defs.md#propertygrouptypedef)\]
 
 ## FlinkApplicationConfigurationDescriptionTypeDef
 
@@ -1432,7 +1432,7 @@ Optional fields:
   [RecordFormatTypeDef](./type_defs.md#recordformattypedef)
 - `RecordEncodingUpdate`: `str`
 - `RecordColumnUpdates`:
-  `List`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
+  `Sequence`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
 
 ## InputStartingPositionConfigurationTypeDef
 
@@ -1971,7 +1971,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import PropertyGroupTypeDef
 Required fields:
 
 - `PropertyGroupId`: `str`
-- `PropertyMap`: `Dict`\[`str`, `str`\]
+- `PropertyMap`: `Mapping`\[`str`, `str`\]
 
 ## RecordColumnTypeDef
 
@@ -2117,7 +2117,7 @@ Optional fields:
 - `FlinkRunConfiguration`:
   [FlinkRunConfigurationTypeDef](./type_defs.md#flinkrunconfigurationtypedef)
 - `SqlRunConfigurations`:
-  `List`\[[SqlRunConfigurationTypeDef](./type_defs.md#sqlrunconfigurationtypedef)\]
+  `Sequence`\[[SqlRunConfigurationTypeDef](./type_defs.md#sqlrunconfigurationtypedef)\]
 - `ApplicationRestoreConfiguration`:
   [ApplicationRestoreConfigurationTypeDef](./type_defs.md#applicationrestoreconfigurationtypedef)
 
@@ -2292,7 +2292,7 @@ Required fields:
 
 - `RecordFormat`: [RecordFormatTypeDef](./type_defs.md#recordformattypedef)
 - `RecordColumns`:
-  `List`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
+  `Sequence`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
 
 Optional fields:
 
@@ -2321,10 +2321,10 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import SqlApplicationConfigurationT
 
 Optional fields:
 
-- `Inputs`: `List`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `Inputs`: `Sequence`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
+- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 - `ReferenceDataSources`:
-  `List`\[[ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef)\]
+  `Sequence`\[[ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef)\]
 
 ## SqlApplicationConfigurationUpdateTypeDef
 
@@ -2335,11 +2335,11 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import SqlApplicationConfigurationU
 Optional fields:
 
 - `InputUpdates`:
-  `List`\[[InputUpdateTypeDef](./type_defs.md#inputupdatetypedef)\]
+  `Sequence`\[[InputUpdateTypeDef](./type_defs.md#inputupdatetypedef)\]
 - `OutputUpdates`:
-  `List`\[[OutputUpdateTypeDef](./type_defs.md#outputupdatetypedef)\]
+  `Sequence`\[[OutputUpdateTypeDef](./type_defs.md#outputupdatetypedef)\]
 - `ReferenceDataSourceUpdates`:
-  `List`\[[ReferenceDataSourceUpdateTypeDef](./type_defs.md#referencedatasourceupdatetypedef)\]
+  `Sequence`\[[ReferenceDataSourceUpdateTypeDef](./type_defs.md#referencedatasourceupdatetypedef)\]
 
 ## SqlRunConfigurationTypeDef
 
@@ -2391,7 +2391,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import TagResourceRequestRequestTyp
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -2416,7 +2416,7 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import UntagResourceRequestRequestT
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateApplicationMaintenanceConfigurationRequestRequestTypeDef
 
@@ -2463,7 +2463,7 @@ Optional fields:
 - `RunConfigurationUpdate`:
   [RunConfigurationUpdateTypeDef](./type_defs.md#runconfigurationupdatetypedef)
 - `CloudWatchLoggingOptionUpdates`:
-  `List`\[[CloudWatchLoggingOptionUpdateTypeDef](./type_defs.md#cloudwatchloggingoptionupdatetypedef)\]
+  `Sequence`\[[CloudWatchLoggingOptionUpdateTypeDef](./type_defs.md#cloudwatchloggingoptionupdatetypedef)\]
 - `ConditionalToken`: `str`
 
 ## UpdateApplicationResponseTypeDef
@@ -2500,8 +2500,8 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import VpcConfigurationTypeDef
 
 Required fields:
 
-- `SubnetIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## VpcConfigurationUpdateTypeDef
 
@@ -2515,8 +2515,8 @@ Required fields:
 
 Optional fields:
 
-- `SubnetIdUpdates`: `List`\[`str`\]
-- `SecurityGroupIdUpdates`: `List`\[`str`\]
+- `SubnetIdUpdates`: `Sequence`\[`str`\]
+- `SecurityGroupIdUpdates`: `Sequence`\[`str`\]
 
 ## ZeppelinApplicationConfigurationDescriptionTypeDef
 
@@ -2553,7 +2553,7 @@ Optional fields:
 - `DeployAsApplicationConfiguration`:
   [DeployAsApplicationConfigurationTypeDef](./type_defs.md#deployasapplicationconfigurationtypedef)
 - `CustomArtifactsConfiguration`:
-  `List`\[[CustomArtifactConfigurationTypeDef](./type_defs.md#customartifactconfigurationtypedef)\]
+  `Sequence`\[[CustomArtifactConfigurationTypeDef](./type_defs.md#customartifactconfigurationtypedef)\]
 
 ## ZeppelinApplicationConfigurationUpdateTypeDef
 
@@ -2570,7 +2570,7 @@ Optional fields:
 - `DeployAsApplicationConfigurationUpdate`:
   [DeployAsApplicationConfigurationUpdateTypeDef](./type_defs.md#deployasapplicationconfigurationupdatetypedef)
 - `CustomArtifactsConfigurationUpdate`:
-  `List`\[[CustomArtifactConfigurationTypeDef](./type_defs.md#customartifactconfigurationtypedef)\]
+  `Sequence`\[[CustomArtifactConfigurationTypeDef](./type_defs.md#customartifactconfigurationtypedef)\]
 
 ## ZeppelinMonitoringConfigurationDescriptionTypeDef
 

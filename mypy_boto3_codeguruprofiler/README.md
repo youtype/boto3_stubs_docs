@@ -105,6 +105,7 @@ from mypy_boto3_codeguruprofiler.literals import ActionGroupType, ...
 - [MetadataFieldType](./literals.md#metadatafieldtype)
 - [MetricTypeType](./literals.md#metrictypetype)
 - [OrderByType](./literals.md#orderbytype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

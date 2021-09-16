@@ -119,6 +119,7 @@ from mypy_boto3_transfer.literals import CustomStepStatusType, ...
 - [ProtocolType](./literals.md#protocoltype)
 - [StateType](./literals.md#statetype)
 - [WorkflowStepTypeType](./literals.md#workflowsteptypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -56,6 +56,7 @@ type annotations stubs module
     - [list_findings](#list_findings)
     - [list_findings_filters](#list_findings_filters)
     - [list_invitations](#list_invitations)
+    - [list_managed_data_identifiers](#list_managed_data_identifiers)
     - [list_members](#list_members)
     - [list_organization_admin_accounts](#list_organization_admin_accounts)
     - [list_tags_for_resource](#list_tags_for_resource)
@@ -160,7 +161,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ids`: `List`\[`str`\]
+- `ids`: `Sequence`\[`str`\]
 
 Returns
 [BatchGetCustomDataIdentifiersResponseTypeDef](./type_defs.md#batchgetcustomdataidentifiersresponsetypedef).
@@ -199,13 +200,16 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `s3JobDefinition`:
   [S3JobDefinitionTypeDef](./type_defs.md#s3jobdefinitiontypedef) *(required)*
-- `customDataIdentifierIds`: `List`\[`str`\]
+- `customDataIdentifierIds`: `Sequence`\[`str`\]
 - `description`: `str`
 - `initialRun`: `bool`
+- `managedDataIdentifierIds`: `Sequence`\[`str`\]
+- `managedDataIdentifierSelector`:
+  [ManagedDataIdentifierSelectorType](./literals.md#manageddataidentifierselectortype)
 - `samplingPercentage`: `int`
 - `scheduleFrequency`:
   [JobScheduleFrequencyTypeDef](./type_defs.md#jobschedulefrequencytypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateClassificationJobResponseTypeDef](./type_defs.md#createclassificationjobresponsetypedef).
@@ -228,12 +232,12 @@ Keyword-only arguments:
 
 - `clientToken`: `str`
 - `description`: `str`
-- `ignoreWords`: `List`\[`str`\]
-- `keywords`: `List`\[`str`\]
+- `ignoreWords`: `Sequence`\[`str`\]
+- `keywords`: `Sequence`\[`str`\]
 - `maximumMatchDistance`: `int`
 - `name`: `str`
 - `regex`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateCustomDataIdentifierResponseTypeDef](./type_defs.md#createcustomdataidentifierresponsetypedef).
@@ -260,7 +264,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 - `description`: `str`
 - `position`: `int`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateFindingsFilterResponseTypeDef](./type_defs.md#createfindingsfilterresponsetypedef).
@@ -279,7 +283,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `accountIds`: `List`\[`str`\] *(required)*
+- `accountIds`: `Sequence`\[`str`\] *(required)*
 - `disableEmailNotification`: `bool`
 - `message`: `str`
 
@@ -302,7 +306,7 @@ Keyword-only arguments:
 
 - `account`: [AccountDetailTypeDef](./type_defs.md#accountdetailtypedef)
   *(required)*
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateMemberResponseTypeDef](./type_defs.md#creatememberresponsetypedef).
@@ -321,7 +325,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `findingTypes`: `List`\[[FindingTypeType](./literals.md#findingtypetype)\]
+- `findingTypes`:
+  `Sequence`\[[FindingTypeType](./literals.md#findingtypetype)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -340,7 +345,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `accountIds`: `List`\[`str`\] *(required)*
+- `accountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
@@ -397,7 +402,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `accountIds`: `List`\[`str`\] *(required)*
+- `accountIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
@@ -436,7 +441,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `criteria`: `Dict`\[`str`,
+- `criteria`: `Mapping`\[`str`,
   [BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -609,7 +614,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -719,7 +724,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `findingIds`: `List`\[`str`\] *(required)*
+- `findingIds`: `Sequence`\[`str`\] *(required)*
 - `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
 Returns
@@ -830,7 +835,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `filterBy`:
-  `List`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
+  `Sequence`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `sortBy`:
@@ -951,8 +956,8 @@ Returns
 
 ### list_invitations
 
-Retrieves information about all the Amazon Macie membership invitations that
-were received by an account.
+Retrieves information about the Amazon Macie membership invitations that were
+received by an account.
 
 Type annotations for `boto3.client("macie2").list_invitations` method.
 
@@ -969,6 +974,27 @@ Keyword-only arguments:
 
 Returns
 [ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
+
+### list_managed_data_identifiers
+
+Retrieves information about all the managed data identifiers that Amazon Macie
+currently provides.
+
+Type annotations for `boto3.client("macie2").list_managed_data_identifiers`
+method.
+
+Boto3 documentation:
+[Macie2.Client.list_managed_data_identifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_managed_data_identifiers)
+
+Arguments mapping described in
+[ListManagedDataIdentifiersRequestRequestTypeDef](./type_defs.md#listmanageddataidentifiersrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `nextToken`: `str`
+
+Returns
+[ListManagedDataIdentifiersResponseTypeDef](./type_defs.md#listmanageddataidentifiersresponsetypedef).
 
 ### list_members
 
@@ -1119,7 +1145,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1140,8 +1166,8 @@ Keyword-only arguments:
 
 - `regex`: `str` *(required)*
 - `sampleText`: `str` *(required)*
-- `ignoreWords`: `List`\[`str`\]
-- `keywords`: `List`\[`str`\]
+- `ignoreWords`: `Sequence`\[`str`\]
+- `keywords`: `Sequence`\[`str`\]
 - `maximumMatchDistance`: `int`
 
 Returns
@@ -1163,7 +1189,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

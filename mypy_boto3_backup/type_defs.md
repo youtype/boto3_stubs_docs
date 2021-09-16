@@ -159,7 +159,7 @@ from mypy_boto3_backup.type_defs import AdvancedBackupSettingTypeDef
 Optional fields:
 
 - `ResourceType`: `str`
-- `BackupOptions`: `Dict`\[`str`, `str`\]
+- `BackupOptions`: `Mapping`\[`str`, `str`\]
 
 ## BackupJobTypeDef
 
@@ -201,12 +201,12 @@ Required fields:
 
 - `BackupPlanName`: `str`
 - `Rules`:
-  `List`\[[BackupRuleInputTypeDef](./type_defs.md#backupruleinputtypedef)\]
+  `Sequence`\[[BackupRuleInputTypeDef](./type_defs.md#backupruleinputtypedef)\]
 
 Optional fields:
 
 - `AdvancedBackupSettings`:
-  `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
+  `Sequence`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
 
 ## BackupPlanTemplatesListMemberTypeDef
 
@@ -271,9 +271,9 @@ Optional fields:
 - `StartWindowMinutes`: `int`
 - `CompletionWindowMinutes`: `int`
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-- `RecoveryPointTags`: `Dict`\[`str`, `str`\]
+- `RecoveryPointTags`: `Mapping`\[`str`, `str`\]
 - `CopyActions`:
-  `List`\[[CopyActionTypeDef](./type_defs.md#copyactiontypedef)\]
+  `Sequence`\[[CopyActionTypeDef](./type_defs.md#copyactiontypedef)\]
 - `EnableContinuousBackup`: `bool`
 
 ## BackupRuleTypeDef
@@ -312,8 +312,9 @@ Required fields:
 
 Optional fields:
 
-- `Resources`: `List`\[`str`\]
-- `ListOfTags`: `List`\[[ConditionTypeDef](./type_defs.md#conditiontypedef)\]
+- `Resources`: `Sequence`\[`str`\]
+- `ListOfTags`:
+  `Sequence`\[[ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 
 ## BackupSelectionsListMemberTypeDef
 
@@ -388,9 +389,9 @@ from mypy_boto3_backup.type_defs import ControlScopeTypeDef
 
 Optional fields:
 
-- `ComplianceResourceIds`: `List`\[`str`\]
-- `ComplianceResourceTypes`: `List`\[`str`\]
-- `Tags`: `Dict`\[`str`, `str`\]
+- `ComplianceResourceIds`: `Sequence`\[`str`\]
+- `ComplianceResourceTypes`: `Sequence`\[`str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CopyActionTypeDef
 
@@ -443,7 +444,7 @@ Required fields:
 
 Optional fields:
 
-- `BackupPlanTags`: `Dict`\[`str`, `str`\]
+- `BackupPlanTags`: `Mapping`\[`str`, `str`\]
 - `CreatorRequestId`: `str`
 
 ## CreateBackupPlanOutputTypeDef
@@ -505,7 +506,7 @@ Required fields:
 
 Optional fields:
 
-- `BackupVaultTags`: `Dict`\[`str`, `str`\]
+- `BackupVaultTags`: `Mapping`\[`str`, `str`\]
 - `EncryptionKeyArn`: `str`
 - `CreatorRequestId`: `str`
 
@@ -533,13 +534,13 @@ Required fields:
 
 - `FrameworkName`: `str`
 - `FrameworkControls`:
-  `List`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
+  `Sequence`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
 
 Optional fields:
 
 - `FrameworkDescription`: `str`
 - `IdempotencyToken`: `str`
-- `FrameworkTags`: `Dict`\[`str`, `str`\]
+- `FrameworkTags`: `Mapping`\[`str`, `str`\]
 
 ## CreateFrameworkOutputTypeDef
 
@@ -570,7 +571,7 @@ Required fields:
 Optional fields:
 
 - `ReportPlanDescription`: `str`
-- `ReportPlanTags`: `Dict`\[`str`, `str`\]
+- `ReportPlanTags`: `Mapping`\[`str`, `str`\]
 - `IdempotencyToken`: `str`
 
 ## CreateReportPlanOutputTypeDef
@@ -1020,7 +1021,7 @@ Required fields:
 Optional fields:
 
 - `ControlInputParameters`:
-  `List`\[[ControlInputParameterTypeDef](./type_defs.md#controlinputparametertypedef)\]
+  `Sequence`\[[ControlInputParameterTypeDef](./type_defs.md#controlinputparametertypedef)\]
 - `ControlScope`: [ControlScopeTypeDef](./type_defs.md#controlscopetypedef)
 
 ## FrameworkTypeDef
@@ -1698,7 +1699,7 @@ Required fields:
 - `BackupVaultName`: `str`
 - `SNSTopicArn`: `str`
 - `BackupVaultEvents`:
-  `List`\[[BackupVaultEventType](./literals.md#backupvaulteventtype)\]
+  `Sequence`\[[BackupVaultEventType](./literals.md#backupvaulteventtype)\]
 
 ## RecoveryPointByBackupVaultTypeDef
 
@@ -1771,7 +1772,7 @@ Required fields:
 Optional fields:
 
 - `S3KeyPrefix`: `str`
-- `Formats`: `List`\[`str`\]
+- `Formats`: `Sequence`\[`str`\]
 
 ## ReportDestinationTypeDef
 
@@ -1885,8 +1886,8 @@ Optional fields:
 - `StartWindowMinutes`: `int`
 - `CompleteWindowMinutes`: `int`
 - `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-- `RecoveryPointTags`: `Dict`\[`str`, `str`\]
-- `BackupOptions`: `Dict`\[`str`, `str`\]
+- `RecoveryPointTags`: `Mapping`\[`str`, `str`\]
+- `BackupOptions`: `Mapping`\[`str`, `str`\]
 
 ## StartBackupJobOutputTypeDef
 
@@ -1968,7 +1969,7 @@ from mypy_boto3_backup.type_defs import StartRestoreJobInputRequestTypeDef
 Required fields:
 
 - `RecoveryPointArn`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `IamRoleArn`: `str`
 
 Optional fields:
@@ -2007,7 +2008,7 @@ from mypy_boto3_backup.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceInputRequestTypeDef
 
@@ -2018,7 +2019,7 @@ from mypy_boto3_backup.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeyList`: `List`\[`str`\]
+- `TagKeyList`: `Sequence`\[`str`\]
 
 ## UpdateBackupPlanInputRequestTypeDef
 
@@ -2062,7 +2063,7 @@ Optional fields:
 
 - `FrameworkDescription`: `str`
 - `FrameworkControls`:
-  `List`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
+  `Sequence`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
 - `IdempotencyToken`: `str`
 
 ## UpdateFrameworkOutputTypeDef
@@ -2087,7 +2088,7 @@ from mypy_boto3_backup.type_defs import UpdateGlobalSettingsInputRequestTypeDef
 
 Optional fields:
 
-- `GlobalSettings`: `Dict`\[`str`, `str`\]
+- `GlobalSettings`: `Mapping`\[`str`, `str`\]
 
 ## UpdateRecoveryPointLifecycleInputRequestTypeDef
 
@@ -2128,7 +2129,7 @@ from mypy_boto3_backup.type_defs import UpdateRegionSettingsInputRequestTypeDef
 
 Optional fields:
 
-- `ResourceTypeOptInPreference`: `Dict`\[`str`, `bool`\]
+- `ResourceTypeOptInPreference`: `Mapping`\[`str`, `bool`\]
 
 ## UpdateReportPlanInputRequestTypeDef
 

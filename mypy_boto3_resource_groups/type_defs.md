@@ -71,9 +71,9 @@ Optional fields:
 
 - `Description`: `str`
 - `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Configuration`:
-  `List`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
+  `Sequence`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
 
 ## CreateGroupOutputTypeDef
 
@@ -231,7 +231,7 @@ Required fields:
 Optional fields:
 
 - `Parameters`:
-  `List`\[[GroupConfigurationParameterTypeDef](./type_defs.md#groupconfigurationparametertypedef)\]
+  `Sequence`\[[GroupConfigurationParameterTypeDef](./type_defs.md#groupconfigurationparametertypedef)\]
 
 ## GroupConfigurationParameterTypeDef
 
@@ -245,7 +245,7 @@ Required fields:
 
 Optional fields:
 
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## GroupConfigurationTypeDef
 
@@ -272,7 +272,7 @@ from mypy_boto3_resource_groups.type_defs import GroupFilterTypeDef
 Required fields:
 
 - `Name`: [GroupFilterNameType](./literals.md#groupfilternametype)
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## GroupIdentifierTypeDef
 
@@ -305,7 +305,7 @@ from mypy_boto3_resource_groups.type_defs import GroupResourcesInputRequestTypeD
 Required fields:
 
 - `Group`: `str`
-- `ResourceArns`: `List`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 
 ## GroupResourcesOutputTypeDef
 
@@ -349,7 +349,7 @@ Optional fields:
 - `GroupName`: `str`
 - `Group`: `str`
 - `Filters`:
-  `List`\[[ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef)\]
+  `Sequence`\[[ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -391,7 +391,8 @@ from mypy_boto3_resource_groups.type_defs import ListGroupsInputRequestTypeDef
 
 Optional fields:
 
-- `Filters`: `List`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
+- `Filters`:
+  `Sequence`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -442,7 +443,7 @@ Optional fields:
 
 - `Group`: `str`
 - `Configuration`:
-  `List`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
+  `Sequence`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
 
 ## QueryErrorTypeDef
 
@@ -465,7 +466,7 @@ Required fields:
 
 - `Name`: `Literal['resource-type']` (see
   [ResourceFilterNameType](./literals.md#resourcefilternametype))
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## ResourceIdentifierTypeDef
 
@@ -554,7 +555,7 @@ from mypy_boto3_resource_groups.type_defs import TagInputRequestTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TagOutputTypeDef
 
@@ -578,7 +579,7 @@ from mypy_boto3_resource_groups.type_defs import UngroupResourcesInputRequestTyp
 Required fields:
 
 - `Group`: `str`
-- `ResourceArns`: `List`\[`str`\]
+- `ResourceArns`: `Sequence`\[`str`\]
 
 ## UngroupResourcesOutputTypeDef
 
@@ -605,7 +606,7 @@ from mypy_boto3_resource_groups.type_defs import UntagInputRequestTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `Keys`: `List`\[`str`\]
+- `Keys`: `Sequence`\[`str`\]
 
 ## UntagOutputTypeDef
 

@@ -123,7 +123,7 @@ Optional fields:
 
 - `Encryption`: [CmafEncryptionTypeDef](./type_defs.md#cmafencryptiontypedef)
 - `HlsManifests`:
-  `List`\[[HlsManifestCreateOrUpdateParametersTypeDef](./type_defs.md#hlsmanifestcreateorupdateparameterstypedef)\]
+  `Sequence`\[[HlsManifestCreateOrUpdateParametersTypeDef](./type_defs.md#hlsmanifestcreateorupdateparameterstypedef)\]
 - `SegmentDurationSeconds`: `int`
 - `SegmentPrefix`: `str`
 - `StreamSelection`:
@@ -195,7 +195,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateChannelResponseTypeDef
 
@@ -274,9 +274,9 @@ Optional fields:
 - `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
 - `Origination`: [OriginationType](./literals.md#originationtype)
 - `StartoverWindowSeconds`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `TimeDelaySeconds`: `int`
-- `Whitelist`: `List`\[`str`\]
+- `Whitelist`: `Sequence`\[`str`\]
 
 ## CreateOriginEndpointResponseTypeDef
 
@@ -329,7 +329,7 @@ from mypy_boto3_mediapackage.type_defs import DashPackageTypeDef
 Optional fields:
 
 - `AdTriggers`:
-  `List`\[[\_\_AdTriggersElementType](./literals.md#__adtriggerselementtype)\]
+  `Sequence`\[[AdTriggersElementType](./literals.md#adtriggerselementtype)\]
 - `AdsOnDeliveryRestrictions`:
   [AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype)
 - `Encryption`: [DashEncryptionTypeDef](./type_defs.md#dashencryptiontypedef)
@@ -337,8 +337,8 @@ Optional fields:
 - `ManifestWindowSeconds`: `int`
 - `MinBufferTimeSeconds`: `int`
 - `MinUpdatePeriodSeconds`: `int`
-- `PeriodTriggers`: `List`\[`Literal['ADS']` (see
-  [\_\_PeriodTriggersElementType](./literals.md#__periodtriggerselementtype))\]
+- `PeriodTriggers`: `Sequence`\[`Literal['ADS']` (see
+  [PeriodTriggersElementType](./literals.md#periodtriggerselementtype))\]
 - `Profile`: [ProfileType](./literals.md#profiletype)
 - `SegmentDurationSeconds`: `int`
 - `SegmentTemplateFormat`:
@@ -551,7 +551,7 @@ Optional fields:
 
 - `AdMarkers`: [AdMarkersType](./literals.md#admarkerstype)
 - `AdTriggers`:
-  `List`\[[\_\_AdTriggersElementType](./literals.md#__adtriggerselementtype)\]
+  `Sequence`\[[AdTriggersElementType](./literals.md#adtriggerselementtype)\]
 - `AdsOnDeliveryRestrictions`:
   [AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype)
 - `IncludeIframeOnlyStream`: `bool`
@@ -590,7 +590,7 @@ Optional fields:
 
 - `AdMarkers`: [AdMarkersType](./literals.md#admarkerstype)
 - `AdTriggers`:
-  `List`\[[\_\_AdTriggersElementType](./literals.md#__adtriggerselementtype)\]
+  `Sequence`\[[AdTriggersElementType](./literals.md#adtriggerselementtype)\]
 - `AdsOnDeliveryRestrictions`:
   [AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype)
 - `Encryption`: [HlsEncryptionTypeDef](./type_defs.md#hlsencryptiontypedef)
@@ -884,7 +884,7 @@ Required fields:
 
 - `ResourceId`: `str`
 - `RoleArn`: `str`
-- `SystemIds`: `List`\[`str`\]
+- `SystemIds`: `Sequence`\[`str`\]
 - `Url`: `str`
 
 Optional fields:
@@ -914,7 +914,7 @@ from mypy_boto3_mediapackage.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -925,7 +925,7 @@ from mypy_boto3_mediapackage.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateChannelRequestRequestTypeDef
 
@@ -984,7 +984,7 @@ Optional fields:
 - `Origination`: [OriginationType](./literals.md#originationtype)
 - `StartoverWindowSeconds`: `int`
 - `TimeDelaySeconds`: `int`
-- `Whitelist`: `List`\[`str`\]
+- `Whitelist`: `Sequence`\[`str`\]
 
 ## UpdateOriginEndpointResponseTypeDef
 

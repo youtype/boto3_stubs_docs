@@ -241,7 +241,7 @@ Keyword-only arguments:
 
 - `ApplicationName`: `str`
 - `GroupName`: `str`
-- `VersionLabels`: `List`\[`str`\]
+- `VersionLabels`: `Sequence`\[`str`\]
 
 Returns
 [EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef).
@@ -266,7 +266,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `ResourceLifecycleConfig`:
   [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [ApplicationDescriptionMessageTypeDef](./type_defs.md#applicationdescriptionmessagetypedef).
@@ -296,7 +296,7 @@ Keyword-only arguments:
   [BuildConfigurationTypeDef](./type_defs.md#buildconfigurationtypedef)
 - `AutoCreateApplication`: `bool`
 - `Process`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [ApplicationVersionDescriptionMessageTypeDef](./type_defs.md#applicationversiondescriptionmessagetypedef).
@@ -325,8 +325,8 @@ Keyword-only arguments:
 - `EnvironmentId`: `str`
 - `Description`: `str`
 - `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [ConfigurationSettingsDescriptionResponseMetadataTypeDef](./type_defs.md#configurationsettingsdescriptionresponsemetadatatypedef).
@@ -353,15 +353,15 @@ Keyword-only arguments:
 - `Description`: `str`
 - `CNAMEPrefix`: `str`
 - `Tier`: [EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `VersionLabel`: `str`
 - `TemplateName`: `str`
 - `SolutionStackName`: `str`
 - `PlatformArn`: `str`
 - `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 - `OptionsToRemove`:
-  `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
+  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 - `OperationsRole`: `str`
 
 Returns
@@ -388,8 +388,8 @@ Keyword-only arguments:
   [S3LocationTypeDef](./type_defs.md#s3locationtypedef) *(required)*
 - `EnvironmentName`: `str`
 - `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreatePlatformVersionResultTypeDef](./type_defs.md#createplatformversionresulttypedef).
@@ -532,7 +532,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ApplicationName`: `str`
-- `VersionLabels`: `List`\[`str`\]
+- `VersionLabels`: `Sequence`\[`str`\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
@@ -554,7 +554,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ApplicationNames`: `List`\[`str`\]
+- `ApplicationNames`: `Sequence`\[`str`\]
 
 Returns
 [ApplicationDescriptionsMessageTypeDef](./type_defs.md#applicationdescriptionsmessagetypedef).
@@ -581,7 +581,7 @@ Keyword-only arguments:
 - `SolutionStackName`: `str`
 - `PlatformArn`: `str`
 - `Options`:
-  `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
+  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
 Returns
 [ConfigurationOptionsDescriptionTypeDef](./type_defs.md#configurationoptionsdescriptiontypedef).
@@ -628,7 +628,7 @@ Keyword-only arguments:
 - `EnvironmentName`: `str`
 - `EnvironmentId`: `str`
 - `AttributeNames`:
-  `List`\[[EnvironmentHealthAttributeType](./literals.md#environmenthealthattributetype)\]
+  `Sequence`\[[EnvironmentHealthAttributeType](./literals.md#environmenthealthattributetype)\]
 
 Returns
 [DescribeEnvironmentHealthResultTypeDef](./type_defs.md#describeenvironmenthealthresulttypedef).
@@ -717,8 +717,8 @@ Keyword-only arguments:
 
 - `ApplicationName`: `str`
 - `VersionLabel`: `str`
-- `EnvironmentIds`: `List`\[`str`\]
-- `EnvironmentNames`: `List`\[`str`\]
+- `EnvironmentIds`: `Sequence`\[`str`\]
+- `EnvironmentNames`: `Sequence`\[`str`\]
 - `IncludeDeleted`: `bool`
 - `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
 - `MaxRecords`: `int`
@@ -776,7 +776,7 @@ Keyword-only arguments:
 - `EnvironmentName`: `str`
 - `EnvironmentId`: `str`
 - `AttributeNames`:
-  `List`\[[InstancesHealthAttributeType](./literals.md#instanceshealthattributetype)\]
+  `Sequence`\[[InstancesHealthAttributeType](./literals.md#instanceshealthattributetype)\]
 - `NextToken`: `str`
 
 Returns
@@ -833,7 +833,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -869,7 +869,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[SearchFilterTypeDef](./type_defs.md#searchfiltertypedef)\]
+  `Sequence`\[[SearchFilterTypeDef](./type_defs.md#searchfiltertypedef)\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
@@ -892,7 +892,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
+  `Sequence`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
@@ -1131,9 +1131,9 @@ Keyword-only arguments:
 - `TemplateName`: `str` *(required)*
 - `Description`: `str`
 - `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 - `OptionsToRemove`:
-  `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
+  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
 Returns
 [ConfigurationSettingsDescriptionResponseMetadataTypeDef](./type_defs.md#configurationsettingsdescriptionresponsemetadatatypedef).
@@ -1166,9 +1166,9 @@ Keyword-only arguments:
 - `SolutionStackName`: `str`
 - `PlatformArn`: `str`
 - `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 - `OptionsToRemove`:
-  `List`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
+  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
 Returns
 [EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
@@ -1189,8 +1189,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagsToAdd`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TagsToRemove`: `List`\[`str`\]
+- `TagsToAdd`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagsToRemove`: `Sequence`\[`str`\]
 
 ### validate_configuration_settings
 
@@ -1210,7 +1210,7 @@ Keyword-only arguments:
 
 - `ApplicationName`: `str` *(required)*
 - `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
+  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
   *(required)*
 - `TemplateName`: `str`
 - `EnvironmentName`: `str`

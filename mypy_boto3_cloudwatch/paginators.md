@@ -34,7 +34,7 @@ Boto3 documentation:
 Arguments for `DescribeAlarmHistoryPaginator.paginate` method:
 
 - `AlarmName`: `str`
-- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
+- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `HistoryItemType`: [HistoryItemTypeType](./literals.md#historyitemtypetype)
 - `StartDate`: `Union`\[`datetime`, `str`\]
 - `EndDate`: `Union`\[`datetime`, `str`\]
@@ -64,9 +64,9 @@ Boto3 documentation:
 
 Arguments for `DescribeAlarmsPaginator.paginate` method:
 
-- `AlarmNames`: `List`\[`str`\]
+- `AlarmNames`: `Sequence`\[`str`\]
 - `AlarmNamePrefix`: `str`
-- `AlarmTypes`: `List`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
+- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
 - `ChildrenOfAlarmName`: `str`
 - `ParentsOfAlarmName`: `str`
 - `StateValue`: [StateValueType](./literals.md#statevaluetype)
@@ -97,7 +97,7 @@ Boto3 documentation:
 Arguments for `GetMetricDataPaginator.paginate` method:
 
 - `MetricDataQueries`:
-  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
   *(required)*
 - `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
@@ -157,7 +157,7 @@ Arguments for `ListMetricsPaginator.paginate` method:
 - `Namespace`: `str`
 - `MetricName`: `str`
 - `Dimensions`:
-  `List`\[[DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef)\]
+  `Sequence`\[[DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef)\]
 - `RecentlyActive`: `Literal['PT3H']` (see
   [RecentlyActiveType](./literals.md#recentlyactivetype))
 - `PaginationConfig`:

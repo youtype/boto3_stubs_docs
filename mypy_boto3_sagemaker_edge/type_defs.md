@@ -65,7 +65,7 @@ Optional fields:
 - `LatestSampleTime`: `Union`\[`datetime`, `str`\]
 - `LatestInference`: `Union`\[`datetime`, `str`\]
 - `ModelMetrics`:
-  `List`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]
+  `Sequence`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]
 
 ## ResponseMetadataTypeDef
 
@@ -96,5 +96,5 @@ Required fields:
 Optional fields:
 
 - `AgentMetrics`:
-  `List`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]
-- `Models`: `List`\[[ModelTypeDef](./type_defs.md#modeltypedef)\]
+  `Sequence`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]
+- `Models`: `Sequence`\[[ModelTypeDef](./type_defs.md#modeltypedef)\]

@@ -35,8 +35,8 @@ Arguments for `ClusterAvailableWaiter.wait` method:
 - `ClusterIdentifier`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ClusterDeletedWaiter
@@ -60,8 +60,8 @@ Arguments for `ClusterDeletedWaiter.wait` method:
 - `ClusterIdentifier`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## ClusterRestoredWaiter
@@ -85,8 +85,8 @@ Arguments for `ClusterRestoredWaiter.wait` method:
 - `ClusterIdentifier`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 ## SnapshotAvailableWaiter
@@ -116,9 +116,9 @@ Arguments for `SnapshotAvailableWaiter.wait` method:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `OwnerAccount`: `str`
-- `TagKeys`: `List`\[`str`\]
-- `TagValues`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
+- `TagValues`: `Sequence`\[`str`\]
 - `ClusterExists`: `bool`
 - `SortingEntities`:
-  `List`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
+  `Sequence`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

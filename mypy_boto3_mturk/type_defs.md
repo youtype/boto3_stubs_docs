@@ -207,14 +207,14 @@ Optional fields:
 - `Question`: `str`
 - `RequesterAnnotation`: `str`
 - `QualificationRequirements`:
-  `List`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
+  `Sequence`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
 - `UniqueRequestToken`: `str`
 - `AssignmentReviewPolicy`:
   [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
 - `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
 - `HITLayoutId`: `str`
 - `HITLayoutParameters`:
-  `List`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
+  `Sequence`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
 
 ## CreateHITResponseTypeDef
 
@@ -246,7 +246,7 @@ Optional fields:
 - `AutoApprovalDelayInSeconds`: `int`
 - `Keywords`: `str`
 - `QualificationRequirements`:
-  `List`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
+  `Sequence`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
 
 ## CreateHITTypeResponseTypeDef
 
@@ -282,7 +282,7 @@ Optional fields:
 - `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
 - `HITLayoutId`: `str`
 - `HITLayoutParameters`:
-  `List`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
+  `Sequence`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
 
 ## CreateHITWithHITTypeResponseTypeDef
 
@@ -576,7 +576,7 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `AssignmentStatuses`:
-  `List`\[[AssignmentStatusType](./literals.md#assignmentstatustype)\]
+  `Sequence`\[[AssignmentStatusType](./literals.md#assignmentstatustype)\]
 
 ## ListAssignmentsForHITResponseTypeDef
 
@@ -747,7 +747,7 @@ Required fields:
 Optional fields:
 
 - `PolicyLevels`:
-  `List`\[[ReviewPolicyLevelType](./literals.md#reviewpolicyleveltype)\]
+  `Sequence`\[[ReviewPolicyLevelType](./literals.md#reviewpolicyleveltype)\]
 - `RetrieveActions`: `bool`
 - `RetrieveResults`: `bool`
 - `NextToken`: `str`
@@ -882,7 +882,7 @@ Required fields:
 - `Transport`:
   [NotificationTransportType](./literals.md#notificationtransporttype)
 - `Version`: `str`
-- `EventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
+- `EventTypes`: `Sequence`\[[EventTypeType](./literals.md#eventtypetype)\]
 
 ## NotifyWorkersFailureStatusTypeDef
 
@@ -907,7 +907,7 @@ Required fields:
 
 - `Subject`: `str`
 - `MessageText`: `str`
-- `WorkerIds`: `List`\[`str`\]
+- `WorkerIds`: `Sequence`\[`str`\]
 
 ## NotifyWorkersResponseTypeDef
 
@@ -943,7 +943,7 @@ from mypy_boto3_mturk.type_defs import ParameterMapEntryTypeDef
 Optional fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## PolicyParameterTypeDef
 
@@ -954,9 +954,9 @@ from mypy_boto3_mturk.type_defs import PolicyParameterTypeDef
 Optional fields:
 
 - `Key`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 - `MapEntries`:
-  `List`\[[ParameterMapEntryTypeDef](./type_defs.md#parametermapentrytypedef)\]
+  `Sequence`\[[ParameterMapEntryTypeDef](./type_defs.md#parametermapentrytypedef)\]
 
 ## QualificationRequestTypeDef
 
@@ -986,8 +986,8 @@ Required fields:
 
 Optional fields:
 
-- `IntegerValues`: `List`\[`int`\]
-- `LocaleValues`: `List`\[[LocaleTypeDef](./type_defs.md#localetypedef)\]
+- `IntegerValues`: `Sequence`\[`int`\]
+- `LocaleValues`: `Sequence`\[[LocaleTypeDef](./type_defs.md#localetypedef)\]
 - `RequiredToPreview`: `bool`
 - `ActionsGuarded`: [HITAccessActionsType](./literals.md#hitaccessactionstype)
 
@@ -1098,7 +1098,7 @@ Required fields:
 Optional fields:
 
 - `Parameters`:
-  `List`\[[PolicyParameterTypeDef](./type_defs.md#policyparametertypedef)\]
+  `Sequence`\[[PolicyParameterTypeDef](./type_defs.md#policyparametertypedef)\]
 
 ## ReviewReportTypeDef
 

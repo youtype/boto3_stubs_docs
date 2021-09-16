@@ -145,7 +145,7 @@ from mypy_boto3_iotsecuretunneling.type_defs import OpenTunnelRequestRequestType
 Optional fields:
 
 - `description`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `destinationConfig`:
   [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
 - `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
@@ -188,7 +188,7 @@ from mypy_boto3_iotsecuretunneling.type_defs import TagResourceRequestRequestTyp
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -258,4 +258,4 @@ from mypy_boto3_iotsecuretunneling.type_defs import UntagResourceRequestRequestT
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]

@@ -319,7 +319,7 @@ Optional fields:
 
 - `description`: `str`
 - `properties`:
-  `List`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
+  `Sequence`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
 
 ## AssetModelCompositeModelTypeDef
 
@@ -565,7 +565,7 @@ from mypy_boto3_iotsitewise.type_defs import BatchAssociateProjectAssetsRequestR
 Required fields:
 
 - `projectId`: `str`
-- `assetIds`: `List`\[`str`\]
+- `assetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -593,7 +593,7 @@ from mypy_boto3_iotsitewise.type_defs import BatchDisassociateProjectAssetsReque
 Required fields:
 
 - `projectId`: `str`
-- `assetIds`: `List`\[`str`\]
+- `assetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -647,7 +647,7 @@ from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyValueRequestRe
 Required fields:
 
 - `entries`:
-  `List`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
+  `Sequence`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
 
 ## BatchPutAssetPropertyValueResponseTypeDef
 
@@ -715,7 +715,7 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAccessPolicyResponseTypeDef
 
@@ -744,13 +744,13 @@ Optional fields:
 
 - `assetModelDescription`: `str`
 - `assetModelProperties`:
-  `List`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
+  `Sequence`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
 - `assetModelHierarchies`:
-  `List`\[[AssetModelHierarchyDefinitionTypeDef](./type_defs.md#assetmodelhierarchydefinitiontypedef)\]
+  `Sequence`\[[AssetModelHierarchyDefinitionTypeDef](./type_defs.md#assetmodelhierarchydefinitiontypedef)\]
 - `assetModelCompositeModels`:
-  `List`\[[AssetModelCompositeModelDefinitionTypeDef](./type_defs.md#assetmodelcompositemodeldefinitiontypedef)\]
+  `Sequence`\[[AssetModelCompositeModelDefinitionTypeDef](./type_defs.md#assetmodelcompositemodeldefinitiontypedef)\]
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAssetModelResponseTypeDef
 
@@ -781,7 +781,7 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateAssetResponseTypeDef
 
@@ -813,7 +813,7 @@ Optional fields:
 
 - `dashboardDescription`: `str`
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateDashboardResponseTypeDef
 
@@ -842,7 +842,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateGatewayResponseTypeDef
 
@@ -874,7 +874,7 @@ Optional fields:
 - `portalDescription`: `str`
 - `clientToken`: `str`
 - `portalLogoImageFile`: [ImageFileTypeDef](./type_defs.md#imagefiletypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `portalAuthMode`: [AuthModeType](./literals.md#authmodetype)
 - `notificationSenderEmail`: `str`
 - `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
@@ -910,7 +910,7 @@ Optional fields:
 
 - `projectDescription`: `str`
 - `clientToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateProjectResponseTypeDef
 
@@ -1521,7 +1521,7 @@ from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyAggregatesRequestRe
 Required fields:
 
 - `aggregateTypes`:
-  `List`\[[AggregateTypeType](./literals.md#aggregatetypetype)\]
+  `Sequence`\[[AggregateTypeType](./literals.md#aggregatetypetype)\]
 - `resolution`: `str`
 - `startDate`: `Union`\[`datetime`, `str`\]
 - `endDate`: `Union`\[`datetime`, `str`\]
@@ -1531,7 +1531,7 @@ Optional fields:
 - `assetId`: `str`
 - `propertyId`: `str`
 - `propertyAlias`: `str`
-- `qualities`: `List`\[[QualityType](./literals.md#qualitytype)\]
+- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
 - `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -1563,7 +1563,7 @@ Optional fields:
 - `propertyAlias`: `str`
 - `startDate`: `Union`\[`datetime`, `str`\]
 - `endDate`: `Union`\[`datetime`, `str`\]
-- `qualities`: `List`\[[QualityType](./literals.md#qualitytype)\]
+- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
 - `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -2109,7 +2109,7 @@ Required fields:
 
 - `expression`: `str`
 - `variables`:
-  `List`\[[ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef)\]
+  `Sequence`\[[ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef)\]
 - `window`: [MetricWindowTypeDef](./type_defs.md#metricwindowtypedef)
 
 Optional fields:
@@ -2288,7 +2288,7 @@ Required fields:
 
 - `entryId`: `str`
 - `propertyValues`:
-  `List`\[[AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)\]
+  `Sequence`\[[AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)\]
 
 Optional fields:
 
@@ -2401,7 +2401,7 @@ from mypy_boto3_iotsitewise.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TimeInNanosTypeDef
 
@@ -2442,7 +2442,7 @@ Required fields:
 
 - `expression`: `str`
 - `variables`:
-  `List`\[[ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef)\]
+  `Sequence`\[[ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef)\]
 
 Optional fields:
 
@@ -2472,7 +2472,7 @@ from mypy_boto3_iotsitewise.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAccessPolicyRequestRequestTypeDef
 
@@ -2506,11 +2506,11 @@ Optional fields:
 
 - `assetModelDescription`: `str`
 - `assetModelProperties`:
-  `List`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
+  `Sequence`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
 - `assetModelHierarchies`:
-  `List`\[[AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef)\]
+  `Sequence`\[[AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef)\]
 - `assetModelCompositeModels`:
-  `List`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
+  `Sequence`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
 - `clientToken`: `str`
 
 ## UpdateAssetModelResponseTypeDef

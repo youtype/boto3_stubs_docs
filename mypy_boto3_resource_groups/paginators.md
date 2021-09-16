@@ -34,7 +34,7 @@ Arguments for `ListGroupResourcesPaginator.paginate` method:
 - `GroupName`: `str`
 - `Group`: `str`
 - `Filters`:
-  `List`\[[ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef)\]
+  `Sequence`\[[ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -60,7 +60,8 @@ Boto3 documentation:
 
 Arguments for `ListGroupsPaginator.paginate` method:
 
-- `Filters`: `List`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
+- `Filters`:
+  `Sequence`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

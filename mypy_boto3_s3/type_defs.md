@@ -449,7 +449,7 @@ from mypy_boto3_s3.type_defs import AccessControlPolicyTypeDef
 
 Optional fields:
 
-- `Grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
+- `Grants`: `Sequence`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 
 ## AccessControlTranslationTypeDef
@@ -592,7 +592,7 @@ from mypy_boto3_s3.type_defs import BucketLifecycleConfigurationTypeDef
 Required fields:
 
 - `Rules`:
-  `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
+  `Sequence`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
 
 ## BucketLoggingStatusTypeDef
 
@@ -668,7 +668,7 @@ from mypy_boto3_s3.type_defs import CORSConfigurationTypeDef
 
 Required fields:
 
-- `CORSRules`: `List`\[[CORSRuleTypeDef](./type_defs.md#corsruletypedef)\]
+- `CORSRules`: `Sequence`\[[CORSRuleTypeDef](./type_defs.md#corsruletypedef)\]
 
 ## CORSRuleTypeDef
 
@@ -916,7 +916,7 @@ from mypy_boto3_s3.type_defs import CompletedMultipartUploadTypeDef
 Optional fields:
 
 - `Parts`:
-  `List`\[[CompletedPartTypeDef](./type_defs.md#completedparttypedef)\]
+  `Sequence`\[[CompletedPartTypeDef](./type_defs.md#completedparttypedef)\]
 
 ## CompletedPartTypeDef
 
@@ -992,7 +992,7 @@ Optional fields:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `MetadataDirective`:
   [MetadataDirectiveType](./literals.md#metadatadirectivetype)
 - `TaggingDirective`:
@@ -1047,7 +1047,7 @@ Optional fields:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `MetadataDirective`:
   [MetadataDirectiveType](./literals.md#metadatadirectivetype)
 - `TaggingDirective`:
@@ -1105,7 +1105,7 @@ Optional fields:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `MetadataDirective`:
   [MetadataDirectiveType](./literals.md#metadatadirectivetype)
 - `TaggingDirective`:
@@ -1299,7 +1299,7 @@ Optional fields:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -1338,7 +1338,7 @@ Optional fields:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -1382,7 +1382,7 @@ Optional fields:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -1875,7 +1875,7 @@ from mypy_boto3_s3.type_defs import DeleteTypeDef
 Required fields:
 
 - `Objects`:
-  `List`\[[ObjectIdentifierTypeDef](./type_defs.md#objectidentifiertypedef)\]
+  `Sequence`\[[ObjectIdentifierTypeDef](./type_defs.md#objectidentifiertypedef)\]
 
 Optional fields:
 
@@ -3091,7 +3091,7 @@ Optional fields:
 - `CSV`: [CSVInputTypeDef](./type_defs.md#csvinputtypedef)
 - `CompressionType`: [CompressionTypeType](./literals.md#compressiontypetype)
 - `JSON`: [JSONInputTypeDef](./type_defs.md#jsoninputtypedef)
-- `Parquet`: `Dict`\[`str`, `Any`\]
+- `Parquet`: `Mapping`\[`str`, `Any`\]
 
 ## IntelligentTieringAndOperatorTypeDef
 
@@ -3263,7 +3263,7 @@ from mypy_boto3_s3.type_defs import LifecycleConfigurationTypeDef
 
 Required fields:
 
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 
 ## LifecycleExpirationTypeDef
 
@@ -3737,6 +3737,7 @@ Optional fields:
 
 - `Prefix`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `AccessPointArn`: `str`
 
 ## MetricsConfigurationTypeDef
 
@@ -3762,6 +3763,7 @@ Optional fields:
 
 - `Prefix`: `str`
 - `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
+- `AccessPointArn`: `str`
 - `And`: [MetricsAndOperatorTypeDef](./type_defs.md#metricsandoperatortypedef)
 
 ## MetricsTypeDef
@@ -3894,11 +3896,11 @@ from mypy_boto3_s3.type_defs import NotificationConfigurationTypeDef
 Optional fields:
 
 - `TopicConfigurations`:
-  `List`\[[TopicConfigurationTypeDef](./type_defs.md#topicconfigurationtypedef)\]
+  `Sequence`\[[TopicConfigurationTypeDef](./type_defs.md#topicconfigurationtypedef)\]
 - `QueueConfigurations`:
-  `List`\[[QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef)\]
+  `Sequence`\[[QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef)\]
 - `LambdaFunctionConfigurations`:
-  `List`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
+  `Sequence`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
 
 ## ObjectCopyRequestTypeDef
 
@@ -4905,7 +4907,7 @@ Optional fields:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -4947,7 +4949,7 @@ Optional fields:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -4989,7 +4991,7 @@ Optional fields:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -5036,7 +5038,7 @@ Optional fields:
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
 - `GrantWriteACP`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
@@ -5486,10 +5488,11 @@ Optional fields:
 
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 - `CannedACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `AccessControlList`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
+- `AccessControlList`:
+  `Sequence`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef)
 - `UserMetadata`:
-  `List`\[[MetadataEntryTypeDef](./type_defs.md#metadataentrytypedef)\]
+  `Sequence`\[[MetadataEntryTypeDef](./type_defs.md#metadataentrytypedef)\]
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 
 ## SSEKMSTypeDef
@@ -5901,7 +5904,7 @@ from mypy_boto3_s3.type_defs import TaggingTypeDef
 
 Required fields:
 
-- `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `TagSet`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TargetGrantTypeDef
 
@@ -6152,7 +6155,7 @@ Optional fields:
 - `RedirectAllRequestsTo`:
   [RedirectAllRequestsToTypeDef](./type_defs.md#redirectallrequeststotypedef)
 - `RoutingRules`:
-  `List`\[[RoutingRuleTypeDef](./type_defs.md#routingruletypedef)\]
+  `Sequence`\[[RoutingRuleTypeDef](./type_defs.md#routingruletypedef)\]
 
 ## WriteGetObjectResponseRequestRequestTypeDef
 
@@ -6185,7 +6188,7 @@ Optional fields:
 - `Expiration`: `str`
 - `LastModified`: `Union`\[`datetime`, `str`\]
 - `MissingMeta`: `int`
-- `Metadata`: `Dict`\[`str`, `str`\]
+- `Metadata`: `Mapping`\[`str`, `str`\]
 - `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
 - `ObjectLockLegalHoldStatus`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)

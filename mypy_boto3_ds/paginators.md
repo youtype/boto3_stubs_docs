@@ -37,7 +37,7 @@ Boto3 documentation:
 
 Arguments for `DescribeDirectoriesPaginator.paginate` method:
 
-- `DirectoryIds`: `List`\[`str`\]
+- `DirectoryIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -64,7 +64,7 @@ Boto3 documentation:
 Arguments for `DescribeDomainControllersPaginator.paginate` method:
 
 - `DirectoryId`: `str` *(required)*
-- `DomainControllerIds`: `List`\[`str`\]
+- `DomainControllerIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -91,7 +91,7 @@ Boto3 documentation:
 Arguments for `DescribeSharedDirectoriesPaginator.paginate` method:
 
 - `OwnerDirectoryId`: `str` *(required)*
-- `SharedDirectoryIds`: `List`\[`str`\]
+- `SharedDirectoryIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -117,7 +117,7 @@ Boto3 documentation:
 Arguments for `DescribeSnapshotsPaginator.paginate` method:
 
 - `DirectoryId`: `str`
-- `SnapshotIds`: `List`\[`str`\]
+- `SnapshotIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -143,7 +143,7 @@ Boto3 documentation:
 Arguments for `DescribeTrustsPaginator.paginate` method:
 
 - `DirectoryId`: `str`
-- `TrustIds`: `List`\[`str`\]
+- `TrustIds`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

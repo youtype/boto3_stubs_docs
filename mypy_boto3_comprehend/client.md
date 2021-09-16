@@ -153,7 +153,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TextList`: `List`\[`str`\] *(required)*
+- `TextList`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDetectDominantLanguageResponseTypeDef](./type_defs.md#batchdetectdominantlanguageresponsetypedef).
@@ -173,7 +173,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TextList`: `List`\[`str`\] *(required)*
+- `TextList`: `Sequence`\[`str`\] *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
 
@@ -195,7 +195,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TextList`: `List`\[`str`\] *(required)*
+- `TextList`: `Sequence`\[`str`\] *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
 
@@ -218,7 +218,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TextList`: `List`\[`str`\] *(required)*
+- `TextList`: `Sequence`\[`str`\] *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
 
@@ -240,7 +240,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TextList`: `List`\[`str`\] *(required)*
+- `TextList`: `Sequence`\[`str`\] *(required)*
 - `LanguageCode`:
   [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype) *(required)*
 
@@ -328,7 +328,7 @@ Keyword-only arguments:
   *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OutputDataConfig`:
   [DocumentClassifierOutputDataConfigTypeDef](./type_defs.md#documentclassifieroutputdataconfigtypedef)
 - `ClientRequestToken`: `str`
@@ -362,7 +362,7 @@ Keyword-only arguments:
 - `ModelArn`: `str` *(required)*
 - `DesiredInferenceUnits`: `int` *(required)*
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DataAccessRoleArn`: `str`
 
 Returns
@@ -390,7 +390,7 @@ Keyword-only arguments:
   *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
@@ -816,7 +816,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1120,7 +1120,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartDocumentClassificationJobResponseTypeDef](./type_defs.md#startdocumentclassificationjobresponsetypedef).
@@ -1151,7 +1151,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartDominantLanguageDetectionJobResponseTypeDef](./type_defs.md#startdominantlanguagedetectionjobresponsetypedef).
@@ -1184,7 +1184,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartEntitiesDetectionJobResponseTypeDef](./type_defs.md#startentitiesdetectionjobresponsetypedef).
@@ -1212,10 +1212,10 @@ Keyword-only arguments:
 - `DataAccessRoleArn`: `str` *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
-- `TargetEventTypes`: `List`\[`str`\] *(required)*
+- `TargetEventTypes`: `Sequence`\[`str`\] *(required)*
 - `JobName`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartEventsDetectionJobResponseTypeDef](./type_defs.md#starteventsdetectionjobresponsetypedef).
@@ -1247,7 +1247,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartKeyPhrasesDetectionJobResponseTypeDef](./type_defs.md#startkeyphrasesdetectionjobresponsetypedef).
@@ -1282,7 +1282,7 @@ Keyword-only arguments:
   [RedactionConfigTypeDef](./type_defs.md#redactionconfigtypedef)
 - `JobName`: `str`
 - `ClientRequestToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartPiiEntitiesDetectionJobResponseTypeDef](./type_defs.md#startpiientitiesdetectionjobresponsetypedef).
@@ -1314,7 +1314,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartSentimentDetectionJobResponseTypeDef](./type_defs.md#startsentimentdetectionjobresponsetypedef).
@@ -1345,7 +1345,7 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [StartTopicsDetectionJobResponseTypeDef](./type_defs.md#starttopicsdetectionjobresponsetypedef).
@@ -1523,7 +1523,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1542,7 +1542,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

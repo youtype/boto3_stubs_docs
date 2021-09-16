@@ -134,7 +134,7 @@ Optional fields:
 - `HomeDirectoryType`:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 
@@ -170,9 +170,9 @@ Optional fields:
 - `IdentityProviderType`:
   [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `LoggingRole`: `str`
-- `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
+- `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `WorkflowDetails`:
   [WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef)
 
@@ -206,11 +206,11 @@ Optional fields:
 - `HomeDirectoryType`:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `SshPublicKeyBody`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateUserResponseTypeDef
 
@@ -233,14 +233,15 @@ from mypy_boto3_transfer.type_defs import CreateWorkflowRequestRequestTypeDef
 
 Required fields:
 
-- `Steps`: `List`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
+- `Steps`:
+  `Sequence`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
 
 Optional fields:
 
 - `Description`: `str`
 - `OnExceptionSteps`:
-  `List`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+  `Sequence`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateWorkflowResponseTypeDef
 
@@ -624,11 +625,11 @@ from mypy_boto3_transfer.type_defs import EndpointDetailsTypeDef
 
 Optional fields:
 
-- `AddressAllocationIds`: `List`\[`str`\]
-- `SubnetIds`: `List`\[`str`\]
+- `AddressAllocationIds`: `Sequence`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 - `VpcEndpointId`: `str`
 - `VpcId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## ExecutionErrorTypeDef
 
@@ -1051,7 +1052,7 @@ Required fields:
 
 Optional fields:
 
-- `SecondaryGids`: `List`\[`int`\]
+- `SecondaryGids`: `Sequence`\[`int`\]
 
 ## ProtocolDetailsTypeDef
 
@@ -1176,7 +1177,7 @@ from mypy_boto3_transfer.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagStepDetailsTypeDef
 
@@ -1187,7 +1188,7 @@ from mypy_boto3_transfer.type_defs import TagStepDetailsTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `Tags`: `List`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+- `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1241,7 +1242,7 @@ from mypy_boto3_transfer.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `Arn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateAccessRequestRequestTypeDef
 
@@ -1260,7 +1261,7 @@ Optional fields:
 - `HomeDirectoryType`:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`
@@ -1300,7 +1301,7 @@ Optional fields:
 - `IdentityProviderDetails`:
   [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
 - `LoggingRole`: `str`
-- `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
+- `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
 - `WorkflowDetails`:
   [WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef)
@@ -1334,7 +1335,7 @@ Optional fields:
 - `HomeDirectoryType`:
   [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - `HomeDirectoryMappings`:
-  `List`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
+  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
 - `Policy`: `str`
 - `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
 - `Role`: `str`
@@ -1387,7 +1388,7 @@ from mypy_boto3_transfer.type_defs import WorkflowDetailsTypeDef
 Required fields:
 
 - `OnUpload`:
-  `List`\[[WorkflowDetailTypeDef](./type_defs.md#workflowdetailtypedef)\]
+  `Sequence`\[[WorkflowDetailTypeDef](./type_defs.md#workflowdetailtypedef)\]
 
 ## WorkflowStepTypeDef
 

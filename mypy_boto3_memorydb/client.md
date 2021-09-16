@@ -158,7 +158,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ClusterNames`: `List`\[`str`\] *(required)*
+- `ClusterNames`: `Sequence`\[`str`\] *(required)*
 - `ServiceUpdate`:
   [ServiceUpdateRequestTypeDef](./type_defs.md#serviceupdaterequesttypedef)
 
@@ -198,7 +198,7 @@ Keyword-only arguments:
 - `TargetSnapshotName`: `str` *(required)*
 - `TargetBucket`: `str`
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CopySnapshotResponseTypeDef](./type_defs.md#copysnapshotresponsetypedef).
@@ -218,8 +218,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ACLName`: `str` *(required)*
-- `UserNames`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `UserNames`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateACLResponseTypeDef](./type_defs.md#createaclresponsetypedef).
 
@@ -245,16 +245,16 @@ Keyword-only arguments:
 - `NumShards`: `int`
 - `NumReplicasPerShard`: `int`
 - `SubnetGroupName`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `MaintenanceWindow`: `str`
 - `Port`: `int`
 - `SnsTopicArn`: `str`
 - `TLSEnabled`: `bool`
 - `KmsKeyId`: `str`
-- `SnapshotArns`: `List`\[`str`\]
+- `SnapshotArns`: `Sequence`\[`str`\]
 - `SnapshotName`: `str`
 - `SnapshotRetentionLimit`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SnapshotWindow`: `str`
 - `EngineVersion`: `str`
 - `AutoMinorVersionUpgrade`: `bool`
@@ -279,7 +279,7 @@ Keyword-only arguments:
 - `ParameterGroupName`: `str` *(required)*
 - `Family`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateParameterGroupResponseTypeDef](./type_defs.md#createparametergroupresponsetypedef).
@@ -301,7 +301,7 @@ Keyword-only arguments:
 - `ClusterName`: `str` *(required)*
 - `SnapshotName`: `str` *(required)*
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSnapshotResponseTypeDef](./type_defs.md#createsnapshotresponsetypedef).
@@ -321,9 +321,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SubnetGroupName`: `str` *(required)*
-- `SubnetIds`: `List`\[`str`\] *(required)*
+- `SubnetIds`: `Sequence`\[`str`\] *(required)*
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateSubnetGroupResponseTypeDef](./type_defs.md#createsubnetgroupresponsetypedef).
@@ -347,7 +347,7 @@ Keyword-only arguments:
   [AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef)
   *(required)*
 - `AccessString`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
@@ -622,9 +622,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServiceUpdateName`: `str`
-- `ClusterNames`: `List`\[`str`\]
+- `ClusterNames`: `Sequence`\[`str`\]
 - `Status`:
-  `List`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
+  `Sequence`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -691,7 +691,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `UserName`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -733,7 +733,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -795,7 +795,7 @@ Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 - `AllParameters`: `bool`
-- `ParameterNames`: `List`\[`str`\]
+- `ParameterNames`: `Sequence`\[`str`\]
 
 Returns
 [ResetParameterGroupResponseTypeDef](./type_defs.md#resetparametergroupresponsetypedef).
@@ -815,7 +815,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns
 [TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef).
@@ -838,7 +838,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef).
@@ -858,8 +858,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ACLName`: `str` *(required)*
-- `UserNamesToAdd`: `List`\[`str`\]
-- `UserNamesToRemove`: `List`\[`str`\]
+- `UserNamesToAdd`: `Sequence`\[`str`\]
+- `UserNamesToRemove`: `Sequence`\[`str`\]
 
 Returns [UpdateACLResponseTypeDef](./type_defs.md#updateaclresponsetypedef).
 
@@ -879,7 +879,7 @@ Keyword-only arguments:
 
 - `ClusterName`: `str` *(required)*
 - `Description`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `MaintenanceWindow`: `str`
 - `SnsTopicArn`: `str`
 - `SnsTopicStatus`: `str`
@@ -913,7 +913,7 @@ Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 - `ParameterNameValues`:
-  `List`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
+  `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
   *(required)*
 
 Returns
@@ -935,7 +935,7 @@ Keyword-only arguments:
 
 - `SubnetGroupName`: `str` *(required)*
 - `Description`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Returns
 [UpdateSubnetGroupResponseTypeDef](./type_defs.md#updatesubnetgroupresponsetypedef).

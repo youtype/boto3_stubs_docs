@@ -244,7 +244,8 @@ Optional fields:
 
 - `Value`: `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`, `bool`,
   `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]
+  `Set`\[`bytearray`\], `Sequence`\[`Any`\], `Mapping`\[`str`, `Any`\],
+  `None`\]
 - `Action`: [AttributeActionType](./literals.md#attributeactiontype)
 
 ## AutoScalingPolicyDescriptionTypeDef
@@ -397,7 +398,7 @@ from mypy_boto3_dynamodb.type_defs import BatchExecuteStatementInputRequestTypeD
 Required fields:
 
 - `Statements`:
-  `List`\[[BatchStatementRequestTypeDef](./type_defs.md#batchstatementrequesttypedef)\]
+  `Sequence`\[[BatchStatementRequestTypeDef](./type_defs.md#batchstatementrequesttypedef)\]
 
 ## BatchExecuteStatementOutputTypeDef
 
@@ -420,7 +421,7 @@ from mypy_boto3_dynamodb.type_defs import BatchGetItemInputRequestTypeDef
 
 Required fields:
 
-- `RequestItems`: `Dict`\[`str`,
+- `RequestItems`: `Mapping`\[`str`,
   [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
 
 Optional fields:
@@ -436,7 +437,7 @@ from mypy_boto3_dynamodb.type_defs import BatchGetItemInputServiceResourceTypeDe
 
 Required fields:
 
-- `RequestItems`: `Dict`\[`str`,
+- `RequestItems`: `Mapping`\[`str`,
   [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
 
 Optional fields:
@@ -455,7 +456,7 @@ Required fields:
 - `Responses`: `Dict`\[`str`, `List`\[`Dict`\[`str`, `Union`\[`bytes`,
   `bytearray`, `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\],
   `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\],
-  `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]\]\]
+  `Sequence`\[`Any`\], `Mapping`\[`str`, `Any`\], `None`\]\]\]\]
 - `UnprocessedKeys`: `Dict`\[`str`,
   [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
 - `ConsumedCapacity`:
@@ -487,9 +488,10 @@ Required fields:
 
 Optional fields:
 
-- `Parameters`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Parameters`: `Sequence`\[`Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 
 ## BatchStatementResponseTypeDef
@@ -505,8 +507,8 @@ Optional fields:
 - `TableName`: `str`
 - `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## BatchWriteItemInputRequestTypeDef
 
@@ -516,8 +518,8 @@ from mypy_boto3_dynamodb.type_defs import BatchWriteItemInputRequestTypeDef
 
 Required fields:
 
-- `RequestItems`: `Dict`\[`str`,
-  `List`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
+- `RequestItems`: `Mapping`\[`str`,
+  `Sequence`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
 
 Optional fields:
 
@@ -534,8 +536,8 @@ from mypy_boto3_dynamodb.type_defs import BatchWriteItemInputServiceResourceType
 
 Required fields:
 
-- `RequestItems`: `Dict`\[`str`,
-  `List`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
+- `RequestItems`: `Mapping`\[`str`,
+  `Sequence`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
 
 Optional fields:
 
@@ -592,19 +594,20 @@ from mypy_boto3_dynamodb.type_defs import ConditionCheckTypeDef
 
 Required fields:
 
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `TableName`: `str`
 - `ConditionExpression`: `str`
 
 Optional fields:
 
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ReturnValuesOnConditionCheckFailure`:
   [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 
@@ -621,10 +624,10 @@ Required fields:
 
 Optional fields:
 
-- `AttributeValueList`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+- `AttributeValueList`: `Sequence`\[`Union`\[`bytes`, `bytearray`, `str`,
+  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## ConsumedCapacityTypeDef
 
@@ -706,7 +709,7 @@ Required fields:
 
 - `IndexName`: `str`
 - `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
+  `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
 - `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
 
 Optional fields:
@@ -723,7 +726,8 @@ from mypy_boto3_dynamodb.type_defs import CreateGlobalTableInputRequestTypeDef
 Required fields:
 
 - `GlobalTableName`: `str`
-- `ReplicationGroup`: `List`\[[ReplicaTypeDef](./type_defs.md#replicatypedef)\]
+- `ReplicationGroup`:
+  `Sequence`\[[ReplicaTypeDef](./type_defs.md#replicatypedef)\]
 
 ## CreateGlobalTableOutputTypeDef
 
@@ -764,7 +768,7 @@ Optional fields:
 - `ProvisionedThroughputOverride`:
   [ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef)
 - `GlobalSecondaryIndexes`:
-  `List`\[[ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef)\]
+  `Sequence`\[[ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef)\]
 
 ## CreateTableInputRequestTypeDef
 
@@ -775,17 +779,17 @@ from mypy_boto3_dynamodb.type_defs import CreateTableInputRequestTypeDef
 Required fields:
 
 - `AttributeDefinitions`:
-  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
+  `Sequence`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
 - `TableName`: `str`
 - `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
+  `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
 
 Optional fields:
 
 - `LocalSecondaryIndexes`:
-  `List`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
+  `Sequence`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
 - `GlobalSecondaryIndexes`:
-  `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
+  `Sequence`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
 - `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
@@ -793,7 +797,7 @@ Optional fields:
   [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
 - `SSESpecification`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateTableInputServiceResourceTypeDef
 
@@ -804,17 +808,17 @@ from mypy_boto3_dynamodb.type_defs import CreateTableInputServiceResourceTypeDef
 Required fields:
 
 - `AttributeDefinitions`:
-  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
+  `Sequence`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
 - `TableName`: `str`
 - `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
+  `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
 
 Optional fields:
 
 - `LocalSecondaryIndexes`:
-  `List`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
+  `Sequence`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
 - `GlobalSecondaryIndexes`:
-  `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
+  `Sequence`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
 - `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
@@ -822,7 +826,7 @@ Optional fields:
   [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
 - `SSESpecification`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateTableOutputTypeDef
 
@@ -879,13 +883,14 @@ from mypy_boto3_dynamodb.type_defs import DeleteItemInputRequestTypeDef
 Required fields:
 
 - `TableName`: `str`
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Optional fields:
 
-- `Expected`: `Dict`\[`str`,
+- `Expected`: `Mapping`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
@@ -895,11 +900,11 @@ Optional fields:
 - `ReturnItemCollectionMetrics`:
   [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 - `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## DeleteItemInputTableTypeDef
 
@@ -909,13 +914,14 @@ from mypy_boto3_dynamodb.type_defs import DeleteItemInputTableTypeDef
 
 Required fields:
 
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Optional fields:
 
-- `Expected`: `Dict`\[`str`,
+- `Expected`: `Mapping`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
@@ -925,11 +931,11 @@ Optional fields:
 - `ReturnItemCollectionMetrics`:
   [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 - `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## DeleteItemOutputTypeDef
 
@@ -941,8 +947,8 @@ Required fields:
 
 - `Attributes`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsumedCapacity`:
   [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
 - `ItemCollectionMetrics`:
@@ -978,9 +984,10 @@ from mypy_boto3_dynamodb.type_defs import DeleteRequestTypeDef
 
 Required fields:
 
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## DeleteTableInputRequestTypeDef
 
@@ -1013,19 +1020,20 @@ from mypy_boto3_dynamodb.type_defs import DeleteTypeDef
 
 Required fields:
 
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `TableName`: `str`
 
 Optional fields:
 
 - `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ReturnValuesOnConditionCheckFailure`:
   [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 
@@ -1320,9 +1328,10 @@ Required fields:
 
 Optional fields:
 
-- `Parameters`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Parameters`: `Sequence`\[`Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 - `NextToken`: `str`
 
@@ -1336,8 +1345,8 @@ Required fields:
 
 - `Items`: `List`\[`Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1351,7 +1360,7 @@ from mypy_boto3_dynamodb.type_defs import ExecuteTransactionInputRequestTypeDef
 Required fields:
 
 - `TransactStatements`:
-  `List`\[[ParameterizedStatementTypeDef](./type_defs.md#parameterizedstatementtypedef)\]
+  `Sequence`\[[ParameterizedStatementTypeDef](./type_defs.md#parameterizedstatementtypedef)\]
 
 Optional fields:
 
@@ -1380,14 +1389,15 @@ Optional fields:
 
 - `Value`: `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`, `bool`,
   `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]
+  `Set`\[`bytearray`\], `Sequence`\[`Any`\], `Mapping`\[`str`, `Any`\],
+  `None`\]
 - `Exists`: `bool`
 - `ComparisonOperator`:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype)
-- `AttributeValueList`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+- `AttributeValueList`: `Sequence`\[`Union`\[`bytes`, `bytearray`, `str`,
+  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## ExportDescriptionTypeDef
 
@@ -1482,18 +1492,19 @@ from mypy_boto3_dynamodb.type_defs import GetItemInputRequestTypeDef
 Required fields:
 
 - `TableName`: `str`
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Optional fields:
 
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `ConsistentRead`: `bool`
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ProjectionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
 
 ## GetItemInputTableTypeDef
 
@@ -1503,18 +1514,19 @@ from mypy_boto3_dynamodb.type_defs import GetItemInputTableTypeDef
 
 Required fields:
 
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Optional fields:
 
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `ConsistentRead`: `bool`
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ProjectionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
 
 ## GetItemOutputTypeDef
 
@@ -1526,8 +1538,8 @@ Required fields:
 
 - `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsumedCapacity`:
   [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
 - `ResponseMetadata`:
@@ -1541,15 +1553,16 @@ from mypy_boto3_dynamodb.type_defs import GetTypeDef
 
 Required fields:
 
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `TableName`: `str`
 
 Optional fields:
 
 - `ProjectionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
 
 ## GlobalSecondaryIndexAutoScalingUpdateTypeDef
 
@@ -1608,7 +1621,7 @@ Required fields:
 
 - `IndexName`: `str`
 - `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
+  `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
 - `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
 
 Optional fields:
@@ -1684,8 +1697,8 @@ Optional fields:
 
 - `ItemCollectionKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `SizeEstimateRangeGB`: `List`\[`float`\]
 
 ## ItemResponseTypeDef
@@ -1698,8 +1711,8 @@ Optional fields:
 
 - `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## KeySchemaElementTypeDef
 
@@ -1720,17 +1733,17 @@ from mypy_boto3_dynamodb.type_defs import KeysAndAttributesTypeDef
 
 Required fields:
 
-- `Keys`: `List`\[`Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]\]
+- `Keys`: `Sequence`\[`Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]\]
 
 Optional fields:
 
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `ConsistentRead`: `bool`
 - `ProjectionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
 
 ## KinesisDataStreamDestinationTypeDef
 
@@ -1968,7 +1981,7 @@ Required fields:
 
 - `IndexName`: `str`
 - `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
+  `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
 - `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
 
 ## PaginatorConfigTypeDef
@@ -1995,9 +2008,10 @@ Required fields:
 
 Optional fields:
 
-- `Parameters`: `List`\[`Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Parameters`: `Sequence`\[`Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## PointInTimeRecoveryDescriptionTypeDef
 
@@ -2031,7 +2045,7 @@ from mypy_boto3_dynamodb.type_defs import ProjectionTypeDef
 Optional fields:
 
 - `ProjectionType`: [ProjectionTypeType](./literals.md#projectiontypetype)
-- `NonKeyAttributes`: `List`\[`str`\]
+- `NonKeyAttributes`: `Sequence`\[`str`\]
 
 ## ProvisionedThroughputDescriptionTypeDef
 
@@ -2077,14 +2091,14 @@ from mypy_boto3_dynamodb.type_defs import PutItemInputRequestTypeDef
 Required fields:
 
 - `TableName`: `str`
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+- `Item`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Optional fields:
 
-- `Expected`: `Dict`\[`str`,
+- `Expected`: `Mapping`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
 - `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
 - `ReturnConsumedCapacity`:
@@ -2094,11 +2108,11 @@ Optional fields:
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## PutItemInputTableTypeDef
 
@@ -2108,14 +2122,14 @@ from mypy_boto3_dynamodb.type_defs import PutItemInputTableTypeDef
 
 Required fields:
 
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+- `Item`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Optional fields:
 
-- `Expected`: `Dict`\[`str`,
+- `Expected`: `Mapping`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
 - `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
 - `ReturnConsumedCapacity`:
@@ -2125,11 +2139,11 @@ Optional fields:
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## PutItemOutputTypeDef
 
@@ -2141,8 +2155,8 @@ Required fields:
 
 - `Attributes`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsumedCapacity`:
   [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
 - `ItemCollectionMetrics`:
@@ -2158,10 +2172,10 @@ from mypy_boto3_dynamodb.type_defs import PutRequestTypeDef
 
 Required fields:
 
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+- `Item`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## PutTypeDef
 
@@ -2171,20 +2185,20 @@ from mypy_boto3_dynamodb.type_defs import PutTypeDef
 
 Required fields:
 
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+- `Item`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `TableName`: `str`
 
 Optional fields:
 
 - `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ReturnValuesOnConditionCheckFailure`:
   [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 
@@ -2202,30 +2216,30 @@ Optional fields:
 
 - `IndexName`: `str`
 - `Select`: [SelectType](./literals.md#selecttype)
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `ConsistentRead`: `bool`
-- `KeyConditions`: `Dict`\[`str`,
+- `KeyConditions`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `QueryFilter`: `Dict`\[`str`,
+- `QueryFilter`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ScanIndexForward`: `bool`
-- `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+- `ExclusiveStartKey`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ProjectionExpression`: `str`
 - `FilterExpression`: `str`
 - `KeyConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## QueryInputTableTypeDef
 
@@ -2237,30 +2251,30 @@ Optional fields:
 
 - `IndexName`: `str`
 - `Select`: [SelectType](./literals.md#selecttype)
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `ConsistentRead`: `bool`
-- `KeyConditions`: `Dict`\[`str`,
+- `KeyConditions`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `QueryFilter`: `Dict`\[`str`,
+- `QueryFilter`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
 - `ScanIndexForward`: `bool`
-- `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+- `ExclusiveStartKey`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `ProjectionExpression`: `str`
 - `FilterExpression`: `Union`\[`str`, `ConditionBase`\]
 - `KeyConditionExpression`: `Union`\[`str`, `ConditionBase`\]
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## QueryOutputTypeDef
 
@@ -2272,14 +2286,14 @@ Required fields:
 
 - `Items`: `List`\[`Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]\]
 - `Count`: `int`
 - `ScannedCount`: `int`
 - `LastEvaluatedKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsumedCapacity`:
   [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
 - `ResponseMetadata`:
@@ -2315,7 +2329,7 @@ Required fields:
 Optional fields:
 
 - `ReplicaGlobalSecondaryIndexUpdates`:
-  `List`\[[ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef](./type_defs.md#replicaglobalsecondaryindexautoscalingupdatetypedef)\]
+  `Sequence`\[[ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef](./type_defs.md#replicaglobalsecondaryindexautoscalingupdatetypedef)\]
 - `ReplicaProvisionedReadCapacityAutoScalingUpdate`:
   [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
 
@@ -2468,7 +2482,7 @@ Optional fields:
 - `ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate`:
   [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
 - `ReplicaGlobalSecondaryIndexSettingsUpdate`:
-  `List`\[[ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef](./type_defs.md#replicaglobalsecondaryindexsettingsupdatetypedef)\]
+  `Sequence`\[[ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef](./type_defs.md#replicaglobalsecondaryindexsettingsupdatetypedef)\]
 
 ## ReplicaTypeDef
 
@@ -2553,9 +2567,9 @@ Optional fields:
 
 - `BillingModeOverride`: [BillingModeType](./literals.md#billingmodetype)
 - `GlobalSecondaryIndexOverride`:
-  `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
+  `Sequence`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
 - `LocalSecondaryIndexOverride`:
-  `List`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
+  `Sequence`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
 - `ProvisionedThroughputOverride`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `SSESpecificationOverride`:
@@ -2592,9 +2606,9 @@ Optional fields:
 - `RestoreDateTime`: `Union`\[`datetime`, `str`\]
 - `BillingModeOverride`: [BillingModeType](./literals.md#billingmodetype)
 - `GlobalSecondaryIndexOverride`:
-  `List`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
+  `Sequence`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
 - `LocalSecondaryIndexOverride`:
-  `List`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
+  `Sequence`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
 - `ProvisionedThroughputOverride`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `SSESpecificationOverride`:
@@ -2651,28 +2665,28 @@ Required fields:
 Optional fields:
 
 - `IndexName`: `str`
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `Select`: [SelectType](./literals.md#selecttype)
-- `ScanFilter`: `Dict`\[`str`,
+- `ScanFilter`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+- `ExclusiveStartKey`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `TotalSegments`: `int`
 - `Segment`: `int`
 - `ProjectionExpression`: `str`
 - `FilterExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 
 ## ScanInputTableTypeDef
@@ -2684,28 +2698,28 @@ from mypy_boto3_dynamodb.type_defs import ScanInputTableTypeDef
 Optional fields:
 
 - `IndexName`: `str`
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `Select`: [SelectType](./literals.md#selecttype)
-- `ScanFilter`: `Dict`\[`str`,
+- `ScanFilter`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ExclusiveStartKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
+- `ExclusiveStartKey`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 - `TotalSegments`: `int`
 - `Segment`: `int`
 - `ProjectionExpression`: `str`
 - `FilterExpression`: `Union`\[`str`, `ConditionBase`\]
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 
 ## ScanOutputTypeDef
@@ -2718,14 +2732,14 @@ Required fields:
 
 - `Items`: `List`\[`Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]\]
 - `Count`: `int`
 - `ScannedCount`: `int`
 - `LastEvaluatedKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsumedCapacity`:
   [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
 - `ResponseMetadata`:
@@ -2870,7 +2884,7 @@ from mypy_boto3_dynamodb.type_defs import TagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -2925,7 +2939,7 @@ from mypy_boto3_dynamodb.type_defs import TransactGetItemsInputRequestTypeDef
 Required fields:
 
 - `TransactItems`:
-  `List`\[[TransactGetItemTypeDef](./type_defs.md#transactgetitemtypedef)\]
+  `Sequence`\[[TransactGetItemTypeDef](./type_defs.md#transactgetitemtypedef)\]
 
 Optional fields:
 
@@ -2970,7 +2984,7 @@ from mypy_boto3_dynamodb.type_defs import TransactWriteItemsInputRequestTypeDef
 Required fields:
 
 - `TransactItems`:
-  `List`\[[TransactWriteItemTypeDef](./type_defs.md#transactwriteitemtypedef)\]
+  `Sequence`\[[TransactWriteItemTypeDef](./type_defs.md#transactwriteitemtypedef)\]
 
 Optional fields:
 
@@ -3004,7 +3018,7 @@ from mypy_boto3_dynamodb.type_defs import UntagResourceInputRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateContinuousBackupsInputRequestTypeDef
 
@@ -3084,7 +3098,7 @@ Required fields:
 
 - `GlobalTableName`: `str`
 - `ReplicaUpdates`:
-  `List`\[[ReplicaUpdateTypeDef](./type_defs.md#replicaupdatetypedef)\]
+  `Sequence`\[[ReplicaUpdateTypeDef](./type_defs.md#replicaupdatetypedef)\]
 
 ## UpdateGlobalTableOutputTypeDef
 
@@ -3116,9 +3130,9 @@ Optional fields:
 - `GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate`:
   [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
 - `GlobalTableGlobalSecondaryIndexSettingsUpdate`:
-  `List`\[[GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef](./type_defs.md#globaltableglobalsecondaryindexsettingsupdatetypedef)\]
+  `Sequence`\[[GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef](./type_defs.md#globaltableglobalsecondaryindexsettingsupdatetypedef)\]
 - `ReplicaSettingsUpdate`:
-  `List`\[[ReplicaSettingsUpdateTypeDef](./type_defs.md#replicasettingsupdatetypedef)\]
+  `Sequence`\[[ReplicaSettingsUpdateTypeDef](./type_defs.md#replicasettingsupdatetypedef)\]
 
 ## UpdateGlobalTableSettingsOutputTypeDef
 
@@ -3143,15 +3157,16 @@ from mypy_boto3_dynamodb.type_defs import UpdateItemInputRequestTypeDef
 Required fields:
 
 - `TableName`: `str`
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Optional fields:
 
-- `AttributeUpdates`: `Dict`\[`str`,
+- `AttributeUpdates`: `Mapping`\[`str`,
   [AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef)\]
-- `Expected`: `Dict`\[`str`,
+- `Expected`: `Mapping`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
@@ -3162,11 +3177,11 @@ Optional fields:
   [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 - `UpdateExpression`: `str`
 - `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## UpdateItemInputTableTypeDef
 
@@ -3176,15 +3191,16 @@ from mypy_boto3_dynamodb.type_defs import UpdateItemInputTableTypeDef
 
 Required fields:
 
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 Optional fields:
 
-- `AttributeUpdates`: `Dict`\[`str`,
+- `AttributeUpdates`: `Mapping`\[`str`,
   [AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef)\]
-- `Expected`: `Dict`\[`str`,
+- `Expected`: `Mapping`\[`str`,
   [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
@@ -3195,11 +3211,11 @@ Optional fields:
   [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 - `UpdateExpression`: `str`
 - `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 
 ## UpdateItemOutputTypeDef
 
@@ -3211,8 +3227,8 @@ Required fields:
 
 - `Attributes`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`,
-  `Any`\], `None`\]\]
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsumedCapacity`:
   [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
 - `ItemCollectionMetrics`:
@@ -3236,7 +3252,7 @@ Optional fields:
 - `ProvisionedThroughputOverride`:
   [ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef)
 - `GlobalSecondaryIndexes`:
-  `List`\[[ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef)\]
+  `Sequence`\[[ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef)\]
 
 ## UpdateTableInputRequestTypeDef
 
@@ -3251,18 +3267,18 @@ Required fields:
 Optional fields:
 
 - `AttributeDefinitions`:
-  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
+  `Sequence`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
 - `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `GlobalSecondaryIndexUpdates`:
-  `List`\[[GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef)\]
+  `Sequence`\[[GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef)\]
 - `StreamSpecification`:
   [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
 - `SSESpecification`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `ReplicaUpdates`:
-  `List`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
+  `Sequence`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
 
 ## UpdateTableInputTableTypeDef
 
@@ -3273,18 +3289,18 @@ from mypy_boto3_dynamodb.type_defs import UpdateTableInputTableTypeDef
 Optional fields:
 
 - `AttributeDefinitions`:
-  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
+  `Sequence`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
 - `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - `GlobalSecondaryIndexUpdates`:
-  `List`\[[GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef)\]
+  `Sequence`\[[GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef)\]
 - `StreamSpecification`:
   [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
 - `SSESpecification`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - `ReplicaUpdates`:
-  `List`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
+  `Sequence`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
 
 ## UpdateTableOutputTypeDef
 
@@ -3312,11 +3328,11 @@ Required fields:
 Optional fields:
 
 - `GlobalSecondaryIndexUpdates`:
-  `List`\[[GlobalSecondaryIndexAutoScalingUpdateTypeDef](./type_defs.md#globalsecondaryindexautoscalingupdatetypedef)\]
+  `Sequence`\[[GlobalSecondaryIndexAutoScalingUpdateTypeDef](./type_defs.md#globalsecondaryindexautoscalingupdatetypedef)\]
 - `ProvisionedWriteCapacityAutoScalingUpdate`:
   [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
 - `ReplicaUpdates`:
-  `List`\[[ReplicaAutoScalingUpdateTypeDef](./type_defs.md#replicaautoscalingupdatetypedef)\]
+  `Sequence`\[[ReplicaAutoScalingUpdateTypeDef](./type_defs.md#replicaautoscalingupdatetypedef)\]
 
 ## UpdateTableReplicaAutoScalingOutputTypeDef
 
@@ -3364,20 +3380,21 @@ from mypy_boto3_dynamodb.type_defs import UpdateTypeDef
 
 Required fields:
 
-- `Key`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`,
-  `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `List`\[`Any`\], `Dict`\[`str`, `Any`\], `None`\]\]
+- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
+  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
+  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `UpdateExpression`: `str`
 - `TableName`: `str`
 
 Optional fields:
 
 - `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ReturnValuesOnConditionCheckFailure`:
   [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 

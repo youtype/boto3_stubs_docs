@@ -113,11 +113,11 @@ Arguments for `QueryPaginator.paginate` method:
 - `TableName`: `str` *(required)*
 - `IndexName`: `str`
 - `Select`: [SelectType](./literals.md#selecttype)
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `ConsistentRead`: `bool`
-- `KeyConditions`: `Dict`\[`str`,
+- `KeyConditions`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `QueryFilter`: `Dict`\[`str`,
+- `QueryFilter`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
@@ -127,11 +127,11 @@ Arguments for `QueryPaginator.paginate` method:
 - `ProjectionExpression`: `str`
 - `FilterExpression`: `str`
 - `KeyConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -158,9 +158,9 @@ Arguments for `ScanPaginator.paginate` method:
 
 - `TableName`: `str` *(required)*
 - `IndexName`: `str`
-- `AttributesToGet`: `List`\[`str`\]
+- `AttributesToGet`: `Sequence`\[`str`\]
 - `Select`: [SelectType](./literals.md#selecttype)
-- `ScanFilter`: `Dict`\[`str`,
+- `ScanFilter`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 - `ConditionalOperator`:
   [ConditionalOperatorType](./literals.md#conditionaloperatortype)
@@ -170,11 +170,11 @@ Arguments for `ScanPaginator.paginate` method:
 - `Segment`: `int`
 - `ProjectionExpression`: `str`
 - `FilterExpression`: `str`
-- `ExpressionAttributeNames`: `Dict`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`,
+- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
   `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `List`\[`Any`\],
-  `Dict`\[`str`, `Any`\], `None`\]\]
+  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
+  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

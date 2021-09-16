@@ -299,7 +299,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
-- `E164PhoneNumbers`: `List`\[`str`\] *(required)*
+- `E164PhoneNumbers`: `Sequence`\[`str`\] *(required)*
 - `ForceAssociate`: `bool`
 
 Returns
@@ -322,7 +322,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VoiceConnectorGroupId`: `str` *(required)*
-- `E164PhoneNumbers`: `List`\[`str`\] *(required)*
+- `E164PhoneNumbers`: `Sequence`\[`str`\] *(required)*
 - `ForceAssociate`: `bool`
 
 Returns
@@ -346,7 +346,7 @@ Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `SigninDelegateGroups`:
-  `List`\[[SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef)\]
+  `Sequence`\[[SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -367,7 +367,7 @@ Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 - `Attendees`:
-  `List`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
+  `Sequence`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
   *(required)*
 
 Returns
@@ -389,7 +389,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
-- `MemberArns`: `List`\[`str`\] *(required)*
+- `MemberArns`: `Sequence`\[`str`\] *(required)*
 - `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
 - `ChimeBearer`: `str`
 
@@ -414,7 +414,7 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
 - `MembershipItemList`:
-  `List`\[[MembershipItemTypeDef](./type_defs.md#membershipitemtypedef)\]
+  `Sequence`\[[MembershipItemTypeDef](./type_defs.md#membershipitemtypedef)\]
   *(required)*
 
 Returns
@@ -434,7 +434,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `PhoneNumberIds`: `List`\[`str`\] *(required)*
+- `PhoneNumberIds`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchDeletePhoneNumberResponseTypeDef](./type_defs.md#batchdeletephonenumberresponsetypedef).
@@ -454,7 +454,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
-- `UserIdList`: `List`\[`str`\] *(required)*
+- `UserIdList`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchSuspendUserResponseTypeDef](./type_defs.md#batchsuspenduserresponsetypedef).
@@ -475,7 +475,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
-- `UserIdList`: `List`\[`str`\] *(required)*
+- `UserIdList`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [BatchUnsuspendUserResponseTypeDef](./type_defs.md#batchunsuspenduserresponsetypedef).
@@ -495,7 +495,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `UpdatePhoneNumberRequestItems`:
-  `List`\[[UpdatePhoneNumberRequestItemTypeDef](./type_defs.md#updatephonenumberrequestitemtypedef)\]
+  `Sequence`\[[UpdatePhoneNumberRequestItemTypeDef](./type_defs.md#updatephonenumberrequestitemtypedef)\]
   *(required)*
 
 Returns
@@ -518,7 +518,7 @@ Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `UpdateUserRequestItems`:
-  `List`\[[UpdateUserRequestItemTypeDef](./type_defs.md#updateuserrequestitemtypedef)\]
+  `Sequence`\[[UpdateUserRequestItemTypeDef](./type_defs.md#updateuserrequestitemtypedef)\]
   *(required)*
 
 Returns
@@ -575,7 +575,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `Metadata`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAppInstanceResponseTypeDef](./type_defs.md#createappinstanceresponsetypedef).
@@ -619,7 +619,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `Metadata`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAppInstanceUserResponseTypeDef](./type_defs.md#createappinstanceuserresponsetypedef).
@@ -640,7 +640,7 @@ Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 - `ExternalUserId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAttendeeResponseTypeDef](./type_defs.md#createattendeeresponsetypedef).
@@ -685,7 +685,7 @@ Keyword-only arguments:
 - `Mode`: [ChannelModeType](./literals.md#channelmodetype)
 - `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
 - `Metadata`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ChimeBearer`: `str`
 
 Returns
@@ -803,7 +803,7 @@ Keyword-only arguments:
 - `ExternalMeetingId`: `str`
 - `MeetingHostId`: `str`
 - `MediaRegion`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NotificationsConfiguration`:
   [MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef)
 
@@ -854,11 +854,11 @@ Keyword-only arguments:
 - `ExternalMeetingId`: `str`
 - `MeetingHostId`: `str`
 - `MediaRegion`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `NotificationsConfiguration`:
   [MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef)
 - `Attendees`:
-  `List`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
+  `Sequence`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
 
 Returns
 [CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef).
@@ -880,7 +880,7 @@ Keyword-only arguments:
 - `ProductType`:
   [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
   *(required)*
-- `E164PhoneNumbers`: `List`\[`str`\] *(required)*
+- `E164PhoneNumbers`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [CreatePhoneNumberOrderResponseTypeDef](./type_defs.md#createphonenumberorderresponsetypedef).
@@ -901,8 +901,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
-- `ParticipantPhoneNumbers`: `List`\[`str`\] *(required)*
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `ParticipantPhoneNumbers`: `Sequence`\[`str`\] *(required)*
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
   *(required)*
 - `Name`: `str`
 - `ExpiryMinutes`: `int`
@@ -975,7 +975,7 @@ Keyword-only arguments:
 - `AwsRegion`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Endpoints`:
-  `List`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
+  `Sequence`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
   *(required)*
 
 Returns
@@ -1001,7 +1001,7 @@ Keyword-only arguments:
 - `FromPhoneNumber`: `str` *(required)*
 - `ToPhoneNumber`: `str` *(required)*
 - `SipMediaApplicationId`: `str` *(required)*
-- `SipHeaders`: `Dict`\[`str`, `str`\]
+- `SipHeaders`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateSipMediaApplicationCallResponseTypeDef](./type_defs.md#createsipmediaapplicationcallresponsetypedef).
@@ -1026,7 +1026,7 @@ Keyword-only arguments:
   *(required)*
 - `TriggerValue`: `str` *(required)*
 - `TargetApplications`:
-  `List`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
+  `Sequence`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
   *(required)*
 - `Disabled`: `bool`
 
@@ -1094,7 +1094,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `VoiceConnectorItems`:
-  `List`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
+  `Sequence`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
 
 Returns
 [CreateVoiceConnectorGroupResponseTypeDef](./type_defs.md#createvoiceconnectorgroupresponsetypedef).
@@ -1585,7 +1585,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
-- `Usernames`: `List`\[`str`\] *(required)*
+- `Usernames`: `Sequence`\[`str`\] *(required)*
 
 ### describe_app_instance
 
@@ -1815,7 +1815,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
-- `E164PhoneNumbers`: `List`\[`str`\] *(required)*
+- `E164PhoneNumbers`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorresponsetypedef).
@@ -1838,7 +1838,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VoiceConnectorGroupId`: `str` *(required)*
-- `E164PhoneNumbers`: `List`\[`str`\] *(required)*
+- `E164PhoneNumbers`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgroupresponsetypedef).
@@ -1861,7 +1861,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
-- `GroupNames`: `List`\[`str`\] *(required)*
+- `GroupNames`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1877,7 +1877,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -2525,7 +2525,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
-- `UserEmailList`: `List`\[`str`\] *(required)*
+- `UserEmailList`: `Sequence`\[`str`\] *(required)*
 - `UserType`: [UserTypeType](./literals.md#usertypetype)
 
 Returns
@@ -3238,7 +3238,7 @@ Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 - `AppInstanceStreamingConfigurations`:
-  `List`\[[AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef)\]
+  `Sequence`\[[AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef)\]
   *(required)*
 
 Returns
@@ -3398,7 +3398,7 @@ Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `DefaultSessionExpiryMinutes`: `int` *(required)*
-- `PhoneNumberPoolCountries`: `List`\[`str`\] *(required)*
+- `PhoneNumberPoolCountries`: `Sequence`\[`str`\] *(required)*
 - `FallBackPhoneNumber`: `str`
 - `Disabled`: `bool`
 
@@ -3468,7 +3468,7 @@ Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `Credentials`:
-  `List`\[[CredentialTypeDef](./type_defs.md#credentialtypedef)\]
+  `Sequence`\[[CredentialTypeDef](./type_defs.md#credentialtypedef)\]
 
 ### redact_channel_message
 
@@ -3704,7 +3704,7 @@ Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 - `AttendeeId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_meeting
 
@@ -3721,7 +3721,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### tag_resource
 
@@ -3738,7 +3738,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 ### untag_attendee
 
@@ -3756,7 +3756,7 @@ Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 - `AttendeeId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### untag_meeting
 
@@ -3773,7 +3773,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### untag_resource
 
@@ -3790,7 +3790,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 ### update_account
 
@@ -4041,7 +4041,7 @@ Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 - `ProxySessionId`: `str` *(required)*
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
+- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
   *(required)*
 - `ExpiryMinutes`: `int`
 
@@ -4110,7 +4110,7 @@ Keyword-only arguments:
 - `SipMediaApplicationId`: `str` *(required)*
 - `Name`: `str`
 - `Endpoints`:
-  `List`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
+  `Sequence`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
 
 Returns
 [UpdateSipMediaApplicationResponseTypeDef](./type_defs.md#updatesipmediaapplicationresponsetypedef).
@@ -4133,7 +4133,7 @@ Keyword-only arguments:
 
 - `SipMediaApplicationId`: `str` *(required)*
 - `TransactionId`: `str` *(required)*
-- `Arguments`: `Dict`\[`str`, `str`\] *(required)*
+- `Arguments`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns
 [UpdateSipMediaApplicationCallResponseTypeDef](./type_defs.md#updatesipmediaapplicationcallresponsetypedef).
@@ -4156,7 +4156,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Disabled`: `bool`
 - `TargetApplications`:
-  `List`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
+  `Sequence`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
 
 Returns
 [UpdateSipRuleResponseTypeDef](./type_defs.md#updatesipruleresponsetypedef).
@@ -4243,7 +4243,7 @@ Keyword-only arguments:
 - `VoiceConnectorGroupId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `VoiceConnectorItems`:
-  `List`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
+  `Sequence`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
   *(required)*
 
 Returns

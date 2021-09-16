@@ -299,7 +299,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `loadBalancerName`: `str` *(required)*
-- `instanceNames`: `List`\[`str`\] *(required)*
+- `instanceNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [AttachInstancesToLoadBalancerResultTypeDef](./type_defs.md#attachinstancestoloadbalancerresulttypedef).
@@ -421,7 +421,7 @@ Keyword-only arguments:
 
 - `bucketName`: `str` *(required)*
 - `bundleId`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `enableObjectVersioning`: `bool`
 
 Returns [CreateBucketResultTypeDef](./type_defs.md#createbucketresulttypedef).
@@ -463,8 +463,8 @@ Keyword-only arguments:
 
 - `certificateName`: `str` *(required)*
 - `domainName`: `str` *(required)*
-- `subjectAlternativeNames`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `subjectAlternativeNames`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateCertificateResultTypeDef](./type_defs.md#createcertificateresulttypedef).
@@ -486,7 +486,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `instances`:
-  `List`\[[InstanceEntryTypeDef](./type_defs.md#instanceentrytypedef)\]
+  `Sequence`\[[InstanceEntryTypeDef](./type_defs.md#instanceentrytypedef)\]
   *(required)*
 
 Returns
@@ -533,8 +533,8 @@ Keyword-only arguments:
   [ContainerServicePowerNameType](./literals.md#containerservicepowernametype)
   *(required)*
 - `scale`: `int` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `publicDomainNames`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `deployment`:
   [ContainerServiceDeploymentRequestTypeDef](./type_defs.md#containerservicedeploymentrequesttypedef)
 
@@ -557,7 +557,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `serviceName`: `str` *(required)*
-- `containers`: `Dict`\[`str`,
+- `containers`: `Mapping`\[`str`,
   [ContainerTypeDef](./type_defs.md#containertypedef)\]
 - `publicEndpoint`:
   [EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef)
@@ -597,8 +597,9 @@ Keyword-only arguments:
 - `diskName`: `str` *(required)*
 - `availabilityZone`: `str` *(required)*
 - `sizeInGb`: `int` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`:
+  `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 
 Returns [CreateDiskResultTypeDef](./type_defs.md#creatediskresulttypedef).
 
@@ -621,8 +622,9 @@ Keyword-only arguments:
 - `availabilityZone`: `str` *(required)*
 - `sizeInGb`: `int` *(required)*
 - `diskSnapshotName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`:
+  `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 - `sourceDiskName`: `str`
 - `restoreDate`: `str`
 - `useLatestRestorableAutoSnapshot`: `bool`
@@ -647,7 +649,7 @@ Keyword-only arguments:
 - `diskSnapshotName`: `str` *(required)*
 - `diskName`: `str`
 - `instanceName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDiskSnapshotResultTypeDef](./type_defs.md#createdisksnapshotresulttypedef).
@@ -675,9 +677,9 @@ Keyword-only arguments:
 - `cacheBehaviorSettings`:
   [CacheSettingsTypeDef](./type_defs.md#cachesettingstypedef)
 - `cacheBehaviors`:
-  `List`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
+  `Sequence`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateDistributionResultTypeDef](./type_defs.md#createdistributionresulttypedef).
@@ -697,7 +699,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef).
 
@@ -741,7 +743,7 @@ Keyword-only arguments:
 
 - `instanceSnapshotName`: `str` *(required)*
 - `instanceName`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateInstanceSnapshotResultTypeDef](./type_defs.md#createinstancesnapshotresulttypedef).
@@ -760,15 +762,16 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `instanceNames`: `List`\[`str`\] *(required)*
+- `instanceNames`: `Sequence`\[`str`\] *(required)*
 - `availabilityZone`: `str` *(required)*
 - `blueprintId`: `str` *(required)*
 - `bundleId`: `str` *(required)*
 - `customImageName`: `str`
 - `userData`: `str`
 - `keyPairName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`:
+  `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 Returns
@@ -790,16 +793,17 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `instanceNames`: `List`\[`str`\] *(required)*
+- `instanceNames`: `Sequence`\[`str`\] *(required)*
 - `availabilityZone`: `str` *(required)*
 - `bundleId`: `str` *(required)*
-- `attachedDiskMapping`: `Dict`\[`str`,
-  `List`\[[DiskMapTypeDef](./type_defs.md#diskmaptypedef)\]\]
+- `attachedDiskMapping`: `Mapping`\[`str`,
+  `Sequence`\[[DiskMapTypeDef](./type_defs.md#diskmaptypedef)\]\]
 - `instanceSnapshotName`: `str`
 - `userData`: `str`
 - `keyPairName`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `addOns`: `List`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `addOns`:
+  `Sequence`\[[AddOnRequestTypeDef](./type_defs.md#addonrequesttypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 - `sourceInstanceName`: `str`
 - `restoreDate`: `str`
@@ -823,7 +827,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `keyPairName`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateKeyPairResultTypeDef](./type_defs.md#createkeypairresulttypedef).
@@ -847,8 +851,8 @@ Keyword-only arguments:
 - `healthCheckPath`: `str`
 - `certificateName`: `str`
 - `certificateDomainName`: `str`
-- `certificateAlternativeNames`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `certificateAlternativeNames`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ipAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
 
 Returns
@@ -872,8 +876,8 @@ Keyword-only arguments:
 - `loadBalancerName`: `str` *(required)*
 - `certificateName`: `str` *(required)*
 - `certificateDomainName`: `str` *(required)*
-- `certificateAlternativeNames`: `List`\[`str`\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `certificateAlternativeNames`: `Sequence`\[`str`\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateLoadBalancerTlsCertificateResultTypeDef](./type_defs.md#createloadbalancertlscertificateresulttypedef).
@@ -903,7 +907,7 @@ Keyword-only arguments:
 - `preferredBackupWindow`: `str`
 - `preferredMaintenanceWindow`: `str`
 - `publiclyAccessible`: `bool`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRelationalDatabaseResultTypeDef](./type_defs.md#createrelationaldatabaseresulttypedef).
@@ -931,7 +935,7 @@ Keyword-only arguments:
 - `sourceRelationalDatabaseName`: `str`
 - `restoreTime`: `Union`\[`datetime`, `str`\]
 - `useLatestRestorableTime`: `bool`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRelationalDatabaseFromSnapshotResultTypeDef](./type_defs.md#createrelationaldatabasefromsnapshotresulttypedef).
@@ -953,7 +957,7 @@ Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `relationalDatabaseSnapshotName`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateRelationalDatabaseSnapshotResultTypeDef](./type_defs.md#createrelationaldatabasesnapshotresulttypedef).
@@ -1428,7 +1432,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `loadBalancerName`: `str` *(required)*
-- `instanceNames`: `List`\[`str`\] *(required)*
+- `instanceNames`: `Sequence`\[`str`\] *(required)*
 
 Returns
 [DetachInstancesFromLoadBalancerResultTypeDef](./type_defs.md#detachinstancesfromloadbalancerresulttypedef).
@@ -1538,7 +1542,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -1681,7 +1685,7 @@ Keyword-only arguments:
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `period`: `int` *(required)*
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 - `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
 
@@ -1742,7 +1746,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `certificateStatuses`:
-  `List`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
+  `Sequence`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
 - `includeCertificateDetails`: `bool`
 - `certificateName`: `str`
 
@@ -1785,7 +1789,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `protocols`:
-  `List`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
+  `Sequence`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
 
 Returns
 [GetContactMethodsResultTypeDef](./type_defs.md#getcontactmethodsresulttypedef).
@@ -1895,7 +1899,7 @@ Keyword-only arguments:
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `period`: `int` *(required)*
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -2071,7 +2075,7 @@ Keyword-only arguments:
 - `period`: `int` *(required)*
 - `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -2221,7 +2225,7 @@ Keyword-only arguments:
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -2404,7 +2408,7 @@ Keyword-only arguments:
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -2704,7 +2708,7 @@ Keyword-only arguments:
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `unit`: [MetricUnitType](./literals.md#metricunittype) *(required)*
 - `statistics`:
-  `List`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
+  `Sequence`\[[MetricStatisticType](./literals.md#metricstatistictype)\]
   *(required)*
 
 Returns
@@ -2918,9 +2922,9 @@ Keyword-only arguments:
 - `treatMissingData`:
   [TreatMissingDataType](./literals.md#treatmissingdatatype)
 - `contactProtocols`:
-  `List`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
+  `Sequence`\[[ContactProtocolType](./literals.md#contactprotocoltype)\]
 - `notificationTriggers`:
-  `List`\[[AlarmStateType](./literals.md#alarmstatetype)\]
+  `Sequence`\[[AlarmStateType](./literals.md#alarmstatetype)\]
 - `notificationEnabled`: `bool`
 
 Returns [PutAlarmResultTypeDef](./type_defs.md#putalarmresulttypedef).
@@ -2942,7 +2946,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `portInfos`: `List`\[[PortInfoTypeDef](./type_defs.md#portinfotypedef)\]
+- `portInfos`: `Sequence`\[[PortInfoTypeDef](./type_defs.md#portinfotypedef)\]
   *(required)*
 - `instanceName`: `str` *(required)*
 
@@ -3214,7 +3218,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceName`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 - `resourceArn`: `str`
 
 Returns [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef).
@@ -3265,7 +3269,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceName`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 - `resourceArn`: `str`
 
 Returns
@@ -3288,7 +3292,7 @@ Keyword-only arguments:
 - `bucketName`: `str` *(required)*
 - `accessRules`: [AccessRulesTypeDef](./type_defs.md#accessrulestypedef)
 - `versioning`: `str`
-- `readonlyAccessAccounts`: `List`\[`str`\]
+- `readonlyAccessAccounts`: `Sequence`\[`str`\]
 
 Returns [UpdateBucketResultTypeDef](./type_defs.md#updatebucketresulttypedef).
 
@@ -3333,7 +3337,7 @@ Keyword-only arguments:
   [ContainerServicePowerNameType](./literals.md#containerservicepowernametype)
 - `scale`: `int`
 - `isDisabled`: `bool`
-- `publicDomainNames`: `Dict`\[`str`, `List`\[`str`\]\]
+- `publicDomainNames`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 Returns
 [UpdateContainerServiceResultTypeDef](./type_defs.md#updatecontainerserviceresulttypedef).
@@ -3360,7 +3364,7 @@ Keyword-only arguments:
 - `cacheBehaviorSettings`:
   [CacheSettingsTypeDef](./type_defs.md#cachesettingstypedef)
 - `cacheBehaviors`:
-  `List`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
+  `Sequence`\[[CacheBehaviorPerPathTypeDef](./type_defs.md#cachebehaviorperpathtypedef)\]
 - `isEnabled`: `bool`
 
 Returns
@@ -3479,7 +3483,7 @@ Keyword-only arguments:
 
 - `relationalDatabaseName`: `str` *(required)*
 - `parameters`:
-  `List`\[[RelationalDatabaseParameterTypeDef](./type_defs.md#relationaldatabaseparametertypedef)\]
+  `Sequence`\[[RelationalDatabaseParameterTypeDef](./type_defs.md#relationaldatabaseparametertypedef)\]
   *(required)*
 
 Returns

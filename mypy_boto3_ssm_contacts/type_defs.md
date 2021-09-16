@@ -216,7 +216,7 @@ Required fields:
 Optional fields:
 
 - `DisplayName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `IdempotencyToken`: `str`
 
 ## CreateContactResultTypeDef
@@ -649,7 +649,7 @@ from mypy_boto3_ssm_contacts.type_defs import PlanTypeDef
 
 Required fields:
 
-- `Stages`: `List`\[[StageTypeDef](./type_defs.md#stagetypedef)\]
+- `Stages`: `Sequence`\[[StageTypeDef](./type_defs.md#stagetypedef)\]
 
 ## PutContactPolicyRequestRequestTypeDef
 
@@ -711,7 +711,7 @@ from mypy_boto3_ssm_contacts.type_defs import StageTypeDef
 Required fields:
 
 - `DurationInMinutes`: `int`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 
 ## StartEngagementRequestRequestTypeDef
 
@@ -768,7 +768,7 @@ from mypy_boto3_ssm_contacts.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -814,7 +814,7 @@ from mypy_boto3_ssm_contacts.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateContactChannelRequestRequestTypeDef
 

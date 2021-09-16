@@ -80,6 +80,7 @@ from mypy_boto3_textract.literals import BlockTypeType, ...
 - [RelationshipTypeType](./literals.md#relationshiptypetype)
 - [SelectionStatusType](./literals.md#selectionstatustype)
 - [TextTypeType](./literals.md#texttypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -1118,6 +1118,7 @@ from mypy_boto3_ec2.literals import AccountAttributeNameType, ...
 - [VpnStaticRouteSourceType](./literals.md#vpnstaticroutesourcetype)
 - [WeekDayType](./literals.md#weekdaytype)
 - [scopeType](./literals.md#scopetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

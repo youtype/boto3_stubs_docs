@@ -238,7 +238,7 @@ Keyword-only arguments:
 - `description`: `str`
 - `environmentAccountConnectionId`: `str`
 - `protonServiceRoleArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `templateMinorVersion`: `str`
 
 Returns
@@ -290,7 +290,7 @@ Keyword-only arguments:
 - `encryptionKey`: `str`
 - `provisioning`: `Literal['CUSTOMER_MANAGED']` (see
   [ProvisioningType](./literals.md#provisioningtype))
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateEnvironmentTemplateOutputTypeDef](./type_defs.md#createenvironmenttemplateoutputtypedef).
@@ -317,7 +317,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 - `description`: `str`
 - `majorVersion`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#createenvironmenttemplateversionoutputtypedef).
@@ -344,7 +344,7 @@ Keyword-only arguments:
 - `description`: `str`
 - `repositoryConnectionArn`: `str`
 - `repositoryId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `templateMinorVersion`: `str`
 
 Returns
@@ -370,7 +370,7 @@ Keyword-only arguments:
 - `encryptionKey`: `str`
 - `pipelineProvisioning`: `Literal['CUSTOMER_MANAGED']` (see
   [ProvisioningType](./literals.md#provisioningtype))
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateServiceTemplateOutputTypeDef](./type_defs.md#createservicetemplateoutputtypedef).
@@ -391,7 +391,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `compatibleEnvironmentTemplates`:
-  `List`\[[CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)\]
+  `Sequence`\[[CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)\]
   *(required)*
 - `source`:
   [TemplateVersionSourceInputTypeDef](./type_defs.md#templateversionsourceinputtypedef)
@@ -400,7 +400,7 @@ Keyword-only arguments:
 - `clientToken`: `str`
 - `description`: `str`
 - `majorVersion`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateServiceTemplateVersionOutputTypeDef](./type_defs.md#createservicetemplateversionoutputtypedef).
@@ -562,7 +562,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -762,7 +762,7 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `statuses`:
-  `List`\[[EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)\]
+  `Sequence`\[[EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)\]
 
 Returns
 [ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef).
@@ -826,7 +826,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `environmentTemplates`:
-  `List`\[[EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef)\]
+  `Sequence`\[[EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -973,7 +973,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -992,7 +992,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1224,7 +1224,7 @@ Keyword-only arguments:
 - `minorVersion`: `str` *(required)*
 - `templateName`: `str` *(required)*
 - `compatibleEnvironmentTemplates`:
-  `List`\[[CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)\]
+  `Sequence`\[[CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)\]
 - `description`: `str`
 - `status`:
   [TemplateVersionStatusType](./literals.md#templateversionstatustype)

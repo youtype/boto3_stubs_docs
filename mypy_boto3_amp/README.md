@@ -83,6 +83,7 @@ from mypy_boto3_amp.literals import ListWorkspacesPaginatorName, ...
 
 - [ListWorkspacesPaginatorName](./literals.md#listworkspacespaginatorname)
 - [WorkspaceStatusCodeType](./literals.md#workspacestatuscodetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

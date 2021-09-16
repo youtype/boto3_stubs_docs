@@ -235,7 +235,7 @@ Optional fields:
 - `LinkId`: `str`
 - `ConnectedLinkId`: `str`
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateConnectionResponseTypeDef
 
@@ -269,7 +269,7 @@ Optional fields:
 - `SerialNumber`: `str`
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `SiteId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDeviceResponseTypeDef
 
@@ -292,7 +292,7 @@ from mypy_boto3_networkmanager.type_defs import CreateGlobalNetworkRequestReques
 Optional fields:
 
 - `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateGlobalNetworkResponseTypeDef
 
@@ -323,7 +323,7 @@ Optional fields:
 - `Description`: `str`
 - `Type`: `str`
 - `Provider`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateLinkResponseTypeDef
 
@@ -351,7 +351,7 @@ Optional fields:
 
 - `Description`: `str`
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSiteResponseTypeDef
 
@@ -526,7 +526,7 @@ from mypy_boto3_networkmanager.type_defs import DescribeGlobalNetworksRequestReq
 
 Optional fields:
 
-- `GlobalNetworkIds`: `List`\[`str`\]
+- `GlobalNetworkIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -652,7 +652,7 @@ Required fields:
 
 Optional fields:
 
-- `ConnectionIds`: `List`\[`str`\]
+- `ConnectionIds`: `Sequence`\[`str`\]
 - `DeviceId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -683,7 +683,7 @@ Required fields:
 
 Optional fields:
 
-- `CustomerGatewayArns`: `List`\[`str`\]
+- `CustomerGatewayArns`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -713,7 +713,7 @@ Required fields:
 
 Optional fields:
 
-- `DeviceIds`: `List`\[`str`\]
+- `DeviceIds`: `Sequence`\[`str`\]
 - `SiteId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
@@ -774,7 +774,7 @@ Required fields:
 
 Optional fields:
 
-- `LinkIds`: `List`\[`str`\]
+- `LinkIds`: `Sequence`\[`str`\]
 - `SiteId`: `str`
 - `Type`: `str`
 - `Provider`: `str`
@@ -806,7 +806,7 @@ Required fields:
 
 Optional fields:
 
-- `SiteIds`: `List`\[`str`\]
+- `SiteIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -835,7 +835,7 @@ Required fields:
 
 Optional fields:
 
-- `TransitGatewayConnectPeerArns`: `List`\[`str`\]
+- `TransitGatewayConnectPeerArns`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -865,7 +865,7 @@ Required fields:
 
 Optional fields:
 
-- `TransitGatewayArns`: `List`\[`str`\]
+- `TransitGatewayArns`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
@@ -1042,7 +1042,7 @@ from mypy_boto3_networkmanager.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1104,7 +1104,7 @@ from mypy_boto3_networkmanager.type_defs import UntagResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateConnectionRequestRequestTypeDef
 

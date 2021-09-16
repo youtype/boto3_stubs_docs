@@ -224,6 +224,7 @@ from mypy_boto3_opsworks.literals import AppAttributesKeysType, ...
 - [StackAttributesKeysType](./literals.md#stackattributeskeystype)
 - [VirtualizationTypeType](./literals.md#virtualizationtypetype)
 - [VolumeTypeType](./literals.md#volumetypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

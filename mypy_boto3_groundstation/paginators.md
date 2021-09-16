@@ -61,7 +61,8 @@ Arguments for `ListContactsPaginator.paginate` method:
 
 - `endTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `statusList`: `List`\[[ContactStatusType](./literals.md#contactstatustype)\]
+- `statusList`:
+  `Sequence`\[[ContactStatusType](./literals.md#contactstatustype)\]
   *(required)*
 - `groundStation`: `str`
 - `missionProfileArn`: `str`

@@ -203,7 +203,7 @@ from mypy_boto3_elasticache.type_defs import AddTagsToResourceMessageRequestType
 Required fields:
 
 - `ResourceName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## AllowedNodeTypeModificationsMessageTypeDef
 
@@ -276,8 +276,8 @@ Required fields:
 
 Optional fields:
 
-- `ReplicationGroupIds`: `List`\[`str`\]
-- `CacheClusterIds`: `List`\[`str`\]
+- `ReplicationGroupIds`: `Sequence`\[`str`\]
+- `CacheClusterIds`: `Sequence`\[`str`\]
 
 ## BatchStopUpdateActionMessageRequestTypeDef
 
@@ -291,8 +291,8 @@ Required fields:
 
 Optional fields:
 
-- `ReplicationGroupIds`: `List`\[`str`\]
-- `CacheClusterIds`: `List`\[`str`\]
+- `ReplicationGroupIds`: `Sequence`\[`str`\]
+- `CacheClusterIds`: `Sequence`\[`str`\]
 
 ## CacheClusterMessageTypeDef
 
@@ -632,8 +632,8 @@ Required fields:
 
 Optional fields:
 
-- `PreferredAvailabilityZones`: `List`\[`str`\]
-- `PreferredOutpostArns`: `List`\[`str`\]
+- `PreferredAvailabilityZones`: `Sequence`\[`str`\]
+- `PreferredOutpostArns`: `Sequence`\[`str`\]
 
 ## CopySnapshotMessageRequestTypeDef
 
@@ -650,7 +650,7 @@ Optional fields:
 
 - `TargetBucket`: `str`
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CopySnapshotResultTypeDef
 
@@ -679,17 +679,17 @@ Optional fields:
 - `ReplicationGroupId`: `str`
 - `AZMode`: [AZModeType](./literals.md#azmodetype)
 - `PreferredAvailabilityZone`: `str`
-- `PreferredAvailabilityZones`: `List`\[`str`\]
+- `PreferredAvailabilityZones`: `Sequence`\[`str`\]
 - `NumCacheNodes`: `int`
 - `CacheNodeType`: `str`
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `CacheParameterGroupName`: `str`
 - `CacheSubnetGroupName`: `str`
-- `CacheSecurityGroupNames`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SnapshotArns`: `List`\[`str`\]
+- `CacheSecurityGroupNames`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SnapshotArns`: `Sequence`\[`str`\]
 - `SnapshotName`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `Port`: `int`
@@ -700,9 +700,9 @@ Optional fields:
 - `AuthToken`: `str`
 - `OutpostMode`: [OutpostModeType](./literals.md#outpostmodetype)
 - `PreferredOutpostArn`: `str`
-- `PreferredOutpostArns`: `List`\[`str`\]
+- `PreferredOutpostArns`: `Sequence`\[`str`\]
 - `LogDeliveryConfigurations`:
-  `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
+  `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 ## CreateCacheClusterResultTypeDef
 
@@ -730,7 +730,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateCacheParameterGroupResultTypeDef
 
@@ -758,7 +758,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateCacheSecurityGroupResultTypeDef
 
@@ -783,11 +783,11 @@ Required fields:
 
 - `CacheSubnetGroupName`: `str`
 - `CacheSubnetGroupDescription`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateCacheSubnetGroupResultTypeDef
 
@@ -848,20 +848,20 @@ Optional fields:
 - `AutomaticFailoverEnabled`: `bool`
 - `MultiAZEnabled`: `bool`
 - `NumCacheClusters`: `int`
-- `PreferredCacheClusterAZs`: `List`\[`str`\]
+- `PreferredCacheClusterAZs`: `Sequence`\[`str`\]
 - `NumNodeGroups`: `int`
 - `ReplicasPerNodeGroup`: `int`
 - `NodeGroupConfiguration`:
-  `List`\[[NodeGroupConfigurationTypeDef](./type_defs.md#nodegroupconfigurationtypedef)\]
+  `Sequence`\[[NodeGroupConfigurationTypeDef](./type_defs.md#nodegroupconfigurationtypedef)\]
 - `CacheNodeType`: `str`
 - `Engine`: `str`
 - `EngineVersion`: `str`
 - `CacheParameterGroupName`: `str`
 - `CacheSubnetGroupName`: `str`
-- `CacheSecurityGroupNames`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SnapshotArns`: `List`\[`str`\]
+- `CacheSecurityGroupNames`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SnapshotArns`: `Sequence`\[`str`\]
 - `SnapshotName`: `str`
 - `PreferredMaintenanceWindow`: `str`
 - `Port`: `int`
@@ -873,9 +873,9 @@ Optional fields:
 - `TransitEncryptionEnabled`: `bool`
 - `AtRestEncryptionEnabled`: `bool`
 - `KmsKeyId`: `str`
-- `UserGroupIds`: `List`\[`str`\]
+- `UserGroupIds`: `Sequence`\[`str`\]
 - `LogDeliveryConfigurations`:
-  `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
+  `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 ## CreateReplicationGroupResultTypeDef
 
@@ -905,7 +905,7 @@ Optional fields:
 - `ReplicationGroupId`: `str`
 - `CacheClusterId`: `str`
 - `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateSnapshotResultTypeDef
 
@@ -932,8 +932,8 @@ Required fields:
 
 Optional fields:
 
-- `UserIds`: `List`\[`str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `UserIds`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateUserMessageRequestTypeDef
 
@@ -950,9 +950,9 @@ Required fields:
 
 Optional fields:
 
-- `Passwords`: `List`\[`str`\]
+- `Passwords`: `Sequence`\[`str`\]
 - `NoPasswordRequired`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CustomerNodeEndpointTypeDef
 
@@ -979,8 +979,8 @@ Required fields:
 
 Optional fields:
 
-- `GlobalNodeGroupsToRemove`: `List`\[`str`\]
-- `GlobalNodeGroupsToRetain`: `List`\[`str`\]
+- `GlobalNodeGroupsToRemove`: `Sequence`\[`str`\]
+- `GlobalNodeGroupsToRetain`: `Sequence`\[`str`\]
 
 ## DecreaseNodeGroupsInGlobalReplicationGroupResultTypeDef
 
@@ -1010,8 +1010,8 @@ Optional fields:
 
 - `NewReplicaCount`: `int`
 - `ReplicaConfiguration`:
-  `List`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
-- `ReplicasToRemove`: `List`\[`str`\]
+  `Sequence`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
+- `ReplicasToRemove`: `Sequence`\[`str`\]
 
 ## DecreaseReplicaCountResultTypeDef
 
@@ -1383,7 +1383,7 @@ Optional fields:
 
 - `ServiceUpdateName`: `str`
 - `ServiceUpdateStatus`:
-  `List`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
+  `Sequence`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1425,15 +1425,15 @@ from mypy_boto3_elasticache.type_defs import DescribeUpdateActionsMessageRequest
 Optional fields:
 
 - `ServiceUpdateName`: `str`
-- `ReplicationGroupIds`: `List`\[`str`\]
-- `CacheClusterIds`: `List`\[`str`\]
+- `ReplicationGroupIds`: `Sequence`\[`str`\]
+- `CacheClusterIds`: `Sequence`\[`str`\]
 - `Engine`: `str`
 - `ServiceUpdateStatus`:
-  `List`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
+  `Sequence`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
 - `ServiceUpdateTimeRange`:
   [TimeRangeFilterTypeDef](./type_defs.md#timerangefiltertypedef)
 - `UpdateActionStatus`:
-  `List`\[[UpdateActionStatusType](./literals.md#updateactionstatustype)\]
+  `Sequence`\[[UpdateActionStatusType](./literals.md#updateactionstatustype)\]
 - `ShowNodeLevelUpdateStatus`: `bool`
 - `MaxRecords`: `int`
 - `Marker`: `str`
@@ -1473,7 +1473,7 @@ Optional fields:
 
 - `Engine`: `str`
 - `UserId`: `str`
-- `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
@@ -1625,7 +1625,7 @@ from mypy_boto3_elasticache.type_defs import FilterTypeDef
 Required fields:
 
 - `Name`: `str`
-- `Values`: `List`\[`str`\]
+- `Values`: `Sequence`\[`str`\]
 
 ## GlobalNodeGroupTypeDef
 
@@ -1703,7 +1703,7 @@ Required fields:
 Optional fields:
 
 - `RegionalConfigurations`:
-  `List`\[[RegionalConfigurationTypeDef](./type_defs.md#regionalconfigurationtypedef)\]
+  `Sequence`\[[RegionalConfigurationTypeDef](./type_defs.md#regionalconfigurationtypedef)\]
 
 ## IncreaseNodeGroupsInGlobalReplicationGroupResultTypeDef
 
@@ -1733,7 +1733,7 @@ Optional fields:
 
 - `NewReplicaCount`: `int`
 - `ReplicaConfiguration`:
-  `List`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
+  `Sequence`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
 
 ## IncreaseReplicaCountResultTypeDef
 
@@ -1826,11 +1826,11 @@ Required fields:
 Optional fields:
 
 - `NumCacheNodes`: `int`
-- `CacheNodeIdsToRemove`: `List`\[`str`\]
+- `CacheNodeIdsToRemove`: `Sequence`\[`str`\]
 - `AZMode`: [AZModeType](./literals.md#azmodetype)
-- `NewAvailabilityZones`: `List`\[`str`\]
-- `CacheSecurityGroupNames`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `NewAvailabilityZones`: `Sequence`\[`str`\]
+- `CacheSecurityGroupNames`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `PreferredMaintenanceWindow`: `str`
 - `NotificationTopicArn`: `str`
 - `CacheParameterGroupName`: `str`
@@ -1845,7 +1845,7 @@ Optional fields:
 - `AuthTokenUpdateStrategy`:
   [AuthTokenUpdateStrategyTypeType](./literals.md#authtokenupdatestrategytypetype)
 - `LogDeliveryConfigurations`:
-  `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
+  `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 ## ModifyCacheClusterResultTypeDef
 
@@ -1869,7 +1869,7 @@ Required fields:
 
 - `CacheParameterGroupName`: `str`
 - `ParameterNameValues`:
-  `List`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
+  `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
 
 ## ModifyCacheSubnetGroupMessageRequestTypeDef
 
@@ -1884,7 +1884,7 @@ Required fields:
 Optional fields:
 
 - `CacheSubnetGroupDescription`: `str`
-- `SubnetIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 ## ModifyCacheSubnetGroupResultTypeDef
 
@@ -1949,8 +1949,8 @@ Optional fields:
 - `AutomaticFailoverEnabled`: `bool`
 - `MultiAZEnabled`: `bool`
 - `NodeGroupId`: `str`
-- `CacheSecurityGroupNames`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `CacheSecurityGroupNames`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 - `PreferredMaintenanceWindow`: `str`
 - `NotificationTopicArn`: `str`
 - `CacheParameterGroupName`: `str`
@@ -1964,11 +1964,11 @@ Optional fields:
 - `AuthToken`: `str`
 - `AuthTokenUpdateStrategy`:
   [AuthTokenUpdateStrategyTypeType](./literals.md#authtokenupdatestrategytypetype)
-- `UserGroupIdsToAdd`: `List`\[`str`\]
-- `UserGroupIdsToRemove`: `List`\[`str`\]
+- `UserGroupIdsToAdd`: `Sequence`\[`str`\]
+- `UserGroupIdsToRemove`: `Sequence`\[`str`\]
 - `RemoveUserGroups`: `bool`
 - `LogDeliveryConfigurations`:
-  `List`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
+  `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
 ## ModifyReplicationGroupResultTypeDef
 
@@ -1998,9 +1998,9 @@ Required fields:
 Optional fields:
 
 - `ReshardingConfiguration`:
-  `List`\[[ReshardingConfigurationTypeDef](./type_defs.md#reshardingconfigurationtypedef)\]
-- `NodeGroupsToRemove`: `List`\[`str`\]
-- `NodeGroupsToRetain`: `List`\[`str`\]
+  `Sequence`\[[ReshardingConfigurationTypeDef](./type_defs.md#reshardingconfigurationtypedef)\]
+- `NodeGroupsToRemove`: `Sequence`\[`str`\]
+- `NodeGroupsToRetain`: `Sequence`\[`str`\]
 
 ## ModifyReplicationGroupShardConfigurationResultTypeDef
 
@@ -2027,8 +2027,8 @@ Required fields:
 
 Optional fields:
 
-- `UserIdsToAdd`: `List`\[`str`\]
-- `UserIdsToRemove`: `List`\[`str`\]
+- `UserIdsToAdd`: `Sequence`\[`str`\]
+- `UserIdsToRemove`: `Sequence`\[`str`\]
 
 ## ModifyUserMessageRequestTypeDef
 
@@ -2044,7 +2044,7 @@ Optional fields:
 
 - `AccessString`: `str`
 - `AppendAccessString`: `str`
-- `Passwords`: `List`\[`str`\]
+- `Passwords`: `Sequence`\[`str`\]
 - `NoPasswordRequired`: `bool`
 
 ## NodeGroupConfigurationTypeDef
@@ -2255,7 +2255,7 @@ Optional fields:
 
 - `ReservedCacheNodeId`: `str`
 - `CacheNodeCount`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PurchaseReservedCacheNodesOfferingResultTypeDef
 
@@ -2303,7 +2303,7 @@ from mypy_boto3_elasticache.type_defs import RebootCacheClusterMessageRequestTyp
 Required fields:
 
 - `CacheClusterId`: `str`
-- `CacheNodeIdsToReboot`: `List`\[`str`\]
+- `CacheNodeIdsToReboot`: `Sequence`\[`str`\]
 
 ## RebootCacheClusterResultTypeDef
 
@@ -2339,7 +2339,7 @@ Required fields:
 - `ReplicationGroupId`: `str`
 - `ReplicationGroupRegion`: `str`
 - `ReshardingConfiguration`:
-  `List`\[[ReshardingConfigurationTypeDef](./type_defs.md#reshardingconfigurationtypedef)\]
+  `Sequence`\[[ReshardingConfigurationTypeDef](./type_defs.md#reshardingconfigurationtypedef)\]
 
 ## RemoveTagsFromResourceMessageRequestTypeDef
 
@@ -2350,7 +2350,7 @@ from mypy_boto3_elasticache.type_defs import RemoveTagsFromResourceMessageReques
 Required fields:
 
 - `ResourceName`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## ReplicationGroupMessageTypeDef
 
@@ -2507,7 +2507,7 @@ Optional fields:
 
 - `ResetAllParameters`: `bool`
 - `ParameterNameValues`:
-  `List`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
+  `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
 
 ## ReshardingConfigurationTypeDef
 
@@ -2518,7 +2518,7 @@ from mypy_boto3_elasticache.type_defs import ReshardingConfigurationTypeDef
 Optional fields:
 
 - `NodeGroupId`: `str`
-- `PreferredAvailabilityZones`: `List`\[`str`\]
+- `PreferredAvailabilityZones`: `Sequence`\[`str`\]
 
 ## ReshardingStatusTypeDef
 
@@ -2676,7 +2676,7 @@ Required fields:
 
 - `ReplicationGroupId`: `str`
 - `CustomerNodeEndpointList`:
-  `List`\[[CustomerNodeEndpointTypeDef](./type_defs.md#customernodeendpointtypedef)\]
+  `Sequence`\[[CustomerNodeEndpointTypeDef](./type_defs.md#customernodeendpointtypedef)\]
 
 ## StartMigrationResponseTypeDef
 

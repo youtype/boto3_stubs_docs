@@ -139,7 +139,7 @@ from mypy_boto3_pinpoint_email.type_defs import CloudWatchDestinationTypeDef
 Required fields:
 
 - `DimensionConfigurations`:
-  `List`\[[CloudWatchDimensionConfigurationTypeDef](./type_defs.md#cloudwatchdimensionconfigurationtypedef)\]
+  `Sequence`\[[CloudWatchDimensionConfigurationTypeDef](./type_defs.md#cloudwatchdimensionconfigurationtypedef)\]
 
 ## CloudWatchDimensionConfigurationTypeDef
 
@@ -201,7 +201,7 @@ Optional fields:
   [ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef)
 - `SendingOptions`:
   [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDedicatedIpPoolRequestRequestTypeDef
 
@@ -215,7 +215,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDeliverabilityTestReportRequestRequestTypeDef
 
@@ -231,7 +231,7 @@ Required fields:
 Optional fields:
 
 - `ReportName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateDeliverabilityTestReportResponseTypeDef
 
@@ -259,7 +259,7 @@ Required fields:
 
 Optional fields:
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateEmailIdentityResponseTypeDef
 
@@ -382,9 +382,9 @@ from mypy_boto3_pinpoint_email.type_defs import DestinationTypeDef
 
 Optional fields:
 
-- `ToAddresses`: `List`\[`str`\]
-- `CcAddresses`: `List`\[`str`\]
-- `BccAddresses`: `List`\[`str`\]
+- `ToAddresses`: `Sequence`\[`str`\]
+- `CcAddresses`: `Sequence`\[`str`\]
+- `BccAddresses`: `Sequence`\[`str`\]
 
 ## DkimAttributesTypeDef
 
@@ -469,7 +469,8 @@ from mypy_boto3_pinpoint_email.type_defs import EventDestinationDefinitionTypeDe
 Optional fields:
 
 - `Enabled`: `bool`
-- `MatchingEventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
+- `MatchingEventTypes`:
+  `Sequence`\[[EventTypeType](./literals.md#eventtypetype)\]
 - `KinesisFirehoseDestination`:
   [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
 - `CloudWatchDestination`:
@@ -526,7 +527,7 @@ from mypy_boto3_pinpoint_email.type_defs import GetBlacklistReportsRequestReques
 
 Required fields:
 
-- `BlacklistItemNames`: `List`\[`str`\]
+- `BlacklistItemNames`: `Sequence`\[`str`\]
 
 ## GetBlacklistReportsResponseTypeDef
 
@@ -1164,7 +1165,7 @@ Required fields:
 Optional fields:
 
 - `SubscribedDomains`:
-  `List`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
+  `Sequence`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
 
 ## PutEmailIdentityDkimAttributesRequestRequestTypeDef
 
@@ -1259,9 +1260,10 @@ Required fields:
 Optional fields:
 
 - `FromEmailAddress`: `str`
-- `ReplyToAddresses`: `List`\[`str`\]
+- `ReplyToAddresses`: `Sequence`\[`str`\]
 - `FeedbackForwardingEmailAddress`: `str`
-- `EmailTags`: `List`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
+- `EmailTags`:
+  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
 ## SendEmailResponseTypeDef
@@ -1317,7 +1319,7 @@ from mypy_boto3_pinpoint_email.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -1360,7 +1362,7 @@ from mypy_boto3_pinpoint_email.type_defs import UntagResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateConfigurationSetEventDestinationRequestRequestTypeDef
 

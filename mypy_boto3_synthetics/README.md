@@ -72,6 +72,7 @@ from mypy_boto3_synthetics.literals import CanaryRunStateReasonCodeType, ...
 - [CanaryRunStateType](./literals.md#canaryrunstatetype)
 - [CanaryStateReasonCodeType](./literals.md#canarystatereasoncodetype)
 - [CanaryStateType](./literals.md#canarystatetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -115,8 +115,9 @@ from mypy_boto3_inspector.type_defs import AddAttributesToFindingsRequestRequest
 
 Required fields:
 
-- `findingArns`: `List`\[`str`\]
-- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `findingArns`: `Sequence`\[`str`\]
+- `attributes`:
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 ## AddAttributesToFindingsResponseTypeDef
 
@@ -139,9 +140,10 @@ from mypy_boto3_inspector.type_defs import AgentFilterTypeDef
 
 Required fields:
 
-- `agentHealths`: `List`\[[AgentHealthType](./literals.md#agenthealthtype)\]
+- `agentHealths`:
+  `Sequence`\[[AgentHealthType](./literals.md#agenthealthtype)\]
 - `agentHealthCodes`:
-  `List`\[[AgentHealthCodeType](./literals.md#agenthealthcodetype)\]
+  `Sequence`\[[AgentHealthCodeType](./literals.md#agenthealthcodetype)\]
 
 ## AgentPreviewTypeDef
 
@@ -193,9 +195,9 @@ Optional fields:
 
 - `namePattern`: `str`
 - `states`:
-  `List`\[[AssessmentRunStateType](./literals.md#assessmentrunstatetype)\]
+  `Sequence`\[[AssessmentRunStateType](./literals.md#assessmentrunstatetype)\]
 - `durationRange`: [DurationRangeTypeDef](./type_defs.md#durationrangetypedef)
-- `rulesPackageArns`: `List`\[`str`\]
+- `rulesPackageArns`: `Sequence`\[`str`\]
 - `startTimeRange`:
   [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 - `completionTimeRange`:
@@ -300,7 +302,7 @@ Optional fields:
 
 - `namePattern`: `str`
 - `durationRange`: [DurationRangeTypeDef](./type_defs.md#durationrangetypedef)
-- `rulesPackageArns`: `List`\[`str`\]
+- `rulesPackageArns`: `Sequence`\[`str`\]
 
 ## AssessmentTemplateTypeDef
 
@@ -396,12 +398,12 @@ Required fields:
 - `assessmentTargetArn`: `str`
 - `assessmentTemplateName`: `str`
 - `durationInSeconds`: `int`
-- `rulesPackageArns`: `List`\[`str`\]
+- `rulesPackageArns`: `Sequence`\[`str`\]
 
 Optional fields:
 
 - `userAttributesForFindings`:
-  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
 ## CreateAssessmentTemplateResponseTypeDef
 
@@ -446,7 +448,7 @@ from mypy_boto3_inspector.type_defs import CreateResourceGroupRequestRequestType
 Required fields:
 
 - `resourceGroupTags`:
-  `List`\[[ResourceGroupTagTypeDef](./type_defs.md#resourcegrouptagtypedef)\]
+  `Sequence`\[[ResourceGroupTagTypeDef](./type_defs.md#resourcegrouptagtypedef)\]
 
 ## CreateResourceGroupResponseTypeDef
 
@@ -498,7 +500,7 @@ from mypy_boto3_inspector.type_defs import DescribeAssessmentRunsRequestRequestT
 
 Required fields:
 
-- `assessmentRunArns`: `List`\[`str`\]
+- `assessmentRunArns`: `Sequence`\[`str`\]
 
 ## DescribeAssessmentRunsResponseTypeDef
 
@@ -523,7 +525,7 @@ from mypy_boto3_inspector.type_defs import DescribeAssessmentTargetsRequestReque
 
 Required fields:
 
-- `assessmentTargetArns`: `List`\[`str`\]
+- `assessmentTargetArns`: `Sequence`\[`str`\]
 
 ## DescribeAssessmentTargetsResponseTypeDef
 
@@ -548,7 +550,7 @@ from mypy_boto3_inspector.type_defs import DescribeAssessmentTemplatesRequestReq
 
 Required fields:
 
-- `assessmentTemplateArns`: `List`\[`str`\]
+- `assessmentTemplateArns`: `Sequence`\[`str`\]
 
 ## DescribeAssessmentTemplatesResponseTypeDef
 
@@ -587,7 +589,7 @@ from mypy_boto3_inspector.type_defs import DescribeExclusionsRequestRequestTypeD
 
 Required fields:
 
-- `exclusionArns`: `List`\[`str`\]
+- `exclusionArns`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -616,7 +618,7 @@ from mypy_boto3_inspector.type_defs import DescribeFindingsRequestRequestTypeDef
 
 Required fields:
 
-- `findingArns`: `List`\[`str`\]
+- `findingArns`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -644,7 +646,7 @@ from mypy_boto3_inspector.type_defs import DescribeResourceGroupsRequestRequestT
 
 Required fields:
 
-- `resourceGroupArns`: `List`\[`str`\]
+- `resourceGroupArns`: `Sequence`\[`str`\]
 
 ## DescribeResourceGroupsResponseTypeDef
 
@@ -669,7 +671,7 @@ from mypy_boto3_inspector.type_defs import DescribeRulesPackagesRequestRequestTy
 
 Required fields:
 
-- `rulesPackageArns`: `List`\[`str`\]
+- `rulesPackageArns`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -767,14 +769,15 @@ from mypy_boto3_inspector.type_defs import FindingFilterTypeDef
 
 Optional fields:
 
-- `agentIds`: `List`\[`str`\]
-- `autoScalingGroups`: `List`\[`str`\]
-- `ruleNames`: `List`\[`str`\]
-- `severities`: `List`\[[SeverityType](./literals.md#severitytype)\]
-- `rulesPackageArns`: `List`\[`str`\]
-- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+- `agentIds`: `Sequence`\[`str`\]
+- `autoScalingGroups`: `Sequence`\[`str`\]
+- `ruleNames`: `Sequence`\[`str`\]
+- `severities`: `Sequence`\[[SeverityType](./literals.md#severitytype)\]
+- `rulesPackageArns`: `Sequence`\[`str`\]
+- `attributes`:
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `userAttributes`:
-  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `creationTimeRange`:
   [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 
@@ -946,7 +949,7 @@ from mypy_boto3_inspector.type_defs import ListAssessmentRunsRequestRequestTypeD
 
 Optional fields:
 
-- `assessmentTemplateArns`: `List`\[`str`\]
+- `assessmentTemplateArns`: `Sequence`\[`str`\]
 - `filter`:
   [AssessmentRunFilterTypeDef](./type_defs.md#assessmentrunfiltertypedef)
 - `nextToken`: `str`
@@ -999,7 +1002,7 @@ from mypy_boto3_inspector.type_defs import ListAssessmentTemplatesRequestRequest
 
 Optional fields:
 
-- `assessmentTargetArns`: `List`\[`str`\]
+- `assessmentTargetArns`: `Sequence`\[`str`\]
 - `filter`:
   [AssessmentTemplateFilterTypeDef](./type_defs.md#assessmenttemplatefiltertypedef)
 - `nextToken`: `str`
@@ -1080,7 +1083,7 @@ from mypy_boto3_inspector.type_defs import ListFindingsRequestRequestTypeDef
 
 Optional fields:
 
-- `assessmentRunArns`: `List`\[`str`\]
+- `assessmentRunArns`: `Sequence`\[`str`\]
 - `filter`: [FindingFilterTypeDef](./type_defs.md#findingfiltertypedef)
 - `nextToken`: `str`
 - `maxResults`: `int`
@@ -1235,8 +1238,8 @@ from mypy_boto3_inspector.type_defs import RemoveAttributesFromFindingsRequestRe
 
 Required fields:
 
-- `findingArns`: `List`\[`str`\]
-- `attributeKeys`: `List`\[`str`\]
+- `findingArns`: `Sequence`\[`str`\]
+- `attributeKeys`: `Sequence`\[`str`\]
 
 ## RemoveAttributesFromFindingsResponseTypeDef
 
@@ -1343,7 +1346,7 @@ Required fields:
 
 Optional fields:
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## StartAssessmentRunRequestRequestTypeDef
 

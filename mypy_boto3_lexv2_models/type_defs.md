@@ -284,7 +284,7 @@ Required fields:
 
 - `name`: `Literal['BotName']` (see
   [BotFilterNameType](./literals.md#botfilternametype))
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 - `operator`: [BotFilterOperatorType](./literals.md#botfilteroperatortype)
 
 ## BotImportSpecificationTypeDef
@@ -327,7 +327,7 @@ Required fields:
 
 - `name`: `Literal['BotLocaleName']` (see
   [BotLocaleFilterNameType](./literals.md#botlocalefilternametype))
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 - `operator`:
   [BotLocaleFilterOperatorType](./literals.md#botlocalefilteroperatortype)
 
@@ -565,9 +565,9 @@ from mypy_boto3_lexv2_models.type_defs import ConversationLogSettingsTypeDef
 Optional fields:
 
 - `textLogSettings`:
-  `List`\[[TextLogSettingTypeDef](./type_defs.md#textlogsettingtypedef)\]
+  `Sequence`\[[TextLogSettingTypeDef](./type_defs.md#textlogsettingtypedef)\]
 - `audioLogSettings`:
-  `List`\[[AudioLogSettingTypeDef](./type_defs.md#audiologsettingtypedef)\]
+  `Sequence`\[[AudioLogSettingTypeDef](./type_defs.md#audiologsettingtypedef)\]
 
 ## CreateBotAliasRequestRequestTypeDef
 
@@ -584,13 +584,13 @@ Optional fields:
 
 - `description`: `str`
 - `botVersion`: `str`
-- `botAliasLocaleSettings`: `Dict`\[`str`,
+- `botAliasLocaleSettings`: `Mapping`\[`str`,
   [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
 - `conversationLogSettings`:
   [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
 - `sentimentAnalysisSettings`:
   [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateBotAliasResponseTypeDef
 
@@ -671,8 +671,8 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
-- `botTags`: `Dict`\[`str`, `str`\]
-- `testBotAliasTags`: `Dict`\[`str`, `str`\]
+- `botTags`: `Mapping`\[`str`, `str`\]
+- `testBotAliasTags`: `Mapping`\[`str`, `str`\]
 
 ## CreateBotResponseTypeDef
 
@@ -704,7 +704,7 @@ from mypy_boto3_lexv2_models.type_defs import CreateBotVersionRequestRequestType
 Required fields:
 
 - `botId`: `str`
-- `botVersionLocaleSpecification`: `Dict`\[`str`,
+- `botVersionLocaleSpecification`: `Mapping`\[`str`,
   [BotVersionLocaleDetailsTypeDef](./type_defs.md#botversionlocaledetailstypedef)\]
 
 Optional fields:
@@ -782,7 +782,7 @@ Optional fields:
 - `description`: `str`
 - `parentIntentSignature`: `str`
 - `sampleUtterances`:
-  `List`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
+  `Sequence`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
 - `dialogCodeHook`:
   [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
 - `fulfillmentCodeHook`:
@@ -792,9 +792,9 @@ Optional fields:
 - `intentClosingSetting`:
   [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
 - `inputContexts`:
-  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
+  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
 - `outputContexts`:
-  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
+  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
 - `kendraConfiguration`:
   [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 
@@ -868,12 +868,13 @@ Required fields:
 - `resourceArn`: `str`
 - `statementId`: `str`
 - `effect`: [EffectType](./literals.md#effecttype)
-- `principal`: `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
-- `action`: `List`\[`str`\]
+- `principal`:
+  `Sequence`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
+- `action`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `condition`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
+- `condition`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
 - `expectedRevisionId`: `str`
 
 ## CreateResourcePolicyStatementResponseTypeDef
@@ -959,7 +960,7 @@ Optional fields:
 
 - `description`: `str`
 - `slotTypeValues`:
-  `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
+  `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
 - `parentSlotTypeSignature`: `str`
 
 ## CreateSlotTypeResponseTypeDef
@@ -1649,7 +1650,7 @@ Required fields:
 
 - `name`: `Literal['ExportResourceType']` (see
   [ExportFilterNameType](./literals.md#exportfilternametype))
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 - `operator`:
   [ExportFilterOperatorType](./literals.md#exportfilteroperatortype)
 
@@ -1719,7 +1720,7 @@ Optional fields:
 
 - `subtitle`: `str`
 - `imageUrl`: `str`
-- `buttons`: `List`\[[ButtonTypeDef](./type_defs.md#buttontypedef)\]
+- `buttons`: `Sequence`\[[ButtonTypeDef](./type_defs.md#buttontypedef)\]
 
 ## ImportFilterTypeDef
 
@@ -1731,7 +1732,7 @@ Required fields:
 
 - `name`: `Literal['ImportResourceType']` (see
   [ImportFilterNameType](./literals.md#importfilternametype))
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 - `operator`:
   [ImportFilterOperatorType](./literals.md#importfilteroperatortype)
 
@@ -1828,7 +1829,7 @@ Required fields:
 
 - `name`: `Literal['IntentName']` (see
   [IntentFilterNameType](./literals.md#intentfilternametype))
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 - `operator`:
   [IntentFilterOperatorType](./literals.md#intentfilteroperatortype)
 
@@ -1932,7 +1933,7 @@ Optional fields:
 
 - `sortBy`: [BotLocaleSortByTypeDef](./type_defs.md#botlocalesortbytypedef)
 - `filters`:
-  `List`\[[BotLocaleFilterTypeDef](./type_defs.md#botlocalefiltertypedef)\]
+  `Sequence`\[[BotLocaleFilterTypeDef](./type_defs.md#botlocalefiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1992,7 +1993,7 @@ from mypy_boto3_lexv2_models.type_defs import ListBotsRequestRequestTypeDef
 Optional fields:
 
 - `sortBy`: [BotSortByTypeDef](./type_defs.md#botsortbytypedef)
-- `filters`: `List`\[[BotFilterTypeDef](./type_defs.md#botfiltertypedef)\]
+- `filters`: `Sequence`\[[BotFilterTypeDef](./type_defs.md#botfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -2086,7 +2087,7 @@ Optional fields:
 - `botVersion`: `str`
 - `sortBy`: [ExportSortByTypeDef](./type_defs.md#exportsortbytypedef)
 - `filters`:
-  `List`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
+  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -2118,7 +2119,7 @@ Optional fields:
 - `botVersion`: `str`
 - `sortBy`: [ImportSortByTypeDef](./type_defs.md#importsortbytypedef)
 - `filters`:
-  `List`\[[ImportFilterTypeDef](./type_defs.md#importfiltertypedef)\]
+  `Sequence`\[[ImportFilterTypeDef](./type_defs.md#importfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -2154,7 +2155,7 @@ Optional fields:
 
 - `sortBy`: [IntentSortByTypeDef](./type_defs.md#intentsortbytypedef)
 - `filters`:
-  `List`\[[IntentFilterTypeDef](./type_defs.md#intentfiltertypedef)\]
+  `Sequence`\[[IntentFilterTypeDef](./type_defs.md#intentfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -2191,7 +2192,7 @@ Optional fields:
 
 - `sortBy`: [SlotTypeSortByTypeDef](./type_defs.md#slottypesortbytypedef)
 - `filters`:
-  `List`\[[SlotTypeFilterTypeDef](./type_defs.md#slottypefiltertypedef)\]
+  `Sequence`\[[SlotTypeFilterTypeDef](./type_defs.md#slottypefiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -2228,7 +2229,8 @@ Required fields:
 Optional fields:
 
 - `sortBy`: [SlotSortByTypeDef](./type_defs.md#slotsortbytypedef)
-- `filters`: `List`\[[SlotFilterTypeDef](./type_defs.md#slotfiltertypedef)\]
+- `filters`:
+  `Sequence`\[[SlotFilterTypeDef](./type_defs.md#slotfiltertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -2284,7 +2286,7 @@ Required fields:
 
 Optional fields:
 
-- `variations`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
+- `variations`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
 
 ## MessageTypeDef
 
@@ -2364,7 +2366,7 @@ from mypy_boto3_lexv2_models.type_defs import PromptSpecificationTypeDef
 Required fields:
 
 - `messageGroups`:
-  `List`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
+  `Sequence`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
 - `maxRetries`: `int`
 
 Optional fields:
@@ -2394,7 +2396,7 @@ from mypy_boto3_lexv2_models.type_defs import ResponseSpecificationTypeDef
 Required fields:
 
 - `messageGroups`:
-  `List`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
+  `Sequence`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
 
 Optional fields:
 
@@ -2464,7 +2466,7 @@ from mypy_boto3_lexv2_models.type_defs import SlotDefaultValueSpecificationTypeD
 Required fields:
 
 - `defaultValueList`:
-  `List`\[[SlotDefaultValueTypeDef](./type_defs.md#slotdefaultvaluetypedef)\]
+  `Sequence`\[[SlotDefaultValueTypeDef](./type_defs.md#slotdefaultvaluetypedef)\]
 
 ## SlotDefaultValueTypeDef
 
@@ -2486,7 +2488,7 @@ Required fields:
 
 - `name`: `Literal['SlotName']` (see
   [SlotFilterNameType](./literals.md#slotfilternametype))
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 - `operator`: [SlotFilterOperatorType](./literals.md#slotfilteroperatortype)
 
 ## SlotPriorityTypeDef
@@ -2538,7 +2540,7 @@ Required fields:
 
 - `name`: `Literal['SlotTypeName']` (see
   [SlotTypeFilterNameType](./literals.md#slottypefilternametype))
-- `values`: `List`\[`str`\]
+- `values`: `Sequence`\[`str`\]
 - `operator`:
   [SlotTypeFilterOperatorType](./literals.md#slottypefilteroperatortype)
 
@@ -2577,7 +2579,8 @@ from mypy_boto3_lexv2_models.type_defs import SlotTypeValueTypeDef
 Optional fields:
 
 - `sampleValue`: [SampleValueTypeDef](./type_defs.md#samplevaluetypedef)
-- `synonyms`: `List`\[[SampleValueTypeDef](./type_defs.md#samplevaluetypedef)\]
+- `synonyms`:
+  `Sequence`\[[SampleValueTypeDef](./type_defs.md#samplevaluetypedef)\]
 
 ## SlotValueElicitationSettingTypeDef
 
@@ -2596,7 +2599,7 @@ Optional fields:
 - `promptSpecification`:
   [PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef)
 - `sampleUtterances`:
-  `List`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
+  `Sequence`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
 - `waitAndContinueSpecification`:
   [WaitAndContinueSpecificationTypeDef](./type_defs.md#waitandcontinuespecificationtypedef)
 
@@ -2669,7 +2672,7 @@ from mypy_boto3_lexv2_models.type_defs import StillWaitingResponseSpecificationT
 Required fields:
 
 - `messageGroups`:
-  `List`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
+  `Sequence`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
 - `frequencyInSeconds`: `int`
 - `timeoutInSeconds`: `int`
 
@@ -2686,7 +2689,7 @@ from mypy_boto3_lexv2_models.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceARN`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## TextLogDestinationTypeDef
 
@@ -2720,7 +2723,7 @@ from mypy_boto3_lexv2_models.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceARN`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateBotAliasRequestRequestTypeDef
 
@@ -2738,7 +2741,7 @@ Optional fields:
 
 - `description`: `str`
 - `botVersion`: `str`
-- `botAliasLocaleSettings`: `Dict`\[`str`,
+- `botAliasLocaleSettings`: `Mapping`\[`str`,
   [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
 - `conversationLogSettings`:
   [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
@@ -2900,21 +2903,21 @@ Optional fields:
 - `description`: `str`
 - `parentIntentSignature`: `str`
 - `sampleUtterances`:
-  `List`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
+  `Sequence`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
 - `dialogCodeHook`:
   [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
 - `fulfillmentCodeHook`:
   [FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef)
 - `slotPriorities`:
-  `List`\[[SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef)\]
+  `Sequence`\[[SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef)\]
 - `intentConfirmationSetting`:
   [IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef)
 - `intentClosingSetting`:
   [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
 - `inputContexts`:
-  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
+  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
 - `outputContexts`:
-  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
+  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
 - `kendraConfiguration`:
   [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 
@@ -3057,7 +3060,7 @@ Optional fields:
 
 - `description`: `str`
 - `slotTypeValues`:
-  `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
+  `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
 - `parentSlotTypeSignature`: `str`
 
 ## UpdateSlotTypeResponseTypeDef

@@ -147,6 +147,7 @@ from mypy_boto3_events.literals import ApiDestinationHttpMethodType, ...
 - [PropagateTagsType](./literals.md#propagatetagstype)
 - [ReplayStateType](./literals.md#replaystatetype)
 - [RuleStateType](./literals.md#rulestatetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

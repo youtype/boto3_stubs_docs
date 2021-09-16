@@ -39,7 +39,7 @@ Optional fields:
 
 - `description`: `str`
 - `kmsKeyId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `federationMode`: [FederationModeType](./literals.md#federationmodetype)
 - `federationParameters`:
   [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
@@ -103,7 +103,7 @@ Optional fields:
 - `applicationCallBackURL`: `str`
 - `federationURN`: `str`
 - `federationProviderName`: `str`
-- `attributeMap`: `Dict`\[`str`, `str`\]
+- `attributeMap`: `Mapping`\[`str`, `str`\]
 
 ## GetEnvironmentRequestRequestTypeDef
 
@@ -197,7 +197,7 @@ from mypy_boto3_finspace.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -208,7 +208,7 @@ from mypy_boto3_finspace.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
-- `tagKeys`: `List`\[`str`\]
+- `tagKeys`: `Sequence`\[`str`\]
 
 ## UpdateEnvironmentRequestRequestTypeDef
 

@@ -257,10 +257,10 @@ Required fields:
 
 Optional fields:
 
-- `sessionAttributes`: `Dict`\[`str`, `str`\]
-- `requestAttributes`: `Dict`\[`str`, `str`\]
+- `sessionAttributes`: `Mapping`\[`str`, `str`\]
+- `requestAttributes`: `Mapping`\[`str`, `str`\]
 - `activeContexts`:
-  `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
+  `Sequence`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
 ## PostTextResponseTypeDef
 
@@ -318,13 +318,13 @@ Required fields:
 
 Optional fields:
 
-- `sessionAttributes`: `Dict`\[`str`, `str`\]
+- `sessionAttributes`: `Mapping`\[`str`, `str`\]
 - `dialogAction`: [DialogActionTypeDef](./type_defs.md#dialogactiontypedef)
 - `recentIntentSummaryView`:
-  `List`\[[IntentSummaryTypeDef](./type_defs.md#intentsummarytypedef)\]
+  `Sequence`\[[IntentSummaryTypeDef](./type_defs.md#intentsummarytypedef)\]
 - `accept`: `str`
 - `activeContexts`:
-  `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
+  `Sequence`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 
 ## PutSessionResponseTypeDef
 

@@ -88,7 +88,7 @@ Required fields:
 Optional fields:
 
 - `Parameters`:
-  `List`\[[ValueHolderTypeDef](./type_defs.md#valueholdertypedef)\]
+  `Sequence`\[[ValueHolderTypeDef](./type_defs.md#valueholdertypedef)\]
 
 ## ExecuteStatementResultTypeDef
 
@@ -174,11 +174,11 @@ Optional fields:
 - `SessionToken`: `str`
 - `StartSession`:
   [StartSessionRequestTypeDef](./type_defs.md#startsessionrequesttypedef)
-- `StartTransaction`: `Dict`\[`str`, `Any`\]
-- `EndSession`: `Dict`\[`str`, `Any`\]
+- `StartTransaction`: `Mapping`\[`str`, `Any`\]
+- `EndSession`: `Mapping`\[`str`, `Any`\]
 - `CommitTransaction`:
   [CommitTransactionRequestTypeDef](./type_defs.md#committransactionrequesttypedef)
-- `AbortTransaction`: `Dict`\[`str`, `Any`\]
+- `AbortTransaction`: `Mapping`\[`str`, `Any`\]
 - `ExecuteStatement`:
   [ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef)
 - `FetchPage`:

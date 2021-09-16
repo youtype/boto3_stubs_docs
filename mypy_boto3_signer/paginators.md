@@ -94,7 +94,7 @@ Arguments for `ListSigningProfilesPaginator.paginate` method:
 - `includeCanceled`: `bool`
 - `platformId`: `str`
 - `statuses`:
-  `List`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
+  `Sequence`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

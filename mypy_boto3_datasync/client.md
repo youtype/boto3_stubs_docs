@@ -147,10 +147,11 @@ Keyword-only arguments:
 
 - `ActivationKey`: `str` *(required)*
 - `AgentName`: `str`
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 - `VpcEndpointId`: `str`
-- `SubnetArns`: `List`\[`str`\]
-- `SecurityGroupArns`: `List`\[`str`\]
+- `SubnetArns`: `Sequence`\[`str`\]
+- `SecurityGroupArns`: `Sequence`\[`str`\]
 
 Returns
 [CreateAgentResponseTypeDef](./type_defs.md#createagentresponsetypedef).
@@ -172,7 +173,8 @@ Keyword-only arguments:
 - `EfsFilesystemArn`: `str` *(required)*
 - `Ec2Config`: [Ec2ConfigTypeDef](./type_defs.md#ec2configtypedef) *(required)*
 - `Subdirectory`: `str`
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
 [CreateLocationEfsResponseTypeDef](./type_defs.md#createlocationefsresponsetypedef).
@@ -193,11 +195,12 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FsxFilesystemArn`: `str` *(required)*
-- `SecurityGroupArns`: `List`\[`str`\] *(required)*
+- `SecurityGroupArns`: `Sequence`\[`str`\] *(required)*
 - `User`: `str` *(required)*
 - `Password`: `str` *(required)*
 - `Subdirectory`: `str`
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 - `Domain`: `str`
 
 Returns
@@ -224,7 +227,8 @@ Keyword-only arguments:
   *(required)*
 - `MountOptions`:
   [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
 [CreateLocationNfsResponseTypeDef](./type_defs.md#createlocationnfsresponsetypedef).
@@ -246,14 +250,15 @@ Keyword-only arguments:
 
 - `ServerHostname`: `str` *(required)*
 - `BucketName`: `str` *(required)*
-- `AgentArns`: `List`\[`str`\] *(required)*
+- `AgentArns`: `Sequence`\[`str`\] *(required)*
 - `ServerPort`: `int`
 - `ServerProtocol`:
   [ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype)
 - `Subdirectory`: `str`
 - `AccessKey`: `str`
 - `SecretKey`: `str`
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
 [CreateLocationObjectStorageResponseTypeDef](./type_defs.md#createlocationobjectstorageresponsetypedef).
@@ -276,8 +281,9 @@ Keyword-only arguments:
 - `S3Config`: [S3ConfigTypeDef](./type_defs.md#s3configtypedef) *(required)*
 - `Subdirectory`: `str`
 - `S3StorageClass`: [S3StorageClassType](./literals.md#s3storageclasstype)
-- `AgentArns`: `List`\[`str`\]
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `AgentArns`: `Sequence`\[`str`\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
 [CreateLocationS3ResponseTypeDef](./type_defs.md#createlocations3responsetypedef).
@@ -301,11 +307,12 @@ Keyword-only arguments:
 - `ServerHostname`: `str` *(required)*
 - `User`: `str` *(required)*
 - `Password`: `str` *(required)*
-- `AgentArns`: `List`\[`str`\] *(required)*
+- `AgentArns`: `Sequence`\[`str`\] *(required)*
 - `Domain`: `str`
 - `MountOptions`:
   [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
 Returns
 [CreateLocationSmbResponseTypeDef](./type_defs.md#createlocationsmbresponsetypedef).
@@ -329,10 +336,13 @@ Keyword-only arguments:
 - `CloudWatchLogGroupArn`: `str`
 - `Name`: `str`
 - `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
-- `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Excludes`:
+  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 - `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
-- `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Includes`:
+  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 Returns [CreateTaskResponseTypeDef](./type_defs.md#createtaskresponsetypedef).
 
@@ -577,7 +587,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -620,7 +630,7 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Filters`:
-  `List`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
+  `Sequence`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
 
 Returns
 [ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef).
@@ -683,7 +693,8 @@ Keyword-only arguments:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `Filters`: `List`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
+- `Filters`:
+  `Sequence`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
 
 Returns [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef).
 
@@ -703,8 +714,10 @@ Keyword-only arguments:
 
 - `TaskArn`: `str` *(required)*
 - `OverrideOptions`: [OptionsTypeDef](./type_defs.md#optionstypedef)
-- `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
-- `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Includes`:
+  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Excludes`:
+  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 Returns
 [StartTaskExecutionResponseTypeDef](./type_defs.md#starttaskexecutionresponsetypedef).
@@ -724,7 +737,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+- `Tags`:
+  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -744,7 +758,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Keys`: `List`\[`str`\] *(required)*
+- `Keys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -813,7 +827,7 @@ Keyword-only arguments:
 - `Subdirectory`: `str`
 - `AccessKey`: `str`
 - `SecretKey`: `str`
-- `AgentArns`: `List`\[`str`\]
+- `AgentArns`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -837,7 +851,7 @@ Keyword-only arguments:
 - `User`: `str`
 - `Domain`: `str`
 - `Password`: `str`
-- `AgentArns`: `List`\[`str`\]
+- `AgentArns`: `Sequence`\[`str`\]
 - `MountOptions`:
   [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
 
@@ -859,11 +873,13 @@ Keyword-only arguments:
 
 - `TaskArn`: `str` *(required)*
 - `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
-- `Excludes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Excludes`:
+  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 - `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
 - `Name`: `str`
 - `CloudWatchLogGroupArn`: `str`
-- `Includes`: `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+- `Includes`:
+  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 

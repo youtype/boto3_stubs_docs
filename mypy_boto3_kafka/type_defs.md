@@ -123,7 +123,7 @@ from mypy_boto3_kafka.type_defs import BatchAssociateScramSecretRequestRequestTy
 Required fields:
 
 - `ClusterArn`: `str`
-- `SecretArnList`: `List`\[`str`\]
+- `SecretArnList`: `Sequence`\[`str`\]
 
 ## BatchAssociateScramSecretResponseTypeDef
 
@@ -148,7 +148,7 @@ from mypy_boto3_kafka.type_defs import BatchDisassociateScramSecretRequestReques
 Required fields:
 
 - `ClusterArn`: `str`
-- `SecretArnList`: `List`\[`str`\]
+- `SecretArnList`: `Sequence`\[`str`\]
 
 ## BatchDisassociateScramSecretResponseTypeDef
 
@@ -196,14 +196,14 @@ from mypy_boto3_kafka.type_defs import BrokerNodeGroupInfoTypeDef
 
 Required fields:
 
-- `ClientSubnets`: `List`\[`str`\]
+- `ClientSubnets`: `Sequence`\[`str`\]
 - `InstanceType`: `str`
 
 Optional fields:
 
 - `BrokerAZDistribution`: `Literal['DEFAULT']` (see
   [BrokerAZDistributionType](./literals.md#brokerazdistributiontype))
-- `SecurityGroups`: `List`\[`str`\]
+- `SecurityGroups`: `Sequence`\[`str`\]
 - `StorageInfo`: [StorageInfoTypeDef](./type_defs.md#storageinfotypedef)
 
 ## BrokerNodeInfoTypeDef
@@ -420,7 +420,7 @@ Optional fields:
 - `OpenMonitoring`:
   [OpenMonitoringInfoTypeDef](./type_defs.md#openmonitoringinfotypedef)
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateClusterResponseTypeDef
 
@@ -450,7 +450,7 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
-- `KafkaVersions`: `List`\[`str`\]
+- `KafkaVersions`: `Sequence`\[`str`\]
 
 ## CreateConfigurationResponseTypeDef
 
@@ -1127,7 +1127,7 @@ from mypy_boto3_kafka.type_defs import RebootBrokerRequestRequestTypeDef
 
 Required fields:
 
-- `BrokerIds`: `List`\[`str`\]
+- `BrokerIds`: `Sequence`\[`str`\]
 - `ClusterArn`: `str`
 
 ## RebootBrokerResponseTypeDef
@@ -1224,7 +1224,7 @@ from mypy_boto3_kafka.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## TlsTypeDef
 
@@ -1234,7 +1234,7 @@ from mypy_boto3_kafka.type_defs import TlsTypeDef
 
 Optional fields:
 
-- `CertificateAuthorityArnList`: `List`\[`str`\]
+- `CertificateAuthorityArnList`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
 
 ## UnauthenticatedTypeDef
@@ -1268,7 +1268,7 @@ from mypy_boto3_kafka.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateBrokerCountRequestRequestTypeDef
 
@@ -1306,7 +1306,7 @@ Required fields:
 - `ClusterArn`: `str`
 - `CurrentVersion`: `str`
 - `TargetBrokerEBSVolumeInfo`:
-  `List`\[[BrokerEBSVolumeInfoTypeDef](./type_defs.md#brokerebsvolumeinfotypedef)\]
+  `Sequence`\[[BrokerEBSVolumeInfoTypeDef](./type_defs.md#brokerebsvolumeinfotypedef)\]
 
 ## UpdateBrokerStorageResponseTypeDef
 

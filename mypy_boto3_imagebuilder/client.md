@@ -183,11 +183,11 @@ Keyword-only arguments:
 - `clientToken`: `str` *(required)*
 - `description`: `str`
 - `changeDescription`: `str`
-- `supportedOsVersions`: `List`\[`str`\]
+- `supportedOsVersions`: `Sequence`\[`str`\]
 - `data`: `str`
 - `uri`: `str`
 - `kmsKeyId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateComponentResponseTypeDef](./type_defs.md#createcomponentresponsetypedef).
@@ -212,7 +212,7 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `semanticVersion`: `str` *(required)*
 - `components`:
-  `List`\[[ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)\]
+  `Sequence`\[[ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)\]
   *(required)*
 - `parentImage`: `str` *(required)*
 - `targetRepository`:
@@ -226,7 +226,7 @@ Keyword-only arguments:
 - `dockerfileTemplateUri`: `str`
 - `platformOverride`: [PlatformType](./literals.md#platformtype)
 - `imageOsVersionOverride`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `workingDirectory`: `str`
 - `kmsKeyId`: `str`
 
@@ -250,11 +250,11 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 - `distributions`:
-  `List`\[[DistributionTypeDef](./type_defs.md#distributiontypedef)\]
+  `Sequence`\[[DistributionTypeDef](./type_defs.md#distributiontypedef)\]
   *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateDistributionConfigurationResponseTypeDef](./type_defs.md#createdistributionconfigurationresponsetypedef).
@@ -281,7 +281,7 @@ Keyword-only arguments:
 - `imageTestsConfiguration`:
   [ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef)
 - `enhancedImageMetadataEnabled`: `bool`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateImageResponseTypeDef](./type_defs.md#createimageresponsetypedef).
@@ -313,7 +313,7 @@ Keyword-only arguments:
 - `enhancedImageMetadataEnabled`: `bool`
 - `schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
 - `status`: [PipelineStatusType](./literals.md#pipelinestatustype)
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateImagePipelineResponseTypeDef](./type_defs.md#createimagepipelineresponsetypedef).
@@ -335,14 +335,14 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `semanticVersion`: `str` *(required)*
 - `components`:
-  `List`\[[ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)\]
+  `Sequence`\[[ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)\]
   *(required)*
 - `parentImage`: `str` *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
 - `blockDeviceMappings`:
-  `List`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
+  `Sequence`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
+- `tags`: `Mapping`\[`str`, `str`\]
 - `workingDirectory`: `str`
 - `additionalInstanceConfiguration`:
   [AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef)
@@ -369,15 +369,15 @@ Keyword-only arguments:
 - `instanceProfileName`: `str` *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
-- `instanceTypes`: `List`\[`str`\]
-- `securityGroupIds`: `List`\[`str`\]
+- `instanceTypes`: `Sequence`\[`str`\]
+- `securityGroupIds`: `Sequence`\[`str`\]
 - `subnetId`: `str`
 - `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `keyPair`: `str`
 - `terminateInstanceOnFailure`: `bool`
 - `snsTopicArn`: `str`
-- `resourceTags`: `Dict`\[`str`, `str`\]
-- `tags`: `Dict`\[`str`, `str`\]
+- `resourceTags`: `Mapping`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateInfrastructureConfigurationResponseTypeDef](./type_defs.md#createinfrastructureconfigurationresponsetypedef).
@@ -532,7 +532,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -778,7 +778,7 @@ Keyword-only arguments:
 - `data`: `str`
 - `uri`: `str`
 - `kmsKeyId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+- `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ImportComponentResponseTypeDef](./type_defs.md#importcomponentresponsetypedef).
@@ -822,7 +822,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `owner`: [OwnershipType](./literals.md#ownershiptype)
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `byName`: `bool`
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -846,7 +846,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `owner`: [OwnershipType](./literals.md#ownershiptype)
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -868,7 +868,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -891,7 +891,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `imageVersionArn`: `str` *(required)*
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -936,7 +936,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `imagePipelineArn`: `str` *(required)*
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -958,7 +958,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -980,7 +980,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `owner`: [OwnershipType](./literals.md#ownershiptype)
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1002,7 +1002,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `owner`: [OwnershipType](./literals.md#ownershiptype)
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `byName`: `bool`
 - `maxResults`: `int`
 - `nextToken`: `str`
@@ -1025,7 +1025,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -1171,7 +1171,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tags`: `Dict`\[`str`, `str`\] *(required)*
+- `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1190,7 +1190,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `tagKeys`: `List`\[`str`\] *(required)*
+- `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1211,7 +1211,7 @@ Keyword-only arguments:
 
 - `distributionConfigurationArn`: `str` *(required)*
 - `distributions`:
-  `List`\[[DistributionTypeDef](./type_defs.md#distributiontypedef)\]
+  `Sequence`\[[DistributionTypeDef](./type_defs.md#distributiontypedef)\]
   *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
@@ -1269,14 +1269,14 @@ Keyword-only arguments:
 - `instanceProfileName`: `str` *(required)*
 - `clientToken`: `str` *(required)*
 - `description`: `str`
-- `instanceTypes`: `List`\[`str`\]
-- `securityGroupIds`: `List`\[`str`\]
+- `instanceTypes`: `Sequence`\[`str`\]
+- `securityGroupIds`: `Sequence`\[`str`\]
 - `subnetId`: `str`
 - `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
 - `keyPair`: `str`
 - `terminateInstanceOnFailure`: `bool`
 - `snsTopicArn`: `str`
-- `resourceTags`: `Dict`\[`str`, `str`\]
+- `resourceTags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [UpdateInfrastructureConfigurationResponseTypeDef](./type_defs.md#updateinfrastructureconfigurationresponsetypedef).

@@ -144,8 +144,8 @@ Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
 - `Label`: `str` *(required)*
-- `AWSAccountId`: `List`\[`str`\] *(required)*
-- `ActionName`: `List`\[`str`\] *(required)*
+- `AWSAccountId`: `Sequence`\[`str`\] *(required)*
+- `ActionName`: `Sequence`\[`str`\] *(required)*
 
 ### can_paginate
 
@@ -223,7 +223,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Platform`: `str` *(required)*
-- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
+- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns
 [CreatePlatformApplicationResponseTypeDef](./type_defs.md#createplatformapplicationresponsetypedef).
@@ -246,7 +246,7 @@ Keyword-only arguments:
 - `PlatformApplicationArn`: `str` *(required)*
 - `Token`: `str` *(required)*
 - `CustomUserData`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 
 Returns
 [CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
@@ -288,8 +288,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateTopicResponseTypeDef](./type_defs.md#createtopicresponsetypedef).
@@ -374,7 +374,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -435,7 +435,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `attributes`: `List`\[`str`\]
+- `attributes`: `Sequence`\[`str`\]
 
 Returns
 [GetSMSAttributesResponseTypeDef](./type_defs.md#getsmsattributesresponsetypedef).
@@ -712,7 +712,7 @@ Keyword-only arguments:
 - `PhoneNumber`: `str`
 - `Subject`: `str`
 - `MessageStructure`: `str`
-- `MessageAttributes`: `Dict`\[`str`,
+- `MessageAttributes`: `Mapping`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
@@ -752,7 +752,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
-- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
+- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### set_platform_application_attributes
 
@@ -771,7 +771,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PlatformApplicationArn`: `str` *(required)*
-- `Attributes`: `Dict`\[`str`, `str`\] *(required)*
+- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
 ### set_sms_attributes
 
@@ -788,7 +788,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `attributes`: `Dict`\[`str`, `str`\] *(required)*
+- `attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -846,7 +846,7 @@ Keyword-only arguments:
 - `TopicArn`: `str` *(required)*
 - `Protocol`: `str` *(required)*
 - `Endpoint`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+- `Attributes`: `Mapping`\[`str`, `str`\]
 - `ReturnSubscriptionArn`: `bool`
 
 Returns [SubscribeResponseTypeDef](./type_defs.md#subscriberesponsetypedef).
@@ -866,7 +866,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -901,7 +901,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

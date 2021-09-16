@@ -15,6 +15,7 @@ pip install mypy-boto3-chime-sdk-identity
   - [ChimeSDKIdentityClient](#chimesdkidentityclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
+  - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
 ## ChimeSDKIdentityClient
@@ -63,6 +64,18 @@ ChimeSDKIdentityClient [exceptions](./client.md#exceptions)
 - ServiceUnavailableException
 - ThrottledClientException
 - UnauthorizedClientException
+
+## Literals
+
+Type annotations for [literals](./literals.md) used in methods and schema.
+
+Can be used directly:
+
+```python
+from mypy_boto3_chime_sdk_identity.literals import ServiceName, ...
+```
+
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

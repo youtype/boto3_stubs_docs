@@ -105,7 +105,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AttachmentIds`: `List`\[`str`\] *(required)*
+- `AttachmentIds`: `Sequence`\[`str`\] *(required)*
 - `ClientToken`: `str` *(required)*
 - `ConnectionToken`: `str` *(required)*
 
@@ -126,7 +126,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `Type`: `List`\[[ConnectionTypeType](./literals.md#connectiontypetype)\]
+- `Type`: `Sequence`\[[ConnectionTypeType](./literals.md#connectiontypetype)\]
   *(required)*
 - `ParticipantToken`: `str` *(required)*
 
@@ -166,7 +166,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

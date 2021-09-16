@@ -254,7 +254,7 @@ from mypy_boto3_route53.type_defs import ChangeBatchTypeDef
 
 Required fields:
 
-- `Changes`: `List`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
+- `Changes`: `Sequence`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
 
 Optional fields:
 
@@ -312,8 +312,8 @@ Required fields:
 
 Optional fields:
 
-- `AddTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RemoveTagKeys`: `List`\[`str`\]
+- `AddTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `RemoveTagKeys`: `Sequence`\[`str`\]
 
 ## ChangeTypeDef
 
@@ -1258,10 +1258,10 @@ Optional fields:
 - `Inverted`: `bool`
 - `Disabled`: `bool`
 - `HealthThreshold`: `int`
-- `ChildHealthChecks`: `List`\[`str`\]
+- `ChildHealthChecks`: `Sequence`\[`str`\]
 - `EnableSNI`: `bool`
 - `Regions`:
-  `List`\[[HealthCheckRegionType](./literals.md#healthcheckregiontype)\]
+  `Sequence`\[[HealthCheckRegionType](./literals.md#healthcheckregiontype)\]
 - `AlarmIdentifier`:
   [AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef)
 - `InsufficientDataHealthStatus`:
@@ -1671,7 +1671,7 @@ from mypy_boto3_route53.type_defs import ListTagsForResourcesRequestRequestTypeD
 Required fields:
 
 - `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
-- `ResourceIds`: `List`\[`str`\]
+- `ResourceIds`: `Sequence`\[`str`\]
 
 ## ListTagsForResourcesResponseTypeDef
 
@@ -1920,7 +1920,7 @@ Optional fields:
 - `MultiValueAnswer`: `bool`
 - `TTL`: `int`
 - `ResourceRecords`:
-  `List`\[[ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)\]
+  `Sequence`\[[ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)\]
 - `AliasTarget`: [AliasTargetTypeDef](./type_defs.md#aliastargettypedef)
 - `HealthCheckId`: `str`
 - `TrafficPolicyInstanceId`: `str`
@@ -2102,16 +2102,16 @@ Optional fields:
 - `Inverted`: `bool`
 - `Disabled`: `bool`
 - `HealthThreshold`: `int`
-- `ChildHealthChecks`: `List`\[`str`\]
+- `ChildHealthChecks`: `Sequence`\[`str`\]
 - `EnableSNI`: `bool`
 - `Regions`:
-  `List`\[[HealthCheckRegionType](./literals.md#healthcheckregiontype)\]
+  `Sequence`\[[HealthCheckRegionType](./literals.md#healthcheckregiontype)\]
 - `AlarmIdentifier`:
   [AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef)
 - `InsufficientDataHealthStatus`:
   [InsufficientDataHealthStatusType](./literals.md#insufficientdatahealthstatustype)
 - `ResetElements`:
-  `List`\[[ResettableElementNameType](./literals.md#resettableelementnametype)\]
+  `Sequence`\[[ResettableElementNameType](./literals.md#resettableelementnametype)\]
 
 ## UpdateHealthCheckResponseTypeDef
 

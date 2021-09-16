@@ -115,13 +115,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
-- `EventTypeIds`: `List`\[`str`\] *(required)*
+- `EventTypeIds`: `Sequence`\[`str`\] *(required)*
 - `Resource`: `str` *(required)*
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
   *(required)*
 - `DetailType`: [DetailTypeType](./literals.md#detailtypetype) *(required)*
 - `ClientRequestToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `Status`:
   [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
 
@@ -201,7 +201,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -224,7 +224,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef)\]
+  `Sequence`\[[ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -247,7 +247,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef)\]
+  `Sequence`\[[ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -290,7 +290,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Filters`:
-  `List`\[[ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)\]
+  `Sequence`\[[ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -334,7 +334,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `Tags`: `Dict`\[`str`, `str`\] *(required)*
+- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef).
 
@@ -377,7 +377,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Arn`: `str` *(required)*
-- `TagKeys`: `List`\[`str`\] *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -400,8 +400,8 @@ Keyword-only arguments:
 - `Name`: `str`
 - `Status`:
   [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
-- `EventTypeIds`: `List`\[`str`\]
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
+- `EventTypeIds`: `Sequence`\[`str`\]
+- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
 - `DetailType`: [DetailTypeType](./literals.md#detailtypetype)
 
 Returns `Dict`\[`str`, `Any`\].

@@ -96,7 +96,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 
@@ -119,8 +119,8 @@ Keyword-only arguments:
 
 - `ProductCode`: `str` *(required)*
 - `Filter`:
-  `Dict`\[[GetEntitlementFilterNameType](./literals.md#getentitlementfilternametype),
-  `List`\[`str`\]\]
+  `Mapping`\[[GetEntitlementFilterNameType](./literals.md#getentitlementfilternametype),
+  `Sequence`\[`str`\]\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
 

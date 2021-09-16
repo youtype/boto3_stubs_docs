@@ -44,7 +44,7 @@ Required fields:
 
 - `OutpostIdentifier`: `str`
 - `LineItems`:
-  `List`\[[LineItemRequestTypeDef](./type_defs.md#lineitemrequesttypedef)\]
+  `Sequence`\[[LineItemRequestTypeDef](./type_defs.md#lineitemrequesttypedef)\]
 - `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
 
 Optional fields:
@@ -80,7 +80,7 @@ Optional fields:
 - `Description`: `str`
 - `AvailabilityZone`: `str`
 - `AvailabilityZoneId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateOutpostOutputTypeDef
 
@@ -211,9 +211,9 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `LifeCycleStatusFilter`: `List`\[`str`\]
-- `AvailabilityZoneFilter`: `List`\[`str`\]
-- `AvailabilityZoneIdFilter`: `List`\[`str`\]
+- `LifeCycleStatusFilter`: `Sequence`\[`str`\]
+- `AvailabilityZoneFilter`: `Sequence`\[`str`\]
+- `AvailabilityZoneIdFilter`: `Sequence`\[`str`\]
 
 ## ListOutpostsOutputTypeDef
 
@@ -348,7 +348,7 @@ from mypy_boto3_outposts.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -359,4 +359,4 @@ from mypy_boto3_outposts.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]

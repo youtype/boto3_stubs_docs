@@ -116,7 +116,7 @@ from mypy_boto3_health.type_defs import DescribeAffectedEntitiesForOrganizationR
 Required fields:
 
 - `organizationEntityFilters`:
-  `List`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
+  `Sequence`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
 
 Optional fields:
 
@@ -178,7 +178,7 @@ from mypy_boto3_health.type_defs import DescribeEntityAggregatesRequestRequestTy
 
 Optional fields:
 
-- `eventArns`: `List`\[`str`\]
+- `eventArns`: `Sequence`\[`str`\]
 
 ## DescribeEntityAggregatesResponseTypeDef
 
@@ -233,7 +233,7 @@ from mypy_boto3_health.type_defs import DescribeEventDetailsForOrganizationReque
 Required fields:
 
 - `organizationEventDetailFilters`:
-  `List`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
+  `Sequence`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
 
 Optional fields:
 
@@ -262,7 +262,7 @@ from mypy_boto3_health.type_defs import DescribeEventDetailsRequestRequestTypeDe
 
 Required fields:
 
-- `eventArns`: `List`\[`str`\]
+- `eventArns`: `Sequence`\[`str`\]
 
 Optional fields:
 
@@ -394,17 +394,17 @@ from mypy_boto3_health.type_defs import EntityFilterTypeDef
 
 Required fields:
 
-- `eventArns`: `List`\[`str`\]
+- `eventArns`: `Sequence`\[`str`\]
 
 Optional fields:
 
-- `entityArns`: `List`\[`str`\]
-- `entityValues`: `List`\[`str`\]
+- `entityArns`: `Sequence`\[`str`\]
+- `entityValues`: `Sequence`\[`str`\]
 - `lastUpdatedTimes`:
-  `List`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
-- `tags`: `List`\[`Dict`\[`str`, `str`\]\]
+  `Sequence`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
+- `tags`: `Sequence`\[`Mapping`\[`str`, `str`\]\]
 - `statusCodes`:
-  `List`\[[entityStatusCodeType](./literals.md#entitystatuscodetype)\]
+  `Sequence`\[[entityStatusCodeType](./literals.md#entitystatuscodetype)\]
 
 ## EventAccountFilterTypeDef
 
@@ -474,24 +474,24 @@ from mypy_boto3_health.type_defs import EventFilterTypeDef
 
 Optional fields:
 
-- `eventArns`: `List`\[`str`\]
-- `eventTypeCodes`: `List`\[`str`\]
-- `services`: `List`\[`str`\]
-- `regions`: `List`\[`str`\]
-- `availabilityZones`: `List`\[`str`\]
+- `eventArns`: `Sequence`\[`str`\]
+- `eventTypeCodes`: `Sequence`\[`str`\]
+- `services`: `Sequence`\[`str`\]
+- `regions`: `Sequence`\[`str`\]
+- `availabilityZones`: `Sequence`\[`str`\]
 - `startTimes`:
-  `List`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
+  `Sequence`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
 - `endTimes`:
-  `List`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
+  `Sequence`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
 - `lastUpdatedTimes`:
-  `List`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
-- `entityArns`: `List`\[`str`\]
-- `entityValues`: `List`\[`str`\]
+  `Sequence`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
+- `entityArns`: `Sequence`\[`str`\]
+- `entityValues`: `Sequence`\[`str`\]
 - `eventTypeCategories`:
-  `List`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
-- `tags`: `List`\[`Dict`\[`str`, `str`\]\]
+  `Sequence`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
+- `tags`: `Sequence`\[`Mapping`\[`str`, `str`\]\]
 - `eventStatusCodes`:
-  `List`\[[eventStatusCodeType](./literals.md#eventstatuscodetype)\]
+  `Sequence`\[[eventStatusCodeType](./literals.md#eventstatuscodetype)\]
 
 ## EventTypeDef
 
@@ -522,10 +522,10 @@ from mypy_boto3_health.type_defs import EventTypeFilterTypeDef
 
 Optional fields:
 
-- `eventTypeCodes`: `List`\[`str`\]
-- `services`: `List`\[`str`\]
+- `eventTypeCodes`: `Sequence`\[`str`\]
+- `services`: `Sequence`\[`str`\]
 - `eventTypeCategories`:
-  `List`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
+  `Sequence`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
 
 ## EventTypeTypeDef
 
@@ -587,20 +587,20 @@ from mypy_boto3_health.type_defs import OrganizationEventFilterTypeDef
 
 Optional fields:
 
-- `eventTypeCodes`: `List`\[`str`\]
-- `awsAccountIds`: `List`\[`str`\]
-- `services`: `List`\[`str`\]
-- `regions`: `List`\[`str`\]
+- `eventTypeCodes`: `Sequence`\[`str`\]
+- `awsAccountIds`: `Sequence`\[`str`\]
+- `services`: `Sequence`\[`str`\]
+- `regions`: `Sequence`\[`str`\]
 - `startTime`: [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
 - `endTime`: [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
 - `lastUpdatedTime`:
   [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
-- `entityArns`: `List`\[`str`\]
-- `entityValues`: `List`\[`str`\]
+- `entityArns`: `Sequence`\[`str`\]
+- `entityValues`: `Sequence`\[`str`\]
 - `eventTypeCategories`:
-  `List`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
+  `Sequence`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
 - `eventStatusCodes`:
-  `List`\[[eventStatusCodeType](./literals.md#eventstatuscodetype)\]
+  `Sequence`\[[eventStatusCodeType](./literals.md#eventstatuscodetype)\]
 
 ## OrganizationEventTypeDef
 

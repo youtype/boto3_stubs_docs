@@ -117,7 +117,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `Metadata`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAppInstanceResponseTypeDef](./type_defs.md#createappinstanceresponsetypedef).
@@ -163,7 +163,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
 - `Metadata`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
 [CreateAppInstanceUserResponseTypeDef](./type_defs.md#createappinstanceuserresponsetypedef).
@@ -294,7 +294,7 @@ Boto3 documentation:
 Arguments:
 
 - `ClientMethod`: `str` *(required)*
-- `Params`: `Dict`\[`str`, `Any`\]
+- `Params`: `Mapping`\[`str`, `Any`\]
 - `ExpiresIn`: `int`
 - `HttpMethod`: `str`
 

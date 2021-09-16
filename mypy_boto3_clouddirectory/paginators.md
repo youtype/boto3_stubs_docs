@@ -212,7 +212,7 @@ Arguments for `ListIncomingTypedLinksPaginator.paginate` method:
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `FilterAttributeRanges`:
-  `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
+  `Sequence`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
 - `ConsistencyLevel`:
@@ -246,7 +246,7 @@ Arguments for `ListIndexPaginator.paginate` method:
 - `IndexReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `RangesOnIndexedValues`:
-  `List`\[[ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef)\]
+  `Sequence`\[[ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef)\]
 - `ConsistencyLevel`:
   [ConsistencyLevelType](./literals.md#consistencyleveltype)
 - `PaginationConfig`:
@@ -393,7 +393,7 @@ Arguments for `ListOutgoingTypedLinksPaginator.paginate` method:
 - `ObjectReference`:
   [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
 - `FilterAttributeRanges`:
-  `List`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
+  `Sequence`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
 - `FilterTypedLink`:
   [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
 - `ConsistencyLevel`:

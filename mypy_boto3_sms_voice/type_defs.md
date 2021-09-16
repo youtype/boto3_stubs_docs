@@ -111,7 +111,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `KinesisFirehoseDestination`:
   [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
-- `MatchingEventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
+- `MatchingEventTypes`:
+  `Sequence`\[[EventTypeType](./literals.md#eventtypetype)\]
 - `SnsDestination`:
   [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 

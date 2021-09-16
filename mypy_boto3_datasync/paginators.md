@@ -58,7 +58,7 @@ Boto3 documentation:
 Arguments for `ListLocationsPaginator.paginate` method:
 
 - `Filters`:
-  `List`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
+  `Sequence`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -135,7 +135,8 @@ Boto3 documentation:
 
 Arguments for `ListTasksPaginator.paginate` method:
 
-- `Filters`: `List`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
+- `Filters`:
+  `Sequence`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

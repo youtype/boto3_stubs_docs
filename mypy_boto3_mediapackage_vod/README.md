@@ -97,10 +97,11 @@ from mypy_boto3_mediapackage_vod.literals import AdMarkersType, ...
 - [ListPackagingConfigurationsPaginatorName](./literals.md#listpackagingconfigurationspaginatorname)
 - [ListPackagingGroupsPaginatorName](./literals.md#listpackaginggroupspaginatorname)
 - [ManifestLayoutType](./literals.md#manifestlayouttype)
+- [PeriodTriggersElementType](./literals.md#periodtriggerselementtype)
 - [ProfileType](./literals.md#profiletype)
 - [SegmentTemplateFormatType](./literals.md#segmenttemplateformattype)
 - [StreamOrderType](./literals.md#streamordertype)
-- [\_\_PeriodTriggersElementType](./literals.md#__periodtriggerselementtype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

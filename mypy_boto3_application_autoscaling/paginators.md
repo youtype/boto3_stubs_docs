@@ -34,7 +34,7 @@ Arguments for `DescribeScalableTargetsPaginator.paginate` method:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ResourceIds`: `List`\[`str`\]
+- `ResourceIds`: `Sequence`\[`str`\]
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
 - `PaginationConfig`:
@@ -94,7 +94,7 @@ Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `PolicyNames`: `List`\[`str`\]
+- `PolicyNames`: `Sequence`\[`str`\]
 - `ResourceId`: `str`
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)
@@ -125,7 +125,7 @@ Arguments for `DescribeScheduledActionsPaginator.paginate` method:
 
 - `ServiceNamespace`:
   [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ScheduledActionNames`: `List`\[`str`\]
+- `ScheduledActionNames`: `Sequence`\[`str`\]
 - `ResourceId`: `str`
 - `ScalableDimension`:
   [ScalableDimensionType](./literals.md#scalabledimensiontype)

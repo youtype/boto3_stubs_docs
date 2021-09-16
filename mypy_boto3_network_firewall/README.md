@@ -128,6 +128,7 @@ from mypy_boto3_network_firewall.literals import AttachmentStatusType, ...
 - [StatefulRuleProtocolType](./literals.md#statefulruleprotocoltype)
 - [TCPFlagType](./literals.md#tcpflagtype)
 - [TargetTypeType](./literals.md#targettypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

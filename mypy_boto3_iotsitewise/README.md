@@ -216,6 +216,7 @@ from mypy_boto3_iotsitewise.literals import AggregateTypeType, ...
 - [TimeOrderingType](./literals.md#timeorderingtype)
 - [TraversalDirectionType](./literals.md#traversaldirectiontype)
 - [TraversalTypeType](./literals.md#traversaltypetype)
+- [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
 

@@ -113,7 +113,7 @@ Optional fields:
 - `TimeoutInSeconds`: `int`
 - `MemoryInMB`: `int`
 - `ActiveTracing`: `bool`
-- `EnvironmentVariables`: `Dict`\[`str`, `str`\]
+- `EnvironmentVariables`: `Mapping`\[`str`, `str`\]
 
 ## CanaryRunConfigOutputTypeDef
 
@@ -268,7 +268,7 @@ Optional fields:
 - `SuccessRetentionPeriodInDays`: `int`
 - `FailureRetentionPeriodInDays`: `int`
 - `VpcConfig`: [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateCanaryResponseTypeDef
 
@@ -494,7 +494,7 @@ from mypy_boto3_synthetics.type_defs import TagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -505,7 +505,7 @@ from mypy_boto3_synthetics.type_defs import UntagResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
-- `TagKeys`: `List`\[`str`\]
+- `TagKeys`: `Sequence`\[`str`\]
 
 ## UpdateCanaryRequestRequestTypeDef
 
@@ -545,7 +545,7 @@ Required fields:
 Optional fields:
 
 - `BaseScreenshots`:
-  `List`\[[BaseScreenshotTypeDef](./type_defs.md#basescreenshottypedef)\]
+  `Sequence`\[[BaseScreenshotTypeDef](./type_defs.md#basescreenshottypedef)\]
 
 ## VisualReferenceOutputTypeDef
 
@@ -567,8 +567,8 @@ from mypy_boto3_synthetics.type_defs import VpcConfigInputTypeDef
 
 Optional fields:
 
-- `SubnetIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+- `SecurityGroupIds`: `Sequence`\[`str`\]
 
 ## VpcConfigOutputTypeDef
 
