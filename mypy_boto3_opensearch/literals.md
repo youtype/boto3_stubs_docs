@@ -14,6 +14,7 @@ type annotations stubs module
   - [DeploymentStatusType](#deploymentstatustype)
   - [DescribePackagesFilterNameType](#describepackagesfilternametype)
   - [DomainPackageStatusType](#domainpackagestatustype)
+  - [EngineTypeType](#enginetypetype)
   - [InboundConnectionStatusCodeType](#inboundconnectionstatuscodetype)
   - [LogTypeType](#logtypetype)
   - [OpenSearchPartitionInstanceTypeType](#opensearchpartitioninstancetypetype)
@@ -111,6 +112,17 @@ Values:
 - `ASSOCIATION_FAILED`
 - `DISSOCIATING`
 - `DISSOCIATION_FAILED`
+
+## EngineTypeType
+
+```python
+from mypy_boto3_opensearch.literals import EngineTypeType
+```
+
+Values:
+
+- `Elasticsearch`
+- `OpenSearch`
 
 ## InboundConnectionStatusCodeType
 

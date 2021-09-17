@@ -1993,6 +1993,7 @@ Required fields:
 Optional fields:
 
 - `ForceFailover`: `bool`
+- `ForcePlannedFailover`: `bool`
 
 ## RebootReplicationInstanceResponseTypeDef
 

@@ -743,6 +743,13 @@ Type annotations for `boto3.client("es").list_domain_names` method.
 Boto3 documentation:
 [ElasticsearchService.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domain_names)
 
+Arguments mapping described in
+[ListDomainNamesRequestRequestTypeDef](./type_defs.md#listdomainnamesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
+
 Returns
 [ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
 

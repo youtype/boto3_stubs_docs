@@ -1296,6 +1296,7 @@ Keyword-only arguments:
 
 - `ReplicationInstanceArn`: `str` *(required)*
 - `ForceFailover`: `bool`
+- `ForcePlannedFailover`: `bool`
 
 Returns
 [RebootReplicationInstanceResponseTypeDef](./type_defs.md#rebootreplicationinstanceresponsetypedef).

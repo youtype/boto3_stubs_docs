@@ -100,6 +100,7 @@ type annotations stubs module
   - [InstanceCountLimitsTypeDef](#instancecountlimitstypedef)
   - [InstanceLimitsTypeDef](#instancelimitstypedef)
   - [LimitsTypeDef](#limitstypedef)
+  - [ListDomainNamesRequestRequestTypeDef](#listdomainnamesrequestrequesttypedef)
   - [ListDomainNamesResponseTypeDef](#listdomainnamesresponsetypedef)
   - [ListDomainsForPackageRequestRequestTypeDef](#listdomainsforpackagerequestrequesttypedef)
   - [ListDomainsForPackageResponseTypeDef](#listdomainsforpackageresponsetypedef)
@@ -994,6 +995,7 @@ from mypy_boto3_es.type_defs import DomainInfoTypeDef
 Optional fields:
 
 - `DomainName`: `str`
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
 
 ## DomainInformationTypeDef
 
@@ -1411,6 +1413,16 @@ Optional fields:
   [InstanceLimitsTypeDef](./type_defs.md#instancelimitstypedef)
 - `AdditionalLimits`:
   `List`\[[AdditionalLimitTypeDef](./type_defs.md#additionallimittypedef)\]
+
+## ListDomainNamesRequestRequestTypeDef
+
+```python
+from mypy_boto3_es.type_defs import ListDomainNamesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
 
 ## ListDomainNamesResponseTypeDef
 

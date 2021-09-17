@@ -728,6 +728,13 @@ Type annotations for `boto3.client("opensearch").list_domain_names` method.
 Boto3 documentation:
 [OpenSearchService.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_domain_names)
 
+Arguments mapping described in
+[ListDomainNamesRequestRequestTypeDef](./type_defs.md#listdomainnamesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
+
 Returns
 [ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
 

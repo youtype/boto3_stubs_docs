@@ -18,6 +18,7 @@ type annotations stubs module
   - [DomainPackageStatusType](#domainpackagestatustype)
   - [ESPartitionInstanceTypeType](#espartitioninstancetypetype)
   - [ESWarmPartitionInstanceTypeType](#eswarmpartitioninstancetypetype)
+  - [EngineTypeType](#enginetypetype)
   - [GetUpgradeHistoryPaginatorName](#getupgradehistorypaginatorname)
   - [InboundCrossClusterSearchConnectionStatusCodeType](#inboundcrossclustersearchconnectionstatuscodetype)
   - [ListElasticsearchInstanceTypesPaginatorName](#listelasticsearchinstancetypespaginatorname)
@@ -214,6 +215,17 @@ Values:
 
 - `ultrawarm1.large.elasticsearch`
 - `ultrawarm1.medium.elasticsearch`
+
+## EngineTypeType
+
+```python
+from mypy_boto3_es.literals import EngineTypeType
+```
+
+Values:
+
+- `Elasticsearch`
+- `OpenSearch`
 
 ## GetUpgradeHistoryPaginatorName
 
