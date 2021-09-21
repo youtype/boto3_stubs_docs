@@ -113,6 +113,8 @@ Arguments for `ListActiveViolationsPaginator.paginate` method:
 - `behaviorCriteriaType`:
   [BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype)
 - `listSuppressedAlerts`: `bool`
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -1495,6 +1497,8 @@ Arguments for `ListViolationEventsPaginator.paginate` method:
 - `behaviorCriteriaType`:
   [BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype)
 - `listSuppressedAlerts`: `bool`
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

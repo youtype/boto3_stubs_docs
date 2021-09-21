@@ -22,6 +22,7 @@ type annotations stubs module
     - [delete_registry_policy](#delete_registry_policy)
     - [delete_repository](#delete_repository)
     - [delete_repository_policy](#delete_repository_policy)
+    - [describe_image_replication_status](#describe_image_replication_status)
     - [describe_image_scan_findings](#describe_image_scan_findings)
     - [describe_images](#describe_images)
     - [describe_registry](#describe_registry)
@@ -248,6 +249,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `repositoryName`: `str` *(required)*
+- `registryId`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `imageTagMutability`:
   [ImageTagMutabilityType](./literals.md#imagetagmutabilitytype)
@@ -331,6 +333,29 @@ Keyword-only arguments:
 
 Returns
 [DeleteRepositoryPolicyResponseTypeDef](./type_defs.md#deleterepositorypolicyresponsetypedef).
+
+### describe_image_replication_status
+
+Returns the replication status for a specified image.
+
+Type annotations for `boto3.client("ecr").describe_image_replication_status`
+method.
+
+Boto3 documentation:
+[ECR.Client.describe_image_replication_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Client.describe_image_replication_status)
+
+Arguments mapping described in
+[DescribeImageReplicationStatusRequestRequestTypeDef](./type_defs.md#describeimagereplicationstatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `repositoryName`: `str` *(required)*
+- `imageId`: [ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)
+  *(required)*
+- `registryId`: `str`
+
+Returns
+[DescribeImageReplicationStatusResponseTypeDef](./type_defs.md#describeimagereplicationstatusresponsetypedef).
 
 ### describe_image_scan_findings
 

@@ -200,6 +200,7 @@ type annotations stubs module
   - [GetTransitGatewayPrefixListReferencesPaginatorName](#gettransitgatewayprefixlistreferencespaginatorname)
   - [GetTransitGatewayRouteTableAssociationsPaginatorName](#gettransitgatewayroutetableassociationspaginatorname)
   - [GetTransitGatewayRouteTablePropagationsPaginatorName](#gettransitgatewayroutetablepropagationspaginatorname)
+  - [GetVpnConnectionDeviceTypesPaginatorName](#getvpnconnectiondevicetypespaginatorname)
   - [HostRecoveryType](#hostrecoverytype)
   - [HostTenancyType](#hosttenancytype)
   - [HttpTokensStateType](#httptokensstatetype)
@@ -2468,6 +2469,16 @@ from mypy_boto3_ec2.literals import GetTransitGatewayRouteTablePropagationsPagin
 Values:
 
 - `get_transit_gateway_route_table_propagations`
+
+## GetVpnConnectionDeviceTypesPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import GetVpnConnectionDeviceTypesPaginatorName
+```
+
+Values:
+
+- `get_vpn_connection_device_types`
 
 ## HostRecoveryType
 

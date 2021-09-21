@@ -123,6 +123,7 @@ type annotations stubs module
   - [ThingGroupIndexingModeType](#thinggroupindexingmodetype)
   - [ThingIndexingModeType](#thingindexingmodetype)
   - [TopicRuleDestinationStatusType](#topicruledestinationstatustype)
+  - [VerificationStateType](#verificationstatetype)
   - [ViolationEventTypeType](#violationeventtypetype)
   - [ServiceName](#servicename)
 
@@ -1453,6 +1454,19 @@ Values:
 - `ENABLED`
 - `ERROR`
 - `IN_PROGRESS`
+
+## VerificationStateType
+
+```python
+from mypy_boto3_iot.literals import VerificationStateType
+```
+
+Values:
+
+- `BENIGN_POSITIVE`
+- `FALSE_POSITIVE`
+- `TRUE_POSITIVE`
+- `UNKNOWN`
 
 ## ViolationEventTypeType
 

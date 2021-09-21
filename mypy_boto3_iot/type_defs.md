@@ -440,6 +440,7 @@ type annotations stubs module
   - [PublishFindingToSnsParamsTypeDef](#publishfindingtosnsparamstypedef)
   - [PutAssetPropertyValueEntryTypeDef](#putassetpropertyvalueentrytypedef)
   - [PutItemInputTypeDef](#putiteminputtypedef)
+  - [PutVerificationStateOnViolationRequestRequestTypeDef](#putverificationstateonviolationrequestrequesttypedef)
   - [RateIncreaseCriteriaTypeDef](#rateincreasecriteriatypedef)
   - [RegisterCACertificateRequestRequestTypeDef](#registercacertificaterequestrequesttypedef)
   - [RegisterCACertificateResponseTypeDef](#registercacertificateresponsetypedef)
@@ -678,6 +679,9 @@ Optional fields:
 - `lastViolationValue`: [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)
 - `violationEventAdditionalInfo`:
   [ViolationEventAdditionalInfoTypeDef](./type_defs.md#violationeventadditionalinfotypedef)
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
+- `verificationStateDescription`: `str`
 - `lastViolationTime`: `datetime`
 - `violationStartTime`: `datetime`
 
@@ -4679,6 +4683,8 @@ Optional fields:
 - `behaviorCriteriaType`:
   [BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype)
 - `listSuppressedAlerts`: `bool`
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -6149,6 +6155,8 @@ Optional fields:
 - `behaviorCriteriaType`:
   [BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype)
 - `listSuppressedAlerts`: `bool`
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -6562,6 +6570,22 @@ from mypy_boto3_iot.type_defs import PutItemInputTypeDef
 Required fields:
 
 - `tableName`: `str`
+
+## PutVerificationStateOnViolationRequestRequestTypeDef
+
+```python
+from mypy_boto3_iot.type_defs import PutVerificationStateOnViolationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `violationId`: `str`
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
+
+Optional fields:
+
+- `verificationStateDescription`: `str`
 
 ## RateIncreaseCriteriaTypeDef
 
@@ -8486,6 +8510,9 @@ Optional fields:
   [ViolationEventAdditionalInfoTypeDef](./type_defs.md#violationeventadditionalinfotypedef)
 - `violationEventType`:
   [ViolationEventTypeType](./literals.md#violationeventtypetype)
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
+- `verificationStateDescription`: `str`
 - `violationEventTime`: `datetime`
 
 ## VpcDestinationConfigurationTypeDef

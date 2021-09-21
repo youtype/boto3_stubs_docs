@@ -23,6 +23,8 @@ type annotations stubs module
   - [LifecyclePolicyPreviewCompleteWaiterName](#lifecyclepolicypreviewcompletewaitername)
   - [LifecyclePolicyPreviewStatusType](#lifecyclepolicypreviewstatustype)
   - [ListImagesPaginatorName](#listimagespaginatorname)
+  - [ReplicationStatusType](#replicationstatustype)
+  - [RepositoryFilterTypeType](#repositoryfiltertypetype)
   - [ScanStatusType](#scanstatustype)
   - [TagStatusType](#tagstatustype)
   - [ServiceName](#servicename)
@@ -194,6 +196,28 @@ from mypy_boto3_ecr.literals import ListImagesPaginatorName
 Values:
 
 - `list_images`
+
+## ReplicationStatusType
+
+```python
+from mypy_boto3_ecr.literals import ReplicationStatusType
+```
+
+Values:
+
+- `COMPLETE`
+- `FAILED`
+- `IN_PROGRESS`
+
+## RepositoryFilterTypeType
+
+```python
+from mypy_boto3_ecr.literals import RepositoryFilterTypeType
+```
+
+Values:
+
+- `PREFIX_MATCH`
 
 ## ScanStatusType
 

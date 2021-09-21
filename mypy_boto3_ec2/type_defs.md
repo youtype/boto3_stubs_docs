@@ -930,6 +930,10 @@ type annotations stubs module
   - [GetTransitGatewayRouteTableAssociationsResultTypeDef](#gettransitgatewayroutetableassociationsresulttypedef)
   - [GetTransitGatewayRouteTablePropagationsRequestRequestTypeDef](#gettransitgatewayroutetablepropagationsrequestrequesttypedef)
   - [GetTransitGatewayRouteTablePropagationsResultTypeDef](#gettransitgatewayroutetablepropagationsresulttypedef)
+  - [GetVpnConnectionDeviceSampleConfigurationRequestRequestTypeDef](#getvpnconnectiondevicesampleconfigurationrequestrequesttypedef)
+  - [GetVpnConnectionDeviceSampleConfigurationResultTypeDef](#getvpnconnectiondevicesampleconfigurationresulttypedef)
+  - [GetVpnConnectionDeviceTypesRequestRequestTypeDef](#getvpnconnectiondevicetypesrequestrequesttypedef)
+  - [GetVpnConnectionDeviceTypesResultTypeDef](#getvpnconnectiondevicetypesresulttypedef)
   - [GpuDeviceInfoTypeDef](#gpudeviceinfotypedef)
   - [GpuDeviceMemoryInfoTypeDef](#gpudevicememoryinfotypedef)
   - [GpuInfoTypeDef](#gpuinfotypedef)
@@ -1576,6 +1580,7 @@ type annotations stubs module
   - [VpcPeeringConnectionTypeDef](#vpcpeeringconnectiontypedef)
   - [VpcPeeringConnectionVpcInfoTypeDef](#vpcpeeringconnectionvpcinfotypedef)
   - [VpcTypeDef](#vpctypedef)
+  - [VpnConnectionDeviceTypeTypeDef](#vpnconnectiondevicetypetypedef)
   - [VpnConnectionOptionsSpecificationTypeDef](#vpnconnectionoptionsspecificationtypedef)
   - [VpnConnectionOptionsTypeDef](#vpnconnectionoptionstypedef)
   - [VpnConnectionTypeDef](#vpnconnectiontypedef)
@@ -14828,6 +14833,60 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetVpnConnectionDeviceSampleConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetVpnConnectionDeviceSampleConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `VpnConnectionId`: `str`
+- `VpnConnectionDeviceTypeId`: `str`
+
+Optional fields:
+
+- `InternetKeyExchangeVersion`: `str`
+- `DryRun`: `bool`
+
+## GetVpnConnectionDeviceSampleConfigurationResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetVpnConnectionDeviceSampleConfigurationResultTypeDef
+```
+
+Required fields:
+
+- `VpnConnectionDeviceSampleConfiguration`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetVpnConnectionDeviceTypesRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetVpnConnectionDeviceTypesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+## GetVpnConnectionDeviceTypesResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import GetVpnConnectionDeviceTypesResultTypeDef
+```
+
+Required fields:
+
+- `VpnConnectionDeviceTypes`:
+  `List`\[[VpnConnectionDeviceTypeTypeDef](./type_defs.md#vpnconnectiondevicetypetypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GpuDeviceInfoTypeDef
 
 ```python
@@ -24798,6 +24857,19 @@ Optional fields:
   `List`\[[VpcCidrBlockAssociationTypeDef](./type_defs.md#vpccidrblockassociationtypedef)\]
 - `IsDefault`: `bool`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## VpnConnectionDeviceTypeTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import VpnConnectionDeviceTypeTypeDef
+```
+
+Optional fields:
+
+- `VpnConnectionDeviceTypeId`: `str`
+- `Vendor`: `str`
+- `Platform`: `str`
+- `Software`: `str`
 
 ## VpnConnectionOptionsSpecificationTypeDef
 

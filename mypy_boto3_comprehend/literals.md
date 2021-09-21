@@ -34,6 +34,7 @@ type annotations stubs module
   - [PiiEntitiesDetectionModeType](#piientitiesdetectionmodetype)
   - [PiiEntityTypeType](#piientitytypetype)
   - [SentimentTypeType](#sentimenttypetype)
+  - [SplitType](#splittype)
   - [SyntaxLanguageCodeType](#syntaxlanguagecodetype)
   - [ServiceName](#servicename)
 
@@ -382,6 +383,17 @@ Values:
 - `NEGATIVE`
 - `NEUTRAL`
 - `POSITIVE`
+
+## SplitType
+
+```python
+from mypy_boto3_comprehend.literals import SplitType
+```
+
+Values:
+
+- `TEST`
+- `TRAIN`
 
 ## SyntaxLanguageCodeType
 

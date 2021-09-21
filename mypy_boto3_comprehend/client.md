@@ -45,10 +45,12 @@ type annotations stubs module
     - [detect_syntax](#detect_syntax)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_document_classification_jobs](#list_document_classification_jobs)
+    - [list_document_classifier_summaries](#list_document_classifier_summaries)
     - [list_document_classifiers](#list_document_classifiers)
     - [list_dominant_language_detection_jobs](#list_dominant_language_detection_jobs)
     - [list_endpoints](#list_endpoints)
     - [list_entities_detection_jobs](#list_entities_detection_jobs)
+    - [list_entity_recognizer_summaries](#list_entity_recognizer_summaries)
     - [list_entity_recognizers](#list_entity_recognizers)
     - [list_events_detection_jobs](#list_events_detection_jobs)
     - [list_key_phrases_detection_jobs](#list_key_phrases_detection_jobs)
@@ -328,6 +330,7 @@ Keyword-only arguments:
   *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
+- `VersionName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OutputDataConfig`:
   [DocumentClassifierOutputDataConfigTypeDef](./type_defs.md#documentclassifieroutputdataconfigtypedef)
@@ -390,6 +393,7 @@ Keyword-only arguments:
   *(required)*
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
   *(required)*
+- `VersionName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
@@ -845,6 +849,30 @@ Keyword-only arguments:
 Returns
 [ListDocumentClassificationJobsResponseTypeDef](./type_defs.md#listdocumentclassificationjobsresponsetypedef).
 
+### list_document_classifier_summaries
+
+Gets a list of summaries of the document classifiers that you have created See
+also:
+`AWS API Documentation <https://docs.aws.amazon.com/goto/WebAPI/comprehend -2017-11-27/ListDocumentClassifierSummaries>`\_
+**Request Syntax** response = client.list_document_classifier_summaries( ...
+
+Type annotations for
+`boto3.client("comprehend").list_document_classifier_summaries` method.
+
+Boto3 documentation:
+[Comprehend.Client.list_document_classifier_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_document_classifier_summaries)
+
+Arguments mapping described in
+[ListDocumentClassifierSummariesRequestRequestTypeDef](./type_defs.md#listdocumentclassifiersummariesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListDocumentClassifierSummariesResponseTypeDef](./type_defs.md#listdocumentclassifiersummariesresponsetypedef).
+
 ### list_document_classifiers
 
 Gets a list of the document classifiers that you have created.
@@ -934,6 +962,27 @@ Keyword-only arguments:
 
 Returns
 [ListEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listentitiesdetectionjobsresponsetypedef).
+
+### list_entity_recognizer_summaries
+
+Gets a list of summaries for the entity recognizers that you have created.
+
+Type annotations for
+`boto3.client("comprehend").list_entity_recognizer_summaries` method.
+
+Boto3 documentation:
+[Comprehend.Client.list_entity_recognizer_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_entity_recognizer_summaries)
+
+Arguments mapping described in
+[ListEntityRecognizerSummariesRequestRequestTypeDef](./type_defs.md#listentityrecognizersummariesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListEntityRecognizerSummariesResponseTypeDef](./type_defs.md#listentityrecognizersummariesresponsetypedef).
 
 ### list_entity_recognizers
 
@@ -1561,7 +1610,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
-- `DesiredInferenceUnits`: `int` *(required)*
+- `DesiredModelArn`: `str`
+- `DesiredInferenceUnits`: `int`
+- `DesiredDataAccessRoleArn`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 

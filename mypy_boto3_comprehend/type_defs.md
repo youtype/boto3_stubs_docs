@@ -81,6 +81,7 @@ type annotations stubs module
   - [DocumentClassifierInputDataConfigTypeDef](#documentclassifierinputdataconfigtypedef)
   - [DocumentClassifierOutputDataConfigTypeDef](#documentclassifieroutputdataconfigtypedef)
   - [DocumentClassifierPropertiesTypeDef](#documentclassifierpropertiestypedef)
+  - [DocumentClassifierSummaryTypeDef](#documentclassifiersummarytypedef)
   - [DocumentLabelTypeDef](#documentlabeltypedef)
   - [DocumentReaderConfigTypeDef](#documentreaderconfigtypedef)
   - [DominantLanguageDetectionJobFilterTypeDef](#dominantlanguagedetectionjobfiltertypedef)
@@ -100,6 +101,7 @@ type annotations stubs module
   - [EntityRecognizerMetadataEntityTypesListItemTypeDef](#entityrecognizermetadataentitytypeslistitemtypedef)
   - [EntityRecognizerMetadataTypeDef](#entityrecognizermetadatatypedef)
   - [EntityRecognizerPropertiesTypeDef](#entityrecognizerpropertiestypedef)
+  - [EntityRecognizerSummaryTypeDef](#entityrecognizersummarytypedef)
   - [EntityTypeDef](#entitytypedef)
   - [EntityTypesEvaluationMetricsTypeDef](#entitytypesevaluationmetricstypedef)
   - [EntityTypesListItemTypeDef](#entitytypeslistitemtypedef)
@@ -111,6 +113,8 @@ type annotations stubs module
   - [KeyPhrasesDetectionJobPropertiesTypeDef](#keyphrasesdetectionjobpropertiestypedef)
   - [ListDocumentClassificationJobsRequestRequestTypeDef](#listdocumentclassificationjobsrequestrequesttypedef)
   - [ListDocumentClassificationJobsResponseTypeDef](#listdocumentclassificationjobsresponsetypedef)
+  - [ListDocumentClassifierSummariesRequestRequestTypeDef](#listdocumentclassifiersummariesrequestrequesttypedef)
+  - [ListDocumentClassifierSummariesResponseTypeDef](#listdocumentclassifiersummariesresponsetypedef)
   - [ListDocumentClassifiersRequestRequestTypeDef](#listdocumentclassifiersrequestrequesttypedef)
   - [ListDocumentClassifiersResponseTypeDef](#listdocumentclassifiersresponsetypedef)
   - [ListDominantLanguageDetectionJobsRequestRequestTypeDef](#listdominantlanguagedetectionjobsrequestrequesttypedef)
@@ -119,6 +123,8 @@ type annotations stubs module
   - [ListEndpointsResponseTypeDef](#listendpointsresponsetypedef)
   - [ListEntitiesDetectionJobsRequestRequestTypeDef](#listentitiesdetectionjobsrequestrequesttypedef)
   - [ListEntitiesDetectionJobsResponseTypeDef](#listentitiesdetectionjobsresponsetypedef)
+  - [ListEntityRecognizerSummariesRequestRequestTypeDef](#listentityrecognizersummariesrequestrequesttypedef)
+  - [ListEntityRecognizerSummariesResponseTypeDef](#listentityrecognizersummariesresponsetypedef)
   - [ListEntityRecognizersRequestRequestTypeDef](#listentityrecognizersrequestrequesttypedef)
   - [ListEntityRecognizersResponseTypeDef](#listentityrecognizersresponsetypedef)
   - [ListEventsDetectionJobsRequestRequestTypeDef](#listeventsdetectionjobsrequestrequesttypedef)
@@ -197,6 +203,7 @@ Required fields:
 
 Optional fields:
 
+- `Split`: [SplitType](./literals.md#splittype)
 - `AnnotationDataS3Uri`: `str`
 - `SourceDocumentsS3Uri`: `str`
 - `DocumentType`:
@@ -499,6 +506,7 @@ Required fields:
 
 Optional fields:
 
+- `VersionName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OutputDataConfig`:
   [DocumentClassifierOutputDataConfigTypeDef](./type_defs.md#documentclassifieroutputdataconfigtypedef)
@@ -567,6 +575,7 @@ Required fields:
 
 Optional fields:
 
+- `VersionName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientRequestToken`: `str`
 - `VolumeKmsKeyId`: `str`
@@ -1071,6 +1080,7 @@ from mypy_boto3_comprehend.type_defs import DocumentClassifierFilterTypeDef
 Optional fields:
 
 - `Status`: [ModelStatusType](./literals.md#modelstatustype)
+- `DocumentClassifierName`: `str`
 - `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
@@ -1085,6 +1095,7 @@ Optional fields:
 - `DataFormat`:
   [DocumentClassifierDataFormatType](./literals.md#documentclassifierdataformattype)
 - `S3Uri`: `str`
+- `TestS3Uri`: `str`
 - `LabelDelimiter`: `str`
 - `AugmentedManifests`:
   `Sequence`\[[AugmentedManifestsListItemTypeDef](./type_defs.md#augmentedmanifestslistitemtypedef)\]
@@ -1128,6 +1139,21 @@ Optional fields:
 - `Mode`:
   [DocumentClassifierModeType](./literals.md#documentclassifiermodetype)
 - `ModelKmsKeyId`: `str`
+- `VersionName`: `str`
+
+## DocumentClassifierSummaryTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DocumentClassifierSummaryTypeDef
+```
+
+Optional fields:
+
+- `DocumentClassifierName`: `str`
+- `NumberOfVersions`: `int`
+- `LatestVersionCreatedAt`: `datetime`
+- `LatestVersionName`: `str`
+- `LatestVersionStatus`: [ModelStatusType](./literals.md#modelstatustype)
 
 ## DocumentLabelTypeDef
 
@@ -1230,11 +1256,13 @@ Optional fields:
 - `Status`: [EndpointStatusType](./literals.md#endpointstatustype)
 - `Message`: `str`
 - `ModelArn`: `str`
+- `DesiredModelArn`: `str`
 - `DesiredInferenceUnits`: `int`
 - `CurrentInferenceUnits`: `int`
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `DataAccessRoleArn`: `str`
+- `DesiredDataAccessRoleArn`: `str`
 
 ## EntitiesDetectionJobFilterTypeDef
 
@@ -1295,6 +1323,10 @@ Required fields:
 
 - `S3Uri`: `str`
 
+Optional fields:
+
+- `TestS3Uri`: `str`
+
 ## EntityRecognizerDocumentsTypeDef
 
 ```python
@@ -1304,6 +1336,11 @@ from mypy_boto3_comprehend.type_defs import EntityRecognizerDocumentsTypeDef
 Required fields:
 
 - `S3Uri`: `str`
+
+Optional fields:
+
+- `TestS3Uri`: `str`
+- `InputFormat`: [InputFormatType](./literals.md#inputformattype)
 
 ## EntityRecognizerEntityListTypeDef
 
@@ -1336,6 +1373,7 @@ from mypy_boto3_comprehend.type_defs import EntityRecognizerFilterTypeDef
 Optional fields:
 
 - `Status`: [ModelStatusType](./literals.md#modelstatustype)
+- `RecognizerName`: `str`
 - `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
 
@@ -1415,6 +1453,21 @@ Optional fields:
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `ModelKmsKeyId`: `str`
+- `VersionName`: `str`
+
+## EntityRecognizerSummaryTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import EntityRecognizerSummaryTypeDef
+```
+
+Optional fields:
+
+- `RecognizerName`: `str`
+- `NumberOfVersions`: `int`
+- `LatestVersionCreatedAt`: `datetime`
+- `LatestVersionName`: `str`
+- `LatestVersionStatus`: [ModelStatusType](./literals.md#modelstatustype)
 
 ## EntityTypeDef
 
@@ -1581,6 +1634,31 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListDocumentClassifierSummariesRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListDocumentClassifierSummariesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDocumentClassifierSummariesResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListDocumentClassifierSummariesResponseTypeDef
+```
+
+Required fields:
+
+- `DocumentClassifierSummariesList`:
+  `List`\[[DocumentClassifierSummaryTypeDef](./type_defs.md#documentclassifiersummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListDocumentClassifiersRequestRequestTypeDef
 
 ```python
@@ -1684,6 +1762,31 @@ Required fields:
 
 - `EntitiesDetectionJobPropertiesList`:
   `List`\[[EntitiesDetectionJobPropertiesTypeDef](./type_defs.md#entitiesdetectionjobpropertiestypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListEntityRecognizerSummariesRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListEntityRecognizerSummariesRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListEntityRecognizerSummariesResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListEntityRecognizerSummariesResponseTypeDef
+```
+
+Required fields:
+
+- `EntityRecognizerSummariesList`:
+  `List`\[[EntityRecognizerSummaryTypeDef](./type_defs.md#entityrecognizersummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2606,7 +2709,12 @@ from mypy_boto3_comprehend.type_defs import UpdateEndpointRequestRequestTypeDef
 Required fields:
 
 - `EndpointArn`: `str`
+
+Optional fields:
+
+- `DesiredModelArn`: `str`
 - `DesiredInferenceUnits`: `int`
+- `DesiredDataAccessRoleArn`: `str`
 
 ## VpcConfigTypeDef
 

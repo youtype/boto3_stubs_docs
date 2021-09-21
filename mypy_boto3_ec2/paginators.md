@@ -109,6 +109,7 @@ type annotations stubs module
   - [GetTransitGatewayPrefixListReferencesPaginator](#gettransitgatewayprefixlistreferencespaginator)
   - [GetTransitGatewayRouteTableAssociationsPaginator](#gettransitgatewayroutetableassociationspaginator)
   - [GetTransitGatewayRouteTablePropagationsPaginator](#gettransitgatewayroutetablepropagationspaginator)
+  - [GetVpnConnectionDeviceTypesPaginator](#getvpnconnectiondevicetypespaginator)
   - [SearchLocalGatewayRoutesPaginator](#searchlocalgatewayroutespaginator)
   - [SearchTransitGatewayMulticastGroupsPaginator](#searchtransitgatewaymulticastgroupspaginator)
 
@@ -2969,6 +2970,32 @@ method:
 
 `GetTransitGatewayRouteTablePropagationsPaginator.paginate` returns
 `_PageIterator`\[[GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef)\].
+
+## GetVpnConnectionDeviceTypesPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("get_vpn_connection_device_types")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import GetVpnConnectionDeviceTypesPaginator
+
+def get_get_vpn_connection_device_types_paginator() -> GetVpnConnectionDeviceTypesPaginator:
+    return boto3.client("ec2").get_paginator("get_vpn_connection_device_types")
+```
+
+Boto3 documentation:
+[EC2.Paginator.GetVpnConnectionDeviceTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.GetVpnConnectionDeviceTypes)
+
+Arguments for `GetVpnConnectionDeviceTypesPaginator.paginate` method:
+
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`GetVpnConnectionDeviceTypesPaginator.paginate` returns
+`_PageIterator`\[[GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef)\].
 
 ## SearchLocalGatewayRoutesPaginator
 

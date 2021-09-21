@@ -198,6 +198,7 @@ type annotations stubs module
     - [list_topic_rules](#list_topic_rules)
     - [list_v2_logging_levels](#list_v2_logging_levels)
     - [list_violation_events](#list_violation_events)
+    - [put_verification_state_on_violation](#put_verification_state_on_violation)
     - [register_ca_certificate](#register_ca_certificate)
     - [register_certificate](#register_certificate)
     - [register_certificate_without_ca](#register_certificate_without_ca)
@@ -2948,6 +2949,8 @@ Keyword-only arguments:
 - `behaviorCriteriaType`:
   [BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype)
 - `listSuppressedAlerts`: `bool`
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -4118,11 +4121,36 @@ Keyword-only arguments:
 - `behaviorCriteriaType`:
   [BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype)
 - `listSuppressedAlerts`: `bool`
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
 Returns
 [ListViolationEventsResponseTypeDef](./type_defs.md#listviolationeventsresponsetypedef).
+
+### put_verification_state_on_violation
+
+Set a verification state and provide a description of that verification state
+on a violation (detect alarm).
+
+Type annotations for `boto3.client("iot").put_verification_state_on_violation`
+method.
+
+Boto3 documentation:
+[IoT.Client.put_verification_state_on_violation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.put_verification_state_on_violation)
+
+Arguments mapping described in
+[PutVerificationStateOnViolationRequestRequestTypeDef](./type_defs.md#putverificationstateonviolationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `violationId`: `str` *(required)*
+- `verificationState`:
+  [VerificationStateType](./literals.md#verificationstatetype) *(required)*
+- `verificationStateDescription`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 ### register_ca_certificate
 

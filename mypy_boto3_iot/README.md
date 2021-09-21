@@ -219,6 +219,7 @@ from mypy_boto3_iot.client import IoTClient
 - [list_topic_rules](./client.md#list_topic_rules)
 - [list_v2_logging_levels](./client.md#list_v2_logging_levels)
 - [list_violation_events](./client.md#list_violation_events)
+- [put_verification_state_on_violation](./client.md#put_verification_state_on_violation)
 - [register_ca_certificate](./client.md#register_ca_certificate)
 - [register_certificate](./client.md#register_certificate)
 - [register_certificate_without_ca](./client.md#register_certificate_without_ca)
@@ -496,6 +497,7 @@ from mypy_boto3_iot.literals import AbortActionType, ...
 - [ThingGroupIndexingModeType](./literals.md#thinggroupindexingmodetype)
 - [ThingIndexingModeType](./literals.md#thingindexingmodetype)
 - [TopicRuleDestinationStatusType](./literals.md#topicruledestinationstatustype)
+- [VerificationStateType](./literals.md#verificationstatetype)
 - [ViolationEventTypeType](./literals.md#violationeventtypetype)
 - [ServiceName](./literals.md#servicename)
 
@@ -942,6 +944,7 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [PublishFindingToSnsParamsTypeDef](./type_defs.md#publishfindingtosnsparamstypedef)
 - [PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)
 - [PutItemInputTypeDef](./type_defs.md#putiteminputtypedef)
+- [PutVerificationStateOnViolationRequestRequestTypeDef](./type_defs.md#putverificationstateonviolationrequestrequesttypedef)
 - [RateIncreaseCriteriaTypeDef](./type_defs.md#rateincreasecriteriatypedef)
 - [RegisterCACertificateRequestRequestTypeDef](./type_defs.md#registercacertificaterequestrequesttypedef)
 - [RegisterCACertificateResponseTypeDef](./type_defs.md#registercacertificateresponsetypedef)

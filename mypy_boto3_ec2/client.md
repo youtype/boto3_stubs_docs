@@ -370,6 +370,8 @@ type annotations stubs module
     - [get_transit_gateway_prefix_list_references](#get_transit_gateway_prefix_list_references)
     - [get_transit_gateway_route_table_associations](#get_transit_gateway_route_table_associations)
     - [get_transit_gateway_route_table_propagations](#get_transit_gateway_route_table_propagations)
+    - [get_vpn_connection_device_sample_configuration](#get_vpn_connection_device_sample_configuration)
+    - [get_vpn_connection_device_types](#get_vpn_connection_device_types)
     - [import_client_vpn_client_certificate_revocation_list](#import_client_vpn_client_certificate_revocation_list)
     - [import_image](#import_image)
     - [import_instance](#import_instance)
@@ -1702,7 +1704,8 @@ Returns
 
 ### create_customer_gateway
 
-Provides information to AWS about your VPN customer gateway device.
+Provides information to Amazon Web Services about your VPN customer gateway
+device.
 
 Type annotations for `boto3.client("ec2").create_customer_gateway` method.
 
@@ -8766,6 +8769,53 @@ Keyword-only arguments:
 Returns
 [GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef).
 
+### get_vpn_connection_device_sample_configuration
+
+Download an AWS-provided sample configuration file to be used with the customer
+gateway device specified for your Site-to-Site VPN connection.
+
+Type annotations for
+`boto3.client("ec2").get_vpn_connection_device_sample_configuration` method.
+
+Boto3 documentation:
+[EC2.Client.get_vpn_connection_device_sample_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_vpn_connection_device_sample_configuration)
+
+Arguments mapping described in
+[GetVpnConnectionDeviceSampleConfigurationRequestRequestTypeDef](./type_defs.md#getvpnconnectiondevicesampleconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `VpnConnectionId`: `str` *(required)*
+- `VpnConnectionDeviceTypeId`: `str` *(required)*
+- `InternetKeyExchangeVersion`: `str`
+- `DryRun`: `bool`
+
+Returns
+[GetVpnConnectionDeviceSampleConfigurationResultTypeDef](./type_defs.md#getvpnconnectiondevicesampleconfigurationresulttypedef).
+
+### get_vpn_connection_device_types
+
+Obtain a list of customer gateway devices for which sample configuration files
+can be provided.
+
+Type annotations for `boto3.client("ec2").get_vpn_connection_device_types`
+method.
+
+Boto3 documentation:
+[EC2.Client.get_vpn_connection_device_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.get_vpn_connection_device_types)
+
+Arguments mapping described in
+[GetVpnConnectionDeviceTypesRequestRequestTypeDef](./type_defs.md#getvpnconnectiondevicetypesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `DryRun`: `bool`
+
+Returns
+[GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef).
+
 ### import_client_vpn_client_certificate_revocation_list
 
 Uploads a client certificate revocation list to the specified Client VPN
@@ -9987,8 +10037,8 @@ Returns
 
 ### modify_vpn_connection
 
-Modifies the customer gateway or the target gateway of an AWS Site-to-Site VPN
-connection.
+Modifies the customer gateway or the target gateway of an Amazon Web Services
+Site-to-Site VPN connection.
 
 Type annotations for `boto3.client("ec2").modify_vpn_connection` method.
 
@@ -10058,7 +10108,8 @@ Returns
 
 ### modify_vpn_tunnel_options
 
-Modifies the options for a VPN tunnel in an AWS Site-to-Site VPN connection.
+Modifies the options for a VPN tunnel in an Amazon Web Services Site-to-Site
+VPN connection.
 
 Type annotations for `boto3.client("ec2").modify_vpn_tunnel_options` method.
 
@@ -11661,6 +11712,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [GetTransitGatewayRouteTableAssociationsPaginator](./paginators.md#gettransitgatewayroutetableassociationspaginator)
 - `client.get_paginator("get_transit_gateway_route_table_propagations")` ->
   [GetTransitGatewayRouteTablePropagationsPaginator](./paginators.md#gettransitgatewayroutetablepropagationspaginator)
+- `client.get_paginator("get_vpn_connection_device_types")` ->
+  [GetVpnConnectionDeviceTypesPaginator](./paginators.md#getvpnconnectiondevicetypespaginator)
 - `client.get_paginator("search_local_gateway_routes")` ->
   [SearchLocalGatewayRoutesPaginator](./paginators.md#searchlocalgatewayroutespaginator)
 - `client.get_paginator("search_transit_gateway_multicast_groups")` ->
