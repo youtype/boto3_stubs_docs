@@ -119,6 +119,7 @@ type annotations stubs module
   - [PutPermissionPolicyRequestRequestTypeDef](#putpermissionpolicyrequestrequesttypedef)
   - [RateBasedStatementManagedKeysIPSetTypeDef](#ratebasedstatementmanagedkeysipsettypedef)
   - [RateBasedStatementTypeDef](#ratebasedstatementtypedef)
+  - [RegexMatchStatementTypeDef](#regexmatchstatementtypedef)
   - [RegexPatternSetReferenceStatementTypeDef](#regexpatternsetreferencestatementtypedef)
   - [RegexPatternSetSummaryTypeDef](#regexpatternsetsummarytypedef)
   - [RegexPatternSetTypeDef](#regexpatternsettypedef)
@@ -1646,6 +1647,19 @@ Optional fields:
 - `ForwardedIPConfig`:
   [ForwardedIPConfigTypeDef](./type_defs.md#forwardedipconfigtypedef)
 
+## RegexMatchStatementTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import RegexMatchStatementTypeDef
+```
+
+Required fields:
+
+- `RegexString`: `str`
+- `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
+- `TextTransformations`:
+  `Sequence`\[[TextTransformationTypeDef](./type_defs.md#texttransformationtypedef)\]
+
 ## RegexPatternSetReferenceStatementTypeDef
 
 ```python
@@ -1913,6 +1927,8 @@ Optional fields:
   [ManagedRuleGroupStatementTypeDef](./type_defs.md#managedrulegroupstatementtypedef)
 - `LabelMatchStatement`:
   [LabelMatchStatementTypeDef](./type_defs.md#labelmatchstatementtypedef)
+- `RegexMatchStatement`:
+  [RegexMatchStatementTypeDef](./type_defs.md#regexmatchstatementtypedef)
 
 ## TagInfoForResourceTypeDef
 

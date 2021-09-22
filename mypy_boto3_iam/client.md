@@ -405,7 +405,7 @@ Returns
 
 ### create_account_alias
 
-Creates an alias for your account.
+Creates an alias for your Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").create_account_alias` method.
 
@@ -507,7 +507,7 @@ Returns
 
 ### create_policy
 
-Creates a new managed policy for your account.
+Creates a new managed policy for your Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").create_policy` method.
 
@@ -551,7 +551,7 @@ Returns
 
 ### create_role
 
-Creates a new role for your account.
+Creates a new role for your Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").create_role` method.
 
@@ -640,7 +640,7 @@ Returns
 
 ### create_user
 
-Creates a new IAM user for your account.
+Creates a new IAM user for your Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").create_user` method.
 
@@ -661,7 +661,7 @@ Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
 ### create_virtual_mfa_device
 
-Creates a new virtual MFA device for the account.
+Creates a new virtual MFA device for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").create_virtual_mfa_device` method.
 
@@ -717,7 +717,7 @@ Keyword-only arguments:
 
 ### delete_account_alias
 
-Deletes the specified account alias.
+Deletes the specified Amazon Web Services account alias.
 
 Type annotations for `boto3.client("iam").delete_account_alias` method.
 
@@ -733,7 +733,7 @@ Keyword-only arguments:
 
 ### delete_account_password_policy
 
-Deletes the password policy for the account.
+Deletes the password policy for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").delete_account_password_policy`
 method.
@@ -794,7 +794,8 @@ Keyword-only arguments:
 ### delete_login_profile
 
 Deletes the password for the specified IAM user, which terminates the user's
-ability to access Amazon Web Services services through the Management Console.
+ability to access Amazon Web Services services through the Amazon Web Services
+Management Console.
 
 Type annotations for `boto3.client("iam").delete_login_profile` method.
 
@@ -1150,7 +1151,7 @@ Keyword-only arguments:
 
 ### generate_credential_report
 
-Generates a credential report for the account.
+Generates a credential report for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").generate_credential_report` method.
 
@@ -1267,7 +1268,7 @@ Returns
 
 ### get_account_password_policy
 
-Retrieves the password policy for the account.
+Retrieves the password policy for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").get_account_password_policy` method.
 
@@ -1334,7 +1335,7 @@ Returns
 
 ### get_credential_report
 
-Retrieves a credential report for the account.
+Retrieves a credential report for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").get_credential_report` method.
 
@@ -1742,8 +1743,8 @@ Returns
 
 ### list_account_aliases
 
-Lists the account alias associated with the account (Note: you can have only
-one).
+Lists the account alias associated with the Amazon Web Services account (Note:
+you can have only one).
 
 Type annotations for `boto3.client("iam").list_account_aliases` method.
 
@@ -2048,7 +2049,7 @@ Returns
 ### list_open_id_connect_providers
 
 Lists information about the IAM OpenID Connect (OIDC) provider resource objects
-defined in the account.
+defined in the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").list_open_id_connect_providers`
 method.
@@ -2061,9 +2062,9 @@ Returns
 
 ### list_policies
 
-Lists all the managed policies that are available in your account, including
-your own customer-defined managed policies and all Amazon Web Services managed
-policies.
+Lists all the managed policies that are available in your Amazon Web Services
+account, including your own customer-defined managed policies and all Amazon
+Web Services managed policies.
 
 Type annotations for `boto3.client("iam").list_policies` method.
 
@@ -2421,7 +2422,8 @@ Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
 ### list_virtual_mfa_devices
 
-Lists the virtual MFA devices defined in the account by assignment status.
+Lists the virtual MFA devices defined in the Amazon Web Services account by
+assignment status.
 
 Type annotations for `boto3.client("iam").list_virtual_mfa_devices` method.
 
@@ -2653,7 +2655,7 @@ Keyword-only arguments:
 ### set_security_token_service_preferences
 
 Sets the specified version of the global endpoint token as the token version
-used for the account.
+used for the Amazon Web Services account.
 
 Type annotations for
 `boto3.client("iam").set_security_token_service_preferences` method.
@@ -3034,7 +3036,7 @@ Keyword-only arguments:
 
 ### update_account_password_policy
 
-Updates the password policy settings for the account.
+Updates the password policy settings for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").update_account_password_policy`
 method.
@@ -3284,7 +3286,7 @@ Keyword-only arguments:
 
 ### upload_server_certificate
 
-Uploads a server certificate entity for the account.
+Uploads a server certificate entity for the Amazon Web Services account.
 
 Type annotations for `boto3.client("iam").upload_server_certificate` method.
 

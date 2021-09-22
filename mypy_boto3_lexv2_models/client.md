@@ -36,6 +36,7 @@ type annotations stubs module
     - [delete_resource_policy_statement](#delete_resource_policy_statement)
     - [delete_slot](#delete_slot)
     - [delete_slot_type](#delete_slot_type)
+    - [delete_utterances](#delete_utterances)
     - [describe_bot](#describe_bot)
     - [describe_bot_alias](#describe_bot_alias)
     - [describe_bot_locale](#describe_bot_locale)
@@ -47,6 +48,7 @@ type annotations stubs module
     - [describe_slot](#describe_slot)
     - [describe_slot_type](#describe_slot_type)
     - [generate_presigned_url](#generate_presigned_url)
+    - [list_aggregated_utterances](#list_aggregated_utterances)
     - [list_bot_aliases](#list_bot_aliases)
     - [list_bot_locales](#list_bot_locales)
     - [list_bot_versions](#list_bot_versions)
@@ -672,6 +674,26 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `skipResourceInUseCheck`: `bool`
 
+### delete_utterances
+
+Deletes stored utterances.
+
+Type annotations for `boto3.client("lexv2-models").delete_utterances` method.
+
+Boto3 documentation:
+[LexModelsV2.Client.delete_utterances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_utterances)
+
+Arguments mapping described in
+[DeleteUtterancesRequestRequestTypeDef](./type_defs.md#deleteutterancesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `botId`: `str` *(required)*
+- `localeId`: `str`
+- `sessionId`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### describe_bot
 
 Provides metadata information about a bot.
@@ -896,6 +918,38 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+### list_aggregated_utterances
+
+Provides a list of utterances that users have sent to the bot.
+
+Type annotations for `boto3.client("lexv2-models").list_aggregated_utterances`
+method.
+
+Boto3 documentation:
+[LexModelsV2.Client.list_aggregated_utterances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_aggregated_utterances)
+
+Arguments mapping described in
+[ListAggregatedUtterancesRequestRequestTypeDef](./type_defs.md#listaggregatedutterancesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `botId`: `str` *(required)*
+- `localeId`: `str` *(required)*
+- `aggregationDuration`:
+  [UtteranceAggregationDurationTypeDef](./type_defs.md#utteranceaggregationdurationtypedef)
+  *(required)*
+- `botAliasId`: `str`
+- `botVersion`: `str`
+- `sortBy`:
+  [AggregatedUtterancesSortByTypeDef](./type_defs.md#aggregatedutterancessortbytypedef)
+- `filters`:
+  `Sequence`\[[AggregatedUtterancesFilterTypeDef](./type_defs.md#aggregatedutterancesfiltertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListAggregatedUtterancesResponseTypeDef](./type_defs.md#listaggregatedutterancesresponsetypedef).
 
 ### list_bot_aliases
 

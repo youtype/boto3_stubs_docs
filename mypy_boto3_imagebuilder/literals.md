@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Literals for boto3 imagebuilder module](#literals-for-boto3-imagebuilder-module)
   - [ComponentFormatType](#componentformattype)
+  - [ComponentStatusType](#componentstatustype)
   - [ComponentTypeType](#componenttypetype)
   - [ContainerRepositoryServiceType](#containerrepositoryservicetype)
   - [ContainerTypeType](#containertypetype)
@@ -30,6 +31,16 @@ from mypy_boto3_imagebuilder.literals import ComponentFormatType
 Values:
 
 - `SHELL`
+
+## ComponentStatusType
+
+```python
+from mypy_boto3_imagebuilder.literals import ComponentStatusType
+```
+
+Values:
+
+- `DEPRECATED`
 
 ## ComponentTypeType
 

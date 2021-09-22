@@ -8,6 +8,9 @@ type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 - [Literals for boto3 LexModelsV2 module](#literals-for-boto3-lexmodelsv2-module)
+  - [AggregatedUtterancesFilterNameType](#aggregatedutterancesfilternametype)
+  - [AggregatedUtterancesFilterOperatorType](#aggregatedutterancesfilteroperatortype)
+  - [AggregatedUtterancesSortAttributeType](#aggregatedutterancessortattributetype)
   - [BotAliasAvailableWaiterName](#botaliasavailablewaitername)
   - [BotAliasStatusType](#botaliasstatustype)
   - [BotAvailableWaiterName](#botavailablewaitername)
@@ -52,7 +55,40 @@ type annotations stubs module
   - [SlotTypeSortAttributeType](#slottypesortattributetype)
   - [SlotValueResolutionStrategyType](#slotvalueresolutionstrategytype)
   - [SortOrderType](#sortordertype)
+  - [TimeDimensionType](#timedimensiontype)
   - [ServiceName](#servicename)
+
+## AggregatedUtterancesFilterNameType
+
+```python
+from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType
+```
+
+Values:
+
+- `Utterance`
+
+## AggregatedUtterancesFilterOperatorType
+
+```python
+from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterOperatorType
+```
+
+Values:
+
+- `CO`
+- `EQ`
+
+## AggregatedUtterancesSortAttributeType
+
+```python
+from mypy_boto3_lexv2_models.literals import AggregatedUtterancesSortAttributeType
+```
+
+Values:
+
+- `HitCount`
+- `MissedCount`
 
 ## BotAliasAvailableWaiterName
 
@@ -531,6 +567,18 @@ Values:
 
 - `Ascending`
 - `Descending`
+
+## TimeDimensionType
+
+```python
+from mypy_boto3_lexv2_models.literals import TimeDimensionType
+```
+
+Values:
+
+- `Days`
+- `Hours`
+- `Weeks`
 
 ## ServiceName
 

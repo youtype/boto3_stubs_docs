@@ -118,6 +118,7 @@ from mypy_boto3_imagebuilder.literals import ComponentFormatType, ...
 ```
 
 - [ComponentFormatType](./literals.md#componentformattype)
+- [ComponentStatusType](./literals.md#componentstatustype)
 - [ComponentTypeType](./literals.md#componenttypetype)
 - [ContainerRepositoryServiceType](./literals.md#containerrepositoryservicetype)
 - [ContainerTypeType](./literals.md#containertypetype)
@@ -149,6 +150,7 @@ from mypy_boto3_imagebuilder.type_defs import AdditionalInstanceConfigurationTyp
 - [ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)
 - [ComponentParameterDetailTypeDef](./type_defs.md#componentparameterdetailtypedef)
 - [ComponentParameterTypeDef](./type_defs.md#componentparametertypedef)
+- [ComponentStateTypeDef](./type_defs.md#componentstatetypedef)
 - [ComponentSummaryTypeDef](./type_defs.md#componentsummarytypedef)
 - [ComponentTypeDef](./type_defs.md#componenttypedef)
 - [ComponentVersionTypeDef](./type_defs.md#componentversiontypedef)
@@ -226,6 +228,7 @@ from mypy_boto3_imagebuilder.type_defs import AdditionalInstanceConfigurationTyp
 - [InfrastructureConfigurationTypeDef](./type_defs.md#infrastructureconfigurationtypedef)
 - [InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)
 - [InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef)
+- [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 - [LaunchPermissionConfigurationTypeDef](./type_defs.md#launchpermissionconfigurationtypedef)
 - [LaunchTemplateConfigurationTypeDef](./type_defs.md#launchtemplateconfigurationtypedef)
 - [ListComponentBuildVersionsRequestRequestTypeDef](./type_defs.md#listcomponentbuildversionsrequestrequesttypedef)

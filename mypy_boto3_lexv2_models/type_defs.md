@@ -8,6 +8,9 @@ type annotations stubs module
 [mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 - [Typed dictionaries for boto3 LexModelsV2 module](#typed-dictionaries-for-boto3-lexmodelsv2-module)
+  - [AggregatedUtterancesFilterTypeDef](#aggregatedutterancesfiltertypedef)
+  - [AggregatedUtterancesSortByTypeDef](#aggregatedutterancessortbytypedef)
+  - [AggregatedUtterancesSummaryTypeDef](#aggregatedutterancessummarytypedef)
   - [AudioLogDestinationTypeDef](#audiologdestinationtypedef)
   - [AudioLogSettingTypeDef](#audiologsettingtypedef)
   - [BotAliasHistoryEventTypeDef](#botaliashistoryeventtypedef)
@@ -79,6 +82,7 @@ type annotations stubs module
   - [DeleteResourcePolicyStatementResponseTypeDef](#deleteresourcepolicystatementresponsetypedef)
   - [DeleteSlotRequestRequestTypeDef](#deleteslotrequestrequesttypedef)
   - [DeleteSlotTypeRequestRequestTypeDef](#deleteslottyperequestrequesttypedef)
+  - [DeleteUtterancesRequestRequestTypeDef](#deleteutterancesrequestrequesttypedef)
   - [DescribeBotAliasRequestRequestTypeDef](#describebotaliasrequestrequesttypedef)
   - [DescribeBotAliasResponseTypeDef](#describebotaliasresponsetypedef)
   - [DescribeBotLocaleRequestRequestTypeDef](#describebotlocalerequestrequesttypedef)
@@ -118,6 +122,8 @@ type annotations stubs module
   - [IntentSummaryTypeDef](#intentsummarytypedef)
   - [KendraConfigurationTypeDef](#kendraconfigurationtypedef)
   - [LambdaCodeHookTypeDef](#lambdacodehooktypedef)
+  - [ListAggregatedUtterancesRequestRequestTypeDef](#listaggregatedutterancesrequestrequesttypedef)
+  - [ListAggregatedUtterancesResponseTypeDef](#listaggregatedutterancesresponsetypedef)
   - [ListBotAliasesRequestRequestTypeDef](#listbotaliasesrequestrequesttypedef)
   - [ListBotAliasesResponseTypeDef](#listbotaliasesresponsetypedef)
   - [ListBotLocalesRequestRequestTypeDef](#listbotlocalesrequestrequesttypedef)
@@ -150,6 +156,7 @@ type annotations stubs module
   - [PlainTextMessageTypeDef](#plaintextmessagetypedef)
   - [PrincipalTypeDef](#principaltypedef)
   - [PromptSpecificationTypeDef](#promptspecificationtypedef)
+  - [RelativeAggregationDurationTypeDef](#relativeaggregationdurationtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResponseSpecificationTypeDef](#responsespecificationtypedef)
   - [S3BucketLogDestinationTypeDef](#s3bucketlogdestinationtypedef)
@@ -193,9 +200,51 @@ type annotations stubs module
   - [UpdateSlotResponseTypeDef](#updateslotresponsetypedef)
   - [UpdateSlotTypeRequestRequestTypeDef](#updateslottyperequestrequesttypedef)
   - [UpdateSlotTypeResponseTypeDef](#updateslottyperesponsetypedef)
+  - [UtteranceAggregationDurationTypeDef](#utteranceaggregationdurationtypedef)
   - [VoiceSettingsTypeDef](#voicesettingstypedef)
   - [WaitAndContinueSpecificationTypeDef](#waitandcontinuespecificationtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
+
+## AggregatedUtterancesFilterTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import AggregatedUtterancesFilterTypeDef
+```
+
+Required fields:
+
+- `name`: `Literal['Utterance']` (see
+  [AggregatedUtterancesFilterNameType](./literals.md#aggregatedutterancesfilternametype))
+- `values`: `Sequence`\[`str`\]
+- `operator`:
+  [AggregatedUtterancesFilterOperatorType](./literals.md#aggregatedutterancesfilteroperatortype)
+
+## AggregatedUtterancesSortByTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import AggregatedUtterancesSortByTypeDef
+```
+
+Required fields:
+
+- `attribute`:
+  [AggregatedUtterancesSortAttributeType](./literals.md#aggregatedutterancessortattributetype)
+- `order`: [SortOrderType](./literals.md#sortordertype)
+
+## AggregatedUtterancesSummaryTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import AggregatedUtterancesSummaryTypeDef
+```
+
+Optional fields:
+
+- `utterance`: `str`
+- `hitCount`: `int`
+- `missedCount`: `int`
+- `utteranceFirstRecordedInAggregationDuration`: `datetime`
+- `utteranceLastRecordedInAggregationDuration`: `datetime`
+- `containsDataFromDeletedResources`: `bool`
 
 ## AudioLogDestinationTypeDef
 
@@ -1276,6 +1325,21 @@ Optional fields:
 
 - `skipResourceInUseCheck`: `bool`
 
+## DeleteUtterancesRequestRequestTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import DeleteUtterancesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+
+Optional fields:
+
+- `localeId`: `str`
+- `sessionId`: `str`
+
 ## DescribeBotAliasRequestRequestTypeDef
 
 ```python
@@ -1888,6 +1952,53 @@ Required fields:
 - `lambdaARN`: `str`
 - `codeHookInterfaceVersion`: `str`
 
+## ListAggregatedUtterancesRequestRequestTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ListAggregatedUtterancesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `localeId`: `str`
+- `aggregationDuration`:
+  [UtteranceAggregationDurationTypeDef](./type_defs.md#utteranceaggregationdurationtypedef)
+
+Optional fields:
+
+- `botAliasId`: `str`
+- `botVersion`: `str`
+- `sortBy`:
+  [AggregatedUtterancesSortByTypeDef](./type_defs.md#aggregatedutterancessortbytypedef)
+- `filters`:
+  `Sequence`\[[AggregatedUtterancesFilterTypeDef](./type_defs.md#aggregatedutterancesfiltertypedef)\]
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## ListAggregatedUtterancesResponseTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import ListAggregatedUtterancesResponseTypeDef
+```
+
+Required fields:
+
+- `botId`: `str`
+- `botAliasId`: `str`
+- `botVersion`: `str`
+- `localeId`: `str`
+- `aggregationDuration`:
+  [UtteranceAggregationDurationTypeDef](./type_defs.md#utteranceaggregationdurationtypedef)
+- `aggregationWindowStartTime`: `datetime`
+- `aggregationWindowEndTime`: `datetime`
+- `aggregationLastRefreshedDateTime`: `datetime`
+- `aggregatedUtterancesSummaries`:
+  `List`\[[AggregatedUtterancesSummaryTypeDef](./type_defs.md#aggregatedutterancessummarytypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListBotAliasesRequestRequestTypeDef
 
 ```python
@@ -2372,6 +2483,17 @@ Required fields:
 Optional fields:
 
 - `allowInterrupt`: `bool`
+
+## RelativeAggregationDurationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import RelativeAggregationDurationTypeDef
+```
+
+Required fields:
+
+- `timeDimension`: [TimeDimensionType](./literals.md#timedimensiontype)
+- `timeValue`: `int`
 
 ## ResponseMetadataTypeDef
 
@@ -3086,6 +3208,17 @@ Required fields:
 - `lastUpdatedDateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UtteranceAggregationDurationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import UtteranceAggregationDurationTypeDef
+```
+
+Required fields:
+
+- `relativeAggregationDuration`:
+  [RelativeAggregationDurationTypeDef](./type_defs.md#relativeaggregationdurationtypedef)
 
 ## VoiceSettingsTypeDef
 

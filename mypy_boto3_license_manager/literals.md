@@ -16,6 +16,7 @@ type annotations stubs module
   - [GrantStatusType](#grantstatustype)
   - [InventoryFilterConditionType](#inventoryfilterconditiontype)
   - [LicenseConfigurationStatusType](#licenseconfigurationstatustype)
+  - [LicenseConversionTaskStatusType](#licenseconversiontaskstatustype)
   - [LicenseCountingTypeType](#licensecountingtypetype)
   - [LicenseDeletionStatusType](#licensedeletionstatustype)
   - [LicenseStatusType](#licensestatustype)
@@ -182,6 +183,18 @@ Values:
 
 - `AVAILABLE`
 - `DISABLED`
+
+## LicenseConversionTaskStatusType
+
+```python
+from mypy_boto3_license_manager.literals import LicenseConversionTaskStatusType
+```
+
+Values:
+
+- `FAILED`
+- `IN_PROGRESS`
+- `SUCCEEDED`
 
 ## LicenseCountingTypeType
 

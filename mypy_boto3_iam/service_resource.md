@@ -698,7 +698,7 @@ Keyword-only arguments:
 
 ### IAMServiceResource.create_account_alias method
 
-Creates an alias for your account.
+Creates an alias for your Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_account_alias` method.
 
@@ -714,7 +714,7 @@ Keyword-only arguments:
 
 ### IAMServiceResource.create_account_password_policy method
 
-Updates the password policy settings for the account.
+Updates the password policy settings for the Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_account_password_policy`
 method.
@@ -780,7 +780,7 @@ Returns [InstanceProfile](#instanceprofile).
 
 ### IAMServiceResource.create_policy method
 
-Creates a new managed policy for your account.
+Creates a new managed policy for your Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_policy` method.
 
@@ -802,7 +802,7 @@ Returns [Policy](#policy).
 
 ### IAMServiceResource.create_role method
 
-Creates a new role for your account.
+Creates a new role for your Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_role` method.
 
@@ -847,7 +847,7 @@ Returns [SamlProvider](#samlprovider).
 
 ### IAMServiceResource.create_server_certificate method
 
-Uploads a server certificate entity for the account.
+Uploads a server certificate entity for the Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_server_certificate` method.
 
@@ -890,7 +890,7 @@ Returns [SigningCertificate](#signingcertificate).
 
 ### IAMServiceResource.create_user method
 
-Creates a new IAM user for your account.
+Creates a new IAM user for your Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_user` method.
 
@@ -911,7 +911,7 @@ Returns [User](#user).
 
 ### IAMServiceResource.create_virtual_mfa_device method
 
-Creates a new virtual MFA device for the account.
+Creates a new virtual MFA device for the Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create_virtual_mfa_device` method.
 
@@ -1146,7 +1146,7 @@ Boto3 documentation:
 
 #### AccountPasswordPolicy.delete method
 
-Deletes the password policy for the account.
+Deletes the password policy for the Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").delete` method.
 
@@ -1186,7 +1186,7 @@ Boto3 documentation:
 
 #### AccountPasswordPolicy.update method
 
-Updates the password policy settings for the account.
+Updates the password policy settings for the Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").update` method.
 
@@ -1973,7 +1973,8 @@ Returns [LoginProfile](#loginprofile).
 #### LoginProfile.delete method
 
 Deletes the password for the specified IAM user, which terminates the user's
-ability to access Amazon Web Services services through the Management Console.
+ability to access Amazon Web Services services through the Amazon Web Services
+Management Console.
 
 Type annotations for `boto3.resource("iam").delete` method.
 
@@ -3301,7 +3302,7 @@ Keyword-only arguments:
 
 #### User.create method
 
-Creates a new IAM user for your account.
+Creates a new IAM user for your Amazon Web Services account.
 
 Type annotations for `boto3.resource("iam").create` method.
 

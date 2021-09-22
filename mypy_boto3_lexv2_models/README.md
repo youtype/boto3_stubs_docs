@@ -56,6 +56,7 @@ from mypy_boto3_lexv2_models.client import LexModelsV2Client
 - [delete_resource_policy_statement](./client.md#delete_resource_policy_statement)
 - [delete_slot](./client.md#delete_slot)
 - [delete_slot_type](./client.md#delete_slot_type)
+- [delete_utterances](./client.md#delete_utterances)
 - [describe_bot](./client.md#describe_bot)
 - [describe_bot_alias](./client.md#describe_bot_alias)
 - [describe_bot_locale](./client.md#describe_bot_locale)
@@ -69,6 +70,7 @@ from mypy_boto3_lexv2_models.client import LexModelsV2Client
 - [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_waiter](./client.md#get_waiter)
+- [list_aggregated_utterances](./client.md#list_aggregated_utterances)
 - [list_bot_aliases](./client.md#list_bot_aliases)
 - [list_bot_locales](./client.md#list_bot_locales)
 - [list_bot_versions](./client.md#list_bot_versions)
@@ -133,9 +135,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lexv2_models.literals import BotAliasAvailableWaiterName, ...
+from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType, ...
 ```
 
+- [AggregatedUtterancesFilterNameType](./literals.md#aggregatedutterancesfilternametype)
+- [AggregatedUtterancesFilterOperatorType](./literals.md#aggregatedutterancesfilteroperatortype)
+- [AggregatedUtterancesSortAttributeType](./literals.md#aggregatedutterancessortattributetype)
 - [BotAliasAvailableWaiterName](./literals.md#botaliasavailablewaitername)
 - [BotAliasStatusType](./literals.md#botaliasstatustype)
 - [BotAvailableWaiterName](./literals.md#botavailablewaitername)
@@ -180,6 +185,7 @@ from mypy_boto3_lexv2_models.literals import BotAliasAvailableWaiterName, ...
 - [SlotTypeSortAttributeType](./literals.md#slottypesortattributetype)
 - [SlotValueResolutionStrategyType](./literals.md#slotvalueresolutionstrategytype)
 - [SortOrderType](./literals.md#sortordertype)
+- [TimeDimensionType](./literals.md#timedimensiontype)
 - [ServiceName](./literals.md#servicename)
 
 ## Typed dictionaries
@@ -190,9 +196,12 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef, ...
+from mypy_boto3_lexv2_models.type_defs import AggregatedUtterancesFilterTypeDef, ...
 ```
 
+- [AggregatedUtterancesFilterTypeDef](./type_defs.md#aggregatedutterancesfiltertypedef)
+- [AggregatedUtterancesSortByTypeDef](./type_defs.md#aggregatedutterancessortbytypedef)
+- [AggregatedUtterancesSummaryTypeDef](./type_defs.md#aggregatedutterancessummarytypedef)
 - [AudioLogDestinationTypeDef](./type_defs.md#audiologdestinationtypedef)
 - [AudioLogSettingTypeDef](./type_defs.md#audiologsettingtypedef)
 - [BotAliasHistoryEventTypeDef](./type_defs.md#botaliashistoryeventtypedef)
@@ -264,6 +273,7 @@ from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef, ...
 - [DeleteResourcePolicyStatementResponseTypeDef](./type_defs.md#deleteresourcepolicystatementresponsetypedef)
 - [DeleteSlotRequestRequestTypeDef](./type_defs.md#deleteslotrequestrequesttypedef)
 - [DeleteSlotTypeRequestRequestTypeDef](./type_defs.md#deleteslottyperequestrequesttypedef)
+- [DeleteUtterancesRequestRequestTypeDef](./type_defs.md#deleteutterancesrequestrequesttypedef)
 - [DescribeBotAliasRequestRequestTypeDef](./type_defs.md#describebotaliasrequestrequesttypedef)
 - [DescribeBotAliasResponseTypeDef](./type_defs.md#describebotaliasresponsetypedef)
 - [DescribeBotLocaleRequestRequestTypeDef](./type_defs.md#describebotlocalerequestrequesttypedef)
@@ -303,6 +313,8 @@ from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef, ...
 - [IntentSummaryTypeDef](./type_defs.md#intentsummarytypedef)
 - [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
 - [LambdaCodeHookTypeDef](./type_defs.md#lambdacodehooktypedef)
+- [ListAggregatedUtterancesRequestRequestTypeDef](./type_defs.md#listaggregatedutterancesrequestrequesttypedef)
+- [ListAggregatedUtterancesResponseTypeDef](./type_defs.md#listaggregatedutterancesresponsetypedef)
 - [ListBotAliasesRequestRequestTypeDef](./type_defs.md#listbotaliasesrequestrequesttypedef)
 - [ListBotAliasesResponseTypeDef](./type_defs.md#listbotaliasesresponsetypedef)
 - [ListBotLocalesRequestRequestTypeDef](./type_defs.md#listbotlocalesrequestrequesttypedef)
@@ -335,6 +347,7 @@ from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef, ...
 - [PlainTextMessageTypeDef](./type_defs.md#plaintextmessagetypedef)
 - [PrincipalTypeDef](./type_defs.md#principaltypedef)
 - [PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef)
+- [RelativeAggregationDurationTypeDef](./type_defs.md#relativeaggregationdurationtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
 - [S3BucketLogDestinationTypeDef](./type_defs.md#s3bucketlogdestinationtypedef)
@@ -378,6 +391,7 @@ from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef, ...
 - [UpdateSlotResponseTypeDef](./type_defs.md#updateslotresponsetypedef)
 - [UpdateSlotTypeRequestRequestTypeDef](./type_defs.md#updateslottyperequestrequesttypedef)
 - [UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef)
+- [UtteranceAggregationDurationTypeDef](./type_defs.md#utteranceaggregationdurationtypedef)
 - [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
 - [WaitAndContinueSpecificationTypeDef](./type_defs.md#waitandcontinuespecificationtypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

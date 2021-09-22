@@ -252,6 +252,7 @@ from mypy_boto3_wafv2.type_defs import ActionConditionTypeDef, ...
 - [PutPermissionPolicyRequestRequestTypeDef](./type_defs.md#putpermissionpolicyrequestrequesttypedef)
 - [RateBasedStatementManagedKeysIPSetTypeDef](./type_defs.md#ratebasedstatementmanagedkeysipsettypedef)
 - [RateBasedStatementTypeDef](./type_defs.md#ratebasedstatementtypedef)
+- [RegexMatchStatementTypeDef](./type_defs.md#regexmatchstatementtypedef)
 - [RegexPatternSetReferenceStatementTypeDef](./type_defs.md#regexpatternsetreferencestatementtypedef)
 - [RegexPatternSetSummaryTypeDef](./type_defs.md#regexpatternsetsummarytypedef)
 - [RegexPatternSetTypeDef](./type_defs.md#regexpatternsettypedef)

@@ -16,6 +16,7 @@ type annotations stubs module
   - [ComponentConfigurationTypeDef](#componentconfigurationtypedef)
   - [ComponentParameterDetailTypeDef](#componentparameterdetailtypedef)
   - [ComponentParameterTypeDef](#componentparametertypedef)
+  - [ComponentStateTypeDef](#componentstatetypedef)
   - [ComponentSummaryTypeDef](#componentsummarytypedef)
   - [ComponentTypeDef](#componenttypedef)
   - [ComponentVersionTypeDef](#componentversiontypedef)
@@ -93,6 +94,7 @@ type annotations stubs module
   - [InfrastructureConfigurationTypeDef](#infrastructureconfigurationtypedef)
   - [InstanceBlockDeviceMappingTypeDef](#instanceblockdevicemappingtypedef)
   - [InstanceConfigurationTypeDef](#instanceconfigurationtypedef)
+  - [InstanceMetadataOptionsTypeDef](#instancemetadataoptionstypedef)
   - [LaunchPermissionConfigurationTypeDef](#launchpermissionconfigurationtypedef)
   - [LaunchTemplateConfigurationTypeDef](#launchtemplateconfigurationtypedef)
   - [ListComponentBuildVersionsRequestRequestTypeDef](#listcomponentbuildversionsrequestrequesttypedef)
@@ -255,6 +257,18 @@ Required fields:
 - `name`: `str`
 - `value`: `Sequence`\[`str`\]
 
+## ComponentStateTypeDef
+
+```python
+from mypy_boto3_imagebuilder.type_defs import ComponentStateTypeDef
+```
+
+Optional fields:
+
+- `status`: `Literal['DEPRECATED']` (see
+  [ComponentStatusType](./literals.md#componentstatustype))
+- `reason`: `str`
+
 ## ComponentSummaryTypeDef
 
 ```python
@@ -268,6 +282,7 @@ Optional fields:
 - `version`: `str`
 - `platform`: [PlatformType](./literals.md#platformtype)
 - `supportedOsVersions`: `List`\[`str`\]
+- `state`: [ComponentStateTypeDef](./type_defs.md#componentstatetypedef)
 - `type`: [ComponentTypeType](./literals.md#componenttypetype)
 - `owner`: `str`
 - `description`: `str`
@@ -291,6 +306,7 @@ Optional fields:
 - `type`: [ComponentTypeType](./literals.md#componenttypetype)
 - `platform`: [PlatformType](./literals.md#platformtype)
 - `supportedOsVersions`: `List`\[`str`\]
+- `state`: [ComponentStateTypeDef](./type_defs.md#componentstatetypedef)
 - `parameters`:
   `List`\[[ComponentParameterDetailTypeDef](./type_defs.md#componentparameterdetailtypedef)\]
 - `owner`: `str`
@@ -644,6 +660,8 @@ Optional fields:
 - `terminateInstanceOnFailure`: `bool`
 - `snsTopicArn`: `str`
 - `resourceTags`: `Mapping`\[`str`, `str`\]
+- `instanceMetadataOptions`:
+  [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateInfrastructureConfigurationResponseTypeDef
@@ -893,6 +911,7 @@ Optional fields:
 - `snapshotId`: `str`
 - `volumeSize`: `int`
 - `volumeType`: [EbsVolumeTypeType](./literals.md#ebsvolumetypetype)
+- `throughput`: `int`
 
 ## FilterTypeDef
 
@@ -1412,6 +1431,8 @@ Optional fields:
 - `dateCreated`: `str`
 - `dateUpdated`: `str`
 - `resourceTags`: `Dict`\[`str`, `str`\]
+- `instanceMetadataOptions`:
+  [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
 ## InstanceBlockDeviceMappingTypeDef
@@ -1439,6 +1460,17 @@ Optional fields:
 - `image`: `str`
 - `blockDeviceMappings`:
   `Sequence`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
+
+## InstanceMetadataOptionsTypeDef
+
+```python
+from mypy_boto3_imagebuilder.type_defs import InstanceMetadataOptionsTypeDef
+```
+
+Optional fields:
+
+- `httpTokens`: `str`
+- `httpPutResponseHopLimit`: `int`
 
 ## LaunchPermissionConfigurationTypeDef
 
@@ -2122,6 +2154,8 @@ Optional fields:
 - `terminateInstanceOnFailure`: `bool`
 - `snsTopicArn`: `str`
 - `resourceTags`: `Mapping`\[`str`, `str`\]
+- `instanceMetadataOptions`:
+  [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 
 ## UpdateInfrastructureConfigurationResponseTypeDef
 

@@ -448,6 +448,7 @@ from mypy_boto3_mediapackage_vod.type_defs import EgressEndpointTypeDef
 Optional fields:
 
 - `PackagingConfigurationId`: `str`
+- `Status`: `str`
 - `Url`: `str`
 
 ## HlsEncryptionTypeDef

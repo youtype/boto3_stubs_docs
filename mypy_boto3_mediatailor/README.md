@@ -33,6 +33,7 @@ from mypy_boto3_mediatailor.client import MediaTailorClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [configure_logs_for_playback_configuration](./client.md#configure_logs_for_playback_configuration)
 - [create_channel](./client.md#create_channel)
 - [create_program](./client.md#create_program)
 - [create_source_location](./client.md#create_source_location)
@@ -140,6 +141,8 @@ from mypy_boto3_mediatailor.type_defs import AccessConfigurationTypeDef, ...
 - [BumperTypeDef](./type_defs.md#bumpertypedef)
 - [CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef)
 - [ChannelTypeDef](./type_defs.md#channeltypedef)
+- [ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef](./type_defs.md#configurelogsforplaybackconfigurationrequestrequesttypedef)
+- [ConfigureLogsForPlaybackConfigurationResponseTypeDef](./type_defs.md#configurelogsforplaybackconfigurationresponsetypedef)
 - [CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef)
 - [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef)
 - [CreateProgramRequestRequestTypeDef](./type_defs.md#createprogramrequestrequesttypedef)
@@ -189,6 +192,7 @@ from mypy_boto3_mediatailor.type_defs import AccessConfigurationTypeDef, ...
 - [ListVodSourcesRequestRequestTypeDef](./type_defs.md#listvodsourcesrequestrequesttypedef)
 - [ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef)
 - [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
+- [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
 - [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PlaybackConfigurationTypeDef](./type_defs.md#playbackconfigurationtypedef)

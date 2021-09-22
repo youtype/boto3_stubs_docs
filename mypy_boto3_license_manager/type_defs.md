@@ -25,6 +25,8 @@ type annotations stubs module
   - [CreateGrantVersionResponseTypeDef](#creategrantversionresponsetypedef)
   - [CreateLicenseConfigurationRequestRequestTypeDef](#createlicenseconfigurationrequestrequesttypedef)
   - [CreateLicenseConfigurationResponseTypeDef](#createlicenseconfigurationresponsetypedef)
+  - [CreateLicenseConversionTaskForResourceRequestRequestTypeDef](#createlicenseconversiontaskforresourcerequestrequesttypedef)
+  - [CreateLicenseConversionTaskForResourceResponseTypeDef](#createlicenseconversiontaskforresourceresponsetypedef)
   - [CreateLicenseManagerReportGeneratorRequestRequestTypeDef](#createlicensemanagerreportgeneratorrequestrequesttypedef)
   - [CreateLicenseManagerReportGeneratorResponseTypeDef](#createlicensemanagerreportgeneratorresponsetypedef)
   - [CreateLicenseRequestRequestTypeDef](#createlicenserequestrequesttypedef)
@@ -53,6 +55,8 @@ type annotations stubs module
   - [GetGrantResponseTypeDef](#getgrantresponsetypedef)
   - [GetLicenseConfigurationRequestRequestTypeDef](#getlicenseconfigurationrequestrequesttypedef)
   - [GetLicenseConfigurationResponseTypeDef](#getlicenseconfigurationresponsetypedef)
+  - [GetLicenseConversionTaskRequestRequestTypeDef](#getlicenseconversiontaskrequestrequesttypedef)
+  - [GetLicenseConversionTaskResponseTypeDef](#getlicenseconversiontaskresponsetypedef)
   - [GetLicenseManagerReportGeneratorRequestRequestTypeDef](#getlicensemanagerreportgeneratorrequestrequesttypedef)
   - [GetLicenseManagerReportGeneratorResponseTypeDef](#getlicensemanagerreportgeneratorresponsetypedef)
   - [GetLicenseRequestRequestTypeDef](#getlicenserequestrequesttypedef)
@@ -68,6 +72,8 @@ type annotations stubs module
   - [LicenseConfigurationAssociationTypeDef](#licenseconfigurationassociationtypedef)
   - [LicenseConfigurationTypeDef](#licenseconfigurationtypedef)
   - [LicenseConfigurationUsageTypeDef](#licenseconfigurationusagetypedef)
+  - [LicenseConversionContextTypeDef](#licenseconversioncontexttypedef)
+  - [LicenseConversionTaskTypeDef](#licenseconversiontasktypedef)
   - [LicenseOperationFailureTypeDef](#licenseoperationfailuretypedef)
   - [LicenseSpecificationTypeDef](#licensespecificationtypedef)
   - [LicenseTypeDef](#licensetypedef)
@@ -80,6 +86,8 @@ type annotations stubs module
   - [ListFailuresForLicenseConfigurationOperationsResponseTypeDef](#listfailuresforlicenseconfigurationoperationsresponsetypedef)
   - [ListLicenseConfigurationsRequestRequestTypeDef](#listlicenseconfigurationsrequestrequesttypedef)
   - [ListLicenseConfigurationsResponseTypeDef](#listlicenseconfigurationsresponsetypedef)
+  - [ListLicenseConversionTasksRequestRequestTypeDef](#listlicenseconversiontasksrequestrequesttypedef)
+  - [ListLicenseConversionTasksResponseTypeDef](#listlicenseconversiontasksresponsetypedef)
   - [ListLicenseManagerReportGeneratorsRequestRequestTypeDef](#listlicensemanagerreportgeneratorsrequestrequesttypedef)
   - [ListLicenseManagerReportGeneratorsResponseTypeDef](#listlicensemanagerreportgeneratorsresponsetypedef)
   - [ListLicenseSpecificationsForResourceRequestRequestTypeDef](#listlicensespecificationsforresourcerequestrequesttypedef)
@@ -386,6 +394,32 @@ from mypy_boto3_license_manager.type_defs import CreateLicenseConfigurationRespo
 Required fields:
 
 - `LicenseConfigurationArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateLicenseConversionTaskForResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CreateLicenseConversionTaskForResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `SourceLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+- `DestinationLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+
+## CreateLicenseConversionTaskForResourceResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import CreateLicenseConversionTaskForResourceResponseTypeDef
+```
+
+Required fields:
+
+- `LicenseConversionTaskId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -814,6 +848,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetLicenseConversionTaskRequestRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import GetLicenseConversionTaskRequestRequestTypeDef
+```
+
+Required fields:
+
+- `LicenseConversionTaskId`: `str`
+
+## GetLicenseConversionTaskResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import GetLicenseConversionTaskResponseTypeDef
+```
+
+Required fields:
+
+- `LicenseConversionTaskId`: `str`
+- `ResourceArn`: `str`
+- `SourceLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+- `DestinationLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+- `StatusMessage`: `str`
+- `Status`:
+  [LicenseConversionTaskStatusType](./literals.md#licenseconversiontaskstatustype)
+- `StartTime`: `datetime`
+- `LicenseConversionTime`: `datetime`
+- `EndTime`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetLicenseManagerReportGeneratorRequestRequestTypeDef
 
 ```python
@@ -1054,6 +1121,37 @@ Optional fields:
 - `AssociationTime`: `datetime`
 - `ConsumedLicenses`: `int`
 
+## LicenseConversionContextTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import LicenseConversionContextTypeDef
+```
+
+Optional fields:
+
+- `UsageOperation`: `str`
+
+## LicenseConversionTaskTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import LicenseConversionTaskTypeDef
+```
+
+Optional fields:
+
+- `LicenseConversionTaskId`: `str`
+- `ResourceArn`: `str`
+- `SourceLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+- `DestinationLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+- `Status`:
+  [LicenseConversionTaskStatusType](./literals.md#licenseconversiontaskstatustype)
+- `StatusMessage`: `str`
+- `StartTime`: `datetime`
+- `LicenseConversionTime`: `datetime`
+- `EndTime`: `datetime`
+
 ## LicenseOperationFailureTypeDef
 
 ```python
@@ -1229,6 +1327,32 @@ Required fields:
 
 - `LicenseConfigurations`:
   `List`\[[LicenseConfigurationTypeDef](./type_defs.md#licenseconfigurationtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListLicenseConversionTasksRequestRequestTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListLicenseConversionTasksRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+## ListLicenseConversionTasksResponseTypeDef
+
+```python
+from mypy_boto3_license_manager.type_defs import ListLicenseConversionTasksResponseTypeDef
+```
+
+Required fields:
+
+- `LicenseConversionTasks`:
+  `List`\[[LicenseConversionTaskTypeDef](./type_defs.md#licenseconversiontasktypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

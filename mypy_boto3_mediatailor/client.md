@@ -13,6 +13,7 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [can_paginate](#can_paginate)
+    - [configure_logs_for_playback_configuration](#configure_logs_for_playback_configuration)
     - [create_channel](#create_channel)
     - [create_program](#create_program)
     - [create_source_location](#create_source_location)
@@ -108,6 +109,27 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+### configure_logs_for_playback_configuration
+
+Configures Amazon CloudWatch log settings for a playback configuration.
+
+Type annotations for
+`boto3.client("mediatailor").configure_logs_for_playback_configuration` method.
+
+Boto3 documentation:
+[MediaTailor.Client.configure_logs_for_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.configure_logs_for_playback_configuration)
+
+Arguments mapping described in
+[ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef](./type_defs.md#configurelogsforplaybackconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `PercentEnabled`: `int` *(required)*
+- `PlaybackConfigurationName`: `str` *(required)*
+
+Returns
+[ConfigureLogsForPlaybackConfigurationResponseTypeDef](./type_defs.md#configurelogsforplaybackconfigurationresponsetypedef).
 
 ### create_channel
 

@@ -16,6 +16,8 @@ type annotations stubs module
   - [BumperTypeDef](#bumpertypedef)
   - [CdnConfigurationTypeDef](#cdnconfigurationtypedef)
   - [ChannelTypeDef](#channeltypedef)
+  - [ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef](#configurelogsforplaybackconfigurationrequestrequesttypedef)
+  - [ConfigureLogsForPlaybackConfigurationResponseTypeDef](#configurelogsforplaybackconfigurationresponsetypedef)
   - [CreateChannelRequestRequestTypeDef](#createchannelrequestrequesttypedef)
   - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
   - [CreateProgramRequestRequestTypeDef](#createprogramrequestrequesttypedef)
@@ -65,6 +67,7 @@ type annotations stubs module
   - [ListVodSourcesRequestRequestTypeDef](#listvodsourcesrequestrequesttypedef)
   - [ListVodSourcesResponseTypeDef](#listvodsourcesresponsetypedef)
   - [LivePreRollConfigurationTypeDef](#liveprerollconfigurationtypedef)
+  - [LogConfigurationTypeDef](#logconfigurationtypedef)
   - [ManifestProcessingRulesTypeDef](#manifestprocessingrulestypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PlaybackConfigurationTypeDef](#playbackconfigurationtypedef)
@@ -199,6 +202,30 @@ Optional fields:
 - `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 - `LastModifiedTime`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
+
+## ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `PercentEnabled`: `int`
+- `PlaybackConfigurationName`: `str`
+
+## ConfigureLogsForPlaybackConfigurationResponseTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import ConfigureLogsForPlaybackConfigurationResponseTypeDef
+```
+
+Required fields:
+
+- `PercentEnabled`: `int`
+- `PlaybackConfigurationName`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateChannelRequestRequestTypeDef
 
@@ -671,6 +698,8 @@ Required fields:
   [HlsConfigurationTypeDef](./type_defs.md#hlsconfigurationtypedef)
 - `LivePreRollConfiguration`:
   [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
+- `LogConfiguration`:
+  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
 - `ManifestProcessingRules`:
   [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
 - `Name`: `str`
@@ -890,6 +919,16 @@ Optional fields:
 - `AdDecisionServerUrl`: `str`
 - `MaxDurationSeconds`: `int`
 
+## LogConfigurationTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import LogConfigurationTypeDef
+```
+
+Required fields:
+
+- `PercentEnabled`: `int`
+
 ## ManifestProcessingRulesTypeDef
 
 ```python
@@ -934,6 +973,8 @@ Optional fields:
   [HlsConfigurationTypeDef](./type_defs.md#hlsconfigurationtypedef)
 - `LivePreRollConfiguration`:
   [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
+- `LogConfiguration`:
+  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
 - `ManifestProcessingRules`:
   [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
 - `Name`: `str`
@@ -1006,6 +1047,8 @@ Required fields:
   [HlsConfigurationTypeDef](./type_defs.md#hlsconfigurationtypedef)
 - `LivePreRollConfiguration`:
   [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
+- `LogConfiguration`:
+  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
 - `ManifestProcessingRules`:
   [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
 - `Name`: `str`

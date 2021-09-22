@@ -377,6 +377,8 @@ Keyword-only arguments:
 - `terminateInstanceOnFailure`: `bool`
 - `snsTopicArn`: `str`
 - `resourceTags`: `Mapping`\[`str`, `str`\]
+- `instanceMetadataOptions`:
+  [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
 Returns
@@ -443,7 +445,7 @@ Returns
 
 ### delete_image
 
-Deletes an image.
+Deletes an Image Builder image resource.
 
 Type annotations for `boto3.client("imagebuilder").delete_image` method.
 
@@ -901,7 +903,7 @@ Returns
 ### list_image_packages
 
 List the Packages that are associated with an Image Build Version, as
-determined by Amazon EC2 Systems Manager Inventory at build time.
+determined by Amazon Web Services Systems Manager Inventory at build time.
 
 Type annotations for `boto3.client("imagebuilder").list_image_packages` method.
 
@@ -1277,6 +1279,8 @@ Keyword-only arguments:
 - `terminateInstanceOnFailure`: `bool`
 - `snsTopicArn`: `str`
 - `resourceTags`: `Mapping`\[`str`, `str`\]
+- `instanceMetadataOptions`:
+  [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 
 Returns
 [UpdateInfrastructureConfigurationResponseTypeDef](./type_defs.md#updateinfrastructureconfigurationresponsetypedef).

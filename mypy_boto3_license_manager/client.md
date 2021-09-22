@@ -21,6 +21,7 @@ type annotations stubs module
     - [create_grant_version](#create_grant_version)
     - [create_license](#create_license)
     - [create_license_configuration](#create_license_configuration)
+    - [create_license_conversion_task_for_resource](#create_license_conversion_task_for_resource)
     - [create_license_manager_report_generator](#create_license_manager_report_generator)
     - [create_license_version](#create_license_version)
     - [create_token](#create_token)
@@ -35,6 +36,7 @@ type annotations stubs module
     - [get_grant](#get_grant)
     - [get_license](#get_license)
     - [get_license_configuration](#get_license_configuration)
+    - [get_license_conversion_task](#get_license_conversion_task)
     - [get_license_manager_report_generator](#get_license_manager_report_generator)
     - [get_license_usage](#get_license_usage)
     - [get_service_settings](#get_service_settings)
@@ -42,6 +44,7 @@ type annotations stubs module
     - [list_distributed_grants](#list_distributed_grants)
     - [list_failures_for_license_configuration_operations](#list_failures_for_license_configuration_operations)
     - [list_license_configurations](#list_license_configurations)
+    - [list_license_conversion_tasks](#list_license_conversion_tasks)
     - [list_license_manager_report_generators](#list_license_manager_report_generators)
     - [list_license_specifications_for_resource](#list_license_specifications_for_resource)
     - [list_license_versions](#list_license_versions)
@@ -352,9 +355,36 @@ Keyword-only arguments:
 Returns
 [CreateLicenseConfigurationResponseTypeDef](./type_defs.md#createlicenseconfigurationresponsetypedef).
 
+### create_license_conversion_task_for_resource
+
+Creates a new license conversion task.
+
+Type annotations for
+`boto3.client("license-manager").create_license_conversion_task_for_resource`
+method.
+
+Boto3 documentation:
+[LicenseManager.Client.create_license_conversion_task_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_conversion_task_for_resource)
+
+Arguments mapping described in
+[CreateLicenseConversionTaskForResourceRequestRequestTypeDef](./type_defs.md#createlicenseconversiontaskforresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `SourceLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+  *(required)*
+- `DestinationLicenseContext`:
+  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
+  *(required)*
+
+Returns
+[CreateLicenseConversionTaskForResourceResponseTypeDef](./type_defs.md#createlicenseconversiontaskforresourceresponsetypedef).
+
 ### create_license_manager_report_generator
 
-Creates a new report generator.
+Creates a report generator.
 
 Type annotations for
 `boto3.client("license-manager").create_license_manager_report_generator`
@@ -504,7 +534,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_license_manager_report_generator
 
-Delete an existing report generator.
+Deletes the specified report generator.
 
 Type annotations for
 `boto3.client("license-manager").delete_license_manager_report_generator`
@@ -658,9 +688,29 @@ Keyword-only arguments:
 Returns
 [GetLicenseConfigurationResponseTypeDef](./type_defs.md#getlicenseconfigurationresponsetypedef).
 
+### get_license_conversion_task
+
+Gets information about the specified license type conversion task.
+
+Type annotations for
+`boto3.client("license-manager").get_license_conversion_task` method.
+
+Boto3 documentation:
+[LicenseManager.Client.get_license_conversion_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_conversion_task)
+
+Arguments mapping described in
+[GetLicenseConversionTaskRequestRequestTypeDef](./type_defs.md#getlicenseconversiontaskrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `LicenseConversionTaskId`: `str` *(required)*
+
+Returns
+[GetLicenseConversionTaskResponseTypeDef](./type_defs.md#getlicenseconversiontaskresponsetypedef).
+
 ### get_license_manager_report_generator
 
-Gets information on the specified report generator.
+Gets information about the specified report generator.
 
 Type annotations for
 `boto3.client("license-manager").get_license_manager_report_generator` method.
@@ -802,6 +852,28 @@ Keyword-only arguments:
 
 Returns
 [ListLicenseConfigurationsResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponsetypedef).
+
+### list_license_conversion_tasks
+
+Lists the license type conversion tasks for your account.
+
+Type annotations for
+`boto3.client("license-manager").list_license_conversion_tasks` method.
+
+Boto3 documentation:
+[LicenseManager.Client.list_license_conversion_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_conversion_tasks)
+
+Arguments mapping described in
+[ListLicenseConversionTasksRequestRequestTypeDef](./type_defs.md#listlicenseconversiontasksrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+Returns
+[ListLicenseConversionTasksResponseTypeDef](./type_defs.md#listlicenseconversiontasksresponsetypedef).
 
 ### list_license_manager_report_generators
 
@@ -1144,8 +1216,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_license_specifications_for_resource
 
-Adds or removes the specified license configurations for the specified AWS
-resource.
+Adds or removes the specified license configurations for the specified Amazon
+Web Services resource.
 
 Type annotations for
 `boto3.client("license-manager").update_license_specifications_for_resource`
