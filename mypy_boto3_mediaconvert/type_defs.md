@@ -39,6 +39,7 @@ type annotations stubs module
   - [CmafAdditionalManifestTypeDef](#cmafadditionalmanifesttypedef)
   - [CmafEncryptionSettingsTypeDef](#cmafencryptionsettingstypedef)
   - [CmafGroupSettingsTypeDef](#cmafgroupsettingstypedef)
+  - [CmafImageBasedTrickPlaySettingsTypeDef](#cmafimagebasedtrickplaysettingstypedef)
   - [CmfcSettingsTypeDef](#cmfcsettingstypedef)
   - [ColorCorrectorTypeDef](#colorcorrectortypedef)
   - [ContainerSettingsTypeDef](#containersettingstypedef)
@@ -53,6 +54,7 @@ type annotations stubs module
   - [DashAdditionalManifestTypeDef](#dashadditionalmanifesttypedef)
   - [DashIsoEncryptionSettingsTypeDef](#dashisoencryptionsettingstypedef)
   - [DashIsoGroupSettingsTypeDef](#dashisogroupsettingstypedef)
+  - [DashIsoImageBasedTrickPlaySettingsTypeDef](#dashisoimagebasedtrickplaysettingstypedef)
   - [DeinterlacerTypeDef](#deinterlacertypedef)
   - [DeleteJobTemplateRequestRequestTypeDef](#deletejobtemplaterequestrequesttypedef)
   - [DeletePresetRequestRequestTypeDef](#deletepresetrequestrequesttypedef)
@@ -99,6 +101,7 @@ type annotations stubs module
   - [HlsCaptionLanguageMappingTypeDef](#hlscaptionlanguagemappingtypedef)
   - [HlsEncryptionSettingsTypeDef](#hlsencryptionsettingstypedef)
   - [HlsGroupSettingsTypeDef](#hlsgroupsettingstypedef)
+  - [HlsImageBasedTrickPlaySettingsTypeDef](#hlsimagebasedtrickplaysettingstypedef)
   - [HlsRenditionGroupSettingsTypeDef](#hlsrenditiongroupsettingstypedef)
   - [HlsSettingsTypeDef](#hlssettingstypedef)
   - [HopDestinationTypeDef](#hopdestinationtypedef)
@@ -527,15 +530,20 @@ Optional fields:
 
 - `Alignment`:
   [BurninSubtitleAlignmentType](./literals.md#burninsubtitlealignmenttype)
+- `ApplyFontColor`:
+  [BurninSubtitleApplyFontColorType](./literals.md#burninsubtitleapplyfontcolortype)
 - `BackgroundColor`:
   [BurninSubtitleBackgroundColorType](./literals.md#burninsubtitlebackgroundcolortype)
 - `BackgroundOpacity`: `int`
+- `FallbackFont`:
+  [BurninSubtitleFallbackFontType](./literals.md#burninsubtitlefallbackfonttype)
 - `FontColor`:
   [BurninSubtitleFontColorType](./literals.md#burninsubtitlefontcolortype)
 - `FontOpacity`: `int`
 - `FontResolution`: `int`
 - `FontScript`: [FontScriptType](./literals.md#fontscripttype)
 - `FontSize`: `int`
+- `HexFontColor`: `str`
 - `OutlineColor`:
   [BurninSubtitleOutlineColorType](./literals.md#burninsubtitleoutlinecolortype)
 - `OutlineSize`: `int`
@@ -544,6 +552,8 @@ Optional fields:
 - `ShadowOpacity`: `int`
 - `ShadowXOffset`: `int`
 - `ShadowYOffset`: `int`
+- `StylePassthrough`:
+  [BurnInSubtitleStylePassthroughType](./literals.md#burninsubtitlestylepassthroughtype)
 - `TeletextSpacing`:
   [BurninSubtitleTeletextSpacingType](./literals.md#burninsubtitleteletextspacingtype)
 - `XPosition`: `int`
@@ -728,6 +738,8 @@ Optional fields:
 - `FragmentLength`: `int`
 - `ImageBasedTrickPlay`:
   [CmafImageBasedTrickPlayType](./literals.md#cmafimagebasedtrickplaytype)
+- `ImageBasedTrickPlaySettings`:
+  [CmafImageBasedTrickPlaySettingsTypeDef](./type_defs.md#cmafimagebasedtrickplaysettingstypedef)
 - `ManifestCompression`:
   [CmafManifestCompressionType](./literals.md#cmafmanifestcompressiontype)
 - `ManifestDurationFormat`:
@@ -752,6 +764,22 @@ Optional fields:
   [CmafWriteHLSManifestType](./literals.md#cmafwritehlsmanifesttype)
 - `WriteSegmentTimelineInRepresentation`:
   [CmafWriteSegmentTimelineInRepresentationType](./literals.md#cmafwritesegmenttimelineinrepresentationtype)
+
+## CmafImageBasedTrickPlaySettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import CmafImageBasedTrickPlaySettingsTypeDef
+```
+
+Optional fields:
+
+- `IntervalCadence`:
+  [CmafIntervalCadenceType](./literals.md#cmafintervalcadencetype)
+- `ThumbnailHeight`: `int`
+- `ThumbnailInterval`: `float`
+- `ThumbnailWidth`: `int`
+- `TileHeight`: `int`
+- `TileWidth`: `int`
 
 ## CmfcSettingsTypeDef
 
@@ -996,6 +1024,8 @@ Optional fields:
   [DashIsoHbbtvComplianceType](./literals.md#dashisohbbtvcompliancetype)
 - `ImageBasedTrickPlay`:
   [DashIsoImageBasedTrickPlayType](./literals.md#dashisoimagebasedtrickplaytype)
+- `ImageBasedTrickPlaySettings`:
+  [DashIsoImageBasedTrickPlaySettingsTypeDef](./type_defs.md#dashisoimagebasedtrickplaysettingstypedef)
 - `MinBufferTime`: `int`
 - `MinFinalSegmentLength`: `float`
 - `MpdProfile`: [DashIsoMpdProfileType](./literals.md#dashisompdprofiletype)
@@ -1008,6 +1038,22 @@ Optional fields:
   [DashIsoSegmentLengthControlType](./literals.md#dashisosegmentlengthcontroltype)
 - `WriteSegmentTimelineInRepresentation`:
   [DashIsoWriteSegmentTimelineInRepresentationType](./literals.md#dashisowritesegmenttimelineinrepresentationtype)
+
+## DashIsoImageBasedTrickPlaySettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import DashIsoImageBasedTrickPlaySettingsTypeDef
+```
+
+Optional fields:
+
+- `IntervalCadence`:
+  [DashIsoIntervalCadenceType](./literals.md#dashisointervalcadencetype)
+- `ThumbnailHeight`: `int`
+- `ThumbnailInterval`: `float`
+- `ThumbnailWidth`: `int`
+- `TileHeight`: `int`
+- `TileWidth`: `int`
 
 ## DeinterlacerTypeDef
 
@@ -1159,12 +1205,16 @@ Optional fields:
 
 - `Alignment`:
   [DvbSubtitleAlignmentType](./literals.md#dvbsubtitlealignmenttype)
+- `ApplyFontColor`:
+  [DvbSubtitleApplyFontColorType](./literals.md#dvbsubtitleapplyfontcolortype)
 - `BackgroundColor`:
   [DvbSubtitleBackgroundColorType](./literals.md#dvbsubtitlebackgroundcolortype)
 - `BackgroundOpacity`: `int`
 - `DdsHandling`: [DvbddsHandlingType](./literals.md#dvbddshandlingtype)
 - `DdsXCoordinate`: `int`
 - `DdsYCoordinate`: `int`
+- `FallbackFont`:
+  [DvbSubSubtitleFallbackFontType](./literals.md#dvbsubsubtitlefallbackfonttype)
 - `FontColor`:
   [DvbSubtitleFontColorType](./literals.md#dvbsubtitlefontcolortype)
 - `FontOpacity`: `int`
@@ -1172,6 +1222,7 @@ Optional fields:
 - `FontScript`: [FontScriptType](./literals.md#fontscripttype)
 - `FontSize`: `int`
 - `Height`: `int`
+- `HexFontColor`: `str`
 - `OutlineColor`:
   [DvbSubtitleOutlineColorType](./literals.md#dvbsubtitleoutlinecolortype)
 - `OutlineSize`: `int`
@@ -1180,6 +1231,8 @@ Optional fields:
 - `ShadowOpacity`: `int`
 - `ShadowXOffset`: `int`
 - `ShadowYOffset`: `int`
+- `StylePassthrough`:
+  [DvbSubtitleStylePassthroughType](./literals.md#dvbsubtitlestylepassthroughtype)
 - `SubtitlingType`:
   [DvbSubtitlingTypeType](./literals.md#dvbsubtitlingtypetype)
 - `TeletextSpacing`:
@@ -1757,6 +1810,8 @@ Optional fields:
   [HlsEncryptionSettingsTypeDef](./type_defs.md#hlsencryptionsettingstypedef)
 - `ImageBasedTrickPlay`:
   [HlsImageBasedTrickPlayType](./literals.md#hlsimagebasedtrickplaytype)
+- `ImageBasedTrickPlaySettings`:
+  [HlsImageBasedTrickPlaySettingsTypeDef](./type_defs.md#hlsimagebasedtrickplaysettingstypedef)
 - `ManifestCompression`:
   [HlsManifestCompressionType](./literals.md#hlsmanifestcompressiontype)
 - `ManifestDurationFormat`:
@@ -1782,6 +1837,22 @@ Optional fields:
   [HlsTimedMetadataId3FrameType](./literals.md#hlstimedmetadataid3frametype)
 - `TimedMetadataId3Period`: `int`
 - `TimestampDeltaMilliseconds`: `int`
+
+## HlsImageBasedTrickPlaySettingsTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import HlsImageBasedTrickPlaySettingsTypeDef
+```
+
+Optional fields:
+
+- `IntervalCadence`:
+  [HlsIntervalCadenceType](./literals.md#hlsintervalcadencetype)
+- `ThumbnailHeight`: `int`
+- `ThumbnailInterval`: `float`
+- `ThumbnailWidth`: `int`
+- `TileHeight`: `int`
+- `TileWidth`: `int`
 
 ## HlsRenditionGroupSettingsTypeDef
 

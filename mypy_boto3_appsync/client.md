@@ -200,6 +200,8 @@ Keyword-only arguments:
   [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - `elasticsearchConfig`:
   [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
+- `openSearchServiceConfig`:
+  [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
 - `httpConfig`:
   [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
 - `relationalDatabaseConfig`:
@@ -943,6 +945,8 @@ Keyword-only arguments:
   [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - `elasticsearchConfig`:
   [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
+- `openSearchServiceConfig`:
+  [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
 - `httpConfig`:
   [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
 - `relationalDatabaseConfig`:

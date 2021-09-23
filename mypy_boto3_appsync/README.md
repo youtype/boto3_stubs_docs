@@ -231,6 +231,7 @@ from mypy_boto3_appsync.type_defs import AdditionalAuthenticationProviderTypeDef
 - [ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef)
 - [LogConfigTypeDef](./type_defs.md#logconfigtypedef)
 - [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
+- [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
 - [RdsHttpEndpointConfigTypeDef](./type_defs.md#rdshttpendpointconfigtypedef)

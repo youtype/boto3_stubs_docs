@@ -81,6 +81,7 @@ type annotations stubs module
   - [ListTypesResponseTypeDef](#listtypesresponsetypedef)
   - [LogConfigTypeDef](#logconfigtypedef)
   - [OpenIDConnectConfigTypeDef](#openidconnectconfigtypedef)
+  - [OpenSearchServiceDataSourceConfigTypeDef](#opensearchservicedatasourceconfigtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PipelineConfigTypeDef](#pipelineconfigtypedef)
   - [RdsHttpEndpointConfigTypeDef](#rdshttpendpointconfigtypedef)
@@ -287,6 +288,8 @@ Optional fields:
   [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - `elasticsearchConfig`:
   [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
+- `openSearchServiceConfig`:
+  [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
 - `httpConfig`:
   [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
 - `relationalDatabaseConfig`:
@@ -453,6 +456,8 @@ Optional fields:
   [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - `elasticsearchConfig`:
   [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
+- `openSearchServiceConfig`:
+  [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
 - `httpConfig`:
   [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
 - `relationalDatabaseConfig`:
@@ -1117,6 +1122,17 @@ Optional fields:
 - `iatTTL`: `int`
 - `authTTL`: `int`
 
+## OpenSearchServiceDataSourceConfigTypeDef
+
+```python
+from mypy_boto3_appsync.type_defs import OpenSearchServiceDataSourceConfigTypeDef
+```
+
+Required fields:
+
+- `endpoint`: `str`
+- `awsRegion`: `str`
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1350,6 +1366,8 @@ Optional fields:
   [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
 - `elasticsearchConfig`:
   [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
+- `openSearchServiceConfig`:
+  [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
 - `httpConfig`:
   [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
 - `relationalDatabaseConfig`:

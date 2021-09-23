@@ -343,7 +343,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### associate_ops_item_related_item
 
-Associates a related resource to a Systems Manager OpsCenter OpsItem.
+Associates a related item to a Systems Manager OpsCenter OpsItem.
 
 Type annotations for `boto3.client("ssm").associate_ops_item_related_item`
 method.
@@ -1723,7 +1723,7 @@ Returns
 
 ### disassociate_ops_item_related_item
 
-Deletes the association between an OpsItem and a related resource.
+Deletes the association between an OpsItem and a related item.
 
 Type annotations for `boto3.client("ssm").disassociate_ops_item_related_item`
 method.
@@ -2554,7 +2554,8 @@ Returns
 
 ### list_ops_item_related_items
 
-Lists all related-item resources associated with an OpsItem.
+Lists all related-item resources associated with a Systems Manager OpsCenter
+OpsItem.
 
 Type annotations for `boto3.client("ssm").list_ops_item_related_items` method.
 
@@ -2871,6 +2872,8 @@ Keyword-only arguments:
 - `Name`: `str`
 - `Description`: `str`
 - `ClientToken`: `str`
+- `CutoffBehavior`:
+  [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
 
 Returns
 [RegisterTaskWithMaintenanceWindowResultTypeDef](./type_defs.md#registertaskwithmaintenancewindowresulttypedef).
@@ -3376,6 +3379,8 @@ Keyword-only arguments:
 - `Name`: `str`
 - `Description`: `str`
 - `Replace`: `bool`
+- `CutoffBehavior`:
+  [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
 
 Returns
 [UpdateMaintenanceWindowTaskResultTypeDef](./type_defs.md#updatemaintenancewindowtaskresulttypedef).

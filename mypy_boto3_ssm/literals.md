@@ -100,6 +100,7 @@ type annotations stubs module
   - [ListResourceDataSyncPaginatorName](#listresourcedatasyncpaginatorname)
   - [MaintenanceWindowExecutionStatusType](#maintenancewindowexecutionstatustype)
   - [MaintenanceWindowResourceTypeType](#maintenancewindowresourcetypetype)
+  - [MaintenanceWindowTaskCutoffBehaviorType](#maintenancewindowtaskcutoffbehaviortype)
   - [MaintenanceWindowTaskTypeType](#maintenancewindowtasktypetype)
   - [NotificationEventType](#notificationeventtype)
   - [NotificationTypeType](#notificationtypetype)
@@ -1202,6 +1203,17 @@ Values:
 
 - `INSTANCE`
 - `RESOURCE_GROUP`
+
+## MaintenanceWindowTaskCutoffBehaviorType
+
+```python
+from mypy_boto3_ssm.literals import MaintenanceWindowTaskCutoffBehaviorType
+```
+
+Values:
+
+- `CANCEL_TASK`
+- `CONTINUE_TASK`
 
 ## MaintenanceWindowTaskTypeType
 

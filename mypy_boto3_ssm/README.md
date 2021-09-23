@@ -474,6 +474,7 @@ from mypy_boto3_ssm.literals import AssociationComplianceSeverityType, ...
 - [ListResourceDataSyncPaginatorName](./literals.md#listresourcedatasyncpaginatorname)
 - [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
 - [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
+- [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
 - [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
 - [NotificationEventType](./literals.md#notificationeventtype)
 - [NotificationTypeType](./literals.md#notificationtypetype)

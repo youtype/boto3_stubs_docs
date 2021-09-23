@@ -53,8 +53,11 @@ type annotations stubs module
   - [AvcIntraTelecineType](#avcintratelecinetype)
   - [AvcIntraUhdQualityTuningLevelType](#avcintrauhdqualitytuningleveltype)
   - [BillingTagsSourceType](#billingtagssourcetype)
+  - [BurnInSubtitleStylePassthroughType](#burninsubtitlestylepassthroughtype)
   - [BurninSubtitleAlignmentType](#burninsubtitlealignmenttype)
+  - [BurninSubtitleApplyFontColorType](#burninsubtitleapplyfontcolortype)
   - [BurninSubtitleBackgroundColorType](#burninsubtitlebackgroundcolortype)
+  - [BurninSubtitleFallbackFontType](#burninsubtitlefallbackfonttype)
   - [BurninSubtitleFontColorType](#burninsubtitlefontcolortype)
   - [BurninSubtitleOutlineColorType](#burninsubtitleoutlinecolortype)
   - [BurninSubtitleShadowColorType](#burninsubtitleshadowcolortype)
@@ -66,6 +69,7 @@ type annotations stubs module
   - [CmafEncryptionTypeType](#cmafencryptiontypetype)
   - [CmafImageBasedTrickPlayType](#cmafimagebasedtrickplaytype)
   - [CmafInitializationVectorInManifestType](#cmafinitializationvectorinmanifesttype)
+  - [CmafIntervalCadenceType](#cmafintervalcadencetype)
   - [CmafKeyProviderTypeType](#cmafkeyprovidertypetype)
   - [CmafManifestCompressionType](#cmafmanifestcompressiontype)
   - [CmafManifestDurationFormatType](#cmafmanifestdurationformattype)
@@ -94,6 +98,7 @@ type annotations stubs module
   - [DashIsoGroupAudioChannelConfigSchemeIdUriType](#dashisogroupaudiochannelconfigschemeiduritype)
   - [DashIsoHbbtvComplianceType](#dashisohbbtvcompliancetype)
   - [DashIsoImageBasedTrickPlayType](#dashisoimagebasedtrickplaytype)
+  - [DashIsoIntervalCadenceType](#dashisointervalcadencetype)
   - [DashIsoMpdProfileType](#dashisompdprofiletype)
   - [DashIsoPlaybackDeviceCompatibilityType](#dashisoplaybackdevicecompatibilitytype)
   - [DashIsoPtsOffsetHandlingForBFramesType](#dashisoptsoffsethandlingforbframestype)
@@ -109,11 +114,14 @@ type annotations stubs module
   - [DolbyVisionLevel6ModeType](#dolbyvisionlevel6modetype)
   - [DolbyVisionProfileType](#dolbyvisionprofiletype)
   - [DropFrameTimecodeType](#dropframetimecodetype)
+  - [DvbSubSubtitleFallbackFontType](#dvbsubsubtitlefallbackfonttype)
   - [DvbSubtitleAlignmentType](#dvbsubtitlealignmenttype)
+  - [DvbSubtitleApplyFontColorType](#dvbsubtitleapplyfontcolortype)
   - [DvbSubtitleBackgroundColorType](#dvbsubtitlebackgroundcolortype)
   - [DvbSubtitleFontColorType](#dvbsubtitlefontcolortype)
   - [DvbSubtitleOutlineColorType](#dvbsubtitleoutlinecolortype)
   - [DvbSubtitleShadowColorType](#dvbsubtitleshadowcolortype)
+  - [DvbSubtitleStylePassthroughType](#dvbsubtitlestylepassthroughtype)
   - [DvbSubtitleTeletextSpacingType](#dvbsubtitleteletextspacingtype)
   - [DvbSubtitlingTypeType](#dvbsubtitlingtypetype)
   - [DvbddsHandlingType](#dvbddshandlingtype)
@@ -208,6 +216,7 @@ type annotations stubs module
   - [HlsIFrameOnlyManifestType](#hlsiframeonlymanifesttype)
   - [HlsImageBasedTrickPlayType](#hlsimagebasedtrickplaytype)
   - [HlsInitializationVectorInManifestType](#hlsinitializationvectorinmanifesttype)
+  - [HlsIntervalCadenceType](#hlsintervalcadencetype)
   - [HlsKeyProviderTypeType](#hlskeyprovidertypetype)
   - [HlsManifestCompressionType](#hlsmanifestcompressiontype)
   - [HlsManifestDurationFormatType](#hlsmanifestdurationformattype)
@@ -938,6 +947,17 @@ Values:
 - `PRESET`
 - `QUEUE`
 
+## BurnInSubtitleStylePassthroughType
+
+```python
+from mypy_boto3_mediaconvert.literals import BurnInSubtitleStylePassthroughType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
 ## BurninSubtitleAlignmentType
 
 ```python
@@ -946,8 +966,20 @@ from mypy_boto3_mediaconvert.literals import BurninSubtitleAlignmentType
 
 Values:
 
+- `AUTO`
 - `CENTERED`
 - `LEFT`
+
+## BurninSubtitleApplyFontColorType
+
+```python
+from mypy_boto3_mediaconvert.literals import BurninSubtitleApplyFontColorType
+```
+
+Values:
+
+- `ALL_TEXT`
+- `WHITE_TEXT_ONLY`
 
 ## BurninSubtitleBackgroundColorType
 
@@ -957,9 +989,24 @@ from mypy_boto3_mediaconvert.literals import BurninSubtitleBackgroundColorType
 
 Values:
 
+- `AUTO`
 - `BLACK`
 - `NONE`
 - `WHITE`
+
+## BurninSubtitleFallbackFontType
+
+```python
+from mypy_boto3_mediaconvert.literals import BurninSubtitleFallbackFontType
+```
+
+Values:
+
+- `BEST_MATCH`
+- `MONOSPACED_SANSSERIF`
+- `MONOSPACED_SERIF`
+- `PROPORTIONAL_SANSSERIF`
+- `PROPORTIONAL_SERIF`
 
 ## BurninSubtitleFontColorType
 
@@ -969,9 +1016,11 @@ from mypy_boto3_mediaconvert.literals import BurninSubtitleFontColorType
 
 Values:
 
+- `AUTO`
 - `BLACK`
 - `BLUE`
 - `GREEN`
+- `HEX`
 - `RED`
 - `WHITE`
 - `YELLOW`
@@ -984,6 +1033,7 @@ from mypy_boto3_mediaconvert.literals import BurninSubtitleOutlineColorType
 
 Values:
 
+- `AUTO`
 - `BLACK`
 - `BLUE`
 - `GREEN`
@@ -999,6 +1049,7 @@ from mypy_boto3_mediaconvert.literals import BurninSubtitleShadowColorType
 
 Values:
 
+- `AUTO`
 - `BLACK`
 - `NONE`
 - `WHITE`
@@ -1011,6 +1062,7 @@ from mypy_boto3_mediaconvert.literals import BurninSubtitleTeletextSpacingType
 
 Values:
 
+- `AUTO`
 - `FIXED_GRID`
 - `PROPORTIONAL`
 
@@ -1099,6 +1151,7 @@ from mypy_boto3_mediaconvert.literals import CmafImageBasedTrickPlayType
 
 Values:
 
+- `ADVANCED`
 - `NONE`
 - `THUMBNAIL`
 - `THUMBNAIL_AND_FULLFRAME`
@@ -1113,6 +1166,17 @@ Values:
 
 - `EXCLUDE`
 - `INCLUDE`
+
+## CmafIntervalCadenceType
+
+```python
+from mypy_boto3_mediaconvert.literals import CmafIntervalCadenceType
+```
+
+Values:
+
+- `FOLLOW_CUSTOM`
+- `FOLLOW_IFRAME`
 
 ## CmafKeyProviderTypeType
 
@@ -1434,9 +1498,21 @@ from mypy_boto3_mediaconvert.literals import DashIsoImageBasedTrickPlayType
 
 Values:
 
+- `ADVANCED`
 - `NONE`
 - `THUMBNAIL`
 - `THUMBNAIL_AND_FULLFRAME`
+
+## DashIsoIntervalCadenceType
+
+```python
+from mypy_boto3_mediaconvert.literals import DashIsoIntervalCadenceType
+```
+
+Values:
+
+- `FOLLOW_CUSTOM`
+- `FOLLOW_IFRAME`
 
 ## DashIsoMpdProfileType
 
@@ -1606,6 +1682,20 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+## DvbSubSubtitleFallbackFontType
+
+```python
+from mypy_boto3_mediaconvert.literals import DvbSubSubtitleFallbackFontType
+```
+
+Values:
+
+- `BEST_MATCH`
+- `MONOSPACED_SANSSERIF`
+- `MONOSPACED_SERIF`
+- `PROPORTIONAL_SANSSERIF`
+- `PROPORTIONAL_SERIF`
+
 ## DvbSubtitleAlignmentType
 
 ```python
@@ -1614,8 +1704,20 @@ from mypy_boto3_mediaconvert.literals import DvbSubtitleAlignmentType
 
 Values:
 
+- `AUTO`
 - `CENTERED`
 - `LEFT`
+
+## DvbSubtitleApplyFontColorType
+
+```python
+from mypy_boto3_mediaconvert.literals import DvbSubtitleApplyFontColorType
+```
+
+Values:
+
+- `ALL_TEXT`
+- `WHITE_TEXT_ONLY`
 
 ## DvbSubtitleBackgroundColorType
 
@@ -1625,6 +1727,7 @@ from mypy_boto3_mediaconvert.literals import DvbSubtitleBackgroundColorType
 
 Values:
 
+- `AUTO`
 - `BLACK`
 - `NONE`
 - `WHITE`
@@ -1637,9 +1740,11 @@ from mypy_boto3_mediaconvert.literals import DvbSubtitleFontColorType
 
 Values:
 
+- `AUTO`
 - `BLACK`
 - `BLUE`
 - `GREEN`
+- `HEX`
 - `RED`
 - `WHITE`
 - `YELLOW`
@@ -1652,6 +1757,7 @@ from mypy_boto3_mediaconvert.literals import DvbSubtitleOutlineColorType
 
 Values:
 
+- `AUTO`
 - `BLACK`
 - `BLUE`
 - `GREEN`
@@ -1667,9 +1773,21 @@ from mypy_boto3_mediaconvert.literals import DvbSubtitleShadowColorType
 
 Values:
 
+- `AUTO`
 - `BLACK`
 - `NONE`
 - `WHITE`
+
+## DvbSubtitleStylePassthroughType
+
+```python
+from mypy_boto3_mediaconvert.literals import DvbSubtitleStylePassthroughType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
 
 ## DvbSubtitleTeletextSpacingType
 
@@ -1679,6 +1797,7 @@ from mypy_boto3_mediaconvert.literals import DvbSubtitleTeletextSpacingType
 
 Values:
 
+- `AUTO`
 - `FIXED_GRID`
 - `PROPORTIONAL`
 
@@ -2791,6 +2910,7 @@ from mypy_boto3_mediaconvert.literals import HlsImageBasedTrickPlayType
 
 Values:
 
+- `ADVANCED`
 - `NONE`
 - `THUMBNAIL`
 - `THUMBNAIL_AND_FULLFRAME`
@@ -2805,6 +2925,17 @@ Values:
 
 - `EXCLUDE`
 - `INCLUDE`
+
+## HlsIntervalCadenceType
+
+```python
+from mypy_boto3_mediaconvert.literals import HlsIntervalCadenceType
+```
+
+Values:
+
+- `FOLLOW_CUSTOM`
+- `FOLLOW_IFRAME`
 
 ## HlsKeyProviderTypeType
 

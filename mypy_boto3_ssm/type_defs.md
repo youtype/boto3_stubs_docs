@@ -3296,6 +3296,8 @@ Required fields:
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 - `Name`: `str`
 - `Description`: `str`
+- `CutoffBehavior`:
+  [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4638,6 +4640,8 @@ Optional fields:
 - `MaxErrors`: `str`
 - `Name`: `str`
 - `Description`: `str`
+- `CutoffBehavior`:
+  [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
 
 ## MetadataValueTypeDef
 
@@ -5441,6 +5445,8 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `ClientToken`: `str`
+- `CutoffBehavior`:
+  [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
 
 ## RegisterTaskWithMaintenanceWindowResultTypeDef
 
@@ -6397,6 +6403,8 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 - `Replace`: `bool`
+- `CutoffBehavior`:
+  [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
 
 ## UpdateMaintenanceWindowTaskResultTypeDef
 
@@ -6421,6 +6429,8 @@ Required fields:
 - `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
 - `Name`: `str`
 - `Description`: `str`
+- `CutoffBehavior`:
+  [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
