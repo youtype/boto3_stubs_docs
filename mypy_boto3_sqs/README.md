@@ -147,6 +147,7 @@ from mypy_boto3_sqs.literals import ListDeadLetterSourceQueuesPaginatorName, ...
 - [MessageSystemAttributeNameType](./literals.md#messagesystemattributenametype)
 - [QueueAttributeNameType](./literals.md#queueattributenametype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

@@ -13,6 +13,7 @@ type annotations stubs module
   - [PlatformType](#platformtype)
   - [ProjectStateType](#projectstatetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ListBundlesPaginatorName
 
@@ -349,3 +350,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mobile.literals import PaginatorName
+```
+
+Values:
+
+- `list_bundles`
+- `list_projects`

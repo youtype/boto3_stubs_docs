@@ -181,6 +181,7 @@ from mypy_boto3_comprehend.literals import AugmentedManifestsDocumentTypeFormatT
 - [SplitType](./literals.md#splittype)
 - [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

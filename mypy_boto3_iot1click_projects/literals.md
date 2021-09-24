@@ -11,6 +11,7 @@ type annotations stubs module
   - [ListPlacementsPaginatorName](#listplacementspaginatorname)
   - [ListProjectsPaginatorName](#listprojectspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ListPlacementsPaginatorName
 
@@ -319,3 +320,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_iot1click_projects.literals import PaginatorName
+```
+
+Values:
+
+- `list_placements`
+- `list_projects`

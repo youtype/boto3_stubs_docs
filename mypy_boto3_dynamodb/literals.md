@@ -48,6 +48,8 @@ type annotations stubs module
   - [TableStatusType](#tablestatustype)
   - [TimeToLiveStatusType](#timetolivestatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AttributeActionType
 
@@ -819,3 +821,28 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_dynamodb.literals import PaginatorName
+```
+
+Values:
+
+- `list_backups`
+- `list_tables`
+- `list_tags_of_resource`
+- `query`
+- `scan`
+
+## WaiterName
+
+```python
+from mypy_boto3_dynamodb.literals import WaiterName
+```
+
+Values:
+
+- `table_exists`
+- `table_not_exists`

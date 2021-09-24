@@ -172,6 +172,7 @@ from mypy_boto3_codepipeline.literals import ActionCategoryType, ...
 - [TriggerTypeType](./literals.md#triggertypetype)
 - [WebhookAuthenticationTypeType](./literals.md#webhookauthenticationtypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

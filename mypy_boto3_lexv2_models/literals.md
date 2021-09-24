@@ -57,6 +57,7 @@ type annotations stubs module
   - [SortOrderType](#sortordertype)
   - [TimeDimensionType](#timedimensiontype)
   - [ServiceName](#servicename)
+  - [WaiterName](#waitername)
 
 ## AggregatedUtterancesFilterNameType
 
@@ -867,3 +868,20 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## WaiterName
+
+```python
+from mypy_boto3_lexv2_models.literals import WaiterName
+```
+
+Values:
+
+- `bot_alias_available`
+- `bot_available`
+- `bot_export_completed`
+- `bot_import_completed`
+- `bot_locale_built`
+- `bot_locale_created`
+- `bot_locale_express_testing_available`
+- `bot_version_available`

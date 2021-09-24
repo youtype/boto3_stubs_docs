@@ -292,6 +292,8 @@ from mypy_boto3_codedeploy.literals import ApplicationRevisionSortByType, ...
 - [TrafficRoutingTypeType](./literals.md#trafficroutingtypetype)
 - [TriggerEventTypeType](./literals.md#triggereventtypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

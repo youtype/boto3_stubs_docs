@@ -18,6 +18,7 @@ type annotations stubs module
   - [ListBrokersPaginatorName](#listbrokerspaginatorname)
   - [SanitizationWarningReasonType](#sanitizationwarningreasontype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AuthenticationStrategyType
 
@@ -415,3 +416,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mq.literals import PaginatorName
+```
+
+Values:
+
+- `list_brokers`

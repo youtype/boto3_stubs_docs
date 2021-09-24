@@ -12,6 +12,7 @@ type annotations stubs module
   - [EndpointStatusType](#endpointstatustype)
   - [ListEndpointsPaginatorName](#listendpointspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## EndpointAccessTypeType
 
@@ -333,3 +334,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_s3outposts.literals import PaginatorName
+```
+
+Values:
+
+- `list_endpoints`

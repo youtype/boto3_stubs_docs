@@ -411,6 +411,8 @@ from mypy_boto3_iam.literals import AccessAdvisorUsageGranularityTypeType, ...
 - [statusTypeType](./literals.md#statustypetype)
 - [summaryKeyTypeType](./literals.md#summarykeytypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

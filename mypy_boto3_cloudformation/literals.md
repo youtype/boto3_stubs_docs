@@ -77,6 +77,8 @@ type annotations stubs module
   - [VersionBumpType](#versionbumptype)
   - [VisibilityType](#visibilitytype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AccountGateStatusType
 
@@ -1204,3 +1206,43 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_cloudformation.literals import PaginatorName
+```
+
+Values:
+
+- `describe_account_limits`
+- `describe_change_set`
+- `describe_stack_events`
+- `describe_stacks`
+- `list_change_sets`
+- `list_exports`
+- `list_imports`
+- `list_stack_instances`
+- `list_stack_resources`
+- `list_stack_set_operation_results`
+- `list_stack_set_operations`
+- `list_stack_sets`
+- `list_stacks`
+- `list_types`
+
+## WaiterName
+
+```python
+from mypy_boto3_cloudformation.literals import WaiterName
+```
+
+Values:
+
+- `change_set_create_complete`
+- `stack_create_complete`
+- `stack_delete_complete`
+- `stack_exists`
+- `stack_import_complete`
+- `stack_rollback_complete`
+- `stack_update_complete`
+- `type_registration_complete`

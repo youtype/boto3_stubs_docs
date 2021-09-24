@@ -68,6 +68,7 @@ type annotations stubs module
   - [SearchGameSessionsPaginatorName](#searchgamesessionspaginatorname)
   - [SortOrderType](#sortordertype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AcceptanceTypeType
 
@@ -1203,3 +1204,32 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_gamelift.literals import PaginatorName
+```
+
+Values:
+
+- `describe_fleet_attributes`
+- `describe_fleet_capacity`
+- `describe_fleet_events`
+- `describe_fleet_utilization`
+- `describe_game_server_instances`
+- `describe_game_session_details`
+- `describe_game_session_queues`
+- `describe_game_sessions`
+- `describe_instances`
+- `describe_matchmaking_configurations`
+- `describe_matchmaking_rule_sets`
+- `describe_player_sessions`
+- `describe_scaling_policies`
+- `list_aliases`
+- `list_builds`
+- `list_fleets`
+- `list_game_server_groups`
+- `list_game_servers`
+- `list_scripts`
+- `search_game_sessions`

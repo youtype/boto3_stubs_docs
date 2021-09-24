@@ -17,6 +17,7 @@ type annotations stubs module
   - [HsmStateType](#hsmstatetype)
   - [ListTagsPaginatorName](#listtagspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## BackupPolicyType
 
@@ -400,3 +401,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_cloudhsmv2.literals import PaginatorName
+```
+
+Values:
+
+- `describe_backups`
+- `describe_clusters`
+- `list_tags`

@@ -139,6 +139,8 @@ type annotations stubs module
   - [StepExecutionFilterKeyType](#stepexecutionfilterkeytype)
   - [StopTypeType](#stoptypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AssociationComplianceSeverityType
 
@@ -2027,3 +2029,68 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_ssm.literals import PaginatorName
+```
+
+Values:
+
+- `describe_activations`
+- `describe_association_execution_targets`
+- `describe_association_executions`
+- `describe_automation_executions`
+- `describe_automation_step_executions`
+- `describe_available_patches`
+- `describe_effective_instance_associations`
+- `describe_effective_patches_for_patch_baseline`
+- `describe_instance_associations_status`
+- `describe_instance_information`
+- `describe_instance_patch_states`
+- `describe_instance_patch_states_for_patch_group`
+- `describe_instance_patches`
+- `describe_inventory_deletions`
+- `describe_maintenance_window_execution_task_invocations`
+- `describe_maintenance_window_execution_tasks`
+- `describe_maintenance_window_executions`
+- `describe_maintenance_window_schedule`
+- `describe_maintenance_window_targets`
+- `describe_maintenance_window_tasks`
+- `describe_maintenance_windows`
+- `describe_maintenance_windows_for_target`
+- `describe_ops_items`
+- `describe_parameters`
+- `describe_patch_baselines`
+- `describe_patch_groups`
+- `describe_patch_properties`
+- `describe_sessions`
+- `get_inventory`
+- `get_inventory_schema`
+- `get_ops_summary`
+- `get_parameter_history`
+- `get_parameters_by_path`
+- `list_association_versions`
+- `list_associations`
+- `list_command_invocations`
+- `list_commands`
+- `list_compliance_items`
+- `list_compliance_summaries`
+- `list_document_versions`
+- `list_documents`
+- `list_ops_item_events`
+- `list_ops_item_related_items`
+- `list_ops_metadata`
+- `list_resource_compliance_summaries`
+- `list_resource_data_sync`
+
+## WaiterName
+
+```python
+from mypy_boto3_ssm.literals import WaiterName
+```
+
+Values:
+
+- `command_executed`

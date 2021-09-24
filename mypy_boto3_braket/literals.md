@@ -16,6 +16,7 @@ type annotations stubs module
   - [SearchQuantumTasksFilterOperatorType](#searchquantumtasksfilteroperatortype)
   - [SearchQuantumTasksPaginatorName](#searchquantumtaskspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## CancellationStatusType
 
@@ -389,3 +390,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_braket.literals import PaginatorName
+```
+
+Values:
+
+- `search_devices`
+- `search_quantum_tasks`

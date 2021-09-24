@@ -35,6 +35,7 @@ type annotations stubs module
   - [VpcLinkStatusType](#vpclinkstatustype)
   - [VpcLinkVersionType](#vpclinkversiontype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AuthorizationTypeType
 
@@ -610,3 +611,22 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_apigatewayv2.literals import PaginatorName
+```
+
+Values:
+
+- `get_apis`
+- `get_authorizers`
+- `get_deployments`
+- `get_domain_names`
+- `get_integration_responses`
+- `get_integrations`
+- `get_models`
+- `get_route_responses`
+- `get_routes`
+- `get_stages`

@@ -96,6 +96,7 @@ from mypy_boto3_sdb.literals import ListDomainsPaginatorName, ...
 - [ListDomainsPaginatorName](./literals.md#listdomainspaginatorname)
 - [SelectPaginatorName](./literals.md#selectpaginatorname)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

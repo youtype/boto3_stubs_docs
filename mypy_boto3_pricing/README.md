@@ -80,6 +80,7 @@ from mypy_boto3_pricing.literals import DescribeServicesPaginatorName, ...
 - [GetAttributeValuesPaginatorName](./literals.md#getattributevaluespaginatorname)
 - [GetProductsPaginatorName](./literals.md#getproductspaginatorname)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

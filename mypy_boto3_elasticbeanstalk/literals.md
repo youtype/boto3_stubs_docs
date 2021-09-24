@@ -36,6 +36,8 @@ type annotations stubs module
   - [SourceTypeType](#sourcetypetype)
   - [ValidationSeverityType](#validationseveritytype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## ActionHistoryStatusType
 
@@ -664,3 +666,29 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_elasticbeanstalk.literals import PaginatorName
+```
+
+Values:
+
+- `describe_application_versions`
+- `describe_environment_managed_action_history`
+- `describe_environments`
+- `describe_events`
+- `list_platform_versions`
+
+## WaiterName
+
+```python
+from mypy_boto3_elasticbeanstalk.literals import WaiterName
+```
+
+Values:
+
+- `environment_exists`
+- `environment_terminated`
+- `environment_updated`

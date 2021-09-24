@@ -133,6 +133,7 @@ from mypy_boto3_dax.literals import ChangeTypeType, ...
 - [SSEStatusType](./literals.md#ssestatustype)
 - [SourceTypeType](./literals.md#sourcetypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

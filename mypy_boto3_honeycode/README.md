@@ -101,6 +101,7 @@ from mypy_boto3_honeycode.literals import FormatType, ...
 - [TableDataImportJobStatusType](./literals.md#tabledataimportjobstatustype)
 - [UpsertActionType](./literals.md#upsertactiontype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

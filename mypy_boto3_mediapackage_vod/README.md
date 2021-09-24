@@ -102,6 +102,7 @@ from mypy_boto3_mediapackage_vod.literals import AdMarkersType, ...
 - [SegmentTemplateFormatType](./literals.md#segmenttemplateformattype)
 - [StreamOrderType](./literals.md#streamordertype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

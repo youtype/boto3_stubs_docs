@@ -627,6 +627,8 @@ from mypy_boto3_sagemaker.literals import ActionStatusType, ...
 - [UserProfileStatusType](./literals.md#userprofilestatustype)
 - [VariantPropertyTypeType](./literals.md#variantpropertytypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

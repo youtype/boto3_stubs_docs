@@ -147,6 +147,7 @@ from mypy_boto3_personalize.literals import IngestionModeType, ...
 - [RecipeProviderType](./literals.md#recipeprovidertype)
 - [TrainingModeType](./literals.md#trainingmodetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

@@ -36,6 +36,8 @@ type annotations stubs module
   - [StatusType](#statustype)
   - [TcsType](#tcstype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AlgorithmType
 
@@ -643,3 +645,28 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mediaconnect.literals import PaginatorName
+```
+
+Values:
+
+- `list_entitlements`
+- `list_flows`
+- `list_offerings`
+- `list_reservations`
+
+## WaiterName
+
+```python
+from mypy_boto3_mediaconnect.literals import WaiterName
+```
+
+Values:
+
+- `flow_active`
+- `flow_deleted`
+- `flow_standby`

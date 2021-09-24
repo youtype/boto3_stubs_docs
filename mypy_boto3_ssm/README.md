@@ -513,6 +513,8 @@ from mypy_boto3_ssm.literals import AssociationComplianceSeverityType, ...
 - [StepExecutionFilterKeyType](./literals.md#stepexecutionfilterkeytype)
 - [StopTypeType](./literals.md#stoptypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

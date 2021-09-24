@@ -228,6 +228,8 @@ from mypy_boto3_dms.literals import AuthMechanismValueType, ...
 - [TargetDbTypeType](./literals.md#targetdbtypetype)
 - [TestConnectionSucceedsWaiterName](./literals.md#testconnectionsucceedswaitername)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

@@ -54,6 +54,7 @@ type annotations stubs module
   - [VerifiedAttributeTypeType](#verifiedattributetypetype)
   - [VerifySoftwareTokenResponseTypeType](#verifysoftwaretokenresponsetypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AccountTakeoverEventActionTypeType
 
@@ -878,3 +879,21 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_cognito_idp.literals import PaginatorName
+```
+
+Values:
+
+- `admin_list_groups_for_user`
+- `admin_list_user_auth_events`
+- `list_groups`
+- `list_identity_providers`
+- `list_resource_servers`
+- `list_user_pool_clients`
+- `list_user_pools`
+- `list_users`
+- `list_users_in_group`

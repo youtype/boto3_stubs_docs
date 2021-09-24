@@ -52,6 +52,8 @@ type annotations stubs module
   - [TrafficRoutingTypeType](#trafficroutingtypetype)
   - [TriggerEventTypeType](#triggereventtypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## ApplicationRevisionSortByType
 
@@ -887,3 +889,31 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_codedeploy.literals import PaginatorName
+```
+
+Values:
+
+- `list_application_revisions`
+- `list_applications`
+- `list_deployment_configs`
+- `list_deployment_groups`
+- `list_deployment_instances`
+- `list_deployment_targets`
+- `list_deployments`
+- `list_git_hub_account_token_names`
+- `list_on_premises_instances`
+
+## WaiterName
+
+```python
+from mypy_boto3_codedeploy.literals import WaiterName
+```
+
+Values:
+
+- `deployment_successful`

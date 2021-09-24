@@ -170,6 +170,8 @@ from mypy_boto3_ecr.literals import DescribeImageScanFindingsPaginatorName, ...
 - [ScanStatusType](./literals.md#scanstatustype)
 - [TagStatusType](./literals.md#tagstatustype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

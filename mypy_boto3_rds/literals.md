@@ -69,6 +69,8 @@ type annotations stubs module
   - [TargetTypeType](#targettypetype)
   - [WriteForwardingStatusType](#writeforwardingstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## ActivityStreamModeType
 
@@ -1000,3 +1002,64 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_rds.literals import PaginatorName
+```
+
+Values:
+
+- `describe_certificates`
+- `describe_custom_availability_zones`
+- `describe_db_cluster_backtracks`
+- `describe_db_cluster_endpoints`
+- `describe_db_cluster_parameter_groups`
+- `describe_db_cluster_parameters`
+- `describe_db_cluster_snapshots`
+- `describe_db_clusters`
+- `describe_db_engine_versions`
+- `describe_db_instance_automated_backups`
+- `describe_db_instances`
+- `describe_db_log_files`
+- `describe_db_parameter_groups`
+- `describe_db_parameters`
+- `describe_db_proxies`
+- `describe_db_proxy_endpoints`
+- `describe_db_proxy_target_groups`
+- `describe_db_proxy_targets`
+- `describe_db_security_groups`
+- `describe_db_snapshots`
+- `describe_db_subnet_groups`
+- `describe_engine_default_cluster_parameters`
+- `describe_engine_default_parameters`
+- `describe_event_subscriptions`
+- `describe_events`
+- `describe_export_tasks`
+- `describe_global_clusters`
+- `describe_installation_media`
+- `describe_option_group_options`
+- `describe_option_groups`
+- `describe_orderable_db_instance_options`
+- `describe_pending_maintenance_actions`
+- `describe_reserved_db_instances`
+- `describe_reserved_db_instances_offerings`
+- `describe_source_regions`
+- `download_db_log_file_portion`
+
+## WaiterName
+
+```python
+from mypy_boto3_rds.literals import WaiterName
+```
+
+Values:
+
+- `db_cluster_snapshot_available`
+- `db_cluster_snapshot_deleted`
+- `db_instance_available`
+- `db_instance_deleted`
+- `db_snapshot_available`
+- `db_snapshot_completed`
+- `db_snapshot_deleted`

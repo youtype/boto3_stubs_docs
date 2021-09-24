@@ -153,6 +153,8 @@ from mypy_boto3_mediaconnect.literals import AlgorithmType, ...
 - [StatusType](./literals.md#statustype)
 - [TcsType](./literals.md#tcstype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

@@ -188,6 +188,8 @@ from mypy_boto3_appstream.literals import AccessEndpointTypeType, ...
 - [UserStackAssociationErrorCodeType](./literals.md#userstackassociationerrorcodetype)
 - [VisibilityTypeType](./literals.md#visibilitytypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

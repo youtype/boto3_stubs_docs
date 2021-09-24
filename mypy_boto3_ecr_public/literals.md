@@ -17,6 +17,7 @@ type annotations stubs module
   - [LayerFailureCodeType](#layerfailurecodetype)
   - [RegistryAliasStatusType](#registryaliasstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DescribeImageTagsPaginatorName
 
@@ -395,3 +396,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_ecr_public.literals import PaginatorName
+```
+
+Values:
+
+- `describe_image_tags`
+- `describe_images`
+- `describe_registries`
+- `describe_repositories`

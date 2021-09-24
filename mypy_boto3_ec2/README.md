@@ -1123,6 +1123,8 @@ from mypy_boto3_ec2.literals import AccountAttributeNameType, ...
 - [WeekDayType](./literals.md#weekdaytype)
 - [scopeType](./literals.md#scopetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

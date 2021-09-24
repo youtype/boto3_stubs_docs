@@ -18,6 +18,7 @@ type annotations stubs module
   - [NotificationRuleStatusType](#notificationrulestatustype)
   - [TargetStatusType](#targetstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DetailTypeType
 
@@ -408,3 +409,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_codestar_notifications.literals import PaginatorName
+```
+
+Values:
+
+- `list_event_types`
+- `list_notification_rules`
+- `list_targets`

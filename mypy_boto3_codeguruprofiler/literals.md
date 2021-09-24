@@ -19,6 +19,7 @@ type annotations stubs module
   - [MetricTypeType](#metrictypetype)
   - [OrderByType](#orderbytype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ActionGroupType
 
@@ -424,3 +425,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_codeguruprofiler.literals import PaginatorName
+```
+
+Values:
+
+- `list_profile_times`

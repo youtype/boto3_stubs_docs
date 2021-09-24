@@ -408,6 +408,8 @@ from mypy_boto3_redshift.literals import ActionTypeType, ...
 - [UsageLimitLimitTypeType](./literals.md#usagelimitlimittypetype)
 - [UsageLimitPeriodType](./literals.md#usagelimitperiodtype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

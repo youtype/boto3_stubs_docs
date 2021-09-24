@@ -21,6 +21,7 @@ type annotations stubs module
   - [SubscriptionStateType](#subscriptionstatetype)
   - [UnitType](#unittype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AttackLayerType
 
@@ -454,3 +455,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_shield.literals import PaginatorName
+```
+
+Values:
+
+- `list_attacks`
+- `list_protections`

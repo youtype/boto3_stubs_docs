@@ -33,6 +33,8 @@ type annotations stubs module
   - [ServiceUpdatedWaiterName](#serviceupdatedwaitername)
   - [TemplateVersionStatusType](#templateversionstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## DeploymentStatusType
 
@@ -590,3 +592,38 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_proton.literals import PaginatorName
+```
+
+Values:
+
+- `list_environment_account_connections`
+- `list_environment_template_versions`
+- `list_environment_templates`
+- `list_environments`
+- `list_service_instances`
+- `list_service_template_versions`
+- `list_service_templates`
+- `list_services`
+- `list_tags_for_resource`
+
+## WaiterName
+
+```python
+from mypy_boto3_proton.literals import WaiterName
+```
+
+Values:
+
+- `environment_deployed`
+- `environment_template_version_registered`
+- `service_created`
+- `service_deleted`
+- `service_instance_deployed`
+- `service_pipeline_deployed`
+- `service_template_version_registered`
+- `service_updated`

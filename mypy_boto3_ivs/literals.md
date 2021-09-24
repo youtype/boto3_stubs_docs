@@ -19,6 +19,7 @@ type annotations stubs module
   - [StreamHealthType](#streamhealthtype)
   - [StreamStateType](#streamstatetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ChannelLatencyModeType
 
@@ -414,3 +415,17 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_ivs.literals import PaginatorName
+```
+
+Values:
+
+- `list_channels`
+- `list_playback_key_pairs`
+- `list_recording_configurations`
+- `list_stream_keys`
+- `list_streams`

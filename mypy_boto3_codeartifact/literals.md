@@ -22,6 +22,7 @@ type annotations stubs module
   - [PackageVersionSortTypeType](#packageversionsorttypetype)
   - [PackageVersionStatusType](#packageversionstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DomainStatusType
 
@@ -457,3 +458,18 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_codeartifact.literals import PaginatorName
+```
+
+Values:
+
+- `list_domains`
+- `list_package_version_assets`
+- `list_package_versions`
+- `list_packages`
+- `list_repositories`
+- `list_repositories_in_domain`

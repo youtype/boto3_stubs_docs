@@ -18,6 +18,7 @@ type annotations stubs module
   - [ResourceStatusValueType](#resourcestatusvaluetype)
   - [SearchResourcesPaginatorName](#searchresourcespaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## GroupConfigurationStatusType
 
@@ -401,3 +402,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_resource_groups.literals import PaginatorName
+```
+
+Values:
+
+- `list_group_resources`
+- `list_groups`
+- `search_resources`

@@ -23,6 +23,7 @@ type annotations stubs module
   - [QueryStatusType](#querystatustype)
   - [StandardUnitType](#standardunittype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DescribeDestinationsPaginatorName
 
@@ -490,3 +491,21 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_logs.literals import PaginatorName
+```
+
+Values:
+
+- `describe_destinations`
+- `describe_export_tasks`
+- `describe_log_groups`
+- `describe_log_streams`
+- `describe_metric_filters`
+- `describe_queries`
+- `describe_resource_policies`
+- `describe_subscription_filters`
+- `filter_log_events`

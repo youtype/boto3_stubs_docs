@@ -23,6 +23,7 @@ type annotations stubs module
   - [SignInMethodType](#signinmethodtype)
   - [StatusType](#statustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AdditionalConstraintsElementType
 
@@ -490,3 +491,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_amplifybackend.literals import PaginatorName
+```
+
+Values:
+
+- `list_backend_jobs`

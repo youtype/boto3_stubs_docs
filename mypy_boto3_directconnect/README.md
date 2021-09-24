@@ -150,6 +150,7 @@ from mypy_boto3_directconnect.literals import AddressFamilyType, ...
 - [LoaContentTypeType](./literals.md#loacontenttypetype)
 - [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

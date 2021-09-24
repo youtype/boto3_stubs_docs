@@ -235,6 +235,8 @@ from mypy_boto3_route53.literals import AccountLimitTypeType, ...
 - [TagResourceTypeType](./literals.md#tagresourcetypetype)
 - [VPCRegionType](./literals.md#vpcregiontype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

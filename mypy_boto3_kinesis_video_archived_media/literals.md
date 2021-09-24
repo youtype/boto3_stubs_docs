@@ -21,6 +21,7 @@ type annotations stubs module
   - [HLSPlaybackModeType](#hlsplaybackmodetype)
   - [ListFragmentsPaginatorName](#listfragmentspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ClipFragmentSelectorTypeType
 
@@ -443,3 +444,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_kinesis_video_archived_media.literals import PaginatorName
+```
+
+Values:
+
+- `list_fragments`

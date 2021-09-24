@@ -17,6 +17,7 @@ type annotations stubs module
   - [ListCustomPluginsPaginatorName](#listcustompluginspaginatorname)
   - [ListWorkerConfigurationsPaginatorName](#listworkerconfigurationspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ConnectorStateType
 
@@ -397,3 +398,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_kafkaconnect.literals import PaginatorName
+```
+
+Values:
+
+- `list_connectors`
+- `list_custom_plugins`
+- `list_worker_configurations`

@@ -213,6 +213,8 @@ from mypy_boto3_lambda.literals import CodeSigningPolicyType, ...
 - [StateType](./literals.md#statetype)
 - [TracingModeType](./literals.md#tracingmodetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

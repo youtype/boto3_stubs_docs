@@ -158,6 +158,7 @@ from mypy_boto3_guardduty.literals import AdminStatusType, ...
 - [ThreatIntelSetStatusType](./literals.md#threatintelsetstatustype)
 - [UsageStatisticTypeType](./literals.md#usagestatistictypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

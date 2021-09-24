@@ -11,6 +11,7 @@ type annotations stubs module
   - [QueryPaginatorName](#querypaginatorname)
   - [ScalarTypeType](#scalartypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## QueryPaginatorName
 
@@ -329,3 +330,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_timestream_query.literals import PaginatorName
+```
+
+Values:
+
+- `query`

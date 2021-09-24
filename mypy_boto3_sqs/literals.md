@@ -14,6 +14,7 @@ type annotations stubs module
   - [MessageSystemAttributeNameType](#messagesystemattributenametype)
   - [QueueAttributeNameType](#queueattributenametype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ListDeadLetterSourceQueuesPaginatorName
 
@@ -379,3 +380,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_sqs.literals import PaginatorName
+```
+
+Values:
+
+- `list_dead_letter_source_queues`
+- `list_queues`

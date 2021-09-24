@@ -33,6 +33,7 @@ type annotations stubs module
   - [TriggerTypeType](#triggertypetype)
   - [WebhookAuthenticationTypeType](#webhookauthenticationtypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ActionCategoryType
 
@@ -605,3 +606,18 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_codepipeline.literals import PaginatorName
+```
+
+Values:
+
+- `list_action_executions`
+- `list_action_types`
+- `list_pipeline_executions`
+- `list_pipelines`
+- `list_tags_for_resource`
+- `list_webhooks`

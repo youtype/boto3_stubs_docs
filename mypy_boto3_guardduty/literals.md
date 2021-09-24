@@ -33,6 +33,7 @@ type annotations stubs module
   - [ThreatIntelSetStatusType](#threatintelsetstatustype)
   - [UsageStatisticTypeType](#usagestatistictypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AdminStatusType
 
@@ -600,3 +601,20 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_guardduty.literals import PaginatorName
+```
+
+Values:
+
+- `list_detectors`
+- `list_filters`
+- `list_findings`
+- `list_invitations`
+- `list_ip_sets`
+- `list_members`
+- `list_organization_admin_accounts`
+- `list_threat_intel_sets`

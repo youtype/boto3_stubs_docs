@@ -159,6 +159,7 @@ from mypy_boto3_license_manager.literals import AllowedOperationType, ...
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [TokenTypeType](./literals.md#tokentypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

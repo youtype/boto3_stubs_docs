@@ -13,6 +13,7 @@ type annotations stubs module
   - [GetAttributeValuesPaginatorName](#getattributevaluespaginatorname)
   - [GetProductsPaginatorName](#getproductspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DescribeServicesPaginatorName
 
@@ -341,3 +342,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_pricing.literals import PaginatorName
+```
+
+Values:
+
+- `describe_services`
+- `get_attribute_values`
+- `get_products`

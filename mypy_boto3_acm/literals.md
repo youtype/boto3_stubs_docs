@@ -24,6 +24,8 @@ type annotations stubs module
   - [RevocationReasonType](#revocationreasontype)
   - [ValidationMethodType](#validationmethodtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## CertificateStatusType
 
@@ -530,3 +532,23 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_acm.literals import PaginatorName
+```
+
+Values:
+
+- `list_certificates`
+
+## WaiterName
+
+```python
+from mypy_boto3_acm.literals import WaiterName
+```
+
+Values:
+
+- `certificate_validated`

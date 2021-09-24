@@ -41,6 +41,8 @@ type annotations stubs module
   - [UpdateTypeType](#updatetypetype)
   - [configStatusType](#configstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AMITypesType
 
@@ -763,3 +765,36 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_eks.literals import PaginatorName
+```
+
+Values:
+
+- `describe_addon_versions`
+- `list_addons`
+- `list_clusters`
+- `list_fargate_profiles`
+- `list_identity_provider_configs`
+- `list_nodegroups`
+- `list_updates`
+
+## WaiterName
+
+```python
+from mypy_boto3_eks.literals import WaiterName
+```
+
+Values:
+
+- `addon_active`
+- `addon_deleted`
+- `cluster_active`
+- `cluster_deleted`
+- `fargate_profile_active`
+- `fargate_profile_deleted`
+- `nodegroup_active`
+- `nodegroup_deleted`

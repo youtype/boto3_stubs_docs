@@ -31,6 +31,7 @@ type annotations stubs module
   - [ResourceTypeType](#resourcetypetype)
   - [RetryActionType](#retryactiontype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ArrayJobDependencyType
 
@@ -580,3 +581,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_batch.literals import PaginatorName
+```
+
+Values:
+
+- `describe_compute_environments`
+- `describe_job_definitions`
+- `describe_job_queues`
+- `list_jobs`

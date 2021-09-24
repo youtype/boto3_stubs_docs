@@ -11,6 +11,7 @@ type annotations stubs module
   - [DescribeAcceleratorsPaginatorName](#describeacceleratorspaginatorname)
   - [LocationTypeType](#locationtypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DescribeAcceleratorsPaginatorName
 
@@ -321,3 +322,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_elastic_inference.literals import PaginatorName
+```
+
+Values:
+
+- `describe_accelerators`

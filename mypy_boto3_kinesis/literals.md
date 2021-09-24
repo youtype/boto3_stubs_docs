@@ -22,6 +22,8 @@ type annotations stubs module
   - [StreamNotExistsWaiterName](#streamnotexistswaitername)
   - [StreamStatusType](#streamstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## ConsumerStatusType
 
@@ -462,3 +464,27 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_kinesis.literals import PaginatorName
+```
+
+Values:
+
+- `describe_stream`
+- `list_shards`
+- `list_stream_consumers`
+- `list_streams`
+
+## WaiterName
+
+```python
+from mypy_boto3_kinesis.literals import WaiterName
+```
+
+Values:
+
+- `stream_exists`
+- `stream_not_exists`

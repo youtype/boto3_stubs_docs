@@ -38,6 +38,8 @@ type annotations stubs module
   - [StateType](#statetype)
   - [TracingModeType](#tracingmodetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## CodeSigningPolicyType
 
@@ -681,3 +683,34 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_lambda.literals import PaginatorName
+```
+
+Values:
+
+- `list_aliases`
+- `list_code_signing_configs`
+- `list_event_source_mappings`
+- `list_function_event_invoke_configs`
+- `list_functions`
+- `list_functions_by_code_signing_config`
+- `list_layer_versions`
+- `list_layers`
+- `list_provisioned_concurrency_configs`
+- `list_versions_by_function`
+
+## WaiterName
+
+```python
+from mypy_boto3_lambda.literals import WaiterName
+```
+
+Values:
+
+- `function_active`
+- `function_exists`
+- `function_updated`

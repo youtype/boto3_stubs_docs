@@ -126,6 +126,7 @@ from mypy_boto3_iotanalytics.literals import ChannelStatusType, ...
 - [LoggingLevelType](./literals.md#loggingleveltype)
 - [ReprocessingStatusType](./literals.md#reprocessingstatustype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

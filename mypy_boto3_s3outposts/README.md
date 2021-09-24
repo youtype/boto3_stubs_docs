@@ -78,6 +78,7 @@ from mypy_boto3_s3outposts.literals import EndpointAccessTypeType, ...
 - [EndpointStatusType](./literals.md#endpointstatustype)
 - [ListEndpointsPaginatorName](./literals.md#listendpointspaginatorname)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

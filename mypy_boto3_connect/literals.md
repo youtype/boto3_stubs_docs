@@ -62,6 +62,7 @@ type annotations stubs module
   - [UseCaseTypeType](#usecasetypetype)
   - [VoiceRecordingTrackType](#voicerecordingtracktype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AgentStatusStateType
 
@@ -1204,3 +1205,36 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_connect.literals import PaginatorName
+```
+
+Values:
+
+- `get_metric_data`
+- `list_agent_statuses`
+- `list_approved_origins`
+- `list_bots`
+- `list_contact_flows`
+- `list_hours_of_operations`
+- `list_instance_attributes`
+- `list_instance_storage_configs`
+- `list_instances`
+- `list_integration_associations`
+- `list_lambda_functions`
+- `list_lex_bots`
+- `list_phone_numbers`
+- `list_prompts`
+- `list_queue_quick_connects`
+- `list_queues`
+- `list_quick_connects`
+- `list_routing_profile_queues`
+- `list_routing_profiles`
+- `list_security_keys`
+- `list_security_profiles`
+- `list_use_cases`
+- `list_user_hierarchy_groups`
+- `list_users`

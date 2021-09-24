@@ -171,6 +171,8 @@ from mypy_boto3_eks.literals import AMITypesType, ...
 - [UpdateTypeType](./literals.md#updatetypetype)
 - [configStatusType](./literals.md#configstatustype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

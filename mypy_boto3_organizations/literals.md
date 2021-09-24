@@ -41,6 +41,7 @@ type annotations stubs module
   - [PolicyTypeType](#policytypetype)
   - [TargetTypeType](#targettypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AccountJoinedMethodType
 
@@ -695,3 +696,28 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_organizations.literals import PaginatorName
+```
+
+Values:
+
+- `list_accounts`
+- `list_accounts_for_parent`
+- `list_aws_service_access_for_organization`
+- `list_children`
+- `list_create_account_status`
+- `list_delegated_administrators`
+- `list_delegated_services_for_account`
+- `list_handshakes_for_account`
+- `list_handshakes_for_organization`
+- `list_organizational_units_for_parent`
+- `list_parents`
+- `list_policies`
+- `list_policies_for_target`
+- `list_roots`
+- `list_tags_for_resource`
+- `list_targets_for_policy`

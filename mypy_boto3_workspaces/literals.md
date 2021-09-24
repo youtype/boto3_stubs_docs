@@ -40,6 +40,7 @@ type annotations stubs module
   - [WorkspaceImageStateType](#workspaceimagestatetype)
   - [WorkspaceStateType](#workspacestatetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AccessPropertyValueType
 
@@ -693,3 +694,20 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_workspaces.literals import PaginatorName
+```
+
+Values:
+
+- `describe_account_modifications`
+- `describe_ip_groups`
+- `describe_workspace_bundles`
+- `describe_workspace_directories`
+- `describe_workspace_images`
+- `describe_workspaces`
+- `describe_workspaces_connection_status`
+- `list_available_management_cidr_ranges`

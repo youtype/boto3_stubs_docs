@@ -91,6 +91,7 @@ type annotations stubs module
   - [StatusTypeType](#statustypetype)
   - [TreatMissingDataType](#treatmissingdatatype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AccessDirectionType
 
@@ -1541,3 +1542,32 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_lightsail.literals import PaginatorName
+```
+
+Values:
+
+- `get_active_names`
+- `get_blueprints`
+- `get_bundles`
+- `get_cloud_formation_stack_records`
+- `get_disk_snapshots`
+- `get_disks`
+- `get_domains`
+- `get_export_snapshot_records`
+- `get_instance_snapshots`
+- `get_instances`
+- `get_key_pairs`
+- `get_load_balancers`
+- `get_operations`
+- `get_relational_database_blueprints`
+- `get_relational_database_bundles`
+- `get_relational_database_events`
+- `get_relational_database_parameters`
+- `get_relational_database_snapshots`
+- `get_relational_databases`
+- `get_static_ips`

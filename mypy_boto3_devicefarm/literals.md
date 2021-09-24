@@ -57,6 +57,7 @@ type annotations stubs module
   - [UploadStatusType](#uploadstatustype)
   - [UploadTypeType](#uploadtypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ArtifactCategoryType
 
@@ -990,3 +991,32 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_devicefarm.literals import PaginatorName
+```
+
+Values:
+
+- `get_offering_status`
+- `list_artifacts`
+- `list_device_instances`
+- `list_device_pools`
+- `list_devices`
+- `list_instance_profiles`
+- `list_jobs`
+- `list_network_profiles`
+- `list_offering_promotions`
+- `list_offering_transactions`
+- `list_offerings`
+- `list_projects`
+- `list_remote_access_sessions`
+- `list_runs`
+- `list_samples`
+- `list_suites`
+- `list_tests`
+- `list_unique_problems`
+- `list_uploads`
+- `list_vpce_configurations`

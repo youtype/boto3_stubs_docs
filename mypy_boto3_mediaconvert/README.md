@@ -480,6 +480,7 @@ from mypy_boto3_mediaconvert.literals import AacAudioDescriptionBroadcasterMixTy
 - [XavcSpatialAdaptiveQuantizationType](./literals.md#xavcspatialadaptivequantizationtype)
 - [XavcTemporalAdaptiveQuantizationType](./literals.md#xavctemporaladaptivequantizationtype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

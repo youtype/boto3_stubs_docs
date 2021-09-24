@@ -16,6 +16,7 @@ type annotations stubs module
   - [GroupByAttributeType](#groupbyattributetype)
   - [TargetIdTypeType](#targetidtypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ErrorCodeType
 
@@ -379,3 +380,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_resourcegroupstaggingapi.literals import PaginatorName
+```
+
+Values:
+
+- `get_compliance_summary`
+- `get_resources`
+- `get_tag_keys`
+- `get_tag_values`

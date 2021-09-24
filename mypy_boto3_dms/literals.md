@@ -58,6 +58,8 @@ type annotations stubs module
   - [TargetDbTypeType](#targetdbtypetype)
   - [TestConnectionSucceedsWaiterName](#testconnectionsucceedswaitername)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AuthMechanismValueType
 
@@ -888,3 +890,42 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_dms.literals import PaginatorName
+```
+
+Values:
+
+- `describe_certificates`
+- `describe_connections`
+- `describe_endpoint_types`
+- `describe_endpoints`
+- `describe_event_subscriptions`
+- `describe_events`
+- `describe_orderable_replication_instances`
+- `describe_replication_instances`
+- `describe_replication_subnet_groups`
+- `describe_replication_task_assessment_results`
+- `describe_replication_tasks`
+- `describe_schemas`
+- `describe_table_statistics`
+
+## WaiterName
+
+```python
+from mypy_boto3_dms.literals import WaiterName
+```
+
+Values:
+
+- `endpoint_deleted`
+- `replication_instance_available`
+- `replication_instance_deleted`
+- `replication_task_deleted`
+- `replication_task_ready`
+- `replication_task_running`
+- `replication_task_stopped`
+- `test_connection_succeeds`

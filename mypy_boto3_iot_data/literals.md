@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 IoTDataPlane module](#literals-for-boto3-iotdataplane-module)
   - [ListRetainedMessagesPaginatorName](#listretainedmessagespaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ListRetainedMessagesPaginatorName
 
@@ -308,3 +309,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_iot_data.literals import PaginatorName
+```
+
+Values:
+
+- `list_retained_messages`

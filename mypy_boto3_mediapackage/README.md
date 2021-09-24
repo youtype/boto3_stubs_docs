@@ -112,6 +112,7 @@ from mypy_boto3_mediapackage.literals import AdMarkersType, ...
 - [StreamOrderType](./literals.md#streamordertype)
 - [UtcTimingType](./literals.md#utctimingtype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

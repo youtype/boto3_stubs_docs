@@ -98,6 +98,7 @@ from mypy_boto3_cloudhsmv2.literals import BackupPolicyType, ...
 - [HsmStateType](./literals.md#hsmstatetype)
 - [ListTagsPaginatorName](./literals.md#listtagspaginatorname)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

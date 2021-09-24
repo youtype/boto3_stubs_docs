@@ -22,6 +22,7 @@ type annotations stubs module
   - [ResourceShareStatusType](#resourcesharestatustype)
   - [ResourceStatusType](#resourcestatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## GetResourcePoliciesPaginatorName
 
@@ -459,3 +460,18 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_ram.literals import PaginatorName
+```
+
+Values:
+
+- `get_resource_policies`
+- `get_resource_share_associations`
+- `get_resource_share_invitations`
+- `get_resource_shares`
+- `list_principals`
+- `list_resources`

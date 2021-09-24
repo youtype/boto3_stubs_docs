@@ -212,6 +212,7 @@ from mypy_boto3_greengrass.literals import BulkDeploymentStatusType, ...
 - [UpdateTargetsArchitectureType](./literals.md#updatetargetsarchitecturetype)
 - [UpdateTargetsOperatingSystemType](./literals.md#updatetargetsoperatingsystemtype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

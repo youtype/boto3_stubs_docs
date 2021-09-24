@@ -93,6 +93,7 @@ from mypy_boto3_kinesis_video_archived_media.literals import ClipFragmentSelecto
 - [HLSPlaybackModeType](./literals.md#hlsplaybackmodetype)
 - [ListFragmentsPaginatorName](./literals.md#listfragmentspaginatorname)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

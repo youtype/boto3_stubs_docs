@@ -130,6 +130,7 @@ from mypy_boto3_servicediscovery.literals import CustomHealthStatusType, ...
 - [ServiceTypeOptionType](./literals.md#servicetypeoptiontype)
 - [ServiceTypeType](./literals.md#servicetypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

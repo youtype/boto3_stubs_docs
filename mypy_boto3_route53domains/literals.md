@@ -20,6 +20,7 @@ type annotations stubs module
   - [TransferableType](#transferabletype)
   - [ViewBillingPaginatorName](#viewbillingpaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ContactTypeType
 
@@ -710,3 +711,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_route53domains.literals import PaginatorName
+```
+
+Values:
+
+- `list_domains`
+- `list_operations`
+- `view_billing`

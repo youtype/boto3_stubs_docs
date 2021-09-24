@@ -14,6 +14,7 @@ type annotations stubs module
   - [QueryObjectsPaginatorName](#queryobjectspaginatorname)
   - [TaskStatusType](#taskstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DescribeObjectsPaginatorName
 
@@ -358,3 +359,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_datapipeline.literals import PaginatorName
+```
+
+Values:
+
+- `describe_objects`
+- `list_pipelines`
+- `query_objects`

@@ -169,6 +169,7 @@ from mypy_boto3_securityhub.literals import AdminStatusType, ...
 - [WorkflowStateType](./literals.md#workflowstatetype)
 - [WorkflowStatusType](./literals.md#workflowstatustype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

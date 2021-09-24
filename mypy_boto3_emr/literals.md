@@ -61,6 +61,8 @@ type annotations stubs module
   - [StepStateType](#stepstatetype)
   - [UnitType](#unittype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## ActionOnFailureType
 
@@ -1006,3 +1008,34 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_emr.literals import PaginatorName
+```
+
+Values:
+
+- `list_bootstrap_actions`
+- `list_clusters`
+- `list_instance_fleets`
+- `list_instance_groups`
+- `list_instances`
+- `list_notebook_executions`
+- `list_security_configurations`
+- `list_steps`
+- `list_studio_session_mappings`
+- `list_studios`
+
+## WaiterName
+
+```python
+from mypy_boto3_emr.literals import WaiterName
+```
+
+Values:
+
+- `cluster_running`
+- `cluster_terminated`
+- `step_complete`

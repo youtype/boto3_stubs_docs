@@ -21,6 +21,7 @@ type annotations stubs module
   - [ListPagesByEngagementPaginatorName](#listpagesbyengagementpaginatorname)
   - [ReceiptTypeType](#receipttypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AcceptCodeValidationType
 
@@ -439,3 +440,18 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_ssm_contacts.literals import PaginatorName
+```
+
+Values:
+
+- `list_contact_channels`
+- `list_contacts`
+- `list_engagements`
+- `list_page_receipts`
+- `list_pages_by_contact`
+- `list_pages_by_engagement`

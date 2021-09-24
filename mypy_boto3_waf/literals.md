@@ -39,6 +39,7 @@ type annotations stubs module
   - [WafOverrideActionTypeType](#wafoverrideactiontypetype)
   - [WafRuleTypeType](#wafruletypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ChangeActionType
 
@@ -910,3 +911,28 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_waf.literals import PaginatorName
+```
+
+Values:
+
+- `get_rate_based_rule_managed_keys`
+- `list_activated_rules_in_rule_group`
+- `list_byte_match_sets`
+- `list_geo_match_sets`
+- `list_ip_sets`
+- `list_logging_configurations`
+- `list_rate_based_rules`
+- `list_regex_match_sets`
+- `list_regex_pattern_sets`
+- `list_rule_groups`
+- `list_rules`
+- `list_size_constraint_sets`
+- `list_sql_injection_match_sets`
+- `list_subscribed_rule_groups`
+- `list_web_acls`
+- `list_xss_match_sets`

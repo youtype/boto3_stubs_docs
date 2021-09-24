@@ -24,6 +24,7 @@ type annotations stubs module
   - [ListSatellitesPaginatorName](#listsatellitespaginatorname)
   - [PolarizationType](#polarizationtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AngleUnitsType
 
@@ -493,3 +494,18 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_groundstation.literals import PaginatorName
+```
+
+Values:
+
+- `list_configs`
+- `list_contacts`
+- `list_dataflow_endpoint_groups`
+- `list_ground_stations`
+- `list_mission_profiles`
+- `list_satellites`

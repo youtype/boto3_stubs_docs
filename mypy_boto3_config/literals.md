@@ -66,6 +66,7 @@ type annotations stubs module
   - [SelectAggregateResourceConfigPaginatorName](#selectaggregateresourceconfigpaginatorname)
   - [SelectResourceConfigPaginatorName](#selectresourceconfigpaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AggregateConformancePackComplianceSummaryGroupKeyType
 
@@ -1106,3 +1107,42 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_config.literals import PaginatorName
+```
+
+Values:
+
+- `describe_aggregate_compliance_by_config_rules`
+- `describe_aggregate_compliance_by_conformance_packs`
+- `describe_aggregation_authorizations`
+- `describe_compliance_by_config_rule`
+- `describe_compliance_by_resource`
+- `describe_config_rule_evaluation_status`
+- `describe_config_rules`
+- `describe_configuration_aggregator_sources_status`
+- `describe_configuration_aggregators`
+- `describe_conformance_pack_status`
+- `describe_conformance_packs`
+- `describe_organization_config_rule_statuses`
+- `describe_organization_config_rules`
+- `describe_organization_conformance_pack_statuses`
+- `describe_organization_conformance_packs`
+- `describe_pending_aggregation_requests`
+- `describe_remediation_execution_status`
+- `describe_retention_configurations`
+- `get_aggregate_compliance_details_by_config_rule`
+- `get_compliance_details_by_config_rule`
+- `get_compliance_details_by_resource`
+- `get_conformance_pack_compliance_summary`
+- `get_organization_config_rule_detailed_status`
+- `get_organization_conformance_pack_detailed_status`
+- `get_resource_config_history`
+- `list_aggregate_discovered_resources`
+- `list_discovered_resources`
+- `list_tags_for_resource`
+- `select_aggregate_resource_config`
+- `select_resource_config`

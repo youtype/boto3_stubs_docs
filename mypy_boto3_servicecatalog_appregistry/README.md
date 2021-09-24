@@ -103,6 +103,7 @@ from mypy_boto3_servicecatalog_appregistry.literals import ListApplicationsPagin
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [SyncActionType](./literals.md#syncactiontype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

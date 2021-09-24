@@ -23,6 +23,7 @@ type annotations stubs module
   - [TargetTypeType](#targettypetype)
   - [ViolationReasonType](#violationreasontype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AccountRoleStatusType
 
@@ -503,3 +504,17 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_fms.literals import PaginatorName
+```
+
+Values:
+
+- `list_apps_lists`
+- `list_compliance_status`
+- `list_member_accounts`
+- `list_policies`
+- `list_protocols_lists`

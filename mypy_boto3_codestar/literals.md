@@ -13,6 +13,7 @@ type annotations stubs module
   - [ListTeamMembersPaginatorName](#listteammemberspaginatorname)
   - [ListUserProfilesPaginatorName](#listuserprofilespaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ListProjectsPaginatorName
 
@@ -341,3 +342,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_codestar.literals import PaginatorName
+```
+
+Values:
+
+- `list_projects`
+- `list_resources`
+- `list_team_members`
+- `list_user_profiles`

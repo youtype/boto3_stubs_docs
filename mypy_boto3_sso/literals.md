@@ -11,6 +11,7 @@ type annotations stubs module
   - [ListAccountRolesPaginatorName](#listaccountrolespaginatorname)
   - [ListAccountsPaginatorName](#listaccountspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ListAccountRolesPaginatorName
 
@@ -319,3 +320,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_sso.literals import PaginatorName
+```
+
+Values:
+
+- `list_account_roles`
+- `list_accounts`

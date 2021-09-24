@@ -31,6 +31,8 @@ type annotations stubs module
   - [VirtualizationTypeType](#virtualizationtypetype)
   - [VolumeTypeType](#volumetypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AppAttributesKeysType
 
@@ -696,3 +698,28 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_opsworks.literals import PaginatorName
+```
+
+Values:
+
+- `describe_ecs_clusters`
+
+## WaiterName
+
+```python
+from mypy_boto3_opsworks.literals import WaiterName
+```
+
+Values:
+
+- `app_exists`
+- `deployment_successful`
+- `instance_online`
+- `instance_registered`
+- `instance_stopped`
+- `instance_terminated`

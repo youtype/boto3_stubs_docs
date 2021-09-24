@@ -17,6 +17,7 @@ type annotations stubs module
   - [RuleTypeType](#ruletypetype)
   - [StatusType](#statustype)
   - [ServiceName](#servicename)
+  - [WaiterName](#waitername)
 
 ## ClusterCreatedWaiterName
 
@@ -389,3 +390,18 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## WaiterName
+
+```python
+from mypy_boto3_route53_recovery_control_config.literals import WaiterName
+```
+
+Values:
+
+- `cluster_created`
+- `cluster_deleted`
+- `control_panel_created`
+- `control_panel_deleted`
+- `routing_control_created`
+- `routing_control_deleted`

@@ -270,6 +270,7 @@ Required fields:
 - `NodeId`: `str`
 - `IssuedAt`: `str`
 - `Expiration`: `str`
+- `LicenseArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

@@ -212,6 +212,8 @@ from mypy_boto3_ses.literals import BehaviorOnMXFailureType, ...
 - [TlsPolicyType](./literals.md#tlspolicytype)
 - [VerificationStatusType](./literals.md#verificationstatustype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

@@ -27,6 +27,7 @@ type annotations stubs module
   - [ListListenersPaginatorName](#listlistenerspaginatorname)
   - [ProtocolType](#protocoltype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AcceleratorStatusType
 
@@ -515,3 +516,20 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_globalaccelerator.literals import PaginatorName
+```
+
+Values:
+
+- `list_accelerators`
+- `list_byoip_cidrs`
+- `list_custom_routing_accelerators`
+- `list_custom_routing_listeners`
+- `list_custom_routing_port_mappings`
+- `list_custom_routing_port_mappings_by_destination`
+- `list_endpoint_groups`
+- `list_listeners`

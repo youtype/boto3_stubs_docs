@@ -116,6 +116,7 @@ from mypy_boto3_fms.literals import AccountRoleStatusType, ...
 - [TargetTypeType](./literals.md#targettypetype)
 - [ViolationReasonType](./literals.md#violationreasontype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

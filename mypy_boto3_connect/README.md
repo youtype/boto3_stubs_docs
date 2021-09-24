@@ -267,6 +267,7 @@ from mypy_boto3_connect.literals import AgentStatusStateType, ...
 - [UseCaseTypeType](./literals.md#usecasetypetype)
 - [VoiceRecordingTrackType](./literals.md#voicerecordingtracktype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

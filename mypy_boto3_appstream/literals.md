@@ -45,6 +45,8 @@ type annotations stubs module
   - [UserStackAssociationErrorCodeType](#userstackassociationerrorcodetype)
   - [VisibilityTypeType](#visibilitytypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AccessEndpointTypeType
 
@@ -784,3 +786,33 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_appstream.literals import PaginatorName
+```
+
+Values:
+
+- `describe_directory_configs`
+- `describe_fleets`
+- `describe_image_builders`
+- `describe_images`
+- `describe_sessions`
+- `describe_stacks`
+- `describe_user_stack_associations`
+- `describe_users`
+- `list_associated_fleets`
+- `list_associated_stacks`
+
+## WaiterName
+
+```python
+from mypy_boto3_appstream.literals import WaiterName
+```
+
+Values:
+
+- `fleet_started`
+- `fleet_stopped`

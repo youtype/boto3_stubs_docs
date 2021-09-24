@@ -50,6 +50,7 @@ type annotations stubs module
   - [TemperatureUnitType](#temperatureunittype)
   - [WakeWordType](#wakewordtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## BusinessReportFailureCodeType
 
@@ -821,3 +822,25 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_alexaforbusiness.literals import PaginatorName
+```
+
+Values:
+
+- `list_business_report_schedules`
+- `list_conference_providers`
+- `list_device_events`
+- `list_skills`
+- `list_skills_store_categories`
+- `list_skills_store_skills_by_category`
+- `list_smart_home_appliances`
+- `list_tags`
+- `search_devices`
+- `search_profiles`
+- `search_rooms`
+- `search_skill_groups`
+- `search_users`

@@ -31,6 +31,7 @@ type annotations stubs module
   - [SMBSecurityStrategyType](#smbsecuritystrategytype)
   - [TapeStorageClassType](#tapestorageclasstype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ActiveDirectoryStatusType
 
@@ -567,3 +568,23 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_storagegateway.literals import PaginatorName
+```
+
+Values:
+
+- `describe_tape_archives`
+- `describe_tape_recovery_points`
+- `describe_tapes`
+- `describe_vtl_devices`
+- `list_file_shares`
+- `list_file_system_associations`
+- `list_gateways`
+- `list_tags_for_resource`
+- `list_tape_pools`
+- `list_tapes`
+- `list_volumes`

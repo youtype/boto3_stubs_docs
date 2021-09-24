@@ -40,6 +40,7 @@ type annotations stubs module
   - [UidType](#uidtype)
   - [VerifyModeType](#verifymodetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AgentStatusType
 
@@ -697,3 +698,17 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_datasync.literals import PaginatorName
+```
+
+Values:
+
+- `list_agents`
+- `list_locations`
+- `list_tags_for_resource`
+- `list_task_executions`
+- `list_tasks`

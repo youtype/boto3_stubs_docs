@@ -98,6 +98,7 @@ from mypy_boto3_cloud9.literals import ConnectionTypeType, ...
 - [MemberPermissionsType](./literals.md#memberpermissionstype)
 - [PermissionsType](./literals.md#permissionstype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

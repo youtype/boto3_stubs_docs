@@ -18,6 +18,7 @@ type annotations stubs module
   - [PersistentAppUIType](#persistentappuitype)
   - [VirtualClusterStateType](#virtualclusterstatetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ContainerProviderTypeType
 
@@ -413,3 +414,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_emr_containers.literals import PaginatorName
+```
+
+Values:
+
+- `list_job_runs`
+- `list_managed_endpoints`
+- `list_virtual_clusters`

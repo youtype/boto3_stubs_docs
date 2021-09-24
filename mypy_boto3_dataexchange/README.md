@@ -111,6 +111,7 @@ from mypy_boto3_dataexchange.literals import AssetTypeType, ...
 - [StateType](./literals.md#statetype)
 - [TypeType](./literals.md#typetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

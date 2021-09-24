@@ -20,6 +20,7 @@ type annotations stubs module
   - [TransitionToIARulesType](#transitiontoiarulestype)
   - [TransitionToPrimaryStorageClassRulesType](#transitiontoprimarystorageclassrulestype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DescribeFileSystemsPaginatorName
 
@@ -434,3 +435,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_efs.literals import PaginatorName
+```
+
+Values:
+
+- `describe_file_systems`
+- `describe_mount_targets`
+- `describe_tags`

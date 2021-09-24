@@ -34,6 +34,7 @@ type annotations stubs module
   - [ServiceNameType](#servicenametype)
   - [UpdateResourceCollectionActionType](#updateresourcecollectionactiontype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AnomalySeverityType
 
@@ -634,3 +635,21 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_devops_guru.literals import PaginatorName
+```
+
+Values:
+
+- `describe_resource_collection_health`
+- `get_cost_estimation`
+- `get_resource_collection`
+- `list_anomalies_for_insight`
+- `list_events`
+- `list_insights`
+- `list_notification_channels`
+- `list_recommendations`
+- `search_insights`

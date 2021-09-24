@@ -46,6 +46,7 @@ type annotations stubs module
   - [SortOrderType](#sortordertype)
   - [ValidationType](#validationtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ActionType
 
@@ -761,3 +762,26 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_route53resolver.literals import PaginatorName
+```
+
+Values:
+
+- `list_firewall_configs`
+- `list_firewall_domain_lists`
+- `list_firewall_domains`
+- `list_firewall_rule_group_associations`
+- `list_firewall_rule_groups`
+- `list_firewall_rules`
+- `list_resolver_dnssec_configs`
+- `list_resolver_endpoint_ip_addresses`
+- `list_resolver_endpoints`
+- `list_resolver_query_log_config_associations`
+- `list_resolver_query_log_configs`
+- `list_resolver_rule_associations`
+- `list_resolver_rules`
+- `list_tags_for_resource`

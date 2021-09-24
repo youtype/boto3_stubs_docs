@@ -33,6 +33,7 @@ type annotations stubs module
   - [ValidationStatusType](#validationstatustype)
   - [VmManagerTypeType](#vmmanagertypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AppLaunchConfigurationStatusType
 
@@ -629,3 +630,17 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_sms.literals import PaginatorName
+```
+
+Values:
+
+- `get_connectors`
+- `get_replication_jobs`
+- `get_replication_runs`
+- `get_servers`
+- `list_apps`

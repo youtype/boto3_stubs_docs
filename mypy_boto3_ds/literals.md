@@ -45,6 +45,7 @@ type annotations stubs module
   - [TrustStateType](#truststatetype)
   - [TrustTypeType](#trusttypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## CertificateStateType
 
@@ -772,3 +773,21 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_ds.literals import PaginatorName
+```
+
+Values:
+
+- `describe_directories`
+- `describe_domain_controllers`
+- `describe_shared_directories`
+- `describe_snapshots`
+- `describe_trusts`
+- `list_ip_routes`
+- `list_log_subscriptions`
+- `list_schema_extensions`
+- `list_tags_for_resource`

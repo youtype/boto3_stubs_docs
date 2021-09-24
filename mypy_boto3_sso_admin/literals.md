@@ -25,6 +25,7 @@ type annotations stubs module
   - [StatusValuesType](#statusvaluestype)
   - [TargetTypeType](#targettypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## InstanceAccessControlAttributeConfigurationStatusType
 
@@ -480,3 +481,22 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_sso_admin.literals import PaginatorName
+```
+
+Values:
+
+- `list_account_assignment_creation_status`
+- `list_account_assignment_deletion_status`
+- `list_account_assignments`
+- `list_accounts_for_provisioned_permission_set`
+- `list_instances`
+- `list_managed_policies_in_permission_set`
+- `list_permission_set_provisioning_status`
+- `list_permission_sets`
+- `list_permission_sets_provisioned_to_account`
+- `list_tags_for_resource`

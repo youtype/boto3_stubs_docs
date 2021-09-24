@@ -387,6 +387,7 @@ type annotations stubs module
   - [XavcSpatialAdaptiveQuantizationType](#xavcspatialadaptivequantizationtype)
   - [XavcTemporalAdaptiveQuantizationType](#xavctemporaladaptivequantizationtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AacAudioDescriptionBroadcasterMixType
 
@@ -5385,3 +5386,17 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mediaconvert.literals import PaginatorName
+```
+
+Values:
+
+- `describe_endpoints`
+- `list_job_templates`
+- `list_jobs`
+- `list_presets`
+- `list_queues`

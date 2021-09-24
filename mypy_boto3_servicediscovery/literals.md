@@ -29,6 +29,7 @@ type annotations stubs module
   - [ServiceTypeOptionType](#servicetypeoptiontype)
   - [ServiceTypeType](#servicetypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## CustomHealthStatusType
 
@@ -549,3 +550,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_servicediscovery.literals import PaginatorName
+```
+
+Values:
+
+- `list_instances`
+- `list_namespaces`
+- `list_operations`
+- `list_services`

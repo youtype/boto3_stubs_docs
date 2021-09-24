@@ -149,6 +149,8 @@ from mypy_boto3_acm_pca.literals import AccessMethodTypeType, ...
 - [SigningAlgorithmType](./literals.md#signingalgorithmtype)
 - [ValidityPeriodTypeType](./literals.md#validityperiodtypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

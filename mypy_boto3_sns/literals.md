@@ -21,6 +21,7 @@ type annotations stubs module
   - [RouteTypeType](#routetypetype)
   - [SMSSandboxPhoneNumberVerificationStatusType](#smssandboxphonenumberverificationstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## LanguageCodeStringType
 
@@ -446,3 +447,20 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_sns.literals import PaginatorName
+```
+
+Values:
+
+- `list_endpoints_by_platform_application`
+- `list_origination_numbers`
+- `list_phone_numbers_opted_out`
+- `list_platform_applications`
+- `list_sms_sandbox_phone_numbers`
+- `list_subscriptions`
+- `list_subscriptions_by_topic`
+- `list_topics`

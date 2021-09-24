@@ -42,6 +42,7 @@ type annotations stubs module
   - [UpdateTargetsArchitectureType](#updatetargetsarchitecturetype)
   - [UpdateTargetsOperatingSystemType](#updatetargetsoperatingsystemtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## BulkDeploymentStatusType
 
@@ -693,3 +694,31 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_greengrass.literals import PaginatorName
+```
+
+Values:
+
+- `list_bulk_deployment_detailed_reports`
+- `list_bulk_deployments`
+- `list_connector_definition_versions`
+- `list_connector_definitions`
+- `list_core_definition_versions`
+- `list_core_definitions`
+- `list_deployments`
+- `list_device_definition_versions`
+- `list_device_definitions`
+- `list_function_definition_versions`
+- `list_function_definitions`
+- `list_group_versions`
+- `list_groups`
+- `list_logger_definition_versions`
+- `list_logger_definitions`
+- `list_resource_definition_versions`
+- `list_resource_definitions`
+- `list_subscription_definition_versions`
+- `list_subscription_definitions`

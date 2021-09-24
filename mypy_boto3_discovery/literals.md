@@ -25,6 +25,7 @@ type annotations stubs module
   - [ListConfigurationsPaginatorName](#listconfigurationspaginatorname)
   - [orderStringType](#orderstringtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AgentStatusType
 
@@ -505,3 +506,18 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_discovery.literals import PaginatorName
+```
+
+Values:
+
+- `describe_agents`
+- `describe_continuous_exports`
+- `describe_export_configurations`
+- `describe_export_tasks`
+- `describe_tags`
+- `list_configurations`

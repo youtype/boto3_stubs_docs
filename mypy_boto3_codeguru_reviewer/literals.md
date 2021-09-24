@@ -22,6 +22,8 @@ type annotations stubs module
   - [TypeType](#typetype)
   - [VendorNameType](#vendornametype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AnalysisTypeType
 
@@ -471,3 +473,24 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_codeguru_reviewer.literals import PaginatorName
+```
+
+Values:
+
+- `list_repository_associations`
+
+## WaiterName
+
+```python
+from mypy_boto3_codeguru_reviewer.literals import WaiterName
+```
+
+Values:
+
+- `code_review_completed`
+- `repository_association_succeeded`

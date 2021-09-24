@@ -225,6 +225,8 @@ from mypy_boto3_opsworks.literals import AppAttributesKeysType, ...
 - [VirtualizationTypeType](./literals.md#virtualizationtypetype)
 - [VolumeTypeType](./literals.md#volumetypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

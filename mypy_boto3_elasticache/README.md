@@ -275,6 +275,8 @@ from mypy_boto3_elasticache.literals import AZModeType, ...
 - [SourceTypeType](./literals.md#sourcetypetype)
 - [UpdateActionStatusType](./literals.md#updateactionstatustype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

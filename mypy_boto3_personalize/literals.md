@@ -25,6 +25,7 @@ type annotations stubs module
   - [RecipeProviderType](#recipeprovidertype)
   - [TrainingModeType](#trainingmodetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## IngestionModeType
 
@@ -479,3 +480,24 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_personalize.literals import PaginatorName
+```
+
+Values:
+
+- `list_batch_inference_jobs`
+- `list_campaigns`
+- `list_dataset_export_jobs`
+- `list_dataset_groups`
+- `list_dataset_import_jobs`
+- `list_datasets`
+- `list_event_trackers`
+- `list_filters`
+- `list_recipes`
+- `list_schemas`
+- `list_solution_versions`
+- `list_solutions`

@@ -126,6 +126,7 @@ type annotations stubs module
   - [VerificationStateType](#verificationstatetype)
   - [ViolationEventTypeType](#violationeventtypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AbortActionType
 
@@ -1767,3 +1768,66 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_iot.literals import PaginatorName
+```
+
+Values:
+
+- `get_behavior_model_training_summaries`
+- `list_active_violations`
+- `list_attached_policies`
+- `list_audit_findings`
+- `list_audit_mitigation_actions_executions`
+- `list_audit_mitigation_actions_tasks`
+- `list_audit_suppressions`
+- `list_audit_tasks`
+- `list_authorizers`
+- `list_billing_groups`
+- `list_ca_certificates`
+- `list_certificates`
+- `list_certificates_by_ca`
+- `list_custom_metrics`
+- `list_detect_mitigation_actions_executions`
+- `list_detect_mitigation_actions_tasks`
+- `list_dimensions`
+- `list_domain_configurations`
+- `list_fleet_metrics`
+- `list_indices`
+- `list_job_executions_for_job`
+- `list_job_executions_for_thing`
+- `list_job_templates`
+- `list_jobs`
+- `list_mitigation_actions`
+- `list_ota_updates`
+- `list_outgoing_certificates`
+- `list_policies`
+- `list_policy_principals`
+- `list_principal_policies`
+- `list_principal_things`
+- `list_provisioning_template_versions`
+- `list_provisioning_templates`
+- `list_role_aliases`
+- `list_scheduled_audits`
+- `list_security_profiles`
+- `list_security_profiles_for_target`
+- `list_streams`
+- `list_tags_for_resource`
+- `list_targets_for_policy`
+- `list_targets_for_security_profile`
+- `list_thing_groups`
+- `list_thing_groups_for_thing`
+- `list_thing_principals`
+- `list_thing_registration_task_reports`
+- `list_thing_registration_tasks`
+- `list_thing_types`
+- `list_things`
+- `list_things_in_billing_group`
+- `list_things_in_thing_group`
+- `list_topic_rule_destinations`
+- `list_topic_rules`
+- `list_v2_logging_levels`
+- `list_violation_events`

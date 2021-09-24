@@ -500,6 +500,7 @@ from mypy_boto3_iot.literals import AbortActionType, ...
 - [VerificationStateType](./literals.md#verificationstatetype)
 - [ViolationEventTypeType](./literals.md#violationeventtypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

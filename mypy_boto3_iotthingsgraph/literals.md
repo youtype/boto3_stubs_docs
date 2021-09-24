@@ -32,6 +32,7 @@ type annotations stubs module
   - [SystemTemplateFilterNameType](#systemtemplatefilternametype)
   - [UploadStatusType](#uploadstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DefinitionLanguageType
 
@@ -595,3 +596,22 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_iotthingsgraph.literals import PaginatorName
+```
+
+Values:
+
+- `get_flow_template_revisions`
+- `get_system_template_revisions`
+- `list_flow_execution_messages`
+- `list_tags_for_resource`
+- `search_entities`
+- `search_flow_executions`
+- `search_flow_templates`
+- `search_system_instances`
+- `search_system_templates`
+- `search_things`

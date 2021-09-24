@@ -148,6 +148,7 @@ from mypy_boto3_events.literals import ApiDestinationHttpMethodType, ...
 - [ReplayStateType](./literals.md#replaystatetype)
 - [RuleStateType](./literals.md#rulestatetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

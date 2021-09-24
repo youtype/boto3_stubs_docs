@@ -13,6 +13,7 @@ type annotations stubs module
   - [ReportFrequencyType](#reportfrequencytype)
   - [S3BucketRegionType](#s3bucketregiontype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## FormatType
 
@@ -347,3 +348,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_applicationcostprofiler.literals import PaginatorName
+```
+
+Values:
+
+- `list_report_definitions`

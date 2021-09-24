@@ -14,6 +14,8 @@ type annotations stubs module
   - [ListPipelinesPaginatorName](#listpipelinespaginatorname)
   - [ListPresetsPaginatorName](#listpresetspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## JobCompleteWaiterName
 
@@ -352,3 +354,26 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_elastictranscoder.literals import PaginatorName
+```
+
+Values:
+
+- `list_jobs_by_pipeline`
+- `list_jobs_by_status`
+- `list_pipelines`
+- `list_presets`
+
+## WaiterName
+
+```python
+from mypy_boto3_elastictranscoder.literals import WaiterName
+```
+
+Values:
+
+- `job_complete`

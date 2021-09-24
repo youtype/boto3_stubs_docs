@@ -25,6 +25,7 @@ type annotations stubs module
   - [TravelModeType](#travelmodetype)
   - [VehicleWeightUnitType](#vehicleweightunittype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## BatchItemErrorCodeType
 
@@ -486,3 +487,21 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_location.literals import PaginatorName
+```
+
+Values:
+
+- `get_device_position_history`
+- `list_device_positions`
+- `list_geofence_collections`
+- `list_geofences`
+- `list_maps`
+- `list_place_indexes`
+- `list_route_calculators`
+- `list_tracker_consumers`
+- `list_trackers`

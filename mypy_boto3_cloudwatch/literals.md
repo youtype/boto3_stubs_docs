@@ -27,6 +27,8 @@ type annotations stubs module
   - [StatisticType](#statistictype)
   - [StatusCodeType](#statuscodetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AlarmExistsWaiterName
 
@@ -542,3 +544,28 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_cloudwatch.literals import PaginatorName
+```
+
+Values:
+
+- `describe_alarm_history`
+- `describe_alarms`
+- `get_metric_data`
+- `list_dashboards`
+- `list_metrics`
+
+## WaiterName
+
+```python
+from mypy_boto3_cloudwatch.literals import WaiterName
+```
+
+Values:
+
+- `alarm_exists`
+- `composite_alarm_exists`

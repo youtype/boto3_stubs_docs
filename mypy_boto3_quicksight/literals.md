@@ -63,6 +63,7 @@ type annotations stubs module
   - [ThemeTypeType](#themetypetype)
   - [UserRoleType](#userroletype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AnalysisErrorTypeType
 
@@ -1046,3 +1047,26 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_quicksight.literals import PaginatorName
+```
+
+Values:
+
+- `list_analyses`
+- `list_dashboard_versions`
+- `list_dashboards`
+- `list_data_sets`
+- `list_data_sources`
+- `list_ingestions`
+- `list_namespaces`
+- `list_template_aliases`
+- `list_template_versions`
+- `list_templates`
+- `list_theme_versions`
+- `list_themes`
+- `search_analyses`
+- `search_dashboards`

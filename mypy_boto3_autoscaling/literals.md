@@ -34,6 +34,7 @@ type annotations stubs module
   - [WarmPoolStateType](#warmpoolstatetype)
   - [WarmPoolStatusType](#warmpoolstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DescribeAutoScalingGroupsPaginatorName
 
@@ -630,3 +631,22 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_autoscaling.literals import PaginatorName
+```
+
+Values:
+
+- `describe_auto_scaling_groups`
+- `describe_auto_scaling_instances`
+- `describe_launch_configurations`
+- `describe_load_balancer_target_groups`
+- `describe_load_balancers`
+- `describe_notification_configurations`
+- `describe_policies`
+- `describe_scaling_activities`
+- `describe_scheduled_actions`
+- `describe_tags`

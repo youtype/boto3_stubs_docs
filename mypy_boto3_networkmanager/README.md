@@ -135,6 +135,7 @@ from mypy_boto3_networkmanager.literals import ConnectionStateType, ...
 - [TransitGatewayConnectPeerAssociationStateType](./literals.md#transitgatewayconnectpeerassociationstatetype)
 - [TransitGatewayRegistrationStateType](./literals.md#transitgatewayregistrationstatetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

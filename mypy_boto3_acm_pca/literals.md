@@ -31,6 +31,8 @@ type annotations stubs module
   - [SigningAlgorithmType](#signingalgorithmtype)
   - [ValidityPeriodTypeType](#validityperiodtypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AccessMethodTypeType
 
@@ -585,3 +587,27 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_acm_pca.literals import PaginatorName
+```
+
+Values:
+
+- `list_certificate_authorities`
+- `list_permissions`
+- `list_tags`
+
+## WaiterName
+
+```python
+from mypy_boto3_acm_pca.literals import WaiterName
+```
+
+Values:
+
+- `audit_report_created`
+- `certificate_authority_csr_created`
+- `certificate_issued`

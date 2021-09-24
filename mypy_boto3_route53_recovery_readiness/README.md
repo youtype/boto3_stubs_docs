@@ -125,6 +125,7 @@ from mypy_boto3_route53_recovery_readiness.literals import GetCellReadinessSumma
 - [ListRulesPaginatorName](./literals.md#listrulespaginatorname)
 - [ReadinessType](./literals.md#readinesstype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

@@ -11,6 +11,7 @@ type annotations stubs module
   - [JobTypeType](#jobtypetype)
   - [ListJobsPaginatorName](#listjobspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## JobTypeType
 
@@ -320,3 +321,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_importexport.literals import PaginatorName
+```
+
+Values:
+
+- `list_jobs`

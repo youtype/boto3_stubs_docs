@@ -32,6 +32,7 @@ type annotations stubs module
   - [ResourceTypeType](#resourcetypetype)
   - [TokenTypeType](#tokentypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AllowedOperationType
 
@@ -649,3 +650,17 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_license_manager.literals import PaginatorName
+```
+
+Values:
+
+- `list_associations_for_license_configuration`
+- `list_license_configurations`
+- `list_license_specifications_for_resource`
+- `list_resource_inventory`
+- `list_usage_for_license_configuration`

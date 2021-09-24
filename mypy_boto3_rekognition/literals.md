@@ -41,6 +41,8 @@ type annotations stubs module
   - [VideoColorRangeType](#videocolorrangetype)
   - [VideoJobStatusType](#videojobstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AttributeType
 
@@ -739,3 +741,28 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_rekognition.literals import PaginatorName
+```
+
+Values:
+
+- `describe_project_versions`
+- `describe_projects`
+- `list_collections`
+- `list_faces`
+- `list_stream_processors`
+
+## WaiterName
+
+```python
+from mypy_boto3_rekognition.literals import WaiterName
+```
+
+Values:
+
+- `project_version_running`
+- `project_version_training_completed`

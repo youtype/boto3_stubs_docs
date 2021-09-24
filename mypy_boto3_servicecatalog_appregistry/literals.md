@@ -16,6 +16,7 @@ type annotations stubs module
   - [ResourceTypeType](#resourcetypetype)
   - [SyncActionType](#syncactiontype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ListApplicationsPaginatorName
 
@@ -380,3 +381,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_servicecatalog_appregistry.literals import PaginatorName
+```
+
+Values:
+
+- `list_applications`
+- `list_associated_attribute_groups`
+- `list_associated_resources`
+- `list_attribute_groups`

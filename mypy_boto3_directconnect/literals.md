@@ -27,6 +27,7 @@ type annotations stubs module
   - [LoaContentTypeType](#loacontenttypetype)
   - [VirtualInterfaceStateType](#virtualinterfacestatetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AddressFamilyType
 
@@ -546,3 +547,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_directconnect.literals import PaginatorName
+```
+
+Values:
+
+- `describe_direct_connect_gateway_associations`
+- `describe_direct_connect_gateway_attachments`
+- `describe_direct_connect_gateways`

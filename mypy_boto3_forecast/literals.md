@@ -25,6 +25,7 @@ type annotations stubs module
   - [OptimizationMetricType](#optimizationmetrictype)
   - [ScalingTypeType](#scalingtypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AttributeTypeType
 
@@ -494,3 +495,19 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_forecast.literals import PaginatorName
+```
+
+Values:
+
+- `list_dataset_groups`
+- `list_dataset_import_jobs`
+- `list_datasets`
+- `list_forecast_export_jobs`
+- `list_forecasts`
+- `list_predictor_backtest_export_jobs`
+- `list_predictors`

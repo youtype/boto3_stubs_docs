@@ -122,6 +122,7 @@ from mypy_boto3_amplify.literals import DomainStatusType, ...
 - [PlatformType](./literals.md#platformtype)
 - [StageType](./literals.md#stagetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

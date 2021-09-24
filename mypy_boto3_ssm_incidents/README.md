@@ -139,6 +139,8 @@ from mypy_boto3_ssm_incidents.literals import GetResourcePoliciesPaginatorName, 
 - [WaitForReplicationSetActiveWaiterName](./literals.md#waitforreplicationsetactivewaitername)
 - [WaitForReplicationSetDeletedWaiterName](./literals.md#waitforreplicationsetdeletedwaitername)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

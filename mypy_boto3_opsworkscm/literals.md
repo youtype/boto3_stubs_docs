@@ -19,6 +19,8 @@ type annotations stubs module
   - [NodeAssociationStatusType](#nodeassociationstatustype)
   - [ServerStatusType](#serverstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## BackupStatusType
 
@@ -426,3 +428,26 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_opsworkscm.literals import PaginatorName
+```
+
+Values:
+
+- `describe_backups`
+- `describe_events`
+- `describe_servers`
+- `list_tags_for_resource`
+
+## WaiterName
+
+```python
+from mypy_boto3_opsworkscm.literals import WaiterName
+```
+
+Values:
+
+- `node_associated`

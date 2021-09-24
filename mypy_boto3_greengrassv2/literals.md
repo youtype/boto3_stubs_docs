@@ -33,6 +33,7 @@ type annotations stubs module
   - [ListInstalledComponentsPaginatorName](#listinstalledcomponentspaginatorname)
   - [RecipeOutputFormatType](#recipeoutputformattype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## CloudComponentStateType
 
@@ -596,3 +597,19 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_greengrassv2.literals import PaginatorName
+```
+
+Values:
+
+- `list_client_devices_associated_with_core_device`
+- `list_component_versions`
+- `list_components`
+- `list_core_devices`
+- `list_deployments`
+- `list_effective_deployments`
+- `list_installed_components`

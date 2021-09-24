@@ -19,6 +19,7 @@ type annotations stubs module
   - [SegmentTemplateFormatType](#segmenttemplateformattype)
   - [StreamOrderType](#streamordertype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AdMarkersType
 
@@ -416,3 +417,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mediapackage_vod.literals import PaginatorName
+```
+
+Values:
+
+- `list_assets`
+- `list_packaging_configurations`
+- `list_packaging_groups`

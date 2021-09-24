@@ -13,6 +13,7 @@ type annotations stubs module
   - [ListHumanLoopsPaginatorName](#listhumanloopspaginatorname)
   - [SortOrderType](#sortordertype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ContentClassifierType
 
@@ -347,3 +348,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_sagemaker_a2i_runtime.literals import PaginatorName
+```
+
+Values:
+
+- `list_human_loops`

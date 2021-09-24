@@ -31,6 +31,7 @@ type annotations stubs module
   - [RepositoryTriggerEventEnumType](#repositorytriggereventenumtype)
   - [SortByEnumType](#sortbyenumtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ApprovalStateType
 
@@ -572,3 +573,19 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_codecommit.literals import PaginatorName
+```
+
+Values:
+
+- `describe_pull_request_events`
+- `get_comments_for_compared_commit`
+- `get_comments_for_pull_request`
+- `get_differences`
+- `list_branches`
+- `list_pull_requests`
+- `list_repositories`

@@ -40,6 +40,7 @@ type annotations stubs module
   - [StudioStateType](#studiostatetype)
   - [StudioStatusCodeType](#studiostatuscodetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## LaunchProfilePersonaType
 
@@ -750,3 +751,21 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_nimble.literals import PaginatorName
+```
+
+Values:
+
+- `list_eula_acceptances`
+- `list_eulas`
+- `list_launch_profile_members`
+- `list_launch_profiles`
+- `list_streaming_images`
+- `list_streaming_sessions`
+- `list_studio_components`
+- `list_studio_members`
+- `list_studios`

@@ -18,6 +18,8 @@ type annotations stubs module
   - [SearchSchemasPaginatorName](#searchschemaspaginatorname)
   - [TypeType](#typetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## CodeBindingExistsWaiterName
 
@@ -400,3 +402,27 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_schemas.literals import PaginatorName
+```
+
+Values:
+
+- `list_discoverers`
+- `list_registries`
+- `list_schema_versions`
+- `list_schemas`
+- `search_schemas`
+
+## WaiterName
+
+```python
+from mypy_boto3_schemas.literals import WaiterName
+```
+
+Values:
+
+- `code_binding_exists`

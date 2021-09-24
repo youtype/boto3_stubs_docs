@@ -166,6 +166,7 @@ from mypy_boto3_workmail.literals import AccessControlRuleEffectType, ...
 - [RetentionActionType](./literals.md#retentionactiontype)
 - [UserRoleType](./literals.md#userroletype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

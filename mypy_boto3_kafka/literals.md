@@ -23,6 +23,7 @@ type annotations stubs module
   - [ListScramSecretsPaginatorName](#listscramsecretspaginatorname)
   - [NodeTypeType](#nodetypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## BrokerAZDistributionType
 
@@ -466,3 +467,19 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_kafka.literals import PaginatorName
+```
+
+Values:
+
+- `list_cluster_operations`
+- `list_clusters`
+- `list_configuration_revisions`
+- `list_configurations`
+- `list_kafka_versions`
+- `list_nodes`
+- `list_scram_secrets`

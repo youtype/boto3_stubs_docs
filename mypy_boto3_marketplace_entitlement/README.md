@@ -73,6 +73,7 @@ from mypy_boto3_marketplace_entitlement.literals import GetEntitlementFilterName
 - [GetEntitlementFilterNameType](./literals.md#getentitlementfilternametype)
 - [GetEntitlementsPaginatorName](./literals.md#getentitlementspaginatorname)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

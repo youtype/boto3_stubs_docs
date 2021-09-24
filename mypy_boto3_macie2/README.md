@@ -193,6 +193,7 @@ from mypy_boto3_macie2.literals import AdminStatusType, ...
 - [UsageTypeType](./literals.md#usagetypetype)
 - [UserIdentityTypeType](./literals.md#useridentitytypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

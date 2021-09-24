@@ -16,6 +16,7 @@ type annotations stubs module
   - [ListLunaClientsPaginatorName](#listlunaclientspaginatorname)
   - [SubscriptionTypeType](#subscriptiontypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ClientVersionType
 
@@ -383,3 +384,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_cloudhsm.literals import PaginatorName
+```
+
+Values:
+
+- `list_hapgs`
+- `list_hsms`
+- `list_luna_clients`

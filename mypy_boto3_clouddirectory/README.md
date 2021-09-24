@@ -215,6 +215,7 @@ from mypy_boto3_clouddirectory.literals import BatchReadExceptionTypeType, ...
 - [RuleTypeType](./literals.md#ruletypetype)
 - [UpdateActionTypeType](./literals.md#updateactiontypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

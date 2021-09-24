@@ -19,6 +19,7 @@ type annotations stubs module
   - [MemberPermissionsType](#memberpermissionstype)
   - [PermissionsType](#permissionstype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ConnectionTypeType
 
@@ -433,3 +434,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_cloud9.literals import PaginatorName
+```
+
+Values:
+
+- `describe_environment_memberships`
+- `list_environments`

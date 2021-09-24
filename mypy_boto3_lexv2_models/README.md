@@ -187,6 +187,7 @@ from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType,
 - [SortOrderType](./literals.md#sortordertype)
 - [TimeDimensionType](./literals.md#timedimensiontype)
 - [ServiceName](./literals.md#servicename)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

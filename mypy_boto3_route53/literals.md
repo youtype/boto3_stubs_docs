@@ -32,6 +32,8 @@ type annotations stubs module
   - [TagResourceTypeType](#tagresourcetypetype)
   - [VPCRegionType](#vpcregiontype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AccountLimitTypeType
 
@@ -671,3 +673,27 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_route53.literals import PaginatorName
+```
+
+Values:
+
+- `list_health_checks`
+- `list_hosted_zones`
+- `list_query_logging_configs`
+- `list_resource_record_sets`
+- `list_vpc_association_authorizations`
+
+## WaiterName
+
+```python
+from mypy_boto3_route53.literals import WaiterName
+```
+
+Values:
+
+- `resource_record_sets_changed`

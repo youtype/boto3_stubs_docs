@@ -313,6 +313,7 @@ from mypy_boto3_chime.literals import AccountStatusType, ...
 - [UserTypeType](./literals.md#usertypetype)
 - [VoiceConnectorAwsRegionType](./literals.md#voiceconnectorawsregiontype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

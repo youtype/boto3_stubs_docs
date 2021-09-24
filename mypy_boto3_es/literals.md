@@ -38,6 +38,7 @@ type annotations stubs module
   - [UpgradeStepType](#upgradesteptype)
   - [VolumeTypeType](#volumetypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AutoTuneDesiredStateType
 
@@ -732,3 +733,17 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_es.literals import PaginatorName
+```
+
+Values:
+
+- `describe_reserved_elasticsearch_instance_offerings`
+- `describe_reserved_elasticsearch_instances`
+- `get_upgrade_history`
+- `list_elasticsearch_instance_types`
+- `list_elasticsearch_versions`

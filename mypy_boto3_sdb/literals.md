@@ -11,6 +11,7 @@ type annotations stubs module
   - [ListDomainsPaginatorName](#listdomainspaginatorname)
   - [SelectPaginatorName](#selectpaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ListDomainsPaginatorName
 
@@ -319,3 +320,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_sdb.literals import PaginatorName
+```
+
+Values:
+
+- `list_domains`
+- `select`

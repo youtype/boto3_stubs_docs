@@ -38,6 +38,7 @@ type annotations stubs module
   - [RuleTypeType](#ruletypetype)
   - [UpdateActionTypeType](#updateactiontypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## BatchReadExceptionTypeType
 
@@ -649,3 +650,31 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_clouddirectory.literals import PaginatorName
+```
+
+Values:
+
+- `list_applied_schema_arns`
+- `list_attached_indices`
+- `list_development_schema_arns`
+- `list_directories`
+- `list_facet_attributes`
+- `list_facet_names`
+- `list_incoming_typed_links`
+- `list_index`
+- `list_managed_schema_arns`
+- `list_object_attributes`
+- `list_object_parent_paths`
+- `list_object_policies`
+- `list_outgoing_typed_links`
+- `list_policy_attachments`
+- `list_published_schema_arns`
+- `list_tags_for_resource`
+- `list_typed_link_facet_attributes`
+- `list_typed_link_facet_names`
+- `lookup_policy`

@@ -28,6 +28,8 @@ type annotations stubs module
   - [SortOrderType](#sortordertype)
   - [TaggableResourceTypeType](#taggableresourcetypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AlgorithmType
 
@@ -548,3 +550,29 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_machinelearning.literals import PaginatorName
+```
+
+Values:
+
+- `describe_batch_predictions`
+- `describe_data_sources`
+- `describe_evaluations`
+- `describe_ml_models`
+
+## WaiterName
+
+```python
+from mypy_boto3_machinelearning.literals import WaiterName
+```
+
+Values:
+
+- `batch_prediction_available`
+- `data_source_available`
+- `evaluation_available`
+- `ml_model_available`

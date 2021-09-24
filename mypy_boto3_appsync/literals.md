@@ -31,6 +31,7 @@ type annotations stubs module
   - [SchemaStatusType](#schemastatustype)
   - [TypeDefinitionFormatType](#typedefinitionformattype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ApiCacheStatusType
 
@@ -583,3 +584,19 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_appsync.literals import PaginatorName
+```
+
+Values:
+
+- `list_api_keys`
+- `list_data_sources`
+- `list_functions`
+- `list_graphql_apis`
+- `list_resolvers`
+- `list_resolvers_by_function`
+- `list_types`

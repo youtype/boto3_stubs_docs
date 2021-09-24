@@ -19,6 +19,7 @@ type annotations stubs module
   - [RequestStatusType](#requeststatustype)
   - [ServiceQuotaTemplateAssociationStatusType](#servicequotatemplateassociationstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ErrorCodeType
 
@@ -421,3 +422,18 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_service_quotas.literals import PaginatorName
+```
+
+Values:
+
+- `list_aws_default_service_quotas`
+- `list_requested_service_quota_change_history`
+- `list_requested_service_quota_change_history_by_quota`
+- `list_service_quota_increase_requests_in_template`
+- `list_service_quotas`
+- `list_services`

@@ -15,6 +15,7 @@ type annotations stubs module
   - [ModelHostingStatusType](#modelhostingstatustype)
   - [ModelStatusType](#modelstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DatasetStatusType
 
@@ -384,3 +385,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_lookoutvision.literals import PaginatorName
+```
+
+Values:
+
+- `list_dataset_entries`
+- `list_models`
+- `list_projects`

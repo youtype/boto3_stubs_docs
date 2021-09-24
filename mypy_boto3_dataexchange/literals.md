@@ -21,6 +21,7 @@ type annotations stubs module
   - [StateType](#statetype)
   - [TypeType](#typetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AssetTypeType
 
@@ -448,3 +449,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_dataexchange.literals import PaginatorName
+```
+
+Values:
+
+- `list_data_set_revisions`
+- `list_data_sets`
+- `list_jobs`
+- `list_revision_assets`

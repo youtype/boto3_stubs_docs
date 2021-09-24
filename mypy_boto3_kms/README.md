@@ -172,6 +172,7 @@ from mypy_boto3_kms.literals import AlgorithmSpecType, ...
 - [SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)
 - [WrappingKeySpecType](./literals.md#wrappingkeyspectype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

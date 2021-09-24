@@ -1902,6 +1902,9 @@ Boto3 documentation:
 - `metadata_options`: `Dict`\[`str`, `Any`\]
 - `enclave_options`: `Dict`\[`str`, `Any`\]
 - `boot_mode`: `str`
+- `platform_details`: `str`
+- `usage_operation`: `str`
+- `usage_operation_update_time`: `datetime`
 - `id`: `str`
 - `classic_address`: [ClassicAddress](#classicaddress)
 - `image`: [Image](#image)

@@ -31,6 +31,8 @@ type annotations stubs module
   - [TlsPolicyType](#tlspolicytype)
   - [VerificationStatusType](#verificationstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## BehaviorOnMXFailureType
 
@@ -588,3 +590,27 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_ses.literals import PaginatorName
+```
+
+Values:
+
+- `list_configuration_sets`
+- `list_custom_verification_email_templates`
+- `list_identities`
+- `list_receipt_rule_sets`
+- `list_templates`
+
+## WaiterName
+
+```python
+from mypy_boto3_ses.literals import WaiterName
+```
+
+Values:
+
+- `identity_exists`

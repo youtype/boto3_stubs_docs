@@ -44,6 +44,7 @@ type annotations stubs module
   - [UserStatusTypeType](#userstatustypetype)
   - [UserTypeType](#usertypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ActivityTypeType
 
@@ -761,3 +762,21 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_workdocs.literals import PaginatorName
+```
+
+Values:
+
+- `describe_activities`
+- `describe_comments`
+- `describe_document_versions`
+- `describe_folder_contents`
+- `describe_groups`
+- `describe_notification_subscriptions`
+- `describe_resource_permissions`
+- `describe_root_folders`
+- `describe_users`

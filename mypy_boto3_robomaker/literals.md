@@ -40,6 +40,7 @@ type annotations stubs module
   - [WorldGenerationJobErrorCodeType](#worldgenerationjoberrorcodetype)
   - [WorldGenerationJobStatusType](#worldgenerationjobstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ArchitectureType
 
@@ -756,3 +757,23 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_robomaker.literals import PaginatorName
+```
+
+Values:
+
+- `list_deployment_jobs`
+- `list_fleets`
+- `list_robot_applications`
+- `list_robots`
+- `list_simulation_applications`
+- `list_simulation_job_batches`
+- `list_simulation_jobs`
+- `list_world_export_jobs`
+- `list_world_generation_jobs`
+- `list_world_templates`
+- `list_worlds`

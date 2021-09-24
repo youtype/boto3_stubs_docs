@@ -27,6 +27,7 @@ type annotations stubs module
   - [StreamOrderType](#streamordertype)
   - [UtcTimingType](#utctimingtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AdMarkersType
 
@@ -522,3 +523,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mediapackage.literals import PaginatorName
+```
+
+Values:
+
+- `list_channels`
+- `list_harvest_jobs`
+- `list_origin_endpoints`

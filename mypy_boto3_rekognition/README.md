@@ -188,6 +188,8 @@ from mypy_boto3_rekognition.literals import AttributeType, ...
 - [VideoColorRangeType](./literals.md#videocolorrangetype)
 - [VideoJobStatusType](./literals.md#videojobstatustype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

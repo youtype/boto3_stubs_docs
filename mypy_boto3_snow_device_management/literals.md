@@ -20,6 +20,7 @@ type annotations stubs module
   - [TaskStateType](#taskstatetype)
   - [UnlockStateType](#unlockstatetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AttachmentStatusType
 
@@ -441,3 +442,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_snow_device_management.literals import PaginatorName
+```
+
+Values:
+
+- `list_device_resources`
+- `list_devices`
+- `list_executions`
+- `list_tasks`

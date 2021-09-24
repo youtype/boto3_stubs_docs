@@ -20,6 +20,7 @@ type annotations stubs module
   - [ListRulesPaginatorName](#listrulespaginatorname)
   - [ReadinessType](#readinesstype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## GetCellReadinessSummaryPaginatorName
 
@@ -421,3 +422,22 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_route53_recovery_readiness.literals import PaginatorName
+```
+
+Values:
+
+- `get_cell_readiness_summary`
+- `get_readiness_check_resource_status`
+- `get_readiness_check_status`
+- `get_recovery_group_readiness_summary`
+- `list_cells`
+- `list_cross_account_authorizations`
+- `list_readiness_checks`
+- `list_recovery_groups`
+- `list_resource_sets`
+- `list_rules`

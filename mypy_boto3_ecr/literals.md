@@ -28,6 +28,8 @@ type annotations stubs module
   - [ScanStatusType](#scanstatustype)
   - [TagStatusType](#tagstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## DescribeImageScanFindingsPaginatorName
 
@@ -530,3 +532,28 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_ecr.literals import PaginatorName
+```
+
+Values:
+
+- `describe_image_scan_findings`
+- `describe_images`
+- `describe_repositories`
+- `get_lifecycle_policy_preview`
+- `list_images`
+
+## WaiterName
+
+```python
+from mypy_boto3_ecr.literals import WaiterName
+```
+
+Values:
+
+- `image_scan_complete`
+- `lifecycle_policy_preview_complete`

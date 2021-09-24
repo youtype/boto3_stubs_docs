@@ -46,6 +46,7 @@ type annotations stubs module
   - [UnauthorizedCacheControlHeaderStrategyType](#unauthorizedcachecontrolheaderstrategytype)
   - [VpcLinkStatusType](#vpclinkstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ApiKeySourceTypeType
 
@@ -776,3 +777,30 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_apigateway.literals import PaginatorName
+```
+
+Values:
+
+- `get_api_keys`
+- `get_authorizers`
+- `get_base_path_mappings`
+- `get_client_certificates`
+- `get_deployments`
+- `get_documentation_parts`
+- `get_documentation_versions`
+- `get_domain_names`
+- `get_gateway_responses`
+- `get_models`
+- `get_request_validators`
+- `get_resources`
+- `get_rest_apis`
+- `get_sdk_types`
+- `get_usage`
+- `get_usage_plan_keys`
+- `get_usage_plans`
+- `get_vpc_links`

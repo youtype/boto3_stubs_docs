@@ -140,6 +140,7 @@ from mypy_boto3_cloudtrail.literals import EventCategoryType, ...
 - [LookupEventsPaginatorName](./literals.md#lookupeventspaginatorname)
 - [ReadWriteTypeType](./literals.md#readwritetypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

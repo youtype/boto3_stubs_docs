@@ -16,6 +16,7 @@ type annotations stubs module
   - [ParallelDataStatusType](#paralleldatastatustype)
   - [TerminologyDataFormatType](#terminologydataformattype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## EncryptionKeyTypeType
 
@@ -387,3 +388,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_translate.literals import PaginatorName
+```
+
+Values:
+
+- `list_terminologies`

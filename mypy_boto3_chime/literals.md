@@ -54,6 +54,7 @@ type annotations stubs module
   - [UserTypeType](#usertypetype)
   - [VoiceConnectorAwsRegionType](#voiceconnectorawsregiontype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AccountStatusType
 
@@ -902,3 +903,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_chime.literals import PaginatorName
+```
+
+Values:
+
+- `list_accounts`
+- `list_users`

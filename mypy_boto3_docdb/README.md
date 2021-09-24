@@ -221,6 +221,8 @@ from mypy_boto3_docdb.literals import ApplyMethodType, ...
 - [DescribePendingMaintenanceActionsPaginatorName](./literals.md#describependingmaintenanceactionspaginatorname)
 - [SourceTypeType](./literals.md#sourcetypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

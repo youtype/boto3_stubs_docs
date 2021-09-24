@@ -23,6 +23,7 @@ type annotations stubs module
   - [SamplingStrategyNameType](#samplingstrategynametype)
   - [TimeRangeTypeType](#timerangetypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## BatchGetTracesPaginatorName
 
@@ -456,3 +457,20 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_xray.literals import PaginatorName
+```
+
+Values:
+
+- `batch_get_traces`
+- `get_groups`
+- `get_sampling_rules`
+- `get_sampling_statistic_summaries`
+- `get_service_graph`
+- `get_time_series_service_statistics`
+- `get_trace_graph`
+- `get_trace_summaries`

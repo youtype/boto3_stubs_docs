@@ -14,6 +14,7 @@ type annotations stubs module
   - [ListApplicationsPaginatorName](#listapplicationspaginatorname)
   - [StatusType](#statustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## CapabilityType
 
@@ -357,3 +358,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_serverlessrepo.literals import PaginatorName
+```
+
+Values:
+
+- `list_application_dependencies`
+- `list_application_versions`
+- `list_applications`

@@ -37,6 +37,7 @@ type annotations stubs module
   - [SplitType](#splittype)
   - [SyntaxLanguageCodeType](#syntaxlanguagecodetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AugmentedManifestsDocumentTypeFormatType
 
@@ -697,3 +698,20 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_comprehend.literals import PaginatorName
+```
+
+Values:
+
+- `list_document_classification_jobs`
+- `list_document_classifiers`
+- `list_dominant_language_detection_jobs`
+- `list_entities_detection_jobs`
+- `list_entity_recognizers`
+- `list_key_phrases_detection_jobs`
+- `list_sentiment_detection_jobs`
+- `list_topics_detection_jobs`

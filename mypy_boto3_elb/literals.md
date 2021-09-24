@@ -14,6 +14,8 @@ type annotations stubs module
   - [InstanceDeregisteredWaiterName](#instancederegisteredwaitername)
   - [InstanceInServiceWaiterName](#instanceinservicewaitername)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AnyInstanceInServiceWaiterName
 
@@ -352,3 +354,26 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_elb.literals import PaginatorName
+```
+
+Values:
+
+- `describe_account_limits`
+- `describe_load_balancers`
+
+## WaiterName
+
+```python
+from mypy_boto3_elb.literals import WaiterName
+```
+
+Values:
+
+- `any_instance_in_service`
+- `instance_deregistered`
+- `instance_in_service`

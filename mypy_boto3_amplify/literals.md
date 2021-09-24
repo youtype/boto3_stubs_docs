@@ -18,6 +18,7 @@ type annotations stubs module
   - [PlatformType](#platformtype)
   - [StageType](#stagetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DomainStatusType
 
@@ -416,3 +417,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_amplify.literals import PaginatorName
+```
+
+Values:
+
+- `list_apps`
+- `list_branches`
+- `list_domain_associations`
+- `list_jobs`

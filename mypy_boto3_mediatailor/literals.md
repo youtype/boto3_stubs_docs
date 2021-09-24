@@ -24,6 +24,7 @@ type annotations stubs module
   - [ScheduleEntryTypeType](#scheduleentrytypetype)
   - [TypeType](#typetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AccessTypeType
 
@@ -470,3 +471,18 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mediatailor.literals import PaginatorName
+```
+
+Values:
+
+- `get_channel_schedule`
+- `list_alerts`
+- `list_channels`
+- `list_playback_configurations`
+- `list_source_locations`
+- `list_vod_sources`

@@ -31,6 +31,7 @@ type annotations stubs module
   - [ReviewPolicyLevelType](#reviewpolicyleveltype)
   - [ReviewableHITStatusType](#reviewablehitstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AssignmentStatusType
 
@@ -580,3 +581,21 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mturk.literals import PaginatorName
+```
+
+Values:
+
+- `list_assignments_for_hit`
+- `list_bonus_payments`
+- `list_hits`
+- `list_hits_for_qualification_type`
+- `list_qualification_requests`
+- `list_qualification_types`
+- `list_reviewable_hits`
+- `list_worker_blocks`
+- `list_workers_with_qualification_type`

@@ -25,6 +25,8 @@ type annotations stubs module
   - [VaultExistsWaiterName](#vaultexistswaitername)
   - [VaultNotExistsWaiterName](#vaultnotexistswaitername)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## ActionCodeType
 
@@ -495,3 +497,27 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_glacier.literals import PaginatorName
+```
+
+Values:
+
+- `list_jobs`
+- `list_multipart_uploads`
+- `list_parts`
+- `list_vaults`
+
+## WaiterName
+
+```python
+from mypy_boto3_glacier.literals import WaiterName
+```
+
+Values:
+
+- `vault_exists`
+- `vault_not_exists`

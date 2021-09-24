@@ -21,6 +21,7 @@ type annotations stubs module
   - [eventStatusCodeType](#eventstatuscodetype)
   - [eventTypeCategoryType](#eventtypecategorytype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DescribeAffectedAccountsForOrganizationPaginatorName
 
@@ -438,3 +439,19 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_health.literals import PaginatorName
+```
+
+Values:
+
+- `describe_affected_accounts_for_organization`
+- `describe_affected_entities`
+- `describe_affected_entities_for_organization`
+- `describe_event_aggregates`
+- `describe_event_types`
+- `describe_events`
+- `describe_events_for_organization`

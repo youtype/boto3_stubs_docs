@@ -121,6 +121,7 @@ from mypy_boto3_mediatailor.literals import AccessTypeType, ...
 - [ScheduleEntryTypeType](./literals.md#scheduleentrytypetype)
 - [TypeType](./literals.md#typetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

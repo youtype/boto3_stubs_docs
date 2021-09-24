@@ -57,6 +57,8 @@ type annotations stubs module
   - [TraversalDirectionType](#traversaldirectiontype)
   - [TraversalTypeType](#traversaltypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AggregateTypeType
 
@@ -881,3 +883,40 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_iotsitewise.literals import PaginatorName
+```
+
+Values:
+
+- `get_asset_property_aggregates`
+- `get_asset_property_value_history`
+- `get_interpolated_asset_property_values`
+- `list_access_policies`
+- `list_asset_models`
+- `list_asset_relationships`
+- `list_assets`
+- `list_associated_assets`
+- `list_dashboards`
+- `list_gateways`
+- `list_portals`
+- `list_project_assets`
+- `list_projects`
+
+## WaiterName
+
+```python
+from mypy_boto3_iotsitewise.literals import WaiterName
+```
+
+Values:
+
+- `asset_active`
+- `asset_model_active`
+- `asset_model_not_exists`
+- `asset_not_exists`
+- `portal_active`
+- `portal_not_exists`

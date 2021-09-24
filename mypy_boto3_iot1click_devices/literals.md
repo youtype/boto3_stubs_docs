@@ -11,6 +11,7 @@ type annotations stubs module
   - [ListDeviceEventsPaginatorName](#listdeviceeventspaginatorname)
   - [ListDevicesPaginatorName](#listdevicespaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ListDeviceEventsPaginatorName
 
@@ -319,3 +320,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_iot1click_devices.literals import PaginatorName
+```
+
+Values:
+
+- `list_device_events`
+- `list_devices`

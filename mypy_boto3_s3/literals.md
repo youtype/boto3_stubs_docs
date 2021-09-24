@@ -73,6 +73,8 @@ type annotations stubs module
   - [TransitionStorageClassType](#transitionstorageclasstype)
   - [TypeType](#typetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AnalyticsS3ExportFileFormatType
 
@@ -1127,3 +1129,30 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_s3.literals import PaginatorName
+```
+
+Values:
+
+- `list_multipart_uploads`
+- `list_object_versions`
+- `list_objects`
+- `list_objects_v2`
+- `list_parts`
+
+## WaiterName
+
+```python
+from mypy_boto3_s3.literals import WaiterName
+```
+
+Values:
+
+- `bucket_exists`
+- `bucket_not_exists`
+- `object_exists`
+- `object_not_exists`

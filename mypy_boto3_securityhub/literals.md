@@ -43,6 +43,7 @@ type annotations stubs module
   - [WorkflowStateType](#workflowstatetype)
   - [WorkflowStatusType](#workflowstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AdminStatusType
 
@@ -741,3 +742,23 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_securityhub.literals import PaginatorName
+```
+
+Values:
+
+- `describe_action_targets`
+- `describe_products`
+- `describe_standards`
+- `describe_standards_controls`
+- `get_enabled_standards`
+- `get_findings`
+- `get_insights`
+- `list_enabled_products_for_import`
+- `list_invitations`
+- `list_members`
+- `list_organization_admin_accounts`

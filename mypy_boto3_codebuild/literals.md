@@ -58,6 +58,7 @@ type annotations stubs module
   - [WebhookBuildTypeType](#webhookbuildtypetype)
   - [WebhookFilterTypeType](#webhookfiltertypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ArtifactNamespaceType
 
@@ -931,3 +932,24 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_codebuild.literals import PaginatorName
+```
+
+Values:
+
+- `describe_code_coverages`
+- `describe_test_cases`
+- `list_build_batches`
+- `list_build_batches_for_project`
+- `list_builds`
+- `list_builds_for_project`
+- `list_projects`
+- `list_report_groups`
+- `list_reports`
+- `list_reports_for_report_group`
+- `list_shared_projects`
+- `list_shared_report_groups`

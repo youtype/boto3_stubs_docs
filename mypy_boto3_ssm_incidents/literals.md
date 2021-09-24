@@ -24,6 +24,8 @@ type annotations stubs module
   - [WaitForReplicationSetActiveWaiterName](#waitforreplicationsetactivewaitername)
   - [WaitForReplicationSetDeletedWaiterName](#waitforreplicationsetdeletedwaitername)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## GetResourcePoliciesPaginatorName
 
@@ -477,3 +479,29 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_ssm_incidents.literals import PaginatorName
+```
+
+Values:
+
+- `get_resource_policies`
+- `list_incident_records`
+- `list_related_items`
+- `list_replication_sets`
+- `list_response_plans`
+- `list_timeline_events`
+
+## WaiterName
+
+```python
+from mypy_boto3_ssm_incidents.literals import WaiterName
+```
+
+Values:
+
+- `wait_for_replication_set_active`
+- `wait_for_replication_set_deleted`

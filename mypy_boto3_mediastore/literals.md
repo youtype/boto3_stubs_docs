@@ -13,6 +13,7 @@ type annotations stubs module
   - [ListContainersPaginatorName](#listcontainerspaginatorname)
   - [MethodNameType](#methodnametype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ContainerLevelMetricsType
 
@@ -347,3 +348,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mediastore.literals import PaginatorName
+```
+
+Values:
+
+- `list_containers`

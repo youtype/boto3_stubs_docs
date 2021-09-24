@@ -19,6 +19,7 @@ type annotations stubs module
   - [StateMachineTypeType](#statemachinetypetype)
   - [SyncExecutionStatusType](#syncexecutionstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ExecutionStatusType
 
@@ -472,3 +473,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_stepfunctions.literals import PaginatorName
+```
+
+Values:
+
+- `get_execution_history`
+- `list_activities`
+- `list_executions`
+- `list_state_machines`

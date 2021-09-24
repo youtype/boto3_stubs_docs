@@ -16258,6 +16258,9 @@ Optional fields:
 - `EnclaveOptions`:
   [EnclaveOptionsTypeDef](./type_defs.md#enclaveoptionstypedef)
 - `BootMode`: [BootModeValuesType](./literals.md#bootmodevaluestype)
+- `PlatformDetails`: `str`
+- `UsageOperation`: `str`
+- `UsageOperationUpdateTime`: `datetime`
 
 ## InstanceTypeInfoTypeDef
 

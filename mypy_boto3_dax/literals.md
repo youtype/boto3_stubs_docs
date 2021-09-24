@@ -22,6 +22,7 @@ type annotations stubs module
   - [SSEStatusType](#ssestatustype)
   - [SourceTypeType](#sourcetypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ChangeTypeType
 
@@ -450,3 +451,19 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_dax.literals import PaginatorName
+```
+
+Values:
+
+- `describe_clusters`
+- `describe_default_parameters`
+- `describe_events`
+- `describe_parameter_groups`
+- `describe_parameters`
+- `describe_subnet_groups`
+- `list_tags`

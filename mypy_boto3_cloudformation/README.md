@@ -299,6 +299,8 @@ from mypy_boto3_cloudformation.literals import AccountGateStatusType, ...
 - [VersionBumpType](./literals.md#versionbumptype)
 - [VisibilityType](./literals.md#visibilitytype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

@@ -13,6 +13,7 @@ type annotations stubs module
   - [StorageClassType](#storageclasstype)
   - [UploadAvailabilityType](#uploadavailabilitytype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ItemTypeType
 
@@ -343,3 +344,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mediastore_data.literals import PaginatorName
+```
+
+Values:
+
+- `list_items`

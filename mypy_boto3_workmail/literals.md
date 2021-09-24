@@ -27,6 +27,7 @@ type annotations stubs module
   - [RetentionActionType](#retentionactiontype)
   - [UserRoleType](#userroletype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AccessControlRuleEffectType
 
@@ -514,3 +515,20 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_workmail.literals import PaginatorName
+```
+
+Values:
+
+- `list_aliases`
+- `list_group_members`
+- `list_groups`
+- `list_mailbox_permissions`
+- `list_organizations`
+- `list_resource_delegates`
+- `list_resources`
+- `list_users`

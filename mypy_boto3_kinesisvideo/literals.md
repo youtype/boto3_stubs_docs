@@ -18,6 +18,7 @@ type annotations stubs module
   - [StatusType](#statustype)
   - [UpdateDataRetentionOperationType](#updatedataretentionoperationtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## APINameType
 
@@ -408,3 +409,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_kinesisvideo.literals import PaginatorName
+```
+
+Values:
+
+- `list_signaling_channels`
+- `list_streams`

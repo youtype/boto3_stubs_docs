@@ -245,6 +245,8 @@ type annotations stubs module
   - [UserProfileStatusType](#userprofilestatustype)
   - [VariantPropertyTypeType](#variantpropertytypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## ActionStatusType
 
@@ -3599,3 +3601,88 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_sagemaker.literals import PaginatorName
+```
+
+Values:
+
+- `list_actions`
+- `list_algorithms`
+- `list_app_image_configs`
+- `list_apps`
+- `list_artifacts`
+- `list_associations`
+- `list_auto_ml_jobs`
+- `list_candidates_for_auto_ml_job`
+- `list_code_repositories`
+- `list_compilation_jobs`
+- `list_contexts`
+- `list_data_quality_job_definitions`
+- `list_device_fleets`
+- `list_devices`
+- `list_domains`
+- `list_edge_packaging_jobs`
+- `list_endpoint_configs`
+- `list_endpoints`
+- `list_experiments`
+- `list_feature_groups`
+- `list_flow_definitions`
+- `list_human_task_uis`
+- `list_hyper_parameter_tuning_jobs`
+- `list_image_versions`
+- `list_images`
+- `list_labeling_jobs`
+- `list_labeling_jobs_for_workteam`
+- `list_model_bias_job_definitions`
+- `list_model_explainability_job_definitions`
+- `list_model_package_groups`
+- `list_model_packages`
+- `list_model_quality_job_definitions`
+- `list_models`
+- `list_monitoring_executions`
+- `list_monitoring_schedules`
+- `list_notebook_instance_lifecycle_configs`
+- `list_notebook_instances`
+- `list_pipeline_execution_steps`
+- `list_pipeline_executions`
+- `list_pipeline_parameters_for_execution`
+- `list_pipelines`
+- `list_processing_jobs`
+- `list_studio_lifecycle_configs`
+- `list_subscribed_workteams`
+- `list_tags`
+- `list_training_jobs`
+- `list_training_jobs_for_hyper_parameter_tuning_job`
+- `list_transform_jobs`
+- `list_trial_components`
+- `list_trials`
+- `list_user_profiles`
+- `list_workforces`
+- `list_workteams`
+- `search`
+
+## WaiterName
+
+```python
+from mypy_boto3_sagemaker.literals import WaiterName
+```
+
+Values:
+
+- `endpoint_deleted`
+- `endpoint_in_service`
+- `image_created`
+- `image_deleted`
+- `image_updated`
+- `image_version_created`
+- `image_version_deleted`
+- `notebook_instance_deleted`
+- `notebook_instance_in_service`
+- `notebook_instance_stopped`
+- `processing_job_completed_or_stopped`
+- `training_job_completed_or_stopped`
+- `transform_job_completed_or_stopped`

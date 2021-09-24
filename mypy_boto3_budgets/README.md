@@ -123,6 +123,7 @@ from mypy_boto3_budgets.literals import ActionStatusType, ...
 - [ThresholdTypeType](./literals.md#thresholdtypetype)
 - [TimeUnitType](./literals.md#timeunittype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

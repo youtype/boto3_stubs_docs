@@ -11,6 +11,7 @@ type annotations stubs module
   - [ApplicationStateType](#applicationstatetype)
   - [ListApplicationsPaginatorName](#listapplicationspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ApplicationStateType
 
@@ -323,3 +324,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_iotfleethub.literals import PaginatorName
+```
+
+Values:
+
+- `list_applications`

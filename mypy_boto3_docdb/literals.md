@@ -26,6 +26,8 @@ type annotations stubs module
   - [DescribePendingMaintenanceActionsPaginatorName](#describependingmaintenanceactionspaginatorname)
   - [SourceTypeType](#sourcetypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## ApplyMethodType
 
@@ -490,3 +492,36 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_docdb.literals import PaginatorName
+```
+
+Values:
+
+- `describe_certificates`
+- `describe_db_cluster_parameter_groups`
+- `describe_db_cluster_parameters`
+- `describe_db_cluster_snapshots`
+- `describe_db_clusters`
+- `describe_db_engine_versions`
+- `describe_db_instances`
+- `describe_db_subnet_groups`
+- `describe_event_subscriptions`
+- `describe_events`
+- `describe_global_clusters`
+- `describe_orderable_db_instance_options`
+- `describe_pending_maintenance_actions`
+
+## WaiterName
+
+```python
+from mypy_boto3_docdb.literals import WaiterName
+```
+
+Values:
+
+- `db_instance_available`
+- `db_instance_deleted`

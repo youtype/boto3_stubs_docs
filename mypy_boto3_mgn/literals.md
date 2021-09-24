@@ -31,6 +31,7 @@ type annotations stubs module
   - [ReplicationConfigurationReplicatedDiskStagingDiskTypeType](#replicationconfigurationreplicateddiskstagingdisktypetype)
   - [TargetInstanceTypeRightSizingMethodType](#targetinstancetyperightsizingmethodtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ChangeServerLifeCycleStateSourceServerLifecycleStateType
 
@@ -622,3 +623,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mgn.literals import PaginatorName
+```
+
+Values:
+
+- `describe_job_log_items`
+- `describe_jobs`
+- `describe_replication_configuration_templates`
+- `describe_source_servers`

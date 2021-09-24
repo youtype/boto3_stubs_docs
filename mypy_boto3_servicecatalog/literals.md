@@ -59,6 +59,7 @@ type annotations stubs module
   - [StackSetOperationTypeType](#stacksetoperationtypetype)
   - [StatusType](#statustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AccessLevelFilterKeyType
 
@@ -913,3 +914,28 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_servicecatalog.literals import PaginatorName
+```
+
+Values:
+
+- `list_accepted_portfolio_shares`
+- `list_constraints_for_portfolio`
+- `list_launch_paths`
+- `list_organization_portfolio_access`
+- `list_portfolios`
+- `list_portfolios_for_product`
+- `list_principals_for_portfolio`
+- `list_provisioned_product_plans`
+- `list_provisioning_artifacts_for_service_action`
+- `list_record_history`
+- `list_resources_for_tag_option`
+- `list_service_actions`
+- `list_service_actions_for_provisioning_artifact`
+- `list_tag_options`
+- `scan_provisioned_products`
+- `search_products_as_admin`

@@ -29,6 +29,7 @@ type annotations stubs module
   - [ThresholdTypeType](#thresholdtypetype)
   - [TimeUnitType](#timeunittype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ActionStatusType
 
@@ -551,3 +552,19 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_budgets.literals import PaginatorName
+```
+
+Values:
+
+- `describe_budget_action_histories`
+- `describe_budget_actions_for_account`
+- `describe_budget_actions_for_budget`
+- `describe_budget_performance_history`
+- `describe_budgets`
+- `describe_notifications_for_budget`
+- `describe_subscribers_for_notification`

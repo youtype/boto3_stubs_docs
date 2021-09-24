@@ -26,6 +26,7 @@ type annotations stubs module
   - [ReplayStateType](#replaystatetype)
   - [RuleStateType](#rulestatetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ApiDestinationHttpMethodType
 
@@ -520,3 +521,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_events.literals import PaginatorName
+```
+
+Values:
+
+- `list_rule_names_by_target`
+- `list_rules`
+- `list_targets_by_rule`

@@ -23,6 +23,7 @@ type annotations stubs module
   - [LoggingLevelType](#loggingleveltype)
   - [ReprocessingStatusType](#reprocessingstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ChannelStatusType
 
@@ -465,3 +466,17 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_iotanalytics.literals import PaginatorName
+```
+
+Values:
+
+- `list_channels`
+- `list_dataset_contents`
+- `list_datasets`
+- `list_datastores`
+- `list_pipelines`

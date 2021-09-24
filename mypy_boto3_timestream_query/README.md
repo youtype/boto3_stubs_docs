@@ -79,6 +79,7 @@ from mypy_boto3_timestream_query.literals import QueryPaginatorName, ...
 - [QueryPaginatorName](./literals.md#querypaginatorname)
 - [ScalarTypeType](./literals.md#scalartypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

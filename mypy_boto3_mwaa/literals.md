@@ -15,6 +15,7 @@ type annotations stubs module
   - [UpdateStatusType](#updatestatustype)
   - [WebserverAccessModeType](#webserveraccessmodetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## EnvironmentStatusType
 
@@ -403,3 +404,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mwaa.literals import PaginatorName
+```
+
+Values:
+
+- `list_environments`

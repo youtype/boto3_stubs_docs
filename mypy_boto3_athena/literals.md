@@ -22,6 +22,7 @@ type annotations stubs module
   - [StatementTypeType](#statementtypetype)
   - [WorkGroupStateType](#workgroupstatetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ColumnNullableType
 
@@ -453,3 +454,19 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_athena.literals import PaginatorName
+```
+
+Values:
+
+- `get_query_results`
+- `list_data_catalogs`
+- `list_databases`
+- `list_named_queries`
+- `list_query_executions`
+- `list_table_metadata`
+- `list_tags_for_resource`

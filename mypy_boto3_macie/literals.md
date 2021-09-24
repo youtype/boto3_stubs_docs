@@ -13,6 +13,7 @@ type annotations stubs module
   - [S3ContinuousClassificationTypeType](#s3continuousclassificationtypetype)
   - [S3OneTimeClassificationTypeType](#s3onetimeclassificationtypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ListMemberAccountsPaginatorName
 
@@ -342,3 +343,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_macie.literals import PaginatorName
+```
+
+Values:
+
+- `list_member_accounts`
+- `list_s3_resources`

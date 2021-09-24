@@ -99,6 +99,7 @@ from mypy_boto3_codestar_notifications.literals import DetailTypeType, ...
 - [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
 - [TargetStatusType](./literals.md#targetstatustype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

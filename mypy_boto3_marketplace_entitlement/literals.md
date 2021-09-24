@@ -11,6 +11,7 @@ type annotations stubs module
   - [GetEntitlementFilterNameType](#getentitlementfilternametype)
   - [GetEntitlementsPaginatorName](#getentitlementspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## GetEntitlementFilterNameType
 
@@ -320,3 +321,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_marketplace_entitlement.literals import PaginatorName
+```
+
+Values:
+
+- `get_entitlements`

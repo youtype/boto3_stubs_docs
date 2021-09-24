@@ -31,6 +31,7 @@ type annotations stubs module
   - [SessionStatusType](#sessionstatustype)
   - [SourceType](#sourcetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## CompressionFormatType
 
@@ -583,3 +584,19 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_databrew.literals import PaginatorName
+```
+
+Values:
+
+- `list_datasets`
+- `list_job_runs`
+- `list_jobs`
+- `list_projects`
+- `list_recipe_versions`
+- `list_recipes`
+- `list_schedules`

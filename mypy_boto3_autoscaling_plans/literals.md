@@ -23,6 +23,7 @@ type annotations stubs module
   - [ScalingStatusCodeType](#scalingstatuscodetype)
   - [ServiceNamespaceType](#servicenamespacetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DescribeScalingPlanResourcesPaginatorName
 
@@ -497,3 +498,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_autoscaling_plans.literals import PaginatorName
+```
+
+Values:
+
+- `describe_scaling_plan_resources`
+- `describe_scaling_plans`

@@ -27,6 +27,7 @@ type annotations stubs module
   - [TransitGatewayConnectPeerAssociationStateType](#transitgatewayconnectpeerassociationstatetype)
   - [TransitGatewayRegistrationStateType](#transitgatewayregistrationstatetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ConnectionStateType
 
@@ -523,3 +524,21 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_networkmanager.literals import PaginatorName
+```
+
+Values:
+
+- `describe_global_networks`
+- `get_connections`
+- `get_customer_gateway_associations`
+- `get_devices`
+- `get_link_associations`
+- `get_links`
+- `get_sites`
+- `get_transit_gateway_connect_peer_associations`
+- `get_transit_gateway_registrations`

@@ -375,6 +375,8 @@ type annotations stubs module
   - [WeekDayType](#weekdaytype)
   - [scopeType](#scopetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AccountAttributeNameType
 
@@ -5325,3 +5327,157 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_ec2.literals import PaginatorName
+```
+
+Values:
+
+- `describe_addresses_attribute`
+- `describe_byoip_cidrs`
+- `describe_capacity_reservations`
+- `describe_carrier_gateways`
+- `describe_classic_link_instances`
+- `describe_client_vpn_authorization_rules`
+- `describe_client_vpn_connections`
+- `describe_client_vpn_endpoints`
+- `describe_client_vpn_routes`
+- `describe_client_vpn_target_networks`
+- `describe_coip_pools`
+- `describe_dhcp_options`
+- `describe_egress_only_internet_gateways`
+- `describe_export_image_tasks`
+- `describe_fast_snapshot_restores`
+- `describe_fleets`
+- `describe_flow_logs`
+- `describe_fpga_images`
+- `describe_host_reservation_offerings`
+- `describe_host_reservations`
+- `describe_hosts`
+- `describe_iam_instance_profile_associations`
+- `describe_import_image_tasks`
+- `describe_import_snapshot_tasks`
+- `describe_instance_credit_specifications`
+- `describe_instance_event_windows`
+- `describe_instance_status`
+- `describe_instance_type_offerings`
+- `describe_instance_types`
+- `describe_instances`
+- `describe_internet_gateways`
+- `describe_ipv6_pools`
+- `describe_launch_template_versions`
+- `describe_launch_templates`
+- `describe_local_gateway_route_table_virtual_interface_group_associations`
+- `describe_local_gateway_route_table_vpc_associations`
+- `describe_local_gateway_route_tables`
+- `describe_local_gateway_virtual_interface_groups`
+- `describe_local_gateway_virtual_interfaces`
+- `describe_local_gateways`
+- `describe_managed_prefix_lists`
+- `describe_moving_addresses`
+- `describe_nat_gateways`
+- `describe_network_acls`
+- `describe_network_insights_analyses`
+- `describe_network_insights_paths`
+- `describe_network_interface_permissions`
+- `describe_network_interfaces`
+- `describe_prefix_lists`
+- `describe_principal_id_format`
+- `describe_public_ipv4_pools`
+- `describe_replace_root_volume_tasks`
+- `describe_reserved_instances_modifications`
+- `describe_reserved_instances_offerings`
+- `describe_route_tables`
+- `describe_scheduled_instance_availability`
+- `describe_scheduled_instances`
+- `describe_security_group_rules`
+- `describe_security_groups`
+- `describe_snapshots`
+- `describe_spot_fleet_instances`
+- `describe_spot_fleet_requests`
+- `describe_spot_instance_requests`
+- `describe_spot_price_history`
+- `describe_stale_security_groups`
+- `describe_store_image_tasks`
+- `describe_subnets`
+- `describe_tags`
+- `describe_traffic_mirror_filters`
+- `describe_traffic_mirror_sessions`
+- `describe_traffic_mirror_targets`
+- `describe_transit_gateway_attachments`
+- `describe_transit_gateway_connect_peers`
+- `describe_transit_gateway_connects`
+- `describe_transit_gateway_multicast_domains`
+- `describe_transit_gateway_peering_attachments`
+- `describe_transit_gateway_route_tables`
+- `describe_transit_gateway_vpc_attachments`
+- `describe_transit_gateways`
+- `describe_trunk_interface_associations`
+- `describe_volume_status`
+- `describe_volumes`
+- `describe_volumes_modifications`
+- `describe_vpc_classic_link_dns_support`
+- `describe_vpc_endpoint_connection_notifications`
+- `describe_vpc_endpoint_connections`
+- `describe_vpc_endpoint_service_configurations`
+- `describe_vpc_endpoint_service_permissions`
+- `describe_vpc_endpoint_services`
+- `describe_vpc_endpoints`
+- `describe_vpc_peering_connections`
+- `describe_vpcs`
+- `get_associated_ipv6_pool_cidrs`
+- `get_groups_for_capacity_reservation`
+- `get_managed_prefix_list_associations`
+- `get_managed_prefix_list_entries`
+- `get_transit_gateway_attachment_propagations`
+- `get_transit_gateway_multicast_domain_associations`
+- `get_transit_gateway_prefix_list_references`
+- `get_transit_gateway_route_table_associations`
+- `get_transit_gateway_route_table_propagations`
+- `get_vpn_connection_device_types`
+- `search_local_gateway_routes`
+- `search_transit_gateway_multicast_groups`
+
+## WaiterName
+
+```python
+from mypy_boto3_ec2.literals import WaiterName
+```
+
+Values:
+
+- `bundle_task_complete`
+- `conversion_task_cancelled`
+- `conversion_task_completed`
+- `conversion_task_deleted`
+- `customer_gateway_available`
+- `export_task_cancelled`
+- `export_task_completed`
+- `image_available`
+- `image_exists`
+- `instance_exists`
+- `instance_running`
+- `instance_status_ok`
+- `instance_stopped`
+- `instance_terminated`
+- `key_pair_exists`
+- `nat_gateway_available`
+- `network_interface_available`
+- `password_data_available`
+- `security_group_exists`
+- `snapshot_completed`
+- `spot_instance_request_fulfilled`
+- `subnet_available`
+- `system_status_ok`
+- `volume_available`
+- `volume_deleted`
+- `volume_in_use`
+- `vpc_available`
+- `vpc_exists`
+- `vpc_peering_connection_deleted`
+- `vpc_peering_connection_exists`
+- `vpn_connection_available`
+- `vpn_connection_deleted`

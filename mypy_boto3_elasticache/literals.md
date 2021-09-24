@@ -51,6 +51,8 @@ type annotations stubs module
   - [SourceTypeType](#sourcetypetype)
   - [UpdateActionStatusType](#updateactionstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AZModeType
 
@@ -804,3 +806,42 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_elasticache.literals import PaginatorName
+```
+
+Values:
+
+- `describe_cache_clusters`
+- `describe_cache_engine_versions`
+- `describe_cache_parameter_groups`
+- `describe_cache_parameters`
+- `describe_cache_security_groups`
+- `describe_cache_subnet_groups`
+- `describe_engine_default_parameters`
+- `describe_events`
+- `describe_global_replication_groups`
+- `describe_replication_groups`
+- `describe_reserved_cache_nodes`
+- `describe_reserved_cache_nodes_offerings`
+- `describe_service_updates`
+- `describe_snapshots`
+- `describe_update_actions`
+- `describe_user_groups`
+- `describe_users`
+
+## WaiterName
+
+```python
+from mypy_boto3_elasticache.literals import WaiterName
+```
+
+Values:
+
+- `cache_cluster_available`
+- `cache_cluster_deleted`
+- `replication_group_available`
+- `replication_group_deleted`

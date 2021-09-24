@@ -63,6 +63,7 @@ type annotations stubs module
   - [UsageTypeType](#usagetypetype)
   - [UserIdentityTypeType](#useridentitytypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AdminStatusType
 
@@ -1009,3 +1010,22 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_macie2.literals import PaginatorName
+```
+
+Values:
+
+- `describe_buckets`
+- `get_usage_statistics`
+- `list_classification_jobs`
+- `list_custom_data_identifiers`
+- `list_findings`
+- `list_findings_filters`
+- `list_invitations`
+- `list_members`
+- `list_organization_admin_accounts`
+- `search_resources`

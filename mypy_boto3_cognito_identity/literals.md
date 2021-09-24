@@ -14,6 +14,7 @@ type annotations stubs module
   - [MappingRuleMatchTypeType](#mappingrulematchtypetype)
   - [RoleMappingTypeType](#rolemappingtypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AmbiguousRoleResolutionTypeType
 
@@ -358,3 +359,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_cognito_identity.literals import PaginatorName
+```
+
+Values:
+
+- `list_identity_pools`

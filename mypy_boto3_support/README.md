@@ -92,6 +92,7 @@ from mypy_boto3_support.literals import DescribeCasesPaginatorName, ...
 - [DescribeCasesPaginatorName](./literals.md#describecasespaginatorname)
 - [DescribeCommunicationsPaginatorName](./literals.md#describecommunicationspaginatorname)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

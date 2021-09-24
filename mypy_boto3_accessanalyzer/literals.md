@@ -35,6 +35,7 @@ type annotations stubs module
   - [ValidatePolicyFindingTypeType](#validatepolicyfindingtypetype)
   - [ValidatePolicyPaginatorName](#validatepolicypaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AccessPreviewStatusReasonCodeType
 
@@ -644,3 +645,20 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_accessanalyzer.literals import PaginatorName
+```
+
+Values:
+
+- `list_access_preview_findings`
+- `list_access_previews`
+- `list_analyzed_resources`
+- `list_analyzers`
+- `list_archive_rules`
+- `list_findings`
+- `list_policy_generations`
+- `validate_policy`

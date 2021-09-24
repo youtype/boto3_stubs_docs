@@ -114,6 +114,8 @@ from mypy_boto3_elastictranscoder.literals import JobCompleteWaiterName, ...
 - [ListPipelinesPaginatorName](./literals.md#listpipelinespaginatorname)
 - [ListPresetsPaginatorName](./literals.md#listpresetspaginatorname)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

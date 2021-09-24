@@ -33,6 +33,8 @@ type annotations stubs module
   - [TargetInServiceWaiterName](#targetinservicewaitername)
   - [TargetTypeEnumType](#targettypeenumtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## ActionTypeEnumType
 
@@ -601,3 +603,33 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_elbv2.literals import PaginatorName
+```
+
+Values:
+
+- `describe_account_limits`
+- `describe_listener_certificates`
+- `describe_listeners`
+- `describe_load_balancers`
+- `describe_rules`
+- `describe_ssl_policies`
+- `describe_target_groups`
+
+## WaiterName
+
+```python
+from mypy_boto3_elbv2.literals import WaiterName
+```
+
+Values:
+
+- `load_balancer_available`
+- `load_balancer_exists`
+- `load_balancers_deleted`
+- `target_deregistered`
+- `target_in_service`

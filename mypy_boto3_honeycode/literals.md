@@ -18,6 +18,7 @@ type annotations stubs module
   - [TableDataImportJobStatusType](#tabledataimportjobstatustype)
   - [UpsertActionType](#upsertactiontype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## FormatType
 
@@ -415,3 +416,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_honeycode.literals import PaginatorName
+```
+
+Values:
+
+- `list_table_columns`
+- `list_table_rows`
+- `list_tables`
+- `query_table_rows`

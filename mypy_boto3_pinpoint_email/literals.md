@@ -24,6 +24,7 @@ type annotations stubs module
   - [TlsPolicyType](#tlspolicytype)
   - [WarmupStatusType](#warmupstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## BehaviorOnMxFailureType
 
@@ -486,3 +487,17 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_pinpoint_email.literals import PaginatorName
+```
+
+Values:
+
+- `get_dedicated_ips`
+- `list_configuration_sets`
+- `list_dedicated_ip_pools`
+- `list_deliverability_test_reports`
+- `list_email_identities`

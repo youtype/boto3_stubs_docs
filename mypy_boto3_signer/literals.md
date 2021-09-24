@@ -20,6 +20,8 @@ type annotations stubs module
   - [SuccessfulSigningJobWaiterName](#successfulsigningjobwaitername)
   - [ValidityTypeType](#validitytypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## CategoryType
 
@@ -428,3 +430,25 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_signer.literals import PaginatorName
+```
+
+Values:
+
+- `list_signing_jobs`
+- `list_signing_platforms`
+- `list_signing_profiles`
+
+## WaiterName
+
+```python
+from mypy_boto3_signer.literals import WaiterName
+```
+
+Values:
+
+- `successful_signing_job`

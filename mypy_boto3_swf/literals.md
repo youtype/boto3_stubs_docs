@@ -42,6 +42,7 @@ type annotations stubs module
   - [WorkflowExecutionTerminatedCauseType](#workflowexecutionterminatedcausetype)
   - [WorkflowExecutionTimeoutTypeType](#workflowexecutiontimeouttypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ActivityTaskTimeoutTypeType
 
@@ -782,3 +783,19 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_swf.literals import PaginatorName
+```
+
+Values:
+
+- `get_workflow_execution_history`
+- `list_activity_types`
+- `list_closed_workflow_executions`
+- `list_domains`
+- `list_open_workflow_executions`
+- `list_workflow_types`
+- `poll_for_decision_task`

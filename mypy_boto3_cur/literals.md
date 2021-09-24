@@ -17,6 +17,7 @@ type annotations stubs module
   - [SchemaElementType](#schemaelementtype)
   - [TimeUnitType](#timeunittype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AWSRegionType
 
@@ -415,3 +416,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_cur.literals import PaginatorName
+```
+
+Values:
+
+- `describe_report_definitions`

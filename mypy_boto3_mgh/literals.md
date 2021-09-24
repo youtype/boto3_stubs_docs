@@ -17,6 +17,7 @@ type annotations stubs module
   - [ResourceAttributeTypeType](#resourceattributetypetype)
   - [StatusType](#statustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ApplicationStatusType
 
@@ -399,3 +400,17 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_mgh.literals import PaginatorName
+```
+
+Values:
+
+- `list_application_states`
+- `list_created_artifacts`
+- `list_discovered_resources`
+- `list_migration_tasks`
+- `list_progress_update_streams`

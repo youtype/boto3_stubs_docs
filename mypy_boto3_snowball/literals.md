@@ -27,6 +27,7 @@ type annotations stubs module
   - [StorageUnitType](#storageunittype)
   - [TransferOptionType](#transferoptiontype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ClusterStateType
 
@@ -538,3 +539,17 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_snowball.literals import PaginatorName
+```
+
+Values:
+
+- `describe_addresses`
+- `list_cluster_jobs`
+- `list_clusters`
+- `list_compatible_images`
+- `list_jobs`

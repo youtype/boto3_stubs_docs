@@ -114,6 +114,7 @@ from mypy_boto3_route53domains.literals import ContactTypeType, ...
 - [TransferableType](./literals.md#transferabletype)
 - [ViewBillingPaginatorName](./literals.md#viewbillingpaginatorname)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

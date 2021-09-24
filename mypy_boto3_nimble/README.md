@@ -158,6 +158,7 @@ from mypy_boto3_nimble.literals import LaunchProfilePersonaType, ...
 - [StudioStateType](./literals.md#studiostatetype)
 - [StudioStatusCodeType](./literals.md#studiostatuscodetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

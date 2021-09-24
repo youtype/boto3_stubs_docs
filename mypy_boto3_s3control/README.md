@@ -165,6 +165,7 @@ from mypy_boto3_s3control.literals import AsyncOperationNameType, ...
 - [S3StorageClassType](./literals.md#s3storageclasstype)
 - [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

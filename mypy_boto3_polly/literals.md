@@ -20,6 +20,7 @@ type annotations stubs module
   - [TextTypeType](#texttypetype)
   - [VoiceIdType](#voiceidtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DescribeVoicesPaginatorName
 
@@ -524,3 +525,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_polly.literals import PaginatorName
+```
+
+Values:
+
+- `describe_voices`
+- `list_lexicons`
+- `list_speech_synthesis_tasks`

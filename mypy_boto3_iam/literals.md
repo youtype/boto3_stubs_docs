@@ -60,6 +60,8 @@ type annotations stubs module
   - [statusTypeType](#statustypetype)
   - [summaryKeyTypeType](#summarykeytypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AccessAdvisorUsageGranularityTypeType
 
@@ -928,3 +930,52 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_iam.literals import PaginatorName
+```
+
+Values:
+
+- `get_account_authorization_details`
+- `get_group`
+- `list_access_keys`
+- `list_account_aliases`
+- `list_attached_group_policies`
+- `list_attached_role_policies`
+- `list_attached_user_policies`
+- `list_entities_for_policy`
+- `list_group_policies`
+- `list_groups`
+- `list_groups_for_user`
+- `list_instance_profiles`
+- `list_instance_profiles_for_role`
+- `list_mfa_devices`
+- `list_policies`
+- `list_policy_versions`
+- `list_role_policies`
+- `list_roles`
+- `list_server_certificates`
+- `list_signing_certificates`
+- `list_ssh_public_keys`
+- `list_user_policies`
+- `list_user_tags`
+- `list_users`
+- `list_virtual_mfa_devices`
+- `simulate_custom_policy`
+- `simulate_principal_policy`
+
+## WaiterName
+
+```python
+from mypy_boto3_iam.literals import WaiterName
+```
+
+Values:
+
+- `instance_profile_exists`
+- `policy_exists`
+- `role_exists`
+- `user_exists`

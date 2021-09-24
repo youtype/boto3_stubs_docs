@@ -280,6 +280,8 @@ type annotations stubs module
   - [WavCodingModeType](#wavcodingmodetype)
   - [WebvttDestinationStyleControlType](#webvttdestinationstylecontroltype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AacCodingModeType
 
@@ -3737,3 +3739,42 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_medialive.literals import PaginatorName
+```
+
+Values:
+
+- `describe_schedule`
+- `list_channels`
+- `list_input_device_transfers`
+- `list_input_devices`
+- `list_input_security_groups`
+- `list_inputs`
+- `list_multiplex_programs`
+- `list_multiplexes`
+- `list_offerings`
+- `list_reservations`
+
+## WaiterName
+
+```python
+from mypy_boto3_medialive.literals import WaiterName
+```
+
+Values:
+
+- `channel_created`
+- `channel_deleted`
+- `channel_running`
+- `channel_stopped`
+- `input_attached`
+- `input_deleted`
+- `input_detached`
+- `multiplex_created`
+- `multiplex_deleted`
+- `multiplex_running`
+- `multiplex_stopped`

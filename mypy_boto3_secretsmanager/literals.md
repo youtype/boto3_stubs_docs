@@ -13,6 +13,7 @@ type annotations stubs module
   - [SortOrderTypeType](#sortordertypetype)
   - [StatusTypeType](#statustypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## FilterNameStringTypeType
 
@@ -349,3 +350,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_secretsmanager.literals import PaginatorName
+```
+
+Values:
+
+- `list_secrets`

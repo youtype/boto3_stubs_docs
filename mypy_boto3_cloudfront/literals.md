@@ -41,6 +41,8 @@ type annotations stubs module
   - [StreamingDistributionDeployedWaiterName](#streamingdistributiondeployedwaitername)
   - [ViewerProtocolPolicyType](#viewerprotocolpolicytype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## CachePolicyCookieBehaviorType
 
@@ -702,3 +704,28 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_cloudfront.literals import PaginatorName
+```
+
+Values:
+
+- `list_cloud_front_origin_access_identities`
+- `list_distributions`
+- `list_invalidations`
+- `list_streaming_distributions`
+
+## WaiterName
+
+```python
+from mypy_boto3_cloudfront.literals import WaiterName
+```
+
+Values:
+
+- `distribution_deployed`
+- `invalidation_completed`
+- `streaming_distribution_deployed`

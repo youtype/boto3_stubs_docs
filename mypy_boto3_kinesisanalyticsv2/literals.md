@@ -24,6 +24,7 @@ type annotations stubs module
   - [SnapshotStatusType](#snapshotstatustype)
   - [UrlTypeType](#urltypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ApplicationModeType
 
@@ -495,3 +496,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_kinesisanalyticsv2.literals import PaginatorName
+```
+
+Values:
+
+- `list_application_snapshots`
+- `list_applications`

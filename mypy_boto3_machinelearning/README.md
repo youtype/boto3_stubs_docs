@@ -143,6 +143,8 @@ from mypy_boto3_machinelearning.literals import AlgorithmType, ...
 - [SortOrderType](./literals.md#sortordertype)
 - [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

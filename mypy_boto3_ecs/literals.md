@@ -74,6 +74,8 @@ type annotations stubs module
   - [TransportProtocolType](#transportprotocoltype)
   - [UlimitNameType](#ulimitnametype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## AgentUpdateStatusType
 
@@ -1103,3 +1105,33 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_ecs.literals import PaginatorName
+```
+
+Values:
+
+- `list_account_settings`
+- `list_attributes`
+- `list_clusters`
+- `list_container_instances`
+- `list_services`
+- `list_task_definition_families`
+- `list_task_definitions`
+- `list_tasks`
+
+## WaiterName
+
+```python
+from mypy_boto3_ecs.literals import WaiterName
+```
+
+Values:
+
+- `services_inactive`
+- `services_stable`
+- `tasks_running`
+- `tasks_stopped`

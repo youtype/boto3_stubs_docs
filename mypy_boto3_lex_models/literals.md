@@ -42,6 +42,7 @@ type annotations stubs module
   - [StatusType](#statustype)
   - [StatusTypeType](#statustypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ChannelStatusType
 
@@ -705,3 +706,22 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_lex_models.literals import PaginatorName
+```
+
+Values:
+
+- `get_bot_aliases`
+- `get_bot_channel_associations`
+- `get_bot_versions`
+- `get_bots`
+- `get_builtin_intents`
+- `get_builtin_slot_types`
+- `get_intent_versions`
+- `get_intents`
+- `get_slot_type_versions`
+- `get_slot_types`

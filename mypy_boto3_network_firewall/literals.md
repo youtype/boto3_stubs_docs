@@ -27,6 +27,7 @@ type annotations stubs module
   - [TCPFlagType](#tcpflagtype)
   - [TargetTypeType](#targettypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AttachmentStatusType
 
@@ -537,3 +538,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_network_firewall.literals import PaginatorName
+```
+
+Values:
+
+- `list_firewall_policies`
+- `list_firewalls`
+- `list_rule_groups`
+- `list_tags_for_resource`

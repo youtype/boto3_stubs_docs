@@ -125,6 +125,7 @@ from mypy_boto3_shield.literals import AttackLayerType, ...
 - [SubscriptionStateType](./literals.md#subscriptionstatetype)
 - [UnitType](./literals.md#unittype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

@@ -17,6 +17,7 @@ type annotations stubs module
   - [StatementStatusStringType](#statementstatusstringtype)
   - [StatusStringType](#statusstringtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DescribeTablePaginatorName
 
@@ -396,3 +397,18 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_redshift_data.literals import PaginatorName
+```
+
+Values:
+
+- `describe_table`
+- `get_statement_result`
+- `list_databases`
+- `list_schemas`
+- `list_statements`
+- `list_tables`

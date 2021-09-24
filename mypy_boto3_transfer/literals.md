@@ -21,6 +21,7 @@ type annotations stubs module
   - [StateType](#statetype)
   - [WorkflowStepTypeType](#workflowsteptypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## CustomStepStatusType
 
@@ -450,3 +451,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_transfer.literals import PaginatorName
+```
+
+Values:
+
+- `list_servers`

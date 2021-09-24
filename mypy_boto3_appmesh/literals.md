@@ -36,6 +36,7 @@ type annotations stubs module
   - [VirtualRouterStatusCodeType](#virtualrouterstatuscodetype)
   - [VirtualServiceStatusCodeType](#virtualservicestatuscodetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DefaultGatewayRouteRewriteType
 
@@ -634,3 +635,20 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_appmesh.literals import PaginatorName
+```
+
+Values:
+
+- `list_gateway_routes`
+- `list_meshes`
+- `list_routes`
+- `list_tags_for_resource`
+- `list_virtual_gateways`
+- `list_virtual_nodes`
+- `list_virtual_routers`
+- `list_virtual_services`

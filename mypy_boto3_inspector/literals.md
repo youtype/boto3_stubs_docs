@@ -33,6 +33,7 @@ type annotations stubs module
   - [SeverityType](#severitytype)
   - [StopActionType](#stopactiontype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AgentHealthCodeType
 
@@ -603,3 +604,21 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_inspector.literals import PaginatorName
+```
+
+Values:
+
+- `list_assessment_run_agents`
+- `list_assessment_runs`
+- `list_assessment_targets`
+- `list_assessment_templates`
+- `list_event_subscriptions`
+- `list_exclusions`
+- `list_findings`
+- `list_rules_packages`
+- `preview_agents`

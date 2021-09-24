@@ -31,6 +31,7 @@ type annotations stubs module
   - [SigningAlgorithmSpecType](#signingalgorithmspectype)
   - [WrappingKeySpecType](#wrappingkeyspectype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AlgorithmSpecType
 
@@ -611,3 +612,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_kms.literals import PaginatorName
+```
+
+Values:
+
+- `list_aliases`
+- `list_grants`
+- `list_key_policies`
+- `list_keys`

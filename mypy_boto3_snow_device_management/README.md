@@ -100,6 +100,7 @@ from mypy_boto3_snow_device_management.literals import AttachmentStatusType, ...
 - [TaskStateType](./literals.md#taskstatetype)
 - [UnlockStateType](./literals.md#unlockstatetype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

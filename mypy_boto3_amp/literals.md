@@ -11,6 +11,7 @@ type annotations stubs module
   - [ListWorkspacesPaginatorName](#listworkspacespaginatorname)
   - [WorkspaceStatusCodeType](#workspacestatuscodetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## ListWorkspacesPaginatorName
 
@@ -323,3 +324,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_amp.literals import PaginatorName
+```
+
+Values:
+
+- `list_workspaces`

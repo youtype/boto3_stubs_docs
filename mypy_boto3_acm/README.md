@@ -127,6 +127,8 @@ from mypy_boto3_acm.literals import CertificateStatusType, ...
 - [RevocationReasonType](./literals.md#revocationreasontype)
 - [ValidationMethodType](./literals.md#validationmethodtype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

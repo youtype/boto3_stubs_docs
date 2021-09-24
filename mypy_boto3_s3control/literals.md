@@ -38,6 +38,7 @@ type annotations stubs module
   - [S3StorageClassType](#s3storageclasstype)
   - [TransitionStorageClassType](#transitionstorageclasstype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AsyncOperationNameType
 
@@ -692,3 +693,13 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_s3control.literals import PaginatorName
+```
+
+Values:
+
+- `list_access_points_for_object_lambda`

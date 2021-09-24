@@ -17,6 +17,7 @@ type annotations stubs module
   - [LookupEventsPaginatorName](#lookupeventspaginatorname)
   - [ReadWriteTypeType](#readwritetypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## EventCategoryType
 
@@ -394,3 +395,16 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_cloudtrail.literals import PaginatorName
+```
+
+Values:
+
+- `list_public_keys`
+- `list_tags`
+- `list_trails`
+- `lookup_events`

@@ -171,6 +171,7 @@ from mypy_boto3_autoscaling.literals import DescribeAutoScalingGroupsPaginatorNa
 - [WarmPoolStateType](./literals.md#warmpoolstatetype)
 - [WarmPoolStatusType](./literals.md#warmpoolstatustype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

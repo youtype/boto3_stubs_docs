@@ -199,6 +199,8 @@ from mypy_boto3_emr.literals import ActionOnFailureType, ...
 - [StepStateType](./literals.md#stepstatetype)
 - [UnitType](./literals.md#unittype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 

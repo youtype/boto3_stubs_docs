@@ -80,6 +80,7 @@ from mypy_boto3_mediastore_data.literals import ItemTypeType, ...
 - [StorageClassType](./literals.md#storageclasstype)
 - [UploadAvailabilityType](./literals.md#uploadavailabilitytype)
 - [ServiceName](./literals.md#servicename)
+- [PaginatorName](./literals.md#paginatorname)
 
 ## Typed dictionaries
 

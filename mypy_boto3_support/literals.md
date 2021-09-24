@@ -11,6 +11,7 @@ type annotations stubs module
   - [DescribeCasesPaginatorName](#describecasespaginatorname)
   - [DescribeCommunicationsPaginatorName](#describecommunicationspaginatorname)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## DescribeCasesPaginatorName
 
@@ -319,3 +320,14 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_support.literals import PaginatorName
+```
+
+Values:
+
+- `describe_cases`
+- `describe_communications`

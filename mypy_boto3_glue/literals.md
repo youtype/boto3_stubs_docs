@@ -79,6 +79,7 @@ type annotations stubs module
   - [WorkerTypeType](#workertypetype)
   - [WorkflowRunStatusType](#workflowrunstatustype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## BackfillErrorCodeType
 
@@ -1224,3 +1225,31 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_glue.literals import PaginatorName
+```
+
+Values:
+
+- `get_classifiers`
+- `get_connections`
+- `get_crawler_metrics`
+- `get_crawlers`
+- `get_databases`
+- `get_dev_endpoints`
+- `get_job_runs`
+- `get_jobs`
+- `get_partition_indexes`
+- `get_partitions`
+- `get_resource_policies`
+- `get_security_configurations`
+- `get_table_versions`
+- `get_tables`
+- `get_triggers`
+- `get_user_defined_functions`
+- `list_registries`
+- `list_schema_versions`
+- `list_schemas`

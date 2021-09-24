@@ -65,6 +65,8 @@ type annotations stubs module
   - [UsageLimitLimitTypeType](#usagelimitlimittypetype)
   - [UsageLimitPeriodType](#usagelimitperiodtype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 ## ActionTypeType
 
@@ -968,3 +970,52 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_redshift.literals import PaginatorName
+```
+
+Values:
+
+- `describe_cluster_db_revisions`
+- `describe_cluster_parameter_groups`
+- `describe_cluster_parameters`
+- `describe_cluster_security_groups`
+- `describe_cluster_snapshots`
+- `describe_cluster_subnet_groups`
+- `describe_cluster_tracks`
+- `describe_cluster_versions`
+- `describe_clusters`
+- `describe_default_cluster_parameters`
+- `describe_endpoint_access`
+- `describe_endpoint_authorization`
+- `describe_event_subscriptions`
+- `describe_events`
+- `describe_hsm_client_certificates`
+- `describe_hsm_configurations`
+- `describe_node_configuration_options`
+- `describe_orderable_cluster_options`
+- `describe_reserved_node_offerings`
+- `describe_reserved_nodes`
+- `describe_scheduled_actions`
+- `describe_snapshot_copy_grants`
+- `describe_snapshot_schedules`
+- `describe_table_restore_status`
+- `describe_tags`
+- `describe_usage_limits`
+- `get_reserved_node_exchange_offerings`
+
+## WaiterName
+
+```python
+from mypy_boto3_redshift.literals import WaiterName
+```
+
+Values:
+
+- `cluster_available`
+- `cluster_deleted`
+- `cluster_restored`
+- `snapshot_available`

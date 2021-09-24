@@ -48,6 +48,7 @@ type annotations stubs module
   - [WindowsAccessAuditLogLevelType](#windowsaccessauditlogleveltype)
   - [WindowsDeploymentTypeType](#windowsdeploymenttypetype)
   - [ServiceName](#servicename)
+  - [PaginatorName](#paginatorname)
 
 ## AdministrativeActionTypeType
 
@@ -805,3 +806,15 @@ Values:
 - `workmailmessageflow`
 - `workspaces`
 - `xray`
+
+## PaginatorName
+
+```python
+from mypy_boto3_fsx.literals import PaginatorName
+```
+
+Values:
+
+- `describe_backups`
+- `describe_file_systems`
+- `list_tags_for_resource`
