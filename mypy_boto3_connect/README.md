@@ -263,6 +263,7 @@ from mypy_boto3_connect.literals import AgentStatusStateType, ...
 - [SourceTypeType](./literals.md#sourcetypetype)
 - [StatisticType](./literals.md#statistictype)
 - [StorageTypeType](./literals.md#storagetypetype)
+- [TrafficTypeType](./literals.md#traffictypetype)
 - [UnitType](./literals.md#unittype)
 - [UseCaseTypeType](./literals.md#usecasetypetype)
 - [VoiceRecordingTrackType](./literals.md#voicerecordingtracktype)
@@ -282,6 +283,7 @@ from mypy_boto3_connect.type_defs import AgentStatusSummaryTypeDef, ...
 
 - [AgentStatusSummaryTypeDef](./type_defs.md#agentstatussummarytypedef)
 - [AgentStatusTypeDef](./type_defs.md#agentstatustypedef)
+- [AnswerMachineDetectionConfigTypeDef](./type_defs.md#answermachinedetectionconfigtypedef)
 - [AssociateApprovedOriginRequestRequestTypeDef](./type_defs.md#associateapprovedoriginrequestrequesttypedef)
 - [AssociateBotRequestRequestTypeDef](./type_defs.md#associatebotrequestrequesttypedef)
 - [AssociateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#associateinstancestorageconfigrequestrequesttypedef)

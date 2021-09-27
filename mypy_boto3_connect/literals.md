@@ -58,6 +58,7 @@ type annotations stubs module
   - [SourceTypeType](#sourcetypetype)
   - [StatisticType](#statistictype)
   - [StorageTypeType](#storagetypetype)
+  - [TrafficTypeType](#traffictypetype)
   - [UnitType](#unittype)
   - [UseCaseTypeType](#usecasetypetype)
   - [VoiceRecordingTrackType](#voicerecordingtracktype)
@@ -294,6 +295,10 @@ from mypy_boto3_connect.literals import IntegrationTypeType
 Values:
 
 - `EVENT`
+- `PINPOINT_APP`
+- `VOICE_ID`
+- `WISDOM_ASSISTANT`
+- `WISDOM_KNOWLEDGE_BASE`
 
 ## LexVersionType
 
@@ -884,6 +889,17 @@ Values:
 - `KINESIS_VIDEO_STREAM`
 - `S3`
 
+## TrafficTypeType
+
+```python
+from mypy_boto3_connect.literals import TrafficTypeType
+```
+
+Values:
+
+- `CAMPAIGN`
+- `GENERAL`
+
 ## UnitType
 
 ```python
@@ -904,6 +920,7 @@ from mypy_boto3_connect.literals import UseCaseTypeType
 
 Values:
 
+- `CONNECT_CAMPAIGNS`
 - `RULES_EVALUATION`
 
 ## VoiceRecordingTrackType
@@ -1195,10 +1212,12 @@ Values:
 - `transcribe`
 - `transfer`
 - `translate`
+- `voice-id`
 - `waf`
 - `waf-regional`
 - `wafv2`
 - `wellarchitected`
+- `wisdom`
 - `workdocs`
 - `worklink`
 - `workmail`

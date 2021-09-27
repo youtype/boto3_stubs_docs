@@ -488,10 +488,12 @@ Values:
 - `transcribe`
 - `transfer`
 - `translate`
+- `voice-id`
 - `waf`
 - `waf-regional`
 - `wafv2`
 - `wellarchitected`
+- `wisdom`
 - `workdocs`
 - `worklink`
 - `workmail`

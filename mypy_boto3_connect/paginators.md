@@ -299,6 +299,7 @@ Boto3 documentation:
 Arguments for `ListIntegrationAssociationsPaginator.paginate` method:
 
 - `InstanceId`: `str` *(required)*
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

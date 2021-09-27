@@ -1109,6 +1109,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
   service
 
+- [mypy-boto3-voice-id](./mypy_boto3_voice_id) for
+  [VoiceID](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID)
+  service
+
 - [mypy-boto3-waf](./mypy_boto3_waf) for
   [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
   service
@@ -1123,6 +1127,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
 
 - [mypy-boto3-wellarchitected](./mypy_boto3_wellarchitected) for
   [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
+  service
+
+- [mypy-boto3-wisdom](./mypy_boto3_wisdom) for
+  [ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
   service
 
 - [mypy-boto3-workdocs](./mypy_boto3_workdocs) for

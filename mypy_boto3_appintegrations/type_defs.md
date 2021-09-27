@@ -8,14 +8,25 @@ type annotations stubs module
 [mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
 - [Typed dictionaries for boto3 AppIntegrationsService module](#typed-dictionaries-for-boto3-appintegrationsservice-module)
+  - [CreateDataIntegrationRequestRequestTypeDef](#createdataintegrationrequestrequesttypedef)
+  - [CreateDataIntegrationResponseTypeDef](#createdataintegrationresponsetypedef)
   - [CreateEventIntegrationRequestRequestTypeDef](#createeventintegrationrequestrequesttypedef)
   - [CreateEventIntegrationResponseTypeDef](#createeventintegrationresponsetypedef)
+  - [DataIntegrationAssociationSummaryTypeDef](#dataintegrationassociationsummarytypedef)
+  - [DataIntegrationSummaryTypeDef](#dataintegrationsummarytypedef)
+  - [DeleteDataIntegrationRequestRequestTypeDef](#deletedataintegrationrequestrequesttypedef)
   - [DeleteEventIntegrationRequestRequestTypeDef](#deleteeventintegrationrequestrequesttypedef)
   - [EventFilterTypeDef](#eventfiltertypedef)
   - [EventIntegrationAssociationTypeDef](#eventintegrationassociationtypedef)
   - [EventIntegrationTypeDef](#eventintegrationtypedef)
+  - [GetDataIntegrationRequestRequestTypeDef](#getdataintegrationrequestrequesttypedef)
+  - [GetDataIntegrationResponseTypeDef](#getdataintegrationresponsetypedef)
   - [GetEventIntegrationRequestRequestTypeDef](#geteventintegrationrequestrequesttypedef)
   - [GetEventIntegrationResponseTypeDef](#geteventintegrationresponsetypedef)
+  - [ListDataIntegrationAssociationsRequestRequestTypeDef](#listdataintegrationassociationsrequestrequesttypedef)
+  - [ListDataIntegrationAssociationsResponseTypeDef](#listdataintegrationassociationsresponsetypedef)
+  - [ListDataIntegrationsRequestRequestTypeDef](#listdataintegrationsrequestrequesttypedef)
+  - [ListDataIntegrationsResponseTypeDef](#listdataintegrationsresponsetypedef)
   - [ListEventIntegrationAssociationsRequestRequestTypeDef](#listeventintegrationassociationsrequestrequesttypedef)
   - [ListEventIntegrationAssociationsResponseTypeDef](#listeventintegrationassociationsresponsetypedef)
   - [ListEventIntegrationsRequestRequestTypeDef](#listeventintegrationsrequestrequesttypedef)
@@ -23,9 +34,52 @@ type annotations stubs module
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [ScheduleConfigurationTypeDef](#scheduleconfigurationtypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateDataIntegrationRequestRequestTypeDef](#updatedataintegrationrequestrequesttypedef)
   - [UpdateEventIntegrationRequestRequestTypeDef](#updateeventintegrationrequestrequesttypedef)
+
+## CreateDataIntegrationRequestRequestTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import CreateDataIntegrationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `KmsKey`: `str`
+- `SourceURI`: `str`
+- `ScheduleConfig`:
+  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `ClientToken`: `str`
+
+## CreateDataIntegrationResponseTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import CreateDataIntegrationResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Id`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `KmsKey`: `str`
+- `SourceURI`: `str`
+- `ScheduleConfiguration`:
+  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+- `ClientToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateEventIntegrationRequestRequestTypeDef
 
@@ -56,6 +110,40 @@ Required fields:
 - `EventIntegrationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DataIntegrationAssociationSummaryTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import DataIntegrationAssociationSummaryTypeDef
+```
+
+Optional fields:
+
+- `DataIntegrationAssociationArn`: `str`
+- `DataIntegrationArn`: `str`
+- `ClientId`: `str`
+
+## DataIntegrationSummaryTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import DataIntegrationSummaryTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `Name`: `str`
+- `SourceURI`: `str`
+
+## DeleteDataIntegrationRequestRequestTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import DeleteDataIntegrationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DataIntegrationIdentifier`: `str`
 
 ## DeleteEventIntegrationRequestRequestTypeDef
 
@@ -107,6 +195,36 @@ Optional fields:
 - `EventBridgeBus`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
+## GetDataIntegrationRequestRequestTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import GetDataIntegrationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Identifier`: `str`
+
+## GetDataIntegrationResponseTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import GetDataIntegrationResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Id`: `str`
+- `Name`: `str`
+- `Description`: `str`
+- `KmsKey`: `str`
+- `SourceURI`: `str`
+- `ScheduleConfiguration`:
+  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
+- `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetEventIntegrationRequestRequestTypeDef
 
 ```python
@@ -131,6 +249,60 @@ Required fields:
 - `EventBridgeBus`: `str`
 - `EventFilter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListDataIntegrationAssociationsRequestRequestTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import ListDataIntegrationAssociationsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DataIntegrationIdentifier`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDataIntegrationAssociationsResponseTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import ListDataIntegrationAssociationsResponseTypeDef
+```
+
+Required fields:
+
+- `DataIntegrationAssociations`:
+  `List`\[[DataIntegrationAssociationSummaryTypeDef](./type_defs.md#dataintegrationassociationsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListDataIntegrationsRequestRequestTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import ListDataIntegrationsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListDataIntegrationsResponseTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import ListDataIntegrationsResponseTypeDef
+```
+
+Required fields:
+
+- `DataIntegrations`:
+  `List`\[[DataIntegrationSummaryTypeDef](./type_defs.md#dataintegrationsummarytypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -224,6 +396,18 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `Any`\]
 - `RetryAttempts`: `int`
 
+## ScheduleConfigurationTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import ScheduleConfigurationTypeDef
+```
+
+Optional fields:
+
+- `FirstExecutionFrom`: `str`
+- `Object`: `str`
+- `ScheduleExpression`: `str`
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -245,6 +429,21 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+## UpdateDataIntegrationRequestRequestTypeDef
+
+```python
+from mypy_boto3_appintegrations.type_defs import UpdateDataIntegrationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Identifier`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `Description`: `str`
 
 ## UpdateEventIntegrationRequestRequestTypeDef
 

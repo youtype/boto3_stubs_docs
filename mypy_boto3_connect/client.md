@@ -461,7 +461,7 @@ Returns
 
 ### create_integration_association
 
-Create an AppIntegration association with an Amazon Connect instance.
+Creates an AWS resource association with an Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").create_integration_association`
 method.
@@ -475,12 +475,12 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
-- `IntegrationType`: `Literal['EVENT']` (see
-  [IntegrationTypeType](./literals.md#integrationtypetype)) *(required)*
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
+  *(required)*
 - `IntegrationArn`: `str` *(required)*
-- `SourceApplicationUrl`: `str` *(required)*
-- `SourceApplicationName`: `str` *(required)*
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype) *(required)*
+- `SourceApplicationUrl`: `str`
+- `SourceApplicationName`: `str`
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
@@ -568,7 +568,7 @@ Returns
 
 ### create_use_case
 
-Creates a use case for an AppIntegration association.
+Creates a use case for an integration association.
 
 Type annotations for `boto3.client("connect").create_use_case` method.
 
@@ -582,8 +582,7 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `IntegrationAssociationId`: `str` *(required)*
-- `UseCaseType`: `Literal['RULES_EVALUATION']` (see
-  [UseCaseTypeType](./literals.md#usecasetypetype)) *(required)*
+- `UseCaseType`: [UseCaseTypeType](./literals.md#usecasetypetype) *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
@@ -676,7 +675,7 @@ Keyword-only arguments:
 
 ### delete_integration_association
 
-Deletes an AppIntegration association from an Amazon Connect instance.
+Deletes an AWS resource association from an Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").delete_integration_association`
 method.
@@ -711,7 +710,7 @@ Keyword-only arguments:
 
 ### delete_use_case
 
-Deletes a use case from an AppIntegration association.
+Deletes a use case from an integration association.
 
 Type annotations for `boto3.client("connect").delete_use_case` method.
 
@@ -1451,7 +1450,7 @@ Returns
 
 ### list_integration_associations
 
-Provides summary information about the AppIntegration associations for the
+Provides summary information about the AWS resource associations for the
 specified Amazon Connect instance.
 
 Type annotations for `boto3.client("connect").list_integration_associations`
@@ -1466,6 +1465,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -1740,7 +1740,7 @@ Returns
 
 ### list_use_cases
 
-Lists the use cases.
+Lists the use cases for the integration association.
 
 Type annotations for `boto3.client("connect").list_use_cases` method.
 
@@ -1896,6 +1896,10 @@ Keyword-only arguments:
 - `SourcePhoneNumber`: `str`
 - `QueueId`: `str`
 - `Attributes`: `Mapping`\[`str`, `str`\]
+- `AnswerMachineDetectionConfig`:
+  [AnswerMachineDetectionConfigTypeDef](./type_defs.md#answermachinedetectionconfigtypedef)
+- `CampaignId`: `str`
+- `TrafficType`: [TrafficTypeType](./literals.md#traffictypetype)
 
 Returns
 [StartOutboundVoiceContactResponseTypeDef](./type_defs.md#startoutboundvoicecontactresponsetypedef).

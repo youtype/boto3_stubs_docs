@@ -10,6 +10,7 @@ type annotations stubs module
 - [Typed dictionaries for boto3 Connect module](#typed-dictionaries-for-boto3-connect-module)
   - [AgentStatusSummaryTypeDef](#agentstatussummarytypedef)
   - [AgentStatusTypeDef](#agentstatustypedef)
+  - [AnswerMachineDetectionConfigTypeDef](#answermachinedetectionconfigtypedef)
   - [AssociateApprovedOriginRequestRequestTypeDef](#associateapprovedoriginrequestrequesttypedef)
   - [AssociateBotRequestRequestTypeDef](#associatebotrequestrequesttypedef)
   - [AssociateInstanceStorageConfigRequestRequestTypeDef](#associateinstancestorageconfigrequestrequesttypedef)
@@ -273,6 +274,17 @@ Optional fields:
 - `DisplayOrder`: `int`
 - `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
 - `Tags`: `Dict`\[`str`, `str`\]
+
+## AnswerMachineDetectionConfigTypeDef
+
+```python
+from mypy_boto3_connect.type_defs import AnswerMachineDetectionConfigTypeDef
+```
+
+Optional fields:
+
+- `EnableAnswerMachineDetection`: `bool`
+- `AwaitAnswerMachinePrompt`: `bool`
 
 ## AssociateApprovedOriginRequestRequestTypeDef
 
@@ -583,15 +595,14 @@ from mypy_boto3_connect.type_defs import CreateIntegrationAssociationRequestRequ
 Required fields:
 
 - `InstanceId`: `str`
-- `IntegrationType`: `Literal['EVENT']` (see
-  [IntegrationTypeType](./literals.md#integrationtypetype))
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `IntegrationArn`: `str`
-- `SourceApplicationUrl`: `str`
-- `SourceApplicationName`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 
 Optional fields:
 
+- `SourceApplicationUrl`: `str`
+- `SourceApplicationName`: `str`
+- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateIntegrationAssociationResponseTypeDef
@@ -716,8 +727,7 @@ Required fields:
 
 - `InstanceId`: `str`
 - `IntegrationAssociationId`: `str`
-- `UseCaseType`: `Literal['RULES_EVALUATION']` (see
-  [UseCaseTypeType](./literals.md#usecasetypetype))
+- `UseCaseType`: [UseCaseTypeType](./literals.md#usecasetypetype)
 
 Optional fields:
 
@@ -1725,8 +1735,7 @@ Optional fields:
 - `IntegrationAssociationId`: `str`
 - `IntegrationAssociationArn`: `str`
 - `InstanceId`: `str`
-- `IntegrationType`: `Literal['EVENT']` (see
-  [IntegrationTypeType](./literals.md#integrationtypetype))
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `IntegrationArn`: `str`
 - `SourceApplicationUrl`: `str`
 - `SourceApplicationName`: `str`
@@ -2042,6 +2051,7 @@ Required fields:
 
 Optional fields:
 
+- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
@@ -2893,6 +2903,10 @@ Optional fields:
 - `SourcePhoneNumber`: `str`
 - `QueueId`: `str`
 - `Attributes`: `Mapping`\[`str`, `str`\]
+- `AnswerMachineDetectionConfig`:
+  [AnswerMachineDetectionConfigTypeDef](./type_defs.md#answermachinedetectionconfigtypedef)
+- `CampaignId`: `str`
+- `TrafficType`: [TrafficTypeType](./literals.md#traffictypetype)
 
 ## StartOutboundVoiceContactResponseTypeDef
 
@@ -3364,8 +3378,7 @@ Optional fields:
 
 - `UseCaseId`: `str`
 - `UseCaseArn`: `str`
-- `UseCaseType`: `Literal['RULES_EVALUATION']` (see
-  [UseCaseTypeType](./literals.md#usecasetypetype))
+- `UseCaseType`: [UseCaseTypeType](./literals.md#usecasetypetype)
 
 ## UserIdentityInfoTypeDef
 

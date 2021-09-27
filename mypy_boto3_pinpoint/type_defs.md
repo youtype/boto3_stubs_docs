@@ -51,6 +51,7 @@ type annotations stubs module
   - [ChannelsResponseTypeDef](#channelsresponsetypedef)
   - [ConditionTypeDef](#conditiontypedef)
   - [ConditionalSplitActivityTypeDef](#conditionalsplitactivitytypedef)
+  - [ContactCenterActivityTypeDef](#contactcenteractivitytypedef)
   - [CreateAppRequestRequestTypeDef](#createapprequestrequesttypedef)
   - [CreateAppResponseTypeDef](#createappresponsetypedef)
   - [CreateApplicationRequestTypeDef](#createapplicationrequesttypedef)
@@ -275,6 +276,7 @@ type annotations stubs module
   - [InAppTemplateRequestTypeDef](#inapptemplaterequesttypedef)
   - [InAppTemplateResponseTypeDef](#inapptemplateresponsetypedef)
   - [ItemResponseTypeDef](#itemresponsetypedef)
+  - [JourneyChannelSettingsTypeDef](#journeychannelsettingstypedef)
   - [JourneyCustomMessageTypeDef](#journeycustommessagetypedef)
   - [JourneyDateRangeKpiResponseTypeDef](#journeydaterangekpiresponsetypedef)
   - [JourneyEmailMessageTypeDef](#journeyemailmessagetypedef)
@@ -768,6 +770,8 @@ Optional fields:
   [RandomSplitActivityTypeDef](./type_defs.md#randomsplitactivitytypedef)
 - `SMS`: [SMSMessageActivityTypeDef](./type_defs.md#smsmessageactivitytypedef)
 - `Wait`: [WaitActivityTypeDef](./type_defs.md#waitactivitytypedef)
+- `ContactCenter`:
+  [ContactCenterActivityTypeDef](./type_defs.md#contactcenteractivitytypedef)
 
 ## AddressConfigurationTypeDef
 
@@ -1192,6 +1196,16 @@ Optional fields:
 - `EvaluationWaitTime`: [WaitTimeTypeDef](./type_defs.md#waittimetypedef)
 - `FalseActivity`: `str`
 - `TrueActivity`: `str`
+
+## ContactCenterActivityTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import ContactCenterActivityTypeDef
+```
+
+Optional fields:
+
+- `NextActivity`: `str`
 
 ## CreateAppRequestRequestTypeDef
 
@@ -4222,6 +4236,17 @@ Optional fields:
 - `EventsItemResponse`: `Dict`\[`str`,
   [EventItemResponseTypeDef](./type_defs.md#eventitemresponsetypedef)\]
 
+## JourneyChannelSettingsTypeDef
+
+```python
+from mypy_boto3_pinpoint.type_defs import JourneyChannelSettingsTypeDef
+```
+
+Optional fields:
+
+- `ConnectCampaignArn`: `str`
+- `ConnectCampaignExecutionRoleArn`: `str`
+
 ## JourneyCustomMessageTypeDef
 
 ```python
@@ -4342,6 +4367,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `WaitForQuietTime`: `bool`
 - `RefreshOnSegmentUpdate`: `bool`
+- `JourneyChannelSettings`:
+  [JourneyChannelSettingsTypeDef](./type_defs.md#journeychannelsettingstypedef)
 
 ## JourneySMSMessageTypeDef
 
