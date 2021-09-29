@@ -16,6 +16,7 @@ pip install mypy-boto3-amp
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
+  - [Waiters](#waiters)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
@@ -33,14 +34,24 @@ from mypy_boto3_amp.client import PrometheusServiceClient
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
+- [create_alert_manager_definition](./client.md#create_alert_manager_definition)
+- [create_rule_groups_namespace](./client.md#create_rule_groups_namespace)
 - [create_workspace](./client.md#create_workspace)
+- [delete_alert_manager_definition](./client.md#delete_alert_manager_definition)
+- [delete_rule_groups_namespace](./client.md#delete_rule_groups_namespace)
 - [delete_workspace](./client.md#delete_workspace)
+- [describe_alert_manager_definition](./client.md#describe_alert_manager_definition)
+- [describe_rule_groups_namespace](./client.md#describe_rule_groups_namespace)
 - [describe_workspace](./client.md#describe_workspace)
 - [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
+- [get_waiter](./client.md#get_waiter)
+- [list_rule_groups_namespaces](./client.md#list_rule_groups_namespaces)
 - [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [list_workspaces](./client.md#list_workspaces)
+- [put_alert_manager_definition](./client.md#put_alert_manager_definition)
+- [put_rule_groups_namespace](./client.md#put_rule_groups_namespace)
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 - [update_workspace_alias](./client.md#update_workspace_alias)
@@ -66,10 +77,25 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_amp.paginators import ListWorkspacesPaginator, ...
+from mypy_boto3_amp.paginators import ListRuleGroupsNamespacesPaginator, ...
 ```
 
+- [ListRuleGroupsNamespacesPaginator](./paginators.md#listrulegroupsnamespacespaginator)
 - [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
+
+## Waiters
+
+Type annotations for [waiters](./waiters.md) from
+`boto3.client("amp").get_waiter("...")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_amp.waiters import WorkspaceActiveWaiter, ...
+```
+
+- [WorkspaceActiveWaiter](./waiters.md#workspaceactivewaiter)
+- [WorkspaceDeletedWaiter](./waiters.md#workspacedeletedwaiter)
 
 ## Literals
 
@@ -78,13 +104,19 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_amp.literals import ListWorkspacesPaginatorName, ...
+from mypy_boto3_amp.literals import AlertManagerDefinitionStatusCodeType, ...
 ```
 
+- [AlertManagerDefinitionStatusCodeType](./literals.md#alertmanagerdefinitionstatuscodetype)
+- [ListRuleGroupsNamespacesPaginatorName](./literals.md#listrulegroupsnamespacespaginatorname)
 - [ListWorkspacesPaginatorName](./literals.md#listworkspacespaginatorname)
+- [RuleGroupsNamespaceStatusCodeType](./literals.md#rulegroupsnamespacestatuscodetype)
+- [WorkspaceActiveWaiterName](./literals.md#workspaceactivewaitername)
+- [WorkspaceDeletedWaiterName](./literals.md#workspacedeletedwaitername)
 - [WorkspaceStatusCodeType](./literals.md#workspacestatuscodetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [WaiterName](./literals.md#waitername)
 
 ## Typed dictionaries
 
@@ -94,23 +126,45 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_amp.type_defs import CreateWorkspaceRequestRequestTypeDef, ...
+from mypy_boto3_amp.type_defs import AlertManagerDefinitionDescriptionTypeDef, ...
 ```
 
+- [AlertManagerDefinitionDescriptionTypeDef](./type_defs.md#alertmanagerdefinitiondescriptiontypedef)
+- [AlertManagerDefinitionStatusTypeDef](./type_defs.md#alertmanagerdefinitionstatustypedef)
+- [CreateAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#createalertmanagerdefinitionrequestrequesttypedef)
+- [CreateAlertManagerDefinitionResponseTypeDef](./type_defs.md#createalertmanagerdefinitionresponsetypedef)
+- [CreateRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#createrulegroupsnamespacerequestrequesttypedef)
+- [CreateRuleGroupsNamespaceResponseTypeDef](./type_defs.md#createrulegroupsnamespaceresponsetypedef)
 - [CreateWorkspaceRequestRequestTypeDef](./type_defs.md#createworkspacerequestrequesttypedef)
 - [CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef)
+- [DeleteAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#deletealertmanagerdefinitionrequestrequesttypedef)
+- [DeleteRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#deleterulegroupsnamespacerequestrequesttypedef)
 - [DeleteWorkspaceRequestRequestTypeDef](./type_defs.md#deleteworkspacerequestrequesttypedef)
+- [DescribeAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#describealertmanagerdefinitionrequestrequesttypedef)
+- [DescribeAlertManagerDefinitionResponseTypeDef](./type_defs.md#describealertmanagerdefinitionresponsetypedef)
+- [DescribeRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#describerulegroupsnamespacerequestrequesttypedef)
+- [DescribeRuleGroupsNamespaceResponseTypeDef](./type_defs.md#describerulegroupsnamespaceresponsetypedef)
 - [DescribeWorkspaceRequestRequestTypeDef](./type_defs.md#describeworkspacerequestrequesttypedef)
 - [DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef)
+- [ListRuleGroupsNamespacesRequestRequestTypeDef](./type_defs.md#listrulegroupsnamespacesrequestrequesttypedef)
+- [ListRuleGroupsNamespacesResponseTypeDef](./type_defs.md#listrulegroupsnamespacesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ListWorkspacesRequestRequestTypeDef](./type_defs.md#listworkspacesrequestrequesttypedef)
 - [ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [PutAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#putalertmanagerdefinitionrequestrequesttypedef)
+- [PutAlertManagerDefinitionResponseTypeDef](./type_defs.md#putalertmanagerdefinitionresponsetypedef)
+- [PutRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#putrulegroupsnamespacerequestrequesttypedef)
+- [PutRuleGroupsNamespaceResponseTypeDef](./type_defs.md#putrulegroupsnamespaceresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+- [RuleGroupsNamespaceDescriptionTypeDef](./type_defs.md#rulegroupsnamespacedescriptiontypedef)
+- [RuleGroupsNamespaceStatusTypeDef](./type_defs.md#rulegroupsnamespacestatustypedef)
+- [RuleGroupsNamespaceSummaryTypeDef](./type_defs.md#rulegroupsnamespacesummarytypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateWorkspaceAliasRequestRequestTypeDef](./type_defs.md#updateworkspacealiasrequestrequesttypedef)
+- [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [WorkspaceDescriptionTypeDef](./type_defs.md#workspacedescriptiontypedef)
 - [WorkspaceStatusTypeDef](./type_defs.md#workspacestatustypedef)
 - [WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef)

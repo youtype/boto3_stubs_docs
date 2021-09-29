@@ -354,6 +354,8 @@ Keyword-only arguments:
   `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 - `CodeSigningConfigArn`: `str`
+- `Architectures`:
+  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
 
 Returns
 [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
@@ -1024,6 +1026,7 @@ Keyword-only arguments:
 - `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
 - `Marker`: `str`
 - `MaxItems`: `int`
+- `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
 
 Returns
 [ListLayerVersionsResponseTypeDef](./type_defs.md#listlayerversionsresponsetypedef).
@@ -1031,7 +1034,7 @@ Returns
 ### list_layers
 
 Lists
-`Lambda layers <https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html>`\_\_
+`Lambda layers <https://docs.aws.amazon.com/lambda/latest/dg/invocation- layers.html>`\_\_
 and shows information about the latest version of each.
 
 Type annotations for `boto3.client("lambda").list_layers` method.
@@ -1047,6 +1050,7 @@ Keyword-only arguments:
 - `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
 - `Marker`: `str`
 - `MaxItems`: `int`
+- `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
 
 Returns [ListLayersResponseTypeDef](./type_defs.md#listlayersresponsetypedef).
 
@@ -1137,6 +1141,8 @@ Keyword-only arguments:
 - `Description`: `str`
 - `CompatibleRuntimes`: `Sequence`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
+- `CompatibleArchitectures`:
+  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
 
 Returns
 [PublishLayerVersionResponseTypeDef](./type_defs.md#publishlayerversionresponsetypedef).
@@ -1443,6 +1449,8 @@ Keyword-only arguments:
 - `Publish`: `bool`
 - `DryRun`: `bool`
 - `RevisionId`: `str`
+- `Architectures`:
+  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
 
 Returns
 [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).

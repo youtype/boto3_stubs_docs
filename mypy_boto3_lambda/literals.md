@@ -8,6 +8,7 @@ type annotations stubs module
 [mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
 - [Literals for boto3 Lambda module](#literals-for-boto3-lambda-module)
+  - [ArchitectureType](#architecturetype)
   - [CodeSigningPolicyType](#codesigningpolicytype)
   - [EndPointTypeType](#endpointtypetype)
   - [EventSourcePositionType](#eventsourcepositiontype)
@@ -40,6 +41,17 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
+
+## ArchitectureType
+
+```python
+from mypy_boto3_lambda.literals import ArchitectureType
+```
+
+Values:
+
+- `arm64`
+- `x86_64`
 
 ## CodeSigningPolicyType
 

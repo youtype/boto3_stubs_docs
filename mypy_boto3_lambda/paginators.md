@@ -197,6 +197,7 @@ Arguments for `ListLayerVersionsPaginator.paginate` method:
 
 - `LayerName`: `str` *(required)*
 - `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
+- `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -222,6 +223,7 @@ Boto3 documentation:
 Arguments for `ListLayersPaginator.paginate` method:
 
 - `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
+- `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

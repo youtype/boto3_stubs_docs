@@ -8,10 +8,41 @@ type annotations stubs module
 [mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
 
 - [Literals for boto3 PrometheusService module](#literals-for-boto3-prometheusservice-module)
+  - [AlertManagerDefinitionStatusCodeType](#alertmanagerdefinitionstatuscodetype)
+  - [ListRuleGroupsNamespacesPaginatorName](#listrulegroupsnamespacespaginatorname)
   - [ListWorkspacesPaginatorName](#listworkspacespaginatorname)
+  - [RuleGroupsNamespaceStatusCodeType](#rulegroupsnamespacestatuscodetype)
+  - [WorkspaceActiveWaiterName](#workspaceactivewaitername)
+  - [WorkspaceDeletedWaiterName](#workspacedeletedwaitername)
   - [WorkspaceStatusCodeType](#workspacestatuscodetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
+
+## AlertManagerDefinitionStatusCodeType
+
+```python
+from mypy_boto3_amp.literals import AlertManagerDefinitionStatusCodeType
+```
+
+Values:
+
+- `ACTIVE`
+- `CREATING`
+- `CREATION_FAILED`
+- `DELETING`
+- `UPDATE_FAILED`
+- `UPDATING`
+
+## ListRuleGroupsNamespacesPaginatorName
+
+```python
+from mypy_boto3_amp.literals import ListRuleGroupsNamespacesPaginatorName
+```
+
+Values:
+
+- `list_rule_groups_namespaces`
 
 ## ListWorkspacesPaginatorName
 
@@ -22,6 +53,41 @@ from mypy_boto3_amp.literals import ListWorkspacesPaginatorName
 Values:
 
 - `list_workspaces`
+
+## RuleGroupsNamespaceStatusCodeType
+
+```python
+from mypy_boto3_amp.literals import RuleGroupsNamespaceStatusCodeType
+```
+
+Values:
+
+- `ACTIVE`
+- `CREATING`
+- `CREATION_FAILED`
+- `DELETING`
+- `UPDATE_FAILED`
+- `UPDATING`
+
+## WorkspaceActiveWaiterName
+
+```python
+from mypy_boto3_amp.literals import WorkspaceActiveWaiterName
+```
+
+Values:
+
+- `workspace_active`
+
+## WorkspaceDeletedWaiterName
+
+```python
+from mypy_boto3_amp.literals import WorkspaceDeletedWaiterName
+```
+
+Values:
+
+- `workspace_deleted`
 
 ## WorkspaceStatusCodeType
 
@@ -335,4 +401,16 @@ from mypy_boto3_amp.literals import PaginatorName
 
 Values:
 
+- `list_rule_groups_namespaces`
 - `list_workspaces`
+
+## WaiterName
+
+```python
+from mypy_boto3_amp.literals import WaiterName
+```
+
+Values:
+
+- `workspace_active`
+- `workspace_deleted`

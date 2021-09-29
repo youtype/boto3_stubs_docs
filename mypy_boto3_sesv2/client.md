@@ -631,7 +631,7 @@ Returns `str`.
 ### get_account
 
 Obtain information about the email-sending status and capabilities of your
-Amazon SES account in the current AWS Region.
+Amazon SES account in the current Amazon Web Services Region.
 
 Type annotations for `boto3.client("sesv2").get_account` method.
 
@@ -783,7 +783,8 @@ Returns
 
 ### get_dedicated_ips
 
-List the dedicated IP addresses that are associated with your AWS account.
+List the dedicated IP addresses that are associated with your Amazon Web
+Services account.
 
 Type annotations for `boto3.client("sesv2").get_dedicated_ips` method.
 
@@ -1047,7 +1048,7 @@ Returns
 ### list_custom_verification_email_templates
 
 Lists the existing custom verification email templates for your account in the
-current AWS Region.
+current Amazon Web Services Region.
 
 Type annotations for
 `boto3.client("sesv2").list_custom_verification_email_templates` method.
@@ -1068,8 +1069,8 @@ Returns
 
 ### list_dedicated_ip_pools
 
-List all of the dedicated IP pools that exist in your AWS account in the
-current Region.
+List all of the dedicated IP pools that exist in your Amazon Web Services
+account in the current Region.
 
 Type annotations for `boto3.client("sesv2").list_dedicated_ip_pools` method.
 
@@ -1136,8 +1137,8 @@ Returns
 
 ### list_email_identities
 
-Returns a list of all of the email identities that are associated with your AWS
-account.
+Returns a list of all of the email identities that are associated with your
+Amazon Web Services account.
 
 Type annotations for `boto3.client("sesv2").list_email_identities` method.
 
@@ -1157,8 +1158,8 @@ Returns
 
 ### list_email_templates
 
-Lists the email templates present in your Amazon SES account in the current AWS
-Region.
+Lists the email templates present in your Amazon SES account in the current
+Amazon Web Services Region.
 
 Type annotations for `boto3.client("sesv2").list_email_templates` method.
 
@@ -1349,7 +1350,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### put_configuration_set_reputation_options
 
 Enable or disable collection of reputation metrics for emails that you send
-using a particular configuration set in a specific AWS Region.
+using a particular configuration set in a specific Amazon Web Services Region.
 
 Type annotations for
 `boto3.client("sesv2").put_configuration_set_reputation_options` method.
@@ -1370,7 +1371,7 @@ Returns `Dict`\[`str`, `Any`\].
 ### put_configuration_set_sending_options
 
 Enable or disable email sending for messages that use a particular
-configuration set in a specific AWS Region.
+configuration set in a specific Amazon Web Services Region.
 
 Type annotations for
 `boto3.client("sesv2").put_configuration_set_sending_options` method.
@@ -1658,7 +1659,7 @@ Returns
 ### send_custom_verification_email
 
 Adds an email address to the list of identities for your Amazon SES account in
-the current AWS Region and attempts to verify it.
+the current Amazon Web Services Region and attempts to verify it.
 
 Type annotations for `boto3.client("sesv2").send_custom_verification_email`
 method.

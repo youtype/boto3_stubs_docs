@@ -452,6 +452,8 @@ Optional fields:
   `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
 - `CodeSigningConfigArn`: `str`
+- `Architectures`:
+  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
 
 ## DeadLetterConfigTypeDef
 
@@ -766,6 +768,7 @@ Required fields:
   [ImageConfigResponseTypeDef](./type_defs.md#imageconfigresponsetypedef)
 - `SigningProfileVersionArn`: `str`
 - `SigningJobArn`: `str`
+- `Architectures`: `List`\[[ArchitectureType](./literals.md#architecturetype)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -816,6 +819,7 @@ Optional fields:
   [ImageConfigResponseTypeDef](./type_defs.md#imageconfigresponsetypedef)
 - `SigningProfileVersionArn`: `str`
 - `SigningJobArn`: `str`
+- `Architectures`: `List`\[[ArchitectureType](./literals.md#architecturetype)\]
 
 ## FunctionEventInvokeConfigResponseMetadataTypeDef
 
@@ -1072,6 +1076,8 @@ Required fields:
 - `Version`: `int`
 - `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
+- `CompatibleArchitectures`:
+  `List`\[[ArchitectureType](./literals.md#architecturetype)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1274,6 +1280,8 @@ Optional fields:
 - `CreatedDate`: `str`
 - `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
+- `CompatibleArchitectures`:
+  `List`\[[ArchitectureType](./literals.md#architecturetype)\]
 
 ## LayersListItemTypeDef
 
@@ -1470,6 +1478,7 @@ Optional fields:
 - `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
 - `Marker`: `str`
 - `MaxItems`: `int`
+- `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
 
 ## ListLayerVersionsResponseTypeDef
 
@@ -1496,6 +1505,7 @@ Optional fields:
 - `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
 - `Marker`: `str`
 - `MaxItems`: `int`
+- `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
 
 ## ListLayersResponseTypeDef
 
@@ -1657,6 +1667,8 @@ Optional fields:
 - `Description`: `str`
 - `CompatibleRuntimes`: `Sequence`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
+- `CompatibleArchitectures`:
+  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
 
 ## PublishLayerVersionResponseTypeDef
 
@@ -1675,6 +1687,8 @@ Required fields:
 - `Version`: `int`
 - `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
 - `LicenseInfo`: `str`
+- `CompatibleArchitectures`:
+  `List`\[[ArchitectureType](./literals.md#architecturetype)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1985,6 +1999,8 @@ Optional fields:
 - `Publish`: `bool`
 - `DryRun`: `bool`
 - `RevisionId`: `str`
+- `Architectures`:
+  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
 
 ## UpdateFunctionConfigurationRequestRequestTypeDef
 

@@ -756,6 +756,11 @@ Optional fields:
 - `Tokens`: `List`\[`str`\]
 - `SigningAttributesOrigin`:
   [DkimSigningAttributesOriginType](./literals.md#dkimsigningattributesorigintype)
+- `NextSigningKeyLength`:
+  [DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype)
+- `CurrentSigningKeyLength`:
+  [DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype)
+- `LastKeyGenerationTimestamp`: `datetime`
 
 ## DkimSigningAttributesTypeDef
 
@@ -763,10 +768,12 @@ Optional fields:
 from mypy_boto3_sesv2.type_defs import DkimSigningAttributesTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `DomainSigningSelector`: `str`
 - `DomainSigningPrivateKey`: `str`
+- `NextSigningKeyLength`:
+  [DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype)
 
 ## DomainDeliverabilityCampaignTypeDef
 

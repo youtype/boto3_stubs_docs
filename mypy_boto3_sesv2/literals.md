@@ -17,6 +17,7 @@ type annotations stubs module
   - [DeliverabilityTestStatusType](#deliverabilityteststatustype)
   - [DimensionValueSourceType](#dimensionvaluesourcetype)
   - [DkimSigningAttributesOriginType](#dkimsigningattributesorigintype)
+  - [DkimSigningKeyLengthType](#dkimsigningkeylengthtype)
   - [DkimStatusType](#dkimstatustype)
   - [EventTypeType](#eventtypetype)
   - [IdentityTypeType](#identitytypetype)
@@ -144,6 +145,17 @@ Values:
 
 - `AWS_SES`
 - `EXTERNAL`
+
+## DkimSigningKeyLengthType
+
+```python
+from mypy_boto3_sesv2.literals import DkimSigningKeyLengthType
+```
+
+Values:
+
+- `RSA_1024_BIT`
+- `RSA_2048_BIT`
 
 ## DkimStatusType
 
