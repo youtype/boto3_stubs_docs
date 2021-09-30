@@ -26,6 +26,8 @@ type annotations stubs module
   - [CreateIpGroupRequestRequestTypeDef](#createipgrouprequestrequesttypedef)
   - [CreateIpGroupResultTypeDef](#createipgroupresulttypedef)
   - [CreateTagsRequestRequestTypeDef](#createtagsrequestrequesttypedef)
+  - [CreateUpdatedWorkspaceImageRequestRequestTypeDef](#createupdatedworkspaceimagerequestrequesttypedef)
+  - [CreateUpdatedWorkspaceImageResultTypeDef](#createupdatedworkspaceimageresulttypedef)
   - [CreateWorkspaceBundleRequestRequestTypeDef](#createworkspacebundlerequestrequesttypedef)
   - [CreateWorkspaceBundleResultTypeDef](#createworkspacebundleresulttypedef)
   - [CreateWorkspacesRequestRequestTypeDef](#createworkspacesrequestrequesttypedef)
@@ -110,6 +112,7 @@ type annotations stubs module
   - [TerminateWorkspacesRequestRequestTypeDef](#terminateworkspacesrequestrequesttypedef)
   - [TerminateWorkspacesResultTypeDef](#terminateworkspacesresulttypedef)
   - [UpdateConnectionAliasPermissionRequestRequestTypeDef](#updateconnectionaliaspermissionrequestrequesttypedef)
+  - [UpdateResultTypeDef](#updateresulttypedef)
   - [UpdateRulesOfIpGroupRequestRequestTypeDef](#updaterulesofipgrouprequestrequesttypedef)
   - [UpdateWorkspaceBundleRequestRequestTypeDef](#updateworkspacebundlerequestrequesttypedef)
   - [UpdateWorkspaceImagePermissionRequestRequestTypeDef](#updateworkspaceimagepermissionrequestrequesttypedef)
@@ -354,6 +357,34 @@ Required fields:
 
 - `ResourceId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateUpdatedWorkspaceImageRequestRequestTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import CreateUpdatedWorkspaceImageRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Description`: `str`
+- `SourceImageId`: `str`
+
+Optional fields:
+
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateUpdatedWorkspaceImageResultTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import CreateUpdatedWorkspaceImageResultTypeDef
+```
+
+Required fields:
+
+- `ImageId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateWorkspaceBundleRequestRequestTypeDef
 
@@ -1394,6 +1425,17 @@ Required fields:
 - `ConnectionAliasPermission`:
   [ConnectionAliasPermissionTypeDef](./type_defs.md#connectionaliaspermissiontypedef)
 
+## UpdateResultTypeDef
+
+```python
+from mypy_boto3_workspaces.type_defs import UpdateResultTypeDef
+```
+
+Optional fields:
+
+- `UpdateAvailable`: `bool`
+- `Description`: `str`
+
 ## UpdateRulesOfIpGroupRequestRequestTypeDef
 
 ```python
@@ -1561,6 +1603,7 @@ Optional fields:
 - `ErrorMessage`: `str`
 - `Created`: `datetime`
 - `OwnerAccountId`: `str`
+- `Updates`: [UpdateResultTypeDef](./type_defs.md#updateresulttypedef)
 
 ## WorkspacePropertiesTypeDef
 

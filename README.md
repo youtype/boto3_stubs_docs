@@ -24,6 +24,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
   service
 
+- [mypy-boto3-account](./mypy_boto3_account) for
+  [Account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account)
+  service
+
 - [mypy-boto3-acm](./mypy_boto3_acm) for
   [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
   service
@@ -153,6 +157,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
 
 - [mypy-boto3-cloud9](./mypy_boto3_cloud9) for
   [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
+  service
+
+- [mypy-boto3-cloudcontrol](./mypy_boto3_cloudcontrol) for
+  [CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
   service
 
 - [mypy-boto3-clouddirectory](./mypy_boto3_clouddirectory) for

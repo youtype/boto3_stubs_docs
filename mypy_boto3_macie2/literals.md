@@ -10,6 +10,7 @@ type annotations stubs module
 - [Literals for boto3 Macie2 module](#literals-for-boto3-macie2-module)
   - [AdminStatusType](#adminstatustype)
   - [AllowsUnencryptedObjectUploadsType](#allowsunencryptedobjectuploadstype)
+  - [BucketMetadataErrorCodeType](#bucketmetadataerrorcodetype)
   - [CurrencyType](#currencytype)
   - [DayOfWeekType](#dayofweektype)
   - [DescribeBucketsPaginatorName](#describebucketspaginatorname)
@@ -87,6 +88,16 @@ Values:
 - `FALSE`
 - `TRUE`
 - `UNKNOWN`
+
+## BucketMetadataErrorCodeType
+
+```python
+from mypy_boto3_macie2.literals import BucketMetadataErrorCodeType
+```
+
+Values:
+
+- `ACCESS_DENIED`
 
 ## CurrencyType
 
@@ -732,6 +743,7 @@ from mypy_boto3_macie2.literals import ServiceName
 Values:
 
 - `accessanalyzer`
+- `account`
 - `acm`
 - `acm-pca`
 - `alexaforbusiness`
@@ -764,6 +776,7 @@ Values:
 - `chime-sdk-identity`
 - `chime-sdk-messaging`
 - `cloud9`
+- `cloudcontrol`
 - `clouddirectory`
 - `cloudformation`
 - `cloudfront`

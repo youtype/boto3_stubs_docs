@@ -21,6 +21,7 @@ type annotations stubs module
   - [PerObjectSyncStatusType](#perobjectsyncstatustype)
   - [ResourceStatusType](#resourcestatustype)
   - [RuleGroupTypeType](#rulegrouptypetype)
+  - [RuleOrderType](#ruleordertype)
   - [StatefulActionType](#statefulactiontype)
   - [StatefulRuleDirectionType](#statefulruledirectiontype)
   - [StatefulRuleProtocolType](#statefulruleprotocoltype)
@@ -172,6 +173,17 @@ Values:
 - `STATEFUL`
 - `STATELESS`
 
+## RuleOrderType
+
+```python
+from mypy_boto3_network_firewall.literals import RuleOrderType
+```
+
+Values:
+
+- `DEFAULT_ACTION_ORDER`
+- `STRICT_ORDER`
+
 ## StatefulActionType
 
 ```python
@@ -260,6 +272,7 @@ from mypy_boto3_network_firewall.literals import ServiceName
 Values:
 
 - `accessanalyzer`
+- `account`
 - `acm`
 - `acm-pca`
 - `alexaforbusiness`
@@ -292,6 +305,7 @@ Values:
 - `chime-sdk-identity`
 - `chime-sdk-messaging`
 - `cloud9`
+- `cloudcontrol`
 - `clouddirectory`
 - `cloudformation`
 - `cloudfront`

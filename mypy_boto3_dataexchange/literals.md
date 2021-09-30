@@ -14,6 +14,7 @@ type annotations stubs module
   - [JobErrorResourceTypesType](#joberrorresourcetypestype)
   - [ListDataSetRevisionsPaginatorName](#listdatasetrevisionspaginatorname)
   - [ListDataSetsPaginatorName](#listdatasetspaginatorname)
+  - [ListEventActionsPaginatorName](#listeventactionspaginatorname)
   - [ListJobsPaginatorName](#listjobspaginatorname)
   - [ListRevisionAssetsPaginatorName](#listrevisionassetspaginatorname)
   - [OriginType](#origintype)
@@ -69,6 +70,7 @@ from mypy_boto3_dataexchange.literals import JobErrorResourceTypesType
 Values:
 
 - `ASSET`
+- `DATA_SET`
 - `REVISION`
 
 ## ListDataSetRevisionsPaginatorName
@@ -90,6 +92,16 @@ from mypy_boto3_dataexchange.literals import ListDataSetsPaginatorName
 Values:
 
 - `list_data_sets`
+
+## ListEventActionsPaginatorName
+
+```python
+from mypy_boto3_dataexchange.literals import ListEventActionsPaginatorName
+```
+
+Values:
+
+- `list_event_actions`
 
 ## ListJobsPaginatorName
 
@@ -171,6 +183,7 @@ from mypy_boto3_dataexchange.literals import ServiceName
 Values:
 
 - `accessanalyzer`
+- `account`
 - `acm`
 - `acm-pca`
 - `alexaforbusiness`
@@ -203,6 +216,7 @@ Values:
 - `chime-sdk-identity`
 - `chime-sdk-messaging`
 - `cloud9`
+- `cloudcontrol`
 - `clouddirectory`
 - `cloudformation`
 - `cloudfront`
@@ -462,5 +476,6 @@ Values:
 
 - `list_data_set_revisions`
 - `list_data_sets`
+- `list_event_actions`
 - `list_jobs`
 - `list_revision_assets`

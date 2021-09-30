@@ -10,6 +10,7 @@ type annotations stubs module
 - [Paginators for boto3 DataExchange module](#paginators-for-boto3-dataexchange-module)
   - [ListDataSetRevisionsPaginator](#listdatasetrevisionspaginator)
   - [ListDataSetsPaginator](#listdatasetspaginator)
+  - [ListEventActionsPaginator](#listeventactionspaginator)
   - [ListJobsPaginator](#listjobspaginator)
   - [ListRevisionAssetsPaginator](#listrevisionassetspaginator)
 
@@ -64,6 +65,32 @@ Arguments for `ListDataSetsPaginator.paginate` method:
 
 `ListDataSetsPaginator.paginate` returns
 `_PageIterator`\[[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
+
+## ListEventActionsPaginator
+
+Type annotations for
+`boto3.client("dataexchange").get_paginator("list_event_actions")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_dataexchange.paginator import ListEventActionsPaginator
+
+def get_list_event_actions_paginator() -> ListEventActionsPaginator:
+    return boto3.client("dataexchange").get_paginator("list_event_actions")
+```
+
+Boto3 documentation:
+[DataExchange.Paginator.ListEventActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListEventActions)
+
+Arguments for `ListEventActionsPaginator.paginate` method:
+
+- `EventSourceId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListEventActionsPaginator.paginate` returns
+`_PageIterator`\[[ListEventActionsResponseTypeDef](./type_defs.md#listeventactionsresponsetypedef)\].
 
 ## ListJobsPaginator
 

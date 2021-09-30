@@ -15,18 +15,22 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [cancel_job](#cancel_job)
     - [create_data_set](#create_data_set)
+    - [create_event_action](#create_event_action)
     - [create_job](#create_job)
     - [create_revision](#create_revision)
     - [delete_asset](#delete_asset)
     - [delete_data_set](#delete_data_set)
+    - [delete_event_action](#delete_event_action)
     - [delete_revision](#delete_revision)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_asset](#get_asset)
     - [get_data_set](#get_data_set)
+    - [get_event_action](#get_event_action)
     - [get_job](#get_job)
     - [get_revision](#get_revision)
     - [list_data_set_revisions](#list_data_set_revisions)
     - [list_data_sets](#list_data_sets)
+    - [list_event_actions](#list_event_actions)
     - [list_jobs](#list_jobs)
     - [list_revision_assets](#list_revision_assets)
     - [list_tags_for_resource](#list_tags_for_resource)
@@ -35,6 +39,7 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_asset](#update_asset)
     - [update_data_set](#update_data_set)
+    - [update_event_action](#update_event_action)
     - [update_revision](#update_revision)
     - [get_paginator](#get_paginator)
 
@@ -144,6 +149,26 @@ Keyword-only arguments:
 Returns
 [CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
+### create_event_action
+
+This operation creates an event action.
+
+Type annotations for `boto3.client("dataexchange").create_event_action` method.
+
+Boto3 documentation:
+[DataExchange.Client.create_event_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_event_action)
+
+Arguments mapping described in
+[CreateEventActionRequestRequestTypeDef](./type_defs.md#createeventactionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef) *(required)*
+- `Event`: [EventTypeDef](./type_defs.md#eventtypedef) *(required)*
+
+Returns
+[CreateEventActionResponseTypeDef](./type_defs.md#createeventactionresponsetypedef).
+
 ### create_job
 
 This operation creates a job.
@@ -219,6 +244,22 @@ Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
 
+### delete_event_action
+
+This operation deletes the event action.
+
+Type annotations for `boto3.client("dataexchange").delete_event_action` method.
+
+Boto3 documentation:
+[DataExchange.Client.delete_event_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_event_action)
+
+Arguments mapping described in
+[DeleteEventActionRequestRequestTypeDef](./type_defs.md#deleteeventactionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `EventActionId`: `str` *(required)*
+
 ### delete_revision
 
 This operation deletes a revision.
@@ -292,6 +333,25 @@ Keyword-only arguments:
 - `DataSetId`: `str` *(required)*
 
 Returns [GetDataSetResponseTypeDef](./type_defs.md#getdatasetresponsetypedef).
+
+### get_event_action
+
+This operation retrieves information about an event action.
+
+Type annotations for `boto3.client("dataexchange").get_event_action` method.
+
+Boto3 documentation:
+[DataExchange.Client.get_event_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_event_action)
+
+Arguments mapping described in
+[GetEventActionRequestRequestTypeDef](./type_defs.md#geteventactionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `EventActionId`: `str` *(required)*
+
+Returns
+[GetEventActionResponseTypeDef](./type_defs.md#geteventactionresponsetypedef).
 
 ### get_job
 
@@ -374,6 +434,27 @@ Keyword-only arguments:
 
 Returns
 [ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+
+### list_event_actions
+
+This operation lists your event actions.
+
+Type annotations for `boto3.client("dataexchange").list_event_actions` method.
+
+Boto3 documentation:
+[DataExchange.Client.list_event_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_event_actions)
+
+Arguments mapping described in
+[ListEventActionsRequestRequestTypeDef](./type_defs.md#listeventactionsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `EventSourceId`: `str`
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListEventActionsResponseTypeDef](./type_defs.md#listeventactionsresponsetypedef).
 
 ### list_jobs
 
@@ -535,6 +616,26 @@ Keyword-only arguments:
 Returns
 [UpdateDataSetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
 
+### update_event_action
+
+This operation updates the event action.
+
+Type annotations for `boto3.client("dataexchange").update_event_action` method.
+
+Boto3 documentation:
+[DataExchange.Client.update_event_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_event_action)
+
+Arguments mapping described in
+[UpdateEventActionRequestRequestTypeDef](./type_defs.md#updateeventactionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `EventActionId`: `str` *(required)*
+- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+
+Returns
+[UpdateEventActionResponseTypeDef](./type_defs.md#updateeventactionresponsetypedef).
+
 ### update_revision
 
 This operation updates a revision.
@@ -566,6 +667,8 @@ overloads.
   [ListDataSetRevisionsPaginator](./paginators.md#listdatasetrevisionspaginator)
 - `client.get_paginator("list_data_sets")` ->
   [ListDataSetsPaginator](./paginators.md#listdatasetspaginator)
+- `client.get_paginator("list_event_actions")` ->
+  [ListEventActionsPaginator](./paginators.md#listeventactionspaginator)
 - `client.get_paginator("list_jobs")` ->
   [ListJobsPaginator](./paginators.md#listjobspaginator)
 - `client.get_paginator("list_revision_assets")` ->

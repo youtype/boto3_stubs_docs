@@ -468,6 +468,9 @@ Optional fields:
 - `bucketName`: `str`
 - `classifiableObjectCount`: `int`
 - `classifiableSizeInBytes`: `int`
+- `errorCode`: `Literal['ACCESS_DENIED']` (see
+  [BucketMetadataErrorCodeType](./literals.md#bucketmetadataerrorcodetype))
+- `errorMessage`: `str`
 - `jobDetails`: [JobDetailsTypeDef](./type_defs.md#jobdetailstypedef)
 - `lastUpdated`: `datetime`
 - `objectCount`: `int`
@@ -2003,6 +2006,9 @@ Optional fields:
 - `bucketName`: `str`
 - `classifiableObjectCount`: `int`
 - `classifiableSizeInBytes`: `int`
+- `errorCode`: `Literal['ACCESS_DENIED']` (see
+  [BucketMetadataErrorCodeType](./literals.md#bucketmetadataerrorcodetype))
+- `errorMessage`: `str`
 - `jobDetails`: [JobDetailsTypeDef](./type_defs.md#jobdetailstypedef)
 - `objectCount`: `int`
 - `objectCountByEncryptionType`:

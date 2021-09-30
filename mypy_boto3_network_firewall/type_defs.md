@@ -76,7 +76,9 @@ type annotations stubs module
   - [RuleVariablesTypeDef](#rulevariablestypedef)
   - [RulesSourceListTypeDef](#rulessourcelisttypedef)
   - [RulesSourceTypeDef](#rulessourcetypedef)
+  - [StatefulEngineOptionsTypeDef](#statefulengineoptionstypedef)
   - [StatefulRuleGroupReferenceTypeDef](#statefulrulegroupreferencetypedef)
+  - [StatefulRuleOptionsTypeDef](#statefulruleoptionstypedef)
   - [StatefulRuleTypeDef](#statefulruletypedef)
   - [StatelessRuleGroupReferenceTypeDef](#statelessrulegroupreferencetypedef)
   - [StatelessRuleTypeDef](#statelessruletypedef)
@@ -606,6 +608,9 @@ Optional fields:
 - `FirewallPolicyStatus`:
   [ResourceStatusType](./literals.md#resourcestatustype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ConsumedStatelessRuleCapacity`: `int`
+- `ConsumedStatefulRuleCapacity`: `int`
+- `NumberOfAssociations`: `int`
 
 ## FirewallPolicyTypeDef
 
@@ -626,6 +631,9 @@ Optional fields:
   `Sequence`\[[CustomActionTypeDef](./type_defs.md#customactiontypedef)\]
 - `StatefulRuleGroupReferences`:
   `Sequence`\[[StatefulRuleGroupReferenceTypeDef](./type_defs.md#statefulrulegroupreferencetypedef)\]
+- `StatefulDefaultActions`: `Sequence`\[`str`\]
+- `StatefulEngineOptions`:
+  [StatefulEngineOptionsTypeDef](./type_defs.md#statefulengineoptionstypedef)
 
 ## FirewallStatusTypeDef
 
@@ -964,6 +972,8 @@ Optional fields:
 - `Capacity`: `int`
 - `RuleGroupStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ConsumedCapacity`: `int`
+- `NumberOfAssociations`: `int`
 
 ## RuleGroupTypeDef
 
@@ -978,6 +988,8 @@ Required fields:
 Optional fields:
 
 - `RuleVariables`: [RuleVariablesTypeDef](./type_defs.md#rulevariablestypedef)
+- `StatefulRuleOptions`:
+  [StatefulRuleOptionsTypeDef](./type_defs.md#statefulruleoptionstypedef)
 
 ## RuleOptionTypeDef
 
@@ -1034,6 +1046,16 @@ Optional fields:
 - `StatelessRulesAndCustomActions`:
   [StatelessRulesAndCustomActionsTypeDef](./type_defs.md#statelessrulesandcustomactionstypedef)
 
+## StatefulEngineOptionsTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import StatefulEngineOptionsTypeDef
+```
+
+Optional fields:
+
+- `RuleOrder`: [RuleOrderType](./literals.md#ruleordertype)
+
 ## StatefulRuleGroupReferenceTypeDef
 
 ```python
@@ -1043,6 +1065,20 @@ from mypy_boto3_network_firewall.type_defs import StatefulRuleGroupReferenceType
 Required fields:
 
 - `ResourceArn`: `str`
+
+Optional fields:
+
+- `Priority`: `int`
+
+## StatefulRuleOptionsTypeDef
+
+```python
+from mypy_boto3_network_firewall.type_defs import StatefulRuleOptionsTypeDef
+```
+
+Optional fields:
+
+- `RuleOrder`: [RuleOrderType](./literals.md#ruleordertype)
 
 ## StatefulRuleTypeDef
 

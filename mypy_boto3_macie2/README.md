@@ -140,6 +140,7 @@ from mypy_boto3_macie2.literals import AdminStatusType, ...
 
 - [AdminStatusType](./literals.md#adminstatustype)
 - [AllowsUnencryptedObjectUploadsType](./literals.md#allowsunencryptedobjectuploadstype)
+- [BucketMetadataErrorCodeType](./literals.md#bucketmetadataerrorcodetype)
 - [CurrencyType](./literals.md#currencytype)
 - [DayOfWeekType](./literals.md#dayofweektype)
 - [DescribeBucketsPaginatorName](./literals.md#describebucketspaginatorname)

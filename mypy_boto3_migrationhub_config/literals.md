@@ -30,6 +30,7 @@ from mypy_boto3_migrationhub_config.literals import ServiceName
 Values:
 
 - `accessanalyzer`
+- `account`
 - `acm`
 - `acm-pca`
 - `alexaforbusiness`
@@ -62,6 +63,7 @@ Values:
 - `chime-sdk-identity`
 - `chime-sdk-messaging`
 - `cloud9`
+- `cloudcontrol`
 - `clouddirectory`
 - `cloudformation`
 - `cloudfront`

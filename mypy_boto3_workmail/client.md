@@ -26,6 +26,7 @@ type annotations stubs module
     - [delete_alias](#delete_alias)
     - [delete_group](#delete_group)
     - [delete_mailbox_permissions](#delete_mailbox_permissions)
+    - [delete_mobile_device_access_override](#delete_mobile_device_access_override)
     - [delete_mobile_device_access_rule](#delete_mobile_device_access_rule)
     - [delete_organization](#delete_organization)
     - [delete_resource](#delete_resource)
@@ -44,12 +45,14 @@ type annotations stubs module
     - [get_default_retention_policy](#get_default_retention_policy)
     - [get_mailbox_details](#get_mailbox_details)
     - [get_mobile_device_access_effect](#get_mobile_device_access_effect)
+    - [get_mobile_device_access_override](#get_mobile_device_access_override)
     - [list_access_control_rules](#list_access_control_rules)
     - [list_aliases](#list_aliases)
     - [list_group_members](#list_group_members)
     - [list_groups](#list_groups)
     - [list_mailbox_export_jobs](#list_mailbox_export_jobs)
     - [list_mailbox_permissions](#list_mailbox_permissions)
+    - [list_mobile_device_access_overrides](#list_mobile_device_access_overrides)
     - [list_mobile_device_access_rules](#list_mobile_device_access_rules)
     - [list_organizations](#list_organizations)
     - [list_resource_delegates](#list_resource_delegates)
@@ -58,6 +61,7 @@ type annotations stubs module
     - [list_users](#list_users)
     - [put_access_control_rule](#put_access_control_rule)
     - [put_mailbox_permissions](#put_mailbox_permissions)
+    - [put_mobile_device_access_override](#put_mobile_device_access_override)
     - [put_retention_policy](#put_retention_policy)
     - [register_to_work_mail](#register_to_work_mail)
     - [reset_password](#reset_password)
@@ -436,6 +440,28 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### delete_mobile_device_access_override
+
+Deletes the mobile device access override for the given WorkMail organization,
+user, and device.
+
+Type annotations for
+`boto3.client("workmail").delete_mobile_device_access_override` method.
+
+Boto3 documentation:
+[WorkMail.Client.delete_mobile_device_access_override](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_override)
+
+Arguments mapping described in
+[DeleteMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#deletemobiledeviceaccessoverriderequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### delete_mobile_device_access_rule
 
 Deletes a mobile device access rule for the specified Amazon WorkMail
@@ -806,6 +832,29 @@ Keyword-only arguments:
 Returns
 [GetMobileDeviceAccessEffectResponseTypeDef](./type_defs.md#getmobiledeviceaccesseffectresponsetypedef).
 
+### get_mobile_device_access_override
+
+Gets the mobile device access override for the given WorkMail organization,
+user, and device.
+
+Type annotations for
+`boto3.client("workmail").get_mobile_device_access_override` method.
+
+Boto3 documentation:
+[WorkMail.Client.get_mobile_device_access_override](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_override)
+
+Arguments mapping described in
+[GetMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#getmobiledeviceaccessoverriderequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+
+Returns
+[GetMobileDeviceAccessOverrideResponseTypeDef](./type_defs.md#getmobiledeviceaccessoverrideresponsetypedef).
+
 ### list_access_control_rules
 
 Lists the access control rules for the specified organization.
@@ -936,6 +985,31 @@ Keyword-only arguments:
 
 Returns
 [ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef).
+
+### list_mobile_device_access_overrides
+
+Lists all the mobile device access overrides for any given combination of
+WorkMail organization, user, or device.
+
+Type annotations for
+`boto3.client("workmail").list_mobile_device_access_overrides` method.
+
+Boto3 documentation:
+[WorkMail.Client.list_mobile_device_access_overrides](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_overrides)
+
+Arguments mapping described in
+[ListMobileDeviceAccessOverridesRequestRequestTypeDef](./type_defs.md#listmobiledeviceaccessoverridesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str`
+- `DeviceId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListMobileDeviceAccessOverridesResponseTypeDef](./type_defs.md#listmobiledeviceaccessoverridesresponsetypedef).
 
 ### list_mobile_device_access_rules
 
@@ -1109,6 +1183,32 @@ Keyword-only arguments:
 - `PermissionValues`:
   `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
   *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### put_mobile_device_access_override
+
+Creates or updates a mobile device access override for the given WorkMail
+organization, user, and device.
+
+Type annotations for
+`boto3.client("workmail").put_mobile_device_access_override` method.
+
+Boto3 documentation:
+[WorkMail.Client.put_mobile_device_access_override](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_mobile_device_access_override)
+
+Arguments mapping described in
+[PutMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#putmobiledeviceaccessoverriderequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `UserId`: `str` *(required)*
+- `DeviceId`: `str` *(required)*
+- `Effect`:
+  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
+  *(required)*
+- `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 

@@ -29,6 +29,7 @@ type annotations stubs module
   - [DeleteAliasRequestRequestTypeDef](#deletealiasrequestrequesttypedef)
   - [DeleteGroupRequestRequestTypeDef](#deletegrouprequestrequesttypedef)
   - [DeleteMailboxPermissionsRequestRequestTypeDef](#deletemailboxpermissionsrequestrequesttypedef)
+  - [DeleteMobileDeviceAccessOverrideRequestRequestTypeDef](#deletemobiledeviceaccessoverriderequestrequesttypedef)
   - [DeleteMobileDeviceAccessRuleRequestRequestTypeDef](#deletemobiledeviceaccessrulerequestrequesttypedef)
   - [DeleteOrganizationRequestRequestTypeDef](#deleteorganizationrequestrequesttypedef)
   - [DeleteOrganizationResponseTypeDef](#deleteorganizationresponsetypedef)
@@ -58,6 +59,8 @@ type annotations stubs module
   - [GetMailboxDetailsResponseTypeDef](#getmailboxdetailsresponsetypedef)
   - [GetMobileDeviceAccessEffectRequestRequestTypeDef](#getmobiledeviceaccesseffectrequestrequesttypedef)
   - [GetMobileDeviceAccessEffectResponseTypeDef](#getmobiledeviceaccesseffectresponsetypedef)
+  - [GetMobileDeviceAccessOverrideRequestRequestTypeDef](#getmobiledeviceaccessoverriderequestrequesttypedef)
+  - [GetMobileDeviceAccessOverrideResponseTypeDef](#getmobiledeviceaccessoverrideresponsetypedef)
   - [GroupTypeDef](#grouptypedef)
   - [ListAccessControlRulesRequestRequestTypeDef](#listaccesscontrolrulesrequestrequesttypedef)
   - [ListAccessControlRulesResponseTypeDef](#listaccesscontrolrulesresponsetypedef)
@@ -71,6 +74,8 @@ type annotations stubs module
   - [ListMailboxExportJobsResponseTypeDef](#listmailboxexportjobsresponsetypedef)
   - [ListMailboxPermissionsRequestRequestTypeDef](#listmailboxpermissionsrequestrequesttypedef)
   - [ListMailboxPermissionsResponseTypeDef](#listmailboxpermissionsresponsetypedef)
+  - [ListMobileDeviceAccessOverridesRequestRequestTypeDef](#listmobiledeviceaccessoverridesrequestrequesttypedef)
+  - [ListMobileDeviceAccessOverridesResponseTypeDef](#listmobiledeviceaccessoverridesresponsetypedef)
   - [ListMobileDeviceAccessRulesRequestRequestTypeDef](#listmobiledeviceaccessrulesrequestrequesttypedef)
   - [ListMobileDeviceAccessRulesResponseTypeDef](#listmobiledeviceaccessrulesresponsetypedef)
   - [ListOrganizationsRequestRequestTypeDef](#listorganizationsrequestrequesttypedef)
@@ -86,12 +91,14 @@ type annotations stubs module
   - [MailboxExportJobTypeDef](#mailboxexportjobtypedef)
   - [MemberTypeDef](#membertypedef)
   - [MobileDeviceAccessMatchedRuleTypeDef](#mobiledeviceaccessmatchedruletypedef)
+  - [MobileDeviceAccessOverrideTypeDef](#mobiledeviceaccessoverridetypedef)
   - [MobileDeviceAccessRuleTypeDef](#mobiledeviceaccessruletypedef)
   - [OrganizationSummaryTypeDef](#organizationsummarytypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PermissionTypeDef](#permissiontypedef)
   - [PutAccessControlRuleRequestRequestTypeDef](#putaccesscontrolrulerequestrequesttypedef)
   - [PutMailboxPermissionsRequestRequestTypeDef](#putmailboxpermissionsrequestrequesttypedef)
+  - [PutMobileDeviceAccessOverrideRequestRequestTypeDef](#putmobiledeviceaccessoverriderequestrequesttypedef)
   - [PutRetentionPolicyRequestRequestTypeDef](#putretentionpolicyrequestrequesttypedef)
   - [RegisterToWorkMailRequestRequestTypeDef](#registertoworkmailrequestrequesttypedef)
   - [ResetPasswordRequestRequestTypeDef](#resetpasswordrequestrequesttypedef)
@@ -385,6 +392,18 @@ Required fields:
 - `OrganizationId`: `str`
 - `EntityId`: `str`
 - `GranteeId`: `str`
+
+## DeleteMobileDeviceAccessOverrideRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeleteMobileDeviceAccessOverrideRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `UserId`: `str`
+- `DeviceId`: `str`
 
 ## DeleteMobileDeviceAccessRuleRequestRequestTypeDef
 
@@ -781,6 +800,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetMobileDeviceAccessOverrideRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessOverrideRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `UserId`: `str`
+- `DeviceId`: `str`
+
+## GetMobileDeviceAccessOverrideResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import GetMobileDeviceAccessOverrideResponseTypeDef
+```
+
+Required fields:
+
+- `UserId`: `str`
+- `DeviceId`: `str`
+- `Effect`:
+  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
+- `Description`: `str`
+- `DateCreated`: `datetime`
+- `DateModified`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GroupTypeDef
 
 ```python
@@ -960,6 +1009,37 @@ Required fields:
 
 - `Permissions`:
   `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListMobileDeviceAccessOverridesRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessOverridesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+
+Optional fields:
+
+- `UserId`: `str`
+- `DeviceId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+## ListMobileDeviceAccessOverridesResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessOverridesResponseTypeDef
+```
+
+Required fields:
+
+- `Overrides`:
+  `List`\[[MobileDeviceAccessOverrideTypeDef](./type_defs.md#mobiledeviceaccessoverridetypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1163,6 +1243,22 @@ Optional fields:
 - `MobileDeviceAccessRuleId`: `str`
 - `Name`: `str`
 
+## MobileDeviceAccessOverrideTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import MobileDeviceAccessOverrideTypeDef
+```
+
+Optional fields:
+
+- `UserId`: `str`
+- `DeviceId`: `str`
+- `Effect`:
+  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
+- `Description`: `str`
+- `DateCreated`: `datetime`
+- `DateModified`: `datetime`
+
 ## MobileDeviceAccessRuleTypeDef
 
 ```python
@@ -1262,6 +1358,24 @@ Required fields:
 - `GranteeId`: `str`
 - `PermissionValues`:
   `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+
+## PutMobileDeviceAccessOverrideRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import PutMobileDeviceAccessOverrideRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `UserId`: `str`
+- `DeviceId`: `str`
+- `Effect`:
+  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
+
+Optional fields:
+
+- `Description`: `str`
 
 ## PutRetentionPolicyRequestRequestTypeDef
 

@@ -20,6 +20,7 @@ type annotations stubs module
     - [create_connection_alias](#create_connection_alias)
     - [create_ip_group](#create_ip_group)
     - [create_tags](#create_tags)
+    - [create_updated_workspace_image](#create_updated_workspace_image)
     - [create_workspace_bundle](#create_workspace_bundle)
     - [create_workspaces](#create_workspaces)
     - [delete_connection_alias](#delete_connection_alias)
@@ -291,6 +292,29 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### create_updated_workspace_image
+
+Creates a new updated WorkSpace image based on the specified source image.
+
+Type annotations for
+`boto3.client("workspaces").create_updated_workspace_image` method.
+
+Boto3 documentation:
+[WorkSpaces.Client.create_updated_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_updated_workspace_image)
+
+Arguments mapping described in
+[CreateUpdatedWorkspaceImageRequestRequestTypeDef](./type_defs.md#createupdatedworkspaceimagerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `Description`: `str` *(required)*
+- `SourceImageId`: `str` *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateUpdatedWorkspaceImageResultTypeDef](./type_defs.md#createupdatedworkspaceimageresulttypedef).
+
 ### create_workspace_bundle
 
 Creates the specified WorkSpace bundle.
@@ -511,7 +535,7 @@ Returns
 ### describe_connection_alias_permissions
 
 Describes the permissions that the owner of a connection alias has granted to
-another AWS account for the specified connection alias.
+another Amazon Web Services account for the specified connection alias.
 
 Type annotations for
 `boto3.client("workspaces").describe_connection_alias_permissions` method.
@@ -640,8 +664,8 @@ Returns
 
 ### describe_workspace_image_permissions
 
-Describes the permissions that the owner of an image has granted to other AWS
-accounts for an image.
+Describes the permissions that the owner of an image has granted to other
+Amazon Web Services accounts for an image.
 
 Type annotations for
 `boto3.client("workspaces").describe_workspace_image_permissions` method.
@@ -1271,8 +1295,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_workspace_image_permission
 
-Shares or unshares an image with one account in the same AWS Region by
-specifying whether that account has permission to copy the image.
+Shares or unshares an image with one account in the same Amazon Web Services
+Region by specifying whether that account has permission to copy the image.
 
 Type annotations for
 `boto3.client("workspaces").update_workspace_image_permission` method.
