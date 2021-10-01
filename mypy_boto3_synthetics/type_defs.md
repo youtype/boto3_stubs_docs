@@ -8,6 +8,8 @@ type annotations stubs module
 [mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 - [Typed dictionaries for boto3 Synthetics module](#typed-dictionaries-for-boto3-synthetics-module)
+  - [ArtifactConfigInputTypeDef](#artifactconfiginputtypedef)
+  - [ArtifactConfigOutputTypeDef](#artifactconfigoutputtypedef)
   - [BaseScreenshotTypeDef](#basescreenshottypedef)
   - [CanaryCodeInputTypeDef](#canarycodeinputtypedef)
   - [CanaryCodeOutputTypeDef](#canarycodeoutputtypedef)
@@ -39,6 +41,7 @@ type annotations stubs module
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RuntimeVersionTypeDef](#runtimeversiontypedef)
+  - [S3EncryptionConfigTypeDef](#s3encryptionconfigtypedef)
   - [StartCanaryRequestRequestTypeDef](#startcanaryrequestrequesttypedef)
   - [StopCanaryRequestRequestTypeDef](#stopcanaryrequestrequesttypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
@@ -48,6 +51,28 @@ type annotations stubs module
   - [VisualReferenceOutputTypeDef](#visualreferenceoutputtypedef)
   - [VpcConfigInputTypeDef](#vpcconfiginputtypedef)
   - [VpcConfigOutputTypeDef](#vpcconfigoutputtypedef)
+
+## ArtifactConfigInputTypeDef
+
+```python
+from mypy_boto3_synthetics.type_defs import ArtifactConfigInputTypeDef
+```
+
+Optional fields:
+
+- `S3Encryption`:
+  [S3EncryptionConfigTypeDef](./type_defs.md#s3encryptionconfigtypedef)
+
+## ArtifactConfigOutputTypeDef
+
+```python
+from mypy_boto3_synthetics.type_defs import ArtifactConfigOutputTypeDef
+```
+
+Optional fields:
+
+- `S3Encryption`:
+  [S3EncryptionConfigTypeDef](./type_defs.md#s3encryptionconfigtypedef)
 
 ## BaseScreenshotTypeDef
 
@@ -244,6 +269,8 @@ Optional fields:
 - `VisualReference`:
   [VisualReferenceOutputTypeDef](./type_defs.md#visualreferenceoutputtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ArtifactConfig`:
+  [ArtifactConfigOutputTypeDef](./type_defs.md#artifactconfigoutputtypedef)
 
 ## CreateCanaryRequestRequestTypeDef
 
@@ -269,6 +296,8 @@ Optional fields:
 - `FailureRetentionPeriodInDays`: `int`
 - `VpcConfig`: [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
+- `ArtifactConfig`:
+  [ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef)
 
 ## CreateCanaryResponseTypeDef
 
@@ -465,6 +494,17 @@ Optional fields:
 - `ReleaseDate`: `datetime`
 - `DeprecationDate`: `datetime`
 
+## S3EncryptionConfigTypeDef
+
+```python
+from mypy_boto3_synthetics.type_defs import S3EncryptionConfigTypeDef
+```
+
+Optional fields:
+
+- `EncryptionMode`: [EncryptionModeType](./literals.md#encryptionmodetype)
+- `KmsKeyArn`: `str`
+
 ## StartCanaryRequestRequestTypeDef
 
 ```python
@@ -531,6 +571,9 @@ Optional fields:
 - `VpcConfig`: [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
 - `VisualReference`:
   [VisualReferenceInputTypeDef](./type_defs.md#visualreferenceinputtypedef)
+- `ArtifactS3Location`: `str`
+- `ArtifactConfig`:
+  [ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef)
 
 ## VisualReferenceInputTypeDef
 

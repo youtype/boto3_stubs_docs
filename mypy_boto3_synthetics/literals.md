@@ -12,6 +12,7 @@ type annotations stubs module
   - [CanaryRunStateType](#canaryrunstatetype)
   - [CanaryStateReasonCodeType](#canarystatereasoncodetype)
   - [CanaryStateType](#canarystatetype)
+  - [EncryptionModeType](#encryptionmodetype)
   - [ServiceName](#servicename)
 
 ## CanaryRunStateReasonCodeType
@@ -64,6 +65,17 @@ Values:
 - `STOPPED`
 - `STOPPING`
 - `UPDATING`
+
+## EncryptionModeType
+
+```python
+from mypy_boto3_synthetics.literals import EncryptionModeType
+```
+
+Values:
+
+- `SSE_KMS`
+- `SSE_S3`
 
 ## ServiceName
 

@@ -89,8 +89,8 @@ Returns [Exceptions](#exceptions).
 
 ### associate_custom_domain
 
-Associate your own domain name with the AWS App Runner subdomain URL of your
-App Runner service.
+Associate your own domain name with the App Runner subdomain URL of your App
+Runner service.
 
 Type annotations for `boto3.client("apprunner").associate_custom_domain`
 method.
@@ -127,7 +127,7 @@ Returns `bool`.
 
 ### create_auto_scaling_configuration
 
-Create an AWS App Runner automatic scaling configuration resource.
+Create an App Runner automatic scaling configuration resource.
 
 Type annotations for
 `boto3.client("apprunner").create_auto_scaling_configuration` method.
@@ -151,7 +151,7 @@ Returns
 
 ### create_connection
 
-Create an AWS App Runner connection resource.
+Create an App Runner connection resource.
 
 Type annotations for `boto3.client("apprunner").create_connection` method.
 
@@ -173,7 +173,7 @@ Returns
 
 ### create_service
 
-Create an AWS App Runner service.
+Create an App Runner service.
 
 Type annotations for `boto3.client("apprunner").create_service` method.
 
@@ -203,7 +203,7 @@ Returns
 
 ### delete_auto_scaling_configuration
 
-Delete an AWS App Runner automatic scaling configuration resource.
+Delete an App Runner automatic scaling configuration resource.
 
 Type annotations for
 `boto3.client("apprunner").delete_auto_scaling_configuration` method.
@@ -223,7 +223,7 @@ Returns
 
 ### delete_connection
 
-Delete an AWS App Runner connection.
+Delete an App Runner connection.
 
 Type annotations for `boto3.client("apprunner").delete_connection` method.
 
@@ -242,7 +242,7 @@ Returns
 
 ### delete_service
 
-Delete an AWS App Runner service.
+Delete an App Runner service.
 
 Type annotations for `boto3.client("apprunner").delete_service` method.
 
@@ -261,7 +261,7 @@ Returns
 
 ### describe_auto_scaling_configuration
 
-Return a full description of an AWS App Runner automatic scaling configuration
+Return a full description of an App Runner automatic scaling configuration
 resource.
 
 Type annotations for
@@ -282,7 +282,7 @@ Returns
 
 ### describe_custom_domains
 
-Return a description of custom domain names that are associated with an AWS App
+Return a description of custom domain names that are associated with an App
 Runner service.
 
 Type annotations for `boto3.client("apprunner").describe_custom_domains`
@@ -305,7 +305,7 @@ Returns
 
 ### describe_service
 
-Return a full description of an AWS App Runner service.
+Return a full description of an App Runner service.
 
 Type annotations for `boto3.client("apprunner").describe_service` method.
 
@@ -324,7 +324,7 @@ Returns
 
 ### disassociate_custom_domain
 
-Disassociate a custom domain name from an AWS App Runner service.
+Disassociate a custom domain name from an App Runner service.
 
 Type annotations for `boto3.client("apprunner").disassociate_custom_domain`
 method.
@@ -363,8 +363,8 @@ Returns `str`.
 
 ### list_auto_scaling_configurations
 
-Returns a list of AWS App Runner automatic scaling configurations in your AWS
-account.
+Returns a list of App Runner automatic scaling configurations in your Amazon
+Web Services account.
 
 Type annotations for
 `boto3.client("apprunner").list_auto_scaling_configurations` method.
@@ -387,8 +387,8 @@ Returns
 
 ### list_connections
 
-Returns a list of AWS App Runner connections that are associated with your AWS
-account.
+Returns a list of App Runner connections that are associated with your Amazon
+Web Services account.
 
 Type annotations for `boto3.client("apprunner").list_connections` method.
 
@@ -409,7 +409,7 @@ Returns
 
 ### list_operations
 
-Return a list of operations that occurred on an AWS App Runner service.
+Return a list of operations that occurred on an App Runner service.
 
 Type annotations for `boto3.client("apprunner").list_operations` method.
 
@@ -430,7 +430,8 @@ Returns
 
 ### list_services
 
-Returns a list of running AWS App Runner services in your AWS account.
+Returns a list of running App Runner services in your Amazon Web Services
+account.
 
 Type annotations for `boto3.client("apprunner").list_services` method.
 
@@ -450,7 +451,7 @@ Returns
 
 ### list_tags_for_resource
 
-List tags that are associated with for an AWS App Runner resource.
+List tags that are associated with for an App Runner resource.
 
 Type annotations for `boto3.client("apprunner").list_tags_for_resource` method.
 
@@ -469,7 +470,7 @@ Returns
 
 ### pause_service
 
-Pause an active AWS App Runner service.
+Pause an active App Runner service.
 
 Type annotations for `boto3.client("apprunner").pause_service` method.
 
@@ -488,7 +489,7 @@ Returns
 
 ### resume_service
 
-Resume an active AWS App Runner service.
+Resume an active App Runner service.
 
 Type annotations for `boto3.client("apprunner").resume_service` method.
 
@@ -508,7 +509,7 @@ Returns
 ### start_deployment
 
 Initiate a manual deployment of the latest commit in a source code repository
-or the latest image in a source image repository to an AWS App Runner service.
+or the latest image in a source image repository to an App Runner service.
 
 Type annotations for `boto3.client("apprunner").start_deployment` method.
 
@@ -565,7 +566,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### update_service
 
-Update an AWS App Runner service.
+Update an App Runner service.
 
 Type annotations for `boto3.client("apprunner").update_service` method.
 

@@ -3069,6 +3069,7 @@ Keyword-only arguments:
 - `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `ChangeRequestName`: `str`
 - `ClientToken`: `str`
+- `AutoApprove`: `bool`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ScheduledEndTime`: `Union`\[`datetime`, `str`\]
 - `ChangeDetails`: `str`

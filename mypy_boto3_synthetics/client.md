@@ -121,6 +121,8 @@ Keyword-only arguments:
 - `FailureRetentionPeriodInDays`: `int`
 - `VpcConfig`: [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
+- `ArtifactConfig`:
+  [ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef)
 
 Returns
 [CreateCanaryResponseTypeDef](./type_defs.md#createcanaryresponsetypedef).
@@ -387,5 +389,8 @@ Keyword-only arguments:
 - `VpcConfig`: [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
 - `VisualReference`:
   [VisualReferenceInputTypeDef](./type_defs.md#visualreferenceinputtypedef)
+- `ArtifactS3Location`: `str`
+- `ArtifactConfig`:
+  [ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef)
 
 Returns `Dict`\[`str`, `Any`\].
