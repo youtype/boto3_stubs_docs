@@ -36,6 +36,7 @@ type annotations stubs module
   - [ByoipCidrStateType](#byoipcidrstatetype)
   - [CancelBatchErrorCodeType](#cancelbatcherrorcodetype)
   - [CancelSpotInstanceRequestStateType](#cancelspotinstancerequeststatetype)
+  - [CapacityReservationFleetStateType](#capacityreservationfleetstatetype)
   - [CapacityReservationInstancePlatformType](#capacityreservationinstanceplatformtype)
   - [CapacityReservationPreferenceType](#capacityreservationpreferencetype)
   - [CapacityReservationStateType](#capacityreservationstatetype)
@@ -67,6 +68,7 @@ type annotations stubs module
   - [DeleteQueuedReservedInstancesErrorCodeType](#deletequeuedreservedinstanceserrorcodetype)
   - [DescribeAddressesAttributePaginatorName](#describeaddressesattributepaginatorname)
   - [DescribeByoipCidrsPaginatorName](#describebyoipcidrspaginatorname)
+  - [DescribeCapacityReservationFleetsPaginatorName](#describecapacityreservationfleetspaginatorname)
   - [DescribeCapacityReservationsPaginatorName](#describecapacityreservationspaginatorname)
   - [DescribeCarrierGatewaysPaginatorName](#describecarriergatewayspaginatorname)
   - [DescribeClassicLinkInstancesPaginatorName](#describeclassiclinkinstancespaginatorname)
@@ -180,9 +182,11 @@ type annotations stubs module
   - [ExportTaskStateType](#exporttaskstatetype)
   - [FastSnapshotRestoreStateCodeType](#fastsnapshotrestorestatecodetype)
   - [FleetActivityStatusType](#fleetactivitystatustype)
+  - [FleetCapacityReservationTenancyType](#fleetcapacityreservationtenancytype)
   - [FleetCapacityReservationUsageStrategyType](#fleetcapacityreservationusagestrategytype)
   - [FleetEventTypeType](#fleeteventtypetype)
   - [FleetExcessCapacityTerminationPolicyType](#fleetexcesscapacityterminationpolicytype)
+  - [FleetInstanceMatchCriteriaType](#fleetinstancematchcriteriatype)
   - [FleetOnDemandAllocationStrategyType](#fleetondemandallocationstrategytype)
   - [FleetReplacementStrategyType](#fleetreplacementstrategytype)
   - [FleetStateCodeType](#fleetstatecodetype)
@@ -724,6 +728,24 @@ Values:
 - `completed`
 - `open`
 
+## CapacityReservationFleetStateType
+
+```python
+from mypy_boto3_ec2.literals import CapacityReservationFleetStateType
+```
+
+Values:
+
+- `active`
+- `cancelled`
+- `cancelling`
+- `expired`
+- `expiring`
+- `failed`
+- `modifying`
+- `partially_fulfilled`
+- `submitted`
+
 ## CapacityReservationInstancePlatformType
 
 ```python
@@ -1082,6 +1104,16 @@ from mypy_boto3_ec2.literals import DescribeByoipCidrsPaginatorName
 Values:
 
 - `describe_byoip_cidrs`
+
+## DescribeCapacityReservationFleetsPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeCapacityReservationFleetsPaginatorName
+```
+
+Values:
+
+- `describe_capacity_reservation_fleets`
 
 ## DescribeCapacityReservationsPaginatorName
 
@@ -2252,6 +2284,16 @@ Values:
 - `pending_fulfillment`
 - `pending_termination`
 
+## FleetCapacityReservationTenancyType
+
+```python
+from mypy_boto3_ec2.literals import FleetCapacityReservationTenancyType
+```
+
+Values:
+
+- `default`
+
 ## FleetCapacityReservationUsageStrategyType
 
 ```python
@@ -2284,6 +2326,16 @@ Values:
 
 - `no-termination`
 - `termination`
+
+## FleetInstanceMatchCriteriaType
+
+```python
+from mypy_boto3_ec2.literals import FleetInstanceMatchCriteriaType
+```
+
+Values:
+
+- `open`
 
 ## FleetOnDemandAllocationStrategyType
 
@@ -5342,6 +5394,7 @@ Values:
 
 - `describe_addresses_attribute`
 - `describe_byoip_cidrs`
+- `describe_capacity_reservation_fleets`
 - `describe_capacity_reservations`
 - `describe_carrier_gateways`
 - `describe_classic_link_instances`

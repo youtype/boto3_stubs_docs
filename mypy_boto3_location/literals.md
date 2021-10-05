@@ -21,6 +21,7 @@ type annotations stubs module
   - [ListRouteCalculatorsPaginatorName](#listroutecalculatorspaginatorname)
   - [ListTrackerConsumersPaginatorName](#listtrackerconsumerspaginatorname)
   - [ListTrackersPaginatorName](#listtrackerspaginatorname)
+  - [PositionFilteringType](#positionfilteringtype)
   - [PricingPlanType](#pricingplantype)
   - [TravelModeType](#travelmodetype)
   - [VehicleWeightUnitType](#vehicleweightunittype)
@@ -164,6 +165,17 @@ from mypy_boto3_location.literals import ListTrackersPaginatorName
 Values:
 
 - `list_trackers`
+
+## PositionFilteringType
+
+```python
+from mypy_boto3_location.literals import PositionFilteringType
+```
+
+Values:
+
+- `DistanceBased`
+- `TimeBased`
 
 ## PricingPlanType
 

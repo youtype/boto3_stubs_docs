@@ -126,6 +126,7 @@ Values:
 - `ElastiCacheReplicaEngineCPUUtilization`
 - `KafkaBrokerStorageUtilization`
 - `LambdaProvisionedConcurrencyUtilization`
+- `NeptuneReaderAverageCPUUtilization`
 - `RDSReaderAverageCPUUtilization`
 - `RDSReaderAverageDatabaseConnections`
 - `SageMakerVariantInvocationsPerInstance`
@@ -166,6 +167,7 @@ Values:
 - `elasticmapreduce:instancegroup:InstanceCount`
 - `kafka:broker-storage:VolumeSize`
 - `lambda:function:ProvisionedConcurrency`
+- `neptune:cluster:ReadReplicaCount`
 - `rds:cluster:ReadReplicaCount`
 - `sagemaker:variant:DesiredInstanceCount`
 
@@ -203,6 +205,7 @@ Values:
 - `elasticmapreduce`
 - `kafka`
 - `lambda`
+- `neptune`
 - `rds`
 - `sagemaker`
 

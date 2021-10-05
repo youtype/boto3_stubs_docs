@@ -669,6 +669,7 @@ Keyword-only arguments:
 - `ConnectionInput`:
   [ConnectionInputTypeDef](./type_defs.md#connectioninputtypedef) *(required)*
 - `CatalogId`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 

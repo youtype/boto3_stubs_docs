@@ -10,6 +10,7 @@ type annotations stubs module
 - [Paginators for boto3 EC2 module](#paginators-for-boto3-ec2-module)
   - [DescribeAddressesAttributePaginator](#describeaddressesattributepaginator)
   - [DescribeByoipCidrsPaginator](#describebyoipcidrspaginator)
+  - [DescribeCapacityReservationFleetsPaginator](#describecapacityreservationfleetspaginator)
   - [DescribeCapacityReservationsPaginator](#describecapacityreservationspaginator)
   - [DescribeCarrierGatewaysPaginator](#describecarriergatewayspaginator)
   - [DescribeClassicLinkInstancesPaginator](#describeclassiclinkinstancespaginator)
@@ -167,6 +168,34 @@ Arguments for `DescribeByoipCidrsPaginator.paginate` method:
 
 `DescribeByoipCidrsPaginator.paginate` returns
 `_PageIterator`\[[DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef)\].
+
+## DescribeCapacityReservationFleetsPaginator
+
+Type annotations for
+`boto3.client("ec2").get_paginator("describe_capacity_reservation_fleets")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_ec2.paginator import DescribeCapacityReservationFleetsPaginator
+
+def get_describe_capacity_reservation_fleets_paginator() -> DescribeCapacityReservationFleetsPaginator:
+    return boto3.client("ec2").get_paginator("describe_capacity_reservation_fleets")
+```
+
+Boto3 documentation:
+[EC2.Paginator.DescribeCapacityReservationFleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeCapacityReservationFleets)
+
+Arguments for `DescribeCapacityReservationFleetsPaginator.paginate` method:
+
+- `CapacityReservationFleetIds`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`DescribeCapacityReservationFleetsPaginator.paginate` returns
+`_PageIterator`\[[DescribeCapacityReservationFleetsResultTypeDef](./type_defs.md#describecapacityreservationfleetsresulttypedef)\].
 
 ## DescribeCapacityReservationsPaginator
 

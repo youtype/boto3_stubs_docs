@@ -584,6 +584,7 @@ Required fields:
 
 - `ReportPlanName`: `str`
 - `ReportPlanArn`: `str`
+- `CreationTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1831,6 +1832,11 @@ from mypy_boto3_backup.type_defs import ReportSettingTypeDef
 Required fields:
 
 - `ReportTemplate`: `str`
+
+Optional fields:
+
+- `FrameworkArns`: `Sequence`\[`str`\]
+- `NumberOfFrameworks`: `int`
 
 ## ResponseMetadataTypeDef
 

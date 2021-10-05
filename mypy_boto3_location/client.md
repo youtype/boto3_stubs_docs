@@ -437,6 +437,8 @@ Keyword-only arguments:
 - `TrackerName`: `str` *(required)*
 - `Description`: `str`
 - `KmsKeyId`: `str`
+- `PositionFiltering`:
+  [PositionFilteringType](./literals.md#positionfilteringtype)
 - `PricingPlanDataSource`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
@@ -1211,6 +1213,8 @@ Keyword-only arguments:
 
 - `TrackerName`: `str` *(required)*
 - `Description`: `str`
+- `PositionFiltering`:
+  [PositionFilteringType](./literals.md#positionfilteringtype)
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
 

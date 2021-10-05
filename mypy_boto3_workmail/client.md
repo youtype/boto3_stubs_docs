@@ -34,6 +34,7 @@ type annotations stubs module
     - [delete_user](#delete_user)
     - [deregister_from_work_mail](#deregister_from_work_mail)
     - [describe_group](#describe_group)
+    - [describe_inbound_dmarc_settings](#describe_inbound_dmarc_settings)
     - [describe_mailbox_export_job](#describe_mailbox_export_job)
     - [describe_organization](#describe_organization)
     - [describe_resource](#describe_resource)
@@ -60,6 +61,7 @@ type annotations stubs module
     - [list_tags_for_resource](#list_tags_for_resource)
     - [list_users](#list_users)
     - [put_access_control_rule](#put_access_control_rule)
+    - [put_inbound_dmarc_settings](#put_inbound_dmarc_settings)
     - [put_mailbox_permissions](#put_mailbox_permissions)
     - [put_mobile_device_access_override](#put_mobile_device_access_override)
     - [put_retention_policy](#put_retention_policy)
@@ -601,6 +603,26 @@ Keyword-only arguments:
 
 Returns
 [DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
+
+### describe_inbound_dmarc_settings
+
+Lists the settings in a DMARC policy for a specified organization.
+
+Type annotations for `boto3.client("workmail").describe_inbound_dmarc_settings`
+method.
+
+Boto3 documentation:
+[WorkMail.Client.describe_inbound_dmarc_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_inbound_dmarc_settings)
+
+Arguments mapping described in
+[DescribeInboundDmarcSettingsRequestRequestTypeDef](./type_defs.md#describeinbounddmarcsettingsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+
+Returns
+[DescribeInboundDmarcSettingsResponseTypeDef](./type_defs.md#describeinbounddmarcsettingsresponsetypedef).
 
 ### describe_mailbox_export_job
 
@@ -1160,6 +1182,26 @@ Keyword-only arguments:
 - `NotActions`: `Sequence`\[`str`\]
 - `UserIds`: `Sequence`\[`str`\]
 - `NotUserIds`: `Sequence`\[`str`\]
+
+Returns `Dict`\[`str`, `Any`\].
+
+### put_inbound_dmarc_settings
+
+Enables or disables a DMARC policy for a given organization.
+
+Type annotations for `boto3.client("workmail").put_inbound_dmarc_settings`
+method.
+
+Boto3 documentation:
+[WorkMail.Client.put_inbound_dmarc_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_inbound_dmarc_settings)
+
+Arguments mapping described in
+[PutInboundDmarcSettingsRequestRequestTypeDef](./type_defs.md#putinbounddmarcsettingsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `Enforced`: `bool` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

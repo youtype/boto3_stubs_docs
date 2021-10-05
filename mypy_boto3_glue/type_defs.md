@@ -1478,6 +1478,7 @@ Required fields:
 Optional fields:
 
 - `CatalogId`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 ## CreateCrawlerRequestRequestTypeDef
 

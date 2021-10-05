@@ -48,6 +48,7 @@ type annotations stubs module
     - [can_paginate](#can_paginate)
     - [cancel_bundle_task](#cancel_bundle_task)
     - [cancel_capacity_reservation](#cancel_capacity_reservation)
+    - [cancel_capacity_reservation_fleets](#cancel_capacity_reservation_fleets)
     - [cancel_conversion_task](#cancel_conversion_task)
     - [cancel_export_task](#cancel_export_task)
     - [cancel_import_task](#cancel_import_task)
@@ -59,6 +60,7 @@ type annotations stubs module
     - [copy_image](#copy_image)
     - [copy_snapshot](#copy_snapshot)
     - [create_capacity_reservation](#create_capacity_reservation)
+    - [create_capacity_reservation_fleet](#create_capacity_reservation_fleet)
     - [create_carrier_gateway](#create_carrier_gateway)
     - [create_client_vpn_endpoint](#create_client_vpn_endpoint)
     - [create_client_vpn_route](#create_client_vpn_route)
@@ -190,6 +192,7 @@ type annotations stubs module
     - [describe_availability_zones](#describe_availability_zones)
     - [describe_bundle_tasks](#describe_bundle_tasks)
     - [describe_byoip_cidrs](#describe_byoip_cidrs)
+    - [describe_capacity_reservation_fleets](#describe_capacity_reservation_fleets)
     - [describe_capacity_reservations](#describe_capacity_reservations)
     - [describe_carrier_gateways](#describe_carrier_gateways)
     - [describe_classic_link_instances](#describe_classic_link_instances)
@@ -381,6 +384,7 @@ type annotations stubs module
     - [modify_address_attribute](#modify_address_attribute)
     - [modify_availability_zone_group](#modify_availability_zone_group)
     - [modify_capacity_reservation](#modify_capacity_reservation)
+    - [modify_capacity_reservation_fleet](#modify_capacity_reservation_fleet)
     - [modify_client_vpn_endpoint](#modify_client_vpn_endpoint)
     - [modify_default_credit_specification](#modify_default_credit_specification)
     - [modify_ebs_default_kms_key_id](#modify_ebs_default_kms_key_id)
@@ -1358,6 +1362,27 @@ Keyword-only arguments:
 Returns
 [CancelCapacityReservationResultTypeDef](./type_defs.md#cancelcapacityreservationresulttypedef).
 
+### cancel_capacity_reservation_fleets
+
+Cancels one or more Capacity Reservation Fleets.
+
+Type annotations for `boto3.client("ec2").cancel_capacity_reservation_fleets`
+method.
+
+Boto3 documentation:
+[EC2.Client.cancel_capacity_reservation_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.cancel_capacity_reservation_fleets)
+
+Arguments mapping described in
+[CancelCapacityReservationFleetsRequestRequestTypeDef](./type_defs.md#cancelcapacityreservationfleetsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CapacityReservationFleetIds`: `Sequence`\[`str`\] *(required)*
+- `DryRun`: `bool`
+
+Returns
+[CancelCapacityReservationFleetsResultTypeDef](./type_defs.md#cancelcapacityreservationfleetsresulttypedef).
+
 ### cancel_conversion_task
 
 Cancels an active conversion task.
@@ -1612,6 +1637,39 @@ Keyword-only arguments:
 
 Returns
 [CreateCapacityReservationResultTypeDef](./type_defs.md#createcapacityreservationresulttypedef).
+
+### create_capacity_reservation_fleet
+
+Creates a Capacity Reservation Fleet.
+
+Type annotations for `boto3.client("ec2").create_capacity_reservation_fleet`
+method.
+
+Boto3 documentation:
+[EC2.Client.create_capacity_reservation_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.create_capacity_reservation_fleet)
+
+Arguments mapping described in
+[CreateCapacityReservationFleetRequestRequestTypeDef](./type_defs.md#createcapacityreservationfleetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InstanceTypeSpecifications`:
+  `Sequence`\[[ReservationFleetInstanceSpecificationTypeDef](./type_defs.md#reservationfleetinstancespecificationtypedef)\]
+  *(required)*
+- `TotalTargetCapacity`: `int` *(required)*
+- `AllocationStrategy`: `str`
+- `ClientToken`: `str`
+- `Tenancy`: `Literal['default']` (see
+  [FleetCapacityReservationTenancyType](./literals.md#fleetcapacityreservationtenancytype))
+- `EndDate`: `Union`\[`datetime`, `str`\]
+- `InstanceMatchCriteria`: `Literal['open']` (see
+  [FleetInstanceMatchCriteriaType](./literals.md#fleetinstancematchcriteriatype))
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+Returns
+[CreateCapacityReservationFleetResultTypeDef](./type_defs.md#createcapacityreservationfleetresulttypedef).
 
 ### create_carrier_gateway
 
@@ -4641,6 +4699,30 @@ Keyword-only arguments:
 
 Returns
 [DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef).
+
+### describe_capacity_reservation_fleets
+
+Describes one or more Capacity Reservation Fleets.
+
+Type annotations for `boto3.client("ec2").describe_capacity_reservation_fleets`
+method.
+
+Boto3 documentation:
+[EC2.Client.describe_capacity_reservation_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.describe_capacity_reservation_fleets)
+
+Arguments mapping described in
+[DescribeCapacityReservationFleetsRequestRequestTypeDef](./type_defs.md#describecapacityreservationfleetsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CapacityReservationFleetIds`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+
+Returns
+[DescribeCapacityReservationFleetsResultTypeDef](./type_defs.md#describecapacityreservationfleetsresulttypedef).
 
 ### describe_capacity_reservations
 
@@ -9052,6 +9134,30 @@ Keyword-only arguments:
 Returns
 [ModifyCapacityReservationResultTypeDef](./type_defs.md#modifycapacityreservationresulttypedef).
 
+### modify_capacity_reservation_fleet
+
+Modifies a Capacity Reservation Fleet.
+
+Type annotations for `boto3.client("ec2").modify_capacity_reservation_fleet`
+method.
+
+Boto3 documentation:
+[EC2.Client.modify_capacity_reservation_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client.modify_capacity_reservation_fleet)
+
+Arguments mapping described in
+[ModifyCapacityReservationFleetRequestRequestTypeDef](./type_defs.md#modifycapacityreservationfleetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CapacityReservationFleetId`: `str` *(required)*
+- `TotalTargetCapacity`: `int`
+- `EndDate`: `Union`\[`datetime`, `str`\]
+- `DryRun`: `bool`
+- `RemoveEndDate`: `bool`
+
+Returns
+[ModifyCapacityReservationFleetResultTypeDef](./type_defs.md#modifycapacityreservationfleetresulttypedef).
+
 ### modify_client_vpn_endpoint
 
 Modifies the specified Client VPN endpoint.
@@ -11511,6 +11617,8 @@ Type annotations for `boto3.client("ec2").get_paginator` method with overloads.
   [DescribeAddressesAttributePaginator](./paginators.md#describeaddressesattributepaginator)
 - `client.get_paginator("describe_byoip_cidrs")` ->
   [DescribeByoipCidrsPaginator](./paginators.md#describebyoipcidrspaginator)
+- `client.get_paginator("describe_capacity_reservation_fleets")` ->
+  [DescribeCapacityReservationFleetsPaginator](./paginators.md#describecapacityreservationfleetspaginator)
 - `client.get_paginator("describe_capacity_reservations")` ->
   [DescribeCapacityReservationsPaginator](./paginators.md#describecapacityreservationspaginator)
 - `client.get_paginator("describe_carrier_gateways")` ->

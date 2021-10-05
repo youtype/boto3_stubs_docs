@@ -144,6 +144,7 @@ from mypy_boto3_location.literals import BatchItemErrorCodeType, ...
 - [ListRouteCalculatorsPaginatorName](./literals.md#listroutecalculatorspaginatorname)
 - [ListTrackerConsumersPaginatorName](./literals.md#listtrackerconsumerspaginatorname)
 - [ListTrackersPaginatorName](./literals.md#listtrackerspaginatorname)
+- [PositionFilteringType](./literals.md#positionfilteringtype)
 - [PricingPlanType](./literals.md#pricingplantype)
 - [TravelModeType](./literals.md#travelmodetype)
 - [VehicleWeightUnitType](./literals.md#vehicleweightunittype)

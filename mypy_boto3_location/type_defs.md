@@ -621,6 +621,8 @@ Optional fields:
 
 - `Description`: `str`
 - `KmsKeyId`: `str`
+- `PositionFiltering`:
+  [PositionFilteringType](./literals.md#positionfilteringtype)
 - `PricingPlanDataSource`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
@@ -840,6 +842,8 @@ Required fields:
 - `CreateTime`: `datetime`
 - `Description`: `str`
 - `KmsKeyId`: `str`
+- `PositionFiltering`:
+  [PositionFilteringType](./literals.md#positionfilteringtype)
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
@@ -1853,6 +1857,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+- `PositionFiltering`:
+  [PositionFilteringType](./literals.md#positionfilteringtype)
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
 

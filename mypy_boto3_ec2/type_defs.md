@@ -120,6 +120,9 @@ type annotations stubs module
   - [ByoipCidrTypeDef](#byoipcidrtypedef)
   - [CancelBundleTaskRequestRequestTypeDef](#cancelbundletaskrequestrequesttypedef)
   - [CancelBundleTaskResultTypeDef](#cancelbundletaskresulttypedef)
+  - [CancelCapacityReservationFleetErrorTypeDef](#cancelcapacityreservationfleeterrortypedef)
+  - [CancelCapacityReservationFleetsRequestRequestTypeDef](#cancelcapacityreservationfleetsrequestrequesttypedef)
+  - [CancelCapacityReservationFleetsResultTypeDef](#cancelcapacityreservationfleetsresulttypedef)
   - [CancelCapacityReservationRequestRequestTypeDef](#cancelcapacityreservationrequestrequesttypedef)
   - [CancelCapacityReservationResultTypeDef](#cancelcapacityreservationresulttypedef)
   - [CancelConversionRequestRequestTypeDef](#cancelconversionrequestrequesttypedef)
@@ -136,6 +139,8 @@ type annotations stubs module
   - [CancelSpotInstanceRequestsRequestRequestTypeDef](#cancelspotinstancerequestsrequestrequesttypedef)
   - [CancelSpotInstanceRequestsResultTypeDef](#cancelspotinstancerequestsresulttypedef)
   - [CancelledSpotInstanceRequestTypeDef](#cancelledspotinstancerequesttypedef)
+  - [CapacityReservationFleetCancellationStateTypeDef](#capacityreservationfleetcancellationstatetypedef)
+  - [CapacityReservationFleetTypeDef](#capacityreservationfleettypedef)
   - [CapacityReservationGroupTypeDef](#capacityreservationgrouptypedef)
   - [CapacityReservationOptionsRequestTypeDef](#capacityreservationoptionsrequesttypedef)
   - [CapacityReservationOptionsTypeDef](#capacityreservationoptionstypedef)
@@ -184,6 +189,8 @@ type annotations stubs module
   - [CopySnapshotResultTypeDef](#copysnapshotresulttypedef)
   - [CpuOptionsRequestTypeDef](#cpuoptionsrequesttypedef)
   - [CpuOptionsTypeDef](#cpuoptionstypedef)
+  - [CreateCapacityReservationFleetRequestRequestTypeDef](#createcapacityreservationfleetrequestrequesttypedef)
+  - [CreateCapacityReservationFleetResultTypeDef](#createcapacityreservationfleetresulttypedef)
   - [CreateCapacityReservationRequestRequestTypeDef](#createcapacityreservationrequestrequesttypedef)
   - [CreateCapacityReservationResultTypeDef](#createcapacityreservationresulttypedef)
   - [CreateCarrierGatewayRequestRequestTypeDef](#createcarriergatewayrequestrequesttypedef)
@@ -492,6 +499,8 @@ type annotations stubs module
   - [DescribeBundleTasksResultTypeDef](#describebundletasksresulttypedef)
   - [DescribeByoipCidrsRequestRequestTypeDef](#describebyoipcidrsrequestrequesttypedef)
   - [DescribeByoipCidrsResultTypeDef](#describebyoipcidrsresulttypedef)
+  - [DescribeCapacityReservationFleetsRequestRequestTypeDef](#describecapacityreservationfleetsrequestrequesttypedef)
+  - [DescribeCapacityReservationFleetsResultTypeDef](#describecapacityreservationfleetsresulttypedef)
   - [DescribeCapacityReservationsRequestRequestTypeDef](#describecapacityreservationsrequestrequesttypedef)
   - [DescribeCapacityReservationsResultTypeDef](#describecapacityreservationsresulttypedef)
   - [DescribeCarrierGatewaysRequestRequestTypeDef](#describecarriergatewaysrequestrequesttypedef)
@@ -858,10 +867,12 @@ type annotations stubs module
   - [ExportToS3TaskTypeDef](#exporttos3tasktypedef)
   - [ExportTransitGatewayRoutesRequestRequestTypeDef](#exporttransitgatewayroutesrequestrequesttypedef)
   - [ExportTransitGatewayRoutesResultTypeDef](#exporttransitgatewayroutesresulttypedef)
+  - [FailedCapacityReservationFleetCancellationResultTypeDef](#failedcapacityreservationfleetcancellationresulttypedef)
   - [FailedQueuedPurchaseDeletionTypeDef](#failedqueuedpurchasedeletiontypedef)
   - [FederatedAuthenticationRequestTypeDef](#federatedauthenticationrequesttypedef)
   - [FederatedAuthenticationTypeDef](#federatedauthenticationtypedef)
   - [FilterTypeDef](#filtertypedef)
+  - [FleetCapacityReservationTypeDef](#fleetcapacityreservationtypedef)
   - [FleetDataTypeDef](#fleetdatatypedef)
   - [FleetLaunchTemplateConfigRequestTypeDef](#fleetlaunchtemplateconfigrequesttypedef)
   - [FleetLaunchTemplateConfigTypeDef](#fleetlaunchtemplateconfigtypedef)
@@ -1101,6 +1112,8 @@ type annotations stubs module
   - [ModifyAddressAttributeResultTypeDef](#modifyaddressattributeresulttypedef)
   - [ModifyAvailabilityZoneGroupRequestRequestTypeDef](#modifyavailabilityzonegrouprequestrequesttypedef)
   - [ModifyAvailabilityZoneGroupResultTypeDef](#modifyavailabilityzonegroupresulttypedef)
+  - [ModifyCapacityReservationFleetRequestRequestTypeDef](#modifycapacityreservationfleetrequestrequesttypedef)
+  - [ModifyCapacityReservationFleetResultTypeDef](#modifycapacityreservationfleetresulttypedef)
   - [ModifyCapacityReservationRequestRequestTypeDef](#modifycapacityreservationrequestrequesttypedef)
   - [ModifyCapacityReservationResultTypeDef](#modifycapacityreservationresulttypedef)
   - [ModifyClientVpnEndpointRequestRequestTypeDef](#modifyclientvpnendpointrequestrequesttypedef)
@@ -1324,6 +1337,7 @@ type annotations stubs module
   - [RequestSpotInstancesRequestRequestTypeDef](#requestspotinstancesrequestrequesttypedef)
   - [RequestSpotInstancesResultTypeDef](#requestspotinstancesresulttypedef)
   - [RequestSpotLaunchSpecificationTypeDef](#requestspotlaunchspecificationtypedef)
+  - [ReservationFleetInstanceSpecificationTypeDef](#reservationfleetinstancespecificationtypedef)
   - [ReservationResponseMetadataTypeDef](#reservationresponsemetadatatypedef)
   - [ReservationTypeDef](#reservationtypedef)
   - [ReservationValueTypeDef](#reservationvaluetypedef)
@@ -3198,6 +3212,46 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## CancelCapacityReservationFleetErrorTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CancelCapacityReservationFleetErrorTypeDef
+```
+
+Optional fields:
+
+- `Code`: `str`
+- `Message`: `str`
+
+## CancelCapacityReservationFleetsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CancelCapacityReservationFleetsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CapacityReservationFleetIds`: `Sequence`\[`str`\]
+
+Optional fields:
+
+- `DryRun`: `bool`
+
+## CancelCapacityReservationFleetsResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CancelCapacityReservationFleetsResultTypeDef
+```
+
+Required fields:
+
+- `SuccessfulFleetCancellations`:
+  `List`\[[CapacityReservationFleetCancellationStateTypeDef](./type_defs.md#capacityreservationfleetcancellationstatetypedef)\]
+- `FailedFleetCancellations`:
+  `List`\[[FailedCapacityReservationFleetCancellationResultTypeDef](./type_defs.md#failedcapacityreservationfleetcancellationresulttypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## CancelCapacityReservationRequestRequestTypeDef
 
 ```python
@@ -3404,6 +3458,45 @@ Optional fields:
 - `State`:
   [CancelSpotInstanceRequestStateType](./literals.md#cancelspotinstancerequeststatetype)
 
+## CapacityReservationFleetCancellationStateTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CapacityReservationFleetCancellationStateTypeDef
+```
+
+Optional fields:
+
+- `CurrentFleetState`:
+  [CapacityReservationFleetStateType](./literals.md#capacityreservationfleetstatetype)
+- `PreviousFleetState`:
+  [CapacityReservationFleetStateType](./literals.md#capacityreservationfleetstatetype)
+- `CapacityReservationFleetId`: `str`
+
+## CapacityReservationFleetTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CapacityReservationFleetTypeDef
+```
+
+Optional fields:
+
+- `CapacityReservationFleetId`: `str`
+- `CapacityReservationFleetArn`: `str`
+- `State`:
+  [CapacityReservationFleetStateType](./literals.md#capacityreservationfleetstatetype)
+- `TotalTargetCapacity`: `int`
+- `TotalFulfilledCapacity`: `float`
+- `Tenancy`: `Literal['default']` (see
+  [FleetCapacityReservationTenancyType](./literals.md#fleetcapacityreservationtenancytype))
+- `EndDate`: `datetime`
+- `CreateTime`: `datetime`
+- `InstanceMatchCriteria`: `Literal['open']` (see
+  [FleetInstanceMatchCriteriaType](./literals.md#fleetinstancematchcriteriatype))
+- `AllocationStrategy`: `str`
+- `InstanceTypeSpecifications`:
+  `List`\[[FleetCapacityReservationTypeDef](./type_defs.md#fleetcapacityreservationtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 ## CapacityReservationGroupTypeDef
 
 ```python
@@ -3517,6 +3610,7 @@ Optional fields:
 - `CreateDate`: `datetime`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `OutpostArn`: `str`
+- `CapacityReservationFleetId`: `str`
 
 ## CarrierGatewayTypeDef
 
@@ -4097,6 +4191,57 @@ Optional fields:
 
 - `CoreCount`: `int`
 - `ThreadsPerCore`: `int`
+
+## CreateCapacityReservationFleetRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateCapacityReservationFleetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InstanceTypeSpecifications`:
+  `Sequence`\[[ReservationFleetInstanceSpecificationTypeDef](./type_defs.md#reservationfleetinstancespecificationtypedef)\]
+- `TotalTargetCapacity`: `int`
+
+Optional fields:
+
+- `AllocationStrategy`: `str`
+- `ClientToken`: `str`
+- `Tenancy`: `Literal['default']` (see
+  [FleetCapacityReservationTenancyType](./literals.md#fleetcapacityreservationtenancytype))
+- `EndDate`: `Union`\[`datetime`, `str`\]
+- `InstanceMatchCriteria`: `Literal['open']` (see
+  [FleetInstanceMatchCriteriaType](./literals.md#fleetinstancematchcriteriatype))
+- `TagSpecifications`:
+  `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
+- `DryRun`: `bool`
+
+## CreateCapacityReservationFleetResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import CreateCapacityReservationFleetResultTypeDef
+```
+
+Required fields:
+
+- `CapacityReservationFleetId`: `str`
+- `State`:
+  [CapacityReservationFleetStateType](./literals.md#capacityreservationfleetstatetype)
+- `TotalTargetCapacity`: `int`
+- `TotalFulfilledCapacity`: `float`
+- `InstanceMatchCriteria`: `Literal['open']` (see
+  [FleetInstanceMatchCriteriaType](./literals.md#fleetinstancematchcriteriatype))
+- `AllocationStrategy`: `str`
+- `CreateTime`: `datetime`
+- `EndDate`: `datetime`
+- `Tenancy`: `Literal['default']` (see
+  [FleetCapacityReservationTenancyType](./literals.md#fleetcapacityreservationtenancytype))
+- `FleetCapacityReservations`:
+  `List`\[[FleetCapacityReservationTypeDef](./type_defs.md#fleetcapacityreservationtypedef)\]
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## CreateCapacityReservationRequestRequestTypeDef
 
@@ -8657,6 +8802,34 @@ from mypy_boto3_ec2.type_defs import DescribeByoipCidrsResultTypeDef
 Required fields:
 
 - `ByoipCidrs`: `List`\[[ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeCapacityReservationFleetsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeCapacityReservationFleetsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `CapacityReservationFleetIds`: `Sequence`\[`str`\]
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+- `DryRun`: `bool`
+
+## DescribeCapacityReservationFleetsResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DescribeCapacityReservationFleetsResultTypeDef
+```
+
+Required fields:
+
+- `CapacityReservationFleets`:
+  `List`\[[CapacityReservationFleetTypeDef](./type_defs.md#capacityreservationfleettypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -13791,6 +13964,18 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## FailedCapacityReservationFleetCancellationResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import FailedCapacityReservationFleetCancellationResultTypeDef
+```
+
+Optional fields:
+
+- `CapacityReservationFleetId`: `str`
+- `CancelCapacityReservationFleetError`:
+  [CancelCapacityReservationFleetErrorTypeDef](./type_defs.md#cancelcapacityreservationfleeterrortypedef)
+
 ## FailedQueuedPurchaseDeletionTypeDef
 
 ```python
@@ -13835,6 +14020,27 @@ Optional fields:
 
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+## FleetCapacityReservationTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import FleetCapacityReservationTypeDef
+```
+
+Optional fields:
+
+- `CapacityReservationId`: `str`
+- `AvailabilityZoneId`: `str`
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
+- `InstancePlatform`:
+  [CapacityReservationInstancePlatformType](./literals.md#capacityreservationinstanceplatformtype)
+- `AvailabilityZone`: `str`
+- `TotalInstanceCount`: `int`
+- `FulfilledCapacity`: `float`
+- `EbsOptimized`: `bool`
+- `CreateDate`: `datetime`
+- `Weight`: `float`
+- `Priority`: `int`
 
 ## FleetDataTypeDef
 
@@ -17396,6 +17602,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ModifyCapacityReservationFleetRequestRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyCapacityReservationFleetRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CapacityReservationFleetId`: `str`
+
+Optional fields:
+
+- `TotalTargetCapacity`: `int`
+- `EndDate`: `Union`\[`datetime`, `str`\]
+- `DryRun`: `bool`
+- `RemoveEndDate`: `bool`
+
+## ModifyCapacityReservationFleetResultTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ModifyCapacityReservationFleetResultTypeDef
+```
+
+Required fields:
+
+- `Return`: `bool`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ModifyCapacityReservationRequestRequestTypeDef
 
 ```python
@@ -20811,6 +21046,23 @@ Optional fields:
 - `RamdiskId`: `str`
 - `SubnetId`: `str`
 - `UserData`: `str`
+
+## ReservationFleetInstanceSpecificationTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import ReservationFleetInstanceSpecificationTypeDef
+```
+
+Optional fields:
+
+- `InstanceType`: [InstanceTypeType](./literals.md#instancetypetype)
+- `InstancePlatform`:
+  [CapacityReservationInstancePlatformType](./literals.md#capacityreservationinstanceplatformtype)
+- `Weight`: `float`
+- `AvailabilityZone`: `str`
+- `AvailabilityZoneId`: `str`
+- `EbsOptimized`: `bool`
+- `Priority`: `int`
 
 ## ReservationResponseMetadataTypeDef
 

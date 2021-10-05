@@ -39,6 +39,8 @@ type annotations stubs module
   - [DeregisterFromWorkMailRequestRequestTypeDef](#deregisterfromworkmailrequestrequesttypedef)
   - [DescribeGroupRequestRequestTypeDef](#describegrouprequestrequesttypedef)
   - [DescribeGroupResponseTypeDef](#describegroupresponsetypedef)
+  - [DescribeInboundDmarcSettingsRequestRequestTypeDef](#describeinbounddmarcsettingsrequestrequesttypedef)
+  - [DescribeInboundDmarcSettingsResponseTypeDef](#describeinbounddmarcsettingsresponsetypedef)
   - [DescribeMailboxExportJobRequestRequestTypeDef](#describemailboxexportjobrequestrequesttypedef)
   - [DescribeMailboxExportJobResponseTypeDef](#describemailboxexportjobresponsetypedef)
   - [DescribeOrganizationRequestRequestTypeDef](#describeorganizationrequestrequesttypedef)
@@ -97,6 +99,7 @@ type annotations stubs module
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PermissionTypeDef](#permissiontypedef)
   - [PutAccessControlRuleRequestRequestTypeDef](#putaccesscontrolrulerequestrequesttypedef)
+  - [PutInboundDmarcSettingsRequestRequestTypeDef](#putinbounddmarcsettingsrequestrequesttypedef)
   - [PutMailboxPermissionsRequestRequestTypeDef](#putmailboxpermissionsrequestrequesttypedef)
   - [PutMobileDeviceAccessOverrideRequestRequestTypeDef](#putmobiledeviceaccessoverriderequestrequesttypedef)
   - [PutRetentionPolicyRequestRequestTypeDef](#putretentionpolicyrequestrequesttypedef)
@@ -513,6 +516,28 @@ Required fields:
 - `State`: [EntityStateType](./literals.md#entitystatetype)
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeInboundDmarcSettingsRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DescribeInboundDmarcSettingsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+
+## DescribeInboundDmarcSettingsResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DescribeInboundDmarcSettingsResponseTypeDef
+```
+
+Required fields:
+
+- `Enforced`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1344,6 +1369,17 @@ Optional fields:
 - `NotActions`: `Sequence`\[`str`\]
 - `UserIds`: `Sequence`\[`str`\]
 - `NotUserIds`: `Sequence`\[`str`\]
+
+## PutInboundDmarcSettingsRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import PutInboundDmarcSettingsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `Enforced`: `bool`
 
 ## PutMailboxPermissionsRequestRequestTypeDef
 
