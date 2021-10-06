@@ -387,6 +387,7 @@ Optional fields:
   [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
 - `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
 - `KmsKeyId`: `str`
+- `FileSystemTypeVersion`: `str`
 
 ## CreateFileSystemFromBackupResponseTypeDef
 
@@ -473,6 +474,7 @@ Optional fields:
   [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
 - `OntapConfiguration`:
   [CreateFileSystemOntapConfigurationTypeDef](./type_defs.md#createfilesystemontapconfigurationtypedef)
+- `FileSystemTypeVersion`: `str`
 
 ## CreateFileSystemResponseTypeDef
 
@@ -1188,6 +1190,7 @@ Optional fields:
   `List`\[[AdministrativeActionTypeDef](./type_defs.md#administrativeactiontypedef)\]
 - `OntapConfiguration`:
   [OntapFileSystemConfigurationTypeDef](./type_defs.md#ontapfilesystemconfigurationtypedef)
+- `FileSystemTypeVersion`: `str`
 
 ## FilterTypeDef
 

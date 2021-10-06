@@ -3097,6 +3097,7 @@ from mypy_boto3_sagemaker.literals import TrainingInputModeType
 
 Values:
 
+- `FastFile`
 - `File`
 - `Pipe`
 

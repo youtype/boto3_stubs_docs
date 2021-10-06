@@ -48,6 +48,7 @@ type annotations stubs module
   - [SortOrderType](#sortordertype)
   - [ThesaurusStatusType](#thesaurusstatustype)
   - [UserContextPolicyType](#usercontextpolicytype)
+  - [UserGroupResolutionModeType](#usergroupresolutionmodetype)
   - [WebCrawlerModeType](#webcrawlermodetype)
   - [ServiceName](#servicename)
 
@@ -584,6 +585,17 @@ Values:
 
 - `ATTRIBUTE_FILTER`
 - `USER_TOKEN`
+
+## UserGroupResolutionModeType
+
+```python
+from mypy_boto3_kendra.literals import UserGroupResolutionModeType
+```
+
+Values:
+
+- `AWS_SSO`
+- `NONE`
 
 ## WebCrawlerModeType
 

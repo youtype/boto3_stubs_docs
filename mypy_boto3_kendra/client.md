@@ -214,7 +214,7 @@ Keyword-only arguments:
 
 ### create_data_source
 
-Creates a data source that you use to with an Amazon Kendra index.
+Creates a data source that you want to use with an Amazon Kendra index.
 
 Type annotations for `boto3.client("kendra").create_data_source` method.
 
@@ -291,6 +291,8 @@ Keyword-only arguments:
   `Sequence`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
+- `UserGroupResolutionConfiguration`:
+  [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 
 Returns
 [CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
@@ -811,7 +813,8 @@ Returns
 
 ### put_principal_mapping
 
-Maps users to their groups.
+Maps users to their groups so that you only need to provide the user ID when
+you issue the query.
 
 Type annotations for `boto3.client("kendra").put_principal_mapping` method.
 
@@ -1011,6 +1014,8 @@ Keyword-only arguments:
   `Sequence`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
+- `UserGroupResolutionConfiguration`:
+  [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 
 ### update_query_suggestions_block_list
 

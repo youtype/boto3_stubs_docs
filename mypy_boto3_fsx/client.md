@@ -280,6 +280,7 @@ Keyword-only arguments:
   [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
 - `OntapConfiguration`:
   [CreateFileSystemOntapConfigurationTypeDef](./type_defs.md#createfilesystemontapconfigurationtypedef)
+- `FileSystemTypeVersion`: `str`
 
 Returns
 [CreateFileSystemResponseTypeDef](./type_defs.md#createfilesystemresponsetypedef).
@@ -311,6 +312,7 @@ Keyword-only arguments:
   [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
 - `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
 - `KmsKeyId`: `str`
+- `FileSystemTypeVersion`: `str`
 
 Returns
 [CreateFileSystemFromBackupResponseTypeDef](./type_defs.md#createfilesystemfrombackupresponsetypedef).

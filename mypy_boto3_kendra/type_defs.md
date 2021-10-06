@@ -174,6 +174,7 @@ type annotations stubs module
   - [UpdateThesaurusRequestRequestTypeDef](#updatethesaurusrequestrequesttypedef)
   - [UrlsTypeDef](#urlstypedef)
   - [UserContextTypeDef](#usercontexttypedef)
+  - [UserGroupResolutionConfigurationTypeDef](#usergroupresolutionconfigurationtypedef)
   - [UserTokenConfigurationTypeDef](#usertokenconfigurationtypedef)
   - [WebCrawlerConfigurationTypeDef](#webcrawlerconfigurationtypedef)
   - [WorkDocsConfigurationTypeDef](#workdocsconfigurationtypedef)
@@ -674,6 +675,8 @@ Optional fields:
   `Sequence`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
+- `UserGroupResolutionConfiguration`:
+  [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 
 ## CreateIndexResponseTypeDef
 
@@ -1078,6 +1081,8 @@ Required fields:
   `List`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
+- `UserGroupResolutionConfiguration`:
+  [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2561,6 +2566,8 @@ Optional fields:
   `Sequence`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
 - `UserContextPolicy`:
   [UserContextPolicyType](./literals.md#usercontextpolicytype)
+- `UserGroupResolutionConfiguration`:
+  [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 
 ## UpdateQuerySuggestionsBlockListRequestRequestTypeDef
 
@@ -2642,6 +2649,17 @@ Optional fields:
 - `Groups`: `Sequence`\[`str`\]
 - `DataSourceGroups`:
   `Sequence`\[[DataSourceGroupTypeDef](./type_defs.md#datasourcegrouptypedef)\]
+
+## UserGroupResolutionConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import UserGroupResolutionConfigurationTypeDef
+```
+
+Required fields:
+
+- `UserGroupResolutionMode`:
+  [UserGroupResolutionModeType](./literals.md#usergroupresolutionmodetype)
 
 ## UserTokenConfigurationTypeDef
 

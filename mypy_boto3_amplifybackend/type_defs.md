@@ -781,6 +781,7 @@ from mypy_boto3_amplifybackend.type_defs import GetBackendResponseTypeDef
 
 Required fields:
 
+- `AmplifyFeatureFlags`: `str`
 - `AmplifyMetaConfig`: `str`
 - `AppId`: `str`
 - `AppName`: `str`
