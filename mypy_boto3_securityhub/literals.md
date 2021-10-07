@@ -576,6 +576,7 @@ Values:
 - `glacier`
 - `globalaccelerator`
 - `glue`
+- `grafana`
 - `greengrass`
 - `greengrassv2`
 - `groundstation`

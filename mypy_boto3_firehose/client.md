@@ -123,6 +123,8 @@ Keyword-only arguments:
   [RedshiftDestinationConfigurationTypeDef](./type_defs.md#redshiftdestinationconfigurationtypedef)
 - `ElasticsearchDestinationConfiguration`:
   [ElasticsearchDestinationConfigurationTypeDef](./type_defs.md#elasticsearchdestinationconfigurationtypedef)
+- `AmazonopensearchserviceDestinationConfiguration`:
+  [AmazonopensearchserviceDestinationConfigurationTypeDef](./type_defs.md#amazonopensearchservicedestinationconfigurationtypedef)
 - `SplunkDestinationConfiguration`:
   [SplunkDestinationConfigurationTypeDef](./type_defs.md#splunkdestinationconfigurationtypedef)
 - `HttpEndpointDestinationConfiguration`:
@@ -380,6 +382,8 @@ Keyword-only arguments:
   [RedshiftDestinationUpdateTypeDef](./type_defs.md#redshiftdestinationupdatetypedef)
 - `ElasticsearchDestinationUpdate`:
   [ElasticsearchDestinationUpdateTypeDef](./type_defs.md#elasticsearchdestinationupdatetypedef)
+- `AmazonopensearchserviceDestinationUpdate`:
+  [AmazonopensearchserviceDestinationUpdateTypeDef](./type_defs.md#amazonopensearchservicedestinationupdatetypedef)
 - `SplunkDestinationUpdate`:
   [SplunkDestinationUpdateTypeDef](./type_defs.md#splunkdestinationupdatetypedef)
 - `HttpEndpointDestinationUpdate`:

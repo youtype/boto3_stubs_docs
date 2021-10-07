@@ -607,6 +607,7 @@ Optional fields:
 - `RoleArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
+- `LanguageCode`: `str`
 
 ## CreateDataSourceResponseTypeDef
 
@@ -639,6 +640,7 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 - `ClientToken`: `str`
+- `LanguageCode`: `str`
 
 ## CreateFaqResponseTypeDef
 
@@ -806,6 +808,7 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 - `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
+- `LanguageCode`: `str`
 
 ## DataSourceSyncJobMetricTargetTypeDef
 
@@ -1006,6 +1009,7 @@ Required fields:
 - `Schedule`: `str`
 - `RoleArn`: `str`
 - `ErrorMessage`: `str`
+- `LanguageCode`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1039,6 +1043,7 @@ Required fields:
 - `RoleArn`: `str`
 - `ErrorMessage`: `str`
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
+- `LanguageCode`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1379,6 +1384,7 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
+- `LanguageCode`: `str`
 
 ## GetQuerySuggestionsRequestRequestTypeDef
 
@@ -2542,6 +2548,7 @@ Optional fields:
 - `Description`: `str`
 - `Schedule`: `str`
 - `RoleArn`: `str`
+- `LanguageCode`: `str`
 
 ## UpdateIndexRequestRequestTypeDef
 

@@ -475,6 +475,10 @@ python -m pip install 'boto3-stubs[s3,ec2]'
   [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
   service
 
+- [mypy-boto3-grafana](./mypy_boto3_grafana) for
+  [ManagedGrafana](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana)
+  service
+
 - [mypy-boto3-greengrass](./mypy_boto3_greengrass) for
   [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
   service

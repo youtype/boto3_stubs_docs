@@ -22,6 +22,7 @@ type annotations stubs module
     - [delete_backup_selection](#delete_backup_selection)
     - [delete_backup_vault](#delete_backup_vault)
     - [delete_backup_vault_access_policy](#delete_backup_vault_access_policy)
+    - [delete_backup_vault_lock_configuration](#delete_backup_vault_lock_configuration)
     - [delete_backup_vault_notifications](#delete_backup_vault_notifications)
     - [delete_framework](#delete_framework)
     - [delete_recovery_point](#delete_recovery_point)
@@ -64,6 +65,7 @@ type annotations stubs module
     - [list_restore_jobs](#list_restore_jobs)
     - [list_tags](#list_tags)
     - [put_backup_vault_access_policy](#put_backup_vault_access_policy)
+    - [put_backup_vault_lock_configuration](#put_backup_vault_lock_configuration)
     - [put_backup_vault_notifications](#put_backup_vault_notifications)
     - [start_backup_job](#start_backup_job)
     - [start_copy_job](#start_copy_job)
@@ -333,6 +335,23 @@ Boto3 documentation:
 
 Arguments mapping described in
 [DeleteBackupVaultAccessPolicyInputRequestTypeDef](./type_defs.md#deletebackupvaultaccesspolicyinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `BackupVaultName`: `str` *(required)*
+
+### delete_backup_vault_lock_configuration
+
+Deletes Backup Vault Lock from a backup vault specified by a backup vault name.
+
+Type annotations for
+`boto3.client("backup").delete_backup_vault_lock_configuration` method.
+
+Boto3 documentation:
+[Backup.Client.delete_backup_vault_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_lock_configuration)
+
+Arguments mapping described in
+[DeleteBackupVaultLockConfigurationInputRequestTypeDef](./type_defs.md#deletebackupvaultlockconfigurationinputrequesttypedef).
 
 Keyword-only arguments:
 
@@ -1184,6 +1203,27 @@ Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `Policy`: `str`
+
+### put_backup_vault_lock_configuration
+
+Applies Backup Vault Lock to a backup vault, preventing attempts to delete any
+recovery point stored in or created in a backup vault.
+
+Type annotations for
+`boto3.client("backup").put_backup_vault_lock_configuration` method.
+
+Boto3 documentation:
+[Backup.Client.put_backup_vault_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_lock_configuration)
+
+Arguments mapping described in
+[PutBackupVaultLockConfigurationInputRequestTypeDef](./type_defs.md#putbackupvaultlockconfigurationinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `BackupVaultName`: `str` *(required)*
+- `MinRetentionDays`: `int`
+- `MaxRetentionDays`: `int`
+- `ChangeableForDays`: `int`
 
 ### put_backup_vault_notifications
 

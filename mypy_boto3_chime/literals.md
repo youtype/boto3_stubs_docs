@@ -11,6 +11,8 @@ type annotations stubs module
   - [AccountStatusType](#accountstatustype)
   - [AccountTypeType](#accounttypetype)
   - [AppInstanceDataTypeType](#appinstancedatatypetype)
+  - [ArtifactsStateType](#artifactsstatetype)
+  - [AudioMuxTypeType](#audiomuxtypetype)
   - [BotTypeType](#bottypetype)
   - [CallingNameStatusType](#callingnamestatustype)
   - [CapabilityType](#capabilitytype)
@@ -19,6 +21,7 @@ type annotations stubs module
   - [ChannelMessageTypeType](#channelmessagetypetype)
   - [ChannelModeType](#channelmodetype)
   - [ChannelPrivacyType](#channelprivacytype)
+  - [ContentMuxTypeType](#contentmuxtypetype)
   - [EmailStatusType](#emailstatustype)
   - [ErrorCodeType](#errorcodetype)
   - [GeoMatchLevelType](#geomatchleveltype)
@@ -52,6 +55,7 @@ type annotations stubs module
   - [TranscribeRegionType](#transcriberegiontype)
   - [TranscribeVocabularyFilterMethodType](#transcribevocabularyfiltermethodtype)
   - [UserTypeType](#usertypetype)
+  - [VideoMuxTypeType](#videomuxtypetype)
   - [VoiceConnectorAwsRegionType](#voiceconnectorawsregiontype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
@@ -90,6 +94,28 @@ Values:
 
 - `Channel`
 - `ChannelMessage`
+
+## ArtifactsStateType
+
+```python
+from mypy_boto3_chime.literals import ArtifactsStateType
+```
+
+Values:
+
+- `Disabled`
+- `Enabled`
+
+## AudioMuxTypeType
+
+```python
+from mypy_boto3_chime.literals import AudioMuxTypeType
+```
+
+Values:
+
+- `AudioOnly`
+- `AudioWithActiveSpeakerVideo`
 
 ## BotTypeType
 
@@ -179,6 +205,16 @@ Values:
 
 - `PRIVATE`
 - `PUBLIC`
+
+## ContentMuxTypeType
+
+```python
+from mypy_boto3_chime.literals import ContentMuxTypeType
+```
+
+Values:
+
+- `ContentOnly`
 
 ## EmailStatusType
 
@@ -605,6 +641,16 @@ Values:
 - `PrivateUser`
 - `SharedDevice`
 
+## VideoMuxTypeType
+
+```python
+from mypy_boto3_chime.literals import VideoMuxTypeType
+```
+
+Values:
+
+- `VideoOnly`
+
 ## VoiceConnectorAwsRegionType
 
 ```python
@@ -737,6 +783,7 @@ Values:
 - `glacier`
 - `globalaccelerator`
 - `glue`
+- `grafana`
 - `greengrass`
 - `greengrassv2`
 - `groundstation`

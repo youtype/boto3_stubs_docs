@@ -236,6 +236,7 @@ Keyword-only arguments:
 - `RoleArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
+- `LanguageCode`: `str`
 
 Returns
 [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
@@ -262,6 +263,7 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 - `ClientToken`: `str`
+- `LanguageCode`: `str`
 
 Returns [CreateFaqResponseTypeDef](./type_defs.md#createfaqresponsetypedef).
 
@@ -987,6 +989,7 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Schedule`: `str`
 - `RoleArn`: `str`
+- `LanguageCode`: `str`
 
 ### update_index
 

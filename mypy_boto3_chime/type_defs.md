@@ -20,6 +20,7 @@ type annotations stubs module
   - [AppInstanceUserMembershipSummaryTypeDef](#appinstanceusermembershipsummarytypedef)
   - [AppInstanceUserSummaryTypeDef](#appinstanceusersummarytypedef)
   - [AppInstanceUserTypeDef](#appinstanceusertypedef)
+  - [ArtifactsConfigurationTypeDef](#artifactsconfigurationtypedef)
   - [AssociatePhoneNumberWithUserRequestRequestTypeDef](#associatephonenumberwithuserrequestrequesttypedef)
   - [AssociatePhoneNumbersWithVoiceConnectorGroupRequestRequestTypeDef](#associatephonenumberswithvoiceconnectorgrouprequestrequesttypedef)
   - [AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef](#associatephonenumberswithvoiceconnectorgroupresponsetypedef)
@@ -27,6 +28,7 @@ type annotations stubs module
   - [AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef](#associatephonenumberswithvoiceconnectorresponsetypedef)
   - [AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef](#associatesignindelegategroupswithaccountrequestrequesttypedef)
   - [AttendeeTypeDef](#attendeetypedef)
+  - [AudioArtifactsConfigurationTypeDef](#audioartifactsconfigurationtypedef)
   - [BatchChannelMembershipsTypeDef](#batchchannelmembershipstypedef)
   - [BatchCreateAttendeeRequestRequestTypeDef](#batchcreateattendeerequestrequesttypedef)
   - [BatchCreateAttendeeResponseTypeDef](#batchcreateattendeeresponsetypedef)
@@ -60,6 +62,8 @@ type annotations stubs module
   - [ChannelRetentionSettingsTypeDef](#channelretentionsettingstypedef)
   - [ChannelSummaryTypeDef](#channelsummarytypedef)
   - [ChannelTypeDef](#channeltypedef)
+  - [ChimeSdkMeetingConfigurationTypeDef](#chimesdkmeetingconfigurationtypedef)
+  - [ContentArtifactsConfigurationTypeDef](#contentartifactsconfigurationtypedef)
   - [ConversationRetentionSettingsTypeDef](#conversationretentionsettingstypedef)
   - [CreateAccountRequestRequestTypeDef](#createaccountrequestrequesttypedef)
   - [CreateAccountResponseTypeDef](#createaccountresponsetypedef)
@@ -358,6 +362,7 @@ type annotations stubs module
   - [RoomTypeDef](#roomtypedef)
   - [SearchAvailablePhoneNumbersRequestRequestTypeDef](#searchavailablephonenumbersrequestrequesttypedef)
   - [SearchAvailablePhoneNumbersResponseTypeDef](#searchavailablephonenumbersresponsetypedef)
+  - [SelectedVideoStreamsTypeDef](#selectedvideostreamstypedef)
   - [SendChannelMessageRequestRequestTypeDef](#sendchannelmessagerequestrequesttypedef)
   - [SendChannelMessageResponseTypeDef](#sendchannelmessageresponsetypedef)
   - [SigninDelegateGroupTypeDef](#signindelegategrouptypedef)
@@ -367,6 +372,7 @@ type annotations stubs module
   - [SipMediaApplicationTypeDef](#sipmediaapplicationtypedef)
   - [SipRuleTargetApplicationTypeDef](#sipruletargetapplicationtypedef)
   - [SipRuleTypeDef](#sipruletypedef)
+  - [SourceConfigurationTypeDef](#sourceconfigurationtypedef)
   - [StartMeetingTranscriptionRequestRequestTypeDef](#startmeetingtranscriptionrequestrequesttypedef)
   - [StopMeetingTranscriptionRequestRequestTypeDef](#stopmeetingtranscriptionrequestrequesttypedef)
   - [StreamingConfigurationTypeDef](#streamingconfigurationtypedef)
@@ -425,6 +431,7 @@ type annotations stubs module
   - [UserErrorTypeDef](#usererrortypedef)
   - [UserSettingsTypeDef](#usersettingstypedef)
   - [UserTypeDef](#usertypedef)
+  - [VideoArtifactsConfigurationTypeDef](#videoartifactsconfigurationtypedef)
   - [VoiceConnectorGroupTypeDef](#voiceconnectorgrouptypedef)
   - [VoiceConnectorItemTypeDef](#voiceconnectoritemtypedef)
   - [VoiceConnectorSettingsTypeDef](#voiceconnectorsettingstypedef)
@@ -582,6 +589,21 @@ Optional fields:
 - `Metadata`: `str`
 - `LastUpdatedTimestamp`: `datetime`
 
+## ArtifactsConfigurationTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import ArtifactsConfigurationTypeDef
+```
+
+Required fields:
+
+- `Audio`:
+  [AudioArtifactsConfigurationTypeDef](./type_defs.md#audioartifactsconfigurationtypedef)
+- `Video`:
+  [VideoArtifactsConfigurationTypeDef](./type_defs.md#videoartifactsconfigurationtypedef)
+- `Content`:
+  [ContentArtifactsConfigurationTypeDef](./type_defs.md#contentartifactsconfigurationtypedef)
+
 ## AssociatePhoneNumberWithUserRequestRequestTypeDef
 
 ```python
@@ -673,6 +695,16 @@ Optional fields:
 - `ExternalUserId`: `str`
 - `AttendeeId`: `str`
 - `JoinToken`: `str`
+
+## AudioArtifactsConfigurationTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import AudioArtifactsConfigurationTypeDef
+```
+
+Required fields:
+
+- `MuxType`: [AudioMuxTypeType](./literals.md#audiomuxtypetype)
 
 ## BatchChannelMembershipsTypeDef
 
@@ -1104,6 +1136,34 @@ Optional fields:
 - `LastMessageTimestamp`: `datetime`
 - `LastUpdatedTimestamp`: `datetime`
 
+## ChimeSdkMeetingConfigurationTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import ChimeSdkMeetingConfigurationTypeDef
+```
+
+Optional fields:
+
+- `SourceConfiguration`:
+  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
+- `ArtifactsConfiguration`:
+  [ArtifactsConfigurationTypeDef](./type_defs.md#artifactsconfigurationtypedef)
+
+## ContentArtifactsConfigurationTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import ContentArtifactsConfigurationTypeDef
+```
+
+Required fields:
+
+- `State`: [ArtifactsStateType](./literals.md#artifactsstatetype)
+
+Optional fields:
+
+- `MuxType`: `Literal['ContentOnly']` (see
+  [ContentMuxTypeType](./literals.md#contentmuxtypetype))
+
 ## ConversationRetentionSettingsTypeDef
 
 ```python
@@ -1433,6 +1493,8 @@ Required fields:
 Optional fields:
 
 - `ClientRequestToken`: `str`
+- `ChimeSdkMeetingConfiguration`:
+  [ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef)
 
 ## CreateMediaCapturePipelineResponseTypeDef
 
@@ -4155,6 +4217,8 @@ Optional fields:
 - `SinkArn`: `str`
 - `CreatedTimestamp`: `datetime`
 - `UpdatedTimestamp`: `datetime`
+- `ChimeSdkMeetingConfiguration`:
+  [ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef)
 
 ## MediaPlacementTypeDef
 
@@ -4956,6 +5020,17 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## SelectedVideoStreamsTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import SelectedVideoStreamsTypeDef
+```
+
+Optional fields:
+
+- `AttendeeIds`: `Sequence`\[`str`\]
+- `ExternalUserIds`: `Sequence`\[`str`\]
+
 ## SendChannelMessageRequestRequestTypeDef
 
 ```python
@@ -5074,6 +5149,17 @@ Optional fields:
   `List`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
 - `CreatedTimestamp`: `datetime`
 - `UpdatedTimestamp`: `datetime`
+
+## SourceConfigurationTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import SourceConfigurationTypeDef
+```
+
+Optional fields:
+
+- `SelectedVideoStreams`:
+  [SelectedVideoStreamsTypeDef](./type_defs.md#selectedvideostreamstypedef)
 
 ## StartMeetingTranscriptionRequestRequestTypeDef
 
@@ -5464,7 +5550,7 @@ Required fields:
 from mypy_boto3_chime.type_defs import UpdateGlobalSettingsRequestRequestTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `BusinessCalling`:
   [BusinessCallingSettingsTypeDef](./type_defs.md#businesscallingsettingstypedef)
@@ -5851,6 +5937,21 @@ Optional fields:
 - `AlexaForBusinessMetadata`:
   [AlexaForBusinessMetadataTypeDef](./type_defs.md#alexaforbusinessmetadatatypedef)
 - `PersonalPIN`: `str`
+
+## VideoArtifactsConfigurationTypeDef
+
+```python
+from mypy_boto3_chime.type_defs import VideoArtifactsConfigurationTypeDef
+```
+
+Required fields:
+
+- `State`: [ArtifactsStateType](./literals.md#artifactsstatetype)
+
+Optional fields:
+
+- `MuxType`: `Literal['VideoOnly']` (see
+  [VideoMuxTypeType](./literals.md#videomuxtypetype))
 
 ## VoiceConnectorGroupTypeDef
 

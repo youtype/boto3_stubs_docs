@@ -40,6 +40,7 @@ type annotations stubs module
   - [DeleteBackupSelectionInputRequestTypeDef](#deletebackupselectioninputrequesttypedef)
   - [DeleteBackupVaultAccessPolicyInputRequestTypeDef](#deletebackupvaultaccesspolicyinputrequesttypedef)
   - [DeleteBackupVaultInputRequestTypeDef](#deletebackupvaultinputrequesttypedef)
+  - [DeleteBackupVaultLockConfigurationInputRequestTypeDef](#deletebackupvaultlockconfigurationinputrequesttypedef)
   - [DeleteBackupVaultNotificationsInputRequestTypeDef](#deletebackupvaultnotificationsinputrequesttypedef)
   - [DeleteFrameworkInputRequestTypeDef](#deleteframeworkinputrequesttypedef)
   - [DeleteRecoveryPointInputRequestTypeDef](#deleterecoverypointinputrequesttypedef)
@@ -117,6 +118,7 @@ type annotations stubs module
   - [ListTagsOutputTypeDef](#listtagsoutputtypedef)
   - [ProtectedResourceTypeDef](#protectedresourcetypedef)
   - [PutBackupVaultAccessPolicyInputRequestTypeDef](#putbackupvaultaccesspolicyinputrequesttypedef)
+  - [PutBackupVaultLockConfigurationInputRequestTypeDef](#putbackupvaultlockconfigurationinputrequesttypedef)
   - [PutBackupVaultNotificationsInputRequestTypeDef](#putbackupvaultnotificationsinputrequesttypedef)
   - [RecoveryPointByBackupVaultTypeDef](#recoverypointbybackupvaulttypedef)
   - [RecoveryPointByResourceTypeDef](#recoverypointbyresourcetypedef)
@@ -345,6 +347,10 @@ Optional fields:
 - `EncryptionKeyArn`: `str`
 - `CreatorRequestId`: `str`
 - `NumberOfRecoveryPoints`: `int`
+- `Locked`: `bool`
+- `MinRetentionDays`: `int`
+- `MaxRetentionDays`: `int`
+- `LockDate`: `datetime`
 
 ## CalculatedLifecycleTypeDef
 
@@ -644,6 +650,16 @@ Required fields:
 
 - `BackupVaultName`: `str`
 
+## DeleteBackupVaultLockConfigurationInputRequestTypeDef
+
+```python
+from mypy_boto3_backup.type_defs import DeleteBackupVaultLockConfigurationInputRequestTypeDef
+```
+
+Required fields:
+
+- `BackupVaultName`: `str`
+
 ## DeleteBackupVaultNotificationsInputRequestTypeDef
 
 ```python
@@ -751,6 +767,10 @@ Required fields:
 - `CreationDate`: `datetime`
 - `CreatorRequestId`: `str`
 - `NumberOfRecoveryPoints`: `int`
+- `Locked`: `bool`
+- `MinRetentionDays`: `int`
+- `MaxRetentionDays`: `int`
+- `LockDate`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1688,6 +1708,22 @@ Required fields:
 Optional fields:
 
 - `Policy`: `str`
+
+## PutBackupVaultLockConfigurationInputRequestTypeDef
+
+```python
+from mypy_boto3_backup.type_defs import PutBackupVaultLockConfigurationInputRequestTypeDef
+```
+
+Required fields:
+
+- `BackupVaultName`: `str`
+
+Optional fields:
+
+- `MinRetentionDays`: `int`
+- `MaxRetentionDays`: `int`
+- `ChangeableForDays`: `int`
 
 ## PutBackupVaultNotificationsInputRequestTypeDef
 

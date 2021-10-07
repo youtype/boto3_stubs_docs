@@ -67,9 +67,11 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_firehose.literals import CompressionFormatType, ...
+from mypy_boto3_firehose.literals import AmazonopensearchserviceIndexRotationPeriodType, ...
 ```
 
+- [AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype)
+- [AmazonopensearchserviceS3BackupModeType](./literals.md#amazonopensearchservices3backupmodetype)
 - [CompressionFormatType](./literals.md#compressionformattype)
 - [ContentEncodingType](./literals.md#contentencodingtype)
 - [DeliveryStreamEncryptionStatusType](./literals.md#deliverystreamencryptionstatustype)
@@ -101,9 +103,14 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_firehose.type_defs import BufferingHintsTypeDef, ...
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceBufferingHintsTypeDef, ...
 ```
 
+- [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
+- [AmazonopensearchserviceDestinationConfigurationTypeDef](./type_defs.md#amazonopensearchservicedestinationconfigurationtypedef)
+- [AmazonopensearchserviceDestinationDescriptionTypeDef](./type_defs.md#amazonopensearchservicedestinationdescriptiontypedef)
+- [AmazonopensearchserviceDestinationUpdateTypeDef](./type_defs.md#amazonopensearchservicedestinationupdatetypedef)
+- [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
 - [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
 - [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
 - [CopyCommandTypeDef](./type_defs.md#copycommandtypedef)

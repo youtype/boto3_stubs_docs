@@ -513,6 +513,7 @@ Values:
 - `HIGH`
 - `LOW`
 - `MEDIUM`
+- `NOT_AVAILABLE`
 - `VERY_HIGH`
 
 ## ServiceNowAuthenticationTypeType
@@ -730,6 +731,7 @@ Values:
 - `glacier`
 - `globalaccelerator`
 - `glue`
+- `grafana`
 - `greengrass`
 - `greengrassv2`
 - `groundstation`

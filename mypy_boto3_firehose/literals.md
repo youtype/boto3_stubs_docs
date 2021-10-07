@@ -8,6 +8,8 @@ type annotations stubs module
 [mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 - [Literals for boto3 Firehose module](#literals-for-boto3-firehose-module)
+  - [AmazonopensearchserviceIndexRotationPeriodType](#amazonopensearchserviceindexrotationperiodtype)
+  - [AmazonopensearchserviceS3BackupModeType](#amazonopensearchservices3backupmodetype)
   - [CompressionFormatType](#compressionformattype)
   - [ContentEncodingType](#contentencodingtype)
   - [DeliveryStreamEncryptionStatusType](#deliverystreamencryptionstatustype)
@@ -30,6 +32,31 @@ type annotations stubs module
   - [S3BackupModeType](#s3backupmodetype)
   - [SplunkS3BackupModeType](#splunks3backupmodetype)
   - [ServiceName](#servicename)
+
+## AmazonopensearchserviceIndexRotationPeriodType
+
+```python
+from mypy_boto3_firehose.literals import AmazonopensearchserviceIndexRotationPeriodType
+```
+
+Values:
+
+- `NoRotation`
+- `OneDay`
+- `OneHour`
+- `OneMonth`
+- `OneWeek`
+
+## AmazonopensearchserviceS3BackupModeType
+
+```python
+from mypy_boto3_firehose.literals import AmazonopensearchserviceS3BackupModeType
+```
+
+Values:
+
+- `AllDocuments`
+- `FailedDocumentsOnly`
 
 ## CompressionFormatType
 
@@ -419,6 +446,7 @@ Values:
 - `glacier`
 - `globalaccelerator`
 - `glue`
+- `grafana`
 - `greengrass`
 - `greengrassv2`
 - `groundstation`

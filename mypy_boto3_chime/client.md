@@ -780,6 +780,8 @@ Keyword-only arguments:
   *(required)*
 - `SinkArn`: `str` *(required)*
 - `ClientRequestToken`: `str`
+- `ChimeSdkMeetingConfiguration`:
+  [ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef)
 
 Returns
 [CreateMediaCapturePipelineResponseTypeDef](./type_defs.md#createmediacapturepipelineresponsetypedef).
@@ -3979,10 +3981,8 @@ Keyword-only arguments:
 
 - `BusinessCalling`:
   [BusinessCallingSettingsTypeDef](./type_defs.md#businesscallingsettingstypedef)
-  *(required)*
 - `VoiceConnector`:
   [VoiceConnectorSettingsTypeDef](./type_defs.md#voiceconnectorsettingstypedef)
-  *(required)*
 
 ### update_phone_number
 

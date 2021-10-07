@@ -8,6 +8,11 @@ type annotations stubs module
 [mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 - [Typed dictionaries for boto3 Firehose module](#typed-dictionaries-for-boto3-firehose-module)
+  - [AmazonopensearchserviceBufferingHintsTypeDef](#amazonopensearchservicebufferinghintstypedef)
+  - [AmazonopensearchserviceDestinationConfigurationTypeDef](#amazonopensearchservicedestinationconfigurationtypedef)
+  - [AmazonopensearchserviceDestinationDescriptionTypeDef](#amazonopensearchservicedestinationdescriptiontypedef)
+  - [AmazonopensearchserviceDestinationUpdateTypeDef](#amazonopensearchservicedestinationupdatetypedef)
+  - [AmazonopensearchserviceRetryOptionsTypeDef](#amazonopensearchserviceretryoptionstypedef)
   - [BufferingHintsTypeDef](#bufferinghintstypedef)
   - [CloudWatchLoggingOptionsTypeDef](#cloudwatchloggingoptionstypedef)
   - [CopyCommandTypeDef](#copycommandtypedef)
@@ -89,6 +94,116 @@ type annotations stubs module
   - [VpcConfigurationDescriptionTypeDef](#vpcconfigurationdescriptiontypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
 
+## AmazonopensearchserviceBufferingHintsTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceBufferingHintsTypeDef
+```
+
+Optional fields:
+
+- `IntervalInSeconds`: `int`
+- `SizeInMBs`: `int`
+
+## AmazonopensearchserviceDestinationConfigurationTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceDestinationConfigurationTypeDef
+```
+
+Required fields:
+
+- `RoleARN`: `str`
+- `IndexName`: `str`
+- `S3Configuration`:
+  [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
+
+Optional fields:
+
+- `DomainARN`: `str`
+- `ClusterEndpoint`: `str`
+- `TypeName`: `str`
+- `IndexRotationPeriod`:
+  [AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype)
+- `BufferingHints`:
+  [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
+- `RetryOptions`:
+  [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
+- `S3BackupMode`:
+  [AmazonopensearchserviceS3BackupModeType](./literals.md#amazonopensearchservices3backupmodetype)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
+- `VpcConfiguration`:
+  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
+
+## AmazonopensearchserviceDestinationDescriptionTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceDestinationDescriptionTypeDef
+```
+
+Optional fields:
+
+- `RoleARN`: `str`
+- `DomainARN`: `str`
+- `ClusterEndpoint`: `str`
+- `IndexName`: `str`
+- `TypeName`: `str`
+- `IndexRotationPeriod`:
+  [AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype)
+- `BufferingHints`:
+  [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
+- `RetryOptions`:
+  [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
+- `S3BackupMode`:
+  [AmazonopensearchserviceS3BackupModeType](./literals.md#amazonopensearchservices3backupmodetype)
+- `S3DestinationDescription`:
+  [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
+- `VpcConfigurationDescription`:
+  [VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef)
+
+## AmazonopensearchserviceDestinationUpdateTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceDestinationUpdateTypeDef
+```
+
+Optional fields:
+
+- `RoleARN`: `str`
+- `DomainARN`: `str`
+- `ClusterEndpoint`: `str`
+- `IndexName`: `str`
+- `TypeName`: `str`
+- `IndexRotationPeriod`:
+  [AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype)
+- `BufferingHints`:
+  [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
+- `RetryOptions`:
+  [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
+- `S3Update`:
+  [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
+- `ProcessingConfiguration`:
+  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
+- `CloudWatchLoggingOptions`:
+  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
+
+## AmazonopensearchserviceRetryOptionsTypeDef
+
+```python
+from mypy_boto3_firehose.type_defs import AmazonopensearchserviceRetryOptionsTypeDef
+```
+
+Optional fields:
+
+- `DurationInSeconds`: `int`
+
 ## BufferingHintsTypeDef
 
 ```python
@@ -153,6 +268,8 @@ Optional fields:
   [RedshiftDestinationConfigurationTypeDef](./type_defs.md#redshiftdestinationconfigurationtypedef)
 - `ElasticsearchDestinationConfiguration`:
   [ElasticsearchDestinationConfigurationTypeDef](./type_defs.md#elasticsearchdestinationconfigurationtypedef)
+- `AmazonopensearchserviceDestinationConfiguration`:
+  [AmazonopensearchserviceDestinationConfigurationTypeDef](./type_defs.md#amazonopensearchservicedestinationconfigurationtypedef)
 - `SplunkDestinationConfiguration`:
   [SplunkDestinationConfigurationTypeDef](./type_defs.md#splunkdestinationconfigurationtypedef)
 - `HttpEndpointDestinationConfiguration`:
@@ -319,6 +436,8 @@ Optional fields:
   [RedshiftDestinationDescriptionTypeDef](./type_defs.md#redshiftdestinationdescriptiontypedef)
 - `ElasticsearchDestinationDescription`:
   [ElasticsearchDestinationDescriptionTypeDef](./type_defs.md#elasticsearchdestinationdescriptiontypedef)
+- `AmazonopensearchserviceDestinationDescription`:
+  [AmazonopensearchserviceDestinationDescriptionTypeDef](./type_defs.md#amazonopensearchservicedestinationdescriptiontypedef)
 - `SplunkDestinationDescription`:
   [SplunkDestinationDescriptionTypeDef](./type_defs.md#splunkdestinationdescriptiontypedef)
 - `HttpEndpointDestinationDescription`:
@@ -1380,6 +1499,8 @@ Optional fields:
   [RedshiftDestinationUpdateTypeDef](./type_defs.md#redshiftdestinationupdatetypedef)
 - `ElasticsearchDestinationUpdate`:
   [ElasticsearchDestinationUpdateTypeDef](./type_defs.md#elasticsearchdestinationupdatetypedef)
+- `AmazonopensearchserviceDestinationUpdate`:
+  [AmazonopensearchserviceDestinationUpdateTypeDef](./type_defs.md#amazonopensearchservicedestinationupdatetypedef)
 - `SplunkDestinationUpdate`:
   [SplunkDestinationUpdateTypeDef](./type_defs.md#splunkdestinationupdatetypedef)
 - `HttpEndpointDestinationUpdate`:
