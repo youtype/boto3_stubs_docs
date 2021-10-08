@@ -5865,8 +5865,8 @@ from mypy_boto3_ec2.type_defs import CreateSubnetRequestRequestTypeDef
 
 Required fields:
 
-- `VpcId`: `str`
 - `CidrBlock`: `str`
+- `VpcId`: `str`
 
 Optional fields:
 
@@ -5886,8 +5886,8 @@ from mypy_boto3_ec2.type_defs import CreateSubnetRequestServiceResourceTypeDef
 
 Required fields:
 
-- `VpcId`: `str`
 - `CidrBlock`: `str`
+- `VpcId`: `str`
 
 Optional fields:
 
@@ -22298,10 +22298,10 @@ from mypy_boto3_ec2.type_defs import SearchLocalGatewayRoutesRequestRequestTypeD
 Required fields:
 
 - `LocalGatewayRouteTableId`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Optional fields:
 
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`

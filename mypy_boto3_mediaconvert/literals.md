@@ -232,6 +232,7 @@ type annotations stubs module
   - [InputDeblockFilterType](#inputdeblockfiltertype)
   - [InputDenoiseFilterType](#inputdenoisefiltertype)
   - [InputFilterEnableType](#inputfilterenabletype)
+  - [InputPolicyType](#inputpolicytype)
   - [InputPsiControlType](#inputpsicontroltype)
   - [InputRotateType](#inputrotatetype)
   - [InputSampleRangeType](#inputsamplerangetype)
@@ -3104,6 +3105,17 @@ Values:
 - `AUTO`
 - `DISABLE`
 - `FORCE`
+
+## InputPolicyType
+
+```python
+from mypy_boto3_mediaconvert.literals import InputPolicyType
+```
+
+Values:
+
+- `ALLOWED`
+- `DISALLOWED`
 
 ## InputPsiControlType
 

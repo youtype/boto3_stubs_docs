@@ -87,6 +87,7 @@ type annotations stubs module
   - [GetJobResponseTypeDef](#getjobresponsetypedef)
   - [GetJobTemplateRequestRequestTypeDef](#getjobtemplaterequestrequesttypedef)
   - [GetJobTemplateResponseTypeDef](#getjobtemplateresponsetypedef)
+  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
   - [GetPresetRequestRequestTypeDef](#getpresetrequestrequesttypedef)
   - [GetPresetResponseTypeDef](#getpresetresponsetypedef)
   - [GetQueueRequestRequestTypeDef](#getqueuerequestrequesttypedef)
@@ -163,9 +164,12 @@ type annotations stubs module
   - [OutputTypeDef](#outputtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PartnerWatermarkingTypeDef](#partnerwatermarkingtypedef)
+  - [PolicyTypeDef](#policytypedef)
   - [PresetSettingsTypeDef](#presetsettingstypedef)
   - [PresetTypeDef](#presettypedef)
   - [ProresSettingsTypeDef](#proressettingstypedef)
+  - [PutPolicyRequestRequestTypeDef](#putpolicyrequestrequesttypedef)
+  - [PutPolicyResponseTypeDef](#putpolicyresponsetypedef)
   - [QueueTransitionTypeDef](#queuetransitiontypedef)
   - [QueueTypeDef](#queuetypedef)
   - [RectangleTypeDef](#rectangletypedef)
@@ -1506,6 +1510,18 @@ from mypy_boto3_mediaconvert.type_defs import GetJobTemplateResponseTypeDef
 Required fields:
 
 - `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetPolicyResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import GetPolicyResponseTypeDef
+```
+
+Required fields:
+
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2909,6 +2925,18 @@ Optional fields:
 - `NexguardFileMarkerSettings`:
   [NexGuardFileMarkerSettingsTypeDef](./type_defs.md#nexguardfilemarkersettingstypedef)
 
+## PolicyTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import PolicyTypeDef
+```
+
+Optional fields:
+
+- `HttpInputs`: [InputPolicyType](./literals.md#inputpolicytype)
+- `HttpsInputs`: [InputPolicyType](./literals.md#inputpolicytype)
+- `S3Inputs`: [InputPolicyType](./literals.md#inputpolicytype)
+
 ## PresetSettingsTypeDef
 
 ```python
@@ -2973,6 +3001,28 @@ Optional fields:
   [ProresScanTypeConversionModeType](./literals.md#proresscantypeconversionmodetype)
 - `SlowPal`: [ProresSlowPalType](./literals.md#proresslowpaltype)
 - `Telecine`: [ProresTelecineType](./literals.md#prorestelecinetype)
+
+## PutPolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import PutPolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
+
+## PutPolicyResponseTypeDef
+
+```python
+from mypy_boto3_mediaconvert.type_defs import PutPolicyResponseTypeDef
+```
+
+Required fields:
+
+- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## QueueTransitionTypeDef
 

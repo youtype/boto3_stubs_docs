@@ -2689,8 +2689,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `VpcId`: `str` *(required)*
 - `CidrBlock`: `str` *(required)*
+- `VpcId`: `str` *(required)*
 - `TagSpecifications`:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `AvailabilityZone`: `str`
@@ -11267,7 +11267,6 @@ Keyword-only arguments:
 
 - `LocalGatewayRouteTableId`: `str` *(required)*
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-  *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `DryRun`: `bool`

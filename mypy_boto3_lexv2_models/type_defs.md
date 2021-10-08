@@ -109,6 +109,9 @@ type annotations stubs module
   - [ExportSortByTypeDef](#exportsortbytypedef)
   - [ExportSummaryTypeDef](#exportsummarytypedef)
   - [FulfillmentCodeHookSettingsTypeDef](#fulfillmentcodehooksettingstypedef)
+  - [FulfillmentStartResponseSpecificationTypeDef](#fulfillmentstartresponsespecificationtypedef)
+  - [FulfillmentUpdateResponseSpecificationTypeDef](#fulfillmentupdateresponsespecificationtypedef)
+  - [FulfillmentUpdatesSpecificationTypeDef](#fulfillmentupdatesspecificationtypedef)
   - [ImageResponseCardTypeDef](#imageresponsecardtypedef)
   - [ImportFilterTypeDef](#importfiltertypedef)
   - [ImportResourceSpecificationTypeDef](#importresourcespecificationtypedef)
@@ -154,6 +157,7 @@ type annotations stubs module
   - [ObfuscationSettingTypeDef](#obfuscationsettingtypedef)
   - [OutputContextTypeDef](#outputcontexttypedef)
   - [PlainTextMessageTypeDef](#plaintextmessagetypedef)
+  - [PostFulfillmentStatusSpecificationTypeDef](#postfulfillmentstatusspecificationtypedef)
   - [PrincipalTypeDef](#principaltypedef)
   - [PromptSpecificationTypeDef](#promptspecificationtypedef)
   - [RelativeAggregationDurationTypeDef](#relativeaggregationdurationtypedef)
@@ -1770,6 +1774,63 @@ Required fields:
 
 - `enabled`: `bool`
 
+Optional fields:
+
+- `postFulfillmentStatusSpecification`:
+  [PostFulfillmentStatusSpecificationTypeDef](./type_defs.md#postfulfillmentstatusspecificationtypedef)
+- `fulfillmentUpdatesSpecification`:
+  [FulfillmentUpdatesSpecificationTypeDef](./type_defs.md#fulfillmentupdatesspecificationtypedef)
+
+## FulfillmentStartResponseSpecificationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import FulfillmentStartResponseSpecificationTypeDef
+```
+
+Required fields:
+
+- `delayInSeconds`: `int`
+- `messageGroups`:
+  `Sequence`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
+
+Optional fields:
+
+- `allowInterrupt`: `bool`
+
+## FulfillmentUpdateResponseSpecificationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import FulfillmentUpdateResponseSpecificationTypeDef
+```
+
+Required fields:
+
+- `frequencyInSeconds`: `int`
+- `messageGroups`:
+  `Sequence`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
+
+Optional fields:
+
+- `allowInterrupt`: `bool`
+
+## FulfillmentUpdatesSpecificationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import FulfillmentUpdatesSpecificationTypeDef
+```
+
+Required fields:
+
+- `active`: `bool`
+
+Optional fields:
+
+- `startResponse`:
+  [FulfillmentStartResponseSpecificationTypeDef](./type_defs.md#fulfillmentstartresponsespecificationtypedef)
+- `updateResponse`:
+  [FulfillmentUpdateResponseSpecificationTypeDef](./type_defs.md#fulfillmentupdateresponsespecificationtypedef)
+- `timeoutInSeconds`: `int`
+
 ## ImageResponseCardTypeDef
 
 ```python
@@ -2456,6 +2517,21 @@ from mypy_boto3_lexv2_models.type_defs import PlainTextMessageTypeDef
 Required fields:
 
 - `value`: `str`
+
+## PostFulfillmentStatusSpecificationTypeDef
+
+```python
+from mypy_boto3_lexv2_models.type_defs import PostFulfillmentStatusSpecificationTypeDef
+```
+
+Optional fields:
+
+- `successResponse`:
+  [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
+- `failureResponse`:
+  [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
+- `timeoutResponse`:
+  [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
 
 ## PrincipalTypeDef
 

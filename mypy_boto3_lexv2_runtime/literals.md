@@ -41,6 +41,7 @@ Values:
 - `Delegate`
 - `ElicitIntent`
 - `ElicitSlot`
+- `None`
 
 ## IntentStateType
 
@@ -52,6 +53,7 @@ Values:
 
 - `Failed`
 - `Fulfilled`
+- `FulfillmentInProgress`
 - `InProgress`
 - `ReadyForFulfillment`
 - `Waiting`

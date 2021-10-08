@@ -3047,7 +3047,6 @@ Arguments for `SearchLocalGatewayRoutesPaginator.paginate` method:
 
 - `LocalGatewayRouteTableId`: `str` *(required)*
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-  *(required)*
 - `DryRun`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)

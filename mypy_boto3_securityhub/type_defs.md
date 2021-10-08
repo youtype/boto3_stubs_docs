@@ -55,10 +55,16 @@ type annotations stubs module
   - [AwsCloudFrontDistributionOriginItemTypeDef](#awscloudfrontdistributionoriginitemtypedef)
   - [AwsCloudFrontDistributionOriginS3OriginConfigTypeDef](#awscloudfrontdistributionorigins3originconfigtypedef)
   - [AwsCloudFrontDistributionOriginsTypeDef](#awscloudfrontdistributionoriginstypedef)
+  - [AwsCloudFrontDistributionViewerCertificateTypeDef](#awscloudfrontdistributionviewercertificatetypedef)
   - [AwsCloudTrailTrailDetailsTypeDef](#awscloudtrailtraildetailstypedef)
+  - [AwsCodeBuildProjectArtifactsDetailsTypeDef](#awscodebuildprojectartifactsdetailstypedef)
   - [AwsCodeBuildProjectDetailsTypeDef](#awscodebuildprojectdetailstypedef)
+  - [AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef](#awscodebuildprojectenvironmentenvironmentvariablesdetailstypedef)
   - [AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef](#awscodebuildprojectenvironmentregistrycredentialtypedef)
   - [AwsCodeBuildProjectEnvironmentTypeDef](#awscodebuildprojectenvironmenttypedef)
+  - [AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef](#awscodebuildprojectlogsconfigcloudwatchlogsdetailstypedef)
+  - [AwsCodeBuildProjectLogsConfigDetailsTypeDef](#awscodebuildprojectlogsconfigdetailstypedef)
+  - [AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef](#awscodebuildprojectlogsconfigs3logsdetailstypedef)
   - [AwsCodeBuildProjectSourceTypeDef](#awscodebuildprojectsourcetypedef)
   - [AwsCodeBuildProjectVpcConfigTypeDef](#awscodebuildprojectvpcconfigtypedef)
   - [AwsCorsConfigurationTypeDef](#awscorsconfigurationtypedef)
@@ -97,12 +103,17 @@ type annotations stubs module
   - [AwsEc2VolumeAttachmentTypeDef](#awsec2volumeattachmenttypedef)
   - [AwsEc2VolumeDetailsTypeDef](#awsec2volumedetailstypedef)
   - [AwsEc2VpcDetailsTypeDef](#awsec2vpcdetailstypedef)
+  - [AwsEc2VpcEndpointServiceDetailsTypeDef](#awsec2vpcendpointservicedetailstypedef)
+  - [AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef](#awsec2vpcendpointserviceservicetypedetailstypedef)
   - [AwsEc2VpnConnectionDetailsTypeDef](#awsec2vpnconnectiondetailstypedef)
   - [AwsEc2VpnConnectionOptionsDetailsTypeDef](#awsec2vpnconnectionoptionsdetailstypedef)
   - [AwsEc2VpnConnectionOptionsTunnelOptionsDetailsTypeDef](#awsec2vpnconnectionoptionstunneloptionsdetailstypedef)
   - [AwsEc2VpnConnectionRoutesDetailsTypeDef](#awsec2vpnconnectionroutesdetailstypedef)
   - [AwsEc2VpnConnectionVgwTelemetryDetailsTypeDef](#awsec2vpnconnectionvgwtelemetrydetailstypedef)
   - [AwsEcrContainerImageDetailsTypeDef](#awsecrcontainerimagedetailstypedef)
+  - [AwsEcrRepositoryDetailsTypeDef](#awsecrrepositorydetailstypedef)
+  - [AwsEcrRepositoryImageScanningConfigurationDetailsTypeDef](#awsecrrepositoryimagescanningconfigurationdetailstypedef)
+  - [AwsEcrRepositoryLifecyclePolicyDetailsTypeDef](#awsecrrepositorylifecyclepolicydetailstypedef)
   - [AwsEcsClusterClusterSettingsDetailsTypeDef](#awsecsclusterclustersettingsdetailstypedef)
   - [AwsEcsClusterConfigurationDetailsTypeDef](#awsecsclusterconfigurationdetailstypedef)
   - [AwsEcsClusterConfigurationExecuteCommandConfigurationDetailsTypeDef](#awsecsclusterconfigurationexecutecommandconfigurationdetailstypedef)
@@ -151,6 +162,10 @@ type annotations stubs module
   - [AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationAuthorizationConfigDetailsTypeDef](#awsecstaskdefinitionvolumesefsvolumeconfigurationauthorizationconfigdetailstypedef)
   - [AwsEcsTaskDefinitionVolumesEfsVolumeConfigurationDetailsTypeDef](#awsecstaskdefinitionvolumesefsvolumeconfigurationdetailstypedef)
   - [AwsEcsTaskDefinitionVolumesHostDetailsTypeDef](#awsecstaskdefinitionvolumeshostdetailstypedef)
+  - [AwsEksClusterDetailsTypeDef](#awseksclusterdetailstypedef)
+  - [AwsEksClusterLoggingClusterLoggingDetailsTypeDef](#awseksclusterloggingclusterloggingdetailstypedef)
+  - [AwsEksClusterLoggingDetailsTypeDef](#awseksclusterloggingdetailstypedef)
+  - [AwsEksClusterResourcesVpcConfigDetailsTypeDef](#awseksclusterresourcesvpcconfigdetailstypedef)
   - [AwsElasticBeanstalkEnvironmentDetailsTypeDef](#awselasticbeanstalkenvironmentdetailstypedef)
   - [AwsElasticBeanstalkEnvironmentEnvironmentLinkTypeDef](#awselasticbeanstalkenvironmentenvironmentlinktypedef)
   - [AwsElasticBeanstalkEnvironmentOptionSettingTypeDef](#awselasticbeanstalkenvironmentoptionsettingtypedef)
@@ -180,6 +195,7 @@ type annotations stubs module
   - [AwsElbLoadBalancerListenerTypeDef](#awselbloadbalancerlistenertypedef)
   - [AwsElbLoadBalancerPoliciesTypeDef](#awselbloadbalancerpoliciestypedef)
   - [AwsElbLoadBalancerSourceSecurityGroupTypeDef](#awselbloadbalancersourcesecuritygrouptypedef)
+  - [AwsElbv2LoadBalancerAttributeTypeDef](#awselbv2loadbalancerattributetypedef)
   - [AwsElbv2LoadBalancerDetailsTypeDef](#awselbv2loadbalancerdetailstypedef)
   - [AwsIamAccessKeyDetailsTypeDef](#awsiamaccesskeydetailstypedef)
   - [AwsIamAccessKeySessionContextAttributesTypeDef](#awsiamaccesskeysessioncontextattributestypedef)
@@ -207,6 +223,16 @@ type annotations stubs module
   - [AwsLambdaFunctionTracingConfigTypeDef](#awslambdafunctiontracingconfigtypedef)
   - [AwsLambdaFunctionVpcConfigTypeDef](#awslambdafunctionvpcconfigtypedef)
   - [AwsLambdaLayerVersionDetailsTypeDef](#awslambdalayerversiondetailstypedef)
+  - [AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef](#awsopensearchservicedomainclusterconfigdetailstypedef)
+  - [AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetailsTypeDef](#awsopensearchservicedomainclusterconfigzoneawarenessconfigdetailstypedef)
+  - [AwsOpenSearchServiceDomainDetailsTypeDef](#awsopensearchservicedomaindetailstypedef)
+  - [AwsOpenSearchServiceDomainDomainEndpointOptionsDetailsTypeDef](#awsopensearchservicedomaindomainendpointoptionsdetailstypedef)
+  - [AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetailsTypeDef](#awsopensearchservicedomainencryptionatrestoptionsdetailstypedef)
+  - [AwsOpenSearchServiceDomainLogPublishingOptionTypeDef](#awsopensearchservicedomainlogpublishingoptiontypedef)
+  - [AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef](#awsopensearchservicedomainlogpublishingoptionsdetailstypedef)
+  - [AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetailsTypeDef](#awsopensearchservicedomainnodetonodeencryptionoptionsdetailstypedef)
+  - [AwsOpenSearchServiceDomainServiceSoftwareOptionsDetailsTypeDef](#awsopensearchservicedomainservicesoftwareoptionsdetailstypedef)
+  - [AwsOpenSearchServiceDomainVpcOptionsDetailsTypeDef](#awsopensearchservicedomainvpcoptionsdetailstypedef)
   - [AwsRdsDbClusterAssociatedRoleTypeDef](#awsrdsdbclusterassociatedroletypedef)
   - [AwsRdsDbClusterDetailsTypeDef](#awsrdsdbclusterdetailstypedef)
   - [AwsRdsDbClusterMemberTypeDef](#awsrdsdbclustermembertypedef)
@@ -281,8 +307,13 @@ type annotations stubs module
   - [AwsSsmComplianceSummaryTypeDef](#awsssmcompliancesummarytypedef)
   - [AwsSsmPatchComplianceDetailsTypeDef](#awsssmpatchcompliancedetailstypedef)
   - [AwsSsmPatchTypeDef](#awsssmpatchtypedef)
+  - [AwsWafRateBasedRuleDetailsTypeDef](#awswafratebasedruledetailstypedef)
+  - [AwsWafRateBasedRuleMatchPredicateTypeDef](#awswafratebasedrulematchpredicatetypedef)
+  - [AwsWafRegionalRateBasedRuleDetailsTypeDef](#awswafregionalratebasedruledetailstypedef)
+  - [AwsWafRegionalRateBasedRuleMatchPredicateTypeDef](#awswafregionalratebasedrulematchpredicatetypedef)
   - [AwsWafWebAclDetailsTypeDef](#awswafwebacldetailstypedef)
   - [AwsWafWebAclRuleTypeDef](#awswafwebaclruletypedef)
+  - [AwsXrayEncryptionConfigDetailsTypeDef](#awsxrayencryptionconfigdetailstypedef)
   - [BatchDisableStandardsRequestRequestTypeDef](#batchdisablestandardsrequestrequesttypedef)
   - [BatchDisableStandardsResponseTypeDef](#batchdisablestandardsresponsetypedef)
   - [BatchEnableStandardsRequestRequestTypeDef](#batchenablestandardsrequestrequesttypedef)
@@ -1020,6 +1051,8 @@ Optional fields:
   [AwsCloudFrontDistributionOriginsTypeDef](./type_defs.md#awscloudfrontdistributionoriginstypedef)
 - `OriginGroups`:
   [AwsCloudFrontDistributionOriginGroupsTypeDef](./type_defs.md#awscloudfrontdistributionorigingroupstypedef)
+- `ViewerCertificate`:
+  [AwsCloudFrontDistributionViewerCertificateTypeDef](./type_defs.md#awscloudfrontdistributionviewercertificatetypedef)
 - `Status`: `str`
 - `WebAclId`: `str`
 
@@ -1115,6 +1148,22 @@ Optional fields:
 - `Items`:
   `Sequence`\[[AwsCloudFrontDistributionOriginItemTypeDef](./type_defs.md#awscloudfrontdistributionoriginitemtypedef)\]
 
+## AwsCloudFrontDistributionViewerCertificateTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsCloudFrontDistributionViewerCertificateTypeDef
+```
+
+Optional fields:
+
+- `AcmCertificateArn`: `str`
+- `Certificate`: `str`
+- `CertificateSource`: `str`
+- `CloudFrontDefaultCertificate`: `bool`
+- `IamCertificateId`: `str`
+- `MinimumProtocolVersion`: `str`
+- `SslSupportMethod`: `str`
+
 ## AwsCloudTrailTrailDetailsTypeDef
 
 ```python
@@ -1139,6 +1188,24 @@ Optional fields:
 - `SnsTopicName`: `str`
 - `TrailArn`: `str`
 
+## AwsCodeBuildProjectArtifactsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectArtifactsDetailsTypeDef
+```
+
+Optional fields:
+
+- `ArtifactIdentifier`: `str`
+- `EncryptionDisabled`: `bool`
+- `Location`: `str`
+- `Name`: `str`
+- `NamespaceType`: `str`
+- `OverrideArtifactName`: `bool`
+- `Packaging`: `str`
+- `Path`: `str`
+- `Type`: `str`
+
 ## AwsCodeBuildProjectDetailsTypeDef
 
 ```python
@@ -1148,14 +1215,30 @@ from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectDetailsTypeDef
 Optional fields:
 
 - `EncryptionKey`: `str`
+- `Artifacts`:
+  `Sequence`\[[AwsCodeBuildProjectArtifactsDetailsTypeDef](./type_defs.md#awscodebuildprojectartifactsdetailstypedef)\]
 - `Environment`:
   [AwsCodeBuildProjectEnvironmentTypeDef](./type_defs.md#awscodebuildprojectenvironmenttypedef)
 - `Name`: `str`
 - `Source`:
   [AwsCodeBuildProjectSourceTypeDef](./type_defs.md#awscodebuildprojectsourcetypedef)
 - `ServiceRole`: `str`
+- `LogsConfig`:
+  [AwsCodeBuildProjectLogsConfigDetailsTypeDef](./type_defs.md#awscodebuildprojectlogsconfigdetailstypedef)
 - `VpcConfig`:
   [AwsCodeBuildProjectVpcConfigTypeDef](./type_defs.md#awscodebuildprojectvpcconfigtypedef)
+
+## AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Type`: `str`
+- `Value`: `str`
 
 ## AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef
 
@@ -1177,10 +1260,50 @@ from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectEnvironmentTypeD
 Optional fields:
 
 - `Certificate`: `str`
+- `EnvironmentVariables`:
+  `Sequence`\[[AwsCodeBuildProjectEnvironmentEnvironmentVariablesDetailsTypeDef](./type_defs.md#awscodebuildprojectenvironmentenvironmentvariablesdetailstypedef)\]
+- `PrivilegedMode`: `bool`
 - `ImagePullCredentialsType`: `str`
 - `RegistryCredential`:
   [AwsCodeBuildProjectEnvironmentRegistryCredentialTypeDef](./type_defs.md#awscodebuildprojectenvironmentregistrycredentialtypedef)
 - `Type`: `str`
+
+## AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef
+```
+
+Optional fields:
+
+- `GroupName`: `str`
+- `Status`: `str`
+- `StreamName`: `str`
+
+## AwsCodeBuildProjectLogsConfigDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectLogsConfigDetailsTypeDef
+```
+
+Optional fields:
+
+- `CloudWatchLogs`:
+  [AwsCodeBuildProjectLogsConfigCloudWatchLogsDetailsTypeDef](./type_defs.md#awscodebuildprojectlogsconfigcloudwatchlogsdetailstypedef)
+- `S3Logs`:
+  [AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef](./type_defs.md#awscodebuildprojectlogsconfigs3logsdetailstypedef)
+
+## AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsCodeBuildProjectLogsConfigS3LogsDetailsTypeDef
+```
+
+Optional fields:
+
+- `EncryptionDisabled`: `bool`
+- `Location`: `str`
+- `Status`: `str`
 
 ## AwsCodeBuildProjectSourceTypeDef
 
@@ -1744,6 +1867,37 @@ Optional fields:
 - `DhcpOptionsId`: `str`
 - `State`: `str`
 
+## AwsEc2VpcEndpointServiceDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEc2VpcEndpointServiceDetailsTypeDef
+```
+
+Optional fields:
+
+- `AcceptanceRequired`: `bool`
+- `AvailabilityZones`: `Sequence`\[`str`\]
+- `BaseEndpointDnsNames`: `Sequence`\[`str`\]
+- `ManagesVpcEndpoints`: `bool`
+- `GatewayLoadBalancerArns`: `Sequence`\[`str`\]
+- `NetworkLoadBalancerArns`: `Sequence`\[`str`\]
+- `PrivateDnsName`: `str`
+- `ServiceId`: `str`
+- `ServiceName`: `str`
+- `ServiceState`: `str`
+- `ServiceType`:
+  `Sequence`\[[AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef](./type_defs.md#awsec2vpcendpointserviceservicetypedetailstypedef)\]
+
+## AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEc2VpcEndpointServiceServiceTypeDetailsTypeDef
+```
+
+Optional fields:
+
+- `ServiceType`: `str`
+
 ## AwsEc2VpnConnectionDetailsTypeDef
 
 ```python
@@ -1844,6 +1998,44 @@ Optional fields:
 - `ImageDigest`: `str`
 - `ImageTags`: `Sequence`\[`str`\]
 - `ImagePublishedAt`: `str`
+
+## AwsEcrRepositoryDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcrRepositoryDetailsTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `ImageScanningConfiguration`:
+  [AwsEcrRepositoryImageScanningConfigurationDetailsTypeDef](./type_defs.md#awsecrrepositoryimagescanningconfigurationdetailstypedef)
+- `ImageTagMutability`: `str`
+- `LifecyclePolicy`:
+  [AwsEcrRepositoryLifecyclePolicyDetailsTypeDef](./type_defs.md#awsecrrepositorylifecyclepolicydetailstypedef)
+- `RepositoryName`: `str`
+- `RepositoryPolicyText`: `str`
+
+## AwsEcrRepositoryImageScanningConfigurationDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcrRepositoryImageScanningConfigurationDetailsTypeDef
+```
+
+Optional fields:
+
+- `ScanOnPush`: `bool`
+
+## AwsEcrRepositoryLifecyclePolicyDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEcrRepositoryLifecyclePolicyDetailsTypeDef
+```
+
+Optional fields:
+
+- `LifecyclePolicyText`: `str`
+- `RegistryId`: `str`
 
 ## AwsEcsClusterClusterSettingsDetailsTypeDef
 
@@ -2519,6 +2711,59 @@ Optional fields:
 
 - `SourcePath`: `str`
 
+## AwsEksClusterDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEksClusterDetailsTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `CertificateAuthorityData`: `str`
+- `ClusterStatus`: `str`
+- `Endpoint`: `str`
+- `Name`: `str`
+- `ResourcesVpcConfig`:
+  [AwsEksClusterResourcesVpcConfigDetailsTypeDef](./type_defs.md#awseksclusterresourcesvpcconfigdetailstypedef)
+- `RoleArn`: `str`
+- `Version`: `str`
+- `Logging`:
+  [AwsEksClusterLoggingDetailsTypeDef](./type_defs.md#awseksclusterloggingdetailstypedef)
+
+## AwsEksClusterLoggingClusterLoggingDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEksClusterLoggingClusterLoggingDetailsTypeDef
+```
+
+Optional fields:
+
+- `Enabled`: `bool`
+- `Types`: `Sequence`\[`str`\]
+
+## AwsEksClusterLoggingDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEksClusterLoggingDetailsTypeDef
+```
+
+Optional fields:
+
+- `ClusterLogging`:
+  `Sequence`\[[AwsEksClusterLoggingClusterLoggingDetailsTypeDef](./type_defs.md#awseksclusterloggingclusterloggingdetailstypedef)\]
+
+## AwsEksClusterResourcesVpcConfigDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsEksClusterResourcesVpcConfigDetailsTypeDef
+```
+
+Optional fields:
+
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
+
 ## AwsElasticBeanstalkEnvironmentDetailsTypeDef
 
 ```python
@@ -2928,6 +3173,17 @@ Optional fields:
 - `GroupName`: `str`
 - `OwnerAlias`: `str`
 
+## AwsElbv2LoadBalancerAttributeTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsElbv2LoadBalancerAttributeTypeDef
+```
+
+Optional fields:
+
+- `Key`: `str`
+- `Value`: `str`
+
 ## AwsElbv2LoadBalancerDetailsTypeDef
 
 ```python
@@ -2947,6 +3203,8 @@ Optional fields:
 - `State`: [LoadBalancerStateTypeDef](./type_defs.md#loadbalancerstatetypedef)
 - `Type`: `str`
 - `VpcId`: `str`
+- `LoadBalancerAttributes`:
+  `Sequence`\[[AwsElbv2LoadBalancerAttributeTypeDef](./type_defs.md#awselbv2loadbalancerattributetypedef)\]
 
 ## AwsIamAccessKeyDetailsTypeDef
 
@@ -3322,6 +3580,155 @@ Optional fields:
 - `Version`: `int`
 - `CompatibleRuntimes`: `Sequence`\[`str`\]
 - `CreatedDate`: `str`
+
+## AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef
+```
+
+Optional fields:
+
+- `InstanceCount`: `int`
+- `WarmEnabled`: `bool`
+- `WarmCount`: `int`
+- `DedicatedMasterEnabled`: `bool`
+- `ZoneAwarenessConfig`:
+  [AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetailsTypeDef](./type_defs.md#awsopensearchservicedomainclusterconfigzoneawarenessconfigdetailstypedef)
+- `DedicatedMasterCount`: `int`
+- `InstanceType`: `str`
+- `WarmType`: `str`
+- `ZoneAwarenessEnabled`: `bool`
+- `DedicatedMasterType`: `str`
+
+## AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainClusterConfigZoneAwarenessConfigDetailsTypeDef
+```
+
+Optional fields:
+
+- `AvailabilityZoneCount`: `int`
+
+## AwsOpenSearchServiceDomainDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainDetailsTypeDef
+```
+
+Optional fields:
+
+- `Arn`: `str`
+- `AccessPolicies`: `str`
+- `DomainName`: `str`
+- `Id`: `str`
+- `DomainEndpoint`: `str`
+- `EngineVersion`: `str`
+- `EncryptionAtRestOptions`:
+  [AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainencryptionatrestoptionsdetailstypedef)
+- `NodeToNodeEncryptionOptions`:
+  [AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainnodetonodeencryptionoptionsdetailstypedef)
+- `ServiceSoftwareOptions`:
+  [AwsOpenSearchServiceDomainServiceSoftwareOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainservicesoftwareoptionsdetailstypedef)
+- `ClusterConfig`:
+  [AwsOpenSearchServiceDomainClusterConfigDetailsTypeDef](./type_defs.md#awsopensearchservicedomainclusterconfigdetailstypedef)
+- `DomainEndpointOptions`:
+  [AwsOpenSearchServiceDomainDomainEndpointOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomaindomainendpointoptionsdetailstypedef)
+- `VpcOptions`:
+  [AwsOpenSearchServiceDomainVpcOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainvpcoptionsdetailstypedef)
+- `LogPublishingOptions`:
+  [AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptionsdetailstypedef)
+- `DomainEndpoints`: `Mapping`\[`str`, `str`\]
+
+## AwsOpenSearchServiceDomainDomainEndpointOptionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainDomainEndpointOptionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `CustomEndpointCertificateArn`: `str`
+- `CustomEndpointEnabled`: `bool`
+- `EnforceHTTPS`: `bool`
+- `CustomEndpoint`: `str`
+- `TLSSecurityPolicy`: `str`
+
+## AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainEncryptionAtRestOptionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Enabled`: `bool`
+- `KmsKeyId`: `str`
+
+## AwsOpenSearchServiceDomainLogPublishingOptionTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainLogPublishingOptionTypeDef
+```
+
+Optional fields:
+
+- `CloudWatchLogsLogGroupArn`: `str`
+- `Enabled`: `bool`
+
+## AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainLogPublishingOptionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `IndexSlowLogs`:
+  [AwsOpenSearchServiceDomainLogPublishingOptionTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptiontypedef)
+- `SearchSlowLogs`:
+  [AwsOpenSearchServiceDomainLogPublishingOptionTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptiontypedef)
+- `AuditLogs`:
+  [AwsOpenSearchServiceDomainLogPublishingOptionTypeDef](./type_defs.md#awsopensearchservicedomainlogpublishingoptiontypedef)
+
+## AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainNodeToNodeEncryptionOptionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `Enabled`: `bool`
+
+## AwsOpenSearchServiceDomainServiceSoftwareOptionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainServiceSoftwareOptionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `AutomatedUpdateDate`: `str`
+- `Cancellable`: `bool`
+- `CurrentVersion`: `str`
+- `Description`: `str`
+- `NewVersion`: `str`
+- `UpdateAvailable`: `bool`
+- `UpdateStatus`: `str`
+- `OptionalDeployment`: `bool`
+
+## AwsOpenSearchServiceDomainVpcOptionsDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsOpenSearchServiceDomainVpcOptionsDetailsTypeDef
+```
+
+Optional fields:
+
+- `SecurityGroupIds`: `Sequence`\[`str`\]
+- `SubnetIds`: `Sequence`\[`str`\]
 
 ## AwsRdsDbClusterAssociatedRoleTypeDef
 
@@ -4131,6 +4538,7 @@ Optional fields:
 
 - `OwnerId`: `str`
 - `OwnerName`: `str`
+- `OwnerAccountId`: `str`
 - `CreatedAt`: `str`
 - `ServerSideEncryptionConfiguration`:
   [AwsS3BucketServerSideEncryptionConfigurationTypeDef](./type_defs.md#awss3bucketserversideencryptionconfigurationtypedef)
@@ -4706,6 +5114,62 @@ Optional fields:
 - `ComplianceSummary`:
   [AwsSsmComplianceSummaryTypeDef](./type_defs.md#awsssmcompliancesummarytypedef)
 
+## AwsWafRateBasedRuleDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsWafRateBasedRuleDetailsTypeDef
+```
+
+Optional fields:
+
+- `MetricName`: `str`
+- `Name`: `str`
+- `RateKey`: `str`
+- `RateLimit`: `int`
+- `RuleId`: `str`
+- `MatchPredicates`:
+  `Sequence`\[[AwsWafRateBasedRuleMatchPredicateTypeDef](./type_defs.md#awswafratebasedrulematchpredicatetypedef)\]
+
+## AwsWafRateBasedRuleMatchPredicateTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsWafRateBasedRuleMatchPredicateTypeDef
+```
+
+Optional fields:
+
+- `DataId`: `str`
+- `Negated`: `bool`
+- `Type`: `str`
+
+## AwsWafRegionalRateBasedRuleDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalRateBasedRuleDetailsTypeDef
+```
+
+Optional fields:
+
+- `MetricName`: `str`
+- `Name`: `str`
+- `RateKey`: `str`
+- `RateLimit`: `int`
+- `RuleId`: `str`
+- `MatchPredicates`:
+  `Sequence`\[[AwsWafRegionalRateBasedRuleMatchPredicateTypeDef](./type_defs.md#awswafregionalratebasedrulematchpredicatetypedef)\]
+
+## AwsWafRegionalRateBasedRuleMatchPredicateTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsWafRegionalRateBasedRuleMatchPredicateTypeDef
+```
+
+Optional fields:
+
+- `DataId`: `str`
+- `Negated`: `bool`
+- `Type`: `str`
+
 ## AwsWafWebAclDetailsTypeDef
 
 ```python
@@ -4735,6 +5199,18 @@ Optional fields:
   [WafOverrideActionTypeDef](./type_defs.md#wafoverrideactiontypedef)
 - `Priority`: `int`
 - `RuleId`: `str`
+- `Type`: `str`
+
+## AwsXrayEncryptionConfigDetailsTypeDef
+
+```python
+from mypy_boto3_securityhub.type_defs import AwsXrayEncryptionConfigDetailsTypeDef
+```
+
+Optional fields:
+
+- `KeyId`: `str`
+- `Status`: `str`
 - `Type`: `str`
 
 ## BatchDisableStandardsRequestRequestTypeDef
@@ -6399,6 +6875,20 @@ Optional fields:
   [AwsEc2VpnConnectionDetailsTypeDef](./type_defs.md#awsec2vpnconnectiondetailstypedef)
 - `AwsEcrContainerImage`:
   [AwsEcrContainerImageDetailsTypeDef](./type_defs.md#awsecrcontainerimagedetailstypedef)
+- `AwsOpenSearchServiceDomain`:
+  [AwsOpenSearchServiceDomainDetailsTypeDef](./type_defs.md#awsopensearchservicedomaindetailstypedef)
+- `AwsEc2VpcEndpointService`:
+  [AwsEc2VpcEndpointServiceDetailsTypeDef](./type_defs.md#awsec2vpcendpointservicedetailstypedef)
+- `AwsXrayEncryptionConfig`:
+  [AwsXrayEncryptionConfigDetailsTypeDef](./type_defs.md#awsxrayencryptionconfigdetailstypedef)
+- `AwsWafRateBasedRule`:
+  [AwsWafRateBasedRuleDetailsTypeDef](./type_defs.md#awswafratebasedruledetailstypedef)
+- `AwsWafRegionalRateBasedRule`:
+  [AwsWafRegionalRateBasedRuleDetailsTypeDef](./type_defs.md#awswafregionalratebasedruledetailstypedef)
+- `AwsEcrRepository`:
+  [AwsEcrRepositoryDetailsTypeDef](./type_defs.md#awsecrrepositorydetailstypedef)
+- `AwsEksCluster`:
+  [AwsEksClusterDetailsTypeDef](./type_defs.md#awseksclusterdetailstypedef)
 
 ## ResourceTypeDef
 
