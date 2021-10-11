@@ -28,6 +28,7 @@ type annotations stubs module
   - [ProtocolEnumType](#protocolenumtype)
   - [RedirectActionStatusCodeEnumType](#redirectactionstatuscodeenumtype)
   - [TargetDeregisteredWaiterName](#targetderegisteredwaitername)
+  - [TargetGroupIpAddressTypeEnumType](#targetgroupipaddresstypeenumtype)
   - [TargetHealthReasonEnumType](#targethealthreasonenumtype)
   - [TargetHealthStateEnumType](#targethealthstateenumtype)
   - [TargetInServiceWaiterName](#targetinservicewaitername)
@@ -257,6 +258,17 @@ from mypy_boto3_elbv2.literals import TargetDeregisteredWaiterName
 Values:
 
 - `target_deregistered`
+
+## TargetGroupIpAddressTypeEnumType
+
+```python
+from mypy_boto3_elbv2.literals import TargetGroupIpAddressTypeEnumType
+```
+
+Values:
+
+- `ipv4`
+- `ipv6`
 
 ## TargetHealthReasonEnumType
 

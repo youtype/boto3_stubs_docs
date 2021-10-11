@@ -3209,8 +3209,8 @@ Returns
 
 ### create_vpc_endpoint_service_configuration
 
-Creates a VPC endpoint service configuration to which service consumers (AWS
-accounts, IAM users, and IAM roles) can connect.
+Creates a VPC endpoint service configuration to which service consumers (Amazon
+Web Services accounts, IAM users, and IAM roles) can connect.
 
 Type annotations for
 `boto3.client("ec2").create_vpc_endpoint_service_configuration` method.
@@ -8853,8 +8853,9 @@ Returns
 
 ### get_vpn_connection_device_sample_configuration
 
-Download an AWS-provided sample configuration file to be used with the customer
-gateway device specified for your Site-to-Site VPN connection.
+Download an Amazon Web Services-provided sample configuration file to be used
+with the customer gateway device specified for your Site-to-Site VPN
+connection.
 
 Type annotations for
 `boto3.client("ec2").get_vpn_connection_device_sample_configuration` method.

@@ -377,6 +377,8 @@ Optional fields:
 - `Matcher`: [MatcherTypeDef](./type_defs.md#matchertypedef)
 - `TargetType`: [TargetTypeEnumType](./literals.md#targettypeenumtype)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `IpAddressType`:
+  [TargetGroupIpAddressTypeEnumType](./literals.md#targetgroupipaddresstypeenumtype)
 
 ## CreateTargetGroupOutputTypeDef
 
@@ -1422,6 +1424,8 @@ Optional fields:
 - `LoadBalancerArns`: `List`\[`str`\]
 - `TargetType`: [TargetTypeEnumType](./literals.md#targettypeenumtype)
 - `ProtocolVersion`: `str`
+- `IpAddressType`:
+  [TargetGroupIpAddressTypeEnumType](./literals.md#targetgroupipaddresstypeenumtype)
 
 ## TargetHealthDescriptionTypeDef
 

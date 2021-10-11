@@ -15,19 +15,23 @@ type annotations stubs module
     - [batch_create_variable](#batch_create_variable)
     - [batch_get_variable](#batch_get_variable)
     - [can_paginate](#can_paginate)
+    - [cancel_batch_import_job](#cancel_batch_import_job)
     - [cancel_batch_prediction_job](#cancel_batch_prediction_job)
+    - [create_batch_import_job](#create_batch_import_job)
     - [create_batch_prediction_job](#create_batch_prediction_job)
     - [create_detector_version](#create_detector_version)
     - [create_model](#create_model)
     - [create_model_version](#create_model_version)
     - [create_rule](#create_rule)
     - [create_variable](#create_variable)
+    - [delete_batch_import_job](#delete_batch_import_job)
     - [delete_batch_prediction_job](#delete_batch_prediction_job)
     - [delete_detector](#delete_detector)
     - [delete_detector_version](#delete_detector_version)
     - [delete_entity_type](#delete_entity_type)
     - [delete_event](#delete_event)
     - [delete_event_type](#delete_event_type)
+    - [delete_events_by_event_type](#delete_events_by_event_type)
     - [delete_external_model](#delete_external_model)
     - [delete_label](#delete_label)
     - [delete_model](#delete_model)
@@ -38,10 +42,13 @@ type annotations stubs module
     - [describe_detector](#describe_detector)
     - [describe_model_versions](#describe_model_versions)
     - [generate_presigned_url](#generate_presigned_url)
+    - [get_batch_import_jobs](#get_batch_import_jobs)
     - [get_batch_prediction_jobs](#get_batch_prediction_jobs)
+    - [get_delete_events_by_event_type_status](#get_delete_events_by_event_type_status)
     - [get_detector_version](#get_detector_version)
     - [get_detectors](#get_detectors)
     - [get_entity_types](#get_entity_types)
+    - [get_event](#get_event)
     - [get_event_prediction](#get_event_prediction)
     - [get_event_types](#get_event_types)
     - [get_external_models](#get_external_models)
@@ -60,11 +67,13 @@ type annotations stubs module
     - [put_kms_encryption_key](#put_kms_encryption_key)
     - [put_label](#put_label)
     - [put_outcome](#put_outcome)
+    - [send_event](#send_event)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_detector_version](#update_detector_version)
     - [update_detector_version_metadata](#update_detector_version_metadata)
     - [update_detector_version_status](#update_detector_version_status)
+    - [update_event_label](#update_event_label)
     - [update_model](#update_model)
     - [update_model_version](#update_model_version)
     - [update_model_version_status](#update_model_version_status)
@@ -181,6 +190,25 @@ Arguments:
 
 Returns `bool`.
 
+### cancel_batch_import_job
+
+Cancels an in-progress batch import job.
+
+Type annotations for `boto3.client("frauddetector").cancel_batch_import_job`
+method.
+
+Boto3 documentation:
+[FraudDetector.Client.cancel_batch_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.cancel_batch_import_job)
+
+Arguments mapping described in
+[CancelBatchImportJobRequestRequestTypeDef](./type_defs.md#cancelbatchimportjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `jobId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### cancel_batch_prediction_job
 
 Cancels the specified batch prediction job.
@@ -197,6 +225,30 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `jobId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### create_batch_import_job
+
+Creates a batch import job.
+
+Type annotations for `boto3.client("frauddetector").create_batch_import_job`
+method.
+
+Boto3 documentation:
+[FraudDetector.Client.create_batch_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.create_batch_import_job)
+
+Arguments mapping described in
+[CreateBatchImportJobRequestRequestTypeDef](./type_defs.md#createbatchimportjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `jobId`: `str` *(required)*
+- `inputPath`: `str` *(required)*
+- `outputPath`: `str` *(required)*
+- `eventTypeName`: `str` *(required)*
+- `iamRoleArn`: `str` *(required)*
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -269,8 +321,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype)) *(required)*
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
+  *(required)*
 - `eventTypeName`: `str` *(required)*
 - `description`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
@@ -293,16 +345,18 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype)) *(required)*
-- `trainingDataSource`: `Literal['EXTERNAL_EVENTS']` (see
-  [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
+  *(required)*
+- `trainingDataSource`:
+  [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype)
   *(required)*
 - `trainingDataSchema`:
   [TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef)
   *(required)*
 - `externalEventsDetail`:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
+- `ingestedEventsDetail`:
+  [IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -354,6 +408,25 @@ Keyword-only arguments:
 - `description`: `str`
 - `variableType`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
+
+### delete_batch_import_job
+
+Deletes data that was batch imported to Amazon Fraud Detector.
+
+Type annotations for `boto3.client("frauddetector").delete_batch_import_job`
+method.
+
+Boto3 documentation:
+[FraudDetector.Client.delete_batch_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_batch_import_job)
+
+Arguments mapping described in
+[DeleteBatchImportJobRequestRequestTypeDef](./type_defs.md#deletebatchimportjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `jobId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -448,6 +521,7 @@ Keyword-only arguments:
 
 - `eventId`: `str` *(required)*
 - `eventTypeName`: `str` *(required)*
+- `deleteAuditHistory`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -468,6 +542,26 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+### delete_events_by_event_type
+
+Deletes all events of a particular event type.
+
+Type annotations for
+`boto3.client("frauddetector").delete_events_by_event_type` method.
+
+Boto3 documentation:
+[FraudDetector.Client.delete_events_by_event_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.delete_events_by_event_type)
+
+Arguments mapping described in
+[DeleteEventsByEventTypeRequestRequestTypeDef](./type_defs.md#deleteeventsbyeventtyperequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `eventTypeName`: `str` *(required)*
+
+Returns
+[DeleteEventsByEventTypeResultTypeDef](./type_defs.md#deleteeventsbyeventtyperesulttypedef).
 
 ### delete_external_model
 
@@ -521,8 +615,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype)) *(required)*
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
+  *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -542,8 +636,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype)) *(required)*
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
+  *(required)*
 - `modelVersionNumber`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
@@ -641,8 +735,7 @@ Keyword-only arguments:
 
 - `modelId`: `str`
 - `modelVersionNumber`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -668,6 +761,28 @@ Arguments:
 
 Returns `str`.
 
+### get_batch_import_jobs
+
+Gets all batch import jobs or a specific job of the specified ID.
+
+Type annotations for `boto3.client("frauddetector").get_batch_import_jobs`
+method.
+
+Boto3 documentation:
+[FraudDetector.Client.get_batch_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_batch_import_jobs)
+
+Arguments mapping described in
+[GetBatchImportJobsRequestRequestTypeDef](./type_defs.md#getbatchimportjobsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `jobId`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[GetBatchImportJobsResultTypeDef](./type_defs.md#getbatchimportjobsresulttypedef).
+
 ### get_batch_prediction_jobs
 
 Gets all batch prediction jobs or a specific job if you specify a job ID.
@@ -689,6 +804,26 @@ Keyword-only arguments:
 
 Returns
 [GetBatchPredictionJobsResultTypeDef](./type_defs.md#getbatchpredictionjobsresulttypedef).
+
+### get_delete_events_by_event_type_status
+
+Retrieves the status of a `DeleteEventsByEventType` action.
+
+Type annotations for
+`boto3.client("frauddetector").get_delete_events_by_event_type_status` method.
+
+Boto3 documentation:
+[FraudDetector.Client.get_delete_events_by_event_type_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_delete_events_by_event_type_status)
+
+Arguments mapping described in
+[GetDeleteEventsByEventTypeStatusRequestRequestTypeDef](./type_defs.md#getdeleteeventsbyeventtypestatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `eventTypeName`: `str` *(required)*
+
+Returns
+[GetDeleteEventsByEventTypeStatusResultTypeDef](./type_defs.md#getdeleteeventsbyeventtypestatusresulttypedef).
 
 ### get_detector_version
 
@@ -751,6 +886,25 @@ Keyword-only arguments:
 
 Returns
 [GetEntityTypesResultTypeDef](./type_defs.md#getentitytypesresulttypedef).
+
+### get_event
+
+Retrieves details of events stored with Amazon Fraud Detector.
+
+Type annotations for `boto3.client("frauddetector").get_event` method.
+
+Boto3 documentation:
+[FraudDetector.Client.get_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.get_event)
+
+Arguments mapping described in
+[GetEventRequestRequestTypeDef](./type_defs.md#geteventrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `eventId`: `str` *(required)*
+- `eventTypeName`: `str` *(required)*
+
+Returns [GetEventResultTypeDef](./type_defs.md#geteventresulttypedef).
 
 ### get_event_prediction
 
@@ -827,9 +981,8 @@ Returns
 
 ### get_kms_encryption_key
 
-Gets the encryption key if a Key Management Service (KMS) customer master key
-(CMK) has been specified to be used to encrypt content in Amazon Fraud
-Detector.
+Gets the encryption key if a KMS key has been specified to be used to encrypt
+content in Amazon Fraud Detector.
 
 Type annotations for `boto3.client("frauddetector").get_kms_encryption_key`
 method.
@@ -875,8 +1028,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype)) *(required)*
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
+  *(required)*
 - `modelVersionNumber`: `str` *(required)*
 
 Returns
@@ -897,8 +1050,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -1049,6 +1201,7 @@ Keyword-only arguments:
 - `entityTypes`: `Sequence`\[`str`\] *(required)*
 - `description`: `str`
 - `labels`: `Sequence`\[`str`\]
+- `eventIngestion`: [EventIngestionType](./literals.md#eventingestiontype)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1085,8 +1238,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_kms_encryption_key
 
-Specifies the Key Management Service (KMS) customer master key (CMK) to be used
-to encrypt content in Amazon Fraud Detector.
+Specifies the KMS key to be used to encrypt content in Amazon Fraud Detector.
 
 Type annotations for `boto3.client("frauddetector").put_kms_encryption_key`
 method.
@@ -1140,6 +1292,32 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `description`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns `Dict`\[`str`, `Any`\].
+
+### send_event
+
+Stores events in Amazon Fraud Detector without generating fraud predictions for
+those events.
+
+Type annotations for `boto3.client("frauddetector").send_event` method.
+
+Boto3 documentation:
+[FraudDetector.Client.send_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.send_event)
+
+Arguments mapping described in
+[SendEventRequestRequestTypeDef](./type_defs.md#sendeventrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `eventId`: `str` *(required)*
+- `eventTypeName`: `str` *(required)*
+- `eventTimestamp`: `str` *(required)*
+- `eventVariables`: `Mapping`\[`str`, `str`\] *(required)*
+- `entities`: `Sequence`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
+  *(required)*
+- `assignedLabel`: `str`
+- `labelTimestamp`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -1252,9 +1430,30 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### update_event_label
+
+Updates the specified event with a new label.
+
+Type annotations for `boto3.client("frauddetector").update_event_label` method.
+
+Boto3 documentation:
+[FraudDetector.Client.update_event_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client.update_event_label)
+
+Arguments mapping described in
+[UpdateEventLabelRequestRequestTypeDef](./type_defs.md#updateeventlabelrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `eventId`: `str` *(required)*
+- `eventTypeName`: `str` *(required)*
+- `assignedLabel`: `str` *(required)*
+- `labelTimestamp`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### update_model
 
-Updates a model.
+Updates model description.
 
 Type annotations for `boto3.client("frauddetector").update_model` method.
 
@@ -1267,8 +1466,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype)) *(required)*
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
+  *(required)*
 - `description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
@@ -1289,11 +1488,13 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype)) *(required)*
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
+  *(required)*
 - `majorVersionNumber`: `str` *(required)*
 - `externalEventsDetail`:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
+- `ingestedEventsDetail`:
+  [IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns
@@ -1315,8 +1516,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `modelId`: `str` *(required)*
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype)) *(required)*
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
+  *(required)*
 - `modelVersionNumber`: `str` *(required)*
 - `status`: [ModelVersionStatusType](./literals.md#modelversionstatustype)
   *(required)*

@@ -12,6 +12,7 @@ type annotations stubs module
   - [DataSourceType](#datasourcetype)
   - [DataTypeType](#datatypetype)
   - [DetectorVersionStatusType](#detectorversionstatustype)
+  - [EventIngestionType](#eventingestiontype)
   - [LanguageType](#languagetype)
   - [ModelEndpointStatusType](#modelendpointstatustype)
   - [ModelInputDataFormatType](#modelinputdataformattype)
@@ -21,6 +22,7 @@ type annotations stubs module
   - [ModelVersionStatusType](#modelversionstatustype)
   - [RuleExecutionModeType](#ruleexecutionmodetype)
   - [TrainingDataSourceEnumType](#trainingdatasourceenumtype)
+  - [UnlabeledEventsTreatmentType](#unlabeledeventstreatmenttype)
   - [ServiceName](#servicename)
 
 ## AsyncJobStatusType
@@ -74,6 +76,17 @@ Values:
 - `ACTIVE`
 - `DRAFT`
 - `INACTIVE`
+
+## EventIngestionType
+
+```python
+from mypy_boto3_frauddetector.literals import EventIngestionType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
 
 ## LanguageType
 
@@ -137,6 +150,7 @@ from mypy_boto3_frauddetector.literals import ModelTypeEnumType
 Values:
 
 - `ONLINE_FRAUD_INSIGHTS`
+- `TRANSACTION_FRAUD_INSIGHTS`
 
 ## ModelVersionStatusType
 
@@ -170,6 +184,19 @@ from mypy_boto3_frauddetector.literals import TrainingDataSourceEnumType
 Values:
 
 - `EXTERNAL_EVENTS`
+- `INGESTED_EVENTS`
+
+## UnlabeledEventsTreatmentType
+
+```python
+from mypy_boto3_frauddetector.literals import UnlabeledEventsTreatmentType
+```
+
+Values:
+
+- `FRAUD`
+- `IGNORE`
+- `LEGIT`
 
 ## ServiceName
 

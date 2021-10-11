@@ -182,6 +182,7 @@ from mypy_boto3_elbv2.literals import ActionTypeEnumType, ...
 - [ProtocolEnumType](./literals.md#protocolenumtype)
 - [RedirectActionStatusCodeEnumType](./literals.md#redirectactionstatuscodeenumtype)
 - [TargetDeregisteredWaiterName](./literals.md#targetderegisteredwaitername)
+- [TargetGroupIpAddressTypeEnumType](./literals.md#targetgroupipaddresstypeenumtype)
 - [TargetHealthReasonEnumType](./literals.md#targethealthreasonenumtype)
 - [TargetHealthStateEnumType](./literals.md#targethealthstateenumtype)
 - [TargetInServiceWaiterName](./literals.md#targetinservicewaitername)

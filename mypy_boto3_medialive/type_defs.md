@@ -30,6 +30,7 @@ type annotations stubs module
   - [AudioSilenceFailoverSettingsTypeDef](#audiosilencefailoversettingstypedef)
   - [AudioTrackSelectionTypeDef](#audiotrackselectiontypedef)
   - [AudioTrackTypeDef](#audiotracktypedef)
+  - [AudioWatermarkSettingsTypeDef](#audiowatermarksettingstypedef)
   - [AutomaticInputFailoverSettingsTypeDef](#automaticinputfailoversettingstypedef)
   - [AvailBlankingTypeDef](#availblankingtypedef)
   - [AvailConfigurationTypeDef](#availconfigurationtypedef)
@@ -61,6 +62,7 @@ type annotations stubs module
   - [ChannelEgressEndpointTypeDef](#channelegressendpointtypedef)
   - [ChannelSummaryTypeDef](#channelsummarytypedef)
   - [ChannelTypeDef](#channeltypedef)
+  - [ClaimDeviceRequestRequestTypeDef](#claimdevicerequestrequesttypedef)
   - [CreateChannelRequestRequestTypeDef](#createchannelrequestrequesttypedef)
   - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
   - [CreateInputRequestRequestTypeDef](#createinputrequestrequesttypedef)
@@ -226,7 +228,10 @@ type annotations stubs module
   - [MultiplexTypeDef](#multiplextypedef)
   - [MultiplexVideoSettingsTypeDef](#multiplexvideosettingstypedef)
   - [NetworkInputSettingsTypeDef](#networkinputsettingstypedef)
+  - [NielsenCBETTypeDef](#nielsencbettypedef)
   - [NielsenConfigurationTypeDef](#nielsenconfigurationtypedef)
+  - [NielsenNaesIiNwTypeDef](#nielsennaesiinwtypedef)
+  - [NielsenWatermarksSettingsTypeDef](#nielsenwatermarkssettingstypedef)
   - [OfferingTypeDef](#offeringtypedef)
   - [OutputDestinationSettingsTypeDef](#outputdestinationsettingstypedef)
   - [OutputDestinationTypeDef](#outputdestinationtypedef)
@@ -481,6 +486,8 @@ Optional fields:
 - `AudioType`: [AudioTypeType](./literals.md#audiotypetype)
 - `AudioTypeControl`:
   [AudioDescriptionAudioTypeControlType](./literals.md#audiodescriptionaudiotypecontroltype)
+- `AudioWatermarkingSettings`:
+  [AudioWatermarkSettingsTypeDef](./type_defs.md#audiowatermarksettingstypedef)
 - `CodecSettings`:
   [AudioCodecSettingsTypeDef](./type_defs.md#audiocodecsettingstypedef)
 - `LanguageCode`: `str`
@@ -619,6 +626,17 @@ from mypy_boto3_medialive.type_defs import AudioTrackTypeDef
 Required fields:
 
 - `Track`: `int`
+
+## AudioWatermarkSettingsTypeDef
+
+```python
+from mypy_boto3_medialive.type_defs import AudioWatermarkSettingsTypeDef
+```
+
+Optional fields:
+
+- `NielsenWatermarksSettings`:
+  [NielsenWatermarksSettingsTypeDef](./type_defs.md#nielsenwatermarkssettingstypedef)
 
 ## AutomaticInputFailoverSettingsTypeDef
 
@@ -1099,6 +1117,16 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `Vpc`:
   [VpcOutputSettingsDescriptionTypeDef](./type_defs.md#vpcoutputsettingsdescriptiontypedef)
+
+## ClaimDeviceRequestRequestTypeDef
+
+```python
+from mypy_boto3_medialive.type_defs import ClaimDeviceRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
 
 ## CreateChannelRequestRequestTypeDef
 
@@ -3788,6 +3816,19 @@ Optional fields:
 - `ServerValidation`:
   [NetworkInputServerValidationType](./literals.md#networkinputservervalidationtype)
 
+## NielsenCBETTypeDef
+
+```python
+from mypy_boto3_medialive.type_defs import NielsenCBETTypeDef
+```
+
+Required fields:
+
+- `CbetCheckDigitString`: `str`
+- `CbetStepaside`:
+  [NielsenWatermarksCbetStepasideType](./literals.md#nielsenwatermarkscbetstepasidetype)
+- `Csid`: `str`
+
 ## NielsenConfigurationTypeDef
 
 ```python
@@ -3799,6 +3840,32 @@ Optional fields:
 - `DistributorId`: `str`
 - `NielsenPcmToId3Tagging`:
   [NielsenPcmToId3TaggingStateType](./literals.md#nielsenpcmtoid3taggingstatetype)
+
+## NielsenNaesIiNwTypeDef
+
+```python
+from mypy_boto3_medialive.type_defs import NielsenNaesIiNwTypeDef
+```
+
+Required fields:
+
+- `CheckDigitString`: `str`
+- `Sid`: `float`
+
+## NielsenWatermarksSettingsTypeDef
+
+```python
+from mypy_boto3_medialive.type_defs import NielsenWatermarksSettingsTypeDef
+```
+
+Optional fields:
+
+- `NielsenCbetSettings`:
+  [NielsenCBETTypeDef](./type_defs.md#nielsencbettypedef)
+- `NielsenDistributionType`:
+  [NielsenWatermarksDistributionTypesType](./literals.md#nielsenwatermarksdistributiontypestype)
+- `NielsenNaesIiNwSettings`:
+  [NielsenNaesIiNwTypeDef](./type_defs.md#nielsennaesiinwtypedef)
 
 ## OfferingTypeDef
 

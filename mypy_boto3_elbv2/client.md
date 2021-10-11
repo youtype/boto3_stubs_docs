@@ -304,6 +304,8 @@ Keyword-only arguments:
 - `Matcher`: [MatcherTypeDef](./type_defs.md#matchertypedef)
 - `TargetType`: [TargetTypeEnumType](./literals.md#targettypeenumtype)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `IpAddressType`:
+  [TargetGroupIpAddressTypeEnumType](./literals.md#targetgroupipaddresstypeenumtype)
 
 Returns
 [CreateTargetGroupOutputTypeDef](./type_defs.md#createtargetgroupoutputtypedef).

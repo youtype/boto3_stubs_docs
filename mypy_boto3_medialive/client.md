@@ -19,6 +19,7 @@ type annotations stubs module
     - [batch_update_schedule](#batch_update_schedule)
     - [can_paginate](#can_paginate)
     - [cancel_input_device_transfer](#cancel_input_device_transfer)
+    - [claim_device](#claim_device)
     - [create_channel](#create_channel)
     - [create_input](#create_input)
     - [create_input_security_group](#create_input_security_group)
@@ -269,6 +270,25 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InputDeviceId`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### claim_device
+
+Send a request to claim an AWS Elemental device that you have purchased from a
+third-party vendor.
+
+Type annotations for `boto3.client("medialive").claim_device` method.
+
+Boto3 documentation:
+[MediaLive.Client.claim_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.claim_device)
+
+Arguments mapping described in
+[ClaimDeviceRequestRequestTypeDef](./type_defs.md#claimdevicerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 

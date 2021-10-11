@@ -231,6 +231,8 @@ type annotations stubs module
   - [MultiplexStoppedWaiterName](#multiplexstoppedwaitername)
   - [NetworkInputServerValidationType](#networkinputservervalidationtype)
   - [NielsenPcmToId3TaggingStateType](#nielsenpcmtoid3taggingstatetype)
+  - [NielsenWatermarksCbetStepasideType](#nielsenwatermarkscbetstepasidetype)
+  - [NielsenWatermarksDistributionTypesType](#nielsenwatermarksdistributiontypestype)
   - [OfferingDurationUnitsType](#offeringdurationunitstype)
   - [OfferingTypeType](#offeringtypetype)
   - [PipelineIdType](#pipelineidtype)
@@ -2299,6 +2301,7 @@ Values:
 - `RTMP_PULL`
 - `RTMP_PUSH`
 - `RTP_PUSH`
+- `TS_FILE`
 - `UDP_PUSH`
 - `URL_PULL`
 
@@ -2877,6 +2880,28 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+## NielsenWatermarksCbetStepasideType
+
+```python
+from mypy_boto3_medialive.literals import NielsenWatermarksCbetStepasideType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
+## NielsenWatermarksDistributionTypesType
+
+```python
+from mypy_boto3_medialive.literals import NielsenWatermarksDistributionTypesType
+```
+
+Values:
+
+- `FINAL_DISTRIBUTOR`
+- `PROGRAM_CONTENT`
 
 ## OfferingDurationUnitsType
 

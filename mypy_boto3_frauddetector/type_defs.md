@@ -14,8 +14,11 @@ type annotations stubs module
   - [BatchGetVariableErrorTypeDef](#batchgetvariableerrortypedef)
   - [BatchGetVariableRequestRequestTypeDef](#batchgetvariablerequestrequesttypedef)
   - [BatchGetVariableResultTypeDef](#batchgetvariableresulttypedef)
+  - [BatchImportTypeDef](#batchimporttypedef)
   - [BatchPredictionTypeDef](#batchpredictiontypedef)
+  - [CancelBatchImportJobRequestRequestTypeDef](#cancelbatchimportjobrequestrequesttypedef)
   - [CancelBatchPredictionJobRequestRequestTypeDef](#cancelbatchpredictionjobrequestrequesttypedef)
+  - [CreateBatchImportJobRequestRequestTypeDef](#createbatchimportjobrequestrequesttypedef)
   - [CreateBatchPredictionJobRequestRequestTypeDef](#createbatchpredictionjobrequestrequesttypedef)
   - [CreateDetectorVersionRequestRequestTypeDef](#createdetectorversionrequestrequesttypedef)
   - [CreateDetectorVersionResultTypeDef](#createdetectorversionresulttypedef)
@@ -26,12 +29,15 @@ type annotations stubs module
   - [CreateRuleResultTypeDef](#createruleresulttypedef)
   - [CreateVariableRequestRequestTypeDef](#createvariablerequestrequesttypedef)
   - [DataValidationMetricsTypeDef](#datavalidationmetricstypedef)
+  - [DeleteBatchImportJobRequestRequestTypeDef](#deletebatchimportjobrequestrequesttypedef)
   - [DeleteBatchPredictionJobRequestRequestTypeDef](#deletebatchpredictionjobrequestrequesttypedef)
   - [DeleteDetectorRequestRequestTypeDef](#deletedetectorrequestrequesttypedef)
   - [DeleteDetectorVersionRequestRequestTypeDef](#deletedetectorversionrequestrequesttypedef)
   - [DeleteEntityTypeRequestRequestTypeDef](#deleteentitytyperequestrequesttypedef)
   - [DeleteEventRequestRequestTypeDef](#deleteeventrequestrequesttypedef)
   - [DeleteEventTypeRequestRequestTypeDef](#deleteeventtyperequestrequesttypedef)
+  - [DeleteEventsByEventTypeRequestRequestTypeDef](#deleteeventsbyeventtyperequestrequesttypedef)
+  - [DeleteEventsByEventTypeResultTypeDef](#deleteeventsbyeventtyperesulttypedef)
   - [DeleteExternalModelRequestRequestTypeDef](#deleteexternalmodelrequestrequesttypedef)
   - [DeleteLabelRequestRequestTypeDef](#deletelabelrequestrequesttypedef)
   - [DeleteModelRequestRequestTypeDef](#deletemodelrequestrequesttypedef)
@@ -47,6 +53,7 @@ type annotations stubs module
   - [DetectorVersionSummaryTypeDef](#detectorversionsummarytypedef)
   - [EntityTypeDef](#entitytypedef)
   - [EntityTypeTypeDef](#entitytypetypedef)
+  - [EventTypeDef](#eventtypedef)
   - [EventTypeTypeDef](#eventtypetypedef)
   - [ExternalEventsDetailTypeDef](#externaleventsdetailtypedef)
   - [ExternalModelOutputsTypeDef](#externalmodeloutputstypedef)
@@ -54,8 +61,12 @@ type annotations stubs module
   - [ExternalModelTypeDef](#externalmodeltypedef)
   - [FieldValidationMessageTypeDef](#fieldvalidationmessagetypedef)
   - [FileValidationMessageTypeDef](#filevalidationmessagetypedef)
+  - [GetBatchImportJobsRequestRequestTypeDef](#getbatchimportjobsrequestrequesttypedef)
+  - [GetBatchImportJobsResultTypeDef](#getbatchimportjobsresulttypedef)
   - [GetBatchPredictionJobsRequestRequestTypeDef](#getbatchpredictionjobsrequestrequesttypedef)
   - [GetBatchPredictionJobsResultTypeDef](#getbatchpredictionjobsresulttypedef)
+  - [GetDeleteEventsByEventTypeStatusRequestRequestTypeDef](#getdeleteeventsbyeventtypestatusrequestrequesttypedef)
+  - [GetDeleteEventsByEventTypeStatusResultTypeDef](#getdeleteeventsbyeventtypestatusresulttypedef)
   - [GetDetectorVersionRequestRequestTypeDef](#getdetectorversionrequestrequesttypedef)
   - [GetDetectorVersionResultTypeDef](#getdetectorversionresulttypedef)
   - [GetDetectorsRequestRequestTypeDef](#getdetectorsrequestrequesttypedef)
@@ -64,6 +75,8 @@ type annotations stubs module
   - [GetEntityTypesResultTypeDef](#getentitytypesresulttypedef)
   - [GetEventPredictionRequestRequestTypeDef](#geteventpredictionrequestrequesttypedef)
   - [GetEventPredictionResultTypeDef](#geteventpredictionresulttypedef)
+  - [GetEventRequestRequestTypeDef](#geteventrequestrequesttypedef)
+  - [GetEventResultTypeDef](#geteventresulttypedef)
   - [GetEventTypesRequestRequestTypeDef](#geteventtypesrequestrequesttypedef)
   - [GetEventTypesResultTypeDef](#geteventtypesresulttypedef)
   - [GetExternalModelsRequestRequestTypeDef](#getexternalmodelsrequestrequesttypedef)
@@ -81,6 +94,9 @@ type annotations stubs module
   - [GetRulesResultTypeDef](#getrulesresulttypedef)
   - [GetVariablesRequestRequestTypeDef](#getvariablesrequestrequesttypedef)
   - [GetVariablesResultTypeDef](#getvariablesresulttypedef)
+  - [IngestedEventStatisticsTypeDef](#ingestedeventstatisticstypedef)
+  - [IngestedEventsDetailTypeDef](#ingestedeventsdetailtypedef)
+  - [IngestedEventsTimeWindowTypeDef](#ingestedeventstimewindowtypedef)
   - [KMSKeyTypeDef](#kmskeytypedef)
   - [LabelSchemaTypeDef](#labelschematypedef)
   - [LabelTypeDef](#labeltypedef)
@@ -107,6 +123,7 @@ type annotations stubs module
   - [RuleDetailTypeDef](#ruledetailtypedef)
   - [RuleResultTypeDef](#ruleresulttypedef)
   - [RuleTypeDef](#ruletypedef)
+  - [SendEventRequestRequestTypeDef](#sendeventrequestrequesttypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [TrainingDataSchemaTypeDef](#trainingdataschematypedef)
@@ -116,6 +133,7 @@ type annotations stubs module
   - [UpdateDetectorVersionMetadataRequestRequestTypeDef](#updatedetectorversionmetadatarequestrequesttypedef)
   - [UpdateDetectorVersionRequestRequestTypeDef](#updatedetectorversionrequestrequesttypedef)
   - [UpdateDetectorVersionStatusRequestRequestTypeDef](#updatedetectorversionstatusrequestrequesttypedef)
+  - [UpdateEventLabelRequestRequestTypeDef](#updateeventlabelrequestrequesttypedef)
   - [UpdateModelRequestRequestTypeDef](#updatemodelrequestrequesttypedef)
   - [UpdateModelVersionRequestRequestTypeDef](#updatemodelversionrequestrequesttypedef)
   - [UpdateModelVersionResultTypeDef](#updatemodelversionresulttypedef)
@@ -204,6 +222,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## BatchImportTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import BatchImportTypeDef
+```
+
+Optional fields:
+
+- `jobId`: `str`
+- `status`: [AsyncJobStatusType](./literals.md#asyncjobstatustype)
+- `failureReason`: `str`
+- `startTime`: `str`
+- `completionTime`: `str`
+- `inputPath`: `str`
+- `outputPath`: `str`
+- `eventTypeName`: `str`
+- `iamRoleArn`: `str`
+- `arn`: `str`
+- `processedRecordsCount`: `int`
+- `failedRecordsCount`: `int`
+- `totalRecordsCount`: `int`
+
 ## BatchPredictionTypeDef
 
 ```python
@@ -228,6 +268,16 @@ Optional fields:
 - `processedRecordsCount`: `int`
 - `totalRecordsCount`: `int`
 
+## CancelBatchImportJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import CancelBatchImportJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `jobId`: `str`
+
 ## CancelBatchPredictionJobRequestRequestTypeDef
 
 ```python
@@ -237,6 +287,24 @@ from mypy_boto3_frauddetector.type_defs import CancelBatchPredictionJobRequestRe
 Required fields:
 
 - `jobId`: `str`
+
+## CreateBatchImportJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import CreateBatchImportJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `jobId`: `str`
+- `inputPath`: `str`
+- `outputPath`: `str`
+- `eventTypeName`: `str`
+- `iamRoleArn`: `str`
+
+Optional fields:
+
+- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateBatchPredictionJobRequestRequestTypeDef
 
@@ -303,8 +371,7 @@ from mypy_boto3_frauddetector.type_defs import CreateModelRequestRequestTypeDef
 Required fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `eventTypeName`: `str`
 
 Optional fields:
@@ -321,10 +388,9 @@ from mypy_boto3_frauddetector.type_defs import CreateModelVersionRequestRequestT
 Required fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
-- `trainingDataSource`: `Literal['EXTERNAL_EVENTS']` (see
-  [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
+- `trainingDataSource`:
+  [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype)
 - `trainingDataSchema`:
   [TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef)
 
@@ -332,6 +398,8 @@ Optional fields:
 
 - `externalEventsDetail`:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
+- `ingestedEventsDetail`:
+  [IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## CreateModelVersionResultTypeDef
@@ -343,8 +411,7 @@ from mypy_boto3_frauddetector.type_defs import CreateModelVersionResultTypeDef
 Required fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `modelVersionNumber`: `str`
 - `status`: `str`
 - `ResponseMetadata`:
@@ -414,6 +481,16 @@ Optional fields:
 - `fieldLevelMessages`:
   `List`\[[FieldValidationMessageTypeDef](./type_defs.md#fieldvalidationmessagetypedef)\]
 
+## DeleteBatchImportJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import DeleteBatchImportJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `jobId`: `str`
+
 ## DeleteBatchPredictionJobRequestRequestTypeDef
 
 ```python
@@ -466,6 +543,10 @@ Required fields:
 - `eventId`: `str`
 - `eventTypeName`: `str`
 
+Optional fields:
+
+- `deleteAuditHistory`: `bool`
+
 ## DeleteEventTypeRequestRequestTypeDef
 
 ```python
@@ -475,6 +556,29 @@ from mypy_boto3_frauddetector.type_defs import DeleteEventTypeRequestRequestType
 Required fields:
 
 - `name`: `str`
+
+## DeleteEventsByEventTypeRequestRequestTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import DeleteEventsByEventTypeRequestRequestTypeDef
+```
+
+Required fields:
+
+- `eventTypeName`: `str`
+
+## DeleteEventsByEventTypeResultTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import DeleteEventsByEventTypeResultTypeDef
+```
+
+Required fields:
+
+- `eventTypeName`: `str`
+- `eventsDeletionStatus`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## DeleteExternalModelRequestRequestTypeDef
 
@@ -505,8 +609,7 @@ from mypy_boto3_frauddetector.type_defs import DeleteModelRequestRequestTypeDef
 Required fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 
 ## DeleteModelVersionRequestRequestTypeDef
 
@@ -517,8 +620,7 @@ from mypy_boto3_frauddetector.type_defs import DeleteModelVersionRequestRequestT
 Required fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `modelVersionNumber`: `str`
 
 ## DeleteOutcomeRequestRequestTypeDef
@@ -592,8 +694,7 @@ Optional fields:
 
 - `modelId`: `str`
 - `modelVersionNumber`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -665,6 +766,22 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
+## EventTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import EventTypeDef
+```
+
+Optional fields:
+
+- `eventId`: `str`
+- `eventTypeName`: `str`
+- `eventTimestamp`: `str`
+- `eventVariables`: `Dict`\[`str`, `str`\]
+- `currentLabel`: `str`
+- `labelTimestamp`: `str`
+- `entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
+
 ## EventTypeTypeDef
 
 ```python
@@ -678,6 +795,9 @@ Optional fields:
 - `eventVariables`: `List`\[`str`\]
 - `labels`: `List`\[`str`\]
 - `entityTypes`: `List`\[`str`\]
+- `eventIngestion`: [EventIngestionType](./literals.md#eventingestiontype)
+- `ingestedEventStatistics`:
+  [IngestedEventStatisticsTypeDef](./type_defs.md#ingestedeventstatisticstypedef)
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
@@ -765,6 +885,32 @@ Optional fields:
 - `content`: `str`
 - `type`: `str`
 
+## GetBatchImportJobsRequestRequestTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import GetBatchImportJobsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `jobId`: `str`
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+## GetBatchImportJobsResultTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import GetBatchImportJobsResultTypeDef
+```
+
+Required fields:
+
+- `batchImports`:
+  `List`\[[BatchImportTypeDef](./type_defs.md#batchimporttypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetBatchPredictionJobsRequestRequestTypeDef
 
 ```python
@@ -788,6 +934,30 @@ Required fields:
 - `batchPredictions`:
   `List`\[[BatchPredictionTypeDef](./type_defs.md#batchpredictiontypedef)\]
 - `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetDeleteEventsByEventTypeStatusRequestRequestTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import GetDeleteEventsByEventTypeStatusRequestRequestTypeDef
+```
+
+Required fields:
+
+- `eventTypeName`: `str`
+
+## GetDeleteEventsByEventTypeStatusResultTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import GetDeleteEventsByEventTypeStatusResultTypeDef
+```
+
+Required fields:
+
+- `eventTypeName`: `str`
+- `eventsDeletionStatus`:
+  [AsyncJobStatusType](./literals.md#asyncjobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -916,6 +1086,29 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetEventRequestRequestTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import GetEventRequestRequestTypeDef
+```
+
+Required fields:
+
+- `eventId`: `str`
+- `eventTypeName`: `str`
+
+## GetEventResultTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import GetEventResultTypeDef
+```
+
+Required fields:
+
+- `event`: [EventTypeDef](./type_defs.md#eventtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## GetEventTypesRequestRequestTypeDef
 
 ```python
@@ -1013,8 +1206,7 @@ from mypy_boto3_frauddetector.type_defs import GetModelVersionRequestRequestType
 Required fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `modelVersionNumber`: `str`
 
 ## GetModelVersionResultTypeDef
@@ -1026,15 +1218,16 @@ from mypy_boto3_frauddetector.type_defs import GetModelVersionResultTypeDef
 Required fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `modelVersionNumber`: `str`
-- `trainingDataSource`: `Literal['EXTERNAL_EVENTS']` (see
-  [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype))
+- `trainingDataSource`:
+  [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype)
 - `trainingDataSchema`:
   [TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef)
 - `externalEventsDetail`:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
+- `ingestedEventsDetail`:
+  [IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef)
 - `status`: `str`
 - `arn`: `str`
 - `ResponseMetadata`:
@@ -1049,8 +1242,7 @@ from mypy_boto3_frauddetector.type_defs import GetModelsRequestRequestTypeDef
 Optional fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `nextToken`: `str`
 - `maxResults`: `int`
 
@@ -1148,6 +1340,42 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## IngestedEventStatisticsTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import IngestedEventStatisticsTypeDef
+```
+
+Optional fields:
+
+- `numberOfEvents`: `int`
+- `eventDataSizeInBytes`: `int`
+- `leastRecentEvent`: `str`
+- `mostRecentEvent`: `str`
+- `lastUpdatedTime`: `str`
+
+## IngestedEventsDetailTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import IngestedEventsDetailTypeDef
+```
+
+Required fields:
+
+- `ingestedEventsTimeWindow`:
+  [IngestedEventsTimeWindowTypeDef](./type_defs.md#ingestedeventstimewindowtypedef)
+
+## IngestedEventsTimeWindowTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import IngestedEventsTimeWindowTypeDef
+```
+
+Required fields:
+
+- `startTime`: `str`
+- `endTime`: `str`
+
 ## KMSKeyTypeDef
 
 ```python
@@ -1167,6 +1395,11 @@ from mypy_boto3_frauddetector.type_defs import LabelSchemaTypeDef
 Required fields:
 
 - `labelMapper`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+
+Optional fields:
+
+- `unlabeledEventsTreatment`:
+  [UnlabeledEventsTreatmentType](./literals.md#unlabeledeventstreatmenttype)
 
 ## LabelTypeDef
 
@@ -1299,8 +1532,7 @@ from mypy_boto3_frauddetector.type_defs import ModelTypeDef
 Optional fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `description`: `str`
 - `eventTypeName`: `str`
 - `createdTime`: `str`
@@ -1316,16 +1548,17 @@ from mypy_boto3_frauddetector.type_defs import ModelVersionDetailTypeDef
 Optional fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `modelVersionNumber`: `str`
 - `status`: `str`
-- `trainingDataSource`: `Literal['EXTERNAL_EVENTS']` (see
-  [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype))
+- `trainingDataSource`:
+  [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype)
 - `trainingDataSchema`:
   [TrainingDataSchemaTypeDef](./type_defs.md#trainingdataschematypedef)
 - `externalEventsDetail`:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
+- `ingestedEventsDetail`:
+  [IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef)
 - `trainingResult`:
   [TrainingResultTypeDef](./type_defs.md#trainingresulttypedef)
 - `lastUpdatedTime`: `str`
@@ -1341,8 +1574,7 @@ from mypy_boto3_frauddetector.type_defs import ModelVersionTypeDef
 Required fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `modelVersionNumber`: `str`
 
 Optional fields:
@@ -1410,6 +1642,7 @@ Optional fields:
 
 - `description`: `str`
 - `labels`: `Sequence`\[`str`\]
+- `eventIngestion`: [EventIngestionType](./literals.md#eventingestiontype)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## PutExternalModelRequestRequestTypeDef
@@ -1532,6 +1765,25 @@ Required fields:
 - `ruleId`: `str`
 - `ruleVersion`: `str`
 
+## SendEventRequestRequestTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import SendEventRequestRequestTypeDef
+```
+
+Required fields:
+
+- `eventId`: `str`
+- `eventTypeName`: `str`
+- `eventTimestamp`: `str`
+- `eventVariables`: `Mapping`\[`str`, `str`\]
+- `entities`: `Sequence`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
+
+Optional fields:
+
+- `assignedLabel`: `str`
+- `labelTimestamp`: `str`
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1649,6 +1901,19 @@ Required fields:
 - `status`:
   [DetectorVersionStatusType](./literals.md#detectorversionstatustype)
 
+## UpdateEventLabelRequestRequestTypeDef
+
+```python
+from mypy_boto3_frauddetector.type_defs import UpdateEventLabelRequestRequestTypeDef
+```
+
+Required fields:
+
+- `eventId`: `str`
+- `eventTypeName`: `str`
+- `assignedLabel`: `str`
+- `labelTimestamp`: `str`
+
 ## UpdateModelRequestRequestTypeDef
 
 ```python
@@ -1658,8 +1923,7 @@ from mypy_boto3_frauddetector.type_defs import UpdateModelRequestRequestTypeDef
 Required fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 
 Optional fields:
 
@@ -1674,14 +1938,15 @@ from mypy_boto3_frauddetector.type_defs import UpdateModelVersionRequestRequestT
 Required fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `majorVersionNumber`: `str`
 
 Optional fields:
 
 - `externalEventsDetail`:
   [ExternalEventsDetailTypeDef](./type_defs.md#externaleventsdetailtypedef)
+- `ingestedEventsDetail`:
+  [IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## UpdateModelVersionResultTypeDef
@@ -1693,8 +1958,7 @@ from mypy_boto3_frauddetector.type_defs import UpdateModelVersionResultTypeDef
 Required fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `modelVersionNumber`: `str`
 - `status`: `str`
 - `ResponseMetadata`:
@@ -1709,8 +1973,7 @@ from mypy_boto3_frauddetector.type_defs import UpdateModelVersionStatusRequestRe
 Required fields:
 
 - `modelId`: `str`
-- `modelType`: `Literal['ONLINE_FRAUD_INSIGHTS']` (see
-  [ModelTypeEnumType](./literals.md#modeltypeenumtype))
+- `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `modelVersionNumber`: `str`
 - `status`: [ModelVersionStatusType](./literals.md#modelversionstatustype)
 
