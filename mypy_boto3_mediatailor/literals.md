@@ -14,10 +14,12 @@ type annotations stubs module
   - [ListAlertsPaginatorName](#listalertspaginatorname)
   - [ListChannelsPaginatorName](#listchannelspaginatorname)
   - [ListPlaybackConfigurationsPaginatorName](#listplaybackconfigurationspaginatorname)
+  - [ListPrefetchSchedulesPaginatorName](#listprefetchschedulespaginatorname)
   - [ListSourceLocationsPaginatorName](#listsourcelocationspaginatorname)
   - [ListVodSourcesPaginatorName](#listvodsourcespaginatorname)
   - [MessageTypeType](#messagetypetype)
   - [ModeType](#modetype)
+  - [OperatorType](#operatortype)
   - [OriginManifestTypeType](#originmanifesttypetype)
   - [PlaybackModeType](#playbackmodetype)
   - [RelativePositionType](#relativepositiontype)
@@ -88,6 +90,16 @@ Values:
 
 - `list_playback_configurations`
 
+## ListPrefetchSchedulesPaginatorName
+
+```python
+from mypy_boto3_mediatailor.literals import ListPrefetchSchedulesPaginatorName
+```
+
+Values:
+
+- `list_prefetch_schedules`
+
 ## ListSourceLocationsPaginatorName
 
 ```python
@@ -128,6 +140,16 @@ Values:
 
 - `BEHIND_LIVE_EDGE`
 - `OFF`
+
+## OperatorType
+
+```python
+from mypy_boto3_mediatailor.literals import OperatorType
+```
+
+Values:
+
+- `EQUALS`
 
 ## OriginManifestTypeType
 
@@ -489,5 +511,6 @@ Values:
 - `list_alerts`
 - `list_channels`
 - `list_playback_configurations`
+- `list_prefetch_schedules`
 - `list_source_locations`
 - `list_vod_sources`

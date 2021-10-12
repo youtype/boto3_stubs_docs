@@ -12,6 +12,7 @@ type annotations stubs module
   - [ListAlertsPaginator](#listalertspaginator)
   - [ListChannelsPaginator](#listchannelspaginator)
   - [ListPlaybackConfigurationsPaginator](#listplaybackconfigurationspaginator)
+  - [ListPrefetchSchedulesPaginator](#listprefetchschedulespaginator)
   - [ListSourceLocationsPaginator](#listsourcelocationspaginator)
   - [ListVodSourcesPaginator](#listvodsourcespaginator)
 
@@ -117,6 +118,33 @@ Arguments for `ListPlaybackConfigurationsPaginator.paginate` method:
 
 `ListPlaybackConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef)\].
+
+## ListPrefetchSchedulesPaginator
+
+Type annotations for
+`boto3.client("mediatailor").get_paginator("list_prefetch_schedules")`.
+
+Can be used directly:
+
+```python
+from mypy_boto3_mediatailor.paginator import ListPrefetchSchedulesPaginator
+
+def get_list_prefetch_schedules_paginator() -> ListPrefetchSchedulesPaginator:
+    return boto3.client("mediatailor").get_paginator("list_prefetch_schedules")
+```
+
+Boto3 documentation:
+[MediaTailor.Paginator.ListPrefetchSchedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Paginator.ListPrefetchSchedules)
+
+Arguments for `ListPrefetchSchedulesPaginator.paginate` method:
+
+- `PlaybackConfigurationName`: `str` *(required)*
+- `StreamId`: `str`
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListPrefetchSchedulesPaginator.paginate` returns
+`_PageIterator`\[[ListPrefetchSchedulesResponseTypeDef](./type_defs.md#listprefetchschedulesresponsetypedef)\].
 
 ## ListSourceLocationsPaginator
 

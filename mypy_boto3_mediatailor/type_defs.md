@@ -12,6 +12,7 @@ type annotations stubs module
   - [AdBreakTypeDef](#adbreaktypedef)
   - [AdMarkerPassthroughTypeDef](#admarkerpassthroughtypedef)
   - [AlertTypeDef](#alerttypedef)
+  - [AvailMatchingCriteriaTypeDef](#availmatchingcriteriatypedef)
   - [AvailSuppressionTypeDef](#availsuppressiontypedef)
   - [BumperTypeDef](#bumpertypedef)
   - [CdnConfigurationTypeDef](#cdnconfigurationtypedef)
@@ -20,6 +21,8 @@ type annotations stubs module
   - [ConfigureLogsForPlaybackConfigurationResponseTypeDef](#configurelogsforplaybackconfigurationresponsetypedef)
   - [CreateChannelRequestRequestTypeDef](#createchannelrequestrequesttypedef)
   - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
+  - [CreatePrefetchScheduleRequestRequestTypeDef](#createprefetchschedulerequestrequesttypedef)
+  - [CreatePrefetchScheduleResponseTypeDef](#createprefetchscheduleresponsetypedef)
   - [CreateProgramRequestRequestTypeDef](#createprogramrequestrequesttypedef)
   - [CreateProgramResponseTypeDef](#createprogramresponsetypedef)
   - [CreateSourceLocationRequestRequestTypeDef](#createsourcelocationrequestrequesttypedef)
@@ -33,6 +36,7 @@ type annotations stubs module
   - [DeleteChannelPolicyRequestRequestTypeDef](#deletechannelpolicyrequestrequesttypedef)
   - [DeleteChannelRequestRequestTypeDef](#deletechannelrequestrequesttypedef)
   - [DeletePlaybackConfigurationRequestRequestTypeDef](#deleteplaybackconfigurationrequestrequesttypedef)
+  - [DeletePrefetchScheduleRequestRequestTypeDef](#deleteprefetchschedulerequestrequesttypedef)
   - [DeleteProgramRequestRequestTypeDef](#deleteprogramrequestrequesttypedef)
   - [DeleteSourceLocationRequestRequestTypeDef](#deletesourcelocationrequestrequesttypedef)
   - [DeleteVodSourceRequestRequestTypeDef](#deletevodsourcerequestrequesttypedef)
@@ -50,6 +54,8 @@ type annotations stubs module
   - [GetChannelScheduleResponseTypeDef](#getchannelscheduleresponsetypedef)
   - [GetPlaybackConfigurationRequestRequestTypeDef](#getplaybackconfigurationrequestrequesttypedef)
   - [GetPlaybackConfigurationResponseTypeDef](#getplaybackconfigurationresponsetypedef)
+  - [GetPrefetchScheduleRequestRequestTypeDef](#getprefetchschedulerequestrequesttypedef)
+  - [GetPrefetchScheduleResponseTypeDef](#getprefetchscheduleresponsetypedef)
   - [HlsConfigurationTypeDef](#hlsconfigurationtypedef)
   - [HlsPlaylistSettingsTypeDef](#hlsplaylistsettingstypedef)
   - [HttpConfigurationTypeDef](#httpconfigurationtypedef)
@@ -60,6 +66,8 @@ type annotations stubs module
   - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
   - [ListPlaybackConfigurationsRequestRequestTypeDef](#listplaybackconfigurationsrequestrequesttypedef)
   - [ListPlaybackConfigurationsResponseTypeDef](#listplaybackconfigurationsresponsetypedef)
+  - [ListPrefetchSchedulesRequestRequestTypeDef](#listprefetchschedulesrequestrequesttypedef)
+  - [ListPrefetchSchedulesResponseTypeDef](#listprefetchschedulesresponsetypedef)
   - [ListSourceLocationsRequestRequestTypeDef](#listsourcelocationsrequestrequesttypedef)
   - [ListSourceLocationsResponseTypeDef](#listsourcelocationsresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
@@ -71,6 +79,9 @@ type annotations stubs module
   - [ManifestProcessingRulesTypeDef](#manifestprocessingrulestypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PlaybackConfigurationTypeDef](#playbackconfigurationtypedef)
+  - [PrefetchConsumptionTypeDef](#prefetchconsumptiontypedef)
+  - [PrefetchRetrievalTypeDef](#prefetchretrievaltypedef)
+  - [PrefetchScheduleTypeDef](#prefetchscheduletypedef)
   - [PutChannelPolicyRequestRequestTypeDef](#putchannelpolicyrequestrequesttypedef)
   - [PutPlaybackConfigurationRequestRequestTypeDef](#putplaybackconfigurationrequestrequesttypedef)
   - [PutPlaybackConfigurationResponseTypeDef](#putplaybackconfigurationresponsetypedef)
@@ -147,6 +158,18 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `RelatedResourceArns`: `List`\[`str`\]
 - `ResourceArn`: `str`
+
+## AvailMatchingCriteriaTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import AvailMatchingCriteriaTypeDef
+```
+
+Required fields:
+
+- `DynamicVariable`: `str`
+- `Operator`: `Literal['EQUALS']` (see
+  [OperatorType](./literals.md#operatortype))
 
 ## AvailSuppressionTypeDef
 
@@ -263,6 +286,44 @@ Required fields:
   `List`\[[ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef)\]
 - `PlaybackMode`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreatePrefetchScheduleRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import CreatePrefetchScheduleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Consumption`:
+  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
+- `Name`: `str`
+- `PlaybackConfigurationName`: `str`
+- `Retrieval`:
+  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
+
+Optional fields:
+
+- `StreamId`: `str`
+
+## CreatePrefetchScheduleResponseTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import CreatePrefetchScheduleResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Consumption`:
+  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
+- `Name`: `str`
+- `PlaybackConfigurationName`: `str`
+- `Retrieval`:
+  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
+- `StreamId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -459,6 +520,17 @@ from mypy_boto3_mediatailor.type_defs import DeletePlaybackConfigurationRequestR
 Required fields:
 
 - `Name`: `str`
+
+## DeletePrefetchScheduleRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import DeletePrefetchScheduleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `PlaybackConfigurationName`: `str`
 
 ## DeleteProgramRequestRequestTypeDef
 
@@ -714,6 +786,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## GetPrefetchScheduleRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import GetPrefetchScheduleRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `PlaybackConfigurationName`: `str`
+
+## GetPrefetchScheduleResponseTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import GetPrefetchScheduleResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Consumption`:
+  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
+- `Name`: `str`
+- `PlaybackConfigurationName`: `str`
+- `Retrieval`:
+  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
+- `StreamId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## HlsConfigurationTypeDef
 
 ```python
@@ -829,6 +931,36 @@ Required fields:
 
 - `Items`:
   `List`\[[PlaybackConfigurationTypeDef](./type_defs.md#playbackconfigurationtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListPrefetchSchedulesRequestRequestTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import ListPrefetchSchedulesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `PlaybackConfigurationName`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `StreamId`: `str`
+
+## ListPrefetchSchedulesResponseTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import ListPrefetchSchedulesResponseTypeDef
+```
+
+Required fields:
+
+- `Items`:
+  `List`\[[PrefetchScheduleTypeDef](./type_defs.md#prefetchscheduletypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -986,6 +1118,57 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `TranscodeProfileName`: `str`
 - `VideoContentSourceUrl`: `str`
+
+## PrefetchConsumptionTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import PrefetchConsumptionTypeDef
+```
+
+Required fields:
+
+- `EndTime`: `Union`\[`datetime`, `str`\]
+
+Optional fields:
+
+- `AvailMatchingCriteria`:
+  `Sequence`\[[AvailMatchingCriteriaTypeDef](./type_defs.md#availmatchingcriteriatypedef)\]
+- `StartTime`: `Union`\[`datetime`, `str`\]
+
+## PrefetchRetrievalTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import PrefetchRetrievalTypeDef
+```
+
+Required fields:
+
+- `EndTime`: `Union`\[`datetime`, `str`\]
+
+Optional fields:
+
+- `DynamicVariables`: `Mapping`\[`str`, `str`\]
+- `StartTime`: `Union`\[`datetime`, `str`\]
+
+## PrefetchScheduleTypeDef
+
+```python
+from mypy_boto3_mediatailor.type_defs import PrefetchScheduleTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Consumption`:
+  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
+- `Name`: `str`
+- `PlaybackConfigurationName`: `str`
+- `Retrieval`:
+  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
+
+Optional fields:
+
+- `StreamId`: `str`
 
 ## PutChannelPolicyRequestRequestTypeDef
 

@@ -984,6 +984,7 @@ from mypy_boto3_ec2.literals import AccountAttributeNameType, ...
 - [InstanceStateNameType](./literals.md#instancestatenametype)
 - [InstanceStatusOkWaiterName](./literals.md#instancestatusokwaitername)
 - [InstanceStoppedWaiterName](./literals.md#instancestoppedwaitername)
+- [InstanceStorageEncryptionSupportType](./literals.md#instancestorageencryptionsupporttype)
 - [InstanceTerminatedWaiterName](./literals.md#instanceterminatedwaitername)
 - [InstanceTypeHypervisorType](./literals.md#instancetypehypervisortype)
 - [InstanceTypeType](./literals.md#instancetypetype)

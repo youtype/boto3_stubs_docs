@@ -231,6 +231,7 @@ type annotations stubs module
   - [InstanceStateNameType](#instancestatenametype)
   - [InstanceStatusOkWaiterName](#instancestatusokwaitername)
   - [InstanceStoppedWaiterName](#instancestoppedwaitername)
+  - [InstanceStorageEncryptionSupportType](#instancestorageencryptionsupporttype)
   - [InstanceTerminatedWaiterName](#instanceterminatedwaitername)
   - [InstanceTypeHypervisorType](#instancetypehypervisortype)
   - [InstanceTypeType](#instancetypetype)
@@ -500,6 +501,7 @@ Values:
 - `arm64`
 - `i386`
 - `x86_64`
+- `x86_64_mac`
 
 ## ArchitectureValuesType
 
@@ -2847,6 +2849,17 @@ from mypy_boto3_ec2.literals import InstanceStoppedWaiterName
 Values:
 
 - `instance_stopped`
+
+## InstanceStorageEncryptionSupportType
+
+```python
+from mypy_boto3_ec2.literals import InstanceStorageEncryptionSupportType
+```
+
+Values:
+
+- `required`
+- `unsupported`
 
 ## InstanceTerminatedWaiterName
 

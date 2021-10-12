@@ -16379,6 +16379,8 @@ Optional fields:
 - `Disks`: `List`\[[DiskInfoTypeDef](./type_defs.md#diskinfotypedef)\]
 - `NvmeSupport`:
   [EphemeralNvmeSupportType](./literals.md#ephemeralnvmesupporttype)
+- `EncryptionSupport`:
+  [InstanceStorageEncryptionSupportType](./literals.md#instancestorageencryptionsupporttype)
 
 ## InstanceTagNotificationAttributeTypeDef
 
