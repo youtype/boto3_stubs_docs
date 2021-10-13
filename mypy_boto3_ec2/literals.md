@@ -159,6 +159,7 @@ type annotations stubs module
   - [DescribeVpcEndpointsPaginatorName](#describevpcendpointspaginatorname)
   - [DescribeVpcPeeringConnectionsPaginatorName](#describevpcpeeringconnectionspaginatorname)
   - [DescribeVpcsPaginatorName](#describevpcspaginatorname)
+  - [DestinationFileFormatType](#destinationfileformattype)
   - [DeviceTypeType](#devicetypetype)
   - [DiskImageFormatType](#diskimageformattype)
   - [DiskTypeType](#disktypetype)
@@ -2016,6 +2017,17 @@ from mypy_boto3_ec2.literals import DescribeVpcsPaginatorName
 Values:
 
 - `describe_vpcs`
+
+## DestinationFileFormatType
+
+```python
+from mypy_boto3_ec2.literals import DestinationFileFormatType
+```
+
+Values:
+
+- `parquet`
+- `plain-text`
 
 ## DeviceTypeType
 

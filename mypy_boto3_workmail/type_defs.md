@@ -37,6 +37,7 @@ type annotations stubs module
   - [DeleteRetentionPolicyRequestRequestTypeDef](#deleteretentionpolicyrequestrequesttypedef)
   - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
   - [DeregisterFromWorkMailRequestRequestTypeDef](#deregisterfromworkmailrequestrequesttypedef)
+  - [DeregisterMailDomainRequestRequestTypeDef](#deregistermaildomainrequestrequesttypedef)
   - [DescribeGroupRequestRequestTypeDef](#describegrouprequestrequesttypedef)
   - [DescribeGroupResponseTypeDef](#describegroupresponsetypedef)
   - [DescribeInboundDmarcSettingsRequestRequestTypeDef](#describeinbounddmarcsettingsrequestrequesttypedef)
@@ -51,12 +52,15 @@ type annotations stubs module
   - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
   - [DisassociateDelegateFromResourceRequestRequestTypeDef](#disassociatedelegatefromresourcerequestrequesttypedef)
   - [DisassociateMemberFromGroupRequestRequestTypeDef](#disassociatememberfromgrouprequestrequesttypedef)
+  - [DnsRecordTypeDef](#dnsrecordtypedef)
   - [DomainTypeDef](#domaintypedef)
   - [FolderConfigurationTypeDef](#folderconfigurationtypedef)
   - [GetAccessControlEffectRequestRequestTypeDef](#getaccesscontroleffectrequestrequesttypedef)
   - [GetAccessControlEffectResponseTypeDef](#getaccesscontroleffectresponsetypedef)
   - [GetDefaultRetentionPolicyRequestRequestTypeDef](#getdefaultretentionpolicyrequestrequesttypedef)
   - [GetDefaultRetentionPolicyResponseTypeDef](#getdefaultretentionpolicyresponsetypedef)
+  - [GetMailDomainRequestRequestTypeDef](#getmaildomainrequestrequesttypedef)
+  - [GetMailDomainResponseTypeDef](#getmaildomainresponsetypedef)
   - [GetMailboxDetailsRequestRequestTypeDef](#getmailboxdetailsrequestrequesttypedef)
   - [GetMailboxDetailsResponseTypeDef](#getmailboxdetailsresponsetypedef)
   - [GetMobileDeviceAccessEffectRequestRequestTypeDef](#getmobiledeviceaccesseffectrequestrequesttypedef)
@@ -72,6 +76,8 @@ type annotations stubs module
   - [ListGroupMembersResponseTypeDef](#listgroupmembersresponsetypedef)
   - [ListGroupsRequestRequestTypeDef](#listgroupsrequestrequesttypedef)
   - [ListGroupsResponseTypeDef](#listgroupsresponsetypedef)
+  - [ListMailDomainsRequestRequestTypeDef](#listmaildomainsrequestrequesttypedef)
+  - [ListMailDomainsResponseTypeDef](#listmaildomainsresponsetypedef)
   - [ListMailboxExportJobsRequestRequestTypeDef](#listmailboxexportjobsrequestrequesttypedef)
   - [ListMailboxExportJobsResponseTypeDef](#listmailboxexportjobsresponsetypedef)
   - [ListMailboxPermissionsRequestRequestTypeDef](#listmailboxpermissionsrequestrequesttypedef)
@@ -90,6 +96,7 @@ type annotations stubs module
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
   - [ListUsersResponseTypeDef](#listusersresponsetypedef)
+  - [MailDomainSummaryTypeDef](#maildomainsummarytypedef)
   - [MailboxExportJobTypeDef](#mailboxexportjobtypedef)
   - [MemberTypeDef](#membertypedef)
   - [MobileDeviceAccessMatchedRuleTypeDef](#mobiledeviceaccessmatchedruletypedef)
@@ -103,6 +110,7 @@ type annotations stubs module
   - [PutMailboxPermissionsRequestRequestTypeDef](#putmailboxpermissionsrequestrequesttypedef)
   - [PutMobileDeviceAccessOverrideRequestRequestTypeDef](#putmobiledeviceaccessoverriderequestrequesttypedef)
   - [PutRetentionPolicyRequestRequestTypeDef](#putretentionpolicyrequestrequesttypedef)
+  - [RegisterMailDomainRequestRequestTypeDef](#registermaildomainrequestrequesttypedef)
   - [RegisterToWorkMailRequestRequestTypeDef](#registertoworkmailrequestrequesttypedef)
   - [ResetPasswordRequestRequestTypeDef](#resetpasswordrequestrequesttypedef)
   - [ResourceTypeDef](#resourcetypedef)
@@ -112,6 +120,7 @@ type annotations stubs module
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateDefaultMailDomainRequestRequestTypeDef](#updatedefaultmaildomainrequestrequesttypedef)
   - [UpdateMailboxQuotaRequestRequestTypeDef](#updatemailboxquotarequestrequesttypedef)
   - [UpdateMobileDeviceAccessRuleRequestRequestTypeDef](#updatemobiledeviceaccessrulerequestrequesttypedef)
   - [UpdatePrimaryEmailAddressRequestRequestTypeDef](#updateprimaryemailaddressrequestrequesttypedef)
@@ -491,6 +500,17 @@ Required fields:
 - `OrganizationId`: `str`
 - `EntityId`: `str`
 
+## DeregisterMailDomainRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DeregisterMailDomainRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `DomainName`: `str`
+
 ## DescribeGroupRequestRequestTypeDef
 
 ```python
@@ -690,6 +710,18 @@ Required fields:
 - `GroupId`: `str`
 - `MemberId`: `str`
 
+## DnsRecordTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import DnsRecordTypeDef
+```
+
+Optional fields:
+
+- `Type`: `str`
+- `Hostname`: `str`
+- `Value`: `str`
+
 ## DomainTypeDef
 
 ```python
@@ -766,6 +798,35 @@ Required fields:
 - `Description`: `str`
 - `FolderConfigurations`:
   `List`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetMailDomainRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import GetMailDomainRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `DomainName`: `str`
+
+## GetMailDomainResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import GetMailDomainResponseTypeDef
+```
+
+Required fields:
+
+- `Records`: `List`\[[DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef)\]
+- `IsTestDomain`: `bool`
+- `IsDefault`: `bool`
+- `OwnershipVerificationStatus`:
+  [DnsRecordVerificationStatusType](./literals.md#dnsrecordverificationstatustype)
+- `DkimVerificationStatus`:
+  [DnsRecordVerificationStatusType](./literals.md#dnsrecordverificationstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -975,6 +1036,35 @@ from mypy_boto3_workmail.type_defs import ListGroupsResponseTypeDef
 Required fields:
 
 - `Groups`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListMailDomainsRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListMailDomainsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListMailDomainsResponseTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import ListMailDomainsResponseTypeDef
+```
+
+Required fields:
+
+- `MailDomains`:
+  `List`\[[MailDomainSummaryTypeDef](./type_defs.md#maildomainsummarytypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1224,6 +1314,17 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## MailDomainSummaryTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import MailDomainSummaryTypeDef
+```
+
+Optional fields:
+
+- `DomainName`: `str`
+- `DefaultDomain`: `bool`
+
 ## MailboxExportJobTypeDef
 
 ```python
@@ -1431,6 +1532,21 @@ Optional fields:
 - `Id`: `str`
 - `Description`: `str`
 
+## RegisterMailDomainRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import RegisterMailDomainRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `DomainName`: `str`
+
+Optional fields:
+
+- `ClientToken`: `str`
+
 ## RegisterToWorkMailRequestRequestTypeDef
 
 ```python
@@ -1549,6 +1665,17 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+## UpdateDefaultMailDomainRequestRequestTypeDef
+
+```python
+from mypy_boto3_workmail.type_defs import UpdateDefaultMailDomainRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationId`: `str`
+- `DomainName`: `str`
 
 ## UpdateMailboxQuotaRequestRequestTypeDef
 

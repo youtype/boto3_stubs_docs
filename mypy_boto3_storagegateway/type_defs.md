@@ -123,6 +123,7 @@ type annotations stubs module
   - [EndpointNetworkConfigurationTypeDef](#endpointnetworkconfigurationtypedef)
   - [FileShareInfoTypeDef](#fileshareinfotypedef)
   - [FileSystemAssociationInfoTypeDef](#filesystemassociationinfotypedef)
+  - [FileSystemAssociationStatusDetailTypeDef](#filesystemassociationstatusdetailtypedef)
   - [FileSystemAssociationSummaryTypeDef](#filesystemassociationsummarytypedef)
   - [GatewayInfoTypeDef](#gatewayinfotypedef)
   - [JoinDomainInputRequestTypeDef](#joindomaininputrequesttypedef)
@@ -168,6 +169,7 @@ type annotations stubs module
   - [RetrieveTapeRecoveryPointInputRequestTypeDef](#retrievetaperecoverypointinputrequesttypedef)
   - [RetrieveTapeRecoveryPointOutputTypeDef](#retrievetaperecoverypointoutputtypedef)
   - [SMBFileShareInfoTypeDef](#smbfileshareinfotypedef)
+  - [SMBLocalGroupsTypeDef](#smblocalgroupstypedef)
   - [SetLocalConsolePasswordInputRequestTypeDef](#setlocalconsolepasswordinputrequesttypedef)
   - [SetLocalConsolePasswordOutputTypeDef](#setlocalconsolepasswordoutputtypedef)
   - [SetSMBGuestPasswordInputRequestTypeDef](#setsmbguestpasswordinputrequesttypedef)
@@ -206,6 +208,8 @@ type annotations stubs module
   - [UpdateSMBFileShareOutputTypeDef](#updatesmbfileshareoutputtypedef)
   - [UpdateSMBFileShareVisibilityInputRequestTypeDef](#updatesmbfilesharevisibilityinputrequesttypedef)
   - [UpdateSMBFileShareVisibilityOutputTypeDef](#updatesmbfilesharevisibilityoutputtypedef)
+  - [UpdateSMBLocalGroupsInputRequestTypeDef](#updatesmblocalgroupsinputrequesttypedef)
+  - [UpdateSMBLocalGroupsOutputTypeDef](#updatesmblocalgroupsoutputtypedef)
   - [UpdateSMBSecurityStrategyInputRequestTypeDef](#updatesmbsecuritystrategyinputrequesttypedef)
   - [UpdateSMBSecurityStrategyOutputTypeDef](#updatesmbsecuritystrategyoutputtypedef)
   - [UpdateSnapshotScheduleInputRequestTypeDef](#updatesnapshotscheduleinputrequesttypedef)
@@ -641,6 +645,7 @@ Optional fields:
 - `NotificationPolicy`: `str`
 - `VPCEndpointDNSName`: `str`
 - `BucketRegion`: `str`
+- `AuditDestinationARN`: `str`
 
 ## CreateNFSFileShareOutputTypeDef
 
@@ -1441,6 +1446,8 @@ Required fields:
 - `SMBSecurityStrategy`:
   [SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype)
 - `FileSharesVisible`: `bool`
+- `SMBLocalGroups`:
+  [SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1805,6 +1812,18 @@ Optional fields:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `EndpointNetworkConfiguration`:
   [EndpointNetworkConfigurationTypeDef](./type_defs.md#endpointnetworkconfigurationtypedef)
+- `FileSystemAssociationStatusDetails`:
+  `List`\[[FileSystemAssociationStatusDetailTypeDef](./type_defs.md#filesystemassociationstatusdetailtypedef)\]
+
+## FileSystemAssociationStatusDetailTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import FileSystemAssociationStatusDetailTypeDef
+```
+
+Optional fields:
+
+- `ErrorCode`: `str`
 
 ## FileSystemAssociationSummaryTypeDef
 
@@ -2190,6 +2209,7 @@ Optional fields:
 - `NotificationPolicy`: `str`
 - `VPCEndpointDNSName`: `str`
 - `BucketRegion`: `str`
+- `AuditDestinationARN`: `str`
 
 ## NetworkInterfaceTypeDef
 
@@ -2425,6 +2445,16 @@ Optional fields:
 - `VPCEndpointDNSName`: `str`
 - `BucketRegion`: `str`
 - `OplocksEnabled`: `bool`
+
+## SMBLocalGroupsTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import SMBLocalGroupsTypeDef
+```
+
+Optional fields:
+
+- `GatewayAdmins`: `List`\[`str`\]
 
 ## SetLocalConsolePasswordInputRequestTypeDef
 
@@ -2890,6 +2920,7 @@ Optional fields:
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
+- `AuditDestinationARN`: `str`
 
 ## UpdateNFSFileShareOutputTypeDef
 
@@ -2962,6 +2993,30 @@ Required fields:
 
 ```python
 from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareVisibilityOutputTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateSMBLocalGroupsInputRequestTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateSMBLocalGroupsInputRequestTypeDef
+```
+
+Required fields:
+
+- `GatewayARN`: `str`
+- `SMBLocalGroups`:
+  [SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef)
+
+## UpdateSMBLocalGroupsOutputTypeDef
+
+```python
+from mypy_boto3_storagegateway.type_defs import UpdateSMBLocalGroupsOutputTypeDef
 ```
 
 Required fields:

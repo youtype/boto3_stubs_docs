@@ -53,6 +53,7 @@ from mypy_boto3_workmail.client import WorkMailClient
 - [delete_retention_policy](./client.md#delete_retention_policy)
 - [delete_user](./client.md#delete_user)
 - [deregister_from_work_mail](./client.md#deregister_from_work_mail)
+- [deregister_mail_domain](./client.md#deregister_mail_domain)
 - [describe_group](./client.md#describe_group)
 - [describe_inbound_dmarc_settings](./client.md#describe_inbound_dmarc_settings)
 - [describe_mailbox_export_job](./client.md#describe_mailbox_export_job)
@@ -65,6 +66,7 @@ from mypy_boto3_workmail.client import WorkMailClient
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_access_control_effect](./client.md#get_access_control_effect)
 - [get_default_retention_policy](./client.md#get_default_retention_policy)
+- [get_mail_domain](./client.md#get_mail_domain)
 - [get_mailbox_details](./client.md#get_mailbox_details)
 - [get_mobile_device_access_effect](./client.md#get_mobile_device_access_effect)
 - [get_mobile_device_access_override](./client.md#get_mobile_device_access_override)
@@ -73,6 +75,7 @@ from mypy_boto3_workmail.client import WorkMailClient
 - [list_aliases](./client.md#list_aliases)
 - [list_group_members](./client.md#list_group_members)
 - [list_groups](./client.md#list_groups)
+- [list_mail_domains](./client.md#list_mail_domains)
 - [list_mailbox_export_jobs](./client.md#list_mailbox_export_jobs)
 - [list_mailbox_permissions](./client.md#list_mailbox_permissions)
 - [list_mobile_device_access_overrides](./client.md#list_mobile_device_access_overrides)
@@ -87,11 +90,13 @@ from mypy_boto3_workmail.client import WorkMailClient
 - [put_mailbox_permissions](./client.md#put_mailbox_permissions)
 - [put_mobile_device_access_override](./client.md#put_mobile_device_access_override)
 - [put_retention_policy](./client.md#put_retention_policy)
+- [register_mail_domain](./client.md#register_mail_domain)
 - [register_to_work_mail](./client.md#register_to_work_mail)
 - [reset_password](./client.md#reset_password)
 - [start_mailbox_export_job](./client.md#start_mailbox_export_job)
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
+- [update_default_mail_domain](./client.md#update_default_mail_domain)
 - [update_mailbox_quota](./client.md#update_mailbox_quota)
 - [update_mobile_device_access_rule](./client.md#update_mobile_device_access_rule)
 - [update_primary_email_address](./client.md#update_primary_email_address)
@@ -110,9 +115,11 @@ WorkMailClient [exceptions](./client.md#exceptions)
 - EntityNotFoundException
 - EntityStateException
 - InvalidConfigurationException
+- InvalidCustomSesConfigurationException
 - InvalidParameterException
 - InvalidPasswordException
 - LimitExceededException
+- MailDomainInUseException
 - MailDomainNotFoundException
 - MailDomainStateException
 - NameAvailabilityException
@@ -154,6 +161,7 @@ from mypy_boto3_workmail.literals import AccessControlRuleEffectType, ...
 ```
 
 - [AccessControlRuleEffectType](./literals.md#accesscontrolruleeffecttype)
+- [DnsRecordVerificationStatusType](./literals.md#dnsrecordverificationstatustype)
 - [EntityStateType](./literals.md#entitystatetype)
 - [FolderNameType](./literals.md#foldernametype)
 - [ListAliasesPaginatorName](./literals.md#listaliasespaginatorname)
@@ -214,6 +222,7 @@ from mypy_boto3_workmail.type_defs import AccessControlRuleTypeDef, ...
 - [DeleteRetentionPolicyRequestRequestTypeDef](./type_defs.md#deleteretentionpolicyrequestrequesttypedef)
 - [DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef)
 - [DeregisterFromWorkMailRequestRequestTypeDef](./type_defs.md#deregisterfromworkmailrequestrequesttypedef)
+- [DeregisterMailDomainRequestRequestTypeDef](./type_defs.md#deregistermaildomainrequestrequesttypedef)
 - [DescribeGroupRequestRequestTypeDef](./type_defs.md#describegrouprequestrequesttypedef)
 - [DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef)
 - [DescribeInboundDmarcSettingsRequestRequestTypeDef](./type_defs.md#describeinbounddmarcsettingsrequestrequesttypedef)
@@ -228,12 +237,15 @@ from mypy_boto3_workmail.type_defs import AccessControlRuleTypeDef, ...
 - [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef)
 - [DisassociateDelegateFromResourceRequestRequestTypeDef](./type_defs.md#disassociatedelegatefromresourcerequestrequesttypedef)
 - [DisassociateMemberFromGroupRequestRequestTypeDef](./type_defs.md#disassociatememberfromgrouprequestrequesttypedef)
+- [DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef)
 - [DomainTypeDef](./type_defs.md#domaintypedef)
 - [FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)
 - [GetAccessControlEffectRequestRequestTypeDef](./type_defs.md#getaccesscontroleffectrequestrequesttypedef)
 - [GetAccessControlEffectResponseTypeDef](./type_defs.md#getaccesscontroleffectresponsetypedef)
 - [GetDefaultRetentionPolicyRequestRequestTypeDef](./type_defs.md#getdefaultretentionpolicyrequestrequesttypedef)
 - [GetDefaultRetentionPolicyResponseTypeDef](./type_defs.md#getdefaultretentionpolicyresponsetypedef)
+- [GetMailDomainRequestRequestTypeDef](./type_defs.md#getmaildomainrequestrequesttypedef)
+- [GetMailDomainResponseTypeDef](./type_defs.md#getmaildomainresponsetypedef)
 - [GetMailboxDetailsRequestRequestTypeDef](./type_defs.md#getmailboxdetailsrequestrequesttypedef)
 - [GetMailboxDetailsResponseTypeDef](./type_defs.md#getmailboxdetailsresponsetypedef)
 - [GetMobileDeviceAccessEffectRequestRequestTypeDef](./type_defs.md#getmobiledeviceaccesseffectrequestrequesttypedef)
@@ -249,6 +261,8 @@ from mypy_boto3_workmail.type_defs import AccessControlRuleTypeDef, ...
 - [ListGroupMembersResponseTypeDef](./type_defs.md#listgroupmembersresponsetypedef)
 - [ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef)
 - [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)
+- [ListMailDomainsRequestRequestTypeDef](./type_defs.md#listmaildomainsrequestrequesttypedef)
+- [ListMailDomainsResponseTypeDef](./type_defs.md#listmaildomainsresponsetypedef)
 - [ListMailboxExportJobsRequestRequestTypeDef](./type_defs.md#listmailboxexportjobsrequestrequesttypedef)
 - [ListMailboxExportJobsResponseTypeDef](./type_defs.md#listmailboxexportjobsresponsetypedef)
 - [ListMailboxPermissionsRequestRequestTypeDef](./type_defs.md#listmailboxpermissionsrequestrequesttypedef)
@@ -267,6 +281,7 @@ from mypy_boto3_workmail.type_defs import AccessControlRuleTypeDef, ...
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef)
 - [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
+- [MailDomainSummaryTypeDef](./type_defs.md#maildomainsummarytypedef)
 - [MailboxExportJobTypeDef](./type_defs.md#mailboxexportjobtypedef)
 - [MemberTypeDef](./type_defs.md#membertypedef)
 - [MobileDeviceAccessMatchedRuleTypeDef](./type_defs.md#mobiledeviceaccessmatchedruletypedef)
@@ -280,6 +295,7 @@ from mypy_boto3_workmail.type_defs import AccessControlRuleTypeDef, ...
 - [PutMailboxPermissionsRequestRequestTypeDef](./type_defs.md#putmailboxpermissionsrequestrequesttypedef)
 - [PutMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#putmobiledeviceaccessoverriderequestrequesttypedef)
 - [PutRetentionPolicyRequestRequestTypeDef](./type_defs.md#putretentionpolicyrequestrequesttypedef)
+- [RegisterMailDomainRequestRequestTypeDef](./type_defs.md#registermaildomainrequestrequesttypedef)
 - [RegisterToWorkMailRequestRequestTypeDef](./type_defs.md#registertoworkmailrequestrequesttypedef)
 - [ResetPasswordRequestRequestTypeDef](./type_defs.md#resetpasswordrequestrequesttypedef)
 - [ResourceTypeDef](./type_defs.md#resourcetypedef)
@@ -289,6 +305,7 @@ from mypy_boto3_workmail.type_defs import AccessControlRuleTypeDef, ...
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+- [UpdateDefaultMailDomainRequestRequestTypeDef](./type_defs.md#updatedefaultmaildomainrequestrequesttypedef)
 - [UpdateMailboxQuotaRequestRequestTypeDef](./type_defs.md#updatemailboxquotarequestrequesttypedef)
 - [UpdateMobileDeviceAccessRuleRequestRequestTypeDef](./type_defs.md#updatemobiledeviceaccessrulerequestrequesttypedef)
 - [UpdatePrimaryEmailAddressRequestRequestTypeDef](./type_defs.md#updateprimaryemailaddressrequestrequesttypedef)

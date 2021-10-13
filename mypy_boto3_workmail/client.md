@@ -33,6 +33,7 @@ type annotations stubs module
     - [delete_retention_policy](#delete_retention_policy)
     - [delete_user](#delete_user)
     - [deregister_from_work_mail](#deregister_from_work_mail)
+    - [deregister_mail_domain](#deregister_mail_domain)
     - [describe_group](#describe_group)
     - [describe_inbound_dmarc_settings](#describe_inbound_dmarc_settings)
     - [describe_mailbox_export_job](#describe_mailbox_export_job)
@@ -44,6 +45,7 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [get_access_control_effect](#get_access_control_effect)
     - [get_default_retention_policy](#get_default_retention_policy)
+    - [get_mail_domain](#get_mail_domain)
     - [get_mailbox_details](#get_mailbox_details)
     - [get_mobile_device_access_effect](#get_mobile_device_access_effect)
     - [get_mobile_device_access_override](#get_mobile_device_access_override)
@@ -51,6 +53,7 @@ type annotations stubs module
     - [list_aliases](#list_aliases)
     - [list_group_members](#list_group_members)
     - [list_groups](#list_groups)
+    - [list_mail_domains](#list_mail_domains)
     - [list_mailbox_export_jobs](#list_mailbox_export_jobs)
     - [list_mailbox_permissions](#list_mailbox_permissions)
     - [list_mobile_device_access_overrides](#list_mobile_device_access_overrides)
@@ -65,11 +68,13 @@ type annotations stubs module
     - [put_mailbox_permissions](#put_mailbox_permissions)
     - [put_mobile_device_access_override](#put_mobile_device_access_override)
     - [put_retention_policy](#put_retention_policy)
+    - [register_mail_domain](#register_mail_domain)
     - [register_to_work_mail](#register_to_work_mail)
     - [reset_password](#reset_password)
     - [start_mailbox_export_job](#start_mailbox_export_job)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
+    - [update_default_mail_domain](#update_default_mail_domain)
     - [update_mailbox_quota](#update_mailbox_quota)
     - [update_mobile_device_access_rule](#update_mobile_device_access_rule)
     - [update_primary_email_address](#update_primary_email_address)
@@ -115,9 +120,11 @@ Exceptions:
 - `Exceptions.EntityNotFoundException`
 - `Exceptions.EntityStateException`
 - `Exceptions.InvalidConfigurationException`
+- `Exceptions.InvalidCustomSesConfigurationException`
 - `Exceptions.InvalidParameterException`
 - `Exceptions.InvalidPasswordException`
 - `Exceptions.LimitExceededException`
+- `Exceptions.MailDomainInUseException`
 - `Exceptions.MailDomainNotFoundException`
 - `Exceptions.MailDomainStateException`
 - `Exceptions.NameAvailabilityException`
@@ -584,6 +591,26 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### deregister_mail_domain
+
+Removes a domain from Amazon WorkMail, stops email routing to WorkMail, and
+removes the authorization allowing WorkMail use.
+
+Type annotations for `boto3.client("workmail").deregister_mail_domain` method.
+
+Boto3 documentation:
+[WorkMail.Client.deregister_mail_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_mail_domain)
+
+Arguments mapping described in
+[DeregisterMailDomainRequestRequestTypeDef](./type_defs.md#deregistermaildomainrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `DomainName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### describe_group
 
 Returns the data available for the group.
@@ -809,6 +836,27 @@ Keyword-only arguments:
 Returns
 [GetDefaultRetentionPolicyResponseTypeDef](./type_defs.md#getdefaultretentionpolicyresponsetypedef).
 
+### get_mail_domain
+
+Gets details for a mail domain, including domain records required to configure
+your domain with recommended security.
+
+Type annotations for `boto3.client("workmail").get_mail_domain` method.
+
+Boto3 documentation:
+[WorkMail.Client.get_mail_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mail_domain)
+
+Arguments mapping described in
+[GetMailDomainRequestRequestTypeDef](./type_defs.md#getmaildomainrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `DomainName`: `str` *(required)*
+
+Returns
+[GetMailDomainResponseTypeDef](./type_defs.md#getmaildomainresponsetypedef).
+
 ### get_mailbox_details
 
 Requests a user's mailbox details for a specified organization and user.
@@ -960,6 +1008,27 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+
+### list_mail_domains
+
+Lists the mail domains in a given Amazon WorkMail organization.
+
+Type annotations for `boto3.client("workmail").list_mail_domains` method.
+
+Boto3 documentation:
+[WorkMail.Client.list_mail_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mail_domains)
+
+Arguments mapping described in
+[ListMailDomainsRequestRequestTypeDef](./type_defs.md#listmaildomainsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListMailDomainsResponseTypeDef](./type_defs.md#listmaildomainsresponsetypedef).
 
 ### list_mailbox_export_jobs
 
@@ -1278,6 +1347,27 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+### register_mail_domain
+
+Registers a new domain in Amazon WorkMail and SES, and configures it for use by
+WorkMail.
+
+Type annotations for `boto3.client("workmail").register_mail_domain` method.
+
+Boto3 documentation:
+[WorkMail.Client.register_mail_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_mail_domain)
+
+Arguments mapping described in
+[RegisterMailDomainRequestRequestTypeDef](./type_defs.md#registermaildomainrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `DomainName`: `str` *(required)*
+- `ClientToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
 ### register_to_work_mail
 
 Registers an existing and disabled user, group, or resource for Amazon WorkMail
@@ -1385,6 +1475,26 @@ Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+### update_default_mail_domain
+
+Updates the default mail domain for an organization.
+
+Type annotations for `boto3.client("workmail").update_default_mail_domain`
+method.
+
+Boto3 documentation:
+[WorkMail.Client.update_default_mail_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_default_mail_domain)
+
+Arguments mapping described in
+[UpdateDefaultMailDomainRequestRequestTypeDef](./type_defs.md#updatedefaultmaildomainrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationId`: `str` *(required)*
+- `DomainName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
 

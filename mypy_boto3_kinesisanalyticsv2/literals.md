@@ -180,10 +180,12 @@ from mypy_boto3_kinesisanalyticsv2.literals import RuntimeEnvironmentType
 Values:
 
 - `FLINK-1_11`
+- `FLINK-1_13`
 - `FLINK-1_6`
 - `FLINK-1_8`
 - `SQL-1_0`
 - `ZEPPELIN-FLINK-1_0`
+- `ZEPPELIN-FLINK-2_0`
 
 ## SnapshotStatusType
 

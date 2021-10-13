@@ -100,6 +100,7 @@ type annotations stubs module
     - [update_nfs_file_share](#update_nfs_file_share)
     - [update_smb_file_share](#update_smb_file_share)
     - [update_smb_file_share_visibility](#update_smb_file_share_visibility)
+    - [update_smb_local_groups](#update_smb_local_groups)
     - [update_smb_security_strategy](#update_smb_security_strategy)
     - [update_snapshot_schedule](#update_snapshot_schedule)
     - [update_vtl_device_type](#update_vtl_device_type)
@@ -458,6 +459,7 @@ Keyword-only arguments:
 - `NotificationPolicy`: `str`
 - `VPCEndpointDNSName`: `str`
 - `BucketRegion`: `str`
+- `AuditDestinationARN`: `str`
 
 Returns
 [CreateNFSFileShareOutputTypeDef](./type_defs.md#createnfsfileshareoutputtypedef).
@@ -1449,7 +1451,8 @@ Returns
 
 ### list_gateways
 
-Lists gateways owned by an account in an Region specified in the request.
+Lists gateways owned by an Amazon Web Services account in an Amazon Web
+Services Region specified in the request.
 
 Type annotations for `boto3.client("storagegateway").list_gateways` method.
 
@@ -2050,6 +2053,7 @@ Keyword-only arguments:
 - `CacheAttributes`:
   [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
 - `NotificationPolicy`: `str`
+- `AuditDestinationARN`: `str`
 
 Returns
 [UpdateNFSFileShareOutputTypeDef](./type_defs.md#updatenfsfileshareoutputtypedef).
@@ -2114,6 +2118,29 @@ Keyword-only arguments:
 
 Returns
 [UpdateSMBFileShareVisibilityOutputTypeDef](./type_defs.md#updatesmbfilesharevisibilityoutputtypedef).
+
+### update_smb_local_groups
+
+Updates the list of Active Directory users and groups that have special
+permissions for SMB file shares on the gateway.
+
+Type annotations for `boto3.client("storagegateway").update_smb_local_groups`
+method.
+
+Boto3 documentation:
+[StorageGateway.Client.update_smb_local_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_local_groups)
+
+Arguments mapping described in
+[UpdateSMBLocalGroupsInputRequestTypeDef](./type_defs.md#updatesmblocalgroupsinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `GatewayARN`: `str` *(required)*
+- `SMBLocalGroups`:
+  [SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef) *(required)*
+
+Returns
+[UpdateSMBLocalGroupsOutputTypeDef](./type_defs.md#updatesmblocalgroupsoutputtypedef).
 
 ### update_smb_security_strategy
 

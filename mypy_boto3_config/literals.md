@@ -747,6 +747,7 @@ Values:
 - `AWS::NetworkFirewall::Firewall`
 - `AWS::NetworkFirewall::FirewallPolicy`
 - `AWS::NetworkFirewall::RuleGroup`
+- `AWS::OpenSearch::Domain`
 - `AWS::QLDB::Ledger`
 - `AWS::RDS::DBCluster`
 - `AWS::RDS::DBClusterSnapshot`

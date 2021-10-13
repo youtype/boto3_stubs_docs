@@ -1065,7 +1065,7 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeployAsApplicationConfigurationUpdateTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `S3ContentLocationUpdate`:
   [S3ContentBaseLocationUpdateTypeDef](./type_defs.md#s3contentbaselocationupdatetypedef)
@@ -1306,7 +1306,7 @@ Required fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import GlueDataCatalogConfigurationUpdateTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `DatabaseARNUpdate`: `str`
 
@@ -2194,12 +2194,9 @@ Optional fields:
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ContentBaseLocationUpdateTypeDef
 ```
 
-Required fields:
-
-- `BucketARNUpdate`: `str`
-
 Optional fields:
 
+- `BucketARNUpdate`: `str`
 - `BasePathUpdate`: `str`
 
 ## S3ContentLocationTypeDef

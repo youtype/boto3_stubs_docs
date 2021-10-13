@@ -9,6 +9,7 @@ type annotations stubs module
 
 - [Literals for boto3 WorkMail module](#literals-for-boto3-workmail-module)
   - [AccessControlRuleEffectType](#accesscontrolruleeffecttype)
+  - [DnsRecordVerificationStatusType](#dnsrecordverificationstatustype)
   - [EntityStateType](#entitystatetype)
   - [FolderNameType](#foldernametype)
   - [ListAliasesPaginatorName](#listaliasespaginatorname)
@@ -39,6 +40,18 @@ Values:
 
 - `ALLOW`
 - `DENY`
+
+## DnsRecordVerificationStatusType
+
+```python
+from mypy_boto3_workmail.literals import DnsRecordVerificationStatusType
+```
+
+Values:
+
+- `FAILED`
+- `PENDING`
+- `VERIFIED`
 
 ## EntityStateType
 

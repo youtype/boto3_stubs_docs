@@ -745,6 +745,8 @@ type annotations stubs module
   - [DescribeVpnConnectionsResultTypeDef](#describevpnconnectionsresulttypedef)
   - [DescribeVpnGatewaysRequestRequestTypeDef](#describevpngatewaysrequestrequesttypedef)
   - [DescribeVpnGatewaysResultTypeDef](#describevpngatewaysresulttypedef)
+  - [DestinationOptionsRequestTypeDef](#destinationoptionsrequesttypedef)
+  - [DestinationOptionsResponseTypeDef](#destinationoptionsresponsetypedef)
   - [DetachClassicLinkVpcRequestInstanceTypeDef](#detachclassiclinkvpcrequestinstancetypedef)
   - [DetachClassicLinkVpcRequestRequestTypeDef](#detachclassiclinkvpcrequestrequesttypedef)
   - [DetachClassicLinkVpcRequestVpcTypeDef](#detachclassiclinkvpcrequestvpctypedef)
@@ -4660,6 +4662,8 @@ Optional fields:
 - `TagSpecifications`:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MaxAggregationInterval`: `int`
+- `DestinationOptions`:
+  [DestinationOptionsRequestTypeDef](./type_defs.md#destinationoptionsrequesttypedef)
 
 ## CreateFlowLogsResultTypeDef
 
@@ -12288,6 +12292,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DestinationOptionsRequestTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DestinationOptionsRequestTypeDef
+```
+
+Optional fields:
+
+- `FileFormat`:
+  [DestinationFileFormatType](./literals.md#destinationfileformattype)
+- `HiveCompatiblePartitions`: `bool`
+- `PerHourPartition`: `bool`
+
+## DestinationOptionsResponseTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import DestinationOptionsResponseTypeDef
+```
+
+Optional fields:
+
+- `FileFormat`:
+  [DestinationFileFormatType](./literals.md#destinationfileformattype)
+- `HiveCompatiblePartitions`: `bool`
+- `PerHourPartition`: `bool`
+
 ## DetachClassicLinkVpcRequestInstanceTypeDef
 
 ```python
@@ -14229,6 +14259,8 @@ Optional fields:
 - `LogFormat`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `MaxAggregationInterval`: `int`
+- `DestinationOptions`:
+  [DestinationOptionsResponseTypeDef](./type_defs.md#destinationoptionsresponsetypedef)
 
 ## FpgaDeviceInfoTypeDef
 

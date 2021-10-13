@@ -1945,6 +1945,8 @@ Keyword-only arguments:
 - `TagSpecifications`:
   `Sequence`\[[TagSpecificationTypeDef](./type_defs.md#tagspecificationtypedef)\]
 - `MaxAggregationInterval`: `int`
+- `DestinationOptions`:
+  [DestinationOptionsRequestTypeDef](./type_defs.md#destinationoptionsrequesttypedef)
 
 Returns
 [CreateFlowLogsResultTypeDef](./type_defs.md#createflowlogsresulttypedef).
