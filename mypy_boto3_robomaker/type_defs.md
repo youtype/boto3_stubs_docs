@@ -278,6 +278,8 @@ from mypy_boto3_robomaker.type_defs import ComputeResponseTypeDef
 Optional fields:
 
 - `simulationUnitLimit`: `int`
+- `computeType`: [ComputeTypeType](./literals.md#computetypetype)
+- `gpuUnitLimit`: `int`
 
 ## ComputeTypeDef
 
@@ -288,6 +290,8 @@ from mypy_boto3_robomaker.type_defs import ComputeTypeDef
 Optional fields:
 
 - `simulationUnitLimit`: `int`
+- `computeType`: [ComputeTypeType](./literals.md#computetypetype)
+- `gpuUnitLimit`: `int`
 
 ## CreateDeploymentJobRequestRequestTypeDef
 
@@ -741,6 +745,11 @@ Required fields:
 - `s3Bucket`: `str`
 - `s3Keys`: `Sequence`\[`str`\]
 
+Optional fields:
+
+- `type`: [DataSourceTypeType](./literals.md#datasourcetypetype)
+- `destination`: `str`
+
 ## DataSourceTypeDef
 
 ```python
@@ -752,6 +761,8 @@ Optional fields:
 - `name`: `str`
 - `s3Bucket`: `str`
 - `s3Keys`: `List`\[[S3KeyOutputTypeDef](./type_defs.md#s3keyoutputtypedef)\]
+- `type`: [DataSourceTypeType](./literals.md#datasourcetypetype)
+- `destination`: `str`
 
 ## DeleteFleetRequestRequestTypeDef
 
@@ -1386,17 +1397,15 @@ Required fields:
 from mypy_boto3_robomaker.type_defs import LaunchConfigTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `packageName`: `str`
 - `launchFile`: `str`
-
-Optional fields:
-
 - `environmentVariables`: `Dict`\[`str`, `str`\]
 - `portForwardingConfig`:
   [PortForwardingConfigTypeDef](./type_defs.md#portforwardingconfigtypedef)
 - `streamUI`: `bool`
+- `command`: `List`\[`str`\]
 
 ## ListDeploymentJobsRequestRequestTypeDef
 
@@ -2059,6 +2068,7 @@ Optional fields:
 - `simulationApplicationNames`: `List`\[`str`\]
 - `robotApplicationNames`: `List`\[`str`\]
 - `dataSourceNames`: `List`\[`str`\]
+- `computeType`: [ComputeTypeType](./literals.md#computetypetype)
 
 ## SimulationJobTypeDef
 

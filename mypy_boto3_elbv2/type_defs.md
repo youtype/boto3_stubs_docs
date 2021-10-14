@@ -611,6 +611,8 @@ Optional fields:
 - `Names`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
+- `LoadBalancerType`:
+  [LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype)
 
 ## DescribeSSLPoliciesOutputTypeDef
 
@@ -1312,6 +1314,7 @@ Optional fields:
 - `SslProtocols`: `List`\[`str`\]
 - `Ciphers`: `List`\[[CipherTypeDef](./type_defs.md#ciphertypedef)\]
 - `Name`: `str`
+- `SupportedLoadBalancerTypes`: `List`\[`str`\]
 
 ## SubnetMappingTypeDef
 

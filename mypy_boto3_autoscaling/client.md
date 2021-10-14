@@ -580,6 +580,7 @@ Keyword-only arguments:
 - `AutoScalingGroupNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns
 [AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef).

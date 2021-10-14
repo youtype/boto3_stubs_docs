@@ -167,6 +167,8 @@ Boto3 documentation:
 Arguments for `DescribeSSLPoliciesPaginator.paginate` method:
 
 - `Names`: `Sequence`\[`str`\]
+- `LoadBalancerType`:
+  [LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

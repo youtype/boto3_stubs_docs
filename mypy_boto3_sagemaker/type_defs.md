@@ -10755,10 +10755,10 @@ from mypy_boto3_sagemaker.type_defs import ServiceCatalogProvisioningDetailsType
 Required fields:
 
 - `ProductId`: `str`
-- `ProvisioningArtifactId`: `str`
 
 Optional fields:
 
+- `ProvisioningArtifactId`: `str`
 - `PathId`: `str`
 - `ProvisioningParameters`:
   `Sequence`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]

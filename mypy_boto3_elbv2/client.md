@@ -553,6 +553,8 @@ Keyword-only arguments:
 - `Names`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
+- `LoadBalancerType`:
+  [LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype)
 
 Returns
 [DescribeSSLPoliciesOutputTypeDef](./type_defs.md#describesslpoliciesoutputtypedef).

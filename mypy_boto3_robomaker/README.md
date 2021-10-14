@@ -143,6 +143,8 @@ from mypy_boto3_robomaker.literals import ArchitectureType, ...
 ```
 
 - [ArchitectureType](./literals.md#architecturetype)
+- [ComputeTypeType](./literals.md#computetypetype)
+- [DataSourceTypeType](./literals.md#datasourcetypetype)
 - [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
 - [DeploymentStatusType](./literals.md#deploymentstatustype)
 - [ExitBehaviorType](./literals.md#exitbehaviortype)

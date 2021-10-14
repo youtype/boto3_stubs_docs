@@ -39,6 +39,7 @@ Boto3 documentation:
 Arguments for `DescribeAutoScalingGroupsPaginator.paginate` method:
 
 - `AutoScalingGroupNames`: `Sequence`\[`str`\]
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

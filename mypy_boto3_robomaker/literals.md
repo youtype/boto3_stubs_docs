@@ -9,6 +9,8 @@ type annotations stubs module
 
 - [Literals for boto3 RoboMaker module](#literals-for-boto3-robomaker-module)
   - [ArchitectureType](#architecturetype)
+  - [ComputeTypeType](#computetypetype)
+  - [DataSourceTypeType](#datasourcetypetype)
   - [DeploymentJobErrorCodeType](#deploymentjoberrorcodetype)
   - [DeploymentStatusType](#deploymentstatustype)
   - [ExitBehaviorType](#exitbehaviortype)
@@ -53,6 +55,29 @@ Values:
 - `ARM64`
 - `ARMHF`
 - `X86_64`
+
+## ComputeTypeType
+
+```python
+from mypy_boto3_robomaker.literals import ComputeTypeType
+```
+
+Values:
+
+- `CPU`
+- `GPU_AND_CPU`
+
+## DataSourceTypeType
+
+```python
+from mypy_boto3_robomaker.literals import DataSourceTypeType
+```
+
+Values:
+
+- `Archive`
+- `File`
+- `Prefix`
 
 ## DeploymentJobErrorCodeType
 
@@ -268,6 +293,7 @@ from mypy_boto3_robomaker.literals import RobotSoftwareSuiteTypeType
 
 Values:
 
+- `General`
 - `ROS`
 - `ROS2`
 
@@ -397,6 +423,7 @@ Values:
 
 - `Gazebo`
 - `RosbagPlay`
+- `SimulationRuntime`
 
 ## UploadBehaviorType
 

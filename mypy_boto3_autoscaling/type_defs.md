@@ -264,6 +264,7 @@ Optional fields:
 - `AutoScalingGroupNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `MaxRecords`: `int`
+- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 ## AutoScalingGroupTypeDef
 
