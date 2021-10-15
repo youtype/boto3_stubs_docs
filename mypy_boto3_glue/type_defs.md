@@ -5454,6 +5454,8 @@ Optional fields:
 - `Exclusions`: `List`\[`str`\]
 - `ConnectionName`: `str`
 - `SampleSize`: `int`
+- `EventQueueArn`: `str`
+- `DlqEventQueueArn`: `str`
 
 ## ScheduleTypeDef
 

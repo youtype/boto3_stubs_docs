@@ -553,8 +553,8 @@ Keyword-only arguments:
 ### put_account_preferences
 
 Use this operation to set the account preference in the current Amazon Web
-Services Region to use either long 17 character (63 bit) or short 8 character
-(32 bit) IDs for new EFS file systems and mount targets created.
+Services Region to use long 17 character (63 bit) or short 8 character (32 bit)
+resource IDs for new EFS file system and mount target resources.
 
 Type annotations for `boto3.client("efs").put_account_preferences` method.
 

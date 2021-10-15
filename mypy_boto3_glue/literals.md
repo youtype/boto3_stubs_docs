@@ -675,6 +675,7 @@ from mypy_boto3_glue.literals import RecrawlBehaviorType
 
 Values:
 
+- `CRAWL_EVENT_MODE`
 - `CRAWL_EVERYTHING`
 - `CRAWL_NEW_FOLDERS_ONLY`
 
