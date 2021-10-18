@@ -63,6 +63,7 @@ type annotations stubs module
     - [describe_group](#describe_group)
     - [describe_iam_policy_assignment](#describe_iam_policy_assignment)
     - [describe_ingestion](#describe_ingestion)
+    - [describe_ip_restriction](#describe_ip_restriction)
     - [describe_namespace](#describe_namespace)
     - [describe_template](#describe_template)
     - [describe_template_alias](#describe_template_alias)
@@ -120,6 +121,7 @@ type annotations stubs module
     - [update_folder_permissions](#update_folder_permissions)
     - [update_group](#update_group)
     - [update_iam_policy_assignment](#update_iam_policy_assignment)
+    - [update_ip_restriction](#update_ip_restriction)
     - [update_template](#update_template)
     - [update_template_alias](#update_template_alias)
     - [update_template_permissions](#update_template_permissions)
@@ -231,7 +233,7 @@ Returns
 ### create_account_customization
 
 Creates Amazon QuickSight customizations the current Amazon Web Services
-Region;.
+Region.
 
 Type annotations for `boto3.client("quicksight").create_account_customization`
 method.
@@ -530,6 +532,7 @@ Keyword-only arguments:
 - `DataSetId`: `str` *(required)*
 - `IngestionId`: `str` *(required)*
 - `AwsAccountId`: `str` *(required)*
+- `IngestionType`: [IngestionTypeType](./literals.md#ingestiontypetype)
 
 Returns
 [CreateIngestionResponseTypeDef](./type_defs.md#createingestionresponsetypedef).
@@ -661,9 +664,8 @@ Returns
 
 ### delete_account_customization
 
-Deletes all Amazon QuickSight customizations in this Amazon Web Services
-Region; for the specified Amazon Web Services account and Amazon QuickSight
-namespace.
+Deletes all Amazon QuickSight customizations in this Amazon Web Services Region
+for the specified Amazon Web Services account and Amazon QuickSight namespace.
 
 Type annotations for `boto3.client("quicksight").delete_account_customization`
 method.
@@ -1027,7 +1029,7 @@ Returns
 
 Describes the customizations associated with the provided Amazon Web Services
 account and Amazon Amazon QuickSight namespace in an Amazon Web Services
-Region;.
+Region.
 
 Type annotations for
 `boto3.client("quicksight").describe_account_customization` method.
@@ -1361,6 +1363,26 @@ Keyword-only arguments:
 
 Returns
 [DescribeIngestionResponseTypeDef](./type_defs.md#describeingestionresponsetypedef).
+
+### describe_ip_restriction
+
+Provides a summary and status of IP Rules.
+
+Type annotations for `boto3.client("quicksight").describe_ip_restriction`
+method.
+
+Boto3 documentation:
+[QuickSight.Client.describe_ip_restriction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_ip_restriction)
+
+Arguments mapping described in
+[DescribeIpRestrictionRequestRequestTypeDef](./type_defs.md#describeiprestrictionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+
+Returns
+[DescribeIpRestrictionResponseTypeDef](./type_defs.md#describeiprestrictionresponsetypedef).
 
 ### describe_namespace
 
@@ -1730,7 +1752,7 @@ Returns
 ### list_data_sets
 
 Lists all of the datasets belonging to the current Amazon Web Services account
-in an Amazon Web Services Region;.
+in an Amazon Web Services Region.
 
 Type annotations for `boto3.client("quicksight").list_data_sets` method.
 
@@ -1751,7 +1773,7 @@ Returns
 
 ### list_data_sources
 
-Lists data sources in current Amazon Web Services Region; that belong to this
+Lists data sources in current Amazon Web Services Region that belong to this
 Amazon Web Services account.
 
 Type annotations for `boto3.client("quicksight").list_data_sources` method.
@@ -2318,7 +2340,7 @@ Returns
 ### update_account_customization
 
 Updates Amazon QuickSight customizations the current Amazon Web Services
-Region;.
+Region.
 
 Type annotations for `boto3.client("quicksight").update_account_customization`
 method.
@@ -2702,6 +2724,27 @@ Keyword-only arguments:
 
 Returns
 [UpdateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#updateiampolicyassignmentresponsetypedef).
+
+### update_ip_restriction
+
+Updates content and status of IP Rules.
+
+Type annotations for `boto3.client("quicksight").update_ip_restriction` method.
+
+Boto3 documentation:
+[QuickSight.Client.update_ip_restriction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.update_ip_restriction)
+
+Arguments mapping described in
+[UpdateIpRestrictionRequestRequestTypeDef](./type_defs.md#updateiprestrictionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `IpRestrictionRuleMap`: `Mapping`\[`str`, `str`\]
+- `Enabled`: `bool`
+
+Returns
+[UpdateIpRestrictionResponseTypeDef](./type_defs.md#updateiprestrictionresponsetypedef).
 
 ### update_template
 

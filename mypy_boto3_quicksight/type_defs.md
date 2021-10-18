@@ -161,6 +161,8 @@ type annotations stubs module
   - [DescribeIAMPolicyAssignmentResponseTypeDef](#describeiampolicyassignmentresponsetypedef)
   - [DescribeIngestionRequestRequestTypeDef](#describeingestionrequestrequesttypedef)
   - [DescribeIngestionResponseTypeDef](#describeingestionresponsetypedef)
+  - [DescribeIpRestrictionRequestRequestTypeDef](#describeiprestrictionrequestrequesttypedef)
+  - [DescribeIpRestrictionResponseTypeDef](#describeiprestrictionresponsetypedef)
   - [DescribeNamespaceRequestRequestTypeDef](#describenamespacerequestrequesttypedef)
   - [DescribeNamespaceResponseTypeDef](#describenamespaceresponsetypedef)
   - [DescribeTemplateAliasRequestRequestTypeDef](#describetemplatealiasrequestrequesttypedef)
@@ -361,6 +363,8 @@ type annotations stubs module
   - [UpdateGroupResponseTypeDef](#updategroupresponsetypedef)
   - [UpdateIAMPolicyAssignmentRequestRequestTypeDef](#updateiampolicyassignmentrequestrequesttypedef)
   - [UpdateIAMPolicyAssignmentResponseTypeDef](#updateiampolicyassignmentresponsetypedef)
+  - [UpdateIpRestrictionRequestRequestTypeDef](#updateiprestrictionrequestrequesttypedef)
+  - [UpdateIpRestrictionResponseTypeDef](#updateiprestrictionresponsetypedef)
   - [UpdateTemplateAliasRequestRequestTypeDef](#updatetemplatealiasrequestrequesttypedef)
   - [UpdateTemplateAliasResponseTypeDef](#updatetemplatealiasresponsetypedef)
   - [UpdateTemplatePermissionsRequestRequestTypeDef](#updatetemplatepermissionsrequestrequesttypedef)
@@ -1124,6 +1128,10 @@ Required fields:
 - `DataSetId`: `str`
 - `IngestionId`: `str`
 - `AwsAccountId`: `str`
+
+Optional fields:
+
+- `IngestionType`: [IngestionTypeType](./literals.md#ingestiontypetype)
 
 ## CreateIngestionResponseTypeDef
 
@@ -2595,6 +2603,32 @@ from mypy_boto3_quicksight.type_defs import DescribeIngestionResponseTypeDef
 Required fields:
 
 - `Ingestion`: [IngestionTypeDef](./type_defs.md#ingestiontypedef)
+- `RequestId`: `str`
+- `Status`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeIpRestrictionRequestRequestTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import DescribeIpRestrictionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AwsAccountId`: `str`
+
+## DescribeIpRestrictionResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import DescribeIpRestrictionResponseTypeDef
+```
+
+Required fields:
+
+- `AwsAccountId`: `str`
+- `IpRestrictionRuleMap`: `Dict`\[`str`, `str`\]
+- `Enabled`: `bool`
 - `RequestId`: `str`
 - `Status`: `int`
 - `ResponseMetadata`:
@@ -4318,6 +4352,7 @@ Optional fields:
 
 - `RowsIngested`: `int`
 - `RowsDropped`: `int`
+- `TotalRowsInDataset`: `int`
 
 ## RowLevelPermissionDataSetTypeDef
 
@@ -5513,6 +5548,35 @@ Required fields:
 - `Identities`: `Dict`\[`str`, `List`\[`str`\]\]
 - `AssignmentStatus`:
   [AssignmentStatusType](./literals.md#assignmentstatustype)
+- `RequestId`: `str`
+- `Status`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## UpdateIpRestrictionRequestRequestTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import UpdateIpRestrictionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AwsAccountId`: `str`
+
+Optional fields:
+
+- `IpRestrictionRuleMap`: `Mapping`\[`str`, `str`\]
+- `Enabled`: `bool`
+
+## UpdateIpRestrictionResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import UpdateIpRestrictionResponseTypeDef
+```
+
+Required fields:
+
+- `AwsAccountId`: `str`
 - `RequestId`: `str`
 - `Status`: `int`
 - `ResponseMetadata`:

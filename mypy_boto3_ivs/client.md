@@ -164,12 +164,12 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `name`: `str`
-- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
-- `type`: [ChannelTypeType](./literals.md#channeltypetype)
 - `authorized`: `bool`
+- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
+- `name`: `str`
 - `recordingConfigurationArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+- `type`: [ChannelTypeType](./literals.md#channeltypetype)
 
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
@@ -422,8 +422,8 @@ Returns
 
 ### list_channels
 
-Gets summary information about all channels in your account, in the AWS region
-where the API request is processed.
+Gets summary information about all channels in your account, in the Amazon Web
+Services region where the API request is processed.
 
 Type annotations for `boto3.client("ivs").list_channels` method.
 
@@ -437,8 +437,8 @@ Keyword-only arguments:
 
 - `filterByName`: `str`
 - `filterByRecordingConfigurationArn`: `str`
-- `nextToken`: `str`
 - `maxResults`: `int`
+- `nextToken`: `str`
 
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
@@ -457,8 +457,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `nextToken`: `str`
 - `maxResults`: `int`
+- `nextToken`: `str`
 
 Returns
 [ListPlaybackKeyPairsResponseTypeDef](./type_defs.md#listplaybackkeypairsresponsetypedef).
@@ -466,7 +466,7 @@ Returns
 ### list_recording_configurations
 
 Gets summary information about all recording configurations in your account, in
-the AWS region where the API request is processed.
+the Amazon Web Services region where the API request is processed.
 
 Type annotations for `boto3.client("ivs").list_recording_configurations`
 method.
@@ -479,8 +479,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `nextToken`: `str`
 - `maxResults`: `int`
+- `nextToken`: `str`
 
 Returns
 [ListRecordingConfigurationsResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponsetypedef).
@@ -500,16 +500,16 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `channelArn`: `str` *(required)*
-- `nextToken`: `str`
 - `maxResults`: `int`
+- `nextToken`: `str`
 
 Returns
 [ListStreamKeysResponseTypeDef](./type_defs.md#liststreamkeysresponsetypedef).
 
 ### list_streams
 
-Gets summary information about live streams in your account, in the AWS region
-where the API request is processed.
+Gets summary information about live streams in your account, in the Amazon Web
+Services region where the API request is processed.
 
 Type annotations for `boto3.client("ivs").list_streams` method.
 
@@ -521,15 +521,15 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `nextToken`: `str`
 - `maxResults`: `int`
+- `nextToken`: `str`
 
 Returns
 [ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef).
 
 ### list_tags_for_resource
 
-Gets information about AWS tags for the specified ARN.
+Gets information about Amazon Web Services tags for the specified ARN.
 
 Type annotations for `boto3.client("ivs").list_tags_for_resource` method.
 
@@ -542,8 +542,6 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
@@ -585,7 +583,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### tag_resource
 
-Adds or updates tags for the AWS resource with the specified ARN.
+Adds or updates tags for the Amazon Web Services resource with the specified
+ARN.
 
 Type annotations for `boto3.client("ivs").tag_resource` method.
 
@@ -636,11 +635,11 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `arn`: `str` *(required)*
-- `name`: `str`
-- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
-- `type`: [ChannelTypeType](./literals.md#channeltypetype)
 - `authorized`: `bool`
+- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
+- `name`: `str`
 - `recordingConfigurationArn`: `str`
+- `type`: [ChannelTypeType](./literals.md#channeltypetype)
 
 Returns
 [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).

@@ -34,6 +34,7 @@ type annotations stubs module
   - [IngestionRequestSourceType](#ingestionrequestsourcetype)
   - [IngestionRequestTypeType](#ingestionrequesttypetype)
   - [IngestionStatusType](#ingestionstatustype)
+  - [IngestionTypeType](#ingestiontypetype)
   - [InputColumnDataTypeType](#inputcolumndatatypetype)
   - [JoinTypeType](#jointypetype)
   - [ListAnalysesPaginatorName](#listanalysespaginatorname)
@@ -367,6 +368,7 @@ Values:
 
 - `ACCOUNT_CAPACITY_LIMIT_EXCEEDED`
 - `CONNECTION_FAILURE`
+- `CURSOR_NOT_ENABLED`
 - `CUSTOMER_ERROR`
 - `DATA_SET_DELETED`
 - `DATA_SET_NOT_SPICE`
@@ -375,6 +377,7 @@ Values:
 - `DATA_SOURCE_CONNECTION_FAILED`
 - `DATA_SOURCE_NOT_FOUND`
 - `DATA_TOLERANCE_EXCEPTION`
+- `ELASTICSEARCH_CURSOR_NOT_ENABLED`
 - `FAILURE_TO_ASSUME_ROLE`
 - `FAILURE_TO_PROCESS_JSON_FILE`
 - `IAM_ROLE_NOT_AVAILABLE`
@@ -389,7 +392,9 @@ Values:
 - `OAUTH_TOKEN_FAILURE`
 - `PASSWORD_AUTHENTICATION_FAILURE`
 - `PERMISSION_DENIED`
+- `PERMISSION_NOT_FOUND`
 - `QUERY_TIMEOUT`
+- `REFRESH_SUPPRESSED_BY_EDIT`
 - `ROW_SIZE_LIMIT_EXCEEDED`
 - `S3_FILE_INACCESSIBLE`
 - `S3_MANIFEST_ERROR`
@@ -444,6 +449,17 @@ Values:
 - `INITIALIZED`
 - `QUEUED`
 - `RUNNING`
+
+## IngestionTypeType
+
+```python
+from mypy_boto3_quicksight.literals import IngestionTypeType
+```
+
+Values:
+
+- `FULL_REFRESH`
+- `INCREMENTAL_REFRESH`
 
 ## InputColumnDataTypeType
 
