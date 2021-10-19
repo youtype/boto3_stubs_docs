@@ -140,8 +140,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `AssetType`: `Literal['S3_SNAPSHOT']` (see
-  [AssetTypeType](./literals.md#assettypetype)) *(required)*
+- `AssetType`: [AssetTypeType](./literals.md#assettypetype) *(required)*
 - `Description`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\]

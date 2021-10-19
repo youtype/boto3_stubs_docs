@@ -32,6 +32,7 @@ from mypy_boto3_dataexchange.literals import AssetTypeType
 
 Values:
 
+- `REDSHIFT_DATA_SHARE`
 - `S3_SNAPSHOT`
 
 ## CodeType
@@ -58,6 +59,7 @@ from mypy_boto3_dataexchange.literals import JobErrorLimitNameType
 
 Values:
 
+- `Amazon Redshift datashare assets per revision`
 - `Asset size in GB`
 - `Assets per revision`
 
@@ -172,6 +174,7 @@ Values:
 - `EXPORT_ASSETS_TO_S3`
 - `EXPORT_REVISIONS_TO_S3`
 - `IMPORT_ASSET_FROM_SIGNED_URL`
+- `IMPORT_ASSETS_FROM_REDSHIFT_DATA_SHARES`
 - `IMPORT_ASSETS_FROM_S3`
 
 ## ServiceName

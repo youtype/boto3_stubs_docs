@@ -9,15 +9,23 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 ChimeSDKMessaging module](#typed-dictionaries-for-boto3-chimesdkmessaging-module)
   - [AppInstanceUserMembershipSummaryTypeDef](#appinstanceusermembershipsummarytypedef)
+  - [AssociateChannelFlowRequestRequestTypeDef](#associatechannelflowrequestrequesttypedef)
   - [BatchChannelMembershipsTypeDef](#batchchannelmembershipstypedef)
   - [BatchCreateChannelMembershipErrorTypeDef](#batchcreatechannelmembershiperrortypedef)
   - [BatchCreateChannelMembershipRequestRequestTypeDef](#batchcreatechannelmembershiprequestrequesttypedef)
   - [BatchCreateChannelMembershipResponseTypeDef](#batchcreatechannelmembershipresponsetypedef)
+  - [ChannelAssociatedWithFlowSummaryTypeDef](#channelassociatedwithflowsummarytypedef)
   - [ChannelBanSummaryTypeDef](#channelbansummarytypedef)
   - [ChannelBanTypeDef](#channelbantypedef)
+  - [ChannelFlowCallbackRequestRequestTypeDef](#channelflowcallbackrequestrequesttypedef)
+  - [ChannelFlowCallbackResponseTypeDef](#channelflowcallbackresponsetypedef)
+  - [ChannelFlowSummaryTypeDef](#channelflowsummarytypedef)
+  - [ChannelFlowTypeDef](#channelflowtypedef)
   - [ChannelMembershipForAppInstanceUserSummaryTypeDef](#channelmembershipforappinstanceusersummarytypedef)
   - [ChannelMembershipSummaryTypeDef](#channelmembershipsummarytypedef)
   - [ChannelMembershipTypeDef](#channelmembershiptypedef)
+  - [ChannelMessageCallbackTypeDef](#channelmessagecallbacktypedef)
+  - [ChannelMessageStatusStructureTypeDef](#channelmessagestatusstructuretypedef)
   - [ChannelMessageSummaryTypeDef](#channelmessagesummarytypedef)
   - [ChannelMessageTypeDef](#channelmessagetypedef)
   - [ChannelModeratedByAppInstanceUserSummaryTypeDef](#channelmoderatedbyappinstanceusersummarytypedef)
@@ -27,6 +35,8 @@ type annotations stubs module
   - [ChannelTypeDef](#channeltypedef)
   - [CreateChannelBanRequestRequestTypeDef](#createchannelbanrequestrequesttypedef)
   - [CreateChannelBanResponseTypeDef](#createchannelbanresponsetypedef)
+  - [CreateChannelFlowRequestRequestTypeDef](#createchannelflowrequestrequesttypedef)
+  - [CreateChannelFlowResponseTypeDef](#createchannelflowresponsetypedef)
   - [CreateChannelMembershipRequestRequestTypeDef](#createchannelmembershiprequestrequesttypedef)
   - [CreateChannelMembershipResponseTypeDef](#createchannelmembershipresponsetypedef)
   - [CreateChannelModeratorRequestRequestTypeDef](#createchannelmoderatorrequestrequesttypedef)
@@ -34,12 +44,15 @@ type annotations stubs module
   - [CreateChannelRequestRequestTypeDef](#createchannelrequestrequesttypedef)
   - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
   - [DeleteChannelBanRequestRequestTypeDef](#deletechannelbanrequestrequesttypedef)
+  - [DeleteChannelFlowRequestRequestTypeDef](#deletechannelflowrequestrequesttypedef)
   - [DeleteChannelMembershipRequestRequestTypeDef](#deletechannelmembershiprequestrequesttypedef)
   - [DeleteChannelMessageRequestRequestTypeDef](#deletechannelmessagerequestrequesttypedef)
   - [DeleteChannelModeratorRequestRequestTypeDef](#deletechannelmoderatorrequestrequesttypedef)
   - [DeleteChannelRequestRequestTypeDef](#deletechannelrequestrequesttypedef)
   - [DescribeChannelBanRequestRequestTypeDef](#describechannelbanrequestrequesttypedef)
   - [DescribeChannelBanResponseTypeDef](#describechannelbanresponsetypedef)
+  - [DescribeChannelFlowRequestRequestTypeDef](#describechannelflowrequestrequesttypedef)
+  - [DescribeChannelFlowResponseTypeDef](#describechannelflowresponsetypedef)
   - [DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef](#describechannelmembershipforappinstanceuserrequestrequesttypedef)
   - [DescribeChannelMembershipForAppInstanceUserResponseTypeDef](#describechannelmembershipforappinstanceuserresponsetypedef)
   - [DescribeChannelMembershipRequestRequestTypeDef](#describechannelmembershiprequestrequesttypedef)
@@ -50,12 +63,18 @@ type annotations stubs module
   - [DescribeChannelModeratorResponseTypeDef](#describechannelmoderatorresponsetypedef)
   - [DescribeChannelRequestRequestTypeDef](#describechannelrequestrequesttypedef)
   - [DescribeChannelResponseTypeDef](#describechannelresponsetypedef)
+  - [DisassociateChannelFlowRequestRequestTypeDef](#disassociatechannelflowrequestrequesttypedef)
   - [GetChannelMessageRequestRequestTypeDef](#getchannelmessagerequestrequesttypedef)
   - [GetChannelMessageResponseTypeDef](#getchannelmessageresponsetypedef)
+  - [GetChannelMessageStatusRequestRequestTypeDef](#getchannelmessagestatusrequestrequesttypedef)
+  - [GetChannelMessageStatusResponseTypeDef](#getchannelmessagestatusresponsetypedef)
   - [GetMessagingSessionEndpointResponseTypeDef](#getmessagingsessionendpointresponsetypedef)
   - [IdentityTypeDef](#identitytypedef)
+  - [LambdaConfigurationTypeDef](#lambdaconfigurationtypedef)
   - [ListChannelBansRequestRequestTypeDef](#listchannelbansrequestrequesttypedef)
   - [ListChannelBansResponseTypeDef](#listchannelbansresponsetypedef)
+  - [ListChannelFlowsRequestRequestTypeDef](#listchannelflowsrequestrequesttypedef)
+  - [ListChannelFlowsResponseTypeDef](#listchannelflowsresponsetypedef)
   - [ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef](#listchannelmembershipsforappinstanceuserrequestrequesttypedef)
   - [ListChannelMembershipsForAppInstanceUserResponseTypeDef](#listchannelmembershipsforappinstanceuserresponsetypedef)
   - [ListChannelMembershipsRequestRequestTypeDef](#listchannelmembershipsrequestrequesttypedef)
@@ -64,17 +83,27 @@ type annotations stubs module
   - [ListChannelMessagesResponseTypeDef](#listchannelmessagesresponsetypedef)
   - [ListChannelModeratorsRequestRequestTypeDef](#listchannelmoderatorsrequestrequesttypedef)
   - [ListChannelModeratorsResponseTypeDef](#listchannelmoderatorsresponsetypedef)
+  - [ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef](#listchannelsassociatedwithchannelflowrequestrequesttypedef)
+  - [ListChannelsAssociatedWithChannelFlowResponseTypeDef](#listchannelsassociatedwithchannelflowresponsetypedef)
   - [ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef](#listchannelsmoderatedbyappinstanceuserrequestrequesttypedef)
   - [ListChannelsModeratedByAppInstanceUserResponseTypeDef](#listchannelsmoderatedbyappinstanceuserresponsetypedef)
   - [ListChannelsRequestRequestTypeDef](#listchannelsrequestrequesttypedef)
   - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MessagingSessionEndpointTypeDef](#messagingsessionendpointtypedef)
+  - [ProcessorConfigurationTypeDef](#processorconfigurationtypedef)
+  - [ProcessorTypeDef](#processortypedef)
   - [RedactChannelMessageRequestRequestTypeDef](#redactchannelmessagerequestrequesttypedef)
   - [RedactChannelMessageResponseTypeDef](#redactchannelmessageresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SendChannelMessageRequestRequestTypeDef](#sendchannelmessagerequestrequesttypedef)
   - [SendChannelMessageResponseTypeDef](#sendchannelmessageresponsetypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
+  - [UpdateChannelFlowRequestRequestTypeDef](#updatechannelflowrequestrequesttypedef)
+  - [UpdateChannelFlowResponseTypeDef](#updatechannelflowresponsetypedef)
   - [UpdateChannelMessageRequestRequestTypeDef](#updatechannelmessagerequestrequesttypedef)
   - [UpdateChannelMessageResponseTypeDef](#updatechannelmessageresponsetypedef)
   - [UpdateChannelReadMarkerRequestRequestTypeDef](#updatechannelreadmarkerrequestrequesttypedef)
@@ -92,6 +121,18 @@ Optional fields:
 
 - `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
 - `ReadMarkerTimestamp`: `datetime`
+
+## AssociateChannelFlowRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import AssociateChannelFlowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ChannelArn`: `str`
+- `ChannelFlowArn`: `str`
+- `ChimeBearer`: `str`
 
 ## BatchChannelMembershipsTypeDef
 
@@ -149,6 +190,20 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ChannelAssociatedWithFlowSummaryTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ChannelAssociatedWithFlowSummaryTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `ChannelArn`: `str`
+- `Mode`: [ChannelModeType](./literals.md#channelmodetype)
+- `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
+- `Metadata`: `str`
+
 ## ChannelBanSummaryTypeDef
 
 ```python
@@ -171,6 +226,62 @@ Optional fields:
 - `ChannelArn`: `str`
 - `CreatedTimestamp`: `datetime`
 - `CreatedBy`: [IdentityTypeDef](./type_defs.md#identitytypedef)
+
+## ChannelFlowCallbackRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ChannelFlowCallbackRequestRequestTypeDef
+```
+
+Required fields:
+
+- `CallbackId`: `str`
+- `ChannelArn`: `str`
+- `ChannelMessage`:
+  [ChannelMessageCallbackTypeDef](./type_defs.md#channelmessagecallbacktypedef)
+
+Optional fields:
+
+- `DeleteResource`: `bool`
+
+## ChannelFlowCallbackResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ChannelFlowCallbackResponseTypeDef
+```
+
+Required fields:
+
+- `ChannelArn`: `str`
+- `CallbackId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ChannelFlowSummaryTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ChannelFlowSummaryTypeDef
+```
+
+Optional fields:
+
+- `ChannelFlowArn`: `str`
+- `Name`: `str`
+- `Processors`: `List`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
+
+## ChannelFlowTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ChannelFlowTypeDef
+```
+
+Optional fields:
+
+- `ChannelFlowArn`: `str`
+- `Processors`: `List`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
+- `Name`: `str`
+- `CreatedTimestamp`: `datetime`
+- `LastUpdatedTimestamp`: `datetime`
 
 ## ChannelMembershipForAppInstanceUserSummaryTypeDef
 
@@ -210,6 +321,32 @@ Optional fields:
 - `CreatedTimestamp`: `datetime`
 - `LastUpdatedTimestamp`: `datetime`
 
+## ChannelMessageCallbackTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ChannelMessageCallbackTypeDef
+```
+
+Required fields:
+
+- `MessageId`: `str`
+
+Optional fields:
+
+- `Content`: `str`
+- `Metadata`: `str`
+
+## ChannelMessageStatusStructureTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ChannelMessageStatusStructureTypeDef
+```
+
+Optional fields:
+
+- `Value`: [ChannelMessageStatusType](./literals.md#channelmessagestatustype)
+- `Detail`: `str`
+
 ## ChannelMessageSummaryTypeDef
 
 ```python
@@ -227,6 +364,8 @@ Optional fields:
 - `LastEditedTimestamp`: `datetime`
 - `Sender`: [IdentityTypeDef](./type_defs.md#identitytypedef)
 - `Redacted`: `bool`
+- `Status`:
+  [ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef)
 
 ## ChannelMessageTypeDef
 
@@ -248,6 +387,8 @@ Optional fields:
 - `Redacted`: `bool`
 - `Persistence`:
   [ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype)
+- `Status`:
+  [ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef)
 
 ## ChannelModeratedByAppInstanceUserSummaryTypeDef
 
@@ -315,6 +456,7 @@ Optional fields:
 - `CreatedTimestamp`: `datetime`
 - `LastMessageTimestamp`: `datetime`
 - `LastUpdatedTimestamp`: `datetime`
+- `ChannelFlowArn`: `str`
 
 ## CreateChannelBanRequestRequestTypeDef
 
@@ -338,6 +480,36 @@ Required fields:
 
 - `ChannelArn`: `str`
 - `Member`: [IdentityTypeDef](./type_defs.md#identitytypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## CreateChannelFlowRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import CreateChannelFlowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AppInstanceArn`: `str`
+- `Processors`:
+  `Sequence`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
+- `Name`: `str`
+- `ClientRequestToken`: `str`
+
+Optional fields:
+
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+## CreateChannelFlowResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import CreateChannelFlowResponseTypeDef
+```
+
+Required fields:
+
+- `ChannelFlowArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -436,6 +608,16 @@ Required fields:
 - `MemberArn`: `str`
 - `ChimeBearer`: `str`
 
+## DeleteChannelFlowRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import DeleteChannelFlowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ChannelFlowArn`: `str`
+
 ## DeleteChannelMembershipRequestRequestTypeDef
 
 ```python
@@ -504,6 +686,28 @@ from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelBanResponseT
 Required fields:
 
 - `ChannelBan`: [ChannelBanTypeDef](./type_defs.md#channelbantypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## DescribeChannelFlowRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelFlowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ChannelFlowArn`: `str`
+
+## DescribeChannelFlowResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelFlowResponseTypeDef
+```
+
+Required fields:
+
+- `ChannelFlow`: [ChannelFlowTypeDef](./type_defs.md#channelflowtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -630,6 +834,18 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## DisassociateChannelFlowRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import DisassociateChannelFlowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ChannelArn`: `str`
+- `ChannelFlowArn`: `str`
+- `ChimeBearer`: `str`
+
 ## GetChannelMessageRequestRequestTypeDef
 
 ```python
@@ -652,6 +868,31 @@ Required fields:
 
 - `ChannelMessage`:
   [ChannelMessageTypeDef](./type_defs.md#channelmessagetypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## GetChannelMessageStatusRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import GetChannelMessageStatusRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ChannelArn`: `str`
+- `MessageId`: `str`
+- `ChimeBearer`: `str`
+
+## GetChannelMessageStatusResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import GetChannelMessageStatusResponseTypeDef
+```
+
+Required fields:
+
+- `Status`:
+  [ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -678,6 +919,18 @@ Optional fields:
 
 - `Arn`: `str`
 - `Name`: `str`
+
+## LambdaConfigurationTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import LambdaConfigurationTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `InvocationType`: `Literal['ASYNC']` (see
+  [InvocationTypeType](./literals.md#invocationtypetype))
 
 ## ListChannelBansRequestRequestTypeDef
 
@@ -707,6 +960,35 @@ Required fields:
 - `NextToken`: `str`
 - `ChannelBans`:
   `List`\[[ChannelBanSummaryTypeDef](./type_defs.md#channelbansummarytypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## ListChannelFlowsRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelFlowsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AppInstanceArn`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListChannelFlowsResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelFlowsResponseTypeDef
+```
+
+Required fields:
+
+- `ChannelFlows`:
+  `List`\[[ChannelFlowSummaryTypeDef](./type_defs.md#channelflowsummarytypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -837,6 +1119,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ChannelFlowArn`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+## ListChannelsAssociatedWithChannelFlowResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelsAssociatedWithChannelFlowResponseTypeDef
+```
+
+Required fields:
+
+- `Channels`:
+  `List`\[[ChannelAssociatedWithFlowSummaryTypeDef](./type_defs.md#channelassociatedwithflowsummarytypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef
 
 ```python
@@ -898,6 +1209,28 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+## ListTagsForResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ListTagsForResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+
+## ListTagsForResourceResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ListTagsForResourceResponseTypeDef
+```
+
+Required fields:
+
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 ## MessagingSessionEndpointTypeDef
 
 ```python
@@ -907,6 +1240,31 @@ from mypy_boto3_chime_sdk_messaging.type_defs import MessagingSessionEndpointTyp
 Optional fields:
 
 - `Url`: `str`
+
+## ProcessorConfigurationTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ProcessorConfigurationTypeDef
+```
+
+Required fields:
+
+- `Lambda`:
+  [LambdaConfigurationTypeDef](./type_defs.md#lambdaconfigurationtypedef)
+
+## ProcessorTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import ProcessorTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Configuration`:
+  [ProcessorConfigurationTypeDef](./type_defs.md#processorconfigurationtypedef)
+- `ExecutionOrder`: `int`
+- `FallbackAction`: [FallbackActionType](./literals.md#fallbackactiontype)
 
 ## RedactChannelMessageRequestRequestTypeDef
 
@@ -977,8 +1335,21 @@ Required fields:
 
 - `ChannelArn`: `str`
 - `MessageId`: `str`
+- `Status`:
+  [ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+## TagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import TagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 ## TagTypeDef
 
@@ -990,6 +1361,42 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+## UntagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import UntagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceARN`: `str`
+- `TagKeys`: `Sequence`\[`str`\]
+
+## UpdateChannelFlowRequestRequestTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import UpdateChannelFlowRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ChannelFlowArn`: `str`
+- `Processors`:
+  `Sequence`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
+- `Name`: `str`
+
+## UpdateChannelFlowResponseTypeDef
+
+```python
+from mypy_boto3_chime_sdk_messaging.type_defs import UpdateChannelFlowResponseTypeDef
+```
+
+Required fields:
+
+- `ChannelFlowArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 ## UpdateChannelMessageRequestRequestTypeDef
 
@@ -1018,6 +1425,8 @@ Required fields:
 
 - `ChannelArn`: `str`
 - `MessageId`: `str`
+- `Status`:
+  [ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

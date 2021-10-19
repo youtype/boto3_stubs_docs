@@ -10,10 +10,13 @@ type annotations stubs module
 - [Literals for boto3 ChimeSDKMessaging module](#literals-for-boto3-chimesdkmessaging-module)
   - [ChannelMembershipTypeType](#channelmembershiptypetype)
   - [ChannelMessagePersistenceTypeType](#channelmessagepersistencetypetype)
+  - [ChannelMessageStatusType](#channelmessagestatustype)
   - [ChannelMessageTypeType](#channelmessagetypetype)
   - [ChannelModeType](#channelmodetype)
   - [ChannelPrivacyType](#channelprivacytype)
   - [ErrorCodeType](#errorcodetype)
+  - [FallbackActionType](#fallbackactiontype)
+  - [InvocationTypeType](#invocationtypetype)
   - [SortOrderType](#sortordertype)
   - [ServiceName](#servicename)
 
@@ -38,6 +41,19 @@ Values:
 
 - `NON_PERSISTENT`
 - `PERSISTENT`
+
+## ChannelMessageStatusType
+
+```python
+from mypy_boto3_chime_sdk_messaging.literals import ChannelMessageStatusType
+```
+
+Values:
+
+- `DENIED`
+- `FAILED`
+- `PENDING`
+- `SENT`
 
 ## ChannelMessageTypeType
 
@@ -95,6 +111,27 @@ Values:
 - `Unauthorized`
 - `Unprocessable`
 - `VoiceConnectorGroupAssociationsExist`
+
+## FallbackActionType
+
+```python
+from mypy_boto3_chime_sdk_messaging.literals import FallbackActionType
+```
+
+Values:
+
+- `ABORT`
+- `CONTINUE`
+
+## InvocationTypeType
+
+```python
+from mypy_boto3_chime_sdk_messaging.literals import InvocationTypeType
+```
+
+Values:
+
+- `ASYNC`
 
 ## SortOrderType
 

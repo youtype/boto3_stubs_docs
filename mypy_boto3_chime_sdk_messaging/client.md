@@ -12,36 +12,49 @@ type annotations stubs module
   - [Exceptions](#exceptions)
   - [Methods](#methods)
     - [exceptions](#exceptions)
+    - [associate_channel_flow](#associate_channel_flow)
     - [batch_create_channel_membership](#batch_create_channel_membership)
     - [can_paginate](#can_paginate)
+    - [channel_flow_callback](#channel_flow_callback)
     - [create_channel](#create_channel)
     - [create_channel_ban](#create_channel_ban)
+    - [create_channel_flow](#create_channel_flow)
     - [create_channel_membership](#create_channel_membership)
     - [create_channel_moderator](#create_channel_moderator)
     - [delete_channel](#delete_channel)
     - [delete_channel_ban](#delete_channel_ban)
+    - [delete_channel_flow](#delete_channel_flow)
     - [delete_channel_membership](#delete_channel_membership)
     - [delete_channel_message](#delete_channel_message)
     - [delete_channel_moderator](#delete_channel_moderator)
     - [describe_channel](#describe_channel)
     - [describe_channel_ban](#describe_channel_ban)
+    - [describe_channel_flow](#describe_channel_flow)
     - [describe_channel_membership](#describe_channel_membership)
     - [describe_channel_membership_for_app_instance_user](#describe_channel_membership_for_app_instance_user)
     - [describe_channel_moderated_by_app_instance_user](#describe_channel_moderated_by_app_instance_user)
     - [describe_channel_moderator](#describe_channel_moderator)
+    - [disassociate_channel_flow](#disassociate_channel_flow)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_channel_message](#get_channel_message)
+    - [get_channel_message_status](#get_channel_message_status)
     - [get_messaging_session_endpoint](#get_messaging_session_endpoint)
     - [list_channel_bans](#list_channel_bans)
+    - [list_channel_flows](#list_channel_flows)
     - [list_channel_memberships](#list_channel_memberships)
     - [list_channel_memberships_for_app_instance_user](#list_channel_memberships_for_app_instance_user)
     - [list_channel_messages](#list_channel_messages)
     - [list_channel_moderators](#list_channel_moderators)
     - [list_channels](#list_channels)
+    - [list_channels_associated_with_channel_flow](#list_channels_associated_with_channel_flow)
     - [list_channels_moderated_by_app_instance_user](#list_channels_moderated_by_app_instance_user)
+    - [list_tags_for_resource](#list_tags_for_resource)
     - [redact_channel_message](#redact_channel_message)
     - [send_channel_message](#send_channel_message)
+    - [tag_resource](#tag_resource)
+    - [untag_resource](#untag_resource)
     - [update_channel](#update_channel)
+    - [update_channel_flow](#update_channel_flow)
     - [update_channel_message](#update_channel_message)
     - [update_channel_read_marker](#update_channel_read_marker)
 
@@ -99,6 +112,25 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
+### associate_channel_flow
+
+Associates a channel flow with a channel.
+
+Type annotations for
+`boto3.client("chime-sdk-messaging").associate_channel_flow` method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.associate_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.associate_channel_flow)
+
+Arguments mapping described in
+[AssociateChannelFlowRequestRequestTypeDef](./type_defs.md#associatechannelflowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `ChannelFlowArn`: `str` *(required)*
+- `ChimeBearer`: `str` *(required)*
+
 ### batch_create_channel_membership
 
 Adds a specified number of users to a channel.
@@ -136,6 +168,31 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+### channel_flow_callback
+
+Calls back Chime SDK Messaging with a processing response message.
+
+Type annotations for
+`boto3.client("chime-sdk-messaging").channel_flow_callback` method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.channel_flow_callback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.channel_flow_callback)
+
+Arguments mapping described in
+[ChannelFlowCallbackRequestRequestTypeDef](./type_defs.md#channelflowcallbackrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CallbackId`: `str` *(required)*
+- `ChannelArn`: `str` *(required)*
+- `ChannelMessage`:
+  [ChannelMessageCallbackTypeDef](./type_defs.md#channelmessagecallbacktypedef)
+  *(required)*
+- `DeleteResource`: `bool`
+
+Returns
+[ChannelFlowCallbackResponseTypeDef](./type_defs.md#channelflowcallbackresponsetypedef).
 
 ### create_channel
 
@@ -185,6 +242,32 @@ Keyword-only arguments:
 
 Returns
 [CreateChannelBanResponseTypeDef](./type_defs.md#createchannelbanresponsetypedef).
+
+### create_channel_flow
+
+Creates a channel flow, a container for processors.
+
+Type annotations for `boto3.client("chime-sdk-messaging").create_channel_flow`
+method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.create_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.create_channel_flow)
+
+Arguments mapping described in
+[CreateChannelFlowRequestRequestTypeDef](./type_defs.md#createchannelflowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+- `Processors`:
+  `Sequence`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
+  *(required)*
+- `Name`: `str` *(required)*
+- `ClientRequestToken`: `str` *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateChannelFlowResponseTypeDef](./type_defs.md#createchannelflowresponsetypedef).
 
 ### create_channel_membership
 
@@ -269,6 +352,23 @@ Keyword-only arguments:
 - `ChannelArn`: `str` *(required)*
 - `MemberArn`: `str` *(required)*
 - `ChimeBearer`: `str` *(required)*
+
+### delete_channel_flow
+
+Deletes a channel flow, an irreversible process.
+
+Type annotations for `boto3.client("chime-sdk-messaging").delete_channel_flow`
+method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.delete_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel_flow)
+
+Arguments mapping described in
+[DeleteChannelFlowRequestRequestTypeDef](./type_defs.md#deletechannelflowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ChannelFlowArn`: `str` *(required)*
 
 ### delete_channel_membership
 
@@ -370,6 +470,26 @@ Keyword-only arguments:
 Returns
 [DescribeChannelBanResponseTypeDef](./type_defs.md#describechannelbanresponsetypedef).
 
+### describe_channel_flow
+
+Returns the full details of a channel flow in an Amazon Chime `AppInstance`.
+
+Type annotations for
+`boto3.client("chime-sdk-messaging").describe_channel_flow` method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.describe_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_flow)
+
+Arguments mapping described in
+[DescribeChannelFlowRequestRequestTypeDef](./type_defs.md#describechannelflowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ChannelFlowArn`: `str` *(required)*
+
+Returns
+[DescribeChannelFlowResponseTypeDef](./type_defs.md#describechannelflowresponsetypedef).
+
 ### describe_channel_membership
 
 Returns the full details of a user's channel membership.
@@ -462,6 +582,25 @@ Keyword-only arguments:
 Returns
 [DescribeChannelModeratorResponseTypeDef](./type_defs.md#describechannelmoderatorresponsetypedef).
 
+### disassociate_channel_flow
+
+Disassociates a channel flow from all its channels.
+
+Type annotations for
+`boto3.client("chime-sdk-messaging").disassociate_channel_flow` method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.disassociate_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.disassociate_channel_flow)
+
+Arguments mapping described in
+[DisassociateChannelFlowRequestRequestTypeDef](./type_defs.md#disassociatechannelflowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `ChannelFlowArn`: `str` *(required)*
+- `ChimeBearer`: `str` *(required)*
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -503,6 +642,28 @@ Keyword-only arguments:
 Returns
 [GetChannelMessageResponseTypeDef](./type_defs.md#getchannelmessageresponsetypedef).
 
+### get_channel_message_status
+
+Gets message status for a specified `messageId`.
+
+Type annotations for
+`boto3.client("chime-sdk-messaging").get_channel_message_status` method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.get_channel_message_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.get_channel_message_status)
+
+Arguments mapping described in
+[GetChannelMessageStatusRequestRequestTypeDef](./type_defs.md#getchannelmessagestatusrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ChannelArn`: `str` *(required)*
+- `MessageId`: `str` *(required)*
+- `ChimeBearer`: `str` *(required)*
+
+Returns
+[GetChannelMessageStatusResponseTypeDef](./type_defs.md#getchannelmessagestatusresponsetypedef).
+
 ### get_messaging_session_endpoint
 
 The details of the endpoint for the messaging session.
@@ -538,6 +699,29 @@ Keyword-only arguments:
 
 Returns
 [ListChannelBansResponseTypeDef](./type_defs.md#listchannelbansresponsetypedef).
+
+### list_channel_flows
+
+Returns a paginated lists of all the channel flows created under a single
+Chime.
+
+Type annotations for `boto3.client("chime-sdk-messaging").list_channel_flows`
+method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.list_channel_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_flows)
+
+Arguments mapping described in
+[ListChannelFlowsRequestRequestTypeDef](./type_defs.md#listchannelflowsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AppInstanceArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListChannelFlowsResponseTypeDef](./type_defs.md#listchannelflowsresponsetypedef).
 
 ### list_channel_memberships
 
@@ -660,6 +844,29 @@ Keyword-only arguments:
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
+### list_channels_associated_with_channel_flow
+
+Lists all channels associated with a specified channel flow.
+
+Type annotations for
+`boto3.client("chime-sdk-messaging").list_channels_associated_with_channel_flow`
+method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.list_channels_associated_with_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channels_associated_with_channel_flow)
+
+Arguments mapping described in
+[ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef](./type_defs.md#listchannelsassociatedwithchannelflowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ChannelFlowArn`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListChannelsAssociatedWithChannelFlowResponseTypeDef](./type_defs.md#listchannelsassociatedwithchannelflowresponsetypedef).
+
 ### list_channels_moderated_by_app_instance_user
 
 A list of the channels moderated by an `AppInstanceUser` .
@@ -683,6 +890,26 @@ Keyword-only arguments:
 
 Returns
 [ListChannelsModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponsetypedef).
+
+### list_tags_for_resource
+
+Lists the tags applied to an Amazon Chime SDK messaging resource.
+
+Type annotations for
+`boto3.client("chime-sdk-messaging").list_tags_for_resource` method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceARN`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
 ### redact_channel_message
 
@@ -735,6 +962,43 @@ Keyword-only arguments:
 Returns
 [SendChannelMessageResponseTypeDef](./type_defs.md#sendchannelmessageresponsetypedef).
 
+### tag_resource
+
+Applies the specified tags to the specified Amazon Chime SDK messaging
+resource.
+
+Type annotations for `boto3.client("chime-sdk-messaging").tag_resource` method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+### untag_resource
+
+Removes the specified tags from the specified Amazon Chime SDK messaging
+resource.
+
+Type annotations for `boto3.client("chime-sdk-messaging").untag_resource`
+method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceARN`: `str` *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
+
 ### update_channel
 
 Update a channel's attributes.
@@ -758,6 +1022,30 @@ Keyword-only arguments:
 
 Returns
 [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
+
+### update_channel_flow
+
+Updates channel flow attributes.
+
+Type annotations for `boto3.client("chime-sdk-messaging").update_channel_flow`
+method.
+
+Boto3 documentation:
+[ChimeSDKMessaging.Client.update_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.update_channel_flow)
+
+Arguments mapping described in
+[UpdateChannelFlowRequestRequestTypeDef](./type_defs.md#updatechannelflowrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ChannelFlowArn`: `str` *(required)*
+- `Processors`:
+  `Sequence`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
+  *(required)*
+- `Name`: `str` *(required)*
+
+Returns
+[UpdateChannelFlowResponseTypeDef](./type_defs.md#updatechannelflowresponsetypedef).
 
 ### update_channel_message
 
